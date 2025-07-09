@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -68,7 +68,7 @@ namespace connectivity
 
 IMPLEMENT_SERVICE_INFO(MacabStatement, "com.sun.star.sdbc.drivers.MacabStatement", "com.sun.star.sdbc.Statement");
 //------------------------------------------------------------------------------
-MacabCommonStatement::MacabCommonStatement(MacabConnection* _pConnection ) 
+MacabCommonStatement::MacabCommonStatement(MacabConnection* _pConnection )
 	: MacabCommonStatement_BASE(m_aMutex),
 	OPropertySetHelper(MacabCommonStatement_BASE::rBHelper),
     m_aParser(_pConnection->getDriver()->getMSFactory()),
@@ -187,7 +187,7 @@ MacabCondition *MacabCommonStatement::analyseWhereClause(const OSQLParseNode *pP
 	else if (SQL_ISRULE(pParseNode, test_for_null) || SQL_ISRULE(pParseNode, like_predicate))
 	{
         const OSQLParseNode *pLeft = pParseNode->getChild(0);
-        const OSQLParseNode* pPart2 = pParseNode->getChild(1);		
+        const OSQLParseNode* pPart2 = pParseNode->getChild(1);
         const OSQLParseNode *pMiddleLeft = pPart2->getChild(0),
 	                        *pMiddleRight = pPart2->getChild(1),
 	                        *pRight = pPart2->getChild(2);
@@ -400,7 +400,7 @@ void SAL_CALL MacabCommonStatement::close(  ) throw(SQLException, RuntimeExcepti
 	{
 		::osl::MutexGuard aGuard( m_aMutex );
 		checkDisposed(MacabCommonStatement_BASE::rBHelper.bDisposed);
-			
+
 	}
 	dispose();
 }
@@ -480,7 +480,7 @@ Reference< XConnection > SAL_CALL MacabCommonStatement::getConnection(  ) throw(
 {
 	::osl::MutexGuard aGuard( m_aMutex );
 	checkDisposed(MacabCommonStatement_BASE::rBHelper.bDisposed);
-		
+
 	// just return our connection here
 	return (Reference< XConnection >) m_pConnection;
 }
@@ -489,8 +489,8 @@ sal_Int32 SAL_CALL MacabCommonStatement::executeUpdate( const ::rtl::OUString& )
 {
 	::osl::MutexGuard aGuard( m_aMutex );
 	checkDisposed(MacabCommonStatement_BASE::rBHelper.bDisposed);
-		
-	// the return values gives information about how many rows are affected by executing the sql statement		
+
+	// the return values gives information about how many rows are affected by executing the sql statement
 	return 0;
 }
 // -------------------------------------------------------------------------
@@ -543,7 +543,7 @@ sal_Bool MacabCommonStatement::convertFastPropertyValue(
 		const Any&) throw (::com::sun::star::lang::IllegalArgumentException)
 {
 	sal_Bool bConverted = sal_False;
-	// here we have to try to convert 
+	// here we have to try to convert
 	return bConverted;
 }
 // -------------------------------------------------------------------------

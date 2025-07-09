@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -74,7 +74,7 @@ OXMLCell::OXMLCell( ORptFilter& rImport
     if ( !m_pCell )
         m_pCell = this;
 
-    OSL_ENSURE(_xAttrList.is(),"Attribute list is NULL!");	
+    OSL_ENSURE(_xAttrList.is(),"Attribute list is NULL!");
 	const SvXMLNamespaceMap& rMap = rImport.GetNamespaceMap();
 	const SvXMLTokenMap& rTokenMap = rImport.GetColumnTokenMap();
 
@@ -139,7 +139,7 @@ SvXMLImportContext* OXMLCell::CreateChildContext(
 				rImport.GetProgressBarHelper()->Increment( PROGRESS_BAR_STEP );
                 uno::Reference< uno::XInterface> xInt = xFactor->createInstance(SERVICE_FORMATTEDFIELD);
                 Reference< report::XFormattedField > xControl(xInt,uno::UNO_QUERY);
-                
+
 				OSL_ENSURE(xControl.is(),"Could not create FormattedField!");
                 setComponent(xControl.get());
 				if ( xControl.is() )
@@ -150,7 +150,7 @@ SvXMLImportContext* OXMLCell::CreateChildContext(
 			{
 				rImport.GetProgressBarHelper()->Increment( PROGRESS_BAR_STEP );
                 Reference< XImageControl > xControl(xFactor->createInstance(SERVICE_IMAGECONTROL),uno::UNO_QUERY);
-                
+
 				OSL_ENSURE(xControl.is(),"Could not create ImageControl!");
                 setComponent(xControl.get());
 				if ( xControl.is() )
@@ -214,7 +214,7 @@ void OXMLCell::EndElement()
         uno::Reference< uno::XInterface> xInt = xFactor->createInstance(SERVICE_FORMATTEDFIELD);
         Reference< report::XFormattedField > xControl(xInt,uno::UNO_QUERY);
         xControl->setDataField(::rtl::OUString(RTL_CONSTASCII_USTRINGPARAM("rpt:")) + m_sText);
-        
+
 		OSL_ENSURE(xControl.is(),"Could not create FormattedField!");
         setComponent(xControl.get());
         m_xComponent = xControl.get();
@@ -257,8 +257,8 @@ ORptFilter& OXMLCell::GetOwnImport()
 	return static_cast<ORptFilter&>(GetImport());
 }
 // -----------------------------------------------------------------------------
-void OXMLCell::setComponent(const uno::Reference< report::XReportComponent >& _xComponent) 
-{ 
+void OXMLCell::setComponent(const uno::Reference< report::XReportComponent >& _xComponent)
+{
     m_pCell->m_xComponent = _xComponent;
     m_xComponent = _xComponent;
 }
@@ -273,7 +273,7 @@ void OXMLCell::Characters( const ::rtl::OUString& rChars )
             static const ::rtl::OUString s_sStringConcat(RTL_CONSTASCII_USTRINGPARAM(" & "));
             m_sText += s_sStringConcat;
         }
-        
+
         m_sText += s_Quote + rChars + s_Quote;
     }
 }

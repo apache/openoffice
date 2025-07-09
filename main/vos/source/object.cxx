@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -96,7 +96,7 @@ OClassInfo::OClassInfo(const sal_Char *pClassName, sal_Int32 ObjectSize,
 {
 	m_pClassName  = pClassName;
 	m_nObjectSize = ObjectSize;
-	m_wSchema     = Schema;			
+	m_wSchema     = Schema;
 
 	m_pfnCreateObject = fnCreateObject;
 
@@ -137,7 +137,7 @@ const OClassInfo* OClassInfo::getClassInfo(const sal_Char* pClassName)
 	VOS_ASSERT(pClassName != NULL);
 
 	const OClassInfo* pClass = &VOS_CLASSINFO(VOS_NAMESPACE(OObject, vos));
-	
+
 	while (pClass != NULL)
 	{
 		if (strcmp(pClassName, pClass->m_pClassName) == 0)
@@ -154,7 +154,7 @@ VOS_CLASSINIT::VOS_CLASSINIT(OClassInfo* pNewClass)
 	VOS_ASSERT(pNewClass != NULL);
 
 	OClassInfo* pClassRoot = (OClassInfo*)&VOS_CLASSINFO(VOS_NAMESPACE(OObject, vos));
-	
+
 	pNewClass->m_pNextClass = pClassRoot->m_pNextClass;
 
 	pClassRoot->m_pNextClass = pNewClass;

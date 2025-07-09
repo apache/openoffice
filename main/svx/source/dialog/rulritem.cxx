@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -133,7 +133,7 @@ SfxItemPresentation SvxLongLRSpaceItem::GetPresentation
     String&             /*rText*/, const IntlWrapper *
 )	const
 {
-    
+
 	return SFX_ITEM_PRESENTATION_NONE;
 }
 
@@ -154,7 +154,7 @@ SvxLongLRSpaceItem::SvxLongLRSpaceItem(long lL, long lR, sal_uInt16 nId)
 
 //------------------------------------------------------------------------
 
-SvxLongLRSpaceItem::SvxLongLRSpaceItem() : 
+SvxLongLRSpaceItem::SvxLongLRSpaceItem() :
     SfxPoolItem( 0 ),
     lLeft( 0 ),
     lRight( 0 )
@@ -287,7 +287,7 @@ SvxLongULSpaceItem::SvxLongULSpaceItem(const SvxLongULSpaceItem &rCpy)
 
 //------------------------------------------------------------------------
 
-SvxLongULSpaceItem::SvxLongULSpaceItem() : 
+SvxLongULSpaceItem::SvxLongULSpaceItem() :
     SfxPoolItem( 0 ),
     lLeft( 0 ),
     lRight( 0 )
@@ -320,7 +320,7 @@ sal_Bool SvxPagePosSizeItem::QueryValue( ::com::sun::star::uno::Any& rVal, sal_u
             rVal <<= aPagePosSize;
             return sal_True;
         }
-    
+
         case MID_X: nVal = aPos.X(); break;
         case MID_Y: nVal = aPos.Y(); break;
         case MID_WIDTH: nVal = lWidth; break;
@@ -360,7 +360,7 @@ sal_Bool SvxPagePosSizeItem::PutValue( const ::com::sun::star::uno::Any& rVal, s
             case MID_Y: aPos.Y() = nVal; break;
             case MID_WIDTH: lWidth = nVal; break;
             case MID_HEIGHT: lHeight = nVal; break;
-            
+
             default: DBG_ERROR("Wrong MemberId!"); return sal_False;
         }
 

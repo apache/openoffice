@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -70,11 +70,11 @@ using namespace ::com::sun::star;
 sal_uInt16 GetScriptItemId( sal_uInt16 nItemId, short nScriptType )
 {
 	sal_uInt16 nId = nItemId;
-	
+
 	if ( ( nScriptType == i18n::ScriptType::ASIAN ) ||
 		 ( nScriptType == i18n::ScriptType::COMPLEX ) )
 	{
-		switch ( nItemId ) 
+		switch ( nItemId )
 		{
 			case EE_CHAR_LANGUAGE:
 				nId = ( nScriptType == i18n::ScriptType::ASIAN ) ? EE_CHAR_LANGUAGE_CJK : EE_CHAR_LANGUAGE_CTL;
@@ -93,15 +93,15 @@ sal_uInt16 GetScriptItemId( sal_uInt16 nItemId, short nScriptType )
 			break;
 		}
 	}
-	
+
 	return nId;
 }
 
 sal_Bool IsScriptItemValid( sal_uInt16 nItemId, short nScriptType )
 {
 	sal_Bool bValid = sal_True;
-	
-	switch ( nItemId ) 
+
+	switch ( nItemId )
 	{
 		case EE_CHAR_LANGUAGE:
 			bValid = nScriptType == i18n::ScriptType::LATIN;
@@ -234,11 +234,11 @@ sal_uInt16 aV3Map[] = {
 };
 
 sal_uInt16 aV4Map[] = {
-	3994, 3995, 3996, 3997, 3998, 3999, 4000, 4001, 4002, 4003, 
-	4004, 4005, 4006, 4007, 4008, 4009, 4010, 4011, 4012, 4013, 
-	4014, 4015, 4016, 4017, 4018, 
+	3994, 3995, 3996, 3997, 3998, 3999, 4000, 4001, 4002, 4003,
+	4004, 4005, 4006, 4007, 4008, 4009, 4010, 4011, 4012, 4013,
+	4014, 4015, 4016, 4017, 4018,
 	/* CJK Items inserted here: EE_CHAR_LANGUAGE - EE_CHAR_XMLATTRIBS */
-	4034, 4035, 4036, 4037 
+	4034, 4035, 4036, 4037
 };
 
 sal_uInt16 aV5Map[] = {
@@ -1066,7 +1066,7 @@ void ContentNode::CreateDefFont()
 	SfxStyleSheet* pS = aContentAttribs.GetStyleSheet();
 	if ( pS )
 		CreateFont( GetCharAttribs().GetDefFont(), pS->GetItemSet() );
-	
+
 	// ... dann die harte Absatzformatierung rueberbuegeln...
 	CreateFont( GetCharAttribs().GetDefFont(),
 		GetContentAttribs().GetItems(), pS == NULL );
@@ -1075,7 +1075,7 @@ void ContentNode::CreateDefFont()
 void ContentNode::SetStyleSheet( SfxStyleSheet* pS, const SvxFont& rFontFromStyle )
 {
 	aContentAttribs.SetStyleSheet( pS );
-	
+
 	// Erst alle Informationen aus dem Style verwenden...
 	GetCharAttribs().GetDefFont() = rFontFromStyle;
 	// ... dann die harte Absatzformatierung rueberbuegeln...
@@ -1106,10 +1106,10 @@ void ContentNode::CreateWrongList()
 #endif
 }
 
-void ContentNode::SetWrongList( WrongList* p ) 	
-{ 
+void ContentNode::SetWrongList( WrongList* p )
+{
 	DBG_ASSERT( !pWrongList, "WrongList existiert schon!" );
-    pWrongList = p; 
+    pWrongList = p;
 }
 
 // -------------------------------------------------------------------------
@@ -1207,7 +1207,7 @@ const SfxPoolItem* ItemList::FindAttrib( sal_uInt16 nWhich )
 // -------------------------------------------------------------------------
 EditDoc::EditDoc( SfxItemPool* pPool )
 {
-	if ( pPool ) 
+	if ( pPool )
 	{
 		pItemPool = pPool;
 		bOwnerOfPool = sal_False;
@@ -1217,7 +1217,7 @@ EditDoc::EditDoc( SfxItemPool* pPool )
 		pItemPool = new EditEngineItemPool( sal_False );
 		bOwnerOfPool = sal_True;
 	}
-	
+
 	nDefTab = DEFTAB;
 	bIsVertical = sal_False;
 	bIsFixedCellHeight = sal_False;
@@ -1230,7 +1230,7 @@ EditDoc::EditDoc( SfxItemPool* pPool )
 EditDoc::~EditDoc()
 {
 	ImplDestroyContents();
-	if ( bOwnerOfPool ) 
+	if ( bOwnerOfPool )
         SfxItemPool::Free(pItemPool);
 }
 
@@ -1414,7 +1414,7 @@ XubString EditDoc::GetParaAsString( ContentNode* pNode, sal_uInt16 nStartPos, sa
 			pNextFeature = 0;	// Feature interessiert unten nicht
 
 		DBG_ASSERT( nEnd >= nIndex, "Ende vorm Index?" );
-        //!! beware of sub string length  of -1 which is also defined as STRING_LEN and 
+        //!! beware of sub string length  of -1 which is also defined as STRING_LEN and
         //!! thus would result in adding the whole sub string up to the end of the node !!
         if (nEnd > nIndex)
 		    aStr += XubString( *pNode, nIndex, nEnd - nIndex );
@@ -1479,8 +1479,8 @@ EditPaM EditDoc::Clear()
 	return aPaM;
 }
 
-void EditDoc::SetModified( sal_Bool b )	
-{ 
+void EditDoc::SetModified( sal_Bool b )
+{
     bModified = b;
     if ( bModified )
     {

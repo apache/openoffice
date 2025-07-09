@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -1932,7 +1932,7 @@ void SwAutoFormat::AutoCorrect( xub_StrLen nPos )
 		if( nPos == pTxt->Len() )
 			break;		// das wars
 
-		if( ( ( bReplaceQuote && '\"' == cChar ) || 
+		if( ( ( bReplaceQuote && '\"' == cChar ) ||
               ( bReplaceSglQuote && '\'' == cChar ) ) &&
 			( !nPos || ' ' == pTxt->GetChar( nPos-1 ) ) )
 		{
@@ -2077,7 +2077,7 @@ void SwAutoFormat::AutoCorrect( xub_StrLen nPos )
 			        LanguageType eLang = (bGetLanguage && pAktTxtNd)
 										   ? pAktTxtNd->GetLang( nSttPos )
 										   : LANGUAGE_SYSTEM;
-                
+
                     SetRedlineTxt( STR_AUTOFMTREDL_NON_BREAK_SPACE );
                     if ( pATst->FnAddNonBrkSpace( aACorrDoc, *pTxt, nSttPos, nPos, eLang ) )
                         --nPos;
@@ -2138,7 +2138,7 @@ void SwAutoFormat::AutoCorrect( xub_StrLen nPos )
 			LanguageType eLang = (bGetLanguage && pAktTxtNd)
 										   ? pAktTxtNd->GetLang( nSttPos )
 										   : LANGUAGE_SYSTEM;
-                
+
             if ( aFlags.bAddNonBrkSpace )
             {
                 SetRedlineTxt( STR_AUTOFMTREDL_NON_BREAK_SPACE );

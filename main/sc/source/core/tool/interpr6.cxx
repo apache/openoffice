@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -67,7 +67,7 @@ double ScInterpreter::GetGammaContFraction( double fA, double fX )
         fPk = fPkm1 * fDenom  -  fPkm2 * fNum;
         fQk = fQkm1 * fDenom  -  fQkm2 * fNum;
         if (fQk != 0.0)
-        {       
+        {
             fR = fPk/fQk;
             bFinished = (fabs( (fApprox - fR)/fR ) <= fHalfMachEps);
             fApprox = fR;
@@ -135,7 +135,7 @@ double ScInterpreter::GetLowRegIGamma( double fA, double fX )
 double ScInterpreter::GetUpRegIGamma( double fA, double fX )
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "sc", "er", "ScInterpreter::GetUpRegIGamma" );
-    
+
     double fLnFactor= fA*log(fX)-fX-GetLogGamma(fA);
     double fFactor = exp(fLnFactor); //Do I need more accuracy than exp(ln()) has?;
     if (fX>fA+1.0) // includes fX>1.0
@@ -161,7 +161,7 @@ double ScInterpreter::GetGammaDistPDF( double fX, double fAlpha, double fLambda 
             const double fLogDblMax = log( ::std::numeric_limits<double>::max());
             if (log(fXr) * (fAlpha-1.0) < fLogDblMax && fAlpha < fMaxGammaArgument)
             {
-                return pow( fXr, fAlpha-1.0) * exp(-fXr) / fLambda / GetGamma(fAlpha); 
+                return pow( fXr, fAlpha-1.0) * exp(-fXr) / fLambda / GetGamma(fAlpha);
             }
             else
             {

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -132,7 +132,7 @@ typename ScFlatSegmentsImpl<_ValueType, _ExtValueType>::ValueType ScFlatSegments
 }
 
 template<typename _ValueType, typename _ExtValueType>
-typename ScFlatSegmentsImpl<_ValueType, _ExtValueType>::ExtValueType 
+typename ScFlatSegmentsImpl<_ValueType, _ExtValueType>::ExtValueType
 ScFlatSegmentsImpl<_ValueType, _ExtValueType>::getSumValue(SCCOLROW nPos1, SCCOLROW nPos2)
 {
     RangeData aData;
@@ -204,7 +204,7 @@ SCCOLROW ScFlatSegmentsImpl<_ValueType, _ExtValueType>::findLastNotOf(ValueType 
 {
     SCCOLROW nPos = numeric_limits<SCCOLROW>::max(); // position not found.
     typename fst_type::const_reverse_iterator itr = maSegments.rbegin(), itrEnd = maSegments.rend();
-    // Note that when searching in reverse direction, we need to skip the first 
+    // Note that when searching in reverse direction, we need to skip the first
     // node, since the right-most leaf node does not store a valid value.
     for (++itr; itr != itrEnd; ++itr)
     {
@@ -296,7 +296,7 @@ bool ScFlatBoolRowSegments::ForwardIterator::getValue(SCROW nPos, bool& rVal)
         ScFlatBoolRowSegments::RangeData aData;
         if (!mrSegs.getRangeData(mnCurPos, aData))
             return false;
-    
+
         mbCurValue = aData.mbValue;
         mnLastPos = aData.mnRow2;
     }
@@ -494,7 +494,7 @@ bool ScFlatUInt16RowSegments::ForwardIterator::getValue(SCROW nPos, sal_uInt16& 
         ScFlatUInt16RowSegments::RangeData aData;
         if (!mrSegs.getRangeData(mnCurPos, aData))
             return false;
-    
+
         mnCurValue = aData.mnValue;
         mnLastPos = aData.mnRow2;
     }

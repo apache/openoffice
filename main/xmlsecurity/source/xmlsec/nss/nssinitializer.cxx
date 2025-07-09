@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -132,11 +132,11 @@ void deleteRootsModule()
     SECMODModuleList *list = SECMOD_GetDefaultModuleList();
     SECMODListLock *lock = SECMOD_GetDefaultModuleListLock();
     SECMOD_GetReadLock(lock);
-    
+
     while (!RootsModule && list)
     {
         SECMODModule *module = list->module;
- 
+
         for (int i=0; i < module->slotCount; i++)
         {
             PK11SlotInfo *slot = module->slots[i];
@@ -156,7 +156,7 @@ void deleteRootsModule()
         list = list->next;
     }
     SECMOD_ReleaseReadLock(lock);
- 
+
     if (RootsModule)
     {
         PRInt32 modType;
@@ -192,21 +192,21 @@ void deleteRootsModule()
             mozilla::MozillaProductType_Firefox,
             mozilla::MozillaProductType_Default };
         int nProduct = 4;
-        
+
         uno::Reference<uno::XInterface> xInstance = rxMSF->createInstance(
             ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM("com.sun.star.mozilla.MozillaBootstrap")) );
         OSL_ENSURE( xInstance.is(), "failed to create instance" );
-        
-        uno::Reference<mozilla::XMozillaBootstrap> xMozillaBootstrap 
+
+        uno::Reference<mozilla::XMozillaBootstrap> xMozillaBootstrap
             =  uno::Reference<mozilla::XMozillaBootstrap>(xInstance,uno::UNO_QUERY);
         OSL_ENSURE( xMozillaBootstrap.is(), "failed to create instance" );
-        
+
         if (xMozillaBootstrap.is())
         {
             for (int i=0; i<nProduct; i++)
             {
                 ::rtl::OUString profile = xMozillaBootstrap->getDefaultProfile(productTypes[i]);
-                
+
                 if (profile != NULL && profile.getLength()>0)
                 {
                     ::rtl::OUString sProfilePath = xMozillaBootstrap->getProfilePath( productTypes[i], profile );
@@ -215,7 +215,7 @@ void deleteRootsModule()
                 }
             }
         }
-        
+
         RTL_LOGFILE_PRODUCT_TRACE( "XMLSEC: No Mozilla Profile found!" );
     }
 
@@ -292,14 +292,14 @@ bool nsscrypto_initialize( const css::uno::Reference< css::lang::XMultiServiceFa
         }
     }
     out_nss_init = true;
-    
+
 #ifdef XMLSEC_CRYPTO_NSS
 #if defined SYSTEM_NSS
     if (!SECMOD_HasRootCerts())
     {
 #endif
         deleteRootsModule();
-        
+
 #if defined OS2
         // YD the nss system dlls names are ending with 'k'
         OUString rootModule(RTL_CONSTASCII_USTRINGPARAM( "nssckbik" SAL_DLLEXTENSION));
@@ -309,7 +309,7 @@ bool nsscrypto_initialize( const css::uno::Reference< css::lang::XMultiServiceFa
         OUString rootModule(RTL_CONSTASCII_USTRINGPARAM( "${OOO_BASE_DIR}/program/libnssckbi" SAL_DLLEXTENSION));
 #endif
         ::rtl::Bootstrap::expandMacros(rootModule);
-        
+
         OUString rootModulePath;
         if (::osl::File::E_None == ::osl::File::getSystemPathFromFileURL(rootModule, rootModulePath))
         {
@@ -320,18 +320,18 @@ bool nsscrypto_initialize( const css::uno::Reference< css::lang::XMultiServiceFa
             pkcs11moduleSpec.append("\" library=\"");
             pkcs11moduleSpec.append(ospath.getStr());
             pkcs11moduleSpec.append("\"");
- 
+
             SECMODModule * RootsModule =
                 SECMOD_LoadUserModule(
-                    const_cast<char*>(pkcs11moduleSpec.makeStringAndClear().getStr()), 
-                    0, // no parent 
+                    const_cast<char*>(pkcs11moduleSpec.makeStringAndClear().getStr()),
+                    0, // no parent
                     PR_FALSE); // do not recurse
-                
+
             if (RootsModule)
             {
-                
+
                 bool found = RootsModule->loaded;
-                    
+
                 SECMOD_DestroyModule(RootsModule);
                 RootsModule = 0;
                 if (found)
@@ -373,7 +373,7 @@ extern "C" void nsscrypto_finalize()
 
     if (RootsModule)
     {
-        
+
         if (SECSuccess == SECMOD_UnloadUserModule(RootsModule))
         {
             xmlsec_trace( "Unloaded module \"" ROOT_CERTS "\".");
@@ -400,7 +400,7 @@ ONSSInitializer::ONSSInitializer(
 {
 }
 
-ONSSInitializer::~ONSSInitializer() 
+ONSSInitializer::~ONSSInitializer()
 {
 }
 
@@ -485,13 +485,13 @@ rtl::OUString ONSSInitializer_getImplementationName ()
     return rtl::OUString ( RTL_CONSTASCII_USTRINGPARAM ( IMPLEMENTATION_NAME ) );
 }
 
-sal_Bool SAL_CALL ONSSInitializer_supportsService( const rtl::OUString& ServiceName ) 
+sal_Bool SAL_CALL ONSSInitializer_supportsService( const rtl::OUString& ServiceName )
     throw (cssu::RuntimeException)
 {
     return ServiceName.equalsAsciiL( RTL_CONSTASCII_STRINGPARAM ( NSS_SERVICE_NAME ));
 }
 
-cssu::Sequence< rtl::OUString > SAL_CALL ONSSInitializer_getSupportedServiceNames(  ) 
+cssu::Sequence< rtl::OUString > SAL_CALL ONSSInitializer_getSupportedServiceNames(  )
     throw (cssu::RuntimeException)
 {
     cssu::Sequence < rtl::OUString > aRet(1);
@@ -507,17 +507,17 @@ cssu::Reference< cssu::XInterface > SAL_CALL ONSSInitializer_createInstance( con
 }
 
 /* XServiceInfo */
-rtl::OUString SAL_CALL ONSSInitializer::getImplementationName() 
+rtl::OUString SAL_CALL ONSSInitializer::getImplementationName()
     throw (cssu::RuntimeException)
 {
     return ONSSInitializer_getImplementationName();
 }
-sal_Bool SAL_CALL ONSSInitializer::supportsService( const rtl::OUString& rServiceName ) 
+sal_Bool SAL_CALL ONSSInitializer::supportsService( const rtl::OUString& rServiceName )
     throw (cssu::RuntimeException)
 {
     return ONSSInitializer_supportsService( rServiceName );
 }
-cssu::Sequence< rtl::OUString > SAL_CALL ONSSInitializer::getSupportedServiceNames(  ) 
+cssu::Sequence< rtl::OUString > SAL_CALL ONSSInitializer::getSupportedServiceNames(  )
     throw (cssu::RuntimeException)
 {
     return ONSSInitializer_getSupportedServiceNames();

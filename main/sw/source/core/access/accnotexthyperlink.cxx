@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
@@ -51,7 +51,7 @@ SwAccessibleNoTextHyperlink::SwAccessibleNoTextHyperlink( SwAccessibleNoTextFram
 }
 
 // XAccessibleAction
-sal_Int32 SAL_CALL SwAccessibleNoTextHyperlink::getAccessibleActionCount() 
+sal_Int32 SAL_CALL SwAccessibleNoTextHyperlink::getAccessibleActionCount()
 		throw (RuntimeException)
 {
 	SwFmtURL aURL( GetFmt()->GetURL() );
@@ -67,7 +67,7 @@ sal_Int32 SAL_CALL SwAccessibleNoTextHyperlink::getAccessibleActionCount()
 	return 0;
 }
 
-sal_Bool SAL_CALL SwAccessibleNoTextHyperlink::doAccessibleAction( sal_Int32 nIndex ) 
+sal_Bool SAL_CALL SwAccessibleNoTextHyperlink::doAccessibleAction( sal_Int32 nIndex )
 		throw (IndexOutOfBoundsException, RuntimeException)
 {
 	vos::OGuard aGuard(Application::GetSolarMutex());
@@ -79,14 +79,14 @@ sal_Bool SAL_CALL SwAccessibleNoTextHyperlink::doAccessibleAction( sal_Int32 nIn
 	SwFmtURL aURL( GetFmt()->GetURL() );
 	ImageMap* pMap = aURL.GetMap();
 	if( pMap != NULL )
-	{	
+	{
 		IMapObject* pMapObj = pMap->GetIMapObject(nIndex);
 		if(pMapObj->GetURL().Len())
 		{
 			ViewShell *pVSh = xFrame->GetShell();
 			if( pVSh )
 			{
-				LoadURL( pMapObj->GetURL(), pVSh, URLLOAD_NOFILTER, 
+				LoadURL( pMapObj->GetURL(), pVSh, URLLOAD_NOFILTER,
 						 &pMapObj->GetTarget() );
 				bRet = sal_True;
 			}
@@ -97,7 +97,7 @@ sal_Bool SAL_CALL SwAccessibleNoTextHyperlink::doAccessibleAction( sal_Int32 nIn
 		ViewShell *pVSh = xFrame->GetShell();
 		if( pVSh )
 		{
-			LoadURL( aURL.GetURL(), pVSh, URLLOAD_NOFILTER, 
+			LoadURL( aURL.GetURL(), pVSh, URLLOAD_NOFILTER,
 					 &aURL.GetTargetFrameName() );
 			bRet = sal_True;
 		}
@@ -105,9 +105,9 @@ sal_Bool SAL_CALL SwAccessibleNoTextHyperlink::doAccessibleAction( sal_Int32 nIn
 
 	return bRet;
 }
-		
+
 rtl::OUString SAL_CALL SwAccessibleNoTextHyperlink::getAccessibleActionDescription(
-		sal_Int32 nIndex ) 
+		sal_Int32 nIndex )
 		throw (IndexOutOfBoundsException, RuntimeException)
 {
 	rtl::OUString sDesc;
@@ -133,7 +133,7 @@ rtl::OUString SAL_CALL SwAccessibleNoTextHyperlink::getAccessibleActionDescripti
 }
 
 Reference< XAccessibleKeyBinding > SAL_CALL
-	SwAccessibleNoTextHyperlink::getAccessibleActionKeyBinding( sal_Int32 nIndex ) 
+	SwAccessibleNoTextHyperlink::getAccessibleActionKeyBinding( sal_Int32 nIndex )
 	throw (IndexOutOfBoundsException, RuntimeException)
 {
 	Reference< XAccessibleKeyBinding > xKeyBinding;
@@ -151,7 +151,7 @@ Reference< XAccessibleKeyBinding > SAL_CALL
 			bIsValid = sal_True;
 	}else if( aURL.GetURL().Len() )
 		bIsValid = sal_True;
-	
+
 	if(bIsValid)
 	{
 		::comphelper::OAccessibleKeyBindingHelper* pKeyBindingHelper =
@@ -171,7 +171,7 @@ Reference< XAccessibleKeyBinding > SAL_CALL
 
 // XAccessibleHyperlink
 Any SAL_CALL SwAccessibleNoTextHyperlink::getAccessibleActionAnchor(
-		sal_Int32 nIndex ) 
+		sal_Int32 nIndex )
 		throw (IndexOutOfBoundsException, RuntimeException)
 {
 	if(nIndex < 0 || nIndex >= getAccessibleActionCount())
@@ -186,8 +186,8 @@ Any SAL_CALL SwAccessibleNoTextHyperlink::getAccessibleActionAnchor(
 	return aRet;
 }
 
-Any SAL_CALL SwAccessibleNoTextHyperlink::getAccessibleActionObject( 
-			sal_Int32 nIndex ) 
+Any SAL_CALL SwAccessibleNoTextHyperlink::getAccessibleActionObject(
+			sal_Int32 nIndex )
 	throw (IndexOutOfBoundsException, RuntimeException)
 {
 	if(nIndex < 0 || nIndex >= getAccessibleActionCount())
@@ -209,19 +209,19 @@ Any SAL_CALL SwAccessibleNoTextHyperlink::getAccessibleActionObject(
 	return aRet;
 }
 
-sal_Int32 SAL_CALL SwAccessibleNoTextHyperlink::getStartIndex() 
+sal_Int32 SAL_CALL SwAccessibleNoTextHyperlink::getStartIndex()
 		throw (RuntimeException)
 {
 	return 0;
 }
 
-sal_Int32 SAL_CALL SwAccessibleNoTextHyperlink::getEndIndex() 
+sal_Int32 SAL_CALL SwAccessibleNoTextHyperlink::getEndIndex()
 		throw (RuntimeException)
 {
 	return 0;
 }
 
-sal_Bool SAL_CALL SwAccessibleNoTextHyperlink::isValid(  ) 
+sal_Bool SAL_CALL SwAccessibleNoTextHyperlink::isValid(  )
 		throw (::com::sun::star::uno::RuntimeException)
 {
 	SwFmtURL aURL( GetFmt()->GetURL() );

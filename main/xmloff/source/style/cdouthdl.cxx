@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -91,7 +91,7 @@ XMLCrossedOutTypePropHdl::~XMLCrossedOutTypePropHdl()
 }
 
 sal_Bool XMLCrossedOutTypePropHdl::importXML( const OUString& rStrImpValue, uno::Any& rValue, const SvXMLUnitConverter& ) const
-{ 
+{
 	sal_uInt16 eNewStrikeout;
 	sal_Bool bRet = SvXMLUnitConverter::convertEnum(
         eNewStrikeout, rStrImpValue, pXML_CrossedoutType_Enum );
@@ -110,7 +110,7 @@ sal_Bool XMLCrossedOutTypePropHdl::importXML( const OUString& rStrImpValue, uno:
 				eNewStrikeout = eStrikeout;
 				break;
 			case FontStrikeout::DOUBLE:
-				// A double line style has priority over a solid or a bold 
+				// A double line style has priority over a solid or a bold
 				// line style,
 				// but not about any other line style
 				switch( eStrikeout )
@@ -138,11 +138,11 @@ sal_Bool XMLCrossedOutTypePropHdl::importXML( const OUString& rStrImpValue, uno:
 		}
 	}
 
-	return bRet; 
+	return bRet;
 }
 
 sal_Bool XMLCrossedOutTypePropHdl::exportXML( OUString& rStrExpValue, const uno::Any& rValue, const SvXMLUnitConverter& ) const
-{ 
+{
 	sal_Bool bRet = sal_False;
 	sal_Int16 nValue = sal_Int16();
 	OUStringBuffer aOut;
@@ -154,7 +154,7 @@ sal_Bool XMLCrossedOutTypePropHdl::exportXML( OUString& rStrExpValue, const uno:
 		if( bRet )
 			rStrExpValue = aOut.makeStringAndClear();
 	}
-	
+
 	return bRet;
 }
 
@@ -169,7 +169,7 @@ XMLCrossedOutStylePropHdl::~XMLCrossedOutStylePropHdl()
 }
 
 sal_Bool XMLCrossedOutStylePropHdl::importXML( const OUString& rStrImpValue, uno::Any& rValue, const SvXMLUnitConverter& ) const
-{ 
+{
 	sal_uInt16 eNewStrikeout;
 	sal_Bool bRet = SvXMLUnitConverter::convertEnum(
         eNewStrikeout, rStrImpValue, pXML_CrossedoutStyle_Enum );
@@ -189,11 +189,11 @@ sal_Bool XMLCrossedOutStylePropHdl::importXML( const OUString& rStrImpValue, uno
 		}
 	}
 
-	return bRet; 
+	return bRet;
 }
 
 sal_Bool XMLCrossedOutStylePropHdl::exportXML( OUString& rStrExpValue, const uno::Any& rValue, const SvXMLUnitConverter& ) const
-{ 
+{
 	sal_Bool bRet = sal_False;
 	sal_Int16 nValue = sal_Int16();
 	OUStringBuffer aOut;
@@ -205,7 +205,7 @@ sal_Bool XMLCrossedOutStylePropHdl::exportXML( OUString& rStrExpValue, const uno
 		if( bRet )
 			rStrExpValue = aOut.makeStringAndClear();
 	}
-	
+
 	return bRet;
 }
 
@@ -220,7 +220,7 @@ XMLCrossedOutWidthPropHdl::~XMLCrossedOutWidthPropHdl()
 }
 
 sal_Bool XMLCrossedOutWidthPropHdl::importXML( const OUString& rStrImpValue, uno::Any& rValue, const SvXMLUnitConverter& ) const
-{ 
+{
 	sal_uInt16 eNewStrikeout;
 	sal_Bool bRet = SvXMLUnitConverter::convertEnum(
         eNewStrikeout, rStrImpValue, pXML_CrossedoutWidth_Enum );
@@ -261,11 +261,11 @@ sal_Bool XMLCrossedOutWidthPropHdl::importXML( const OUString& rStrImpValue, uno
 		}
 	}
 
-	return bRet; 
+	return bRet;
 }
 
 sal_Bool XMLCrossedOutWidthPropHdl::exportXML( OUString& rStrExpValue, const uno::Any& rValue, const SvXMLUnitConverter& ) const
-{ 
+{
 	sal_Bool bRet = sal_False;
 	sal_Int16 nValue = sal_Int16();
 	OUStringBuffer aOut;
@@ -277,7 +277,7 @@ sal_Bool XMLCrossedOutWidthPropHdl::exportXML( OUString& rStrExpValue, const uno
 		if( bRet )
 			rStrExpValue = aOut.makeStringAndClear();
 	}
-	
+
 	return bRet;
 }
 
@@ -292,34 +292,34 @@ XMLCrossedOutTextPropHdl::~XMLCrossedOutTextPropHdl()
 }
 
 sal_Bool XMLCrossedOutTextPropHdl::importXML( const OUString& rStrImpValue, uno::Any& rValue, const SvXMLUnitConverter& ) const
-{ 
+{
 	sal_Bool bRet = sal_False;
 
 	if( rStrImpValue.getLength() )
 	{
-		sal_Int16 eStrikeout = ('/' == rStrImpValue[0] 
+		sal_Int16 eStrikeout = ('/' == rStrImpValue[0]
 										? FontStrikeout::SLASH
 										: FontStrikeout::X);
 		rValue <<= (sal_Int16)eStrikeout;
 		bRet = sal_True;
 	}
 
-	return bRet; 
+	return bRet;
 }
 
 sal_Bool XMLCrossedOutTextPropHdl::exportXML( OUString& rStrExpValue, const uno::Any& rValue, const SvXMLUnitConverter& ) const
-{ 
+{
 	sal_Bool bRet = sal_False;
 	sal_Int16 nValue = sal_Int16();
 
-	if( (rValue >>= nValue) && 
+	if( (rValue >>= nValue) &&
 		(FontStrikeout::SLASH == nValue || FontStrikeout::X == nValue) )
 	{
-		rStrExpValue = OUString::valueOf( 
-			static_cast< sal_Unicode>( FontStrikeout::SLASH == nValue ? '/' 
+		rStrExpValue = OUString::valueOf(
+			static_cast< sal_Unicode>( FontStrikeout::SLASH == nValue ? '/'
 																	  : 'X' ) );
 		bRet = sal_True;
 	}
-	
+
 	return bRet;
 }

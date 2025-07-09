@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -72,7 +72,7 @@ SfxEventNamesItem SwMacroAssignDlg::AddEvents( DlgEventType eType )
 		// rPg.SetGetRangeLink( &_GetRangeHdl );
 		aItem.AddEvent( String( SW_RES(STR_EVENT_START_INS_GLOSSARY) ), String(),
 							SW_EVENT_START_INS_GLOSSARY );
-		aItem.AddEvent( String( SW_RES(STR_EVENT_END_INS_GLOSSARY) ), String(), 
+		aItem.AddEvent( String( SW_RES(STR_EVENT_END_INS_GLOSSARY) ), String(),
 							SW_EVENT_END_INS_GLOSSARY);
 		// damit der neue Handler aktiv wird!
 		// rPg.Reset( rSet );
@@ -142,7 +142,7 @@ sal_Bool SwMacroAssignDlg::INetFmtDlg( Window* pParent, SwWrtShell& rSh,
 	aSet.Put( AddEvents( MACASSGN_INETFMT ) );
 
 	SvxAbstractDialogFactory* pFact = SvxAbstractDialogFactory::Create();
-	SfxAbstractDialog* pMacroDlg = pFact->CreateSfxDialog( pParent, aSet, 
+	SfxAbstractDialog* pMacroDlg = pFact->CreateSfxDialog( pParent, aSet,
 		rSh.GetView().GetViewFrame()->GetFrame().GetFrameInterface(),
 		SID_EVENTCONFIG );
 	if ( pMacroDlg && pMacroDlg->Execute() == RET_OK )

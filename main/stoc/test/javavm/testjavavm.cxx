@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -64,7 +64,7 @@ sal_Bool testJavaVM(const Reference< XMultiServiceFactory > & xMgr )
 	if( ! xXInt.is())
 		return sal_False;
 	Reference<XJavaVM> xVM( xXInt, UNO_QUERY);
-	if( ! xVM.is()) 
+	if( ! xVM.is())
 		return sal_False;
 	Reference<XJavaThreadRegister_11> xreg11(xVM, UNO_QUERY);
 	if( ! xreg11.is())
@@ -97,7 +97,7 @@ sal_Bool testJavaVM(const Reference< XMultiServiceFactory > & xMgr )
 
 	JavaVM* _jvm= *(JavaVM**) anyVM.getValue();
 	JNIEnv *p_env;
-	if( _jvm->AttachCurrentThread((void**) &p_env, 0)) 
+	if( _jvm->AttachCurrentThread((void**) &p_env, 0))
 		return sal_False;
 
 //	jclass aJProg = p_env->FindClass("TestJavaVM");
@@ -113,7 +113,7 @@ sal_Bool testJavaVM(const Reference< XMultiServiceFactory > & xMgr )
         OSL_TRACE( "Can't find Prog class\n");
         exit(1);
     }
- 
+
 //   jmethodID methid = p_env->GetStaticMethodID( cls, "main", "([Ljava/lang/String;)V");
 //    if (methid == 0) {
 //        OSL_TRACE("Can't find Prog.main\n");
@@ -125,7 +125,7 @@ sal_Bool testJavaVM(const Reference< XMultiServiceFactory > & xMgr )
 //        OSL_TRACE("Out of memory\n");
 //        exit(1);
 //    }
-//    jobjectArray args = p_env->NewObjectArray( 1, 
+//    jobjectArray args = p_env->NewObjectArray( 1,
 //                        p_env->FindClass("java/lang/String"), jstr);
 //    if (args == 0) {
 //        OSL_TRACE( "Out of memory\n");
@@ -138,9 +138,9 @@ sal_Bool testJavaVM(const Reference< XMultiServiceFactory > & xMgr )
 	if( id)
 	{
 //		jint _i= p_env->CallStaticIntMethod(cls, id);
-		p_env->CallStaticIntMethod(cls, id);        
+		p_env->CallStaticIntMethod(cls, id);
 	}
-		
+
 	if( p_env->ExceptionOccurred()){
 		p_env->ExceptionDescribe();
 		p_env->ExceptionClear();
@@ -160,7 +160,7 @@ SAL_IMPLEMENT_MAIN()
 	Reference< XComponentContext > context= bootstrap_InitialComponentContext(xreg);
 	Reference<XMultiComponentFactory> fac= context->getServiceManager();
 	Reference<XMultiServiceFactory> xMgr( fac, UNO_QUERY);
-	
+
 	sal_Bool bSucc = sal_False;
 	try
 	{
@@ -176,7 +176,7 @@ SAL_IMPLEMENT_MAIN()
             RTL_CONSTASCII_USTRINGPARAM( "javavm.uno" SAL_DLLEXTENSION ) );
 		xImplReg->registerImplementation(
 			sLibLoader, sJenLib, Reference< XSimpleRegistry >() );
-		
+
 		bSucc = testJavaVM( xMgr );
 	}
 	catch (Exception & rExc)

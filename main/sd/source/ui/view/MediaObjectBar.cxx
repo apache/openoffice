@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -98,7 +98,7 @@ void MediaObjectBar::GetState( SfxItemSet& rSet )
 
 	while( nWhich )
 	{
-		if( SID_AVMEDIA_TOOLBOX == nWhich ) 
+		if( SID_AVMEDIA_TOOLBOX == nWhich )
 		{
 			SdrMarkList* pMarkList = new SdrMarkList( mpView->GetMarkedObjectList() );
 			bool		 bDisable = true;
@@ -110,7 +110,7 @@ void MediaObjectBar::GetState( SfxItemSet& rSet )
 				if( pObj && pObj->ISA( SdrMediaObj ) )
 				{
 					::avmedia::MediaItem aItem( SID_AVMEDIA_TOOLBOX );
-					
+
 					static_cast< sdr::contact::ViewContactOfSdrMediaObj& >( pObj->GetViewContact() ).updateMediaItem( aItem );
 					rSet.Put( aItem );
 					bDisable = false;
@@ -119,7 +119,7 @@ void MediaObjectBar::GetState( SfxItemSet& rSet )
 
 			if( bDisable )
 				rSet.DisableItem( SID_AVMEDIA_TOOLBOX );
-			
+
 			delete pMarkList;
 		}
 
@@ -131,14 +131,14 @@ void MediaObjectBar::GetState( SfxItemSet& rSet )
 
 void MediaObjectBar::Execute( SfxRequest& rReq )
 {
-	if( SID_AVMEDIA_TOOLBOX == rReq.GetSlot() ) 
+	if( SID_AVMEDIA_TOOLBOX == rReq.GetSlot() )
 	{
 		const SfxItemSet*	pArgs = rReq.GetArgs();
 		const SfxPoolItem*	pItem;
-		
+
 		if( !pArgs || ( SFX_ITEM_SET != pArgs->GetItemState( SID_AVMEDIA_TOOLBOX, sal_False, &pItem ) ) )
 			pItem = NULL;
-			
+
 		if( pItem )
 		{
 			SdrMarkList* pMarkList = new SdrMarkList( mpView->GetMarkedObjectList() );
@@ -149,7 +149,7 @@ void MediaObjectBar::Execute( SfxRequest& rReq )
 
 				if( pObj && pObj->ISA( SdrMediaObj ) )
 				{
-					static_cast< sdr::contact::ViewContactOfSdrMediaObj& >( pObj->GetViewContact() ).executeMediaItem( 
+					static_cast< sdr::contact::ViewContactOfSdrMediaObj& >( pObj->GetViewContact() ).executeMediaItem(
 						static_cast< const ::avmedia::MediaItem& >( *pItem ) );
 				}
 			}

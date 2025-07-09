@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -102,7 +102,7 @@ OUString getOfficePath( enum whichOfficePath ePath )
 static OString getEnvironmentPath( const char* pKey )
 {
     OString aPath;
-    
+
     const char* pValue = getenv( pKey );
     if( pValue && *pValue )
     {
@@ -117,9 +117,9 @@ void psp::getPrinterPathList( std::list< OUString >& rPathList, const char* pSub
 {
     rPathList.clear();
     rtl_TextEncoding aEncoding = osl_getThreadTextEncoding();
-    
+
     OUStringBuffer aPathBuffer( 256 );
-    
+
     // append net path
     aPathBuffer.append( getOfficePath( psp::NetPath ) );
     if( aPathBuffer.getLength() )
@@ -164,7 +164,7 @@ void psp::getPrinterPathList( std::list< OUString >& rPathList, const char* pSub
 
         rPathList.push_back( OStringToOUString( aDir, aEncoding ) );
     } while( nIndex != -1 );
-    
+
     #ifdef SYSTEM_PPD_DIR
     if( pSubDir && rtl_str_compare( pSubDir, PRINTER_PPDDIR ) == 0 )
     {
@@ -197,7 +197,7 @@ OUString psp::getFontPath()
     if( ! aPath.getLength() )
     {
         OUStringBuffer aPathBuffer( 512 );
-        
+
         OUString aConfigPath( getOfficePath( psp::ConfigPath ) );
         OUString aNetPath( getOfficePath( psp::NetPath ) );
         OUString aUserPath( getOfficePath( psp::UserPath ) );
@@ -366,7 +366,7 @@ void psp::normPath( OString& rPath )
     char buf[PATH_MAX];
 
     ByteString aPath( rPath );
-    
+
     // double slashes and slash at end are probably
     // removed by realpath anyway, but since this runs
     // on many different platforms let's play it safe

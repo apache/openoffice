@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -149,7 +149,7 @@ BasicViewFactory::BasicViewFactory (
 BasicViewFactory::~BasicViewFactory (void)
 {
 }
-    
+
 
 
 
@@ -168,7 +168,7 @@ void SAL_CALL BasicViewFactory::disposing (void)
     {
         ReleaseView(*iView, true);
     }
-    
+
     // Release the view shell container.  At this point no one other than us
     // should hold references to the view shells (at the moment this is a
     // trivial requirement, because no one other then us holds a shared
@@ -211,10 +211,10 @@ Reference<XResource> SAL_CALL BasicViewFactory::createResource (
         pWindow = VCLUnoHelper::GetWindow(xPane->getWindow());
 
     // Get the view frame.
-    SfxViewFrame* pFrame = NULL; 
+    SfxViewFrame* pFrame = NULL;
     if (mpBase != NULL)
         pFrame = mpBase->GetViewFrame();
-    
+
     if (pFrame != NULL && mpBase!=NULL && pWindow!=NULL)
     {
         // Try to get the view from the cache.
@@ -225,7 +225,7 @@ Reference<XResource> SAL_CALL BasicViewFactory::createResource (
         {
             pDescriptor = CreateView(rxViewId, *pFrame, *pWindow, xPane, pFrameView, bIsCenterPane);
         }
-        
+
         if (pDescriptor.get() != NULL)
             xView = pDescriptor->mxView;
 
@@ -236,7 +236,7 @@ Reference<XResource> SAL_CALL BasicViewFactory::createResource (
         else
             pWindow->Resize();
     }
-    
+
     return xView;
 }
 
@@ -350,7 +350,7 @@ void SAL_CALL BasicViewFactory::initialize (const Sequence<Any>& aArguments)
     const bool bIsCenterPane)
 {
     ::boost::shared_ptr<ViewDescriptor> pDescriptor (new ViewDescriptor());
-    
+
     pDescriptor->mpViewShell = CreateViewShell(
         rxViewId,
         rFrame,
@@ -358,7 +358,7 @@ void SAL_CALL BasicViewFactory::initialize (const Sequence<Any>& aArguments)
         pFrameView,
         bIsCenterPane);
     pDescriptor->mxViewId = rxViewId;
-        
+
     if (pDescriptor->mpViewShell.get() != NULL)
     {
         pDescriptor->mpViewShell->Init(bIsCenterPane);
@@ -464,7 +464,7 @@ void BasicViewFactory::ReleaseView (
     bool bDoNotCache)
 {
     bool bIsCacheable (!bDoNotCache && IsCacheable(rpDescriptor));
-    
+
     if (bIsCacheable)
     {
         Reference<XRelocatableResource> xResource (rpDescriptor->mxView, UNO_QUERY);
@@ -484,14 +484,14 @@ void BasicViewFactory::ReleaseView (
             bIsCacheable = false;
         }
     }
-    
+
     if ( ! bIsCacheable)
     {
         // Shut down the current view shell.
         rpDescriptor->mpViewShell->Shutdown ();
         mpBase->GetDocShell()->Disconnect(rpDescriptor->mpViewShell.get());
         mpBase->GetViewShellManager()->DeactivateViewShell(rpDescriptor->mpViewShell.get());
-        
+
         Reference<XComponent> xComponent (rpDescriptor->mxView, UNO_QUERY);
         if (xComponent.is())
             xComponent->dispose();
@@ -567,7 +567,7 @@ bool BasicViewFactory::IsCacheable (const ::boost::shared_ptr<ViewDescriptor>& r
             if (xResource->relocateToAnchor(xNewAnchor))
                 bRelocationSuccessfull = true;
         }
-        
+
         if ( ! bRelocationSuccessfull)
         {
             ReleaseView(pDescriptor, true);

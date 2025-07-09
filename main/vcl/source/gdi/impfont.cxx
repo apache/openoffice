@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
@@ -175,7 +175,7 @@ int ImplFontCharMap::GetGlyphIndex( sal_UCS4 cChar ) const
 	// return -1 if the object doesn't know the glyph ids
 	if( !mpStartGlyphs )
 		return -1;
-    
+
 	// return 0 if the unicode doesn't have a matching glyph
 	int nRange = ImplFindRangeIndex( cChar );
 	// check that we are inside any range
@@ -190,7 +190,7 @@ int ImplFontCharMap::GetGlyphIndex( sal_UCS4 cChar ) const
 	// check that we are inside a range
 	if( (nRange & 1) != 0 )
 		return 0;
-    
+
 	// get glyph index directly or indirectly
 	int nGlyphIndex = cChar - mpRangeCodes[ nRange ];
 	const int nStartIndex = mpStartGlyphs[ nRange/2 ];
@@ -600,7 +600,7 @@ bool ParseCMAP( const unsigned char* pCmap, int nLength, CmapResult& rResult )
             *(pOut++) = *(it++);
     }
 
-    // update the result struct    
+    // update the result struct
     rResult.mpRangeCodes = pCodePairs;
     rResult.mpStartGlyphs = pStartGlyphs;
     rResult.mnRangeCount = nRangeCount;

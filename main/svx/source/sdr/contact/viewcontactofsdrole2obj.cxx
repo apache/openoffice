@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -77,10 +77,10 @@ namespace sdr
             const GeoStat& rGeoStat(GetOle2Obj().GetGeoStat());
             const double fShearX(rGeoStat.nShearWink ? tan((36000 - rGeoStat.nShearWink) * F_PI18000) : 0.0);
             const double fRotate(rGeoStat.nDrehWink ? (36000 - rGeoStat.nDrehWink) * F_PI18000 : 0.0);
-            
+
             return basegfx::tools::createScaleShearXRotateTranslateB2DHomMatrix(
-                aObjectRange.getWidth(), aObjectRange.getHeight(), 
-                fShearX, 
+                aObjectRange.getWidth(), aObjectRange.getHeight(),
+                fShearX,
                 fRotate,
                 aObjectRange.getMinX(), aObjectRange.getMinY());
         }
@@ -98,7 +98,7 @@ namespace sdr
             const bool bHasContent(true);
 			const drawinglayer::attribute::SdrLineFillShadowTextAttribute aAttribute(
 				drawinglayer::primitive2d::createNewSdrLineFillShadowTextAttribute(
-                    rItemSet, 
+                    rItemSet,
                     GetOle2Obj().getText(0),
                     bHasContent));
             drawinglayer::primitive2d::Primitive2DReference xContent;
@@ -123,14 +123,14 @@ namespace sdr
                     const double fWidth(aChartContentRange.getWidth());
                     const double fHeight(aChartContentRange.getHeight());
 
-                    if(aChartSequence.hasElements() 
+                    if(aChartSequence.hasElements()
                         && basegfx::fTools::more(fWidth, 0.0)
                         && basegfx::fTools::more(fHeight, 0.0))
                     {
                         // create embedding transformation
                         basegfx::B2DHomMatrix aEmbed(
                             basegfx::tools::createTranslateB2DHomMatrix(
-                                -aChartContentRange.getMinX(), 
+                                -aChartContentRange.getMinX(),
                                 -aChartContentRange.getMinY()));
 
                         aEmbed.scale(1.0 / fWidth, 1.0 / fHeight);
@@ -164,13 +164,13 @@ namespace sdr
                     bHighContrast);
             }
 
-            // create primitive. Use Ole2 primitive here. Prepare attribute settings, will 
-			// be used soon anyways. Always create primitives to allow the decomposition of 
+            // create primitive. Use Ole2 primitive here. Prepare attribute settings, will
+			// be used soon anyways. Always create primitives to allow the decomposition of
 			// SdrOle2Primitive2D to create needed invisible elements for HitTest and/or BoundRect
             const drawinglayer::primitive2d::Primitive2DReference xReference(
                 new drawinglayer::primitive2d::SdrOle2Primitive2D(
 			        drawinglayer::primitive2d::Primitive2DSequence(&xContent, 1),
-			        aObjectMatrix, 
+			        aObjectMatrix,
 			        aAttribute));
 
 			return drawinglayer::primitive2d::Primitive2DSequence(&xReference, 1);

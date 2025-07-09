@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -212,7 +212,7 @@ void lcl_frmitems_setXMLBorderWidth( table::BorderLine &rBorderLine,
 	}
 	else
 	{
-		rBorderLine.OuterLineWidth = 0 == nWidth ? DEF_LINE_WIDTH_0 : nWidth; 
+		rBorderLine.OuterLineWidth = 0 == nWidth ? DEF_LINE_WIDTH_0 : nWidth;
 		rBorderLine.InnerLineWidth = 0;
 		rBorderLine.LineDistance = 0;
 
@@ -232,7 +232,7 @@ XMLBorderWidthHdl::~XMLBorderWidthHdl()
 }
 
 sal_Bool XMLBorderWidthHdl::importXML( const OUString& rStrImpValue, uno::Any& rValue, const SvXMLUnitConverter& rUnitConverter ) const
-{ 
+{
 	SvXMLTokenEnumerator aTokenEnum( rStrImpValue );
 
 	sal_Int32 nInWidth, nDistance, nOutWidth;
@@ -278,11 +278,11 @@ sal_Bool XMLBorderWidthHdl::importXML( const OUString& rStrImpValue, uno::Any& r
 	aBorderLine.LineDistance   = sal::static_int_cast< sal_Int16 >(nDistance);
 
 	rValue <<= aBorderLine;
-	return sal_True; 
+	return sal_True;
 }
 
 sal_Bool XMLBorderWidthHdl::exportXML( OUString& rStrExpValue, const uno::Any& rValue, const SvXMLUnitConverter& rUnitConverter ) const
-{ 
+{
 	OUStringBuffer aOut;
 
 	table::BorderLine aBorderLine;
@@ -313,7 +313,7 @@ XMLBorderHdl::~XMLBorderHdl()
 }
 
 sal_Bool XMLBorderHdl::importXML( const OUString& rStrImpValue, uno::Any& rValue, const SvXMLUnitConverter& rUnitConverter ) const
-{ 
+{
 	OUString aToken;
 	SvXMLTokenEnumerator aTokens( rStrImpValue );
 
@@ -412,7 +412,7 @@ sal_Bool XMLBorderHdl::importXML( const OUString& rStrImpValue, uno::Any& rValue
 }
 
 sal_Bool XMLBorderHdl::exportXML( OUString& rStrExpValue, const uno::Any& rValue, const SvXMLUnitConverter& rUnitConverter ) const
-{ 
+{
 	OUStringBuffer aOut;
 
 	table::BorderLine aBorderLine;

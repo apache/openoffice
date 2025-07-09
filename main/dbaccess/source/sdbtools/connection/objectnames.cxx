@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -201,7 +201,7 @@ namespace sdbtools
             if  (   ( _rName.indexOf( (sal_Unicode)34  ) >= 0 )  // "
                 ||  ( _rName.indexOf( (sal_Unicode)39  ) >= 0 )  // '
                 ||  ( _rName.indexOf( (sal_Unicode)96  ) >= 0 )  //
-                ||  ( _rName.indexOf( (sal_Unicode)145 ) >= 0 )  // 
+                ||  ( _rName.indexOf( (sal_Unicode)145 ) >= 0 )  //
                 ||  ( _rName.indexOf( (sal_Unicode)146 ) >= 0 )  //
                 ||  ( _rName.indexOf( (sal_Unicode)180 ) >= 0 )  // #86621# removed unparsable chars
                 )
@@ -449,7 +449,7 @@ namespace sdbtools
 
         return sName;
     }
-    
+
     //--------------------------------------------------------------------
     ::rtl::OUString SAL_CALL ObjectNames::convertToSQLName( const ::rtl::OUString& Name ) throw (RuntimeException)
     {
@@ -457,7 +457,7 @@ namespace sdbtools
         Reference< XDatabaseMetaData > xMeta( getConnection()->getMetaData(), UNO_QUERY_THROW );
         return ::dbtools::convertName2SQLName( Name, xMeta->getExtraNameCharacters() );
     }
-    
+
     //--------------------------------------------------------------------
     ::sal_Bool SAL_CALL ObjectNames::isNameUsed( ::sal_Int32 _CommandType, const ::rtl::OUString& _Name ) throw (IllegalArgumentException, RuntimeException)
     {
@@ -466,7 +466,7 @@ namespace sdbtools
         PNameValidation pNameCheck( NameCheckFactory::createExistenceCheck( getContext(), _CommandType, getConnection()) );
         return !pNameCheck->validateName( _Name );
     }
-    
+
     //--------------------------------------------------------------------
     ::sal_Bool SAL_CALL ObjectNames::isNameValid( ::sal_Int32 _CommandType, const ::rtl::OUString& _Name ) throw (IllegalArgumentException, RuntimeException)
     {
@@ -475,7 +475,7 @@ namespace sdbtools
         PNameValidation pNameCheck( NameCheckFactory::createValidityCheck( getContext(), _CommandType, getConnection()) );
         return pNameCheck->validateName( _Name );
     }
-    
+
     //--------------------------------------------------------------------
     void SAL_CALL ObjectNames::checkNameForCreate( ::sal_Int32 _CommandType, const ::rtl::OUString& _Name ) throw (SQLException, RuntimeException)
     {

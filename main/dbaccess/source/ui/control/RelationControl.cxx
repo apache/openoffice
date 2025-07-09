@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -117,9 +117,9 @@ namespace dbaui
 		virtual ~ORelationControl();
 
 		/** searches for a connection between these two tables
-			@param	_pSource	
+			@param	_pSource
 					the left table
-			@param	_pDest		
+			@param	_pDest
 					the right window
 		*/
 		void setWindowTables(const OTableWindow* _pSource,const OTableWindow* _pDest);
@@ -154,7 +154,7 @@ namespace dbaui
 	private:
 
 		DECL_LINK( AsynchActivate, void* );
-		
+
 	};
 
     //========================================================================
@@ -207,9 +207,9 @@ namespace dbaui
 			//////////////////////////////////////////////////////////////////////
 			// set browse mode
 			SetMode(	BROWSER_COLUMNSELECTION |
-						BROWSER_HLINESFULL		| 
+						BROWSER_HLINESFULL		|
 						BROWSER_VLINESFULL		|
-						BROWSER_HIDECURSOR		| 
+						BROWSER_HIDECURSOR		|
 						BROWSER_HIDESELECT		|
 						BROWSER_AUTO_HSCROLL	|
 						BROWSER_AUTO_VSCROLL);
@@ -238,7 +238,7 @@ namespace dbaui
 			PostUserEvent(LINK(this, ORelationControl, AsynchDeactivate));
 		else if (rNEvt.GetType() == EVENT_GETFOCUS)
 			PostUserEvent(LINK(this, ORelationControl, AsynchActivate));
-		
+
 		return EditBrowseBox::PreNotify(rNEvt);
 	}
 
@@ -263,7 +263,7 @@ namespace dbaui
 		long nRow = GetCurRow();
 		sal_uInt16 nCol = GetCurColumnId();
 
-		sal_Bool bRet = !((		( bForward && (nCol == DEST_COLUMN)		&& (nRow == GetRowCount() - 1))) 
+		sal_Bool bRet = !((		( bForward && (nCol == DEST_COLUMN)		&& (nRow == GetRowCount() - 1)))
 						||	(!bForward && (nCol == SOURCE_COLUMN)	&& (nRow == 0)));
 
 		return bRet && EditBrowseBox::IsTabAllowed(bForward);
@@ -333,7 +333,7 @@ namespace dbaui
 	void ORelationControl::InitController( CellControllerRef& /*rController*/, long nRow, sal_uInt16 nColumnId )
 	{
 		DBG_CHKTHIS(ORelationControl,NULL);
-		
+
 		rtl::OString sHelpId( HID_RELATIONDIALOG_LEFTFIELDCELL );
 
 		Reference< XPropertySet> xDef;
@@ -388,7 +388,7 @@ namespace dbaui
 		DBG_CHKTHIS(ORelationControl,NULL);
 		String aText  =const_cast< ORelationControl*>(this)->GetCellText( m_nDataPos, nColumnId );
 
-		Point aPos( rRect.TopLeft() );			
+		Point aPos( rRect.TopLeft() );
 		Size aTextSize( GetDataWindow().GetTextHeight(),GetDataWindow().GetTextWidth( aText ));
 
 		if( aPos.X() < rRect.Right() || aPos.X() + aTextSize.Width() > rRect.Right() ||
@@ -438,7 +438,7 @@ namespace dbaui
 		{
 			m_xSourceDef = _pSource->GetTable();
 			SetColumnTitle(1, _pSource->GetName());
-		
+
 
 			m_xDestDef = _pDest->GetTable();
 			SetColumnTitle(2, _pDest->GetName());
@@ -498,7 +498,7 @@ OTableListBoxControl::OTableListBoxControl(  Window* _pParent
 	 , m_lmbRightTable(			this, ResId(LB_RIGHT_TABLE,*_rResId.GetResMgr()))
 	 , m_aFL_InvolvedFields(    this, ResId(FL_INVOLVED_FIELDS,*_rResId.GetResMgr()))
 	 , m_pTableMap(_pTableMap)
-	 , m_pParentDialog(_pParentDialog) 
+	 , m_pParentDialog(_pParentDialog)
 	{
 		m_pRC_Tables = new ORelationControl( this,m_pTableMap );
 		m_pRC_Tables->SetHelpId(HID_RELDLG_KEYFIELDS);
@@ -559,7 +559,7 @@ OTableListBoxControl::OTableListBoxControl(  Window* _pParent
 		m_pRC_Tables->setWindowTables(pInitialLeft,pInitialRight);
 
 		// die in einer ComboBox ausgewaehlte Tabelle darf nicht in der anderen zur Verfuegung stehen
-		
+
 		if ( m_pTableMap->size() > 2 )
 		{
 			m_lmbLeftTable.RemoveEntry(m_strCurrentRight);
@@ -622,9 +622,9 @@ OTableListBoxControl::OTableListBoxControl(  Window* _pParent
 				// und den jetzt selektierten raus
 				m_lmbRightTable.RemoveEntry(strSelected);
 				m_strCurrentLeft	= strSelected;
-				
+
 				pLeft = pLoop;
-				
+
 				OJoinTableView::OTableWindowMap::const_iterator aIter = m_pTableMap->find(m_lmbRightTable.GetSelectEntry());
 				OSL_ENSURE( aIter != m_pTableMap->end(), "Invalid name");
 				if ( aIter != m_pTableMap->end() )
@@ -729,8 +729,8 @@ OTableListBoxControl::OTableListBoxControl(  Window* _pParent
 		return bRet;
 	}
 	// -----------------------------------------------------------------------------
-	TTableWindowData::value_type OTableListBoxControl::getReferencingTable()	const 
-	{ 
+	TTableWindowData::value_type OTableListBoxControl::getReferencingTable()	const
+	{
         return m_pRC_Tables->getData()->getReferencingTable();
 	}
 	// -----------------------------------------------------------------------------
@@ -739,7 +739,7 @@ OTableListBoxControl::OTableListBoxControl(  Window* _pParent
         if ( !_bEnable )
             PostUserEvent(LINK(m_pRC_Tables, ORelationControl, AsynchDeactivate));
         m_pRC_Tables->Enable(_bEnable);
-        
+
     }
 	// -----------------------------------------------------------------------------
 }

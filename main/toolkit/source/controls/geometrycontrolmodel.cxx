@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -195,7 +195,7 @@
 	::com::sun::star::uno::Any OGeometryControlModel_Base::ImplGetDefaultValueByHandle(sal_Int32 nHandle) const
 	{
 		::com::sun::star::uno::Any aDefault;
-	
+
         switch ( nHandle )
         {
             case GCM_PROPERTY_ID_POS_X:			    aDefault <<= (sal_Int32) 0; break;
@@ -217,7 +217,7 @@
 	::com::sun::star::uno::Any OGeometryControlModel_Base::ImplGetPropertyValueByHandle(sal_Int32 nHandle) const
 	{
 		::com::sun::star::uno::Any aValue;
-	
+
         switch ( nHandle )
         {
             case GCM_PROPERTY_ID_POS_X:			aValue <<= m_nPosX; break;
@@ -237,7 +237,7 @@
 
 	//--------------------------------------------------------------------
 	void OGeometryControlModel_Base::ImplSetPropertyValueByHandle(sal_Int32 nHandle, const :: com::sun::star::uno::Any& aValue)
-	{		
+	{
         switch ( nHandle )
         {
             case GCM_PROPERTY_ID_POS_X:			aValue >>= m_nPosX; break;
@@ -404,13 +404,13 @@
             static_cast< ::com::sun::star::script::XScriptEventsSupplier* >( this );
 		Reference< ::com::sun::star::script::XScriptEventsSupplier > xCloneEventsSupplier =
             static_cast< ::com::sun::star::script::XScriptEventsSupplier* >( pOwnClone );
-            
+
 		if( xEventsSupplier.is() && xCloneEventsSupplier.is() )
 		{
 			Reference< XNameContainer > xEventCont = xEventsSupplier->getEvents();
 			Reference< XNameContainer > xCloneEventCont = xCloneEventsSupplier->getEvents();
 
-			::com::sun::star::uno::Sequence< ::rtl::OUString > aNames = 
+			::com::sun::star::uno::Sequence< ::rtl::OUString > aNames =
                 xEventCont->getElementNames();
 			const ::rtl::OUString* pNames = aNames.getConstArray();
 			sal_Int32 i, nNameCount = aNames.getLength();

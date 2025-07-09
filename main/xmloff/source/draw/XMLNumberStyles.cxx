@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -69,7 +69,7 @@ struct SdXMLDataStyleNumber
 	{ XML_TOKEN_INVALID,        0,              0,             0,       NULL  }
 };
 
-// date 
+// date
 
 #define DATA_STYLE_NUMBER_END				0
 #define DATA_STYLE_NUMBER_DAY				1	// <number:day/>
@@ -145,7 +145,7 @@ const SdXMLFixedDataStyle aSdXML_DateStyle_1 =
 const SdXMLFixedDataStyle aSdXML_DateStyle_2 =
 {
 	"D4", sal_False, sal_True,
-	{ 
+	{
 		DATA_STYLE_NUMBER_DAY_LONG,
 		DATA_STYLE_NUMBER_TEXT_POINT,
 		DATA_STYLE_NUMBER_MONTH_LONG,
@@ -507,9 +507,9 @@ private:
 public:
 	TYPEINFO();
 
-	SdXMLNumberFormatMemberImportContext( SvXMLImport& rImport, 
+	SdXMLNumberFormatMemberImportContext( SvXMLImport& rImport,
 		sal_uInt16 nPrfx,
-		const rtl::OUString& rLocalName, 
+		const rtl::OUString& rLocalName,
 		const com::sun::star::uno::Reference< com::sun::star::xml::sax::XAttributeList>& xAttrList,
 		SdXMLNumberFormatImportContext* pParent,
 		SvXMLImportContext* pSlaveContext );
@@ -537,7 +537,7 @@ SdXMLNumberFormatMemberImportContext::SdXMLNumberFormatMemberImportContext( SvXM
 	mbLong = sal_False;
 	mbTextual = sal_False;
 	mbDecimal02 = sal_False;
-	
+
 	const sal_Int16 nAttrCount = xAttrList.is() ? xAttrList->getLength() : 0;
 	for(sal_Int16 i=0; i < nAttrCount; i++)
 	{
@@ -636,7 +636,7 @@ void SdXMLNumberFormatImportContext::add( OUString& rNumberStyle, sal_Bool bLong
 		mnIndex = -1;
 		return;
 	}
-	
+
 	const SdXMLDataStyleNumber* pStyleMember = aSdXMLDataStyleNumbers;
 	for( sal_uInt8 nIndex = 0; pStyleMember->meNumberStyle != XML_TOKEN_INVALID; nIndex++, pStyleMember++ )
 	{

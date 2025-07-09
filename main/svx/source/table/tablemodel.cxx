@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -86,7 +86,7 @@ template< class Vec, class Iter > void remove_range( Vec& rVector, sal_Int32 nIn
 			else
 			{
 				Iter aEnd( aBegin );
-		
+
 				while( nCount-- )
 					aEnd++;
 				rVector.erase( aBegin, aEnd );
@@ -656,7 +656,7 @@ void TableModel::notifyModification()
 			{
 				CellRef xCell( getCell( nCol, nRow ) );
 				fprintf( file, "<cell this=\"%lx\"", xCell.get() );
-				
+
 				sal_Int32 nRowSpan = xCell->getRowSpan();
 				sal_Int32 nColSpan = xCell->getColumnSpan();
 				sal_Bool bMerged = xCell->isMerged();
@@ -791,7 +791,7 @@ void TableModel::insertColumns( sal_Int32 nIndex, sal_Int32 nCount )
 
 			if( bUndo )
 				pModel->EndUndo();
-				
+
 			if( pModel )
 			    pModel->SetChanged();
 
@@ -872,7 +872,7 @@ void TableModel::removeColumns( sal_Int32 nIndex, sal_Int32 nCount )
 						{
 							// current cells merges with columns after the removed columns
 							const sal_Int32 nRemove = nCount - nCol + nIndex;
-							
+
 							CellRef xTargetCell( getCell( nIndex + nCount, nRow ) );
 							if( xTargetCell.is() )
 							{
@@ -901,7 +901,7 @@ void TableModel::removeColumns( sal_Int32 nIndex, sal_Int32 nCount )
 
 			if( bUndo )
 				pModel->EndUndo();
-				
+
 			if( pModel )
                 pModel->SetChanged();
 		}
@@ -969,7 +969,7 @@ void TableModel::insertRows( sal_Int32 nIndex, sal_Int32 nCount )
 		}
 		if( bUndo )
 			pModel->EndUndo();
-			
+
 		if( pModel )
 			pModel->SetChanged();
 
@@ -1033,7 +1033,7 @@ void TableModel::removeRows( sal_Int32 nIndex, sal_Int32 nCount )
 						{
 							// current cells merges with rows after the removed rows
 							const sal_Int32 nRemove = nCount - nRow + nIndex;
-							
+
 							CellRef xTargetCell( getCell( nCol, nIndex + nCount ) );
 							if( xTargetCell.is() )
 							{
@@ -1060,7 +1060,7 @@ void TableModel::removeRows( sal_Int32 nIndex, sal_Int32 nCount )
 
 			if( bUndo )
 				pModel->EndUndo();
-				
+
 			if( pModel )
                 pModel->SetChanged();
 		}
@@ -1102,7 +1102,7 @@ void TableModel::optimize()
 	TableModelNotifyGuard aGuard( this );
 
 	bool bWasModified = false;
-	
+
 	if( !maRows.empty() && !maColumns.empty() )
 	{
 		sal_Int32 nCol = getColumnCountImpl() - 1;
@@ -1115,7 +1115,7 @@ void TableModel::optimize()
 				if( xCell.is() && !xCell->isMerged() )
 					bEmpty = false;
 			}
-			
+
 			if( bEmpty )
 			{
 				if( nCol > 0 ) try
@@ -1152,7 +1152,7 @@ void TableModel::optimize()
 				if( xCell.is() && !xCell->isMerged() )
 					bEmpty = false;
 			}
-			
+
 			if( bEmpty )
 			{
 				if( nRow > 0 ) try
@@ -1198,7 +1198,7 @@ void TableModel::merge( sal_Int32 nCol, sal_Int32 nRow, sal_Int32 nColSpan, sal_
     {
         DBG_ERROR("TableModel::merge(), merge beyound the table!");
     }
-        
+
 	// merge first cell
 	CellRef xOriginCell( dynamic_cast< Cell* >( getCellByPosition( nCol, nRow ).get() ) );
 	if( xOriginCell.is() )

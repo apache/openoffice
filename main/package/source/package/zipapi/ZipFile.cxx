@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -197,7 +197,7 @@ uno::Reference< xml::crypto::XCipherContext > ZipFile::StaticGetCipher( const un
     return xResult;
 }
 
-void ZipFile::StaticFillHeader( const ::rtl::Reference< EncryptionData >& rData, 
+void ZipFile::StaticFillHeader( const ::rtl::Reference< EncryptionData >& rData,
 								sal_Int32 nSize,
 								const ::rtl::OUString& aMediaType,
 								sal_Int8 * & pHeader )
@@ -276,19 +276,19 @@ void ZipFile::StaticFillHeader( const ::rtl::Reference< EncryptionData >& rData,
 	*(pHeader++) = static_cast< sal_Int8 >(( nMediaTypeLength >> 8 ) & 0xFF);
 
 	// Then the salt content
-	rtl_copyMemory ( pHeader, rData->m_aSalt.getConstArray(), nSaltLength ); 
+	rtl_copyMemory ( pHeader, rData->m_aSalt.getConstArray(), nSaltLength );
 	pHeader += nSaltLength;
 
 	// Then the IV content
-	rtl_copyMemory ( pHeader, rData->m_aInitVector.getConstArray(), nIVLength ); 
+	rtl_copyMemory ( pHeader, rData->m_aInitVector.getConstArray(), nIVLength );
 	pHeader += nIVLength;
 
 	// Then the digest content
-	rtl_copyMemory ( pHeader, rData->m_aDigest.getConstArray(), nDigestLength ); 
+	rtl_copyMemory ( pHeader, rData->m_aDigest.getConstArray(), nDigestLength );
 	pHeader += nDigestLength;
 
 	// Then the mediatype itself
-	rtl_copyMemory ( pHeader, aMediaType.getStr(), nMediaTypeLength ); 
+	rtl_copyMemory ( pHeader, aMediaType.getStr(), nMediaTypeLength );
 	pHeader += nMediaTypeLength;
 }
 
@@ -408,14 +408,14 @@ uno::Reference< XInputStream > ZipFile::StaticGetDataFromRawStream( const uno::R
             nSize = n_ConstDigestLength + 32;
 
 		// skip header
-		xSeek->seek( n_ConstHeaderSize + rData->m_aInitVector.getLength() + 
+		xSeek->seek( n_ConstHeaderSize + rData->m_aInitVector.getLength() +
 								rData->m_aSalt.getLength() + rData->m_aDigest.getLength() );
 
 		// Only want to read enough to verify the digest
 		Sequence < sal_Int8 > aReadBuffer ( nSize );
 
-		xStream->readBytes( aReadBuffer, nSize ); 
-	
+		xStream->readBytes( aReadBuffer, nSize );
+
 		if ( !StaticHasValidPassword( xFactory, aReadBuffer, rData ) )
 			throw packages::WrongPasswordException( ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( OSL_LOG_PREFIX ) ), uno::Reference< uno::XInterface >() );
 	}
@@ -477,10 +477,10 @@ sal_Bool ZipFile::StaticHasValidPassword( const uno::Reference< lang::XMultiServ
     aDigestSeq = xDigestContext->finalizeDigestAndDispose();
 
     // If we don't have a digest, then we have to assume that the password is correct
-	if (  rData->m_aDigest.getLength() != 0  && 
+	if (  rData->m_aDigest.getLength() != 0  &&
 	      ( aDigestSeq.getLength() != rData->m_aDigest.getLength() ||
-	        0 != rtl_compareMemory ( aDigestSeq.getConstArray(), 
-		 					        rData->m_aDigest.getConstArray(), 
+	        0 != rtl_compareMemory ( aDigestSeq.getConstArray(),
+		 					        rData->m_aDigest.getConstArray(),
 							        aDigestSeq.getLength() ) ) )
 	{
 		// We should probably tell the user that the password they entered was wrong
@@ -507,7 +507,7 @@ sal_Bool ZipFile::hasValidPassword ( ZipEntry & rEntry, const ::rtl::Reference< 
 
 		Sequence < sal_Int8 > aReadBuffer ( nSize );
 
-		xStream->readBytes( aReadBuffer, nSize ); 
+		xStream->readBytes( aReadBuffer, nSize );
 
 		bRet = StaticHasValidPassword( m_xFactory, aReadBuffer, rData );
 	}
@@ -545,11 +545,11 @@ uno::Reference< XInputStream > SAL_CALL ZipFile::getInputStream( ZipEntry& rEntr
 	if ( rEntry.nOffset <= 0 )
 		readLOC( rEntry );
 
-	// We want to return a rawStream if we either don't have a key or if the 
+	// We want to return a rawStream if we either don't have a key or if the
 	// key is wrong
-	
+
 	sal_Bool bNeedRawStream = rEntry.nMethod == STORED;
-	
+
 	// if we have a digest, then this file is an encrypted one and we should
 	// check if we can decrypt it or not
 	if ( bIsEncrypted && rData.is() && rData->m_aDigest.getLength() )
@@ -576,7 +576,7 @@ uno::Reference< XInputStream > SAL_CALL ZipFile::getDataStream( ZipEntry& rEntry
 	if ( rEntry.nOffset <= 0 )
 		readLOC( rEntry );
 
-	// An exception must be thrown in case stream is encrypted and 
+	// An exception must be thrown in case stream is encrypted and
 	// there is no key or the key is wrong
 	sal_Bool bNeedRawStream = sal_False;
 	if ( bIsEncrypted )
@@ -669,8 +669,8 @@ sal_Bool ZipFile::readLOC( ZipEntry &rEntry )
     if ( nRead < aNameBuffer.getLength() )
             aNameBuffer.realloc( nRead );
 
-    ::rtl::OUString sLOCPath = rtl::OUString::intern( (sal_Char *) aNameBuffer.getArray(), 
-                                                        aNameBuffer.getLength(), 
+    ::rtl::OUString sLOCPath = rtl::OUString::intern( (sal_Char *) aNameBuffer.getArray(),
+                                                        aNameBuffer.getLength(),
                                                         RTL_TEXTENCODING_UTF8 );
 
 	if ( rEntry.nPathLen == -1 ) // the file was created
@@ -820,15 +820,15 @@ sal_Int32 ZipFile::readCEN()
 				throw ZipException( OUString( RTL_CONSTASCII_USTRINGPARAM ( "unexpected extra header info length") ), uno::Reference < XInterface > () );
 
             // read always in UTF8, some tools seem not to set UTF8 bit
-			aEntry.sPath = rtl::OUString::intern ( (sal_Char *) aMemGrabber.getCurrentPos(), 
-                                                   aEntry.nPathLen, 
+			aEntry.sPath = rtl::OUString::intern ( (sal_Char *) aMemGrabber.getCurrentPos(),
+                                                   aEntry.nPathLen,
                                                    RTL_TEXTENCODING_UTF8 );
 
             if ( !::comphelper::OStorageHelper::IsValidZipEntryFileName( aEntry.sPath, sal_True ) )
 				throw ZipException( OUString( RTL_CONSTASCII_USTRINGPARAM ( "Zip entry has an invalid name.") ), uno::Reference < XInterface > () );
 
 			aMemGrabber.skipBytes( aEntry.nPathLen + aEntry.nExtraLen + nCommentLen );
-			aEntries[aEntry.sPath] = aEntry;	
+			aEntries[aEntry.sPath] = aEntry;
 		}
 
 		if (nCount != nTotal)
@@ -892,7 +892,7 @@ sal_Int32 ZipFile::recover()
 							aMemGrabber >> aEntry.nPathLen;
 							aMemGrabber >> aEntry.nExtraLen;
 
-							sal_Int32 nDescrLength = 
+							sal_Int32 nDescrLength =
 								( aEntry.nMethod == DEFLATED && ( aEntry.nFlag & 8 ) ) ?
 														16 : 0;
 
@@ -912,16 +912,16 @@ sal_Int32 ZipFile::recover()
 							{
                                 // read always in UTF8, some tools seem not to set UTF8 bit
 								if( nPos + 30 + aEntry.nPathLen <= nBufSize )
-									aEntry.sPath = OUString ( (sal_Char *) &pBuffer[nPos + 30], 
-									  							aEntry.nPathLen, 
+									aEntry.sPath = OUString ( (sal_Char *) &pBuffer[nPos + 30],
+									  							aEntry.nPathLen,
 																RTL_TEXTENCODING_UTF8 );
 								else
 								{
 									Sequence < sal_Int8 > aFileName;
 									aGrabber.seek( nGenPos + nPos + 30 );
 									aGrabber.readBytes( aFileName, aEntry.nPathLen );
-									aEntry.sPath = OUString ( (sal_Char *) aFileName.getArray(), 
-																aFileName.getLength(), 
+									aEntry.sPath = OUString ( (sal_Char *) aFileName.getArray(),
+																aFileName.getLength(),
 																RTL_TEXTENCODING_UTF8 );
 									aEntry.nPathLen = static_cast< sal_Int16 >(aFileName.getLength());
 								}
@@ -1075,7 +1075,7 @@ void ZipFile::getSizeAndCRC( sal_Int32 nOffset, sal_Int32 nCompressedSize, sal_I
 			aCRC.updateSegment( aData, 0, nLastInflated );
 			nInBlock += nLastInflated;
 		} while( !aInflater.finished() && nLastInflated );
-		
+
 		nRealSize += nInBlock;
 	}
 

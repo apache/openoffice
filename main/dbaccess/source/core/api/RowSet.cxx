@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -791,11 +791,11 @@ void SAL_CALL ORowSet::updateBinaryStream( sal_Int32 columnIndex, const Referenc
 	::osl::MutexGuard aGuard( *m_pMutex );
 	checkUpdateConditions(columnIndex);
 	checkUpdateIterator();
-	
+
 	//if(((*m_aCurrentRow)->get())[columnIndex].getTypeKind() == DataType::BLOB)
 	//{
  //       ::connectivity::ORowSetValue aOldValue = ((*m_aCurrentRow)->get())[columnIndex];
-	//	m_pCache->updateBinaryStream(columnIndex,x,length);		
+	//	m_pCache->updateBinaryStream(columnIndex,x,length);
 	//	((*m_aCurrentRow)->get())[columnIndex] = makeAny(x);
  //       ((*m_aCurrentRow)->get())[columnIndex].setTypeKind(DataType::BLOB);
  //       firePropertyChange(columnIndex-1 ,aOldValue);
@@ -891,7 +891,7 @@ void SAL_CALL ORowSet::insertRow(  ) throw(SQLException, RuntimeException)
 	// when the row isn't modified
 	// or the concurency is read only
 	::osl::ResettableMutexGuard aGuard( *m_pMutex );
-    
+
 	if(!m_pCache || !m_bNew || !m_bModified || m_nResultSetConcurrency == ResultSetConcurrency::READ_ONLY)
 		throwFunctionSequenceException(*this);
 
@@ -920,7 +920,7 @@ void SAL_CALL ORowSet::insertRow(  ) throw(SQLException, RuntimeException)
 
 	// - rowChanged
 	notifyAllListenersRowChanged(aGuard,aEvt);
-        
+
     if ( !aBookmarks.empty() )
     {
         RowsChangeEvent aUpEvt(*this,RowChangeAction::UPDATE,aBookmarks.size(),Sequence<Any>(&(*aBookmarks.begin()),aBookmarks.size()));
@@ -943,7 +943,7 @@ void SAL_CALL ORowSet::insertRow(  ) throw(SQLException, RuntimeException)
 sal_Int32 SAL_CALL ORowSet::getRow(  ) throw(SQLException, RuntimeException)
 {
 	::osl::MutexGuard aGuard( *m_pMutex );
-	checkCache();    
+	checkCache();
 
 	// check if we are inserting a row
 	return (m_pCache && isInsertRow()) ? 0 : ORowSetBase::getRow();
@@ -956,7 +956,7 @@ void SAL_CALL ORowSet::updateRow(  ) throw(SQLException, RuntimeException)
 	::osl::ResettableMutexGuard aGuard( *m_pMutex );
 	if ( !m_pCache || m_nResultSetConcurrency == ResultSetConcurrency::READ_ONLY || m_bNew || ((m_pCache->m_nPrivileges & Privilege::UPDATE ) != Privilege::UPDATE) )
 		throwFunctionSequenceException(*this);
-    
+
 
 	if(m_bModified)
 	{
@@ -971,7 +971,7 @@ void SAL_CALL ORowSet::updateRow(  ) throw(SQLException, RuntimeException)
         ::std::vector< Any > aBookmarks;
         m_pCache->updateRow(m_aCurrentRow.operator ->(),aBookmarks);
         if ( !aBookmarks.empty() )
-            aEvt.Bookmarks = Sequence<Any>(&(*aBookmarks.begin()),aBookmarks.size()); 
+            aEvt.Bookmarks = Sequence<Any>(&(*aBookmarks.begin()),aBookmarks.size());
         aEvt.Rows += aBookmarks.size();
 		m_aBookmark		= m_pCache->getBookmark();
 		m_aCurrentRow	= m_pCache->m_aMatrixIter;
@@ -1257,7 +1257,7 @@ void ORowSet::impl_setDataColumnsWriteable_throw()
         sal_Bool bReadOnly = sal_False;
         (*aIter)->getPropertyValue(PROPERTY_ISREADONLY) >>= bReadOnly;
         *aReadIter = bReadOnly;
-        
+
         (*aIter)->setPropertyValue(PROPERTY_ISREADONLY,makeAny(sal_False));
     }
 }
@@ -1487,7 +1487,7 @@ void SAL_CALL ORowSet::executeWithCompletion( const Reference< XInteractionHandl
 	    const sal_Int32 nParamCount = xParamsAsIndicies.is() ? xParamsAsIndicies->getCount() : 0;
         if ( m_aParametersSet.size() < (size_t)nParamCount )
 		    m_aParametersSet.resize( nParamCount ,false);
-		
+
 		::dbtools::askForParameters( xComposer, this, m_xActiveConnection, _rxHandler,m_aParametersSet );
 	}
 	// ensure that only the allowed exceptions leave this block
@@ -1667,7 +1667,7 @@ Reference< XResultSet > ORowSet::impl_prepareAndExecute_throw()
 		{
             xStatementProps->setPropertyValue( PROPERTY_USEBOOKMARKS, makeAny( sal_True ) );
             xStatementProps->setPropertyValue( PROPERTY_MAXROWS, makeAny( m_nMaxRows ) );
-            
+
             setStatementResultSetType( xStatementProps, m_nResultSetType, m_nResultSetConcurrency );
 		}
 		catch ( const Exception& )
@@ -1945,7 +1945,7 @@ void ORowSet::execute_NoApprove_NoNewConn(ResettableMutexGuard& _rClearForNotifi
 					    m_xColumns->getByName(sColumnLabel) >>= xColumn;
 				    if (!xColumn.is() && m_xColumns->hasByName(sName))
 					    m_xColumns->getByName(sName) >>= xColumn;
-				    
+
 				    // check if column already in the list we need another
 				    if ( aAllColumns.find( xColumn ) != aAllColumns.end() )
 				    {
@@ -1997,9 +1997,9 @@ void ORowSet::execute_NoApprove_NoNewConn(ResettableMutexGuard& _rClearForNotifi
                                                                         sParseLabel,
 																	    m_aCurrentRow);
 				    aColumns->get().push_back(pColumn);
-                    
+
                     pColumn->setFastPropertyValue_NoBroadcast(PROPERTY_ID_ISREADONLY,makeAny(rKeyColumns.find(i) != rKeyColumns.end()));
-                    
+
 				    if(!sColumnLabel.getLength())
 				    {
 					    if(xColumn.is())
@@ -2332,7 +2332,7 @@ sal_Bool ORowSet::impl_initComposer_throw( ::rtl::OUString& _out_rCommandToExecu
     impl_initParametersContainer_nothrow();
 
     _out_rCommandToExecute = m_xComposer->getQueryWithSubstitution();
-    
+
     return bUseEscapeProcessing;
 }
 
@@ -2770,7 +2770,7 @@ void ORowSet::checkUpdateConditions(sal_Int32 columnIndex)
 // -----------------------------------------------------------------------------
 void SAL_CALL ORowSet::refreshRow(  ) throw(SQLException, RuntimeException)
 {
-    
+
 	ORowSetNotifier aNotifier( this );
 		// this will call cancelRowModification on the cache if necessary
 

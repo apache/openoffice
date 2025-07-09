@@ -103,10 +103,10 @@ CurlSession::CurlSession(
     , m_aEnv()
 {
     m_pCurl = curl_easy_init();
-    
+
     curl_easy_setopt( m_pCurl, CURLOPT_HTTPAUTH, CURLAUTH_ANY );
     curl_easy_setopt( m_pCurl, CURLOPT_PROXYAUTH, CURLAUTH_ANY );
-    
+
     curl_easy_setopt( m_pCurl, CURLOPT_SSL_CTX_FUNCTION, Curl_SSLContextCallback );
     curl_easy_setopt( m_pCurl, CURLOPT_SSL_CTX_DATA, this );
 
@@ -404,7 +404,7 @@ int CurlSession::verifyServerX509Certificate( X509_STORE_CTX *x509StoreContext )
 {
     X509 *serverCertificate = X509_STORE_CTX_get0_cert( x509StoreContext );
     STACK_OF(X509) *chain = X509_STORE_CTX_get0_untrusted( x509StoreContext );
-    
+
     std::vector< uno::Sequence< sal_Int8 > > asn1DerCertificates;
     int verifyResult = X509_V_OK;
     if ( chain != NULL ) {
@@ -652,7 +652,7 @@ bool CurlSession::provideCredentials( const DAVRequestEnvironment &env, CurlRequ
         );
         return false;
     }
-    
+
     bool canUseSystemCreds = false;
     long authMethods = 0;
     CURLcode rc = CURLE_OK;
@@ -664,7 +664,7 @@ bool CurlSession::provideCredentials( const DAVRequestEnvironment &env, CurlRequ
         canUseSystemCreds = (authMethods & CURLAUTH_NEGOTIATE) || (authMethods & CURLAUTH_NTLM);
     m_aLogger.log( LogLevel::FINE, "authMethods=$1$, canUseSystemCreds=$2$",
         (sal_Int64)authMethods, (sal_Int32)canUseSystemCreds );
-    
+
     const CurlRequest::Header *authHeader = NULL;
     if ( statusCode == 401 )
         authHeader = request.findResponseHeader( "WWW-Authenticate" );
@@ -682,7 +682,7 @@ bool CurlSession::provideCredentials( const DAVRequestEnvironment &env, CurlRequ
                 realm = rtl::OStringToOUString( authHeader->value.copy( realmStart, realmEnd - realmStart ), RTL_TEXTENCODING_UTF8 );
         }
     }
-    
+
     int theRetVal = pListener->authenticate( realm,
                                              getHostName(),
                                              theUserName,
@@ -739,7 +739,7 @@ void CurlSession::addEnvironmentRequestHeaders( CurlRequest &curlRequest, const 
                 RTL_CONSTASCII_STRINGPARAM( "User-Agent" ) );
 
         curlRequest.addHeader( aHeader, aValue );
-        
+
         ++aHeaderIter;
     }
 
@@ -804,7 +804,7 @@ void CurlSession::processResponse( CurlRequest &curlRequest, CURLcode curlCode )
         }
         throw DAVException( exCode, exData );
     }
-    
+
     rtl::OUString reasonPhrase = rtl::OStringToOUString( curlRequest.getReasonPhrase(), RTL_TEXTENCODING_UTF8 );
     if ( statusCode != 0 && statusCode / 100 != 2 )
     {
@@ -816,7 +816,7 @@ void CurlSession::processResponse( CurlRequest &curlRequest, CURLcode curlCode )
             case SC_TEMPORARY_REDIRECT:            // 307
             {
                 // new location for certain redirections
-                
+
                 const CurlRequest::Header *location = curlRequest.findResponseHeader( "location" );
                 if ( location != NULL )
                 {
@@ -886,7 +886,7 @@ static void responseHeadersToDAVResource( const std::vector< CurlRequest::Header
                 }
             }
         }
-        
+
         if ( storeHeader )
         {
             DAVPropertyValue thePropertyValue;
@@ -895,7 +895,7 @@ static void responseHeadersToDAVResource( const std::vector< CurlRequest::Header
             thePropertyValue.Value <<= rtl::OStringToOUString( (*it).value, RTL_TEXTENCODING_UTF8 );
             ioResource.properties.push_back( thePropertyValue );
         }
-        
+
         it++;
     }
 }
@@ -929,7 +929,7 @@ void CurlSession::propfind( CurlRequest &curlRequest,
 
     CredentialsData credsData( this, curlRequest, rEnv );
     curlRequest.setProvideCredentialsCallback( Curl_ProvideCredentials, &credsData );
-    
+
     CURLcode rc = curlRequest.propfind( m_aUri, inPath );
     processResponse( curlRequest, rc );
 }
@@ -942,12 +942,12 @@ void CurlSession::PROPFIND( const rtl::OUString & inPath,
     throw ( DAVException )
 {
     m_aLogger.log( LogLevel::INFO, "PROPFIND line $1$", (sal_Int32)__LINE__ );
-    
+
     osl::Guard< osl::Mutex > theGuard( m_aMutex );
 
     Init( rEnv );
     CurlRequest curlRequest( m_pCurl );
-    
+
     propfind( curlRequest, inPath, inDepth, &inPropNames, false, rEnv );
 
     const std::vector< DAVResource > rResources( parseWebDAVPropFindResponse( curlRequest.getResponseBody().get() ) );
@@ -965,12 +965,12 @@ void CurlSession::PROPFIND( const rtl::OUString & inPath,
     throw( DAVException )
 {
     m_aLogger.log( LogLevel::INFO, "PROPFIND line $1$", (sal_Int32)__LINE__ );
-    
+
     osl::Guard< osl::Mutex > theGuard( m_aMutex );
 
     Init( rEnv );
     CurlRequest curlRequest( m_pCurl );
-    
+
     propfind( curlRequest, inPath, inDepth, NULL, true, rEnv );
 
     const std::vector< DAVResourceInfo > rResInfo( parseWebDAVPropNameResponse( curlRequest.getResponseBody().get() ) );
@@ -992,7 +992,7 @@ void CurlSession::PROPPATCH( const rtl::OUString & inPath,
 
     Init( rEnv );
     CurlRequest curlRequest( m_pCurl );
-    
+
     addEnvironmentRequestHeaders( curlRequest, rEnv );
 
     // check whether a lock on this resource is already owned
@@ -1008,7 +1008,7 @@ void CurlSession::PROPPATCH( const rtl::OUString & inPath,
         curlRequest.addHeader( "If",
             ( "(<" + rtl::OUStringToOString(inLock.LockTokens[0], RTL_TEXTENCODING_UTF8 ) + ">)" ).getStr() );
     }
-    
+
     rtl::OString xml = ProppatchRequest::generatePROPPATCHRequestBody( inValues );
     if ( xml.getLength() > 0 )
     {
@@ -1033,7 +1033,7 @@ void CurlSession::HEAD( const ::rtl::OUString & inPath,
     throw( DAVException )
 {
     m_aLogger.log( LogLevel::INFO, "HEAD line $1$", (sal_Int32)__LINE__ );
-    
+
     osl::Guard< osl::Mutex > theGuard( m_aMutex );
 
     Init(rEnv );
@@ -1170,20 +1170,20 @@ void CurlSession::PUT( const rtl::OUString & inPath,
     throw ( DAVException )
 {
     m_aLogger.log( LogLevel::INFO, "PUT line $1$", (sal_Int32)__LINE__ );
-    
+
     osl::Guard< osl::Mutex > theGuard( m_aMutex );
-    
+
     Init( rEnv );
     CurlRequest curlRequest( m_pCurl );
-    
+
     addEnvironmentRequestHeaders( curlRequest, rEnv );
-    
+
     uno::Sequence< sal_Int8 > aDataToSend;
     if ( !getDataFromInputStream( inInputStream, aDataToSend, false ) )
         throw DAVException( DAVException::DAV_INVALID_ARG );
     curlRequest.setRequestBody( reinterpret_cast< const char * >( aDataToSend.getConstArray() ),
                                 aDataToSend.getLength() );
-    
+
     CredentialsData credsData( this, curlRequest, rEnv );
     curlRequest.setProvideCredentialsCallback( Curl_ProvideCredentials, &credsData );
 
@@ -1217,14 +1217,14 @@ CurlSession::POST( const rtl::OUString & inPath,
     throw ( DAVException )
 {
     m_aLogger.log( LogLevel::INFO, "POST line $1$", (sal_Int32)__LINE__ );
-    
+
     osl::Guard< osl::Mutex > theGuard( m_aMutex );
-    
+
     Init( rEnv );
     CurlRequest curlRequest( m_pCurl );
-    
+
     addEnvironmentRequestHeaders( curlRequest, rEnv );
-    
+
     uno::Sequence< sal_Int8 > aDataToSend;
     if ( !getDataFromInputStream( inInputStream, aDataToSend, false ) )
         throw DAVException( DAVException::DAV_INVALID_ARG );
@@ -1270,14 +1270,14 @@ void CurlSession::POST( const rtl::OUString & inPath,
     throw ( DAVException )
 {
     m_aLogger.log( LogLevel::INFO, "POST line $1$", (sal_Int32)__LINE__ );
-    
+
     osl::Guard< osl::Mutex > theGuard( m_aMutex );
-    
+
     Init( rEnv );
     CurlRequest curlRequest( m_pCurl );
-    
+
     addEnvironmentRequestHeaders( curlRequest, rEnv );
-    
+
     uno::Sequence< sal_Int8 > aDataToSend;
     if ( !getDataFromInputStream( inInputStream, aDataToSend, false ) )
         throw DAVException( DAVException::DAV_INVALID_ARG );
@@ -1319,14 +1319,14 @@ void CurlSession::MKCOL( const rtl::OUString & inPath,
     throw ( DAVException )
 {
     m_aLogger.log( LogLevel::INFO, "MKCOL line $1$", (sal_Int32)__LINE__ );
-    
+
     osl::Guard< osl::Mutex > theGuard( m_aMutex );
-    
+
     Init( rEnv );
     CurlRequest curlRequest( m_pCurl );
-    
+
     addEnvironmentRequestHeaders( curlRequest, rEnv );
-    
+
     CredentialsData credsData( this, curlRequest, rEnv );
     curlRequest.setProvideCredentialsCallback( Curl_ProvideCredentials, &credsData );
 
@@ -1360,18 +1360,18 @@ void CurlSession::COPY( const rtl::OUString & inSourceURL,
     m_aLogger.log( LogLevel::INFO, "COPY line $1$", (sal_Int32)__LINE__ );
 
     osl::Guard< osl::Mutex > theGuard( m_aMutex );
-    
+
     Init( rEnv );
     CurlRequest curlRequest( m_pCurl );
-    
+
     addEnvironmentRequestHeaders( curlRequest, rEnv );
-    
+
     CredentialsData credsData( this, curlRequest, rEnv );
     curlRequest.setProvideCredentialsCallback( Curl_ProvideCredentials, &credsData );
 
     curlRequest.addHeader( "Destination", rtl::OUStringToOString( inDestinationURL, RTL_TEXTENCODING_UTF8 ).getStr() );
     curlRequest.addHeader( "Overwrite", inOverWrite? "T" : "F" );
-    
+
     // check whether a lock on the destination resource is already owned
     rtl::OUString aUri( composeCurrentUri( inDestinationURL ) );
     ucb::Lock inLock;
@@ -1400,20 +1400,20 @@ void CurlSession::MOVE( const rtl::OUString & inSourceURL,
     throw ( DAVException )
 {
     m_aLogger.log( LogLevel::INFO, "MOVE line $1$", (sal_Int32)__LINE__ );
-    
+
     osl::Guard< osl::Mutex > theGuard( m_aMutex );
-    
+
     Init( rEnv );
     CurlRequest curlRequest( m_pCurl );
-    
+
     addEnvironmentRequestHeaders( curlRequest, rEnv );
-    
+
     CredentialsData credsData( this, curlRequest, rEnv );
     curlRequest.setProvideCredentialsCallback( Curl_ProvideCredentials, &credsData );
 
     curlRequest.addHeader( "Destination", rtl::OUStringToOString( inDestinationURL, RTL_TEXTENCODING_UTF8 ).getStr() );
     curlRequest.addHeader( "Overwrite", inOverWrite? "T" : "F" );
-    
+
     // check whether a lock on the destination resource is already owned
     rtl::OUString aUri( composeCurrentUri( inDestinationURL ) );
     ucb::Lock inLock;
@@ -1440,14 +1440,14 @@ void CurlSession::DESTROY( const rtl::OUString & inPath,
     throw ( DAVException )
 {
     m_aLogger.log( LogLevel::INFO, "DESTROY line $1$", (sal_Int32)__LINE__ );
-    
+
     osl::Guard< osl::Mutex > theGuard( m_aMutex );
-    
+
     Init( rEnv );
     CurlRequest curlRequest( m_pCurl );
-    
+
     addEnvironmentRequestHeaders( curlRequest, rEnv );
-    
+
     CredentialsData credsData( this, curlRequest, rEnv );
     curlRequest.setProvideCredentialsCallback( Curl_ProvideCredentials, &credsData );
 
@@ -1525,9 +1525,9 @@ void CurlSession::LOCK( const ::rtl::OUString & inPath,
 
     Init( rEnv );
     CurlRequest curlRequest( m_pCurl );
-    
+
     addEnvironmentRequestHeaders( curlRequest, rEnv );
-    
+
     CredentialsData credsData( this, curlRequest, rEnv );
     curlRequest.setProvideCredentialsCallback( Curl_ProvideCredentials, &credsData );
 
@@ -1551,14 +1551,14 @@ void CurlSession::LOCK( const ::rtl::OUString & inPath,
         curlRequest.addHeader( "Depth", "infinity" );
         break;
     }
-    
+
     rtl::OString xml = LockRequest::generateRequestBody( inLock );
     curlRequest.addHeader( "Content-Type", "application/xml" );
     curlRequest.setRequestBody( xml.getStr(), xml.getLength() );
 
     TimeValue startCall;
     osl_getSystemTime( &startCall );
-    
+
     CURLcode rc = curlRequest.lock( m_aUri, inPath );
     processResponse( curlRequest, rc );
 
@@ -1630,15 +1630,15 @@ bool CurlSession::LOCK( CurlLock * pLock,
                         sal_Int32 & rlastChanceToSendRefreshRequest )
 {
     m_aLogger.log( LogLevel::INFO, "LOCK line $1$", (sal_Int32)__LINE__ );
-    
+
     osl::Guard< osl::Mutex > theGuard( m_aMutex );
-    
+
     Init();
     CurlRequest curlRequest( m_pCurl );
-    
+
     const ucb::Lock & inLock = pLock->getLock();
     rtl::OUString inPath = pLock->getResourcePath();
-    
+
     if ( inLock.Timeout == -1 )
         curlRequest.addHeader( "Timeout", "Infinite" );
     else
@@ -1669,7 +1669,7 @@ bool CurlSession::LOCK( CurlLock * pLock,
     rtl::OString xml = LockRequest::generateRequestBody( inLock );
     curlRequest.addHeader( "Content-Type", "application/xml" );
     curlRequest.setRequestBody( xml.getStr(), xml.getLength() );
-    
+
     TimeValue startCall;
     osl_getSystemTime( &startCall );
 
@@ -1724,9 +1724,9 @@ void CurlSession::UNLOCK( const ::rtl::OUString & inPath,
     // so, if something goes wrong, we don't refresh it anymore
     m_aCurlLockStore.removeLock( pLock );
     delete pLock;
-    
+
     CURLcode rc = curlRequest.unlock( m_aUri, inPath );
-    processResponse( curlRequest, rc );    
+    processResponse( curlRequest, rc );
 }
 
 // -------------------------------------------------------------------
@@ -1735,9 +1735,9 @@ void CurlSession::UNLOCK( const ::rtl::OUString & inPath,
 bool CurlSession::UNLOCK( CurlLock * pLock )
 {
     m_aLogger.log( LogLevel::INFO, "UNLOCK line $1$", (sal_Int32)__LINE__ );
-    
+
     osl::Guard< osl::Mutex > theGuard( m_aMutex );
-    
+
     Init();
     CurlRequest curlRequest( m_pCurl );
 

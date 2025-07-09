@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -68,7 +68,7 @@ class ServiceImpl
 	RuntimeException _aDummyRE;
 
 	sal_Int32 _nRef;
-	
+
 public:
 	ServiceImpl()
 		: _nRef( 0 )
@@ -76,7 +76,7 @@ public:
 	ServiceImpl( const Reference< XMultiServiceFactory > & xMgr )
 		: _nRef( 0 )
 		{}
-	
+
 	// XInterface
     virtual ::com::sun::star::uno::Any SAL_CALL queryInterface( const ::com::sun::star::uno::Type& aType ) throw(::com::sun::star::uno::RuntimeException)
 	{
@@ -103,7 +103,7 @@ public:
 		{ osl_incrementInterlockedCount( &_nRef ); }
     virtual void SAL_CALL release() throw()
 		{ if (! osl_decrementInterlockedCount( &_nRef )) delete this; }
-	
+
 	// XServiceInfo
 	virtual OUString SAL_CALL getImplementationName() throw (RuntimeException);
 	virtual sal_Bool SAL_CALL supportsService( const OUString & rServiceName ) throw (RuntimeException);
@@ -146,8 +146,8 @@ public:
 		{ return _aDummyStruct; }
     virtual void SAL_CALL setStruct_attr( const ::com::sun::star::test::performance::ComplexTypes& _attributestruct ) throw(::com::sun::star::uno::RuntimeException)
 		{}
-	
-    // Methods	
+
+    // Methods
     virtual sal_Int32 SAL_CALL getLong() throw(::com::sun::star::uno::RuntimeException)
 		{ return 0; }
     virtual void SAL_CALL setLong( sal_Int32 _long ) throw(::com::sun::star::uno::RuntimeException)
@@ -179,12 +179,12 @@ public:
     virtual Sequence< Reference< XInterface > > SAL_CALL getSequence() throw(::com::sun::star::uno::RuntimeException)
 		{ return _aDummySequence; }
     virtual void SAL_CALL setSequence( const Sequence< Reference< XInterface > >& _sequence ) throw(::com::sun::star::uno::RuntimeException)
-		{}	
+		{}
     virtual ComplexTypes SAL_CALL getStruct() throw(::com::sun::star::uno::RuntimeException)
 		{ return _aDummyStruct; }
     virtual void SAL_CALL setStruct( const ::com::sun::star::test::performance::ComplexTypes& c ) throw(::com::sun::star::uno::RuntimeException)
 		{}
-	
+
     virtual void SAL_CALL async() throw(::com::sun::star::uno::RuntimeException)
 		{}
     virtual void SAL_CALL sync() throw(::com::sun::star::uno::RuntimeException)
@@ -268,7 +268,7 @@ sal_Bool SAL_CALL component_writeInfo(
 				reinterpret_cast< XRegistryKey * >( pRegistryKey )->createKey(
 					OUString( RTL_CONSTASCII_USTRINGPARAM("/" IMPLNAME "/UNO/SERVICES") ) ) );
 			xNewKey->createKey( OUString( RTL_CONSTASCII_USTRINGPARAM(SERVICENAME) ) );
-			
+
 			return sal_True;
 		}
 		catch (InvalidRegistryException &)
@@ -283,7 +283,7 @@ void * SAL_CALL component_getFactory(
 	const sal_Char * pImplName, void * pServiceManager, void * pRegistryKey )
 {
 	void * pRet = 0;
-	
+
 	if (pServiceManager && rtl_str_compare( pImplName, IMPLNAME ) == 0)
 	{
 		Reference< XSingleServiceFactory > xFactory( createSingleFactory(
@@ -291,14 +291,14 @@ void * SAL_CALL component_getFactory(
 			OUString( RTL_CONSTASCII_USTRINGPARAM(IMPLNAME) ),
 			benchmark_object::ServiceImpl_create,
 			benchmark_object::getSupportedServiceNames() ) );
-		
+
 		if (xFactory.is())
 		{
 			xFactory->acquire();
 			pRet = xFactory.get();
 		}
 	}
-	
+
 	return pRet;
 }
 }

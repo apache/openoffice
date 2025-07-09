@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -92,7 +92,7 @@ namespace slideshow
 
         GDIMetaFileSharedPtr DrawShape::forceScrollTextMetaFile()
         {
-            if ((mnCurrMtfLoadFlags & MTF_LOAD_SCROLL_TEXT_MTF) != MTF_LOAD_SCROLL_TEXT_MTF) 
+            if ((mnCurrMtfLoadFlags & MTF_LOAD_SCROLL_TEXT_MTF) != MTF_LOAD_SCROLL_TEXT_MTF)
             {
                 // reload with added flags:
                 mpCurrMtf.reset( new GDIMetaFile );
@@ -106,13 +106,13 @@ namespace slideshow
                 // never contain any verbose text comments. Thus,
                 // can only display the full mtf content, no
                 // subsets.
-                maSubsetting.reset( mpCurrMtf );    
+                maSubsetting.reset( mpCurrMtf );
 
                 // adapt maBounds. the requested scroll text metafile
                 // will typically have dimension different from the
                 // actual shape
                 ::basegfx::B2DRectangle aScrollRect, aPaintRect;
-                ENSURE_OR_THROW( getRectanglesFromScrollMtf( aScrollRect, 
+                ENSURE_OR_THROW( getRectanglesFromScrollMtf( aScrollRect,
                                                               aPaintRect,
                                                               mpCurrMtf ),
                                   "DrawShape::forceScrollTextMetaFile(): Could "
@@ -128,7 +128,7 @@ namespace slideshow
             }
             return mpCurrMtf;
         }
-    
+
         void DrawShape::updateStateIds() const
         {
             // Update the states, we've just redrawn or created a new
@@ -223,10 +223,10 @@ namespace slideshow
                                      ::boost::cref( mpCurrMtf ),
                                      ::boost::cref( aViewRenderArgs ),
                                      nUpdateFlags,
-                                     isVisible() ) ) 
+                                     isVisible() ) )
                 != static_cast<ViewShapeVector::difference_type>(maViewShapes.size()) )
             {
-                // at least one of the ViewShape::update() calls did return 
+                // at least one of the ViewShape::update() calls did return
                 // false - update failed on at least one ViewLayer
                 return false;
             }
@@ -268,7 +268,7 @@ namespace slideshow
                         nUpdateFlags |= ViewShape::CONTENT;
                     }
 
-                    // TODO(P1): This can be done without conditional branching. 
+                    // TODO(P1): This can be done without conditional branching.
                     // See HAKMEM.
                     if( mpAttributeLayer->getPositionState() != mnAttributePositionState )
                     {
@@ -283,11 +283,11 @@ namespace slideshow
                         nUpdateFlags |= ViewShape::CLIP;
                     }
                     if( mpAttributeLayer->getTransformationState() != mnAttributeTransformationState )
-                    {                
+                    {
                         nUpdateFlags |= ViewShape::TRANSFORMATION;
                     }
                     if( mpAttributeLayer->getContentState() != mnAttributeContentState )
-                    {                
+                    {
                         nUpdateFlags |= ViewShape::CONTENT;
                     }
                 }
@@ -301,7 +301,7 @@ namespace slideshow
             ENSURE_OR_THROW( !maViewShapes.empty(),
                               "DrawShape::getActualUnitShapeBounds(): called on DrawShape without views" );
 
-            const VectorOfDocTreeNodes& rSubsets( 
+            const VectorOfDocTreeNodes& rSubsets(
                 maSubsetting.getActiveSubsets() );
 
             const ::basegfx::B2DRectangle aDefaultBounds( 0.0,0.0,1.0,1.0 );
@@ -338,15 +338,15 @@ namespace slideshow
                     // added or removed). Maybe we should exclude it here,
                     // always assuming full bounds?
 
-                    ::cppcanvas::CanvasSharedPtr pDestinationCanvas( 
+                    ::cppcanvas::CanvasSharedPtr pDestinationCanvas(
                         maViewShapes.front()->getViewLayer()->getCanvas() );
 
                     // TODO(Q2): Although this _is_ currently
                     // view-agnostic, it might not stay like
                     // that. Maybe this method should again be moved
                     // to the ViewShape
-                    ::cppcanvas::RendererSharedPtr pRenderer( 
-                        maViewShapes.front()->getRenderer( 
+                    ::cppcanvas::RendererSharedPtr pRenderer(
+                        maViewShapes.front()->getRenderer(
                             pDestinationCanvas, mpCurrMtf, mpAttributeLayer ) );
 
                     // If we cannot not prefetch, be defensive and assume
@@ -360,7 +360,7 @@ namespace slideshow
 
                         ::basegfx::B2DHomMatrix 	 aOldTransform( pDestinationCanvas->getTransformation() );
                         pDestinationCanvas->setTransformation( aEmptyTransformation );
-                        pRenderer->setTransformation( aEmptyTransformation );            
+                        pRenderer->setTransformation( aEmptyTransformation );
 
                         // restore old transformation when leaving the scope
                         const ::comphelper::ScopeGuard aGuard(
@@ -379,12 +379,12 @@ namespace slideshow
                         const VectorOfDocTreeNodes::const_iterator	aEnd( rSubsets.end() );
                         while( aCurr != aEnd )
                         {
-                            aTotalBounds.expand( pRenderer->getSubsetArea( 
+                            aTotalBounds.expand( pRenderer->getSubsetArea(
                                                      aCurr->getStartIndex(),
                                                      aCurr->getEndIndex() )  );
                             ++aCurr;
                         }
-                    
+
                         OSL_ENSURE( aTotalBounds.getMinX() >= -0.1 &&
                                     aTotalBounds.getMinY() >= -0.1 &&
                                     aTotalBounds.getMaxX() <= 1.1 &&
@@ -395,7 +395,7 @@ namespace slideshow
                         // original bounds (there _are_ some pathologic cases,
                         // especially when imported from PPT, that have
                         // e.g. obscenely large polygon bounds)
-                        aTotalBounds.intersect( 
+                        aTotalBounds.intersect(
                             ::basegfx::B2DRange( 0.0, 0.0,
                                                  1.0, 1.0 ));
 
@@ -445,16 +445,16 @@ namespace slideshow
         {
             ENSURE_OR_THROW( mxShape.is(), "DrawShape::DrawShape(): Invalid XShape" );
             ENSURE_OR_THROW( mxPage.is(), "DrawShape::DrawShape(): Invalid containing page" );
-            
+
             // check for drawing layer animations:
             drawing::TextAnimationKind eKind = drawing::TextAnimationKind_NONE;
-            uno::Reference<beans::XPropertySet> xPropSet( mxShape, 
+            uno::Reference<beans::XPropertySet> xPropSet( mxShape,
                                                           uno::UNO_QUERY );
             if( xPropSet.is() )
                 getPropertyValue( eKind, xPropSet,
                                   OUSTR("TextAnimationKind") );
             mbDrawingLayerAnim = (eKind != drawing::TextAnimationKind_NONE);
-            
+
             // must NOT be called from within initializer list, uses
             // state from mnCurrMtfLoadFlags!
             mpCurrMtf.reset( new GDIMetaFile );
@@ -465,7 +465,7 @@ namespace slideshow
             ENSURE_OR_THROW( mpCurrMtf,
                               "DrawShape::DrawShape(): Invalid metafile" );
             maSubsetting.reset( mpCurrMtf );
-            
+
             prepareHyperlinkIndices();
         }
 
@@ -522,7 +522,7 @@ namespace slideshow
             ENSURE_OR_THROW( mpCurrMtf, "DrawShape::DrawShape(): Invalid metafile" );
         }
 
-        DrawShape::DrawShape( const DrawShape& 		rSrc, 
+        DrawShape::DrawShape( const DrawShape& 		rSrc,
                               const DocTreeNode& 	rTreeNode,
                               double				nPrio ) :
             mxShape( rSrc.mxShape ),
@@ -561,7 +561,7 @@ namespace slideshow
 
             // xxx todo: currently not implemented for subsetted shapes;
             //           would mean modifying set of hyperlink regions when
-            //           subsetting text portions. N.B.: there's already an 
+            //           subsetting text portions. N.B.: there's already an
             //           issue for this #i72828#
         }
 
@@ -587,10 +587,10 @@ namespace slideshow
             if( pShape->hasIntrinsicAnimation() )
             {
                 OSL_ASSERT( pShape->maAnimationFrames.empty() );
-                if( pShape->getNumberOfTreeNodes( 
+                if( pShape->getNumberOfTreeNodes(
                         DocTreeNode::NODETYPE_LOGICAL_PARAGRAPH) > 0 )
                 {
-                    pShape->mpIntrinsicAnimationActivity = 
+                    pShape->mpIntrinsicAnimationActivity =
                         createDrawingLayerAnimActivity(
                             rContext,
                             pShape);
@@ -603,17 +603,17 @@ namespace slideshow
             return pShape;
         }
 
-        DrawShapeSharedPtr DrawShape::create( 
+        DrawShapeSharedPtr DrawShape::create(
             const uno::Reference< drawing::XShape >& 	xShape,
             const uno::Reference< drawing::XDrawPage >&	xContainingPage,
             double										nPrio,
             const Graphic&								rGraphic,
             const SlideShowContext&                     rContext )
         {
-            DrawShapeSharedPtr pShape( new DrawShape(xShape, 
-                                                     xContainingPage, 
-                                                     nPrio, 
-                                                     rGraphic, 
+            DrawShapeSharedPtr pShape( new DrawShape(xShape,
+                                                     xContainingPage,
+                                                     nPrio,
+                                                     rGraphic,
                                                      rContext) );
 
             if( pShape->hasIntrinsicAnimation() )
@@ -626,12 +626,12 @@ namespace slideshow
                     pShape->maAnimationFrames.end(),
                     std::back_insert_iterator< std::vector<double> >( aTimeout ),
                     boost::mem_fn(&MtfAnimationFrame::getDuration) );
-                
+
                 WakeupEventSharedPtr pWakeupEvent(
                     new WakeupEvent( rContext.mrEventQueue.getTimer(),
                                      rContext.mrActivitiesQueue ) );
-                
-                ActivitySharedPtr pActivity = 
+
+                ActivitySharedPtr pActivity =
                     createIntrinsicAnimationActivity(
                         rContext,
                         pShape,
@@ -643,7 +643,7 @@ namespace slideshow
                 pWakeupEvent->setActivity( pActivity );
                 pShape->mpIntrinsicAnimationActivity = pActivity;
             }
-            
+
             OSL_ENSURE( !pShape->hasHyperlinks(),
                         "DrawShape::create(): graphic-only shapes must not have hyperlinks!" );
 
@@ -654,13 +654,13 @@ namespace slideshow
         {
             try
             {
-                // dispose intrinsic animation activity, else, it will  
-                // linger forever   
+                // dispose intrinsic animation activity, else, it will
+                // linger forever
                 ActivitySharedPtr pActivity( mpIntrinsicAnimationActivity.lock() );
                 if( pActivity )
                     pActivity->dispose();
             }
-            catch (uno::Exception &) 
+            catch (uno::Exception &)
             {
                 OSL_ENSURE( false, rtl::OUStringToOString(
                                 comphelper::anyToString(
@@ -680,9 +680,9 @@ namespace slideshow
             ViewShapeVector::iterator aEnd( maViewShapes.end() );
 
             // already added?
-            if( ::std::find_if( maViewShapes.begin(), 
-                                aEnd, 
-                                ::boost::bind<bool>( 
+            if( ::std::find_if( maViewShapes.begin(),
+                                aEnd,
+                                ::boost::bind<bool>(
                                     ::std::equal_to< ViewLayerSharedPtr >(),
                                     ::boost::bind( &ViewShape::getViewLayer,
                                                    _1 ),
@@ -706,9 +706,9 @@ namespace slideshow
             // render the Shape on the newly added ViewLayer
             if( bRedrawLayer )
             {
-                pNewShape->update( mpCurrMtf, 
+                pNewShape->update( mpCurrMtf,
                                    getViewRenderArgs(),
-                                   ViewShape::FORCE, 
+                                   ViewShape::FORCE,
                                    isVisible() );
             }
         }
@@ -717,9 +717,9 @@ namespace slideshow
         {
             const ViewShapeVector::iterator aEnd( maViewShapes.end() );
 
-            OSL_ENSURE( ::std::count_if(maViewShapes.begin(), 
-                                        aEnd, 
-                                        ::boost::bind<bool>( 
+            OSL_ENSURE( ::std::count_if(maViewShapes.begin(),
+                                        aEnd,
+                                        ::boost::bind<bool>(
                                             ::std::equal_to< ViewLayerSharedPtr >(),
                                             ::boost::bind( &ViewShape::getViewLayer,
                                                            _1 ),
@@ -728,9 +728,9 @@ namespace slideshow
 
             ViewShapeVector::iterator aIter;
 
-            if( (aIter=::std::remove_if( maViewShapes.begin(), 
-                                         aEnd, 
-                                         ::boost::bind<bool>( 
+            if( (aIter=::std::remove_if( maViewShapes.begin(),
+                                         aEnd,
+                                         ::boost::bind<bool>(
                                              ::std::equal_to< ViewLayerSharedPtr >(),
                                              ::boost::bind( &ViewShape::getViewLayer,
                                                             _1 ),
@@ -776,8 +776,8 @@ namespace slideshow
 
         bool DrawShape::isContentChanged() const
         {
-            return mbForceUpdate ? 
-                true : 
+            return mbForceUpdate ?
+                true :
                 getUpdateFlags() != ViewShape::NONE;
         }
 
@@ -806,7 +806,7 @@ namespace slideshow
              */
             class Expander
             {
-            public: 
+            public:
                 Expander( ::basegfx::B2DSize& rBounds ) :
                     mrBounds( rBounds )
                 {
@@ -816,11 +816,11 @@ namespace slideshow
                 {
                     const ::basegfx::B2DSize& rShapeBorder( rShape->getAntialiasingBorder() );
 
-                    mrBounds.setX( 
+                    mrBounds.setX(
                         ::std::max(
                             rShapeBorder.getX(),
                             mrBounds.getX() ) );
-                    mrBounds.setY( 
+                    mrBounds.setY(
                         ::std::max(
                             rShapeBorder.getY(),
                             mrBounds.getY() ) );
@@ -1015,7 +1015,7 @@ namespace slideshow
         {
             return ! maHyperlinkRegions.empty();
         }
-    
+
         HyperlinkArea::HyperlinkRegions DrawShape::getHyperlinkRegions() const
         {
             OSL_ASSERT( !maViewShapes.empty() );
@@ -1038,13 +1038,13 @@ namespace slideshow
                     pViewShape->getViewLayer()->getCanvas() );
 
                 // reuse Renderer of first view shape:
-                cppcanvas::RendererSharedPtr const pRenderer( 
+                cppcanvas::RendererSharedPtr const pRenderer(
                     pViewShape->getRenderer(
                         pCanvas, mpCurrMtf, mpAttributeLayer ) );
 
                 OSL_ASSERT( pRenderer );
 
-                if (pRenderer) 
+                if (pRenderer)
                 {
                     basegfx::B2DHomMatrix const aOldTransform(
                         pCanvas->getTransformation() );
@@ -1060,8 +1060,8 @@ namespace slideshow
                                       maBounds.getHeight() );
                     pRenderer->setTransformation( aTransform );
                     pRenderer->setClip();
-                    
-                    for( std::size_t pos = maHyperlinkRegions.size(); pos--; ) 
+
+                    for( std::size_t pos = maHyperlinkRegions.size(); pos--; )
                     {
                         // get region:
                         HyperlinkIndexPair const& rIndices = maHyperlinkIndices[pos];
@@ -1162,7 +1162,7 @@ namespace slideshow
             {
                 // it's the toplevel layer
                 mpAttributeLayer = mpAttributeLayer->getChildLayer();
-                
+
                 // force content redraw, all state variables have
                 // possibly changed
                 mbAttributeLayerRevoked = true;
@@ -1212,7 +1212,7 @@ namespace slideshow
         {
             ENSURE_OR_THROW( (mnCurrMtfLoadFlags & MTF_LOAD_VERBOSE_COMMENTS) != 0,
                               "DrawShape::getSubset(): subset query on shape with apparently no subsets" );
-            
+
             // forward to delegate
             return maSubsetting.getSubsetShape( rTreeNode );
         }
@@ -1239,14 +1239,14 @@ namespace slideshow
             else
             {
                 // not yet created, init entry
-                o_rSubset.reset( new DrawShape( *this, 
-                                                rTreeNode, 
+                o_rSubset.reset( new DrawShape( *this,
+                                                rTreeNode,
                                                 // TODO(Q3): That's a
                                                 // hack. We assume
                                                 // that start and end
                                                 // index will always
                                                 // be less than 65535
-                                                mnPriority + 
+                                                mnPriority +
                                                 rTreeNode.getStartIndex()/double(SAL_MAX_INT16) ));
 
                 bNewlyCreated = true; // subset newly created
@@ -1255,7 +1255,7 @@ namespace slideshow
             // always register shape at DrawShapeSubsetting, to keep
             // refcount up-to-date
             maSubsetting.addSubsetShape( o_rSubset );
-                
+
             // flush bounds cache
             maCurrentShapeUnitBounds.reset();
 
@@ -1279,7 +1279,7 @@ namespace slideshow
                 mbForceUpdate = true;
 
                 // #i47428# TEMP FIX: synchronize visibility of subset
-                // with parent. 
+                // with parent.
 
                 // TODO(F3): Remove here, and implement
                 // TEXT_ONLY/BACKGROUND_ONLY with the proverbial
@@ -1287,7 +1287,7 @@ namespace slideshow
                 // persistent subset, containing all text/only the
                 // background respectively. From _that_ object,
                 // generate the temporary character subset shapes.
-                const ShapeAttributeLayerSharedPtr& rAttrLayer( 
+                const ShapeAttributeLayerSharedPtr& rAttrLayer(
                     rShape->getTopmostAttributeLayer() );
                 if( rAttrLayer &&
                     rAttrLayer->isVisibilityValid() &&
@@ -1301,7 +1301,7 @@ namespace slideshow
                     else
                         mbIsVisible = bVisibility;
                 }
-                
+
                 // END TEMP FIX
 
                 return true;

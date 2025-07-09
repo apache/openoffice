@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,29 +7,29 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
 
 #include "precompiled_xmlsecurity.hxx"
 #include <certificatecontainer.hxx>
- 
+
 #include <sal/config.h>
 
 using namespace ::com::sun::star::uno;
 
 
-sal_Bool 
+sal_Bool
 CertificateContainer::searchMap( const ::rtl::OUString & url, const ::rtl::OUString & certificate_name, Map &_certMap )
 {
 	Map::iterator p = _certMap.find(url);
@@ -39,7 +39,7 @@ CertificateContainer::searchMap( const ::rtl::OUString & url, const ::rtl::OUStr
 	while( p != _certMap.end() )
 	{
 		ret = (sal_Bool) (*p).second.equals(certificate_name);
-		if( ret ) 
+		if( ret )
                     break;
 		p++;
 	}
@@ -48,7 +48,7 @@ CertificateContainer::searchMap( const ::rtl::OUString & url, const ::rtl::OUStr
 }
 // -------------------------------------------------------------------
 
-sal_Bool 
+sal_Bool
 CertificateContainer::isTemporaryCertificate ( const ::rtl::OUString & url, const ::rtl::OUString & certificate_name )
     throw(::com::sun::star::uno::RuntimeException)
 {
@@ -57,7 +57,7 @@ CertificateContainer::isTemporaryCertificate ( const ::rtl::OUString & url, cons
 
 // -------------------------------------------------------------------
 
-sal_Bool 
+sal_Bool
 CertificateContainer::isCertificateTrust ( const ::rtl::OUString & url, const ::rtl::OUString & certificate_name )
     throw(::com::sun::star::uno::RuntimeException)
 {
@@ -65,21 +65,21 @@ CertificateContainer::isCertificateTrust ( const ::rtl::OUString & url, const ::
 }
 
 // -------------------------------------------------------------------
-sal_Bool 
+sal_Bool
 CertificateContainer::addCertificate( const ::rtl::OUString & url, const ::rtl::OUString & certificate_name, ::sal_Bool trust )
     throw(::com::sun::star::uno::RuntimeException)
 {
 	certMap.insert( Map::value_type( url, certificate_name ) );
-        
+
         //remember that the cert is trusted
         if (trust)
             certTrustMap.insert( Map::value_type( url, certificate_name ) );
-        
+
         return true;
 }
 
 //-------------------------------------------------------------------------
-::security::CertificateContainerStatus 
+::security::CertificateContainerStatus
 CertificateContainer::hasCertificate( const ::rtl::OUString & url, const ::rtl::OUString & certificate_name ) throw(::com::sun::star::uno::RuntimeException)
 {
 	if ( isTemporaryCertificate( url, certificate_name ) )
@@ -95,8 +95,8 @@ CertificateContainer::hasCertificate( const ::rtl::OUString & url, const ::rtl::
 }
 //-------------------------------------------------------------------------
 
-::rtl::OUString SAL_CALL 
-CertificateContainer::getImplementationName( ) 
+::rtl::OUString SAL_CALL
+CertificateContainer::getImplementationName( )
     throw(::com::sun::star::uno::RuntimeException)
 {
     return impl_getStaticImplementationName();
@@ -104,8 +104,8 @@ CertificateContainer::getImplementationName( )
 
 //-------------------------------------------------------------------------
 
-sal_Bool SAL_CALL 
-CertificateContainer::supportsService( const ::rtl::OUString& ServiceName ) 
+sal_Bool SAL_CALL
+CertificateContainer::supportsService( const ::rtl::OUString& ServiceName )
     throw(::com::sun::star::uno::RuntimeException)
 {
     if ( ServiceName.compareToAscii("com.sun.star.security.CertificateContainer") == 0 )
@@ -116,8 +116,8 @@ CertificateContainer::supportsService( const ::rtl::OUString& ServiceName )
 
 //-------------------------------------------------------------------------
 
-Sequence< ::rtl::OUString > SAL_CALL 
-CertificateContainer::getSupportedServiceNames(  ) 
+Sequence< ::rtl::OUString > SAL_CALL
+CertificateContainer::getSupportedServiceNames(  )
     throw(::com::sun::star::uno::RuntimeException)
 {
 	return impl_getStaticSupportedServiceNames();
@@ -125,8 +125,8 @@ CertificateContainer::getSupportedServiceNames(  )
 
 //-------------------------------------------------------------------------
 
-Sequence< ::rtl::OUString > SAL_CALL 
-CertificateContainer::impl_getStaticSupportedServiceNames(  ) 
+Sequence< ::rtl::OUString > SAL_CALL
+CertificateContainer::impl_getStaticSupportedServiceNames(  )
     throw(::com::sun::star::uno::RuntimeException)
 {
     Sequence< ::rtl::OUString > aRet(1);
@@ -136,8 +136,8 @@ CertificateContainer::impl_getStaticSupportedServiceNames(  )
 
 //-------------------------------------------------------------------------
 
-::rtl::OUString SAL_CALL 
-CertificateContainer::impl_getStaticImplementationName() 
+::rtl::OUString SAL_CALL
+CertificateContainer::impl_getStaticImplementationName()
     throw(::com::sun::star::uno::RuntimeException)
 {
     return ::rtl::OUString::createFromAscii("com.sun.star.security.CertificateContainer");
@@ -145,7 +145,7 @@ CertificateContainer::impl_getStaticImplementationName()
 
 //-------------------------------------------------------------------------
 
-Reference< XInterface > SAL_CALL CertificateContainer::impl_createInstance( const Reference< XMultiServiceFactory >& xServiceManager ) 
+Reference< XInterface > SAL_CALL CertificateContainer::impl_createInstance( const Reference< XMultiServiceFactory >& xServiceManager )
     throw( RuntimeException )
 {
 	return Reference< XInterface >( *new CertificateContainer( xServiceManager ) );
@@ -153,14 +153,14 @@ Reference< XInterface > SAL_CALL CertificateContainer::impl_createInstance( cons
 
 //-------------------------------------------------------------------------
 
-Reference< XSingleServiceFactory > SAL_CALL 
-CertificateContainer::impl_createFactory( const Reference< XMultiServiceFactory >& ServiceManager ) 
+Reference< XSingleServiceFactory > SAL_CALL
+CertificateContainer::impl_createFactory( const Reference< XMultiServiceFactory >& ServiceManager )
     throw(RuntimeException)
 {
-	Reference< XSingleServiceFactory > xReturn( ::cppu::createOneInstanceFactory( ServiceManager, 
+	Reference< XSingleServiceFactory > xReturn( ::cppu::createOneInstanceFactory( ServiceManager,
 		CertificateContainer::impl_getStaticImplementationName(),
 		CertificateContainer::impl_createInstance,
 		CertificateContainer::impl_getStaticSupportedServiceNames()));
 
-	return xReturn;		
+	return xReturn;
 }

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -673,7 +673,7 @@ void SalDisplay::initScreen( int nScreen ) const
 
     XVisualInfo aVI;
     Colormap	aColMap;
-    
+
     if( SalDisplay::BestVisual( pDisp_, nScreen, aVI ) ) // DefaultVisual
         aColMap = DefaultColormap( pDisp_, nScreen );
     else
@@ -688,7 +688,7 @@ void SalDisplay::initScreen( int nScreen ) const
     rSD.m_aRoot = RootWindow( pDisp_, nScreen );
     rSD.m_aVisual = SalVisual( &aVI );
     rSD.m_aColormap = SalColormap( this, aColMap, nScreen );
-    
+
     // we're interested in configure notification of root windows
     InitRandR( rSD.m_aRoot );
 
@@ -733,7 +733,7 @@ void SalDisplay::initScreen( int nScreen ) const
         values.fill_style           = FillOpaqueStippled;
         values.background       	= (1<<rSD.m_aVisual.GetDepth())-1;
         values.foreground       	= 0;
-    
+
         rSD.m_aCopyGC       = XCreateGC( pDisp_,
                                          rSD.m_aRefWindow,
                                          GCGraphicsExposures
@@ -765,13 +765,13 @@ void SalDisplay::initScreen( int nScreen ) const
                                          | GCForeground
                                          | GCBackground,
                                          &values );
-    
+
         XSetFunction( pDisp_, rSD.m_aAndInvertedGC,  GXandInverted );
         XSetFunction( pDisp_, rSD.m_aAndGC,          GXand );
         // #44556# PowerPC Solaris 2.5 (XSun 3500) Bug: GXor = GXnop
         //XSetFunction( pDisp_, pOrGC_,         GXor );
         XSetFunction( pDisp_, rSD.m_aOrGC,           GXxor );
-    
+
         if( 1 == rSD.m_aVisual.GetDepth() )
         {
             XSetFunction( pDisp_, rSD.m_aCopyGC, GXcopyInverted );
@@ -806,7 +806,7 @@ void SalDisplay::Init()
 	mpFactory  			= (AttributeProvider*)NULL;
     m_pCapture			= NULL;
     m_bXinerama			= false;
-    
+
     int nDisplayScreens = ScreenCount( pDisp_ );
     m_aScreens = std::vector<ScreenData>(nDisplayScreens);
 
@@ -1027,7 +1027,7 @@ void SalDisplay::Beep() const
 String SalDisplay::GetKeyNameFromKeySym( KeySym nKeySym ) const
 {
 	String aRet;
-    
+
     // return an empty string for keysyms that are not bound to
     // any key code
     XLIB_KeyCode aKeyCode = XKeysymToKeycode( GetDisplay(), nKeySym );
@@ -2360,7 +2360,7 @@ long SalX11Display::Dispatch( XEvent *pEvent )
 			return pFrame->Dispatch( pEvent );
 		}
     }
-    
+
 	// dispatch to salobjects
 	X11SalObject::Dispatch( pEvent );
 

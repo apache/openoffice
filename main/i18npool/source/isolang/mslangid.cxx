@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -441,7 +441,7 @@ LanguageType MsLangId::getReplacementForObsoleteLanguage( LanguageType nLang )
             nLang = LANGUAGE_LUXEMBOURGISH_LUXEMBOURG;
             break;
 
-        // The following are not strictly obsolete but should be mapped to a 
+        // The following are not strictly obsolete but should be mapped to a
         // replacement locale when encountered.
 
         // no_NO is an alias for nb_NO
@@ -449,7 +449,7 @@ LanguageType MsLangId::getReplacementForObsoleteLanguage( LanguageType nLang )
             nLang = LANGUAGE_NORWEGIAN_BOKMAL;
             break;
 
-        // #i94435# A Spanish variant that differs only in collation details we 
+        // #i94435# A Spanish variant that differs only in collation details we
         // do not support.
         case LANGUAGE_SPANISH_DATED:
             nLang = LANGUAGE_SPANISH_MODERN;

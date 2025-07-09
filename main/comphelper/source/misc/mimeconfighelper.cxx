@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -768,7 +768,7 @@ sal_Bool MimeConfigurationHelper::AddFilterNameCheckOwnFile(
         }
         catch( uno::Exception& )
         {}
-        
+
     return aResult;
 }
 
@@ -792,7 +792,7 @@ sal_Bool MimeConfigurationHelper::AddFilterNameCheckOwnFile(
                 SequenceAsHashMap aImpFilterHM( aImpData );
                 sal_Int32 nFlags = aImpFilterHM.getUnpackedValueOrDefault( ::rtl::OUString::createFromAscii( "Flags" ),
                                                                         (sal_Int32)0 );
-                
+
                 if ( !( nFlags & SFX_FILTER_IMPORT ) )
                 {
                     OSL_ENSURE( sal_False, "This is no import filter!" );
@@ -816,8 +816,8 @@ sal_Bool MimeConfigurationHelper::AddFilterNameCheckOwnFile(
                         aSearchRequest[0].Value <<= aTypeName;
                         aSearchRequest[1].Name = ::rtl::OUString::createFromAscii( "DocumentService" );
                         aSearchRequest[1].Value <<= aDocumentServiceName;
-                        
-                        uno::Sequence< beans::PropertyValue > aExportFilterProps = SearchForFilter( 
+
+                        uno::Sequence< beans::PropertyValue > aExportFilterProps = SearchForFilter(
                             uno::Reference< container::XContainerQuery >( xFilterFactory, uno::UNO_QUERY_THROW ),
                             aSearchRequest,
                             SFX_FILTER_EXPORT,
@@ -921,7 +921,7 @@ uno::Sequence< sal_Int8 > MimeConfigurationHelper::GetSequenceClassID( sal_uInt3
 }
 
 //-------------------------------------------------------------------------
-uno::Sequence<sal_Int8> MimeConfigurationHelper::GetSequenceClassIDFromObjectName(const ::rtl::OUString& _sObjectName) 
+uno::Sequence<sal_Int8> MimeConfigurationHelper::GetSequenceClassIDFromObjectName(const ::rtl::OUString& _sObjectName)
 {
     uno::Sequence<sal_Int8> aClassId;
     uno::Reference< container::XNameAccess > xObjectNames = GetConfigurationByPath(::rtl::OUString(RTL_CONSTASCII_USTRINGPARAM("/org.openoffice.Office.Embedding/ObjectNames")));

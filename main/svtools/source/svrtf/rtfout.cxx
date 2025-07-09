@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -46,8 +46,8 @@ SvStream& RTFOutFuncs::Out_Char(SvStream& rStream, sal_Unicode c,
 	const sal_Char* pStr = 0;
 	switch (c)
 	{
-	case 0x1:	
-	case 0x2:	
+	case 0x1:
+	case 0x2:
 		// this are control character of our textattributes and will never be
 		// written
 		break;
@@ -121,7 +121,7 @@ SvStream& RTFOutFuncs::Out_Char(SvStream& rStream, sal_Unicode c,
                         RTL_UNICODETOTEXT_FLAGS_UNDEFINED_ERROR |
                         RTL_UNICODETOTEXT_FLAGS_INVALID_ERROR;
                     bool bWriteAsUnicode = !(sBuf.convertToString(&sConverted,
-	                                     eDestEnc, nFlags)) 
+	                                     eDestEnc, nFlags))
                                             || (RTL_TEXTENCODING_UTF8==eDestEnc); // #i43933# do not export UTF-8 chars in RTF;
                     if (bWriteAsUnicode)
                     {
@@ -129,7 +129,7 @@ SvStream& RTFOutFuncs::Out_Char(SvStream& rStream, sal_Unicode c,
                             eDestEnc, OUSTRING_TO_OSTRING_CVTFLAGS);
                     }
                     const sal_Int32 nLen = sConverted.getLength();
-                	
+
 			        if (bWriteAsUnicode && pUCMode)
 			        {
 				        // then write as unicode - character

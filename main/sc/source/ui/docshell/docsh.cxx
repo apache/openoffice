@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -185,7 +185,7 @@ namespace
         {
             const char * mpFilterTypeName;
             unsigned mnFilterTypeLen;
-        } szMSFilterTypes [] = 
+        } szMSFilterTypes [] =
         {
             SFX2_FILTER_ENTRY(calc_MS_Excel_40)
             SFX2_FILTER_ENTRY(calc_MS_Excel_40_VorlageTemplate)
@@ -205,7 +205,7 @@ namespace
         {
             const char * mpFilterName;
             size_t mnFilterNameLen;
-        } szMSFilterNames [] = 
+        } szMSFilterNames [] =
         {
             { pFilterExcel4, strlen( pFilterExcel4 ) },
             { pFilterEx4Temp, strlen( pFilterEx4Temp ) },
@@ -241,14 +241,14 @@ namespace
         if( bByName )
         {
             for( unsigned i = 0; i < (sizeof szMSFilterNames)/sizeof(szMSFilterNames[0] ); i++ )
-                if( rName.Len() == szMSFilterNames[i].mnFilterNameLen 
+                if( rName.Len() == szMSFilterNames[i].mnFilterNameLen
                     && std::equal( szMSFilterNames[i].mpFilterName, szMSFilterNames[i].mpFilterName + szMSFilterNames[i].mnFilterNameLen, rName.GetBuffer() ) )
                     bResult |= ( E_MEDIUM_FLAG_EXCEL | ( ( i == e_MS_Excel_2007_XML ) * E_MEDIUM_FLAG_MSXML ) );
         }
         else
         {
             for( unsigned i = 0; i < (sizeof szMSFilterTypes)/sizeof(szMSFilterTypes[0] ); i++ )
-                if( rName.Len() == szMSFilterTypes[i].mnFilterTypeLen 
+                if( rName.Len() == szMSFilterTypes[i].mnFilterTypeLen
                     && std::equal( szMSFilterTypes[i].mpFilterTypeName, szMSFilterTypes[i].mpFilterTypeName + szMSFilterTypes[i].mnFilterTypeLen, rName.GetBuffer() ) )
                     bResult |= ( E_MEDIUM_FLAG_EXCEL | ( ( i == e_MS_Excel_2007_XML ) * E_MEDIUM_FLAG_MSXML ) );
         }
@@ -464,7 +464,7 @@ void ScDocShell::AfterXMLLoading(sal_Bool bRet)
     }
     else
 		aDocument.SetInsertingFromOtherDoc( sal_False );
-		
+
 	aDocument.SetImportingXML( sal_False );
     aDocument.EnableExecuteLink( true );
     aDocument.EnableUndo( sal_True );
@@ -2382,7 +2382,7 @@ sal_Bool __EXPORT ScDocShell::DoSaveCompleted( SfxMedium * pNewStor )
 sal_Bool ScDocShell::QuerySlotExecutable( sal_uInt16 nSlotId )
 {
     // #i112634# ask VBA event handlers whether to save or print the document
-    
+
     using namespace ::com::sun::star::script::vba;
 
     sal_Int32 nVbaEventId = VBAEventId::NO_EVENT;
@@ -2605,7 +2605,7 @@ ScDocShell::ScDocShell( const sal_uInt64 i_nSfxCreationFlags )
 	bIsInplace = (GetCreateMode() == SFX_CREATE_MODE_EMBEDDED);
 	//	wird zurueckgesetzt, wenn nicht inplace
 
-    // #118840# set flag at ScDocument that it is used temporary (e.g. inplace 
+    // #118840# set flag at ScDocument that it is used temporary (e.g. inplace
     // for transporting a chart over the clipboard)
     if(bIsInplace)
     {
@@ -2937,7 +2937,7 @@ bool ScDocShell::IsChangeRecording() const
     return pChangeTrack != NULL;
 }
 
-    
+
 bool ScDocShell::HasChangeRecordProtection() const
 {
     bool bRes = false;
@@ -2947,7 +2947,7 @@ bool ScDocShell::HasChangeRecordProtection() const
     return bRes;
 }
 
-    
+
 void ScDocShell::SetChangeRecording( bool bActivate )
 {
     bool bOldChangeRecording = IsChangeRecording();
@@ -2973,9 +2973,9 @@ void ScDocShell::SetChangeRecording( bool bActivate )
         if (pBindings)
             pBindings->InvalidateAll(sal_False);
     }
-}    
+}
 
-        
+
 bool ScDocShell::SetProtectionPassword( const String &rNewPassword )
 {
     bool bRes = false;
@@ -2988,7 +2988,7 @@ bool ScDocShell::SetProtectionPassword( const String &rNewPassword )
         {
             // when password protection is applied change tracking must always be active
             SetChangeRecording( true );
-        
+
             ::com::sun::star::uno::Sequence< sal_Int8 > aProtectionHash;
             SvPasswordHelper::GetHashPassword( aProtectionHash, rNewPassword );
             pChangeTrack->SetProtection( aProtectionHash );
@@ -3007,9 +3007,9 @@ bool ScDocShell::SetProtectionPassword( const String &rNewPassword )
     }
 
     return bRes;
-}    
+}
 
-        
+
 bool ScDocShell::GetProtectionHash( /*out*/ ::com::sun::star::uno::Sequence< sal_Int8 > &rPasswordHash )
 {
     bool bRes = false;
@@ -3020,7 +3020,7 @@ bool ScDocShell::GetProtectionHash( /*out*/ ::com::sun::star::uno::Sequence< sal
         bRes = true;
     }
     return bRes;
-}    
+}
 
 void ScDocShell::BeforeLoading( SfxMedium& /*rMedium*/, const ::rtl::OUString & rstrTypeName, const ::rtl::OUString & /*rstrFilterName*/ )
 {
@@ -3045,7 +3045,7 @@ void ScDocShell::AfterLoading( SfxMedium& /*rMedium*/, const ::rtl::OUString & r
 
         if ( GetCreateMode() != SFX_CREATE_MODE_ORGANIZER )
             ScColumn::bDoubleAlloc = sal_False;
-    
+
 		// After loading, the XEmbeddedObject was probably set modified flag, so reset the flag to false.
 		uno::Sequence < ::rtl::OUString > aNames = GetEmbeddedObjectContainer().GetObjectNames();
 		for ( sal_Int32 n = 0; n < aNames.getLength(); n++ )
@@ -3071,4 +3071,3 @@ void ScDocShell::AfterLoading( SfxMedium& /*rMedium*/, const ::rtl::OUString & r
 		}
 	}
 }
-        

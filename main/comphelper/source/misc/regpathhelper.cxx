@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -71,7 +71,7 @@ static sal_Bool retrievePortalUserDir( OUString *pDirectory )
 	  	{
 	    	if ( sArg.indexOf(OUString::createFromAscii("-userid")) == 0 )
 	    	{
-				
+
 	      		bIsPortalUser = sal_True;
 				sal_Int32 nStart = sArg.lastIndexOf( '[' );
 				sal_Int32 nEnd   = sArg.lastIndexOf( ']' );
@@ -92,15 +92,15 @@ static sal_Bool retrievePortalUserDir( OUString *pDirectory )
  	}
 	return bIsPortalUser;
 }
-	
-	
+
+
 static OUString getDefaultLocalRegistry()
 {
 	OUString uBuffer, userRegistryName;
 	OUString portalUserDir;
 
 	sal_Bool bIsPortalUser = retrievePortalUserDir( &portalUserDir );
-	
+
 	if ( bIsPortalUser )
    	{
 		if( !portalUserDir.isEmpty() )
@@ -109,7 +109,7 @@ static OUString getDefaultLocalRegistry()
 			userRegistryName = portalUserDir;
 			userRegistryName += OUString( RTL_CONSTASCII_USTRINGPARAM(
 				"/user/" REGISTRY_LOCAL_NAME ) );
-			
+
 			// Directory creation is probably necessary for bootstrapping a new
 			// user in the portal environment (the ucb uses this function).
 			// This should be solved differently, as
@@ -117,7 +117,7 @@ static OUString getDefaultLocalRegistry()
 			OUString sSeparator(RTL_CONSTASCII_USTRINGPARAM("/"));
 			OUString sPath(RTL_CONSTASCII_USTRINGPARAM("file://"));
 			FileBase::RC retRC = FileBase::E_None;
-			
+
 			sal_Int32 nIndex = 3;
 			sPath += userRegistryName.getToken(2, '/', nIndex);
 			while( nIndex != -1 )
@@ -154,7 +154,7 @@ OUString getPathToUserRegistry()
 {
 	OUString  	userRegistryName;
 	FILE  		*f=NULL;
-	
+
 	// search the environment STAR_USER_REGISTRY
 	OString sBuffer( getenv(USER_REGISTRY_NAME_ENV) );
 	if ( !sBuffer.isEmpty() )
@@ -174,7 +174,7 @@ OUString getPathToUserRegistry()
 	}
 
 	return userRegistryName;
-}	
+}
 
 OUString getPathToSystemRegistry()
 {
@@ -182,17 +182,17 @@ OUString getPathToSystemRegistry()
 	OUString registryBaseName( RTL_CONSTASCII_USTRINGPARAM(REGISTRY_SYSTEM_NAME) );
 	OUString systemRegistryName;
 	FILE  	 *f=NULL;
- 
-	// search in the directory of the executable 	
+
+	// search in the directory of the executable
     OStartupInfo info;
 	if( OStartupInfo::E_None == info.getExecutableFile(uBuffer) )
 	{
 		sal_uInt32 	lastIndex = uBuffer.lastIndexOf(PATH_DELEMITTER);
 		if (lastIndex > 0)
 		{
-			uBuffer = uBuffer.copy(0, lastIndex + 1);	
+			uBuffer = uBuffer.copy(0, lastIndex + 1);
 		}
-		
+
 		uBuffer += registryBaseName;
 
 		if (!FileBase::getSystemPathFromFileURL(uBuffer, systemRegistryName))
@@ -209,22 +209,22 @@ OUString getPathToSystemRegistry()
 		if ( !tmpStr.isEmpty() )
 		{
 			f = fopen(tmpStr.getStr(), "r");
-		
+
 			if (f != NULL)
 			{
 				fclose(f);
 				systemRegistryName = OStringToOUString( tmpStr, osl_getThreadTextEncoding() );
 			} else
 			{
-				systemRegistryName = OUString();	
+				systemRegistryName = OUString();
 			}
 		}
 	} else
 	{
 		fclose(f);
 	}
-	
+
 	return systemRegistryName;
-}	
+}
 
 }

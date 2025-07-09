@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -107,7 +107,7 @@ bool lcl_createStarQuery(ScQueryParamBase* pParam, const ScDBRangeBase* pDBRef, 
             else
                 bValid = false;
         }
-        
+
         if (bValid)
         {
             // equality, non-equality operator in the 3rd column.
@@ -135,7 +135,7 @@ bool lcl_createStarQuery(ScQueryParamBase* pParam, const ScDBRangeBase* pDBRef, 
                 rEntry.eOp = SC_EQUAL;
 
         }
-        
+
         if (bValid)
         {
             // Finally, the right-hand-side value in the 4th column.
@@ -252,7 +252,7 @@ bool lcl_fillQueryEntries(
 
 // ============================================================================
 
-ScDBRangeBase::ScDBRangeBase(ScDocument* pDoc, RefType eType) : 
+ScDBRangeBase::ScDBRangeBase(ScDocument* pDoc, RefType eType) :
     mpDoc(pDoc), meType(eType)
 {
 }

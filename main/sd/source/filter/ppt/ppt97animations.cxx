@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -225,7 +225,7 @@ void Ppt97Animation::SetAnimateAssociatedShape( bool bAnimate )
             DBG_WARNING("you tried to deselect the animation of the form for random animation-> this has been refused");
             return;
         }
-            
+
     }
 
     if(bAnimate)
@@ -285,7 +285,7 @@ void Ppt97Animation::UpdateCacheData() const
         return;
 
     ClearCacheData();
-    
+
     if( !HasEffect() )
     {
         m_bDirtyCache = false;
@@ -295,11 +295,11 @@ void Ppt97Animation::UpdateCacheData() const
     switch( m_aAtom.nFlyMethod )
 	{
 		case 0x0:
-			//eRetval = ::com::sun::star::presentation::AnimationEffect_APPEAR;						
+			//eRetval = ::com::sun::star::presentation::AnimationEffect_APPEAR;
             m_aPresetId = ::rtl::OUString::createFromAscii("ooo-entrance-appear");                  // --- appear ---
 		break;
 		case 0x01:
-			//eRetval = ::com::sun::star::presentation::AnimationEffect_RANDOM;						
+			//eRetval = ::com::sun::star::presentation::AnimationEffect_RANDOM;
             m_aPresetId = ::rtl::OUString::createFromAscii("ooo-entrance-random");                  // --- random ---
 		break;
 		case 0x02:													                                // --- blinds effect ---
@@ -307,7 +307,7 @@ void Ppt97Animation::UpdateCacheData() const
 			switch ( m_aAtom.nFlyDirection )
 			{
 				case 0x0:
-					//eRetval = ::com::sun::star::presentation::AnimationEffect_VERTICAL_STRIPES; 
+					//eRetval = ::com::sun::star::presentation::AnimationEffect_VERTICAL_STRIPES;
                     m_aPresetId = ::rtl::OUString::createFromAscii("ooo-entrance-venetian-blinds");
                     m_aSubType = ::rtl::OUString::createFromAscii("horizontal");                    // horizontal
 				break;
@@ -350,7 +350,7 @@ void Ppt97Animation::UpdateCacheData() const
                     m_aSubType = ::rtl::OUString::createFromAscii("vertical");                      // horizontal ???
 				break;
 				case 0x1:
-					//eRetval = ::com::sun::star::presentation::AnimationEffect_VERTICAL_LINES;		
+					//eRetval = ::com::sun::star::presentation::AnimationEffect_VERTICAL_LINES;
                     m_aPresetId = ::rtl::OUString::createFromAscii("ooo-entrance-random-bars");
                     m_aSubType = rtl::OUString::createFromAscii("horizontal");                      // vertical ???
 				break;
@@ -362,22 +362,22 @@ void Ppt97Animation::UpdateCacheData() const
 			switch ( m_aAtom.nFlyDirection )
 			{
 				case 0x4:
-					//eRetval = ::com::sun::star::presentation::AnimationEffect_FADE_FROM_LOWERRIGHT; 
+					//eRetval = ::com::sun::star::presentation::AnimationEffect_FADE_FROM_LOWERRIGHT;
                     m_aPresetId = ::rtl::OUString::createFromAscii("ooo-entrance-diagonal-squares");
                     m_aSubType = rtl::OUString::createFromAscii("left-to-top");                     // to left top
 				break;
 				case 0x5:
-					//eRetval = ::com::sun::star::presentation::AnimationEffect_FADE_FROM_LOWERLEFT;	
+					//eRetval = ::com::sun::star::presentation::AnimationEffect_FADE_FROM_LOWERLEFT;
                     m_aPresetId = ::rtl::OUString::createFromAscii("ooo-entrance-diagonal-squares");
                     m_aSubType = rtl::OUString::createFromAscii("right-to-top");                    // to right top
 				break;
 				case 0x6:
-					//eRetval = ::com::sun::star::presentation::AnimationEffect_FADE_FROM_UPPERRIGHT; 
+					//eRetval = ::com::sun::star::presentation::AnimationEffect_FADE_FROM_UPPERRIGHT;
                     m_aPresetId = ::rtl::OUString::createFromAscii("ooo-entrance-diagonal-squares");
                     m_aSubType = rtl::OUString::createFromAscii("left-to-bottom");                  // to left bottom
 				break;
 				case 0x7:
-					//eRetval = ::com::sun::star::presentation::AnimationEffect_FADE_FROM_UPPERLEFT;	
+					//eRetval = ::com::sun::star::presentation::AnimationEffect_FADE_FROM_UPPERLEFT;
                     m_aPresetId = ::rtl::OUString::createFromAscii("ooo-entrance-diagonal-squares");
                     m_aSubType = rtl::OUString::createFromAscii("right-to-bottom");                 // to right bottom
 				break;
@@ -389,17 +389,17 @@ void Ppt97Animation::UpdateCacheData() const
 			switch ( m_aAtom.nFlyDirection )
 			{
 				case 0x0:
-					//eRetval = ::com::sun::star::presentation::AnimationEffect_FADE_FROM_RIGHT;	
+					//eRetval = ::com::sun::star::presentation::AnimationEffect_FADE_FROM_RIGHT;
                     m_aPresetId = ::rtl::OUString::createFromAscii("ooo-entrance-wipe");
                     m_aSubType = rtl::OUString::createFromAscii("from-right");                      // from right
 				break;
 				case 0x1:
-					//eRetval = ::com::sun::star::presentation::AnimationEffect_FADE_FROM_BOTTOM; 	
+					//eRetval = ::com::sun::star::presentation::AnimationEffect_FADE_FROM_BOTTOM;
                     m_aPresetId = ::rtl::OUString::createFromAscii("ooo-entrance-wipe");
                     m_aSubType = rtl::OUString::createFromAscii("from-bottom");                     // from bottom
 				break;
 				case 0x2:
-					//eRetval = ::com::sun::star::presentation::AnimationEffect_FADE_FROM_LEFT;		
+					//eRetval = ::com::sun::star::presentation::AnimationEffect_FADE_FROM_LEFT;
                     m_aPresetId = ::rtl::OUString::createFromAscii("ooo-entrance-wipe");
                     m_aSubType = rtl::OUString::createFromAscii("from-left");                       // from left
 				break;
@@ -436,7 +436,7 @@ void Ppt97Animation::UpdateCacheData() const
 					//eRetval = ::com::sun::star::presentation::AnimationEffect_MOVE_FROM_LEFT;
                     m_aPresetId = ::rtl::OUString::createFromAscii("ooo-entrance-fly-in");
                     m_aSubType = rtl::OUString::createFromAscii("from-left");
-                    
+
 				break;
 				case 0x1:
 					//eRetval = ::com::sun::star::presentation::AnimationEffect_MOVE_FROM_TOP;
@@ -476,7 +476,7 @@ void Ppt97Animation::UpdateCacheData() const
 				case 0x8:                                                                               // -- short text effects --
 					//eRetval = ::com::sun::star::presentation::AnimationEffect_MOVE_SHORT_FROM_LEFT;
                     m_aPresetId = ::rtl::OUString::createFromAscii("ooo-entrance-peek-in");
-                    m_aSubType = rtl::OUString::createFromAscii("from-left");                           
+                    m_aSubType = rtl::OUString::createFromAscii("from-left");
 				break;
 				case 0x9:
 					//eRetval = ::com::sun::star::presentation::AnimationEffect_MOVE_SHORT_FROM_BOTTOM;
@@ -701,7 +701,7 @@ void Ppt97Animation::createAndSetCustomAnimationEffect( SdrObject* pObj )
 	// some effects need a different duration than that of the mapped preset effect
     double fDurationInSeconds = 1.0;//in secunden
     if( this->GetSpecialDuration( fDurationInSeconds ) )
-        pEffect->setDuration( fDurationInSeconds );    
+        pEffect->setDuration( fDurationInSeconds );
 
 	// set after effect
     if( this->HasAfterEffect() )
@@ -719,11 +719,11 @@ void Ppt97Animation::createAndSetCustomAnimationEffect( SdrObject* pObj )
 
     // text iteration
     pEffect->setIterateType( this->GetTextAnimationType() );
-    
+
     // some effects need a different delay between text iteration than that of the mapped preset effect
     double fTextIterationDelay = 1.0;
     if( this->GetSpecialTextIterationDelay( fTextIterationDelay ) )
-        pEffect->setIterateInterval( fTextIterationDelay );    
+        pEffect->setIterateInterval( fTextIterationDelay );
 
     // is the effect started on click or after the last effect (Another possible value is EffectNodeType::WITH_PREVIOUS )
 	pEffect->setNodeType( this->GetEffectNodeType() );
@@ -750,16 +750,16 @@ void Ppt97Animation::createAndSetCustomAnimationEffect( SdrObject* pObj )
 		double fDelaySeconds = this->GetDelayTimeInSeconds();
 		sal_Bool bAnimateAssociatedShape = this->HasAnimateAssociatedShape();//or only text
 		sal_Bool bTextReverse = this->HasReverseOrder();
-        
+
         // now create effects for each paragraph
-		::sd::CustomAnimationTextGroupPtr pGroup = pMainSequence->	
+		::sd::CustomAnimationTextGroupPtr pGroup = pMainSequence->
 			createTextGroup( pEffect, nParagraphLevel, fDelaySeconds, bAnimateAssociatedShape, bTextReverse );
-        
+
         if( pGroup )
         {
             const ::sd::EffectSequence& rEffects = pGroup->getEffects();
             ::sd::EffectSequence::const_iterator aIter = rEffects.begin();
-            
+
             ::sd::CustomAnimationEffectPtr pLastEffect;
             sal_Int32 nIndex = 0;
 	        for( ; aIter != rEffects.end(); aIter++ )

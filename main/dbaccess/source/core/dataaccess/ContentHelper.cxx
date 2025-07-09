@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -91,12 +91,12 @@ using namespace ::cppu;
 DBG_NAME(OContentHelper_Impl)
 OContentHelper_Impl::OContentHelper_Impl()
 {
-	DBG_CTOR(OContentHelper_Impl,NULL);	
+	DBG_CTOR(OContentHelper_Impl,NULL);
 }
 // -----------------------------------------------------------------------------
 OContentHelper_Impl::~OContentHelper_Impl()
 {
-	DBG_DTOR(OContentHelper_Impl,NULL);	
+	DBG_DTOR(OContentHelper_Impl,NULL);
 }
 // -----------------------------------------------------------------------------
 
@@ -338,7 +338,7 @@ void SAL_CALL OContentHelper::removePropertiesChangeListener( const Sequence< ::
 // -----------------------------------------------------------------------------
 
 // XPropertyContainer
-void SAL_CALL OContentHelper::addProperty( const ::rtl::OUString& /*Name*/, sal_Int16 /*Attributes*/, const Any& /*DefaultValue*/ ) throw (PropertyExistException, IllegalTypeException, IllegalArgumentException, RuntimeException) 
+void SAL_CALL OContentHelper::addProperty( const ::rtl::OUString& /*Name*/, sal_Int16 /*Attributes*/, const Any& /*DefaultValue*/ ) throw (PropertyExistException, IllegalTypeException, IllegalArgumentException, RuntimeException)
 {
     DBG_ERROR( "OContentHelper::addProperty: not implemented!" );
 }
@@ -591,7 +591,7 @@ void OContentHelper::notifyPropertiesChange( const Sequence< PropertyChangeEvent
 		typedef Sequence< PropertyChangeEvent > PropertyEventSequence;
 		typedef ::std::map< XPropertiesChangeListener*, PropertyEventSequence* > PropertiesEventListenerMap;
 		PropertiesEventListenerMap aListeners;
-		
+
 
 		const PropertyChangeEvent* propertyChangeEvent = evt.getConstArray();
 
@@ -697,9 +697,9 @@ void OContentHelper::impl_rename_throw(const ::rtl::OUString& _sNewName,bool _bN
 	    aChanges[0].PropertyHandle  = PROPERTY_ID_NAME;
         aChanges[0].OldValue        <<= m_pImpl->m_aProps.aTitle;
         aChanges[0].NewValue        <<= _sNewName;
-        
+
 		aGuard.clear();
-        
+
 		m_pImpl->m_aProps.aTitle = _sNewName;
         if ( _bNotify )
             notifyPropertiesChange( aChanges );
@@ -713,7 +713,7 @@ void OContentHelper::impl_rename_throw(const ::rtl::OUString& _sNewName,bool _bN
 // -----------------------------------------------------------------------------
 void SAL_CALL OContentHelper::rename( const ::rtl::OUString& newName ) throw (SQLException, ElementExistException, RuntimeException)
 {
-	
+
     impl_rename_throw(newName);
 	//Reference<XNameContainer> xNameCont(m_xParentContainer,UNO_QUERY);
 	//if ( xNameCont.is() )
@@ -745,7 +745,7 @@ void SAL_CALL OContentHelper::rename( const ::rtl::OUString& newName ) throw (SQ
 	//}
 	//else
 	//	m_pImpl->m_aProps.aTitle = newName;
-	
+
 }
 // -----------------------------------------------------------------------------
 void OContentHelper::notifyDataSourceModified()

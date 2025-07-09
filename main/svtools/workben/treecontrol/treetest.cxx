@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -124,7 +124,7 @@ void DirectoryTree::display( const OUString& rURL )
 
 	// first create a data model for our tree control
 	mxTreeDataModel = Reference< XMutableTreeDataModel >(
-		mxMultiComponentFactoryServer->createInstanceWithContext( 
+		mxMultiComponentFactoryServer->createInstanceWithContext(
 	        OUString( RTL_CONSTASCII_USTRINGPARAM("com.sun.star.awt.tree.MutableTreeDataModel" ) ),
 		    mxComponentContext ), UNO_QUERY_THROW );
 
@@ -139,7 +139,7 @@ void DirectoryTree::display( const OUString& rURL )
 
 	// now create the dialog
 	Reference< XControlModel > xDialogModel(
-		mxMultiComponentFactoryServer->createInstanceWithContext( 
+		mxMultiComponentFactoryServer->createInstanceWithContext(
 	        OUString( RTL_CONSTASCII_USTRINGPARAM("com.sun.star.awt.UnoControlDialogModel" ) ),
 		    mxComponentContext ), UNO_QUERY_THROW );
 
@@ -154,7 +154,7 @@ void DirectoryTree::display( const OUString& rURL )
 
 	// now create our tree control
 	Reference< XControlModel > xTreeControlModel(
-		xDialogMSF->createInstance( 
+		xDialogMSF->createInstance(
 	        OUString( RTL_CONSTASCII_USTRINGPARAM("com.sun.star.awt.tree.TreeControlModel" ) ) ),
 		    UNO_QUERY_THROW );
 
@@ -171,7 +171,7 @@ void DirectoryTree::display( const OUString& rURL )
 	XTreeControlModelSet->setPropertyValue( sRootDisplayed,	Any( sal_True ) );
 	XTreeControlModelSet->setPropertyValue( sEditable,		Any( sal_True ) );
 //	XTreeControlModelSet->setPropertyValue( sRowHeight,		Any( sal_Int32( 12 ) ) );
-  
+
 	Reference< XNameContainer > xDialogModelContainer( xDialogModel, UNO_QUERY_THROW );
 
 	const OUString sTreeControlName( RTL_CONSTASCII_USTRINGPARAM( "tree" ) );
@@ -180,18 +180,18 @@ void DirectoryTree::display( const OUString& rURL )
 
 	// now create the peers
 	Reference< XControl > xDialogControl(
-		mxMultiComponentFactoryServer->createInstanceWithContext( 
+		mxMultiComponentFactoryServer->createInstanceWithContext(
 	        OUString( RTL_CONSTASCII_USTRINGPARAM("com.sun.star.awt.UnoControlDialog" ) ),
 		    mxComponentContext ), UNO_QUERY_THROW );
 
 	xDialogControl->setModel( xDialogModel );
-	
+
 	Reference< XToolkit > xToolkit(
-		mxMultiComponentFactoryServer->createInstanceWithContext( 
+		mxMultiComponentFactoryServer->createInstanceWithContext(
 	        OUString( RTL_CONSTASCII_USTRINGPARAM("com.sun.star.awt.Toolkit" ) ),
 		    mxComponentContext ), UNO_QUERY_THROW );
 	xDialogControl->createPeer( xToolkit, 0 );
-	
+
 	// get the peers of the sub controls from the dialog peer container
 	Reference< XControlContainer > xDialogContainer( xDialogControl, UNO_QUERY_THROW );
 	mxTreeControl = Reference< XTreeControl >( xDialogContainer->getControl( sTreeControlName ), UNO_QUERY_THROW );
@@ -310,9 +310,9 @@ int SAL_CALL main( int argc, char **argv )
 	}
  	if (argc == 3)
 	{
-		sConnectionString = OUString::createFromAscii(argv[2]);        
-	} 
-    
+		sConnectionString = OUString::createFromAscii(argv[2]);
+	}
+
 	// Creates a simple registry service instance.
     Reference< XSimpleRegistry > xSimpleRegistry(::cppu::createSimpleRegistry() );
 
@@ -330,7 +330,7 @@ int SAL_CALL main( int argc, char **argv )
     */
     Reference< XComponentContext > xComponentContext(
         ::cppu::bootstrap_InitialComponentContext( xSimpleRegistry ) );
-    
+
     /* Gets the service manager instance to be used (or null). This method has
        been added for convenience, because the service manager is a often used
        object.
@@ -342,7 +342,7 @@ int SAL_CALL main( int argc, char **argv )
        by the factory.
     */
     Reference< XInterface > xInterface =
-        xMultiComponentFactoryClient->createInstanceWithContext( 
+        xMultiComponentFactoryClient->createInstanceWithContext(
             OUString::createFromAscii( "com.sun.star.bridge.UnoUrlResolver" ),
             xComponentContext );
 
@@ -351,7 +351,7 @@ int SAL_CALL main( int argc, char **argv )
     // Resolves the component context from the office, on the uno URL given by argv[1].
     try
     {
-        xInterface = Reference< XInterface >( 
+        xInterface = Reference< XInterface >(
             resolver->resolve( sConnectionString ), UNO_QUERY );
     }
     catch ( Exception& e )
@@ -359,9 +359,9 @@ int SAL_CALL main( int argc, char **argv )
 		printf("Error: cannot establish a connection using '%s':\n       %s\n",
                OUStringToOString(sConnectionString, RTL_TEXTENCODING_ASCII_US).getStr(),
                OUStringToOString(e.Message, RTL_TEXTENCODING_ASCII_US).getStr());
-		exit(1);        
+		exit(1);
     }
-    
+
     // gets the server component context as property of the office component factory
     Reference< XPropertySet > xPropSet( xInterface, UNO_QUERY );
     xPropSet->getPropertyValue( OUString::createFromAscii("DefaultContext") ) >>= xComponentContext;
@@ -369,7 +369,7 @@ int SAL_CALL main( int argc, char **argv )
     // gets the service manager from the office
     Reference< XMultiComponentFactory > xMultiComponentFactoryServer(
         xComponentContext->getServiceManager() );
-  
+
 	try
 	{
 		OUString ustrFileURL;
@@ -382,11 +382,11 @@ int SAL_CALL main( int argc, char **argv )
 	{
 		printf("Error: exception caught during test:\n       %s\n",
                OUStringToOString(e.Message, RTL_TEXTENCODING_ASCII_US).getStr());
-		exit(1);        
+		exit(1);
 	}
 
 	// dispose the local service manager
     Reference< XComponent >::query( xMultiComponentFactoryClient )->dispose();
 
     return 0;
-} 
+}

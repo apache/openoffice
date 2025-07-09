@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
@@ -534,7 +534,7 @@ void XMLTextStyleContext::FillPropertySet(
         {
             OUString sIsSplitAllowed = OUString( RTL_CONSTASCII_USTRINGPARAM( "IsSplitAllowed" ) );
             DBG_ASSERT( rPropSet->getPropertySetInfo()->hasPropertyByName( sIsSplitAllowed ), "property missing?" );
-            rPropSet->setPropertyValue( 
+            rPropSet->setPropertyValue(
                 sIsSplitAllowed,
                 (aContextIDs[1].nIndex == -1) ? makeAny( false ) : GetProperties()[aContextIDs[1].nIndex].maValue );
         }
@@ -543,7 +543,7 @@ void XMLTextStyleContext::FillPropertySet(
         {
             OUString sCollapsingBorders(OUString( RTL_CONSTASCII_USTRINGPARAM( "CollapsingBorders" ) ) );
             DBG_ASSERT( rPropSet->getPropertySetInfo()->hasPropertyByName( sCollapsingBorders ), "property missing?" );
-            rPropSet->setPropertyValue( 
+            rPropSet->setPropertyValue(
                 sCollapsingBorders,
                 (aContextIDs[2].nIndex == -1)
                 ? makeAny( false )
@@ -584,7 +584,7 @@ void XMLTextStyleContext::FillPropertySet(
                             // This happens for AutoStyles which are already filled in XMLPropStyleContext::CreateAndInsert,
                             // thus the whole mechanism based on _ContextID_Index_Pair will not work
                             // in that case. Thus the slots which need to be converted already get
-                            // converted there (its called first) and not here (see 
+                            // converted there (its called first) and not here (see
                             // translateNameBasedDrawingLayerFillStyleDefinitionsToStyleDisplayNames)
                             // For convenience, still Write back the corrected value to the XMLPropertyState entry
                             rState.maValue <<= sStyleName;

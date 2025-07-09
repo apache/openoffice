@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -569,7 +569,7 @@ void SvxAccessibleTextAdapter::SetParaAttribs( sal_uInt32 nPara, const SfxItemSe
 void SvxAccessibleTextAdapter::RemoveAttribs( const ESelection& , sal_Bool , sal_uInt16 )
 {
     DBG_ASSERT(mrTextForwarder, "SvxAccessibleTextAdapter: no forwarder");
-}    
+}
 
 void SvxAccessibleTextAdapter::GetPortions( sal_uInt32 nPara, SvUShorts& rList ) const
 {
@@ -678,7 +678,7 @@ void SvxAccessibleTextAdapter::FieldClicked( const SvxFieldItem& rField, sal_uIn
 sal_Int32 SvxAccessibleTextAdapter::CalcLogicalIndex( sal_uInt32 nPara, sal_uInt16 nEEIndex )
 {
     DBG_ASSERT(mrTextForwarder, "SvxAccessibleTextAdapter: no forwarder");
-    
+
     SvxAccessibleTextIndex aIndex;
     aIndex.SetEEIndex(nPara, nEEIndex, *mrTextForwarder);
     return aIndex.GetIndex();
@@ -687,7 +687,7 @@ sal_Int32 SvxAccessibleTextAdapter::CalcLogicalIndex( sal_uInt32 nPara, sal_uInt
 sal_uInt16 SvxAccessibleTextAdapter::CalcEditEngineIndex( sal_uInt32 nPara, sal_Int32 nLogicalIndex )
 {
     DBG_ASSERT(mrTextForwarder, "SvxAccessibleTextAdapter: no forwarder");
-    
+
     SvxAccessibleTextIndex aIndex;
     aIndex.SetIndex(nPara, nLogicalIndex, *mrTextForwarder);
     return aIndex.GetEEIndex();
@@ -1061,7 +1061,7 @@ void SvxAccessibleTextAdapter::GetLineBoundaries( /*out*/sal_uInt16 &rStart, /*o
 sal_uInt16 SvxAccessibleTextAdapter::GetLineNumberAtIndex( sal_uInt32 nPara, sal_uInt16 nIndex ) const
 {
     return mrTextForwarder->GetLineNumberAtIndex( nPara, nIndex );
-}    
+}
 
 sal_Bool SvxAccessibleTextAdapter::Delete( const ESelection& rSel )
 {
@@ -1234,7 +1234,7 @@ Point SvxAccessibleTextEditViewAdapter::PixelToLogic( const Point& rPoint, const
 
     return mrViewForwarder->PixelToLogic(rPoint, rMapMode);
 }
-    
+
 sal_Bool SvxAccessibleTextEditViewAdapter::GetSelection( ESelection& rSel ) const
 {
     DBG_ASSERT(mrViewForwarder, "SvxAccessibleTextEditViewAdapter: no forwarder");

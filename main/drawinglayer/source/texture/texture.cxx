@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -74,10 +74,10 @@ namespace drawinglayer
     namespace texture
     {
         GeoTexSvxGradient::GeoTexSvxGradient(
-            const basegfx::B2DRange& rDefinitionRange, 
-            const basegfx::BColor& rStart, 
-            const basegfx::BColor& rEnd, 
-            sal_uInt32 /* nSteps */, 
+            const basegfx::B2DRange& rDefinitionRange,
+            const basegfx::BColor& rStart,
+            const basegfx::BColor& rEnd,
+            sal_uInt32 /* nSteps */,
             double fBorder)
         :   GeoTexSvx(),
             maGradientInfo(),
@@ -111,12 +111,12 @@ namespace drawinglayer
     namespace texture
     {
         GeoTexSvxGradientLinear::GeoTexSvxGradientLinear(
-            const basegfx::B2DRange& rDefinitionRange, 
-            const basegfx::B2DRange& rOutputRange, 
-            const basegfx::BColor& rStart, 
-            const basegfx::BColor& rEnd, 
-            sal_uInt32 nSteps, 
-            double fBorder, 
+            const basegfx::B2DRange& rDefinitionRange,
+            const basegfx::B2DRange& rOutputRange,
+            const basegfx::BColor& rStart,
+            const basegfx::BColor& rEnd,
+            sal_uInt32 nSteps,
+            double fBorder,
             double fAngle)
         :   GeoTexSvxGradient(rDefinitionRange, rStart, rEnd, nSteps, fBorder),
             mfUnitMinX(0.0),
@@ -145,7 +145,7 @@ namespace drawinglayer
         }
 
         void GeoTexSvxGradientLinear::appendTransformationsAndColors(
-            std::vector< B2DHomMatrixAndBColor >& rEntries, 
+            std::vector< B2DHomMatrixAndBColor >& rEntries,
             basegfx::BColor& rOuterColor)
         {
             rOuterColor = maStart;
@@ -207,12 +207,12 @@ namespace drawinglayer
     namespace texture
     {
         GeoTexSvxGradientAxial::GeoTexSvxGradientAxial(
-            const basegfx::B2DRange& rDefinitionRange, 
-            const basegfx::B2DRange& rOutputRange, 
-            const basegfx::BColor& rStart, 
-            const basegfx::BColor& rEnd, 
-            sal_uInt32 nSteps, 
-            double fBorder, 
+            const basegfx::B2DRange& rDefinitionRange,
+            const basegfx::B2DRange& rOutputRange,
+            const basegfx::BColor& rStart,
+            const basegfx::BColor& rEnd,
+            sal_uInt32 nSteps,
+            double fBorder,
             double fAngle)
         :   GeoTexSvxGradient(rDefinitionRange, rStart, rEnd, nSteps, fBorder),
             mfUnitMinX(0.0),
@@ -239,7 +239,7 @@ namespace drawinglayer
         }
 
         void GeoTexSvxGradientAxial::appendTransformationsAndColors(
-            std::vector< B2DHomMatrixAndBColor >& rEntries, 
+            std::vector< B2DHomMatrixAndBColor >& rEntries,
             basegfx::BColor& rOuterColor)
         {
             rOuterColor = maEnd;
@@ -292,12 +292,12 @@ namespace drawinglayer
     namespace texture
     {
         GeoTexSvxGradientRadial::GeoTexSvxGradientRadial(
-            const basegfx::B2DRange& rDefinitionRange, 
-            const basegfx::BColor& rStart, 
-            const basegfx::BColor& rEnd, 
-            sal_uInt32 nSteps, 
-            double fBorder, 
-            double fOffsetX, 
+            const basegfx::B2DRange& rDefinitionRange,
+            const basegfx::BColor& rStart,
+            const basegfx::BColor& rEnd,
+            sal_uInt32 nSteps,
+            double fBorder,
+            double fOffsetX,
             double fOffsetY)
         :   GeoTexSvxGradient(rDefinitionRange, rStart, rEnd, nSteps, fBorder)
         {
@@ -313,7 +313,7 @@ namespace drawinglayer
         }
 
         void GeoTexSvxGradientRadial::appendTransformationsAndColors(
-            std::vector< B2DHomMatrixAndBColor >& rEntries, 
+            std::vector< B2DHomMatrixAndBColor >& rEntries,
             basegfx::BColor& rOuterColor)
         {
             rOuterColor = maStart;
@@ -349,13 +349,13 @@ namespace drawinglayer
     namespace texture
     {
         GeoTexSvxGradientElliptical::GeoTexSvxGradientElliptical(
-            const basegfx::B2DRange& rDefinitionRange, 
-            const basegfx::BColor& rStart, 
-            const basegfx::BColor& rEnd, 
-            sal_uInt32 nSteps, 
-            double fBorder, 
-            double fOffsetX, 
-            double fOffsetY, 
+            const basegfx::B2DRange& rDefinitionRange,
+            const basegfx::BColor& rStart,
+            const basegfx::BColor& rEnd,
+            sal_uInt32 nSteps,
+            double fBorder,
+            double fOffsetX,
+            double fOffsetY,
             double fAngle)
         :   GeoTexSvxGradient(rDefinitionRange, rStart, rEnd, nSteps, fBorder)
         {
@@ -372,7 +372,7 @@ namespace drawinglayer
         }
 
         void GeoTexSvxGradientElliptical::appendTransformationsAndColors(
-            std::vector< B2DHomMatrixAndBColor >& rEntries, 
+            std::vector< B2DHomMatrixAndBColor >& rEntries,
             basegfx::BColor& rOuterColor)
         {
             rOuterColor = maStart;
@@ -426,13 +426,13 @@ namespace drawinglayer
     namespace texture
     {
         GeoTexSvxGradientSquare::GeoTexSvxGradientSquare(
-            const basegfx::B2DRange& rDefinitionRange, 
-            const basegfx::BColor& rStart, 
-            const basegfx::BColor& rEnd, 
-            sal_uInt32 nSteps, 
-            double fBorder, 
-            double fOffsetX, 
-            double fOffsetY, 
+            const basegfx::B2DRange& rDefinitionRange,
+            const basegfx::BColor& rStart,
+            const basegfx::BColor& rEnd,
+            sal_uInt32 nSteps,
+            double fBorder,
+            double fOffsetX,
+            double fOffsetY,
             double fAngle)
         :   GeoTexSvxGradient(rDefinitionRange, rStart, rEnd, nSteps, fBorder)
         {
@@ -449,7 +449,7 @@ namespace drawinglayer
         }
 
         void GeoTexSvxGradientSquare::appendTransformationsAndColors(
-            std::vector< B2DHomMatrixAndBColor >& rEntries, 
+            std::vector< B2DHomMatrixAndBColor >& rEntries,
             basegfx::BColor& rOuterColor)
         {
             rOuterColor = maStart;
@@ -485,13 +485,13 @@ namespace drawinglayer
     namespace texture
     {
         GeoTexSvxGradientRect::GeoTexSvxGradientRect(
-            const basegfx::B2DRange& rDefinitionRange, 
-            const basegfx::BColor& rStart, 
-            const basegfx::BColor& rEnd, 
-            sal_uInt32 nSteps, 
-            double fBorder, 
-            double fOffsetX, 
-            double fOffsetY, 
+            const basegfx::B2DRange& rDefinitionRange,
+            const basegfx::BColor& rStart,
+            const basegfx::BColor& rEnd,
+            sal_uInt32 nSteps,
+            double fBorder,
+            double fOffsetX,
+            double fOffsetY,
             double fAngle)
         :   GeoTexSvxGradient(rDefinitionRange, rStart, rEnd, nSteps, fBorder)
         {
@@ -508,7 +508,7 @@ namespace drawinglayer
         }
 
         void GeoTexSvxGradientRect::appendTransformationsAndColors(
-            std::vector< B2DHomMatrixAndBColor >& rEntries, 
+            std::vector< B2DHomMatrixAndBColor >& rEntries,
             basegfx::BColor& rOuterColor)
         {
             rOuterColor = maStart;
@@ -562,9 +562,9 @@ namespace drawinglayer
     namespace texture
     {
         GeoTexSvxHatch::GeoTexSvxHatch(
-            const basegfx::B2DRange& rDefinitionRange, 
-            const basegfx::B2DRange& rOutputRange, 
-            double fDistance, 
+            const basegfx::B2DRange& rDefinitionRange,
+            const basegfx::B2DRange& rOutputRange,
+            double fDistance,
             double fAngle)
         :   maOutputRange(rOutputRange),
             maTextureTransform(),
@@ -710,7 +710,7 @@ namespace drawinglayer
     namespace texture
     {
         GeoTexSvxTiled::GeoTexSvxTiled(
-            const basegfx::B2DRange& rRange, 
+            const basegfx::B2DRange& rRange,
             double fOffsetX,
             double fOffsetY)
         :   maRange(rRange),
@@ -730,7 +730,7 @@ namespace drawinglayer
         bool GeoTexSvxTiled::operator==(const GeoTexSvx& rGeoTexSvx) const
         {
             const GeoTexSvxTiled* pCompare = dynamic_cast< const GeoTexSvxTiled* >(&rGeoTexSvx);
-            
+
             return (pCompare
                 && maRange == pCompare->maRange
                 && mfOffsetX == pCompare->mfOffsetX
@@ -788,14 +788,14 @@ namespace drawinglayer
                     {
                         for(double fPosX(fStartX); basegfx::fTools::less(fPosX, 1.0); fPosX += fWidth, nPosX++)
                         {
-                            for(double fPosY(nPosX % 2 ? fStartY - fHeight + (mfOffsetY * fHeight) : fStartY); 
+                            for(double fPosY(nPosX % 2 ? fStartY - fHeight + (mfOffsetY * fHeight) : fStartY);
                                 basegfx::fTools::less(fPosY, 1.0); fPosY += fHeight)
                             {
                                 rMatrices.push_back(
                                     basegfx::tools::createScaleTranslateB2DHomMatrix(
-                                        fWidth, 
-                                        fHeight, 
-                                        fPosX, 
+                                        fWidth,
+                                        fHeight,
+                                        fPosX,
                                         fPosY));
                             }
                         }
@@ -804,14 +804,14 @@ namespace drawinglayer
                     {
                         for(double fPosY(fStartY); basegfx::fTools::less(fPosY, 1.0); fPosY += fHeight, nPosY++)
                         {
-                            for(double fPosX(nPosY % 2 ? fStartX - fWidth + (mfOffsetX * fWidth) : fStartX); 
+                            for(double fPosX(nPosY % 2 ? fStartX - fWidth + (mfOffsetX * fWidth) : fStartX);
                                 basegfx::fTools::less(fPosX, 1.0); fPosX += fWidth)
                             {
                                 rMatrices.push_back(
                                     basegfx::tools::createScaleTranslateB2DHomMatrix(
-                                        fWidth, 
-                                        fHeight, 
-                                        fPosX, 
+                                        fWidth,
+                                        fHeight,
+                                        fPosX,
                                         fPosY));
                             }
                         }

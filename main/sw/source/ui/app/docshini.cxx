@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -206,7 +206,7 @@ sal_Bool SwDocShell::InitNew( const uno::Reference < embed::XStorage >& xStor )
             if(!pStdFont->IsFontDefault(nFontId))
             {
                 sEntry = pStdFont->GetFontFor(nFontId);
-                
+
                 Font aFont( sEntry, Size( 0, 10 ) );
                 if( pPrt )
                 {
@@ -293,11 +293,11 @@ sal_Bool SwDocShell::InitNew( const uno::Reference < embed::XStorage >& xStor )
             if(!pStdFont->IsFontDefault(aFontIdPoolId[nIdx]))
             {
                 sEntry = pStdFont->GetFontFor(aFontIdPoolId[nIdx]);
-                
+
                 Font aFont( sEntry, Size( 0, 10 ) );
                 if( pPrt )
                     aFont = pPrt->GetFontMetric( aFont );
-                
+
                 pColl = mpDoc->GetTxtCollFromPool(aFontIdPoolId[nIdx + 1]);
                 if( !bHTMLTemplSet ||
 					SFX_ITEM_SET != pColl->GetAttrSet().GetItemState(
@@ -323,7 +323,7 @@ sal_Bool SwDocShell::InitNew( const uno::Reference < embed::XStorage >& xStor )
         // the default for documents created via 'File/New' should be 'on'
         // (old documents, where this property was not yet implemented, will get the
         // value 'false' in the SwDoc c-tor)
-        mpDoc->set( IDocumentSettingAccess::MATH_BASELINE_ALIGNMENT, 
+        mpDoc->set( IDocumentSettingAccess::MATH_BASELINE_ALIGNMENT,
                 SW_MOD()->GetUsrPref( bWeb )->IsAlignMathObjectsToBaseline() );
     }
 

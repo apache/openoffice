@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -126,10 +126,10 @@ void PresenterPaneBase::disposing (void)
 void PresenterPaneBase::SetTitle (const OUString& rsTitle)
 {
     msTitle = rsTitle;
-    
+
     OSL_ASSERT(mpPresenterController.get()!=NULL);
     OSL_ASSERT(mpPresenterController->GetPaintManager().get()!=NULL);
-    
+
     mpPresenterController->GetPaintManager()->Invalidate(mxBorderWindow);
 }
 
@@ -249,7 +249,7 @@ void SAL_CALL PresenterPaneBase::initialize (const Sequence<Any>& rArguments)
                     static_cast<XWeak*>(this),
                     2);
             }
-            
+
             if ( ! (rArguments[3] >>= msTitle))
             {
                 throw lang::IllegalArgumentException(
@@ -276,13 +276,13 @@ void SAL_CALL PresenterPaneBase::initialize (const Sequence<Any>& rArguments)
             }
 
             CreateWindows(mxParentWindow, bIsWindowVisibleOnCreation);
-    
+
             if (mxBorderWindow.is())
             {
                 mxBorderWindow->addWindowListener(this);
                 mxBorderWindow->addPaintListener(this);
             }
-            
+
             CreateCanvases(mxParentWindow, xParentCanvas);
 
             // Raise new windows.
@@ -393,7 +393,7 @@ void PresenterPaneBase::CreateWindows (
 {
     if (mxPresenterHelper.is() && rxParentWindow.is())
     {
-        
+
         mxBorderWindow = mxPresenterHelper->createWindow(
             rxParentWindow,
             sal_False,
@@ -478,7 +478,7 @@ void PresenterPaneBase::PaintBorder (const awt::Rectangle& rUpdateBox)
         awt::Rectangle aLocalBorderBox (0,0, aBorderBox.Width, aBorderBox.Height);
 
         PaintBorderBackground(aLocalBorderBox, rUpdateBox);
-        
+
         if (mbHasCallout)
             mxBorderPainter->paintBorderWithCallout(
                 mxPaneId->getResourceURL(),

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -309,9 +309,9 @@ bool PspGraphics::setClipRegion( const Region& i_rClip )
             if(nH)
             {
                 m_pPrinterGfx->UnionClipRegion(
-                    aRectIter->Left(), 
-                    aRectIter->Top(), 
-                    nW, 
+                    aRectIter->Left(),
+                    aRectIter->Top(),
+                    nW,
                     nH);
             }
         }
@@ -425,10 +425,10 @@ bool PspGraphics::drawPolyPolygon( const ::basegfx::B2DPolyPolygon&, double /*fT
         return false;
 }
 
-bool PspGraphics::drawPolyLine( 
-    const basegfx::B2DPolygon&, 
-    double /*fTranspareny*/, 
-    const basegfx::B2DVector& /*rLineWidths*/, 
+bool PspGraphics::drawPolyLine(
+    const basegfx::B2DPolygon&,
+    double /*fTranspareny*/,
+    const basegfx::B2DVector& /*rLineWidths*/,
     basegfx::B2DLineJoin /*eJoin*/,
     com::sun::star::drawing::LineCap /*eLineCap*/)
 {
@@ -826,7 +826,7 @@ sal_uInt16 PspGraphics::SetFont( ImplFontSelectData *pEntry, int nFallbackLevel 
     // return early if there is no new font
     if( !pEntry )
         return 0;
-    
+
     sal_IntPtr nID = pEntry->mpFontData ? pEntry->mpFontData->GetFontId() : 0;
 
     // determine which font attributes need to be emulated
@@ -1522,7 +1522,7 @@ SystemFontData PspGraphics::GetSysFontData( int nFallbacklevel ) const
 
     if (nFallbacklevel >= MAX_FALLBACK) nFallbacklevel = MAX_FALLBACK - 1;
     if (nFallbacklevel < 0 ) nFallbacklevel = 0;
-    
+
     aSysFontData.nSize = sizeof( SystemFontData );
     aSysFontData.nFontId = 0;
     aSysFontData.nFontFlags = 0;

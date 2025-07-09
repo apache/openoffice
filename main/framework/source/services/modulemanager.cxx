@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -158,7 +158,7 @@ ModuleManager::~ModuleManager()
     // Means: model -> controller -> window
     // No fallbacks to higher components are allowed !
     // Note : A frame provides access to module components only ... but it's not a module by himself.
-    
+
     ::rtl::OUString sModule;
     if (xModel.is())
         sModule = implts_identify(xModel);
@@ -168,12 +168,12 @@ ModuleManager::~ModuleManager()
     else
     if (xWindow.is())
         sModule = implts_identify(xWindow);
-    
+
     if (sModule.getLength() < 1)
         throw css::frame::UnknownModuleException(
                 ::rtl::OUString::createFromAscii("Can't find suitable module for the given component."),
                 static_cast< ::cppu::OWeakObject* >(this));
-    
+
     return sModule;
 }
 
@@ -229,7 +229,7 @@ void SAL_CALL ModuleManager::replaceByName(const ::rtl::OUString& sName ,
     {
         const ::rtl::OUString& sPropName  = pProp->first;
         const css::uno::Any&   aPropValue = pProp->second;
-    
+
         // let "NoSuchElementException" out ! We support the same API ...
         // and without a flush() at the end all changed data before will be ignored !
         xModule->replaceByName(sPropName, aPropValue);
@@ -339,14 +339,14 @@ css::uno::Reference< css::container::XEnumeration > SAL_CALL ModuleManager::crea
         {
             const ::rtl::OUString&                sModule      = lModules[i];
                   ::comphelper::SequenceAsHashMap lModuleProps = getByName(sModule);
-        
+
             if (lModuleProps.match(lSearchProps))
                 lResult.push_back(css::uno::makeAny(lModuleProps.getAsConstPropertyValueList()));
         }
         catch(const css::uno::Exception&)
             {}
     }
-    
+
     ::comphelper::OAnyEnumeration*                      pEnum = new ::comphelper::OAnyEnumeration(lResult.getAsConstList());
     css::uno::Reference< css::container::XEnumeration > xEnum(static_cast< css::container::XEnumeration* >(pEnum), css::uno::UNO_QUERY_THROW);
     return xEnum;
@@ -398,7 +398,7 @@ css::uno::Reference< css::container::XNameAccess > ModuleManager::implts_getConf
     if (xModule.is())
         return xModule->getIdentifier();
 
-    // detect modules in a generic way ...          
+    // detect modules in a generic way ...
     // comparing service names with configured entries ...
     css::uno::Reference< css::lang::XServiceInfo > xInfo(xComponent, css::uno::UNO_QUERY);
     if (!xInfo.is())
@@ -408,7 +408,7 @@ css::uno::Reference< css::container::XNameAccess > ModuleManager::implts_getConf
     const ::rtl::OUString*                      pKnownModules = lKnownModules.getConstArray();
           sal_Int32                             c             = lKnownModules.getLength();
           sal_Int32                             i             = 0;
-      
+
     for (i=0; i<c; ++i)
     {
         if (xInfo->supportsService(pKnownModules[i]))

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 #include "precompiled_sc.hxx"
@@ -57,7 +57,7 @@ using ::sfx2::sidebar::Layouter;
 //////////////////////////////////////////////////////////////////////////////
 // helpers
 
-namespace 
+namespace
 {
     Color GetTransparentColor(void)
     {
@@ -157,7 +157,7 @@ CellAppearancePropertyPanel::CellAppearancePropertyPanel(
     const cssu::Reference<css::frame::XFrame>& rxFrame,
     SfxBindings* pBindings)
 :   Control(
-        pParent, 
+        pParent,
         ScResId(RID_PROPERTYPANEL_SC_APPEAR)),
 
     mpFTFillColor(new FixedText(this, ScResId(FT_BK_COLOR))),
@@ -219,24 +219,24 @@ CellAppearancePropertyPanel::CellAppearancePropertyPanel(
     mnIn(0),
     mnOut(0),
     mnDis(0),
-    mnTLBRIn(0), 
-    mnTLBROut(0), 
+    mnTLBRIn(0),
+    mnTLBROut(0),
     mnTLBRDis(0),
-    mnBLTRIn(0), 
-    mnBLTROut(0), 
+    mnBLTRIn(0),
+    mnBLTROut(0),
     mnBLTRDis(0),
     mbBackColorAvailable(true),
     mbLineColorAvailable(true),
     mbBorderStyleAvailable(true),
-    mbLeft(false), 
-    mbRight(false), 
-    mbTop(false), 
-    mbBottom(false), 
-    mbVer(false), 
+    mbLeft(false),
+    mbRight(false),
+    mbTop(false),
+    mbBottom(false),
+    mbVer(false),
     mbHor(false),
-    mbOuterBorder(false), 
+    mbOuterBorder(false),
     mbInnerBorder(false),
-    mbTLBR(false), 
+    mbTLBR(false),
     mbBLTR(false),
 
     maFillColorPopup(this, ::boost::bind(&CellAppearancePropertyPanel::CreateFillColorPopupControl, this, _1)),
@@ -361,7 +361,7 @@ IMPL_LINK(CellAppearancePropertyPanel, TbxLineColorSelectHdl, ToolBox*, pToolBox
 IMPL_LINK(CellAppearancePropertyPanel, TbxCellBorderSelectHdl, ToolBox*, pToolBox)
 {
 	sal_uInt16 nId = pToolBox->GetCurItemId();
-	
+
     if(nId == TBI_BORDER)
 	{
         // create popup on demand
@@ -369,7 +369,7 @@ IMPL_LINK(CellAppearancePropertyPanel, TbxCellBorderSelectHdl, ToolBox*, pToolBo
         {
             mpCellBorderStylePopup.reset(
                 new CellBorderStylePopup(
-                    this, 
+                    this,
                     ::boost::bind(&CellAppearancePropertyPanel::CreateCellBorderStylePopupControl, this, _1)));
         }
 
@@ -393,7 +393,7 @@ IMPL_LINK(CellAppearancePropertyPanel, TbxLineStyleSelectHdl, ToolBox*, pToolBox
         {
             mpCellLineStylePopup.reset(
                 new CellLineStylePopup(
-                    this, 
+                    this,
                     ::boost::bind(&CellAppearancePropertyPanel::CreateCellLineStylePopupControl, this, _1)));
         }
 
@@ -429,7 +429,7 @@ CellAppearancePropertyPanel* CellAppearancePropertyPanel::Create (
         throw lang::IllegalArgumentException(A2S("no XFrame given to CellAppearancePropertyPanel::Create"), NULL, 1);
     if (pBindings == NULL)
         throw lang::IllegalArgumentException(A2S("no SfxBindings given to CellAppearancePropertyPanel::Create"), NULL, 2);
-    
+
     return new CellAppearancePropertyPanel(
         pParent,
         rxFrame,
@@ -464,9 +464,9 @@ void CellAppearancePropertyPanel::HandleContextChange(
 
 //////////////////////////////////////////////////////////////////////////////
 
-void CellAppearancePropertyPanel::NotifyItemUpdate( 
-    sal_uInt16 nSID, 
-    SfxItemState eState, 
+void CellAppearancePropertyPanel::NotifyItemUpdate(
+    sal_uInt16 nSID,
+    SfxItemState eState,
     const SfxPoolItem* pState,
     const bool bIsEnabled)
 {
@@ -515,7 +515,7 @@ void CellAppearancePropertyPanel::NotifyItemUpdate(
 				    mbLineColorAvailable = true;
 			    //	mpLineColorUpdater->Update(maLineColor);
 			    }
-		        
+
                 UpdateControlState();
                 break;
             }
@@ -552,7 +552,7 @@ void CellAppearancePropertyPanel::NotifyItemUpdate(
 				    mbBorderStyleAvailable = false;
 			    else
 				    mbBorderStyleAvailable = true;
-    		    
+
                 SetStyleIcon();
                 break;
             }
@@ -563,7 +563,7 @@ void CellAppearancePropertyPanel::NotifyItemUpdate(
 		break;
 	case SID_ATTR_BORDER_OUTER:
 		if(eState >= SFX_ITEM_DEFAULT)
-		{ 
+		{
 			const SvxBoxItem* pBoxItem = dynamic_cast< const SvxBoxItem* >(pState);
 
             if(pBoxItem)
@@ -572,13 +572,13 @@ void CellAppearancePropertyPanel::NotifyItemUpdate(
 
 			    if(pBoxItem->GetLeft())
 				    mbLeft = true;
-			
+
                 if(pBoxItem->GetRight())
 				    mbRight = true;
-			
+
                 if(pBoxItem->GetTop())
 				    mbTop = true;
-			
+
                 if(pBoxItem->GetBottom())
 				    mbBottom = true;
 
@@ -586,12 +586,12 @@ void CellAppearancePropertyPanel::NotifyItemUpdate(
 				    mpCellBorderUpdater->UpdateCellBorder(mbTop, mbBottom, mbLeft, mbRight, maIMGCellBorder, mbVer, mbHor);
 			    else
 				    mpCellBorderUpdater->UpdateCellBorder(mbTop, mbBottom, mbRight, mbLeft, maIMGCellBorder, mbVer, mbHor);
-			
+
                 if(mbLeft || mbRight || mbTop || mbBottom)
 				    mbOuterBorder = true;
 			    else
 				    mbOuterBorder = false;
-			
+
                 UpdateControlState();
             }
 		}
@@ -629,12 +629,12 @@ void CellAppearancePropertyPanel::NotifyItemUpdate(
 				    mpCellBorderUpdater->UpdateCellBorder(bTop, bBottom, bLeft, bRight, maIMGCellBorder, mbVer, mbHor);
 			    else
 				    mpCellBorderUpdater->UpdateCellBorder(bTop, bBottom, bRight, bLeft, maIMGCellBorder, mbVer, mbHor);
-			
+
                 if(mbVer || mbHor || bLeft || bRight || bTop || bBottom)
 				    mbInnerBorder = true;
-			    else 
+			    else
 				    mbInnerBorder = false;
-			
+
                 UpdateControlState();
             }
 		}
@@ -744,9 +744,9 @@ void CellAppearancePropertyPanel::NotifyItemUpdate(
 
 //////////////////////////////////////////////////////////////////////////////
 
-SfxBindings* CellAppearancePropertyPanel::GetBindings() 
-{ 
-    return mpBindings; 
+SfxBindings* CellAppearancePropertyPanel::GetBindings()
+{
+    return mpBindings;
 }
 
 //////////////////////////////////////////////////////////////////////////////
@@ -795,7 +795,7 @@ void CellAppearancePropertyPanel::UpdateControlState()
 		{
 			if( maTLBRColor == maBLTRColor)
 				mpLineColorUpdater->Update(maBLTRColor);
-			else 
+			else
 				mpLineColorUpdater->Update(COL_TRANSPARENT);
 		}
 		else if( mbLineColorAvailable && mbTLBR && !mbBLTR )
@@ -839,7 +839,7 @@ void CellAppearancePropertyPanel::UpdateControlState()
 				mnOut = mnTLBROut;
 				mnDis = mnTLBRDis;
 			}
-			else 
+			else
 			{
 				mnIn = 0;
 				mnOut = 0;
@@ -854,7 +854,7 @@ void CellAppearancePropertyPanel::UpdateControlState()
 				mnOut = 0;
 				mnDis = 0;
 			}
-		}	
+		}
 		else if( mbBorderStyleAvailable && !mbTLBR && mbBLTR )
 		{
 			if(  mnBLTRIn != mnIn || mnBLTROut != mnOut || mnBLTRDis != mnDis )

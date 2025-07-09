@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -1925,9 +1925,9 @@ Selection OutlinerView::GetSurroundingTextSelection() const
 
 // returns: true if a word for thesaurus look-up was found at the current cursor position.
 // The status string will be word + iso language string (e.g. "light#en-US")
-bool EDITENG_DLLPUBLIC GetStatusValueForThesaurusFromContext( 
-    String &rStatusVal, 
-    LanguageType &rLang, 
+bool EDITENG_DLLPUBLIC GetStatusValueForThesaurusFromContext(
+    String &rStatusVal,
+    LanguageType &rLang,
     const EditView &rEditView )
 {
     // get text and locale for thesaurus look up
@@ -1938,21 +1938,21 @@ bool EDITENG_DLLPUBLIC GetStatusValueForThesaurusFromContext(
         aTextSel = pEditEngine->GetWord( aTextSel, i18n::WordType::DICTIONARY_WORD );
     aText = pEditEngine->GetText( aTextSel );
     aTextSel.Adjust();
-    LanguageType nLang = pEditEngine->GetLanguage( aTextSel.nStartPara, aTextSel.nStartPos ); 
+    LanguageType nLang = pEditEngine->GetLanguage( aTextSel.nStartPara, aTextSel.nStartPos );
     String aLangText( MsLangId::convertLanguageToIsoString( nLang ) );
-                    
+
     // set word and locale to look up as status value
     String aStatusVal( aText );
     aStatusVal.AppendAscii( "#" );
     aStatusVal += aLangText;
-    
+
     rStatusVal  = aStatusVal;
     rLang       = nLang;
 
     return aText.Len() > 0;
 }
 
-    
+
 void EDITENG_DLLPUBLIC ReplaceTextWithSynonym( EditView &rEditView, const String &rSynonmText )
 {
     // get selection to use
@@ -1968,4 +1968,4 @@ void EDITENG_DLLPUBLIC ReplaceTextWithSynonym( EditView &rEditView, const String
     // replace word ...
     rEditView.InsertText( rSynonmText );
     rEditView.ShowCursor( sal_True, sal_False );
-}    
+}

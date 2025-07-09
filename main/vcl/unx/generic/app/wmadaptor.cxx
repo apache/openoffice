@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -80,7 +80,7 @@ public:
                                  int top_start_x, int top_end_x,
                                  int bottom_start_x, int bottom_end_x ) const;
     virtual void setUserTime( X11SalFrame* i_pFrame, long i_nUserTime ) const;
-    virtual void setFullScreenMonitors( XLIB_Window i_aWindow, sal_Int32 i_nScreen ); 
+    virtual void setFullScreenMonitors( XLIB_Window i_aWindow, sal_Int32 i_nScreen );
 };
 
 class GnomeWMAdaptor : public WMAdaptor
@@ -491,7 +491,7 @@ NetWMAdaptor::NetWMAdaptor( SalDisplay* pSalDisplay ) :
                     // #i80971# protect against invalid atoms
                     if( pAtomNames[i] == NULL )
                         continue;
-                    
+
                     int nProtocol = -1;
                     WMAdaptorProtocol aSearch;
                     aSearch.pProtocol = pAtomNames[i];
@@ -747,7 +747,7 @@ GnomeWMAdaptor::GnomeWMAdaptor( SalDisplay* pSalDisplay ) :
                     // #i80971# protect against invalid atoms
                     if( pAtomNames[i] == NULL )
                         continue;
-                    
+
                     int nProtocol = -1;
                     WMAdaptorProtocol aSearch;
                     aSearch.pProtocol = pAtomNames[i];
@@ -976,7 +976,7 @@ bool WMAdaptor::getWMshouldSwitchWorkspace() const
     if( ! m_bWMshouldSwitchWorkspaceInit )
     {
         WMAdaptor * pWMA = const_cast<WMAdaptor*>(this);
-    
+
         pWMA->m_bWMshouldSwitchWorkspace = true;
         vcl::SettingsConfigItem* pItem = vcl::SettingsConfigItem::get();
         rtl::OUString aSetting( pItem->getValue( rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "WM" ) ),
@@ -1073,7 +1073,7 @@ void GnomeWMAdaptor::initAtoms()
 void WMAdaptor::setWMName( X11SalFrame* pFrame, const String& rWMName ) const
 {
 	ByteString aTitle( rWMName, osl_getThreadTextEncoding() );
-    
+
     if( ! rWMName.Len() && m_aWMName.EqualsAscii( "Dtwm" ) )
         aTitle = " ";
 
@@ -1100,7 +1100,7 @@ void WMAdaptor::setWMName( X11SalFrame* pFrame, const String& rWMName ) const
         static const char* pLang = getenv( "LANG" );
         aWMLocale = pLang ? pLang : "C";
     }
-    
+
     static bool bTrustXmb = true;
     #ifdef SOLARIS
     /* #i64273# there are some weird cases when using IIIMP on Solaris
@@ -1445,13 +1445,13 @@ void WMAdaptor::setFrameTypeAndDecoration( X11SalFrame* pFrame, WMWindowType eTy
             long input_mode;
             unsigned long status;
         } aHint;
-    
+
         aHint.flags = 15; /* flags for functions, decoration, input mode and status */
         aHint.deco = 0;
         aHint.func = 1L << 2;
         aHint.status = 0;
         aHint.input_mode = 0;
-    
+
         // evaluate decoration flags
         if( nDecorationFlags & decoration_All )
             aHint.deco = 1, aHint.func = 1;
@@ -1479,7 +1479,7 @@ void WMAdaptor::setFrameTypeAndDecoration( X11SalFrame* pFrame, WMWindowType eTy
             default:
                 break;
         }
-    
+
         // set the hint
         XChangeProperty( m_pDisplay,
                          pFrame->GetShellWindow(),
@@ -1490,7 +1490,7 @@ void WMAdaptor::setFrameTypeAndDecoration( X11SalFrame* pFrame, WMWindowType eTy
                          (unsigned char*)&aHint,
                          5 );
     }
-     
+
     // set transientFor hint
     /*  #91030# dtwm will not map a dialogue if the transient
      *  window is iconified. This is deemed undesirable because
@@ -2445,7 +2445,7 @@ void NetWMAdaptor::setFrameStruts( X11SalFrame* pFrame,
     nData[11]= bottom_end_x;
     Atom aProperty = None;
     int nSetData = 0;
-    
+
     if( m_aWMAtoms[NET_WM_STRUT_PARTIAL] )
     {
         aProperty = m_aWMAtoms[NET_WM_STRUT_PARTIAL];
@@ -2602,7 +2602,7 @@ void NetWMAdaptor::setFullScreenMonitors( XLIB_Window i_aWindow, sal_Int32 i_nSc
             XChangeProperty( m_pDisplay, i_aWindow,
                              m_aWMAtoms[ NET_WM_FULLSCREEN_MONITORS ],
                              XA_CARDINAL, 32,
-                             PropModeReplace, (unsigned char*)nSpannedMonitors, 4 ); 
+                             PropModeReplace, (unsigned char*)nSpannedMonitors, 4 );
 
         }
     }

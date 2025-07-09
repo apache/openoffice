@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -44,7 +44,7 @@ namespace drawinglayer
 			Primitive2DSequence aRetval;
 
 			// add fill
-			if(!getSdrLFSTAttribute().getFill().isDefault() 
+			if(!getSdrLFSTAttribute().getFill().isDefault()
 				&& getUnitPolyPolygon().isClosed())
 			{
                 // #i108255# no need to use correctOrientations here; target is
@@ -52,10 +52,10 @@ namespace drawinglayer
                 basegfx::B2DPolyPolygon aTransformed(getUnitPolyPolygon());
 
                 aTransformed.transform(getTransform());
-                appendPrimitive2DReferenceToPrimitive2DSequence(aRetval, 
+                appendPrimitive2DReferenceToPrimitive2DSequence(aRetval,
                     createPolyPolygonFillPrimitive(
-                        aTransformed, 
-                        getSdrLFSTAttribute().getFill(), 
+                        aTransformed,
+                        getSdrLFSTAttribute().getFill(),
                         getSdrLFSTAttribute().getFillFloatTransGradient()));
 			}
 
@@ -79,8 +79,8 @@ namespace drawinglayer
 
                     aTransformed.transform(getTransform());
                     aTemp[a] = createPolygonLinePrimitive(
-                        aTransformed, 
-                        getSdrLFSTAttribute().getLine(), 
+                        aTransformed,
+                        getSdrLFSTAttribute().getLine(),
                         getSdrLFSTAttribute().getLineStartEnd());
                 }
 
@@ -90,14 +90,14 @@ namespace drawinglayer
 			// add text
 			if(!getSdrLFSTAttribute().getText().isDefault())
 			{
-				appendPrimitive2DReferenceToPrimitive2DSequence(aRetval, 
+				appendPrimitive2DReferenceToPrimitive2DSequence(aRetval,
                     createTextPrimitive(
-                        getUnitPolyPolygon(), 
-                        getTransform(), 
-                        getSdrLFSTAttribute().getText(), 
-                        getSdrLFSTAttribute().getLine(), 
-                        false, 
-                        false, 
+                        getUnitPolyPolygon(),
+                        getTransform(),
+                        getSdrLFSTAttribute().getText(),
+                        getSdrLFSTAttribute().getLine(),
+                        false,
+                        false,
                         false));
 			}
 
@@ -105,7 +105,7 @@ namespace drawinglayer
 			if(!getSdrLFSTAttribute().getShadow().isDefault())
 			{
                 aRetval = createEmbeddedShadowPrimitive(
-                    aRetval, 
+                    aRetval,
                     getSdrLFSTAttribute().getShadow());
 			}
 
@@ -113,7 +113,7 @@ namespace drawinglayer
 		}
 
 		SdrPathPrimitive2D::SdrPathPrimitive2D(
-			const basegfx::B2DHomMatrix& rTransform, 
+			const basegfx::B2DHomMatrix& rTransform,
 			const attribute::SdrLineFillShadowTextAttribute& rSdrLFSTAttribute,
 			const basegfx::B2DPolyPolygon& rUnitPolyPolygon)
 		:	BufferedDecompositionPrimitive2D(),
@@ -128,7 +128,7 @@ namespace drawinglayer
 			if(BufferedDecompositionPrimitive2D::operator==(rPrimitive))
 			{
 				const SdrPathPrimitive2D& rCompare = (SdrPathPrimitive2D&)rPrimitive;
-				
+
 				return (getUnitPolyPolygon() == rCompare.getUnitPolyPolygon()
 					&& getTransform() == rCompare.getTransform()
 					&& getSdrLFSTAttribute() == rCompare.getSdrLFSTAttribute());

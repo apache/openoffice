@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -647,7 +647,7 @@ void XclExpBooleanCell::WriteContents( XclExpStream& rStrm )
 // ----------------------------------------------------------------------------
 
 //UNUSED2009-05 IMPL_FIXEDMEMPOOL_NEWDEL( XclExpErrorCell, 256, 256 )
-//UNUSED2009-05 
+//UNUSED2009-05
 //UNUSED2009-05 XclExpErrorCell::XclExpErrorCell(
 //UNUSED2009-05         const XclExpRoot rRoot, const XclAddress& rXclPos,
 //UNUSED2009-05         const ScPatternAttr* pPattern, sal_uInt32 nForcedXFId, sal_uInt8 nErrCode ) :
@@ -656,7 +656,7 @@ void XclExpBooleanCell::WriteContents( XclExpStream& rStrm )
 //UNUSED2009-05     mnErrCode( nErrCode )
 //UNUSED2009-05 {
 //UNUSED2009-05 }
-//UNUSED2009-05 
+//UNUSED2009-05
 //UNUSED2009-05 void XclExpErrorCell::SaveXml( XclExpXmlStream& rStrm )
 //UNUSED2009-05 {
 //UNUSED2009-05     sax_fastparser::FSHelperPtr& rWorksheet = rStrm.GetCurrentStream();
@@ -671,7 +671,7 @@ void XclExpBooleanCell::WriteContents( XclExpStream& rStrm )
 //UNUSED2009-05     rWorksheet->endElement( XML_v );
 //UNUSED2009-05     rWorksheet->endElement( XML_c );
 //UNUSED2009-05 }
-//UNUSED2009-05 
+//UNUSED2009-05
 //UNUSED2009-05 void XclExpErrorCell::WriteContents( XclExpStream& rStrm )
 //UNUSED2009-05 {
 //UNUSED2009-05     rStrm << mnErrCode << EXC_BOOLERR_ERROR;
@@ -924,7 +924,7 @@ static const char* lcl_GetErrorString( sal_uInt16 nScErrCode )
         case EXC_ERR_REF:   return "#REF!";
         case EXC_ERR_NAME:  return "#NAME?";
         case EXC_ERR_NUM:   return "#NUM!";
-        case EXC_ERR_NA:    
+        case EXC_ERR_NA:
         default:            return "#N/A";
     }
 }
@@ -1203,9 +1203,9 @@ void XclExpMultiCellBase::SaveXml( XclExpXmlStream& rStrm )
                 for( sal_uInt16 nIdx = 0; nIdx < aIt->mnCount; ++nIdx )
                 {
                     WriteXmlContents(
-                            rStrm, 
-                            XclAddress( static_cast<sal_uInt16>(nBegXclCol + nRelCol), GetXclRow() ), 
-                            aIt->mnXFIndex, 
+                            rStrm,
+                            XclAddress( static_cast<sal_uInt16>(nBegXclCol + nRelCol), GetXclRow() ),
+                            aIt->mnXFIndex,
                             nRelColIdx );
                     ++nRelCol;
                     ++nRelColIdx;
@@ -1658,7 +1658,7 @@ void XclExpColinfo::SaveXml( XclExpXmlStream& rStrm )
             XML_hidden,         XclXmlUtils::ToPsz( ::get_flag( mnFlags, EXC_COLINFO_HIDDEN ) ),
             XML_max,            OString::valueOf( (sal_Int32) (nLastXclCol+1) ).getStr(),
             XML_min,            OString::valueOf( (sal_Int32) (mnFirstXclCol+1) ).getStr(),
-            // OOXTODO: XML_outlineLevel, 
+            // OOXTODO: XML_outlineLevel,
             // OOXTODO: XML_phonetic,
             XML_style,          lcl_GetStyleId( rStrm, maXFId.mnXFIndex ).getStr(),
             XML_width,          OString::valueOf( (double) (mnWidth / 255.0) ).getStr(),
@@ -2272,7 +2272,7 @@ void XclExpRowBuffer::SaveXml( XclExpXmlStream& rStrm )
     }
 }
 
-XclExpDimensions* XclExpRowBuffer::GetDimensions() 
+XclExpDimensions* XclExpRowBuffer::GetDimensions()
 {
     return &maDimensions;
 }
@@ -2359,7 +2359,7 @@ XclExpCellTable::XclExpCellTable( const XclExpRoot& rRoot ) :
     SCCOL nLastIterScCol = nMaxScCol;
     SCROW nLastIterScRow = ulimit_cast< SCROW >( nLastUsedScRow + 128, nMaxScRow );
 	// modified for 119707 by zhanglu
-	
+
 	SCCOL rEndColAtt = 0;
 	SCROW rEndRowAtt = 0;
 	rDoc.GetLastAttrCell( nScTab, rEndColAtt,rEndRowAtt ); // To get the real last cell's row number, which has visual data or attribute.
@@ -2552,7 +2552,7 @@ void XclExpCellTable::Finalize()
     mxDefrowheight->SetDefaultData( aDefRowData );
 }
 
-XclExpRecordRef XclExpCellTable::CreateRecord( sal_uInt16 nRecId ) const 
+XclExpRecordRef XclExpCellTable::CreateRecord( sal_uInt16 nRecId ) const
 {
     XclExpRecordRef xRec;
     switch( nRecId )

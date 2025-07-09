@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -53,7 +53,7 @@ namespace {
 struct FindWeakRef
 {
     const uno::Reference<deployment::XPackage> m_extension;
-    
+
     FindWeakRef( uno::Reference<deployment::XPackage> const & ext): m_extension(ext) {}
     bool operator () (uno::WeakReference< deployment::XPackage >  const & ref);
 };
@@ -349,7 +349,7 @@ void ExtensionBox_Impl::select( sal_Int32 nIndex )
 {
     const ::osl::MutexGuard aGuard( m_entriesMutex );
     checkIndex( nIndex );
-    selectEntry( nIndex );   
+    selectEntry( nIndex );
 }
 
 //------------------------------------------------------------------------------
@@ -397,7 +397,7 @@ void ExtensionBox_Impl::CalcActiveHeight( const long nPos )
     if ( aText.getLength() )
         aText += OUSTR("\n");
     aText += m_vEntries[ nPos ]->m_sDescription;
-    
+
     Rectangle aRect = GetTextRect( Rectangle( Point(), aSize ), aText,
                                    TEXT_DRAW_MULTILINE | TEXT_DRAW_WORDBREAK );
     aTextHeight += aRect.GetHeight();
@@ -470,10 +470,10 @@ void ExtensionBox_Impl::DeleteRemoved()
 void ExtensionBox_Impl::selectEntry( const long nPos )
 {
     //ToDo whe should not use the guard at such a big scope here.
-    //Currently it is used to gard m_vEntries and m_nActive. m_nActive will be 
+    //Currently it is used to gard m_vEntries and m_nActive. m_nActive will be
     //modified in this function.
     //It would be probably best to always use a copy of m_vEntries
-    //and some other state variables from ExtensionBox_Impl for 
+    //and some other state variables from ExtensionBox_Impl for
     //the whole painting operation. See issue i86993
     ::osl::ClearableMutexGuard guard(m_entriesMutex);
 
@@ -663,7 +663,7 @@ void ExtensionBox_Impl::DrawRow( const Rectangle& rRect, const TEntry_Impl pEntr
         aPos = rRect.TopRight() + Point( -(RIGHT_ICON_OFFSET + SPACE_BETWEEN + 2*SMALL_ICON_SIZE), TOP_OFFSET );
         DrawImage( aPos, Size( SMALL_ICON_SIZE, SMALL_ICON_SIZE ), isHCMode() ? m_aWarningImageHC : m_aWarningImage );
     }
-    
+
     SetLineColor( Color( COL_LIGHTGRAY ) );
     DrawLine( rRect.BottomLeft(), rRect.BottomRight() );
 }
@@ -1093,7 +1093,7 @@ void ExtensionBox_Impl::updateEntry( const uno::Reference< deployment::XPackage 
 //------------------------------------------------------------------------------
 //This function is also called as a result of removing an extension.
 //see PackageManagerImpl::removePackage
-//The gui is a registered as listener on the package. Removing it will cause the 
+//The gui is a registered as listener on the package. Removing it will cause the
 //listeners to be notified an then this function is called. At this moment xPackage
 //is in the disposing state and all calls on it may result in a DisposedException.
 void ExtensionBox_Impl::removeEntry( const uno::Reference< deployment::XPackage > &xPackage )
@@ -1111,14 +1111,14 @@ void ExtensionBox_Impl::removeEntry( const uno::Reference< deployment::XPackage 
                 long nPos = iIndex - m_vEntries.begin();
 
                 // Entries mustn't removed here, because they contain a hyperlink control
-                // which can only be deleted when the thread has the solar mutex. Therefor 
+                // which can only be deleted when the thread has the solar mutex. Therefor
                 // the entry will be moved into the m_vRemovedEntries list which will be
                 // cleared on the next paint event
                 m_vRemovedEntries.push_back( *iIndex );
                 (*iIndex)->m_xPackage->removeEventListener(
                     uno::Reference<lang::XEventListener>(m_xRemoveListener, uno::UNO_QUERY));
                 m_vEntries.erase( iIndex );
-                
+
                 m_bNeedsRecalc = true;
 
                 if ( IsReallyVisible() )
@@ -1188,7 +1188,7 @@ void ExtensionBox_Impl::checkEntries()
     long nNewPos = -1;
     long nPos = 0;
     bool bNeedsUpdate = false;
-    
+
     ::osl::ClearableMutexGuard guard(m_entriesMutex);
     typedef std::vector< TEntry_Impl >::iterator ITER;
     ITER iIndex = m_vEntries.begin();

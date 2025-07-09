@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -409,7 +409,7 @@ namespace drawinglayer
 				}
 			}
 
-            // #122923# do no longer add Alpha channel here; the right place to do this is when really 
+            // #122923# do no longer add Alpha channel here; the right place to do this is when really
             // the own transformer is used (see OutputDevice::DrawTransformedBitmapEx).
 
             // draw using OutputDevice'sDrawTransformedBitmapEx
@@ -436,9 +436,9 @@ namespace drawinglayer
                 //
                 // when graphic is animated, force decomposition to use the correct graphic, else
                 // fill style will not be animated
-                if(GRAPHIC_BITMAP == rFillGraphicAttribute.getGraphic().GetType() 
+                if(GRAPHIC_BITMAP == rFillGraphicAttribute.getGraphic().GetType()
                     && !rFillGraphicAttribute.getGraphic().getSvgData().get()
-                    && !rFillGraphicAttribute.getGraphic().IsAnimated()) 
+                    && !rFillGraphicAttribute.getGraphic().IsAnimated())
                 {
 				    // decompose matrix to check for shear, rotate and mirroring
 				    basegfx::B2DHomMatrix aLocalTransform(maCurrentTransformation * rFillBitmapCandidate.getTransformation());
@@ -577,7 +577,7 @@ namespace drawinglayer
                                         // offset in X, so iterate over Y first and draw lines
                                         for(sal_Int32 nYPos(nBTop); nYPos < nOTop + nOHeight; nYPos += nBHeight, nPosY++)
                                         {
-                                            for(sal_Int32 nXPos(nPosY % 2 ? nBLeft - nBWidth + nOffsetX : nBLeft); 
+                                            for(sal_Int32 nXPos(nPosY % 2 ? nBLeft - nBWidth + nOffsetX : nBLeft);
                                                 nXPos < nOLeft + nOWidth; nXPos += nBWidth)
                                             {
                                                 const Rectangle aOutRectPixel(Point(nXPos, nYPos), aNeededBitmapSizePixel);
@@ -604,7 +604,7 @@ namespace drawinglayer
                                         // possible offset in Y, so iterate over X first and draw columns
                                         for(sal_Int32 nXPos(nBLeft); nXPos < nOLeft + nOWidth; nXPos += nBWidth, nPosX++)
                                         {
-                                            for(sal_Int32 nYPos(nPosX % 2 ? nBTop - nBHeight + nOffsetY : nBTop); 
+                                            for(sal_Int32 nYPos(nPosX % 2 ? nBTop - nBHeight + nOffsetY : nBTop);
                                                 nYPos < nOTop + nOHeight; nYPos += nBHeight)
                                             {
                                                 const Rectangle aOutRectPixel(Point(nXPos, nYPos), aNeededBitmapSizePixel);
@@ -711,9 +711,9 @@ namespace drawinglayer
                                         // now clip the object polyPolygon against the tile range
                                         // to get the common area
                                         basegfx::B2DPolyPolygon aTarget = basegfx::tools::clipPolyPolygonOnRange(
-                                            rPolyPolygon, 
-                                            aTileRange, 
-                                            true, 
+                                            rPolyPolygon,
+                                            aTileRange,
+                                            true,
                                             false);
 
                                         if(aTarget.count())
@@ -1077,22 +1077,22 @@ namespace drawinglayer
                             for(sal_uInt32 a(0); a < nCount; a++)
                             {
                                 basegfx::B2DPolygon aCandidate(aHairlinePolyPolygon.getB2DPolygon(a));
-                            
+
                                 aMat.set(0, 2, -fHalfDistance);
                                 aMat.set(1, 2, -fHalfDistance);
                                 aCandidate.transform(aMat);
                                 mpOutputDevice->DrawPolyLine(aCandidate, 0.0);
-                                
+
                                 aMat.set(0, 2, fDistance);
                                 aMat.set(1, 2, 0.0);
                                 aCandidate.transform(aMat);
                                 mpOutputDevice->DrawPolyLine(aCandidate, 0.0);
-                                
+
                                 aMat.set(0, 2, 0.0);
                                 aMat.set(1, 2, fDistance);
                                 aCandidate.transform(aMat);
                                 mpOutputDevice->DrawPolyLine(aCandidate, 0.0);
-                                
+
                                 aMat.set(0, 2, -fDistance);
                                 aMat.set(1, 2, 0.0);
                                 aCandidate.transform(aMat);
@@ -1118,17 +1118,17 @@ namespace drawinglayer
                                 aMat.set(1, 2, 0.0);
                                 aCandidate.transform(aMat);
                                 mpOutputDevice->DrawPolyLine(aCandidate, 0.0);
-                            
+
                                 aMat.set(0, 2, fDistance);
                                 aMat.set(1, 2, -fDistance);
                                 aCandidate.transform(aMat);
                                 mpOutputDevice->DrawPolyLine(aCandidate, 0.0);
-                            
+
                                 aMat.set(0, 2, fDistance);
                                 aMat.set(1, 2, fDistance);
                                 aCandidate.transform(aMat);
                                 mpOutputDevice->DrawPolyLine(aCandidate, 0.0);
-                            
+
                                 aMat.set(0, 2, -fDistance);
                                 aMat.set(1, 2, fDistance);
                                 aCandidate.transform(aMat);
@@ -1164,23 +1164,23 @@ namespace drawinglayer
                                 basegfx::B2DHomMatrix aMat;
 
                                 mpOutputDevice->DrawPolyLine(aCandidate, 0.0);
-                            
+
                                 aMat.set(0, 2, 1.0);
                                 aMat.set(1, 2, 0.0);
                                 aCandidate.transform(aMat);
-                            
+
                                 mpOutputDevice->DrawPolyLine(aCandidate, 0.0);
-                            
+
                                 aMat.set(0, 2, 0.0);
                                 aMat.set(1, 2, 1.0);
                                 aCandidate.transform(aMat);
-                            
+
                                 mpOutputDevice->DrawPolyLine(aCandidate, 0.0);
-                            
+
                                 aMat.set(0, 2, -1.0);
                                 aMat.set(1, 2, 0.0);
                                 aCandidate.transform(aMat);
-                            
+
                                 mpOutputDevice->DrawPolyLine(aCandidate, 0.0);
                             }
 
@@ -1201,8 +1201,8 @@ namespace drawinglayer
                         for(sal_uInt32 a(0); a < nCount; a++)
                         {
                             mpOutputDevice->DrawPolyLine(
-                                aHairlinePolyPolygon.getB2DPolygon(a), 
-                                fDiscreteLineWidth, 
+                                aHairlinePolyPolygon.getB2DPolygon(a),
+                                fDiscreteLineWidth,
                                 rLineAttribute.getLineJoin(),
                                 rLineAttribute.getLineCap());
                         }
@@ -1286,9 +1286,9 @@ namespace drawinglayer
                 const basegfx::B2DPolygon aPolygon(
                     basegfx::tools::createPolygonFromRect(
                         basegfx::B2DRange(
-                            rCandidate.getOffsetA() - fDiscreteUnit, 
-                            0.0, 
-                            rCandidate.getOffsetA() + (fDelta / nSteps) + fDiscreteUnit, 
+                            rCandidate.getOffsetA() - fDiscreteUnit,
+                            0.0,
+                            rCandidate.getOffsetA() + (fDelta / nSteps) + fDiscreteUnit,
                             1.0)));
 
 
@@ -1340,8 +1340,8 @@ namespace drawinglayer
                     {
                         const basegfx::B2DVector aTranslate(
                             basegfx::interpolate(
-                                rCandidate.getTranslateB(), 
-                                rCandidate.getTranslateA(), 
+                                rCandidate.getTranslateB(),
+                                rCandidate.getTranslateA(),
                                 fUnitScale));
 
                         aTransform = basegfx::tools::createScaleTranslateB2DHomMatrix(
@@ -1358,7 +1358,7 @@ namespace drawinglayer
                     }
 
                     basegfx::B2DPolygon aNew(basegfx::tools::createPolygonFromUnitCircle());
-                    
+
                     aNew.transform(maCurrentTransformation * aTransform);
                     mpOutputDevice->SetFillColor(Color(basegfx::interpolate(aColorB, aColorA, fUnitScale)));
                     mpOutputDevice->DrawPolyPolygon(basegfx::B2DPolyPolygon(aNew));

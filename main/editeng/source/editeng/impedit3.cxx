@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -153,16 +153,16 @@ sal_uInt8 GetCharTypeForCompression( xub_Unicode cChar )
     }
 }
 
-void lcl_DrawRedLines( 
-    OutputDevice* pOutDev, 
-    long nFontHeight, 
-    const Point& rPnt, 
-    sal_uInt16 nIndex, 
-    sal_uInt16 nMaxEnd, 
-    const sal_Int32* pDXArray, 
-    WrongList* pWrongs, 
-    short nOrientation, 
-    const Point& rOrigin, 
+void lcl_DrawRedLines(
+    OutputDevice* pOutDev,
+    long nFontHeight,
+    const Point& rPnt,
+    sal_uInt16 nIndex,
+    sal_uInt16 nMaxEnd,
+    const sal_Int32* pDXArray,
+    WrongList* pWrongs,
+    short nOrientation,
+    const Point& rOrigin,
     sal_Bool bVertical,
     sal_Bool bIsRightToLeft )
 {
@@ -338,7 +338,7 @@ IMPL_LINK_INLINE_START( ImpEditEngine, IdleFormatHdl, Timer *, EMPTYARG )
     // #i97146# check if that view is still available
     // else probably the idle format timer fired while we're already
     // downing
-    EditView* pView = aIdleFormatter.GetView();    
+    EditView* pView = aIdleFormatter.GetView();
     for( sal_uInt16 nView = 0; nView < aEditViews.Count(); nView++ )
     {
         if( aEditViews[nView] == pView )
@@ -3330,7 +3330,7 @@ void ImpEditEngine::Paint( OutputDevice* pOutDev, Rectangle aClipRec, Point aSta
                                         &aLocale,
                                         aOverlineColor,
                                         aTextLineColor);
-                                    
+
                                     // #108052# remember that EOP is written already for this ParaPortion
                                     if(bEndOfParagraph)
                                     {
@@ -3668,8 +3668,8 @@ void ImpEditEngine::Paint( OutputDevice* pOutDev, Rectangle aClipRec, Point aSta
             {
                 const Color aOverlineColor(pOutDev->GetOverlineColor());
                 const Color aTextLineColor(pOutDev->GetTextLineColor());
-                        
-				GetEditEnginePtr()->DrawingText( 
+
+				GetEditEnginePtr()->DrawingText(
 					aTmpPos, String(), 0, 0, 0,
                     aTmpFont, n, nIndex, 0,
                     0,
@@ -4475,7 +4475,7 @@ void ImpEditEngine::ImplInitDigitMode( OutputDevice* pOutDev, String* pString, x
                 break;
             case LANGUAGE_URDU          & LANGUAGE_MASK_PRIMARY:
             case LANGUAGE_PUNJABI       & LANGUAGE_MASK_PRIMARY: //???
-            case LANGUAGE_SINDHI        & LANGUAGE_MASK_PRIMARY:    
+            case LANGUAGE_SINDHI        & LANGUAGE_MASK_PRIMARY:
                 nOffset = 0x06F0 - '0';  // eastern arabic-indic digits
                 break;
         }

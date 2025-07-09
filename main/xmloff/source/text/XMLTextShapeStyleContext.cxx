@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -109,7 +109,7 @@ SvXMLImportContext *XMLTextShapePropertySetContext_Impl::CreateChildContext(
 
 	case CTF_BACKGROUND_URL:
 		DBG_ASSERT( rProp.mnIndex >= 3 &&
-					CTF_BACKGROUND_TRANSPARENCY == 
+					CTF_BACKGROUND_TRANSPARENCY ==
                         mxMapper->getPropertySetMapper()
 						->GetEntryContextId( rProp.mnIndex-3 ) &&
 					CTF_BACKGROUND_POS  == mxMapper->getPropertySetMapper()
@@ -117,7 +117,7 @@ SvXMLImportContext *XMLTextShapePropertySetContext_Impl::CreateChildContext(
 					CTF_BACKGROUND_FILTER  == mxMapper->getPropertySetMapper()
 						->GetEntryContextId( rProp.mnIndex-1 ),
 					"invalid property map!");
-		pContext = 
+		pContext =
 			new XMLBackgroundImageContext( GetImport(), nPrefix,
 										   rLocalName, xAttrList,
 										   rProp,
@@ -127,15 +127,15 @@ SvXMLImportContext *XMLTextShapePropertySetContext_Impl::CreateChildContext(
 										   rProperties );
 		break;
 	}
-	
+
 	if( !pContext )
 		pContext = XMLShapePropertySetContext::CreateChildContext(
 						nPrefix, rLocalName, xAttrList, rProperties, rProp );
-	
+
 	return pContext;
 }
 
-//----------------------------------------------------------------------------- 
+//-----------------------------------------------------------------------------
 
 void XMLTextShapeStyleContext::SetAttribute( sal_uInt16 nPrefixKey,
 										const OUString& rLocalName,
@@ -192,7 +192,7 @@ SvXMLImportContext *XMLTextShapeStyleContext::CreateChildContext(
 			UniReference < SvXMLImportPropertyMapper > xImpPrMap =
 				GetStyles()->GetImportPropertyMapper( GetFamily() );
 			if( xImpPrMap.is() )
-			{		
+			{
 				pContext = new XMLTextShapePropertySetContext_Impl(
 						GetImport(), nPrefix, rLocalName, xAttrList, nFamily,
 						GetProperties(), xImpPrMap );
@@ -202,13 +202,13 @@ SvXMLImportContext *XMLTextShapeStyleContext::CreateChildContext(
 	else if ( (XML_NAMESPACE_OFFICE == nPrefix) &&
 			  IsXMLToken( rLocalName, XML_EVENT_LISTENERS ) )
 	{
-		// create and remember events import context 
+		// create and remember events import context
 		// (for delayed processing of events)
 		pContext = new XMLEventsImportContext( GetImport(), nPrefix,
 												   rLocalName);
 		xEventContext = pContext;
 	}
-		
+
 	if( !pContext )
 		pContext = XMLShapeStyleContext::CreateChildContext( nPrefix, rLocalName,
 														  xAttrList );
@@ -222,7 +222,7 @@ void XMLTextShapeStyleContext::CreateAndInsert( sal_Bool bOverwrite )
 	Reference < XStyle > xStyle = GetStyle();
 	if( !xStyle.is() || !(bOverwrite || IsNew()) )
 		return;
-	
+
 	Reference < XPropertySet > xPropSet( xStyle, UNO_QUERY );
 	Reference< XPropertySetInfo > xPropSetInfo =
 				xPropSet->getPropertySetInfo();

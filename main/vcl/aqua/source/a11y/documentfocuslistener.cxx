@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,20 +7,20 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
- 
+
 #include "documentfocuslistener.hxx"
 
 #ifndef _COM_SUN_STAR_ACCESSIBILITY_XACCESSIBLEEVENTBROADCASTER_HPP_
@@ -34,16 +34,16 @@
 #ifndef _COM_SUN_STAR_ACCESSIBILITY_ACCESSIBLESTATETYPE_HPP_
 #include <com/sun/star/accessibility/AccessibleStateType.hpp>
 #endif
- 
+
 using namespace ::com::sun::star::accessibility;
 using namespace ::com::sun::star::lang;
 using namespace ::com::sun::star::uno;
- 
+
 
 //------------------------------------------------------------------------------
 
 DocumentFocusListener::DocumentFocusListener(AquaA11yFocusTracker& rTracker) :
-    m_aFocusTracker(rTracker)    
+    m_aFocusTracker(rTracker)
 {
 }
 
@@ -53,7 +53,7 @@ void SAL_CALL
 DocumentFocusListener::disposing( const EventObject& aEvent )
     throw (RuntimeException)
 {
-	// Unref the object here, but do not remove as listener since the object 
+	// Unref the object here, but do not remove as listener since the object
     // might no longer be in a state that safely allows this.
     if( aEvent.Source.is() )
         m_aRefList.erase(aEvent.Source);
@@ -61,8 +61,8 @@ DocumentFocusListener::disposing( const EventObject& aEvent )
 
 //------------------------------------------------------------------------------
 
-void SAL_CALL 
-DocumentFocusListener::notifyEvent( const AccessibleEventObject& aEvent ) 
+void SAL_CALL
+DocumentFocusListener::notifyEvent( const AccessibleEventObject& aEvent )
     throw( RuntimeException )
 {
     try {
@@ -72,23 +72,23 @@ DocumentFocusListener::notifyEvent( const AccessibleEventObject& aEvent )
             {
                 sal_Int16 nState = AccessibleStateType::INVALID;
                 aEvent.NewValue >>= nState;
-            
+
                 if( AccessibleStateType::FOCUSED == nState )
                     m_aFocusTracker.setFocusedObject( getAccessible(aEvent) );
             }
             break;
-            
+
             case AccessibleEventId::CHILD:
             {
                 Reference< XAccessible > xChild;
                 if( (aEvent.OldValue >>= xChild) && xChild.is() )
                     detachRecursive(xChild);
-            
+
                 if( (aEvent.NewValue >>= xChild) && xChild.is() )
                     attachRecursive(xChild);
             }
             break;
-            
+
             case AccessibleEventId::INVALIDATE_ALL_CHILDREN:
             {
                 Reference< XAccessible > xAccessible( getAccessible(aEvent) );
@@ -114,10 +114,10 @@ Reference< XAccessible > DocumentFocusListener::getAccessible(const EventObject&
     throw (IndexOutOfBoundsException, RuntimeException)
 {
     Reference< XAccessible > xAccessible(aEvent.Source, UNO_QUERY);
-    
+
     if( xAccessible.is() )
         return xAccessible;
-    
+
     Reference< XAccessibleContext > xContext(aEvent.Source, UNO_QUERY);
 
     if( xContext.is() )
@@ -132,13 +132,13 @@ Reference< XAccessible > DocumentFocusListener::getAccessible(const EventObject&
             }
         }
     }
-    
+
     return Reference< XAccessible >();
 }
 
 //------------------------------------------------------------------------------
 
-void DocumentFocusListener::attachRecursive(const Reference< XAccessible >& xAccessible) 
+void DocumentFocusListener::attachRecursive(const Reference< XAccessible >& xAccessible)
 	throw (IndexOutOfBoundsException, RuntimeException)
 {
     Reference< XAccessibleContext > xContext = xAccessible->getAccessibleContext();
@@ -150,8 +150,8 @@ void DocumentFocusListener::attachRecursive(const Reference< XAccessible >& xAcc
 //------------------------------------------------------------------------------
 
 void DocumentFocusListener::attachRecursive(
-    const Reference< XAccessible >& xAccessible, 
-    const Reference< XAccessibleContext >& xContext 
+    const Reference< XAccessible >& xAccessible,
+    const Reference< XAccessibleContext >& xContext
 )  throw (IndexOutOfBoundsException, RuntimeException)
 {
     if( xContext.is() )
@@ -166,13 +166,13 @@ void DocumentFocusListener::attachRecursive(
 //------------------------------------------------------------------------------
 
 void DocumentFocusListener::attachRecursive(
-    const Reference< XAccessible >& xAccessible, 
+    const Reference< XAccessible >& xAccessible,
     const Reference< XAccessibleContext >& xContext,
-    const Reference< XAccessibleStateSet >& xStateSet 
+    const Reference< XAccessibleStateSet >& xStateSet
 ) throw (IndexOutOfBoundsException,RuntimeException)
 {
     if( xStateSet->contains(AccessibleStateType::FOCUSED ) )
-        m_aFocusTracker.setFocusedObject( xAccessible );       
+        m_aFocusTracker.setFocusedObject( xAccessible );
 
     Reference< XAccessibleEventBroadcaster > xBroadcaster =
         Reference< XAccessibleEventBroadcaster >(xContext, UNO_QUERY);
@@ -188,7 +188,7 @@ void DocumentFocusListener::attachRecursive(
             for( n = 0; n < nmax; n++ )
             {
                 Reference< XAccessible > xChild( xContext->getAccessibleChild( n ) );
-            
+
                 if( xChild.is() )
                     attachRecursive(xChild);
             }
@@ -198,7 +198,7 @@ void DocumentFocusListener::attachRecursive(
 
 //------------------------------------------------------------------------------
 
-void DocumentFocusListener::detachRecursive(const Reference< XAccessible >& xAccessible) 
+void DocumentFocusListener::detachRecursive(const Reference< XAccessible >& xAccessible)
     throw (IndexOutOfBoundsException, RuntimeException)
 {
     Reference< XAccessibleContext > xContext = xAccessible->getAccessibleContext();
@@ -210,8 +210,8 @@ void DocumentFocusListener::detachRecursive(const Reference< XAccessible >& xAcc
 //------------------------------------------------------------------------------
 
 void DocumentFocusListener::detachRecursive(
-    const Reference< XAccessible >& xAccessible, 
-    const Reference< XAccessibleContext >& xContext 
+    const Reference< XAccessible >& xAccessible,
+    const Reference< XAccessibleContext >& xContext
 )  throw (IndexOutOfBoundsException, RuntimeException)
 {
     Reference< XAccessibleStateSet > xStateSet = xContext->getAccessibleStateSet();
@@ -223,9 +223,9 @@ void DocumentFocusListener::detachRecursive(
 //------------------------------------------------------------------------------
 
 void DocumentFocusListener::detachRecursive(
-    const Reference< XAccessible >&, 
+    const Reference< XAccessible >&,
     const Reference< XAccessibleContext >& xContext,
-    const Reference< XAccessibleStateSet >& xStateSet 
+    const Reference< XAccessibleStateSet >& xStateSet
 ) throw (IndexOutOfBoundsException, RuntimeException)
 {
     Reference< XAccessibleEventBroadcaster > xBroadcaster =
@@ -234,17 +234,17 @@ void DocumentFocusListener::detachRecursive(
     if( xBroadcaster.is() && 0 < m_aRefList.erase(xBroadcaster) )
     {
         xBroadcaster->removeEventListener(static_cast< XAccessibleEventListener *>(this));
-        
+
         if( ! xStateSet->contains(AccessibleStateType::MANAGES_DESCENDANTS ) )
         {
             sal_Int32 n, nmax = xContext->getAccessibleChildCount();
             for( n = 0; n < nmax; n++ )
             {
                 Reference< XAccessible > xChild( xContext->getAccessibleChild( n ) );
-            
+
                 if( xChild.is() )
                     detachRecursive(xChild);
             }
         }
-    }   
+    }
 }

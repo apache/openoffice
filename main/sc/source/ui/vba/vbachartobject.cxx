@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 #include "vbachart.hxx"
@@ -36,7 +36,7 @@ const rtl::OUString PERSIST_NAME( RTL_CONSTASCII_USTRINGPARAM("PersistName") );
 
 ScVbaChartObject::ScVbaChartObject( const css::uno::Reference< ov::XHelperInterface >& _xParent, const css::uno::Reference< css::uno::XComponentContext >& _xContext, const css::uno::Reference< css::table::XTableChart >& _xTableChart, const css::uno::Reference< css::drawing::XDrawPageSupplier >& _xDrawPageSupplier ) : ChartObjectImpl_BASE( _xParent, _xContext ), xTableChart( _xTableChart ), xDrawPageSupplier( _xDrawPageSupplier )
 {
-    xDrawPage = xDrawPageSupplier->getDrawPage();        
+    xDrawPage = xDrawPageSupplier->getDrawPage();
     xEmbeddedObjectSupplier.set( xTableChart, uno::UNO_QUERY_THROW );
     xNamed.set( xTableChart, uno::UNO_QUERY_THROW );
     sPersistName = getPersistName();
@@ -54,7 +54,7 @@ rtl::OUString ScVbaChartObject::getPersistName()
 	return sPersistName;
 }
 
-uno::Reference< drawing::XShape > 
+uno::Reference< drawing::XShape >
 ScVbaChartObject::setShape() throw ( script::BasicErrorException )
 {
 	try
@@ -83,13 +83,13 @@ ScVbaChartObject::setShape() throw ( script::BasicErrorException )
 	return NULL;
 }
 
-void SAL_CALL 
+void SAL_CALL
 ScVbaChartObject::setName( const rtl::OUString& sName ) throw (css::uno::RuntimeException)
 {
 	xNamedShape->setName(sName);
 }
 
-::rtl::OUString SAL_CALL 
+::rtl::OUString SAL_CALL
 ScVbaChartObject::getName() throw (css::uno::RuntimeException)
 {
 	return xNamedShape->getName();
@@ -102,19 +102,19 @@ ScVbaChartObject::Delete() throw ( css::script::BasicErrorException )
 	uno::Reference< excel::XWorksheet > xParent( getParent(), uno::UNO_QUERY_THROW );
 	uno::Reference< excel::XChartObjects > xColl( xParent->ChartObjects( uno::Any() ), uno::UNO_QUERY_THROW );
 	ScVbaChartObjects* pChartObjectsImpl = static_cast< ScVbaChartObjects* >( xColl.get() );
-	if (pChartObjectsImpl) 
+	if (pChartObjectsImpl)
 		pChartObjectsImpl->removeByName( getPersistName() );
-	else 
+	else
 		throw script::BasicErrorException( rtl::OUString(), uno::Reference< uno::XInterface >(), SbERR_METHOD_FAILED, rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "Parent is not ChartObjects" ) ) );
 }
-    
-void 
+
+void
 ScVbaChartObject::Activate() throw ( script::BasicErrorException )
 {
 	try
 	{
 		// #TODO #FIXME should be ThisWorkbook or equivalent, or in
-		// fact probably the chart object should be created with 
+		// fact probably the chart object should be created with
 		// the XModel owner
 		//uno::Reference< view::XSelectionSupplier > xSelectionSupplier( getXModel().getCurrentController());
 		uno::Reference< view::XSelectionSupplier > xSelectionSupplier( getCurrentExcelDoc(mxContext)->getCurrentController(), uno::UNO_QUERY_THROW );
@@ -126,20 +126,20 @@ ScVbaChartObject::Activate() throw ( script::BasicErrorException )
 	}
 }
 
-uno::Reference< excel::XChart > SAL_CALL 
+uno::Reference< excel::XChart > SAL_CALL
 ScVbaChartObject::getChart() throw (css::uno::RuntimeException)
 {
 	return new ScVbaChart( this, mxContext, xEmbeddedObjectSupplier->getEmbeddedObject(), xTableChart );
 }
 
-rtl::OUString& 
+rtl::OUString&
 ScVbaChartObject::getServiceImplName()
 {
 	static rtl::OUString sImplName( RTL_CONSTASCII_USTRINGPARAM("ScVbaChartObject") );
 	return sImplName;
 }
 
-uno::Sequence< rtl::OUString > 
+uno::Sequence< rtl::OUString >
 ScVbaChartObject::getServiceNames()
 {
 	static uno::Sequence< rtl::OUString > aServiceNames;
@@ -151,56 +151,56 @@ ScVbaChartObject::getServiceNames()
 	return aServiceNames;
 }
 
-double 
+double
 ScVbaChartObject::getHeight()
 {
 	return oShapeHelper->getHeight();
 }
 
-void 
+void
 ScVbaChartObject::setHeight(double _fheight) throw ( script::BasicErrorException )
 {
 	oShapeHelper->setHeight(_fheight);
 }
-    
-double 
+
+double
 ScVbaChartObject::getWidth()
 {
         return oShapeHelper->getWidth();
 }
 
-void 
+void
 ScVbaChartObject::setWidth(double _fWidth) throw ( script::BasicErrorException )
 {
 	oShapeHelper->setWidth(_fWidth);
 }
-    
-double 
+
+double
 ScVbaChartObject::getLeft()
 {
         return oShapeHelper->getLeft();
 }
 
-void 
+void
 ScVbaChartObject::setLeft(double _fLeft)
 {
 	oShapeHelper->setLeft(_fLeft);
 }
-    
-double 
+
+double
 ScVbaChartObject::getTop()
 {
         return oShapeHelper->getTop();
-}    
+}
 
-void 
+void
 ScVbaChartObject::setTop(double _fTop)
 {
 	oShapeHelper->setTop(_fTop);
 }
 
-uno::Reference< uno::XInterface > 
-ScVbaChartObject::getUnoObject() throw (script::BasicErrorException) 
+uno::Reference< uno::XInterface >
+ScVbaChartObject::getUnoObject() throw (script::BasicErrorException)
 {
 	return uno::Reference< uno::XInterface >( xShape, uno::UNO_QUERY );
 }

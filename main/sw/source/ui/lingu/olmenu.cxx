@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -219,7 +219,7 @@ void SwSpellPopup::fillLangPopupMenu(
         return;
 
     SvtLanguageTable    aLanguageTable;
-    
+
     // set of languages to be displayed in the sub menus
     std::set< OUString > aLangItems;
 
@@ -435,7 +435,7 @@ bGrammarResults(false)
 
             pMenu->InsertItem( nAutoCorrItemId, aEntry );
             pMenu->SetHelpId( nAutoCorrItemId, HID_LINGU_AUTOCORR);
-            
+
             ++nAutoCorrItemId;
             ++nItemId;
 		}
@@ -568,7 +568,7 @@ bGrammarResults(false)
     SetItemImage( MN_SPELLING_DLG, rImg );
 
     //////////////////////////////////////////////////////////////////////////////////
-    
+
     RemoveDisabledEntries( sal_True, sal_True );
 }
 
@@ -765,7 +765,7 @@ void SwSpellPopup::Execute( sal_uInt16 nId )
             pSh->DelLeft();
 
             pSh->Insert( aTmp );
-            
+
             /* #102505# EndAction/EndUndo moved down since insertion
                of temporary auto correction is now undoable two and
                must reside in the same undo group.*/
@@ -802,23 +802,23 @@ void SwSpellPopup::Execute( sal_uInt16 nId )
             pSh->GetView().GetViewFrame()->GetDispatcher()->
                 Execute( FN_SPELL_GRAMMAR_DIALOG, SFX_CALLMODE_ASYNCHRON );
         }
-    }    
+    }
     else if (nId == MN_IGNORE_SELECTION)
     {
         SwPaM *pPaM = pSh->GetCrsr();
         if (pPaM)
             pSh->IgnoreGrammarErrorAt( *pPaM );
-    }    
+    }
     else if (nId == MN_IGNORE_WORD)
     {
         uno::Reference< linguistic2::XDictionary > xDictionary( SvxGetIgnoreAllList(), uno::UNO_QUERY );
         linguistic::AddEntryToDic( xDictionary,
                 xSpellAlt->getWord(), sal_False, aEmptyStr, LANGUAGE_NONE );
-    }    
+    }
     else if (MN_DICTIONARIES_START <= nId && nId <= MN_DICTIONARIES_END)
     {
             OUString aWord( xSpellAlt->getWord() );
-            
+
             PopupMenu *pMenu = GetPopupMenu(MN_ADD_TO_DIC);
             String aDicName ( pMenu->GetItemText(nId) );
 
@@ -843,18 +843,18 @@ void SwSpellPopup::Execute( sal_uInt16 nId )
                         nAddRes );
                 }
             }
-    }    
-    else 
+    }
+    else
     {
         // Set language for selection or for paragraph...
-        
+
         SfxItemSet aCoreSet( pSh->GetView().GetPool(),
                     RES_CHRATR_LANGUAGE,        RES_CHRATR_LANGUAGE,
                     RES_CHRATR_CJK_LANGUAGE,    RES_CHRATR_CJK_LANGUAGE,
                     RES_CHRATR_CTL_LANGUAGE,    RES_CHRATR_CTL_LANGUAGE,
                     0 );
         String aNewLangTxt;
-        
+
         if (MN_SET_LANGUAGE_SELECTION_START <= nId && nId <= MN_SET_LANGUAGE_SELECTION_END)
         {
             //Set language for current selection
@@ -927,7 +927,7 @@ void SwSpellPopup::Execute( sal_uInt16 nId )
             }
         }
 #endif
-    }    
+    }
 
     pSh->EnterStdMode();
 }

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -150,7 +150,7 @@ SfxObjectShellRef SfxApplication::DocAlreadyLoaded
 (
     const String&   rName,      // Name of the Document including path
     sal_Bool            bSilent,    // sal_True: do not ask for new view
-    sal_Bool            bActivate,   // should current view be activated 
+    sal_Bool            bActivate,   // should current view be activated
     sal_Bool            bForbidVisible,
 	const String*   pPostStr
 )
@@ -302,8 +302,8 @@ sal_uInt32 CheckPasswd_Impl
 
 /*  [description]
     To query a passwort on a medium works only if the medium is a storage.
-    If in documentinfo the password-flag is set, a dialog will query the user 
-    for the password. The password will be saved in a set. If the set does not 
+    If in documentinfo the password-flag is set, a dialog will query the user
+    for the password. The password will be saved in a set. If the set does not
     exist, a set will be created.
 */
 {

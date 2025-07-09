@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -42,7 +42,7 @@ namespace internal {
 
 namespace {
 /** Little wrapper for HSL to RGB mapping.
-    
+
     This class implements the HSLColorAnimation interface,
     internally converting to RGB and forwarding to
     ColorAnimation.
@@ -57,7 +57,7 @@ public:
             mpAnimation,
             "HSLWrapper::HSLWrapper(): Invalid color animation delegate" );
     }
-    
+
     virtual void prefetch( const AnimatableShapeSharedPtr&,
                            const ShapeAttributeLayerSharedPtr& )
     {}
@@ -67,22 +67,22 @@ public:
     {
         mpAnimation->start( rShape, rAttrLayer );
     }
-    
+
     virtual void end()
     {
         mpAnimation->end();
     }
-    
+
     virtual bool operator()( const HSLColor& rColor )
     {
         return (*mpAnimation)( RGBColor( rColor ) );
     }
-    
+
     virtual HSLColor getUnderlyingValue() const
     {
         return HSLColor( mpAnimation->getUnderlyingValue() );
     }
-    
+
 private:
     ColorAnimationSharedPtr mpAnimation;
 };
@@ -92,39 +92,39 @@ private:
 AnimationActivitySharedPtr AnimationColorNode::createActivity() const
 {
     ActivitiesFactory::CommonParameters aParms( fillCommonParameters() );
-    
+
     switch( mxColorNode->getColorInterpolation() )
     {
     case animations::AnimationColorSpace::RGB:
         return ActivitiesFactory::createAnimateActivity(
             aParms,
-            AnimationFactory::createColorPropertyAnimation( 
+            AnimationFactory::createColorPropertyAnimation(
                 mxColorNode->getAttributeName(),
                 getShape(),
                 getContext().mpSubsettableShapeManager,
                 getSlideSize() ),
             getXAnimateNode() );
-        
+
     case animations::AnimationColorSpace::HSL:
         // Wrap a plain ColorAnimation with the HSL
         // wrapper, which implements the HSLColorAnimation
-        // interface, and internally converts HSL to RGB color 
+        // interface, and internally converts HSL to RGB color
         return ActivitiesFactory::createAnimateActivity(
             aParms,
             HSLColorAnimationSharedPtr(
                 new HSLWrapper(
-                    AnimationFactory::createColorPropertyAnimation( 
+                    AnimationFactory::createColorPropertyAnimation(
                         mxColorNode->getAttributeName(),
                         getShape(),
                         getContext().mpSubsettableShapeManager,
                         getSlideSize() ))),
             mxColorNode );
-        
+
     default:
         ENSURE_OR_THROW( false, "AnimationColorNode::createColorActivity(): "
                           "Unexpected color space" );
     }
-    
+
     return AnimationActivitySharedPtr();
 }
 

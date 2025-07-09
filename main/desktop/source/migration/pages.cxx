@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -142,9 +142,9 @@ class MigrationThread : public ::osl::Thread
 {
     public:
         MigrationThread();
-        
+
         virtual void SAL_CALL run();
-        virtual void SAL_CALL onTerminated(); 
+        virtual void SAL_CALL onTerminated();
 };
 
 MigrationThread::MigrationThread()
@@ -168,8 +168,8 @@ void MigrationThread::onTerminated()
 
 // -------------------------------------------------------------------
 
-MigrationPage::MigrationPage( 
-    svt::OWizardMachine* parent, 
+MigrationPage::MigrationPage(
+    svt::OWizardMachine* parent,
     const ResId& resid, Throbber& i_throbber )
     : OWizardPage(parent, resid)
     , m_ftHead(this, WizardResId(FT_MIGRATION_HEADER))
@@ -195,17 +195,17 @@ sal_Bool MigrationPage::commitPage( svt::WizardTypes::CommitPageReason _eReason 
         FirstStartWizard* pWizard = dynamic_cast< FirstStartWizard* >( GetParent() );
         if ( pWizard )
             pWizard->DisableButtonsWhileMigration();
-        
+
         m_rThrobber.Show();
         m_rThrobber.start();
         MigrationThread* pMigThread = new MigrationThread();
         pMigThread->create();
-        
+
 		while ( pMigThread->isRunning() )
         {
             Application::Reschedule();
         }
-        
+
         m_rThrobber.stop();
         GetParent()->LeaveWait();
         // Next state will enable buttons - so no EnableButtons necessary!

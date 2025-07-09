@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 /** -- C++ Source File -- **/
@@ -95,7 +95,7 @@ int SAL_CALL main( int argc, char **argv )
 	xmlSubstituteEntitiesDefault(1);
 
 	#ifndef XMLSEC_NO_XSLT
-	xmlIndentTreeOutput = 1; 
+	xmlIndentTreeOutput = 1;
 	#endif // XMLSEC_NO_XSLT
 
 	//Initialize the crypto engine
@@ -131,7 +131,7 @@ int SAL_CALL main( int argc, char **argv )
 	if( tarNode == NULL ) {
 		tarNode = xmlSecFindNode( xmlDocGetRootElement( doc ), ( xmlChar* )"document", NULL ) ;
 	}
-										
+
 	//Find the "id" attribute in the element
 	if( tarNode != NULL ) {
 		if( ( idAttr = xmlHasProp( tarNode, ( xmlChar* )"id" ) ) != NULL ) {
@@ -142,7 +142,7 @@ int SAL_CALL main( int argc, char **argv )
 			idAttr = NULL ;
 		}
 	}
-										
+
 	//Add ID to DOM
 	if( idAttr != NULL ) {
 		idValue = xmlNodeListGetString( tarNode->doc, idAttr->children, 1 ) ;
@@ -150,7 +150,7 @@ int SAL_CALL main( int argc, char **argv )
 			fprintf( stderr , "### the ID value is NULL!\n" ) ;
 			goto done ;
 		}
-										
+
 		if( xmlAddID( NULL, doc, idValue, idAttr ) == NULL ) {
 			fprintf( stderr , "### Can not add the ID value!\n" ) ;
 			goto done ;
@@ -308,9 +308,9 @@ int SAL_CALL main( int argc, char **argv )
 
 		//perform validation
 		xTemplate = xSigner->validate( xTemplate , xSecCtx ) ;
-		
+
 		com::sun::star::xml::crypto::SecurityOperationStatus m_nStatus = xTemplate->getStatus();
-		
+
 		if (m_nStatus == SecurityOperationStatus_OPERATION_SUCCEEDED)
 		{
 			fprintf( stdout, "Operation succeeds.\n") ;
@@ -338,7 +338,7 @@ done :
 
 	/* Shutdown libxslt/libxml */
 	#ifndef XMLSEC_NO_XSLT
-	xsltCleanupGlobals();	    
+	xsltCleanupGlobals();
 	#endif /* XMLSEC_NO_XSLT */
 	xmlCleanupParser();
 

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -210,18 +210,18 @@ void DomExport::addNamespace( const OUString& sPrefix, const OUString& sURI )
 
     // we need to register the namespace, if either the prefix isn't known or
     // is used for a different namespace
-    if( nKey == XML_NAMESPACE_UNKNOWN  || 
+    if( nKey == XML_NAMESPACE_UNKNOWN  ||
         rMap.GetNameByKey( nKey ) != sURI )
     {
         // add prefix to map, and add declaration
         rMap.Add( sPrefix, sURI );
-        mrExport.AddAttribute( 
-            OUString( RTL_CONSTASCII_USTRINGPARAM( "xmlns:" ) ) + sPrefix, 
+        mrExport.AddAttribute(
+            OUString( RTL_CONSTASCII_USTRINGPARAM( "xmlns:" ) ) + sPrefix,
             sURI );
     }
 }
 
-OUString DomExport::qualifiedName( const OUString& sPrefix, 
+OUString DomExport::qualifiedName( const OUString& sPrefix,
                                    const OUString& sURI,
                                    const OUString& sLocalName )
 {
@@ -256,7 +256,7 @@ OUString DomExport::qualifiedName( const Reference<XAttr>& xAttr )
 
 void DomExport::addAttribute( const Reference<XAttr>& xAttribute )
 {
-    mrExport.AddAttribute( qualifiedName( xAttribute ), 
+    mrExport.AddAttribute( qualifiedName( xAttribute ),
                            xAttribute->getNodeValue() );
 }
 

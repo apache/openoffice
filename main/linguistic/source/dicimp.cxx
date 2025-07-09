@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -76,7 +76,7 @@ static const sal_Int16 DIC_VERSION_5 = 5;
 static const sal_Int16 DIC_VERSION_6 = 6;
 static const sal_Int16 DIC_VERSION_7 = 7;
 
-static sal_Bool getTag(const ByteString &rLine, 
+static sal_Bool getTag(const ByteString &rLine,
         const sal_Char *pTagName, ByteString &rTagValue)
 {
 	xub_StrLen nPos = rLine.Search( pTagName );
@@ -128,7 +128,7 @@ sal_Int16 ReadDicVersion( SvStreamPtr &rpStream, sal_uInt16 &nLng, sal_Bool &bNe
                 if (aTagValue == "<none>")
                     nLng = LANGUAGE_NONE;
                 else
-                    nLng = MsLangId::convertIsoStringToLanguage(OUString(aTagValue.GetBuffer(), 
+                    nLng = MsLangId::convertIsoStringToLanguage(OUString(aTagValue.GetBuffer(),
                                 aTagValue.Len(), RTL_TEXTENCODING_ASCII_US));
             }
 
@@ -146,7 +146,7 @@ sal_Int16 ReadDicVersion( SvStreamPtr &rpStream, sal_uInt16 &nLng, sal_Bool &bNe
         }
         if (!bSuccess)
             return -2;
-    }    
+    }
     else
     {
         sal_uInt16 nLen;
@@ -238,7 +238,7 @@ DictionaryNeo::DictionaryNeo(const OUString &rName,
             //! create physical representation of an **empty** dictionary
             //! that could be found by the dictionary-list implementation
             // (Note: empty dictionaries are not just empty files!)
-            DBG_ASSERT( !bIsReadonly, 
+            DBG_ASSERT( !bIsReadonly,
                     "DictionaryNeo: dictionaries should be writeable if they are to be saved" );
             if (!bIsReadonly)
                 saveEntries( rMainURL );
@@ -272,12 +272,12 @@ sal_uLong DictionaryNeo::loadEntries(const OUString &rMainURL)
         return 0;
 
     uno::Reference< lang::XMultiServiceFactory > xServiceFactory( utl::getProcessServiceFactory() );
-    
+
     // get XInputStream stream
     uno::Reference< io::XInputStream > xStream;
     try
     {
-        uno::Reference< ucb::XSimpleFileAccess > xAccess( xServiceFactory->createInstance( 
+        uno::Reference< ucb::XSimpleFileAccess > xAccess( xServiceFactory->createInstance(
                 A2OU( "com.sun.star.ucb.SimpleFileAccess" ) ), uno::UNO_QUERY_THROW );
         xStream = xAccess->openFileRead( rMainURL );
     }
@@ -393,7 +393,7 @@ sal_uLong DictionaryNeo::loadEntries(const OUString &rMainURL)
 }
 
 
-static ByteString formatForSave( 
+static ByteString formatForSave(
         const uno::Reference< XDictionaryEntry > &xEntry, rtl_TextEncoding eEnc )
 {
    ByteString aStr(xEntry->getDictionaryWord().getStr(), eEnc);
@@ -416,12 +416,12 @@ sal_uLong DictionaryNeo::saveEntries(const OUString &rURL)
     DBG_ASSERT(!INetURLObject( rURL ).HasError(), "lng : invalid URL");
 
     uno::Reference< lang::XMultiServiceFactory > xServiceFactory( utl::getProcessServiceFactory() );
-    
+
     // get XOutputStream stream
     uno::Reference< io::XStream > xStream;
     try
     {
-        uno::Reference< ucb::XSimpleFileAccess > xAccess( xServiceFactory->createInstance( 
+        uno::Reference< ucb::XSimpleFileAccess > xAccess( xServiceFactory->createInstance(
                 A2OU( "com.sun.star.ucb.SimpleFileAccess" ) ), uno::UNO_QUERY_THROW );
         xStream = xAccess->openFileReadWrite( rURL );
     }

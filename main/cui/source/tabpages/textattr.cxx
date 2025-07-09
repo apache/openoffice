@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -49,7 +49,7 @@
 #include <dialmgr.hxx>
 #include "svx/dlgutil.hxx"
 #include <sfx2/request.hxx> //add CHINA001
-#include <svx/ofaitem.hxx> //add CHINA001 
+#include <svx/ofaitem.hxx> //add CHINA001
 #include <editeng/writingmodeitem.hxx>
 
 static sal_uInt16 pRanges[] =
@@ -70,14 +70,14 @@ static sal_uInt16 pRanges[] =
 //CHINA001 		SfxSingleTabDialog( pParent, rInAttrs, RID_SVXPAGE_TEXTATTR )
 //CHINA001 {
 //CHINA001 SvxTextAttrPage* pPage = new SvxTextAttrPage( this, rInAttrs );
-//CHINA001 
+//CHINA001
 //CHINA001 pPage->SetView( pSdrView );
 //CHINA001 pPage->Construct();
-//CHINA001 
+//CHINA001
 //CHINA001 SetTabPage( pPage );
 //CHINA001 SetText( pPage->GetText() );
 //CHINA001 }
-//CHINA001 
+//CHINA001
 /*************************************************************************
 |*
 |* Dtor
@@ -241,7 +241,7 @@ void __EXPORT SvxTextAttrPage::Reset( const SfxItemSet& rAttrs )
 		aTsbAutoGrowWidth.SetState( STATE_DONTKNOW );
 	aTsbAutoGrowWidth.SaveValue();
 
-	// autogrowsize 
+	// autogrowsize
 	if ( rAttrs.GetItemState( SDRATTR_TEXT_AUTOGROWSIZE ) != SFX_ITEM_DONTCARE )
 	{
 		aTsbAutoGrowSize.SetState( ( ( const SdrTextAutoGrowHeightItem& )rAttrs.Get( SDRATTR_TEXT_AUTOGROWHEIGHT ) ).
@@ -271,11 +271,11 @@ void __EXPORT SvxTextAttrPage::Reset( const SfxItemSet& rAttrs )
 
 	if(SFX_ITEM_DONTCARE != eVState && SFX_ITEM_DONTCARE != eHState)
 	{
-		// VertAdjust and HorAdjust are unequivocal, thus 
+		// VertAdjust and HorAdjust are unequivocal, thus
 		SdrTextVertAdjust eTVA = (SdrTextVertAdjust)((const SdrTextVertAdjustItem&)rAttrs.Get(SDRATTR_TEXT_VERTADJUST)).GetValue();
 		SdrTextHorzAdjust eTHA = (SdrTextHorzAdjust)((const SdrTextHorzAdjustItem&)rAttrs.Get(SDRATTR_TEXT_HORZADJUST)).GetValue();
 		RECT_POINT eRP = RP_LB;
-	
+
 		aTsbFullWidth.EnableTriState( sal_False );
 
         // Translate item values into local anchor position.
@@ -321,7 +321,7 @@ void __EXPORT SvxTextAttrPage::Reset( const SfxItemSet& rAttrs )
 
         // See if we have to check the "full width" check button.
         sal_Bool bLeftToRight(IsTextDirectionLeftToRight());
-        
+
 		if((bLeftToRight && (SDRTEXTHORZADJUST_BLOCK == eTHA)) || (!bLeftToRight && (SDRTEXTVERTADJUST_BLOCK == eTVA)))
         {
             // Move anchor to valid position.
@@ -335,7 +335,7 @@ void __EXPORT SvxTextAttrPage::Reset( const SfxItemSet& rAttrs )
 	{
 		// VertAdjust or HorAdjust is not unequivocal
 		aCtlPosition.Reset();
-		
+
 		aCtlPosition.SetState(STATE_DONTKNOW);
 		aCtlPosition.DoCompletelyDisable(sal_True);
 
@@ -665,12 +665,12 @@ IMPL_LINK( SvxTextAttrPage, ClickFullWidthHdl_Impl, void *, EMPTYARG )
                 case RP_RT:
                     aCtlPosition.SetActualRP( RP_MT );
                     break;
-                    
+
                 case RP_LM:
                 case RP_RM:
                     aCtlPosition.SetActualRP( RP_MM );
                     break;
-                    
+
                 case RP_LB:
                 case RP_RB:
                     aCtlPosition.SetActualRP( RP_MB );
@@ -687,12 +687,12 @@ IMPL_LINK( SvxTextAttrPage, ClickFullWidthHdl_Impl, void *, EMPTYARG )
                 case RP_LB:
                     aCtlPosition.SetActualRP( RP_LM );
                     break;
-                    
+
                 case RP_MT:
                 case RP_MB:
                     aCtlPosition.SetActualRP( RP_MM );
                     break;
-                    
+
                 case RP_RT:
                 case RP_RB:
                     aCtlPosition.SetActualRP( RP_RM );
@@ -786,10 +786,10 @@ bool SvxTextAttrPage::IsTextDirectionLeftToRight (void) const
 void SvxTextAttrPage::PageCreated(SfxAllItemSet aSet)
 {
 	SFX_ITEMSET_ARG (&aSet,pViewItem,OfaPtrItem,SID_SVXTEXTATTRPAGE_VIEW,sal_False);
-	
+
 	if (pViewItem)
 		SetView( static_cast<SdrView *>(pViewItem->GetValue()));
-	
+
 	Construct();
 }
 

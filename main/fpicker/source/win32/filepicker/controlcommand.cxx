@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -110,8 +110,8 @@ sal_Int16 SAL_CALL CControlCommand::getControlId( ) const
 //
 //---------------------------------------------
 
-CValueControlCommand::CValueControlCommand(         
-        sal_Int16 aControlId, 
+CValueControlCommand::CValueControlCommand(
+        sal_Int16 aControlId,
         sal_Int16 aControlAction,
         const ::com::sun::star::uno::Any& aValue ) :
     CControlCommand( aControlId ),
@@ -128,7 +128,7 @@ void SAL_CALL CValueControlCommand::exec( CFilePickerState* aFilePickerState )
 {
     OSL_ENSURE( aFilePickerState, "empty reference" );
 
-    aFilePickerState->setValue( 
+    aFilePickerState->setValue(
         getControlId( ),
         m_aControlAction,
         m_aValue );
@@ -140,14 +140,14 @@ void SAL_CALL CValueControlCommand::exec( CFilePickerState* aFilePickerState )
 
 CControlCommandResult* SAL_CALL CValueControlCommand::handleRequest( CControlCommandRequest* aRequest )
 {
-    CValueControlCommandRequest* value_request = 
+    CValueControlCommandRequest* value_request =
         dynamic_cast< CValueControlCommandRequest* >( aRequest );
 
     CControlCommandResult* result;
     CControlCommand* nextCommand;
 
-    if ( value_request && 
-         (value_request->getControlId( ) == getControlId( )) && 
+    if ( value_request &&
+         (value_request->getControlId( ) == getControlId( )) &&
          (value_request->getControlAction( ) == m_aControlAction) )
     {
         result = new CValueCommandResult( sal_True, m_aValue );
@@ -185,15 +185,15 @@ sal_Int16 SAL_CALL CValueControlCommand::getControlAction( ) const
 {
     return m_aValue;
 }
-    
+
 
 //---------------------------------------------
 //
 //---------------------------------------------
 
-CLabelControlCommand::CLabelControlCommand(        
-        sal_Int16 aControlId,         
-        const rtl::OUString& aLabel ) : 
+CLabelControlCommand::CLabelControlCommand(
+        sal_Int16 aControlId,
+        const rtl::OUString& aLabel ) :
     CControlCommand( aControlId ),
     m_aLabel( aLabel )
 {
@@ -221,10 +221,10 @@ CControlCommandResult* SAL_CALL CLabelControlCommand::handleRequest( CControlCom
     CControlCommandResult* result;
     CControlCommand* nextCommand;
 
-    CValueControlCommandRequest* value_request = 
+    CValueControlCommandRequest* value_request =
         dynamic_cast< CValueControlCommandRequest* >( aRequest );
 
-    if ( !value_request && 
+    if ( !value_request &&
          (aRequest->getControlId( ) == getControlId( )) )
     {
         result = new CLabelCommandResult( sal_True, m_aLabel );
@@ -258,8 +258,8 @@ rtl::OUString SAL_CALL CLabelControlCommand::getLabel( ) const
 //
 //---------------------------------------------
 
-CEnableControlCommand::CEnableControlCommand(        
-        sal_Int16 aControlId,         
+CEnableControlCommand::CEnableControlCommand(
+        sal_Int16 aControlId,
         sal_Bool bEnable ) :
     CControlCommand( aControlId ),
     m_bEnable( bEnable )

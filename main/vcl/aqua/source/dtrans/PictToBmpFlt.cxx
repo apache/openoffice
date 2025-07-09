@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,28 +7,28 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
 
-/* This is a work-around to prevent 'deprecated' warning for 'KillPicture' API 
+/* This is a work-around to prevent 'deprecated' warning for 'KillPicture' API
    Hopefully we can get rid of this whole code again when the OOo PICT filter
    are good enough to be used see #i78953 thus this hack would vanish to again.
  */
 #include <premac.h>
 #include <AvailabilityMacros.h>
 #undef DEPRECATED_ATTRIBUTE
-#define DEPRECATED_ATTRIBUTE 
+#define DEPRECATED_ATTRIBUTE
 
 #include <Carbon/Carbon.h>
 #include <postmac.h>
@@ -64,7 +64,7 @@ bool PICTtoPNG( com::sun::star::uno::Sequence<sal_Int8>& rPictData,
 		HLock( hPng);
 		rtl_copyMemory( rPngData.getArray(), ((sal_Int8*)*hPng), nPngSize);
 		HUnlock( hPng);
-	} 
+	}
 
 	if( hPict)
 		DisposeHandle( hPict);
@@ -91,7 +91,7 @@ bool PNGtoPICT( com::sun::star::uno::Sequence<sal_Int8>& rPngData,
 	Handle hPng = NULL;
 	if( PtrToHand( rPngData.getArray(), &hPng, rPngData.getLength()) != noErr)
 		hPng = NULL;
-  
+
 	size_t nPictSize = 0;
 	PicHandle hPict = NULL;
 	if( hPng
@@ -111,17 +111,17 @@ bool PNGtoPICT( com::sun::star::uno::Sequence<sal_Int8>& rPngData,
 		KillPicture( hPict);
 #endif
 	}
-  
+
 	if( hPng)
 		DisposeHandle( hPng);
 	if( pictExporter)
 		CloseComponent( pictExporter);
-  
+
 	return (nPictSize > 512);
 #endif // MAC_OS_X_VERSION_10_6
 }
 
-bool ImageToPNG( com::sun::star::uno::Sequence<sal_Int8>& rImgData, 
+bool ImageToPNG( com::sun::star::uno::Sequence<sal_Int8>& rImgData,
 			     com::sun::star::uno::Sequence<sal_Int8>& rPngData,
 			     NSBitmapImageFileType eInFormat)
 {

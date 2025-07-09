@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -84,7 +84,7 @@ SAL_IMPLEMENT_MAIN()
     catch( com::sun::star::uno::Exception& rExc)
     {
     }
-    
+
     if( ! xFactory.is() )
     {
         fprintf( stderr, "Could not bootstrap UNO, installation must be in disorder. Exiting.\n" );
@@ -135,12 +135,12 @@ public:
 	void		KeyUp( const KeyEvent& rKEvt );
 	void		Paint( const Rectangle& rRect );
 	void		Resize();
-    
+
     sal_Bool        Close();
-    
+
     void parseList( const rtl::OString& rList );
     rtl::OString processCommand( const rtl::OString& rCommand );
-    
+
     DECL_LINK( ListHdl, Button* );
     DECL_LINK( SelectHdl, ListBox* );
     DECL_LINK( QuitHdl, Button* );
@@ -170,15 +170,15 @@ MyWin::MyWin( Window* pParent, WinBits nWinStyle ) :
     m_aListButton.SetText( String( RTL_CONSTASCII_USTRINGPARAM( "List Elements" ) ) );
     m_aListButton.SetClickHdl( LINK( this, MyWin, ListHdl ) );
     m_aListButton.Show();
-    
+
     m_aSvpBitmaps.SetPosSizePixel( Point( 10, 40 ), Size( 150, 150 ) );
     m_aSvpBitmaps.SetSelectHdl( LINK( this, MyWin, SelectHdl ) );
     m_aSvpBitmaps.Show();
-    
+
     m_aImage.SetPosSizePixel( Point( 170, 10 ), Size( 400, 400 ) );
     m_aImage.SetScaleMode( com::sun::star::awt::ImageScaleMode::NONE );
     m_aImage.Show();
-    
+
     m_aQuitButton.SetPosSizePixel( Point( 10, 300 ), Size( 120,25 ) );
     m_aQuitButton.SetText( String( RTL_CONSTASCII_USTRINGPARAM( "Quit SVP server" ) ) );
     m_aQuitButton.SetClickHdl( LINK( this, MyWin, QuitHdl ) );
@@ -203,7 +203,7 @@ void MyWin::parseList( const rtl::OString& rList )
         rtl::OString aLine = rList.getToken( 0, '\n', nTokenPos );
         if( ! aLine.getLength() || *aLine.getStr() == '#' )
             continue;
-        
+
         if( aLine.compareTo( "ElementType: ", 13 ) == 0 )
             aElementType = rtl::OStringToOUString( aLine.copy( 13 ), RTL_TEXTENCODING_ASCII_US );
         else

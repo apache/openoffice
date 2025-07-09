@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -83,13 +83,13 @@ void lcl_getPositionAndSizeFromItemSet( const SfxItemSet& rItemSet, awt::Rectang
 
     switch( eRP )
     {
-        case RP_LT: 
+        case RP_LT:
             break;
         case RP_MT:
-            nPosX += ( aOriginalSize.Width - nSizX ) / 2; 
+            nPosX += ( aOriginalSize.Width - nSizX ) / 2;
             break;
         case RP_RT:
-            nPosX += aOriginalSize.Width - nSizX; 
+            nPosX += aOriginalSize.Width - nSizX;
             break;
         case RP_LM:
             nPosY += ( aOriginalSize.Height - nSizY ) / 2;
@@ -110,7 +110,7 @@ void lcl_getPositionAndSizeFromItemSet( const SfxItemSet& rItemSet, awt::Rectang
             nPosY += aOriginalSize.Height - nSizY;
             break;
         case RP_RB:
-            nPosX += aOriginalSize.Width - nSizX;  
+            nPosX += aOriginalSize.Width - nSizX;
             nPosY += aOriginalSize.Height - nSizY;
             break;
         default:
@@ -150,13 +150,13 @@ void SAL_CALL ChartController::executeDispatch_PositionAndSize()
         bool bResizePossible = m_aSelection.isResizeableObjectSelected();
 
         ::vos::OGuard aGuard( Application::GetSolarMutex());
-        SvxAbstractDialogFactory * pFact = SvxAbstractDialogFactory::Create();        
+        SvxAbstractDialogFactory * pFact = SvxAbstractDialogFactory::Create();
         DBG_ASSERT( pFact, "No dialog factory" );
         pDlg = pFact->CreateSchTransformTabDialog(
             m_pChartWindow, &aItemSet, pSdrView, RID_SCH_TransformTabDLG_SVXPAGE_ANGLE, bResizePossible );
         DBG_ASSERT( pDlg, "Couldn't create SchTransformTabDialog" );
 
-        
+
         if( pDlg->Execute() == RET_OK )
         {
             const SfxItemSet* pOutItemSet = pDlg->GetOutputItemSet();
@@ -168,7 +168,7 @@ void SAL_CALL ChartController::executeDispatch_PositionAndSize()
                 awt::Size aPageSize( ChartModelHelper::getPageSize( getModel() ) );
                 awt::Rectangle aPageRect( 0,0,aPageSize.Width,aPageSize.Height );
 
-                bool bChanged = false;    
+                bool bChanged = false;
                 if ( eObjectType == OBJECTTYPE_LEGEND )
                     bChanged = DiagramHelper::switchDiagramPositioningToExcludingPositioning( getModel(), false , true );
 

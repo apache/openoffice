@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -30,8 +30,8 @@
 
 #include "tools/debug.hxx"
 
-namespace psp { 
- 
+namespace psp {
+
 /*
  * string convenience routines
  */
@@ -39,8 +39,8 @@ namespace psp {
 sal_Int32
 getHexValueOf (sal_Int32 nValue, sal_Char* pBuffer)
 {
-    const static sal_Char pHex [0x10] = { 
-        '0', '1', '2', '3', '4', '5', '6', '7', 
+    const static sal_Char pHex [0x10] = {
+        '0', '1', '2', '3', '4', '5', '6', '7',
         '8', '9', 'A', 'B', 'C', 'D', 'E', 'F' };
 
     pBuffer[0] = pHex [(nValue & 0xF0) >> 4];
@@ -55,14 +55,14 @@ getAlignedHexValueOf (sal_Int32 nValue, sal_Char* pBuffer)
     // get sign
     sal_Bool bNegative = nValue < 0;
     nValue = bNegative ? -nValue : nValue;
-    
+
     // get required buffer size, must be a multiple of two
     sal_Int32 nPrecision;
     if (nValue < 0x80)
         nPrecision = 2;
     else
         if (nValue < 0x8000)
-            nPrecision = 4; 
+            nPrecision = 4;
         else
             if (nValue < 0x800000)
                 nPrecision = 6;
@@ -91,7 +91,7 @@ getAlignedHexValueOf (sal_Int32 nValue, sal_Char* pBuffer)
             case '6' : pBuffer[0] = 'E'; break;
             case '7' : pBuffer[0] = 'F'; break;
             default: DBG_ERROR("Already a signed value");
-        } 
+        }
     }
 
     // report precision
@@ -116,7 +116,7 @@ getValueOf (sal_Int32 nValue, sal_Char* pBuffer)
         }
 
     sal_Char  pInvBuffer [32];
-    sal_Int32 nInvChar = 0; 
+    sal_Int32 nInvChar = 0;
     while (nValue > 0)
     {
         pInvBuffer [nInvChar++] = '0' + nValue % 10;
@@ -126,14 +126,14 @@ getValueOf (sal_Int32 nValue, sal_Char* pBuffer)
     {
         pBuffer [nChar++] = pInvBuffer [--nInvChar];
     }
-    
+
     return nChar;
 }
 
 sal_Int32
 appendStr (const sal_Char* pSrc, sal_Char* pDst)
 {
-    sal_Int32 nBytes = strlen (pSrc); 
+    sal_Int32 nBytes = strlen (pSrc);
     strncpy (pDst, pSrc, nBytes + 1);
 
     return nBytes;
@@ -143,7 +143,7 @@ sal_Int32
 appendStr (const sal_Char* pSrc, sal_Char* pDst, sal_Int32 nBytes)
 {
     strncpy (pDst, pSrc, nBytes);
-    pDst [nBytes] = '\0'; 
+    pDst [nBytes] = '\0';
     return nBytes;
 }
 
@@ -156,7 +156,7 @@ WritePS (osl::File* pFile, const sal_Char* pString)
 {
     sal_uInt64 nInLength = rtl_str_getLength (pString);
     sal_uInt64 nOutLength = 0;
-    
+
     if (nInLength > 0 && pFile)
         pFile->write (pString, nInLength, nOutLength);
 
@@ -167,7 +167,7 @@ sal_Bool
 WritePS (osl::File* pFile, const sal_Char* pString, sal_uInt64 nInLength)
 {
     sal_uInt64 nOutLength = 0;
-    
+
     if (nInLength > 0 && pFile)
         pFile->write (pString, nInLength, nOutLength);
 
@@ -179,7 +179,7 @@ WritePS (osl::File* pFile, const rtl::OString &rString)
 {
     sal_uInt64 nInLength = rString.getLength();
     sal_uInt64 nOutLength = 0;
-    
+
     if (nInLength > 0 && pFile)
         pFile->write( rString.getStr(), nInLength, nOutLength);
 
@@ -206,7 +206,7 @@ ConverterFactory::~ConverterFactory ()
             rtl_destroyUnicodeToTextConverter (it->second);
 }
 
-rtl_UnicodeToTextConverter 
+rtl_UnicodeToTextConverter
 ConverterFactory::Get (rtl_TextEncoding nEncoding)
 {
     if (rtl_isOctetTextEncoding( nEncoding ))
@@ -229,7 +229,7 @@ ConverterFactory::Get (rtl_TextEncoding nEncoding)
 // wrapper for rtl_convertUnicodeToText that handles the usual cases for
 // textconversion in drawtext
 sal_Size
-ConverterFactory::Convert (const sal_Unicode *pText, int nTextLen, 
+ConverterFactory::Convert (const sal_Unicode *pText, int nTextLen,
                            sal_uChar *pBuffer, sal_Size nBufferSize, rtl_TextEncoding nEncoding)
 {
     const sal_uInt32 nCvtFlags =  RTL_UNICODETOTEXT_FLAGS_UNDEFINED_QUESTIONMARK
@@ -240,7 +240,7 @@ ConverterFactory::Convert (const sal_Unicode *pText, int nTextLen,
     rtl_UnicodeToTextConverter aConverter = Get (nEncoding);
     rtl_UnicodeToTextContext   aContext   = rtl_createUnicodeToTextContext (aConverter);
 
-    sal_Size nSize = rtl_convertUnicodeToText (aConverter, aContext, 
+    sal_Size nSize = rtl_convertUnicodeToText (aConverter, aContext,
                                                pText, nTextLen, (sal_Char*)pBuffer, nBufferSize,
                                                nCvtFlags, &nCvtInfo, &nCvtChars);
 

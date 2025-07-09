@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -97,7 +97,7 @@ void ULSwap ( unsigned long &rX, unsigned long &rY )
 // -----------------------------------------------------------------------
 //
 // This way of measuring distance is also called the "Manhattan distance."
-// Manhattan distance takes advantage of the fact that the sum of the 
+// Manhattan distance takes advantage of the fact that the sum of the
 // lengths of the three components of a 3D vector is a rough approxima-
 // tion of the vector's length.
 //
@@ -106,7 +106,7 @@ void ULSwap ( unsigned long &rX, unsigned long &rY )
 unsigned long  Euclidian2Norm ( const LRectCoorVector  pVec )
 {
 	unsigned long  ndist = 0;
-	
+
 	if ( pVec )
 	{
 		long           nDX  = 0;
@@ -115,29 +115,29 @@ unsigned long  Euclidian2Norm ( const LRectCoorVector  pVec )
 		unsigned long  nMax = 0;
 		unsigned long  nMed = 0;
 		unsigned long  nMin = 0;
-		
+
 		// Find |x'-x|, |y'-y|, and |z'-z| from (x,y,z) and (x',y',z')
-		
+
 		nDX = pVec[1].x - pVec[0].x;
 		nDY = pVec[1].y - pVec[0].y;
 		nDZ = pVec[1].z - pVec[0].z;
-			
+
 		nMax = (unsigned long)abs( nDX );
 		nMed = (unsigned long)abs( nDY );
 		nMin = (unsigned long)abs( nDZ );
-		
+
 		// Sort them (3 compares, 0-3 swaps)
-		
+
 		if ( nMax < nMed )
 		{
 			Swap( nMax, nMed );
 		} // if
-		
+
 		if ( nMax < nMin )
 		{
 			Swap( nMax, nMin );
 		} // if
-		
+
 		// Approximate Euclidian distance:
 		//
 		//    d = max + (11/32)*med + (1/4)*min
@@ -145,11 +145,11 @@ unsigned long  Euclidian2Norm ( const LRectCoorVector  pVec )
 		// with +/- 8% error, where the exact formulae for d is
 		//
 		//  || (x',y',z') - (x,y,z) || = { |x'-x|^2 + |y'-y|^2 + |z'-z|^2 }^(1/2)
-		
-		ndist = nMax + ( nMin >> 2UL ) 
+
+		ndist = nMax + ( nMin >> 2UL )
 		             + ( ( ( nMed << 3UL ) + ( nMed << 1UL ) + nMed ) >> 5UL );
 	} // if
-		
+
 	return ndist;
 } // RGBDistance
 

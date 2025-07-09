@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -205,7 +205,7 @@ XclImpDrawObjBase::XclImpDrawObjBase( const XclImpRoot& rRoot ) :
     mbInsertSdr( true ),
     mbCustomDff( false )
 {
-	//  if this sheet(ScTab) have an xclimpdrawobjbase (i.e. it contain sdrobject), 
+	//  if this sheet(ScTab) have an xclimpdrawobjbase (i.e. it contain sdrobject),
 	//  then the sheet should be 'updaterowheights' in loading procedure. i120586
 	GetDoc().SetPendingRowHeights( rRoot.GetCurrScTab(), false );
 }
@@ -327,7 +327,7 @@ XclImpDrawObjBase::~XclImpDrawObjBase()
     {
         sal_uInt16 nSubRecId, nSubRecSize, nObjType;
         rStrm >> nSubRecId >> nSubRecSize >> nObjType;
-        
+
         if(EXC_ID_OBJCMO == nSubRecId)
         {
             if( (nSubRecSize >= 6) )
@@ -473,7 +473,7 @@ SdrObject* XclImpDrawObjBase::CreateSdrObject( XclImpDffConverter& rDffConv, con
 				+-----------------------------------------------------+
 					0x0019		Note				0x001E		OfficeArt object
 		*/
-		if( xSdrObj.is() && xSdrObj->IsUnoObj() && 
+		if( xSdrObj.is() && xSdrObj->IsUnoObj() &&
 			( (mnObjType < 25 && mnObjType > 10) || mnObjType == 7 || mnObjType == 8 ) )
 		{
 			SdrUnoObj* pSdrUnoObj = dynamic_cast< SdrUnoObj* >( xSdrObj.get() );
@@ -1543,7 +1543,7 @@ void XclImpTextObj::DoPreProcessSdrObj( XclImpDffConverter& rDffConv, SdrObject&
 							eHorAlign = SVX_ADJUST_CENTER;
 						}
 						break;
-						
+
 						default:
 						{
 							switch( maTextData.maData.GetVerAlign() )
@@ -1582,7 +1582,7 @@ void XclImpTextObj::DoPreProcessSdrObj( XclImpDffConverter& rDffConv, SdrObject&
 							eHorAlign = SVX_ADJUST_CENTER;
 						}
 						break;
-						
+
 						default:
 						{
 							switch( maTextData.maData.GetVerAlign() )
@@ -2061,7 +2061,7 @@ void XclImpTbxObjBase::ConvertLabel( ScfPropertySet& rPropSet ) const
 
         //Excel Alt text <==> Aoo description
 		//For TBX control, if user does not operate alt text, alt text will be set label text as default value in Excel.
-		//In this case, DFF_Prop_wzDescription will not be set in excel file. 
+		//In this case, DFF_Prop_wzDescription will not be set in excel file.
 		//So In the end of SvxMSDffManager::ImportShape, description will not be set. But actually in excel,
 		//the alt text is the label value. So here set description as label text first which is called before ImportShape.
 		Reference< ::com::sun::star::beans::XPropertySet > xPropset( mxShape, UNO_QUERY );
@@ -3957,7 +3957,7 @@ void XclImpDrawing::ReadDffRecord( XclImpStream& rStrm )
 void XclImpDrawing::ReadObj8( XclImpStream& rStrm )
 {
     XclImpDrawObjRef xDrawObj = XclImpDrawObjBase::ReadObj8( GetRoot(), rStrm );
-    
+
     if(xDrawObj.is())
     {
         // store the new object in the internal containers

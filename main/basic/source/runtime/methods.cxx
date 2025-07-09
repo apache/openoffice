@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
@@ -1364,13 +1364,13 @@ RTLFUNC(Oct)
 	}
 }
 
-// Replace(expression, find, replace[, start[, count[, compare]]]) 
+// Replace(expression, find, replace[, start[, count[, compare]]])
 
 RTLFUNC(Replace)
 {
     (void)pBasic;
     (void)bWrite;
-    
+
 	sal_uIntPtr nArgCount = rPar.Count()-1;
 	if ( nArgCount < 3 || nArgCount > 6 )
 		StarBASIC::Error( SbERR_BAD_ARGUMENT );
@@ -1400,7 +1400,7 @@ RTLFUNC(Replace)
 			if( lCount < -1 || lCount > 0xffff )
 			{
 				StarBASIC::Error( SbERR_BAD_ARGUMENT );
-				lCount = -1;	
+				lCount = -1;
 			}
 		}
 
@@ -1839,7 +1839,7 @@ sal_Bool implDateSerial( sal_Int16 nYear, sal_Int16 nMonth, sal_Int16 nDay, doub
 	else if ( nYear < 100 )
 		nYear += 1900;
 	Date aCurDate( nDay, nMonth, nYear );
-	if ((nYear < 100 || nYear > 9999) )  
+	if ((nYear < 100 || nYear > 9999) )
 	{
 		StarBASIC::Error( SbERR_BAD_ARGUMENT );
 		return sal_False;
@@ -1847,7 +1847,7 @@ sal_Bool implDateSerial( sal_Int16 nYear, sal_Int16 nMonth, sal_Int16 nDay, doub
 	if ( !SbiRuntime::isVBAEnabled() )
 	{
 		if ( (nMonth < 1 || nMonth > 12 )||
-		(nDay < 1 || nDay > 31 ) ) 
+		(nDay < 1 || nDay > 31 ) )
 		{
 			StarBASIC::Error( SbERR_BAD_ARGUMENT );
 			return sal_False;
@@ -1857,7 +1857,7 @@ sal_Bool implDateSerial( sal_Int16 nYear, sal_Int16 nMonth, sal_Int16 nDay, doub
 	{
 		// grab the year & month
 		aCurDate = Date( 1, (( nMonth % 12 ) > 0 ) ? ( nMonth % 12 ) : 12 + ( nMonth % 12 ), nYear );
-	
+
 		// adjust year based on month value
 		// e.g. 2000, 0, xx = 1999, 12, xx ( or December of the previous year )
 		//		2000, 13, xx = 2001, 1, xx ( or January of the following year )
@@ -1878,7 +1878,7 @@ sal_Bool implDateSerial( sal_Int16 nYear, sal_Int16 nMonth, sal_Int16 nDay, doub
 			aCurDate += nDay - 1;
 		else
 			aCurDate.SetDay( nDay );
-	}	
+	}
 
 	long nDiffDays = GetDayDiff( aCurDate );
     rdRet = (double)nDiffDays;
@@ -2006,16 +2006,16 @@ RTLFUNC(DateValue)
 		String aStr( rPar.Get(1)->GetString() );
 		sal_Bool bSuccess = pFormatter->IsNumberFormat( aStr, nIndex, fResult );
 		short nType = pFormatter->GetType( nIndex );
-		
+
 		// DateValue("February 12, 1969") raises error if the system locale is not en_US
 		// by using SbiInstance::GetNumberFormatter.
-		// It seems that both locale number formatter and English number formatter 
+		// It seems that both locale number formatter and English number formatter
 		// are supported in Visual Basic.
 		LanguageType eLangType = GetpApp()->GetSettings().GetLanguage();
         if( !bSuccess && ( eLangType != LANGUAGE_ENGLISH_US ) )
 		{
 			// Create a new SvNumberFormatter by using LANGUAGE_ENGLISH to get the date value;
-			com::sun::star::uno::Reference< com::sun::star::lang::XMultiServiceFactory > 
+			com::sun::star::uno::Reference< com::sun::star::lang::XMultiServiceFactory >
 				xFactory = comphelper::getProcessServiceFactory();
 			SvNumberFormatter aFormatter( xFactory, LANGUAGE_ENGLISH_US );
 			bSuccess = aFormatter.IsNumberFormat( aStr, nIndex, fResult );
@@ -2983,8 +2983,8 @@ RTLFUNC(GetAttr)
 
 			return;
 		}
-	#endif	
-		
+	#endif
+
 		// <-- UCB
 		if( hasUno() )
 		{
@@ -3973,28 +3973,28 @@ RTLFUNC(StrConv)
 {
     (void)pBasic;
     (void)bWrite;
-    
+
 	sal_uIntPtr nArgCount = rPar.Count()-1;
 	if( nArgCount < 2 || nArgCount > 3 )
 	{
 		StarBASIC::Error( SbERR_BAD_ARGUMENT );
-		return;	
+		return;
 	}
 
-	String aOldStr = rPar.Get(1)->GetString(); 
+	String aOldStr = rPar.Get(1)->GetString();
 	sal_Int32 nConversion = rPar.Get(2)->GetLong();
-	
+
 	sal_uInt16 nLanguage = LANGUAGE_SYSTEM;
 	if( nArgCount == 3 )
 	{
-		// LCID not supported now	
+		// LCID not supported now
 		//nLanguage = rPar.Get(3)->GetInteger();
 	}
 
 	sal_uInt16 nOldLen = aOldStr.Len();
 	if( nOldLen == 0 )
 	{
-		// null string,return 
+		// null string,return
 		rPar.Get(0)->PutString(aOldStr);
 		return;
 	}
@@ -4009,7 +4009,7 @@ RTLFUNC(StrConv)
 		nType |= ::com::sun::star::i18n::TransliterationModules_LOWERCASE_UPPERCASE;
 	else if ( (nConversion & 0x02) == 2 ) // vbLowerCase
 		nType |= ::com::sun::star::i18n::TransliterationModules_UPPERCASE_LOWERCASE;
-	
+
 	if ( (nConversion & 0x04) == 4 ) // vbWide
 		nType |= ::com::sun::star::i18n::TransliterationModules_HALFWIDTH_FULLWIDTH;
 	else if ( (nConversion & 0x08) == 8 ) // vbNarrow
@@ -4040,12 +4040,12 @@ RTLFUNC(StrConv)
 		{
 			pChar[i] = static_cast< sal_Char >( i%2 ? ((*pSrc) >> 8) & 0xff : (*pSrc) & 0xff );
 			if( i%2 )
-				pSrc++;	
+				pSrc++;
 		}
 		pChar[nSize] = '\0';
-		::rtl::OString aOStr(pChar);	
-		
-		// there is no concept about default codepage in unix. so it is incorrectly in unix 
+		::rtl::OString aOStr(pChar);
+
+		// there is no concept about default codepage in unix. so it is incorrectly in unix
 		::rtl::OUString aOUStr = ::rtl::OStringToOUString(aOStr, osl_getThreadTextEncoding());
 		aNewStr = String(aOUStr);
 		rPar.Get(0)->PutString( aNewStr );
@@ -4054,7 +4054,7 @@ RTLFUNC(StrConv)
 	else if ( (nConversion & 0x80) == 128 ) // vbFromUnicode
 	{
 		::rtl::OUString aOUStr(aNewStr);
-		// there is no concept about default codepage in unix. so it is incorrectly in unix 
+		// there is no concept about default codepage in unix. so it is incorrectly in unix
 		::rtl::OString aOStr = ::rtl::OUStringToOString(aNewStr,osl_getThreadTextEncoding());
 		const sal_Char* pChar = aOStr.getStr();
 		sal_uInt16 nArraySize = static_cast< sal_uInt16 >( aOStr.getLength() );
@@ -4065,11 +4065,11 @@ RTLFUNC(StrConv)
 			if( bIncIndex )
 				pArray->AddDim( 1, nArraySize );
 			else
-				pArray->AddDim( 0, nArraySize-1 );	
+				pArray->AddDim( 0, nArraySize-1 );
 		}
 		else
 		{
-			pArray->unoAddDim( 0, -1 );	
+			pArray->unoAddDim( 0, -1 );
 		}
 
 		for( sal_uInt16	i=0; i< nArraySize; i++)
@@ -4081,7 +4081,7 @@ RTLFUNC(StrConv)
 			short index = i;
 			if( bIncIndex )
 				++index;
-			pArray->Put( pNew, &index );	
+			pArray->Put( pNew, &index );
 		}
 
 		SbxVariableRef refVar = rPar.Get(0);
@@ -4090,7 +4090,7 @@ RTLFUNC(StrConv)
 		refVar->PutObject( pArray );
 		refVar->SetFlags( nFlags );
 	    refVar->SetParameters( NULL );
-   		return;	   
+   		return;
 	}
 
 	rPar.Get(0)->PutString(aNewStr);
@@ -4489,7 +4489,7 @@ RTLFUNC(Partition)
 {
     (void)pBasic;
     (void)bWrite;
-    
+
 	if ( rPar.Count() != 5 )
 	{
 		StarBASIC::Error( SbERR_BAD_ARGUMENT );
@@ -4500,7 +4500,7 @@ RTLFUNC(Partition)
 	sal_Int32 nStart = rPar.Get(2)->GetLong();
 	sal_Int32 nStop = rPar.Get(3)->GetLong();
 	sal_Int32 nInterval = rPar.Get(4)->GetLong();
-	
+
 	if( nStart < 0 || nStop <= nStart || nInterval < 1 )
 	{
 		StarBASIC::Error( SbERR_BAD_ARGUMENT );
@@ -4510,7 +4510,7 @@ RTLFUNC(Partition)
 	// the Partition function inserts leading spaces before lowervalue and uppervalue
     // so that they both have the same number of characters as the string
     // representation of the value (Stop + 1). This ensures that if you use the output
-    // of the Partition function with several values of Number, the resulting text 
+    // of the Partition function with several values of Number, the resulting text
 	// will be handled properly during any subsequent sort operation.
 
 	// calculate the  maximun number of characters before lowervalue and uppervalue
@@ -4522,7 +4522,7 @@ RTLFUNC(Partition)
 
 	::rtl::OUStringBuffer aRetStr( nLen * 2 + 1);
 	::rtl::OUString aLowerValue;
-	::rtl::OUString aUpperValue;	
+	::rtl::OUString aUpperValue;
 	if( nNumber < nStart )
 	{
 		aUpperValue = aBeforeStart;
@@ -4540,7 +4540,7 @@ RTLFUNC(Partition)
 			nLowerValue = ((( nNumber - nStart ) / nInterval ) * nInterval ) + nStart;
 			nUpperValue = nLowerValue + nInterval - 1;
 		}
-		
+
 		aLowerValue = ::rtl::OUString::valueOf( nLowerValue );
 		aUpperValue = ::rtl::OUString::valueOf( nUpperValue );
 	}

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -436,7 +436,7 @@ struct StaticDiagramWrapperPropertyArray_Initializer
         return &aPropSeq;
     }
 
-private:        
+private:
     uno::Sequence< Property > lcl_GetPropertySequence()
     {
         ::std::vector< ::com::sun::star::beans::Property > aProperties;
@@ -599,7 +599,7 @@ const tMakeStringStringMap& lcl_getChartTypeNameMap()
 
         ( ::rtl::OUString::createFromAscii( "com.sun.star.chart2.BubbleChartType" )
         , ::rtl::OUString::createFromAscii( "com.sun.star.chart.BubbleDiagram" ) )
-        
+
         ;
     return g_aChartTypeNameMap;
 }
@@ -745,7 +745,7 @@ void SAL_CALL DiagramWrapper::setPosition( const awt::Point& aPosition )
     if( xProp.is() )
     {
         awt::Size aPageSize( m_spChart2ModelContact->GetPageSize() );
-        
+
         chart2::RelativePosition aRelativePosition;
         aRelativePosition.Anchor = drawing::Alignment_TOP_LEFT;
         aRelativePosition.Primary = double(aPosition.X)/double(aPageSize.Width);
@@ -1172,7 +1172,7 @@ void SAL_CALL DiagramWrapper::dispose()
 
     // /--
     MutexGuard aGuard( GetMutex());
-    
+
     DisposeHelper::DisposeAndClear( m_xXAxis );
     DisposeHelper::DisposeAndClear( m_xYAxis );
     DisposeHelper::DisposeAndClear( m_xZAxis );
@@ -1389,7 +1389,7 @@ void WrappedStackingProperty::setPropertyValue( const Any& rOuterValue, const Re
 
     StackMode eInnerStackMode;
     bool bHasDetectableInnerValue = detectInnerValue( eInnerStackMode );
-    
+
     if( !bHasDetectableInnerValue )
     {
         m_aOuterValue = rOuterValue;
@@ -1400,7 +1400,7 @@ void WrappedStackingProperty::setPropertyValue( const Any& rOuterValue, const Re
         return;
     if( !bNewValue && eInnerStackMode != m_eStackMode )
         return;
-    
+
     Reference< chart2::XDiagram > xDiagram( m_spChart2ModelContact->getChart2Diagram() );
     if( xDiagram.is() )
     {
@@ -1788,8 +1788,8 @@ void WrappedAttributedDataPointsProperty::setPropertyValue( const Any& rOuterVal
     uno::Sequence< uno::Sequence< sal_Int32 > > aNewValue;
     if( ! (rOuterValue >>= aNewValue) )
         throw lang::IllegalArgumentException( C2U("Property AttributedDataPoints requires value of type uno::Sequence< uno::Sequence< sal_Int32 > >"), 0, 0 );
-    
-    m_aOuterValue = rOuterValue;    
+
+    m_aOuterValue = rOuterValue;
 
     Reference< chart2::XDiagram > xDiagram( m_spChart2ModelContact->getChart2Diagram() );
     Reference< beans::XPropertySet > xDiaProp( xDiagram, uno::UNO_QUERY );
@@ -1811,7 +1811,7 @@ void WrappedAttributedDataPointsProperty::setPropertyValue( const Any& rOuterVal
             {
                 uno::Any aVal;
                 if( i < aNewValue.getLength() )
-                    aVal <<= aNewValue[i];  
+                    aVal <<= aNewValue[i];
                 else
                 {
                     //set empty sequence
@@ -1983,7 +1983,7 @@ void WrappedAutomaticSizeProperty::setPropertyValue( const Any& rOuterValue, con
             throw lang::IllegalArgumentException( C2U("Property AutomaticSize requires value of type boolean"), 0, 0 );
 
         try
-        { 
+        {
             if( bNewValue )
             {
                 Any aRelativeSize( xInnerPropertySet->getPropertyValue( C2U( "RelativeSize" ) ) );
@@ -2091,7 +2091,7 @@ const Sequence< beans::Property >& DiagramWrapper::getPropertySequence()
 const std::vector< WrappedProperty* > DiagramWrapper::createWrappedProperties()
 {
     ::std::vector< ::chart::WrappedProperty* > aWrappedProperties;
-    
+
     WrappedAxisAndGridExistenceProperties::addWrappedProperties( aWrappedProperties, m_spChart2ModelContact );
     WrappedAxisTitleExistenceProperties::addWrappedProperties( aWrappedProperties, m_spChart2ModelContact );
     WrappedAxisLabelExistenceProperties::addWrappedProperties( aWrappedProperties, m_spChart2ModelContact );
@@ -2104,7 +2104,7 @@ const std::vector< WrappedProperty* > DiagramWrapper::createWrappedProperties()
     WrappedSplineProperties::addWrappedProperties( aWrappedProperties, m_spChart2ModelContact );
     WrappedStockProperties::addWrappedProperties( aWrappedProperties, m_spChart2ModelContact );
     WrappedAutomaticPositionProperties::addWrappedProperties( aWrappedProperties );
-    
+
     aWrappedProperties.push_back( new WrappedDataRowSourceProperty( m_spChart2ModelContact ) );
     aWrappedProperties.push_back( new WrappedStackingProperty( StackMode_Y_STACKED,m_spChart2ModelContact ) );
     aWrappedProperties.push_back( new WrappedStackingProperty( StackMode_Y_STACKED_PERCENT, m_spChart2ModelContact ) );

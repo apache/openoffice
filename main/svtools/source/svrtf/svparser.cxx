@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -262,7 +262,7 @@ sal_Unicode SvParser::GetNextChar()
 			if( !bErr )
 			{
 				if (
-                     RTL_TEXTENCODING_DONTKNOW == eSrcEnc || 
+                     RTL_TEXTENCODING_DONTKNOW == eSrcEnc ||
                      RTL_TEXTENCODING_SYMBOL == eSrcEnc
                    )
 				{
@@ -314,11 +314,11 @@ sal_Unicode SvParser::GetNextChar()
 								}
 								else if( 0 != nChars || 0 != nInfo )
 								{
-									DBG_ASSERT( (nInfo&RTL_TEXTTOUNICODE_INFO_SRCBUFFERTOSMALL) == 0, 
+									DBG_ASSERT( (nInfo&RTL_TEXTTOUNICODE_INFO_SRCBUFFERTOSMALL) == 0,
 										"source buffer is to small" );
 									DBG_ASSERT( (nInfo&~(RTL_TEXTTOUNICODE_INFO_SRCBUFFERTOSMALL)) == 0,
 		 								"there is a conversion error" );
-									DBG_ASSERT( 0 == nChars, 
+									DBG_ASSERT( 0 == nChars,
 									   "there is a converted character, but an error" );
 									// There are still errors, but nothing we can
 									// do
@@ -358,13 +358,13 @@ sal_Unicode SvParser::GetNextChar()
 								}
 								else
 								{
-									DBG_ASSERT( (nInfo&RTL_TEXTTOUNICODE_INFO_SRCBUFFERTOSMALL) == 0, 
+									DBG_ASSERT( (nInfo&RTL_TEXTTOUNICODE_INFO_SRCBUFFERTOSMALL) == 0,
 										"source buffer is to small" );
 									DBG_ASSERT( (nInfo&~(RTL_TEXTTOUNICODE_INFO_SRCBUFFERTOSMALL)) == 0,
 		 								"there is a conversion error" );
-									DBG_ASSERT( 0 == nChars, 
+									DBG_ASSERT( 0 == nChars,
 									   "there is a converted character, but an error" );
-									
+
 									// There are still errors, so we use the first
 									// character and restart after that.
 									c = (sal_Unicode)sBuffer[0];
@@ -383,9 +383,9 @@ sal_Unicode SvParser::GetNextChar()
 					}
 					else if( 0 != nChars || 0 != nInfo )
 					{
-						DBG_ASSERT( 0 == nChars, 
+						DBG_ASSERT( 0 == nChars,
 								"there is a converted character, but an error" );
-						DBG_ASSERT( 0 != nInfo, 
+						DBG_ASSERT( 0 != nInfo,
 								"there is no converted character and no error" );
 						// #73398#: If the character could not be converted,
 						// because a conversion is not available, do no conversion at all.

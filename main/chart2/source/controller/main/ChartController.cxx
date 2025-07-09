@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -361,7 +361,7 @@ APPHELPER_XSERVICEINFO_IMPL(ChartController,CHART_CONTROLLER_SERVICE_IMPLEMENTAT
 		throw(uno::RuntimeException)
 {
     ::vos::OGuard aGuard( Application::GetSolarMutex());
-	
+
 	if( impl_isDisposedOrSuspended() ) //@todo? allow attaching the frame while suspended?
 		return; //behave passive if already disposed or suspended
 
@@ -407,7 +407,7 @@ APPHELPER_XSERVICEINFO_IMPL(ChartController,CHART_CONTROLLER_SERVICE_IMPLEMENTAT
 	}
 	{
         awt::Size aPageSize( ChartModelHelper::getPageSize(getModel()) );
-        
+
 		// calls to VCL
 		::vos::OGuard aSolarGuard( Application::GetSolarMutex());
 		m_pChartWindow = new ChartWindow(this,pParent,pParent?pParent->GetStyle():0);
@@ -1439,7 +1439,7 @@ void SAL_CALL ChartController::modified( const lang::EventObject& /* aEvent */ )
     // the source can also be a subobject of the ChartModel
     // @todo: change the source in ChartModel to always be the model itself ?
 //     if( getModel() == aEvent.Source )
-    
+
 
     //todo? update menu states ?
 }
@@ -1563,7 +1563,7 @@ void ChartController::impl_initializeAccessible( const uno::Reference< lang::XIn
         ( C2U("InsertMenuLegend") )   ( C2U("InsertLegend") )         ( C2U("DeleteLegend") )
         ( C2U("InsertMenuDataLabels") )
         ( C2U("InsertMenuAxes") )     ( C2U("InsertRemoveAxes") )         ( C2U("InsertMenuGrids") )
-        ( C2U("InsertSymbol") )       
+        ( C2U("InsertSymbol") )
         ( C2U("InsertTrendlineEquation") )  ( C2U("InsertTrendlineEquationAndR2") )
         ( C2U("InsertR2Value") )      ( C2U("DeleteR2Value") )
         ( C2U("InsertMenuTrendlines") )  ( C2U("InsertTrendline") )
@@ -1592,7 +1592,7 @@ void ChartController::impl_initializeAccessible( const uno::Reference< lang::XIn
         //context menu - format objects entries
         ( C2U("FormatWall") )        ( C2U("FormatFloor") )         ( C2U("FormatChartArea") )
         ( C2U("FormatLegend") )
-        
+
         ( C2U("FormatAxis") )           ( C2U("FormatTitle") )
         ( C2U("FormatDataSeries") )     ( C2U("FormatDataPoint") )
         ( C2U("ResetAllDataPoints") )   ( C2U("ResetDataPoint") )

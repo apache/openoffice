@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -39,14 +39,14 @@ namespace ucb = ::com::sun::star::ucb;
 namespace lang = ::com::sun::star::lang;
 namespace uri = ::com::sun::star::uri;
 namespace script = ::com::sun::star::script;
- 
+
 static const char SHARE[] = "share";
 static const char SHARE_URI[] =
     "vnd.sun.star.expand:$$OOO_BASE_DIR";
 //    "vnd.sun.star.expand:${$OOO_BASE_DIR/program/" SAL_CONFIGFILE( "bootstrap") "::BaseInstallation}";
 
 static const char SHARE_UNO_PACKAGES[] = "share:uno_packages";
-static const char SHARE_UNO_PACKAGES_URI[] = 
+static const char SHARE_UNO_PACKAGES_URI[] =
     "vnd.sun.star.expand:$UNO_SHARED_PACKAGES_CACHE";
 
 static const char USER[] = "user";
@@ -104,7 +104,7 @@ ScriptingFrameworkURIHelper::initialize(
 throw ( uno::Exception, uno::RuntimeException )
 {
     if ( args.getLength() != 2 ||
-         args[0].getValueType() != ::getCppuType((const OUString*)NULL) || 
+         args[0].getValueType() != ::getCppuType((const OUString*)NULL) ||
          args[1].getValueType() != ::getCppuType((const OUString*)NULL) )
     {
         throw uno::RuntimeException( OUString::createFromAscii(
@@ -307,7 +307,7 @@ uno::Sequence< ::rtl::OUString > SAL_CALL
 ScriptingFrameworkURIHelper::getSupportedServiceNames()
     throw( uno::RuntimeException )
 {
-    ::rtl::OUString serviceNameList[] = { 
+    ::rtl::OUString serviceNameList[] = {
         ::rtl::OUString::createFromAscii(
             "com.sun.star.script.provider.ScriptURIHelper" ) };
 

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -76,7 +76,7 @@ int __cdecl _tmain( int argc, _TCHAR * argv[] )
 		return -1;
 	}
 
-	
+
 	_Module.Init( ObjectMap, GetModuleHandle( NULL));
 
 	if( FAILED(hr=doTest()))
@@ -123,7 +123,7 @@ HRESULT doTest()
     putenv("UNO_TYPES=types.rdb");
     putenv("UNO_SERVICES=services.rdb");
     Reference<XComponentContext> xContext = defaultBootstrap_InitialComponentContext();
-    
+
 	Reference< XMultiComponentFactory > mgr = xContext->getServiceManager();//createRegistryServiceFactory( OUString(L"services.rdb"));
 	Reference< XInterface > xIntSupplier= mgr->createInstanceWithContext(
         OUString(L"com.sun.star.bridge.OleBridgeSupplierVar1"), xContext);
@@ -139,7 +139,7 @@ HRESULT doTest()
 	if (target.getValueTypeClass() == getCppuType((sal_uInt32*) 0).getTypeClass())
 	{
 		VARIANT* pVariant = *(VARIANT**)target.getValue();
-		
+
 		oletest= pVariant->pdispVal;
 
 		VariantClear(pVariant);
@@ -151,12 +151,12 @@ HRESULT doTest()
 	CComVariant varParam2;
 	CComVariant varParam3;
 	CComVariant varParam4;
-	
+
 	long value= 100;
 	varParam1.vt= VT_I1 | VT_BYREF;
 	varParam1.plVal= &value;
 
-	// Testing the caching of DISPIDs and the process of acquiring member information 
+	// Testing the caching of DISPIDs and the process of acquiring member information
 	// on demand in IDispatch::Invoke
 	// Step through the corresponding IDispatch implementation of the ole bridge
 	hr=	oletest.Invoke1(static_cast<LPCOLESTR>(L"testinout_methodByte"), &varParam1, &varRet);
@@ -217,14 +217,14 @@ HRESULT doTest()
 
 	LPOLESTR attrib= L"AttrByte";
 	hr = oletest.p->GetIDsOfNames(IID_NULL, &attrib, 1, LOCALE_USER_DEFAULT, &dispid);
-	
+
 	hr = oletest.p->Invoke( dispid, IID_NULL, LOCALE_USER_DEFAULT,
 		DISPATCH_METHOD | DISPATCH_PROPERTYPUTREF, &params, &varRet, NULL, NULL);
 
 	hr = oletest.p->Invoke( dispid, IID_NULL, LOCALE_USER_DEFAULT,
 		DISPATCH_METHOD | DISPATCH_PROPERTYGET, &params, &varRet, NULL, NULL);
 
- 
+
 
 	CComVariant varByteArray;
 	varByteArray.vt= VT_ARRAY | VT_I1;
@@ -264,7 +264,7 @@ HRESULT doTest()
 	CComVariant varUnkArray;
 	varUnkArray.vt= VT_ARRAY | VT_UNKNOWN;
 	varUnkArray.parray= (SAFEARRAY*)arUnknown;
-	
+
 	// preparing out parameter;
 	char byteOut;
 	CComVariant varOutByte;		//###
@@ -293,7 +293,7 @@ HRESULT doTest()
 
 	CComPtr<IDispatch> dispOut;
 	CComVariant varOutXInterface; //###
-	varOutXInterface.vt= VT_BYREF |VT_DISPATCH;	
+	varOutXInterface.vt= VT_BYREF |VT_DISPATCH;
 	V_DISPATCHREF(&varOutXInterface)= &dispOut.p;
 
 	// In Parameter ( all of type Sequence ###########################################################
@@ -383,7 +383,7 @@ HRESULT doTest()
 	CComVariant varAttr3;
 	outDisp.GetPropertyByName(L"AttrAny2", &varAttr3);
 	ATLTRACE("property OleTest.AttrAny2: %s", W2T(varAttr3.bstrVal));
-	
+
 	OutputDebugString(_T("testout_methodMulParams1 ( 2 out Parameter) \n"));
 	long longOut2=0;
 	CComVariant _params[2];
@@ -395,7 +395,7 @@ HRESULT doTest()
 	OutputDebugString(_T("testout_methodMulParams1  | out values: \n"));
 	printVariant( _params[1]);
 	printVariant( _params[0]);
-	
+
 	OutputDebugString(_T("testout_methodMulParams2 ( 3 out Parameter) \n"));
 	CComVariant _params2[3];
 	_params2[2]= varOutLong;
@@ -416,7 +416,7 @@ HRESULT doTest()
 	OutputDebugString(_T("testout_methodMulParams3  | out values: \n"));
 	printVariant( _params3[1]);
 	printVariant( _params3[0]);
-	
+
 	//In Out Parameter ###########################################################################
 	OutputDebugString( _T("In Out parameter ###########################################\n\n"));
 
@@ -484,8 +484,8 @@ HRESULT doTest()
 	varRet.Clear();
 	hr= oletest.GetPropertyByName( static_cast<LPCOLESTR>(L"AttrByte"), &varRet);
 	printVariant( varRet);
-	
-	
+
+
 	return S_OK;
 
 
@@ -497,7 +497,7 @@ void printVariant( VARIANT & _var)
 	HRESULT hr;
 	USES_CONVERSION;
 	CComVariant var;
-	hr=	VariantCopyInd( &var, &_var); 
+	hr=	VariantCopyInd( &var, &_var);
 	if( var.vt & VT_ARRAY)
 	{
 		VARTYPE type= var.vt ^ VT_ARRAY;
@@ -597,9 +597,9 @@ void printVariant( VARIANT & _var)
 			break;
 		case VT_I4: wsprintf( (TCHAR*)buf, _T(" VT_I4: %d \n"), V_I4( &var) );
 			break;
-		case VT_R8: 
+		case VT_R8:
 			{
-				
+
 //				int     decimal,   sign;
 //				char    *buffer;
 //				int     precision = 14;
@@ -630,7 +630,7 @@ void printVariant( VARIANT & _var)
 
 				break;
 			}
-			
+
 
 		case VT_BSTR:
 			{

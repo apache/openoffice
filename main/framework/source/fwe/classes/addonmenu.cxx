@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -109,7 +109,7 @@ AddonPopupMenu::~AddonPopupMenu()
 
 // ------------------------------------------------------------------------
 
-static ::rtl::OUString GetModuleIdentifier( const Reference< XMultiServiceFactory >& rServiceManager, 
+static ::rtl::OUString GetModuleIdentifier( const Reference< XMultiServiceFactory >& rServiceManager,
                                             const Reference< XFrame >& rFrame )
 {
     Reference< XModuleManager > xModuleManager( rServiceManager->createInstance( SERVICENAME_MODULEMANAGER ), UNO_QUERY );
@@ -150,7 +150,7 @@ PopupMenu* AddonMenuManager::CreatePopupMenuType( MenuType eMenuType, const Refe
 }
 
 // Create the Add-Ons menu
-AddonMenu* AddonMenuManager::CreateAddonMenu( const Reference< XFrame >& rFrame, 
+AddonMenu* AddonMenuManager::CreateAddonMenu( const Reference< XFrame >& rFrame,
                                               const Reference< XMultiServiceFactory >& rServiceManager )
 {
     AddonsOptions aOptions;
@@ -199,8 +199,8 @@ static sal_uInt16 FindMenuId( Menu* pMenu, const String aCommand )
 
 
 // Merge the Add-Ons help menu items into the given menu bar at a defined pos
-void AddonMenuManager::MergeAddonHelpMenu( const Reference< XFrame >& rFrame, 
-                                           MenuBar* pMergeMenuBar, 
+void AddonMenuManager::MergeAddonHelpMenu( const Reference< XFrame >& rFrame,
+                                           MenuBar* pMergeMenuBar,
                                            const Reference< XMultiServiceFactory >& rServiceManager )
 {
     if ( pMergeMenuBar )
@@ -275,7 +275,7 @@ void AddonMenuManager::MergeAddonHelpMenu( const Reference< XFrame >& rFrame,
 // Merge the addon popup menus into the given menu bar at the provided pos.
 void AddonMenuManager::MergeAddonPopupMenus( const Reference< XFrame >& rFrame,
 										     sal_uInt16	              nMergeAtPos,
-											 MenuBar*             pMergeMenuBar, 
+											 MenuBar*             pMergeMenuBar,
                                              const Reference< XMultiServiceFactory >& rServiceManager )
 {
 	if ( pMergeMenuBar )
@@ -438,13 +438,13 @@ sal_Bool AddonMenuManager::IsCorrectContext( const ::rtl::OUString& rModuleIdent
 {
     if ( aContext.isEmpty() )
         return sal_True;
-    
+
     if ( !rModuleIdentifier.isEmpty() )
     {
         sal_Int32 nIndex = aContext.indexOf( rModuleIdentifier );
         return ( nIndex >= 0 );
     }
-    
+
     return sal_False;
 }
 

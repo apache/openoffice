@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -372,7 +372,7 @@ namespace accessibility
         if( aChild.is() )
             aChild->SetEditSource(pEditSource);
 
-        if( !pEditSource ) 
+        if( !pEditSource )
         {
             // going defunc
             UnSetState( AccessibleStateType::SHOWING );
@@ -382,7 +382,7 @@ namespace accessibility
 
             Dispose();
         }
-		mpEditSource = pEditSource; 
+		mpEditSource = pEditSource;
         // #108900# Init last text content
         try
         {
@@ -1275,7 +1275,7 @@ namespace accessibility
             // caret is always nEndPara,nEndPos
 			EBulletInfo aBulletInfo = GetTextForwarder().GetBulletInfo( GetParagraphIndex() );
 			if( aBulletInfo.nParagraph != EE_PARA_NOT_FOUND &&
-				aBulletInfo.bVisible && 
+				aBulletInfo.bVisible &&
 				aBulletInfo.nType != SVX_NUM_BITMAP )
 			{
 				sal_Int32 nBulletLen = aBulletInfo.aText.Len();
@@ -1327,9 +1327,9 @@ namespace accessibility
 			STR("CharPosture");
 	  STR("CharShadowed");
 			STR("CharStrikeout");
-			STR("CharUnderline");		
+			STR("CharUnderline");
 			STR("CharUnderlineColor");
-			STR("CharWeight");			
+			STR("CharWeight");
 		        STR("NumberingLevel");
 			STR("NumberingRules");
 			STR("ParaAdjust");
@@ -1445,7 +1445,7 @@ namespace accessibility
     {
         DBG_CHKTHIS( AccessibleEditableTextPara, NULL );
         ::vos::OGuard aGuard( Application::GetSolarMutex() );
-	
+
 		//Skip the bullet range to ignore the bullet text
 		SvxTextForwarder& rCacheTF = GetTextForwarder();
 		EBulletInfo aBulletInfo = rCacheTF.GetBulletInfo( GetParagraphIndex() );
@@ -1519,7 +1519,7 @@ namespace accessibility
 		if( bSupplementalMode )
 		{
 			_correctValues( nIndex, aRes );
-			// NumberingPrefix		
+			// NumberingPrefix
 			nRes = aRes.getLength();
 			aRes.realloc( nRes + 1 );
 			pRes = aRes.getArray();
@@ -1734,7 +1734,7 @@ namespace accessibility
     ::rtl::OUString SAL_CALL AccessibleEditableTextPara::getText() throw (uno::RuntimeException)
     {
         DBG_CHKTHIS( AccessibleEditableTextPara, NULL );
-        
+
         ::vos::OGuard aGuard( Application::GetSolarMutex() );
 
         DBG_ASSERT(GetParagraphIndex() >= 0 && GetParagraphIndex() <= USHRT_MAX,
@@ -1782,7 +1782,7 @@ namespace accessibility
 					if (xComponent.is())
 					{
 						uno::Reference< ::com::sun::star::accessibility::XAccessibleContext > xContext(xComponent,uno::UNO_QUERY);
-						if (xContext->getAccessibleRole() == AccessibleRole::SHAPE 
+						if (xContext->getAccessibleRole() == AccessibleRole::SHAPE
 							|| xContext->getAccessibleRole() == AccessibleRole::TABLE_CELL)
 						{
 							anyChar <<= COL_BLACK;
@@ -1799,7 +1799,7 @@ namespace accessibility
 			}
 			// Underline
 			if(rRes.Name.compareTo(::rtl::OUString::createFromAscii("CharUnderline"))==0)
-			{	
+			{
 				/*
 				// MT: Implement XAccessibleTextMarkup, mark with TextMarkupType::SPELLCHECK. This way done in SW.
 				if (IsCurrentEditorEnableAutoSpell( mxParent ))
@@ -1811,7 +1811,7 @@ namespace accessibility
 						if ( bWrong )
 						{
 							uno::Any &anyUnderLine = pRes[9].Value;
-							// MT IA2: Not needed? sal_uInt16 crUnderLine = (sal_uInt16)(anyUnderLine.pReserved);		
+							// MT IA2: Not needed? sal_uInt16 crUnderLine = (sal_uInt16)(anyUnderLine.pReserved);
 							anyUnderLine <<= (sal_uInt16)UNDERLINE_WAVE;
 						}
 					}
@@ -1824,7 +1824,7 @@ namespace accessibility
 			}
 			// Underline color && Mis-spell
 			if(rRes.Name.compareTo(::rtl::OUString::createFromAscii("CharUnderlineColor"))==0)
-			{	
+			{
 				uno::Any &anyCharUnderLine = rRes.Value;
 				sal_uInt32 crCharUnderLine = static_cast<sal_uInt32>( reinterpret_cast<sal_uIntPtr>( anyCharUnderLine.pReserved));
 				if (COL_AUTO == crCharUnderLine )
@@ -1841,7 +1841,7 @@ namespace accessibility
 					if (xComponent.is())
 					{
 						uno::Reference< ::com::sun::star::accessibility::XAccessibleContext > xContext(xComponent,uno::UNO_QUERY);
-						if (xContext->getAccessibleRole() == AccessibleRole::SHAPE 
+						if (xContext->getAccessibleRole() == AccessibleRole::SHAPE
 							|| xContext->getAccessibleRole() == AccessibleRole::TABLE_CELL)
 						{
 							anyCharUnderLine <<= COL_BLACK;
@@ -1865,7 +1865,7 @@ namespace accessibility
 						if ( bWrong )
 						{
 							uno::Any &anyUnderLineColor = rRes.Value;
-							// MT IA2: Not needed? sal_uInt16 crUnderLineColor = (sal_uInt16)(anyUnderLineColor.pReserved);		
+							// MT IA2: Not needed? sal_uInt16 crUnderLineColor = (sal_uInt16)(anyUnderLineColor.pReserved);
 							anyUnderLineColor <<= COL_LIGHTRED;
 						}
 					}
@@ -1873,12 +1873,12 @@ namespace accessibility
 					{
 					}
 				}
-				*/				
+				*/
 				continue;
 			}
 			// NumberingLevel
 			if(rRes.Name.compareTo(::rtl::OUString::createFromAscii("NumberingLevel"))==0)
-			{				
+			{
 				const SvxNumBulletItem& rNumBullet = ( SvxNumBulletItem& )rCacheTF.GetParaAttribs(GetParagraphIndex()).Get(EE_PARA_NUMBULLET);
 				if(rNumBullet.GetNumRule()->GetLevelCount()==0)
 				{
@@ -1894,13 +1894,13 @@ namespace accessibility
             		SvxAccessibleTextPropertySet aPropSet( &GetEditSource(), ImplGetSvxTextPortionSvxPropertySet() );
 
 					aPropSet.SetSelection( MakeSelection( 0, GetTextLen() ) );
-					rRes.Value = aPropSet._getPropertyValue( rRes.Name, mnParagraphIndex ); 
+					rRes.Value = aPropSet._getPropertyValue( rRes.Name, mnParagraphIndex );
 					rRes.State = aPropSet._getPropertyState( rRes.Name, mnParagraphIndex );
 					rRes.Handle = -1;
 				}
 				continue;
 			}
-			// NumberingRules	
+			// NumberingRules
 			if(rRes.Name.compareTo(::rtl::OUString::createFromAscii("NumberingRules"))==0)
 			{
 				SfxItemSet aAttribs = rCacheTF.GetParaAttribs( GetParagraphIndex() );
@@ -1916,7 +1916,7 @@ namespace accessibility
 					// MT IA2 TODO: Check if this is the correct replacement for ImplGetSvxCharAndParaPropertiesMap
             		SvxAccessibleTextPropertySet aPropSet( &GetEditSource(), ImplGetSvxTextPortionSvxPropertySet() );
 					aPropSet.SetSelection( MakeSelection( 0, GetTextLen() ) );
-					rRes.Value = aPropSet._getPropertyValue( rRes.Name, mnParagraphIndex ); 
+					rRes.Value = aPropSet._getPropertyValue( rRes.Name, mnParagraphIndex );
 					rRes.State = aPropSet._getPropertyState( rRes.Name, mnParagraphIndex );
 					rRes.Handle = -1;
 				}
@@ -1953,9 +1953,9 @@ namespace accessibility
 		}
 		if( nFoundFieldIndex >= 0  )
 		{
-			if( bForward ) 
+			if( bForward )
 				return reeEnd - 1;
-			else 
+			else
 				return reeBegin;
 		}
 		return nIndex;
@@ -1991,18 +1991,18 @@ namespace accessibility
 		sal_Bool bExtend = sal_False;
 		if( nFoundFieldIndex >= 0 )
 		{
-			if( Segment.SegmentEnd < reeEnd ) 
+			if( Segment.SegmentEnd < reeEnd )
 			{
 				Segment.SegmentEnd  = reeEnd;
 				bExtend = sal_True;
 			}
-			if( Segment.SegmentStart > reeBegin ) 
+			if( Segment.SegmentStart > reeBegin )
 			{
 				Segment.SegmentStart = reeBegin;
 				bExtend = sal_True;
 			}
 			if( bExtend )
-			{				
+			{
 				//If there is a bullet before the field, should add the bullet length into the segment.
 				EBulletInfo aBulletInfo = rCacheTF.GetBulletInfo(nParaIndex);
 				int nBulletLen = aBulletInfo.aText.Len();
@@ -2018,7 +2018,7 @@ namespace accessibility
 						Segment.SegmentStart -= nBulletLen;
 				}
 				else
-					Segment.SegmentText = GetTextRange(Segment.SegmentStart, Segment.SegmentEnd);				
+					Segment.SegmentText = GetTextRange(Segment.SegmentStart, Segment.SegmentEnd);
 			}
 		}
 		return bExtend;
@@ -2039,7 +2039,7 @@ namespace accessibility
         switch( aTextType )
         {
 		case AccessibleTextType::CHARACTER:
-		case AccessibleTextType::WORD:				
+		case AccessibleTextType::WORD:
 		{
 			aResult = OCommonAccessibleText::getTextAtIndex( nIndex, aTextType );
 			ExtendByField( aResult );
@@ -2090,7 +2090,7 @@ namespace accessibility
                 CheckPosition(nIndex);
 		if (nIndex != 0  && nIndex == getCharacterCount())
 			--nIndex;
-                sal_uInt16 nLine, nLineCount=rCacheTF.GetLineCount( nParaIndex ); 
+                sal_uInt16 nLine, nLineCount=rCacheTF.GetLineCount( nParaIndex );
                 sal_Int32 nCurIndex;
                 //the problem is that rCacheTF.GetLineLen() will include the bullet length. But for the bullet line,
                 //the text value doesn't contain the bullet characters. all of the bullet and numbering info are exposed
@@ -2111,7 +2111,7 @@ namespace accessibility
                     sal_Int32 nLineLen = rCacheTF.GetLineLen(nParaIndex, nLine);
                     if (nLine == 0)
                         nCurIndex += nLineLen - nBulletLen;
-                    else 
+                    else
                         nCurIndex += nLineLen;
                     if( nCurIndex > nIndex )
                     {
@@ -2203,11 +2203,11 @@ namespace accessibility
 
                 CheckPosition(nIndex);
 
-                sal_uInt16 nLine, nLineCount=rCacheTF.GetLineCount( nParaIndex ); 
+                sal_uInt16 nLine, nLineCount=rCacheTF.GetLineCount( nParaIndex );
                 //the problem is that rCacheTF.GetLineLen() will include the bullet length. But for the bullet line,
                 //the text value doesn't contain the bullet characters. all of the bullet and numbering info are exposed
                 //by the IAText::attributes(). So here must do special support for bullet line.
-                sal_Int32 nCurIndex=0, nLastIndex=0, nCurLineLen=0; 
+                sal_Int32 nCurIndex=0, nLastIndex=0, nCurLineLen=0;
                 sal_Int32 nLastLineLen = 0, nBulletLen = 0;
                 // get the line before the line the index points into
                 for( nLine=0, nCurIndex=0, nLastIndex=0; nLine<nLineCount; ++nLine )
@@ -2230,9 +2230,9 @@ namespace accessibility
                     //nCurIndex += nCurLineLen;
                     if (nLine == 0)
                         nCurIndex += nCurLineLen - nBulletLen;
-                    else 
+                    else
                         nCurIndex += nCurLineLen;
-                    
+
                     //if( nCurIndex > nIndex &&
                     //nLastIndex > nCurLineLen )
                     if (nCurIndex > nIndex)
@@ -2256,7 +2256,7 @@ namespace accessibility
                             aResult.SegmentText = GetTextRange( aResult.SegmentStart + nBulletLen, aResult.SegmentEnd + nBulletLen);
                             break;
                         }
-                    }                
+                    }
                 }
 
                 break;
@@ -2278,23 +2278,23 @@ namespace accessibility
 					curWordStart = preWordStart = nIndex;
 				else
 					curWordStart = preWordStart = aBoundary.startPos;
-				
+
 				// get previous word
-				
+
 				sal_Bool bWord = sal_False;
-				
+
 				//while ( preWordStart > 0 && aBoundary.startPos == curWordStart)
 				while ( (preWordStart >= 0 && !bWord ) || ( aBoundary.endPos > curWordStart ) )
 					{
 					preWordStart--;
-					bWord = implGetWordBoundary( aBoundary, preWordStart );	
+					bWord = implGetWordBoundary( aBoundary, preWordStart );
 				}
 				if ( bWord && implIsValidBoundary( aBoundary, nLength ) )
 				{
 					aResult.SegmentText = sText.copy( aBoundary.startPos, aBoundary.endPos - aBoundary.startPos );
 					aResult.SegmentStart = aBoundary.startPos;
 					aResult.SegmentEnd = aBoundary.endPos;
-					ExtendByField( aResult );					
+					ExtendByField( aResult );
 				}
 			}
 			break;
@@ -2357,7 +2357,7 @@ namespace accessibility
                 CheckPosition(nIndex);
 
                 sal_uInt16 nLine, nLineCount=rCacheTF.GetLineCount( nParaIndex );
-                sal_Int32 nCurIndex; 
+                sal_Int32 nCurIndex;
                 //the problem is that rCacheTF.GetLineLen() will include the bullet length. But for the bullet line,
                 //the text value doesn't contain the bullet characters. all of the bullet and numbering info are exposed
                 //by the IAText::attributes(). So here must do special support for bullet line.
@@ -2376,12 +2376,12 @@ namespace accessibility
                     }
                     //nCurIndex += rCacheTF.GetLineLen(nParaIndex, nLine);
                     sal_Int32 nLineLen = rCacheTF.GetLineLen(nParaIndex, nLine);
-                    
+
                     if (nLine == 0)
                         nCurIndex += nLineLen - nBulletLen;
-                    else 
+                    else
                         nCurIndex += nLineLen;
-                    
+
                     if( nCurIndex > nIndex &&
                         nLine < nLineCount-1 )
                     {
@@ -2389,7 +2389,7 @@ namespace accessibility
                         aResult.SegmentEnd = nCurIndex + rCacheTF.GetLineLen(nParaIndex, nLine+1);
                         aResult.SegmentText = GetTextRange( aResult.SegmentStart + nBulletLen, aResult.SegmentEnd + nBulletLen);
                         break;
-                    }                
+                    }
                 }
 
                 break;
@@ -2407,12 +2407,12 @@ namespace accessibility
 				sal_Int32 nextWord = nIndex;
 				//if( nIndex >= aBoundary.startPos && nIndex <= aBoundary.endPos )
 				if( nIndex <= aBoundary.endPos )
-				{		
+				{
 					nextWord = 	aBoundary.endPos;
 					if( sText.getStr()[nextWord] == sal_Unicode(' ') ) nextWord++;
 					bWord = implGetWordBoundary( aBoundary, nextWord );
 				}
-				
+
 				if ( bWord && implIsValidBoundary( aBoundary, nLength ) )
 				{
 					aResult.SegmentText = sText.copy( aBoundary.startPos, aBoundary.endPos - aBoundary.startPos );
@@ -2947,7 +2947,7 @@ namespace accessibility
 
         return aOutSequence;
     }
-    
+
     // XAccessibleHypertext
     ::sal_Int32 SAL_CALL AccessibleEditableTextPara::getHyperLinkCount(  ) throw (::com::sun::star::uno::RuntimeException)
     {
@@ -2995,12 +2995,12 @@ namespace accessibility
 
         return xRef;
     }
-    
+
     ::sal_Int32 SAL_CALL AccessibleEditableTextPara::getHyperLinkIndex( ::sal_Int32 nCharIndex ) throw (::com::sun::star::lang::IndexOutOfBoundsException, ::com::sun::star::uno::RuntimeException)
     {
         const sal_Int32 nPara = GetParagraphIndex();
         SvxAccessibleTextAdapter& rT = GetTextForwarder();
-        
+
 //        SvxAccessibleTextIndex aIndex;
 //        aIndex.SetIndex(nPara, nCharIndex, rT);
 //        const sal_uInt16 nEEIndex = aIndex.GetEEIndex();
@@ -3022,10 +3022,10 @@ namespace accessibility
                 nHyperLink++;
             }
         }
-        
+
         return nHLIndex;
     }
-    
+
     // XAccessibleMultiLineText
     sal_Int32 SAL_CALL AccessibleEditableTextPara::getLineNumberAtIndex( sal_Int32 nIndex ) throw (lang::IndexOutOfBoundsException, uno::RuntimeException)
     {

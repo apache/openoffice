@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -218,7 +218,7 @@ void UnoControlTabPageContainerModel::addContainerListener( const Reference< XCo
 {
     maContainerListeners.addInterface( l );
 }
- 
+
 void UnoControlTabPageContainerModel::removeContainerListener( const Reference< XContainerListener >& l ) throw(RuntimeException)
 {
     maContainerListeners.removeInterface( l );
@@ -269,7 +269,7 @@ void SAL_CALL UnoControlTabPageContainer::setActiveTabPageID( ::sal_Int16 _activ
     vos::OGuard aSolarGuard( Application::GetSolarMutex() );
     Reference< XTabPageContainer >  xTPContainer( getPeer(), UNO_QUERY_THROW );
     xTPContainer->setActiveTabPageID(_activetabpageid);
-}    
+}
 ::sal_Int16 SAL_CALL UnoControlTabPageContainer::getTabPageCount(  ) throw (RuntimeException)
 {
     vos::OGuard aSolarGuard( Application::GetSolarMutex() );

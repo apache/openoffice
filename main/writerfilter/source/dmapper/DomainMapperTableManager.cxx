@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -38,7 +38,7 @@
 
 namespace writerfilter {
 namespace dmapper {
-    
+
 using namespace ::com::sun::star;
 using namespace ::std;
 /*-- 23.04.2007 14:57:49---------------------------------------------------
@@ -54,7 +54,7 @@ DomainMapperTableManager::DomainMapperTableManager(bool bOOXML) :
     m_pTablePropsHandler( new TablePropertiesHandler( bOOXML ) )
 {
     m_pTablePropsHandler->SetTableManager( this );
-    
+
 #ifdef DEBUG_DMAPPER_TABLE_HANDLER
 #ifdef DEBUG_TABLE
     setTagLogger(dmapper_logger);
@@ -107,7 +107,7 @@ bool DomainMapperTableManager::sprm(Sprm & rSprm)
             case NS_ooxml::LN_CT_TblPrBase_tblInd: //90725
                 /* WRITERFILTERSTATUS: done: 100, planned: 2, spent: 0 */
             {
-                //contains unit and value 
+                //contains unit and value
                 writerfilter::Reference<Properties>::Pointer_t pProperties = rSprm.getProps();
                 if( pProperties.get())
                 {   //contains attributes x2902 (LN_unit) and x17e2 (LN_trleft)
@@ -146,17 +146,17 @@ bool DomainMapperTableManager::sprm(Sprm & rSprm)
                 }
                 else
                     m_nCurrentHeaderRepeatCount.top() = -1;
-            break;  
+            break;
 
             case 0xd608: // TDefTable
                 /* WRITERFILTERSTATUS: done: 100, planned: 2, spent: 0 */
-            {    
+            {
                 writerfilter::Reference<Properties>::Pointer_t pProperties = rSprm.getProps();
                 if( pProperties.get())
                 {
                     TDefTableHandlerPtr pTDefTableHandler( new TDefTableHandler(m_bOOXML) );
                     pProperties->resolve( *pTDefTableHandler );
-                    
+
                     TablePropertyMapPtr pRowPropMap( new TablePropertyMap );
                     pRowPropMap->insert( pTDefTableHandler->getRowProperties() );
                     insertRowProps( pRowPropMap );
@@ -176,7 +176,7 @@ bool DomainMapperTableManager::sprm(Sprm & rSprm)
                         pTDefTableHandler->fillCellProperties( nCell, pCellPropMap );
                         cellPropsByCell( nCell, pCellPropMap );
                     }
-                }    
+                }
             }
             break;
 
@@ -206,8 +206,8 @@ bool DomainMapperTableManager::sprm(Sprm & rSprm)
 
             case 0xd613: //sprmTGridLineProps
                 /* WRITERFILTERSTATUS: done: 0, planned: 2, spent: 0 */
-                // TODO: needs a handler 
-                /*contains: 
+                // TODO: needs a handler
+                /*contains:
                  GridLineProps">
                     rtf:LINEPROPSTOP
                     rtf:LINEPROPSLEFT
@@ -218,7 +218,7 @@ bool DomainMapperTableManager::sprm(Sprm & rSprm)
                         rtf:LINECOLOR
                         rtf:LINEWIDTH
                         rtf:LINETYPE
-                
+
                 */
             break;
 
@@ -240,7 +240,7 @@ bool DomainMapperTableManager::sprm(Sprm & rSprm)
 
             case NS_ooxml::LN_CT_TblPrBase_tblStyle: //table style name
                 /* WRITERFILTERSTATUS: done: 100, planned: 2, spent: 0 */
-            {    
+            {
                 TablePropertyMapPtr pPropMap( new TablePropertyMap );
                 pPropMap->Insert( META_PROP_TABLE_STYLE_NAME, false, uno::makeAny( pValue->getString() ));
                 insertTableProps(pPropMap);
@@ -249,14 +249,14 @@ bool DomainMapperTableManager::sprm(Sprm & rSprm)
 
             case NS_ooxml::LN_CT_TblGridBase_gridCol:
                 /* WRITERFILTERSTATUS: done: 100, planned: 2, spent: 0 */
-            {   
+            {
                 getCurrentGrid()->push_back( ConversionHelper::convertTwipToMM100( nIntValue ) );
-            }    
+            }
             break;
 
             case NS_ooxml::LN_CT_TcPrBase_vMerge : //vertical merge
                 /* WRITERFILTERSTATUS: done: 100, planned: 2, spent: 0 */
-            {    
+            {
                 // values can be: LN_Value_ST_Merge_restart, LN_Value_ST_Merge_continue, in reality the second one is a 0
                 TablePropertyMapPtr pMergeProps( new TablePropertyMap );
                 pMergeProps->Insert( PROP_VERTICAL_MERGE, false, uno::makeAny( bool( sal::static_int_cast<Id>(nIntValue) == NS_ooxml::LN_Value_ST_Merge_restart )) );
@@ -266,7 +266,7 @@ bool DomainMapperTableManager::sprm(Sprm & rSprm)
 
             case NS_ooxml::LN_CT_TcPrBase_gridSpan: //number of grid positions spanned by this cell
                 /* WRITERFILTERSTATUS: done: 100, planned: 2, spent: 0 */
-            {    
+            {
 #if DEBUG_DMAPPER_TABLE_HANDLER
                 dmapper_logger->startElement("tablemanager.GridSpan");
                 dmapper_logger->attribute("gridSpan", nIntValue);
@@ -275,11 +275,11 @@ bool DomainMapperTableManager::sprm(Sprm & rSprm)
                 m_nGridSpanOfCurrentCell = nIntValue;
             }
             break;
-            case NS_ooxml::LN_CT_TblPrBase_tblLook: 
+            case NS_ooxml::LN_CT_TblPrBase_tblLook:
                 /* WRITERFILTERSTATUS: done: 0, planned: 2, spent: 0 */
                 break; //todo: table look specifier
 
-            case NS_ooxml::LN_CT_TcPrBase_tcW: 
+            case NS_ooxml::LN_CT_TcPrBase_tcW:
                 /* WRITERFILTERSTATUS: done: 100, planned: 0.5, spent: 0 */
                 break; //fixed column width is not supported
 
@@ -308,7 +308,7 @@ bool DomainMapperTableManager::sprm(Sprm & rSprm)
 
             default:
                 bRet = false;
-                
+
 #ifdef DEBUG_DOMAINMAPPER
                 dmapper_logger->element("TableManager.unhandled");
 #endif
@@ -400,9 +400,9 @@ void DomainMapperTableManager::endLevel()
     PropertyMapPtr pProps = getTableProps();
     if (pProps.get() != NULL)
         dmapper_logger->addTag(getTableProps()->toTag());
-        
+
     dmapper_logger->endElement("dmappertablemanager.endLevel");
-#endif    
+#endif
 }
 
 /*-- 02.05.2007 14:36:26---------------------------------------------------
@@ -426,7 +426,7 @@ void DomainMapperTableManager::endOfRowAction()
 #ifdef DEBUG_DMAPPER_TABLE_HANDLER
     dmapper_logger->startElement("endOfRowAction");
 #endif
-    
+
     IntVectorPtr pTableGrid = getCurrentGrid( );
     if( m_nTableWidthOfCurrentTable.top() == 0
         && pTableGrid->size() > 0 )
@@ -465,20 +465,20 @@ void DomainMapperTableManager::endOfRowAction()
     {
         //fill missing elements with '1'
         pCurrentSpans->insert( pCurrentSpans->end( ), m_nCellCounterForCurrentRow.top() - pCurrentSpans->size(), 1 );
-    }    
+    }
 
 #ifdef DEBUG_DMAPPER_TABLE_HANDLER
     dmapper_logger->startElement("gridSpans");
     {
         ::std::vector<sal_Int32>::const_iterator aGridSpanIter = pCurrentSpans->begin();
         ::std::vector<sal_Int32>::const_iterator aGridSpanIterEnd = pCurrentSpans->end();
-        
+
         while (aGridSpanIter != aGridSpanIterEnd)
         {
             dmapper_logger->startElement("gridSpan");
             dmapper_logger->attribute("span", *aGridSpanIter);
             dmapper_logger->endElement("gridSpan");
-        
+
             aGridSpanIter++;
         }
     }
@@ -493,7 +493,7 @@ void DomainMapperTableManager::endOfRowAction()
 
     if( pTableGrid->size() == nGrids )
     {
-        //determine table width 
+        //determine table width
         double nFullWidth = m_nTableWidthOfCurrentTable.top();
         //the positions have to be distributed in a range of 10000
         const double nFullWidthRelative = 10000.;
@@ -511,8 +511,8 @@ void DomainMapperTableManager::endOfRowAction()
             {
                 fGridWidth += (*pTableGrid.get())[nBorderGridIndex++];
             }while( --nGridCount );
-            
-            sal_Int16 nRelPos = 
+
+            sal_Int16 nRelPos =
                 sal::static_int_cast< sal_Int16 >(fGridWidth * nFullWidthRelative / nFullWidth );
 
             pSeparators[nBorder].Position =  nRelPos + nLastRelPos;

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -130,7 +130,7 @@ sal_Bool SdrMarkView::ImpMarkPoint(SdrHdl* pHdl, SdrMark* pMark, sal_Bool bUnmar
 {
 	if (pHdl==NULL || pHdl->IsPlusHdl() || pHdl->GetKind()==HDL_GLUE)
 		return sal_False;
-	
+
 	if (pHdl->IsSelected() != bUnmark)
 		return sal_False;
 
@@ -167,7 +167,7 @@ sal_Bool SdrMarkView::ImpMarkPoint(SdrHdl* pHdl, SdrMark* pMark, sal_Bool bUnmar
 	pHdl->SetSelected(!bUnmark);
 	if (!bPlusHdlAlways)
 	{
-		if (!bUnmark) 
+		if (!bUnmark)
 		{
 			sal_uInt32 nAnz(pObj->GetPlusHdlCount(*pHdl));
 			for (sal_uInt32 i=0; i<nAnz; i++)
@@ -181,7 +181,7 @@ sal_Bool SdrMarkView::ImpMarkPoint(SdrHdl* pHdl, SdrMark* pMark, sal_Bool bUnmar
 					aHdl.AddHdl(pPlusHdl);
 				}
 			}
-		} 
+		}
 		else
 		{
 			for (sal_uIntPtr i = aHdl.GetHdlCount(); i>0;)
@@ -380,25 +380,25 @@ void SdrMarkView::UndirtyMrkPnt() const
 				// Eintraege die groesser sind als die Punktanzahl des Objekts
 				sal_uInt32 nMax(pObj->GetPointCount());
 				sal_uInt32 nPtNum(0xffffffff);
-				
+
 				pPts->ForceSort();
-				
-				for (sal_uInt32 nIndex(pPts->GetCount()); nIndex > 0L && nPtNum >= nMax;) 
+
+				for (sal_uInt32 nIndex(pPts->GetCount()); nIndex > 0L && nPtNum >= nMax;)
 				{
 					nIndex--;
 					nPtNum = pPts->GetObject(nIndex);
 
-					if(nPtNum >= nMax) 
+					if(nPtNum >= nMax)
 					{
 						pPts->Remove(nIndex);
 						bChg = sal_True;
 					}
 				}
-			} 
-			else 
+			}
+			else
 			{
 				DBG_ERROR("SdrMarkView::UndirtyMrkPnt(): Markierte Punkte an einem Objekt, dass kein PolyObj ist!");
-				if(pPts && pPts->GetCount()) 
+				if(pPts && pPts->GetCount())
 				{
 					pPts->Clear();
 					bChg = sal_True;
@@ -599,7 +599,7 @@ sal_Bool SdrMarkView::PickGluePoint(const Point& rPnt, SdrObject*& rpObj, sal_uI
 		const SdrGluePointList* pGPL=pObj->GetGluePointList();
 		if (pGPL!=NULL) {
 			sal_uInt16 nNum=pGPL->HitTest(rPnt,*pOut,pObj,bBack,bNext,nId0);
-			if (nNum!=SDRGLUEPOINT_NOTFOUND) 
+			if (nNum!=SDRGLUEPOINT_NOTFOUND)
 			{
 				// #i38892#
 				const SdrGluePoint& rCandidate = (*pGPL)[nNum];

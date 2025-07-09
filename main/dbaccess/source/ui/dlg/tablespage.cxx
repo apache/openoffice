@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -42,55 +42,55 @@
 #ifndef _DBAUI_DATASOURCECONNECTOR_HXX_
 #include "datasourceconnector.hxx"
 #endif
-#ifndef _COMPHELPER_TYPES_HXX_ 
+#ifndef _COMPHELPER_TYPES_HXX_
 #include <comphelper/types.hxx>
 #endif
 #ifndef _CONNECTIVITY_DBTOOLS_HXX_
 #include <connectivity/dbtools.hxx>
 #endif
-#ifndef _DBHELPER_DBEXCEPTION_HXX_ 
+#ifndef _DBHELPER_DBEXCEPTION_HXX_
 #include <connectivity/dbexception.hxx>
 #endif
 #ifndef _DBAUI_STRINGLISTITEM_HXX_
 #include "stringlistitem.hxx"
 #endif
-#ifndef _SFXENUMITEM_HXX 
+#ifndef _SFXENUMITEM_HXX
 #include <svl/eitem.hxx>
 #endif
-#ifndef _SFXSTRITEM_HXX 
+#ifndef _SFXSTRITEM_HXX
 #include <svl/stritem.hxx>
 #endif
 #ifndef DBACCESS_SHARED_DBUSTRINGS_HRC
 #include "dbustrings.hrc"
 #endif
-#ifndef _SV_SVAPP_HXX 
+#ifndef _SV_SVAPP_HXX
 #include <vcl/svapp.hxx>
 #endif
-#ifndef _SV_WAITOBJ_HXX 
+#ifndef _SV_WAITOBJ_HXX
 #include <vcl/waitobj.hxx>
 #endif
 #ifndef _COM_SUN_STAR_SDB_SQLCONTEXT_HPP_
 #include <com/sun/star/sdb/SQLContext.hpp>
 #endif
-#ifndef _COM_SUN_STAR_SDBCX_XTABLESSUPPLIER_HPP_ 
+#ifndef _COM_SUN_STAR_SDBCX_XTABLESSUPPLIER_HPP_
 #include <com/sun/star/sdbcx/XTablesSupplier.hpp>
 #endif
-#ifndef _COM_SUN_STAR_SDBCX_XAPPEND_HPP_ 
+#ifndef _COM_SUN_STAR_SDBCX_XAPPEND_HPP_
 #include <com/sun/star/sdbcx/XAppend.hpp>
 #endif
 #ifndef _COM_SUN_STAR_UTIL_XMODIFIABLE_HPP_
 #include <com/sun/star/util/XModifiable.hpp>
 #endif
-#ifndef _COM_SUN_STAR_SDBCX_XDROP_HPP_ 
+#ifndef _COM_SUN_STAR_SDBCX_XDROP_HPP_
 #include <com/sun/star/sdbcx/XDrop.hpp>
 #endif
-#ifndef _COM_SUN_STAR_SDBCX_XDATADEFINITIONSUPPLIER_HPP_ 
+#ifndef _COM_SUN_STAR_SDBCX_XDATADEFINITIONSUPPLIER_HPP_
 #include <com/sun/star/sdbcx/XDataDefinitionSupplier.hpp>
 #endif
 #ifndef _DBAUI_SQLMESSAGE_HXX_
 #include "sqlmessage.hxx"
 #endif
-#ifndef _SV_MSGBOX_HXX 
+#ifndef _SV_MSGBOX_HXX
 #include <vcl/msgbox.hxx>
 #endif
 #ifndef _DBA_DBACCESS_HELPID_HRC_
@@ -99,7 +99,7 @@
 #ifndef DBAUI_TOOLS_HXX
 #include "UITools.hxx"
 #endif
-#ifndef _VOS_MUTEX_HXX_ 
+#ifndef _VOS_MUTEX_HXX_
 #include <vos/mutex.hxx>
 #endif
 #ifndef _SVTOOLS_IMGDEF_HXX
@@ -368,7 +368,7 @@ DBG_NAME(OTableSubscriptionPage)
 					Any aTableTypeFilter = xProp->getPropertyValue(PROPERTY_TABLETYPEFILTER);
 
 					Reference<XModifiable> xModi(getDataSourceOrModel(xProp),UNO_QUERY);
-					sal_Bool bModified = ( xModi.is() && xModi->isModified() );					
+					sal_Bool bModified = ( xModi.is() && xModi->isModified() );
 
 					Sequence< ::rtl::OUString > aNewTableFilter(1);
 					aNewTableFilter[0] = ::rtl::OUString(RTL_CONSTASCII_USTRINGPARAM("%"));
@@ -385,7 +385,7 @@ DBG_NAME(OTableSubscriptionPage)
 						xModi->setModified(sal_False);
 
 				}
-				
+
 				if ( m_xCurrentConnection.is() )
 				{
 					m_aTablesList.UpdateTableList( m_xCurrentConnection );

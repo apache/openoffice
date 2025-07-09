@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -56,7 +56,7 @@ void __EXPORT BasicTreeListBox::RequestingChilds( SvLBoxEntry* pEntry )
         return;
 
     LibraryLocation eLocation( aDesc.GetLocation() );
-    BasicEntryType eType( aDesc.GetType() );    
+    BasicEntryType eType( aDesc.GetType() );
 
 	if ( eType == OBJ_TYPE_DOCUMENT )
     {
@@ -82,8 +82,8 @@ void __EXPORT BasicTreeListBox::RequestingChilds( SvLBoxEntry* pEntry )
 
         if ( bOK )
         {
-            // load module library              
-            sal_Bool bModLibLoaded = sal_False;            
+            // load module library
+            sal_Bool bModLibLoaded = sal_False;
             if ( xModLibContainer.is() && xModLibContainer->hasByName( aOULibName ) )
             {
                 if ( !xModLibContainer->isLibraryLoaded( aOULibName ) )
@@ -97,7 +97,7 @@ void __EXPORT BasicTreeListBox::RequestingChilds( SvLBoxEntry* pEntry )
 
             // load dialog library
             sal_Bool bDlgLibLoaded = sal_False;
-            Reference< script::XLibraryContainer > xDlgLibContainer( aDocument.getLibraryContainer( E_DIALOGS ), UNO_QUERY );           
+            Reference< script::XLibraryContainer > xDlgLibContainer( aDocument.getLibraryContainer( E_DIALOGS ), UNO_QUERY );
             if ( xDlgLibContainer.is() && xDlgLibContainer->hasByName( aOULibName ) )
             {
                 if ( !xDlgLibContainer->isLibraryLoaded( aOULibName ) )
@@ -126,7 +126,7 @@ void __EXPORT BasicTreeListBox::RequestingChilds( SvLBoxEntry* pEntry )
 		    }
         }
     }
-    else if ( eType == OBJ_TYPE_DOCUMENT_OBJECTS 
+    else if ( eType == OBJ_TYPE_DOCUMENT_OBJECTS
             || eType == OBJ_TYPE_USERFORMS
             || eType == OBJ_TYPE_NORMAL_MODULES
             || eType == OBJ_TYPE_CLASS_MODULES )
@@ -189,12 +189,12 @@ SbxVariable* BasicTreeListBox::FindVariable( SvLBoxEntry* pEntry )
             case 4:
             case 3:
             case 2:
-            case 1: 
+            case 1:
             {
                 aEntries.push_front( pEntry );
             }
             break;
-            case 0: 
+            case 0:
             {
                 aDocument = ((BasicDocumentEntry*)pEntry->GetUserData())->GetDocument();
             }
@@ -294,12 +294,12 @@ BasicEntryDescriptor BasicTreeListBox::GetEntryDescriptor( SvLBoxEntry* pEntry )
             case 4:
             case 3:
             case 2:
-            case 1: 
+            case 1:
             {
                 aEntries.push_front( pEntry );
             }
             break;
-            case 0: 
+            case 0:
             {
                 BasicDocumentEntry* pBasicDocumentEntry = (BasicDocumentEntry*)pEntry->GetUserData();
                 if ( pBasicDocumentEntry )

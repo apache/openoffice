@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -55,7 +55,7 @@ namespace sdr
 
 				// create processor
 				drawinglayer::processor2d::BaseProcessor2D* pProcessor = drawinglayer::processor2d::createProcessor2DFromOutputDevice(
-					rDestinationDevice, 
+					rDestinationDevice,
 					getCurrentViewInformation2D());
 
 				if(pProcessor)
@@ -90,7 +90,7 @@ namespace sdr
 
 					delete pProcessor;
 				}
-				
+
 				// restore AA settings
 				rDestinationDevice.SetAntialiasing(nOriginalAA);
 			}
@@ -112,14 +112,14 @@ namespace sdr
 		}
 
         double OverlayManager::getDiscreteOne() const
-        { 
+        {
 			if(basegfx::fTools::equalZero(mfDiscreteOne))
             {
                 const basegfx::B2DVector aDiscreteInLogic(getOutputDevice().GetInverseViewTransformation() * basegfx::B2DVector(1.0, 0.0));
                 const_cast< OverlayManager* >(this)->mfDiscreteOne = aDiscreteInLogic.getLength();
             }
 
-            return mfDiscreteOne; 
+            return mfDiscreteOne;
         }
 
 		OverlayManager::OverlayManager(OutputDevice& rOutputDevice)
@@ -209,8 +209,8 @@ namespace sdr
 			// handle evtl. animation
 			if(rTarget.allowsAnimation())
 			{
-				// Trigger at current time to get alive. This will do the 
-				// object-specific next time calculation and hand over adding 
+				// Trigger at current time to get alive. This will do the
+				// object-specific next time calculation and hand over adding
 				// again to the scheduler to the animated object, too. This works for
 				// a paused or non-paused animator.
 				rTarget.Trigger(GetTime());
@@ -311,9 +311,9 @@ namespace sdr
 					// assume AA needs one pixel more and invalidate one pixel more
                     const double fDiscreteOne(getDiscreteOne());
 					const Rectangle aInvalidateRectangle(
-						(sal_Int32)floor(rRange.getMinX() - fDiscreteOne), 
-						(sal_Int32)floor(rRange.getMinY() - fDiscreteOne), 
-						(sal_Int32)ceil(rRange.getMaxX() + fDiscreteOne), 
+						(sal_Int32)floor(rRange.getMinX() - fDiscreteOne),
+						(sal_Int32)floor(rRange.getMinY() - fDiscreteOne),
+						(sal_Int32)ceil(rRange.getMaxX() + fDiscreteOne),
 						(sal_Int32)ceil(rRange.getMaxY() + fDiscreteOne));
 
 					// simply invalidate
@@ -321,10 +321,10 @@ namespace sdr
 				}
 				else
 				{
-					// #i77674# transform to rectangle. Use floor/ceil to get all covered 
+					// #i77674# transform to rectangle. Use floor/ceil to get all covered
 					// discrete pixels, see #i75163# and OverlayManagerBuffered::invalidateRange
 					const Rectangle aInvalidateRectangle(
-						(sal_Int32)floor(rRange.getMinX()), (sal_Int32)floor(rRange.getMinY()), 
+						(sal_Int32)floor(rRange.getMinX()), (sal_Int32)floor(rRange.getMinY()),
 						(sal_Int32)ceil(rRange.getMaxX()), (sal_Int32)ceil(rRange.getMaxY()));
 
 					// simply invalidate

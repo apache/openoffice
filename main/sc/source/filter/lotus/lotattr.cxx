@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -208,7 +208,7 @@ LotAttrCol::~LotAttrCol()
 
 void LotAttrCol::SetAttr( const SCROW nRow, const ScPatternAttr& rAttr )
 {
-    // Actually with the current implementation of MAXROWCOUNT>=64k and nRow 
+    // Actually with the current implementation of MAXROWCOUNT>=64k and nRow
     // being read as sal_uInt16 there's no chance that nRow would be invalid..
 	DBG_ASSERT( ValidRow(nRow), "*LotAttrCol::SetAttr(): ... und rums?!" );
 
@@ -277,8 +277,8 @@ LotAttrTable::~LotAttrTable()
 void LotAttrTable::SetAttr( const SCCOL nColFirst, const SCCOL nColLast, const SCROW nRow,
 							const LotAttrWK3& rAttr )
 {
-    // With the current implementation of MAXCOLCOUNT>=1024 and nColFirst and 
-    // nColLast being calculated as sal_uInt8+sal_uInt8 there's no chance that 
+    // With the current implementation of MAXCOLCOUNT>=1024 and nColFirst and
+    // nColLast being calculated as sal_uInt8+sal_uInt8 there's no chance that
     // they would be invalid.
 	const ScPatternAttr&	rPattAttr = aAttrCache.GetPattAttr( rAttr );
 	SCCOL					nColCnt;

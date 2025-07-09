@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -126,7 +126,7 @@ void ScDPFieldButton::draw()
     const long nMargin = 2;
     bool bOldMapEnablaed = mpOutDev->IsMapModeEnabled();
     mpOutDev->EnableMapMode(false);
-    
+
     if (mbBaseButton)
     {
         // Background
@@ -134,18 +134,18 @@ void ScDPFieldButton::draw()
         mpOutDev->SetLineColor(mpStyle->GetFaceColor());
         mpOutDev->SetFillColor(mpStyle->GetFaceColor());
         mpOutDev->DrawRect(aRect);
-    
+
         // Border lines
         mpOutDev->SetLineColor(mpStyle->GetLightColor());
         mpOutDev->DrawLine(Point(maPos), Point(maPos.X(), maPos.Y()+maSize.Height()-1));
         mpOutDev->DrawLine(Point(maPos), Point(maPos.X()+maSize.Width()-1, maPos.Y()));
-    
+
         mpOutDev->SetLineColor(mpStyle->GetShadowColor());
         mpOutDev->DrawLine(Point(maPos.X(), maPos.Y()+maSize.Height()-1),
                            Point(maPos.X()+maSize.Width()-1, maPos.Y()+maSize.Height()-1));
         mpOutDev->DrawLine(Point(maPos.X()+maSize.Width()-1, maPos.Y()),
                            Point(maPos.X()+maSize.Width()-1, maPos.Y()+maSize.Height()-1));
-    
+
         // Field name.
         // Get the font and size the same way as in scenario selection (lcl_DrawOneFrame in gridwin4.cxx)
         Font aTextFont( mpStyle->GetAppFont() );
@@ -159,7 +159,7 @@ void ScDPFieldButton::draw()
         }
         mpOutDev->SetFont(aTextFont);
         mpOutDev->SetTextColor(mpStyle->GetButtonTextColor());
-    
+
         Point aTextPos = maPos;
         long nTHeight = mpOutDev->GetTextHeight();
         aTextPos.setX(maPos.getX() + nMargin);
@@ -181,7 +181,7 @@ void ScDPFieldButton::getPopupBoundingBox(Point& rPos, Size& rSize) const
 {
     long nW = maSize.getWidth() / 2;
     long nH = maSize.getHeight();
-    if (nW > 18) 
+    if (nW > 18)
         nW = 18;
     if (nH > 18)
         nH = 18;
@@ -209,12 +209,12 @@ void ScDPFieldButton::drawPopupButton()
     mpOutDev->DrawRect(Rectangle(aPos, aSize));
 
     if (!mbPopupPressed)
-    {    
+    {
         // border lines
         mpOutDev->SetLineColor(mpStyle->GetLightColor());
         mpOutDev->DrawLine(Point(aPos.X()+1, aPos.Y()+1), Point(aPos.X()+1, aPos.Y()+aSize.Height()-2));
         mpOutDev->DrawLine(Point(aPos.X()+1, aPos.Y()+1), Point(aPos.X()+aSize.Width()-2, aPos.Y()+1));
-    
+
         mpOutDev->SetLineColor(mpStyle->GetShadowColor());
         mpOutDev->DrawLine(Point(aPos.X()+1, aPos.Y()+aSize.Height()-2),
                            Point(aPos.X()+aSize.Width()-2, aPos.Y()+aSize.Height()-2));
@@ -441,14 +441,14 @@ void ScMenuFloatingWindow::Paint(const Rectangle& /*rRect*/)
 Reference<XAccessible> ScMenuFloatingWindow::CreateAccessible()
 {
     if (!mxAccessible.is())
-    {    
-        Reference<XAccessible> xAccParent = mpParentMenu ? 
+    {
+        Reference<XAccessible> xAccParent = mpParentMenu ?
             mpParentMenu->GetAccessible() : GetAccessibleParentWindow()->GetAccessible();
 
         mxAccessible.set(new ScAccessibleFilterMenu(xAccParent, this, maName, 999, getDoc()));
         ScAccessibleFilterMenu* p = static_cast<ScAccessibleFilterMenu*>(
             mxAccessible.get());
-        
+
         vector<MenuItemData>::const_iterator itr, itrBeg = maMenuItems.begin(), itrEnd = maMenuItems.end();
         for (itr = itrBeg; itr != itrEnd; ++itr)
         {
@@ -511,7 +511,7 @@ void ScMenuFloatingWindow::drawAllMenuItems()
 {
     size_t n = maMenuItems.size();
     for (size_t i = 0; i < n; ++i)
-        highlightMenuItem(i, i == mnSelectedMenu);    
+        highlightMenuItem(i, i == mnSelectedMenu);
 }
 
 const Font& ScMenuFloatingWindow::getLabelFont() const
@@ -541,10 +541,10 @@ void ScMenuFloatingWindow::setSelectedMenuItem(size_t nPos, bool bSubMenuTimer, 
     if (bEnsureSubMenu)
     {
         // Dismiss any child popup menu windows.
-        if (mnSelectedMenu < maMenuItems.size() && 
-            maMenuItems[mnSelectedMenu].mpSubMenuWin && 
+        if (mnSelectedMenu < maMenuItems.size() &&
+            maMenuItems[mnSelectedMenu].mpSubMenuWin &&
             maMenuItems[mnSelectedMenu].mpSubMenuWin->IsVisible())
-        {    
+        {
             maMenuItems[mnSelectedMenu].mpSubMenuWin->ensureSubMenuNotVisible();
         }
 
@@ -666,7 +666,7 @@ void ScMenuFloatingWindow::endSubMenu(ScMenuFloatingWindow* pSubMenu)
 
     size_t nMenuPos = getSubMenuPos(pSubMenu);
     if (nMenuPos != MENU_NOT_SELECTED)
-    {    
+    {
         highlightMenuItem(nMenuPos, true);
         mnSelectedMenu = nMenuPos;
         fireMenuHighlightedEvent();
@@ -716,7 +716,7 @@ void ScMenuFloatingWindow::selectMenuItem(size_t nPos, bool bSelected, bool bSub
     }
 
     if (!maMenuItems[nPos].mbEnabled)
-    {    
+    {
         queueCloseSubMenu();
         return;
     }
@@ -789,7 +789,7 @@ void ScMenuFloatingWindow::highlightMenuItem(size_t nPos, bool bSelected)
     {
         Push(PUSH_CLIPREGION);
         IntersectClipRegion(Rectangle(aPos, aSize));
-        Rectangle aCtrlRect(Point(0,0), GetOutputSizePixel()); 
+        Rectangle aCtrlRect(Point(0,0), GetOutputSizePixel());
         DrawNativeControl(
             CTRL_MENU_POPUP, PART_ENTIRE_CONTROL, aCtrlRect, CTRL_STATE_ENABLED,
             ImplControlValue(), OUString());
@@ -933,10 +933,10 @@ void ScMenuFloatingWindow::ensureSubMenuVisible(ScMenuFloatingWindow* pSubMenu)
 
 void ScMenuFloatingWindow::ensureSubMenuNotVisible()
 {
-    if (mnSelectedMenu <= maMenuItems.size() && 
-        maMenuItems[mnSelectedMenu].mpSubMenuWin && 
+    if (mnSelectedMenu <= maMenuItems.size() &&
+        maMenuItems[mnSelectedMenu].mpSubMenuWin &&
         maMenuItems[mnSelectedMenu].mpSubMenuWin->IsVisible())
-    {    
+    {
         maMenuItems[mnSelectedMenu].mpSubMenuWin->ensureSubMenuNotVisible();
     }
 
@@ -980,8 +980,8 @@ ScDPFieldPopupWindow::ScDPFieldPopupWindow(Window* pParent, ScDocument* pDoc) :
     ScMenuFloatingWindow(pParent, pDoc),
     maChecks(this, 0),
     maChkToggleAll(this, 0),
-    maBtnSelectSingle  (this, 0), 
-    maBtnUnselectSingle(this, 0), 
+    maBtnSelectSingle  (this, 0),
+    maBtnUnselectSingle(this, 0),
     maBtnOk(this),
     maBtnCancel(this),
     mnCurTabStop(0),
@@ -1068,7 +1068,7 @@ void ScDPFieldPopupWindow::getSectionPosSize(Point& rPos, Size& rSize, SectionTy
 
     // parameters calculated from constants.
     const sal_uInt16 nListBoxWidth = static_cast< sal_uInt16 >( maWndSize.Width() - nListBoxMargin*2 );
-    const sal_uInt16 nListBoxHeight = static_cast< sal_uInt16 >( maWndSize.Height() - nTopMargin - nMenuHeight - 
+    const sal_uInt16 nListBoxHeight = static_cast< sal_uInt16 >( maWndSize.Height() - nTopMargin - nMenuHeight -
         nMenuListMargin - nSingleItemBtnAreaHeight - nBottomBtnAreaHeight );
 
     const sal_uInt16 nSingleBtnAreaY = nTopMargin + nMenuHeight + nListBoxHeight + nMenuListMargin - 1;
@@ -1195,12 +1195,12 @@ IMPL_LINK( ScDPFieldPopupWindow, ButtonHdl, Button*, pBtn )
     if (pBtn == &maBtnOk)
         close(true);
     else if (pBtn == &maBtnSelectSingle)
-    {    
+    {
         selectCurrentMemberOnly(true);
         CheckHdl(&maChecks);
     }
     else if (pBtn == &maBtnUnselectSingle)
-    {    
+    {
         selectCurrentMemberOnly(false);
         CheckHdl(&maChecks);
     }
@@ -1309,7 +1309,7 @@ Window* ScDPFieldPopupWindow::GetPreferredKeyInputWindow()
 Reference<XAccessible> ScDPFieldPopupWindow::CreateAccessible()
 {
     if (!mxAccessible.is())
-    {    
+    {
         mxAccessible.set(new ScAccessibleFilterTopWindow(
             GetAccessibleParentWindow()->GetAccessible(), this, getName(), getDoc()));
         ScAccessibleFilterTopWindow* pAccTop = static_cast<ScAccessibleFilterTopWindow*>(mxAccessible.get());
@@ -1357,19 +1357,19 @@ void ScDPFieldPopupWindow::initMembers()
             ++nVisMemCount;
     }
     if (nVisMemCount == n)
-    {    
+    {
         // all members visible
         maChkToggleAll.SetState(STATE_CHECK);
         mePrevToggleAllState = STATE_CHECK;
     }
     else if (nVisMemCount == 0)
-    {    
+    {
         // no members visible
         maChkToggleAll.SetState(STATE_NOCHECK);
         mePrevToggleAllState = STATE_NOCHECK;
     }
     else
-    {    
+    {
         maChkToggleAll.SetState(STATE_DONTKNOW);
         mePrevToggleAllState = STATE_DONTKNOW;
     }

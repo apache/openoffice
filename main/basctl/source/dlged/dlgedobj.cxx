@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -34,7 +34,7 @@
 #include "dlgedview.hxx"
 #include "dlgedlist.hxx"
 #include <iderid.hxx>
-#include <localizationmgr.hxx> 
+#include <localizationmgr.hxx>
 
 #ifndef _BASCTL_DLGRESID_HRC
 #include <dlgresid.hrc>
@@ -81,7 +81,7 @@ DlgEdObj::DlgEdObj()
 
 //----------------------------------------------------------------------------
 
-DlgEdObj::DlgEdObj(const ::rtl::OUString& rModelName, 
+DlgEdObj::DlgEdObj(const ::rtl::OUString& rModelName,
 				   const com::sun::star::uno::Reference< com::sun::star::lang::XMultiServiceFactory >& rxSFac)
 		  :SdrUnoObj(rModelName, rxSFac, sal_False)
 		  ,bIsListening(sal_False)
@@ -147,8 +147,8 @@ uno::Reference< awt::XControl > DlgEdObj::GetControl() const
 
 //----------------------------------------------------------------------------
 
-bool DlgEdObj::TransformSdrToControlCoordinates( 
-    sal_Int32 nXIn, sal_Int32 nYIn, sal_Int32 nWidthIn, sal_Int32 nHeightIn, 
+bool DlgEdObj::TransformSdrToControlCoordinates(
+    sal_Int32 nXIn, sal_Int32 nYIn, sal_Int32 nWidthIn, sal_Int32 nHeightIn,
     sal_Int32& nXOut, sal_Int32& nYOut, sal_Int32& nWidthOut, sal_Int32& nHeightOut )
 {
     // input position and size
@@ -188,7 +188,7 @@ bool DlgEdObj::TransformSdrToControlCoordinates(
 		aPos.Width() -= aDeviceInfo.LeftInset;
 		aPos.Height() -= aDeviceInfo.TopInset;
 	}
-    
+
     // convert pixel to logic units
     aPos = pDevice->PixelToLogic( aPos, MapMode( MAP_APPFONT ) );
     aSize = pDevice->PixelToLogic( aSize, MapMode( MAP_APPFONT ) );
@@ -204,8 +204,8 @@ bool DlgEdObj::TransformSdrToControlCoordinates(
 
 //----------------------------------------------------------------------------
 
-bool DlgEdObj::TransformSdrToFormCoordinates( 
-    sal_Int32 nXIn, sal_Int32 nYIn, sal_Int32 nWidthIn, sal_Int32 nHeightIn, 
+bool DlgEdObj::TransformSdrToFormCoordinates(
+    sal_Int32 nXIn, sal_Int32 nYIn, sal_Int32 nWidthIn, sal_Int32 nHeightIn,
     sal_Int32& nXOut, sal_Int32& nYOut, sal_Int32& nWidthOut, sal_Int32& nHeightOut )
 {
     // input position and size
@@ -254,8 +254,8 @@ bool DlgEdObj::TransformSdrToFormCoordinates(
 
 //----------------------------------------------------------------------------
 
-bool DlgEdObj::TransformControlToSdrCoordinates( 
-    sal_Int32 nXIn, sal_Int32 nYIn, sal_Int32 nWidthIn, sal_Int32 nHeightIn, 
+bool DlgEdObj::TransformControlToSdrCoordinates(
+    sal_Int32 nXIn, sal_Int32 nYIn, sal_Int32 nWidthIn, sal_Int32 nHeightIn,
     sal_Int32& nXOut, sal_Int32& nYOut, sal_Int32& nWidthOut, sal_Int32& nHeightOut )
 {
     // input position and size
@@ -316,8 +316,8 @@ bool DlgEdObj::TransformControlToSdrCoordinates(
 
 //----------------------------------------------------------------------------
 
-bool DlgEdObj::TransformFormToSdrCoordinates( 
-    sal_Int32 nXIn, sal_Int32 nYIn, sal_Int32 nWidthIn, sal_Int32 nHeightIn, 
+bool DlgEdObj::TransformFormToSdrCoordinates(
+    sal_Int32 nXIn, sal_Int32 nYIn, sal_Int32 nWidthIn, sal_Int32 nHeightIn,
     sal_Int32& nXOut, sal_Int32& nYOut, sal_Int32& nWidthOut, sal_Int32& nHeightOut )
 {
     // input position and size
@@ -371,7 +371,7 @@ void DlgEdObj::SetRectFromProps()
     // get control position and size from properties
     Reference< beans::XPropertySet > xPSet( GetUnoControlModel(), UNO_QUERY );
     if ( xPSet.is() )
-    {		
+    {
         sal_Int32 nXIn = 0, nYIn = 0, nWidthIn = 0, nHeightIn = 0;
         xPSet->getPropertyValue( DLGED_PROP_POSITIONX ) >>= nXIn;
         xPSet->getPropertyValue( DLGED_PROP_POSITIONY ) >>= nYIn;
@@ -446,7 +446,7 @@ void DlgEdObj::PositionAndSizeChange( const beans::PropertyChangeEvent& evt )
         {
             Reference< beans::XPropertySet > xPSet( GetUnoControlModel(), UNO_QUERY );
             if ( xPSet.is() )
-            {		
+            {
                 sal_Int32 nX = 0, nY = 0, nWidth = 0, nHeight = 0;
                 xPSet->getPropertyValue( DLGED_PROP_POSITIONX ) >>= nX;
                 xPSet->getPropertyValue( DLGED_PROP_POSITIONY ) >>= nY;
@@ -497,7 +497,7 @@ void DlgEdObj::PositionAndSizeChange( const beans::PropertyChangeEvent& evt )
             }
         }
     }
-    
+
     SetRectFromProps();
 }
 
@@ -517,10 +517,10 @@ void SAL_CALL DlgEdObj::NameChange( const  ::com::sun::star::beans::PropertyChan
 	{
 		Reference< container::XNameAccess > xNameAcc((GetDlgEdForm()->GetUnoControlModel()), UNO_QUERY);
 		if ( xNameAcc.is() && xNameAcc->hasByName(aOldName) )
-		{	
+		{
 			if ( !xNameAcc->hasByName(aNewName) && !aNewName.isEmpty() )
 			{
-				// remove the control by the old name and insert the control by the new name in the container 
+				// remove the control by the old name and insert the control by the new name in the container
 				Reference< container::XNameContainer > xCont(xNameAcc, UNO_QUERY );
 				if ( xCont.is() )
 				{
@@ -536,7 +536,7 @@ void SAL_CALL DlgEdObj::NameChange( const  ::com::sun::star::beans::PropertyChan
 					else
 						pEditor = GetDlgEdForm()->GetDlgEditor();
 					LocalizationMgr::renameControlResourceIDsForEditorObject( pEditor, aAny, aNewName );
-				}		
+				}
 			}
 			else
 			{
@@ -708,9 +708,9 @@ sal_Bool DlgEdObj::supportsService( const sal_Char* _pServiceName ) const
 //----------------------------------------------------------------------------
 
 ::rtl::OUString DlgEdObj::GetDefaultName() const
-{	
+{
 	sal_uInt16 nResId = 0;
-	::rtl::OUString aDefaultName;	
+	::rtl::OUString aDefaultName;
 	if ( supportsService( "com.sun.star.awt.UnoControlDialogModel" ) )
 	{
 		nResId = RID_STR_CLASS_DIALOG;
@@ -798,12 +798,12 @@ sal_Bool DlgEdObj::supportsService( const sal_Char* _pServiceName ) const
 
     else
     {
-		nResId = RID_STR_CLASS_CONTROL;        
+		nResId = RID_STR_CLASS_CONTROL;
     }
 
 	if (nResId)
 	{
-		aDefaultName = ::rtl::OUString( String(IDEResId(nResId)) );			
+		aDefaultName = ::rtl::OUString( String(IDEResId(nResId)) );
 	}
 
 	return aDefaultName;
@@ -1012,11 +1012,11 @@ void DlgEdObj::operator= (const SdrObject& rObj)
 void DlgEdObj::NbcMove( const Size& rSize )
 {
 	SdrUnoObj::NbcMove( rSize );
-	
+
 	// stop listening
 	EndListening(sal_False);
-	
-	// set geometry properties	
+
+	// set geometry properties
 	SetPropsFromRect();
 
 	// start listening
@@ -1034,8 +1034,8 @@ void DlgEdObj::NbcResize(const Point& rRef, const Fraction& xFract, const Fracti
 
 	// stop listening
 	EndListening(sal_False);
-	
-	// set geometry properties	
+
+	// set geometry properties
 	SetPropsFromRect();
 
 	// start listening
@@ -1080,7 +1080,7 @@ void DlgEdObj::SetDefaults()
 		    aUniqueName <<= aOUniqueName;
 		    xPSet->setPropertyValue( DLGED_PROP_NAME, aUniqueName );
 
-		    // set labels	
+		    // set labels
 		    if ( supportsService( "com.sun.star.awt.UnoControlButtonModel" ) ||
 			    supportsService( "com.sun.star.awt.UnoControlRadioButtonModel" ) ||
 			    supportsService( "com.sun.star.awt.UnoControlCheckBoxModel" ) ||
@@ -1140,7 +1140,7 @@ void DlgEdObj::SetDefaults()
 		    }
 	    }
 
-	    // dialog model changed 
+	    // dialog model changed
 	    pDlgEdForm->GetDlgEditor()->SetDialogModelChanged( sal_True );
     }
 }
@@ -1166,13 +1166,13 @@ void DlgEdObj::StartListening()
 	if (!isListening())
 	{
 		bIsListening = sal_True;
-		
+
 		// XPropertyChangeListener
 		Reference< XPropertySet > xControlModel( GetUnoControlModel() , UNO_QUERY );
 		if (!m_xPropertyChangeListener.is() && xControlModel.is())
 		{
 			// create listener
-			m_xPropertyChangeListener = static_cast< ::com::sun::star::beans::XPropertyChangeListener*>( new DlgEdPropListenerImpl( (DlgEdObj*)this ) );	
+			m_xPropertyChangeListener = static_cast< ::com::sun::star::beans::XPropertyChangeListener*>( new DlgEdPropListenerImpl( (DlgEdObj*)this ) );
 
 			// register listener to properties
 			xControlModel->addPropertyChangeListener( ::rtl::OUString() , m_xPropertyChangeListener );
@@ -1183,9 +1183,9 @@ void DlgEdObj::StartListening()
 		if( !m_xContainerListener.is() && xEventsSupplier.is() )
 		{
 			// create listener
-			m_xContainerListener = static_cast< ::com::sun::star::container::XContainerListener*>( new DlgEdEvtContListenerImpl( (DlgEdObj*)this ) );	
+			m_xContainerListener = static_cast< ::com::sun::star::container::XContainerListener*>( new DlgEdEvtContListenerImpl( (DlgEdObj*)this ) );
 
-			// register listener to script event container			
+			// register listener to script event container
 			Reference< XNameContainer > xEventCont = xEventsSupplier->getEvents();
 			DBG_ASSERT(xEventCont.is(), "DlgEdObj::StartListening: control model has no script event container!");
 			Reference< XContainer > xCont( xEventCont , UNO_QUERY );
@@ -1249,7 +1249,7 @@ void SAL_CALL DlgEdObj::_propertyChange( const  ::com::sun::star::beans::Propert
 
 		// dialog model changed
 		pDlgEditor->SetDialogModelChanged(sal_True);
-		
+
         // update position and size
         if ( evt.PropertyName == DLGED_PROP_POSITIONX || evt.PropertyName == DLGED_PROP_POSITIONY ||
              evt.PropertyName == DLGED_PROP_WIDTH || evt.PropertyName == DLGED_PROP_HEIGHT ||
@@ -1400,7 +1400,7 @@ void DlgEdForm::SetRectFromProps()
     // get form position and size from properties
     Reference< beans::XPropertySet > xPSet( GetUnoControlModel(), UNO_QUERY );
     if ( xPSet.is() )
-    {		
+    {
         sal_Int32 nXIn = 0, nYIn = 0, nWidthIn = 0, nHeightIn = 0;
         xPSet->getPropertyValue( DLGED_PROP_POSITIONX ) >>= nXIn;
         xPSet->getPropertyValue( DLGED_PROP_POSITIONY ) >>= nYIn;
@@ -1471,8 +1471,8 @@ void DlgEdForm::PositionAndSizeChange( const beans::PropertyChangeEvent& evt )
 {
     DlgEditor* pEditor = GetDlgEditor();
     DBG_ASSERT( pEditor, "DlgEdForm::PositionAndSizeChange: no dialog editor!" );
-    if ( pEditor )    
-    {    
+    if ( pEditor )
+    {
         DlgEdPage* pPage_ = pEditor->GetPage();
         DBG_ASSERT( pPage_, "DlgEdForm::PositionAndSizeChange: no page!" );
         if ( pPage_ )
@@ -1541,7 +1541,7 @@ void DlgEdForm::PositionAndSizeChange( const beans::PropertyChangeEvent& evt )
                     {
                         Reference< beans::XPropertySet > xPSet( (*aIter)->GetUnoControlModel(), UNO_QUERY );
                         if ( xPSet.is() )
-                        {		
+                        {
                             sal_Int32 nX = 0, nY = 0, nWidth = 0, nHeight = 0;
                             xPSet->getPropertyValue( DLGED_PROP_POSITIONX ) >>= nX;
                             xPSet->getPropertyValue( DLGED_PROP_POSITIONY ) >>= nY;
@@ -1614,7 +1614,7 @@ void DlgEdForm::UpdateStep()
 //----------------------------------------------------------------------------
 
 void DlgEdForm::UpdateTabIndices()
-{	
+{
 	// stop listening with all children
 	::std::vector<DlgEdObj*>::iterator aIter;
 	for ( aIter = pChilds.begin() ; aIter != pChilds.end() ; ++aIter )
@@ -1682,7 +1682,7 @@ void DlgEdForm::UpdateTabOrder()
     // #110559#
     // When the tabindex of a control model changes, the dialog control is
     // notified about those changes. Due to #109067# (bad performance of
-    // dialog editor) the dialog control doesn't activate the tab order 
+    // dialog editor) the dialog control doesn't activate the tab order
     // in design mode. When the dialog editor has reordered all
     // tabindices, this method allows to activate the taborder afterwards.
 
@@ -1704,10 +1704,10 @@ void DlgEdForm::UpdateGroups()
     // #110559#
     // The grouping of radio buttons in a dialog is done by vcl.
     // In the dialog editor we have two views (=controls) for one
-    // radio button model. One control is owned by the dialog control, 
+    // radio button model. One control is owned by the dialog control,
     // but not visible in design mode. The other control is owned by
     // the drawing layer object. Whereas the grouping of the first
-    // control is done by vcl, the grouping of the control in the 
+    // control is done by vcl, the grouping of the control in the
     // drawing layer has to be done here.
 
     Reference< awt::XTabControllerModel > xTabModel( GetUnoControlModel() , UNO_QUERY );
@@ -1742,21 +1742,21 @@ void DlgEdForm::UpdateGroups()
                     const Reference< awt::XControl > xCtrl( pControls[nControl] );
                     if ( xCtrl.is() )
                     {
-                        Reference< awt::XControlModel > xCtrlModel( xCtrl->getModel() );                            
+                        Reference< awt::XControlModel > xCtrlModel( xCtrl->getModel() );
                         if ( (awt::XControlModel*)xCtrlModel.get() == (awt::XControlModel*)pModels[nModel].get() )
                         {
                             // get the control peer and insert into the list of peers
                             aSeqPeers.getArray()[ nModel ] = Reference< awt::XWindow >( xCtrl->getPeer(), UNO_QUERY );
                             break;
                         }
-                    }                       
+                    }
                 }
             }
 
             // set the group at the dialog peer
             Reference< awt::XControl > xDlg( GetControl(), UNO_QUERY );
             if ( xDlg.is() )
-            {                    
+            {
                 Reference< awt::XVclContainerPeer > xDlgPeer( xDlg->getPeer(), UNO_QUERY );
                 if ( xDlgPeer.is() )
                     xDlgPeer->setGroup( aSeqPeers );
@@ -1778,7 +1778,7 @@ void DlgEdForm::UpdateTabOrderAndGroups()
 void DlgEdForm::NbcMove( const Size& rSize )
 {
 	SdrUnoObj::NbcMove( rSize );
-	
+
 	// set geometry properties of form
 	EndListening(sal_False);
 	SetPropsFromRect();
@@ -1833,7 +1833,7 @@ FASTBOOL DlgEdForm::EndCreate(SdrDragStat& rStat, SdrCreateCmd eCmd)
 	// set geometry properties
 	SetPropsFromRect();
 
-	// dialog model changed 
+	// dialog model changed
 	GetDlgEditor()->SetDialogModelChanged(sal_True);
 
 	// start listening

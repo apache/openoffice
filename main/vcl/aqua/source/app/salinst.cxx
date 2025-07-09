@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -87,13 +87,13 @@ class AquaDelayedSettingsChanged : public Timer
         mbInvalidate( bInvalidate )
     {
     }
-    
+
     virtual void Timeout()
     {
         SalData* pSalData = GetSalData();
         if( ! pSalData->maFrames.empty() )
             pSalData->maFrames.front()->CallCallback( SALEVENT_SETTINGSCHANGED, NULL );
-        
+
         if( mbInvalidate )
         {
             for( std::list< AquaSalFrame* >::iterator it = pSalData->maFrames.begin();
@@ -104,7 +104,7 @@ class AquaDelayedSettingsChanged : public Timer
             }
         }
         Stop();
-        delete this;                                        
+        delete this;
     }
 };
 
@@ -140,7 +140,7 @@ bool AquaSalInstance::isOnCommandLine( const rtl::OUString& rArg )
     }
     return false;
 }
- 
+
 
 // initialize the cocoa VCL_NSApplication object
 // returns an NSAutoreleasePool that must be released when the event loop begins
@@ -148,7 +148,7 @@ static void initNSApp()
 {
     // create our cocoa NSApplication
     [VCL_NSApplication sharedApplication];
-    
+
     SalData::ensureThreadAutoreleasePool();
 
     // put cocoa into multithreaded mode
@@ -156,7 +156,7 @@ static void initNSApp()
 
     // activate our delegate methods
     [NSApp setDelegate: NSApp];
-    
+
     [[NSNotificationCenter defaultCenter] addObserver: NSApp
                                           selector: @selector(systemColorsChanged:)
                                           name: NSSystemColorsDidChangeNotification
@@ -180,7 +180,7 @@ static void initNSApp()
     // get System Version and store the value in GetSalData()->mnSystemVersion
     SInt32 systemVersion = OSX_VER_LION; // initialize with the minimal requirement
     const OSErr err = Gestalt( gestaltSystemVersion, &systemVersion);
-    if( err == noErr ) 
+    if( err == noErr )
     {
         GetSalData()->mnSystemVersion = systemVersion;
 #if OSL_DEBUG_LEVEL > 1
@@ -196,7 +196,7 @@ static void initNSApp()
                                            selector: @selector(applicationWillBecomeActive:)
                                            name: @"AppleRemoteWillBecomeActive"
                                            object: nil ];
-                                         
+
     [[NSDistributedNotificationCenter defaultCenter] addObserver: NSApp
                                            selector: @selector(applicationWillResignActive:)
                                            name: @"AppleRemoteWillResignActive"
@@ -217,7 +217,7 @@ sal_Bool ImplSVMainHook( sal_Bool * pbInit )
         osl_getExecutableFile( &aExeURL.pData );
         osl_getSystemPathFromFileURL( aExeURL.pData, &aExe.pData );
         rtl::OString aByteExe( rtl::OUStringToOString( aExe, osl_getThreadTextEncoding() ) );
-        
+
 #ifdef DEBUG
         aByteExe += OString ( " NSAccessibilityDebugLogLevel 1" );
         const char* pArgv[] = { aByteExe.getStr(), NULL };
@@ -414,7 +414,7 @@ SalInstance* CreateSalInstance()
     SalData* pSalData = GetSalData();
     DBG_ASSERT( pSalData->mpFirstInstance == NULL, "more than one instance created" );
     AquaSalInstance* pInst = new AquaSalInstance;
-    
+
     // init instance (only one instance in this version !!!)
     pSalData->mpFirstInstance = pInst;
     // this one is for outside AquaSalInstance::Yield
@@ -429,7 +429,7 @@ SalInstance* CreateSalInstance()
 	ImplGetSVData()->maNWFData.mnStatusBarLowerRightOffset = 10;
 	ImplGetSVData()->maGDIData.mbNoXORClipping = true;
 	ImplGetSVData()->maWinData.mbNoSaveBackground = true;
-    
+
     return pInst;
 }
 
@@ -494,7 +494,7 @@ void AquaSalInstance::PostUserEvent( AquaSalFrame* pFrame, sal_uInt16 nType, voi
     osl_acquireMutex( maUserEventListMutex );
     maUserEvents.push_back( SalUserEvent( pFrame, pData, nType ) );
     osl_releaseMutex( maUserEventListMutex );
-    
+
     // notify main loop that an event has arrived
     wakeupYield();
 }
@@ -552,7 +552,7 @@ bool AquaSalInstance::CheckYieldMutex()
 	{
 	    bRet = false;
 	}
-    
+
     return bRet;
 }
 
@@ -602,7 +602,7 @@ void AquaSalInstance::handleAppDefinedEvent( NSEvent* pEvent )
                 bIsFullScreenMode = true;
         }
 
-        switch ([pEvent data1]) 
+        switch ([pEvent data1])
         {
             case kRemoteButtonPlay:
                 nCommand = ( bIsFullScreenMode == true ) ? MEDIA_COMMAND_PLAY_PAUSE : MEDIA_COMMAND_PLAY;
@@ -612,7 +612,7 @@ void AquaSalInstance::handleAppDefinedEvent( NSEvent* pEvent )
             // case kRemoteButtonMenu:         nCommand = MEDIA_COMMAND_MENU; break;
 
             case kRemoteButtonPlus:     	nCommand = MEDIA_COMMAND_VOLUME_UP; break;
-            
+
             case kRemoteButtonMinus:        nCommand = MEDIA_COMMAND_VOLUME_DOWN; break;
 
             case kRemoteButtonRight:        nCommand = MEDIA_COMMAND_NEXTTRACK; break;
@@ -676,18 +676,18 @@ void AquaSalInstance::Yield( bool bWait, bool bHandleAllCurrentEvents )
     // ensure that the per thread autorelease pool is top level and
     // will therefore not be destroyed by cocoa implicitly
     SalData::ensureThreadAutoreleasePool();
-    
+
     // NSAutoreleasePool documentation suggests we should have
     // an own pool for each yield level
     ReleasePoolHolder aReleasePool;
-    
+
 	// Release all locks so that we don't deadlock when we pull pending
 	// events from the event queue
     bool bDispatchUser = true;
     while( bDispatchUser )
     {
         sal_uLong nCount = ReleaseYieldMutex();
-    
+
         // get one user event
         osl_acquireMutex( maUserEventListMutex );
         SalUserEvent aEvent( NULL, NULL, 0 );
@@ -699,9 +699,9 @@ void AquaSalInstance::Yield( bool bWait, bool bHandleAllCurrentEvents )
         else
             bDispatchUser = false;
         osl_releaseMutex( maUserEventListMutex );
-        
+
         AcquireYieldMutex( nCount );
-        
+
         // dispatch it
         if( aEvent.mpFrame && AquaSalFrame::isAlive( aEvent.mpFrame ) )
         {
@@ -712,7 +712,7 @@ void AquaSalInstance::Yield( bool bWait, bool bHandleAllCurrentEvents )
                 return;
         }
     }
-    
+
     // handle cocoa event queue
     // cocoa events mye be only handled in the thread the NSApp was created
     if( isNSAppThread() && mnActivePrintJobs == 0 )
@@ -728,7 +728,7 @@ void AquaSalInstance::Yield( bool bWait, bool bHandleAllCurrentEvents )
         do
         {
             sal_uLong nCount = ReleaseYieldMutex();
-    
+
             pEvent = [NSApp nextEventMatchingMask: NSAnyEventMask untilDate: nil
                             inMode: NSDefaultRunLoopMode dequeue: YES];
             if( pEvent )
@@ -737,22 +737,22 @@ void AquaSalInstance::Yield( bool bWait, bool bHandleAllCurrentEvents )
                 bHadEvent = true;
             }
             [NSApp updateWindows];
-        
+
             AcquireYieldMutex( nCount );
         } while( bHandleAllCurrentEvents && pEvent );
-        
+
         // if we had no event yet, wait for one if requested
         if( bWait && ! bHadEvent )
         {
             sal_uLong nCount = ReleaseYieldMutex();
-    
+
             NSDate* pDt = AquaSalTimer::pRunningTimer ? [AquaSalTimer::pRunningTimer fireDate] : [NSDate distantFuture];
             pEvent = [NSApp nextEventMatchingMask: NSAnyEventMask untilDate: pDt
                             inMode: NSDefaultRunLoopMode dequeue: YES];
             if( pEvent )
                 [NSApp sendEvent: pEvent];
             [NSApp updateWindows];
-        
+
             AcquireYieldMutex( nCount );
 
             // #i86581#
@@ -768,7 +768,7 @@ void AquaSalInstance::Yield( bool bWait, bool bHandleAllCurrentEvents )
         }
 
         mbWaitingYield = bOldWaitingYield;
-        
+
         // collect update rectangles
         const std::list< AquaSalFrame* > rFrames( GetSalData()->maFrames );
         for( std::list< AquaSalFrame* >::const_iterator it = rFrames.begin(); it != rFrames.end(); ++it )
@@ -827,7 +827,7 @@ bool AquaSalInstance::AnyInput( sal_uInt16 nType )
         if( nType == INPUT_APPEVENT )
             return false;
     }
-    
+
     if( nType & INPUT_TIMER )
     {
         if( AquaSalTimer::pRunningTimer )
@@ -839,7 +839,7 @@ bool AquaSalInstance::AnyInput( sal_uInt16 nType )
             }
         }
     }
-        
+
 	unsigned/*NSUInteger*/ nEventMask = 0;
 	if( nType & INPUT_MOUSE)
 		nEventMask |=
@@ -874,7 +874,7 @@ SalFrame* AquaSalInstance::CreateChildFrame( SystemParentData*, sal_uLong /*nSal
 SalFrame* AquaSalInstance::CreateFrame( SalFrame* pParent, sal_uLong nSalFrameStyle )
 {
     SalData::ensureThreadAutoreleasePool();
-    
+
     SalFrame* pFrame = new AquaSalFrame( pParent, nSalFrameStyle );
     return pFrame;
 }
@@ -942,7 +942,7 @@ void AquaSalInstance::GetPrinterQueueInfo( ImplPrnQueueList* pList )
             pInfo->mnStatus         = 0;
             pInfo->mnJobs           = 0;
             pInfo->mpSysData        = NULL;
-            
+
             pList->Add( pInfo );
         }
     }
@@ -967,7 +967,7 @@ XubString AquaSalInstance::GetDefaultPrinter()
 {
     // #i113170# may not be the main thread if called from UNO API
     SalData::ensureThreadAutoreleasePool();
-    
+
 	if( ! maDefaultPrinter.getLength() )
     {
         NSPrintInfo* pPI = [NSPrintInfo sharedPrintInfo];
@@ -994,7 +994,7 @@ SalInfoPrinter* AquaSalInstance::CreateInfoPrinter( SalPrinterQueueInfo* pQueueI
 {
     // #i113170# may not be the main thread if called from UNO API
     SalData::ensureThreadAutoreleasePool();
-    
+
 	SalInfoPrinter* pNewInfoPrinter = NULL;
     if( pQueueInfo )
     {
@@ -1012,7 +1012,7 @@ void AquaSalInstance::DestroyInfoPrinter( SalInfoPrinter* pPrinter )
 {
     // #i113170# may not be the main thread if called from UNO API
     SalData::ensureThreadAutoreleasePool();
-    
+
     delete pPrinter;
 }
 
@@ -1056,7 +1056,7 @@ void* AquaSalInstance::GetConnectionIdentifier( ConnectionIdentifierType& rRetur
 static rtl::OUString translateToExternalUrl(const rtl::OUString& internalUrl)
 {
     rtl::OUString extUrl;
-        
+
     uno::Reference< lang::XMultiServiceFactory > sm = comphelper::getProcessServiceFactory();
     if (sm.is())
     {
@@ -1111,7 +1111,7 @@ void AquaSalInstance::AddToRecentDocumentList(const rtl::OUString& rFileUrl, con
     rtl::OUString externalUrl = translateToExternalUrl(rFileUrl);
     if( 0 == externalUrl.getLength() )
         externalUrl = rFileUrl;
-    
+
     if( externalUrl.getLength() && !isDangerousUrl( externalUrl ) )
     {
         NSString* pString = CreateNSString( externalUrl );
@@ -1220,7 +1220,7 @@ rtl::OUString GetOUString( NSString* pStr )
     int nLen = [pStr length];
     if( nLen == 0 )
         return rtl::OUString();
-    
+
     rtl::OUStringBuffer aBuf( nLen+1 );
     aBuf.setLength( nLen );
     [pStr getCharacters: const_cast<sal_Unicode*>(aBuf.getStr())];
@@ -1241,16 +1241,16 @@ CGImageRef CreateCGImage( const Image& rImage )
 {
     BitmapEx aBmpEx( rImage.GetBitmapEx() );
     Bitmap aBmp( aBmpEx.GetBitmap() );
-        
+
     if( ! aBmp || ! aBmp.ImplGetImpBitmap() )
         return NULL;
-    
+
     // simple case, no transparency
     AquaSalBitmap* pSalBmp = static_cast<AquaSalBitmap*>(aBmp.ImplGetImpBitmap()->ImplGetSalBitmap());
-    
+
     if( ! pSalBmp )
         return NULL;
-    
+
     CGImageRef xImage = NULL;
     if( ! (aBmpEx.IsAlpha() || aBmpEx.IsTransparent() ) )
         xImage = pSalBmp->CreateCroppedImage( 0, 0, pSalBmp->mnWidth, pSalBmp->mnHeight );
@@ -1279,30 +1279,30 @@ CGImageRef CreateCGImage( const Image& rImage )
         SalColor nTransColor = MAKE_SALCOLOR( aTransColor.GetRed(), aTransColor.GetGreen(), aTransColor.GetBlue() );
         xImage = pSalBmp->CreateColorMask( 0, 0, pSalBmp->mnWidth, pSalBmp->mnHeight, nTransColor );
     }
-    
+
     return xImage;
 }
 
 NSImage* CreateNSImage( const Image& rImage )
 {
     CGImageRef xImage = CreateCGImage( rImage );
-    
+
     if( ! xImage )
         return nil;
-    
+
     Size aSize( rImage.GetSizePixel() );
     NSImage* pImage = [[NSImage alloc] initWithSize: NSMakeSize( aSize.Width(), aSize.Height() )];
     if( pImage )
     {
         [pImage setFlipped: YES];
         [pImage lockFocus];
-        
+
         NSGraphicsContext* pContext = [NSGraphicsContext currentContext];
         CGContextRef rCGContext = reinterpret_cast<CGContextRef>([pContext graphicsPort]);
-        
+
         const CGRect aDstRect = CGRectMake( 0, 0, aSize.Width(), aSize.Height());
         CGContextDrawImage( rCGContext, aDstRect, xImage );
-        
+
         [pImage unlockFocus];
     }
 

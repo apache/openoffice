@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 #include "precompiled_sc.hxx"
@@ -57,10 +57,10 @@ void CellLineStyleControl::Initialize()
     //maPushButtonMoreOptions.SetIcoPosX(2);
     Link aLink = LINK(this, CellLineStyleControl, PBClickHdl);
     maPushButtonMoreOptions.SetClickHdl(aLink);
-    
+
     maCellLineStyleValueSet.SetStyle(maCellLineStyleValueSet.GetStyle()| WB_3DLOOK |  WB_NO_DIRECTSELECT);
     maCellLineStyleValueSet.SetControlBackground(GetSettings().GetStyleSettings().GetMenuColor());
-    maCellLineStyleValueSet.SetColor(GetSettings().GetStyleSettings().GetMenuColor()); 
+    maCellLineStyleValueSet.SetColor(GetSettings().GetStyleSettings().GetMenuColor());
 
     for(sal_uInt16 i = 1 ; i <= 9 ; i++)
     {
@@ -114,7 +114,7 @@ void CellLineStyleControl::SetAllNoSel()
 
 IMPL_LINK(CellLineStyleControl, VSSelectHdl, void *, pControl)
 {
-    if(pControl == &maCellLineStyleValueSet)  
+    if(pControl == &maCellLineStyleValueSet)
     {
         const sal_uInt16 iPos(maCellLineStyleValueSet.GetSelectItemId());
         SvxLineItem aLineItem(SID_FRAME_LINESTYLE);
@@ -124,39 +124,39 @@ IMPL_LINK(CellLineStyleControl, VSSelectHdl, void *, pControl)
 
         switch(iPos)
         {
-            case 1: 
-                n1 = DEF_LINE_WIDTH_0; 
+            case 1:
+                n1 = DEF_LINE_WIDTH_0;
                 break;
-            case 2: 
-                n1 = DEF_LINE_WIDTH_2; 
+            case 2:
+                n1 = DEF_LINE_WIDTH_2;
                 break;
-            case 3: 
-                n1 = DEF_LINE_WIDTH_3; 
+            case 3:
+                n1 = DEF_LINE_WIDTH_3;
                 break;
-            case 4: 
-                n1 = DEF_LINE_WIDTH_4; 
+            case 4:
+                n1 = DEF_LINE_WIDTH_4;
                 break;
-            case 5: 
+            case 5:
                 n1 = DEF_DOUBLE_LINE0_OUT;
                 n2 = DEF_DOUBLE_LINE0_IN;
                 n3 = DEF_DOUBLE_LINE0_DIST;
                 break;
-            case 6: 
+            case 6:
                 n1 = DEF_DOUBLE_LINE7_OUT;
                 n2 = DEF_DOUBLE_LINE7_IN;
                 n3 = DEF_DOUBLE_LINE7_DIST;
                 break;
-            case 7: 
+            case 7:
                 n1 = DEF_DOUBLE_LINE4_OUT;
                 n2 = DEF_DOUBLE_LINE4_IN;
                 n3 = DEF_DOUBLE_LINE4_DIST;
                 break;
-            case 8: 
+            case 8:
                 n1 = DEF_DOUBLE_LINE9_OUT;
                 n2 = DEF_DOUBLE_LINE9_IN;
                 n3 = DEF_DOUBLE_LINE9_DIST;
                 break;
-            case 9: 
+            case 9:
                 n1 = DEF_DOUBLE_LINE2_OUT;
                 n2 = DEF_DOUBLE_LINE2_IN;
                 n3 = DEF_DOUBLE_LINE2_DIST;
@@ -177,7 +177,7 @@ IMPL_LINK(CellLineStyleControl, VSSelectHdl, void *, pControl)
 
 IMPL_LINK(CellLineStyleControl, PBClickHdl, PushButton *, pPBtn)
 {
-    if(pPBtn == &maPushButtonMoreOptions)  
+    if(pPBtn == &maPushButtonMoreOptions)
     {
         if(mrCellAppearancePropertyPanel.GetBindings())
         {

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -87,7 +87,7 @@ namespace utl
         CloseableComponentImpl( const Reference< XInterface >& _rxComponent );
 
         /** closes the component
-        
+
             @nofail
         */
         void    nf_closeComponent();
@@ -190,7 +190,7 @@ namespace utl
         DBG_ASSERT( Source.Source == m_xCloseable, "CloseableComponentImpl::queryClosing: where did this come from?" );
         throw CloseVetoException();
     }
-    
+
     //--------------------------------------------------------------------
     void SAL_CALL CloseableComponentImpl::notifyClosing( const EventObject&
     #ifdef DBG_UTIL

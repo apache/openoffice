@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -805,11 +805,11 @@ bool SdrMeasureObj::beginSpecialDrag(SdrDragStat& rDrag) const
 {
 	const SdrHdl* pHdl = rDrag.GetHdl();
 
-    if(pHdl) 
+    if(pHdl)
     {
 		const sal_uInt32 nHdlNum(pHdl->GetObjHdlNum());
 
-        if(nHdlNum != 2 && nHdlNum != 3) 
+        if(nHdlNum != 2 && nHdlNum != 3)
         {
 			rDrag.SetEndDragChangesAttributes(true);
 		}
@@ -829,18 +829,18 @@ bool SdrMeasureObj::applySpecialDrag(SdrDragStat& rDrag)
 	ImpTakeAttr(aMeasureRec);
 	ImpEvalDrag(aMeasureRec, rDrag);
 
-	switch (nHdlNum) 
+	switch (nHdlNum)
     {
-		case 2: 
+		case 2:
         {
-            aPt1 = aMeasureRec.aPt1; 
-            SetTextDirty(); 
+            aPt1 = aMeasureRec.aPt1;
+            SetTextDirty();
             break;
         }
-		case 3: 
+		case 3:
         {
-            aPt2 = aMeasureRec.aPt2; 
-            SetTextDirty(); 
+            aPt2 = aMeasureRec.aPt2;
+            SetTextDirty();
             break;
         }
 		default:

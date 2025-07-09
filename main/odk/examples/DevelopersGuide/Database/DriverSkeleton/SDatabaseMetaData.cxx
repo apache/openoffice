@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -33,7 +33,7 @@ using namespace com::sun::star::lang;
 using namespace com::sun::star::beans;
 using namespace com::sun::star::sdbc;
 
-ODatabaseMetaData::ODatabaseMetaData(OConnection* _pCon) 
+ODatabaseMetaData::ODatabaseMetaData(OConnection* _pCon)
 : m_pConnection(_pCon)
 , m_bUseCatalog(sal_True)
 {
@@ -777,88 +777,88 @@ Reference< XResultSet > SAL_CALL ODatabaseMetaData::getSchemas(  ) throw(SQLExce
 	return NULL;
 }
 // -------------------------------------------------------------------------
-Reference< XResultSet > SAL_CALL ODatabaseMetaData::getColumnPrivileges( 
-	const Any& catalog, const ::rtl::OUString& schema, const ::rtl::OUString& table, 
+Reference< XResultSet > SAL_CALL ODatabaseMetaData::getColumnPrivileges(
+	const Any& catalog, const ::rtl::OUString& schema, const ::rtl::OUString& table,
 	const ::rtl::OUString& columnNamePattern ) throw(SQLException, RuntimeException)
 {
 	return NULL;
 }
 // -------------------------------------------------------------------------
-Reference< XResultSet > SAL_CALL ODatabaseMetaData::getColumns( 
-	const Any& catalog, const ::rtl::OUString& schemaPattern, const ::rtl::OUString& tableNamePattern, 
+Reference< XResultSet > SAL_CALL ODatabaseMetaData::getColumns(
+	const Any& catalog, const ::rtl::OUString& schemaPattern, const ::rtl::OUString& tableNamePattern,
 	const ::rtl::OUString& columnNamePattern ) throw(SQLException, RuntimeException)
 {
 	return NULL;
 }
 // -------------------------------------------------------------------------
-Reference< XResultSet > SAL_CALL ODatabaseMetaData::getTables( 
-	const Any& catalog, const ::rtl::OUString& schemaPattern, 
+Reference< XResultSet > SAL_CALL ODatabaseMetaData::getTables(
+	const Any& catalog, const ::rtl::OUString& schemaPattern,
 	const ::rtl::OUString& tableNamePattern, const Sequence< ::rtl::OUString >& types ) throw(SQLException, RuntimeException)
 {
 	return NULL;
 }
 // -------------------------------------------------------------------------
-Reference< XResultSet > SAL_CALL ODatabaseMetaData::getProcedureColumns( 
-	const Any& catalog, const ::rtl::OUString& schemaPattern, 
+Reference< XResultSet > SAL_CALL ODatabaseMetaData::getProcedureColumns(
+	const Any& catalog, const ::rtl::OUString& schemaPattern,
 	const ::rtl::OUString& procedureNamePattern, const ::rtl::OUString& columnNamePattern ) throw(SQLException, RuntimeException)
 {
 	return NULL;
 }
 // -------------------------------------------------------------------------
-Reference< XResultSet > SAL_CALL ODatabaseMetaData::getProcedures( 
-	const Any& catalog, const ::rtl::OUString& schemaPattern, 
+Reference< XResultSet > SAL_CALL ODatabaseMetaData::getProcedures(
+	const Any& catalog, const ::rtl::OUString& schemaPattern,
 	const ::rtl::OUString& procedureNamePattern ) throw(SQLException, RuntimeException)
 {
 	return NULL;
 }
 // -------------------------------------------------------------------------
-Reference< XResultSet > SAL_CALL ODatabaseMetaData::getVersionColumns( 
+Reference< XResultSet > SAL_CALL ODatabaseMetaData::getVersionColumns(
 	const Any& catalog, const ::rtl::OUString& schema, const ::rtl::OUString& table ) throw(SQLException, RuntimeException)
 {
 	return NULL;
 }
 // -------------------------------------------------------------------------
-Reference< XResultSet > SAL_CALL ODatabaseMetaData::getExportedKeys( 
+Reference< XResultSet > SAL_CALL ODatabaseMetaData::getExportedKeys(
 	const Any& catalog, const ::rtl::OUString& schema, const ::rtl::OUString& table ) throw(SQLException, RuntimeException)
 {
 	return NULL;
 }
 // -------------------------------------------------------------------------
-Reference< XResultSet > SAL_CALL ODatabaseMetaData::getImportedKeys( 
+Reference< XResultSet > SAL_CALL ODatabaseMetaData::getImportedKeys(
 	const Any& catalog, const ::rtl::OUString& schema, const ::rtl::OUString& table ) throw(SQLException, RuntimeException)
 {
 	return NULL;
 }
 // -------------------------------------------------------------------------
-Reference< XResultSet > SAL_CALL ODatabaseMetaData::getPrimaryKeys( 
+Reference< XResultSet > SAL_CALL ODatabaseMetaData::getPrimaryKeys(
 	const Any& catalog, const ::rtl::OUString& schema, const ::rtl::OUString& table ) throw(SQLException, RuntimeException)
 {
 	return NULL;
 }
 // -------------------------------------------------------------------------
-Reference< XResultSet > SAL_CALL ODatabaseMetaData::getIndexInfo( 
-	const Any& catalog, const ::rtl::OUString& schema, const ::rtl::OUString& table, 
+Reference< XResultSet > SAL_CALL ODatabaseMetaData::getIndexInfo(
+	const Any& catalog, const ::rtl::OUString& schema, const ::rtl::OUString& table,
 	sal_Bool unique, sal_Bool approximate ) throw(SQLException, RuntimeException)
 {
 	return NULL;
 }
 // -------------------------------------------------------------------------
-Reference< XResultSet > SAL_CALL ODatabaseMetaData::getBestRowIdentifier( 
-	const Any& catalog, const ::rtl::OUString& schema, const ::rtl::OUString& table, sal_Int32 scope, 
+Reference< XResultSet > SAL_CALL ODatabaseMetaData::getBestRowIdentifier(
+	const Any& catalog, const ::rtl::OUString& schema, const ::rtl::OUString& table, sal_Int32 scope,
 	sal_Bool nullable ) throw(SQLException, RuntimeException)
 {
 	return NULL;
 }
 // -------------------------------------------------------------------------
-Reference< XResultSet > SAL_CALL ODatabaseMetaData::getTablePrivileges( 
+Reference< XResultSet > SAL_CALL ODatabaseMetaData::getTablePrivileges(
 	const Any& catalog, const ::rtl::OUString& schemaPattern, const ::rtl::OUString& tableNamePattern ) throw(SQLException, RuntimeException)
 {
 	return NULL;
 }
 // -------------------------------------------------------------------------
-Reference< XResultSet > SAL_CALL ODatabaseMetaData::getCrossReference( 
-	const Any& primaryCatalog, const ::rtl::OUString& primarySchema, 
-	const ::rtl::OUString& primaryTable, const Any& foreignCatalog, 
+Reference< XResultSet > SAL_CALL ODatabaseMetaData::getCrossReference(
+	const Any& primaryCatalog, const ::rtl::OUString& primarySchema,
+	const ::rtl::OUString& primaryTable, const Any& foreignCatalog,
 	const ::rtl::OUString& foreignSchema, const ::rtl::OUString& foreignTable ) throw(SQLException, RuntimeException)
 {
 	return NULL;

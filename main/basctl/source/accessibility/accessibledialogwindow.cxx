@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -61,7 +61,7 @@ DBG_NAME( AccessibleDialogWindow )
 AccessibleDialogWindow::ChildDescriptor::ChildDescriptor( DlgEdObj* _pDlgEdObj )
 	:pDlgEdObj( _pDlgEdObj )
 	,rxAccessible( 0 )
-{ 
+{
 }
 
 // -----------------------------------------------------------------------------
@@ -333,7 +333,7 @@ void AccessibleDialogWindow::RemoveChild( const ChildDescriptor& rDesc )
 void AccessibleDialogWindow::UpdateChild( const ChildDescriptor& rDesc )
 {
 	if ( IsChildVisible( rDesc ) )
-	{			
+	{
 		// if the object is not in the child list, insert child
 		InsertChild( rDesc );
 	}
@@ -438,13 +438,13 @@ void AccessibleDialogWindow::ProcessWindowEvent( const VclWindowEvent& rVclWindo
 		case VCLEVENT_WINDOW_SHOW:
 		{
 			aNewValue <<= AccessibleStateType::SHOWING;
-			NotifyAccessibleEvent( AccessibleEventId::STATE_CHANGED, aOldValue, aNewValue );							
+			NotifyAccessibleEvent( AccessibleEventId::STATE_CHANGED, aOldValue, aNewValue );
 		}
 		break;
 		case VCLEVENT_WINDOW_HIDE:
 		{
 			aOldValue <<= AccessibleStateType::SHOWING;
-			NotifyAccessibleEvent( AccessibleEventId::STATE_CHANGED, aOldValue, aNewValue );				
+			NotifyAccessibleEvent( AccessibleEventId::STATE_CHANGED, aOldValue, aNewValue );
 		}
 		break;
 		case VCLEVENT_WINDOW_RESIZE:
@@ -513,7 +513,7 @@ void AccessibleDialogWindow::FillAccessibleStateSet( utl::AccessibleStateSetHelp
 }
 
 // -----------------------------------------------------------------------------
-// OCommonAccessibleComponent 
+// OCommonAccessibleComponent
 // -----------------------------------------------------------------------------
 
 awt::Rectangle AccessibleDialogWindow::implGetBounds() throw (RuntimeException)
@@ -546,7 +546,7 @@ void AccessibleDialogWindow::Notify( SfxBroadcaster&, const SfxHint& rHint )
 					if ( IsChildVisible( aDesc ) )
 						InsertChild( aDesc );
 				}
-			}	
+			}
 			break;
 			case HINT_OBJREMOVED:
 			{
@@ -851,8 +851,8 @@ Reference< XAccessible > AccessibleDialogWindow::getAccessibleAtPoint( const awt
 	{
 		Reference< XAccessible > xAcc = getAccessibleChild( i );
 		if ( xAcc.is() )
-		{			
-			Reference< XAccessibleComponent > xComp( xAcc->getAccessibleContext(), UNO_QUERY );				
+		{
+			Reference< XAccessibleComponent > xComp( xAcc->getAccessibleContext(), UNO_QUERY );
 			if ( xComp.is() )
 			{
 				Rectangle aRect = VCLRectangle( xComp->getBounds() );
@@ -1002,7 +1002,7 @@ void AccessibleDialogWindow::selectAccessibleChild( sal_Int32 nChildIndex ) thro
 // -----------------------------------------------------------------------------
 
 sal_Bool AccessibleDialogWindow::isAccessibleChildSelected( sal_Int32 nChildIndex ) throw (IndexOutOfBoundsException, RuntimeException)
-{	
+{
 	OExternalLockGuard aGuard( this );
 
 	if ( nChildIndex < 0 || nChildIndex >= getAccessibleChildCount() )
@@ -1060,7 +1060,7 @@ sal_Int32 AccessibleDialogWindow::getSelectedAccessibleChildCount(  ) throw (Run
 	sal_Int32 nRet = 0;
 
 	for ( sal_Int32 i = 0, nCount = getAccessibleChildCount(); i < nCount; ++i )
-	{		
+	{
 		if ( isAccessibleChildSelected( i ) )
 			++nRet;
 	}
@@ -1080,7 +1080,7 @@ Reference< XAccessible > AccessibleDialogWindow::getSelectedAccessibleChild( sal
 	Reference< XAccessible > xChild;
 
 	for ( sal_Int32 i = 0, j = 0, nCount = getAccessibleChildCount(); i < nCount; ++i )
-	{		
+	{
 		if ( isAccessibleChildSelected( i ) && ( j++ == nSelectedChildIndex ) )
 		{
 			xChild = getAccessibleChild( i );

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -53,14 +53,14 @@ const sal_Char __FAR_DATA HTMLOutFuncs::sNewLine[] = "\015\012";
 
 HTMLOutContext::HTMLOutContext( rtl_TextEncoding eDestEnc )
 {
-	m_eDestEnc = RTL_TEXTENCODING_DONTKNOW == eDestEnc 
+	m_eDestEnc = RTL_TEXTENCODING_DONTKNOW == eDestEnc
 					? gsl_getSystemTextEncoding()
 					: eDestEnc;
 
 	m_hConv = rtl_createUnicodeToTextConverter( eDestEnc );
-	DBG_ASSERT( m_hConv, 
+	DBG_ASSERT( m_hConv,
 		"HTMLOutContext::HTMLOutContext: no converter for source encoding" );
-	m_hContext = m_hConv ? rtl_createUnicodeToTextContext( m_hConv ) 
+	m_hContext = m_hConv ? rtl_createUnicodeToTextContext( m_hConv )
 					 : (rtl_TextToUnicodeContext)1;
 }
 
@@ -70,7 +70,7 @@ HTMLOutContext::~HTMLOutContext()
 	rtl_destroyUnicodeToTextConverter( m_hConv );
 }
 
-const sal_Char *lcl_svhtml_GetEntityForChar( sal_Unicode c, 
+const sal_Char *lcl_svhtml_GetEntityForChar( sal_Unicode c,
 											 rtl_TextEncoding eDestEnc )
 {
 	const sal_Char* pStr = 0;
@@ -88,29 +88,29 @@ const sal_Char *lcl_svhtml_GetEntityForChar( sal_Unicode c,
         case 184: // ccedil
         case 193: // Aacute
         case 194: // Acirc
-        case 196: // Auml 
+        case 196: // Auml
         case 199: // Ccedil
         case 201: // Eacute
-        case 203: // Euml 
+        case 203: // Euml
         case 205: // Iacute
         case 206: // Icirc
         case 211: // Oacute
         case 212: // Ocirc
-        case 214: // Ouml 
+        case 214: // Ouml
         case 215: // times
         case 218: // Uacute
-        case 220: // Uuml 
+        case 220: // Uuml
         case 221: // Yacute
         case 225: // aacute
         case 226: // acirc
-        case 228: // auml 
+        case 228: // auml
         case 233: // eacute
-        case 235: // euml 
+        case 235: // euml
         case 237: // iacute
         case 238: // icirc
         case 243: // oacute
         case 244: // ocirc
-        case 246: // ouml 
+        case 246: // ouml
         case 247: // divide
         case 250: // uacute
         case 252: // uuml
@@ -440,9 +440,9 @@ void lcl_ConvertCharToHTML( sal_Unicode c, ByteString& rDest,
 						RTL_UNICODETOTEXT_FLAGS_INVALID_ERROR;
 	if( pStr )
 	{
-		sal_Size nLen = rtl_convertUnicodeToText( 
+		sal_Size nLen = rtl_convertUnicodeToText(
 							rContext.m_hConv, rContext.m_hContext, &c, 0,
-							cBuffer, TXTCONV_BUFFER_SIZE, 
+							cBuffer, TXTCONV_BUFFER_SIZE,
 							nFlags|RTL_UNICODETOTEXT_FLAGS_FLUSH,
 							&nInfo, &nSrcChars );
 		DBG_ASSERT( (nInfo & (RTL_UNICODETOTEXT_INFO_ERROR|RTL_UNICODETOTEXT_INFO_DESTBUFFERTOSMALL)) == 0, "HTMLOut: error while flushing" );
@@ -453,7 +453,7 @@ void lcl_ConvertCharToHTML( sal_Unicode c, ByteString& rDest,
 	}
 	else
 	{
-		sal_Size nLen = rtl_convertUnicodeToText( rContext.m_hConv, 
+		sal_Size nLen = rtl_convertUnicodeToText( rContext.m_hConv,
 												  rContext.m_hContext, &c, 1,
 										   		  cBuffer, TXTCONV_BUFFER_SIZE,
 												  nFlags,
@@ -469,9 +469,9 @@ void lcl_ConvertCharToHTML( sal_Unicode c, ByteString& rDest,
 			// If the character could not be converted to the destination
 			// character set, the UNICODE character is exported as character
 			// entity.
-			nLen = rtl_convertUnicodeToText( 
+			nLen = rtl_convertUnicodeToText(
 								rContext.m_hConv, rContext.m_hContext, &c, 0,
-								cBuffer, TXTCONV_BUFFER_SIZE, 
+								cBuffer, TXTCONV_BUFFER_SIZE,
 								nFlags|RTL_UNICODETOTEXT_FLAGS_FLUSH,
 								&nInfo, &nSrcChars );
 			DBG_ASSERT( (nInfo & (RTL_UNICODETOTEXT_INFO_ERROR|RTL_UNICODETOTEXT_INFO_DESTBUFFERTOSMALL)) == 0, "HTMLOut: error while flushing" );
@@ -499,7 +499,7 @@ sal_Bool lcl_FlushToAscii( ByteString& rDest, HTMLOutContext& rContext )
 						RTL_UNICODETOTEXT_FLAGS_UNDEFINED_ERROR|
 						RTL_UNICODETOTEXT_FLAGS_FLUSH|
 						RTL_UNICODETOTEXT_FLAGS_INVALID_ERROR;
-	sal_Size nLen = rtl_convertUnicodeToText( 
+	sal_Size nLen = rtl_convertUnicodeToText(
 						rContext.m_hConv, rContext.m_hContext, &c, 0,
 						cBuffer, TXTCONV_BUFFER_SIZE, nFlags,
 						&nInfo, &nSrcChars );
@@ -533,7 +533,7 @@ SvStream& HTMLOutFuncs::Out_AsciiTag( SvStream& rStream, const sal_Char *pStr,
 }
 
 SvStream& HTMLOutFuncs::Out_Char( SvStream& rStream, sal_Unicode c,
-								  HTMLOutContext& rContext, 
+								  HTMLOutContext& rContext,
 								  String *pNonConvertableChars )
 {
 	ByteString sOut;
@@ -772,7 +772,7 @@ SvStream& HTMLOutFuncs::Out_ImageMap( SvStream& rStream,
 	return rStream;
 }
 
-SvStream& HTMLOutFuncs::OutScript( SvStream& rStrm, 
+SvStream& HTMLOutFuncs::OutScript( SvStream& rStrm,
                                    const String& rBaseURL,
 								   const String& rSource,
 								   const String& rLanguage,

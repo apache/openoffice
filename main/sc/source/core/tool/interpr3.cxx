@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -754,7 +754,7 @@ double ScInterpreter::GetChiSqDistPDF(double fX, double fDF)
     else // fDF is small in most cases, we can iterate
     {
         if (fmod(fDF,2.0)<0.5)
-        { 
+        {
             // even
             fValue = 0.5;
             fCount = 2.0;
@@ -862,7 +862,7 @@ double ScInterpreter::GetBeta(double fAlpha, double fBeta)
     fResult *= fLanczos;
     return fResult;
 }
-  
+
 // Same as GetBeta but with logarithm
 double ScInterpreter::GetLogBeta(double fAlpha, double fBeta)
 {
@@ -938,7 +938,7 @@ double ScInterpreter::GetBetaDistPDF(double fX, double fA, double fB)
         if (fB < 1.0 && fX == 1.0)
         {
             SetError(errIllegalArgument);
-            return HUGE_VAL;        
+            return HUGE_VAL;
         }
         else
             return 0.0;
@@ -1125,7 +1125,7 @@ double ScInterpreter::GetBetaDist(double fXin, double fAlpha, double fBeta)
         return;
     }
 }
-  
+
 void ScInterpreter::ScPhi()
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "sc", "er", "ScInterpreter::ScPhi" );
@@ -1330,7 +1330,7 @@ void ScInterpreter::ScB()
             }
         }
         else
-        { 
+        {
             if ( bIsValidX ) // not(0<p<1)
             {
                 if ( p == 0.0 )
@@ -1338,7 +1338,7 @@ void ScInterpreter::ScB()
                 else if ( p == 1.0 )
                     PushDouble( (xe == n) ? 1.0 : 0.0 );
                 else
-                    PushIllegalArgument(); 
+                    PushIllegalArgument();
             }
             else
                 PushIllegalArgument();
@@ -1507,7 +1507,7 @@ void ScInterpreter::ScLogNormDist() //expanded, see #i100119#
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "sc", "er", "ScInterpreter::ScLogNormDist" );
     sal_uInt8 nParamCount = GetByte();
-    if ( !MustHaveParamCount( nParamCount, 1, 4)) 
+    if ( !MustHaveParamCount( nParamCount, 1, 4))
         return;
     bool bCumulative = nParamCount == 4 ? GetBool() : true; // cumulative
     double sigma = nParamCount >= 3 ? GetDouble() : 1.0; // standard deviation
@@ -2985,7 +2985,7 @@ bool ScInterpreter::CalculateSkew(double& fSum,double& fCount,double& vSum,std::
     short nParamCount = GetByte();
     if ( !MustHaveParamCountMin( nParamCount, 1 )  )
         return false;
-    
+
     fSum   = 0.0;
     fCount = 0.0;
     vSum   = 0.0;
@@ -3274,9 +3274,9 @@ void ScInterpreter::CalculateSmallLarge(sal_Bool bSmall)
     }
     SCSIZE k = static_cast<SCSIZE>(f);
     vector<double> aSortArray;
-    /* TODO: using nth_element() is best for one single value, but LARGE/SMALL 
-     * actually are defined to return an array of values if an array of 
-     * positions was passed, in which case, depending on the number of values, 
+    /* TODO: using nth_element() is best for one single value, but LARGE/SMALL
+     * actually are defined to return an array of values if an array of
+     * positions was passed, in which case, depending on the number of values,
      * we may or will need a real sorted array again, see #i32345. */
     //GetSortArray(1, aSortArray);
     GetNumberSequenceArray(1, aSortArray);
@@ -3295,7 +3295,7 @@ void ScInterpreter::CalculateSmallLarge(sal_Bool bSmall)
 void ScInterpreter::ScLarge()
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "sc", "er", "ScInterpreter::ScLarge" );
-    CalculateSmallLarge(sal_False);   
+    CalculateSmallLarge(sal_False);
 }
 
 void ScInterpreter::ScSmall()
@@ -3934,7 +3934,7 @@ void ScInterpreter::ScProbability()
 void ScInterpreter::ScCorrel()
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "sc", "er", "ScInterpreter::ScCorrel" );
-    // This is identical to ScPearson() 
+    // This is identical to ScPearson()
     ScPearson();
 }
 
@@ -3944,12 +3944,12 @@ void ScInterpreter::ScCovar()
     CalculatePearsonCovar(sal_False,sal_False);
 }
 
-void ScInterpreter::ScPearson() 
+void ScInterpreter::ScPearson()
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "sc", "er", "ScInterpreter::ScPearson" );
     CalculatePearsonCovar(sal_True,sal_False);
 }
-void ScInterpreter::CalculatePearsonCovar(sal_Bool _bPearson,sal_Bool _bStexy) 
+void ScInterpreter::CalculatePearsonCovar(sal_Bool _bPearson,sal_Bool _bStexy)
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "sc", "er", "ScInterpreter::CalculatePearsonCovar" );
     if ( !MustHaveParamCount( GetByte(), 2 ) )
@@ -4060,7 +4060,7 @@ void ScInterpreter::ScRSQ()
 void ScInterpreter::ScSTEXY()
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "sc", "er", "ScInterpreter::ScSTEXY" );
-    CalculatePearsonCovar(sal_True,sal_True);    
+    CalculatePearsonCovar(sal_True,sal_True);
 }
 void ScInterpreter::CalculateSlopeIntercept(sal_Bool bSlope)
 {

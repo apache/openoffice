@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -308,11 +308,11 @@ Any WrappedAxisTitleExistenceProperty::getPropertyValue( const Reference< beans:
                         throw (beans::UnknownPropertyException, lang::WrappedTargetException, uno::RuntimeException)
 {
     sal_Bool bHasTitle = sal_False;
-    
+
     Reference< chart2::XTitle > xTitle( TitleHelper::getTitle( m_eTitleType, m_spChart2ModelContact->getChartModel() ) );
     if( xTitle.is() && (TitleHelper::getCompleteString( xTitle ).isEmpty() == false) )
         bHasTitle = sal_True;
-    
+
     Any aRet;
     aRet <<= bHasTitle;
     return aRet;
@@ -337,7 +337,7 @@ public:
     WrappedAxisLabelExistenceProperty( bool bMain, sal_Int32 nDimensionIndex
         , ::boost::shared_ptr< Chart2ModelContact > spChart2ModelContact );
     virtual ~WrappedAxisLabelExistenceProperty();
- 
+
     virtual void setPropertyValue( const ::com::sun::star::uno::Any& rOuterValue, const ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySet >& xInnerPropertySet ) const
                         throw (::com::sun::star::beans::UnknownPropertyException, ::com::sun::star::beans::PropertyVetoException, ::com::sun::star::lang::IllegalArgumentException, ::com::sun::star::lang::WrappedTargetException, ::com::sun::star::uno::RuntimeException);
 

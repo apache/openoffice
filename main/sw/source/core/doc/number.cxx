@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -207,7 +207,7 @@ SwNumFmt::SwNumFmt() :
 SwNumFmt::SwNumFmt( const SwNumFmt& rFmt) :
 	SvxNumberFormat(rFmt),
 	SwClient( rFmt.GetRegisteredInNonConst() ),
-    pVertOrient(new SwFmtVertOrient( 0, rFmt.GetVertOrient()))    	
+    pVertOrient(new SwFmtVertOrient( 0, rFmt.GetVertOrient()))
 	,cGrfBulletCP(rFmt.cGrfBulletCP)//For i120928,record the cp info of graphic within bullet
 {
     sal_Int16 eMyVertOrient = rFmt.GetVertOrient();
@@ -325,7 +325,7 @@ SwNumFmt& SwNumFmt::operator=( const SwNumFmt& rNumFmt)
 	else if( GetRegisteredIn() )
 		GetRegisteredInNonConst()->Remove( this );
 	//For i120928,record the cp info of graphic within bullet
-	cGrfBulletCP = rNumFmt.cGrfBulletCP;	
+	cGrfBulletCP = rNumFmt.cGrfBulletCP;
 	return *this;
 }
 /* -----------------------------23.02.01 09:28--------------------------------
@@ -1018,7 +1018,7 @@ void SwNumRule::SetInvalidRule(sal_Bool bFlag)
             SwList* pList = pTxtNode->GetDoc()->getListByName( pTxtNode->GetListId() );
             ASSERT( pList, "<SwNumRule::SetInvalidRule(..)> - list at which the text node is registered at does not exist. This is a serious issue --> please inform OD.");
             if ( pList )
-            {        
+            {
                 aLists.insert( pList );
             }
             // <--

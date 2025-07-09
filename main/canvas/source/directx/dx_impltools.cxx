@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -68,7 +68,7 @@ namespace dxcanvas
     namespace tools
     {
         ::basegfx::B2DPolyPolygon polyPolygonFromXPolyPolygon2D( const uno::Reference< rendering::XPolyPolygon2D >& xPoly )
-        {    
+        {
             LinePolyPolygon* pPolyImpl = dynamic_cast< LinePolyPolygon* >( xPoly.get() );
 
             if( pPolyImpl )
@@ -164,7 +164,7 @@ namespace dxcanvas
                                         static_cast<Gdiplus::REAL>(rMatrix.get(1,2)) );
         }
 
-        void gdiPlusMatrixFromAffineMatrix2D( Gdiplus::Matrix& 					rGdiplusMatrix, 
+        void gdiPlusMatrixFromAffineMatrix2D( Gdiplus::Matrix& 					rGdiplusMatrix,
                                               const geometry::AffineMatrix2D&	rMatrix )
         {
             rGdiplusMatrix.SetElements( static_cast<Gdiplus::REAL>(rMatrix.m00),
@@ -181,7 +181,7 @@ namespace dxcanvas
             // out of it
             inline Gdiplus::PointF implGdiPlusPointFromRealPoint2D( const ::com::sun::star::geometry::RealPoint2D& rPoint )
             {
-                return Gdiplus::PointF( static_cast<Gdiplus::REAL>(rPoint.X), 
+                return Gdiplus::PointF( static_cast<Gdiplus::REAL>(rPoint.X),
                                         static_cast<Gdiplus::REAL>(rPoint.Y) );
             }
 
@@ -189,7 +189,7 @@ namespace dxcanvas
                                              ::std::vector< Gdiplus::PointF >&  rPoints,
                                              const ::basegfx::B2DPolygon&       rPoly,
                                              bool bNoLineJoin)
-            {                
+            {
                 const sal_uInt32 nPoints( rPoly.count() );
 
                 if( nPoints < 2 )
@@ -214,15 +214,15 @@ namespace dxcanvas
                     for( sal_uInt32 nCurrPoint=0; nCurrPoint<nPoints; ++nCurrPoint )
                     {
                         const ::basegfx::B2DPoint& rPoint( rPoly.getB2DPoint( nCurrPoint ) );
-                        rPoints[nCurrOutput++] = Gdiplus::PointF( static_cast<Gdiplus::REAL>(rPoint.getX()), 
+                        rPoints[nCurrOutput++] = Gdiplus::PointF( static_cast<Gdiplus::REAL>(rPoint.getX()),
                                                                   static_cast<Gdiplus::REAL>(rPoint.getY()) );
 
                         const ::basegfx::B2DPoint& rControlPointA( rPoly.getNextControlPoint( nCurrPoint ) );
-                        rPoints[nCurrOutput++] = Gdiplus::PointF( static_cast<Gdiplus::REAL>(rControlPointA.getX()), 
+                        rPoints[nCurrOutput++] = Gdiplus::PointF( static_cast<Gdiplus::REAL>(rControlPointA.getX()),
                                                                   static_cast<Gdiplus::REAL>(rControlPointA.getY()) );
 
                         const ::basegfx::B2DPoint& rControlPointB( rPoly.getPrevControlPoint( (nCurrPoint + 1) % nPoints) );
-                        rPoints[nCurrOutput++] = Gdiplus::PointF( static_cast<Gdiplus::REAL>(rControlPointB.getX()), 
+                        rPoints[nCurrOutput++] = Gdiplus::PointF( static_cast<Gdiplus::REAL>(rControlPointB.getX()),
                                                                   static_cast<Gdiplus::REAL>(rControlPointB.getY()) );
                     }
 
@@ -232,7 +232,7 @@ namespace dxcanvas
                         // control points for the last point, see
                         // above)
                         const ::basegfx::B2DPoint& rPoint( rPoly.getB2DPoint(0) );
-                        rPoints[nCurrOutput++] = Gdiplus::PointF( static_cast<Gdiplus::REAL>(rPoint.getX()), 
+                        rPoints[nCurrOutput++] = Gdiplus::PointF( static_cast<Gdiplus::REAL>(rPoint.getX()),
                                                                   static_cast<Gdiplus::REAL>(rPoint.getY()) );
 
                         if(bNoLineJoin && nCurrOutput > 7)
@@ -281,7 +281,7 @@ namespace dxcanvas
                     for( sal_uInt32 nCurrPoint=0; nCurrPoint<nPoints; ++nCurrPoint )
                     {
                         const ::basegfx::B2DPoint& rPoint( rPoly.getB2DPoint( nCurrPoint ) );
-                        rPoints[nCurrPoint] = Gdiplus::PointF( static_cast<Gdiplus::REAL>(rPoint.getX()), 
+                        rPoints[nCurrPoint] = Gdiplus::PointF( static_cast<Gdiplus::REAL>(rPoint.getX()),
                                                                static_cast<Gdiplus::REAL>(rPoint.getY()) );
                     }
 
@@ -317,17 +317,17 @@ namespace dxcanvas
 
         Gdiplus::Rect gdiPlusRectFromIntegerRectangle2D( const geometry::IntegerRectangle2D& rRect )
         {
-            return Gdiplus::Rect( rRect.X1, 
-                                  rRect.Y1, 
-                                  rRect.X2 - rRect.X1, 
+            return Gdiplus::Rect( rRect.X1,
+                                  rRect.Y1,
+                                  rRect.X2 - rRect.X1,
                                   rRect.Y2 - rRect.Y1 );
         }
 
         Gdiplus::RectF gdiPlusRectFFromRectangle2D( const geometry::RealRectangle2D& rRect )
         {
-            return Gdiplus::RectF( static_cast<Gdiplus::REAL>(rRect.X1), 
-                                   static_cast<Gdiplus::REAL>(rRect.Y1), 
-                                   static_cast<Gdiplus::REAL>(rRect.X2 - rRect.X1), 
+            return Gdiplus::RectF( static_cast<Gdiplus::REAL>(rRect.X1),
+                                   static_cast<Gdiplus::REAL>(rRect.Y1),
+                                   static_cast<Gdiplus::REAL>(rRect.X2 - rRect.X1),
                                    static_cast<Gdiplus::REAL>(rRect.Y2 - rRect.Y1) );
         }
 
@@ -349,7 +349,7 @@ namespace dxcanvas
         geometry::RealRectangle2D realRectangle2DFromGdiPlusRectF( const Gdiplus::RectF& rRect )
         {
             return geometry::RealRectangle2D( rRect.X, rRect.Y,
-                                              rRect.X + rRect.Width, 
+                                              rRect.X + rRect.Width,
                                               rRect.Y + rRect.Height );
         }
 
@@ -361,7 +361,7 @@ namespace dxcanvas
         ::basegfx::B2DRange	b2dRangeFromGdiPlusRectF( const Gdiplus::RectF& rRect )
         {
             return ::basegfx::B2DRange( rRect.X, rRect.Y,
-                                        rRect.X + rRect.Width, 
+                                        rRect.X + rRect.Width,
                                         rRect.Y + rRect.Height );
         }
 
@@ -373,7 +373,7 @@ namespace dxcanvas
             aRet[0] = ((rColor >> 16) & 0xFF) / 255.0; 	// red
             aRet[1] = ((rColor >> 8) & 0xFF) / 255.0;	// green
             aRet[2] = (rColor & 0xFF) / 255.0;			// blue
-            aRet[3] = ((rColor >> 24) & 0xFF) / 255.0;	// alpha	
+            aRet[3] = ((rColor >> 24) & 0xFF) / 255.0;	// alpha
 
             return aRet;
         }
@@ -386,14 +386,14 @@ namespace dxcanvas
             aRet[0] = static_cast<sal_Int8>((rColor >> 16) & 0xFF);	// red
             aRet[1] = static_cast<sal_Int8>((rColor >> 8) & 0xFF);	// green
             aRet[2] = static_cast<sal_Int8>(rColor & 0xFF);			// blue
-            aRet[3] = static_cast<sal_Int8>((rColor >> 24) & 0xFF);	// alpha	
+            aRet[3] = static_cast<sal_Int8>((rColor >> 24) & 0xFF);	// alpha
 
             return aRet;
         }
 
         Gdiplus::ARGB sequenceToArgb( const uno::Sequence< sal_Int8 >& rColor )
         {
-            ENSURE_OR_THROW( rColor.getLength() > 2, 
+            ENSURE_OR_THROW( rColor.getLength() > 2,
                               "sequenceToArgb: need at least three channels" );
 
             // TODO(F1): handle color space conversions, when defined on canvas/graphicDevice
@@ -409,7 +409,7 @@ namespace dxcanvas
 
         Gdiplus::ARGB sequenceToArgb( const uno::Sequence< double >& rColor )
         {
-            ENSURE_OR_THROW( rColor.getLength() > 2, 
+            ENSURE_OR_THROW( rColor.getLength() > 2,
                               "sequenceToColor: need at least three channels" );
 
             // TODO(F1): handle color space conversions, when defined on canvas/graphicDevice
@@ -419,9 +419,9 @@ namespace dxcanvas
             ::canvas::tools::verifyRange(rColor[1],0.0,1.0);
             ::canvas::tools::verifyRange(rColor[2],0.0,1.0);
 
-            aColor = 
-                (static_cast<sal_uInt8>( ::basegfx::fround( 255*rColor[0] ) ) << 16) | 
-                (static_cast<sal_uInt8>( ::basegfx::fround( 255*rColor[1] ) ) << 8) | 
+            aColor =
+                (static_cast<sal_uInt8>( ::basegfx::fround( 255*rColor[0] ) ) << 16) |
+                (static_cast<sal_uInt8>( ::basegfx::fround( 255*rColor[1] ) ) << 8) |
                 static_cast<sal_uInt8>( ::basegfx::fround( 255*rColor[2] ) );
 
             if( rColor.getLength() > 3 )
@@ -449,9 +449,9 @@ namespace dxcanvas
                     // TODO(F1): Closed/open polygons
 
                     // convert from RealPoint2D array to Gdiplus::PointF array
-                    ::std::transform( const_cast< uno::Sequence< geometry::RealPoint2D >& >(points[nCurrPoly]).getArray(), 
-                                      const_cast< uno::Sequence< geometry::RealPoint2D >& >(points[nCurrPoly]).getArray()+nCurrSize, 
-                                      aPoints.begin(), 
+                    ::std::transform( const_cast< uno::Sequence< geometry::RealPoint2D >& >(points[nCurrPoly]).getArray(),
+                                      const_cast< uno::Sequence< geometry::RealPoint2D >& >(points[nCurrPoly]).getArray()+nCurrSize,
+                                      aPoints.begin(),
                                       implGdiPlusPointFromRealPoint2D );
 
                     pRes->AddLines( &aPoints[0], nCurrSize );
@@ -479,8 +479,8 @@ namespace dxcanvas
             const sal_uInt32 nPolies( rPoly.count() );
             for( sal_uInt32 nCurrPoly=0; nCurrPoly<nPolies; ++nCurrPoly )
             {
-                graphicsPathFromB2DPolygon( pRes, 
-                                            aPoints, 
+                graphicsPathFromB2DPolygon( pRes,
+                                            aPoints,
                                             rPoly.getB2DPolygon( nCurrPoly ),
                                             bNoLineJoin);
             }
@@ -515,21 +515,21 @@ namespace dxcanvas
                          const BITMAPINFO&		  rBI,
                          const void*			  pBits )
         {
-            BitmapSharedPtr pBitmap( 
-                Gdiplus::Bitmap::FromBITMAPINFO( &rBI, 
+            BitmapSharedPtr pBitmap(
+                Gdiplus::Bitmap::FromBITMAPINFO( &rBI,
                                                  (void*)pBits ) );
 
             return drawGdiPlusBitmap( rGraphics,
                                       pBitmap );
         }
-            
+
         bool drawRGBABits( const GraphicsSharedPtr& rGraphics,
                            const RawRGBABitmap&		rRawRGBAData )
         {
-            BitmapSharedPtr pBitmap( new Gdiplus::Bitmap( rRawRGBAData.mnWidth, 
+            BitmapSharedPtr pBitmap( new Gdiplus::Bitmap( rRawRGBAData.mnWidth,
                                                           rRawRGBAData.mnHeight,
                                                           PixelFormat32bppARGB ) );
-            
+
             Gdiplus::BitmapData aBmpData;
             aBmpData.Width		 = rRawRGBAData.mnWidth;
             aBmpData.Height		 = rRawRGBAData.mnHeight;
@@ -545,7 +545,7 @@ namespace dxcanvas
             {
                 return false;
             }
-                    
+
             // commit data to bitmap
             pBitmap->UnlockBits( &aBmpData );
 
@@ -570,7 +570,7 @@ namespace dxcanvas
 
                 const geometry::IntegerSize2D aBmpSize( xBitmap->getSize() );
                 BitmapSharedPtr 			  pBitmap;
-                                                              
+
                 if( xBitmap->hasAlpha() )
                 {
                     // TODO(P2): At least for the alpha bitmap case, it
@@ -590,10 +590,10 @@ namespace dxcanvas
                                                         aBmpSize.Height,
                                                         PixelFormat24bppRGB ) );
                 }
-				
+
 				GraphicsSharedPtr pGraphics(createGraphicsFromBitmap(pBitmap));
 		        tools::setupGraphics(*pGraphics);
-                if( !drawVCLBitmapFromXBitmap( 
+                if( !drawVCLBitmapFromXBitmap(
                         pGraphics,
                         xBitmap) )
                 {
@@ -620,7 +620,7 @@ namespace dxcanvas
                                          double					   nBlueModulation,
                                          double					   nAlphaModulation )
         {
-            // This gets rather verbose, but we have to setup a color 
+            // This gets rather verbose, but we have to setup a color
             // transformation matrix, in order to incorporate the global
             // alpha value mfAlpha into the bitmap rendering.
             Gdiplus::ColorMatrix	 aColorMatrix;
@@ -656,7 +656,7 @@ namespace dxcanvas
             aColorMatrix.m[4][4] = 1.0;
 
             o_rAttr.SetColorMatrix( &aColorMatrix,
-                                    Gdiplus::ColorMatrixFlagsDefault, 
+                                    Gdiplus::ColorMatrixFlagsDefault,
                                     Gdiplus::ColorAdjustTypeDefault );
         }
 

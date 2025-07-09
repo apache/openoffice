@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -546,7 +546,7 @@ void ScDrawStringsVars::SetTextToWidthOrHash( ScBaseCell* pCell, long nWidth )
         return;
     }
 
-    double fVal = (eType == CELLTYPE_VALUE) ? 
+    double fVal = (eType == CELLTYPE_VALUE) ?
         static_cast<ScValueCell*>(pCell)->GetValue() : static_cast<ScFormulaCell*>(pCell)->GetValue();
 
     const SvNumberformat* pNumFormat = pOutput->pDoc->GetFormatTable()->GetEntry(nFormat);
@@ -589,7 +589,7 @@ void ScDrawStringsVars::SetTextToWidthOrHash( ScBaseCell* pCell, long nWidth )
     if (nDecimalCount || nSignCount || nExpCount)
     {
         // Re-calculate.
-        nNumDigits = static_cast<sal_uInt16>(nWidth / nMaxDigit);    
+        nNumDigits = static_cast<sal_uInt16>(nWidth / nMaxDigit);
         if (!pNumFormat->GetOutputString(fVal, nNumDigits, aString))
             // Failed to get output string.  Bail out.
             return;
@@ -645,7 +645,7 @@ long ScDrawStringsVars::GetMaxDigitWidth()
     sal_Char cZero = '0';
     for (sal_Char i = 0; i < 10; ++i)
     {
-        sal_Char cDigit = cZero + i;    
+        sal_Char cDigit = cZero + i;
         long n = pOutput->pFmtDevice->GetTextWidth(String(cDigit));
         nMaxDigitWidth = ::std::max(nMaxDigitWidth, n);
     }
@@ -1532,7 +1532,7 @@ void ScOutputData::DrawStrings( sal_Bool bPixelToLogic )
 					if ( aVars.SetText(pCell) )
 						pOldPattern = NULL;
                     bNeedEdit = aVars.HasEditCharacters() ||
-					                (bFormulaCell && ((ScFormulaCell*)pCell)->IsMultilineResult());                
+					                (bFormulaCell && ((ScFormulaCell*)pCell)->IsMultilineResult());
                 }
                 long nTotalMargin = 0;
                 if (bDoCell && !bNeedEdit)
@@ -1561,8 +1561,8 @@ void ScOutputData::DrawStrings( sal_Bool bPixelToLogic )
 					sal_Bool bRepeat = aVars.IsRepeat() && !bBreak;
 					sal_Bool bShrink = aVars.IsShrink() && !bBreak && !bRepeat;
 
-                    nTotalMargin = 
-                        static_cast<long>(aVars.GetLeftTotal() * nPPTX) + 
+                    nTotalMargin =
+                        static_cast<long>(aVars.GetLeftTotal() * nPPTX) +
                         static_cast<long>(aVars.GetMargin()->GetRightMargin() * nPPTX);
 
                     nNeededWidth = aVars.GetTextSize().Width() + nTotalMargin;
@@ -2497,7 +2497,7 @@ void ScOutputData::DrawEdit(sal_Bool bPixelToLogic)
 											bWrapFields = sal_True;
 										}
 									}
-									else 
+									else
 									{
 										DBG_ERROR("pData == 0");
 									}
@@ -2573,7 +2573,7 @@ void ScOutputData::DrawEdit(sal_Bool bPixelToLogic)
                                     ShrinkEditEngine( *pEngine, aAreaParam.maAlignRect,
                                         nLeftM, nTopM, nRightM, nBottomM, bWidth,
                                         sal::static_int_cast<sal_uInt16>(eOrient), 0, bPixelToLogic,
-                                        nEngineWidth, nEngineHeight, nNeededPixel, 
+                                        nEngineWidth, nEngineHeight, nNeededPixel,
                                         aAreaParam.mbLeftClip, aAreaParam.mbRightClip );
                                 }
 

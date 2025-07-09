@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -110,11 +110,11 @@ void DecryptorImpl::notifyResultListener() const
 {
 	cssu::Reference< cssxc::sax::XDecryptionResultListener >
 		xDecryptionResultListener ( m_xResultListener , cssu::UNO_QUERY ) ;
-		
+
 	xDecryptionResultListener->decrypted(m_nSecurityId,m_nStatus);
 }
 
-void DecryptorImpl::startEngine( const cssu::Reference< 
+void DecryptorImpl::startEngine( const cssu::Reference<
 	cssxc::XXMLEncryptionTemplate >&
 	xEncryptionTemplate)
 	throw (cssu::Exception, cssu::RuntimeException)
@@ -128,7 +128,7 @@ void DecryptorImpl::startEngine( const cssu::Reference<
  *
  *   FUNCTION
  *	decrypts the encryption element, then if succeeds, updates the link
- *	of old template element to the new encryption element in 
+ *	of old template element to the new encryption element in
  *	SAXEventKeeper.
  *
  *   INPUTS
@@ -155,7 +155,7 @@ void DecryptorImpl::startEngine( const cssu::Reference<
 	{
 		m_nStatus = cssxc::SecurityOperationStatus_RUNTIMEERROR_FAILED;
 	}
-	
+
 	if (m_nStatus == cssxc::SecurityOperationStatus_OPERATION_SUCCEEDED)
 	{
 		cssu::Reference< cssxw::XXMLElementWrapper > xDecryptedElement
@@ -163,7 +163,7 @@ void DecryptorImpl::startEngine( const cssu::Reference<
 		m_xSAXEventKeeper->setElement(m_nIdOfTemplateEC, xDecryptedElement);
 	}
 }
-	
+
 /* XDecryptionResultBroadcaster */
 void SAL_CALL DecryptorImpl::addDecryptionResultListener( const cssu::Reference< cssxc::sax::XDecryptionResultListener >& listener )
     	throw (cssu::Exception, cssu::RuntimeException)
@@ -178,13 +178,13 @@ void SAL_CALL DecryptorImpl::removeDecryptionResultListener( const cssu::Referen
 }
 
 /* XInitialization */
-void SAL_CALL DecryptorImpl::initialize( const cssu::Sequence< cssu::Any >& aArguments ) 
+void SAL_CALL DecryptorImpl::initialize( const cssu::Sequence< cssu::Any >& aArguments )
 	throw (cssu::Exception, cssu::RuntimeException)
 {
 	OSL_ASSERT(aArguments.getLength() == 5);
-	
+
 	rtl::OUString ouTempString;
-	
+
 	aArguments[0] >>= ouTempString;
 	m_nSecurityId = ouTempString.toInt32();
 	aArguments[1] >>= m_xSAXEventKeeper;
@@ -200,13 +200,13 @@ rtl::OUString DecryptorImpl_getImplementationName ()
 	return rtl::OUString ( RTL_CONSTASCII_USTRINGPARAM ( IMPLEMENTATION_NAME ) );
 }
 
-sal_Bool SAL_CALL DecryptorImpl_supportsService( const rtl::OUString& ServiceName ) 
+sal_Bool SAL_CALL DecryptorImpl_supportsService( const rtl::OUString& ServiceName )
 	throw (cssu::RuntimeException)
 {
 	return ServiceName.equalsAsciiL( RTL_CONSTASCII_STRINGPARAM ( SERVICE_NAME ));
 }
 
-cssu::Sequence< rtl::OUString > SAL_CALL DecryptorImpl_getSupportedServiceNames(  ) 
+cssu::Sequence< rtl::OUString > SAL_CALL DecryptorImpl_getSupportedServiceNames(  )
 	throw (cssu::RuntimeException)
 {
 	cssu::Sequence < rtl::OUString > aRet(1);
@@ -223,17 +223,17 @@ cssu::Reference< cssu::XInterface > SAL_CALL DecryptorImpl_createInstance( const
 }
 
 /* XServiceInfo */
-rtl::OUString SAL_CALL DecryptorImpl::getImplementationName(  ) 
+rtl::OUString SAL_CALL DecryptorImpl::getImplementationName(  )
 	throw (cssu::RuntimeException)
 {
 	return DecryptorImpl_getImplementationName();
 }
-sal_Bool SAL_CALL DecryptorImpl::supportsService( const rtl::OUString& rServiceName ) 
+sal_Bool SAL_CALL DecryptorImpl::supportsService( const rtl::OUString& rServiceName )
 	throw (cssu::RuntimeException)
 {
 	return DecryptorImpl_supportsService( rServiceName );
 }
-cssu::Sequence< rtl::OUString > SAL_CALL DecryptorImpl::getSupportedServiceNames(  ) 
+cssu::Sequence< rtl::OUString > SAL_CALL DecryptorImpl::getSupportedServiceNames(  )
 	throw (cssu::RuntimeException)
 {
 	return DecryptorImpl_getSupportedServiceNames();

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -123,14 +123,14 @@ void ScrollBarManager::Disconnect (void)
 
 /** Placing the scroll bars is an iterative process.  The visibility of one
     scroll bar affects the remaining size and thus may lead to the other
-    scroll bar becoming visible. 
+    scroll bar becoming visible.
 
     First we determine the visibility of the horizontal scroll bar.  After
     that we do the same for the vertical scroll bar.  To have an initial
     value for the required size we call the layouter before that.  When one
     of the two scroll bars is made visible then the size of the browser
     window changes and a second call to the layouter becomes necessary.
-    That call is made anyway after this method returns. 
+    That call is made anyway after this method returns.
 */
 Rectangle ScrollBarManager::PlaceScrollBars (
     const Rectangle& rAvailableArea,
@@ -166,11 +166,11 @@ void ScrollBarManager::PlaceHorizontalScrollBar (const Rectangle& aAvailableArea
     // Place the scroll bar.
     Size aScrollBarSize (mpHorizontalScrollBar->GetSizePixel());
     mpHorizontalScrollBar->SetPosSizePixel (
-        Point(aAvailableArea.Left(), 
+        Point(aAvailableArea.Left(),
             aAvailableArea.Bottom()-aScrollBarSize.Height()+1),
-        Size (aAvailableArea.GetWidth() - GetVerticalScrollBarWidth(), 
+        Size (aAvailableArea.GetWidth() - GetVerticalScrollBarWidth(),
             aScrollBarSize.Height()));
-        
+
     // Restore the relative position.
     mpHorizontalScrollBar->SetThumbPos(
         (long)(0.5 + mnHorizontalPosition * mpHorizontalScrollBar->GetRange().Len()));
@@ -178,7 +178,7 @@ void ScrollBarManager::PlaceHorizontalScrollBar (const Rectangle& aAvailableArea
 
 
 
-   
+
 void ScrollBarManager::PlaceVerticalScrollBar (const Rectangle& aArea)
 {
     const sal_Int32 nThumbPosition (mpVerticalScrollBar->GetThumbPos());
@@ -230,10 +230,10 @@ void ScrollBarManager::UpdateScrollBars (bool bResetThumbPosition, bool bUseScro
             mnHorizontalPosition = 0;
         }
         else
-            mnHorizontalPosition = 
+            mnHorizontalPosition =
                 double(mpHorizontalScrollBar->GetThumbPos())
                 / double(mpHorizontalScrollBar->GetRange().Len());
-        
+
         mpHorizontalScrollBar->SetVisibleSize (aWindowModelSize.Width());
 
         const long nWidth (mpContentWindow->PixelToLogic(
@@ -259,10 +259,10 @@ void ScrollBarManager::UpdateScrollBars (bool bResetThumbPosition, bool bUseScro
             mnVerticalPosition = 0;
         }
         else
-            mnVerticalPosition = 
+            mnVerticalPosition =
                 double(mpVerticalScrollBar->GetThumbPos())
                 / double(mpVerticalScrollBar->GetRange().Len());
-    
+
         mpVerticalScrollBar->SetVisibleSize (aWindowModelSize.Height());
 
         const long nHeight (mpContentWindow->PixelToLogic(
@@ -314,7 +314,7 @@ IMPL_LINK(ScrollBarManager, VerticalScrollBarHandler, ScrollBar*, pScrollBar)
 
 IMPL_LINK(ScrollBarManager, HorizontalScrollBarHandler, ScrollBar*, pScrollBar)
 {
-    if (pScrollBar!=NULL 
+    if (pScrollBar!=NULL
         && pScrollBar==mpHorizontalScrollBar.get()
         && pScrollBar->IsVisible()
         && bool(mrSlideSorter.GetContentWindow()) )
@@ -419,7 +419,7 @@ bool ScrollBarManager::TestScrollBarVisibilities (
     const Rectangle& rAvailableArea)
 {
     model::SlideSorterModel& rModel (mrSlideSorter.GetModel());
-    
+
     // Adapt the available size by subtracting the sizes of the scroll bars
     // visible in this combination.
     Size aBrowserSize (rAvailableArea.GetSize());
@@ -449,7 +449,7 @@ bool ScrollBarManager::TestScrollBarVisibilities (
         if (aPageSize.Height() > aWindowModelSize.Height())
             if ( ! bVerticalScrollBarVisible)
                 return false;
-           
+
         return true;
     }
     else
@@ -551,15 +551,15 @@ void ScrollBarManager::CalcAutoScrollOffset (const Point& rMouseWindowPosition)
         if (rMouseWindowPosition.X() < maScrollBorder.Width()
             && aWindowArea.Left() > aViewPixelArea.Left())
         {
-            nDx = -1 + (int)(mnHorizontalScrollFactor 
+            nDx = -1 + (int)(mnHorizontalScrollFactor
                 * (rMouseWindowPosition.X() - maScrollBorder.Width()));
         }
 
         if (rMouseWindowPosition.X() >= (aWindowSize.Width() - maScrollBorder.Width())
             && aWindowArea.Right() < aViewPixelArea.Right())
         {
-            nDx = 1 + (int)(mnHorizontalScrollFactor 
-                * (rMouseWindowPosition.X() - aWindowSize.Width() 
+            nDx = 1 + (int)(mnHorizontalScrollFactor
+                * (rMouseWindowPosition.X() - aWindowSize.Width()
                     + maScrollBorder.Width()));
         }
     }
@@ -570,15 +570,15 @@ void ScrollBarManager::CalcAutoScrollOffset (const Point& rMouseWindowPosition)
         if (rMouseWindowPosition.Y() < maScrollBorder.Height()
             && aWindowArea.Top() > aViewPixelArea.Top())
         {
-            nDy = -1 + (int)(mnVerticalScrollFactor 
+            nDy = -1 + (int)(mnVerticalScrollFactor
                 * (rMouseWindowPosition.Y() - maScrollBorder.Height()));
         }
 
         if (rMouseWindowPosition.Y() >= (aWindowSize.Height() - maScrollBorder.Height())
             && aWindowArea.Bottom() < aViewPixelArea.Bottom())
         {
-            nDy = 1 + (int)(mnVerticalScrollFactor 
-                * (rMouseWindowPosition.Y() - aWindowSize.Height() 
+            nDy = 1 + (int)(mnVerticalScrollFactor
+                * (rMouseWindowPosition.Y() - aWindowSize.Height()
                     + maScrollBorder.Height()));
         }
     }
@@ -598,7 +598,7 @@ bool ScrollBarManager::AutoScroll (
     bool bResult (true);
     if ( ! mbIsAutoScrollActive)
         bResult = RepeatAutoScroll();
-        
+
     return bResult;
 }
 
@@ -621,13 +621,13 @@ bool ScrollBarManager::RepeatAutoScroll (void)
         if (mrSlideSorter.GetViewShell() != NULL)
         {
             mrSlideSorter.GetViewShell()->Scroll(
-                maAutoScrollOffset.Width(), 
+                maAutoScrollOffset.Width(),
                 maAutoScrollOffset.Height());
             mrSlideSorter.GetView().InvalidatePageObjectVisibilities();
 
             if (maAutoScrollFunctor)
                 maAutoScrollFunctor();
-            
+
             mbIsAutoScrollActive = true;
             maAutoScrollTimer.Start();
 

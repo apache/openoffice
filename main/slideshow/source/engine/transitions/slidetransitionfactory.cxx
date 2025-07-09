@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -80,7 +80,7 @@ void fillPage( const ::cppcanvas::CanvasSharedPtr& rDestinationCanvas,
     const ::cppcanvas::CanvasSharedPtr pDevicePixelCanvas(
         rDestinationCanvas->clone() );
     pDevicePixelCanvas->setTransformation( ::basegfx::B2DHomMatrix() );
-    
+
     // TODO(F2): Properly respect clip here.
     // Might have to be transformed, too.
     const ::basegfx::B2DHomMatrix aViewTransform(
@@ -134,7 +134,7 @@ public:
                        ScreenUpdater&                           rScreenUpdater,
                        const uno::Reference<
                              presentation::XTransitionFactory>& xFactory,
-                       const SoundPlayerSharedPtr&              pSoundPlayer, 
+                       const SoundPlayerSharedPtr&              pSoundPlayer,
                        EventMultiplexer&                        rEventMultiplexer) :
         SlideChangeBase( leavingSlide_,
                          pEnteringSlide,
@@ -180,7 +180,7 @@ public:
     bool addTransition( const UnoViewSharedPtr& rView )
     {
 	uno::Reference<presentation::XTransition> rTransition = mxFactory->createTransition(
-	    mnTransitionType, 
+	    mnTransitionType,
 	    mnTransitionSubType,
 	    rView->getUnoView(),
 	    getLeavingBitmap(ViewEntry(rView))->getXBitmap(),
@@ -193,7 +193,7 @@ public:
 
 	return true;
     }
-        
+
     virtual bool operator()( double t )
     {
         std::for_each(maTransitions.begin(),
@@ -290,7 +290,7 @@ public:
 	}
     }
 
-private:	
+private:
     // One transition object per view
     std::vector< TransitionViewPair* > maTransitions;
 
@@ -333,19 +333,19 @@ public:
                            bDirectionForward,
                            true )
         {}
-    
+
     virtual void performIn(
         const ::cppcanvas::CustomSpriteSharedPtr&   rSprite,
         const ViewEntry&                            rViewEntry,
         const ::cppcanvas::CanvasSharedPtr&         rDestinationCanvas,
         double                                      t );
-    
+
     virtual void performOut(
         const ::cppcanvas::CustomSpriteSharedPtr&  rSprite,
         const ViewEntry&                           rViewEntry,
         const ::cppcanvas::CanvasSharedPtr&        rDestinationCanvas,
         double                                     t );
-    
+
 private:
     ClippingFunctor             maClippingFunctor;
 };
@@ -361,8 +361,8 @@ void ClippedSlideChange::performIn(
     // that, getEnteringSizePixel() _guarantees_ to cover the whole
     // slide bitmap. There's a catch, though: this removes any effect
     // of the view transformation (e.g. rotation) from the transition.
-    rSprite->setClipPixel( 
-        maClippingFunctor( t, 
+    rSprite->setClipPixel(
+        maClippingFunctor( t,
                            getEnteringSlideSizePixel(rViewEntry.mpView) ) );
 }
 
@@ -399,19 +399,19 @@ public:
           maFadeColor( rFadeColor ),
           mbFirstTurn( true )
         {}
-    
+
     virtual void performIn(
         const ::cppcanvas::CustomSpriteSharedPtr&   rSprite,
         const ViewEntry&                            rViewEntry,
         const ::cppcanvas::CanvasSharedPtr&         rDestinationCanvas,
         double                                      t );
-    
+
     virtual void performOut(
         const ::cppcanvas::CustomSpriteSharedPtr&  rSprite,
         const ViewEntry&                           rViewEntry,
         const ::cppcanvas::CanvasSharedPtr&        rDestinationCanvas,
         double                                     t );
-    
+
 private:
     const boost::optional< RGBColor >               maFadeColor;
     bool                                            mbFirstTurn;
@@ -426,7 +426,7 @@ void FadingSlideChange::performIn(
     ENSURE_OR_THROW(
         rSprite,
         "FadingSlideChange::performIn(): Invalid sprite" );
-    
+
     if( maFadeColor )
         // After half of the active time, fade in new slide
         rSprite->setAlpha( t > 0.5 ? 2.0*(t-0.5) : 0.0 );
@@ -447,21 +447,21 @@ void FadingSlideChange::performOut(
     ENSURE_OR_THROW(
         rDestinationCanvas,
         "FadingSlideChange::performOut(): Invalid dest canvas" );
-    
+
     // only needed for color fades
     if( maFadeColor )
     {
         if( mbFirstTurn )
         {
             mbFirstTurn = false;
-            
+
             // clear page to given fade color. 'Leaving' slide is
             // painted atop of that, but slowly fading out.
             fillPage( rDestinationCanvas,
                       getEnteringSlideSizePixel( rViewEntry.mpView ),
                       *maFadeColor );
         }
-        
+
         // Until half of the active time, fade out old
         // slide. After half of the active time, old slide
         // will be invisible.
@@ -473,23 +473,23 @@ class MovingSlideChange : public SlideChangeBase
 {
     /// Direction vector for leaving slide,
     const ::basegfx::B2DVector  maLeavingDirection;
-    
+
     /// Direction vector for entering slide,
     const ::basegfx::B2DVector  maEnteringDirection;
-    
+
     bool                        mbFirstPerformCall;
-    
+
 public:
     /** Create a new SlideChanger, for the given entering slide
         bitmaps, which performs a moving slide change effect
-        
+
         @param rLeavingDirection
         Direction vector. The move is performed along this
         direction vector, starting at a position where the leaving
         slide is fully visible, and ending at a position where the
         leaving slide is just not visible. The vector must have
         unit length.
-        
+
         @param rEnteringDirection
         Direction vector. The move is performed along this
         direction vector, starting at a position where the
@@ -523,13 +523,13 @@ public:
           maEnteringDirection( rEnteringDirection ),
           mbFirstPerformCall( true )
         {}
-    
+
     virtual void performIn(
         const ::cppcanvas::CustomSpriteSharedPtr&   rSprite,
         const ViewEntry&                            rViewEntry,
         const ::cppcanvas::CanvasSharedPtr&         rDestinationCanvas,
         double                                      t );
-    
+
     virtual void performOut(
         const ::cppcanvas::CustomSpriteSharedPtr&  rSprite,
         const ViewEntry&                           rViewEntry,
@@ -544,20 +544,20 @@ void MovingSlideChange::performIn(
     double                                      t )
 {
     // intro sprite moves:
-    
+
     ENSURE_OR_THROW(
         rSprite,
         "MovingSlideChange::performIn(): Invalid sprite" );
     ENSURE_OR_THROW(
         rDestinationCanvas,
         "MovingSlideChange::performIn(): Invalid dest canvas" );
-    
-    if (mbFirstPerformCall && maLeavingDirection.equalZero()) 
+
+    if (mbFirstPerformCall && maLeavingDirection.equalZero())
     {
         mbFirstPerformCall = false;
         renderBitmap( getLeavingBitmap(rViewEntry), rDestinationCanvas );
     }
-    
+
     // TODO(F1): This does not account for non-translational
     // transformations! If the canvas is rotated, we still
     // move the sprite unrotated (which might or might not
@@ -566,12 +566,12 @@ void MovingSlideChange::performIn(
         rDestinationCanvas->getTransformation() );
     const basegfx::B2DPoint aPageOrigin(
         aViewTransform * basegfx::B2DPoint() );
-    
+
     // move sprite
     rSprite->movePixel(
         aPageOrigin +
-        ((t - 1.0) * 
-         ::basegfx::B2DSize( getEnteringSlideSizePixel(rViewEntry.mpView) ) * 
+        ((t - 1.0) *
+         ::basegfx::B2DSize( getEnteringSlideSizePixel(rViewEntry.mpView) ) *
          maEnteringDirection) );
 }
 
@@ -582,20 +582,20 @@ void MovingSlideChange::performOut(
     double                                     t )
 {
     // outro sprite moves:
-    
+
     ENSURE_OR_THROW(
         rSprite,
         "MovingSlideChange::performOut(): Invalid sprite" );
     ENSURE_OR_THROW(
         rDestinationCanvas,
         "MovingSlideChange::performOut(): Invalid dest canvas" );
-    
-    if (mbFirstPerformCall && maEnteringDirection.equalZero()) 
+
+    if (mbFirstPerformCall && maEnteringDirection.equalZero())
     {
         mbFirstPerformCall = false;
         renderBitmap( getEnteringBitmap(rViewEntry), rDestinationCanvas );
     }
-    
+
     // TODO(F1): This does not account for non-translational
     // transformations! If the canvas is rotated, we still
     // move the sprite unrotated (which might or might not
@@ -604,11 +604,11 @@ void MovingSlideChange::performOut(
         rDestinationCanvas->getTransformation() );
     const basegfx::B2DPoint aPageOrigin(
         aViewTransform * basegfx::B2DPoint() );
-    
+
     // move sprite
     rSprite->movePixel(
-        aPageOrigin + (t * 
-                       ::basegfx::B2DSize( getEnteringSlideSizePixel(rViewEntry.mpView) ) * 
+        aPageOrigin + (t *
+                       ::basegfx::B2DSize( getEnteringSlideSizePixel(rViewEntry.mpView) ) *
                        maLeavingDirection) );
 }
 
@@ -634,7 +634,7 @@ NumberAnimationSharedPtr createPushWipeTransition(
         // wipes.
         leavingSlide = leavingSlide_;
     }
-    
+
     // setup direction vector
     bool bComb( false );
     ::basegfx::B2DVector aDirection;
@@ -642,55 +642,55 @@ NumberAnimationSharedPtr createPushWipeTransition(
     {
     default:
         OSL_ENSURE(
-            false, 
+            false,
             "createPushWipeTransition(): Unexpected transition "
             "subtype for animations::TransitionType::PUSHWIPE "
             "transitions" );
         return NumberAnimationSharedPtr();
-        
+
     case animations::TransitionSubType::FROMTOP:
         aDirection = ::basegfx::B2DVector( 0.0, 1.0 );
         break;
-        
+
     case animations::TransitionSubType::FROMBOTTOM:
         aDirection = ::basegfx::B2DVector( 0.0, -1.0 );
         break;
-        
+
     case animations::TransitionSubType::FROMLEFT:
         aDirection = ::basegfx::B2DVector( 1.0, 0.0 );
         break;
-        
+
     case animations::TransitionSubType::FROMRIGHT:
         aDirection = ::basegfx::B2DVector( -1.0, 0.0 );
         break;
-        
+
     case animations::TransitionSubType::FROMBOTTOMRIGHT:
         aDirection = ::basegfx::B2DVector( -1.0, -1.0 );
         break;
-        
+
     case animations::TransitionSubType::FROMBOTTOMLEFT:
         aDirection = ::basegfx::B2DVector( 1.0, -1.0 );
         break;
-        
+
     case animations::TransitionSubType::FROMTOPRIGHT:
         aDirection = ::basegfx::B2DVector( -1.0, 1.0 );
         break;
-        
+
     case animations::TransitionSubType::FROMTOPLEFT:
         aDirection = ::basegfx::B2DVector( 1.0, 1.0 );
         break;
-        
+
     case animations::TransitionSubType::COMBHORIZONTAL:
         aDirection = ::basegfx::B2DVector( 1.0, 0.0 );
         bComb = true;
         break;
-        
+
     case animations::TransitionSubType::COMBVERTICAL:
         aDirection = ::basegfx::B2DVector( 0.0, 1.0 );
         bComb = true;
         break;
     }
-    
+
     if( bComb )
     {
         return NumberAnimationSharedPtr(
@@ -700,19 +700,19 @@ NumberAnimationSharedPtr createPushWipeTransition(
                                 rViewContainer,
                                 rScreenUpdater,
                                 rEventMultiplexer,
-                                aDirection, 
+                                aDirection,
                                 24 /* comb with 12 stripes */ ));
     }
     else
     {
-        return NumberAnimationSharedPtr( 
+        return NumberAnimationSharedPtr(
             new MovingSlideChange( leavingSlide,
                                    pEnteringSlide,
                                    pSoundPlayer,
                                    rViewContainer,
                                    rScreenUpdater,
                                    rEventMultiplexer,
-                                   aDirection, 
+                                   aDirection,
                                    aDirection ));
     }
 }
@@ -734,53 +734,53 @@ NumberAnimationSharedPtr createSlideWipeTransition(
     {
     default:
         OSL_ENSURE(
-            false, 
+            false,
             "createSlideWipeTransition(): Unexpected transition "
             "subtype for animations::TransitionType::SLIDEWIPE "
             "transitions" );
         return NumberAnimationSharedPtr();
-        
+
     case animations::TransitionSubType::FROMTOP:
         aInDirection = ::basegfx::B2DVector( 0.0, 1.0 );
         break;
-        
+
     case animations::TransitionSubType::FROMRIGHT:
         aInDirection = ::basegfx::B2DVector( -1.0, 0.0 );
         break;
-        
+
     case animations::TransitionSubType::FROMLEFT:
         aInDirection = ::basegfx::B2DVector( 1.0, 0.0 );
         break;
-        
+
     case animations::TransitionSubType::FROMBOTTOM:
         aInDirection = ::basegfx::B2DVector( 0.0, -1.0 );
         break;
-        
+
     case animations::TransitionSubType::FROMBOTTOMRIGHT:
         aInDirection = ::basegfx::B2DVector( -1.0, -1.0 );
         break;
-        
+
     case animations::TransitionSubType::FROMBOTTOMLEFT:
         aInDirection = ::basegfx::B2DVector( 1.0, -1.0 );
         break;
-        
+
     case animations::TransitionSubType::FROMTOPRIGHT:
         aInDirection = ::basegfx::B2DVector( -1.0, 1.0 );
         break;
-        
+
     case animations::TransitionSubType::FROMTOPLEFT:
         aInDirection = ::basegfx::B2DVector( 1.0, 1.0 );
         break;
     }
-    
+
     if( bTransitionDirection )
     {
         // normal, 'forward' slide wipe effect. Since the old
         // content is still on screen (and does not move), we omit
         // the 'leaving' slide.
         // =======================================================
-        
-        return NumberAnimationSharedPtr( 
+
+        return NumberAnimationSharedPtr(
             new MovingSlideChange(
                 boost::optional<SlideSharedPtr>() /* no slide */,
                 pEnteringSlide,
@@ -797,8 +797,8 @@ NumberAnimationSharedPtr createSlideWipeTransition(
         // means, that the new slide is in the back, statically,
         // and the old one is moving off in the foreground.
         // =======================================================
-        
-        return NumberAnimationSharedPtr( 
+
+        return NumberAnimationSharedPtr(
             new MovingSlideChange( leavingSlide,
                                    pEnteringSlide,
                                    pSoundPlayer,
@@ -819,10 +819,10 @@ NumberAnimationSharedPtr createPluginTransition(
     ScreenUpdater&                           rScreenUpdater,
     const uno::Reference<
           presentation::XTransitionFactory>& xFactory,
-    const SoundPlayerSharedPtr&              pSoundPlayer, 
+    const SoundPlayerSharedPtr&              pSoundPlayer,
     EventMultiplexer&                        rEventMultiplexer)
 {
-    PluginSlideChange* pTransition = 
+    PluginSlideChange* pTransition =
         new PluginSlideChange(
             nTransitionType,
             nTransitionSubType,
@@ -868,12 +868,12 @@ NumberAnimationSharedPtr TransitionFactory::createSlideTransition(
         }
         return NumberAnimationSharedPtr();
     }
-    
+
     ENSURE_OR_THROW(
         pEnteringSlide,
         "TransitionFactory::createSlideTransition(): Invalid entering slide" );
-    
-    if( xOptionalFactory.is() && 
+
+    if( xOptionalFactory.is() &&
         xOptionalFactory->hasTransition(nTransitionType, nTransitionSubType) )
     {
         // #i82460# - optional plugin factory claims this transition. delegate.
@@ -893,7 +893,7 @@ NumberAnimationSharedPtr TransitionFactory::createSlideTransition(
             return pTransition;
     }
 
-    const TransitionInfo* pTransitionInfo( 
+    const TransitionInfo* pTransitionInfo(
         getTransitionInfo( nTransitionType, nTransitionSubType ) );
 
     if( pTransitionInfo != NULL )
@@ -909,12 +909,12 @@ NumberAnimationSharedPtr TransitionFactory::createSlideTransition(
                     nTransitionSubType );
                 return NumberAnimationSharedPtr();
 
-                
+
             case TransitionInfo::TRANSITION_CLIP_POLYPOLYGON:
             {
                 // generate parametric poly-polygon
-                ParametricPolyPolygonSharedPtr pPoly( 
-                    ParametricPolyPolygonFactory::createClipPolyPolygon( 
+                ParametricPolyPolygonSharedPtr pPoly(
+                    ParametricPolyPolygonFactory::createClipPolyPolygon(
                         nTransitionType, nTransitionSubType ) );
 
                 // create a clip transition from that
@@ -928,14 +928,14 @@ NumberAnimationSharedPtr TransitionFactory::createSlideTransition(
                                             bTransitionDirection,
                                             pSoundPlayer ));
             }
-            
+
             case TransitionInfo::TRANSITION_SPECIAL:
             {
                 switch( nTransitionType )
                 {
                     default:
                         OSL_ENSURE(
-                            false, 
+                            false,
                             "TransitionFactory::createSlideTransition(): "
                             "Unexpected transition type for "
                             "TRANSITION_SPECIAL transitions" );
@@ -948,7 +948,7 @@ NumberAnimationSharedPtr TransitionFactory::createSlideTransition(
 
                         const TransitionInfo* pRandomTransitionInfo(
                             getRandomTransitionInfo() );
-                        
+
                         ENSURE_OR_THROW(
                             pRandomTransitionInfo != NULL,
                             "TransitionFactory::createSlideTransition(): "
@@ -1034,7 +1034,7 @@ NumberAnimationSharedPtr TransitionFactory::createSlideTransition(
                                                   "SlideTransitionFactory::createSlideTransition(): Unknown FADE subtype" );
                         }
 
-                        return NumberAnimationSharedPtr( 
+                        return NumberAnimationSharedPtr(
                             new FadingSlideChange(
                                 leavingSlide,
                                 pEnteringSlide,
@@ -1050,8 +1050,8 @@ NumberAnimationSharedPtr TransitionFactory::createSlideTransition(
             break;
         }
     }
-    
-    // No animation generated, maybe no table entry for given 
+
+    // No animation generated, maybe no table entry for given
     // transition?
     OSL_TRACE(
         "TransitionFactory::createSlideTransition(): "
@@ -1062,7 +1062,7 @@ NumberAnimationSharedPtr TransitionFactory::createSlideTransition(
         false,
         "TransitionFactory::createSlideTransition(): "
         "Unknown type/subtype combination encountered" );
-    
+
     return NumberAnimationSharedPtr();
 }
 

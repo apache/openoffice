@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -178,7 +178,7 @@ sal_Bool DirEntry::ToAbs()
 String DirEntry::GetVolume() const
 {
     DBG_CHKTHIS( DirEntry, ImpCheckDirEntry );
-	
+
     String aRet;
     const DirEntry *pTop = ImpGetTopPtr();
     ByteString aName = ByteString( pTop->aName ).ToLowerAscii();
@@ -323,7 +323,7 @@ USHORT DirReader_Impl::Init()
             sDrive[0] = c;
             sRoot[0] = c;
             DirEntry* pDrive = new DirEntry( sDrive, FSYS_FLAG_VOLUME, FSYS_STYLE_HOST );
-            if ( pDir->aNameMask.Matches( String( ByteString(sDrive), osl_getThreadTextEncoding())) 
+            if ( pDir->aNameMask.Matches( String( ByteString(sDrive), osl_getThreadTextEncoding()))
 				&& aDriveMap[c-'a'].nKind != FSYS_KIND_UNKNOWN )
             {
                 if ( pDir->pStatLst ) //Status fuer Sort gewuenscht?
@@ -712,7 +712,7 @@ void CreateCaseMapImpl()
     // build a string starting with code 0 as first character up to 255
     char sTemp[256];
 	USHORT n;
-	
+
     for ( n = 0; n < 256; ++n )
         sTemp[n] = (char) n;
 
@@ -928,7 +928,7 @@ FSysPathStyle DirEntry::GetPathStyle( const String &rDevice )
 |*
 |*    Beschreibung
 |*    Ersterstellung    TPF 26.02.1999
-|*    Letzte Aenderung  
+|*    Letzte Aenderung
 |*
 *************************************************************************/
 

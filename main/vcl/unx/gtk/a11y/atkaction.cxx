@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -56,7 +56,7 @@ static accessibility::XAccessibleAction*
         getAction( AtkAction *action ) throw (uno::RuntimeException)
 {
     AtkObjectWrapper *pWrap = ATK_OBJECT_WRAPPER( action );
-    
+
     if( pWrap )
     {
         if( !pWrap->mpAction && pWrap->mpContext )
@@ -129,7 +129,7 @@ action_wrapper_get_name (AtkAction *action,
                          gint       i)
 {
     static std::map< rtl::OUString, const gchar * > aNameMap;
-    
+
     if( aNameMap.empty() )
     {
         aNameMap.insert( ACTION_NAME_PAIR( "click", "click" ) );
@@ -142,16 +142,16 @@ action_wrapper_get_name (AtkAction *action,
         if( pAction )
         {
             std::map< rtl::OUString, const gchar * >::iterator iter;
-            
+
             rtl::OUString aDesc( pAction->getAccessibleActionDescription( i ) );
-            
+
             iter = aNameMap.find( aDesc );
             if( iter != aNameMap.end() )
                 return iter->second;
-            
-            std::pair< const rtl::OUString, const gchar * > aNewVal( aDesc, 
+
+            std::pair< const rtl::OUString, const gchar * > aNewVal( aDesc,
                 g_strdup( OUStringToConstGChar(aDesc) ) );
-            
+
             if( aNameMap.insert( aNewVal ).second )
                 return aNewVal.second;
         }
@@ -163,11 +163,11 @@ action_wrapper_get_name (AtkAction *action,
     return "";
 }
 
-/* 
+/*
 *  GNOME Expects a string in the format:
-*  
+*
 *  <nmemonic>;<full-path>;<accelerator>
-*  
+*
 *  The keybindings in <full-path> should be separated by ":"
 */
 
@@ -182,13 +182,13 @@ appendKeyStrokes(rtl::OStringBuffer& rBuffer, const uno::Sequence< awt::KeyStrok
             rBuffer.append("<Control>");
         if( rKeyStrokes[i].Modifiers &  awt::KeyModifier::MOD2 )
             rBuffer.append("<Alt>");
-        
+
         if( ( rKeyStrokes[i].KeyCode >= awt::Key::A ) && ( rKeyStrokes[i].KeyCode <= awt::Key::Z ) )
             rBuffer.append( (sal_Char) ( 'a' + ( rKeyStrokes[i].KeyCode - awt::Key::A ) ) );
         else
         {
             sal_Char c = '\0';
-            
+
             switch( rKeyStrokes[i].KeyCode )
             {
                 case awt::Key::TAB:      c = '\t'; break;
@@ -208,7 +208,7 @@ appendKeyStrokes(rtl::OStringBuffer& rBuffer, const uno::Sequence< awt::KeyStrok
                     g_warning( "Unmapped KeyCode: %d", rKeyStrokes[i].KeyCode );
                     break;
             }
-            
+
             if( c != '\0' )
                 rBuffer.append( c );
         }
@@ -225,20 +225,20 @@ action_wrapper_get_keybinding (AtkAction *action,
         if( pAction )
         {
             uno::Reference< accessibility::XAccessibleKeyBinding > xBinding( pAction->getAccessibleActionKeyBinding( i ));
-            
+
             if( xBinding.is() )
             {
                 rtl::OStringBuffer aRet;
-                
+
                 sal_Int32 nmax = std::min( xBinding->getAccessibleKeyBindingCount(), (sal_Int32) 3 );
                 for( sal_Int32 n = 0; n < nmax; n++ )
                 {
                     appendKeyStrokes( aRet,  xBinding->getAccessibleKeyBinding( n ) );
-                    
+
                     if( n < 2 )
                         aRet.append( (sal_Char) ';' );
                 }
-                
+
                 // !! FIXME !! remember keystroke in wrapper object ?
                 return getAsConst( aRet.makeStringAndClear() );
             }

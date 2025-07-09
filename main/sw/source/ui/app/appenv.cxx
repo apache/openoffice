@@ -280,7 +280,7 @@ static sal_uInt16 nTitleNo = 0;
 			//#i4251# selected text or objects in the document should
 			//not be deleted on inserting envelopes
 			pSh->EnterStdMode();
-			// Let's go (paste) 
+			// Let's go (paste)
 			pSh->StartUndo(UNDO_UI_INSERT_ENVELOPE, NULL);
 			pSh->StartAllAction();
 			pSh->SttEndDoc(sal_True);
@@ -343,7 +343,7 @@ static sal_uInt16 nTitleNo = 0;
 		SET_CURR_SHELL(pSh);
 		pSh->SetNewDoc(); // Avoid Performance Issues
 
-		// Memorize (?) Fly's of this page ( Original comment was "Flys dieser Seite merken" ) 
+		// Memorize (?) Fly's of this page ( Original comment was "Flys dieser Seite merken" )
 		SvPtrarr aFlyArr(0, 5);
 		if( ENV_NEWDOC != nMode && !bEnvChange )
 			pSh->GetPageObjs( aFlyArr );

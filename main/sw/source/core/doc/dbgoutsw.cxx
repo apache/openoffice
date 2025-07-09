@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -676,11 +676,11 @@ String lcl_dbg_out(const SwNode & rNode)
     else if (rNode.IsStartNode())
     {
         aTmpStr += String("<start end=\"", RTL_TEXTENCODING_ASCII_US);
-        
+
         const SwStartNode * pStartNode = dynamic_cast<const SwStartNode *> (&rNode);
-        if (pStartNode != NULL)            
+        if (pStartNode != NULL)
             aTmpStr += String::CreateFromInt32(pStartNode->EndOfSectionNode()->GetIndex());
-            
+
         aTmpStr += String("\"/>", RTL_TEXTENCODING_ASCII_US);
     }
     else if (rNode.IsEndNode())
@@ -745,7 +745,7 @@ void lcl_dbg_nodes_inner(String & aStr, SwNodes & rNodes, sal_uLong & nIndex)
     sal_uLong nStartIndex = nIndex;
 
     bool bDone = false;
-    
+
     String aTag;
     if (pNode->IsTableNode())
         aTag += String("table", RTL_TEXTENCODING_ASCII_US);
@@ -753,13 +753,13 @@ void lcl_dbg_nodes_inner(String & aStr, SwNodes & rNodes, sal_uLong & nIndex)
         aTag += String("section", RTL_TEXTENCODING_ASCII_US);
     else
         aTag += String("nodes", RTL_TEXTENCODING_ASCII_US);
-        
+
     aStr += String("<", RTL_TEXTENCODING_ASCII_US);
     aStr += aTag;
     aStr += String(">", RTL_TEXTENCODING_ASCII_US);
 
     while (! bDone)
-    {        
+    {
         if (pNode->IsStartNode() && nIndex != nStartIndex)
             lcl_dbg_nodes_inner(aStr, rNodes, nIndex);
         else
@@ -769,13 +769,13 @@ void lcl_dbg_nodes_inner(String & aStr, SwNodes & rNodes, sal_uLong & nIndex)
 
             nIndex++;
         }
-        
+
         if (pNode == pEndNode || nIndex >= nCount)
             bDone = true;
         else
-            pNode = rNodes[nIndex];            
+            pNode = rNodes[nIndex];
     }
-    
+
     aStr += String("</", RTL_TEXTENCODING_ASCII_US);
     aStr += aTag;
     aStr += String(">\n", RTL_TEXTENCODING_ASCII_US);
@@ -784,15 +784,15 @@ void lcl_dbg_nodes_inner(String & aStr, SwNodes & rNodes, sal_uLong & nIndex)
 String lcl_dbg_out(SwNodes & rNodes)
 {
     String aStr("<nodes-array>", RTL_TEXTENCODING_ASCII_US);
-    
+
     sal_uLong nIndex = 0;
     sal_uLong nCount = rNodes.Count();
-    
+
     while (nIndex < nCount)
     {
         lcl_dbg_nodes_inner(aStr, rNodes, nIndex);
     }
-    
+
     aStr += String("</nodes-array>\n", RTL_TEXTENCODING_ASCII_US);
 
     return aStr;
@@ -1019,7 +1019,7 @@ SW_DLLPUBLIC const char * dbg_out(const SwFormTokens & rTokens)
 String lcl_dbg_out(const SwNodeRange & rRange)
 {
     String aStr("[", RTL_TEXTENCODING_ASCII_US);
-    
+
     aStr += lcl_dbg_out(SwPosition(rRange.aStart));
     aStr += String(", ", RTL_TEXTENCODING_ASCII_US);
     aStr += lcl_dbg_out(SwPosition(rRange.aEnd));

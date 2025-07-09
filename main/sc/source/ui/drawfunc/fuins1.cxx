@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -151,7 +151,7 @@ void lcl_InsertGraphic( const Graphic& rGraphic,
 	ScDrawView* pDrawView = pViewSh->GetScDrawView();
 
     // #123922# check if an existing object is selected; if yes, evtl. replace
-    // the graphic for a SdrGraphObj (including link state updates) or adapt the fill 
+    // the graphic for a SdrGraphObj (including link state updates) or adapt the fill
     // style for other objects
     if(pDrawView && 1 == pDrawView->GetMarkedObjectCount())
     {
@@ -165,10 +165,10 @@ void lcl_InsertGraphic( const Graphic& rGraphic,
             const String aEmpty;
 
             SdrObject* pResult = pDrawView->ApplyGraphicToObject(
-                *pPickObj, 
-                rGraphic, 
-                aBeginUndo, 
-                bAsLink ? rFileName : aEmpty, 
+                *pPickObj,
+                rGraphic,
+                aBeginUndo,
+                bAsLink ? rFileName : aEmpty,
                 bAsLink ? rFilterName : aEmpty);
 
             if(pResult)
@@ -241,7 +241,7 @@ void lcl_InsertMedia( const ::rtl::OUString& rMediaURL, bool bApi,
 	ScViewData* 	pData = pViewSh->GetViewData();
 	Point 			aInsertPos( pViewSh->GetInsertPos() );
 	Size 			aSize;
-	
+
 	if( rPrefSize.Width() && rPrefSize.Height() )
 	{
 		if( pWindow )
@@ -253,13 +253,13 @@ void lcl_InsertMedia( const ::rtl::OUString& rMediaURL, bool bApi,
 		aSize = Size( 5000, 5000 );
 
 	ScLimitSizeOnDrawPage( aSize, aInsertPos, pPage->GetSize() );
-	
+
 	if( pData->GetDocument()->IsNegativePage( pData->GetTabNo() ) )
 		aInsertPos.X() -= aSize.Width();
 
 	SdrMediaObj* pObj = new SdrMediaObj( Rectangle( aInsertPos, aSize ) );
-	
-	pObj->setURL( rMediaURL ); 
+
+	pObj->setURL( rMediaURL );
 	pView->InsertObjectAtView( pObj, *pPV, bApi ? SDRINSERT_DONTMARK : 0 );
 }
 
@@ -408,7 +408,7 @@ FuInsertMedia::FuInsertMedia( ScTabViewShell*	pViewSh,
 	if( pReqArgs )
 	{
 		const SfxStringItem* pStringItem = PTR_CAST( SfxStringItem, &pReqArgs->Get( rReq.GetSlot() ) );
-		
+
 		if( pStringItem )
 		{
 			aURL = pStringItem->GetValue();
@@ -422,19 +422,19 @@ FuInsertMedia::FuInsertMedia( ScTabViewShell*	pViewSh,
 
 		if( pWin )
 			pWin->EnterWait();
-			
+
 		if( !::avmedia::MediaWindow::isMediaURL( aURL, true, &aPrefSize ) )
 		{
 			if( pWin )
 				pWin->LeaveWait();
-			
+
 			if( !bAPI )
 				::avmedia::MediaWindow::executeFormatErrorBox( pWindow );
 		}
 		else
 		{
 			lcl_InsertMedia( aURL, bAPI, pViewSh, pWindow, pView, aPrefSize );
-		
+
 			if( pWin )
 				pWin->LeaveWait();
 		}

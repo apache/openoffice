@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -45,7 +45,7 @@ DBG_NAME( rpt_OXMLSubDocument )
 OXMLSubDocument::OXMLSubDocument( ORptFilter& rImport,
 				sal_uInt16 nPrfx
                 ,const ::rtl::OUString& rLName
-				,const Reference< XReportComponent > & _xComponent 
+				,const Reference< XReportComponent > & _xComponent
                 ,OXMLTable* _pContainer
                 ,OXMLCell* _pCellParent) :
 	OXMLReportElementBase( rImport, nPrfx, rLName,_xComponent.get(),_pContainer)
@@ -117,7 +117,7 @@ void OXMLSubDocument::EndElement()
         {
             // #i94115# this is no longer need.
             // m_pContainer->addCell(m_xComponent.get());
-    
+
             if ( !m_aMasterFields.empty() )
                 m_xComponent->setMasterFields(Sequence< ::rtl::OUString>(&*m_aMasterFields.begin(),m_aMasterFields.size()));
             if ( !m_aDetailFields.empty() )
@@ -139,12 +139,12 @@ void OXMLSubDocument::EndElement()
                         ::comphelper::copyProperties(xCond.get(),xNewCond.get());
                         xComponentModel->insertByIndex(xComponentModel->getCount(),uno::makeAny(xNewCond));
 		            } // for (sal_Int32 i = 0; i < nCount ; ++i)
-	            } 
+	            }
 	            catch(uno::Exception&)
 	            {
 		            OSL_ENSURE(0,"Can not access format condition!");
 	            }
-                
+
             }
         }
     }

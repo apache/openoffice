@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -82,14 +82,14 @@ ExplicitCategoriesProvider::ExplicitCategoriesProvider( const Reference< chart2:
             if( xChartDoc.is() )
             {
                 uno::Reference< data::XDataProvider > xDataProvider( xChartDoc->getDataProvider() );
-                
+
                 OUString aCatgoriesRange( DataSourceHelper::getRangeFromValues( m_xOriginalCategories ) );
                 if( xDataProvider.is() && !aCatgoriesRange.isEmpty() )
                 {
                     const bool bFirstCellAsLabel = false;
                     const bool bHasCategories = false;
                     const uno::Sequence< sal_Int32 > aSequenceMapping;
-                                    
+
                     uno::Reference< data::XDataSource > xColumnCategoriesSource( xDataProvider->createDataSource(
                          DataSourceHelper::createArguments( aCatgoriesRange, aSequenceMapping, true /*bUseColumns*/
                             , bFirstCellAsLabel, bHasCategories ) ) );
@@ -210,7 +210,7 @@ void ExplicitCategoriesProvider::convertCategoryAnysToText( uno::Sequence< rtl::
     bool bColorChanged = false;
 
     NumberFormatterWrapper aNumberFormatterWrapper( xNumberFormatsSupplier );
-    
+
     for(sal_Int32 nN=0;nN<nCount;nN++)
     {
         rtl::OUString aText;
@@ -284,7 +284,7 @@ std::vector< ComplexCategory > lcl_DataSequenceToComplexCategoryVector(
     , const std::vector<sal_Int32>& rLimitingBorders, bool bCreateSingleCategories )
 {
     std::vector< ComplexCategory > aResult;
-    
+
     sal_Int32 nMaxCount = rStrings.getLength();
     OUString aPrevious;
     sal_Int32 nCurrentCount=0;
@@ -311,7 +311,7 @@ std::vector< ComplexCategory > lcl_DataSequenceToComplexCategoryVector(
     }
     if( nCurrentCount )
         aResult.push_back( ComplexCategory(aPrevious,nCurrentCount) );
-    
+
     return aResult;
 }
 
@@ -433,7 +433,7 @@ bool lcl_fillDateCategories( const uno::Reference< data::XDataSequence >& xDataS
 {
     bool bOnlyDatesFound = true;
     bool bAnyDataFound = false;
-    
+
     if( xDataSequence.is() )
     {
         uno::Sequence< uno::Any > aValues = xDataSequence->getData();
@@ -452,7 +452,7 @@ bool lcl_fillDateCategories( const uno::Reference< data::XDataSequence >& xDataS
         {
             if( xChartDoc->hasInternalDataProvider() )
             {
-                bOwnData = true;               
+                bOwnData = true;
                 Reference< beans::XPropertySet > xAxisProps( xCooSysModel->getAxisByDimension(0,0), uno::UNO_QUERY );
                 sal_Int32 nAxisNumberFormat = 0;
                 if( xAxisProps.is() && (xAxisProps->getPropertyValue( C2U("NumberFormat") ) >>= nAxisNumberFormat) )
@@ -475,7 +475,7 @@ bool lcl_fillDateCategories( const uno::Reference< data::XDataSequence >& xDataS
             }
             else
                 bIsDate = true;
-            
+
             bool bContainsEmptyString = false;
             bool bContainsNan = false;
             uno::Any aAny = aValues[nN];
@@ -514,7 +514,7 @@ void ExplicitCategoriesProvider::init()
     {
         m_aComplexCats.clear();//not one per index
         m_aDateCategories.clear();
-        
+
         if( m_xOriginalCategories.is() )
         {
             if( !hasComplexCategories() )

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -235,7 +235,7 @@ SQLRETURN OResultSet::unbind(sal_Bool _bUnbindHandle)
 				case DataType::BIT:
 				case DataType::TINYINT:
 					delete static_cast< sal_Int8* >(reinterpret_cast< void * >(pValue->first));
-					break;			
+					break;
 				case DataType::SMALLINT:
 					delete static_cast< sal_Int16* >(reinterpret_cast< void * >(pValue->first));
 					break;
@@ -298,7 +298,7 @@ TVoidPtr OResultSet::allocBindColumn(sal_Int32 _nType,sal_Int32 _nColumnIndex)
 		case DataType::BIT:
 		case DataType::TINYINT:
 			aPair = TVoidPtr(reinterpret_cast< sal_Int64 >(new sal_Int8(0)),_nType);
-			break;			
+			break;
 		case DataType::SMALLINT:
 			aPair = TVoidPtr(reinterpret_cast< sal_Int64 >(new sal_Int16(0)),_nType);
 			break;
@@ -332,13 +332,13 @@ void OResultSet::allocBuffer()
 	for(sal_Int32 i = 1;i<=nLen;++i)
 	{
 		sal_Int32 nType = xMeta->getColumnType(i);
-		m_aRow[i].setTypeKind( nType );		
+		m_aRow[i].setTypeKind( nType );
 	}
 	m_aLengthVector.resize(nLen + 1);
 }
 // -------------------------------------------------------------------------
 void OResultSet::releaseBuffer()
-{	
+{
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "odbc", "Ocke.Janssen@sun.com", "OResultSet::releaseBuffer" );
 	unbind(sal_False);
 	m_aLengthVector.clear();
@@ -611,7 +611,7 @@ sal_Int16 SAL_CALL OResultSet::getShort( sal_Int32 columnIndex ) throw(SQLExcept
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "odbc", "Ocke.Janssen@sun.com", "OResultSet::getString" );
 	::osl::MutexGuard aGuard( m_aMutex );
-	
+
 	::rtl::OUString nRet;
 	if ( m_bFetchData )
 		nRet = getValue(columnIndex,0,NULL,0);
@@ -1348,7 +1348,7 @@ sal_Bool  OResultSet::isBookmarkable() const
 	{
 		return sal_False;
 	}
-    
+
     if ( m_nUseBookmarks == ODBC_SQL_NOT_DEFINED )
     {
         m_nUseBookmarks = SQL_UB_OFF;
@@ -1375,7 +1375,7 @@ void OResultSet::setFetchSize(sal_Int32 _par0)
 	{
 		N3SQLSetStmtAttr(m_aStatementHandle,SQL_ATTR_ROW_ARRAY_SIZE,(SQLPOINTER)_par0,SQL_IS_UINTEGER);
 		delete m_pRowStatusArray;
-	
+
 		m_pRowStatusArray = new SQLUSMALLINT[_par0];
 		N3SQLSetStmtAttr(m_aStatementHandle,SQL_ATTR_ROW_STATUS_PTR,m_pRowStatusArray,SQL_IS_POINTER);
 	}

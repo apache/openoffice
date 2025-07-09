@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 #include "mysqlc_connection.hxx"
@@ -66,7 +66,7 @@ using ::rtl::OUString;
 
 
 /* {{{ OConnection::OConnection() -I- */
-OConnection::OConnection(MysqlCDriver& _rDriver, sql::Driver * _cppDriver) 
+OConnection::OConnection(MysqlCDriver& _rDriver, sql::Driver * _cppDriver)
 	:OMetaConnection_BASE(m_aMutex)
 	,OSubComponent<OConnection, OConnection_BASE>((::cppu::OWeakObject*)&_rDriver, this)
 	,m_xMetaData(NULL)
@@ -108,7 +108,7 @@ void SAL_CALL OConnection::release()
 #endif
 
 /* {{{ OConnection::construct() -I- */
-void OConnection::construct(const OUString& url, const Sequence< PropertyValue >& info) 
+void OConnection::construct(const OUString& url, const Sequence< PropertyValue >& info)
 	throw(SQLException)
 {
 	OSL_TRACE("OConnection::construct");
@@ -394,7 +394,7 @@ void SAL_CALL OConnection::commit()
 		m_settings.cppConnection->commit();
 	} catch (sql::SQLException & e) {
 		mysqlc_sdbc_driver::translateAndThrow(e, *this, getConnectionEncoding());
-	}	
+	}
 }
 /* }}} */
 
@@ -467,7 +467,7 @@ void SAL_CALL OConnection::setReadOnly(sal_Bool readOnly)
 /* {{{ OConnection::createStatement() -I- */
 sal_Bool SAL_CALL OConnection::isReadOnly()
 	throw(SQLException, RuntimeException)
-{	
+{
 	OSL_TRACE("OConnection::isReadOnly");
 	MutexGuard aGuard(m_aMutex);
 	checkDisposed(OConnection_BASE::rBHelper.bDisposed);
@@ -491,7 +491,7 @@ void SAL_CALL OConnection::setCatalog(const OUString& catalog)
 		m_settings.cppConnection->setSchema(OUStringToOString(catalog, getConnectionEncoding()).getStr());
 	} catch (sql::SQLException & e) {
 		mysqlc_sdbc_driver::translateAndThrow(e, *this, getConnectionEncoding());
-	}	
+	}
 }
 /* }}} */
 
@@ -540,7 +540,7 @@ void SAL_CALL OConnection::setTransactionIsolation(sal_Int32 level)
 			break;
 		case TransactionIsolation::NONE:
 			cpplevel = sql::TRANSACTION_SERIALIZABLE;
-			break;			
+			break;
 		default:;
 			/* XXX: Exception ?? */
 	}
@@ -572,7 +572,7 @@ sal_Int32 SAL_CALL OConnection::getTransactionIsolation()
 		}
 	} catch (sql::SQLException & e) {
 		mysqlc_sdbc_driver::translateAndThrow(e, *this, getConnectionEncoding());
-	}	
+	}
 	return TransactionIsolation::NONE;
 }
 /* }}} */
@@ -702,14 +702,14 @@ OUString OConnection::getMysqlVariable(const char *varname)
 
 	try {
 		XStatement * stmt = new OStatement(this, m_settings.cppConnection->createStatement());
-		Reference< XResultSet > rs = stmt->executeQuery( aStatement.makeStringAndClear() );	
+		Reference< XResultSet > rs = stmt->executeQuery( aStatement.makeStringAndClear() );
 		if (rs.is() && rs->next()) {
 			Reference< XRow > xRow(rs, UNO_QUERY);
 			ret = xRow->getString(2);
 		}
 	} catch (sql::SQLException & e) {
 		mysqlc_sdbc_driver::translateAndThrow(e, *this, getConnectionEncoding());
-	}								
+	}
 
 	return ret;
 }

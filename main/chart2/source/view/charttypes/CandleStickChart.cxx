@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -216,7 +216,7 @@ void CandleStickChart::createShapes()
                 {
                     //collect data point information (logic coordinates, style ):
                     double fUnscaledX = (*aSeriesIter)->getXValue( nIndex );
-                    if( m_pExplicitCategoriesProvider && m_pExplicitCategoriesProvider->isDateAxis() ) 
+                    if( m_pExplicitCategoriesProvider && m_pExplicitCategoriesProvider->isDateAxis() )
                         fUnscaledX = DateHelper::RasterizeDateValue( fUnscaledX, m_aNullDate, m_nTimeResolution );
                     if(fUnscaledX<pPosHelper->getLogicMinX() || fUnscaledX>pPosHelper->getLogicMaxX())
                         continue;//point not visible
@@ -237,7 +237,7 @@ void CandleStickChart::createShapes()
                         std::swap(fUnscaledY_Min,fUnscaledY_Max);
                     //transformation 3) -> 4)
                     double fHalfScaledWidth = pPosHelper->getScaledSlotWidth()/2.0;
-                    
+
                     double fScaledY_First(fUnscaledY_First);
                     double fScaledY_Last(fUnscaledY_Last);
                     double fScaledY_Min(fUnscaledY_Min);
@@ -257,7 +257,7 @@ void CandleStickChart::createShapes()
                     drawing::Position3D aPosMiddleLast( pPosHelper->transformScaledLogicToScene( fScaledX, fScaledY_Last  ,0 ,true ) );
                     drawing::Position3D aPosMiddleMinimum( pPosHelper->transformScaledLogicToScene( fScaledX, fScaledY_Min ,0 ,true ) );
                     drawing::Position3D aPosMiddleMaximum( pPosHelper->transformScaledLogicToScene( fScaledX, fScaledY_Max ,0 ,true ) );
-                    
+
                     uno::Reference< drawing::XShapes > xLossGainTarget( xGainTarget );
                     if(bBlack)
                         xLossGainTarget = xLossTarget;
@@ -315,7 +315,7 @@ void CandleStickChart::createShapes()
                     else
                     {
                         drawing::PolyPolygonShape3D aPoly;
-                        
+
                         sal_Int32 nLineIndex = 0;
                         if( bShowFirst &&  pPosHelper->isLogicVisible( fUnscaledX, fUnscaledY_First ,fLogicZ )
                             && isValidPosition(aPosLeftFirst) && isValidPosition(aPosMiddleFirst) )
@@ -323,7 +323,7 @@ void CandleStickChart::createShapes()
                             AddPointToPoly( aPoly, aPosLeftFirst, nLineIndex );
                             AddPointToPoly( aPoly, aPosMiddleFirst, nLineIndex++ );
                         }
-                        if( pPosHelper->isLogicVisible( fUnscaledX, fUnscaledY_Last ,fLogicZ ) 
+                        if( pPosHelper->isLogicVisible( fUnscaledX, fUnscaledY_Last ,fLogicZ )
                             && isValidPosition(aPosMiddleLast) && isValidPosition(aPosRightLast) )
                         {
                             AddPointToPoly( aPoly, aPosMiddleLast, nLineIndex );
@@ -343,7 +343,7 @@ void CandleStickChart::createShapes()
                             }
                         }
                     }
-                    
+
                     //create data point label
                     if( (**aSeriesIter).getDataPointLabelIfLabel(nIndex) )
                     {

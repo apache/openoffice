@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -39,10 +39,10 @@
 // #i101872# new Object HitTest as View-tooling
 
 SdrObject* SdrObjectPrimitiveHit(
-	const SdrObject& rObject, 
-	const Point& rPnt, 
-	sal_uInt16 nTol, 
-	const SdrPageView& rSdrPageView, 
+	const SdrObject& rObject,
+	const Point& rPnt,
+	sal_uInt16 nTol,
+	const SdrPageView& rSdrPageView,
 	const SetOfByte* pVisiLayer,
     bool bTextOnly)
 {
@@ -58,7 +58,7 @@ SdrObject* SdrObjectPrimitiveHit(
 	{
 		if( rObject.IsVisible() && (!pVisiLayer || pVisiLayer->IsSet(rObject.GetLayer())))
 		{
-			// single object, 3d object, empty scene or empty group. Check if 
+			// single object, 3d object, empty scene or empty group. Check if
             // it's a single 3D object
 			const E3dCompoundObject* pE3dCompoundObject = dynamic_cast< const E3dCompoundObject* >(&rObject);
 
@@ -97,21 +97,21 @@ SdrObject* SdrObjectPrimitiveHit(
 /////////////////////////////////////////////////////////////////////
 
 SdrObject* SdrObjListPrimitiveHit(
-	const SdrObjList& rList, 
-	const Point& rPnt, 
-	sal_uInt16 nTol, 
-	const SdrPageView& rSdrPageView, 
+	const SdrObjList& rList,
+	const Point& rPnt,
+	sal_uInt16 nTol,
+	const SdrPageView& rSdrPageView,
 	const SetOfByte* pVisiLayer,
     bool bTextOnly)
 {
 	sal_uInt32 nObjNum(rList.GetObjCount());
     SdrObject* pRetval = 0;
-	
-	while(!pRetval && nObjNum > 0) 
+
+	while(!pRetval && nObjNum > 0)
 	{
 		nObjNum--;
 		SdrObject* pObj = rList.GetObj(nObjNum);
-	
+
         pRetval = SdrObjectPrimitiveHit(*pObj, rPnt, nTol, rSdrPageView, pVisiLayer, bTextOnly);
 	}
 
@@ -121,8 +121,8 @@ SdrObject* SdrObjListPrimitiveHit(
 /////////////////////////////////////////////////////////////////////
 
 bool ViewObjectContactPrimitiveHit(
-    const sdr::contact::ViewObjectContact& rVOC, 
-	const basegfx::B2DPoint& rHitPosition, 
+    const sdr::contact::ViewObjectContact& rVOC,
+	const basegfx::B2DPoint& rHitPosition,
     double fLogicHitTolerance,
     bool bTextOnly)
 {

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -378,7 +378,7 @@ StackMode DiagramHelper::getStackMode( const Reference< XDiagram > & xDiagram, b
             eGlobalStackMode = eLocalStackMode;
         }
     }
-    
+
     return eGlobalStackMode;
 }
 
@@ -443,7 +443,7 @@ StackMode DiagramHelper::getStackModeFromChartType(
                         sal_Int32 nAxisIndex = 0;
                         if( nSeriesCount )
                             nAxisIndex = DataSeriesHelper::getAttachedAxisIndex(aSeries[0]);
-                        
+
                         Reference< chart2::XAxis > xAxis(
                             xCorrespondingCoordinateSystem->getAxisByDimension( 1,nAxisIndex ));
                         if( xAxis.is())
@@ -1017,7 +1017,7 @@ Sequence< rtl::OUString > DiagramHelper::getExplicitSimpleCategories(
     if(xChartModel.is())
     {
         uno::Reference< chart2::XCoordinateSystem > xCooSys( ChartModelHelper::getFirstCoordinateSystem( xChartModel ) );
-        ExplicitCategoriesProvider aExplicitCategoriesProvider( xCooSys, xChartModel ); 
+        ExplicitCategoriesProvider aExplicitCategoriesProvider( xCooSys, xChartModel );
         aRet = aExplicitCategoriesProvider.getSimpleCategories();
     }
     return aRet;
@@ -1182,7 +1182,7 @@ sal_Int32 DiagramHelper::getDateNumberFormat( const Reference< util::XNumberForm
     {
         sal_Bool bCreate = sal_True;
         const LocaleDataWrapper& rLocaleDataWrapper = Application::GetSettings().GetLocaleDataWrapper();
-        Sequence<sal_Int32> aKeySeq = xNumberFormats->queryKeys( util::NumberFormat::DATE, 
+        Sequence<sal_Int32> aKeySeq = xNumberFormats->queryKeys( util::NumberFormat::DATE,
 			rLocaleDataWrapper.getLocale(), bCreate );
         if( aKeySeq.getLength() )
         {
@@ -1210,7 +1210,7 @@ sal_Int32 DiagramHelper::getPercentNumberFormat( const Reference< util::XNumberF
     {
         sal_Bool bCreate = sal_True;
         const LocaleDataWrapper& rLocaleDataWrapper = Application::GetSettings().GetLocaleDataWrapper();
-        Sequence<sal_Int32> aKeySeq = xNumberFormats->queryKeys( util::NumberFormat::PERCENT, 
+        Sequence<sal_Int32> aKeySeq = xNumberFormats->queryKeys( util::NumberFormat::PERCENT,
 			rLocaleDataWrapper.getLocale(), bCreate );
         if( aKeySeq.getLength() )
         {
@@ -1355,7 +1355,7 @@ bool lcl_moveSeriesOrCheckIfMoveIsAllowed(
                                 else
                                     nNewSeriesIndex++;
 
-                                
+
                                 if( nNewSeriesIndex >= 0 && nNewSeriesIndex < aSeriesList.getLength() )
                                 {
                                     //move series in the same charttype
@@ -1498,7 +1498,7 @@ bool DiagramHelper::isPieOrDonutChart( const ::com::sun::star::uno::Reference<
 {
     uno::Reference< chart2::XChartType > xChartType( DiagramHelper::getChartTypeByIndex(
         xDiagram, 0 ) );
-    
+
     if( xChartType .is() )
     {
         rtl::OUString aChartType = xChartType->getChartType();
@@ -1592,7 +1592,7 @@ sal_Int32 DiagramHelper::getCorrectedMissingValueTreatment(
         nResult = aAvailableMissingValueTreatments[0];
         return nResult;
     }
-    
+
     return nResult;
 }
 
@@ -1647,7 +1647,7 @@ bool DiagramHelper::setDiagramPositioning( const uno::Reference< frame::XModel >
     aNewPos.Anchor = drawing::Alignment_TOP_LEFT;
     aNewPos.Primary = double(rPosRect.X)/double(aPageSize.Width);
     aNewPos.Secondary = double(rPosRect.Y)/double(aPageSize.Height);
-    
+
     chart2::RelativeSize aNewSize;
     aNewSize.Primary = double(rPosRect.Width)/double(aPageSize.Width);
     aNewSize.Secondary = double(rPosRect.Height)/double(aPageSize.Height);
@@ -1660,7 +1660,7 @@ bool DiagramHelper::setDiagramPositioning( const uno::Reference< frame::XModel >
         aNewPos.Primary = 1.0 - aNewSize.Primary;
     if( (aNewPos.Secondary + aNewSize.Secondary) > 1.0 )
         aNewPos.Secondary = 1.0 - aNewSize.Secondary;
-    
+
     xDiaProps->setPropertyValue( C2U( "RelativePosition" ), uno::makeAny(aNewPos) );
     xDiaProps->setPropertyValue( C2U( "RelativeSize" ), uno::makeAny(aNewSize) );
 
@@ -1690,7 +1690,7 @@ awt::Rectangle DiagramHelper::getDiagramRectangleFromModel( const uno::Reference
     awt::Size aAbsSize(
         static_cast< sal_Int32 >( aRelSize.Primary * aPageSize.Width ),
         static_cast< sal_Int32 >( aRelSize.Secondary * aPageSize.Height ));
-    
+
     awt::Point aAbsPos(
         static_cast< sal_Int32 >( aRelPos.Primary * aPageSize.Width ),
         static_cast< sal_Int32 >( aRelPos.Secondary * aPageSize.Height ));
@@ -1698,7 +1698,7 @@ awt::Rectangle DiagramHelper::getDiagramRectangleFromModel( const uno::Reference
     awt::Point aAbsPosLeftTop = RelativePositionHelper::getUpperLeftCornerOfAnchoredObject( aAbsPos, aAbsSize, aRelPos.Anchor );
 
     aRet = awt::Rectangle(aAbsPosLeftTop.X, aAbsPosLeftTop.Y, aAbsSize.Width, aAbsSize.Height );
-    
+
     return aRet;
 }
 

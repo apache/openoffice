@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -46,7 +46,7 @@ AquaSalObject::AquaSalObject( AquaSalFrame* pFrame ) :
 {
     maSysData.nSize = sizeof( maSysData );
     maSysData.mpNSView = NULL;
-    
+
     NSRect aInitFrame = { NSZeroPoint, { 20, 20 } };
     mpClipView = [[NSClipView alloc] initWithFrame: aInitFrame ];
     if( mpClipView )
@@ -86,7 +86,7 @@ AquaSalObject::~AquaSalObject()
    similar effect to non-rectangular windows is achieved by using a
    non-opaque window and not painting where one wants the background
    to shine through.
-   
+
    With respect to SalObject this leaves us to having an NSClipView
    containing the child view. Even a QTMovieView respects the boundaries of
    that, which gives us a clip "region" consisting of one rectangle.
@@ -174,7 +174,7 @@ void AquaSalObject::setClippedPosSize()
         NSView* pNSView = maSysData.mpNSView;
         [pNSView setFrame: aViewRect];
     }
-    
+
     NSRect aClipViewRect = NSMakeRect( mnX, mnY, mnWidth, mnHeight);
     NSPoint aClipPt = NSZeroPoint;
     if( mbClip )
@@ -187,10 +187,10 @@ void AquaSalObject::setClippedPosSize()
         if( mnClipY == 0 )
             aClipPt.y = mnHeight - mnClipHeight;
     }
-    
+
     mpFrame->VCLToCocoa( aClipViewRect, false );
     [mpClipView setFrame: aClipViewRect];
-    
+
     [mpClipView scrollToPoint: aClipPt];
 }
 

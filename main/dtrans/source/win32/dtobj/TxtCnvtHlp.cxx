@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -71,8 +71,8 @@ int CalcBuffSizeForTextConversion( UINT code_page, LPCWSTR lpWideCharString, int
 // the buffer
 //------------------------------------------------------------------
 
-int MultiByteToWideCharEx( UINT cp_src, 
-						   LPCSTR lpMultiByteString, 
+int MultiByteToWideCharEx( UINT cp_src,
+						   LPCSTR lpMultiByteString,
 						   sal_uInt32 lenStr,
 						   CStgTransferHelper& refDTransHelper,
 						   BOOL bEnsureTrailingZero )
@@ -80,9 +80,9 @@ int MultiByteToWideCharEx( UINT cp_src,
 	OSL_ASSERT( IsValidCodePage( cp_src ) );
 	OSL_ASSERT( NULL != lpMultiByteString );
 
-	// calculate the required buff size 
+	// calculate the required buff size
 	int reqSize = CalcBuffSizeForTextConversion( cp_src, lpMultiByteString, lenStr );
-	
+
 	if ( bEnsureTrailingZero )
 		reqSize += sizeof( sal_Unicode );
 
@@ -93,8 +93,8 @@ int MultiByteToWideCharEx( UINT cp_src,
 	CRawHGlobalPtr ptrHGlob( refDTransHelper );
 
 	// do the conversion and return
-	return MultiByteToWideChar( cp_src, 
-								0, 
+	return MultiByteToWideChar( cp_src,
+								0,
 								lpMultiByteString,
 								lenStr,
 								static_cast< LPWSTR >( ptrHGlob.GetMemPtr( ) ),
@@ -107,8 +107,8 @@ int MultiByteToWideCharEx( UINT cp_src,
 // the buffer
 //------------------------------------------------------------------
 
-int WideCharToMultiByteEx( UINT cp_dest, 
-						   LPCWSTR lpWideCharString, 
+int WideCharToMultiByteEx( UINT cp_dest,
+						   LPCWSTR lpWideCharString,
 						   sal_uInt32 lenStr,
 						   CStgTransferHelper& refDTransHelper,
 						   BOOL bEnsureTrailingZero )
@@ -116,7 +116,7 @@ int WideCharToMultiByteEx( UINT cp_dest,
 	OSL_ASSERT( IsValidCodePage( cp_dest ) );
 	OSL_ASSERT( NULL != lpWideCharString );
 
-	// calculate the required buff size 
+	// calculate the required buff size
 	int reqSize = CalcBuffSizeForTextConversion( cp_dest, lpWideCharString, lenStr );
 
 	if ( bEnsureTrailingZero )

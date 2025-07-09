@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -48,9 +48,9 @@ OStream::~OStream()
 sal_Int32 OStream::read(void* pbuffer, sal_uInt32 n) const
 {
     return (m_rStream.read(pbuffer, n));
-} 
+}
 
-sal_Int32 OStream::read(IPositionableStream::Offset offset, 
+sal_Int32 OStream::read(IPositionableStream::Offset offset,
 				      void* pbuffer, sal_uInt32 n) const
 {
     return (seekTo(offset) ? read(pbuffer, n) : -1);
@@ -63,7 +63,7 @@ sal_Int32 OStream::write(const void* pbuffer, sal_uInt32 n)
         && (m_rStream.write(pbuffer, n) == static_cast< sal_Int32 >(n));
 }
 
-sal_Int32 OStream::write(IPositionableStream::Offset offset, 
+sal_Int32 OStream::write(IPositionableStream::Offset offset,
 					   const void* pbuffer, sal_uInt32 n)
 {
     return (seekTo(offset) && write(pbuffer, n));
@@ -79,7 +79,7 @@ sal_Bool OStream::seekTo(IPositionableStream::Offset pos) const
     return (m_rStream.seekTo(pos));
 }
 
-sal_Bool OStream::seekToEnd() const 
+sal_Bool OStream::seekToEnd() const
 {
     return (m_rStream.seekToEnd());
 }

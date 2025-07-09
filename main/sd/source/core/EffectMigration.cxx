@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
@@ -209,7 +209,7 @@ FadeEffect EffectMigration::GetFadeEffect( const SdPage* pPage )
     const TransitionPresetList::const_iterator aEndIt( rPresetList.end());
     for( ; aIt != aEndIt; ++aIt )
     {
-        if( ( (*aIt)->getTransition() == pPage->getTransitionType() ) && 
+        if( ( (*aIt)->getTransition() == pPage->getTransitionType() ) &&
 			( (*aIt)->getSubtype() == pPage->getTransitionSubtype() ) &&
 			( (*aIt)->getDirection() == pPage->getTransitionDirection() ) &&
 			( (*aIt)->getFadeColor() == pPage->getTransitionFadeColor() ) )
@@ -422,7 +422,7 @@ deprecated_AnimationEffect_conversion_table[] =
 EffectSequence::iterator ImplFindEffect( MainSequencePtr& pMainSequence, const Reference< XShape >& rShape, sal_Int16 nSubItem )
 {
 	EffectSequence::iterator aIter;
-	
+
 	for( aIter = pMainSequence->getBegin(); aIter != pMainSequence->getEnd(); aIter++ )
 	{
 		CustomAnimationEffectPtr pEffect( (*aIter) );
@@ -573,7 +573,7 @@ AnimationEffect EffectMigration::GetAnimationEffect( SvxShape* pShape )
 		const Reference< XShape > xShape( pShape );
 
 		EffectSequence::iterator aIter;
-		
+
 		for( aIter = pMainSequence->getBegin(); aIter != pMainSequence->getEnd(); aIter++ )
 		{
 			CustomAnimationEffectPtr pEffect( (*aIter) );
@@ -666,7 +666,7 @@ void EffectMigration::SetTextAnimationEffect( SvxShape* pShape, AnimationEffect 
 			{
 				pShapeEffect = (*aIterOnlyBackground);
 			}
-			else 
+			else
 			{
 				EffectSequence::iterator aIterAsWhole( ImplFindEffect( pMainSequence, xShape, ShapeAnimationSubType::AS_WHOLE ) );
 				if( aIterAsWhole != aEnd )
@@ -700,7 +700,7 @@ void EffectMigration::SetTextAnimationEffect( SvxShape* pShape, AnimationEffect 
 				const bool bManual = (pPage == 0) || (pPage->GetPresChange() == PRESCHANGE_MANUAL);
 
 				// now create effects for each paragraph
-				pGroup = 
+				pGroup =
 					pMainSequence->
 						createTextGroup( pShapeEffect, 10, bManual ? -1 : 0.0, sal_True, sal_False );
 			}
@@ -788,7 +788,7 @@ bool EffectMigration::ConvertPreset( const OUString& rPresetId, const OUString* 
 		deprecated_AnimationEffect_conversion_table_entry* p = deprecated_AnimationEffect_conversion_table;
 		while( p->mpPresetId )
 		{
-			if( rPresetId.equalsAscii( p->mpPresetId ) && 
+			if( rPresetId.equalsAscii( p->mpPresetId ) &&
 				(( p->mpPresetSubType == 0 ) ||
 				 ( pPresetSubType == 0) ||
 				 ( pPresetSubType->equalsAscii( p->mpPresetSubType )) ) )
@@ -862,7 +862,7 @@ void EffectMigration::SetAnimationSpeed( SvxShape* pShape, AnimationSpeed eSpeed
 
 	EffectSequence::iterator aIter;
 	bool bNeedRebuild = false;
-	
+
 	for( aIter = pMainSequence->getBegin(); aIter != pMainSequence->getEnd(); aIter++ )
 	{
 		CustomAnimationEffectPtr pEffect( (*aIter) );
@@ -942,7 +942,7 @@ void EffectMigration::SetDimColor( SvxShape* pShape, sal_Int32 nColor )
 
 	EffectSequence::iterator aIter;
 	bool bNeedRebuild = false;
-	
+
 	for( aIter = pMainSequence->getBegin(); aIter != pMainSequence->getEnd(); aIter++ )
 	{
 		CustomAnimationEffectPtr pEffect( (*aIter) );
@@ -973,11 +973,11 @@ sal_Int32 EffectMigration::GetDimColor( SvxShape* pShape )
 
 			const Reference< XShape > xShape( pShape );
 			EffectSequence::iterator aIter;
-			
+
 			for( aIter = pMainSequence->getBegin(); aIter != pMainSequence->getEnd(); aIter++ )
 			{
 				CustomAnimationEffectPtr pEffect( (*aIter) );
-				if( (pEffect->getTargetShape() == xShape) && 
+				if( (pEffect->getTargetShape() == xShape) &&
 					pEffect->getDimColor().hasValue() &&
 					pEffect->hasAfterEffect())
 				{
@@ -1013,7 +1013,7 @@ void EffectMigration::SetDimHide( SvxShape* pShape, sal_Bool bDimHide )
 
 	EffectSequence::iterator aIter;
 	bool bNeedRebuild = false;
-	
+
 	for( aIter = pMainSequence->getBegin(); aIter != pMainSequence->getEnd(); aIter++ )
 	{
 		CustomAnimationEffectPtr pEffect( (*aIter) );
@@ -1087,7 +1087,7 @@ void EffectMigration::SetDimPrevious( SvxShape* pShape, sal_Bool bDimPrevious )
 
 	EffectSequence::iterator aIter;
 	bool bNeedRebuild = false;
-	
+
 	for( aIter = pMainSequence->getBegin(); aIter != pMainSequence->getEnd(); aIter++ )
 	{
 		CustomAnimationEffectPtr pEffect( (*aIter) );
@@ -1156,7 +1156,7 @@ void EffectMigration::SetPresentationOrder( SvxShape* pShape, sal_Int32 nNewPos 
 	{
 		Reference< XShape > xThis( pShape );
 		Reference< XShape > xCurrent;
-	
+
 		EffectSequence::iterator aIter( rSequence.begin() );
 		EffectSequence::iterator aEnd( rSequence.end() );
 		for( nPos = 0; aIter != aEnd; aIter++ )
@@ -1203,7 +1203,7 @@ void EffectMigration::SetPresentationOrder( SvxShape* pShape, sal_Int32 nNewPos 
 			aEffects.push_back( (*(*aIter)) );
 			rSequence.erase( (*aIter++) );
 		}
-		
+
 		if( nNewPos > nCurrentPos )
 			nNewPos++;
 
@@ -1282,7 +1282,7 @@ void EffectMigration::UpdateSoundEffect( SvxShape* pShape, SdAnimationInfo* pInf
 
 		EffectSequence::iterator aIter;
 		bool bNeedRebuild = false;
-		
+
 		OUString aSoundFile;
 		if( pInfo->mbSoundOn )
 			aSoundFile = pInfo->maSoundFile;
@@ -1325,7 +1325,7 @@ OUString EffectMigration::GetSoundFile( SvxShape* pShape )
 			const Reference< XShape > xShape( pShape );
 
 			EffectSequence::iterator aIter;
-			
+
 			for(	aIter = pMainSequence->getBegin();
 					(aSoundFile.getLength() == 0) && (aIter != pMainSequence->getEnd());
 					aIter++ )
@@ -1457,7 +1457,7 @@ void EffectMigration::CreateAnimatedGroup(SdrObjGroup& rGroupObj, SdPage& rPage)
             std::vector< SdrObject* > aObjects;
             aObjects.reserve(aIter.Count());
 
-            while(aIter.IsMore()) 
+            while(aIter.IsMore())
             {
                 // do move to page rough with old/current stuff, will be different in aw080 anyways
                 SdrObject* pCandidate = aIter.Next();

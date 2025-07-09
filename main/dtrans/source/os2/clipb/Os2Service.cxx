@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 #include <svpm.h>
@@ -45,7 +45,7 @@ Reference< XInterface > SAL_CALL createInstance( const Reference< XMultiServiceF
 
 } // namespace os2
 
-extern "C" 
+extern "C"
 {
 
 SAL_DLLPUBLIC_EXPORT void SAL_CALL component_getImplementationEnvironment(
@@ -61,8 +61,8 @@ SAL_DLLPUBLIC_EXPORT void* SAL_CALL component_getFactory( const sal_Char* pImplN
 	if ( pSrvManager && ( 0 == rtl_str_compare( pImplName, OS2_CLIPBOARD_IMPL_NAME ) ) )
 	{
 		Sequence< OUString > aSNS( 1 );
-		aSNS.getArray()[0] = OUString( RTL_CONSTASCII_USTRINGPARAM( OS2_CLIPBOARD_SERVICE_NAME ) );		
-		
+		aSNS.getArray()[0] = OUString( RTL_CONSTASCII_USTRINGPARAM( OS2_CLIPBOARD_SERVICE_NAME ) );
+
 		//OUString( RTL_CONSTASCII_USTRINGPARAM( FPS_IMPL_NAME ) )
 		Reference< XSingleServiceFactory > xFactory ( createOneInstanceFactory(
 			reinterpret_cast< XMultiServiceFactory* > ( pSrvManager ),
@@ -73,7 +73,7 @@ SAL_DLLPUBLIC_EXPORT void* SAL_CALL component_getFactory( const sal_Char* pImplN
 		{
 			xFactory->acquire();
 			pRet = xFactory.get();
-		}			
+		}
 	}
 
 	return pRet;

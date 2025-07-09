@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -82,14 +82,14 @@ void DlgEdFunc::ForceScroll( const Point& rPos )
 
 	OReportWindow* pReportWindow = m_pParent->getSectionWindow()->getViewsWindow()->getView();
 	OScrollWindowHelper* pScrollWindow = pReportWindow->getScrollWindow();
-	
+
 	Size aOut = pReportWindow->GetOutputSizePixel();
     Fraction aStartWidth(long(REPORT_STARTMARKER_WIDTH));
     aStartWidth *= m_pParent->GetMapMode().GetScaleX();
 
 	aOut.Width() -= (long)aStartWidth;
     aOut.Height() = m_pParent->GetOutputSizePixel().Height();
-	
+
     Point aPos = pScrollWindow->getThumbPos();
     aPos.X() *= 0.5;
     aPos.Y() *= 0.5;
@@ -319,7 +319,7 @@ sal_Bool DlgEdFunc::handleKeyEvent(const KeyEvent& _rEvent)
 					else
             	        m_pParent->getSectionWindow()->getViewsWindow()->unmarkAllObjects(NULL);
 						//m_rView.UnmarkAll();
-				
+
 				    deactivateOle(true);
 					bReturn = sal_False;
 				}
@@ -464,7 +464,7 @@ void DlgEdFunc::deactivateOle(bool _bSelect)
                 xObj->changeState( embed::EmbedStates::RUNNING );
                 m_bUiActive = false;
                 if ( m_bShowPropertyBrowser )
-                {                    
+                {
                     rController.executeChecked(SID_SHOW_PROPERTYBROWSER,uno::Sequence< beans::PropertyValue >());
                 }
 
@@ -532,7 +532,7 @@ bool DlgEdFunc::isOverlapping(const MouseEvent& rMEvt)
     {
 		unColorizeOverlappedObj();
     }
-    
+
     return bOverlapping;
 }
 // -----------------------------------------------------------------------------
@@ -613,11 +613,11 @@ bool DlgEdFunc::isRectangleHit(const MouseEvent& rMEvt)
 		if (rDragStat.GetDragMethod() != NULL)
 		{
             SdrObjListIter aIter(*m_pParent->getPage(),IM_DEEPNOGROUPS);
-            SdrObject* pObjIter = NULL;        
+            SdrObject* pObjIter = NULL;
             // loop through all marked objects and check if there new rect overlapps an old one.
             while( (pObjIter = aIter.Next()) != NULL && !bIsSetPoint)
             {
-                if ( m_rView.IsObjMarked(pObjIter) 
+                if ( m_rView.IsObjMarked(pObjIter)
                      && (dynamic_cast<OUnoObject*>(pObjIter) != NULL || dynamic_cast<OOle2Obj*>(pObjIter) != NULL) )
                 {
                     Rectangle aNewRect = pObjIter->GetLastBoundRect();
@@ -632,8 +632,8 @@ bool DlgEdFunc::isRectangleHit(const MouseEvent& rMEvt)
                         aNewRect.Move(nDx,nDy);
                     else
                         ::ResizeRect(aNewRect,rDragStat.GetRef1(),rDragStat.GetXFact(),rDragStat.GetYFact());
-                    
-                    
+
+
 					SdrObject* pObjOverlapped = isOver(aNewRect,*m_pParent->getPage(),m_rView,false,pObjIter, ISOVER_IGNORE_CUSTOMSHAPES);
 					bIsSetPoint = pObjOverlapped ? true : false;
 					if (pObjOverlapped && !m_bSelectionMode)
@@ -732,7 +732,7 @@ sal_Bool DlgEdFuncInsert::MouseButtonDown( const MouseEvent& rMEvt )
 		m_pParent->getSectionWindow()->getViewsWindow()->BegMarkObj( m_aMDPos,&m_rView );
     }
 
-	return sal_True;	
+	return sal_True;
 }
 
 //----------------------------------------------------------------------------
@@ -755,7 +755,7 @@ sal_Bool DlgEdFuncInsert::MouseButtonUp( const MouseEvent& rMEvt )
             m_rView.SetCreateMode( sal_True );
             return sal_True;
         }
-        
+
 		m_rView.EndCreateObj(SDRCREATE_FORCEEND);
 
 		if ( !m_rView.AreObjectsMarked() )
@@ -782,7 +782,7 @@ sal_Bool DlgEdFuncInsert::MouseButtonUp( const MouseEvent& rMEvt )
 	}
 	else
         checkMovementAllowed(rMEvt);
-    
+
 	if ( !m_rView.AreObjectsMarked() &&
 		 Abs(m_aMDPos.X() - aPos.X()) < nHitLog &&
 		 Abs(m_aMDPos.Y() - aPos.Y()) < nHitLog &&
@@ -857,7 +857,7 @@ sal_Bool DlgEdFuncSelect::MouseButtonDown( const MouseEvent& rMEvt )
 	m_bSelectionMode = false;
     if ( DlgEdFunc::MouseButtonDown(rMEvt) )
         return sal_True;
-	
+
     SdrViewEvent aVEvt;
 	const SdrHitKind eHit = m_rView.PickAnything(rMEvt, SDRMOUSEBUTTONDOWN, aVEvt);
     if( eHit == SDRHIT_UNMARKEDOBJECT )
@@ -914,7 +914,7 @@ sal_Bool DlgEdFuncSelect::MouseButtonUp( const MouseEvent& rMEvt )
     checkTwoCklicks(rMEvt);
 
 	m_pParent->SetPointer( m_rView.GetPreferedPointer( aPnt, m_pParent) );
-    
+
     if ( !m_bUiActive )
     	m_pParent->getSectionWindow()->getViewsWindow()->getView()->getReportView()->UpdatePropertyBrowserDelayed(m_rView);
 	m_bSelectionMode = false;
@@ -963,8 +963,8 @@ sal_Bool DlgEdFuncSelect::MouseMove( const MouseEvent& rMEvt )
             bool bControlKey = rMEvt.IsMod1();
 			m_pParent->getSectionWindow()->getViewsWindow()->MovAction(aPnt, &m_rView, false, bControlKey);
 		}
-	}    
-  
+	}
+
     if ( !bIsSetPoint )
     {
         m_pParent->SetPointer( m_rView.GetPreferedPointer( aPnt, m_pParent) );

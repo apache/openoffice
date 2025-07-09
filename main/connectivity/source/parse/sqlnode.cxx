@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -440,7 +440,7 @@ void OSQLParseNode::impl_parseNodeToString_throw(::rtl::OUStringBuffer& rString,
 
 			m_aChildren[0]->impl_parseNodeToString_throw( rString, aNewParam );
 			aNewParam.bQuote = rParam.bQuote;
-			//aNewParam.bPredicate = sal_False; // disable [ ] around names // look at i73215 
+			//aNewParam.bPredicate = sal_False; // disable [ ] around names // look at i73215
 			::rtl::OUStringBuffer aStringPara;
 			for (sal_uInt32 i=1; i<nCount; i++)
 			{
@@ -660,7 +660,7 @@ void OSQLParseNode::impl_parseTableRangeNodeToString_throw(::rtl::OUStringBuffer
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "parse", "Ocke.Janssen@sun.com", "OSQLParseNode::impl_parseTableRangeNodeToString_throw" );
     OSL_PRECOND(  ( count() == 2 ) || ( count() == 3 ) || ( count() == 5 ) ,"Illegal count");
-	
+
 	// rString += ::rtl::OUString::createFromAscii(" ");
     ::std::for_each(m_aChildren.begin(),m_aChildren.end(),
         boost::bind( &OSQLParseNode::impl_parseNodeToString_throw, _1, boost::ref( rString ), boost::cref( rParam ) ));
@@ -2505,7 +2505,7 @@ void OSQLParseNode::parseLeaf(::rtl::OUStringBuffer& rString, const SQLParseNode
             rString.append(m_aNodeValue);
             rString.appendAscii("#");
             break;
-        
+
         case SQL_NODE_INTNUM:
         case SQL_NODE_APPROXNUM:
             {
@@ -2765,7 +2765,7 @@ OSQLParseNode::Rule OSQLParseNode::getKnownRuleID() const
     {
         const OSQLParseNode* pNode = _pTableRef->getChild(nCount - (nCount == 2 ? 1 : 2));
         OSL_ENSURE(pNode && (pNode->getKnownRuleID() == OSQLParseNode::table_primary_as_range_column
-                          || pNode->getKnownRuleID() == OSQLParseNode::range_variable) 
+                          || pNode->getKnownRuleID() == OSQLParseNode::range_variable)
                          ,"SQL grammar changed!");
         if ( !pNode->isLeaf() )
             sTableRange = pNode->getChild(1)->getTokenValue();
@@ -2782,14 +2782,14 @@ OSQLParseNodesContainer::~OSQLParseNodesContainer()
 {
 }
 // -----------------------------------------------------------------------------
-void OSQLParseNodesContainer::push_back(OSQLParseNode* _pNode) 
-{ 
+void OSQLParseNodesContainer::push_back(OSQLParseNode* _pNode)
+{
     ::osl::MutexGuard aGuard(m_aMutex);
-    m_aNodes.push_back(_pNode); 
+    m_aNodes.push_back(_pNode);
 }
 // -----------------------------------------------------------------------------
-void OSQLParseNodesContainer::erase(OSQLParseNode* _pNode) 
-{ 
+void OSQLParseNodesContainer::erase(OSQLParseNode* _pNode)
+{
     ::osl::MutexGuard aGuard(m_aMutex);
     if ( !m_aNodes.empty() )
     {
@@ -2799,15 +2799,15 @@ void OSQLParseNodesContainer::erase(OSQLParseNode* _pNode)
     }
 }
 // -----------------------------------------------------------------------------
-bool OSQLParseNodesContainer::empty() const 
-{ 
-    return m_aNodes.empty(); 
+bool OSQLParseNodesContainer::empty() const
+{
+    return m_aNodes.empty();
 }
 // -----------------------------------------------------------------------------
-void OSQLParseNodesContainer::clear() 
-{ 
-    ::osl::MutexGuard aGuard(m_aMutex); 
-    m_aNodes.clear(); 
+void OSQLParseNodesContainer::clear()
+{
+    ::osl::MutexGuard aGuard(m_aMutex);
+    m_aNodes.clear();
 }
 // -----------------------------------------------------------------------------
 void OSQLParseNodesContainer::clearAndDelete()

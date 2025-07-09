@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -88,7 +88,7 @@ SAL_IMPLEMENT_MAIN_WITH_ARGS(argc, argv)
        by the factory.
     */
     Reference< XInterface > xInterface =
-        xMultiComponentFactoryClient->createInstanceWithContext( 
+        xMultiComponentFactoryClient->createInstanceWithContext(
             OUString::createFromAscii( "com.sun.star.bridge.UnoUrlResolver" ),
             xComponentContext );
 
@@ -96,8 +96,8 @@ SAL_IMPLEMENT_MAIN_WITH_ARGS(argc, argv)
 
     // Resolves the component context from the office, on the uno URL given by argv[1].
     try
-    {    
-        xInterface = Reference< XInterface >( 
+    {
+        xInterface = Reference< XInterface >(
             resolver->resolve( sConnectionString ), UNO_QUERY );
     }
     catch ( Exception& e )
@@ -105,7 +105,7 @@ SAL_IMPLEMENT_MAIN_WITH_ARGS(argc, argv)
 		printf("Error: cannot establish a connection using '%s':\n       %s\n",
                OUStringToOString(sConnectionString, RTL_TEXTENCODING_ASCII_US).getStr(),
                OUStringToOString(e.Message, RTL_TEXTENCODING_ASCII_US).getStr());
-		exit(1);        
+		exit(1);
     }
 
     // gets the server component context as property of the office component factory
@@ -120,10 +120,10 @@ SAL_IMPLEMENT_MAIN_WITH_ARGS(argc, argv)
        by the factory. Important: using the office component context.
     */
     Reference < XComponentLoader > xComponentLoader(
-        xMultiComponentFactoryServer->createInstanceWithContext( 
+        xMultiComponentFactoryServer->createInstanceWithContext(
             OUString( RTL_CONSTASCII_USTRINGPARAM("com.sun.star.frame.Desktop" ) ),
             xComponentContext ), UNO_QUERY );
-	
+
     /* Loads a component specified by an URL into the specified new or existing
        frame.
     */
@@ -133,7 +133,7 @@ SAL_IMPLEMENT_MAIN_WITH_ARGS(argc, argv)
     osl_getProcessWorkingDir(&sWorkingDir.pData);
     osl::FileBase::getFileURLFromSystemPath( sArgDocUrl, sDocPathUrl);
     osl::FileBase::getAbsoluteFileURL( sWorkingDir, sDocPathUrl, sAbsoluteDocUrl);
-    
+
     Reference< XComponent > xComponent = xComponentLoader->loadComponentFromURL(
         sAbsoluteDocUrl, OUString( RTL_CONSTASCII_USTRINGPARAM("_blank") ), 0,
         Sequence < ::com::sun::star::beans::PropertyValue >() );

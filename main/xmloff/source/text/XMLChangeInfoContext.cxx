@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -74,13 +74,13 @@ SvXMLImportContext* XMLChangeInfoContext::CreateChildContext(
 	if( XML_NAMESPACE_DC == nPrefix )
 	{
 		if( IsXMLToken( rLocalName, XML_CREATOR ) )
-			pContext = new XMLStringBufferImportContext(GetImport(), nPrefix, 
+			pContext = new XMLStringBufferImportContext(GetImport(), nPrefix,
 											rLocalName, sAuthorBuffer);
 		else if( IsXMLToken( rLocalName, XML_DATE ) )
-			pContext = new XMLStringBufferImportContext(GetImport(), nPrefix, 
+			pContext = new XMLStringBufferImportContext(GetImport(), nPrefix,
 											rLocalName, sDateTimeBuffer);
 	}
-	else if ( ( XML_NAMESPACE_TEXT == nPrefix ) && 
+	else if ( ( XML_NAMESPACE_TEXT == nPrefix ) &&
          IsXMLToken( rLocalName, XML_P )       )
 	{
 		pContext = new XMLStringBufferImportContext(GetImport(), nPrefix,
@@ -99,7 +99,7 @@ SvXMLImportContext* XMLChangeInfoContext::CreateChildContext(
 void XMLChangeInfoContext::EndElement()
 {
 	// set values at changed region context
-	rChangedRegion.SetChangeInfo(rType, sAuthorBuffer.makeStringAndClear(), 
-								 sCommentBuffer.makeStringAndClear(), 
+	rChangedRegion.SetChangeInfo(rType, sAuthorBuffer.makeStringAndClear(),
+								 sCommentBuffer.makeStringAndClear(),
 								 sDateTimeBuffer.makeStringAndClear());
 }

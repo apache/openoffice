@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -136,30 +136,30 @@ css::uno::Reference< css::frame::XFrame > TaskCreator::createTask( const ::rtl::
     if ( ! xCreator.is())
         xCreator = css::uno::Reference< css::lang::XSingleServiceFactory >(
                     xSMGR->createInstance(IMPLEMENTATIONNAME_FWK_TASKCREATOR), css::uno::UNO_QUERY_THROW);
-    
+
     css::uno::Sequence< css::uno::Any > lArgs(5);
     css::beans::NamedValue              aArg    ;
-    
+
     aArg.Name    = TaskCreatorService::ARGUMENT_PARENTFRAME;
     aArg.Value <<= css::uno::Reference< css::frame::XFrame >(xSMGR->createInstance(SERVICENAME_DESKTOP), css::uno::UNO_QUERY_THROW);
     lArgs[0]   <<= aArg;
-    
+
     aArg.Name    = TaskCreatorService::ARGUMENT_CREATETOPWINDOW;
     aArg.Value <<= sal_True;
     lArgs[1]   <<= aArg;
-    
+
     aArg.Name    = TaskCreatorService::ARGUMENT_MAKEVISIBLE;
     aArg.Value <<= bVisible;
     lArgs[2]   <<= aArg;
-    
+
     aArg.Name    = TaskCreatorService::ARGUMENT_SUPPORTPERSISTENTWINDOWSTATE;
     aArg.Value <<= sal_True;
     lArgs[3]   <<= aArg;
-    
+
     aArg.Name    = TaskCreatorService::ARGUMENT_FRAMENAME;
     aArg.Value <<= sName;
     lArgs[4]   <<= aArg;
-    
+
     css::uno::Reference< css::frame::XFrame > xTask(xCreator->createInstanceWithArguments(lArgs), css::uno::UNO_QUERY_THROW);
     return xTask;
 }

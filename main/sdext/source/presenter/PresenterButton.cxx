@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -207,7 +207,7 @@ void PresenterButton::SetCenter (const css::geometry::RealPoint2D& rLocation)
             maButtonSize.Width,
             maButtonSize.Height,
             awt::PosSize::POSSIZE);
-        
+
         Invalidate();
     }
     else
@@ -262,7 +262,7 @@ css::geometry::IntegerSize2D PresenterButton::GetSize (void)
 
 
 //----- XWindowListener -------------------------------------------------------
-    
+
 void SAL_CALL PresenterButton::windowResized (const css::awt::WindowEvent& rEvent)
     throw (css::uno::RuntimeException)
 {
@@ -273,7 +273,7 @@ void SAL_CALL PresenterButton::windowResized (const css::awt::WindowEvent& rEven
 
 
 
-   
+
 void SAL_CALL PresenterButton::windowMoved (const css::awt::WindowEvent& rEvent)
     throw (css::uno::RuntimeException)
 {
@@ -319,7 +319,7 @@ void SAL_CALL PresenterButton::windowPaint (const css::awt::PaintEvent& rEvent)
             xBitmap = mxNormalBitmap;
         if ( ! xBitmap.is())
             return;
-        
+
         rendering::ViewState aViewState(
             geometry::AffineMatrix2D(1,0,0, 0,1,0),
             NULL);
@@ -339,7 +339,7 @@ void SAL_CALL PresenterButton::windowPaint (const css::awt::PaintEvent& rEvent)
 
 
 
-    
+
 //----- XMouseListener --------------------------------------------------------
 
 void SAL_CALL PresenterButton::mousePressed (const css::awt::MouseEvent& rEvent)
@@ -399,7 +399,7 @@ void SAL_CALL PresenterButton::mouseExited (const css::awt::MouseEvent& rEvent)
 
 
 //----- XMouseMotionListener --------------------------------------------------
-    
+
 void SAL_CALL PresenterButton::mouseMoved (const css::awt::MouseEvent& rEvent)
     throw (css::uno::RuntimeException)
 {
@@ -486,7 +486,7 @@ void PresenterButton::RenderButton (
     PresenterCanvasHelper::SetDeviceColor(aRenderState, rpFont->mnColor);
     aRenderState.AffineTransform.m02 = (rSize.Width - aTextBBox.X2 + aTextBBox.X1)/2;
     aRenderState.AffineTransform.m12 = (rSize.Height - aTextBBox.Y2 + aTextBBox.Y1)/2 - aTextBBox.Y1;
-    
+
     rxCanvas->drawText(
         aContext,
         rpFont->mxFont,

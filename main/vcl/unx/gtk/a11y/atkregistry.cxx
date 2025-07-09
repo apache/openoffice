@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -30,7 +30,7 @@ static GHashTable *uno_to_gobject = NULL;
 
 /*****************************************************************************/
 
-AtkObject * 
+AtkObject *
 ooo_wrapper_registry_get(const Reference< XAccessible >& rxAccessible)
 {
     if( uno_to_gobject )
@@ -47,7 +47,7 @@ ooo_wrapper_registry_get(const Reference< XAccessible >& rxAccessible)
 
 /*****************************************************************************/
 
-void 
+void
 ooo_wrapper_registry_add(const Reference< XAccessible >& rxAccessible, AtkObject *obj)
 {
    if( !uno_to_gobject )

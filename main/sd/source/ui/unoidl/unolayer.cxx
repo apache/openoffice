@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -123,23 +123,23 @@ String SdLayer::convertToInternalName( const OUString& rName )
 OUString SdLayer::convertToExternalName( const String& rName )
 {
 	const String aCompare( rName );
-	if( rName == String( SdResId( STR_LAYER_BCKGRND ) ) ) 
+	if( rName == String( SdResId( STR_LAYER_BCKGRND ) ) )
 	{
 		return OUString( RTL_CONSTASCII_USTRINGPARAM(sUNO_LayerName_background) );
 	}
-	else if( rName == String( SdResId( STR_LAYER_BCKGRNDOBJ ) ) ) 
+	else if( rName == String( SdResId( STR_LAYER_BCKGRNDOBJ ) ) )
 	{
 		return OUString( RTL_CONSTASCII_USTRINGPARAM(sUNO_LayerName_background_objects) );
 	}
-	else if( rName == String( SdResId( STR_LAYER_LAYOUT ) ) ) 
+	else if( rName == String( SdResId( STR_LAYER_LAYOUT ) ) )
 	{
 		return OUString( RTL_CONSTASCII_USTRINGPARAM(sUNO_LayerName_layout) );
 	}
-	else if( rName == String( SdResId( STR_LAYER_CONTROLS ) ) ) 
+	else if( rName == String( SdResId( STR_LAYER_CONTROLS ) ) )
 	{
 		return OUString( RTL_CONSTASCII_USTRINGPARAM(sUNO_LayerName_controls) );
 	}
-	else if( rName == String( SdResId( STR_LAYER_MEASURELINES ) ) ) 
+	else if( rName == String( SdResId( STR_LAYER_MEASURELINES ) ) )
 	{
 		return OUString( RTL_CONSTASCII_USTRINGPARAM(sUNO_LayerName_measurelines) );
 	}
@@ -236,7 +236,7 @@ void SAL_CALL SdLayer::setPropertyValue( const OUString& aPropertyName, const un
 		OUString aName;
 		if(!(aValue >>= aName))
 			throw lang::IllegalArgumentException();
-	
+
 		pLayer->SetName(SdLayer::convertToInternalName( aName ) );
 		pLayerManager->UpdateLayerView();
 		break;
@@ -247,7 +247,7 @@ void SAL_CALL SdLayer::setPropertyValue( const OUString& aPropertyName, const un
 		OUString sTitle;
 		if(!(aValue >>= sTitle))
 			throw lang::IllegalArgumentException();
-	
+
 		pLayer->SetTitle(sTitle);
 		break;
 	}
@@ -257,7 +257,7 @@ void SAL_CALL SdLayer::setPropertyValue( const OUString& aPropertyName, const un
 		OUString sDescription;
 		if(!(aValue >>= sDescription))
 			throw lang::IllegalArgumentException();
-	
+
 		pLayer->SetDescription(sDescription);
 		break;
 	}
@@ -268,7 +268,7 @@ void SAL_CALL SdLayer::setPropertyValue( const OUString& aPropertyName, const un
 
 #ifndef SVX_LIGHT
 	if(	pLayerManager->GetDocShell() )
-		pLayerManager->GetDocShell()->SetModified();		
+		pLayerManager->GetDocShell()->SetModified();
 #endif
 }
 
@@ -426,7 +426,7 @@ void SdLayer::set( LayerAttribute what, sal_Bool flag ) throw()
 
 //=====  ::com::sun::star::container::XChild  =================================
 
-uno::Reference<uno::XInterface> SAL_CALL SdLayer::getParent (void) 
+uno::Reference<uno::XInterface> SAL_CALL SdLayer::getParent (void)
     throw (::com::sun::star::uno::RuntimeException)
 {
 	OGuard aGuard( Application::GetSolarMutex() );
@@ -438,8 +438,8 @@ uno::Reference<uno::XInterface> SAL_CALL SdLayer::getParent (void)
 }
 
 
-void SAL_CALL SdLayer::setParent (const uno::Reference<uno::XInterface >& ) 
-    throw (::com::sun::star::lang::NoSupportException, 
+void SAL_CALL SdLayer::setParent (const uno::Reference<uno::XInterface >& )
+    throw (::com::sun::star::lang::NoSupportException,
         ::com::sun::star::uno::RuntimeException)
 {
     throw lang::NoSupportException ();
@@ -716,7 +716,7 @@ uno::Sequence< OUString > SAL_CALL SdLayerManager::getElementNames()
 sal_Bool SAL_CALL SdLayerManager::hasByName( const OUString& aName ) throw(uno::RuntimeException)
 {
 	OGuard aGuard( Application::GetSolarMutex() );
-	
+
 	if( mpModel == 0 )
 		throw lang::DisposedException();
 

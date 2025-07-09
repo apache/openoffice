@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -84,7 +84,7 @@ void __EXPORT ScTbxInsertCtrl::StateChanged( sal_uInt16 /* nSID */, SfxItemState
 			sal_uInt16 nImageId = nLastSlotId ? nLastSlotId : GetSlotId();
             rtl::OUString aSlotURL( RTL_CONSTASCII_USTRINGPARAM( "slot:" ));
             aSlotURL += rtl::OUString::valueOf( sal_Int32( nImageId ));
-            Image aImage = GetImage( m_xFrame, 
+            Image aImage = GetImage( m_xFrame,
                                      aSlotURL,
                                      hasBigImages(),
                                      GetToolBox().GetSettings().GetStyleSettings().GetHighContrastMode() );
@@ -146,7 +146,7 @@ void __EXPORT ScTbxInsertCtrl::Select( sal_Bool /* bMod1 */ )
         if ( pViewFrame )
             pDispatch = pViewFrame->GetDispatcher();
     }
-    
+
     if ( pDispatch )
         pDispatch->Execute(nLastSlotId);
 }

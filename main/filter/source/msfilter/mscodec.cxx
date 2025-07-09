@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -274,7 +274,7 @@ MSCodec_Std97::~MSCodec_Std97 ()
 }
 
 #if 0
-#if DEBUG_MSO_ENCRYPTION_STD97    
+#if DEBUG_MSO_ENCRYPTION_STD97
 static void lcl_PrintKeyData(const sal_uInt8* pKeyData, const char* msg)
 {
     printf("pKeyData: (%s)\n", msg);
@@ -289,10 +289,10 @@ static void lcl_PrintKeyData(const sal_uInt8* pKeyData, const char* msg)
 static void lcl_PrintKeyData(const sal_uInt8* /*pKeyData*/, const char* /*msg*/)
 {
 }
-#endif    
+#endif
 #endif
 
-#if DEBUG_MSO_ENCRYPTION_STD97    
+#if DEBUG_MSO_ENCRYPTION_STD97
 static void lcl_PrintDigest(const sal_uInt8* pDigest, const char* msg)
 {
     printf("digest: (%s)\n", msg);
@@ -304,11 +304,11 @@ static void lcl_PrintDigest(const sal_uInt8* pDigest, const char* msg)
 static void lcl_PrintDigest(const sal_uInt8* /*pDigest*/, const char* /*msg*/)
 {
 }
-#endif    
+#endif
 
 sal_Bool MSCodec_Std97::InitCodec( const uno::Sequence< beans::NamedValue >& aData )
 {
-#if DEBUG_MSO_ENCRYPTION_STD97    
+#if DEBUG_MSO_ENCRYPTION_STD97
     fprintf(stdout, "MSCodec_Std97::InitCodec: --begin\n");fflush(stdout);
 #endif
     sal_Bool bResult = sal_False;
@@ -349,7 +349,7 @@ void MSCodec_Std97::InitKey (
     const sal_uInt16 pPassData[16],
     const sal_uInt8  pDocId[16])
 {
-#if DEBUG_MSO_ENCRYPTION_STD97    
+#if DEBUG_MSO_ENCRYPTION_STD97
     fprintf(stdout, "MSCodec_Std97::InitKey: --begin\n");fflush(stdout);
 #endif
     uno::Sequence< sal_Int8 > aKey = ::comphelper::DocPasswordHelper::GenerateStd97Key( pPassData, uno::Sequence< sal_Int8 >( (sal_Int8*)pDocId, 16 ) );
@@ -373,11 +373,11 @@ bool MSCodec_Std97::VerifyKey (
 {
     // both the salt data and salt digest (hash) come from the document being imported.
 
-#if DEBUG_MSO_ENCRYPTION_STD97    
+#if DEBUG_MSO_ENCRYPTION_STD97
     fprintf(stdout, "MSCodec_Std97::VerifyKey: \n");
     lcl_PrintDigest(pSaltData, "salt data");
     lcl_PrintDigest(pSaltDigest, "salt hash");
-#endif    
+#endif
     bool result = false;
 
     if (InitCipher(0))
@@ -442,7 +442,7 @@ bool MSCodec_Std97::CreateSaltDigest( const sal_uInt8 nSaltData[16], sal_uInt8 n
 {
 #if DEBUG_MSO_ENCRYPTION_STD97
     lcl_PrintDigest(nSaltData, "salt data");
-#endif    
+#endif
     bool result = false;
 
     if (InitCipher(0))
@@ -530,12 +530,12 @@ void MSCodec_Std97::GetEncryptKey (
 	const sal_uInt8 pSalt[16],
     sal_uInt8 pSaltData[16],
     sal_uInt8 pSaltDigest[16])
-{    
+{
     if (InitCipher(0))
     {
         sal_uInt8 pDigest[RTL_DIGEST_LENGTH_MD5];
         sal_uInt8 pBuffer[64];
-      
+
         rtl_cipher_encode (
             m_hCipher, pSalt, 16, pSaltData, sizeof(pBuffer));
 
@@ -544,15 +544,15 @@ void MSCodec_Std97::GetEncryptKey (
         pBuffer[16] = 0x80;
         (void)memset (pBuffer + 17, 0, sizeof(pBuffer) - 17);
         pBuffer[56] = 0x80;
-        
+
         rtl_digest_updateMD5 (
             m_hDigest, pBuffer, sizeof(pBuffer));
         rtl_digest_rawMD5 (
             m_hDigest, pDigest, sizeof(pDigest));
-       
+
         rtl_cipher_encode (
             m_hCipher, pDigest, 16, pSaltDigest, 16);
-        
+
         (void)memset (pBuffer, 0, sizeof(pBuffer));
         (void)memset (pDigest, 0, sizeof(pDigest));
     }

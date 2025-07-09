@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -92,21 +92,21 @@ class FilePolicy
 {
     Reference< XComponentContext > m_xComponentContext;
     AccessControl m_ac;
-    
+
     Sequence< Any > m_defaultPermissions;
     typedef std::hash_map< OUString, Sequence< Any >, OUStringHash > t_permissions;
     t_permissions m_userPermissions;
     bool m_init;
-    
+
 protected:
     virtual void SAL_CALL disposing();
-    
+
 public:
     FilePolicy( Reference< XComponentContext > const & xComponentContext )
         SAL_THROW( () );
     virtual ~FilePolicy()
         SAL_THROW( () );
-    
+
     // XPolicy impl
     virtual Sequence< Any > SAL_CALL getPermissions(
         OUString const & userId )
@@ -115,7 +115,7 @@ public:
         throw (RuntimeException);
     virtual void SAL_CALL refresh()
         throw (RuntimeException);
-    
+
     // XServiceInfo impl
     virtual OUString SAL_CALL getImplementationName()
         throw (RuntimeException);
@@ -158,7 +158,7 @@ Sequence< Any > FilePolicy::getPermissions(
         refresh();
         m_init = true;
     }
-    
+
     MutexGuard guard( m_mutex );
     t_permissions::iterator iFind( m_userPermissions.find( userId ) );
     if (m_userPermissions.end() == iFind)
@@ -179,7 +179,7 @@ Sequence< Any > FilePolicy::getDefaultPermissions()
         refresh();
         m_init = true;
     }
-    
+
     MutexGuard guard( m_mutex );
     return m_defaultPermissions;
 }
@@ -189,34 +189,34 @@ class PolicyReader
 {
     OUString m_fileName;
     oslFileHandle m_file;
-    
+
     sal_Int32 m_linepos;
     ByteSequence m_line;
     sal_Int32 m_pos;
     sal_Unicode m_back;
-    
+
     sal_Unicode get()
         SAL_THROW( (RuntimeException) );
     inline void back( sal_Unicode c ) SAL_THROW( () )
         { m_back = c; }
-    
+
     inline bool isWhiteSpace( sal_Unicode c ) SAL_THROW( () )
         { return (' ' == c || '\t' == c || '\n' == c || '\r' == c); }
     void skipWhiteSpace()
         SAL_THROW( (RuntimeException) );
-    
+
     inline bool isCharToken( sal_Unicode c ) SAL_THROW( () )
         { return (';' == c || ',' == c || '{' == c || '}' == c); }
-    
+
 public:
     PolicyReader( OUString const & file, AccessControl & ac )
         SAL_THROW( (RuntimeException) );
     ~PolicyReader()
         SAL_THROW( () );
-    
+
     void error( OUString const & msg )
         SAL_THROW( (RuntimeException) );
-    
+
     OUString getToken()
         SAL_THROW( (RuntimeException) );
     OUString assureToken()
@@ -304,7 +304,7 @@ void PolicyReader::skipWhiteSpace()
         c = get();
     }
     while (isWhiteSpace( c )); // seeking next non-whitespace char
-    
+
     if ('/' == c) // C/C++ like comment
     {
         c = get();
@@ -350,7 +350,7 @@ void PolicyReader::skipWhiteSpace()
         while ('\n' != c && '\0' != c); // seek eol/eof
         skipWhiteSpace(); // cont skip on next line
     }
-    
+
     else // is token char
     {
         back( c );
@@ -379,7 +379,7 @@ sal_Unicode PolicyReader::get()
             error( OUSTR("checking eof failed!") );
         if (eof)
             return '\0';
-        
+
         rc = ::osl_readLine( m_file, reinterpret_cast< sal_Sequence ** >( &m_line ) );
         if (osl_File_E_None != rc)
             error( OUSTR("read line failed!") );
@@ -460,13 +460,13 @@ void FilePolicy::refresh()
             OUSTR("name of policy file unknown!"),
             (OWeakObject *)this );
     }
-    
+
     PolicyReader reader( fileName, m_ac );
-    
+
     // fill these two
     Sequence< Any > defaultPermissions;
     t_permissions userPermissions;
-    
+
     OUString token( reader.getToken() );
     while (token.getLength())
     {
@@ -487,7 +487,7 @@ void FilePolicy::refresh()
         {
             if (! token.equals( s_permission ))
                 reader.error( OUSTR("expected >permission< or closing brace >}<!") );
-            
+
             token = reader.assureToken(); // permission type
             Any perm;
             if (token.equals( s_filePermission )) // FilePermission
@@ -496,7 +496,7 @@ void FilePolicy::refresh()
                 reader.assureToken( ',' );
                 OUString actions( reader.assureQuotedToken() );
                 perm <<= io::FilePermission( url, actions );
-            }            
+            }
             else if (token.equals( s_socketPermission )) // SocketPermission
             {
                 OUString host( reader.assureQuotedToken() );
@@ -517,9 +517,9 @@ void FilePolicy::refresh()
             {
                 reader.error( OUSTR("expected permission type!") );
             }
-            
+
             reader.assureToken( ';' );
-            
+
             // insert
             if (userId.getLength())
             {
@@ -535,14 +535,14 @@ void FilePolicy::refresh()
                 defaultPermissions.realloc( len +1 );
                 defaultPermissions[ len ] = perm;
             }
-            
+
             token = reader.assureToken(); // next permissions token
         }
-        
+
         reader.assureToken( ';' ); // semi
         token = reader.getToken(); // next grant token
     }
-    
+
     // assign new ones
     MutexGuard guard( m_mutex );
     m_defaultPermissions = defaultPermissions;

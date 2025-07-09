@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -129,7 +129,7 @@ SwLoadOptPage::SwLoadOptPage( Window* pParent, const SfxItemSet& rSet ) :
         aTabFT.Hide();
 		aTabMF.Hide();
 	}
-	
+
 	SvtCJKOptions aCJKOptions;
 	if(!aCJKOptions.IsAsianTypographyEnabled())
 		aUseSquaredPageMode.Hide();
@@ -209,7 +209,7 @@ sal_Bool __EXPORT SwLoadOptPage::FillItemSet( SfxItemSet& rSet )
 					(sal_uInt16)aTabMF.Denormalize(aTabMF.GetValue(FUNIT_TWIP))));
         bRet = sal_True;
     }
-    
+
     sal_Bool bIsSquaredPageModeFlag = aUseSquaredPageMode.IsChecked();
     if ( bIsSquaredPageModeFlag != aUseSquaredPageMode.GetSavedValue() )
     {
@@ -288,7 +288,7 @@ void __EXPORT SwLoadOptPage::Reset( const SfxItemSet& rSet)
 	{
 		bHTMLMode = 0 != (((const SfxUInt16Item*)pItem)->GetValue() & HTMLMODE_ON);
 	}
-    
+
 	//default page mode loading
 	if(pWrtShell)
 	{
@@ -769,8 +769,8 @@ IMPL_LINK( SwCaptionOptPage, ShowEntryHdl, SvxCheckListBox *, EMPTYARG )
 				break;
 		}
 		aPosBox.SelectEntryPos(pOpt->GetPos());
-        aPosBox.Enable( pOpt->GetObjType() != GRAPHIC_CAP && 
-                pOpt->GetObjType() != OLE_CAP && 
+        aPosBox.Enable( pOpt->GetObjType() != GRAPHIC_CAP &&
+                pOpt->GetObjType() != OLE_CAP &&
                 aPosText.IsEnabled() );
 		aPosBox.SelectEntryPos(pOpt->GetPos());
 

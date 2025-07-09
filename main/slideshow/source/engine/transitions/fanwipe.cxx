@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -41,21 +41,21 @@ namespace internal {
     ::basegfx::B2DPolygon poly(
         ClockWipe::calcCenteredClock(
             t / ((m_center && m_single) ? 2.0 : 4.0) ) );
-    
+
     res.append( poly );
     // flip on y-axis:
     poly.transform(basegfx::tools::createScaleB2DHomMatrix(-1.0, 1.0));
     poly.flip();
     res.append( poly );
-    
-    if (m_center) 
+
+    if (m_center)
     {
         res.transform(basegfx::tools::createScaleTranslateB2DHomMatrix(0.5, 0.5, 0.5, 0.5));
-       
+
         if (! m_single)
             res.append( flipOnXAxis(res) );
     }
-    else 
+    else
     {
         OSL_ASSERT( ! m_fanIn );
         res.transform(basegfx::tools::createScaleTranslateB2DHomMatrix(0.5, 1.0, 0.5, 1.0));

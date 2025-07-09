@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -43,11 +43,11 @@
 SvxBorderBackgroundDlg::SvxBorderBackgroundDlg(Window *pParent,
     const SfxItemSet& rCoreSet,
     bool bEnableSelector,
-    bool bEnableDrawingLayerFillStyles) 
+    bool bEnableDrawingLayerFillStyles)
 :   SfxTabDialog(
-        pParent, 
+        pParent,
         CUI_RES(
-            bEnableDrawingLayerFillStyles ? RID_SVXDLG_BBDLG_AREA_TRANS : RID_SVXDLG_BBDLG_BACKGROUND), 
+            bEnableDrawingLayerFillStyles ? RID_SVXDLG_BBDLG_AREA_TRANS : RID_SVXDLG_BBDLG_BACKGROUND),
         &rCoreSet),
     mbEnableBackgroundSelector(bEnableSelector),
     mbEnableDrawingLayerFillStyles(bEnableDrawingLayerFillStyles)
@@ -83,7 +83,7 @@ void SvxBorderBackgroundDlg::PageCreated(sal_uInt16 nPageId, SfxTabPage& rTabPag
         case RID_SVXPAGE_BACKGROUND:
         {
             // allow switching between Color/graphic
-            if(mbEnableBackgroundSelector) 
+            if(mbEnableBackgroundSelector)
             {
                 static_cast< SvxBackgroundTabPage& >(rTabPage).ShowSelector();
             }
@@ -94,14 +94,14 @@ void SvxBorderBackgroundDlg::PageCreated(sal_uInt16 nPageId, SfxTabPage& rTabPag
         // The selection attribute lists (XPropertyList derivates, e.g. XColorList for
         // the color table) need to be added as items (e.g. SvxColorTableItem) to make
         // these pages find the needed attributes for fill style suggestions.
-        // These are added in SwDocStyleSheet::GetItemSet() for the SFX_STYLE_FAMILY_PARA on 
+        // These are added in SwDocStyleSheet::GetItemSet() for the SFX_STYLE_FAMILY_PARA on
         // demand, but could also be directly added from the DrawModel.
         case RID_SVXPAGE_AREA:
         {
             SfxItemSet aNew(
                 *GetInputSetImpl()->GetPool(),
                 SID_COLOR_TABLE, SID_BITMAP_LIST,
-                SID_OFFER_IMPORT, SID_OFFER_IMPORT, 
+                SID_OFFER_IMPORT, SID_OFFER_IMPORT,
                 0, 0);
 
             aNew.Put(*GetInputSetImpl());

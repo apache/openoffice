@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -163,15 +163,15 @@ int __LOADONCALLAPI main (int argc, char **argv)
 		XInterfaceRef x = xSMgr->createInstance( OStringToOWString( argv[1] , CHARSET_SYSTEM ) );
 		if( ! x.is() ) {
 			printf( "Couldn't instantiate service !\n" );
-			exit( 1 );	
+			exit( 1 );
 		}
 
 		// do the test
-		try {		
+		try {
 			nNewHandle = xTest->test( OStringToOWString( argv[1] , CHARSET_SYSTEM ) , x , nHandle );
 		}
 		catch ( Exception& e ) {
-			printf( "testcomponent : uncaught exception %s\n" , 
+			printf( "testcomponent : uncaught exception %s\n" ,
 						OWStringToOString( e.getName(), CHARSET_SYSTEM ).getStr() );
 			exit(1);
 		}
@@ -179,25 +179,25 @@ int __LOADONCALLAPI main (int argc, char **argv)
 			printf( "testcomponent : uncaught unknown exception\n"  );
 			exit(1);
 		}
-		
-		
+
+
 		// print errors and warning
 		Sequence<UString> seqErrors = xTest->getErrors();
 		Sequence<UString> seqWarnings = xTest->getWarnings();
 		if( seqWarnings.getLen() > nWarningCount ) {
 			printf( "Warnings during test %d!\n" , nHandle );
 			for( ; nWarningCount < seqWarnings.getLen() ; nWarningCount ++ ) {
-				printf( "Warning\n%s\n---------\n" , 
+				printf( "Warning\n%s\n---------\n" ,
 					OWStringToOString( seqWarnings.getArray()[nWarningCount], CHARSET_SYSTEM ).getStr() );
-			}			
+			}
 		}
 
 
 		if( seqErrors.getLen() > nErrorCount ) {
 			printf( "Errors during test %d!\n" , nHandle );
 			for( ; nErrorCount < seqErrors.getLen() ; nErrorCount ++ ) {
-				printf( "%s\n" , 
-							OWStringToOString( 
+				printf( "%s\n" ,
+							OWStringToOString(
 									seqErrors.getArray()[nErrorCount], CHARSET_SYSTEM ).getStr() );
 			}
 		}
@@ -209,7 +209,7 @@ int __LOADONCALLAPI main (int argc, char **argv)
 		printf( "Test passed !\n" );
 	}
 	else {
-		printf( "Test failed !\n" );	
+		printf( "Test failed !\n" );
 	}
 
 	XComponentRef rComp( xSMgr , USR_QUERY );

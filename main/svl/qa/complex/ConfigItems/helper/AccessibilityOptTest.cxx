@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,20 +7,20 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
- 
+
 #include "AccessibilityOptTest.hxx"
 #include "configitems/accessibilityoptions_const.hxx"
 
@@ -56,8 +56,8 @@ void AccessibilityOptTest::impl_checkGetAutoDetectSystemHC()
 	sal_Bool bAutoDetectSystemHC;
 	sal_Bool bAutoDetectSystemHC_;
 
-	bAutoDetectSystemHC  = aAccessibilityOpt.GetAutoDetectSystemHC();	
-	xSet->setPropertyValue( s_sAutoDetectSystemHC, css::uno::makeAny(bAutoDetectSystemHC ? sal_False:sal_True) );	
+	bAutoDetectSystemHC  = aAccessibilityOpt.GetAutoDetectSystemHC();
+	xSet->setPropertyValue( s_sAutoDetectSystemHC, css::uno::makeAny(bAutoDetectSystemHC ? sal_False:sal_True) );
 	::comphelper::ConfigurationHelper::flush(m_xCfg);
 	bAutoDetectSystemHC_ = aAccessibilityOpt.GetAutoDetectSystemHC();
 
@@ -75,7 +75,7 @@ void AccessibilityOptTest::impl_checkGetIsForPagePreviews()
 	sal_Bool bIsForPagePreviews_;
 
 	bIsForPagePreviews  = aAccessibilityOpt.GetIsForPagePreviews();
-	xSet->setPropertyValue( s_sIsForPagePreviews, css::uno::makeAny(bIsForPagePreviews ? sal_False:sal_True) );	
+	xSet->setPropertyValue( s_sIsForPagePreviews, css::uno::makeAny(bIsForPagePreviews ? sal_False:sal_True) );
 	::comphelper::ConfigurationHelper::flush(m_xCfg);
 	bIsForPagePreviews_ = aAccessibilityOpt.GetIsForPagePreviews();
 
@@ -93,7 +93,7 @@ void AccessibilityOptTest::impl_checkGetIsHelpTipsDisappear()
 	sal_Bool bIsHelpTipsDisappear_;
 
 	bIsHelpTipsDisappear  = aAccessibilityOpt.GetIsHelpTipsDisappear();
-	xSet->setPropertyValue( s_sIsHelpTipsDisappear, css::uno::makeAny(bIsHelpTipsDisappear ? sal_False:sal_True) );	
+	xSet->setPropertyValue( s_sIsHelpTipsDisappear, css::uno::makeAny(bIsHelpTipsDisappear ? sal_False:sal_True) );
 	::comphelper::ConfigurationHelper::flush(m_xCfg);
 	bIsHelpTipsDisappear_ = aAccessibilityOpt.GetIsHelpTipsDisappear();
 
@@ -111,7 +111,7 @@ void AccessibilityOptTest::impl_checkGetIsAllowAnimatedGraphics()
 	sal_Bool bIsAllowAnimatedGraphics_;
 
 	bIsAllowAnimatedGraphics  = aAccessibilityOpt.GetIsAllowAnimatedGraphics();
-	xSet->setPropertyValue( s_sIsAllowAnimatedGraphics, css::uno::makeAny(bIsAllowAnimatedGraphics ? sal_False:sal_True) );	
+	xSet->setPropertyValue( s_sIsAllowAnimatedGraphics, css::uno::makeAny(bIsAllowAnimatedGraphics ? sal_False:sal_True) );
 	::comphelper::ConfigurationHelper::flush(m_xCfg);
 	bIsAllowAnimatedGraphics_ = aAccessibilityOpt.GetIsAllowAnimatedGraphics();
 
@@ -129,7 +129,7 @@ void AccessibilityOptTest::impl_checkGetIsAllowAnimatedText()
 	sal_Bool bIsAllowAnimatedText_;
 
 	bIsAllowAnimatedText  = aAccessibilityOpt.GetIsAllowAnimatedText();
-	xSet->setPropertyValue( s_sIsAllowAnimatedText, css::uno::makeAny(bIsAllowAnimatedText ? sal_False:sal_True) );	
+	xSet->setPropertyValue( s_sIsAllowAnimatedText, css::uno::makeAny(bIsAllowAnimatedText ? sal_False:sal_True) );
 	::comphelper::ConfigurationHelper::flush(m_xCfg);
 	bIsAllowAnimatedText_ = aAccessibilityOpt.GetIsAllowAnimatedText();
 
@@ -147,7 +147,7 @@ void AccessibilityOptTest::impl_checkGetIsAutomaticFontColor()
 	sal_Bool bIsAutomaticFontColor_;
 
 	bIsAutomaticFontColor  = aAccessibilityOpt.GetIsAutomaticFontColor();
-	xSet->setPropertyValue( s_sIsAutomaticFontColor, css::uno::makeAny(bIsAutomaticFontColor ? sal_False:sal_True) );	
+	xSet->setPropertyValue( s_sIsAutomaticFontColor, css::uno::makeAny(bIsAutomaticFontColor ? sal_False:sal_True) );
 	::comphelper::ConfigurationHelper::flush(m_xCfg);
 	bIsAutomaticFontColor_ = aAccessibilityOpt.GetIsAutomaticFontColor();
 
@@ -165,7 +165,7 @@ void AccessibilityOptTest::impl_checkGetIsSystemFont()
 	sal_Bool bIsSystemFont_;
 
 	bIsSystemFont  = aAccessibilityOpt.GetIsSystemFont();
-	xSet->setPropertyValue( s_sIsSystemFont, css::uno::makeAny(bIsSystemFont ? sal_False:sal_True) );	
+	xSet->setPropertyValue( s_sIsSystemFont, css::uno::makeAny(bIsSystemFont ? sal_False:sal_True) );
 	::comphelper::ConfigurationHelper::flush(m_xCfg);
 	bIsSystemFont_ = aAccessibilityOpt.GetIsSystemFont();
 
@@ -201,7 +201,7 @@ void AccessibilityOptTest::impl_checkIsSelectionInReadonly()
 	sal_Bool bIsSelectionInReadonly_;
 
 	bIsSelectionInReadonly  = aAccessibilityOpt.IsSelectionInReadonly();
-	xSet->setPropertyValue( s_sIsSelectionInReadonly, css::uno::makeAny(bIsSelectionInReadonly ? sal_False:sal_True) );	
+	xSet->setPropertyValue( s_sIsSelectionInReadonly, css::uno::makeAny(bIsSelectionInReadonly ? sal_False:sal_True) );
 	::comphelper::ConfigurationHelper::flush(m_xCfg);
 	bIsSelectionInReadonly_ = aAccessibilityOpt.IsSelectionInReadonly();
 
@@ -365,7 +365,7 @@ void AccessibilityOptTest::impl_checkSetSelectionInReadonly()
 
 //=============================================================================
 void AccessibilityOptTest::impl_checkAccessibilityOptions()
-{	
+{
 	impl_checkGetAutoDetectSystemHC();
 	impl_checkGetIsForPagePreviews();
 	impl_checkGetIsHelpTipsDisappear();

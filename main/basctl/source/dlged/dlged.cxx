@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -33,7 +33,7 @@
 #include "dlgedclip.hxx"
 #include <dlgeddef.hxx>
 #include "propbrw.hxx"
-#include <localizationmgr.hxx> 
+#include <localizationmgr.hxx>
 
 #include <basidesh.hxx>
 #include <iderdll.hxx>
@@ -288,7 +288,7 @@ void DlgEditor::SetWindow( Window* pWindow_ )
 	pWindow_->SetMapMode( MapMode( MAP_100TH_MM ) );
 	pDlgEdPage->SetSize( pWindow_->PixelToLogic( Size( DLGED_PAGE_WIDTH_MIN, DLGED_PAGE_HEIGHT_MIN ) ) );
 
-	pDlgEdView = new DlgEdView( pDlgEdModel, pWindow_, this ); 
+	pDlgEdView = new DlgEdView( pDlgEdModel, pWindow_, this );
 	pDlgEdView->ShowSdrPage(pDlgEdView->GetModel()->GetPage(0));
 	pDlgEdView->SetLayerVisible( UniString::CreateFromAscii( RTL_CONSTASCII_STRINGPARAM( "HiddenLayer" ) ), sal_False );
 	pDlgEdView->SetMoveSnapOnlyTopLeft( sal_True );
@@ -456,7 +456,7 @@ void DlgEditor::SetDialog( uno::Reference< container::XNameContainer > xUnoContr
             pDlgEdModel->GetPage(0)->InsertObject( pCtrlObj );
             pCtrlObj->SetRectFromProps();
             pCtrlObj->UpdateStep();
-            pCtrlObj->StartListening();           
+            pCtrlObj->StartListening();
 		}
 	}
 
@@ -487,9 +487,9 @@ Reference< util::XNumberFormatsSupplier > const & DlgEditor::GetNumberFormatsSup
     if ( !m_xSupplier.is() )
     {
 		Reference< lang::XMultiServiceFactory > xMSF = ::comphelper::getProcessServiceFactory();
-        Reference< util::XNumberFormatsSupplier > xSupplier( xMSF->createInstance( 
+        Reference< util::XNumberFormatsSupplier > xSupplier( xMSF->createInstance(
             ::rtl::OUString(RTL_CONSTASCII_USTRINGPARAM("com.sun.star.util.NumberFormatsSupplier") ) ), UNO_QUERY );
-        
+
         ::osl::MutexGuard aGuard( ::osl::Mutex::getGlobalMutex() );
         if ( !m_xSupplier.is() )
         {
@@ -560,7 +560,7 @@ IMPL_LINK( DlgEditor, PaintTimeout, Timer *, EMPTYARG )
 		::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySet >  xPSet(pDlgEdForm->GetUnoControlModel(), ::com::sun::star::uno::UNO_QUERY);
 
 		if ( xPSet.is() )
-		{		
+		{
 			// get dialog size from properties
 			sal_Int32 nWidth = 0, nHeight = 0;
 			xPSet->getPropertyValue( DLGED_PROP_WIDTH ) >>= nWidth;
@@ -681,7 +681,7 @@ void DlgEditor::SetMode( DlgEdMode eNewMode )
 		else
 			pFunc = new DlgEdFuncSelect( this );
 
-		if ( eNewMode == DLGED_READONLY )        
+		if ( eNewMode == DLGED_READONLY )
 			pDlgEdModel->SetReadOnly( sal_True );
 		else
 			pDlgEdModel->SetReadOnly( sal_False );
@@ -698,9 +698,9 @@ void DlgEditor::SetMode( DlgEdMode eNewMode )
 void DlgEditor::SetInsertObj( sal_uInt16 eObj )
 {
 	eActObj = eObj;
-	
+
 	if( pDlgEdView )
-		pDlgEdView->SetCurrentObj( eActObj, DlgInventor );	
+		pDlgEdView->SetCurrentObj( eActObj, DlgInventor );
 }
 
 //----------------------------------------------------------------------------
@@ -758,7 +758,7 @@ void implCopyStreamToByteSequence( Reference< XInputStream > xStream,
 		Sequence< sal_Int8 > readBytes;
 		nRead = xStream->readBytes( readBytes, 1024 );
 		if (! nRead)
-			break;		
+			break;
 
 		sal_Int32 nPos = bytes.getLength();
 		bytes.realloc( nPos + nRead );
@@ -767,7 +767,7 @@ void implCopyStreamToByteSequence( Reference< XInputStream > xStream,
 }
 
 void DlgEditor::Copy()
-{	
+{
 	if( !pDlgEdView->AreObjectsMarked() )
 		return;
 
@@ -793,7 +793,7 @@ void DlgEditor::Copy()
 	}
 
 	// insert control models of marked objects into clipboard dialog model
-	sal_uLong nMark = pDlgEdView->GetMarkedObjectList().GetMarkCount();	
+	sal_uLong nMark = pDlgEdView->GetMarkedObjectList().GetMarkCount();
 	for( sal_uLong i = 0; i < nMark; i++ )
 	{
 		SdrObject* pObj = pDlgEdView->GetMarkedObjectList().GetMark(i)->GetMarkedSdrObj();
@@ -963,7 +963,7 @@ void DlgEditor::Paste()
 				// create clipboard dialog model from xml
 				Reference< lang::XMultiServiceFactory > xMSF = getProcessServiceFactory();
 				Reference< container::XNameContainer > xClipDialogModel( xMSF->createInstance
-					( ::rtl::OUString(RTL_CONSTASCII_USTRINGPARAM( "com.sun.star.awt.UnoControlDialogModel" ) ) ), 
+					( ::rtl::OUString(RTL_CONSTASCII_USTRINGPARAM( "com.sun.star.awt.UnoControlDialogModel" ) ) ),
 						uno::UNO_QUERY );
 
 				bool bSourceIsLocalized = false;
@@ -1104,7 +1104,7 @@ void DlgEditor::Paste()
 					pDlgEdView->MoveMarkedObj( aSize );						// update of control model properties (position + size) in NbcMove
 					pDlgEdView->MarkListHasChanged();
 
-					// dialog model changed 
+					// dialog model changed
 					SetDialogModelChanged(sal_True);
 				}
 			}
@@ -1120,7 +1120,7 @@ void DlgEditor::Delete()
 		return;
 
 	// remove control models of marked objects from dialog model
-	sal_uLong nMark = pDlgEdView->GetMarkedObjectList().GetMarkCount();	
+	sal_uLong nMark = pDlgEdView->GetMarkedObjectList().GetMarkCount();
 
 	for( sal_uLong i = 0; i < nMark; i++ )
 	{
@@ -1174,7 +1174,7 @@ void DlgEditor::Delete()
 sal_Bool DlgEditor::IsPasteAllowed()
 {
     sal_Bool bPaste = sal_False;
-    
+
     // get clipboard
 	Reference< datatransfer::clipboard::XClipboard > xClipboard = GetWindow()->GetClipboard();
 	if ( xClipboard.is() )
@@ -1200,7 +1200,7 @@ sal_Bool DlgEditor::IsPasteAllowed()
 void DlgEditor::ShowProperties()
 {
     BasicIDEShell* pIDEShell = IDE_DLL()->GetShell();
-    SfxViewFrame* pViewFrame = pIDEShell ? pIDEShell->GetViewFrame() : NULL;        
+    SfxViewFrame* pViewFrame = pIDEShell ? pIDEShell->GetViewFrame() : NULL;
     if ( pViewFrame && !pViewFrame->HasChildWindow( SID_SHOW_PROPERTYBROWSER ) )
         pViewFrame->ToggleChildWindow( SID_SHOW_PROPERTYBROWSER );
 }

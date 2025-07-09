@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -233,7 +233,7 @@ int X11SalData::XErrorHdl( Display *pDisplay, XErrorEvent *pEvent )
 }
 
 int X11SalData::XIOErrorHdl( Display * )
-{                                
+{
     /*  #106197# hack: until a real shutdown procedure exists
      *  _exit ASAP
      */
@@ -357,7 +357,7 @@ SalXLib::~SalXLib()
 	// close 'wakeup' pipe.
 	close (m_pTimeoutFDS[0]);
 	close (m_pTimeoutFDS[1]);
-    
+
     PopXErrorLevel();
     XSetIOErrorHandler (m_aOrigXIOErrorHandler);
 }
@@ -394,7 +394,7 @@ void SalXLib::Init()
 	 *  o  $DISPLAY environment variable
 	 *  o  default display
 	 */
-	
+
 	Display *pDisp = NULL;
 
 	// is there a -display command line parameter?
@@ -402,7 +402,7 @@ void SalXLib::Init()
 	sal_uInt32 nParams = aCommandLine.getCommandArgCount();
 	rtl::OUString aParam;
 	rtl::OString aDisplay;
-	for (sal_uInt16 i=0; i<nParams; i++) 
+	for (sal_uInt16 i=0; i<nParams; i++)
 	{
 		aCommandLine.getCommandArg(i, aParam);
 		if (aParam.equalsAscii("-display"))
@@ -416,7 +416,7 @@ void SalXLib::Init()
 				/*
 			 	* if a -display switch was used, we need
 			 	* to set the environment accordingly since
-			 	* the clipboard build another connection 
+			 	* the clipboard build another connection
 			 	* to the xserver using $DISPLAY
 			 	*/
 				rtl::OUString envVar(RTL_CONSTASCII_USTRINGPARAM("DISPLAY"));
@@ -426,7 +426,7 @@ void SalXLib::Init()
 		}
 	}
 
-	if (!pDisp && !aDisplay.getLength()) 
+	if (!pDisp && !aDisplay.getLength())
 	{
 		// Open $DISPLAY or default...
 		char *pDisplay = getenv("DISPLAY");
@@ -445,9 +445,9 @@ void SalXLib::Init()
                                             aProgramSystemPath,
                                             osl_getThreadTextEncoding() );
         std::fprintf( stderr, "%s X11 error: Can't open display: %s\n",
-				aProgramName.getStr(), aDisplay.getStr()); 
-        std::fprintf( stderr, "   Set DISPLAY environment variable, use -display option\n"); 
-        std::fprintf( stderr, "   or check permissions of your X-Server\n"); 
+				aProgramName.getStr(), aDisplay.getStr());
+        std::fprintf( stderr, "   Set DISPLAY environment variable, use -display option\n");
+        std::fprintf( stderr, "   or check permissions of your X-Server\n");
         std::fprintf( stderr, "   (See \"man X\" resp. \"man xhost\" for details)\n");
         std::fflush( stderr );
 		exit(0);
@@ -515,7 +515,7 @@ static void PrintXError( Display *pDisplay, XErrorEvent *pEvent )
         std::fprintf( stderr, "These errors are reported asynchronously,\n");
         std::fprintf( stderr, "set environment variable SAL_SYNCHRONIZE to 1 to help debugging\n");
     }
-    
+
     std::fflush( stdout );
     std::fflush( stderr );
 }
@@ -850,6 +850,6 @@ rtl::OString X11SalData::getFrameResName( SalExtStyle nStyle )
     aBuf.append( getFrameResName() );
     if( (nStyle & SAL_FRAME_EXT_STYLE_DOCUMENT) )
         aBuf.append( ".DocumentWindow" );
-    
+
     return aBuf.makeStringAndClear();
 }

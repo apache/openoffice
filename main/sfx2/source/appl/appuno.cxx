@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -137,7 +137,7 @@ using namespace ::com::sun::star::io;
 #include <sfxslots.hxx>
 
 // needs to be converted to a better data structure
-SfxFormalArgument aFormalArgs[] = 
+SfxFormalArgument aFormalArgs[] =
 {
     SFX_ARGUMENT(SID_DEFAULTFILENAME,"SuggestedSaveAsName",SfxStringItem),
     SFX_ARGUMENT(SID_DEFAULTFILEPATH,"SuggestedSaveAsDir",SfxStringItem),
@@ -909,7 +909,7 @@ void TransformParameters( sal_uInt16 nSlotId, const ::com::sun::star::uno::Seque
                     if (bOK)
                         rSet.Put( SfxStringItem( SID_SUGGESTEDSAVEASNAME, sVal ) );
                 }
-#ifdef DBG_UTIL 
+#ifdef DBG_UTIL
                 else
                     --nFoundArgs;
 #endif
@@ -2341,18 +2341,18 @@ RequestFilterOptions::RequestFilterOptions( ::com::sun::star::uno::Reference< ::
 //=========================================================================
 class RequestPackageReparation_Impl : public ::cppu::WeakImplHelper1< ::com::sun::star::task::XInteractionRequest >
 {
-    ::com::sun::star::uno::Any m_aRequest;     
-    ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Reference< ::com::sun::star::task::XInteractionContinuation > > m_lContinuations;       
+    ::com::sun::star::uno::Any m_aRequest;
+    ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Reference< ::com::sun::star::task::XInteractionContinuation > > m_lContinuations;
     comphelper::OInteractionApprove* m_pApprove;
     comphelper::OInteractionDisapprove*  m_pDisapprove;
 
 public:
-    RequestPackageReparation_Impl( ::rtl::OUString aName );  
-    sal_Bool    isApproved();    
+    RequestPackageReparation_Impl( ::rtl::OUString aName );
+    sal_Bool    isApproved();
     virtual ::com::sun::star::uno::Any SAL_CALL getRequest() throw( ::com::sun::star::uno::RuntimeException );
-    virtual ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Reference< ::com::sun::star::task::XInteractionContinuation > > SAL_CALL getContinuations() 
+    virtual ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Reference< ::com::sun::star::task::XInteractionContinuation > > SAL_CALL getContinuations()
 		throw( ::com::sun::star::uno::RuntimeException );
-}; 
+};
 
 RequestPackageReparation_Impl::RequestPackageReparation_Impl( ::rtl::OUString aName )
 {
@@ -2370,8 +2370,8 @@ RequestPackageReparation_Impl::RequestPackageReparation_Impl( ::rtl::OUString aN
 }
 
 sal_Bool RequestPackageReparation_Impl::isApproved()
-{        
-    return m_pApprove->wasSelected(); 
+{
+    return m_pApprove->wasSelected();
 }
 
 ::com::sun::star::uno::Any SAL_CALL RequestPackageReparation_Impl::getRequest()
@@ -2392,36 +2392,36 @@ RequestPackageReparation::RequestPackageReparation( ::rtl::OUString aName )
     pImp = new RequestPackageReparation_Impl( aName );
     pImp->acquire();
 }
-        
+
 RequestPackageReparation::~RequestPackageReparation()
 {
     pImp->release();
-}           
+}
 
 sal_Bool RequestPackageReparation::isApproved()
 {
     return pImp->isApproved();
-}            
+}
 
 com::sun::star::uno::Reference < ::com::sun::star::task::XInteractionRequest > RequestPackageReparation::GetRequest()
 {
     return com::sun::star::uno::Reference < ::com::sun::star::task::XInteractionRequest >(pImp);
-}            
+}
 
 //=========================================================================
 class NotifyBrokenPackage_Impl : public ::cppu::WeakImplHelper1< ::com::sun::star::task::XInteractionRequest >
 {
-    ::com::sun::star::uno::Any m_aRequest;       
+    ::com::sun::star::uno::Any m_aRequest;
     ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Reference< ::com::sun::star::task::XInteractionContinuation > > m_lContinuations;
     comphelper::OInteractionAbort*  m_pAbort;
 
 public:
     NotifyBrokenPackage_Impl( ::rtl::OUString aName );
-    sal_Bool    isAborted();       
+    sal_Bool    isAborted();
     virtual ::com::sun::star::uno::Any SAL_CALL getRequest() throw( ::com::sun::star::uno::RuntimeException );
-    virtual ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Reference< ::com::sun::star::task::XInteractionContinuation > > SAL_CALL getContinuations() 
+    virtual ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Reference< ::com::sun::star::task::XInteractionContinuation > > SAL_CALL getContinuations()
 		throw( ::com::sun::star::uno::RuntimeException );
-};  
+};
 
 NotifyBrokenPackage_Impl::NotifyBrokenPackage_Impl( ::rtl::OUString aName )
 {
@@ -2436,9 +2436,9 @@ NotifyBrokenPackage_Impl::NotifyBrokenPackage_Impl( ::rtl::OUString aName )
    	m_lContinuations[0] = ::com::sun::star::uno::Reference< ::com::sun::star::task::XInteractionContinuation >( m_pAbort  );
 }
 
-sal_Bool NotifyBrokenPackage_Impl::isAborted() 
-{ 
-    return m_pAbort->wasSelected(); 
+sal_Bool NotifyBrokenPackage_Impl::isAborted()
+{
+    return m_pAbort->wasSelected();
 }
 
 ::com::sun::star::uno::Any SAL_CALL NotifyBrokenPackage_Impl::getRequest()
@@ -2459,18 +2459,18 @@ NotifyBrokenPackage::NotifyBrokenPackage( ::rtl::OUString aName )
     pImp = new NotifyBrokenPackage_Impl( aName );
     pImp->acquire();
 }
-            
+
 NotifyBrokenPackage::~NotifyBrokenPackage()
 {
     pImp->release();
-}           
+}
 
 sal_Bool NotifyBrokenPackage::isAborted()
 {
     return pImp->isAborted();
-}            
+}
 
 com::sun::star::uno::Reference < ::com::sun::star::task::XInteractionRequest > NotifyBrokenPackage::GetRequest()
 {
     return com::sun::star::uno::Reference < ::com::sun::star::task::XInteractionRequest >(pImp);
-}            
+}

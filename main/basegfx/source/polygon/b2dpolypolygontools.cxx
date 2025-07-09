@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
@@ -292,16 +292,16 @@ namespace basegfx
 			if(rCandidate.count() && fFullDashDotLen > 0.0)
 			{
 				B2DPolyPolygon aLineTarget, aGapTarget;
-	
+
 				for(sal_uInt32 a(0L); a < rCandidate.count(); a++)
 				{
 					const B2DPolygon aCandidate(rCandidate.getB2DPolygon(a));
-					
+
 					applyLineDashing(
-						aCandidate, 
-						rDotDashArray, 
-						pLineTarget ? &aLineTarget : 0, 
-						pGapTarget ? &aGapTarget : 0, 
+						aCandidate,
+						rDotDashArray,
+						pLineTarget ? &aLineTarget : 0,
+						pGapTarget ? &aGapTarget : 0,
 						fFullDashDotLen);
 
 					if(pLineTarget)
@@ -516,7 +516,7 @@ namespace basegfx
             // exclude some cheap cases first
             if( rPoly.count() != 1 )
                 return false;
-            
+
             return isRectangle( rPoly.getB2DPolygon(0) );
         }
 
@@ -614,7 +614,7 @@ namespace basegfx
         // converters for com::sun::star::drawing::PointSequence
 
         B2DPolyPolygon UnoPointSequenceSequenceToB2DPolyPolygon(
-            const com::sun::star::drawing::PointSequenceSequence& rPointSequenceSequenceSource, 
+            const com::sun::star::drawing::PointSequenceSequence& rPointSequenceSequenceSource,
             bool bCheckClosed)
         {
             B2DPolyPolygon aRetval;
@@ -631,7 +631,7 @@ namespace basegfx
         }
 
         void B2DPolyPolygonToUnoPointSequenceSequence(
-            const B2DPolyPolygon& rPolyPolygon, 
+            const B2DPolyPolygon& rPolyPolygon,
             com::sun::star::drawing::PointSequenceSequence& rPointSequenceSequenceRetval)
         {
             const sal_uInt32 nCount(rPolyPolygon.count());
@@ -659,7 +659,7 @@ namespace basegfx
         // converters for com::sun::star::drawing::PolyPolygonBezierCoords (curved polygons)
 
         B2DPolyPolygon UnoPolyPolygonBezierCoordsToB2DPolyPolygon(
-            const com::sun::star::drawing::PolyPolygonBezierCoords& rPolyPolygonBezierCoordsSource, 
+            const com::sun::star::drawing::PolyPolygonBezierCoords& rPolyPolygonBezierCoordsSource,
             bool bCheckClosed)
         {
             B2DPolyPolygon aRetval;
@@ -689,11 +689,11 @@ namespace basegfx
         }
 
         void B2DPolyPolygonToUnoPolyPolygonBezierCoords(
-            const B2DPolyPolygon& rPolyPolygon, 
+            const B2DPolyPolygon& rPolyPolygon,
             com::sun::star::drawing::PolyPolygonBezierCoords& rPolyPolygonBezierCoordsRetval)
         {
             const sal_uInt32 nCount(rPolyPolygon.count());
-            
+
             if(nCount)
             {
                 // prepare return value memory

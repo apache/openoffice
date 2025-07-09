@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -39,19 +39,19 @@ using resourcemodel::resolveSprmProps;
 
 namespace dmapper
 {
-        
+
 struct SettingsTable_Impl
 {
     DomainMapper&       m_rDMapper;
     const uno::Reference< lang::XMultiServiceFactory > m_xTextFactory;
-            
+
     ::rtl::OUString     m_sCharacterSpacing;
     ::rtl::OUString     m_sDecimalSymbol;
     ::rtl::OUString     m_sListSeparatorForFields; //2.15.1.56 listSeparator (List Separator for Field Code Evaluation)
-            
+
     int                 m_nDefaultTabStop;
     int                 m_nHyphenationZone;
-            
+
     bool                m_bNoPunctuationKerning;
     bool                m_doNotIncludeSubdocsInStats; // Do Not Include Content in Text Boxes, Footnotes, and Endnotes in Document Statistics)
     bool                m_bRecordChanges;
@@ -70,7 +70,7 @@ struct SettingsTable_Impl
     ::rtl::OUString     m_sCryptProviderTypeExtSource;
     ::rtl::OUString     m_sHash;
     ::rtl::OUString     m_sSalt;
-            
+
     SettingsTable_Impl( DomainMapper& rDMapper, const uno::Reference< lang::XMultiServiceFactory > xTextFactory ) :
     m_rDMapper( rDMapper )
     , m_xTextFactory( xTextFactory )
@@ -87,21 +87,21 @@ struct SettingsTable_Impl
     , m_nCryptAlgorithmType(NS_ooxml::LN_Value_wordprocessingml_ST_AlgType_typeAny)
     , m_nCryptSpinCount(0)
     {}
-            
+
 };
-        
-SettingsTable::SettingsTable(DomainMapper& rDMapper, const uno::Reference< lang::XMultiServiceFactory > xTextFactory) 
+
+SettingsTable::SettingsTable(DomainMapper& rDMapper, const uno::Reference< lang::XMultiServiceFactory > xTextFactory)
 : LoggedProperties(dmapper_logger, "SettingsTable")
 , LoggedTable(dmapper_logger, "SettingsTable")
 , m_pImpl( new SettingsTable_Impl(rDMapper, xTextFactory) )
 {
 }
-        
+
 SettingsTable::~SettingsTable()
 {
     delete m_pImpl;
 }
-        
+
 void SettingsTable::lcl_attribute(Id nName, Value & val)
 {
     (void) nName;
@@ -110,8 +110,8 @@ void SettingsTable::lcl_attribute(Id nName, Value & val)
     ::rtl::OUString sValue = val.getString();
     (void)sValue;
     /* WRITERFILTERSTATUS: table: SettingsTable_attributedata */
-#if 0 //no values known, yet   
-            
+#if 0 //no values known, yet
+
     switch(Name)
     {
 	/* WRITERFILTERSTATUS: done: 0, planned: 0, spent: 0 */
@@ -123,16 +123,16 @@ void SettingsTable::lcl_attribute(Id nName, Value & val)
     }
 #endif
 }
-        
+
 void SettingsTable::lcl_sprm(Sprm& rSprm)
 {
     sal_uInt32 nSprmId = rSprm.getId();
-            
+
     Value::Pointer_t pValue = rSprm.getValue();
     sal_Int32 nIntValue = pValue->getInt();
     (void)nIntValue;
     rtl::OUString sStringValue = pValue->getString();
-            
+
     /* WRITERFILTERSTATUS: table: SettingsTable_sprm */
     switch(nSprmId)
     {
@@ -154,7 +154,7 @@ void SettingsTable::lcl_sprm(Sprm& rSprm)
     case NS_ooxml::LN_CT_Settings_themeFontLang: //  92552;
 	/* WRITERFILTERSTATUS: done: 0, planned: 0, spent: 0 */
     case NS_ooxml::LN_CT_Settings_shapeDefaults: //  92560;
-                    
+
 	//PropertySetValues - need to be resolved
 	{
 	    writerfilter::Reference<Properties>::Pointer_t pProperties = rSprm.getProps();
@@ -175,7 +175,7 @@ void SettingsTable::lcl_sprm(Sprm& rSprm)
 	break;
 	/* WRITERFILTERSTATUS: done: 0, planned: 0, spent: 0 */
     case NS_ooxml::LN_CT_Settings_characterSpacingControl: //  92527;
-	m_pImpl->m_sCharacterSpacing = sStringValue; // doNotCompress, compressPunctuation, compressPunctuationAndJapaneseKana  
+	m_pImpl->m_sCharacterSpacing = sStringValue; // doNotCompress, compressPunctuation, compressPunctuationAndJapaneseKana
 	break;
 	/* WRITERFILTERSTATUS: done: 0, planned: 0, spent: 0 */
     case NS_ooxml::LN_CT_Settings_doNotIncludeSubdocsInStats: //  92554; // Do Not Include Content in Text Boxes, Footnotes, and Endnotes in Document Statistics)
@@ -191,7 +191,7 @@ void SettingsTable::lcl_sprm(Sprm& rSprm)
 	break;
 	/* WRITERFILTERSTATUS: done: 0, planned: 0, spent: 0 */
     case NS_ooxml::LN_CT_Settings_rsids: //  92549; revision save Ids - probably not necessary
-	break;        
+	break;
 	/* WRITERFILTERSTATUS: done: 0, planned: 0, spent: 0 */
     case NS_ooxml::LN_CT_Settings_hyphenationZone: // 92508;
 	m_pImpl->m_nHyphenationZone = nIntValue;
@@ -218,29 +218,29 @@ void SettingsTable::lcl_sprm(Sprm& rSprm)
 	}
     }
 }
-        
+
 void SettingsTable::lcl_entry(int /*pos*/, writerfilter::Reference<Properties>::Pointer_t ref)
 {
     ref->resolve(*this);
 }
 //returns default TabStop in 1/100th mm
-        
+
 /*-- 22.09.2009 10:29:32---------------------------------------------------
-         
+
   -----------------------------------------------------------------------*/
-int SettingsTable::GetDefaultTabStop() const 
+int SettingsTable::GetDefaultTabStop() const
 {
     return ConversionHelper::convertTwipToMM100( m_pImpl->m_nDefaultTabStop );
 }
-            
+
 void SettingsTable::ApplyProperties( uno::Reference< text::XTextDocument > xDoc )
 {
     uno::Reference< beans::XPropertySet> xDocProps( xDoc, uno::UNO_QUERY );
-            
+
     // Record changes value
     xDocProps->setPropertyValue( ::rtl::OUString::createFromAscii( "RecordChanges" ), uno::makeAny( m_pImpl->m_bRecordChanges ) );
 }
-        
-        
+
+
 }//namespace dmapper
 } //namespace writerfilter

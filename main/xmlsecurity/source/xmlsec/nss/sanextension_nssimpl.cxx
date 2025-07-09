@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -25,7 +25,7 @@
 #include "precompiled_xmlsecurity.hxx"
 #include <sal/config.h>
 #include <rtl/uuid.h>
-#include <rtl/ustring.hxx> 
+#include <rtl/ustring.hxx>
 #include <com/sun/star/security/ExtAltNameType.hpp>
 #include <com/sun/star/security/CertAltNameEntry.hpp>
 #include <com/sun/star/beans/PropertyValue.hpp>
@@ -95,11 +95,11 @@ namespace {
 ::com::sun::star::uno::Sequence< com::sun::star::security::CertAltNameEntry > SAL_CALL SanExtensionImpl :: getAlternativeNames() throw( ::com::sun::star::uno::RuntimeException ){
 
     if (!m_Entries.hasElements())
-    {  
+    {
         SECItem item;
 
         item.type = siDERCertBuffer;
-        item.data = (unsigned char*) m_xExtnValue.getArray(); 
+        item.data = (unsigned char*) m_xExtnValue.getArray();
         item.len = m_xExtnValue.getLength();
 
         PRArenaPool *arena;
@@ -128,7 +128,7 @@ namespace {
 
                     otherNameProp.Value <<= otherName;
 
-                    arrCertAltNameEntry[i].Value <<= otherNameProp; 
+                    arrCertAltNameEntry[i].Value <<= otherNameProp;
                     break;
                                     }
                 case certRFC822Name:
@@ -180,7 +180,7 @@ namespace {
             current = CERT_GetNextGeneralName(current);
         }
 
-        m_Entries = ::comphelper::arrayToSequence< com::sun::star::security::CertAltNameEntry >(arrCertAltNameEntry, size);        
+        m_Entries = ::comphelper::arrayToSequence< com::sun::star::security::CertAltNameEntry >(arrCertAltNameEntry, size);
 
         delete [] arrCertAltNameEntry;
 

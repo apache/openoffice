@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -62,7 +62,7 @@ class Mapping : public uno_Mapping
 	void                            * m_pContext;
 
 public:
-    explicit  Mapping(uno_Environment                 * pFrom, 
+    explicit  Mapping(uno_Environment                 * pFrom,
 					  uno_Environment                 * pTo,
 					  cppu::helper::purpenv::ProbeFun * probeFun,
 					  void                            * pProbeContext);
@@ -109,7 +109,7 @@ static void s_getIdentifier_v(va_list * pParam)
 	uno_ExtEnvironment *  pEnv  = va_arg(*pParam, uno_ExtEnvironment *);
 	rtl_uString        ** ppOid = va_arg(*pParam, rtl_uString **);
 	uno_Interface      *  pUnoI = va_arg(*pParam, uno_Interface *);
-	
+
 	pEnv->getObjectIdentifier(pEnv, ppOid, pUnoI);
 }
 
@@ -121,7 +121,7 @@ static void SAL_CALL s_free(uno_Mapping * puno_Mapping)
 }
 }
 
-Mapping::Mapping(uno_Environment                 * pFrom, 
+Mapping::Mapping(uno_Environment                 * pFrom,
 				 uno_Environment                 * pTo,
 				 cppu::helper::purpenv::ProbeFun * probeFun,
 				 void                            * pProbeContext
@@ -180,14 +180,14 @@ void Mapping::mapInterface(
 										   pOId,
 										   m_probeFun,
 										   m_pContext);
-		
+
 		// proxy may be exchanged during registration
 		m_to.get()->pExtEnv->registerProxyInterface(m_to.get()->pExtEnv,
 													(void **)&pProxy,
 													Proxy_free,
 													pOId,
 													pTypeDescr);
-		
+
 		*ppOut = pProxy;
 	}
 
@@ -205,9 +205,9 @@ void Mapping::acquire() SAL_THROW(())
 	}
 }
 
-void Mapping::release() SAL_THROW(()) 
+void Mapping::release() SAL_THROW(())
 {
-	if (osl_decrementInterlockedCount(&m_nCount) == 0) 
+	if (osl_decrementInterlockedCount(&m_nCount) == 0)
 		::uno_revokeMapping(this);
 }
 

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -53,7 +53,7 @@ typedef int SOCKET;
 const char *basename( const char *filename )
 {
 	const char *pSlash = strrchr( filename, '/' );
-	
+
 	return pSlash ? pSlash + 1 : pSlash;
 }
 #endif
@@ -101,7 +101,7 @@ static string getprogramdir()
 static const char *getlocale()
 {
     const char * locale = getenv( "LC_ALL" );
-    
+
     if( NULL == locale )
         locale = getenv( "LC_CTYPE" );
 
@@ -110,7 +110,7 @@ static const char *getlocale()
 
     if( NULL == locale )
         locale = "C";
-		
+
 	return locale;
 }
 
@@ -124,18 +124,18 @@ static const char *get_home_dir()
 static string trim_string( const string& rString )
 {
 	string temp = rString;
-	
+
 	while ( temp.length() && (temp[0] == ' ' || temp[0] == '\t') )
 		temp.erase( 0, 1 );
-		
+
 	string::size_type	len = temp.length();
-	
+
 	while ( len && (temp[len-1] == ' ' || temp[len-1] == '\t') )
 	{
 		temp.erase( len - 1, 1 );
 		len = temp.length();
 	}
-	
+
 	return temp;
 }
 
@@ -183,7 +183,7 @@ bool write_report( const hash_map< string, string >& rSettings )
 	FILE	*fp = fopen( tmpnam( g_szReportFile ), "w" );
 	const char *pszUserType = getenv( "STAROFFICE_USERTYPE" );
 
-	fprintf( fp, 
+	fprintf( fp,
 	   "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n"
 	   "<!DOCTYPE errormail:errormail PUBLIC \"-//OpenOffice.org//DTD ErrorMail 1.0//EN\" \"errormail.dtd\">\n"
 	   "<errormail:errormail xmlns:errormail=\"http://openoffice.org/2002/errormail\" usertype=\"%s\">\n"
@@ -193,7 +193,7 @@ bool write_report( const hash_map< string, string >& rSettings )
 	   "<reportmail:attachment name=\"stack.txt\" media-type=\"text/plain\" class=\"pstack output\"/>\n"
 	   "</reportmail:mail>\n"
 	   "<officeinfo:officeinfo xmlns:officeinfo=\"http://openoffice.org/2002/officeinfo\" build=\"%s\" platform=\"%s\" language=\"%s\" exceptiontype=\"%d\" product=\"%s\" procpath=\"%s\"/>\n"
-	   , 
+	   ,
 	   pszUserType ? xml_encode( pszUserType ).c_str() : "",
 	   xml_encode(rSettings.find( "CONTACT" )->second).c_str(),
 	   xml_encode(rSettings.find( "EMAIL" )->second).c_str(),
@@ -209,7 +209,7 @@ bool write_report( const hash_map< string, string >& rSettings )
 	struct utsname	info;
 
 	memset( &info, 0, sizeof(info) );
-	uname( &info );	
+	uname( &info );
 
 	fprintf( fp,
 	   "<systeminfo:systeminfo xmlns:systeminfo=\"http://openoffice.org/2002/systeminfo\">\n"
@@ -240,7 +240,7 @@ bool write_report( const hash_map< string, string >& rSettings )
 	fprintf( fp, "</errormail:errormail>\n" );
 
 	fclose( fp );
-	
+
 	return true;
 }
 
@@ -251,13 +251,13 @@ bool write_description( const hash_map< string, string >& rSettings )
 	FILE	*fp = fopen( tmpnam( g_szDescriptionFile ), "w" );
 
 	if ( fp )
-	{	
+	{
 		bSuccess = true;
 		fprintf( fp, "\xEF\xBB\xBF" );
 		fprintf( fp, "%s\n", rSettings.find( "DESCRIPTION" )->second.c_str() );
 		fclose( fp );
 	}
-	
+
 	return bSuccess;
 }
 
@@ -277,42 +277,42 @@ bool save_crash_report( const string& rFileName, const hash_map< string, string 
 {
 	bool bSuccess = false;
 	FILE	*fpout = fopen( rFileName.c_str(), "w" );
-	
+
 	if ( fpout )
 	{
 		FILE *fpin = fopen( g_szStackFile, "r" );
-		
+
 		if ( fpin )
 		{
 			char	buf[1024];
-			
+
 			while (fgets(buf, sizeof(buf), fpin) != NULL)
 			{
 				fputs(buf, fpout);
 			}
-			
+
 			bSuccess = true;
-			
+
 			fclose ( fpin );
 		}
-		
+
 		fclose( fpout );
 	}
-	
+
     return bSuccess;
 }
 
-bool SendHTTPRequest( 
-				FILE *fp, 
-				const char *pszServer, 
-				unsigned short uPort = 80, 
-				const char *pszProxyServer = NULL, 
+bool SendHTTPRequest(
+				FILE *fp,
+				const char *pszServer,
+				unsigned short uPort = 80,
+				const char *pszProxyServer = NULL,
 				unsigned short uProxyPort = 8080 )
 {
 	bool success = false;
 
 	struct hostent *hp;
-	
+
 	if ( pszProxyServer )
 		hp = gethostbyname( pszProxyServer );
 	else
@@ -343,7 +343,7 @@ bool SendHTTPRequest(
 				char buffer[2048];
 
 				if ( pszProxyServer )
-					sprintf( buffer, 
+					sprintf( buffer,
 					"POST http://%s:%d/soap/servlet/rpcrouter HTTP/1.0\r\n"
 						"Content-Type: text/xml; charset=\"utf-8\"\r\n"
 						"Content-Length: %d\r\n"
@@ -353,7 +353,7 @@ bool SendHTTPRequest(
 						static_cast<int>(length)
 						);
 				else
-					sprintf( buffer, 
+					sprintf( buffer,
 						"POST /soap/servlet/rpcrouter HTTP/1.0\r\n"
 						"Content-Type: text/xml; charset=\"utf-8\"\r\n"
 						"Content-Length: %d\r\n"
@@ -370,7 +370,7 @@ bool SendHTTPRequest(
 				if ( SOCKET_ERROR != send( s, buffer, strlen(buffer), 0 ) )
 				{
 					size_t nBytes;
-					
+
 					do
 					{
 						nBytes = fread( buffer, 1, sizeof(buffer), fp );
@@ -437,7 +437,7 @@ static void WriteSOAPRequest( FILE *fp )
 	FILE	*fpin = fopen( g_szReportFile, "r" );
 	if ( fpin )
 	{
-		fprintf( fp, 
+		fprintf( fp,
 			"<item>\n"
 			"<key xsi:type=\"xsd:string\">reportmail.xml</key>\n"
 			"<value xsi:type=\"xsd:string\"><![CDATA[" );
@@ -449,7 +449,7 @@ static void WriteSOAPRequest( FILE *fp )
 	fpin = fopen( g_szDescriptionFile, "r" );
 	if ( fpin )
 	{
-		fprintf( fp, 
+		fprintf( fp,
 			"<item>\n"
 			"<key xsi:type=\"xsd:string\">description.txt</key>\n"
 			"<value xsi:type=\"xsd:string\"><![CDATA[" );
@@ -461,7 +461,7 @@ static void WriteSOAPRequest( FILE *fp )
 	fpin = fopen( g_szStackFile, "r" );
 	if ( fpin )
 	{
-		fprintf( fp, 
+		fprintf( fp,
 			"<item>\n"
 			"<key xsi:type=\"xsd:string\">stack.txt</key>\n"
 			"<value xsi:type=\"xsd:string\"><![CDATA[" );
@@ -470,11 +470,11 @@ static void WriteSOAPRequest( FILE *fp )
 		fclose( fpin );
 	};
 
-	fprintf( fp, 
+	fprintf( fp,
 		"</hash>\n"
 		"</rds:submitReport>\n"
-		"</SOAP-ENV:Body>\n" 
-		"</SOAP-ENV:Envelope>\n" 
+		"</SOAP-ENV:Body>\n"
+		"</SOAP-ENV:Envelope>\n"
 		);
 }
 
@@ -516,10 +516,10 @@ bool send_crash_report( const hash_map< string, string >& rSettings )
 		WriteSOAPRequest( fptemp );
 		fseek( fptemp, 0, SEEK_SET );
 
-		bSuccess = SendHTTPRequest( 
-			fptemp, 
-			REPORT_SERVER, REPORT_PORT, 
-			bUseProxy ? pProxyServer : NULL, 
+		bSuccess = SendHTTPRequest(
+			fptemp,
+			REPORT_SERVER, REPORT_PORT,
+			bUseProxy ? pProxyServer : NULL,
 			uProxyPort ? uProxyPort : 8080
 			);
 
@@ -529,27 +529,27 @@ bool send_crash_report( const hash_map< string, string >& rSettings )
 
 	unlink( g_szDescriptionFile );
 	unlink( g_szReportFile );
-	
+
     return bSuccess;
 }
 
 
 static bool append_file( const char *filename, string& rString )
 {
-	char	buf[1024];	
+	char	buf[1024];
 	bool	bSuccess = false;
-	
+
 	FILE *fp = fopen( filename, "r" );
 	if ( fp )
 	{
 		bSuccess = true;
-		while (fgets(buf, sizeof(buf), fp) != NULL) 
+		while (fgets(buf, sizeof(buf), fp) != NULL)
 		{
 			rString.append( buf );
 		}
 		fclose( fp );
 	}
-	
+
 	return true;
 }
 
@@ -557,9 +557,9 @@ string crash_get_details( const hash_map< string, string >& rSettings )
 {
     string aRet;
 
-	write_description( rSettings );	
+	write_description( rSettings );
 	write_report( rSettings );
-		
+
 	aRet.append( rSettings.find( "TITLE" )->second.c_str() );
 	aRet.append( "\n\n" );
 	append_file( g_szDescriptionFile, aRet );
@@ -570,7 +570,7 @@ string crash_get_details( const hash_map< string, string >& rSettings )
 
 	unlink( g_szDescriptionFile );
 	unlink( g_szReportFile );
-	
+
     return aRet;
 }
 
@@ -601,7 +601,7 @@ static long setup_commandline_arguments( int argc, char** argv, int *pSignal )
 {
 	long	pid = 0;
 	int		signal = 0;
-	
+
 	for ( int n = 1; n < argc; n++ )
 	{
 		if ( 0 == strcmp( argv[n], "-p" ) )
@@ -647,22 +647,22 @@ static long setup_commandline_arguments( int argc, char** argv, int *pSignal )
 		}
 		else if ( argv[n] && strlen(argv[n]) )
 		{
-			printf( 
+			printf(
 				"\n%s crash_report %s\n\n" \
 				"/?, -h[elp]          %s\n\n" \
 				"%-20s %s\n\n",
-				"%MSG_CMDLINE_USAGE%", 
-				"%MSG_PARAM_PROCESSID%", 
-				"%MSG_PARAM_HELP_DESCRIPTION%", 
-				"%MSG_PARAM_PROCESSID%", 
-				"%MSG_PARAM_PROCESSID_DESCRIPTION%" 
+				"%MSG_CMDLINE_USAGE%",
+				"%MSG_PARAM_PROCESSID%",
+				"%MSG_PARAM_HELP_DESCRIPTION%",
+				"%MSG_PARAM_PROCESSID%",
+				"%MSG_PARAM_PROCESSID_DESCRIPTION%"
 				);
 			break;
 		}
 	}
 
 	*pSignal = signal;
-	
+
 	return pid;
 }
 
@@ -675,22 +675,22 @@ static bool read_line( FILE *fp, string& rLine )
 	bool bEOL = false;
 	string	line;
 
-		
+
 	while ( !bEOL && fgets( szBuffer, sizeof(szBuffer), fp ) )
 	{
 		int	len = strlen(szBuffer);
-		
+
 		bSuccess = true;
-		
+
 		while ( len && szBuffer[len - 1] == '\n' )
 		{
 			szBuffer[--len] = 0;
 			bEOL = true;
 		}
-			
+
 		line.append( szBuffer );
 	}
-	
+
 	rLine = line;
 	return bSuccess;
 }
@@ -699,24 +699,24 @@ static string get_script_string( const char *pFileName, const char *pKeyName )
 {
 	FILE	*fp = fopen( pFileName, "r" );
 	string	retValue;
-	
+
 	if ( fp )
 	{
 		string line;
 		string section;
-		
+
 		while ( read_line( fp, line ) )
 		{
 			line = trim_string( line );
-			
 
-			string::size_type iEqualSign = line.find( '=', 0 ); 
+
+			string::size_type iEqualSign = line.find( '=', 0 );
 
 			if ( iEqualSign != string::npos )
 			{
 				string	keyname = line.substr( 0, iEqualSign );
 				keyname = trim_string( keyname );
-				
+
 				string	value = line.substr( iEqualSign + 1, string::npos );
 				value = trim_string( value );
 
@@ -729,7 +729,7 @@ static string get_script_string( const char *pFileName, const char *pKeyName )
 					if ( iQuotes != string::npos )
 						value.erase( iQuotes );
 				}
-				
+
 				if ( 0 == strcasecmp( keyname.c_str(), pKeyName ) )
 				{
 					retValue = value;
@@ -737,10 +737,10 @@ static string get_script_string( const char *pFileName, const char *pKeyName )
 				}
 			}
 		}
-		
+
 		fclose( fp );
 	}
-	
+
 	return retValue;
 }
 
@@ -748,38 +748,38 @@ static string get_profile_string( const char *pFileName, const char *pSectionNam
 {
 	FILE	*fp = fopen( pFileName, "r" );
 	string	retValue = pDefault ? pDefault : "";
-	
+
 	if ( fp )
 	{
 		string line;
 		string section;
-		
+
 		while ( read_line( fp, line ) )
 		{
 			line = trim_string( line );
-			
+
 			if ( line.length() && line[0] == '[' )
 			{
 				line.erase( 0, 1 );
 				string::size_type end = line.find( ']', 0 );
-				
+
 				if ( string::npos != end )
 					section = trim_string( line.substr( 0, end ) );
 			}
 			else
 			{
 
-				string::size_type iEqualSign = line.find( '=', 0 ); 
+				string::size_type iEqualSign = line.find( '=', 0 );
 
 				if ( iEqualSign != string::npos )
 				{
 					string	keyname = line.substr( 0, iEqualSign );
 					keyname = trim_string( keyname );
-					
+
 					string	value = line.substr( iEqualSign + 1, string::npos );
 					value = trim_string( value );
-					
-					if ( 
+
+					if (
 						0 == strcasecmp( section.c_str(), pSectionName ) &&
 						0 == strcasecmp( keyname.c_str(), pKeyName )
 						 )
@@ -790,10 +790,10 @@ static string get_profile_string( const char *pFileName, const char *pSectionNam
 				}
 			}
 		}
-		
+
 		fclose( fp );
 	}
-	
+
 	return retValue;
 }
 
@@ -989,7 +989,7 @@ static bool	setup_version()
 	if ( !getenv( "PRODUCTNAME" ) )
 	{
 		string productkey = get_profile_string( "bootstraprc", "Bootstrap", "ProductKey" );
-		
+
 		g_strProductKey = productkey;
 
 		if ( productkey.length() )
@@ -1000,7 +1000,7 @@ static bool	setup_version()
 
 			if ( string::npos != iSpace )
 			{
-				productname = productkey.substr( 0, iSpace );	
+				productname = productkey.substr( 0, iSpace );
 				productversion = productkey.substr( iSpace + 1, string::npos );
 			}
 			else
@@ -1008,12 +1008,12 @@ static bool	setup_version()
 
 			productname.insert( 0, "PRODUCTNAME=" );
             putenv( (char *)productname.c_str() );
-			
+
 			productversion.insert( 0, "PRODUCTVERSION=" );
             putenv( (char *)productversion.c_str() );
 		}
 	}
-	
+
 	g_buildid =	get_profile_string( "versionrc", "Version", "BuildId" );
 	g_strDefaultLanguage = get_script_string( "instdb.ins", "DefaultLanguage"  );
 
@@ -1059,7 +1059,7 @@ int main( int argc, char** argv )
 	if ( setup_version() )
 	{
 		/*long pid =*/ setup_commandline_arguments( argc, argv, &g_signal );
-		
+
 		if ( g_bLoadReport )
 		{
 			load_crash_data();
@@ -1113,6 +1113,6 @@ int main( int argc, char** argv )
 
     	return 0;
 	}
-	
+
 	return -1;
 }

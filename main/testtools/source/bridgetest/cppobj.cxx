@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -147,15 +147,15 @@ class Test_Impl :
     Sequence<Sequence<Sequence<sal_Int32> > > _arLong3;
     Sequence<Any> _arAny;
     Sequence<TestElement> _arStruct;
-	
+
 public:
 	Test_Impl() : m_nLastCallId( 0 ),
 				  m_bFirstCall( sal_True ),
 				  m_bSequenceOfCallTestPassed( sal_True )
 		{}
 	virtual ~Test_Impl()
-		{ 
-			OSL_TRACE( "> scalar Test_Impl dtor <" ); 
+		{
+			OSL_TRACE( "> scalar Test_Impl dtor <" );
 		}
 
 	void SAL_CALL acquire() throw ()
@@ -166,12 +166,12 @@ public:
 	{
 		OWeakObject::release();
  	}
-	
+
 	// XServiceInfo
 	virtual OUString SAL_CALL getImplementationName() throw (RuntimeException);
 	virtual sal_Bool SAL_CALL supportsService( const OUString & rServiceName ) throw (RuntimeException);
 	virtual Sequence< OUString > SAL_CALL getSupportedServiceNames() throw (RuntimeException);
-	
+
 	// XLBTestBase
     virtual void SAL_CALL setValues( sal_Bool bBool, sal_Unicode cChar, sal_Int8 nByte,
 									 sal_Int16 nShort, sal_uInt16 nUShort,
@@ -184,7 +184,7 @@ public:
 									 const ::com::sun::star::uno::Sequence<TestElement >& rSequence,
 									 const TestData& rStruct )
 		throw(com::sun::star::uno::RuntimeException);
-	
+
     virtual TestData SAL_CALL setValues2( sal_Bool& bBool, sal_Unicode& cChar, sal_Int8& nByte,
 												sal_Int16& nShort, sal_uInt16& nUShort,
 												sal_Int32& nLong, sal_uInt32& nULong,
@@ -196,7 +196,7 @@ public:
 												::com::sun::star::uno::Sequence<TestElement >& rSequence,
 												TestData& rStruct )
 		throw(com::sun::star::uno::RuntimeException);
-	
+
     virtual TestData SAL_CALL getValues( sal_Bool& bBool, sal_Unicode& cChar, sal_Int8& nByte,
 											   sal_Int16& nShort, sal_uInt16& nUShort,
 											   sal_Int32& nLong, sal_uInt32& nULong,
@@ -219,7 +219,7 @@ public:
         { return rStruct; }
     virtual sal_Int32 SAL_CALL testPPCAlignment( sal_Int64, sal_Int64, sal_Int32, sal_Int64, sal_Int32 i2 ) throw(com::sun::star::uno::RuntimeException)
         { return i2; }
-	
+
     virtual sal_Bool SAL_CALL getBool() throw(com::sun::star::uno::RuntimeException)
 		{ return _aData.Bool; }
     virtual sal_Int8 SAL_CALL getByte() throw(com::sun::star::uno::RuntimeException)
@@ -365,13 +365,13 @@ public:
 		throw(::com::sun::star::uno::RuntimeException);
     virtual void SAL_CALL startRecursiveCall(
 		const ::com::sun::star::uno::Reference< XRecursiveCall >& xCall, sal_Int32 nToCall )
-		throw(::com::sun::star::uno::RuntimeException);	
+		throw(::com::sun::star::uno::RuntimeException);
 
     virtual Reference< XMulti > SAL_CALL getMulti() throw (RuntimeException);
 
     virtual rtl::OUString SAL_CALL testMulti(Reference< XMulti > const & multi)
         throw (RuntimeException);
-	
+
 public: // XBridgeTest
     virtual TestData SAL_CALL raiseException( sal_Int16 nArgumentPos, const OUString & rMsg, const Reference< XInterface > & xCOntext )
 		throw(::com::sun::star::lang::IllegalArgumentException, ::com::sun::star::uno::RuntimeException);
@@ -379,7 +379,7 @@ public: // XBridgeTest
     virtual void SAL_CALL raiseRuntimeExceptionOneway(
 		const ::rtl::OUString& Message, const ::com::sun::star::uno::Reference< ::com::sun::star::uno::XInterface >& Context )
 		throw(::com::sun::star::uno::RuntimeException);
-	
+
     virtual sal_Int32 SAL_CALL getRuntimeException() throw(::com::sun::star::uno::RuntimeException);
     virtual void SAL_CALL setRuntimeException( sal_Int32 _runtimeexception ) throw(::com::sun::star::uno::RuntimeException);
 
@@ -474,7 +474,7 @@ class Dummy : public osl::DebugBase<Dummy>,
               public WeakComponentImplHelperBase
 {
 public:
-     Dummy(): WeakComponentImplHelperBase(*Mutex::getGlobalMutex()){}    
+     Dummy(): WeakComponentImplHelperBase(*Mutex::getGlobalMutex()){}
 
 };
 //__________________________________________________________________________________________________
@@ -586,11 +586,11 @@ TestData Test_Impl::setValues2( sal_Bool& bBool, sal_Unicode& cChar, sal_Int8& n
 			bBool, cChar, nByte, nShort, nUShort, nLong, nULong, nHyper, nUHyper, fFloat, fDouble,
 			eEnum, rStr, xTest, rAny, rSequence );
 	_aStructData = rStruct;
-    
+
     TestElement elem = rSequence[ 0 ];
     rSequence[ 0 ] = rSequence[ 1 ];
     rSequence[ 1 ] = elem;
-    
+
 	return _aStructData;
 }
 //__________________________________________________________________________________________________
@@ -874,9 +874,9 @@ void SAL_CALL Test_Impl::setSequencesOut( Sequence< sal_Bool >& aSeqBoolean,
                              Sequence< sal_Unicode >& aSeqChar,
                              Sequence< sal_Int8 >& aSeqByte,
                              Sequence< sal_Int16 >& aSeqShort,
-                             Sequence< sal_uInt16 >& aSeqUShort,             
+                             Sequence< sal_uInt16 >& aSeqUShort,
                              Sequence< sal_Int32 >& aSeqLong,
-                             Sequence< sal_uInt32 >& aSeqULong,             
+                             Sequence< sal_uInt32 >& aSeqULong,
                              Sequence< sal_Int64 >& aSeqHyper,
                              Sequence< sal_uInt64 >& aSeqUHyper,
                              Sequence< float >& aSeqFloat,
@@ -1023,7 +1023,7 @@ void Test_Impl::testConstructorsService(
     Sequence<Type> argSeq1(1); argSeq1[0] = cppu::UnoType<sal_Int32>::get();
     Sequence<Reference<XInterface> > argSeq2(1); argSeq2[0] = static_cast<XComponent*>(new Dummy());
     Sequence<Reference<XComponent> > argSeq2a(1); argSeq2a[0] = static_cast<XComponent*>(new Dummy());
-    
+
     Sequence<TestPolyStruct2<sal_Unicode, Sequence<Any> > > argSeq3(1);
     argSeq3[0] = TestPolyStruct2<sal_Unicode, Sequence<Any> >('X', arg27);
     Sequence<TestPolyStruct2<TestPolyStruct<sal_Unicode>, Sequence<Any> > > argSeq4(1);
@@ -1049,7 +1049,7 @@ void Test_Impl::testConstructorsService(
         TestPolyStruct2<sal_Unicode, Any>('X', Any(true)), TestPolyStruct<sal_Unicode>('X'));
     Sequence<Sequence<TestPolyStruct<sal_Unicode > > > argSeq11(1);
     argSeq11[0] = Sequence<TestPolyStruct<sal_Unicode > >(1);
-    argSeq11[0][0] = TestPolyStruct<sal_Unicode>('X'); 
+    argSeq11[0][0] = TestPolyStruct<sal_Unicode>('X');
     Sequence<Sequence<TestPolyStruct<TestPolyStruct2<sal_Unicode,Any> > > > argSeq12(1);
     argSeq12[0] = Sequence<TestPolyStruct<TestPolyStruct2<sal_Unicode,Any> > >(1);
     argSeq12[0][0] = TestPolyStruct<TestPolyStruct2<sal_Unicode,Any> >(
@@ -1181,7 +1181,7 @@ void * SAL_CALL component_getFactory(
 	const sal_Char * pImplName, void * pServiceManager, void * )
 {
 	void * pRet = 0;
-	
+
 	if (pServiceManager && rtl_str_compare( pImplName, IMPLNAME ) == 0)
 	{
 		Reference< XSingleServiceFactory > xFactory( createSingleFactory(
@@ -1189,14 +1189,14 @@ void * SAL_CALL component_getFactory(
 			OUString( RTL_CONSTASCII_USTRINGPARAM(IMPLNAME) ),
 			bridge_object::Test_Impl_create,
 			bridge_object::getSupportedServiceNames() ) );
-		
+
 		if (xFactory.is())
 		{
 			xFactory->acquire();
 			pRet = xFactory.get();
 		}
 	}
-	
+
 	return pRet;
 }
 }

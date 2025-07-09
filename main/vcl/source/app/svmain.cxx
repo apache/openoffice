@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -152,9 +152,9 @@ public:
         if ( nVCLException )
         {
             bIn = sal_True;
-        
+
             ::vos::OGuard aLock(&Application::GetSolarMutex());
-        
+
             // Timer nicht mehr anhalten, da ansonsten die UAE-Box
             // auch nicht mehr gepaintet wird
             ImplSVData* pSVData = ImplGetSVData();
@@ -196,7 +196,7 @@ sal_Bool ImplSVMain()
         pSVData->mpApp->Main();
         pSVData->maAppData.mbInAppMain = sal_False;
     }
-    
+
     if( pSVData->mxDisplayConnection.is() )
     {
         pSVData->mxDisplayConnection->terminate();
@@ -204,7 +204,7 @@ sal_Bool ImplSVMain()
     }
 
     // This is a hack to work around the problem of the asynchronous nature
-    // of bridging accessibility through Java: on shutdown there might still 
+    // of bridging accessibility through Java: on shutdown there might still
     // be some events in the AWT EventQueue, which need the SolarMutex which
     // - on the other hand - is destroyed in DeInitVCL(). So empty the queue
     // here ..
@@ -221,7 +221,7 @@ sal_Bool ImplSVMain()
 	#ifdef WNT
 		if( g_acc_manager1 )
 			g_acc_manager1->release();
-	#endif 
+	#endif
     return bInit;
 }
 
@@ -284,7 +284,7 @@ sal_Bool InitVCL( const ::com::sun::star::uno::Reference< ::com::sun::star::lang
 
     if( pExceptionHandler != NULL )
         return sal_False;
-    
+
     if( ! ImplGetSVData() )
         ImplInitSVData();
 
@@ -356,7 +356,7 @@ void DeInitVCL()
 {
     ImplSVData* pSVData = ImplGetSVData();
     pSVData->mbDeInit = sal_True;
-    
+
     vcl::DeleteOnDeinitBase::ImplDeleteOnDeInit();
 
     // give ime status a chance to destroy its own windows
@@ -504,7 +504,7 @@ void DeInitVCL()
 			pSVData->maAppData.mpSettings->GetSysLocale().GetOptions().RemoveListener( pSVData->maAppData.mpCfgListener );
 			delete pSVData->maAppData.mpCfgListener;
 		}
-		
+
         delete pSVData->maAppData.mpSettings;
         pSVData->maAppData.mpSettings = NULL;
     }

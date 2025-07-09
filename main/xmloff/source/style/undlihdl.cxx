@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -123,7 +123,7 @@ XMLUnderlineTypePropHdl::~XMLUnderlineTypePropHdl()
 }
 
 sal_Bool XMLUnderlineTypePropHdl::importXML( const OUString& rStrImpValue, uno::Any& rValue, const SvXMLUnitConverter& ) const
-{ 
+{
 	sal_uInt16 eNewUnderline;
 	sal_Bool bRet = SvXMLUnitConverter::convertEnum(
         eNewUnderline, rStrImpValue, pXML_UnderlineType_Enum );
@@ -173,17 +173,17 @@ sal_Bool XMLUnderlineTypePropHdl::importXML( const OUString& rStrImpValue, uno::
 		}
 	}
 
-	return bRet; 
+	return bRet;
 }
 
 sal_Bool XMLUnderlineTypePropHdl::exportXML( OUString& rStrExpValue, const uno::Any& rValue, const SvXMLUnitConverter& ) const
-{ 
+{
 	sal_Bool bRet = sal_False;
 	sal_Int16 nValue = sal_Int16();
 	OUStringBuffer aOut;
 
 	if( (rValue >>= nValue) &&
-		(FontUnderline::DOUBLE == nValue || 
+		(FontUnderline::DOUBLE == nValue ||
 		 FontUnderline::DOUBLEWAVE == nValue) )
 	{
         bRet = SvXMLUnitConverter::convertEnum(
@@ -191,7 +191,7 @@ sal_Bool XMLUnderlineTypePropHdl::exportXML( OUString& rStrExpValue, const uno::
 		if( bRet )
 			rStrExpValue = aOut.makeStringAndClear();
 	}
-	
+
 	return bRet;
 }
 
@@ -206,7 +206,7 @@ XMLUnderlineStylePropHdl::~XMLUnderlineStylePropHdl()
 }
 
 sal_Bool XMLUnderlineStylePropHdl::importXML( const OUString& rStrImpValue, uno::Any& rValue, const SvXMLUnitConverter& ) const
-{ 
+{
 	sal_uInt16 eNewUnderline;
 	sal_Bool bRet = SvXMLUnitConverter::convertEnum(
         eNewUnderline, rStrImpValue, pXML_UnderlineStyle_Enum );
@@ -221,7 +221,7 @@ sal_Bool XMLUnderlineStylePropHdl::importXML( const OUString& rStrImpValue, uno:
 			{
 			case FontUnderline::NONE:
 			case FontUnderline::SINGLE:
-				// keep double or bold line style	
+				// keep double or bold line style
 				eNewUnderline = eUnderline;
 			case FontUnderline::DOTTED:
 				// The line style has priority over a double type.
@@ -263,11 +263,11 @@ sal_Bool XMLUnderlineStylePropHdl::importXML( const OUString& rStrImpValue, uno:
 		}
 	}
 
-	return bRet; 
+	return bRet;
 }
 
 sal_Bool XMLUnderlineStylePropHdl::exportXML( OUString& rStrExpValue, const uno::Any& rValue, const SvXMLUnitConverter& ) const
-{ 
+{
 	sal_Bool bRet = sal_False;
 	sal_Int16 nValue = sal_Int16();
 	OUStringBuffer aOut;
@@ -279,7 +279,7 @@ sal_Bool XMLUnderlineStylePropHdl::exportXML( OUString& rStrExpValue, const uno:
 		if( bRet )
 			rStrExpValue = aOut.makeStringAndClear();
 	}
-	
+
 	return bRet;
 }
 
@@ -294,7 +294,7 @@ XMLUnderlineWidthPropHdl::~XMLUnderlineWidthPropHdl()
 }
 
 sal_Bool XMLUnderlineWidthPropHdl::importXML( const OUString& rStrImpValue, uno::Any& rValue, const SvXMLUnitConverter& ) const
-{ 
+{
 	sal_uInt16 eNewUnderline;
 	sal_Bool bRet = SvXMLUnitConverter::convertEnum(
         eNewUnderline, rStrImpValue, pXML_UnderlineWidth_Enum );
@@ -355,11 +355,11 @@ sal_Bool XMLUnderlineWidthPropHdl::importXML( const OUString& rStrImpValue, uno:
 		}
 	}
 
-	return bRet; 
+	return bRet;
 }
 
 sal_Bool XMLUnderlineWidthPropHdl::exportXML( OUString& rStrExpValue, const uno::Any& rValue, const SvXMLUnitConverter& ) const
-{ 
+{
 	sal_Bool bRet = sal_False;
 	sal_Int16 nValue = sal_Int16();
 	OUStringBuffer aOut;
@@ -371,6 +371,6 @@ sal_Bool XMLUnderlineWidthPropHdl::exportXML( OUString& rStrExpValue, const uno:
 		if( bRet )
 			rStrExpValue = aOut.makeStringAndClear();
 	}
-	
+
 	return bRet;
 }

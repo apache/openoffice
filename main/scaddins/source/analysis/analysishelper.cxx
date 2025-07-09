@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -2480,7 +2480,7 @@ double ConvertData::Convert(
         }
         else if ( bBinFromLev )
             f *= ( r.fConst / fConst ) * ( pow( 2.0, nLevFrom ) / pow( 10.0, nLevTo ) );
-        else 
+        else
             f *= ( r.fConst / fConst ) * ( pow( 10.0, nLevFrom ) / pow( 2.0, nLevTo ) );
         return f;
     }
@@ -2577,7 +2577,7 @@ ConvertDataList::ConvertDataList( void )
     NEWD( "uk_cwt",     1.9684130552221213E-05, CDC_Mass ); // Imperial hundredweight
     NEWD( "lcwt",       1.9684130552221213E-05, CDC_Mass ); // Imperial hundredweight also
     NEWD( "hweight",    1.9684130552221213E-05, CDC_Mass ); // Imperial hundredweight also
-    NEWD( "uk_ton",     9.8420652761106063E-07, CDC_Mass ); // Imperial ton 
+    NEWD( "uk_ton",     9.8420652761106063E-07, CDC_Mass ); // Imperial ton
     NEWD( "LTON",       9.8420652761106063E-07, CDC_Mass ); // Imperial ton also
 
     // LENGTH: 1 Meter is...
@@ -2726,7 +2726,7 @@ ConvertDataList::ConvertDataList( void )
     NEWD( "ludicrous speed", 2.0494886343432328E-14, CDC_Speed ); // ***
     NEWD( "laecherliche Geschwindigkeit", 4.0156958471424288E-06, CDC_Speed); // ***
     NEWD( "ridiculous speed", 4.0156958471424288E-06, CDC_Speed); // ***
-    
+
     // INFORMATION: 1 Bit is...
     NEWDP( "bit",   1.00E00,  CDC_Information); // *** Bit
     NEWDP( "byte",  1.25E-01, CDC_Information); // *** Byte

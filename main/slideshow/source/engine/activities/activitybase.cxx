@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -36,10 +36,10 @@
 namespace slideshow
 {
     namespace internal
-    {            
+    {
         // TODO(P1): Elide some virtual function calls, by templifying this
         // static hierarchy
-        
+
         ActivityBase::ActivityBase( const ActivityParameters& rParms ) :
             mpEndEvent( rParms.mrEndEvent ),
             mrEventQueue( rParms.mrEventQueue ),
@@ -51,16 +51,16 @@ namespace slideshow
             mbAutoReverse( rParms.mbAutoReverse ),
             mbFirstPerformCall( true ),
             mbIsActive( true ) {}
-    
+
         void ActivityBase::dispose()
         {
             // deactivate
             mbIsActive = false;
-            
+
             // dispose event
             if( mpEndEvent )
                 mpEndEvent->dispose();
-                    
+
             // release references
             mpEndEvent.reset();
             mpShape.reset();
@@ -69,26 +69,26 @@ namespace slideshow
 
         double ActivityBase::calcTimeLag() const
         {
-            // TODO(Q1): implement different init process!            
+            // TODO(Q1): implement different init process!
             if (isActive() && mbFirstPerformCall)
             {
                 mbFirstPerformCall = false;
-                
-                // notify derived classes that we're 
+
+                // notify derived classes that we're
                 // starting now
                 const_cast<ActivityBase *>(this)->startAnimation();
             }
             return 0.0;
         }
-    
+
         bool ActivityBase::perform()
         {
             // still active?
             if( !isActive() )
                 return false; // no, early exit.
-            
+
             OSL_ASSERT( ! mbFirstPerformCall );
-            
+
             return true;
         }
 
@@ -96,7 +96,7 @@ namespace slideshow
         {
             return mbIsActive;
         }
-        
+
         void ActivityBase::setTargets( const AnimatableShapeSharedPtr& 		rShape,
                                        const ShapeAttributeLayerSharedPtr& 	rAttrLayer )
         {
@@ -132,7 +132,7 @@ namespace slideshow
             if( !isActive() )
                 endAnimation();
         }
-    
+
         void ActivityBase::end()
         {
             if (!isActive() || isDisposed())
@@ -143,12 +143,12 @@ namespace slideshow
                 // notify derived classes that we're starting now
                 this->startAnimation();
             }
-            
+
             performEnd(); // calling private virtual
             endAnimation();
             endActivity();
         }
-    
+
         double ActivityBase::calcAcceleratedTime( double nT ) const
         {
             // Handle acceleration/deceleration
@@ -165,12 +165,12 @@ namespace slideshow
                 mnAccelerationFraction + mnDecelerationFraction <= 1.0 )
             {
                 /*
-                // calc accelerated/decelerated time. 
+                // calc accelerated/decelerated time.
                 //
                 // We have three intervals:
                 // 1 [0,a]
                 // 2 [a,d]
-                // 3 [d,1] (with a and d being acceleration/deceleration 
+                // 3 [d,1] (with a and d being acceleration/deceleration
                 // fraction, resp.)
                 //
                 // The change rate during interval 1 is constantly
@@ -197,10 +197,10 @@ namespace slideshow
                 // The graph of the change rate is a trapezoid:
                 //
                 //   |
-                //  1|      /--------------\     
-                //   |     /                \     
-                //   |    /                  \     
-                //   |   /                    \     
+                //  1|      /--------------\
+                //   |     /                \
+                //   |    /                  \
+                //   |   /                    \
                 //   -----------------------------
                 //      0   a              d  1
                 //
@@ -216,8 +216,8 @@ namespace slideshow
                 }
                 else
                 {
-                    nTPrime += 0.5*mnAccelerationFraction; // full first interval 
-                    
+                    nTPrime += 0.5*mnAccelerationFraction; // full first interval
+
                     if( nT <= 1.0-mnDecelerationFraction )
                     {
                         nTPrime += nT-mnAccelerationFraction; // partial second interval
@@ -227,7 +227,7 @@ namespace slideshow
                         nTPrime += 1.0 - mnAccelerationFraction - mnDecelerationFraction; // full second interval
 
                         const double nTRelative( nT - 1.0 + mnDecelerationFraction );
-                        
+
                         nTPrime += nTRelative - 0.5*nTRelative*nTRelative / mnDecelerationFraction;
                     }
                 }

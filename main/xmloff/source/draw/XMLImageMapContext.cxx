@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
@@ -64,7 +64,7 @@ using ::com::sun::star::drawing::PointSequenceSequence;
 using ::com::sun::star::document::XEventsSupplier;
 
 
-enum XMLImageMapToken 
+enum XMLImageMapToken
 {
 	XML_TOK_IMAP_URL,
 	XML_TOK_IMAP_X,
@@ -143,20 +143,20 @@ public:
 			::com::sun::star::container::XIndexContainer> xMap,
 		const sal_Char* pServiceName);
 
-	void StartElement( 
+	void StartElement(
 		const ::com::sun::star::uno::Reference<
 		::com::sun::star::xml::sax::XAttributeList >& xAttrList );
 
 	void EndElement();
 
-	SvXMLImportContext *CreateChildContext( 
+	SvXMLImportContext *CreateChildContext(
 		sal_uInt16 nPrefix,
 		const ::rtl::OUString& rLocalName,
 		const ::com::sun::star::uno::Reference<
 			::com::sun::star::xml::sax::XAttributeList> & xAttrList );
 
 protected:
-	
+
 	virtual void ProcessAttribute(
 		enum XMLImageMapToken eToken,
 		const ::rtl::OUString& rValue);
@@ -191,7 +191,7 @@ XMLImageMapObjectContext::XMLImageMapObjectContext(
 		bIsActive(sal_True),
 		bValid(sal_False)
 {
-	DBG_ASSERT(NULL != pServiceName, 
+	DBG_ASSERT(NULL != pServiceName,
 			   "Please supply the image map object service name");
 
 	Reference<XMultiServiceFactory> xFactory(GetImport().GetModel(),UNO_QUERY);
@@ -211,7 +211,7 @@ XMLImageMapObjectContext::XMLImageMapObjectContext(
 	// else: can't even get factory -> ignore
 }
 
-void XMLImageMapObjectContext::StartElement( 
+void XMLImageMapObjectContext::StartElement(
 	const Reference<XAttributeList >& xAttrList )
 {
 	SvXMLTokenMap aMap(aImageMapObjectTokenMap);
@@ -221,7 +221,7 @@ void XMLImageMapObjectContext::StartElement(
 	{
 		OUString sLocalName;
 		sal_uInt16 nPrefix = GetImport().GetNamespaceMap().
-			GetKeyByAttrName( xAttrList->getNameByIndex(nAttr), 
+			GetKeyByAttrName( xAttrList->getNameByIndex(nAttr),
 							  &sLocalName );
 		OUString sValue = xAttrList->getValueByIndex(nAttr);
 
@@ -247,7 +247,7 @@ void XMLImageMapObjectContext::EndElement()
 	// else: not valid -> don't create and insert
 }
 
-SvXMLImportContext* XMLImageMapObjectContext::CreateChildContext( 
+SvXMLImportContext* XMLImageMapObjectContext::CreateChildContext(
 	sal_uInt16 nPrefix,
 	const OUString& rLocalName,
 	const Reference<XAttributeList> & xAttrList )
@@ -272,7 +272,7 @@ SvXMLImportContext* XMLImageMapObjectContext::CreateChildContext(
 			GetImport(), nPrefix, rLocalName, sDescriptionBuffer);
 	}
 	else
-		return SvXMLImportContext::CreateChildContext(nPrefix, rLocalName, 
+		return SvXMLImportContext::CreateChildContext(nPrefix, rLocalName,
 													  xAttrList);
 
 }
@@ -294,7 +294,7 @@ void XMLImageMapObjectContext::ProcessAttribute(
 		case XML_TOK_IMAP_NOHREF:
 			bIsActive = ! IsXMLToken(rValue, XML_NOHREF);
 			break;
-				
+
 		case XML_TOK_IMAP_NAME:
 			sNam = rValue;
 			break;
@@ -378,7 +378,7 @@ void XMLImageMapRectangleContext::ProcessAttribute(
 	switch (eToken)
 	{
 		case XML_TOK_IMAP_X:
-			if (GetImport().GetMM100UnitConverter().convertMeasure(nTmp, 
+			if (GetImport().GetMM100UnitConverter().convertMeasure(nTmp,
 																   rValue))
 			{
 				aRectangle.X = nTmp;
@@ -386,7 +386,7 @@ void XMLImageMapRectangleContext::ProcessAttribute(
 			}
 			break;
 		case XML_TOK_IMAP_Y:
-			if (GetImport().GetMM100UnitConverter().convertMeasure(nTmp, 
+			if (GetImport().GetMM100UnitConverter().convertMeasure(nTmp,
 																   rValue))
 			{
 				aRectangle.Y = nTmp;
@@ -394,7 +394,7 @@ void XMLImageMapRectangleContext::ProcessAttribute(
 			}
 			break;
 		case XML_TOK_IMAP_WIDTH:
-			if (GetImport().GetMM100UnitConverter().convertMeasure(nTmp, 
+			if (GetImport().GetMM100UnitConverter().convertMeasure(nTmp,
 																   rValue))
 			{
 				aRectangle.Width = nTmp;
@@ -402,7 +402,7 @@ void XMLImageMapRectangleContext::ProcessAttribute(
 			}
 			break;
 		case XML_TOK_IMAP_HEIGTH:
-			if (GetImport().GetMM100UnitConverter().convertMeasure(nTmp, 
+			if (GetImport().GetMM100UnitConverter().convertMeasure(nTmp,
 																   rValue))
 			{
 				aRectangle.Height = nTmp;
@@ -583,7 +583,7 @@ void XMLImageMapCircleContext::ProcessAttribute(
 	switch (eToken)
 	{
 		case XML_TOK_IMAP_CENTER_X:
-			if (GetImport().GetMM100UnitConverter().convertMeasure(nTmp, 
+			if (GetImport().GetMM100UnitConverter().convertMeasure(nTmp,
 																   rValue))
 			{
 				aCenter.X = nTmp;
@@ -591,7 +591,7 @@ void XMLImageMapCircleContext::ProcessAttribute(
 			}
 			break;
 		case XML_TOK_IMAP_CENTER_Y:
-			if (GetImport().GetMM100UnitConverter().convertMeasure(nTmp, 
+			if (GetImport().GetMM100UnitConverter().convertMeasure(nTmp,
 																   rValue))
 			{
 				aCenter.Y = nTmp;
@@ -599,7 +599,7 @@ void XMLImageMapCircleContext::ProcessAttribute(
 			}
 			break;
 		case XML_TOK_IMAP_RADIUS:
-			if (GetImport().GetMM100UnitConverter().convertMeasure(nTmp, 
+			if (GetImport().GetMM100UnitConverter().convertMeasure(nTmp,
 																   rValue))
 			{
 				nRadius = nTmp;
@@ -652,7 +652,7 @@ XMLImageMapContext::XMLImageMapContext(
 {
 	try
 	{
-		Reference < XPropertySetInfo > xInfo = 
+		Reference < XPropertySetInfo > xInfo =
 			xPropertySet->getPropertySetInfo();
 		if( xInfo.is() && xInfo->hasPropertyByName( sImageMap ) )
 			xPropertySet->getPropertyValue(sImageMap) >>= xImageMap;
@@ -668,7 +668,7 @@ XMLImageMapContext::~XMLImageMapContext()
 {
 }
 
-SvXMLImportContext *XMLImageMapContext::CreateChildContext( 
+SvXMLImportContext *XMLImageMapContext::CreateChildContext(
 	sal_uInt16 nPrefix,
 	const OUString& rLocalName,
 	const Reference<XAttributeList> & xAttrList )
@@ -694,7 +694,7 @@ SvXMLImportContext *XMLImageMapContext::CreateChildContext(
 		}
 	}
 	else
-		pContext = SvXMLImportContext::CreateChildContext(nPrefix, rLocalName, 
+		pContext = SvXMLImportContext::CreateChildContext(nPrefix, rLocalName,
 														  xAttrList);
 
 	return pContext;
@@ -702,7 +702,7 @@ SvXMLImportContext *XMLImageMapContext::CreateChildContext(
 
 void XMLImageMapContext::EndElement()
 {
-	Reference < XPropertySetInfo > xInfo = 
+	Reference < XPropertySetInfo > xInfo =
 		xPropertySet->getPropertySetInfo();
 	if( xInfo.is() && xInfo->hasPropertyByName( sImageMap ) )
 		xPropertySet->setPropertyValue(sImageMap, uno::makeAny( xImageMap ) );

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -41,7 +41,7 @@
 // create the same md5 checksum for a (code/data) identical file it ignores a different
 // date and header checksum. Please see crashrep/source/win32/soreport.cpp
 // where the same method is also used. The crash reporter uses the MD5
-// checksums to transfer them to the crash database. You have to make sure that both 
+// checksums to transfer them to the crash database. You have to make sure that both
 // methods use the same algorithm otherwise there could be problems with stack reports.
 
 void normalize_pe_image(sal_uInt8* buffer, size_t nBufferSize)
@@ -51,7 +51,7 @@ void normalize_pe_image(sal_uInt8* buffer, size_t nBufferSize)
 	const int PE_SIGNATURE_SIZE = 4;
 	const int COFFHEADER_SIZE = 20;
 	const int OFFSET_PE_OPTIONALHEADER_CHECKSUM = 64;
-	
+
 	// Check the header part of the file buffer
 	if (buffer[0] == sal_uInt8('M') && buffer[1] == sal_uInt8('Z'))
 	{
@@ -117,8 +117,8 @@ rtlDigestError calc_md5_checksum( const char *filename, ByteString &aChecksum )
 					if (nBytesRead >= MINIMAL_SIZE && buffer[0] == sal_uInt8('M') && buffer[1] == sal_uInt8('Z') )
 						normalize_pe_image(buffer, nBytesRead);
 				}
-				
-				error = rtl_digest_updateMD5( digest, buffer, nBytesRead );	
+
+				error = rtl_digest_updateMD5( digest, buffer, nBytesRead );
 			}
 
 			if ( rtl_Digest_E_None == error )
@@ -131,7 +131,7 @@ rtlDigestError calc_md5_checksum( const char *filename, ByteString &aChecksum )
             for ( std::size_t i = 0; i < sizeof(checksum); i++ )
             {
                 if ( checksum[i] < 16 )
-                    aChecksum.Append( "0" ); 
+                    aChecksum.Append( "0" );
                 aChecksum += ByteString::CreateFromInt32( checksum[i], 16 );
             }
 		}

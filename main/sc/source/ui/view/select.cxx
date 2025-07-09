@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -594,18 +594,18 @@ sal_Bool ScViewFunctionSet::SetCursorAtCell( SCsCOL nPosX, SCsROW nPosY, sal_Boo
 				aAnchorPos.Set( nPosX, nPosY, nTab );
 				bStarted = sal_True;
 			}
-			// #i3875# *Hack* When a new cell is Ctrl-clicked with no pre-selected cells, 
-			// it highlights that new cell as well as the old cell where the cursor is 
-			// positioned prior to the click.  A selection mode via Shift-F8 should also 
+			// #i3875# *Hack* When a new cell is Ctrl-clicked with no pre-selected cells,
+			// it highlights that new cell as well as the old cell where the cursor is
+			// positioned prior to the click.  A selection mode via Shift-F8 should also
 			// follow the same behavior.
 			else if ( pViewData->IsSelCtrlMouseClick() )
 			{
 				SCCOL nOldX = pViewData->GetCurX();
 				SCROW nOldY = pViewData->GetCurY();
-				
+
 				pView->InitBlockMode( nOldX, nOldY, nTab, sal_True );
 				pView->MarkCursor( (SCCOL) nOldX, (SCROW) nOldY, nTab );
-				
+
 				if ( nOldX != nPosX || nOldY != nPosY )
 				{
 					pView->DoneBlockMode( sal_True );
@@ -613,7 +613,7 @@ sal_Bool ScViewFunctionSet::SetCursorAtCell( SCsCOL nPosX, SCsROW nPosY, sal_Boo
 					pView->MarkCursor( (SCCOL) nPosX, (SCROW) nPosY, nTab );
 					aAnchorPos.Set( nPosX, nPosY, nTab );
 				}
-				
+
 				bStarted = sal_True;
 			}
 		}

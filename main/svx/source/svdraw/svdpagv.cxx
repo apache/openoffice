@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -328,7 +328,7 @@ void SdrPageView::PrePaint()
     for(sal_uInt32 a(0); a < nCount; a++)
     {
         SdrPageWindow* pCandidate = GetPageWindow(a);
-        
+
         if(pCandidate)
         {
             pCandidate->PrePaint();
@@ -343,7 +343,7 @@ void SdrPageView::PostPaint()
     for(sal_uInt32 a(0); a < nCount; a++)
     {
         SdrPageWindow* pCandidate = GetPageWindow(a);
-        
+
         if(pCandidate)
         {
             pCandidate->PostPaint();
@@ -408,7 +408,7 @@ void SdrPageView::DrawLayer(SdrLayerID nID, OutputDevice* pGivenTarget, sdr::con
 
 				if(pPreparedTarget)
 				{
-					// if we have a prepared target, do not use a new SdrPageWindow since this 
+					// if we have a prepared target, do not use a new SdrPageWindow since this
 					// works but is expensive. Just use a temporary PaintWindow
 					SdrPaintWindow aTemporaryPaintWindow(mrView, *pGivenTarget);
 

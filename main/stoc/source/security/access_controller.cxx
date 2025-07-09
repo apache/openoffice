@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -89,21 +89,21 @@ class acc_Intersection
     : public WeakImplHelper1< security::XAccessControlContext >
 {
     Reference< security::XAccessControlContext > m_x1, m_x2;
-    
+
     inline acc_Intersection(
         Reference< security::XAccessControlContext > const & x1,
         Reference< security::XAccessControlContext > const & x2 )
         SAL_THROW( () );
-    
+
 public:
     virtual ~acc_Intersection()
         SAL_THROW( () );
-    
+
     static inline Reference< security::XAccessControlContext > create(
         Reference< security::XAccessControlContext > const & x1,
         Reference< security::XAccessControlContext > const & x2 )
         SAL_THROW( () );
-    
+
     // XAccessControlContext impl
     virtual void SAL_CALL checkPermission(
         Any const & perm )
@@ -152,21 +152,21 @@ class acc_Union
     : public WeakImplHelper1< security::XAccessControlContext >
 {
     Reference< security::XAccessControlContext > m_x1, m_x2;
-    
+
     inline acc_Union(
         Reference< security::XAccessControlContext > const & x1,
         Reference< security::XAccessControlContext > const & x2 )
         SAL_THROW( () );
-    
+
 public:
     virtual ~acc_Union()
         SAL_THROW( () );
-    
+
     static inline Reference< security::XAccessControlContext > create(
         Reference< security::XAccessControlContext > const & x1,
         Reference< security::XAccessControlContext > const & x2 )
         SAL_THROW( () );
-    
+
     // XAccessControlContext impl
     virtual void SAL_CALL checkPermission(
         Any const & perm )
@@ -221,14 +221,14 @@ class acc_Policy
     : public WeakImplHelper1< security::XAccessControlContext >
 {
     PermissionCollection m_permissions;
-    
+
 public:
     inline acc_Policy(
         PermissionCollection const & permissions )
         SAL_THROW( () );
     virtual ~acc_Policy()
         SAL_THROW( () );
-    
+
     // XAccessControlContext impl
     virtual void SAL_CALL checkPermission(
         Any const & perm )
@@ -262,23 +262,23 @@ class acc_CurrentContext
     : public ImplHelper1< XCurrentContext >
 {
     oslInterlockedCount m_refcount;
-    
+
     Reference< XCurrentContext > m_xDelegate;
     Any m_restriction;
-    
+
 public:
     inline acc_CurrentContext(
         Reference< XCurrentContext > const & xDelegate,
         Reference< security::XAccessControlContext > const & xRestriction )
         SAL_THROW( () );
     virtual ~acc_CurrentContext() SAL_THROW( () );
-    
+
     // XInterface impl
     virtual void SAL_CALL acquire()
         throw ();
     virtual void SAL_CALL release()
         throw ();
-    
+
     // XCurrentContext impl
     virtual Any SAL_CALL getValueByName( OUString const & name )
         throw (RuntimeException);
@@ -292,7 +292,7 @@ inline acc_CurrentContext::acc_CurrentContext(
     , m_xDelegate( xDelegate )
 {
     g_moduleCount.modCnt.acquire( &g_moduleCount.modCnt );
-    
+
     if (xRestriction.is())
     {
         m_restriction = makeAny( xRestriction );
@@ -404,14 +404,14 @@ class AccessController
     , public t_helper
 {
     Reference< XComponentContext > m_xComponentContext;
-    
+
     Reference< security::XPolicy > m_xPolicy;
     Reference< security::XPolicy > const & getPolicy()
         SAL_THROW( (RuntimeException) );
-    
+
     // mode
     enum Mode { OFF, ON, DYNAMIC_ONLY, SINGLE_USER, SINGLE_DEFAULT_USER } m_mode;
-    
+
     PermissionCollection m_defaultPermissions;
     // for single-user mode
     PermissionCollection m_singleUserPermissions;
@@ -421,31 +421,31 @@ class AccessController
     // for multi-user mode
     lru_cache< OUString, PermissionCollection, ::rtl::OUStringHash, equal_to< OUString > >
         m_user2permissions;
-    
+
     ThreadData m_rec;
     typedef vector< pair< OUString, Any > > t_rec_vec;
     inline void clearPostPoned() SAL_THROW( () );
     void checkAndClearPostPoned() SAL_THROW( (RuntimeException) );
-    
+
     PermissionCollection getEffectivePermissions(
         Reference< XCurrentContext > const & xContext,
         Any const & demanded_perm )
         SAL_THROW( (RuntimeException) );
-    
+
 protected:
     virtual void SAL_CALL disposing();
-    
+
 public:
     AccessController( Reference< XComponentContext > const & xComponentContext )
         SAL_THROW( (RuntimeException) );
     virtual ~AccessController()
         SAL_THROW( () );
-    
+
     //  XInitialization impl
     virtual void SAL_CALL initialize(
         Sequence< Any > const & arguments )
         throw (Exception);
-    
+
     // XAccessController impl
     virtual void SAL_CALL checkPermission(
         Any const & perm )
@@ -460,7 +460,7 @@ public:
         throw (Exception);
     virtual Reference< security::XAccessControlContext > SAL_CALL getContext()
         throw (RuntimeException);
-    
+
     // XServiceInfo impl
     virtual OUString SAL_CALL getImplementationName()
         throw (RuntimeException);
@@ -480,7 +480,7 @@ AccessController::AccessController( Reference< XComponentContext > const & xComp
     , m_rec( 0 )
 {
     g_moduleCount.modCnt.acquire( &g_moduleCount.modCnt );
-    
+
     OUString mode;
     if (m_xComponentContext->getValueByName( OUSTR("/services/" SERVICE_NAME "/mode") ) >>= mode)
     {
@@ -514,7 +514,7 @@ AccessController::AccessController( Reference< XComponentContext > const & xComp
             m_mode = SINGLE_DEFAULT_USER;
         }
     }
-    
+
     // switch on caching for DYNAMIC_ONLY and ON (sharable multi-user process)
     if (ON == m_mode || DYNAMIC_ONLY == m_mode)
     {
@@ -556,7 +556,7 @@ void AccessController::initialize(
     {
         throw RuntimeException(
             OUSTR("invalid call: ac must be in \"single-user\" mode!"), (OWeakObject *)this );
-    }    
+    }
     OUString userId;
     arguments[ 0 ] >>= userId;
     if (! userId.getLength())
@@ -704,7 +704,7 @@ PermissionCollection AccessController::getEffectivePermissions(
     SAL_THROW( (RuntimeException) )
 {
     OUString userId;
-    
+
     switch (m_mode)
     {
     case SINGLE_USER:
@@ -731,7 +731,7 @@ PermissionCollection AccessController::getEffectivePermissions(
             throw SecurityException(
                 OUSTR("cannot determine current user in multi-user ac!"), (OWeakObject *)this );
         }
-        
+
         // lookup policy for user
         MutexGuard guard( m_mutex );
         PermissionCollection const * pPermissions = m_user2permissions.lookup( userId );
@@ -743,7 +743,7 @@ PermissionCollection AccessController::getEffectivePermissions(
         OSL_ENSURE( 0, "### this should never be called in this ac mode!" );
         return PermissionCollection();
     }
-    
+
     // call on policy
     // iff this is a recurring call for the default user, then grant all permissions
     t_rec_vec * rec = reinterpret_cast< t_rec_vec * >( m_rec.getData() );
@@ -770,7 +770,7 @@ PermissionCollection AccessController::getEffectivePermissions(
         rec = new t_rec_vec;
         m_rec.setData( rec );
     }
-    
+
     try // calls on API
     {
         // init default permissions
@@ -789,9 +789,9 @@ PermissionCollection AccessController::getEffectivePermissions(
             dumpPermissions( m_defaultPermissions );
 #endif
         }
-        
+
         PermissionCollection ret;
-        
+
         // init user permissions
         switch (m_mode)
         {
@@ -839,7 +839,7 @@ PermissionCollection AccessController::getEffectivePermissions(
         default:
             break;
         }
-        
+
         // check postponed
         checkAndClearPostPoned();
         return ret;
@@ -887,10 +887,10 @@ void AccessController::checkPermission(
         throw lang::DisposedException(
             OUSTR("checkPermission() call on disposed AccessController!"), (OWeakObject *)this );
     }
-    
+
     if (OFF == m_mode)
         return;
-    
+
     // first dynamic check of ac contexts
     Reference< XCurrentContext > xContext;
     ::uno_getCurrentContext( (void **)&xContext, s_envType.pData, 0 );
@@ -899,10 +899,10 @@ void AccessController::checkPermission(
     {
         xACC->checkPermission( perm );
     }
-    
+
     if (DYNAMIC_ONLY == m_mode)
         return;
-    
+
     // then static check
     getEffectivePermissions( xContext, perm ).checkPermission( perm );
 }
@@ -917,15 +917,15 @@ Any AccessController::doRestricted(
         throw lang::DisposedException(
             OUSTR("doRestricted() call on disposed AccessController!"), (OWeakObject *)this );
     }
-    
+
     if (OFF == m_mode) // optimize this way, because no dynamic check will be performed
         return xAction->run();
-    
+
     if (xRestriction.is())
     {
         Reference< XCurrentContext > xContext;
         ::uno_getCurrentContext( (void **)&xContext, s_envType.pData, 0 );
-        
+
         // override restriction
         Reference< XCurrentContext > xNewContext(
             new acc_CurrentContext( xContext, acc_Intersection::create(
@@ -950,18 +950,18 @@ Any AccessController::doPrivileged(
         throw lang::DisposedException(
             OUSTR("doPrivileged() call on disposed AccessController!"), (OWeakObject *)this );
     }
-    
+
     if (OFF == m_mode) // no dynamic check will be performed
     {
         return xAction->run();
     }
-    
+
     Reference< XCurrentContext > xContext;
     ::uno_getCurrentContext( (void **)&xContext, s_envType.pData, 0 );
-    
+
     Reference< security::XAccessControlContext > xOldRestr(
         getDynamicRestriction( xContext ) );
-    
+
     if (xOldRestr.is()) // previous restriction
     {
         // override restriction
@@ -985,15 +985,15 @@ Reference< security::XAccessControlContext > AccessController::getContext()
         throw lang::DisposedException(
             OUSTR("getContext() call on disposed AccessController!"), (OWeakObject *)this );
     }
-    
+
     if (OFF == m_mode) // optimize this way, because no dynamic check will be performed
     {
         return new acc_Policy( PermissionCollection( new AllPermission() ) );
     }
-    
+
     Reference< XCurrentContext > xContext;
     ::uno_getCurrentContext( (void **)&xContext, s_envType.pData, 0 );
-    
+
     return acc_Intersection::create(
         getDynamicRestriction( xContext ),
         new acc_Policy( getEffectivePermissions( xContext, Any() ) ) );

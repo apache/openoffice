@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -45,9 +45,9 @@ class SelfTest
 public:
     SelfTest();
 } test;
-#endif    
+#endif
 
-SunVersion::SunVersion(const rtl::OUString &usVer): 
+SunVersion::SunVersion(const rtl::OUString &usVer):
     m_nUpdateSpecial(0), m_preRelease(Rel_NONE),
     usVersion(usVer)
 {
@@ -55,7 +55,7 @@ SunVersion::SunVersion(const rtl::OUString &usVer):
     rtl::OString sVersion= rtl::OUStringToOString(usVer, osl_getThreadTextEncoding());
     m_bValid = init(sVersion.getStr());
 }
-SunVersion::SunVersion(const char * szVer): 
+SunVersion::SunVersion(const char * szVer):
     m_nUpdateSpecial(0), m_preRelease(Rel_NONE)
 {
     memset(m_arVersionParts, 0, sizeof(m_arVersionParts));
@@ -70,7 +70,7 @@ bool SunVersion::init(const char *szVersion)
 {
     if ( ! szVersion || strlen(szVersion) == 0)
         return false;
-    
+
     //first get the major,minor,maintenance
     const char * pLast = szVersion;
     const char * pCur = szVersion;
@@ -105,26 +105,26 @@ bool SunVersion::init(const char *szVersion)
                 pCur + 1 == pEnd ? isdigit(*(pCur)) : 1) )
         {
             int len = pCur - pLast;
-            if (len >= 127) 
+            if (len >= 127)
                 return false;
 
             strncpy(buf, pLast, len);
             buf[len] = 0;
-            pCur ++; 
+            pCur ++;
             pLast = pCur;
-            
+
             m_arVersionParts[nPart] = atoi(buf);
             nPart ++;
             nPartPos = 0;
             if (nPart == 3)
                 break;
-            
+
             //check next character
-            if (! ( (pCur < pEnd) 
+            if (! ( (pCur < pEnd)
                     && ( (nPart < 3) && isdigit(*pCur)))) //(*pCur >= 48 && *pCur <=57))))
-                return false;                    
+                return false;
         }
-        else 
+        else
         {
             return false;
         }
@@ -179,9 +179,9 @@ bool SunVersion::init(const char *szVersion)
                 if (pCur < pEnd)
                     pCur ++;
                 else
-                    break;   
+                    break;
             }
-        }           
+        }
     }
     // 1.4.1-ea
     else if (*(pCur - 1) == '-')
@@ -189,7 +189,7 @@ bool SunVersion::init(const char *szVersion)
         m_preRelease = getPreRelease(pCur);
         if (m_preRelease == Rel_NONE)
             return false;
-#if defined(FREEBSD)        
+#if defined(FREEBSD)
       if (m_preRelease == Rel_FreeBSD)
       {
           pCur++; //elemnate `p'
@@ -203,7 +203,7 @@ bool SunVersion::init(const char *szVersion)
           m_nUpdateSpecial = atoi(buf)+100; //hack for FBSD #i56953#
           return true;
       }
-#endif        
+#endif
     }
     else
     {
@@ -247,7 +247,7 @@ SunVersion::PreRelease SunVersion::getPreRelease(const char *szRelease)
 #if defined (FREEBSD)
     else if (! strncmp(szRelease, "p", 1))
         return Rel_FreeBSD;
-#endif    
+#endif
     else
         return Rel_NONE;
 }
@@ -261,14 +261,14 @@ SunVersion::~SunVersion()
    a) 1.0 < 1.1
    b) 1.0 < 1.0.0
    c)  1.0 < 1.0_00
-   
+
    returns false if both values are equal
 */
 bool SunVersion::operator > (const SunVersion& ver) const
 {
     if( &ver == this)
         return false;
-    
+
     //compare major.minor.maintenance
     for( int i= 0; i < 4; i ++)
     {
@@ -284,13 +284,13 @@ bool SunVersion::operator > (const SunVersion& ver) const
     }
     //major.minor.maintenance_update are equal. test for a trailing char
     if (m_nUpdateSpecial > ver.m_nUpdateSpecial)
-    {   
+    {
         return true;
     }
 
 	//Until here the versions are equal
     //compare pre -release values
-	if ((m_preRelease == Rel_NONE && ver.m_preRelease == Rel_NONE) 
+	if ((m_preRelease == Rel_NONE && ver.m_preRelease == Rel_NONE)
 		||
 		(m_preRelease != Rel_NONE && ver.m_preRelease == Rel_NONE))
 		return false;
@@ -298,12 +298,12 @@ bool SunVersion::operator > (const SunVersion& ver) const
 		return true;
     else if (m_preRelease > ver.m_preRelease)
         return true;
-    
+
     return false;
 }
 
 bool SunVersion::operator < (const SunVersion& ver) const
-{        
+{
     return (! operator > (ver)) && (! operator == (ver));
 }
 
@@ -336,7 +336,7 @@ SelfTest::SelfTest()
     char const * versions[] = {"1.4.0", "1.4.1", "1.0.0", "10.0.0", "10.10.0",
                          "10.2.2", "10.10.0", "10.10.10", "111.0.999",
                          "1.4.1_01", "9.90.99_09", "1.4.1_99",
-                         "1.4.1_00a", 
+                         "1.4.1_00a",
                          "1.4.1-ea", "1.4.1-beta", "1.4.1-rc1",
                          "1.5.0_01-ea", "1.5.0_01-rc2",
                          "1.7.0_161"};
@@ -362,10 +362,10 @@ SelfTest::SelfTest()
         {
             bRet = false;
             break;
-        }            
+        }
 	}
     OSL_ENSURE(bRet, "SunVersion selftest failed");
-	//Parsing test (negative)    
+	//Parsing test (negative)
     for ( int i = 0; i < numBad; i++)
     {
         SunVersion ver(badVersions[i]);
@@ -397,7 +397,7 @@ SelfTest::SelfTest()
                 {
                     bRet = false;
                     break;
-                }      
+                }
             }
             else if ( i == j)
             {

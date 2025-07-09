@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
@@ -209,7 +209,7 @@ ImpGraphic::ImpGraphic( const BitmapEx& rBitmapEx ) :
 
 // ------------------------------------------------------------------------
 
-ImpGraphic::ImpGraphic(const SvgDataPtr& rSvgDataPtr) 
+ImpGraphic::ImpGraphic(const SvgDataPtr& rSvgDataPtr)
 :   mpAnimation( NULL ),
     mpContext( NULL ),
     mpSwapFile( NULL ),
@@ -354,8 +354,8 @@ sal_Bool ImpGraphic::operator==( const ImpGraphic& rImpGraphic ) const
                         if(maSvgData->getSvgDataArrayLength() == rImpGraphic.maSvgData->getSvgDataArrayLength())
                         {
                             if(0 == memcmp(
-                                maSvgData->getSvgDataArray().get(), 
-                                rImpGraphic.maSvgData->getSvgDataArray().get(), 
+                                maSvgData->getSvgDataArray().get(),
+                                rImpGraphic.maSvgData->getSvgDataArray().get(),
                                 maSvgData->getSvgDataArrayLength()))
                             {
                                 bRet = sal_True;
@@ -986,7 +986,7 @@ void ImpGraphic::ImplDraw( OutputDevice* pOutDev,
                     // use maEx as local buffer for rendered svg
                     const_cast< ImpGraphic* >(this)->maEx = maSvgData->getReplacement();
                 }
-				
+
                 if( mpAnimation )
                 {
 					mpAnimation->Draw( pOutDev, rDestPt, rDestSize );
@@ -1672,7 +1672,7 @@ sal_uLong ImpGraphic::ImplGetChecksum() const
                     // use maEx as local buffer for rendered svg
                     const_cast< ImpGraphic* >(this)->maEx = maSvgData->getReplacement();
                 }
-				
+
                 if( mpAnimation )
                 {
 					nRet = mpAnimation->GetChecksum();
@@ -1720,9 +1720,9 @@ sal_Bool ImpGraphic::ImplExportNative( SvStream& rOStm ) const
 
 // ------------------------------------------------------------------------
 
-const SvgDataPtr& ImpGraphic::getSvgData() const 
-{ 
-    return maSvgData; 
+const SvgDataPtr& ImpGraphic::getSvgData() const
+{
+    return maSvgData;
 }
 
 // ------------------------------------------------------------------------

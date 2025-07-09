@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -337,8 +337,8 @@ InternalDataProvider::InternalDataProvider( const Reference< uno::XComponentCont
     : m_bDataInColumns( true )
 {}
 
-InternalDataProvider::InternalDataProvider( 
-    const Reference< chart2::XChartDocument > & xChartDoc, 
+InternalDataProvider::InternalDataProvider(
+    const Reference< chart2::XChartDocument > & xChartDoc,
     bool bConnectToModel,
     bool bDefaultDataInColumns)
 :   m_bDataInColumns( bDefaultDataInColumns )
@@ -357,7 +357,7 @@ InternalDataProvider::InternalDataProvider(
                 bool bHasCategories = true;
                 uno::Sequence< sal_Int32 > aSequenceMapping;
                 const bool bSomethingDetected(
-                    DataSourceHelper::detectRangeSegmentation( 
+                    DataSourceHelper::detectRangeSegmentation(
                         xChartModel, aRangeString, aSequenceMapping, m_bDataInColumns, bFirstCellAsLabel, bHasCategories ));
 
                 // #120559# if no data was available, restore default
@@ -372,7 +372,7 @@ InternalDataProvider::InternalDataProvider(
                 vector< vector< uno::Any > > aNewCategories;//inner count is level
                 {
                     ExplicitCategoriesProvider aExplicitCategoriesProvider( ChartModelHelper::getFirstCoordinateSystem(xChartModel), xChartModel );
-                    
+
                     const Sequence< Reference< chart2::data::XLabeledDataSequence> >& rSplitCategoriesList( aExplicitCategoriesProvider.getSplitCategoriesList() );
                     sal_Int32 nLevelCount = rSplitCategoriesList.getLength();
                     for( sal_Int32 nL = 0; nL<nLevelCount; nL++ )
@@ -602,7 +602,7 @@ Reference< chart2::data::XDataSource > SAL_CALL InternalDataProvider::createData
         //don't add the created sequences to the map as they are used temporarily only ...
         return new DataSource( ContainerHelper::ContainerToSequence(aComplexCategories) );
     }
-    
+
     OSL_ASSERT( aRangeRepresentation.equals( lcl_aCompleteRange ));
 
     ::std::vector< Reference< chart2::data::XLabeledDataSequence > > aResultLSeqVec;
@@ -861,7 +861,7 @@ void SAL_CALL InternalDataProvider::setDataByRangeRepresentation(
 
         transform( aComplexCategories.begin(), aComplexCategories.end(), aNewVector.begin(),
                    aComplexCategories.begin(), lcl_setAnyAtLevel(nLevel) );
-        
+
         if( m_bDataInColumns )
             m_aInternalData.setComplexRowLabels( aComplexCategories );
         else
@@ -1280,7 +1280,7 @@ void SAL_CALL InternalDataProvider::setDateCategories( const Sequence< double >&
     vector< vector< uno::Any > > aNewCategories;
     aNewCategories.reserve(nCount);
     vector< uno::Any > aSingleLabel(1);
-    
+
     for(sal_Int32 nN=0; nN<nCount; ++nN )
     {
         aSingleLabel[0]=uno::makeAny(rDates[nN]);

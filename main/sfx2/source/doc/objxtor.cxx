@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -134,7 +134,7 @@ static VBAConstantNameMap s_aRegisteredVBAConstants;
     VBAConstantNameMap::iterator aIt = s_aRegisteredVBAConstants.find( rxComponent.get() );
     if( aIt != s_aRegisteredVBAConstants.end() )
         return aIt->second;
-    
+
     uno::Reference< beans::XPropertySet > xProps( rxComponent, uno::UNO_QUERY );
     if( xProps.is() ) try
     {
@@ -842,11 +842,11 @@ void SfxObjectShell::InitBasicManager_Impl()
         function BasicManagerRepository::getDocumentBasicManager() has been
         changed to return the Basic manager currently under construction, when
         called repeatedly.
-        
+
         The variable pImp->bBasicInitialized will be set to sal_True after
         construction now, to ensure that the recursive call of the function
         lcl_getBasicManagerForDocument() will be routed into this function too.
-        
+
         Calling BasicManagerHolder::reset() twice is not a big problem, as it
         does not take ownership but stores only the raw pointer. Owner of all
         Basic managers is the global BasicManagerRepository instance.
@@ -1140,7 +1140,7 @@ bool SfxObjectShell::IsChangeRecording() const
     return false;
 }
 
-    
+
 bool SfxObjectShell::HasChangeRecordProtection() const
 {
     // currently this function needs to be overwritten by Writer and Calc only
@@ -1148,20 +1148,20 @@ bool SfxObjectShell::HasChangeRecordProtection() const
     return false;
 }
 
-    
+
 void SfxObjectShell::SetChangeRecording( bool /*bActivate*/ )
 {
     // currently this function needs to be overwritten by Writer and Calc only
     DBG_ASSERT( 0, "function not implemented" );
 }
 
-    
+
 bool SfxObjectShell::SetProtectionPassword( const String & /*rPassword*/ )
 {
     // currently this function needs to be overwritten by Writer and Calc only
     DBG_ASSERT( 0, "function not implemented" );
     return false;
-}    
+}
 
 
 bool SfxObjectShell::GetProtectionHash( /*out*/ ::com::sun::star::uno::Sequence< sal_Int8 > & /*rPasswordHash*/ )
@@ -1169,4 +1169,4 @@ bool SfxObjectShell::GetProtectionHash( /*out*/ ::com::sun::star::uno::Sequence<
     // currently this function needs to be overwritten by Writer and Calc only
     DBG_ASSERT( 0, "function not implemented" );
     return false;
-}    
+}

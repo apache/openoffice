@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -65,19 +65,19 @@ namespace dxcanvas
                             return 1L << rBIH.biBitCount;
                     }
                 }
-                else 
+                else
                 {
                     BITMAPCOREHEADER* pCoreHeader = (BITMAPCOREHEADER*)&rBIH;
 
                     if( pCoreHeader->bcBitCount <= 8 )
                         return 1L << pCoreHeader->bcBitCount;
                 }
-                
+
                 return 0; // nothing known
             }
 
             /// Draw DI bits to given Graphics
-            bool drawDIBits( const ::boost::shared_ptr< Gdiplus::Graphics >& rGraphics, 
+            bool drawDIBits( const ::boost::shared_ptr< Gdiplus::Graphics >& rGraphics,
                              const void* 									 hDIB )
             {
                 bool 			bRet( false );
@@ -107,7 +107,7 @@ namespace dxcanvas
                 Reference to bitmap. Might get modified, in such a way
                 that it will hold a DIB after a successful function call.
              */
-            bool drawVCLBitmap( const ::boost::shared_ptr< Gdiplus::Graphics >&	rGraphics, 
+            bool drawVCLBitmap( const ::boost::shared_ptr< Gdiplus::Graphics >&	rGraphics,
                                 ::Bitmap& 										rBmp )
             {
                 BitmapSystemData aBmpSysData;
@@ -175,7 +175,7 @@ namespace dxcanvas
 
                 ScopedBitmapReadAccess pReadAccess( aBitmap.AcquireReadAccess(),
                                                     aBitmap );
-                    
+
                 const sal_Int32 nWidth( aBmpSize.Width() );
                 const sal_Int32 nHeight( aBmpSize.Height() );
 
@@ -192,14 +192,14 @@ namespace dxcanvas
 
                     // By convention, the access buffer always has
                     // one of the following formats:
-                    // 
+                    //
                     //    BMP_FORMAT_1BIT_MSB_PAL
                     //	  BMP_FORMAT_4BIT_MSN_PAL
                     //	  BMP_FORMAT_8BIT_PAL
                     //	  BMP_FORMAT_16BIT_TC_LSB_MASK
                     //	  BMP_FORMAT_24BIT_TC_BGR
                     //	  BMP_FORMAT_32BIT_TC_MASK
-                    // 
+                    //
                     // and is always BMP_FORMAT_BOTTOM_UP
                     //
                     // This is the way
@@ -335,14 +335,14 @@ namespace dxcanvas
 
                     // By convention, the access buffer always has
                     // one of the following formats:
-                    // 
+                    //
                     //    BMP_FORMAT_1BIT_MSB_PAL
                     //	  BMP_FORMAT_4BIT_MSN_PAL
                     //	  BMP_FORMAT_8BIT_PAL
                     //	  BMP_FORMAT_16BIT_TC_LSB_MASK
                     //	  BMP_FORMAT_24BIT_TC_BGR
                     //	  BMP_FORMAT_32BIT_TC_MASK
-                    // 
+                    //
                     // and is always BMP_FORMAT_BOTTOM_UP
                     //
                     // This is the way
@@ -438,7 +438,7 @@ namespace dxcanvas
                                 for( x=0, nCurrBit=nInitialBit; x<nWidth; ++x )
                                 {
                                     // yes. x and y are swapped on Get/SetPixel
-                                    aCol = pReadAccess->GetColor(y,x);                            
+                                    aCol = pReadAccess->GetColor(y,x);
 
                                     // store as RGBA
                                     *pCurrOutput++ = aCol.GetBlue();
@@ -483,10 +483,10 @@ namespace dxcanvas
                 return aBmpData;
             }
 
-            bool drawVCLBitmapEx( const ::boost::shared_ptr< Gdiplus::Graphics >& rGraphics, 
+            bool drawVCLBitmapEx( const ::boost::shared_ptr< Gdiplus::Graphics >& rGraphics,
                                   const ::BitmapEx& 							  rBmpEx )
             {
-                if( !rBmpEx.IsTransparent() ) 
+                if( !rBmpEx.IsTransparent() )
                 {
                     Bitmap aBmp( rBmpEx.GetBitmap() );
                     return drawVCLBitmap( rGraphics, aBmp );
@@ -499,11 +499,11 @@ namespace dxcanvas
             }
         }
 
-        bool drawVCLBitmapFromXBitmap( const ::boost::shared_ptr< Gdiplus::Graphics >& rGraphics, 
+        bool drawVCLBitmapFromXBitmap( const ::boost::shared_ptr< Gdiplus::Graphics >& rGraphics,
                                        const uno::Reference< rendering::XBitmap >&	   xBitmap )
         {
             // TODO(F2): add support for floating point bitmap formats
-            uno::Reference< rendering::XIntegerReadOnlyBitmap > xIntBmp( 
+            uno::Reference< rendering::XIntegerReadOnlyBitmap > xIntBmp(
                 xBitmap, uno::UNO_QUERY );
 
             if( !xIntBmp.is() )

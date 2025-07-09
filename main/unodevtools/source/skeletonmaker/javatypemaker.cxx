@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -204,7 +204,7 @@ void printMethodParameters(std::ostream & o,
             o << ", ";
         else
             previous = true;
-        
+
         if ( withtype ) {
             printType(o, options, manager,
                       codemaker::convertString(
@@ -261,7 +261,7 @@ void printSetPropertyMixinBody(std::ostream & o,
     bool bound = (reader.getFieldFlags(field) & RT_ACCESS_BOUND ? true : false);
 
     o << "\n" << indentation << "{\n";
-    
+
     if ( bound ) {
         o << indentation << "    PropertySetMixin.BoundListeners l = "
             "new PropertySetMixin.BoundListeners();\n\n";
@@ -284,7 +284,7 @@ void printSetPropertyMixinBody(std::ostream & o,
 			OStringBuffer buffer(16);
             buffer.append("((");
             buffer.append(s.copy(s.lastIndexOf('/')+1));
-            buffer.append(')');            
+            buffer.append(')');
 			OString t = buffer.makeStringAndClear();
 
             if ( t.equals("((Optional)") ) {
@@ -299,22 +299,22 @@ void printSetPropertyMixinBody(std::ostream & o,
                     buffer2.insert(0, t);
                     buffer2.append(").Value");
                 }
-            } else {                
+            } else {
                 if ( single ) {
                     single=false;
                     if ( !optional ) {
-                        buffer1.append("the_value.Value");                        
+                        buffer1.append("the_value.Value");
                     }
                     buffer2.append("the_value.Value");
                 } else {
                     if ( !optional ) {
                         buffer1.insert(0, t);
-                        buffer1.append(").Value");                        
+                        buffer1.append(").Value");
                     }
                     buffer2.insert(0, t);
-                    buffer2.append(").Value");                    
+                    buffer2.append(").Value");
                 }
-            }            
+            }
         } while( nPos <= index );
 
         o << "Any.VOID,\n" << indentation << "        ";
@@ -325,15 +325,15 @@ void printSetPropertyMixinBody(std::ostream & o,
 			o << ") ? " << buffer2.makeStringAndClear() << " : Any.VOID,\n"
               << indentation << "        ";
         else
-            o << ", ";        
+            o << ", ";
     }
-    
+
     if ( bound )
         o << "l";
     else
         o << "null";
-    o << ");\n";    
-    
+    o << ");\n";
+
     o << indentation << "    synchronized (this) {\n"
       << indentation << "        m_" << fieldname
       << " = the_value;\n" << indentation << "    }\n";
@@ -358,8 +358,8 @@ void printMethods(std::ostream & o,
     OString type(codemaker::convertString(reader.getTypeName()));
     if ( generated.contains(type) || type == "com/sun/star/uno/XInterface" ||
          ( defaultvalue &&
-           ( type.equals("com/sun/star/lang/XComponent") || 
-             type.equals("com/sun/star/lang/XTypeProvider") || 
+           ( type.equals("com/sun/star/lang/XComponent") ||
+             type.equals("com/sun/star/lang/XTypeProvider") ||
              type.equals("com/sun/star/uno/XWeak") ) ) ) {
         return;
     }
@@ -379,11 +379,11 @@ void printMethods(std::ostream & o,
             return;
         }
     }
-    
+
     static OString sd(RTL_CONSTASCII_STRINGPARAM("_"));
     bool body = ((delegate.getLength() > 0) ? true : false);
     bool defaultbody = ((delegate.equals(sd)) ? true : false);
-    
+
     generated.add(type);
     if ( options.all || defaultvalue ) {
         for (sal_uInt16 i = 0; i < reader.getSuperTypeCount(); ++i) {
@@ -417,7 +417,7 @@ void printMethods(std::ostream & o,
 //         attributes.insert(StringPairHashMap::value_type(fieldName,
 //                               std::pair<OString, sal_Int16>(
 //                                   fieldType, reader.getFieldFlags(i))));
-        
+
         o << indentation << "public ";
         printType(o,
             options, manager,
@@ -475,7 +475,7 @@ void printMethods(std::ostream & o,
               << (codemaker::convertString(reader.getFieldName(i)).
                   getStr())
               << '(';
-            printType(o, 
+            printType(o,
                 options, manager,
                 codemaker::convertString(reader.getFieldTypeName(i)),
                 false);
@@ -510,14 +510,14 @@ void printMethods(std::ostream & o,
     }
     for ( ; method < reader.getMethodCount(); ++method ) {
         o << indentation << "public ";
-        printType(o, 
+        printType(o,
             options, manager,
             codemaker::convertString(
                 reader.getMethodReturnTypeName(method)),
             false);
-        
+
         const OString methodName(codemaker::convertString(reader.getMethodName(method)));
-        
+
         o << ' ' << methodName.getStr() << '(';
         printMethodParameters(o, options, manager, reader, method, false, true);
         o << ')';
@@ -537,7 +537,7 @@ void printMethods(std::ostream & o,
                         " in Java and C++\n" << indentation
                       << "    // polymorphic structs.\n" << indentation
                       << "    return ";
-                    printType(o, 
+                    printType(o,
                         options, manager,
                         codemaker::convertString(
                             reader.getMethodReturnTypeName(method)),
@@ -604,7 +604,7 @@ void printServiceMembers(std::ostream & o,
         OString referenceType(
             codemaker::convertString(
                 reader.getReferenceTypeName(i)).replace('/', '.'));
-        
+
         if ( reader.getReferenceSort(i) == RT_REF_SUPPORTS ) {
             o << "\n// supported interface " << referenceType.getStr() << "\n";
             generateDocumentation(o, options, manager, referenceType, delegate);
@@ -626,7 +626,7 @@ void printServiceMembers(std::ostream & o,
         o << " "
           << codemaker::java::translateUnoToJavaIdentifier(
               fieldName, "property").getStr()
-          << ";\n";        
+          << ";\n";
     }
 }
 
@@ -644,7 +644,7 @@ void printMapsToJavaType(std::ostream & o,
     if ( rank == 0 && name == "com/sun/star/uno/XInterface" ) {
         o << "com.sun.star.uno.XInterface";
     } else {
-        printType(o, 
+        printType(o,
             options, manager, sort, typeClass, name, rank, arguments, false);
     }
     o << '"';
@@ -673,7 +673,7 @@ void generateDocumentation(std::ostream & o,
 
         comment=false;
     }
-    
+
     if ( comment ) {
         o << "\n// UNO";
         if ( rank > 0 ) {
@@ -689,11 +689,11 @@ void generateDocumentation(std::ostream & o,
             case RT_TYPE_INTERFACE:
                 o << " interface type";
                 break;
-                
+
             case RT_TYPE_MODULE:
                 o << "IDL module";
                 break;
-                
+
             case RT_TYPE_STRUCT:
                 if ( reader.getReferenceCount() == 0 ) {
                     o << " simple struct type";
@@ -703,19 +703,19 @@ void generateDocumentation(std::ostream & o,
                     o << " instantiated polymorphic struct type";
                 }
                 break;
-                
+
             case RT_TYPE_ENUM:
                 o << " enum type";
                 break;
-                
+
             case RT_TYPE_EXCEPTION:
                 o << " exception type";
                 break;
-                
+
             case RT_TYPE_TYPEDEF:
                 o << "IDL typedef";
                 break;
-                
+
             case RT_TYPE_SERVICE:
                 if ( reader.getSuperTypeCount() > 0 ) {
                     o << " single-inheritance--based service";
@@ -723,7 +723,7 @@ void generateDocumentation(std::ostream & o,
                     o << "IDL accumulation-based service";
                 }
                 break;
-                
+
             case RT_TYPE_SINGLETON:
                 if ( (manager.getTypeReader(
                           codemaker::convertString(
@@ -735,11 +735,11 @@ void generateDocumentation(std::ostream & o,
                     o << "IDL service-based singleton";
                 }
                 break;
-                
+
             case RT_TYPE_CONSTANTS:
                 o << "IDL constant group";
                 break;
-                
+
             default:
                 OSL_ASSERT(false);
                 break;
@@ -751,11 +751,11 @@ void generateDocumentation(std::ostream & o,
         manager, binType, true, true, true, &typeClass, &name, &rank,
         &arguments);
     if ( rank > 0 ) {
-        printMapsToJavaType(o, 
+        printMapsToJavaType(o,
             options, manager, sort, typeClass, name, rank, arguments, "array");
         o << '\n';
     } else if ( sort != codemaker::UnoType::SORT_COMPLEX ) {
-        printMapsToJavaType(o, 
+        printMapsToJavaType(o,
             options, manager, sort, typeClass, name, rank, arguments, 0);
         o << '\n';
     } else {
@@ -781,7 +781,7 @@ void generateDocumentation(std::ostream & o,
             break;
 
         case RT_TYPE_MODULE:
-            printMapsToJavaType(o, 
+            printMapsToJavaType(o,
                 options, manager, sort, typeClass, name, rank, arguments,
                 "package");
             o << '\n';

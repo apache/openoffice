@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 #undef UNICODE
@@ -90,7 +90,7 @@ static BOOL rebaseImage( const std::string& filePath, LPVOID address )
 	ULONG_PTR lpOldImageBase;
 	ULONG ulNewImageSize;
 	ULONG_PTR lpNewImageBase = reinterpret_cast<ULONG_PTR>(address);
-	
+
 	BOOL bResult = ReBaseImage(
 		filePath.c_str(),
 		"",
@@ -103,7 +103,7 @@ static BOOL rebaseImage( const std::string& filePath, LPVOID address )
 		&ulNewImageSize,
 		&lpNewImageBase,
 		(ULONG)time(NULL) );
-	
+
 	return bResult;
 }
 
@@ -113,7 +113,7 @@ static BOOL rebaseImage( MSIHANDLE /*handle*/, const std::string& sFilePath, LPV
 	mystr = "Full file: " + sFilePath;
 
 	BOOL bResult = rebaseImage( sFilePath, address );
-	
+
 	if ( !bResult )
 	{
 		OutputDebugStringFormat( "Rebasing library %s failed", mystr.c_str() );
@@ -146,7 +146,7 @@ static BOOL rebaseImagesInFolder( MSIHANDLE handle, const std::string& sPath, LP
 			{
 				OutputDebugStringFormat( "Exclude library %s from rebase", sFileName.c_str() );
 			}
-			
+
 			fSuccess = FindNextFile( hFind, &aFindFileData );
 		}
 		while ( fSuccess );
@@ -160,15 +160,15 @@ static BOOL rebaseImagesInFolder( MSIHANDLE handle, const std::string& sPath, LP
 static BOOL rebaseImages( MSIHANDLE handle, LPVOID pAddress, ExcludeLibsMap& rMap )
 {
 	std::string sInstallPath = GetMsiProperty(handle, TEXT("INSTALLLOCATION"));
- 
+
 	std::string sBasisDir  = sInstallPath + TEXT("Basis\\program\\");
 	std::string sOfficeDir = sInstallPath + TEXT("program\\");
 	std::string sUreDir    = sInstallPath + TEXT("URE\\bin\\");
-	
+
 	BOOL bResult = rebaseImagesInFolder( handle, sBasisDir, pAddress, rMap );
 	bResult &= rebaseImagesInFolder( handle, sOfficeDir, pAddress, rMap );
 	bResult &= rebaseImagesInFolder( handle, sUreDir, pAddress, rMap );
-	
+
 	return bResult;
 }
 
@@ -195,11 +195,11 @@ static void InitExcludeFromRebaseList( MSIHANDLE handle, ExcludeLibsMap& rMap )
 	size_t      nPos( 0 );
     const TCHAR cDelim = ',';
 	std::string sLibsExcluded = GetMsiProperty(handle, TEXT("EXCLUDE_FROM_REBASE"));
-	
+
     while ( nPos < sLibsExcluded.size() )
 	{
 	    size_t nDelPos = sLibsExcluded.find_first_of( cDelim, nPos );
-		
+
 		std::string sExcludedLibName;
 		if ( nDelPos != std::string::npos )
 		{
@@ -211,7 +211,7 @@ static void InitExcludeFromRebaseList( MSIHANDLE handle, ExcludeLibsMap& rMap )
 			sExcludedLibName = sLibsExcluded.substr( nPos );
 			nPos = sLibsExcluded.size();
 		}
-		
+
 		if ( sExcludedLibName.size() > 0 )
 		{
 			OutputDebugStringFormat( "Insert library %s into exclude from rebase list", sExcludedLibName.c_str() );
@@ -223,7 +223,7 @@ static void InitExcludeFromRebaseList( MSIHANDLE handle, ExcludeLibsMap& rMap )
 extern "C" BOOL __stdcall RebaseLibrariesOnProperties( MSIHANDLE handle )
 {
 	static LPVOID pDefault = reinterpret_cast<LPVOID>(0x10000000);
-	
+
 	OutputDebugStringFormat( "RebaseLibrariesOnProperties has been called" );
 	std::string sDontOptimizeLibs = GetMsiProperty(handle, TEXT("DONTOPTIMIZELIBS"));
 	if ( sDontOptimizeLibs.length() > 0 && sDontOptimizeLibs == "1" )
@@ -231,7 +231,7 @@ extern "C" BOOL __stdcall RebaseLibrariesOnProperties( MSIHANDLE handle )
         OutputDebugStringFormat( "Don't optimize libraries set. No rebase necessary!" );
 		return TRUE;
 	}
-	
+
 	if ( !IsServerSystem( handle ))
 	{
 		ExcludeLibsMap aExcludeLibsMap;

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -251,7 +251,7 @@ sal_Bool OTableGrantControl::SaveModified()
 	sal_Bool bErg = sal_True;
 	try
 	{
-		
+
 		if ( m_xUsers->hasByName(m_sUserName) )
 		{
 			Reference<XAuthorizable> xAuth(m_xUsers->getByName(m_sUserName),UNO_QUERY);
@@ -304,7 +304,7 @@ String OTableGrantControl::GetCellText( long nRow, sal_uInt16 nColId ) const
 	DBG_CHKTHIS(OTableGrantControl,NULL);
 	if(COL_TABLE_NAME == nColId)
 		return m_aTableNames[nRow];
-	
+
 	sal_Int32 nPriv = 0;
 	TTablePrivilegeMap::const_iterator aFind = findPrivilege(nRow);
 	if(aFind != m_aPrivMap.end())
@@ -331,7 +331,7 @@ void OTableGrantControl::InitController( CellControllerRef& /*rController*/, lon
 // -----------------------------------------------------------------------------
 void OTableGrantControl::fillPrivilege(sal_Int32 _nRow)	const
 {
-	
+
 	if ( m_xUsers->hasByName(m_sUserName) )
 	{
 		try
@@ -442,7 +442,7 @@ sal_Bool OTableGrantControl::SeekRow( long nRow )
 void OTableGrantControl::PaintCell( OutputDevice& rDev, const Rectangle& rRect, sal_uInt16 nColumnId ) const
 {
 	DBG_CHKTHIS(OTableGrantControl,NULL);
-	
+
 	if(nColumnId != COL_TABLE_NAME)
 	{
 		TTablePrivilegeMap::const_iterator aFind = findPrivilege(m_nDataPos);

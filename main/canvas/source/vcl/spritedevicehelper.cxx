@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
@@ -58,7 +58,7 @@ namespace vclcanvas
         mpBackBuffer->getOutDev().SetAntialiasing( ANTIALIASING_ENABLE_B2DDRAW | mpBackBuffer->getOutDev().GetAntialiasing() );
 #else
         // switch off AA for WIN32 and UNIX, the VCLCanvas does not look good with it and
-        // is not required to do AA. It would need to be adapted to use it correctly 
+        // is not required to do AA. It would need to be adapted to use it correctly
         // (especially gradient painting). This will need extra work.
         mpBackBuffer->getOutDev().SetAntialiasing(mpBackBuffer->getOutDev().GetAntialiasing() & ~ANTIALIASING_ENABLE_B2DDRAW);
 #endif
@@ -98,30 +98,30 @@ namespace vclcanvas
 
         DeviceHelper::disposing();
     }
-       
+
     uno::Any SpriteDeviceHelper::isAccelerated() const
     {
         return DeviceHelper::isAccelerated();
     }
-  
+
     uno::Any SpriteDeviceHelper::getDeviceHandle() const
     {
         return DeviceHelper::getDeviceHandle();
     }
-  
+
     uno::Any SpriteDeviceHelper::getSurfaceHandle() const
     {
         if( !mpBackBuffer )
             return uno::Any();
 
-        return uno::makeAny( 
+        return uno::makeAny(
             reinterpret_cast< sal_Int64 >(&mpBackBuffer->getOutDev()) );
     }
 
     void SpriteDeviceHelper::notifySizeUpdate( const awt::Rectangle& rBounds )
     {
         if( mpBackBuffer )
-            mpBackBuffer->setSize( ::Size(rBounds.Width, 
+            mpBackBuffer->setSize( ::Size(rBounds.Width,
                                           rBounds.Height) );
     }
 
@@ -136,9 +136,9 @@ namespace vclcanvas
             String aFilename( String::CreateFromAscii("dbg_backbuffer") );
             aFilename += String::CreateFromInt32(nFilePostfixCount);
             aFilename += String::CreateFromAscii(".bmp");
-                
+
             SvFileStream aStream( aFilename, STREAM_STD_READWRITE );
-                
+
             const ::Point aEmptyPoint;
             mpBackBuffer->getOutDev().EnableMapMode( sal_False );
             mpBackBuffer->getOutDev().SetAntialiasing( ANTIALIASING_ENABLE_B2DDRAW );
@@ -147,5 +147,5 @@ namespace vclcanvas
 
         ++nFilePostfixCount;
     }
-    
+
 }

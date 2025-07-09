@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
@@ -632,7 +632,7 @@ void SwFlyDrawContact::MoveObjToInvisibleLayer( SdrObject* _pDrawObj )
 void SwFlyDrawContact::GetAnchoredObjs( std::list<SwAnchoredObject*>& _roAnchoredObjs ) const
 {
     const SwFrmFmt* pFmt = GetFmt();
-    SwFlyFrm::GetAnchoredObjects( _roAnchoredObjs, *pFmt ); 
+    SwFlyFrm::GetAnchoredObjects( _roAnchoredObjs, *pFmt );
 }
 
 /*************************************************************************
@@ -1363,7 +1363,7 @@ void SwDrawContact::_Changed( const SdrObject& rObj,
                             maAnchoredDrawObj.DrawObj()->SetLayer(aInvisibleControlLayerID);
                         }
                         else
-                        {        
+                        {
                             maAnchoredDrawObj.DrawObj()->SetLayer(aControlLayerID);
                         }
                     }
@@ -1503,7 +1503,7 @@ void SwDrawContact::_Changed( const SdrObject& rObj,
                     // of as-character anchored object
                     if ( bAnchoredAsChar )
                     {
-                        //-->Modified for i119654,2012.6.8                        
+                        //-->Modified for i119654,2012.6.8
                         SwFrm* pAnchorFrame = pAnchoredDrawObj
                                               ? const_cast<SwAnchoredDrawObject*>( pAnchoredDrawObj )->AnchorFrm()
                                               : NULL;
@@ -2178,9 +2178,9 @@ void SwDrawContact::GetAnchoredObjs( std::list<SwAnchoredObject*>& _roAnchoredOb
 }
 
 //////////////////////////////////////////////////////////////////////////////////////
-// AW: own sdr::contact::ViewContact (VC) sdr::contact::ViewObjectContact (VOC) needed 
-// since offset is defined different from SdrVirtObj's sdr::contact::ViewContactOfVirtObj. 
-// For paint, that offset is used by setting at the OutputDevice; for primitives this is 
+// AW: own sdr::contact::ViewContact (VC) sdr::contact::ViewObjectContact (VOC) needed
+// since offset is defined different from SdrVirtObj's sdr::contact::ViewContactOfVirtObj.
+// For paint, that offset is used by setting at the OutputDevice; for primitives this is
 // not possible since we have no OutputDevice, but define the geometry itself.
 
 namespace sdr
@@ -2221,7 +2221,7 @@ namespace sdr
             {
             }
 			virtual ~VCOfDrawVirtObj();
-			
+
             // access to SwDrawVirtObj
             SwDrawVirtObj& GetSwDrawVirtObj() const
             {
@@ -2344,7 +2344,7 @@ namespace sdr
 			    const drawinglayer::primitive2d::Primitive2DReference xReference(new drawinglayer::primitive2d::TransformPrimitive2D(aOffsetMatrix, xRetval));
                 xRetval = drawinglayer::primitive2d::Primitive2DSequence(&xReference, 1);
 		    }
-            
+
             return xRetval;
         }
 

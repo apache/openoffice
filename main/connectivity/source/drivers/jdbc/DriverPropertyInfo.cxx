@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -70,7 +70,7 @@ java_sql_DriverPropertyInfo::operator starsdbc::DriverPropertyInfo()
 {
 	::rtl::OUString aStr;
     SDBThreadAttach t; OSL_ENSURE(t.pEnv,"Java Environment been deleted!");
-	
+
 	{
 		jfieldID id = t.pEnv->GetFieldID(getMyClass(),"name","Ljava/lang/String;");
 		if(id)
@@ -83,7 +83,7 @@ java_sql_DriverPropertyInfo::operator starsdbc::DriverPropertyInfo()
 {
 	::rtl::OUString aStr;
     SDBThreadAttach t; OSL_ENSURE(t.pEnv,"Java Environment been deleted!");
-	
+
 	{
 		jfieldID id = t.pEnv->GetFieldID(getMyClass(),"description","Ljava/lang/String;");
 		if(id)
@@ -96,7 +96,7 @@ java_sql_DriverPropertyInfo::operator starsdbc::DriverPropertyInfo()
 {
 	::rtl::OUString aStr;
     SDBThreadAttach t; OSL_ENSURE(t.pEnv,"Java Environment been deleted!");
-	
+
 	{
 		jfieldID id = t.pEnv->GetFieldID(getMyClass(),"value","Ljava/lang/String;");
 		if(id)
@@ -109,7 +109,7 @@ sal_Bool java_sql_DriverPropertyInfo::required()
 {
 	jboolean out(0);
     SDBThreadAttach t; OSL_ENSURE(t.pEnv,"Java Environment been deleted!");
-	
+
 	{
 		jfieldID id = t.pEnv->GetFieldID(getMyClass(),"required","Z");
 		if(id)
@@ -121,7 +121,7 @@ sal_Bool java_sql_DriverPropertyInfo::required()
 Sequence< ::rtl::OUString> java_sql_DriverPropertyInfo::choices()
 {
     SDBThreadAttach t; OSL_ENSURE(t.pEnv,"Java Environment been deleted!");
-	
+
 	{
 		jfieldID id = t.pEnv->GetFieldID(getMyClass(),"choices","[Ljava/lang/String;");
 		if(id)

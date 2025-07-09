@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -118,7 +118,7 @@ IMPL_LINK(WindowCommandDispatch, impl_notifyCommand, void*, pParam)
 {
     if ( ! pParam)
         return 0L;
-    
+
     const VclWindowEvent* pEvent = (VclWindowEvent*)pParam;
     if (pEvent->GetId() != VCLEVENT_WINDOW_COMMAND)
         return 0L;
@@ -130,20 +130,20 @@ IMPL_LINK(WindowCommandDispatch, impl_notifyCommand, void*, pParam)
     const CommandDialogData* pData = pCommand->GetDialogData();
     if ( ! pData)
         return 0L;
-    
+
     const int nCommand = pData->GetDialogId();
           ::rtl::OUString sCommand;
-    
+
     switch (nCommand)
     {
         case SHOWDIALOG_ID_PREFERENCES :
                 sCommand = WindowCommandDispatch::COMMAND_PREFERENCES;
                 break;
-        
+
         case SHOWDIALOG_ID_ABOUT :
                 sCommand = WindowCommandDispatch::COMMAND_ABOUTBOX;
                 break;
-        
+
         default :
                 return 0L;
     }
@@ -166,16 +166,16 @@ void WindowCommandDispatch::impl_dispatchCommand(const ::rtl::OUString& sCommand
         css::uno::Reference< css::lang::XMultiServiceFactory > xSMGR    = m_xSMGR;
         aReadLock.unlock();
         // <- SYNCHRONIZED
-    
+
         // check provider ... we know it's weak reference only
         if ( ! xProvider.is())
             return;
-    
+
         css::uno::Reference< css::util::XURLTransformer > xParser(xSMGR->createInstance(SERVICENAME_URLTRANSFORMER), css::uno::UNO_QUERY_THROW);
         css::util::URL aCommand;
         aCommand.Complete = sCommand;
         xParser->parseStrict(aCommand);
-        
+
         css::uno::Reference< css::frame::XDispatch > xDispatch = xProvider->queryDispatch(aCommand, SPECIALTARGET_SELF, 0);
         if (xDispatch.is())
             xDispatch->dispatch(aCommand, css::uno::Sequence< css::beans::PropertyValue >());

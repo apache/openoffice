@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -42,7 +42,7 @@ class IdlCompFieldImpl
 	, public XIdlField2
 {
 	sal_Int32					_nOffset;
-	
+
 public:
 	IdlCompFieldImpl( IdlReflectionServiceImpl * pReflection, const OUString & rName,
 					  typelib_TypeDescription * pTypeDescr, typelib_TypeDescription * pDeclTypeDescr,
@@ -50,16 +50,16 @@ public:
 		: IdlMemberImpl( pReflection, rName, pTypeDescr, pDeclTypeDescr )
 		, _nOffset( nOffset )
 		{}
-	
+
 	// XInterface
 	virtual Any SAL_CALL queryInterface( const Type & rType ) throw (::com::sun::star::uno::RuntimeException);
 	virtual void SAL_CALL acquire() throw ();
 	virtual void SAL_CALL release() throw ();
-	
+
 	// XTypeProvider
 	virtual Sequence< Type > SAL_CALL getTypes() throw (::com::sun::star::uno::RuntimeException);
 	virtual Sequence< sal_Int8 > SAL_CALL getImplementationId() throw (::com::sun::star::uno::RuntimeException);
-	
+
 	// XIdlMember
     virtual Reference< XIdlClass > SAL_CALL getDeclaringClass() throw(::com::sun::star::uno::RuntimeException);
     virtual OUString SAL_CALL getName() throw(::com::sun::star::uno::RuntimeException);
@@ -77,8 +77,8 @@ public:
 Any IdlCompFieldImpl::queryInterface( const Type & rType )
 	throw(::com::sun::star::uno::RuntimeException)
 {
-	Any aRet( ::cppu::queryInterface( rType, 
-    								  static_cast< XIdlField * >( this ), 
+	Any aRet( ::cppu::queryInterface( rType,
+    								  static_cast< XIdlField * >( this ),
     								  static_cast< XIdlField2 * >( this ) ) );
 	return (aRet.hasValue() ? aRet : IdlMemberImpl::queryInterface( rType ));
 }
@@ -188,12 +188,12 @@ Any IdlCompFieldImpl::get( const Any & rObj )
 	{
 		typelib_TypeDescription * pObjTD = 0;
 		TYPELIB_DANGER_GET( &pObjTD, rObj.getValueTypeRef() );
-		
+
 		typelib_TypeDescription * pTD = pObjTD;
 		typelib_TypeDescription * pDeclTD = getDeclTypeDescr();
 		while (pTD && !typelib_typedescription_equals( pTD, pDeclTD ))
 			pTD = (typelib_TypeDescription *)((typelib_CompoundTypeDescription *)pTD)->pBaseTypeDescription;
-		
+
 		OSL_ENSURE( pTD, "### illegal object type!" );
 		if (pTD)
 		{
@@ -221,12 +221,12 @@ void IdlCompFieldImpl::set( const Any & rObj, const Any & rValue )
 	{
 		typelib_TypeDescription * pObjTD = 0;
 		TYPELIB_DANGER_GET( &pObjTD, rObj.getValueTypeRef() );
-		
+
 		typelib_TypeDescription * pTD = pObjTD;
 		typelib_TypeDescription * pDeclTD = getDeclTypeDescr();
 		while (pTD && !typelib_typedescription_equals( pTD, pDeclTD ))
 			pTD = (typelib_TypeDescription *)((typelib_CompoundTypeDescription *)pTD)->pBaseTypeDescription;
-		
+
 		OSL_ENSURE( pTD, "### illegal object type!" );
 		if (pTD)
 		{
@@ -258,12 +258,12 @@ void IdlCompFieldImpl::set( Any & rObj, const Any & rValue )
 	{
 		typelib_TypeDescription * pObjTD = 0;
 		TYPELIB_DANGER_GET( &pObjTD, rObj.getValueTypeRef() );
-		
+
 		typelib_TypeDescription * pTD = pObjTD;
 		typelib_TypeDescription * pDeclTD = getDeclTypeDescr();
 		while (pTD && !typelib_typedescription_equals( pTD, pDeclTD ))
 			pTD = (typelib_TypeDescription *)((typelib_CompoundTypeDescription *)pTD)->pBaseTypeDescription;
-		
+
 		OSL_ENSURE( pTD, "### illegal object type!" );
 		if (pTD)
 		{
@@ -346,7 +346,7 @@ Reference< XIdlField > CompoundIdlClassImpl::getField( const OUString & rName )
 {
 	if (! _pFields)
 		getFields(); // init fields
-	
+
 	const OUString2Field::const_iterator iFind( _aName2Field.find( rName ) );
 	if (iFind != _aName2Field.end())
 		return Reference< XIdlField >( (*iFind).second );
@@ -364,18 +364,18 @@ Sequence< Reference< XIdlField > > CompoundIdlClassImpl::getFields()
 		typelib_CompoundTypeDescription * pCompTypeDescr = getTypeDescr();
 		for ( ; pCompTypeDescr; pCompTypeDescr = pCompTypeDescr->pBaseTypeDescription )
 			nAll += pCompTypeDescr->nMembers;
-		
+
 		Sequence< Reference< XIdlField > > * pFields =
 			new Sequence< Reference< XIdlField > >( nAll );
 		Reference< XIdlField > * pSeq = pFields->getArray();
-		
+
 		for ( pCompTypeDescr = getTypeDescr(); pCompTypeDescr;
 			  pCompTypeDescr = pCompTypeDescr->pBaseTypeDescription )
 		{
 			typelib_TypeDescriptionReference ** ppTypeRefs = pCompTypeDescr->ppTypeRefs;
 			rtl_uString ** ppNames						   = pCompTypeDescr->ppMemberNames;
 			sal_Int32 * pMemberOffsets					   = pCompTypeDescr->pMemberOffsets;
-			
+
 			for ( sal_Int32 nPos = pCompTypeDescr->nMembers; nPos--; )
 			{
 				typelib_TypeDescription * pTD = 0;
@@ -390,7 +390,7 @@ Sequence< Reference< XIdlField > > CompoundIdlClassImpl::getFields()
 				}
 			}
 		}
-		
+
 		_pFields = pFields;
 	}
 	return *_pFields;

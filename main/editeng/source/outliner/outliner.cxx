@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -1941,13 +1941,13 @@ static bool isSameNumbering( const SvxNumberFormat& rN1, const SvxNumberFormat& 
 {
     if( rN1.GetNumberingType() != rN2.GetNumberingType() )
         return false;
-        
+
     if( rN1.GetNumStr(1) != rN2.GetNumStr(1) )
         return false;
-        
+
     if( (rN1.GetPrefix() != rN2.GetPrefix()) || (rN1.GetSuffix() != rN2.GetSuffix()) )
         return false;
-        
+
     return true;
 }
 
@@ -1972,16 +1972,16 @@ sal_uInt16 Outliner::ImplGetNumbering( sal_uInt32 nPara, const SvxNumberFormat* 
             break;
 
         const SvxNumberFormat* pFmt = GetNumberFormat( nPara );
-        
+
         if( pFmt == 0 )
             continue; // ignore paragraphs without bullets
-            
+
         // check if numbering less than or equal to pParaFmt
         if( !isSameNumbering( *pFmt, *pParaFmt ) || ( pFmt->GetStart() < pParaFmt->GetStart() ) )
             break;
 
-        if (  pFmt->GetStart() > pParaFmt->GetStart() ) 
-        { 
+        if (  pFmt->GetStart() > pParaFmt->GetStart() )
+        {
            nNumber += pFmt->GetStart() - pParaFmt->GetStart();
            pParaFmt = pFmt;
         }

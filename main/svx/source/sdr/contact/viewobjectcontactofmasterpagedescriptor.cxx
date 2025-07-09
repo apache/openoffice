@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -79,10 +79,10 @@ namespace sdr
 			// used range (retval) is fixed here, it's the MasterPage fill range
 			const SdrPage& rOwnerPage = rDescriptor.GetOwnerPage();
 			const basegfx::B2DRange aPageFillRange(
-				rOwnerPage.GetLftBorder(), rOwnerPage.GetUppBorder(), 
+				rOwnerPage.GetLftBorder(), rOwnerPage.GetUppBorder(),
 				rOwnerPage.GetWdt() - rOwnerPage.GetRgtBorder(), rOwnerPage.GetHgt() - rOwnerPage.GetLwrBorder());
 
-			// Modify DisplayInfo for MasterPageContent collection; remember original layers and 
+			// Modify DisplayInfo for MasterPageContent collection; remember original layers and
 			// set combined LayerSet; set MasterPagePaint flag
 			const SetOfByte aRememberedLayers(rDisplayInfo.GetProcessLayers());
 			SetOfByte aPreprocessedLayers(aRememberedLayers);
@@ -107,7 +107,7 @@ namespace sdr
 				// get the VOC of the Master-SdrPage and get it's object hierarchy
 				ViewContact& rViewContactOfMasterPage(rDescriptor.GetUsedPage().GetViewContact());
 				ViewObjectContact& rVOCOfMasterPage(rViewContactOfMasterPage.GetViewObjectContact(GetObjectContact()));
-				
+
 				xMasterPageSequence = rVOCOfMasterPage.getPrimitive2DSequenceHierarchy(rDisplayInfo);
 			}
 

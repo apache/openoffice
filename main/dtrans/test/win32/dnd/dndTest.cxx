@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -83,8 +83,8 @@ int main( int argc, char *argv[ ], char *envp[ ] )
 		_tprintf(_T("CoInitialize failed \n"));
 		return -1;
 	}
-	
-	
+
+
 	_Module.Init( ObjectMap, GetModuleHandle( NULL));
 
 	if( FAILED(hr=doTest()))
@@ -112,8 +112,8 @@ HRESULT doTest()
 	HANDLE hMTAThread= CreateThread( NULL, 0, MTAFunc, &evt, 0, &threadIdMTA);
 	WaitForSingleObject( evt, INFINITE);
 	CloseHandle(evt);
-	
-	
+
+
 	HRESULT hr= S_OK;
 	RECT pos1={0,0,300,200};
 	AWindow win(_T("DnD starting in Ole STA"), threadIdMTA, pos1);
@@ -128,7 +128,7 @@ HRESULT doTest()
 	RECT pos4={ 300, 205, 600, 405};
 	AWindow win24( _T("DnD starting in Ole MTA"), threadIdMTA, pos4, true, true);
 
-	
+
 	MSG msg;
 	while( GetMessage(&msg, (HWND)NULL, 0, 0) )
 	{
@@ -140,7 +140,7 @@ HRESULT doTest()
 	PostThreadMessage( threadIdMTA, WM_QUIT, 0, 0);
 	WaitForSingleObject(hMTAThread, INFINITE);
 	CloseHandle(hMTAThread);
-	
+
 	return S_OK;
 }
 
@@ -169,7 +169,7 @@ DWORD WINAPI MTAFunc( void* threadData)
 			Any any;
 			any <<= (sal_uInt32) pData->hWnd;
 			pData->xInit->initialize( Sequence<Any>( &any, 1));
-				
+
 			CoTaskMemFree( pData);
 			break;
 		}
@@ -183,7 +183,7 @@ DWORD WINAPI MTAFunc( void* threadData)
 			{
 				DataFlavor d= seq[i];
 			}
-			pData->source->startDrag( DragGestureEvent(), 
+			pData->source->startDrag( DragGestureEvent(),
 									  ACTION_LINK|ACTION_MOVE|ACTION_COPY,
 									  0,
 									  0,
@@ -195,7 +195,7 @@ DWORD WINAPI MTAFunc( void* threadData)
 		}
 
 		} // end switch
-		
+
 		TranslateMessage(  &msg);
 		DispatchMessage( &msg);
 	}

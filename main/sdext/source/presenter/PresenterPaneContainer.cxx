@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -155,7 +155,7 @@ PresenterPaneContainer::SharedPaneDescriptor
             pDescriptor->mxPaneId = xPaneId;
             pDescriptor->mxPane = rxPane;
             pDescriptor->mxPane->SetTitle(pDescriptor->msTitle);
-            
+
             // When there is a call out anchor location set then tell the
             // window about it.
             if (pDescriptor->mbHasCalloutAnchor)
@@ -182,7 +182,7 @@ PresenterPaneContainer::SharedPaneDescriptor
     OUString sPaneURL;
     if (rxPaneId.is())
         sPaneURL = rxPaneId->getResourceURL();
-    
+
     SharedPaneDescriptor pDescriptor (FindPaneURL(sPaneURL));
     if (pDescriptor.get() != NULL)
     {
@@ -202,7 +202,7 @@ PresenterPaneContainer::SharedPaneDescriptor
         const SharedBitmapDescriptor& rpViewBackground)
 {
     SharedPaneDescriptor pDescriptor;
-    
+
     if (rxView.is())
     {
         OUString sPaneURL;
@@ -224,7 +224,7 @@ PresenterPaneContainer::SharedPaneDescriptor
             {
                 if ( ! pDescriptor->maViewInitialization.empty())
                     pDescriptor->maViewInitialization(rxView);
-                
+
                 // Activate or deactivate the pane/view.
                 if ( ! pDescriptor->maActivator.empty())
                     pDescriptor->maActivator(pDescriptor->mbIsActive);
@@ -267,7 +267,7 @@ PresenterPaneContainer::SharedPaneDescriptor
     PresenterPaneContainer::RemoveView (const Reference<XView>& rxView)
 {
     SharedPaneDescriptor pDescriptor;
-    
+
     if (rxView.is())
     {
         OUString sPaneURL;
@@ -402,7 +402,7 @@ void PresenterPaneContainer::ToTop (const SharedPaneDescriptor& rpDescriptor)
         OSL_ASSERT(iPane!=iEnd);
         if (iPane == iEnd)
             return;
-        
+
         if (mxPresenterHelper.is())
             mxPresenterHelper->toTop(rpDescriptor->mxBorderWindow);
 

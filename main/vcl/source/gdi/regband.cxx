@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -112,7 +112,7 @@ ImplRegionBand::ImplRegionBand(
             pPointCopy->mnLineId = pPoint->mnLineId;
             pPointCopy->mbEndPoint = pPoint->mbEndPoint;
             pPointCopy->meLineType = pPoint->meLineType;
-            
+
             if (pPrevPointCopy != NULL)
                 pPrevPointCopy->mpNextBandPoint = pPointCopy;
             else
@@ -273,7 +273,7 @@ bool ImplRegionBand::InsertPoint( long nX, long nLineId,
 
 	// search appropriate position and insert point into the list
 	ImplRegionBandPoint* pNewRegionBandPoint;
-	
+
 	pRegionBandPoint = mpFirstBandPoint;
 	pLastTestedRegionBandPoint = NULL;
 	while ( pRegionBandPoint )
@@ -640,7 +640,7 @@ void ImplRegionBand::XOr( long nXLeft, long nXRight )
     // trailing band sep from 11 to 14. This mimicks the xor look of a
     // bitmap operation.
     //
-    
+
 	// band empty? -> add element
 	if ( !mpFirstSep )
 	{
@@ -677,10 +677,10 @@ void ImplRegionBand::XOr( long nXLeft, long nXRight )
                 pNewSep->mnXRight   = nXRight;
                 pNewSep->mpNextSep  = pSep;
                 pNewSep->mbRemoved  = false;
-            
+
                 // connections from the new separation
                 pNewSep->mpNextSep = pSep;
-            
+
                 // connections to the new separation
                 if ( pSep == mpFirstSep )
                     mpFirstSep = pNewSep;
@@ -730,7 +730,7 @@ void ImplRegionBand::XOr( long nXLeft, long nXRight )
                 else
                 {
                     pSep->mnXLeft = nXRight+1; // 9
-                
+
                     pPrevSep = NULL; // do not run accidentally into the "right" case when breaking the loop
                     break;
                 }
@@ -742,7 +742,7 @@ void ImplRegionBand::XOr( long nXLeft, long nXRight )
                             "ImplRegionBand::XOr(): Case 4,5,6,7 expected all coordinates to be not equal!" );
 
                 // The plain-jane check would look like this:
-                // 
+                //
                 // if( nXLeft < nOldLeft )
                 // {
                 //     // #4,5
@@ -767,7 +767,7 @@ void ImplRegionBand::XOr( long nXLeft, long nXRight )
                 //         // #7 done!
                 //     }
                 // }
-                // 
+                //
                 // but since we generally don't have to care whether
                 // it's 4 or 6 (only that we must not stop processing
                 // here), condensed that in such a way that only the
@@ -806,16 +806,16 @@ void ImplRegionBand::XOr( long nXLeft, long nXRight )
                     pNewSep->mnXRight   = nXRight;
                     pNewSep->mpNextSep  = pSep->mpNextSep;
                     pNewSep->mbRemoved  = false;
-                
+
                     // connections from the new separation
                     pSep->mpNextSep = pNewSep;
-                
+
                     pPrevSep = NULL; // do not run accidentally into the "right" case when breaking the loop
                     break;
                 }
             }
         }
-        
+
         pPrevSep = pSep;
         pSep = pSep->mpNextSep;
     }
@@ -828,11 +828,11 @@ void ImplRegionBand::XOr( long nXLeft, long nXRight )
         pNewSep->mnXRight   = nXRight;
         pNewSep->mpNextSep  = NULL;
         pNewSep->mbRemoved  = false;
-        
+
         // connections from the new separation
         pPrevSep->mpNextSep = pNewSep;
     }
-    
+
 	OptimizeBand();
 }
 

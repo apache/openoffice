@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -193,12 +193,12 @@ struct ObjectFunction
 
     inline static void * operator new ( size_t nSize );
     inline static void operator delete ( void * pMem );
-    
+
 	ObjectFunction( typelib_TypeDescription * pTypeDescr, void * fpFunc ) throw ();
 	~ObjectFunction() throw ();
 };
 
-inline void * ObjectFunction::operator new ( size_t nSize ) 
+inline void * ObjectFunction::operator new ( size_t nSize )
 {
     void * pMem = rtl_allocateMemory( nSize );
     if (pMem != 0)
@@ -387,7 +387,7 @@ ExceptionInfos::~ExceptionInfos() throw ()
 #if OSL_DEBUG_LEVEL > 1
 	OSL_TRACE( "> freeing exception infos... <\n" );
 #endif
-    
+
 	MutexGuard aGuard( _aMutex );
 	for ( t_string2PtrMap::const_iterator iPos( _allRaiseInfos.begin() );
           iPos != _allRaiseInfos.end(); ++iPos )
@@ -507,7 +507,7 @@ int msci_filterCppException(
     // handle only C++ exceptions:
 	if (pRecord == 0 || pRecord->ExceptionCode != MSVC_ExceptionCode)
         return EXCEPTION_CONTINUE_SEARCH;
-    
+
 #if _MSC_VER < 1300 // MSVC -6
     bool rethrow = (pRecord->NumberParameters < 3 ||
                     pRecord->ExceptionInformation[ 2 ] == 0);
@@ -540,7 +540,7 @@ int msci_filterCppException(
     // rethrow: handle only C++ exceptions:
 	if (pRecord == 0 || pRecord->ExceptionCode != MSVC_ExceptionCode)
         return EXCEPTION_CONTINUE_SEARCH;
-    
+
     if (pRecord->NumberParameters == 3 &&
 //  		pRecord->ExceptionInformation[ 0 ] == MSVC_magic_number &&
 		pRecord->ExceptionInformation[ 1 ] != 0 &&
@@ -560,7 +560,7 @@ int msci_filterCppException(
                             pType->_pTypeInfo )->_m_d_name,
                         RTL_TEXTENCODING_ASCII_US ) );
 				OUString aUNOname( toUNOname( aRTTIname ) );
-                
+
 				typelib_TypeDescription * pExcTypeDescr = 0;
 				typelib_typedescription_getByName(
                     &pExcTypeDescr, aUNOname.pData );
@@ -604,7 +604,7 @@ int msci_filterCppException(
 #endif
 					typelib_typedescription_release( pExcTypeDescr );
 				}
-                
+
 				return EXCEPTION_EXECUTE_HANDLER;
 			}
 		}

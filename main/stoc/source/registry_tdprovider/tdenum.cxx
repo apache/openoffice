@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -69,16 +69,16 @@ Sequence< OUString > EnumTypeDescriptionImpl::getEnumNames()
         typereg::Reader aReader(
             _aBytes.getConstArray(), _aBytes.getLength(), false,
             TYPEREG_VERSION_1);
-        
+
         sal_uInt16 nFields = aReader.getFieldCount();
         Sequence< OUString > * pTempEnumNames = new Sequence< OUString >( nFields );
         OUString * pEnumNames = pTempEnumNames->getArray();
-        
+
         while (nFields--)
         {
             pEnumNames[nFields] = aReader.getFieldName( nFields );
         }
-        
+
 		ClearableMutexGuard aGuard( getMutex() );
 		if (_pEnumNames)
         {
@@ -101,17 +101,17 @@ Sequence< sal_Int32 > EnumTypeDescriptionImpl::getEnumValues()
         typereg::Reader aReader(
             _aBytes.getConstArray(), _aBytes.getLength(), false,
             TYPEREG_VERSION_1);
-        
+
         sal_uInt16 nFields = aReader.getFieldCount();
         Sequence< sal_Int32 > * pTempEnumValues = new Sequence< sal_Int32 >( nFields );
         sal_Int32 * pEnumValues = pTempEnumValues->getArray();
-        
+
         while (nFields--)
         {
             pEnumValues[nFields] = getRTValueAsInt32(
                 aReader.getFieldValue( nFields ) );
         }
-        
+
 		ClearableMutexGuard aGuard( getMutex() );
 		if (_pEnumValues)
 		{

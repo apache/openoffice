@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -78,7 +78,7 @@ BOOL				g_bEnd;
 //----------------------------------------------------
 
 unsigned int _stdcall ThreadProc(LPVOID pParam)
-{	
+{
 	while( !g_bEnd )
 	{
 		WaitForSingleObject( g_hEvent, INFINITE );
@@ -126,7 +126,7 @@ int APIENTRY WinMain(HINSTANCE hInstance,
 #else
 	hr = OleInitialize( NULL );
 #endif
-	
+
 
 	// Globale Zeichenfolgen initialisieren
 	LoadString(hInstance, IDS_APP_TITLE, szTitle, MAX_LOADSTRING);
@@ -134,7 +134,7 @@ int APIENTRY WinMain(HINSTANCE hInstance,
 	MyRegisterClass(hInstance);
 
 	// Initialisierung der Anwendung durchführen:
-	if( !InitInstance( hInstance, nCmdShow ) ) 
+	if( !InitInstance( hInstance, nCmdShow ) )
 	{
 		return FALSE;
 	}
@@ -142,9 +142,9 @@ int APIENTRY WinMain(HINSTANCE hInstance,
 	hAccelTable = LoadAccelerators(hInstance, (LPCTSTR)IDC_TESTWIN32);
 
 	// Hauptnachrichtenschleife:
-	while( GetMessage(&msg, NULL, 0, 0) ) 
+	while( GetMessage(&msg, NULL, 0, 0) )
 	{
-		if( !TranslateAccelerator (msg.hwnd, hAccelTable, &msg) ) 
+		if( !TranslateAccelerator (msg.hwnd, hAccelTable, &msg) )
 		{
 			TranslateMessage( &msg );
 			DispatchMessage( &msg );
@@ -156,7 +156,7 @@ int APIENTRY WinMain(HINSTANCE hInstance,
 	CoUninitialize( );
 #else
 	OleUninitialize( );
-#endif	
+#endif
 
 	CloseHandle( g_hEvent );
 
@@ -183,7 +183,7 @@ ATOM MyRegisterClass( HINSTANCE hInstance )
 {
 	WNDCLASSEX wcex;
 
-	wcex.cbSize = sizeof(WNDCLASSEX); 
+	wcex.cbSize = sizeof(WNDCLASSEX);
 
 	wcex.style			= CS_HREDRAW | CS_VREDRAW;
 	wcex.lpfnWndProc	= (WNDPROC)WndProc;
@@ -218,7 +218,7 @@ BOOL InitInstance( HINSTANCE hInstance, int nCmdShow )
    g_hWnd = CreateWindowEx(0, szWindowClass, szTitle, WS_OVERLAPPEDWINDOW,
       CW_USEDEFAULT, 0, CW_USEDEFAULT, 0, NULL, NULL, hInstance, NULL);
 
-   if( !g_hWnd ) 
+   if( !g_hWnd )
    {
       return FALSE;
    }
@@ -246,19 +246,19 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
 	PAINTSTRUCT ps;
 	HDC         hdc;
 	TCHAR       szHello[MAX_LOADSTRING];
-	
-	
+
+
 	LoadString(hInst, IDS_HELLO, szHello, MAX_LOADSTRING);
 
-	switch( message ) 
+	switch( message )
 	{
 		case WM_COMMAND:
-			wmId    = LOWORD(wParam); 
-			wmEvent = HIWORD(wParam); 
+			wmId    = LOWORD(wParam);
+			wmEvent = HIWORD(wParam);
 			// Menüauswahlen analysieren:
-			switch( wmId ) 
+			switch( wmId )
 			{
-				case IDD_COPY:					
+				case IDD_COPY:
 					CopyClipboardData(hWnd);
 					break;
 				case IDD_PASTE2:
@@ -281,7 +281,7 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
 			// ZU ERLEDIGEN: Hier beliebigen Code zum Zeichnen hinzufügen...
 			RECT rt;
 			GetClientRect( hWnd, &rt );
-			
+
 			if ( NULL != pTextBuff )
 			{
 				DrawText( hdc, pTextBuff, lData, &rt, DT_CENTER );
@@ -315,7 +315,7 @@ void CopyClipboardData( HWND hWnd )
 {
 	g_xtDo = new CXTDataObject( 1 );
 #ifdef USE_MTACB
-	MTASetClipboard( static_cast< IDataObject* >( g_xtDo ) );	
+	MTASetClipboard( static_cast< IDataObject* >( g_xtDo ) );
 #else
 	OleSetClipboard( static_cast< IDataObject* >( g_xtDo ) );
 #endif
@@ -330,7 +330,7 @@ void FlushClipboard( )
 	if ( NULL != g_xtDo )
 	{
 #ifdef USE_MTACB
-		HRESULT hr = MTAIsCurrentClipboard( static_cast< IDataObject* >( g_xtDo ) ); 
+		HRESULT hr = MTAIsCurrentClipboard( static_cast< IDataObject* >( g_xtDo ) );
 		if ( S_OK == hr )
 			MTAFlushClipboard( );
 #else
@@ -363,14 +363,14 @@ void PasteData(HWND hWnd)
 		fetc.tymed    = TYMED_HGLOBAL;
 
 		hr = pDataObj->GetData( &fetc, &stgmedium );
-		if ( SUCCEEDED( hr ) ) 
+		if ( SUCCEEDED( hr ) )
 		{
 			LPVOID lpData = GlobalLock( stgmedium.hGlobal );
-			
+
 			if ( NULL != lpData )
 			{
 				LCID lcid = *( (WORD*)lpData );
-			
+
 				WORD langID = LANGIDFROMLCID( lcid );
 				WORD sublangID = SUBLANGID( langID );
 
@@ -393,5 +393,5 @@ void PasteData(HWND hWnd)
 
 void SetLocale()
 {
-	LCID threadLcid = GetThreadLocale();			   
+	LCID threadLcid = GetThreadLocale();
 }

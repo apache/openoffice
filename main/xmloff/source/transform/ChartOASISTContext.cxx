@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -43,8 +43,8 @@ using namespace ::xmloff::token;
 
 TYPEINIT1( XMLChartOASISTransformerContext, XMLTransformerContext );
 
-XMLChartOASISTransformerContext::XMLChartOASISTransformerContext( 
-		XMLTransformerBase& rImp, 
+XMLChartOASISTransformerContext::XMLChartOASISTransformerContext(
+		XMLTransformerBase& rImp,
 		const OUString& rQName ) :
 	XMLTransformerContext( rImp, rQName )
 {
@@ -54,13 +54,13 @@ XMLChartOASISTransformerContext::~XMLChartOASISTransformerContext()
 {
 }
 
-void XMLChartOASISTransformerContext::StartElement( 
+void XMLChartOASISTransformerContext::StartElement(
 	const Reference< XAttributeList >& rAttrList )
 {
 	XMLTransformerActions *pActions =
 		GetTransformer().GetUserDefinedActions( OASIS_CHART_ACTIONS );
 	OSL_ENSURE( pActions, "go no actions" );
-	
+
 	OUString aAddInName;
 	Reference< XAttributeList > xAttrList( rAttrList );
 	XMLMutableAttributeList *pMutableAttrList = 0;
@@ -70,7 +70,7 @@ void XMLChartOASISTransformerContext::StartElement(
 		const OUString& rAttrName = xAttrList->getNameByIndex( i );
 		OUString aLocalName;
 		sal_uInt16 nPrefix =
-			GetTransformer().GetNamespaceMap().GetKeyByAttrName( rAttrName, 
+			GetTransformer().GetNamespaceMap().GetKeyByAttrName( rAttrName,
 																 &aLocalName );
 		XMLTransformerActions::key_type aKey( nPrefix, aLocalName );
 		XMLTransformerActions::const_iterator aIter =
@@ -79,7 +79,7 @@ void XMLChartOASISTransformerContext::StartElement(
 		{
 			if( !pMutableAttrList )
 			{
-				pMutableAttrList = 
+				pMutableAttrList =
 						new XMLMutableAttributeList( xAttrList );
 				xAttrList = pMutableAttrList;
 			}
@@ -89,7 +89,7 @@ void XMLChartOASISTransformerContext::StartElement(
 			case XML_ATACTION_IN2INCH:
 				{
 					OUString aAttrValue( rAttrValue );
-					if( XMLTransformerBase::ReplaceSingleInWithInch( 
+					if( XMLTransformerBase::ReplaceSingleInWithInch(
 								aAttrValue ) )
 						pMutableAttrList->SetValueByIndex( i, aAttrValue );
 				}

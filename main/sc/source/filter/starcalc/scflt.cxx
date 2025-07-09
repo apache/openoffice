@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -87,7 +87,7 @@ using namespace com::sun::star;
 const SCCOL SC10MAXCOL = 255;   // #i85906# don't try to load more columns than there are in the file
 
 
-/** Those strings are used with SC10TOSTRING() and strcmp() and such, hence 
+/** Those strings are used with SC10TOSTRING() and strcmp() and such, hence
     need to be 0-terminated. */
 static void lcl_ReadFixedString( SvStream& rStream, void* pData, size_t nLen )
 {
@@ -1565,7 +1565,7 @@ void Sc10Import::LoadTables()
 				bool bPageBreak   = ((DataValue & crfSoftBreak) == crfSoftBreak);
 				bool bManualBreak = ((DataValue & crfHardBreak) == crfHardBreak);
 				bool bHidden = ((DataValue & crfHidden) == crfHidden);
-                for (SCCOL k = static_cast<SCCOL>(DataStart); k <= static_cast<SCCOL>(DataEnd); k++) 
+                for (SCCOL k = static_cast<SCCOL>(DataStart); k <= static_cast<SCCOL>(DataEnd); k++)
                 {
 					pDoc->SetColHidden(k, k, static_cast<SCTAB>(TabNo), bHidden);
                     pDoc->SetColBreak(k, static_cast<SCTAB> (TabNo), bPageBreak, bManualBreak);
@@ -1615,8 +1615,8 @@ void Sc10Import::LoadTables()
 				bool bPageBreak   = ((DataValue & crfSoftBreak) == crfSoftBreak);
 				bool bManualBreak = ((DataValue & crfHardBreak) == crfHardBreak);
                 bool bHidden      = ((DataValue & crfHidden) == crfHidden);
-                for (SCROW l = static_cast<SCROW>(DataStart); l <= static_cast<SCROW>(DataEnd); l++) 
-                {    
+                for (SCROW l = static_cast<SCROW>(DataStart); l <= static_cast<SCROW>(DataEnd); l++)
+                {
                     pDoc->SetRowHidden(l, l, static_cast<SCTAB> (TabNo), bHidden);
                     pDoc->SetRowBreak(l, static_cast<SCTAB> (TabNo), bPageBreak, bManualBreak);
                 }

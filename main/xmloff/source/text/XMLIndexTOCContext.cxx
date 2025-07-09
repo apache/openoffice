@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -68,7 +68,7 @@ using ::com::sun::star::lang::IllegalArgumentException;
 TYPEINIT1(XMLIndexTOCContext, SvXMLImportContext);
 
 static const sal_Char* aIndexServiceMap[] =
-{ 
+{
 	"com.sun.star.text.ContentIndex",
 	"com.sun.star.text.DocumentIndex",
 	"com.sun.star.text.TableIndex",
@@ -79,7 +79,7 @@ static const sal_Char* aIndexServiceMap[] =
 };
 
 static const XMLTokenEnum aIndexSourceElementMap[] =
-{ 
+{
 	XML_TABLE_OF_CONTENT_SOURCE,
 	XML_ALPHABETICAL_INDEX_SOURCE,
 	XML_TABLE_INDEX_SOURCE,
@@ -103,7 +103,7 @@ SvXMLEnumMapEntry __READONLY_DATA aIndexTypeMap[] =
 
 
 XMLIndexTOCContext::XMLIndexTOCContext(
-	SvXMLImport& rImport, 
+	SvXMLImport& rImport,
 	sal_uInt16 nPrfx,
 	const OUString& rLocalName )
 :	SvXMLImportContext(rImport, nPrfx, rLocalName)
@@ -117,10 +117,10 @@ XMLIndexTOCContext::XMLIndexTOCContext(
 		sal_uInt16 nTmp;
 		if (SvXMLUnitConverter::convertEnum(nTmp, rLocalName, aIndexTypeMap))
 		{
-			// check for array index: 
+			// check for array index:
 			OSL_ENSURE(nTmp < (sizeof(aIndexServiceMap)/sizeof(sal_Char*)), "index out of range");
-			OSL_ENSURE(sizeof(aIndexServiceMap) == 
-					   sizeof(aIndexSourceElementMap), 
+			OSL_ENSURE(sizeof(aIndexServiceMap) ==
+					   sizeof(aIndexSourceElementMap),
 					   "service and source element maps must be same size");
 
 			eIndexType = static_cast<IndexTypeEnum>(nTmp);
@@ -198,9 +198,9 @@ void XMLIndexTOCContext::StartElement(
 
 				// insert section
 				// a) insert section
-				//    The inserted index consists of an empty paragraph 
+				//    The inserted index consists of an empty paragraph
 				//    only, as well as an empty paragraph *after* the index
-				// b) insert marker after index, and put Cursor inside of the 
+				// b) insert marker after index, and put Cursor inside of the
 				//    index
 
 				// preliminaries
@@ -209,7 +209,7 @@ void XMLIndexTOCContext::StartElement(
 #else
 				OUString sMarker(RTL_CONSTASCII_USTRINGPARAM("Y"));
 #endif
-				UniReference<XMLTextImportHelper> rImport = 
+				UniReference<XMLTextImportHelper> rImport =
 					GetImport().GetTextImport();
 
 				// a) insert index
@@ -224,7 +224,7 @@ void XMLIndexTOCContext::StartElement(
                     // illegal argument? Then we can't accept indices here!
                     Sequence<OUString> aSeq(1);
                     aSeq[0] = GetLocalName();
-                    GetImport().SetError( 
+                    GetImport().SetError(
                         XMLERROR_FLAG_ERROR | XMLERROR_NO_INDEX_ALLOWED_HERE,
                         aSeq, e.Message, NULL );
 
@@ -281,21 +281,21 @@ void XMLIndexTOCContext::EndElement()
             ((XMLIndexBodyContext*)&xBodyContextRef)->HasContent() )
         {
             rHelper->GetCursor()->goLeft(1, sal_True);
-            rHelper->GetText()->insertString(rHelper->GetCursorAsRange(), 
+            rHelper->GetText()->insertString(rHelper->GetCursorAsRange(),
                                              sEmpty, sal_True);
         }
 
         // and delete second marker
         rHelper->GetCursor()->goRight(1, sal_True);
-        rHelper->GetText()->insertString(rHelper->GetCursorAsRange(), 
-                                         sEmpty, sal_True);	
+        rHelper->GetText()->insertString(rHelper->GetCursorAsRange(),
+                                         sEmpty, sal_True);
 
         // check for Redlines on our end node
         GetImport().GetTextImport()->RedlineAdjustStartNodeCursor(sal_False);
     }
 }
 
-SvXMLImportContext* XMLIndexTOCContext::CreateChildContext( 
+SvXMLImportContext* XMLIndexTOCContext::CreateChildContext(
 	sal_uInt16 nPrefix,
 	const OUString& rLocalName,
 	const Reference<XAttributeList> & xAttrList )
@@ -310,7 +310,7 @@ SvXMLImportContext* XMLIndexTOCContext::CreateChildContext(
 			{
 				pContext = new XMLIndexBodyContext(GetImport(), nPrefix,
 												   rLocalName);
-                if ( !xBodyContextRef.Is() || 
+                if ( !xBodyContextRef.Is() ||
                      !((XMLIndexBodyContext*)&xBodyContextRef)->HasContent() )
                 {
                     xBodyContextRef = pContext;

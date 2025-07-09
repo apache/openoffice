@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -157,7 +157,7 @@ implnCopy( const uno::Reference< frame::XModel>& xModel )
     }
 }
 
-void 
+void
 implnCut( const uno::Reference< frame::XModel>& xModel )
 {
 	ScTabViewShell* pViewShell =  getBestViewShell( xModel );
@@ -181,19 +181,19 @@ void implnPasteSpecial( const uno::Reference< frame::XModel>& xModel, sal_uInt16
 	ScTabViewShell* pTabViewShell = getBestViewShell( xModel );
 	if ( pTabViewShell )
 	{
-		ScViewData* pView = pTabViewShell->GetViewData();	
+		ScViewData* pView = pTabViewShell->GetViewData();
 		Window* pWin = ( pView != NULL ) ? pView->GetActiveWin() : NULL;
 		if ( pView && pWin )
 		{
 			if ( bAsLink && bOtherDoc )
 				pTabViewShell->PasteFromSystem(0);//SOT_FORMATSTR_ID_LINK
-			else 
+			else
 			{
 				ScTransferObj* pOwnClip = ScTransferObj::GetOwnClipboard( pWin );
-				ScDocument* pDoc = NULL; 
+				ScDocument* pDoc = NULL;
 				if ( pOwnClip )
                 {
-					pDoc = pOwnClip->GetDocument();	
+					pDoc = pOwnClip->GetDocument();
                     pOwnClip->SetUseInApi( false );     // don't use in Insert after it was pasted once
                 }
 				pTabViewShell->PasteFromClip( nFlags, pDoc,
@@ -206,8 +206,8 @@ void implnPasteSpecial( const uno::Reference< frame::XModel>& xModel, sal_uInt16
 
 }
 
-ScDocShell* 
-getDocShell( const css::uno::Reference< css::frame::XModel>& xModel ) 
+ScDocShell*
+getDocShell( const css::uno::Reference< css::frame::XModel>& xModel )
 {
 	uno::Reference< uno::XInterface > xIf( xModel, uno::UNO_QUERY_THROW );
 	ScModelObj* pModel = dynamic_cast< ScModelObj* >( xIf.get() );
@@ -218,7 +218,7 @@ getDocShell( const css::uno::Reference< css::frame::XModel>& xModel )
 
 }
 
-ScTabViewShell* 
+ScTabViewShell*
 getBestViewShell( const css::uno::Reference< css::frame::XModel>& xModel )
 {
 	ScDocShell* pDocShell = getDocShell( xModel );
@@ -227,17 +227,17 @@ getBestViewShell( const css::uno::Reference< css::frame::XModel>& xModel )
 	return NULL;
 }
 
-ScTabViewShell* 
+ScTabViewShell*
 getCurrentBestViewShell(  const uno::Reference< uno::XComponentContext >& xContext )
-{ 
+{
 	uno::Reference< frame::XModel > xModel = getCurrentExcelDoc( xContext );
 	return getBestViewShell( xModel );
 }
 
-SfxViewFrame* 
+SfxViewFrame*
 getViewFrame( const uno::Reference< frame::XModel >& xModel )
 {
-	ScTabViewShell* pViewShell = getBestViewShell( xModel );	
+	ScTabViewShell* pViewShell = getBestViewShell( xModel );
 	if ( pViewShell )
 		return pViewShell->GetViewFrame();
 	return NULL;
@@ -265,7 +265,7 @@ getUnoSheetModuleObj( const uno::Reference< table::XCellRange >& xRange ) throw 
     return getUnoSheetModuleObj( xSheet );
 }
 
-uno::Reference< XHelperInterface > 
+uno::Reference< XHelperInterface >
 getUnoSheetModuleObj( const uno::Reference< sheet::XSheetCellRangeContainer >& xRanges ) throw ( uno::RuntimeException )
 {
     uno::Reference< container::XEnumerationAccess > xEnumAccess( xRanges, uno::UNO_QUERY_THROW );

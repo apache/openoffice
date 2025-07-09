@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -633,7 +633,7 @@ SfxItemPresentation ScTableListItem::GetPresentation
 //UNUSED2009-05 {
 //UNUSED2009-05     for ( sal_uInt16 i=0; i<nCount; i++ )
 //UNUSED2009-05         aList.Insert( new SCTAB( pTabArr[i] ) );
-//UNUSED2009-05 
+//UNUSED2009-05
 //UNUSED2009-05     return ( nCount > 0 );
 //UNUSED2009-05 }
 
@@ -642,13 +642,13 @@ SfxItemPresentation ScTableListItem::GetPresentation
 //UNUSED2009-05 void ScTableListItem::SetTableList( const List& rList )
 //UNUSED2009-05 {
 //UNUSED2009-05     nCount = (sal_uInt16)rList.Count();
-//UNUSED2009-05 
+//UNUSED2009-05
 //UNUSED2009-05     delete [] pTabArr;
-//UNUSED2009-05 
+//UNUSED2009-05
 //UNUSED2009-05     if ( nCount > 0 )
 //UNUSED2009-05     {
 //UNUSED2009-05         pTabArr = new SCTAB [nCount];
-//UNUSED2009-05 
+//UNUSED2009-05
 //UNUSED2009-05         for ( sal_uInt16 i=0; i<nCount; i++ )
 //UNUSED2009-05             pTabArr[i] = *( (SCTAB*)rList.GetObject( i ) );
 //UNUSED2009-05     }
@@ -933,18 +933,18 @@ SfxPoolItem* ScPageHFItem::Create( SvStream& rStream, sal_uInt16 nVer ) const
 //UNUSED2009-05     sal_uInt32      nConvPara;
 //UNUSED2009-05     xub_StrLen  nConvPos;
 //UNUSED2009-05     sal_Bool        bConvert;
-//UNUSED2009-05 
+//UNUSED2009-05
 //UNUSED2009-05 public:
 //UNUSED2009-05     ScFieldChangerEditEngine( SfxItemPool* pEnginePool, sal_Bool bDeleteEnginePool );
 //UNUSED2009-05     virtual     ~ScFieldChangerEditEngine() {}
-//UNUSED2009-05 
+//UNUSED2009-05
 //UNUSED2009-05     virtual String  CalcFieldValue( const SvxFieldItem& rField, sal_uInt32 nPara,
 //UNUSED2009-05                                     sal_uInt16 nPos, Color*& rTxtColor,
 //UNUSED2009-05                                     Color*& rFldColor );
-//UNUSED2009-05 
+//UNUSED2009-05
 //UNUSED2009-05     sal_Bool            ConvertFields();
 //UNUSED2009-05 };
-//UNUSED2009-05 
+//UNUSED2009-05
 //UNUSED2009-05 ScFieldChangerEditEngine::ScFieldChangerEditEngine( SfxItemPool* pEnginePoolP,
 //UNUSED2009-05             sal_Bool bDeleteEnginePoolP ) :
 //UNUSED2009-05         ScEditEngineDefaulter( pEnginePoolP, bDeleteEnginePoolP ),
@@ -954,7 +954,7 @@ SfxPoolItem* ScPageHFItem::Create( SvStream& rStream, sal_uInt16 nVer ) const
 //UNUSED2009-05         bConvert( sal_False )
 //UNUSED2009-05 {
 //UNUSED2009-05 }
-//UNUSED2009-05 
+//UNUSED2009-05
 //UNUSED2009-05 String ScFieldChangerEditEngine::CalcFieldValue( const SvxFieldItem& rField,
 //UNUSED2009-05             sal_uInt32 nPara, sal_uInt16 nPos, Color*& /* rTxtColor */, Color*& /* rFldColor */ )
 //UNUSED2009-05 {
@@ -967,7 +967,7 @@ SfxPoolItem* ScPageHFItem::Create( SvStream& rStream, sal_uInt16 nVer ) const
 //UNUSED2009-05     }
 //UNUSED2009-05     return EMPTY_STRING;
 //UNUSED2009-05 }
-//UNUSED2009-05 
+//UNUSED2009-05
 //UNUSED2009-05 sal_Bool ScFieldChangerEditEngine::ConvertFields()
 //UNUSED2009-05 {
 //UNUSED2009-05     sal_Bool bConverted = sal_False;

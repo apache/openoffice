@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -76,7 +76,7 @@ namespace vcl
 {
     namespace unotools
     {
-        // #i79917# removed helpers bezierSequenceFromPolygon and 
+        // #i79917# removed helpers bezierSequenceFromPolygon and
 		// pointSequenceFromPolygon here
 		// Also all helpers using tools Polygon and PolyPolygon will get mapped to the
 		// B2DPolygon helpers for these cases, see comments with the same TaskID below.
@@ -199,10 +199,10 @@ namespace vcl
 
         namespace
         {
-            inline bool operator==( const rendering::IntegerBitmapLayout& rLHS, 
+            inline bool operator==( const rendering::IntegerBitmapLayout& rLHS,
                                     const rendering::IntegerBitmapLayout& rRHS )
             {
-                return 
+                return
                     rLHS.ScanLineBytes       == rRHS.ScanLineBytes &&
                     rLHS.ScanLineStride      == rRHS.ScanLineStride &&
                     rLHS.PlaneStride         == rRHS.PlaneStride &&
@@ -338,16 +338,16 @@ namespace vcl
                 OSL_ENSURE(aLayout.ColorSpace.is(),
                            "Cannot convert image without color space!");
                 if( !aLayout.ColorSpace.is() )
-                    return ::BitmapEx();                
+                    return ::BitmapEx();
 
                 nDepth = aLayout.ColorSpace->getBitsPerPixel();
 
                 if( xInputBitmap->hasAlpha() )
                 {
                     // determine alpha channel depth
-                    const uno::Sequence<sal_Int8> aTags( 
+                    const uno::Sequence<sal_Int8> aTags(
                         aLayout.ColorSpace->getComponentTags() );
-                    const uno::Sequence<sal_Int32> aDepths( 
+                    const uno::Sequence<sal_Int32> aDepths(
                         aLayout.ColorSpace->getComponentBitCounts() );
                     const sal_Int8* pStart(aTags.getConstArray());
                     const sal_Size  nLen(aTags.getLength());
@@ -380,7 +380,7 @@ namespace vcl
                         else
                             nDepth = 8;
 
-                        const sal_uInt16 nPaletteEntries( 
+                        const sal_uInt16 nPaletteEntries(
                             sal::static_int_cast<sal_uInt16>(
                                 std::min(sal_Int32(255), nEntryCount)));
 
@@ -392,7 +392,7 @@ namespace vcl
                         uno::Sequence<double> aPaletteEntry;
                         for( sal_uInt16 j=0; j<nPaletteEntries; ++j )
                         {
-                            if( !xPalette->getIndex(aPaletteEntry,j) && 
+                            if( !xPalette->getIndex(aPaletteEntry,j) &&
                                 nAlphaDepth == 0 )
                             {
                                 nAlphaDepth = 1;
@@ -408,26 +408,26 @@ namespace vcl
                     }
                 }
 
-                const ::Size aPixelSize( 
+                const ::Size aPixelSize(
                     sizeFromIntegerSize2D(xInputBitmap->getSize()));
 
                 // normalize bitcount
-                nDepth = 
+                nDepth =
                     ( nDepth <= 1 ) ? 1 :
                     ( nDepth <= 4 ) ? 4 :
-                    ( nDepth <= 8 ) ? 8 : 24; 
+                    ( nDepth <= 8 ) ? 8 : 24;
 
                 ::Bitmap aBitmap( aPixelSize,
                                   sal::static_int_cast<sal_uInt16>(nDepth),
                                   aLayout.Palette.is() ? &aPalette : NULL );
                 ::Bitmap aAlpha;
                 if( nAlphaDepth )
-                    aAlpha = ::Bitmap( aPixelSize, 
+                    aAlpha = ::Bitmap( aPixelSize,
                                        sal::static_int_cast<sal_uInt16>(nAlphaDepth),
                                        &::Bitmap::GetGreyPalette(
                                            sal::static_int_cast<sal_uInt16>(1L << nAlphaDepth)) );
 
-                { // limit scoped access 
+                { // limit scoped access
                     ScopedBitmapWriteAccess pWriteAccess( aBitmap.AcquireWriteAccess(),
                                                           aBitmap );
                     ScopedBitmapWriteAccess pAlphaWriteAccess( nAlphaDepth ? aAlpha.AcquireWriteAccess() : NULL,
@@ -442,7 +442,7 @@ namespace vcl
                     if( !readBmp(nWidth,nHeight,aLayout,xInputBitmap,
                                  pWriteAccess,pAlphaWriteAccess) )
                         continue;
-                } // limit scoped access 
+                } // limit scoped access
 
                 if( nAlphaDepth )
                     return ::BitmapEx( aBitmap,
@@ -634,8 +634,8 @@ namespace vcl
                 {
                     return uno::Sequence< beans::PropertyValue >();
                 }
-                virtual uno::Sequence< double > SAL_CALL convertColorSpace( const uno::Sequence< double >& deviceColor, 
-                                                                            const uno::Reference< rendering::XColorSpace >& targetColorSpace ) throw (lang::IllegalArgumentException, 
+                virtual uno::Sequence< double > SAL_CALL convertColorSpace( const uno::Sequence< double >& deviceColor,
+                                                                            const uno::Reference< rendering::XColorSpace >& targetColorSpace ) throw (lang::IllegalArgumentException,
                                                                                                                                                       uno::RuntimeException)
                 {
                     // TODO(P3): if we know anything about target
@@ -648,7 +648,7 @@ namespace vcl
                 {
                     const double*  pIn( deviceColor.getConstArray() );
                     const sal_Size nLen( deviceColor.getLength() );
-                    ENSURE_ARG_OR_THROW2(nLen%4==0, 
+                    ENSURE_ARG_OR_THROW2(nLen%4==0,
                                          "number of channels no multiple of 4",
                                          static_cast<rendering::XColorSpace*>(this), 0);
 
@@ -665,7 +665,7 @@ namespace vcl
                 {
                     const double*  pIn( deviceColor.getConstArray() );
                     const sal_Size nLen( deviceColor.getLength() );
-                    ENSURE_ARG_OR_THROW2(nLen%4==0, 
+                    ENSURE_ARG_OR_THROW2(nLen%4==0,
                                          "number of channels no multiple of 4",
                                          static_cast<rendering::XColorSpace*>(this), 0);
 
@@ -682,7 +682,7 @@ namespace vcl
                 {
                     const double*  pIn( deviceColor.getConstArray() );
                     const sal_Size nLen( deviceColor.getLength() );
-                    ENSURE_ARG_OR_THROW2(nLen%4==0, 
+                    ENSURE_ARG_OR_THROW2(nLen%4==0,
                                          "number of channels no multiple of 4",
                                          static_cast<rendering::XColorSpace*>(this), 0);
 
@@ -797,7 +797,7 @@ namespace vcl
             return aColor;
         }
 
-        uno::Sequence< double > VCL_DLLPUBLIC colorToDoubleSequence( 
+        uno::Sequence< double > VCL_DLLPUBLIC colorToDoubleSequence(
             const Color&                                    rColor,
             const uno::Reference< rendering::XColorSpace >& xColorSpace )
         {
@@ -811,7 +811,7 @@ namespace vcl
             return xColorSpace->convertFromARGB(aSeq);
         }
 
-        Color VCL_DLLPUBLIC doubleSequenceToColor( 
+        Color VCL_DLLPUBLIC doubleSequenceToColor(
             const uno::Sequence< double >                   rColor,
             const uno::Reference< rendering::XColorSpace >& xColorSpace )
         {

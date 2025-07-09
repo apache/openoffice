@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -63,11 +63,11 @@ oslProcessError SAL_CALL osl_terminateProcess(oslProcess Process)
 /***************************************************************************/
 
 oslProcess SAL_CALL osl_getProcess(oslProcessIdentifier Ident)
-{	
+{
 	oslProcessImpl* pProcImpl;
     HANDLE hProcess = OpenProcess(
         STANDARD_RIGHTS_REQUIRED | PROCESS_QUERY_INFORMATION | SYNCHRONIZE, FALSE, (DWORD)Ident);
-        
+
 	if (hProcess)
 	{
 		pProcImpl = reinterpret_cast< oslProcessImpl*>( rtl_allocateMemory(sizeof(oslProcessImpl)) );
@@ -188,7 +188,7 @@ oslProcessError SAL_CALL osl_joinProcessWithTimeout(oslProcess Process, const Ti
     DWORD           timeout   = INFINITE;
     oslProcessError osl_error = osl_Process_E_None;
     DWORD           ret;
-    
+
     if (NULL == Process)
         return osl_Process_E_Unknown;
 
@@ -391,14 +391,14 @@ void SAL_CALL osl_setCommandArgs (int argc, char ** argv)
 #define ENV_BUFFER_SIZE (32*1024-1)
 
 oslProcessError SAL_CALL osl_getEnvironment(rtl_uString *ustrVar, rtl_uString **ustrValue)
-{        
-    WCHAR buff[ENV_BUFFER_SIZE];         
-                            
+{
+    WCHAR buff[ENV_BUFFER_SIZE];
+
     if (GetEnvironmentVariableW(reinterpret_cast<LPCWSTR>(ustrVar->buffer), buff, ENV_BUFFER_SIZE) > 0)
-    {        
-        rtl_uString_newFromStr(ustrValue, reinterpret_cast<const sal_Unicode*>(buff));        
+    {
+        rtl_uString_newFromStr(ustrValue, reinterpret_cast<const sal_Unicode*>(buff));
     	return osl_Process_E_None;
-    }        
+    }
 	return osl_Process_E_Unknown;
 }
 
@@ -537,28 +537,28 @@ sal_Bool SAL_CALL osl_sendResourcePipe(oslPipe hPipe, oslSocket pSocket)
 	sal_Bool bRet = sal_False;
 	sal_Int32 bytes = 0;
 
-	/* 	duplicate handle on this other side -> 
-		receive remote process 
+	/* 	duplicate handle on this other side ->
+		receive remote process
 		duplicate handle and send it */
 	DWORD remoteProcessID = 0;
 	HANDLE fd = (HANDLE)pSocket->m_Socket;
 	oslDescriptorType code = osl_Process_TypeSocket;
-	
+
 	OSL_TRACE("osl_sendResourcePipe: enter...");
-	
+
 	if (ReadPipe(hPipe, &remoteProcessID, sizeof(remoteProcessID), &bytes))
 	{
-		HANDLE hRemoteProc = OpenProcess(PROCESS_DUP_HANDLE, 
-										 FALSE, 
+		HANDLE hRemoteProc = OpenProcess(PROCESS_DUP_HANDLE,
+										 FALSE,
 										 remoteProcessID);
-		
+
 		if (hRemoteProc != (HANDLE)NULL)
 		{
 			HANDLE newFd;
-			
+
 			if (DuplicateHandle(GetCurrentProcess(),
-								fd, 
-								hRemoteProc, 
+								fd,
+								hRemoteProc,
 								&newFd,
 								0, FALSE, DUPLICATE_SAME_ACCESS))
 			{
@@ -568,11 +568,11 @@ sal_Bool SAL_CALL osl_sendResourcePipe(oslPipe hPipe, oslSocket pSocket)
 					)
 					bRet = sal_True;
 			}
-			
+
 			CloseHandle(hRemoteProc);
 		}
 	}
-	
+
 	if (bRet)
 	{
 		sal_Int32 commitCode;
@@ -584,12 +584,12 @@ sal_Bool SAL_CALL osl_sendResourcePipe(oslPipe hPipe, oslSocket pSocket)
 			)
 			bRet = sal_False;
 	}
-	
+
 	OSL_TRACE("osl_sendResourcePipe: exit... %d\n", bRet);
 	return(bRet);
 }
 
-    
+
 oslSocket SAL_CALL osl_receiveResourcePipe(oslPipe hPipe)
 {
 	sal_Bool bRet = sal_False;
@@ -597,14 +597,14 @@ oslSocket SAL_CALL osl_receiveResourcePipe(oslPipe hPipe)
 	sal_Int32 commitCode;
 	oslSocket pSocket = NULL;
 
-	/* duplicate handle on the other side -> 
+	/* duplicate handle on the other side ->
 	   send my process id receive duplicated handle */
 	HANDLE fd = INVALID_HANDLE_VALUE;
 	DWORD myProcessID = GetCurrentProcessId();
 	oslDescriptorType code = osl_Process_TypeNone;
 
 	OSL_TRACE("osl_receiveResourcePipe: enter...\n");
-	
+
 	if (
 		WritePipe(hPipe, &myProcessID, sizeof(myProcessID), &bytes) &&
 		ReadPipe(hPipe, &code, sizeof(code), &bytes) &&
@@ -622,15 +622,15 @@ oslSocket SAL_CALL osl_receiveResourcePipe(oslPipe hPipe)
 			bRet = sal_False;
 		}
         }
-	
+
 	if (bRet)
 		commitCode = 1;
 	else
 		commitCode = 0;
-	
+
 	WritePipe(hPipe, &commitCode, sizeof(commitCode), &bytes);
 
 	OSL_TRACE("osl_receiveResourcePipe: exit... %d, %p\n", bRet, pSocket);
-	
+
 	return pSocket;
 }

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -42,8 +42,8 @@ struct CoordinateData2D : public basegfx::B2DPoint
 public:
     CoordinateData2D() {}
 
-	explicit CoordinateData2D(const basegfx::B2DPoint& rData) 
-    :	B2DPoint(rData) 
+	explicit CoordinateData2D(const basegfx::B2DPoint& rData)
+    :	B2DPoint(rData)
 	{}
 
     CoordinateData2D& operator=(const basegfx::B2DPoint& rData)
@@ -52,9 +52,9 @@ public:
         return *this;
 	}
 
-	void transform(const basegfx::B2DHomMatrix& rMatrix) 
-	{ 
-        *this *= rMatrix; 
+	void transform(const basegfx::B2DHomMatrix& rMatrix)
+	{
+        *this *= rMatrix;
 	}
 };
 
@@ -159,7 +159,7 @@ public:
 			const sal_uInt32 nHalfSize(bIsClosed ? (maVector.size() - 1) >> 1 : maVector.size() >> 1);
 			CoordinateData2DVector::iterator aStart(bIsClosed ? maVector.begin() + 1 : maVector.begin());
 			CoordinateData2DVector::iterator aEnd(maVector.end() - 1);
-			
+
 			for(sal_uInt32 a(0); a < nHalfSize; a++)
 			{
 				::std::swap(*aStart, *aEnd);
@@ -254,31 +254,31 @@ class ControlVectorPair2D
 public:
     explicit ControlVectorPair2D () { }
 
-	const basegfx::B2DVector& getPrevVector() const 
-	{ 
-		return maPrevVector; 
-	}
-	
-	void setPrevVector(const basegfx::B2DVector& rValue) 
-	{ 
-		if(rValue != maPrevVector) 
-			maPrevVector = rValue; 
+	const basegfx::B2DVector& getPrevVector() const
+	{
+		return maPrevVector;
 	}
 
-	const basegfx::B2DVector& getNextVector() const 
-	{ 
-		return maNextVector; 
+	void setPrevVector(const basegfx::B2DVector& rValue)
+	{
+		if(rValue != maPrevVector)
+			maPrevVector = rValue;
 	}
 
-	void setNextVector(const basegfx::B2DVector& rValue) 
-	{ 
-		if(rValue != maNextVector) 
-			maNextVector = rValue; 
+	const basegfx::B2DVector& getNextVector() const
+	{
+		return maNextVector;
 	}
 
-	bool operator==(const ControlVectorPair2D& rData) const 
-	{ 
-		return (maPrevVector == rData.getPrevVector() && maNextVector == rData.getNextVector()); 
+	void setNextVector(const basegfx::B2DVector& rValue)
+	{
+		if(rValue != maNextVector)
+			maNextVector = rValue;
+	}
+
+	bool operator==(const ControlVectorPair2D& rData) const
+	{
+		return (maPrevVector == rData.getPrevVector() && maNextVector == rData.getNextVector());
 	}
 
 	void flip()
@@ -334,8 +334,8 @@ public:
 		return (maVector == rCandidate.maVector);
 	}
 
-	bool isUsed() const 
-	{ 
+	bool isUsed() const
+	{
 		return (0 != mnUsedVectors);
 	}
 
@@ -486,7 +486,7 @@ public:
 			const sal_uInt32 nHalfSize(bIsClosed ? (maVector.size() - 1) >> 1 : maVector.size() >> 1);
 			ControlVectorPair2DVector::iterator aStart(bIsClosed ? maVector.begin() + 1 : maVector.begin());
 			ControlVectorPair2DVector::iterator aEnd(maVector.end() - 1);
-			
+
 			for(sal_uInt32 a(0); a < nHalfSize; a++)
 			{
 				// swap Prev and Next
@@ -541,7 +541,7 @@ public:
 
         return *mpDefaultSubdivision;
 	}
-	
+
     const basegfx::B2DRange& getB2DRange(const basegfx::B2DPolygon& rSource) const
     {
 		if(!mpB2DRange)
@@ -581,10 +581,10 @@ public:
 									// the range with control points of the current edge is not completely
 									// inside the current range without control points. Expand current range by
 									// subdividing the bezier segment.
-									// Ideal here is a subdivision at the extreme values, so use 
+									// Ideal here is a subdivision at the extreme values, so use
 									// getAllExtremumPositions to get all extremas in one run
 									::std::vector< double > aExtremas;
-									
+
 									aExtremas.reserve(4);
 									aEdge.getAllExtremumPositions(aExtremas);
 
@@ -701,7 +701,7 @@ public:
 
 		// complete initialization using copy
 		if(rToBeCopied.mpControlVector && rToBeCopied.mpControlVector->isUsed())
-			mpControlVector.reset( new ControlVectorArray2D(*rToBeCopied.mpControlVector) );        
+			mpControlVector.reset( new ControlVectorArray2D(*rToBeCopied.mpControlVector) );
 
         return *this;
     }
@@ -1067,7 +1067,7 @@ public:
 
 						remove(nIndex, 1);
 					}
-				} 
+				}
 				while(bRemove);
 			}
 			else
@@ -1139,7 +1139,7 @@ public:
 				{
 					const basegfx::B2DVector& rPrevVector(mpControlVector->getPrevVector(a));
 					const basegfx::B2DVector& rNextVector(mpControlVector->getNextVector(a));
-					
+
 					if(!rPrevVector.equalZero())
 					{
 						basegfx::B2DVector aPrevVector(rMatrix * rPrevVector);
@@ -1193,12 +1193,12 @@ public:
 
 namespace basegfx
 {
-    namespace 
-	{ 
-		struct DefaultPolygon: public rtl::Static<B2DPolygon::ImplType, DefaultPolygon> {}; 
+    namespace
+	{
+		struct DefaultPolygon: public rtl::Static<B2DPolygon::ImplType, DefaultPolygon> {};
 	}
 
-	B2DPolygon::B2DPolygon() 
+	B2DPolygon::B2DPolygon()
 	:	mpPolygon(DefaultPolygon::get())
 	{}
 
@@ -1250,7 +1250,7 @@ namespace basegfx
     B2DPoint B2DPolygon::getB2DPoint(sal_uInt32 nIndex) const
 	{
 		OSL_ENSURE(nIndex < mpPolygon->count(), "B2DPolygon access outside range (!)");
-		
+
 		return mpPolygon->getPoint(nIndex);
 	}
 
@@ -1272,7 +1272,7 @@ namespace basegfx
 	void B2DPolygon::insert(sal_uInt32 nIndex, const B2DPoint& rPoint, sal_uInt32 nCount)
 	{
 		OSL_ENSURE(nIndex <= mpPolygon->count(), "B2DPolygon Insert outside range (!)");
-		
+
 		if(nCount)
 		{
 			mpPolygon->insert(nIndex, rPoint, nCount);
@@ -1295,7 +1295,7 @@ namespace basegfx
 	B2DPoint B2DPolygon::getPrevControlPoint(sal_uInt32 nIndex) const
 	{
 		OSL_ENSURE(nIndex < mpPolygon->count(), "B2DPolygon access outside range (!)");
-		
+
 		if(mpPolygon->areControlPointsUsed())
 		{
 			return mpPolygon->getPoint(nIndex) + mpPolygon->getPrevControlVector(nIndex);
@@ -1309,7 +1309,7 @@ namespace basegfx
 	B2DPoint B2DPolygon::getNextControlPoint(sal_uInt32 nIndex) const
 	{
 		OSL_ENSURE(nIndex < mpPolygon->count(), "B2DPolygon access outside range (!)");
-		
+
 		if(mpPolygon->areControlPointsUsed())
 		{
 			return mpPolygon->getPoint(nIndex) + mpPolygon->getNextControlVector(nIndex);
@@ -1379,7 +1379,7 @@ namespace basegfx
 	{
 		OSL_ENSURE(nIndex < mpPolygon->count(), "B2DPolygon access outside range (!)");
 
-		if(mpPolygon->areControlPointsUsed() && 
+		if(mpPolygon->areControlPointsUsed() &&
 			(!mpPolygon->getPrevControlVector(nIndex).equalZero() || !mpPolygon->getNextControlVector(nIndex).equalZero()))
 		{
 			mpPolygon->resetControlVectors(nIndex);
@@ -1395,8 +1395,8 @@ namespace basegfx
 	}
 
 	void B2DPolygon::appendBezierSegment(
-		const B2DPoint& rNextControlPoint, 
-		const B2DPoint& rPrevControlPoint, 
+		const B2DPoint& rNextControlPoint,
+		const B2DPoint& rPrevControlPoint,
 		const B2DPoint& rPoint)
 	{
 		const B2DVector aNewNextVector(mpPolygon->count() ? B2DVector(rNextControlPoint - mpPolygon->getPoint(mpPolygon->count() - 1)) : B2DVector::getEmptyVector());
@@ -1451,7 +1451,7 @@ namespace basegfx
     bool B2DPolygon::isBezierSegment(sal_uInt32 nIndex) const
     {
 		OSL_ENSURE(nIndex < mpPolygon->count(), "B2DPolygon access outside range (!)");
-		
+
         if(mpPolygon->areControlPointsUsed())
 		{
             // Check if the edge exists
@@ -1460,7 +1460,7 @@ namespace basegfx
             if(bNextIndexValidWithoutClose || mpPolygon->isClosed())
             {
                 const sal_uInt32 nNextIndex(bNextIndexValidWithoutClose ? nIndex + 1 : 0);
-                return (!mpPolygon->getPrevControlVector(nNextIndex).equalZero() 
+                return (!mpPolygon->getPrevControlVector(nNextIndex).equalZero()
                     || !mpPolygon->getNextControlVector(nIndex).equalZero());
             }
             else
@@ -1570,13 +1570,13 @@ namespace basegfx
 	void B2DPolygon::remove(sal_uInt32 nIndex, sal_uInt32 nCount)
 	{
 		OSL_ENSURE(nIndex + nCount <= mpPolygon->count(), "B2DPolygon Remove outside range (!)");
-		
+
 		if(nCount)
 		{
 			mpPolygon->remove(nIndex, nCount);
 		}
 	}
-	
+
 	void B2DPolygon::clear()
 	{
 		mpPolygon = DefaultPolygon::get();

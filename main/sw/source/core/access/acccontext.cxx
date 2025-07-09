@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,19 +7,19 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
- 
+
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_sw.hxx"
@@ -264,7 +264,7 @@ void SwAccessibleContext::ChildrenScrolled( const SwFrm *pFrm,
 						//O is:	GetMap()->GetContextImpl( rLower.GetSdrObject(),
 						//						  this,
 						//						  SCROLLED_OUT == eAction ||
-						//						  SCROLLED_IN == eAction ); 
+						//						  SCROLLED_IN == eAction );
                         GetMap()->GetContextImpl( rLower.GetDrawObject(),
 												  this,
 												  sal_True );
@@ -610,7 +610,7 @@ sal_Int32 SAL_CALL SwAccessibleContext::getAccessibleChildCount( void )
 
 	CHECK_FOR_DEFUNC( XAccessibleContext )
 	//Solution:Notify the frame is a document
-	if( nRole == AccessibleRole::DOCUMENT )		
+	if( nRole == AccessibleRole::DOCUMENT )
 		bIsAccDocUse = sal_True;
 
     return bDisposing ? 0 : GetChildCount( *(GetMap()) );
@@ -625,7 +625,7 @@ uno::Reference< XAccessible> SAL_CALL
 	CHECK_FOR_DEFUNC( XAccessibleContext )
 
 	//Solution:Notify the frame is a document
-	if( nRole == AccessibleRole::DOCUMENT )		
+	if( nRole == AccessibleRole::DOCUMENT )
 		bIsAccDocUse = sal_True;
 
     const SwAccessibleChild aChild( GetChild( *(GetMap()), nIndex ) );
@@ -646,7 +646,7 @@ uno::Reference< XAccessible> SAL_CALL
 		//Solution:Send out accessible event when begin load.
 		if( bBeginDocumentLoad && nRole == AccessibleRole::DOCUMENT )
 		{
-			
+
 			FireStateChangedEvent( AccessibleStateType::FOCUSABLE,sal_True );
 			FireStateChangedEvent( AccessibleStateType::BUSY,sal_True );
 			if( !isIfAsynLoad )
@@ -657,7 +657,7 @@ uno::Reference< XAccessible> SAL_CALL
 				FireStateChangedEvent( AccessibleStateType::SHOWING,sal_True );
 			    FireStateChangedEvent( AccessibleStateType::BUSY,sal_False );
 				// MT: OFFSCREEN again?
-			    // FireStateChangedEvent( AccessibleStateType::OFFSCREEN,sal_False );	
+			    // FireStateChangedEvent( AccessibleStateType::OFFSCREEN,sal_False );
 			}
 			bBeginDocumentLoad = sal_False;
 		}
@@ -1099,7 +1099,7 @@ void SwAccessibleContext::ScrolledInShape( const SdrObject* ,
 {
 	if(NULL == pAccImpl)
 	{
-		return ; 
+		return ;
 	}
 	AccessibleEventObject aEvent;
 	aEvent.EventId = AccessibleEventId::CHILD;

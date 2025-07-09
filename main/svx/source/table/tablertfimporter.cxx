@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -219,10 +219,10 @@ void SdrTableRTFParser::InsertCell( ImportInfo* pInfo )
 	sal_Int32 nCol = mpActDefault->mnCol;
 
 	RTFCellInfoPtr xCellInfo( new RTFCellInfo(mrItemPool) );
-	
+
 	xCellInfo->mnStartPara = mnStartPara;
 	xCellInfo->mnParaCount = pInfo->aSelection.nEndPara - 1 - mnStartPara;
-	
+
 	if( !maRows.empty() )
 	{
 		RTFColumnVectorPtr xColumn( maRows.back() );
@@ -244,7 +244,7 @@ void SdrTableRTFParser::FillTable()
 		Reference< XTableColumns > xCols( mxTable->getColumns(), UNO_QUERY_THROW );
 
 		if( nColCount < mnColMax )
-		{			
+		{
 			xCols->insertByIndex( nColCount, mnColMax - nColCount );
 			nColCount = mxTable->getColumnCount();
 		}
@@ -255,7 +255,7 @@ void SdrTableRTFParser::FillTable()
 		{
 			Reference< XPropertySet > xSet( xCols->getByIndex( nCol ), UNO_QUERY_THROW );
 			sal_Int32 nWidth = maColumnEdges[nCol] - nLastEdge;
-			
+
 			xSet->setPropertyValue( sWidth, Any( nWidth ) );
 			nLastEdge += nWidth;
 		}
@@ -278,7 +278,7 @@ void SdrTableRTFParser::FillTable()
 				if( xCell.is() && xCellInfo.get() )
 				{
 					const SfxPoolItem *pPoolItem = 0;
-					if( xCellInfo->maItemSet.GetItemState(SDRATTR_TABLE_BORDER,sal_False,&pPoolItem)==SFX_ITEM_SET) 
+					if( xCellInfo->maItemSet.GetItemState(SDRATTR_TABLE_BORDER,sal_False,&pPoolItem)==SFX_ITEM_SET)
 						xCell->SetMergedItem( *pPoolItem );
 
 					String sDebug = mpOutliner->GetText( mpOutliner->GetParagraph( xCellInfo->mnStartPara ), xCellInfo->mnParaCount );
@@ -299,7 +299,7 @@ void SdrTableRTFParser::FillTable()
 		Rectangle aRect( mrTableObj.GetSnapRect() );
 		aRect.nRight = aRect.nLeft + nLastEdge;
 		mrTableObj.NbcSetSnapRect( aRect );
-		
+
 	}
 	catch( Exception& e )
 	{
@@ -311,7 +311,7 @@ void SdrTableRTFParser::FillTable()
 void SdrTableRTFParser::NewCellRow()
 {
 	if( mbNewDef )
-	{	
+	{
 		mbNewDef = sal_False;
 
 		maRows.push_back( RTFColumnVectorPtr( new RTFColumnVector() ) );
@@ -372,7 +372,7 @@ void SdrTableRTFParser::ProcToken( ImportInfo* pInfo )
 			mbNewDef = sal_True;
 			mpInsDefault->mnCol = mnColCnt;
 			maDefaultList.push_back( boost::shared_ptr< RTFCellDefault >( mpInsDefault ) );
-			
+
 			if( (sal_Int32)maColumnEdges.size() <= mnColCnt )
 				maColumnEdges.resize( mnColCnt + 1 );
 
@@ -402,7 +402,7 @@ void SdrTableRTFParser::ProcToken( ImportInfo* pInfo )
 			if ( !mpActDefault )
 				mpActDefault = mpInsDefault;
 			if ( mpActDefault->mnColSpan > 0 )
-			{	
+			{
 				InsertCell(pInfo);
 			}
 			NextColumn();

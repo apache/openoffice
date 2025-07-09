@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -3621,7 +3621,7 @@ const sal_Char* XMLBibliographyFieldImportContext::MapBibliographyFieldName(
 	}
 
 	return pName;
-}				   
+}
 
 
 //
@@ -3717,7 +3717,7 @@ SvXMLImportContext* XMLAnnotationImportContext::CreateChildContext(
                 }
             }
         }
-        catch ( Exception& ) 
+        catch ( Exception& )
         {}
 
         if( !pContext )
@@ -3825,7 +3825,7 @@ void XMLAnnotationImportContext::PrepareField(
     xPropertySet->setPropertyValue(sPropertyInitials, makeAny(sInitials));
 
     DateTime aDateTime;
-    if (SvXMLUnitConverter::convertDateTime(aDateTime, 
+    if (SvXMLUnitConverter::convertDateTime(aDateTime,
         aDateBuffer.makeStringAndClear()))
     {
         /*
@@ -3876,7 +3876,7 @@ XMLScriptImportContext::XMLScriptImportContext(
 {
 }
 
-void XMLScriptImportContext::ProcessAttribute( 
+void XMLScriptImportContext::ProcessAttribute(
 	sal_uInt16 nAttrToken,
 	const OUString& sAttrValue )
 {
@@ -3901,7 +3901,7 @@ void XMLScriptImportContext::ProcessAttribute(
 	bValid = sal_True;
 }
 
-void XMLScriptImportContext::PrepareField( 
+void XMLScriptImportContext::PrepareField(
 	const Reference<XPropertySet> & xPropertySet)
 {
 	Any aAny;
@@ -3933,13 +3933,13 @@ XMLMeasureFieldImportContext::XMLMeasureFieldImportContext(
 	XMLTextImportHelper& rHlp,
 	sal_uInt16 nPrfx,
 	const OUString& sLocalName) :
-		XMLTextFieldImportContext(rImport, rHlp, sAPI_measure, 
+		XMLTextFieldImportContext(rImport, rHlp, sAPI_measure,
 								  nPrfx, sLocalName),
 		mnKind( 0 )
 {
 }
 
-void XMLMeasureFieldImportContext::ProcessAttribute( 
+void XMLMeasureFieldImportContext::ProcessAttribute(
 	sal_uInt16 nAttrToken,
 	const OUString& sAttrValue )
 {
@@ -3962,7 +3962,7 @@ void XMLMeasureFieldImportContext::ProcessAttribute(
 	}
 }
 
-void XMLMeasureFieldImportContext::PrepareField( 
+void XMLMeasureFieldImportContext::PrepareField(
 	const Reference<XPropertySet> & xPropertySet)
 {
 	Any aAny;
@@ -3974,7 +3974,7 @@ void XMLMeasureFieldImportContext::PrepareField(
 
 //
 // dropdown field
-// 
+//
 
 
 TYPEINIT1( XMLDropDownFieldImportContext, XMLTextFieldImportContext );
@@ -3984,7 +3984,7 @@ XMLDropDownFieldImportContext::XMLDropDownFieldImportContext(
         XMLTextImportHelper& rHlp,
         sal_uInt16 nPrfx,
         const ::rtl::OUString& sLocalName) :
-    XMLTextFieldImportContext( rImport, rHlp, sAPI_drop_down, 
+    XMLTextFieldImportContext( rImport, rHlp, sAPI_drop_down,
                                nPrfx, sLocalName ),
     aLabels(),
     sName(),
@@ -4002,7 +4002,7 @@ XMLDropDownFieldImportContext::XMLDropDownFieldImportContext(
 }
 
 bool lcl_ProcessLabel( const SvXMLImport& rImport,
-                       const Reference<XAttributeList>& xAttrList, 
+                       const Reference<XAttributeList>& xAttrList,
                        OUString& rLabel,
                        bool& rIsSelected )
 {
@@ -4033,12 +4033,12 @@ bool lcl_ProcessLabel( const SvXMLImport& rImport,
     return bValid;
 }
 
-SvXMLImportContext* XMLDropDownFieldImportContext::CreateChildContext( 
+SvXMLImportContext* XMLDropDownFieldImportContext::CreateChildContext(
     sal_uInt16 nPrefix,
     const OUString& rLocalName,
     const Reference<XAttributeList>& xAttrList )
 {
-    if( nPrefix == XML_NAMESPACE_TEXT  &&  
+    if( nPrefix == XML_NAMESPACE_TEXT  &&
         IsXMLToken( rLocalName, XML_LABEL ) )
     {
         OUString sLabel;
@@ -4053,7 +4053,7 @@ SvXMLImportContext* XMLDropDownFieldImportContext::CreateChildContext(
     return new SvXMLImportContext( GetImport(), nPrefix, rLocalName );
 }
 
-void XMLDropDownFieldImportContext::ProcessAttribute( 
+void XMLDropDownFieldImportContext::ProcessAttribute(
     sal_uInt16 nAttrToken,
     const ::rtl::OUString& sAttrValue )
 {
@@ -4074,7 +4074,7 @@ void XMLDropDownFieldImportContext::ProcessAttribute(
     }
 }
 
-void XMLDropDownFieldImportContext::PrepareField( 
+void XMLDropDownFieldImportContext::PrepareField(
     const Reference<XPropertySet>& xPropertySet)
 {
     // create sequence
@@ -4114,7 +4114,7 @@ void XMLDropDownFieldImportContext::PrepareField(
         aAny <<= sHint;
         xPropertySet->setPropertyValue( sPropertyToolTip, aAny );
     }
-    
+
 }
 
 /** import header fields (<draw:header>) */
@@ -4187,7 +4187,7 @@ void XMLDateTimeFieldImportContext::ProcessAttribute( sal_uInt16,
 }
 
 /// prepare XTextField for insertion into document
-void XMLDateTimeFieldImportContext::PrepareField( 
+void XMLDateTimeFieldImportContext::PrepareField(
 		const ::com::sun::star::uno::Reference<
 		::com::sun::star::beans::XPropertySet> &)
 {

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -174,8 +174,8 @@ namespace xmloff
 
 
 				// start the property tag
-				SvXMLElementExport aValueTag1(m_rContext.getGlobalContext(), 
-						XML_NAMESPACE_FORM, 
+				SvXMLElementExport aValueTag1(m_rContext.getGlobalContext(),
+						XML_NAMESPACE_FORM,
 						bIsSequence ? token::XML_LIST_PROPERTY
 									: token::XML_PROPERTY, sal_True, sal_True);
 
@@ -216,12 +216,12 @@ namespace xmloff
 				{
 					while (pSequenceIterator->hasMoreElements())
 					{
-						sValue = 
+						sValue =
 							implConvertAny(pSequenceIterator->nextElement());
 						AddAttribute(XML_NAMESPACE_OFFICE, eValueAttName, sValue );
 						SvXMLElementExport aValueTag(
-								m_rContext.getGlobalContext(), 
-								XML_NAMESPACE_FORM, token::XML_LIST_VALUE, 
+								m_rContext.getGlobalContext(),
+								XML_NAMESPACE_FORM, token::XML_LIST_VALUE,
 								sal_True, sal_False);
 					}
 				}
@@ -414,7 +414,7 @@ namespace xmloff
 						,OAttributeMetaData::getCommonControlAttributeName(CCA_TARGET_FRAME)
 						,sTargetFrame);
 		}
-			
+
 		exportedProperty(PROPERTY_TARGETFRAME);
 	}
 
@@ -422,7 +422,7 @@ namespace xmloff
 	void OPropertyExport::exportRelativeTargetLocation(const ConstAsciiString& _sPropertyName,sal_Int32 _nProperty,bool _bAddType)
 	{
 		DBG_CHECK_PROPERTY( _sPropertyName, ::rtl::OUString );
-			
+
 		::rtl::OUString sTargetLocation = comphelper::getString(m_xProps->getPropertyValue(_sPropertyName));
         if ( sTargetLocation.getLength() )
                     // If this isn't a GraphicObject then GetRelativeReference

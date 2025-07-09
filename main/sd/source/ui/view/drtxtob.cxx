@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -154,7 +154,7 @@ TextObjectBar::~TextObjectBar()
 	SetRepeatTarget(NULL);
 }
 
-void TextObjectBar::GetCharState( SfxItemSet& rSet ) 
+void TextObjectBar::GetCharState( SfxItemSet& rSet )
 {
 	SfxItemSet  aCharAttrSet( mpView->GetDoc()->GetPool() );
 	mpView->GetAttributes( aCharAttrSet );
@@ -426,8 +426,8 @@ void TextObjectBar::GetAttrState( SfxItemSet& rSet )
                 //! avoid putting the same item as SfxBoolItem at the end of this function
                 nSlotId = 0;
             }
-            break;        
-                
+            break;
+
 			default:
 			break;
 		}
@@ -514,7 +514,7 @@ void TextObjectBar::GetAttrState( SfxItemSet& rSet )
 		Invalidate(SID_ATTR_PARA_ADJUST_RIGHT);
 		Invalidate(SID_ATTR_PARA_ADJUST_BLOCK);
 		Invalidate(SID_ATTR_PARA_LINESPACE);
-		Invalidate(SID_ATTR_PARA_ULSPACE); 
+		Invalidate(SID_ATTR_PARA_ULSPACE);
 
         // paragraph text direction
         if( bDisableParagraphTextDirection )
@@ -584,7 +584,7 @@ void TextObjectBar::GetAttrState( SfxItemSet& rSet )
 		aLRSpace.SetWhich(SID_ATTR_PARA_LRSPACE);
 		rSet.Put(aLRSpace);
 		Invalidate(SID_ATTR_PARA_LRSPACE);
-		//Added by xuxu 
+		//Added by xuxu
 		SfxItemState eState = aAttrSet.GetItemState( EE_PARA_LRSPACE );
 		if ( eState == SFX_ITEM_DONTCARE )
 		{

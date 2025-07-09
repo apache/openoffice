@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -73,7 +73,7 @@ HelpAgentDispatcher::~HelpAgentDispatcher()
 {
 	implts_stopTimer();
 	implts_ignoreCurrentURL();
-	
+
 	// Needed ... because it was create as "new VCLWindow()" ! Such windows must be disposed explicitly.
 	css::uno::Reference< css::lang::XComponent > xAgentWindow(m_xAgentWindow, css::uno::UNO_QUERY);
 	if (xAgentWindow.is())
@@ -94,13 +94,13 @@ void SAL_CALL HelpAgentDispatcher::dispatch(const css::util::URL& 								   aUR
 	// The timer will add the old URL to the list of ignorable URLs.
 	// So m_sCurrentURL must be set AFTER the timer was stopped !!!
 	implts_stopTimer();
-	
+
 	// SAFE ->
 	WriteGuard aWriteLock(m_aLock);
 	m_sCurrentURL = aURL.Complete;
 	aWriteLock.unlock();
 	// <- SAFE
-	
+
 	// start the expiration timer for the new URL
 	implts_startTimer();
 
@@ -158,24 +158,24 @@ void SAL_CALL HelpAgentDispatcher::disposing(const css::lang::EventObject& aEven
 {
 	// SAFE ->
 	WriteGuard aWriteLock(m_aLock);
-	
+
 	// Already disposed ?!
 	if (! m_xContainerWindow.is())
 		return;
 	// Wrong broadcaster ?!
 	if (aEvent.Source != m_xContainerWindow)
 		return;
-	
+
     css::uno::Reference< css::uno::XInterface > xSelfHoldUntilMethodEnds(static_cast< css::frame::XDispatch* >(this), css::uno::UNO_QUERY_THROW);
 	m_xSelfHold.clear();
-	
+
 	aWriteLock.unlock();
 	// <- SAFE
-	
+
 	implts_stopTimer();
 	implts_hideAgentWindow();
 	implts_ignoreCurrentURL();
-	
+
 	// SAFE ->
 	aWriteLock.lock();
 	m_xContainerWindow.clear();
@@ -183,7 +183,7 @@ void SAL_CALL HelpAgentDispatcher::disposing(const css::lang::EventObject& aEven
 	m_xAgentWindow.clear();
 	aWriteLock.unlock();
 	// <- SAFE
-	
+
 	// Needed ... because it was create as "new VCLWindow()" ! Such windows must be disposed explicitly.
 	if (xAgentWindow.is())
 		xAgentWindow->dispose();
@@ -210,13 +210,13 @@ void HelpAgentDispatcher::implts_acceptCurrentURL()
 {
 	// SAFE ->
 	WriteGuard aWriteLock(m_aLock);
-	
+
 	::rtl::OUString sAcceptedURL  = m_sCurrentURL;
 					m_sCurrentURL = ::rtl::OUString();
-	
+
 	aWriteLock.unlock();
 	// <- SAFE
-	
+
 	// We must make sure that this URL isn't marked as ignored by the user.
 	// Otherwise the user won't see the corresponding help content in the future.
 	SvtHelpOptions().resetAgentIgnoreURLCounter(sAcceptedURL);
@@ -237,13 +237,13 @@ void HelpAgentDispatcher::implts_ignoreCurrentURL()
 {
 	// SAFE ->
 	WriteGuard aWriteLock(m_aLock);
-	
+
 	::rtl::OUString sIgnoredURL   = m_sCurrentURL;
 					m_sCurrentURL = ::rtl::OUString();
-	
+
 	aWriteLock.unlock();
 	// <- SAFE
-	
+
 	if (sIgnoredURL.getLength())
 		SvtHelpOptions().decAgentIgnoreURLCounter(sIgnoredURL);
 }
@@ -256,7 +256,7 @@ void HelpAgentDispatcher::implts_stopTimer()
 	m_xSelfHold.clear();
 	aWriteLock.unlock();
 	// <- SAFE
-	
+
 	// SOLAR SAFE ->
 	// Timer access needs no "own lock" ! It lives if we live ...
 	// But it requires locking of the solar mutex ... because it's a vcl based timer.
@@ -281,7 +281,7 @@ void HelpAgentDispatcher::implts_startTimer()
 			return;
 	}
 	// <- SOLAR SAFE
-	
+
 	// SAFE ->
 	// Timer uses pointer to this help agent dispatcher ...
 	// But normally we are ref counted. So we must make sure that this
@@ -290,9 +290,9 @@ void HelpAgentDispatcher::implts_startTimer()
 	m_xSelfHold = css::uno::Reference< css::uno::XInterface >(static_cast< css::frame::XDispatch* >(this), css::uno::UNO_QUERY_THROW);
 	aWriteLock.unlock();
 	// <- SAFE
-	
+
 	sal_Int32 nTime = SvtHelpOptions().GetHelpAgentTimeoutPeriod();
-	
+
 	// SOLAR SAFE ->
 	// Timer access needs no "own lock" ! It lives if we live ...
 	// But it requires locking of the solar mutex ... because it's a vcl based timer.
@@ -319,7 +319,7 @@ IMPL_LINK(HelpAgentDispatcher, implts_timerExpired, void*,)
 
 	implts_hideAgentWindow();
 	implts_ignoreCurrentURL();
-	
+
 	return 0;
 }
 
@@ -331,9 +331,9 @@ void HelpAgentDispatcher::implts_showAgentWindow()
 	css::uno::Reference< css::awt::XWindow2 > xContainerWindow(m_xContainerWindow, css::uno::UNO_QUERY_THROW);
 	aReadLock.unlock();
 	// <- SAFE
-	
+
 	css::uno::Reference< css::awt::XWindow > xAgentWindow = implts_ensureAgentWindow();
-	
+
 	if (
 		(xContainerWindow.is() 		  ) &&
 		(xAgentWindow.is() 		  	  ) &&
@@ -362,14 +362,14 @@ void HelpAgentDispatcher::implts_positionAgentWindow()
 	css::uno::Reference< css::awt::XWindow > xContainerWindow = m_xContainerWindow;
 	aReadLock.unlock();
 	// <- SAFE
-	
+
 	css::uno::Reference< css::awt::XWindow > xAgentWindow = implts_ensureAgentWindow();
 	if (
 		(! xContainerWindow.is())  ||
 		(! xAgentWindow.is()    )
 	   )
 		return;
-	
+
 		  ::svt::HelpAgentWindow* pAgentWindow   = (::svt::HelpAgentWindow*)VCLUnoHelper::GetWindow(xAgentWindow);
 	const css::awt::Rectangle 	  aContainerSize = xContainerWindow->getPosSize();
 	const Size                	  aAgentSize     = pAgentWindow->getPreferredSizePixel();
@@ -399,10 +399,10 @@ css::uno::Reference< css::awt::XWindow > HelpAgentDispatcher::implts_ensureAgent
 	css::uno::Reference< css::awt::XWindow > xContainerWindow = m_xContainerWindow;
 	aReadLock.unlock();
 	// <- SAFE
-	
+
 	if (!xContainerWindow.is())
 		return css::uno::Reference< css::awt::XWindow >();
-	
+
 	::svt::HelpAgentWindow* pAgentWindow = 0;
 	// SOLAR SAFE ->
 	{
@@ -413,14 +413,14 @@ css::uno::Reference< css::awt::XWindow > HelpAgentDispatcher::implts_ensureAgent
 		pAgentWindow->setCallback(this);
 	}
 	// <- SOLAR SAFE
-	
+
 	// SAFE ->
 	WriteGuard aWriteLock(m_aLock);
 	m_xAgentWindow = VCLUnoHelper::GetInterface(pAgentWindow);
 	css::uno::Reference< css::awt::XWindow > xAgentWindow = m_xAgentWindow;
 	aWriteLock.unlock();
 	// <- SAFE
-	
+
 	// add as window listener to the container window so we can maintain the property position of the agent window
 	xContainerWindow->addWindowListener(this);
 
@@ -432,7 +432,7 @@ css::uno::Reference< css::awt::XWindow > HelpAgentDispatcher::implts_ensureAgent
 		m_aTimer.SetTimeoutHdl(LINK(this, HelpAgentDispatcher, implts_timerExpired));
 	}
 	// <- SOLAR SAFE
-	
+
 	return xAgentWindow;
 }
 

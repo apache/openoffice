@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -42,7 +42,7 @@
 #ifndef DBAUI_TABLEDESIGNHELPBAR_HXX
 #include "TableDesignHelpBar.hxx"
 #endif
-#ifndef _SV_FIXED_HXX 
+#ifndef _SV_FIXED_HXX
 #include <vcl/fixed.hxx>
 #endif
 #ifndef _DBA_DBACCESS_HELPID_HRC_
@@ -262,7 +262,7 @@ IClipboardTest* OTableFieldDescWin::getActiveChild() const
 		case DESCRIPTION:
 			pTest = getGenPage();
 			break;
-		default:		
+		default:
 			pTest = getHelpBar();
 			break;
 	}
@@ -303,15 +303,15 @@ void OTableFieldDescWin::paste()
 }
 // -----------------------------------------------------------------------------
 void OTableFieldDescWin::GetFocus()
-{ 
+{
 	if ( getGenPage() )
-		getGenPage()->GetFocus(); 
+		getGenPage()->GetFocus();
 }
 // -----------------------------------------------------------------------------
 void OTableFieldDescWin::LoseFocus()
-{ 
+{
 	if ( getGenPage() )
-		getGenPage()->LoseFocus(); 
+		getGenPage()->LoseFocus();
 }
 // -----------------------------------------------------------------------------
 long OTableFieldDescWin::PreNotify( NotifyEvent& rNEvt )
@@ -326,6 +326,6 @@ long OTableFieldDescWin::PreNotify( NotifyEvent& rNEvt )
 				m_eChildFocus = HELP;
 			break;
 	}
-	
+
 	return bHandled ? 1L : TabPage::PreNotify(rNEvt);
 }

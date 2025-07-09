@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -91,7 +91,7 @@ void ScChartListener::ExternalRefListener::notify(sal_uInt16 nFileId, ScExternal
         case ScExternalRefManager::LINK_MODIFIED:
         {
             if (maFileIds.count(nFileId))
-                // We are listening to this external document.  Send an update 
+                // We are listening to this external document.  Send an update
                 // requst to the chart.
                 mrParent.SetUpdateQueue();
         }
@@ -123,8 +123,8 @@ ScChartListener::ScChartListener( const String& rName, ScDocument* pDocP,
         const ScRange& rRange ) :
     StrData( rName ),
     SvtListener(),
-    mpExtRefListener(NULL), 
-    mpTokens(new vector<ScSharedTokenRef>), 
+    mpExtRefListener(NULL),
+    mpTokens(new vector<ScSharedTokenRef>),
     pUnoData( NULL ),
     pDoc( pDocP ),
     bUsed( sal_False ),
@@ -138,8 +138,8 @@ ScChartListener::ScChartListener( const String& rName, ScDocument* pDocP,
         const ScRangeListRef& rRangeList ) :
     StrData( rName ),
     SvtListener(),
-    mpExtRefListener(NULL), 
-    mpTokens(new vector<ScSharedTokenRef>), 
+    mpExtRefListener(NULL),
+    mpTokens(new vector<ScSharedTokenRef>),
     pUnoData( NULL ),
     pDoc( pDocP ),
     bUsed( sal_False ),
@@ -152,7 +152,7 @@ ScChartListener::ScChartListener( const String& rName, ScDocument* pDocP,
 ScChartListener::ScChartListener( const String& rName, ScDocument* pDocP, vector<ScSharedTokenRef>* pTokens ) :
     StrData( rName ),
     SvtListener(),
-    mpExtRefListener(NULL), 
+    mpExtRefListener(NULL),
     mpTokens(pTokens),
     pUnoData( NULL ),
     pDoc( pDocP ),
@@ -165,7 +165,7 @@ ScChartListener::ScChartListener( const String& rName, ScDocument* pDocP, vector
 ScChartListener::ScChartListener( const ScChartListener& r ) :
     StrData( r ),
     SvtListener(),
-    mpExtRefListener(NULL), 
+    mpExtRefListener(NULL),
     mpTokens(new vector<ScSharedTokenRef>(*r.mpTokens)),
     pUnoData( NULL ),
     pDoc( r.pDoc ),
@@ -178,7 +178,7 @@ ScChartListener::ScChartListener( const ScChartListener& r ) :
 
     if (r.mpExtRefListener.get())
     {
-        // Re-register this new listener for the files that the old listener 
+        // Re-register this new listener for the files that the old listener
         // was listening to.
 
         ScExternalRefManager* pRefMgr = pDoc->GetExternalRefManager();
@@ -436,7 +436,7 @@ sal_Bool ScChartListener::operator==( const ScChartListener& r )
     bool b1 = (mpTokens.get() && !mpTokens->empty());
     bool b2 = (r.mpTokens.get() && !r.mpTokens->empty());
 
-    if (pDoc != r.pDoc || bUsed != r.bUsed || bDirty != r.bDirty || 
+    if (pDoc != r.pDoc || bUsed != r.bUsed || bDirty != r.bDirty ||
         bSeriesRangesScheduled != r.bSeriesRangesScheduled ||
         GetString() != r.GetString() || b1 != b2)
         return false;

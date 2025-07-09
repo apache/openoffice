@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -1024,7 +1024,7 @@ void __EXPORT ScUndoQuery::Undo()
 
 	if (!bCopy)
     {
-        pDoc->InvalidatePageBreaks(nTab);    
+        pDoc->InvalidatePageBreaks(nTab);
 		pDoc->UpdatePageBreaks( nTab );
     }
 
@@ -1715,7 +1715,7 @@ sal_Bool __EXPORT ScUndoRepeatDB::CanRepeat(SfxRepeatTarget& rTarget) const
 //UNUSED2008-05              pOldPivot->ReleaseData();
 //UNUSED2008-05          pPivotCollection->Insert( pOldPivot );
 //UNUSED2008-05      }
-//UNUSED2008-05  
+//UNUSED2008-05
 //UNUSED2008-05  // erack! it's broadcasted
 //UNUSED2008-05  //	pDoc->SetDirty();
 //UNUSED2008-05      if (pNewUndoDoc)
@@ -1727,7 +1727,7 @@ sal_Bool __EXPORT ScUndoRepeatDB::CanRepeat(SfxRepeatTarget& rTarget) const
 //UNUSED2008-05                                  aOldArea.nColEnd, aOldArea.nRowEnd, aOldArea.nTab,
 //UNUSED2008-05                                  PAINT_GRID, SC_PF_LINES );
 //UNUSED2008-05      pDocShell->PostDataChanged();
-//UNUSED2008-05  
+//UNUSED2008-05
 //UNUSED2008-05      ScTabViewShell* pViewShell = ScTabViewShell::GetActiveViewShell();
 //UNUSED2008-05      if (pViewShell)
 //UNUSED2008-05      {
@@ -1743,19 +1743,19 @@ sal_Bool __EXPORT ScUndoRepeatDB::CanRepeat(SfxRepeatTarget& rTarget) const
 //UNUSED2008-05                  pViewShell->SetTabNo( aNewArea.nTab );
 //UNUSED2008-05          }
 //UNUSED2008-05      }
-//UNUSED2008-05  
+//UNUSED2008-05
 //UNUSED2008-05      EndUndo();
 //UNUSED2008-05  }
-//UNUSED2008-05  
+//UNUSED2008-05
 //UNUSED2008-05  void __EXPORT ScUndoPivot::Redo()
 //UNUSED2008-05  {
 //UNUSED2008-05      BeginRedo();
-//UNUSED2008-05  
+//UNUSED2008-05
 //UNUSED2008-05      ScDocument* pDoc = pDocShell->GetDocument();
 //UNUSED2008-05      ScPivotCollection* pPivotCollection = pDoc->GetPivotCollection();
 //UNUSED2008-05      ScPivot* pOldPivot = pPivotCollection->GetPivotAtCursor(
 //UNUSED2008-05                                              aOldParam.nCol, aOldParam.nRow, aOldParam.nTab );
-//UNUSED2008-05  
+//UNUSED2008-05
 //UNUSED2008-05      ScPivot* pNewPivot = NULL;
 //UNUSED2008-05      if (pNewUndoDoc)
 //UNUSED2008-05      {
@@ -1764,24 +1764,24 @@ sal_Bool __EXPORT ScUndoRepeatDB::CanRepeat(SfxRepeatTarget& rTarget) const
 //UNUSED2008-05          pNewPivot->SetName( aNewName );
 //UNUSED2008-05          pNewPivot->SetTag( aNewTag );
 //UNUSED2008-05      }
-//UNUSED2008-05  
+//UNUSED2008-05
 //UNUSED2008-05      pDocShell->PivotUpdate( pOldPivot, pNewPivot, sal_False );
-//UNUSED2008-05  
+//UNUSED2008-05
 //UNUSED2008-05      EndRedo();
 //UNUSED2008-05  }
-//UNUSED2008-05  
+//UNUSED2008-05
 //UNUSED2008-05  void __EXPORT ScUndoPivot::Repeat(SfxRepeatTarget& rTarget)
 //UNUSED2008-05  {
 //UNUSED2008-05      //  Wiederholen: nur loeschen
-//UNUSED2008-05  
+//UNUSED2008-05
 //UNUSED2008-05      if ( pOldUndoDoc && !pNewUndoDoc && rTarget.ISA(ScTabViewTarget) )
 //UNUSED2008-05          ((ScTabViewTarget&)rTarget).GetViewShell()->DeletePivotTable();
 //UNUSED2008-05  }
-//UNUSED2008-05  
+//UNUSED2008-05
 //UNUSED2008-05  sal_Bool __EXPORT ScUndoPivot::CanRepeat(SfxRepeatTarget& rTarget) const
 //UNUSED2008-05  {
 //UNUSED2008-05      //  Wiederholen: nur loeschen
-//UNUSED2008-05  
+//UNUSED2008-05
 //UNUSED2008-05      return ( pOldUndoDoc && !pNewUndoDoc && rTarget.ISA(ScTabViewTarget) );
 //UNUSED2008-05  }
 

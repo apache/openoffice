@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -84,7 +84,7 @@ SmSym::SmSym(const String& rName, const Font& rFont, sal_UCS4 cChar,
     m_aFace.SetAlign(ALIGN_BASELINE);
 
     m_cChar   = cChar;
-//! according to HDU this should not be used anymore now 
+//! according to HDU this should not be used anymore now
 //! since this was necessary in the early days but should
 //! not be done now since this is handled now at a more
 //! bottom layer by HDU.
@@ -124,7 +124,7 @@ bool SmSym::IsEqualInUI( const SmSym& rSymbol ) const
     return  m_aName == rSymbol.m_aName &&
             m_aFace == rSymbol.m_aFace &&
             m_cChar == rSymbol.m_cChar;
-}    
+}
 
 /**************************************************************************/
 
@@ -199,13 +199,13 @@ const SymbolPtrVec_t SmSymbolManager::GetSymbols() const
 bool SmSymbolManager::AddOrReplaceSymbol( const SmSym &rSymbol, bool bForceChange )
 {
     bool bAdded = false;
-    
+
     const String aSymbolName( rSymbol.GetName() );
     if (aSymbolName.Len() > 0 && rSymbol.GetSymbolSetName().Len() > 0)
     {
         const SmSym *pFound = GetSymbolByName( aSymbolName );
         const bool bSymbolConflict = pFound && !pFound->IsEqualInUI( rSymbol );
-        
+
         // avoid having the same symbol name twice but with different symbols in use
         if (!pFound || bForceChange)
         {
@@ -214,20 +214,20 @@ bool SmSymbolManager::AddOrReplaceSymbol( const SmSym &rSymbol, bool bForceChang
         }
         else if (pFound && !bForceChange && bSymbolConflict)
         {
-            // TODO: to solve this a document owned symbol manager would be required ... 
+            // TODO: to solve this a document owned symbol manager would be required ...
             // But for now we have a global one to easily support availability of all
             // symbols in all formulas. A copy of the global one would be needed here
             // and then the new symbol has to be forcefully applied. This would keep
             // the current formula intact but will leave the set of symbols in the
             // global symbol manager somewhat to chance.
             DBG_ASSERT( 0, "symbol conflict, different symbol with same name found!" );
-        }    
+        }
 
         if (bAdded)
             m_bModified = true;
         DBG_ASSERT( bAdded || (pFound && !bSymbolConflict), "AddOrReplaceSymbol: unresolved symbol conflict" );
     }
-    
+
     return bAdded;
 }
 
@@ -242,7 +242,7 @@ void SmSymbolManager::RemoveSymbol( const String & rSymbolName )
     }
 }
 
-    
+
 std::set< String > SmSymbolManager::GetSymbolSetNames() const
 {
     std::set< String >  aRes;
@@ -252,7 +252,7 @@ std::set< String > SmSymbolManager::GetSymbolSetNames() const
     return aRes;
 }
 
-    
+
 const SymbolPtrVec_t SmSymbolManager::GetSymbolSet( const String& rSymbolSetName )
 {
     SymbolPtrVec_t aRes;
@@ -267,7 +267,7 @@ const SymbolPtrVec_t SmSymbolManager::GetSymbolSet( const String& rSymbolSetName
     }
     return aRes;
 }
-    
+
 
 void SmSymbolManager::Load()
 {
@@ -336,7 +336,7 @@ void SmSymbolManager::Save()
             }
         }
         DBG_ASSERT(pSym - pSymbols == nSaveSymbolCnt, "wrong number of symbols" );
-#endif        
+#endif
 
         // prepare to skip symbols from iGreek on saving
         SmLocalizedSymbolData   aLocalizedData;
@@ -353,7 +353,7 @@ void SmSymbolManager::Save()
                 aSymbols.push_back( *aTmp[i] );
         }
         rCfg.SetSymbols( aSymbols );
-#if 0        
+#if 0
         delete [] pSymbols;
 #endif
 

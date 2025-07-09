@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -74,7 +74,7 @@ namespace vcl_sal {
 		const KeysymNameReplacement*	pReplacements;
 		int								nReplacements;
 	};
-    
+
     // ====================================================================
     //
     // CAUTION CAUTION CAUTION
@@ -87,7 +87,7 @@ namespace vcl_sal {
 	{
 		{ XK_Control_L, "Ctrl" },
 		{ XK_Control_R, "Ctrl" },
-		{ XK_Escape, "Esc" }, 
+		{ XK_Escape, "Esc" },
 		{ XK_space, "Space" },
         { XK_minus, "-" },
         { XK_plus, "+" }
@@ -101,7 +101,7 @@ namespace vcl_sal {
 		{ XK_Left, "Sol" },
 		{ XK_Up, "Yukarı" },
 		{ XK_Down, "Aşağı" },
-		{ XK_space, "Boşluk" } 
+		{ XK_space, "Boşluk" }
 	};
 
 	static const struct KeysymNameReplacement aImplReplacements_Russian[] =
@@ -110,7 +110,7 @@ namespace vcl_sal {
 		{ XK_Left, "Влево" },
 		{ XK_Up, "Вверх" },
 		{ XK_Down, "Вниз" },
-		{ XK_space, "Пробел" } 
+		{ XK_space, "Пробел" }
 	};
 
 	static const struct KeysymNameReplacement aImplReplacements_German[] =

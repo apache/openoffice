@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -87,7 +87,7 @@ OColumnControlModel::OColumnControlModel(const Reference<XMultiServiceFactory>& 
     ,m_nWidth(50)
 {
 	DBG_CTOR(OColumnControlModel,NULL);
-	registerProperties();	
+	registerProperties();
 }
 // -----------------------------------------------------------------------------
 OColumnControlModel::OColumnControlModel(const OColumnControlModel* _pSource,const Reference<XMultiServiceFactory>& _rxFactory)
@@ -111,7 +111,7 @@ OColumnControlModel::~OColumnControlModel()
 	{
 		acquire();
 		dispose();
-	}	
+	}
 }
 // -----------------------------------------------------------------------------
 void OColumnControlModel::registerProperties()
@@ -140,7 +140,7 @@ void OColumnControlModel::registerProperties()
 //------------------------------------------------------------------------------
 Reference< XCloneable > SAL_CALL OColumnControlModel::createClone( ) throw (RuntimeException)
 {
-    return new OColumnControlModel( this, getORB() ); 
+    return new OColumnControlModel( this, getORB() );
 }
 //------------------------------------------------------------------------------
 IMPLEMENT_TYPEPROVIDER2(OColumnControlModel,OColumnControlModel_BASE,comphelper::OPropertyContainer)
@@ -149,7 +149,7 @@ IMPLEMENT_SERVICE_INFO2_STATIC(OColumnControlModel,"com.sun.star.comp.dbu.OColum
 IMPLEMENT_FORWARD_REFCOUNT( OColumnControlModel, OColumnControlModel_BASE )
 //------------------------------------------------------------------------------
 Any SAL_CALL OColumnControlModel::queryInterface( const Type& _rType ) throw (RuntimeException)
-{ 
+{
 	return OColumnControlModel_BASE::queryInterface( _rType );
 }
 // -----------------------------------------------------------------------------

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -64,13 +64,13 @@ namespace slideshow
 
             virtual void viewAdded( const UnoViewSharedPtr& ) {}
             virtual void viewRemoved( const UnoViewSharedPtr& ) {}
-            virtual void viewChanged( const UnoViewSharedPtr& rView ) 
-            { 
-                mrBase.implViewChanged(rView); 
+            virtual void viewChanged( const UnoViewSharedPtr& rView )
+            {
+                mrBase.implViewChanged(rView);
             }
             virtual void viewsChanged()
-            { 
-                mrBase.implViewsChanged(); 
+            {
+                mrBase.implViewsChanged();
             }
 
 
@@ -78,12 +78,12 @@ namespace slideshow
             // -------------------------------------------------
 
             virtual bool enableAnimations()
-            { 
-                return mrBase.implStartIntrinsicAnimation(); 
+            {
+                return mrBase.implStartIntrinsicAnimation();
             }
             virtual bool disableAnimations()
-            { 
-                return mrBase.implEndIntrinsicAnimation(); 
+            {
+                return mrBase.implEndIntrinsicAnimation();
             }
 
             ExternalShapeBase& mrBase;
@@ -116,7 +116,7 @@ namespace slideshow
                 mrEventMultiplexer.removeViewHandler( mpListener );
                 mpShapeManager->removeIntrinsicAnimationHandler( mpListener );
             }
-            catch (uno::Exception &) 
+            catch (uno::Exception &)
             {
                 OSL_ENSURE( false, rtl::OUStringToOString(
                                 comphelper::anyToString(
@@ -133,7 +133,7 @@ namespace slideshow
         }
 
 		// ---------------------------------------------------------------------
-		        
+
         void ExternalShapeBase::play()
         {
             implStartIntrinsicAnimation();
@@ -154,7 +154,7 @@ namespace slideshow
         }
 
 		// ---------------------------------------------------------------------
-		
+
         bool ExternalShapeBase::isPlaying() const
         {
             return implIsIntrinsicAnimationPlaying();
@@ -175,7 +175,7 @@ namespace slideshow
         }
 
 		// ---------------------------------------------------------------------
-		
+
         bool ExternalShapeBase::render() const
         {
             if( maBounds.getRange().equalZero() )
@@ -189,14 +189,14 @@ namespace slideshow
         }
 
 		// ---------------------------------------------------------------------
-		
+
         bool ExternalShapeBase::isContentChanged() const
 		{
 			return true;
         }
 
 		// ---------------------------------------------------------------------
-		
+
         ::basegfx::B2DRectangle ExternalShapeBase::getBounds() const
         {
         	return maBounds;
@@ -210,28 +210,28 @@ namespace slideshow
         }
 
 		// ---------------------------------------------------------------------
-		
+
         ::basegfx::B2DRectangle ExternalShapeBase::getUpdateArea() const
         {
             return maBounds;
         }
 
 		// ---------------------------------------------------------------------
-				
+
         bool ExternalShapeBase::isVisible() const
 		{
 			return true;
 		}
 
 		// ---------------------------------------------------------------------
-		
+
         double ExternalShapeBase::getPriority() const
         {
             return mnPriority;
         }
 
 		// ---------------------------------------------------------------------
-						
+
         bool ExternalShapeBase::isBackgroundDetached() const
         {
             // external shapes always have their own window/surface

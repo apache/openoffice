@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -62,7 +62,7 @@ OXMLControlProperty::OXMLControlProperty( ORptFilter& rImport
 
 	OSL_ENSURE(_xAttrList.is(),"Attribute list is NULL!");
 	OSL_ENSURE(m_xControl.is(),"Control is NULL!");
-	
+
 	const SvXMLNamespaceMap& rMap = rImport.GetNamespaceMap();
 	const SvXMLTokenMap& rTokenMap = rImport.GetControlPropertyElemTokenMap();
 
@@ -110,7 +110,7 @@ OXMLControlProperty::OXMLControlProperty( ORptFilter& rImport
                 break;
 		}
 	}
-	
+
 }
 // -----------------------------------------------------------------------------
 
@@ -179,7 +179,7 @@ void OXMLControlProperty::addValue(const ::rtl::OUString& _sValue)
 
 	if ( !m_bIsList )
 		m_aSetting.Value = aValue;
-	else 
+	else
 	{
 		sal_Int32 nPos = m_aSequence.getLength();
 		m_aSequence.realloc(nPos+1);
@@ -259,7 +259,7 @@ Any OXMLControlProperty::convertString(const ::com::sun::star::uno::Type& _rExpe
 				static ::com::sun::star::uno::Type s_aTimeType		= ::getCppuType(static_cast< ::com::sun::star::util::Time* >(NULL));
 				static ::com::sun::star::uno::Type s_aDateTimeType	= ::getCppuType(static_cast< ::com::sun::star::util::DateTime* >(NULL));
 				sal_Int32 nType = 0;
-				if	( _rExpectedType.equals(s_aDateType) ) 
+				if	( _rExpectedType.equals(s_aDateType) )
                     nType = TYPE_DATE;
                 else if ( _rExpectedType.equals(s_aTimeType) )
                     nType = TYPE_TIME;

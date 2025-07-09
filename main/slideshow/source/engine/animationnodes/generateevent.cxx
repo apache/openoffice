@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -53,15 +53,15 @@ EventSharedPtr generateEvent(
     double nAdditionalDelay )
 {
     EventSharedPtr pEvent;
-    
+
     if (! rEventDescription.hasValue())
         return pEvent;
-    
+
     animations::Timing eTiming;
     animations::Event aEvent;
     uno::Sequence<uno::Any> aSequence;
     double nDelay1 = 0;
-    
+
     if (rEventDescription >>= eTiming) {
         switch (eTiming) {
         case animations::Timing_INDEFINITE:
@@ -74,21 +74,21 @@ EventSharedPtr generateEvent(
         }
     }
     else if (rEventDescription >>= aEvent) {
-        
+
         // try to extract additional event delay
         double nDelay2 = 0.0;
         if (aEvent.Offset.hasValue() && !(aEvent.Offset >>= nDelay2)) {
             OSL_ENSURE( false, "offset values apart from DOUBLE not "
                         "recognized in animations::Event!" );
         }
-        
+
         // common vars used inside switch
         uno::Reference<animations::XAnimationNode> xNode;
         uno::Reference<drawing::XShape> xShape;
         ShapeSharedPtr pShape;
-        
+
         // TODO(F1): Respect aEvent.Repeat value
-        
+
         switch (aEvent.Trigger) {
         default:
             ENSURE_OR_THROW( false, "unexpected event trigger!" );
@@ -107,7 +107,7 @@ EventSharedPtr generateEvent(
                 pEvent = makeDelay( rFunctor,
                                     nDelay2 + nAdditionalDelay,
                                     "generateEvent, BEGIN_EVENT");
-                rContext.mrUserEventQueue.registerAnimationStartEvent( 
+                rContext.mrUserEventQueue.registerAnimationStartEvent(
                     pEvent, xNode );
             }
             else {
@@ -121,7 +121,7 @@ EventSharedPtr generateEvent(
                 pEvent = makeDelay( rFunctor,
                                     nDelay2 + nAdditionalDelay,
                                     "generateEvent, END_EVENT");
-                rContext.mrUserEventQueue.registerAnimationEndEvent( 
+                rContext.mrUserEventQueue.registerAnimationEndEvent(
                     pEvent, xNode );
             }
             else {
@@ -153,14 +153,14 @@ EventSharedPtr generateEvent(
                 pEvent = makeDelay( rFunctor,
                                     nDelay2 + nAdditionalDelay,
                                     "generateEvent, ON_DBL_CLICK");
-                rContext.mrUserEventQueue.registerShapeDoubleClickEvent( 
+                rContext.mrUserEventQueue.registerShapeDoubleClickEvent(
                     pEvent, pShape );
             }
             else {
                 OSL_ENSURE( false, "could not extract source XAnimationNode "
                             "for ON_DBL_CLICK!" );
             }
-            break;    
+            break;
         case animations::EventTrigger::ON_MOUSE_ENTER:
             // try to extract XShape event source
             if ((aEvent.Source >>= xShape) &&
@@ -169,7 +169,7 @@ EventSharedPtr generateEvent(
                 pEvent = makeDelay( rFunctor,
                                     nDelay2 + nAdditionalDelay,
                                     "generateEvent, ON_MOUSE_ENTER");
-                rContext.mrUserEventQueue.registerMouseEnterEvent( 
+                rContext.mrUserEventQueue.registerMouseEnterEvent(
                     pEvent, pShape );
             }
             else {
@@ -185,7 +185,7 @@ EventSharedPtr generateEvent(
                 pEvent = makeDelay( rFunctor,
                                     nDelay2 + nAdditionalDelay,
                                     "generateEvent, ON_MOUSE_LEAVE");
-                rContext.mrUserEventQueue.registerMouseLeaveEvent( 
+                rContext.mrUserEventQueue.registerMouseLeaveEvent(
                     pEvent, pShape );
             }
             else {
@@ -233,7 +233,7 @@ EventSharedPtr generateEvent(
         // schedule delay event
         rContext.mrEventQueue.addEvent( pEvent );
     }
-    
+
     return pEvent;
 }
 

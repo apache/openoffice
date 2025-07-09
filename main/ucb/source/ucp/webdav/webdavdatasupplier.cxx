@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -399,11 +399,11 @@ sal_Bool DataSupplier::getData()
         {
             try
             {
-                CurlUri aURI( 
+                CurlUri aURI(
                     m_pImpl->m_xContent->getResourceAccess().getURL() );
                 rtl::OUString aPath = aURI.GetPath();
 
-                if ( aPath.getStr()[ aPath.getLength() - 1 ] 
+                if ( aPath.getStr()[ aPath.getLength() - 1 ]
                      == sal_Unicode( '/' ) )
                     aPath = aPath.copy( 0, aPath.getLength() - 1 );
 
@@ -414,7 +414,7 @@ sal_Bool DataSupplier::getData()
                 {
                     const DAVResource & rRes = resources[ n ];
 
-                    // Filter parent, which is contained somewhere(!) in 
+                    // Filter parent, which is contained somewhere(!) in
                     // the vector.
                     if ( !bFoundParent )
                     {
@@ -422,12 +422,12 @@ sal_Bool DataSupplier::getData()
                         {
                             CurlUri aCurrURI( rRes.uri );
                             rtl::OUString aCurrPath = aCurrURI.GetPath();
-                            if ( aCurrPath.getStr()[ 
-                                     aCurrPath.getLength() - 1 ] 
+                            if ( aCurrPath.getStr()[
+                                     aCurrPath.getLength() - 1 ]
                                  == sal_Unicode( '/' ) )
                                 aCurrPath
-                                    = aCurrPath.copy( 
-                                        0, 
+                                    = aCurrPath.copy(
+                                        0,
                                         aCurrPath.getLength() - 1 );
 
                             aCurrPath = CurlUri::unescape( aCurrPath );
@@ -462,27 +462,27 @@ sal_Bool DataSupplier::getData()
 
                             if ( !bFolder )
                                 continue;
-                            
+
                             break;
                         }
-                    
+
                     case ucb::OpenMode::DOCUMENTS:
                         {
                             sal_Bool bDocument = sal_False;
-                            
+
                             const uno::Any & rValue
                                 = pContentProperties->getValue(
                                     rtl::OUString(
                                         RTL_CONSTASCII_USTRINGPARAM(
                                             "IsDocument" ) ) );
                             rValue >>= bDocument;
-                            
+
                             if ( !bDocument )
                                 continue;
-                            
+
                             break;
                         }
-                    
+
                     case ucb::OpenMode::ALL:
                     default:
                         break;

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -26,7 +26,7 @@ IMPORTANT NOTE: some Quickdraw lines/frames can not be "quickly" drawn exactly:
 for instance, when PenSize=(1,1), the line from (0,0) to (8,0)
 corresponds to the rectangle (0,0)(0,1)(9,1)(9,0), which can only be drawn
  by drawing a rectangle. Drawing a non horizontal/vertical will imply to draw
-a polygon, ... 
+a polygon, ...
 Similarly, drawing the frame of a rectangle (0,0)(0,1)(9,1)(9,0) when PenSize=(1,1),
 will imply to draw a rectangle (0.5,0.5)(0.5,8.5)(8.5,8.5)(8.5,0.5) with linewidth=1...
 
@@ -59,7 +59,7 @@ namespace PictReaderShapePrivate {
 }
 
 namespace PictReaderShape {
-  //--------- draws a horizontal/vertical/small line (by creating a "rectangle/polygon")  --------- 
+  //--------- draws a horizontal/vertical/small line (by creating a "rectangle/polygon")  ---------
   bool drawLineHQ(VirtualDevice *dev, Point const &orig, Point const &dest, Size const &pSize) {
     int dir[2] = L2I_ARY( dest.X()-orig.X(), dest.Y()-orig.Y() );
     bool vertic = dir[0] == 0;
@@ -109,7 +109,7 @@ namespace PictReaderShape {
 
     // HACK: here we use the line coloring when drawing the shape
     //       must be changed if other parameter are changed to draw
-    //       a line/fill shape 
+    //       a line/fill shape
     Color oldFColor = dev->GetFillColor(), oldLColor = dev->GetLineColor();
     dev->SetFillColor(oldLColor); dev->SetLineColor(Color(COL_TRANSPARENT));
     dev->DrawPolygon(poly);
@@ -118,7 +118,7 @@ namespace PictReaderShape {
   }
 
   //
-  //-------------------- draws a line -------------------- 
+  //-------------------- draws a line --------------------
   //
   void drawLine(VirtualDevice *dev, Point const &orig, Point const &dest, Size const &pSize) {
     if (drawLineHQ(dev,orig,dest,pSize)) return;
@@ -133,9 +133,9 @@ namespace PictReaderShape {
     dev->DrawPolyLine(poly, double(penSize), basegfx::B2DLINEJOIN_NONE);
   }
 
-  //--------------------  draws a rectangle -------------------- 
+  //--------------------  draws a rectangle --------------------
   /* Note(checkme): contradically with the QuickDraw's reference 3-23, it seems better to consider
-     that the frame/content of a rectangle appears inside the given rectangle. Does a conversion 
+     that the frame/content of a rectangle appears inside the given rectangle. Does a conversion
      appear between the pascal functions and the data stored in the file ? */
   void drawRectangle(VirtualDevice *dev, bool drawFrame, Rectangle const &orig, Size const &pSize) {
     int penSize=(pSize.Width()+pSize.Height())/2;
@@ -155,7 +155,7 @@ namespace PictReaderShape {
       dev->DrawPolygon(poly);
   }
 
-  //--------------------  draws an ellipse -------------------- 
+  //--------------------  draws an ellipse --------------------
   void drawEllipse(VirtualDevice *dev, bool drawFrame, Rectangle const &orig, Size const &pSize) {
     int penSize=(pSize.Width()+pSize.Height())/2;
     Rectangle oval = PictReaderShapePrivate::contractRectangle(drawFrame, orig, pSize);
@@ -170,7 +170,7 @@ namespace PictReaderShape {
       dev->DrawPolygon(poly);
   }
 
-  //--------------------  draws an arc/pie -------------------- 
+  //--------------------  draws an arc/pie --------------------
   void drawArc(VirtualDevice *dev, bool drawFrame, Rectangle const &orig, const double& angle1, const double& angle2, Size const &pSize) {
     int penSize=(pSize.Width()+pSize.Height())/2;
     Rectangle arc = PictReaderShapePrivate::contractRectangle(drawFrame, orig, pSize);
@@ -183,7 +183,7 @@ namespace PictReaderShape {
     double const X[2] = L2D_ARY( arc.Left(), arc.Right() );
     double const Y[2] = L2D_ARY( arc.Top(), arc.Bottom() );
     B2DPoint center(0.5*(X[1]+X[0]), 0.5*(Y[1]+Y[0]));
-    
+
     // We must have angl1 between 0 and F_2PI
     while (angl1 < 0.0) { angl1 += F_2PI; angl2 += F_2PI; }
     while (angl1 >= F_2PI) { angl1  -= F_2PI; angl2 -= F_2PI; }
@@ -205,7 +205,7 @@ namespace PictReaderShape {
       dev->DrawPolygon(poly);
     }
   }
-  //--------------------  draws a rectangle with round corner -------------------- 
+  //--------------------  draws a rectangle with round corner --------------------
   void drawRoundRectangle(VirtualDevice *dev, bool drawFrame, Rectangle const &orig, Size const &ovalSize, Size const &pSize) {
     int penSize=(pSize.Width()+pSize.Height())/2;
     Rectangle oval = PictReaderShapePrivate::contractRectangle(drawFrame, orig, pSize);
@@ -227,7 +227,7 @@ namespace PictReaderShape {
       dev->DrawPolygon(poly);
   }
 
-  //--------------------  draws a polygon -------------------- 
+  //--------------------  draws a polygon --------------------
   void drawPolygon(VirtualDevice *dev, bool drawFrame, Polygon const &orig, Size const &pSize) {
     int penSize=(pSize.Width()+pSize.Height())/2;
     int decalTL[2] = L2I_ARY( 0, 0);

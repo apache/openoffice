@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -35,7 +35,7 @@ using ::rtl::OUString ;
 using ::com::sun::star::xml::wrapper::XXMLElementWrapper ;
 using ::com::sun::star::xml::crypto::XXMLEncryptionTemplate ;
 
-XMLEncryptionTemplateImpl :: XMLEncryptionTemplateImpl( const Reference< XMultiServiceFactory >& aFactory ) 
+XMLEncryptionTemplateImpl :: XMLEncryptionTemplateImpl( const Reference< XMultiServiceFactory >& aFactory )
 	: m_xTemplate( NULL ),
       m_xTarget( NULL ),
       m_xServiceManager( aFactory ),
@@ -46,27 +46,27 @@ XMLEncryptionTemplateImpl :: ~XMLEncryptionTemplateImpl() {
 }
 
 /* XXMLEncryptionTemplate */
-void SAL_CALL XMLEncryptionTemplateImpl :: setTemplate( const Reference< XXMLElementWrapper >& aTemplate ) 
+void SAL_CALL XMLEncryptionTemplateImpl :: setTemplate( const Reference< XXMLElementWrapper >& aTemplate )
 	throw (com::sun::star::uno::RuntimeException, com::sun::star::lang::IllegalArgumentException)
 {
 	m_xTemplate = aTemplate ;
 }
 
 /* XXMLEncryptionTemplate */
-Reference< XXMLElementWrapper > SAL_CALL XMLEncryptionTemplateImpl :: getTemplate() 
+Reference< XXMLElementWrapper > SAL_CALL XMLEncryptionTemplateImpl :: getTemplate()
 throw (com::sun::star::uno::RuntimeException)
 {
 	return m_xTemplate ;
 }
 
 /* XXMLEncryptionTemplate */
-void SAL_CALL XMLEncryptionTemplateImpl :: setTarget( const Reference< XXMLElementWrapper >& aTarget ) 
+void SAL_CALL XMLEncryptionTemplateImpl :: setTarget( const Reference< XXMLElementWrapper >& aTarget )
 	throw( com::sun::star::lang::IllegalArgumentException ) {
 	m_xTarget = aTarget ;
 }
 
 /* XXMLEncryptionTemplate */
-Reference< XXMLElementWrapper > SAL_CALL XMLEncryptionTemplateImpl :: getTarget() 
+Reference< XXMLElementWrapper > SAL_CALL XMLEncryptionTemplateImpl :: getTarget()
 throw (com::sun::star::uno::RuntimeException)
 {
 	return m_xTarget ;

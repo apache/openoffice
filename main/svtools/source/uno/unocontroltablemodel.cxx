@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -816,14 +816,14 @@ namespace svt { namespace table
             return this;
         return NULL;
     }
-    
+
     //------------------------------------------------------------------------------------------------------------------
     bool UnoControlTableModel::isEnabled() const
     {
         DBG_CHECK_ME();
         return m_pImpl->bEnabled;
     }
-    
+
     //------------------------------------------------------------------------------------------------------------------
     void UnoControlTableModel::setEnabled( bool _bEnabled )
     {
@@ -941,7 +941,7 @@ namespace svt { namespace table
         ColPos const lastCol = i_event.FirstColumn == -1 ? getColumnCount() - 1 : i_event.LastColumn;
         RowPos const firstRow = i_event.FirstRow == -1 ? 0 : i_event.FirstRow;
         RowPos const lastRow = i_event.FirstRow == -1 ? getRowCount() - 1 : i_event.LastRow;
- 
+
         ModellListeners aListeners( m_pImpl->m_aListeners );
         for (   ModellListeners::const_iterator loop = aListeners.begin();
                 loop != aListeners.end();

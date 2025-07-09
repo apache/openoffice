@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -70,7 +70,7 @@ ORTFReader::ORTFReader(	SvStream& rIn,
 						const ::com::sun::star::uno::Reference< ::com::sun::star::lang::XMultiServiceFactory >& _rM,
 						const TColumnVector* pList,
 						const OTypeInfoMap* _pInfoMap)
-	:SvRTFParser(rIn) 
+	:SvRTFParser(rIn)
 	,ODatabaseExport( _rxConnection, _rxNumberF, _rM, pList, _pInfoMap, rIn )
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "misc", "Ocke.Janssen@sun.com", "ORTFReader::ORTFReader" );
@@ -86,7 +86,7 @@ ORTFReader::ORTFReader(SvStream& rIn,
 					   const TColumnVector* pList,
 					   const OTypeInfoMap* _pInfoMap,
                        sal_Bool _bAutoIncrementEnabled)
-   :SvRTFParser(rIn) 
+   :SvRTFParser(rIn)
    ,ODatabaseExport( nRows, _rColumnPositions, _rxNumberF, _rM, pList, _pInfoMap, _bAutoIncrementEnabled, rIn )
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "misc", "Ocke.Janssen@sun.com", "ORTFReader::ORTFReader" );
@@ -273,7 +273,7 @@ sal_Bool ORTFReader::CreateTable(int nToken)
 	String aTableName(ModuleRes(STR_TBL_TITLE));
 	aTableName = aTableName.GetToken(0,' ');
 	aTableName = String(::dbtools::createUniqueName(m_xTables,::rtl::OUString(aTableName)));
-	
+
 	int nTmpToken2 = nToken;
 	String aColumnName;
 
@@ -347,7 +347,7 @@ sal_Bool ORTFReader::CreateTable(int nToken)
 		Any aTextColor;
 		if(!m_vecColor.empty())
 			aTextColor <<= m_vecColor[0];
-		
+
 		bOk = !executeWizard(aTableName,aTextColor,aFont) && m_xTable.is();
 	}
 	return bOk;

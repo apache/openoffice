@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -427,7 +427,7 @@ void ChangePlaceholderTag::addCustomHandles( SdrHdlList& rHandlerList )
         long nShapeSizePix = std::min(aShapeSizePix.Width(),aShapeSizePix.Height());
         if( 50 > nShapeSizePix )
             return;
-        
+
         bool bLarge = nShapeSizePix > 250;
 
 		Size aButtonSize( pDev->PixelToLogic( getButtonImage(0, bLarge )->GetSizePixel()) );
@@ -445,7 +445,7 @@ void ChangePlaceholderTag::addCustomHandles( SdrHdlList& rHandlerList )
 		ImageButtonHdl* pHdl = new ImageButtonHdl( xThis, aPoint );
 		pHdl->SetObjHdlNum( SMART_TAG_HDL_NUM );
 		pHdl->SetPageView( mrView.GetSdrPageView() );
-    
+
 		pHdl->SetPos( aPos );
 
 		rHandlerList.AddHdl( pHdl );
@@ -486,7 +486,7 @@ ViewOverlayManager::ViewOverlayManager( ViewShellBase& rViewShellBase )
 		| tools::EventMultiplexerEvent::EID_BEGIN_TEXT_EDIT
 		| tools::EventMultiplexerEvent::EID_END_TEXT_EDIT );
 
-    StartListening( *mrBase.GetDocShell() );    
+    StartListening( *mrBase.GetDocShell() );
 }
 
 // --------------------------------------------------------------------
@@ -540,22 +540,22 @@ IMPL_LINK(ViewOverlayManager,UpdateTagsHdl, void *, EMPTYARG)
     mnUpdateTagsEvent  = 0;
     bool bChanges = DisposeTags();
     bChanges |= CreateTags();
-        
+
     if( bChanges && mrBase.GetDrawView() )
-        static_cast< ::sd::View* >( mrBase.GetDrawView() )->updateHandles();        
+        static_cast< ::sd::View* >( mrBase.GetDrawView() )->updateHandles();
     return 0;
 }
 
 bool ViewOverlayManager::CreateTags()
 {
     bool bChanges = false;
-    
+
     SdPage* pPage = mrBase.GetMainViewShell()->getCurrentPage();
-    
-    if( pPage && !pPage->IsMasterPage() && (pPage->GetPageKind() == PK_STANDARD) )    
+
+    if( pPage && !pPage->IsMasterPage() && (pPage->GetPageKind() == PK_STANDARD) )
     {
 		const std::list< SdrObject* >& rShapes = pPage->GetPresentationShapeList().getList();
-    	
+
     	for( std::list< SdrObject* >::const_iterator iter( rShapes.begin() ); iter != rShapes.end(); iter++ )
     	{
     	    if( (*iter)->IsEmptyPresObj() && ((*iter)->GetObjIdentifier() == OBJ_OUTLINETEXT) && (mrBase.GetDrawView()->GetTextEditObject() != (*iter)) )
@@ -566,7 +566,7 @@ bool ViewOverlayManager::CreateTags()
     	    }
     	}
     }
-    
+
     return bChanges;
 }
 
@@ -578,7 +578,7 @@ bool ViewOverlayManager::DisposeTags()
 	{
 	    ViewTagVector vec;
 	    vec.swap( maTagVector );
-	    
+
 		ViewTagVector::iterator iter = vec.begin();
 		do
 		{
@@ -587,7 +587,7 @@ bool ViewOverlayManager::DisposeTags()
 		while( iter != vec.end() );
 		return true;
 	}
-	
+
 	return false;
 }
 

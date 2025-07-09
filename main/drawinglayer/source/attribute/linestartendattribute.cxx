@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -48,8 +48,8 @@ namespace drawinglayer
 			unsigned								mbCentered : 1;			// use centered to ineStart/End point?
 
 			ImpLineStartEndAttribute(
-				double fWidth, 
-				const basegfx::B2DPolyPolygon& rPolyPolygon, 
+				double fWidth,
+				const basegfx::B2DPolyPolygon& rPolyPolygon,
 				bool bCentered)
 			:	mnRefCount(0),
 				mfWidth(fWidth),
@@ -90,8 +90,8 @@ namespace drawinglayer
         };
 
         LineStartEndAttribute::LineStartEndAttribute(
-			double fWidth, 
-			const basegfx::B2DPolyPolygon& rPolyPolygon, 
+			double fWidth,
+			const basegfx::B2DPolyPolygon& rPolyPolygon,
 			bool bCentered)
 		:	mpLineStartEndAttribute(new ImpLineStartEndAttribute(
                 fWidth, rPolyPolygon, bCentered))
@@ -139,7 +139,7 @@ namespace drawinglayer
 				{
 					delete mpLineStartEndAttribute;
 				}
-				
+
 				mpLineStartEndAttribute = rCandidate.mpLineStartEndAttribute;
 				mpLineStartEndAttribute->mnRefCount++;
 			}
@@ -162,26 +162,26 @@ namespace drawinglayer
 			return (*rCandidate.mpLineStartEndAttribute == *mpLineStartEndAttribute);
 		}
 
-		double LineStartEndAttribute::getWidth() const 
-        { 
-            return mpLineStartEndAttribute->getWidth(); 
+		double LineStartEndAttribute::getWidth() const
+        {
+            return mpLineStartEndAttribute->getWidth();
         }
 
-		const basegfx::B2DPolyPolygon& LineStartEndAttribute::getB2DPolyPolygon() const 
-        { 
-            return mpLineStartEndAttribute->getB2DPolyPolygon(); 
+		const basegfx::B2DPolyPolygon& LineStartEndAttribute::getB2DPolyPolygon() const
+        {
+            return mpLineStartEndAttribute->getB2DPolyPolygon();
         }
 
-		bool LineStartEndAttribute::isCentered() const 
-        { 
-            return mpLineStartEndAttribute->isCentered(); 
+		bool LineStartEndAttribute::isCentered() const
+        {
+            return mpLineStartEndAttribute->isCentered();
         }
 
-        bool LineStartEndAttribute::isActive() const 
-        { 
-            return (0.0 != getWidth() 
-                && 0 != getB2DPolyPolygon().count() 
-                && 0 != getB2DPolyPolygon().getB2DPolygon(0).count()); 
+        bool LineStartEndAttribute::isActive() const
+        {
+            return (0.0 != getWidth()
+                && 0 != getB2DPolyPolygon().count()
+                && 0 != getB2DPolyPolygon().getB2DPolygon(0).count());
         }
 	} // end of namespace attribute
 } // end of namespace drawinglayer

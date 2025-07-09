@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -219,7 +219,7 @@ sal_Bool SwTxtGuess::Guess( const SwTxtPortion& rPor, SwTxtFormatInfo &rInf,
     {
 		nBreakPos = nCutPos;
 		xub_StrLen nX = nBreakPos;
-        
+
         const SvxAdjust& rAdjust = rInf.GetTxtFrm()->GetTxtNode()->GetSwAttrSet().GetAdjust().GetAdjust();
         if ( rAdjust == SVX_ADJUST_LEFT )
         {
@@ -232,11 +232,11 @@ sal_Bool SwTxtGuess::Guess( const SwTxtPortion& rPor, SwTxtFormatInfo &rInf,
         }
         else //#i20878#
         {
-            while( nX && nBreakPos > rInf.GetLineStart() + 1 &&            
+            while( nX && nBreakPos > rInf.GetLineStart() + 1 &&
                    ( CH_BLANK == ( cCutChar = rInf.GetChar( --nX ) ) ||
                      CH_FULL_BLANK == cCutChar ) )
                 --nBreakPos;
-        }       
+        }
 
         if( nBreakPos > rInf.GetIdx() )
             nPorLen = nBreakPos - rInf.GetIdx();
@@ -244,7 +244,7 @@ sal_Bool SwTxtGuess::Guess( const SwTxtPortion& rPor, SwTxtFormatInfo &rInf,
                ( CH_BLANK == ( cCutChar = rInf.GetChar( nCutPos ) ) ||
                  CH_FULL_BLANK == cCutChar ) )
 			; // nothing
-        
+
 		nBreakStart = nCutPos;
 	}
 	else if( pBreakIt->GetBreakIter().is() )

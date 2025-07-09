@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -87,7 +87,7 @@ namespace dbaui
 	OGenericAdministrationPage::~OGenericAdministrationPage()
 	{
 		DELETEZ(m_pFT_HeaderText);
-    
+
         DBG_DTOR(OGenericAdministrationPage,NULL);
     }
 
@@ -181,7 +181,7 @@ namespace dbaui
 			fillControls(aControlList);
 			::std::for_each(aControlList.begin(),aControlList.end(),TSaveValueWrapperFunctor());
 		}
-		
+
 		if ( bReadonly )
 		{
 			fillWindows(aControlList);
@@ -259,7 +259,7 @@ namespace dbaui
 
     // -----------------------------------------------------------------------
 	IMPL_LINK(OGenericAdministrationPage, OnTestConnectionClickHdl, PushButton*, /*_pButton*/)
-	{        
+	{
 		OSL_ENSURE(m_pAdminDialog,"No Admin dialog set! ->GPF");
 		sal_Bool bSuccess = sal_False;
 		if ( m_pAdminDialog )
@@ -289,7 +289,7 @@ namespace dbaui
 				else
 				{
 					eImage = OSQLMessageBox::Error;
-					aMessage = String(ModuleRes(STR_CONNECTION_NO_SUCCESS));				
+					aMessage = String(ModuleRes(STR_CONNECTION_NO_SUCCESS));
 				}
 				OSQLMessageBox aMsg( this, sTitle, aMessage, WB_OK, eImage );
 				aMsg.Execute();

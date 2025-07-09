@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -69,7 +69,7 @@ Rectangle AquaSalSystem::GetDisplayScreenPosSizePixel( unsigned int nScreen )
         pScreen = [pScreens objectAtIndex: nScreen];
     else
         pScreen = [NSScreen mainScreen];
-        
+
     if( pScreen )
     {
         NSRect aFrame = [pScreen frame];
@@ -88,7 +88,7 @@ Rectangle AquaSalSystem::GetDisplayWorkAreaPosSizePixel( unsigned int nScreen )
         pScreen = [pScreens objectAtIndex: nScreen];
     else
         pScreen = [NSScreen mainScreen];
-        
+
     if( pScreen )
     {
         NSRect aFrame = [pScreen visibleFrame];
@@ -140,13 +140,13 @@ int AquaSalSystem::ShowNativeMessageBox( const String& rTitle,
 {
     NSString* pTitle = CreateNSString( rTitle );
     NSString* pMessage = CreateNSString( rMessage );
-    
+
     struct id_entry
     {
         int nCombination;
         int nDefaultButton;
         int nTextIds[3];
-    } aButtonIds[] = 
+    } aButtonIds[] =
     {
         { SALSYSTEM_SHOWNATIVEMSGBOX_BTNCOMBI_OK, SALSYSTEM_SHOWNATIVEMSGBOX_BTN_OK, { BUTTON_OK, -1, -1 } },
         { SALSYSTEM_SHOWNATIVEMSGBOX_BTNCOMBI_OK_CANCEL, SALSYSTEM_SHOWNATIVEMSGBOX_BTN_OK, { BUTTON_OK, BUTTON_CANCEL, -1 } },
@@ -162,7 +162,7 @@ int AquaSalSystem::ShowNativeMessageBox( const String& rTitle,
         { SALSYSTEM_SHOWNATIVEMSGBOX_BTNCOMBI_RETRY_CANCEL, SALSYSTEM_SHOWNATIVEMSGBOX_BTN_RETRY, { BUTTON_RETRY, BUTTON_CANCEL, -1 } },
         { SALSYSTEM_SHOWNATIVEMSGBOX_BTNCOMBI_RETRY_CANCEL, SALSYSTEM_SHOWNATIVEMSGBOX_BTN_CANCEL, { BUTTON_CANCEL, BUTTON_RETRY, -1 } }
     };
-    
+
     NSString* pDefText = nil;
     NSString* pAltText = nil;
     NSString* pOthText = nil;
@@ -184,10 +184,10 @@ int AquaSalSystem::ShowNativeMessageBox( const String& rTitle,
             }
         }
     }
-    
-    
+
+
     int nResult = NSRunAlertPanel( pTitle, pMessage, pDefText, pAltText, pOthText );
-    
+
     if( pTitle )
         [pTitle release];
     if( pMessage )
@@ -198,7 +198,7 @@ int AquaSalSystem::ShowNativeMessageBox( const String& rTitle,
         [pAltText release];
     if( pOthText )
         [pOthText release];
-    
+
     int nRet = 0;
     if( nC < sizeof(aButtonIds)/sizeof(aButtonIds[0]) && nResult >= 1 && nResult <= 3 )
     {
@@ -214,6 +214,6 @@ int AquaSalSystem::ShowNativeMessageBox( const String& rTitle,
         case BUTTON_IGNORE: nRet = SALSYSTEM_SHOWNATIVEMSGBOX_BTN_IGNORE; break;
         }
     }
-    
+
     return nRet;
 }

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -62,16 +62,16 @@ private:
 
 
 
-// static 
+// static
 SdGlobalResourceContainer& SdGlobalResourceContainer::Instance (void)
 {
-    DBG_ASSERT(Implementation::mpInstance!=NULL, 
+    DBG_ASSERT(Implementation::mpInstance!=NULL,
         "SdGlobalResourceContainer::Instance(): instance has been deleted");
     // Maybe we should throw an exception when the instance has been deleted.
     return *Implementation::mpInstance;
 }
 
-SdGlobalResourceContainer* 
+SdGlobalResourceContainer*
     SdGlobalResourceContainer::Implementation::mpInstance = NULL;
 
 
@@ -83,7 +83,7 @@ void SdGlobalResourceContainer::AddResource (
     ::std::auto_ptr<SdGlobalResource> pResource)
 {
     ::osl::MutexGuard aGuard (mpImpl->maMutex);
-    
+
     Implementation::ResourceList::iterator iResource;
     iResource = ::std::find (
         mpImpl->maResources.begin(),
@@ -110,7 +110,7 @@ void SdGlobalResourceContainer::AddResource (
     ::boost::shared_ptr<SdGlobalResource> pResource)
 {
     ::osl::MutexGuard aGuard (mpImpl->maMutex);
-    
+
     Implementation::SharedResourceList::iterator iResource;
     iResource = ::std::find (
         mpImpl->maSharedResources.begin(),
@@ -157,10 +157,10 @@ SdGlobalResourceContainer::SdGlobalResourceContainer (void)
 
 
 
-SdGlobalResourceContainer::~SdGlobalResourceContainer (void) 
+SdGlobalResourceContainer::~SdGlobalResourceContainer (void)
 {
     ::osl::MutexGuard aGuard (mpImpl->maMutex);
-    
+
     // Release the resources in reversed order of their addition to the
     // container.  This is because a resource A added before resource B
     // may have been created due to a request of B.  Thus B depends on A and

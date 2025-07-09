@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -86,7 +86,7 @@ SfxObjectShell* findShellForUrl( const rtl::OUString& sMacroURLOrPath )
     {
         osl::FileBase::getFileURLFromSystemPath( sMacroURLOrPath, aURL );
         aObj.SetURL( aURL );
-    }    
+    }
     OSL_TRACE("Trying to find shell for url %s", rtl::OUStringToOString( aURL, RTL_TEXTENCODING_UTF8 ).getStr() );
     while ( pShell )
     {
@@ -98,23 +98,23 @@ SfxObjectShell* findShellForUrl( const rtl::OUString& sMacroURLOrPath )
         if ( xModel.is() )
         {
             OSL_TRACE("shell 0x%x has model with url %s and we look for %s", pShell
-                , rtl::OUStringToOString( xModel->getURL(), RTL_TEXTENCODING_UTF8 ).getStr() 
-                , rtl::OUStringToOString( aURL, RTL_TEXTENCODING_UTF8 ).getStr() 
+                , rtl::OUStringToOString( xModel->getURL(), RTL_TEXTENCODING_UTF8 ).getStr()
+                , rtl::OUStringToOString( aURL, RTL_TEXTENCODING_UTF8 ).getStr()
             );
 			::rtl::OUString aName = xModel->getURL() ;
 			if (0 == aName.getLength())
 				{
-					
+
 					const static rtl::OUString sTitle( RTL_CONSTASCII_USTRINGPARAM("Title" ) );
 				    uno::Reference< frame::XFrame > xFrame( xModel->getCurrentController()->getFrame(), uno::UNO_QUERY_THROW );
 					uno::Reference< beans::XPropertySet > xProps( xFrame, uno::UNO_QUERY_THROW );
 					xProps->getPropertyValue(sTitle) >>= aName;
 					sal_Int32 pos = 0;
-					aName = aName.getToken(0,'-',pos);	
-					aName = aName.trim();	
+					aName = aName.getToken(0,'-',pos);
+					aName = aName.trim();
 					if( sMacroURLOrPath.lastIndexOf( aName ) >= 0 )
                     {
-                        pFoundShell = pShell; 
+                        pFoundShell = pShell;
                         break;
                     }
 				}
@@ -129,7 +129,7 @@ SfxObjectShell* findShellForUrl( const rtl::OUString& sMacroURLOrPath )
                     rtl::OUString sCurrName = xDocProps->getTemplateName();
                     if( sMacroURLOrPath.lastIndexOf( sCurrName ) >= 0 )
                     {
-                        pFoundShell = pShell; 
+                        pFoundShell = pShell;
                         break;
                     }
                 }
@@ -151,11 +151,11 @@ SfxObjectShell* findShellForUrl( const rtl::OUString& sMacroURLOrPath )
                             bDocNameNoPathMatch = aTmpName.equals( aURL );
                         }
                     }
-                } 
-                             
+                }
+
                 if ( aURL.equals( xModel->getURL() ) || bDocNameNoPathMatch )
                 {
-                    pFoundShell = pShell; 
+                    pFoundShell = pShell;
                     break;
                 }
             }
@@ -236,11 +236,11 @@ bool hasMacro( SfxObjectShell* pShell, const String& sLibrary, String& sMod, con
 void parseMacro( const rtl::OUString& sMacro, String& sContainer, String& sModule, String& sProcedure )
 {
     sal_Int32 nMacroDot = sMacro.lastIndexOf( '.' );
-    
+
     if ( nMacroDot != -1 )
     {
         sProcedure = sMacro.copy( nMacroDot + 1 );
- 
+
         sal_Int32 nContainerDot = sMacro.lastIndexOf( '.',  nMacroDot - 1 );
         if ( nContainerDot != -1 )
         {
@@ -279,7 +279,7 @@ MacroResolvedInfo resolveVBAMacro( SfxObjectShell* pShell, const rtl::OUString& 
     if( nDocSepIndex > 0 )
     {
         // macro specified by document name
-        // find document shell for document name and call ourselves 
+        // find document shell for document name and call ourselves
         // recursively
 
         // assume for now that the document name is *this* document
@@ -292,7 +292,7 @@ MacroResolvedInfo resolveVBAMacro( SfxObjectShell* pShell, const rtl::OUString& 
             SvtPathOptions aPathOpt;
             String aAddinPath = aPathOpt.GetAddinPath();
             if( rtl::OUString( sDocUrlOrPath ).indexOf( aAddinPath ) == 0 )
-                pFoundShell = pShell; 
+                pFoundShell = pShell;
         }
         if( !pFoundShell )
             pFoundShell = findShellForUrl( sDocUrlOrPath );
@@ -449,7 +449,7 @@ sal_Bool executeMacro( SfxObjectShell* pShell, const String& sMacroName, uno::Se
                     sal_Int32 nOutIndex = aOutArgsIndex[ index ];
                     aArgs[ nOutIndex ] = aOutArgs[ index ];
                 }
-            } 
+            }
         }
         bRes = ( nErr == ERRCODE_NONE );
     }
@@ -457,7 +457,7 @@ sal_Bool executeMacro( SfxObjectShell* pShell, const String& sMacroName, uno::Se
     {
        bRes = sal_False;
     }
-    return bRes; 
+    return bRes;
 }
 
 // ============================================================================

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -55,11 +55,11 @@ public:
 };
 
 
-ScVbaNames::ScVbaNames(const css::uno::Reference< ov::XHelperInterface >& xParent, 
+ScVbaNames::ScVbaNames(const css::uno::Reference< ov::XHelperInterface >& xParent,
 			const css::uno::Reference< css::uno::XComponentContext >& xContext,
 			const css::uno::Reference< css::sheet::XNamedRanges >& xNames,
 			const css::uno::Reference< css::frame::XModel >& xModel ):
-			ScVbaNames_BASE(  xParent , xContext , uno::Reference< container::XIndexAccess >( xNames, uno::UNO_QUERY ) ), 
+			ScVbaNames_BASE(  xParent , xContext , uno::Reference< container::XIndexAccess >( xNames, uno::UNO_QUERY ) ),
 			mxModel( xModel ),
 			mxNames( xNames )
 {
@@ -161,7 +161,7 @@ ScVbaNames::Add( const css::uno::Any& Name ,
 }
 
 // XEnumerationAccess
-css::uno::Type 
+css::uno::Type
 ScVbaNames::getElementType() throw( css::uno::RuntimeException )
 {
 	return ov::excel::XName::static_type(0);
@@ -181,14 +181,14 @@ ScVbaNames::createCollectionObject( const uno::Any& aSource )
 	return uno::makeAny( uno::Reference< excel::XName > ( new ScVbaName( getParent(), mxContext, xName, mxNames , mxModel ) ) );
 }
 
-rtl::OUString& 
+rtl::OUString&
 ScVbaNames::getServiceImplName()
 {
 	static rtl::OUString sImplName( RTL_CONSTASCII_USTRINGPARAM("ScVbaNames") );
 	return sImplName;
-}	
+}
 
-css::uno::Sequence<rtl::OUString> 
+css::uno::Sequence<rtl::OUString>
 ScVbaNames::getServiceNames()
 {
 	static uno::Sequence< rtl::OUString > aServiceNames;

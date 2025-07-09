@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -190,7 +190,7 @@ void Slider::ImplUpdateRects( sal_Bool bUpdate )
 			}
 			else
 				maChannel2Rect.SetEmpty();
-			
+
 			const Rectangle aControlRegion( Rectangle( Point(0,0), Size( SLIDER_THUMB_SIZE, 10 ) ) );
 			Rectangle aThumbBounds, aThumbContent;
             if ( GetNativeControlRegion( CTRL_SLIDER, PART_THUMB_HORZ,
@@ -254,7 +254,7 @@ void Slider::ImplUpdateRects( sal_Bool bUpdate )
 		    {
                 Region aInvalidRegion( aOldThumbRect );
                 aInvalidRegion.Union( maThumbRect );
-                
+
                 if( !IsBackground() && GetParent() )
                 {
                     const Point aPos( GetPosPixel() );
@@ -384,12 +384,12 @@ void Slider::ImplDraw( sal_uInt16 nDrawFlags )
     ControlPart nPart = (GetStyle() & WB_HORZ) ? PART_TRACK_HORZ_AREA : PART_TRACK_VERT_AREA;
     ControlState   nState = ( IsEnabled() ? CTRL_STATE_ENABLED : 0 ) | ( HasFocus() ? CTRL_STATE_FOCUSED : 0 );
     SliderValue    sldValue;
-    
+
     sldValue.mnMin       = mnMinRange;
     sldValue.mnMax       = mnMaxRange;
     sldValue.mnCur       = mnThumbPos;
     sldValue.maThumbRect = maThumbRect;
-    
+
     if( IsMouseOver() )
     {
         if( maThumbRect.IsInside( GetPointerPosPixel() ) )
@@ -606,11 +606,11 @@ void Slider::ImplDoMouseAction( const Point& rMousePos, sal_Bool bCallAction )
 	sal_Bool	bAction = sal_False;
 
 	switch ( meScrollType )
-	{   
+	{
     	case( SCROLL_SET ):
     	{
     	    const bool bUp = ImplIsPageUp( rMousePos ), bDown = ImplIsPageDown( rMousePos );
-    	
+
 			if ( bUp || bDown )
 			{
 				bAction = bCallAction;
@@ -620,7 +620,7 @@ void Slider::ImplDoMouseAction( const Point& rMousePos, sal_Bool bCallAction )
 				mnStateFlags &= ~( SLIDER_STATE_CHANNEL1_DOWN | SLIDER_STATE_CHANNEL2_DOWN );
 			break;
     	}
-    	
+
 		case SCROLL_PAGEUP:
 			if ( ImplIsPageUp( rMousePos ) )
 			{
@@ -719,7 +719,7 @@ void Slider::MouseButtonDown( const MouseEvent& rMEvt )
 			    nTrackFlags = STARTTRACK_BUTTONREPEAT;
 			    meScrollType = SCROLL_PAGEUP;
 			}
-			
+
 			mnDragDraw = SLIDER_DRAW_CHANNEL;
 		}
 		else if ( ImplIsPageDown( rMousePos ) )
@@ -731,7 +731,7 @@ void Slider::MouseButtonDown( const MouseEvent& rMEvt )
 			    nTrackFlags = STARTTRACK_BUTTONREPEAT;
 			    meScrollType = SCROLL_PAGEDOWN;
 			}
-			
+
 			mnDragDraw = SLIDER_DRAW_CHANNEL;
 		}
 
@@ -742,7 +742,7 @@ void Slider::MouseButtonDown( const MouseEvent& rMEvt )
 			mnStartPos = mnThumbPos;
 			ImplDoMouseAction( rMousePos, meScrollType != SCROLL_SET );
 			Update();
-			
+
 			if( meScrollType != SCROLL_SET )
 		        StartTracking( nTrackFlags );
 		}
@@ -757,12 +757,12 @@ void Slider::MouseButtonUp( const MouseEvent& )
     {
 		// Button und PageRect-Status wieder herstellen
 		const sal_uInt16 nOldStateFlags = mnStateFlags;
-		
+
 		mnStateFlags &= ~( SLIDER_STATE_CHANNEL1_DOWN | SLIDER_STATE_CHANNEL2_DOWN | SLIDER_STATE_THUMB_DOWN );
-		
+
 		if ( nOldStateFlags != mnStateFlags )
 			ImplDraw( mnDragDraw );
-			
+
 		mnDragDraw = 0;
     	ImplDoAction( sal_True );
     	meScrollType = SCROLL_DONTKNOW;

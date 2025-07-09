@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -145,16 +145,16 @@ OXUndoEnvironment::~OXUndoEnvironment()
 	DBG_DTOR( rpt_OXUndoEnvironment,NULL);
 }
 // -----------------------------------------------------------------------------
-void OXUndoEnvironment::Lock() 
-{ 
+void OXUndoEnvironment::Lock()
+{
     OSL_ENSURE(m_refCount,"Illegal call to dead object!");
-    osl_incrementInterlockedCount( &m_pImpl->m_nLocks ); 
+    osl_incrementInterlockedCount( &m_pImpl->m_nLocks );
 }
-void OXUndoEnvironment::UnLock() 
-{ 
+void OXUndoEnvironment::UnLock()
+{
     OSL_ENSURE(m_refCount,"Illegal call to dead object!");
 
-    osl_decrementInterlockedCount( &m_pImpl->m_nLocks ); 
+    osl_decrementInterlockedCount( &m_pImpl->m_nLocks );
 }
 sal_Bool OXUndoEnvironment::IsLocked() const { return m_pImpl->m_nLocks != 0; }
 // -----------------------------------------------------------------------------
@@ -201,7 +201,7 @@ void OXUndoEnvironment::Clear(const Accessor& /*_r*/)
 	{
         OReportPage* pPage = PTR_CAST( OReportPage, m_pImpl->m_rModel.GetMasterPage(i) );
         RemoveSection(pPage);
-	}    
+	}
 
     m_pImpl->m_aSections.clear();
 
@@ -262,7 +262,7 @@ void SAL_CALL OXUndoEnvironment::propertyChange( const PropertyChangeEvent& _rEv
     if ( !pController )
         return;
 
-    // no Undo for transient and readonly props. 
+    // no Undo for transient and readonly props.
 	// let's see if we know something about the set
 #if OSL_DEBUG_LEVEL > 0
     int nlen = m_pImpl->m_aPropertySetCache.size();
@@ -386,7 +386,7 @@ void SAL_CALL OXUndoEnvironment::propertyChange( const PropertyChangeEvent& _rEv
     if ( _xContainer.is() )
     {
         aFind = ::std::find(m_pImpl->m_aSections.begin(),m_pImpl->m_aSections.end(),_xContainer);
-    		
+
 	    if ( aFind == m_pImpl->m_aSections.end() )
 	    {
             Reference<container::XChild> xParent(_xContainer->getParent(),uno::UNO_QUERY);
@@ -412,7 +412,7 @@ void SAL_CALL OXUndoEnvironment::elementInserted(const ContainerEvent& evt) thro
             Reference< report::XSection > xContainer(evt.Source,uno::UNO_QUERY);
 
 		    ::std::vector< uno::Reference< container::XChild> >::const_iterator aFind = getSection(xContainer.get());
-    		
+
 		    if ( aFind != m_pImpl->m_aSections.end() )
 		    {
                 OUndoEnvLock aLock(*this);
@@ -427,7 +427,7 @@ void SAL_CALL OXUndoEnvironment::elementInserted(const ContainerEvent& evt) thro
                 {
                     DBG_UNHANDLED_EXCEPTION();
                 }
-             
+
 		    }
 	    }
         else
@@ -481,7 +481,7 @@ void SAL_CALL OXUndoEnvironment::elementRemoved(const ContainerEvent& evt) throw
     {
 	    Reference< report::XSection > xContainer(evt.Source,uno::UNO_QUERY);
 	    ::std::vector< uno::Reference< container::XChild> >::const_iterator aFind = getSection(xContainer.get());
-        
+
         Reference< report::XReportComponent >  xReportComponent( xIface, UNO_QUERY );
 	    if ( aFind != m_pImpl->m_aSections.end() && xReportComponent.is() )
 	    {
@@ -508,7 +508,7 @@ void SAL_CALL OXUndoEnvironment::elementRemoved(const ContainerEvent& evt) throw
             }
         }
     }
-	
+
 	if ( xIface.is() )
 		RemoveElement(xIface);
 

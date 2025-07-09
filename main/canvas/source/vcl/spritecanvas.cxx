@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -60,7 +60,7 @@ namespace vclcanvas
     void SpriteCanvas::initialize()
     {
         tools::LocalGuard aGuard;
-  
+
         // #i64742# Only call initialize when not in probe mode
         if( maArguments.getLength() == 0 )
             return;
@@ -76,7 +76,7 @@ namespace vclcanvas
              boost::bind(&SpriteCanvasHelper::enableUnsafeScrolling,
                          boost::ref(maCanvasHelper),
                          _1))
-            ("SpriteBounds", 
+            ("SpriteBounds",
              boost::bind(&SpriteCanvasHelper::isSpriteBounds,
                          boost::ref(maCanvasHelper)),
              boost::bind(&SpriteCanvasHelper::enableSpriteBounds,
@@ -85,7 +85,7 @@ namespace vclcanvas
 
         VERBOSE_TRACE( "VCLSpriteCanvas::initialize called" );
 
-        ENSURE_ARG_OR_THROW( maArguments.getLength() >= 1, 
+        ENSURE_ARG_OR_THROW( maArguments.getLength() >= 1,
                              "VCLSpriteCanvas::initialize: wrong number of arguments" );
 
         /* maArguments:
@@ -98,21 +98,21 @@ namespace vclcanvas
          */
         ENSURE_ARG_OR_THROW( maArguments.getLength() >= 4 &&
                              maArguments[0].getValueTypeClass() == uno::TypeClass_HYPER &&
-                             maArguments[4].getValueTypeClass() == uno::TypeClass_INTERFACE, 
+                             maArguments[4].getValueTypeClass() == uno::TypeClass_INTERFACE,
                              "VCLSpriteCanvas::initialize: wrong number of arguments, or wrong types" );
-        
+
         uno::Reference< awt::XWindow > xParentWindow;
         maArguments[4] >>= xParentWindow;
-        
+
         OutDevProviderSharedPtr pOutDev( new WindowOutDevHolder(xParentWindow) );
-        
-        // setup helper    
+
+        // setup helper
         maDeviceHelper.init( pOutDev );
-        setWindow(uno::Reference<awt::XWindow2>(xParentWindow, uno::UNO_QUERY_THROW)); 
+        setWindow(uno::Reference<awt::XWindow2>(xParentWindow, uno::UNO_QUERY_THROW));
         maCanvasHelper.init( maDeviceHelper.getBackBuffer(),
                              *this,
                              maRedrawManager,
-                             false,   // no OutDev state preservation  
+                             false,   // no OutDev state preservation
                              false ); // no alpha on surface
 
         maArguments.realloc(0);
@@ -147,7 +147,7 @@ namespace vclcanvas
     sal_Bool SAL_CALL SpriteCanvas::updateScreen( sal_Bool bUpdateAll ) throw (uno::RuntimeException)
     {
         tools::LocalGuard aGuard;
-        
+
         // avoid repaints on hidden window (hidden: not mapped to
         // screen). Return failure, since the screen really has _not_
         // been updated (caller should try again later)
@@ -163,7 +163,7 @@ namespace vclcanvas
     bool SpriteCanvas::repaint( const GraphicObjectSharedPtr&	rGrf,
                                 const rendering::ViewState&     viewState,
                                 const rendering::RenderState&   renderState,
-                                const ::Point& 					rPt, 
+                                const ::Point& 					rPt,
                                 const ::Size& 					rSz,
                                 const GraphicAttr&				rAttr ) const
     {

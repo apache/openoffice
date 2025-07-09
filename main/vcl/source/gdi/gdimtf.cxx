@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -1259,7 +1259,7 @@ void GDIMetaFile::Rotate( long nAngle10 )
                         while( pAction )
                         {
                             const sal_uInt16 nType = pAction->GetType();
-                            
+
                             if( META_GRADIENTEX_ACTION == nType )
                             {
                                 // Add rotated gradientex
@@ -1341,7 +1341,7 @@ void GDIMetaFile::Rotate( long nAngle10 )
 				    Hatch				aHatch( pAct->GetHatch() );
 
                     aHatch.SetAngle( aHatch.GetAngle() + (sal_uInt16) nAngle10 );
-				    aMtf.AddAction( new MetaHatchAction( ImplGetRotatedPolyPolygon( pAct->GetPolyPolygon(), aRotAnchor, aRotOffset, fSin, fCos ), 
+				    aMtf.AddAction( new MetaHatchAction( ImplGetRotatedPolyPolygon( pAct->GetPolyPolygon(), aRotAnchor, aRotOffset, fSin, fCos ),
                                                                                     aHatch ) );
 			    }
 			    break;
@@ -1503,13 +1503,13 @@ Rectangle GDIMetaFile::GetBoundRect( OutputDevice& i_rReference, Rectangle* pHai
 {
     GDIMetaFile     aMtf;
     VirtualDevice   aMapVDev( i_rReference );
-    
+
     aMapVDev.EnableOutput( sal_False );
     aMapVDev.SetMapMode( GetPrefMapMode() );
 
     std::vector<Rectangle> aClipStack( 1, Rectangle() );
     std::vector<sal_uInt16> aPushFlagStack;
-    
+
     Rectangle aBound;
 
     if(pHairline)
@@ -1524,7 +1524,7 @@ Rectangle GDIMetaFile::GetBoundRect( OutputDevice& i_rReference, Rectangle* pHai
         MetaAction* pAction = GetAction(a);
         const sal_uInt16 nActionType = pAction->GetType();
         Rectangle* pUseHairline = (pHairline && aMapVDev.IsLineColor()) ? pHairline : 0;
-        
+
         switch( nActionType )
         {
         case( META_PIXEL_ACTION ):
@@ -2010,8 +2010,8 @@ Color GDIMetaFile::ImplColReplaceFnc( const Color& rColor, const void* pColParam
 	const sal_uLong nR = rColor.GetRed(), nG = rColor.GetGreen(), nB = rColor.GetBlue();
 
 	for( sal_uLong i = 0; i < ( (const ImplColReplaceParam*) pColParam )->nCount; i++ )
-	{																
-		if( ( ( (const ImplColReplaceParam*) pColParam )->pMinR[ i ] <= nR ) && 
+	{
+		if( ( ( (const ImplColReplaceParam*) pColParam )->pMinR[ i ] <= nR ) &&
 			( ( (const ImplColReplaceParam*) pColParam )->pMaxR[ i ] >= nR ) &&
 			( ( (const ImplColReplaceParam*) pColParam )->pMinG[ i ] <= nG ) &&
 			( ( (const ImplColReplaceParam*) pColParam )->pMaxG[ i ] >= nG ) &&
@@ -2758,7 +2758,7 @@ sal_uLong GDIMetaFile::GetChecksum() const
                         const basegfx::B2DPolygon aPolygon(aPolyPolygon.getB2DPolygon(a));
                         const sal_uInt32 nPointCount(aPolygon.count());
                         const bool bControl(aPolygon.areControlPointsUsed());
-                        
+
                         for(sal_uInt32 b(0); b < nPointCount; b++)
                         {
                             const basegfx::B2DPoint aPoint(aPolygon.getB2DPoint(b));
@@ -2852,7 +2852,7 @@ sal_uLong GDIMetaFile::GetSizeBytes() const
             case( META_POLYPOLYGON_ACTION ):
             {
                 const PolyPolygon& rPolyPoly = ( (MetaPolyPolygonAction*) pAction )->GetPolyPolygon();
-                
+
                 for( sal_uInt16 n = 0; n < rPolyPoly.Count(); ++n )
                     nSizeBytes += ( rPolyPoly[ n ].GetSize() * sizeof( Point ) );
             }
@@ -3021,7 +3021,7 @@ SvStream& GDIMetaFile::Write( SvStream& rOStm )
 // ------------------------------------------------------------------------
 
 sal_Bool GDIMetaFile::CreateThumbnail( sal_uInt32 nMaximumExtent,
-									BitmapEx& rBmpEx, 
+									BitmapEx& rBmpEx,
 									const BitmapEx* pOverlay,
 									const Rectangle* pOverlayRect ) const
 {

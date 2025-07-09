@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -63,7 +63,7 @@ getDocument( uno::Reference< uno::XComponentContext >& xContext, const uno::Refe
 	uno::Reference< frame::XModel > xModel( xDoc, uno::UNO_QUERY );
 	if( !xModel.is() )
 		return uno::Any();
-	
+
 	SwVbaDocument *pWb = new SwVbaDocument(  uno::Reference< XHelperInterface >( aApplication, uno::UNO_QUERY_THROW ), xContext, xModel );
 	return uno::Any( uno::Reference< word::XDocument > (pWb) );
 }
@@ -74,8 +74,8 @@ class DocumentEnumImpl : public EnumerationHelperImpl
 public:
 	DocumentEnumImpl( const uno::Reference< XHelperInterface >& xParent, const uno::Reference< uno::XComponentContext >& xContext, const uno::Reference< container::XEnumeration >& xEnumeration, const uno::Any& aApplication ) throw ( uno::RuntimeException ) : EnumerationHelperImpl( xParent, xContext, xEnumeration ), m_aApplication( aApplication ) {}
 
-	virtual uno::Any SAL_CALL nextElement(  ) throw (container::NoSuchElementException, lang::WrappedTargetException, uno::RuntimeException) 
-	{ 
+	virtual uno::Any SAL_CALL nextElement(  ) throw (container::NoSuchElementException, lang::WrappedTargetException, uno::RuntimeException)
+	{
 		uno::Reference< text::XTextDocument > xDoc( m_xEnumeration->nextElement(), uno::UNO_QUERY_THROW );
 		return getDocument( m_xContext, xDoc, m_aApplication );
 	}
@@ -94,7 +94,7 @@ uno::Reference< container::XEnumeration >
 SwVbaDocuments::createEnumeration() throw (uno::RuntimeException)
 {
 	// #FIXME its possible the DocumentEnumImpl here doens't reflect
-	// the state of this object ( although it should ) would be 
+	// the state of this object ( although it should ) would be
 	// safer to create an enumeration based on this objects state
 	// rather than one effectively based of the desktop component
     uno::Reference< container::XEnumerationAccess > xEnumerationAccess( m_xIndexAccess, uno::UNO_QUERY_THROW );
@@ -161,7 +161,7 @@ SwVbaDocuments::getServiceImplName()
 	return sImplName;
 }
 
-uno::Sequence<rtl::OUString> 
+uno::Sequence<rtl::OUString>
 SwVbaDocuments::getServiceNames()
 {
 	static uno::Sequence< rtl::OUString > sNames;

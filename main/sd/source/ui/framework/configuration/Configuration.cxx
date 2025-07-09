@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -115,7 +115,7 @@ Configuration::Configuration (
 }
 
 
-    
+
 Configuration::Configuration (
     const Reference<XConfigurationControllerBroadcaster>& rxBroadcaster,
     bool bBroadcastRequestEvents,
@@ -133,7 +133,7 @@ Configuration::Configuration (
 Configuration::~Configuration (void)
 {
 }
-    
+
 
 
 
@@ -148,7 +148,7 @@ void SAL_CALL Configuration::disposing (void)
 
 
 //----- XConfiguration --------------------------------------------------------
-    
+
 void SAL_CALL Configuration::addResource (const Reference<XResourceId>& rxResourceId)
     throw (RuntimeException)
 {
@@ -206,7 +206,7 @@ Sequence<Reference<XResourceId> > SAL_CALL Configuration::getResources (
     ThrowIfDisposed();
 
     bool bFilterResources (rsResourceURLPrefix.getLength() > 0);
-    
+
     // Collect the matching resources in a vector.
     ::std::vector<Reference<XResourceId> > aResources;
     ResourceContainer::const_iterator iResource;
@@ -217,7 +217,7 @@ Sequence<Reference<XResourceId> > SAL_CALL Configuration::getResources (
         if ( ! (*iResource)->isBoundTo(rxAnchorId,eMode))
             continue;
 
-            
+
         if (bFilterResources)
         {
             // Apply the given resource prefix as filter.
@@ -243,7 +243,7 @@ Sequence<Reference<XResourceId> > SAL_CALL Configuration::getResources (
     Sequence<Reference<XResourceId> > aResult (aResources.size());
     for (sal_uInt32 nIndex=0; nIndex<aResources.size(); ++nIndex)
         aResult[nIndex] = aResources[nIndex];
-    
+
     return aResult;
 }
 
@@ -304,7 +304,7 @@ OUString SAL_CALL Configuration::getName (void)
         aString += FrameworkHelper::ResourceIdToString(*iResource);
     }
     aString += OUString::createFromAscii("]");
-    
+
     return aString;
 }
 
@@ -328,7 +328,7 @@ void Configuration::PostEvent (
     const bool bActivation)
 {
     OSL_ASSERT(rxResourceId.is());
-    
+
     if (mxBroadcaster.is())
     {
         ConfigurationChangeEvent aEvent;
@@ -344,7 +344,7 @@ void Configuration::PostEvent (
             else
                 aEvent.Type = FrameworkHelper::msResourceDeactivationEvent;
         aEvent.Configuration = this;
-        
+
         mxBroadcaster->notifyEvent(aEvent);
     }
 }

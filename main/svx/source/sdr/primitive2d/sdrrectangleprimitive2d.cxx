@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -46,8 +46,8 @@ namespace drawinglayer
 
 			// create unit outline polygon
 			const basegfx::B2DPolygon aUnitOutline(basegfx::tools::createPolygonFromRect(
-                basegfx::B2DRange(0.0, 0.0, 1.0, 1.0), 
-                getCornerRadiusX(), 
+                basegfx::B2DRange(0.0, 0.0, 1.0, 1.0),
+                getCornerRadiusX(),
                 getCornerRadiusY()));
 
             // add fill
@@ -56,15 +56,15 @@ namespace drawinglayer
                 basegfx::B2DPolyPolygon aTransformed(aUnitOutline);
 
                 aTransformed.transform(getTransform());
-                appendPrimitive2DReferenceToPrimitive2DSequence(aRetval, 
+                appendPrimitive2DReferenceToPrimitive2DSequence(aRetval,
                     createPolyPolygonFillPrimitive(
-                        aTransformed, 
-                        getSdrLFSTAttribute().getFill(), 
+                        aTransformed,
+                        getSdrLFSTAttribute().getFill(),
                         getSdrLFSTAttribute().getFillFloatTransGradient()));
 			}
             else if(getForceFillForHitTest())
             {
-                // if no fill and it's a text frame, create a fill for HitTest and 
+                // if no fill and it's a text frame, create a fill for HitTest and
                 // BoundRect fallback
                 appendPrimitive2DReferenceToPrimitive2DSequence(aRetval,
                     createHiddenGeometryPrimitives2D(
@@ -79,15 +79,15 @@ namespace drawinglayer
                 basegfx::B2DPolygon aTransformed(aUnitOutline);
 
                 aTransformed.transform(getTransform());
-                appendPrimitive2DReferenceToPrimitive2DSequence(aRetval, 
+                appendPrimitive2DReferenceToPrimitive2DSequence(aRetval,
                     createPolygonLinePrimitive(
-                        aTransformed, 
+                        aTransformed,
                         getSdrLFSTAttribute().getLine(),
                         attribute::SdrLineStartEndAttribute()));
             }
             else if(!getForceFillForHitTest())
             {
-                // if initially no line is defined and it's not a text frame, create 
+                // if initially no line is defined and it's not a text frame, create
                 // a line for HitTest and BoundRect
                 appendPrimitive2DReferenceToPrimitive2DSequence(aRetval,
                     createHiddenGeometryPrimitives2D(
@@ -99,14 +99,14 @@ namespace drawinglayer
             // add text
 			if(!getSdrLFSTAttribute().getText().isDefault())
 			{
-				appendPrimitive2DReferenceToPrimitive2DSequence(aRetval, 
+				appendPrimitive2DReferenceToPrimitive2DSequence(aRetval,
                     createTextPrimitive(
-                        basegfx::B2DPolyPolygon(aUnitOutline), 
-                        getTransform(), 
-                        getSdrLFSTAttribute().getText(), 
-                        getSdrLFSTAttribute().getLine(), 
-                        false, 
-                        false, 
+                        basegfx::B2DPolyPolygon(aUnitOutline),
+                        getTransform(),
+                        getSdrLFSTAttribute().getText(),
+                        getSdrLFSTAttribute().getLine(),
+                        false,
+                        false,
                         false));
 			}
 
@@ -114,7 +114,7 @@ namespace drawinglayer
 			if(!getSdrLFSTAttribute().getShadow().isDefault())
 			{
                 aRetval = createEmbeddedShadowPrimitive(
-                    aRetval, 
+                    aRetval,
                     getSdrLFSTAttribute().getShadow());
 			}
 
@@ -122,9 +122,9 @@ namespace drawinglayer
 		}
 
 		SdrRectanglePrimitive2D::SdrRectanglePrimitive2D(
-			const basegfx::B2DHomMatrix& rTransform, 
+			const basegfx::B2DHomMatrix& rTransform,
 			const attribute::SdrLineFillShadowTextAttribute& rSdrLFSTAttribute,
-			double fCornerRadiusX, 
+			double fCornerRadiusX,
 			double fCornerRadiusY,
             bool bForceFillForHitTest)
 		:	BufferedDecompositionPrimitive2D(),

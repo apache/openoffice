@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -164,7 +164,7 @@ void SAL_CALL DataProviderHandler::inspect(const uno::Reference< uno::XInterface
 
             m_xMasterDetails = new OPropertyMediator( m_xDataProvider.get(), m_xReportComponent.get(), aPropertyMediation,sal_True );
         }
-        
+
         //const ::rtl::OUString sRowSet(RTL_CONSTASCII_USTRINGPARAM("RowSet"));
         //if ( xNameCont->hasByName(sRowSet) )
         //{
@@ -262,7 +262,7 @@ void DataProviderHandler::impl_updateChartTitle_throw(const uno::Any& _aValue)
             ::rtl::OUString sStr;
             _aValue>>= sStr;
             xFormatted->setString(sStr);
-            uno::Sequence< uno::Reference< chart2::XFormattedString> > aArgs(1); 
+            uno::Sequence< uno::Reference< chart2::XFormattedString> > aArgs(1);
             aArgs[0] = xFormatted;
             xTitle->setText(aArgs);
         }
@@ -393,7 +393,7 @@ uno::Sequence< beans::Property > SAL_CALL DataProviderHandler::getSupportedPrope
             ,PROPERTY_PREVIEW_COUNT
             //,PROPERTY_TITLE
         };
-        
+
         for (size_t nPos = 0; nPos < sizeof(s_pProperties)/sizeof(s_pProperties[0]) ;++nPos )
         {
             aValue.Name = s_pProperties[nPos];
@@ -447,7 +447,7 @@ inspection::InteractiveSelectionResult SAL_CALL DataProviderHandler::onInteracti
         default:
             eResult = m_xFormComponentHandler->onInteractivePropertySelection(PropertyName, Primary, out_Data, _rxInspectorUI);
     }
-    
+
     return eResult;
 }
 
@@ -488,7 +488,7 @@ void SAL_CALL DataProviderHandler::actuatingPropertyChanged(const ::rtl::OUStrin
         const sal_Int32 nId = m_pInfoService->getPropertyId(ActuatingPropertyName);
         switch(nId)
         {
-            
+
             case PROPERTY_ID_MASTERFIELDS:
                 break;
             case PROPERTY_ID_DETAILFIELDS:
@@ -554,7 +554,7 @@ bool DataProviderHandler::impl_dialogChartType_nothrow( ::osl::ClearableMutexGua
 
     _rClearBeforeDialog.clear();
     return ( xDialog->execute() != 0 );
-} 
+}
 //........................................................................
 } // namespace rptui
 //........................................................................

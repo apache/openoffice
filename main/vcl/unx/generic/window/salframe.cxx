@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -184,7 +184,7 @@ void X11SalFrame::setXEmbedInfo()
 void X11SalFrame::askForXEmbedFocus( sal_Int32 i_nTimeCode )
 {
     XEvent aEvent;
-    
+
     rtl_zeroMemory( &aEvent, sizeof(aEvent) );
     aEvent.xclient.window = mhForeignParent;
     aEvent.xclient.type = ClientMessage;
@@ -195,7 +195,7 @@ void X11SalFrame::askForXEmbedFocus( sal_Int32 i_nTimeCode )
     aEvent.xclient.data.l[2] = 0;
     aEvent.xclient.data.l[3] = 0;
     aEvent.xclient.data.l[4] = 0;
-    
+
     GetDisplay()->GetXLib()->PushXErrorLevel( true );
     XSendEvent( pDisplay_->GetDisplay(),
                 mhForeignParent,
@@ -213,7 +213,7 @@ void X11SalFrame::Init( sal_uLong nSalFrameStyle, int nScreen, SystemParentData*
         nScreen = GetDisplay()->GetDefaultScreenNumber();
     if( mpParent )
         nScreen = mpParent->m_nScreen;
-    
+
     m_nScreen   = nScreen;
 	nStyle_ 	= nSalFrameStyle;
 	XWMHints Hints;
@@ -235,11 +235,11 @@ void X11SalFrame::Init( sal_uLong nSalFrameStyle, int nScreen, SystemParentData*
     Attributes.colormap					= GetDisplay()->GetColormap( m_nScreen ).GetXColormap();
     Attributes.override_redirect		= False;
     Attributes.event_mask				= CLIENT_EVENTS;
-    
+
     const SalVisual& rVis = GetDisplay()->GetVisual( m_nScreen );
     XLIB_Window aFrameParent = pParentData ? pParentData->aWindow : GetDisplay()->GetRootWindow( m_nScreen );
     XLIB_Window aClientLeader = None;
-    
+
     if( bUseGeometry )
     {
         x = maGeometry.nX;
@@ -247,7 +247,7 @@ void X11SalFrame::Init( sal_uLong nSalFrameStyle, int nScreen, SystemParentData*
         w = maGeometry.nWidth;
         h = maGeometry.nHeight;
     }
-    
+
     if( (nSalFrameStyle & SAL_FRAME_STYLE_FLOAT) &&
         ! (nSalFrameStyle & SAL_FRAME_STYLE_OWNERDRAWDECORATION)
         )
@@ -342,7 +342,7 @@ void X11SalFrame::Init( sal_uLong nSalFrameStyle, int nScreen, SystemParentData*
                     w = 785;
                 if( aScreenSize.Width() >= 1024 )
                     w = 920;
-    
+
                 if( aScreenSize.Height() >= 600 )
                     h = 550;
                 if( aScreenSize.Height() >= 768 )
@@ -369,7 +369,7 @@ void X11SalFrame::Init( sal_uLong nSalFrameStyle, int nScreen, SystemParentData*
                         break;
                     ++it;
                 }
-                
+
                 if( it != rFrames.end() )
                 {
                     // set a document position and size
@@ -427,7 +427,7 @@ void X11SalFrame::Init( sal_uLong nSalFrameStyle, int nScreen, SystemParentData*
             try
             {
                 bOk=SelectAppIconPixmap( pDisplay_, m_nScreen,
-                                         mnIconID != 1 ? mnIconID : 
+                                         mnIconID != 1 ? mnIconID :
                                          (mpParent ? mpParent->mnIconID : 1), 32,
                                          Hints.icon_pixmap, Hints.icon_mask );
             }
@@ -497,8 +497,8 @@ void X11SalFrame::Init( sal_uLong nSalFrameStyle, int nScreen, SystemParentData*
     if( /*! IsSysChildWindow() &&*/ pParentData == NULL )
     {
         mhShellWindow = mhWindow;
-    }    
-	
+    }
+
 	// correct window group if necessary
 	if( (Hints.flags & WindowGroupHint) == WindowGroupHint )
 	{
@@ -561,7 +561,7 @@ void X11SalFrame::Init( sal_uLong nSalFrameStyle, int nScreen, SystemParentData*
                            GetShellWindow(),
                            pHints );
         XFree (pHints);
-        
+
         // set PID and WM_CLIENT_MACHINE
         pDisplay_->getWMAdaptor()->setClientMachine( this );
         pDisplay_->getWMAdaptor()->setPID( this );
@@ -635,9 +635,9 @@ void X11SalFrame::Init( sal_uLong nSalFrameStyle, int nScreen, SystemParentData*
              == SAL_FRAME_STYLE_DEFAULT )
             pDisplay_->getWMAdaptor()->maximizeFrame( this, true, true );
 	}
-        
+
     m_nWorkArea = GetDisplay()->getWMAdaptor()->getCurrentWorkArea();
-    
+
 	// Pointer
 	SetPointer( POINTER_ARROW );
 }
@@ -712,7 +712,7 @@ X11SalFrame::X11SalFrame( SalFrame *pParent, sal_uLong nSalFrameStyle, SystemPar
     mbFullScreen				= false;
 
     mnIconID					= 1; // ICON_DEFAULT
-    
+
     m_pClipRectangles           = NULL;
     m_nCurClipRect              = 0;
     m_nMaxClipRect              = 0;
@@ -739,9 +739,9 @@ void X11SalFrame::passOnSaveYourSelf()
             if( ! ( IsChildWindow() || pFrame->mpParent )
                 && pFrame != s_pSaveYourselfFrame )
                     break;
-            ++it;    
+            ++it;
         }
-        
+
         s_pSaveYourselfFrame = (it != rFrames.end() ) ? const_cast<X11SalFrame*>(pFrame) : NULL;
         if( s_pSaveYourselfFrame )
         {
@@ -759,20 +759,20 @@ void X11SalFrame::passOnSaveYourSelf()
 X11SalFrame::~X11SalFrame()
 {
 	notifyDelete();
-    
+
     if( m_pClipRectangles )
     {
         delete [] m_pClipRectangles;
         m_pClipRectangles = NULL;
         m_nCurClipRect = m_nMaxClipRect = 0;
     }
-    
+
     if( mhBackgroundPixmap )
     {
         XSetWindowBackgroundPixmap( GetXDisplay(), GetWindow(), None );
-        XFreePixmap( GetXDisplay(), mhBackgroundPixmap ); 
+        XFreePixmap( GetXDisplay(), mhBackgroundPixmap );
     }
-	
+
     if( mhStackingWindow )
         aPresentationReparentList.remove( mhStackingWindow );
 
@@ -845,7 +845,7 @@ void X11SalFrame::SetExtendedFrameStyle( SalExtStyle nStyle )
     if( nStyle != mnExtStyle && ! IsChildWindow() )
     {
         mnExtStyle = nStyle;
-    
+
         XClassHint* pClass = XAllocClassHint();
         rtl::OString aResHint = X11SalData::getFrameResName( mnExtStyle );
         pClass->res_name  = const_cast<char*>(aResHint.getStr());
@@ -1148,7 +1148,7 @@ void X11SalFrame::Show( sal_Bool bVisible, sal_Bool bNoActivate )
     // so artificially set ABOVE and remove it again on hide
     if( mpParent && (mpParent->nStyle_ & SAL_FRAME_STYLE_PARTIAL_FULLSCREEN ) && pDisplay_->getWMAdaptor()->isLegacyPartialFullscreen())
         pDisplay_->getWMAdaptor()->enableAlwaysOnTop( this, bVisible );
-    
+
 	bMapped_   = bVisible;
 	bViewable_ = bVisible;
     setXEmbedInfo();
@@ -1172,7 +1172,7 @@ void X11SalFrame::Show( sal_Bool bVisible, sal_Bool bNoActivate )
                 }
             }
         }
-        
+
         // update NET_WM_STATE which may have been deleted due to earlier Show(sal_False)
         if( nShowState_ == SHOWSTATE_HIDDEN )
             GetDisplay()->getWMAdaptor()->frameIsMapping( this );
@@ -1195,7 +1195,7 @@ void X11SalFrame::Show( sal_Bool bVisible, sal_Bool bNoActivate )
         {
             GetDisplay()->getWMAdaptor()->changeReferenceFrame( this, mpParent );
         }
-        
+
         // #i45160# switch to desktop where a dialog with parent will appear
         if( mpParent && mpParent->m_nWorkArea != m_nWorkArea )
             GetDisplay()->getWMAdaptor()->switchToWorkArea( mpParent->m_nWorkArea );
@@ -1259,7 +1259,7 @@ void X11SalFrame::Show( sal_Bool bVisible, sal_Bool bNoActivate )
 		}
 
 		XSync( GetXDisplay(), False );
-        
+
         if( IsFloatGrabWindow() )
         {
             /*
@@ -1349,7 +1349,7 @@ void X11SalFrame::Show( sal_Bool bVisible, sal_Bool bNoActivate )
         }
         else if( ! m_bXEmbed )
             XUnmapWindow( GetXDisplay(), GetWindow() );
-        
+
         nShowState_ = SHOWSTATE_HIDDEN;
         if( IsFloatGrabWindow() && nVisibleFloats )
         {
@@ -1434,14 +1434,14 @@ void X11SalFrame::SetWindowGravity (int nGravity) const
     {
         XSizeHints* pHint = XAllocSizeHints();
         long        nFlag;
-    
+
         XGetWMNormalHints (GetXDisplay(), GetShellWindow(), pHint, &nFlag);
         pHint->flags       |= PWinGravity;
         pHint->win_gravity  = nGravity;
-    
+
         XSetWMNormalHints (GetXDisplay(), GetShellWindow(), pHint);
         XSync (GetXDisplay(), False);
-    
+
         XFree (pHint);
     }
 }
@@ -1587,7 +1587,7 @@ void X11SalFrame::SetPosSize( long nX, long nY, long nWidth, long nHeight, sal_u
 {
     if( nStyle_ & SAL_FRAME_STYLE_PLUG )
         return;
-    
+
     // relative positioning in X11SalFrame::SetPosSize
     Rectangle aPosSize( Point( maGeometry.nX, maGeometry.nY ), Size( maGeometry.nWidth, maGeometry.nHeight ) );
     aPosSize.Justify();
@@ -1657,7 +1657,7 @@ void X11SalFrame::SetWindowState( const SalFrameState *pState )
     {
         Rectangle aPosSize;
         bool bDoAdjust = false;
-        
+
         /* #i44325#
          * if maximized, set restore size and guess maximized size from last time
          * in state change below maximize window
@@ -1683,7 +1683,7 @@ void X11SalFrame::SetWindowState( const SalFrameState *pState )
                                GetShellWindow(),
                                pHints );
             XFree( pHints );
-            
+
             XMoveResizeWindow( GetXDisplay(), GetShellWindow(),
                                pState->mnX, pState->mnY,
                                pState->mnWidth, pState->mnHeight );
@@ -1699,7 +1699,7 @@ void X11SalFrame::SetWindowState( const SalFrameState *pState )
             // initialize with current geometry
             if ((pState->mnMask & _FRAMESTATE_MASK_GEOMETRY) != _FRAMESTATE_MASK_GEOMETRY)
                 GetPosSize (aPosSize);
-            
+
             // change requested properties
             if (pState->mnMask & SAL_FRAMESTATE_MASK_X)
             {
@@ -1721,15 +1721,15 @@ void X11SalFrame::SetWindowState( const SalFrameState *pState )
                 aPosSize.setHeight (nHeight);
                 bDoAdjust = true;
             }
-            
+
             const Size& aScreenSize = pDisplay_->getDataForScreen( m_nScreen ).m_aSize;
             const WMAdaptor *pWM = GetDisplay()->getWMAdaptor();
-            
+
             if( bDoAdjust && aPosSize.GetWidth() <= aScreenSize.Width()
                 && aPosSize.GetHeight() <= aScreenSize.Height() )
             {
                 SalFrameGeometry aGeom = maGeometry;
-                
+
                 if( ! (nStyle_ & ( SAL_FRAME_STYLE_FLOAT | SAL_FRAME_STYLE_PLUG ) ) &&
                     mpParent &&
                 aGeom.nLeftDecoration == 0 &&
@@ -1745,7 +1745,7 @@ void X11SalFrame::SetWindowState( const SalFrameState *pState )
                         aGeom.nBottomDecoration = 5;
                     }
                 }
-                
+
                 // adjust position so that frame fits onto screen
                 if( aPosSize.Right()+(long)aGeom.nRightDecoration > aScreenSize.Width()-1 )
                     aPosSize.Move( (long)aScreenSize.Width() - (long)aPosSize.Right() - (long)aGeom.nRightDecoration, 0 );
@@ -1756,7 +1756,7 @@ void X11SalFrame::SetWindowState( const SalFrameState *pState )
                 if( aPosSize.Top() < (long)aGeom.nTopDecoration )
                     aPosSize.Move( 0, (long)aGeom.nTopDecoration - (long)aPosSize.Top() );
             }
-            
+
             // resize with new args
             if (pWM->supportsICCCMPos())
             {
@@ -1822,7 +1822,7 @@ sal_Bool X11SalFrame::GetWindowState( SalFrameState* pState )
         GetPosSize( aPosSize );
     else
         aPosSize = maRestorePosSize;
-    
+
     if( mbMaximizedHorz )
         pState->mnState |= SAL_FRAMESTATE_MAXIMIZED_HORZ;
     if( mbMaximizedVert )
@@ -2070,7 +2070,7 @@ void X11SalFrame::SetPosSize( const Rectangle &rPosSize )
             XMoveResizeWindow( GetXDisplay(), GetWindow(), 0, 0, values.width, values.height );
         else
             XMoveResizeWindow( GetXDisplay(), GetWindow(), values.x, values.y, values.width, values.height );
-    }            
+    }
 
     maGeometry.nX		= values.x;
     maGeometry.nY		= values.y;
@@ -2082,7 +2082,7 @@ void X11SalFrame::SetPosSize( const Rectangle &rPosSize )
         maGeometry.nX += mpParent->maGeometry.nX;
         maGeometry.nY += mpParent->maGeometry.nY;
     }
-    
+
     updateScreenNumber();
     if( bSized && ! bMoved )
         CallCallback( SALEVENT_RESIZE, NULL );
@@ -2101,7 +2101,7 @@ void X11SalFrame::Minimize()
 {
     if( IsSysChildWindow() )
         return;
-    
+
 	if( SHOWSTATE_UNKNOWN == nShowState_ || SHOWSTATE_HIDDEN == nShowState_ )
 	{
 		stderr0( "X11SalFrame::Minimize on withdrawn window\n" );
@@ -2119,7 +2119,7 @@ void X11SalFrame::Maximize()
 {
     if( IsSysChildWindow() )
         return;
-    
+
 	if( SHOWSTATE_MINIMIZED == nShowState_ )
 	{
         GetDisplay()->getWMAdaptor()->frameIsMapping( this );
@@ -2135,7 +2135,7 @@ void X11SalFrame::Restore()
 {
     if( IsSysChildWindow() )
         return;
-    
+
 	if( SHOWSTATE_UNKNOWN == nShowState_ || SHOWSTATE_HIDDEN == nShowState_ )
 	{
 		stderr0( "X11SalFrame::Restore on withdrawn window\n" );
@@ -2158,12 +2158,12 @@ void X11SalFrame::SetScreenNumber( unsigned int nNewScreen )
 {
     if( nNewScreen == maGeometry.nScreenNumber )
         return;
-    
+
     if( GetDisplay()->IsXinerama() && GetDisplay()->GetXineramaScreens().size() > 1 )
     {
         if( nNewScreen >= GetDisplay()->GetXineramaScreens().size() )
             return;
-        
+
         Rectangle aOldScreenRect( GetDisplay()->GetXineramaScreens()[maGeometry.nScreenNumber] );
         Rectangle aNewScreenRect( GetDisplay()->GetXineramaScreens()[nNewScreen] );
         bool bVisible = bMapped_;
@@ -2264,7 +2264,7 @@ void X11SalFrame::ShowFullScreen( sal_Bool bFullScreen, sal_Int32 nScreen )
         }
         if( mbFullScreen == (bool)bFullScreen )
             return;
-    
+
         pDisplay_->getWMAdaptor()->showFullScreen( this, bFullScreen );
         if( IsOverrideRedirect()
             && WMSupportsFWS( GetXDisplay(), GetDisplay()->GetRootWindow( m_nScreen ) ) )
@@ -2356,10 +2356,10 @@ void X11SalFrame::StartPresentation( sal_Bool bStart )
     if( ! bStart && hPresentationWindow != None )
         doReparentPresentationDialogues( GetDisplay() );
     hPresentationWindow = (bStart && IsOverrideRedirect() ) ? GetWindow() : None;
-	
-	
+
+
 	// needs static here to save DPMS settings
-    int dummy; 	
+    int dummy;
     static bool DPMSExtensionAvailable =
 #ifndef SOLARIS
         (DPMSQueryExtension(GetXDisplay(), &dummy, &dummy) != 0);
@@ -2373,8 +2373,8 @@ void X11SalFrame::StartPresentation( sal_Bool bStart )
 	static CARD16 dpms_standby_timeout=0;
 	static CARD16 dpms_suspend_timeout=0;
 	static CARD16 dpms_off_timeout=0;
-		
-				
+
+
 	if( bStart || nScreenSaversTimeout_ || DPMSEnabled)
 	{
         if( hPresentationWindow )
@@ -2391,20 +2391,20 @@ void X11SalFrame::StartPresentation( sal_Bool bStart )
 						 &interval,
 						 &prefer_blanking,
 						 &allow_exposures );
-						 
-				
+
+
 		// get the DPMS state right before the start
 		if (DPMSExtensionAvailable)
         {
 #ifndef SOLARIS
-			CARD16 state; // card16 is defined in Xdm.h 
-			DPMSInfo(	GetXDisplay(), 
-						&state, 
+			CARD16 state; // card16 is defined in Xdm.h
+			DPMSInfo(	GetXDisplay(),
+						&state,
 						&DPMSEnabled);
 #endif
-		} 				 
-		if( bStart ) // start show 
-		{	
+		}
+		if( bStart ) // start show
+		{
 			if ( timeout )
 			{
 				nScreenSaversTimeout_ = timeout;
@@ -2413,41 +2413,41 @@ void X11SalFrame::StartPresentation( sal_Bool bStart )
 								 0,
 								 interval,
 								 prefer_blanking,
-								 allow_exposures );	  
+								 allow_exposures );
 			}
 #ifndef SOLARIS
 			if( DPMSEnabled )
 			{
 				if ( DPMSExtensionAvailable )
 				{
-					DPMSGetTimeouts(	GetXDisplay(), 
-										&dpms_standby_timeout, 
-										&dpms_suspend_timeout, 
-										&dpms_off_timeout); 
-					DPMSSetTimeouts(GetXDisplay(), 0,0,0); 	
+					DPMSGetTimeouts(	GetXDisplay(),
+										&dpms_standby_timeout,
+										&dpms_suspend_timeout,
+										&dpms_off_timeout);
+					DPMSSetTimeouts(GetXDisplay(), 0,0,0);
 				}
 			}
 #endif
-		}				 
+		}
 		else // if( !bStart ) // end of show
 		{
-			if( nScreenSaversTimeout_ ) 
+			if( nScreenSaversTimeout_ )
 			{
 				XSetScreenSaver( GetXDisplay(),
 							 nScreenSaversTimeout_,
 							 interval,
 							 prefer_blanking,
 							 allow_exposures );
-				nScreenSaversTimeout_ = 0;		
+				nScreenSaversTimeout_ = 0;
 			}
 #ifndef SOLARIS
 			if ( DPMSEnabled )
-			{			
+			{
 				if ( DPMSExtensionAvailable )
 				{
-				// restore timeouts 
-					DPMSSetTimeouts(GetXDisplay(), dpms_standby_timeout, 
-						dpms_suspend_timeout, dpms_off_timeout); 
+				// restore timeouts
+					DPMSSetTimeouts(GetXDisplay(), dpms_standby_timeout,
+						dpms_suspend_timeout, dpms_off_timeout);
 				}
 			}
 #endif
@@ -2698,7 +2698,7 @@ void X11SalFrame::createNewWindow( XLIB_Window aNewParent, int nScreen )
     bool bWasVisible = bMapped_;
     if( bWasVisible )
         Show( sal_False );
-    
+
     if( nScreen < 0 || nScreen >= GetDisplay()->GetScreenCount() )
         nScreen = m_nScreen;
 
@@ -2753,10 +2753,10 @@ void X11SalFrame::createNewWindow( XLIB_Window aNewParent, int nScreen )
 
 	// update graphics if necessary
     updateGraphics(false);
-    
+
     if( m_aTitle.Len() )
         SetTitle( m_aTitle );
-    
+
     if( mpParent )
     {
         if( mpParent->m_nScreen != m_nScreen )
@@ -2767,11 +2767,11 @@ void X11SalFrame::createNewWindow( XLIB_Window aNewParent, int nScreen )
 
     if( bWasVisible )
         Show( sal_True );
-    
+
     std::list< X11SalFrame* > aChildren = maChildren;
     for( std::list< X11SalFrame* >::iterator it = aChildren.begin(); it != aChildren.end(); ++it )
         (*it)->createNewWindow( None, m_nScreen );
-    
+
     // FIXME: SalObjects
 }
 
@@ -3024,7 +3024,7 @@ long X11SalFrame::HandleMouseEvent( XEvent *pEvent )
                 }
             }
         }
-        
+
         if( m_bXEmbed && pEvent->xbutton.button == Button1 )
             askForXEmbedFocus( pEvent->xbutton.time );
 
@@ -3053,10 +3053,10 @@ long X11SalFrame::HandleMouseEvent( XEvent *pEvent )
                  pEvent->xbutton.button == Button6 ||
                  pEvent->xbutton.button == Button7 )
 		{
-            const bool bIncrement( 
+            const bool bIncrement(
                 pEvent->xbutton.button == Button4 ||
                 pEvent->xbutton.button == Button6 );
-            const bool bHoriz( 
+            const bool bHoriz(
                 pEvent->xbutton.button == Button6 ||
                 pEvent->xbutton.button == Button7 );
 
@@ -3166,7 +3166,7 @@ void X11SalFrame::beginUnicodeSequence()
         aEv.mnDeltaStart    = 0;
         aEv.mnCursorFlags   = 0;
         aEv.mbOnlyCursor    = sal_False;
-        
+
         CallCallback(SALEVENT_EXTTEXTINPUT, (void*)&aEv);
     }
 }
@@ -3196,7 +3196,7 @@ bool X11SalFrame::appendUnicodeSequence( sal_Unicode c )
             aEv.mnDeltaStart    = 0;
             aEv.mnCursorFlags   = 0;
             aEv.mbOnlyCursor    = sal_False;
-            
+
             CallCallback(SALEVENT_EXTTEXTINPUT, (void*)&aEv);
             bRet = true;
         }
@@ -3283,7 +3283,7 @@ long X11SalFrame::HandleKeyEvent( XKeyEvent *pEvent )
 		nModCode |= KEY_MOD1;
 	if( pEvent->state & Mod1Mask )
 		nModCode |= KEY_MOD2;
-    
+
     if( nModCode != (KEY_SHIFT|KEY_MOD1) )
         endUnicodeSequence();
 
@@ -3403,13 +3403,13 @@ long X11SalFrame::HandleKeyEvent( XKeyEvent *pEvent )
     // information (in et_EE locale: "Compose + Z + <" delivers "," in printable and
     // (the desired) Zcaron in KeySym
 	sal_Unicode nKeyString = 0x0;
-	if (   (nLen == 0) 
+	if (   (nLen == 0)
         || ((nLen == 1) && (nKeySym > 0)) )
 		nKeyString = KeysymToUnicode (nKeySym);
 	// if we have nothing we give up
 	if( !nKeyCode && !nLen && !nKeyString)
 		return 0;
-    
+
     DeletionListener aDeleteWatch( this );
 
     if( nModCode == (KEY_SHIFT | KEY_MOD1) && pEvent->type == XLIB_KeyPress )
@@ -3433,7 +3433,7 @@ long X11SalFrame::HandleKeyEvent( XKeyEvent *pEvent )
         else
             endUnicodeSequence();
     }
-    
+
     if( aDeleteWatch.isDeleted() )
         return 0;
 
@@ -3968,16 +3968,16 @@ long X11SalFrame::HandleReparentEvent( XReparentEvent *pEvent )
         int nScreenHeight = aScreenSize.Height();
         int nFrameWidth   = maGeometry.nWidth + maGeometry.nLeftDecoration + maGeometry.nRightDecoration;
         int nFrameHeight  = maGeometry.nHeight + maGeometry.nTopDecoration  + maGeometry.nBottomDecoration;
-    
+
         if ((nFrameWidth > nScreenWidth) || (nFrameHeight > nScreenHeight))
         {
             Size aSize(maGeometry.nWidth, maGeometry.nHeight);
-    
+
             if (nFrameWidth  > nScreenWidth)
                 aSize.Width()  = nScreenWidth  - maGeometry.nRightDecoration - maGeometry.nLeftDecoration;
             if (nFrameHeight > nScreenHeight)
                 aSize.Height() = nScreenHeight - maGeometry.nBottomDecoration - maGeometry.nTopDecoration;
-    
+
             SetSize( aSize );
             bResized = false;
         }
@@ -4077,7 +4077,7 @@ long X11SalFrame::HandleClientMessage( XClientMessageEvent *pEvent )
             else if( (Atom)pEvent->data.l[0] == rWMAdaptor.getAtom( WMAdaptor::WM_SAVE_YOURSELF ) )
             {
                 bool bSession = rWMAdaptor.getWindowManagerName().EqualsAscii( "Dtwm" );
-                
+
                 if( ! bSession )
                 {
                     if( this == s_pSaveYourselfFrame )
@@ -4151,7 +4151,7 @@ void X11SalFrame::SaveYourselfDone( SalFrame* pSaveFrame )
                 pFrame = static_cast< const X11SalFrame* >(*it);
                 if( pFrame == pSaveFrame )
                     break;
-                ++it; 
+                ++it;
             }
             if( pFrame == pSaveFrame )
             {
@@ -4341,7 +4341,7 @@ long X11SalFrame::Dispatch( XEvent *pEvent )
                                         CurrentTime );
                         bSetFocus = false;
                     }
-                    
+
                     if( bSetFocus )
                     {
                         XSetInputFocus( GetXDisplay(),
@@ -4349,7 +4349,7 @@ long X11SalFrame::Dispatch( XEvent *pEvent )
                                         RevertToParent,
                                         CurrentTime );
                     }
-                    
+
 
                     RestackChildren();
                     mbInShow = sal_False;
@@ -4448,7 +4448,7 @@ void X11SalFrame::ResetClipRegion()
     delete [] m_pClipRectangles;
     m_pClipRectangles = NULL;
     m_nCurClipRect = m_nMaxClipRect = 0;
-    
+
 	const int	dest_kind	= ShapeBounding;
 	const int	op			= ShapeSet;
 	const int	ordering	= YSorted;

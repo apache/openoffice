@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -35,7 +35,7 @@ namespace writerfilter {
 class ResourceModelOutputWithDepth : public OutputWithDepth<string>
 {
 public:
-    ResourceModelOutputWithDepth() 
+    ResourceModelOutputWithDepth()
     : OutputWithDepth<string>("<tablegroup>", "</tablegroup>") {}
 
     ~ResourceModelOutputWithDepth() {outputGroup();}
@@ -88,7 +88,7 @@ public:
     virtual ~TablePropsRef() {}
 
     virtual void resolve(Properties & /*rHandler*/) {}
-    
+
     virtual string getType() const { return "TableProps"; }
     void reset() {}
     void insert(Pointer_t /* pTablePropsRef */) {}
@@ -261,7 +261,7 @@ void WW8StreamHandler::endCharacterGroup()
 {
     output.addItem("</character-group>");
 }
-    
+
 void WW8StreamHandler::startShape( ::com::sun::star::uno::Reference< ::com::sun::star::drawing::XShape > /*xShape*/ )
 {
     output.addItem("<shape>");
@@ -353,7 +353,7 @@ void WW8StreamHandler::utext(const sal_uInt8 * data, size_t len)
     output.addItem(tmpStr);
 
     gTableManager.utext(data, len);
-	
+
 	mnUTextCount++;
 }
 
@@ -528,7 +528,7 @@ void WW8PropertiesHandler::sprm(Sprm & sprm_)
     output.addItem("</sprm>");
 }
 
-void WW8TableHandler::entry(int /*pos*/, 
+void WW8TableHandler::entry(int /*pos*/,
                             writerfilter::Reference<Properties>::Pointer_t ref)
 {
     output.addItem("<tableentry>");

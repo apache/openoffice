@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -278,7 +278,7 @@ void lcl_GetColumnInfo( const Reference<XSpreadsheet>& xSheet, const Reference<X
 			{
                 static ::rtl::OUString s_NumberFormat(RTL_CONSTASCII_USTRINGPARAM("NumberFormat"));
                 sal_Int32 nKey = 0;
-				
+
 				if ( xProp->getPropertyValue( s_NumberFormat ) >>= nKey )
 				{
 					const Reference<XPropertySet> xFormat = xFormats->getByKey( nKey );
@@ -580,7 +580,7 @@ void OCalcTable::construct()
 			if ( xDocProp.is() )
 			{
                 Reference<XDatabaseRanges> xRanges(xDocProp->getPropertyValue( ::rtl::OUString(RTL_CONSTASCII_USTRINGPARAM("DatabaseRanges")) ),UNO_QUERY);
-				
+
 				if ( xRanges.is() && xRanges->hasByName( m_Name ) )
 				{
                     Reference<XDatabaseRange> xDBRange(xRanges->getByName( m_Name ),UNO_QUERY);
@@ -672,7 +672,7 @@ void SAL_CALL OCalcTable::disposing(void)
     if ( m_pConnection )
         m_pConnection->releaseDoc();
     m_pConnection = NULL;
-    
+
 }
 // -------------------------------------------------------------------------
 Sequence< Type > SAL_CALL OCalcTable::getTypes(  ) throw(RuntimeException)
@@ -680,7 +680,7 @@ Sequence< Type > SAL_CALL OCalcTable::getTypes(  ) throw(RuntimeException)
     //RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "calc", "Ocke.Janssen@sun.com", "OCalcTable::getTypes" );
 	Sequence< Type > aTypes = OTable_TYPEDEF::getTypes();
 	::std::vector<Type> aOwnTypes;
-	aOwnTypes.reserve(aTypes.getLength());	
+	aOwnTypes.reserve(aTypes.getLength());
 
 	const Type* pBegin = aTypes.getConstArray();
 	const Type* pEnd = pBegin + aTypes.getLength();
@@ -735,7 +735,7 @@ Sequence< sal_Int8 > OCalcTable::getUnoTunnelImplementationId()
 sal_Int64 OCalcTable::getSomething( const Sequence< sal_Int8 > & rId ) throw (RuntimeException)
 {
     //RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "calc", "Ocke.Janssen@sun.com", "OCalcTable::getSomething" );
-	return (rId.getLength() == 16 && 0 == rtl_compareMemory(getUnoTunnelImplementationId().getConstArray(),  rId.getConstArray(), 16 ) ) 
+	return (rId.getLength() == 16 && 0 == rtl_compareMemory(getUnoTunnelImplementationId().getConstArray(),  rId.getConstArray(), 16 ) )
 				? reinterpret_cast< sal_Int64 >( this )
 				: OCalcTable_BASE::getSomething(rId);
 }
@@ -848,8 +848,8 @@ sal_Bool OCalcTable::fetchRow( OValueRefRow& _rRow, const OSQLColumns & _rCols,
 		    else
 			    (*aIter)->getPropertyValue(OMetaConnection::getPropMap().getNameByIndex(PROPERTY_ID_TYPE)) >>= nType;
 
-    		
-		    lcl_SetValue( (_rRow->get())[i]->get(), m_xSheet, m_nStartCol, m_nStartRow, m_bHasHeaders, 
+
+		    lcl_SetValue( (_rRow->get())[i]->get(), m_xSheet, m_nStartCol, m_nStartRow, m_bHasHeaders,
 							    m_aNullDate, m_nFilePos, i, nType );
         }
 	}

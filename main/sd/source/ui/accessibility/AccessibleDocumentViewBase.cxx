@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -79,7 +79,7 @@ AccessibleDocumentViewBase::AccessibleDocumentViewBase (
       mxController (rxController),
       mxModel (NULL),
       maViewForwarder (
-        static_cast<SdrPaintView*>(pViewShell->GetView()), 
+        static_cast<SdrPaintView*>(pViewShell->GetView()),
         *static_cast<OutputDevice*>(pSdWindow))
 {
     if (mxController.is())
@@ -118,7 +118,7 @@ void AccessibleDocumentViewBase::Init (void)
     // Register as window listener to stay up to date with its size and
     // position.
     mxWindow->addWindowListener (this);
-    // Register as focus listener to 
+    // Register as focus listener to
     mxWindow->addFocusListener (this);
 
     // Determine the list of shapes on the current page.
@@ -159,7 +159,7 @@ void AccessibleDocumentViewBase::Init (void)
         for (sal_uInt16 i=0; i<nCount; i++)
         {
             Window* pChildWindow = pWindow->GetChild (i);
-            if (pChildWindow && 
+            if (pChildWindow &&
                 (AccessibleRole::EMBEDDED_OBJECT
                     ==pChildWindow->GetAccessibleRole()))
             {
@@ -175,7 +175,7 @@ void AccessibleDocumentViewBase::Init (void)
 
 
 
-IMPL_LINK(AccessibleDocumentViewBase, WindowChildEventListener, 
+IMPL_LINK(AccessibleDocumentViewBase, WindowChildEventListener,
     VclSimpleEvent*, pEvent)
 {
     OSL_ASSERT(pEvent!=NULL && pEvent->ISA(VclWindowEvent));
@@ -285,7 +285,7 @@ Reference<XAccessible> SAL_CALL
     if (mxAccessibleOLEObject.is())
         if (nIndex == 0)
             return mxAccessibleOLEObject;
-    
+
     throw lang::IndexOutOfBoundsException (
         ::rtl::OUString::createFromAscii ("no child with index ")
         + rtl::OUString::valueOf(nIndex),
@@ -301,9 +301,9 @@ Reference<XAccessible> SAL_CALL
     within one of their bounding boxes.  Return the first child for which
     this is true.
 */
-uno::Reference<XAccessible > SAL_CALL 
+uno::Reference<XAccessible > SAL_CALL
     AccessibleDocumentViewBase::getAccessibleAtPoint (
-        const awt::Point& aPoint) 
+        const awt::Point& aPoint)
     throw (uno::RuntimeException)
 {
     ThrowIfDisposed ();
@@ -320,7 +320,7 @@ uno::Reference<XAccessible > SAL_CALL
             Reference<XAccessibleComponent> xChildComponent (
                 xChild->getAccessibleContext(), uno::UNO_QUERY);
             if (xChildComponent.is())
-            {   
+            {
                 awt::Rectangle aBBox (xChildComponent->getBounds());
                 if ( (aPoint.X >= aBBox.X)
                     && (aPoint.Y >= aBBox.Y)
@@ -342,7 +342,7 @@ uno::Reference<XAccessible > SAL_CALL
 
 
 
-awt::Rectangle SAL_CALL 
+awt::Rectangle SAL_CALL
     AccessibleDocumentViewBase::getBounds (void)
     throw (::com::sun::star::uno::RuntimeException)
 {
@@ -372,9 +372,9 @@ awt::Rectangle SAL_CALL
     }
 
     return awt::Rectangle (
-        aPixelTopLeft.X() - aParentPosition.X, 
-        aPixelTopLeft.Y() - aParentPosition.Y, 
-        aPixelSize.X(), 
+        aPixelTopLeft.X() - aParentPosition.X,
+        aPixelTopLeft.Y() - aParentPosition.Y,
+        aPixelSize.X(),
         aPixelSize.Y());
 }
 
@@ -382,7 +382,7 @@ awt::Rectangle SAL_CALL
 
 
 awt::Point SAL_CALL
-    AccessibleDocumentViewBase::getLocation (void) 
+    AccessibleDocumentViewBase::getLocation (void)
     throw (uno::RuntimeException)
 {
     ThrowIfDisposed ();
@@ -394,7 +394,7 @@ awt::Point SAL_CALL
 
 
 awt::Point SAL_CALL
-    AccessibleDocumentViewBase::getLocationOnScreen (void) 
+    AccessibleDocumentViewBase::getLocationOnScreen (void)
     throw (uno::RuntimeException)
 {
     ThrowIfDisposed ();
@@ -407,7 +407,7 @@ awt::Point SAL_CALL
 
 
 awt::Size SAL_CALL
-    AccessibleDocumentViewBase::getSize (void) 
+    AccessibleDocumentViewBase::getSize (void)
     throw (uno::RuntimeException)
 {
     ThrowIfDisposed ();
@@ -430,7 +430,7 @@ awt::Size SAL_CALL
 
 
 //=====  XInterface  ==========================================================
-    
+
 uno::Any SAL_CALL
     AccessibleDocumentViewBase::queryInterface (const uno::Type & rType)
     throw (uno::RuntimeException)
@@ -455,7 +455,7 @@ uno::Any SAL_CALL
 
 
 void SAL_CALL
-    AccessibleDocumentViewBase::acquire (void) 
+    AccessibleDocumentViewBase::acquire (void)
     throw ()
 {
     AccessibleContextBase::acquire ();
@@ -470,13 +470,13 @@ void SAL_CALL
 {
     AccessibleContextBase::release ();
 }
-        
-        
 
-    
+
+
+
 //=====  XServiceInfo  ========================================================
-    
-::rtl::OUString SAL_CALL 
+
+::rtl::OUString SAL_CALL
     AccessibleDocumentViewBase::getImplementationName (void)
     throw (::com::sun::star::uno::RuntimeException)
 {
@@ -495,11 +495,11 @@ void SAL_CALL
 }
 
 
-        
-        
-        
+
+
+
 //=====  XTypeProvider  =======================================================
-    
+
 ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Type> SAL_CALL
     AccessibleDocumentViewBase::getTypes (void)
     throw (::com::sun::star::uno::RuntimeException)
@@ -513,27 +513,27 @@ void SAL_CALL
 
 
     // ...and add the additional type for the component, ...
-    const uno::Type aLangEventListenerType = 
+    const uno::Type aLangEventListenerType =
      	::getCppuType((const uno::Reference<lang::XEventListener>*)0);
-    const uno::Type aPropertyChangeListenerType = 
+    const uno::Type aPropertyChangeListenerType =
      	::getCppuType((const uno::Reference<beans::XPropertyChangeListener>*)0);
-    const uno::Type aWindowListenerType = 
+    const uno::Type aWindowListenerType =
      	::getCppuType((const uno::Reference<awt::XWindowListener>*)0);
-    const uno::Type aFocusListenerType = 
+    const uno::Type aFocusListenerType =
      	::getCppuType((const uno::Reference<awt::XFocusListener>*)0);
-    const uno::Type aEventBroadcaster = 
+    const uno::Type aEventBroadcaster =
      	::getCppuType((const uno::Reference<XAccessibleEventBroadcaster>*)0);
 
     // ... and merge them all into one list.
-    sal_Int32 nTypeCount (aTypeList.getLength()), 
+    sal_Int32 nTypeCount (aTypeList.getLength()),
         nComponentTypeCount (aComponentTypeList.getLength()),
         i;
-    
+
     aTypeList.realloc (nTypeCount + nComponentTypeCount + 5);
-    
+
     for (i=0; i<nComponentTypeCount; i++)
         aTypeList[nTypeCount + i] = aComponentTypeList[i];
-    
+
     aTypeList[nTypeCount + i++ ] = aLangEventListenerType;
     aTypeList[nTypeCount + i++] = aPropertyChangeListenerType;
     aTypeList[nTypeCount + i++] = aWindowListenerType;
@@ -560,7 +560,7 @@ void AccessibleDocumentViewBase::impl_dispose()
     {
         DBG_ASSERT (pWindow, "AccessibleDocumentViewBase::disposing");
     }
- 
+
     // Unregister from window.
     if (mxWindow.is())
     {
@@ -589,7 +589,7 @@ void AccessibleDocumentViewBase::impl_dispose()
 
     // Propagate change of controller down the shape tree.
     maShapeTreeInfo.SetControllerBroadcaster (NULL);
- 
+
     // Reset the model reference.
     mxModel = NULL;
     // Reset the model reference.
@@ -635,60 +635,60 @@ void SAL_CALL AccessibleDocumentViewBase::propertyChange (const beans::PropertyC
 
 //=====  XWindowListener  =====================================================
 
-void SAL_CALL 
-    AccessibleDocumentViewBase::windowResized (const ::com::sun::star::awt::WindowEvent& ) 
+void SAL_CALL
+    AccessibleDocumentViewBase::windowResized (const ::com::sun::star::awt::WindowEvent& )
     throw (::com::sun::star::uno::RuntimeException)
 {
     if( IsDisposed() )
         return;
 
     ViewForwarderChanged (
-        IAccessibleViewForwarderListener::VISIBLE_AREA, 
+        IAccessibleViewForwarderListener::VISIBLE_AREA,
         &maViewForwarder);
 }
 
 
 
 
-void SAL_CALL 
-    AccessibleDocumentViewBase::windowMoved (const ::com::sun::star::awt::WindowEvent& ) 
+void SAL_CALL
+    AccessibleDocumentViewBase::windowMoved (const ::com::sun::star::awt::WindowEvent& )
     throw (::com::sun::star::uno::RuntimeException)
 {
     if( IsDisposed() )
         return;
 
     ViewForwarderChanged (
-        IAccessibleViewForwarderListener::VISIBLE_AREA, 
+        IAccessibleViewForwarderListener::VISIBLE_AREA,
         &maViewForwarder);
 }
 
 
 
 
-void SAL_CALL 
-    AccessibleDocumentViewBase::windowShown (const ::com::sun::star::lang::EventObject& ) 
+void SAL_CALL
+    AccessibleDocumentViewBase::windowShown (const ::com::sun::star::lang::EventObject& )
     throw (::com::sun::star::uno::RuntimeException)
 {
     if( IsDisposed() )
         return;
 
     ViewForwarderChanged (
-        IAccessibleViewForwarderListener::VISIBLE_AREA, 
+        IAccessibleViewForwarderListener::VISIBLE_AREA,
         &maViewForwarder);
 }
 
 
 
 
-void SAL_CALL 
-    AccessibleDocumentViewBase::windowHidden (const ::com::sun::star::lang::EventObject& ) 
+void SAL_CALL
+    AccessibleDocumentViewBase::windowHidden (const ::com::sun::star::lang::EventObject& )
     throw (::com::sun::star::uno::RuntimeException)
 {
     if( IsDisposed() )
         return;
 
     ViewForwarderChanged (
-        IAccessibleViewForwarderListener::VISIBLE_AREA, 
+        IAccessibleViewForwarderListener::VISIBLE_AREA,
         &maViewForwarder);
 }
 
@@ -794,7 +794,7 @@ void AccessibleDocumentViewBase::SetAccessibleOLEObject (
     if (mxAccessibleOLEObject != xOLEObject)
         if (mxAccessibleOLEObject.is())
             CommitChange (
-                AccessibleEventId::CHILD, 
+                AccessibleEventId::CHILD,
                 uno::Any(),
                 uno::makeAny (mxAccessibleOLEObject));
 
@@ -808,7 +808,7 @@ void AccessibleDocumentViewBase::SetAccessibleOLEObject (
     // Send child event about new accessible OLE object if necessary.
     if (mxAccessibleOLEObject.is())
         CommitChange (
-            AccessibleEventId::CHILD, 
+            AccessibleEventId::CHILD,
             uno::makeAny (mxAccessibleOLEObject),
             uno::Any());
 }
@@ -819,23 +819,23 @@ void AccessibleDocumentViewBase::SetAccessibleOLEObject (
 //=====  methods from AccessibleSelectionBase ==================================================
 
 // return the member maMutex;
-::osl::Mutex& 
+::osl::Mutex&
     AccessibleDocumentViewBase::implGetMutex()
 {
     return( maMutex );
 }
 
 // return ourself as context in default case
-uno::Reference< XAccessibleContext > 
-    AccessibleDocumentViewBase::implGetAccessibleContext() 
+uno::Reference< XAccessibleContext >
+    AccessibleDocumentViewBase::implGetAccessibleContext()
     throw (uno::RuntimeException)
 {
     return( this );
 }
 
 // return sal_False in default case
-sal_Bool 
-    AccessibleDocumentViewBase::implIsSelected( sal_Int32 ) 
+sal_Bool
+    AccessibleDocumentViewBase::implIsSelected( sal_Int32 )
     throw (uno::RuntimeException)
 {
     return( sal_False );
@@ -843,13 +843,13 @@ sal_Bool
 
 // return nothing in default case
 void
-    AccessibleDocumentViewBase::implSelect( sal_Int32, sal_Bool ) 
+    AccessibleDocumentViewBase::implSelect( sal_Int32, sal_Bool )
     throw (lang::IndexOutOfBoundsException, uno::RuntimeException)
 {
 }
 
-uno::Any SAL_CALL AccessibleDocumentViewBase::getExtendedAttributes() 
-		throw (::com::sun::star::lang::IndexOutOfBoundsException, ::com::sun::star::uno::RuntimeException) 
+uno::Any SAL_CALL AccessibleDocumentViewBase::getExtendedAttributes()
+		throw (::com::sun::star::lang::IndexOutOfBoundsException, ::com::sun::star::uno::RuntimeException)
 {
 	uno::Any anyAtrribute;
 	rtl::OUString sValue;
@@ -892,7 +892,7 @@ uno::Any SAL_CALL AccessibleDocumentViewBase::getExtendedAttributes()
 					if(  layerAltText.Len() > 0)
 					{
 						sName = rtl::OUString::createFromAscii(" ");
-						sDisplay = sDisplay + sName; 
+						sDisplay = sDisplay + sName;
 						sDisplay += layerAltText;
 					}
 				}
@@ -911,7 +911,7 @@ uno::Any SAL_CALL AccessibleDocumentViewBase::getExtendedAttributes()
 			sValue += String::CreateFromInt32(pDrViewSh->GetLayerTabControl()->GetPageCount()) ;
 			sValue +=  rtl::OUString::createFromAscii(";");
 		}
-	}	
+	}
 	if (mpViewShell && mpViewShell->ISA(::sd::PresentationViewShell))
 	{
 		::sd::PresentationViewShell* pPresViewSh = (::sd::PresentationViewShell*) mpViewShell;
@@ -966,10 +966,10 @@ uno::Any SAL_CALL AccessibleDocumentViewBase::getExtendedAttributes()
 			sValue += String::CreateFromInt32(pDoc->GetSdPageCount(PK_STANDARD)) ;
 			sValue +=  rtl::OUString::createFromAscii(";");
 		}
-	}	
+	}
 	if (sValue.getLength())
 		anyAtrribute <<= sValue;
-	return anyAtrribute;	
+	return anyAtrribute;
 }
 ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Any >
 		SAL_CALL AccessibleDocumentViewBase::get_AccFlowTo(const ::com::sun::star::uno::Any&, sal_Int32 )

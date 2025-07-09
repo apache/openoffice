@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
@@ -235,9 +235,9 @@ void MultiBufferHex::writeAndClear(SvStream& rTarget)
     if(mpData)
     {
         static OString hexArray[16] = {
-            OString('0'), OString('1'), OString('2'), OString('3'), 
-            OString('4'), OString('5'), OString('6'), OString('7'), 
-            OString('8'), OString('9'), OString('a'), OString('b'), 
+            OString('0'), OString('1'), OString('2'), OString('3'),
+            OString('4'), OString('5'), OString('6'), OString('7'),
+            OString('8'), OString('9'), OString('a'), OString('b'),
             OString('c'), OString('d'), OString('e'), OString('f') };
 
         for(sal_uInt32 a(0), nBreak(0); a < mnSize; a++, nBreak++)
@@ -738,12 +738,12 @@ void RtfAttributeOutput::ParagraphStyle( sal_uInt16 nStyle )
 
     aStyle.getOStringBuffer().append(OOO_STRING_SVTOOLS_RTF_S);
     aStyle.getOStringBuffer().append((sal_Int32)nStyle);
-    
+
     if (pStyle)
     {
         aStyle.getOStringBuffer().append(pStyle->getStr());
     }
-    
+
     if (!m_bBufferSectionHeaders)
     {
         aStyle.writeAndClear(m_rExport.Strm());
@@ -1078,12 +1078,12 @@ void RtfAttributeOutput::InitTableHelper( ww8::WW8TableNodeInfoInner::Pointer_t 
     const SwTable* pTable = pTableTextNodeInfoInner->getTable( );
     const SwFrmFmt *pFmt = pTable->GetFrmFmt( );
     SwTwips nTblSz = pFmt->GetFrmSize( ).GetWidth( );
-    
+
     const SwHTMLTableLayout *pLayout = pTable->GetHTMLTableLayout();
     if( pLayout && pLayout->IsExportable() )
         m_pTableWrt = new SwWriteTable( pLayout );
     else
-        m_pTableWrt = new SwWriteTable( pTable->GetTabLines(), (sal_uInt16)nPageSize, 
+        m_pTableWrt = new SwWriteTable( pTable->GetTabLines(), (sal_uInt16)nPageSize,
                 (sal_uInt16)nTblSz, false);
 }
 
@@ -1527,7 +1527,7 @@ void RtfAttributeOutput::NumberingLevel( sal_uInt8 nLevel,
 
     	case SVX_NUM_FULL_WIDTH_ARABIC:		nVal=19;	break;
     	case SVX_NUM_CIRCLE_NUMBER:		nVal=18;	break;
-    	case SVX_NUM_NUMBER_LOWER_ZH:	
+    	case SVX_NUM_NUMBER_LOWER_ZH:
         nVal=35;
         if (pOutSet)
         {
@@ -1616,7 +1616,7 @@ void RtfAttributeOutput::NumberingLevel( sal_uInt8 nLevel,
     m_rExport.Strm() << OOO_STRING_SVTOOLS_RTF_FI;
     m_rExport.OutLong( nFirstLineIndex ) << OOO_STRING_SVTOOLS_RTF_LI;
     m_rExport.OutLong( nIndentAt );
-    
+
     m_rExport.Strm() << '}';
     if( nLevel > 8 )
         m_rExport.Strm() << '}';
@@ -2902,7 +2902,7 @@ void RtfAttributeOutput::FormatULSpace( const SvxULSpaceItem& rULSpace )
     {
         if( m_rExport.bOutPageDescs )
         {
-            
+
             ASSERT( m_rExport.GetCurItemSet(), "Impossible" );
             if ( !m_rExport.GetCurItemSet() )
                 return;
@@ -3442,29 +3442,29 @@ static OString WriteHex(OString sString)
 }
 
 void lcl_AppendSP( OStringBuffer& rBuffer,
-    const char cName[], 
-    const ::rtl::OUString& rValue, 
+    const char cName[],
+    const ::rtl::OUString& rValue,
     const RtfExport& rExport )
 {
     rBuffer.append( "{" OOO_STRING_SVTOOLS_RTF_SP "{" ); // "{\sp{"
     rBuffer.append( OOO_STRING_SVTOOLS_RTF_SN " " );//" \sn "
-    rBuffer.append( cName ); //"PropName" 
+    rBuffer.append( cName ); //"PropName"
     rBuffer.append( "}{" OOO_STRING_SVTOOLS_RTF_SV " " );
-// "}{ \sv " 
+// "}{ \sv "
     rBuffer.append( rExport.OutString( rValue, rExport.eCurrentEncoding ) );
     rBuffer.append( "}}" );
 }
 
-void ExportPICT( 
-    MultiBuffer& rTarget, 
-    const SwFlyFrmFmt* pFlyFrmFmt, 
-    const Size &rOrig, 
-    const Size &rRendered, 
+void ExportPICT(
+    MultiBuffer& rTarget,
+    const SwFlyFrmFmt* pFlyFrmFmt,
+    const Size &rOrig,
+    const Size &rRendered,
     const Size &rMapped,
-    const SwCropGrf &rCr, 
-    const char *pBLIPType, 
+    const SwCropGrf &rCr,
+    const char *pBLIPType,
     const sal_uInt8 *pGraphicAry,
-    unsigned long nSize, 
+    unsigned long nSize,
     const RtfExport& rExport )
 {
     bool bIsWMF = (const char *)pBLIPType == (const char *)OOO_STRING_SVTOOLS_RTF_WMETAFILE ? true : false;
@@ -3650,13 +3650,13 @@ void RtfAttributeOutput::FlyFrameGraphic( const SwFlyFrmFmt* pFlyFrmFmt, const S
         pGraphicAry = aGraphicLink.GetData();
         switch (aGraphicLink.GetType())
         {
-            // #15508# trying to add BMP type for better exports, need to check if this works 
+            // #15508# trying to add BMP type for better exports, need to check if this works
             // checked, does not work. Also need to reset pGraphicAry to NULL to force conversion
             // to PNG, else the BMP array will be used.
             // It may work using direct DIB data, but that needs to be checked eventually
             //
             // #15508# before GFX_LINK_TYPE_NATIVE_BMP was added the graphic data
-            // (to be hold in pGraphicAry) was not available; thus for now to stay 
+            // (to be hold in pGraphicAry) was not available; thus for now to stay
             // compatible, keep it that way by assigning NULL value to pGraphicAry
             case GFX_LINK_TYPE_NATIVE_BMP:
             //    pBLIPType = OOO_STRING_SVTOOLS_RTF_WBITMAP;

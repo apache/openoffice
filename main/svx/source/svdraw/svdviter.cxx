@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -74,7 +74,7 @@ SdrViewIter::SdrViewIter(const SdrObject* pObject, sal_Bool bNoMasterPage)
 	mpPage = (pObject) ? pObject->GetPage() : 0L;
 	mbNoMasterPage = bNoMasterPage;
 
-	if(!mpModel || !mpPage) 
+	if(!mpModel || !mpPage)
 	{
 		mpModel = 0L;
 		mpPage = 0L;
@@ -87,14 +87,14 @@ SdrViewIter::SdrViewIter(const SdrObject* pObject, sal_Bool bNoMasterPage)
 
 sal_Bool SdrViewIter::ImpCheckPageView(SdrPageView* pPV) const
 {
-	if(mpPage) 
+	if(mpPage)
 	{
 		sal_Bool bMaster(mpPage->IsMasterPage());
 		SdrPage* pPg = pPV->GetPage();
 
-		if(pPg == mpPage) 
+		if(pPg == mpPage)
 		{
-			if(mpObject) 
+			if(mpObject)
 			{
 				// Objekt gewuenscht? Na dann erstmal sehen, ob
 				// das Obj in dieser PageView auch sichtbar ist.
@@ -102,15 +102,15 @@ sal_Bool SdrViewIter::ImpCheckPageView(SdrPageView* pPV) const
 				mpObject->getMergedHierarchyLayerSet(aObjLay);
 				aObjLay &= pPV->GetVisibleLayers();
 				return !aObjLay.IsEmpty();
-			} 
-			else 
+			}
+			else
 			{
 				return sal_True;
 			}
-		} 
-		else 
+		}
+		else
 		{
-			if(!mbNoMasterPage && bMaster && (!mpObject || !mpObject->IsNotVisibleAsMaster())) 
+			if(!mbNoMasterPage && bMaster && (!mpObject || !mpObject->IsNotVisibleAsMaster()))
 			{
 				if(pPg->TRG_HasMasterPage())
 				{
@@ -119,7 +119,7 @@ sal_Bool SdrViewIter::ImpCheckPageView(SdrPageView* pPV) const
 					if(&rMasterPage == mpPage)
 					{
 						// Aha, die gewuenschte Page ist also MasterPage in dieser PageView
-						if(mpObject) 
+						if(mpObject)
 						{
 							// Objekt gewuenscht? Na dann erstmal sehen, ob
 							// das Obj in dieser PageView auch sichtbar ist.
@@ -128,12 +128,12 @@ sal_Bool SdrViewIter::ImpCheckPageView(SdrPageView* pPV) const
 							aObjLay &= pPV->GetVisibleLayers();
 							aObjLay &= pPg->TRG_GetMasterPageVisibleLayers();
 
-							if(!aObjLay.IsEmpty()) 
+							if(!aObjLay.IsEmpty())
 							{
 								return sal_True;
 							} // ansonsten die naechste MasterPage der Page ansehen...
-						} 
-						else 
+						}
+						else
 						{
 							return sal_True;
 						}
@@ -144,8 +144,8 @@ sal_Bool SdrViewIter::ImpCheckPageView(SdrPageView* pPV) const
 			// MasterPage nicht erlaubt oder keine passende gefunden
 			return sal_False;
 		}
-	} 
-	else 
+	}
+	else
 	{
 		return sal_True;
 	}
@@ -155,30 +155,30 @@ sal_Bool SdrViewIter::ImpCheckPageView(SdrPageView* pPV) const
 
 SdrView* SdrViewIter::ImpFindView()
 {
-	if(mpModel) 
+	if(mpModel)
 	{
 		sal_uInt32 nLsAnz(mpModel->GetListenerCount());
-		
-		while(mnListenerNum < nLsAnz) 
+
+		while(mnListenerNum < nLsAnz)
 		{
 			SfxListener* pLs = mpModel->GetListener((sal_uInt16)mnListenerNum);
 			mpAktView = PTR_CAST(SdrView, pLs);
 
-			if(mpAktView) 
+			if(mpAktView)
 			{
-				if(mpPage) 
+				if(mpPage)
 				{
 					SdrPageView* pPV = mpAktView->GetSdrPageView();
-					
+
 					if(pPV)
 					{
-						if(ImpCheckPageView(pPV)) 
+						if(ImpCheckPageView(pPV))
 						{
 							return mpAktView;
 						}
 					}
-				} 
-				else 
+				}
+				else
 				{
 					return mpAktView;
 				}
@@ -196,26 +196,26 @@ SdrView* SdrViewIter::ImpFindView()
 
 SdrPageView* SdrViewIter::ImpFindPageView()
 {
-	if(mpModel) 
+	if(mpModel)
 	{
-		while(mpAktView) 
+		while(mpAktView)
 		{
 			SdrPageView* pPV = mpAktView->GetSdrPageView();
-			
+
 			if(pPV)
 			{
-				if(mpPage) 
+				if(mpPage)
 				{
-					if(ImpCheckPageView(pPV)) 
+					if(ImpCheckPageView(pPV))
 					{
 						return pPV;
 					}
-				} 
-				else 
+				}
+				else
 				{
 					return pPV;
 				}
-				
+
 				mnPageViewNum++;
 			}
 
@@ -231,20 +231,20 @@ SdrPageView* SdrViewIter::ImpFindPageView()
 
 OutputDevice* SdrViewIter::ImpFindOutDev()
 {
-	while(mpAktView) 
+	while(mpAktView)
 	{
 		const sal_uInt32 nOutDevAnz(mpAktView->PaintWindowCount());
 
-		if(mnOutDevNum < nOutDevAnz) 
+		if(mnOutDevNum < nOutDevAnz)
 		{
 			SdrPaintWindow* pPaintWindow = mpAktView->GetPaintWindow(mnOutDevNum);
 			return &pPaintWindow->GetOutputDevice();
 		}
-	
+
 		mnListenerNum++;
 		ImpFindView();
 	}
-	
+
 	return 0L;
 }
 
@@ -252,16 +252,16 @@ OutputDevice* SdrViewIter::ImpFindOutDev()
 
 Window* SdrViewIter::ImpFindWindow()
 {
-	while(mpAktView) 
+	while(mpAktView)
 	{
 		const sal_uInt32 nOutDevAnz(mpAktView->PaintWindowCount());
 
-		while(mnOutDevNum < nOutDevAnz) 
+		while(mnOutDevNum < nOutDevAnz)
 		{
 			SdrPaintWindow* pPaintWindow = mpAktView->GetPaintWindow(mnOutDevNum);
 			OutputDevice& rOutDev = pPaintWindow->GetOutputDevice();
 
-			if(OUTDEV_WINDOW == rOutDev.GetOutDevType()) 
+			if(OUTDEV_WINDOW == rOutDev.GetOutDevType())
 			{
 				return (Window*)(&rOutDev);
 			}

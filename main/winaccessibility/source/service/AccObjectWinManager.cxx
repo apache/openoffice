@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 #include <cassert>
@@ -61,7 +61,7 @@ AccObjectWinManager* AccObjectWinManager::me = NULL;
    * Implementation of interface XMSAAService's method getAccObjectPtr() that return the
    * corresponding com interface with the MS event.
    *
-   * @param   
+   * @param
    * @return  Com interface.
    */
 long GetMSComPtr(long hWnd, long lParam, long wParam)
@@ -81,7 +81,7 @@ long GetMSComPtr(long hWnd, long lParam, long wParam)
    *		  selectionChildObj  Selected object.
    *          dChildID	Chile resource ID.
    *          hAcc TopWindowHWND
-   * @return  
+   * @return
    */
 AccObjectWinManager::AccObjectWinManager( AccObjectManagerAgent* Agent ):
         pAgent( Agent ),
@@ -93,7 +93,7 @@ AccObjectWinManager::AccObjectWinManager( AccObjectManagerAgent* Agent ):
    * Public method to produce manager
    * @param   Agent The agent kept in all listeners,it's the sole interface by which
    *          listener communicate with windows manager.
-   * @return  
+   * @return
    */
 AccObjectWinManager* AccObjectWinManager::CreateAccObjectWinManagerInstance( AccObjectManagerAgent* Agent )
 {
@@ -110,8 +110,8 @@ AccObjectWinManager* AccObjectWinManager::CreateAccObjectWinManagerInstance( Acc
 
 /**
    * Destructor,clear all resource.
-   * @param   
-   * @return  
+   * @param
+   * @return
    */
 AccObjectWinManager::~AccObjectWinManager()
 {
@@ -129,8 +129,8 @@ AccObjectWinManager::~AccObjectWinManager()
 /**
    * Get valid com object interface when notifying some MSAA event
    * @param pWND The top window handle that contains that event control.
-   * @param wParam Windows system interface. 
-   * @return Com interface with event. 
+   * @param wParam Windows system interface.
+   * @return Com interface with event.
    */
 
 long AccObjectWinManager::Get_ToATInterface( HWND hWnd, long lParam, long wParam)
@@ -163,7 +163,7 @@ long AccObjectWinManager::Get_ToATInterface( HWND hWnd, long lParam, long wParam
 /**
    * Search AccObject by XAccessible pointer from our container.
    * @param pXAcc XAccessible interface.
-   * @return Pointer of accObject that is found. 
+   * @return Pointer of accObject that is found.
    */
 AccObject* AccObjectWinManager::GetAccObjByXAcc( XAccessible* pXAcc)
 {
@@ -180,7 +180,7 @@ AccObject* AccObjectWinManager::GetAccObjByXAcc( XAccessible* pXAcc)
 /**
    * Search XAccessible by AccObject pointer from our container.
    * @param pAccObj AccObject pointer.
-   * @return Pointer of XAccessible Interface. 
+   * @return Pointer of XAccessible Interface.
    */
 XAccessible* AccObjectWinManager::GetXAccByAccObj(AccObject* pAccObj)
 {
@@ -212,8 +212,8 @@ AccObject* AccObjectWinManager::GetTopWindowAccObj(HWND hWnd)
 /**
    * Simulate MSAA event via XAccessible interface and event type.
    * @param pXAcc XAccessible interface.
-   * @param state Customize Interface   
-   * @return The terminate result that identifies if the call is successful. 
+   * @param state Customize Interface
+   * @return The terminate result that identifies if the call is successful.
    */
 sal_Bool AccObjectWinManager::NotifyAccEvent(XAccessible* pXAcc,short state)
 {
@@ -428,7 +428,7 @@ short AccObjectWinManager::GetParentRole( XAccessible* pXAcc )
 /**
    * Update focus objcet by new focused XAccessible interface.
    * @param newFocus New XAccessible interface that gets focus.
-   * @return 
+   * @return
    */
 void AccObjectWinManager::UpdateAccFocus(XAccessible* newFocus)
 {
@@ -530,7 +530,7 @@ int AccObjectWinManager::UpdateAccSelection(XAccessible* pXAcc)
 /**
    * Delete child element from children list.
    * @param pObj Child element that should be removed from parant child list.
-   * @return 
+   * @return
    */
 void AccObjectWinManager::DeleteAccChildNode( AccObject* pObj )
 {
@@ -542,7 +542,7 @@ void AccObjectWinManager::DeleteAccChildNode( AccObject* pObj )
 /**
    * Delete XAccessible items in top window handle hashtable
    * @param pXAcc XAccessible interface.
-   * @return 
+   * @return
    */
 void AccObjectWinManager::DeleteFromHwndXAcc(XAccessible* pXAcc )
 {
@@ -561,7 +561,7 @@ void AccObjectWinManager::DeleteFromHwndXAcc(XAccessible* pXAcc )
 /**
    * Delete Delete all children with the tree root of XAccessible pointer
    * @param pXAcc Tree root XAccessible interface.
-   * @return 
+   * @return
    */
 void AccObjectWinManager::DeleteChildrenAccObj(XAccessible* pXAcc)
 {
@@ -590,7 +590,7 @@ void AccObjectWinManager::DeleteChildrenAccObj(XAccessible* pXAcc)
 /**
    * Delete Delete Acc object self.
    * @param pXAcc The XAccessible interface.
-   * @return 
+   * @return
    */
 void AccObjectWinManager::DeleteAccObj( XAccessible* pXAcc )
 {
@@ -622,7 +622,7 @@ void AccObjectWinManager::DeleteAccObj( XAccessible* pXAcc )
 /**
    * Delete listener that inspects some XAccessible object
    * @param pAccObj Accobject pointer.
-   * @return 
+   * @return
    */
 void AccObjectWinManager::DeleteAccListener( AccObject*  pAccObj )
 {
@@ -635,7 +635,7 @@ void AccObjectWinManager::DeleteAccListener( AccObject*  pAccObj )
 
 /**
    * Generate a child ID, which is used for AT
-   * @param 
+   * @param
    * @return New resource ID.
    */
 inline long AccObjectWinManager::ImpleGenerateResID()
@@ -694,7 +694,7 @@ sal_Bool AccObjectWinManager::InsertChildrenAccObj( com::sun::star::accessibilit
    * @param pCurObj The child object
    * @param pParentObj The parant object
    * @param pWnd Top window handle.
-   * @return 
+   * @return
    */
 void AccObjectWinManager::InsertAccChildNode( AccObject* pCurObj, AccObject* pParentObj, HWND /* pWnd */ )
 {
@@ -716,7 +716,7 @@ void AccObjectWinManager::InsertAccChildNode( AccObject* pCurObj, AccObject* pPa
    * @param pCurObj The child object
    * @param pParentObj The parant object
    * @param pWnd Top window handle.
-   * @return 
+   * @return
    */
 sal_Bool AccObjectWinManager::InsertAccObj( XAccessible* pXAcc,XAccessible* pParentXAcc,HWND pWnd )
 {
@@ -842,7 +842,7 @@ void AccObjectWinManager::SaveTopWindowHandle(HWND hWnd, com::sun::star::accessi
    * @param pXAcc XAccessible interface.
    * @param Agent The agent kept in all listeners,it's the sole interface by which
    *        listener communicate with windows manager.
-   * @return 
+   * @return
    */
 AccEventListener* AccObjectWinManager::createAccEventListener(XAccessible* pXAcc, AccObjectManagerAgent* /* Agent */ )
 {
@@ -953,7 +953,7 @@ AccEventListener* AccObjectWinManager::createAccEventListener(XAccessible* pXAcc
    * to modify the state value, including DecreaseState.
    * @param pXAcc XAccessible interface.
    * @param pState Changed state.
-   * @return 
+   * @return
    */
 void AccObjectWinManager::DecreaseState( XAccessible* pXAcc,unsigned short pState )
 {
@@ -964,11 +964,11 @@ void AccObjectWinManager::DecreaseState( XAccessible* pXAcc,unsigned short pStat
 
 /**
    * state is a combination integer, each bit of which represents a single state,such as focused,1 for
-   * the state on,0 for the state off. Here call COM interface to modify the state value, including 
+   * the state on,0 for the state off. Here call COM interface to modify the state value, including
    * IncreaseState.
    * @param pXAcc XAccessible interface.
    * @param pState Changed state.
-   * @return 
+   * @return
    */
 void AccObjectWinManager::IncreaseState( XAccessible* pXAcc,unsigned short pState )
 {
@@ -988,7 +988,7 @@ void  AccObjectWinManager::UpdateState( com::sun::star::accessibility::XAccessib
    * Set corresponding com object's accessible name via XAccessilbe interface and new
    * name
    * @param pXAcc XAccessible interface.
-   * @return 
+   * @return
    */
 void  AccObjectWinManager::UpdateAccName( XAccessible* pXAcc )
 {
@@ -1015,7 +1015,7 @@ void AccObjectWinManager::UpdateDescription( XAccessible* pXAcc )
    * Set corresponding com object's accessible location via XAccessilbe interface and new
    * location.
    * @param pXAcc XAccessible interface.
-   * @return 
+   * @return
    */
 void  AccObjectWinManager::SetLocation( XAccessible* pXAcc, long /*top*/, long /*left*/, long /*width*/, long /*height*/ )
 {
@@ -1030,7 +1030,7 @@ void  AccObjectWinManager::SetLocation( XAccessible* pXAcc, long /*top*/, long /
    * Set corresponding com object's value  via XAccessilbe interface and new value.
    * @param pXAcc XAccessible interface.
    * @param pAny new value.
-   * @return 
+   * @return
    */
 void  AccObjectWinManager::SetValue( XAccessible* pXAcc, Any pAny )
 {
@@ -1042,7 +1042,7 @@ void  AccObjectWinManager::SetValue( XAccessible* pXAcc, Any pAny )
 /**
    * Set corresponding com object's value  via XAccessilbe interface.
    * @param pXAcc XAccessible interface.
-   * @return 
+   * @return
    */
 void  AccObjectWinManager::UpdateValue( XAccessible* pXAcc )
 {
@@ -1055,7 +1055,7 @@ void  AccObjectWinManager::UpdateValue( XAccessible* pXAcc )
    * Set corresponding com object's name via XAccessilbe interface and new name.
    * @param pXAcc XAccessible interface.
    * @param newName new name
-   * @return 
+   * @return
    */
 void  AccObjectWinManager::SetAccName( XAccessible* pXAcc, Any newName)
 {
@@ -1068,7 +1068,7 @@ void  AccObjectWinManager::SetAccName( XAccessible* pXAcc, Any newName)
    * Set corresponding com object's description via XAccessilbe interface and new description.
    * @param pXAcc XAccessible interface.
    * @param newDesc new description
-   * @return 
+   * @return
    */
 void  AccObjectWinManager::SetDescription( XAccessible* pXAcc, Any newDesc )
 {
@@ -1081,7 +1081,7 @@ void  AccObjectWinManager::SetDescription( XAccessible* pXAcc, Any newDesc )
    * Set corresponding com object's role via XAccessilbe interface and new role.
    * @param pXAcc XAccessible interface.
    * @param Role new role
-   * @return 
+   * @return
    */
 void  AccObjectWinManager::SetRole( XAccessible* pXAcc, long Role )
 {

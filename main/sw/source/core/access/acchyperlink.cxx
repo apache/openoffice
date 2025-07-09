@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,19 +7,19 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
- 
+
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_sw.hxx"
@@ -77,13 +77,13 @@ const SwTxtAttr *SwAccessibleHyperlink::GetTxtAttr() const
 
 
 // XAccessibleAction
-sal_Int32 SAL_CALL SwAccessibleHyperlink::getAccessibleActionCount() 
+sal_Int32 SAL_CALL SwAccessibleHyperlink::getAccessibleActionCount()
 		throw (uno::RuntimeException)
 {
 	 return isValid() ? 1 : 0;
 }
 
-sal_Bool SAL_CALL SwAccessibleHyperlink::doAccessibleAction( sal_Int32 nIndex ) 
+sal_Bool SAL_CALL SwAccessibleHyperlink::doAccessibleAction( sal_Int32 nIndex )
 		throw (lang::IndexOutOfBoundsException, uno::RuntimeException)
 {
 	vos::OGuard aGuard(Application::GetSolarMutex());
@@ -93,7 +93,7 @@ sal_Bool SAL_CALL SwAccessibleHyperlink::doAccessibleAction( sal_Int32 nIndex )
 	if(nIndex != 0)
 		throw new IndexOutOfBoundsException;
 	const SwTxtAttr *pTxtAttr = GetTxtAttr();
-	if( pTxtAttr /*&& 0 == nIndex*/ ) 
+	if( pTxtAttr /*&& 0 == nIndex*/ )
 	{
 		const SwFmtINetFmt& rINetFmt = pTxtAttr->GetINetFmt();
 		if( rINetFmt.GetValue().Len() )
@@ -120,7 +120,7 @@ sal_Bool SAL_CALL SwAccessibleHyperlink::doAccessibleAction( sal_Int32 nIndex )
 }
 
 OUString SAL_CALL SwAccessibleHyperlink::getAccessibleActionDescription(
-		sal_Int32 nIndex ) 
+		sal_Int32 nIndex )
 		throw (lang::IndexOutOfBoundsException, uno::RuntimeException)
 {
 	OUString sDesc;
@@ -128,7 +128,7 @@ OUString SAL_CALL SwAccessibleHyperlink::getAccessibleActionDescription(
 	if(nIndex != 0)
 		throw new IndexOutOfBoundsException;
 	const SwTxtAttr *pTxtAttr = GetTxtAttr();
-	if( pTxtAttr /*&& 0 == nIndex*/ ) 
+	if( pTxtAttr /*&& 0 == nIndex*/ )
 	{
 		const SwFmtINetFmt& rINetFmt = pTxtAttr->GetINetFmt();
 		sDesc = OUString( rINetFmt.GetValue() );
@@ -137,12 +137,12 @@ OUString SAL_CALL SwAccessibleHyperlink::getAccessibleActionDescription(
 }
 
 uno::Reference< XAccessibleKeyBinding > SAL_CALL
-	SwAccessibleHyperlink::getAccessibleActionKeyBinding( sal_Int32 ) 
+	SwAccessibleHyperlink::getAccessibleActionKeyBinding( sal_Int32 )
 	throw (lang::IndexOutOfBoundsException, uno::RuntimeException)
 {
 	uno::Reference< XAccessibleKeyBinding > xKeyBinding;
 
-	if( isValid() /*&& 0 == nIndex*/ ) 
+	if( isValid() /*&& 0 == nIndex*/ )
 	{
 		::comphelper::OAccessibleKeyBindingHelper* pKeyBindingHelper =
 		   	new ::comphelper::OAccessibleKeyBindingHelper();
@@ -161,21 +161,21 @@ uno::Reference< XAccessibleKeyBinding > SAL_CALL
 
 // XAccessibleHyperlink
 uno::Any SAL_CALL SwAccessibleHyperlink::getAccessibleActionAnchor(
-        sal_Int32 nIndex) 
+        sal_Int32 nIndex)
 		throw (lang::IndexOutOfBoundsException, uno::RuntimeException)
 {
 	uno::Any aRet;
 	if(nIndex != 0)
 		throw new IndexOutOfBoundsException;
-	//End Added.	
+	//End Added.
 	::rtl::OUString text = OUString( xPara->GetString() );
 	::rtl::OUString retText =  text.copy(nStartIdx, nEndIdx - nStartIdx);
 	aRet <<= retText;
 	return aRet;
 }
 
-uno::Any SAL_CALL SwAccessibleHyperlink::getAccessibleActionObject( 
-            sal_Int32 nIndex ) 
+uno::Any SAL_CALL SwAccessibleHyperlink::getAccessibleActionObject(
+            sal_Int32 nIndex )
 	throw (lang::IndexOutOfBoundsException, uno::RuntimeException)
 {
 	if(nIndex != 0)
@@ -183,7 +183,7 @@ uno::Any SAL_CALL SwAccessibleHyperlink::getAccessibleActionObject(
 	//End Added.
 	const SwTxtAttr *pTxtAttr = GetTxtAttr();
 	::rtl::OUString retText;
-	if( pTxtAttr /*&& 0 == nIndex*/ ) 
+	if( pTxtAttr /*&& 0 == nIndex*/ )
 	{
 		const SwFmtINetFmt& rINetFmt = pTxtAttr->GetINetFmt();
 		retText = OUString( rINetFmt.GetValue() );
@@ -193,19 +193,19 @@ uno::Any SAL_CALL SwAccessibleHyperlink::getAccessibleActionObject(
 	return aRet;
 }
 
-sal_Int32 SAL_CALL SwAccessibleHyperlink::getStartIndex() 
+sal_Int32 SAL_CALL SwAccessibleHyperlink::getStartIndex()
 		throw (uno::RuntimeException)
 {
 	return nStartIdx;
 }
 
-sal_Int32 SAL_CALL SwAccessibleHyperlink::getEndIndex() 
+sal_Int32 SAL_CALL SwAccessibleHyperlink::getEndIndex()
 		throw (uno::RuntimeException)
 {
 	return nEndIdx;
 }
 
-sal_Bool SAL_CALL SwAccessibleHyperlink::isValid(  ) 
+sal_Bool SAL_CALL SwAccessibleHyperlink::isValid(  )
 		throw (uno::RuntimeException)
 {
 	vos::OGuard aGuard(Application::GetSolarMutex());
@@ -214,7 +214,7 @@ sal_Bool SAL_CALL SwAccessibleHyperlink::isValid(  )
 	{
 		const SwTxtAttr *pTxtAttr = GetTxtAttr();
 		::rtl::OUString sText;
-		if( pTxtAttr ) 
+		if( pTxtAttr )
 		{
 			const SwFmtINetFmt& rINetFmt = pTxtAttr->GetINetFmt();
 			sText = OUString( rINetFmt.GetValue() );
@@ -228,21 +228,21 @@ sal_Bool SAL_CALL SwAccessibleHyperlink::isValid(  )
 				uno::Reference< com::sun::star::frame::XDesktop > xDesktop( xFactory->createInstance( OUString::createFromAscii( "com.sun.star.frame.Desktop" ) ),
 					uno::UNO_QUERY );
 				if( !xDesktop.is() )
-					return sal_False;	
+					return sal_False;
 				uno::Reference< lang::XComponent > xComp;
 				xComp = xDesktop->getCurrentComponent();
 				if( !xComp.is() )
-					return sal_False;	
+					return sal_False;
 				uno::Reference< com::sun::star::document::XLinkTargetSupplier >  xLTS(xComp, uno::UNO_QUERY);
 				if ( !xLTS.is())
 					return sal_False;
-			
+
 				uno::Reference< ::com::sun::star::container::XNameAccess > xLinks = xLTS->getLinks();
 				uno::Reference< ::com::sun::star::container::XNameAccess > xSubLinks;
 				const uno::Sequence< OUString > aNames( xLinks->getElementNames() );
 				const sal_uLong nLinks = aNames.getLength();
 				const OUString* pNames = aNames.getConstArray();
-				
+
 				for( sal_uLong i = 0; i < nLinks; i++ )
 				{
 					uno::Any aAny;

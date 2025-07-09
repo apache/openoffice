@@ -123,4 +123,3 @@
  {
 	return mkdir(OUStringToOString(path).getStr(), mode);
  }
- 

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
@@ -1081,12 +1081,12 @@ void SwBaseShell::Execute(SfxRequest &rReq)
 				rSh.SetFlyFrmAttr(aSet);
 			}
 
-            // if new anchor is 'as char' and it is a Math object and the usual 
+            // if new anchor is 'as char' and it is a Math object and the usual
             // pre-conditions are met then align the formula to the baseline of the text
             const uno::Reference < embed::XEmbeddedObject > xObj( rSh.GetOleRef() );
             const bool bDoMathBaselineAlignment = xObj.is() && SotExchange::IsMath( xObj->getClassID() )
                     && FLY_AS_CHAR == eSet && rSh.GetDoc()->get( IDocumentSettingAccess::MATH_BASELINE_ALIGNMENT );
-            if (bDoMathBaselineAlignment) 
+            if (bDoMathBaselineAlignment)
                 rSh.AlignFormulaToBaseline( xObj );
 
 			sal_uInt16 nHtmlMode = ::GetHtmlMode(GetView().GetDocShell());

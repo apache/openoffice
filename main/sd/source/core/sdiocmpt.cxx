@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -32,9 +32,9 @@
 //////////////////////////////////////////////////////////////////////////////
 
 old_SdrDownCompat::old_SdrDownCompat(SvStream& rNewStream, sal_uInt16 nNewMode)
-:	rStream(rNewStream), 
-	nSubRecSiz(0), 
-	nSubRecPos(0), 
+:	rStream(rNewStream),
+	nSubRecSiz(0),
+	nSubRecPos(0),
 	nMode(nNewMode),
 	bOpen(sal_False)
 {
@@ -49,56 +49,56 @@ old_SdrDownCompat::~old_SdrDownCompat()
 
 void old_SdrDownCompat::Read()
 {
-	rStream >> nSubRecSiz;   
+	rStream >> nSubRecSiz;
 }
 
 void old_SdrDownCompat::Write()
 {
-	rStream << nSubRecSiz;   
+	rStream << nSubRecSiz;
 }
 
 void old_SdrDownCompat::OpenSubRecord()
 {
-	if(rStream.GetError()) 
+	if(rStream.GetError())
 		return;
-	
-	nSubRecPos = rStream.Tell(); 
 
-	if(nMode == STREAM_READ) 
+	nSubRecPos = rStream.Tell();
+
+	if(nMode == STREAM_READ)
 	{
-		Read();         
-	} 
-	else if(nMode == STREAM_WRITE) 
+		Read();
+	}
+	else if(nMode == STREAM_WRITE)
 	{
-		Write();            
-	} 
+		Write();
+	}
 
 	bOpen = sal_True;
 }
 
 void old_SdrDownCompat::CloseSubRecord()
 {
-	if(rStream.GetError()) 
+	if(rStream.GetError())
 		return;
 
 	sal_uInt32 nAktPos(rStream.Tell());
-	
-	if(nMode == STREAM_READ) 
+
+	if(nMode == STREAM_READ)
 	{
 		sal_uInt32 nReadAnz(nAktPos - nSubRecPos);
-		if(nReadAnz != nSubRecSiz) 
+		if(nReadAnz != nSubRecSiz)
 		{
-			rStream.Seek(nSubRecPos + nSubRecSiz); 
+			rStream.Seek(nSubRecPos + nSubRecSiz);
 		}
-	} 
-	else if(nMode == STREAM_WRITE) 
+	}
+	else if(nMode == STREAM_WRITE)
 	{
-		nSubRecSiz = nAktPos - nSubRecPos; 
-		rStream.Seek(nSubRecPos);      
-		Write();                    
-		rStream.Seek(nAktPos);         
-	} 
-	
+		nSubRecSiz = nAktPos - nSubRecPos;
+		rStream.Seek(nSubRecPos);
+		Write();
+		rStream.Seek(nAktPos);
+	}
+
 	bOpen = sal_False;
 }
 
@@ -125,7 +125,7 @@ SdIOCompat::SdIOCompat(SvStream& rNewStream, sal_uInt16 nNewMode, sal_uInt16 nVe
 	}
 }
 
-SdIOCompat::~SdIOCompat() 
+SdIOCompat::~SdIOCompat()
 {
 }
 

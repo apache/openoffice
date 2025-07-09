@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
@@ -75,10 +75,10 @@ Font SvxBulletItem::CreateFont( SvStream& rStream, sal_uInt16 nVer )
 	rStream >> nTemp; aFont.SetFamily((FontFamily)nTemp);
 
 	// #90477#
-	rStream >> nTemp; 
+	rStream >> nTemp;
 	nTemp = (sal_uInt16)GetSOLoadTextEncoding((rtl_TextEncoding)nTemp, (sal_uInt16)rStream.GetVersion());
 	aFont.SetCharSet((rtl_TextEncoding)nTemp);
-	
+
 	rStream >> nTemp; aFont.SetPitch((FontPitch)nTemp);
 	rStream >> nTemp; aFont.SetAlign((FontAlign)nTemp);
 	rStream >> nTemp; aFont.SetWeight((FontWeight)nTemp);
@@ -143,7 +143,7 @@ SvxBulletItem::SvxBulletItem( const Bitmap& rBmp, sal_uInt16 _nWhich ) : SfxPool
 	SetDefaults_Impl();
 
     if( !rBmp.IsEmpty() )
-    {   
+    {
         pGraphicObject = new GraphicObject( rBmp );
 	    nStyle = BS_BMP;
     }
@@ -162,14 +162,14 @@ SvxBulletItem::SvxBulletItem( const GraphicObject& rGraphicObject, sal_uInt16 _n
         pGraphicObject = new GraphicObject( rGraphicObject );
         nStyle = BS_BMP;
     }
-	
+
     nValidMask = 0xFFFF;
 }
 
 // -----------------------------------------------------------------------
 
-SvxBulletItem::SvxBulletItem( SvStream& rStrm, sal_uInt16 _nWhich ) : 
-    SfxPoolItem( _nWhich ), 
+SvxBulletItem::SvxBulletItem( SvStream& rStrm, sal_uInt16 _nWhich ) :
+    SfxPoolItem( _nWhich ),
     pGraphicObject( NULL )
 {
 	rStrm >> nStyle;
@@ -201,7 +201,7 @@ SvxBulletItem::SvxBulletItem( SvStream& rStrm, sal_uInt16 _nWhich ) :
 		else
             pGraphicObject = new GraphicObject( aBmp );
 	}
-	
+
     rStrm >> nWidth;
 	rStrm >> nStart;
 	rStrm >> nJustify;
@@ -343,12 +343,12 @@ int SvxBulletItem::operator==( const SfxPoolItem& rItem ) const
 
 	if( ( nStyle != BS_BMP ) && ( aFont != rBullet.aFont ) )
 		return 0;
-	
+
     if( nStyle == BS_BMP )
-    { 
+    {
         if( ( pGraphicObject && !rBullet.pGraphicObject ) || ( !pGraphicObject && rBullet.pGraphicObject ) )
             return 0;
- 
+
         if( ( pGraphicObject && rBullet.pGraphicObject ) &&
             ( ( *pGraphicObject != *rBullet.pGraphicObject ) ||
               ( pGraphicObject->GetPrefSize() != rBullet.pGraphicObject->GetPrefSize() ) ) )
@@ -365,7 +365,7 @@ int SvxBulletItem::operator==( const SfxPoolItem& rItem ) const
 SvStream& SvxBulletItem::Store( SvStream& rStrm, sal_uInt16 /*nItemVersion*/ ) const
 {
 	// Korrektur bei leerer Bitmap
-	if( ( nStyle == BS_BMP ) && 
+	if( ( nStyle == BS_BMP ) &&
         ( !pGraphicObject || ( GRAPHIC_NONE == pGraphicObject->GetType() ) || ( GRAPHIC_DEFAULT == pGraphicObject->GetType() ) ) )
 	{
         if( pGraphicObject )
@@ -373,7 +373,7 @@ SvStream& SvxBulletItem::Store( SvStream& rStrm, sal_uInt16 /*nItemVersion*/ ) c
             delete( const_cast< SvxBulletItem* >( this )->pGraphicObject );
             const_cast< SvxBulletItem* >( this )->pGraphicObject = NULL;
         }
-		
+
         const_cast< SvxBulletItem* >( this )->nStyle = BS_NONE;
 	}
 
@@ -464,7 +464,7 @@ SfxItemPresentation SvxBulletItem::GetPresentation
 //------------------------------------------------------------------------
 
 Bitmap SvxBulletItem::GetBitmap() const
-{ 
+{
     if( pGraphicObject )
         return pGraphicObject->GetGraphic().GetBitmap();
     else
@@ -510,7 +510,7 @@ const GraphicObject& SvxBulletItem::GetGraphicObject() const
 //------------------------------------------------------------------------
 
 void SvxBulletItem::SetGraphicObject( const GraphicObject& rGraphicObject )
-{ 
+{
     if( ( GRAPHIC_NONE == rGraphicObject.GetType() ) || ( GRAPHIC_DEFAULT == rGraphicObject.GetType() ) )
     {
         if( pGraphicObject )

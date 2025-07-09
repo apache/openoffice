@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -170,7 +170,7 @@ ScVbaWSFunction::invoke(const rtl::OUString& FunctionName, const uno::Sequence< 
 	// MATCH function should alwayse return a double value, but currently if the first argument is XCellRange, MATCH function returns an array instead of a double value. Don't know why?
 	// To fix this issue in safe, current solution is to convert this array to a double value just for MATCH function.
 	String aUpper( FunctionName );
-	ScCompiler aCompiler( NULL, ScAddress() ); 
+	ScCompiler aCompiler( NULL, ScAddress() );
 	OpCode eOp = aCompiler.GetEnglishOpCode( aUpper.ToUpperAscii() );
 	if( eOp == ocMatch )
 	{
@@ -204,12 +204,12 @@ sal_Bool SAL_CALL
 ScVbaWSFunction::hasMethod(const rtl::OUString& Name)  throw(uno::RuntimeException)
 {
 	sal_Bool bIsFound = sal_False;
-	try 
+	try
 	{
 	// the function name contained in the com.sun.star.sheet.FunctionDescription service is alwayse localized.
 		// but the function name used in WorksheetFunction is a programmatic name (seems English).
 		// So m_xNameAccess->hasByName( Name ) may fail to find name when a function name has a localized name.
-		ScCompiler aCompiler( NULL, ScAddress() ); 
+		ScCompiler aCompiler( NULL, ScAddress() );
 		if( aCompiler.IsEnglishSymbol( Name ) )
 			bIsFound = sal_True;
 	}
@@ -226,23 +226,23 @@ ScVbaWSFunction::hasProperty(const rtl::OUString& /*Name*/)  throw(uno::RuntimeE
 	 return sal_False;
 }
 
-::rtl::OUString SAL_CALL 
+::rtl::OUString SAL_CALL
 ScVbaWSFunction::getExactName( const ::rtl::OUString& aApproximateName ) throw (css::uno::RuntimeException)
 {
 	rtl::OUString sName = aApproximateName.toAsciiUpperCase();
 	if ( !hasMethod( sName ) )
 		return rtl::OUString();
-	return sName; 
+	return sName;
 }
 
-rtl::OUString& 
+rtl::OUString&
 ScVbaWSFunction::getServiceImplName()
 {
 	static rtl::OUString sImplName( RTL_CONSTASCII_USTRINGPARAM("ScVbaWSFunction") );
 	return sImplName;
 }
 
-uno::Sequence< rtl::OUString > 
+uno::Sequence< rtl::OUString >
 ScVbaWSFunction::getServiceNames()
 {
 	static uno::Sequence< rtl::OUString > aServiceNames;

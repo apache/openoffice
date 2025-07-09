@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -933,7 +933,7 @@ sal_Bool ScDocShell::MoveTable( SCTAB nSrcTab, SCTAB nDestTab, sal_Bool bCopy, s
 				GetUndoManager()->AddUndoAction(
 						new ScUndoCopyTab( this, aSrcList, aDestList ) );
 			}
-			
+
 			sal_Bool bVbaEnabled = aDocument.IsInVBAMode();
                         if ( bVbaEnabled )
                         {
@@ -944,7 +944,7 @@ sal_Bool ScDocShell::MoveTable( SCTAB nSrcTab, SCTAB nDestTab, sal_Bool bCopy, s
                                 aLibName = GetBasicManager()->GetName();
                                 pStarBASIC = GetBasicManager()->GetLib( aLibName );
                             }
-                            SCTAB nTabToUse = nDestTab; 
+                            SCTAB nTabToUse = nDestTab;
                             if ( nDestTab == SC_TAB_APPEND )
                                 nTabToUse = aDocument.GetMaxTableNumber() - 1;
                             String sCodeName;
@@ -961,7 +961,7 @@ sal_Bool ScDocShell::MoveTable( SCTAB nSrcTab, SCTAB nDestTab, sal_Bool bCopy, s
                                 rtl::OUString sRTLSource;
                                 xLib->getByName( sSrcCodeName ) >>= sRTLSource;
                                 sSource = sRTLSource;
-                            } 
+                            }
                             VBA_InsertModule( aDocument, nTabToUse, sCodeName, sSource );
                         }
                 }

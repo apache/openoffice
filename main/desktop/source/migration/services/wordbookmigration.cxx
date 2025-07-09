@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -148,7 +148,7 @@ namespace migration
         {
             return aResult;
         }
-    }       
+    }
 
 #define MAX_HEADER_LENGTH 16
 bool IsUserWordbook( const ::rtl::OUString& rFile )
@@ -164,7 +164,7 @@ bool IsUserWordbook( const ::rtl::OUString& rFile )
 	{
 	    sal_Size nSniffPos = pStream->Tell();
 		static sal_Size nVerOOo7Len = sal::static_int_cast< sal_Size >(strlen( pVerOOo7 ));
-		sal_Char pMagicHeader[MAX_HEADER_LENGTH]; 
+		sal_Char pMagicHeader[MAX_HEADER_LENGTH];
 		pMagicHeader[ nVerOOo7Len ] = '\0';
 		if ((pStream->Read((void *) pMagicHeader, nVerOOo7Len) == nVerOOo7Len))
 		{
@@ -179,8 +179,8 @@ bool IsUserWordbook( const ::rtl::OUString& rFile )
 				{
 			       pStream->Read(pMagicHeader, nLen);
 			       pMagicHeader[nLen] = '\0';
-					if ( !strcmp(pMagicHeader, pVerStr2) 
-					 ||  !strcmp(pMagicHeader, pVerStr5) 
+					if ( !strcmp(pMagicHeader, pVerStr2)
+					 ||  !strcmp(pMagicHeader, pVerStr5)
 			         ||  !strcmp(pMagicHeader, pVerStr6) )
 					bRet = true;
 				}
@@ -205,14 +205,14 @@ bool IsUserWordbook( const ::rtl::OUString& rFile )
             TStringVectorPtr aFileList = getFiles( m_sSourceDir );
             TStringVector::const_iterator aI = aFileList->begin();
             while ( aI != aFileList->end() )
-            {                
+            {
 				if (IsUserWordbook(*aI) )
 				{
 					::rtl::OUString sSourceLocalName = aI->copy( m_sSourceDir.getLength() );
 					::rtl::OUString sTargetName = sTargetDir + sSourceLocalName;
 					INetURLObject aURL( sTargetName );
 					aURL.removeSegment();
-					checkAndCreateDirectory( aURL );            
+					checkAndCreateDirectory( aURL );
 					::osl::FileBase::RC aResult = ::osl::File::copy( *aI, sTargetName );
 					if ( aResult != ::osl::FileBase::E_None )
 					{
@@ -224,7 +224,7 @@ bool IsUserWordbook( const ::rtl::OUString& rFile )
 				}
 				++aI;
             }
-        } 
+        }
         else
         {
             OSL_ENSURE( sal_False, "WordbookMigration::copyFiles: no user installation!" );

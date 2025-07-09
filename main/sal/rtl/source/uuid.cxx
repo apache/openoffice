@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -81,7 +81,7 @@ static  void write_v3( sal_uInt8 *pUuid  )
 	SWAP_NETWORK_TO_INT32( uuid.time_low );
 	SWAP_NETWORK_TO_INT16( uuid.time_mid );
 	SWAP_NETWORK_TO_INT16( uuid.time_hi_and_version );
-	
+
     /* put in the variant and version bits */
 	uuid.time_hi_and_version       &= 0x0FFF;
 	uuid.time_hi_and_version       |= (3 << 12);
@@ -135,8 +135,8 @@ extern "C" void SAL_CALL rtl_createNamedUuid( sal_uInt8  *pTargetUUID,
 
 	rtl_digest_getMD5( digest, pTargetUUID , 16 );
 	rtl_digest_destroyMD5 (digest);
-	
-	write_v3(pTargetUUID);	
+
+	write_v3(pTargetUUID);
 }
 
 
@@ -172,4 +172,4 @@ extern "C" sal_Int32 SAL_CALL rtl_compareUuid( const sal_uInt8 *pUUID1 , const s
 	}
     return 0;
 
-}	
+}

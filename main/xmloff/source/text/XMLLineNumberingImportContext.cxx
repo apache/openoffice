@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -51,7 +51,7 @@ TYPEINIT1( XMLLineNumberingImportContext, SvXMLStyleContext );
 
 
 XMLLineNumberingImportContext::XMLLineNumberingImportContext(
-	SvXMLImport& rImport, 
+	SvXMLImport& rImport,
 	sal_uInt16 nPrfx,
 	const OUString& rLocalName,
 	const Reference<XAttributeList> & xAttrList)
@@ -90,25 +90,25 @@ void XMLLineNumberingImportContext::StartElement(
     static SvXMLTokenMapEntry aLineNumberingTokenMap[] =
     {
 	    { XML_NAMESPACE_TEXT, XML_STYLE_NAME, XML_TOK_LINENUMBERING_STYLE_NAME },
-	    { XML_NAMESPACE_TEXT, XML_NUMBER_LINES, 
+	    { XML_NAMESPACE_TEXT, XML_NUMBER_LINES,
 		      XML_TOK_LINENUMBERING_NUMBER_LINES },
-	    { XML_NAMESPACE_TEXT, XML_COUNT_EMPTY_LINES, 
+	    { XML_NAMESPACE_TEXT, XML_COUNT_EMPTY_LINES,
 		      XML_TOK_LINENUMBERING_COUNT_EMPTY_LINES },
-	    { XML_NAMESPACE_TEXT, XML_COUNT_IN_TEXT_BOXES, 
+	    { XML_NAMESPACE_TEXT, XML_COUNT_IN_TEXT_BOXES,
 		      XML_TOK_LINENUMBERING_COUNT_IN_TEXT_BOXES },
-	    { XML_NAMESPACE_TEXT, XML_RESTART_ON_PAGE, 
+	    { XML_NAMESPACE_TEXT, XML_RESTART_ON_PAGE,
 		      XML_TOK_LINENUMBERING_RESTART_NUMBERING },
 	    { XML_NAMESPACE_TEXT, XML_OFFSET, XML_TOK_LINENUMBERING_OFFSET },
 	    { XML_NAMESPACE_STYLE, XML_NUM_FORMAT, XML_TOK_LINENUMBERING_NUM_FORMAT },
-	    { XML_NAMESPACE_STYLE, XML_NUM_LETTER_SYNC, 
+	    { XML_NAMESPACE_STYLE, XML_NUM_LETTER_SYNC,
 		      XML_TOK_LINENUMBERING_NUM_LETTER_SYNC },
-	    { XML_NAMESPACE_TEXT, XML_NUMBER_POSITION, 
+	    { XML_NAMESPACE_TEXT, XML_NUMBER_POSITION,
 		      XML_TOK_LINENUMBERING_NUMBER_POSITION },
 	    { XML_NAMESPACE_TEXT, XML_INCREMENT, XML_TOK_LINENUMBERING_INCREMENT },
-    //	{ XML_NAMESPACE_TEXT, XML_LINENUMBERING_CONFIGURATION, 
+    //	{ XML_NAMESPACE_TEXT, XML_LINENUMBERING_CONFIGURATION,
     //		  XML_TOK_LINENUMBERING_LINENUMBERING_CONFIGURATION },
     //	{ XML_NAMESPACE_TEXT, XML_INCREMENT, XML_TOK_LINENUMBERING_INCREMENT },
-    //	{ XML_NAMESPACE_TEXT, XML_LINENUMBERING_SEPARATOR, 
+    //	{ XML_NAMESPACE_TEXT, XML_LINENUMBERING_SEPARATOR,
     //		  XML_TOK_LINENUMBERING_LINENUMBERING_SEPARATOR },
 
 	    XML_TOKEN_MAP_END
@@ -118,7 +118,7 @@ void XMLLineNumberingImportContext::StartElement(
 
 	// process attributes
 	sal_Int16 nLength = xAttrList->getLength();
-	for(sal_Int16 i=0; i<nLength; i++) 
+	for(sal_Int16 i=0; i<nLength; i++)
 	{
 		OUString sLocalName;
 		sal_uInt16 nPrefix = GetImport().GetNamespaceMap().
@@ -199,7 +199,7 @@ void XMLLineNumberingImportContext::ProcessAttribute(
             };
 
 			sal_uInt16 nTmp16;
-			if (SvXMLUnitConverter::convertEnum(nTmp16, sValue, 
+			if (SvXMLUnitConverter::convertEnum(nTmp16, sValue,
 												aLineNumberPositionMap))
 			{
 				nNumberPosition = nTmp16;
@@ -221,11 +221,11 @@ void XMLLineNumberingImportContext::CreateAndInsert(sal_Bool)
 	// insert and block mode is handled in insertStyleFamily
 
 	// we'll try to get the LineNumberingProperties
-	Reference<XLineNumberingProperties> xSupplier(GetImport().GetModel(), 
+	Reference<XLineNumberingProperties> xSupplier(GetImport().GetModel(),
 												  UNO_QUERY);
 	if (xSupplier.is())
 	{
-		Reference<XPropertySet> xLineNumbering = 
+		Reference<XPropertySet> xLineNumbering =
 			xSupplier->getLineNumberingProperties();
 
 		if (xLineNumbering.is())
@@ -233,10 +233,10 @@ void XMLLineNumberingImportContext::CreateAndInsert(sal_Bool)
 			Any aAny;
 
             // set style name (if it exists)
-            if ( GetImport().GetStyles()->FindStyleChildContext( 
+            if ( GetImport().GetStyles()->FindStyleChildContext(
                             XML_STYLE_FAMILY_TEXT_TEXT, sStyleName ) != NULL )
             {
-                aAny <<= GetImport().GetStyleDisplayName( 
+                aAny <<= GetImport().GetStyleDisplayName(
 							XML_STYLE_FAMILY_TEXT_TEXT,	sStyleName );
                 xLineNumbering->setPropertyValue(sCharStyleName, aAny);
             }
@@ -284,7 +284,7 @@ void XMLLineNumberingImportContext::CreateAndInsert(sal_Bool)
 	}
 }
 
-SvXMLImportContext* XMLLineNumberingImportContext::CreateChildContext( 
+SvXMLImportContext* XMLLineNumberingImportContext::CreateChildContext(
 	sal_uInt16 nPrefix,
 	const OUString& rLocalName,
 	const Reference<XAttributeList> & xAttrList )
@@ -292,14 +292,14 @@ SvXMLImportContext* XMLLineNumberingImportContext::CreateChildContext(
 	if ( (nPrefix == XML_NAMESPACE_TEXT) &&
 		 IsXMLToken(rLocalName, XML_LINENUMBERING_SEPARATOR) )
 	{
-		return new XMLLineNumberingSeparatorImportContext(GetImport(), 
+		return new XMLLineNumberingSeparatorImportContext(GetImport(),
 														  nPrefix, rLocalName,
 														  *this);
 	}
 	else
 	{
 		// unknown element: default context
-		return SvXMLImportContext::CreateChildContext(nPrefix, rLocalName, 
+		return SvXMLImportContext::CreateChildContext(nPrefix, rLocalName,
 													  xAttrList);
 	}
 }

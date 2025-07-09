@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -132,7 +132,7 @@ void PDFWriterImpl::implWriteBitmapEx( const Point& i_rPoint, const Size& i_rSiz
 					aNewBmpSize.Width() = FRound( fMaxPixelX );
 					aNewBmpSize.Height() = FRound( fMaxPixelX / fBmpWH);
 				}
-				
+
                 if( aNewBmpSize.Width() && aNewBmpSize.Height() )
                 {
                     // #121233# Use best quality for PDF exports
@@ -467,11 +467,11 @@ void PDFWriterImpl::playMetafile( const GDIMetaFile& i_rMtf, vcl::PDFExtOutDevDa
                                 aTmpMtf.WindStart();
                                 aTmpMtf.Play( pVDev, aPoint, aDstSize );
                                 aTmpMtf.WindStart();
-    
+
                                 pVDev->EnableMapMode( sal_False );
                                 aPaint = pVDev->GetBitmap( aPoint, aDstSizePixel );
                                 pVDev->EnableMapMode( sal_True );
-    
+
                                 // create mask bitmap
                                 pVDev->SetLineColor( COL_BLACK );
                                 pVDev->SetFillColor( COL_BLACK );
@@ -484,7 +484,7 @@ void PDFWriterImpl::playMetafile( const GDIMetaFile& i_rMtf, vcl::PDFExtOutDevDa
                                 pVDev->EnableMapMode( sal_False );
                                 aMask = pVDev->GetBitmap( aPoint, aDstSizePixel );
                                 pVDev->EnableMapMode( sal_True );
-    
+
                                 // create alpha mask from gradient
                                 pVDev->SetDrawMode( DRAWMODE_GRAYGRADIENT );
                                 pVDev->DrawGradient( Rectangle( aPoint, aDstSize ), rTransparenceGradient );
@@ -1622,7 +1622,7 @@ long findBitRun( const Scanline i_pLine, long i_nStartIndex, long i_nW, bool i_b
 {
     if( i_nStartIndex < 0 )
         return i_nW;
-    
+
     long nIndex = i_nStartIndex;
     if( nIndex < i_nW )
     {
@@ -1648,7 +1648,7 @@ long findBitRun( const Scanline i_pLine, long i_nStartIndex, long i_nW, bool i_b
                 nByte = *pByte;
             }
         }
-        
+
         sal_uInt8 nRunByte;
         const long* pRunTable;
         if( i_bSet )
@@ -1661,7 +1661,7 @@ long findBitRun( const Scanline i_pLine, long i_nStartIndex, long i_nW, bool i_b
             nRunByte = 0;
             pRunTable = unsetRun;
         }
-        
+
         while( nByte == nRunByte && nIndex < i_nW )
         {
             nIndex += 8;
@@ -1680,13 +1680,13 @@ struct BitStreamState
 {
     sal_uInt8       mnBuffer;
     sal_uInt32      mnNextBitPos;
-    
+
     BitStreamState()
     : mnBuffer( 0 )
     , mnNextBitPos( 8 )
     {
     }
-    
+
     const sal_uInt8* getByte() const { return &mnBuffer; }
     void flush() { mnNextBitPos = 8; mnBuffer = 0; }
 };
@@ -1964,12 +1964,12 @@ void PDFWriterImpl::writeG4Stream( BitmapReadAccess* i_pBitmap )
         return;
     if( i_pBitmap->GetBitCount() != 1 )
         return;
-    
+
     BitStreamState aBitState;
-    
+
     // the first reference line is virtual and completely empty
     const Scanline pFirstRefLine = (Scanline)rtl_allocateZeroMemory( nW/8 + 1 );
-    Scanline pRefLine = pFirstRefLine; 
+    Scanline pRefLine = pFirstRefLine;
     for( long nY = 0; nY < nH; nY++ )
     {
         const Scanline pCurLine = i_pBitmap->GetScanline( nY );
@@ -2030,7 +2030,7 @@ void PDFWriterImpl::writeG4Stream( BitmapReadAccess* i_pBitmap )
                 nRefIndex1 = findBitRun( pRefLine, nRefIndex1, nW, bSet );
             }
         }
-        
+
         // the current line is the reference for the next line
         pRefLine = pCurLine;
     }
@@ -2042,6 +2042,6 @@ void PDFWriterImpl::writeG4Stream( BitmapReadAccess* i_pBitmap )
         writeBuffer( aBitState.getByte(), 1 );
         aBitState.flush();
     }
-    
+
     rtl_freeMemory( pFirstRefLine );
 }

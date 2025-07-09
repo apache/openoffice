@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -987,7 +987,7 @@ IMPL_LINK(SwMailMergeOutputPage, PrintHdl_Impl, PushButton*, EMPTYARG)
     rConfigItem.SetPrintRange( (sal_uInt16)nBegin, (sal_uInt16)nEnd );
     SwDocMergeInfo& rStartInfo = rConfigItem.GetDocumentMergeInfo(nBegin);
     SwDocMergeInfo& rEndInfo = rConfigItem.GetDocumentMergeInfo(nEnd - 1);
-    
+
     rtl::OUString sPages(rtl::OUString::valueOf( rStartInfo.nStartPageInTarget ));
     sPages += rtl::OUString::createFromAscii( " - ");
     sPages += rtl::OUString::valueOf(  rEndInfo.nEndPageInTarget );
@@ -1012,7 +1012,7 @@ IMPL_LINK(SwMailMergeOutputPage, PrintHdl_Impl, PushButton*, EMPTYARG)
     aProps[0].Value <<= sal_True;
     aProps[1]. Name = rtl::OUString::createFromAscii("Pages");
     aProps[1]. Value <<= sPages;
-    
+
     pTargetView->ExecPrint( aProps, false, true );
     SFX_APP()->NotifyEvent(SfxEventHint(SW_EVENT_MAIL_MERGE_END, SwDocShell::GetEventName(STR_SW_EVENT_MAIL_MERGE_END), pObjSh));
 
@@ -1128,7 +1128,7 @@ IMPL_LINK(SwMailMergeOutputPage, SendDocumentsHdl_Impl, PushButton*, pButton)
     switch( nDocType )
     {
         case MM_DOCTYPE_OOO : break;
-        case MM_DOCTYPE_PDF : bIsPDF = true; 
+        case MM_DOCTYPE_PDF : bIsPDF = true;
         {
             //the method SwIOSystemGetFilterOfFormat( ) returns the template filter
             //because it uses the same user data :-(

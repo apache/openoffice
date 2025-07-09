@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -31,7 +31,7 @@
 #endif
 #ifndef _DBA_DBACCESS_HELPID_HRC_
 #include "dbaccess_helpid.hrc"
-#endif				  
+#endif
 #ifndef _DBU_APP_HRC_
 #include "dbu_app.hrc"
 #endif
@@ -403,7 +403,7 @@ OTasksWindow::OTasksWindow(Window* _pParent,OApplicationDetailView* _pDetailView
 	,m_aFL(this,WB_VERT)
 	,m_pDetailView(_pDetailView)
 {
-	DBG_CTOR(OTasksWindow,NULL);	
+	DBG_CTOR(OTasksWindow,NULL);
 	SetUniqueId(UID_APP_TASKS_WINDOW);
 	m_aCreation.SetHelpId(HID_APP_CREATION_LIST);
 	m_aCreation.SetSelectHdl(LINK(this, OTasksWindow, OnEntrySelectHdl));
@@ -415,13 +415,13 @@ OTasksWindow::OTasksWindow(Window* _pParent,OApplicationDetailView* _pDetailView
     Image aFolderImage = aImageProvider.getFolderImage( DatabaseObject::FORM, false );
     m_aCreation.SetDefaultCollapsedEntryBmp( aFolderImage );
     m_aCreation.SetDefaultExpandedEntryBmp( aFolderImage );
-    
+
 	ImplInitSettings(sal_True,sal_True,sal_True);
 }
 // -----------------------------------------------------------------------------
 OTasksWindow::~OTasksWindow()
 {
-	DBG_DTOR(OTasksWindow,NULL);	
+	DBG_DTOR(OTasksWindow,NULL);
 	Clear();
 }
 // -----------------------------------------------------------------------
@@ -516,7 +516,7 @@ void OTasksWindow::Resize()
 	Size aFLSize = LogicToPixel( Size( 2, 6 ), MAP_APPFONT );
 	sal_Int32 n6PPT = aFLSize.Height();
 	long nHalfOutputWidth = static_cast<long>(nOutputWidth * 0.5);
-	
+
 	m_aCreation.SetPosSizePixel( Point(0, 0), Size(nHalfOutputWidth - n6PPT, nOutputHeight) );
     // i77897 make the m_aHelpText a little bit smaller. (-5)
 	sal_Int32 nNewWidth = nOutputWidth - nHalfOutputWidth - aFLSize.Width() - 5;
@@ -526,15 +526,15 @@ void OTasksWindow::Resize()
 	m_aDescription.SetPosSizePixel( Point(nHalfOutputWidth + n6PPT, 0), Size(nNewWidth, nOutputHeight) );
 	Size aDesc = m_aDescription.CalcMinimumSize();
 	m_aHelpText.SetPosSizePixel( Point(nHalfOutputWidth + n6PPT, aDesc.Height() ), Size(nNewWidth, nOutputHeight - aDesc.Height() - n6PPT) );
-	
+
 	m_aFL.SetPosSizePixel( Point(nHalfOutputWidth , 0), Size(aFLSize.Width(), nOutputHeight ) );
 }
 // -----------------------------------------------------------------------------
 void OTasksWindow::fillTaskEntryList( const TaskEntryList& _rList )
-{	
+{
 	DBG_CHKTHIS(OTasksWindow,NULL);
 	Clear();
-	
+
 	try
 	{
 		Reference<XModuleUIConfigurationManagerSupplier> xModuleCfgMgrSupplier(getDetailView()->getBorderWin().getView()->getORB()->createInstance(::rtl::OUString(RTL_CONSTASCII_USTRINGPARAM("com.sun.star.ui.ModuleUIConfigurationManagerSupplier"))),UNO_QUERY);
@@ -572,7 +572,7 @@ void OTasksWindow::fillTaskEntryList( const TaskEntryList& _rList )
 	{
 	}
 
-	m_aCreation.Show();	
+	m_aCreation.Show();
 	m_aCreation.SelectAll(sal_False);
 	m_aHelpText.Show();
 	m_aDescription.Show();
@@ -591,7 +591,7 @@ void OTasksWindow::Clear()
 		delete reinterpret_cast< TaskEntry* >( pEntry->GetUserData() );
 		pEntry = m_aCreation.Next(pEntry);
 	}
-	m_aCreation.Clear(); 
+	m_aCreation.Clear();
 }
 //==================================================================
 // class OApplicationDetailView
@@ -603,7 +603,7 @@ OApplicationDetailView::OApplicationDetailView(OAppBorderWindow& _rParent,Previe
 	,m_aContainer(this,0,WB_BORDER | WB_DIALOGCONTROL )
 	,m_rBorderWin(_rParent)
 {
-	DBG_CTOR(OApplicationDetailView,NULL);	
+	DBG_CTOR(OApplicationDetailView,NULL);
 	SetUniqueId(UID_APP_DETAIL_VIEW);
 	ImplInitSettings( sal_True, sal_True, sal_True );
 
@@ -927,23 +927,23 @@ SvLBoxEntry* OApplicationDetailView::getEntry( const Point& _aPoint ) const
 	return m_pControlHelper->getEntry(_aPoint);
 }
 // -----------------------------------------------------------------------------
-sal_Bool OApplicationDetailView::isCutAllowed()		
-{ 
+sal_Bool OApplicationDetailView::isCutAllowed()
+{
 	DBG_CHKTHIS(OApplicationDetailView,NULL);
-	return m_pControlHelper->isCutAllowed(); 
+	return m_pControlHelper->isCutAllowed();
 }
-sal_Bool OApplicationDetailView::isCopyAllowed()		
-{ 
+sal_Bool OApplicationDetailView::isCopyAllowed()
+{
 	DBG_CHKTHIS(OApplicationDetailView,NULL);
-	return m_pControlHelper->isCopyAllowed(); 
+	return m_pControlHelper->isCopyAllowed();
 }
 sal_Bool OApplicationDetailView::isPasteAllowed()	{ DBG_CHKTHIS(OApplicationDetailView,NULL);return m_pControlHelper->isPasteAllowed(); }
 void OApplicationDetailView::copy()	{ DBG_CHKTHIS(OApplicationDetailView,NULL);m_pControlHelper->copy(); }
 void OApplicationDetailView::cut()	{ DBG_CHKTHIS(OApplicationDetailView,NULL);m_pControlHelper->cut(); }
-void OApplicationDetailView::paste()	
-{ 
+void OApplicationDetailView::paste()
+{
 	DBG_CHKTHIS(OApplicationDetailView,NULL);
-	m_pControlHelper->paste(); 
+	m_pControlHelper->paste();
 }
 // -----------------------------------------------------------------------------
 SvLBoxEntry*  OApplicationDetailView::elementAdded(ElementType _eType,const ::rtl::OUString& _rName, const Any& _rObject )

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -126,7 +126,7 @@ namespace dlgprov
                 xProps->getPropertyValue( rtl::OUString(RTL_CONSTASCII_USTRINGPARAM("Name") ) ) >>= msDialogCodeName;
                 xProps.set( mxListener, UNO_QUERY_THROW );
                 xProps->setPropertyValue( rtl::OUString(RTL_CONSTASCII_USTRINGPARAM("Model") ), args[ 0 ] );
-            } 
+            }
             catch( const Exception& )
             {
             	DBG_UNHANDLED_EXCEPTION();
@@ -314,18 +314,18 @@ namespace dlgprov
         // go over all objects
         const Reference< XInterface >* pObjects = Objects.getConstArray();
         sal_Int32 nObjCount = Objects.getLength();
-        Reference< awt::XControl > xDlgControl( Objects[ nObjCount - 1 ], uno::UNO_QUERY ); // last object is the dialog	
+        Reference< awt::XControl > xDlgControl( Objects[ nObjCount - 1 ], uno::UNO_QUERY ); // last object is the dialog
         rtl::OUString sDialogCodeName;
         if ( xDlgControl.is() )
         {
             Reference< XPropertySet > xProps( xDlgControl->getModel(), UNO_QUERY );
             try
             {
-                xProps->getPropertyValue( rtl::OUString(RTL_CONSTASCII_USTRINGPARAM("Name") ) ) >>= sDialogCodeName;  
+                xProps->getPropertyValue( rtl::OUString(RTL_CONSTASCII_USTRINGPARAM("Name") ) ) >>= sDialogCodeName;
             }
             catch( Exception& ){}
         }
-	
+
         for ( sal_Int32 i = 0; i < nObjCount; ++i )
         {
             // We know that we have to do with instances of XControl.

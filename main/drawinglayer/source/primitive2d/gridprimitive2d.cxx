@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -163,9 +163,9 @@ namespace drawinglayer
 
                         // put to aExtendedViewport and crop on object logic size
                         aExtendedViewport = basegfx::B2DRange(
-                            std::max(fMinX, 0.0), 
-                            std::max(fMinY, 0.0), 
-                            std::min(fMaxX, aScale.getX()), 
+                            std::max(fMinX, 0.0),
+                            std::max(fMinY, 0.0),
+                            std::min(fMaxX, aScale.getX()),
                             std::min(fMaxY, aScale.getY()));
                     }
                 }
@@ -193,7 +193,7 @@ namespace drawinglayer
                                 const basegfx::B2DRange aDiscreteRangeCross(
                                     aViewPos.getX() - fHalfCrossSize, aViewPos.getY() - fHalfCrossSize,
                                     aViewPos.getX() + fHalfCrossSize, aViewPos.getY() + fHalfCrossSize);
-    						
+
                                 if(rViewInformation.getDiscreteViewport().overlaps(aDiscreteRangeCross))
                                 {
 							        const basegfx::B2DPoint aLogicPos(rViewInformation.getInverseObjectToViewTransformation() * aViewPos);
@@ -240,7 +240,7 @@ namespace drawinglayer
 				    const sal_uInt32 nCountCross(aPositionsCross.size());
 				    const sal_uInt32 nRetvalCount((nCountPoint ? 1 : 0) + (nCountCross ? 1 : 0));
 				    sal_uInt32 nInsertCounter(0);
-				
+
 				    aRetval.realloc(nRetvalCount);
 
 				    // add PointArrayPrimitive2D if point markers were added
@@ -270,7 +270,7 @@ namespace drawinglayer
 		}
 
 		GridPrimitive2D::GridPrimitive2D(
-			const basegfx::B2DHomMatrix& rTransform, 
+			const basegfx::B2DHomMatrix& rTransform,
 			double fWidth,
 			double fHeight,
 			double fSmallestViewDistance,
@@ -299,7 +299,7 @@ namespace drawinglayer
 			if(BufferedDecompositionPrimitive2D::operator==(rPrimitive))
 			{
 				const GridPrimitive2D& rCompare = (GridPrimitive2D&)rPrimitive;
-				
+
 				return (getTransform() == rCompare.getTransform()
 					&& getWidth() == rCompare.getWidth()
 					&& getHeight() == rCompare.getHeight()
@@ -327,7 +327,7 @@ namespace drawinglayer
 		}
 
 		Primitive2DSequence GridPrimitive2D::get2DDecomposition(const geometry::ViewInformation2D& rViewInformation) const
-		{ 
+		{
 			::osl::MutexGuard aGuard( m_aMutex );
 
 			if(getBuffered2DDecomposition().hasElements())

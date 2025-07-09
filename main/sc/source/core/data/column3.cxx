@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -1400,7 +1400,7 @@ sal_Bool ScColumn::SetString( SCROW nRow, SCTAB nTabP, const String& rString,
                         const LocaleDataWrapper* pLocale = pLocaleSource->GetLocaleData();
                         if (!pLocale)
                             break;
-                        
+
                         LocaleDataItem aLocaleItem = pLocale->getLocaleItem();
                         const OUString& rDecSep = aLocaleItem.decimalSeparator;
                         const OUString& rGroupSep = aLocaleItem.thousandSeparator;
@@ -1528,7 +1528,7 @@ void ScColumn::GetFilterEntries(SCROW nStartRow, SCROW nEndRow, TypedScStrCollec
             {
                 short nType = pFormatter->GetType(nFormat);
                 if ((nType & NUMBERFORMAT_DATE) && !(nType & NUMBERFORMAT_TIME))
-                {    
+                {
                     // special case for date values.  Disregard the time
                     // element if the number format is of date type.
                     nValue = ::rtl::math::approxFloor(nValue);
@@ -1742,14 +1742,14 @@ void  ScColumn::FillDPCacheT( long nDim, SCROW nStartRow, SCROW nEndRow, const b
     if ( pItems )
     {
         SCSIZE nIndex;
-        
+
         for ( Search( nStartRow, nIndex ) ? void( ) : void(nIndex = nCount); nIndex < nCount && pItems[nIndex].nRow <= nEndRow; ++nIndex, ++nCurRow )
         {
             for( ; nCurRow < pItems[nIndex].nRow; nCurRow++ )
                 if( nCurRow == nStartRow )
                     rAddLabel( new ScDPItemData() );
                 else
-                    rAddData( nDim, new ScDPItemData(), false); 
+                    rAddData( nDim, new ScDPItemData(), false);
 
             if( nCurRow > nPatternRowEnd )
                 if( const ScPatternAttr* pPattern = pAttrArray ? pAttrArray->GetPatternRange( nPattenRowStart, nPatternRowEnd, nCurRow ) : NULL )
@@ -2005,7 +2005,7 @@ sal_Int32 ScColumn::GetMaxStringLen( SCROW nRowStart, SCROW nRowEnd, CharSet eCh
 }
 
 
-xub_StrLen ScColumn::GetMaxNumberStringLen( 
+xub_StrLen ScColumn::GetMaxNumberStringLen(
     sal_uInt16& nPrecision, SCROW nRowStart, SCROW nRowEnd ) const
 {
     xub_StrLen nStringLen = 0;

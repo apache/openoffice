@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -66,14 +66,14 @@ void ScTable::UpdatePageBreaks( const ScRange* pUserArea )
 	if ( pDocument->IsImportingXML() )
 		return;
 
-    // pUserArea != NULL -> print area is specified.  We need to force-update 
+    // pUserArea != NULL -> print area is specified.  We need to force-update
     // the page breaks.
 
     if (!pUserArea)
     {
         if (!bPageSizeValid)
             return;
-    
+
         if (mbPageBreaksValid)
             return;
     }
@@ -216,7 +216,7 @@ void ScTable::UpdatePageBreaks( const ScRange* pUserArea )
         long nThisY = 0;
         if (!bThisRowHidden)
         {
-            sal_uInt16 nTmp;    
+            sal_uInt16 nTmp;
             aIterHeights.getValue(nY, nTmp);
             nThisY = static_cast<long>(nTmp);
         }
@@ -272,7 +272,7 @@ void ScTable::UpdatePageBreaks( const ScRange* pUserArea )
             SCROW nLastCommon = ::std::min(nLastHidden, nLastHeight);
             if (nNextManualBreak >= 0)
                 nLastCommon = ::std::min(nLastCommon, nNextManualBreak-1);
-    
+
             if (nLastCommon > nY)
             {
                 long nMaxMultiple = static_cast<long>(nLastCommon - nY);
@@ -345,7 +345,7 @@ void ScTable::GetAllRowBreaks(set<SCROW>& rBreaks, bool bPage, bool bManual) con
 
     if (bManual)
     {
-        using namespace std;    
+        using namespace std;
         copy(maRowManualBreaks.begin(), maRowManualBreaks.end(), inserter(rBreaks, rBreaks.begin()));
     }
 }
@@ -421,7 +421,7 @@ void ScTable::RemoveRowBreak(SCROW nRow, bool bPage, bool bManual)
         maRowPageBreaks.erase(nRow);
 
     if (bManual)
-    {    
+    {
         maRowManualBreaks.erase(nRow);
         InvalidatePageBreaks();
     }
@@ -436,7 +436,7 @@ void ScTable::RemoveColBreak(SCCOL nCol, bool bPage, bool bManual)
         maColPageBreaks.erase(nCol);
 
     if (bManual)
-    {    
+    {
         maColManualBreaks.erase(nCol);
         InvalidatePageBreaks();
     }
@@ -451,7 +451,7 @@ void ScTable::SetRowBreak(SCROW nRow, bool bPage, bool bManual)
         maRowPageBreaks.insert(nRow);
 
     if (bManual)
-    {    
+    {
         maRowManualBreaks.insert(nRow);
         InvalidatePageBreaks();
     }
@@ -466,7 +466,7 @@ void ScTable::SetColBreak(SCCOL nCol, bool bPage, bool bManual)
         maColPageBreaks.insert(nCol);
 
     if (bManual)
-    {    
+    {
         maColManualBreaks.insert(nCol);
         InvalidatePageBreaks();
     }
@@ -528,7 +528,7 @@ bool ScTable::RowHidden(SCROW nRow, SCROW* pFirstRow, SCROW* pLastRow) const
 
 bool ScTable::RowHidden(SCROW nRow, SCROW& rLastRow) const
 {
-    rLastRow = nRow;    
+    rLastRow = nRow;
     if (!ValidRow(nRow))
         return true;
 
@@ -558,7 +558,7 @@ bool ScTable::HasHiddenRows(SCROW nStartRow, SCROW nEndRow) const
 
 bool ScTable::ColHidden(SCCOL nCol, SCCOL& rLastCol) const
 {
-    rLastCol = nCol;    
+    rLastCol = nCol;
     if (!ValidCol(nCol))
         return true;
 

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -36,7 +36,7 @@ class IdlEnumFieldImpl
 	, public XIdlField2
 {
 	sal_Int32				_nValue;
-	
+
 public:
 	IdlEnumFieldImpl( IdlReflectionServiceImpl * pReflection, const OUString & rName,
 					  typelib_TypeDescription * pTypeDescr, sal_Int32 nValue )
@@ -44,16 +44,16 @@ public:
 		, _nValue( nValue )
 		{}
 	virtual ~IdlEnumFieldImpl();
-	
+
 	// XInterface
 	virtual Any SAL_CALL queryInterface( const Type & rType ) throw(::com::sun::star::uno::RuntimeException);
 	virtual void SAL_CALL acquire() throw();
 	virtual void SAL_CALL release() throw();
-	
+
 	// XTypeProvider
 	virtual Sequence< Type > SAL_CALL getTypes() throw (::com::sun::star::uno::RuntimeException);
 	virtual Sequence< sal_Int8 > SAL_CALL getImplementationId() throw (::com::sun::star::uno::RuntimeException);
-	
+
 	// XIdlMember
     virtual Reference< XIdlClass > SAL_CALL getDeclaringClass() throw(::com::sun::star::uno::RuntimeException);
     virtual OUString SAL_CALL getName() throw(::com::sun::star::uno::RuntimeException);
@@ -196,7 +196,7 @@ Reference< XIdlField > EnumIdlClassImpl::getField( const OUString & rName )
 {
 	if (! _pFields)
 		getFields(); // init members
-	
+
 	const OUString2Field::const_iterator iFind( _aName2Field.find( rName ) );
 	if (iFind != _aName2Field.end())
 		return (*iFind).second;
@@ -216,14 +216,14 @@ Sequence< Reference< XIdlField > > EnumIdlClassImpl::getFields()
 			Sequence< Reference< XIdlField > > * pFields =
 				new Sequence< Reference< XIdlField > >( nFields );
 			Reference< XIdlField > * pSeq = pFields->getArray();
-			
+
 			while (nFields--)
 			{
 				OUString aName( getTypeDescr()->ppEnumNames[nFields] );
 				_aName2Field[aName] = pSeq[nFields] = new IdlEnumFieldImpl(
 					getReflection(), aName, IdlClassImpl::getTypeDescr(), getTypeDescr()->pEnumValues[nFields] );
 			}
-			
+
 			_pFields = pFields;
 		}
 	}

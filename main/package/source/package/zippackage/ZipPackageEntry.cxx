@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -55,12 +55,12 @@ ZipPackageEntry::~ZipPackageEntry()
 }
 
 // XChild
-OUString SAL_CALL ZipPackageEntry::getName(  ) 
+OUString SAL_CALL ZipPackageEntry::getName(  )
 	throw(RuntimeException)
 {
 	return msName;
 }
-void SAL_CALL ZipPackageEntry::setName( const OUString& aName ) 
+void SAL_CALL ZipPackageEntry::setName( const OUString& aName )
 	throw(RuntimeException)
 {
 	if ( pParent && msName.getLength() && pParent->hasByName ( msName ) )
@@ -76,7 +76,7 @@ void SAL_CALL ZipPackageEntry::setName( const OUString& aName )
 	if ( pParent )
 		pParent->doInsertByName ( this, sal_False );
 }
-uno::Reference< XInterface > SAL_CALL ZipPackageEntry::getParent(  ) 
+uno::Reference< XInterface > SAL_CALL ZipPackageEntry::getParent(  )
 		throw(RuntimeException)
 {
 	// return uno::Reference< XInterface >( xParent, UNO_QUERY );
@@ -91,7 +91,7 @@ void ZipPackageEntry::doSetParent ( ZipPackageFolder * pNewParent, sal_Bool bIns
 		pNewParent->doInsertByName ( this, sal_False );
 }
 
-void SAL_CALL ZipPackageEntry::setParent( const uno::Reference< XInterface >& xNewParent ) 
+void SAL_CALL ZipPackageEntry::setParent( const uno::Reference< XInterface >& xNewParent )
 		throw(NoSupportException, RuntimeException)
 {
 	sal_Int64 nTest(0);
@@ -109,24 +109,24 @@ void SAL_CALL ZipPackageEntry::setParent( const uno::Reference< XInterface >& xN
 	}
 }
 	//XPropertySet
-uno::Reference< beans::XPropertySetInfo > SAL_CALL ZipPackageEntry::getPropertySetInfo(  ) 
+uno::Reference< beans::XPropertySetInfo > SAL_CALL ZipPackageEntry::getPropertySetInfo(  )
 		throw(RuntimeException)
 {
 	return uno::Reference < beans::XPropertySetInfo > ();
 }
-void SAL_CALL ZipPackageEntry::addPropertyChangeListener( const OUString& /*aPropertyName*/, const uno::Reference< beans::XPropertyChangeListener >& /*xListener*/ ) 
+void SAL_CALL ZipPackageEntry::addPropertyChangeListener( const OUString& /*aPropertyName*/, const uno::Reference< beans::XPropertyChangeListener >& /*xListener*/ )
 		throw(beans::UnknownPropertyException, WrappedTargetException, RuntimeException)
 {
 }
-void SAL_CALL ZipPackageEntry::removePropertyChangeListener( const OUString& /*aPropertyName*/, const uno::Reference< beans::XPropertyChangeListener >& /*aListener*/ ) 
+void SAL_CALL ZipPackageEntry::removePropertyChangeListener( const OUString& /*aPropertyName*/, const uno::Reference< beans::XPropertyChangeListener >& /*aListener*/ )
 		throw(beans::UnknownPropertyException, WrappedTargetException, RuntimeException)
 {
 }
-void SAL_CALL ZipPackageEntry::addVetoableChangeListener( const OUString& /*PropertyName*/, const uno::Reference< beans::XVetoableChangeListener >& /*aListener*/ ) 
+void SAL_CALL ZipPackageEntry::addVetoableChangeListener( const OUString& /*PropertyName*/, const uno::Reference< beans::XVetoableChangeListener >& /*aListener*/ )
 		throw(beans::UnknownPropertyException, WrappedTargetException, RuntimeException)
 {
 }
-void SAL_CALL ZipPackageEntry::removeVetoableChangeListener( const OUString& /*PropertyName*/, const uno::Reference< beans::XVetoableChangeListener >& /*aListener*/ ) 
+void SAL_CALL ZipPackageEntry::removeVetoableChangeListener( const OUString& /*PropertyName*/, const uno::Reference< beans::XVetoableChangeListener >& /*aListener*/ )
 		throw(beans::UnknownPropertyException, WrappedTargetException, RuntimeException)
 {
 }

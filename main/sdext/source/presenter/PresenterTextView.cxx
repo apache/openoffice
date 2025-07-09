@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -168,7 +168,7 @@ void PresenterTextView::SetText (const Reference<text::XText>& rxText)
     Reference<container::XEnumerationAccess> xParagraphAccess (rxText, UNO_QUERY);
     if ( ! xParagraphAccess.is())
         return;
-    
+
     Reference<container::XEnumeration> xParagraphs (
         xParagraphAccess->createEnumeration() , UNO_QUERY);
     if ( ! xParagraphs.is())
@@ -243,7 +243,7 @@ void PresenterTextView::SetTextChangeBroadcaster (
 void PresenterTextView::SetLocation (const css::geometry::RealPoint2D& rLocation)
 {
     maLocation = rLocation;
-    
+
     for (::std::vector<SharedPresenterTextParagraph>::iterator
              iParagraph(maParagraphs.begin()),
              iEnd(maParagraphs.end());
@@ -339,7 +339,7 @@ void PresenterTextView::MoveCaret (
         case AccessibleTextType::CHARACTER:
             nCharacterIndex += nDistance;
             break;
-                    
+
         case AccessibleTextType::WORD:
         {
             sal_Int32 nRemainingDistance (nDistance);
@@ -371,7 +371,7 @@ void PresenterTextView::MoveCaret (
                         else
                         {
                             nRemainingDistance -= nDelta;
-                            
+
                             // Move caret one character to the end of
                             // the previous or the start of the next paragraph.
                             pParagraph = GetParagraph(nParagraphIndex);
@@ -773,7 +773,7 @@ void PresenterTextParagraph::Format (
     mnVerticalOffset = nY;
     maWordBoundaries.clear();
     maWordBoundaries.push_back(0);
-    
+
     const rendering::FontMetrics aMetrics (rpFont->mxFont->getFontMetrics());
     mnAscent = aMetrics.Ascent;
     mnDescent = aMetrics.Descent;
@@ -796,7 +796,7 @@ void PresenterTextParagraph::Format (
 
         if (aWordBoundary.endPos>aWordBoundary.startPos)
             AddWord(nWidth, aCurrentLine, aWordBoundary.endPos, rpFont);
-            
+
         if (aWordBoundary.startPos<0 || aWordBoundary.endPos<0)
             break;
         if (nPosition >= aWordBoundary.endPos)
@@ -826,7 +826,7 @@ sal_Int32 PresenterTextParagraph::GetWordBoundary(
         else
             return GetCharacterCount();
     }
-    
+
     sal_Int32 nIndex (0);
     for (sal_Int32 nCount (maWordBoundaries.size()); nIndex<nCount; ++nIndex)
     {
@@ -917,7 +917,7 @@ void PresenterTextParagraph::AddWord (
         nLineStart = rCurrentLine.startPos;
         nLineEnd = rCurrentLine.endPos;
     }
-    
+
     const ::rtl::OUString sLineCandidate (
         msParagraphText.copy(nLineStart, nWordBoundary-nLineStart));
 
@@ -1072,7 +1072,7 @@ TextSegment PresenterTextParagraph::GetTextSegment (
             if (mxBreakIterator.is())
                 return GetWordTextSegment(nOffset, nIndex);
             break;
-                
+
         case AccessibleTextType::LINE:
         {
             for (::std::vector<Line>::const_iterator

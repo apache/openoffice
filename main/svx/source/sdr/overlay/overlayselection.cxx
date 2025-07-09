@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -64,7 +64,7 @@ namespace sdr
 			return aRetval;
 		}
 
-		// check if wanted type OVERLAY_TRANSPARENT or OVERLAY_SOLID 
+		// check if wanted type OVERLAY_TRANSPARENT or OVERLAY_SOLID
 		// is possible. If not, fallback to invert mode (classic mode)
     	OverlayType impCheckPossibleOverlayType(OverlayType aOverlayType)
         {
@@ -80,7 +80,7 @@ namespace sdr
 				else
 				{
 					const OutputDevice *pOut = Application::GetDefaultDevice();
-					
+
 					if(pOut->GetSettings().GetStyleSettings().GetHighContrastMode())
 					{
 						// not possible when in high contrast mode
@@ -167,8 +167,8 @@ namespace sdr
 		}
 
 		OverlaySelection::OverlaySelection(
-			OverlayType eType, 
-			const Color& rColor, 
+			OverlayType eType,
+			const Color& rColor,
 			const std::vector< basegfx::B2DRange >& rRanges,
             bool bBorder)
 		:	OverlayObject(rColor),
@@ -181,7 +181,7 @@ namespace sdr
             // no AA for selection overlays
             allowAntiAliase(false);
 		}
-		
+
 		OverlaySelection::~OverlaySelection()
 		{
 			if(getOverlayManager())

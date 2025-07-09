@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
@@ -848,19 +848,19 @@ bool paintUsingPrimitivesHelper(
 
             // Fill ViewInformation. Use MappingTransform here, so there is no need to
             // embed the primitives to it. Use original TargetRange here so there is also
-            // no need to embed the primitives to a MaskPrimitive for cropping. This works 
+            // no need to embed the primitives to a MaskPrimitive for cropping. This works
             // only in this case where the graphic object cannot be rotated, though.
             const drawinglayer::geometry::ViewInformation2D aViewInformation2D(
-                aMappingTransform, 
-                rOutputDevice.GetViewTransformation(), 
-                rTargetRange, 
+                aMappingTransform,
+                rOutputDevice.GetViewTransformation(),
+                rTargetRange,
                 0,
-                0.0, 
+                0.0,
                 uno::Sequence< beans::PropertyValue >());
 
             // get a primitive processor for rendering
             drawinglayer::processor2d::BaseProcessor2D* pProcessor2D = drawinglayer::processor2d::createProcessor2DFromOutputDevice(
-                rOutputDevice, 
+                rOutputDevice,
                 aViewInformation2D);
 
             if(pProcessor2D)
@@ -1008,7 +1008,7 @@ void SwNoTxtFrm::PaintPicture( OutputDevice* pOut, const SwRect &rGrfArea ) cons
                     // -> the primitive renderer will create the needed pdf export data
                     // -> if bitmap conent, it will be cached system-dependent
                     const basegfx::B2DRange aTargetRange(
-                        aAlignedGrfArea.Left(), aAlignedGrfArea.Top(), 
+                        aAlignedGrfArea.Left(), aAlignedGrfArea.Top(),
                         aAlignedGrfArea.Right(), aAlignedGrfArea.Bottom());
                     const basegfx::B2DHomMatrix aTargetTransform(
                         basegfx::tools::createScaleTranslateB2DHomMatrix(
@@ -1136,7 +1136,7 @@ void SwNoTxtFrm::PaintPicture( OutputDevice* pOut, const SwRect &rGrfArea ) cons
                 if(aSequence.hasElements() && !aSourceRange.isEmpty())
                 {
                     const basegfx::B2DRange aTargetRange(
-                        aAlignedGrfArea.Left(), aAlignedGrfArea.Top(), 
+                        aAlignedGrfArea.Left(), aAlignedGrfArea.Top(),
                         aAlignedGrfArea.Right(), aAlignedGrfArea.Bottom());
 
                     bDone = paintUsingPrimitivesHelper(

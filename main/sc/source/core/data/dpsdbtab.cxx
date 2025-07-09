@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -79,7 +79,7 @@ using ::com::sun::star::uno::UNO_QUERY;
     ScDPTableDataCache* pCache = NULL;
     ScDPCollection* pDPCollection= pDoc->GetDPCollection();
     sal_uInt16 nCount = pDPCollection->GetCount();
-    
+
     for ( short i=nCount-1; i>=0 ; i--)
     {
         if ( const ScImportSourceDesc* pUsedDesc = (*pDPCollection)[i]->GetImportSourceDesc() )
@@ -101,7 +101,7 @@ ScDPTableDataCache* ScImportSourceDesc::CreateCache( ScDocument* pDoc , long nID
 		return NULL;
 
     sal_Int32 nSdbType = -1;
-  
+
     switch ( nType )
     {
     case sheet::DataImportMode_SQL:        nSdbType = sdb::CommandType::COMMAND;  break;
@@ -119,7 +119,7 @@ ScDPTableDataCache* ScImportSourceDesc::CreateCache( ScDocument* pDoc , long nID
 
     if ( pCache == NULL )
 		pCache = new ScDPTableDataCache( pDoc );
-	
+
     uno::Reference<sdbc::XRowSet> xRowSet ;
     try
     {
@@ -191,7 +191,7 @@ ScDPTableDataCache* ScImportSourceDesc::GetCache( ScDocument* pDoc, long nID ) c
     if ( NULL == pCache && pDoc )
         pCache = GetExistDPObjectCache( pDoc);
     if ( NULL == pCache )
-        pCache = CreateCache( pDoc , nID );    
+        pCache = CreateCache( pDoc , nID );
     return pCache;
 }
 
@@ -200,7 +200,7 @@ long ScImportSourceDesc:: GetCacheId( ScDocument* pDoc, long nID ) const
 	ScDPTableDataCache* pCache = GetCache( pDoc,  nID);
 	if ( NULL == pCache )
 		return -1;
-	else 
+	else
 		return pCache->GetId();
 }
 

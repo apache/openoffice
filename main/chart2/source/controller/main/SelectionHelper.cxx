@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -61,7 +61,7 @@ rtl::OUString lcl_getObjectName( SdrObject* pObj )
 void impl_selectObject( SdrObject* pObjectToSelect, DrawViewWrapper& rDrawViewWrapper )
 {
     ::vos::OGuard aSolarGuard( Application::GetSolarMutex());
-    
+
     if(pObjectToSelect)
     {
         SelectionHelper aSelectionHelper( pObjectToSelect );
@@ -179,13 +179,13 @@ void Selection::adaptSelectionToNewPos( const Point& rMousePos, DrawViewWrapper*
 {
     if( pDrawViewWrapper )
     {
-        //do not toggel multiclick selection if right clicked on the selected object or waiting for double click 
+        //do not toggel multiclick selection if right clicked on the selected object or waiting for double click
         bool bAllowMultiClickSelectionChange = !bIsRightMouse && !bWaitingForDoubleClick;
 
         ObjectIdentifier aLastSelectedObject( m_aSelectedOID );
 
         ::vos::OGuard aSolarGuard( Application::GetSolarMutex());
-        
+
         //bAllowMultiClickSelectionChange==true -> a second click on the same object can lead to a changed selection (e.g. series -> single data point)
 
         //get object to select:
@@ -460,7 +460,7 @@ bool SelectionHelper::isDragableObjectHitTwice( const Point& rMPos
         else if( bGetDiagramInsteadOf_Wall )
         {
             rtl::OUString aWallCID( ObjectIdentifier::createClassifiedIdentifier( OBJECTTYPE_DIAGRAM_WALL, rtl::OUString() ) );//@todo read CID from model
-            
+
             if( aRet.equals( aWallCID ) )
             {
                 rtl::OUString aDiagramCID = ObjectIdentifier::createClassifiedIdentifier( OBJECTTYPE_DIAGRAM, rtl::OUString::valueOf( sal_Int32(0) ) );
@@ -480,7 +480,7 @@ bool SelectionHelper::isRotateableObject( const ::rtl::OUString& rCID
         return false;
 
     sal_Int32 nDimensionCount = DiagramHelper::getDimension( ChartModelHelper::findDiagram( xChartModel ) );
-    
+
     if( nDimensionCount == 3 )
         return true;
     return false;
@@ -563,7 +563,7 @@ E3dScene* SelectionHelper::getSceneToRotate( SdrObject* pObj )
 {
     //search whether the object or one of its children is a 3D object
     //if so, return the accessory 3DScene
-    
+
     E3dObject* pRotateable = 0;
 
     if(pObj)
@@ -584,7 +584,7 @@ E3dScene* SelectionHelper::getSceneToRotate( SdrObject* pObj )
             }
         }
     }
-    
+
     E3dScene* pScene = 0;
     if(pRotateable)
     {

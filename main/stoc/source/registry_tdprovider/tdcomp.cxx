@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -75,7 +75,7 @@ Reference< XTypeDescription > CompoundTypeDescriptionImpl::getBaseType()
         {
         }
         // never try again, if no base td was found
-        _aBaseType = OUString();        
+        _aBaseType = OUString();
 	}
 	return _xBaseTD;
 }
@@ -107,12 +107,12 @@ Sequence< Reference< XTypeDescription > > CompoundTypeDescriptionImpl::getMember
         typereg::Reader aReader(
             _aBytes.getConstArray(), _aBytes.getLength(), false,
             TYPEREG_VERSION_1);
-        
+
         sal_uInt16 nFields = aReader.getFieldCount();
         Sequence< Reference< XTypeDescription > > * pTempMembers =
             new Sequence< Reference< XTypeDescription > >( nFields );
         Reference< XTypeDescription > * pMembers = pTempMembers->getArray();
-        
+
         while (nFields--)
         {
             if ((aReader.getFieldFlags(nFields) & RT_ACCESS_PARAMETERIZED_TYPE)
@@ -130,7 +130,7 @@ Sequence< Reference< XTypeDescription > > CompoundTypeDescriptionImpl::getMember
                     pMembers[nFields].is(), "### compound member unknown!");
             }
         }
-        
+
 		ClearableMutexGuard aGuard( getMutex() );
 		if (_pMembers)
         {
@@ -142,7 +142,7 @@ Sequence< Reference< XTypeDescription > > CompoundTypeDescriptionImpl::getMember
 			_pMembers = pTempMembers;
 		}
 	}
-    
+
 	return *_pMembers;
 }
 //__________________________________________________________________________________________________
@@ -154,16 +154,16 @@ Sequence< OUString > CompoundTypeDescriptionImpl::getMemberNames()
         typereg::Reader aReader(
             _aBytes.getConstArray(), _aBytes.getLength(), false,
             TYPEREG_VERSION_1);
-        
+
         sal_uInt16 nFields = aReader.getFieldCount();
         Sequence< OUString > * pTempMemberNames = new Sequence< OUString >( nFields );
         OUString * pMemberNames = pTempMemberNames->getArray();
-        
+
         while (nFields--)
         {
             pMemberNames[nFields] = aReader.getFieldName( nFields );
         }
-        
+
 		ClearableMutexGuard aGuard( getMutex() );
 		if (_pMemberNames)
 		{

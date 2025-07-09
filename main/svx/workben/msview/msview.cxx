@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -164,7 +164,7 @@ private:
 bool Atom::operator==( const Atom& rAtom ) const
 {
 	return ( maRecordHeader.nRecType == rAtom.maRecordHeader.nRecType ) &&
-			( maRecordHeader.nRecVer == rAtom.maRecordHeader.nRecVer ) &&	
+			( maRecordHeader.nRecVer == rAtom.maRecordHeader.nRecVer ) &&
 		   ( maRecordHeader.nRecInstance == rAtom.maRecordHeader.nRecInstance );
 }
 
@@ -719,7 +719,7 @@ void AtomContainerTreeListBox::InsertAtom( const Atom* pAtom, SvLBoxEntry* pPare
 		if( pAtom->isContainer() && pAtom->findFirstChildAtom() )
 		{
 			pEntry = InsertEntry( aText, maImgExpanded, maImgCollapsed, pParent );
-	
+
 			/** returns the first child atom or NULL */
 			const Atom* pChildAtom = pAtom->findFirstChildAtom();
 
@@ -915,7 +915,7 @@ PPTDocumentPtr MSViewerWorkWindow::Load()
 	PPTDocumentPtr pDocument;
 	if ( aDlg.Execute() == ERRCODE_NONE )
 	{
-		pDocument.reset( new PPTDocument( aDlg.GetPath() ) );	
+		pDocument.reset( new PPTDocument( aDlg.GetPath() ) );
 	}
 
 	return pDocument;
@@ -925,7 +925,7 @@ PPTDocumentPtr MSViewerWorkWindow::Load()
 
 MSViewerWorkWindow::MSViewerWorkWindow() :
 	WorkWindow( 0, WB_APP | WB_STDWORK | WB_3DLOOK ),mbSelectHdlGuard(false)
-{  
+{
     Size aOutputSize( 400, 600 );
 	SetOutputSizePixel( aOutputSize );
 	SetText( String( RTL_CONSTASCII_USTRINGPARAM( "MSViewer" ) ) );
@@ -952,7 +952,7 @@ MSViewerWorkWindow::MSViewerWorkWindow() :
 		mpListBox[nPane]->SetSelectHdl( LINK( this, MSViewerWorkWindow, implSelectHdl ) );
 		mpListBox[nPane]->SetExpandingHdl( LINK( this, MSViewerWorkWindow, implExpandingHdl ) );
 		mpListBox[nPane]->SetCollapsingHdl( LINK( this, MSViewerWorkWindow, implCollapsingHdl ) );
-		
+
 		mpEdit[nPane] = new MultiLineEdit(this, WB_3DLOOK | WB_BORDER | WB_LEFT | WB_TOP | WB_READONLY | WB_HSCROLL | WB_VSCROLL );
 		mpEdit[nPane]->SetReadOnly( TRUE );
 		mpEdit[nPane]->SetReadOnly( TRUE );
@@ -1030,7 +1030,7 @@ void MSViewerWorkWindow::Sync( AtomContainerEntryPair* pPair, int nAction )
 		if( pAtom && pAtom->getCompareAtom() )
 		{
 			SvLBoxEntry* pEntry = pDestinationListBox->findAtom( pAtom->getCompareAtom() );
-			
+
 			if(pEntry )
 			{
 				if( nAction == 0 )
@@ -1172,7 +1172,7 @@ void MSViewerWorkWindow::Resize()
 		return -1;
 	}
 	comphelper::setProcessServiceFactory( xMSF );
-	
+
     InitVCL( xMSF );
 
 	String aConfigURL;

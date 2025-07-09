@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -213,7 +213,7 @@ SchXMLPlotAreaContext::SchXMLPlotAreaContext(
 				rtl::OUString::createFromAscii( "HasSecondaryXAxis" ), aFalseBool );
 			xProp->setPropertyValue(
 				rtl::OUString::createFromAscii( "HasSecondaryXAxisDescription" ), aFalseBool );
-			
+
 			xProp->setPropertyValue(
 				rtl::OUString::createFromAscii( "HasYAxis" ), aFalseBool );
 			xProp->setPropertyValue(
@@ -224,7 +224,7 @@ SchXMLPlotAreaContext::SchXMLPlotAreaContext(
 				rtl::OUString::createFromAscii( "HasSecondaryYAxis" ), aFalseBool );
 			xProp->setPropertyValue(
 				rtl::OUString::createFromAscii( "HasSecondaryYAxisDescription" ), aFalseBool );
-			
+
 			xProp->setPropertyValue(
 				rtl::OUString::createFromAscii( "HasZAxis" ), aFalseBool );
 			xProp->setPropertyValue(
@@ -338,7 +338,7 @@ void SchXMLPlotAreaContext::StartElement( const uno::Reference< xml::sax::XAttri
 				const SvXMLStyleContext* pStyle = pStylesCtxt->FindStyleChildContext(
 					mrImportHelper.GetChartFamilyID(), msAutoStyleName );
 
-                XMLPropStyleContext* pPropStyleContext = 
+                XMLPropStyleContext* pPropStyleContext =
                     const_cast< XMLPropStyleContext * >(
                         dynamic_cast< const XMLPropStyleContext * >( pStyle ) );
 				if( pPropStyleContext )
@@ -448,7 +448,7 @@ void SchXMLPlotAreaContext::StartElement( const uno::Reference< xml::sax::XAttri
         bCreateInternalDataProvider = true;
     else if( !m_rbHasRangeAtPlotArea )
         bCreateInternalDataProvider = true;
-        
+
     if( bCreateInternalDataProvider && mxNewDoc.is() )
     {
         // we have no complete range => we have own data, so switch the data
@@ -483,7 +483,7 @@ SvXMLImportContext* SchXMLPlotAreaContext::CreateChildContext(
             bool bAdaptWrongPercentScaleValues = false;
             if( SchXMLTools::isDocumentGeneratedWithOpenOfficeOlderThan2_3( GetImport().GetModel() ) )
             {
-                //correct errors from older versions 
+                //correct errors from older versions
 
                 // for NetCharts there were no xAxis exported to older files
                 // so we need to add the x axis here for those old NetChart files
@@ -503,7 +503,7 @@ SvXMLImportContext* SchXMLPlotAreaContext::CreateChildContext(
                     bAdaptXAxisOrientationForOld2DBarCharts = true;
             }
 
-			pContext = new SchXMLAxisContext( mrImportHelper, GetImport(), rLocalName, mxDiagram, maAxes, mrCategoriesAddress, 
+			pContext = new SchXMLAxisContext( mrImportHelper, GetImport(), rLocalName, mxDiagram, maAxes, mrCategoriesAddress,
                                               bAddMissingXAxisForNetCharts, bAdaptWrongPercentScaleValues, bAdaptXAxisOrientationForOld2DBarCharts, m_bAxisPositionAttributeImported );
         }
         break;
@@ -640,7 +640,7 @@ void SchXMLPlotAreaContext::EndElement()
     }
 
 	// set changed size and position after properties (esp. 3d)
-    
+
     uno::Reference< chart::XDiagramPositioning > xDiaPos( mxDiagram, uno::UNO_QUERY );
 	if( xDiaPos.is())
 	{
@@ -796,7 +796,7 @@ bool SchXMLPositonAttributesHelper::readPositioningAttribute( sal_uInt16 nPrefix
 	}
     else
         bReturn = false;
-   
+
     return bReturn;
 }
 
@@ -833,7 +833,7 @@ void SchXMLCoordinateRegionContext::StartElement( const uno::Reference< xml::sax
 {
 	// parse attributes
 	sal_Int16 nAttrCount = xAttrList.is()? xAttrList->getLength(): 0;
-	
+
 	for( sal_Int16 i = 0; i < nAttrCount; i++ )
 	{
 		rtl::OUString sAttrName = xAttrList->getNameByIndex( i );

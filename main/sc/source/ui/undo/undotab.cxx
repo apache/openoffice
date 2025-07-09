@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -759,7 +759,7 @@ sal_Bool ScUndoCopyTab::CanRepeat(SfxRepeatTarget& /* rTarget */) const
 //      Tab Bg Color
 //
 
-ScUndoTabColor::ScUndoTabColor( 
+ScUndoTabColor::ScUndoTabColor(
     ScDocShell* pNewDocShell, SCTAB nT, const Color& aOTabBgColor, const Color& aNTabBgColor) :
     ScSimpleUndo( pNewDocShell )
 {
@@ -1666,11 +1666,11 @@ String ScUndoLayoutRTL::GetComment() const
 //UNUSED2009-05 {
 //UNUSED2009-05     meOldGrammar = pDocShell->GetDocument()->GetGrammar();
 //UNUSED2009-05 }
-//UNUSED2009-05 
+//UNUSED2009-05
 //UNUSED2009-05 __EXPORT ScUndoSetGrammar::~ScUndoSetGrammar()
 //UNUSED2009-05 {
 //UNUSED2009-05 }
-//UNUSED2009-05 
+//UNUSED2009-05
 //UNUSED2009-05 void ScUndoSetGrammar::DoChange( formula::FormulaGrammar::Grammar eGrammar )
 //UNUSED2009-05 {
 //UNUSED2009-05     pDocShell->SetInUndo( sal_True );
@@ -1679,17 +1679,17 @@ String ScUndoLayoutRTL::GetComment() const
 //UNUSED2009-05     pDocShell->SetDocumentModified();
 //UNUSED2009-05     pDocShell->SetInUndo( sal_False );
 //UNUSED2009-05 }
-//UNUSED2009-05 
+//UNUSED2009-05
 //UNUSED2009-05 void __EXPORT ScUndoSetGrammar::Undo()
 //UNUSED2009-05 {
 //UNUSED2009-05     DoChange( meOldGrammar );
 //UNUSED2009-05 }
-//UNUSED2009-05 
+//UNUSED2009-05
 //UNUSED2009-05 void __EXPORT ScUndoSetGrammar::Redo()
 //UNUSED2009-05 {
 //UNUSED2009-05     DoChange( meNewGrammar );
 //UNUSED2009-05 }
-//UNUSED2009-05 
+//UNUSED2009-05
 //UNUSED2009-05 void __EXPORT ScUndoSetGrammar::Repeat(SfxRepeatTarget& /* rTarget */)
 //UNUSED2009-05 {
 //UNUSED2009-05 #if 0
@@ -1699,12 +1699,12 @@ String ScUndoLayoutRTL::GetComment() const
 //UNUSED2009-05             Execute( FID_TAB_USE_R1C1, SFX_CALLMODE_SLOT | SFX_CALLMODE_RECORD);
 //UNUSED2009-05 #endif
 //UNUSED2009-05 }
-//UNUSED2009-05 
+//UNUSED2009-05
 //UNUSED2009-05 sal_Bool __EXPORT ScUndoSetGrammar::CanRepeat(SfxRepeatTarget& rTarget) const
 //UNUSED2009-05 {
 //UNUSED2009-05     return (rTarget.ISA(ScTabViewTarget));
 //UNUSED2009-05 }
-//UNUSED2009-05 
+//UNUSED2009-05
 //UNUSED2009-05 String __EXPORT ScUndoSetGrammar::GetComment() const
 //UNUSED2009-05 {
 //UNUSED2009-05     return ScGlobal::GetRscString( STR_UNDO_TAB_R1C1 );

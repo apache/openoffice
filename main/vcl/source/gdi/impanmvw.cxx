@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -93,7 +93,7 @@ ImplAnimView::ImplAnimView( Animation* pParent, OutputDevice* pOut,
 	}
 	else
 		mpBackground->DrawOutDev( Point(), maSzPix, maDispPt, maDispSz, *mpOut );
-	
+
 	// initial drawing to actual position
 	ImplDrawToPos( mpParent->ImplGetCurPos() );
 
@@ -117,7 +117,7 @@ ImplAnimView::~ImplAnimView()
 sal_Bool ImplAnimView::ImplMatches( OutputDevice* pOut, long nExtraData ) const
 {
 	sal_Bool bRet = sal_False;
-	
+
 	if( nExtraData )
 	{
 		if( ( mnExtraData == nExtraData ) && ( !pOut || ( pOut == mpOut ) ) )
@@ -197,7 +197,7 @@ void ImplAnimView::ImplDrawToPos( sal_uLong nPos )
 
 void ImplAnimView::ImplDraw( sal_uLong nPos )
 {
-	ImplDraw( nPos, NULL ); 
+	ImplDraw( nPos, NULL );
 }
 
 // ------------------------------------------------------------------------
@@ -303,7 +303,7 @@ void ImplAnimView::ImplDraw( sal_uLong nPos, VirtualDevice* pVDev )
 				mpOut->SetClipRegion( *pOldClip );
 				delete pOldClip;
 			}
-			
+
 			delete pDev;
 
 			if( mpOut->GetOutDevType() == OUTDEV_WINDOW )
@@ -330,7 +330,7 @@ void ImplAnimView::ImplRepaint()
 		mpBackground->DrawOutDev( Point(), maSzPix, maDispPt, maDispSz, *mpOut );
 
 	mbPause = sal_False;
-	ImplDrawToPos( mnActPos ); 
+	ImplDrawToPos( mnActPos );
 	mbPause = bOldPause;
 }
 

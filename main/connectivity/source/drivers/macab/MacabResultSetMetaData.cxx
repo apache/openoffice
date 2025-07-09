@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -53,7 +53,7 @@ void MacabResultSetMetaData::setMacabFields(const ::vos::ORef<connectivity::OSQL
 	static const ::rtl::OUString aName(::rtl::OUString::createFromAscii("Name"));
 	MacabRecords *aRecords;
 	MacabHeader *aHeader;
- 
+
 	aRecords = m_pConnection->getAddressBook()->getMacabRecords(m_sTableName);
 
 	// In case, somehow, we don't have anything with the name m_sTableName
@@ -73,7 +73,7 @@ void MacabResultSetMetaData::setMacabFields(const ::vos::ORef<connectivity::OSQL
 		nFieldNumber = aHeader->getColumnNumber(aFieldName);
 		m_aMacabFields.push_back(nFieldNumber);
 	}
-	
+
 }
 // -------------------------------------------------------------------------
 sal_Int32 SAL_CALL MacabResultSetMetaData::getColumnDisplaySize(sal_Int32 column) throw(SQLException, RuntimeException)
@@ -87,7 +87,7 @@ sal_Int32 SAL_CALL MacabResultSetMetaData::getColumnType(sal_Int32 column) throw
 	MacabRecords *aRecords;
 	MacabHeader *aHeader;
 	macabfield *aField;
- 
+
 	aRecords = m_pConnection->getAddressBook()->getMacabRecords(m_sTableName);
 
 	// In case, somehow, we don't have anything with the name m_sTableName
@@ -128,7 +128,7 @@ sal_Bool SAL_CALL MacabResultSetMetaData::isCaseSensitive(sal_Int32) throw(SQLEx
 	sal_uInt32 nFieldNumber = m_aMacabFields[column - 1];
 	MacabRecords *aRecords;
 	MacabHeader *aHeader;
- 
+
 	aRecords = m_pConnection->getAddressBook()->getMacabRecords(m_sTableName);
 
 	// In case, somehow, we don't have anything with the name m_sTableName

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -60,21 +60,21 @@ namespace
 	{
 		switch(eLineJoint)
 		{
-			case com::sun::star::drawing::LineJoint_MIDDLE : 
+			case com::sun::star::drawing::LineJoint_MIDDLE :
 			{
-				return basegfx::B2DLINEJOIN_MIDDLE;	
+				return basegfx::B2DLINEJOIN_MIDDLE;
 			}
-			case com::sun::star::drawing::LineJoint_BEVEL : 
+			case com::sun::star::drawing::LineJoint_BEVEL :
 			{
-				return basegfx::B2DLINEJOIN_BEVEL;	
+				return basegfx::B2DLINEJOIN_BEVEL;
 			}
-			case com::sun::star::drawing::LineJoint_MITER : 
+			case com::sun::star::drawing::LineJoint_MITER :
 			{
-				return basegfx::B2DLINEJOIN_MITER;	
+				return basegfx::B2DLINEJOIN_MITER;
 			}
-			case com::sun::star::drawing::LineJoint_ROUND : 
+			case com::sun::star::drawing::LineJoint_ROUND :
 			{
-				return basegfx::B2DLINEJOIN_ROUND;	
+				return basegfx::B2DLINEJOIN_ROUND;
 			}
 			default : // com::sun::star::drawing::LineJoint_NONE
 			{
@@ -119,8 +119,8 @@ namespace
 		const com::sun::star::drawing::LineCap eLineCap = ((const XLineCapItem&)(rSet.Get(XATTR_LINECAP))).GetValue();
 
 		return drawinglayer::attribute::LineAttribute(
-            aColorAttribute, 
-            (double)nLineWidth, 
+            aColorAttribute,
+            (double)nLineWidth,
             impGetB2DLineJoin(eLineJoint),
             eLineCap);
 	}
@@ -332,7 +332,7 @@ namespace drawinglayer
 				{
 					delete mpSdrFormTextAttribute;
 				}
-				
+
 				mpSdrFormTextAttribute = rCandidate.mpSdrFormTextAttribute;
 				mpSdrFormTextAttribute->mnRefCount++;
 			}
@@ -354,70 +354,70 @@ namespace drawinglayer
 
 			return (*rCandidate.mpSdrFormTextAttribute == *mpSdrFormTextAttribute);
 		}
-		
-	    sal_Int32 SdrFormTextAttribute::getFormTextDistance() const 
-		{ 
-			return mpSdrFormTextAttribute->getFormTextDistance(); 
+
+	    sal_Int32 SdrFormTextAttribute::getFormTextDistance() const
+		{
+			return mpSdrFormTextAttribute->getFormTextDistance();
 		}
 
-		sal_Int32 SdrFormTextAttribute::getFormTextStart() const 
-		{ 
-			return mpSdrFormTextAttribute->getFormTextStart(); 
+		sal_Int32 SdrFormTextAttribute::getFormTextStart() const
+		{
+			return mpSdrFormTextAttribute->getFormTextStart();
 		}
 
-		sal_Int32 SdrFormTextAttribute::getFormTextShdwXVal() const 
-		{ 
-			return mpSdrFormTextAttribute->getFormTextShdwXVal(); 
+		sal_Int32 SdrFormTextAttribute::getFormTextShdwXVal() const
+		{
+			return mpSdrFormTextAttribute->getFormTextShdwXVal();
 		}
 
-		sal_Int32 SdrFormTextAttribute::getFormTextShdwYVal() const 
-		{ 
-			return mpSdrFormTextAttribute->getFormTextShdwYVal(); 
+		sal_Int32 SdrFormTextAttribute::getFormTextShdwYVal() const
+		{
+			return mpSdrFormTextAttribute->getFormTextShdwYVal();
 		}
 
-		sal_uInt16 SdrFormTextAttribute::getFormTextShdwTransp() const 
-		{ 
-			return mpSdrFormTextAttribute->getFormTextShdwTransp(); 
+		sal_uInt16 SdrFormTextAttribute::getFormTextShdwTransp() const
+		{
+			return mpSdrFormTextAttribute->getFormTextShdwTransp();
 		}
 
-		XFormTextStyle SdrFormTextAttribute::getFormTextStyle() const 
-		{ 
-			return mpSdrFormTextAttribute->getFormTextStyle(); 
+		XFormTextStyle SdrFormTextAttribute::getFormTextStyle() const
+		{
+			return mpSdrFormTextAttribute->getFormTextStyle();
 		}
 
-		XFormTextAdjust SdrFormTextAttribute::getFormTextAdjust() const 
-		{ 
-			return mpSdrFormTextAttribute->getFormTextAdjust(); 
+		XFormTextAdjust SdrFormTextAttribute::getFormTextAdjust() const
+		{
+			return mpSdrFormTextAttribute->getFormTextAdjust();
 		}
 
-		XFormTextShadow SdrFormTextAttribute::getFormTextShadow() const 
-		{ 
-			return mpSdrFormTextAttribute->getFormTextShadow(); 
+		XFormTextShadow SdrFormTextAttribute::getFormTextShadow() const
+		{
+			return mpSdrFormTextAttribute->getFormTextShadow();
 		}
 
-		Color SdrFormTextAttribute::getFormTextShdwColor() const 
-		{ 
-			return mpSdrFormTextAttribute->getFormTextShdwColor(); 
+		Color SdrFormTextAttribute::getFormTextShdwColor() const
+		{
+			return mpSdrFormTextAttribute->getFormTextShdwColor();
 		}
 
-		const SdrFormTextOutlineAttribute& SdrFormTextAttribute::getOutline() const 
-		{ 
-			return mpSdrFormTextAttribute->getOutline(); 
+		const SdrFormTextOutlineAttribute& SdrFormTextAttribute::getOutline() const
+		{
+			return mpSdrFormTextAttribute->getOutline();
 		}
 
-		const SdrFormTextOutlineAttribute& SdrFormTextAttribute::getShadowOutline() const 
-		{ 
-			return mpSdrFormTextAttribute->getShadowOutline(); 
+		const SdrFormTextOutlineAttribute& SdrFormTextAttribute::getShadowOutline() const
+		{
+			return mpSdrFormTextAttribute->getShadowOutline();
 		}
 
-		bool SdrFormTextAttribute::getFormTextMirror() const 
-		{ 
-			return mpSdrFormTextAttribute->getFormTextMirror(); 
+		bool SdrFormTextAttribute::getFormTextMirror() const
+		{
+			return mpSdrFormTextAttribute->getFormTextMirror();
 		}
 
-		bool SdrFormTextAttribute::getFormTextOutline() const 
-		{ 
-			return mpSdrFormTextAttribute->getFormTextOutline(); 
+		bool SdrFormTextAttribute::getFormTextOutline() const
+		{
+			return mpSdrFormTextAttribute->getFormTextOutline();
 		}
 	} // end of namespace attribute
 } // end of namespace drawinglayer

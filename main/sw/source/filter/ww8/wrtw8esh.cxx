@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
@@ -128,12 +128,12 @@ String SwBasicEscherEx::GetBasePath()
 		const SfxItemSet* pPItemSet = pMedium->GetItemSet();
 		if( pPItemSet )
 		{
-			const SfxStringItem* pPItem = dynamic_cast< const SfxStringItem* >( pPItemSet->GetItem( SID_FILE_NAME ) );	
+			const SfxStringItem* pPItem = dynamic_cast< const SfxStringItem* >( pPItemSet->GetItem( SID_FILE_NAME ) );
 			if ( pPItem )
 			      	sDocUrl = pPItem->GetValue();
 		}
 	}
-	
+
     	sBasePath = sDocUrl.Copy( 0, sDocUrl.SearchBackward( '/' ) + 1 );
 	return sBasePath;
 
@@ -171,10 +171,10 @@ String SwBasicEscherEx::BuildFileName(sal_uInt16& rnLevel, bool& rbRel, const St
 	return aDosName;
 }
 
-void SwBasicEscherEx::WriteHyperlinkWithinFly( SvMemoryStream& rStrm, const SwFmtURL* pINetFmtArg) 
+void SwBasicEscherEx::WriteHyperlinkWithinFly( SvMemoryStream& rStrm, const SwFmtURL* pINetFmtArg)
 {
 	if ( !pINetFmtArg ) return;
-	
+
 	sal_uInt8 maGuidStdLink[ 16 ] ={
 		0xD0, 0xC9, 0xEA, 0x79, 0xF9, 0xBA, 0xCE, 0x11, 0x8C, 0x82, 0x00, 0xAA, 0x00, 0x4B, 0xA9, 0x0B };
 	sal_uInt8 maGuidUrlMoniker[ 16 ] = {
@@ -196,7 +196,7 @@ void SwBasicEscherEx::WriteHyperlinkWithinFly( SvMemoryStream& rStrm, const SwFm
 	//const sal_uInt32 WW8_HLINK_UNC              = 0x00000100;   /// UNC path.
 	SvMemoryStream tmpStrm;
 	String tmpTextMark;
-	
+
 	String rUrl = pINetFmtArg->GetURL();
 	String rTarFrm = pINetFmtArg->GetTargetFrameName();
 	sal_uInt32          mnFlags = 0;
@@ -206,7 +206,7 @@ void SwBasicEscherEx::WriteHyperlinkWithinFly( SvMemoryStream& rStrm, const SwFm
 
 	//Target Frame
 	if( rTarFrm.Len() > 0 )
-    	{    		
+    	{
 		SwWW8Writer::WriteLong( tmpStrm, rTarFrm.Len()+1 );
         	SwWW8Writer::WriteString16( tmpStrm, rTarFrm, false);
 
@@ -226,7 +226,7 @@ void SwBasicEscherEx::WriteHyperlinkWithinFly( SvMemoryStream& rStrm, const SwFm
             		mnFlags |= WW8_HLINK_ABS;
 
 		mnFlags |= WW8_HLINK_BODY;
-		
+
 		tmpStrm.Write( maGuidFileMoniker,sizeof(maGuidFileMoniker) );
 		tmpStrm << nLevel;
 		SwWW8Writer::WriteLong( tmpStrm, aFileName.Len()+1);
@@ -254,7 +254,7 @@ void SwBasicEscherEx::WriteHyperlinkWithinFly( SvMemoryStream& rStrm, const SwFm
 		//sal_uInt8 tmpLen = aTextMark.Len();
 		tmpTextMark = aTextMark;
     	}
-	
+
 	if( tmpTextMark.Len() == 0 && aUrlObj.HasMark() )
 	{
        	tmpTextMark = aUrlObj.GetMark();
@@ -267,7 +267,7 @@ void SwBasicEscherEx::WriteHyperlinkWithinFly( SvMemoryStream& rStrm, const SwFm
 
        	mnFlags |= WW8_HLINK_MARK;
     	}
-		
+
 	rStrm.Write( maGuidStdLink,16 );
        rStrm  << sal_uInt32( 2 )
             << mnFlags;
@@ -295,7 +295,7 @@ void SwBasicEscherEx::PreWriteHyperlinkWithinFly(const SwFrmFmt& rFmt,EscherProp
 		const SwFmtURL *pINetFmt = dynamic_cast<const SwFmtURL*>(pItem);
 		if(pINetFmt && pINetFmt->GetURL().Len()>0)
 		{
-			SvMemoryStream *rStrm = new SvMemoryStream ; 
+			SvMemoryStream *rStrm = new SvMemoryStream ;
 			String tmpstr=pINetFmt->GetURL();
 			WriteHyperlinkWithinFly( *rStrm, pINetFmt );
 			sal_uInt8* pBuf = (sal_uInt8*) rStrm->GetData();
@@ -312,9 +312,9 @@ void SwBasicEscherEx::PreWriteHyperlinkWithinFly(const SwFrmFmt& rFmt,EscherProp
 				nValue|=0x03080008;
 				rPropOpt.AddOpt(ESCHER_Prop_fPrint, nValue );
 			}
-			else 
+			else
 				rPropOpt.AddOpt(ESCHER_Prop_fPrint, 0x03080008 );
-		}				
+		}
 	}
 }
 
@@ -379,8 +379,8 @@ void WW8Export::DoComboBox(uno::Reference<beans::XPropertySet> xPropSet)
         // --> OD 2010-05-14 #160026#
         // property "Help" does not exist and due to the no-existence an exception is thrown.
 //        uno::Any aTmp = xPropSet->getPropertyValue(C2U("Help"));
-        try 
-        {        
+        try
+        {
             uno::Any aTmp = xPropSet->getPropertyValue(C2U("HelpText"));
             // <--
             const rtl::OUString *pStr = (const rtl::OUString *)aTmp.getValue();
@@ -1607,7 +1607,7 @@ sal_Int32 SwBasicEscherEx::WriteGrfBullet(const Graphic& rGrf)
 	AddAtom(4, ESCHER_ClientAnchor);
 	GetStream() << (sal_uInt32)0x80000000;
 	CloseContainer();
-	
+
 	return 0;
 }
 
@@ -2050,8 +2050,8 @@ sal_Int32 SwBasicEscherEx::WriteFlyFrameAttr(const SwFrmFmt& rFmt,
     {
         rPropOpt.AddOpt( ESCHER_Prop_fPrint, 0x200020 );
     }
-	
-	PreWriteHyperlinkWithinFly(rFmt,rPropOpt);	
+
+	PreWriteHyperlinkWithinFly(rFmt,rPropOpt);
 
     return nLineWidth;
 }
@@ -2146,7 +2146,7 @@ sal_Int32 SwEscherEx::WriteFlyFrameAttr(const SwFrmFmt& rFmt, MSO_SPT eShapeType
         }
     }
 
-	PreWriteHyperlinkWithinFly(rFmt,rPropOpt);	
+	PreWriteHyperlinkWithinFly(rFmt,rPropOpt);
 
     return nLineWidth;
 }
@@ -2488,12 +2488,12 @@ bool WinwordAnchoring::ConvertPosition( SwFmtHoriOrient& _iorHoriOri,
         {
             eHoriConv = CONV2PG;
         }
-		else if ( _iorHoriOri.IsPosToggle() 
+		else if ( _iorHoriOri.IsPosToggle()
 				&& _iorHoriOri.GetHoriOrient() == text::HoriOrientation::RIGHT )
 		{
 			eHoriConv = NO_CONV;
 			_iorHoriOri.SetHoriOrient( text::HoriOrientation::OUTSIDE );
-		}        
+		}
         else
         {
             switch ( _iorHoriOri.GetRelationOrient() )
@@ -2909,7 +2909,7 @@ sal_Int32 SwEscherEx::WriteFlyFrm(const DrawObj &rObj, sal_uInt32 &rShapeId,
             }
 
 			//In browse mode the sdr object doesn't always exist. For example, the
-			//object is in the hidden header/footer. We save the fmt directly 
+			//object is in the hidden header/footer. We save the fmt directly
 			//in such cases; we copy most of the logic from the block above
 			const bool bBrowseMode = (rFmt.getIDocumentSettingAccess())->get(IDocumentSettingAccess::BROWSE_MODE);
 			if( bBrowseMode && rFmt.GetDoc())
@@ -2919,12 +2919,12 @@ sal_Int32 SwEscherEx::WriteFlyFrm(const DrawObj &rObj, sal_uInt32 &rShapeId,
 					rShapeId = GetFlyShapeId(rFmt, rObj.mnHdFtIndex, rPVec);
 					pTxtBxs->Append( &rFmt, rShapeId );
 					sal_uInt32 nTxtId = pTxtBxs->Count();
-					
+
 					nTxtId *= 0x10000;
 					nBorderThick = WriteTxtFlyFrame(rObj, rShapeId, nTxtId, rPVec);
 				}
 			}
-            
+
         }
     }
     return nBorderThick;

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -1924,7 +1924,7 @@ void ToolBox::SetHelpId( sal_uInt16 nItemId, const rtl::OString& rHelpId )
 rtl::OString ToolBox::GetHelpId( sal_uInt16 nItemId ) const
 {
     rtl::OString aRet;
-    
+
 	ImplToolItem* pItem = ImplGetItem( nItemId );
 
 	if ( pItem )
@@ -1932,9 +1932,9 @@ rtl::OString ToolBox::GetHelpId( sal_uInt16 nItemId ) const
         if ( pItem->maHelpId.getLength() )
             aRet = pItem->maHelpId;
         else
-            aRet = ::rtl::OUStringToOString( pItem->maCommandStr, RTL_TEXTENCODING_UTF8 );        
+            aRet = ::rtl::OUStringToOString( pItem->maCommandStr, RTL_TEXTENCODING_UTF8 );
     }
-	
+
 	return aRet;
 }
 
@@ -2418,7 +2418,7 @@ void ToolBox::ImplUpdateImageList()
                 vcl::IImageListProvider* pImageListProvider = mpData->mpImageListProvider;
                 SetImageList( pImageListProvider->getImageList(eType) );
                 mpData->meImageListType = eType;
-            }            
+            }
         }
         catch (com::sun::star::lang::IllegalArgumentException &) {}
     }

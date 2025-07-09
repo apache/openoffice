@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -174,7 +174,7 @@ sal_Bool XSecController::convertDateTime( com::sun::star::util::DateTime& rDateT
             aTimeStr = rString.copy( nPos + 1, nPos2 - nPos - 1 );
 
 			//Get the fraction of a second with the accuracy of one hundreds second.
-			//The fraction part of the date could have different accuracies. To calculate 
+			//The fraction part of the date could have different accuracies. To calculate
 			//the count of a hundredth units one could form a fractional number by appending
 			//the value of the time string to 0. Then multiply it by 100 and use only the whole number.
 			//For example: 5:27:46,1 -> 0,1 * 100 = 10
@@ -271,7 +271,7 @@ sal_Bool XSecController::convertDateTime( com::sun::star::util::DateTime& rDateT
     }
     return bSuccess;
 }
- 
+
 int XSecController::findSignatureInfor( sal_Int32 nSecurityId) const
 /****** XSecController/findSignatureInfor *************************************
  *
@@ -302,7 +302,7 @@ int XSecController::findSignatureInfor( sal_Int32 nSecurityId) const
 {
 	int i;
 	int size = m_vInternalSignatureInformations.size();
-	
+
 	for (i=0; i<size; ++i)
 	{
 		if (m_vInternalSignatureInformations[i].signatureInfor.nSecurityId == nSecurityId)
@@ -310,7 +310,7 @@ int XSecController::findSignatureInfor( sal_Int32 nSecurityId) const
 			return i;
 		}
 	}
-	
+
 	return -1;
 }
 
@@ -346,7 +346,7 @@ void XSecController::createXSecComponent( )
 	rtl::OUString sSAXEventKeeper(rtl::OUString::createFromAscii( SAXEVENTKEEPER_COMPONENT ));
 	rtl::OUString sXMLSignature(rtl::OUString::createFromAscii( XMLSIGNATURE_COMPONENT ));
 	rtl::OUString sXMLDocument(rtl::OUString::createFromAscii( XMLDOCUMENTWRAPPER_COMPONENT ));
-	
+
 	/*
 	 * marks all security components are not available.
 	 */
@@ -356,11 +356,11 @@ void XSecController::createXSecComponent( )
 	m_xSAXEventKeeper = NULL;
 
 	cssu::Reference< cssl::XMultiComponentFactory > xMCF( mxCtx->getServiceManager() );
-	
+
 	m_xXMLSignature = cssu::Reference< cssxc::XXMLSignature >(
 		xMCF->createInstanceWithContext( sXMLSignature, mxCtx ),
 		cssu::UNO_QUERY );
-		
+
 	bool bSuccess = (0!=m_xXMLSignature.is());
 	if ( bSuccess )
 	/*
@@ -371,7 +371,7 @@ void XSecController::createXSecComponent( )
 			xMCF->createInstanceWithContext( sXMLDocument, mxCtx ),
 			cssu::UNO_QUERY );
 	}
-	
+
 	bSuccess &= (0!=m_xXMLDocumentWrapper.is());
 	if ( bSuccess )
 	/*
@@ -384,26 +384,26 @@ void XSecController::createXSecComponent( )
 	}
 
 	bSuccess &= (0!=m_xSAXEventKeeper.is());
-	
+
 	if (bSuccess)
 	/*
 	 * SAXEventKeeper created successfully.
 	 */
 	{
 		cssu::Reference< cssl::XInitialization > xInitialization(m_xSAXEventKeeper,  cssu::UNO_QUERY);
-	
+
 		cssu::Sequence <cssu::Any> arg(1);
 		arg[0] = cssu::makeAny(m_xXMLDocumentWrapper);
 		xInitialization->initialize(arg);
-		
-		cssu::Reference<cssxc::sax::XSAXEventKeeperStatusChangeBroadcaster> 
-			xSAXEventKeeperStatusChangeBroadcaster(m_xSAXEventKeeper, cssu::UNO_QUERY); 
+
+		cssu::Reference<cssxc::sax::XSAXEventKeeperStatusChangeBroadcaster>
+			xSAXEventKeeperStatusChangeBroadcaster(m_xSAXEventKeeper, cssu::UNO_QUERY);
 		cssu::Reference< cssxc::sax::XSAXEventKeeperStatusChangeListener >
 			xStatusChangeListener = this;
-			
+
 		xSAXEventKeeperStatusChangeBroadcaster
 			->addSAXEventKeeperStatusChangeListener( xStatusChangeListener );
-		
+
 		m_nStatusOfSecurityComponents = INITIALIZED;
 	}
 }
@@ -428,20 +428,20 @@ bool XSecController::chainOn( bool bRetrievingLastEvent )
  *   INPUTS
  *	bRetrievingLastEvent - whether to retrieve the last key SAX event from
  *	                       the ElementStackKeeper.
- *	                       
+ *
  *   RESULT
  *	bJustChainingOn - whether the SAXEventKeeper is just chained into the
  *	                  SAX chain.
  *
  *   NOTES
- *	Sometimes, the last key SAX event can't be transferred to the 
- *	SAXEventKeeper together. 
+ *	Sometimes, the last key SAX event can't be transferred to the
+ *	SAXEventKeeper together.
  *	For instance, at the time an referenced element is detected, the
  *	startElement event has already been reserved by the ElementStackKeeper.
  *	Meanwhile, an ElementCollector needs to be created before the
  *	SAXEventKeeper receives that startElement event.
  *	So for the SAXEventKeeper, it needs to receive all missed key SAX
- *	events except that startElement event, then adds a new 
+ *	events except that startElement event, then adds a new
  *	ElementCollector, then receives that startElement event.
  *
  *   HISTORY
@@ -453,14 +453,14 @@ bool XSecController::chainOn( bool bRetrievingLastEvent )
  ******************************************************************************/
 {
 	bool rc = false;
-	
+
 	if (!m_bIsSAXEventKeeperSticky && !m_bIsSAXEventKeeperConnected)
 	{
 		if ( m_nStatusOfSecurityComponents == UNINITIALIZED )
 		{
 			createXSecComponent();
 		}
-		
+
 		if ( m_nStatusOfSecurityComponents == INITIALIZED )
 		/*
 		 * if all security components are ready, chains on the SAXEventKeeper
@@ -472,9 +472,9 @@ bool XSecController::chainOn( bool bRetrievingLastEvent )
 			 * phase.
 			 */
 			m_xSAXEventKeeper->setNextHandler( NULL );
-			
+
 			cssu::Reference< cssxs::XDocumentHandler > xSEKHandler(m_xSAXEventKeeper, cssu::UNO_QUERY);
-	
+
 			/*
 			 * connects the previous document handler on the SAX chain
 			 */
@@ -484,7 +484,7 @@ bool XSecController::chainOn( bool bRetrievingLastEvent )
 				{
 					cssu::Reference< cssl::XInitialization > xInitialization
 						(m_xPreviousNodeOnSAXChain, cssu::UNO_QUERY);
-						
+
 					cssu::Sequence<cssu::Any> aArgs( 1 );
 					aArgs[0] <<= xSEKHandler;
 					xInitialization->initialize(aArgs);
@@ -496,33 +496,33 @@ bool XSecController::chainOn( bool bRetrievingLastEvent )
 					xParser->setDocumentHandler( xSEKHandler );
 				}
 			}
-			
+
 			/*
 			 * get missed key SAX events
 			 */
 			if (m_xElementStackKeeper.is())
 			{
 				m_xElementStackKeeper->retrieve(xSEKHandler, bRetrievingLastEvent);
-				
+
 				/*
-				 * now the ElementStackKeeper can stop its work, because the 
+				 * now the ElementStackKeeper can stop its work, because the
 				 * SAXEventKeeper is on the SAX chain, no SAX events will be
 				 * missed.
 				 */
 				m_xElementStackKeeper->stop();
 			}
-			
+
 			/*
 			 * connects the next document handler on the SAX chain
 			 */
 			m_xSAXEventKeeper->setNextHandler( m_xNextNodeOnSAXChain );
-	
+
 			m_bIsSAXEventKeeperConnected = true;
-			
+
 			rc = true;
 		}
 	}
-	
+
 	return rc;
 }
 
@@ -557,14 +557,14 @@ void XSecController::chainOff()
 		if (m_bIsSAXEventKeeperConnected)
 		{
 			m_xSAXEventKeeper->setNextHandler( NULL );
-			
+
 			if ( m_xPreviousNodeOnSAXChain.is() )
 			{
 				if ( m_bIsPreviousNodeInitializable )
 				{
 					cssu::Reference< cssl::XInitialization > xInitialization
 						(m_xPreviousNodeOnSAXChain, cssu::UNO_QUERY);
-						
+
 					cssu::Sequence<cssu::Any> aArgs( 1 );
 					aArgs[0] <<= m_xNextNodeOnSAXChain;
 					xInitialization->initialize(aArgs);
@@ -575,7 +575,7 @@ void XSecController::chainOff()
 					xParser->setDocumentHandler( m_xNextNodeOnSAXChain );
 				}
 			}
-			
+
 			if (m_xElementStackKeeper.is())
 			{
 				/*
@@ -584,7 +584,7 @@ void XSecController::chainOff()
 				 */
 				m_xElementStackKeeper->start();
 			}
-			
+
 			m_bIsSAXEventKeeperConnected = false;
 		}
 	}
@@ -642,7 +642,7 @@ void XSecController::initializeSAXChain()
  *
  *   FUNCTION
  *	Initializes the SAX chain, if the SAXEventKeeper is asked to be always
- *	on the SAX chain, chains it on. Otherwise, starts the 
+ *	on the SAX chain, chains it on. Otherwise, starts the
  *	ElementStackKeeper to reserve key SAX events.
  *
  *   INPUTS
@@ -662,7 +662,7 @@ void XSecController::initializeSAXChain()
 	m_bIsSAXEventKeeperConnected = false;
 	m_bIsCollectingElement = false;
 	m_bIsBlocking = false;
-	
+
 	if (m_xElementStackKeeper.is())
 	{
 		/*
@@ -670,11 +670,11 @@ void XSecController::initializeSAXChain()
 		 */
 		m_xElementStackKeeper->start();
 	}
-	
+
 	chainOff();
 }
 
-cssu::Reference< com::sun::star::io::XInputStream > 
+cssu::Reference< com::sun::star::io::XInputStream >
 	XSecController::getObjectInputStream( const rtl::OUString& objectURL )
 /****** XSecController/getObjectInputStream ************************************
  *
@@ -704,11 +704,11 @@ cssu::Reference< com::sun::star::io::XInputStream >
         cssu::Reference< com::sun::star::io::XInputStream > xObjectInputStream;
 
 	DBG_ASSERT( m_xUriBinding.is(), "Need XUriBinding!" );
-	
+
 	xObjectInputStream = m_xUriBinding->getUriBinding(objectURL);
-	
+
 	return xObjectInputStream;
-}	
+}
 
 #if 0
 sal_Int32 XSecController::getFastPropertyIndex(sal_Int32 nHandle) const
@@ -740,10 +740,10 @@ sal_Int32 XSecController::getFastPropertyIndex(sal_Int32 nHandle) const
 {
 	std::vector< sal_Int32 >::const_iterator ii = m_vFastPropertyIndexs.begin();
 	sal_Int32 nIndex = 0;
-	
+
 	bool bFound = false;
-			
-	for( ; ii != m_vFastPropertyIndexs.end(); ++ii,++nIndex ) 
+
+	for( ; ii != m_vFastPropertyIndexs.end(); ++ii,++nIndex )
 	{
 		if ( nHandle == (*ii))
 		{
@@ -751,18 +751,18 @@ sal_Int32 XSecController::getFastPropertyIndex(sal_Int32 nHandle) const
 			break;
 		}
 	}
-	
+
 	if (!bFound)
 	{
 		nIndex = -1;
 	}
-	
+
 	return nIndex;
 }
 #endif
 
 /*
- * public methods 
+ * public methods
  */
 
 sal_Int32 XSecController::getNewSecurityId(  )
@@ -804,13 +804,13 @@ void XSecController::startMission(
  ******************************************************************************/
 {
 	m_xUriBinding = xUriBinding;
-	
+
 	m_nStatusOfSecurityComponents = UNINITIALIZED;
 	m_xSecurityContext = xSecurityContext;
 	m_pErrorMessage = NULL;
 
 	m_vInternalSignatureInformations.clear();
-	
+
 	m_bVerifyCurrentSignature = false;
 }
 
@@ -825,7 +825,7 @@ void XSecController::setSAXChainConnector(
  *	collaborate with the SAXEventKeeper on the SAX chain.
  *
  *   SYNOPSIS
- *	setSAXChainConnector( xInitialization, 
+ *	setSAXChainConnector( xInitialization,
  *	                      xDocumentHandler,
  *	                      xElementStackKeeper );
  *
@@ -894,7 +894,7 @@ void XSecController::setSAXChainConnector(
 	m_xPreviousNodeOnSAXChain = xParser;
 	m_xNextNodeOnSAXChain = xDocumentHandler;
 	m_xElementStackKeeper = xElementStackKeeper;
-	
+
 	initializeSAXChain( );
 }
 
@@ -935,7 +935,7 @@ void XSecController::clearSAXChainConnector()
 		cssu::Reference< cssxs::XDocumentHandler > xSEKHandler(m_xSAXEventKeeper, cssu::UNO_QUERY);
 		m_xElementStackKeeper->retrieve(xSEKHandler, sal_True);
 	}
-	
+
 	chainOff();
 
 	m_xPreviousNodeOnSAXChain = NULL;
@@ -970,7 +970,7 @@ void XSecController::endMission()
  ******************************************************************************/
 {
 	sal_Int32 size = m_vInternalSignatureInformations.size();
-	
+
 	for (int i=0; i<size; ++i)
 	{
 		if ( m_nStatusOfSecurityComponents == INITIALIZED )
@@ -980,25 +980,25 @@ void XSecController::endMission()
 		{
 			cssu::Reference< cssxc::sax::XMissionTaker > xMissionTaker
 				( m_vInternalSignatureInformations[i].xReferenceResolvedListener, cssu::UNO_QUERY );
-			
+
 			/*
 			 * asks the SignatureCreator/SignatureVerifier to release
 			 * all resources it uses.
-			 */	
+			 */
 			xMissionTaker->endMission();
 		}
 	}
-	
+
 	m_xUriBinding = NULL;
 	m_xSecurityContext = NULL;
-	
+
 	/*
 	 * free the status change listener reference to this object
 	 */
 	if (m_xSAXEventKeeper.is())
 	{
-		cssu::Reference<cssxc::sax::XSAXEventKeeperStatusChangeBroadcaster> 
-			xSAXEventKeeperStatusChangeBroadcaster(m_xSAXEventKeeper, cssu::UNO_QUERY); 
+		cssu::Reference<cssxc::sax::XSAXEventKeeperStatusChangeBroadcaster>
+			xSAXEventKeeperStatusChangeBroadcaster(m_xSAXEventKeeper, cssu::UNO_QUERY);
 		xSAXEventKeeperStatusChangeBroadcaster
 			->addSAXEventKeeperStatusChangeListener( NULL );
 	}
@@ -1086,34 +1086,34 @@ void XSecController::exportSignature(
 			rtl::OUString tag_SignatureProperties(RTL_CONSTASCII_USTRINGPARAM(TAG_SIGNATUREPROPERTIES));
 				rtl::OUString tag_SignatureProperty(RTL_CONSTASCII_USTRINGPARAM(TAG_SIGNATUREPROPERTY));
 					rtl::OUString tag_Date(RTL_CONSTASCII_USTRINGPARAM(TAG_DATE));
-#if 0				
+#if 0
 					rtl::OUString tag_Timestamp(RTL_CONSTASCII_USTRINGPARAM(TAG_TIMESTAMP));
 						rtl::OUString tag_Date(RTL_CONSTASCII_USTRINGPARAM(TAG_DATE));
 						rtl::OUString tag_Time(RTL_CONSTASCII_USTRINGPARAM(TAG_TIME));
 #endif
-	
+
 	const SignatureReferenceInformations& vReferenceInfors = signatureInfo.vSignatureReferenceInfors;
 	SvXMLAttributeList *pAttributeList;
 
 	/*
-	 * Write Signature element 
+	 * Write Signature element
 	 */
 	pAttributeList = new SvXMLAttributeList();
 	pAttributeList->AddAttribute(
 		rtl::OUString(RTL_CONSTASCII_USTRINGPARAM(ATTR_XMLNS)),
 		rtl::OUString(RTL_CONSTASCII_USTRINGPARAM(NS_XMLDSIG)));
-		
+
 	if (signatureInfo.ouSignatureId.getLength()>0)
 	{
 		pAttributeList->AddAttribute(
 			rtl::OUString(RTL_CONSTASCII_USTRINGPARAM(ATTR_ID)),
 			rtl::OUString(signatureInfo.ouSignatureId));
 	}
-		
+
 	xDocumentHandler->startElement( tag_Signature, cssu::Reference< cssxs::XAttributeList > (pAttributeList));
 	{
 		/* Write SignedInfo element */
-		xDocumentHandler->startElement( 
+		xDocumentHandler->startElement(
 			tag_SignedInfo,
 			cssu::Reference< cssxs::XAttributeList > (new SvXMLAttributeList()));
 		{
@@ -1124,7 +1124,7 @@ void XSecController::exportSignature(
 				rtl::OUString(RTL_CONSTASCII_USTRINGPARAM(ALGO_C14N)));
 			xDocumentHandler->startElement( tag_CanonicalizationMethod, cssu::Reference< cssxs::XAttributeList > (pAttributeList) );
 			xDocumentHandler->endElement( tag_CanonicalizationMethod );
-			
+
 			/* Write SignatureMethod element */
 			pAttributeList = new SvXMLAttributeList();
 			pAttributeList->AddAttribute(
@@ -1136,7 +1136,7 @@ void XSecController::exportSignature(
 			/* Write Reference element */
 			int j;
 			int refNum = vReferenceInfors.size();
-			
+
 			for(j=0; j<refNum; ++j)
 			{
 				const SignatureReferenceInformation& refInfor = vReferenceInfors[j];
@@ -1160,7 +1160,7 @@ void XSecController::exportSignature(
 						rtl::OUString(RTL_CONSTASCII_USTRINGPARAM(ATTR_URI)),
 						rtl::OUString(RTL_CONSTASCII_USTRINGPARAM(CHAR_FRAGMENT))+refInfor.ouURI);
 				}
-				
+
 				xDocumentHandler->startElement( tag_Reference, cssu::Reference< cssxs::XAttributeList > (pAttributeList) );
 				{
 					/* Write Transforms element */
@@ -1177,24 +1177,24 @@ void XSecController::exportSignature(
 							pAttributeList->AddAttribute(
 								rtl::OUString(RTL_CONSTASCII_USTRINGPARAM(ATTR_ALGORITHM)),
 								rtl::OUString(RTL_CONSTASCII_USTRINGPARAM(ALGO_C14N)));
-							xDocumentHandler->startElement( 
+							xDocumentHandler->startElement(
 								tag_Transform,
 								cssu::Reference< cssxs::XAttributeList > (pAttributeList) );
 							xDocumentHandler->endElement( tag_Transform );
 						}
 						xDocumentHandler->endElement( tag_Transforms );
 					}
-					
+
 					/* Write DigestMethod element */
 					pAttributeList = new SvXMLAttributeList();
 					pAttributeList->AddAttribute(
 						rtl::OUString(RTL_CONSTASCII_USTRINGPARAM(ATTR_ALGORITHM)),
 						rtl::OUString(RTL_CONSTASCII_USTRINGPARAM(ALGO_XMLDSIGSHA1)));
-					xDocumentHandler->startElement( 
+					xDocumentHandler->startElement(
 						tag_DigestMethod,
 						cssu::Reference< cssxs::XAttributeList > (pAttributeList) );
 					xDocumentHandler->endElement( tag_DigestMethod );
-					
+
 					/* Write DigestValue element */
 					xDocumentHandler->startElement(
 						tag_DigestValue,
@@ -1206,49 +1206,49 @@ void XSecController::exportSignature(
 			}
 		}
 		xDocumentHandler->endElement( tag_SignedInfo );
-		
+
 		/* Write SignatureValue element */
-		xDocumentHandler->startElement( 
+		xDocumentHandler->startElement(
 			tag_SignatureValue,
 			cssu::Reference< cssxs::XAttributeList > (new SvXMLAttributeList()));
 		xDocumentHandler->characters( signatureInfo.ouSignatureValue );
 		xDocumentHandler->endElement( tag_SignatureValue );
-		
+
 		/* Write KeyInfo element */
-		xDocumentHandler->startElement( 
+		xDocumentHandler->startElement(
 			tag_KeyInfo,
 			cssu::Reference< cssxs::XAttributeList > (new SvXMLAttributeList()));
 		{
 			/* Write X509Data element */
-			xDocumentHandler->startElement( 
+			xDocumentHandler->startElement(
 				tag_X509Data,
 				cssu::Reference< cssxs::XAttributeList > (new SvXMLAttributeList()));
 			{
 				/* Write X509IssuerSerial element */
-				xDocumentHandler->startElement( 
+				xDocumentHandler->startElement(
 					tag_X509IssuerSerial,
 					cssu::Reference< cssxs::XAttributeList > (new SvXMLAttributeList()));
 				{
 					/* Write X509IssuerName element */
-					xDocumentHandler->startElement( 
+					xDocumentHandler->startElement(
 						tag_X509IssuerName,
 						cssu::Reference< cssxs::XAttributeList > (new SvXMLAttributeList()));
 					xDocumentHandler->characters( signatureInfo.ouX509IssuerName );
 					xDocumentHandler->endElement( tag_X509IssuerName );
-					
+
 					/* Write X509SerialNumber element */
-					xDocumentHandler->startElement( 
+					xDocumentHandler->startElement(
 						tag_X509SerialNumber,
 						cssu::Reference< cssxs::XAttributeList > (new SvXMLAttributeList()));
 					xDocumentHandler->characters( signatureInfo.ouX509SerialNumber );
 					xDocumentHandler->endElement( tag_X509SerialNumber );
 				}
 				xDocumentHandler->endElement( tag_X509IssuerSerial );
-				
+
 				/* Write X509Certificate element */
 				if (signatureInfo.ouX509Certificate.getLength()>0)
 				{
-					xDocumentHandler->startElement( 
+					xDocumentHandler->startElement(
 						tag_X509Certificate,
 						cssu::Reference< cssxs::XAttributeList > (new SvXMLAttributeList()));
 					xDocumentHandler->characters( signatureInfo.ouX509Certificate );
@@ -1258,14 +1258,14 @@ void XSecController::exportSignature(
 			xDocumentHandler->endElement( tag_X509Data );
 		}
 		xDocumentHandler->endElement( tag_KeyInfo );
-		
+
 		/* Write Object element */
-		xDocumentHandler->startElement( 
+		xDocumentHandler->startElement(
 			tag_Object,
 			cssu::Reference< cssxs::XAttributeList > (new SvXMLAttributeList()));
 		{
 			/* Write SignatureProperties element */
-			xDocumentHandler->startElement( 
+			xDocumentHandler->startElement(
 				tag_SignatureProperties,
 				cssu::Reference< cssxs::XAttributeList > (new SvXMLAttributeList()));
 			{
@@ -1277,12 +1277,12 @@ void XSecController::exportSignature(
 				pAttributeList->AddAttribute(
 					rtl::OUString(RTL_CONSTASCII_USTRINGPARAM(ATTR_TARGET)),
 					rtl::OUString(RTL_CONSTASCII_USTRINGPARAM(CHAR_FRAGMENT))+signatureInfo.ouSignatureId);
-				xDocumentHandler->startElement( 
+				xDocumentHandler->startElement(
 					tag_SignatureProperty,
 					cssu::Reference< cssxs::XAttributeList > (pAttributeList));
 				{
 					/* Write timestamp element */
-					
+
 					pAttributeList = new SvXMLAttributeList();
 					pAttributeList->AddAttribute(
 						rtl::OUString(RTL_CONSTASCII_USTRINGPARAM(ATTR_XMLNS))
@@ -1290,16 +1290,16 @@ void XSecController::exportSignature(
 							+rtl::OUString(RTL_CONSTASCII_USTRINGPARAM(NSTAG_DC)),
 						rtl::OUString(RTL_CONSTASCII_USTRINGPARAM(NS_DC)));
 
-					xDocumentHandler->startElement( 
+					xDocumentHandler->startElement(
 						rtl::OUString(RTL_CONSTASCII_USTRINGPARAM(NSTAG_DC))
 							+rtl::OUString(RTL_CONSTASCII_USTRINGPARAM(":"))
 							+tag_Date,
 						cssu::Reference< cssxs::XAttributeList > (pAttributeList));
-						
+
 					::rtl::OUStringBuffer buffer;
-					//If the xml signature was already contained in the document, 
-					//then we use the original date and time string, rather then the 
-					//converted one. When the original string is converted to the DateTime 
+					//If the xml signature was already contained in the document,
+					//then we use the original date and time string, rather then the
+					//converted one. When the original string is converted to the DateTime
 					//structure then information may be lost because it only holds a fractional
 					//of a second with a accuracy of one hundredth of second. If the string contains
 					//milli seconds (document was signed by an application other than OOo)
@@ -1311,7 +1311,7 @@ void XSecController::exportSignature(
 						convertDateTime( buffer, signatureInfo.stDateTime );
 					xDocumentHandler->characters( buffer.makeStringAndClear() );
 
-					xDocumentHandler->endElement( 
+					xDocumentHandler->endElement(
 						rtl::OUString(RTL_CONSTASCII_USTRINGPARAM(NSTAG_DC))
 							+rtl::OUString(RTL_CONSTASCII_USTRINGPARAM(":"))
 							+tag_Date);
@@ -1321,7 +1321,7 @@ void XSecController::exportSignature(
 			xDocumentHandler->endElement( tag_SignatureProperties );
 		}
 		xDocumentHandler->endElement( tag_Object );
-	}		
+	}
 	xDocumentHandler->endElement( tag_Signature );
 }
 
@@ -1341,13 +1341,13 @@ SignatureInformations XSecController::getSignatureInformations() const
 {
 	SignatureInformations vInfors;
 	int sigNum = m_vInternalSignatureInformations.size();
-		
+
 	for (int i=0; i<sigNum; ++i)
 	{
 		SignatureInformation si = m_vInternalSignatureInformations[i].signatureInfor;
 		vInfors.push_back(si);
 	}
-	
+
 	return vInfors;
 }
 
@@ -1358,7 +1358,7 @@ SignatureInformations XSecController::getSignatureInformations() const
  */
 
 /*
- * XFastPropertySet 
+ * XFastPropertySet
  */
 /*
 void SAL_CALL XSecController::setFastPropertyValue(
@@ -1381,7 +1381,7 @@ void SAL_CALL XSecController::setFastPropertyValue(
 		m_vFastPropertyValues[nIndex] = aValue;
 	}
 }
-	
+
 cssu::Any SAL_CALL XSecController::getFastPropertyValue(
 	sal_Int32 nHandle )
 	throw (
@@ -1396,7 +1396,7 @@ cssu::Any SAL_CALL XSecController::getFastPropertyValue(
 	{
 		aValue = m_vFastPropertyValues[nIndex];
 	}
-	
+
 	return aValue;
 }
 */
@@ -1404,7 +1404,7 @@ cssu::Any SAL_CALL XSecController::getFastPropertyValue(
 /*
  * XSAXEventKeeperStatusChangeListener
  */
- 
+
 void SAL_CALL XSecController::blockingStatusChanged( sal_Bool isBlocking )
 	throw (cssu::RuntimeException)
 {
@@ -1418,8 +1418,8 @@ void SAL_CALL XSecController::blockingStatusChanged( sal_Bool isBlocking )
 	this->m_bIsBlocking = isBlocking;
 	checkChainingStatus();
 }
-	
-void SAL_CALL XSecController::collectionStatusChanged( 
+
+void SAL_CALL XSecController::collectionStatusChanged(
 	sal_Bool isInsideCollectedElement )
 	throw (cssu::RuntimeException)
 {
@@ -1429,7 +1429,7 @@ void SAL_CALL XSecController::collectionStatusChanged(
 						"Collection Status => FALSE")),
 			rtl::OUString::createFromAscii("SAXEventKeeper Status"));
 	*/
-		
+
 	this->m_bIsCollectingElement = isInsideCollectedElement;
 	checkChainingStatus();
 }
@@ -1455,7 +1455,7 @@ void SAL_CALL XSecController::signatureCreated( sal_Int32 securityId, com::sun::
 	DBG_ASSERT( index != -1, "Signature Not Found!" );
 
 	SignatureInformation& signatureInfor = m_vInternalSignatureInformations[index].signatureInfor;
-	
+
 	/*
 	if (nResult == cssxc::sax::SignatureCreationResult_CREATIONSUCCEED)
 	{
@@ -1464,7 +1464,7 @@ void SAL_CALL XSecController::signatureCreated( sal_Int32 securityId, com::sun::
 	else
 	{
 		signatureInfor.nStatus = STATUS_CREATION_FAIL;
-	} 
+	}
 	*/
 	signatureInfor.nStatus = nResult;
 }
@@ -1479,7 +1479,7 @@ void SAL_CALL XSecController::signatureVerified( sal_Int32 securityId, com::sun:
 	DBG_ASSERT( index != -1, "Signature Not Found!" );
 
 	SignatureInformation& signatureInfor = m_vInternalSignatureInformations[index].signatureInfor;
-	
+
 	/*
 	if (nResult == cssxc::sax::SignatureVerifyResult_VERIFYSUCCEED)
 	{

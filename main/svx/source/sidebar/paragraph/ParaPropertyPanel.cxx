@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 #include "precompiled_svx.hxx"
@@ -127,7 +127,7 @@ ParaPropertyPanel* ParaPropertyPanel::Create (
         throw lang::IllegalArgumentException(A2S("no XFrame given to ParaPropertyPanel::Create"), NULL, 1);
     if (pBindings == NULL)
         throw lang::IllegalArgumentException(A2S("no SfxBindings given to ParaPropertyPanel::Create"), NULL, 2);
-    
+
     return new ParaPropertyPanel(
         pParent,
         rxFrame,
@@ -176,7 +176,7 @@ void ParaPropertyPanel::HandleContextChange (
             mpTbxProDemote->Show();
             mpTbxProDemoteBackground->Show();
             break;
-            
+
         case CombinedEnumContext(Application_DrawImpress, Context_DrawText):
             mpTBxVertAlign->Show();
             mpTBxVertAlignBackground->Show();
@@ -190,7 +190,7 @@ void ParaPropertyPanel::HandleContextChange (
             mpTbxProDemote->Show();
             mpTbxProDemoteBackground->Show();
             break;
-            
+
         case CombinedEnumContext(Application_DrawImpress, Context_Table):
             mpTBxVertAlign->Show();
             mpTBxVertAlignBackground->Show();
@@ -212,7 +212,7 @@ void ParaPropertyPanel::HandleContextChange (
             mpTBxBackColor->Show();
             mpTBxBackColorBackground->Show();
             mpTBxNumBullet->Show();
-		
+
             mpTBxNumBulletBackground->Show();
             ReSize(true);
             mpTbxIndent_IncDec->Show();
@@ -220,7 +220,7 @@ void ParaPropertyPanel::HandleContextChange (
             mpTbxProDemote->Hide();
             mpTbxProDemoteBackground->Hide();
             break;
-            
+
         case CombinedEnumContext(Application_WriterVariants, Context_Table):
             mpTBxVertAlign->Show();
             mpTBxVertAlignBackground->Show();
@@ -234,7 +234,7 @@ void ParaPropertyPanel::HandleContextChange (
             mpTbxProDemote->Hide();
             mpTbxProDemoteBackground->Hide();
             break;
-            
+
         case CombinedEnumContext(Application_WriterVariants, Context_DrawText):
             mpTBxVertAlign->Show();
             mpTBxVertAlignBackground->Show();
@@ -275,7 +275,7 @@ void ParaPropertyPanel::HandleContextChange (
             mpToolBoxHighlight->Hide();
 
             Size aSize(PROPERTYPAGE_WIDTH,TEXT_SECTIONPAGE_HEIGHT);
-            aSize = LogicToPixel( aSize,MapMode(MAP_APPFONT) ); 
+            aSize = LogicToPixel( aSize,MapMode(MAP_APPFONT) );
             aSize.setWidth(GetOutputSizePixel().Width());
             SetSizePixel(aSize);
         }*/
@@ -286,9 +286,9 @@ void ParaPropertyPanel::HandleContextChange (
     }
 }
 
-SfxBindings* ParaPropertyPanel::GetBindings() 
-{ 
-    return mpBindings; 
+SfxBindings* ParaPropertyPanel::GetBindings()
+{
+    return mpBindings;
 }
 
 
@@ -329,7 +329,7 @@ void ParaPropertyPanel::ReSize(bool bSize)
 		maFIndent2.SetPosPixel(POS_IMG_INDENT2);
 		maFIndent3.SetPosPixel(POS_IMG_INDENT3);
 		Size aSize(GetOutputSizePixel().Width(),PARA_SECTIONPAGE_HEIGHT);
-		aSize = LogicToPixel( aSize, MapMode(MAP_APPFONT) ); 
+		aSize = LogicToPixel( aSize, MapMode(MAP_APPFONT) );
 		aSize.setWidth(GetOutputSizePixel().Width());
 		SetSizePixel(aSize);
 	}
@@ -362,7 +362,7 @@ void ParaPropertyPanel::ReSize(bool bSize)
 	}
 
     maLayouter.Layout();
-    
+
     if (mxSidebar.is())
         mxSidebar->requestLayout();
 }
@@ -414,7 +414,7 @@ void ParaPropertyPanel::InitToolBoxAlign()
 	mpAlignToolBox->SetItemImage(TOOLBOX_ITEM2, maCenterAlignControl.GetIcon(bIsHighContrastModeActive));
 	mpAlignToolBox->SetItemImage(TOOLBOX_ITEM3, maRightAlignControl.GetIcon(bIsHighContrastModeActive));
 	mpAlignToolBox->SetItemImage(TOOLBOX_ITEM4, maJustifyAlignControl.GetIcon(bIsHighContrastModeActive));
-    
+
 	Link aLink = LINK( this, ParaPropertyPanel, AlignStyleModifyHdl_Impl );
 	mpAlignToolBox->SetSelectHdl( aLink );
 	Size aTbxSize (mpAlignToolBox->CalcWindowSizePixel());
@@ -458,11 +458,11 @@ void ParaPropertyPanel::InitToolBoxIndent()
 	}
 	mpTbxIndent_IncDec->SetItemImage(TOOLBOX_ITEM3,maIndHang);
 	aLink = LINK( this, ParaPropertyPanel, ClickIndent_IncDec_Hdl_Impl );
-	mpTbxIndent_IncDec->SetSelectHdl(aLink);    
+	mpTbxIndent_IncDec->SetSelectHdl(aLink);
 	m_eLRSpaceUnit = maLRSpaceControl.GetCoreMetric();
 	Size aTbxSize = mpTbxIndent_IncDec->CalcWindowSizePixel();
 	mpTbxIndent_IncDec->SetOutputSizePixel( aTbxSize );
-	
+
 	if( Application::GetSettings().GetLayoutRTL())
 	{
 		mpTbxProDemote->SetItemImage(TOOLBOX_ITEM1, maOutLineLeftControl.GetIcon(bIsHighContrastModeActive));
@@ -475,7 +475,7 @@ void ParaPropertyPanel::InitToolBoxIndent()
 	}
 	mpTbxProDemote->SetItemImage(TOOLBOX_ITEM3,maIndHang);
 	aLink = LINK( this, ParaPropertyPanel, ClickProDemote_Hdl_Impl );
-	mpTbxProDemote->SetSelectHdl(aLink);    
+	mpTbxProDemote->SetSelectHdl(aLink);
 	m_eLRSpaceUnit = maLRSpaceControl.GetCoreMetric();
 	aTbxSize = mpTbxProDemote->CalcWindowSizePixel();
 	mpTbxProDemote->SetOutputSizePixel( aTbxSize );
@@ -519,7 +519,7 @@ void ParaPropertyPanel::InitToolBoxSpacing()
     // and private:graphirepository... syntax.  This is necessary to
     // handle the workaround for accessing the images of commands
     // ParaspaceIncrease and ParaspaceDecrease.
-    // See issue 122446 for more details.    
+    // See issue 122446 for more details.
     mpTbxUL_IncDec->SetItemImage(
         BT_TBX_UL_INC,
         sfx2::sidebar::Tools::GetImage(mpTbxUL_IncDec->GetItemCommand(BT_TBX_UL_INC), mxFrame));
@@ -591,11 +591,11 @@ void ParaPropertyPanel::initial()
 	mpRightIndent->SetAccRelationLabeledBy(&mpRightIndent);
 	mpFLineIndent->SetAccRelationLabeledBy(&mpFLineIndent);
 	mpColorUpdater->SetAccRelationLabeledBy(&mpColorUpdater);
-#endif	
+#endif
 }
 
 void ParaPropertyPanel::InitImageList(::boost::scoped_ptr<ToolBox>& rTbx, ImageList& rImglst, ImageList& rImgHlst)
-{	
+{
 	sal_Bool bHighContrast = GetDisplayBackground().GetColor().IsDark();
 
     ImageList& rImgLst = bHighContrast ? rImgHlst : rImglst;
@@ -615,9 +615,9 @@ void ParaPropertyPanel::InitImageList(::boost::scoped_ptr<ToolBox>& rTbx, ImageL
 IMPL_LINK(ParaPropertyPanel, NumBTbxDDHandler, ToolBox*, pToolBox)
 {
 	sal_uInt16 nId = pToolBox->GetCurItemId();
-	
+
 	EndTracking();
-	pToolBox->SetItemDown( nId, sal_True ); 
+	pToolBox->SetItemDown( nId, sal_True );
 
 	if (nId == 1)
     {
@@ -629,7 +629,7 @@ IMPL_LINK(ParaPropertyPanel, NumBTbxDDHandler, ToolBox*, pToolBox)
 		maNumberingPopup.UpdateValueSet();
 		maNumberingPopup.Show(*pToolBox);
 	}
-	pToolBox->SetItemDown( nId, sal_False ); 
+	pToolBox->SetItemDown( nId, sal_False );
 	return 0;
 }
 
@@ -637,7 +637,7 @@ IMPL_LINK(ParaPropertyPanel, NumBTbxSelectHandler, ToolBox*, pToolBox)
 {
 	sal_uInt16 nId = pToolBox->GetCurItemId();
 	sal_uInt16 nSID = SID_TABLE_VERT_NONE;
-	
+
 	EndTracking();
 	if (nId == 1)
     {
@@ -650,7 +650,7 @@ IMPL_LINK(ParaPropertyPanel, NumBTbxSelectHandler, ToolBox*, pToolBox)
 	SfxBoolItem aBoolItem(nSID, sal_True);
 	GetBindings()->GetDispatcher()->Execute(nSID, SFX_CALLMODE_RECORD, &aBoolItem, 0L);
 
-	return 0;	
+	return 0;
 }
 
 
@@ -691,7 +691,7 @@ IMPL_LINK(ParaPropertyPanel, VertTbxSelectHandler, ToolBox*, pToolBox)
 }
 
 void ParaPropertyPanel::VertStateChanged(sal_uInt16 nSID, SfxItemState eState, const SfxPoolItem* pState)
-{	
+{
 	if (eState < SFX_ITEM_DONTCARE)
 	{
 		mpTBxVertAlign->SetItemState(IID_VERT_TOP, STATE_NOCHECK);
@@ -736,14 +736,14 @@ void ParaPropertyPanel::VertStateChanged(sal_uInt16 nSID, SfxItemState eState, c
 			{
 				if (nSID == SID_TABLE_VERT_NONE)
 				{
-					mpTBxVertAlign->SetItemState(IID_VERT_TOP, STATE_NOCHECK);					
+					mpTBxVertAlign->SetItemState(IID_VERT_TOP, STATE_NOCHECK);
 				}
 				else if (nSID == SID_TABLE_VERT_CENTER)
-				{					
-					mpTBxVertAlign->SetItemState(IID_VERT_CENTER, STATE_NOCHECK);				
+				{
+					mpTBxVertAlign->SetItemState(IID_VERT_CENTER, STATE_NOCHECK);
 				}
 				else if (nSID == SID_TABLE_VERT_BOTTOM)
-				{					
+				{
 					mpTBxVertAlign->SetItemState(IID_VERT_BOTTOM, STATE_NOCHECK);
 				}
 			}
@@ -772,7 +772,7 @@ IMPL_LINK(ParaPropertyPanel, ToolBoxBackColorDDHandler,ToolBox*, pToolBox)
 }
 
 IMPL_LINK( ParaPropertyPanel, ImplPopupModeEndHdl, FloatingWindow*, EMPTYARG )
-{	
+{
 	return 0;
 }
 
@@ -989,7 +989,7 @@ IMPL_LINK(ParaPropertyPanel, ClickProDemote_Hdl_Impl, ToolBox *, pControl)
 
 IMPL_LINK( ParaPropertyPanel, ClickLineSPDropDownHdl_Impl, ToolBox*, pBox )
 {
-	
+
 	const sal_uInt16 nId = pBox->GetCurItemId();
 	OSL_ASSERT(nId == TOOLBOX_ITEM1);
 	if(nId == TOOLBOX_ITEM1)
@@ -1223,7 +1223,7 @@ void ParaPropertyPanel::StateChangedAlignmentImpl( sal_uInt16 nSID, SfxItemState
 			mpAlignToolBox->SetItemState(BT_SUBSTCENTER,STATE_NOCHECK);
 			break;
 		case SID_ATTR_PARA_ADJUST_RIGHT:
-			mpAlignToolBox->SetItemState(BT_SUBSTRIGHT,STATE_NOCHECK);	
+			mpAlignToolBox->SetItemState(BT_SUBSTRIGHT,STATE_NOCHECK);
 			break;
 		case SID_ATTR_PARA_ADJUST_BLOCK:
 			mpAlignToolBox->SetItemState(BT_SUBSTJUSTIFY,STATE_NOCHECK);
@@ -1306,7 +1306,7 @@ void ParaPropertyPanel::StateChangedIndentImpl( sal_uInt16 /* nSID */, SfxItemSt
 
         long nfVal = OutputDevice::LogicToLogic( aTxtFirstLineOfst, (MapUnit)(SFX_MAPUNIT_TWIP), MAP_100TH_MM );
         nfVal = (long)mpFLineIndent->Normalize( (long)nfVal );
-        mpFLineIndent->SetValue( nfVal, FUNIT_100TH_MM );	
+        mpFLineIndent->SetValue( nfVal, FUNIT_100TH_MM );
 
         switch (maContext.GetCombinedContext_DI())
         {
@@ -1335,7 +1335,7 @@ void ParaPropertyPanel::StateChangedIndentImpl( sal_uInt16 /* nSID */, SfxItemSt
 
         mpTbxIndent_IncDec->Enable();
         mpTbxIndent_IncDec->EnableItem(ID_HANGING_INDENT, sal_True);
-        if ( maContext.GetCombinedContext_DI() != CombinedEnumContext(Application_WriterVariants, Context_Text) 
+        if ( maContext.GetCombinedContext_DI() != CombinedEnumContext(Application_WriterVariants, Context_Text)
              && maContext.GetCombinedContext_DI() != CombinedEnumContext(Application_WriterVariants, Context_Default)
              && maContext.GetCombinedContext_DI() != CombinedEnumContext(Application_WriterVariants, Context_Table) )
         {
@@ -1351,7 +1351,7 @@ void ParaPropertyPanel::StateChangedIndentImpl( sal_uInt16 /* nSID */, SfxItemSt
         mpRightIndent->Disable();
         mpFLineIndent->Disable();
         mpTbxIndent_IncDec->Disable();
-        if( maContext.GetCombinedContext_DI() != CombinedEnumContext(Application_WriterVariants, Context_Text)  && 
+        if( maContext.GetCombinedContext_DI() != CombinedEnumContext(Application_WriterVariants, Context_Text)  &&
             maContext.GetCombinedContext_DI() != CombinedEnumContext(Application_WriterVariants, Context_Default) &&
             maContext.GetCombinedContext_DI() !=  CombinedEnumContext(Application_WriterVariants, Context_Table) )
             mpTbxIndent_IncDec->Disable();
@@ -1366,7 +1366,7 @@ void ParaPropertyPanel::StateChangedIndentImpl( sal_uInt16 /* nSID */, SfxItemSt
         mpLeftIndent->SetEmptyFieldValue();
         mpRightIndent->SetEmptyFieldValue();
         mpFLineIndent->SetEmptyFieldValue();
-        if( maContext.GetCombinedContext_DI() != CombinedEnumContext(Application_WriterVariants, Context_Text)  && 
+        if( maContext.GetCombinedContext_DI() != CombinedEnumContext(Application_WriterVariants, Context_Text)  &&
             maContext.GetCombinedContext_DI() != CombinedEnumContext(Application_WriterVariants, Context_Default) &&
             maContext.GetCombinedContext_DI() !=  CombinedEnumContext(Application_WriterVariants, Context_Table) )
             mpTbxIndent_IncDec->Disable();
@@ -1434,14 +1434,14 @@ void ParaPropertyPanel::StateChangeOutLineImpl( sal_uInt16 nSID, SfxItemState eS
 	{
 		if( pState && eState == SFX_ITEM_UNKNOWN )
 			mbOutLineLeft = 1;
-		else 
+		else
 			mbOutLineLeft = 0;
 	}
 	if (nSID==SID_OUTLINE_RIGHT)
 	{
 		if( pState && eState == SFX_ITEM_UNKNOWN )
 			mbOutLineRight = 1;
-		else 
+		else
 			mbOutLineRight = 0;
 	}
 	if(mbOutLineLeft)
@@ -1506,11 +1506,11 @@ void ParaPropertyPanel::StateChangeBulletNumRuleImpl( sal_uInt16 nSID, SfxItemSt
                 nValue = pIt->GetValue();
         }
 
-        if ( nSID == FN_BUL_NUM_RULE_INDEX ) 
+        if ( nSID == FN_BUL_NUM_RULE_INDEX )
         {
             mnBulletTypeIndex = nValue;
         }
-        else if ( nSID == FN_NUM_NUM_RULE_INDEX ) 
+        else if ( nSID == FN_NUM_NUM_RULE_INDEX )
         {
             mnNumTypeIndex = nValue;
         }
@@ -1545,7 +1545,7 @@ FieldUnit ParaPropertyPanel::GetCurrentUnit( SfxItemState eState, const SfxPoolI
 			}
 		}
 	}
-	
+
 	return eUnit;
 }
 
@@ -1565,7 +1565,7 @@ PopupControl* ParaPropertyPanel::CreateNumberingPopupControl (PopupContainer* pP
 	return new ParaNumberingControl(pParent, *this);
 }
 
-namespace 
+namespace
 {
     Color GetNoBackgroundColor(void)
     {
@@ -1687,7 +1687,7 @@ ParaPropertyPanel::ParaPropertyPanel(Window* pParent,
     const sal_Int32 nMappedImageOffset (Layouter::MapWidth(*this, -3));
     const sal_Int32 nMappedToolBoxItemWidth (Layouter::MapWidth(*this, TOOLBOX_ITEM_WIDTH));
     const sal_Int32 nMappedControlWidth (Layouter::MapWidth(*this, CONTROL_WIDTH -10));
-    
+
     maLayouter.GetCell(0,0).SetControl(*mpFTUL).SetGridWidth(2);
     maLayouter.GetCell(1,0).SetControl(*mpTbxUL_IncDecBackground).SetGridWidth(2).SetFixedWidth();
 
@@ -1733,7 +1733,7 @@ ParaPropertyPanel::ParaPropertyPanel(Window* pParent,
     // graceful.
     sfx2::sidebar::Layouter::PrepareForLayouting(*mpFTUL);
     sfx2::sidebar::Layouter::PrepareForLayouting(*mpFTIndent);
-        
+
     if (mxSidebar.is())
         mxSidebar->requestLayout();
 
