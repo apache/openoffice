@@ -1,5 +1,5 @@
 #**************************************************************
-#  
+#
 #  Licensed to the Apache Software Foundation (ASF) under one
 #  or more contributor license agreements.  See the NOTICE file
 #  distributed with this work for additional information
@@ -7,16 +7,16 @@
 #  to you under the Apache License, Version 2.0 (the
 #  "License"); you may not use this file except in compliance
 #  with the License.  You may obtain a copy of the License at
-#  
+#
 #    http://www.apache.org/licenses/LICENSE-2.0
-#  
+#
 #  Unless required by applicable law or agreed to in writing,
 #  software distributed under the License is distributed on an
 #  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
 #  KIND, either express or implied.  See the License for the
 #  specific language governing permissions and limitations
 #  under the License.
-#  
+#
 #**************************************************************
 
 # Builds the Java DocumentHandling examples of the SDK.
@@ -81,7 +81,7 @@ $(SAMPLE_NAME) : $(APP1_JAR) $(APP2_JAR) $(APP3_JAR) $(APP4_JAR)
 	@echo The $(APP1_NAME) search the "$(QM)./test$(QM)" directory for documents, convert
 	@echo them using using the "$(QM)MS Word 97$(QM)" filter and the extension "$(QM).doc$(QM)".
 	@echo The converted files are store in "$(QM)$(SAMPLE_GEN_OUT)/converted_files$(QM)".
-	@echo The list of possible filter names can change. Normally an updated list can be found 
+	@echo The list of possible filter names can change. Normally an updated list can be found
 	@echo on "$(QM)http://www.openoffice.org/files/documents/25/111/filter_description.html$(QM)".
 	@echo -
 	@echo The $(APP2_NAME) loads the document "$(QM)./test/test1.odt$(QM)".
@@ -99,8 +99,8 @@ $(SAMPLE_NAME) : $(APP1_JAR) $(APP2_JAR) $(APP3_JAR) $(APP4_JAR)
 	@echo $(MAKE) $(APP3_NAME).run
 	@echo $(MAKE) $(APP4_NAME).run
 	@echo --------
-	@echo The examples need parameters. Please use one the following commands to 
-	@echo start the demo if you do not want the default parameters specified in the 
+	@echo The examples need parameters. Please use one the following commands to
+	@echo start the demo if you do not want the default parameters specified in the
 	@echo this makefile. Starting without parameters print a command line help:
 	@echo --- $(APP1_NAME) ---
 	@echo java -jar $(APP1_NAME).jar "$(QM)directory$(QM)" "$(QM)filter name$(QM)" "$(QM)extension$(QM)" "$(QM)output_directory$(QM)"

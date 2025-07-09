@@ -1,5 +1,5 @@
 #**************************************************************
-#  
+#
 #  Licensed to the Apache Software Foundation (ASF) under one
 #  or more contributor license agreements.  See the NOTICE file
 #  distributed with this work for additional information
@@ -7,16 +7,16 @@
 #  to you under the Apache License, Version 2.0 (the
 #  "License"); you may not use this file except in compliance
 #  with the License.  You may obtain a copy of the License at
-#  
+#
 #    http://www.apache.org/licenses/LICENSE-2.0
-#  
+#
 #  Unless required by applicable law or agreed to in writing,
 #  software distributed under the License is distributed on an
 #  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
 #  KIND, either express or implied.  See the License for the
 #  specific language governing permissions and limitations
 #  under the License.
-#  
+#
 #**************************************************************
 
 # Builds the Java Text examples of the SDK.
@@ -90,7 +90,7 @@ $(APP9_JAR) : $(OUT_APP_CLASS)/$(APP9_NAME).mf $(OUT_APP_CLASS)/$(APP9_NAME).cla
 
 $(EXAMPLE_NAME) : $(APP1_JAR) $(APP2_JAR) $(APP3_JAR) $(APP4_JAR) $(APP5_JAR) $(APP6_JAR) $(APP7_JAR) $(APP8_JAR) $(APP9_JAR)
 	@echo --------------------------------------------------------------------------------
-	@echo The GraphicsInserter example loads the graphic "$(QM)./oo_smiley.gif$(QM)" into a 
+	@echo The GraphicsInserter example loads the graphic "$(QM)./oo_smiley.gif$(QM)" into a
 	@echo new document.
 	@echo -
 	@echo Please use one of the following commands to execute the examples!
@@ -105,8 +105,8 @@ $(EXAMPLE_NAME) : $(APP1_JAR) $(APP2_JAR) $(APP3_JAR) $(APP4_JAR) $(APP5_JAR) $(
 	@echo $(MAKE) WriterSelector.run
 	@echo $(MAKE) GraphicsInserter.run
 	@echo --------
-	@echo The GraphicsInserter needs parameters. Please use the following command to 
-	@echo start the demo if you do not want the default parameters specified in the 
+	@echo The GraphicsInserter needs parameters. Please use the following command to
+	@echo start the demo if you do not want the default parameters specified in the
 	@echo this makefile. Starting without parameters print a command line help:
 	@echo --- GraphicsInserter ---
 	@echo java -jar GraphicsInserter.jar "$(QM)graphic Url|path$(QM)"

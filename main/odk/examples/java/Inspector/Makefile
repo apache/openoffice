@@ -1,5 +1,5 @@
 #**************************************************************
-#  
+#
 #  Licensed to the Apache Software Foundation (ASF) under one
 #  or more contributor license agreements.  See the NOTICE file
 #  distributed with this work for additional information
@@ -7,16 +7,16 @@
 #  to you under the Apache License, Version 2.0 (the
 #  "License"); you may not use this file except in compliance
 #  with the License.  You may obtain a copy of the License at
-#  
+#
 #    http://www.apache.org/licenses/LICENSE-2.0
-#  
+#
 #  Unless required by applicable law or agreed to in writing,
 #  software distributed under the License is distributed on an
 #  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
 #  KIND, either express or implied.  See the License for the
 #  specific language governing permissions and limitations
 #  under the License.
-#  
+#
 #**************************************************************
 
 # Builds the Java InstanceInspector component example of the SDK.
@@ -57,7 +57,7 @@ IDLFILES = InstanceInspector.idl \
 # module structure, for the example we know the module structure
 PACKAGE = org/openoffice
 
-COMP_JAVAFILES = XDialogProvider.java XTreeControlProvider.java XTreePathProvider.java MethodParametersDialog.java HideableMutableTreeNode.java HideableTreeModel.java Introspector.java XUnoNode.java SwingUnoNode.java UnoNode.java XUnoMethodNode.java SwingUnoMethodNode.java UnoMethodNode.java XUnoPropertyNode.java SwingUnoPropertyNode.java UnoPropertyNode.java XUnoFacetteNode.java SwingUnoFacetteNode.java TDocSupplier.java UnoTreeRenderer.java InspectorAddon.java XLanguageSourceCodeGenerator.java SourceCodeGenerator.java InspectorPane.java SwingDialogProvider.java SwingTreeControlProvider.java SwingTreePathProvider.java Inspector.java 
+COMP_JAVAFILES = XDialogProvider.java XTreeControlProvider.java XTreePathProvider.java MethodParametersDialog.java HideableMutableTreeNode.java HideableTreeModel.java Introspector.java XUnoNode.java SwingUnoNode.java UnoNode.java XUnoMethodNode.java SwingUnoMethodNode.java UnoMethodNode.java XUnoPropertyNode.java SwingUnoPropertyNode.java UnoPropertyNode.java XUnoFacetteNode.java SwingUnoFacetteNode.java TDocSupplier.java UnoTreeRenderer.java InspectorAddon.java XLanguageSourceCodeGenerator.java SourceCodeGenerator.java InspectorPane.java SwingDialogProvider.java SwingTreeControlProvider.java SwingTreePathProvider.java Inspector.java
 COMP_CLASSFILES = $(patsubst %.java,$(COMP_CLASS_OUT)/%.class,$(COMP_JAVAFILES))
 
 GEN_CLASSFILES = $(patsubst %.idl,$(SAMPLE_CLASS_OUT)/$(PACKAGE)/%.class,$(IDLFILES))
