@@ -1,5 +1,5 @@
 #**************************************************************
-#  
+#
 #  Licensed to the Apache Software Foundation (ASF) under one
 #  or more contributor license agreements.  See the NOTICE file
 #  distributed with this work for additional information
@@ -7,16 +7,16 @@
 #  to you under the Apache License, Version 2.0 (the
 #  "License"); you may not use this file except in compliance
 #  with the License.  You may obtain a copy of the License at
-#  
+#
 #    http://www.apache.org/licenses/LICENSE-2.0
-#  
+#
 #  Unless required by applicable law or agreed to in writing,
 #  software distributed under the License is distributed on an
 #  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
 #  KIND, either express or implied.  See the License for the
 #  specific language governing permissions and limitations
 #  under the License.
-#  
+#
 #**************************************************************
 
 # Builds the ProfUNO cpp binding example of the Developers Guide
@@ -71,15 +71,15 @@ ifeq "$(OS)" "MACOSX"
 endif
 endif
 
-$(OUT_BIN)/office_connect$(EXE_EXT) : $(SAMPLE_OBJ_OUT)/office_connect.$(OBJ_EXT) 
+$(OUT_BIN)/office_connect$(EXE_EXT) : $(SAMPLE_OBJ_OUT)/office_connect.$(OBJ_EXT)
 
 $(OUT_BIN)/string_samples$(EXE_EXT) : $(SAMPLE_OBJ_OUT)/string_samples.$(OBJ_EXT)
 
 ProUNOCppBindingExample : $(APP1_BINARY) $(APP2_BINARY)
 	@echo --------------------------------------------------------------------------------
 	@echo Note: For the "$(QM)$(APP1_NAME)$(QM)" example you need a running office listening
-	@echo $(SQM)      $(SQM)on port 2083. The example use the defaultBootstrap_InitialComponentContext method and provides 
-	@echo $(SQM)      $(SQM)the additional office types via the UNO environment variable -env:URE_MORE_TYPES=... 
+	@echo $(SQM)      $(SQM)on port 2083. The example use the defaultBootstrap_InitialComponentContext method and provides
+	@echo $(SQM)      $(SQM)the additional office types via the UNO environment variable -env:URE_MORE_TYPES=...
 	@echo $(SQM)      $(SQM)Before you can run this example you have to start your office in listening mode.
 	@echo -
 	@echo $(SQM)  $(SQM)soffice "$(QM)-accept=socket,host=localhost,port=2083;urp;StarOffice.ServiceManager$(QM)"
@@ -90,10 +90,10 @@ ProUNOCppBindingExample : $(APP1_BINARY) $(APP2_BINARY)
 	@echo $(MAKE) $(APP2_NAME).run
 	@echo --------------------------------------------------------------------------------
 
-%.run: $(OUT_BIN)/%$(EXE_EXT) 
+%.run: $(OUT_BIN)/%$(EXE_EXT)
 	cd $(subst /,$(PS),$(OUT_BIN)) && $(basename $@)
 
-$(API1_NAME).run: $(API1_BINARY) 
+$(API1_NAME).run: $(API1_BINARY)
 	cd $(subst /,$(PS),$(OUT_BIN)) && $(basename $@) $(ENV_OFFICE_TYPES)
 
 .PHONY: clean
