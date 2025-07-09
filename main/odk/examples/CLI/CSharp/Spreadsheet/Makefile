@@ -46,14 +46,14 @@ CLI_LIB_LOCATION = $(PRJ)\cli
 
 # Targets
 .PHONY : ALL
-ALL : Info	
+ALL : Info
 
 include $(SETTINGS)/stdtarget.mk
 
 
 # build executables
-#csc -lib:"d:\OpenOffice 4" does not work. csc does not understand the quotes. 
-#but they are needed if the path contains a space. Therefore we use full path 
+#csc -lib:"d:\OpenOffice 4" does not work. csc does not understand the quotes.
+#but they are needed if the path contains a space. Therefore we use full path
 #with the -reference switch
 $(SPREADSHEET_OUT)/%.exe : %.cs SpreadsheetDocHelper.cs
 	-$(MKDIR) $(subst /,$(PS),$(@D))
@@ -67,9 +67,9 @@ $(SPREADSHEET_OUT)/%.exe : %.cs SpreadsheetDocHelper.cs
 		-reference:"$(CLI_LIB_LOCATION)"\cli_cppuhelper.dll \
 		$^
 
-SpreadsheetSample : $(SPREADSHEET_OUT)/SpreadsheetSample.exe 
+SpreadsheetSample : $(SPREADSHEET_OUT)/SpreadsheetSample.exe
 
-GeneralTableSample : $(SPREADSHEET_OUT)/GeneralTableSample.exe 
+GeneralTableSample : $(SPREADSHEET_OUT)/GeneralTableSample.exe
 
 ViewSample : $(SPREADSHEET_OUT)/ViewSample.exe
 
@@ -84,7 +84,7 @@ Info : SpreadsheetSample GeneralTableSample ViewSample
 	@echo $(MAKE) ViewSample.run
 	@echo -------------------------------------------------------------------------------
 else
-Info : 
+Info :
 	@echo --------------------------------------------------------------------------------
 	@echo This example works only under Windows!
 	@echo --------------------------------------------------------------------------------
@@ -94,7 +94,7 @@ endif
 	@echo -------------------------------------------------------------------------------
 	@echo Executing sample $@ $(UNORC) $(CONNECT_STRING)...
 	@echo -------------------------------------------------------------------------------
-	cd $(subst /,\\,$(SPREADSHEET_OUT)) && $(basename $@).exe 
+	cd $(subst /,\\,$(SPREADSHEET_OUT)) && $(basename $@).exe
 
 .PHONY: clean
 clean :

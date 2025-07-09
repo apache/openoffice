@@ -1,5 +1,5 @@
 #**************************************************************
-#  
+#
 #  Licensed to the Apache Software Foundation (ASF) under one
 #  or more contributor license agreements.  See the NOTICE file
 #  distributed with this work for additional information
@@ -7,16 +7,16 @@
 #  to you under the Apache License, Version 2.0 (the
 #  "License"); you may not use this file except in compliance
 #  with the License.  You may obtain a copy of the License at
-#  
+#
 #    http://www.apache.org/licenses/LICENSE-2.0
-#  
+#
 #  Unless required by applicable law or agreed to in writing,
 #  software distributed under the License is distributed on an
 #  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
 #  KIND, either express or implied.  See the License for the
 #  specific language governing permissions and limitations
 #  under the License.
-#  
+#
 #**************************************************************
 
 # Builds the Java NotesAccess example of the SDK.
@@ -51,9 +51,9 @@ ALL : \
 
 include $(SETTINGS)/stdtarget.mk
 
-NotesAPIs : 
+NotesAPIs :
 	@echo --------------------------------------------------------------------------------
-	@echo This example uses external APIs from Lotus Notes/Domino. You can download a 
+	@echo This example uses external APIs from Lotus Notes/Domino. You can download a
 	@echo trial version from "$(QM)http://www.lotus.com/downloads$(QM)". After installation
 	@echo please do the following:
 	@echo  1. Add the install path to the PATH or LD_LIBRARY_PATH of this shell.
@@ -63,9 +63,9 @@ NotesAPIs :
 	@echo --------------------------------------------------------------------------------
 
 
-$(CLASSFILES) : $(JAVAFILES) 
+$(CLASSFILES) : $(JAVAFILES)
 	-$(MKDIR) $(subst /,$(PS),$(@D))
-	$(SDK_JAVAC) $(JAVAC_FLAGS) -classpath "$(SDK_CLASSPATH)" -d $(OUT_APP_CLASS) $(JAVAFILES) 
+	$(SDK_JAVAC) $(JAVAC_FLAGS) -classpath "$(SDK_CLASSPATH)" -d $(OUT_APP_CLASS) $(JAVAFILES)
 
 $(OUT_APP_CLASS)/%.mf :
 	-$(MKDIR) $(subst /,$(PS),$(@D))
@@ -86,7 +86,7 @@ JavaNotesAccessExample : NotesAPIs $(APP_JAR)
 	@echo NOTE: Before you run this example make sure that the exaternal "$(QM)Notes.jar$(QM)" can
 	@echo be found besides "$(QM)$(APP_JAR)"$(QM)
 	@echo and that the PATH variable includes the Notes installation directory.
-	@echo -   
+	@echo -
 	@echo Please use the following command to execute the example!
 	@echo -
 	@echo $(MAKE) NotesAccess.run
