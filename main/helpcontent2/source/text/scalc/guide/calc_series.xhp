@@ -59,7 +59,7 @@
 </listitem>
 </list>
 <paragraph xml-lang="en-US" id="par_idN106EE" role="tip" l10n="NEW">To quickly create a list of consecutive days, enter <item type="literal">Monday</item> in a cell, and drag the fill handle.</paragraph>
-<paragraph xml-lang="en-US" id="par_id9720145" role="paragraph" l10n="NEW">Hold down <switchinline select="sys"><caseinline select="MAC">Command 
+<paragraph xml-lang="en-US" id="par_id9720145" role="paragraph" l10n="NEW">Hold down <switchinline select="sys"><caseinline select="MAC">Command
 </caseinline><defaultinline>Ctrl </defaultinline></switchinline>if you do not want to fill the cells with different values.</paragraph>
 <paragraph xml-lang="en-US" id="par_id3154490" role="note" l10n="CHG">If you select two or more adjacent cells that contain different numbers, and drag, the remaining cells are filled with the arithmetic pattern that is recognized in the numbers. The AutoFill function also recognizes customized lists that are defined under <item type="menuitem"><switchinline select="sys"><caseinline select="MAC">%PRODUCTNAME - Preferences</caseinline><defaultinline>Tools - Options</defaultinline></switchinline> - %PRODUCTNAME Calc - Sort Lists</item>.</paragraph>
 <paragraph xml-lang="en-US" id="par_idN10737" role="tip" l10n="NEW">You can double-click the fill handle to automatically fill all empty columns of the current data block. For example, first enter Jan into A1 and drag the fill handle down to A12 to get the twelve months in the first column. Now enter some values into B1 and C1. Select those two cells, and double-click the fill handle. This fills automatically the data block B1:C12.</paragraph>
