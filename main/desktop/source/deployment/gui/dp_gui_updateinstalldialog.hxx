@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -104,14 +104,14 @@ private:
     ::com::sun::star::uno::Reference< ::com::sun::star::deployment::XExtensionManager > getExtensionManager() const
             { return m_xExtensionManager; }
 
-    rtl::Reference< Thread > m_thread;    
+    rtl::Reference< Thread > m_thread;
     ::com::sun::star::uno::Reference< ::com::sun::star::uno::XComponentContext > m_xComponentContext;
     ::com::sun::star::uno::Reference< ::com::sun::star::deployment::XExtensionManager > m_xExtensionManager;
     //Signals that an error occurred during download and installation
     bool m_bError;
     bool m_bNoEntry;
     bool m_bActivated;
-    
+
     ::rtl::OUString m_sInstalling;
     ::rtl::OUString m_sFinished;
     ::rtl::OUString m_sNoErrors;
@@ -121,8 +121,8 @@ private:
     ::rtl::OUString m_sNoInstall;
     ::rtl::OUString m_sThisErrorOccurred;
 
-    FixedText m_ft_action;    
-    ProgressBar m_statusbar; 
+    FixedText m_ft_action;
+    ProgressBar m_statusbar;
     FixedText m_ft_extension_name;
     FixedText m_ft_results;
     AutoScrollEdit m_mle_info;

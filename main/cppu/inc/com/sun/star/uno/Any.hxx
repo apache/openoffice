@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -31,13 +31,13 @@
 #include "cppu/unotype.hxx"
 
 namespace com
-{     
+{
 namespace sun
-{     
+{
 namespace star
-{     
+{
 namespace uno
-{     
+{
 
 //__________________________________________________________________________________________________
 inline Any::Any() SAL_THROW( () )
@@ -178,7 +178,7 @@ inline sal_Bool Any::operator != ( const Any & rAny ) const SAL_THROW( () )
 //__________________________________________________________________________________________________
 template< class C >
 inline Any SAL_CALL makeAny( const C & value ) SAL_THROW( () )
-{ 
+{
 	return Any( &value, ::cppu::getTypeFavourUnsigned(&value) );
 }
 
@@ -194,7 +194,7 @@ inline Any SAL_CALL makeAny( bool const & value ) SAL_THROW( () )
 //__________________________________________________________________________________________________
 template< class C >
 inline void SAL_CALL operator <<= ( Any & rAny, const C & value ) SAL_THROW( () )
-{ 
+{
 	const Type & rType = ::cppu::getTypeFavourUnsigned(&value);
 	::uno_type_any_assign(
 		&rAny, const_cast< C * >( &value ), rType.getTypeLibType(),

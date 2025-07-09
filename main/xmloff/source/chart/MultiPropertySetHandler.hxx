@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -158,7 +158,7 @@ public:
 			fails then sal_False is returned.  Else True is returned.
 	*/
 	inline	sal_Bool	GetProperties	(void);
-	
+
 private:
 	/**	@descr	Try to use the XMultiPropertySet interface to get the property
 			values.
@@ -168,22 +168,22 @@ private:
 	*/
 	inline	sal_Bool	MultiGet	(const ::com::sun::star::uno::Sequence<
 		::rtl::OUString> & rNameList);
-	
+
 	/**	@descr	Try to use the XPropertySet interface to get the property
 			values.
 		@param	rNameList	A precomputed and sorted sequence of OUStrings
 			containing the properties names.
 		@return	True if values could be derived.
 	*/
-	inline	sal_Bool	SingleGet	(const ::com::sun::star::uno::Sequence<	
+	inline	sal_Bool	SingleGet	(const ::com::sun::star::uno::Sequence<
 		::rtl::OUString> & rNameList);
-	
+
 	/**	@descr	STL map that maps from property names to polymorphic instances of
 			PropertyWrapper.  It uses OUStringComparison for sorting
 			the property names.
 	*/
 	::std::map< ::rtl::OUString, PropertyWrapperBase*, OUStringComparison> aPropertyList;
-	
+
 	///	The object from which to get the property values.
 	::com::sun::star::uno::Reference< ::com::sun::star::uno::XInterface>	mxObject;
 };
@@ -209,7 +209,7 @@ MultiPropertySetHandler::~MultiPropertySetHandler (void)
 }
 
 
-/*	
+/*
 template<class T> void	MultiPropertySetHandler::Add (const ::rtl::OUString & sName, T& pValue)
 {
 	aPropertyList[sName] = new PropertyWrapper<T> (sName, pValue);
@@ -244,7 +244,7 @@ sal_Bool	MultiPropertySetHandler::MultiGet	(const ::com::sun::star::uno::Sequenc
 		{
 			::std::map< ::rtl::OUString, PropertyWrapperBase*, OUStringComparison>::iterator I;
 			int	i;
-			::com::sun::star::uno::Sequence< ::com::sun::star::uno::Any> aValueList = 
+			::com::sun::star::uno::Sequence< ::com::sun::star::uno::Any> aValueList =
 				xMultiSet->getPropertyValues (rNameList);
 			for (I=aPropertyList.begin(),i=0; I!=aPropertyList.end(); I++)
 				I->second->SetValue (aValueList[i++]);
@@ -255,7 +255,7 @@ sal_Bool	MultiPropertySetHandler::MultiGet	(const ::com::sun::star::uno::Sequenc
 		}
 	else
 		return sal_False;
-		
+
 	return sal_True;
 }
 
@@ -271,7 +271,7 @@ sal_Bool	MultiPropertySetHandler::SingleGet	(const ::com::sun::star::uno::Sequen
 		try
 		{
 			::std::map< ::rtl::OUString, PropertyWrapperBase*, OUStringComparison>::iterator I;
-			int	i;		
+			int	i;
 			for (I=aPropertyList.begin(),i=0; I!=aPropertyList.end(); I++)
 				I->second->SetValue (xSingleSet->getPropertyValue (rNameList[i++]));
 		}
@@ -281,7 +281,7 @@ sal_Bool	MultiPropertySetHandler::SingleGet	(const ::com::sun::star::uno::Sequen
 		}
 	else
 		return sal_False;
-			
+
 	return sal_True;
 }
 

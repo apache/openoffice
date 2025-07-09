@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -34,12 +34,12 @@
 
 class SdrText;
 
-namespace drawinglayer { namespace animation { 
-	class AnimationEntryList; 
+namespace drawinglayer { namespace animation {
+	class AnimationEntryList;
 }}
 
-namespace drawinglayer { namespace attribute { 
-	class SdrFormTextAttribute; 
+namespace drawinglayer { namespace attribute {
+	class SdrFormTextAttribute;
 }}
 
 namespace drawinglayer { namespace attribute {
@@ -60,19 +60,19 @@ namespace drawinglayer
 		public:
             /// constructors/assignmentoperator/destructor
 			SdrTextAttribute(
-				const SdrText& rSdrText, 
+				const SdrText& rSdrText,
                 const OutlinerParaObject& rOutlinerParaObject,
-				XFormTextStyle eFormTextStyle, 
-				sal_Int32 aTextLeftDistance, 
+				XFormTextStyle eFormTextStyle,
+				sal_Int32 aTextLeftDistance,
 				sal_Int32 aTextUpperDistance,
-				sal_Int32 aTextRightDistance, 
-				sal_Int32 aTextLowerDistance, 
+				sal_Int32 aTextRightDistance,
+				sal_Int32 aTextLowerDistance,
                 SdrTextHorzAdjust aSdrTextHorzAdjust,
                 SdrTextVertAdjust aSdrTextVertAdjust,
-				bool bContour, 
-                bool bFitToSize, 
-				bool bHideContour, 
-                bool bBlink, 
+				bool bContour,
+                bool bFitToSize,
+				bool bHideContour,
+                bool bBlink,
 				bool bScroll,
                 bool bInEditMode,
                 bool bFixedCellHeight,
@@ -112,8 +112,8 @@ namespace drawinglayer
 			void getBlinkTextTiming(
 				drawinglayer::animation::AnimationEntryList& rAnimList) const;
 			void getScrollTextTiming(
-				drawinglayer::animation::AnimationEntryList& rAnimList, 
-				double fFrameLength, 
+				drawinglayer::animation::AnimationEntryList& rAnimList,
+				double fFrameLength,
 				double fTextLength) const;
 		};
 	} // end of namespace attribute

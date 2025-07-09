@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -55,19 +55,19 @@ class ImplWallpaper;
 #ifndef ENUM_WALLPAPERSTYLE_DECLARED
 #define ENUM_WALLPAPERSTYLE_DECLARED
 
-enum WallpaperStyle 
+enum WallpaperStyle
 {
-	WALLPAPER_NULL, 
+	WALLPAPER_NULL,
 	WALLPAPER_TILE,
 	WALLPAPER_CENTER,
 	WALLPAPER_SCALE,
-	WALLPAPER_TOPLEFT,		
-	WALLPAPER_TOP,		
+	WALLPAPER_TOPLEFT,
+	WALLPAPER_TOP,
 	WALLPAPER_TOPRIGHT,
-	WALLPAPER_LEFT,								
+	WALLPAPER_LEFT,
 	WALLPAPER_RIGHT,
-	WALLPAPER_BOTTOMLEFT,	
-	WALLPAPER_BOTTOM,	
+	WALLPAPER_BOTTOMLEFT,
+	WALLPAPER_BOTTOM,
 	WALLPAPER_BOTTOMRIGHT,
 	WALLPAPER_APPLICATIONGRADIENT,          // defines a gradient that internally covers the whole application
                                             // and uses a color derived from the face color

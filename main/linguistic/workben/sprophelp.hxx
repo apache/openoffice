@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -72,37 +72,37 @@ class PropertyChgHelper :
 	PropertyChgHelper & operator = ( const PropertyChgHelper & );
 
 public:
-	PropertyChgHelper( 
+	PropertyChgHelper(
 			const Reference< XInterface > &rxSource,
 			Reference< XPropertySet > &rxPropSet,
 			const char *pPropNames[], USHORT nPropCount );
 	virtual ~PropertyChgHelper();
 
 	// XEventListener
-	virtual void SAL_CALL 
-		disposing( const EventObject& rSource ) 
+	virtual void SAL_CALL
+		disposing( const EventObject& rSource )
 			throw(RuntimeException);
 
 	// XPropertyChangeListener
-	virtual void SAL_CALL 
-		propertyChange( const PropertyChangeEvent& rEvt ) 
+	virtual void SAL_CALL
+		propertyChange( const PropertyChangeEvent& rEvt )
 			throw(RuntimeException) = 0;
 
 	// XLinguServiceEventBroadcaster
-    virtual sal_Bool SAL_CALL 
-		addLinguServiceEventListener( 
-				const Reference< XLinguServiceEventListener >& rxListener ) 
+    virtual sal_Bool SAL_CALL
+		addLinguServiceEventListener(
+				const Reference< XLinguServiceEventListener >& rxListener )
 			throw(RuntimeException);
-    virtual sal_Bool SAL_CALL 
-		removeLinguServiceEventListener( 
-				const Reference< XLinguServiceEventListener >& rxListener ) 
+    virtual sal_Bool SAL_CALL
+		removeLinguServiceEventListener(
+				const Reference< XLinguServiceEventListener >& rxListener )
 			throw(RuntimeException);
 
 	// non UNO functions
 	void 	AddAsPropListener();
 	void	RemoveAsPropListener();
 	void	LaunchEvent( const LinguServiceEvent& rEvt );
-	
+
 	const Sequence< OUString > &
 			GetPropNames() const	{ return aPropNames; }
 	const Reference< XPropertySet >	&
@@ -134,11 +134,11 @@ class PropertyHelper_Spell :
 	BOOL	bResIsSpellWithDigits;
 	BOOL	bResIsSpellCapitalization;
 
-	
+
 	// disallow use of copy-constructor and assignment-operator
 	PropertyHelper_Spell( const PropertyHelper_Spell & );
 	PropertyHelper_Spell & operator = ( const PropertyHelper_Spell & );
-		
+
 	void	SetDefault();
 
 public:
@@ -148,12 +148,12 @@ public:
 	virtual ~PropertyHelper_Spell();
 
 	// XPropertyChangeListener
-	virtual void SAL_CALL 
-		propertyChange( const PropertyChangeEvent& rEvt ) 
+	virtual void SAL_CALL
+		propertyChange( const PropertyChangeEvent& rEvt )
 			throw(RuntimeException);
-	
+
 	void	SetTmpPropVals( const PropertyValues &rPropVals );
-	
+
 	BOOL	IsGermanPreReform() const			{ return bResIsGermanPreReform; }
 	BOOL	IsIgnoreControlCharacters() const	{ return bResIsIgnoreControlCharacters; }
 	BOOL	IsUseDictionaryList() const			{ return bResIsUseDictionaryList; }

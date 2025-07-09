@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -131,7 +131,7 @@ namespace connectivity
         sal_Bool                        m_bEOF;
 
 		virtual const ORowSetValue& getValue(sal_Int32 columnIndex);
-		
+
 		// OPropertyArrayUsageHelper
 		virtual ::cppu::IPropertyArrayHelper* createArrayHelper( ) const;
 		// OPropertySetHelper
@@ -151,7 +151,7 @@ namespace connectivity
 		void setRows(const ORows& _rRows);
 
         // XServiceInfo
-		
+
 		static ::rtl::OUString getImplementationName_Static(  ) throw(::com::sun::star::uno::RuntimeException);
         static ::com::sun::star::uno::Sequence< ::rtl::OUString > getSupportedServiceNames_Static(  ) throw (::com::sun::star::uno::RuntimeException);
 
@@ -240,8 +240,8 @@ namespace connectivity
 		void setBestRowIdentifierMap();
 		void setVersionColumnsMap();
     public:
-		// some methods to get already defined ORowSetValues 
-		// this increase the reuse of ORowSetValues 
+		// some methods to get already defined ORowSetValues
+		// this increase the reuse of ORowSetValues
 		/// return an empty ORowSetValueDecorator
 		static ORowSetValueDecoratorRef getEmptyValue();
 		/// return an ORowSetValueDecorator with 0 as value

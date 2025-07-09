@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -93,7 +93,7 @@ static const ::rtl::OUString PROP_DIALOG_SHOW_RESULT  = ::rtl::OUString::createF
 static const ::rtl::OUString PROP_SELECTED_FILES      = ::rtl::OUString::createFromAscii("selected_files"     ); // [seq< OUString >] contains all user selected files (can be empty!)
 static const ::rtl::OUString PROP_MULTISELECTION_MODE = ::rtl::OUString::createFromAscii("multiselection_mode"); // [sal_Bool] true=ON, false=OFF
 static const ::rtl::OUString PROP_TITLE               = ::rtl::OUString::createFromAscii("title"              ); // [OUString]
-static const ::rtl::OUString PROP_FILENAME			  = ::rtl::OUString::createFromAscii("filename"           ); // [OUString]	 
+static const ::rtl::OUString PROP_FILENAME			  = ::rtl::OUString::createFromAscii("filename"           ); // [OUString]
 static const ::rtl::OUString PROP_DIRECTORY           = ::rtl::OUString::createFromAscii("directory"          ); // [OUString]
 static const ::rtl::OUString PROP_FEATURES            = ::rtl::OUString::createFromAscii("features"           ); // [sal_Int32]
 static const ::rtl::OUString PROP_TEMPLATE_DESCR	  = ::rtl::OUString::createFromAscii("templatedescription"); // [sal_Int32]
@@ -120,7 +120,7 @@ class VistaFilePickerImpl : private ::cppu::BaseMutex
                           , public  IVistaFilePickerInternalNotify
 {
     public:
-        
+
         //---------------------------------------------------------------------
         /** used for marshalling requests.
          *  Will be used to map requests to the right implementations.
@@ -150,75 +150,75 @@ class VistaFilePickerImpl : private ::cppu::BaseMutex
             E_ENABLE_CONTROL,
 			E_APPEND_FILTERGROUP
         };
-            
+
     public:
-        
+
         //---------------------------------------------------------------------
         // ctor/dtor - nothing special
         //---------------------------------------------------------------------
                  VistaFilePickerImpl();
         virtual ~VistaFilePickerImpl();
-    
+
         //---------------------------------------------------------------------
         // RequestHandler
         //---------------------------------------------------------------------
-    
+
         virtual void before();
         virtual void doRequest(const RequestRef& rRequest);
         virtual void after();
-    
+
         //---------------------------------------------------------------------
 		// IVistaFilePickerInternalNotify
 		//---------------------------------------------------------------------
         virtual void onAutoExtensionChanged (bool bChecked);
 		virtual bool onFileTypeChanged( UINT nTypeIndex );
-    
+
     private:
-        
+
         //---------------------------------------------------------------------
         /// implementation of request E_ADD_FILEPICKER_LISTENER
         void impl_sta_addFilePickerListener(const RequestRef& rRequest);
-    
+
         //---------------------------------------------------------------------
         /// implementation of request E_REMOVE_FILEPICKER_LISTENER
         void impl_sta_removeFilePickerListener(const RequestRef& rRequest);
-    
+
         //---------------------------------------------------------------------
         /// implementation of request E_APPEND_FILTER
         void impl_sta_appendFilter(const RequestRef& rRequest);
-    
+
         //---------------------------------------------------------------------
         /// implementation of request E_APPEND_FILTERGROUP
         void impl_sta_appendFilterGroup(const RequestRef& rRequest);
-        
+
 		//---------------------------------------------------------------------
         /// implementation of request E_SET_CURRENT_FILTER
         void impl_sta_setCurrentFilter(const RequestRef& rRequest);
-    
+
         //---------------------------------------------------------------------
         /// implementation of request E_GET_CURRENT_FILTER
         void impl_sta_getCurrentFilter(const RequestRef& rRequest);
-    
+
         //---------------------------------------------------------------------
         /// implementation of request E_CREATE_OPEN_DIALOG
         void impl_sta_CreateOpenDialog(const RequestRef& rRequest);
-        
+
         //---------------------------------------------------------------------
         /// implementation of request E_CREATE_SAVE_DIALOG
         void impl_sta_CreateSaveDialog(const RequestRef& rRequest);
-        
+
         //---------------------------------------------------------------------
         /// implementation of request E_SET_MULTISELECTION_MODE
         void impl_sta_SetMultiSelectionMode(const RequestRef& rRequest);
-        
+
         //---------------------------------------------------------------------
         /// implementation of request E_SET_TITLE
         void impl_sta_SetTitle(const RequestRef& rRequest);
-        
+
         //---------------------------------------------------------------------
         /// implementation of request E_SET_FILENAME
         void impl_sta_SetFileName(const RequestRef& rRequest);
-        
+
         //---------------------------------------------------------------------
         /// implementation of request E_SET_DIRECTORY
         void impl_sta_SetDirectory(const RequestRef& rRequest);
@@ -230,35 +230,35 @@ class VistaFilePickerImpl : private ::cppu::BaseMutex
 		//---------------------------------------------------------------------
         /// implementation of request E_SET_DEFAULT_NAME
         void impl_sta_SetDefaultName(const RequestRef& rRequest);
-        
+
         //---------------------------------------------------------------------
         /// implementation of request E_GET_SELECTED_FILES
         void impl_sta_getSelectedFiles(const RequestRef& rRequest);
-        
+
         //---------------------------------------------------------------------
         /// implementation of request E_SHOW_DIALOG_MODAL
         void impl_sta_ShowDialogModal(const RequestRef& rRequest);
-    
+
         //---------------------------------------------------------------------
         /// implementation of request E_SET_CONTROL_VALUE
         void impl_sta_SetControlValue(const RequestRef& rRequest);
-    
+
         //---------------------------------------------------------------------
         /// implementation of request E_GET_CONTROL_VALUE
         void impl_sta_GetControlValue(const RequestRef& rRequest);
-    
+
         //---------------------------------------------------------------------
         /// implementation of request E_SET_CONTROL_LABEL
         void impl_sta_SetControlLabel(const RequestRef& rRequest);
-    
+
         //---------------------------------------------------------------------
         /// implementation of request E_GET_CONTROL_LABEL
         void impl_sta_GetControlLabel(const RequestRef& rRequest);
-    
+
         //---------------------------------------------------------------------
         /// implementation of request E_ENABLE_CONTROL
         void impl_sta_EnableControl(const RequestRef& rRequest);
-    
+
         //---------------------------------------------------------------------
         /** create all needed (optional!) UI controls addressed by the field nFeatures.
          *  The given number nFeatures is used as a flag field. Use const values FEATURE_XXX
@@ -278,7 +278,7 @@ class VistaFilePickerImpl : private ::cppu::BaseMutex
          *          flag field(!) knows all features which must be enabled.
          */
 		void impl_sta_enableFeatures(::sal_Int32 nFeatures, ::sal_Int32 nTemplate);
-    
+
         //---------------------------------------------------------------------
         /** returns an interface, which can be used to customize the internally used
          *  COM dialog.
@@ -291,19 +291,19 @@ class VistaFilePickerImpl : private ::cppu::BaseMutex
          */
         TFileDialogCustomize impl_getCustomizeInterface();
         TFileDialog impl_getBaseDialogInterface();
-                           
+
         //---------------------------------------------------------------------
         /// fill filter list of internal used dialog.
         void impl_sta_setFiltersOnDialog();
-		
+
 		void impl_SetDefaultExtension( const rtl::OUString& currentFilter );
-        
+
    private:
-        
+
         //---------------------------------------------------------------------
         /// COM object representing a file open dialog
         TFileOpenDialog m_iDialogOpen;
-    
+
         //---------------------------------------------------------------------
         /// COM object representing a file save dialog
         TFileSaveDialog m_iDialogSave;
@@ -311,11 +311,11 @@ class VistaFilePickerImpl : private ::cppu::BaseMutex
         //---------------------------------------------------------------------
         /// knows the return state of the last COM call
         HRESULT m_hLastResult;
-        
+
         //---------------------------------------------------------------------
         /// @todo document me
         CFilterContainer m_lFilters;
-   
+
         //---------------------------------------------------------------------
         /** cache last selected list of files
          *  Because those lists must be retrieved directly after closing the dialog
@@ -324,13 +324,13 @@ class VistaFilePickerImpl : private ::cppu::BaseMutex
          *  and asking for results .-)
          */
         css::uno::Sequence< ::rtl::OUString > m_lLastFiles;
-        
+
         //---------------------------------------------------------------------
         /** help us to handle dialog events and provide them to interested office
          *  listener.
          */
         TFileDialogEvents m_iEventHandler;
-        
+
         //---------------------------------------------------------------------
         /// @todo document me
         ::sal_Bool m_bInExecute;
@@ -347,7 +347,7 @@ class VistaFilePickerImpl : private ::cppu::BaseMutex
 		::rtl::OUString m_sFilename;
 
         // Resource provider
-        CResourceProvider m_ResProvider;      
+        CResourceProvider m_ResProvider;
 };
 
 } // namespace vista

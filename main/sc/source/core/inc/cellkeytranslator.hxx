@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -47,18 +47,18 @@ struct ScCellKeyword
 typedef ::std::hash_map< String, ::std::list<ScCellKeyword>, ScStringHashCode, ::std::equal_to<String> > ScCellKeywordHashMap;
 
 /** Translate cell function keywords.
-    
+
     This class provides a convenient way to translate a string keyword used as
     a cell function argument.  Since Calc's built-in cell functions don't
     localize string keywords, this class is used mainly to deal with an Excel
     document where string names may be localized.
-    
+
     To use, simply call the
-    
+
        ScCellKeywordTranslator::transKeyword(...)
-    
+
     function.
-    
+
     Note that when the locale and/or the opcode is specified, the function
     tries to find a string with matching locale and/or opcode. But when it
     fails to find one that satisfies the specified locale and/or opcode, it
@@ -74,8 +74,8 @@ private:
     ScCellKeywordTranslator();
 
     void init();
-    void addToMap(const String& rKey, const sal_Char* pName, 
-                  const ::com::sun::star::lang::Locale& rLocale, 
+    void addToMap(const String& rKey, const sal_Char* pName,
+                  const ::com::sun::star::lang::Locale& rLocale,
                   OpCode eOpCode = ocNone);
     void addToMap(const TransItem* pItems, const ::com::sun::star::lang::Locale& rLocale);
 

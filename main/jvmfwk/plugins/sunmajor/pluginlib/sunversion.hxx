@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -26,7 +26,7 @@
 
 #include "rtl/ustring.hxx"
 
-namespace jfw_plugin { 
+namespace jfw_plugin {
 // Define OSL_DEBUG_LEVEL >= 2 to run a test when this lib is loaded
 
 /* SunVersion is used to compare java versions based on a string, as taken
@@ -41,7 +41,7 @@ namespace jfw_plugin {
 
    This class supports also a FreeBSD Java. This is currently necessary because
    it also has the vendor string "Sun Microsystems Inc.".
-   
+
    An object acts as holder for the version string. That string may be present
    even if the version could not be parsed. Then the version may not be compatible
    to a SUN Java version.
@@ -49,7 +49,7 @@ namespace jfw_plugin {
    An invalid object, that is, operator bool returns false, will always be
    the lower version in a comparison. If two invalid objects are compared
    then they are considered equal.
-   
+
    To test if the version is ok, that is this object can be compared to others,
    use the bool conversion operator.
  */
@@ -103,7 +103,7 @@ public:
 
     /** Test if the version is compatible tu SUN's versioning scheme
      */
-    operator bool (); 
+    operator bool ();
 
     /** Will always contain a value if the object has been constructed with
         a version string.
@@ -122,6 +122,6 @@ protected:
     PreRelease getPreRelease(const char *szRel);
 };
 
-} 
+}
 
 #endif // INCLUDED_JVMACCESS_SUNVERSION_HXX

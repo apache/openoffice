@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -38,12 +38,12 @@ namespace stoc_services
 {
     // typeconv
     ::com::sun::star::uno::Reference< ::com::sun::star::uno::XInterface > SAL_CALL TypeConverter_Impl_CreateInstance(
-	    const ::com::sun::star::uno::Reference< ::com::sun::star::uno::XComponentContext > & ) 
+	    const ::com::sun::star::uno::Reference< ::com::sun::star::uno::XComponentContext > & )
 	throw( ::com::sun::star::uno::RuntimeException );
     ::com::sun::star::uno::Sequence< ::rtl::OUString > tcv_getSupportedServiceNames();
     ::rtl::OUString tcv_getImplementationName();
 
-    namespace ExternalUriReferenceTranslator 
+    namespace ExternalUriReferenceTranslator
     {
 	com::sun::star::uno::Reference< com::sun::star::uno::XInterface > SAL_CALL create(
 		com::sun::star::uno::Reference< com::sun::star::uno::XComponentContext > const & context)
@@ -52,7 +52,7 @@ namespace stoc_services
 	com::sun::star::uno::Sequence< rtl::OUString > SAL_CALL getSupportedServiceNames();
     }
 
-    namespace UriReferenceFactory 
+    namespace UriReferenceFactory
     {
 	com::sun::star::uno::Reference< com::sun::star::uno::XInterface > SAL_CALL create(
 		com::sun::star::uno::Reference< com::sun::star::uno::XComponentContext >  const & context)
@@ -61,7 +61,7 @@ namespace stoc_services
 	com::sun::star::uno::Sequence< rtl::OUString > SAL_CALL getSupportedServiceNames();
     }
 
-    namespace UriSchemeParser_vndDOTsunDOTstarDOTexpand 
+    namespace UriSchemeParser_vndDOTsunDOTstarDOTexpand
     {
 	::com::sun::star::uno::Reference< ::com::sun::star::uno::XInterface > SAL_CALL create(
 		::com::sun::star::uno::Reference< ::com::sun::star::uno::XComponentContext > const &)
@@ -70,7 +70,7 @@ namespace stoc_services
 	::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames();
     }
 
-    namespace UriSchemeParser_vndDOTsunDOTstarDOTscript 
+    namespace UriSchemeParser_vndDOTsunDOTstarDOTscript
     {
 	com::sun::star::uno::Reference< com::sun::star::uno::XInterface > SAL_CALL create(
 		com::sun::star::uno::Reference< com::sun::star::uno::XComponentContext > const &)
@@ -79,7 +79,7 @@ namespace stoc_services
 	com::sun::star::uno::Sequence< rtl::OUString > SAL_CALL getSupportedServiceNames();
     }
 
-    namespace VndSunStarPkgUrlReferenceFactory 
+    namespace VndSunStarPkgUrlReferenceFactory
     {
 	com::sun::star::uno::Reference< com::sun::star::uno::XInterface > SAL_CALL create(
 		com::sun::star::uno::Reference< com::sun::star::uno::XComponentContext > const & context)

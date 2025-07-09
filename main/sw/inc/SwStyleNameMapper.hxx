@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -39,8 +39,8 @@
  * These UI names are loaded from the resource files on demand.
  *
  * It also holds all information about the 'Programmatic' names of styles
- * which remain static (and are hardcoded in the corresponding cxx file) 
- * for all languages. 
+ * which remain static (and are hardcoded in the corresponding cxx file)
+ * for all languages.
  *
  * This class also provides static functions which can be used for the
  * following conversions:
@@ -54,7 +54,7 @@
  *
  * The relationship of these tables to the style families is as follows:
  *
- * 1. Paragraph contains the Text, Lists, Extra, Register, Doc and HTML 
+ * 1. Paragraph contains the Text, Lists, Extra, Register, Doc and HTML
  *    name arrays.
  * 2. Character contains the ChrFmt and HTMLChrFmt name arrays.
  * 3. Page contains the PageDesc name array.
@@ -92,8 +92,8 @@ class SwStyleNameMapper
 
 protected:
 	// UI Name tables
-	static SvStringsDtor	*pTextUINameArray,		
-							*pListsUINameArray,		
+	static SvStringsDtor	*pTextUINameArray,
+							*pListsUINameArray,
 							*pExtraUINameArray,
 							*pRegisterUINameArray,
 							*pDocUINameArray,
@@ -104,8 +104,8 @@ protected:
 							*pPageDescUINameArray,
 							*pNumRuleUINameArray,
 	// Programmatic Name tables
-							*pTextProgNameArray,			
-							*pListsProgNameArray,		
+							*pTextProgNameArray,
+							*pListsProgNameArray,
 							*pExtraProgNameArray,
 							*pRegisterProgNameArray,
 							*pDocProgNameArray,
@@ -128,12 +128,12 @@ protected:
 							*pFrameProgMap,
 							*pNumRuleProgMap;
 
-    static SvStringsDtor* NewUINameArray( SvStringsDtor*&, 
-									  sal_uInt16 nStt, 
+    static SvStringsDtor* NewUINameArray( SvStringsDtor*&,
+									  sal_uInt16 nStt,
 									  sal_uInt16 nEnd );
 
-    static SvStringsDtor* NewProgNameArray( SvStringsDtor*&, 
-										  const SwTableEntry *pTable, 
+    static SvStringsDtor* NewProgNameArray( SvStringsDtor*&,
+										  const SwTableEntry *pTable,
 										  sal_uInt8 nCount);
 
 	static void fillNameFromId ( sal_uInt16 nId, String &rName, sal_Bool bProgName );

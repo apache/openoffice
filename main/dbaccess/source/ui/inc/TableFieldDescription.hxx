@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -59,9 +59,9 @@ namespace dbaui
 		::rtl::OUString				m_aFieldName;		// column
 		::rtl::OUString				m_aFieldAlias;	// column alias
 		::rtl::OUString				m_aFunctionName;	// enth"alt den Funktionsnamen, nur wenn m_eFunctionType != FKT_NONE gesetzt
-		
+
 		Window*						m_pTabWindow;
-		
+
 		sal_Int32					m_eDataType;
 		sal_Int32					m_eFunctionType;
 		ETableFieldType				m_eFieldType;
@@ -81,7 +81,7 @@ namespace dbaui
 		~OTableFieldDesc();
 
 		inline sal_Bool			IsEmpty() const;
-								
+
         OTableFieldDesc&        operator=( const OTableFieldDesc& _aField );
 		sal_Bool				operator==( const OTableFieldDesc& rDesc );
 
@@ -104,7 +104,7 @@ namespace dbaui
 		void					SetFieldIndex( sal_Int32 nFieldIndex ) { m_nIndex = nFieldIndex; }
 		void					SetFunctionType( sal_Int32 eTyp )	{ m_eFunctionType = eTyp; }
 		void					SetColumnId(sal_uInt16 _nColumnId) { m_nColumnId = _nColumnId; }
-		
+
 
 		::rtl::OUString			GetField()			const { return m_aFieldName;}
 		::rtl::OUString			GetFieldAlias()		const { return m_aFieldAlias;}
@@ -128,8 +128,8 @@ namespace dbaui
 		inline sal_Bool			isCondition()			const { return (m_eFunctionType & FKT_CONDITION) == FKT_CONDITION;	}
 		inline sal_Bool			isNumericOrAggreateFunction()	const { return isNumeric() || isAggreateFunction();	}
 
-		sal_Bool				HasCriteria()		const 
-		{ 
+		sal_Bool				HasCriteria()		const
+		{
 			::std::vector< ::rtl::OUString>::const_iterator aIter = m_aCriteria.begin();
             ::std::vector< ::rtl::OUString>::const_iterator aEnd = m_aCriteria.end();
 			for(;aIter != aEnd;++aIter)

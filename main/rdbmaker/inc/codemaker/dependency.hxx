@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -53,7 +53,7 @@ struct TypeUsing
 {
 	TypeUsing(const ::rtl::OString& type, sal_uInt16 use)
 		: m_type(type)
-		, m_use(use) 
+		, m_use(use)
 		{}
 
 	::rtl::OString 	m_type;
@@ -79,36 +79,36 @@ typedef	::std::set< TypeUsing, LessTypeUsing > TypeUsingSet;
 
 #if (defined( _MSC_VER ) && ( _MSC_VER < 1200 ))
 typedef	::std::__hash_map__
-<	
-	::rtl::OString, 
-	TypeUsingSet, 
-	HashString, 
-	EqualString, 
+<
+	::rtl::OString,
+	TypeUsingSet,
+	HashString,
+	EqualString,
 	NewAlloc
 > DependencyMap;
 
 typedef	::std::__hash_map__
-<	
-	::rtl::OString, 
-	sal_uInt16, 
-	HashString, 
+<
+	::rtl::OString,
+	sal_uInt16,
+	HashString,
 	EqualString,
 	NewAlloc
 > GenerationMap;
 #else
 typedef	::std::hash_map
-<	
-	::rtl::OString, 
-	TypeUsingSet, 
-	HashString, 
+<
+	::rtl::OString,
+	TypeUsingSet,
+	HashString,
 	EqualString
 > DependencyMap;
 
 typedef	::std::hash_map
-<	
-	::rtl::OString, 
-	sal_uInt16, 
-	HashString, 
+<
+	::rtl::OString,
+	sal_uInt16,
+	HashString,
 	EqualString
 > GenerationMap;
 
@@ -123,7 +123,7 @@ struct TypeDependencyImpl
 	sal_Int32		m_refCount;
 	DependencyMap	m_dependencies;
 	GenerationMap	m_generatedTypes;
-};	
+};
 
 class TypeDependency
 {
@@ -162,5 +162,5 @@ protected:
 };
 
 sal_Bool checkTypeDependencies(TypeManager& typeMgr, TypeDependency& dependencies, const ::rtl::OString& type, sal_Bool bDepend = sal_False);
-	
+
 #endif // _CODEMAKER_DEPENDENCY_HXX_

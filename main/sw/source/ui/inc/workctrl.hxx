@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -141,7 +141,7 @@ class SwScrollNaviPopup : public SfxPopupWindow
 	sal_uInt16			nBackId;
 
     void            ApplyImageList();
-    
+
     using Window::GetQuickHelpText;
 
 protected:
@@ -153,7 +153,7 @@ public:
 		~SwScrollNaviPopup();
 
 	static String			GetQuickHelpText(sal_Bool bNext);
-	
+
 	virtual SfxPopupWindow* Clone() const;
     void                GrabFocus(){aToolBox.GrabFocus();}
 };
@@ -175,7 +175,7 @@ class SwNaviImageButton : public ImageButton
 	protected:
 	    DECL_LINK( PopupModeEndHdl, void * );
 	    DECL_LINK( ClosePopupWindow, SfxPopupWindow * );
-        
+
         virtual void    Click();
         virtual void    DataChanged( const DataChangedEvent& rDCEvt );
         void            SetPopupWindow( SfxPopupWindow* pWindow );
@@ -199,7 +199,7 @@ class SwHlpImageButton : public ImageButton
 
 };
 /* -----------------26.11.2002 09:25-----------------
- * 
+ *
  * --------------------------------------------------*/
 class SwPreviewZoomControl : public SfxToolBoxControl
 {

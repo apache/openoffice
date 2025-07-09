@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -71,7 +71,7 @@ public:
     virtual bool hasPasswordHash(ScPasswordHash eHash) const = 0;
     virtual void setPassword(const String& aPassText) = 0;
     virtual ::com::sun::star::uno::Sequence<sal_Int8> getPasswordHash(ScPasswordHash eHash) const = 0;
-    virtual void setPasswordHash(const ::com::sun::star::uno::Sequence<sal_Int8>& aPassword, 
+    virtual void setPasswordHash(const ::com::sun::star::uno::Sequence<sal_Int8>& aPassword,
                                  ScPasswordHash eHash = PASSHASH_OOO) = 0;
     virtual bool verifyPassword(const String& aPassText) const = 0;
 };
@@ -96,15 +96,15 @@ public:
     virtual bool isProtected() const;
     virtual bool isProtectedWithPass() const;
     virtual void setProtected(bool bProtected);
-            
+
     virtual bool isPasswordEmpty() const;
     virtual bool hasPasswordHash(ScPasswordHash eHash) const;
     virtual void setPassword(const String& aPassText);
     virtual ::com::sun::star::uno::Sequence<sal_Int8> getPasswordHash(ScPasswordHash eHash) const;
-    virtual void setPasswordHash(const ::com::sun::star::uno::Sequence<sal_Int8>& aPassword, 
+    virtual void setPasswordHash(const ::com::sun::star::uno::Sequence<sal_Int8>& aPassword,
                                  ScPasswordHash eHash = PASSHASH_OOO);
     virtual bool verifyPassword(const String& aPassText) const;
-    
+
     bool isOptionEnabled(Option eOption) const;
     void setOption(Option eOption, bool bEnabled);
 
@@ -115,7 +115,7 @@ private:
 // ============================================================================
 
 /** sheet protection state container
-    
+
     This class stores sheet's protection state: 1) whether the protection
     is on, 2) password and/or password hash, and 3) any associated
     protection options.  This class is also used as a protection state
@@ -153,15 +153,15 @@ public:
     virtual bool isProtected() const;
     virtual bool isProtectedWithPass() const;
     virtual void setProtected(bool bProtected);
-            
+
     virtual bool isPasswordEmpty() const;
     virtual bool hasPasswordHash(ScPasswordHash eHash) const;
     virtual void setPassword(const String& aPassText);
     virtual ::com::sun::star::uno::Sequence<sal_Int8> getPasswordHash(ScPasswordHash eHash) const;
-    virtual void setPasswordHash(const ::com::sun::star::uno::Sequence<sal_Int8>& aPassword, 
+    virtual void setPasswordHash(const ::com::sun::star::uno::Sequence<sal_Int8>& aPassword,
                                  ScPasswordHash eHash = PASSHASH_OOO);
     virtual bool verifyPassword(const String& aPassText) const;
-    
+
     bool isOptionEnabled(Option eOption) const;
     void setOption(Option eOption, bool bEnabled);
 

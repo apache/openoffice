@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -28,10 +28,10 @@
 #include "TransformerContext.hxx"
 
 
-class XMLPersAttrListTContext : public XMLTransformerContext 
+class XMLPersAttrListTContext : public XMLTransformerContext
 {
 
-	::com::sun::star::uno::Reference< 
+	::com::sun::star::uno::Reference<
 		::com::sun::star::xml::sax::XAttributeList > m_xAttrList;
 	::rtl::OUString m_aElemQName;
 	sal_uInt16 m_nActionMap;
@@ -47,22 +47,22 @@ public:
 	// starts. Namespace processing has been done already.
 	// Note that virtual methods cannot be used inside constructors. Use
 	// StartElement instead if this is required.
-	XMLPersAttrListTContext( XMLTransformerBase& rTransformer, 
+	XMLPersAttrListTContext( XMLTransformerBase& rTransformer,
 						   const ::rtl::OUString& rQName );
 
 	// attr list persistence + attribute processing
-	XMLPersAttrListTContext( XMLTransformerBase& rTransformer, 
+	XMLPersAttrListTContext( XMLTransformerBase& rTransformer,
 						   const ::rtl::OUString& rQName,
 		   				   sal_uInt16 nActionMap );
 
 	// attr list persistence + renaming
-	XMLPersAttrListTContext( XMLTransformerBase& rTransformer, 
+	XMLPersAttrListTContext( XMLTransformerBase& rTransformer,
 						   const ::rtl::OUString& rQName,
 		   				   sal_uInt16 nPrefix,
 		   				   ::xmloff::token::XMLTokenEnum eToken );
 
 	// attr list persistence + renaming + attribute processing
-	XMLPersAttrListTContext( XMLTransformerBase& rTransformer, 
+	XMLPersAttrListTContext( XMLTransformerBase& rTransformer,
 						   const ::rtl::OUString& rQName,
 		   				   sal_uInt16 nPrefix,
 		   				   ::xmloff::token::XMLTokenEnum eToken,
@@ -101,7 +101,7 @@ public:
 
 	const ::rtl::OUString& GetExportQName() const { return m_aElemQName; }
 
-	void AddAttribute( sal_uInt16 nAPrefix, 
+	void AddAttribute( sal_uInt16 nAPrefix,
 		::xmloff::token::XMLTokenEnum eAToken,
 	   	::xmloff::token::XMLTokenEnum eVToken );
 

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -461,16 +461,16 @@ public:
 				/// Switch to no endian swapping and write 0xfeff
 	sal_Bool		StartWritingUnicodeText();
 
-                /** If eReadBomCharSet==RTL_TEXTENCODING_DONTKNOW: read 16bit, 
-                    if 0xfeff do nothing (UTF-16), if 0xfffe switch endian 
-                    swapping (UTF-16), if 0xefbb or 0xbbef read another byte 
-                    and check for UTF-8. If no UTF-* BOM was detected put all 
-                    read bytes back. This means that if 2 bytes were read it 
-                    was an UTF-16 BOM, if 3 bytes were read it was an UTF-8 
+                /** If eReadBomCharSet==RTL_TEXTENCODING_DONTKNOW: read 16bit,
+                    if 0xfeff do nothing (UTF-16), if 0xfffe switch endian
+                    swapping (UTF-16), if 0xefbb or 0xbbef read another byte
+                    and check for UTF-8. If no UTF-* BOM was detected put all
+                    read bytes back. This means that if 2 bytes were read it
+                    was an UTF-16 BOM, if 3 bytes were read it was an UTF-8
                     BOM. There is no UTF-7, UTF-32 or UTF-EBCDIC BOM detection!
 
-                    If eReadBomCharSet!=RTL_TEXTENCODING_DONTKNOW: only read a 
-                    BOM of that encoding and switch endian swapping if UTF-16 
+                    If eReadBomCharSet!=RTL_TEXTENCODING_DONTKNOW: only read a
+                    BOM of that encoding and switch endian swapping if UTF-16
                     and 0xfffe.
                  */
     sal_Bool		StartReadingUnicodeText( rtl_TextEncoding eReadBomCharSet );

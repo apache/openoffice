@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -51,12 +51,12 @@ namespace basegfx
 	*/
 	class BASEGFX_DLLPUBLIC BColor : public B3DTuple
 	{
-	public:					
+	public:
 		/**	Create a Color with red, green and blue components from [0.0 to 1.0]
 
         	The color is initialized to (0.0, 0.0, 0.0)
 		*/
-		BColor() 
+		BColor()
 		:	B3DTuple()
 		{}
 
@@ -67,7 +67,7 @@ namespace basegfx
 			@param fBlue
 			These parameters are used to initialize the red, green and blue intensities of the color
 		*/
-		BColor(double fRed, double fGreen, double fBlue) 
+		BColor(double fRed, double fGreen, double fBlue)
 		:	B3DTuple(fRed, fGreen, fBlue)
 		{}
 
@@ -76,7 +76,7 @@ namespace basegfx
 			@param fLuminosity
 			The parameter is used to initialize the red, green and blue intensities of the color
 		*/
-		BColor(double fLuminosity) 
+		BColor(double fLuminosity)
 		:	B3DTuple(fLuminosity, fLuminosity, fLuminosity)
 		{}
 
@@ -85,18 +85,18 @@ namespace basegfx
 			@param rVec
 			The Color which will be copied.
 		*/
-		BColor(const BColor& rVec) 
+		BColor(const BColor& rVec)
 		:	B3DTuple(rVec)
 		{}
 
 		/** constructor with tuple to allow copy-constructing
 			from B3DTuple-based classes
 		*/
-		BColor(const ::basegfx::B3DTuple& rTuple) 
+		BColor(const ::basegfx::B3DTuple& rTuple)
 		:	B3DTuple(rTuple)
 		{}
 
-		~BColor() 
+		~BColor()
 		{}
 
 		// data access read
@@ -111,33 +111,33 @@ namespace basegfx
 
 		/** *=operator to allow usage from BColor, too
 		*/
-		BColor& operator*=( const BColor& rPnt ) 
-		{ 
+		BColor& operator*=( const BColor& rPnt )
+		{
 			mfX *= rPnt.mfX;
-			mfY *= rPnt.mfY; 
-			mfZ *= rPnt.mfZ; 
-			return *this; 
+			mfY *= rPnt.mfY;
+			mfZ *= rPnt.mfZ;
+			return *this;
 		}
 
 		/** *=operator to allow usage from BColor, too
 		*/
-		BColor& operator*=(double t) 
-		{ 
-			mfX *= t; 
-			mfY *= t; 
-			mfZ *= t; 
-			return *this; 
+		BColor& operator*=(double t)
+		{
+			mfX *= t;
+			mfY *= t;
+			mfZ *= t;
+			return *this;
 		}
 
 		/** assignment operator to allow assigning the results
 			of B3DTuple calculations
 		*/
-		BColor& operator=( const ::basegfx::B3DTuple& rVec ) 
-		{ 
+		BColor& operator=( const ::basegfx::B3DTuple& rVec )
+		{
 			mfX = rVec.getX();
-			mfY = rVec.getY(); 
-			mfZ = rVec.getZ(); 
-			return *this; 
+			mfY = rVec.getY();
+			mfZ = rVec.getZ();
+			return *this;
 		}
 
 		// blend to another color using luminance
@@ -199,7 +199,7 @@ namespace basegfx
             mfX = basegfx::clamp(mfX, 0.0, 1.0);
             mfY = basegfx::clamp(mfY, 0.0, 1.0);
             mfZ = basegfx::clamp(mfZ, 0.0, 1.0);
-            return *this; 
+            return *this;
         }
 
         BColor& invert()
@@ -207,7 +207,7 @@ namespace basegfx
             mfX = 1.0 - mfX;
             mfY = 1.0 - mfY;
             mfZ = 1.0 - mfZ;
-            return *this; 
+            return *this;
         }
 
 		static const BColor& getEmptyBColor()

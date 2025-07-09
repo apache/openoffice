@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -66,14 +66,14 @@ namespace drawinglayer
 	namespace primitive3d
 	{
         /** BasePrimitive3D class
-        
+
             Baseclass for all C++ implementations of com::sun::star::graphic::XPrimitive2D
 
             The description/functionality is identical with the 2D case in baseprimitive2d.hxx,
             please see there for detailed information.
 
             Current Basic 3D Primitives are:
-            
+
             - PolygonHairlinePrimitive3D (for 3D hairlines)
             - PolyPolygonMaterialPrimitive3D (for 3D filled plane polygons)
 
@@ -138,7 +138,7 @@ namespace drawinglayer
 	namespace primitive3d
 	{
         /** BufferedDecompositionPrimitive3D class
-        
+
             Baseclass for all C++ implementations of com::sun::star::graphic::XPrimitive2D
 
             The description/functionality is identical with the 2D case in baseprimitive2d.hxx,
@@ -168,10 +168,10 @@ namespace drawinglayer
 			// constructor
 			BufferedDecompositionPrimitive3D();
 
-            /** The getDecomposition default implementation will on demand use create3DDecomposition() if 
-                maBuffered3DDecomposition is empty. It will set maBuffered3DDecomposition to this obtained decomposition 
-                to buffer it. If the decomposition is also ViewInformation-dependent, this method needs to be 
-                overloaded and the ViewInformation for the last decomposition needs to be remembered, too, and 
+            /** The getDecomposition default implementation will on demand use create3DDecomposition() if
+                maBuffered3DDecomposition is empty. It will set maBuffered3DDecomposition to this obtained decomposition
+                to buffer it. If the decomposition is also ViewInformation-dependent, this method needs to be
+                overloaded and the ViewInformation for the last decomposition needs to be remembered, too, and
                 be used in the next call to decide if the buffered decomposition may be reused or not.
              */
 			virtual Primitive3DSequence get3DDecomposition(const geometry::ViewInformation3D& rViewInformation) const;

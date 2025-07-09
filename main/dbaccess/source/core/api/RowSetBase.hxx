@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -92,7 +92,7 @@
 #include <functional>
 
 
-namespace com { namespace sun { namespace star { 
+namespace com { namespace sun { namespace star {
 	namespace sdb { struct RowChangeEvent; }
 	namespace lang { struct Locale; }
 } } }
@@ -225,7 +225,7 @@ namespace dbaccess
 		const connectivity::ORowSetValue& getValue(sal_Int32 columnIndex);
         // the cache has to be checked before calling this method
         const connectivity::ORowSetValue& impl_getValue(sal_Int32 columnIndex);
-		// sets the current and the bookmark 
+		// sets the current and the bookmark
 		void setCurrentRow( sal_Bool _bMoved, sal_Bool _bDoNotify, const ORowSetRow& _rOldValues, ::osl::ResettableMutexGuard& _rGuard);
 		void checkPositioningAllowed() throw(::com::sun::star::sdbc::SQLException, ::com::sun::star::uno::RuntimeException);
 		// checks  if the cache is null
@@ -409,7 +409,7 @@ namespace dbaccess
 			// a method of ORowSetBase (or derivees)
 		sal_Bool		m_bWasNew;
 		sal_Bool		m_bWasModified;
-        
+
 #ifdef DBG_UTIL
 		sal_Bool		m_bNotifyCalled;
 #endif
@@ -451,7 +451,7 @@ namespace dbaccess
         */
         ::std::vector<sal_Int32>& getChangedColumns() const;
         ::std::vector<com::sun::star::uno::Any>& getChangedBookmarks() const;
-        
+
 	};
 
 } // end of namespace

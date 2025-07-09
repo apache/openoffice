@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 #ifndef _BGFX_COLOR_BCOLORMODIFIER_HXX
@@ -40,8 +40,8 @@ namespace basegfx
         other computation based on the given source color and the local
         algorithm to apply.
 
-        This base implementation defines the abstract base class. Every 
-        derivation offers another color blending effect, when needed with 
+        This base implementation defines the abstract base class. Every
+        derivation offers another color blending effect, when needed with
         parameters for that blending defined as members.
 
         As long as aw080 is not applied, an operator== is needed to implement
@@ -67,15 +67,15 @@ namespace basegfx
         BColorModifier() {}
 
     public:
-        // no one should directly destroy it; all incarnations should be 
+        // no one should directly destroy it; all incarnations should be
         // handled in a boost::shared_ptr of type BColorModifierSharedPtr
         virtual ~BColorModifier();
 
         // compare operator
         virtual bool operator==(const BColorModifier& rCompare) const = 0;
-        bool operator!=(const BColorModifier& rCompare) const 
-        { 
-            return !(operator==(rCompare)); 
+        bool operator!=(const BColorModifier& rCompare) const
+        {
+            return !(operator==(rCompare));
         }
 
         // compute modified color
@@ -98,7 +98,7 @@ namespace basegfx
     private:
     protected:
     public:
-        BColorModifier_gray() 
+        BColorModifier_gray()
         :   BColorModifier()
         {
         }
@@ -126,7 +126,7 @@ namespace basegfx
     private:
     protected:
     public:
-        BColorModifier_invert() 
+        BColorModifier_invert()
         :   BColorModifier()
         {
         }
@@ -158,7 +158,7 @@ namespace basegfx
     private:
     protected:
     public:
-        BColorModifier_luminance_to_alpha() 
+        BColorModifier_luminance_to_alpha()
         :   BColorModifier()
         {
         }
@@ -180,7 +180,7 @@ namespace basegfx
     /** replace color
 
         does not use the source color at all, but always returns the
-        given color, replacing everything. Useful e.g. for unified shadow 
+        given color, replacing everything. Useful e.g. for unified shadow
         creation
     */
     class BASEGFX_DLLPUBLIC BColorModifier_replace : public BColorModifier
@@ -190,7 +190,7 @@ namespace basegfx
 
     protected:
     public:
-        BColorModifier_replace(const ::basegfx::BColor& rBColor) 
+        BColorModifier_replace(const ::basegfx::BColor& rBColor)
         :   BColorModifier(),
             maBColor(rBColor)
         {
@@ -216,7 +216,7 @@ namespace basegfx
     /** interpolate color
 
         returns an interpolated color mixed by the given value (f) in the range
-        [0.0 .. 1.0] and the given color (col) as follows: 
+        [0.0 .. 1.0] and the given color (col) as follows:
 
         col * (1 - f) + aSourceColor * f
     */
@@ -228,7 +228,7 @@ namespace basegfx
 
     protected:
     public:
-        BColorModifier_interpolate(const ::basegfx::BColor& rBColor, double fValue) 
+        BColorModifier_interpolate(const ::basegfx::BColor& rBColor, double fValue)
         :   BColorModifier(),
             maBColor(rBColor),
             mfValue(fValue)
@@ -265,7 +265,7 @@ namespace basegfx
 
     protected:
     public:
-        BColorModifier_black_and_white(double fValue) 
+        BColorModifier_black_and_white(double fValue)
         :   BColorModifier(),
             mfValue(fValue)
         {
@@ -407,14 +407,14 @@ namespace basegfx
         // from back to front (the newest first)
         ::basegfx::BColor getModifiedColor(const ::basegfx::BColor& rSource) const;
 
-        void push(const BColorModifierSharedPtr& rNew) 
-        { 
-            maBColorModifiers.push_back(rNew); 
+        void push(const BColorModifierSharedPtr& rNew)
+        {
+            maBColorModifiers.push_back(rNew);
         }
 
-        void pop() 
-        { 
-            maBColorModifiers.pop_back(); 
+        void pop()
+        {
+            maBColorModifiers.pop_back();
         }
     };
 } // end of namespace basegfx

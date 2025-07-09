@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -49,8 +49,8 @@ namespace svx
 class FindTextFieldControl : public ComboBox
 {
 public:
-    FindTextFieldControl( Window* pParent, WinBits nStyle, 
-        css::uno::Reference< css::frame::XFrame >& xFrame, 
+    FindTextFieldControl( Window* pParent, WinBits nStyle,
+        css::uno::Reference< css::frame::XFrame >& xFrame,
         css::uno::Reference< css::lang::XMultiServiceFactory >& xServiceManager );
     virtual ~FindTextFieldControl();
 
@@ -91,7 +91,7 @@ private:
 
 };
 
-class FindTextToolbarController : public svt::ToolboxController, 
+class FindTextToolbarController : public svt::ToolboxController,
                                   public css::lang::XServiceInfo
 {
 public:
@@ -124,7 +124,7 @@ public:
 
     // XToolbarController
     virtual void SAL_CALL execute( sal_Int16 KeyModifier ) throw ( css::uno::RuntimeException);
-    virtual css::uno::Reference< css::awt::XWindow > SAL_CALL createItemWindow( const css::uno::Reference< css::awt::XWindow >& Parent ) throw ( css::uno::RuntimeException ); 
+    virtual css::uno::Reference< css::awt::XWindow > SAL_CALL createItemWindow( const css::uno::Reference< css::awt::XWindow >& Parent ) throw ( css::uno::RuntimeException );
 
     // XStatusListener
     virtual void SAL_CALL statusChanged( const css::frame::FeatureStateEvent& Event ) throw ( css::uno::RuntimeException );
@@ -140,7 +140,7 @@ private:
 
 };
 
-class DownSearchToolboxController : public svt::ToolboxController, 
+class DownSearchToolboxController : public svt::ToolboxController,
                                     public css::lang::XServiceInfo
 {
 public:
@@ -179,7 +179,7 @@ public:
 
 };
 
-class UpSearchToolboxController : public svt::ToolboxController, 
+class UpSearchToolboxController : public svt::ToolboxController,
                                   public css::lang::XServiceInfo
 {
 public:
@@ -199,7 +199,7 @@ public:
 
     static ::rtl::OUString getImplementationName_Static() throw()
     {
-        return ::rtl::OUString(RTL_CONSTASCII_USTRINGPARAM( "com.sun.star.svx.UpSearchToolboxController" ));	
+        return ::rtl::OUString(RTL_CONSTASCII_USTRINGPARAM( "com.sun.star.svx.UpSearchToolboxController" ));
     }
 
     static css::uno::Sequence< ::rtl::OUString >  getSupportedServiceNames_Static() throw();
@@ -220,9 +220,9 @@ public:
 
 // protocol handler for "vnd.sun.star.findbar:*" URLs
 // The dispatch object will be used for shortcut commands for findbar
-class FindbarDispatcher : public css::lang::XServiceInfo, 
-                          public css::lang::XInitialization, 
-                          public css::frame::XDispatchProvider, 
+class FindbarDispatcher : public css::lang::XServiceInfo,
+                          public css::lang::XInitialization,
+                          public css::frame::XDispatchProvider,
                           public css::frame::XDispatch,
                           public ::cppu::OWeakObject
 {

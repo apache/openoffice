@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -47,7 +47,7 @@ class WW8PropertiesReference : public writerfilter::Reference<Properties>
     WW8PropertySet::Pointer_t mpPropSet;
 
 public:
-    
+
     WW8PropertiesReference(WW8PropertySet::Pointer_t pPropSet)
     : mpPropSet(pPropSet)
     {
@@ -74,21 +74,21 @@ public:
     }
 
     virtual void resolve(Table & rHandler);
-    
+
     virtual string getType() const;
 };
 
-class WW8BinaryObjReference : public writerfilter::Reference<BinaryObj>, 
+class WW8BinaryObjReference : public writerfilter::Reference<BinaryObj>,
                               public WW8StructBase
 {
 public:
     typedef boost::shared_ptr<WW8BinaryObjReference> Pointer_t;
-    WW8BinaryObjReference(WW8Stream & rStream, sal_uInt32 nOffset, 
-                          sal_uInt32 nCount);    
-    WW8BinaryObjReference(WW8StructBase & rParent, sal_uInt32 nOffset, 
-                          sal_uInt32 nCount); 
-    WW8BinaryObjReference(WW8StructBase * pParent, sal_uInt32 nOffset, 
-                          sal_uInt32 nCount); 
+    WW8BinaryObjReference(WW8Stream & rStream, sal_uInt32 nOffset,
+                          sal_uInt32 nCount);
+    WW8BinaryObjReference(WW8StructBase & rParent, sal_uInt32 nOffset,
+                          sal_uInt32 nCount);
+    WW8BinaryObjReference(WW8StructBase * pParent, sal_uInt32 nOffset,
+                          sal_uInt32 nCount);
     WW8BinaryObjReference(WW8StructBase * pParent);
 
     WW8BinaryObjReference()
@@ -117,7 +117,7 @@ class WW8Sprm : public Sprm
 public:
     WW8Sprm(WW8Property::Pointer_t pProperty)
     : mpProperty(pProperty)
-    {        
+    {
     }
 
     WW8Sprm(WW8BinaryObjReference::Pointer_t pBinary)
@@ -144,7 +144,7 @@ public:
     virtual writerfilter::Reference<Properties>::Pointer_t getProps();
     virtual Kind getKind();
 
-    virtual sal_uInt32 getId() const;    
+    virtual sal_uInt32 getId() const;
     virtual string toString() const;
     virtual string getName() const;
 
@@ -308,7 +308,7 @@ public:
 WW8Value::Pointer_t createValue(writerfilter::Reference<BinaryObj>::Pointer_t rRef);
 
 Sprm::Kind SprmKind(sal_uInt32 sprmCode);
- 
+
 }}
 
 #endif // INCLUDED_WW8_RESOURCE_MODEL_IMPL_HXX

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -45,7 +45,7 @@ namespace {
     support constrained properties and thus does not support vetoable
     listeners.  It does not support the optional property set info.
 
-    In order to use it you have to derive from this class and implement the 
+    In order to use it you have to derive from this class and implement the
     GetPropertyValue() and SetPropertyValue() methods.
 */
 class PropertySet
@@ -63,7 +63,7 @@ public:
     virtual css::uno::Reference<css::beans::XPropertySetInfo>
         SAL_CALL getPropertySetInfo (void)
         throw(css::uno::RuntimeException);
-    
+
     virtual void SAL_CALL setPropertyValue (
         const rtl::OUString& rsPropertyName,
         const css::uno::Any& rsPropertyValue)
@@ -72,12 +72,12 @@ public:
             css::lang::IllegalArgumentException,
             css::lang::WrappedTargetException,
             css::uno::RuntimeException);
-    
+
     virtual css::uno::Any SAL_CALL getPropertyValue (const rtl::OUString& rsPropertyName)
         throw(css::beans::UnknownPropertyException,
             css::lang::WrappedTargetException,
             css::uno::RuntimeException);
-    
+
     virtual void SAL_CALL addPropertyChangeListener (
         const rtl::OUString& rsPropertyName,
         const css::uno::Reference<css::beans::XPropertyChangeListener>& rxListener)

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -63,7 +63,7 @@
 // End Comments
 #include "dptabdat.hxx"
 
-namespace com { namespace sun { namespace star { 
+namespace com { namespace sun { namespace star {
     namespace sheet {
         struct DataPilotFieldFilter;
     }
@@ -148,15 +148,15 @@ private:
 	void					FillLevelList( sal_uInt16 nOrientation, List& rList );
     void                    FillCalcInfo(bool bIsRow, ScDPTableData::CalcInfo& rInfo, bool &bHasAutoShow);
 
-    /** 
-     * Compile a list of dimension indices that are either, column, row or 
-     * page dimensions (i.e. all but data dimensions). 
+    /**
+     * Compile a list of dimension indices that are either, column, row or
+     * page dimensions (i.e. all but data dimensions).
      */
     void                    GetCategoryDimensionIndices(::std::hash_set<sal_Int32>& rCatDims);
 
-    /** 
-     * Set visibilities of individual rows in the cache table based on the 
-     * page field data. 
+    /**
+     * Set visibilities of individual rows in the cache table based on the
+     * page field data.
      */
     void                    FilterCacheTableByPageDimensions();
 
@@ -226,8 +226,8 @@ public:
 								throw(::com::sun::star::uno::RuntimeException);
 
                             // XDrillDownDataSupplier
-    virtual ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Any > > 
-        SAL_CALL getDrillDownData(const ::com::sun::star::uno::Sequence< 
+    virtual ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Any > >
+        SAL_CALL getDrillDownData(const ::com::sun::star::uno::Sequence<
                                       ::com::sun::star::sheet::DataPilotFieldFilter >& aFilters )
                                 throw(::com::sun::star::uno::RuntimeException);
 
@@ -793,7 +793,7 @@ public:
 	String					GetNameStr() const;
 	void					FillItemData( ScDPItemData& rData ) const;
     // Wang Xu Ming -- 2009-8-17
-    // DataPilot Migration - Cache&&Performance    
+    // DataPilot Migration - Cache&&Performance
     //  const ScDPItemData&  GetItemData() const{ return maData; }
     const ScDPItemData&  GetItemData() const;
     inline SCROW               GetItemDataId() const { return mnDataId; }

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -96,7 +96,7 @@ public:
     virtual void Init (bool bIsMainViewShell);
 
     virtual void Shutdown (void);
-    
+
     void PrePaint();
     virtual void Paint(const Rectangle& rRect, ::sd::Window* pWin);
 
@@ -252,7 +252,7 @@ public:
 	sal_Bool		    IsSwitchPageAllowed() const;
 
 	sal_Bool		    GotoBookmark(const String& rBookmark);
-	//Solution: realize multi-selection of objects ,If object is marked , 
+	//Solution: realize multi-selection of objects ,If object is marked ,
 	//the corresponding entry is set true ,else the corresponding entry is set false .
 	void                    FreshNavigatrEntry();
 	void                    FreshNavigatrTree();
@@ -366,7 +366,7 @@ public:
 	void ModifyLayer( SdrLayer* pLayer, const String& rLayerName, const String& rLayerTitle, const String& rLayerDesc, bool bIsVisible, bool bIsLocked, bool bIsPrintable );
 
     virtual css::uno::Reference<css::drawing::XDrawSubController> CreateSubController (void);
-    
+
 	DrawView*	GetDrawView() const { return mpDrawView; }
 
     /** Relocation to a new parent window is not supported for DrawViewShell
@@ -376,7 +376,7 @@ public:
 
     ::rtl::OUString GetSidebarContextName (void) const;
 
-	//move this method to ViewShell. 
+	//move this method to ViewShell.
 	//void	NotifyAccUpdate();
 protected:
 	DrawView*		mpDrawView;
@@ -448,7 +448,7 @@ private:
     /** Listen for selection changes and broadcast context changes for the sidebar.
     */
     ::rtl::Reference<svx::sidebar::SelectionChangeHandler> mpSelectionChangeHandler;
-    
+
 	void Construct (DrawDocShell* pDocSh, PageKind ePageKind);
 
     /** Depending on the given request create a new page or duplicate an
@@ -460,7 +460,7 @@ private:
         PageKind ePageKind,
         SdPage* pPage,
         const sal_Int32 nInsertPosition = -1);
-    
+
 	::com::sun::star::uno::Reference< ::com::sun::star::scanner::XScannerManager >	mxScannerManager;
 	::com::sun::star::uno::Reference< ::com::sun::star::lang::XEventListener >		mxScannerListener;
 	TransferableClipboardListener*                                                  mpClipEvtLstnr;
@@ -505,7 +505,7 @@ private:
 	using ViewShell::Notify;
 
 	//const ::com::sun::star::uno::Reference< ::com::sun::star::uno::XInterface > & GetForms() const;
-	
+
 	::std::auto_ptr< AnnotationManager > mpAnnotationManager;
 	::std::auto_ptr< ViewOverlayManager > mpViewOverlayManager;
 };

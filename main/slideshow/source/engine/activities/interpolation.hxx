@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -38,37 +38,37 @@ namespace basegfx
         // not-straight-forward-interpolatable types
 
         /// Specialization for RGBColor, to employ color-specific interpolator
-		template<> ::slideshow::internal::RGBColor lerp< ::slideshow::internal::RGBColor >( 
-            const ::slideshow::internal::RGBColor& rFrom, 
-            const ::slideshow::internal::RGBColor& rTo, 
+		template<> ::slideshow::internal::RGBColor lerp< ::slideshow::internal::RGBColor >(
+            const ::slideshow::internal::RGBColor& rFrom,
+            const ::slideshow::internal::RGBColor& rTo,
             double			                       t	 )
         {
             return interpolate( rFrom, rTo, t );
         }
-        
+
         /// Specialization also for sal_Int16, although this code should not be called
-        template<> sal_Int16 lerp< sal_Int16 >( const sal_Int16&, 
-                                                const sal_Int16& 	rTo, 
+        template<> sal_Int16 lerp< sal_Int16 >( const sal_Int16&,
+                                                const sal_Int16& 	rTo,
                                                 double					   )
         {
             OSL_ENSURE( false,
                         "lerp<sal_Int16> called" );
             return rTo;
         }
-        
+
 		/// Specialization also for string, although this code should not be called
-        template<> ::rtl::OUString lerp< ::rtl::OUString >( const ::rtl::OUString&, 
-                                                            const ::rtl::OUString& 	rTo, 
+        template<> ::rtl::OUString lerp< ::rtl::OUString >( const ::rtl::OUString&,
+                                                            const ::rtl::OUString& 	rTo,
                                                             double					     )
         {
             OSL_ENSURE( false,
                         "lerp<::rtl::OUString> called" );
             return rTo;
         }
-        
+
 		/// Specialization also for bool, although this code should not be called
-        template<> bool lerp< bool >( const bool&, 
-                                      const bool& 	rTo, 
+        template<> bool lerp< bool >( const bool&,
+                                      const bool& 	rTo,
                                       double		     )
         {
             OSL_ENSURE( false,
@@ -77,21 +77,21 @@ namespace basegfx
         }
     }
 }
-        
+
 namespace slideshow
 {
     namespace internal
     {
         template< typename ValueType > struct Interpolator
         {
-            ValueType operator()( const ValueType& 	rFrom, 
-                                  const ValueType& 	rTo, 
+            ValueType operator()( const ValueType& 	rFrom,
+                                  const ValueType& 	rTo,
                                   double			t ) const
             {
                 return basegfx::tools::lerp( rFrom, rTo, t );
             }
         };
-        
+
 		/// Specialization for HSLColor, to employ color-specific interpolator
         template<> struct Interpolator< HSLColor >
         {
@@ -100,8 +100,8 @@ namespace slideshow
             {
             }
 
-            HSLColor operator()( const HSLColor&	rFrom, 
-                                 const HSLColor&	rTo, 
+            HSLColor operator()( const HSLColor&	rFrom,
+                                 const HSLColor&	rTo,
                                  double				t ) const
             {
                 return interpolate( rFrom, rTo, t, mbCCW );
@@ -129,9 +129,9 @@ namespace slideshow
             Total number of frames. Should be greater than zero.
         */
         template< typename ValueType > ValueType lerp( const Interpolator< ValueType >& rInterpolator,
-                                                       const ValueType& 				rFrom, 
-                                                       const ValueType& 				rTo, 
-                                                       sal_uInt32						nFrame, 
+                                                       const ValueType& 				rFrom,
+                                                       const ValueType& 				rTo,
+                                                       sal_uInt32						nFrame,
                                                        ::std::size_t					nTotalFrames )
         {
             // TODO(P1): There's a nice HAKMEM trick for that
@@ -145,13 +145,13 @@ namespace slideshow
 
 		/// Specialization for non-interpolatable constants/enums
         template<> sal_Int16 lerp< sal_Int16 >( const Interpolator< sal_Int16 >& 	/*rInterpolator*/,
-                                                const sal_Int16& 					rFrom, 
-                                                const sal_Int16& 					rTo, 
-                                                sal_uInt32							nFrame, 
+                                                const sal_Int16& 					rFrom,
+                                                const sal_Int16& 					rTo,
+                                                sal_uInt32							nFrame,
                                                 ::std::size_t						nTotalFrames )
         {
             // until one half of the total frames are over, take from value.
-            // after that, take to value. 
+            // after that, take to value.
             // For nFrames not divisable by 2, we prefer to over from, which
             // also neatly yields to for 1 frame activities
             return nFrame < nTotalFrames/2 ? rFrom : rTo;
@@ -159,13 +159,13 @@ namespace slideshow
 
 		/// Specialization for non-interpolatable strings
         template<> ::rtl::OUString lerp< ::rtl::OUString >( const Interpolator< ::rtl::OUString >& 	/*rInterpolator*/,
-                                                            const ::rtl::OUString& 					rFrom, 
-                                                            const ::rtl::OUString& 					rTo, 
-                                                            sal_uInt32								nFrame, 
+                                                            const ::rtl::OUString& 					rFrom,
+                                                            const ::rtl::OUString& 					rTo,
+                                                            sal_uInt32								nFrame,
                                                             ::std::size_t							nTotalFrames )
         {
             // until one half of the total frames are over, take from value.
-            // after that, take to value. 
+            // after that, take to value.
             // For nFrames not divisable by 2, we prefer to over from, which
             // also neatly yields to for 1 frame activities
             return nFrame < nTotalFrames/2 ? rFrom : rTo;
@@ -173,13 +173,13 @@ namespace slideshow
 
 		/// Specialization for non-interpolatable bools
         template<> bool lerp< bool >( const Interpolator< bool >& 	/*rInterpolator*/,
-                                      const bool&					bFrom, 
-                                      const bool&					bTo, 
-                                      sal_uInt32					nFrame, 
+                                      const bool&					bFrom,
+                                      const bool&					bTo,
+                                      sal_uInt32					nFrame,
                                       ::std::size_t					nTotalFrames )
         {
             // until one half of the total frames are over, take from value.
-            // after that, take to value. 
+            // after that, take to value.
             // For nFrames not divisable by 2, we prefer to over from, which
             // also neatly yields to for 1 frame activities
             return nFrame < nTotalFrames/2 ? bFrom : bTo;

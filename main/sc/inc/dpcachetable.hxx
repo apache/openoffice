@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -164,7 +164,7 @@ public:
     ScDPTableDataCache* GetCache() const;
     /** Fill the internal table from the cell range provided.  This function
     assumes that the first row is the column header. */
-    void fillTable( const ScQueryParam& rQuery, sal_Bool* pSpecial, 
+    void fillTable( const ScQueryParam& rQuery, sal_Bool* pSpecial,
         bool bIgnoreEmptyRows, bool bRepeatIfEmpty );
     /** Fill the internal table from database connection object.  This function
         assumes that the first row is the column header. */
@@ -184,7 +184,7 @@ public:
         that the data grid doesn't include the header row.  Don't delete the
         returned object! */
 	const ScDPItemData* getCell(SCCOL nCol, SCROW nRow, bool bRepeatIfEmpty) const;
-	void  getValue( ScDPValueData& rVal, SCCOL nCol, SCROW nRow, bool bRepeatIfEmpty) const; 
+	void  getValue( ScDPValueData& rVal, SCCOL nCol, SCROW nRow, bool bRepeatIfEmpty) const;
     String getFieldName( SCCOL  nIndex) const;
 	//End Comments
 
@@ -215,7 +215,7 @@ private:
     ScDPCacheTable();
     ScDPCacheTable(const ScDPCacheTable&);
 
-    /** 
+    /**
      * Check if a given row meets all specified criteria.
      *
      * @param nRow index of row to be tested.

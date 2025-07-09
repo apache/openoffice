@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -62,14 +62,14 @@
 #define INPUTMODE_NEWMACRO		2
 #define INPUTMODE_RENAME		3
 
-typedef ::std::hash_map < ::rtl::OUString, ::rtl::OUString , 
+typedef ::std::hash_map < ::rtl::OUString, ::rtl::OUString ,
     ::rtl::OUStringHash, ::std::equal_to< ::rtl::OUString > > Selection_hash;
 
 class SFEntry;
 
 class SFTreeListBox : public SvTreeListBox
 {
-   friend class SvxScriptOrgDialog; 
+   friend class SvxScriptOrgDialog;
 private:
 	sal_uInt16			nMode;
     Image m_hdImage;
@@ -96,7 +96,7 @@ protected:
 	virtual long			ExpandingHdl();
 public:
 	void 					Init( const ::rtl::OUString& language );
-	void  RequestSubEntries(  SvLBoxEntry* pRootEntry, ::com::sun::star::uno::Reference< ::com::sun::star::script::browse::XBrowseNode >& node, 
+	void  RequestSubEntries(  SvLBoxEntry* pRootEntry, ::com::sun::star::uno::Reference< ::com::sun::star::script::browse::XBrowseNode >& node,
 							  ::com::sun::star::uno::Reference< com::sun::star::frame::XModel>& model  );
 					SFTreeListBox( Window* pParent, const ResId& rRes );
 					~SFTreeListBox();
@@ -108,7 +108,7 @@ public:
 	SvLBoxEntry * insertEntry(String const & rText, sal_uInt16 nBitmap,
                               SvLBoxEntry * pParent,
                               bool bChildrenOnDemand,
-                              std::auto_ptr< SFEntry > aUserData, 
+                              std::auto_ptr< SFEntry > aUserData,
                               ::rtl::OUString factoryURL );
 	SvLBoxEntry * insertEntry(String const & rText, sal_uInt16 nBitmap,
                               SvLBoxEntry * pParent,
@@ -139,13 +139,13 @@ class SFEntry
 private:
 	sal_uInt8			nType;
     bool            loaded;
-        ::com::sun::star::uno::Reference< ::com::sun::star::script::browse::XBrowseNode > nodes;   
-        ::com::sun::star::uno::Reference< ::com::sun::star::frame::XModel > model;   
+        ::com::sun::star::uno::Reference< ::com::sun::star::script::browse::XBrowseNode > nodes;
+        ::com::sun::star::uno::Reference< ::com::sun::star::frame::XModel > model;
 	SFEntry(){}
 public:
 					SFEntry( sal_uInt8 nT )				{ nType = nT; loaded=false; }
-					SFEntry( sal_uInt8 nT, 
-							const ::com::sun::star::uno::Reference< ::com::sun::star::script::browse::XBrowseNode >& entryNodes , 
+					SFEntry( sal_uInt8 nT,
+							const ::com::sun::star::uno::Reference< ::com::sun::star::script::browse::XBrowseNode >& entryNodes ,
 							const ::com::sun::star::uno::Reference< ::com::sun::star::frame::XModel >& entryModel) { nType = nT; nodes = entryNodes; loaded=false; model = entryModel; }
 					SFEntry( const SFEntry& r ) { nType = r.nType; nodes = r.nodes; loaded = r.loaded; }
 	virtual 		~SFEntry() {}
@@ -189,12 +189,12 @@ protected:
 	DECL_LINK( ButtonHdl, Button * );
 	sal_Bool 	            getBoolProperty( ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySet >& xProps, ::rtl::OUString& propName );
 	void				CheckButtons(  ::com::sun::star::uno::Reference< ::com::sun::star::script::browse::XBrowseNode >& node );
-	
+
 	void        createEntry( SvLBoxEntry* pEntry );
 	void        renameEntry( SvLBoxEntry* pEntry );
 	void        deleteEntry( SvLBoxEntry* pEntry );
 	::com::sun::star::uno::Reference< ::com::sun::star::script::browse::XBrowseNode >
-		        getBrowseNode( SvLBoxEntry* pEntry ); 
+		        getBrowseNode( SvLBoxEntry* pEntry );
 	::com::sun::star::uno::Reference< ::com::sun::star::frame::XModel > getModel( SvLBoxEntry* pEntry );
     String      getListOfChildren( ::com::sun::star::uno::Reference< com::sun::star::script::browse::XBrowseNode > node, int depth );
     void        StoreCurrentSelection();

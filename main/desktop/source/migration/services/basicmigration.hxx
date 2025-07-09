@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -53,14 +53,14 @@ namespace migration
     // class BasicMigration
     // =============================================================================
 
-    typedef ::cppu::WeakImplHelper3<    
+    typedef ::cppu::WeakImplHelper3<
         ::com::sun::star::lang::XServiceInfo,
         ::com::sun::star::lang::XInitialization,
         ::com::sun::star::task::XJob > BasicMigration_BASE;
 
     class BasicMigration : public BasicMigration_BASE
     {
-    private:    
+    private:
         ::osl::Mutex            m_aMutex;
         ::rtl::OUString         m_sSourceDir;
 
@@ -81,14 +81,14 @@ namespace migration
             throw (::com::sun::star::uno::RuntimeException);
 
         // XInitialization
-        virtual void SAL_CALL initialize( const ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Any >& aArguments ) 
+        virtual void SAL_CALL initialize( const ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Any >& aArguments )
             throw (::com::sun::star::uno::Exception, ::com::sun::star::uno::RuntimeException);
 
         // XJob
         virtual ::com::sun::star::uno::Any SAL_CALL execute(
             const ::com::sun::star::uno::Sequence< ::com::sun::star::beans::NamedValue >& Arguments )
             throw (::com::sun::star::lang::IllegalArgumentException, ::com::sun::star::uno::Exception,
-                ::com::sun::star::uno::RuntimeException);        
+                ::com::sun::star::uno::RuntimeException);
     };
 
 //.........................................................................

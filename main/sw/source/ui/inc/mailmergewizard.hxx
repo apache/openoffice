@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -37,7 +37,7 @@ class SwMailMergeConfigItem;
 #define MM_MERGEPAGE            6
 #define MM_OUTPUTPAGE           7
 
-class SwMailMergeWizard : public ::svt::RoadmapWizard 
+class SwMailMergeWizard : public ::svt::RoadmapWizard
 {
     SwView*                 m_pSwView;
     String                  sDocumentURL;
@@ -64,11 +64,11 @@ protected:
     virtual svt::OWizardPage*       createPage(WizardState _nState);
     virtual void                    enterState( WizardState _nState );
 
-// roadmap feature ?? 
+// roadmap feature ??
 //    virtual sal_Bool            prepareLeaveCurrentState( CommitPageReason _eReason );
     virtual String                  getStateDisplayName( WizardState _nState ) const;
 
-public:     
+public:
     SwMailMergeWizard(SwView& rView, SwMailMergeConfigItem& rConfigItem);
     ~SwMailMergeWizard();
 
@@ -87,12 +87,12 @@ public:
     sal_uInt16              GetRestartPage() const {return m_nRestartPage;}
     void                    SetRestartPage(sal_uInt16 nPage) { m_nRestartPage = nPage;}
 
-    sal_Bool                skipUntil( sal_uInt16 nPage) 
+    sal_Bool                skipUntil( sal_uInt16 nPage)
                                 {return ::svt::RoadmapWizard::skipUntil(WizardState(nPage));}
 
-    void                    updateRoadmapItemLabel( WizardState _nState ); 
+    void                    updateRoadmapItemLabel( WizardState _nState );
 
  	virtual short		    Execute();
-    virtual void            StartExecuteModal( const Link& rEndDialogHdl );  
+    virtual void            StartExecuteModal( const Link& rEndDialogHdl );
 };
 #endif

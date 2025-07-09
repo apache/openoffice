@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -42,11 +42,11 @@ namespace dbaccess
 	{
         ::connectivity::OSQLParser				                m_aSqlParser;
 		::connectivity::OSQLParseTreeIterator	                m_aSqlIterator;
-		
+
         ::std::map<sal_Int32,sal_Int32>                         m_aJoinedColumns;
-        ::std::map<sal_Int32,sal_Int32>                         m_aJoinedKeyColumns;        
-		
-		
+        ::std::map<sal_Int32,sal_Int32>                         m_aJoinedKeyColumns;
+
+
         mutable bool m_bResultSetChanged;
 
 		/**
@@ -60,9 +60,9 @@ namespace dbaccess
 		::rtl::OUString getComposedTableName( const ::rtl::OUString& _sCatalog,
 											  const ::rtl::OUString& _sSchema,
 											  const ::rtl::OUString& _sTable);
-	
+
         void impl_convertValue_throw(const ORowSetRow& _rInsertRow,const SelectColumnDescription& i_aMetaData);
-        
+
         void executeDelete(const ORowSetRow& _rDeleteRow,const ::rtl::OUString& i_sSQL,const ::rtl::OUString& i_sTableName);
         void fillJoinedColumns_throw(const ::std::vector< ::connectivity::TNodePair>& i_aJoinColumns);
         void fillJoinedColumns_throw(const ::rtl::OUString& i_sLeftColumn,const ::rtl::OUString& i_sRightColumn);
@@ -75,7 +75,7 @@ namespace dbaccess
                       const ORowSetValueVector& _aParameterValueForCache,
                       sal_Int32 i_nMaxRows,
                       sal_Int32& o_nRowCount);
-		
+
 		// late ctor which can throw exceptions
 		virtual void construct(const ::com::sun::star::uno::Reference< ::com::sun::star::sdbc::XResultSet>& _xDriverSet,const ::rtl::OUString& i_sRowSetFilter);
 

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -47,17 +47,17 @@ namespace basebmp
             meDrawMode(DrawMode_PAINT)
         {}
 
-        GenericColorImageAccessor( BitmapDeviceSharedPtr const& rTarget, 
+        GenericColorImageAccessor( BitmapDeviceSharedPtr const& rTarget,
                                    DrawMode                     eDrawMode ) :
             mpDevice(rTarget),
             meDrawMode(eDrawMode)
         {}
 
-        template< typename Iterator > 
+        template< typename Iterator >
         Color operator()( Iterator const& i ) const
         { return mpDevice->getPixel( basegfx::B2IPoint( i->x,i->y ) ); }
 
-        template< typename Iterator, typename Difference > 
+        template< typename Iterator, typename Difference >
         Color operator()( Iterator const& i, Difference const& diff) const
         { return mpDevice->getPixel( basegfx::B2IPoint( i[diff]->x,
                                                         i[diff]->y ) ); }

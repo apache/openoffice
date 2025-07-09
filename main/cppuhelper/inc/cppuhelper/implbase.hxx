@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -107,7 +107,7 @@ struct CPPUHELPER_DLLPUBLIC ClassData : public ClassDataBase
     /** type entries array
     */
 	Type_Offset arType2Offset[1];
-    
+
     /** init call for supporting com.sun.star.lang.XTypeProvider
     */
 	void SAL_CALL initTypeProvider() SAL_THROW( () );
@@ -160,14 +160,14 @@ CPPUHELPER_DLLPUBLIC ::osl::Mutex & SAL_CALL getImplHelperInitMutex(void) SAL_TH
     So there is commonly no need to use these macros. Though, you may need to implement more than
     12 interfaces. Then you have to declare something like the following in your headers
     (where N is your demanded number of interfaces):
-    
+
     #define __IFC3 Ifc1, Ifc2, Ifc3, ... up to N
     #define __CLASS_IFC3 class Ifc1, class Ifc2, class Ifc3, ... up to N
     #define __PUBLIC_IFC3 public Ifc1, public Ifc2, public Ifc3, ... up to N
     __DEF_IMPLHELPER_PRE( N )
 	__IFC_WRITEOFFSET( 1 ) __IFC_WRITEOFFSET( 2 ) __IFC_WRITEOFFSET( 3 ), ... up to N
     __DEF_IMPLHELPER_POST( N )
-    
+
     @internal
 */
 #define __DEF_IMPLHELPER_PRE( N ) \

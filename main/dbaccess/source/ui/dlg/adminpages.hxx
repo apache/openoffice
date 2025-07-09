@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -58,7 +58,7 @@ namespace dbaui
 		virtual bool SaveValue() = 0;
 		virtual bool Disable() = 0;
 	};
-	
+
 	template < class T > class OSaveValueWrapper : public ISaveValueWrapper
 	{
 		T*	m_pSaveValue;
@@ -83,14 +83,14 @@ namespace dbaui
 
 	struct TSaveValueWrapperFunctor : public ::std::unary_function< ISaveValueWrapper, bool>
 	{
-		bool operator() (ISaveValueWrapper* lhs) 
+		bool operator() (ISaveValueWrapper* lhs)
 		{
 			return lhs->SaveValue();
 		}
 	};
 	struct TDisableWrapperFunctor : public ::std::unary_function< ISaveValueWrapper, bool>
 	{
-		bool operator() (ISaveValueWrapper* lhs) 
+		bool operator() (ISaveValueWrapper* lhs)
 		{
 			return lhs->Disable();
 		}
@@ -98,7 +98,7 @@ namespace dbaui
 
 	struct TDeleteWrapperFunctor : public ::std::unary_function< ISaveValueWrapper, bool>
 	{
-		bool operator() (ISaveValueWrapper* lhs) 
+		bool operator() (ISaveValueWrapper* lhs)
 		{
 			delete lhs;
 			return true;
@@ -109,7 +109,7 @@ namespace dbaui
 	//= OGenericAdministrationPage
 	//=========================================================================
 	class IDatabaseSettingsDialog;
-	class IItemSetHelper; 
+	class IItemSetHelper;
     class OGenericAdministrationPage    :public SfxTabPage
                                         ,public ::svt::IWizardPageController
 	{
@@ -136,10 +136,10 @@ namespace dbaui
 			@param	_pItemSetHelper
 				the itemset helper
 		*/
-		inline void SetAdminDialog(IDatabaseSettingsDialog* _pDialog,IItemSetHelper* _pItemSetHelper) 
-		{ 
+		inline void SetAdminDialog(IDatabaseSettingsDialog* _pDialog,IItemSetHelper* _pItemSetHelper)
+		{
 			OSL_ENSURE(_pDialog && _pItemSetHelper,"Values are NULL!");
-			m_pAdminDialog = _pDialog; 
+			m_pAdminDialog = _pDialog;
 			m_pItemSetHelper = _pItemSetHelper;
 		}
 
@@ -148,8 +148,8 @@ namespace dbaui
 				The service factory.
 		*/
 		virtual void SetServiceFactory(const ::com::sun::star::uno::Reference< ::com::sun::star::lang::XMultiServiceFactory > _rxORB)
-		{ 
-			m_xORB = _rxORB; 
+		{
+			m_xORB = _rxORB;
 		}
 
 		/** opens a dialog filled with all data sources available for this type and
@@ -199,14 +199,14 @@ namespace dbaui
 
 		/** will be called inside <method>implInitControls</method> to save the value if necessary
 			@param	_rControlList
-				The list must be filled with the controls. 
+				The list must be filled with the controls.
 				It is not allowed to clear the list before pusching data into it.
 		*/
 		virtual void fillControls(::std::vector< ISaveValueWrapper* >& _rControlList) = 0;
 
 		/** will be called inside <method>implInitControls</method> to disable if necessary
 			@param	_rControlList
-				The list must be filled with the controls. 
+				The list must be filled with the controls.
 				It is not allowed to clear the list before pusching data into it.
 		*/
 		virtual void fillWindows(::std::vector< ISaveValueWrapper* >& _rControlList) = 0;

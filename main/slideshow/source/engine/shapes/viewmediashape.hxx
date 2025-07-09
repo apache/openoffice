@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -36,15 +36,15 @@ class SystemChildWindow;
 
 namespace com { namespace sun { namespace star { namespace drawing {
     class XShape;
-} 
-namespace media { 
+}
+namespace media {
     class XPlayer;
     class XPlayerWindow;
-} 
+}
 namespace uno {
     class XComponentContext;
 }
-namespace beans{ 
+namespace beans{
     class XPropertySet;
 } } } }
 
@@ -66,16 +66,16 @@ namespace slideshow
             	@param rView
                 The associated View object.
              */
-            ViewMediaShape( const ViewLayerSharedPtr&                          rViewLayer, 
-                            const ::com::sun::star::uno::Reference< 
+            ViewMediaShape( const ViewLayerSharedPtr&                          rViewLayer,
+                            const ::com::sun::star::uno::Reference<
                                   ::com::sun::star::drawing::XShape >&         rxShape,
-                             const ::com::sun::star::uno::Reference< 
+                             const ::com::sun::star::uno::Reference<
                                    ::com::sun::star::uno::XComponentContext >& rxContext );
 
             /** destroy the object
              */
             virtual ~ViewMediaShape();
-			
+
             /** Query the associated view layer of this shape
              */
             ViewLayerSharedPtr getViewLayer() const;
@@ -119,7 +119,7 @@ namespace slideshow
 
             /** Render the ViewShape
 
-				This method renders the ViewMediaShape on the associated view. 
+				This method renders the ViewMediaShape on the associated view.
 
                 @param rBounds
                 The current media shape bounds
@@ -141,7 +141,7 @@ namespace slideshow
             bool resize( const ::basegfx::B2DRectangle&	rNewBounds ) const;
 
         private:
-            
+
 			bool implInitialize( const ::basegfx::B2DRectangle& rBounds );
 			void implSetMediaProperties( const ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySet >& rxProps );
 			void implInitializeMediaPlayer( const ::rtl::OUString& rMediaURL );
@@ -149,12 +149,12 @@ namespace slideshow
 													 const ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Any >& rVCLDeviceParams );
 			bool implInitializeDXBasedPlayerWindow( const ::basegfx::B2DRectangle& rBounds,
 													const ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Any >& rDXDeviceParams );
-			
+
 			ViewLayerSharedPtr					  mpViewLayer;
 			::std::auto_ptr< SystemChildWindow >    mpMediaWindow;
 			mutable ::com::sun::star::awt::Point  maWindowOffset;
             mutable ::basegfx::B2DRectangle       maBounds;
-        
+
 			::com::sun::star::uno::Reference< ::com::sun::star::drawing::XShape >		mxShape;
 			::com::sun::star::uno::Reference< ::com::sun::star::media::XPlayer >		mxPlayer;
 			::com::sun::star::uno::Reference< ::com::sun::star::media::XPlayerWindow >	mxPlayerWindow;

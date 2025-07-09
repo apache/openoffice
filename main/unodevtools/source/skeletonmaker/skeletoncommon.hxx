@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -39,7 +39,7 @@ namespace skeletonmaker {
 typedef ::std::map< ::rtl::OString, ::std::vector< ::rtl::OString >,
                     ::std::less< ::rtl::OString > > ProtocolCmdMap;
 
-typedef ::std::vector< ::std::pair< rtl::OString, 
+typedef ::std::vector< ::std::pair< rtl::OString,
                      ::std::pair< rtl::OString, sal_Int16 > > > AttributeInfo;
 
 
@@ -82,7 +82,7 @@ void printLicenseHeader(std::ostream& o, rtl::OString const & filename);
    create dependent on the output path, the implementation name and the
    extension a new output file. If output path is equal "stdout" the tool
    generates the output to standard out.
-   
+
    @param options the program options including the output path and the
                   implementation name
    @param extension specifies the file extensions (e.g. .cxx or .java)
@@ -128,10 +128,10 @@ rtl::OString checkPropertyHelper(
    checks whether the return and parameters types are valid and allowed
    calc add-in type. The function throws a CannotDumpException with an
    detailed error description which type is wrong
-   
+
    @param manager a type manager
    @param reader a registry type reader of an interface defining
-                 calc add-in functions   
+                 calc add-in functions
 */
 void checkAddInTypes(TypeManager const & manager,
                      typereg::Reader const & reader);

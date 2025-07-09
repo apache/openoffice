@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -161,7 +161,7 @@ private:
 public:
 	virtual void setDocAccTitle( const String& rTitle ) { msDocAccTitle = rTitle; }
 	virtual const String getDocAccTitle() const { return msDocAccTitle; }
-private:	
+private:
 	sal_Bool bReadOnly;
 public:
 	virtual void setDocReadOnly( sal_Bool b){ bReadOnly = b; }
@@ -179,8 +179,8 @@ private:
     SdTransferable *    mpCreatingTransferable;
 	sal_Bool                mbHasOnlineSpellErrors;
 	sal_Bool                mbInitialOnlineSpellingEnabled;
-	String              maBookmarkFile; 
-	::sd::DrawDocShellRef   mxBookmarkDocShRef; 
+	String              maBookmarkFile;
+	::sd::DrawDocShellRef   mxBookmarkDocShRef;
 
 	sd::PresentationSettings maPresentationSettings;
 
@@ -215,7 +215,7 @@ private:
 	                    DECL_LINK(OnlineSpellEventHdl, EditStatus*);
 
     std::vector< rtl::OUString > maAnnotationAuthors;
-    
+
 protected:
 
 	virtual ::com::sun::star::uno::Reference< ::com::sun::star::uno::XInterface > createUnoModel();
@@ -241,7 +241,7 @@ public:
 
 	::sd::Outliner* GetOutliner(sal_Bool bCreateOutliner=sal_True);
 	SD_DLLPUBLIC ::sd::Outliner* GetInternalOutliner(sal_Bool bCreateOutliner=sal_True);
-                        
+
 	::sd::DrawDocShell*     GetDocSh() const { return mpDocSh; }
 
 	LanguageType	    GetLanguage( const sal_uInt16 nId ) const;
@@ -256,7 +256,7 @@ public:
 	void			    SetAllocDocSh(sal_Bool bAlloc);
 
 	void	            CreatingDataObj( SdTransferable* pTransferable ) { mpCreatingTransferable = pTransferable; }
-                        
+
 	/** if the document does not contain at least one handout, one slide and one notes page with
 		at least one master each this methods creates them.
 		If a reference document is given, the sizes and border settings of that document are used
@@ -276,7 +276,7 @@ public:
 	void	            RemoveUnnecessaryMasterPages( SdPage* pMaster=NULL, sal_Bool bOnlyDuplicatePages=sal_False, sal_Bool bUndo=sal_True );
 	SD_DLLPUBLIC void 	SetMasterPage(sal_uInt16 nSdPageNum, const String& rLayoutName,
 					    	          SdDrawDocument* pSourceDoc, sal_Bool bMaster, sal_Bool bCheckMasters);
-                        
+
 	SD_DLLPUBLIC SdDrawDocument* OpenBookmarkDoc(const String& rBookmarkFile);
 	SdDrawDocument*     OpenBookmarkDoc(SfxMedium& rMedium);
 	sal_Bool                InsertBookmark(List* pBookmarkList, List* pExchangeList, sal_Bool bLink,
@@ -344,7 +344,7 @@ public:
                                               sal_uInt16 nBMSdPageCount,
                                               InsertBookmarkAsPage_PageFunctorBase& rPageIterator );
 	SD_DLLPUBLIC void	CloseBookmarkDoc();
-                        
+
 	SdrObject*          GetObj(const String& rObjName) const;
 
     /** Return the first page that has the given name.  Regular pages and
@@ -366,15 +366,15 @@ public:
 
 	void	            SetSelected(SdPage* pPage, sal_Bool bSelect);
 	sal_Bool	            MovePages(sal_uInt16 nTargetPage);
-                        
+
 	SD_DLLPUBLIC SdPage*GetMasterSdPage(sal_uInt16 nPgNum, PageKind ePgKind);
 	SD_DLLPUBLIC sal_uInt16	GetMasterSdPageCount(PageKind ePgKind) const;
-                        
+
 	sal_uInt16	            GetMasterPageUserCount(SdrPage* pMaster) const;
-                        
+
 	const sd::PresentationSettings& getPresentationSettings() const { return maPresentationSettings; }
 	sd::PresentationSettings& getPresentationSettings() { return maPresentationSettings; }
-                                            
+
 	const ::com::sun::star::uno::Reference< ::com::sun::star::presentation::XPresentation2 >& getPresentation() const;
 
    	void                SetSummationOfParagraphs( sal_Bool bOn = sal_True ) { mbSummationOfParagraphs = bOn; }
@@ -416,18 +416,18 @@ public:
 
 	List*               GetFrameViewList() const { return mpFrameViewList; }
 	SD_DLLPUBLIC List*  GetCustomShowList(sal_Bool bCreate = sal_False);
-                        
+
 	void                NbcSetChanged(sal_Bool bFlag = sal_True);
 
 	void                SetTextDefaults() const;
 
 	void                CreateLayoutTemplates();
 	void                RenameLayoutTemplate(const String& rOldLayoutName, const String& rNewName);
-                        
+
 	void				CreateDefaultCellStyles();
 
 	SD_DLLPUBLIC void   StopWorkStartupDelay();
-                        
+
 	void                NewOrLoadCompleted(DocCreationMode eMode);
 	void				NewOrLoadCompleted( SdPage* pPage, SdStyleSheetPool* pSPool );
 	sal_Bool                IsNewOrLoadCompleted() const {return mbNewOrLoadCompleted; }
@@ -457,7 +457,7 @@ public:
 			                    sal_uInt16 nDestPos=0xFFFF,
 			                    FASTBOOL bMergeMasterPages=sal_False, FASTBOOL bAllMasterPages=sal_False,
 			                    FASTBOOL bUndo=sal_True, FASTBOOL bTreadSourceAsConst=sal_False);
-                        
+
     SD_DLLPUBLIC ::com::sun::star::text::WritingMode GetDefaultWritingMode() const;
     void SetDefaultWritingMode( ::com::sun::star::text::WritingMode eMode );
 

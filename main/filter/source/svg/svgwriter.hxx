@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -85,7 +85,7 @@
 
 
 #define REF( _def_Obj )			NMSP_UNO::Reference< _def_Obj >
-#define SEQ( _def_Obj )			NMSP_UNO::Sequence< _def_Obj > 
+#define SEQ( _def_Obj )			NMSP_UNO::Sequence< _def_Obj >
 #define B2UCONST( _def_pChar )	(::rtl::OUString(RTL_CONSTASCII_USTRINGPARAM(_def_pChar )))
 #define SVG_DTD_STRING			B2UCONST( "<!DOCTYPE svg PUBLIC \"-//W3C//DTD SVG 1.1//EN\" \"http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd\">" )
 #define SVG_TINY_DTD_STRING     B2UCONST( "<!DOCTYPE svg PUBLIC \"-//W3C//DTD SVG Tiny 1.1//EN\" \"http://www.w3.org/Graphics/SVG/1.1/DTD/svg11-tiny.dtd\">" )
@@ -114,12 +114,12 @@ private:
     SVGFontExport&          mrFontExport;
 	SvXMLElementExport*		mpElemFont;
 	SvXMLElementExport*		mpElemPaint;
-							
+
                             SVGAttributeWriter();
-                     
+
     void                    ImplGetColorStr( const Color& rColor, ::rtl::OUString& rColorStr );
     double                  ImplRound( double fVal, sal_Int32 nDecs = 3 );
-                   
+
 public:
 
 							SVGAttributeWriter( SVGExport& rExport, SVGFontExport& rFontExport );
@@ -127,9 +127,9 @@ public:
 
     void                    AddColorAttr( const char* pColorAttrName, const char* pColorOpacityAttrName, const Color& rColor );
     void                    AddGradientDef( const Rectangle& rObjRect,const Gradient& rGradient, ::rtl::OUString& rGradientId );
-    void                    AddPaintAttr( const Color& rLineColor, const Color& rFillColor, 
+    void                    AddPaintAttr( const Color& rLineColor, const Color& rFillColor,
                                           const Rectangle* pObjBoundRect = NULL, const Gradient* pFillGradient = NULL );
-    
+
     void                    SetFontAttr( const Font& rFont );
 };
 
@@ -191,32 +191,32 @@ private:
 	SVGAttributeWriter*		ImplAcquireContext() { maContextStack.Push( mpContext = new SVGAttributeWriter( mrExport, mrFontExport ) ); return mpContext; }
 	void					ImplReleaseContext() { delete (SVGAttributeWriter*)	maContextStack.Pop(); mpContext = (SVGAttributeWriter*) maContextStack.Top(); }
 
-	long					ImplMap( sal_Int32 nVal ) const; 
+	long					ImplMap( sal_Int32 nVal ) const;
 	Point&					ImplMap( const Point& rPt, Point& rDstPt ) const;
 	Size&					ImplMap( const Size& rSz, Size& rDstSz ) const;
 	Rectangle&              ImplMap( const Rectangle& rRect, Rectangle& rDstRect ) const;
     Polygon&                ImplMap( const Polygon& rPoly, Polygon& rDstPoly ) const;
     PolyPolygon&            ImplMap( const PolyPolygon& rPolyPoly, PolyPolygon& rDstPolyPoly ) const;
 
-	void					ImplWriteLine( const Point& rPt1, const Point& rPt2, const Color* pLineColor = NULL, 
+	void					ImplWriteLine( const Point& rPt1, const Point& rPt2, const Color* pLineColor = NULL,
                                            sal_Bool bApplyMapping = sal_True );
-	void					ImplWriteRect( const Rectangle& rRect, long nRadX = 0, long nRadY = 0, 
+	void					ImplWriteRect( const Rectangle& rRect, long nRadX = 0, long nRadY = 0,
                                            sal_Bool bApplyMapping = sal_True );
-	void					ImplWriteEllipse( const Point& rCenter, long nRadX, long nRadY, 
+	void					ImplWriteEllipse( const Point& rCenter, long nRadX, long nRadY,
                                               sal_Bool bApplyMapping = sal_True );
-	void					ImplWritePolyPolygon( const PolyPolygon& rPolyPoly, sal_Bool bLineOnly, 
+	void					ImplWritePolyPolygon( const PolyPolygon& rPolyPoly, sal_Bool bLineOnly,
                                                   sal_Bool bApplyMapping = sal_True );
     void                    ImplWriteShape( const SVGShapeDescriptor& rShape, sal_Bool bApplyMapping = sal_True );
-    void					ImplWriteGradientEx( const PolyPolygon& rPolyPoly, const Gradient& rGradient, sal_uInt32 nWriteFlags, 
+    void					ImplWriteGradientEx( const PolyPolygon& rPolyPoly, const Gradient& rGradient, sal_uInt32 nWriteFlags,
                                                  sal_Bool bApplyMapping = sal_True );
-	void					ImplWriteText( const Point& rPos, const String& rText, const sal_Int32* pDXArray, long nWidth, 
+	void					ImplWriteText( const Point& rPos, const String& rText, const sal_Int32* pDXArray, long nWidth,
                                            sal_Bool bApplyMapping = sal_True );
-	void					ImplWriteBmp( const BitmapEx& rBmpEx, const Point& rPt, const Size& rSz, const Point& rSrcPt, const Size& rSrcSz, 
+	void					ImplWriteBmp( const BitmapEx& rBmpEx, const Point& rPt, const Size& rSz, const Point& rSrcPt, const Size& rSrcSz,
                                           sal_Bool bApplyMapping = sal_True );
 
 	void					ImplCheckFontAttributes();
 	void					ImplCheckPaintAttributes();
-	
+
 	void					ImplWriteActions( const GDIMetaFile& rMtf, sal_uInt32 nWriteFlags, const ::rtl::OUString* pElementId );
 
 public:
@@ -228,33 +228,33 @@ public:
 							SVGActionWriter( SVGExport& rExport, SVGFontExport& rFontExport );
 	virtual					~SVGActionWriter();
 
-	void					WriteMetaFile( const Point& rPos100thmm, 
+	void					WriteMetaFile( const Point& rPos100thmm,
                                            const Size& rSize100thmm,
-										   const GDIMetaFile& rMtf, 
+										   const GDIMetaFile& rMtf,
 										   sal_uInt32 nWriteFlags,
                                            const ::rtl::OUString* pElementId = NULL );
 };
 
 class SVGWriter : public NMSP_CPPU::OWeakObject, NMSP_SVG::XSVGWriter, com::sun::star::lang::XInitialization
-{	
+{
 private:
 
 	REF( NMSP_LANG::XMultiServiceFactory )									mxFact;
 	com::sun::star::uno::Sequence< com::sun::star::beans::PropertyValue >	maFilterData;
 
 											SVGWriter();
-											
-public:										
-											
+
+public:
+
 											SVGWriter( const REF( NMSP_LANG::XMultiServiceFactory )& rxMgr );
 	virtual 								~SVGWriter();
-											
-	// XInterface							
+
+	// XInterface
 	virtual NMSP_UNO::Any SAL_CALL			queryInterface( const NMSP_UNO::Type & rType ) throw( NMSP_UNO::RuntimeException );
     virtual void SAL_CALL					acquire() throw();
     virtual void SAL_CALL					release() throw();
-											
-	// XSVGWriter							
+
+	// XSVGWriter
 	virtual void SAL_CALL					write( const REF( NMSP_SAX::XDocumentHandler )& rxDocHandler,
 												   const SEQ( sal_Int8 )& rMtfSeq ) throw( NMSP_UNO::RuntimeException );
 
@@ -268,12 +268,12 @@ public:
 
 // -----------------------------------------------------------------------------
 
-sal_Bool SAL_CALL SVGWriter_supportsService( const ::rtl::OUString& ServiceName ) 
+sal_Bool SAL_CALL SVGWriter_supportsService( const ::rtl::OUString& ServiceName )
 	throw ( ::com::sun::star::uno::RuntimeException );
 
 // -----------------------------------------------------------------------------
 
-::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL SVGWriter_getSupportedServiceNames(  ) 
+::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL SVGWriter_getSupportedServiceNames(  )
 	throw ( ::com::sun::star::uno::RuntimeException );
 
 // -----------------------------------------------------------------------------

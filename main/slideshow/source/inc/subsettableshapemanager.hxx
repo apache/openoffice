@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -66,7 +66,7 @@ namespace slideshow
                 @param rSubsetShape
                 The subset to display in the generated shape.
              */
-            virtual boost::shared_ptr<AttributableShape> getSubsetShape( 
+            virtual boost::shared_ptr<AttributableShape> getSubsetShape(
                 const boost::shared_ptr<AttributableShape>& rOrigShape,
                 const DocTreeNode&                          rTreeNode ) = 0;
 
@@ -83,7 +83,7 @@ namespace slideshow
                 @param rSubsetShape
                 The subset created from rOrigShape
              */
-            virtual void revokeSubset( 
+            virtual void revokeSubset(
                 const boost::shared_ptr<AttributableShape>& rOrigShape,
                 const boost::shared_ptr<AttributableShape>& rSubsetShape ) = 0;
 
@@ -91,7 +91,7 @@ namespace slideshow
 
             /** Register an event handler that will be called when
                 user paint parameters change.
-        
+
                 @param rHandler
                 Handler to call when a shape listener changes
             */
@@ -99,7 +99,7 @@ namespace slideshow
             virtual void removeIntrinsicAnimationHandler( const IntrinsicAnimationEventHandlerSharedPtr& rHandler ) = 0;
 
             /** Notify that shape-intrinsic animations are now enabled.
-        
+
                 @return true, if this event was processed by
                 anybody. If false is returned, no handler processed
                 this event (and probably, nothing will happen at all)
@@ -107,7 +107,7 @@ namespace slideshow
             virtual bool notifyIntrinsicAnimationsEnabled() = 0;
 
             /** Notify that shape-intrinsic animations are now disabled.
-        
+
                 @return true, if this event was processed by
                 anybody. If false is returned, no handler processed
                 this event (and probably, nothing will happen at all)

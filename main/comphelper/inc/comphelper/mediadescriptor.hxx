@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -212,23 +212,23 @@ class COMPHELPER_DLLPUBLIC MediaDescriptor : public SequenceAsHashMap
         //---------------------------------------
         /** Inserts a value into the sequence contained in the property
             'ComponentData' of the media descriptor.
-            
+
             @descr  The property 'ComponentData' should be empty, or should
                 contain a value of type sequence<com.sun.star.beans.NamedValue>
                 or sequence<com.sun.star.beans.PropertyValue>. The passed value
                 will be inserted into the sequence, or, if already existing,
                 will be overwritten.
-                
+
             @param rName  The name of the value to be inserted into the
                 sequence of the 'ComponentData' property.
-                
+
             @param rValue  The value to be inserted into the sequence of the
                 'ComponentData' property.
          */
         void setComponentDataEntry(
             const ::rtl::OUString& rName,
             const ::com::sun::star::uno::Any& rValue );
-            
+
         //---------------------------------------
         /** Removes a value from the sequence contained in the property
             'ComponentData' of the media descriptor.

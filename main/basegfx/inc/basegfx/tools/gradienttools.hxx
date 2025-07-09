@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -105,7 +105,7 @@ namespace basegfx
             maBackTextureTransform = rODFGradientInfo.maBackTextureTransform;
             mfAspectRatio = rODFGradientInfo.getAspectRatio();
             mnSteps = rODFGradientInfo.getSteps();
-            
+
             return *this;
         }
 
@@ -148,9 +148,9 @@ namespace basegfx
             Gradient angle (from ODF)
          */
         BASEGFX_DLLPUBLIC ODFGradientInfo createLinearODFGradientInfo(
-            const B2DRange& rTargetArea, 
-            sal_uInt32 nSteps, 
-            double fBorder, 
+            const B2DRange& rTargetArea,
+            sal_uInt32 nSteps,
+            double fBorder,
             double fAngle);
 
         /** Calculate linear gradient blend value
@@ -196,9 +196,9 @@ namespace basegfx
             Gradient angle (from ODF)
          */
         BASEGFX_DLLPUBLIC ODFGradientInfo createAxialODFGradientInfo(
-            const B2DRange& rTargetArea, 
-            sal_uInt32 nSteps, 
-            double fBorder, 
+            const B2DRange& rTargetArea,
+            sal_uInt32 nSteps,
+            double fBorder,
             double fAngle);
 
         /** Calculate axial gradient blend value
@@ -239,11 +239,11 @@ namespace basegfx
             Gradient angle (from ODF)
          */
         BASEGFX_DLLPUBLIC ODFGradientInfo createRadialODFGradientInfo(
-            const B2DRange& rTargetArea, 
+            const B2DRange& rTargetArea,
             const B2DVector& rOffset,
-            sal_uInt32 nSteps, 
+            sal_uInt32 nSteps,
             double fBorder);
-        
+
         /** Calculate radial gradient blend value
 
             This method generates you the lerp alpha value for
@@ -282,10 +282,10 @@ namespace basegfx
             Gradient angle (from ODF)
          */
         BASEGFX_DLLPUBLIC ODFGradientInfo createEllipticalODFGradientInfo(
-            const B2DRange& rTargetArea, 
+            const B2DRange& rTargetArea,
             const B2DVector& rOffset,
-            sal_uInt32 nSteps, 
-            double fBorder, 
+            sal_uInt32 nSteps,
+            double fBorder,
             double fAngle);
 
         /** Calculate elliptical gradient blend value
@@ -326,10 +326,10 @@ namespace basegfx
             Gradient angle (from ODF)
          */
         BASEGFX_DLLPUBLIC ODFGradientInfo createSquareODFGradientInfo(
-            const B2DRange& rTargetArea, 
+            const B2DRange& rTargetArea,
             const B2DVector& rOffset,
-            sal_uInt32 nSteps, 
-            double fBorder, 
+            sal_uInt32 nSteps,
+            double fBorder,
             double fAngle);
 
         /** Calculate square gradient blend value
@@ -370,10 +370,10 @@ namespace basegfx
             Gradient angle (from ODF)
          */
         BASEGFX_DLLPUBLIC ODFGradientInfo createRectangularODFGradientInfo(
-            const B2DRange& rTargetArea, 
+            const B2DRange& rTargetArea,
             const B2DVector& rOffset,
-            sal_uInt32 nSteps, 
-            double fBorder, 
+            sal_uInt32 nSteps,
+            double fBorder,
             double fAngle);
 
         /** Calculate rectangular gradient blend value

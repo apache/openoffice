@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -35,8 +35,8 @@
 
 #include <libxml/tree.h>
 
-class SEInitializer_MSCryptImpl : public cppu::WeakImplHelper2 
-< 
+class SEInitializer_MSCryptImpl : public cppu::WeakImplHelper2
+<
 	com::sun::star::xml::crypto::XSEInitializer,
 	com::sun::star::lang::XServiceInfo
 >
@@ -61,39 +61,39 @@ class SEInitializer_MSCryptImpl : public cppu::WeakImplHelper2
 {
 private:
 	com::sun::star::uno::Reference< com::sun::star::lang::XMultiServiceFactory > mxMSF;
-	
+
 public:
 	SEInitializer_MSCryptImpl(const com::sun::star::uno::Reference< com::sun::star::lang::XMultiServiceFactory > &rxMSF);
 	virtual ~SEInitializer_MSCryptImpl();
 
 	/* XSEInitializer */
-	virtual com::sun::star::uno::Reference< 
+	virtual com::sun::star::uno::Reference<
 		com::sun::star::xml::crypto::XXMLSecurityContext >
 		SAL_CALL createSecurityContext( const rtl::OUString& certDB )
 		throw (com::sun::star::uno::RuntimeException);
-		
+
 	virtual void SAL_CALL freeSecurityContext( const com::sun::star::uno::Reference<
 		com::sun::star::xml::crypto::XXMLSecurityContext >& securityContext )
 		throw (com::sun::star::uno::RuntimeException);
-	
+
 	/* XServiceInfo */
-	virtual rtl::OUString SAL_CALL getImplementationName(  ) 
+	virtual rtl::OUString SAL_CALL getImplementationName(  )
 		throw (com::sun::star::uno::RuntimeException);
-		
-	virtual sal_Bool SAL_CALL supportsService( const rtl::OUString& ServiceName ) 
+
+	virtual sal_Bool SAL_CALL supportsService( const rtl::OUString& ServiceName )
 		throw (com::sun::star::uno::RuntimeException);
-		
-	virtual com::sun::star::uno::Sequence< rtl::OUString > SAL_CALL getSupportedServiceNames(  ) 
+
+	virtual com::sun::star::uno::Sequence< rtl::OUString > SAL_CALL getSupportedServiceNames(  )
 		throw (com::sun::star::uno::RuntimeException);
 };
 
 rtl::OUString SEInitializer_MSCryptImpl_getImplementationName()
 	throw ( com::sun::star::uno::RuntimeException );
 
-sal_Bool SAL_CALL SEInitializer_MSCryptImpl_supportsService( const rtl::OUString& ServiceName ) 
+sal_Bool SAL_CALL SEInitializer_MSCryptImpl_supportsService( const rtl::OUString& ServiceName )
 	throw ( com::sun::star::uno::RuntimeException );
 
-com::sun::star::uno::Sequence< rtl::OUString > SAL_CALL SEInitializer_MSCryptImpl_getSupportedServiceNames(  ) 
+com::sun::star::uno::Sequence< rtl::OUString > SAL_CALL SEInitializer_MSCryptImpl_getSupportedServiceNames(  )
 	throw ( com::sun::star::uno::RuntimeException );
 
 com::sun::star::uno::Reference< com::sun::star::uno::XInterface >

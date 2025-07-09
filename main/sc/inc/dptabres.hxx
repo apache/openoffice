@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -279,7 +279,7 @@ private:
     sal_Bool      mbInitChild;
     sal_Bool      mbAllChildren;
 public:
-    LateInitParams( const ::std::vector<ScDPDimension*>& ppDim, const ::std::vector<ScDPLevel*>& ppLev,  
+    LateInitParams( const ::std::vector<ScDPDimension*>& ppDim, const ::std::vector<ScDPLevel*>& ppLev,
         sal_Bool bRow, sal_Bool bInitChild = sal_True , sal_Bool bAllChildren = sal_False);
     ~LateInitParams();
 
@@ -388,13 +388,13 @@ public:
 
     // Wang Xu Ming -- 2009-8-17
     // DataPilot Migration - Cache&&Performance
-    void                InitFrom( const ::std::vector<ScDPDimension*>& ppDim, 
+    void                InitFrom( const ::std::vector<ScDPDimension*>& ppDim,
                                         const ::std::vector<ScDPLevel*>& ppLev,
-                                        size_t nPos, 
-                                        ScDPInitState& rInitState, 
+                                        size_t nPos,
+                                        ScDPInitState& rInitState,
                                         sal_Bool bInitChild = sal_True );
-    void               LateInitFrom( 
-                                        LateInitParams& rParams, 
+    void               LateInitFrom(
+                                        LateInitParams& rParams,
                                         const ::std::vector< SCROW >& pItemData,
                                         size_t nPos,
                                         ScDPInitState& rInitState);
@@ -568,7 +568,7 @@ private:
     ScDPResultMember*        InsertMember( ScDPParentDimData* pMemberData );
     ResultMembers*               GetResultMember( ScDPDimension* pDim, ScDPLevel* pLevel );
     void                                  InitWithMembers( LateInitParams& rParams,
-                                                            const ::std::vector< SCROW >& pItemData, 
+                                                            const ::std::vector< SCROW >& pItemData,
                                                             size_t  nPos,
                                                             ScDPInitState& rInitState  );
     // End Comments
@@ -579,11 +579,11 @@ public:
                         //	allocates new members
     // Wang Xu Ming -- 2009-8-17
     // DataPilot Migration - Cache&&Performance
-    void                InitFrom( const ::std::vector<ScDPDimension*>& ppDim, 
+    void                InitFrom( const ::std::vector<ScDPDimension*>& ppDim,
                                         const ::std::vector<ScDPLevel*>& ppLev,
                                         size_t nPos,
                                         ScDPInitState& rInitState ,  sal_Bool bInitChild = sal_True );
-    void                LateInitFrom(  LateInitParams& rParams, 
+    void                LateInitFrom(  LateInitParams& rParams,
                                         const ::std::vector< SCROW >& pItemData,
                                         size_t nPos,
                                         ScDPInitState& rInitState );
@@ -595,7 +595,7 @@ public:
     // Wang Xu Ming -- 2009-8-17
     // DataPilot Migration - Cache&&Performance
     bool                IsValidEntry( const ::std::vector<SCROW>& aMembers ) const;
-   
+
     //	modifies existing members, allocates data dimensions
 	void				ProcessData( const ::std::vector<SCROW>& aMembers,
                                      const ScDPResultDimension* pDataDim,
@@ -702,7 +702,7 @@ public:
 
 // ----------------------------------------------------------------------------
 
-/** 
+/**
  * This class collects visible members of each dimension and uses that
  * information to create filtering criteria (e.g. for drill-down data).
  */

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -85,8 +85,8 @@ typedef std::auto_ptr< migrations_v > migrations_vr;
 typedef std::vector< supported_migration > migrations_available;
 
 //__________________________________________
-/**  
-	define the item, e.g.:menuitem, toolbaritem, to be migrated. we keep the information 
+/**
+	define the item, e.g.:menuitem, toolbaritem, to be migrated. we keep the information
 	of the command URL, the previous sibling node and the parent node of a item
 */
 struct MigrationItem
@@ -101,9 +101,9 @@ struct MigrationItem
 	{
 	}
 
-	MigrationItem(const ::rtl::OUString& sParentNodeName, 
-		const ::rtl::OUString& sPrevSibling, 
-		const ::rtl::OUString& sCommandURL, 
+	MigrationItem(const ::rtl::OUString& sParentNodeName,
+		const ::rtl::OUString& sPrevSibling,
+		const ::rtl::OUString& sCommandURL,
 		const NS_UNO::Reference< NS_CSS::container::XIndexContainer > xPopupMenu)
 	{
 		m_sParentNodeName = sParentNodeName;
@@ -133,9 +133,9 @@ struct MigrationItem
 	::rtl::OUString GetPrevSibling() const { return m_sPrevSibling; }
 };
 
-typedef ::std::hash_map< ::rtl::OUString, 
-						 ::std::vector< MigrationItem >, 
-						 ::rtl::OUStringHash, 
+typedef ::std::hash_map< ::rtl::OUString,
+						 ::std::vector< MigrationItem >,
+						 ::rtl::OUStringHash,
 						 ::std::equal_to< ::rtl::OUString > > MigrationHashMap;
 
 struct MigrationItemInfo
@@ -167,7 +167,7 @@ struct MigrationModuleInfo
 
 //__________________________________________
 /**
-	get the information before copying the ui configuration files of old version to new version 
+	get the information before copying the ui configuration files of old version to new version
 */
 class NewVersionUIInfo
 {
@@ -191,7 +191,7 @@ class MigrationImpl
 private:
     strings_vr m_vrVersions;
     NS_UNO::Reference< NS_CSS::lang::XMultiServiceFactory > m_xFactory;
-    
+
     migrations_available m_vMigrationsAvailable; // list of all available migrations
     migrations_vr        m_vrMigrations;         // list of all migration specs from config
     install_info         m_aInfo;                // info about the version being migrated
@@ -215,10 +215,10 @@ private:
 
 	::std::vector< MigrationModuleInfo > dectectUIChangesForAllModules() const;
 	void compareOldAndNewConfig(const ::rtl::OUString& sParentNodeName,
-		const NS_UNO::Reference< NS_CSS::container::XIndexContainer >& xOldIndexContainer, 
+		const NS_UNO::Reference< NS_CSS::container::XIndexContainer >& xOldIndexContainer,
 		const NS_UNO::Reference< NS_CSS::container::XIndexContainer >& xNewIndexContainer,
 		const ::rtl::OUString& sToolbarName);
-	void mergeOldToNewVersion(const NS_UNO::Reference< NS_CSS::ui::XUIConfigurationManager >& xCfgManager, 
+	void mergeOldToNewVersion(const NS_UNO::Reference< NS_CSS::ui::XUIConfigurationManager >& xCfgManager,
 		const NS_UNO::Reference< NS_CSS::container::XIndexContainer>& xIndexContainer,
 		const ::rtl::OUString& sModuleIdentifier,
 		const ::rtl::OUString& sResourceURL);
@@ -231,7 +231,7 @@ private:
 
     void setMigrationCompleted();
     sal_Bool checkMigrationCompleted();
-    
+
 public:
     MigrationImpl(const NS_UNO::Reference< NS_CSS::lang::XMultiServiceFactory >&);
     ~MigrationImpl();
@@ -239,7 +239,7 @@ public:
     sal_Bool checkMigration();
     rtl::OUString getOldVersionName();
 
-    
+
 };
 }
 #undef NS_CSS

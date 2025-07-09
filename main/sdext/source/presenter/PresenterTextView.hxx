@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -53,7 +53,7 @@ public:
         const ::boost::function<void(const css::awt::Rectangle&)>&
             rInvalidator);
     ~PresenterTextCaret (void);
-        
+
     void ShowCaret (void);
     void HideCaret (void);
 
@@ -62,7 +62,7 @@ public:
     void SetPosition (
         const sal_Int32 nParagraphIndex,
         const sal_Int32 nCharacterIndex);
-    
+
     bool IsVisible (void) const;
 
     /** Set a (possibly empty) functor that broadcasts changes of the caret
@@ -188,7 +188,7 @@ private:
         double mnBaseLine;
         double mnWidth;
         cssu::Sequence<css::geometry::RealRectangle2D> maCellBoxes;
-        
+
         sal_Int32 GetLength (void) const;
         void ProvideLayoutedLine (
             const ::rtl::OUString& rsParagraphText,
@@ -218,7 +218,7 @@ private:
     /// the whole text.
     sal_Int32 mnCharacterOffset;
     ::std::vector<Cell> maCells;
-    
+
     void AddWord (
         const double nWidth,
         css::i18n::Boundary& rCurrentLine,
@@ -254,11 +254,11 @@ public:
     void SetText (const css::uno::Reference<css::text::XText>& rxText);
     void SetText (const ::rtl::OUString& rsText);
     void SetTextChangeBroadcaster (const ::boost::function<void(void)>& rBroadcaster);
-    
+
     void SetLocation (const css::geometry::RealPoint2D& rLocation);
     void SetSize (const css::geometry::RealSize2D& rSize);
     double GetTotalTextHeight (void);
-    
+
     void SetFont (const PresenterTheme::SharedFontDescriptor& rpFont);
 
     void SetOffset (
@@ -276,7 +276,7 @@ public:
     void MoveCaret (
         const sal_Int32 nDistance,
         const sal_Int16 nTextType);
-        
+
     void Paint (const css::awt::Rectangle& rUpdateBox);
 
     SharedPresenterTextCaret GetCaret (void) const;

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -60,7 +60,7 @@ const sal_uInt16 errInterpOverflow       = 527;
 // Not displayed, temporary for TrackFormulas,
 // Cell depends on another cell that has errCircularReference
 const sal_uInt16 errTrackFromCircRef     = 528;
-// ScInterpreter internal:  no numeric value but numeric queried. If this is 
+// ScInterpreter internal:  no numeric value but numeric queried. If this is
 // set as mnStringNoValueError no error is generated but 0 returned.
 const sal_uInt16 errCellNoValue          = 529;
 // Interpreter: needed AddIn not found
@@ -71,9 +71,9 @@ const sal_uInt16 errNoMacro              = 531;
 const sal_uInt16 errDivisionByZero       = 532; // #DIV/0!
 // Compiler: a non-simple (str,err,val) value was put in an array
 const sal_uInt16 errNestedArray          = 533;
-// ScInterpreter internal:  no numeric value but numeric queried. If this is 
-// temporarily (!) set as mnStringNoValueError, the error is generated and can 
-// be used to distinguish that condition from all other (inherited) errors. Do 
+// ScInterpreter internal:  no numeric value but numeric queried. If this is
+// temporarily (!) set as mnStringNoValueError, the error is generated and can
+// be used to distinguish that condition from all other (inherited) errors. Do
 // not use for anything else! Never push or inherit the error otherwise!
 const sal_uInt16 errNotNumericString     = 534;
 

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -58,7 +58,7 @@ public:
 	TYPEINFO();
 
 	const ::rtl::OUString& GetQName() const { return m_aQName; }
-	sal_Bool HasQName( sal_uInt16 nPrefix, 
+	sal_Bool HasQName( sal_uInt16 nPrefix,
 					   ::xmloff::token::XMLTokenEnum eToken ) const;
 	sal_Bool HasNamespace( sal_uInt16 nPrefix ) const;
 
@@ -66,7 +66,7 @@ public:
 	// starts. Namespace processing has been done already.
 	// Note that virtual methods cannot be used inside constructors. Use
 	// StartElement instead if this is required.
-	XMLTransformerContext( XMLTransformerBase& rTransformer, 
+	XMLTransformerContext( XMLTransformerBase& rTransformer,
 						const ::rtl::OUString& rQName );
 
 	// A contexts destructor does anything that is required if an element
@@ -99,7 +99,7 @@ public:
 	// Is the current context a persistent one (i.e. one that saves is content
 	// rather than exporting it directly?
 	virtual sal_Bool IsPersistent() const;
-	
+
 	// Export the whole element. By default, nothing is done here
 	virtual void Export();
 

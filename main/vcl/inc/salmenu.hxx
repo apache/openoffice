@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -50,7 +50,7 @@ struct SalMenuButtonItem
     sal_uInt16              mnId;
     Image               maImage;
     rtl::OUString       maToolTipText;
-    
+
     SalMenuButtonItem() : mnId( 0 ) {}
     SalMenuButtonItem( sal_uInt16 i_nId, const Image& rImg, const rtl::OUString& i_rTTText = rtl::OUString() )
     : mnId( i_nId ), maImage( rImg ), maToolTipText( i_rTTText ) {}
@@ -85,7 +85,7 @@ public:
 	virtual bool ShowNativePopupMenu(FloatingWindow * pWin, const Rectangle& rRect, sal_uLong nFlags);
     virtual bool AddMenuBarButton( const SalMenuButtonItem& ); // return false if not implemented or failure
     virtual void RemoveMenuBarButton( sal_uInt16 nId );
-    
+
     // return an empty rectangle if not implemented
     // return Rectangle( Point( -1, -1 ), Size( 1, 1 ) ) if menu bar buttons implemented
     // but rectangle cannot be determined

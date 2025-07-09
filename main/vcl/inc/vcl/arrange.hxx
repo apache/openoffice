@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -87,7 +87,7 @@ namespace vcl
             {}
 
             void deleteChild() { m_pChild.reset(); }
-            
+
             sal_Int32 getExpandPriority() const;
             Size getOptimalSize( WindowSizeType ) const;
             bool isVisible() const;
@@ -98,20 +98,20 @@ namespace vcl
         WindowArranger*             m_pParentArranger;
         Rectangle                   m_aManagedArea;
         long                        m_nOuterBorder;
-        
+
         rtl::OUString               m_aIdentifier;
-        
+
         virtual Element* getElement( size_t i_nIndex ) = 0;
         const Element* getConstElement( size_t i_nIndex ) const
         { return const_cast<WindowArranger*>(this)->getElement( i_nIndex ); }
- 
+
 
     public:
         static long getDefaultBorder();
-        
+
         static long getBorderValue( long nBorder )
         { return nBorder >= 0 ? nBorder : -nBorder * getDefaultBorder(); }
-        
+
         WindowArranger( WindowArranger* i_pParent = NULL )
         : m_pParentWindow( i_pParent ? i_pParent->m_pParentWindow : NULL )
         , m_pParentArranger( i_pParent )
@@ -129,7 +129,7 @@ namespace vcl
         // be direct children of that window
         // violating that condition will result in undefined behavior
         virtual void setParentWindow( Window* );
-        
+
         virtual void setParent( WindowArranger* );
 
         virtual size_t countElements() const = 0;
@@ -143,24 +143,24 @@ namespace vcl
             const Element* pEle = getConstElement( i_nIndex );
             return pEle ? pEle->m_pElement : NULL;
         }
-        
+
         virtual bool isVisible() const; // true if any element is visible
-        
+
         virtual com::sun::star::uno::Sequence< com::sun::star::beans::PropertyValue > getProperties() const;
         virtual void setProperties( const com::sun::star::uno::Sequence< com::sun::star::beans::PropertyValue >& );
-        
+
         sal_Int32 getExpandPriority( size_t i_nIndex ) const
         {
             const Element* pEle = getConstElement( i_nIndex );
             return pEle ? pEle->getExpandPriority() : 0;
         }
-        
+
         Size getMinimumSize( size_t i_nIndex ) const
         {
             const Element* pEle = getConstElement( i_nIndex );
             return pEle ? pEle->m_aMinSize : Size();
         }
-        
+
         bool setMinimumSize( size_t i_nIndex, const Size& i_rMinSize )
         {
             Element* pEle = getElement( i_nIndex );
@@ -180,7 +180,7 @@ namespace vcl
                 pEle->m_nBottomBorder = i_nBottom;
             }
         }
-        
+
         void getBorders( size_t i_nIndex, long* i_pLeft = NULL, long* i_pTop = NULL, long* i_pRight = NULL, long* i_pBottom = NULL ) const
         {
             const Element* pEle = getConstElement( i_nIndex );
@@ -192,8 +192,8 @@ namespace vcl
                 if( i_pBottom ) *i_pBottom = pEle->m_nBottomBorder;
             }
         }
-        
-        
+
+
         void show( bool i_bShow = true, bool i_bImmediateUpdate = true );
 
         void setManagedArea( const Rectangle& i_rArea )
@@ -208,10 +208,10 @@ namespace vcl
             m_nOuterBorder = i_nBorder;
             resize();
         }
-        
+
         const rtl::OUString getIdentifier() const
         { return m_aIdentifier; }
-        
+
         void setIdentifier( const rtl::OUString& i_rId )
         { m_aIdentifier = i_rId; }
     };
@@ -253,7 +253,7 @@ namespace vcl
         size_t addChild( WindowArranger* i_pNewChild, sal_Int32 i_nExpandPrio = 0, size_t i_nIndex = ~0 )
         { return addChild( boost::shared_ptr<WindowArranger>( i_pNewChild ), i_nExpandPrio, i_nIndex ); }
         void remove( boost::shared_ptr<WindowArranger> const & );
-        
+
         long getBorderWidth() const { return m_nBorderWidth; }
     };
 
@@ -294,13 +294,13 @@ namespace vcl
         void setElement( boost::shared_ptr<WindowArranger> const & );
         void setLabelColumnWidth( long i_nWidth )
         { m_nLabelColumnWidth = i_nWidth; }
-        
+
         Size getLabelSize( WindowSizeType i_eType ) const
         { return m_aLabel.getOptimalSize( i_eType ); }
         Size getElementSize( WindowSizeType i_eType ) const
         { return m_aElement.getOptimalSize( i_eType ); }
     };
-    
+
     class VCL_DLLPUBLIC LabelColumn : public RowOrColumn
     {
         long getLabelWidth() const;
@@ -309,10 +309,10 @@ namespace vcl
         : RowOrColumn( i_pParent, true, i_nBorderWidth )
         {}
         virtual ~LabelColumn();
-        
+
         virtual Size getOptimalSize( WindowSizeType ) const;
         virtual void resize();
-        
+
         // returns the index of the added label
         size_t addRow( Window* i_pLabel, boost::shared_ptr<WindowArranger> const& i_rElement, long i_nIndent = 0 );
         size_t addRow( Window* i_pLabel, Window* i_pElement, long i_nIndent = 0, const Size& i_rElementMinSize = Size() );
@@ -351,7 +351,7 @@ namespace vcl
         void setChild( WindowArranger* i_pChild, sal_Int32 i_nExpandPrio = 0 )
         { setChild( boost::shared_ptr<WindowArranger>( i_pChild ), i_nExpandPrio ); }
     };
-    
+
     class VCL_DLLPUBLIC Spacer : public WindowArranger
     {
         WindowArranger::Element     m_aElement;
@@ -382,18 +382,18 @@ namespace vcl
     {
         long    m_nBorderX;
         long    m_nBorderY;
-        
+
         struct MatrixElement : public WindowArranger::Element
         {
             sal_uInt32  m_nX;
             sal_uInt32  m_nY;
-            
+
             MatrixElement()
             : WindowArranger::Element()
             , m_nX( 0 )
             , m_nY( 0 )
             {}
-            
+
             MatrixElement( Window* i_pWin,
                            sal_uInt32 i_nX, sal_uInt32 i_nY,
                            boost::shared_ptr<WindowArranger> const & i_pChild = boost::shared_ptr<WindowArranger>(),
@@ -409,10 +409,10 @@ namespace vcl
 
         std::vector< MatrixElement >            m_aElements;
         std::map< sal_uInt64, size_t >          m_aMatrixMap;  // maps (x | (y << 32)) to index in m_aElements
-        
+
         sal_uInt64 getMap( sal_uInt32 i_nX, sal_uInt32 i_nY )
         { return static_cast< sal_uInt64 >(i_nX) | (static_cast< sal_uInt64>(i_nY) << 32 ); }
-        
+
         static void distributeExtraSize( std::vector<long>& io_rSizes, const std::vector<sal_Int32>& i_rPrios, long i_nExtraWidth );
 
         Size getOptimalSize( WindowSizeType,

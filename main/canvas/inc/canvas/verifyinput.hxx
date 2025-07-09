@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -36,7 +36,7 @@
 
 #include <canvas/canvastoolsdllapi.h>
 
-namespace com { namespace sun { namespace star { namespace geometry 
+namespace com { namespace sun { namespace star { namespace geometry
 {
     struct RealPoint2D;
     struct RealSize2D;
@@ -49,7 +49,7 @@ namespace com { namespace sun { namespace star { namespace geometry
     struct IntegerRectangle2D;
 } } } }
 
-namespace com { namespace sun { namespace star { namespace rendering 
+namespace com { namespace sun { namespace star { namespace rendering
 {
     struct RenderState;
     struct StrokeAttributes;
@@ -94,7 +94,7 @@ namespace canvas
          */
         CANVASTOOLS_DLLPUBLIC void verifyInput( const ::com::sun::star::geometry::AffineMatrix2D&	rMatrix,
                           const char*										pStr,
-                          const ::com::sun::star::uno::Reference< 
+                          const ::com::sun::star::uno::Reference<
                           	::com::sun::star::uno::XInterface >&			xIf,
                           ::sal_Int16										nArgPos );
 
@@ -117,7 +117,7 @@ namespace canvas
          */
         CANVASTOOLS_DLLPUBLIC void verifyInput( const ::com::sun::star::geometry::Matrix2D&	rMatrix,
                           const char*									pStr,
-                          const ::com::sun::star::uno::Reference< 
+                          const ::com::sun::star::uno::Reference<
                           	::com::sun::star::uno::XInterface >&		xIf,
                           ::sal_Int16									nArgPos );
 
@@ -140,7 +140,7 @@ namespace canvas
          */
         CANVASTOOLS_DLLPUBLIC void verifyInput( const ::com::sun::star::geometry::RealPoint2D&	rPoint,
                           const char*										pStr,
-                          const ::com::sun::star::uno::Reference< 
+                          const ::com::sun::star::uno::Reference<
                           	::com::sun::star::uno::XInterface >&			xIf,
                           ::sal_Int16										nArgPos );
 
@@ -163,7 +163,7 @@ namespace canvas
          */
         CANVASTOOLS_DLLPUBLIC void verifyInput( const ::com::sun::star::geometry::RealSize2D&	rSize,
                           const char*									pStr,
-                          const ::com::sun::star::uno::Reference< 
+                          const ::com::sun::star::uno::Reference<
                           	::com::sun::star::uno::XInterface >&		xIf,
                           ::sal_Int16									nArgPos );
 
@@ -186,7 +186,7 @@ namespace canvas
          */
         CANVASTOOLS_DLLPUBLIC void verifyInput( const ::com::sun::star::geometry::RealBezierSegment2D&	rSegment,
                           const char*												pStr,
-                          const ::com::sun::star::uno::Reference< 
+                          const ::com::sun::star::uno::Reference<
                           	::com::sun::star::uno::XInterface >&					xIf,
                           ::sal_Int16												nArgPos );
 
@@ -209,7 +209,7 @@ namespace canvas
          */
         CANVASTOOLS_DLLPUBLIC void verifyInput( const ::com::sun::star::geometry::RealPoint2D&	rPoint,
                           const char*										pStr,
-                          const ::com::sun::star::uno::Reference< 
+                          const ::com::sun::star::uno::Reference<
                           	::com::sun::star::uno::XInterface >&			xIf,
                           ::sal_Int16										nArgPos );
 
@@ -232,7 +232,7 @@ namespace canvas
          */
         CANVASTOOLS_DLLPUBLIC void verifyInput( const ::com::sun::star::geometry::RealRectangle2D&	rRect,
                           const char*											pStr,
-                          const ::com::sun::star::uno::Reference< 
+                          const ::com::sun::star::uno::Reference<
                           	::com::sun::star::uno::XInterface >&				xIf,
                           ::sal_Int16											nArgPos );
 
@@ -252,9 +252,9 @@ namespace canvas
 
 			@throws an lang::IllegalArgumentException, if anything is wrong
          */
-        CANVASTOOLS_DLLPUBLIC void verifyInput( const ::com::sun::star::rendering::ViewState&	viewState, 
+        CANVASTOOLS_DLLPUBLIC void verifyInput( const ::com::sun::star::rendering::ViewState&	viewState,
                           const char*									pStr,
-                          const ::com::sun::star::uno::Reference< 
+                          const ::com::sun::star::uno::Reference<
                                	::com::sun::star::uno::XInterface >&	xIf,
                           ::sal_Int16									nArgPos );
 
@@ -278,9 +278,9 @@ namespace canvas
 
 			@throws an lang::IllegalArgumentException, if anything is wrong
          */
-        CANVASTOOLS_DLLPUBLIC void verifyInput( const ::com::sun::star::rendering::RenderState&	renderState, 
+        CANVASTOOLS_DLLPUBLIC void verifyInput( const ::com::sun::star::rendering::RenderState&	renderState,
                           const char*										pStr,
-                          const ::com::sun::star::uno::Reference< 
+                          const ::com::sun::star::uno::Reference<
                                	::com::sun::star::uno::XInterface >&		xIf,
                           ::sal_Int16										nArgPos,
                           sal_Int32											nMinColorComponents=0 );
@@ -303,7 +303,7 @@ namespace canvas
          */
         CANVASTOOLS_DLLPUBLIC void verifyInput( const ::com::sun::star::rendering::StrokeAttributes&	strokeAttributes,
                           const char*											pStr,
-                          const ::com::sun::star::uno::Reference< 
+                          const ::com::sun::star::uno::Reference<
                                	::com::sun::star::uno::XInterface >&			xIf,
                           ::sal_Int16											nArgPos );
 
@@ -325,7 +325,7 @@ namespace canvas
          */
         CANVASTOOLS_DLLPUBLIC void verifyInput( const ::com::sun::star::rendering::Texture& 	texture,
                           const char*									pStr,
-                          const ::com::sun::star::uno::Reference< 
+                          const ::com::sun::star::uno::Reference<
                                	::com::sun::star::uno::XInterface >&	xIf,
                           ::sal_Int16									nArgPos );
 
@@ -347,7 +347,7 @@ namespace canvas
          */
         CANVASTOOLS_DLLPUBLIC void verifyInput( const ::com::sun::star::rendering::IntegerBitmapLayout& 	bitmapLayout,
                           const char*												pStr,
-                          const ::com::sun::star::uno::Reference< 
+                          const ::com::sun::star::uno::Reference<
                                	::com::sun::star::uno::XInterface >&				xIf,
                           ::sal_Int16												nArgPos );
 
@@ -369,7 +369,7 @@ namespace canvas
          */
         CANVASTOOLS_DLLPUBLIC void verifyInput( const ::com::sun::star::rendering::FloatingPointBitmapLayout& bitmapLayout,
                           const char*													pStr,
-                          const ::com::sun::star::uno::Reference< 
+                          const ::com::sun::star::uno::Reference<
                                	::com::sun::star::uno::XInterface >&					xIf,
                           ::sal_Int16													nArgPos );
 
@@ -391,7 +391,7 @@ namespace canvas
          */
         CANVASTOOLS_DLLPUBLIC void verifyInput( const ::com::sun::star::rendering::FontInfo&	fontInfo,
                           const char*									pStr,
-                          const ::com::sun::star::uno::Reference< 
+                          const ::com::sun::star::uno::Reference<
                                	::com::sun::star::uno::XInterface >&	xIf,
                           ::sal_Int16									nArgPos );
 
@@ -413,7 +413,7 @@ namespace canvas
          */
         CANVASTOOLS_DLLPUBLIC void verifyInput( const ::com::sun::star::rendering::FontRequest&	fontRequest,
                           const char*										pStr,
-                          const ::com::sun::star::uno::Reference< 
+                          const ::com::sun::star::uno::Reference<
                                	::com::sun::star::uno::XInterface >&		xIf,
                           ::sal_Int16										nArgPos );
 
@@ -433,10 +433,10 @@ namespace canvas
 
 			@throws an lang::IllegalArgumentException, if anything is wrong
          */
-        template< class Interface > void verifyInput( 
+        template< class Interface > void verifyInput(
             const ::com::sun::star::uno::Reference< Interface >&	rRef,
             const char*												pStr,
-            const ::com::sun::star::uno::Reference< 
+            const ::com::sun::star::uno::Reference<
             	::com::sun::star::uno::XInterface >&				xIf,
             ::sal_Int16												nArgPos )
         {
@@ -472,10 +472,10 @@ namespace canvas
 
 			@throws an lang::IllegalArgumentException, if anything is wrong
          */
-        template< typename SequenceContent > void verifyInput( 
+        template< typename SequenceContent > void verifyInput(
             const ::com::sun::star::uno::Sequence< SequenceContent >&	rSequence,
             const char*													pStr,
-            const ::com::sun::star::uno::Reference< 
+            const ::com::sun::star::uno::Reference<
             	::com::sun::star::uno::XInterface >&					xIf,
             ::sal_Int16													nArgPos )
         {
@@ -488,7 +488,7 @@ namespace canvas
         /// Catch-all, to handle cases that DON'T need input checking (i.e. the Integer geometry ones)
         template< typename T > void verifyInput( const T&									/*rDummy*/,
                                                  const char*								/*pStr*/,
-                                                 const ::com::sun::star::uno::Reference< 
+                                                 const ::com::sun::star::uno::Reference<
                                                        ::com::sun::star::uno::XInterface >&	/*xIf*/,
                                                  ::sal_Int16								/*nArgPos*/ )
         {
@@ -499,30 +499,30 @@ namespace canvas
 
         template< typename Arg0 > void verifyArgs( const Arg0& 									rArg0,
                                                    const char*									pStr,
-                                                   const ::com::sun::star::uno::Reference< 
+                                                   const ::com::sun::star::uno::Reference<
                                                    		::com::sun::star::uno::XInterface >&	xIf )
         {
             verifyInput( rArg0, pStr, xIf, 0 );
         }
 
-        template< typename Arg0, 
+        template< typename Arg0,
                   typename Arg1 > void verifyArgs( const Arg0& 									rArg0,
                                                    const Arg1& 									rArg1,
                                                    const char*									pStr,
-                                                   const ::com::sun::star::uno::Reference< 
+                                                   const ::com::sun::star::uno::Reference<
                                                    		::com::sun::star::uno::XInterface >&	xIf )
         {
             verifyInput( rArg0, pStr, xIf, 0 );
             verifyInput( rArg1, pStr, xIf, 1 );
         }
 
-        template< typename Arg0, 
-                  typename Arg1, 
+        template< typename Arg0,
+                  typename Arg1,
                   typename Arg2 > void verifyArgs( const Arg0& 									rArg0,
                                                    const Arg1& 									rArg1,
                                                    const Arg2& 									rArg2,
                                                    const char*									pStr,
-                                                   const ::com::sun::star::uno::Reference< 
+                                                   const ::com::sun::star::uno::Reference<
                                                    		::com::sun::star::uno::XInterface >&	xIf )
         {
             verifyInput( rArg0, pStr, xIf, 0 );
@@ -530,15 +530,15 @@ namespace canvas
             verifyInput( rArg2, pStr, xIf, 2 );
         }
 
-        template< typename Arg0, 
-                  typename Arg1, 
-                  typename Arg2, 
+        template< typename Arg0,
+                  typename Arg1,
+                  typename Arg2,
                   typename Arg3 > void verifyArgs( const Arg0& 									rArg0,
                                                    const Arg1& 									rArg1,
                                                    const Arg2& 									rArg2,
                                                    const Arg3& 									rArg3,
                                                    const char*									pStr,
-                                                   const ::com::sun::star::uno::Reference< 
+                                                   const ::com::sun::star::uno::Reference<
                                                    		::com::sun::star::uno::XInterface >&	xIf )
         {
             verifyInput( rArg0, pStr, xIf, 0 );
@@ -547,17 +547,17 @@ namespace canvas
             verifyInput( rArg3, pStr, xIf, 3 );
         }
 
-        template< typename Arg0, 
-                  typename Arg1, 
-                  typename Arg2, 
-                  typename Arg3, 
+        template< typename Arg0,
+                  typename Arg1,
+                  typename Arg2,
+                  typename Arg3,
                   typename Arg4 > void verifyArgs( const Arg0& 									rArg0,
                                                    const Arg1& 									rArg1,
                                                    const Arg2& 									rArg2,
                                                    const Arg3& 									rArg3,
                                                    const Arg4& 									rArg4,
                                                    const char*									pStr,
-                                                   const ::com::sun::star::uno::Reference< 
+                                                   const ::com::sun::star::uno::Reference<
                                                    		::com::sun::star::uno::XInterface >&	xIf )
         {
             verifyInput( rArg0, pStr, xIf, 0 );
@@ -567,11 +567,11 @@ namespace canvas
             verifyInput( rArg4, pStr, xIf, 4 );
         }
 
-        template< typename Arg0, 
-                  typename Arg1, 
-                  typename Arg2, 
-                  typename Arg3, 
-                  typename Arg4, 
+        template< typename Arg0,
+                  typename Arg1,
+                  typename Arg2,
+                  typename Arg3,
+                  typename Arg4,
                   typename Arg5 > void verifyArgs( const Arg0& 									rArg0,
                                                    const Arg1& 									rArg1,
                                                    const Arg2& 									rArg2,
@@ -579,7 +579,7 @@ namespace canvas
                                                    const Arg4& 									rArg4,
                                                    const Arg5& 									rArg5,
                                                    const char*									pStr,
-                                                   const ::com::sun::star::uno::Reference< 
+                                                   const ::com::sun::star::uno::Reference<
                                                    		::com::sun::star::uno::XInterface >&	xIf )
         {
             verifyInput( rArg0, pStr, xIf, 0 );
@@ -590,12 +590,12 @@ namespace canvas
             verifyInput( rArg5, pStr, xIf, 5 );
         }
 
-        template< typename Arg0, 
-                  typename Arg1, 
-                  typename Arg2, 
-                  typename Arg3, 
-                  typename Arg4, 
-                  typename Arg5, 
+        template< typename Arg0,
+                  typename Arg1,
+                  typename Arg2,
+                  typename Arg3,
+                  typename Arg4,
+                  typename Arg5,
                   typename Arg6 > void verifyArgs( const Arg0& 									rArg0,
                                                    const Arg1& 									rArg1,
                                                    const Arg2& 									rArg2,
@@ -604,7 +604,7 @@ namespace canvas
                                                    const Arg5& 									rArg5,
                                                    const Arg6& 									rArg6,
                                                    const char*									pStr,
-                                                   const ::com::sun::star::uno::Reference< 
+                                                   const ::com::sun::star::uno::Reference<
                                                    		::com::sun::star::uno::XInterface >&	xIf )
         {
             verifyInput( rArg0, pStr, xIf, 0 );
@@ -667,7 +667,7 @@ namespace canvas
 
         /** Range checker, which throws ::com::sun::star::lang::IndexOutOfBounds exception, when
             index range is violated
-            
+
             @param rect
             Rect to verify
 
@@ -679,7 +679,7 @@ namespace canvas
 
         /** Range checker, which throws ::com::sun::star::lang::IndexOutOfBounds exception, when
             index range is violated
-            
+
             @param pos
             Position to verify
 
@@ -691,24 +691,24 @@ namespace canvas
 
         /** Range checker, which throws ::com::sun::star::lang::IndexOutOfBounds exception, when
             the size is negative or null
-            
+
             @param size
             Size to verify
          */
 	    CANVASTOOLS_DLLPUBLIC void verifyBitmapSize( const ::com::sun::star::geometry::IntegerSize2D& size,
                                const char*										pStr,
-                               const ::com::sun::star::uno::Reference< 
+                               const ::com::sun::star::uno::Reference<
 		                               ::com::sun::star::uno::XInterface >&		xIf );
 
         /** Range checker, which throws ::com::sun::star::lang::IndexOutOfBounds exception, when
             the size is negative or null
-            
+
             @param size
             Size to verify
          */
 	    CANVASTOOLS_DLLPUBLIC void verifySpriteSize( const ::com::sun::star::geometry::RealSize2D& size,
                                const char*									 pStr,
-                               const ::com::sun::star::uno::Reference< 
+                               const ::com::sun::star::uno::Reference<
 		                               ::com::sun::star::uno::XInterface >&  xIf );
     }
 }

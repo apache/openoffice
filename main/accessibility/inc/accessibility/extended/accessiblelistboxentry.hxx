@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -86,7 +86,7 @@ namespace accessibility
 												, ::com::sun::star::accessibility::XAccessibleText
 												, ::com::sun::star::accessibility::XAccessibleValue
 										    	, ::com::sun::star::lang::XServiceInfo > AccessibleListBoxEntry_BASE;
-										    	
+
 	/** the class AccessibleListBoxEntry represents the class for an accessible object of a listbox entry */
 	class AccessibleListBoxEntry:public ::comphelper::OBaseMutex
 							   	,public AccessibleListBoxEntry_BASE
@@ -100,7 +100,7 @@ namespace accessibility
 		SvTreeListBox*						m_pListBox;
 		::std::deque< sal_Int32 >			m_aEntryPath;
 		SvLBoxEntry* 						m_pSvLBoxEntry;	// IA2 CWS. Needed for focused item...
-		
+
 
 	protected:
         /// client id in the AccessibleEventNotifier queue
@@ -148,9 +148,9 @@ namespace accessibility
 		AccessibleListBoxEntry(	SvTreeListBox& _rListBox, SvLBoxEntry* _pEntry,
 								const ::com::sun::star::uno::Reference<
 									::com::sun::star::accessibility::XAccessible >& _xParent );
-									
+
 		SvLBoxEntry* GetSvLBoxEntry() const { return m_pSvLBoxEntry; }
-									
+
 
 	protected:
 		// XTypeProvider

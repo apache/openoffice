@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -100,10 +100,10 @@ public:
 class SvStream;
 class ImplPolygon;
 class ImplPolyPolygon;
-class PolyPolygon; 
+class PolyPolygon;
 
-namespace basegfx 
-{ 
+namespace basegfx
+{
 	class B2DPolygon;
 	class B2DPolyPolygon;
 } // end of namespace basegfx
@@ -135,7 +135,7 @@ public:
                         Polygon( sal_uInt16 nPoints, const Point* pPtAry,
                                  const sal_uInt8* pFlagAry = NULL );
                         Polygon( const Rectangle& rRect );
-                        Polygon( const Rectangle& rRect, 
+                        Polygon( const Rectangle& rRect,
 								 sal_uIntPtr nHorzRound, sal_uIntPtr nVertRound );
                         Polygon( const Point& rCenter,
 								 long nRadX, long nRadY,
@@ -143,8 +143,8 @@ public:
                         Polygon( const Rectangle& rBound,
                                  const Point& rStart, const Point& rEnd,
                                  PolyStyle ePolyStyle = POLY_ARC );
-						Polygon( const Point& rBezPt1, const Point& rCtrlPt1, 
-								 const Point& rBezPt2, const Point& rCtrlPt2,  
+						Polygon( const Point& rBezPt1, const Point& rCtrlPt1,
+								 const Point& rBezPt2, const Point& rCtrlPt2,
 								 sal_uInt16 nPoints = 0 );
 
                         Polygon( const Polygon& rPoly );
@@ -184,7 +184,7 @@ public:
         @param rResult
         The resulting subdivided polygon
 
-        @param d 
+        @param d
         This parameter controls the amount of subdivision. The
         original curve is guaranteed to not differ by more than this
         amount per bezier segment from the subdivided
@@ -287,7 +287,7 @@ public:
         @param rResult
         The resulting subdivided polygon
 
-        @param d 
+        @param d
         This parameter controls the amount of subdivision. The
         original curve is guaranteed to not differ by more than this
         amount per bezier segment from the subdivided
