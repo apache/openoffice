@@ -1,5 +1,5 @@
 #**************************************************************
-#  
+#
 #  Licensed to the Apache Software Foundation (ASF) under one
 #  or more contributor license agreements.  See the NOTICE file
 #  distributed with this work for additional information
@@ -7,16 +7,16 @@
 #  to you under the Apache License, Version 2.0 (the
 #  "License"); you may not use this file except in compliance
 #  with the License.  You may obtain a copy of the License at
-#  
+#
 #    http://www.apache.org/licenses/LICENSE-2.0
-#  
+#
 #  Unless required by applicable law or agreed to in writing,
 #  software distributed under the License is distributed on an
 #  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
 #  KIND, either express or implied.  See the License for the
 #  specific language governing permissions and limitations
 #  under the License.
-#  
+#
 #**************************************************************
 
 # Builds the ProtocolHandlerAddon C++ component example of the SDK.
@@ -60,7 +60,7 @@ $(OUT_COMP_SLO)/%.$(OBJ_EXT) : %.cxx $(SDKTYPEFLAG)
 
 #$(COMP_MAPFILE) : $(SLOFILES)
 #	-$(MKDIR) $(subst /,$(PS),$(@D))
-#	cat $(PRJ)/settings/component.uno.map > $(COMP_MAPFILE) 
+#	cat $(PRJ)/settings/component.uno.map > $(COMP_MAPFILE)
 #ifeq "$(OS)" "MACOSX"
 #	nm -gx $(SLOFILES) | $(ADDSYMBOLS) >> $(COMP_MAPFILE)
 #endif
@@ -82,7 +82,7 @@ $(SHAREDLIB_OUT)/%.$(SHAREDLIB_EXT) : $(SLOFILES)
 ifeq "$(OS)" "MACOSX"
 	$(INSTALL_NAME_URELIBS)  $@
 endif
-endif	
+endif
 
 # rule for component package manifest
 $(OUT_COMP_GEN)/%/manifest.xml :
@@ -112,7 +112,7 @@ $(COMP_COMPONENTS) :
 # rule for component package file
 $(COMP_PACKAGE) : $(SHAREDLIB_OUT)/$(COMP_IMPL_NAME) Addons.xcu ProtocolHandler.xcu $(COMP_UNOPKG_MANIFEST) $(COMP_COMPONENTS)
 	-$(MKDIR) $(subst /,$(PS),$(@D)) && $(DEL) $(subst \\,\,$(subst /,$(PS),$@))
-	-$(MKDIR) $(subst /,$(PS),$(OUT_COMP_GEN)/$(UNOPKG_PLATFORM))	 
+	-$(MKDIR) $(subst /,$(PS),$(OUT_COMP_GEN)/$(UNOPKG_PLATFORM))
 	$(COPY) $(subst /,$(PS),$<) $(subst /,$(PS),$(OUT_COMP_GEN)/$(UNOPKG_PLATFORM))
 	cd $(subst /,$(PS),$(OUT_COMP_GEN)) && $(SDK_ZIP) ../../bin/$(@F) $(COMP_NAME).components
 	cd $(subst /,$(PS),$(OUT_COMP_GEN)) && $(SDK_ZIP) -u ../../bin/$(@F) $(UNOPKG_PLATFORM)/$(<F)
@@ -127,12 +127,12 @@ ifeq "$(SDK_AUTO_DEPLOYMENT)" "YES"
 else
 	@echo --------------------------------------------------------------------------------
 	@echo  If you want to install your component automatically, please set the environment
-	@echo  variable SDK_AUTO_DEPLOYMENT = YES. But note that auto deployment is only 
-	@echo  possible if no office instance is running. 
+	@echo  variable SDK_AUTO_DEPLOYMENT = YES. But note that auto deployment is only
+	@echo  possible if no office instance is running.
 	@echo --------------------------------------------------------------------------------
 endif
 
-Example : $(REGISTERFLAG) 
+Example : $(REGISTERFLAG)
 	@echo --------------------------------------------------------------------------------
 	@echo The "$(QM)ProtocolHandler$(QM)" addon component was installed if SDK_AUTO_DEPLOYMENT = YES.
 	@echo You can use this component inside your office installation, see the example

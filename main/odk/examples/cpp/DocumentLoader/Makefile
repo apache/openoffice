@@ -1,5 +1,5 @@
 #**************************************************************
-#  
+#
 #  Licensed to the Apache Software Foundation (ASF) under one
 #  or more contributor license agreements.  See the NOTICE file
 #  distributed with this work for additional information
@@ -7,16 +7,16 @@
 #  to you under the Apache License, Version 2.0 (the
 #  "License"); you may not use this file except in compliance
 #  with the License.  You may obtain a copy of the License at
-#  
+#
 #    http://www.apache.org/licenses/LICENSE-2.0
-#  
+#
 #  Unless required by applicable law or agreed to in writing,
 #  software distributed under the License is distributed on an
 #  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
 #  KIND, either express or implied.  See the License for the
 #  specific language governing permissions and limitations
 #  under the License.
-#  
+#
 #**************************************************************
 
 # Builds the C++ DocumentLoader example of the SDK.
@@ -69,7 +69,7 @@ endif
 CppDocumentLoaderExample : $(OUT_BIN)/DocumentLoader$(EXE_EXT)
 	@echo --------------------------------------------------------------------------------
 	@echo The example loads the "$(QM)test.odt$(QM)" document in the DocumentLoader example directory.
-	@echo If you want to load your own document, please use: 
+	@echo If you want to load your own document, please use:
 	@echo $(SQM)  $(SQM)DocumentLoader -env:URE_MORE_TYPES="$(QM)<fileurl_office_types_rdb>$(QM)" "$(QM)filename$(QM)" [connection_url]
 	@echo -
 	@echo Use the following command to execute the example!
@@ -77,8 +77,8 @@ CppDocumentLoaderExample : $(OUT_BIN)/DocumentLoader$(EXE_EXT)
 	@echo $(MAKE) DocumentLoader.run
 	@echo -
 	@echo NOTE: This example does not use the new UNO bootstrap mechanism, it uses still a socket
-	@echo $(SQM)      $(SQM)connection. The example use the defaultBootstrap_InitialComponentContext method and provides 
-	@echo $(SQM)      $(SQM)the additional office types via the UNO environment variable -env:URE_MORE_TYPES=... 
+	@echo $(SQM)      $(SQM)connection. The example use the defaultBootstrap_InitialComponentContext method and provides
+	@echo $(SQM)      $(SQM)the additional office types via the UNO environment variable -env:URE_MORE_TYPES=...
 	@echo $(SQM)      $(SQM)Before you can run this example you have to start your office in listening mode.
 	@echo -
 	@echo $(SQM)  $(SQM)soffice "$(QM)-accept=socket,host=localhost,port=2083;urp;StarOffice.ServiceManager$(QM)"
