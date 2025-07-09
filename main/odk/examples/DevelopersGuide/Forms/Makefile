@@ -1,5 +1,5 @@
 #**************************************************************
-#  
+#
 #  Licensed to the Apache Software Foundation (ASF) under one
 #  or more contributor license agreements.  See the NOTICE file
 #  distributed with this work for additional information
@@ -7,16 +7,16 @@
 #  to you under the Apache License, Version 2.0 (the
 #  "License"); you may not use this file except in compliance
 #  with the License.  You may obtain a copy of the License at
-#  
+#
 #    http://www.apache.org/licenses/LICENSE-2.0
-#  
+#
 #  Unless required by applicable law or agreed to in writing,
 #  software distributed under the License is distributed on an
 #  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
 #  KIND, either express or implied.  See the License for the
 #  specific language governing permissions and limitations
 #  under the License.
-#  
+#
 #**************************************************************
 
 # Builds the Forms example of the Developers Guide.
@@ -134,7 +134,7 @@ $(APP2_JAR) : $(SAMPLE_GEN_OUT)/$(APP2_NAME).mf $(APP2_CLASS_OUT)/$(APP2_NAME).c
 	+$(SDK_JAR) uvf $@ -C $(COMMON_CLASS_OUT) .
 	+$(SDK_JAR) uvf $@ $(SDK_JAVA_UNO_BOOTSTRAP_FILES)
 
-$(APP3_JAR) : $(SAMPLE_GEN_OUT)/$(APP3_NAME).mf $(APP3_CLASS_OUT)/$(APP3_NAME).class $(COMMON_CLASSFILES) 
+$(APP3_JAR) : $(SAMPLE_GEN_OUT)/$(APP3_NAME).mf $(APP3_CLASS_OUT)/$(APP3_NAME).class $(COMMON_CLASSFILES)
 	-$(DEL) $(subst \\,\,$(subst /,$(PS),$@))
 	-$(MKDIR) $(subst /,$(PS),$(@D))
 	+$(SDK_JAR) cvfm $@ $< -C $(APP3_CLASS_OUT) .
@@ -166,7 +166,7 @@ FormsExample : $(APP1_JAR)  $(APP2_JAR)  $(APP3_JAR)  $(APP4_JAR)
 	@echo $(SQM)      $(SQM)"$(QM)OO_SDK_Demo_DB$(QM)". Make sure that you have created such a data source,
 	@echo -
 	@echo The document "$(QM)ProgrammaticScriptAssignment.odt$(QM)" demonstrates
-	@echo how you can programmatically create form controls, and associated 
+	@echo how you can programmatically create form controls, and associated
 	@echo scripts with certain events.
 	@echo -
 	@echo $(MAKE) ProgrammaticScriptAssignment.odt.load
