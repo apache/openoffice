@@ -70,7 +70,7 @@
 <paragraph role="heading" id="hd_id3145171" xml-lang="en-US" level="2" l10n="CHG">$[officename] Quickstarter</paragraph>
 <!-- removed HID OFFMGR_CHECKBOX_OFA_TP_MEMORY_CB_QUICKLAUNCH -->
 <bookmark xml-lang="en-US" branch="hid/cui:CheckBox:OFA_TP_MEMORY:CB_QUICKLAUNCH" id="bm_id4756004" localize="false"/>
-<paragraph role="heading" id="hd_id3155429" xml-lang="en-US" level="3" l10n="CHG"><switchinline select="sys"><caseinline select="WIN">Load $[officename] during system start-up 
+<paragraph role="heading" id="hd_id3155429" xml-lang="en-US" level="3" l10n="CHG"><switchinline select="sys"><caseinline select="WIN">Load $[officename] during system start-up
 </caseinline><defaultinline>Enable systray Quickstarter</defaultinline></switchinline><comment>UFI: new text seen in m187, see CWS gtkquickstart</comment></paragraph>
 <paragraph role="paragraph" id="par_id3152940" xml-lang="en-US" l10n="CHG"><ahelp hid="OFFMGR_CHECKBOX_OFA_TP_MEMORY_CB_QUICKLAUNCH">Mark this check box if you want $[officename] to enable quickstart. This option is available if the Quickstart module has been installed.</ahelp><comment>UFI: had to remove explanation because on Windows it is at start-up, while on Unix it is a user-systray feature only. Cannot have switches inside AHID text.</comment></paragraph>
 </body>
