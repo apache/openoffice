@@ -1,5 +1,5 @@
 #**************************************************************
-#  
+#
 #  Licensed to the Apache Software Foundation (ASF) under one
 #  or more contributor license agreements.  See the NOTICE file
 #  distributed with this work for additional information
@@ -7,16 +7,16 @@
 #  to you under the Apache License, Version 2.0 (the
 #  "License"); you may not use this file except in compliance
 #  with the License.  You may obtain a copy of the License at
-#  
+#
 #    http://www.apache.org/licenses/LICENSE-2.0
-#  
+#
 #  Unless required by applicable law or agreed to in writing,
 #  software distributed under the License is distributed on an
 #  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
 #  KIND, either express or implied.  See the License for the
 #  specific language governing permissions and limitations
 #  under the License.
-#  
+#
 #**************************************************************
 
 # Builds the OfficeDevLinguistic examples of the Developers Guide.
@@ -110,10 +110,10 @@ $(OUT_COMP_CLASS)/%.Manifest :
 
 $(CLASSFILES) : $(JAVAFILES)
 	-$(MKDIR) $(subst /,$(PS),$(@D))
-	$(SDK_JAVAC) $(JAVAC_FLAGS) -classpath "$(SDK_CLASSPATH)" -d $(OUT_COMP_CLASS) $(JAVAFILES) 
+	$(SDK_JAVAC) $(JAVAC_FLAGS) -classpath "$(SDK_CLASSPATH)" -d $(OUT_COMP_CLASS) $(JAVAFILES)
 
-# NOTE: because of gnu make problems with full qualified paths, the pattern 
-# rules for the component jars and the packages doesn't work proper and we 
+# NOTE: because of gnu make problems with full qualified paths, the pattern
+# rules for the component jars and the packages doesn't work proper and we
 # defined explicit rules
 
 # rule for component package manifest
@@ -173,8 +173,8 @@ ifeq "$(SDK_AUTO_DEPLOYMENT)" "YES"
 else
 	@echo --------------------------------------------------------------------------------
 	@echo  If you want to install your component automatically, please set the environment
-	@echo  variable SDK_AUTO_DEPLOYMENT = YES. But note that auto deployment is only 
-	@echo  possible if no office instance is running. 
+	@echo  variable SDK_AUTO_DEPLOYMENT = YES. But note that auto deployment is only
+	@echo  possible if no office instance is running.
 	@echo --------------------------------------------------------------------------------
 endif
 
@@ -189,21 +189,21 @@ $(OUT_COMP_CLASS)/%.mf :
 	@echo Name: com/sun/star/lib/loader/Loader.class>> $@
 	@echo Application-Class: $*>> $@
 
-$(APP1_JAR) : $(OUT_COMP_CLASS)/$(APP1_NAME).mf $(OUT_COMP_CLASS)/$(APP1_NAME).class 
+$(APP1_JAR) : $(OUT_COMP_CLASS)/$(APP1_NAME).mf $(OUT_COMP_CLASS)/$(APP1_NAME).class
 	-$(DEL) $(subst \\,\,$(subst /,$(PS),$@))
 	-$(MKDIR) $(subst /,$(PS),$(@D))
 	+cd $(subst /,$(PS),$(OUT_COMP_CLASS)) && $(SDK_JAR) cvfm $(@F) $(basename $(@F)).mf $(basename $(@F)).class $(basename $(@F))$(QUOTE)$$Client.class
 	+$(SDK_JAR) uvf $@ $(SDK_JAVA_UNO_BOOTSTRAP_FILES)
 
 
-$(EXAMPLE_NAME) : $(REGISTERFLAG) $(APP1_JAR) 
+$(EXAMPLE_NAME) : $(REGISTERFLAG) $(APP1_JAR)
 	@echo --------------------------------------------------------------------------------
 	@echo Please use the following command to execute the example!
 	@echo -
-	@echo $(MAKE) $(APP1_NAME).run 
+	@echo $(MAKE) $(APP1_NAME).run
 	@echo --------
-	@echo Before you can run the examples the components "$(QM)$(COMP1_NAME)$(QM)", 
-	@echo "$(QM)$(COMP2_NAME)$(QM)" and "$(QM)$(COMP3_NAME)$(QM)" must be deployed. 
+	@echo Before you can run the examples the components "$(QM)$(COMP1_NAME)$(QM)",
+	@echo "$(QM)$(COMP2_NAME)$(QM)" and "$(QM)$(COMP3_NAME)$(QM)" must be deployed.
 	@echo The components will be automatically deployed if SDK_AUTO_DEPLOYMENT = YES.
 	@echo --------------------------------------------------------------------------------
 

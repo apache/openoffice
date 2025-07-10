@@ -1,5 +1,5 @@
 #**************************************************************
-#  
+#
 #  Licensed to the Apache Software Foundation (ASF) under one
 #  or more contributor license agreements.  See the NOTICE file
 #  distributed with this work for additional information
@@ -7,16 +7,16 @@
 #  to you under the Apache License, Version 2.0 (the
 #  "License"); you may not use this file except in compliance
 #  with the License.  You may obtain a copy of the License at
-#  
+#
 #    http://www.apache.org/licenses/LICENSE-2.0
-#  
+#
 #  Unless required by applicable law or agreed to in writing,
 #  software distributed under the License is distributed on an
 #  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
 #  KIND, either express or implied.  See the License for the
 #  specific language governing permissions and limitations
 #  under the License.
-#  
+#
 #**************************************************************
 
 # Builds the C++ counter example of the SDK.
@@ -38,7 +38,7 @@ OUT_COMP_INC = $(OUT_INC)/$(COMP_NAME)
 OUT_COMP_GEN = $(OUT_MISC)/$(COMP_NAME)
 OUT_COMP_OBJ = $(OUT_OBJ)/$(COMP_NAME)
 OUT_COMP_SLO = $(OUT_SLO)/$(COMP_NAME)
-COMP_SERVICES=$(SHAREDLIB_OUT)/counterservices.rdb 
+COMP_SERVICES=$(SHAREDLIB_OUT)/counterservices.rdb
 
 ENV_EXAMPLE_TYPES=-env:URE_MORE_TYPES=$(URLPREFIX)$(COMP_RDB)
 ENV_COMP_SERVICES=-env:URE_MORE_SERVICES=$(URLPREFIX)$(COMP_SERVICES)
@@ -74,7 +74,7 @@ $(OUT_BIN)/%.rdb : $(GENURDFILES)
 	-$(MKDIR) $(subst /,$(PS),$(@D))
 	-$(DEL) $(subst \\,\,$(subst /,$(PS),$@))
 	$(REGMERGE) $@ /UCR $(GENURDFILES)
-#	$(REGMERGE) $@ / $(URE_TYPES) 
+#	$(REGMERGE) $@ / $(URE_TYPES)
 
 $(COMP_TYPEFLAG) : $(COMP_RDB) $(SDKTYPEFLAG)
 	-$(MKDIR) $(subst /,$(PS),$(@D))
@@ -108,7 +108,7 @@ $(SHAREDLIB_OUT)/%.$(SHAREDLIB_EXT) : $(SLOFILES)
 ifeq "$(OS)" "MACOSX"
 	$(INSTALL_NAME_URELIBS)  $@
 endif
-endif	
+endif
 
 $(OUT_BIN)/countermain$(EXE_EXT) : $(OUT_COMP_OBJ)/countermain.$(OBJ_EXT) $(SHAREDLIB_OUT)/counter.uno.$(SHAREDLIB_EXT)
 ifeq "$(OS)" "WIN"
@@ -143,7 +143,7 @@ CppCounterExample : $(OUT_BIN)/countermain$(EXE_EXT) $(COMP_IMPL) $(COMP_SERVICE
 	@echo $(SQM)      $(SQM)The additional example IDL types are provided via the UNO environment variable -env:URE_MORE_TYPES=...
 	@echo $(SQM)      $(SQM)and the example component is made available via -env:URE_MORE_SERVICES=...
 	@echo $(SQM)      $(SQM)Please check the generated $(QM)$(COMP_SERVICES)$(QM) to see how you can specify your own components in such an environment
-	@echo $(SQM)      $(SQM)and how to use the passive UNO registration.  
+	@echo $(SQM)      $(SQM)and how to use the passive UNO registration.
 	@echo --------------------------------------------------------------------------------
 
 %.run: $(OUT_BIN)/countermain$(EXE_EXT) $(COMP_IMPL)
