@@ -39,16 +39,16 @@
 </bookmark><comment>mw made "external..." a one level entry and deleted one "functions;..." entry</comment>
 <paragraph role="heading" id="hd_id3151076" xml-lang="en-US" level="1" l10n="U">Add-in for Programming in $[officename] Calc</paragraph>
 <paragraph role="warning" id="par_id3147001" xml-lang="en-US" l10n="U">The method of extending Calc by Add-Ins that is described in the following is outdated. The interfaces are still valid and supported, to ensure compatibility with existing Add-Ins, but for programming new Add-Ins you should use the new <link href="text/shared/guide/integratinguno.xhp" name="API functions">API functions</link>.</paragraph>
-<paragraph role="paragraph" id="par_id3150361" xml-lang="en-US" l10n="U">$[officename] Calc can be expanded by Add-Ins, which are external programming modules providing additional functions for working with spreadsheets. These are listed in the <emph>Function Wizard</emph> in the <emph>Add-In</emph> category. If you would like to program an Add-In yourself, you can learn here which functions must be exported by the <switchinline select="sys"><caseinline select="UNIX">shared library 
+<paragraph role="paragraph" id="par_id3150361" xml-lang="en-US" l10n="U">$[officename] Calc can be expanded by Add-Ins, which are external programming modules providing additional functions for working with spreadsheets. These are listed in the <emph>Function Wizard</emph> in the <emph>Add-In</emph> category. If you would like to program an Add-In yourself, you can learn here which functions must be exported by the <switchinline select="sys"><caseinline select="UNIX">shared library
 </caseinline><defaultinline>external DLL</defaultinline></switchinline> so that the Add-In can be successfully attached.</paragraph>
-<paragraph role="paragraph" id="par_id3149211" xml-lang="en-US" l10n="CHG">$[officename] searches the Add-in folder defined in the configuration for a suitable <switchinline select="sys"><caseinline select="UNIX">shared library 
-</caseinline><defaultinline>DLL</defaultinline></switchinline>. To be recognized by $[officename], the <switchinline select="sys"><caseinline select="UNIX">shared library 
+<paragraph role="paragraph" id="par_id3149211" xml-lang="en-US" l10n="CHG">$[officename] searches the Add-in folder defined in the configuration for a suitable <switchinline select="sys"><caseinline select="UNIX">shared library
+</caseinline><defaultinline>DLL</defaultinline></switchinline>. To be recognized by $[officename], the <switchinline select="sys"><caseinline select="UNIX">shared library
 </caseinline><defaultinline>DLL</defaultinline></switchinline> must have certain properties, as explained in the following. This information allows you to program your own Add-In for <emph>Function Wizard</emph> of $[officename] Calc.</paragraph>
 <section id="addinconcept">
 <paragraph role="heading" id="hd_id3146981" xml-lang="en-US" level="2" l10n="U">The Add-In Concept</paragraph>
 <paragraph role="paragraph" id="par_id3156292" xml-lang="en-US" l10n="U">Each Add-In library provides several functions. Some functions are used for administrative purposes. You can choose almost any name for your own functions. However, they must also follow certain rules regarding parameter passing. The exact naming and calling conventions vary for different platforms.</paragraph>
 </section>
-<paragraph role="heading" id="hd_id3152890" xml-lang="en-US" level="3" l10n="U">Functions of <switchinline select="sys"><caseinline select="UNIX">Shared Library 
+<paragraph role="heading" id="hd_id3152890" xml-lang="en-US" level="3" l10n="U">Functions of <switchinline select="sys"><caseinline select="UNIX">Shared Library
 </caseinline><defaultinline>AddIn DLL</defaultinline></switchinline></paragraph>
 <paragraph role="paragraph" id="par_id3148837" xml-lang="en-US" l10n="U">At a minimum, the administrative functions <link href="text/scalc/01/04060112.xhp" name="GetFunctionCount">GetFunctionCount</link> and <link href="text/scalc/01/04060112.xhp" name="GetFunctionData">GetFunctionData</link> must exist. Using these, the functions as well as parameter types and return values can be determined. As return values, the Double and String types are supported. As parameters, additionally the cell areas <link href="text/scalc/01/04060112.xhp" name="Double Array">Double Array</link>, <link href="text/scalc/01/04060112.xhp" name="String Array">String Array</link>, and <link href="text/scalc/01/04060112.xhp" name="Cell Array">Cell Array</link> are supported.</paragraph>
 <paragraph role="paragraph" id="par_id3148604" xml-lang="en-US" l10n="U">Parameters are passed using references. Therefore, a change of these values is basically possible. However, this is not supported in $[officename] Calc because it does not make sense within spreadsheets.</paragraph>
@@ -106,11 +106,11 @@
 </tablecell>
 </tablerow>
 </table>
-<paragraph role="heading" id="hd_id3156396" xml-lang="en-US" level="2" l10n="U"><switchinline select="sys"><caseinline select="UNIX">Shared Library 
+<paragraph role="heading" id="hd_id3156396" xml-lang="en-US" level="2" l10n="U"><switchinline select="sys"><caseinline select="UNIX">Shared Library
 </caseinline><defaultinline>DLL</defaultinline></switchinline> functions</paragraph>
-<paragraph role="paragraph" id="par_id3153019" xml-lang="en-US" l10n="U">Following you will find a description of those functions, which are called at the <switchinline select="sys"><caseinline select="UNIX">Shared Library 
+<paragraph role="paragraph" id="par_id3153019" xml-lang="en-US" l10n="U">Following you will find a description of those functions, which are called at the <switchinline select="sys"><caseinline select="UNIX">Shared Library
 </caseinline><defaultinline>external DLL</defaultinline></switchinline>.</paragraph>
-<paragraph role="paragraph" id="par_id3150038" xml-lang="en-US" l10n="U">For all <switchinline select="sys"><caseinline select="UNIX">Shared Library 
+<paragraph role="paragraph" id="par_id3150038" xml-lang="en-US" l10n="U">For all <switchinline select="sys"><caseinline select="UNIX">Shared Library
 </caseinline><defaultinline>DLL</defaultinline></switchinline> functions, the following applies:</paragraph>
 <paragraph role="paragraph" id="par_id3157876" xml-lang="en-US" l10n="U">void CALLTYPE fn(out, in1, in2, ...)</paragraph>
 <paragraph role="paragraph" id="par_id3147616" xml-lang="en-US" l10n="U">Output: Resulting value</paragraph>
@@ -130,7 +130,7 @@
 <paragraph role="paragraph" id="par_id3149686" xml-lang="en-US" l10n="U">USHORT&amp; nNo:</paragraph>
 <paragraph role="paragraph" id="par_id3149949" xml-lang="en-US" l10n="U">Input: Function number between 0 and nCount-1, inclusively.</paragraph>
 <paragraph role="paragraph" id="par_id3149546" xml-lang="en-US" l10n="U">char* pFuncName:</paragraph>
-<paragraph role="paragraph" id="par_id3148579" xml-lang="en-US" l10n="U">Output: Function name as seen by the programmer, as it is named in the <switchinline select="sys"><caseinline select="UNIX">Shared Library 
+<paragraph role="paragraph" id="par_id3148579" xml-lang="en-US" l10n="U">Output: Function name as seen by the programmer, as it is named in the <switchinline select="sys"><caseinline select="UNIX">Shared Library
 </caseinline><defaultinline>DLL</defaultinline></switchinline>. This name does not determine the name used in the <emph>Function Wizard</emph>.</paragraph>
 <paragraph role="paragraph" id="par_id3153935" xml-lang="en-US" l10n="U">USHORT&amp; nParamCount:</paragraph>
 <paragraph role="paragraph" id="par_id3150142" xml-lang="en-US" l10n="U">Output: Number of parameters in AddIn function. This number must be greater than 0, because there is always a result value; the maximum value is 16.</paragraph>
