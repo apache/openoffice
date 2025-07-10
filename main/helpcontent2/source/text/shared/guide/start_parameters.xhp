@@ -49,8 +49,8 @@
 </listitem>
 <listitem>
 <paragraph role="listitem" id="par_id3149669" xml-lang="en-US" l10n="U">Under UNIX based systems, type the following line of text, then press <emph>Return</emph>:</paragraph>
-<paragraph role="listitem" id="par_id3147561" xml-lang="en-US" l10n="U"><switchinline select="sys"><caseinline select="WIN">{install}\program\soffice.exe {parameter} 
-</caseinline><caseinline select="UNIX">{install}/program/soffice {parameter} 
+<paragraph role="listitem" id="par_id3147561" xml-lang="en-US" l10n="U"><switchinline select="sys"><caseinline select="WIN">{install}\program\soffice.exe {parameter}
+</caseinline><caseinline select="UNIX">{install}/program/soffice {parameter}
 </caseinline></switchinline></paragraph>
 <paragraph role="listitem" id="par_id3153360" xml-lang="en-US" l10n="U">Replace <emph>{install}</emph> with the path to your installation of the $[officename] software (for example, <emph>C:\Program Files\Office</emph>, or <emph>~/office</emph>)</paragraph>
 <paragraph role="listitem" id="par_id3158407" xml-lang="en-US" l10n="U">Where required, replace <emph>{parameter}</emph> with one or more of the following command line parameters.</paragraph>

@@ -49,7 +49,7 @@
 <section id="howtoget">
 <embed href="text/shared/00/00000402.xhp#insert"/>
 </section>
-<paragraph role="paragraph" id="par_id3147834" xml-lang="en-US" l10n="U"><switchinline select="appl"><caseinline select="CALC">In a spreadsheet, when you paste a range of cells from the clipboard, the result depends on the current selection: If only one cell is selected, the cell range will be pasted started from that cell. If you mark a cell range wider than the cell range in the clipboard, the cell range will be pasted repeatedly to fill the selected cell range. 
+<paragraph role="paragraph" id="par_id3147834" xml-lang="en-US" l10n="U"><switchinline select="appl"><caseinline select="CALC">In a spreadsheet, when you paste a range of cells from the clipboard, the result depends on the current selection: If only one cell is selected, the cell range will be pasted started from that cell. If you mark a cell range wider than the cell range in the clipboard, the cell range will be pasted repeatedly to fill the selected cell range.
 </caseinline></switchinline></paragraph>
 <switch select="sys">
 <case select="UNIX"><embed href="text/shared/01/02050000.xhp#unixkopieren"/>
