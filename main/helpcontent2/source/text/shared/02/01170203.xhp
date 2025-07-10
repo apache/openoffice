@@ -175,7 +175,7 @@
 </sort>
 <paragraph role="heading" id="hd_id3152778" xml-lang="en-US" level="2" l10n="U">What is a subform?</paragraph>
 <paragraph role="paragraph" id="par_id3155579" xml-lang="en-US" l10n="U">Forms are created based on a database table or database query. They display the data in a visually pleasant fashion and can be used to enter data or edit data.</paragraph>
-<paragraph role="paragraph" id="par_id3147094" xml-lang="en-US" l10n="U"><variable id="wozu">If you require a form that can refer to the data in a table or query and can additionally display data from another table, you should create a subform. 
+<paragraph role="paragraph" id="par_id3147094" xml-lang="en-US" l10n="U"><variable id="wozu">If you require a form that can refer to the data in a table or query and can additionally display data from another table, you should create a subform.
 </variable> For example, this subform can be a text box that displays the data of another database table.</paragraph>
 <paragraph role="paragraph" id="par_id3157972" xml-lang="en-US" l10n="U">A subform is an additional component of the main form. The main form can be called the "parent form" or "master". Subforms are needed as soon as you want to access more than one table from a form. Each additional table requires its own subform.</paragraph>
 <paragraph role="paragraph" id="par_id4807275" xml-lang="en-US" l10n="NEW">After creating a form, it can be changed into a subform. To do this, enter Design Mode, and open the Form Navigator. In the Form Navigator, drag a form (that will become a subform) onto any other form (that will become a master).</paragraph>
