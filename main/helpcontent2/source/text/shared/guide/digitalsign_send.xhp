@@ -77,7 +77,7 @@
 <paragraph xml-lang="en-US" id="par_idN106C0" role="paragraph" l10n="NEW">You see again the Digital Signatures dialog, where you can add more certificates if you want. Click OK to add the public key to the saved file.</paragraph>
 </listitem>
 </list>
-<paragraph xml-lang="en-US" id="par_idN106C3" role="paragraph" l10n="NEW">A signed document shows an icon 
+<paragraph xml-lang="en-US" id="par_idN106C3" role="paragraph" l10n="NEW">A signed document shows an icon
 <image id="img_id262764" src="xmlsecurity/res/certificate_16.png" width="0.2228in" height="0.2228in"><alt xml-lang="en-US" id="alt_id262764">Icon</alt>
 </image> in the status bar. You can double-click the icon in the status bar to view the certificate.</paragraph>
 <paragraph xml-lang="en-US" id="par_id2008200911381426" role="paragraph" l10n="NEW">The result of the signature validation is displayed in the status bar and within the Digital Signature dialog. Several documents and macro signatures can exist inside an ODF document. If there is a problem with one signature, then the validation result of that one signature is assumed for all signatures. That is, if there are ten valid signatures and one invalid signature, then the status bar and the status field in the dialog will flag the signature as invalid.</paragraph>
@@ -91,7 +91,7 @@
 <paragraph xml-lang="en-US" id="par_idN106F2" role="paragraph" l10n="NEW">Apply the signature as described above for documents.</paragraph>
 </listitem>
 </list>
-<paragraph xml-lang="en-US" id="par_idN106F5" role="paragraph" l10n="NEW">When you open the Basic IDE that contains signed macros, you see an icon 
+<paragraph xml-lang="en-US" id="par_idN106F5" role="paragraph" l10n="NEW">When you open the Basic IDE that contains signed macros, you see an icon
 <image id="img_id9252296" src="xmlsecurity/res/certificate_16.png" width="0.2228in" height="0.2228in"><alt xml-lang="en-US" id="alt_id9252296">Icon</alt>
 </image> in the status bar. You can double-click the icon in the status bar to view the certificate.</paragraph><comment>WebDAV see issue 32935</comment><comment>main dialog IDs are here to lead the user initially to this help page</comment><comment>Examine certificate button</comment>
 <!-- removed HID 1311740419 -->

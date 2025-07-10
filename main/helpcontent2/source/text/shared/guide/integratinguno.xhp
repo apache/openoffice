@@ -40,7 +40,7 @@
 <paragraph role="paragraph" id="par_id3154751" xml-lang="en-US" l10n="U">The integration of new components is supported by some tools and services. Details can be found in the $[officename] Developer's Guide. The three main steps are as follows:</paragraph>
 <list type="ordered">
 <listitem>
-<paragraph role="listitem" id="par_id3153748" xml-lang="en-US" l10n="CHG">Register the new components within $[officename]. This can be accomplished using the tool <item type="literal">unopkg</item>, which can be found in {installpath}<switchinline select="sys"><caseinline select="UNIX">/ 
+<paragraph role="listitem" id="par_id3153748" xml-lang="en-US" l10n="CHG">Register the new components within $[officename]. This can be accomplished using the tool <item type="literal">unopkg</item>, which can be found in {installpath}<switchinline select="sys"><caseinline select="UNIX">/
 </caseinline><defaultinline>\</defaultinline></switchinline>program.</paragraph>
 </listitem>
 <listitem>
