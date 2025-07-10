@@ -54,7 +54,7 @@
 <!-- removed HID SVX_CHECKBOX_RID_SVXPAGE_SSO_CB_PASSWORD -->
 <paragraph role="heading" id="hd_id3146795" xml-lang="en-US" level="2" l10n="U">Save password</paragraph>
 <paragraph role="paragraph" id="par_id3150358" xml-lang="en-US" l10n="U"><ahelp hid="SVX_CHECKBOX_RID_SVXPAGE_SSO_CB_PASSWORD">Using "simple" authentication method, check this box to make your password persistent.</ahelp> If the password is persistent and the same user starts $[officename] later on, the user name and password will not be requested again. Using "Kerberos", this box is not active.</paragraph>
-<paragraph role="paragraph" id="par_id3154939" xml-lang="en-US" l10n="U">The password will be stored encrypted in a file called .ssop in your <switchinline select="sys"><caseinline select="UNIX">home directory 
+<paragraph role="paragraph" id="par_id3154939" xml-lang="en-US" l10n="U">The password will be stored encrypted in a file called .ssop in your <switchinline select="sys"><caseinline select="UNIX">home directory
 </caseinline><defaultinline>"My Documents" folder</defaultinline></switchinline>.</paragraph>
 </body>
 </helpdocument>
