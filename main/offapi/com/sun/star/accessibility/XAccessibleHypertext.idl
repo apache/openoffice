@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -24,9 +24,9 @@
 #ifndef __com_sun_star_accessibility_XAccessibleHypertext_idl__
 #define __com_sun_star_accessibility_XAccessibleHypertext_idl__
 
-#ifndef __com_sun_star_uno_XInterface_idl__ 
-#include <com/sun/star/uno/XInterface.idl> 
-#endif 
+#ifndef __com_sun_star_uno_XInterface_idl__
+#include <com/sun/star/uno/XInterface.idl>
+#endif
 #ifndef __com_sun_star_lang_IndexOutOfBoundsException_idl__
 #include <com/sun/star/lang/IndexOutOfBoundsException.idl>
 #endif
@@ -48,32 +48,32 @@ module com { module sun { module star { module accessibility {
     interface and other character related methods of the
     <type>XAccessibleHyperlink</type> interface, it is necessary to also
     support the <type>XAccessibleText</type> interface.</p>
-    
+
     @see XAccessibleHyperlink, XAccessibleText
 
     @since OpenOffice 1.1.2
 */
-published interface XAccessibleHypertext 
+published interface XAccessibleHypertext
     : ::com::sun::star::accessibility::XAccessibleText
 {
     /** Returns the number of links and link groups contained within this
         hypertext document.
-    
+
         @return
             The number of links and link groups within this hypertext
             document.  Returns 0 if there is no link.
     */
     long getHyperLinkCount ();
-    
+
     /** Return the specified link.
-    
+
         <p>The returned <type>XAccessibleHyperlink</type> object
         encapsulates the hyperlink and provides several kinds of information
         describing it.</p>
-        
+
         @param nLinkIndex
             This index specifies the hyperlink to return.
-            
+
         @return
             If the given index is valid, i.e. lies in the interval from 0
             to the number of links minus one, a reference to the specified
@@ -86,10 +86,10 @@ published interface XAccessibleHypertext
 
     /** Returns the index of the hyperlink that is associated with this
         character index.
-        
+
         <p>In a HTML document this is the case when a &lt;a href&gt; tag
         spans (includes) the given character index.</p>
-        
+
         @param nCharIndex
             Index of the character for which to return the link index.  If
             the <type>XAccessibleText</type> interface is used to represent
@@ -97,18 +97,18 @@ published interface XAccessibleHypertext
             valid if it is greater than or equal to zero and lower then the
             number of characters in the text.  See that interface's
             documentation for more details.
-            
+
         @return
             Returns the index of the hyperlink that is associated with this
             character index, or throws an exception if there is no hyperlink
             associated with this index.
-            
+
         @see XAccessibleText.
     */
     long getHyperLinkIndex ([in] long nCharIndex)
         raises (::com::sun::star::lang::IndexOutOfBoundsException);
 };
-          
+
 }; }; }; };
 
 #endif

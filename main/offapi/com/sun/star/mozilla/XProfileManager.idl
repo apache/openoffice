@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,44 +7,44 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
-#ifndef __com_sun_star_mozilla_XProfileManager_idl__ 
-#define __com_sun_star_mozilla_XProfileManager_idl__ 
- 
-#ifndef __com_sun_star_uno_XInterface_idl__ 
-#include <com/sun/star/uno/XInterface.idl> 
-#endif 
-#ifndef __com_sun_star_mozilla_MozillaProductType_idl__ 
+#ifndef __com_sun_star_mozilla_XProfileManager_idl__
+#define __com_sun_star_mozilla_XProfileManager_idl__
+
+#ifndef __com_sun_star_uno_XInterface_idl__
+#include <com/sun/star/uno/XInterface.idl>
+#endif
+#ifndef __com_sun_star_mozilla_MozillaProductType_idl__
 #include <com/sun/star/mozilla/MozillaProductType.idl>
-#endif 
- 
- 
- 
- module com {  module sun {  module star {  module mozilla { 
- 
- 
- 
+#endif
+
+
+
+ module com {  module sun {  module star {  module mozilla {
+
+
+
 /** is the interface to bootup and switch Mozilla/Thunderbird profiles
-	
+
 	@see com::sun::star::mozilla::MozillaProductType
 	@see com::sun::star::mozilla::XProfileDiscover
 	@see com::sun::star::mozilla::MozillaBootstrap
  */
 published interface XProfileManager: com::sun::star::uno::XInterface
-{ 
-	 
+{
+
 	// DocMerge from xml: method com::sun::star::mozilla::XProfileManager::bootupProfile
 	/** attempts to init xpcom runtime using given profile.
 
@@ -52,7 +52,7 @@ published interface XProfileManager: com::sun::star::uno::XInterface
 			is the product to start up.
 		@param profileName
 			the profile name to be used.
-		@returns 
+		@returns
 			the current reference count for the given profile.
 
 	 */
@@ -60,7 +60,7 @@ published interface XProfileManager: com::sun::star::uno::XInterface
 
 	/** attempts to shutdown the current profile.
 
-		@returns 
+		@returns
 			the current reference count for the current profile.
 
 	 */
@@ -68,7 +68,7 @@ published interface XProfileManager: com::sun::star::uno::XInterface
 
 	/** attempts to get the current product.
 
-		@returns 
+		@returns
 			the current used product.
 
 	 */
@@ -76,7 +76,7 @@ published interface XProfileManager: com::sun::star::uno::XInterface
 
 	/** attempts to get the current profile name.
 
-		@returns 
+		@returns
 			the current used profile.
 
 	 */
@@ -84,7 +84,7 @@ published interface XProfileManager: com::sun::star::uno::XInterface
 
 	/** attempts to check whether the current profile locked or not
 
-		@returns 
+		@returns
 			return sal_True is current profile is locked
 
 	 */
@@ -96,17 +96,17 @@ published interface XProfileManager: com::sun::star::uno::XInterface
 			is the product to be used.
 		@param profileName
 			the profile name to be used.
-		@returns 
+		@returns
 			the current used profile name for the given product.
 
 	 */
 	string setCurrentProfile( [in]MozillaProductType product,[in]string profileName);
-	 
-	
-}; 
- 
-//============================================================================= 
- 
-}; }; }; }; 
- 
-#endif 
+
+
+};
+
+//=============================================================================
+
+}; }; }; };
+
+#endif

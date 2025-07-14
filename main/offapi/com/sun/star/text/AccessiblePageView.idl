@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -51,9 +51,9 @@ published service AccessiblePageView
 {
 	/** This interface gives access to any page that is visible in the
 	  	page preview of a text document.
-		
+
 		<ul>
-			<li>The parent returned by 
+			<li>The parent returned by
                 <method scope="::com::sun::star::accessibility"
                 >XAccessibleContext::getAccessibleParent</method> is the
                 accessible page preview of a text document.  That is, the
@@ -62,7 +62,7 @@ published service AccessiblePageView
                 >XAccessible::getAccessibleContext</method> supports
 				<type scope="::com::sun::star::text"
                 >AccessibleTextDocumentPageView</type>.
-            <li>The children returned by 
+            <li>The children returned by
                 <method scope="::com::sun::star::accessibility"
                 >XAccessibleContext::getAccessibleChild</method> all
 				support the interface XAccessible. Calling
@@ -87,13 +87,13 @@ published service AccessiblePageView
                         >AccessibleParagraphView</type>:
 						A child of this kind is returned for every paragraph
 						fragment that is contained in the page.
-						A paragraph fragment is the part of a paragraph that 
+						A paragraph fragment is the part of a paragraph that
 						is displayed on a certain page.
 					<li><type scope="::com::sun::star::table"
                         >AccessibleTableView</type>:
 						A child of this kind is returned for every table
 						fragment that is contained in the page.
-						A table fragment is the part of a table that is 
+						A table fragment is the part of a table that is
 						displayed on a certain page.
 					<li><type scope="::com::sun::star::text"
                         >AccessibleTextFrameView</type>:
@@ -111,8 +111,8 @@ published service AccessiblePageView
 						is contained in the page. These objects are
 						children of the <type>AccessiblePageView</type>
 						regardless whether they are bound to a page, paragraph,
-						a frame or a character. The only exception 
-						are text frames that are bound as character. They are 
+						a frame or a character. The only exception
+						are text frames that are bound as character. They are
 						children of the paragraph they are contained in.
 					<li><type scope="::com::sun::star::text"
                         >AccessibleTextEmbeddedObject</type>:
@@ -194,7 +194,7 @@ published service AccessiblePageView
 	 */
 	interface ::com::sun::star::accessibility::XAccessibleContext;
 
-	/** This interface describes the graphical representation of a 
+	/** This interface describes the graphical representation of a
 	  	endnote.
 	 */
 	interface ::com::sun::star::accessibility::XAccessibleComponent;

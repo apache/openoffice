@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -57,8 +57,8 @@ published interface XClipboard: com::sun::star::uno::XInterface
 	XTransferable getContents();
 
 	//-------------------------------------------------------------------------
-	/** Sets the current contents of the clipboard to the specified 
-		transferable object and registers the specified clipboard owner 
+	/** Sets the current contents of the clipboard to the specified
+		transferable object and registers the specified clipboard owner
 		as the owner of the new contents.
 
 		@param xTrans
@@ -69,10 +69,10 @@ published interface XClipboard: com::sun::star::uno::XInterface
 		<p>A NULL value is not allowed.</p>
 
 		@param xClipboardOwner
-		The new owner of the clipboard. 
+		The new owner of the clipboard.
 		<p>NULL is an acceptable value and means that the
 		caller is not interested in lost ownership notifications.</p>
-		
+
 		@see com::sun::star::datatransfer::XTransferable
 		@see com::sun::star::datatransfer::clipboard::XClipboardOwner
 	*/
@@ -80,10 +80,10 @@ published interface XClipboard: com::sun::star::uno::XInterface
 
 	//-------------------------------------------------------------------------
 	/** To get the name of the clipboard instance.
-		
+
 		@returns
-		The name of this clipboard object. 
-		<p>If the returned string is empty the 
+		The name of this clipboard object.
+		<p>If the returned string is empty the
 		clipboard instance ist the system clipboard.</p>
 	*/
 	string getName();

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -232,14 +232,14 @@ published constants NumberingType
         @since OpenOffice 2.0.1
      */
     const short CHARS_NEPALI = 34;
-    
+
     //-------------------------------------------------------------------------
     /** Numbering in Khmer alphabet letters
 
         @since OpenOffice 2.0.1
      */
     const short CHARS_KHMER = 35;
-    
+
     //-------------------------------------------------------------------------
     /** Numbering in Lao alphabet letters
 
@@ -252,7 +252,7 @@ published constants NumberingType
         @since OpenOffice 2.0.3
       */
     const short CHARS_TIBETAN = 37;
- 
+
     //-------------------------------------------------------------------------
     /** Numbering in Cyrillic alphabet upper case letters as
         "&#1040;, &#1041;,  &#1042;, &#1043;, ..., &#1070;, &#1071;, &#1040;&#1074;, &#1040;&#1072;, &#1040;&#1074;, ... &#1040;&#1072;&#1072;, &#1040;&#1072;&#1073;".
@@ -402,7 +402,7 @@ published constants NumberingType
 
     //-------------------------------------------------------------------------
     /** Numbering in Myanmar alphabet letters
-    
+
         @since OpenOffice 3.1
      */
     const short CHARS_MYANMAR = 47;

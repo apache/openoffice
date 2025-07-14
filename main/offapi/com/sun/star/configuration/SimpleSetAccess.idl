@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -41,16 +41,16 @@
 
 //=============================================================================
 
-module com { module sun { module star { module configuration { 
+module com { module sun { module star { module configuration {
 
 //=============================================================================
 /** provides access to a dynamic, homogeneous, nonhierarchical set of values
  or objects.
- 
+
  <p>Also provides information about the template for elements.
  Allows normalizing externally generated names.
  </p>
- 
+
  <p><em>Sets</em> are dynamic containers.</p>
 
  <p>The number and names of contained elements is not fixed in advance,
@@ -87,7 +87,7 @@ published service SimpleSetAccess
 	[optional] interface com::sun::star::configuration::XTemplateContainer;
 
 /** allows normalizing and denormalizing external names. [optional]
- 
+
  <p>Elements of a <em>set</em> often correspond to external entities,
  for example, files, web pages, and people whose names obey different rules and
  restrictions than names that are valid in the hierarchical naming scheme.
@@ -113,6 +113,6 @@ published service SimpleSetAccess
 
 //=============================================================================
 
-}; }; }; }; 
+}; }; }; };
 
 #endif

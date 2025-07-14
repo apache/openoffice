@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -32,20 +32,20 @@
 #include <com/sun/star/util/XFlushable.idl>
 #endif
 
-module com { module sun { module star { module configuration { 
+module com { module sun { module star { module configuration {
 
 //=============================================================================
 
 
-/*	provides access to a configuration tree as a registry. 
+/*	provides access to a configuration tree as a registry.
 
     <p>This service is deprecated,
     <type scope="com.sun.star.configuration">ConfigurationProvider</type> should
     be used instead.</p>
 
-	<p> Using the <type scope="com::sun::star::registry">XSimpleRegistry</type> 
-	interface, the service can be bound to a subtree within the 
-	configuration tree, as provided by an 
+	<p> Using the <type scope="com::sun::star::registry">XSimpleRegistry</type>
+	interface, the service can be bound to a subtree within the
+	configuration tree, as provided by an
 	<type scope="com.sun.star.configuration">ConfigurationProvider</type>
 	service, which must be accessible from the service factory you use for the
 	creation of this service.
@@ -70,7 +70,7 @@ module com { module sun { module star { module configuration {
 published service ConfigurationRegistry
 {
 	/** controls the binding of the object to a configuration sub tree.
-		<p><member scope="com::sun::star::registry">XSimpleRegistry::open()</member> 
+		<p><member scope="com::sun::star::registry">XSimpleRegistry::open()</member>
 		is used to open a special subtree within the configuration tree.
 		</p>
 		<p>The parameters of this method control the location of the root of the to-be-opened
@@ -80,14 +80,14 @@ published service ConfigurationRegistry
 	interface com::sun::star::registry::XSimpleRegistry;
 
 	/** is used to commit changes to the configuration.
-		<p>As specified for the 
+		<p>As specified for the
 		<type scope="com::sun::star::configuration">ConfigurationUpdateAccess</type>
-		service, all changes made to an configuration subtree have to be committed 
-		before they become persistent. 
+		service, all changes made to an configuration subtree have to be committed
+		before they become persistent.
 		To do this for a configuration accessed as a registry, call
 		<method scope="com::sun::star::util">XFlushable::flush</method>.
 		</p>
-		<p><strong>Warning:</strong><em>Changes that are not flushed will be 
+		<p><strong>Warning:</strong><em>Changes that are not flushed will be
 		lost.</em>
 		</p>
 	*/
@@ -97,7 +97,7 @@ published service ConfigurationRegistry
 
 //=============================================================================
 
-}; }; }; }; 
+}; }; }; };
 
 
 #endif

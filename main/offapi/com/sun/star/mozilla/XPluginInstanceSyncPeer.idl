@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,45 +7,45 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
-#ifndef __com_sun_star_mozilla_XPluginInstanceSyncPeer_idl__ 
-#define __com_sun_star_mozilla_XPluginInstanceSyncPeer_idl__ 
+#ifndef __com_sun_star_mozilla_XPluginInstanceSyncPeer_idl__
+#define __com_sun_star_mozilla_XPluginInstanceSyncPeer_idl__
 
-#ifndef __com_sun_star_uno_XInterface_idl__ 
-#include <com/sun/star/uno/XInterface.idl> 
-#endif 
+#ifndef __com_sun_star_uno_XInterface_idl__
+#include <com/sun/star/uno/XInterface.idl>
+#endif
 
-#ifndef __com_sun_star_mozilla_XPluginInstance_idl__ 
-#include <com/sun/star/mozilla/XPluginInstance.idl> 
-#endif 
- 
-//============================================================================= 
- 
- module com {  module sun {  module star {  module mozilla { 
- 
-//============================================================================= 
+#ifndef __com_sun_star_mozilla_XPluginInstance_idl__
+#include <com/sun/star/mozilla/XPluginInstance.idl>
+#endif
+
+//=============================================================================
+
+ module com {  module sun {  module star {  module mozilla {
+
+//=============================================================================
 
 // DocMerge from xml: interface com::sun::star::mozilla::XPluginInstanceSyncPeer
 /** This interface is an extension for <type>XPluginInstancePeer</type> interface.
 	An object can support this interface in addition to <type>XPluginInstancePeer</type> interface.
  */
 published interface XPluginInstanceSyncPeer : com::sun::star::uno::XInterface
-{ 
-	//------------------------------------------------------------------------- 
-	 
- 
+{
+	//-------------------------------------------------------------------------
+
+
 	// DocMerge from xml: method com::sun::star::mozilla::XPluginInstanceSyncPeer::openNewBrowserWindow
 	/** Opens a new browser window with a plugin instance synchronously.
 
@@ -58,12 +58,12 @@ published interface XPluginInstanceSyncPeer : com::sun::star::uno::XInterface
 	void openNewBrowserWindow(
 										[out] XPluginInstance aInstance,
 										[out] any aLinkage,
-										[out] boolean embeded); 
- 
-}; 
- 
-//============================================================================= 
- 
-}; }; }; }; 
- 
-#endif 
+										[out] boolean embeded);
+
+};
+
+//=============================================================================
+
+}; }; }; };
+
+#endif

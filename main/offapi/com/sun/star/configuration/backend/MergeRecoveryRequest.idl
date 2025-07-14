@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,41 +7,41 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
-#ifndef __com_sun_star_configuration_backend_MergeRecoveryRequest_idl__ 
-#define __com_sun_star_configuration_backend_MergeRecoveryRequest_idl__ 
- 
-#ifndef __com_sun_star_uno_Exception_idl__ 
-#include <com/sun/star/uno/Exception.idl> 
-#endif 
- 
-//============================================================================= 
+#ifndef __com_sun_star_configuration_backend_MergeRecoveryRequest_idl__
+#define __com_sun_star_configuration_backend_MergeRecoveryRequest_idl__
+
+#ifndef __com_sun_star_uno_Exception_idl__
+#include <com/sun/star/uno/Exception.idl>
+#endif
+
+//=============================================================================
 
 module com { module sun { module star { module configuration { module backend {
- 
-//============================================================================= 
- 
-/** is passed to an <type>InteractionHandler<type> when merging fails due to 
+
+//=============================================================================
+
+/** is passed to an <type>InteractionHandler<type> when merging fails due to
 	invalid layer data or access problems.
 
     @since OpenOffice 2.0
  */
 exception MergeRecoveryRequest: ::com::sun::star::uno::Exception
-{ 
-    /** 
-        data that provides more detailed information about the 
+{
+    /**
+        data that provides more detailed information about the
         reason and location of the error.
 
         <p> Typically this member should contain an exception characterizing
@@ -56,31 +56,31 @@ exception MergeRecoveryRequest: ::com::sun::star::uno::Exception
             <dd>for layers that can't be accessed.</dd>
         </dl>
         </p>
-        <p> If no more detail information is available, this may be left <void/>. 
+        <p> If no more detail information is available, this may be left <void/>.
         </p>
     */
-	any ErrorDetails; 
+	any ErrorDetails;
 
-    /** 
+    /**
         Identifier of the layer object containing the invalid data.
     */
     string ErrorLayerId;
 
-    /** 
+    /**
         specifies whether the requestor wants to remove or skip the invalid layer.
 
-        <p> If <TRUE/> the requestor wants to remove the underlying data of 
+        <p> If <TRUE/> the requestor wants to remove the underlying data of
             the layer.<BR/>
-            If <FALSE/> the request is to skip the underlying data this time, 
+            If <FALSE/> the request is to skip the underlying data this time,
             but without removing it.
         </p>
     */
     boolean IsRemovalRequest;
 
-}; 
- 
-//============================================================================= 
- 
+};
+
+//=============================================================================
+
 }; }; }; }; };
- 
-#endif 
+
+#endif
