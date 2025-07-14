@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -52,36 +52,36 @@ import "ocidl.idl";
 ]
 interface ISOComWindowPeer : IDispatch
 {
-    [id(1), helpstring("method getWindowHandle")] 
+    [id(1), helpstring("method getWindowHandle")]
                 HRESULT getWindowHandle( [in] SAFEARRAY(VARIANT) procId,
 										 [in] short s,
 										 [out,retval] long* ret);
 
-    [id(2), helpstring("method getToolkit")] 
+    [id(2), helpstring("method getToolkit")]
                 HRESULT getToolkit( [out,retval] IDispatch** retVal );
 
-    [id(3), helpstring("method setPointer")] 
+    [id(3), helpstring("method setPointer")]
                 HRESULT setPointer( [in] IDispatch* xPointer );
 
-    [id(4), helpstring("method setBackground")] 
+    [id(4), helpstring("method setBackground")]
                 HRESULT setBackground( [in] int nColor );
 
-    [id(5), helpstring("method invalidate")] 
+    [id(5), helpstring("method invalidate")]
                 HRESULT invalidate( [in] short );
 
-    [id(6), helpstring("method invalidateRect")] 
+    [id(6), helpstring("method invalidateRect")]
                 HRESULT invalidateRect( [in] IDispatch* aRect, [in] short nFlags );
 
-    [id(7), helpstring("method dispose")] 
+    [id(7), helpstring("method dispose")]
                 HRESULT dispose();
 
-    [id(8), helpstring("method addEventListener")] 
+    [id(8), helpstring("method addEventListener")]
                 HRESULT addEventListener( [in] IDispatch* xListener );
 
-    [id(9), helpstring("method removeEventListener")] 
+    [id(9), helpstring("method removeEventListener")]
                 HRESULT removeEventListener( [in] IDispatch* xListener );
 
-	[propget, id(10), helpstring("property_implementedInterfaces")] 
+	[propget, id(10), helpstring("property_implementedInterfaces")]
 				HRESULT Bridge_implementedInterfaces([out, retval] SAFEARRAY(BSTR) *pVal);
 };
 

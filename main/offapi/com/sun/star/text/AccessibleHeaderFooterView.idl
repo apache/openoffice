@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -42,7 +42,7 @@ module com {  module sun {  module star {  module text {
 
 //=============================================================================
 
-/** The accessible view of headers and footers. 
+/** The accessible view of headers and footers.
 
 	 @since OpenOffice 1.1.2
 
@@ -52,18 +52,18 @@ published service AccessibleHeaderFooterView
 	/** This interface gives access to any paragraph and table that is
 	  	contained in the header and footer and is at least partially visible
 		on the screen.
-		
+
 		<ul>
-			<li>The parent returned by 
+			<li>The parent returned by
                 <method scope="::com::sun::star::accessibility"
                 >XAccessibleContext::getAccessibleParent</method>
 				is either the accessible view of a text document,
 				a page of the accessible page preview of a text document,
 				or the accessible page preview of a spreadsheet document.
-			<li>The children returned by 
+			<li>The children returned by
                 <method scope="::com::sun::star::accessibility"
                 >XAccessibleContext::getAccessibleChild</method> all
-				support the interface XAccessible. Calling 
+				support the interface XAccessible. Calling
 				<method scope="::com::sun::star::accessibility"
                 >XAccessible::getAccessibleContext</method> for these children returns
 				an object that supports one of the following services.
@@ -86,9 +86,9 @@ published service AccessibleHeaderFooterView
 						footers.
 				</ul>
 			<p>The logical order of paragraphs and tables is never changed.
-			<li>The role is either 
+			<li>The role is either
                 <const scope="::com::sun::star::accessibility"
-                >AccessibleRole::HEADER</const> or 
+                >AccessibleRole::HEADER</const> or
                 <const scope="::com::sun::star::accessibility"
                 >AccessibleRole::FOOTER</const>.
 			<li>The name is "header" or "footer" (or the equivalent term
@@ -103,7 +103,7 @@ published service AccessibleHeaderFooterView
 				<ul>
 					<li><const scope="::com::sun::star::accessibility"
                         >AccessibleStateType::DEFUNC</const> (indicates that
-                        the document window has been closed or the header or 
+                        the document window has been closed or the header or
                         footer is not existing any longer)
 					<li><const scope="::com::sun::star::accessibility"
                         >AccessibleStateType::EDITABLE</const>

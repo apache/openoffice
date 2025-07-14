@@ -74,7 +74,7 @@ published service AccessibleButton
             <li><const scope="com::sun::star::accessibility"
                 >AccessibleStateType::DEFUNC</const>
                 is set if the object has already been disposed
-                and subsequent calls to this object result in				
+                and subsequent calls to this object result in
                 <type scope="com::sun::star::lang">DisposedException</type>
                 exceptions.</li>
             <li><const scope="com::sun::star::accessibility"

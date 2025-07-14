@@ -83,9 +83,9 @@ module com {  module sun {  module star {  module  util {
         </dl>
         <p>
         Attention: Most predefined variables describe an absolute path.
-        The only exceptions are: $(lang), $(langid) and $(vlang). 
+        The only exceptions are: $(lang), $(langid) and $(vlang).
         Therefore the service implementation should only substitute variables which
-        are located at the start of a provided path string or are part of a multi-path. 
+        are located at the start of a provided path string or are part of a multi-path.
         This special service is not designed to be a text substitution but shall
         provide (a) valid substituted path(s).
         </p>

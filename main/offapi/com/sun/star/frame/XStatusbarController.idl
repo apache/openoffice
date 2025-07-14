@@ -148,7 +148,7 @@ interface XStatusbarController
             current information about the mouse pointer.
 
         @return
-            return <TRUE/> if the event should not be processed and <FALSE/> 
+            return <TRUE/> if the event should not be processed and <FALSE/>
             if the event should be processed by the status bar.
     */
     boolean mouseButtonUp( [in] ::com::sun::star::awt::MouseEvent aMouseEvent );

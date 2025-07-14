@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -83,15 +83,15 @@ published interface XPerformanceTest : com::sun::star::uno::XInterface
 {
 	[oneway] void async();
 	void sync();
-	
+
 	ComplexTypes complex_in( [in] ComplexTypes aVal );
 	ComplexTypes complex_inout( [inout] ComplexTypes aVal );
-	
+
 	[oneway] void complex_oneway( [in] ComplexTypes aVal );
 	void complex_noreturn( [in] ComplexTypes aVal );
-	
+
 	XPerformanceTest createObject();
-	
+
 	[attribute] long					 Long_attr;
 	[attribute] hyper					 Hyper_attr;
 	[attribute] float					 Float_attr;
@@ -101,7 +101,7 @@ published interface XPerformanceTest : com::sun::star::uno::XInterface
 	[attribute] any						 Any_attr;
 	[attribute] sequence< com::sun::star::uno::XInterface > Sequence_attr;
 	[attribute] ComplexTypes			 Struct_attr;
-	
+
 	long				getLong();
 	void				setLong( [in] long n );
 	hyper				getHyper();
@@ -120,7 +120,7 @@ published interface XPerformanceTest : com::sun::star::uno::XInterface
 	void				setSequence( [in] sequence< com::sun::star::uno::XInterface > seq );
 	ComplexTypes		getStruct();
 	void				setStruct( [in] ComplexTypes c );
-	
+
 	void raiseRuntimeException();
 };
 

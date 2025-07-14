@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -24,11 +24,11 @@
 #define __com_sun_star_connection_SocketPermission_idl__
 
 //=============================================================================
- 
+
 module com {  module sun {  module star {  module connection {
- 
+
 //=============================================================================
- 
+
 /** This permission represents access to a network via sockets.
     A SocketPermission consists of a host specification and a set of actions
     specifying ways to connect to that host.  The host is specified as
@@ -46,7 +46,7 @@ module com {  module sun {  module star {  module connection {
     where <code>N</code> is a port number, signifies all ports numbered <code>N</code> and above,
     while a specification of the form <code>"-N"</code> indicates all ports numbered
     <code>N</code> and below.
-    
+
     <p>
     The possible ways to connect to the host are
     <ul>
@@ -74,7 +74,7 @@ SocketPermission("localhost:1024-", "accept,connect,listen");
     is granted, it allows that code to accept connections on, connect to, or listen
     on any port between 1024 and 65535 on the local host.
     </p>
-    
+
     @attention
     Granting code permission to accept or make connections to remote hosts may be
     dangerous because malevolent code can then more easily transfer and share

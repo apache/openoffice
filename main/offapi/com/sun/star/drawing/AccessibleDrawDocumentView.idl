@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -54,10 +54,10 @@ module com {  module sun {  module star {  module drawing {
     outside the currently visible area, the user has to issue these requests
     manually or programmatically through the usual channels, e.g. pressing
     keys or selecting menu entries.</li>
-    <li>The hierarchy exposed through the 
+    <li>The hierarchy exposed through the
     <type scope="::com::sun::star::accessibility">XAccessibleContext</type>
     interface does not necessarily correspond directly to the underlying
-    draw page structure.  Internal nodes in this hierarchy are introduced 
+    draw page structure.  Internal nodes in this hierarchy are introduced
     by group shapes, 3D scenes, and OLE objects.</li>
     <li>The view modes editing view, outline view, slides view, notes view,
     handout view, and presentation view are not exposed explicitly.
@@ -69,8 +69,8 @@ module com {  module sun {  module star {  module drawing {
 */
 published service AccessibleDrawDocumentView
 {
-    /** Base interface for being accessible.  It gives access to the 
-        <type scope="::com::sun::star::accessibility">XAccessibleContext</type> 
+    /** Base interface for being accessible.  It gives access to the
+        <type scope="::com::sun::star::accessibility">XAccessibleContext</type>
         interface.
     */
     interface ::com::sun::star::accessibility::XAccessible;
@@ -83,22 +83,22 @@ published service AccessibleDrawDocumentView
             scope="com::sun::star::accessibility"
                 >AccessibleRole::DOCUMENT</const>.</li>
         <li>Name: Its name is "AccessibleDrawDocumentView",
-        "AccessibleOutlineView", or "slide window".</li> 
-        <li>Description: The description is "Draw Document", "Accessible 
+        "AccessibleOutlineView", or "slide window".</li>
+        <li>Description: The description is "Draw Document", "Accessible
         Draw Document Outline", or "slide window".</li>
         <li>Children: The shapes of the current draw page that are currently
             visible are direct and indirect children of (an object
-            implementing) 
+            implementing)
             this service.  Group shapes, 3D scenes, and OLE objects
             introduce further levels into the hierarchy.  If the visibility
-            of shapes changes--due to 
+            of shapes changes--due to
             scrolling, switching the current draw page, or changing the view
             mode--the appropriate listeners are called and the user gets
             informed of this.</li>
         <li>Parent: The parent will usually be the window that contains the
             draw document view.  It has to be set via implementation dependend
             ways.</li>
-        <li>Relations: Relations are set and modified from the outside.</li> 
+        <li>Relations: Relations are set and modified from the outside.</li>
         <li>States: <const scope="com::sun::star::accessibility"
                 >AccessibleStateType::DEFUNC</const> is set if a document view
                 becomes obsolete like when the window, which displays the view,

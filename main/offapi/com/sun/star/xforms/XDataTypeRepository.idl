@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -33,15 +33,15 @@
 #ifndef __com_sun_star_xsd_XDataType_idl__
 #include <com/sun/star/xsd/XDataType.idl>
 #endif
-#ifndef __com_sun_star_container_NoSuchElementException_idl__ 
-#include <com/sun/star/container/NoSuchElementException.idl> 
-#endif 
-#ifndef __com_sun_star_container_ElementExistException_idl__ 
-#include <com/sun/star/container/ElementExistException.idl> 
-#endif 
-#ifndef __com_sun_star_util_VetoException_idl__ 
-#include <com/sun/star/util/VetoException.idl> 
-#endif 
+#ifndef __com_sun_star_container_NoSuchElementException_idl__
+#include <com/sun/star/container/NoSuchElementException.idl>
+#endif
+#ifndef __com_sun_star_container_ElementExistException_idl__
+#include <com/sun/star/container/ElementExistException.idl>
+#endif
+#ifndef __com_sun_star_util_VetoException_idl__
+#include <com/sun/star/util/VetoException.idl>
+#endif
 
 
 //=============================================================================
@@ -65,7 +65,7 @@ interface XDataTypeRepository
     interface com::sun::star::container::XNameAccess;
 
     /** retrieves the basic type for the given type class
-    
+
         @see com::sun::star::xsd::DataTypeClass
 
         @throws com::sun::star::container::NoSuchElementException
@@ -76,7 +76,7 @@ interface XDataTypeRepository
             raises ( com::sun::star::container::NoSuchElementException );
 
     /** creates a clone of the given data type, and inserts it into the repository
-    
+
         @throws com::sun::star::container::NoSuchElementException
             if the given name does not refer to a type in the repository
 
@@ -85,7 +85,7 @@ interface XDataTypeRepository
     */
     com::sun::star::xsd::XDataType
         cloneDataType( [in] string sourceName, [in] string newName )
-			raises( com::sun::star::container::NoSuchElementException, com::sun::star::container::ElementExistException ); 
+			raises( com::sun::star::container::NoSuchElementException, com::sun::star::container::ElementExistException );
 
     /** removes a data type given by name from the repository
 
