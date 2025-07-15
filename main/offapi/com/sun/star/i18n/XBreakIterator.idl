@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -49,7 +49,7 @@ module com {  module sun {  module star {  module i18n {
 
 //============================================================================
 
-/** 
+/**
     contains the base routines for iteration in Unicode string. Iterates over
     characters, words, sentences and line breaks.
 
@@ -59,7 +59,7 @@ module com {  module sun {  module star {  module i18n {
 published interface XBreakIterator: com::sun::star::uno::XInterface
 {
     //------------------------------------------------------------------------
-    /** Traverses specified number of characters/cells in Text from 
+    /** Traverses specified number of characters/cells in Text from
         <em>nStartPos</em> forwards.
         <type>CharacterIteratorMode</type> can be cell based or
         character based. A cell is made of more than one character.
@@ -75,7 +75,7 @@ published interface XBreakIterator: com::sun::star::uno::XInterface
                      [in] long nCount, [out] long nDone );
 
     //------------------------------------------------------------------------
-    /** Traverses specified number of characters/cells in Text from 
+    /** Traverses specified number of characters/cells in Text from
         <em>nStartPos</em> backwards.
         <type>CharacterIteratorMode</type> can be cell based or
         character based. A cell is made of more than one character.
@@ -170,8 +170,8 @@ published interface XBreakIterator: com::sun::star::uno::XInterface
         position <em>nPos</em>.
 
         <p> This method is mis-defined, since <type>WordType</type>
-        is not an attribute of a word, but a way to break words, 
-        like excluding or including tail spaces for spellchecker 
+        is not an attribute of a word, but a way to break words,
+        like excluding or including tail spaces for spellchecker
         or cursor traveling. It returns 0 always.
         </p>
      */
@@ -181,8 +181,8 @@ published interface XBreakIterator: com::sun::star::uno::XInterface
     //------------------------------------------------------------------------
     /** If a word starts at position <em>nPos</em>.
 
-        <p> It is possible that both of this method 
-        and following method <em>isEndWord</em> all return 
+        <p> It is possible that both of this method
+        and following method <em>isEndWord</em> all return
         <TRUE/>, since StartPos of a word is inclusive
         while EndPos of a word is exclusive.
         </p>
@@ -226,7 +226,7 @@ published interface XBreakIterator: com::sun::star::uno::XInterface
         @param nMinBreakPos
             Defines a minimum break position for hyphenated line break.
             When the position for hyphenated line break is less than
-            <em>nMinBreakPos</em>, break position in 
+            <em>nMinBreakPos</em>, break position in
             <type>LineBreakResults</type> is set to -1.
 
         @param aHyphOptions
@@ -237,8 +237,8 @@ published interface XBreakIterator: com::sun::star::uno::XInterface
             characters at the start/end of a line.
 
         @returns
-            The <type>LineBreakResults</type> contain the break 
-            position of the line, <type>BreakType</type> and 
+            The <type>LineBreakResults</type> contain the break
+            position of the line, <type>BreakType</type> and
             <type scope="com::sun::star::linguistic2">XHyphenatedWord</type>
      */
     LineBreakResults getLineBreak( [in] string aText, [in] long nStartPos,

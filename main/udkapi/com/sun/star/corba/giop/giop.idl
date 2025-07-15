@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -58,7 +58,7 @@ published  	struct MessageHeader_1_0
 		byte message_type;
 		unsigned long message_size;
 	};
-	
+
     /**
       @deprecated
      */
@@ -73,7 +73,7 @@ published  	struct MessageHeader_1_1
 		byte message_type;
 		unsigned long message_size;
 	};
-	
+
     /**
       @deprecated
      */
@@ -91,7 +91,7 @@ published  	struct RequestHeader_1_0
 		CorbaString8 operation;
 		sequence < byte > requesting_principal;
 	};
-	
+
     /**
       @deprecated
      */
@@ -107,7 +107,7 @@ published  	struct RequestHeader_1_1
 		CorbaString8 operation;
 		sequence <byte> requesting_principal; // binary compatible
 	};
-	
+
     /**
       @deprecated
      */
@@ -126,7 +126,7 @@ published constants TargetAddressGroup
 			const short ProfileAddr = 1;
 			const short ReferenceAddr = 2;
 		};
-	
+
     /**
       @deprecated
      */
@@ -169,7 +169,7 @@ published enum ReplyStatusType_1_2
 		NEEDS_ADDRESSING_MODE // new value for 1.2
 	};
 
-	
+
     /**
       @deprecated
      */
@@ -179,7 +179,7 @@ published  	struct ReplyHeader_1_2
 		ReplyStatusType_1_2 reply_status;
 		com::sun::star::corba::iop::ServiceContextList service_context; // 1.2 change
 	};
-	
+
     /**
       @deprecated
      */
@@ -189,7 +189,7 @@ published  	struct SystemExceptionReplyBody
 		unsigned long minor_code_value;
 		unsigned long completion_status;
 	};
-	
+
     /**
       @deprecated
      */
@@ -207,7 +207,7 @@ published  	struct LocateRequestHeader_1_0
 		unsigned long request_id;
 		sequence <byte> object_key;
 	};
-	
+
     /**
       @deprecated
      */
@@ -224,7 +224,7 @@ published enum LocateStatusType_1_2 {
 		LOC_SYSTEM_EXCEPTION, // new value for GIOP 1.2
 		LOC_NEEDS_ADDRESSING_MODE // new value for GIOP 1.2
 	};
-	
+
     /**
       @deprecated
      */

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,40 +7,40 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
-#ifndef __com_sun_star_drawing_XEnhancedCustomShapeDefaulter_idl__ 
-#define __com_sun_star_drawing_XEnhancedCustomShapeDefaulter_idl__ 
+#ifndef __com_sun_star_drawing_XEnhancedCustomShapeDefaulter_idl__
+#define __com_sun_star_drawing_XEnhancedCustomShapeDefaulter_idl__
 
-#ifndef __com_sun_star_uno_XInterface_idl__ 
-#include <com/sun/star/uno/XInterface.idl> 
+#ifndef __com_sun_star_uno_XInterface_idl__
+#include <com/sun/star/uno/XInterface.idl>
 #endif
 
-//============================================================================= 
- 
- module com {  module sun {  module star {  module drawing {  
- 
-//============================================================================= 
- 
+//=============================================================================
+
+ module com {  module sun {  module star {  module drawing {
+
+//=============================================================================
+
 
 /**
  */
 interface XEnhancedCustomShapeDefaulter: com::sun::star::uno::XInterface
-{ 
-	//------------------------------------------------------------------------- 
+{
+	//-------------------------------------------------------------------------
 
-	/** 
+	/**
 
 	This interface allows to create shape properties for the given "ShapeType".
 	The "ShapeType" string can be empty then the current "ShapeType" of the
@@ -48,7 +48,7 @@ interface XEnhancedCustomShapeDefaulter: com::sun::star::uno::XInterface
 
 		"non-primitive",
 		"rectangle",
-		"round-rectangle", 
+		"round-rectangle",
 		"ellipse",
 		"diamond",
 		"isosceles-triangle"
@@ -57,7 +57,7 @@ interface XEnhancedCustomShapeDefaulter: com::sun::star::uno::XInterface
 		"trapezoid",
 		"hexagon",
 		"octagon",
-		"cross", 
+		"cross",
 		"star5",
 		"right-arrow",
 		"mso-spt14",
@@ -66,7 +66,7 @@ interface XEnhancedCustomShapeDefaulter: com::sun::star::uno::XInterface
 		"mso-spt17",
 		"mso-spt18",
 		"mso-spt19",
-		"mso-spt20", 
+		"mso-spt20",
 		"mso-spt21",
 		"can",
 		"ring",
@@ -252,7 +252,7 @@ interface XEnhancedCustomShapeDefaulter: com::sun::star::uno::XInterface
 
 	SJ: following shape types can't be created with this method, they
 	are part of the gallery (soon they also will be added)
-	// gallery: quadrat		
+	// gallery: quadrat
 	// gallery: round-quadrat
 	// gallery: circle
 	// gallery: circle-pie
@@ -278,14 +278,14 @@ interface XEnhancedCustomShapeDefaulter: com::sun::star::uno::XInterface
 	// gallery: fontwork-arch-right-curve
 	// gallery: fontwork-arch-left-pour
 	// gallery: fontwork-arch-right-pour
-	
+
 	 */
 	void createCustomShapeDefaults( [ in ] string aShapeType );
- 
-}; 
- 
-//============================================================================= 
- 
-}; }; }; };  
- 
-#endif 
+
+};
+
+//=============================================================================
+
+}; }; }; };
+
+#endif
