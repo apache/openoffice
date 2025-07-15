@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -41,14 +41,14 @@
 
 //=============================================================================
 
-module com { module sun { module star { module beans { 
+module com { module sun { module star { module beans {
 
  published interface XPropertyChangeListener;
  published interface XPropertiesChangeListener;
 
 //=============================================================================
 /** This is a test interface for introspection.
-	
+
 	@deprecated
 */
 published interface XIntroTest: com::sun::star::uno::XInterface
@@ -94,7 +94,7 @@ published interface XIntroTest: com::sun::star::uno::XInterface
 	void writeln( [in] string Text );
 
 	//-------------------------------------------------------------------------
-	/** ... 
+	/** ...
 	*/
 	long getDroenk();
 
@@ -109,12 +109,12 @@ published interface XIntroTest: com::sun::star::uno::XInterface
 	long getUps( [in] long l );
 
 	//-------------------------------------------------------------------------
-	/** ... 
+	/** ...
 	*/
 	void setDroenk( [in] long l );
 
 	//-------------------------------------------------------------------------
-	/** ... 
+	/** ...
 	*/
 	short getBla();
 
@@ -124,17 +124,17 @@ published interface XIntroTest: com::sun::star::uno::XInterface
 	void setBla( [in] long n );
 
 	//-------------------------------------------------------------------------
-	/** ... 
+	/** ...
 	*/
 	short getBlub();
 
 	//-------------------------------------------------------------------------
-	/** ... 
+	/** ...
 	*/
 	void setBlub( [in] short n );
 
 	//-------------------------------------------------------------------------
-	/** ... 
+	/** ...
 	*/
 	short getGulp();
 
@@ -144,12 +144,12 @@ published interface XIntroTest: com::sun::star::uno::XInterface
 	short setGulp( [in] short n );
 
 	//-------------------------------------------------------------------------
-	/** ... 
+	/** ...
 	*/
 	com::sun::star::uno::TypeClass getTypeClass( [in] short n );
 
 	//-------------------------------------------------------------------------
-	/** ... 
+	/** ...
 	*/
 	void setTypeClass( [in] com::sun::star::uno::TypeClass t,
 			 [in] double d1,
@@ -159,12 +159,12 @@ published interface XIntroTest: com::sun::star::uno::XInterface
 	sequence<string> getStrings();
 
 	//-------------------------------------------------------------------------
-	/** ... 
+	/** ...
 	*/
 	void setStrings( [in] sequence<string> Strings );
 
 	//-------------------------------------------------------------------------
-	/** ... 
+	/** ...
 	*/
 	void setStringsPerMethod( [in] sequence<string> Strings,
 			 [in] short n );
@@ -173,7 +173,7 @@ published interface XIntroTest: com::sun::star::uno::XInterface
 	sequence< sequence< sequence< short > > > getMultiSequence();
 
 	//-------------------------------------------------------------------------
-	/** ... 
+	/** ...
 	*/
 	void setMultiSequence( [in] sequence< sequence< sequence< short > > > Seq );
 
@@ -199,6 +199,6 @@ published interface XIntroTest: com::sun::star::uno::XInterface
 
 //=============================================================================
 
-}; }; }; }; 
+}; }; }; };
 
 #endif

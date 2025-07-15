@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -44,9 +44,9 @@ module com {  module sun {  module star {  module frame {
 
     <p>
     This interface can be used to retrieve additional information about
-    supported commands. This interface is normally used by configuration 
-    implementations to retrieve all supported commands. 
-    A dispatch information provider is normally supported by a 
+    supported commands. This interface is normally used by configuration
+    implementations to retrieve all supported commands.
+    A dispatch information provider is normally supported by a
     <type>Frame</type> service.
     </p>
 
@@ -67,12 +67,12 @@ published interface XDispatchInformationProvider: com::sun::star::uno::XInterfac
     sequence < short > getSupportedCommandGroups();
 
     //-------------------------------------------------------------------------
-    /** returns additional information about supported commands of a 
+    /** returns additional information about supported commands of a
         given command group.
-        
+
         @param CommandGroup
             specifies a command group.
-        
+
         @returns
             name and group name of every command supported. A group ID which is
             not supported returns an empty <type scope="com::sun::star::uno">Sequence</type>.

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -24,19 +24,19 @@
 #ifndef __com_sun_star_sdb_DataAccessDescriptor_idl__
 #define __com_sun_star_sdb_DataAccessDescriptor_idl__
 
-#ifndef __com_sun_star_sdbc_Connection_idl__ 
+#ifndef __com_sun_star_sdbc_Connection_idl__
 #include <com/sun/star/sdbc/Connection.idl>
 #endif
 
-#ifndef __com_sun_star_sdbc_ResultSet_idl__ 
+#ifndef __com_sun_star_sdbc_ResultSet_idl__
 #include <com/sun/star/sdbc/ResultSet.idl>
 #endif
 
-#ifndef __com_sun_star_beans_XPropertySet_idl__ 
+#ifndef __com_sun_star_beans_XPropertySet_idl__
 #include <com/sun/star/beans/XPropertySet.idl>
 #endif
 
-#ifndef __com_sun_star_beans_PropertyValue_idl__ 
+#ifndef __com_sun_star_beans_PropertyValue_idl__
 #include <com/sun/star/beans/PropertyValue.idl>
 #endif
 
@@ -215,7 +215,7 @@ published service DataAccessDescriptor
 		additionally refined with this property.</p>
 
 		<p>The single elements of the <member>Selection</member> are either record numbers (see
-		<member scope="com::sun::star::sdbc">XResultSet::getRow</member>), or bookmarks (see 
+		<member scope="com::sun::star::sdbc">XResultSet::getRow</member>), or bookmarks (see
 		<member scope="com::sun::star::sdbcx">XRowLocate::getBookmark</member>).<br/>
 		It is up to the component which provides or requires a DataAccessDescriptor to specify which of the
 		two alternatives it expects. If it does <em>not</em> specify this, then the property

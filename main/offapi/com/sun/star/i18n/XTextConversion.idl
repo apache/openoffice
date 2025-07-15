@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -80,18 +80,18 @@ published interface XTextConversion : ::com::sun::star::uno::XInterface
             or when the locale is not supported.
 	*/
 	TextConversionResult getConversions(
-            [in] string aText, 
+            [in] string aText,
             [in] long nStartPos,
             [in] long nLength,
             [in] ::com::sun::star::lang::Locale aLocale,
             [in] short nTextConversionType,
             [in] long nTextConversionOptions )
-        raises( com::sun::star::lang::IllegalArgumentException, 
+        raises( com::sun::star::lang::IllegalArgumentException,
                 com::sun::star::lang::NoSupportException );
 
 	//---------------------------------------------------------------------
-	/** Method to search dictionaries for the conversion candidate, if there 
-        are multiple candidates, it will return first one. This is for the 
+	/** Method to search dictionaries for the conversion candidate, if there
+        are multiple candidates, it will return first one. This is for the
         conversion in non-interactive mode.
 
 		@param aText
@@ -114,13 +114,13 @@ published interface XTextConversion : ::com::sun::star::uno::XInterface
             or when the locale is not supported.
 	*/
 	string getConversion(
-            [in] string aText, 
+            [in] string aText,
             [in] long nStartPos,
             [in] long nLength,
             [in] ::com::sun::star::lang::Locale aLocale,
             [in] short nTextConversionType,
             [in] long nTextConversionOptions )
-        raises( com::sun::star::lang::IllegalArgumentException, 
+        raises( com::sun::star::lang::IllegalArgumentException,
                 com::sun::star::lang::NoSupportException );
 
 	//---------------------------------------------------------------------
@@ -141,11 +141,11 @@ published interface XTextConversion : ::com::sun::star::uno::XInterface
             when <var>nConversionDictionaryType</var> is not known by the implementation,
             or when the locale is not supported.
     */
-    boolean interactiveConversion( 
+    boolean interactiveConversion(
             [in] ::com::sun::star::lang::Locale aLocale,
             [in] short nTextConversionType,
             [in] long nTextConversionOptions )
-        raises( com::sun::star::lang::IllegalArgumentException, 
+        raises( com::sun::star::lang::IllegalArgumentException,
                 com::sun::star::lang::NoSupportException );
 };
 

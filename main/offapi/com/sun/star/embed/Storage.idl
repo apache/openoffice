@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -24,35 +24,35 @@
 #ifndef __com_sun_star_embed_Storage_idl__
 #define __com_sun_star_embed_Storage_idl__
 
-#ifndef __com_sun_star_embed_BaseStorage_idl__ 
+#ifndef __com_sun_star_embed_BaseStorage_idl__
 #include <com/sun/star/embed/BaseStorage.idl>
 #endif
 
-#ifndef __com_sun_star_embed_XEncryptionProtectedSource_idl__ 
+#ifndef __com_sun_star_embed_XEncryptionProtectedSource_idl__
 #include <com/sun/star/embed/XEncryptionProtectedSource.idl>
 #endif
 
-#ifndef __com_sun_star_embed_XTransactedObject_idl__ 
+#ifndef __com_sun_star_embed_XTransactedObject_idl__
 #include <com/sun/star/embed/XTransactedObject.idl>
 #endif
 
-#ifndef __com_sun_star_embed_XTransactionBroadcaster_idl__ 
+#ifndef __com_sun_star_embed_XTransactionBroadcaster_idl__
 #include <com/sun/star/embed/XTransactionBroadcaster.idl>
 #endif
 
-#ifndef __com_sun_star_util_XModifiable_idl__ 
+#ifndef __com_sun_star_util_XModifiable_idl__
 #include <com/sun/star/util/XModifiable.idl>
 #endif
 
-#ifndef __com_sun_star_container_XNameAccess_idl__ 
+#ifndef __com_sun_star_container_XNameAccess_idl__
 #include <com/sun/star/container/XNameAccess.idl>
 #endif
 
-#ifndef __com_sun_star_lang_XComponent_idl__ 
+#ifndef __com_sun_star_lang_XComponent_idl__
 #include <com/sun/star/lang/XComponent.idl>
 #endif
 
-#ifndef __com_sun_star_beans_XPropertySet_idl__ 
+#ifndef __com_sun_star_beans_XPropertySet_idl__
 #include <com/sun/star/beans/XPropertySet.idl>
 #endif
 
@@ -228,7 +228,7 @@ published service Storage
 						the requested substorage. The latest committed version
 						of child storage will be used. So in case the child
 						storage was not committed after it was changed, the
-						changes will not appear in the new created storage. 
+						changes will not appear in the new created storage.
 						</p>
 
 						<p>
@@ -249,7 +249,7 @@ published service Storage
 				to retrieve it.
 			</dd>
 		</dl>
-				
+
 	 */
 	service BaseStorage;
 
@@ -274,7 +274,7 @@ published service Storage
 
 	// -----------------------------------------------------------------------
 	/** allows to set password to a root storage.
-	
+
 		<p>
 		This interface can be supported by a storage to allow to set
 		a common storage password. This password is used as default password

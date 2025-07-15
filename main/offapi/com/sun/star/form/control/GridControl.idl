@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,77 +7,77 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
 
-#ifndef __com_sun_star_form_control_GridControl_idl__ 
-#define __com_sun_star_form_control_GridControl_idl__ 
+#ifndef __com_sun_star_form_control_GridControl_idl__
+#define __com_sun_star_form_control_GridControl_idl__
 
-#ifndef __com_sun_star_awt_UnoControl_idl__ 
+#ifndef __com_sun_star_awt_UnoControl_idl__
 #include <com/sun/star/awt/UnoControl.idl>
 #endif
 
-#ifndef __com_sun_star_form_XGrid_idl__ 
+#ifndef __com_sun_star_form_XGrid_idl__
 #include <com/sun/star/form/XGrid.idl>
 #endif
 
-#ifndef __com_sun_star_form_XBoundComponent_idl__ 
+#ifndef __com_sun_star_form_XBoundComponent_idl__
 #include <com/sun/star/form/XBoundComponent.idl>
 #endif
 
-#ifndef __com_sun_star_form_XGridFieldDataSupplier_idl__ 
+#ifndef __com_sun_star_form_XGridFieldDataSupplier_idl__
 #include <com/sun/star/form/XGridFieldDataSupplier.idl>
 #endif
 
-#ifndef __com_sun_star_util_XModifyBroadcaster_idl__ 
+#ifndef __com_sun_star_util_XModifyBroadcaster_idl__
 #include <com/sun/star/util/XModifyBroadcaster.idl>
 #endif
 
-#ifndef __com_sun_star_util_XModeSelector_idl__ 
+#ifndef __com_sun_star_util_XModeSelector_idl__
 #include <com/sun/star/util/XModeSelector.idl>
 #endif
 
-#ifndef __com_sun_star_container_XIndexAccess_idl__ 
+#ifndef __com_sun_star_container_XIndexAccess_idl__
 #include <com/sun/star/container/XIndexAccess.idl>
 #endif
 
-#ifndef __com_sun_star_container_XEnumerationAccess_idl__ 
+#ifndef __com_sun_star_container_XEnumerationAccess_idl__
 #include <com/sun/star/container/XEnumerationAccess.idl>
 #endif
 
-#ifndef __com_sun_star_container_XContainer_idl__ 
+#ifndef __com_sun_star_container_XContainer_idl__
 #include <com/sun/star/container/XContainer.idl>
 #endif
 
-#ifndef __com_sun_star_frame_XDispatchProviderInterception_idl__ 
+#ifndef __com_sun_star_frame_XDispatchProviderInterception_idl__
 #include <com/sun/star/frame/XDispatchProviderInterception.idl>
 #endif
 
-#ifndef __com_sun_star_view_XSelectionSupplier_idl__ 
+#ifndef __com_sun_star_view_XSelectionSupplier_idl__
 #include <com/sun/star/view/XSelectionSupplier.idl>
 #endif
 
-//============================================================================= 
- 
-module com {  module sun {  module star {  module form { 
+//=============================================================================
+
+module com {  module sun {  module star {  module form {
 
 published interface XGridControl;
-     
-module control { 
- 
-//============================================================================= 
- 
+
+module control {
+
+//=============================================================================
+
 /** describes a table-like control for displaying data.
 
 	<p>The model of the control has to support the <type scope="com::sun::star::form::component">GridControl</type>
@@ -160,9 +160,9 @@ published service GridControl
 	[optional] interface com::sun::star::frame::XDispatchProviderInterception;
 };
 
-//============================================================================= 
- 
-}; }; }; }; }; 
- 
+//=============================================================================
 
-#endif 
+}; }; }; }; };
+
+
+#endif
