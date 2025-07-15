@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -64,7 +64,7 @@ published service DocumentSettings
     /** is the numerator for the logical scale of the document
      */
     [optional, property] long ScaleNumerator;
-    
+
 	/** is the denominator for the logical scale of the document
      */
     [optional, property] long ScaleDenominator;
@@ -92,7 +92,7 @@ published service DocumentSettings
     /** If this is true, the distance between two paragraphs is
 		the sum of ParaTopMargin of the previous and ParaBottomMargin of
 		the next paragraph. If false, only the greater of the two is
-		chosen. 
+		chosen.
      */
     [optional, property] boolean ParagraphSummation;
 

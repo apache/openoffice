@@ -20,28 +20,28 @@
  *************************************************************/
 
 
-#ifndef __com_sun_star_util_DataEditorEventType_idl__ 
-#define __com_sun_star_util_DataEditorEventType_idl__ 
- 
-//============================================================================= 
- 
-module com {  module sun {  module star {  module util {  
- 
+#ifndef __com_sun_star_util_DataEditorEventType_idl__
+#define __com_sun_star_util_DataEditorEventType_idl__
+
+//=============================================================================
+
+module com {  module sun {  module star {  module util {
+
 /** specifies the type of an event from an <type>XDataEditor</type>.
  */
 published enum DataEditorEventType
-{ 
+{
 	/** specifies that the data editing is done (data stored).
 	 */
-	DONE, 
-	
+	DONE,
+
 	/** specifies that the data editing was canceled by the user (data not stored).
 	 */
-	CANCELED 
-}; 
- 
-//============================================================================= 
- 
-}; }; }; };  
- 
-#endif 
+	CANCELED
+};
+
+//=============================================================================
+
+}; }; }; };
+
+#endif

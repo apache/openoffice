@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -54,7 +54,7 @@ module util
    This way strings have to be transported only once over remote connections.
    Valid ids are (in this implementation) non zero, signed 32 bit values.
    An atom of 0 means that the string in question is not registered</p>
- 
+
    <p>Additionally there is the abstraction of atom class:<br>
    Atoms are grouped into classes, so that an id can be assigned
    to multiple strings, depending on the class context. The main
@@ -122,7 +122,7 @@ published interface XAtomServer : com::sun::star::uno::XInterface
 		@param description
 			the string in question
 
-		@param create 
+		@param create
 			if true a new atom will be created for an unknown string
 			else the invalid atom (0) will be returned for an unknown string
 

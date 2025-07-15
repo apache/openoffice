@@ -84,7 +84,7 @@ published interface XGraphics: com::sun::star::uno::XInterface
     /** sets the clip region to specified clipping.
      */
     [oneway] void setClipRegion( [in] XRegion Clipping );
- 
+
     /** builds the intersection with the current region.
      */
     [oneway] void intersectClipRegion( [in] XRegion xClipping );

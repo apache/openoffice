@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,44 +7,44 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
-#ifndef __com_sun_star_chart_ChartTitle_idl__ 
-#define __com_sun_star_chart_ChartTitle_idl__ 
- 
-#ifndef __com_sun_star_drawing_Shape_idl__ 
-#include <com/sun/star/drawing/Shape.idl> 
-#endif 
+#ifndef __com_sun_star_chart_ChartTitle_idl__
+#define __com_sun_star_chart_ChartTitle_idl__
+
+#ifndef __com_sun_star_drawing_Shape_idl__
+#include <com/sun/star/drawing/Shape.idl>
+#endif
 
 #ifndef _com_sun_star_xml_UserDefinedAttributeSupplier_idl_
 #include <com/sun/star/xml/UserDefinedAttributeSupplier.idl>
 #endif
 
-//============================================================================= 
- 
- module com {  module sun {  module star {  module chart {  
- 
-//============================================================================= 
- 
+//=============================================================================
+
+ module com {  module sun {  module star {  module chart {
+
+//=============================================================================
+
 /** specifies titles in a chart.
 
     <p>In a chart there may be the following titles: the main title,
 	the sub title, and axis titles of the x- and y-axis.</p>
  */
 published service ChartTitle
-{ 
-	service com::sun::star::drawing::Shape; 
+{
+	service com::sun::star::drawing::Shape;
 
     //-------------------------------------------------------------------------
 
@@ -63,32 +63,32 @@ published service ChartTitle
 	@since OpenOffice 1.1.2
      */
     [optional] service com::sun::star::xml::UserDefinedAttributeSupplier;
- 
-	//------------------------------------------------------------------------- 
-	 
+
+	//-------------------------------------------------------------------------
+
 	/** specifies the rotation of the shape in 100th of degrees.
-		
+
 		<p>Especially in three-dimensional charts, this property comes
 		in handy if you want to align the axis titles with the axis,
 		which are usually not vertical or horizontal in the
 		two-dimensional projection.</p>
 	 */
-	[property] long TextRotation; 
- 
-	//------------------------------------------------------------------------- 
-	 
+	[property] long TextRotation;
+
+	//-------------------------------------------------------------------------
+
 	/** contains the text of the title.
 
         <p>Note that you can not change attributes of parts of a
         title, e.g., put one word in bold characters.  All formatting
         affects the entire string.</p>
 	 */
-	[property] string String; 
- 
-}; 
- 
-//============================================================================= 
- 
-}; }; }; };  
- 
-#endif 
+	[property] string String;
+
+};
+
+//=============================================================================
+
+}; }; }; };
+
+#endif

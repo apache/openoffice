@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -50,11 +50,11 @@
 #endif
 
 module com { module sun { module star { module awt {
-    
+
 /** specifies accessibility support for a menu.
-    
+
     @since OpenOffice 1.1.2
- */    
+ */
 published service AccessibleMenu
 {
     /** This interface gives access to the structural information of a menu:
@@ -86,7 +86,7 @@ published service AccessibleMenu
             <li><const scope="com::sun::star::accessibility"
                 >AccessibleStateType::DEFUNC</const>
                 is set if the object has already been disposed
-                and subsequent calls to this object result in				
+                and subsequent calls to this object result in
                 <type scope="com::sun::star::lang">DisposedException</type>
                 exceptions.</li>
             <li><const scope="com::sun::star::accessibility"
@@ -98,7 +98,7 @@ published service AccessibleMenu
                 >AccessibleStateType::SELECTABLE</const> is always set.</li>
             <li><const scope="com::sun::star::accessibility"
                 >AccessibleStateType::SELECTED</const> is set
-                if the object is selected.</li>   
+                if the object is selected.</li>
             <li><const scope="com::sun::star::accessibility"
                 >AccessibleStateType::SHOWING</const> is set
                 if the object is displayed on the screen.</li>
@@ -109,11 +109,11 @@ published service AccessibleMenu
         </ul>
      */
     interface ::com::sun::star::accessibility::XAccessibleContext;
-    
+
     interface ::com::sun::star::accessibility::XAccessibleEventBroadcaster;
-    
+
     interface ::com::sun::star::accessibility::XAccessibleComponent;
-    
+
     interface ::com::sun::star::accessibility::XAccessibleExtendedComponent;
 
     /** This interface gives read-only access to the text representation
@@ -140,7 +140,7 @@ published service AccessibleMenu
         menu.
      */
     interface ::com::sun::star::accessibility::XAccessibleSelection;
-    
+
 };
 
 }; }; }; };

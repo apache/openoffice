@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -33,7 +33,7 @@
 
 //=============================================================================
 
-module com { module sun { module star { module drawing { 
+module com { module sun { module star { module drawing {
 
 //=============================================================================
 /** This <type>Shape</type> encapsulates an applet.
@@ -43,28 +43,28 @@ module com { module sun { module star { module drawing {
 */
 published service AppletShape
 {
-	/** basic service for position, size and z-order. 
-		
+	/** basic service for position, size and z-order.
+
 		<p>A <type>AppletShape</type> cannot be rotated.
 	 */
 	service com::sun::star::drawing::Shape;
 
-	//------------------------------------------------------------------------- 
+	//-------------------------------------------------------------------------
 
 	/** This property specifies the base URI for the applet.
-		
+
 		<p>If this property is empty, then it defaults the same base URI as for
 		the current document.
 	*/
 	[property] string AppletCodeBase;
 
-	//------------------------------------------------------------------------- 
+	//-------------------------------------------------------------------------
 
 	/** this is an optional name for the applet.
 	*/
 	[property] string AppletName;
 
-	//------------------------------------------------------------------------- 
+	//-------------------------------------------------------------------------
 
 	/** This property specifies one of the following:
 		<br>The name of the class file that contains the compiled applet subclass.
@@ -72,14 +72,14 @@ published service AppletShape
 	*/
 	[property] string AppletCode;
 
-	//------------------------------------------------------------------------- 
+	//-------------------------------------------------------------------------
 
 	/** This sequence contains paramaters that are passed to the applet
 		when it is initialized.
 	*/
 	[property] sequence< com::sun::star::beans::PropertyValue > AppletCommands;
 
-	//------------------------------------------------------------------------- 
+	//-------------------------------------------------------------------------
 
 	/** This property specifies whether or not the applet can be scripted.
 	*/
@@ -88,6 +88,6 @@ published service AppletShape
 
 //=============================================================================
 
-}; }; }; }; 
+}; }; }; };
 
 #endif

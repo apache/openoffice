@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -53,13 +53,13 @@ module com { module sun { module star { module awt {
 	@see com::sun::star::accessibility::XAccessibleValue
 
 	@since OpenOffice 1.1.2
-*/    
+*/
 published service AccessibleToolBoxItem
 {
 	/** This interface gives access to the structural information of a tool box item:
 
        <ul>
-       <li>Role: The role of a tool box item is 
+       <li>Role: The role of a tool box item is
 		   <const scope="com::sun::star::accessibility">AccessibleRole::PUSH_BUTTON</const> when the item is a push button, or
 		   <const scope="com::sun::star::accessibility">AccessibleRole::TOGGLE_BUTTON</const> when the item is a button and checkable, or
 		   <const scope="com::sun::star::accessibility">AccessibleRole::PANEL</const> when the item is a window, or
@@ -68,8 +68,8 @@ published service AccessibleToolBoxItem
        <li>Name: The name of a tool box item is the name set.</li>
        <li>Description: The description of a tool box item is its localized
            help text.</li>
-       <li>Children: There can exist one child. 
-			This can be any kind of accessible object.</li>            
+       <li>Children: There can exist one child.
+			This can be any kind of accessible object.</li>
        <li>Parent: The parent is the tool box that contains the tool box item.</li>
        <li>Relations: There are no relations.</li>
        <li>States: The states supported by this service are
@@ -77,7 +77,7 @@ published service AccessibleToolBoxItem
            <li><const scope="com::sun::star::accessibility"
                >AccessibleStateType::DEFUNC</const>
                is set if the object has already been disposed
-               and subsequent calls to this object result in				
+               and subsequent calls to this object result in
                <type scope="com::sun::star::lang">DisposedException</type>
                exceptions.</li>
            <li><const scope="com::sun::star::accessibility"
@@ -124,7 +124,7 @@ published service AccessibleToolBoxItem
      */
     interface com::sun::star::accessibility::XAccessibleValue;
 };
-          
+
 }; }; }; };
 
 #endif
