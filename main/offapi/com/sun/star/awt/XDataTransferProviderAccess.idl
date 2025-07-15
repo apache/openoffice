@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -30,7 +30,7 @@
 
 //=============================================================================
 
-module com { module sun { module star { module datatransfer { 
+module com { module sun { module star { module datatransfer {
 module dnd {
 	 published interface XDragGestureRecognizer;
 	 published interface XDragSource;
@@ -38,7 +38,7 @@ module dnd {
 };
 module clipboard {
 	 published interface XClipboard;
-}; 
+};
 }; }; }; };
 
 //=============================================================================
@@ -49,7 +49,7 @@ module com { module sun { module star { module awt {
 
 //=============================================================================
 
-/** This interface extends the XToolkit interface with clipboard and 
+/** This interface extends the XToolkit interface with clipboard and
 	drag-and-drop support.
 */
 published interface XDataTransferProviderAccess: com::sun::star::uno::XInterface
@@ -57,7 +57,7 @@ published interface XDataTransferProviderAccess: com::sun::star::uno::XInterface
     //-------------------------------------------------------------------------
 
     /** returns the drag gesture recognizer of the specified window.
-    
+
 	    @returns the drag gesture recognizer.
 
 		@param window
@@ -70,18 +70,18 @@ published interface XDataTransferProviderAccess: com::sun::star::uno::XInterface
 	/** returns the drag source of the specified window.
 
         @returns the drag source.
-    
+
 		@param window
 		a window created by the same toolkit instance.
 	*/
 	com::sun::star::datatransfer::dnd::XDragSource getDragSource( [in] XWindow window );
-	
+
     //-------------------------------------------------------------------------
 
 	/** returns the drop target of the specified window.
 
         @returns the drop target.
-        
+
 		@param window
 		a window created by the same toolkit instance.
 	*/
@@ -92,7 +92,7 @@ published interface XDataTransferProviderAccess: com::sun::star::uno::XInterface
 	/** returns the specified clipboard.
 
         @returns the specified clipboard (if available).
-        
+
 		@param clipboardName
 		the name of the clipboard to return.
         If an empty string is passed in, the default clipboard is returned.

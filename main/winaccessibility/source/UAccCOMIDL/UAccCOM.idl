@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 import "oaidl.idl";
@@ -43,7 +43,7 @@ import "defines.idl";
 		[id(7), helpstring("method SetState")] HRESULT SetState(DWORD pXSate);
 		[id(8), helpstring("method Put_XAccLocation")] HRESULT Put_XAccLocation(const Location sLocation);
 		[id(9), helpstring("method Put_XAccFocus")] HRESULT Put_XAccFocus(long dChildID);
-		[id(10), helpstring("method Put_XAccParent")] HRESULT Put_XAccParent(IMAccessible* pIParent);	
+		[id(10), helpstring("method Put_XAccParent")] HRESULT Put_XAccParent(IMAccessible* pIParent);
 		[id(13), helpstring("method Put_XAccWindowHandle")] HRESULT Put_XAccWindowHandle(HWND hwnd);
 		[id(14), helpstring("method Put_XAccChildID")] HRESULT Put_XAccChildID(long dChildID);
 		[id(19), helpstring("method SetXAccessible")] HRESULT SetXAccessible( long XAccessible);
@@ -64,7 +64,7 @@ import "defines.idl";
 	interface IEnumVariant : IEnumVARIANT
 	{
 		[id(1), helpstring("method ClearEnumeration")] HRESULT ClearEnumeration();
-		[id(2), helpstring("method PutSelection")] HRESULT PutSelection(long pXSeletion);	
+		[id(2), helpstring("method PutSelection")] HRESULT PutSelection(long pXSeletion);
 	};
 	[
 		object,
@@ -116,7 +116,7 @@ library UACCCOMLib
 	{
 		[default] interface IUNOXWrapper;
 	};
-	
+
 	[
 		uuid(9FD9BA47-70AF-4160-99F1-526F2B9F111B),
 		helpstring("AccComponent Class")
@@ -151,7 +151,7 @@ library UACCCOMLib
 	{
 		[default] interface IAccessibleText;
 	};
-	
+
 	[
 		uuid(79CE1450-1F61-48E2-BF76-C07BD10105E2),
 		helpstring("AccEditableText Class")
@@ -159,7 +159,7 @@ library UACCCOMLib
 	coclass AccEditableText
 	{
 		[default] interface IAccessibleEditableText;
-	};	
+	};
 
 	[
 		uuid(CC55D71B-1828-4EE0-89E2-C3749CF9C9AB),
@@ -170,7 +170,7 @@ library UACCCOMLib
 		[default] interface IAccessibletext;
 	};
 
-	
+
 	[
 		uuid(73A45800-7A62-432C-A1A6-BF8852994331),
 		helpstring("AccImage Class")
@@ -179,7 +179,7 @@ library UACCCOMLib
 	{
 		[default] interface IAccessibleImage;
 	};
-	
+
 	[
 		uuid(730A561B-1AF6-49E1-9C04-9A2F48CD8512),
 		helpstring("AccValue Class")
@@ -196,7 +196,7 @@ library UACCCOMLib
 	{
 		[default] interface IAccessibleTable;
 	};
-	
+
 	[
 		uuid(519A64CD-F6A6-4793-BE50-4E36C4C593EF),
 		helpstring("AccHyperLink Class")
@@ -205,5 +205,5 @@ library UACCCOMLib
 	{
 		[default] interface IAccessibleAction;
 	};
-	
+
 };
