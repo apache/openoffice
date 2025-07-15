@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -50,7 +50,7 @@ module com {  module sun {  module star {  module text {
 /** The accessible view of an inactive embedded object. If an embedded
     object gets active, the active document gets an accessible object
 	tree of its own. This tree is not a subtree of the object that supports
-	this service but of the document service itself. The tree exist only 
+	this service but of the document service itself. The tree exist only
 	until the ovject is deactivated.
 
 	 @since OpenOffice 1.1.2
@@ -58,9 +58,9 @@ module com {  module sun {  module star {  module text {
 published service AccessibleTextEmbeddedObject
 {
 	/** This interface comprises the basic accessibility of embedded objects.
-		
+
 		<ul>
-			<li>The parent returned by 
+			<li>The parent returned by
                 <method scope="::com::sun::star::accessibility"
                 >XAccessibleContext::getAccessibleParent</method> is the
                 accessible view of a paragraph if the embedded object is
@@ -120,7 +120,7 @@ published service AccessibleTextEmbeddedObject
     */
 	interface ::com::sun::star::accessibility::XAccessibleImage;
 
-	/** This is the interface for listeners 
+	/** This is the interface for listeners
     */
 	interface ::com::sun::star::accessibility::XAccessibleEventBroadcaster;
 };

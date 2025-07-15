@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -39,21 +39,21 @@ module com { module sun { module star { module datatransfer { module dnd {
 //=============================================================================
 /** This interface is implemented by any drop target context object.
 
-	<p>A drop target context is created whenever the logical cursor associated 
-	with a Drag and Drop operation moves within the visible geometry of a 
+	<p>A drop target context is created whenever the logical cursor associated
+	with a Drag and Drop operation moves within the visible geometry of a
 	window associated with a drop target. </p>
-	
-	<p>The drop target context provides the mechanism for a potential receiver 
-	of a drop operation to both provide the end user with the appropriate drag 
+
+	<p>The drop target context provides the mechanism for a potential receiver
+	of a drop operation to both provide the end user with the appropriate drag
 	under feedback and effect the subsequent data transfer, if appropriate. </p>
 */
 
 published interface XDropTargetDragContext: com::sun::star::uno::XInterface
 {
 	//-------------------------------------------------------------------------
-	/** Accept the Drag. 
+	/** Accept the Drag.
 
-		<p>This method should be called from the methods of <type>XDropTargetListener</type> 
+		<p>This method should be called from the methods of <type>XDropTargetListener</type>
 		<ul>
 			<li><member>XDropTargetListener::dragEnter()</member></li>
 			<li><member>XDropTargetListener::dragOver()</member></li>
@@ -68,11 +68,11 @@ published interface XDropTargetDragContext: com::sun::star::uno::XInterface
 		@see DNDConstants
 		@see DropTargetDragEvent
 	*/
-	       
+
 	[oneway] void acceptDrag( [in] byte dragOperation );
 
 	//-------------------------------------------------------------------------
-	/** Reject the drag as a result of examining the available 
+	/** Reject the drag as a result of examining the available
 		<type scope="com::sun::star::datatransfer">DataFlavor</type> types
 		received in the <member scope="com::sun::star::datatransfer::dnd">XDropTargetListener::dragEnter()</member> method.
 	*/

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -34,13 +34,13 @@
 #ifndef __com_sun_star_script_XInvocation_idl__
 #include <com/sun/star/script/XInvocation.idl>
 #endif
- 
+
 #ifndef __com_sun_star_container_XNamed_idl__
 #include <com/sun/star/container/XNamed.idl>
 #endif
 //=============================================================================
 
-module ooo {  module vba {  module excel { 
+module ooo {  module vba {  module excel {
 
 //=============================================================================
 
@@ -115,7 +115,7 @@ interface XWorksheet
 	any Names( [in] any Index );
 
 	any Evaluate( [in] string Name );
-	
+
 	void setEnableCalculation( [in] boolean EnableCalculation ) raises(com::sun::star::script::BasicErrorException);
 	boolean getEnableCalculation() raises(com::sun::star::script::BasicErrorException);
 	void PrintOut( [in] any From, [in] any To, [in] any Copies, [in] any Preview, [in] any ActivePrinter, [in] any PrintToFile, [in] any Collate, [in] any PrToFileName, [in] any IgnorePrintAreas );
