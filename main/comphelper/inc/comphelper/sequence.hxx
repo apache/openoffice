@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -229,7 +229,7 @@ namespace comphelper
         values will be truncated. There's currently no measure to
         prevent or detect precision loss, overflow or truncation.
      */
-    template < typename DstType, typename SrcType > 
+    template < typename DstType, typename SrcType >
     ::com::sun::star::uno::Sequence< DstType > arrayToSequence( const SrcType* i_pArray, sal_Int32 nNum )
     {
         ::com::sun::star::uno::Sequence< DstType > result( nNum );
@@ -260,7 +260,7 @@ namespace comphelper
         will be truncated. There's currently no measure to prevent or
         detect precision loss, overflow or truncation.
      */
-    template < typename DstType, typename SrcType > 
+    template < typename DstType, typename SrcType >
     DstType* sequenceToArray( DstType* io_pArray, const ::com::sun::star::uno::Sequence< SrcType >& i_Sequence )
     {
         ::std::copy( i_Sequence.getConstArray(), i_Sequence.getConstArray()+i_Sequence.getLength(), io_pArray );
@@ -290,7 +290,7 @@ namespace comphelper
         truncated. There's currently no measure to prevent or detect
         precision loss, overflow or truncation.
      */
-    template < typename DstType, typename SrcType > 
+    template < typename DstType, typename SrcType >
     ::com::sun::star::uno::Sequence< DstType > containerToSequence( const SrcType& i_Container )
     {
         ::com::sun::star::uno::Sequence< DstType > result( i_Container.size() );
@@ -330,7 +330,7 @@ namespace comphelper
         truncated. There's currently no measure to prevent or detect
         precision loss, overflow or truncation.
      */
-    template < typename DstType, typename SrcType > 
+    template < typename DstType, typename SrcType >
     DstType sequenceToContainer( const ::com::sun::star::uno::Sequence< SrcType >& i_Sequence )
     {
         DstType result( i_Sequence.getLength() );
@@ -368,7 +368,7 @@ namespace comphelper
         truncated. There's currently no measure to prevent or detect
         precision loss, overflow or truncation.
      */
-    template < typename DstType, typename SrcType > 
+    template < typename DstType, typename SrcType >
     DstType& sequenceToContainer( DstType& o_Output, const ::com::sun::star::uno::Sequence< SrcType >& i_Sequence )
     {
         o_Output.resize( i_Sequence.getLength() );

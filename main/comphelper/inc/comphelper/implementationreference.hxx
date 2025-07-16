@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -88,15 +88,15 @@ namespace comphelper
         have UnoType be something different from XInterface, governed
         by the usage of the C++ interface)
 
-        @sample ImplementationReference< MyCppType, XMyInterface > 
+        @sample ImplementationReference< MyCppType, XMyInterface >
 
-        @sample ImplementationReference< MyAbstractCppType, XMyInterface, XInterface > 
+        @sample ImplementationReference< MyAbstractCppType, XMyInterface, XInterface >
         for an abstract C++ class
 
         @see ::rtl::Reference
 
      */
-    template < class CppType, 
+    template < class CppType,
                class UnoType,
                class XIfType=UnoType > class ImplementationReference
     {
@@ -107,7 +107,7 @@ namespace comphelper
         typedef XIfType UnambiguousXInterfaceType;
 
         /** Default-construct an ImplementationReference
-	
+
         	Uno reference will be invalid, implementation pointer will
         	be NULL.
          */
@@ -202,7 +202,7 @@ namespace comphelper
         void						reset() { dispose(); }
 
         /** Release all references
-            
+
         	This method releases the UNO interface reference, and
         	clears the C++ pointer to NULL.
          */
@@ -226,7 +226,7 @@ namespace comphelper
         // ImplementationReference& operator= ( const ImplementationReference& );
 
         /** Comparison operator
-            
+
         	Object identity is defined to be identity of the
         	implementation pointers. This is in general invalid when
         	comparing pointers to UNO objects (ambiguous class
@@ -239,7 +239,7 @@ namespace comphelper
         }
 
         /** less-than operator
-            
+
         	Object order is defined to be the ordering of the
         	implementation pointers. This is in general invalid when
         	comparing pointers to UNO objects (ambiguous class
@@ -253,15 +253,15 @@ namespace comphelper
         {
             return mpImpl < rhs.mpImpl;
         }
- 
+
     private:
-        
+
         // the interface, hard reference to prevent object from vanishing
         ::com::sun::star::uno::Reference< UnoInterfaceType > 	mxRef;
 
         // the c++ object, for our internal stuff
         ImplementationType* 									mpImpl;
-	
+
     };
 
 }

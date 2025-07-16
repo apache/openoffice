@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,18 +7,18 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  **************************************************************/
- 
+
  // MARKER(update_precomp.py): autogen include statement, do not remove
 //This file is about the conversion of the UOF v2.0 and ODF document format
 #ifndef _UOF2_SPLITER_HXX_
@@ -57,7 +57,7 @@ namespace com{
 
 namespace XSLT{
 
-class UOF2Splitter : public ::cppu::WeakImplHelper3< 
+class UOF2Splitter : public ::cppu::WeakImplHelper3<
 	::com::sun::star::io::XActiveDataControl ,
 	::com::sun::star::io::XActiveDataStreamer ,
 	::com::sun::star::io::XActiveDataSink >//,
@@ -75,7 +75,7 @@ class UOF2Splitter : public ::cppu::WeakImplHelper3<
 public :
 	UOF2Splitter( const ::com::sun::star::uno::Reference< ::com::sun::star::lang::XMultiServiceFactory >& rFactory , const ::rtl::OUString & rURL );
 	~UOF2Splitter();
-	
+
 	// XActiveDataControl
 	virtual void SAL_CALL   addListener ( const ::com::sun::star::uno::Reference< ::com::sun::star::io::XStreamListener> & rxListener ) throw( ::com::sun::star::uno::RuntimeException);
 	virtual void SAL_CALL   removeListener ( const ::com::sun::star::uno::Reference< ::com::sun::star::io::XStreamListener> & rxListener ) throw( ::com::sun::star::uno::RuntimeException);
@@ -85,11 +85,11 @@ public :
 	// XActiveDataSink
 	virtual void SAL_CALL   setInputStream ( const ::com::sun::star::uno::Reference< ::com::sun::star::io::XInputStream> &rxInputStream) throw( ::com::sun::star::uno::RuntimeException);
 	virtual ::com::sun::star::uno::Reference< ::com::sun::star::io::XInputStream> SAL_CALL getInputStream (void) throw( ::com::sun::star::uno::RuntimeException);
-	
+
 	// XActiveDataStreamer
 	virtual void SAL_CALL   setStream ( const ::com::sun::star::uno::Reference< ::com::sun::star::io::XStream> &rxStream) throw( ::com::sun::star::uno::RuntimeException);
 	virtual ::com::sun::star::uno::Reference< ::com::sun::star::io::XStream> SAL_CALL getStream (void) throw( ::com::sun::star::uno::RuntimeException);
-	
+
 };
 
 }

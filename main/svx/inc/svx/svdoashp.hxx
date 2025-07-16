@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -153,7 +153,7 @@ public:
 	SdrObjCustomShape();
 	virtual ~SdrObjCustomShape();
 
-	/* is merging default attributes from type-shype into the SdrCustomShapeGeometryItem. If pType 
+	/* is merging default attributes from type-shype into the SdrCustomShapeGeometryItem. If pType
 	is NULL then the type is being taken from the "Type" property of the SdrCustomShapeGeometryItem.
 	MergeDefaultAttributes is called when creating CustomShapes via UI and after importing */
 	void MergeDefaultAttributes( const rtl::OUString* pType = NULL );

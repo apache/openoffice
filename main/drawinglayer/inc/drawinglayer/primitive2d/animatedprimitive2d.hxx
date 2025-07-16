@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -44,7 +44,7 @@ namespace drawinglayer
         /** AnimatedSwitchPrimitive2D class
 
             This is the basic class for simple, animated primitives. The basic idea
-            is to have an animation definition (AnimationEntry) who's basic 
+            is to have an animation definition (AnimationEntry) who's basic
             functionality is to return a state value for any given animation time in
             the range of [0.0 .. 1.0]. Depending on the state, the decomposition
             calculates an index, which of the members of the child vector is to
@@ -73,7 +73,7 @@ namespace drawinglayer
 		public:
             /// constructor
 			AnimatedSwitchPrimitive2D(
-				const animation::AnimationEntry& rAnimationEntry, 
+				const animation::AnimationEntry& rAnimationEntry,
 				const Primitive2DSequence& rChildren,
 				bool bIsTextAnimation);
 
@@ -117,7 +117,7 @@ namespace drawinglayer
 		public:
             /// constructor
 			AnimatedBlinkPrimitive2D(
-				const animation::AnimationEntry& rAnimationEntry, 
+				const animation::AnimationEntry& rAnimationEntry,
 				const Primitive2DSequence& rChildren,
 				bool bIsTextAnimation);
 
@@ -154,7 +154,7 @@ namespace drawinglayer
             /// constructor
 			AnimatedInterpolatePrimitive2D(
 				const std::vector< basegfx::B2DHomMatrix >& rmMatrixStack,
-				const animation::AnimationEntry& rAnimationEntry, 
+				const animation::AnimationEntry& rAnimationEntry,
 				const Primitive2DSequence& rChildren,
 				bool bIsTextAnimation);
 

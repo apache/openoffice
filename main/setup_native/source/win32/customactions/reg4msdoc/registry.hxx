@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -53,13 +53,13 @@ typedef std::vector<std::wstring>				StringList;
 typedef std::auto_ptr<StringList>				StringListPtr;
 
 //---------------------------------------
-// 
+//
 //---------------------------------------
 
 class RegistryKeyImpl
 {
-public:   
-	
+public:
+
 	//############################################
 	// Destruction
 	//############################################
@@ -78,10 +78,10 @@ public:
 	std::wstring GetName() const;
 
 	/** The number of sub values of the key at hand
-		
+
 		@precond IsOpen = true
 
-		@throws 
+		@throws
 	*/
 	virtual size_t GetSubValueCount() const = 0;
 
@@ -92,7 +92,7 @@ public:
 		@throws
 	*/
 	virtual size_t GetSubKeyCount() const = 0;
-	
+
 	bool IsOpen() const;
 
 	/** Do we have write access on the key at hand
@@ -131,9 +131,9 @@ public:
 		@precond IsOpen = true
 	*/
 	virtual RegistryValue GetValue(const std::wstring& Name, const RegistryValue& Default) const = 0;
-	
+
 	/** Convenience function to determine if the
-		Registry key at hand has the specified 
+		Registry key at hand has the specified
 		value
 
 		@precond IsOpen = true
@@ -143,7 +143,7 @@ public:
 	bool HasValue(const std::wstring& Name) const;
 
 	/** Convenience function to determine if the
-		Registry key at hand has the specified 
+		Registry key at hand has the specified
 		sub-key
 
 		@precond IsOpen = true
@@ -158,9 +158,9 @@ public:
 	//############################################
 
 
-	/** Open the registry key, has no effect if 
+	/** Open the registry key, has no effect if
 		the key is already open
-		
+
 		@precond IsOpen = false
 
 		@throws RegistryWriteAccessDenyException
@@ -172,12 +172,12 @@ public:
 		using it without re-opening may cause
 		RegistryIOExceptions to be thrown
 
-		This is a template method that calls 
-		ImplClose which has to be overwritten 
+		This is a template method that calls
+		ImplClose which has to be overwritten
 		by sub-classes
 	*/
 	void Close();
-	
+
 	/** Open the specified sub-key of the registry key
 		at hand
 
@@ -245,8 +245,8 @@ public:
 	virtual void SetValue(const RegistryValue& Value) = 0;
 
 
-	/** Copies the specified value from RegistryKey to 
-		the registry key at hand, if a value with this 
+	/** Copies the specified value from RegistryKey to
+		the registry key at hand, if a value with this
 		name already exist under the registry key at hand
 		it will be overwritten
 
@@ -260,8 +260,8 @@ public:
 	*/
 	virtual void CopyValue(const RegistryKey& RegistryKey, const std::wstring& Name);
 
-	/** Copies the specified value from RegistryKey to 
-		the registry key at hand under a new name, 
+	/** Copies the specified value from RegistryKey to
+		the registry key at hand under a new name,
 		if a value with this name already exist there
 		it will be overwritten
 
@@ -276,8 +276,8 @@ public:
 	virtual void CopyValue(const RegistryKey& RegistryKey, const std::wstring& Name, const std::wstring& NewName);
 
 	//############################################
-	// Creation 
-	// only possible through WindowsRegistry class	
+	// Creation
+	// only possible through WindowsRegistry class
 	//############################################
 
 
@@ -291,7 +291,7 @@ protected:
     RegistryKeyImpl(HKEY RootKey, const std::wstring& KeyName);
 
 	/** Create instance of the specified Registry key.
-		RootKey should only one of the predefined 
+		RootKey should only one of the predefined
 		keys HKEY_CLASSES_ROOT, HKEY_CURRENT_USER,
 		HKEY_LOCAL_MACHINE, HKEY_USERS
 
@@ -300,7 +300,7 @@ protected:
 				 RegistryKeyNotFoundException
 	*/
 	RegistryKeyImpl(HKEY RootKey);
-	
+
 	/** Create an instances of the specified Registry key,
 		the key is assumed to be already opened.
 	*/
@@ -313,7 +313,7 @@ protected:
 	*/
 	bool IsRootKey() const;
 
-protected: 
+protected:
     HKEY			m_hRootKey;
     HKEY		    m_hSubKey;
 	std::wstring	m_KeyName;

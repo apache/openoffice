@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -54,15 +54,15 @@ enum SlideViewFocusMove
 // - SdSlideView -
 // ---------------
 
-class SlideView 
+class SlideView
     : public ::sd::View
 {
 public:
     TYPEINFO();
 
     SlideView (
-        SdDrawDocument* pDoc, 
-        ::Window* pWindow, 
+        SdDrawDocument* pDoc,
+        ::Window* pWindow,
         SlideViewShell* pSlideVShell);
     virtual ~SlideView (void);
 
@@ -92,11 +92,11 @@ public:
     SdPage*             GetHitPage( const Point& rPos ) const;
     SdPage*             GetFadePage( const Point& rPos ) const;
     SdPage*             GetNearestPage( const Point& rPos ) const;
-	
+
 	void                DeleteMarked();
 	void                MoveMarked( sal_uInt16 nTargetPage );
 
-	void		            AddToCache( SdPage* pPage, const Bitmap& rBitmap, long nZoom ); 
+	void		            AddToCache( SdPage* pPage, const Bitmap& rBitmap, long nZoom );
 	const GraphicObject*    GetFromCache( SdPage* pPage, long& rZoom, long nZoomTolerance ) const;
 
 	virtual void        Notify( SfxBroadcaster& rBC, const SfxHint& rHint );
@@ -107,14 +107,14 @@ public:
 
     virtual void        StartDrag( const Point& rDragPt, ::Window* pWindow );
 	virtual void        DragFinished( sal_Int8 nDropAction );
-	
-    virtual sal_Int8    AcceptDrop( const AcceptDropEvent& rEvt, DropTargetHelper& rTargetHelper, 
-                                    ::sd::Window* pTargetWindow = NULL, 
-                                    sal_uInt16 nPage = SDRPAGE_NOTFOUND, 
+
+    virtual sal_Int8    AcceptDrop( const AcceptDropEvent& rEvt, DropTargetHelper& rTargetHelper,
+                                    ::sd::Window* pTargetWindow = NULL,
+                                    sal_uInt16 nPage = SDRPAGE_NOTFOUND,
                                     sal_uInt16 nLayer = SDRPAGE_NOTFOUND );
 	virtual sal_Int8    ExecuteDrop( const ExecuteDropEvent& rEvt, DropTargetHelper& rTargetHelper,
-                                     ::sd::Window* pTargetWindow = NULL, 
-                                     sal_uInt16 nPage = SDRPAGE_NOTFOUND, 
+                                     ::sd::Window* pTargetWindow = NULL,
+                                     sal_uInt16 nPage = SDRPAGE_NOTFOUND,
                                      sal_uInt16 nLayer = SDRPAGE_NOTFOUND );
 
 	void 	            UpdateAllPages();

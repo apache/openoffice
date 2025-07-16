@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -77,8 +77,8 @@ public:
     TYPEINFO();
 
     View (
-        SdDrawDocument* pDrawDoc, 
-        OutputDevice* pOutDev, 
+        SdDrawDocument* pDrawDoc,
+        OutputDevice* pOutDev,
         ViewShell* pViewSh=NULL);
 	virtual ~View (void);
 
@@ -97,24 +97,24 @@ public:
 	virtual void            StartDrag( const Point& rStartPos, ::Window* pWindow );
 	virtual void            DragFinished( sal_Int8 nDropAction );
 	virtual sal_Int8 AcceptDrop (
-        const AcceptDropEvent& rEvt, 
+        const AcceptDropEvent& rEvt,
         DropTargetHelper& rTargetHelper,
-        ::sd::Window* pTargetWindow = NULL, 
-        sal_uInt16 nPage = SDRPAGE_NOTFOUND, 
+        ::sd::Window* pTargetWindow = NULL,
+        sal_uInt16 nPage = SDRPAGE_NOTFOUND,
         sal_uInt16 nLayer = SDRPAGE_NOTFOUND);
 	virtual sal_Int8 ExecuteDrop (
-        const ExecuteDropEvent& rEvt, 
+        const ExecuteDropEvent& rEvt,
         DropTargetHelper& rTargetHelper,
-        ::sd::Window* pTargetWindow = NULL, 
-        sal_uInt16 nPage = SDRPAGE_NOTFOUND, 
+        ::sd::Window* pTargetWindow = NULL,
+        sal_uInt16 nPage = SDRPAGE_NOTFOUND,
         sal_uInt16 nLayer = SDRPAGE_NOTFOUND);
 
 	::com::sun::star::uno::Reference<
-        ::com::sun::star::datatransfer::XTransferable>	
-        CreateClipboardDataObject (::sd::View*, ::Window& rWindow);
-	::com::sun::star::uno::Reference< 
         ::com::sun::star::datatransfer::XTransferable>
-        CreateDragDataObject (::sd::View*, ::Window& rWindow, 
+        CreateClipboardDataObject (::sd::View*, ::Window& rWindow);
+	::com::sun::star::uno::Reference<
+        ::com::sun::star::datatransfer::XTransferable>
+        CreateDragDataObject (::sd::View*, ::Window& rWindow,
             const Point& rDragPos);
 	::com::sun::star::uno::Reference<
         ::com::sun::star::datatransfer::XTransferable>
@@ -142,7 +142,7 @@ public:
 						 present, then is is inserted as a single graphic.
 	*/
 	bool					InsertMetaFile( TransferableDataHelper& rDataHelper,
-											const Point& rInsertPos, 
+											const Point& rInsertPos,
 											ImageMap* pImageMap, bool bOptimize );
 
 	SdrGrafObj*             InsertGraphic( const Graphic& rGraphic,
@@ -264,13 +264,13 @@ private:
 };
 
 
-DrawDocShell* View::GetDocSh (void) const 
+DrawDocShell* View::GetDocSh (void) const
 {
-    return mpDocSh; 
+    return mpDocSh;
 }
-SdDrawDocument* View::GetDoc (void) const 
+SdDrawDocument* View::GetDoc (void) const
 {
-    return mpDoc; 
+    return mpDoc;
 }
 
 ViewShell* View::GetViewShell (void) const

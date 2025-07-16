@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -112,7 +112,7 @@ class ModuleManager : public  css::lang::XTypeProvider
                    css::container::NoSuchElementException,
                    css::lang::WrappedTargetException     ,
                    css::uno::RuntimeException            );
-    
+
         // XNameAccess
         virtual css::uno::Any SAL_CALL getByName(const ::rtl::OUString& sName)
             throw(css::container::NoSuchElementException,
@@ -135,7 +135,7 @@ class ModuleManager : public  css::lang::XTypeProvider
         // XContainerQuery
         virtual css::uno::Reference< css::container::XEnumeration > SAL_CALL createSubSetEnumerationByQuery(const ::rtl::OUString& sQuery)
             throw(css::uno::RuntimeException);
-            
+
         virtual css::uno::Reference< css::container::XEnumeration > SAL_CALL createSubSetEnumerationByProperties(const css::uno::Sequence< css::beans::NamedValue >& lProperties)
             throw(css::uno::RuntimeException);
     //___________________________________________
@@ -151,7 +151,7 @@ class ModuleManager : public  css::lang::XTypeProvider
                     method works together with the member
                     m_xCFG, open it on demand and cache it
                     afterwards.
-    
+
                     Note: A writable configuration access
                     must be created explicitly. Otherwise
                     we can't make sure that broken write requests
@@ -174,11 +174,11 @@ class ModuleManager : public  css::lang::XTypeProvider
             @descr  It checks for the optional but preferred interface
                     XModule first. If this module does not exists at the
                     given component it tries to use XServiceInfo instead.
-                    
+
                     Note: This method tries to locate a suitable module name.
                     Nothing else. Selecting the right component and throwing suitable
                     exceptions must be done outside.
-                    
+
             @see    identify()
 
             @param  xComponent

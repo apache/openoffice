@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -38,7 +38,7 @@ namespace sd {
 |* View fuer den MDIFrame
 |*
 \************************************************************************/
-class FrameView 
+class FrameView
     : public SdrView
 {
 public:
@@ -116,7 +116,7 @@ public:
         document is loaded.
     */
 	void SetViewShEditModeOnLoad (const EditMode eMode);
-    
+
     /** Return the value of the edit mode as it was when the document was
         loaded.
     */
@@ -158,7 +158,7 @@ public:
     void SetViewShellTypeOnLoad (ViewShell::ShellType eType);
 
     ViewShell::ShellType GetViewShellTypeOnLoad (void) const;
-    
+
 	void SetPresentationViewShellId(sal_uInt16 nId)
 				 { mnPresViewShellId = nId; }
 	sal_uInt16 GetPresentationViewShellId() const { return mnPresViewShellId; }
@@ -216,7 +216,7 @@ private:
         the names ones (<FALSE/>).  Not persistent.
     */
     bool            mbIsNavigatorShowingAllShapes;
-    
+
     /** The type of the previous view shell.  The (default) value
         ViewShell::ST_NONE indicates that there was no previous view shell.
         Note that this value is used only temporarily and is not saved or

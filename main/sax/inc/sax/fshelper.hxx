@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -48,16 +48,16 @@ class SAX_DLLPUBLIC FastSerializerHelper
 public:
 
     FastSerializerHelper( const ::com::sun::star::uno::Reference< ::com::sun::star::io::XOutputStream >& xOutputStream );
-	
+
 	~FastSerializerHelper();
-	
+
 	void startElement(const char* elementName, ...);
 	void singleElement(const char* elementName, ...);
 	void endElement(const char* elementName);
 
 	void startElementV(sal_Int32 elementTokenId, va_list args);
 	void singleElementV(sal_Int32 elementTokenId, va_list args);
-	
+
 	inline void startElement(sal_Int32 elementTokenId, ...)
 		{ va_list args; va_start( args, elementTokenId ); startElementV( elementTokenId, args ); va_end( args ); }
 	inline void singleElement(sal_Int32 elementTokenId, ...)
@@ -69,7 +69,7 @@ public:
 	void endElement(sal_Int32 elementTokenId);
 	inline void endElementNS(sal_Int32 namespaceTokenId, sal_Int32 elementTokenId)
 		{ endElement( FSNS( namespaceTokenId, elementTokenId ) ); }
-		
+
 	void singleElement(const char* elementName, XFastAttributeListRef xAttrList);
 	inline void singleElement(sal_Int32 elementTokenId, XFastAttributeListRef xAttrList)
 		{ singleElementV(elementTokenId, xAttrList); }
@@ -78,7 +78,7 @@ public:
 		{ singleElementV(FSNS( namespaceTokenId, elementTokenId), xAttrList); }
 
     void startElementV(sal_Int32 elementTokenId, XFastAttributeListRef xAttrList);
-    inline void startElementNS(sal_Int32 namespaceTokenId, sal_Int32 elementTokenId, XFastAttributeListRef xAttrList) 
+    inline void startElementNS(sal_Int32 namespaceTokenId, sal_Int32 elementTokenId, XFastAttributeListRef xAttrList)
         { startElementV( FSNS( namespaceTokenId, elementTokenId ), xAttrList ); }
 
 	FastSerializerHelper* write(const char* value);
@@ -94,7 +94,7 @@ public:
 	FastSerializerHelper* writeId(sal_Int32 tokenId);
 
 	::com::sun::star::uno::Reference< ::com::sun::star::io::XOutputStream > getOutputStream();
-	
+
 	FastAttributeList *createAttrList();
 
     void mark();

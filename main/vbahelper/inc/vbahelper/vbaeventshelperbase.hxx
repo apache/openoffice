@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,20 +7,20 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
- 
+
 #ifndef VBAHELPER_VBAEVENTSHELPERBASE_HXX
 #define VBAHELPER_VBAEVENTSHELPERBASE_HXX
 
@@ -82,7 +82,7 @@ public:
 
 protected:
     // ------------------------------------------------------------------------
-    
+
     struct EventHandlerInfo
     {
         sal_Int32 mnEventId;
@@ -116,7 +116,7 @@ protected:
         inline EventQueueEntry( sal_Int32 nEventId, const css::uno::Sequence< css::uno::Any >& rArgs ) : mnEventId( nEventId ), maArgs( rArgs ) {}
     };
     typedef ::std::deque< EventQueueEntry > EventQueue;
-    
+
     /** Derived classes do additional prpeparations and return whether the
         event handler has to be called. */
     virtual bool implPrepareEvent(
@@ -165,7 +165,7 @@ private:
 
     /** Updates the map containing paths to event handlers for a Basic module. */
     ModulePathMap& updateModulePathMap( const ::rtl::OUString& rModuleName ) throw (css::uno::RuntimeException);
-    
+
 protected:
     css::uno::Reference< css::frame::XModel > mxModel;
     SfxObjectShell* mpShell;

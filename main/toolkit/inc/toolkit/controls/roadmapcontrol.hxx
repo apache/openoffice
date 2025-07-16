@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -84,7 +84,7 @@ namespace toolkit
 	// ===================================================================
 	class UnoControlRoadmapModel : public UnoControlRoadmapModel_Base,
                                    public UnoControlRoadmapModel_IBase
-                                   
+
 	{
     private:
 //        PropertyChangeListenerMultiplexer 	            maPropertyListeners;
@@ -125,11 +125,11 @@ namespace toolkit
 	DECLIMPL_SERVICEINFO_DERIVED( UnoControlRoadmapModel, UnoControlRoadmapModel_Base, szServiceName2_UnoControlRoadmapModel )
 
 	sal_Int32 SAL_CALL getCount() throw (RuntimeException);
-    virtual Any SAL_CALL getByIndex( sal_Int32 Index ) throw (IndexOutOfBoundsException, WrappedTargetException, RuntimeException ); 
+    virtual Any SAL_CALL getByIndex( sal_Int32 Index ) throw (IndexOutOfBoundsException, WrappedTargetException, RuntimeException );
 
-    virtual void SAL_CALL insertByIndex( sal_Int32 Index, const Any & _Element) throw	 (IllegalArgumentException, IndexOutOfBoundsException, WrappedTargetException, RuntimeException ); 	
-    virtual void SAL_CALL removeByIndex( sal_Int32 Index ) throw (IndexOutOfBoundsException, WrappedTargetException, RuntimeException ); 
-    virtual void SAL_CALL replaceByIndex( sal_Int32 Index, const Any & _Element) throw (IllegalArgumentException, IndexOutOfBoundsException, WrappedTargetException, RuntimeException ); 
+    virtual void SAL_CALL insertByIndex( sal_Int32 Index, const Any & _Element) throw	 (IllegalArgumentException, IndexOutOfBoundsException, WrappedTargetException, RuntimeException );
+    virtual void SAL_CALL removeByIndex( sal_Int32 Index ) throw (IndexOutOfBoundsException, WrappedTargetException, RuntimeException );
+    virtual void SAL_CALL replaceByIndex( sal_Int32 Index, const Any & _Element) throw (IllegalArgumentException, IndexOutOfBoundsException, WrappedTargetException, RuntimeException );
 
     virtual void SAL_CALL addContainerListener( const Reference< XContainerListener >& xListener ) throw (RuntimeException);
     virtual void SAL_CALL removeContainerListener( const Reference< XContainerListener >& xListener ) throw (RuntimeException);
@@ -149,7 +149,7 @@ namespace toolkit
 
 	virtual Type SAL_CALL getElementType() throw (RuntimeException);
 
-	virtual sal_Bool SAL_CALL hasElements() throw (RuntimeException); 
+	virtual sal_Bool SAL_CALL hasElements() throw (RuntimeException);
 
 	};
 
@@ -158,7 +158,7 @@ namespace toolkit
 	// = UnoRoadmapControl
 	// ===================================================================
 	class UnoRoadmapControl : public UnoControlRoadmap_Base,
-                              public UnoControlRoadmap_IBase    
+                              public UnoControlRoadmap_IBase
     {
     private:
         ItemListenerMultiplexer 	            maItemListeners;
@@ -168,21 +168,21 @@ namespace toolkit
 
     void SAL_CALL disposing( const ::com::sun::star::lang::EventObject& Source ) throw(::com::sun::star::uno::RuntimeException) { UnoControlBase::disposing( Source ); }
 
-    void SAL_CALL   dispose(  ) throw(::com::sun::star::uno::RuntimeException);   
+    void SAL_CALL   dispose(  ) throw(::com::sun::star::uno::RuntimeException);
 
 
     sal_Bool SAL_CALL setModel(const ::com::sun::star::uno::Reference< ::com::sun::star::awt::XControlModel >& Model) throw ( ::com::sun::star::uno::RuntimeException );
 
     void SAL_CALL elementInserted( const ::com::sun::star::container::ContainerEvent& rEvent )throw(::com::sun::star::uno::RuntimeException);
-    void SAL_CALL elementRemoved( const ::com::sun::star::container::ContainerEvent& rEvent )throw(::com::sun::star::uno::RuntimeException); 
-    void SAL_CALL elementReplaced( const ::com::sun::star::container::ContainerEvent& rEvent )throw(::com::sun::star::uno::RuntimeException); 
+    void SAL_CALL elementRemoved( const ::com::sun::star::container::ContainerEvent& rEvent )throw(::com::sun::star::uno::RuntimeException);
+    void SAL_CALL elementReplaced( const ::com::sun::star::container::ContainerEvent& rEvent )throw(::com::sun::star::uno::RuntimeException);
 
     virtual void SAL_CALL addItemListener( const Reference< XItemListener >& l ) throw (RuntimeException);
     virtual void SAL_CALL removeItemListener( const Reference< XItemListener >& l ) throw (RuntimeException);
 
 
     virtual void SAL_CALL itemStateChanged( const ItemEvent& rEvent ) throw (RuntimeException);
-    
+
     virtual void SAL_CALL propertyChange( const ::com::sun::star::beans::PropertyChangeEvent& evt ) throw (::com::sun::star::uno::RuntimeException);
 
 	// XTypeProvider

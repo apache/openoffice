@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -62,7 +62,7 @@ public:
        Convert CP to FC.
 
        @param aCpIn    CP to convert
-       
+
        @return FC associated with CP
      */
     virtual Fc cp2fc(const Cp & aCpIn) const = 0;
@@ -71,7 +71,7 @@ public:
        Convert FC to CP.
 
        @param aFcIn    FC to convert
-       
+
        @return CP associated with FC
      */
     virtual Cp fc2cp(const Fc & aFcIn) const = 0;
@@ -114,7 +114,7 @@ public:
     */
     virtual Cp getLastCp() const = 0;
 
-    /** 
+    /**
         Return last FC.
     */
     virtual Fc getLastFc() const = 0;
@@ -133,7 +133,7 @@ public:
     */
     virtual Fc getFc(sal_uInt32 nIndex) const = 0;
 
-    /** 
+    /**
         Create CpAndFc from Cp.
 
         @param rCp   the Cp
@@ -142,7 +142,7 @@ public:
     */
     virtual CpAndFc createCpAndFc(const Cp & rCp, PropertyType eType) const = 0;
 
-    /** 
+    /**
         Create CpAndFc from Fc.
 
         @param rFc   the Fc
@@ -161,7 +161,7 @@ public:
 
 /**
    Dump piece table.
-   
+
    @param o             stream to dump to
    @param rPieceTable   piece table to dump
 */

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -44,13 +44,13 @@ class ScToken;
 typedef ::std::vector< ScComplexRefData > ScRefList;
 typedef formula::SimpleIntrusiveReference< class ScToken > ScTokenRef;
 
-/** 
- * Another ref-counted token type using shared_ptr.  <b>Be extra careful 
- * not to mix use of this smart pointer type with ScTokenRef</b>, since 
- * mixing them might cause a premature object deletion because the same 
- * object may be ref-counted by two different smart pointer wrappers. 
- *  
- * You have been warned. 
+/**
+ * Another ref-counted token type using shared_ptr.  <b>Be extra careful
+ * not to mix use of this smart pointer type with ScTokenRef</b>, since
+ * mixing them might cause a premature object deletion because the same
+ * object may be ref-counted by two different smart pointer wrappers.
+ *
+ * You have been warned.
  */
 typedef ::boost::shared_ptr< ScToken > ScSharedTokenRef;
 
@@ -472,7 +472,7 @@ public:
                         pD = &aDub;
                     }
                 ~SingleDoubleRefModifier()
-                    { 
+                    {
                         if ( pS )
                             *pS = (*pD).Ref1;
                     }

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -34,7 +34,7 @@ class SvxSwFramePosString_Impl;
 class SVX_DLLPUBLIC SvxSwFramePosString
 {
     SvxSwFramePosString_Impl* pImpl;
-public: 
+public:
     SvxSwFramePosString();
     ~SvxSwFramePosString();
     enum StringId
@@ -66,9 +66,9 @@ public:
         FLY_REL_PG_RIGHT           ,
         FLY_REL_PG_FRAME           ,
         FLY_REL_PG_PRTAREA         ,
-        FLY_MIR_REL_PG_LEFT        ,      
-        FLY_MIR_REL_PG_RIGHT       ,      
-        TOP, 
+        FLY_MIR_REL_PG_LEFT        ,
+        FLY_MIR_REL_PG_RIGHT       ,
+        TOP,
         BOTTOM,
         CENTER_HORI,
         CENTER_VERT,
@@ -76,14 +76,14 @@ public:
         FROMBOTTOM,
         BELOW,
         FROMRIGHT,
-        REL_PG_TOP,   
+        REL_PG_TOP,
         REL_PG_BOTTOM,
-        REL_FRM_TOP,   
+        REL_FRM_TOP,
         REL_FRM_BOTTOM,
         REL_LINE,
 
         STR_MAX
     };
     const String& GetString(StringId eId);
-};            
+};
 #endif

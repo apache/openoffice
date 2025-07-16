@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -56,23 +56,23 @@ private:
 	 *                    internal modification happens.
 	 */
 	com::sun::star::xml::crypto::sax::ElementMarkPriority m_nPriority;
-	
+
 	/*
 	 * the modify flag, representing whether which elementcollector will
 	 * modify its data.
 	 */
 	bool m_bToModify;
-	
+
 	/* the notify enable flag, see notifyListener method */
 	bool m_bAbleToNotify;
-	
+
 	/* whether the listener has been notified */
 	bool m_bNotified;
-	
+
 	/* the listener to be notified */
 	com::sun::star::uno::Reference<
 		com::sun::star::xml::crypto::sax::XReferenceResolvedListener > m_xReferenceResolvedListener;
-	
+
 public:
 	ElementCollector(
 		sal_Int32 nSecurityId,
@@ -83,7 +83,7 @@ public:
 			com::sun::star::xml::crypto::sax::XReferenceResolvedListener >&
 			xReferenceResolvedListener);
 	virtual ~ElementCollector() {};
-	
+
 	//bool isInternalNotificationSuppressed() const;
 	com::sun::star::xml::crypto::sax::ElementMarkPriority getPriority() const;
 	bool getModify() const;

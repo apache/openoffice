@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -114,7 +114,7 @@ class TOOLS_DLLPUBLIC StringRangeEnumerator
     {
         sal_Int32   nFirst;
         sal_Int32   nLast;
-        
+
         Range() : nFirst( -1 ), nLast( -1 ) {}
         Range( sal_Int32 i_nFirst, sal_Int32 i_nLast ) : nFirst( i_nFirst ), nLast( i_nLast ) {}
     };
@@ -123,7 +123,7 @@ class TOOLS_DLLPUBLIC StringRangeEnumerator
     sal_Int32                                              mnMin;
     sal_Int32                                              mnMax;
     sal_Int32                                              mnOffset;
-    
+
     bool insertRange( sal_Int32 nFirst, sal_Int32 nLast, bool bSequence, bool bMayAdjust );
     bool checkValue( sal_Int32, const std::set< sal_Int32 >* i_pPossibleValues = NULL ) const;
 public:
@@ -133,7 +133,7 @@ public:
         const std::set< sal_Int32 >*      pPossibleValues;
         sal_Int32                         nRangeIndex;
         sal_Int32                         nCurrent;
-        
+
         friend class StringRangeEnumerator;
         Iterator( const StringRangeEnumerator* i_pEnum,
                   const std::set< sal_Int32 >* i_pPossibleValues,
@@ -151,29 +151,29 @@ public:
     };
 
     friend class StringRangeEnumerator::Iterator;
-    
+
     StringRangeEnumerator() : mnCount( 0 ), mnMin( -1 ), mnMax( -1 ), mnOffset( -1 ) {}
     StringRangeEnumerator( const rtl::OUString& i_rInput,
                            sal_Int32 i_nMinNumber = -1,
                            sal_Int32 i_nMaxNumber = -1,
                            sal_Int32 i_nLogicalOffset = -1
                            );
-    
+
     size_t size() const { return size_t(mnCount); }
     Iterator begin( const std::set< sal_Int32 >* i_pPossibleValues = NULL ) const;
     Iterator end( const std::set< sal_Int32 >* i_pPossibleValues = NULL ) const;
-    
+
     sal_Int32 getMin() const { return mnMin; }
     void setMin( sal_Int32 i_nMinValue ) { mnMin = i_nMinValue; }
     sal_Int32 getMax() const { return mnMax; }
     void setMax( sal_Int32 i_nMaxValue ) { mnMax = i_nMaxValue; }
     sal_Int32 getLogicalOffset() const { return mnOffset; }
     void setLogicalOffset( sal_Int32 i_nOffset ) { mnOffset = i_nOffset; }
-    
+
     bool setRange( const rtl::OUString& i_rNewRange, bool i_bStrict = false );
     bool hasValue( sal_Int32 nValue, const std::set< sal_Int32 >* i_pPossibleValues = NULL ) const;
-    
-                          
+
+
     /**
     i_rPageRange:     the string to be changed into a sequence of numbers
                       valid format example "5-3,9,9,7-8" ; instead of ',' ';' or ' ' are allowed as well
@@ -184,10 +184,10 @@ public:
                                so the logical offset would be -1
     i_nMinNumber:     the minimum allowed number, a negative number means no minimum check
     i_nMaxNumber:     the maximum allowed number, a negative number means no maximum check
-    
+
     @returns: true if the input string was valid, o_rPageVector will contain the resulting sequence
               false if the input string was invalid, o_rPageVector will be unchanged
-    
+
     behavior:
     - only non-negative sequence numbers are allowed
     - only non-negative values in the input string are allowed

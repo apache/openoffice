@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -52,7 +52,7 @@ private:
 
     ByteStringHashMap sText;
 public:
-	CfgStackData( const ByteString &rTag, const ByteString &rId ) 
+	CfgStackData( const ByteString &rTag, const ByteString &rId )
 			: sTagType( rTag ), sIdentifier( rId ) {};
 
 	ByteString &GetTagType() { return sTagType; }
@@ -72,7 +72,7 @@ public:
 	CfgStack() : CfgStackList( 10, 10 ) {}
 	~CfgStack();
 
-	sal_uLong Push( CfgStackData *pStackData );	
+	sal_uLong Push( CfgStackData *pStackData );
     CfgStackData *Push( const ByteString &rTag, const ByteString &rId );
 	CfgStackData *Pop() { return Remove( Count() - 1 ); }
 
@@ -85,7 +85,7 @@ public:
 // class CfgParser
 //
 
-class CfgParser 
+class CfgParser
 {
 protected:
 	ByteString sCurrentResTyp;
@@ -99,8 +99,8 @@ protected:
 
 	sal_Bool bLocalize;
 
-	virtual void WorkOnText( 
-		ByteString &rText, 
+	virtual void WorkOnText(
+		ByteString &rText,
         const ByteString &nLangIndex )=0;
 
 	virtual void WorkOnRessourceEnd()=0;
@@ -112,11 +112,11 @@ protected:
 private:
 	int ExecuteAnalyzedToken( int nToken, char *pToken );
     std::vector<ByteString> aLanguages;
-	void AddText( 
-		ByteString &rText, 
+	void AddText(
+		ByteString &rText,
 		const ByteString &rIsoLang,
 		const ByteString &rResTyp );
-	
+
 sal_Bool IsTokenClosed( const ByteString &rToken );
 
 public:
@@ -150,14 +150,14 @@ private:
 	ByteString sPath;
     std::vector<ByteString> aLanguages;
 protected:
-	void WorkOnText( 
-		ByteString &rText, 
+	void WorkOnText(
+		ByteString &rText,
         const ByteString &rIsoLang
         );
 
     void WorkOnRessourceEnd();
     void Output( const ByteString& rOutput );
-public:	
+public:
     CfgExport(
 		const ByteString &rOutputFile,
 		const ByteString &rProject,
@@ -176,14 +176,14 @@ private:
 	MergeDataFile *pMergeDataFile;
     std::vector<ByteString> aLanguages;
 	ResData *pResData;
-	
+
 	sal_Bool bGerman;
     ByteString sFilename;
 	sal_Bool bEnglish;
 
 protected:
-	void WorkOnText( 
-		ByteString &rText, 
+	void WorkOnText(
+		ByteString &rText,
         const ByteString &nLangIndex );
 
 	void WorkOnRessourceEnd();

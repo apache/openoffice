@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -49,11 +49,11 @@ namespace drawinglayer
             guaranteed that the Metafile is inside the geometric definition, it should
             be embedded to a MaskPrimitive2D.
 
-            This primitive has no decomposition yet, so when not supported by a renderer, 
+            This primitive has no decomposition yet, so when not supported by a renderer,
             it will not be visualized.
 
             In the future, a decomposition implementation would be appreciated and would
-            have many advantages; Metafile would no longer have to be rendered by 
+            have many advantages; Metafile would no longer have to be rendered by
             sub-systems and a standard way for converting Metafiles would exist.
          */
 		class DRAWINGLAYER_DLLPUBLIC MetafilePrimitive2D : public BufferedDecompositionPrimitive2D
@@ -71,7 +71,7 @@ namespace drawinglayer
 		public:
             /// constructor
 			MetafilePrimitive2D(
-				const basegfx::B2DHomMatrix& rMetaFileTransform, 
+				const basegfx::B2DHomMatrix& rMetaFileTransform,
 				const GDIMetaFile& rMetaFile);
 
 			/// data read access

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,20 +7,20 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
- 
+
 #ifndef _REGISTRYW9X_HXX_
 #define _REGISTRYW9X_HXX_
 
@@ -33,17 +33,17 @@
 
 class RegistryKeyImplWin9x : public RegistryKeyImpl
 {
-public:   
-	
+public:
+
 	//############################################
 	// Queries
 	//############################################
 
 	/** The number of sub values of the key at hand
-		
+
 		@precond IsOpen = true
 
-		@throws 
+		@throws
 	*/
 	virtual size_t GetSubValueCount() const;
 
@@ -54,7 +54,7 @@ public:
 		@throws
 	*/
 	virtual size_t GetSubKeyCount() const;
-	
+
 	virtual StringListPtr GetSubKeyNames() const;
 
 	virtual StringListPtr GetSubValueNames() const;
@@ -71,14 +71,14 @@ public:
 		@precond IsOpen = true
 	*/
 	virtual RegistryValue GetValue(const std::wstring& Name, const RegistryValue& Default) const;
-	
+
 	//############################################
 	// Commands
 	//############################################
 
-	/** Open the registry key, has no effect if 
+	/** Open the registry key, has no effect if
 		the key is already open
-		
+
 		@precond IsOpen = false
 
 		@throws RegistryWriteAccessDenyException
@@ -153,9 +153,9 @@ public:
 	virtual void SetValue(const RegistryValue& Value);
 
 	//############################################
-	// Creation 
+	// Creation
 	//
-	// only possible through WindowsRegistry class	
+	// only possible through WindowsRegistry class
 	//############################################
 
 protected:
@@ -174,17 +174,17 @@ protected:
 				 RegistryKeyNotFoundException
 	*/
 	RegistryKeyImplWin9x(HKEY RootKey);
-	
+
 	/** Create an instances of the specified Registry key,
 	the key is assumed to be already opened.
 	*/
 	RegistryKeyImplWin9x(HKEY RootKey, HKEY SubKey, const std::wstring& KeyName, bool Writeable = true);
-	
+
 // prevent copy/assignment
 private:
     RegistryKeyImplWin9x(const RegistryKeyImplWin9x&);
     RegistryKeyImplWin9x& operator=(const RegistryKeyImplWin9x&);
-    
+
 //######################################
 // Friend declarations
 //######################################

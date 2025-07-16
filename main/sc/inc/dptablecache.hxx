@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -53,19 +53,19 @@ class SC_DLLPUBLIC ScDPTableDataCache
 
 	std::vector<ScDPItemData*>* 	 mpTableDataValues; //Data Pilot Table's index - value map
 	std::vector<SCROW>*			 mpSourceData;		//Data Pilot Table's Source data
-	std::vector<SCROW>*			 mpGlobalOrder;		//Sorted members index	
+	std::vector<SCROW>*			 mpGlobalOrder;		//Sorted members index
 	std::vector<SCROW>*			 mpIndexOrder;		//Index the sorted number
 	std::vector<ScDPItemData*>	 mrLabelNames;		//Source Label data
-	std::vector<sal_Bool>			 mbEmptyRow;		//If empty row?	
+	std::vector<sal_Bool>			 mbEmptyRow;		//If empty row?
 	mutable ScDPItemDataPool	  			 maAdditionalDatas;
 public:
 	SCROW GetOrder( long nDim, SCROW nIndex ) const;
 	SCROW GetIdByItemData( long nDim,  String sItemData  ) const;
 	SCROW GetIdByItemData( long nDim, const ScDPItemData& rData ) const;
-	
+
 	SCROW GetAdditionalItemID ( String sItemData );
-	SCROW GetAdditionalItemID( const ScDPItemData& rData ); 
-		
+	SCROW GetAdditionalItemID( const ScDPItemData& rData );
+
 	SCCOL GetDimensionIndex( String sName) const;
 	const ScDPItemData* GetSortedItemData( SCCOL nDim, SCROW nOrder ) const;
 	sal_uLong GetNumType ( sal_uLong nFormat ) const;

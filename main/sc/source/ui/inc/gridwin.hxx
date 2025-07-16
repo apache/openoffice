@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -111,9 +111,9 @@ private:
 
     ::boost::shared_ptr<Rectangle> mpAutoFillRect;
 
-    /** 
-     * Stores current visible column and row ranges, used to avoid expensive 
-     * operations on objects that are outside visible area. 
+    /**
+     * Stores current visible column and row ranges, used to avoid expensive
+     * operations on objects that are outside visible area.
      */
     struct VisibleRange
     {
@@ -213,10 +213,10 @@ private:
 	void			DPMouseButtonUp( const MouseEvent& rMEvt );
 	void			DPTestMouse( const MouseEvent& rMEvt, sal_Bool bMove );
 
-    /** 
-     * Check if the mouse click is on a field popup button. 
-     *  
-     * @return bool true if the field popup menu has been launched and no 
+    /**
+     * Check if the mouse click is on a field popup button.
+     *
+     * @return bool true if the field popup menu has been launched and no
      *         further mouse event handling is necessary, false otherwise.
      */
     bool            DPTestFieldPopupArrow(const MouseEvent& rMEvt, const ScAddress& rPos, ScDPObject* pDPObj);
@@ -239,7 +239,7 @@ private:
 	void			ExecPageFieldSelect( SCCOL nCol, SCROW nRow, sal_Bool bHasSelection, const String& rStr );
 
 	sal_Bool			HasScenarioButton( const Point& rPosPixel, ScRange& rScenRange );
-	sal_Bool			HasScenarioRange( sal_uInt16 nCol, sal_Int32 nRow, ScRange& rScenRange ); 
+	sal_Bool			HasScenarioRange( sal_uInt16 nCol, sal_Int32 nRow, ScRange& rScenRange );
 	sal_Bool			DropScroll( const Point& rMousePos );
 
 	sal_Int8		AcceptPrivateDrop( const AcceptDropEvent& rEvt );

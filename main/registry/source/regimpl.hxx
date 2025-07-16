@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -35,17 +35,17 @@
 #define REG_PAGESIZE 512
 
 #define	REG_MODE_CREATE		store_AccessCreate
-#define	REG_MODE_OPEN		store_AccessReadWrite 
-#define	REG_MODE_OPENREAD	store_AccessReadOnly 
+#define	REG_MODE_OPEN		store_AccessReadWrite
+#define	REG_MODE_OPENREAD	store_AccessReadOnly
 
 #define	KEY_MODE_CREATE		store_AccessCreate
-#define	KEY_MODE_OPEN		store_AccessReadWrite 
-#define	KEY_MODE_OPENREAD	store_AccessReadOnly 
+#define	KEY_MODE_OPEN		store_AccessReadWrite
+#define	KEY_MODE_OPENREAD	store_AccessReadOnly
 
 
 #define	VALUE_MODE_CREATE	store_AccessCreate
-#define	VALUE_MODE_OPEN		store_AccessReadWrite 
-#define	VALUE_MODE_OPENREAD	store_AccessReadOnly 
+#define	VALUE_MODE_OPEN		store_AccessReadWrite
+#define	VALUE_MODE_OPENREAD	store_AccessReadOnly
 
 // 5 Bytes = 1 (Byte fuer den Typ) + 4 (Bytes fuer die Groesse der Daten)
 #define	VALUE_HEADERSIZE	5
@@ -74,7 +74,7 @@ public:
 	sal_uInt32	release()
 		{ return --m_refCount; }
 
-	RegError	initRegistry(const rtl::OUString& name, 
+	RegError	initRegistry(const rtl::OUString& name,
 							 RegAccessMode accessMode);
 
 	RegError	closeRegistry();
@@ -84,26 +84,26 @@ public:
 	RegError	acquireKey(RegKeyHandle hKey);
 	RegError	releaseKey(RegKeyHandle hKey);
 
-	RegError	createKey(RegKeyHandle hKey, 
-						  const rtl::OUString& keyName, 
+	RegError	createKey(RegKeyHandle hKey,
+						  const rtl::OUString& keyName,
 						  RegKeyHandle* phNewKey);
 
-	RegError	openKey(RegKeyHandle hKey, 
-						const rtl::OUString& keyName, 
+	RegError	openKey(RegKeyHandle hKey,
+						const rtl::OUString& keyName,
 						RegKeyHandle* phOpenKey);
 
 	RegError	closeKey(RegKeyHandle hKey);
 
 	RegError	deleteKey(RegKeyHandle hKey, const rtl::OUString& keyName);
 
-	RegError	loadKey(RegKeyHandle hKey, 
+	RegError	loadKey(RegKeyHandle hKey,
 						const rtl::OUString& regFileName,
-						sal_Bool bWarings=sal_False, 
+						sal_Bool bWarings=sal_False,
 						sal_Bool bReport=sal_False);
 
-	RegError	saveKey(RegKeyHandle hKey, 
+	RegError	saveKey(RegKeyHandle hKey,
 						const rtl::OUString& regFileName,
-						sal_Bool bWarings=sal_False, 
+						sal_Bool bWarings=sal_False,
 						sal_Bool bReport=sal_False);
 
 	RegError	dumpRegistry(RegKeyHandle hKey) const;
@@ -124,43 +124,43 @@ public:
 	const rtl::OUString& 	getName() const
 		{ return m_name; }
 
-	friend class ORegKey;			
+	friend class ORegKey;
 
 private:
 	RegError	eraseKey(ORegKey* pKey, const rtl::OUString& keyName);
 
 	RegError	deleteSubkeysAndValues(ORegKey* pKey);
 
-	RegError	loadAndSaveValue(ORegKey* pTargetKey, 
-								 ORegKey* pSourceKey, 
-								 const rtl::OUString& valueName, 
+	RegError	loadAndSaveValue(ORegKey* pTargetKey,
+								 ORegKey* pSourceKey,
+								 const rtl::OUString& valueName,
 								 sal_uInt32 nCut,
 								 sal_Bool bWarnings=sal_False,
 								 sal_Bool bReport=sal_False);
 
 	RegError	checkBlop(store::OStoreStream& rValue,
 						  const rtl::OUString& sTargetPath,
-						  sal_uInt32 srcValueSize, 
+						  sal_uInt32 srcValueSize,
 						  sal_uInt8* pSrcBuffer,
 						  sal_Bool bReport=sal_False);
 
 	RegError	mergeModuleValue(store::OStoreStream& rTargetValue,
-								 RegistryTypeReader& reader, 
+								 RegistryTypeReader& reader,
 								 RegistryTypeReader& reader2);
-	
-	RegError	loadAndSaveKeys(ORegKey* pTargetKey, 
-								ORegKey* pSourceKey, 
-								const rtl::OUString& keyName, 
+
+	RegError	loadAndSaveKeys(ORegKey* pTargetKey,
+								ORegKey* pSourceKey,
+								const rtl::OUString& keyName,
 								sal_uInt32 nCut,
 								sal_Bool bWarnings=sal_False,
 								sal_Bool bReport=sal_False);
 
-	RegError	dumpValue(const rtl::OUString& sPath, 
-						  const rtl::OUString& sName, 
-						  sal_Int16 nSpace) const;			
+	RegError	dumpValue(const rtl::OUString& sPath,
+						  const rtl::OUString& sName,
+						  sal_Int16 nSpace) const;
 
-	RegError	dumpKey(const rtl::OUString& sPath, 
-						const rtl::OUString& sName, 
+	RegError	dumpKey(const rtl::OUString& sPath,
+						const rtl::OUString& sName,
 						sal_Int16 nSpace) const;
 
     typedef	std::hash_map< rtl::OUString, ORegKey*, rtl::OUStringHash > KeyMap;

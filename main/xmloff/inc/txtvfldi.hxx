@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -37,10 +37,10 @@
 
 
 /// variable type (for XMLSetVarFieldImportContext)
-enum VarType 
-{ 
-	VarTypeSimple, 
-	VarTypeUserField, 
+enum VarType
+{
+	VarTypeSimple,
+	VarTypeUserField,
 	VarTypeSequence
 };
 
@@ -97,7 +97,7 @@ public:
 								   const ::rtl::OUString& sAttrValue );
 
 	/// prepare XTextField for insertion into document
-	virtual void PrepareField( 
+	virtual void PrepareField(
 		const ::com::sun::star::uno::Reference<
 		::com::sun::star::beans::XPropertySet> & xPropertySet);
 
@@ -112,9 +112,9 @@ public:
 
 
 
-/** 
+/**
  * abstract parent class for all variable related fields
- * - variable-set/get/decl		(not -decls), 
+ * - variable-set/get/decl		(not -decls),
  * - user-field-get/decl		(not -decls),
  * - sequence/-decl				(not -decls),
  * - expression,
@@ -131,10 +131,10 @@ public:
  * whether it was set or not, and a bool variable whether it should be set
  * using the standard property name.
  *
- * bValid is set true, when name is found!  
+ * bValid is set true, when name is found!
  * (Most variable related fields are valid, if a name is
  * found. However, some are always valid. In this case, setting bValid
- * does not matter.)  
+ * does not matter.)
  */
 class XMLVarFieldImportContext : public XMLTextFieldImportContext
 {
@@ -169,7 +169,7 @@ private:
 	sal_Bool bSetFormulaDefault;		/// use content as default for formula
 	sal_Bool bSetDescription;			/// set sDescription with Hint-property
     sal_Bool bSetHelp;
-    sal_Bool bSetHint;         
+    sal_Bool bSetHint;
 	sal_Bool bSetVisible;				/// set IsVisible
 	sal_Bool bSetDisplayFormula;		/// set DisplayFormula (sub type???)
 	sal_Bool bSetPresentation;			/// set presentation frm elem. content?
@@ -205,7 +205,7 @@ protected:
 								   const ::rtl::OUString& sAttrValue );
 
 	/// prepare XTextField for insertion into document
-	virtual void PrepareField( 
+	virtual void PrepareField(
 		const ::com::sun::star::uno::Reference<
 		::com::sun::star::beans::XPropertySet> & xPropertySet);
 
@@ -238,7 +238,7 @@ public:
 
 protected:
 	/// prepare XTextField for insertion into document
-	virtual void PrepareField( 
+	virtual void PrepareField(
 		const ::com::sun::star::uno::Reference<
 		::com::sun::star::beans::XPropertySet> & xPropertySet);
 };
@@ -254,14 +254,14 @@ public:
 
 	TYPEINFO();
 
-	XMLExpressionFieldImportContext( 
+	XMLExpressionFieldImportContext(
 		SvXMLImport& rImport,					/// XML Import
 		XMLTextImportHelper& rHlp,				/// Text import helper
 		sal_uInt16 nPrfx,						/// namespace prefix
 		const ::rtl::OUString& sLocalName);		/// element name w/o prefix
 
 protected:
-	virtual void PrepareField( 
+	virtual void PrepareField(
 		const ::com::sun::star::uno::Reference<
 		::com::sun::star::beans::XPropertySet> & xPropertySet);
 };
@@ -275,14 +275,14 @@ public:
 
 	TYPEINFO();
 
-	XMLTextInputFieldImportContext( 
+	XMLTextInputFieldImportContext(
 		SvXMLImport& rImport,					/// XML Import
 		XMLTextImportHelper& rHlp,				/// Text import helper
 		sal_uInt16 nPrfx,						/// namespace prefix
 		const ::rtl::OUString& sLocalName);		/// element name w/o prefix
 
 protected:
-	virtual void PrepareField( 
+	virtual void PrepareField(
 		const ::com::sun::star::uno::Reference<
 		::com::sun::star::beans::XPropertySet> & xPropertySet);
 };
@@ -304,7 +304,7 @@ public:
 
 	TYPEINFO();
 
-	XMLSetVarFieldImportContext( 
+	XMLSetVarFieldImportContext(
 		// for XMLTextFieldImportContext:
 		SvXMLImport& rImport,			/// see XMLTextFieldImportContext
 		XMLTextImportHelper& rHlp,		/// see XMLTextFieldImportContext
@@ -329,7 +329,7 @@ public:
 
 protected:
 
-	/// create XTextField, attach master and insert into document; 
+	/// create XTextField, attach master and insert into document;
 	/// also calls PrepareTextField
 	virtual void EndElement();
 
@@ -358,7 +358,7 @@ public:
 
 protected:
 	/// prepare XTextField for insertion into document
-	virtual void PrepareField( 
+	virtual void PrepareField(
 		const ::com::sun::star::uno::Reference<
 		::com::sun::star::beans::XPropertySet> & xPropertySet);
 };
@@ -384,7 +384,7 @@ public:
 protected:
 
 	/// prepare XTextField for insertion into document
-	virtual void PrepareField( 
+	virtual void PrepareField(
 		const ::com::sun::star::uno::Reference<
 		::com::sun::star::beans::XPropertySet> & xPropertySet);
 };
@@ -399,7 +399,7 @@ public:
 
 	TYPEINFO();
 
-	XMLUserFieldImportContext( 
+	XMLUserFieldImportContext(
 		SvXMLImport& rImport,					/// XML Import
 		XMLTextImportHelper& rHlp,				/// Text import helper
 		sal_uInt16 nPrfx,						/// namespace prefix
@@ -414,13 +414,13 @@ public:
 
 	TYPEINFO();
 
-	XMLUserFieldInputImportContext( 
+	XMLUserFieldInputImportContext(
 		SvXMLImport& rImport,					/// XML Import
 		XMLTextImportHelper& rHlp,				/// Text import helper
 		sal_uInt16 nPrfx,						/// namespace prefix
 		const ::rtl::OUString& rLocalName);		/// element name w/o prefix
 
-	virtual void PrepareField( 
+	virtual void PrepareField(
 		const ::com::sun::star::uno::Reference<
 		::com::sun::star::beans::XPropertySet> & xPropertySet);
 };
@@ -444,7 +444,7 @@ public:
 
 	TYPEINFO();
 
-	XMLSequenceFieldImportContext( 
+	XMLSequenceFieldImportContext(
 		SvXMLImport& rImport,					/// XML Import
 		XMLTextImportHelper& rHlp,				/// Text import helper
 		sal_uInt16 nPrfx,						/// namespace prefix
@@ -457,7 +457,7 @@ protected:
 								   const ::rtl::OUString& sAttrValue );
 
 	/// prepare XTextField for insertion into document
-	virtual void PrepareField( 
+	virtual void PrepareField(
 		const ::com::sun::star::uno::Reference<
 		::com::sun::star::beans::XPropertySet> & xPropertySet);
 };
@@ -487,10 +487,10 @@ public:
 		const ::rtl::OUString& rLocalName,		/// element name w/o prefix
 		enum VarType eVarType);					/// variable type
 
-	virtual SvXMLImportContext *CreateChildContext( 
+	virtual SvXMLImportContext *CreateChildContext(
 		sal_uInt16 nPrefix,
 		const ::rtl::OUString& rLocalName,
-		const ::com::sun::star::uno::Reference< 
+		const ::com::sun::star::uno::Reference<
 		::com::sun::star::xml::sax::XAttributeList> & xAttrList );
 };
 
@@ -515,7 +515,7 @@ public:
 
 	TYPEINFO();
 
-	XMLVariableDeclImportContext( 
+	XMLVariableDeclImportContext(
 		SvXMLImport& rImport,					/// XML Import
 		XMLTextImportHelper& rHlp,				/// text import helper
 		sal_uInt16 nPrfx,						/// namespace prefix
@@ -527,7 +527,7 @@ public:
 	/// get field master for name and rename if appropriate
 	static sal_Bool FindFieldMaster(::com::sun::star::uno::Reference<
 									::com::sun::star::beans::XPropertySet> & xMaster,
-									SvXMLImport& rImport, 
+									SvXMLImport& rImport,
 									XMLTextImportHelper& rHelper,
 									const ::rtl::OUString& sVarName,
 									enum VarType eVarType);
@@ -551,7 +551,7 @@ class XMLTableFormulaImportContext : public XMLTextFieldImportContext
     sal_Bool bIsShowFormula;
 
 public:
-	
+
 	TYPEINFO();
 
 	XMLTableFormulaImportContext(
@@ -568,7 +568,7 @@ protected:
 								   const ::rtl::OUString& sAttrValue );
 
 	/// prepare XTextField for insertion into document
-	virtual void PrepareField( 
+	virtual void PrepareField(
 		const ::com::sun::star::uno::Reference<
 		::com::sun::star::beans::XPropertySet> & xPropertySet);
 };
@@ -592,7 +592,7 @@ class XMLDatabaseDisplayImportContext : public XMLDatabaseFieldImportContext
     sal_Bool bDisplayOK;
 
 public:
-	
+
 	TYPEINFO();
 
 	XMLDatabaseDisplayImportContext(

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -48,8 +48,8 @@ struct SpellPortion
      should be protected against unintentional deletion.
      */
     bool bIsField;
-    /** Marks the portion hidden content that should not be touched by spell checking 
-        and not be removed like redlines. The creator of the portions has to take care 
+    /** Marks the portion hidden content that should not be touched by spell checking
+        and not be removed like redlines. The creator of the portions has to take care
         for them.
      */
     bool bIsHidden;
@@ -60,7 +60,7 @@ struct SpellPortion
         it's an empty reference
      */
     ::com::sun::star::uno::Reference< ::com::sun::star::linguistic2::XSpellAlternatives> xAlternatives;
-    /** determines whether the error type is a grammar error        
+    /** determines whether the error type is a grammar error
     */
     bool bIsGrammarError;
     /** contains the grammar error information
@@ -74,7 +74,7 @@ struct SpellPortion
     /** contains the proposed dialog title if the proof reading component provides one.
      */
     rtl::OUString   sDialogTitle;
-    
+
     bool bIgnoreThisError;
     SpellPortion() :
         bIsField(false),

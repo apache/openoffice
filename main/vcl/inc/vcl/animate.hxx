@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -43,7 +43,7 @@ enum Disposal
 	DISPOSE_NOT,
 	DISPOSE_BACK,
 	DISPOSE_FULL,
-	DISPOSE_PREVIOUS 
+	DISPOSE_PREVIOUS
 };
 
 enum CycleMode
@@ -123,8 +123,8 @@ struct AInfo
 	sal_Bool			bWithSize;
 	sal_Bool			bPause;
 
-					AInfo() : pOutDev( NULL ), 
-							  pViewData( NULL ), 
+					AInfo() : pOutDev( NULL ),
+							  pViewData( NULL ),
 							  nExtraData( 0L ),
 							  bWithSize( sal_False ),
 							  bPause( sal_False ) {}
@@ -157,7 +157,7 @@ class VCL_DLLPUBLIC Animation
 	sal_Bool					mbLoopTerminated;
 	sal_Bool					mbIsWaiting;
 
-//#if 0 // _SOLAR__PRIVATE				
+//#if 0 // _SOLAR__PRIVATE
 
 	SAL_DLLPRIVATE void     ImplRestartTimer( sal_uLong nTimeout );
 	DECL_DLLPRIVATE_LINK(   ImplTimeoutHdl, Timer* );
@@ -168,9 +168,9 @@ public:
 	SAL_DLLPRIVATE static void  ImplDecAnimCount() { mnAnimCount--; }
 	SAL_DLLPRIVATE sal_uLong        ImplGetCurPos() const { return mnPos; }
 
-//#endif						
+//#endif
 
-public:						
+public:
 							Animation();
 							Animation( const Animation& rAnimation );
 							~Animation();
@@ -186,7 +186,7 @@ public:
 
 	void					Clear();
 
-	sal_Bool					Start( OutputDevice* pOutDev, const Point& rDestPt, long nExtraData = 0, 
+	sal_Bool					Start( OutputDevice* pOutDev, const Point& rDestPt, long nExtraData = 0,
 								   OutputDevice* pFirstFrameOutDev = NULL );
 	sal_Bool					Start( OutputDevice* pOutDev, const Point& rDestPt, const Size& rDestSz, long nExtraData = 0,
 								   OutputDevice* pFirstFrameOutDev = NULL );
@@ -227,19 +227,19 @@ public:
 public:
 
     sal_Bool					Convert( BmpConversion eConversion );
-	sal_Bool					ReduceColors( sal_uInt16 nNewColorCount, 
+	sal_Bool					ReduceColors( sal_uInt16 nNewColorCount,
 										  BmpReduce eReduce = BMP_REDUCE_SIMPLE );
     sal_Bool					Invert();
     sal_Bool					Mirror( sal_uLong nMirrorFlags );
 	sal_Bool					Dither( sal_uLong nDitherFlags = BMP_DITHER_MATRIX );
 	sal_Bool					Adjust( short nLuminancePercent = 0,
 									short nContrastPercent = 0,
-									short nChannelRPercent = 0, 
-									short nChannelGPercent = 0, 
+									short nChannelRPercent = 0,
+									short nChannelGPercent = 0,
 									short nChannelBPercent = 0,
 									double fGamma = 1.0,
 									sal_Bool bInvert = sal_False );
-	sal_Bool					Filter( BmpFilter eFilter, 
+	sal_Bool					Filter( BmpFilter eFilter,
 									const BmpFilterParam* pFilterParam = NULL,
 									const Link* pProgress = NULL );
 

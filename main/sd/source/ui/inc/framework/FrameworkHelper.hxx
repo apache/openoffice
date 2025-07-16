@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -126,14 +126,14 @@ public:
     /** Mark the FrameworkHelper object for the given ViewShellBase as
         disposed.  A following ReleaseInstance() call will destroy the
         FrameworkHelper object.
-        
+
         Do not call this method.  It is an internally used method that can
         not be made private.
     */
     static void DisposeInstance (ViewShellBase& rBase);
 
     /** Destroy the FrameworkHelper object for the given ViewShellBase.
-        
+
         Do not call this method.  It is an internally used method that can
         not be made private.
     */
@@ -233,7 +233,7 @@ public:
     */
     void RequestResourceDeactivation (
         const cssu::Reference<cssdf::XResourceId>& rxResourceId);
-    
+
     /** Process a slot call that requests a view shell change.
     */
     void HandleModeChangeSlot (
@@ -259,7 +259,7 @@ public:
             rCallback.
         @param rCallback
             The callback to be called when the resource is activated.
-        
+
     */
     void RunOnResourceActivation(
         const cssu::Reference<cssdf::XResourceId>& rxResourceId,
@@ -279,7 +279,7 @@ public:
             The callback is run either when the deactivation starts
             and the callback can still access the resource or when the
             deactivatio is complete and the resource is no longer available.
-        
+
     */
     void RunOnResourceDeactivation(
         const cssu::Reference<cssdf::XResourceId>& rxResourceId,
@@ -296,7 +296,7 @@ public:
         Do not use this method until there is absolutely no other way.
     */
     void RequestSynchronousUpdate (void);
-    
+
     /** Block until the specified event is notified by the configuration
         controller.  When the configuration controller is not processing any
         requests the method returns immediately.
@@ -337,7 +337,7 @@ public:
             CreateResourceId (
                 const ::rtl::OUString& rsResourceURL,
                 const ::rtl::OUString& rsAnchorURL);
-    
+
     /** Create a new XResourceId object for the given resource URL and the
         two given anchor URLs.
     */
@@ -380,7 +380,7 @@ private:
     friend class DisposeListener;
     cssu::Reference<css::lang::XComponent>
         mxDisposeListener;
-    
+
     FrameworkHelper (ViewShellBase& rBase);
     FrameworkHelper (const FrameworkHelper& rHelper); // Not implemented.
     ~FrameworkHelper (void);

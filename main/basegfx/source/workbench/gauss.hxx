@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,22 +7,22 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
 
 /** This method eliminates elements below main diagonal in the given
-    matrix by gaussian elimination. 
+    matrix by gaussian elimination.
 
     @param matrix
     The matrix to operate on. Last column is the result vector (right
@@ -42,7 +42,7 @@
 
     @return true, if elimination succeeded.
  */
-template <class Matrix, typename BaseType> 
+template <class Matrix, typename BaseType>
 bool eliminate( 	Matrix&			matrix,
                     int				rows,
                     int				cols,
@@ -57,7 +57,7 @@ bool eliminate( 	Matrix&			matrix,
 		/* find best pivot */
 		max = i;
 		for(j=i+1; j<rows; ++j)
-			if( fabs(matrix[ j*cols + i ]) > fabs(matrix[ max*cols + i ]) ) 
+			if( fabs(matrix[ j*cols + i ]) > fabs(matrix[ max*cols + i ]) )
 				max = j;
 
 		/* check pivot value */
@@ -71,11 +71,11 @@ bool eliminate( 	Matrix&			matrix,
 			matrix[ i*cols + k ] = matrix[ max*cols + k ];
 			matrix[ max*cols + k ] = temp;
 		}
-		
+
 		/* eliminate column */
 		for(j=i+1; j<rows; ++j)
 			for(k=cols-1; k>=i; --k)
-				matrix[ j*cols + k ] -= matrix[ i*cols + k ] * 
+				matrix[ j*cols + k ] -= matrix[ i*cols + k ] *
 					matrix[ j*cols + i ] / matrix[ i*cols + i ];
 	}
 
@@ -104,7 +104,7 @@ bool eliminate( 	Matrix&			matrix,
     @return true, if back substitution was possible (i.e. no division
     by zero occurred).
  */
-template <class Matrix, class Vector, typename BaseType> 
+template <class Matrix, class Vector, typename BaseType>
 bool substitute(	const Matrix&	matrix,
                     int				rows,
                     int				cols,
@@ -154,7 +154,7 @@ bool substitute(	const Matrix&	matrix,
 
     @return true, if elimination succeeded.
  */
-template <class Matrix, class Vector, typename BaseType> 
+template <class Matrix, class Vector, typename BaseType>
 bool solve(	Matrix&		matrix,
             int			rows,
             int			cols,

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -158,7 +158,7 @@ public:
     */
     virtual ::com::sun::star::drawing::Direction3D  getPreferredDiagramAspectRatio() const;
     virtual bool keepAspectRatio() const;
-    
+
     /** this enables you to handle series on the same x axis with different y axis
     the property AttachedAxisIndex at a dataseries indicates which value scale is to use
     (0==AttachedAxisIndex or a not set AttachedAxisIndex property indicates that this series should be scaled at the main y-axis;
@@ -168,10 +168,10 @@ public:
     nAxisIndex must be greater than 0. nAxisIndex==1 referres to the first secondary axis.
     )
     */
-    
+
     virtual void addSecondaryValueScale( const ExplicitScaleData& rScale, sal_Int32 nAxisIndex )
                 throw (::com::sun::star::uno::RuntimeException);
-    
+
     //-------------------------------------------------------------------------
 	// MinimumAndMaximumSupplier
 	//-------------------------------------------------------------------------
@@ -230,7 +230,7 @@ public:
     ::com::sun::star::uno::Reference< ::com::sun::star::drawing::XShape > createLegendSymbolForPoint(
                   const ::com::sun::star::awt::Size& rEntryKeyAspectRatio
                 , const VDataSeries& rSeries
-                , sal_Int32 nPointIndex 
+                , sal_Int32 nPointIndex
                 , const ::com::sun::star::uno::Reference< ::com::sun::star::drawing::XShapes >& xTarget
                 , const ::com::sun::star::uno::Reference< ::com::sun::star::lang::XMultiServiceFactory >& xShapeFactory );
 
@@ -267,15 +267,15 @@ public:
                         ::com::sun::star::chart2::XColorScheme >& xColorScheme );
 
     void setExplicitCategoriesProvider( ExplicitCategoriesProvider* pExplicitCategoriesProvider );
-    
+
     //get series names for the z axis labels
     ::com::sun::star::uno::Sequence< rtl::OUString > getSeriesNames() const;
 
     void setPageReferenceSize( const ::com::sun::star::awt::Size & rPageRefSize );
     //better performance for big data
     void setCoordinateSystemResolution( const ::com::sun::star::uno::Sequence< sal_Int32 >& rCoordinateSystemResolution );
-    bool PointsWereSkipped() const; 
-    
+    bool PointsWereSkipped() const;
+
     //return the depth for a logic 1
     double  getTransformedDepth() const;
 

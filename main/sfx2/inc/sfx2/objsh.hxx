@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -386,7 +386,7 @@ public:
         ::com::sun::star::uno::Sequence< sal_Int16 >& aOutParamIndex,
         ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Any >& aOutParam,
         const ::rtl::OUString& aReferer = ::rtl::OUString(),
-        bool bRaiseError = true 
+        bool bRaiseError = true
     );
 
     /** Execute a script URL.
@@ -408,7 +408,7 @@ public:
         ::com::sun::star::uno::Sequence< sal_Int16 >& aOutParamIndex,
         ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Any >& aOutParam,
         const ::rtl::OUString& aReferer = ::rtl::OUString(),
-        bool bRaiseError = true 
+        bool bRaiseError = true
     );
 
     /** adjusts the internal macro mode, according to the current security settings
@@ -791,8 +791,8 @@ public:
     SAL_DLLPRIVATE sal_uInt16 ImplGetSignatureState( sal_Bool bScriptingContent = sal_False );
 
     SAL_DLLPRIVATE ::com::sun::star::uno::Sequence< ::com::sun::star::security::DocumentSignatureInformation >
-        ImplAnalyzeSignature( 
-            sal_Bool bScriptingContent, 
+        ImplAnalyzeSignature(
+            sal_Bool bScriptingContent,
             const ::com::sun::star::uno::Reference< ::com::sun::star::security::XDocumentDigitalSignatures >& xSigner
                 = ::com::sun::star::uno::Reference< ::com::sun::star::security::XDocumentDigitalSignatures >() );
 

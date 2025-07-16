@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -75,9 +75,9 @@ public:
 	DECLARE_STL_USTRINGACCESS_MAP(Sequence<PropertyValue>,TPropertyNameMap);
     DECLARE_STL_USTRINGACCESS_MAP( Reference<XFunction> ,TGroupFunctionMap);
 private:
-    
+
     TGroupFunctionMap                               m_aFunctions;
-    com::sun::star::uno::Any                        m_aViewSettings;     
+    com::sun::star::uno::Any                        m_aViewSettings;
 	Reference< XComponent >							m_xSrcDoc;
 	mutable ::std::auto_ptr<SvXMLTokenMap>			m_pDocElemTokenMap;
 	mutable ::std::auto_ptr<SvXMLTokenMap>			m_pReportElemTokenMap;
@@ -120,7 +120,7 @@ protected:
 
 	virtual	~ORptFilter()  throw();
 public:
-	
+
 	ORptFilter( const Reference< XMultiServiceFactory >& _rxMSF,sal_uInt16 nImportFlags = IMPORT_ALL );
 
 	// XFilter
@@ -140,7 +140,7 @@ public:
 	inline Reference<XReportDefinition> getReportDefinition() const { return m_xReportDefinition; }
     /** return the SdrModel of the real model
     *
-    * \return 
+    * \return
     */
     ::boost::shared_ptr<rptui::OReportModel> getSdrModel() const { return m_pReportModel; }
     void FinishStyles();
@@ -149,7 +149,7 @@ public:
 		throw( ::com::sun::star::xml::sax::SAXException, ::com::sun::star::uno::RuntimeException );
     virtual void SAL_CALL endDocument(void)
 		throw( ::com::sun::star::xml::sax::SAXException, ::com::sun::star::uno::RuntimeException );
-	
+
 	const SvXMLTokenMap& GetDocElemTokenMap() const;
 	const SvXMLTokenMap& GetReportElemTokenMap() const;
 	const SvXMLTokenMap& GetGroupElemTokenMap() const;
@@ -171,12 +171,12 @@ public:
     static ::rtl::OUString convertFormula(const ::rtl::OUString& _sFormula);
     /** inserts a new function
     *
-    * \param _xFunction 
+    * \param _xFunction
     */
     void insertFunction(const ::com::sun::star::uno::Reference< ::com::sun::star::report::XFunction > & _xFunction);
     void removeFunction(const ::rtl::OUString& _sFunctionName);
     inline const TGroupFunctionMap& getFunctions() const { return m_aFunctions; }
-    
+
 	virtual SvXMLImport&				getGlobalContext();
 
 	virtual void						enterEventContext();

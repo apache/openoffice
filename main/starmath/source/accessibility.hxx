@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -256,13 +256,13 @@ public:
 
     virtual sal_Int16       GetDepth( sal_uInt32 nPara ) const;
     virtual sal_Bool        SetDepth( sal_uInt32 nPara, sal_Int16 nNewDepth );
-    
+
     virtual const SfxItemSet*   GetEmptyItemSetPtr();
     // implementation functions for XParagraphAppend and XTextPortionAppend
     virtual void        AppendParagraph();
     virtual xub_StrLen  AppendTextPortion( sal_uInt32 nPara, const String &rText, const SfxItemSet &rSet );
-    
-    virtual void        CopyText(const SvxTextForwarder& rSource); 
+
+    virtual void        CopyText(const SvxTextForwarder& rSource);
 };
 
 
@@ -301,7 +301,7 @@ class SmEditSource :
     SmTextForwarder         aTextFwd;
     SmEditViewForwarder     aEditViewFwd;
 
-	SmEditAccessible&		rEditAcc;		
+	SmEditAccessible&		rEditAcc;
 
     // disallow copy-ctor and assignment-operator for now
     SmEditSource( const SmEditSource &rSrc );

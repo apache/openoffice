@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,23 +7,23 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
 #ifndef DBAUI_SQLNAMEEDIT_HXX
 #define DBAUI_SQLNAMEEDIT_HXX
 
-#ifndef _SV_EDIT_HXX 
+#ifndef _SV_EDIT_HXX
 #include <vcl/edit.hxx>
 #endif
 #ifndef _SV_COMBOBOX_HXX
@@ -45,12 +45,12 @@ namespace dbaui
 		{
 		}
 
-		void setUpperCase(sal_Bool _bUpper=sal_True) 
-		{ 
-			m_bOnlyUpperCase = _bUpper; 
+		void setUpperCase(sal_Bool _bUpper=sal_True)
+		{
+			m_bOnlyUpperCase = _bUpper;
 		}
-		void setAllowedChars(const ::rtl::OUString& _rAllowedChars) 
-		{ 
+		void setAllowedChars(const ::rtl::OUString& _rAllowedChars)
+		{
 			m_sAllowedChars = _rAllowedChars;
 		}
 		// default is false because it is initialized with true
@@ -65,12 +65,12 @@ namespace dbaui
 						,public OSQLNameChecker
 	{
 	public:
-		OSQLNameEdit(Window* _pParent,const ::rtl::OUString& _rAllowedChars, WinBits nStyle = WB_BORDER) 
+		OSQLNameEdit(Window* _pParent,const ::rtl::OUString& _rAllowedChars, WinBits nStyle = WB_BORDER)
 			: Edit(_pParent,nStyle)
 			,OSQLNameChecker(_rAllowedChars)
 		{
 		}
-		OSQLNameEdit(Window* _pParent,const ResId& _rRes,const ::rtl::OUString& _rAllowedChars = ::rtl::OUString()) 
+		OSQLNameEdit(Window* _pParent,const ResId& _rRes,const ::rtl::OUString& _rAllowedChars = ::rtl::OUString())
 			: Edit(_pParent,_rRes)
 			,OSQLNameChecker(_rAllowedChars)
 		{
@@ -86,16 +86,16 @@ namespace dbaui
 							,public OSQLNameChecker
 	{
 	public:
-		OSQLNameComboBox(Window* _pParent,const ::rtl::OUString& _rAllowedChars, WinBits nStyle = WB_BORDER) 
+		OSQLNameComboBox(Window* _pParent,const ::rtl::OUString& _rAllowedChars, WinBits nStyle = WB_BORDER)
 			: ComboBox(_pParent,nStyle)
 			,OSQLNameChecker(_rAllowedChars)
 		{
 		}
-		OSQLNameComboBox(Window* _pParent,const ResId& _rRes,const ::rtl::OUString& _rAllowedChars = ::rtl::OUString()) 
+		OSQLNameComboBox(Window* _pParent,const ResId& _rRes,const ::rtl::OUString& _rAllowedChars = ::rtl::OUString())
 			: ComboBox(_pParent,_rRes)
 			,OSQLNameChecker(_rAllowedChars)
 		{
-		}	
+		}
 
 		// Window overload
 		// Edit

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -50,14 +50,14 @@ namespace drawinglayer
 		private:
             /// the hairline geometry
 			basegfx::B3DPolygon						maPolygon;
-            
+
             /// the hairline color
 			basegfx::BColor							maBColor;
 
 		public:
             /// constructor
 			PolygonHairlinePrimitive3D(
-				const basegfx::B3DPolygon& rPolygon, 
+				const basegfx::B3DPolygon& rPolygon,
 				const basegfx::BColor& rBColor);
 
 			/// data read access
@@ -85,7 +85,7 @@ namespace drawinglayer
         /** PolygonStrokePrimitive3D class
 
             This primitive defines a 3D line with line width, line join, line color
-            and stroke attributes. It will be decomposed dependent on the definition 
+            and stroke attributes. It will be decomposed dependent on the definition
             to the needed primitives, e.g. filled Tubes for fat lines.
          */
 		class DRAWINGLAYER_DLLPUBLIC PolygonStrokePrimitive3D : public BufferedDecompositionPrimitive3D
@@ -93,10 +93,10 @@ namespace drawinglayer
 		private:
             /// the line geometry
 			basegfx::B3DPolygon						maPolygon;
-            
+
             /// the line attributes like width, join and color
 			attribute::LineAttribute				maLineAttribute;
-            
+
             /// the line stroking (if used)
 			attribute::StrokeAttribute				maStrokeAttribute;
 
@@ -107,13 +107,13 @@ namespace drawinglayer
 		public:
             /// constructor
 			PolygonStrokePrimitive3D(
-				const basegfx::B3DPolygon& rPolygon, 
+				const basegfx::B3DPolygon& rPolygon,
                 const attribute::LineAttribute& rLineAttribute,
 				const attribute::StrokeAttribute& rStrokeAttribute);
 
             /// constructor without stroking
 			PolygonStrokePrimitive3D(
-				const basegfx::B3DPolygon& rPolygon, 
+				const basegfx::B3DPolygon& rPolygon,
                 const attribute::LineAttribute& rLineAttribute);
 
 			/// data read access

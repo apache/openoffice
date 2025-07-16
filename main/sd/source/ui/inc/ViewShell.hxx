@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -105,8 +105,8 @@ public:
         ST_DRAW,         // The Draw application.
         ST_IMPRESS,      // Main view of the Impress application.
         ST_NOTES,
-        ST_HANDOUT, 
-        ST_OUTLINE, 
+        ST_HANDOUT,
+        ST_OUTLINE,
         ST_SLIDE_SORTER,
         ST_PRESENTATION,
         ST_SIDEBAR
@@ -116,22 +116,22 @@ public:
     static const int MIN_SCROLLBAR_SIZE	= 50;
 
     static const sal_uLong OUTPUT_DRAWMODE_COLOR = DRAWMODE_DEFAULT;
-    static const sal_uLong OUTPUT_DRAWMODE_GRAYSCALE 
-        = DRAWMODE_GRAYLINE | DRAWMODE_GRAYFILL 
-        | DRAWMODE_BLACKTEXT | DRAWMODE_GRAYBITMAP 
+    static const sal_uLong OUTPUT_DRAWMODE_GRAYSCALE
+        = DRAWMODE_GRAYLINE | DRAWMODE_GRAYFILL
+        | DRAWMODE_BLACKTEXT | DRAWMODE_GRAYBITMAP
         | DRAWMODE_GRAYGRADIENT;
-    static const int  OUTPUT_DRAWMODE_BLACKWHITE 
-        = DRAWMODE_BLACKLINE | DRAWMODE_BLACKTEXT 
-        | DRAWMODE_WHITEFILL | DRAWMODE_GRAYBITMAP 
+    static const int  OUTPUT_DRAWMODE_BLACKWHITE
+        = DRAWMODE_BLACKLINE | DRAWMODE_BLACKTEXT
+        | DRAWMODE_WHITEFILL | DRAWMODE_GRAYBITMAP
         | DRAWMODE_WHITEGRADIENT;
-    static const int OUTPUT_DRAWMODE_CONTRAST 
-        = DRAWMODE_SETTINGSLINE | DRAWMODE_SETTINGSFILL 
+    static const int OUTPUT_DRAWMODE_CONTRAST
+        = DRAWMODE_SETTINGSLINE | DRAWMODE_SETTINGSFILL
         | DRAWMODE_SETTINGSTEXT | DRAWMODE_SETTINGSGRADIENT;
 
     TYPEINFO();
 
     ViewShell (
-        SfxViewFrame *pFrame, 
+        SfxViewFrame *pFrame,
         ::Window* pParentWindow,
         ViewShellBase& rViewShellBase,
         bool bAllowCenter = true);
@@ -256,7 +256,7 @@ public:
 	/** @returns
 			current or selected page or 0. This method
 			will fail in master page mode.
-			
+
 		@deprecated, please use getCurrentPage();
 	*/
 	virtual SdPage*	GetActualPage() = 0;
@@ -410,8 +410,8 @@ public:
 
     /** This method is more or less an alias to Deactivate().  It is called
         before an object of this class is taken from the stack of view
-        shells. 
-        
+        shells.
+
         <p>When this method is not called before a view shell is taken from
         a stack then the Deactivate() call from the SFX as a response to
         RemoveSubShell() comes to late when the view shell is not on the
@@ -589,12 +589,12 @@ private:
     return mpParentWindow;
 }
 
-::sd::View* ViewShell::GetView (void) const 
+::sd::View* ViewShell::GetView (void) const
 {
-    return mpView; 
+    return mpView;
 }
 
-SdrView* ViewShell::GetDrawView (void) const 
+SdrView* ViewShell::GetDrawView (void) const
 {
     return static_cast<SdrView*>(mpView);
 }

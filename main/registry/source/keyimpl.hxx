@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -48,60 +48,60 @@ public:
 
 	RegError	openKey(const rtl::OUString& keyName, RegKeyHandle* phOpenKey);
 
-	RegError	openSubKeys(const rtl::OUString& keyName, 
-							RegKeyHandle** phOpenSubKeys, 
+	RegError	openSubKeys(const rtl::OUString& keyName,
+							RegKeyHandle** phOpenSubKeys,
 							sal_uInt32* pnSubKeys);
 
-	RegError	getKeyNames(const rtl::OUString& keyName, 
-							rtl_uString*** pSubKeyNames, 
+	RegError	getKeyNames(const rtl::OUString& keyName,
+							rtl_uString*** pSubKeyNames,
 							sal_uInt32* pnSubKeys);
 
 	RegError	closeKey(RegKeyHandle hKey);
 
 	RegError	deleteKey(const rtl::OUString& keyName);
 
-	RegError	getValueInfo(const rtl::OUString& valueName, 
-							 RegValueType* pValueTye, 
+	RegError	getValueInfo(const rtl::OUString& valueName,
+							 RegValueType* pValueTye,
 							 sal_uInt32* pValueSize) const;
 
-	RegError	setValue(const rtl::OUString& valueName, 
-						 RegValueType vType, 
-						 RegValue value, 
+	RegError	setValue(const rtl::OUString& valueName,
+						 RegValueType vType,
+						 RegValue value,
 						 sal_uInt32 vSize);
 
-	RegError	setLongListValue(const rtl::OUString& valueName, 
-						 		 sal_Int32* pValueList, 
+	RegError	setLongListValue(const rtl::OUString& valueName,
+						 		 sal_Int32* pValueList,
 								 sal_uInt32 len);
 
-	RegError	setStringListValue(const rtl::OUString& valueName, 
-						 		  sal_Char** pValueList, 
+	RegError	setStringListValue(const rtl::OUString& valueName,
+						 		  sal_Char** pValueList,
 								  sal_uInt32 len);
 
-	RegError	setUnicodeListValue(const rtl::OUString& valueName, 
-						 		  sal_Unicode** pValueList, 
+	RegError	setUnicodeListValue(const rtl::OUString& valueName,
+						 		  sal_Unicode** pValueList,
 								  sal_uInt32 len);
 
-	RegError	getValue(const rtl::OUString& valueName, RegValue value) const; 	
+	RegError	getValue(const rtl::OUString& valueName, RegValue value) const;
 
-	RegError	getLongListValue(const rtl::OUString& valueName, 
-						 		 sal_Int32** pValueList, 
+	RegError	getLongListValue(const rtl::OUString& valueName,
+						 		 sal_Int32** pValueList,
 								 sal_uInt32* pLen) const;
 
-	RegError	getStringListValue(const rtl::OUString& valueName, 
-						 		   sal_Char*** pValueList, 
+	RegError	getStringListValue(const rtl::OUString& valueName,
+						 		   sal_Char*** pValueList,
 								   sal_uInt32* pLen) const;
 
-	RegError	getUnicodeListValue(const rtl::OUString& valueName, 
-						 		    sal_Unicode*** pValueList, 
+	RegError	getUnicodeListValue(const rtl::OUString& valueName,
+						 		    sal_Unicode*** pValueList,
 								    sal_uInt32* pLen) const;
 
 	RegError	getKeyType(const rtl::OUString& name,
 						   RegKeyType* pKeyType) const;
-	
+
 	RegError 	getResolvedKeyName(const rtl::OUString& keyName,
 								   rtl::OUString& resolvedName);
 
-	bool isDeleted() const 
+	bool isDeleted() const
 		{ return m_bDeleted != 0; }
 
 	void setDeleted (sal_Bool bKeyDeleted)
@@ -112,14 +112,14 @@ public:
 
 	void setModified (bool bModified = true)
 		{ m_bModified = bModified ? 1 : 0; }
-			
-	sal_Bool		isReadOnly() const 
+
+	sal_Bool		isReadOnly() const
 					{ return m_pRegistry->isReadOnly(); }
 
 	sal_uInt32		countSubKeys();
 
 	ORegistry* getRegistry() const
-					{ return m_pRegistry; }	
+					{ return m_pRegistry; }
 
 	const store::OStoreFile& getStoreFile() const
                     { return m_pRegistry->getStoreFile(); }
@@ -127,10 +127,10 @@ public:
 	store::OStoreDirectory getStoreDir();
 
 	const rtl::OUString& getName() const
-					{ return m_name; }	
+					{ return m_name; }
 
 	sal_uInt32 getRefCount() const
-					{ return m_refCount; }	
+					{ return m_refCount; }
 
     rtl::OUString getFullPath(rtl::OUString const & path) const;
 

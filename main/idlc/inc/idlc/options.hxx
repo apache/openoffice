@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -28,7 +28,7 @@
 #include <idlc/idlctypes.hxx>
 #endif
 
-typedef	::std::hash_map< ::rtl::OString, 
+typedef	::std::hash_map< ::rtl::OString,
 						 ::rtl::OString,
 						 HashString,
 						 EqualString > OptionMap;
@@ -39,7 +39,7 @@ public:
 	IllegalArgument(const ::rtl::OString& msg)
 		: m_message(msg) {}
 
-	::rtl::OString	m_message;	
+	::rtl::OString	m_message;
 };
 
 
@@ -59,7 +59,7 @@ public:
     bool setOption(char const * option, std::string const & rArg);
 
 #if 0  /* @@@ */
-	sal_Bool initOptions(int ac, char* av[], sal_Bool bCmdFile=sal_False) 
+	sal_Bool initOptions(int ac, char* av[], sal_Bool bCmdFile=sal_False)
 		throw( IllegalArgument );
 #endif /* @@@ */
 
@@ -84,5 +84,5 @@ protected:
     bool            m_quiet;
 	OptionMap		m_options;
 };
-	
+
 #endif // _IDLC_OPTIONS_HXX_

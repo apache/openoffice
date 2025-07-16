@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 #ifndef INCLUDED_SVGIO_SVGREADER_SVGSTYLEATTRIBUTES_HXX
@@ -31,10 +31,10 @@
 //////////////////////////////////////////////////////////////////////////////
 // predefines
 
-namespace svgio { namespace svgreader { 
-    class SvgGradientNode; 
-    class SvgPatternNode; 
-    class SvgMarkerNode; 
+namespace svgio { namespace svgreader {
+    class SvgGradientNode;
+    class SvgPatternNode;
+    class SvgMarkerNode;
 }}
 
 //////////////////////////////////////////////////////////////////////////////
@@ -225,26 +225,26 @@ namespace svgio
 
             /// internal helpers
             void add_fillGradient(
-                const basegfx::B2DPolyPolygon& rPath, 
-                drawinglayer::primitive2d::Primitive2DSequence& rTarget, 
+                const basegfx::B2DPolyPolygon& rPath,
+                drawinglayer::primitive2d::Primitive2DSequence& rTarget,
                 const SvgGradientNode& rFillGradient,
                 const basegfx::B2DRange& rGeoRange) const;
             void add_fillPatternTransform(
-                const basegfx::B2DPolyPolygon& rPath, 
-                drawinglayer::primitive2d::Primitive2DSequence& rTarget, 
+                const basegfx::B2DPolyPolygon& rPath,
+                drawinglayer::primitive2d::Primitive2DSequence& rTarget,
                 const SvgPatternNode& rFillGradient,
                 const basegfx::B2DRange& rGeoRange) const;
             void add_fillPattern(
-                const basegfx::B2DPolyPolygon& rPath, 
-                drawinglayer::primitive2d::Primitive2DSequence& rTarget, 
+                const basegfx::B2DPolyPolygon& rPath,
+                drawinglayer::primitive2d::Primitive2DSequence& rTarget,
                 const SvgPatternNode& rFillGradient,
                 const basegfx::B2DRange& rGeoRange) const;
             void add_fill(
-                const basegfx::B2DPolyPolygon& rPath, 
+                const basegfx::B2DPolyPolygon& rPath,
                 drawinglayer::primitive2d::Primitive2DSequence& rTarget,
                 const basegfx::B2DRange& rGeoRange) const;
             void add_stroke(
-                const basegfx::B2DPolyPolygon& rPath, 
+                const basegfx::B2DPolyPolygon& rPath,
                 drawinglayer::primitive2d::Primitive2DSequence& rTarget,
                 const basegfx::B2DRange& rGeoRange) const;
             bool prepare_singleMarker(
@@ -253,29 +253,29 @@ namespace svgio
                 basegfx::B2DRange& rClipRange,
                 const SvgMarkerNode& rMarker) const;
             void add_markers(
-                const basegfx::B2DPolyPolygon& rPath, 
+                const basegfx::B2DPolyPolygon& rPath,
                 drawinglayer::primitive2d::Primitive2DSequence& rTarget,
                 const basegfx::tools::PointIndexSet* pHelpPointIndices) const;
 
         public:
             /// local attribute scanner
             void parseStyleAttribute(
-                const rtl::OUString& rTokenName, 
-                SVGToken aSVGToken, 
-                const rtl::OUString& aContent, 
+                const rtl::OUString& rTokenName,
+                SVGToken aSVGToken,
+                const rtl::OUString& aContent,
                 bool bCaseIndependent);
 
             /// helper which does the necessary with a given path
             void add_text(
-                drawinglayer::primitive2d::Primitive2DSequence& rTarget, 
+                drawinglayer::primitive2d::Primitive2DSequence& rTarget,
                 drawinglayer::primitive2d::Primitive2DSequence& rSource) const;
             void add_path(
-                const basegfx::B2DPolyPolygon& rPath, 
+                const basegfx::B2DPolyPolygon& rPath,
                 drawinglayer::primitive2d::Primitive2DSequence& rTarget,
                 const basegfx::tools::PointIndexSet* pHelpPointIndices) const;
             void add_postProcess(
-                drawinglayer::primitive2d::Primitive2DSequence& rTarget, 
-                const drawinglayer::primitive2d::Primitive2DSequence& rSource, 
+                drawinglayer::primitive2d::Primitive2DSequence& rTarget,
+                const drawinglayer::primitive2d::Primitive2DSequence& rSource,
                 const basegfx::B2DHomMatrix* pTransform) const;
 
             /// helper to set mpCssStyleParent temporarily for CSS style hierarchies

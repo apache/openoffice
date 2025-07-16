@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -60,15 +60,15 @@ private:
 
 	DECL_LINK (TimeoutHdl_Impl      ,  Timer * );		// Handler for timer -timeout
 
-	enum EPathType { Type_Unknown, Type_Invalid, 
-		             Type_ExistsFile, Type_File, 
+	enum EPathType { Type_Unknown, Type_Invalid,
+		             Type_ExistsFile, Type_File,
 					 Type_ExistsDir, Type_Dir };
 	EPathType GetPathType ( String& aStrPath );
 
 protected:
 	void FillDlgFields     ( String& aStrURL );
-	void GetCurentItemData ( String& aStrURL, String& aStrName, 
-		                     String& aStrIntName, String& aStrFrame, 
+	void GetCurentItemData ( String& aStrURL, String& aStrName,
+		                     String& aStrIntName, String& aStrFrame,
 							 SvxLinkInsertMode& eMode );
 	virtual sal_Bool   ShouldOpenMarkWnd () {return mbMarkWndOpen;}
 	virtual void   SetMarkWndShouldOpen (sal_Bool bOpen) {mbMarkWndOpen=bOpen;}

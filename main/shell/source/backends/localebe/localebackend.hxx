@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -34,25 +34,25 @@ namespace css = com::sun::star ;
 namespace uno = css::uno ;
 namespace lang = css::lang ;
 
-class LocaleBackend : public ::cppu::WeakImplHelper2 < 
+class LocaleBackend : public ::cppu::WeakImplHelper2 <
         css::beans::XPropertySet,
         lang::XServiceInfo > {
-        
+
     public :
-        
+
         static LocaleBackend* createInstance();
 
         // XServiceInfo
-        virtual rtl::OUString SAL_CALL 
-            getImplementationName(  ) 
-                throw (uno::RuntimeException) ;
-        
-        virtual sal_Bool SAL_CALL 
-            supportsService( const rtl::OUString& aServiceName ) 
+        virtual rtl::OUString SAL_CALL
+            getImplementationName(  )
                 throw (uno::RuntimeException) ;
 
-        virtual uno::Sequence<rtl::OUString> SAL_CALL 
-            getSupportedServiceNames(  ) 
+        virtual sal_Bool SAL_CALL
+            supportsService( const rtl::OUString& aServiceName )
+                throw (uno::RuntimeException) ;
+
+        virtual uno::Sequence<rtl::OUString> SAL_CALL
+            getSupportedServiceNames(  )
                 throw (uno::RuntimeException) ;
 
         /**
@@ -131,13 +131,13 @@ class LocaleBackend : public ::cppu::WeakImplHelper2 <
         ~LocaleBackend(void) ;
 
     private:
-        // Returns the user locale 
+        // Returns the user locale
         static rtl::OUString getLocale(void);
-        
-        // Returns the user UI locale 
+
+        // Returns the user UI locale
         static rtl::OUString getUILocale(void);
-        
-        // Returns the system default locale 
+
+        // Returns the system default locale
         static rtl::OUString getSystemLocale(void);
 } ;
 

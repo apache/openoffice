@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -49,7 +49,7 @@
 typedef NS_BEANS::PropertyValue* SbPropertyValuePtr;
 SV_DECL_PTRARR( SbPropertyValueArr_Impl, SbPropertyValuePtr, 4, 4 )
 
-typedef ::cppu::WeakImplHelper2< NS_BEANS::XPropertySet, 
+typedef ::cppu::WeakImplHelper2< NS_BEANS::XPropertySet,
 								 NS_BEANS::XPropertyAccess > SbPropertyValuesHelper;
 
 
@@ -68,7 +68,7 @@ public:
 	virtual					~SbPropertyValues();
 
 	// XPropertySet
-	virtual NS_UNO::Reference< NS_BEANS::XPropertySetInfo > SAL_CALL	
+	virtual NS_UNO::Reference< NS_BEANS::XPropertySetInfo > SAL_CALL
 		getPropertySetInfo(void) throw( NS_UNO::RuntimeException );
 	virtual void SAL_CALL	setPropertyValue(
 								const ::rtl::OUString& aPropertyName,
@@ -78,9 +78,9 @@ public:
                                 ::com::sun::star::lang::IllegalArgumentException,
                                 ::com::sun::star::lang::WrappedTargetException,
                                 ::com::sun::star::uno::RuntimeException);
-    virtual NS_UNO::Any SAL_CALL getPropertyValue( const ::rtl::OUString& PropertyName ) 
-		throw(	NS_BEANS::UnknownPropertyException, 
-				NS_LANG::WrappedTargetException, 
+    virtual NS_UNO::Any SAL_CALL getPropertyValue( const ::rtl::OUString& PropertyName )
+		throw(	NS_BEANS::UnknownPropertyException,
+				NS_LANG::WrappedTargetException,
 				NS_UNO::RuntimeException);
 	virtual void SAL_CALL	addPropertyChangeListener(
 								const ::rtl::OUString& aPropertyName,
@@ -161,8 +161,8 @@ public:
 	virtual					~SbPropertyContainer();
 
 	// XPropertyContainer
-    virtual void SAL_CALL addProperty(	const ::rtl::OUString& Name, 
-										sal_Int16 Attributes, 
+    virtual void SAL_CALL addProperty(	const ::rtl::OUString& Name,
+										sal_Int16 Attributes,
 										const NS_UNO::Any& DefaultValue)
 		throw(  NS_BEANS::PropertyExistException, NS_BEANS::IllegalTypeException,
 				NS_LANG::IllegalArgumentException, NS_UNO::RuntimeException );

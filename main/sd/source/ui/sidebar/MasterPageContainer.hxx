@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 #ifndef SD_SIDEBAR_PANELS_MASTER_PAGE_CONTAINER_HXX
@@ -53,12 +53,12 @@ class MasterPageDescriptor;
     master pages.  Each MasterPageContainer, however, has its own
     PreviewSize value and thus can independently switch between large and
     small previews.
-    
+
     The container maintains its own document to store master page objects.
-    
+
     For each master page container stores its URL, preview bitmap, page
     name, and, if available, the page object.
-    
+
     Entries are accessed via a Token, which is mostly a numerical index but
     whose values do not necessarily have to be consecutive.
 */
@@ -103,7 +103,7 @@ public:
     bool RequestPreview (Token aToken);
 
     /** Each entry of the container is either the first page of a template
-        document or is a master page of an Impress document. 
+        document or is a master page of an Impress document.
     */
     enum Origin {
         MASTERPAGE,  // Master page of a document.
@@ -130,8 +130,8 @@ public:
     /** Determine whether the container has a member for the given token.
     */
     bool HasToken (Token aToken) const;
-    
-    /** Return a token for an index in the range 
+
+    /** Return a token for an index in the range
         0 <= index < GetTokenCount().
     */
     Token GetTokenForIndex (int nIndex);
@@ -147,7 +147,7 @@ public:
     Origin GetOriginForToken (Token aToken);
     sal_Int32 GetTemplateIndexForToken (Token aToken);
     ::boost::shared_ptr<MasterPageDescriptor> GetDescriptorForToken (Token aToken);
-    
+
     void InvalidatePreview (Token aToken);
 
     /** Return a preview for the specified token.  When the preview is not

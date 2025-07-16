@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -232,11 +232,11 @@ public:
 						aInsertConfig.SetModified();}
 
     sal_Bool    IsCaptionOrderNumberingFirst() const { return aInsertConfig.bCaptionOrderNumberingFirst; }
-    void        SetCaptionOrderNumberingFirst( sal_Bool bSet ) 
-                { 
+    void        SetCaptionOrderNumberingFirst( sal_Bool bSet )
+                {
                     if(aInsertConfig.bCaptionOrderNumberingFirst != bSet)
                     {
-                        aInsertConfig.bCaptionOrderNumberingFirst = bSet; 
+                        aInsertConfig.bCaptionOrderNumberingFirst = bSet;
                         aInsertConfig.SetModified();
                     }
                 }
@@ -287,19 +287,19 @@ public:
 												  aMiscConfig.SetModified();}
 
 	sal_Bool		IsNameFromColumn() const		{ return aMiscConfig.bIsNameFromColumn; }
-    void        SetIsNameFromColumn( sal_Bool bSet )    
-                        { 
+    void        SetIsNameFromColumn( sal_Bool bSet )
+                        {
                             aMiscConfig.SetModified();
                             aMiscConfig.bIsNameFromColumn = bSet;
                         }
 
     sal_Bool        IsAskForMailMerge() const       { return aMiscConfig.bAskForMailMergeInPrint;}
-    void        SetAskForMailMerge(sal_Bool bSet)        
-                    { 
+    void        SetAskForMailMerge(sal_Bool bSet)
+                    {
                         aMiscConfig.SetModified();
                         aMiscConfig.bAskForMailMergeInPrint = bSet;
                     }
-            
+
 
 	const String&	GetNameFromColumn() const		{ return aMiscConfig.sNameFromColumn; }
 	void			SetNameFromColumn( const String& rSet )  	{ aMiscConfig.sNameFromColumn = rSet;

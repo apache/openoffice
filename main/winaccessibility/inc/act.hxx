@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 #ifndef __ACCACT_HXX
@@ -47,11 +47,11 @@ static bool ActivateActContext()
 	if(!IsXPOrLater())
 		return false;
 
-	ACTCTX actctx; 
+	ACTCTX actctx;
 
-	ZeroMemory(&actctx, sizeof(actctx)); 
+	ZeroMemory(&actctx, sizeof(actctx));
 
-	actctx.cbSize = sizeof(actctx); 
+	actctx.cbSize = sizeof(actctx);
 
 	TCHAR szDllDirPath[1024];
 	::GetCurrentDirectory(1024,szDllDirPath);
@@ -62,14 +62,14 @@ static bool ActivateActContext()
 	actctx.lpResourceName = MAKEINTRESOURCE(97);
 	actctx.dwFlags = ACTCTX_FLAG_RESOURCE_NAME_VALID;
 
-	HANDLE pActCtx = CreateActCtx(&actctx); 
+	HANDLE pActCtx = CreateActCtx(&actctx);
 
-	if(pActCtx != INVALID_HANDLE_VALUE) 
+	if(pActCtx != INVALID_HANDLE_VALUE)
 	{
 		if(ActivateActCtx(pActCtx, &lpCookie))
 		{
 			return true;
-		}		
+		}
 	}
 	pActCtx = INVALID_HANDLE_VALUE;
 	lpCookie = 0;
@@ -82,7 +82,7 @@ static void DeactivateActContext()
 		return;
 
 	if(lpCookie)
-		DeactivateActCtx(0, lpCookie); 
+		DeactivateActCtx(0, lpCookie);
 
 	if(pActCtx!=INVALID_HANDLE_VALUE)
 		ReleaseActCtx(pActCtx);

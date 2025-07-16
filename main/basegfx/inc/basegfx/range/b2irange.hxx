@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -37,20 +37,20 @@ namespace basegfx
 {
 	class BASEGFX_DLLPUBLIC B2IRange
 	{
-	public:		
+	public:
         typedef sal_Int32 		ValueType;
         typedef Int32Traits 	TraitsType;
 
-		B2IRange() 
+		B2IRange()
 		{
 		}
-		
+
 		explicit B2IRange(const B2ITuple& rTuple)
 		:	maRangeX(rTuple.getX()),
 			maRangeY(rTuple.getY())
 		{
 		}
-		
+
 		B2IRange(sal_Int32 x1,
                  sal_Int32 y1,
                  sal_Int32 x2,
@@ -61,7 +61,7 @@ namespace basegfx
 			maRangeX.expand(x2);
 			maRangeY.expand(y2);
 		}
-		
+
 		B2IRange(const B2ITuple& rTuple1,
                  const B2ITuple& rTuple2)
 		:	maRangeX(rTuple1.getX()),
@@ -69,41 +69,41 @@ namespace basegfx
 		{
             expand( rTuple2 );
 		}
-		
+
 		B2IRange(const B2IRange& rRange)
 		:	maRangeX(rRange.maRangeX),
 			maRangeY(rRange.maRangeY)
 		{
 		}
 
-		bool isEmpty() const 
+		bool isEmpty() const
 		{
 			return maRangeX.isEmpty() || maRangeY.isEmpty();
 		}
 
-		void reset() 
-		{ 
-			maRangeX.reset(); 
-			maRangeY.reset(); 
+		void reset()
+		{
+			maRangeX.reset();
+			maRangeY.reset();
 		}
 
-		bool operator==( const B2IRange& rRange ) const 
-		{ 
-			return (maRangeX == rRange.maRangeX 
-				&& maRangeY == rRange.maRangeY); 
+		bool operator==( const B2IRange& rRange ) const
+		{
+			return (maRangeX == rRange.maRangeX
+				&& maRangeY == rRange.maRangeY);
 		}
 
-		bool operator!=( const B2IRange& rRange ) const 
-		{ 
-			return (maRangeX != rRange.maRangeX 
-				|| maRangeY != rRange.maRangeY); 
+		bool operator!=( const B2IRange& rRange ) const
+		{
+			return (maRangeX != rRange.maRangeX
+				|| maRangeY != rRange.maRangeY);
 		}
 
-		B2IRange& operator=(const B2IRange& rRange) 
-		{ 
-			maRangeX = rRange.maRangeX; 
-			maRangeY = rRange.maRangeY; 
-			return *this; 
+		B2IRange& operator=(const B2IRange& rRange)
+		{
+			maRangeX = rRange.maRangeX;
+			maRangeY = rRange.maRangeY;
+			return *this;
 		}
 
         sal_Int32 getMinX() const
@@ -143,7 +143,7 @@ namespace basegfx
 				maRangeY.getMinimum()
 				);
 		}
-		
+
 		B2IPoint getMaximum() const
 		{
 			return B2IPoint(
@@ -159,7 +159,7 @@ namespace basegfx
 				maRangeY.getRange()
 				);
 		}
-	
+
 		B2DPoint getCenter() const
 		{
 			return B2DPoint(
@@ -167,11 +167,11 @@ namespace basegfx
 				maRangeY.getCenter()
 				);
 		}
-	
+
 		bool isInside(const B2ITuple& rTuple) const
 		{
 			return (
-				maRangeX.isInside(rTuple.getX()) 
+				maRangeX.isInside(rTuple.getX())
 				&& maRangeY.isInside(rTuple.getY())
 				);
 		}
@@ -179,7 +179,7 @@ namespace basegfx
 		bool isInside(const B2IRange& rRange) const
 		{
 			return (
-				maRangeX.isInside(rRange.maRangeX) 
+				maRangeX.isInside(rRange.maRangeX)
 				&& maRangeY.isInside(rRange.maRangeY)
 				);
 		}
@@ -187,7 +187,7 @@ namespace basegfx
 		bool overlaps(const B2IRange& rRange) const
 		{
 			return (
-				maRangeX.overlaps(rRange.maRangeX) 
+				maRangeX.overlaps(rRange.maRangeX)
 				&& maRangeY.overlaps(rRange.maRangeY)
 				);
 		}
@@ -200,20 +200,20 @@ namespace basegfx
 
 		void expand(const B2IRange& rRange)
 		{
-			maRangeX.expand(rRange.maRangeX); 
-			maRangeY.expand(rRange.maRangeY); 
+			maRangeX.expand(rRange.maRangeX);
+			maRangeY.expand(rRange.maRangeY);
 		}
 
 		void intersect(const B2IRange& rRange)
 		{
-			maRangeX.intersect(rRange.maRangeX); 
-			maRangeY.intersect(rRange.maRangeY); 
+			maRangeX.intersect(rRange.maRangeX);
+			maRangeY.intersect(rRange.maRangeY);
 		}
 
 		void grow(sal_Int32 nValue)
 		{
-			maRangeX.grow(nValue); 
-			maRangeY.grow(nValue); 
+			maRangeX.grow(nValue);
+			maRangeY.grow(nValue);
 		}
 
     private:

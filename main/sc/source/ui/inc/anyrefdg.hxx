@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -66,7 +66,7 @@ class ScFormulaReferenceHelper
     formula::RefButton*  pRefBtn;                // Button dazu
     Window*             m_pWindow;
     SfxBindings*        m_pBindings;
-    ::std::auto_ptr<Accelerator>        
+    ::std::auto_ptr<Accelerator>
                         pAccel;                 // fuer Enter/Escape
     sal_Bool*               pHiddenMarks;           // Merkfeld fuer versteckte Controls
     SCTAB               nRefTab;                // used for ShowReference
@@ -80,9 +80,9 @@ class ScFormulaReferenceHelper
     sal_Bool                bEnableColorRef;
     sal_Bool                bHighLightRef;
     sal_Bool                bAccInserted;
-    
+
     DECL_LINK( AccelSelectHdl, Accelerator* );
-    
+
 public:
     ScFormulaReferenceHelper(IAnyRefDialog* _pDlg,SfxBindings* _pBindings);
     ~ScFormulaReferenceHelper();
@@ -132,16 +132,16 @@ public:
     friend class        formula::RefEdit;
 
 private:
-    ScFormulaReferenceHelper 
+    ScFormulaReferenceHelper
                         m_aHelper;
     SfxBindings*        pMyBindings;
-    
+
     Window*             pActiveWin;
     Timer               aTimer;
     String              aDocName;               // document on which the dialog was opened
 
     DECL_LINK( UpdateFocusHdl, Timer* );
-    
+
 
 protected:
     virtual sal_Bool        DoClose( sal_uInt16 nId );

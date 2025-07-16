@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -37,7 +37,7 @@ namespace com {  namespace sun { namespace star {
         class XDrawPage;
         class XDrawPagesSupplier;
     }
-    namespace uno { 
+    namespace uno {
         class XComponentContext;
     }
     namespace animations {
@@ -57,7 +57,7 @@ namespace slideshow
     {
         class RGBColor;
         class ScreenUpdater;
-        typedef ::std::vector< ::cppcanvas::PolyPolygonSharedPtr> PolyPolygonVector;    
+        typedef ::std::vector< ::cppcanvas::PolyPolygonSharedPtr> PolyPolygonVector;
         class Slide
         {
         public:
@@ -101,25 +101,25 @@ namespace slideshow
 
                 This value is retrieved from the XDrawPage properties.
              */
-            virtual basegfx::B2IVector getSlideSize() const = 0; 
+            virtual basegfx::B2IVector getSlideSize() const = 0;
 
             /// Gets the underlying API page
             virtual ::com::sun::star::uno::Reference<
                 ::com::sun::star::drawing::XDrawPage > getXDrawPage() const = 0;
-            
+
             /// Gets the animation node.
-            virtual ::com::sun::star::uno::Reference< 
+            virtual ::com::sun::star::uno::Reference<
                 ::com::sun::star::animations::XAnimationNode > getXAnimationNode() const = 0;
 
             ///Gets the slide Polygons
             virtual PolyPolygonVector getPolygons() = 0;
-            	
+
             ///Draw the slide Polygons
             virtual void drawPolygons() const = 0;
-            	
+
             ///Check if paint overlay is already active
             virtual bool isPaintOverlayActive() const = 0;
-            
+
 			virtual void enablePaintOverlay() = 0;
 			virtual void disablePaintOverlay() = 0;
 
@@ -148,7 +148,7 @@ namespace slideshow
                 that the view must have been added to this slide
                 before via viewAdded().
              */
-            virtual SlideBitmapSharedPtr 
+            virtual SlideBitmapSharedPtr
                 getCurrentSlideBitmap( const UnoViewSharedPtr& rView ) const = 0;
         };
 
@@ -160,7 +160,7 @@ namespace slideshow
         class ActivitiesQueue;
         class UserEventQueue;
         class RGBColor;
-    
+
         /** Construct from XDrawPage
 
             The Slide object generally works in XDrawPage model
@@ -168,7 +168,7 @@ namespace slideshow
             height as specified in the XDrawPage's property
             set. The top, left corner of the page will be rendered
             at (0,0) in the given canvas' view coordinate system.
-                
+
             Does not render anything initially
 
             @param xDrawPage
@@ -189,7 +189,7 @@ namespace slideshow
             @param rUserEventQueue
             UserEeventQueue
         */
-        SlideSharedPtr createSlide( const ::com::sun::star::uno::Reference< 
+        SlideSharedPtr createSlide( const ::com::sun::star::uno::Reference<
                                        ::com::sun::star::drawing::XDrawPage >& 		    xDrawPage,
                                    const ::com::sun::star::uno::Reference<
                                        ::com::sun::star::drawing::XDrawPagesSupplier >& xDrawPages,
@@ -202,7 +202,7 @@ namespace slideshow
                                     UserEventQueue&									    rUserEventQueue,
                                     CursorManager&                                      rCursorManager,
                                     const UnoViewContainer&                             rViewContainer,
-                                    const ::com::sun::star::uno::Reference< 
+                                    const ::com::sun::star::uno::Reference<
                                        ::com::sun::star::uno::XComponentContext >&      xContext,
                                     const ShapeEventListenerMap&                        rShapeListenerMap,
                                     const ShapeCursorMap&                               rShapeCursorMap,

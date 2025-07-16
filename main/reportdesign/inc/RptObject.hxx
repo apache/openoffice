@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -82,7 +82,7 @@ public:
 protected:
     mutable TMediator                                                                           m_xMediator;
 	mutable ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertyChangeListener> m_xPropertyChangeListener;
-	//mutable ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertyChangeListener> 
+	//mutable ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertyChangeListener>
 	mutable ::com::sun::star::uno::Reference< ::com::sun::star::report::XReportComponent>		m_xReportComponent;
 	::com::sun::star::uno::Reference< ::com::sun::star::container::XContainerListener>	        m_xContainerListener;
 	::com::sun::star::uno::Reference< ::com::sun::star::report::XSection>				        m_xSection;
@@ -93,8 +93,8 @@ protected:
 	OObjectBase(const ::com::sun::star::uno::Reference< ::com::sun::star::report::XReportComponent>& _xComponent);
 	OObjectBase(const ::rtl::OUString& _sComponentName);
 
-	virtual ~OObjectBase();	
-	
+	virtual ~OObjectBase();
+
 	inline sal_Bool	isListening() const { return m_bIsListening; }
 
 	void SetPropsFromRect(const Rectangle& _rRect);
@@ -119,7 +119,7 @@ public:
 	virtual void _propertyChange( const  ::com::sun::star::beans::PropertyChangeEvent& evt ) throw(::com::sun::star::uno::RuntimeException);
     virtual void initializeOle() {}
 
-	sal_Bool		supportsService( const ::rtl::OUString& _sServiceName ) const;	
+	sal_Bool		supportsService( const ::rtl::OUString& _sServiceName ) const;
 
 	::com::sun::star::uno::Reference< ::com::sun::star::report::XReportComponent> getReportComponent() const;
     virtual ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySet> getAwtComponent();
@@ -166,7 +166,7 @@ public:
 	TYPEINFO();
 
 	virtual ~OCustomShape();
-	
+
 	virtual sal_Int32	GetStep() const;
     virtual ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySet> getAwtComponent();
 
@@ -194,7 +194,7 @@ public:
 protected:
 	OOle2Obj(const ::com::sun::star::uno::Reference< ::com::sun::star::report::XReportComponent>& _xComponent,sal_uInt16 _nType);
 	OOle2Obj(const ::rtl::OUString& _sComponentName,sal_uInt16 _nType);
-    
+
 
 	virtual void NbcMove( const Size& rSize );
 	virtual void NbcResize(const Point& rRef, const Fraction& xFact, const Fraction& yFact);
@@ -208,7 +208,7 @@ public:
 	TYPEINFO();
 
 	virtual ~OOle2Obj();
-	
+
 	virtual sal_Int32	GetStep() const;
     virtual ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySet> getAwtComponent();
 
@@ -241,7 +241,7 @@ protected:
                 ,sal_uInt16   _nObjectType);
 
 	virtual ~OUnoObject();
-	
+
 	virtual void NbcMove( const Size& rSize );
 	virtual void NbcResize(const Point& rRef, const Fraction& xFact, const Fraction& yFact);
     virtual void NbcSetLogicRect(const Rectangle& rRect);

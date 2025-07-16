@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -33,13 +33,13 @@
 // use this class when you have an a object like
 // interface  XAnInterface which contains XHelperInterface in its inheritance hierarchy
 // interface XAnInterface
-// { 
+// {
 //     interface XHelperInterface;
 //     [attribute, string] name;
 // }
 // or
 // interface XAnInterface : XHelperInterface;
-// { 
+// {
 //     [attribute, string] name;
 // }
 //
@@ -50,10 +50,10 @@
 // {
 // public:
 //     AnInterface( const Reference< HelperInterface >& xParent ) : AnInterfaceImpl_BASE( xParent ) {}
-//     // implement XAnInterface methods only, no need to implement the XHelperInterface 
+//     // implement XAnInterface methods only, no need to implement the XHelperInterface
 //     // methods
-//     virtual void setName( const OUString& );  
-//     virtual OUString getName();  
+//     virtual void setName( const OUString& );
+//     virtual OUString getName();
 // }
 //
 const ::rtl::OUString sHelperServiceName( RTL_CONSTASCII_USTRINGPARAM( "ooo.vba.HelperServiceBase" ) );
@@ -61,7 +61,7 @@ const ::rtl::OUString sHelperServiceName( RTL_CONSTASCII_USTRINGPARAM( "ooo.vba.
 template< typename Ifc1 >
 class InheritedHelperInterfaceImpl : public Ifc1
 {
-protected: 
+protected:
 	css::uno::WeakReference< ov::XHelperInterface > mxParent;
 	css::uno::Reference< css::uno::XComponentContext > mxContext;
 public:
@@ -77,8 +77,8 @@ public:
 		return 0x53756E4F;
 	}
 	virtual css::uno::Reference< ov::XHelperInterface > SAL_CALL getParent(  ) throw (css::script::BasicErrorException, css::uno::RuntimeException) { return mxParent; }
-	
-	virtual css::uno::Any SAL_CALL Application(  ) throw (css::script::BasicErrorException, css::uno::RuntimeException) { 
+
+	virtual css::uno::Any SAL_CALL Application(  ) throw (css::script::BasicErrorException, css::uno::RuntimeException) {
             // The application could certainly be passed around in the context - seems
             // to make sense
             css::uno::Reference< css::container::XNameAccess > xNameAccess( mxContext, css::uno::UNO_QUERY_THROW );
@@ -87,18 +87,18 @@ public:
 
 	// XServiceInfo Methods
 	virtual ::rtl::OUString SAL_CALL getImplementationName(  ) throw (css::uno::RuntimeException) { return getServiceImplName(); }
-	virtual ::sal_Bool SAL_CALL supportsService( const ::rtl::OUString& ServiceName ) throw (css::uno::RuntimeException) 
-	{ 
+	virtual ::sal_Bool SAL_CALL supportsService( const ::rtl::OUString& ServiceName ) throw (css::uno::RuntimeException)
+	{
 		css::uno::Sequence< rtl::OUString > sServices = getSupportedServiceNames();
 		const rtl::OUString* pStart = sServices.getConstArray();
 		const rtl::OUString* pEnd = pStart + sServices.getLength();
 		for ( ; pStart != pEnd ; ++pStart )
 			if ( (*pStart).equals( ServiceName ) )
 				return sal_True;
-		return sal_False;	
+		return sal_False;
 	}
-	virtual css::uno::Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames(  ) throw (css::uno::RuntimeException) 
-	{ 
+	virtual css::uno::Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames(  ) throw (css::uno::RuntimeException)
+	{
 		css::uno::Sequence< rtl::OUString > aNames = getServiceNames();
 		return aNames;
 	}

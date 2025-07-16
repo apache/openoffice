@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -32,11 +32,11 @@
 
 
 namespace com
-{     
+{
 namespace sun
-{     
+{
 namespace star
-{     
+{
 namespace uno
 {
 
@@ -50,7 +50,7 @@ class TypeDescription
 	/** C typelib type description
 	*/
 	mutable typelib_TypeDescription * _pTypeDescr;
-	
+
 public:
 	// these are here to force memory de/allocation to sal lib.
     /** @internal */
@@ -65,34 +65,34 @@ public:
     /** @internal */
 	inline static void SAL_CALL operator delete ( void *, void * ) SAL_THROW( () )
 		{}
-    
+
 	/** Constructor:
-        
+
 		@param pTypeDescr a type description
 	*/
 	inline TypeDescription( typelib_TypeDescription * pTypeDescr = 0 ) SAL_THROW( () );
 	/** Constructor:
-        
+
 		@param pTypeDescrRef a type description reference
 	*/
 	inline TypeDescription( typelib_TypeDescriptionReference * pTypeDescrRef ) SAL_THROW( () );
 	/** Constructor:
-        
+
 		@param rType a type
 	*/
 	inline TypeDescription( const ::com::sun::star::uno::Type & rType ) SAL_THROW( () );
 	/** Copy constructor:
-        
+
 		@param rDescr another TypeDescription
 	*/
 	inline TypeDescription( const TypeDescription & rDescr ) SAL_THROW( () );
 	/** Constructor:
-        
+
 		@param pTypeName a type name
 	*/
 	inline TypeDescription( rtl_uString * pTypeName ) SAL_THROW( () );
 	/** Constructor:
-        
+
 		@param rTypeName a type name
 	*/
 	inline TypeDescription( const ::rtl::OUString & rTypeName ) SAL_THROW( () );
@@ -101,13 +101,13 @@ public:
 	inline ~TypeDescription() SAL_THROW( () );
 
 	/** Assignment operator: acquires given type description and releases a set one.
-        
+
 		@param pTypeDescr another type description
 		@return this TypeDescription
 	*/
 	inline TypeDescription & SAL_CALL operator = ( typelib_TypeDescription * pTypeDescr ) SAL_THROW( () );
 	/** Assignment operator: acquires given type description and releases a set one.
-        
+
 		@param rTypeDescr another type description
 		@return this TypeDescription
 	*/
@@ -115,13 +115,13 @@ public:
 		{ return this->operator =( rTypeDescr.get() ); }
 
 	/** Tests whether two type descriptions are equal.
-        
+
 		@param pTypeDescr another type description
 		@return true, if both type descriptions are equal, false otherwise
 	*/
 	inline sal_Bool SAL_CALL equals( const typelib_TypeDescription * pTypeDescr ) const SAL_THROW( () );
 	/** Tests whether two type descriptions are equal.
-        
+
 		@param rTypeDescr another type description
 		@return true, if both type descriptions are equal, false otherwise
 	*/
@@ -131,15 +131,15 @@ public:
 	/** Makes stored type description complete.
 	*/
 	inline void SAL_CALL makeComplete() const SAL_THROW( () );
-	
+
 	/** Gets the UNacquired type description pointer.
-        
+
 		@return stored pointer of type description
 	*/
 	inline typelib_TypeDescription * SAL_CALL get() const SAL_THROW( () )
 		{ return _pTypeDescr; }
 	/** Tests if a type description is set.
-        
+
 		@return true, if a type description is set, false otherwise
 	*/
 	inline sal_Bool SAL_CALL is() const SAL_THROW( () )

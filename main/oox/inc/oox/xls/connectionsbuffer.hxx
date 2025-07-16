@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -48,7 +48,7 @@ const sal_Int32 BIFF12_CONNECTION_DSP                   = 8;
 struct WebPrModel
 {
     typedef ::std::vector< ::com::sun::star::uno::Any > TablesVector;
-    
+
     TablesVector        maTables;           /// Names or indexes of the web query tables.
     ::rtl::OUString     maUrl;              /// Source URL to refresh the data.
     ::rtl::OUString     maPostMethod;       /// POST method to query data.
@@ -95,7 +95,7 @@ struct ConnectionModel
     bool                mbSavePassword;     /// True = save password in connection string.
 
     explicit            ConnectionModel();
-    
+
     WebPrModel&         createWebPr();
 };
 
@@ -164,11 +164,11 @@ public:
 private:
     /** Inserts the passed connection into the map according to its identifier. */
     void                insertConnectionToMap( const ConnectionRef& rxConnection );
-    
+
 private:
     typedef RefVector< Connection >         ConnectionVector;
     typedef RefMap< sal_Int32, Connection > ConnectionMap;
-    
+
     ConnectionVector    maConnections;
     ConnectionMap       maConnectionsById;
     sal_Int32           mnUnusedId;

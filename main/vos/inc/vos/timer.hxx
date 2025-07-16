@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -32,7 +32,7 @@
 
 
 namespace vos
-{     
+{
 
 /////////////////////////////////////////////////////////////////////////////
 //
@@ -70,7 +70,7 @@ inline void TTimeValue::normalize()
 	{
 		Seconds += Nanosec / 1000000000;
 		Nanosec %= 1000000000;
-	}	
+	}
 }
 
 inline TTimeValue::TTimeValue(sal_uInt32 Secs, sal_uInt32 Nano)
@@ -116,7 +116,7 @@ inline sal_Bool operator>(const TTimeValue& rTimeA, const TTimeValue& rTimeB)
 
 inline sal_Bool operator==(const TTimeValue& rTimeA, const TTimeValue& rTimeB)
 {
-	return ((rTimeA.Seconds == rTimeB.Seconds) && 
+	return ((rTimeA.Seconds == rTimeB.Seconds) &&
 		    (rTimeA.Nanosec == rTimeB.Nanosec));
 }
 
@@ -147,7 +147,7 @@ public:
   	/// abort timer prematurely.
   	void SAL_CALL stop();
   	/// returns <code> sal_True </code> if timer is running.
-  	sal_Bool 	SAL_CALL isTicking() const; 
+  	sal_Bool 	SAL_CALL isTicking() const;
 	/// is the timer expired?
   	sal_Bool 	SAL_CALL isExpired() const;
 	/// does <code> pTimer </code> expires before us?
@@ -157,7 +157,7 @@ public:
 	/// set the time to fire to 'now' + <code> Remaining </code>
   	void		SAL_CALL setRemainingTime(const TTimeValue& Remaining);
 	/// set the time to fire to 'now' + <code> Remaining </code> with repeat interveal <code> Repeat </code>
-  	void		SAL_CALL setRemainingTime(const TTimeValue& Remaining, const TTimeValue& Repeat);				
+  	void		SAL_CALL setRemainingTime(const TTimeValue& Remaining, const TTimeValue& Repeat);
 	/// adds <code> Time </code> to the 'fire time'
   	void		SAL_CALL addTime(const TTimeValue& Time);
 	/// returns the remaining time before timer expiration relative to now
@@ -185,11 +185,11 @@ private:
     OTimer(const OTimer& rTimer);
     /// assignment operator disabled
     void SAL_CALL operator=(const OTimer& rTimer);
-    
+
 	friend class OTimerManager;
 };
 
-}     
+}
 
 
 #endif  //_VOS_TIMER_HXX_

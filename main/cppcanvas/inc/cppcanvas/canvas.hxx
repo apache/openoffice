@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -41,7 +41,7 @@ namespace basegfx
     class B2DPolyPolygon;
 }
 
-namespace com { namespace sun { namespace star { namespace rendering 
+namespace com { namespace sun { namespace star { namespace rendering
 {
     class  XCanvas;
     struct ViewState;
@@ -66,8 +66,8 @@ namespace cppcanvas
     class Canvas
     {
     public:
-        enum 
-        { 
+        enum
+        {
             /** Extra pixel used when canvas anti-aliases.
 
             	Enlarge the bounding box of drawing primitives by this
@@ -87,7 +87,7 @@ namespace cppcanvas
         virtual void                             setClip( const ::basegfx::B2DPolyPolygon& rClipPoly ) = 0;
         virtual void                             setClip() = 0;
 
-        /** Get current clip 
+        /** Get current clip
 
             @return NULL, if no clip is set, otherwise the current clip poly-polygon
          */
@@ -98,11 +98,11 @@ namespace cppcanvas
         virtual ColorSharedPtr                   createColor() const = 0;
 
         virtual CanvasSharedPtr                  clone() const = 0;
-        virtual void                             clear() const = 0;                            
+        virtual void                             clear() const = 0;
 
         // this should be considered private. if RTTI gets enabled
         // someday, remove that to a separate interface
-        virtual ::com::sun::star::uno::Reference< 
+        virtual ::com::sun::star::uno::Reference<
             ::com::sun::star::rendering::XCanvas > 			getUNOCanvas() const = 0;
         virtual ::com::sun::star::rendering::ViewState	 	getViewState() const = 0;
     };

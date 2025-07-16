@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -63,8 +63,8 @@ namespace connectivity
 			friend class connectivity::skeleton::OSubComponent<OConnection, OConnection_BASE>;
 
 		protected:
-			
-			rtl_TextEncoding						m_nTextEncoding; // the encoding which is used for all text conversions		
+
+			rtl_TextEncoding						m_nTextEncoding; // the encoding which is used for all text conversions
 			//====================================================================
 			// Data attributes
 			//====================================================================
@@ -83,14 +83,14 @@ namespace connectivity
 			::rtl::OUString							m_sUser;		// the user name
 			SkeletonDriver*							m_pDriver;		//	Pointer to the owning
 																	//  driver object
-													
+
 			sal_Bool								m_bClosed;
 			sal_Bool								m_bUseCatalog;	// should we use the catalog on filebased databases
 			sal_Bool								m_bUseOldDateFormat;
 
 
             void                    buildTypeInfo() throw( ::com::sun::star::sdbc::SQLException);
-			
+
 		public:
             virtual void construct( const ::rtl::OUString& url,const ::com::sun::star::uno::Sequence< ::com::sun::star::beans::PropertyValue >& info) throw(::com::sun::star::sdbc::SQLException);
 
@@ -131,7 +131,7 @@ namespace connectivity
 			virtual ::com::sun::star::uno::Any SAL_CALL getWarnings(  ) throw(::com::sun::star::sdbc::SQLException, ::com::sun::star::uno::RuntimeException);
 			virtual void SAL_CALL clearWarnings(  ) throw(::com::sun::star::sdbc::SQLException, ::com::sun::star::uno::RuntimeException);
 			//
-			
+
 			// should we use the catalog on filebased databases
 			inline sal_Bool			isCatalogUsed()		const { return m_bUseCatalog; }
 			inline ::rtl::OUString	getUserName()		const { return m_sUser; }

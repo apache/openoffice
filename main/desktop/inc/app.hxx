@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -92,7 +92,7 @@ class Desktop : public Application
 		virtual sal_uInt16			Exception(sal_uInt16 nError);
 		virtual void			SystemSettingsChanging( AllSettings& rSettings, Window* pFrame );
 		virtual void			AppEvent( const ApplicationEvent& rAppEvent );
-		
+
 		DECL_LINK(          OpenClients_Impl, void* );
 
 		static void				OpenClients();
@@ -122,8 +122,8 @@ class Desktop : public Application
         BootstrapStatus          GetBootstrapStatus() const
         {
             return m_aBootstrapStatus;
-        }        
-        
+        }
+
 		static sal_Bool         CheckOEM();
         static sal_Bool         isCrashReporterEnabled();
 
@@ -171,7 +171,7 @@ class Desktop : public Application
 
 		static void             PreloadModuleData( CommandLineArgs* );
         static void             PreloadConfigurationData();
-        
+
         Reference<XStatusIndicator> m_rSplashScreen;
         void                    OpenSplashScreen();
         void                    CloseSplashScreen();

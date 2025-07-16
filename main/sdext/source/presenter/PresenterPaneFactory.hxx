@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -51,7 +51,7 @@ namespace {
 
 
 /** The PresenerPaneFactory provides a fixed set of panes.
-    
+
     In order to make the presener screen more easily extendable in the
     future the set of supported panes could be made extendable on demand.
 */
@@ -90,7 +90,7 @@ public:
         throw (css::uno::RuntimeException);
 
     // XResourceFactory
-    
+
     virtual css::uno::Reference<css::drawing::framework::XResource>
         SAL_CALL createResource (
             const ::com::sun::star::uno::Reference<
@@ -117,7 +117,7 @@ private:
         const ::rtl::Reference<PresenterController>& rpPresenterController);
 
     void Register (const css::uno::Reference<css::frame::XController>& rxController);
-    
+
     css::uno::Reference<css::drawing::framework::XResource> CreatePane (
         const css::uno::Reference<css::drawing::framework::XResourceId>& rxPaneId,
         const ::rtl::OUString& rsTitle);
