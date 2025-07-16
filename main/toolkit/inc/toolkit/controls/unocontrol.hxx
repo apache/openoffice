@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -57,7 +57,7 @@ struct UnoControlComponentInfos
 	long		nX, nY, nWidth, nHeight;
 	sal_uInt16	nFlags;
 	float		nZoomX, nZoomY;
-	
+
 	UnoControlComponentInfos()
 	{
 		bVisible = sal_True;
@@ -87,7 +87,7 @@ class TOOLKIT_DLLPUBLIC UnoControl : 	public UnoControl_Base
 {
 private:
 	::osl::Mutex	maMutex;
-	
+
 	::com::sun::star::uno::Reference< ::com::sun::star::awt::XWindowPeer > 		mxPeer;
 	::com::sun::star::uno::Reference< ::com::sun::star::awt::XVclWindowPeer > 	mxVclWindowPeer; // just to avoid the query_interface thing
 
@@ -101,14 +101,14 @@ protected:
 	MouseMotionListenerMultiplexer		maMouseMotionListeners;
 	PaintListenerMultiplexer			maPaintListeners;
 	::cppu::OInterfaceContainerHelper	maModeChangeListeners;
-	
+
 	::com::sun::star::uno::Reference< ::com::sun::star::uno::XInterface > 		mxContext;
 	::com::sun::star::uno::Reference< ::com::sun::star::awt::XControlModel > 	mxModel;
 	::com::sun::star::uno::Reference< ::com::sun::star::awt::XGraphics > 		mxGraphics;
 
 	::com::sun::star::uno::WeakReferenceHelper
 										maAccessibleContext;	/// our most recent XAccessibleContext instance
-	
+
 	sal_Bool							mbDisposePeer;
     sal_Bool							mbRefeshingPeer;
 	sal_Bool							mbCreatingPeer;
@@ -117,7 +117,7 @@ protected:
 
 	UnoControlComponentInfos			maComponentInfos;
     UnoControl_Data*                    mpData;
-	
+
 	::osl::Mutex&																GetMutex() { return maMutex; }
 
 	::com::sun::star::uno::Reference< ::com::sun::star::awt::XWindow >			getParentPeer() const;
@@ -134,8 +134,8 @@ protected:
 
 	void																		disposeAccessibleContext();
 
-	inline void setPeer( const ::com::sun::star::uno::Reference< ::com::sun::star::awt::XWindowPeer >& _xPeer)	
-	{ 
+	inline void setPeer( const ::com::sun::star::uno::Reference< ::com::sun::star::awt::XWindowPeer >& _xPeer)
+	{
 		mxPeer = _xPeer;
 		mxVclWindowPeer = ::com::sun::star::uno::Reference< ::com::sun::star::awt::XVclWindowPeer >(mxPeer,::com::sun::star::uno::UNO_QUERY); // just to avoid the query_interface thing
 	}
@@ -151,7 +151,7 @@ public:
 
 				UnoControlComponentInfos&			GetComponentInfos() { return maComponentInfos; }
 
-	
+
 	virtual ::rtl::OUString	GetComponentServiceName();
 
     // ::com::sun::star::lang::XTypeProvider
@@ -210,7 +210,7 @@ public:
     void SAL_CALL setDesignMode( sal_Bool bOn ) throw(::com::sun::star::uno::RuntimeException);
     sal_Bool SAL_CALL isDesignMode(  ) throw(::com::sun::star::uno::RuntimeException);
     sal_Bool SAL_CALL isTransparent(  ) throw(::com::sun::star::uno::RuntimeException);
-	
+
 	// ::com::sun::star::lang::XServiceInfo
     ::rtl::OUString SAL_CALL getImplementationName(  ) throw(::com::sun::star::uno::RuntimeException);
     sal_Bool SAL_CALL supportsService( const ::rtl::OUString& ServiceName ) throw(::com::sun::star::uno::RuntimeException);

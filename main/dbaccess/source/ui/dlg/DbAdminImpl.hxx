@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -97,7 +97,7 @@ namespace dbaui
 		typedef	::std::set< ::rtl::OUString >	StringSet;
 		typedef	StringSet::const_iterator		ConstStringSetIterator;
 
-		
+
 		MapInt2String			m_aDirectPropTranslator;	/// translating property id's into names (direct properties of a data source)
 		MapInt2String			m_aIndirectPropTranslator;	/// translating property id's into names (indirect properties of a data source)
 		Window*					m_pParent;
@@ -187,7 +187,7 @@ namespace dbaui
 
 		/// translate the given value into an SfxPoolItem, put this into the given set under the given id
 		void		implTranslateProperty(SfxItemSet& _rSet, sal_Int32  _nId, const ::com::sun::star::uno::Any& _rValue);
-		
+
 		/// translate the given SfxPoolItem into an <type scope="com.sun.star.Any">uno</type>
 		::com::sun::star::uno::Any implTranslateProperty(const SfxPoolItem* _pItem);
 

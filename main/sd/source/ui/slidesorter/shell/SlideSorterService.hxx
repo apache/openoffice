@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -67,7 +67,7 @@ public:
 
 
     // XInitialization
-    
+
     virtual void SAL_CALL initialize (const css::uno::Sequence<css::uno::Any>& rArguments)
         throw (css::uno::Exception, css::uno::RuntimeException);
 
@@ -82,7 +82,7 @@ public:
 
 
     // XWindowListener
-    
+
     virtual void SAL_CALL windowResized (const css::awt::WindowEvent& rEvent)
         throw (css::uno::RuntimeException);
 
@@ -112,48 +112,48 @@ public:
 
 
     // Attributes
-    
+
     virtual css::uno::Reference<css::container::XIndexAccess> SAL_CALL getDocumentSlides (void)
         throw (css::uno::RuntimeException);
-    
+
     virtual void SAL_CALL setDocumentSlides (
         const css::uno::Reference<css::container::XIndexAccess >& rxSlides)
         throw (css::uno::RuntimeException);
-    
+
     virtual sal_Bool SAL_CALL getIsHighlightCurrentSlide (void)
         throw (css::uno::RuntimeException);
-    
+
     virtual void SAL_CALL setIsHighlightCurrentSlide (::sal_Bool bIsHighlightCurrentSlide)
         throw (css::uno::RuntimeException);
-    
+
     virtual sal_Bool SAL_CALL getIsShowSelection (void)
         throw (css::uno::RuntimeException);
-    
+
     virtual void SAL_CALL setIsShowSelection (sal_Bool bIsShowSelection)
         throw (css::uno::RuntimeException);
-    
+
     virtual sal_Bool SAL_CALL getIsCenterSelection (void)
         throw (css::uno::RuntimeException);
-    
+
     virtual void SAL_CALL setIsCenterSelection (sal_Bool bIsCenterSelection)
         throw (css::uno::RuntimeException);
-    
+
     virtual sal_Bool SAL_CALL getIsSuspendPreviewUpdatesDuringFullScreenPresentation (void)
         throw (css::uno::RuntimeException);
-    
+
     virtual void SAL_CALL setIsSuspendPreviewUpdatesDuringFullScreenPresentation (
         sal_Bool bIsSuspendPreviewUpdatesDuringFullScreenPresentation)
         throw (css::uno::RuntimeException);
-    
+
     virtual sal_Bool SAL_CALL getIsOrientationVertical (void)
         throw (css::uno::RuntimeException);
-    
+
     virtual void SAL_CALL setIsOrientationVertical (sal_Bool bIsOrientationVertical)
         throw (css::uno::RuntimeException);
 
     virtual sal_Bool SAL_CALL getIsSmoothScrolling (void)
         throw (css::uno::RuntimeException);
-    
+
     virtual void SAL_CALL setIsSmoothScrolling (sal_Bool bIsOrientationVertical)
         throw (css::uno::RuntimeException);
 
@@ -198,7 +198,7 @@ private:
     css::uno::Reference<css::drawing::framework::XResourceId> mxViewId;
     css::uno::Reference<css::awt::XWindow> mxParentWindow;
     ::boost::scoped_ptr<cppu::IPropertyArrayHelper> mpPropertyArrayHelper;
-    
+
     void Resize (void);
 
     /** This method throws a DisposedException when the object has already been

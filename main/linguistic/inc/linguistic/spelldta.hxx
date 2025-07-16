@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -46,34 +46,34 @@ namespace linguistic
 
 ///////////////////////////////////////////////////////////////////////////
 
-::com::sun::star::uno::Reference< 
-	::com::sun::star::linguistic2::XSpellAlternatives > 
+::com::sun::star::uno::Reference<
+	::com::sun::star::linguistic2::XSpellAlternatives >
 		MergeProposals(
-                ::com::sun::star::uno::Reference< 
+                ::com::sun::star::uno::Reference<
                     ::com::sun::star::linguistic2::XSpellAlternatives > &rxAlt1,
-                ::com::sun::star::uno::Reference< 
+                ::com::sun::star::uno::Reference<
                     ::com::sun::star::linguistic2::XSpellAlternatives > &rxAlt2 );
 
-::com::sun::star::uno::Sequence< ::rtl::OUString > 
+::com::sun::star::uno::Sequence< ::rtl::OUString >
         MergeProposalSeqs(
                 ::com::sun::star::uno::Sequence< ::rtl::OUString > &rAlt1,
                 ::com::sun::star::uno::Sequence< ::rtl::OUString > &rAlt2,
                 sal_Bool bAllowDuplicates );
 
-void    SeqRemoveNegEntries( 
+void    SeqRemoveNegEntries(
                 ::com::sun::star::uno::Sequence< ::rtl::OUString > &rSeq,
-                ::com::sun::star::uno::Reference< 
-                    ::com::sun::star::linguistic2::XDictionaryList > &rxDicList, 
+                ::com::sun::star::uno::Reference<
+                    ::com::sun::star::linguistic2::XDictionaryList > &rxDicList,
                 sal_Int16 nLanguage );
 
-sal_Bool    SeqHasEntry( 
-                const ::com::sun::star::uno::Sequence< ::rtl::OUString > &rSeq, 
+sal_Bool    SeqHasEntry(
+                const ::com::sun::star::uno::Sequence< ::rtl::OUString > &rSeq,
                 const ::rtl::OUString &rTxt);
 
 ///////////////////////////////////////////////////////////////////////////
 
-void SearchSimilarText( const rtl::OUString &rText, sal_Int16 nLanguage, 
-        ::com::sun::star::uno::Reference< 
+void SearchSimilarText( const rtl::OUString &rText, sal_Int16 nLanguage,
+        ::com::sun::star::uno::Reference<
             ::com::sun::star::linguistic2::XDictionaryList > &xDicList,
         std::vector< rtl::OUString > & rDicListProps );
 

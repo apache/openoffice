@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -135,9 +135,9 @@ namespace rptui
 
         /** clear the own properties like function and scope and send a notification
         *
-        * \param _aGuard 
-        * \param _sOldFunctionName 
-        * \param _sOldScope 
+        * \param _aGuard
+        * \param _sOldFunctionName
+        * \param _sOldScope
         * \param _nOldDataFieldType
         */
        void resetOwnProperties(::osl::ResettableMutexGuard& _aGuard,const ::rtl::OUString& _sOldFunctionName,const ::rtl::OUString& _sOldScope,const sal_uInt32 _nOldDataFieldType);
@@ -201,10 +201,10 @@ namespace rptui
 
         /** checks if the given function is a default function we know.
         *
-        * \param _xFunction 
-        * \param _rDataField 
-        * \param _rsDefaultFunctionName 
-        * \return 
+        * \param _xFunction
+        * \param _rDataField
+        * \param _rsDefaultFunctionName
+        * \return
         */
         sal_Bool impl_isDefaultFunction_nothrow( const ::com::sun::star::uno::Reference< ::com::sun::star::report::XFunction>& _xFunction
                                             ,::rtl::OUString& _rDataField
@@ -217,7 +217,7 @@ namespace rptui
 
         /** creates a default functionof the _sFunction for the data field _sDataField
         *   The new function will only be created if it didn't exist.
-        *   
+        *
         * \param _aGuard        Will be cleared, when a new function was created.
         * \param _sFunction     The name of the function.
         * \param _sDataField    The name of the data field.

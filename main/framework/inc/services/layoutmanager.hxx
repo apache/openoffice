@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -109,15 +109,15 @@ namespace framework
     {
         public:
             enum { DOCKINGAREAS_COUNT = 4 };
-            
+
             LayoutManager( const com::sun::star::uno::Reference< com::sun::star::lang::XMultiServiceFactory >& rSMGR );
             virtual ~LayoutManager();
-            
+
             /** declaration of XInterface, XTypeProvider, XServiceInfo */
             FWK_DECLARE_XINTERFACE
             FWK_DECLARE_XTYPEPROVIDER
             DECLARE_XSERVICEINFO
-		    
+
 		    //---------------------------------------------------------------------------------------------------------
             // XLayoutManager
 		    //---------------------------------------------------------------------------------------------------------
@@ -152,7 +152,7 @@ namespace framework
             virtual void SAL_CALL doLayout(  ) throw (::com::sun::star::uno::RuntimeException);
             virtual void SAL_CALL setVisible( sal_Bool bVisible ) throw (::com::sun::star::uno::RuntimeException);
             virtual sal_Bool SAL_CALL isVisible() throw (::com::sun::star::uno::RuntimeException);
-            
+
             //---------------------------------------------------------------------------------------------------------
 		    //	XInplaceLayout
 		    //---------------------------------------------------------------------------------------------------------
@@ -173,7 +173,7 @@ namespace framework
     	    virtual void SAL_CALL windowMoved( const css::awt::WindowEvent& aEvent ) throw( css::uno::RuntimeException );
             virtual void SAL_CALL windowShown( const css::lang::EventObject& aEvent ) throw( css::uno::RuntimeException );
             virtual void SAL_CALL windowHidden( const css::lang::EventObject& aEvent ) throw( css::uno::RuntimeException );
-            
+
             //---------------------------------------------------------------------------------------------------------
 		    //	 XFrameActionListener
 		    //---------------------------------------------------------------------------------------------------------
@@ -184,20 +184,20 @@ namespace framework
 		    //---------------------------------------------------------------------------------------------------------
             using cppu::OPropertySetHelper::disposing;
 	        virtual void SAL_CALL disposing( const css::lang::EventObject& aEvent ) throw( css::uno::RuntimeException );
-        
+
 		    //---------------------------------------------------------------------------------------------------------
             //  XUIConfigurationListener
 		    //---------------------------------------------------------------------------------------------------------
             virtual void SAL_CALL elementInserted( const ::com::sun::star::ui::ConfigurationEvent& Event ) throw (::com::sun::star::uno::RuntimeException);
             virtual void SAL_CALL elementRemoved( const ::com::sun::star::ui::ConfigurationEvent& Event ) throw (::com::sun::star::uno::RuntimeException);
-            virtual void SAL_CALL elementReplaced( const ::com::sun::star::ui::ConfigurationEvent& Event ) throw (::com::sun::star::uno::RuntimeException);        
+            virtual void SAL_CALL elementReplaced( const ::com::sun::star::ui::ConfigurationEvent& Event ) throw (::com::sun::star::uno::RuntimeException);
 
 		    //---------------------------------------------------------------------------------------------------------
             //  XLayoutManagerEventBroadcaster
 		    //---------------------------------------------------------------------------------------------------------
             virtual void SAL_CALL addLayoutManagerEventListener( const ::com::sun::star::uno::Reference< ::com::sun::star::frame::XLayoutManagerListener >& aLayoutManagerListener ) throw (::com::sun::star::uno::RuntimeException);
             virtual void SAL_CALL removeLayoutManagerEventListener( const ::com::sun::star::uno::Reference< ::com::sun::star::frame::XLayoutManagerListener >& aLayoutManagerListener ) throw (::com::sun::star::uno::RuntimeException);
-            
+
             DECL_LINK( MenuBarClose, MenuBar * );
 	        DECL_LINK( WindowEventListener, VclSimpleEvent* );
 
@@ -222,7 +222,7 @@ namespace framework
             void implts_setMenuBarCloser(sal_Bool bCloserState);
             void implts_updateMenuBarClose();
             sal_Bool implts_resetMenuBar();
-            
+
             //---------------------------------------------------------------------------------------------------------
             //  locking
 		    //---------------------------------------------------------------------------------------------------------
@@ -249,17 +249,17 @@ namespace framework
             sal_Int16 implts_getCurrentSymbolsSize();
             sal_Int16 implts_getCurrentSymbolsStyle();
             ::com::sun::star::uno::Reference< ::com::sun::star::ui::XUIElement > implts_createElement( const rtl::OUString& aName );
-            
+
             // layouting methods
             sal_Bool implts_resizeContainerWindow( const ::com::sun::star::awt::Size& rContainerSize, const ::com::sun::star::awt::Point& rComponentPos );
             ::Size  implts_getTopBottomDockingAreaSizes();
             ::Size  implts_getContainerWindowOutputSize();
-            
+
             void implts_setDockingAreaWindowSizes( const css::awt::Rectangle& rBorderSpace );
             ::com::sun::star::awt::Rectangle implts_calcDockingAreaSizes();
             sal_Bool implts_doLayout( sal_Bool bForceRequestBorderSpace, sal_Bool bOuterResize );
             void implts_doLayout_notify( sal_Bool bOuterResize );
-            
+
             // internal methods to control status/progress bar
             ::Size      implts_getStatusBarSize();
             void        implts_destroyStatusBar();
@@ -288,7 +288,7 @@ namespace framework
 
             DECL_LINK( OptionsChanged, void* );
             DECL_LINK( SettingsChanged, void* );
-		    
+
             //---------------------------------------------------------------------------------------------------------
 		    //	OPropertySetHelper
 		    //---------------------------------------------------------------------------------------------------------
@@ -363,7 +363,7 @@ namespace framework
             ToolbarLayoutManager*                                                       m_pToolbarManager;
             css::uno::Reference< ::com::sun::star::ui::XUIConfigurationListener >       m_xToolbarManager;
     };
-    
+
 } // namespace framework
 
 #endif // __FRAMEWORK_SERVICES_LAYOUTMANAGER_HXX_

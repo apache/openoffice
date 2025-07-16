@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -149,7 +149,7 @@ class AutoRecovery  : public  css::lang::XTypeProvider
 
         /** These values are used as flags and represent the current state of a document.
             Every state of the life time of a document has to be recognized here.
-    
+
             @attention  Do not change (means reorganize) already used numbers.
                         There exists some code inside SVX, which uses the same numbers,
                         to analyze such document states.
@@ -171,7 +171,7 @@ class AutoRecovery  : public  css::lang::XTypeProvider
             E_TRY_SAVE = 8,
             E_TRY_LOAD_BACKUP = 16,
             E_TRY_LOAD_ORIGINAL = 32,
-            
+
             /* FINAL STATES */
 
             /// the Auto/Emergency saved document isn't useable any longer
@@ -480,7 +480,7 @@ class AutoRecovery  : public  css::lang::XTypeProvider
         // css.util.XChangesListener
         virtual void SAL_CALL changesOccurred(const css::util::ChangesEvent& aEvent)
             throw(css::uno::RuntimeException);
-            
+
         //---------------------------------------
         // css.util.XModifyListener
         virtual void SAL_CALL modified(const css::lang::EventObject& aEvent)
@@ -569,7 +569,7 @@ class AutoRecovery  : public  css::lang::XTypeProvider
             @threadsafe
           */
         void implts_readAutoSaveConfig();
-        
+
         //---------------------------------------
         // TODO document me
         void implts_flushConfigItem(const AutoRecovery::TDocumentInfo& rInfo                ,
@@ -663,7 +663,7 @@ class AutoRecovery  : public  css::lang::XTypeProvider
         //---------------------------------------
         // TODO document me
         void implts_markDocumentModifiedAgainstLastBackup(const css::uno::Reference< css::frame::XModel >& xDocument);
-        
+
         //---------------------------------------
         // TODO document me
         void implts_updateModifiedState(const css::uno::Reference< css::frame::XModel >& xDocument);
@@ -902,14 +902,14 @@ class AutoRecovery  : public  css::lang::XTypeProvider
         //---------------------------------------
         /** try to make sure that all changed config items (not our used
             config access only) will be flushed back to disc.
-            
+
             E.g. our svtools::ConfigItems() has to be flushed explicitly .-(
-            
+
             Note: This method can't fail. Flushing of config entries is an
                   optional feature. Errors can be ignored.
          */
         void impl_flushALLConfigChanges();
-         
+
         //---------------------------------------
         // TODO document me
         AutoRecovery::EFailureSafeResult implts_copyFile(const ::rtl::OUString& sSource    ,
@@ -984,10 +984,10 @@ class AutoRecovery  : public  css::lang::XTypeProvider
         void impl_forgetProgress(const AutoRecovery::TDocumentInfo&               rInfo    ,
                                        ::comphelper::MediaDescriptor&             rArgs    ,
                                  const css::uno::Reference< css::frame::XFrame >& xNewFrame);
-                                 
+
         //---------------------------------------
         /** try to remove the specified file from disc.
-        
+
             Every URL supported by our UCB component can be used here.
             Further it doesn't matter if the file really exists or not.
             Because removing a non existent file will have the same
@@ -997,16 +997,16 @@ class AutoRecovery  : public  css::lang::XTypeProvider
             feature. If we are not able doing so ... it's not a real problem.
             Ok - users disc place will be smaller then ... but we should produce
             a crash during crash save because we can't delete a temporary file only !
-            
+
             @param  sURL
                     the url of the file, which should be removed.
          */
         static void st_impl_removeFile(const ::rtl::OUString& sURL);
-        
+
         //---------------------------------------
         /** try to remove ".lock" file from disc if office will be terminated
             not using the official way .-)
-            
+
             This method has to be handled "optional". So every error inside
             has to be ignored ! This method CAN'T FAIL ... it can forget something only .-)
          */

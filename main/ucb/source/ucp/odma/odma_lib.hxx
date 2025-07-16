@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -24,7 +24,7 @@
 #define ODMA_LIB_HXX
 
 typedef void	            *LPVOID;
-typedef char				*LPSTR, 
+typedef char				*LPSTR,
 							*PSTR;
 typedef const char			*LPCSTR;
 typedef unsigned long       DWORD;
@@ -39,163 +39,163 @@ typedef DWORD		        *LPDWORD;
 
 namespace odma
 {
-	typedef ODMSTATUS (WINAPI *TODMRegisterApp) (	ODMHANDLE FAR *pOdmHandle, 
+	typedef ODMSTATUS (WINAPI *TODMRegisterApp) (	ODMHANDLE FAR *pOdmHandle,
 													WORD version,
-													LPSTR lpszAppId, 
-													DWORD dwEnvData, 
+													LPSTR lpszAppId,
+													DWORD dwEnvData,
 													LPVOID pReserved);
-	
-	typedef void (WINAPI *TODMUnRegisterApp)(ODMHANDLE odmHandle);
-	
 
-	typedef ODMSTATUS (WINAPI *TODMSelectDoc)(		ODMHANDLE odmHandle, 
+	typedef void (WINAPI *TODMUnRegisterApp)(ODMHANDLE odmHandle);
+
+
+	typedef ODMSTATUS (WINAPI *TODMSelectDoc)(		ODMHANDLE odmHandle,
 													LPSTR lpszDocId,
 													LPDWORD pdwFlags);
-	
+
 
 	typedef ODMSTATUS (WINAPI *TODMOpenDoc)(		ODMHANDLE odmHandle,
 													DWORD flags,
-													LPSTR lpszDocId, 
+													LPSTR lpszDocId,
 													LPSTR lpszDocLocation);
 
-	typedef ODMSTATUS (WINAPI *TODMSaveDoc)(		ODMHANDLE odmHandle, 
+	typedef ODMSTATUS (WINAPI *TODMSaveDoc)(		ODMHANDLE odmHandle,
 													LPSTR lpszDocId,
 													LPSTR lpszNewDocId);
 
-	typedef ODMSTATUS (WINAPI *TODMCloseDoc)(		ODMHANDLE odmHandle, 
+	typedef ODMSTATUS (WINAPI *TODMCloseDoc)(		ODMHANDLE odmHandle,
 													LPSTR lpszDocId,
-													DWORD activeTime, 
-													DWORD pagesPrinted, 
-													LPVOID sessionData, 
+													DWORD activeTime,
+													DWORD pagesPrinted,
+													LPVOID sessionData,
 													WORD dataLen);
 
-	typedef ODMSTATUS (WINAPI *TODMNewDoc)(			ODMHANDLE odmHandle, 
+	typedef ODMSTATUS (WINAPI *TODMNewDoc)(			ODMHANDLE odmHandle,
 													LPSTR lpszDocId,
-													DWORD dwFlags, 
-													LPSTR lpszFormat, 
+													DWORD dwFlags,
+													LPSTR lpszFormat,
 													LPSTR lpszDocLocation);
 
-	typedef ODMSTATUS (WINAPI *TODMSaveAs)(			ODMHANDLE odmHandle, 
+	typedef ODMSTATUS (WINAPI *TODMSaveAs)(			ODMHANDLE odmHandle,
 													LPSTR lpszDocId,
-													LPSTR lpszNewDocId, 
-													LPSTR lpszFormat, 
+													LPSTR lpszNewDocId,
+													LPSTR lpszFormat,
 													ODMSAVEASCALLBACK pcbCallBack,
 													LPVOID pInstanceData);
 
-	typedef ODMSTATUS (WINAPI *TODMActivate)(		ODMHANDLE odmHandle, 
+	typedef ODMSTATUS (WINAPI *TODMActivate)(		ODMHANDLE odmHandle,
 													WORD action,
 													LPSTR lpszDocId);
 
-	typedef ODMSTATUS (WINAPI *TODMGetDocInfo)(		ODMHANDLE odmHandle, 
+	typedef ODMSTATUS (WINAPI *TODMGetDocInfo)(		ODMHANDLE odmHandle,
 													LPSTR lpszDocId,
-													WORD item, 
-													LPSTR lpszData, 
+													WORD item,
+													LPSTR lpszData,
 													WORD dataLen);
 
-	typedef ODMSTATUS (WINAPI *TODMSetDocInfo)(		ODMHANDLE odmHandle, 
+	typedef ODMSTATUS (WINAPI *TODMSetDocInfo)(		ODMHANDLE odmHandle,
 													LPSTR lpszDocId,
-													WORD item, 
+													WORD item,
 													LPSTR lpszData);
 
-	typedef ODMSTATUS (WINAPI *TODMGetDMSInfo)(		ODMHANDLE odmHandle, 
+	typedef ODMSTATUS (WINAPI *TODMGetDMSInfo)(		ODMHANDLE odmHandle,
 													LPSTR lpszDmsId,
-													LPWORD pwVerNo, 
+													LPWORD pwVerNo,
 													LPDWORD pdwExtensions);
 
 	/* Query Enhancements */
 	typedef WORD (WINAPI *TODMGetDMSCount)();
 
-	typedef WORD (WINAPI *TODMGetDMSList)(			LPSTR buffer, 
+	typedef WORD (WINAPI *TODMGetDMSList)(			LPSTR buffer,
 													WORD buffer_size );
 
-	typedef ODMSTATUS (WINAPI *TODMGetDMS)(			LPCSTR lpszAppId, 
+	typedef ODMSTATUS (WINAPI *TODMGetDMS)(			LPCSTR lpszAppId,
 													LPSTR lpszDMSId );
 
-	typedef ODMSTATUS (WINAPI *TODMSetDMS)(			LPCSTR lpszAppId, 
+	typedef ODMSTATUS (WINAPI *TODMSetDMS)(			LPCSTR lpszAppId,
 													LPCSTR lpszDMSId );
 
-	typedef ODMSTATUS (WINAPI *TODMQueryExecute)(	ODMHANDLE odmHandle, 
+	typedef ODMSTATUS (WINAPI *TODMQueryExecute)(	ODMHANDLE odmHandle,
 													LPCSTR lpszQuery,
-													DWORD flags, 
-													LPCSTR lpszDMSList, 
+													DWORD flags,
+													LPCSTR lpszDMSList,
 													LPSTR queryId );
 
-	typedef ODMSTATUS (WINAPI *TODMQueryGetResults)(ODMHANDLE odmHandle, 
+	typedef ODMSTATUS (WINAPI *TODMQueryGetResults)(ODMHANDLE odmHandle,
 													LPCSTR queryId,
-													LPSTR lpszDocId, 
-													LPSTR lpszDocName, 
+													LPSTR lpszDocId,
+													LPSTR lpszDocName,
 													WORD docNameLen,
 													WORD *docCount );
 
-	typedef ODMSTATUS (WINAPI *TODMQueryClose)(		ODMHANDLE odmHandle, 
+	typedef ODMSTATUS (WINAPI *TODMQueryClose)(		ODMHANDLE odmHandle,
 													LPCSTR queryId );
 
 	/* ODMA 2.0 Enhancements */
-	typedef ODMSTATUS (WINAPI *TODMCloseDocEx)(		ODMHANDLE odmHandle, 
+	typedef ODMSTATUS (WINAPI *TODMCloseDocEx)(		ODMHANDLE odmHandle,
 													LPSTR lpszDocId,
-													LPDWORD pdwFlags, 
-													DWORD activeTime, 
+													LPDWORD pdwFlags,
+													DWORD activeTime,
 													DWORD pagesPrinted,
-													LPVOID sessionData, 
+													LPVOID sessionData,
 													WORD dataLen);
 
-	typedef ODMSTATUS (WINAPI *TODMSaveAsEx)(		ODMHANDLE odmHandle, 
+	typedef ODMSTATUS (WINAPI *TODMSaveAsEx)(		ODMHANDLE odmHandle,
 													LPSTR lpszDocId,
-													LPSTR lpszNewDocId, 
-													LPSTR lpszFormat, 
+													LPSTR lpszNewDocId,
+													LPSTR lpszFormat,
 													ODMSAVEASCALLBACK pcbCallBack,
-													LPVOID pInstanceData, 
+													LPVOID pInstanceData,
 													LPDWORD pdwFlags);
 
-	typedef ODMSTATUS (WINAPI *TODMSaveDocEx)(		ODMHANDLE odmHandle, 
+	typedef ODMSTATUS (WINAPI *TODMSaveDocEx)(		ODMHANDLE odmHandle,
 													LPSTR lpszDocId,
-													LPSTR lpszNewDocId,	
+													LPSTR lpszNewDocId,
 													LPDWORD pdwFlags);
 
-	typedef ODMSTATUS (WINAPI *TODMSelectDocEx)(	ODMHANDLE odmHandle, 
+	typedef ODMSTATUS (WINAPI *TODMSelectDocEx)(	ODMHANDLE odmHandle,
 													LPSTR lpszDocIds,
-													LPWORD pwDocIdsLen, 
-													LPWORD pwDocCount, 
+													LPWORD pwDocIdsLen,
+													LPWORD pwDocCount,
 													LPDWORD pdwFlags,
 													LPSTR lpszFormatFilter);
 
-	typedef ODMSTATUS (WINAPI *TODMQueryCapability)(ODMHANDLE odmHandle, 
+	typedef ODMSTATUS (WINAPI *TODMQueryCapability)(ODMHANDLE odmHandle,
 													LPCSTR lpszDmsId,
-													DWORD function, 
-													DWORD item, 
+													DWORD function,
+													DWORD item,
 													DWORD flags);
 
-	typedef ODMSTATUS (WINAPI *TODMSetDocEvent)(	ODMHANDLE odmHandle, 
+	typedef ODMSTATUS (WINAPI *TODMSetDocEvent)(	ODMHANDLE odmHandle,
 													LPSTR lpszDocId,
-													DWORD flags, 
-													DWORD event, 
-													LPVOID lpData, 
+													DWORD flags,
+													DWORD event,
+													LPVOID lpData,
 													DWORD dwDataLen,
 													LPSTR lpszComment);
 
-	typedef ODMSTATUS (WINAPI *TODMGetAlternateContent)(ODMHANDLE odmHandle, 
+	typedef ODMSTATUS (WINAPI *TODMGetAlternateContent)(ODMHANDLE odmHandle,
 													LPSTR lpszDocId,
-													LPDWORD pdwFlags, 
-													LPSTR lpszFormat, 
+													LPDWORD pdwFlags,
+													LPSTR lpszFormat,
 													LPSTR lpszDocLocation);
 
-	typedef ODMSTATUS (WINAPI *TODMSetAlternateContent)(ODMHANDLE odmHandle, 
+	typedef ODMSTATUS (WINAPI *TODMSetAlternateContent)(ODMHANDLE odmHandle,
 													LPSTR lpszDocId,
-													LPDWORD pdwFlags, 
-													LPSTR lpszFormat, 
+													LPDWORD pdwFlags,
+													LPSTR lpszFormat,
 													LPSTR lpszDocLocation);
 
-	typedef ODMSTATUS (WINAPI *TODMGetDocRelation)(	ODMHANDLE odmHandle, 
+	typedef ODMSTATUS (WINAPI *TODMGetDocRelation)(	ODMHANDLE odmHandle,
 													LPSTR lpszDocId,
-													LPDWORD pdwFlags, 
-													LPSTR lpszLinkedId, 
+													LPDWORD pdwFlags,
+													LPSTR lpszLinkedId,
 													LPSTR lpszFormat,
 													LPSTR lpszPreviousId);
 
-	typedef ODMSTATUS (WINAPI *TODMSetDocRelation)(	ODMHANDLE odmHandle, 
+	typedef ODMSTATUS (WINAPI *TODMSetDocRelation)(	ODMHANDLE odmHandle,
 													LPSTR lpszDocId,
-													LPDWORD pdwFlags, 
-													LPSTR lpszLinkedId, 
+													LPDWORD pdwFlags,
+													LPSTR lpszLinkedId,
 													LPSTR lpszFormat,
 													LPSTR lpszPreviousId);
 

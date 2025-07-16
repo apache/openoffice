@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -190,21 +190,21 @@ public:
 
 	sal_Bool			operator==( const ScChartListenerCollection& );
 
-    /** 
-     * Start listening on hide/show change within specified cell range.  A 
-     * single listener may listen on multiple ranges when the caller passes 
-     * the same pointer multiple times with different ranges. 
-     *  
-     * Note that the caller is responsible for managing the life-cycle of the 
-     * listener instance. 
+    /**
+     * Start listening on hide/show change within specified cell range.  A
+     * single listener may listen on multiple ranges when the caller passes
+     * the same pointer multiple times with different ranges.
+     *
+     * Note that the caller is responsible for managing the life-cycle of the
+     * listener instance.
      */
-    void            StartListeningHiddenRange( const ScRange& rRange, 
+    void            StartListeningHiddenRange( const ScRange& rRange,
                                                ScChartHiddenRangeListener* pListener );
 
-    /** 
-     * Remove all ranges associated with passed listener instance from the 
-     * list of hidden range listeners.  This does not delete the passed 
-     * listener instance. 
+    /**
+     * Remove all ranges associated with passed listener instance from the
+     * list of hidden range listeners.  This does not delete the passed
+     * listener instance.
      */
     void            EndListeningHiddenRange( ScChartHiddenRangeListener* pListener );
 };

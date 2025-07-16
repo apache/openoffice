@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -77,12 +77,12 @@ class PropertyChgHelper :
 	// default values
 	sal_Bool	bIsIgnoreControlCharacters;
 	sal_Bool	bIsUseDictionaryList;
-	
+
 	// return values, will be set to default value or current temporary value
 	sal_Bool	bResIsIgnoreControlCharacters;
 	sal_Bool	bResIsUseDictionaryList;
-	
-	
+
+
 	// disallow use of copy-constructor and assignment-operator
 	PropertyChgHelper( const PropertyChgHelper & );
 	PropertyChgHelper & operator = ( const PropertyChgHelper & );
@@ -90,7 +90,7 @@ class PropertyChgHelper :
 protected:
 	virtual void	SetDefaultValues();
 	virtual void	GetCurrentValues();
-	
+
 	::com::sun::star::uno::Sequence< ::rtl::OUString > &
 			GetPropNames()	{ return aPropNames; }
 	::com::sun::star::uno::Reference<
@@ -98,8 +98,8 @@ protected:
 			GetPropSet()	{ return xPropSet; }
 
 	void	AddPropNames( const char *pNewNames[], sal_Int32 nCount );
-	
-	virtual sal_Bool	propertyChange_Impl( 
+
+	virtual sal_Bool	propertyChange_Impl(
 							const ::com::sun::star::beans::PropertyChangeEvent& rEvt );
 
 public:
@@ -112,7 +112,7 @@ public:
 	virtual ~PropertyChgHelper();
 
 	virtual void	SetTmpPropVals( const com::sun::star::beans::PropertyValues &rPropVals );
-	
+
 	// XEventListener
 	virtual void SAL_CALL
 		disposing( const ::com::sun::star::lang::EventObject& rSource )
@@ -170,7 +170,7 @@ public:
 			::com::sun::star::uno::Reference<
 				::com::sun::star::beans::XPropertySet > &rxPropSet );
 	virtual ~PropertyHelper_Thes();
-	
+
 	// XPropertyChangeListener
 	virtual void SAL_CALL
 		propertyChange( const ::com::sun::star::beans::PropertyChangeEvent& rEvt )
@@ -181,7 +181,7 @@ class LNG_DLLPUBLIC PropertyHelper_Thesaurus
 {
 	PropertyHelper_Thes* pInst;
     com::sun::star::uno::Reference< com::sun::star::beans::XPropertyChangeListener >    xPropHelper;
-	
+
 	// disallow use of copy-constructor and assignment-operator
 	PropertyHelper_Thesaurus( const PropertyHelper_Thes & );
 	PropertyHelper_Thesaurus & operator = ( const PropertyHelper_Thes & );
@@ -225,7 +225,7 @@ protected:
 	// PropertyChgHelper
 	virtual void	SetDefaultValues();
 	virtual void	GetCurrentValues();
-	virtual sal_Bool	propertyChange_Impl( 
+	virtual sal_Bool	propertyChange_Impl(
 							const ::com::sun::star::beans::PropertyChangeEvent& rEvt );
 
 public:
@@ -309,7 +309,7 @@ protected:
 	// PropertyChgHelper
 	virtual void	SetDefaultValues();
 	virtual void	GetCurrentValues();
-	virtual sal_Bool	propertyChange_Impl( 
+	virtual sal_Bool	propertyChange_Impl(
 							const ::com::sun::star::beans::PropertyChangeEvent& rEvt );
 
 public:
@@ -336,7 +336,7 @@ class LNG_DLLPUBLIC PropertyHelper_Hyphenation
 {
 	PropertyHelper_Hyphen* pInst;
     com::sun::star::uno::Reference< com::sun::star::beans::XPropertyChangeListener >    xPropHelper;
-	
+
 	// disallow use of copy-constructor and assignment-operator
     PropertyHelper_Hyphenation( const PropertyHelper_Hyphen & );
     PropertyHelper_Hyphenation & operator = ( const PropertyHelper_Hyphen & );

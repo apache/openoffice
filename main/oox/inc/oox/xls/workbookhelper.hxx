@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -116,7 +116,7 @@ typedef ::boost::shared_ptr< WorkbookGlobals > WorkbookGlobalsRef;
     object of type WorkbookGlobals containing global workbook settings,
     buffers, converters, etc. Nearly all classes in this filter implementation
     are derived directly or indirectly from this class.
-    
+
     This class contains just a simple reference to the WorkbookGlobals object
     to prevent circular references, as the WorkbookGlobals object contains a
     lot of objects derived from this class.
@@ -126,7 +126,7 @@ class WorkbookHelper
 public:
     inline /*implicit*/ WorkbookHelper( WorkbookGlobals& rBookGlob ) : mrBookGlob( rBookGlob ) {}
     virtual             ~WorkbookHelper();
-    
+
     static WorkbookGlobalsRef constructGlobals( ExcelFilter& rFilter );
     static WorkbookGlobalsRef constructGlobals( ExcelBiffFilter& rFilter, BiffType eBiff );
 
@@ -142,7 +142,7 @@ public:
     bool                isWorkbookFile() const;
     /** Returns the index of the current Calc sheet, if filter currently processes a sheet. */
     sal_Int16           getCurrentSheetIndex() const;
-    
+
     /** Sets the VBA project storage used to import VBA source code and forms. */
     void                setVbaProjectStorage( const StorageRef& rxVbaPrjStrg );
     /** Sets the index of the current Calc sheet, if filter currently processes a sheet. */

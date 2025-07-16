@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -64,31 +64,31 @@ class WakeUpThread : public ThreadHelpBase
     //-------------------------------------------
     // member
     private:
-    
+
         /** @short  this listener will be notified if this thread
                     waked up. */
         css::uno::WeakReference< css::util::XUpdatable > m_xListener;
-        
+
     //-------------------------------------------
     // interface
     public:
-    
+
         /** @short  Register a new listener on this thread.
-        
+
             @descr  The listener is holded as a weak reference.
                     If the thread detects, that no listener exists ...
                     he will terminate itself.
          */
         WakeUpThread(const css::uno::Reference< css::util::XUpdatable >& xListener);
-        
+
         /** @descr  The thread waits on a condition using a fix timeout value.
                     If the thread wakes up he notify the internal set listener.
                     The listener can use this "timeout" info for it's own purpose.
                     The thread itself will wait on the condition again.
          */
         virtual void SAL_CALL run();
-        
-        virtual void SAL_CALL onTerminated(); 
+
+        virtual void SAL_CALL onTerminated();
 };
 
 } // namespace framework

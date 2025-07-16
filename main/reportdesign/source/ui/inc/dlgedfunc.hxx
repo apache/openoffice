@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -61,13 +61,13 @@ protected:
 	void	ForceScroll( const Point& rPos );
     /** checks that no other object is overlapped.
     *
-    * \param rMEvt 
+    * \param rMEvt
     */
     void    checkMovementAllowed(const MouseEvent& rMEvt);
 
     /** sets the correct mouse pointer when moving a object
     *
-    * \param rMEvt 
+    * \param rMEvt
     * \return <TRUE/> when the pointer was already set.
     */
     bool    setMovementPointer(const MouseEvent& rMEvt);
@@ -101,7 +101,7 @@ public:
 
     /** returns <TRUE/> if the mouse event is over an existing object
     *
-    * \param rMEvt 
+    * \param rMEvt
     * \return <TRUE/> if overlapping, otherwise <FALSE/>
     */
     bool isOverlapping(const MouseEvent& rMEvt);
@@ -117,7 +117,7 @@ protected:
     void colorizeOverlappedObject(SdrObject* _pOverlappedObj);
     void unColorizeOverlappedObj();
 
-    
+
 };
 
 //============================================================================

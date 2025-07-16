@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -46,7 +46,7 @@ class BaseCommandEnv
                                       css::task::XInteractionHandler,
                                       css::ucb::XProgressHandler >
 {
-protected:    
+protected:
     css::uno::Reference< css::uno::XComponentContext > m_xContext;
     css::uno::Reference< css::task::XInteractionHandler> m_forwardHandler;
 
@@ -82,12 +82,12 @@ class TmpRepositoryCommandEnv : public BaseCommandEnv
 public:
     TmpRepositoryCommandEnv();
     TmpRepositoryCommandEnv(css::uno::Reference< css::task::XInteractionHandler> const & handler);
-    
+
 // XInteractionHandler
     virtual void SAL_CALL handle(
         css::uno::Reference<css::task::XInteractionRequest > const & xRequest )
         throw (css::uno::RuntimeException);
-    
+
 };
 
 /** this class is for use in XPackageManager::synchronize.
@@ -105,12 +105,12 @@ public:
         css::uno::Reference< css::task::XInteractionHandler> const & handler,
         bool bSuppressLicense,
         ::rtl::OUString const & repository);
-    
+
 // XInteractionHandler
     virtual void SAL_CALL handle(
         css::uno::Reference<css::task::XInteractionRequest > const & xRequest )
         throw (css::uno::RuntimeException);
-    
+
 };
 
 /** this class is for use in XPackageManager::checkPrerequisites
@@ -123,12 +123,12 @@ class NoLicenseCommandEnv : public BaseCommandEnv
 public:
     NoLicenseCommandEnv(){};
     NoLicenseCommandEnv(css::uno::Reference< css::task::XInteractionHandler> const & handler);
-    
+
 // XInteractionHandler
     virtual void SAL_CALL handle(
         css::uno::Reference<css::task::XInteractionRequest > const & xRequest )
         throw (css::uno::RuntimeException);
-    
+
 };
 
 /* For use in XExtensionManager::addExtension in the call to
@@ -137,7 +137,7 @@ public:
    It remembers if there was a platform or a dependency exception in
    the member m_bException. if there was any other exception then m_bUnknownException
    is set.
-   
+
  */
 class SilentCheckPrerequisitesCommandEnv : public BaseCommandEnv
 {
@@ -151,7 +151,7 @@ public:
     // Set to true if a PlatformException or a DependencyException were handled.
     css::uno::Any m_Exception;
     // Set to true if an unknown exception was handled.
-    css::uno::Any m_UnknownException;    
+    css::uno::Any m_UnknownException;
 };
 
 // class NoExceptionCommandEnv : public BaseCommandEnv
@@ -162,12 +162,12 @@ public:
 //     NoExceptionCommandEnv::NoExceptionCommandEnv(
 //         css::uno::Reference< css::task::XInteractionHandler> const & handler,
 //         css::uno::Type const & type);
-    
+
 // // XInteractionHandler
 //     virtual void SAL_CALL handle(
 //         css::uno::Reference<css::task::XInteractionRequest > const & xRequest )
 //         throw (css::uno::RuntimeException);
-    
+
 // };
 
 }

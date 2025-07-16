@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -56,22 +56,22 @@ namespace comphelper
 	protected:
 
 		// access to context - still waiting to be overwritten
-        virtual ::com::sun::star::uno::Reference< ::com::sun::star::accessibility::XAccessibleContext > 
-            implGetAccessibleContext() 
+        virtual ::com::sun::star::uno::Reference< ::com::sun::star::accessibility::XAccessibleContext >
+            implGetAccessibleContext()
             throw ( ::com::sun::star::uno::RuntimeException ) = 0;
 
         // return if the specified child is visible => watch for special ChildIndexes (ACCESSIBLE_SELECTION_CHILD_xxx)
-	    virtual sal_Bool 
-            implIsSelected( sal_Int32 nAccessibleChildIndex ) 
+	    virtual sal_Bool
+            implIsSelected( sal_Int32 nAccessibleChildIndex )
             throw (::com::sun::star::uno::RuntimeException) = 0;
 
 	    // select the specified child => watch for special ChildIndexes (ACCESSIBLE_SELECTION_CHILD_xxx)
         virtual void
-            implSelect( sal_Int32 nAccessibleChildIndex, sal_Bool bSelect ) 
+            implSelect( sal_Int32 nAccessibleChildIndex, sal_Bool bSelect )
             throw (::com::sun::star::lang::IndexOutOfBoundsException, ::com::sun::star::uno::RuntimeException) = 0;
 
 	protected:
-	    
+
         /** non-virtual versions of the methods which can be implemented using <method>implIsSelected</method> and <method>implSelect</method>
 	    */
 	    void SAL_CALL selectAccessibleChild( sal_Int32 nChildIndex ) throw (::com::sun::star::lang::IndexOutOfBoundsException, ::com::sun::star::uno::RuntimeException);
@@ -97,7 +97,7 @@ namespace comphelper
 			                           public OAccessibleSelectionHelper_Base
 	{
 	protected:
-		
+
         OAccessibleSelectionHelper( );
 
 		/// see the respective base class ctor for an extensive comment on this, please
@@ -107,7 +107,7 @@ namespace comphelper
         virtual ::com::sun::star::uno::Reference< ::com::sun::star::accessibility::XAccessibleContext > implGetAccessibleContext() throw ( ::com::sun::star::uno::RuntimeException );
 
 	public:
-		
+
         // XInterface
 		DECLARE_XINTERFACE( )
 		DECLARE_XTYPEPROVIDER( )

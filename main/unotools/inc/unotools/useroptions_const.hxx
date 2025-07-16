@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -28,7 +28,7 @@
 
 namespace
 {
-    static const ::rtl::OUString s_sData                     = ::rtl::OUString::createFromAscii("org.openoffice.UserProfile/Data");	
+    static const ::rtl::OUString s_sData                     = ::rtl::OUString::createFromAscii("org.openoffice.UserProfile/Data");
 	static const ::rtl::OUString s_so                        = ::rtl::OUString::createFromAscii("o"); // USER_OPT_COMPANY
 	static const ::rtl::OUString s_sgivenname                = ::rtl::OUString::createFromAscii("givenname"); // USER_OPT_FIRSTNAME
 	static const ::rtl::OUString s_ssn                       = ::rtl::OUString::createFromAscii("sn"); // USER_OPT_LASTNAME

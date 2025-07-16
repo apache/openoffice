@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -97,7 +97,7 @@ public:
 
     /// Output text (inside a run).
     virtual void RunText( const String& rText, rtl_TextEncoding eCharSet = RTL_TEXTENCODING_UTF8 );
-    
+
     /// Output text (without markup).
     virtual void RawText( const String& rText, bool bForceUnicode, rtl_TextEncoding eCharSet );
 
@@ -247,7 +247,7 @@ public:
 
     /// Start of the abstract numbering definition instance.
     virtual void StartAbstractNumbering( sal_uInt16 nId );
-    
+
     /// End of the abstract numbering definition instance.
     virtual void EndAbstractNumbering();
 
@@ -298,13 +298,13 @@ private:
 
     /// Output graphic fly frames.
     void FlyFrameGraphic( const SwGrfNode& rGrfNode, const Size& rSize );
-    
+
     void InitTableHelper( ww8::WW8TableNodeInfoInner::Pointer_t pTableTextNodeInfoInner );
 
     void StartTable( ww8::WW8TableNodeInfoInner::Pointer_t pTableTextNodeInfoInner );
 
     void StartTableRow( ww8::WW8TableNodeInfoInner::Pointer_t pTableTextNodeInfoInner );
-    
+
     void StartTableCell( ww8::WW8TableNodeInfoInner::Pointer_t pTableTextNodeInfoInner );
 
     void TableCellProperties( ww8::WW8TableNodeInfoInner::Pointer_t pTableTextNodeInfoInner );
@@ -511,7 +511,7 @@ protected:
 
     virtual void RefField( const SwField& rFld, const String& rRef );
     virtual void HiddenField( const SwField& rFld );
-    virtual void SetField( const SwField& rFld, ww::eField eType, const String& rCmd ); 
+    virtual void SetField( const SwField& rFld, ww::eField eType, const String& rCmd );
     virtual void PostitField( const SwField* pFld );
     virtual bool DropdownField( const SwField* pFld );
 
@@ -583,7 +583,7 @@ private:
 
     bool m_bParagraphOpened;
 
-    // Remember that a column break has to be opened at the 
+    // Remember that a column break has to be opened at the
     // beginning of the next paragraph
     DocxColBreakStatus m_nColBreakStatus;
 
@@ -600,13 +600,13 @@ public:
 
     /// Occasionnaly need to use this serializer from the outside
     ::sax_fastparser::FSHelperPtr GetSerializer( ) { return m_pSerializer; }
-	
+
     /// Do we have any footnotes?
     bool HasFootnotes();
 
     /// Do we have any endnotes?
     bool HasEndnotes();
-    
+
     /// Output the content of the footnotes.xml resp. endnotes.xml
     void FootnotesEndnotes( bool bFootnotes );
 };

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -26,13 +26,13 @@
 #define Min( a, b )		(((a)<(b)) ? (a) : (b) )
 
 /*
-* 
+*
 * Text2UnicodeConverter
 *
 **/
 namespace sax_expatwrap {
-	
-class Text2UnicodeConverter 
+
+class Text2UnicodeConverter
 {
 
 public:
@@ -58,7 +58,7 @@ private:
 * Unicode2TextConverter
 *
 **-----------------------------------------*/
-class Unicode2TextConverter 
+class Unicode2TextConverter
 {
 public:
 	Unicode2TextConverter( rtl_TextEncoding encoding );
@@ -99,15 +99,15 @@ public:
 		{}
 
 	~XMLFile2UTFConverter();
-	
+
 	void setInputStream( ::com::sun::star::uno::Reference< ::com::sun::star::io::XInputStream > &r ) { m_in = r; }
 	void setEncoding( const ::rtl::OString &s ) { m_sEncoding = s; }
 
 
-	
+
 	// @param nMaxToRead The number of chars, that should be read. Note that this is no exact number. There
 	//                   may be returned less or more bytes than ordered.
-	sal_Int32 readAndConvert( ::com::sun::star::uno::Sequence<sal_Int8> &seq , sal_Int32 nMaxToRead ) 
+	sal_Int32 readAndConvert( ::com::sun::star::uno::Sequence<sal_Int8> &seq , sal_Int32 nMaxToRead )
 		throw ( ::com::sun::star::io::IOException,
 				::com::sun::star::io::NotConnectedException ,
 				::com::sun::star::io::BufferSizeExceededException ,
@@ -128,16 +128,16 @@ private:
 
 	// When encoding attribute is within the text (in the first line), it is removed.
 	void removeEncoding( ::com::sun::star::uno::Sequence<sal_Int8> &seq );
-	
+
 	// Initializes decoding depending on m_sEncoding setting
 	void initializeDecoding();
 private:
 	::com::sun::star::uno::Reference< ::com::sun::star::io::XInputStream >  m_in;
-		
+
 	sal_Bool m_bStarted;
 	::rtl::OString m_sEncoding;
 
 	Text2UnicodeConverter *m_pText2Unicode;
-	Unicode2TextConverter *m_pUnicode2Text;	
+	Unicode2TextConverter *m_pUnicode2Text;
 };
 }

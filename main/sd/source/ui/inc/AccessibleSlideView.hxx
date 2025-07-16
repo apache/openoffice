@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -51,7 +51,7 @@ class Window;
 // - AccessibleSlideViewObject -
 // -----------------------------
 
-class AccessibleSlideViewObject : public ::cppu::WeakImplHelper6< 
+class AccessibleSlideViewObject : public ::cppu::WeakImplHelper6<
     ::com::sun::star::lang::XUnoTunnel,
     ::com::sun::star::accessibility::XAccessible,
     ::com::sun::star::accessibility::XAccessibleEventBroadcaster,
@@ -106,10 +106,10 @@ private:
     virtual ::com::sun::star::awt::Size SAL_CALL getSize(  ) throw (::com::sun::star::uno::RuntimeException);
     virtual void SAL_CALL grabFocus(  ) throw (::com::sun::star::uno::RuntimeException);
 
-    virtual sal_Int32 SAL_CALL getForeground (void) 
+    virtual sal_Int32 SAL_CALL getForeground (void)
         throw (::com::sun::star::uno::RuntimeException);
 
-    virtual sal_Int32 SAL_CALL getBackground (void) 
+    virtual sal_Int32 SAL_CALL getBackground (void)
         throw (::com::sun::star::uno::RuntimeException);
 
 	//=====  XServiceInfo  ====================================================
@@ -135,9 +135,9 @@ private:
 public:
 
     static AccessibleSlideViewObject* getImplementation( const ::com::sun::star::uno::Reference< ::com::sun::star::uno::XInterface >& rxData ) throw();
-                        
-public:                 
-                        
+
+public:
+
 					            AccessibleSlideViewObject( const ::com::sun::star::uno::Reference< ::com::sun::star::accessibility::XAccessible >& rxParent, sal_uInt16 nPage, sal_Bool bVisible );
 					            ~AccessibleSlideViewObject();
 
@@ -149,7 +149,7 @@ public:
     void Destroyed (void);
 
     sal_uInt16                  GetPageNum() const { return mnPage; }
-	
+
     void			            SetVisible( sal_Bool bVisible );
 	sal_Bool		            IsVisible() const;
 };
@@ -158,7 +158,7 @@ public:
 // - AccessibleSlideView -
 // -----------------------
 
-class AccessibleSlideView : public ::cppu::WeakImplHelper9< 
+class AccessibleSlideView : public ::cppu::WeakImplHelper9<
     ::com::sun::star::lang::XUnoTunnel,
     ::com::sun::star::accessibility::XAccessible,
     ::com::sun::star::accessibility::XAccessibleEventBroadcaster,
@@ -174,8 +174,8 @@ public:
     static AccessibleSlideView* getImplementation( const ::com::sun::star::uno::Reference< ::com::sun::star::uno::XInterface >& rxData ) throw();
 
     AccessibleSlideView(
-        SdDrawDocument& rDoc, 
-        ::sd::SlideView& rView, 
+        SdDrawDocument& rDoc,
+        ::sd::SlideView& rView,
         ::sd::Window& rParentWindow);
     virtual ~AccessibleSlideView (void);
 
@@ -196,9 +196,9 @@ public:
 	void 			SelectionHasChanged (sal_uInt16 nPage, sal_Bool bSelect );
 	//=====  XFocusListener  =================================================
 	virtual void SAL_CALL focusGained (const ::com::sun::star::awt::FocusEvent& e)
-		throw (::com::sun::star::uno::RuntimeException); 
+		throw (::com::sun::star::uno::RuntimeException);
 	virtual void SAL_CALL focusLost (const ::com::sun::star::awt::FocusEvent& e)
-		throw (::com::sun::star::uno::RuntimeException); 
+		throw (::com::sun::star::uno::RuntimeException);
 	//=====  lang::XEventListener  ============================================
 	virtual void SAL_CALL disposing (const struct com::sun::star::lang::EventObject &) throw (::com::sun::star::uno::RuntimeException);
 	// This method is called from the component helper base class while disposing.
@@ -250,10 +250,10 @@ private:
     virtual ::com::sun::star::awt::Size SAL_CALL getSize(  ) throw (::com::sun::star::uno::RuntimeException);
     virtual void SAL_CALL grabFocus(  ) throw (::com::sun::star::uno::RuntimeException);
 
-    virtual sal_Int32 SAL_CALL getForeground (void) 
+    virtual sal_Int32 SAL_CALL getForeground (void)
         throw (::com::sun::star::uno::RuntimeException);
 
-    virtual sal_Int32 SAL_CALL getBackground (void) 
+    virtual sal_Int32 SAL_CALL getBackground (void)
         throw (::com::sun::star::uno::RuntimeException);
 
     // XAccessibleSelection
@@ -268,7 +268,7 @@ private:
 	//=====  XServiceInfo  ====================================================
 
 	//----------------------------xAttribute----------------------------
-	virtual com::sun::star::uno::Any SAL_CALL getExtendedAttributes() 
+	virtual com::sun::star::uno::Any SAL_CALL getExtendedAttributes()
 		throw (::com::sun::star::lang::IndexOutOfBoundsException, ::com::sun::star::uno::RuntimeException) ;
     /**	Returns an identifier for the implementation of this object.
     */

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -217,7 +217,7 @@ struct FontCollectionEntry
 		sal_Int16				Family;
 		sal_Int16				Pitch;
 		sal_Int16				CharSet;
-    
+
         String                  Original;
         sal_Bool                bIsConverted;
 
@@ -240,7 +240,7 @@ struct FontCollectionEntry
         ~FontCollectionEntry();
 
     private :
-        
+
         FontCollectionEntry() {};
 
         void ImplInit( const String& rName );
@@ -318,7 +318,7 @@ struct PPTExCharSheet
 
 				void	SetStyleSheet( const ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySet > &,
 										FontCollection& rFontCollection, int nLevel );
-				void	Write( SvStream& rSt, PptEscherEx* pEx, sal_uInt16 nLev, sal_Bool bFirst, sal_Bool bSimpleText, 
+				void	Write( SvStream& rSt, PptEscherEx* pEx, sal_uInt16 nLev, sal_Bool bFirst, sal_Bool bSimpleText,
                             const ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySet > & rPagePropSet );
 
 };
@@ -401,7 +401,7 @@ struct EPPTHyperlink
 
 enum PPTExOleObjEntryType
 {
-	NORMAL_OLE_OBJECT, OCX_CONTROL		
+	NORMAL_OLE_OBJECT, OCX_CONTROL
 };
 
 struct PPTExOleObjEntry
@@ -468,7 +468,7 @@ class GroupTable
 	public:
 
 		sal_uInt32				GetCurrentGroupIndex() const { return mnIndex; };
-		sal_Int32				GetCurrentGroupLevel() const { return mnCurrentGroupEntry - 1; };	
+		sal_Int32				GetCurrentGroupLevel() const { return mnCurrentGroupEntry - 1; };
 		::com::sun::star::uno::Reference< ::com::sun::star::container::XIndexAccess > &
 								GetCurrentGroupAccess() const { return mpGroupEntry[  mnCurrentGroupEntry - 1 ]->mXIndexAccess; };
 		sal_uInt32				GetGroupsClosed();
@@ -752,10 +752,10 @@ class PPTWriter : public GroupTable, public PropValue, public PPTExBulletProvide
 
 		FontCollection			maFontCollection;
 		ppt::ExSoundCollection	maSoundCollection;
-	
+
 		PHLayout&			ImplGetLayout( const ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySet >& rXPropSet ) const;
-		void				ImplWriteExtParaHeader( SvMemoryStream& rSt, sal_uInt32 nRef, sal_uInt32 nInstance, sal_uInt32 nSlideId ); 
-		
+		void				ImplWriteExtParaHeader( SvMemoryStream& rSt, sal_uInt32 nRef, sal_uInt32 nInstance, sal_uInt32 nSlideId );
+
 
 		sal_uInt32			ImplProgBinaryTag( SvStream* pOutStrm = NULL );
 		sal_uInt32			ImplProgBinaryTagContainer( SvStream* pOutStrm = NULL, SvMemoryStream* pBinTag = NULL );
@@ -801,7 +801,7 @@ class PPTWriter : public GroupTable, public PropValue, public PPTExBulletProvide
 		sal_Bool			ImplGetEffect( const ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySet > &,
 								::com::sun::star::presentation::AnimationEffect& eEffect,
 								::com::sun::star::presentation::AnimationEffect& eTextEffect,
-								sal_Bool& bHasSound );								
+								sal_Bool& bHasSound );
 		void				ImplWriteObjectEffect( SvStream& rSt,
 								::com::sun::star::presentation::AnimationEffect eEffect,
 								::com::sun::star::presentation::AnimationEffect eTextEffect,

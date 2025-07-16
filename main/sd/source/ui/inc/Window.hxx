@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -52,8 +52,8 @@ class ViewShell;
     member of the <type>OutputDevice</type> base class.  It is calculated to
     be an integer percent value.
 */
-class Window 
-    : public ::Window, 
+class Window
+    : public ::Window,
       public ::DropTargetHelper
 {
 public:
@@ -63,15 +63,15 @@ public:
 	void	SetViewShell (ViewShell* pViewSh);
 
     /** Set the zoom factor to the specified value and center the display
-        area around the zoom center.  
-        @param nZoom 
+        area around the zoom center.
+        @param nZoom
             The zoom factor is given as integral percent value.
     */
 	void	SetZoomIntegral(long nZoom);
 
     /** This internally used method performs the actual adaption of the
-        window's map mode to the specified zoom factor.  
-        @param nZoom 
+        window's map mode to the specified zoom factor.
+        @param nZoom
             The zoom factor is given as integral percent value.
         @return
             When the given zoom factor lies outside the valid range enclosed
@@ -91,7 +91,7 @@ public:
         @param rZoomRect
             The rectangle is expected to be given relative to the upper left
             corner of the window in logical coordinates (100th of mm).
-        @return 
+        @return
             The new zoom factor is returned as integral percent value.
     */
 	long SetZoomRect (const Rectangle& rZoomRect);
@@ -107,8 +107,8 @@ public:
         manually or programatically are set to this value if they are
         smaller.  If the currently used zoom factor is smaller than the minimal zoom
         factor than set the minimal zoom factor as the new current zoom
-        factor.  
-    
+        factor.
+
         <p>This calculation is performed only when the
         <member>bMinZoomAutoCalc</member> is set (to <TRUE/>).</p>
     */
@@ -194,13 +194,13 @@ protected:
     virtual long Notify( NotifyEvent& rNEvt );
 
     /** Create an accessibility object that makes this window accessible.
-        
+
         @return
             The returned reference is empty if an accessible object could
             not be created.
     */
     virtual ::com::sun::star::uno::Reference<
-        ::com::sun::star::accessibility::XAccessible> 
+        ::com::sun::star::accessibility::XAccessible>
         CreateAccessible (void);
 	virtual void SwitchView();
 

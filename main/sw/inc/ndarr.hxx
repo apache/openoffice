@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -137,7 +137,7 @@ public:
 
     typedef ::std::vector<SwNodeRange> NodeRanges_t;
     typedef ::std::vector<NodeRanges_t> TableRanges_t;
-    
+
 	SwNodePtr operator[]( sal_uLong n ) const
 		{ return (SwNodePtr)BigPtrArray::operator[] ( n ); }
 
@@ -249,7 +249,7 @@ public:
 
 	//void UpdateOutlineNode( const SwNode&, sal_uInt8 nOldLevel, sal_uInt8 nNewLevel );//#outline level,removed by zhaojianwei
 		// alle Nodes Updaten - Rule/Format-Aenderung
-    void UpdateOutlineNode(SwNode & rNd); 
+    void UpdateOutlineNode(SwNode & rNd);
 
 		// fuege die Nodes fuer die Tabelle ein
 		// wenn Lines angegeben, erzeuge die Matrix aus Lines & Boxen
@@ -275,11 +275,11 @@ public:
 								SwTableBoxFmt* pBoxFmt,
 								SwTxtFmtColl* pTxtColl,
 								SwUndoTxtToTbl* pUndo = 0 );
-    
+
     SwNodeRange * ExpandRangeForTableBox(const SwNodeRange & rRange);
-    
+
     //create a table from a vector of NodeRanges - API support
-    SwTableNode* TextToTable( const TableRanges_t& rTableNodes, 
+    SwTableNode* TextToTable( const TableRanges_t& rTableNodes,
                                 SwTableFmt* pTblFmt,
                                 SwTableLineFmt* pLineFmt,
                                 SwTableBoxFmt* pBoxFmt,

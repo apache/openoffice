@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -55,7 +55,7 @@ namespace odma
 		ContentProperties()
 		:m_bIsDocument( sal_True )
 		,m_bIsFolder( sal_False )
-		,m_bIsOpen( sal_False ) 
+		,m_bIsOpen( sal_False )
 		,m_bIsReadOnly( sal_False )
 		{}
 
@@ -64,11 +64,11 @@ namespace odma
 	};
 	typedef ::std::binary_function< ::rtl::Reference<ContentProperties>, ::rtl::OUString,bool> TContentPropertiesFunctorBase;
 	/// binary_function Functor object for class ContentProperties return type is bool
-	class ContentPropertiesMemberFunctor : public TContentPropertiesFunctorBase 
+	class ContentPropertiesMemberFunctor : public TContentPropertiesFunctorBase
 	{
 		::std::const_mem_fun_t< ::rtl::OUString,ContentProperties> m_aFunction;
 	public:
-		ContentPropertiesMemberFunctor(const ::std::const_mem_fun_t< ::rtl::OUString,ContentProperties>& _rFunc) 
+		ContentPropertiesMemberFunctor(const ::std::const_mem_fun_t< ::rtl::OUString,ContentProperties>& _rFunc)
 			: m_aFunction(_rFunc){}
 
 		inline bool operator()(const ::rtl::Reference<ContentProperties>& lhs,const ::rtl::OUString& rhs) const

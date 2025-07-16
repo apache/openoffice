@@ -80,7 +80,7 @@ public:
 		TSleep_Pending,
 		TSleep_Active,
 		TSleep_Error,
-		TSleep_Unknown	
+		TSleep_Unknown
 	};
 
 	typedef oslThreadIdentifier TThreadIdentifier;

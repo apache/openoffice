@@ -57,8 +57,8 @@ class SVT_DLLPUBLIC StatusbarController :
                              const rtl::OUString& aCommandURL,
                              unsigned short       nID );
         StatusbarController();
-        virtual ~StatusbarController();        
-        
+        virtual ~StatusbarController();
+
         ::com::sun::star::uno::Reference< ::com::sun::star::frame::XFrame > getFrameInterface() const;
         ::com::sun::star::uno::Reference< ::com::sun::star::lang::XMultiServiceFactory > getServiceManager() const;
         ::com::sun::star::uno::Reference< ::com::sun::star::frame::XLayoutManager > getLayoutManager() const;
@@ -68,7 +68,7 @@ class SVT_DLLPUBLIC StatusbarController :
         void updateStatus();
 
         ::Rectangle getControlRect() const;
-        
+
         // XInterface
 		virtual ::com::sun::star::uno::Any SAL_CALL queryInterface( const ::com::sun::star::uno::Type& aType ) throw (::com::sun::star::uno::RuntimeException);
 		virtual void SAL_CALL acquire() throw ();
@@ -76,18 +76,18 @@ class SVT_DLLPUBLIC StatusbarController :
 
         // XInitialization
         virtual void SAL_CALL initialize( const ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Any >& aArguments ) throw (::com::sun::star::uno::Exception, ::com::sun::star::uno::RuntimeException);
-            
+
         // XUpdatable
         virtual void SAL_CALL update() throw (::com::sun::star::uno::RuntimeException);
-        
+
         // XComponent
         virtual void SAL_CALL dispose() throw (::com::sun::star::uno::RuntimeException);
         virtual void SAL_CALL addEventListener( const ::com::sun::star::uno::Reference< ::com::sun::star::lang::XEventListener >& xListener ) throw (::com::sun::star::uno::RuntimeException);
         virtual void SAL_CALL removeEventListener( const ::com::sun::star::uno::Reference< ::com::sun::star::lang::XEventListener >& aListener ) throw (::com::sun::star::uno::RuntimeException);
-		
+
         // XEventListener
 		virtual void SAL_CALL disposing( const com::sun::star::lang::EventObject& Source ) throw ( ::com::sun::star::uno::RuntimeException );
-		
+
         // XStatusListener
 		virtual void SAL_CALL statusChanged( const ::com::sun::star::frame::FeatureStateEvent& Event ) throw ( ::com::sun::star::uno::RuntimeException );
 
@@ -95,22 +95,22 @@ class SVT_DLLPUBLIC StatusbarController :
         virtual ::sal_Bool SAL_CALL mouseButtonDown( const ::com::sun::star::awt::MouseEvent& aMouseEvent ) throw (::com::sun::star::uno::RuntimeException);
         virtual ::sal_Bool SAL_CALL mouseMove( const ::com::sun::star::awt::MouseEvent& aMouseEvent ) throw (::com::sun::star::uno::RuntimeException);
         virtual ::sal_Bool SAL_CALL mouseButtonUp( const ::com::sun::star::awt::MouseEvent& aMouseEvent ) throw (::com::sun::star::uno::RuntimeException);
-        virtual void SAL_CALL command( const ::com::sun::star::awt::Point& aPos, 
-                                       ::sal_Int32 nCommand, 
-                                       ::sal_Bool bMouseEvent, 
+        virtual void SAL_CALL command( const ::com::sun::star::awt::Point& aPos,
+                                       ::sal_Int32 nCommand,
+                                       ::sal_Bool bMouseEvent,
                                        const ::com::sun::star::uno::Any& aData ) throw (::com::sun::star::uno::RuntimeException);
-        virtual void SAL_CALL paint( const ::com::sun::star::uno::Reference< ::com::sun::star::awt::XGraphics >& xGraphics, 
-                                     const ::com::sun::star::awt::Rectangle& rOutputRectangle, 
+        virtual void SAL_CALL paint( const ::com::sun::star::uno::Reference< ::com::sun::star::awt::XGraphics >& xGraphics,
+                                     const ::com::sun::star::awt::Rectangle& rOutputRectangle,
                                      ::sal_Int32 nStyle ) throw (::com::sun::star::uno::RuntimeException);
         virtual void SAL_CALL click( const ::com::sun::star::awt::Point& aPos ) throw (::com::sun::star::uno::RuntimeException);
         virtual void SAL_CALL doubleClick( const ::com::sun::star::awt::Point& aPos ) throw (::com::sun::star::uno::RuntimeException);
- 
+
     protected:
         struct Listener
         {
             Listener( const ::com::sun::star::util::URL& rURL, const ::com::sun::star::uno::Reference< ::com::sun::star::frame::XDispatch >& rDispatch ) :
                 aURL( rURL ), xDispatch( rDispatch ) {}
-            
+
             ::com::sun::star::util::URL aURL;
             ::com::sun::star::uno::Reference< ::com::sun::star::frame::XDispatch > xDispatch;
         };
@@ -119,19 +119,19 @@ class SVT_DLLPUBLIC StatusbarController :
 				                 com::sun::star::uno::Reference< com::sun::star::frame::XDispatch >,
                                  ::rtl::OUStringHash,
 								 ::std::equal_to< ::rtl::OUString > > URLToDispatchMap;
-        
+
         // methods to support status forwarder, known by the old sfx2 toolbox controller implementation
         void addStatusListener( const rtl::OUString& aCommandURL );
         void removeStatusListener( const rtl::OUString& aCommandURL );
         void bindListener();
         void unbindListener();
         sal_Bool isBound() const;
-        
+
         // execute methods
         // execute bound status bar controller command/execute various commands
         void execute( const ::com::sun::star::uno::Sequence< ::com::sun::star::beans::PropertyValue >& aArgs );
         void execute( const rtl::OUString& aCommand, const ::com::sun::star::uno::Sequence< ::com::sun::star::beans::PropertyValue >& aArgs );
-        
+
         sal_Bool                                                                            m_bInitialized : 1,
                                                                                             m_bDisposed : 1;
         unsigned short                                                                      m_nID;

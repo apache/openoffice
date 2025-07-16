@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -113,7 +113,7 @@ protected:
 	virtual void 	StartDrag( sal_Int8 nAction, const Point& rPosPixel );
 	virtual void 	DragFinished( sal_Int8 );
 	virtual sal_Int8 AcceptDrop( const AcceptDropEvent& rEvt );
-	
+
 	virtual sal_Int8 ExecuteDrop( const ExecuteDropEvent& rEvt );
 
 	sal_Bool 		FillTransferData( TransferDataContainer& rTransfer,
@@ -137,7 +137,7 @@ protected:
 	virtual void    MouseButtonDown( const MouseEvent& rMEvt );
 
 	void			EditEntry( SvLBoxEntry* pEntry, sal_uInt8 nMode );
-	
+
 	void			GotoContent(SwContent* pCnt);
 	static void 	SetInDrag(sal_Bool bSet) {bIsInDrag = bSet;}
 
@@ -175,13 +175,13 @@ public:
 
 	sal_uInt8 			GetOutlineLevel()const {return nOutlineLevel;}
 	void			SetOutlineLevel(sal_uInt8 nSet);
-	
+
 	sal_Bool			Expand( SvLBoxEntry* pParent );
-	
+
 	sal_Bool			Collapse( SvLBoxEntry* pParent );
-	
+
 	void 			ExecCommand(sal_uInt16 nCmd, sal_Bool bModifier);
-	
+
 	void			ShowTree();
 	void			HideTree();
 
@@ -200,7 +200,7 @@ public:
 	virtual void	RequestingChilds( SvLBoxEntry* pParent );
 	virtual void    GetFocus();
 	virtual void    KeyInput(const KeyEvent& rKEvt);
-	
+
 	virtual sal_Bool	Select( SvLBoxEntry* pEntry, sal_Bool bSelect=sal_True );
 	virtual sal_Int32  GetEntryRealChildsNum( SvLBoxEntry* pEntry ) const;
 };
@@ -261,9 +261,9 @@ private:
 protected:
 
 	virtual sal_Int8 AcceptDrop( const AcceptDropEvent& rEvt );
-	
+
 	virtual sal_Int8 ExecuteDrop( const ExecuteDropEvent& rEvt );
-	
+
     virtual void    DataChanged( const DataChangedEvent& rDCEvt );
 
 	virtual void	RequestHelp( const HelpEvent& rHEvt );
@@ -322,14 +322,14 @@ public:
 	void 				InsertRegion( const SwGlblDocContent* pCont,
 										const String* pFileName = 0 );
 	void 				EditContent(const SwGlblDocContent* pCont );
-	
+
 	void				ShowTree();
 	void				HideTree();
 
 	void 				ExecCommand(sal_uInt16 nCmd);
 
 	void 				Display(sal_Bool bOnlyUpdateUserData = sal_False);
-	
+
 	sal_Bool 				Update(sal_Bool bHard);
 };
 

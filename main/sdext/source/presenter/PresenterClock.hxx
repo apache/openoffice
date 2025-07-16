@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -88,7 +88,7 @@ public:
 
     // lang::XEventListener
 
-    virtual void SAL_CALL 
+    virtual void SAL_CALL
         disposing (const css::lang::EventObject& rEventObject)
         throw (css::uno::RuntimeException);
 
@@ -100,7 +100,7 @@ public:
 
 
     // XWindowListener
-    
+
     virtual void SAL_CALL windowResized (const css::awt::WindowEvent& rEvent)
         throw (css::uno::RuntimeException);
 
@@ -121,13 +121,13 @@ public:
 
     virtual void SAL_CALL mouseReleased (const css::awt::MouseEvent& rEvent)
         throw (css::uno::RuntimeException);
-    
+
     virtual void SAL_CALL mouseEntered (const css::awt::MouseEvent& rEvent)
         throw (css::uno::RuntimeException);
-    
+
     virtual void SAL_CALL mouseExited (const css::awt::MouseEvent& rEvent)
         throw (css::uno::RuntimeException);
-    
+
 
     // XResourceId
 
@@ -153,7 +153,7 @@ private:
     class Timer;
     Timer* mpTimer;
     ::boost::scoped_ptr<Painter> mpClockPainter;
-    /** 
+    /**
         This is used for debugging to show one clock atop another to compare
         the output of the painters.
     */

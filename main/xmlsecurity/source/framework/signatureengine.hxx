@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -36,7 +36,7 @@
 #include <com/sun/star/xml/crypto/XXMLSignature.hpp>
 #include <com/sun/star/xml/crypto/XUriBinding.hpp>
 #include <com/sun/star/io/XInputStream.hpp>
-                                       
+
 #include <cppuhelper/implbase2.hxx>
 
 #include "securityengine.hxx"
@@ -48,7 +48,7 @@
 
 class SignatureEngine : public cppu::ImplInheritanceHelper2
 <
-	SecurityEngine, 
+	SecurityEngine,
 	com::sun::star::xml::crypto::sax::XReferenceCollector,
 	com::sun::star::xml::crypto::XUriBinding
 >
@@ -69,14 +69,14 @@ class SignatureEngine : public cppu::ImplInheritanceHelper2
  ******************************************************************************/
 {
 protected:
-	
+
 	/*
 	 * the Signature bridge component, which performs signature generation
 	 * and verification based on xmlsec library.
 	 */
-	com::sun::star::uno::Reference< 
+	com::sun::star::uno::Reference<
 		com::sun::star::xml::crypto::XXMLSignature > m_xXMLSignature;
-		
+
 	/*
 	 * a collection of ElementCollector's ids. Each ElementCollector
 	 * represents one element signed by this signature.
@@ -101,27 +101,27 @@ protected:
 protected:
 	SignatureEngine( );
 	virtual ~SignatureEngine() {};
-	
-	virtual void tryToPerform( ) 
+
+	virtual void tryToPerform( )
 		throw (com::sun::star::uno::Exception, com::sun::star::uno::RuntimeException);
-	virtual void clearUp( ) const;	
+	virtual void clearUp( ) const;
 	virtual bool checkReady() const;
-	
+
 	/*
 	 * starts the main function. This method will be implemented by any sub-class.
 	 * For a SignatureCreator, it performs signing operation;
 	 * for a SignatureVerifier, verification operation is performed.
 	 */
-	virtual void startEngine( const com::sun::star::uno::Reference< 
+	virtual void startEngine( const com::sun::star::uno::Reference<
                               com::sun::star::xml::crypto::XXMLSignatureTemplate >&)
 		throw (com::sun::star::uno::Exception, com::sun::star::uno::RuntimeException)
 		{};
-	
+
 public:
 	/* XReferenceCollector */
 	virtual void SAL_CALL setReferenceCount( sal_Int32 count )
 		throw (com::sun::star::uno::Exception, com::sun::star::uno::RuntimeException);
-    		
+
 	virtual void SAL_CALL setReferenceId( sal_Int32 id )
 		throw (com::sun::star::uno::Exception, com::sun::star::uno::RuntimeException);
 

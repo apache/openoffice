@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -55,13 +55,13 @@ public:
     virtual ::rtl::OUString SAL_CALL getMediaSubtype(  ) throw(::com::sun::star::uno::RuntimeException);
     virtual ::rtl::OUString SAL_CALL getFullMediaType(  ) throw(::com::sun::star::uno::RuntimeException);
 
-    virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getParameters(  ) 
+    virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getParameters(  )
 		throw(::com::sun::star::uno::RuntimeException);
 
-    virtual sal_Bool SAL_CALL hasParameter( const ::rtl::OUString& aName ) 
+    virtual sal_Bool SAL_CALL hasParameter( const ::rtl::OUString& aName )
 		throw(::com::sun::star::uno::RuntimeException);
-    
-	virtual ::rtl::OUString SAL_CALL getParameterValue( const ::rtl::OUString& aName ) 
+
+	virtual ::rtl::OUString SAL_CALL getParameterValue( const ::rtl::OUString& aName )
 		throw(::com::sun::star::container::NoSuchElementException, ::com::sun::star::uno::RuntimeException);
 
 private:
@@ -78,7 +78,7 @@ private:
 	rtl::OUString SAL_CALL nonquotedPValue( );
 	void SAL_CALL comment( void );
 	sal_Bool SAL_CALL isInRange( const rtl::OUString& aChr, const rtl::OUString& aRange );
-	
+
 private:
 	::osl::Mutex							 m_aMutex;
 	rtl::OUString							 m_MediaType;

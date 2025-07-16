@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 #ifndef INCLUDED_SVGIO_SVGREADER_SVGTOOLS_HXX
@@ -77,14 +77,14 @@ namespace svgio
         {
             Unit_em = 0,    // relative to current font size
             Unit_ex,        // relative to current x-height
-            
+
             Unit_px,        // 'user unit'
             Unit_pt,        // points, 1.25 px
             Unit_pc,        // 15.0 px
             Unit_cm,        // 35.43307 px
             Unit_mm,        // 3.543307 px
             Unit_in,        // 90 px
-            
+
             Unit_percent    // relative to range
         };
 
@@ -204,11 +204,11 @@ namespace svgio
         bool readAngle(const rtl::OUString& rCandidate, sal_Int32& nPos, double& fAngle, const sal_Int32 nLen);
         sal_Int32 read_hex(const sal_Unicode& rChar);
         bool match_colorKeyword(
-            basegfx::BColor& rColor, 
+            basegfx::BColor& rColor,
             const rtl::OUString& rName,
             bool bCaseIndependent);
         bool read_color(
-            const rtl::OUString& rCandidate, 
+            const rtl::OUString& rCandidate,
             basegfx::BColor& rColor,
             bool bCaseIndependent);
         basegfx::B2DRange readViewBox(const rtl::OUString& rCandidate, InfoProvider& rInfoProvider);
@@ -216,9 +216,9 @@ namespace svgio
         bool readSingleNumber(const rtl::OUString& rCandidate, SvgNumber& aNum);
         bool readLocalUrl(const rtl::OUString& rCandidate, rtl::OUString& rURL);
         bool readSvgPaint(
-            const rtl::OUString& rCandidate, 
-            SvgPaint& rSvgPaint, 
-            rtl::OUString& rURL, 
+            const rtl::OUString& rCandidate,
+            SvgPaint& rSvgPaint,
+            rtl::OUString& rURL,
             bool bCaseIndependent);
 
         bool readSvgNumberVector(const rtl::OUString& rCandidate, SvgNumberVector& rSvgNumberVector);

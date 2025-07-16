@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -45,7 +45,7 @@ class SvxSwPosSizeTabPage : public SfxTabPage
     FixedText   m_aHeightFT;
     MetricField m_aHeightMF;
     CheckBox    m_aKeepRatioCB;
-    
+
     FixedLine   m_aSeparatorFL;
 
     FixedLine   m_aAnchorFL;
@@ -66,7 +66,7 @@ class SvxSwPosSizeTabPage : public SfxTabPage
     MetricField m_aHoriByMF;
     FixedText   m_aHoriToFT;
     ListBox     m_aHoriToLB;
-    
+
     CheckBox    m_aHoriMirrorCB;
 
     FixedText   m_aVertFT;
@@ -77,16 +77,16 @@ class SvxSwPosSizeTabPage : public SfxTabPage
     ListBox     m_aVertToLB;
 
     CheckBox    m_aFollowCB;
-    
+
     SvxSwFrameExample m_aExampleWN;
-    
+
     Link        m_aValidateLink;
-    
+
     //'string provider'
     SvxSwFramePosString m_aFramePosString;
-    
+
     Rectangle           m_aRect; //size of all selected objects
-    Rectangle           m_aWorkArea; 
+    Rectangle           m_aWorkArea;
     Point               m_aAnchorPos;
 
     FrmMap* m_pVMap;
@@ -98,7 +98,7 @@ class SvxSwPosSizeTabPage : public SfxTabPage
     short   m_nOldHRel;
     short   m_nOldV;
     short   m_nOldVRel;
-    
+
     double  m_fWidthHeightRatio; //width-to-height ratio to support the KeepRatio button
     sal_uInt16  m_nHtmlMode;
     bool    m_bHtmlMode;
@@ -110,7 +110,7 @@ class SvxSwPosSizeTabPage : public SfxTabPage
     bool    m_bIsInRightToLeft;
 
 
-    
+
     DECL_LINK( RangeModifyHdl, Edit * );
     DECL_LINK( AnchorTypeHdl, RadioButton * );
     DECL_LINK( PosHdl, ListBox * );
@@ -118,7 +118,7 @@ class SvxSwPosSizeTabPage : public SfxTabPage
     DECL_LINK( MirrorHdl, CheckBox * );
     DECL_LINK( ModifyHdl, Edit * );
     DECL_LINK( ProtectHdl, TriStateBox *);
-    
+
     void            InitPos(short nAnchorType, sal_uInt16 nH, sal_uInt16 nHRel,
                             sal_uInt16 nV,  sal_uInt16 nVRel,
                             long   nX,  long   nY);
@@ -131,10 +131,10 @@ class SvxSwPosSizeTabPage : public SfxTabPage
 
     void            UpdateExample();
 
-public:     
+public:
     SvxSwPosSizeTabPage( Window* pParent, const SfxItemSet& rInAttrs  );
     ~SvxSwPosSizeTabPage();
-    
+
     static SfxTabPage* Create( Window*, const SfxItemSet& );
     static sal_uInt16*     GetRanges();
 
@@ -144,9 +144,9 @@ public:
     virtual int  DeactivatePage( SfxItemSet* pSet );
 
     void    EnableAnchorTypes(sal_uInt16 nAnchorEnable);
-    
+
     void SetValidateFramePosLink( const Link& rLink )
-            {m_aValidateLink = rLink;}        
+            {m_aValidateLink = rLink;}
 
     void SetView( const SdrView* pSdrView );
 };

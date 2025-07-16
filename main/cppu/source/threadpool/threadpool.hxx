@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -45,7 +45,7 @@ namespace cppu_threadpool {
 
 	struct HashThreadId
 	{
-		sal_Int32 operator () ( const ::rtl::ByteSequence &a  )  const 
+		sal_Int32 operator () ( const ::rtl::ByteSequence &a  )  const
 			{
 				if( a.getLength() >= 4 )
 				{
@@ -57,7 +57,7 @@ namespace cppu_threadpool {
 
 	typedef	::std::hash_map
 	<
-	    ByteSequence, // ThreadID 
+	    ByteSequence, // ThreadID
 		::std::pair < JobQueue * , JobQueue * >,
 		HashThreadId,
 		EqualThreadId
@@ -65,23 +65,23 @@ namespace cppu_threadpool {
 
 	typedef	::std::list	< sal_Int64 > DisposedCallerList;
 
-	
+
 	struct WaitingThread
 	{
 		oslCondition condition;
 		ORequestThread *thread;
 	};
-	
+
 	typedef	::std::list	< struct ::cppu_threadpool::WaitingThread * > WaitingThreadList;
 
 	class DisposedCallerAdmin;
 	typedef boost::shared_ptr<DisposedCallerAdmin> DisposedCallerAdminHolder;
-	
+
 	class DisposedCallerAdmin
 	{
 	public:
 		~DisposedCallerAdmin();
-		
+
 		static DisposedCallerAdminHolder getInstance();
 
 		void dispose( sal_Int64 nDisposeId );
@@ -102,10 +102,10 @@ namespace cppu_threadpool {
 		ThreadPool();
 		~ThreadPool();
 		static ThreadPoolHolder getInstance();
-		
+
 		void dispose( sal_Int64 nDisposeId );
 		void stopDisposing( sal_Int64 nDisposeId );
-		
+
 		void addJob( const ByteSequence &aThreadId,
 					 sal_Bool bAsynchron,
 					 void *pThreadSpecificData,
@@ -118,15 +118,15 @@ namespace cppu_threadpool {
 		 * @return true, if queue could be successfully revoked.
 		 ********/
 		sal_Bool revokeQueue( const ByteSequence & aThreadId , sal_Bool bAsynchron );
-		
+
 		void waitInPool( ORequestThread *pThread );
 	private:
 		void createThread( JobQueue *pQueue, const ByteSequence &aThreadId,	sal_Bool bAsynchron);
 
-		
+
 		ThreadIdHashMap m_mapQueue;
 		::osl::Mutex m_mutex;
-		
+
 		::osl::Mutex m_mutexWaitingThreadList;
 		WaitingThreadList m_lstThreads;
 

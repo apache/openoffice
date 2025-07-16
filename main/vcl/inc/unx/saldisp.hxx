@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -146,7 +146,7 @@ public:
 	inline	int				GetClass() const { return c_class; }
 	inline	int				GetDepth() const { return depth; }
 	inline  SalRGB			GetMode() const { return eRGBMode_; }
-	
+
 			Pixel			GetTCPixel( SalColor nColor ) const;
 			SalColor		GetTCColor( Pixel nPixel ) const;
             sal_Bool			Convert( int &n0, int &n1, int &n2, int &n3 ); // 32bit
@@ -217,7 +217,7 @@ protected:
     fd_set	        aReadFDS_;
     fd_set	        aExceptionFDS_;
 
-    
+
     struct XErrorStackEntry
     {
         bool            m_bIgnore;
@@ -250,11 +250,11 @@ public:
     void PopXErrorLevel();
 
 	virtual void			StartTimer( sal_uLong nMS );
-	virtual void			StopTimer();    
+	virtual void			StopTimer();
 
     bool            CheckTimeout( bool bExecuteTimers = true );
 
-    void			setHaveSystemChildFrame() 
+    void			setHaveSystemChildFrame()
     { m_bHaveSystemChildFrames = true; }
     bool            getHaveSystemChildFrame() const
     { return m_bHaveSystemChildFrames; }
@@ -326,14 +326,14 @@ public:
         void*			m_pData;
         sal_uInt16			m_nEvent;
 
-        SalUserEvent( SalFrame* pFrame, void* pData, sal_uInt16 nEvent = SALEVENT_USEREVENT ) 
+        SalUserEvent( SalFrame* pFrame, void* pData, sal_uInt16 nEvent = SALEVENT_USEREVENT )
                 : m_pFrame( pFrame ),
                   m_pData( pData ),
                   m_nEvent( nEvent )
         {}
     };
 
-protected:	
+protected:
     SalXLib		   *pXLib_;
     SalI18N_InputMethod			*mpInputMethod;
     SalI18N_KeyboardExtension	*mpKbdExtension;
@@ -351,7 +351,7 @@ protected:
     srv_vendor_t	meServerVendor;
     SalWM			eWindowManager_;
     sal_uLong			nProperties_;		// PROPERTY_SUPPORT, BUG, FEATURE
-    sal_Bool			bLocal_;			// Server==Client? Init 
+    sal_Bool			bLocal_;			// Server==Client? Init
     // in SalDisplay::IsLocal()
     sal_Bool			mbLocalIsValid;		// bLocal_ is valid ?
     // until x bytes
@@ -378,9 +378,9 @@ protected:
     std::vector< Rectangle > m_aXineramaScreens;
     std::list<SalFrame*> m_aFrames;
     std::list<SalObject*> m_aSalObjects;
-    
+
     bool            m_bUseRandRWrapper; // don't use randr on gtk, use gdk signals there
-    
+
     mutable XLIB_Time  m_nLastUserEventTime; // mutable because changed on first access
 
     virtual long	Dispatch( XEvent *pEvent ) = 0;
@@ -404,7 +404,7 @@ public:
 
     virtual void			registerFrame( SalFrame* pFrame );
     virtual void			deregisterFrame( SalFrame* pFrame );
-    void					setHaveSystemChildFrame() const 
+    void					setHaveSystemChildFrame() const
     { pXLib_->setHaveSystemChildFrame(); }
     bool                    getHaveSystemChildFrame() const
     { return pXLib_->getHaveSystemChildFrame(); }
@@ -473,7 +473,7 @@ public:
 	sal_uLong			GetProperties() const { return nProperties_; }
 	sal_uLong			GetMaxRequestSize() const { return nMaxRequestSize_; }
     XLIB_Time       GetLastUserEventTime( bool bAlwaysReget = false ) const;
-    
+
     bool            XIfEventWithTimeout( XEvent*, XPointer, X_if_predicate, long i_nTimeout = 1000 ) const;
 
 	sal_Bool			MouseCaptured( const SalFrame *pFrameData ) const
@@ -484,10 +484,10 @@ public:
 
 	SalI18N_InputMethod*			GetInputMethod()  const { return mpInputMethod;  }
 	SalI18N_KeyboardExtension* 	GetKbdExtension() const { return mpKbdExtension; }
-	void 			SetInputMethod( SalI18N_InputMethod *pInputMethod ) 
+	void 			SetInputMethod( SalI18N_InputMethod *pInputMethod )
     { mpInputMethod = pInputMethod; }
 	void			SetKbdExtension(SalI18N_KeyboardExtension *pKbdExtension)
-    { mpKbdExtension = pKbdExtension; } 
+    { mpKbdExtension = pKbdExtension; }
 	const char*	GetKeyboardName( sal_Bool bRefresh = sal_False );
     ::vcl_sal::WMAdaptor* getWMAdaptor() const { return m_pWMAdaptor; }
     DtIntegrator* getDtIntegrator() const { return m_pDtIntegrator; }

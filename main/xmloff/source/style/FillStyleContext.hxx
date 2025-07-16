@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -40,7 +40,7 @@ private:
 public:
 	TYPEINFO();
 
-	XMLGradientStyleContext( SvXMLImport& rImport,  sal_uInt16 nPrfx,  const rtl::OUString& rLName, 
+	XMLGradientStyleContext( SvXMLImport& rImport,  sal_uInt16 nPrfx,  const rtl::OUString& rLName,
 		                   const com::sun::star::uno::Reference< com::sun::star::xml::sax::XAttributeList >& xAttrList );
 	virtual ~XMLGradientStyleContext();
 
@@ -61,7 +61,7 @@ private:
 public:
 	TYPEINFO();
 
-	XMLHatchStyleContext( SvXMLImport& rImport,  sal_uInt16 nPrfx,  const rtl::OUString& rLName, 
+	XMLHatchStyleContext( SvXMLImport& rImport,  sal_uInt16 nPrfx,  const rtl::OUString& rLName,
 		                   const com::sun::star::uno::Reference< com::sun::star::xml::sax::XAttributeList >& xAttrList );
 	virtual ~XMLHatchStyleContext();
 
@@ -83,7 +83,7 @@ private:
 public:
 	TYPEINFO();
 
-	XMLBitmapStyleContext( SvXMLImport& rImport,  sal_uInt16 nPrfx,  const rtl::OUString& rLName, 
+	XMLBitmapStyleContext( SvXMLImport& rImport,  sal_uInt16 nPrfx,  const rtl::OUString& rLName,
 		                   const com::sun::star::uno::Reference< com::sun::star::xml::sax::XAttributeList >& xAttrList );
 	virtual ~XMLBitmapStyleContext();
 
@@ -109,7 +109,7 @@ private:
 public:
 	TYPEINFO();
 
-	XMLTransGradientStyleContext( SvXMLImport& rImport,  sal_uInt16 nPrfx,  const rtl::OUString& rLName, 
+	XMLTransGradientStyleContext( SvXMLImport& rImport,  sal_uInt16 nPrfx,  const rtl::OUString& rLName,
 		                   const com::sun::star::uno::Reference< com::sun::star::xml::sax::XAttributeList >& xAttrList );
 	virtual ~XMLTransGradientStyleContext();
 
@@ -130,7 +130,7 @@ private:
 public:
 	TYPEINFO();
 
-	XMLMarkerStyleContext( SvXMLImport& rImport,  sal_uInt16 nPrfx,  const rtl::OUString& rLName, 
+	XMLMarkerStyleContext( SvXMLImport& rImport,  sal_uInt16 nPrfx,  const rtl::OUString& rLName,
 		                   const com::sun::star::uno::Reference< com::sun::star::xml::sax::XAttributeList >& xAttrList );
 	virtual ~XMLMarkerStyleContext();
 
@@ -151,7 +151,7 @@ private:
 public:
 	TYPEINFO();
 
-	XMLDashStyleContext( SvXMLImport& rImport,  sal_uInt16 nPrfx,  const rtl::OUString& rLName, 
+	XMLDashStyleContext( SvXMLImport& rImport,  sal_uInt16 nPrfx,  const rtl::OUString& rLName,
 		                   const com::sun::star::uno::Reference< com::sun::star::xml::sax::XAttributeList >& xAttrList );
 	virtual ~XMLDashStyleContext();
 

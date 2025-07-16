@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -49,28 +49,28 @@ typedef cppu::WeakComponentImplHelper2<css::beans::XPropertySet,
 
 struct LdapProfileMutexHolder { osl::Mutex mMutex; };
 /**
-  Implements the PlatformBackend service, a specialization of the 
-  XPropertySet service for retrieving LDAP user profile 
+  Implements the PlatformBackend service, a specialization of the
+  XPropertySet service for retrieving LDAP user profile
   configuration settings from a LDAP repository.
   */
-class LdapUserProfileBe : private LdapProfileMutexHolder, public BackendBase 
+class LdapUserProfileBe : private LdapProfileMutexHolder, public BackendBase
 {
     public :
-		
+
         LdapUserProfileBe(const uno::Reference<uno::XComponentContext>& xContext);
 		~LdapUserProfileBe(void) ;
 
         // XServiceInfo
-        virtual rtl::OUString SAL_CALL 
-            getImplementationName(  ) 
-                throw (uno::RuntimeException) ;
-        
-        virtual sal_Bool SAL_CALL 
-            supportsService( const rtl::OUString& aServiceName ) 
+        virtual rtl::OUString SAL_CALL
+            getImplementationName(  )
                 throw (uno::RuntimeException) ;
 
-        virtual uno::Sequence<rtl::OUString> SAL_CALL 
-            getSupportedServiceNames(  ) 
+        virtual sal_Bool SAL_CALL
+            supportsService( const rtl::OUString& aServiceName )
+                throw (uno::RuntimeException) ;
+
+        virtual uno::Sequence<rtl::OUString> SAL_CALL
+            getSupportedServiceNames(  )
                 throw (uno::RuntimeException) ;
 
         // XPropertySet
@@ -133,7 +133,7 @@ class LdapUserProfileBe : private LdapProfileMutexHolder, public BackendBase
           Provides the supported services names
 		  @return   service names
           */
-        static uno::Sequence<rtl::OUString> SAL_CALL 
+        static uno::Sequence<rtl::OUString> SAL_CALL
 			getLdapUserProfileBeServiceNames(void) ;
 
     private:
@@ -141,7 +141,7 @@ class LdapUserProfileBe : private LdapProfileMutexHolder, public BackendBase
         bool readLdapConfiguration(
             uno::Reference<lang::XMultiServiceFactory> const & factory,
             LdapDefinition * definition, rtl::OUString * loggedOnUser);
-		
+
         bool getLdapStringParam(uno::Reference<container::XNameAccess>& xAccess,
 								const rtl::OUString& aLdapSetting,
 								rtl::OString& aServerParameter);

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -55,9 +55,9 @@ namespace xmlscript
 
     class BasicElementBase : public BasicElementBase_BASE
     {
-    protected:  
+    protected:
         BasicImport* m_pImport;
-        BasicElementBase* m_pParent;        
+        BasicElementBase* m_pParent;
         ::rtl::OUString m_aLocalName;
         ::com::sun::star::uno::Reference< ::com::sun::star::xml::input::XAttributes > m_xAttributes;
 
@@ -70,7 +70,7 @@ namespace xmlscript
             const ::com::sun::star::uno::Reference< ::com::sun::star::xml::input::XAttributes >& xAttributes,
             BasicElementBase* pParent, BasicImport* pImport );
         virtual ~BasicElementBase();
-        
+
         // XElement
         virtual ::com::sun::star::uno::Reference< ::com::sun::star::xml::input::XElement > SAL_CALL getParent()
             throw (::com::sun::star::uno::RuntimeException);
@@ -271,7 +271,7 @@ namespace xmlscript
         virtual ~XMLBasicImporterBase();
 
         // XServiceInfo
-        virtual sal_Bool SAL_CALL supportsService( const ::rtl::OUString& ServiceName ) 
+        virtual sal_Bool SAL_CALL supportsService( const ::rtl::OUString& ServiceName )
             throw (::com::sun::star::uno::RuntimeException);
 
         // XImporter
@@ -311,9 +311,9 @@ namespace xmlscript
         virtual ~XMLBasicImporter();
 
         // XServiceInfo
-        virtual ::rtl::OUString SAL_CALL getImplementationName(  ) 
+        virtual ::rtl::OUString SAL_CALL getImplementationName(  )
             throw (::com::sun::star::uno::RuntimeException);
-        virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames(  ) 
+        virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames(  )
             throw (::com::sun::star::uno::RuntimeException);
     };
 
@@ -330,9 +330,9 @@ namespace xmlscript
         virtual ~XMLOasisBasicImporter();
 
         // XServiceInfo
-        virtual ::rtl::OUString SAL_CALL getImplementationName(  ) 
+        virtual ::rtl::OUString SAL_CALL getImplementationName(  )
             throw (::com::sun::star::uno::RuntimeException);
-        virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames(  ) 
+        virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames(  )
             throw (::com::sun::star::uno::RuntimeException);
     };
 

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -87,7 +87,7 @@ public:
                 , const ::com::sun::star::uno::Reference< ::com::sun::star::chart2::XDiagram >& xDiagram
                 , const ::com::sun::star::uno::Reference< ::com::sun::star::uno::XComponentContext >& xContext
                 , ReferenceSizeProvider * pRefSizeProvider = 0 );
-        
+
     static void showGrid( sal_Int32 nDimensionIndex, sal_Int32 nCooSysIndex, bool bMainGrid
                 , const ::com::sun::star::uno::Reference< ::com::sun::star::chart2::XDiagram >& xDiagram
                 , const ::com::sun::star::uno::Reference< ::com::sun::star::uno::XComponentContext >& xContext );
@@ -114,7 +114,7 @@ public:
     SAL_DLLPRIVATE static sal_Bool areAxisLabelsVisible( const ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySet >& xAxisProperties );
     static sal_Bool isAxisVisible( const ::com::sun::star::uno::Reference< ::com::sun::star::chart2::XAxis >& xAxis );
     static sal_Bool isGridVisible( const ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySet >& xGridProperties );
-    
+
     static ::com::sun::star::uno::Reference<
             ::com::sun::star::chart2::XCoordinateSystem >
         getCoordinateSystemByIndex(
@@ -204,7 +204,7 @@ public:
                     ::com::sun::star::chart2::XCoordinateSystem >& xCooSys
             , bool bOnlyVisible = false );
 
-    static ::com::sun::star::uno::Sequence< 
+    static ::com::sun::star::uno::Sequence<
                 ::com::sun::star::uno::Reference<
                     ::com::sun::star::beans::XPropertySet > >
             getAllGrids( const ::com::sun::star::uno::Reference<

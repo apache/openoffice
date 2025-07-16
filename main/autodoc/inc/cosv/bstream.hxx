@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -110,7 +110,7 @@ class bstream : public bistream,
 
 
 // IMPLEMENTATION
-inline uintt 
+inline uintt
 bistream::read( void *	       o_pDest,
 			   uintt           i_nNrofBytes)
     { return do_read(o_pDest, i_nNrofBytes); }
@@ -118,22 +118,22 @@ inline bool
 bistream::eod() const
     { return inq_eod(); }
 
-inline uintt 
+inline uintt
 bostream::write( const void *   i_pSrc,
 				 uintt          i_nNrofBytes)
     { return do_write( i_pSrc, i_nNrofBytes ); }
-inline uintt 
+inline uintt
 bostream::write( const char * i_sSrc )
     { return write( i_sSrc, strlen(i_sSrc) ); }
-inline uintt 
+inline uintt
 bostream::write( const String &	i_sSrc )
     { return write( i_sSrc.c_str(), i_sSrc.length() ); }
 
-inline uintt 
+inline uintt
 bstream::seek( intt     i_nDistance,
                seek_dir i_eStartPoint )
     { return do_seek( i_nDistance, i_eStartPoint ); }
-inline uintt 
+inline uintt
 bstream::position() const
     { return inq_position(); }
 

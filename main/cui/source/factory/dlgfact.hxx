@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -24,7 +24,7 @@
 #define _CUI_DLGFACT_HXX
 
 // include ---------------------------------------------------------------
-#include <svx/svxdlg.hxx> 
+#include <svx/svxdlg.hxx>
 #include <com/sun/star/container/XNameReplace.hpp>
 
 #include "tools/link.hxx"
@@ -122,7 +122,7 @@ class AbstractSfxDialog_Impl : public SfxAbstractDialog
 	virtual const SfxItemSet* 	GetOutputItemSet() const;
 
 		//From class Window.
-    virtual void		SetText( const XubString& rStr ); 
+    virtual void		SetText( const XubString& rStr );
     virtual String   	GetText() const ;
 };
 
@@ -571,7 +571,7 @@ class PasswordToOpenModifyDialog;
 class AbstractPasswordToOpenModifyDialog_Impl : public AbstractPasswordToOpenModifyDialog
 {
     DECL_ABSTDLG_BASE( AbstractPasswordToOpenModifyDialog_Impl, PasswordToOpenModifyDialog )
-    
+
     virtual String  GetPasswordToOpen() const;
     virtual String  GetPasswordToModify() const;
     virtual bool    IsRecommendToOpenReadonly() const;
@@ -639,7 +639,7 @@ public:
 	virtual AbstractThesaurusDialog*		CreateThesaurusDialog( Window*, ::com::sun::star::uno::Reference< ::com::sun::star::linguistic2::XThesaurus >  xThesaurus,
 												const String &rWord, sal_Int16 nLanguage );
 
-	virtual AbstractHyphenWordDialog*		CreateHyphenWordDialog( Window*, 
+	virtual AbstractHyphenWordDialog*		CreateHyphenWordDialog( Window*,
 												const String &rWord, LanguageType nLang,
 												::com::sun::star::uno::Reference< ::com::sun::star::linguistic2::XHyphenator >  &xHyphen,
 												SvxSpellWrapper* pWrapper );
@@ -676,9 +676,9 @@ public:
 //STRIP001    SvxSpellWrapper* pWrapper,
 //STRIP001    sal_uInt32 nResId);
 	virtual VclAbstractRefreshableDialog * CreateActualizeProgressDialog( Window* pParent, GalleryTheme* pThm );
-	virtual AbstractSearchProgress * CreateSearchProgressDialog( Window* pParent, 
+	virtual AbstractSearchProgress * CreateSearchProgressDialog( Window* pParent,
 											const INetURLObject& rStartURL);
-	virtual AbstractTakeProgress * CreateTakeProgressDialog( Window* pParent );  
+	virtual AbstractTakeProgress * CreateTakeProgressDialog( Window* pParent );
 	virtual AbstractTitleDialog * CreateTitleDialog( Window* pParent,  //add for TitleDialog
 		 									const String& rOldText);
 	virtual AbstractGalleryIdDialog * CreateGalleryIdDialog( Window* pParent,  //add for SvxZoomDialog
@@ -773,7 +773,7 @@ public:
 	virtual VclAbstractDialog* CreateScriptErrorDialog(
 			Window* pParent, ::com::sun::star::uno::Any aException);
 
-    virtual VclAbstractDialog*  CreateSvxMacroAssignDlg( 
+    virtual VclAbstractDialog*  CreateSvxMacroAssignDlg(
                 Window* _pParent,
                 const ::com::sun::star::uno::Reference< ::com::sun::star::frame::XFrame >& _rxDocumentFrame,
                 const bool _bUnoDialogMode,

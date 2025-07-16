@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -42,7 +42,7 @@ typedef ::com::sun::star::uno::Sequence< ::rtl::OUString >	OUStringList;
 namespace svt
 {
 //........................................................................
-	
+
 
 	//====================================================================
 	//= AsyncPickerAction
@@ -81,10 +81,10 @@ namespace svt
                 If smaller than or equal to <arg>_nMinTimeout</arg>, it will be corrected to
                 <arg>_nMinTimeout</arg> + 30000.
         */
-        void execute( 
-			const String& _rURL, 
-			const String& _rFilter, 
-			sal_Int32 _nMinTimeout, 
+        void execute(
+			const String& _rURL,
+			const String& _rFilter,
+			sal_Int32 _nMinTimeout,
 			sal_Int32 _nMaxTimeout,
 			const OUStringList& rBlackList = OUStringList() );
 

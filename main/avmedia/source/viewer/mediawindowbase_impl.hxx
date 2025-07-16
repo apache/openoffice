@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -42,7 +42,7 @@ namespace avmedia
 			UPDATEMODE_SYNC_PLAYER = 1,
 			UPDATEMODE_SYNC_NONE = 2
 		};
-			
+
         // -----------------------
         // - MediaWindowBaseImpl -
         // -----------------------
@@ -53,20 +53,20 @@ namespace avmedia
 
 							MediaWindowBaseImpl( MediaWindow* pMediaWindow );
             virtual 		~MediaWindowBaseImpl();
-			
+
             virtual void 	cleanUp();
 			virtual void	onURLChanged();
-			
+
     		static ::com::sun::star::uno::Reference< ::com::sun::star::media::XPlayer > createPlayer( const ::rtl::OUString& rURL,
                                                                                                       sal_Bool& rbJavaBased );
-		
+
 		public:
 
 			void 	setURL( const ::rtl::OUString& rURL );
 			const ::rtl::OUString&	getURL() const;
-			
+
 			bool	isValid() const;
-		
+
             bool    hasPreferredSize() const;
             Size    getPreferredSize() const;
 
@@ -103,7 +103,7 @@ namespace avmedia
 
 			void	updateMediaItem( MediaItem& rItem ) const;
 			void	executeMediaItem( const MediaItem& rItem );
-			        
+
         protected:
 
             void	stopPlayingInternal( bool );
@@ -113,7 +113,7 @@ namespace avmedia
 
             ::com::sun::star::uno::Reference< ::com::sun::star::media::XPlayer > getPlayer() const;
 
-            void setPlayerWindow( const ::com::sun::star::uno::Reference< ::com::sun::star::media::XPlayerWindow >& rxPlayerWindow ); 
+            void setPlayerWindow( const ::com::sun::star::uno::Reference< ::com::sun::star::media::XPlayerWindow >& rxPlayerWindow );
             ::com::sun::star::uno::Reference< ::com::sun::star::media::XPlayerWindow > getPlayerWindow() const;
 
         private:

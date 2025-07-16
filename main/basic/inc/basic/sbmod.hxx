@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -70,7 +70,7 @@ protected:
     SbiBreakpoints*     pBreaks;       // Breakpoints
     SbClassData*        pClassData;
 	sal_Bool mbVBACompat;
-	sal_Int32 mnType; 
+	sal_Int32 mnType;
 	SbxObjectRef pDocObject; // an impl object ( used by Document Modules )
 	bool 	bIsProxyModule;
 
@@ -88,7 +88,7 @@ protected:
 	void			GlobalRunInit( sal_Bool bBasicStart );	// for all modules
 	void			GlobalRunDeInit( void );
 	const sal_uInt8* 	FindNextStmnt( const sal_uInt8*, sal_uInt16&, sal_uInt16& ) const;
-	const sal_uInt8* 	FindNextStmnt( const sal_uInt8*, sal_uInt16&, sal_uInt16&, 
+	const sal_uInt8* 	FindNextStmnt( const sal_uInt8*, sal_uInt16&, sal_uInt16&,
 						sal_Bool bFollowJumps, const SbiImage* pImg=NULL ) const;
 	virtual sal_Bool LoadData( SvStream&, sal_uInt16 );
 	virtual sal_Bool StoreData( SvStream& ) const;
@@ -130,8 +130,8 @@ public:
 	virtual SbMethod*	GetFunctionForLine( sal_uInt16 );
 
     // Store only image, no source (needed for new password protection)
-   	sal_Bool StoreBinaryData( SvStream& );    
-   	sal_Bool StoreBinaryData( SvStream&, sal_uInt16 nVer );    
+   	sal_Bool StoreBinaryData( SvStream& );
+   	sal_Bool StoreBinaryData( SvStream&, sal_uInt16 nVer );
 	sal_Bool LoadBinaryData( SvStream&, sal_uInt16 nVer );
 	sal_Bool LoadBinaryData( SvStream& );
 	sal_Bool ExceedsLegacyModuleSize();

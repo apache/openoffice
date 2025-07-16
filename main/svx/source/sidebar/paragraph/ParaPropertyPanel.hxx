@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 #ifndef SVX_SIDEBAR_PARA_PROPERTY_PANEL_HXX
@@ -127,7 +127,7 @@ private:
 	::boost::scoped_ptr<SvxRelativeField>	mpFLineIndent;
 
 	::boost::scoped_ptr< ::svx::ToolboxButtonColorUpdater > mpColorUpdater;
-	
+
 	/**********************************************************
 	 **
 	 ** Resources
@@ -161,7 +161,7 @@ private:
 	*****************************************************************/
 	long				maTxtLeft;
 	//Line spacing
-	SvxLineSpacingItem	*mpLnSPItem; 
+	SvxLineSpacingItem	*mpLnSPItem;
 	SfxItemState			meLnSpState;
 	bool					mbOutLineLeft;
 	bool					mbOutLineRight;
@@ -209,10 +209,10 @@ private:
 	ParaLineSpacingPopup maLineSpacePopup;
 	ParaBulletsPopup maBulletsPopup;
 	ParaNumberingPopup maNumberingPopup;
-	ColorPopup maBGColorPopup; 
+	ColorPopup maBGColorPopup;
     cssu::Reference<css::ui::XSidebar> mxSidebar;
     ::sfx2::sidebar::GridLayouter maLayouter;
-    
+
     ParaPropertyPanel (
         Window* pParent,
         const cssu::Reference<css::frame::XFrame>& rxFrame,
@@ -245,13 +245,13 @@ private:
 	//Modified for Numbering&Bullets Dialog UX Enh
 	//Handing the transferred the num rule index data of the current selection
 	void StateChangeBulletNumRuleImpl( sal_uInt16 nSID, SfxItemState eState, const SfxPoolItem* pState );
-	
+
 	void initial();
 	void ReSize(bool bSize);
 
     // Inherited from vcl Window.
     virtual void Resize (void);
-	
+
 	PopupControl* CreateLineSpacingControl (PopupContainer* pParent);
 	PopupControl* CreateBulletsPopupControl (PopupContainer* pParent);
 	PopupControl* CreateNumberingPopupControl (PopupContainer* pParent);

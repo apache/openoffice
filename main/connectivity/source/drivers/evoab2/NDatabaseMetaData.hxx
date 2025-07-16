@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,19 +7,19 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
- 
+
 
 #ifndef _CONNECTIVITY_EVOAB_DATABASEMETADATA_HXX_
 #define _CONNECTIVITY_EVOAB_DATABASEMETADATA_HXX_
@@ -38,7 +38,7 @@ namespace connectivity
 	{
 		class EvoContacts;
 
-		
+
 		//**************************************************************
 		//************ Class: OEvoabDatabaseMetaData
 		//**************************************************************
@@ -68,15 +68,15 @@ namespace connectivity
         rtl::OUString         getFieldTypeName(guint nCol) ;
         rtl::OUString         getFieldName(guint nCol) ;
 		guint                 findEvoabField(const rtl::OUString& aColName);
-		
+
 		void free_column_resources();
 
 		class OEvoabDatabaseMetaData : public ODatabaseMetaDataBase
 		{
 			OEvoabConnection*	                   m_pConnection;
-			
+
 			ODatabaseMetaDataResultSet::ORows& getColumnRows( const ::rtl::OUString& columnNamePattern );
-			
+
         protected:
             virtual ::com::sun::star::uno::Reference< ::com::sun::star::sdbc::XResultSet > impl_getTypeInfo_throw();
             // cached database information
@@ -95,11 +95,11 @@ namespace connectivity
             virtual sal_Bool        impl_storesMixedCaseQuotedIdentifiers_throw(  );
 
             virtual ~OEvoabDatabaseMetaData();
-		public:			
+		public:
 			inline OEvoabConnection* getOwnConnection() const { return m_pConnection; }
-			
+
 			OEvoabDatabaseMetaData(OEvoabConnection* _pCon);
-			
+
 			// as I mentioned before this interface is really BIG
 			// XDatabaseMetaData
 			virtual sal_Bool SAL_CALL allProceduresAreCallable(  ) throw(::com::sun::star::sdbc::SQLException, ::com::sun::star::uno::RuntimeException);
@@ -123,10 +123,10 @@ namespace connectivity
 			virtual sal_Bool SAL_CALL storesUpperCaseIdentifiers(  ) throw(::com::sun::star::sdbc::SQLException, ::com::sun::star::uno::RuntimeException);
 			virtual sal_Bool SAL_CALL storesLowerCaseIdentifiers(  ) throw(::com::sun::star::sdbc::SQLException, ::com::sun::star::uno::RuntimeException);
 			virtual sal_Bool SAL_CALL storesMixedCaseIdentifiers(  ) throw(::com::sun::star::sdbc::SQLException, ::com::sun::star::uno::RuntimeException);
-			
+
 			virtual sal_Bool SAL_CALL storesUpperCaseQuotedIdentifiers(  ) throw(::com::sun::star::sdbc::SQLException, ::com::sun::star::uno::RuntimeException);
 			virtual sal_Bool SAL_CALL storesLowerCaseQuotedIdentifiers(  ) throw(::com::sun::star::sdbc::SQLException, ::com::sun::star::uno::RuntimeException);
-			
+
 			virtual ::rtl::OUString SAL_CALL getSQLKeywords(  ) throw(::com::sun::star::sdbc::SQLException, ::com::sun::star::uno::RuntimeException);
 			virtual ::rtl::OUString SAL_CALL getNumericFunctions(  ) throw(::com::sun::star::sdbc::SQLException, ::com::sun::star::uno::RuntimeException);
 			virtual ::rtl::OUString SAL_CALL getStringFunctions(  ) throw(::com::sun::star::sdbc::SQLException, ::com::sun::star::uno::RuntimeException);

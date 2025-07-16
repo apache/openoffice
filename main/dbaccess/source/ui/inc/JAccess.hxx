@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -35,7 +35,7 @@ namespace dbaui
 	class OJoinTableView;
 	typedef ::cppu::ImplHelper1< ::com::sun::star::accessibility::XAccessible
 											> OJoinDesignViewAccess_BASE;
-	/** the class OJoinDesignViewAccess represents the accessible object for join views 
+	/** the class OJoinDesignViewAccess represents the accessible object for join views
 		like the QueryDesign and the RelationDesign
 	*/
 	class OJoinDesignViewAccess		:	public VCLXAccessibleComponent, public OJoinDesignViewAccess_BASE
@@ -44,7 +44,7 @@ namespace dbaui
 
 	protected:
 		/** isEditable returns the current editable state
-			@return	true if the controller is not readonly otherwise false	
+			@return	true if the controller is not readonly otherwise false
 		*/
 		virtual sal_Bool isEditable() const;
 	public:
@@ -79,7 +79,7 @@ namespace dbaui
 		{
 			NotifyAccessibleEvent(_nEventId,_rOldValue,_rNewValue);
 		}
-        
+
         void clearTableView();
 	};
 }

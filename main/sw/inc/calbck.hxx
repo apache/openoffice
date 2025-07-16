@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -37,23 +37,23 @@ class SfxHint;
     SwModify and SwClient cooperate in propagating attribute changes.
     If an attribute changes, the change is notified to all dependent
     formats and other interested objects, e.g. Nodes. The clients will detect
-    if the change affects them. It could be that the changed attribute is 
-    overruled in the receiving object so that its change does not become 
-    effective or that the receiver is not interested in the particular attribute 
+    if the change affects them. It could be that the changed attribute is
+    overruled in the receiving object so that its change does not become
+    effective or that the receiver is not interested in the particular attribute
     in general (though probably in other attributes of the SwModify object they
     are registered in).
     As SwModify objects are derived from SwClient, they can create a chain of SwClient
     objects where changes can get propagated through.
     Each SwClient can be registered at only one SwModify object, while each SwModify
     object is connected to a list of SwClient objects. If an object derived from SwClient
-    wants to get notifications from more than one SwModify object, it must create additional 
+    wants to get notifications from more than one SwModify object, it must create additional
     SwClient objects. The SwDepend class allows to handle their notifications in the same
-    notification callback as it forwards the Modify() calls it receives to a "master" 
+    notification callback as it forwards the Modify() calls it receives to a "master"
     SwClient implementation.
-    The SwClientIter class allows to iterate over the SwClient objects registered at an 
-    SwModify. For historical reasons its ability to use TypeInfo to restrict this iteration 
-    to objects of a particular type created a lot of code that misuses SwClient-SwModify 
-    relationships that basically should be used only for Modify() callbacks. 
+    The SwClientIter class allows to iterate over the SwClient objects registered at an
+    SwModify. For historical reasons its ability to use TypeInfo to restrict this iteration
+    to objects of a particular type created a lot of code that misuses SwClient-SwModify
+    relationships that basically should be used only for Modify() callbacks.
     This is still subject to refactoring.
     Until this gets resolved, new SwClientIter base code should be reduced to the absolute
     minimum and it also should be wrapped by SwIterator templates that prevent that the
@@ -67,7 +67,7 @@ class SfxHint;
 class SW_DLLPUBLIC SwClient : ::boost::noncopyable
 {
     // avoids making the details of the linked list and the callback method public
-	friend class SwModify;          
+	friend class SwModify;
 	friend class SwClientIter;
 
 	SwClient *pLeft, *pRight;       // double-linked list of other clients
@@ -97,7 +97,7 @@ public:
 	inline SwClient();
 	virtual ~SwClient();
 
-    // in case an SwModify object is destroyed that itself is registered in another SwModify, 
+    // in case an SwModify object is destroyed that itself is registered in another SwModify,
     // its SwClient objects can decide to get registered to the latter instead by calling this method
 	void CheckRegistration( const SfxPoolItem *pOldValue, const SfxPoolItem *pNewValue );
 
@@ -219,7 +219,7 @@ class SwClientIter
     SwClient* pDelNext;
 
     // SwClientIter objects are tracked in linked list so that they can react
-    // when the current (pAct) or marked down (pDelNext) SwClient is removed 
+    // when the current (pAct) or marked down (pDelNext) SwClient is removed
     // from its SwModify
 	SwClientIter *pNxtIter;
 
@@ -236,8 +236,8 @@ public:
 	SwClient* GoStart();
 	SwClient* GoEnd();
 
-    // returns the current SwClient object; 
-    // in case this was already removed, the object marked down to become 
+    // returns the current SwClient object;
+    // in case this was already removed, the object marked down to become
     // the next current one is returned
 	SwClient* operator()() const
 		{ return pDelNext == pAct ? pAct : pDelNext; }

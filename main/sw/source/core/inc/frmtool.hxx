@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -63,15 +63,15 @@ struct SwFindRowSpanCacheObj;
 //Painten des Hintergrunds. Mit Brush oder Graphic.
 // OD 05.08.2002 #99657# - add 6th parameter to indicate that method should
 //     consider background transparency, saved in the color of the brush item
-void MA_FASTCALL DrawGraphic( 
-    const SvxBrushItem *, 
+void MA_FASTCALL DrawGraphic(
+    const SvxBrushItem *,
     OutputDevice *,
-    const SwRect &rOrg, 
-    const SwRect &rOut, 
+    const SwRect &rOrg,
+    const SwRect &rOut,
     const sal_uInt8 nGrfNum = GRFNUM_NO,
     const sal_Bool bConsiderBackgroundTransparency = sal_False );
 bool MA_FASTCALL DrawFillAttributes(
-    const drawinglayer::attribute::SdrAllFillAttributesHelperPtr& rFillAttributes, 
+    const drawinglayer::attribute::SdrAllFillAttributesHelperPtr& rFillAttributes,
     const SwRect& rOriginalLayoutRect,
     const SwRect& rPaintRect,
     OutputDevice& rOut);

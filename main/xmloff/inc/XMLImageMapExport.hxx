@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -61,10 +61,10 @@ public:
 	~XMLImageMapExport();
 
 	/**
-	 * Get the ImageMap object from the "ImageMap" property and subsequently 
+	 * Get the ImageMap object from the "ImageMap" property and subsequently
 	 * export the map (if present).
 	 */
-	void Export( 
+	void Export(
 		/// the property set containing the ImageMap property
 		const ::com::sun::star::uno::Reference<
 			::com::sun::star::beans::XPropertySet> & rPropertySet);
@@ -104,7 +104,7 @@ protected:
 			::com::sun::star::beans::XPropertySet> & rPropertySet);
 
 	/**
-	 * Export the specifics of a polygonal image map entry; 
+	 * Export the specifics of a polygonal image map entry;
 	 * To be called by ExportMapEntry.
 	 */
 	void ExportPolygon(

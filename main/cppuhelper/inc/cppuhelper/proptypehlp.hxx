@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -26,13 +26,13 @@
 #include <cppuhelper/proptypehlp.h>
 
 namespace cppu
-{     
+{
 
 /** Converts the value stored in an any to a concrete C++ type.
     The function does the same as the operator >>= () at the
     Any class, except that it throws an IllegalArgumentException in case of
     failures (the value cannot be extracted without data loss )
-   
+
    @exception com::sun::star::lang::IllegalArgumentException when the type could not be converted.
  */
 template < class target >
@@ -40,7 +40,7 @@ inline void SAL_CALL convertPropertyValue( target &value , const  ::com::sun::st
 {
 
 	if( !( a >>= value ) ) {
-		throw ::com::sun::star::lang::IllegalArgumentException();	
+		throw ::com::sun::star::lang::IllegalArgumentException();
 	}
 }
 
@@ -67,12 +67,12 @@ inline void SAL_CALL convertPropertyValue( sal_Bool & b   , const ::com::sun::st
 	}
 	else if ( ::com::sun::star::uno::TypeClass_CHAR  == tc ) {
 		sal_Unicode c = *(sal_Unicode*) a.getValue();
-		b = ( sal_Bool ) c;	
+		b = ( sal_Bool ) c;
 	}
 	else if ( ::com::sun::star::uno::TypeClass_SHORT == tc ) {
 		sal_Int16 i16 = 0;
 		a >>= i16;
-		b = ( sal_Bool ) i16;	
+		b = ( sal_Bool ) i16;
 	}
 	else if ( ::com::sun::star::uno::TypeClass_BOOLEAN == tc ) {
 		b = *((sal_Bool*)a.getValue());
@@ -80,7 +80,7 @@ inline void SAL_CALL convertPropertyValue( sal_Bool & b   , const ::com::sun::st
 	else if ( ::com::sun::star::uno::TypeClass_BYTE == tc ) {
 		sal_Int8 i8 = 0;
 		a >>= i8;
-		b = ( sal_Bool ) i8;	
+		b = ( sal_Bool ) i8;
 	}
 	else if ( ::com::sun::star::uno::TypeClass_UNSIGNED_SHORT == tc ) {
 		sal_uInt16 i16 = 0;
@@ -93,17 +93,17 @@ inline void SAL_CALL convertPropertyValue( sal_Bool & b   , const ::com::sun::st
 		b = ( sal_Bool ) i32;
 	}
 	else {
-		throw ::com::sun::star::lang::IllegalArgumentException();	
-	}		
+		throw ::com::sun::star::lang::IllegalArgumentException();
+	}
 }
 
-inline void SAL_CALL convertPropertyValue( sal_Int64 & i  , const ::com::sun::star::uno::Any & a ) 
+inline void SAL_CALL convertPropertyValue( sal_Int64 & i  , const ::com::sun::star::uno::Any & a )
 	SAL_THROW( (::com::sun::star::lang::IllegalArgumentException) )
 {
 	const enum ::com::sun::star::uno::TypeClass tc = a.getValueType().getTypeClass();
-	
+
 	if( ::com::sun::star::uno::TypeClass_HYPER == tc ) {
-		a >>= i;	
+		a >>= i;
 	}
 	else if( ::com::sun::star::uno::TypeClass_UNSIGNED_HYPER == tc ) {
 		sal_uInt64 i64 = 0;
@@ -118,22 +118,22 @@ inline void SAL_CALL convertPropertyValue( sal_Int64 & i  , const ::com::sun::st
 	else if ( ::com::sun::star::uno::TypeClass_CHAR  == tc ) {
 		sal_Unicode c;
 		c = *(sal_Unicode *)a.getValue();
-		i = ( sal_Int64 ) c;	
+		i = ( sal_Int64 ) c;
 	}
 	else if ( ::com::sun::star::uno::TypeClass_SHORT == tc ) {
 		sal_Int16 i16 = 0;
 		a >>= i16;
-		i = ( sal_Int64 ) i16;	
+		i = ( sal_Int64 ) i16;
 	}
 	else if ( ::com::sun::star::uno::TypeClass_BOOLEAN == tc ) {
 		sal_Bool b;
 		b =  *((sal_Bool * )a.getValue());
-		i = ( sal_Int64 ) b;	
+		i = ( sal_Int64 ) b;
 	}
 	else if ( ::com::sun::star::uno::TypeClass_BYTE == tc ) {
 		sal_Int8 i8 = 0;
 		a >>= i8;
-		i = ( sal_Int64 ) i8;	
+		i = ( sal_Int64 ) i8;
 	}
 	else if ( ::com::sun::star::uno::TypeClass_UNSIGNED_SHORT == tc ) {
 		sal_uInt16 i16 = 0;
@@ -146,18 +146,18 @@ inline void SAL_CALL convertPropertyValue( sal_Int64 & i  , const ::com::sun::st
 		i = ( sal_Int64 ) i32;
 	}
 	else {
-		throw ::com::sun::star::lang::IllegalArgumentException();	
+		throw ::com::sun::star::lang::IllegalArgumentException();
 	}
 }
 
 
-inline void SAL_CALL convertPropertyValue( sal_uInt64 & i  , const ::com::sun::star::uno::Any & a ) 
+inline void SAL_CALL convertPropertyValue( sal_uInt64 & i  , const ::com::sun::star::uno::Any & a )
 	SAL_THROW( (::com::sun::star::lang::IllegalArgumentException) )
 {
 	const enum ::com::sun::star::uno::TypeClass tc = a.getValueType().getTypeClass();
-	
+
 	if( ::com::sun::star::uno::TypeClass_UNSIGNED_HYPER == tc ) {
-		a >>= i;	
+		a >>= i;
 	}
 	if( ::com::sun::star::uno::TypeClass_HYPER == tc ) {
 		sal_Int64 i64;
@@ -172,22 +172,22 @@ inline void SAL_CALL convertPropertyValue( sal_uInt64 & i  , const ::com::sun::s
 	else if ( ::com::sun::star::uno::TypeClass_CHAR  == tc ) {
 		sal_Unicode c;
 		c = *( sal_Unicode * ) a.getValue() ;
-		i = ( sal_uInt64 ) c;	
+		i = ( sal_uInt64 ) c;
 	}
 	else if ( ::com::sun::star::uno::TypeClass_SHORT == tc ) {
 		sal_Int16 i16;
 		a >>= i16;
-		i = ( sal_uInt64 ) i16;	
+		i = ( sal_uInt64 ) i16;
 	}
 	else if ( ::com::sun::star::uno::TypeClass_BOOLEAN == tc ) {
 		sal_Bool b;
 		b =  *((sal_Bool * )a.getValue());
-		i = ( sal_uInt64 ) b;	
+		i = ( sal_uInt64 ) b;
 	}
 	else if ( ::com::sun::star::uno::TypeClass_BYTE == tc ) {
 		sal_Int8 i8;
 		a >>= i8;
-		i = ( sal_uInt64 ) i8;	
+		i = ( sal_uInt64 ) i8;
 	}
 	else if ( ::com::sun::star::uno::TypeClass_UNSIGNED_SHORT == tc ) {
 		sal_uInt16 i16;
@@ -200,39 +200,39 @@ inline void SAL_CALL convertPropertyValue( sal_uInt64 & i  , const ::com::sun::s
 		i = ( sal_uInt64 ) i32;
 	}
 	else {
-		throw ::com::sun::star::lang::IllegalArgumentException();	
+		throw ::com::sun::star::lang::IllegalArgumentException();
 	}
 }
 
 // the basic types
 // sal_Int32
-inline void SAL_CALL convertPropertyValue( sal_Int32 & i  , const ::com::sun::star::uno::Any & a ) 
+inline void SAL_CALL convertPropertyValue( sal_Int32 & i  , const ::com::sun::star::uno::Any & a )
 	SAL_THROW( (::com::sun::star::lang::IllegalArgumentException) )
 {
 	const enum ::com::sun::star::uno::TypeClass tc = a.getValueType().getTypeClass();
-	
+
 	if( ::com::sun::star::uno::TypeClass_LONG == tc ) {
 		a >>= i;
 	}
 	else if ( ::com::sun::star::uno::TypeClass_CHAR  == tc ) {
 		sal_Unicode c;
 		c = *(sal_Unicode*) a.getValue();
-		i = ( sal_Int32 ) c;	
+		i = ( sal_Int32 ) c;
 	}
 	else if ( ::com::sun::star::uno::TypeClass_SHORT == tc ) {
 		sal_Int16 i16 = 0;
 		a >>= i16;
-		i = ( sal_Int32 ) i16;	
+		i = ( sal_Int32 ) i16;
 	}
 	else if ( ::com::sun::star::uno::TypeClass_BOOLEAN == tc ) {
 		sal_Bool b;
 		b =  *((sal_Bool * )a.getValue());
-		i = ( sal_Int32 ) b;	
+		i = ( sal_Int32 ) b;
 	}
 	else if ( ::com::sun::star::uno::TypeClass_BYTE == tc ) {
 		sal_Int8 i8 = 0;
 		a >>= i8;
-		i = ( sal_Int32 ) i8;	
+		i = ( sal_Int32 ) i8;
 	}
 	else if ( ::com::sun::star::uno::TypeClass_UNSIGNED_SHORT == tc ) {
 		sal_uInt16 i16 = 0;
@@ -245,15 +245,15 @@ inline void SAL_CALL convertPropertyValue( sal_Int32 & i  , const ::com::sun::st
 		i = ( sal_Int32 ) i32;
 	}
 	else {
-		throw ::com::sun::star::lang::IllegalArgumentException();	
+		throw ::com::sun::star::lang::IllegalArgumentException();
 	}
 }
 
-inline void SAL_CALL convertPropertyValue( sal_uInt32 & i  , const ::com::sun::star::uno::Any & a ) 
+inline void SAL_CALL convertPropertyValue( sal_uInt32 & i  , const ::com::sun::star::uno::Any & a )
 	SAL_THROW( (::com::sun::star::lang::IllegalArgumentException) )
 {
 	const enum ::com::sun::star::uno::TypeClass tc = a.getValueType().getTypeClass();
-	
+
 	if ( ::com::sun::star::uno::TypeClass_UNSIGNED_LONG == tc ) {
 		a >>= i;
 	}
@@ -265,22 +265,22 @@ inline void SAL_CALL convertPropertyValue( sal_uInt32 & i  , const ::com::sun::s
 	else if ( ::com::sun::star::uno::TypeClass_CHAR  == tc ) {
 		sal_Unicode c;
 		c = *(sal_Unicode*) a.getValue();
-		i = ( sal_uInt32 ) c;	
+		i = ( sal_uInt32 ) c;
 	}
 	else if ( ::com::sun::star::uno::TypeClass_SHORT == tc ) {
 		sal_Int16 i16;
 		a >>= i16;
-		i = ( sal_uInt32 ) i16;	
+		i = ( sal_uInt32 ) i16;
 	}
 	else if ( ::com::sun::star::uno::TypeClass_BOOLEAN == tc ) {
 		sal_Bool b;
 		b =  *((sal_Bool * )a.getValue());
-		i = ( sal_uInt32 ) b;	
+		i = ( sal_uInt32 ) b;
 	}
 	else if ( ::com::sun::star::uno::TypeClass_BYTE == tc ) {
 		sal_Int8 i8;
 		a >>= i8;
-		i = ( sal_uInt32 ) i8;	
+		i = ( sal_uInt32 ) i8;
 	}
 	else if ( ::com::sun::star::uno::TypeClass_UNSIGNED_SHORT == tc ) {
 		sal_uInt16 i16;
@@ -288,7 +288,7 @@ inline void SAL_CALL convertPropertyValue( sal_uInt32 & i  , const ::com::sun::s
 		i = ( sal_uInt32	) i16;
 	}
 	else {
-		throw ::com::sun::star::lang::IllegalArgumentException();	
+		throw ::com::sun::star::lang::IllegalArgumentException();
 	}
 }
 
@@ -304,17 +304,17 @@ inline void SAL_CALL convertPropertyValue( sal_Int16 & i  , const ::com::sun::st
 	else if ( ::com::sun::star::uno::TypeClass_CHAR  == tc ) {
 		sal_Unicode c;
 		c = *(sal_Unicode*) a.getValue();
-		i = ( sal_Int16 ) c;	
+		i = ( sal_Int16 ) c;
 	}
 	else if ( ::com::sun::star::uno::TypeClass_BOOLEAN == tc ) {
 		sal_Bool b;
 		b =  *((sal_Bool * )a.getValue());
-		i = ( sal_Int16 ) b;	
+		i = ( sal_Int16 ) b;
 	}
 	else if ( ::com::sun::star::uno::TypeClass_BYTE == tc ) {
 		sal_Int8 i8 = 0;
 		a >>= i8;
-		i = ( sal_Int16 ) i8;	
+		i = ( sal_Int16 ) i8;
 	}
 	else if ( ::com::sun::star::uno::TypeClass_UNSIGNED_SHORT == tc ) {
 		sal_uInt16 i16 = 0;
@@ -322,7 +322,7 @@ inline void SAL_CALL convertPropertyValue( sal_Int16 & i  , const ::com::sun::st
 		i = ( sal_Int16	) i16;
 	}
 	else {
-		throw ::com::sun::star::lang::IllegalArgumentException();	
+		throw ::com::sun::star::lang::IllegalArgumentException();
 	}
 }
 
@@ -337,17 +337,17 @@ inline void SAL_CALL convertPropertyValue( sal_uInt16 & i  , const ::com::sun::s
 	else if ( ::com::sun::star::uno::TypeClass_CHAR  == tc ) {
 		sal_Unicode c;
 		c = *(sal_Unicode *) a.getValue();
-		i = ( sal_Int16 ) c;	
+		i = ( sal_Int16 ) c;
 	}
 	else if ( ::com::sun::star::uno::TypeClass_BOOLEAN == tc ) {
 		sal_Bool b;
 		b =  *((sal_Bool * )a.getValue());
-		i = ( sal_Int16 ) b;	
+		i = ( sal_Int16 ) b;
 	}
 	else if ( ::com::sun::star::uno::TypeClass_BYTE == tc ) {
 		sal_Int8 i8 = 0;
 		a >>= i8;
-		i = ( sal_Int16 ) i8;	
+		i = ( sal_Int16 ) i8;
 	}
 	else if ( ::com::sun::star::uno::TypeClass_SHORT == tc ) {
 		sal_Int16 i16 = 0;
@@ -355,7 +355,7 @@ inline void SAL_CALL convertPropertyValue( sal_uInt16 & i  , const ::com::sun::s
 		i = ( sal_Int16 ) i16;
 	}
 	else {
-		throw ::com::sun::star::lang::IllegalArgumentException();	
+		throw ::com::sun::star::lang::IllegalArgumentException();
 	}
 }
 
@@ -370,10 +370,10 @@ inline void SAL_CALL convertPropertyValue( sal_Int8 & i  , const ::com::sun::sta
 	else if ( ::com::sun::star::uno::TypeClass_BOOLEAN == tc ) {
 		sal_Bool b;
 		b =  *((sal_Bool * )a.getValue());
-		i = ( sal_Int8 ) b;	
+		i = ( sal_Int8 ) b;
 	}
 	else {
-		throw ::com::sun::star::lang::IllegalArgumentException();	
+		throw ::com::sun::star::lang::IllegalArgumentException();
 	}
 }
 
@@ -381,9 +381,9 @@ inline void SAL_CALL convertPropertyValue( float &f , const ::com::sun::star::un
 	SAL_THROW( (::com::sun::star::lang::IllegalArgumentException) )
 {
 	const enum ::com::sun::star::uno::TypeClass tc = a.getValueType().getTypeClass();
-	
+
 	if ( ::com::sun::star::uno::TypeClass_FLOAT == tc ) {
-		a >>= f;	
+		a >>= f;
 	}
 	else if( ::com::sun::star::uno::TypeClass_DOUBLE == tc ) {
 	 	double d = 0;
@@ -392,7 +392,7 @@ inline void SAL_CALL convertPropertyValue( float &f , const ::com::sun::star::un
 	}
 	else if( ::com::sun::star::uno::TypeClass_HYPER == tc ) {
 		sal_Int64 i64 = 0;
-		a >>= i64;	
+		a >>= i64;
 		f = ( float ) i64;
 	}
 	// msci 4 does not support this conversion
@@ -409,22 +409,22 @@ inline void SAL_CALL convertPropertyValue( float &f , const ::com::sun::star::un
 	else if ( ::com::sun::star::uno::TypeClass_CHAR  == tc ) {
 		sal_Unicode c;
 		c = *(sal_Unicode*) a.getValue();
-		f = ( float ) c;	
+		f = ( float ) c;
 	}
 	else if ( ::com::sun::star::uno::TypeClass_SHORT == tc ) {
 		sal_Int16 i16 = 0;
 		a >>= i16;
-		f = ( float ) i16;	
+		f = ( float ) i16;
 	}
 	else if ( ::com::sun::star::uno::TypeClass_BOOLEAN == tc ) {
 		sal_Bool b;
 		b =  *((sal_Bool * )a.getValue());
-		f = ( float ) b;	
+		f = ( float ) b;
 	}
 	else if ( ::com::sun::star::uno::TypeClass_BYTE == tc ) {
 		sal_Int8 i8 = 0;
 		a >>= i8;
-		f = ( float ) i8;	
+		f = ( float ) i8;
 	}
 	else if ( ::com::sun::star::uno::TypeClass_UNSIGNED_SHORT == tc ) {
 		sal_uInt16 i16 = 0;
@@ -437,7 +437,7 @@ inline void SAL_CALL convertPropertyValue( float &f , const ::com::sun::star::un
 		f = ( float ) i32;
 	}
 	else {
-		throw ::com::sun::star::lang::IllegalArgumentException();	
+		throw ::com::sun::star::lang::IllegalArgumentException();
 	}
 }
 
@@ -446,7 +446,7 @@ inline void SAL_CALL convertPropertyValue( double &d , const ::com::sun::star::u
 	SAL_THROW( (::com::sun::star::lang::IllegalArgumentException) )
 {
 	const enum ::com::sun::star::uno::TypeClass tc = a.getValueType().getTypeClass();
-	
+
 	if( ::com::sun::star::uno::TypeClass_DOUBLE == tc ) {
 	 	float f;
 	 	a >>= f;
@@ -459,10 +459,10 @@ inline void SAL_CALL convertPropertyValue( double &d , const ::com::sun::star::u
 	}
 	else if( ::com::sun::star::uno::TypeClass_HYPER == tc ) {
 		sal_Int64 i64;
-		a >>= i64;	
+		a >>= i64;
 		d = (double) i64;
 	}
-	// msci 4 does not support this 
+	// msci 4 does not support this
 /*	else if( ::com::sun::star::uno::TypeClass_UNSIGNED_HYPER == tc ) {
 		sal_uInt64 i64;
 		a >>= i64;
@@ -476,22 +476,22 @@ inline void SAL_CALL convertPropertyValue( double &d , const ::com::sun::star::u
 	else if ( ::com::sun::star::uno::TypeClass_CHAR  == tc ) {
 		sal_Unicode c;
 		c = *(sal_Unicode*) a.getValue();
-		d = (double) c;	
+		d = (double) c;
 	}
 	else if ( ::com::sun::star::uno::TypeClass_SHORT == tc ) {
 		sal_Int16 i16;
 		a >>= i16;
-		d = (double) i16;	
+		d = (double) i16;
 	}
 	else if ( ::com::sun::star::uno::TypeClass_BOOLEAN == tc ) {
 		sal_Bool b;
 		b =  *((sal_Bool * )a.getValue());
-		d = (double) b;	
+		d = (double) b;
 	}
 	else if ( ::com::sun::star::uno::TypeClass_BYTE == tc ) {
 		sal_Int8 i8;
 		a >>= i8;
-		d = (double) i8;	
+		d = (double) i8;
 	}
 	else if ( ::com::sun::star::uno::TypeClass_UNSIGNED_SHORT == tc ) {
 		sal_uInt16 i16;
@@ -504,7 +504,7 @@ inline void SAL_CALL convertPropertyValue( double &d , const ::com::sun::star::u
 		d = (double) i32;
 	}
 	else {
-		throw ::com::sun::star::lang::IllegalArgumentException();	
+		throw ::com::sun::star::lang::IllegalArgumentException();
 	}
 }
 
@@ -512,7 +512,7 @@ inline void SAL_CALL convertPropertyValue( ::rtl::OUString &ow , const ::com::su
 	SAL_THROW( (::com::sun::star::lang::IllegalArgumentException) )
 {
 	if( ::com::sun::star::uno::TypeClass_STRING == a.getValueType().getTypeClass() ) {
-		a >>= ow;	
+		a >>= ow;
 	}
 	else {
 		throw ::com::sun::star::lang::IllegalArgumentException();

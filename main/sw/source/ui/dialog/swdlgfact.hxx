@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -125,7 +125,7 @@ class AbstractSwBreakDlg_Impl : public AbstractSwBreakDlg // add for SwBreakDlg
     virtual sal_uInt16  GetPageNumber();
 
 };
-class AbstractSplitTableDialog_Impl : public AbstractSplitTableDialog // add for 
+class AbstractSplitTableDialog_Impl : public AbstractSplitTableDialog // add for
 {
     DECL_ABSTDLG_BASE(AbstractSplitTableDialog_Impl, SwSplitTblDlg)
     virtual sal_uInt16 GetSplitMode();
@@ -325,7 +325,7 @@ class AbstractMailMergeDlg_Impl : public AbstractMailMergeDlg
 {
 	DECL_ABSTDLG_BASE(AbstractMailMergeDlg_Impl,SwMailMergeDlg)
 	virtual sal_uInt16	GetMergeType() ;
-    virtual const ::rtl::OUString& GetSaveFilter() const; 
+    virtual const ::rtl::OUString& GetSaveFilter() const;
 	virtual const ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Any > GetSelection() const ;
     virtual ::com::sun::star::uno::Reference< ::com::sun::star::sdbc::XResultSet> GetResultSet() const;
     virtual bool IsSaveIndividualDocs() const;
@@ -435,7 +435,7 @@ public:
 																		);
     virtual AbstractSwWordCountDialog* CreateSwWordCountDialog(Window* pParent);
     virtual AbstractSwInsertAbstractDlg * CreateSwInsertAbstractDlg( Window* pParent,int nResId );
-	virtual AbstractSwAsciiFilterDlg*  CreateSwAsciiFilterDlg ( Window* pParent, SwDocShell& rDocSh,	
+	virtual AbstractSwAsciiFilterDlg*  CreateSwAsciiFilterDlg ( Window* pParent, SwDocShell& rDocSh,
                                                                 SvStream* pStream, int nResId ); //add for SwAsciiFilterDlg
     virtual VclAbstractDialog * CreateSwInsertBookmarkDlg( Window *pParent, SwWrtShell &rSh, SfxRequest& rReq, int nResId );//add for SwInsertBookmarkDlg
 	virtual	AbstractSwBreakDlg * CreateSwBreakDlg ( Window *pParent, SwWrtShell &rSh,int nResId ); // add for SwBreakDlg
@@ -466,9 +466,9 @@ public:
 													const String *pCollName = 0,
 													sal_Bool bDraw = sal_False,
 													sal_uInt16 nDefPage = 0);
-	
+
 	virtual AbstarctSwSelGlossaryDlg * CreateSwSelGlossaryDlg ( Window * pParent, const String &rShortName, int nResId ); //add for SwSelGlossaryDlg
-    virtual VclAbstractDialog * CreateVclAbstractDialog ( Window * pParent, SwWrtShell &rSh, int nResId ); //add for  SwTableHeightDlg SwSortDlg 
+    virtual VclAbstractDialog * CreateVclAbstractDialog ( Window * pParent, SwWrtShell &rSh, int nResId ); //add for  SwTableHeightDlg SwSortDlg
     virtual AbstractSplitTableDialog * CreateSplitTblDialog ( Window * pParent, SwWrtShell &rSh ); //add for  SwSplitTblDlg
 
 	virtual AbstractSwAutoFormatDlg * CreateSwAutoFormatDlg( Window* pParent, SwWrtShell* pShell, //add for SwAutoFormatDlg
@@ -488,9 +488,9 @@ public:
 																STAR_REFERENCE( container::XNameAccess ) & xNameAccess, int nResId );
 	virtual AbstractSwModalRedlineAcceptDlg * CreateSwModalRedlineAcceptDlg ( Window *pParent, int nResId ); //add for SwModalRedlineAcceptDlg
 
-	virtual VclAbstractDialog* 			CreateSwVclDialog( int nResId, 
+	virtual VclAbstractDialog* 			CreateSwVclDialog( int nResId,
 												Window* pParent, sal_Bool& rWithPrev ); //add for SwMergeTblDlg
-	virtual SfxAbstractTabDialog*		CreateFrmTabDialog( int nResId, 
+	virtual SfxAbstractTabDialog*		CreateFrmTabDialog( int nResId,
 												SfxViewFrame *pFrame, Window *pParent,
 												const SfxItemSet& rCoreSet,
 												sal_Bool			bNewFrm  = sal_True,
@@ -506,15 +506,15 @@ public:
                                                 SwWrtShell* 		pActShell = 0,
                                                 sal_Bool 				bNew = sal_False ); //add for SwTemplateDlg
     virtual AbstractGlossaryDlg*		CreateGlossaryDlg( int nResId,
-												SfxViewFrame* pViewFrame, 
-												SwGlossaryHdl* pGlosHdl, 
+												SfxViewFrame* pViewFrame,
+												SwGlossaryHdl* pGlosHdl,
 												SwWrtShell *pWrtShell); //add for SwGlossaryDlg
 	virtual AbstractFldInputDlg*		CreateFldInputDlg( int nResId,
 												Window *pParent, SwWrtShell &rSh,
 												SwField* pField, sal_Bool bNextButton = sal_False ); //add for SwFldInputDlg
 	virtual AbstractInsFootNoteDlg*		CreateInsFootNoteDlg( int nResId,
 												Window * pParent, SwWrtShell &rSh, sal_Bool bEd = sal_False); //add for SwInsFootNoteDlg
-	virtual VclAbstractDialog *			CreateVclSwViewDialog( int nResId, 
+	virtual VclAbstractDialog *			CreateVclSwViewDialog( int nResId,
 												SwView& rView, sal_Bool bCol = sal_False ); //add for SwInsRowColDlg, SwLineNumberingDlg
 	virtual AbstractInsertGrfRulerDlg*		CreateInsertGrfRulerDlg( int nResId,
 												Window * pParent ); //add for SwInsertGrfRulerDlg
@@ -533,34 +533,34 @@ public:
 													Window* pParent ); //add for SwMailMergeCreateFromDlg
 	virtual AbstractMailMergeFieldConnectionsDlg*		CreateMailMergeFieldConnectionsDlg( int nResId,
 															Window* pParent ); //add for SwMailMergeFieldConnectionsDlg
-	virtual VclAbstractDialog* 			CreateMultiTOXMarkDlg( int nResId, 
+	virtual VclAbstractDialog* 			CreateMultiTOXMarkDlg( int nResId,
 												Window* pParent, SwTOXMgr &rTOXMgr ); //add for SwMultiTOXMarkDlg
-	virtual SfxAbstractTabDialog*		CreateSwTabDialog( int nResId, 
+	virtual SfxAbstractTabDialog*		CreateSwTabDialog( int nResId,
 												Window* pParent,
 												const SfxItemSet* pSwItemSet,
 												SwWrtShell &); //add for SwSvxNumBulletTabDialog, SwOutlineTabDialog
-	virtual AbstractMultiTOXTabDialog*		CreateMultiTOXTabDialog( int nResId, 
+	virtual AbstractMultiTOXTabDialog*		CreateMultiTOXTabDialog( int nResId,
 												Window* pParent, const SfxItemSet& rSet,
 												SwWrtShell &rShell,
 												SwTOXBase* pCurTOX, sal_uInt16 nToxType = USHRT_MAX,
 												sal_Bool bGlobal = sal_False); //add for SwMultiTOXTabDialog
-	virtual AbstractEditRegionDlg*		CreateEditRegionDlg( int nResId, 
+	virtual AbstractEditRegionDlg*		CreateEditRegionDlg( int nResId,
 												Window* pParent, SwWrtShell& rWrtSh ); //add for SwEditRegionDlg
-	virtual AbstractInsertSectionTabDialog*		CreateInsertSectionTabDialog( int nResId, 
+	virtual AbstractInsertSectionTabDialog*		CreateInsertSectionTabDialog( int nResId,
 													Window* pParent, const SfxItemSet& rSet, SwWrtShell& rSh); //add for SwInsertSectionTabDialog
-	virtual AbstractMarkFloatDlg*		CreateIndexMarkFloatDlg( int nResId, 
+	virtual AbstractMarkFloatDlg*		CreateIndexMarkFloatDlg( int nResId,
 													SfxBindings* pBindings,
 				   									SfxChildWindow* pChild,
 				   									Window *pParent,
 													SfxChildWinInfo* pInfo,
 				   									sal_Bool bNew=sal_True); //add for SwIndexMarkFloatDlg
-	virtual AbstractMarkFloatDlg*		CreateAuthMarkFloatDlg( int nResId, 
+	virtual AbstractMarkFloatDlg*		CreateAuthMarkFloatDlg( int nResId,
 													SfxBindings* pBindings,
 				   									SfxChildWindow* pChild,
 				   									Window *pParent,
 													SfxChildWinInfo* pInfo,
 				   									sal_Bool bNew=sal_True); //add for SwAuthMarkFloatDlg
-	virtual VclAbstractDialog *			CreateIndexMarkModalDlg( int nResId, 
+	virtual VclAbstractDialog *			CreateIndexMarkModalDlg( int nResId,
 												Window *pParent, SwWrtShell& rSh, SwTOXMark* pCurTOXMark ); //add for SwIndexMarkModalDlg
 
     virtual AbstractMailMergeWizard*    CreateMailMergeWizard(SwView& rView, SwMailMergeConfigItem& rConfigItem);

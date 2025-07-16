@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -51,7 +51,7 @@ class ViewShellBase;
     view shells.  The FormShell is a special case.  With the SetFormShell()
     method it can be placed directly above or below one of the view
     shells.</p>
-    
+
     <p>Shells managed by this class are created by factories or are given
     directly to Activate... methods.  For the sub shells there is one
     factory for every view shell.  Factories are added or removed via the
@@ -94,7 +94,7 @@ public:
         use the ActivateViewShell() method.
     */
     void ActivateShell (SfxShell* pShell);
-    
+
     /** Deactivate the specified shell, i.e. take it and all of its
         object bars from the shell stack.
         @param pShell
@@ -141,13 +141,13 @@ public:
         taken once off the stack and are then moved back on again.)
     */
     void MoveSubShellToTop (const ViewShell& rParentShell, ShellId nId);
-    
+
     /** Send all sub shells of the specified view shell an Invalidate()
         call.  This does not modify the shell stack.
     */
     void InvalidateAllSubShells (
         ViewShell* pViewShell);
-    
+
     /** Move the specified view shell to the top most position on the stack
         of view shells in relation to the other view shells.  After this the
         only shells that are higher on the stack are its object bars.
@@ -177,7 +177,7 @@ public:
         whether that is a view shell or a sub shell.
     */
     SfxShell* GetTopShell (void) const;
-    
+
     /** Use this class to safely lock updates of the view shell stack.
     */
     class UpdateLock

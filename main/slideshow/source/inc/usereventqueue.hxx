@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -48,14 +48,14 @@ class MouseEnterHandler;
 class MouseLeaveHandler;
 
 /** This class schedules user-activated events.
-    
+
     This class registeres at the EventMultiplexer and fires
     events registered for certain user actions. Note that all
     events will not be fired immediately after the user action
     occurred, but always added to the EventQueue (and fired the
     next time that queue is processed). Which is actually a
     feature.
-    
+
     Conceptually, an event is an object that typically is
     fired only once. After that, the event is exhausted, and
     should be discarded. Therefore, all events registered on
@@ -66,11 +66,11 @@ class UserEventQueue : private ::boost::noncopyable
 {
 public:
     /** Create a user event queue
-        
+
         @param rEventMultiplexer
         The slideshow-global event source, where this class
         registeres its event handlers.
-        
+
         @param rEventQueue
         Reference to the main event queue. Since we hold this
         object by plain reference, it must live longer than we
@@ -87,22 +87,22 @@ public:
                     EventQueue&         rEventQueue,
                     CursorManager&      rCursorManager );
     ~UserEventQueue();
-    
+
     /** Query whether there are any events still pending.
      */
     bool isEmpty() const;
-    
+
     /** Clear all registered events.
-        
+
         This method clears all registered, but
         not-yet-executed events. This comes in handy when
         force-ending a slide, to avoid interference with the
         next slide's event registration.
     */
     void clear();
-    
+
     /** Set advance on click behaviour.
-        
+
         @param bAdvanceOnClick
         When true, a click somewhere on the slide will also
         generate next effect event.  In this case, it is
@@ -110,28 +110,28 @@ public:
         i.e. the shape need not be hit by the mouse.
     */
     void setAdvanceOnClick( bool bAdvanceOnClick );
-    
+
     /** Register an event that will be fired when the slide is
         just shown.
-        
+
         Note that <em>all</em> registered events will be fired
         when the slide start occurs. This is in contrast to
         the mouse events below.
     */
     void registerSlideStartEvent( const EventSharedPtr& rEvent );
-    
+
     /** Register an event that will be fired when the slide is
         about to vanish.
-        
+
         Note that <em>all</em> registered events will be fired
         when the slide end occurs. This is in contrast to
         the mouse events below.
     */
     void registerSlideEndEvent( const EventSharedPtr& rEvent );
-    
+
     /** Register an event that will be fired when the given
         animation node starts.
-        
+
         Note that <em>all</em> registered events will be fired
         when the animation start occurs. This is in contrast to
         the mouse events below.
@@ -140,10 +140,10 @@ public:
         const EventSharedPtr&                             rEvent,
         const ::com::sun::star::uno::Reference<
         ::com::sun::star::animations::XAnimationNode>&    xNode );
-    
+
     /** Register an event that will be fired when the given
         animation node ends its active duration.
-        
+
         Note that <em>all</em> registered events will be fired
         when the animation end occurs. This is in contrast to
         the mouse events below.
@@ -152,10 +152,10 @@ public:
         const EventSharedPtr&                               rEvent,
         const ::com::sun::star::uno::Reference<
         ::com::sun::star::animations::XAnimationNode>&      xNode );
-    
+
     /** Register an event that will be fired when audio output
         stopped for the given animation node.
-        
+
         Note that <em>all</em> registered events will be fired
         when the audio stopping occurs. This is in contrast to
         the mouse events below.
@@ -164,9 +164,9 @@ public:
         const EventSharedPtr&                               rEvent,
         const ::com::sun::star::uno::Reference<
         ::com::sun::star::animations::XAnimationNode>&      xNode );
-    
+
     /** Register an event that is fired when a shape is clicked
-        
+
         For every mouse click, only one of the events
         registered here is fired. The order of fired events is
         the order of registration, i.e. the first event
@@ -175,7 +175,7 @@ public:
     */
     void registerShapeClickEvent( const EventSharedPtr& rEvent,
                                   const ShapeSharedPtr& rShape );
-    
+
     /** Registes an event that is fired when the current effects(s)
         are skipped, .e.g. when the left mouse button is pressed.
         Then, all registered events are fired and removed from this
@@ -191,16 +191,16 @@ public:
     void registerSkipEffectEvent(
         EventSharedPtr const& pEvent,
         const bool bSkipTriggersNextEffect);
-    
+
     /** Registes an event that is fired when the current effects(s)
         are rewound, .e.g. when the right mouse button is pressed.
         Then, all registered events are fired and removed from this
         queue.
     */
     void registerRewindEffectEvent( EventSharedPtr const& rEvent );
-    
+
     /** Register an event that is fired to show the next event
-        
+
         For every next effect event, only one of the events
         registered here is fired. The order of fired events is
         the order of registration, i.e. the first event
@@ -213,10 +213,10 @@ public:
         not be hit by the mouse.
     */
     void registerNextEffectEvent( const EventSharedPtr& rEvent );
-    
+
     /** Register an event that is fired on a double mouse
         click on a shape
-        
+
         For every mouse double click, only one of the events
         registered here is fired. The order of fired events is
         the order of registration, i.e. the first event
@@ -227,9 +227,9 @@ public:
     */
     void registerShapeDoubleClickEvent( const EventSharedPtr& rEvent,
                                         const ShapeSharedPtr& rShape );
-    
+
     /** Register an event that is fired on a double mouse click
-        
+
         For every mouse double click, only one of the events
         registered here is fired. The order of fired events is
         the order of registration, i.e. the first event
@@ -239,10 +239,10 @@ public:
         the mouse.
     */
     void registerDoubleClickEvent( const EventSharedPtr& rEvent );
-    
+
     /** Register an event that is fired when the mouse enters
         the area of the given shape
-        
+
         For every enter, only one of the events registered
         here is fired. The order of fired events is the order
         of registration, i.e. the first event registered will
@@ -251,10 +251,10 @@ public:
     */
     void registerMouseEnterEvent( const EventSharedPtr& rEvent,
                                   const ShapeSharedPtr& rShape );
-    
+
     /** Register an event that is fired when the mouse leaves
         the area of the given shape
-        
+
         For every leave, only one of the events registered
         here is fired. The order of fired events is the order
         of registration, i.e. the first event registered will
@@ -272,29 +272,29 @@ public:
 
 private:
     /** Generically register an event on one of the handlers.
-        
+
         If the handler is not yet created, do that and
         register it via the Functor
     */
-    template< typename Handler, typename Functor > 
+    template< typename Handler, typename Functor >
     void registerEvent( ::boost::shared_ptr< Handler >& rHandler,
                         const EventSharedPtr&           rEvent,
                         const Functor&                  rRegistrationFunctor );
-    
+
     /** Generically register an event on one of the handlers.
-        
+
         If the handler is not yet created, do that and
         register it via the Functor. This version of the
         registerEvent method takes an additional parameter
         rArg, which is passed as the second argument to
         rHandler's addEvent() method.
     */
-    template< typename Handler, typename Arg, typename Functor > 
+    template< typename Handler, typename Arg, typename Functor >
     void registerEvent( ::boost::shared_ptr< Handler >& rHandler,
                         const EventSharedPtr&           rEvent,
                         const Arg&                      rArg,
                         const Functor&                  rRegistrationFunctor );
-    
+
     EventMultiplexer&                               mrMultiplexer;
     EventQueue&                                     mrEventQueue;
     CursorManager&                                  mrCursorManager;
@@ -312,7 +312,7 @@ private:
     ::boost::shared_ptr<ClickEventHandler>          mpDoubleClickEventHandler;
     ::boost::shared_ptr<MouseEnterHandler>          mpMouseEnterHandler;
     ::boost::shared_ptr<MouseLeaveHandler>          mpMouseLeaveHandler;
-    
+
     bool                                            mbAdvanceOnClick;
 };
 

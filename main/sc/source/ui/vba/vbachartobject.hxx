@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 #ifndef SC_VBA_CHARTOBJECT_HXX
@@ -34,7 +34,7 @@
 typedef InheritedHelperInterfaceImpl1<ov::excel::XChartObject > ChartObjectImpl_BASE;
 
 class ScVbaChartObject : public ChartObjectImpl_BASE
-{		
+{
 	css::uno::Reference< css::table::XTableChart  > xTableChart;
 	css::uno::Reference< css::document::XEmbeddedObjectSupplier > xEmbeddedObjectSupplier;
 	css::uno::Reference< css::beans::XPropertySet > xPropertySet;
@@ -52,8 +52,8 @@ public:
 	virtual ::rtl::OUString SAL_CALL getName() throw (css::uno::RuntimeException);
 	virtual void SAL_CALL setName( const ::rtl::OUString& sName ) throw (css::uno::RuntimeException);
 	virtual css::uno::Reference< ov::excel::XChart > SAL_CALL getChart() throw (css::uno::RuntimeException);
-	virtual void SAL_CALL Delete() throw ( css::script::BasicErrorException );	
-	virtual void Activate() throw ( css::script::BasicErrorException );	
+	virtual void SAL_CALL Delete() throw ( css::script::BasicErrorException );
+	virtual void Activate() throw ( css::script::BasicErrorException );
 	// XHelperInterface
 	virtual rtl::OUString& getServiceImplName();
 	virtual css::uno::Sequence<rtl::OUString> getServiceNames();

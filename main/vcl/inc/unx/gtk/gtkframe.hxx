@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -56,7 +56,7 @@ class GtkSalFrame : public SalFrame
         {}
         ~GraphicsHolder();
     };
-    
+
     struct IMHandler
     {
         //--------------------------------------------------------
@@ -76,7 +76,7 @@ class GtkSalFrame : public SalFrame
             guint   keyval;
             guint16 hardware_keycode;
             guint8  group;
-    
+
             PreviousKeyPress (GdkEventKey *event)
             :   window (NULL),
                 send_event (0),
@@ -97,7 +97,7 @@ class GtkSalFrame : public SalFrame
                     group               = event->group;
                 }
             }
-    
+
             PreviousKeyPress( const PreviousKeyPress& rPrev )
             :   window( rPrev.window ),
                 send_event( rPrev.send_event ),
@@ -107,7 +107,7 @@ class GtkSalFrame : public SalFrame
                 hardware_keycode( rPrev.hardware_keycode ),
                 group( rPrev.group )
             {}
-    
+
             bool operator== (GdkEventKey *event) const
             {
                 return (event != NULL)
@@ -121,8 +121,8 @@ class GtkSalFrame : public SalFrame
                     ;
             }
         };
-        
-        
+
+
         GtkSalFrame*                    m_pFrame;
         std::list< PreviousKeyPress >   m_aPrevKeyPresses;
         int                             m_nPrevKeyPresses; // avoid using size()
@@ -131,7 +131,7 @@ class GtkSalFrame : public SalFrame
         bool                            m_bPreeditJustChanged;
         SalExtTextInputEvent            m_aInputEvent;
         std::vector< sal_uInt16 >           m_aInputFlags;
-        
+
         IMHandler( GtkSalFrame* );
         ~IMHandler();
 
@@ -142,11 +142,11 @@ class GtkSalFrame : public SalFrame
         void            endExtTextInput( sal_uInt16 nFlags );
         bool            handleKeyEvent( GdkEventKey* pEvent );
         void            focusChanged( bool bFocusIn );
-        
+
         void            doCallEndExtTextInput();
         void            sendEmptyCommit();
-        
-        
+
+
         static void			signalIMCommit( GtkIMContext*, gchar*, gpointer );
         static gboolean		signalIMDeleteSurrounding( GtkIMContext*, gint, gint, gpointer );
         static void			signalIMPreeditChanged( GtkIMContext*, gpointer );
@@ -186,13 +186,13 @@ class GtkSalFrame : public SalFrame
     bool                            m_bWindowIsGtkPlug;
     bool                            m_bSetFocusOnMap;
     String                          m_aTitle;
-    
+
     IMHandler*                      m_pIMHandler;
-    
+
     Size                            m_aMaxSize;
     Size                            m_aMinSize;
-    Rectangle                       m_aRestorePosSize;    
-    
+    Rectangle                       m_aRestorePosSize;
+
     GdkRegion*			            m_pRegion;
 
     void Init( SalFrame* pParent, sal_uLong nStyle );
@@ -244,7 +244,7 @@ class GtkSalFrame : public SalFrame
             !(m_nStyle & SAL_FRAME_STYLE_OWNERDRAWDECORATION) && // toolbars are also not
             !(m_nStyle & SAL_FRAME_STYLE_FLOAT_FOCUSABLE);       // focusable floats are not
     }
-    
+
     bool isChild( bool bPlug = true, bool bSysChild = true )
     {
         sal_uLong nMask = 0;
@@ -254,7 +254,7 @@ class GtkSalFrame : public SalFrame
             nMask |= SAL_FRAME_STYLE_SYSTEMCHILD;
         return (m_nStyle & nMask) != 0;
     }
-    
+
     void resizeWindow( long nWidth, long nHeight );
     void moveWindow( long nX, long nY );
 
@@ -263,7 +263,7 @@ class GtkSalFrame : public SalFrame
     void setMinMaxSize();
     void createNewWindow( XLIB_Window aParent, bool bXEmbed, int nScreen );
     void askForXEmbedFocus( sal_Int32 nTimecode );
-    
+
     DECL_LINK( ImplDelayedFullScreenHdl, void* );
 public:
     GtkSalFrame( SalFrame* pParent, sal_uLong nStyle );
@@ -288,7 +288,7 @@ public:
     Pixmap getBackgroundPixmap() const { return m_hBackgroundPixmap; }
     int getScreenNumber() const { return m_nScreen; }
     void updateScreenNumber();
-    
+
     void moveToScreen( int nScreen );
 
     virtual ~GtkSalFrame();

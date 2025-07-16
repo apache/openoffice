@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -52,12 +52,12 @@ struct XMLEventName
 	::rtl::OUString m_aName;
 
 	XMLEventName() : m_nPrefix( 0 ) {}
-	XMLEventName( sal_uInt16 n, const sal_Char *p ) : 
+	XMLEventName( sal_uInt16 n, const sal_Char *p ) :
 		m_nPrefix( n ),
 		m_aName( ::rtl::OUString::createFromAscii(p) )
    	{}
 
-	XMLEventName( sal_uInt16 n, const ::rtl::OUString& r ) : 
+	XMLEventName( sal_uInt16 n, const ::rtl::OUString& r ) :
 		m_nPrefix( n ),
 		m_aName( r )
    	{}
@@ -67,7 +67,7 @@ struct XMLEventName
 		return m_nPrefix < r.m_nPrefix ||
 			   (m_nPrefix == r.m_nPrefix && m_aName < r.m_aName );
 	}
-		
+
 };
 
 /**
@@ -87,7 +87,7 @@ struct XMLEventNameTranslation
 extern const XMLEventNameTranslation aStandardEventTable[];
 
 
-/** 
+/**
  * Handle export of an event for a certain event type (event type as
  * defined by the PropertyValue "EventType" in API).
  *
@@ -98,7 +98,7 @@ class XMLEventExportHandler
 public:
     virtual ~XMLEventExportHandler() {};
 
-	virtual void Export( 
+	virtual void Export(
 		SvXMLExport& rExport,					/// the current XML export
 		const ::rtl::OUString& rEventQName,		/// the XML name of the event
 		::com::sun::star::uno::Sequence<		/// the values for the event
@@ -107,7 +107,7 @@ public:
 };
 
 
-/** 
+/**
  * Handle import of an event for a certain event type (as defined by
  * the PropertyValue "EventType" in the API).
  *
@@ -137,11 +137,11 @@ public:
 		const ::com::sun::star::uno::Reference< 	/// attribute list
 			::com::sun::star::xml::sax::XAttributeList> & xAttrList,
 		/// the context for the enclosing <script:events> element
-		XMLEventsImportContext* rEvents, 
+		XMLEventsImportContext* rEvents,
 		/// the event name (as understood by the API)
 		const ::rtl::OUString& rApiEventName,
 		/// the event type name (as registered)
-		const ::rtl::OUString& rApiLanguage) = 0;	
+		const ::rtl::OUString& rApiLanguage) = 0;
 };
 
 

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -45,7 +45,7 @@ template< typename T > struct XorFunctor : public std::binary_function<T,T,T>
 //-----------------------------------------------------------------------------
 
 /// Base class, passing on the arg types
-template< typename T, typename M > struct MaskFunctorBase : 
+template< typename T, typename M > struct MaskFunctorBase :
         public TernaryFunctorBase<T,M,T,T> {};
 
 
@@ -56,8 +56,8 @@ template< typename T, typename M > struct MaskFunctorBase :
     transparency, i.e. the original value will display. And vice
     versa.
  */
-template< typename T, 
-          typename M, 
+template< typename T,
+          typename M,
           bool     polarity > struct GenericOutputMaskFunctor : public MaskFunctorBase<T,M>
 {
     /// Ternary mask operation - selects v1 for !m == polarity, v2 otherwise
@@ -70,14 +70,14 @@ template< typename T,
 /** Let a mask bit decide between two values (specialization for
     integer mask types)
  */
-template< typename T, 
+template< typename T,
           typename M,
           bool     polarity > struct IntegerOutputMaskFunctor;
-template< typename T, 
+template< typename T,
           typename M > struct IntegerOutputMaskFunctor<T,M,true> : public MaskFunctorBase<T,M>
 {
     /** Mask v with state of m
-        
+
         @return v2, if m != 0, v1 otherwise.
      */
     T operator()( T v1, M m, T v2 ) const
@@ -89,11 +89,11 @@ template< typename T,
         return v1*(M)(1-mask) + v2*mask;
     }
 };
-template< typename T, 
+template< typename T,
           typename M > struct IntegerOutputMaskFunctor<T,M,false> : public MaskFunctorBase<T,M>
 {
     /** Mask v with state of m
-        
+
         @return v2, if m != 0, v1 otherwise.
      */
     T operator()( T v1, M m, T v2 ) const
@@ -110,7 +110,7 @@ template< typename T,
     binary-valued mask types)
  */
 template< typename T, typename M, bool polarity > struct FastIntegerOutputMaskFunctor;
-template< typename T, typename M > struct FastIntegerOutputMaskFunctor<T,M,true> : 
+template< typename T, typename M > struct FastIntegerOutputMaskFunctor<T,M,true> :
    public MaskFunctorBase<T,M>
 {
     /// Specialization, only valid if mask can only attain 0 or 1
@@ -121,7 +121,7 @@ template< typename T, typename M > struct FastIntegerOutputMaskFunctor<T,M,true>
         return v1*(M)(1-m) + v2*m;
     }
 };
-template< typename T, typename M > struct FastIntegerOutputMaskFunctor<T,M,false> : 
+template< typename T, typename M > struct FastIntegerOutputMaskFunctor<T,M,false> :
    public MaskFunctorBase<T,M>
 {
     /// Specialization, only valid if mask can only attain 0 or 1
@@ -162,14 +162,14 @@ private:
 public:
     BinaryFunctorSplittingWrapper() : maFunctor() {}
 
-    template< class A > explicit 
-    BinaryFunctorSplittingWrapper( 
+    template< class A > explicit
+    BinaryFunctorSplittingWrapper(
         BinaryFunctorSplittingWrapper<A> const& src ) : maFunctor(src.maFunctor) {}
 
-    template< class F > explicit 
+    template< class F > explicit
     BinaryFunctorSplittingWrapper( F const& func ) : maFunctor(func) {}
 
-    typename Functor::result_type operator()( 
+    typename Functor::result_type operator()(
         typename Functor::first_argument_type                      v1,
         std::pair< typename Functor::third_argument_type,
                    typename Functor::second_argument_type > const& v2 ) const

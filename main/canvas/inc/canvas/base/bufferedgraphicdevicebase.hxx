@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -48,7 +48,7 @@ namespace canvas
 {
     /** Helper template base class for XGraphicDevice implementations
         on windows.
-        
+
         Use this base class if your target device is a
         window. Additionally to GraphicDeviceBase, this template
         provides an implementation of the awt::XWindowListener
@@ -84,10 +84,10 @@ namespace canvas
         derives from multiple UNO interface (were each provides its
         own version of XInterface, making the conversion ambiguous)
      */
-    template< class Base, 
-              class DeviceHelper, 
-              class Mutex=::osl::MutexGuard, 
-              class UnambiguousBase=::com::sun::star::uno::XInterface > class BufferedGraphicDeviceBase : 
+    template< class Base,
+              class DeviceHelper,
+              class Mutex=::osl::MutexGuard,
+              class UnambiguousBase=::com::sun::star::uno::XInterface > class BufferedGraphicDeviceBase :
         public GraphicDeviceBase< Base, DeviceHelper, Mutex, UnambiguousBase >
     {
     public:
@@ -114,7 +114,7 @@ namespace canvas
         }
 
         // XBufferController
-        virtual ::sal_Int32 SAL_CALL createBuffers( ::sal_Int32 nBuffers ) throw (::com::sun::star::lang::IllegalArgumentException, 
+        virtual ::sal_Int32 SAL_CALL createBuffers( ::sal_Int32 nBuffers ) throw (::com::sun::star::lang::IllegalArgumentException,
                                                                                   ::com::sun::star::uno::RuntimeException)
         {
             tools::verifyRange( nBuffers, (sal_Int32)1 );
@@ -157,7 +157,7 @@ namespace canvas
             is called, with rBounds the window bound rect relative to
             the frame window.
          */
-        void setWindow( const ::com::sun::star::uno::Reference< 
+        void setWindow( const ::com::sun::star::uno::Reference<
                               ::com::sun::star::awt::XWindow2 >& rWindow )
         {
             if( mxWindow.is() )
@@ -168,7 +168,7 @@ namespace canvas
             if( mxWindow.is() )
             {
                 mbIsVisible = mxWindow->isVisible();
-                mbIsTopLevel = 
+                mbIsTopLevel =
                     ::com::sun::star::uno::Reference< ::com::sun::star::awt::XTopWindow >(
                         mxWindow,
                         ::com::sun::star::uno::UNO_QUERY ).is();
@@ -182,7 +182,7 @@ namespace canvas
         {
             return mxWindow;
         }
-        
+
         ::com::sun::star::uno::Any getXWindow() const
         {
             return ::com::sun::star::uno::makeAny(mxWindow);
@@ -206,7 +206,7 @@ namespace canvas
         }
 
         ::com::sun::star::awt::Rectangle transformBounds( const ::com::sun::star::awt::Rectangle& rBounds )
-        {        
+        {
             // notifySizeUpdate's bounds are relative to the toplevel
             // window
             if( !mbIsTopLevel )

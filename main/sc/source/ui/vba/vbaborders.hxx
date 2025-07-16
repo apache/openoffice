@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -30,7 +30,7 @@
 #include <com/sun/star/table/XCellRange.hpp>
 #include <com/sun/star/beans/XPropertySet.hpp>
 
- 
+
 #include <vbahelper/vbacollectionimpl.hxx>
 
 typedef CollTestImplHelper< ov::excel::XBorders > ScVbaBorders_BASE;
@@ -52,9 +52,9 @@ public:
 
 	// XBorders
 
-	// ScVbaCollectionBaseImpl	
-	virtual css::uno::Any createCollectionObject( const css::uno::Any& aSource ); 
-	
+	// ScVbaCollectionBaseImpl
+	virtual css::uno::Any createCollectionObject( const css::uno::Any& aSource );
+
 	virtual css::uno::Any SAL_CALL getColor() throw (css::uno::RuntimeException);
 	virtual void SAL_CALL setColor( const css::uno::Any& _color ) throw (css::uno::RuntimeException);
 	virtual css::uno::Any SAL_CALL getColorIndex() throw (css::uno::RuntimeException);
@@ -63,7 +63,7 @@ public:
 	virtual void SAL_CALL setLineStyle( const css::uno::Any& _linestyle ) throw (css::uno::RuntimeException);
 	virtual css::uno::Any SAL_CALL getWeight() throw (css::uno::RuntimeException);
 	virtual void SAL_CALL setWeight( const  css::uno::Any& ) throw (css::uno::RuntimeException);
-	// xxxxBASE 
+	// xxxxBASE
 	virtual rtl::OUString& getServiceImplName();
 	virtual css::uno::Sequence<rtl::OUString> getServiceNames();
 };

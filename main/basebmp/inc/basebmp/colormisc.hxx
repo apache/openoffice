@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -123,18 +123,18 @@ template<> struct ColorTraits< Color >
     template< typename AlphaType, bool polarity > struct blend_functor;
 
     /// Calculate normalized distance between color c1 and c2
-    static inline double distance( const Color& c1, 
-                                   const Color& c2 ) 
-    { 
+    static inline double distance( const Color& c1,
+                                   const Color& c2 )
+    {
         return (c1 - c2).magnitude();
     }
 
-    static inline component_type toGreyscale( const Color& c ) 
+    static inline component_type toGreyscale( const Color& c )
     {
         return c.getGreyscale();
     }
 
-    static inline Color fromGreyscale( component_type c ) 
+    static inline Color fromGreyscale( component_type c )
     {
         return Color(c,c,c);
     }
@@ -171,7 +171,7 @@ struct NumericTraits<basebmp::Color>
     typedef VigraTrueType  isSigned;
     typedef VigraTrueType  isOrdered;
     typedef VigraFalseType isComplex;
-    
+
     static Type zero() { return Type(); }
     static Type one() { return Type(0x01010101); }
     static Type nonZero() { return Type(0x01010101); }

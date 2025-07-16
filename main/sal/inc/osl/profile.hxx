@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -54,7 +54,7 @@ namespace osl {
 			if( ! profile )
 				throw std::exception();
 		}
-				
+
 
 		/** Close the opened profile an flush all data to the disk.
 			@param Profile handle to a opened profile.
@@ -70,7 +70,7 @@ namespace osl {
 			return osl_flushProfile(profile);
 		}
 
-		rtl::OString readString( const rtl::OString& rSection, const rtl::OString& rEntry, 
+		rtl::OString readString( const rtl::OString& rSection, const rtl::OString& rEntry,
 								 const rtl::OString& rDefault)
 		{
 			sal_Char aBuf[1024];
@@ -88,7 +88,7 @@ namespace osl {
 			return osl_readProfileBool( profile, rSection.getStr(), rEntry.getStr(), bDefault );
 		}
 
-		sal_uInt32 readIdent(const rtl::OString& rSection, const rtl::OString& rEntry, 
+		sal_uInt32 readIdent(const rtl::OString& rSection, const rtl::OString& rEntry,
 							 sal_uInt32 nFirstId, const std::list< rtl::OString >& rStrings,
 							 sal_uInt32 nDefault)
 		{
@@ -107,7 +107,7 @@ namespace osl {
 			return nRet;
 		}
 
-		sal_Bool writeString(const rtl::OString& rSection, const rtl::OString& rEntry, 
+		sal_Bool writeString(const rtl::OString& rSection, const rtl::OString& rEntry,
 							 const rtl::OString& rString)
 		{
 			return osl_writeProfileString( profile, rSection.getStr(), rEntry.getStr(), rString.getStr());
@@ -118,8 +118,8 @@ namespace osl {
 			return osl_writeProfileBool( profile, rSection.getStr(), rEntry.getStr(), Value);
 		}
 
-		sal_Bool writeIdent(const rtl::OString& rSection, const rtl::OString& rEntry, 
-							sal_uInt32 nFirstId, const std::list< rtl::OString >& rStrings, 
+		sal_Bool writeIdent(const rtl::OString& rSection, const rtl::OString& rEntry,
+							sal_uInt32 nFirstId, const std::list< rtl::OString >& rStrings,
 							sal_uInt32 nValue)
 		{
 			int nItems = rStrings.size();

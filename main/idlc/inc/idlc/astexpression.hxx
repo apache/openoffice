@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -46,7 +46,7 @@ enum ExprComb
 };
 
 // Enum to define the different kinds of evaluation possible
-enum EvalKind 
+enum EvalKind
 {
 	EK_const,			// Must evaluate to constant
 	EK_positive_int		// Must evaluate to positive integer
@@ -74,9 +74,9 @@ enum ExprType
 };
 
 // Structure to describe value of constant expression and its type
-struct AstExprValue 
+struct AstExprValue
 {
-	union 
+	union
 	{
 		sal_uInt8		byval;		// Contains byte expression value
 		sal_Int16		sval;		// Contains short expression value
@@ -112,7 +112,7 @@ public:
 
 	// Data Accessors
 	AstScope* getScope()
-		{ return m_pScope; } 
+		{ return m_pScope; }
 	void setScope(AstScope* pScope)
 		{ m_pScope = pScope; }
 	sal_Int32 getLine()
@@ -168,7 +168,7 @@ private:
 	AstExprValue* eval_symbol(EvalKind ek);
 
 	AstScope*		m_pScope;		// scope defined in
-	sal_Int32		m_lineNo;		// line number defined in	
+	sal_Int32		m_lineNo;		// line number defined in
 	::rtl::OString	m_fileName;		// fileName	defined in
 
 	ExprComb		m_combOperator;

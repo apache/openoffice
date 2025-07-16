@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -31,7 +31,7 @@
 #include "svx/svxdllapi.h"
 
 //************************************************************
-//   Defines 
+//   Defines
 //************************************************************
 
 // folgendes ist noch nicht bzw. erst zum Teil implementiert:
@@ -107,7 +107,7 @@ enum SdrViewEditMode {SDREDITMODE_EDIT,           // Auch bekannt aus Pfeil- ode
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 class ImplMarkingOverlay;
 
-class SVX_DLLPUBLIC SdrMarkView : public SdrSnapView 
+class SVX_DLLPUBLIC SdrMarkView : public SdrSnapView
 {
 	friend class				SdrPageView;
 
@@ -149,7 +149,7 @@ protected:
     unsigned					bMrkPntDirty : 1;
     unsigned					bMarkedPointsRectsDirty : 1;
     unsigned					bMarkableObjCountDirty : 1;
-    
+
 	// flag to completely disable handles at the view
 	unsigned					mbMarkHandlesHidden : 1;
 
@@ -223,7 +223,7 @@ public:
     sal_Bool ChkDragMode(SdrDragMode eMode) const;
     void SetFrameHandles(sal_Bool bOn);
     sal_Bool IsFrameHandles() const { return bForceFrameHandles; }
-    
+
 	// Limit, ab wann implizit auf FrameHandles umgeschaltet wird. default=50.
     void SetFrameHandlesLimit(sal_uInt16 nAnz) { nFrameHandlesLimit=nAnz; }
     sal_uInt16 GetFrameHandlesLimit() const { return nFrameHandlesLimit; }
@@ -297,7 +297,7 @@ public:
 
     // Pick: Unterstuetzte Optionen fuer nOptions sind SEARCH_NEXT, SEARCH_BACKWARD (ni)
     SdrHdl* PickHandle(const Point& rPnt, sal_uIntPtr nOptions=0, SdrHdl* pHdl0=NULL) const;
-    
+
 	// Pick: Unterstuetzte Optionen fuer nOptions sind:
     // SDRSEARCH_DEEP SDRSEARCH_ALSOONMASTER SDRSEARCH_TESTMARKABLE SDRSEARCH_TESTTEXTEDIT
     // SDRSEARCH_WITHTEXT SDRSEARCH_TESTTEXTAREA SDRSEARCH_BACKWARD SDRSEARCH_MARKED
@@ -309,28 +309,28 @@ public:
 
     // Pick: Unterstuetzte Optionen fuer nOptions sind SDRSEARCH_PASS2BOUND und SDRSEARCH_PASS3NEAREST
     sal_Bool PickMarkedObj(const Point& rPnt, SdrObject*& rpObj, SdrPageView*& rpPV, sal_uIntPtr* pnMarkNum=NULL, sal_uIntPtr nOptions=0) const;
-    
+
 	// Sucht sich das Oberste der markierten Objekte (O1) und sucht von dort
     // aus in Richtung nach Unten dann das erste nichtmarkierte Objekt (O2).
     // Bei Erfolg wird die Markierung von O1 entfernt, an O2 gesetzt und TRUE
     // returniert. Mit dem Parameter bPrev=sal_True geht die Suche genau in die
     // andere Richtung.
     sal_Bool MarkNextObj(sal_Bool bPrev=sal_False);
-    
+
 	// Sucht sich das Oberste der markierten Objekte (O1) das von rPnt/nTol
     // getroffen wird und sucht von dort aus in Richtung nach Unten dann das
     // erste nichtmarkierte Objekt (O2). Bei Erfolg wird die Markierung von
     // O1 entfernt, an O2 gesetzt und sal_True returniert.
     // Mit dem Parameter bPrev=sal_True geht die Suche genau in die andere Richtung.
     sal_Bool MarkNextObj(const Point& rPnt, short nTol=-2, sal_Bool bPrev=sal_False);
-    
+
 	// Alle Objekte innerhalb eines rechteckigen Bereichs markieren
     // Markiert werden nur Objekte, die vollstaendig eingeschlossen sind.
     sal_Bool MarkObj(const Rectangle& rRect, sal_Bool bUnmark=sal_False);
     void MarkObj(SdrObject* pObj, SdrPageView* pPV, sal_Bool bUnmark=sal_False, sal_Bool bImpNoSetMarkHdl=sal_False);
     void MarkAllObj(SdrPageView* pPV=NULL); // pPage=NULL => alle angezeigten Seiten
     void UnmarkAllObj(SdrPageView* pPV=NULL); // pPage=NULL => alle angezeigten Seiten
-    
+
 	// Diese Funktion kostet etwas Zeit, da die MarkList durchsucht werden muss.
     sal_Bool IsObjMarked(SdrObject* pObj) const;
     // void MarkAll(SdrPageView* pPV=NULL) { MarkAllObj(pPV); } -> replace with inline
@@ -342,7 +342,7 @@ public:
     // Defaultwert ist 7, Mindestwert 3 Pixel.
     sal_uInt16 GetMarkHdlSizePixel() const;
     void SetMarkHdlSizePixel(sal_uInt16 nSiz);
-    
+
 	// Die Groesse der Markierungs-Handles wird ueber die jeweilige Aufloesung
     // und die Groesse des Bereichs der markierten Objekte so angepasst, dass
     // sie sich bei einer Frame-Selektion moeglichst nicht ueberschneiden.
@@ -360,7 +360,7 @@ public:
     // Nicht alle Punkte lassen sich markieren:
     virtual sal_Bool IsPointMarkable(const SdrHdl& rHdl) const;
     virtual sal_Bool MarkPoint(SdrHdl& rHdl, sal_Bool bUnmark=sal_False);
-	
+
 	/** should only be used from outside svx for special ui elements */
 	sal_Bool MarkPointHelper(SdrHdl* pHdl, SdrMark* pMark, sal_Bool bUnmark);
 
@@ -372,21 +372,21 @@ public:
     sal_Bool MarkAllPoints() { return MarkPoints(NULL,sal_False); }
     sal_Bool UnmarkAllPoints() { return MarkPoints(NULL,sal_True); }
     sal_Bool UnMarkAllPoints() { return MarkPoints(NULL,sal_True); }
-    
+
 	// Sucht sich den ersten markierten Punkt (P1) und sucht von dort
     // aus in den ersten nichtmarkierte Punkt (P2).
     // Bei Erfolg wird die Markierung von P1 entfernt, an P2 gesetzt und TRUE
     // returniert. Mit dem Parameter bPrev=sal_True geht die Suche genau in die
     // andere Richtung.
     sal_Bool MarkNextPoint(sal_Bool bPrev=sal_False);
-    
+
 	// Sucht sich den ersten markierten Punkt (P1) das von rPnt
     // getroffen wird und sucht von dort aus den
     // ersten nichtmarkierten Punkt (P2). Bei Erfolg wird die Markierung von
     // P1 entfernt, an P2 gesetzt und sal_True returniert.
     // Mit dem Parameter bPrev=sal_True geht die Suche genau in die andere Richtung.
     sal_Bool MarkNextPoint(const Point& rPnt, sal_Bool bPrev=sal_False);
-    
+
 	// Die Nummer des passenden Handles raussuchen. Nicht gefunden
     // liefert CONTAINER_ENTRY_NOTFOUND.
     sal_uIntPtr GetHdlNum(SdrHdl* pHdl) const { return aHdl.GetHdlNum(pHdl); }
@@ -410,7 +410,7 @@ public:
     // Persistent, default=FALSE
     void SetMarkHdlWhenTextEdit(sal_Bool bOn) { bMarkHdlWhenTextEdit=bOn; }
     sal_Bool IsMarkHdlWhenTextEdit() const { return bMarkHdlWhenTextEdit; }
-    
+
     sal_Bool HasMarkableGluePoints() const;
     sal_uIntPtr GetMarkableGluePointCount() const;
     sal_Bool HasMarkedGluePoints() const;
@@ -438,20 +438,20 @@ public:
     // GluePoints haben keine Handles
     SdrHdl* GetGluePointHdl(const SdrObject* pObj, sal_uInt16 nId) const;
     // sal_Bool IsGluePoint(const SdrHdl& rHdl) const { return &rHdl!=NULL && rHdl.GetKind()==HDL_GLUE; }
-    
+
 	// alle Punkte innerhalb dieses Rechtecks markieren (Viewkoordinaten)
     sal_Bool MarkGluePoints(const Rectangle& rRect) { return MarkGluePoints(&rRect,sal_False); }
     sal_Bool UnmarkGluePoints(const Rectangle& rRect) { return MarkGluePoints(&rRect,sal_True); }
     sal_Bool MarkAllGluePoints() { return MarkGluePoints(NULL,sal_False); }
     sal_Bool UnmarkAllGluePoints() { return MarkGluePoints(NULL,sal_True); }
-    
+
 	// Sucht sich den ersten markierten Klebepunkt (P1) und sucht von dort
     // aus in den ersten nichtmarkierte Klebepunkt (P2).
     // Bei Erfolg wird die Markierung von P1 entfernt, an P2 gesetzt und TRUE
     // returniert. Mit dem Parameter bPrev=sal_True geht die Suche genau in die
     // andere Richtung.
     sal_Bool MarkNextGluePoint(sal_Bool bPrev=sal_False);
-    
+
 	// Sucht sich den ersten markierten Klebepunkt (P1) das von rPnt
     // getroffen wird und sucht von dort aus den
     // ersten nichtmarkierten Klebepunkt (P2). Bei Erfolg wird die Markierung
@@ -468,7 +468,7 @@ public:
     sal_Bool EndMarkGluePoints();
     void BrkMarkGluePoints();
     sal_Bool IsMarkGluePoints() const { return (0L != mpMarkGluePointsOverlay); }
-    
+
 	// bRestraintPaint=sal_False bewirkt, dass die Handles nicht sofort wieder gemalt werden.
 	// AdjustMarkHdl wird eh' nur gerufen, wenn was geaendert wurde; was idR ein Invalidate
 	// zur Folge hat. Am Ende von des Redraw werden die Handles automatisch gezeichnet.
@@ -500,14 +500,14 @@ public:
     // Den Mittelpunkt des letzten Crook-Dragging abholen. Den kann man
     // bei einem anschliessenden Rotate sinnvoll als Drehmittelpunkt setzen.
     const Point& GetLastCrookCenter() const { return aLastCrookCenter; }
-    
+
 	// Wird automatisch von der DragView beim beenden eines Crook-Drag gesetzt.
     void SetLastCrookCenter(const Point& rPt) { aLastCrookCenter=rPt; }
-    
+
 	// Rotationsmittelpunkt bzw. Startpunkt der Spiegelachse
     const Point& GetRef1() const { return aRef1; }
     void SetRef1(const Point& rPt);
-    
+
 	// Endpunkt der Spiegelachse
     const Point& GetRef2() const { return aRef1; }
     void SetRef2(const Point& rPt);
@@ -515,7 +515,7 @@ public:
 };
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
-// 
+//
 // - Hit-Toleranzen:
 //   Die muessen natuerlich immer in logischen Koordinaten angegeben werden. Also
 //   immer brav den gewuenschten Pixelwert mit PixelToLogic in Logischen umrechnen.
@@ -529,7 +529,7 @@ public:
 //     einer Breite von 2*Tol (in diesem Beispiel also 200 Einheiten) um das Objekt
 //     herumgelegt. Waerend ein Hit direkt ins Objekt die Edit-Methode ruft,
 //     ermoeglicht ein Hit in den umliegenden sensitiven Bereich ein Dragging.
-// 
+//
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
 #endif //_SVDMRKV_HXX

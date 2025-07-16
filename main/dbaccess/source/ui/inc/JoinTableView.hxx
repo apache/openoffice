@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -97,7 +97,7 @@ namespace dbaui
 	private:
 		OTableWindowMap		m_aTableMap;
 		::std::vector<OTableConnection*>	m_vTableConnection;
-		
+
 		Timer				m_aDragScrollTimer;
 		Rectangle			m_aDragRect;
 		Rectangle			m_aSizingRect;
@@ -106,16 +106,16 @@ namespace dbaui
 		Point				m_ptPrevDraggingPos;
 		Size				m_aOutputSize;
 
-		
+
 		OTableWindow*			m_pDragWin;
 		OTableWindow*			m_pSizingWin;
 		OTableConnection*		m_pSelectedConn;
-		
+
 
 		sal_Bool					m_bTrackingInitiallyMoved;
 
 		DECL_LINK(OnDragScrollTimer, void*);
-		
+
 	protected:
 		OTableWindow*				m_pLastFocusTabWin;
 		OJoinDesignView*			m_pView;
@@ -170,7 +170,7 @@ namespace dbaui
 			@param	_pConnection
 					the connection which should be added
 			@param	_bAddData
-					<TRUE/> when the data should also be appended 
+					<TRUE/> when the data should also be appended
 		*/
 		void addConnection(OTableConnection* _pConnection,sal_Bool _bAddData = sal_True);
 
@@ -192,12 +192,12 @@ namespace dbaui
 		*/
 		const ::std::vector<OTableConnection*>*	getTableConnections() const { return &m_vTableConnection; }
 
-		
+
 		sal_Bool						ExistsAConn(const OTableWindow* pFromWin) const;
 
 		/** getTableConnections searchs for all connections of a table
 			@param	_pFromWin	the table for which connections should be found
-			
+
 			@return an iterator which can be used to travel all connections of the table
 		*/
 		::std::vector<OTableConnection*>::const_iterator getTableConnections(const OTableWindow* _pFromWin) const;
@@ -320,7 +320,7 @@ namespace dbaui
 		*/
 		void executePopup(const Point& _aPos,OTableConnection* _pSelConnection);
 
-		/** invalidateAndModify invalidates this window without children and 
+		/** invalidateAndModify invalidates this window without children and
 			set the controller modified
 			@param	_pAction a possible undo action to add at the controller
 		*/

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -57,7 +57,7 @@ namespace drawinglayer
             /// bitfield
             bool                                    mbAnyHit : 1;
 
-			/*  this flag decides if primitives which are invisible will be taken into account for 
+			/*  this flag decides if primitives which are invisible will be taken into account for
                 HitTesting or not.
              */
 			bool                                    mbUseInvisiblePrimitiveContent : 1;
@@ -68,8 +68,8 @@ namespace drawinglayer
 			virtual void processBasePrimitive3D(const primitive3d::BasePrimitive3D& rCandidate);
 
 		public:
-			CutFindProcessor(const geometry::ViewInformation3D& rViewInformation, 
-                const basegfx::B3DPoint& rFront, 
+			CutFindProcessor(const geometry::ViewInformation3D& rViewInformation,
+                const basegfx::B3DPoint& rFront,
                 const basegfx::B3DPoint& rBack,
                 bool bAnyHit);
 

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -102,8 +102,8 @@ namespace basegfx
 			For a description see applyLineDashing in b2dpolygontoos.hxx
 		*/
 		BASEGFX_DLLPUBLIC void applyLineDashing(
-			const B3DPolygon& rCandidate, 
-			const ::std::vector<double>& rDotDashArray, 
+			const B3DPolygon& rCandidate,
+			const ::std::vector<double>& rDotDashArray,
 			B3DPolyPolygon* pLineTarget,
             B3DPolyPolygon* pGapTarget = 0,
 			double fFullDashDotLen = 0.0);
@@ -138,8 +138,8 @@ namespace basegfx
 		// fDistance, and the sphere around both points with radius fDistance.
 		BASEGFX_DLLPUBLIC bool isInEpsilonRange(const B3DPoint& rEdgeStart, const B3DPoint& rEdgeEnd, const B3DPoint& rTestPosition, double fDistance);
 
-		// test if point is inside epsilon-range around the given Polygon. Can be used 
-		// for HitTesting. The epsilon-range is defined to be the cylinder centered to 
+		// test if point is inside epsilon-range around the given Polygon. Can be used
+		// for HitTesting. The epsilon-range is defined to be the cylinder centered to
         // the given edge, using radius fDistance, and the sphere around both points with radius fDistance.
 		BASEGFX_DLLPUBLIC bool isInEpsilonRange(const B3DPolygon& rCandidate, const B3DPoint& rTestPosition, double fDistance);
 
@@ -151,7 +151,7 @@ namespace basegfx
 		// calculates if given point is on given line, taking care of the numerical epsilon
 		BASEGFX_DLLPUBLIC bool isPointOnLine(const B3DPoint& rStart, const B3DPoint& rEnd, const B3DPoint& rCandidate, bool bWithPoints = false);
 
-        // calculates if given point is on given polygon, taking care of the numerical epsilon. Uses 
+        // calculates if given point is on given polygon, taking care of the numerical epsilon. Uses
 		// isPointOnLine internally
 		BASEGFX_DLLPUBLIC bool isPointOnPolygon(const B3DPolygon& rCandidate, const B3DPoint& rPoint, bool bWithPoints = true);
 
@@ -171,7 +171,7 @@ namespace basegfx
 		/** snap some polygon coordinates to discrete coordinates
 
 			This method allows to snap some polygon points to discrete (integer) values
-			which equals e.g. a snap to discrete coordinates. It will snap points of 
+			which equals e.g. a snap to discrete coordinates. It will snap points of
 			horizontal and vertical edges
 
 			@param rCandidate

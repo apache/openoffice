@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -75,7 +75,7 @@ extern "C"
 #include <sys/types.h>
 #include <sys/socket.h>
 #include <netdb.h>
-#include <netinet/in.h>           
+#include <netinet/in.h>
 #include <arpa/inet.h>
 #include <sys/wait.h>
 #endif
@@ -83,7 +83,7 @@ extern "C"
 #ifndef _OSL_SOCKET_CONST_H_
 
 #if ( defined WNT )                     // Windows
-#include <winsock.h> 
+#include <winsock.h>
 #include <string.h>
 #endif
 
@@ -106,10 +106,10 @@ sal_Bool compareUString( const ::rtl::OUString & ustr, const sal_Char *astr );
 */
 sal_Bool compareSocketAddr( const ::osl::SocketAddr & addr1 , const ::osl::SocketAddr & addr2  );
 //char * oustring2char( const ::rtl::OUString & str );
-/** print a UNI_CODE String. And also print some comments of the string. 
+/** print a UNI_CODE String. And also print some comments of the string.
 */
 void printUString( const ::rtl::OUString & str, const char * msg = "" );
-/** get the local host name. 
+/** get the local host name.
     mindy: gethostbyname( "localhost" ), on Linux, it returns the hostname in /etc/hosts + domain name,
     if no entry in /etc/hosts, it returns "localhost" + domain name
 */

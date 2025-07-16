@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -114,18 +114,18 @@ class SoundHandler  :   // interfaces
         virtual css::uno::Sequence< css::uno::Type >  SAL_CALL getTypes () throw( css::uno::RuntimeException );
         virtual css::uno::Sequence< sal_Int8 > SAL_CALL getImplementationId() throw( css::uno::RuntimeException );
 
-                                                                                                             
-    /* interface XServiceInfo */                                                                                                                                                                                                        
-       virtual ::rtl::OUString                                        SAL_CALL getImplementationName              (                                                                               ) throw( css::uno::RuntimeException );   
-       virtual sal_Bool                                               SAL_CALL supportsService                    ( const ::rtl::OUString&                                        sServiceName    ) throw( css::uno::RuntimeException );   
-       virtual css::uno::Sequence< ::rtl::OUString >                  SAL_CALL getSupportedServiceNames           (                                                                               ) throw( css::uno::RuntimeException );   
-    /* Helper for XServiceInfo */                                                                                                                                                                                                       
-       static css::uno::Sequence< ::rtl::OUString >                   SAL_CALL impl_getStaticSupportedServiceNames(                                                                               );                                       
-       static ::rtl::OUString                                         SAL_CALL impl_getStaticImplementationName   (                                                                               );                                       
-    /* Helper for registry */                                                                                                                                                                                                           
+
+    /* interface XServiceInfo */
+       virtual ::rtl::OUString                                        SAL_CALL getImplementationName              (                                                                               ) throw( css::uno::RuntimeException );
+       virtual sal_Bool                                               SAL_CALL supportsService                    ( const ::rtl::OUString&                                        sServiceName    ) throw( css::uno::RuntimeException );
+       virtual css::uno::Sequence< ::rtl::OUString >                  SAL_CALL getSupportedServiceNames           (                                                                               ) throw( css::uno::RuntimeException );
+    /* Helper for XServiceInfo */
+       static css::uno::Sequence< ::rtl::OUString >                   SAL_CALL impl_getStaticSupportedServiceNames(                                                                               );
+       static ::rtl::OUString                                         SAL_CALL impl_getStaticImplementationName   (                                                                               );
+    /* Helper for registry */
        static css::uno::Reference< css::uno::XInterface >             SAL_CALL impl_createInstance                ( const css::uno::Reference< css::uno::XComponentContext >& xContext ) throw( css::uno::Exception );
-    /* Helper for initialization of service by using own reference! */                                                                                                                                                                  
-       virtual void                                                   SAL_CALL impl_initService                   (                                                                               );                                       
+    /* Helper for initialization of service by using own reference! */
+       virtual void                                                   SAL_CALL impl_initService                   (                                                                               );
 
         //---------------------------------------------------------------------------------------------------------
         //  XNotifyingDispatch
@@ -170,7 +170,7 @@ class SoundHandler  :   // interfaces
 		bool m_bError;
         css::uno::Reference< css::uno::XComponentContext >         m_xContext          ;   /// component context to create new services
         css::uno::Reference< css::uno::XInterface >                m_xSelfHold         ;   /// we must protect against dying during async(!) dispatch() call!
-        css::uno::Reference< css::media::XPlayer >                 m_xPlayer           ;   /// uses avmedia player to play sounds ... 
+        css::uno::Reference< css::media::XPlayer >                 m_xPlayer           ;   /// uses avmedia player to play sounds ...
 
         css::uno::Reference< css::frame::XDispatchResultListener > m_xListener         ;
         Timer m_aUpdateTimer;

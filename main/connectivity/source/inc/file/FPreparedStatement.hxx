@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -53,7 +53,7 @@ namespace connectivity
 			::rtl::OUString										m_aSql;
 			OValueRefRow										m_aParameterRow;
             ::com::sun::star::uno::Reference< ::com::sun::star::sdbc::XResultSetMetaData>	m_xMetaData;
-            
+
 			OResultSet*											m_pResultSet;
 			::vos::ORef<connectivity::OSQLColumns>				m_xParamColumns;	// the parameter columns
 
@@ -64,7 +64,7 @@ namespace connectivity
 			void checkAndResizeParameters(sal_Int32 parameterIndex);
 			void setParameter(sal_Int32 parameterIndex, const ORowSetValue& x);
 
-			sal_uInt32 AddParameter(connectivity::OSQLParseNode * pParameter, 
+			sal_uInt32 AddParameter(connectivity::OSQLParseNode * pParameter,
 								const ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySet>& _xCol);
 			void scanParameter(OSQLParseNode* pParseNode,::std::vector< OSQLParseNode*>& _rParaNodes);
 			void describeColumn(OSQLParseNode* _pParameter,OSQLParseNode* _pNode,const OSQLTable& _xTable);
@@ -78,7 +78,7 @@ namespace connectivity
 			DECLARE_SERVICE_INFO();
 			// ein Konstruktor, der fuer das Returnen des Objektes benoetigt wird:
 			OPreparedStatement( OConnection* _pConnection);
-			
+
             virtual void construct(const ::rtl::OUString& sql)  throw(::com::sun::star::sdbc::SQLException, ::com::sun::star::uno::RuntimeException);
 
 			// OComponentHelper

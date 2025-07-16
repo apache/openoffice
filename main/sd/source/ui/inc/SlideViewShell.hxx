@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -62,12 +62,12 @@ public:
             The frame view that makes it possible to pass information from
             one view shell to the next.
     */
-    SlideViewShell(SfxViewFrame* pFrame, 
+    SlideViewShell(SfxViewFrame* pFrame,
         ViewShellBase& rViewShellBase,
         ::Window* pParentWindow,
         FrameView* pFrameView = NULL);
 
-    SlideViewShell(SfxViewFrame *pFrame, 
+    SlideViewShell(SfxViewFrame *pFrame,
         ::Window* pParentWindow,
         const SlideViewShell& rShell);
 
@@ -83,7 +83,7 @@ public:
     virtual void ArrangeGUIElements (void);
 	virtual void    AddWindow(::sd::Window* pWin) { pSlideView->AddWindowToPaintView((OutputDevice*) pWin); }
 	virtual void    RemoveWindow(::sd::Window* pWin) { pSlideView->DeleteWindowFromPaintView((OutputDevice*) pWin); }
-                    
+
 	virtual sal_Bool    KeyInput(const KeyEvent& rKEvt, ::sd::Window* pWin);
 	virtual void    MouseMove(const MouseEvent& rMEvt, ::sd::Window* pWin);
 	virtual void    MouseButtonUp(const MouseEvent& rMEvt, ::sd::Window* pWin);

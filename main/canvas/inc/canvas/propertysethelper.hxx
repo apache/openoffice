@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -137,16 +137,16 @@ namespace canvas
 
         // XPropertySet implementation
         ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySetInfo > getPropertySetInfo() const;
-        void setPropertyValue( const ::rtl::OUString&            aPropertyName, 
+        void setPropertyValue( const ::rtl::OUString&            aPropertyName,
                                const ::com::sun::star::uno::Any& aValue );
         ::com::sun::star::uno::Any getPropertyValue( const ::rtl::OUString& PropertyName ) const;
-        void addPropertyChangeListener( const ::rtl::OUString& aPropertyName, 
+        void addPropertyChangeListener( const ::rtl::OUString& aPropertyName,
                                         const ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertyChangeListener >& xListener );
-        void removePropertyChangeListener( const ::rtl::OUString& aPropertyName, 
+        void removePropertyChangeListener( const ::rtl::OUString& aPropertyName,
                                            const ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertyChangeListener >& xListener );
-        void addVetoableChangeListener( const ::rtl::OUString& aPropertyName, 
+        void addVetoableChangeListener( const ::rtl::OUString& aPropertyName,
                                         const ::com::sun::star::uno::Reference< ::com::sun::star::beans::XVetoableChangeListener >& xListener );
-        void removeVetoableChangeListener( const ::rtl::OUString& aPropertyName, 
+        void removeVetoableChangeListener( const ::rtl::OUString& aPropertyName,
                                            const ::com::sun::star::uno::Reference< ::com::sun::star::beans::XVetoableChangeListener >& xListener );
 
     private:

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 #ifndef SD_SIDEBAR_PANELS_MASTER_PAGE_CONTAINER_QUEUE_HXX
@@ -75,7 +75,7 @@ public:
         templates are inserted into the MasterPageContainer.
     */
     void ProcessAllRequests (void);
-    
+
 private:
     ::boost::weak_ptr<ContainerAdapter> mpWeakContainer;
     class PreviewCreationRequest;
@@ -87,7 +87,7 @@ private:
     // There are a couple of values that define various aspects of the
     // heuristic that defines the order and timing in which requests for
     // preview creation are processed.
-    
+
     /** The time to wait (in milliseconds) between the creation of previews.
     */
     static const sal_Int32 snDelayedCreationTimeout;
@@ -95,7 +95,7 @@ private:
     /** The time to wait when the system is not idle.
     */
     static const sal_Int32 snDelayedCreationTimeoutWhenNotIdle;
-    
+
     /** Requests for previews of master pages in a document have their
         priority increased by this value.
     */
@@ -113,7 +113,7 @@ private:
         present.
     */
     static sal_uInt32 snWaitForMoreRequestsCount;
-    
+
     MasterPageContainerQueue (const ::boost::weak_ptr<ContainerAdapter>& rpContainer);
     void LateInit (void);
 
@@ -121,7 +121,7 @@ private:
         are processed.
     */
     sal_Int32 CalculatePriority (const SharedMasterPageDescriptor& rDescriptor) const;
-    
+
     DECL_LINK(DelayedPreviewCreation, Timer *);
 };
 

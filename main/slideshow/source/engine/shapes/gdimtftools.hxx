@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -63,7 +63,7 @@ namespace slideshow
             /// retrieve the drawing layer scroll text metafile
             MTF_LOAD_SCROLL_TEXT_MTF = 8
         };
-    
+
         // Animation info
         // ==============
 
@@ -85,7 +85,7 @@ namespace slideshow
             GDIMetaFileSharedPtr	mpMtf;
             double					mnDuration;
         };
-        
+
         typedef ::std::vector< MtfAnimationFrame > VectorOfMtfAnimationFrames;
 
 
@@ -93,7 +93,7 @@ namespace slideshow
 
 			@param xShape
             XShape to retrieve a metafile for.
-        
+
             @param xContainingPage
             The page that contains this shape. Needed for proper
             import (currently, the UnoGraphicExporter needs this
@@ -102,11 +102,11 @@ namespace slideshow
             @param o_rMtf
             Metafile to extract shape content into
         */
-        bool getMetaFile( const ::com::sun::star::uno::Reference< ::com::sun::star::lang::XComponent >&     xSource, 
+        bool getMetaFile( const ::com::sun::star::uno::Reference< ::com::sun::star::lang::XComponent >&     xSource,
                           const ::com::sun::star::uno::Reference< ::com::sun::star::drawing::XDrawPage >&	xContainingPage,
                           GDIMetaFile& 							                                    		o_rMtf,
                           int                                                                               mtfLoadFlags,
-                          const ::com::sun::star::uno::Reference< 
+                          const ::com::sun::star::uno::Reference<
                               ::com::sun::star::uno::XComponentContext >&                                   rxContext );
 
         /** Remove all text actions from the given metafile.
@@ -117,7 +117,7 @@ namespace slideshow
             often returns 1.
         */
         sal_Int32 getNextActionOffset( MetaAction * pCurrAct );
-    
+
         /** Extract a vector of animation frames from given Graphic.
 
         	@param o_rFrames

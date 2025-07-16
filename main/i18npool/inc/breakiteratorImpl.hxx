@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -54,61 +54,61 @@ public:
 	BreakIteratorImpl();
 	~BreakIteratorImpl();
 
-	virtual sal_Int32 SAL_CALL nextCharacters( const rtl::OUString& Text, sal_Int32 nStartPos, 
-		const com::sun::star::lang::Locale& rLocale, sal_Int16 nCharacterIteratorMode, sal_Int32 nCount, 
+	virtual sal_Int32 SAL_CALL nextCharacters( const rtl::OUString& Text, sal_Int32 nStartPos,
+		const com::sun::star::lang::Locale& rLocale, sal_Int16 nCharacterIteratorMode, sal_Int32 nCount,
 		sal_Int32& nDone ) throw(com::sun::star::uno::RuntimeException);
-	virtual sal_Int32 SAL_CALL previousCharacters( const rtl::OUString& Text, sal_Int32 nStartPos, 
-		const com::sun::star::lang::Locale& nLocale, sal_Int16 nCharacterIteratorMode, sal_Int32 nCount, 
+	virtual sal_Int32 SAL_CALL previousCharacters( const rtl::OUString& Text, sal_Int32 nStartPos,
+		const com::sun::star::lang::Locale& nLocale, sal_Int16 nCharacterIteratorMode, sal_Int32 nCount,
 		sal_Int32& nDone ) throw(com::sun::star::uno::RuntimeException);
 
-	virtual Boundary SAL_CALL previousWord( const rtl::OUString& Text, sal_Int32 nStartPos, 
+	virtual Boundary SAL_CALL previousWord( const rtl::OUString& Text, sal_Int32 nStartPos,
 		const com::sun::star::lang::Locale& nLocale, sal_Int16 WordType) throw(com::sun::star::uno::RuntimeException);
-	virtual Boundary SAL_CALL nextWord( const rtl::OUString& Text, sal_Int32 nStartPos, 
+	virtual Boundary SAL_CALL nextWord( const rtl::OUString& Text, sal_Int32 nStartPos,
 		const com::sun::star::lang::Locale& nLocale, sal_Int16 WordType) throw(com::sun::star::uno::RuntimeException);
-	virtual Boundary SAL_CALL getWordBoundary( const rtl::OUString& Text, sal_Int32 nPos, 
-		const com::sun::star::lang::Locale& nLocale, sal_Int16 WordType, sal_Bool bDirection ) 
+	virtual Boundary SAL_CALL getWordBoundary( const rtl::OUString& Text, sal_Int32 nPos,
+		const com::sun::star::lang::Locale& nLocale, sal_Int16 WordType, sal_Bool bDirection )
 		throw(com::sun::star::uno::RuntimeException);
 
-	virtual sal_Bool SAL_CALL isBeginWord( const rtl::OUString& Text, sal_Int32 nPos, 
+	virtual sal_Bool SAL_CALL isBeginWord( const rtl::OUString& Text, sal_Int32 nPos,
 		const com::sun::star::lang::Locale& nLocale, sal_Int16 WordType ) throw(com::sun::star::uno::RuntimeException);
-	virtual sal_Bool SAL_CALL isEndWord( const rtl::OUString& Text, sal_Int32 nPos, 
+	virtual sal_Bool SAL_CALL isEndWord( const rtl::OUString& Text, sal_Int32 nPos,
 		const com::sun::star::lang::Locale& nLocale, sal_Int16 WordType ) throw(com::sun::star::uno::RuntimeException);
-	virtual sal_Int16 SAL_CALL getWordType( const rtl::OUString& Text, sal_Int32 nPos, 
+	virtual sal_Int16 SAL_CALL getWordType( const rtl::OUString& Text, sal_Int32 nPos,
 		const com::sun::star::lang::Locale& nLocale ) throw(com::sun::star::uno::RuntimeException);
 
 	virtual sal_Int32 SAL_CALL beginOfSentence( const rtl::OUString& Text, sal_Int32 nStartPos,
 		const com::sun::star::lang::Locale& nLocale ) throw(com::sun::star::uno::RuntimeException);
-	virtual sal_Int32 SAL_CALL endOfSentence( const rtl::OUString& Text, sal_Int32 nStartPos, 
+	virtual sal_Int32 SAL_CALL endOfSentence( const rtl::OUString& Text, sal_Int32 nStartPos,
 		const com::sun::star::lang::Locale& nLocale ) throw(com::sun::star::uno::RuntimeException);
 
-	virtual LineBreakResults SAL_CALL getLineBreak( const rtl::OUString& Text, sal_Int32 nStartPos, 
-		const com::sun::star::lang::Locale& nLocale, sal_Int32 nMinBreakPos, 
-		const LineBreakHyphenationOptions& hOptions, const LineBreakUserOptions& bOptions ) 
+	virtual LineBreakResults SAL_CALL getLineBreak( const rtl::OUString& Text, sal_Int32 nStartPos,
+		const com::sun::star::lang::Locale& nLocale, sal_Int32 nMinBreakPos,
+		const LineBreakHyphenationOptions& hOptions, const LineBreakUserOptions& bOptions )
 		throw(com::sun::star::uno::RuntimeException);
 
-	virtual sal_Int16 SAL_CALL getScriptType( const rtl::OUString& Text, sal_Int32 nPos ) 
+	virtual sal_Int16 SAL_CALL getScriptType( const rtl::OUString& Text, sal_Int32 nPos )
 		throw(com::sun::star::uno::RuntimeException);
-	virtual sal_Int32 SAL_CALL beginOfScript( const rtl::OUString& Text, sal_Int32 nStartPos, 
+	virtual sal_Int32 SAL_CALL beginOfScript( const rtl::OUString& Text, sal_Int32 nStartPos,
 		sal_Int16 ScriptType ) throw(com::sun::star::uno::RuntimeException);
-	virtual sal_Int32 SAL_CALL endOfScript( const rtl::OUString& Text, sal_Int32 nStartPos, 
+	virtual sal_Int32 SAL_CALL endOfScript( const rtl::OUString& Text, sal_Int32 nStartPos,
 		sal_Int16 ScriptType ) throw(com::sun::star::uno::RuntimeException);
-	virtual sal_Int32 SAL_CALL previousScript( const rtl::OUString& Text, sal_Int32 nStartPos, 
+	virtual sal_Int32 SAL_CALL previousScript( const rtl::OUString& Text, sal_Int32 nStartPos,
 		sal_Int16 ScriptType ) throw(com::sun::star::uno::RuntimeException);
-	virtual sal_Int32 SAL_CALL nextScript( const rtl::OUString& Text, sal_Int32 nStartPos, 
+	virtual sal_Int32 SAL_CALL nextScript( const rtl::OUString& Text, sal_Int32 nStartPos,
 		sal_Int16 ScriptType ) throw(com::sun::star::uno::RuntimeException);
 
-	virtual sal_Int32 SAL_CALL beginOfCharBlock( const rtl::OUString& Text, sal_Int32 nStartPos, 
+	virtual sal_Int32 SAL_CALL beginOfCharBlock( const rtl::OUString& Text, sal_Int32 nStartPos,
 		const com::sun::star::lang::Locale& nLocale, sal_Int16 CharType ) throw(com::sun::star::uno::RuntimeException);
-	virtual sal_Int32 SAL_CALL endOfCharBlock( const rtl::OUString& Text, sal_Int32 nStartPos, 
+	virtual sal_Int32 SAL_CALL endOfCharBlock( const rtl::OUString& Text, sal_Int32 nStartPos,
 		const com::sun::star::lang::Locale& nLocale, sal_Int16 CharType ) throw(com::sun::star::uno::RuntimeException);
-	virtual sal_Int32 SAL_CALL previousCharBlock( const rtl::OUString& Text, sal_Int32 nStartPos, 
+	virtual sal_Int32 SAL_CALL previousCharBlock( const rtl::OUString& Text, sal_Int32 nStartPos,
 		const com::sun::star::lang::Locale& nLocale, sal_Int16 CharType ) throw(com::sun::star::uno::RuntimeException);
-	virtual sal_Int32 SAL_CALL nextCharBlock( const rtl::OUString& Text, sal_Int32 nStartPos, 
+	virtual sal_Int32 SAL_CALL nextCharBlock( const rtl::OUString& Text, sal_Int32 nStartPos,
 		const com::sun::star::lang::Locale& nLocale, sal_Int16 CharType ) throw(com::sun::star::uno::RuntimeException);
 
 	//XServiceInfo
 	virtual rtl::OUString SAL_CALL getImplementationName() throw( com::sun::star::uno::RuntimeException );
-	virtual sal_Bool SAL_CALL supportsService(const rtl::OUString& ServiceName) 
+	virtual sal_Bool SAL_CALL supportsService(const rtl::OUString& ServiceName)
 		throw( com::sun::star::uno::RuntimeException );
 	virtual com::sun::star::uno::Sequence< rtl::OUString > SAL_CALL getSupportedServiceNames()
 		throw( com::sun::star::uno::RuntimeException );

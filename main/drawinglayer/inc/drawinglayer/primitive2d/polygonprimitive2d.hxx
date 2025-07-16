@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -60,7 +60,7 @@ namespace drawinglayer
 		public:
             /// constructor
 			PolygonHairlinePrimitive2D(
-                const basegfx::B2DPolygon& rPolygon, 
+                const basegfx::B2DPolygon& rPolygon,
                 const basegfx::BColor& rBColor);
 
 			/// data read access
@@ -118,7 +118,7 @@ namespace drawinglayer
 		public:
             /// constructor
 			PolygonMarkerPrimitive2D(
-				const basegfx::B2DPolygon& rPolygon, 
+				const basegfx::B2DPolygon& rPolygon,
 				const basegfx::BColor& rRGBColorA,
 				const basegfx::BColor& rRGBColorB,
 				double fDiscreteDashLength);
@@ -154,7 +154,7 @@ namespace drawinglayer
         /** PolygonStrokePrimitive2D class
 
             This primitive defines a line with line width, line join, line color
-            and stroke attributes. It will be decomposed dependent on the definition 
+            and stroke attributes. It will be decomposed dependent on the definition
             to the needed primitives, e.g. filled PolyPolygons for fat lines.
          */
 		class DRAWINGLAYER_DLLPUBLIC PolygonStrokePrimitive2D : public BufferedDecompositionPrimitive2D
@@ -176,13 +176,13 @@ namespace drawinglayer
 		public:
             /// constructor
 			PolygonStrokePrimitive2D(
-				const basegfx::B2DPolygon& rPolygon, 
+				const basegfx::B2DPolygon& rPolygon,
                 const attribute::LineAttribute& rLineAttribute,
 				const attribute::StrokeAttribute& rStrokeAttribute);
 
             /// constructor without stroking
 			PolygonStrokePrimitive2D(
-				const basegfx::B2DPolygon& rPolygon, 
+				const basegfx::B2DPolygon& rPolygon,
                 const attribute::LineAttribute& rLineAttribute);
 
 			/// data read access
@@ -228,7 +228,7 @@ namespace drawinglayer
 		public:
             /// constructor
 			PolygonWavePrimitive2D(
-				const basegfx::B2DPolygon& rPolygon, 
+				const basegfx::B2DPolygon& rPolygon,
                 const attribute::LineAttribute& rLineAttribute,
 				const attribute::StrokeAttribute& rStrokeAttribute,
 				double fWaveWidth,
@@ -236,7 +236,7 @@ namespace drawinglayer
 
             /// constructor without stroking
 			PolygonWavePrimitive2D(
-				const basegfx::B2DPolygon& rPolygon, 
+				const basegfx::B2DPolygon& rPolygon,
                 const attribute::LineAttribute& rLineAttribute,
 				double fWaveWidth,
 				double fWaveHeight);
@@ -284,17 +284,17 @@ namespace drawinglayer
 		public:
             /// constructor
 			PolygonStrokeArrowPrimitive2D(
-				const basegfx::B2DPolygon& rPolygon, 
+				const basegfx::B2DPolygon& rPolygon,
                 const attribute::LineAttribute& rLineAttribute,
-				const attribute::StrokeAttribute& rStrokeAttribute, 
-				const attribute::LineStartEndAttribute& rStart, 
+				const attribute::StrokeAttribute& rStrokeAttribute,
+				const attribute::LineStartEndAttribute& rStart,
 				const attribute::LineStartEndAttribute& rEnd);
 
             /// constructor without stroking
 			PolygonStrokeArrowPrimitive2D(
-				const basegfx::B2DPolygon& rPolygon, 
+				const basegfx::B2DPolygon& rPolygon,
                 const attribute::LineAttribute& rLineAttribute,
-				const attribute::LineStartEndAttribute& rStart, 
+				const attribute::LineStartEndAttribute& rStart,
 				const attribute::LineStartEndAttribute& rEnd);
 
 			/// data read access
