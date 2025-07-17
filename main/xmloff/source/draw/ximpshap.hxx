@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 #ifndef _XIMPSHAPE_HXX
@@ -101,9 +101,9 @@ protected:
 public:
 	TYPEINFO();
 
-	SdXMLShapeContext( SvXMLImport& rImport, 
+	SdXMLShapeContext( SvXMLImport& rImport,
 		sal_uInt16 nPrfx,
-		const rtl::OUString& rLocalName, 
+		const rtl::OUString& rLocalName,
 		const com::sun::star::uno::Reference< com::sun::star::xml::sax::XAttributeList>& xAttrList,
 		com::sun::star::uno::Reference< com::sun::star::drawing::XShapes >& rShapes,
         sal_Bool bTemporaryShape);
@@ -137,7 +137,7 @@ public:
 	TYPEINFO();
 
 	SdXMLRectShapeContext( SvXMLImport& rImport, sal_uInt16 nPrfx,
-		const rtl::OUString& rLocalName, 
+		const rtl::OUString& rLocalName,
 		const com::sun::star::uno::Reference< com::sun::star::xml::sax::XAttributeList>& xAttrList,
 		com::sun::star::uno::Reference< com::sun::star::drawing::XShapes >& rShapes,
         sal_Bool bTemporaryShape);
@@ -162,7 +162,7 @@ public:
 	TYPEINFO();
 
 	SdXMLLineShapeContext( SvXMLImport& rImport, sal_uInt16 nPrfx,
-		const rtl::OUString& rLocalName, 
+		const rtl::OUString& rLocalName,
 		const com::sun::star::uno::Reference< com::sun::star::xml::sax::XAttributeList>& xAttrList,
 		com::sun::star::uno::Reference< com::sun::star::drawing::XShapes >& rShapes,
         sal_Bool bTemporaryShape);
@@ -190,7 +190,7 @@ public:
 	TYPEINFO();
 
 	SdXMLEllipseShapeContext( SvXMLImport& rImport, sal_uInt16 nPrfx,
-		const rtl::OUString& rLocalName, 
+		const rtl::OUString& rLocalName,
 		const com::sun::star::uno::Reference< com::sun::star::xml::sax::XAttributeList>& xAttrList,
 		com::sun::star::uno::Reference< com::sun::star::drawing::XShapes >& rShapes,
         sal_Bool bTemporaryShape);
@@ -214,7 +214,7 @@ public:
 	TYPEINFO();
 
 	SdXMLPolygonShapeContext( SvXMLImport& rImport, sal_uInt16 nPrfx,
-		const rtl::OUString& rLocalName, 
+		const rtl::OUString& rLocalName,
 		const com::sun::star::uno::Reference< com::sun::star::xml::sax::XAttributeList>& xAttrList,
 		com::sun::star::uno::Reference< com::sun::star::drawing::XShapes >& rShapes, sal_Bool bClosed, sal_Bool bTemporaryShape);
 	virtual ~SdXMLPolygonShapeContext();
@@ -237,7 +237,7 @@ public:
 	TYPEINFO();
 
 	SdXMLPathShapeContext( SvXMLImport& rImport, sal_uInt16 nPrfx,
-		const rtl::OUString& rLocalName, 
+		const rtl::OUString& rLocalName,
 		const com::sun::star::uno::Reference< com::sun::star::xml::sax::XAttributeList>& xAttrList,
 		com::sun::star::uno::Reference< com::sun::star::drawing::XShapes >& rShapes,
         sal_Bool bTemporaryShape);
@@ -259,7 +259,7 @@ public:
 	TYPEINFO();
 
 	SdXMLTextBoxShapeContext( SvXMLImport& rImport, sal_uInt16 nPrfx,
-		const rtl::OUString& rLocalName, 
+		const rtl::OUString& rLocalName,
 		const com::sun::star::uno::Reference< com::sun::star::xml::sax::XAttributeList>& xAttrList,
 		com::sun::star::uno::Reference< com::sun::star::drawing::XShapes >& rShapes,
         sal_Bool bTemporaryShape);
@@ -282,7 +282,7 @@ public:
 	TYPEINFO();
 
 	SdXMLControlShapeContext( SvXMLImport& rImport, sal_uInt16 nPrfx,
-		const rtl::OUString& rLocalName, 
+		const rtl::OUString& rLocalName,
 		const com::sun::star::uno::Reference< com::sun::star::xml::sax::XAttributeList>& xAttrList,
 		com::sun::star::uno::Reference< com::sun::star::drawing::XShapes >& rShapes,
         sal_Bool bTemporaryShape);
@@ -319,7 +319,7 @@ public:
 	TYPEINFO();
 
 	SdXMLConnectorShapeContext( SvXMLImport& rImport, sal_uInt16 nPrfx,
-		const rtl::OUString& rLocalName, 
+		const rtl::OUString& rLocalName,
 		const com::sun::star::uno::Reference< com::sun::star::xml::sax::XAttributeList>& xAttrList,
 		com::sun::star::uno::Reference< com::sun::star::drawing::XShapes >& rShapes,
         sal_Bool bTemporaryShape);
@@ -343,7 +343,7 @@ public:
 	TYPEINFO();
 
 	SdXMLMeasureShapeContext( SvXMLImport& rImport, sal_uInt16 nPrfx,
-		const rtl::OUString& rLocalName, 
+		const rtl::OUString& rLocalName,
 		const com::sun::star::uno::Reference< com::sun::star::xml::sax::XAttributeList>& xAttrList,
 		com::sun::star::uno::Reference< com::sun::star::drawing::XShapes >& rShapes,
         sal_Bool bTemporaryShape);
@@ -366,7 +366,7 @@ public:
 	TYPEINFO();
 
 	SdXMLPageShapeContext( SvXMLImport& rImport, sal_uInt16 nPrfx,
-		const rtl::OUString& rLocalName, 
+		const rtl::OUString& rLocalName,
 		const com::sun::star::uno::Reference< com::sun::star::xml::sax::XAttributeList>& xAttrList,
 		com::sun::star::uno::Reference< com::sun::star::drawing::XShapes >& rShapes,
         sal_Bool bTemporaryShape);
@@ -390,7 +390,7 @@ public:
 	TYPEINFO();
 
 	SdXMLCaptionShapeContext( SvXMLImport& rImport, sal_uInt16 nPrfx,
-		const rtl::OUString& rLocalName, 
+		const rtl::OUString& rLocalName,
 		const com::sun::star::uno::Reference< com::sun::star::xml::sax::XAttributeList>& xAttrList,
 		com::sun::star::uno::Reference< com::sun::star::drawing::XShapes >& rShapes,
         sal_Bool bTemporaryShape);
@@ -417,7 +417,7 @@ public:
 	TYPEINFO();
 
 	SdXMLGraphicObjectShapeContext( SvXMLImport& rImport, sal_uInt16 nPrfx,
-		const rtl::OUString& rLocalName, 
+		const rtl::OUString& rLocalName,
 		const com::sun::star::uno::Reference< com::sun::star::xml::sax::XAttributeList>& xAttrList,
 		com::sun::star::uno::Reference< com::sun::star::drawing::XShapes >& rShapes,
         sal_Bool bTemporaryShape);
@@ -447,7 +447,7 @@ public:
 	TYPEINFO();
 
 	SdXMLChartShapeContext( SvXMLImport& rImport, sal_uInt16 nPrfx,
-		const rtl::OUString& rLocalName, 
+		const rtl::OUString& rLocalName,
 		const com::sun::star::uno::Reference< com::sun::star::xml::sax::XAttributeList>& xAttrList,
 		com::sun::star::uno::Reference< com::sun::star::drawing::XShapes >& rShapes,
         sal_Bool bTemporaryShape);
@@ -476,7 +476,7 @@ public:
 	TYPEINFO();
 
 	SdXMLObjectShapeContext( SvXMLImport& rImport, sal_uInt16 nPrfx,
-		const rtl::OUString& rLocalName, 
+		const rtl::OUString& rLocalName,
 		const com::sun::star::uno::Reference< com::sun::star::xml::sax::XAttributeList>& xAttrList,
 		com::sun::star::uno::Reference< com::sun::star::drawing::XShapes >& rShapes,
         sal_Bool bTemporaryShape);
@@ -510,7 +510,7 @@ public:
 	TYPEINFO();
 
 	SdXMLAppletShapeContext( SvXMLImport& rImport, sal_uInt16 nPrfx,
-		const rtl::OUString& rLocalName, 
+		const rtl::OUString& rLocalName,
 		const com::sun::star::uno::Reference< com::sun::star::xml::sax::XAttributeList>& xAttrList,
 		com::sun::star::uno::Reference< com::sun::star::drawing::XShapes >& rShapes,
         sal_Bool bTemporaryShape);
@@ -542,7 +542,7 @@ public:
 	TYPEINFO();
 
 	SdXMLPluginShapeContext( SvXMLImport& rImport, sal_uInt16 nPrfx,
-		const rtl::OUString& rLocalName, 
+		const rtl::OUString& rLocalName,
 		const com::sun::star::uno::Reference< com::sun::star::xml::sax::XAttributeList>& xAttrList,
 		com::sun::star::uno::Reference< com::sun::star::drawing::XShapes >& rShapes,
         sal_Bool bTemporaryShape);
@@ -571,7 +571,7 @@ public:
 	TYPEINFO();
 
 	SdXMLFloatingFrameShapeContext( SvXMLImport& rImport, sal_uInt16 nPrfx,
-		const rtl::OUString& rLocalName, 
+		const rtl::OUString& rLocalName,
 		const com::sun::star::uno::Reference< com::sun::star::xml::sax::XAttributeList>& xAttrList,
 		com::sun::star::uno::Reference< com::sun::star::drawing::XShapes >& rShapes,
         sal_Bool bTemporaryShape);
@@ -603,7 +603,7 @@ public:
 	TYPEINFO();
 
 	SdXMLFrameShapeContext( SvXMLImport& rImport, sal_uInt16 nPrfx,
-		const rtl::OUString& rLocalName, 
+		const rtl::OUString& rLocalName,
 		const com::sun::star::uno::Reference< com::sun::star::xml::sax::XAttributeList>& xAttrList,
 		com::sun::star::uno::Reference< com::sun::star::drawing::XShapes >& rShapes,
         sal_Bool bTemporaryShape);
@@ -657,7 +657,7 @@ public:
 	TYPEINFO();
 
 	SdXMLTableShapeContext( SvXMLImport& rImport, sal_uInt16 nPrfx,
-		const rtl::OUString& rLocalName, 
+		const rtl::OUString& rLocalName,
 		const com::sun::star::uno::Reference< com::sun::star::xml::sax::XAttributeList>& xAttrList,
 		com::sun::star::uno::Reference< com::sun::star::drawing::XShapes >& rShapes );
 	virtual ~SdXMLTableShapeContext();

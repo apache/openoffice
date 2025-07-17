@@ -26,7 +26,7 @@
 #include <com/sun/star/lang/XMultiServiceFactory.hpp>
 
 /**
- *  Register subset of UNO services from XML Office library. This is necessary when 
+ *  Register subset of UNO services from XML Office library. This is necessary when
  *  linking against the static "xol.lib".
  *
  *  @return returns sal_False if at least one component could not be registered.

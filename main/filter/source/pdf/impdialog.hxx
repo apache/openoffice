@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -64,9 +64,9 @@ class ImplErrorDialog : public ModalDialog
     FixedText       maProcessText;
     ListBox         maErrors;
     FixedText       maExplanation;
-    
+
     OKButton        maButton;
-    
+
     DECL_LINK( SelectHdl, ListBox* );
     public:
     ImplErrorDialog( const std::set< vcl::PDFWriter::ErrorCode >& );
@@ -95,7 +95,7 @@ protected:
     sal_Bool                    mbReduceImageResolution;
     sal_Int32                   mnMaxImageResolution;
     sal_Bool                    mbUseTaggedPDF;
-    sal_Int32                   mnPDFTypeSelection;    
+    sal_Int32                   mnPDFTypeSelection;
     sal_Bool                    mbExportNotes;
 	sal_Bool					mbExportNotesPages;
     sal_Bool                    mbUseTransitionEffects;
@@ -119,7 +119,7 @@ protected:
     sal_Int32                   mnInitialView;
     sal_Int32                   mnZoom;
     sal_Int32                   mnInitialPage;
- 
+
     sal_Int32                   mnPageLayout;
     sal_Bool                    mbFirstPageLeft;
 
@@ -138,7 +138,7 @@ protected:
     sal_Bool                    mbSelectionIsChecked;
 
 	sal_Bool                    mbExportRelativeFsysLinks;
-	sal_Int32                   mnViewPDFMode;    
+	sal_Int32                   mnViewPDFMode;
 	sal_Bool                    mbConvertOOoTargets;
 	sal_Bool                    mbExportBmkToPDFDestination;
 
@@ -155,7 +155,7 @@ public:
                      const Reference< XComponent >& rDoc,
                      const Reference< lang::XMultiServiceFactory >& xFact
                      );
-    ~ImpPDFTabDialog(); 
+    ~ImpPDFTabDialog();
 
     Sequence< PropertyValue >   GetFilterData();
     const com::sun::star::uno::Reference< com::sun::star::lang::XMultiServiceFactory >& getServiceFactory() const { return mxMSF; }
@@ -189,14 +189,14 @@ class ImpPDFTabGeneralPage : public SfxTabPage
     CheckBox                    maCbPDFA1b;
     CheckBox                    maCbTaggedPDF;
     sal_Bool                    mbTaggedPDFUserSelection;
-    
+
     CheckBox                    maCbExportFormFields;
     sal_Bool                    mbExportFormFieldsUserSelection;
     sal_Bool                    mbEmbedStandardFontsUserSelection;
     FixedText                   maFtFormsFormat;
     ListBox                     maLbFormsFormat;
     CheckBox                    maCbAllowDuplicateFieldNames;
-    
+
     CheckBox                    maCbExportBookmarks;
     CheckBox                    maCbExportNotes;
 	CheckBox					maCbExportNotesPages;
@@ -290,12 +290,12 @@ class ImpPDFTabViewerPage : public SfxTabPage
     FixedLine                   maFlTransitions;
     CheckBox                    maCbTransitionEffects;
     sal_Bool                    mbIsPresentation;
-    
+
     FixedLine                   maFlBookmarks;
     RadioButton                 maRbAllBookmarkLevels;
     RadioButton                 maRbVisibleBookmarkLevels;
     NumericField                maNumBookmarkLevels;
-    
+
     DECL_LINK( ToggleRbBookmarksHdl, void* );
 public:
     ImpPDFTabViewerPage( Window* pParent,
@@ -352,7 +352,7 @@ class ImpPDFTabSecurityPage : public SfxTabPage
 	long nWidth;
 
 	DECL_LINK( ClickmaPbSetPwdHdl, void* );
-    
+
     void enablePermissionControls();
 
 	void						ImplPwdPushButton( const String &, String & );
@@ -375,7 +375,7 @@ public:
 class ImpPDFTabLinksPage : public SfxTabPage
 {
     CheckBox                    maCbExprtBmkrToNmDst;
-    CheckBox                    maCbOOoToPDFTargets;    
+    CheckBox                    maCbOOoToPDFTargets;
     CheckBox                    maCbExportRelativeFsysLinks;
 
     FixedLine                   maFlDefaultTitle;
@@ -387,7 +387,7 @@ class ImpPDFTabLinksPage : public SfxTabPage
     sal_Bool                    mbOpnLnksBrowserUserState;
 
 	long nWidth;
-    
+
     DECL_LINK( ClickRbOpnLnksDefaultHdl, void* );
     DECL_LINK( ClickRbOpnLnksBrowserHdl, void* );
 

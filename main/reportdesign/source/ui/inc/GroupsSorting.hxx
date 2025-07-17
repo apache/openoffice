@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -88,7 +88,7 @@ class OGroupsSortingDialog :	public FloatingWindow
 	FixedText								m_aGroupInterval;
 	NumericField							m_aGroupIntervalEd;
 	FixedText								m_aKeepTogether;
-	ListBox									m_aKeepTogetherLst;	
+	ListBox									m_aKeepTogetherLst;
 	FixedLine								m_aFL;
 	FixedText								m_aHelpWindow;
 
@@ -111,8 +111,8 @@ private:
 	*/
 	::com::sun::star::uno::Reference< ::com::sun::star::report::XGroups>& getGroups() { return m_xGroups; }
 
-	::com::sun::star::uno::Reference< ::com::sun::star::report::XGroup> getGroup(sal_Int32 _nPos) 
-	{ 
+	::com::sun::star::uno::Reference< ::com::sun::star::report::XGroup> getGroup(sal_Int32 _nPos)
+	{
 		OSL_ENSURE(_nPos >= 0 && _nPos < m_xGroups->getCount(),"Invalid count!");
 		return ::com::sun::star::uno::Reference< ::com::sun::star::report::XGroup>(m_xGroups->getByIndex(_nPos),::com::sun::star::uno::UNO_QUERY);
 	}
@@ -150,7 +150,7 @@ private:
 	*/
 	void checkButtons(sal_Int32 _nRow);
 
-    /** clears the m_xColumns member and reset the fields 
+    /** clears the m_xColumns member and reset the fields
     *
     */
     void fillColumns();

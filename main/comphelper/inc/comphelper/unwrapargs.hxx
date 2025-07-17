@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -94,7 +94,7 @@ inline void extract(
     BOOST_PP_CAT(T, n_) & BOOST_PP_CAT(v, n_)
 
 /** The following preprocessor repetitions generate functions like
-    
+
     <pre>
         template <typename T0, typename T1, ...>
         inline void unwrapArgs(
@@ -105,7 +105,7 @@ inline void extract(
     </pre>
     (full namespace qualification ::com::sun::star has been omitted
     for brevity)
-    
+
     which unwraps the passed sequence's elements, assigning them to the
     referenced values.  Specify optional arguments as boost::optional<T>.
     If the length of the sequence is greater than the count of arguments,
@@ -113,8 +113,8 @@ inline void extract(
     If too few arguments are given in the sequence and a missing argument is
     no boost::optional<T>, then an lang::IllegalArgumentException is thrown
     with the specified xErrorContext (defaults to null-ref).
-    
-    The maximum number of service declarations can be set by defining   
+
+    The maximum number of service declarations can be set by defining
     COMPHELPER_UNWRAPARGS_MAX_ARGS; its default is 12.
 */
 #define COMPHELPER_UNWRAPARGS_make(z_, n_, unused_) \

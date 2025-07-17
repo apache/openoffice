@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -40,20 +40,20 @@ namespace basegfx
 
 	class B2DRange
 	{
-	public:		
+	public:
         typedef double 			ValueType;
         typedef DoubleTraits 	TraitsType;
 
-		B2DRange() 
+		B2DRange()
 		{
 		}
-		
+
 		explicit B2DRange(const B2DTuple& rTuple)
 		:	maRangeX(rTuple.getX()),
 			maRangeY(rTuple.getY())
 		{
 		}
-		
+
 		B2DRange(double x1,
                  double y1,
                  double x2,
@@ -72,7 +72,7 @@ namespace basegfx
 		{
             expand( rTuple2 );
 		}
-		
+
 		B2DRange(const B2DRange& rRange)
 		:	maRangeX(rRange.maRangeX),
 			maRangeY(rRange.maRangeY)
@@ -81,43 +81,43 @@ namespace basegfx
 
 		BASEGFX_DLLPUBLIC explicit B2DRange(const B2IRange& rRange);
 
-		bool isEmpty() const 
+		bool isEmpty() const
 		{
 			return (
-				maRangeX.isEmpty() 
+				maRangeX.isEmpty()
 				|| maRangeY.isEmpty()
 				);
 		}
 
-		void reset() 
-		{ 
-			maRangeX.reset(); 
-			maRangeY.reset(); 
+		void reset()
+		{
+			maRangeX.reset();
+			maRangeY.reset();
 		}
 
-		bool operator==( const B2DRange& rRange ) const 
-		{ 
-			return (maRangeX == rRange.maRangeX 
-				&& maRangeY == rRange.maRangeY); 
+		bool operator==( const B2DRange& rRange ) const
+		{
+			return (maRangeX == rRange.maRangeX
+				&& maRangeY == rRange.maRangeY);
 		}
 
-		bool operator!=( const B2DRange& rRange ) const 
-		{ 
-			return (maRangeX != rRange.maRangeX 
-				|| maRangeY != rRange.maRangeY); 
+		bool operator!=( const B2DRange& rRange ) const
+		{
+			return (maRangeX != rRange.maRangeX
+				|| maRangeY != rRange.maRangeY);
 		}
 
-		B2DRange& operator=(const B2DRange& rRange) 
-		{ 
-			maRangeX = rRange.maRangeX; 
-			maRangeY = rRange.maRangeY; 
-			return *this; 
+		B2DRange& operator=(const B2DRange& rRange)
+		{
+			maRangeX = rRange.maRangeX;
+			maRangeY = rRange.maRangeY;
+			return *this;
 		}
 
 		bool equal(const B2DRange& rRange) const
         {
-			return (maRangeX.equal(rRange.maRangeX) 
-                    && maRangeY.equal(rRange.maRangeY)); 
+			return (maRangeX.equal(rRange.maRangeX)
+                    && maRangeY.equal(rRange.maRangeY));
         }
 
         double getMinX() const
@@ -157,7 +157,7 @@ namespace basegfx
 				maRangeY.getMinimum()
 				);
 		}
-		
+
 		B2DPoint getMaximum() const
 		{
 			return B2DPoint(
@@ -173,7 +173,7 @@ namespace basegfx
 				maRangeY.getRange()
 				);
 		}
-	
+
 		B2DPoint getCenter() const
 		{
 			return B2DPoint(
@@ -181,21 +181,21 @@ namespace basegfx
 				maRangeY.getCenter()
 				);
 		}
-	
+
 		double getCenterX() const
 		{
 			return maRangeX.getCenter();
 		}
-	
+
 		double getCenterY() const
 		{
 			return maRangeY.getCenter();
 		}
-	
+
 		bool isInside(const B2DTuple& rTuple) const
 		{
 			return (
-				maRangeX.isInside(rTuple.getX()) 
+				maRangeX.isInside(rTuple.getX())
 				&& maRangeY.isInside(rTuple.getY())
 				);
 		}
@@ -203,7 +203,7 @@ namespace basegfx
 		bool isInside(const B2DRange& rRange) const
 		{
 			return (
-				maRangeX.isInside(rRange.maRangeX) 
+				maRangeX.isInside(rRange.maRangeX)
 				&& maRangeY.isInside(rRange.maRangeY)
 				);
 		}
@@ -211,7 +211,7 @@ namespace basegfx
 		bool overlaps(const B2DRange& rRange) const
 		{
 			return (
-				maRangeX.overlaps(rRange.maRangeX) 
+				maRangeX.overlaps(rRange.maRangeX)
 				&& maRangeY.overlaps(rRange.maRangeY)
 				);
 		}
@@ -219,7 +219,7 @@ namespace basegfx
 		bool overlapsMore(const B2DRange& rRange) const
 		{
 			return (
-				maRangeX.overlapsMore(rRange.maRangeX) 
+				maRangeX.overlapsMore(rRange.maRangeX)
 				&& maRangeY.overlapsMore(rRange.maRangeY)
 				);
 		}
@@ -232,20 +232,20 @@ namespace basegfx
 
 		void expand(const B2DRange& rRange)
 		{
-			maRangeX.expand(rRange.maRangeX); 
-			maRangeY.expand(rRange.maRangeY); 
+			maRangeX.expand(rRange.maRangeX);
+			maRangeY.expand(rRange.maRangeY);
 		}
 
 		void intersect(const B2DRange& rRange)
 		{
-			maRangeX.intersect(rRange.maRangeX); 
-			maRangeY.intersect(rRange.maRangeY); 
+			maRangeX.intersect(rRange.maRangeX);
+			maRangeY.intersect(rRange.maRangeY);
 		}
 
 		void grow(double fValue)
 		{
-			maRangeX.grow(fValue); 
-			maRangeY.grow(fValue); 
+			maRangeX.grow(fValue);
+			maRangeY.grow(fValue);
 		}
 
 		BASEGFX_DLLPUBLIC void transform(const B2DHomMatrix& rMatrix);

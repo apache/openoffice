@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -87,21 +87,21 @@ const sal_uInt16 TYPE_BIT		= 31;
 		::rtl::OUString	aLiteralSuffix; // Suffix zum Quoten
 		::rtl::OUString	aCreateParams;  // Parameter zum Erstellen
 		::rtl::OUString	aLocalTypeName;
-						
+
 		sal_Int32		nPrecision;		// Laenge des Types
         sal_Int32		nType;			// Datenbanktyp
-		
+
 		sal_Int16		nMaximumScale;	// Nachkommastellen
 		sal_Int16		nMinimumScale;  // Min Nachkommastellen
-						
+
 		sal_Int16		nSearchType;	// kann nach dem Typen gesucht werden
-		
-						
+
+
 		sal_Bool		bCurrency		: 1,	// Waehrung
 						bAutoIncrement	: 1,	// Ist es ein automatisch incrementierendes Feld
 						bNullable		: 1,	// Kann das Feld NULL annehmen
 						bCaseSensitive	: 1,	// Ist der Type Casesensitive
-						bUnsigned		: 1;	// Ist der Type Unsigned	
+						bUnsigned		: 1;	// Ist der Type Unsigned
 
 		OTypeInfo()
                 :nPrecision(0)

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -70,7 +70,7 @@ typedef sal_uInt32		ControlType;
 // but does NOT allow data entry
 #define CTRL_LISTBOX			35
 
-// An edit field together with two little 
+// An edit field together with two little
 // buttons on the side (aka spin field)
 #define CTRL_SPINBOX			40
 
@@ -122,7 +122,7 @@ typedef sal_uInt32		ControlType;
 #define CTRL_PROGRESS           131
 // Progress bar for the intro window
 // (aka splash screen), in case some
-// wants native progress bar in the 
+// wants native progress bar in the
 // application but not for the splash
 // screen (used in desktop/)
 #define CTRL_INTROPROGRESS      132
@@ -180,10 +180,10 @@ typedef sal_uInt32		ControlPart;
     However aqua draws a little outside. The canonical way would be to enhance the
     HitTestNativeControl passing a ScrollbarValue additionally so all necessary
     information is available in the call.
-    .    
+    .
     However since there is only this one small exception we will deviate a little and
     instead pass the respective rect as control region to allow for a small correction.
-    
+
     So all places using HitTestNativeControl on PART_THUMB_HORZ, PART_THUMB_VERT,
     PART_TRACK_HORZ_LEFT, PART_TRACK_HORZ_RIGHT, PART_TRACK_VERT_UPPER, PART_TRACK_VERT_LOWER
     do not use the control rectangle as region but the actuall part rectangle, making
@@ -207,7 +207,7 @@ typedef sal_uInt32		ControlPart;
 #define PART_DRAW_BACKGROUND_HORZ		1000
 #define PART_DRAW_BACKGROUND_VERT		1001
 
-// GTK+ also draws tabs right->left since there is a 
+// GTK+ also draws tabs right->left since there is a
 // hardcoded 2 pixel overlap between adjacent tabs
 #define PART_TABS_DRAW_RTL			3000
 
@@ -289,7 +289,7 @@ class VCL_DLLPUBLIC ImplControlValue
 			: mType( CTRL_GENERIC ), mTristate(BUTTONVALUE_DONTKNOW), mNumber(0) {}
 
 		virtual ~ImplControlValue();
-		
+
 		ControlType getType() const { return mType; }
 
 		inline ButtonValue		getTristateVal( void ) const { return mTristate; }
@@ -303,7 +303,7 @@ class VCL_DLLPUBLIC ImplControlValue
  *
  *   Value container for scrollbars.
  */
-class VCL_DLLPUBLIC ScrollbarValue : public ImplControlValue 
+class VCL_DLLPUBLIC ScrollbarValue : public ImplControlValue
 {
 	public:
 		long			mnMin;
@@ -337,7 +337,7 @@ class VCL_DLLPUBLIC SliderValue : public ImplControlValue
 		long			mnCur;
 		Rectangle       maThumbRect;
 		ControlState    mnThumbState;
-		
+
 		SliderValue()
 		: ImplControlValue( CTRL_SLIDER, BUTTONVALUE_DONTKNOW, 0 )
 		, mnMin( 0 ), mnMax( 0 ), mnCur( 0 ), mnThumbState( 0 )
@@ -458,7 +458,7 @@ public:
     : ImplControlValue( CTRL_PUSHBUTTON, BUTTONVALUE_DONTKNOW, 0 )
     , mbBevelButton( false ), mbSingleLine( true ) {}
     virtual ~PushButtonValue();
-    
+
     bool            mbBevelButton:1;
     bool            mbSingleLine:1;
 };

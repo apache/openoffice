@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -49,14 +49,14 @@ class SmXMLImportWrapper
 public:
     SmXMLImportWrapper(com::sun::star::uno::Reference<com::sun::star::frame::XModel> &rRef)
         : xModel(rRef) {}
-    
+
     sal_uLong Import(SfxMedium &rMedium);
 
     sal_uLong ReadThroughComponent(
         ::com::sun::star::uno::Reference< ::com::sun::star::io::XInputStream > xInputStream,
         ::com::sun::star::uno::Reference< ::com::sun::star::lang::XComponent > xModelComponent,
         ::com::sun::star::uno::Reference< ::com::sun::star::lang::XMultiServiceFactory > & rFactory,
-        ::com::sun::star::uno::Reference< 
+        ::com::sun::star::uno::Reference<
             ::com::sun::star::beans::XPropertySet > & rPropSet,
         const sal_Char* pFilterName,
         sal_Bool bEncrypted );
@@ -67,7 +67,7 @@ public:
         const sal_Char* pStreamName,
         const sal_Char* pCompatibilityStreamName,
         ::com::sun::star::uno::Reference< ::com::sun::star::lang::XMultiServiceFactory > & rFactory,
-        ::com::sun::star::uno::Reference< 
+        ::com::sun::star::uno::Reference<
             ::com::sun::star::beans::XPropertySet > & rPropSet,
         const sal_Char* pFilterName );
 };
@@ -103,11 +103,11 @@ public:
     // XUnoTunnel
     sal_Int64 SAL_CALL getSomething( const ::com::sun::star::uno::Sequence< sal_Int8 >& rId ) throw(::com::sun::star::uno::RuntimeException);
     static const ::com::sun::star::uno::Sequence< sal_Int8 > & getUnoTunnelId() throw();
-    
+
     void SAL_CALL endDocument(void)
         throw( ::com::sun::star::xml::sax::SAXException,
         ::com::sun::star::uno::RuntimeException );
-    
+
     SvXMLImportContext *CreateContext(sal_uInt16 nPrefix,
         const rtl::OUString &rLocalName,
         const com::sun::star::uno::Reference <
@@ -236,7 +236,7 @@ public:
         const rtl::OUString &rLocalName,
         const com::sun::star::uno::Reference <
         com::sun::star::xml::sax::XAttributeList> &xAttrList);
-    
+
     const SvXMLTokenMap &GetPresLayoutElemTokenMap();
     const SvXMLTokenMap &GetPresLayoutAttrTokenMap();
     const SvXMLTokenMap &GetFencedAttrTokenMap();
@@ -246,7 +246,7 @@ public:
     const SvXMLTokenMap &GetPresScriptEmptyElemTokenMap();
     const SvXMLTokenMap &GetPresTableElemTokenMap();
     const SvXMLTokenMap &GetColorTokenMap();
-    
+
     SmNodeStack & GetNodeStack()    { return aNodeStack; }
     SmNode *GetTree()               { return aNodeStack.Pop(); }
     sal_Bool GetSuccess()           { return bSuccess; }

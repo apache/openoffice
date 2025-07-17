@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -339,7 +339,7 @@ namespace rtl {
 
 /** Helper base class for a late-initialized (default-constructed)
     static variable, implementing the double-checked locking pattern correctly.
-    
+
     @derive
     Derive from this class (common practice), e.g.
     <pre>
@@ -348,7 +348,7 @@ namespace rtl {
     MyType & rStatic = MyStatic::get();
     ...
     </pre>
-    
+
     @tplparam T
               variable's type
     @tplparam Unique
@@ -361,7 +361,7 @@ class Static {
 public:
     /** Gets the static.  Mutual exclusion is performed using the
         osl global mutex.
-        
+
         @return
                 static variable
     */
@@ -382,7 +382,7 @@ private:
 
 /** Helper class for a late-initialized static aggregate, e.g. an array,
     implementing the double-checked locking pattern correctly.
-    
+
     @tplparam T
               aggregate's element type
     @tplparam InitAggregate
@@ -393,7 +393,7 @@ class StaticAggregate {
 public:
     /** Gets the static aggregate, late-initializing.
         Mutual exclusion is performed using the osl global mutex.
-        
+
         @return
                 aggregate
     */
@@ -407,7 +407,7 @@ public:
 
 /** Helper base class for a late-initialized static variable,
     implementing the double-checked locking pattern correctly.
-    
+
     @derive
     Derive from this class (common practice),
     providing an initializer functor class, e.g.
@@ -422,7 +422,7 @@ public:
     MyType & rStatic = MyStatic::get();
     ...
     </pre>
-    
+
     @tplparam T
               variable's type
     @tplparam InitData
@@ -442,7 +442,7 @@ class StaticWithInit {
 public:
     /** Gets the static.  Mutual exclusion is performed using the
         osl global mutex.
-        
+
         @return
                 static variable
     */

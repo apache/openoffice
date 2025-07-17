@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -73,7 +73,7 @@ namespace slideshow
                 const AnimatableShapeSharedPtr& 						rShape,
                 const ShapeManagerSharedPtr& 							rShapeManager,
                 const ::basegfx::B2DVector&                             rSlideSize,
-                ::com::sun::star::uno::Reference< 
+                ::com::sun::star::uno::Reference<
                 	::com::sun::star::animations::XTransitionFilter > const&  xTransition );
 
 
@@ -111,14 +111,14 @@ namespace slideshow
                 ScreenUpdater&                                 rScreenUpdater,
                 EventMultiplexer&                              rEventMultiplexer,
                 const com::sun::star::uno::Reference<
-                      com::sun::star::presentation::XTransitionFactory>& 
+                      com::sun::star::presentation::XTransitionFactory>&
                                                                xOptionalFactory,
                 sal_Int16                                      nTransitionType,
                 sal_Int16                                      nTransitionSubType,
                 bool                                           bTransitionDirection,
                 const RGBColor&                                rTransitionFadeColor,
                 const SoundPlayerSharedPtr&                    rSoundPlayer );
-            
+
         private:
             static const TransitionInfo* getTransitionInfo(
                 sal_Int16 nTransitionType, sal_Int16 nTransitionSubType );
@@ -129,11 +129,11 @@ namespace slideshow
                 const AnimatableShapeSharedPtr& 						rShape,
                 const ShapeManagerSharedPtr& 							rShapeManager,
                 const ::basegfx::B2DVector&                             rSlideSize,
-                ::com::sun::star::uno::Reference< 
+                ::com::sun::star::uno::Reference<
                 	::com::sun::star::animations::XTransitionFilter > const& xTransition,
                 sal_Int16               								nTransitionType,
-                sal_Int16               								nTransitionSubType );            
-            
+                sal_Int16               								nTransitionSubType );
+
             // static factory
             TransitionFactory();
             ~TransitionFactory();

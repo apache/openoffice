@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -34,7 +34,7 @@ enum BASETYPE
 	BT_ANY,
 	BT_TYPE,
 	BT_BOOLEAN,
-	BT_CHAR,		
+	BT_CHAR,
 	BT_STRING,
 	BT_FLOAT,
 	BT_DOUBLE,
@@ -54,7 +54,7 @@ enum IdlTypeDecl
 	CPPUTYPEDECL_ALLTYPES,
 	CPPUTYPEDECL_NOINTERFACES,
 	CPPUTYPEDECL_ONLYINTERFACES
-};	
+};
 
 class IdlOptions;
 class FileStream;
@@ -64,7 +64,7 @@ class IdlType
 public:
 	IdlType(TypeReader& typeReader,
 			 const ::rtl::OString& typeName,
-			 const TypeManager& typeMgr, 
+			 const TypeManager& typeMgr,
 			 const TypeDependency& typeDependencies);
 
 	virtual ~IdlType();
@@ -101,7 +101,7 @@ protected:
 
 	::rtl::OString	checkSpecialIdlType(const ::rtl::OString& type);
 	::rtl::OString	checkRealBaseType(const ::rtl::OString& type, sal_Bool bResolveTypeOnly = sal_False);
-	
+
 protected:
 	sal_uInt32 			m_inheritedMemberCount;
 
@@ -109,8 +109,8 @@ protected:
 	::rtl::OString		m_typeName;
 	::rtl::OString		m_name;
 	TypeReader			m_reader;
-	TypeManager&		m_typeMgr;	
-	TypeDependency  	m_dependencies;	
+	TypeManager&		m_typeMgr;
+	TypeDependency  	m_dependencies;
 };
 
 class InterfaceType : public IdlType
@@ -118,7 +118,7 @@ class InterfaceType : public IdlType
 public:
 	InterfaceType(TypeReader& typeReader,
 				 const ::rtl::OString& typeName,
-				 const TypeManager& typeMgr, 
+				 const TypeManager& typeMgr,
 				 const TypeDependency& typeDependencies);
 
 	virtual ~InterfaceType();
@@ -145,7 +145,7 @@ class ModuleType : public IdlType
 public:
 	ModuleType(TypeReader& typeReader,
 		   	   const ::rtl::OString& typeName,
-			   const TypeManager& typeMgr, 
+			   const TypeManager& typeMgr,
 			   const TypeDependency& typeDependencies);
 
 	virtual ~ModuleType();
@@ -160,7 +160,7 @@ class ConstantsType : public ModuleType
 public:
 	ConstantsType(TypeReader& typeReader,
 		   	   const ::rtl::OString& typeName,
-			   const TypeManager& typeMgr, 
+			   const TypeManager& typeMgr,
 			   const TypeDependency& typeDependencies);
 
 	virtual ~ConstantsType();
@@ -173,7 +173,7 @@ class StructureType : public IdlType
 public:
 	StructureType(TypeReader& typeReader,
 				  const ::rtl::OString& typeName,
-				  const TypeManager& typeMgr, 
+				  const TypeManager& typeMgr,
 				  const TypeDependency& typeDependencies);
 
 	virtual ~StructureType();
@@ -188,7 +188,7 @@ class ExceptionType : public IdlType
 public:
 	ExceptionType(TypeReader& typeReader,
 				  const ::rtl::OString& typeName,
-				  const TypeManager& typeMgr, 
+				  const TypeManager& typeMgr,
 				  const TypeDependency& typeDependencies);
 
 	virtual ~ExceptionType();
@@ -203,7 +203,7 @@ class EnumType : public IdlType
 public:
 	EnumType(TypeReader& typeReader,
 	 		 const ::rtl::OString& typeName,
-	 		 const TypeManager& typeMgr, 
+	 		 const TypeManager& typeMgr,
 	 		 const TypeDependency& typeDependencies);
 
 	virtual ~EnumType();
@@ -226,13 +226,13 @@ public:
 
 
 sal_Bool produceType(const ::rtl::OString& typeName,
-					 TypeManager& typeMgr, 
+					 TypeManager& typeMgr,
 					 TypeDependency& typeDependencies,
 					 IdlOptions* pOptions)
 				 throw( CannotDumpException );
 
 /**
- * This function returns a C++ scoped name, represents the namespace 
+ * This function returns a C++ scoped name, represents the namespace
  * scoping of this type, e.g. com:.sun::star::uno::XInterface. If the scope of
  * the type is equal scope, the relativ name will be used.
  */

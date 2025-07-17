@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -94,7 +94,7 @@ namespace pcr
 
             @param _bSorted
                 determines whether the list entries should be sorted
-            
+
             @return
                 the newly created control
         */
@@ -105,7 +105,7 @@ namespace pcr
                 sal_Bool _bReadOnlyControl,
                 sal_Bool _bSorted
             );
-                
+
         /** creates an <member scope="com::sun::star::inspection">PropertyControlType::ComboBox</member>-type control
             and fills it with initial values
 
@@ -117,10 +117,10 @@ namespace pcr
 
             @param _bReadOnlyControl
                 determines whether the control should be read-only
-            
+
             @param _bSorted
                 determines whether the list entries should be sorted
-            
+
             @return
                 the newly created control
         */
@@ -148,7 +148,7 @@ namespace pcr
                 (<member scope="com::sun::star::inspection">XNumericControl::MaxValue</member>)
             @param _bReadOnlyControl
                 determines whether the control should be read-only
-            
+
             @return
                 the newly created control
         */
@@ -160,7 +160,7 @@ namespace pcr
                 const ::com::sun::star::beans::Optional< double >& _rMaxValue,
                 sal_Bool _bReadOnlyControl
             );
-                
+
         /** marks the document passed in our UNO context as modified
 
             The method looks up a value called "ContextDocument" in the given UNO component context,

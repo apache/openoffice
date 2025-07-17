@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -69,7 +69,7 @@ SV_DECL_REF(DrawDocShell)
 class SD_DLLPUBLIC SdPageObjsTLB : public SvTreeListBox
 {
 private:
-	
+
 	static sal_Bool  SD_DLLPRIVATE bIsInDrag;      // static, falls der Navigator im ExecuteDrag geloescht wird
 
 	//Solution: set contenttree in SdNavigatorWin
@@ -80,15 +80,15 @@ public:
 	class SdPageObjsTransferable : public SdTransferable
 	{
 	public:
-        SdPageObjsTransferable( 
-            SdPageObjsTLB& rParent, 
+        SdPageObjsTransferable(
+            SdPageObjsTLB& rParent,
             const INetBookmark& rBookmark,
             ::sd::DrawDocShell& rDocShell,
             NavigatorDragType eDragType,
             const ::com::sun::star::uno::Any& rTreeListBoxData );
 	    ::sd::DrawDocShell&     GetDocShell() const;
 	    NavigatorDragType   GetDragType() const;
-	    
+
     	static const ::com::sun::star::uno::Sequence< sal_Int8 >& getUnoTunnelId();
         static SdPageObjsTransferable* getImplementation( const ::com::sun::star::uno::Reference< ::com::sun::star::uno::XInterface >& rxData ) throw();
         /** Return a temporary transferable data flavor that is used
@@ -109,7 +109,7 @@ public:
 		NavigatorDragType   meDragType;
         const ::com::sun::star::uno::Any maTreeListBoxData;
 		SD_DLLPRIVATE virtual				~SdPageObjsTransferable();
-		
+
 		SD_DLLPRIVATE virtual void		AddSupportedFormats();
 		SD_DLLPRIVATE virtual sal_Bool	GetData( const ::com::sun::star::datatransfer::DataFlavor& rFlavor );
 		SD_DLLPRIVATE virtual void		DragFinished( sal_Int8 nDropAction );
@@ -131,7 +131,7 @@ public:
     bool PageBelongsToCurrentShow (const SdPage* pPage) const;
 
 protected:
-	
+
 	Window* 				mpParent;
 	const SdDrawDocument*	mpDoc;
 	SdDrawDocument* 		mpBookmarkDoc;
@@ -152,7 +152,7 @@ protected:
 	sal_Bool					mbSaveTreeItemState;
 	String					maSelectionEntryText;
 
-	// DragSourceHelper		
+	// DragSourceHelper
 	virtual void			StartDrag( sal_Int8 nAction, const Point& rPosPixel );
 
 	// DropTargetHelper
@@ -160,7 +160,7 @@ protected:
 	virtual	sal_Int8		ExecuteDrop( const ExecuteDropEvent& rEvt );
 
 	virtual void			RequestingChilds( SvLBoxEntry* pParent );
-	
+
     void                    DoDrag();
 	void					OnDragFinished( sal_uInt8 nDropAction );
 
@@ -180,7 +180,7 @@ protected:
     String GetObjectName (
         const SdrObject* pObject,
         const bool bCreate = true) const;
-    void                    CloseBookmarkDoc();	
+    void                    CloseBookmarkDoc();
 							DECL_STATIC_LINK(SdPageObjsTLB, ExecDragHdl, void*);
 
     /** Handle the reordering of entries in the navigator.  This method
@@ -192,13 +192,13 @@ protected:
 		SvLBoxEntry*  pEntry,
 		SvLBoxEntry*& rpNewParent,
 		sal_uLong&		  rNewChildPos);
-    
+
     using Window::GetDropTarget;
     virtual SvLBoxEntry* GetDropTarget (const Point& rLocation);
 	virtual void 	InitEntry(SvLBoxEntry*,const XubString&,const Image&,const Image&,SvLBoxButtonKind );
 
 public:
-							
+
 							SdPageObjsTLB( Window* pParent, const SdResId& rSdResId );
 							~SdPageObjsTLB();
    // helper function for 	GetEntryAltText and GetEntryLongDescription
@@ -207,10 +207,10 @@ public:
     String  		GetEntryLongDescription( SvLBoxEntry* pEntry ) const;
 	virtual void			SelectHdl();
 	virtual void			KeyInput( const KeyEvent& rKEvt );
-							
+
 	void					SetViewFrame( SfxViewFrame* pViewFrame ) { mpFrame = pViewFrame; }
 	SfxViewFrame*			GetViewFrame() const { return mpFrame; }
-							
+
 	void					Fill( const SdDrawDocument*, sal_Bool bAllPages, const String& rDocName );
 	void					Fill( const SdDrawDocument*, SfxMedium* pSfxMedium, const String& rDocName );
     void                    SetShowAllShapes (const bool bShowAllShapes, const bool bFill);
@@ -230,9 +230,9 @@ public:
 	List*					GetSelectEntryList( sal_uInt16 nDepth );
 	SdDrawDocument*			GetBookmarkDoc(SfxMedium* pMedium = NULL);
 	::sd::DrawDocShell*			GetDropDocSh() { return(mpDropDocSh); }
-	
+
 	sal_Bool                    IsLinkableSelected() const { return mbLinkableSelected; }
-	
+
 	static sal_Bool				IsInDrag();
 	using SvLBox::ExecuteDrop;
 
@@ -247,7 +247,7 @@ public:
             doc shell has been severed.
     */
     static ::sd::ViewShell* GetViewShellForDocShell (::sd::DrawDocShell &rDocShell);
-    
+
 private:
     /** This flag controls whether all shapes are shown as children of pages
         and group shapes or only the named shapes.

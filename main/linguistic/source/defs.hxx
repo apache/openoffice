@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -53,15 +53,15 @@ struct LangSvcEntries
     bool        bDoWarnAgain;
 
     LangSvcEntries() : nLastTriedSvcIndex(-1), bAlreadyWarned(false), bDoWarnAgain(false) {}
-    
+
     inline LangSvcEntries( const css::uno::Sequence< ::rtl::OUString > &rSvcImplNames ) :
 		aSvcImplNames(rSvcImplNames),
-        nLastTriedSvcIndex(-1), bAlreadyWarned(false), bDoWarnAgain(false) 
+        nLastTriedSvcIndex(-1), bAlreadyWarned(false), bDoWarnAgain(false)
     {
     }
 
-    inline LangSvcEntries( const ::rtl::OUString &rSvcImplName ) : 
-        nLastTriedSvcIndex(-1), bAlreadyWarned(false), bDoWarnAgain(false) 
+    inline LangSvcEntries( const ::rtl::OUString &rSvcImplName ) :
+        nLastTriedSvcIndex(-1), bAlreadyWarned(false), bDoWarnAgain(false)
     {
         aSvcImplNames.realloc(1);
         aSvcImplNames[0] = rSvcImplName;
@@ -71,7 +71,7 @@ struct LangSvcEntries
     void    SetAlreadyWarned( bool bVal )   { bAlreadyWarned = 0 != bVal; }
     bool    IsDoWarnAgain() const           { return bDoWarnAgain != 0; }
     void    SetDoWarnAgain( bool bVal )     { bDoWarnAgain = 0 != bVal; }
-    
+
     inline void Clear()
     {
         aSvcImplNames.realloc(0);
@@ -95,7 +95,7 @@ struct LangSvcEntries_Grammar : public LangSvcEntries
 
     LangSvcEntries_Grammar() : LangSvcEntries() {}
     LangSvcEntries_Grammar( const ::rtl::OUString &rSvcImplName ) : LangSvcEntries( rSvcImplName ) {}
-};    
+};
 
 struct LangSvcEntries_Hyph : public LangSvcEntries
 {
@@ -103,7 +103,7 @@ struct LangSvcEntries_Hyph : public LangSvcEntries
 
     LangSvcEntries_Hyph() : LangSvcEntries() {}
     LangSvcEntries_Hyph( const ::rtl::OUString &rSvcImplName ) : LangSvcEntries( rSvcImplName ) {}
-};    
+};
 
 struct LangSvcEntries_Thes : public LangSvcEntries
 {
@@ -111,7 +111,7 @@ struct LangSvcEntries_Thes : public LangSvcEntries
 
     LangSvcEntries_Thes() : LangSvcEntries() {}
     LangSvcEntries_Thes( const css::uno::Sequence< ::rtl::OUString > &rSvcImplNames ) : LangSvcEntries( rSvcImplNames ) {}
-};    
+};
 
 ///////////////////////////////////////////////////////////////////////////
 
@@ -119,8 +119,8 @@ struct LangSvcEntries_Thes : public LangSvcEntries
 class LinguDispatcher
 {
 public:
-    enum DspType    { DSP_SPELL, DSP_HYPH, DSP_THES, DSP_GRAMMAR };     
-	
+    enum DspType    { DSP_SPELL, DSP_HYPH, DSP_THES, DSP_GRAMMAR };
+
     virtual void SetServiceList( const css::lang::Locale &rLocale, const css::uno::Sequence< rtl::OUString > &rSvcImplNames ) = 0;
     virtual css::uno::Sequence< rtl::OUString > GetServiceList( const css::lang::Locale &rLocale ) const = 0;
     virtual DspType GetDspType() const = 0;

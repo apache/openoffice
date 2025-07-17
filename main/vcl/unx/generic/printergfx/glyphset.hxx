@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -65,14 +65,14 @@ private:
     rtl::OString    GetGlyphSetEncodingName (sal_Int32 nGlyphSetID);
 
     rtl::OString    GetReencodedFontName (sal_Int32 nGlyphSetID);
-    void            PSDefineReencodedFont (osl::File* pOutFile, 
+    void            PSDefineReencodedFont (osl::File* pOutFile,
                                            sal_Int32 nGlyphSetID);
 
-    sal_Bool		GetCharID (sal_Unicode nChar, 
+    sal_Bool		GetCharID (sal_Unicode nChar,
 								sal_uChar* nOutGlyphID, sal_Int32* nOutGlyphSetID);
-    sal_Bool		LookupCharID (sal_Unicode nChar, 
+    sal_Bool		LookupCharID (sal_Unicode nChar,
                                    sal_uChar* nOutGlyphID, sal_Int32* nOutGlyphSetID);
-    sal_Bool		AddCharID (sal_Unicode nChar, 
+    sal_Bool		AddCharID (sal_Unicode nChar,
                                 sal_uChar* nOutGlyphID,
                                 sal_Int32* nOutGlyphSetID);
     sal_Bool		GetGlyphID( sal_GlyphId nGlyphId, sal_Unicode nUnicode,
@@ -87,9 +87,9 @@ private:
     sal_uChar       GetAnsiMapping (sal_Unicode nUnicodeChar);
     sal_uChar       GetSymbolMapping (sal_Unicode nUnicodeChar);
 
-    void			ImplDrawText (PrinterGfx &rGfx, const Point& rPoint, 
+    void			ImplDrawText (PrinterGfx &rGfx, const Point& rPoint,
                                   const sal_Unicode* pStr, sal_Int16 nLen);
-    void			ImplDrawText (PrinterGfx &rGfx, const Point& rPoint, 
+    void			ImplDrawText (PrinterGfx &rGfx, const Point& rPoint,
                                   const sal_Unicode* pStr, sal_Int16 nLen,
                                   const sal_Int32* pDeltaArray);
 
@@ -101,17 +101,17 @@ public:
 
     sal_Int32		GetFontID ();
     fonttype::type  GetFontType ();
-    static rtl::OString    
-    GetReencodedFontName (rtl_TextEncoding nEnc, 
+    static rtl::OString
+    GetReencodedFontName (rtl_TextEncoding nEnc,
                           const rtl::OString &rFontName);
     static rtl::OString
-    GetGlyphSetEncodingName (rtl_TextEncoding nEnc, 
+    GetGlyphSetEncodingName (rtl_TextEncoding nEnc,
                              const rtl::OString &rFontName);
     sal_Bool		IsVertical ();
 
     sal_Bool		SetFont (sal_Int32 nFontID, sal_Bool bVertical);
-	
-    void			DrawText (PrinterGfx &rGfx, const Point& rPoint, 
+
+    void			DrawText (PrinterGfx &rGfx, const Point& rPoint,
                               const sal_Unicode* pStr, sal_Int16 nLen,
                               const sal_Int32* pDeltaArray = NULL);
     void			DrawGlyphs (PrinterGfx& rGfx,

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -33,7 +33,7 @@
 #include <set>
 
 class SvXMLExport;
-namespace com { namespace sun { namespace star { 
+namespace com { namespace sun { namespace star {
 	namespace beans { class XPropertySet; }
 	namespace beans { struct PropertyValue; }
 	namespace text { class XText; }
@@ -56,7 +56,7 @@ typedef ::std::map<
 			ChangesListType* > ChangesMapType;
 
 
-/** 
+/**
  * This class handles the export of redline portions.
  * It is to be called from XMLTextParagraphExport.
  */
@@ -92,7 +92,7 @@ class XMLRedlineExport
 	SvXMLExport& rExport;
 
 
-	// handling of change recording: 
+	// handling of change recording:
 
 	// To support change tracking in headers and footers we need to
 	// write these changes separately. To do this, we record the
@@ -103,7 +103,7 @@ class XMLRedlineExport
 	ChangesMapType aChangeMap;				/// map of recorded changes
 
 	/// list of current changes; is NULL or points to member of aChangeMap
-	ChangesListType* pCurrentChangesList;	
+	ChangesListType* pCurrentChangesList;
 
 
 public:
@@ -111,7 +111,7 @@ public:
 
 	~XMLRedlineExport();
 
-	/// export a change 
+	/// export a change
 	void ExportChange(
 		/// PropertySet of RedlinePortion
 		const ::com::sun::star::uno::Reference<
@@ -133,7 +133,7 @@ public:
 		const ::com::sun::star::uno::Reference<
 			::com::sun::star::text::XText> & rText);
 
-	/// Do not record changes. 
+	/// Do not record changes.
 	/// Same as SetCurrentXText(Reference<XText>) with empty argument.
 	void SetCurrentXText();
 
@@ -159,7 +159,7 @@ public:
 		sal_Bool bStart);
 
 private:
-	
+
 	/// export the change mark contained in the text body
 	void ExportChangeInline(
 		/// PropertySet of RedlinePortion

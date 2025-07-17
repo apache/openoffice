@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -30,7 +30,7 @@
 #	include <vos/vosdllapi.h>
 
 namespace vos
-{     
+{
 
 // ***************************************
 // Object super class
@@ -64,7 +64,7 @@ public:
 
 public:
 
-	/** Define private new and delete operator because of compiler bug, 
+	/** Define private new and delete operator because of compiler bug,
 		when allocating and deleteing a exported class
 	*/
 	void* SAL_CALL operator new(size_t size);
@@ -100,7 +100,7 @@ struct OCreateParam
 
 	///
 	OCreateParam(void *pParam)
-	{	
+	{
 		m_Size = sizeof(OCreateParam);
 		m_pParam = pParam;
 	}
@@ -115,7 +115,7 @@ struct VOS_DLLPUBLIC OClassInfo
 	///
 	sal_Int32			 m_nObjectSize;
 	/// schema number of the loaded class
-	sal_uInt32	 m_wSchema;				
+	sal_uInt32	 m_wSchema;
 
 	///
 	OObject* (SAL_CALL * m_pfnCreateObject)(const OCreateParam&);	// NULL => abstract class
@@ -123,7 +123,7 @@ struct VOS_DLLPUBLIC OClassInfo
 	/// linked list of registered classes
 	const OClassInfo* m_pBaseClass;
 	/// linked list of registered classes
-	const OClassInfo* m_pNextClass;			
+	const OClassInfo* m_pNextClass;
 
 	///
 	OObject* SAL_CALL createObject(const OCreateParam& rParam) const;
@@ -137,7 +137,7 @@ struct VOS_DLLPUBLIC OClassInfo
 	///
 	OClassInfo(const sal_Char *pClassName, sal_Int32 ObjectSize,
 		       const OClassInfo* pBaseClass = NULL, sal_uInt32 Schema = (sal_uInt32)-1,
-			   OObject* (SAL_CALL * fnCreateObject)(const OCreateParam&) = NULL); 
+			   OObject* (SAL_CALL * fnCreateObject)(const OCreateParam&) = NULL);
 };
 
 // *****************************************************************
@@ -162,7 +162,7 @@ struct VOS_CLASSINIT
 		{ return (VOS_CLASSINFO(class_name)); } \
     const VOS_NAMESPACE(OClassInfo, vos)& SAL_CALL class_name::classInfo() \
 		{ return (__ClassInfo__); }
-	
+
 #define VOS_DECLARE_CLASSINFO(class_name) \
 public: \
 	static const VOS_NAMESPACE(VOS_CLASSINIT, vos) __ClassInit__; \

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -54,12 +54,12 @@ public:
 
 	///=====  XInterface  =====================================================
 
-	virtual ::com::sun::star::uno::Any SAL_CALL queryInterface( 
-		::com::sun::star::uno::Type const & rType ) 
+	virtual ::com::sun::star::uno::Any SAL_CALL queryInterface(
+		::com::sun::star::uno::Type const & rType )
 		throw (::com::sun::star::uno::RuntimeException);
 
 	virtual void SAL_CALL acquire() throw ();
-       
+
 	virtual void SAL_CALL release() throw ();
 
 	///=====  XAccessibleComponent  ============================================
@@ -67,10 +67,10 @@ public:
     virtual sal_Bool SAL_CALL isVisible(  )
 		throw (::com::sun::star::uno::RuntimeException);
 
-    virtual sal_Int32 SAL_CALL getForeground(  ) 
+    virtual sal_Int32 SAL_CALL getForeground(  )
         throw (::com::sun::star::uno::RuntimeException);
 
-    virtual sal_Int32 SAL_CALL getBackground(  ) 
+    virtual sal_Int32 SAL_CALL getBackground(  )
         throw (::com::sun::star::uno::RuntimeException);
 
     ///=====  XAccessibleContext  ==============================================
@@ -121,8 +121,8 @@ public:
 	///=====  XTypeProvider  ===================================================
 
 	/// returns the possible types
-    virtual ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Type > SAL_CALL 
-		getTypes() 
+    virtual ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Type > SAL_CALL
+		getTypes()
 		throw (::com::sun::star::uno::RuntimeException);
 
 	/**	Returns a implementation id.
@@ -148,15 +148,15 @@ protected:
 
 	virtual ::rtl::OUString SAL_CALL GetAllDisplayNote(void)
         throw (::com::sun::star::uno::RuntimeException);
-	virtual ::rtl::OUString SAL_CALL getShadowAttrs(void) 
+	virtual ::rtl::OUString SAL_CALL getShadowAttrs(void)
 		throw (::com::sun::star::uno::RuntimeException);
-	virtual ::rtl::OUString SAL_CALL getBorderAttrs(void) 
+	virtual ::rtl::OUString SAL_CALL getBorderAttrs(void)
 		throw (::com::sun::star::uno::RuntimeException);
 public:
 	const ScAddress& GetCellAddress() const { return maCellAddress; }
 	sal_Bool IsCellInChangeTrack(const ScAddress &cell,Color *pColCellBoder);
 };
-	
+
 
 
 #endif

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -130,7 +130,7 @@ const XMLPropertyMapEntry aXMLChartPropMap[] =
     // format), but is still ex-/imported for compatibility with the OOo file format
   	MAP_CONTEXT( "NumberOfLines", CHART, XML_LINES_USED, XML_TYPE_NUMBER, XML_SCH_CONTEXT_LINES_USED  ),
 	MAP_ENTRY( "StackedBarsConnected", CHART, XML_CONNECT_BARS, XML_TYPE_BOOL ),
-    
+
     MAP_ENTRY_ODF12( "GroupBarsPerAxis", CHART, XML_GROUP_BARS_PER_AXIS, XML_TYPE_BOOL ),
     MAP_ENTRY_ODF12( "IncludeHiddenCells", CHART, XML_INCLUDE_HIDDEN_CELLS, XML_TYPE_BOOL ),
     MAP_ENTRY_ODF12( "AutomaticPosition", CHART, XML_AUTOMATIC_POSITION, XML_TYPE_BOOL ),
@@ -174,7 +174,7 @@ const XMLPropertyMapEntry aXMLChartPropMap[] =
     MAP_FULL( "CrossoverValue",   CHART, XML_AXIS_POSITION, XML_SCH_TYPE_AXIS_POSITION_VALUE|MID_FLAG_MERGE_ATTRIBUTE|MID_FLAG_MULTI_PROPERTY,                                                              0, SvtSaveOptions::ODFVER_012 ),
     MAP_FULL( "LabelPosition",   CHART, XML_AXIS_LABEL_POSITION, XML_SCH_TYPE_AXIS_LABEL_POSITION,                                                              0, SvtSaveOptions::ODFVER_012 ),
     MAP_FULL( "MarkPosition",   CHART, XML_TICK_MARK_POSITION, XML_SCH_TYPE_TICK_MARK_POSITION,                                                              0, SvtSaveOptions::ODFVER_012 ),
-    
+
 	// statistical properties
 	MAP_ENTRY( "MeanValue", CHART, XML_MEAN_VALUE, XML_TYPE_BOOL ),
 	MAP_ENTRY( "ErrorMargin", CHART, XML_ERROR_MARGIN, XML_TYPE_DOUBLE ),

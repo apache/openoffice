@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -64,7 +64,7 @@ namespace writerfilter {
 using namespace ::com::sun::star;
 using namespace ::std;
 
-/** 
+/**
     Reference to an resource that generates events and sends them to a
     handler.
 
@@ -76,7 +76,7 @@ using namespace ::std;
     type of the reference's target. It determines the type of the handler!
 
     Example:
-    
+
     A Word document can be represented as a stream of events. Event
     types in a Word document are text, properties, tables, starts and
     ends of groups. These can be handled by a stream handler (@see
@@ -88,7 +88,7 @@ template <class T>
 class WRITERFILTER_DLLPUBLIC Reference
 {
 public:
-    /** 
+    /**
         Pointer to reference
 
         @attention The ownership of a reference is transferred when
@@ -137,7 +137,7 @@ public:
        @param  sprm      the SPRM received
     */
     virtual void sprm(Sprm & sprm) = 0;
-    
+
     virtual ~Properties(){}
 };
 
@@ -154,7 +154,7 @@ public:
        @param pos     position of the entry in the table
        @param ref     reference to properties of the entry
      */
-    virtual void entry(int pos, writerfilter::Reference<Properties>::Pointer_t ref) = 0;    
+    virtual void entry(int pos, writerfilter::Reference<Properties>::Pointer_t ref) = 0;
 
     virtual ~Table() {}
 };
@@ -193,7 +193,7 @@ public:
        Receives start mark for group with the same section properties.
      */
     virtual void startSectionGroup() = 0;
-    
+
     /**
        Receives end mark for group with the same section properties.
     */
@@ -257,16 +257,16 @@ public:
        @param name     name of the table
        @param ref      referecne to the table
      */
-    virtual void table(Id name, 
+    virtual void table(Id name,
                        writerfilter::Reference<Table>::Pointer_t ref) = 0;
-    
-    /** 
+
+    /**
         Receives a substream.
 
         @param name    name of the substream
         @param ref     reference to the substream
     */
-    virtual void substream(Id name, 
+    virtual void substream(Id name,
                            writerfilter::Reference<Stream>::Pointer_t ref) = 0;
 
 
@@ -398,8 +398,8 @@ void WRITERFILTER_DLLPUBLIC logger(string prefix, string message);
 
 void WRITERFILTER_DLLPUBLIC dump(OutputWithDepth<string> & o, const char * name, writerfilter::Reference<Properties>::Pointer_t props);
 void WRITERFILTER_DLLPUBLIC dump(OutputWithDepth<string> & o, const char * name, sal_uInt32 n);
-void WRITERFILTER_DLLPUBLIC dump(OutputWithDepth<string> & /*o*/, const char * /*name*/, 
-                                 const rtl::OUString & /*str*/); 
+void WRITERFILTER_DLLPUBLIC dump(OutputWithDepth<string> & /*o*/, const char * /*name*/,
+                                 const rtl::OUString & /*str*/);
 void WRITERFILTER_DLLPUBLIC dump(OutputWithDepth<string> & o, const char * name, writerfilter::Reference<BinaryObj>::Pointer_t binary);
 
 class Token_t
@@ -419,7 +419,7 @@ public:
     sal_Int32 getId() const;
     operator sal_Int32() const;
     Token_t & operator = (sal_Int32 n);
- 
+
 #ifdef DEBUG
     ::std::string toString() const;
 #endif

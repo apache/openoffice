@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -59,7 +59,7 @@ namespace basegfx
 		// it's depth is increased when inside a polygon, decreased when inside a hole. The result is a depth
 		// which e.g. is -1 for holes outside everything, 1 for a polygon covered by another polygon and zero
 		// for e.g. holes in a polygon or polygons outside everything else.
-		// In the 2nd step, all polygons with depth other than zero are removed. If bKeepAboveZero is used, 
+		// In the 2nd step, all polygons with depth other than zero are removed. If bKeepAboveZero is used,
 		// all polygons < 1 are removed. The bKeepAboveZero mode is useful for clipping, e.g. just append
 		// one polygon to another and use this mode -> only parts where two polygons overlapped will be kept.
 		// In combination with correct orientation of the input orientations and the SolveCrossover calls this

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -32,11 +32,11 @@
 #include "cppu/unotype.hxx"
 
 namespace com
-{     
+{
 namespace sun
-{     
+{
 namespace star
-{     
+{
 namespace uno
 {
 
@@ -77,8 +77,8 @@ inline Sequence< E >::Sequence( const E * pElements, sal_Int32 len )
 {
     const Type & rType = ::cppu::getTypeFavourUnsigned( this );
 #if ! defined EXCEPTIONS_OFF
-    sal_Bool success = 
-#endif    
+    sal_Bool success =
+#endif
     ::uno_type_sequence_construct(
         &_pSequence, rType.getTypeLibType(),
         const_cast< E * >( pElements ), len, (uno_AcquireFunc)cpp_acquire );
@@ -94,8 +94,8 @@ inline Sequence< E >::Sequence( sal_Int32 len )
 {
     const Type & rType = ::cppu::getTypeFavourUnsigned( this );
 #if ! defined EXCEPTIONS_OFF
-    sal_Bool success = 
-#endif    
+    sal_Bool success =
+#endif
     ::uno_type_sequence_construct(
         &_pSequence, rType.getTypeLibType(),
         0, len, (uno_AcquireFunc)cpp_acquire );
@@ -153,7 +153,7 @@ inline E * Sequence< E >::getArray()
 {
     const Type & rType = ::cppu::getTypeFavourUnsigned( this );
 #if ! defined EXCEPTIONS_OFF
-    sal_Bool success = 
+    sal_Bool success =
 #endif
     ::uno_type_sequence_reference2One(
         &_pSequence, rType.getTypeLibType(),
@@ -192,7 +192,7 @@ inline void Sequence< E >::realloc( sal_Int32 nSize )
 {
     const Type & rType = ::cppu::getTypeFavourUnsigned( this );
 #if !defined EXCEPTIONS_OFF
-    sal_Bool success = 
+    sal_Bool success =
 #endif
     ::uno_type_sequence_realloc(
         &_pSequence, rType.getTypeLibType(), nSize,

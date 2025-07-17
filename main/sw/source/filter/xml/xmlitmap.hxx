@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -28,7 +28,7 @@
 #include <tools/ref.hxx>
 #include <xmloff/xmltoken.hxx>
 
-namespace rtl { class OUString; } 
+namespace rtl { class OUString; }
 
 #define MID_SW_FLAG_MASK					0x0000ffff
 
@@ -42,7 +42,7 @@ namespace rtl { class OUString; }
 #define MID_SW_FLAG_NO_ITEM				0x50000000 // both import and export
 #define MID_SW_FLAG_ELEMENT_ITEM_IMPORT	0x08000000
 #define MID_SW_FLAG_ELEMENT_ITEM_EXPORT	0x04000000
-#define MID_SW_FLAG_ELEMENT_ITEM			0x0c000000  // both import and export 
+#define MID_SW_FLAG_ELEMENT_ITEM			0x0c000000  // both import and export
 
 // ---
 
@@ -51,7 +51,7 @@ struct SvXMLItemMapEntry
 	sal_uInt16 nNameSpace;		// declares the Namespace in which this item
 								// exists
 	enum ::xmloff::token::XMLTokenEnum eLocalName;
-                                // the local name for the item inside 
+                                // the local name for the item inside
                                 // the Namespace (as an XMLTokenEnum)
 	sal_uInt16 nWhichId;		// the WichId to identify the item
 								// in the pool

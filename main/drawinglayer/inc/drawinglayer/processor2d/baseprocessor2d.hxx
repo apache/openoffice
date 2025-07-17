@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -147,9 +147,9 @@ namespace drawinglayer
                     }
 
             As an example a processor collecting the outlines of a sequence of primitives
-            only needs to handle some Basic Primitives and create outline and collect 
-            outline polygons e.g. for primitives with area like BitmapPrimitive2D (a 
-            rectangle) and PolyPolygonColorPrimitive2D. When also handling the Grouping 
+            only needs to handle some Basic Primitives and create outline and collect
+            outline polygons e.g. for primitives with area like BitmapPrimitive2D (a
+            rectangle) and PolyPolygonColorPrimitive2D. When also handling the Grouping
             Primitives MaskPrimitive2D (e.g. ignoring it's content, using the mask polyPolygon)
             and TransformPrimitive2D (to have the correct local transformation), a processor
             creating the outline can be written using just four (4) primitives. As a tipp, it can

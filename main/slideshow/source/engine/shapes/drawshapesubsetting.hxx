@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -51,7 +51,7 @@ namespace slideshow
 
                 @param rMtf
                 Metafile to retrieve subset info from (must have been
-                generated with verbose text comments switched on).                
+                generated with verbose text comments switched on).
              */
             DrawShapeSubsetting();
 
@@ -62,7 +62,7 @@ namespace slideshow
 
                 @param rMtf
                 Metafile to retrieve subset info from (must have been
-                generated with verbose text comments switched on).                
+                generated with verbose text comments switched on).
              */
             explicit DrawShapeSubsetting( const ::boost::shared_ptr< GDIMetaFile >& rMtf );
 
@@ -74,7 +74,7 @@ namespace slideshow
 
                 @param rMtf
                 Metafile to retrieve subset info from (must have been
-                generated with verbose text comments switched on).                
+                generated with verbose text comments switched on).
              */
             DrawShapeSubsetting( const DocTreeNode&			 				rShapeSubset,
                                  const ::boost::shared_ptr< GDIMetaFile >&	rMtf );
@@ -88,7 +88,7 @@ namespace slideshow
 
                 @param rMtf
                 Metafile to retrieve subset info from (must have been
-                generated with verbose text comments switched on).                
+                generated with verbose text comments switched on).
              */
             void reset( const ::boost::shared_ptr< GDIMetaFile >&   rMtf );
 
@@ -105,7 +105,7 @@ namespace slideshow
 
                 @param rMtf
                 Metafile to retrieve subset info from (must have been
-                generated with verbose text comments switched on).                
+                generated with verbose text comments switched on).
              */
             void reset( const DocTreeNode&                          rShapeSubset,
                         const ::boost::shared_ptr< GDIMetaFile >&   rMtf );
@@ -163,12 +163,12 @@ namespace slideshow
             DocTreeNode getSubsetTreeNode			( const DocTreeNode& 	rParentNode,
                                                       sal_Int32				nNodeIndex,
                                                       DocTreeNode::NodeType	eNodeType ) const;
-            
+
             // Helper
             // ========================================================
 
             /** Return a vector of currently active subsets.
-                
+
             	Needed when rendering a shape, this method provides a
             	vector of subsets currently visible (the range as
             	returned by getEffectiveSubset(), minus the parts that
@@ -230,7 +230,7 @@ namespace slideshow
                 {
                     return getHashValue() < rOther.getHashValue();
                 }
-                
+
             };
 
             typedef ::std::set< SubsetEntry > 		ShapeSet;
@@ -252,12 +252,12 @@ namespace slideshow
             mutable IndexClassificatorVector	maActionClassVector;
 
             /// Metafile to retrieve subset info from
-            ::boost::shared_ptr< GDIMetaFile >	mpMtf;	
+            ::boost::shared_ptr< GDIMetaFile >	mpMtf;
 
             /// Subset of the metafile represented by this object
             DocTreeNode                         maSubset;
 
-            /// the list of subset shapes spawned from this one. 
+            /// the list of subset shapes spawned from this one.
             ShapeSet							maSubsetShapes;
 
             /// caches minimal subset index from maSubsetShapes
@@ -273,7 +273,7 @@ namespace slideshow
                 maSubset, as it excludes all active subset children!
              */
             mutable VectorOfDocTreeNodes		maCurrentSubsets;
-            
+
             /// Whether the shape's doc tree has been initialized successfully, or not
             mutable bool						mbNodeTreeInitialized;
         };

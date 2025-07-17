@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,23 +7,23 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
 
 /** This header generates the following template classes with a variable number
     of interfaces:
-    
+
     comphelper::ImplHelper<N> <typename Ifc1, ..., typename Ifc<N> >
     comphelper::WeakImplHelper<N> <typename Ifc1, ..., typename Ifc<N> >
     comphelper::WeakComponentImplHelper<N> <typename Ifc1, ...,
@@ -37,11 +37,11 @@
     Don't use this header for interface numbers up to 12;
     always use the existing cppuhelper/(impl|comp)base<1-12>.hxx headers
     for this purpose, which eases debugging.
-    
+
     Including this header requires a little discipline, because it has no
     include guards.  Please use the following external include guard rule
     where <N> is the number of interface types:
-    
+
     #if ! defined(INCLUDED_COMPHELPER_IMPLBASE_VAR_HXX_<N>)
     #define INCLUDED_COMPHELPER_IMPLBASE_VAR_HXX_<N>
     #define COMPHELPER_IMPLBASE_INTERFACE_NUMBER <N>
@@ -135,7 +135,7 @@ struct BOOST_PP_CAT(ImplClassData, COMPHELPER_IMPLBASE_INTERFACE_NUMBER)
 /** Implementation helper implementing interface
     ::com::sun::star::lang::XTypeProvider and method
     XInterface::queryInterface(), but no reference counting.
-    
+
     @derive
     Inherit from this class giving your interface(s) to be implemented as
     template argument(s).  Your sub class defines method implementations for
@@ -183,7 +183,7 @@ public:
     ::com::sun::star::uno::XInterface
     which supports weak mechanism to be held weakly
     (supporting ::com::sun::star::uno::XWeak through ::cppu::OWeakObject).
-    
+
     @derive
     Inherit from this class giving your interface(s) to be implemented as
     template argument(s).  Your sub class defines method implementations for
@@ -207,7 +207,7 @@ class SAL_NO_VTABLE BOOST_PP_CAT(WeakImplHelper,
             BOOST_PP_CAT(WeakImplHelper, COMPHELPER_IMPLBASE_INTERFACE_NUMBER)<
                 BOOST_PP_ENUM_PARAMS(COMPHELPER_IMPLBASE_INTERFACE_NUMBER, Ifc)>
         > > {};
-    
+
 public:
     virtual ::com::sun::star::uno::Any
         SAL_CALL queryInterface( ::com::sun::star::uno::Type const& rType )
@@ -232,18 +232,18 @@ public:
 /** Implementation helper implementing interfaces
     ::com::sun::star::lang::XTypeProvider and
     ::com::sun::star::uno::XInterface inherting from a BaseClass.
-    
+
     All acquire() and release() calls are delegated to the BaseClass.
     Upon queryInterface(), if a demanded interface is not supported by this
     class directly, the request is delegated to the BaseClass.
-    
+
     @attention
     The BaseClass has to be complete in a sense, that
     ::com::sun::star::uno::XInterface and
     ::com::sun::star::lang::XTypeProvider are implemented properly.
     The BaseClass must have at least one ctor that can be called with
     COMPHELPER_IMPLBASE_MAX_CTOR_ARGS or fewer arguments.
-    
+
     @derive
     Inherit from this class giving your additional interface(s) to be
     implemented as template argument(s).  Your sub class defines method
@@ -269,7 +269,7 @@ class SAL_NO_VTABLE BOOST_PP_CAT(ImplInheritanceHelper,
                 BaseClass,
                 BOOST_PP_ENUM_PARAMS(COMPHELPER_IMPLBASE_INTERFACE_NUMBER, Ifc)>
         > > {};
-    
+
 protected:
 #define COMPHELPER_IMPLBASE_templctor_args(z_, n_, unused_) \
     BOOST_PP_CAT(T, n_) const& BOOST_PP_CAT(arg, n_)
@@ -279,7 +279,7 @@ protected:
         BOOST_PP_ENUM(BOOST_PP_ADD(n_, 1), \
                       COMPHELPER_IMPLBASE_templctor_args, ~) ) \
         : BaseClass( BOOST_PP_ENUM_PARAMS(BOOST_PP_ADD(n_, 1), arg) ) {}
-    
+
     BOOST_PP_CAT(ImplInheritanceHelper, COMPHELPER_IMPLBASE_INTERFACE_NUMBER)()
         : BaseClass() {}
     BOOST_PP_REPEAT(COMPHELPER_IMPLBASE_MAX_CTOR_ARGS,
@@ -319,15 +319,15 @@ public:
 /** Implementation helper supporting
     ::com::sun::star::lang::XTypeProvider and
     ::com::sun::star::lang::XComponent.
-    
+
     Upon disposing objects of this class, sub-classes receive a disposing()
     call.  Objects of this class can be held weakly, i.e. by a
     ::com::sun::star::uno::WeakReference.
-    
+
     @attention
     The life-cycle of the passed mutex reference has to be longer than objects
     of this class.
-    
+
     @derive
     Inherit from this class giving your interface(s) to be implemented as
     template argument(s).  Your sub class defines method implementations for
@@ -352,11 +352,11 @@ class SAL_NO_VTABLE BOOST_PP_CAT(WeakComponentImplHelper,
                          COMPHELPER_IMPLBASE_INTERFACE_NUMBER)<
                 BOOST_PP_ENUM_PARAMS(COMPHELPER_IMPLBASE_INTERFACE_NUMBER, Ifc)>
         > > {};
-    
+
 public:
     BOOST_PP_CAT(WeakComponentImplHelper, COMPHELPER_IMPLBASE_INTERFACE_NUMBER)(
         ::osl::Mutex & rMutex ) : WeakComponentImplHelperBase(rMutex) {}
-    
+
     virtual ::com::sun::star::uno::Any
         SAL_CALL queryInterface( ::com::sun::star::uno::Type const& rType )
         throw (::com::sun::star::uno::RuntimeException)
@@ -376,7 +376,7 @@ public:
         SAL_CALL getImplementationId()
         throw (::com::sun::star::uno::RuntimeException)
         { return ::cppu::ImplHelper_getImplementationId( cd::get() ); }
-    
+
     // implement XComponent directly avoiding ambiguities:
     virtual void SAL_CALL dispose()
         throw (::com::sun::star::uno::RuntimeException)

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -41,7 +41,7 @@
 
 class UnoControlDialogModel :	public ControlModelContainerBase
 {
-protected:	
+protected:
 	::com::sun::star::uno::Any			ImplGetDefaultValue( sal_uInt16 nPropId ) const;
 	::cppu::IPropertyArrayHelper&		SAL_CALL getInfoHelper();
 public:
@@ -52,7 +52,7 @@ public:
     UnoControlModel*	Clone() const;
 	// ::com::sun::star::beans::XMultiPropertySet
 	::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySetInfo > SAL_CALL getPropertySetInfo(  ) throw(::com::sun::star::uno::RuntimeException);
-	
+
 	// ::com::sun::star::io::XPersistObject
     ::rtl::OUString SAL_CALL getServiceName() throw(::com::sun::star::uno::RuntimeException);
 
@@ -64,7 +64,7 @@ public:
 typedef ::cppu::AggImplInheritanceHelper3   <   ControlContainerBase
                                             ,   ::com::sun::star::awt::XTopWindow
                                             ,   ::com::sun::star::awt::XDialog2
-                                            ,   ::com::sun::star::awt::XWindowListener 
+                                            ,   ::com::sun::star::awt::XWindowListener
                                             >   UnoDialogControl_Base;
 class UnoDialogControl : public UnoDialogControl_Base
 {
@@ -95,7 +95,7 @@ public:
     virtual void SAL_CALL windowMoved( const ::com::sun::star::awt::WindowEvent& e ) throw (::com::sun::star::uno::RuntimeException);
     virtual void SAL_CALL windowShown( const ::com::sun::star::lang::EventObject& e ) throw (::com::sun::star::uno::RuntimeException);
     virtual void SAL_CALL windowHidden( const ::com::sun::star::lang::EventObject& e ) throw (::com::sun::star::uno::RuntimeException);
-    
+
     // ::com::sun::star::awt::XDialog2
     virtual void SAL_CALL endDialog( ::sal_Int32 Result ) throw (::com::sun::star::uno::RuntimeException);
     virtual void SAL_CALL setHelpId( const rtl::OUString& Id ) throw (::com::sun::star::uno::RuntimeException);
@@ -111,7 +111,7 @@ public:
 
     // XModifyListener
     virtual void SAL_CALL modified( const ::com::sun::star::lang::EventObject& aEvent ) throw (::com::sun::star::uno::RuntimeException);
-	
+
     // ::com::sun::star::lang::XServiceInfo
 	DECLIMPL_SERVICEINFO( UnoDialogControl, szServiceName2_UnoControlDialog )
 

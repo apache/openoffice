@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -38,7 +38,7 @@
 
 class SdrView;
 namespace rptui
-{	
+{
 	class ODesignView;
 	class OReportWindow;
 	class OSectionView;
@@ -54,7 +54,7 @@ namespace rptui
                                 ,	public ::comphelper::OPropertyChangeListener
                                     , public IMarkedSection
 	{
-	private:		
+	private:
 		ScrollBar			m_aHScroll;
 		ScrollBar			m_aVScroll;
 		ScrollBarBox		m_aCornerWin; 		// window in the bottom right corner
@@ -157,7 +157,7 @@ namespace rptui
 		/** shows or hides the ruler.
 		*/
 		void					showRuler(sal_Bool _bShow);
-		
+
 		/** calculate the max width of the markers
 		*
 		* @param _bWithEnd	if <TRUE/> the end marker will be used for calculation as well otherwise not.
@@ -178,7 +178,7 @@ namespace rptui
 		void					setMarked(OSectionView* _pSectionView,sal_Bool _bMark);
         void			        setMarked(const ::com::sun::star::uno::Reference< ::com::sun::star::report::XSection>& _xSection,sal_Bool _bMark);
         void			        setMarked(const ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Reference< ::com::sun::star::report::XReportComponent> >& _xShape,sal_Bool _bMark);
-		
+
         // IMarkedSection
 		::boost::shared_ptr<OSectionWindow> getMarkedSection(NearSectionAccess nsa = CURRENT) const;
         ::boost::shared_ptr<OSectionWindow> getSectionWindow(const ::com::sun::star::uno::Reference< ::com::sun::star::report::XSection>& _xSection) const;
@@ -199,9 +199,9 @@ namespace rptui
 
         /** align all marked objects in all sections
         *
-        * \param eHor 
-        * \param eVert 
-        * \param bBoundRects 
+        * \param eHor
+        * \param eVert
+        * \param bBoundRects
         */
         void alignMarkedObjects(sal_Int32 _nControlModification, bool _bAlignAtSection, bool bBoundRects = false);
 

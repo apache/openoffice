@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -71,21 +71,21 @@ namespace drawinglayer
 
             This processor renders all feeded primitives to a 2D raster where for all
             primitives the two basic methods rasterconvertB3DPolygon for hairlines and
-            rasterconvertB3DPolyPolygon for filled geometry is called. It is a beseclass to 
+            rasterconvertB3DPolyPolygon for filled geometry is called. It is a beseclass to
             e.g. base a Z-Buffer supported renderer on the 3D primitive processing.
          */
 		class DefaultProcessor3D : public BaseProcessor3D
 		{
 		protected:
             /// read-only scene infos (normal handling, etc...)
-			const attribute::SdrSceneAttribute&					mrSdrSceneAttribute;	
+			const attribute::SdrSceneAttribute&					mrSdrSceneAttribute;
 
             /// read-only light infos (lights, etc...)
-			const attribute::SdrLightingAttribute&				mrSdrLightingAttribute;	
+			const attribute::SdrLightingAttribute&				mrSdrLightingAttribute;
 
 			/// renderer range. Need to be correctly set by the derived implementations
             /// normally the (0, 0, W, H) range from mpBZPixelRaster
-			basegfx::B2DRange									maRasterRange;			
+			basegfx::B2DRange									maRasterRange;
 
 			/// the modifiedColorPrimitive stack
 			basegfx::BColorModifierStack						maBColorModifierStack;
@@ -109,7 +109,7 @@ namespace drawinglayer
 
 			//////////////////////////////////////////////////////////////////////////////
 			// rendering support
-			
+
             void impRenderGradientTexturePrimitive3D(const primitive3d::GradientTexturePrimitive3D& rPrimitive, bool bTransparence);
 			void impRenderHatchTexturePrimitive3D(const primitive3d::HatchTexturePrimitive3D& rPrimitive);
 			void impRenderBitmapTexturePrimitive3D(const primitive3d::BitmapTexturePrimitive3D& rPrimitive);
@@ -121,7 +121,7 @@ namespace drawinglayer
 			//////////////////////////////////////////////////////////////////////////////
 			// rasterconversions for filled and non-filled polygons. These NEED to be
 			// implemented from derivations
-			
+
             virtual void rasterconvertB3DPolygon(const attribute::MaterialAttribute3D& rMaterial, const basegfx::B3DPolygon& rHairline) const = 0;
 			virtual void rasterconvertB3DPolyPolygon(const attribute::MaterialAttribute3D& rMaterial, const basegfx::B3DPolyPolygon& rFill) const = 0;
 
@@ -138,7 +138,7 @@ namespace drawinglayer
 			/// data read access
 			const attribute::SdrSceneAttribute& getSdrSceneAttribute() const { return mrSdrSceneAttribute; }
 			const attribute::SdrLightingAttribute& getSdrLightingAttribute() const { return mrSdrLightingAttribute; }
-			
+
 			/// data read access renderer stuff
 			const basegfx::BColorModifierStack& getBColorModifierStack() const { return maBColorModifierStack; }
 			const boost::shared_ptr< texture::GeoTexSvx >& getGeoTexSvx() const { return mpGeoTexSvx; }
@@ -147,7 +147,7 @@ namespace drawinglayer
 			bool getModulate() const { return mbModulate; }
 			bool getFilter() const { return mbFilter; }
 			bool getSimpleTextureActive() const { return mbSimpleTextureActive; }
-			
+
 			/// access to Drawinglayer configuration options
 			const SvtOptionsDrawinglayer& getOptionsDrawinglayer() const { return maDrawinglayerOpt; }
 		};

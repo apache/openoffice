@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -98,10 +98,10 @@ class OOO_DLLPUBLIC_DBTOOLS FunctionParser
 public:
 
     /** Parse a string
-        
+
         The following grammar is accepted by this method:
         <code>
-		
+
 		number_digit = '0'|'1'|'2'|'3'|'4'|'5'|'6'|'7'|'8'|'9'
 
 		number = number number_digit | number_digit
@@ -111,8 +111,8 @@ public:
 
 		string_reference = 'a-z,A-Z,0-9' ' '
 		modifier_reference = '$' '0-9' ' '
-					  
-		basic_expression = 
+
+		basic_expression =
 			number |
             string_reference |
             additive_expression equal_function additive_expression |
@@ -120,7 +120,7 @@ public:
 			ternary_function '(' additive_expression ',' additive_expression ',
 					           ' additive_expression ')' | '(' additive_expression ')'
 
-        </code> 
+        </code>
 
         @param rFunction
         The string to parse
@@ -133,7 +133,7 @@ public:
     static ExpressionNodeSharedPtr parseFunction( const ::rtl::OUString& _sFunction);
 
 private:
-    // disabled constructor/destructor, since this is 
+    // disabled constructor/destructor, since this is
     // supposed to be a singleton
     FunctionParser();
 

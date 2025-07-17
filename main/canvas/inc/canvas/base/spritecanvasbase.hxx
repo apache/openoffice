@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -66,10 +66,10 @@ namespace canvas
         @see CanvasBase for further contractual requirements towards
         the CanvasHelper type, and some examples.
      */
-    template< class Base, 
-              class CanvasHelper, 
-              class Mutex=::osl::MutexGuard, 
-              class UnambiguousBase=::com::sun::star::uno::XInterface > class SpriteCanvasBase : 
+    template< class Base,
+              class CanvasHelper,
+              class Mutex=::osl::MutexGuard,
+              class UnambiguousBase=::com::sun::star::uno::XInterface > class SpriteCanvasBase :
         public IntegerBitmapBase< Base, CanvasHelper, Mutex, UnambiguousBase >
     {
     public:
@@ -95,56 +95,56 @@ namespace canvas
         }
 
         // XSpriteCanvas
-        virtual ::com::sun::star::uno::Reference< ::com::sun::star::rendering::XAnimatedSprite > SAL_CALL createSpriteFromAnimation( const ::com::sun::star::uno::Reference< ::com::sun::star::rendering::XAnimation >& animation ) throw (::com::sun::star::lang::IllegalArgumentException, 
+        virtual ::com::sun::star::uno::Reference< ::com::sun::star::rendering::XAnimatedSprite > SAL_CALL createSpriteFromAnimation( const ::com::sun::star::uno::Reference< ::com::sun::star::rendering::XAnimation >& animation ) throw (::com::sun::star::lang::IllegalArgumentException,
                                                                                                                                                                                                                                            ::com::sun::star::uno::RuntimeException)
         {
-            tools::verifyArgs(animation, 
+            tools::verifyArgs(animation,
                               BOOST_CURRENT_FUNCTION,
                               static_cast< typename BaseType::UnambiguousBaseType* >(this));
 
             typename BaseType::MutexType aGuard( BaseType::m_aMutex );
-            
+
             return BaseType::maCanvasHelper.createSpriteFromAnimation(animation);
         }
 
-        virtual ::com::sun::star::uno::Reference< ::com::sun::star::rendering::XAnimatedSprite > SAL_CALL createSpriteFromBitmaps( const ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Reference< ::com::sun::star::rendering::XBitmap > >& animationBitmaps, 
-                                                                                                                                   sal_Int8                                                                                                           interpolationMode ) throw (::com::sun::star::lang::IllegalArgumentException, 
-                                                                                                                                                                                                                                                                                 ::com::sun::star::rendering::VolatileContentDestroyedException, 
+        virtual ::com::sun::star::uno::Reference< ::com::sun::star::rendering::XAnimatedSprite > SAL_CALL createSpriteFromBitmaps( const ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Reference< ::com::sun::star::rendering::XBitmap > >& animationBitmaps,
+                                                                                                                                   sal_Int8                                                                                                           interpolationMode ) throw (::com::sun::star::lang::IllegalArgumentException,
+                                                                                                                                                                                                                                                                                 ::com::sun::star::rendering::VolatileContentDestroyedException,
                                                                                                                                                                                                                                                                                  ::com::sun::star::uno::RuntimeException)
         {
-            tools::verifyArgs(animationBitmaps,  
+            tools::verifyArgs(animationBitmaps,
                               BOOST_CURRENT_FUNCTION,
                               static_cast< typename BaseType::UnambiguousBaseType* >(this));
-            tools::verifyRange( interpolationMode, 
+            tools::verifyRange( interpolationMode,
                                 ::com::sun::star::rendering::InterpolationMode::NEAREST_NEIGHBOR,
                                 ::com::sun::star::rendering::InterpolationMode::BEZIERSPLINE4 );
 
             typename BaseType::MutexType aGuard( BaseType::m_aMutex );
-            
+
             return BaseType::maCanvasHelper.createSpriteFromBitmaps(animationBitmaps, interpolationMode);
         }
 
-        virtual ::com::sun::star::uno::Reference< ::com::sun::star::rendering::XCustomSprite > SAL_CALL createCustomSprite( const ::com::sun::star::geometry::RealSize2D& spriteSize ) throw (::com::sun::star::lang::IllegalArgumentException, 
+        virtual ::com::sun::star::uno::Reference< ::com::sun::star::rendering::XCustomSprite > SAL_CALL createCustomSprite( const ::com::sun::star::geometry::RealSize2D& spriteSize ) throw (::com::sun::star::lang::IllegalArgumentException,
                                                                                                                                                                                               ::com::sun::star::uno::RuntimeException)
         {
-            tools::verifySpriteSize(spriteSize, 
+            tools::verifySpriteSize(spriteSize,
                                     BOOST_CURRENT_FUNCTION,
                                     static_cast< typename BaseType::UnambiguousBaseType* >(this));
 
             typename BaseType::MutexType aGuard( BaseType::m_aMutex );
-            
+
             return BaseType::maCanvasHelper.createCustomSprite(spriteSize);
         }
 
-        virtual ::com::sun::star::uno::Reference< ::com::sun::star::rendering::XSprite > SAL_CALL createClonedSprite( const ::com::sun::star::uno::Reference< ::com::sun::star::rendering::XSprite >& original ) throw (::com::sun::star::lang::IllegalArgumentException, 
+        virtual ::com::sun::star::uno::Reference< ::com::sun::star::rendering::XSprite > SAL_CALL createClonedSprite( const ::com::sun::star::uno::Reference< ::com::sun::star::rendering::XSprite >& original ) throw (::com::sun::star::lang::IllegalArgumentException,
                                                                                                                                                                                                                         ::com::sun::star::uno::RuntimeException)
         {
-            tools::verifyArgs(original,  
+            tools::verifyArgs(original,
                               BOOST_CURRENT_FUNCTION,
                               static_cast< typename BaseType::UnambiguousBaseType* >(this));
 
             typename BaseType::MutexType aGuard( BaseType::m_aMutex );
-            
+
             return BaseType::maCanvasHelper.createClonedSprite(original);
         }
 
@@ -167,7 +167,7 @@ namespace canvas
             maRedrawManager.hideSprite( rSprite );
         }
 
-        virtual void moveSprite( const Sprite::Reference&		rSprite, 
+        virtual void moveSprite( const Sprite::Reference&		rSprite,
                                  const ::basegfx::B2DPoint& 	rOldPos,
                                  const ::basegfx::B2DPoint&		rNewPos,
                                  const ::basegfx::B2DVector& 	rSpriteSize )
@@ -179,7 +179,7 @@ namespace canvas
             maRedrawManager.moveSprite( rSprite, rOldPos, rNewPos, rSpriteSize );
         }
 
-        virtual void updateSprite( const Sprite::Reference& 	rSprite, 
+        virtual void updateSprite( const Sprite::Reference& 	rSprite,
                                    const ::basegfx::B2DPoint& 	rPos,
                                    const ::basegfx::B2DRange&	rUpdateArea )
         {

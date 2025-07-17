@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -45,7 +45,7 @@
 #include <vcl/wrkwin.hxx>
 #include <vcl/svapp.hxx>
 #include <vos/mutex.hxx>
-#include <rtl/ustring.hxx> 
+#include <rtl/ustring.hxx>
 
 //_______________________________________________
 // namespaces
@@ -60,7 +60,7 @@ namespace framework{
 // definitions
 
 class WindowHelper
-{    
+{
     public:
 
 //-----------------------------------------------
@@ -71,7 +71,7 @@ static ::rtl::OUString getWindowState(const css::uno::Reference< css::awt::XWind
 
     // SOLAR SAFE -> ----------------------------
     ::vos::OClearableGuard aSolarGuard(Application::GetSolarMutex());
-    
+
     ByteString sWindowState;
     Window*    pWindow     = VCLUnoHelper::GetWindow(xWindow);
     // check for system window is necessary to guarantee correct pointer cast!
@@ -100,7 +100,7 @@ static void setWindowState(const css::uno::Reference< css::awt::XWindow >& xWind
 
     // SOLAR SAFE -> ----------------------------
     ::vos::OClearableGuard aSolarGuard(Application::GetSolarMutex());
-    
+
     Window* pWindow = VCLUnoHelper::GetWindow(xWindow);
     // check for system window is necessary to guarantee correct pointer cast!
     if (
@@ -112,10 +112,10 @@ static void setWindowState(const css::uno::Reference< css::awt::XWindow >& xWind
             (!((WorkWindow*)pWindow)->IsMinimized() )
         )
        )
-    {            
+    {
         ((SystemWindow*)pWindow)->SetWindowState(U2B_ENC(sWindowState,RTL_TEXTENCODING_UTF8));
     }
-    
+
     aSolarGuard.clear();
     // <- SOLAR SAFE ----------------------------
 }

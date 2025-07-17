@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -195,7 +195,7 @@ public:
     virtual                     ~BitmapWriteAccess();
 
     void                        CopyScanline( long nY, const BitmapReadAccess& rReadAcc );
-    void                        CopyScanline( long nY, ConstScanline aSrcScanline, 
+    void                        CopyScanline( long nY, ConstScanline aSrcScanline,
 											  sal_uLong nSrcScanlineFormat, sal_uLong nSrcScanlineSize );
 
     void                        CopyBuffer( const BitmapReadAccess& rReadAcc );
@@ -235,14 +235,14 @@ private:
 
 								BitmapWriteAccess() {}
 								BitmapWriteAccess( const BitmapWriteAccess& ) : BitmapReadAccess() {}
-	BitmapWriteAccess& 			operator=( const BitmapWriteAccess& ) { return *this; } 
+	BitmapWriteAccess& 			operator=( const BitmapWriteAccess& ) { return *this; }
 };
 
 // -------------------
 // - Accessor Helper -
 // -------------------
 
-/** This template handles BitmapAccess the RAII way. 
+/** This template handles BitmapAccess the RAII way.
 
 	Please don't use directly, but the ready-made typedefs for
 	BitmapReadAccess and BitmapWriteAccess below.
@@ -278,7 +278,7 @@ private:
 
 /** This wrapper handles BitmapReadAccess the RAII way.
 
-	Use as follows: 
+	Use as follows:
     Bitmap aBitmap
 	ScopedBitmapReadAccess pReadAccess( aBitmap.AcquireReadAccess(), aBitmap );
     pReadAccess->SetPixel()...
@@ -292,7 +292,7 @@ typedef ScopedBitmapAccess< BitmapReadAccess > ScopedBitmapReadAccess;
 
 /** This wrapper handles BitmapWriteAccess the RAII way.
 
-	Use as follows: 
+	Use as follows:
     Bitmap aBitmap
 	ScopedBitmapWriteAccess pWriteAccess( aBitmap.AcquireWriteAccess(), aBitmap );
     pWriteAccess->SetPixel()...

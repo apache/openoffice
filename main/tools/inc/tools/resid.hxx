@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -49,13 +49,13 @@ class ResId
     not to release the Resource context after loading this id
     */
 	RSHEADER_TYPE*	        m_pResource;
-    
+
 	mutable sal_uInt32      m_nResId; 	   // Resource Identifier
 	mutable RESOURCE_TYPE	m_nRT;		   // type for loading (mutable to be set later)
 	mutable ResMgr *		m_pResMgr;	   // load from this ResMgr (mutable for setting on demand)
 	mutable RESOURCE_TYPE	m_nRT2;		   // type for loading (supersedes m_nRT)
     mutable sal_uInt32      m_nWinBits;    // container for original style bits on a window in a resource
-    
+
     void ImplInit( sal_uInt32 nId, ResMgr& rMgr, RSHEADER_TYPE* pRes )
     {
         m_pResource = pRes; m_nResId = nId; m_nRT = RSC_NOTYPE; m_pResMgr = &rMgr; m_nRT2 = RSC_NOTYPE; m_nWinBits = 0;
@@ -83,24 +83,24 @@ class ResId
     {
         ImplInit( sal_uInt32(nId), rMgr, NULL );
     }
-    
+
     sal_uInt32 GetWinBits() const
     { return m_nWinBits; }
     void SetWinBits( sal_uInt32 nBits ) const
     { m_nWinBits = nBits; }
-    
+
 	RESOURCE_TYPE	GetRT() const { return( m_nRT ); }
 	const ResId &	SetRT( RESOURCE_TYPE nType ) const
     /*
     Set the type if not already set. Ask for tye with GetRT()
-    
+
     [Example]
     ResId aId( 1000 );
     aId.SetRT( RSC_WINDOW );	// settype window Window
     aId.SetRT( RSC_BUTTON );	// will not set type Button
     //aId.GetRT() == RSC_WINDOW is true
-    
-    @see    
+
+    @see
     ResId::GetRT2(), ResId::GetRT()
     */
     {
@@ -121,7 +121,7 @@ class ResId
 	const ResId &	SetRT2( RESOURCE_TYPE nTyp ) const
     /*
     Set the superseding type. Ask specifically for it with GetRT2()
-    
+
     SetRT2() may only be called if no derived class calls SetRT in its
     Resource constructor.
     */
@@ -130,7 +130,7 @@ class ResId
             m_nRT2 = nTyp;
         return *this;
     }
-    
+
 	ResMgr *		GetResMgr() const { return m_pResMgr; }
 	const ResId &	SetResMgr( ResMgr * pMgr ) const
     {
@@ -138,7 +138,7 @@ class ResId
         OSL_ENSURE( m_pResMgr != NULL, "invalid ResMgr set on ResId" );
         return *this;
     }
-    
+
 	const ResId &  SetAutoRelease(sal_Bool bRelease) const
     {
         if( bRelease )
@@ -147,10 +147,10 @@ class ResId
             m_nResId |= RSC_DONTRELEASE;
         return *this;
     }
-    
+
 	sal_Bool		   IsAutoRelease()	const
     { return !(m_nResId & RSC_DONTRELEASE); }
-    
+
 	sal_uInt32	   GetId()			const { return m_nResId & ~RSC_DONTRELEASE; }
 	RSHEADER_TYPE* GetpResource()	const { return m_pResource; }
 };

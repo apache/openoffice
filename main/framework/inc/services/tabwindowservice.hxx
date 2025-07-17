@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -76,23 +76,23 @@ namespace framework{
 struct TTabPageInfo
 {
     public:
-        
+
         TTabPageInfo()
             : m_nIndex      ( -1      )
             , m_bCreated    (sal_False)
             , m_pPage       ( NULL    )
             , m_lProperties (         )
         {}
-    
+
         TTabPageInfo(::sal_Int32 nID)
             : m_nIndex      ( nID     )
             , m_bCreated    (sal_False)
             , m_pPage       ( NULL    )
             , m_lProperties (         )
         {}
-    
+
     public:
-        
+
         ::sal_Int32                                   m_nIndex;
         ::sal_Bool                                    m_bCreated;
         FwkTabPage*                                   m_pPage;
@@ -198,25 +198,25 @@ class TabWindowService :  public css::lang::XTypeProvider
 
         /// reference to factory, which has created this instance
         css::uno::Reference< css::lang::XMultiServiceFactory > m_xFactory;
-    
+
         /// the tab window as XWindow ( to hold window* alive !)
         css::uno::Reference< css::awt::XWindow > m_xTabWin;
-    
+
         /// the VCL tab window
         FwkTabWindow* m_pTabWin;
-    
+
         /// container of inserted tab pages
         TTabPageInfoHash m_lTabPageInfos;
-    
+
         /// container of the added TabListener
         ::cppu::OMultiTypeInterfaceContainerHelper m_lListener;
-    
+
         /// counter of the tabpage indexes
         ::sal_Int32 m_nPageIndexCounter;
-    
+
         /// index of the current active page
         ::sal_Int32 m_nCurrentPageIndex;
-    
+
         /// title of the tabcontrolled window
         ::rtl::OUString m_sTitle;
 

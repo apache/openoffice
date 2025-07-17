@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -61,7 +61,7 @@ FORWARD_DECLARE_INTERFACE( script, XNameContainer )
 	protected:
 		::com::sun::star::uno::Reference< ::com::sun::star::uno::XAggregation >
 					m_xAggregate;
-		::com::sun::star::uno::Reference< ::com::sun::star::container::XNameContainer > 
+		::com::sun::star::uno::Reference< ::com::sun::star::container::XNameContainer >
 					mxEventContainer;
 
 		// <properties>
@@ -146,7 +146,7 @@ FORWARD_DECLARE_INTERFACE( script, XNameContainer )
 		virtual ::com::sun::star::uno::Reference< ::com::sun::star::util::XCloneable > SAL_CALL createClone(  ) throw(::com::sun::star::uno::RuntimeException);
 
 		//XScriptEventsSupplier
-	    virtual ::com::sun::star::uno::Reference< ::com::sun::star::container::XNameContainer > 
+	    virtual ::com::sun::star::uno::Reference< ::com::sun::star::container::XNameContainer >
 			SAL_CALL getEvents(  ) throw(::com::sun::star::uno::RuntimeException);
 
 		// XCloneable implementation - to be overwritten

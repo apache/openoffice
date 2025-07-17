@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -104,7 +104,7 @@ class IdlReflectionServiceImpl
 	Mutex									_aComponentMutex;
 	Reference< XMultiServiceFactory >		_xMgr;
 	Reference< XHierarchicalNameAccess >	_xTDMgr;
-	
+
 	// caching
 	LRU_CacheAnyByOUString					_aElements;
 
@@ -125,32 +125,32 @@ public:
 	// ctor/ dtor
 	IdlReflectionServiceImpl( const Reference< XComponentContext > & xContext );
 	virtual ~IdlReflectionServiceImpl();
-	
+
 	// XInterface
 	virtual Any SAL_CALL queryInterface( const Type & rType ) throw(::com::sun::star::uno::RuntimeException);
 	virtual void SAL_CALL acquire() throw();
 	virtual void SAL_CALL release() throw();
-	
+
 	// some XComponent part from OComponentHelper
 	virtual void SAL_CALL dispose() throw(::com::sun::star::uno::RuntimeException);
-	
+
 	// XServiceInfo
 	virtual OUString SAL_CALL getImplementationName() throw(::com::sun::star::uno::RuntimeException);
 	virtual sal_Bool SAL_CALL supportsService( const OUString & rServiceName ) throw(::com::sun::star::uno::RuntimeException);
 	virtual Sequence< OUString > SAL_CALL getSupportedServiceNames() throw(::com::sun::star::uno::RuntimeException);
-	
+
 	// XTypeProvider
 	virtual Sequence< Type > SAL_CALL getTypes() throw (::com::sun::star::uno::RuntimeException);
 	virtual Sequence< sal_Int8 > SAL_CALL getImplementationId() throw (::com::sun::star::uno::RuntimeException);
-	
+
 	// XIdlReflection
 	virtual Reference< XIdlClass > SAL_CALL forName( const OUString & rTypeName ) throw(::com::sun::star::uno::RuntimeException);
 	virtual Reference< XIdlClass > SAL_CALL getType( const Any & rObj ) throw(::com::sun::star::uno::RuntimeException);
-	
+
 	// XHierarchicalNameAccess
 	virtual Any SAL_CALL getByHierarchicalName( const OUString & rName ) throw(::com::sun::star::container::NoSuchElementException, ::com::sun::star::uno::RuntimeException);
 	virtual sal_Bool SAL_CALL hasByHierarchicalName( const OUString & rName ) throw(::com::sun::star::uno::RuntimeException);
-	
+
 	Reference< XIdlClass > forType( typelib_TypeDescription * pTypeDescr ) throw(::com::sun::star::uno::RuntimeException);
 	Reference< XIdlClass > forType( typelib_TypeDescriptionReference * pRef ) throw(::com::sun::star::uno::RuntimeException);
 };
@@ -160,12 +160,12 @@ class IdlClassImpl
 	: public WeakImplHelper1< XIdlClass >
 {
 	IdlReflectionServiceImpl *	_pReflection;
-	
+
 	OUString					_aName;
 	TypeClass					_eTypeClass;
-	
+
 	typelib_TypeDescription *	_pTypeDescr;
-	
+
 public:
 	typelib_TypeDescription *	getTypeDescr() const
 		{ return _pTypeDescr; }
@@ -175,26 +175,26 @@ public:
 		{ return _pReflection->getSMgr(); }
 	Reference< XHierarchicalNameAccess > getTDMgr() const
 		{ return getReflection()->getTDMgr(); }
-	
+
 	// Ctor
 	IdlClassImpl( IdlReflectionServiceImpl * pReflection,
 				  const OUString & rName, typelib_TypeClass eTypeClass,
 				  typelib_TypeDescription * pTypeDescr );
 	virtual ~IdlClassImpl();
-	
+
 	// XIdlClassImpl default implementation
     virtual TypeClass SAL_CALL getTypeClass() throw(::com::sun::star::uno::RuntimeException);
     virtual OUString SAL_CALL getName() throw(::com::sun::star::uno::RuntimeException);
     virtual sal_Bool SAL_CALL equals( const Reference< XIdlClass >& xType ) throw(::com::sun::star::uno::RuntimeException);
-	
+
     virtual sal_Bool SAL_CALL isAssignableFrom( const Reference< XIdlClass > & xType ) throw(::com::sun::star::uno::RuntimeException);
     virtual void SAL_CALL createObject( Any & rObj ) throw(::com::sun::star::uno::RuntimeException);
-	
+
 	// def impl ????
     virtual Sequence< Reference< XIdlClass > > SAL_CALL getClasses() throw(::com::sun::star::uno::RuntimeException);
     virtual Reference< XIdlClass > SAL_CALL getClass( const OUString & rName ) throw(::com::sun::star::uno::RuntimeException);
     virtual Sequence< Reference< XIdlClass > > SAL_CALL getInterfaces() throw(::com::sun::star::uno::RuntimeException);
-	
+
 	// structs, interfaces
     virtual Sequence< Reference< XIdlClass > > SAL_CALL getSuperclasses() throw(::com::sun::star::uno::RuntimeException);
 	// structs
@@ -214,21 +214,21 @@ class InterfaceIdlClassImpl
 	: public IdlClassImpl
 {
 	typedef pair< OUString, typelib_TypeDescription * > MemberInit;
-	
+
 	Sequence< Reference< XIdlClass > >		_xSuperClasses;
-	
+
 	MemberInit *							_pSortedMemberInit; // first methods, then attributes
 	OUString2Field							_aName2Field;
 	OUString2Method							_aName2Method;
 	sal_Int32								_nMethods;
 	sal_Int32								_nAttributes;
-	
+
 	void initMembers();
-	
+
 public:
 	typelib_InterfaceTypeDescription * getTypeDescr() const
 		{ return (typelib_InterfaceTypeDescription *)IdlClassImpl::getTypeDescr(); }
-	
+
 	// ctor/ dtor
 	InterfaceIdlClassImpl( IdlReflectionServiceImpl * pReflection,
 						   const OUString & rName, typelib_TypeClass eTypeClass,
@@ -239,7 +239,7 @@ public:
 		, _nAttributes( 0 )
 		{}
 	virtual ~InterfaceIdlClassImpl();
-	
+
 	// IdlClassImpl modifications
     virtual sal_Bool SAL_CALL isAssignableFrom( const Reference< XIdlClass > & xType ) throw(::com::sun::star::uno::RuntimeException);
     virtual Sequence< Reference< XIdlClass > > SAL_CALL getSuperclasses() throw(::com::sun::star::uno::RuntimeException);
@@ -256,14 +256,14 @@ class CompoundIdlClassImpl
 	: public IdlClassImpl
 {
 	Reference< XIdlClass >					_xSuperClass;
-	
+
 	Sequence< Reference< XIdlField > > *	_pFields;
 	OUString2Field							_aName2Field;
-	
+
 public:
 	typelib_CompoundTypeDescription * getTypeDescr() const
 		{ return (typelib_CompoundTypeDescription *)IdlClassImpl::getTypeDescr(); }
-	
+
 	// ctor/ dtor
 	CompoundIdlClassImpl( IdlReflectionServiceImpl * pReflection,
 						  const OUString & rName, typelib_TypeClass eTypeClass,
@@ -272,7 +272,7 @@ public:
 		, _pFields( 0 )
 		{}
 	virtual ~CompoundIdlClassImpl();
-	
+
 	// IdlClassImpl modifications
     virtual sal_Bool SAL_CALL isAssignableFrom( const Reference< XIdlClass > & xType ) throw(::com::sun::star::uno::RuntimeException);
     virtual Sequence< Reference< XIdlClass > > SAL_CALL getSuperclasses() throw(::com::sun::star::uno::RuntimeException);
@@ -288,27 +288,27 @@ class ArrayIdlClassImpl
 public:
 	typelib_IndirectTypeDescription * getTypeDescr() const
 		{ return (typelib_IndirectTypeDescription *)IdlClassImpl::getTypeDescr(); }
-	
+
 	// ctor
 	ArrayIdlClassImpl( IdlReflectionServiceImpl * pReflection,
 					   const OUString & rName, typelib_TypeClass eTypeClass,
 					   typelib_TypeDescription * pTypeDescr )
 		: IdlClassImpl( pReflection, rName, eTypeClass, pTypeDescr )
 		{}
-	
+
 	virtual Any SAL_CALL queryInterface( const Type & rType ) throw(::com::sun::star::uno::RuntimeException);
 	virtual void SAL_CALL acquire() throw();
 	virtual void SAL_CALL release() throw();
-	
+
 	// XTypeProvider
 	virtual Sequence< Type > SAL_CALL getTypes() throw (::com::sun::star::uno::RuntimeException);
 	virtual Sequence< sal_Int8 > SAL_CALL getImplementationId() throw (::com::sun::star::uno::RuntimeException);
-	
+
 	// IdlClassImpl modifications
     virtual sal_Bool SAL_CALL isAssignableFrom( const Reference< XIdlClass > & xType ) throw(::com::sun::star::uno::RuntimeException);
     virtual Reference< XIdlClass > SAL_CALL getComponentType() throw(::com::sun::star::uno::RuntimeException);
     virtual Reference< XIdlArray > SAL_CALL getArray() throw(::com::sun::star::uno::RuntimeException);
-	
+
 	// XIdlArray
     virtual void SAL_CALL realloc( Any & rArray, sal_Int32 nLen ) throw(::com::sun::star::lang::IllegalArgumentException, ::com::sun::star::uno::RuntimeException);
     virtual sal_Int32 SAL_CALL getLen( const Any & rArray ) throw(::com::sun::star::lang::IllegalArgumentException, ::com::sun::star::uno::RuntimeException);
@@ -322,11 +322,11 @@ class EnumIdlClassImpl
 {
 	Sequence< Reference< XIdlField > > * _pFields;
 	OUString2Field						 _aName2Field;
-	
+
 public:
 	typelib_EnumTypeDescription * getTypeDescr() const
 		{ return (typelib_EnumTypeDescription *)IdlClassImpl::getTypeDescr(); }
-	
+
 	// ctor/ dtor
 	EnumIdlClassImpl( IdlReflectionServiceImpl * pReflection,
 					  const OUString & rName, typelib_TypeClass eTypeClass,
@@ -335,7 +335,7 @@ public:
 		, _pFields( 0 )
 		{}
 	virtual ~EnumIdlClassImpl();
-	
+
 	// IdlClassImpl modifications
     virtual Reference< XIdlField > SAL_CALL getField( const OUString & rName ) throw(::com::sun::star::uno::RuntimeException);
     virtual Sequence< Reference< XIdlField > > SAL_CALL getFields() throw(::com::sun::star::uno::RuntimeException);
@@ -348,13 +348,13 @@ class IdlMemberImpl
 {
 	IdlReflectionServiceImpl *	_pReflection;
 	OUString					_aName;
-	
+
 	typelib_TypeDescription *	_pTypeDescr;
 	typelib_TypeDescription *	_pDeclTypeDescr;
-	
+
 protected:
 	Reference< XIdlClass >		_xDeclClass;
-	
+
 public:
 	IdlReflectionServiceImpl *	getReflection() const
 		{ return _pReflection; }
@@ -364,12 +364,12 @@ public:
 		{ return _pTypeDescr; }
 	typelib_TypeDescription *	getDeclTypeDescr() const
 		{ return _pDeclTypeDescr; }
-	
+
 	// ctor/ dtor
 	IdlMemberImpl( IdlReflectionServiceImpl * pReflection, const OUString & rName,
 				   typelib_TypeDescription * pTypeDescr, typelib_TypeDescription * pDeclTypeDescr );
 	virtual ~IdlMemberImpl();
-	
+
 	// XIdlMember
     virtual Reference< XIdlClass > SAL_CALL getDeclaringClass() throw(::com::sun::star::uno::RuntimeException);
     virtual OUString SAL_CALL getName() throw(::com::sun::star::uno::RuntimeException);

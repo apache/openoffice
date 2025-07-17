@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -65,7 +65,7 @@ struct FPEntry
     // the flag to identify whether the document does automatical grammar checking
     sal_Bool      	m_bAutomatic;
 
-    FPEntry() 
+    FPEntry()
         : m_aDocId()
         , m_nStartIndex( 0 )
         , m_bAutomatic( 0 )
@@ -113,7 +113,7 @@ class GrammarCheckingIterator:
     // language -> implname mapping
     typedef std::map< LanguageType, ::rtl::OUString > GCImplNames_t;
     GCImplNames_t   m_aGCImplNamesByLang;
-    
+
     // implname -> UNO reference mapping
     typedef std::map< ::rtl::OUString, ::com::sun::star::uno::Reference< ::com::sun::star::linguistic2::XProofreader > > GCReferences_t;
     GCReferences_t  m_aGCReferencesByService;
@@ -124,13 +124,13 @@ class GrammarCheckingIterator:
     sal_Int32       m_nLastEndOfSentencePos;
     osl::Condition  m_aWakeUpThread;
     osl::Condition  m_aRequestEndThread;
-    
+
     //! beware of initilization order !
     struct MyMutex : public rtl::Static< osl::Mutex, MyMutex > {};
 	//
     cppu::OInterfaceContainerHelper     m_aEventListeners;
     cppu::OInterfaceContainerHelper     m_aNotifyListeners;
-    
+
     ::com::sun::star::uno::Reference< ::com::sun::star::i18n::XBreakIterator > m_xBreakIterator;
     mutable ::com::sun::star::uno::Reference< ::com::sun::star::util::XChangesBatch >  m_xUpdateAccess;
 
@@ -142,7 +142,7 @@ class GrammarCheckingIterator:
             ::com::sun::star::uno::WeakReference< ::com::sun::star::text::XFlatParagraph > xFlatPara,
             const ::rtl::OUString &rDocId, sal_Int32 nStartIndex, sal_Bool bAutomatic );
 
-    void ProcessResult( const ::com::sun::star::linguistic2::ProofreadingResult &rRes, 
+    void ProcessResult( const ::com::sun::star::linguistic2::ProofreadingResult &rRes,
             const ::com::sun::star::uno::Reference< ::com::sun::star::text::XFlatParagraphIterator > &rxFlatParagraphIterator,
             bool bIsAutomaticChecking );
 
@@ -172,10 +172,10 @@ public:
     virtual void SAL_CALL resetIgnoreRules(  ) throw (::com::sun::star::uno::RuntimeException);
     virtual ::sal_Bool SAL_CALL isProofreading( const ::com::sun::star::uno::Reference< ::com::sun::star::uno::XInterface >& xDocument ) throw (::com::sun::star::uno::RuntimeException);
 
-    // XLinguServiceEventListener 
+    // XLinguServiceEventListener
     virtual void SAL_CALL processLinguServiceEvent( const ::com::sun::star::linguistic2::LinguServiceEvent& aLngSvcEvent ) throw (::com::sun::star::uno::RuntimeException);
 
-    // XLinguServiceEventBroadcaster 
+    // XLinguServiceEventBroadcaster
     virtual ::sal_Bool SAL_CALL addLinguServiceEventListener( const ::com::sun::star::uno::Reference< ::com::sun::star::linguistic2::XLinguServiceEventListener >& xLstnr ) throw (::com::sun::star::uno::RuntimeException);
     virtual ::sal_Bool SAL_CALL removeLinguServiceEventListener( const ::com::sun::star::uno::Reference< ::com::sun::star::linguistic2::XLinguServiceEventListener >& xLstnr ) throw (::com::sun::star::uno::RuntimeException);
 

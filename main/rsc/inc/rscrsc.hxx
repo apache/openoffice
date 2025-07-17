@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -50,7 +50,7 @@ class RscCmdLine
 	void		Init();
 
 public:
-	
+
     RscStrList			aInputList; 	// Liste der Quelldateien
 	RscStrList			aSymbolList;	// Liste der Symbole
 	ByteString			aPath;		    // Liste der Pfade
@@ -70,11 +70,11 @@ public:
         ByteString			         aLangName;			// language name
         ByteString			         aOutputRc;			// target file
         ByteString			         aLangSearchPath;	// language specific search path
-        ::std::list< ByteString >    aSysSearchDirs;    // paths to search for images         
-        
+        ::std::list< ByteString >    aSysSearchDirs;    // paths to search for images
+
         OutputFile() {}
     };
-    
+
     std::list<OutputFile>						            m_aOutputFiles;
     std::list< std::pair< rtl::OString, rtl::OString > >    m_aReplacements;
 
@@ -82,7 +82,7 @@ public:
 			        RscCmdLine();
 
 			        ~RscCmdLine();
-                        
+
   ::rtl::OString     substitutePaths( const ::rtl::OString& rIn );
 };
 /****************** R s c ************************************************/
@@ -101,15 +101,15 @@ private:
 	void			CreateResFile( const char * pRc );
 	void			Append( const ByteString& rOutputSrs, const ByteString& rTmpFile );
 	void			OpenInput( const ByteString& rInput );
-	
+
 	bool 			GetImageFilePath( const RscCmdLine::OutputFile& rOutputFile,
  							      	const WriteRcContext& rContext,
-									const ByteString& rBaseFileName, 
+									const ByteString& rBaseFileName,
 									ByteString& rImagePath,
 									FILE* pSysListFile );
 	void			PreprocessSrsFile( const RscCmdLine::OutputFile& rOutputFile,
  							      	   const WriteRcContext& rContext,
-								  	   const DirEntry& rSrsInPath, 
+								  	   const DirEntry& rSrsInPath,
 								  	   const DirEntry& rSrsOutPath );
 
 public:

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -29,10 +29,10 @@
 #ifndef _COM_SUN_STAR_BEANS_XPROPERTYSET_HPP_
 #include <com/sun/star/beans/XPropertySet.hpp>
 #endif
-#ifndef _COM_SUN_STAR_FRAME_XCONTROLLER_HPP_ 
+#ifndef _COM_SUN_STAR_FRAME_XCONTROLLER_HPP_
 #include <com/sun/star/frame/XController.hpp>
 #endif
-#ifndef _SV_SPLIT_HXX 
+#ifndef _SV_SPLIT_HXX
 #include <vcl/split.hxx>
 #endif
 #ifndef DBACCESS_TABLEDESIGN_ICLIPBOARDTEST_HXX
@@ -84,13 +84,13 @@ namespace dbaui
 
 		IClipboardTest* getActiveChild() const;
 	protected:
-		
+
 
 		// return the Rectangle where I can paint myself
 		virtual void resizeDocumentView(Rectangle& rRect);
 
 	public:
-		OTableDesignView(	Window* pParent, 
+		OTableDesignView(	Window* pParent,
 							const ::com::sun::star::uno::Reference< ::com::sun::star::lang::XMultiServiceFactory >&,
 							OTableController& _rController);
 		virtual ~OTableDesignView();

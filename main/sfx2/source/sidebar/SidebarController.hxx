@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 #ifndef SFX_SIDEBAR_CONTROLLER_HXX
@@ -107,11 +107,11 @@ public:
     // frame::XStatusListener
     virtual void SAL_CALL statusChanged (const css::frame::FeatureStateEvent& rEvent)
         throw(cssu::RuntimeException);
-    
+
     // ui::XSidebar
     virtual void SAL_CALL requestLayout (void)
         throw(cssu::RuntimeException);
-    
+
     void NotifyResize (void);
 
     /** In some situations it is necessary to force an update of the
@@ -124,7 +124,7 @@ public:
     const static sal_Int32 SwitchFlag_ForceSwitch = 0x01;
     const static sal_Int32 SwitchFlag_ForceNewDeck = 0x02;
     const static sal_Int32 SwitchFlag_ForceNewPanels = 0x02;
-    
+
     void RequestSwitchToDeck (
         const ::rtl::OUString& rsDeckId);
     void OpenThenSwitchToDeck (
@@ -172,7 +172,7 @@ private:
     ::boost::optional<bool> mbIsDeckRequestedOpen;
     ::boost::optional<bool> mbIsDeckOpen;
     bool mbCanDeckBeOpened;
-    
+
     /** Before the deck is closed the sidebar width is saved into this variable,
         so that it can be restored when the deck is reopened.
     */
@@ -190,12 +190,12 @@ private:
         sidebar will only show the tab bar.
     */
     ::boost::scoped_ptr<Window> mpCloseIndicator;
-        
+
     DECL_LINK(WindowEventHandler, VclWindowEvent*);
     /** Make maRequestedContext the current context.
     */
     void UpdateConfigurations (void);
-    
+
     cssu::Reference<css::ui::XUIElement> CreateUIElement (
         const cssu::Reference<css::awt::XWindowPeer>& rxWindow,
         const ::rtl::OUString& rsImplementationURL,
@@ -225,7 +225,7 @@ private:
         Return whether the width of the child window can be modified.
     */
     bool CanModifyChildWindowWidth (void);
-        
+
     /** Set the child window container to a new width.
         Return the old width.
     */

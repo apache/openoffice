@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -47,13 +47,13 @@ namespace dbaui
 		OQueryTableWindow( Window* pParent, const TTableWindowData::value_type& pTabWinData, sal_Unicode* pszInitialAlias = NULL );
 		virtual ~OQueryTableWindow();
 
-		::rtl::OUString	GetAliasName() const 
-		{ 
-			return static_cast<OQueryTableWindowData*>(GetData().get())->GetAliasName(); 
+		::rtl::OUString	GetAliasName() const
+		{
+			return static_cast<OQueryTableWindowData*>(GetData().get())->GetAliasName();
 		}
-		void			SetAliasName(const ::rtl::OUString& strNewAlias) 
-		{ 
-			static_cast<OQueryTableWindowData*>(GetData().get())->SetAliasName(strNewAlias); 
+		void			SetAliasName(const ::rtl::OUString& strNewAlias)
+		{
+			static_cast<OQueryTableWindowData*>(GetData().get())->SetAliasName(strNewAlias);
 		}
 
 		// spaeter Constructor, die Basisklasse ERZEUGT beim ersten Aufruf die Listbox
@@ -86,7 +86,7 @@ namespace dbaui
 			@return
 				the user data which will be append at the listbox entry, may be <NULL/>
 		*/
-		virtual void* createUserData(const ::com::sun::star::uno::Reference< 
+		virtual void* createUserData(const ::com::sun::star::uno::Reference<
 									::com::sun::star::beans::XPropertySet>& _xColumn,
 									bool _bPrimaryKey);
 	};

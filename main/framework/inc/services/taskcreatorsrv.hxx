@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -70,35 +70,35 @@ class TaskCreatorService : public  css::lang::XTypeProvider
     // types
 
     public:
-        
+
         /// [XFrame] if it's set, it will be used as parent frame for the new created frame.
 		static const ::rtl::OUString ARGUMENT_PARENTFRAME;
-    
+
         /** [OUString] if it's not a special name (beginning with "_" ... which are not allowed here!)
                        it will be set as the API name of the new created frame.
          */
 		static const ::rtl::OUString ARGUMENT_FRAMENAME;
-    
+
         /// [sal_Bool] If its set to sal_True we will make the new created frame visible.
 		static const ::rtl::OUString ARGUMENT_MAKEVISIBLE;
-    
+
         /** [sal_Bool] If not "ContainerWindow" property is set it force creation of a
                        top level window as new container window.
          */
 		static const ::rtl::OUString ARGUMENT_CREATETOPWINDOW;
-    
+
         /// [Rectangle] Place the new created frame on this place and resize the container window.
 		static const ::rtl::OUString ARGUMENT_POSSIZE;
-    
+
         /// [XWindow] an outside created window, used as container window of the new created frame.
 		static const ::rtl::OUString ARGUMENT_CONTAINERWINDOW;
-        
+
         /** [sal_Bool] enable/disable special mode, where this frame will be part of
                        the persistent window state feature suitable for any office module window
          */
         static const ::rtl::OUString ARGUMENT_SUPPORTPERSISTENTWINDOWSTATE;
 
-        /** [sal_Bool] enable/disable special mode, where the title bar of our 
+        /** [sal_Bool] enable/disable special mode, where the title bar of our
                        the new created frame will be updated automatically.
                        Default = ON !
          */
@@ -143,18 +143,18 @@ class TaskCreatorService : public  css::lang::XTypeProvider
         css::uno::Reference< css::awt::XWindow > implts_createContainerWindow( const css::uno::Reference< css::awt::XWindow >& xParentWindow ,
                                                                                const css::awt::Rectangle&                      aPosSize      ,
                                                                                      sal_Bool                                  bTopWindow    );
-    
+
         void implts_applyDocStyleToWindow(const css::uno::Reference< css::awt::XWindow >& xWindow) const;
-    
+
         css::uno::Reference< css::frame::XFrame > implts_createFrame( const css::uno::Reference< css::frame::XFrame >& xParentFrame     ,
                                                                       const css::uno::Reference< css::awt::XWindow >&  xContainerWindow ,
                                                                       const ::rtl::OUString&                           sName            );
-    
+
         void implts_establishWindowStateListener( const css::uno::Reference< css::frame::XFrame >& xFrame );
         void implts_establishTitleBarUpdate( const css::uno::Reference< css::frame::XFrame >& xFrame );
-    
+
         void implts_establishDocModifyListener( const css::uno::Reference< css::frame::XFrame >& xFrame );
-    
+
         ::rtl::OUString impl_filterNames( const ::rtl::OUString& sName );
 };
 

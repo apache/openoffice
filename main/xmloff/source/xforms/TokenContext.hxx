@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -56,7 +56,7 @@ protected:
 
 public:
 
-    TokenContext( SvXMLImport& rImport, 
+    TokenContext( SvXMLImport& rImport,
                   sal_uInt16 nPrefix,
                   const ::rtl::OUString& rLocalName,
                   const SvXMLTokenMapEntry* pAttributes = NULL,
@@ -72,14 +72,14 @@ public:
     /** call HandleAttribute for each attribute in the token map;
      * create a warning for all others. Classes that wish to override
      * StartElement need to call the parent method. */
-	virtual void StartElement( 
+	virtual void StartElement(
         const com::sun::star::uno::Reference<com::sun::star::xml::sax::XAttributeList>& xAttrList );
 
     /** call HandleChild for each child element in the token map;
      * create a warning for all others. Classes that wish to override
      * CreateChildCotnenxt may want to call the parent method for
      * handling of defaults. */
-	virtual SvXMLImportContext* CreateChildContext( 
+	virtual SvXMLImportContext* CreateChildContext(
         sal_uInt16 nPrefix,
         const rtl::OUString& rLocalName,
         const com::sun::star::uno::Reference<com::sun::star::xml::sax::XAttributeList>& xAttrList );
@@ -92,12 +92,12 @@ public:
 
 protected:
     /** will be called for each attribute */
-    virtual void HandleAttribute( 
-        sal_uInt16 nToken, 
+    virtual void HandleAttribute(
+        sal_uInt16 nToken,
         const rtl::OUString& rValue ) = 0;
 
     /** will be called for each child element */
-    virtual SvXMLImportContext* HandleChild( 
+    virtual SvXMLImportContext* HandleChild(
         sal_uInt16 nToken,
 
         // the following attributes are mainly to be used for child

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -159,7 +159,7 @@ public:
 
     void    SetHyperlinkURL( const ::rtl::OUString& rURL ) { m_sHyperlinkURL = rURL; }
     const ::rtl::OUString&                                                      GetHyperlinkURL() { return m_sHyperlinkURL; }
-    
+
     void setFFDataHandler(FFDataHandler::Pointer_t pFFDataHandler) { m_pFFDataHandler = pFFDataHandler; }
     FFDataHandler::Pointer_t getFFDataHandler() const { return m_pFFDataHandler; }
 
@@ -304,7 +304,7 @@ private:
     TextAppendStack                                                                 m_aTextAppendStack;
 
     TextContentStack
-              m_aAnchoredStack; 
+              m_aAnchoredStack;
 
     FieldStack                                                                      m_aFieldStack;
     bool                                                                            m_bFieldMode;
@@ -468,7 +468,7 @@ public:
             m_pThemeTable.reset( new ThemeTable );
         return m_pThemeTable;
     }
-    
+
     SettingsTablePtr GetSettingsTable()
     {
         if( !m_pSettingsTable )
@@ -614,7 +614,7 @@ public:
 
     RedlineParamsPtr GetTopRedline( );
 
-    sal_Int32 GetCurrentRedlineToken( ); 
+    sal_Int32 GetCurrentRedlineToken( );
     void SetCurrentRedlineAuthor( rtl::OUString sAuthor );
     void SetCurrentRedlineDate( rtl::OUString sDate );
     void SetCurrentRedlineId( sal_Int32 nId );

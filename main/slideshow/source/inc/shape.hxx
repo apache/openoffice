@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -69,7 +69,7 @@ namespace slideshow
             	direct corresponding XShape (the background comes to
             	mind here).
              */
-            virtual ::com::sun::star::uno::Reference< 
+            virtual ::com::sun::star::uno::Reference<
                 ::com::sun::star::drawing::XShape > getXShape() const = 0;
 
 
@@ -95,7 +95,7 @@ namespace slideshow
             	This method removes the shape from the given view
             	layer.
 
-                @return true, if the shape was successfully removed 
+                @return true, if the shape was successfully removed
              */
             virtual bool removeViewLayer( const ViewLayerSharedPtr& rNewLayer ) = 0;
 
@@ -225,23 +225,23 @@ namespace slideshow
                 // make functor adaptable (to boost::bind)
                 typedef bool result_type;
 
-                // since the ZOrder property on the XShape has somewhat 
+                // since the ZOrder property on the XShape has somewhat
                 // peculiar attributes (it's basically the index of the shapes
                 // in the drawing layer's SdrObjList - which means, it starts
-                // from 0 for children of group objects), we cannot use it to determine 
-                // drawing order. Thus, we rely on importer-provided order values here, 
+                // from 0 for children of group objects), we cannot use it to determine
+                // drawing order. Thus, we rely on importer-provided order values here,
                 // which is basically a running counter during shape import (i.e. denotes
                 // the order of shape import). This is the correct order, at least for the
                 // current drawing core.
                 //
-                // If, someday, the above proposition is no longer true, one directly use 
+                // If, someday, the above proposition is no longer true, one directly use
                 // the shape's ZOrder property
                 //
                 static bool compare(const Shape* pLHS, const Shape* pRHS)
                 {
                     const double nPrioL( pLHS->getPriority() );
                     const double nPrioR( pRHS->getPriority() );
-            
+
                     // if prios are equal, tie-break on ptr value
                     return nPrioL == nPrioR ? pLHS < pRHS : nPrioL < nPrioR;
                 }

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -57,7 +57,7 @@ class RehearseTimingsActivity : public Activity,
 public:
     /** Creates the activity.
      */
-    static boost::shared_ptr<RehearseTimingsActivity> create( 
+    static boost::shared_ptr<RehearseTimingsActivity> create(
         const SlideShowContext& rContext );
 
     virtual ~RehearseTimingsActivity();
@@ -65,7 +65,7 @@ public:
     /** Starts and shows the timer; adds to activity queue.
      */
     void start();
-    
+
     /** Stops and hides the timer.
         @return elapsed time
      */
@@ -80,7 +80,7 @@ public:
     virtual void viewRemoved( const UnoViewSharedPtr& rView );
     virtual void viewChanged( const UnoViewSharedPtr& rView );
     virtual void viewsChanged();
-    
+
     // Disposable:
     virtual void dispose();
     // Activity:
@@ -89,18 +89,18 @@ public:
     virtual bool isActive() const;
     virtual void dequeued();
     virtual void end();
-    
+
 private:
     class WakeupEvent;
 
     explicit RehearseTimingsActivity( const SlideShowContext& rContext );
-    
+
     void paint( ::cppcanvas::CanvasSharedPtr const & canvas ) const;
     void paintAllSprites() const;
-    
+
     class MouseHandler;
     friend class MouseHandler;
-    
+
     typedef ::std::vector<
         ::std::pair<UnoViewSharedPtr,
                     boost::shared_ptr<cppcanvas::CustomSprite> > > ViewsVecT;
@@ -116,7 +116,7 @@ private:
 
     ::basegfx::B2DRange calcSpriteRectangle(
         UnoViewSharedPtr const & rView ) const;
-    
+
     EventQueue&                     mrEventQueue;
     ScreenUpdater&                  mrScreenUpdater;
     EventMultiplexer&               mrEventMultiplexer;
@@ -124,10 +124,10 @@ private:
     canvas::tools::ElapsedTime      maElapsedTime;
 
     ViewsVecT                       maViews;
-    
+
     /// screen rect of sprite (in view coordinates!)
     ::basegfx::B2DRange             maSpriteRectangle;
-    
+
     Font                            maFont;
     boost::shared_ptr<WakeupEvent>  mpWakeUpEvent;
     boost::shared_ptr<MouseHandler> mpMouseHandler;

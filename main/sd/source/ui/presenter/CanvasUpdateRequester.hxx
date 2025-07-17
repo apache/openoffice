@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -53,18 +53,18 @@ public:
         const css::uno::Reference<css::rendering::XSpriteCanvas>& rxCanvas);
 
     void RequestUpdate (const sal_Bool bUpdateAll);
-    
+
 private:
     CanvasUpdateRequester (const css::uno::Reference<css::rendering::XSpriteCanvas>& rxCanvas);
     ~CanvasUpdateRequester (void);
     class Deleter; friend class Deleter;
-    
+
     typedef ::std::vector<
         ::std::pair<
-            css::uno::Reference<css::rendering::XSpriteCanvas>, 
+            css::uno::Reference<css::rendering::XSpriteCanvas>,
            ::boost::shared_ptr<CanvasUpdateRequester> > > RequesterMap;
     static RequesterMap maRequesterMap;
-    
+
     css::uno::Reference<css::rendering::XSpriteCanvas> mxCanvas;
     sal_uLong mnUserEventId;
     sal_Bool mbUpdateFlag;

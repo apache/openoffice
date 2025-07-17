@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -94,15 +94,15 @@ public:
             for new and deleted children, i.e. that holds a list of
             listeners to be informed.
     */
-    ChildrenManager (const ::com::sun::star::uno::Reference< 
+    ChildrenManager (const ::com::sun::star::uno::Reference<
             ::com::sun::star::accessibility::XAccessible>& rxParent,
-        const ::com::sun::star::uno::Reference< 
+        const ::com::sun::star::uno::Reference<
             ::com::sun::star::drawing::XShapes>& rxShapeList,
         const AccessibleShapeTreeInfo& rShapeTreeInfo,
         AccessibleContextBase& rContext);
 
     /** If there still are managed children these are marked as DEFUNC and
-        released. 
+        released.
     */
     virtual ~ChildrenManager (void);
 
@@ -110,7 +110,7 @@ public:
         @return
             If there are no children a 0 is returned.
     */
-    long GetChildCount (void) const throw (); 
+    long GetChildCount (void) const throw ();
 
     /**	Return the requested accessible child or throw and
         IndexOutOfBoundsException if the given index is invalid.
@@ -150,7 +150,7 @@ public:
         @param xShapeList
             The new list of shapes.
     */
-    void SetShapeList (const ::com::sun::star::uno::Reference< 
+    void SetShapeList (const ::com::sun::star::uno::Reference<
         ::com::sun::star::drawing::XShapes>& xShapeList);
 
     /** Add an accessible shape.  The difference to the UNO shapes in the
@@ -196,7 +196,7 @@ public:
     void RemoveFocus (void);
 
     //=====  IAccessibleViewForwarderListener  ================================
-    virtual void ViewForwarderChanged (ChangeType aChangeType, 
+    virtual void ViewForwarderChanged (ChangeType aChangeType,
         const IAccessibleViewForwarder* pViewForwarder);
 
 protected:

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -173,7 +173,7 @@ public:
 
     /// Output text (inside a run).
     virtual void RunText( const String& rText, rtl_TextEncoding eCharSet ) = 0;
-    
+
     /// Output text (without markup).
     virtual void RawText( const String& rText, bool bForceUnicode, rtl_TextEncoding eCharSet ) = 0;
 
@@ -310,7 +310,7 @@ public:
 
     /// Start of the abstract numbering definition instance.
     virtual void StartAbstractNumbering( sal_uInt16 /*nId*/ ) {}
-    
+
     /// End of the abstract numbering definition instance.
     virtual void EndAbstractNumbering() {}
 
@@ -328,7 +328,7 @@ public:
         sal_Int16 nListTabPos,
         const String &rNumberingString ,
 	const SvxBrushItem* pBrush = 0) = 0;//For i120928,to export graphic of bullet
-    
+
 protected:
 
     void GetNumberPara( String& rStr, const SwField& rFld );
@@ -538,7 +538,7 @@ protected:
 
     /// Sfx item RES_COL
     void FormatColumns( const SwFmtCol& );
-    
+
     virtual void FormatColumns_Impl( sal_uInt16 nCols, const SwFmtCol & rCol, bool bEven, SwTwips nPageSize ) = 0;
 
     /// Sfx item RES_KEEP
@@ -555,10 +555,10 @@ protected:
 
     /// Write the expanded field
     virtual void WriteExpand( const SwField* pFld ) = 0;
-    
+
     virtual void RefField( const SwField& rFld, const String& rRef ) = 0;
     virtual void HiddenField( const SwField& rFld ) = 0;
-    virtual void SetField( const SwField& rFld, ww::eField eType, const String& rCmd ) = 0; 
+    virtual void SetField( const SwField& rFld, ww::eField eType, const String& rCmd ) = 0;
     virtual void PostitField( const SwField* pFld ) = 0;
     virtual bool DropdownField( const SwField* pFld ) = 0;
 
@@ -583,9 +583,9 @@ public:
     void OutputFlyFrame( const sw::Frame& rFmt );
 
     void GetTablePageSize
-    ( ww8::WW8TableNodeInfoInner * pTableTextNodeInfoInner, 
+    ( ww8::WW8TableNodeInfoInner * pTableTextNodeInfoInner,
       sal_uInt32& rPageSize, bool& rRelBoxSize );
-    
+
 };
 
 #endif // _ATTRIBUTEOUTPUTBASE_HXX_

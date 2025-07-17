@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -149,8 +149,8 @@ namespace x11 {
 			) throw();
 
 	};
-		
-	
+
+
 	class SelectionManager :
 		public ::cppu::WeakImplHelper4<
 			::com::sun::star::datatransfer::dnd::XDragSource,
@@ -374,13 +374,13 @@ namespace x11 {
 		// IncrementalTransfers in progress
 		std::hash_map< XLIB_Window, std::hash_map< Atom, IncrementalTransfer > >
 									m_aIncrementals;
-		
+
 		// do not use X11 multithreading capabilities
 		// since this leads to deadlocks in different Xlib implentations
 		// (XFree as well as Xsun) use an own mutex instead
 		::osl::Mutex				m_aMutex;
         bool                        m_bShutDown;
-	
+
 		SelectionManager();
 		~SelectionManager();
 
@@ -403,7 +403,7 @@ namespace x11 {
 		XLIB_Cursor createCursor( const char* pPointerData, const char* pMaskData, int width, int height, int hotX, int hotY );
 		// coordinates on root XLIB_Window
 		void updateDragWindow( int nX, int nY, XLIB_Window aRoot );
-	
+
 		bool getPasteData( Atom selection, Atom type, Sequence< sal_Int8 >& rData );
 		// returns true if conversion was successful
 		bool convertData( const com::sun::star::uno::Reference< ::com::sun::star::datatransfer::XTransferable >& xTransferable,
@@ -439,14 +439,14 @@ namespace x11 {
 		Display * getDisplay() { return m_pDisplay; };
 		XLIB_Window getWindow() { return m_aWindow; };
 
-	
+
 		void registerHandler( Atom selection, SelectionAdaptor& rAdaptor );
 		void deregisterHandler( Atom selection );
 		bool requestOwnership( Atom selection );
-        
+
         // allow for synchronization over one mutex for XClipboard
         osl::Mutex& getMutex() { return m_aMutex; }
-	
+
 
 		Atom getAtom( const ::rtl::OUString& rString );
 		const ::rtl::OUString& getString( Atom nAtom );
@@ -514,11 +514,11 @@ namespace x11 {
 // ------------------------------------------------------------------------
 
 	::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL Xdnd_getSupportedServiceNames();
-	::com::sun::star::uno::Reference< ::com::sun::star::uno::XInterface > SAL_CALL Xdnd_createInstance( 
+	::com::sun::star::uno::Reference< ::com::sun::star::uno::XInterface > SAL_CALL Xdnd_createInstance(
 		const ::com::sun::star::uno::Reference< ::com::sun::star::lang::XMultiServiceFactory > & xMultiServiceFactory);
 
 	::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL Xdnd_dropTarget_getSupportedServiceNames();
-	::com::sun::star::uno::Reference< ::com::sun::star::uno::XInterface > SAL_CALL Xdnd_dropTarget_createInstance( 
+	::com::sun::star::uno::Reference< ::com::sun::star::uno::XInterface > SAL_CALL Xdnd_dropTarget_createInstance(
 		const ::com::sun::star::uno::Reference< ::com::sun::star::lang::XMultiServiceFactory > & xMultiServiceFactory);
 
 // ------------------------------------------------------------------------

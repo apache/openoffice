@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -35,7 +35,7 @@ namespace basebmp
     @tpl WrappedAccessor
     Wrapped type must provide the usual get and set accessor methods,
     with the usual signatures (see StandardAccessor for a conforming
-    example). 
+    example).
 
     @tpl GetterFunctor
     An Adaptable Unary Function (i.e. providing result_type and
@@ -45,8 +45,8 @@ namespace basebmp
     An Adaptable Unary Function (i.e. providing result_type and
     argument_type typedefs)
  */
-template< class WrappedAccessor, 
-          typename GetterFunctor, 
+template< class WrappedAccessor,
+          typename GetterFunctor,
           typename SetterFunctor > class UnaryFunctionAccessorAdapter
 {
 public:
@@ -70,12 +70,12 @@ public:
         maAccessor(),
         maGetterFunctor(),
         maSetterFunctor()
-    {}    
+    {}
 
-    template< class A > explicit 
+    template< class A > explicit
     UnaryFunctionAccessorAdapter( UnaryFunctionAccessorAdapter< A,
                                                                 GetterFunctor,
-                                                                SetterFunctor > const& rSrc ) : 
+                                                                SetterFunctor > const& rSrc ) :
         maAccessor( rSrc.maAccessor ),
         maGetterFunctor( rSrc.maGetterFunctor ),
         maSetterFunctor( rSrc.maSetterFunctor )
@@ -86,7 +86,7 @@ public:
         maGetterFunctor(),
         maSetterFunctor()
     {}
-    
+
     template< class T > UnaryFunctionAccessorAdapter( T             accessor,
                                                       GetterFunctor getterFunctor,
                                                       SetterFunctor setterFunctor) :
@@ -94,7 +94,7 @@ public:
         maGetterFunctor( getterFunctor ),
         maSetterFunctor( setterFunctor )
     {}
-    
+
     // -------------------------------------------------------
 
     WrappedAccessor const& getWrappedAccessor() const { return maAccessor; }
@@ -103,11 +103,11 @@ public:
     // -------------------------------------------------------
 
     value_type getter(typename GetterFunctor::argument_type v) const
-    { 
+    {
         return maGetterFunctor(v);
     }
     typename SetterFunctor::result_type setter(argument_type v) const
-    { 
+    {
         return maSetterFunctor(v);
     }
 
@@ -115,7 +115,7 @@ public:
 
     template< class Iterator >
     value_type operator()(Iterator const& i) const
-    { 
+    {
         return maGetterFunctor( maAccessor(i) );
     }
 
@@ -129,8 +129,8 @@ public:
 
     template< typename V, class Iterator >
     void set(V const& value, Iterator const& i) const
-    { 
-        maAccessor.set( 
+    {
+        maAccessor.set(
             maSetterFunctor(
                 vigra::detail::RequiresExplicitCast<argument_type>::cast(value) ),
             i );
@@ -139,7 +139,7 @@ public:
     template< typename V, class Iterator, class Difference >
     void set(V const& value, Iterator const& i, Difference const& diff) const
     {
-        maAccessor.set( 
+        maAccessor.set(
             maSetterFunctor(
                 vigra::detail::RequiresExplicitCast<argument_type>::cast(value) ),
             i,
@@ -164,7 +164,7 @@ public:
     An adaptable binary function (i.e. providing nested typedefs for
     result_type and first and second argument type)
  */
-template< class WrappedAccessor, 
+template< class WrappedAccessor,
           typename SetterFunctor > class BinarySetterFunctionAccessorAdapter
 {
 public:
@@ -184,12 +184,12 @@ public:
     BinarySetterFunctionAccessorAdapter() :
         maAccessor(),
         maFunctor()
-    {}    
+    {}
 
-    template< class A > explicit 
-    BinarySetterFunctionAccessorAdapter( 
+    template< class A > explicit
+    BinarySetterFunctionAccessorAdapter(
         BinarySetterFunctionAccessorAdapter< A,
-                                             SetterFunctor > const& rSrc ) : 
+                                             SetterFunctor > const& rSrc ) :
         maAccessor( rSrc.maAccessor ),
         maFunctor( rSrc.maFunctor )
     {}
@@ -198,13 +198,13 @@ public:
         maAccessor( accessor ),
         maFunctor()
     {}
-    
+
     template< class T > BinarySetterFunctionAccessorAdapter( T             accessor,
                                                              SetterFunctor functor ) :
         maAccessor( accessor ),
         maFunctor( functor )
     {}
-    
+
     // -------------------------------------------------------
 
     WrappedAccessor const& getWrappedAccessor() const { return maAccessor; }
@@ -212,10 +212,10 @@ public:
 
     // -------------------------------------------------------
 
-    typename SetterFunctor::result_type setter( 
+    typename SetterFunctor::result_type setter(
         typename SetterFunctor::first_argument_type v1,
         argument_type                               v2 ) const
-    { 
+    {
         return maSetterFunctor(v1,v2);
     }
 
@@ -223,7 +223,7 @@ public:
 
     template< class Iterator >
     value_type operator()(Iterator const& i) const
-    { 
+    {
         return maAccessor(i);
     }
 
@@ -237,9 +237,9 @@ public:
 
     template< typename V, class Iterator >
     void set(V const& value, Iterator const& i) const
-    { 
-        maAccessor.set( 
-            maFunctor(maAccessor(i), 
+    {
+        maAccessor.set(
+            maFunctor(maAccessor(i),
                       vigra::detail::RequiresExplicitCast<argument_type>::cast(value)),
             i );
     }
@@ -248,7 +248,7 @@ public:
     void set(V const& value, Iterator const& i, Difference const& diff) const
     {
         maAccessor.set(
-            maFunctor(maAccessor(i,diff), 
+            maFunctor(maAccessor(i,diff),
                       vigra::detail::RequiresExplicitCast<argument_type>::cast(value)),
             i,
             diff );
@@ -279,8 +279,8 @@ public:
     An adaptable ternary function (i.e. providing nested typedefs for
     result_type and first, second and third argument type)
  */
-template< class WrappedAccessor1, 
-          class WrappedAccessor2, 
+template< class WrappedAccessor1,
+          class WrappedAccessor2,
           typename Functor > class TernarySetterFunctionAccessorAdapter
 {
 public:
@@ -311,16 +311,16 @@ public:
     {}
 
     template< class A1, class A2 > explicit
-    TernarySetterFunctionAccessorAdapter( 
+    TernarySetterFunctionAccessorAdapter(
         TernarySetterFunctionAccessorAdapter< A1,
                                               A2,
-                                              Functor > const& rSrc ) : 
+                                              Functor > const& rSrc ) :
         ma1stAccessor( rSrc.ma1stAccessor ),
         ma2ndAccessor( rSrc.ma2ndAccessor ),
         maFunctor( rSrc.maFunctor )
     {}
 
-    template< class T1, class T2 > 
+    template< class T1, class T2 >
     TernarySetterFunctionAccessorAdapter( T1 accessor1,
                                           T2 accessor2 ) :
         ma1stAccessor( accessor1 ),
@@ -328,7 +328,7 @@ public:
         maFunctor()
     {}
 
-    template< class T1, class T2 > 
+    template< class T1, class T2 >
     TernarySetterFunctionAccessorAdapter( T1      accessor1,
                                           T2      accessor2,
                                           Functor func ) :
@@ -336,7 +336,7 @@ public:
         ma2ndAccessor( accessor2 ),
         maFunctor( func )
     {}
-    
+
     // -------------------------------------------------------
 
     WrappedAccessor1 const& get1stWrappedAccessor() const { return ma1stAccessor; }
@@ -347,11 +347,11 @@ public:
 
     // -------------------------------------------------------
 
-    typename Functor::result_type setter( 
+    typename Functor::result_type setter(
         typename Functor::first_argument_type  v1,
         typename Functor::second_argument_type v2,
         argument_type                          v3 ) const
-    { 
+    {
         return maSetterFunctor(v1,v2,v3);
     }
 
@@ -359,7 +359,7 @@ public:
 
     template< class Iterator >
     value_type operator()(Iterator const& i) const
-    { 
+    {
         return ma1stAccessor(i.first());
     }
 
@@ -373,9 +373,9 @@ public:
 
     template< typename V, class Iterator >
     void set(V const& value, Iterator const& i) const
-    { 
+    {
         ma1stAccessor.set(
-            maFunctor(ma1stAccessor(i.first()), 
+            maFunctor(ma1stAccessor(i.first()),
                       ma2ndAccessor(i.second()),
                       vigra::detail::RequiresExplicitCast<argument_type>::cast(value)),
             i.first() );
@@ -385,7 +385,7 @@ public:
     void set(V const& value, Iterator const& i, Difference const& diff) const
     {
         ma1stAccessor.set(
-            maFunctor(ma1stAccessor(i.first(), diff), 
+            maFunctor(ma1stAccessor(i.first(), diff),
                       ma2ndAccessor(i.second(),diff),
                       vigra::detail::RequiresExplicitCast<argument_type>::cast(value)),
             i.first(),
@@ -393,7 +393,7 @@ public:
     }
 
 };
-   
+
 //-----------------------------------------------------------------------------
 
 /** Access two distinct images simultaneously
@@ -416,7 +416,7 @@ public:
     example). Furthermore, the type must provide a nested typedef
     value_type.
  */
-template< class WrappedAccessor1, 
+template< class WrappedAccessor1,
           class WrappedAccessor2 > class JoinImageAccessorAdapter
 {
 public:
@@ -447,14 +447,14 @@ public:
     {}
 
     template< class A1, class A2 > explicit
-    JoinImageAccessorAdapter( 
+    JoinImageAccessorAdapter(
         JoinImageAccessorAdapter< A1,
-                                  A2 > const& rSrc ) : 
+                                  A2 > const& rSrc ) :
         ma1stAccessor( rSrc.ma1stAccessor ),
         ma2ndAccessor( rSrc.ma2ndAccessor )
     {}
 
-    template< class T1, class T2 > 
+    template< class T1, class T2 >
     JoinImageAccessorAdapter( T1 accessor1,
                               T2 accessor2 ) :
         ma1stAccessor( accessor1 ),
@@ -473,7 +473,7 @@ public:
 
     template< class Iterator >
     value_type operator()(Iterator const& i) const
-    { 
+    {
         return std::make_pair(ma1stAccessor(i.first()),
                               ma2ndAccessor(i.second()));
     }
@@ -489,12 +489,12 @@ public:
 
     template< typename V, class Iterator >
     void set(V const& value, Iterator const& i) const
-    { 
-        ma1stAccessor.set( 
+    {
+        ma1stAccessor.set(
             vigra::detail::RequiresExplicitCast<typename WrappedAccessor1::value_type>::cast(
                 value.first),
             i.first() );
-        ma2ndAccessor.set( 
+        ma2ndAccessor.set(
             vigra::detail::RequiresExplicitCast<typename WrappedAccessor2::value_type>::cast(
                 value.second),
             i.second() );
@@ -503,19 +503,19 @@ public:
     template< typename V, class Iterator, class Difference >
     void set(V const& value, Iterator const& i, Difference const& diff) const
     {
-        ma1stAccessor.set( 
+        ma1stAccessor.set(
             vigra::detail::RequiresExplicitCast<typename WrappedAccessor1::value_type>::cast(
                 value.first),
             i.first(),
             diff );
-        ma2ndAccessor.set( 
+        ma2ndAccessor.set(
             vigra::detail::RequiresExplicitCast<typename WrappedAccessor2::value_type>::cast(
                 value.second),
             i.second(),
             diff );
     }
 
-};   
+};
 
 } // namespace basebmp
 

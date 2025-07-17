@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -39,10 +39,10 @@ namespace basebmp
     When true, 0 means fully transparent, and 1 fully opaque. And vice
     versa.
  */
-template< typename ValueType, 
+template< typename ValueType,
           typename AlphaType,
           bool     polarity > struct BlendFunctor;
-template< typename ValueType, 
+template< typename ValueType,
           typename AlphaType > struct BlendFunctor<ValueType,AlphaType,true>
   : public TernaryFunctorBase<AlphaType,ValueType,ValueType,ValueType>
 {
@@ -55,7 +55,7 @@ template< typename ValueType,
         return (vigra::NumericTraits<AlphaType>::one()-fAlpha)*v1 + fAlpha*v2;
     }
 };
-template< typename ValueType, 
+template< typename ValueType,
           typename AlphaType > struct BlendFunctor<ValueType,AlphaType,false>
   : public TernaryFunctorBase<AlphaType,ValueType,ValueType,ValueType>
 {
@@ -74,12 +74,12 @@ template< typename ValueType,
 
     @tpl polarity
     When true, 0 means fully transparent, and 1 fully opaque. And vice
-    versa.    
+    versa.
  */
-template< typename ValueType, 
+template< typename ValueType,
           typename AlphaType,
           bool     polarity > struct IntegerBlendFunctor;
-template< typename ValueType, 
+template< typename ValueType,
           typename AlphaType > struct IntegerBlendFunctor<ValueType,AlphaType,true>
   : public TernaryFunctorBase<AlphaType,ValueType,ValueType,ValueType>
 {
@@ -92,7 +92,7 @@ template< typename ValueType,
             vigra::NumericTraits<AlphaType>::max();
     }
 };
-template< typename ValueType, 
+template< typename ValueType,
           typename AlphaType > struct IntegerBlendFunctor<ValueType,AlphaType,false>
   : public TernaryFunctorBase<AlphaType,ValueType,ValueType,ValueType>
 {
@@ -100,7 +100,7 @@ template< typename ValueType,
                           ValueType v1,
                           ValueType v2 ) const
     {
-        return (alpha*v1 + 
+        return (alpha*v1 +
                 vigra::NumericTraits<AlphaType>::toPromote(
                     vigra::NumericTraits<AlphaType>::max()-alpha)*v2) /
             vigra::NumericTraits<AlphaType>::max();
@@ -124,18 +124,18 @@ template< typename ColorType > struct ColorTraits
     typedef ColorType component_type;
 
     /// Calculate normalized distance between color c1 and c2
-    static inline vigra::NormTraits<ColorType> distance( ColorType c1, 
-                                                         ColorType c2 ) 
-    { 
+    static inline vigra::NormTraits<ColorType> distance( ColorType c1,
+                                                         ColorType c2 )
+    {
         return vigra::norm(c1 - c2);
     }
 
-    static inline component_type toGreyscale( ColorType c ) 
+    static inline component_type toGreyscale( ColorType c )
     {
         return c;
     }
 
-    static inline ColorType fromGreyscale( component_type c ) 
+    static inline ColorType fromGreyscale( component_type c )
     {
         return c;
     }

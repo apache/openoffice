@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -42,7 +42,7 @@ namespace basegfx
 		derive from this, and override the span() method, which will
 		get called for every scanline span of the poly-polygon.
 
-        @derive 
+        @derive
         Overwrite span() with the render output method of your choice.
      */
     class BASEGFX_DLLPUBLIC B2DPolyPolygonRasterConverter
@@ -86,7 +86,7 @@ namespace basegfx
 
             @param rfXLeft
             The left end of the current horizontal span
-            
+
             @param rfXRight
             The right end of the current horizontal span
 
@@ -99,7 +99,7 @@ namespace basegfx
         */
         virtual void span(const double& rfXLeft,
                           const double& rfXRight,
-                          sal_Int32 	nY, 
+                          sal_Int32 	nY,
                           bool 			bOn ) = 0;
 
         /// @internal

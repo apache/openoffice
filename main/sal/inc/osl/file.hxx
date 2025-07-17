@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -38,7 +38,7 @@
 #include <stdio.h>
 
 namespace osl
-{     
+{
 
 
 // -----------------------------------------------------------------------------
@@ -108,16 +108,16 @@ public:
 
 public:
 
-	/**	Determine a valid unused canonical name for a requested name. 
+	/**	Determine a valid unused canonical name for a requested name.
 
-        Determines a valid unused canonical name for a requested name. 
-        Depending on the Operating System and the File System the illegal characters are replaced by valid ones. 
-        If a file or directory with the requested name already exists a new name is generated following 
+        Determines a valid unused canonical name for a requested name.
+        Depending on the Operating System and the File System the illegal characters are replaced by valid ones.
+        If a file or directory with the requested name already exists a new name is generated following
         the common rules on the actual Operating System and File System.
 
 	    @param ustrRequestedURL [in]
 	    Requested name of a file or directory.
-    	
+
 	    @param pustrValidURL [out]
 	    On success receives a name which is unused and valid on the actual Operating System and
 	    File System.
@@ -128,33 +128,33 @@ public:
 
 	    @see DirectoryItem::getFileStatus()
 	*/
-	
+
 	static inline RC getCanonicalName( const ::rtl::OUString& ustrRequestedURL, ::rtl::OUString& ustrValidURL )
 	{
 		return (RC) osl_getCanonicalName( ustrRequestedURL.pData, &ustrValidURL.pData );
 	}
 
 	/**	Convert a path relative to a given directory into an full qualified file URL.
-	
+
 	    Convert a path relative to a given directory into an full qualified file URL.
 	    The function resolves symbolic links if possible and path ellipses, so on success
 	    the resulting absolute path is fully resolved.
-    	
+
 	    @param ustrBaseDirectoryURL [in]
 	    Base directory URL to which the relative path is related to.
-    	
+
 	    @param ustrRelativeFileURL [in]
 	    An URL of a file or directory relative to the directory path specified by ustrBaseDirectoryURL
 	    or an absolute path.
 	    If ustrRelativeFileURL denotes an absolute path ustrBaseDirectoryURL will be ignored.
-    	
+
 	    @param ustrAbsoluteFileURL [out]
 	    On success it receives the full qualified absolute file URL.
 
-	    @return 
-	    E_None on success 
+	    @return
+	    E_None on success
 	    E_INVAL the format of the parameters was not valid
-	    E_NOMEM not enough memory for allocating structures 
+	    E_NOMEM not enough memory for allocating structures
 	    E_NOTDIR not a directory
 	    E_ACCES permission denied
 	    E_NOENT no such file or directory
@@ -178,12 +178,12 @@ public:
 
 	    @param ustrFileURL [in]
 	    A File URL.
-    	
+
 	    @param ustrSystemPath [out]
 	    On success it receives the system path.
 
-	    @return 
-	    E_None on success 
+	    @return
+	    E_None on success
 	    E_INVAL the format of the parameters was not valid
 
 	    @see getFileURLFromSystemPath()
@@ -198,11 +198,11 @@ public:
 
 	    @param ustrSystemPath [in]
 	    A System dependent path of a file or directory.
-    	
+
 	    @param ustrFileURL [out]
 	    On success it receives the file URL.
 
-	    @return 
+	    @return
 	    E_None on success
 	    E_INVAL the format of the parameters was not valid
 
@@ -216,28 +216,28 @@ public:
 
     /**	Searche a full qualified system path or a file URL.
 
-        @param ustrFileName [in] 
-        A system dependent path, a file URL, a file or relative directory 
-        
+        @param ustrFileName [in]
+        A system dependent path, a file URL, a file or relative directory
+
         @param ustrSearchPath [in]
-        A list of system paths, in which a given file has to be searched. The Notation of a path list is 
+        A list of system paths, in which a given file has to be searched. The Notation of a path list is
         system dependend, e.g. on UNIX system "/usr/bin:/bin" and on Windows "C:\BIN;C:\BATCH".
-        These paths are only for the search of a file or a relative path, otherwise it will be ignored. 
-        If ustrSearchPath is NULL or while using the search path the search failed, the function searches for 
-        a matching file in all system directories and in the directories listed in the PATH environment 
-        variable. 
-        The value of an environment variable should be used (e.g. LD_LIBRARY_PATH) if the caller is not 
+        These paths are only for the search of a file or a relative path, otherwise it will be ignored.
+        If ustrSearchPath is NULL or while using the search path the search failed, the function searches for
+        a matching file in all system directories and in the directories listed in the PATH environment
+        variable.
+        The value of an environment variable should be used (e.g. LD_LIBRARY_PATH) if the caller is not
         aware of the Operating System and so doesn't know which path list delimiter to use.
-    						   
+
 	    @param ustrFileURL [out]
 	    On success it receives the full qualified file URL.
 
-	    @return 
+	    @return
 	    E_None on success
 	    E_INVAL the format of the parameters was not valid
 	    E_NOTDIR not a directory
 	    E_NOENT no such file or directory not found
-    	
+
 	    @see getFileURLFromSystemPath()
 	    @see getSystemPathFromFileURL()
 	*/
@@ -249,10 +249,10 @@ public:
 
 	/**	Retrieves the file URL of the system's temporary directory path.
 
-		@param ustrTempDirURL[out] 
+		@param ustrTempDirURL[out]
 		On success receives the URL of system's	temporary directory path.
 
-		@return 
+		@return
 		E_None on success
 		E_NOENT	no such file or directory not found
 	*/
@@ -261,65 +261,65 @@ public:
 	{
 		return (RC) osl_getTempDirURL( &ustrTempDirURL.pData );
 	}
-	
+
 	/** Creates a temporary file in the directory provided by the caller or the
-        directory returned by getTempDirURL. 
-        Under UNIX Operating Systems the file will be created with read and write 
-        access for the user exclusively. 
-        If the caller requests only a handle to the open file but not the name of 
-        it, the file will be automatically removed on close else the caller is 
+        directory returned by getTempDirURL.
+        Under UNIX Operating Systems the file will be created with read and write
+        access for the user exclusively.
+        If the caller requests only a handle to the open file but not the name of
+        it, the file will be automatically removed on close else the caller is
         responsible for removing the file on success.<br><br>
 
-        @param  pustrDirectoryURL [in] 
-		Specifies the full qualified URL where the temporary file should be created. 
+        @param  pustrDirectoryURL [in]
+		Specifies the full qualified URL where the temporary file should be created.
         If pustrDirectoryURL is 0 the path returned by osl_getTempDirURL will be used.
-            
-        @param  pHandle [out] 
+
+        @param  pHandle [out]
 		On success receives a handle to the open file.
         If pHandle is 0 the file will be closed on return, in this case
         pustrTempFileURL must not be 0.
-            
-        @param  pustrTempFileURL [out] 
+
+        @param  pustrTempFileURL [out]
 		On success receives the full qualified URL of the temporary file.
         If pustrTempFileURL is 0 the file will be automatically removed
         on close, in this case pHandle must not be 0.
         If pustrTempFileURL is not 0 the caller receives the name of the
-        created file and is responsible for removing the file.              
+        created file and is responsible for removing the file.
 
-        @descr  
+        @descr
 		Description of the different pHandle, ppustrTempFileURL parameter combinations.
         pHandle is 0 and pustrTempDirURL is 0 - this combination is invalid<br>
-        pHandle is not 0 and pustrTempDirURL is 0 - a handle to the open file 
+        pHandle is not 0 and pustrTempDirURL is 0 - a handle to the open file
         will be returned on success and the file will be automatically removed on close<br>
         pHandle is 0 and pustrTempDirURL is not 0 - the name of the file will be
         returned, the caller is responsible for opening, closing and removing the file.<br>
         pHandle is not 0 and pustrTempDirURL is not 0 - a handle to the open file as well as
-        the file name will be returned, the caller is responsible for closing and removing 
+        the file name will be returned, the caller is responsible for closing and removing
         the file.<br>
-                                    
-        @return 
+
+        @return
 		E_None   on success
-        E_INVAL  the format of the parameter is invalid           
+        E_INVAL  the format of the parameter is invalid
         E_NOMEM  not enough memory for allocating structures
-	    E_ACCES  Permission denied	        
+	    E_ACCES  Permission denied
 	    E_NOENT  No such file or directory
 	    E_NOTDIR Not a directory
 	    E_ROFS   Read-only file system
 	    E_NOSPC  No space left on device
 	    E_DQUOT  Quota exceeded
-    	    
+
 	    @see getTempDirURL()
     */
-    
+
 	static inline RC createTempFile(
-	    ::rtl::OUString* pustrDirectoryURL, 
-	    oslFileHandle*   pHandle, 
+	    ::rtl::OUString* pustrDirectoryURL,
+	    oslFileHandle*   pHandle,
 	    ::rtl::OUString* pustrTempFileURL)
-	{	    	            
+	{
         rtl_uString*  pustr_dir_url       = pustrDirectoryURL ? pustrDirectoryURL->pData : 0;
         rtl_uString** ppustr_tmp_file_url = pustrTempFileURL  ? &pustrTempFileURL->pData : 0;
-        
-        return (RC) osl_createTempFile(pustr_dir_url, pHandle, ppustr_tmp_file_url);            
+
+        return (RC) osl_createTempFile(pustr_dir_url, pHandle, ppustr_tmp_file_url);
 	}
 };
 
@@ -344,27 +344,27 @@ public:
 
     /** Constructor.
     */
-    
+
 	VolumeDevice() : _aHandle( NULL )
 	{
 	}
 
     /** Copy constructor.
-    
+
         @param rDevice
         The other volume device.
     */
-    
+
 	VolumeDevice( const VolumeDevice & rDevice )
 	{
 		_aHandle = rDevice._aHandle;
 		if ( _aHandle )
 			osl_acquireVolumeDeviceHandle( _aHandle );
 	}
-    
+
     /** Destructor.
     */
-    
+
 	~VolumeDevice()
 	{
 		if ( _aHandle )
@@ -372,11 +372,11 @@ public:
 	}
 
     /** Assignment operator.
-    
+
         @param rDevice
         The other volume device.
     */
-    
+
 	inline VolumeDevice & operator =( const VolumeDevice & rDevice )
 	{
 		oslVolumeDeviceHandle	newHandle = rDevice._aHandle;
@@ -393,37 +393,37 @@ public:
 	}
 
     /** Automount a volume device.
-                        
+
         @return
         E_None on success
-        
-        @todo 
-        specify all error codes that may be returned                
+
+        @todo
+        specify all error codes that may be returned
     */
-    
+
 	inline RC automount()
 	{
 		return (RC)osl_automountVolumeDevice( _aHandle );
 	}
 
     /** Unmount a volume device.
-        
+
         @return
         E_None on success
-        
-        @todo 
-        specify all error codes that may be returned                
+
+        @todo
+        specify all error codes that may be returned
     */
-    
+
 	inline RC unmount()
 	{
 		return (RC)osl_unmountVolumeDevice( _aHandle );
 	}
 
     /** Get the full qualified URL where a device is mounted to.
-	   	
-	   	@return	    
-	    The full qualified URL where the device is mounted to.    	
+
+	   	@return
+	    The full qualified URL where the device is mounted to.
     */
 	inline rtl::OUString getMountPath()
 	{
@@ -466,17 +466,17 @@ class VolumeInfo
     */
 
 	VolumeInfo( VolumeInfo& );
-	
+
 	/** Assignment operator.
 	*/
-	
+
 	VolumeInfo& operator = ( VolumeInfo& );
 
 public:
 
     /** Constructor.
 
-        @param nMask 
+        @param nMask
         Set of flaggs describing the demanded information.
     */
 
@@ -500,7 +500,7 @@ public:
 
         @param nMask
         Set of flags for the fields to check.
-        
+
         @return sal_True if all fields are valid else sal_False.
     */
 
@@ -510,8 +510,8 @@ public:
 	}
 
     /** Check the remote flag.
-    
-        @return 
+
+        @return
         sal_True if Attributes are valid and the volume is remote else sal_False.
     */
 
@@ -521,8 +521,8 @@ public:
 	}
 
     /** Check the removeable flag.
-    
-        @return 
+
+        @return
         sal_True if attributes are valid and the volume is removable else sal_False.
     */
 
@@ -532,8 +532,8 @@ public:
 	}
 
     /** Check the compact disc flag.
-    
-        @return 
+
+        @return
         sal_True if attributes are valid and the volume is a CDROM else sal_False.
     */
 
@@ -543,8 +543,8 @@ public:
 	}
 
     /** Check the floppy disc flag.
-        
-        @return 
+
+        @return
         sal_True if attributes are valid and the volume is a floppy disk else sal_False.
     */
 
@@ -554,8 +554,8 @@ public:
 	}
 
     /** Check the fixed disk flag.
-    
-        @return 
+
+        @return
         sal_True if attributes are valid and the volume is a fixed disk else sal_False.
     */
 
@@ -565,8 +565,8 @@ public:
 	}
 
     /** Check the RAM disk flag.
-    
-        @return 
+
+        @return
         sal_True if attributes are valid and the volume is a RAM disk else sal_False.
     */
 
@@ -576,8 +576,8 @@ public:
 	}
 
     /** Determine the total space of a volume device.
-    
-        @return 
+
+        @return
         The total diskspace of this volume if this information is valid,
 	    0 otherwise.
     */
@@ -588,8 +588,8 @@ public:
 	}
 
     /** Determine the free space of a volume device.
-    
-        @return 
+
+        @return
         The free diskspace of this volume if this information is valid,
 	    0 otherwise.
     */
@@ -600,8 +600,8 @@ public:
 	}
 
     /** Determine the used space of a volume device.
-    
-        @return 
+
+        @return
         The used diskspace of this volume if this information is valid,
 	    0 otherwise.
     */
@@ -612,7 +612,7 @@ public:
 	}
 
     /** Determine the maximal length of a file name.
-    
+
         @return
         The maximal length of a file name if this information is valid,
         0 otherwise.
@@ -624,8 +624,8 @@ public:
 	}
 
     /** Determine the maximal length of a path name.
-    
-        @return 
+
+        @return
         The maximal length of a path if this information is valid,
 	    0 otherwise.
     */
@@ -636,8 +636,8 @@ public:
 	}
 
     /** Determine the name of the volume device's File System.
-    
-        @return 
+
+        @return
         The name of the volume's fielsystem if this information is valid,
 	    otherwise an empty string.
     */
@@ -649,8 +649,8 @@ public:
 
 
     /** Get the volume device handle.
-    
-        @return 
+
+        @return
         The device handle of the volume if this information is valid,
 	    otherwise returns NULL;
     */
@@ -660,9 +660,9 @@ public:
         return _aDevice;
 	}
 
-    /** Return whether the file system is case sensitive or 
-        case insensitive 
-        
+    /** Return whether the file system is case sensitive or
+        case insensitive
+
         @return
         true if the file system is case sensitive false otherwise
     */
@@ -670,10 +670,10 @@ public:
     {
         return (_aInfo.uAttributes & osl_Volume_Attribute_Case_Sensitive);
     }
-    
-    /** Return whether the file system preserves the case of 
+
+    /** Return whether the file system preserves the case of
         file and directory names or not
-        
+
         @return
         true if the file system preserves the case of file and
         directory names false otherwise
@@ -682,7 +682,7 @@ public:
     {
         return (_aInfo.uAttributes & osl_Volume_Attribute_Case_Is_Preserved);
     }
-    
+
     friend class Directory;
 };
 
@@ -729,10 +729,10 @@ class FileStatus
     */
 
 	FileStatus( FileStatus& );
-	
+
 	/** Assignment operator.
 	*/
-	
+
 	FileStatus& operator = ( FileStatus& );
 
 public:
@@ -754,7 +754,7 @@ public:
         Set of flaggs describing the demanded information.
     */
 
-	FileStatus( sal_uInt32 nMask ): _nMask( nMask ) 
+	FileStatus( sal_uInt32 nMask ): _nMask( nMask )
 	{
         _aStatus.uStructSize = sizeof( oslFileStatus );
         rtl_fillMemory( &_aStatus.uValidFields, sizeof( oslFileStatus ) - sizeof( sal_uInt32 ), 0 );
@@ -777,19 +777,19 @@ public:
 
         @param nMask
         Set of flags for the fields to check.
-        
-        @return 
+
+        @return
         sal_True if all fields are valid else sal_False.
     */
-    
+
     inline sal_Bool isValid( sal_uInt32 nMask ) const
 	{
         return ( nMask & _aStatus.uValidFields ) == nMask;
 	}
 
     /** Get the file type.
-    
-        @return 
+
+        @return
         The file type if this information is valid, Unknown otherwise.
     */
     inline Type getFileType() const
@@ -798,8 +798,8 @@ public:
 	}
 
     /** Get the file attributes.
-    
-        @return 
+
+        @return
         The set of attribute flags of this file.
     */
 
@@ -809,8 +809,8 @@ public:
 	}
 
     /** Get the creation time of this file.
-    
-        @return 
+
+        @return
         The creation time if this information is valid,
 	    an uninitialized TimeValue otherwise.
     */
@@ -821,8 +821,8 @@ public:
 	}
 
     /** Get the file access time.
-    
-        @return 
+
+        @return
         The last access time if this information is valid,
 	    an uninitialized TimeValue otherwise.
     */
@@ -833,8 +833,8 @@ public:
 	}
 
     /** Get the file modification time.
-    
-        @return 
+
+        @return
         The last modified time if this information is valid,
 	    an uninitialized TimeValue otherwise.
     */
@@ -845,8 +845,8 @@ public:
 	}
 
     /** Get the size of the file.
-    
-        @return 
+
+        @return
         The actual file size if this information is valid, 0 otherwise.
     */
 
@@ -856,8 +856,8 @@ public:
 	}
 
     /** Get the file name.
-    
-        @return 
+
+        @return
         The file name if this information is valid, an empty string otherwise.
     */
 
@@ -868,8 +868,8 @@ public:
 
 
     /** Get the URL of the file.
-    
-        @return 
+
+        @return
         The full qualified URL of the file if this information is valid, an empty string otherwise.
     */
 
@@ -879,8 +879,8 @@ public:
 	}
 
     /** Get the link target URL.
-    
-        @return 
+
+        @return
         The link target URL if this information is valid, an empty string otherwise.
     */
 
@@ -901,25 +901,25 @@ public:
  */
 
 class File: public FileBase
-{        
+{
     oslFileHandle   _pData;
 	::rtl::OUString _aPath;
 
-    /** Copy constructor. 
+    /** Copy constructor.
     */
 
 	File( File& );
-	
+
 	/** Assignment operator.
 	*/
-	
+
 	File& operator = ( File& );
 
 public:
 
     /** Constructor.
 
-	    @param  ustrFileURL [in] 
+	    @param  ustrFileURL [in]
 	    The full qualified URL of the file. Relative paths are not allowed.
     */
 
@@ -941,13 +941,13 @@ public:
 	/** Open a regular file.
 
         Open a file. Only regular files	can be opened.
-        	        	
+
 	    @param uFlags [in]
 	    Specifies the open mode.
-    	
-	    @return 
-	    E_None on success 
-	    E_NOMEM not enough memory for allocating structures 
+
+	    @return
+	    E_None on success
+	    E_NOMEM not enough memory for allocating structures
 	    E_INVAL the format of the parameters was not valid
 	    E_NAMETOOLONG pathname was too long
 	    E_NOENT no such file or directory
@@ -987,16 +987,16 @@ public:
 	}
 
 	/**	Close an open file.
-	    
-	    @return 
-	    E_None on success 
-	    E_INVAL the format of the parameters was not valid	
+
+	    @return
+	    E_None on success
+	    E_INVAL the format of the parameters was not valid
 	    E_BADF Bad file
 	    E_INTR function call was interrupted
 	    E_NOLINK link has been severed
 	    E_NOSPC no space left on device
 	    E_IO on I/O errors
-    	
+
 	    @see open()
     */
 
@@ -1019,15 +1019,15 @@ public:
     #define Pos_End     osl_Pos_End
 
     /** Set the internal position pointer of an open file.
-	    
-	    @param uHow [in] 
+
+	    @param uHow [in]
 	    Distance to move the internal position pointer (from uPos).
-    	
+
 	    @param uPos [in]
 	    Absolute position from the beginning of the file.
-    	
-	    @return 
-	    E_None on success 
+
+	    @return
+	    E_None on success
 	    E_INVAL the format of the parameters was not valid
 	    E_OVERFLOW the resulting file offset would be a value which cannot be represented correctly for regular files
 
@@ -1041,12 +1041,12 @@ public:
 	}
 
 	/**	Retrieve the current position of the internal pointer of an open file.
-	    
-	    @param uPos [out] 
+
+	    @param uPos [out]
 	    On success receives the current position of the file pointer.
-    	
-	    @return 
-	    E_None on success 
+
+	    @return
+	    E_None on success
 	    E_INVAL the format of the parameters was not valid
 	    E_OVERFLOW the resulting file offset would be a value which cannot be represented correctly for regular files
 
@@ -1062,12 +1062,12 @@ public:
 	}
 
     /**	Test if the end of a file is reached.
-	    
+
 	    @param pIsEOF [out]
 	    Points to a variable that receives the end-of-file status.
-    	
+
 	    @return
-	    E_None on success  
+	    E_None on success
 	    E_INVAL the format of the parameters was not valid
 	    E_INTR function call was interrupted
 	    E_IO on I/O errors
@@ -1088,16 +1088,16 @@ public:
         return (RC) osl_isEndOfFile( _pData, pIsEOF );
     }
 
-	/**	Set the file size of an open file. 
+	/**	Set the file size of an open file.
 
         Sets the file size of an open file. The file can be truncated or enlarged by the function.
 	    The position of the file pointer is not affeced by this function.
-    		    
-	    @param uSize [in] 
+
+	    @param uSize [in]
 	    New size in bytes.
-    	
-	    @return 
-	    E_None on success 
+
+	    @return
+	    E_None on success
 	    E_INVAL the format of the parameters was not valid
 	    E_OVERFLOW the resulting file offset would be a value which cannot	be represented correctly for regular files
 
@@ -1111,16 +1111,16 @@ public:
         return (RC) osl_setFileSize( _pData, uSize );
 	}
 
-	/**	Get the file size of an open file. 
+	/**	Get the file size of an open file.
 
-        Gets the file size of an open file. 
+        Gets the file size of an open file.
 	    The position of the file pointer is not affeced by this function.
-    		    
-	    @param rSize [out] 
+
+	    @param rSize [out]
 	    Current size in bytes.
-    	
-	    @return 
-	    E_None on success 
+
+	    @return
+	    E_None on success
 	    E_INVAL the format of the parameters was not valid
 	    E_OVERFLOW the resulting file offset would be a value which cannot	be represented correctly for regular files
 
@@ -1136,22 +1136,22 @@ public:
         return (RC) osl_getFileSize( _pData, &rSize );
 	}
 
-	/**	Read a number of bytes from a file. 
+	/**	Read a number of bytes from a file.
 
-        Reads a number of bytes from a file. The internal file pointer is 
+        Reads a number of bytes from a file. The internal file pointer is
         increased by the number of bytes read.
-        	    
+
 	    @param pBuffer [out]
-	    Points to a buffer which receives data. The buffer must be large enough	
+	    Points to a buffer which receives data. The buffer must be large enough
 	    to hold uBytesRequested bytes.
-    	
+
 	    @param uBytesRequested [in]
 	    Number of bytes which should be retrieved.
-    	
+
 	    @param rBytesRead [out]
 	    On success the number of bytes which have actually been retrieved.
-    	
-	    @return 
+
+	    @return
 	    E_None on success
 	    E_INVAL the format of the parameters was not valid
 	    E_INTR function call was interrupted
@@ -1173,22 +1173,22 @@ public:
         return (RC) osl_readFile( _pData, pBuffer, uBytesRequested, &rBytesRead );
 	}
 
-	/** Write a number of bytes to a file. 
-	
-	    Writes a number of bytes to a file. 
+	/** Write a number of bytes to a file.
+
+	    Writes a number of bytes to a file.
 	    The internal file pointer is increased by the number of bytes read.
-    		    
+
 	    @param pBuffer [in]
 	    Points to a buffer which contains the data.
-    	
+
 	    @param uBytesToWrite [in]
 	    Number of bytes which should be written.
-    	
+
 	    @param rBytesWritten [out]
 	    On success the number of bytes which have actually been written.
 
-	    @return 
-	    E_None on success 
+	    @return
+	    E_None on success
 	    E_INVAL the format of the parameters was not valid
 	    E_FBIG file too large
 	    E_DQUOT quota exceeded
@@ -1213,13 +1213,13 @@ public:
 	}
 
 
-    /** Read a line from a file. 
+    /** Read a line from a file.
 
         Reads a line from a file. The new line delimiter is NOT returned!
-    	
-	    @param	aSeq [in/out] 
+
+	    @param	aSeq [in/out]
 	    A reference to a ::rtl::ByteSequence that will hold the line read on success.
-    	
+
 	    @return
 	    E_None on success
 	    E_INVAL the format of the parameters was not valid
@@ -1243,13 +1243,13 @@ public:
     }
 
     /** Synchronize the memory representation of a file with that on the physical medium.
-                
-    The function ensures that all modified data and attributes of the file associated with 
-    the given file handle have been written to the physical medium. 
-    In case the hard disk has a write cache enabled, the data may not really be on 
+
+    The function ensures that all modified data and attributes of the file associated with
+    the given file handle have been written to the physical medium.
+    In case the hard disk has a write cache enabled, the data may not really be on
     permanent storage when osl_syncFile returns.
 
-    @return 
+    @return
     <dl>
     <dt>E_None</dt>
     <dd>On success</dd>
@@ -1278,22 +1278,22 @@ public:
         OSL_PRECOND(_pData, "File::sync(): File not open");
         return (RC)osl_syncFile(_pData);
     }
-    
-	/** Copy a file to a new destination. 
 
-        Copies a file to a new destination. Copies only files not directories. 
+	/** Copy a file to a new destination.
+
+        Copies a file to a new destination. Copies only files not directories.
         No assumptions should be made about preserving attributes or file time.
-        
-	    @param ustrSourceFileURL [in] 
+
+	    @param ustrSourceFileURL [in]
 	    Full qualified URL of the source file.
-    	
+
 	    @param ustrDestFileURL [in]
 	    Full qualified URL of the destination file. A directory is NOT a valid destination file!
-    	
-	    @return 
+
+	    @return
 	    E_None on success
 	    E_INVAL the format of the parameters was not valid
-	    E_NOMEM not enough memory for allocating structures 
+	    E_NOMEM not enough memory for allocating structures
 	    E_ACCES permission denied
 	    E_PERM operation not permitted
 	    E_NAMETOOLONG file name too long
@@ -1310,21 +1310,21 @@ public:
         return (RC) osl_copyFile( ustrSourceFileURL.pData, ustrDestFileURL.pData );
 	}
 
-	/** Move a file or directory to a new destination or renames it. 
+	/** Move a file or directory to a new destination or renames it.
 
-        Moves a file or directory to a new destination or renames it. 
+        Moves a file or directory to a new destination or renames it.
         File time and attributes are preserved.
-    	
+
 	    @param ustrSourceFileURL [in]
 	    Full qualified URL of the source file.
-    	
+
 	    @param ustrDestFileURL [in]
 	    Full qualified URL of the destination file. An existing directory is NOT a valid destination !
-    	
-	    @return 
-	    E_None on success 
+
+	    @return
+	    E_None on success
 	    E_INVAL the format of the parameters was not valid
-	    E_NOMEM not enough memory for allocating structures 
+	    E_NOMEM not enough memory for allocating structures
 	    E_ACCES permission denied
 	    E_PERM operation not permitted
 	    E_NAMETOOLONG file name too long
@@ -1343,11 +1343,11 @@ public:
 
 	    @param ustrFileURL [in]
 	    Full qualified URL of the file to remove.
-    	
-	    @return 
-	    E_None on success 
+
+	    @return
+	    E_None on success
 	    E_INVAL the format of the parameters was not valid
-	    E_NOMEM not enough memory for allocating structures 
+	    E_NOMEM not enough memory for allocating structures
 	    E_ACCES permission denied
 	    E_PERM operation not permitted
 	    E_NAMETOOLONG file name too long
@@ -1363,7 +1363,7 @@ public:
 	    E_MULTIHOP multihop attempted
 	    E_NOLINK link has been severed
 	    E_TXTBSY text file busy
-    	
+
 	    @see open()
     */
 
@@ -1376,14 +1376,14 @@ public:
 
 	    @param ustrFileURL [in]
 	    The full qualified file URL.
-    	
+
 	    @param uAttributes [in]
 	    Attributes of the file to be set.
 
-	    @return 
-	    E_None on success 
+	    @return
+	    E_None on success
 	    E_INVAL the format of the parameters was not valid
-    	
+
 	    @see FileStatus
     */
 
@@ -1396,13 +1396,13 @@ public:
 
 	    @param ustrFileURL [in]
 	    The full qualified URL of the file.
-    	
+
 	    @param rCreationTime [in]
 	    Creation time of the given file.
-    	
+
 	    @param rLastAccessTime [in]
 	    Time of the last access of the given file.
-    	
+
 	    @param rLastWriteTime [in]
 	    Time of the last modifying of the given file.
 
@@ -1410,18 +1410,18 @@ public:
 	    E_None on success
 	    E_INVAL the format of the parameters was not valid
 	    E_NOENT no such file or directory not found
-    	
+
 	    @see FileStatus
     */
 
-    inline static RC setTime( 
-		const ::rtl::OUString& ustrFileURL, 
+    inline static RC setTime(
+		const ::rtl::OUString& ustrFileURL,
 		const TimeValue& rCreationTime,
 		const TimeValue& rLastAccessTime,
 		const TimeValue& rLastWriteTime )
 	{
         return (RC)  osl_setFileTime(
-			ustrFileURL.pData, 
+			ustrFileURL.pData,
 			&rCreationTime,
 			&rLastAccessTime,
 			&rLastWriteTime );
@@ -1478,7 +1478,7 @@ public:
                 osl_releaseDirectoryItem( _pData );
 
             _pData = rItem._pData;
-        
+
             if( _pData )
                 osl_acquireDirectoryItem( _pData );
         }
@@ -1486,8 +1486,8 @@ public:
     }
 
     /** Check for validity of this instance.
-    
-        @return 
+
+        @return
         sal_True if object is valid directory item else sal_False.
      */
 
@@ -1496,36 +1496,36 @@ public:
         return _pData != NULL;
 	}
 
-    /**	Retrieve a single directory item. 
+    /**	Retrieve a single directory item.
 
         Retrieves a single directory item. The returned handle has an initial refcount of 1.
-        Due to performance issues it is not recommended to use this function while 
+        Due to performance issues it is not recommended to use this function while
         enumerating the contents of a directory. In this case use osl_getNextDirectoryItem() instead.
-    	
-	    @param ustrFileURL [in] 
-	    An absolute file URL. 
-    	
-	    @param rItem [out] 
+
+	    @param ustrFileURL [in]
+	    An absolute file URL.
+
+	    @param rItem [out]
 	    On success it receives a handle which can be used for subsequent calls to osl_getFileStatus().
 	    The handle has to be released by a call to osl_releaseDirectoryItem().
-    	
-	    @return 
-	    E_None on success 
+
+	    @return
+	    E_None on success
 	    E_INVAL the format of the parameters was not valid
-	    E_NOMEM not enough memory for allocating structures 
+	    E_NOMEM not enough memory for allocating structures
 	    E_ACCES permission denied
 	    E_MFILE too many open files used by the process
 	    E_NFILE too many open files in the system
 	    E_NOENT no such file or directory
 	    E_LOOP	too many symbolic links encountered
 	    E_NAMETOOLONG the file name is too long
-	    E_NOTDIR a component of the path prefix of path is not a directory	
+	    E_NOTDIR a component of the path prefix of path is not a directory
 	    E_IO on I/O errors
 	    E_MULTIHOP multihop attempted
 	    E_NOLINK link has been severed
 	    E_FAULT bad address
 	    E_INTR the function call was interrupted
-	    
+
 	    @see FileStatus
 	    @see Directory::getNextItem()
     */
@@ -1542,14 +1542,14 @@ public:
 	}
 
 	/**	Retrieve information about a single file or directory.
-	    
-	    @param	rStatus [in|out] 
+
+	    @param	rStatus [in|out]
 	    Reference to a class which receives the information of the file or directory
-	    represented by this directory item. 
-    		    
-	    @return 
+	    represented by this directory item.
+
+	    @return
 	    E_None on success
-	    E_NOMEM not enough memory for allocating structures 
+	    E_NOMEM not enough memory for allocating structures
 	    E_INVAL the format of the parameters was not valid
 	    E_LOOP too many symbolic links encountered
 	    E_ACCES permission denied
@@ -1569,8 +1569,8 @@ public:
 	    E_NOSYS function not implemented
 
 	    @see get()
-	    @see Directory::getNextItem()	   
-	    @see FileStatus 
+	    @see Directory::getNextItem()
+	    @see FileStatus
     */
 
     inline RC getFileStatus( FileStatus& rStatus )
@@ -1586,33 +1586,33 @@ public:
 /** Base class for observers of directory creation notifications.
 
     Clients which uses the method createDirectoryPath of the class
-    Directory may want to be informed about the directories that 
-    have been created. This may be accomplished by deriving from 
-    this base class and overwriting the virtual function 
+    Directory may want to be informed about the directories that
+    have been created. This may be accomplished by deriving from
+    this base class and overwriting the virtual function
     DirectoryCreated.
-    
+
     @see Directory::createPath
 */
 class DirectoryCreationObserver
-{          
-public:    
+{
+public:
     virtual ~DirectoryCreationObserver() {}
-    
+
     /** This method will be called when a new directory has been
         created and needs to be overwritten by derived classes.
-        You must not delete the directory that was just created 
+        You must not delete the directory that was just created
         otherwise you will run into an endless loop.
-        
+
         @param aDirectoryUrl
         [in]The absolute file URL of the directory that was just created by
         ::osl::Directory::createPath.
     */
-    virtual void DirectoryCreated(const rtl::OUString& aDirectoryUrl) = 0;    
+    virtual void DirectoryCreated(const rtl::OUString& aDirectoryUrl) = 0;
 };
 
 //###########################################
 // This just an internal helper function for
-// private use. 
+// private use.
 extern "C" inline void SAL_CALL onDirectoryCreated(void* pData, rtl_uString* aDirectoryUrl)
 {
     (static_cast<DirectoryCreationObserver*>(pData))->DirectoryCreated(aDirectoryUrl);
@@ -1631,19 +1631,19 @@ class Directory: public FileBase
 
     /** Copy constructor.
     */
-    
+
 	Directory( Directory& );
-	
+
 	/**  Assignment operator.
 	*/
-	
+
 	Directory& operator = ( Directory& );
 
 public:
 
     /** Constructor.
 
-	    @param strPath [in] 
+	    @param strPath [in]
 	    The full qualified URL of the directory.
 	    Relative URLs are not allowed.
      */
@@ -1660,14 +1660,14 @@ public:
 		close();
 	}
 
-    /** Open a directory for enumerating its contents.	 
-	   
-	    @return 
+    /** Open a directory for enumerating its contents.
+
+	    @return
 	    E_None on success
 	    E_INVAL the format of the parameters was not valid
 	    E_NOENT the specified path doesn't exist
-	    E_NOTDIR the specified path is not an directory 
-	    E_NOMEM not enough memory for allocating structures 
+	    E_NOTDIR the specified path is not an directory
+	    E_NOMEM not enough memory for allocating structures
 	    E_ACCES permission denied
 	    E_MFILE too many open files used by the process
 	    E_NFILE too many open files in the system
@@ -1684,10 +1684,10 @@ public:
 	}
 
     /** Query if directory is open.
-    
+
         Query if directory is open and so item enumeration is valid.
 
-        @return 
+        @return
         sal_True if the directory is open else sal_False.
 
         @see open()
@@ -1697,9 +1697,9 @@ public:
 	inline sal_Bool isOpen() { return _pData != NULL; }
 
 	/**	Close a directory.
-	
- 	    @return 
-	    E_None on success 
+
+ 	    @return
+	    E_None on success
 	    E_INVAL the format of the parameters was not valid
 	    E_NOMEM not enough memory for allocating structures
 	    E_BADF invalid oslDirectory parameter
@@ -1724,18 +1724,18 @@ public:
 
     /** Resets the directory item enumeration to the beginning.
 
-        @return 
+        @return
         E_None on success
 	    E_INVAL the format of the parameters was not valid
 	    E_NOENT the specified path doesn't exist
-	    E_NOTDIR the specified path is not an directory 
-	    E_NOMEM not enough memory for allocating structures 
+	    E_NOTDIR the specified path is not an directory
+	    E_NOMEM not enough memory for allocating structures
 	    E_ACCES permission denied
 	    E_MFILE too many open files used by the process
 	    E_NFILE too many open files in the system
 	    E_NAMETOOLONG File name too long
 	    E_LOOP Too many symbolic links encountered
-	    
+
         @see open()
     */
 
@@ -1745,26 +1745,26 @@ public:
         return open();
 	}
 
-	/**	Retrieve the next item of a previously opened directory. 
+	/**	Retrieve the next item of a previously opened directory.
 
         Retrieves the next item of a previously opened directory.
-        	   	
-	    @param	rItem [out] 
+
+	    @param	rItem [out]
 	    On success a valid DirectoryItem.
-    	
-	    @param	nHint [in] 
+
+	    @param	nHint [in]
 	    With this parameter the caller can tell the implementation that (s)he
         is going to call this function uHint times afterwards. This enables the implementation to
         get the information for more than one file and cache it until the next calls.
 
-	    @return 
-	    E_None on success 
+	    @return
+	    E_None on success
 	    E_INVAL the format of the parameters was not valid
-	    E_NOMEM not enough memory for allocating structures 
+	    E_NOMEM not enough memory for allocating structures
 	    E_NOENT no more entries in this directory
 	    E_BADF invalid oslDirectory parameter
 	    E_OVERFLOW the value too large for defined data type
-	    	    
+
 	    @see DirectoryItem
     */
 
@@ -1779,20 +1779,20 @@ public:
 	}
 
 
-	/** Retrieve information about a volume. 
+	/** Retrieve information about a volume.
 
         Retrieves information about a volume. A volume can either be a mount point, a network
-	    resource or a drive depending on Operating System and File System. 
+	    resource or a drive depending on Operating System and File System.
 
 	    @param ustrDirectoryURL [in]
 	    Full qualified URL of the volume
-    	
+
 	    @param rInfo [out]
 	    On success it receives information about the volume.
-    		    
-	    @return 
-	    E_None on success 
-	    E_NOMEM not enough memory for allocating structures 
+
+	    @return
+	    E_None on success
+	    E_NOMEM not enough memory for allocating structures
 	    E_INVAL the format of the parameters was not valid
 	    E_NOTDIR not a directory
 	    E_NAMETOOLONG file name too long
@@ -1806,9 +1806,9 @@ public:
 	    E_NOLINK link has been severed
 	    E_INTR function call was interrupted
 
-	    @see FileStatus	 
-	    @see VolumeInfo   
-    */	
+	    @see FileStatus
+	    @see VolumeInfo
+    */
 
     inline static RC getVolumeInfo( const ::rtl::OUString& ustrDirectoryURL, VolumeInfo& rInfo )
 	{
@@ -1817,13 +1817,13 @@ public:
 
     /**	Create a directory.
 
-	    @param ustrDirectoryURL [in] 
+	    @param ustrDirectoryURL [in]
 	    Full qualified URL of the directory to create.
 
-	    @return 
-	    E_None on success 
+	    @return
+	    E_None on success
 	    E_INVAL the format of the parameters was not valid
-	    E_NOMEM not enough memory for allocating structures 
+	    E_NOMEM not enough memory for allocating structures
 	    E_EXIST file exists
 	    E_ACCES permission denied
 	    E_NAMETOOLONG file name too long
@@ -1851,11 +1851,11 @@ public:
 
 	    @param ustrDirectoryURL [in]
 	    Full qualified URL of the directory.
-    	
-	    @return 
-	    E_None on success 
+
+	    @return
+	    E_None on success
 	    E_INVAL the format of the parameters was not valid
-	    E_NOMEM not enough memory for allocating structures 
+	    E_NOMEM not enough memory for allocating structures
 	    E_PERM operation not permitted
 	    E_ACCES permission denied
 	    E_NOENT no such file or directory
@@ -1879,28 +1879,28 @@ public:
 	{
         return (RC) osl_removeDirectory( ustrDirectoryURL.pData );
 	}
-    
+
     /** Create a directory path.
 
-        The osl_createDirectoryPath function creates a specified directory path. 
+        The osl_createDirectoryPath function creates a specified directory path.
         All nonexisting sub directories will be created.
-        <p><strong>PLEASE NOTE:</strong> You cannot rely on getting the error code 
-		E_EXIST for existing directories. Programming against this error code is 
+        <p><strong>PLEASE NOTE:</strong> You cannot rely on getting the error code
+		E_EXIST for existing directories. Programming against this error code is
 		in general a strong indication of a wrong usage of osl_createDirectoryPath.</p>
-		
-        @param aDirectoryUrl 
+
+        @param aDirectoryUrl
         [in] The absolute file URL of the directory path to create.
         A relative file URL will not be accepted.
-                
+
         @param aDirectoryCreationObserver
         [in] Pointer to an instance of type DirectoryCreationObserver that will
-        be informed about the creation of a directory. The value of this 
-        parameter may be NULL, in this case notifications will not be sent. 
-                        
-        @return 
+        be informed about the creation of a directory. The value of this
+        parameter may be NULL, in this case notifications will not be sent.
+
+        @return
         <dl>
-        <dt>E_None</dt> 
-        <dd>On success</dd> 
+        <dt>E_None</dt>
+        <dd>On success</dd>
         <dt>E_INVAL</dt>
         <dd>The format of the parameters was not valid</dd>
         <dt>E_ACCES</dt>
@@ -1928,18 +1928,18 @@ public:
         <dt>E_invalidError</dt>
         <dd>An unknown error occurred</dd>
 	    </dl>
-    	
-	    @see DirectoryCreationObserver	    
+
+	    @see DirectoryCreationObserver
 	    @see create
-	*/	
+	*/
 	static RC createPath(
-	    const ::rtl::OUString& aDirectoryUrl, 
+	    const ::rtl::OUString& aDirectoryUrl,
 	    DirectoryCreationObserver* aDirectoryCreationObserver = NULL)
-	{	 
+	{
 	    return (RC)osl_createDirectoryPath(
-	        aDirectoryUrl.pData, 
-	        (aDirectoryCreationObserver) ? onDirectoryCreated : NULL, 
-	        aDirectoryCreationObserver);	 
+	        aDirectoryUrl.pData,
+	        (aDirectoryCreationObserver) ? onDirectoryCreated : NULL,
+	        aDirectoryCreationObserver);
 	}
 };
 

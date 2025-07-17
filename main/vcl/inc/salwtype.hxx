@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -131,7 +131,7 @@ struct SalMenuEvent
 {
     sal_uInt16          mnId;           // Menu item ID
     void*           mpMenu;         // pointer to VCL menu (class Menu)
-    
+
     SalMenuEvent() : mnId( 0 ), mpMenu( NULL ) {}
     SalMenuEvent( sal_uInt16 i_nId, void* i_pMenu )
     : mnId( i_nId ), mpMenu( i_pMenu ) {}
@@ -153,7 +153,7 @@ struct SalPaintEvent
     long            mnBoundWidth;       // BoundRect - Width
     long            mnBoundHeight;      // BoundRect - Height
     bool            mbImmediateUpdate;  // set to true to force an immediate update
-    
+
     SalPaintEvent( long x, long y, long w, long h, bool bImmediate = false ) :
         mnBoundX( x ), mnBoundY( y ),
         mnBoundWidth( w ), mnBoundHeight( h ),
@@ -177,7 +177,7 @@ struct SalWheelMouseEvent
     sal_uInt16          mnCode;         // SV-ModifierCode (KEY_SHIFT | KEY_MOD1 | KEY_MOD2 | MOUSE_LEFT | MOUSE_MIDDLE | MOUSE_RIGHT)
     sal_Bool            mbHorz;         // Horizontal
     sal_Bool            mbDeltaIsPixel; // delta value is a pixel value (on mac)
-    
+
     SalWheelMouseEvent()
     : mnTime( 0 ), mnX( 0 ), mnY( 0 ), mnDelta( 0 ), mnNotchDelta( 0 ), mnScrollLines( 0 ), mnCode( 0 ), mbHorz( sal_False ), mbDeltaIsPixel( sal_False )
     {}

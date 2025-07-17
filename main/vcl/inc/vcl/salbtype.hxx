@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -106,7 +106,7 @@ class Color;
 class VCL_DLLPUBLIC BitmapColor
 {
 private:
-                                             
+
 // !!! Achtung:
 // !!! da auf die Member dieser Klasse via memcpy
 // !!! zugegriffen wird, darf diese Klasse weder
@@ -158,7 +158,7 @@ public:
 	inline sal_uInt8 		GetLuminance() const;
 	inline BitmapColor& IncreaseLuminance( sal_uInt8 cGreyInc );
 	inline BitmapColor& DecreaseLuminance( sal_uInt8 cGreyDec );
-	
+
 	inline BitmapColor&	Merge( const BitmapColor& rColor, sal_uInt8 cTransparency );
 	inline BitmapColor&	Merge( sal_uInt8 cR, sal_uInt8 cG, sal_uInt8 cB, sal_uInt8 cTransparency );
 
@@ -184,7 +184,7 @@ private:
 //#if 0 // _SOLAR__PRIVATE
 
 public:
-	
+
 	SAL_DLLPRIVATE inline BitmapColor* ImplGetColorBuffer() const;
 
 //#endif // __PRIVATE
@@ -280,8 +280,8 @@ struct VCL_DLLPUBLIC BitmapBuffer
 // - StretchAndConvert -
 // ---------------------
 
-VCL_DLLPUBLIC BitmapBuffer* StretchAndConvert( 
-    const BitmapBuffer& rSrcBuffer, const SalTwoRect& rTwoRect, 
+VCL_DLLPUBLIC BitmapBuffer* StretchAndConvert(
+    const BitmapBuffer& rSrcBuffer, const SalTwoRect& rTwoRect,
     sal_uLong nDstBitmapFormat, const BitmapPalette* pDstPal = NULL, const ColorMask* pDstMask = NULL );
 
 // ------------------------------------------------------------------
@@ -500,7 +500,7 @@ inline BitmapColor&	BitmapColor::Merge( const BitmapColor& rBitmapColor, sal_uIn
 	mcBlueOrIndex = COLOR_CHANNEL_MERGE( mcBlueOrIndex, rBitmapColor.mcBlueOrIndex, cTransparency );
 	mcGreen = COLOR_CHANNEL_MERGE( mcGreen, rBitmapColor.mcGreen, cTransparency );
 	mcRed = COLOR_CHANNEL_MERGE( mcRed, rBitmapColor.mcRed, cTransparency );
-	
+
 	return *this;
 }
 
@@ -512,7 +512,7 @@ inline BitmapColor&	BitmapColor::Merge( sal_uInt8 cR, sal_uInt8 cG, sal_uInt8 cB
 	mcBlueOrIndex = COLOR_CHANNEL_MERGE( mcBlueOrIndex, cB, cTransparency );
 	mcGreen = COLOR_CHANNEL_MERGE( mcGreen, cG, cTransparency );
 	mcRed = COLOR_CHANNEL_MERGE( mcRed, cR, cTransparency );
-	
+
 	return *this;
 }
 
@@ -651,7 +651,7 @@ inline void BitmapPalette::SetEntryCount( sal_uInt16 nCount )
 		const sal_uLong nMinSize = Min( mnCount, nCount ) * sizeof( BitmapColor );
 		sal_uInt8*		pNewColor = new sal_uInt8[ nNewSize ];
 
-		if ( nMinSize && mpBitmapColor ) 
+		if ( nMinSize && mpBitmapColor )
 			memcpy( pNewColor, mpBitmapColor, nMinSize );
 		delete[] (sal_uInt8*) mpBitmapColor;
 		memset( pNewColor + nMinSize, 0, nNewSize - nMinSize );

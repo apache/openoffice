@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -50,7 +50,7 @@ namespace com { namespace sun { namespace star { namespace rendering
     class  XPolyPolygon2D;
 } } } }
 
-namespace com { namespace sun { namespace star { namespace awt 
+namespace com { namespace sun { namespace star { namespace awt
 {
     struct Point;
     struct Size;
@@ -76,51 +76,51 @@ namespace basegfx
         // Polygon conversions
         // ===================================================================
 
-        BASEGFX_DLLPUBLIC ::com::sun::star::uno::Reference< ::com::sun::star::rendering::XPolyPolygon2D > 
-    		xPolyPolygonFromB2DPolygon( const ::com::sun::star::uno::Reference< 
+        BASEGFX_DLLPUBLIC ::com::sun::star::uno::Reference< ::com::sun::star::rendering::XPolyPolygon2D >
+    		xPolyPolygonFromB2DPolygon( const ::com::sun::star::uno::Reference<
                                         	::com::sun::star::rendering::XGraphicDevice >& 	xGraphicDevice,
                                         const ::basegfx::B2DPolygon&						rPoly	 );
 
-        BASEGFX_DLLPUBLIC ::com::sun::star::uno::Reference< ::com::sun::star::rendering::XPolyPolygon2D > 
-    		xPolyPolygonFromB2DPolyPolygon( const ::com::sun::star::uno::Reference< 
+        BASEGFX_DLLPUBLIC ::com::sun::star::uno::Reference< ::com::sun::star::rendering::XPolyPolygon2D >
+    		xPolyPolygonFromB2DPolyPolygon( const ::com::sun::star::uno::Reference<
                                          		::com::sun::star::rendering::XGraphicDevice >& 	xGraphicDevice,
                                             const ::basegfx::B2DPolyPolygon&					rPolyPoly	 );
 
 
-        BASEGFX_DLLPUBLIC ::com::sun::star::uno::Sequence< 
-  			::com::sun::star::uno::Sequence< 
-  				::com::sun::star::geometry::RealBezierSegment2D > > 
+        BASEGFX_DLLPUBLIC ::com::sun::star::uno::Sequence<
+  			::com::sun::star::uno::Sequence<
+  				::com::sun::star::geometry::RealBezierSegment2D > >
 	                bezierSequenceSequenceFromB2DPolyPolygon( const ::basegfx::B2DPolyPolygon& rPolyPoly );
 
-        BASEGFX_DLLPUBLIC ::com::sun::star::uno::Sequence< 
-  			::com::sun::star::uno::Sequence< 
-  				::com::sun::star::geometry::RealPoint2D > > 
+        BASEGFX_DLLPUBLIC ::com::sun::star::uno::Sequence<
+  			::com::sun::star::uno::Sequence<
+  				::com::sun::star::geometry::RealPoint2D > >
 	                pointSequenceSequenceFromB2DPolyPolygon( const ::basegfx::B2DPolyPolygon& rPolyPoly );
 
-        BASEGFX_DLLPUBLIC ::basegfx::B2DPolygon polygonFromPoint2DSequence( 
-            const ::com::sun::star::uno::Sequence< 
+        BASEGFX_DLLPUBLIC ::basegfx::B2DPolygon polygonFromPoint2DSequence(
+            const ::com::sun::star::uno::Sequence<
             	::com::sun::star::geometry::RealPoint2D >& rPoints );
 
-        BASEGFX_DLLPUBLIC ::basegfx::B2DPolyPolygon polyPolygonFromPoint2DSequenceSequence( 
-            const ::com::sun::star::uno::Sequence< 
+        BASEGFX_DLLPUBLIC ::basegfx::B2DPolyPolygon polyPolygonFromPoint2DSequenceSequence(
+            const ::com::sun::star::uno::Sequence<
             	::com::sun::star::uno::Sequence< ::com::sun::star::geometry::RealPoint2D > >& rPoints );
 
-        BASEGFX_DLLPUBLIC ::basegfx::B2DPolygon polygonFromBezier2DSequence( 
-            const ::com::sun::star::uno::Sequence< 
+        BASEGFX_DLLPUBLIC ::basegfx::B2DPolygon polygonFromBezier2DSequence(
+            const ::com::sun::star::uno::Sequence<
             	::com::sun::star::geometry::RealBezierSegment2D >& rPoints );
 
-        BASEGFX_DLLPUBLIC ::basegfx::B2DPolyPolygon polyPolygonFromBezier2DSequenceSequence( 
-            const ::com::sun::star::uno::Sequence< 
+        BASEGFX_DLLPUBLIC ::basegfx::B2DPolyPolygon polyPolygonFromBezier2DSequenceSequence(
+            const ::com::sun::star::uno::Sequence<
             	::com::sun::star::uno::Sequence< ::com::sun::star::geometry::RealBezierSegment2D > >& rPoints );
 
         BASEGFX_DLLPUBLIC ::basegfx::B2DPolyPolygon b2DPolyPolygonFromXPolyPolygon2D(
-            const ::com::sun::star::uno::Reference< 
+            const ::com::sun::star::uno::Reference<
                      ::com::sun::star::rendering::XPolyPolygon2D >& rPoly );
 
         // Matrix conversions
         // ===================================================================
 
-        BASEGFX_DLLPUBLIC ::com::sun::star::geometry::AffineMatrix2D& 
+        BASEGFX_DLLPUBLIC ::com::sun::star::geometry::AffineMatrix2D&
         	affineMatrixFromHomMatrix( ::com::sun::star::geometry::AffineMatrix2D&	matrix,
                                        const ::basegfx::B2DHomMatrix&				transform);
 
@@ -128,18 +128,18 @@ namespace basegfx
 			::com::sun::star::geometry::AffineMatrix3D&	matrix,
 			const ::basegfx::B3DHomMatrix& transform);
 
-        BASEGFX_DLLPUBLIC ::basegfx::B2DHomMatrix& 
+        BASEGFX_DLLPUBLIC ::basegfx::B2DHomMatrix&
         	homMatrixFromAffineMatrix( ::basegfx::B2DHomMatrix&								transform,
                                        const ::com::sun::star::geometry::AffineMatrix2D&	matrix );
 
 		BASEGFX_DLLPUBLIC ::basegfx::B2DHomMatrix homMatrixFromAffineMatrix( const ::com::sun::star::geometry::AffineMatrix2D& matrix );
 		BASEGFX_DLLPUBLIC ::basegfx::B3DHomMatrix homMatrixFromAffineMatrix3D( const ::com::sun::star::geometry::AffineMatrix3D& matrix );
 
-        BASEGFX_DLLPUBLIC ::com::sun::star::geometry::Matrix2D& 
+        BASEGFX_DLLPUBLIC ::com::sun::star::geometry::Matrix2D&
         	matrixFromHomMatrix( ::com::sun::star::geometry::Matrix2D& matrix,
                                  const ::basegfx::B2DHomMatrix&		   transform);
 
-        BASEGFX_DLLPUBLIC ::basegfx::B2DHomMatrix& 
+        BASEGFX_DLLPUBLIC ::basegfx::B2DHomMatrix&
         	homMatrixFromMatrix( ::basegfx::B2DHomMatrix&					 transform,
                                  const ::com::sun::star::geometry::Matrix2D& matrix );
 
@@ -163,7 +163,7 @@ namespace basegfx
 		BASEGFX_DLLPUBLIC ::basegfx::B2IVector  	b2ISizeFromIntegerSize2D( const ::com::sun::star::geometry::IntegerSize2D& );
         BASEGFX_DLLPUBLIC ::basegfx::B2IPoint		b2IPointFromIntegerPoint2D( const ::com::sun::star::geometry::IntegerPoint2D& );
         BASEGFX_DLLPUBLIC ::basegfx::B2IRange		b2IRectangleFromIntegerRectangle2D( const ::com::sun::star::geometry::IntegerRectangle2D& );
-        
+
         BASEGFX_DLLPUBLIC ::com::sun::star::awt::Size  		awtSizeFromB2ISize( const ::basegfx::B2IVector& );
         BASEGFX_DLLPUBLIC ::com::sun::star::awt::Point  		awtPointFromB2IPoint( const ::basegfx::B2IPoint& );
         BASEGFX_DLLPUBLIC ::com::sun::star::awt::Rectangle	awtRectangleFromB2IRectangle( const ::basegfx::B2IRange& );
@@ -200,7 +200,7 @@ namespace basegfx
             contains rRange.
          */
         BASEGFX_DLLPUBLIC ::basegfx::B2IRange 	b2ISurroundingRangeFromB2DRange( const ::basegfx::B2DRange& rRange );
-        
+
         /** Return smalltest B2DRange with integer values, which
             completely contains given floating point range.
 
@@ -211,7 +211,7 @@ namespace basegfx
             which completely contains rRange.
          */
         BASEGFX_DLLPUBLIC ::basegfx::B2DRange 	b2DSurroundingIntegerRangeFromB2DRange( const ::basegfx::B2DRange& rRange );
-        
+
     }
 }
 

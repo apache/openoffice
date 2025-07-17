@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -75,7 +75,7 @@ protected:
 public:
     using SfxTabPage::ActivatePage;
     using SfxTabPage::DeactivatePage;
-    
+
     virtual void        ActivatePage( const SfxItemSet& rSet );
 //    virtual int         DeactivatePage( SfxItemSet* pSet = 0 );
 
@@ -159,7 +159,7 @@ private:
 public:
     using SfxTabPage::ActivatePage;
     using SfxTabPage::DeactivatePage;
-    
+
     virtual void        ActivatePage( const SfxItemSet& rSet );
 	virtual int         DeactivatePage( SfxItemSet* pSet = 0 );
 
@@ -179,7 +179,7 @@ public:
     void                SetPreviewBackgroundToCharacter();
 
 	void                DisableControls( sal_uInt16 nDisable );
-	virtual void		PageCreated (SfxAllItemSet aSet); 
+	virtual void		PageCreated (SfxAllItemSet aSet);
 };
 
 // class SvxCharEffectsPage ----------------------------------------------
@@ -265,7 +265,7 @@ public:
 	void                EnableFlash();
     //                  the writer uses SID_ATTR_BRUSH as font background
     void                SetPreviewBackgroundToCharacter();
-	virtual void		PageCreated (SfxAllItemSet aSet); 
+	virtual void		PageCreated (SfxAllItemSet aSet);
 };
 
 // class SvxCharPositionPage ---------------------------------------------
@@ -327,7 +327,7 @@ private:
 public:
     using SfxTabPage::ActivatePage;
     using SfxTabPage::DeactivatePage;
-    
+
     virtual int         DeactivatePage( SfxItemSet* pSet = 0 );
     virtual void        ActivatePage( const SfxItemSet& rSet );
 
@@ -340,7 +340,7 @@ public:
 	virtual void        FillUserData();
     //                  the writer uses SID_ATTR_BRUSH as font background
     void                SetPreviewBackgroundToCharacter();
-	virtual void		PageCreated (SfxAllItemSet aSet); 
+	virtual void		PageCreated (SfxAllItemSet aSet);
 };
 
 // class SvxCharTwoLinesPage ---------------------------------------------
@@ -373,7 +373,7 @@ private:
 public:
     using SfxTabPage::ActivatePage;
     using SfxTabPage::DeactivatePage;
-    
+
     virtual void        ActivatePage( const SfxItemSet& rSet );
 	virtual int         DeactivatePage( SfxItemSet* pSet = 0 );
 
@@ -385,7 +385,7 @@ public:
 	virtual sal_Bool        FillItemSet( SfxItemSet& rSet );
     //                  the writer uses SID_ATTR_BRUSH as font background
     void                SetPreviewBackgroundToCharacter();
-	virtual void		PageCreated (SfxAllItemSet aSet); 
+	virtual void		PageCreated (SfxAllItemSet aSet);
 };
 
 #endif // #ifndef _SVX_CHARDLG_HXX

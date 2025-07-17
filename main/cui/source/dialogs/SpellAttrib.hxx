@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -32,7 +32,7 @@
 #include <tools/color.hxx>
 //namespace com{ namespace sun{ namespace star{ namespace linguistic2{
 //    class XSpellAlternatives;
-//}}}}            
+//}}}}
 
 #define TEXTATTR_SPELL_ERROR            (TEXTATTR_USER_START + 1)
 #define TEXTATTR_SPELL_LANGUAGE         (TEXTATTR_USER_START + 2)
@@ -53,8 +53,8 @@ struct SpellErrorDescription
 
     SpellErrorDescription() :
         bIsGrammarError( false ){}
-    
-    SpellErrorDescription( bool bGrammar, 
+
+    SpellErrorDescription( bool bGrammar,
                       const ::rtl::OUString& rText,
                       const ::com::sun::star::lang::Locale& rLocale,
                       const ::com::sun::star::uno::Sequence< ::rtl::OUString >& rSuggestions,
@@ -70,7 +70,7 @@ struct SpellErrorDescription
         sServiceName( rServiceName ),
         aSuggestions( rSuggestions )
         {
-            if( pDialogTitle )    
+            if( pDialogTitle )
                 sDialogTitle = *pDialogTitle;
             if( pExplanation )
                 sExplanation = *pExplanation;
@@ -80,16 +80,16 @@ struct SpellErrorDescription
 
     int operator==( const SpellErrorDescription& rDesc ) const
     {
-        return bIsGrammarError == rDesc.bIsGrammarError && 
-                sErrorText.equals( rDesc.sErrorText ) && 
+        return bIsGrammarError == rDesc.bIsGrammarError &&
+                sErrorText.equals( rDesc.sErrorText ) &&
                 aLocale.Language.equals( rDesc.aLocale.Language ) &&
                 aLocale.Country.equals( rDesc.aLocale.Country ) &&
                 aLocale.Variant.equals( rDesc.aLocale.Variant ) &&
-                aSuggestions == rDesc.aSuggestions && 
+                aSuggestions == rDesc.aSuggestions &&
                 xGrammarChecker == rDesc.xGrammarChecker &&
                 sDialogTitle.equals( rDesc.sDialogTitle ) &&
-                sExplanation.equals( rDesc.sExplanation ) && 
-                sRuleId == rDesc.sRuleId; 
+                sExplanation.equals( rDesc.sExplanation ) &&
+                sRuleId == rDesc.sRuleId;
     }
 };
 /* -----------------10.09.2003 14:23-----------------
@@ -99,10 +99,10 @@ class SpellErrorAttrib : public TextAttrib
 {
 public:
 
-private:        
+private:
     //com::sun::star::uno::Reference<com::sun::star::linguistic2::XSpellAlternatives> m_xAlternatives;
     SpellErrorDescription        m_aSpellErrorDescription;
-                            
+
                             //not accessible
                             SpellErrorAttrib();
 public:
@@ -113,7 +113,7 @@ public:
 
     const SpellErrorDescription& GetErrorDescription() const { return m_aSpellErrorDescription; }
 
-    
+
     virtual void            SetFont( Font& rFont ) const;
     virtual TextAttrib*     Clone() const;
     virtual int             operator==( const TextAttrib& rAttr ) const;
@@ -134,10 +134,10 @@ public:
                             ~SpellLanguageAttrib();
 
     LanguageType            GetLanguage() const {return m_eLanguage;}
-    void                    SetLanguage(LanguageType eLang) 
+    void                    SetLanguage(LanguageType eLang)
                                         {m_eLanguage = eLang;}
-    
-    
+
+
     virtual void            SetFont( Font& rFont ) const;
     virtual TextAttrib*     Clone() const;
     virtual int             operator==( const TextAttrib& rAttr ) const;
@@ -159,8 +159,8 @@ public:
 
     const   Color&          GetColor() const { return m_aBackgroundColor;}
     void                    SetColor( const Color& rNewCol ){m_aBackgroundColor = rNewCol;}
-    
-    
+
+
     virtual void            SetFont( Font& rFont ) const;
     virtual TextAttrib*     Clone() const;
     virtual int             operator==( const TextAttrib& rAttr ) const;

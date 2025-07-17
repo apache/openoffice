@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -37,18 +37,18 @@ int  CommitStringCallback( XIC ic, XPointer client_data, XPointer call_data);
 void PreeditDoneCallback ( XIC ic, XPointer client_data, XPointer call_data);
 int  PreeditStartCallback( XIC ic, XPointer client_data, XPointer call_data);
 void PreeditDoneCallback ( XIC ic, XPointer client_data, XPointer call_data);
-void PreeditDrawCallback ( XIC ic, XPointer client_data, 
+void PreeditDrawCallback ( XIC ic, XPointer client_data,
 						   XIMPreeditDrawCallbackStruct *call_data );
-void PreeditCaretCallback( XIC ic, XPointer client_data, 
+void PreeditCaretCallback( XIC ic, XPointer client_data,
 						   XIMPreeditCaretCallbackStruct *call_data );
 void GetPreeditSpotLocation(XIC ic, XPointer client_data);
 
-// private hook to prevent from sending further edit events 
+// private hook to prevent from sending further edit events
 void PreeditCancelCallback( XPointer client_data );
 
 void StatusStartCallback (XIC ic, XPointer client_data, XPointer call_data);
 void StatusDoneCallback  (XIC ic, XPointer client_data, XPointer call_data);
-void StatusDrawCallback  (XIC ic, XPointer client_data, 
+void StatusDrawCallback  (XIC ic, XPointer client_data,
 			XIMStatusDrawCallbackStruct *call_data);
 void SwitchIMCallback (XIC ix, XPointer client_data, XPointer call_data );
 

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -127,7 +127,7 @@ namespace slideshow
             	This method removes a shape from the shape.
              */
             bool removeShape( const ShapeSharedPtr& rShape );
-            
+
             /** Lookup a Shape from an XShape model object
 
             	This method looks up the internal shape map for one
@@ -137,7 +137,7 @@ namespace slideshow
                 The XShape object, for which the representing Shape
                 should be looked up.
              */
-            ShapeSharedPtr lookupShape( const ::com::sun::star::uno::Reference< 
+            ShapeSharedPtr lookupShape( const ::com::sun::star::uno::Reference<
                                            ::com::sun::star::drawing::XShape >& xShape ) const;
 
             /** Query a subset of the given original shape
@@ -203,7 +203,7 @@ namespace slideshow
             	frame.
              */
             bool isUpdatePending() const;
-            
+
             /** Update the content
 
 				This method updates the content on all layers on all
@@ -235,7 +235,7 @@ namespace slideshow
              */
             bool renderTo( const ::cppcanvas::CanvasSharedPtr& rTargetCanvas ) const;
 
-        private:             
+        private:
             /** A hash map which maps the XShape to the corresponding Shape object.
 
                 Provides quicker lookup than ShapeSet for simple mappings
@@ -281,15 +281,15 @@ namespace slideshow
                 @param aFirstLayerShape
                 Valid iterator out of maAllShapes, denoting the first
                 shape from nCurrLayerIndex
-                
+
                 @param aEndLayerShapes
                 Valid iterator or end iterator out of maAllShapes,
                 denoting one-behind-the-last shape of nCurrLayerIndex
              */
-            void           commitLayerChanges( std::size_t                    nCurrLayerIndex, 
+            void           commitLayerChanges( std::size_t                    nCurrLayerIndex,
                                                LayerShapeMap::const_iterator  aFirstLayerShape,
                                                LayerShapeMap::const_iterator  aEndLayerShapes );
- 
+
             /** Init Shape layers with background layer.
              */
             void          putShape2BackgroundLayer( LayerShapeMap::value_type& rShapeEntry );
@@ -309,9 +309,9 @@ namespace slideshow
             void          implAddShape( const ShapeSharedPtr& rShape );
 
             /** Common stuff when removing a shape
-             */ 
+             */
             void          implRemoveShape( const ShapeSharedPtr& rShape );
-            
+
             /** Add or remove views
 
                 Sharing duplicate code from viewAdded and viewRemoved
@@ -321,7 +321,7 @@ namespace slideshow
             template<typename LayerFunc,
                      typename ShapeFunc> void manageViews( LayerFunc layerFunc,
                                                            ShapeFunc shapeFunc );
-            
+
             bool updateSprites();
 
             /// Registered views
@@ -345,7 +345,7 @@ namespace slideshow
             LayerShapeMap            maAllShapes;
 
             /** Set of shapes that have requested an update
-                
+
                 When a shape is member of this set, its maShapes entry
                 has bNeedsUpdate set to true. We maintain this
                 redundant information for faster update processing.

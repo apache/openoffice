@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -54,7 +54,7 @@ namespace cairo {
         For each cairo-supported platform, there's an implementation of
         this interface
      */
-	struct Surface 
+	struct Surface
     {
 	public:
         virtual ~Surface() {}
@@ -79,11 +79,11 @@ namespace cairo {
     /// Create Surface from given cairo surface
     SurfaceSharedPtr createSurface( const CairoSurfaceSharedPtr& rSurface );
     /// Create surface with given dimensions
-    SurfaceSharedPtr createSurface( const OutputDevice& rRefDevice, 
+    SurfaceSharedPtr createSurface( const OutputDevice& rRefDevice,
                                     int x, int y, int width, int height );
     /// Create Surface for given bitmap data
-    SurfaceSharedPtr createBitmapSurface( const OutputDevice& rRefDevice, 
-                                          const BitmapSystemData& rData, 
+    SurfaceSharedPtr createBitmapSurface( const OutputDevice& rRefDevice,
+                                          const BitmapSystemData& rData,
                                           const Size&             rSize );
 
     /// Check whether cairo will work on given window

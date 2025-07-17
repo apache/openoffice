@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -65,7 +65,7 @@ namespace dbaui
 
         /** late constructor
         *
-        * \param _xConnection 
+        * \param _xConnection
         * \param _bAllowQueries when true, queries are allowed
         * \return false if the table was unaccessible otherwise true
         */
@@ -86,10 +86,10 @@ namespace dbaui
 		inline void SetWinName( const ::rtl::OUString& rWinName )		{ m_aWinName = rWinName; }
 		inline void SetPosition( const Point& rPos )					{ m_aPosition=rPos; }
 		inline void SetSize( const Size& rSize )						{ m_aSize = rSize; }
-		inline void ShowAll( sal_Bool bAll )								{ m_bShowAll = bAll; }        
+		inline void ShowAll( sal_Bool bAll )								{ m_bShowAll = bAll; }
 
         inline ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySet> getTable() const { ::osl::MutexGuard aGuard( m_aMutex  ); return m_xTable; }
-        inline ::com::sun::star::uno::Reference< ::com::sun::star::container::XIndexAccess> getKeys() const { ::osl::MutexGuard aGuard( m_aMutex  ); return m_xKeys; }   
+        inline ::com::sun::star::uno::Reference< ::com::sun::star::container::XIndexAccess> getKeys() const { ::osl::MutexGuard aGuard( m_aMutex  ); return m_xKeys; }
         inline ::com::sun::star::uno::Reference< ::com::sun::star::container::XNameAccess > getColumns() const { ::osl::MutexGuard aGuard( m_aMutex  ); return m_xColumns; }
 
         // OEventListenerAdapter

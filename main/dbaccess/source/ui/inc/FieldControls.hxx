@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,29 +7,29 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
 #ifndef DBAUI_FIELDCONTROLS_HXX
 #define DBAUI_FIELDCONTROLS_HXX
 
-#ifndef _SV_FIELD_HXX 
+#ifndef _SV_FIELD_HXX
 #include <vcl/field.hxx>
 #endif
-#ifndef _SV_LSTBOX_HXX 
+#ifndef _SV_LSTBOX_HXX
 #include <vcl/lstbox.hxx>
 #endif
-#ifndef _SV_SVAPP_HXX 
+#ifndef _SV_SVAPP_HXX
 #include <vcl/svapp.hxx>
 #endif
 #ifndef DBAUI_SQLNAMEEDIT_HXX
@@ -74,9 +74,9 @@ namespace dbaui
 		}
 	};
 	inline OPropColumnEditCtrl::OPropColumnEditCtrl(Window* pParent,
-													::rtl::OUString& _rAllowedChars, 
-													sal_uInt16 nHelpId, 
-													short nPosition, 
+													::rtl::OUString& _rAllowedChars,
+													sal_uInt16 nHelpId,
+													short nPosition,
 													WinBits nWinStyle)
 		:OSQLNameEdit(pParent, _rAllowedChars,nWinStyle)
 		,m_nPos(nPosition)
@@ -84,7 +84,7 @@ namespace dbaui
 		m_strHelpText=String(ModuleRes(nHelpId));
 	}
 	//==================================================================
-	class OPropEditCtrl :	public Edit 
+	class OPropEditCtrl :	public Edit
 	{
         OModuleClient m_aModuleClient;
 		short	             m_nPos;

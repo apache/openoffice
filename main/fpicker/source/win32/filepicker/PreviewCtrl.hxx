@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -45,15 +45,15 @@ public:
     CDimension( ) :
         m_cx( 0 ),
         m_cy( 0 )
-	{		
+	{
 	}
 
     CDimension( sal_Int32 cx, sal_Int32 cy ) :
         m_cx( cx ),
         m_cy( cy )
-	{		
+	{
 	}
-	
+
 	sal_Int32 m_cx;
 	sal_Int32 m_cy;
 };
@@ -62,9 +62,9 @@ public:
 // we use OleInitialize here because we are calling
 // some Ole functions to realize the picture preview
 // and we expect to be called from the main thread
-// so that there will be no problem calling 
+// so that there will be no problem calling
 // OleInitialize (the main thread should be an STA)
-// When OleInitialize should fail at worst the 
+// When OleInitialize should fail at worst the
 // preview doesn't work
 //--------------------------------------------------
 
@@ -72,7 +72,7 @@ class CAutoOleInit
 {
 public:
 
-    // used to communicate ole 
+    // used to communicate ole
     // initialzation failures
     class COleInitException { };
 
@@ -92,7 +92,7 @@ public:
 //---------------------------------------------
 // A simple file preview class to preview some
 // common picture formats like *.gif, *jpg, etc.
-// This class is not thread-safe and is 
+// This class is not thread-safe and is
 // implemented as singleton, because the class
 // has only one static member to reconnect
 // from callback functions
@@ -107,21 +107,21 @@ class CFilePreview
 {
 public:
 	// to ensure only one instance (singleton)
-	static CFilePreview* createInstance( 
-		HWND aParent, 
-		POINT ulCorner, 
-		const CDimension& aSize, 
-		HINSTANCE hInstance, 
-		sal_Bool bShow = sal_True, 
+	static CFilePreview* createInstance(
+		HWND aParent,
+		POINT ulCorner,
+		const CDimension& aSize,
+		HINSTANCE hInstance,
+		sal_Bool bShow = sal_True,
 		sal_Bool bEnabled = sal_True );
 
 	// sets the size of the preview window
 	sal_Bool SAL_CALL setSize( const CDimension& aSize );
-	
+
 	// returns the CDimension of the preview
 	sal_Bool SAL_CALL getSize( CDimension& theSize ) const;
 
-	// sets the position of the upper left corner 
+	// sets the position of the upper left corner
 	// of the preview window relative to the
 	// upper left corner of the parent window
 	sal_Bool SAL_CALL setPos( POINT ulCorner );
@@ -131,7 +131,7 @@ public:
 	// parent window
 	sal_Bool SAL_CALL getPos( POINT& ulCorner ) const;
 
-	// enables or disables the preview window 
+	// enables or disables the preview window
 	// bEnable - true the window is enabled and updates its
 	// view when update is called
 	// bEnable - false the window shows itself in disabled
@@ -142,22 +142,22 @@ public:
 	// shows the preview window
 	// possible values see SHOW_STATE
 	sal_Bool SAL_CALL show( sal_Bool bShow );
-	
-	
-	// if the preview is shown and enabled 
+
+
+	// if the preview is shown and enabled
 	// preview of the given file will be shown
 	// returns true on success or false if an error
 	// occurred (the file in not there or not accessible etc.)
 	virtual sal_Bool SAL_CALL update( const rtl::OUString& aFileName );
 
-protected:	
+protected:
 	// clients can create instances only through the static create method
-	CFilePreview( 
-		HWND aParent, 
-		POINT ulCorner, 
-		const CDimension& aSize, 
-		HINSTANCE hInstance, 
-		sal_Bool bShow = sal_True, 
+	CFilePreview(
+		HWND aParent,
+		POINT ulCorner,
+		const CDimension& aSize,
+		HINSTANCE hInstance,
+		sal_Bool bShow = sal_True,
 		sal_Bool bEnabled = sal_True );
 
 	// only the singleton destroyer class is allowed to delete the
@@ -169,9 +169,9 @@ protected:
 
 protected:
 	virtual void SAL_CALL onPaint( HWND hWnd, HDC hDC );
-	
+
 	sal_Bool loadFile( const rtl::OUString& aFileName );
-	
+
 private:
     CAutoOleInit m_autoOleInit;
 	POINT		 m_pt;
