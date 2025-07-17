@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -34,7 +34,7 @@
 #include "vcl/combobox.hxx"
 #include "vcl/printerinfomanager.hxx"
 
-namespace padmin 
+namespace padmin
 {
 
 class AddPrinterDialog;
@@ -48,7 +48,7 @@ protected:
     AddPrinterDialog*	m_pParent;
 public:
 	APTabPage( AddPrinterDialog* pParent, const ResId& rResId );
-	
+
 	// returns false if information is incomplete or invalid
 	virtual bool check() = 0;
 	virtual void fill( ::psp::PrinterInfo& rInfo ) = 0;
@@ -70,8 +70,8 @@ public:
 	bool isFax() { return m_aFaxBtn.IsChecked(); }
 	bool isPDF() { return m_aPDFBtn.IsChecked(); }
 	bool isOld() { return m_aOldBtn.IsChecked(); }
-	
-	
+
+
 	virtual bool check();
 	virtual void fill( ::psp::PrinterInfo& rInfo );
 };
@@ -88,12 +88,12 @@ class APChooseDriverPage : public APTabPage
 
 	DECL_LINK( ClickBtnHdl, PushButton* );
 	DECL_LINK( DelPressedHdl, ListBox* );
-	
+
 	void updateDrivers( bool bRefresh = false, const rtl::OUString& rSelectDriver = rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "SGENPRT" ) ) );
 public:
 	APChooseDriverPage( AddPrinterDialog* pParent );
 	~APChooseDriverPage();
-	
+
 	virtual bool check();
 	virtual void fill( ::psp::PrinterInfo& rInfo );
 };
@@ -108,11 +108,11 @@ public:
 	APNamePage( AddPrinterDialog* pParent, const String& rInitName, DeviceKind::type eKind );
 	~APNamePage();
 
-	bool isDefault() { return m_aDefaultBox.IsChecked(); }	
+	bool isDefault() { return m_aDefaultBox.IsChecked(); }
 	bool isFaxSwallow() { return m_aFaxSwallowBox.IsChecked(); }
 
     void setText( const String& rText ) { m_aNameEdt.SetText( rText ); }
-	
+
 	virtual bool check();
 	virtual void fill( ::psp::PrinterInfo& rInfo );
 };
@@ -132,10 +132,10 @@ class APCommandPage : public APTabPage
 	DECL_LINK( ClickBtnHdl, PushButton* );
     DECL_LINK( ModifyHdl, ComboBox* );
 public:
-	
+
 	APCommandPage( AddPrinterDialog* pParent, DeviceKind::type eKind );
 	~APCommandPage();
-	
+
 	virtual bool check();
 	virtual void fill( ::psp::PrinterInfo& rInfo );
 
@@ -154,7 +154,7 @@ class APOldPrinterPage : public APTabPage
 public:
 	APOldPrinterPage( AddPrinterDialog* pParent );
 	~APOldPrinterPage();
-	
+
 	virtual bool check();
 	virtual void fill( ::psp::PrinterInfo& rInfo );
 
@@ -203,9 +203,9 @@ class AddPrinterDialog : public ModalDialog
     TitleImage				m_aTitleImage;
 
 	::psp::PrinterInfo		m_aPrinter;
-	
+
 	APTabPage*				m_pCurrentPage;
-	
+
 	APChooseDevicePage*		m_pChooseDevicePage;
 	APCommandPage*			m_pCommandPage;
 	APChooseDriverPage*		m_pChooseDriverPage;
@@ -219,13 +219,13 @@ class AddPrinterDialog : public ModalDialog
 	APChooseDriverPage*		m_pPdfSelectDriverPage;
 	APNamePage*				m_pPdfNamePage;
 	APCommandPage*			m_pPdfCommandPage;
-	
+
 	DECL_LINK( ClickBtnHdl, PushButton* );
 
 	void advance();
 	void back();
 	void addPrinter();
-    
+
     void updateSettings();
     virtual void DataChanged( const DataChangedEvent& rEv );
 

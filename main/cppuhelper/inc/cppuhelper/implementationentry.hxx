@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -29,7 +29,7 @@
 namespace cppu
 {
 /** One struct instance represents all data necessary for registering one service implementation.
-   
+
  */
 struct ImplementationEntry
 {
@@ -77,7 +77,7 @@ struct ImplementationEntry
 	                       This is a reference to the registry key, into which the implementation
 						   data shall be written to.
 	@param entries         Each element of the entries-array must contains a function pointer
-	                       table for registering an implemenation. The end of the array 
+	                       table for registering an implemenation. The end of the array
 	                       must be marked with a 0 entry in the create-function.
 	@return sal_True, if all implementations could be registered, otherwise sal_False.
  */
@@ -95,7 +95,7 @@ CPPUHELPER_DLLPUBLIC sal_Bool component_writeInfoHelper(
 	                       This is a reference to the registry key, where the implementation
 						   data has been written to.
 	@param entries         Each element of the entries-array must contains a function pointer
-	                       table for creating a factor of the implementation. The end of the array 
+	                       table for creating a factor of the implementation. The end of the array
 	                       must be marked with a 0 entry in the create-function.
     @return 0 if the helper failed to instantiate a factory, otherwise an acquired pointer
 	        to a factory.

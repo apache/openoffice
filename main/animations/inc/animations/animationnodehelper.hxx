@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -42,7 +42,7 @@ namespace anim
 
     /** Apply given functor to every animation node child.
 
-	    @param xNode 
+	    @param xNode
         Parent node
 
         @param rFunctor
@@ -59,17 +59,17 @@ namespace anim
         try
         {
             // get an XEnumerationAccess to the children
-            ::com::sun::star::uno::Reference< ::com::sun::star::container::XEnumerationAccess > 
-                  xEnumerationAccess( xNode, 
+            ::com::sun::star::uno::Reference< ::com::sun::star::container::XEnumerationAccess >
+                  xEnumerationAccess( xNode,
                                       ::com::sun::star::uno::UNO_QUERY_THROW );
-            ::com::sun::star::uno::Reference< ::com::sun::star::container::XEnumeration > 
-                  xEnumeration( xEnumerationAccess->createEnumeration(), 
+            ::com::sun::star::uno::Reference< ::com::sun::star::container::XEnumeration >
+                  xEnumeration( xEnumerationAccess->createEnumeration(),
                                 ::com::sun::star::uno::UNO_QUERY_THROW );
-                
+
             while( xEnumeration->hasMoreElements() )
             {
-                ::com::sun::star::uno::Reference< ::com::sun::star::animations::XAnimationNode > 
-                      xChildNode( xEnumeration->nextElement(), 
+                ::com::sun::star::uno::Reference< ::com::sun::star::animations::XAnimationNode >
+                      xChildNode( xEnumeration->nextElement(),
                                   ::com::sun::star::uno::UNO_QUERY_THROW );
 
                 rFunctor( xChildNode );
@@ -94,22 +94,22 @@ namespace anim
         try
         {
             // get an XEnumerationAccess to the children
-            ::com::sun::star::uno::Reference< ::com::sun::star::container::XEnumerationAccess > 
-                  xEnumerationAccess( xNode, 
+            ::com::sun::star::uno::Reference< ::com::sun::star::container::XEnumerationAccess >
+                  xEnumerationAccess( xNode,
                                       ::com::sun::star::uno::UNO_QUERY );
 
 			if( xEnumerationAccess.is() )
 			{
-				::com::sun::star::uno::Reference< ::com::sun::star::container::XEnumeration > 
-		              xEnumeration( xEnumerationAccess->createEnumeration(), 
+				::com::sun::star::uno::Reference< ::com::sun::star::container::XEnumeration >
+		              xEnumeration( xEnumerationAccess->createEnumeration(),
 			                        ::com::sun::star::uno::UNO_QUERY );
-                
+
 				if( xEnumeration.is() )
 				{
 					while( xEnumeration->hasMoreElements() )
 					{
-						::com::sun::star::uno::Reference< ::com::sun::star::animations::XAnimationNode > 
-							xChildNode( xEnumeration->nextElement(), 
+						::com::sun::star::uno::Reference< ::com::sun::star::animations::XAnimationNode >
+							xChildNode( xEnumeration->nextElement(),
 										::com::sun::star::uno::UNO_QUERY_THROW );
 
 						create_deep_vector( xChildNode, rVector );

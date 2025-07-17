@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -54,7 +54,7 @@ namespace connectivity
 }
 
 namespace dbaui
-{ 
+{
 	//==================================================================
 #define SIZ_NONE		0
 #define SIZ_TOP			1
@@ -83,7 +83,7 @@ namespace dbaui
 		friend class OQueryDesignView;
 		::std::vector<bool> 				m_bVisibleRow;	// an Pos steht die RowId
 		Timer								m_timerInvalidate;
-											
+
 		long								m_nSeekRow;
 		BrowserMode							m_nMode;						// Merken des BrowseModes
 		Edit*								m_pTextCell;
@@ -94,7 +94,7 @@ namespace dbaui
 		::svt::ListBoxControl*				m_pOrderCell;
 
 		OTableFieldDescRef					m_pEmptyEntry;		// default entry in the list may reference more than once
-		
+
 		sal_Int32							m_nMaxColumns;				// maximale Anzahl der Spalten in einem Select-Statement
 
 		String								m_aFunctionStrings;
@@ -164,7 +164,7 @@ namespace dbaui
 
 		void						Fill();
 		void						PreFill();
-		
+
 		/** Disables the generation of undo actions
 		*/
 		inline void					EnterUndoMode() { m_bInUndoMode = sal_True; }
@@ -185,18 +185,18 @@ namespace dbaui
 		/** returns the description of the row.
 			@param	_nRow
 				The row number.
-			@return  
-				The header text of the specified row. 
+			@return
+				The header text of the specified row.
 		*/
 		virtual ::rtl::OUString		GetRowDescription( sal_Int32 _nRow ) const;
 
-		/** return the name of the specified object. 
+		/** return the name of the specified object.
 			@param	eObjType
 				The type to ask for
 			@param	_nPosition
 				The position of a tablecell (index position), header bar  column/row cell
-			@return  
-				The name of the specified object. 
+			@return
+				The name of the specified object.
 		*/
 		virtual ::rtl::OUString		GetAccessibleObjectName( ::svt::AccessibleBrowseBoxObjType eObjType,sal_Int32 _nPosition = -1) const;
 
@@ -206,7 +206,7 @@ namespace dbaui
         @param nColumnId  The column ID of the cell.
         @return  The XAccessible interface of the specified cell. */
 		virtual ::com::sun::star::uno::Reference< ::com::sun::star::accessibility::XAccessible > CreateAccessibleCell( sal_Int32 nRow, sal_uInt16 nColumnId );
-		
+
 
 	protected:
 		virtual sal_Bool			SeekRow( long nRow );
@@ -280,7 +280,7 @@ namespace dbaui
 				The entry where the window should be set.
 			@param	_sTableName
 				The table name to search for.
-			@return 
+			@return
 				<TRUE/> if the table name was set otherwise <FALSE/>
 		*/
 		sal_Bool		fillEntryTable(OTableFieldDescRef& _pEntry,const ::rtl::OUString& _sTableName);

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -35,7 +35,7 @@
 #endif
 
 //-----------------------------------
-// 
+//
 //-----------------------------------
 
 class CDummyCustomControl : public CCustomControl
@@ -48,7 +48,7 @@ public:
 };
 
 //-----------------------------------
-// 
+//
 //-----------------------------------
 
 class CDialogCustomControlBase : public CCustomControl
@@ -57,11 +57,11 @@ protected:
 	CDialogCustomControlBase(HWND aControlHandle, HWND aParentHandle);
 
 	virtual void SAL_CALL SetFont(HFONT hFont);
-	
+
 	// aligns the specific control class to a reference
 	// buddy
-	// 
-	void SAL_CALL AlignToBuddy(HWND aBuddyHandle);	
+	//
+	void SAL_CALL AlignToBuddy(HWND aBuddyHandle);
 
 protected:
 	HWND m_CustomControlHandle;
@@ -69,7 +69,7 @@ protected:
 };
 
 //-----------------------------------
-// 
+//
 //-----------------------------------
 
 class CStaticCustomControl : public CDialogCustomControlBase
@@ -77,11 +77,11 @@ class CStaticCustomControl : public CDialogCustomControlBase
 public:
 	CStaticCustomControl(HWND aControlHandle, HWND aParentHandle);
 
-	virtual void SAL_CALL Align();	
+	virtual void SAL_CALL Align();
 };
 
 //-----------------------------------
-// 
+//
 //-----------------------------------
 
 class CPushButtonCustomControl : public CDialogCustomControlBase
@@ -89,11 +89,11 @@ class CPushButtonCustomControl : public CDialogCustomControlBase
 public:
 	CPushButtonCustomControl(HWND aControlHandle, HWND aParentHandle);
 
-	virtual void SAL_CALL Align();	
+	virtual void SAL_CALL Align();
 };
 
 //-----------------------------------
-// 
+//
 //-----------------------------------
 
 class CComboboxCustomControl : public CDialogCustomControlBase
@@ -101,11 +101,11 @@ class CComboboxCustomControl : public CDialogCustomControlBase
 public:
 	CComboboxCustomControl(HWND aControlHandle, HWND aParentHandle);
 
-	virtual void SAL_CALL Align();	
+	virtual void SAL_CALL Align();
 };
 
 //-----------------------------------
-// 
+//
 //-----------------------------------
 
 class CCheckboxCustomControl : public CDialogCustomControlBase
@@ -113,7 +113,7 @@ class CCheckboxCustomControl : public CDialogCustomControlBase
 public:
 	CCheckboxCustomControl(HWND aControlHandle, HWND aParentHandle);
 
-	virtual void SAL_CALL Align();	
+	virtual void SAL_CALL Align();
 };
 
 #endif

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -26,9 +26,9 @@
 
 namespace PictReaderShape {
   /** draws a line from orig to dest knowing penSize
-      
+
   Attention: in order to draw horizontal/vertical/small lines, this function can instead draw a rectangle or
-            a polygon. In this case, we retrieve the line informations from VirtualDev ( GetLineColor ) 
+            a polygon. In this case, we retrieve the line informations from VirtualDev ( GetLineColor )
 	    and we use them as fill informations ( SetFillColor ). We restore after the VirtualDev state.
 
 	    This implies also that this function must be modified if we use real pattern to draw these primitives.
@@ -45,7 +45,7 @@ namespace PictReaderShape {
   void drawEllipse(VirtualDevice *dev, bool drawFrame, Rectangle const &orig, Size const &pSize);
 
   /** draws a rounded rectangle knowing penSize
-      \note ovalSize is two time the size of the corner 
+      \note ovalSize is two time the size of the corner
   */
   void drawRoundRectangle(VirtualDevice *dev, bool drawFrame, Rectangle const &orig, Size const &ovalS, Size const &pSize);
 

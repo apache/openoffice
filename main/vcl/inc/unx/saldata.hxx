@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -64,27 +64,27 @@ protected:
 public:
     X11SalData();
     virtual ~X11SalData();
-	
+
     virtual void			Init();
     virtual void			initNWF();
     virtual void			deInitNWF();
-    
+
 	inline	void			XError( Display     *pDisplay, XErrorEvent *pEvent ) const;
 
-    SalDisplay*				GetDisplay() const 
+    SalDisplay*				GetDisplay() const
     { return m_pSalDisplay; }
     void					SetSalDisplay( SalDisplay* pDisplay )
     { m_pSalDisplay = pDisplay; }
 
     void					DeleteDisplay(); // for shutdown
-	
+
 	inline	SalXLib*		GetLib() const { return pXLib_; }
 	inline	pthread_t		GetMainThread() const { return hMainThread_; }
 
     void					StartTimer( sal_uLong nMS );
 	inline	void			StopTimer();
     void					Timeout() const;
-    
+
     const rtl::OUString&    GetLocalHostName() const
     { return maLocalHostName; }
     rtl::OUString&          GetUnicodeAccumulator() { return maUnicodeAccumulator; }

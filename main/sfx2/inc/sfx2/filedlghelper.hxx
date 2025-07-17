@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -199,13 +199,13 @@ public:
     void                    SetTitle( const String&  rNewTitle );
     String                  GetPath() const;
 
-    /** @deprected: Don't use this method to retrieve the selected files 
+    /** @deprected: Don't use this method to retrieve the selected files
         There are file picker which can provide multiple selected file which belong
         to different folders. As this method always provides the root folder for all selected
         files this cannot work.
     */
     ::com::sun::star::uno::Sequence< ::rtl::OUString > GetMPath() const;
-    
+
     /** Provides the selected files with full path information */
     ::com::sun::star::uno::Sequence< ::rtl::OUString > GetSelectedFiles() const;
 

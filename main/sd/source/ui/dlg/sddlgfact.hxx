@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -24,7 +24,7 @@
 #define _SD_DLGFACT_HXX
 
 // include ---------------------------------------------------------------
-#include "sdabstdlg.hxx" 
+#include "sdabstdlg.hxx"
 #include <sfx2/basedlgs.hxx>
 
 #define DECL_ABSTDLG_BASE(Class,DialogClass)		\
@@ -214,8 +214,8 @@ class AbstractSdPresLayoutDlg_Impl : public AbstractSdPresLayoutDlg
 };
 
 // add for SdActionDlg
-class SfxSingleTabDialog; 
-class AbstractSfxDialog_Impl : public SfxAbstractDialog 
+class SfxSingleTabDialog;
+class AbstractSfxDialog_Impl : public SfxAbstractDialog
 {
 	DECL_ABSTDLG_BASE(AbstractSfxDialog_Impl,SfxModalDialog)
 	virtual const SfxItemSet* 	GetOutputItemSet() const;
@@ -224,7 +224,7 @@ class AbstractSfxDialog_Impl : public SfxAbstractDialog
 };
 
 // add for SdVectorizeDlg
-class SdVectorizeDlg; 
+class SdVectorizeDlg;
 class AbstractSdVectorizeDlg_Impl :public AbstractSdVectorizeDlg
 {
 	DECL_ABSTDLG_BASE(AbstractSdVectorizeDlg_Impl,SdVectorizeDlg)
@@ -232,7 +232,7 @@ class AbstractSdVectorizeDlg_Impl :public AbstractSdVectorizeDlg
 };
 
 // add for SdPublishingDlg
-class SdPublishingDlg; 
+class SdPublishingDlg;
 class AbstractSdPublishingDlg_Impl :public AbstractSdPublishingDlg
 {
 	DECL_ABSTDLG_BASE(AbstractSdPublishingDlg_Impl,SdPublishingDlg)
@@ -276,13 +276,13 @@ public:
 	virtual AbstractSdVectorizeDlg*		CreateSdVectorizeDlg( ::Window* pParent, const Bitmap& rBmp, ::sd::DrawDocShell* pDocShell );
 	virtual AbstractSdPublishingDlg*	CreateSdPublishingDlg( ::Window* pWindow, DocumentType eDocType);
 
-  	virtual VclAbstractDialog*          CreateMasterLayoutDialog( ::Window* pParent, 
+  	virtual VclAbstractDialog*          CreateMasterLayoutDialog( ::Window* pParent,
 																  SdDrawDocument* pDoc,
 																  SdPage* ); // add for MasterLayoutDialog
 
-	virtual AbstractHeaderFooterDialog* CreateHeaderFooterDialog( ViewShell* pViewShell, 
-																  ::Window* pParent, 
-																  SdDrawDocument* pDoc, 
+	virtual AbstractHeaderFooterDialog* CreateHeaderFooterDialog( ViewShell* pViewShell,
+																  ::Window* pParent,
+																  SdDrawDocument* pDoc,
 																  SdPage* pCurrentPage ); // add for HeaderFooterDialog
 
 	// For TabPage

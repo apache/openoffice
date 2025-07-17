@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,20 +7,20 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
- 
+
 #ifndef _EXPORT_HXX
 #define _EXPORT_HXX
 
@@ -28,7 +28,7 @@
 
 #include <tagtest.hxx>
 
-// #define MERGE_SOURCE_LANGUAGES <- To merge en-US and de resource 
+// #define MERGE_SOURCE_LANGUAGES <- To merge en-US and de resource
 
 #include <tools/string.hxx>
 #include <tools/list.hxx>
@@ -41,7 +41,7 @@
 #include <iterator> /* std::iterator*/
 #include <set>      /* std::set*/
 #include <vector>   /* std::vector*/
-#include <queue>    
+#include <queue>
 #include <string>
 
 #include <unistd.h>
@@ -114,7 +114,7 @@ class ResData
 public:
 	~ResData();
 	sal_Bool SetId( const ByteString &rId, sal_uInt16 nLevel );
-    
+
     sal_uInt16 nWidth;
 	sal_uInt16 nChildIndex;
 	sal_uInt16 nIdLevel;
@@ -156,17 +156,17 @@ public:
 	ExportList	*pItemList;
     ExportList	*pFilterList;
     ExportList  *pPairedList;
- 
+
     ByteString sPForm;
 
 	void Dump();
 	void addFallbackData( ByteString& sId , const ByteString& sText );
 	bool getFallbackData( ByteString& sId , ByteString& sText);
-	
+
 	void addMergedLanguage( ByteString& sLang );
 	bool isMerged( ByteString& sLang );
 	ResData( const ByteString &rPF, const ByteString &rGId )
-			: 
+			:
             nWidth( 0 ),
             nChildIndex( 0 ),
             nIdLevel( ID_LEVEL_NULL ),
@@ -186,7 +186,7 @@ public:
             sTextTyp( "Text" ),
             pStringList( NULL ),
             pUIEntries( NULL ),
-            pItemList( NULL ),  
+            pItemList( NULL ),
             pFilterList( NULL ),
             pPairedList( NULL ),
             sPForm( rPF )
@@ -195,7 +195,7 @@ public:
 		sPForm.EraseAllChars( '\r' );
 	};
 	ResData( const ByteString &rPF, const ByteString &rGId , const ByteString &rFilename )
-			: 			
+			:
             nChildIndex( 0 ),
             nIdLevel( ID_LEVEL_NULL ),
             bChild( sal_False ),
@@ -215,7 +215,7 @@ public:
             sTextTyp( "Text" ),
             pStringList( NULL ),
             pUIEntries( NULL ),
-            pItemList( NULL ),  
+            pItemList( NULL ),
             pFilterList( NULL ),
             pPairedList( NULL ),
             sPForm( rPF )
@@ -264,7 +264,7 @@ private:
 	CharSet	aCharSet;					// used charset in src
 
 	SvFileStream aOutput;
-    
+
 	ResStack aResStack;					// stack for parsing recursive
 
 	ByteString sActPForm;				// hold cur. system
@@ -289,14 +289,14 @@ private:
 	ByteString sLastTextTyp;
     static bool isInitialized;
 	ByteString sFilename;
-    
+
 
 public:
 	ParserQueue* pParseQueue; // public ?
     static ByteString sLanguages; // public ?
     static ByteString sForcedLanguages; // public ?
-	
-    
+
+
     static bool skipProject( ByteString sPrj ) ;
 	static void InitLanguages( bool bMergeMode = false );
     static void InitForcedLanguages( bool bMergeMode = false );
@@ -307,19 +307,19 @@ public:
     static void RemoveUTF8ByteOrderMarker( ByteString &rString );
     static bool hasUTF8ByteOrderMarker( const ByteString &rString );
     static void RemoveUTF8ByteOrderMarkerFromFile( const ByteString &rFilename );
-    static bool fileHasUTF8ByteOrderMarker( const ByteString &rString ); 
+    static bool fileHasUTF8ByteOrderMarker( const ByteString &rString );
 	static ByteString GetIsoLangByIndex( sal_uInt16 nIndex );
 	static void QuotHTML( ByteString &rString );
     static bool CopyFile( const ByteString& source , const ByteString& dest );
 
 	static void QuotHTMLXRM( ByteString &rString );
     static void UnquotHTML( ByteString &rString );
-	
+
     static const char* GetEnv( const char *pVar );
 	static int getCurrentDirectory( rtl::OUString& base_fqurl , rtl::OUString& base );
 
     static bool isSourceLanguage( const ByteString &sLanguage );
-	static bool isAllowed( const ByteString &sLanguage );	
+	static bool isAllowed( const ByteString &sLanguage );
 
     static bool LanguageAllowed( const ByteString &nLanguage );
     static void Languages( std::vector<ByteString>::const_iterator& begin , std::vector<ByteString>::const_iterator& end );
@@ -328,7 +328,7 @@ public:
     static void getCurrentDir( std::string& dir );
 
     static void replaceEncoding( ByteString& rString );
-    
+
 	static ByteString GetFallbackLanguage( const ByteString nLanguage );
 	static void FillInFallbacks( ResData *pResData );
     static void FillInListFallbacks( ExportList *pList, const ByteString &nSource, const ByteString &nFallback );
@@ -336,7 +336,7 @@ public:
 	static sal_Bool ConvertLineEnds( ByteString sSource, ByteString sDestination );
 	static ByteString GetNativeFile( ByteString sSource );
 	static DirEntry GetTempFile();
-	
+
 	static void DumpExportList( ByteString& sListName , ExportList& aList );
 	static ByteString DumpMap( ByteString& sMapName , ByteStringHashMap& aMap );
 
@@ -349,13 +349,13 @@ private:
 	sal_Bool WriteData( ResData *pResData, sal_Bool bCreateNew = sal_False );// called befor dest. cur ResData
 	sal_Bool WriteExportList( ResData *pResData, ExportList *pExportList,
 						const ByteString &rTyp, sal_Bool bCreateNew = sal_False );
-	
+
 	ByteString MergePairedList( ByteString& sLine , ByteString& sText );
 
 	ByteString FullId();					// creates cur. GID
-    
+
 	bool PairedListFallback( ByteString& sText , ResData& aResData );
-    
+
 	ByteString GetPairedListID		( const ByteString& sText );
     ByteString GetPairedListString	( const ByteString& sText );
 	ByteString StripList	( const ByteString& sText );
@@ -366,7 +366,7 @@ private:
 	ByteString GetText( const ByteString &rSource, int nToken );
 
 	sal_Bool PrepareTextToMerge( ByteString &rText, sal_uInt16 nTyp,
-		ByteString &nLangIndex, ResData *pResData );		
+		ByteString &nLangIndex, ResData *pResData );
 
 	void MergeRest( ResData *pResData, sal_uInt16 nMode = MERGE_MODE_NORMAL );
 	void ConvertMergeContent( ByteString &rText );
@@ -443,7 +443,7 @@ public:
 
 class MergeDataFile;
 
-class MergeData 
+class MergeData
 {
 friend class MergeDataFile;
 private:
@@ -458,7 +458,7 @@ public:
 	~MergeData();
 	PFormEntrys* InsertEntry( const ByteString &rPForm );
 	PFormEntrys* GetPFormEntrys( ResData *pResData );
-    
+
     void Insert( const ByteString& rPFO , PFormEntrys* pfEntrys );
     PFormEntrys* GetPFObject( const ByteString& rPFO );
 
@@ -517,7 +517,7 @@ public:
 class ParserQueue
 {
 public:
-    
+
     ParserQueue( Export& aExportObj );
     ~ParserQueue();
 
@@ -526,12 +526,12 @@ public:
     bool bNextIsM;   // public ?
     bool bLastWasM;   // public ?
     bool bMflag;   // public ?
-    
+
     void Close();
 private:
     // Future / Next
     std::queue<QueueEntry>* aQueueNext;
-    // Current 
+    // Current
     std::queue<QueueEntry>* aQueueCur;
     // Ref
     std::queue<QueueEntry>* aQref;

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -173,17 +173,17 @@ public:
     /** Clone the matrix. */
     ScMatrix* Clone() const;
 
-    /** Clone the matrix if mbCloneIfConst (immutable) is set, otherwise 
+    /** Clone the matrix if mbCloneIfConst (immutable) is set, otherwise
         return _this_ matrix, to be assigned to a ScMatrixRef. */
     ScMatrix* CloneIfConst();
 
-    /** Set the matrix to (im)mutable for CloneIfConst(), only the interpreter 
+    /** Set the matrix to (im)mutable for CloneIfConst(), only the interpreter
         should do this and know the consequences. */
     inline void SetImmutable( bool bVal ) { mbCloneIfConst = bVal; }
 
-    /** 
+    /**
      * Resize the matrix to specified new dimension.  Note that this operation
-     * clears all stored values. 
+     * clears all stored values.
      */
     void Resize( SCSIZE nC, SCSIZE nR);
 
@@ -340,7 +340,7 @@ public:
 
     /// @return <TRUE/> if string or empty or empty path, in fact non-value.
     sal_Bool IsString( SCSIZE nC, SCSIZE nR ) const
-    { 
+    {
         ValidColRowReplicated( nC, nR );
         return mnValType && IsNonValueType( mnValType[ nC * nRowCount + nR ]);
     }

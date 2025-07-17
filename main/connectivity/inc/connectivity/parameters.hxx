@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -198,7 +198,7 @@ namespace dbtools
             the value of this master column.
 
             For instance, if the database component is bound to a statement <code>SELECT * from invoice where inv_id = :cid</code>,
-            and there is <em>one</em> master-detail link from 
+            and there is <em>one</em> master-detail link from
 
             @precond
                 the instance is alive, i.e. <member>isAlive</member> returns <TRUE/>
@@ -263,7 +263,7 @@ namespace dbtools
                 );
 
         /** initializes our query composer, and the collection of inner parameter columns
-        
+
             @param _rxComponent
                 the database component to initialize from. Must not be <NULL/>
             @return
@@ -347,7 +347,7 @@ namespace dbtools
                 );
 
         /** completes all missing parameters via an interaction handler
-        
+
             @precond
                 the instance is alive, i.e. <member>isAlive</member> returns <TRUE/>
 
@@ -360,7 +360,7 @@ namespace dbtools
                 );
 
         /** asks the parameter listeners to fill in final values
-        
+
             @precond
                 the instance is alive, i.e. <member>isAlive</member> returns <TRUE/>
 
@@ -375,7 +375,7 @@ namespace dbtools
 
     private:
         /** retrieves the columns of the parent database component
-        
+
             @precond
                 the instance is alive, i.e. <member>isAlive</member> returns <TRUE/>
             @return
@@ -383,7 +383,7 @@ namespace dbtools
         */
         bool    getParentColumns(
                     ::com::sun::star::uno::Reference< ::com::sun::star::container::XNameAccess >& /* [out] */ _out_rxParentColumns,
-                    bool _bFromComposer 
+                    bool _bFromComposer
                 );
 
         /** retrieves the columns of our database component

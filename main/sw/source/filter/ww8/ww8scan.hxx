@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -127,7 +127,7 @@ private:
     enum SprmType {L_FIX=0, L_VAR=1, L_VAR2=2};
 public:
     //7- ids are very different to 8+ ones
-    wwSprmParser(ww::WordVersion eVersion); 
+    wwSprmParser(ww::WordVersion eVersion);
     /// Return the SPRM id at the beginning of this byte sequence
     sal_uInt16 GetSprmId(const sal_uInt8* pSp) const;
 
@@ -155,7 +155,7 @@ class  WW8PLCFspecial;
 struct WW8PLCFxDesc;
 class  WW8PLCFx_PCD;
 
-String WW8ReadPString( SvStream& rStrm, rtl_TextEncoding eEnc, 
+String WW8ReadPString( SvStream& rStrm, rtl_TextEncoding eEnc,
     bool bAtEndSeekRel1 = true);
 
 /**
@@ -219,20 +219,20 @@ public:
     ~WW8PLCFspecial() { delete[] pPLCF_PosArray; }
     bool IsValid();
     long GetIdx() const { return nIdx; }
-    void SetIdx( long nI ) { nIdx = nI; }   
+    void SetIdx( long nI ) { nIdx = nI; }
     long GetIMax() const { return nIMax; }
     bool SeekPos(long nPos);            // geht ueber FC- bzw. CP-Wert
                                         // bzw. naechste groesseren Wert
     bool SeekPosExact(long nPos);
-    sal_Int32 Where() const 
+    sal_Int32 Where() const
         { return ( nIdx >= nIMax ) ? SAL_MAX_INT32 : pPLCF_PosArray[nIdx]; }
     bool Get(WW8_CP& rStart, void*& rpValue) const;
     bool GetData(long nIdx, WW8_CP& rPos, void*& rpValue) const;
 
-    const void* GetData( long nInIdx ) const 
+    const void* GetData( long nInIdx ) const
     {
-        return ( nInIdx >= nIMax ) ? 0 
-            : (const void*)&pPLCF_Contents[nInIdx * nStru]; 
+        return ( nInIdx >= nIMax ) ? 0
+            : (const void*)&pPLCF_Contents[nInIdx * nStru];
     }
     sal_Int32 GetPos( long nInIdx ) const
         { return ( nInIdx >= nIMax ) ? SAL_MAX_INT32 : pPLCF_PosArray[nInIdx]; }
@@ -261,7 +261,7 @@ public:
     void  SetSprms( const sal_uInt8* pSprms_, long nLen_ );
     const sal_uInt8* FindSprm(sal_uInt16 nId);
     const sal_uInt8*  operator ++( int );
-    const sal_uInt8* GetSprms() const 
+    const sal_uInt8* GetSprms() const
         { return ( pSprms && (0 < nRemLen) ) ? pSprms : 0; }
     const sal_uInt8* GetAktParams() const { return pAktParams; }
     sal_uInt16 GetAktId() const { return nAktId; }
@@ -291,13 +291,13 @@ private:
 
     void MakeFailedPLCF();
 public:
-    WW8PLCF( SvStream* pSt, WW8_FC nFilePos, sal_Int32 nPLCF, int nStruct, 
+    WW8PLCF( SvStream* pSt, WW8_FC nFilePos, sal_Int32 nPLCF, int nStruct,
         WW8_CP nStartPos = -1 );
 
     /*
         folgender Ctor generiert ggfs. einen PLC aus nPN und ncpN
     */
-    WW8PLCF( SvStream* pSt, WW8_FC nFilePos, sal_Int32 nPLCF, int nStruct, 
+    WW8PLCF( SvStream* pSt, WW8_FC nFilePos, sal_Int32 nPLCF, int nStruct,
         WW8_CP nStartPos, sal_Int32 nPN, sal_Int32 ncpN );
 
     ~WW8PLCF(){ delete[] pPLCF_PosArray; }
@@ -312,10 +312,10 @@ public:
     bool Get(WW8_CP& rStart, WW8_CP& rEnd, void*& rpValue) const;
     WW8PLCF& operator ++( int ) { if( nIdx < nIMax ) nIdx++; return *this; }
 
-    const void* GetData( sal_Int32 nInIdx ) const 
+    const void* GetData( sal_Int32 nInIdx ) const
     {
-        return ( nInIdx >= nIMax ) ? 0 : 
-            (const void*)&pPLCF_Contents[nInIdx * nStru]; 
+        return ( nInIdx >= nIMax ) ? 0 :
+            (const void*)&pPLCF_Contents[nInIdx * nStru];
     }
 };
 
@@ -351,11 +351,11 @@ public:
     bool SeekPos(long nPos);
     sal_Int32 Where() const;
     bool Get(WW8_CP& rStart, WW8_CP& rEnd, void*& rpValue) const;
-    WW8PLCFpcd_Iter& operator ++( int ) 
-    { 
-        if( nIdx < rPLCF.nIMax ) 
-            nIdx++; 
-        return *this; 
+    WW8PLCFpcd_Iter& operator ++( int )
+    {
+        if( nIdx < rPLCF.nIMax )
+            nIdx++;
+        return *this;
     }
 };
 
@@ -380,7 +380,7 @@ private:
     WW8PLCFx(const WW8PLCFx&);
     WW8PLCFx& operator=(const WW8PLCFx&);
 public:
-    WW8PLCFx(ww::WordVersion eVersion, bool bSprm) 
+    WW8PLCFx(ww::WordVersion eVersion, bool bSprm)
         : meVer(eVersion), bIsSprm(bSprm), bDirty(false) {}
     virtual ~WW8PLCFx() {}
     bool IsSprm() const { return bIsSprm; }
@@ -440,7 +440,7 @@ private:
     WW8PLCFx_PCD(const WW8PLCFx_PCD&);
     WW8PLCFx_PCD& operator=(const WW8PLCFx_PCD&);
 public:
-    WW8PLCFx_PCD(ww::WordVersion eVersion, WW8PLCFpcd* pPLCFpcd, 
+    WW8PLCFx_PCD(ww::WordVersion eVersion, WW8PLCFpcd* pPLCFpcd,
         WW8_CP nStartCp, bool bVer67P);
     virtual ~WW8PLCFx_PCD();
     virtual sal_uLong GetIMax() const;
@@ -452,7 +452,7 @@ public:
     virtual WW8PLCFx& operator ++( int );
     WW8_CP AktPieceStartFc2Cp( WW8_FC nStartPos );
     WW8_FC AktPieceStartCp2Fc( WW8_CP nCp );
-    void AktPieceFc2Cp(WW8_CP& rStartPos, WW8_CP& rEndPos, 
+    void AktPieceFc2Cp(WW8_CP& rStartPos, WW8_CP& rEndPos,
         const WW8ScannerBase *pSBase);
     WW8PLCFpcd_Iter* GetPLCFIter() { return pPcdI; }
     void SetClipStart(WW8_CP nIn) { nClipStart = nIn; }
@@ -480,49 +480,49 @@ public:
         public:
             WW8_FC mnFC;
 
-            sal_uInt8* mpData;  
+            sal_uInt8* mpData;
             sal_uInt16 mnLen;
             sal_uInt16 mnIStd; // only for Fkp.Papx (actually Style-Nr)
             bool mbMustDelete;
 
-            explicit Entry(WW8_FC nFC) : mnFC(nFC), mpData(0), mnLen(0), 
+            explicit Entry(WW8_FC nFC) : mnFC(nFC), mpData(0), mnLen(0),
                 mnIStd(0), mbMustDelete(false) {}
             Entry(const Entry &rEntry);
             ~Entry();
             bool operator<(const Entry& rEntry) const;
             Entry& operator=(const Entry& rEntry);
         };
-        
+
         sal_uInt8 maRawData[512];
         std::vector<Entry> maEntries;
 
         long nItemSize;     // entweder 1 Byte oder ein komplettes BX
 
         // Offset in Stream where last read of 52 bytes took place
-        long nFilePos;      
+        long nFilePos;
         sal_uInt8 mnIdx;         // Pos-Merker
         ePLCFT ePLCF;
         sal_uInt8 mnIMax;         // Anzahl der Eintraege
-        
+
         wwSprmParser maSprmParser;
     public:
-        WW8Fkp (ww::WordVersion eVersion, SvStream* pFKPStrm, 
-            SvStream* pDataStrm, long _nFilePos, long nItemSiz, ePLCFT ePl, 
+        WW8Fkp (ww::WordVersion eVersion, SvStream* pFKPStrm,
+            SvStream* pDataStrm, long _nFilePos, long nItemSiz, ePLCFT ePl,
             WW8_FC nStartFc = -1);
         void Reset(WW8_FC nPos);
         long GetFilePos() const { return nFilePos; }
         sal_uInt8 GetIdx() const { return mnIdx; }
         bool SetIdx(sal_uInt8 nI);
         bool SeekPos(WW8_FC nFc);
-        WW8_FC Where() const 
-        { 
-            return (mnIdx < mnIMax) ? maEntries[mnIdx].mnFC : WW8_FC_MAX; 
+        WW8_FC Where() const
+        {
+            return (mnIdx < mnIMax) ? maEntries[mnIdx].mnFC : WW8_FC_MAX;
         }
-        WW8Fkp& operator ++( int ) 
-        { 
+        WW8Fkp& operator ++( int )
+        {
             if (mnIdx < mnIMax)
                 mnIdx++;
-            return *this; 
+            return *this;
         }
         sal_uInt8* Get( WW8_FC& rStart, WW8_FC& rEnd, sal_Int32& rLen ) const;
         sal_uInt16 GetIstd() const { return maEntries[mnIdx].mnIStd; }
@@ -605,7 +605,7 @@ private:
     WW8PLCFx_Cp_FKP(const WW8PLCFx_Cp_FKP&);
     WW8PLCFx_Cp_FKP& operator=(const WW8PLCFx_Cp_FKP&);
 public:
-    WW8PLCFx_Cp_FKP( SvStream* pSt, SvStream* pTblSt, SvStream* pDataSt, 
+    WW8PLCFx_Cp_FKP( SvStream* pSt, SvStream* pTblSt, SvStream* pDataSt,
         const WW8ScannerBase& rBase,  ePLCFT ePl );
     virtual ~WW8PLCFx_Cp_FKP();
     void ResetAttrStartEnd();
@@ -637,7 +637,7 @@ private:
     WW8PLCFx_SEPX(const WW8PLCFx_SEPX&);
     WW8PLCFx_SEPX& operator=(const WW8PLCFx_SEPX&);
 public:
-    WW8PLCFx_SEPX( SvStream* pSt, SvStream* pTblxySt, const WW8Fib& rFib, 
+    WW8PLCFx_SEPX( SvStream* pSt, SvStream* pTblxySt, const WW8Fib& rFib,
         WW8_CP nStartCp );
     virtual ~WW8PLCFx_SEPX();
     bool HasValidPLCF();
@@ -667,7 +667,7 @@ private:
     WW8PLCFx_SubDoc(const WW8PLCFx_SubDoc&);
     WW8PLCFx_SubDoc& operator=(const WW8PLCFx_SubDoc&);
 public:
-    WW8PLCFx_SubDoc(SvStream* pSt, ww::WordVersion eVersion, WW8_CP nStartCp, 
+    WW8PLCFx_SubDoc(SvStream* pSt, ww::WordVersion eVersion, WW8_CP nStartCp,
     long nFcRef, long nLenRef, long nFcTxt, long nLenTxt, long nStruc = 0);
     virtual ~WW8PLCFx_SubDoc();
     bool HasValidPLCF();
@@ -725,7 +725,7 @@ private:
     long nIMax;                         // Number of Booknotes
     sal_uInt16 nIsEnd;
 	int nBookmarkId; // counter incremented by GetUniqueBookmarkName.
-    
+
     //No copying
     WW8PLCFx_Book(const WW8PLCFx_Book&);
     WW8PLCFx_Book& operator=(const WW8PLCFx_Book&);
@@ -843,7 +843,7 @@ private:
                                     //drawboxes we want the true offsets
 
     WW8PLCFxDesc aD[MAN_ANZ_PLCF];
-    WW8PLCFxDesc *pChp, *pPap, *pSep, *pFld, *pFtn, *pEdn, *pBkm, *pPcd, 
+    WW8PLCFxDesc *pChp, *pPap, *pSep, *pFld, *pFtn, *pEdn, *pBkm, *pPcd,
         *pPcdA, *pAnd;
     WW8PLCFspecial *pFdoa, *pTxbx, *pTxbxBkd,*pMagicTables, *pSubdocs;
     sal_uInt8* pExtendedAtrds;
@@ -862,7 +862,7 @@ private:
     void AdvNoSprm(short nIdx, bool bStart);
     sal_uInt16 GetId(const WW8PLCFxDesc* p ) const;
 public:
-    WW8PLCFMan(WW8ScannerBase* pBase, ManTypes nType, long nStartCp, 
+    WW8PLCFMan(WW8ScannerBase* pBase, ManTypes nType, long nStartCp,
         bool bDoingDrawTextBox = false);
     ~WW8PLCFMan();
 
@@ -889,11 +889,11 @@ public:
     const sal_uInt8* HasCharSprm( sal_uInt16 nId ) const;
     bool HasCharSprm(sal_uInt16 nId, std::vector<const sal_uInt8 *> &rResult) const;
 
-    WW8PLCFx_Cp_FKP* GetChpPLCF() const 
+    WW8PLCFx_Cp_FKP* GetChpPLCF() const
         { return (WW8PLCFx_Cp_FKP*)pChp->pPLCFx; }
-    WW8PLCFx_Cp_FKP* GetPapPLCF() const 
+    WW8PLCFx_Cp_FKP* GetPapPLCF() const
         { return (WW8PLCFx_Cp_FKP*)pPap->pPLCFx; }
-    WW8PLCFx_SEPX* GetSepPLCF() const 
+    WW8PLCFx_SEPX* GetSepPLCF() const
         { return (WW8PLCFx_SEPX*)pSep->pPLCFx; }
     WW8PLCFxDesc* GetPap() const { return pPap; }
     bool TransferOpenSprms(std::stack<sal_uInt16> &rStack);
@@ -919,7 +919,7 @@ struct WW8PLCFxSaveAll
 
 class WW8ScannerBase
 {
-friend WW8PLCFx_PCDAttrs::WW8PLCFx_PCDAttrs(ww::WordVersion eVersion, 
+friend WW8PLCFx_PCDAttrs::WW8PLCFx_PCDAttrs(ww::WordVersion eVersion,
     WW8PLCFx_PCD* pPLCFx_PCD, const WW8ScannerBase* pBase );
 friend WW8PLCFx_Cp_FKP::WW8PLCFx_Cp_FKP( SvStream*, SvStream*, SvStream*,
     const WW8ScannerBase&, ePLCFT );
@@ -981,10 +981,10 @@ public:
     //given that we never write fastsaved files you can use it, otherwise
     //I will beat you with a stick
     WW8_CP WW8Fc2Cp(WW8_FC nFcPos) const ;
-    WW8_FC WW8Cp2Fc(WW8_CP nCpPos, bool* pIsUnicode = 0, 
+    WW8_FC WW8Cp2Fc(WW8_CP nCpPos, bool* pIsUnicode = 0,
         WW8_CP* pNextPieceCp = 0, bool* pTestFlag = 0) const;
 
-    xub_StrLen WW8ReadString(SvStream& rStrm, String& rStr, WW8_CP nAktStartCp, 
+    xub_StrLen WW8ReadString(SvStream& rStrm, String& rStr, WW8_CP nAktStartCp,
         long nTotalLen, rtl_TextEncoding eEnc ) const;
 
 };
@@ -1427,7 +1427,7 @@ public:
 
     // 0x422 - 0x4D4 == ignore
     WW8_FC fcHplxsdr;    //bizarrely, word xp seems to require this set to shows dates from AtrdExtra
-    sal_uInt32 lcbHplxsdr; 
+    sal_uInt32 lcbHplxsdr;
 
     /*
         General-Varaiblen, die fuer Ver67 und Ver8 verwendet werden,
@@ -1438,7 +1438,7 @@ public:
     sal_Int32 cpnBteChp;
     sal_Int32 cpnBtePap;
     /*
-        The actual nFib, moved here because some readers assumed 
+        The actual nFib, moved here because some readers assumed
         they couldn't read any format with nFib > some constant
     */
     sal_uInt16 nFib_actual; // 0x05bc #i56856#
@@ -1472,13 +1472,13 @@ protected:
     sal_uInt16  istdMaxFixedWhenSaved;     // How many fixed-index istds are there?
     sal_uInt16  nVerBuiltInNamesWhenSaved; // Current version of built-in stylenames
     // ftc used by StandardChpStsh for this document
-    sal_uInt16  ftcAsci;     
+    sal_uInt16  ftcAsci;
     // CJK ftc used by StandardChpStsh for this document
     sal_uInt16  ftcFE;
     // CTL/Other ftc used by StandardChpStsh for this document
     sal_uInt16  ftcOther;
     // CTL ftc used by StandardChpStsh for this document
-    sal_uInt16  ftcBi;  
+    sal_uInt16  ftcBi;
 
     //No copying
     WW8Style(const WW8Style&);
@@ -1510,7 +1510,7 @@ namespace nsHdFtFlags
 	const HdFtFlags WW8_FOOTER_EVEN 	= 0x04;
     const HdFtFlags WW8_FOOTER_ODD 		= 0x08;
 	const HdFtFlags WW8_HEADER_FIRST 	= 0x10;
-	const HdFtFlags WW8_FOOTER_FIRST 	= 0x20; 
+	const HdFtFlags WW8_FOOTER_FIRST 	= 0x20;
 }
 
 /// Document Properties

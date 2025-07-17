@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -60,7 +60,7 @@ class SwPrintData
 public:
 
     sal_Bool bPrintGraphic, bPrintTable, bPrintDraw, bPrintControl, bPrintPageBackground,
-             bPrintBlackFont, 
+             bPrintBlackFont,
              //#i81434# - printing of hidden text
              bPrintHiddenText, bPrintTextPlaceholder,
              bPrintLeftPages, bPrintRightPages, bPrintReverse, bPrintProspect,
@@ -88,7 +88,7 @@ public:
         bPrintLeftPages         =
         bPrintRightPages        =
         bPrintPageBackground    =
-        bPrintEmptyPages        = 
+        bPrintEmptyPages        =
         bUpdateFieldsInPrinting = sal_True;
 
         bPaperFromSetup         =
@@ -97,8 +97,8 @@ public:
         bPrintProspectRTL       =
         bPrintSingleJobs        =
         bModified               =
-        bPrintBlackFont         = 
-        bPrintHiddenText        = 
+        bPrintBlackFont         =
+        bPrintHiddenText        =
         bPrintTextPlaceholder   = sal_False;
 
         nPrintPostIts           = 0;
@@ -129,7 +129,7 @@ public:
         bPrintHiddenText    ==   rData.bPrintHiddenText     &&
         bPrintTextPlaceholder   ==   rData.bPrintTextPlaceholder;
     }
-    
+
     // Note: in the context where this class ist used the pointers should always be valid
     // during the lifetime of this object
     const SwPrintUIOptions &    GetPrintUIOptions() const       { return *m_pPrintUIOptions; }
@@ -153,7 +153,7 @@ public:
     sal_Bool IsPrintSingleJobs() const          { return bPrintSingleJobs; }
     sal_Int16 GetPrintPostIts() const           { return nPrintPostIts; }
     const rtl::OUString GetFaxName() const      { return sFaxName; }
-    sal_Bool IsPrintHiddenText() const          { return bPrintHiddenText; } 
+    sal_Bool IsPrintHiddenText() const          { return bPrintHiddenText; }
     sal_Bool IsPrintTextPlaceholder() const     { return bPrintTextPlaceholder; }
 
     void SetPrintGraphic( sal_Bool b )              { doSetModified(); bPrintGraphic = b; }
@@ -174,7 +174,7 @@ public:
     void SetFaxName( const rtl::OUString& rSet )    { sFaxName = rSet; }
     void SetPrintHiddenText( sal_Bool b )           { doSetModified(); bPrintHiddenText = b; }
     void SetPrintTextPlaceholder( sal_Bool b )      { doSetModified(); bPrintTextPlaceholder = b; }
-    
+
     virtual void doSetModified () { bModified = sal_True;}
 };
 
@@ -190,9 +190,9 @@ class SwPrintUIOptions : public vcl::PrinterOptionsHelper
 public:
     SwPrintUIOptions( bool bWeb, bool bSwSrcView, bool bHasSelection, bool bHasPostIts, const SwPrintData &rDefaultPrintData );
     virtual ~SwPrintUIOptions();
-    
+
     bool processPropertiesAndCheckFormat( const com::sun::star::uno::Sequence< com::sun::star::beans::PropertyValue >& i_rNewProp );
-    
+
     bool IsPrintFormControls() const            { return getBoolValue( "PrintControls",        m_rDefaultPrintData.bPrintControl ); }
     bool IsPrintPageBackground() const          { return getBoolValue( "PrintPageBackground",  m_rDefaultPrintData.bPrintPageBackground ); }
     bool IsPrintProspect() const                { return getBoolValue( "PrintProspect",        m_rDefaultPrintData.bPrintProspect ); }
@@ -220,7 +220,7 @@ public:
 // and it is used in the 'render' function of that same interface
 class SwRenderData
 {
-    // pages valid for printing (according to the current settings) 
+    // pages valid for printing (according to the current settings)
     // and their respective start frames (see getRendererCount in unotxdoc.cxx)
     // This set of pages does NOT depend on the 'PageRange' that is used as a printing option!
     std::set< sal_Int32 >                       m_aValidPages;          // the set of possible pages (see StringRangeEnumerator::getRangesFromString )
@@ -241,7 +241,7 @@ class SwRenderData
 
     rtl::OUString               m_aPageRange;
 
-    // the view options to be applied for printing 
+    // the view options to be applied for printing
     SwViewOptionAdjust_Impl *   m_pViewOptionAdjust;
 
     SwPrintData *               m_pPrtOptions;
@@ -288,13 +288,13 @@ public:
     // a value of -1 for the tray means that there is no specific tray defined
     std::map< sal_Int32, sal_Int32 >&        GetPrinterPaperTrays()          { return m_aPrinterPaperTrays; }
     const std::map< sal_Int32, sal_Int32 >&  GetPrinterPaperTrays() const    { return m_aPrinterPaperTrays; }
-    
+
     // used for 'normal' printing
     // A page value of 0 as entry indicates that this page is not from the document but
     // from the post-it document. (See also GetPostItStartFrame below)
     std::vector< sal_Int32 > &          GetPagesToPrint()           { return m_aPagesToPrint; }
     const std::vector< sal_Int32 > &    GetPagesToPrint() const     { return m_aPagesToPrint; }
-    
+
     // used for 'normal' printing with post-its
     // - if the map entry will be NULL then the respective page to be printed is from
     // the document. In that case use the value from GetPagesToPrint at the same index to
@@ -311,7 +311,7 @@ public:
 
     rtl::OUString   GetPageRange() const                            { return m_aPageRange; }
     void            SetPageRange( const rtl::OUString &rRange )     { m_aPageRange = rRange; }
-};    
+};
 
 
 ////////////////////////////////////////////////////////////

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -993,13 +993,13 @@ struct PPTStyleTextPropReader
 	void Init( SvStream& rIn, SdrPowerPointImport&, const DffRecordHeader& rClientTextBoxHd,
                PPTTextRulerInterpreter& rInterpreter, const DffRecordHeader& rExtParaHd, sal_uInt32 nTextInstance );
     void ReadParaProps( SvStream& rIn, SdrPowerPointImport& rMan, const DffRecordHeader& rTextHeader,
-                        const String& aString, PPTTextRulerInterpreter& rRuler, 
+                        const String& aString, PPTTextRulerInterpreter& rRuler,
                         sal_uInt32& nCharCount, sal_Bool& bTextPropAtom );
-    void ReadCharProps( SvStream& rIn, PPTCharPropSet& aCharPropSet, const String& aString, 
+    void ReadCharProps( SvStream& rIn, PPTCharPropSet& aCharPropSet, const String& aString,
                         sal_uInt32& nCharCount, sal_uInt32 nCharAnzRead,
-                        sal_Bool& bTextPropAtom, sal_uInt32 nExtParaPos, 
-                        const std::vector< StyleTextProp9 >& aStyleTextProp9, 
-                        sal_uInt32& nExtParaFlags, sal_uInt16& nBuBlip, 
+                        sal_Bool& bTextPropAtom, sal_uInt32 nExtParaPos,
+                        const std::vector< StyleTextProp9 >& aStyleTextProp9,
+                        sal_uInt32& nExtParaFlags, sal_uInt16& nBuBlip,
                         sal_uInt16& nHasAnm, sal_uInt32& nAnmScheme );
 
 	~PPTStyleTextPropReader();

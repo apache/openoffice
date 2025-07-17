@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -174,7 +174,7 @@ private:
     // Copy assignment is forbidden and not implemented.
     SystemWindow (const SystemWindow &);
 	SystemWindow & operator= (const SystemWindow &);
-    
+
     SAL_DLLPRIVATE void ImplMoveToScreen( long& io_rX, long& io_rY, long i_nWidth, long i_nHeight, Window* i_pConfigureWin );
 
 protected:
@@ -236,32 +236,32 @@ public:
 
 	TaskPaneList*	GetTaskPaneList();
     void            GetWindowStateData( WindowStateData& rData ) const;
-    
+
     /**
     Returns the screen number the window is on
-    
+
     The screen number is counted the same way that
     <code>Application::GetScreenPosSizePixel</code>,
     <code>Application::GetWorkAreaPosSizePixel</code>,
     <code>Application::GetScreenName</code>
     and of course <code>SystemWindow::SetScreenNumber</code>
     are counted in.
-    
+
     In case the window is positioned on multiple screens the
     screen number returned will be of the screen containing the
     upper left pixel of the frame area (that is of the client
     area on system decorated windows, or the frame area of
     undecorated resp. owner decorated windows.
-    
+
     @returns the screen number
-    
+
     @see SystemWindow::SetScreenNumber
     */
     unsigned int    GetScreenNumber() const;
     /**
     Move the Window to a new screen. The same rules for
     positioning apply as in <code>SystemWindow::GetScreenNumber</code>
-    
+
     The screen number is counted the same way that
     <code>Application::GetScreenPosSizePixel</code>,
     <code>Application::GetWorkAreaPosSizePixel</code>,

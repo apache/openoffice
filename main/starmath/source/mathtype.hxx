@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -57,23 +57,23 @@ typedef ::std::set< MathTypeFont, LessMathTypeFont > MathTypeFontSet;
 class MathType
 {
 public:
-    MathType(String &rIn) : 
+    MathType(String &rIn) :
         rRet(rIn), nHAlign(0), nVAlign(0), nDefaultSize(12),
         nLSize(0), nDSize(0), nCurSize(0), nLastSize(0), bIsSilent(sal_False)
 	{
 		Init();
 	}
 
-    MathType(String &rIn,SmNode *pIn) : 
+    MathType(String &rIn,SmNode *pIn) :
         rRet(rIn), pTree(pIn), nHAlign(2), nVAlign(0), nInsertion(0), nDefaultSize(12),
         nLSize(0), nDSize(0), nCurSize(0), nLastSize(0), nSpec(0), bIsSilent(sal_False)
     {
 		Init();
 	}
-    
+
     int Parse( SotStorage* pStor );
     int ConvertFromStarMath( SfxMedium& rMedium );
-    
+
 private:
 /*Ver 2 Header*/
 	sal_uInt8 nVersion;

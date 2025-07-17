@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -361,7 +361,7 @@ class DXFLWPolyLineEntity : public DXFBasicEntity
 		sal_Int32	nIndex;
 
 	public :
-	
+
 		sal_Int32	nCount;			// 90
 		sal_Int32	nFlags;			// 70	1 = closed, 128 = plinegen
 		double		fConstantWidth;	// 43	(optional - default: 0, not used if fStartWidth and/or fEndWidth is used)
@@ -374,7 +374,7 @@ class DXFLWPolyLineEntity : public DXFBasicEntity
 		~DXFLWPolyLineEntity();
 
 	protected :
-		
+
 		virtual void EvaluateGroup( DXFGroupReader & rDGR );
 
 };
@@ -477,7 +477,7 @@ class DXFHatchEntity : public DXFBasicEntity
 		double		fHatchPatternAngle;				// 52 (pattern fill only)
 		double		fHatchPatternScale;				// 41 (pattern fill only:scale or spacing)
 		sal_Int32	nHatchDoubleFlag;				// 77 (pattern fill only:double = 1, not double = 0)
-		sal_Int32	nHatchPatternDefinitionLines;	// 78 
+		sal_Int32	nHatchPatternDefinitionLines;	// 78
 		double		fPixelSize;						// 47
 		sal_Int32	nNumberOfSeedPoints;			// 98
 
@@ -487,7 +487,7 @@ class DXFHatchEntity : public DXFBasicEntity
 		~DXFHatchEntity();
 
 	protected :
-		
+
 		virtual void EvaluateGroup( DXFGroupReader & rDGR );
 };
 

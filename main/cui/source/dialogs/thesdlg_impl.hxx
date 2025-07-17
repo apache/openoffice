@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -78,7 +78,7 @@ public:
     // ComboBox
     virtual void        Modify();
 };
-    
+
 // class ReplaceEdit_Impl --------------------------------------------------
 
 class ReplaceEdit_Impl : public Edit
@@ -100,7 +100,7 @@ public:
     virtual void        SetText( const XubString& rStr );
     virtual void        SetText( const XubString& rStr, const Selection& rNewSelection );
 };
-    
+
 // class ThesaurusAlternativesCtrl_Impl ----------------------------------
 
 class AlternativesExtraData
@@ -115,7 +115,7 @@ public:
 		bHeader(bIsHeader)
 		{
 		}
-	
+
     bool  IsHeader() const          { return bHeader; }
 	const String& GetText() const   { return sText; }
 };
@@ -133,7 +133,7 @@ public:
 };
 
 
-class ThesaurusAlternativesCtrl_Impl : 
+class ThesaurusAlternativesCtrl_Impl :
     public SvxCheckListBox
 {
     SvxThesaurusDialog_Impl &   m_rDialogImpl;
@@ -191,7 +191,7 @@ struct SvxThesaurusDialog_Impl
     std::stack< OUString >  aLookUpHistory;
     bool                    m_bWordFound;
 
-    
+
     // Handler
     DECL_LINK( LeftBtnHdl_Impl, Button * );
     DECL_LINK( LanguageHdl_Impl, MenuButton * );
@@ -202,14 +202,14 @@ struct SvxThesaurusDialog_Impl
 
     DECL_STATIC_LINK( SvxThesaurusDialog_Impl, SelectFirstHdl_Impl, SvxCheckListBox * );
     DECL_STATIC_LINK( SvxThesaurusDialog_Impl, VendorImageInitHdl, SvxThesaurusDialog_Impl * );
-    
-    
+
+
     SvxThesaurusDialog_Impl( SvxThesaurusDialog * pDialog );
     ~SvxThesaurusDialog_Impl();
 
-    uno::Sequence< uno::Reference< linguistic2::XMeaning > > SAL_CALL 
+    uno::Sequence< uno::Reference< linguistic2::XMeaning > > SAL_CALL
             queryMeanings_Impl( ::rtl::OUString& rTerm, const lang::Locale& rLocale, const beans::PropertyValues& rProperties ) throw(lang::IllegalArgumentException, uno::RuntimeException);
-    
+
     bool    UpdateAlternativesBox_Impl();
     void    UpdateVendorImage();
     void    LookUp( const String &rText );

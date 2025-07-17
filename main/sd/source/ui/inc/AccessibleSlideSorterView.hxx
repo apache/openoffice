@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -50,7 +50,7 @@ namespace accessibility {
 
 class AccessibleSlideSorterObject;
 
-typedef ::cppu::WeakComponentImplHelper6< 
+typedef ::cppu::WeakComponentImplHelper6<
     ::com::sun::star::accessibility::XAccessible,
     ::com::sun::star::accessibility::XAccessibleEventBroadcaster,
     ::com::sun::star::accessibility::XAccessibleContext,
@@ -72,7 +72,7 @@ public:
         ::sd::slidesorter::SlideSorter& rSlideSorter,
 	    const ::com::sun::star::uno::Reference< ::com::sun::star::accessibility::XAccessible> & rxParent,
         ::Window* pParentWindow);
-    
+
     virtual ~AccessibleSlideSorterView (void);
 
     /** This method acts like a dispose call.  It sends a disposing to all
@@ -92,7 +92,7 @@ public:
             Index of the child for which to return the implementation object.
     */
     AccessibleSlideSorterObject* GetAccessibleChildImplementation (sal_Int32 nIndex);
-    
+
     //===== XAccessible =======================================================
 
     virtual ::com::sun::star::uno::Reference<
@@ -100,14 +100,14 @@ public:
         getAccessibleContext (void)
         throw (::com::sun::star::uno::RuntimeException);
 
-    
+
     //===== XAccessibleEventBroadcaster =======================================
     virtual void SAL_CALL
         addEventListener(
             const ::com::sun::star::uno::Reference<
             ::com::sun::star::accessibility::XAccessibleEventListener >& rxListener)
         throw (::com::sun::star::uno::RuntimeException);
-    
+
     virtual void SAL_CALL
         removeEventListener(
             const ::com::sun::star::uno::Reference<
@@ -116,7 +116,7 @@ public:
 
 	using cppu::WeakComponentImplHelperBase::addEventListener;
 	using cppu::WeakComponentImplHelperBase::removeEventListener;
-    
+
 	//=====  XAccessibleContext  ==============================================
 
     ///	Return the number of currently visible children.
@@ -180,15 +180,15 @@ public:
         inside this object.
     */
     virtual sal_Bool SAL_CALL containsPoint (
-        const ::com::sun::star::awt::Point& aPoint) 
+        const ::com::sun::star::awt::Point& aPoint)
         throw (::com::sun::star::uno::RuntimeException);
 
     /** The default implementation returns an empty reference.
     */
-    virtual ::com::sun::star::uno::Reference< 
-        ::com::sun::star::accessibility::XAccessible > SAL_CALL 
+    virtual ::com::sun::star::uno::Reference<
+        ::com::sun::star::accessibility::XAccessible > SAL_CALL
         getAccessibleAtPoint (
-            const ::com::sun::star::awt::Point& aPoint) 
+            const ::com::sun::star::awt::Point& aPoint)
         throw (::com::sun::star::uno::RuntimeException);
 
     /** The default implementation returns an empty rectangle.
@@ -199,73 +199,73 @@ public:
     /** The default implementation uses the result of
         <member>getBounds</member> to determine the location.
     */
-    virtual ::com::sun::star::awt::Point SAL_CALL getLocation (void) 
+    virtual ::com::sun::star::awt::Point SAL_CALL getLocation (void)
         throw (::com::sun::star::uno::RuntimeException);
 
     /** The default implementation returns an empty position, i.e. the
     * result of the default constructor of <type>com::sun::star::awt::Point</type>.
     */
-    virtual ::com::sun::star::awt::Point SAL_CALL getLocationOnScreen (void) 
+    virtual ::com::sun::star::awt::Point SAL_CALL getLocationOnScreen (void)
         throw (::com::sun::star::uno::RuntimeException);
 
     /** The default implementation uses the result of
         <member>getBounds</member> to determine the size.
     */
-    virtual ::com::sun::star::awt::Size SAL_CALL getSize (void) 
+    virtual ::com::sun::star::awt::Size SAL_CALL getSize (void)
         throw (::com::sun::star::uno::RuntimeException);
 
     /** The default implementation does nothing.
     */
-    virtual void SAL_CALL grabFocus (void) 
+    virtual void SAL_CALL grabFocus (void)
         throw (::com::sun::star::uno::RuntimeException);
 
     /** Returns black as the default foreground color.
     */
-    virtual sal_Int32 SAL_CALL getForeground (void) 
+    virtual sal_Int32 SAL_CALL getForeground (void)
         throw (::com::sun::star::uno::RuntimeException);
 
     /** Returns white as the default background color.
     */
-    virtual sal_Int32 SAL_CALL getBackground (void) 
+    virtual sal_Int32 SAL_CALL getBackground (void)
         throw (::com::sun::star::uno::RuntimeException);
 
-    
+
     //===== XAccessibleSelection ==============================================
 
     virtual void SAL_CALL
         selectAccessibleChild (sal_Int32 nChildIndex)
         throw (::com::sun::star::lang::IndexOutOfBoundsException,
             ::com::sun::star::uno::RuntimeException);
-    
+
     virtual sal_Bool SAL_CALL
         isAccessibleChildSelected( sal_Int32 nChildIndex )
         throw (::com::sun::star::lang::IndexOutOfBoundsException,
             ::com::sun::star::uno::RuntimeException);
-    
+
     virtual void SAL_CALL
         clearAccessibleSelection(  )
         throw (::com::sun::star::uno::RuntimeException);
-    
+
     virtual void SAL_CALL
         selectAllAccessibleChildren(  )
         throw (::com::sun::star::uno::RuntimeException);
-    
+
     virtual sal_Int32 SAL_CALL
         getSelectedAccessibleChildCount(  )
         throw (::com::sun::star::uno::RuntimeException);
-    
+
     virtual ::com::sun::star::uno::Reference<
         ::com::sun::star::accessibility::XAccessible > SAL_CALL
         getSelectedAccessibleChild( sal_Int32 nSelectedChildIndex )
         throw (::com::sun::star::lang::IndexOutOfBoundsException,
             ::com::sun::star::uno::RuntimeException);
-    
+
     virtual void SAL_CALL
         deselectAccessibleChild( sal_Int32 nSelectedChildIndex )
         throw (::com::sun::star::lang::IndexOutOfBoundsException,
             ::com::sun::star::uno::RuntimeException);
 
-    
+
 	//=====  XServiceInfo  ====================================================
 
     /**	Returns an identifier for the implementation of this object.
@@ -309,7 +309,7 @@ private:
         throw (::com::sun::star::lang::DisposedException);
 
     /** Check whether or not the object has been disposed (or is in the
-        state of being disposed). 
+        state of being disposed).
 
         @return sal_True, if the object is disposed or in the course
         of being disposed. Otherwise, sal_False is returned.

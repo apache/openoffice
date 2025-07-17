@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -51,7 +51,7 @@
  *        C3 - CRC-32 of the array of encoding numbers used to generate the subset
  *
  */
- 
+
 
 #ifndef __SUBFONT_H
 #define __SUBFONT_H
@@ -70,7 +70,7 @@
 
 namespace vcl
 {
-    
+
 /*@{*/
     typedef sal_Int16       F2Dot14;            /**< fixed: 2.14 */
     typedef sal_Int32       F16Dot16;           /**< fixed: 16.16 */
@@ -163,8 +163,8 @@ namespace vcl
     };
 #endif
 
-    
-    
+
+
 
 /** Structure used by GetTTSimpleGlyphMetrics() and GetTTSimpleCharMetrics() functions */
     typedef struct {
@@ -277,7 +277,7 @@ namespace vcl
 
 
 /**
- * TrueTypeFont constructor. 
+ * TrueTypeFont constructor.
  * The font file has to be provided as a memory buffer and length
  * @param  facenum - logical font number within a TTC file. This value is ignored
  *                   for TrueType fonts
@@ -287,7 +287,7 @@ namespace vcl
     int VCL_DLLPUBLIC OpenTTFontBuffer(void* pBuffer, sal_uInt32 nLen, sal_uInt32 facenum, TrueTypeFont** ttf); /*FOLD01*/
 #if !defined(WIN32) && !defined(OS2)
 /**
- * TrueTypeFont constructor. 
+ * TrueTypeFont constructor.
  * Reads the font file and allocates the memory for the structure.
  * on WIN32 the font has to be provided as a memory buffer and length
  * @param  facenum - logical font number within a TTC file. This value is ignored
@@ -558,23 +558,23 @@ namespace vcl
  * Returns nonzero if font is a symbol encoded font
  */
     int CheckSymbolEncoding(TrueTypeFont* ttf);
-    
+
 /**
  * returns the number of glyphs in a font
  */
  int GetTTGlyphCount( TrueTypeFont* ttf );
- 
+
 /**
  * provide access to the raw data of a SFNT-container's subtable
  */
  bool GetSfntTable( TrueTypeFont* ttf, int nSubtableIndex,
  	const sal_uInt8** ppRawBytes, int* pRawLength );
-    
+
 /*- private definitions */ /*FOLD00*/
 
     struct _TrueTypeFont {
         sal_uInt32 tag;
-    
+
         char        *fname;
         sal_Int32   fsize;
         sal_uInt8   *ptr;

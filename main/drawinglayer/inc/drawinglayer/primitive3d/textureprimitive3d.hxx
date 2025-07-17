@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -59,9 +59,9 @@ namespace drawinglayer
 		public:
             /// constructor
 			TexturePrimitive3D(
-				const Primitive3DSequence& rChildren, 
-				const basegfx::B2DVector& rTextureSize, 
-				bool bModulate, 
+				const Primitive3DSequence& rChildren,
+				const basegfx::B2DVector& rTextureSize,
+				bool bModulate,
 				bool bFilter);
 
 			/// data read access
@@ -96,7 +96,7 @@ namespace drawinglayer
 		public:
             /// constructor
 			UnifiedTransparenceTexturePrimitive3D(
-				double fTransparence, 
+				double fTransparence,
 				const Primitive3DSequence& rChildren);
 
 			/// data read access
@@ -125,8 +125,8 @@ namespace drawinglayer
 	{
         /** GradientTexturePrimitive3D class
 
-            This 3D primitive expands TexturePrimitive3D to a gradient texture 
-            definition. All 3D primitives embedded here will be shown with the 
+            This 3D primitive expands TexturePrimitive3D to a gradient texture
+            definition. All 3D primitives embedded here will be shown with the
             defined gradient.
          */
 		class DRAWINGLAYER_DLLPUBLIC GradientTexturePrimitive3D : public TexturePrimitive3D
@@ -138,10 +138,10 @@ namespace drawinglayer
 		public:
             /// constructor
 			GradientTexturePrimitive3D(
-				const attribute::FillGradientAttribute& rGradient, 
-				const Primitive3DSequence& rChildren, 
-				const basegfx::B2DVector& rTextureSize, 
-				bool bModulate, 
+				const attribute::FillGradientAttribute& rGradient,
+				const Primitive3DSequence& rChildren,
+				const basegfx::B2DVector& rTextureSize,
+				bool bModulate,
 				bool bFilter);
 
 			/// data read access
@@ -164,8 +164,8 @@ namespace drawinglayer
 	{
         /** BitmapTexturePrimitive3D class
 
-            This 3D primitive expands TexturePrimitive3D to a bitmap texture 
-            definition. All 3D primitives embedded here will be shown with the 
+            This 3D primitive expands TexturePrimitive3D to a bitmap texture
+            definition. All 3D primitives embedded here will be shown with the
             defined bitmap (maybe tiled if defined).
          */
 		class DRAWINGLAYER_DLLPUBLIC BitmapTexturePrimitive3D : public TexturePrimitive3D
@@ -177,10 +177,10 @@ namespace drawinglayer
 		public:
             /// constructor
 			BitmapTexturePrimitive3D(
-				const attribute::FillGraphicAttribute& rFillGraphicAttribute, 
-				const Primitive3DSequence& rChildren, 
-				const basegfx::B2DVector& rTextureSize, 
-				bool bModulate, 
+				const attribute::FillGraphicAttribute& rFillGraphicAttribute,
+				const Primitive3DSequence& rChildren,
+				const basegfx::B2DVector& rTextureSize,
+				bool bModulate,
 				bool bFilter);
 
 			/// data read access
@@ -203,9 +203,9 @@ namespace drawinglayer
 	{
         /** TransparenceTexturePrimitive3D class
 
-            This 3D primitive expands TexturePrimitive3D to a transparence texture 
+            This 3D primitive expands TexturePrimitive3D to a transparence texture
             definition. For transparence definition, a gradient is used. The values in
-            that gradient will be interpreted as luminance Transparence-Values. All 3D 
+            that gradient will be interpreted as luminance Transparence-Values. All 3D
             primitives embedded here will be shown with the defined transparence.
          */
 		class DRAWINGLAYER_DLLPUBLIC TransparenceTexturePrimitive3D : public GradientTexturePrimitive3D
@@ -213,8 +213,8 @@ namespace drawinglayer
 		public:
             /// constructor
 			TransparenceTexturePrimitive3D(
-				const attribute::FillGradientAttribute& rGradient, 
-				const Primitive3DSequence& rChildren, 
+				const attribute::FillGradientAttribute& rGradient,
+				const Primitive3DSequence& rChildren,
 				const basegfx::B2DVector& rTextureSize);
 
 			/// compare operator

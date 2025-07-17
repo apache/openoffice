@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -86,7 +86,7 @@ struct CreateElement
 {
     ResourceType_t m_nResource;
     Id m_nId;
-    
+
     CreateElement(ResourceType_t nResource, Id nId);
     CreateElement();
 };
@@ -104,7 +104,7 @@ typedef hash_map<Id, TokenToIdMapPointer> TokenToIdsMap;
 class OOXMLFactory_ns {
 public:
     typedef boost::shared_ptr<OOXMLFactory_ns> Pointer_t;
-    
+
     virtual void startAction(OOXMLFastContextHandler * pHandler);
     virtual void charactersAction(OOXMLFastContextHandler * pHandler, const ::rtl::OUString & rString);
     virtual void endAction(OOXMLFastContextHandler * pHandler);
@@ -113,7 +113,7 @@ public:
 #ifdef DEBUG_FACTORY
     virtual string getName() const;
 #endif
-        
+
     AttributeToResourceMapPointer getAttributeToResourceMap(Id nId);
     ListValueMapPointer getListValueMap(Id nId);
     CreateElementMapPointer getCreateElementMap(Id nId);
@@ -121,7 +121,7 @@ public:
 
 protected:
     virtual ~OOXMLFactory_ns();
-    
+
     AttributesMap m_AttributesMap;
     ListValuesMap m_ListValuesMap;
     CreateElementsMap m_CreateElementsMap;
@@ -137,35 +137,35 @@ class OOXMLFactory
 {
 public:
     typedef boost::shared_ptr<OOXMLFactory> Pointer_t;
-    
+
     static Pointer_t getInstance();
-    
+
     uno::Reference< xml::sax::XFastContextHandler> createFastChildContext
     (OOXMLFastContextHandler * pHandler, sal_Int32 Element);
-    
+
     uno::Reference< xml::sax::XFastContextHandler> createFastChildContextFromStart
     (OOXMLFastContextHandler * pHandler, sal_Int32 Element);
 
-    void attributes(OOXMLFastContextHandler * pHandler, 
+    void attributes(OOXMLFastContextHandler * pHandler,
                     const uno::Reference< xml::sax::XFastAttributeList > & Attribs);
-                    
+
     void characters(OOXMLFastContextHandler * pHandler,
                     const ::rtl::OUString & rString);
-                    
+
     void startAction(OOXMLFastContextHandler * pHandler, sal_Int32 nToken);
     void endAction(OOXMLFastContextHandler * pHandler, sal_Int32 nToken);
-    
+
     virtual ~OOXMLFactory();
-    
+
 private:
     static Pointer_t m_Instance;
-    
+
     OOXMLFactory();
     OOXMLFactory_ns::Pointer_t getFactoryForNamespace(Id id);
-    
-    uno::Reference< xml::sax::XFastContextHandler> 
+
+    uno::Reference< xml::sax::XFastContextHandler>
     createFastChildContextFromFactory(OOXMLFastContextHandler * pHandler,
-                                      OOXMLFactory_ns::Pointer_t pFactory, 
+                                      OOXMLFactory_ns::Pointer_t pFactory,
                                       sal_Int32 Element);
 };
 

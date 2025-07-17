@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 // RegistryException.h: Schnittstelle für die Klasse RegistryException.
@@ -37,9 +37,9 @@ class RegistryException : public std::exception
 public:
 
 	RegistryException(long ErrorCode);
-	
+
 	virtual ~RegistryException() throw();
-		
+
 	/**
 		@descr	Returns a string that describes the error if
 				available, else NULL will be returned. The
@@ -47,13 +47,13 @@ public:
 				has to copy it if he needs the string further.
 	*/
 	virtual const char* what() const throw();
-	
+
 	/**
 		@descr	Returns the error code.
 	*/
-	
+
 	long GetErrorCode() const;
-	
+
 private:
     long    m_ErrorCode;
 	void*  m_ErrorMsg;
@@ -71,7 +71,7 @@ public:
 };
 
 //#######################################
-// Thrown when trying to write to a readonly registry key 
+// Thrown when trying to write to a readonly registry key
 //#######################################
 
 class RegistryNoWriteAccessException : public RegistryException
@@ -81,7 +81,7 @@ public:
 };
 
 //#######################################
-// Thrown when trying to access an registry key, with improper 
+// Thrown when trying to access an registry key, with improper
 // access rights
 //#######################################
 
@@ -122,4 +122,4 @@ public:
 	RegistryInvalidOperationException(long ErrorCode);
 };
 
-#endif 
+#endif

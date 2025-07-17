@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -93,8 +93,8 @@ class SvpSalInstance : public SalInstance
         const SalFrame*		m_pFrame;
         void*			    m_pData;
         sal_uInt16		   m_nEvent;
-        
-        SalUserEvent( const SalFrame* pFrame, void* pData, sal_uInt16 nEvent = SALEVENT_USEREVENT ) 
+
+        SalUserEvent( const SalFrame* pFrame, void* pData, sal_uInt16 nEvent = SALEVENT_USEREVENT )
                 : m_pFrame( pFrame ),
                   m_pData( pData ),
                   m_nEvent( nEvent )
@@ -103,7 +103,7 @@ class SvpSalInstance : public SalInstance
 
     oslMutex        m_aEventGuard;
     std::list< SalUserEvent > m_aUserEvents;
-    
+
     std::list< SalFrame* > m_aFrames;
 
     bool isFrameAlive( const SalFrame* pFrame ) const;
@@ -113,18 +113,18 @@ public:
 
     SvpSalInstance();
     virtual ~SvpSalInstance();
-    
+
     void PostEvent( const SalFrame* pFrame, void* pData, sal_uInt16 nEvent );
     void CancelEvent( const SalFrame* pFrame, void* pData, sal_uInt16 nEvent );
-    
+
     void StartTimer( sal_uLong nMS );
     void StopTimer();
     void Wakeup();
-    
+
     void registerFrame( SalFrame* pFrame ) { m_aFrames.push_back( pFrame ); }
     void deregisterFrame( SalFrame* pFrame );
     const std::list< SalFrame* >& getFrames() const { return m_aFrames; }
-    
+
     bool            CheckTimeout( bool bExecuteTimers = true );
 
     // Frame

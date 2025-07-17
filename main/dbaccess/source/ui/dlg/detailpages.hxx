@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -33,7 +33,7 @@
 #ifndef CHARSETLISTBOX_HXX
 #include "charsetlistbox.hxx"
 #endif
-#ifndef _SV_FIELD_HXX 
+#ifndef _SV_FIELD_HXX
 #include <vcl/field.hxx>
 #endif
 #ifndef _SV_FIXED_HXX
@@ -98,7 +98,7 @@ namespace dbaui
 
 		OCommonBehaviourTabPage(Window* pParent, sal_uInt16 nResId, const SfxItemSet& _rCoreAttrs, sal_uInt32 nControlFlags,bool _bFreeResource = true);
 	protected:
-		
+
 			// nControlFlags ist eine Kombination der CBTP_xxx-Konstanten
 		virtual ~OCommonBehaviourTabPage();
 
@@ -131,7 +131,7 @@ namespace dbaui
 		String				m_sDsn;
 
 	protected:
-		
+
 		virtual ~ODbaseDetailsPage();
 
 	protected:
@@ -212,12 +212,12 @@ namespace dbaui
 	public:
 		OGeneralSpecialJDBCDetailsPage(   Window* pParent
 										, sal_uInt16 _nResId
-										, const SfxItemSet& _rCoreAttrs 
+										, const SfxItemSet& _rCoreAttrs
                                         , sal_uInt16 _nPortId
 										);
 
 	protected:
-		
+
 
 		virtual	sal_Bool FillItemSet( SfxItemSet& _rCoreAttrs );
 		virtual void implInitControls(const SfxItemSet& _rSet, sal_Bool _bSaveValue);
@@ -226,7 +226,7 @@ namespace dbaui
 
 		DECL_LINK(OnTestJavaClickHdl,PushButton*);
 		DECL_LINK(OnEditModified,Edit*);
-	
+
 		FixedLine			m_aFL_1;
 		FixedText			m_aFTHostname;
 		Edit				m_aEDHostname;

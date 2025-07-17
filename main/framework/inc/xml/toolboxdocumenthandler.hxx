@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -177,7 +177,7 @@ class FWE_DLLPUBLIC OWriteToolBoxDocumentHandler : private ThreadHelpBase   // S
         void WriteToolBoxDocument() throw
 			( ::com::sun::star::xml::sax::SAXException,
 			  ::com::sun::star::uno::RuntimeException );
-	
+
 	protected:
         virtual void WriteToolBoxItem( const rtl::OUString& aCommandURL, const rtl::OUString& aLabel, const rtl::OUString& aHelpURL, const rtl::OUString& aTooltip, sal_Int16 nStyle,
                                        sal_Int16 nWidth, sal_Bool bVisible ) throw

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -44,7 +44,7 @@ namespace slideshow
 			represented in a tree structure, with DocTreeNodes as the
 			nodes. Instances of this class can be queried from the
 			DocTreeNodeSupplier interface.
-            
+
 			This class has nothing to do with the Draw document tree.
          */
         class DocTreeNode
@@ -78,7 +78,7 @@ namespace slideshow
 
             /** Create empty tree node
              */
-            DocTreeNode() : 
+            DocTreeNode() :
                 mnStartIndex(-1),
                 mnEndIndex(-1),
                 meType(NODETYPE_INVALID)
@@ -87,7 +87,7 @@ namespace slideshow
 
             /** Create tree node from start and end index.
 
-            	Create a tree node for the given range and type. 
+            	Create a tree node for the given range and type.
 
                 @param nStartIndex
                 Start index
@@ -98,9 +98,9 @@ namespace slideshow
                 @param eType
                 Node type
              */
-            DocTreeNode( sal_Int32 nStartIndex, 
-                         sal_Int32 nEndIndex, 
-                         NodeType  eType ) : 
+            DocTreeNode( sal_Int32 nStartIndex,
+                         sal_Int32 nEndIndex,
+                         NodeType  eType ) :
                 mnStartIndex(nStartIndex),
                 mnEndIndex(nEndIndex),
                 meType(eType)

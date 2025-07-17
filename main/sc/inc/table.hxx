@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -307,7 +307,7 @@ public:
 	void		PutCell( SCCOL nCol, SCROW nRow, ScBaseCell* pCell );
 	void		PutCell(SCCOL nCol, SCROW nRow, sal_uLong nFormatIndex, ScBaseCell* pCell);
 				//	sal_True = Zahlformat gesetzt
-	sal_Bool		SetString( SCCOL nCol, SCROW nRow, SCTAB nTab, const String& rString, 
+	sal_Bool		SetString( SCCOL nCol, SCROW nRow, SCTAB nTab, const String& rString,
                            SvNumberFormatter* pFormatter = NULL, bool bDetectNumberFormat = true );
 	void		SetValue( SCCOL nCol, SCROW nRow, const double& rVal );
 	void 		SetError( SCCOL nCol, SCROW nRow, sal_uInt16 nError);
@@ -320,7 +320,7 @@ public:
 	void		GetInputString( SCCOL nCol, SCROW nRow, String& rString );
 	double		GetValue( const ScAddress& rPos ) const
 					{
-                        return ValidColRow(rPos.Col(),rPos.Row()) ? 
+                        return ValidColRow(rPos.Col(),rPos.Row()) ?
                             aCol[rPos.Col()].GetValue( rPos.Row() ) :
                             0.0;
                     }
@@ -330,14 +330,14 @@ public:
 
 	CellType	GetCellType( const ScAddress& rPos ) const
 					{
-                        return ValidColRow(rPos.Col(),rPos.Row()) ? 
-                            aCol[rPos.Col()].GetCellType( rPos.Row() ) : 
+                        return ValidColRow(rPos.Col(),rPos.Row()) ?
+                            aCol[rPos.Col()].GetCellType( rPos.Row() ) :
                             CELLTYPE_NONE;
                     }
 	CellType	GetCellType( SCCOL nCol, SCROW nRow ) const;
 	ScBaseCell*	GetCell( const ScAddress& rPos ) const
 					{
-                        return ValidColRow(rPos.Col(),rPos.Row()) ? 
+                        return ValidColRow(rPos.Col(),rPos.Row()) ?
                             aCol[rPos.Col()].GetCell( rPos.Row() ) :
                             NULL;
                     }
@@ -371,7 +371,7 @@ public:
 	void		DeleteArea(SCCOL nCol1, SCROW nRow1, SCCOL nCol2, SCROW nRow2, sal_uInt16 nDelFlag);
 	void		CopyToClip(SCCOL nCol1, SCROW nRow1, SCCOL nCol2, SCROW nRow2, ScTable* pTable,
                             sal_Bool bKeepScenarioFlags, sal_Bool bCloneNoteCaptions);
-    void        CopyToClip(const ScRangeList& rRanges, ScTable* pTable, 
+    void        CopyToClip(const ScRangeList& rRanges, ScTable* pTable,
                            bool bKeepScenarioFlags, bool bCloneNoteCaptions);
 	void		CopyFromClip(SCCOL nCol1, SCROW nRow1, SCCOL nCol2, SCROW nRow2, SCsCOL nDx, SCsROW nDy,
 								sal_uInt16 nInsFlag, sal_Bool bAsLink, sal_Bool bSkipAttrForEmpty, ScTable* pTable);
@@ -454,7 +454,7 @@ public:
 
 	sal_uInt16		GetErrCode( const ScAddress& rPos ) const
 					{
-                        return ValidColRow(rPos.Col(),rPos.Row()) ? 
+                        return ValidColRow(rPos.Col(),rPos.Row()) ?
                             aCol[rPos.Col()].GetErrCode( rPos.Row() ) :
                             0;
                     }
@@ -533,7 +533,7 @@ public:
 
 	sal_uLong					GetNumberFormat( const ScAddress& rPos ) const
 								{
-                                    return ValidColRow(rPos.Col(),rPos.Row()) ? 
+                                    return ValidColRow(rPos.Col(),rPos.Row()) ?
                                         aCol[rPos.Col()].GetNumberFormat( rPos.Row() ) :
                                         0;
                                 }
@@ -554,7 +554,7 @@ public:
 	void		ApplyAttr( SCCOL nCol, SCROW nRow, const SfxPoolItem& rAttr );
 	void		ApplyPattern( SCCOL nCol, SCROW nRow, const ScPatternAttr& rAttr );
 	void		ApplyPatternArea( SCCOL nStartCol, SCROW nStartRow, SCCOL nEndCol, SCROW nEndRow, const ScPatternAttr& rAttr );
-	void		ApplyPooledPatternArea( SCCOL nStartCol, SCROW nStartRow, SCCOL nEndCol, SCROW nEndRow, const ScPatternAttr& rPooledAttr, const ScPatternAttr& rAttr ); 
+	void		ApplyPooledPatternArea( SCCOL nStartCol, SCROW nStartRow, SCCOL nEndCol, SCROW nEndRow, const ScPatternAttr& rPooledAttr, const ScPatternAttr& rAttr );
 
 	void		SetPattern( const ScAddress& rPos, const ScPatternAttr& rAttr, sal_Bool bPutToPool = sal_False )
 					{
@@ -636,12 +636,12 @@ public:
 	sal_Bool		SetRowHeightRange( SCROW nStartRow, SCROW nEndRow, sal_uInt16 nNewHeight,
 									double nPPTX, double nPPTY );
 
-    /** 
-     * Set specified row height to specified ranges.  Don't check for drawing 
-     * objects etc.  Just set the row height.  Nothing else. 
-     *  
-     * Note that setting a new row height via this function will not 
-     * invalidate page breaks. 
+    /**
+     * Set specified row height to specified ranges.  Don't check for drawing
+     * objects etc.  Just set the row height.  Nothing else.
+     *
+     * Note that setting a new row height via this function will not
+     * invalidate page breaks.
      */
     void        SetRowHeightOnly( SCROW nStartRow, SCROW nEndRow, sal_uInt16 nNewHeight );
 
@@ -655,12 +655,12 @@ public:
 	sal_uLong		GetColOffset( SCCOL nCol ) const;
 	sal_uLong		GetRowOffset( SCROW nRow ) const;
 
-    /** 
-     * Get the last row such that the height of row 0 to the end row is as 
+    /**
+     * Get the last row such that the height of row 0 to the end row is as
      * high as possible without exceeding the specified height value.
      *
      * @param nHeight maximum desired height
-     * 
+     *
      * @return SCROW last row of the range within specified height.
      */
     SCROW       GetRowForHeight(sal_uLong nHeight) const;
@@ -691,7 +691,7 @@ public:
                 /// @return  the index of the last changed row (flags and row height, auto pagebreak is ignored).
     SCROW      GetLastChangedRow() const;
 
-	sal_Bool		IsDataFiltered() const;	
+	sal_Bool		IsDataFiltered() const;
 	sal_uInt8		GetColFlags( SCCOL nCol ) const;
 	sal_uInt8		GetRowFlags( SCROW nRow ) const;
 
@@ -714,14 +714,14 @@ public:
     bool        HasRowManualBreak(SCROW nRow) const;
     bool        HasColManualBreak(SCCOL nCol) const;
 
-    /** 
-     * Get the row position of the next manual break that occurs at or below 
-     * specified row.  When no more manual breaks are present at or below 
-     * the specified row, -1 is returned. 
-     *  
-     * @param nRow row at which the search begins. 
-     *  
-     * @return SCROW next row position with manual page break, or -1 if no 
+    /**
+     * Get the row position of the next manual break that occurs at or below
+     * specified row.  When no more manual breaks are present at or below
+     * the specified row, -1 is returned.
+     *
+     * @param nRow row at which the search begins.
+     *
+     * @return SCROW next row position with manual page break, or -1 if no
      *         more manual breaks are present.
      */
     SCROW       GetNextManualBreak(SCROW nRow) const;
@@ -892,13 +892,13 @@ private:
     void        InvalidateTextWidth( const ScAddress* pAdrFrom, const ScAddress* pAdrTo,
                                      sal_Bool bNumFormatChanged, sal_Bool bBroadcast );
 
-    /** 
-     * In case the cell text goes beyond the column width, move the max column 
+    /**
+     * In case the cell text goes beyond the column width, move the max column
      * position to the right.  This is called from ExtendPrintArea.
      */
     void        MaybeAddExtraColumn(SCCOL& rCol, SCROW nRow, OutputDevice* pDev, double nPPTX, double nPPTY);
 
-    /** 
+    /**
      * Use this to iterate through non-empty visible cells in a single column.
      */
     class VisibleDataCellIterator
@@ -909,26 +909,26 @@ private:
         explicit VisibleDataCellIterator(ScFlatBoolRowSegments& rRowSegs, ScColumn& rColumn);
         ~VisibleDataCellIterator();
 
-        /** 
+        /**
          * Set the start row position.  In case there is not visible data cell
-         * at the specified row position, it will move to the position of the 
-         * first visible data cell below that point. 
-         *  
+         * at the specified row position, it will move to the position of the
+         * first visible data cell below that point.
+         *
          * @return First visible data cell if found, or NULL otherwise.
-         */ 
+         */
         ScBaseCell* reset(SCROW nRow);
 
-        /** 
-         * Find the next visible data cell position. 
-         * 
+        /**
+         * Find the next visible data cell position.
+         *
          * @return Next visible data cell if found, or NULL otherwise.
          */
         ScBaseCell* next();
 
-        /** 
+        /**
          * Get the current row position.
-         * 
-         * @return Current row position, or ROW_NOT_FOUND if the iterator 
+         *
+         * @return Current row position, or ROW_NOT_FOUND if the iterator
          *         doesn't point to a valid data cell position.
          */
         SCROW getRow() const;

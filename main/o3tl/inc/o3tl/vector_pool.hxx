@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -31,14 +31,14 @@ namespace o3tl
 {
     namespace detail
     {
-        template<typename ValueType, class Container> class simple_pool_impl : 
+        template<typename ValueType, class Container> class simple_pool_impl :
             public Container
         {
             typedef typename Container::value_type value_type;
             std::ptrdiff_t mnFirstFreeIndex;
 
         public:
-            simple_pool_impl() : 
+            simple_pool_impl() :
                 mnFirstFreeIndex(-1)
             {}
 
@@ -95,7 +95,7 @@ namespace o3tl
                 {}
 
                 ValueType      value;
-                std::ptrdiff_t nextFree; 
+                std::ptrdiff_t nextFree;
             };
         };
     }
@@ -116,8 +116,8 @@ myPool[nIdx] = myVal;
 myPool.free(nIdx);
         </pre>
      */
-    template<typename ValueType> struct vector_pool : 
-        public detail::simple_pool_impl<ValueType, 
+    template<typename ValueType> struct vector_pool :
+        public detail::simple_pool_impl<ValueType,
                                        std::vector<typename detail::struct_from_value<ValueType>::type > >
     {};
 }

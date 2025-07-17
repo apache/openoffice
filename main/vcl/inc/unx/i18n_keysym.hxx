@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -26,10 +26,10 @@
 
 /*
  convert a keysym as defined in /usr/{X11R6|openwin}/include/X11/keysymdef.h
- to unicode 
+ to unicode
 
  supported charsets: (byte1 and byte2 are always 0x0)
- 
+
  	Latin-1 	Byte 3 = 0x00
  	Latin-2		Byte 3 = 0x01
  	Latin-3		Byte 3 = 0x02

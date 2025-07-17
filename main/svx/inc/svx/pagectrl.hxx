@@ -85,7 +85,7 @@ protected:
 
     //UUUU
     void drawFillAttributes(
-        const drawinglayer::attribute::SdrAllFillAttributesHelperPtr& rFillAttributes, 
+        const drawinglayer::attribute::SdrAllFillAttributesHelperPtr& rFillAttributes,
         const Rectangle& rPaintRange,
         const Rectangle& rDefineRange);
 
@@ -93,7 +93,7 @@ public:
     SvxPageWindow(Window* pParent,const ResId& rId);
     ~SvxPageWindow();
 
-    //UUUU 
+    //UUUU
     void setHeaderFillAttributes(const drawinglayer::attribute::SdrAllFillAttributesHelperPtr& rFillAttributes) { maHeaderFillAttributes = rFillAttributes; }
     void setFooterFillAttributes(const drawinglayer::attribute::SdrAllFillAttributesHelperPtr& rFillAttributes) { maFooterFillAttributes = rFillAttributes; }
     void setPageFillAttributes(const drawinglayer::attribute::SdrAllFillAttributesHelperPtr& rFillAttributes) { maPageFillAttributes = rFillAttributes; }

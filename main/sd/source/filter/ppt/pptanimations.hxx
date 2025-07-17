@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -35,7 +35,7 @@
 class SvStream;
 
 namespace ppt
-{ 
+{
 
 // old transition types
 #define PPT_TRANSITION_TYPE_NONE			0
@@ -65,7 +65,7 @@ namespace ppt
 
 
 
-// atoms 
+// atoms
 #define DFF_msofbtAnimEvent							0xf125
 #define DFF_msofbtAnimNode							0xf127
 #define DFF_msofbtAnimTrigger						0xf128
@@ -204,16 +204,16 @@ public:
 
 	/** see mso_Anim_Restart_? */
 	sal_Int32 mnRestart;
-	
+
 	/** see mso_Anim_Fill_? */
 	sal_Int32 mnFill;
-	
+
 	/** see mso_Anim_Behaviour_? */
 	sal_Int32 mnNodeType;
 
 	/** duration of this group in 1000th seconds */
 	sal_Int32 mnDuration;
-	
+
 	sal_Int32 mnU1, mnU3, mnU4;
 
 public:
@@ -222,7 +222,7 @@ public:
     friend SvStream& operator<<(SvStream& rOut, AnimationNode& rAtom);
 };
 
-static const ImplAttributeNameConversion gImplConversionList[] = 
+static const ImplAttributeNameConversion gImplConversionList[] =
 {
 	{ MS_PPT_X,				"ppt_x",						"X" },
 	{ MS_PPT_Y,				"ppt_y",						"Y" },
@@ -296,7 +296,7 @@ static const transition gTransitions[] =
 { "slide(fromTop)", ::com::sun::star::animations::TransitionType::SLIDEWIPE, ::com::sun::star::animations::TransitionSubType::FROMTOP, sal_True },
 { "slide(fromRight)", ::com::sun::star::animations::TransitionType::SLIDEWIPE, ::com::sun::star::animations::TransitionSubType::FROMRIGHT, sal_True },
 { "slide(fromLeft)", ::com::sun::star::animations::TransitionType::SLIDEWIPE, ::com::sun::star::animations::TransitionSubType::FROMLEFT, sal_True },
-{ "slide(fromBottom)", ::com::sun::star::animations::TransitionType::SLIDEWIPE, ::com::sun::star::animations::TransitionSubType::FROMBOTTOM, sal_True }, 
+{ "slide(fromBottom)", ::com::sun::star::animations::TransitionType::SLIDEWIPE, ::com::sun::star::animations::TransitionSubType::FROMBOTTOM, sal_True },
 { "dissolve", ::com::sun::star::animations::TransitionType::DISSOLVE, ::com::sun::star::animations::TransitionSubType::DEFAULT, sal_True },
 { "image", ::com::sun::star::animations::TransitionType::DISSOLVE, ::com::sun::star::animations::TransitionSubType::DEFAULT, sal_True }, // TODO
 { NULL, 0, 0, sal_False }

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -387,7 +387,7 @@ private:
     {
     public:
         ExternalRefListener(ScChart2DataSequence& rParent, ScDocument* pDoc);
-        virtual ~ExternalRefListener(); 
+        virtual ~ExternalRefListener();
         virtual void notify(sal_uInt16 nFileId, ScExternalRefManager::LinkUpdateType eType);
         void addFileId(sal_uInt16 nFileId);
         void removeFileId(sal_uInt16 nFileId);
@@ -402,9 +402,9 @@ private:
         ScDocument*                 mpDoc;
     };
 
-    /** 
-     * Build an internal data array to cache the data ranges, and other 
-     * information such as hidden values. 
+    /**
+     * Build an internal data array to cache the data ranges, and other
+     * information such as hidden values.
      */
     void BuildDataCache();
 
@@ -445,11 +445,11 @@ private:
 
     ::std::list<Item>           m_aDataArray;
 
-    /** 
-     * Cached data for getData.  We may also need to cache data for the 
-     * numerical and textural data series if they turn out to be bottlenecks 
+    /**
+     * Cached data for getData.  We may also need to cache data for the
+     * numerical and textural data series if they turn out to be bottlenecks
      * under certain scenarios.
-     */ 
+     */
     ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Any > m_aMixedDataCache;
 
     ::com::sun::star::uno::Sequence<sal_Int32>  m_aHiddenValues;

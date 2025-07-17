@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -361,9 +361,9 @@ public:
 
     /** Appends a zero terminated byte string.
         @param nLen
-               The previous length of the string, usually rString.Len(), but 
-               necessary as this may be called from within AppendCString() 
-               where rString is a temporary ByteString to be appended to 
+               The previous length of the string, usually rString.Len(), but
+               necessary as this may be called from within AppendCString()
+               where rString is a temporary ByteString to be appended to
                UniString. */
     static void         AppendCStringWithLen( SvStream& rStrm, ByteString& rString, sal_uInt32 nLen );
     /** Appends a zero terminated byte string. */
@@ -513,8 +513,8 @@ class ScFormatFilterPluginImpl : public ScFormatFilterPlugin {
     virtual FltError ScImportDif( SvStream&, ScDocument*, const ScAddress& rInsPos,
 				 const CharSet eSrc = RTL_TEXTENCODING_DONTKNOW, sal_uInt32 nDifOption = SC_DIFOPT_EXCEL );
     virtual FltError ScImportRTF( SvStream&, const String& rBaseURL, ScDocument*, ScRange& rRange );
-    virtual FltError ScImportHTML( SvStream&, const String& rBaseURL, ScDocument*, ScRange& rRange, 
-                                   double nOutputFactor = 1.0, sal_Bool bCalcWidthHeight = sal_True, 
+    virtual FltError ScImportHTML( SvStream&, const String& rBaseURL, ScDocument*, ScRange& rRange,
+                                   double nOutputFactor = 1.0, sal_Bool bCalcWidthHeight = sal_True,
                                    SvNumberFormatter* pFormatter = NULL, bool bConvertDate = true );
 
     virtual ScEEAbsImport *CreateRTFImport( ScDocument* pDoc, const ScRange& rRange );

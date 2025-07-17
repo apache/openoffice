@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -74,17 +74,17 @@ public:
 	sal_Bool bConsumedByField;
 	//Modify here for #119405, by easyfan, 2012-05-24
 	sal_Int32 mnStartCP;
-	sal_Int32 mnEndCP; 
+	sal_Int32 mnEndCP;
 	bool bIsParaEnd;
 	//End of modification, by easyfan
- 
+
 	SW_DLLPUBLIC SwFltStackEntry(const SwPosition & rStartPos, SfxPoolItem* pHt );
 	SW_DLLPUBLIC SwFltStackEntry(const SwFltStackEntry& rEntry);
 	SW_DLLPUBLIC ~SwFltStackEntry();
 
 	void SetStartPos(const SwPosition & rStartPos);
 	SW_DLLPUBLIC void SetEndPos(  const SwPosition & rEndPos);
-	SW_DLLPUBLIC sal_Bool MakeRegion(SwDoc* pDoc, SwPaM& rRegion, sal_Bool bCheck );    
+	SW_DLLPUBLIC sal_Bool MakeRegion(SwDoc* pDoc, SwPaM& rRegion, sal_Bool bCheck );
 	//Modify here for #119405, by easyfan, 2012-05-24
 	void SetStartCP(sal_Int32 nCP) {mnStartCP = nCP;}
 	void SetEndCP(sal_Int32 nCP) {mnEndCP = nCP;}
@@ -110,7 +110,7 @@ class SW_DLLPUBLIC SwFltControlStack
 //Modify for #119405 by chengjh, 2012-08-16
 private:
 	bool bHasSdOD;
-	bool bSdODChecked;	
+	bool bSdODChecked;
 //End
 
 protected:
@@ -183,7 +183,7 @@ public:
 	virtual int operator==(const SfxPoolItem&) const;
 	virtual SfxPoolItem* Clone(SfxItemPool* = 0) const;
     void SetFrmFmt(SwFrmFmt * _pFrmFmt);
-	const SwFrmFmt* GetFrmFmt() const; 
+	const SwFrmFmt* GetFrmFmt() const;
 		  SwFrmFmt* GetFrmFmt();
 };
 
@@ -246,7 +246,7 @@ private:
     bool mbIsTOCBookmark;
 
 public:
-    SwFltBookmark( const String& rNa, 
+    SwFltBookmark( const String& rNa,
                    const String& rVa,
                    long nHand,
                    const bool bIsTOCBookmark = false );

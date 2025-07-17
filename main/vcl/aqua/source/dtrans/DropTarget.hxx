@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -49,7 +49,7 @@
 class DropTarget;
 class AquaSalFrame;
 
-/* The functions declared in this protocol are actually 
+/* The functions declared in this protocol are actually
    declared in vcl/aqua/inc/salframe.h. Because we want
    to avoid importing VCL headers in UNO services and
    on the other hand want to avoid warnings caused by
@@ -81,8 +81,8 @@ class AquaSalFrame;
 
 
 class DropTarget: public cppu::BaseMutex,
-				  public cppu::WeakComponentImplHelper5< com::sun::star::lang::XInitialization, 
-														 com::sun::star::datatransfer::dnd::XDropTarget, 
+				  public cppu::WeakComponentImplHelper5< com::sun::star::lang::XInitialization,
+														 com::sun::star::datatransfer::dnd::XDropTarget,
 														 com::sun::star::datatransfer::dnd::XDropTargetDragContext,
 														 com::sun::star::datatransfer::dnd::XDropTargetDropContext,
 														 com::sun::star::lang::XServiceInfo >,
@@ -118,7 +118,7 @@ public:
   virtual void SAL_CALL acceptDrag(sal_Int8 dragOperation) throw(com::sun::star::uno::RuntimeException);
   virtual void SAL_CALL rejectDrag() throw(com::sun::star::uno::RuntimeException);
 
-  // XDropTargetDragContext 
+  // XDropTargetDragContext
   virtual void SAL_CALL acceptDrop(sal_Int8 dropOperation) throw (com::sun::star::uno::RuntimeException);
   virtual void SAL_CALL rejectDrop() throw (com::sun::star::uno::RuntimeException);
   virtual void SAL_CALL dropComplete(sal_Bool success) throw (com::sun::star::uno::RuntimeException);

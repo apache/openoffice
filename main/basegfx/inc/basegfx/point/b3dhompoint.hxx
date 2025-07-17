@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -47,7 +47,7 @@ namespace basegfx
 	protected:
 		/// This member contains the coordinate part of the point
 		::basegfx::B3DTuple					maTuple;
-	    
+
 		/// This Member holds the homogenous part of the point
 		double										mfW;
 
@@ -55,12 +55,12 @@ namespace basegfx
 
 			@return Returns true if this point has no homogenous part
 		*/
-		bool implIsHomogenized() const 
-		{ 
+		bool implIsHomogenized() const
+		{
 			const double fOne(1.0);
-			return ::basegfx::fTools::equal(mfW, fOne); 
+			return ::basegfx::fTools::equal(mfW, fOne);
 		}
-		
+
 		/**	Remove homogenous part of this Point
 
 			This method does necessary calculations to remove
@@ -85,12 +85,12 @@ namespace basegfx
 				((B3DHomPoint*)this)->implHomogenize();
 		}
 
-	public:					
+	public:
 		/**	Create a homogen point
 
         	The point is initialized to (0.0, 0.0, 0.0)
 		*/
-		B3DHomPoint() 
+		B3DHomPoint()
 		:	maTuple(),
 			mfW(1.0)
 		{}
@@ -100,16 +100,16 @@ namespace basegfx
 			@param fX
 			This parameter is used to initialize the X-coordinate
 			of the Point. The homogenous part is initialized to 1.0.
-			
+
 			@param fY
 			This parameter is used to initialize the Y-coordinate
 			of the Point. The homogenous part is initialized to 1.0.
-			
+
 			@param fZ
 			This parameter is used to initialize the Z-coordinate
 			of the Point. The homogenous part is initialized to 1.0.
 		*/
-		B3DHomPoint(double fX, double fY, double fZ) 
+		B3DHomPoint(double fX, double fY, double fZ)
 		:	maTuple(fX, fY, fZ),
 			mfW(1.0)
 		{}
@@ -117,10 +117,10 @@ namespace basegfx
 		/**	Create a copy of a 3D Point
 
 			@param rVec
-			The 3D point which will be copied. The homogenous part 
+			The 3D point which will be copied. The homogenous part
 			is initialized to 1.0.
 		*/
-		B3DHomPoint(const B3DPoint& rVec) 
+		B3DHomPoint(const B3DPoint& rVec)
 		:	maTuple(rVec),
 			mfW(1.0)
 		{}
@@ -128,22 +128,22 @@ namespace basegfx
 		/**	Create a copy of a homogen point
 
 			@param rVec
-			The homogen point which will be copied. The homogenous part 
+			The homogen point which will be copied. The homogenous part
 			is copied, too.
 		*/
-		B3DHomPoint(const B3DHomPoint& rVec) 
+		B3DHomPoint(const B3DHomPoint& rVec)
 		:	maTuple(rVec.maTuple.getX(), rVec.maTuple.getY(), rVec.maTuple.getZ()),
 			mfW(rVec.mfW)
 		{}
 
-		~B3DHomPoint() 
+		~B3DHomPoint()
 		{}
 
 		/**	get a 3D point from this homogenous point
 
 			This method normalizes this homogen point if necessary and
 			returns the corresponding 3D point for this homogen point.
-			
+
 			@attention Even when this method is const it may change all
 			members of this instance.
 		*/
@@ -157,42 +157,42 @@ namespace basegfx
 
 			This method normalizes this homogen point if necessary and
 			returns the corresponding X-coordinate for this homogen point.
-			
+
 			@attention Even when this method is const it may change all
 			members of this instance.
 		*/
 		double getX() const
-		{ 
+		{
 			implTestAndHomogenize();
-			return maTuple.getX(); 
+			return maTuple.getX();
 		}
 
 		/**	get Y-coordinate
 
 			This method normalizes this homogen point if necessary and
 			returns the corresponding Y-coordinate for this homogen point.
-			
+
 			@attention Even when this method is const it may change all
 			members of this instance.
 		*/
 		double getY() const
-		{ 
+		{
 			implTestAndHomogenize();
-			return maTuple.getY(); 
+			return maTuple.getY();
 		}
 
 		/**	get Z-coordinate
 
 			This method normalizes this homogen point if necessary and
 			returns the corresponding Z-coordinate for this homogen point.
-			
+
 			@attention Even when this method is const it may change all
 			members of this instance.
 		*/
 		double getZ() const
-		{ 
+		{
 			implTestAndHomogenize();
-			return maTuple.getY(); 
+			return maTuple.getY();
 		}
 
 		/**	Set X-coordinate of the homogen point.
@@ -237,8 +237,8 @@ namespace basegfx
 		// operators
 		//////////////////////////////////////////////////////////////////////
 
-		B3DHomPoint& operator+=( const B3DHomPoint& rPnt ) 
-		{ 
+		B3DHomPoint& operator+=( const B3DHomPoint& rPnt )
+		{
 			maTuple.setX(getX() * rPnt.mfW + rPnt.getX() * mfW);
 			maTuple.setY(getY() * rPnt.mfW + rPnt.getY() * mfW);
 			maTuple.setZ(getZ() * rPnt.mfW + rPnt.getZ() * mfW);
@@ -247,8 +247,8 @@ namespace basegfx
 			return *this;
 		}
 
-		B3DHomPoint& operator-=( const B3DHomPoint& rPnt ) 
-		{ 
+		B3DHomPoint& operator-=( const B3DHomPoint& rPnt )
+		{
 			maTuple.setX(getX() * rPnt.mfW - rPnt.getX() * mfW);
 			maTuple.setY(getY() * rPnt.mfW - rPnt.getY() * mfW);
 			maTuple.setZ(getZ() * rPnt.mfW - rPnt.getZ() * mfW);
@@ -256,78 +256,78 @@ namespace basegfx
 
 			return *this;
 		}
-		
-		B3DHomPoint& operator*=(double t) 
-		{ 
+
+		B3DHomPoint& operator*=(double t)
+		{
 			if(!::basegfx::fTools::equalZero(t))
 			{
 				mfW /= t;
 			}
 
-			return *this; 
+			return *this;
 		}
 
-		B3DHomPoint& operator/=(double t) 
-		{ 
+		B3DHomPoint& operator/=(double t)
+		{
 			mfW *= t;
-			return *this; 
+			return *this;
 		}
 
 		B3DHomPoint& operator-(void)
-		{	
+		{
 			mfW = -mfW;
 			return *this;
 		}
-		
-		bool operator==( const B3DHomPoint& rPnt ) const 
-		{ 
+
+		bool operator==( const B3DHomPoint& rPnt ) const
+		{
 			implTestAndHomogenize();
 			return (maTuple == rPnt.maTuple);
 		}
 
-		bool operator!=( const B3DHomPoint& rPnt ) const 
-		{ 
+		bool operator!=( const B3DHomPoint& rPnt ) const
+		{
 			implTestAndHomogenize();
 			return (maTuple != rPnt.maTuple);
 		}
-		
-		B3DHomPoint& operator=( const B3DHomPoint& rPnt ) 
-		{ 
+
+		B3DHomPoint& operator=( const B3DHomPoint& rPnt )
+		{
 			maTuple = rPnt.maTuple;
 			mfW = rPnt.mfW;
-			return *this; 
+			return *this;
 		}
 	};
 
 	// external operators
 	//////////////////////////////////////////////////////////////////////////
 
-	inline B3DHomPoint minimum(const B3DHomPoint& rVecA, const B3DHomPoint& rVecB) 
-	{ 
+	inline B3DHomPoint minimum(const B3DHomPoint& rVecA, const B3DHomPoint& rVecB)
+	{
         return B3DHomPoint( // getX()/getY()/getZ() homogenizes already
             std::min(rVecB.getX(), rVecA.getX()),
             std::min(rVecB.getY(), rVecA.getY()),
-            std::min(rVecB.getZ(), rVecA.getZ())); 
+            std::min(rVecB.getZ(), rVecA.getZ()));
 	}
 
-	inline B3DHomPoint maximum(const B3DHomPoint& rVecA, const B3DHomPoint& rVecB) 
-	{ 
+	inline B3DHomPoint maximum(const B3DHomPoint& rVecA, const B3DHomPoint& rVecB)
+	{
         return B3DHomPoint(// getX()/getY()/getZ() homogenizes already
             std::max(rVecB.getX(), rVecA.getX()),
             std::max(rVecB.getY(), rVecA.getY()),
-            std::max(rVecB.getZ(), rVecA.getZ())); 
+            std::max(rVecB.getZ(), rVecA.getZ()));
 	}
 
-	inline B3DHomPoint absolute(const B3DHomPoint& rVec) 
-	{ 
+	inline B3DHomPoint absolute(const B3DHomPoint& rVec)
+	{
         return B3DHomPoint(// getX()/getY()/getZ() homogenizes already
             fabs(rVec.getX()),
             fabs(rVec.getY()),
-            fabs(rVec.getZ())); 
+            fabs(rVec.getZ()));
 	}
 
-	inline B3DHomPoint interpolate(B3DHomPoint& rOld1, B3DHomPoint& rOld2, double t) 
-	{ 
+	inline B3DHomPoint interpolate(B3DHomPoint& rOld1, B3DHomPoint& rOld2, double t)
+	{
         if(0.0 >= t)
         {
             return rOld1;
@@ -345,66 +345,66 @@ namespace basegfx
             return B3DHomPoint(
                 ((rOld2.getX() - rOld1.getX()) * t) + rOld1.getX(),
                 ((rOld2.getY() - rOld1.getY()) * t) + rOld1.getY(),
-                ((rOld2.getZ() - rOld1.getZ()) * t) + rOld1.getZ()); 
+                ((rOld2.getZ() - rOld1.getZ()) * t) + rOld1.getZ());
         }
 	}
 
-	inline B3DHomPoint average(B3DHomPoint& rOld1, B3DHomPoint& rOld2) 
-	{ 
+	inline B3DHomPoint average(B3DHomPoint& rOld1, B3DHomPoint& rOld2)
+	{
         return B3DHomPoint( // getX()/getY()/getZ() homogenizes already
             rOld1.getX() == rOld2.getX() ? rOld1.getX() : (rOld1.getX() + rOld2.getX()) * 0.5,
             rOld1.getY() == rOld2.getY() ? rOld1.getY() : (rOld1.getY() + rOld2.getY()) * 0.5,
             rOld1.getY() == rOld2.getY() ? rOld1.getY() : (rOld1.getY() + rOld2.getY()) * 0.5);
 	}
-	
+
 	inline B3DHomPoint average(B3DHomPoint& rOld1, B3DHomPoint& rOld2, B3DHomPoint& rOld3)
-	{ 
+	{
         return B3DHomPoint( // getX()/getY()/getZ() homogenizes already
             (rOld1.getX() == rOld2.getX() && rOld2.getX() == rOld3.getX()) ? rOld1.getX() : (rOld1.getX() + rOld2.getX() + rOld3.getX()) * (1.0 / 3.0),
             (rOld1.getY() == rOld2.getY() && rOld2.getY() == rOld3.getY()) ? rOld1.getY() : (rOld1.getY() + rOld2.getY() + rOld3.getY()) * (1.0 / 3.0),
-            (rOld1.getZ() == rOld2.getZ() && rOld2.getZ() == rOld3.getZ()) ? rOld1.getZ() : (rOld1.getZ() + rOld2.getZ() + rOld3.getZ()) * (1.0 / 3.0)); 
+            (rOld1.getZ() == rOld2.getZ() && rOld2.getZ() == rOld3.getZ()) ? rOld1.getZ() : (rOld1.getZ() + rOld2.getZ() + rOld3.getZ()) * (1.0 / 3.0));
 	}
 
 	inline B3DHomPoint operator+(const B3DHomPoint& rVecA, const B3DHomPoint& rVecB)
-	{ 
-		B3DHomPoint aSum(rVecA); 
-		aSum += rVecB; 
-		return aSum; 
+	{
+		B3DHomPoint aSum(rVecA);
+		aSum += rVecB;
+		return aSum;
 	}
 
 	inline B3DHomPoint operator-(const B3DHomPoint& rVecA, const B3DHomPoint& rVecB)
-	{ 
-		B3DHomPoint aSub(rVecA); 
-		aSub -= rVecB; 
-		return aSub; 
+	{
+		B3DHomPoint aSub(rVecA);
+		aSub -= rVecB;
+		return aSub;
 	}
 
 	inline B3DHomPoint operator*(const B3DHomPoint& rVec, double t)
-	{ 
-		B3DHomPoint aNew(rVec); 
-		aNew *= t; 
-		return aNew; 
+	{
+		B3DHomPoint aNew(rVec);
+		aNew *= t;
+		return aNew;
 	}
 
 	inline B3DHomPoint operator*(double t, const B3DHomPoint& rVec)
-	{ 
-		B3DHomPoint aNew(rVec); 
-		aNew *= t; 
-		return aNew; 
+	{
+		B3DHomPoint aNew(rVec);
+		aNew *= t;
+		return aNew;
 	}
 
 	inline B3DHomPoint operator/(const B3DHomPoint& rVec, double t)
-	{ 
-		B3DHomPoint aNew(rVec); 
-		aNew /= t; 
-		return aNew; 
+	{
+		B3DHomPoint aNew(rVec);
+		aNew /= t;
+		return aNew;
 	}
 
 	inline B3DHomPoint operator/(double t, const B3DHomPoint& rVec)
 	{
-		B3DHomPoint aNew(rVec); 
-		aNew /= t; 
-		return aNew; 
+		B3DHomPoint aNew(rVec);
+		aNew /= t;
+		return aNew;
 	}
 } // end of namespace basegfx
 

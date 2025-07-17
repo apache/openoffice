@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -51,7 +51,7 @@ typedef ::std::pair< ::rtl::OUString, ::std::pair< ::rtl::OUString,
 /**
  * Script Meta Data Importer
  */
-class ScriptMetadataImporter : public 
+class ScriptMetadataImporter : public
     ::cppu::WeakImplHelper1< css::xml::sax::XExtendedDocumentHandler >
 {
 public:
@@ -64,8 +64,8 @@ public:
      *
      * @see css::io::XInputStream
      */
-    void parseMetaData( css::uno::Reference< css::io::XInputStream > 
-        const & xInput, const ::rtl::OUString & parcelURI, 
+    void parseMetaData( css::uno::Reference< css::io::XInputStream >
+        const & xInput, const ::rtl::OUString & parcelURI,
         InfoImpls_vec & io_ScriptDatas )
         throw ( css::xml::sax::SAXException, css::io::IOException,
             css::uno::RuntimeException );
@@ -75,7 +75,7 @@ public:
      *
      * @param XComponentContext
      */
-    explicit ScriptMetadataImporter( 
+    explicit ScriptMetadataImporter(
         const css::uno::Reference< css::uno::XComponentContext >&  );
 
     /**
@@ -124,7 +124,7 @@ public:
         throw ( css::xml::sax::SAXException, css::uno::RuntimeException );
 
     /**
-     * Function to handle the start of XML document 
+     * Function to handle the start of XML document
      *
      * @see com::sun::star::xml::sax::XExtendedDocumentHandler
      */
@@ -209,8 +209,8 @@ private:
     ::rtl::OUString ms_parcelURI;
 
     /** States for state machine during parsing */
-    enum { PARCEL, SCRIPT, LOCALE, DISPLAYNAME, DESCRIPTION, FUNCTIONNAME, 
-        LOGICALNAME, LANGUAGEDEPPROPS, LANGDEPPROPS, FILESET, FILESETPROPS, 
+    enum { PARCEL, SCRIPT, LOCALE, DISPLAYNAME, DESCRIPTION, FUNCTIONNAME,
+        LOGICALNAME, LANGUAGEDEPPROPS, LANGDEPPROPS, FILESET, FILESETPROPS,
         FILES, FILEPROPS } m_state;
 
     /** Build up the struct during parsing the meta data */

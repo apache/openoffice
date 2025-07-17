@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -36,23 +36,23 @@ namespace canvas
         Use this interface to represent a surface of raw pixel (e.g. a
         bitmap) to the canvas rendering framework.
      */
-	struct IColorBuffer 
+	struct IColorBuffer
     {
         /// The underlying pixel format for this buffer
         enum Format
         {
-            // 24-bit RGB pixel format, 8 bits per channel. 
+            // 24-bit RGB pixel format, 8 bits per channel.
             FMT_R8G8B8,
-            
-            // 32-bit ARGB pixel format with alpha, 8 bits per channel. 
+
+            // 32-bit ARGB pixel format with alpha, 8 bits per channel.
             FMT_A8R8G8B8,
-            
-            // 32-bit RGB pixel format, 8 bits per channel. 
+
+            // 32-bit RGB pixel format, 8 bits per channel.
             FMT_X8R8G8B8,
-            
-            // for enum to 32bit    
+
+            // for enum to 32bit
             FMT_UNKNOWN = static_cast<sal_uInt32>(-1)
-        }; 
+        };
 
         virtual ~IColorBuffer() {}
 

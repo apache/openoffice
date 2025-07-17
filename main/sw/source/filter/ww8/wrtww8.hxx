@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -265,7 +265,7 @@ private:
     void WriteFtnEndTxt( WW8Export& rWrt, sal_uLong nCpStt );
 public:
     void OutHeaderFooter(WW8Export& rWrt, bool bHeader,
-            const SwFmt& rFmt, sal_uLong& rCpPos, sal_uInt8 nHFFlags, sal_uInt8 nFlag,  sal_uInt8 nBreakCode); 
+            const SwFmt& rFmt, sal_uLong& rCpPos, sal_uInt8 nHFFlags, sal_uInt8 nFlag,  sal_uInt8 nBreakCode);
 };
 
 //--------------------------------------------------------------------------
@@ -554,7 +554,7 @@ public:
     sal_uInt8 bHasHdr : 1;
     sal_uInt8 bHasFtr : 1;
     sal_uInt8 bSubstituteBullets : 1; // true: SubstituteBullet() gets called
-    
+
     bool mbExportModeRTF;
     bool mbOutOutlineOnly;   // export outline nodes, only (send outline to clipboard/presentation)
 
@@ -595,9 +595,9 @@ public:
 
     /// Return the numeric id of the style.
     sal_uInt16 GetId( const SwCharFmt& rFmt ) const;
-    
+
     sal_uInt16 GetId( const SwTOXType& rTOXType );
-    
+
     const SfxPoolItem& GetItem( sal_uInt16 nWhich ) const;
 
     /// Find the reference.
@@ -654,7 +654,7 @@ public:
     virtual void AppendBookmark( const rtl::OUString& rName, bool bSkip = false ) = 0;
 	//For i120928,add this interface to export graphic of bullet
 	virtual void ExportGrfBullet(const SwTxtNode& rNd) = 0;
-	
+
     // FIXME probably a hack...
     virtual void WriteCR( ww8::WW8TableNodeInfoInner::Pointer_t pTableTextNodeInfoInner = ww8::WW8TableNodeInfoInner::Pointer_t() ) = 0;
 
@@ -680,7 +680,7 @@ public:
     /// The return value indicates, if a follow page desc is written.
     bool OutputFollowPageDesc( const SfxItemSet* pSet,
                                const SwTxtNode* pNd );
-    
+
     /// Write header/footer text.
     void WriteHeaderFooterText( const SwFmt& rFmt, bool bHeader);
 
@@ -703,7 +703,7 @@ public:
 
     /// Write static data of SwNumRule - LSTF
     void NumberingDefinitions();
-    
+
     /// Write all Levels for all SwNumRules - LVLF
     void AbstractNumberingDefinitions();
 
@@ -735,7 +735,7 @@ public:
     /// Write the data of the form field
     virtual void WriteFormData( const ::sw::mark::IFieldmark& rFieldmark ) = 0;
     virtual void WriteHyperlinkData( const ::sw::mark::IFieldmark& rFieldmark ) = 0;
-    
+
     virtual void DoComboBox(const rtl::OUString &rName,
                     const rtl::OUString &rHelp,
                     const rtl::OUString &ToolTip,
@@ -781,7 +781,7 @@ protected:
     bool FmtHdFtContainsChapterField(const SwFrmFmt &rFmt) const;
 
     virtual void SectionBreaksAndFrames( const SwTxtNode& rNode ) = 0;
-    
+
     virtual void PrepareNewPageDesc( const SfxItemSet* pSet,
                                      const SwNode& rNd,
                                      const SwFmtPageDesc* pNewPgDescFmt = 0,
@@ -812,13 +812,13 @@ protected:
     ///
     /// One of OutputTextNode(), OutputGrfNode(), or OutputOLENode()
     void OutputContentNode( const SwCntntNode& );
-    
+
     /// Find the nearest bookmark from the current position.
     ///
     /// Returns false when there is no bookmark.
     bool NearestBookmark( xub_StrLen& rNearest, const xub_StrLen nAktPos, bool bNextPositionOnly );
-    
-    void GetSortedBookmarks( const SwTxtNode& rNd, xub_StrLen nAktPos, 
+
+    void GetSortedBookmarks( const SwTxtNode& rNd, xub_StrLen nAktPos,
                 xub_StrLen nLen );
 
     bool GetBookmarks(
@@ -1036,17 +1036,17 @@ public:
 
     virtual void AppendBookmarks( const SwTxtNode& rNd, xub_StrLen nAktPos, xub_StrLen nLen );
     virtual void AppendBookmark( const rtl::OUString& rName, bool bSkip = false );
-	
-	virtual void ExportGrfBullet(const SwTxtNode& rNd);	
+
+	virtual void ExportGrfBullet(const SwTxtNode& rNd);
 	int CollectGrfsOfBullets() const;
 	void OutGrfBullets(const sw::Frame &rFrame);
 	int GetGrfIndex(const SvxBrushItem& rBrush);
-	
+
     void MoveFieldMarks(sal_uLong nFrom, sal_uLong nTo);
 
     void WriteAsStringTable(const ::std::vector<String>&, sal_Int32& rfcSttbf,
         sal_Int32& rlcbSttbf, sal_uInt16 nExtraLen = 0);
-    
+
     virtual sal_uLong ReplaceCr( sal_uInt8 nChar );
 
     virtual void WriteCR( ww8::WW8TableNodeInfoInner::Pointer_t pTableTextNodeInfoInner = ww8::WW8TableNodeInfoInner::Pointer_t() );
@@ -1160,7 +1160,7 @@ protected:
 
     /// Output SwOLENode
     virtual void OutputOLENode( const SwOLENode& );
-    
+
     virtual void AppendSection( const SwPageDesc *pPageDesc, const SwSectionFmt* pFmt, sal_uLong nLnNum );
 
 private:
@@ -1507,11 +1507,11 @@ class WW8SHDLong
     sal_uInt32 m_cvFore;
     sal_uInt32 m_cvBack;
     sal_uInt16 m_ipat;
-    
+
 public:
     WW8SHDLong() : m_cvFore(0), m_cvBack(0), m_ipat(0) {}
     virtual ~WW8SHDLong() {}
-    
+
     void Write(WW8Export & rExport);
     void setCvFore(sal_uInt32 cvFore) { m_cvFore = cvFore; }
     void setCvBack(sal_uInt32 cvBack) { m_cvBack = cvBack; }

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -30,7 +30,7 @@
 //#include "ConnectionLine.hxx"
 //#endif
 #include <vector>
-#ifndef _TOOLS_DEBUG_HXX 
+#ifndef _TOOLS_DEBUG_HXX
 #include <tools/debug.hxx>
 #endif
 #ifndef _SV_WINDOW_HXX
@@ -39,7 +39,7 @@
 #ifndef _RTTI_HXX
 #include <tools/rtti.hxx>
 #endif
-#ifndef _COM_SUN_STAR_UNO_REFERENCE_H_ 
+#ifndef _COM_SUN_STAR_UNO_REFERENCE_H_
 #include <com/sun/star/uno/Reference.h>
 #endif
 #include "TableConnectionData.hxx"
@@ -58,7 +58,7 @@ namespace dbaui
 	class OTableConnection : public Window
 	{
 		::std::vector<OConnectionLine*>	m_vConnLine;
-        TTableConnectionData::value_type			
+        TTableConnectionData::value_type
                                         m_pData;
 		OJoinTableView*					m_pParent;
 
@@ -82,7 +82,7 @@ namespace dbaui
 		virtual ~OTableConnection();
 
 		OTableConnection& operator=( const OTableConnection& rConn );
-		
+
 
 		void		Select();
 		void		Deselect();

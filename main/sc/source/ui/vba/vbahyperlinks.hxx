@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,20 +7,20 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
- 
+
 #ifndef SC_VBA_HYPERLINKS_HXX
 #define SC_VBA_HYPERLINKS_HXX
 
@@ -63,7 +63,7 @@ typedef CollTestImplHelper< ov::excel::XHyperlinks > ScVbaHyperlinks_BASE;
     Worksheet object, it will always represent the current set of all
     hyperlinks existing in the sheet. Insertion and deletion of hyperlinks will
     be reflected by the instance.
-    
+
     When a Hyperlinks collection object has been constructed from a VBA Range
     object, it will represent the set of hyperlinks that have existed at its
     construction time, and that are located completely inside the range(s)
@@ -72,9 +72,9 @@ typedef CollTestImplHelper< ov::excel::XHyperlinks > ScVbaHyperlinks_BASE;
     hyperlinks it has been constructed with, even if they no longer exist.
     Furthermore, the instance will not offer hyperlinks inserted later, even if
     the instance itself has been used to insert the new hyperlinks.
-    
+
     VBA code example:
-    
+
     With ThisWorkbook.Worksheets(1)
 
         Set hlinks = .Hyperlinks                ' global Hyperlinks object
@@ -127,7 +127,7 @@ public:
 
     // XEnumerationAccess
     virtual css::uno::Reference< css::container::XEnumeration > SAL_CALL createEnumeration() throw (css::uno::RuntimeException);
-    
+
     // XElementAccess
     virtual css::uno::Type SAL_CALL getElementType() throw (css::uno::RuntimeException);
 

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -38,14 +38,14 @@ class BitmapTransporter : public OWeakObject, AWT::XBitmap
 {
 	SvMemoryStream						m_aStream;
 	vos::OMutex							m_aProtector;
-										
-public:									
-										
+
+public:
+
 										BitmapTransporter();
 	virtual								~BitmapTransporter();
-										
-										
-	// XInterface						
+
+
+	// XInterface
 	virtual ANY SAL_CALL				queryInterface( const Type & rType ) throw( RuntimeException );
     virtual void SAL_CALL				acquire() throw() { OWeakObject::acquire(); }
     virtual void SAL_CALL				release() throw() { OWeakObject::release(); }
@@ -69,7 +69,7 @@ class Sane
 private:
 	static int				nRefCount;
 	static oslModule        pSaneLib;
-	
+
 	static SANE_Status		(*p_init)( SANE_Int*,
 									   SANE_Auth_Callback );
 	static void				(*p_exit)();
@@ -164,7 +164,7 @@ public:
 
 	int				CountOptions() { return mnOptions; }
 	int				GetDeviceNumber() { return mnDevice; }
-	
+
 	sal_Bool			Open( const char* );
 	sal_Bool			Open( int );
 	void			Close();

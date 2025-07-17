@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -206,7 +206,7 @@ class FWE_DLLPUBLIC AddonsOptions
         *//*-*****************************************************************************************************/
 
         sal_Bool    HasAddonsMenu() const;
-        
+
         /*-****************************************************************************************************//**
             @short      returns if an addons help menu is available
             @descr      Call to retrieve if a addons menu is available
@@ -225,7 +225,7 @@ class FWE_DLLPUBLIC AddonsOptions
             @return     number of addons toolbars
         *//*-*****************************************************************************************************/
         sal_Int32   GetAddonsToolBarCount() const ;
-        
+
         /*-****************************************************************************************************//**
             @short      returns the  complete addons menu
             @descr      Call it to get all entries of the addon menu.
@@ -239,9 +239,9 @@ class FWE_DLLPUBLIC AddonsOptions
         *//*-*****************************************************************************************************/
 
         const ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Sequence< ::com::sun::star::beans::PropertyValue > >& GetAddonsMenu() const;
-            
+
         /*-****************************************************************************************************//**
-            @short      Gets the menu bar part of all addon components registered 
+            @short      Gets the menu bar part of all addon components registered
             @descr      -
 
             @seealso    -
@@ -296,7 +296,7 @@ class FWE_DLLPUBLIC AddonsOptions
 
             @onerror    We return sal_False
         *//*-*****************************************************************************************************/
-        
+
         const MergeMenuInstructionContainer& GetMergeMenuInstructions() const;
 
         /*-****************************************************************************************************//**
@@ -305,7 +305,7 @@ class FWE_DLLPUBLIC AddonsOptions
 
             @seealso    -
 
-            @return     The filled 
+            @return     The filled
 
             @onerror    We return sal_False
         *//*-*****************************************************************************************************/
@@ -314,7 +314,7 @@ class FWE_DLLPUBLIC AddonsOptions
         const MergeStatusbarInstructionContainer& GetMergeStatusbarInstructions() const;
 
         /*-****************************************************************************************************//**
-            @short      Gets the Add-On help menu part of all addon components registered 
+            @short      Gets the Add-On help menu part of all addon components registered
             @descr      -
 
             @seealso    -
@@ -338,7 +338,7 @@ class FWE_DLLPUBLIC AddonsOptions
         *//*-*****************************************************************************************************/
 
         Image GetImageFromURL( const rtl::OUString& aURL, sal_Bool bBig, sal_Bool bHiContrast, sal_Bool bNoScale ) const;
-                    
+
         Image GetImageFromURL( const rtl::OUString& aURL, sal_Bool bBig, sal_Bool bHiContrast ) const;
     //-------------------------------------------------------------------------------------------------------------
     //  private methods

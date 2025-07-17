@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,20 +7,20 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
- 
+
 /** @HTML */
 
 #ifndef _OSL_MODULE_HXX_
@@ -43,16 +43,16 @@ public:
     }
 
     /** Get module URL from the specified function address in the module.
-	
-        Similar to getUrlFromAddress, but use a function address to get URL of the Module. 
+
+        Similar to getUrlFromAddress, but use a function address to get URL of the Module.
         Use Function pointer as symbol address to conceal type conversion.
-	   
+
         @param addr
         [in] function address in oslGenericFunction format.
-	           
+
         @param libraryUrl
         [in|out] receives the URL of the module.
-           
+
         @return
         <dl>
         <dt>sal_True</dt>
@@ -60,7 +60,7 @@ public:
         <dt>sal_False</dt>
         <dd>can not get the URL from the specified function address or the parameter is invalid.</dd>
         </dl>
-           
+
         @see getUrlFromAddress
     */
     static sal_Bool getUrlFromAddress( oslGenericFunction addr, ::rtl::OUString & libraryUrl){
@@ -79,7 +79,7 @@ public:
         osl_unloadModule(m_Module);
     }
 
-    sal_Bool SAL_CALL load( const ::rtl::OUString& strModuleName, 
+    sal_Bool SAL_CALL load( const ::rtl::OUString& strModuleName,
         sal_Int32 nRtldMode = SAL_LOADMODULE_DEFAULT)
     {
         unload();
@@ -108,7 +108,7 @@ public:
 
 	sal_Bool SAL_CALL is() const
     {
-       	return m_Module != NULL; 
+       	return m_Module != NULL;
     }
 
     void* SAL_CALL getSymbol( const ::rtl::OUString& strSymbolName)
@@ -118,12 +118,12 @@ public:
 
     /** Get function address by the function name in the module.
 
-        getFunctionSymbol is an alternative function for getSymbol. 
+        getFunctionSymbol is an alternative function for getSymbol.
         Use Function pointer as symbol address to conceal type conversion.
 
         @param ustrFunctionSymbolName
         [in] Function name to be looked up.
-   
+
         @return
         <dl>
         <dt>oslGenericFunction format function address</dt>
@@ -131,7 +131,7 @@ public:
         <dt>NULL</dt>
         <dd>lookup failed or parameter is somewhat invalid</dd>
         </dl>
-   
+
         @see getSymbol
     */
     oslGenericFunction SAL_CALL getFunctionSymbol( const ::rtl::OUString& ustrFunctionSymbolName )

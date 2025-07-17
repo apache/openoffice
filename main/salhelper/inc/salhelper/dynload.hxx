@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -33,7 +33,7 @@ namespace salhelper
 {
 
 /** The ORealDynamicLoader is an implementation helper class for the template loader ODynamicLoader.
- */   
+ */
 class SALHELPER_DLLPUBLIC ORealDynamicLoader
 {
 public:
@@ -43,8 +43,8 @@ public:
                                        if the loader will be destroyed.
         @param strModuleName specifies the library name.
         @param strInitFunction specifies the name of the initialization function.
-     */   
-	static ORealDynamicLoader* SAL_CALL newInstance( 
+     */
+	static ORealDynamicLoader* SAL_CALL newInstance(
 			ORealDynamicLoader ** ppSetToZeroInDestructor,
 			const ::rtl::OUString& strModuleName,
 			const ::rtl::OUString& strInitFunction );
@@ -66,7 +66,7 @@ protected:
         @param strInitFunction specifies the name of the initialization function.
         @param pApi points to a structure with the initialized API function pointers.
         @param pModule points to the loaded library handle.
-     */   
+     */
 	ORealDynamicLoader( ORealDynamicLoader ** ppSetToZeroInDestructor,
 						const ::rtl::OUString& strModuleName,
 						const ::rtl::OUString& strInitFunction,
@@ -75,13 +75,13 @@ protected:
 
     /// Destructor, try to unload the library.
 	virtual ~ORealDynamicLoader();
-	
+
     /// points to  the structure with the initialzed API function pointers.
 	void* 					m_pApi;
-    /// stores the reference count. 
+    /// stores the reference count.
 	sal_uInt32 				m_refCount;
     /// stores the library handle.
-	oslModule 				m_pModule;	
+	oslModule 				m_pModule;
     /// stores the library name.
     ::rtl::OUString 		m_strModuleName;
     /// stores the name of the initialization function.
@@ -92,7 +92,7 @@ protected:
 	ORealDynamicLoader **  	ppSetToZeroInDestructor;
 };
 
-    
+
 /** The ODynmaicLoader provides a special load on call mechanism for dynamic libraries
     which support a C-API.
 
@@ -104,14 +104,14 @@ protected:
 
     @deprecated
     Do not use.
- */ 
+ */
 template<class API>
 class ODynamicLoader
 {
 public:
     /// Default constructor
 	ODynamicLoader() SAL_THROW(())
-	{ 
+	{
 		m_pLoader = 0;
 	}
 
@@ -120,7 +120,7 @@ public:
 
         @param strModuleName specifies the library name.
         @param strInitFunction specifies the name of the initialization function.
-     */   
+     */
 	ODynamicLoader( const ::rtl::OUString& strModuleName,
 		       		const ::rtl::OUString& strInitFunction ) SAL_THROW(())
 	{
@@ -129,13 +129,13 @@ public:
 		    m_pStaticLoader = ORealDynamicLoader::newInstance(
 		       &m_pStaticLoader,
 		       strModuleName,
-		       strInitFunction);								 
-		} 
+		       strInitFunction);
+		}
 		else
 		{
 		    m_pStaticLoader->acquire();
 		}
-	
+
 		m_pLoader = m_pStaticLoader;
 	}
 
@@ -171,20 +171,20 @@ public:
 
     /// returns a poiner to the initialized API function structure.
 	API* SAL_CALL getApi() const SAL_THROW(())
-	{ 
-		return (API*)m_pLoader->getApi(); 
+	{
+		return (API*)m_pLoader->getApi();
 	}
 
     /// cast operator, which cast to a poiner with the initialized API function structure.
 	API* SAL_CALL operator->() const SAL_THROW(())
 	{
-		return (API*)m_pLoader->getApi(); 
+		return (API*)m_pLoader->getApi();
 	}
 
     /// checks if the loader works on a loaded and initialized library.
 	sal_Bool SAL_CALL isLoaded() const SAL_THROW(())
-	{ 
-		return (m_pLoader != NULL); 
+	{
+		return (m_pLoader != NULL);
 	}
 
 protected:

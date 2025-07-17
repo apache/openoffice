@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -50,7 +50,7 @@ namespace rptui
 	class OEndMarker;
 	class OReportSection;
 	class OSectionView;
-    
+
 
     // -----------------------------------------------------------------------------
     struct RectangleLess : public ::std::binary_function< Rectangle, Rectangle, bool>
@@ -59,7 +59,7 @@ namespace rptui
         CompareMode m_eCompareMode;
         Point       m_aRefPoint;
         RectangleLess(CompareMode _eCompareMode,const Point& _rRefPoint ) : m_eCompareMode(_eCompareMode),m_aRefPoint(_rRefPoint){}
-        bool operator() (const Rectangle& lhs, const Rectangle& rhs) const 
+        bool operator() (const Rectangle& lhs, const Rectangle& rhs) const
         {
             switch(m_eCompareMode)
             {
@@ -126,7 +126,7 @@ namespace rptui
 		};
         struct TStartMarkerHelper : public ::std::unary_function< TSectionsMap::value_type, OStartMarker >
 		{
-			OStartMarker& operator() (const TSectionsMap::value_type& lhs) const 
+			OStartMarker& operator() (const TSectionsMap::value_type& lhs) const
 			{
 				return lhs->getStartMarker();
 			}
@@ -158,7 +158,7 @@ namespace rptui
         virtual void Paint( const Rectangle& rRect );
 		virtual void ConfigurationChanged( utl::ConfigurationBroadcaster*, sal_uInt32 );
 	public:
-		OViewsWindow( 
+		OViewsWindow(
             OReportWindow* _pReportWindow);
 		virtual ~OViewsWindow();
 
@@ -190,7 +190,7 @@ namespace rptui
 		sal_uInt16			getSectionCount() const;
         /** return the section at the given position
         *
-        * \param _nPos 
+        * \param _nPos
         * \return the section at this pos or an empty section
         */
         ::boost::shared_ptr<OSectionWindow> getSectionWindow(const sal_uInt16 _nPos) const;

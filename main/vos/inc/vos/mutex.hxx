@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -30,7 +30,7 @@
 #	include <vos/vosdllapi.h>
 
 namespace vos
-{     
+{
 
 
 /** IMutex interface
@@ -44,7 +44,7 @@ class IMutex
 public:
 
 	/// Blocks if Mutex is already in use
-	virtual void SAL_CALL acquire()= 0;			
+	virtual void SAL_CALL acquire()= 0;
 
 	// Tries to get the mutex without blocking.
 	virtual sal_Bool SAL_CALL tryToAcquire()= 0;
@@ -55,7 +55,7 @@ public:
 protected:
 	IMutex() { }
 	virtual ~IMutex() { }
-    
+
 };
 
 // ----------------------------------------------------------
@@ -74,12 +74,12 @@ public:
 	static IMutex& SAL_CALL getGlobalMutex();
 
 	/// Creates mutex
-	OMutex();	
-	/// Implicitly destroys mutex	
-    virtual ~OMutex();	
-	
+	OMutex();
+	/// Implicitly destroys mutex
+    virtual ~OMutex();
+
 	/// Blocks if Mutex is already in use
-	virtual void SAL_CALL acquire();	
+	virtual void SAL_CALL acquire();
 
 	/** Tries to get the mutex without blocking.
 		@return True if mutex could be obtained, otherwise False
@@ -94,8 +94,8 @@ protected:
 
 private:
 	// disable copy/assignment
-	OMutex(const OMutex&);	
-	OMutex& SAL_CALL operator= (const OMutex&);	
+	OMutex(const OMutex&);
+	OMutex& SAL_CALL operator= (const OMutex&);
 };
 
 // *********************************************************************************
@@ -172,7 +172,7 @@ protected:
 	IMutex* m_pMutex;
 };
 
-}     
+}
 
 
 #endif  //_VOS_MUTEX_HXX_

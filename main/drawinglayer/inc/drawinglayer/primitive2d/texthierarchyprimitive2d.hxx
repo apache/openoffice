@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -134,16 +134,16 @@ namespace drawinglayer
         /** FieldType definition */
 		enum FieldType
 		{
-            /** unspecified. If more info is needed for a FieldType, 
+            /** unspecified. If more info is needed for a FieldType,
                 create a new type and it's handling
              */
-			FIELD_TYPE_COMMON,			
+			FIELD_TYPE_COMMON,
 
             /** uses "FIELD_SEQ_BEGIN;PageField" -> special handling */
             FIELD_TYPE_PAGE,
 
             /** uses URL as string -> special handling */
-			FIELD_TYPE_URL				
+			FIELD_TYPE_URL
 		};
 
         /** TextHierarchyFieldPrimitive2D class
@@ -163,7 +163,7 @@ namespace drawinglayer
             /// constructor
 			TextHierarchyFieldPrimitive2D(
 				const Primitive2DSequence& rChildren,
-				const FieldType& rFieldType, 
+				const FieldType& rFieldType,
                 const rtl::OUString& rString);
 
 			/// data read access
@@ -191,7 +191,7 @@ namespace drawinglayer
             Primitive to encapsulate text from an active text edit; some
             renderers need to suppress this output due to painting the
             edited text in e.g. an OutlinerEditView. It's derived from
-            GroupPrimitive2D, so the implicit decomposition will use the 
+            GroupPrimitive2D, so the implicit decomposition will use the
             content. To suppress, this primitive needs to be parsed by
             the renderer without taking any action.
          */

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -49,7 +49,7 @@ namespace basegfx
     class B2DPolyPolygon;
 }
 
-namespace com { namespace sun { namespace star { namespace geometry 
+namespace com { namespace sun { namespace star { namespace geometry
 {
     struct RealSize2D;
     struct IntegerSize2D;
@@ -57,7 +57,7 @@ namespace com { namespace sun { namespace star { namespace geometry
     struct Matrix2D;
 } } } }
 
-namespace com { namespace sun { namespace star { namespace rendering 
+namespace com { namespace sun { namespace star { namespace rendering
 {
     struct RenderState;
     struct ViewState;
@@ -69,12 +69,12 @@ namespace com { namespace sun { namespace star { namespace rendering
 
     bool operator==( const RenderState&	rLHS,
                      const RenderState& rRHS );
-    
+
     bool operator==( const ViewState& rLHS,
-                     const ViewState& rRHS );    
+                     const ViewState& rRHS );
 } } } }
 
-namespace com { namespace sun { namespace star { namespace awt 
+namespace com { namespace sun { namespace star { namespace awt
 {
     struct Rectangle;
     class  XWindow2;
@@ -156,64 +156,64 @@ namespace canvas
         // View- and RenderState utilities
         // ===================================================================
 
-        CANVASTOOLS_DLLPUBLIC ::com::sun::star::rendering::RenderState& 
+        CANVASTOOLS_DLLPUBLIC ::com::sun::star::rendering::RenderState&
         	initRenderState( ::com::sun::star::rendering::RenderState&						renderState );
 
-        CANVASTOOLS_DLLPUBLIC ::com::sun::star::rendering::ViewState& 
+        CANVASTOOLS_DLLPUBLIC ::com::sun::star::rendering::ViewState&
         	initViewState( ::com::sun::star::rendering::ViewState&							viewState );
 
-        CANVASTOOLS_DLLPUBLIC ::basegfx::B2DHomMatrix& 
+        CANVASTOOLS_DLLPUBLIC ::basegfx::B2DHomMatrix&
 	        getViewStateTransform( ::basegfx::B2DHomMatrix&									transform,
                                    const ::com::sun::star::rendering::ViewState&			viewState );
-        
+
         CANVASTOOLS_DLLPUBLIC ::com::sun::star::rendering::ViewState&
         	setViewStateTransform( ::com::sun::star::rendering::ViewState& 					viewState,
                                    const ::basegfx::B2DHomMatrix&							transform );
-        
-        CANVASTOOLS_DLLPUBLIC ::basegfx::B2DHomMatrix& 
+
+        CANVASTOOLS_DLLPUBLIC ::basegfx::B2DHomMatrix&
         	getRenderStateTransform( ::basegfx::B2DHomMatrix&								transform,
                                      const ::com::sun::star::rendering::RenderState&		renderState );
-        
-        CANVASTOOLS_DLLPUBLIC ::com::sun::star::rendering::RenderState& 
+
+        CANVASTOOLS_DLLPUBLIC ::com::sun::star::rendering::RenderState&
         	setRenderStateTransform( ::com::sun::star::rendering::RenderState& 				renderState,
                                      const ::basegfx::B2DHomMatrix&							transform );
-        
-        CANVASTOOLS_DLLPUBLIC ::com::sun::star::rendering::ViewState& 
+
+        CANVASTOOLS_DLLPUBLIC ::com::sun::star::rendering::ViewState&
         	appendToViewState( ::com::sun::star::rendering::ViewState&						viewState,
                                const ::basegfx::B2DHomMatrix&								transform );
-        
-        CANVASTOOLS_DLLPUBLIC ::com::sun::star::rendering::RenderState& 
+
+        CANVASTOOLS_DLLPUBLIC ::com::sun::star::rendering::RenderState&
         	appendToRenderState( ::com::sun::star::rendering::RenderState&					renderState,
                                  const ::basegfx::B2DHomMatrix&								transform );
-        
-        CANVASTOOLS_DLLPUBLIC ::com::sun::star::rendering::ViewState& 
+
+        CANVASTOOLS_DLLPUBLIC ::com::sun::star::rendering::ViewState&
         	prependToViewState( ::com::sun::star::rendering::ViewState&						viewState,
                                 const ::basegfx::B2DHomMatrix&								transform );
-        
-        CANVASTOOLS_DLLPUBLIC ::com::sun::star::rendering::RenderState& 
+
+        CANVASTOOLS_DLLPUBLIC ::com::sun::star::rendering::RenderState&
         	prependToRenderState( ::com::sun::star::rendering::RenderState&					renderState,
                                   const ::basegfx::B2DHomMatrix&							transform );
 
-        CANVASTOOLS_DLLPUBLIC ::basegfx::B2DHomMatrix& 
+        CANVASTOOLS_DLLPUBLIC ::basegfx::B2DHomMatrix&
         	mergeViewAndRenderTransform( ::basegfx::B2DHomMatrix&							transform,
                                          const ::com::sun::star::rendering::ViewState&		viewState,
                                          const ::com::sun::star::rendering::RenderState&	renderState );
 
-        CANVASTOOLS_DLLPUBLIC ::com::sun::star::rendering::ViewState& 
+        CANVASTOOLS_DLLPUBLIC ::com::sun::star::rendering::ViewState&
 	        mergeViewAndRenderState( ::com::sun::star::rendering::ViewState&				resultViewState,
                                      const ::com::sun::star::rendering::ViewState&			viewState,
                                      const ::com::sun::star::rendering::RenderState&		renderState,
-                                     const ::com::sun::star::uno::Reference< 
+                                     const ::com::sun::star::uno::Reference<
                                      	::com::sun::star::rendering::XCanvas >& 			xCanvas );
 
 
         // Matrix utilities
         // ===================================================================
 
-        CANVASTOOLS_DLLPUBLIC ::com::sun::star::geometry::AffineMatrix2D& 
+        CANVASTOOLS_DLLPUBLIC ::com::sun::star::geometry::AffineMatrix2D&
         	setIdentityAffineMatrix2D( ::com::sun::star::geometry::AffineMatrix2D&	matrix );
 
-        CANVASTOOLS_DLLPUBLIC ::com::sun::star::geometry::Matrix2D& 
+        CANVASTOOLS_DLLPUBLIC ::com::sun::star::geometry::Matrix2D&
         	setIdentityMatrix2D( ::com::sun::star::geometry::Matrix2D&			    matrix );
 
 
@@ -283,7 +283,7 @@ namespace canvas
                                                           const ::basegfx::B2DRange&		i_destRect,
                                                           const ::basegfx::B2DRange&		i_srcRect,
                                                           const ::basegfx::B2DHomMatrix&	i_transformation );
-        
+
         /** Calc a transform that maps the upper, left corner of a
          	rectangle to the origin.
 
@@ -314,7 +314,7 @@ namespace canvas
         CANVASTOOLS_DLLPUBLIC ::basegfx::B2DHomMatrix& calcRectToOriginTransform( ::basegfx::B2DHomMatrix&		o_transform,
                                                             const ::basegfx::B2DRange&		i_srcRect,
                                                             const ::basegfx::B2DHomMatrix&	i_transformation );
-        
+
         /** Check whether a given rectangle is within another
             transformed rectangle.
 
@@ -336,7 +336,7 @@ namespace canvas
             This transformation is applied to rTransformRect
          */
 		CANVASTOOLS_DLLPUBLIC bool isInside( const ::basegfx::B2DRange& 		rContainedRect,
-                       const ::basegfx::B2DRange& 		rTransformRect, 
+                       const ::basegfx::B2DRange& 		rTransformRect,
                        const ::basegfx::B2DHomMatrix&	rTransformation );
 
         /** Clip a scroll to the given bound rect
@@ -413,14 +413,14 @@ namespace canvas
         CANVASTOOLS_DLLPUBLIC ::basegfx::B2IRange spritePixelAreaFromB2DRange( const ::basegfx::B2DRange& rRange );
 
         /** Retrieve various internal properties of the actual canvas implementation.
-			
+
         	This method retrieves a bunch of internal, implementation-
         	and platform-dependent values from the canvas
         	implementation. Among them are for example operating
         	system window handles. The actual layout and content of
         	the returned sequence is dependent on the component
         	implementation, undocumented and subject to change.
-			
+
             @param i_rxCanvas
             Input parameter, the canvas representation for which the device information
 			is to be retrieveds
@@ -430,7 +430,7 @@ namespace canvas
 
             @return A reference to the resulting sequence of parameters
 		*/
-		CANVASTOOLS_DLLPUBLIC ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Any >& getDeviceInfo( 
+		CANVASTOOLS_DLLPUBLIC ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Any >& getDeviceInfo(
 			const ::com::sun::star::uno::Reference< ::com::sun::star::rendering::XCanvas >& i_rxCanvas,
 			::com::sun::star::uno::Sequence< ::com::sun::star::uno::Any >& o_rxParams );
 
@@ -446,7 +446,7 @@ namespace canvas
             Use this method for dead-simple bitmap implementations,
             that map all their formats to 8888 RGBA color.
          */
-        CANVASTOOLS_DLLPUBLIC ::com::sun::star::rendering::IntegerBitmapLayout getStdMemoryLayout( 
+        CANVASTOOLS_DLLPUBLIC ::com::sun::star::rendering::IntegerBitmapLayout getStdMemoryLayout(
             const ::com::sun::star::geometry::IntegerSize2D& rBitmapSize );
 
         /// Convert standard 8888 RGBA color to vcl color
@@ -478,7 +478,7 @@ namespace canvas
 #if defined(VERBOSE) && defined(DBG_UTIL)
                 OSL_TRACE("numeric_cast detected data loss");
 #endif
-                throw ::com::sun::star::uno::RuntimeException( 
+                throw ::com::sun::star::uno::RuntimeException(
                     ::rtl::OUString(RTL_CONSTASCII_USTRINGPARAM( "numeric_cast detected data loss" )),
                     NULL );
             }
@@ -486,7 +486,7 @@ namespace canvas
             return static_cast<Target>(arg);
         }
 
-        CANVASTOOLS_DLLPUBLIC ::com::sun::star::awt::Rectangle getAbsoluteWindowRect( 
+        CANVASTOOLS_DLLPUBLIC ::com::sun::star::awt::Rectangle getAbsoluteWindowRect(
             const ::com::sun::star::awt::Rectangle&                                    rRect,
             const ::com::sun::star::uno::Reference< ::com::sun::star::awt::XWindow2 >& xWin  );
 
@@ -502,7 +502,7 @@ namespace canvas
            for smooth gradient color differences
          */
         CANVASTOOLS_DLLPUBLIC int calcGradientStepCount( ::basegfx::B2DHomMatrix&                        rTotalTransform,
-                                   const ::com::sun::star::rendering::ViewState&   viewState, 
+                                   const ::com::sun::star::rendering::ViewState&   viewState,
                                    const ::com::sun::star::rendering::RenderState& renderState,
                                    const ::com::sun::star::rendering::Texture&     texture,
                                    int                                             nColorSteps );
@@ -552,11 +552,11 @@ namespace canvas
                 mnEntries( nEntries ),
                 mbCaseSensitive( bCaseSensitive )
             {
-#ifdef DBG_UTIL                
+#ifdef DBG_UTIL
                 // Ensure that map entries are sorted (and all lowercase, if this
                 // map is case insensitive)
                 const ::rtl::OString aStr( pMap->maKey );
-                if( !mbCaseSensitive && 
+                if( !mbCaseSensitive &&
                     aStr != aStr.toAsciiLowerCase() )
                 {
                     OSL_TRACE("ValueMap::ValueMap(): Key %s is not lowercase",
@@ -577,9 +577,9 @@ namespace canvas
                             OSL_ENSURE( false,
                                         "ValueMap::ValueMap(): Map is not sorted" );
                         }
-                        
+
                         const ::rtl::OString aStr2( pMap[1].maKey );
-                        if( !mbCaseSensitive && 
+                        if( !mbCaseSensitive &&
                             aStr2 != aStr2.toAsciiLowerCase() )
                         {
                             OSL_TRACE("ValueMap::ValueMap(): Key %s is not lowercase",
@@ -612,15 +612,15 @@ namespace canvas
                 // TODO(Q1): Enforce this at upper layers
                 ::rtl::OString aKey( ::rtl::OUStringToOString( mbCaseSensitive ? rName : rName.toAsciiLowerCase(),
                                                                RTL_TEXTENCODING_ASCII_US ) );
-                MapEntry aSearchKey = 
-                    { 
-                        aKey.getStr(), 
+                MapEntry aSearchKey =
+                    {
+                        aKey.getStr(),
                         ValueType()
                     };
 
                 const MapEntry* pRes;
                 const MapEntry* pEnd = mpMap+mnEntries;
-                if( (pRes=::std::lower_bound( mpMap, 
+                if( (pRes=::std::lower_bound( mpMap,
                                               pEnd,
                                               aSearchKey,
                                               &mapComparator )) != pEnd )
@@ -646,7 +646,7 @@ namespace canvas
                 return strcmp( rLHS.maKey,
                                rRHS.maKey ) < 0;
             }
-            
+
             const MapEntry* 	mpMap;
             ::std::size_t		mnEntries;
             bool				mbCaseSensitive;

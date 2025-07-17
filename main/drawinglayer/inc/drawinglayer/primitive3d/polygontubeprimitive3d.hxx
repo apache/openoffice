@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -75,9 +75,9 @@ namespace drawinglayer
 		public:
             /// constructor
 			PolygonTubePrimitive3D(
-				const basegfx::B3DPolygon& rPolygon, 
+				const basegfx::B3DPolygon& rPolygon,
 				const basegfx::BColor& rBColor,
-				double fRadius, 
+				double fRadius,
                 basegfx::B2DLineJoin aLineJoin,
                 com::sun::star::drawing::LineCap aLineCap,
 				double fDegreeStepWidth = 10.0 * F_PI180,
@@ -93,7 +93,7 @@ namespace drawinglayer
 			/// compare operator
 			virtual bool operator==(const BasePrimitive3D& rPrimitive) const;
 
-            /** local decomposition. Use own buffering since we are not derived from 
+            /** local decomposition. Use own buffering since we are not derived from
                 BufferedDecompositionPrimitive3D
              */
 			virtual Primitive3DSequence get3DDecomposition(const geometry::ViewInformation3D& rViewInformation) const;

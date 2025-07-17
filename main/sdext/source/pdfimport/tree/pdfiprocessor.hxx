@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -70,7 +70,7 @@ namespace pdfi
     class PDFIProcessor : public ContentSink
     {
     public:
-        com::sun::star::uno::Reference< 
+        com::sun::star::uno::Reference<
             com::sun::star::uno::XComponentContext >  m_xContext;
         double fYPrevTextPosition;
         double fPrevTextHeight;
@@ -105,7 +105,7 @@ namespace pdfi
 
         void sortElements( Element* pElement, bool bDeep = false );
         void sortDocument( bool bDeep = false );
-        
+
         rtl::OUString mirrorString( const rtl::OUString& i_rInString );
 
     private:
@@ -205,7 +205,7 @@ namespace pdfi
 
         typedef std::hash_map<sal_Int32,FontAttributes> IdToFontMap;
         typedef std::hash_map<FontAttributes,sal_Int32,FontAttrHash> FontToIdMap;
-        
+
         typedef std::hash_map<sal_Int32,GraphicsContext> IdToGCMap;
         typedef std::hash_map<GraphicsContext,sal_Int32,GraphicsContextHash> GCToIdMap;
 
@@ -215,7 +215,7 @@ namespace pdfi
                                                         const ::basegfx::B2DRange&		inRect,
                                                         const ::basegfx::B2DHomMatrix& 	transformation );
         std::vector<CharGlyph>             m_GlyphsList;
-        
+
         boost::shared_ptr<ElementFactory>  m_pElFactory;
         boost::shared_ptr<DocumentElement> m_pDocument;
         PageElement*                       m_pCurPage;
@@ -223,22 +223,22 @@ namespace pdfi
         sal_Int32                          m_nNextFontId;
         IdToFontMap                        m_aIdToFont;
         FontToIdMap                        m_aFontToId;
-        
+
         GraphicsContextStack               m_aGCStack;
         GraphicsContext                    m_prev_aGC;
         sal_Int32                          m_nNextGCId;
         IdToGCMap                          m_aIdToGC;
         GCToIdMap                          m_aGCToId;
-        
+
         ImageContainer                     m_aImages;
-        
+
         DocumentTextDirecion               m_eTextDirection;
 
-        sal_Int32                          m_nPages;        
+        sal_Int32                          m_nPages;
         sal_Int32                          m_nNextZOrder;
         double                             m_fWordSpace;
         bool                               m_bIsWhiteSpaceInLine;
-        com::sun::star::uno::Reference< 
+        com::sun::star::uno::Reference<
             com::sun::star::task::XStatusIndicator >
                                            m_xStatusIndicator;
 
@@ -254,33 +254,33 @@ namespace pdfi
         public:
             CharGlyph(){};
             virtual ~CharGlyph(){};
-            rtl::OUString& getGlyph(){ return m_rGlyphs; } 
-            com::sun::star::geometry::RealRectangle2D& getRect(){ return m_rRect; } 
-            com::sun::star::geometry::Matrix2D&  getFontMatrix(){ return m_rFontMatrix; } 
-            GraphicsContext&  getGC(){ return m_rCurrentContext; } 
-            Element*  getCurElement(){ return m_pCurElement; } 
+            rtl::OUString& getGlyph(){ return m_rGlyphs; }
+            com::sun::star::geometry::RealRectangle2D& getRect(){ return m_rRect; }
+            com::sun::star::geometry::Matrix2D&  getFontMatrix(){ return m_rFontMatrix; }
+            GraphicsContext&  getGC(){ return m_rCurrentContext; }
+            Element*  getCurElement(){ return m_pCurElement; }
 
-            void  setGlyph (const rtl::OUString& rGlyphs ){ m_rGlyphs=rGlyphs; } 
-            void  setRect  (const ::com::sun::star::geometry::RealRectangle2D& rRect ){ m_rRect=rRect; } 
-            void  setFontMatrix (const ::com::sun::star::geometry::Matrix2D& rFontMatrix ){ m_rFontMatrix= rFontMatrix; } 
-            void  setGraphicsContext (GraphicsContext&  rCurrentContext ){ m_rCurrentContext= rCurrentContext; } 
-            void  setCurElement( Element* pCurElement ){ m_pCurElement= pCurElement; } 
-        
-            double getYPrevGlyphPosition(){ return m_fYPrevGlyphPosition; } 
-            double getXPrevGlyphPosition(){ return m_fXPrevGlyphPosition; } 
-            double getPrevGlyphHeight(){ return m_fPrevGlyphHeight; } 
-            double getPrevGlyphWidth (){ return m_fPrevGlyphWidth; } 
+            void  setGlyph (const rtl::OUString& rGlyphs ){ m_rGlyphs=rGlyphs; }
+            void  setRect  (const ::com::sun::star::geometry::RealRectangle2D& rRect ){ m_rRect=rRect; }
+            void  setFontMatrix (const ::com::sun::star::geometry::Matrix2D& rFontMatrix ){ m_rFontMatrix= rFontMatrix; }
+            void  setGraphicsContext (GraphicsContext&  rCurrentContext ){ m_rCurrentContext= rCurrentContext; }
+            void  setCurElement( Element* pCurElement ){ m_pCurElement= pCurElement; }
+
+            double getYPrevGlyphPosition(){ return m_fYPrevGlyphPosition; }
+            double getXPrevGlyphPosition(){ return m_fXPrevGlyphPosition; }
+            double getPrevGlyphHeight(){ return m_fPrevGlyphHeight; }
+            double getPrevGlyphWidth (){ return m_fPrevGlyphWidth; }
             double getPrevGlyphsSpace() { if( (m_rRect.X1-m_fXPrevGlyphPosition)<0 )
                                                 return 0;
                                            else
                                             return m_rRect.X1-m_fXPrevGlyphPosition;
                                          }
 
-            void setYPrevGlyphPosition( double fYPrevTextPosition ){ m_fYPrevGlyphPosition= fYPrevTextPosition; } 
-            void setXPrevGlyphPosition( double fXPrevTextPosition ){ m_fXPrevGlyphPosition= fXPrevTextPosition; } 
-            void setPrevGlyphHeight   ( double fPrevTextHeight ){ m_fPrevGlyphHeight= fPrevTextHeight; } 
-            void setPrevGlyphWidth    ( double fPrevTextWidth ){ m_fPrevGlyphWidth= fPrevTextWidth; } 
-        
+            void setYPrevGlyphPosition( double fYPrevTextPosition ){ m_fYPrevGlyphPosition= fYPrevTextPosition; }
+            void setXPrevGlyphPosition( double fXPrevTextPosition ){ m_fXPrevGlyphPosition= fXPrevTextPosition; }
+            void setPrevGlyphHeight   ( double fPrevTextHeight ){ m_fPrevGlyphHeight= fPrevTextHeight; }
+            void setPrevGlyphWidth    ( double fPrevTextWidth ){ m_fPrevGlyphWidth= fPrevTextWidth; }
+
         private:
 
             double                      m_fYPrevGlyphPosition ;

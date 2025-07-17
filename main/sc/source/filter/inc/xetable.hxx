@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -406,16 +406,16 @@ private:
 //UNUSED2009-05 class XclExpErrorCell : public XclExpSingleCellBase
 //UNUSED2009-05 {
 //UNUSED2009-05     DECL_FIXEDMEMPOOL_NEWDEL( XclExpErrorCell )
-//UNUSED2009-05 
+//UNUSED2009-05
 //UNUSED2009-05 public:
 //UNUSED2009-05     explicit            XclExpErrorCell( const XclExpRoot rRoot, const XclAddress& rXclPos,
 //UNUSED2009-05                             const ScPatternAttr* pPattern, sal_uInt32 nForcedXFId,
 //UNUSED2009-05                             sal_uInt8 nErrCode );
-//UNUSED2009-05 
+//UNUSED2009-05
 //UNUSED2009-05     virtual void        SaveXml( XclExpXmlStream& rStrm );
 //UNUSED2009-05 private:
 //UNUSED2009-05     virtual void        WriteContents( XclExpStream& rStrm );
-//UNUSED2009-05 
+//UNUSED2009-05
 //UNUSED2009-05 private:
 //UNUSED2009-05     sal_uInt8           mnErrCode;      /// The error code.
 //UNUSED2009-05 };

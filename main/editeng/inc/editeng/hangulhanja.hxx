@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -75,11 +75,11 @@ namespace editeng
             eConvSimplifiedTraditional  // Chinese simplified / Chinese traditional conversion
         };
 
-        // Note: conversion direction for eConvSimplifiedTraditional is 
+        // Note: conversion direction for eConvSimplifiedTraditional is
         // specified by source language.
         // This one is for Hangul/Hanja where source and target language
         // are the same.
-        enum ConversionDirection    
+        enum ConversionDirection
 		{
 			eHangulToHanja,
 			eHanjaToHangul
@@ -157,8 +157,8 @@ namespace editeng
                 too look for even if the 'source' language usually is only 'simplified'
                 or 'traditional'.)
 		*/
-        virtual void    GetNextPortion( 
-                ::rtl::OUString& /* [out] */ _rNextPortion, 
+        virtual void    GetNextPortion(
+                ::rtl::OUString& /* [out] */ _rNextPortion,
                 LanguageType& /* [out] */ _rLangOfPortion,
                 sal_Bool /* [in] */ _bAllowImplicitChangesForNotConvertibleText );
 
@@ -211,7 +211,7 @@ namespace editeng
             the target language (as given by 'GetTargetLanguage') for example
             when converting simplified Chinese from/to traditional Chinese
             the language attribute of the new text has to be changed as well,
-			**and** the font is to be set to the default (document) font for 
+			**and** the font is to be set to the default (document) font for
 			that language.</p>
 
 			@param _nUnitStart
@@ -234,10 +234,10 @@ namespace editeng
                 An sequence matching the indices (characters) of _rReplaceWith
                 to the indices of the characters in the original text they are
                 replacing.
-                This is necessary since some portions of the text may get 
+                This is necessary since some portions of the text may get
                 converted in portions of different length than the original.
-                The sequence will be empty if all conversions in the text are 
-                of equal length. That is if always the character at index i in 
+                The sequence will be empty if all conversions in the text are
+                of equal length. That is if always the character at index i in
                 _rOffsets is replacing the character at index i in the original
                 text for all valid index values of i.
 
@@ -252,7 +252,7 @@ namespace editeng
 		virtual void	ReplaceUnit(
 							const sal_Int32 _nUnitStart, const sal_Int32 _nUnitEnd,
                             const ::rtl::OUString& _rOrigText,
-                            const ::rtl::OUString& _rReplaceWith, 
+                            const ::rtl::OUString& _rReplaceWith,
                             const ::com::sun::star::uno::Sequence< sal_Int32 > &_rOffsets,
                             ReplacementAction _eAction,
                             LanguageType *pNewUnitLanguage
