@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -35,7 +35,7 @@ namespace drawinglayer
 	namespace primitive2d
 	{
         /** DiscreteMetricDependentPrimitive2D class
-            
+
             tooling class for BufferedDecompositionPrimitive2D baseed classes which are view-dependent
             regarding the size of a discrete unit. The implementation of get2DDecomposition
             guards the buffered local decomposition and ensures that a create2DDecomposition
@@ -81,7 +81,7 @@ namespace drawinglayer
 	namespace primitive2d
 	{
         /** ViewportDependentPrimitive2D class
-            
+
             tooling class for BufferedDecompositionPrimitive2D baseed classes which are view-dependent
             regarding the viewport. The implementation of get2DDecomposition
             guards the buffered local decomposition and ensures that a create2DDecomposition
@@ -120,7 +120,7 @@ namespace drawinglayer
 	namespace primitive2d
 	{
         /** ViewTransformationDependentPrimitive2D class
-            
+
             tooling class for BufferedDecompositionPrimitive2D based classes which are view-dependent
             regarding the complete Viewtransformation. The implementation of get2DDecomposition
             guards the buffered local decomposition and ensures that a create2DDecomposition
@@ -159,7 +159,7 @@ namespace drawinglayer
 	namespace primitive2d
 	{
         /** ObjectAndViewTransformationDependentPrimitive2D class
-            
+
             tooling class for BufferedDecompositionPrimitive2D based classes which are view-dependent
             and Object-Transform dependent. The implementation of get2DDecomposition
             guards the buffered local decomposition and ensures that a create2DDecomposition
@@ -169,8 +169,8 @@ namespace drawinglayer
 		class DRAWINGLAYER_DLLPUBLIC ObjectAndViewTransformationDependentPrimitive2D : public BufferedDecompositionPrimitive2D
 		{
 		private:
-			/** the last used ViewTransformation and the last ObjectTransformation 
-				definition for decomposition. Since this is checked and updated from 
+			/** the last used ViewTransformation and the last ObjectTransformation
+				definition for decomposition. Since this is checked and updated from
 				get2DDecomposition() it will be current and usable in create2DDecomposition()
              */
             basegfx::B2DHomMatrix					maViewTransformation;

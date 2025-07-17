@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -37,7 +37,7 @@ public:
     VendorSettings();
 
     /** Gets all plugin library URLs with the corresponding vendor name.
-    
+
     It uses the /javaSelection/plugins/library element from the javavendors.xml
     to locate the library.
     Is is verified that the plug-in exist. If a plug-in does not exist then an
@@ -51,7 +51,7 @@ public:
 
     VersionInfo getVersionInformation(const ::rtl::OUString & sVendor);
 
-    ::std::vector< ::rtl::OUString> getSupportedVendors();    
+    ::std::vector< ::rtl::OUString> getSupportedVendors();
 };
 
 /* The class offers functions to retrieve verified bootstrap parameters.
@@ -65,7 +65,7 @@ namespace  BootParams
    In direct mode either of them must be set. If not an exception is thrown.
 */
 ::rtl::OUString getJREHome();
-    
+
 ::std::vector< ::rtl::OString> getVMParameters();
 
 ::rtl::OUString getUserData();

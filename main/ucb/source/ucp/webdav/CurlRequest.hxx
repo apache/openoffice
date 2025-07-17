@@ -53,7 +53,7 @@ public:
         rtl::OString name;
         rtl::OString value;
     };
-    
+
     CurlRequest( CURL *curl );
     ~CurlRequest();
 
@@ -88,12 +88,12 @@ public:
     std::vector<Header>& getResponseHeaders() { return responseHeaders; }
     const Header *findResponseHeader( const rtl::OString &name );
     com::sun::star::uno::Reference < CurlInputStream > getResponseBody() { return responseBodyInputStream; }
-    
+
 private:
     CurlRequest( const CurlRequest &curlRequest ); // No copy constructor.
     void setURI( CurlUri uri, rtl::OUString path ) throw (DAVException);
     CURLcode perform() throw (DAVException);
-    
+
     static int Curl_SeekCallback(void *userp, curl_off_t offset, int origin);
 
     static size_t Curl_SendMoreBody( char *buffer, size_t size, size_t nitems, void *userdata );
@@ -107,7 +107,7 @@ private:
 
     CURL *curl;
     CURLU *curlUrl;
-    
+
     // Request values:
     curl_slist *requestHeaders;
     const char *requestBody;
@@ -116,7 +116,7 @@ private:
     bool useChunkedEncoding;
     bool (*provideCredentialsCallback)( long statusCode, void *userdata ) throw (DAVException);
     void *provideCredentialsUserdata;
-    
+
     // Response values:
     rtl::OString reasonPhrase;
     int statusCode;

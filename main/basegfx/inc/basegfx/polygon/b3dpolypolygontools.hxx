@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -52,8 +52,8 @@ namespace basegfx
 			For a description see applyLineDashing in b2dpolygontoos.hxx
 		*/
 		BASEGFX_DLLPUBLIC void applyLineDashing(
-			const B3DPolyPolygon& rCandidate, 
-			const ::std::vector<double>& rDotDashArray, 
+			const B3DPolyPolygon& rCandidate,
+			const ::std::vector<double>& rDotDashArray,
 			B3DPolyPolygon* pLineTarget,
             B3DPolyPolygon* pGapTarget = 0,
 			double fFullDashDotLen = 0.0);
@@ -88,8 +88,8 @@ namespace basegfx
 			If nHorSeg == 0 and/or nVerSeg == 0, a default will be calculated to have a step at least each 15 degrees.
 			With VerStart, VerStop and hor range in cartesian may be specified to create a partial sphere only.
          */
-		BASEGFX_DLLPUBLIC B3DPolyPolygon createSpherePolyPolygonFromB3DRange( 
-			const B3DRange& rRange, 
+		BASEGFX_DLLPUBLIC B3DPolyPolygon createSpherePolyPolygonFromB3DRange(
+			const B3DRange& rRange,
 			sal_uInt32 nHorSeg = 0L, sal_uInt32 nVerSeg = 0L,
 			double fVerStart = F_PI2, double fVerStop = -F_PI2,
 			double fHorStart = 0.0, double fHorStop = F_2PI);
@@ -106,8 +106,8 @@ namespace basegfx
 		/** same as createSpherePolyPolygonFromB3DRange, but creates filled polygons (closed and oriented)
 			There is one extra, the bool bNormals defines if normals will be set, default is false
          */
-		BASEGFX_DLLPUBLIC B3DPolyPolygon createSphereFillPolyPolygonFromB3DRange( 
-			const B3DRange& rRange, 
+		BASEGFX_DLLPUBLIC B3DPolyPolygon createSphereFillPolyPolygonFromB3DRange(
+			const B3DRange& rRange,
 			sal_uInt32 nHorSeg = 0L, sal_uInt32 nVerSeg = 0L,
 			bool bNormals = false,
 			double fVerStart = F_PI2, double fVerStop = -F_PI2,
@@ -137,7 +137,7 @@ namespace basegfx
          */
 		BASEGFX_DLLPUBLIC B3DPolyPolygon applyDefaultTextureCoordinatesSphere( const B3DPolyPolygon& rCandidate, const B3DPoint& rCenter, bool bChangeX = true, bool bChangeY = true);
 
-        // isInside test for B3DPoint. On border is not inside as long as not true is given 
+        // isInside test for B3DPoint. On border is not inside as long as not true is given
 		// in bWithBorder flag. It is assumed that the orientations of the given polygon are correct.
 		BASEGFX_DLLPUBLIC bool isInside(const B3DPolyPolygon& rCandidate, const B3DPoint& rPoint, bool bWithBorder = false);
 
@@ -148,10 +148,10 @@ namespace basegfx
 
         /// converters for com::sun::star::drawing::PolyPolygonShape3D
         BASEGFX_DLLPUBLIC B3DPolyPolygon UnoPolyPolygonShape3DToB3DPolyPolygon(
-            const com::sun::star::drawing::PolyPolygonShape3D& rPolyPolygonShape3DSource, 
+            const com::sun::star::drawing::PolyPolygonShape3D& rPolyPolygonShape3DSource,
             bool bCheckClosed = true);
         BASEGFX_DLLPUBLIC void B3DPolyPolygonToUnoPolyPolygonShape3D(
-            const B3DPolyPolygon& rPolyPolygonSource, 
+            const B3DPolyPolygon& rPolyPolygonSource,
             com::sun::star::drawing::PolyPolygonShape3D& rPolyPolygonShape3DRetval);
 
     } // end of namespace tools

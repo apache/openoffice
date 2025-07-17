@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -47,7 +47,7 @@ namespace connectivity
 	{
 		OConnectionPool* m_pPool;
 	public:
-		OPoolTimer(OConnectionPool* _pPool,const ::vos::TTimeValue& _Time) 
+		OPoolTimer(OConnectionPool* _pPool,const ::vos::TTimeValue& _Time)
 			: ::vos::OTimer(_Time)
 			,m_pPool(_pPool)
 		{}
@@ -65,7 +65,7 @@ namespace connectivity
 	typedef ::std::vector< ::com::sun::star::uno::Reference< ::com::sun::star::sdbc::XPooledConnection> > TPooledConnections;
 
 	 // contains the currently pooled connections
-	typedef struct 
+	typedef struct
 	{
 		TPooledConnections	aConnections;
 		sal_Int32			nALiveCount; // will be decremented every time a time says to, when will reach zero the pool will be deleted
@@ -78,20 +78,20 @@ namespace connectivity
 		{
 			m_pBuffer[0] = 0;
 		}
-		
+
 	};
 
 	//	typedef TDigestHolder
 
 	struct TDigestLess : public ::std::binary_function< TDigestHolder, TDigestHolder, bool>
 	{
-		bool operator() (const TDigestHolder& x, const TDigestHolder& y) const 
-		{ 
+		bool operator() (const TDigestHolder& x, const TDigestHolder& y) const
+		{
 			sal_uInt32 i;
 			for(i=0;i < RTL_DIGEST_LENGTH_SHA1 && (x.m_pBuffer[i] >= y.m_pBuffer[i]); ++i)
 				;
 			return i < RTL_DIGEST_LENGTH_SHA1;
-		}      
+		}
 	};
 
 	typedef ::std::map< TDigestHolder,TConnectionPool,TDigestLess> TConnectionMap;
@@ -113,13 +113,13 @@ namespace connectivity
 
 		::osl::Mutex			m_aMutex;
 		::vos::ORef<OPoolTimer>	m_xInvalidator;			// invalidates the connection pool when shot
-		
+
 		::com::sun::star::uno::Reference< ::com::sun::star::sdbc::XDriver >				m_xDriver;		// the one and only driver for this connection pool
 		::com::sun::star::uno::Reference< ::com::sun::star::uno::XInterface >			m_xDriverNode;	// config node entry
 		::com::sun::star::uno::Reference< ::com::sun::star::reflection::XProxyFactory >	m_xProxyFactory;
 		sal_Int32				m_nTimeOut;
 		sal_Int32				m_nALiveCount;
-		
+
 	private:
 		::com::sun::star::uno::Reference< ::com::sun::star::sdbc::XConnection> createNewConnection(const ::rtl::OUString& _rURL,
 								const ::com::sun::star::uno::Sequence< ::com::sun::star::beans::PropertyValue >& _rInfo);

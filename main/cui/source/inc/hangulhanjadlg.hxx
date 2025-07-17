@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -74,7 +74,7 @@ namespace svx
         void SelectEntryPos( sal_uInt16 nPos );
 
         sal_uInt16 GetEntryCount() const;
-        
+
         XubString GetEntry( sal_uInt16 nPos ) const;
         XubString GetSelectEntry() const;
 
@@ -137,8 +137,8 @@ namespace svx
         Link			m_aClickByCharacterLink;
 
 	public:
-        HangulHanjaConversionDialog( 
-                Window* _pParent, 
+        HangulHanjaConversionDialog(
+                Window* _pParent,
                 editeng::HangulHanjaConversion::ConversionDirection _ePrimaryDirection );
 		~HangulHanjaConversionDialog( );
 
@@ -173,7 +173,7 @@ namespace svx
 
 		// should text which does not match the primary conversion direction be ignored?
 		sal_Bool		GetUseBothDirections( ) const;
-		
+
 		// get current conversion direction to use
 		// (return argument if GetUseBothDirections is true)
 		editeng::HangulHanjaConversion::ConversionDirection	GetDirection( editeng::HangulHanjaConversion::ConversionDirection eDefaultDirection ) const;
@@ -188,7 +188,7 @@ namespace svx
 		DECL_LINK( OnSuggestionSelected, void* );
 		DECL_LINK( OnConversionDirectionClicked, CheckBox* );
         DECL_LINK( ClickByCharacterHdl, CheckBox* );
-        
+
 		// fill the suggestion list box with suggestions for the actual input
 		void FillSuggestions( const ::com::sun::star::uno::Sequence< ::rtl::OUString >& _rSuggestions );
 	};
@@ -313,7 +313,7 @@ namespace svx
 		DECL_LINK( EditModifyHdl2, Edit* );
 		DECL_LINK( EditModifyHdl3, Edit* );
 		DECL_LINK( EditModifyHdl4, Edit* );
-		
+
 		DECL_LINK( BookLBSelectHdl, void* );
 		DECL_LINK( NewPBPushHdl, void* );
 		DECL_LINK( DeletePBPushHdl, void* );
@@ -322,7 +322,7 @@ namespace svx
 		void			UpdateOriginalLB( void );
 		void			UpdateSuggestions( void );
 		void            UpdateButtonStates();
-						
+
 		void			SetEditText( Edit& _rEdit, sal_uInt16 _nEntryNum );
 		void			EditModify( Edit* _pEdit, sal_uInt8 _nEntryOffset );
 		void			EditFocusLost( Edit* _pEdit, sal_uInt8 _nEntryOffset );

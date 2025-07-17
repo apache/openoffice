@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,23 +7,23 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
 #ifndef DBAUI_FIELDDESCRIPTIONCONTROL_HXX
 #define DBAUI_FIELDDESCRIPTIONCONTROL_HXX
 
-#ifndef _SV_TABPAGE_HXX 
+#ifndef _SV_TABPAGE_HXX
 #include <vcl/tabpage.hxx>
 #endif
 #ifndef DBAUI_ENUMTYPES_HXX
@@ -47,7 +47,7 @@
 #define COLUMN_DESCRIPTION              4
 
 #define FIELD_FIRST_VIRTUAL_COLUMN		5
-										
+
 #define FIELD_PROPERTY_REQUIRED			5
 #define FIELD_PROPERTY_NUMTYPE			6
 #define FIELD_PROPERTY_AUTOINC			7
@@ -176,17 +176,17 @@ namespace dbaui
 
 		// Sind von den abgeleiteten Klassen zu impl.
 		virtual ::com::sun::star::uno::Reference< ::com::sun::star::util::XNumberFormatter > GetFormatter() const = 0;
-		
+
 		virtual ::com::sun::star::lang::Locale	GetLocale() const = 0;
 
 		virtual void							CellModified(long nRow, sal_uInt16 nColId ) = 0;
 		virtual void							SetModified(sal_Bool bModified);    // base implementation is empty
-												
+
 		virtual TOTypeInfoSP					getTypeInfo(sal_Int32 _nPos)		= 0;
 		virtual const OTypeInfoMap*				getTypeInfo() const  = 0;
-												
-		virtual sal_Bool						isAutoIncrementValueEnabled() const = 0; 
-		virtual ::rtl::OUString					getAutoIncrementValue() const = 0; 
+
+		virtual sal_Bool						isAutoIncrementValueEnabled() const = 0;
+		virtual ::rtl::OUString					getAutoIncrementValue() const = 0;
 
 		String									BoolStringPersistent(const String& rUIString) const;
 		String									BoolStringUI(const String& rPersistentString) const;

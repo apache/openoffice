@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -76,7 +76,7 @@ private:
     bool            m_bIsUndoEditMode;
 
     Link            m_aModifyLink;
-    
+
     void            CallModifyLink() {m_aModifyLink.Call(this);}
 
     SpellDialog*    GetSpellDialog() const {return (SpellDialog*)GetParent();}
@@ -88,28 +88,28 @@ public:
                     ~SentenceEditWindow_Impl();
 
     void            SetModifyHdl(const Link& rLink) { m_aModifyLink = rLink;}
-    
+
     void            SetAttrib( const TextAttrib& rAttr, sal_uLong nPara, sal_uInt16 nStart, sal_uInt16 nEnd );
     void            SetText( const String& rStr );
-    
-    bool            MarkNextError( bool bIgnoreCurrentError );            
+
+    bool            MarkNextError( bool bIgnoreCurrentError );
     void            ChangeMarkedWord(const String& rNewWord, LanguageType eLanguage);
     void            MoveErrorMarkTo(sal_uInt16 nErrorStart, sal_uInt16 nErrorEnd, bool bGrammar);
     String          GetErrorText() const;
     void            RestoreCurrentError();
-    
+
     void            SetAlternatives(
                         com::sun::star::uno::Reference<com::sun::star::linguistic2::XSpellAlternatives> );
-    
+
     const SpellErrorDescription* GetAlternatives();
 
 
     void            ResetModified()   { GetTextEngine()->SetModified(sal_False); m_bIsUndoEditMode = false;}
     sal_Bool            IsModified() const              { return GetTextEngine()->IsModified(); }
-    
+
     bool            IsUndoEditMode() const { return m_bIsUndoEditMode;}
     void            SetUndoEditMode(bool bSet);
-    
+
     svx::SpellPortions  CreateSpellPortions( bool bSetIgnoreFlag ) const;
 
     void            ResetUndo();
@@ -130,15 +130,15 @@ class SpellDialogChildWindow;
 class ExplainButton : public PushButton
 {
     String              m_sExplanation;
-    
+
     virtual void        RequestHelp( const HelpEvent& rHEvt );
     virtual void        Click();
-public: 
+public:
     ExplainButton( Window* pParent, const ResId& rResId ) : PushButton( pParent, rResId ){}
-    ~ExplainButton();    
+    ~ExplainButton();
     void                SetExplanation( const String& rText ) {m_sExplanation = rText;}
     bool                HasExplanation() { return m_sExplanation.Len() > 0;}
-    
+
 };
 
 class SpellDialog : public SfxModelessDialog
@@ -147,23 +147,23 @@ class SpellDialog : public SfxModelessDialog
 
 	friend class SentenceEditWindow_Impl;
 private:
-    
+
     FixedImage      aVendorImageFI;
-    
+
     FixedText       aLanguageFT;
     SvxLanguageBox  aLanguageLB;
-    
+
     FixedText           aNotInDictFT;
-    SentenceEditWindow_Impl  aSentenceED; 
-    
+    SentenceEditWindow_Impl  aSentenceED;
+
     FixedText       aSuggestionFT;
     ListBox         aSuggestionLB;
-    
+
     PushButton      aIgnorePB;
     PushButton      aIgnoreAllPB;
     PushButton      aIgnoreRulePB;
     MenuButton      aAddToDictMB;
-    
+
     PushButton      aChangePB;
     PushButton      aChangeAllPB;
     ExplainButton   aExplainPB;
@@ -188,13 +188,13 @@ private:
     const String    m_sTitleSpelling;
     const String    m_sTitleSpellingGrammar;
     const String    m_sTitleSpellingGrammarVendor;
-    
+
     Size            aOldWordEDSize;
     Link            aDialogUndoLink;
-    
+
     bool            bModified;
     bool            bFocusLocked;
-    
+
     svx::SpellDialogChildWindow& rParent;
     svx::SpellPortions           m_aSavedSentence;
 
@@ -218,7 +218,7 @@ private:
     DECL_LINK( DialogUndoHdl, SpellUndoAction_Impl* );
 
     DECL_STATIC_LINK( SpellDialog, InitHdl, SpellDialog * );
-    
+
 	void            StartSpellOptDlg_Impl();
 	void            InitUserDicts();
 	void            UpdateBoxes_Impl();
@@ -233,17 +233,17 @@ private:
     /** Retrieves the next sentence.
      */
     bool            GetNextSentence_Impl(bool bUseSavedSentence, bool bRechek /*for rechecking the curretn sentence*/);
-    /** Corrects all errors that have been selected to be changed always 
+    /** Corrects all errors that have been selected to be changed always
      */
     bool            ApplyChangeAllList_Impl(SpellPortions& rSentence, bool& bHasReplaced);
-    void            SetTitle_Impl(LanguageType nLang); 
+    void            SetTitle_Impl(LanguageType nLang);
 
-protected:     
+protected:
     virtual void    Paint( const Rectangle& rRect );
     virtual long    Notify( NotifyEvent& rNEvt );
 
 public:
-    SpellDialog( 
+    SpellDialog(
         svx::SpellDialogChildWindow* pChildWindow,
         Window * pParent,
         SfxBindings* pBindings);

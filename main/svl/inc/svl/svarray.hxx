@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -26,7 +26,7 @@
 
 #if 0
 // Nobody wants to touch this code, not even with a ten-foot pole.
-// If one has to read it then the following mapping might be useful: 
+// If one has to read it then the following mapping might be useful:
 //	"nm" seems to be "type name" of the array
 //	"AE" means "type of array element"
 //	"IS" means "initial size", i.e. the initial number of elements
@@ -694,7 +694,7 @@ _SV_DECL_PTRARR_SORT(nm, AE, IS, GS, )
 
 #define SV_DECL_PTRARR_SORT_VISIBILITY(nm, AE, IS, GS, vis)\
 _SV_DECL_PTRARR_SORT(nm, AE, IS, GS, vis)
-                                                                                                                             
+
 
 #define _SV_DECL_PTRARR_SORT_DEL(nm, AE, IS, GS, vis)\
 _SV_DECL_PTRARR_SORT_ALG(nm, AE, IS, GS, vis)\

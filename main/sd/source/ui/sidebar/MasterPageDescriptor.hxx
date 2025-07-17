@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 #ifndef SD_SIDEBAR_PANELS_MASTER_PAGE_DESCRIPTOR_HXX
@@ -64,7 +64,7 @@ public:
     ::std::auto_ptr<std::vector<MasterPageContainerChangeEvent::EventType> >
         Update (
             const MasterPageDescriptor& rDescriptor);
-    
+
     /** This convenience method returns either a small or a large preview,
         depending on the given size specifier.
         Note that the previews are not created when they are not present.
@@ -75,18 +75,18 @@ public:
 
     /** Use the PreviewProvider to get access to a preview of the master
         page.
-        
+
         Note that this is only done, when either bForce is <TRUE/> or
         the PreviewProvider::GetCostIndex() returns 0.
-        
+
         The small preview is created by scaling the large one, not by
         calling PreviewProvider::operator() a second time.
-        
+
         It is the responsibility of the caller to call UpdatePageObject()
         before calling this method  when the PreviewProvider can only work
         when the master page object is present, i.e. its NeedsPageObject()
         method returns <TRUE/>.
-        
+
         @param nCostThreshold
             When this is zero or positive then the preview is created only
             when the preview provider has a cost equal to or smaller than
@@ -109,7 +109,7 @@ public:
         ::sd::PreviewRenderer& rRenderer);
 
     /** Use the PageObjectProvider to get access to the master page object.
-        
+
         Note that this is only done, when either bForce is <TRUE/> or the
         PreviewProvider::GetCostIndex() returns 0.
 
@@ -139,7 +139,7 @@ public:
     };
 
     URLClassification GetURLClassification (void);
-    
+
     /** The Token under which the MasterPageContainer gives access to the
         object.
     */
@@ -148,16 +148,16 @@ public:
     /** A rough specification of the origin of the master page.
     */
     MasterPageContainer::Origin meOrigin;
-    
+
     /** The URL is not empty for master pages loaded from a template
         document.
     */
     ::rtl::OUString msURL;
-    
+
     /** Taken from the title of the template file.
     */
     ::rtl::OUString msPageName;
-    
+
     /** Taken from the master page object.
     */
     ::rtl::OUString msStyleName;
@@ -167,17 +167,17 @@ public:
     /** The actual master page.
     */
     SdPage* mpMasterPage;
-    
+
     /** A slide that uses the master page.
     */
     SdPage* mpSlide;
-    
+
     /** A small (the default size) preview of the master page.  May be
         empty.  When this smaller preview is not empty then the larger one
         is not empty, too.
     */
     Image maSmallPreview;
-    
+
     /** A large preview of the master page.  May be empty.  When this larger
         preview is not empty then the smaller one is not empty, too.
     */
@@ -192,7 +192,7 @@ public:
         the lifetime of a MasterPageDescriptor object.
     */
     ::boost::shared_ptr<PageObjectProvider> mpPageObjectProvider;
-    
+
     /** This index represents the order in which templates are provided via
         the TemplateScanner.  It defines the order in which the entries in
         the AllMasterPagesSelector are displayed.  The default value is -1.

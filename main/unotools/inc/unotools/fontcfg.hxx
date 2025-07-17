@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -71,7 +71,7 @@ class UNOTOOLS_DLLPUBLIC DefaultFontConfiguration
             m_xConfigProvider;
     com::sun::star::uno::Reference< com::sun::star::container::XNameAccess >
             m_xConfigAccess;
-            
+
     struct LocaleAccess
     {
         // the real string used in the configuration
@@ -80,22 +80,22 @@ class UNOTOOLS_DLLPUBLIC DefaultFontConfiguration
         // xAccess is mutable to be able to be filled on demand
         mutable com::sun::star::uno::Reference< com::sun::star::container::XNameAccess > xAccess;
     };
-            
+
     std::hash_map< com::sun::star::lang::Locale,
                    LocaleAccess,
                    utl::LocaleHash >
             m_aConfig;
-    
+
     rtl::OUString tryLocale( const com::sun::star::lang::Locale& rLocale, const rtl::OUString& rType ) const;
-    
+
     DefaultFontConfiguration();
     public:
     ~DefaultFontConfiguration();
-    
+
     static DefaultFontConfiguration* get();
-    
+
     rtl::OUString getDefaultFont( const com::sun::star::lang::Locale& rLocale, int nType ) const;
-    rtl::OUString getUserInterfaceFont( const com::sun::star::lang::Locale& rLocale ) const;    
+    rtl::OUString getUserInterfaceFont( const com::sun::star::lang::Locale& rLocale ) const;
 };
 
 // IMPL_FONT_ATTR_DEFAULT       - Default-Font like Andale Sans UI, Palace Script, Albany, Thorndale, Cumberland, ...
@@ -184,14 +184,14 @@ private:
         // a minimal match is sufficient (that is e.g. "Thorndale" will match
         // "Thorndale BlaBlub"). Also names must be lower case.
         mutable std::vector< FontNameAttr >     aSubstAttributes;
-        
+
         LocaleSubst() : bConfigRead( false ) {}
     };
     std::hash_map< com::sun::star::lang::Locale, LocaleSubst, utl::LocaleHash > m_aSubst;
 	typedef std::hash_set< rtl::OUString, rtl::OUStringHash > UniqueSubstHash;
 	mutable UniqueSubstHash maSubstHash;
 
-    
+
     void fillSubstVector( const com::sun::star::uno::Reference< com::sun::star::container::XNameAccess > xFont,
                           const rtl::OUString& rType,
                           std::vector< String >& rSubstVector ) const;

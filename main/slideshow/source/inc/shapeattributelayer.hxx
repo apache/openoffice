@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -260,7 +260,7 @@ namespace slideshow
                 New alpha value, must be in the [0,1] range
              */
             void setAlpha( const double& rNewValue );
-            
+
             /** Query whether the clip attribute is valid
              */
             bool isClipValid() const;
@@ -275,7 +275,7 @@ namespace slideshow
                 with the origin of the clip polygon).
              */
             void setClip( const ::basegfx::B2DPolyPolygon& rNewClip );
-            
+
             /** Query whether the dim color attribute is valid
 
             	The dim color globally 'dims' the shape towards that
@@ -331,7 +331,7 @@ namespace slideshow
              */
             bool isLineStyleValid() const;
             /** Get the current line mode for line drawing.
-                
+
 				@returns the current line style
              */
             sal_Int16 getLineStyle() const;
@@ -363,7 +363,7 @@ namespace slideshow
             /** Set the text color globally for the whole shape.
              */
             void setCharColor( const RGBColor& nNewColor );
-            
+
             /** Query whether the char rotation angle attribute is valid
              */
             bool isCharRotationAngleValid() const;
@@ -395,7 +395,7 @@ namespace slideshow
             	::com::sun::star::awt::FontWeight constant group.
              */
             void setCharWeight( const double& rStyle );
-            
+
             /** Query whether the underline mode attribute is valid
              */
             bool isUnderlineModeValid() const;
@@ -478,7 +478,7 @@ namespace slideshow
                                                 bool						   bThisInstanceValid,
                                                 bool (ShapeAttributeLayer::*pIsValid)() const,
                                                 T 	(ShapeAttributeLayer::*pGetValue)() const ) const;
-            
+
             ShapeAttributeLayerSharedPtr				mpChild; // may be NULL
 
             ::basegfx::B2DSize 							maSize;

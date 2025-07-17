@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -32,25 +32,25 @@
 #include <map>
 
 namespace writerfilter {
-namespace doctok 
+namespace doctok
 {
 
 class WW8PropertyImpl : public WW8Property, public WW8StructBase
 {
-    sal_uInt8 get_ispmd() const 
+    sal_uInt8 get_ispmd() const
     { return sal::static_int_cast<sal_uInt8>(getId() & 0xff); }
     bool get_fSpec() const { return (getId() & 0x100) != 0; }
-    sal_uInt8 get_sgc() const 
+    sal_uInt8 get_sgc() const
     { return sal::static_int_cast<sal_uInt8>((getId() >> 10) & 0x7); }
-    sal_uInt8 get_spra() const 
+    sal_uInt8 get_spra() const
     { return sal::static_int_cast<sal_uInt8>((getId() >> 13) & 0x7); }
 
 public:
     WW8PropertyImpl(WW8Stream & rStream, sal_uInt32 nOffset, sal_uInt32 nCount);
-    WW8PropertyImpl(const WW8StructBase & rBase, sal_uInt32 nOffset, 
+    WW8PropertyImpl(const WW8StructBase & rBase, sal_uInt32 nOffset,
                     sal_uInt32 nCount);
 
-    WW8PropertyImpl(WW8StructBase * pBase, sal_uInt32 nOffset, 
+    WW8PropertyImpl(WW8StructBase * pBase, sal_uInt32 nOffset,
                     sal_uInt32 nCount);
 
     virtual ~WW8PropertyImpl();
@@ -73,7 +73,7 @@ class WW8PropertySetImpl : public WW8PropertySet, public WW8StructBase,
 
 public:
     typedef boost::shared_ptr<WW8PropertySet> Pointer_t;
-    
+
     WW8PropertySetImpl(WW8Stream & rStream, sal_uInt32 nOffset,
                        sal_uInt32 nCount, bool bPap = false);
 
@@ -115,7 +115,7 @@ class WW8PropertySetIteratorImpl : public WW8PropertySetIterator
     sal_uInt32 mnOffset;
 
 public:
-    WW8PropertySetIteratorImpl(WW8PropertySetImpl * pAttrSet, 
+    WW8PropertySetIteratorImpl(WW8PropertySetImpl * pAttrSet,
                                sal_uInt32 nOffset)
     : mpAttrSet(pAttrSet), mnOffset(nOffset)
     {

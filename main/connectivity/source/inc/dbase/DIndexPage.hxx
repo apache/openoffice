@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -25,9 +25,9 @@
 #define _CONNECTIVITY_DBASE_INDEXPAGE_HXX_
 
 //#ifndef _REF_HXX
-//#include <tools/ref.hxx>		
+//#include <tools/ref.hxx>
 //#endif
-#include <vos/ref.hxx>		
+#include <vos/ref.hxx>
 #include <tools/stream.hxx>
 #ifndef _VECTOR_
 #include <vector>
@@ -47,11 +47,11 @@ namespace connectivity
 		//==================================================================
 		// Index Seitenverweis
 		//==================================================================
-		//	SV_DECL_REF(ONDXPage); // Basisklasse da weitere Informationen gehalten werden muessen				
+		//	SV_DECL_REF(ONDXPage); // Basisklasse da weitere Informationen gehalten werden muessen
 
 		class ONDXPage;
 		typedef vos::ORef<ONDXPage>			ONDXPagePtr_BASE;
-		
+
 		class ONDXPagePtr : public ONDXPagePtr_BASE //ONDXPageRef
 		{
 			friend  SvStream& operator << (SvStream &rStream, const ONDXPagePtr&);
@@ -70,9 +70,9 @@ namespace connectivity
 			sal_uInt32 GetPagePos() const {return nPagePos;}
 			sal_Bool HasPage() const {return nPagePos != 0;}
 			sal_Bool Is() const { return isValid(); }
-			void Clear() 
-			{ 
-				unbind();				
+			void Clear()
+			{
+				unbind();
 			}
 		};
 

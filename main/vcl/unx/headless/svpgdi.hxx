@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -40,7 +40,7 @@ class SvpSalGraphics : public SalGraphics
     bool                                 m_bUseLineColor;
     basebmp::Color                       m_aLineColor;
     bool                                 m_bUseFillColor;
-    basebmp::Color                       m_aFillColor;    
+    basebmp::Color                       m_aFillColor;
     basebmp::Color                       m_aTextColor;
 
     basebmp::DrawMode                    m_aDrawMode;
@@ -121,10 +121,10 @@ public:
     virtual void			drawLine( long nX1, long nY1, long nX2, long nY2 );
     virtual void			drawRect( long nX, long nY, long nWidth, long nHeight );
     virtual bool            drawPolyPolygon( const ::basegfx::B2DPolyPolygon&, double fTransparency );
-    virtual bool            drawPolyLine( 
-        const ::basegfx::B2DPolygon&, 
-        double fTransparency, 
-        const ::basegfx::B2DVector& rLineWidths, 
+    virtual bool            drawPolyLine(
+        const ::basegfx::B2DPolygon&,
+        double fTransparency,
+        const ::basegfx::B2DVector& rLineWidths,
         basegfx::B2DLineJoin,
         com::sun::star::drawing::LineCap);
     virtual void			drawPolyLine( sal_uInt32 nPoints, const SalPoint* pPtAry );

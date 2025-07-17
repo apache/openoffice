@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -41,7 +41,7 @@
 #include "IUpdateHelper.hxx"
 #include "WTypeSelect.hxx"
 
-namespace com { namespace sun { namespace star { 
+namespace com { namespace sun { namespace star {
     namespace awt{
 	    struct FontDescriptor;
     }
@@ -80,9 +80,9 @@ namespace dbaui
 		::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySet >		m_xTable;		// dest table
 		::com::sun::star::uno::Reference< ::com::sun::star::container::XNameAccess>		m_xTables;		// container
 		SharedConnection                                                                m_xConnection;	// dest conn
-		
+
         ::boost::shared_ptr<IUpdateHelper>                                              m_pUpdateHelper;
-		::com::sun::star::uno::Reference< ::com::sun::star::sdbc::XResultSet >			m_xResultSet;	// 
+		::com::sun::star::uno::Reference< ::com::sun::star::sdbc::XResultSet >			m_xResultSet;	//
 		::com::sun::star::uno::Reference< ::com::sun::star::util::XNumberFormatter > 	m_xFormatter;	// a number formatter working with the connection's NumberFormatsSupplier
 		::com::sun::star::uno::Reference< ::com::sun::star::lang::XMultiServiceFactory> m_xFactory;
         ::com::sun::star::util::Date                                                    m_aNullDate;
@@ -91,7 +91,7 @@ namespace dbaui
         SvStream&           m_rInputStream;
 		//dyf add 2006/06/01
 		//for save the selected tablename
-		::rtl::OUString     m_sDefaultTableName;		
+		::rtl::OUString     m_sDefaultTableName;
 		//dyf add end
 		String				m_sTextToken;		// Zellen Inhalt
         String				m_sNumToken;        /// SDNUM value
@@ -161,10 +161,10 @@ namespace dbaui
         );
 
 		void	SetColumnTypes(const TColumnVector* rList,const OTypeInfoMap* _pInfoMap);
-		
+
 		//dyf add 20070601
 		inline void                    SetTableName(const ::rtl::OUString &_sTableName){ m_sDefaultTableName = _sTableName ; }
-		//dyf add end 
+		//dyf add end
 
 		virtual void release() = 0;
 

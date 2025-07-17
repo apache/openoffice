@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -49,7 +49,7 @@ namespace drawinglayer
             The rendering is done using the default-3D renderer from basegfx which supports
             AntiAliasing.
 
-            The 2D primitive's geometric range is defined completely by the 
+            The 2D primitive's geometric range is defined completely by the
             ObjectTransformation combined with evtl. 2D shadows from the 3D objects. The
             shadows of 3D objects are 2D polygons, projected with the 3D transformation.
 
@@ -60,19 +60,19 @@ namespace drawinglayer
 		{
 		private:
             /// the 3D geometry definition
-			primitive3d::Primitive3DSequence					mxChildren3D;				
+			primitive3d::Primitive3DSequence					mxChildren3D;
 
             /// 3D scene attribute set
-			attribute::SdrSceneAttribute						maSdrSceneAttribute;		
+			attribute::SdrSceneAttribute						maSdrSceneAttribute;
 
             /// lighting attribute set
-            attribute::SdrLightingAttribute						maSdrLightingAttribute;	
+            attribute::SdrLightingAttribute						maSdrLightingAttribute;
 
             /// object transformation for scene for 2D definition
-			basegfx::B2DHomMatrix								maObjectTransformation;		
+			basegfx::B2DHomMatrix								maObjectTransformation;
 
             /// scene transformation set and object transformation
-			geometry::ViewInformation3D							maViewInformation3D;		
+			geometry::ViewInformation3D							maViewInformation3D;
 
 			/// the primitiveSequence for on-demand created shadow primitives (see mbShadow3DChecked)
 			Primitive2DSequence									maShadowPrimitives;
@@ -115,11 +115,11 @@ namespace drawinglayer
 			Primitive2DSequence getShadow2D(const geometry::ViewInformation2D& rViewInformation) const;
 
             /** Fast HitTest which uses the last buffered BitmapEx from the last
-                rendered area if available. The return value describes if the check 
+                rendered area if available. The return value describes if the check
                 could be done with the current information, so do NOT use o_rResult
                 when it returns false. o_rResult will be changed on return true and
-                then contains a definitive answer if content of this scene is hit or 
-                not. On return false, it is normally necessary to use the geometric 
+                then contains a definitive answer if content of this scene is hit or
+                not. On return false, it is normally necessary to use the geometric
                 HitTest (see CutFindProcessor usages). The given HitPoint
                 has to be in logic coordinates in scene's ObjectCoordinateSystem.
              */
@@ -127,9 +127,9 @@ namespace drawinglayer
 
 			/// constructor
 			ScenePrimitive2D(
-				const primitive3d::Primitive3DSequence& rxChildren3D, 
-				const attribute::SdrSceneAttribute& rSdrSceneAttribute, 
-				const attribute::SdrLightingAttribute& rSdrLightingAttribute, 
+				const primitive3d::Primitive3DSequence& rxChildren3D,
+				const attribute::SdrSceneAttribute& rSdrSceneAttribute,
+				const attribute::SdrLightingAttribute& rSdrLightingAttribute,
 				const basegfx::B2DHomMatrix& rObjectTransformation,
 				const geometry::ViewInformation3D& rViewInformation3D);
 

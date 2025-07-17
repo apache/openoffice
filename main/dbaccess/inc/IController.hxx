@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -58,29 +58,29 @@ namespace dbaui
 		virtual void executeUnChecked(const ::com::sun::star::util::URL& _rCommand, const ::com::sun::star::uno::Sequence< ::com::sun::star::beans::PropertyValue>& aArgs) = 0;
 
 		/** executes the given command only when it is allowed
-			@param	_rCommand	
+			@param	_rCommand
 				the URL of the command
 		*/
 		virtual void executeChecked(const ::com::sun::star::util::URL& _rCommand, const ::com::sun::star::uno::Sequence< ::com::sun::star::beans::PropertyValue>& aArgs) = 0;
 
 		/** executes the given command without checking if it is allowed
 			@param	_nCommandId
-				the id of the command URL 
+				the id of the command URL
 		*/
 		virtual void executeUnChecked(sal_uInt16 _nCommandId, const ::com::sun::star::uno::Sequence< ::com::sun::star::beans::PropertyValue>& aArgs) = 0;
 
 		/** executes the given command only when it is allowed
 			@param	_nCommandId
-				the id of the command URL 
+				the id of the command URL
 		*/
 		virtual void executeChecked(sal_uInt16 _nCommandId, const ::com::sun::star::uno::Sequence< ::com::sun::star::beans::PropertyValue>& aArgs) = 0;
 
 
 		/** checks if the given Command is enabled
 			@param	_nCommandId
-				the id of the command URL 
-			
-			@return	
+				the id of the command URL
+
+			@return
 				<TRUE/> if the command is allowed, otherwise <FALSE/>.
 		*/
 		virtual sal_Bool isCommandEnabled(sal_uInt16 _nCommandId) const = 0;
@@ -88,8 +88,8 @@ namespace dbaui
 		/** checks if the given Command is enabled
 			@param	_rCompleteCommandURL
 				the URL of the command
-			
-			@return	
+
+			@return
 				<TRUE/> if the command is allowed, otherwise <FALSE/>.
 		*/
         virtual sal_Bool isCommandEnabled( const ::rtl::OUString& _rCompleteCommandURL ) const = 0;
@@ -115,7 +115,7 @@ namespace dbaui
 		virtual void notifyHiContrastChanged() = 0;
 
 		/** checks if the selected data source is read only
-			@return 
+			@return
 				<TRUE/> if read only, otherwise <FALSE/>
 		*/
 		virtual sal_Bool isDataSourceReadOnly() const = 0;

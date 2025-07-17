@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -41,7 +41,7 @@ namespace basegfx
     class B2DPolyPolygon;
 }
 
-namespace com { namespace sun { namespace star { namespace rendering 
+namespace com { namespace sun { namespace star { namespace rendering
 {
     class  XCanvas;
 } } } }
@@ -58,26 +58,26 @@ namespace cppcanvas
         class ImplCanvas : public virtual Canvas
         {
         public:
-            ImplCanvas( const ::com::sun::star::uno::Reference< 
+            ImplCanvas( const ::com::sun::star::uno::Reference<
                         	::com::sun::star::rendering::XCanvas >& rCanvas );
             virtual ~ImplCanvas();
 
             virtual void                             setTransformation( const ::basegfx::B2DHomMatrix& rMatrix );
             virtual ::basegfx::B2DHomMatrix          getTransformation() const;
-            
+
             virtual void                             setClip( const ::basegfx::B2DPolyPolygon& rClipPoly );
             virtual void                             setClip();
             virtual ::basegfx::B2DPolyPolygon const* getClip() const;
-            
+
             virtual FontSharedPtr                    createFont( const ::rtl::OUString& rFontName, const double& rCellSize ) const;
-            
+
             virtual ColorSharedPtr                   createColor() const;
-            
+
             virtual CanvasSharedPtr                  clone() const;
 
             virtual void                             clear() const;
 
-            virtual ::com::sun::star::uno::Reference< 
+            virtual ::com::sun::star::uno::Reference<
                 ::com::sun::star::rendering::XCanvas > 		getUNOCanvas() const;
 
             virtual ::com::sun::star::rendering::ViewState	getViewState() const;

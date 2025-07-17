@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -75,13 +75,13 @@ class SecurityEnvironment_MSCryptImpl : public ::cppu::WeakImplHelper4<
 
 		//Certificate store
 		HCERTSTORE							m_hCertStore ;
-		
+
 		// i120675, save the store handles
 		HCERTSTORE 							m_hMySystemStore;
 		HCERTSTORE 							m_hRootSystemStore;
 		HCERTSTORE 							m_hTrustSystemStore;
 		HCERTSTORE 							m_hCaSystemStore;
-		
+
 		//Enable default system cryptography setting
 		sal_Bool							m_bEnableDefault ;
 
@@ -110,15 +110,15 @@ class SecurityEnvironment_MSCryptImpl : public ::cppu::WeakImplHelper4<
 
 		virtual ::com::sun::star::uno::Reference< ::com::sun::star::security::XCertificate > SAL_CALL createCertificateFromAscii( const ::rtl::OUString& asciiCertificate ) throw( ::com::sun::star::uno::SecurityException , ::com::sun::star::uno::RuntimeException ) ;
 
-		virtual ::sal_Int32 SAL_CALL verifyCertificate( 
+		virtual ::sal_Int32 SAL_CALL verifyCertificate(
             const ::com::sun::star::uno::Reference< ::com::sun::star::security::XCertificate >& xCert,
-            const ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Reference< 
-            ::com::sun::star::security::XCertificate > >& intermediateCertificates) 
+            const ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Reference<
+            ::com::sun::star::security::XCertificate > >& intermediateCertificates)
             throw (::com::sun::star::uno::SecurityException, ::com::sun::star::uno::RuntimeException) ;
 	virtual ::sal_Int32 SAL_CALL getCertificateCharacters( const ::com::sun::star::uno::Reference< ::com::sun::star::security::XCertificate >& xCert ) throw (::com::sun::star::uno::SecurityException, ::com::sun::star::uno::RuntimeException) ;
-	
+
 		virtual ::rtl::OUString SAL_CALL getSecurityEnvironmentInformation(  ) throw (::com::sun::star::uno::RuntimeException);
-	
+
 
 		//Methods from XInitialization
 		virtual void SAL_CALL initialize(
@@ -145,7 +145,7 @@ class SecurityEnvironment_MSCryptImpl : public ::cppu::WeakImplHelper4<
 		static ::com::sun::star::uno::Reference< ::com::sun::star::lang::XSingleServiceFactory > impl_createFactory( const ::com::sun::star::uno::Reference< ::com::sun::star::lang::XMultiServiceFactory >& aServiceManager ) ;
 
 		//Methods from XUnoTunnel
-		virtual sal_Int64 SAL_CALL getSomething( const ::com::sun::star::uno::Sequence< sal_Int8 >& aIdentifier ) 
+		virtual sal_Int64 SAL_CALL getSomething( const ::com::sun::star::uno::Sequence< sal_Int8 >& aIdentifier )
 			throw (::com::sun::star::uno::RuntimeException);
 
 		static const ::com::sun::star::uno::Sequence< sal_Int8 >& getUnoTunnelId() ;

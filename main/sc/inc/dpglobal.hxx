@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,22 +7,22 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
 // Wang Xu Ming - DataPilot migration
 // Buffer&&Performance
-// 
+//
 #ifndef _SC_DPGLOBAL_HXX
 #define _SC_DPGLOBAL_HXX
 
@@ -120,7 +120,7 @@ private:
 public:
 	ScDPItemData() : nNumFormat( 0 ), fValue(0.0), mbFlag( 0 ){}
 	ScDPItemData( sal_uLong nNF, const String & rS, double fV, sal_uInt8 bF ):nNumFormat(nNF), aString(rS), fValue(fV), mbFlag( bF ){}
-	ScDPItemData( const String& rS, double fV = 0.0, sal_Bool bHV = sal_False, const sal_uLong nNumFormat = 0 , sal_Bool bData = sal_True) ;				
+	ScDPItemData( const String& rS, double fV = 0.0, sal_Bool bHV = sal_False, const sal_uLong nNumFormat = 0 , sal_Bool bData = sal_True) ;
 	ScDPItemData( ScDocument* pDoc, SCROW nRow, sal_uInt16 nCol, sal_uInt16 nDocTab );
 
 	void		SetString( const String& rS ) { aString = rS; mbFlag &= ~(MK_VAL|MK_DATE); nNumFormat = 0; mbFlag |= MK_DATA; }
@@ -128,7 +128,7 @@ public:
 	sal_Bool		IsCaseInsEqual( const ScDPItemData& r ) const;
 
 	size_t		Hash() const;
-	
+
 	// exact equality
 	sal_Bool		operator==( const ScDPItemData& r ) const;
 	// case insensitive equality
@@ -149,7 +149,7 @@ public:
 	sal_Bool IsDate() const;
 	sal_Bool HasDatePart() const;
 	void SetDate( sal_Bool b ) ;
-	
+
 	TypedStrData*  CreateTypeString( );
 	sal_uInt8	 GetType() const;
 	sal_uInt8 & GetFlag() throw() { return mbFlag; }
@@ -162,7 +162,7 @@ public:
 	// construct
 	ScDPItemDataPool(void);
 	ScDPItemDataPool(const ScDPItemDataPool& r);
-	
+
 	virtual ~ScDPItemDataPool(void);
 	virtual const ScDPItemData* getData( sal_Int32 nId  );
 	virtual sal_Int32 getDataId( const ScDPItemData& aData );
@@ -185,18 +185,18 @@ class ScTabViewShell;
 namespace ScDPGlobal
 {
 // used for core data
-	String GetFieldFuncString( const String& rSourceName, sal_uInt16 &rFuncMask, sal_Bool bIsValue );	
+	String GetFieldFuncString( const String& rSourceName, sal_uInt16 &rFuncMask, sal_Bool bIsValue );
 	String GetFuncString( const String &rString, const sal_uInt16 nIndex );
 	com::sun::star::uno::Reference<com::sun::star::container::XNameAccess> DP_GetMembers( const com::sun::star::uno::Reference<
 																					  com::sun::star::sheet::XDimensionsSupplier>&rSrc, long nField );
 // common operation
 	String operator + ( const String & rL, const String &rR );
 	Rectangle operator *( const Rectangle &rLeft, const std::pair<double,double> & rRight );
-// used for  DataPilot Panel 
+// used for  DataPilot Panel
     ScDPInfoWnd* GetDPInfoWnd( ScTabViewShell *pViewShell );
    bool ChkDPTableOverlap( ScDocument *pDestDoc, std::list<ScDPObject> & rClipboard, SCCOL nClipStartCol, SCROW nClipStartRow, SCCOL nStartCol, SCROW nStartRow, SCTAB nStartTab, sal_uInt16 nEndTab, sal_Bool bExcludeClip = sal_False );
 
 }
 #define isDateFormat( nNumType ) (!!((nNumType) & NUMBERFORMAT_DATE) )
 
-#endif 
+#endif

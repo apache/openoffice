@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -69,7 +69,7 @@ public:
     /** Returns the area of the underlying document that is visible in the
     * corresponding window.
 
-    	@return 
+    	@return
             The rectangle of the visible part of the document. The values
             are, contrary to the base class, in internal coordinates of
             100th of mm.
@@ -82,7 +82,7 @@ public:
     	@param rPoint
             Point in internal coordinates (100th of mm).
 
-        @return 
+        @return
             The same point but in screen coordinates relative to the upper
             left corner of the (current) screen.
      */
@@ -94,7 +94,7 @@ public:
     	@param rSize
             Size in internal coordinates (100th of mm).
 
-        @return 
+        @return
             The same size but in screen coordinates.
      */
     virtual Size LogicToPixel (const Size& rSize) const = 0;
@@ -106,7 +106,7 @@ public:
             Point in screen coordinates relative to the upper left corner of
             the (current) screen.
 
-        @return 
+        @return
             The same point but in internal coordinates (100th of mm).
      */
     virtual Point PixelToLogic (const Point& rPoint) const = 0;

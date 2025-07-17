@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,22 +7,22 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
 
-#ifndef _GOODIES_DESCRIPTOR_HXX 
-#define _GOODIES_DESCRIPTOR_HXX 
+#ifndef _GOODIES_DESCRIPTOR_HXX
+#define _GOODIES_DESCRIPTOR_HXX
 
 #include <comphelper/propertysethelper.hxx>
 #include <com/sun/star/lang/XServiceInfo.hpp>
@@ -60,7 +60,7 @@
 using namespace com::sun::star;
 
 namespace comphelper { class PropertySetInfo; }
-namespace com { namespace sun { namespace star { namespace io { class XInputStream; } } } } 
+namespace com { namespace sun { namespace star { namespace io { class XInputStream; } } } }
 
 class Graphic;
 
@@ -76,19 +76,19 @@ class GraphicDescriptor : public ::cppu::OWeakAggObject,
 						  public ::comphelper::PropertySetHelper
 {
 public:
-		
+
 	GraphicDescriptor();
 	~GraphicDescriptor() throw();
-	
+
  	void init( const ::Graphic& rGraphic ) throw();
 	void init( const ::rtl::OUString& rURL ) throw();
 	void init( const ::com::sun::star::uno::Reference< ::com::sun::star::io::XInputStream >& rxIStm, const ::rtl::OUString& rURL ) throw();
-	
+
 	bool isValid() const;
 
     static ::rtl::OUString getImplementationName_Static() throw();
     static ::com::sun::star::uno::Sequence< ::rtl::OUString >  getSupportedServiceNames_Static() throw();
-	
+
 protected:
 
 	static ::comphelper::PropertySetInfo* createPropertySetInfo();
@@ -98,7 +98,7 @@ protected:
 	virtual ::com::sun::star::uno::Any SAL_CALL queryInterface( const ::com::sun::star::uno::Type & rType ) throw(::com::sun::star::uno::RuntimeException);
 	virtual void SAL_CALL acquire() throw();
 	virtual void SAL_CALL release() throw();
-    
+
 	// XServiceInfo
     virtual rtl::OUString SAL_CALL getImplementationName() throw( ::com::sun::star::uno::RuntimeException );
     virtual sal_Bool SAL_CALL supportsService( const rtl::OUString& ServiceName ) throw( ::com::sun::star::uno::RuntimeException );
@@ -123,14 +123,14 @@ private:
 	bool					mbTransparent;
 	bool					mbAlpha;
 	bool					mbAnimated;
-		
+
 	GraphicDescriptor( const GraphicDescriptor& rDescriptor );
-	
-	GraphicDescriptor& operator=( const GraphicDescriptor& ); 
+
+	GraphicDescriptor& operator=( const GraphicDescriptor& );
 
 	void implCreate( SvStream& rIStm, const ::rtl::OUString* pPath );
 };
 
 }
 
-#endif 
+#endif

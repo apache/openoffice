@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -49,13 +49,13 @@ namespace backend {
 class BackendDb
 {
 private:
-    
+
     css::uno::Reference<css::xml::dom::XDocument> m_doc;
     css::uno::Reference<css::xml::xpath::XXPathAPI> m_xpathApi;
 
     BackendDb(BackendDb const &);
     BackendDb &  operator = (BackendDb const &);
-    
+
 protected:
     const css::uno::Reference<css::uno::XComponentContext> m_xContext;
     ::rtl::OUString m_urlDb;
@@ -74,7 +74,7 @@ protected:
 
     css::uno::Reference<css::xml::dom::XNode> getKeyElement(
         ::rtl::OUString const & url);
-    
+
     void writeSimpleList(
         ::std::list< ::rtl::OUString> const & list,
         ::rtl::OUString const & sListTagName,
@@ -95,11 +95,11 @@ protected:
 
     css::uno::Reference<css::xml::dom::XNode> writeKeyElement(
         ::rtl::OUString const & url);
-        
+
     ::rtl::OUString readSimpleElement(
         ::rtl::OUString const & sElementName,
         css::uno::Reference<css::xml::dom::XNode> const & xParent);
-        
+
     ::std::vector< ::std::pair< ::rtl::OUString, ::rtl::OUString > >
     readVectorOfPair(
         css::uno::Reference<css::xml::dom::XNode> const & parent,
@@ -154,7 +154,7 @@ public:
     bool activateEntry(::rtl::OUString const & url);
 
     bool hasActiveEntry(::rtl::OUString const & url);
-    
+
 };
 
 class RegisteredDb: public BackendDb
@@ -165,7 +165,7 @@ public:
                   ::rtl::OUString const & url);
     virtual ~RegisteredDb() {};
 
-    
+
     virtual void addEntry(::rtl::OUString const & url);
     virtual bool getEntry(::rtl::OUString const & url);
 

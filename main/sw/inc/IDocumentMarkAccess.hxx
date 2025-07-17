@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -80,11 +80,11 @@ class IDocumentMarkAccess
             const ::rtl::OUString& rProposedName,
             MarkType eMark) =0;
 
-        virtual sw::mark::IFieldmark* makeFieldBookmark( const SwPaM& rPaM, 
-            const rtl::OUString& rName, 
+        virtual sw::mark::IFieldmark* makeFieldBookmark( const SwPaM& rPaM,
+            const rtl::OUString& rName,
             const rtl::OUString& rType) = 0;
-        virtual sw::mark::IFieldmark* makeNoTextFieldBookmark( const SwPaM& rPaM, 
-            const rtl::OUString& rName, 
+        virtual sw::mark::IFieldmark* makeNoTextFieldBookmark( const SwPaM& rPaM,
+            const rtl::OUString& rName,
             const rtl::OUString& rType) = 0;
 
         virtual sw::mark::IMark* makeAnnotationMark(
@@ -95,7 +95,7 @@ class IDocumentMarkAccess
             If there is none, a mark will be created.
 
            @param rTxtNode
-           [in] the paragraph being marked (a selection over the paragraph is marked) 
+           [in] the paragraph being marked (a selection over the paragraph is marked)
 
            @param eMark
            [in] the type of the new mark.
@@ -109,18 +109,18 @@ class IDocumentMarkAccess
         /** Moves an existing mark to a new selection and performs needed updates.
             @param io_pMark
             [in/out] the mark to be moved
-           
+
             @param rPaM
-            [in] new selection to be marked 
+            [in] new selection to be marked
         */
 
         virtual void repositionMark(::sw::mark::IMark* io_pMark,
             const SwPaM& rPaM) =0;
 
-        /** Renames an existing Mark, if possible. 
+        /** Renames an existing Mark, if possible.
             @param io_pMark
             [in/out] the mark to be renamed
-           
+
             @param rNewName
             [in] new name for the mark
 
@@ -132,9 +132,9 @@ class IDocumentMarkAccess
         /** Corrects marks (absolute)
             This method ignores the previous position of the mark in the paragraph
 
-            @param rOldNode 
+            @param rOldNode
             [in] the node from which nodes should be moved
-           
+
             @param rNewPos
             [in] new position to which marks will be moved, if nOffset == 0
 
@@ -148,11 +148,11 @@ class IDocumentMarkAccess
         /** Corrects marks (relative)
             This method uses the previous position of the mark in the paragraph as offset
 
-            @param rOldNode 
+            @param rOldNode
             [in] the node from which nodes should be moved
-           
+
             @param rNewPos
-            [in] new position to which marks from the start of the paragraph will be 
+            [in] new position to which marks from the start of the paragraph will be
                  moved, if nOffset == 0
 
             @param nOffset
@@ -240,7 +240,7 @@ class IDocumentMarkAccess
             [in] the name of the bookmark to find.
 
             @returns
-            an iterator pointing to the bookmark, or getBookmarksEnd() if nothing was found. 
+            an iterator pointing to the bookmark, or getBookmarksEnd() if nothing was found.
         */
         virtual const_iterator_t findBookmark(const ::rtl::OUString& rMark) const =0;
 

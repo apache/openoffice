@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -51,7 +51,7 @@ namespace accessibility
 							,public VCLXAccessibleComponent
 	{
 	protected:
-        
+
 		::com::sun::star::uno::Reference< ::com::sun::star::accessibility::XAccessible > m_xParent;
 
 	protected:
@@ -67,7 +67,7 @@ namespace accessibility
 		virtual void	FillAccessibleStateSet( utl::AccessibleStateSetHelper& rStateSet );
 
 		SvTreeListBox*	getListBox() const;
-		
+
 		void 			RemoveChildEntries(SvLBoxEntry*);
 
 	public:
@@ -106,7 +106,7 @@ namespace accessibility
 		virtual sal_Int16 SAL_CALL getAccessibleRole(  ) throw (::com::sun::star::uno::RuntimeException);
 		virtual ::rtl::OUString SAL_CALL getAccessibleDescription(  ) throw (::com::sun::star::uno::RuntimeException);
 		virtual ::rtl::OUString SAL_CALL getAccessibleName(  ) throw (::com::sun::star::uno::RuntimeException);
-		
+
 		// XAccessibleSelection
 		void SAL_CALL selectAccessibleChild( sal_Int32 nChildIndex ) throw (::com::sun::star::lang::IndexOutOfBoundsException, ::com::sun::star::uno::RuntimeException);
 		sal_Bool SAL_CALL isAccessibleChildSelected( sal_Int32 nChildIndex ) throw (::com::sun::star::lang::IndexOutOfBoundsException, ::com::sun::star::uno::RuntimeException);
@@ -117,14 +117,14 @@ namespace accessibility
 		void SAL_CALL deselectAccessibleChild( sal_Int32 nSelectedChildIndex ) throw (::com::sun::star::lang::IndexOutOfBoundsException, ::com::sun::star::uno::RuntimeException);
 
 		sal_Int32 SAL_CALL getRoleType();
-		
+
 private:
 
 	typedef std::map< SvLBoxEntry*, ::com::sun::star::uno::Reference< ::com::sun::star::accessibility::XAccessible > > MAP_ENTRY;
 	MAP_ENTRY m_mapEntry;
 
-    ::com::sun::star::uno::Reference< ::com::sun::star::accessibility::XAccessible > m_xFocusedChild; 	
-	
+    ::com::sun::star::uno::Reference< ::com::sun::star::accessibility::XAccessible > m_xFocusedChild;
+
 	accessibility::AccessibleListBoxEntry* GetCurEventEntry( const VclWindowEvent& rVclWindowEvent );
 
 	};

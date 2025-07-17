@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -72,7 +72,7 @@ private:
 	class PreviewWindow : public Control
 	{
 	private:
-		
+
 		GraphicObject	maGraphic;
 
 		virtual void	Paint( const Rectangle& rRect );
@@ -107,8 +107,8 @@ protected:
 	const Link&		GetModifyHdl() const { return maModifyHdl; }
 	const Size&		GetGraphicSizePixel() const { return maSizePixel; }
 
-public:				
-					
+public:
+
 					GraphicFilterDialog( Window* pParent, const ResId& rResId, const Graphic& rGraphic );
 					~GraphicFilterDialog();
 
@@ -225,9 +225,9 @@ private:
 
 	public:
 
-						EmbossControl( Window* pParent, const ResId& rResId, RECT_POINT eRectPoint ) : 
+						EmbossControl( Window* pParent, const ResId& rResId, RECT_POINT eRectPoint ) :
 							SvxRectCtl( pParent, rResId ) { SetActualRP( eRectPoint ); }
-	
+
 		void			SetModifyHdl( const Link& rHdl ) { maModifyHdl = rHdl; }
 	};
 

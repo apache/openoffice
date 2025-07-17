@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -35,11 +35,11 @@
 #include <boost/shared_ptr.hpp>
 
 namespace util {
- 
+
   struct NodeDescription
   {
 	typedef boost::shared_ptr<NodeDescription> Pointer_t;
-	
+
 	NodeDescription(const std::string& parent, const std::string& refersTo, const std::string& value, bool inUse);
 
 	std::string mParentNodeId;
@@ -47,14 +47,14 @@ namespace util {
 	std::string mNodeValue;
 	bool mInUse;
   };
-  
+
   /** A file logger
    */
   class ExternalViewLoggerImpl : public Logger
   {
   public:
     ExternalViewLoggerImpl(const std::string& fileName);
-  
+
     virtual void beginTree();
     virtual void endTree();
 
@@ -74,10 +74,10 @@ namespace util {
 
   private:
 	typedef std::map<std::string, NodeDescription::Pointer_t> NodeContainer_t;
-	
+
 	std::string mFileName;
 	NodeContainer_t mNodeContainer;
-	std::ofstream mFile;  
+	std::ofstream mFile;
 	std::stack<std::string> mParentNodeStack;
   };
 

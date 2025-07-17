@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -43,14 +43,14 @@ public:
     typedef sal_uInt32 EventId;
     /** The EventMultiplexer itself is being disposed.  Called for a live
         EventMultiplexer.  Removing a listener as response is not necessary,
-        though. 
+        though.
     */
     static const EventId EID_DISPOSING              = 0x00000001;
-    
+
     /** The selection in the center pane has changed.
     */
     static const EventId EID_EDIT_VIEW_SELECTION    = 0x00000002;
-    
+
     /** The selection in the slide sorter has changed, regardless of whether
         the slide sorter is displayed in the left pane or the center pane.
     */
@@ -64,7 +64,7 @@ public:
         pane) has been removed.
     */
     static const EventId EID_MAIN_VIEW_REMOVED      = 0x00000010;
-    
+
     /** A new ViewShell has been made the MainViewShell.
     */
     static const EventId EID_MAIN_VIEW_ADDED        = 0x00000020;
@@ -97,7 +97,7 @@ public:
     /** Text editing in one of the shapes in the MainViewShell has started.
     */
     static const EventId EID_BEGIN_TEXT_EDIT        = 0x00000800;
-    
+
     /** Text editing in one of the shapes in the MainViewShell has ended.
     */
     static const EventId EID_END_TEXT_EDIT          = 0x00001000;
@@ -105,7 +105,7 @@ public:
     /** A UNO controller has been attached to the UNO frame.
     */
     static const EventId EID_CONTROLLER_ATTACHED    = 0x00002000;
-    
+
     /** A UNO controller has been detached to the UNO frame.
     */
     static const EventId EID_CONTROLLER_DETACHED    = 0x00004000;
@@ -115,7 +115,7 @@ public:
     static const EventId EID_SHAPE_CHANGED          = 0x00008000;
 
     /** A shape has been inserted to a page.  The page is available in the
-        user data. 
+        user data.
     */
     static const EventId EID_SHAPE_INSERTED         = 0x00010000;
 
@@ -152,7 +152,7 @@ public:
 
     When a listener is registered it can specify the events it
     wants to be informed of.  This can be done with code like the following:
-    
+
     mrViewShellBase.GetEventMultiplexer().AddEventListener (
         LINK(this,MasterPagesSelector,EventMultiplexerListener),
         tools::EventMultiplexerEvent::EID_MAIN_VIEW_ADDED
@@ -182,7 +182,7 @@ public:
             be informed about.
     */
     void AddEventListener (
-        Link& rCallback, 
+        Link& rCallback,
         EventMultiplexerEvent::EventId aEventTypeSet);
 
     /** Remove an event listener for the specified event types.
@@ -193,7 +193,7 @@ public:
             for.
     */
     void RemoveEventListener (
-        Link& rCallback, 
+        Link& rCallback,
         EventMultiplexerEvent::EventId aEventTypeSet = EID_FULL_SET);
 
     /** This method is used for out-of-line events.  An event of the

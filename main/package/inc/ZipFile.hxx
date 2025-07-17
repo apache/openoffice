@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -44,9 +44,9 @@ namespace com { namespace sun { namespace star {
 	namespace ucb  { class XProgressHandler; }
 } } }
 
-/*  
+/*
  * We impose arbitrary but reasonable limit on ZIP files.
- */ 
+ */
 
 #define ZIP_MAXNAMELEN 512
 #define ZIP_MAXEXTRA 256
@@ -70,15 +70,15 @@ protected:
 
 	sal_Bool bRecoveryMode;
 
-	com::sun::star::uno::Reference < com::sun::star::io::XInputStream >  createMemoryStream( 
+	com::sun::star::uno::Reference < com::sun::star::io::XInputStream >  createMemoryStream(
 			ZipEntry & rEntry,
-			const ::rtl::Reference < EncryptionData > &rData, 
+			const ::rtl::Reference < EncryptionData > &rData,
 			sal_Bool bRawStream,
 			sal_Bool bDecrypt );
 
 	com::sun::star::uno::Reference < com::sun::star::io::XInputStream >  createFileStream(
 			ZipEntry & rEntry,
-			const ::rtl::Reference < EncryptionData > &rData, 
+			const ::rtl::Reference < EncryptionData > &rData,
 			sal_Bool bRawStream,
 			sal_Bool bDecrypt );
 
@@ -86,7 +86,7 @@ protected:
 	com::sun::star::uno::Reference < com::sun::star::io::XInputStream >  createUnbufferedStream(
             SotMutexHolderRef aMutexHolder,
 			ZipEntry & rEntry,
-			const ::rtl::Reference < EncryptionData > &rData, 
+			const ::rtl::Reference < EncryptionData > &rData,
 			sal_Int8 nStreamMode,
 			sal_Bool bDecrypt,
 			::rtl::OUString aMediaType = ::rtl::OUString() );
@@ -101,14 +101,14 @@ protected:
 
 public:
 
-	ZipFile( com::sun::star::uno::Reference < com::sun::star::io::XInputStream > &xInput, 
-			 const com::sun::star::uno::Reference < com::sun::star::lang::XMultiServiceFactory > &xNewFactory, 
+	ZipFile( com::sun::star::uno::Reference < com::sun::star::io::XInputStream > &xInput,
+			 const com::sun::star::uno::Reference < com::sun::star::lang::XMultiServiceFactory > &xNewFactory,
 			 sal_Bool bInitialise
 			 )
 		throw(::com::sun::star::io::IOException, com::sun::star::packages::zip::ZipException, com::sun::star::uno::RuntimeException);
 
-	ZipFile( com::sun::star::uno::Reference < com::sun::star::io::XInputStream > &xInput, 
-			 const com::sun::star::uno::Reference < com::sun::star::lang::XMultiServiceFactory > &xNewFactory, 
+	ZipFile( com::sun::star::uno::Reference < com::sun::star::io::XInputStream > &xInput,
+			 const com::sun::star::uno::Reference < com::sun::star::lang::XMultiServiceFactory > &xNewFactory,
 			 sal_Bool bInitialise,
 			 sal_Bool bForceRecover,
 			 ::com::sun::star::uno::Reference < ::com::sun::star::ucb::XProgressHandler > xProgress
@@ -120,13 +120,13 @@ public:
 	EntryHash& GetEntryHash() { return aEntries; }
 
 	void setInputStream ( com::sun::star::uno::Reference < com::sun::star::io::XInputStream > xNewStream );
-    ::com::sun::star::uno::Reference< ::com::sun::star::io::XInputStream > SAL_CALL getRawData( 
+    ::com::sun::star::uno::Reference< ::com::sun::star::io::XInputStream > SAL_CALL getRawData(
 			ZipEntry& rEntry,
 			const ::rtl::Reference < EncryptionData > &rData,
 			sal_Bool bDecrypt,
             SotMutexHolderRef aMutexHolder )
 		throw(::com::sun::star::io::IOException, ::com::sun::star::packages::zip::ZipException, ::com::sun::star::uno::RuntimeException);
-	
+
 
     static ::com::sun::star::uno::Reference< ::com::sun::star::xml::crypto::XDigestContext > StaticGetDigestContextForChecksum(
             const ::com::sun::star::uno::Reference< ::com::sun::star::lang::XMultiServiceFactory >& xArgFactory,
@@ -158,21 +158,21 @@ public:
 		throw ( ::com::sun::star::packages::WrongPasswordException,
 				::com::sun::star::packages::zip::ZipIOException,
 				::com::sun::star::uno::RuntimeException );
-				
+
 	static sal_Bool StaticHasValidPassword (
             const ::com::sun::star::uno::Reference< ::com::sun::star::lang::XMultiServiceFactory >& xFactory,
             const ::com::sun::star::uno::Sequence< sal_Int8 > &aReadBuffer,
             const ::rtl::Reference < EncryptionData > &rData );
-	
 
-    ::com::sun::star::uno::Reference< ::com::sun::star::io::XInputStream > SAL_CALL getInputStream( 
+
+    ::com::sun::star::uno::Reference< ::com::sun::star::io::XInputStream > SAL_CALL getInputStream(
 			ZipEntry& rEntry,
 			const ::rtl::Reference < EncryptionData > &rData,
 			sal_Bool bDecrypt,
             SotMutexHolderRef aMutexHolder )
 		throw(::com::sun::star::io::IOException, ::com::sun::star::packages::zip::ZipException, ::com::sun::star::uno::RuntimeException);
 
-    ::com::sun::star::uno::Reference< ::com::sun::star::io::XInputStream > SAL_CALL getDataStream( 
+    ::com::sun::star::uno::Reference< ::com::sun::star::io::XInputStream > SAL_CALL getDataStream(
 			ZipEntry& rEntry,
 			const ::rtl::Reference < EncryptionData > &rData,
 			sal_Bool bDecrypt,
@@ -182,7 +182,7 @@ public:
 				::com::sun::star::packages::zip::ZipException,
 				::com::sun::star::uno::RuntimeException );
 
-    ::com::sun::star::uno::Reference< ::com::sun::star::io::XInputStream > SAL_CALL getWrappedRawStream( 
+    ::com::sun::star::uno::Reference< ::com::sun::star::io::XInputStream > SAL_CALL getWrappedRawStream(
 			ZipEntry& rEntry,
 			const ::rtl::Reference < EncryptionData > &rData,
 			const ::rtl::OUString& aMediaType,

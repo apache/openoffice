@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -191,7 +191,7 @@ public:
 	virtual void			SetParaAttribs( sal_uInt32 nPara, const SfxItemSet& rSet );
     virtual void            RemoveAttribs( const ESelection& rSelection, sal_Bool bRemoveParaAttribs, sal_uInt16 nWhich );
     virtual void            GetPortions( sal_uInt32 nPara, SvUShorts& rList ) const;
-    
+
 	sal_uInt16				GetItemState( const ESelection& rSel, sal_uInt16 nWhich ) const;
 	sal_uInt16				GetItemState( sal_uInt32 nPara, sal_uInt16 nWhich ) const;
 
@@ -204,7 +204,7 @@ public:
 
 	virtual XubString		CalcFieldValue( const SvxFieldItem& rField, sal_uInt32 nPara, sal_uInt16 nPos, Color*& rpTxtColor, Color*& rpFldColor );
 	virtual void 	        FieldClicked( const SvxFieldItem& rField, sal_uInt32 nPara, xub_StrLen nPos );
-	
+
 	virtual sal_Bool		IsValid() const;
 
     virtual void 			SetNotifyHdl( const Link& );
@@ -235,10 +235,10 @@ public:
     virtual void        AppendParagraph();
     virtual xub_StrLen  AppendTextPortion( sal_uInt32 nPara, const String &rText, const SfxItemSet &rSet );
     //XTextCopy
-    virtual void        CopyText(const SvxTextForwarder& rSource); 
+    virtual void        CopyText(const SvxTextForwarder& rSource);
 };
 
-namespace accessibility 
+namespace accessibility
 {
     class AccessibleEditableTextPara;
 }
@@ -455,7 +455,7 @@ public:
 
     // com::sun::star::text::XTextCopy
     virtual void SAL_CALL copyText( const ::com::sun::star::uno::Reference< ::com::sun::star::text::XTextCopy >& xSource ) throw (::com::sun::star::uno::RuntimeException);
-    
+
     // ::com::sun::star::lang::XServiceInfo
     virtual ::rtl::OUString SAL_CALL getImplementationName() throw(::com::sun::star::uno::RuntimeException);
     virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames(  ) throw(::com::sun::star::uno::RuntimeException);

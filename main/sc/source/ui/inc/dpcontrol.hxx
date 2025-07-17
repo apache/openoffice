@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -53,9 +53,9 @@ class Window;
 class ScDocument;
 class ScAccessibleFilterMenu;
 
-/** 
- * This class takes care of physically drawing field button controls inside 
- * data pilot tables. 
+/**
+ * This class takes care of physically drawing field button controls inside
+ * data pilot tables.
  */
 class ScDPFieldButton
 {
@@ -100,9 +100,9 @@ class ScMenuFloatingWindow : public PopupMenuFloatingWindow
 {
 public:
     static size_t MENU_NOT_SELECTED;
-    /** 
-     * Action to perform when an event takes place.  Create a sub-class of 
-     * this to implement the desired action. 
+    /**
+     * Action to perform when an event takes place.  Create a sub-class of
+     * this to implement the desired action.
      */
     class Action
     {
@@ -165,34 +165,34 @@ private:
     size_t getEnclosingMenuItem(const Point& rPos) const;
     size_t getSubMenuPos(ScMenuFloatingWindow* pSubMenu);
 
-    /** 
-     * Fire a menu highlight event since the accessibility framework needs 
-     * this to track focus on menu items. 
+    /**
+     * Fire a menu highlight event since the accessibility framework needs
+     * this to track focus on menu items.
      */
-    void fireMenuHighlightedEvent();  
+    void fireMenuHighlightedEvent();
 
-    /** 
-     * Make sure that the specified submenu is permanently up, the submenu 
-     * close timer is not active, and the correct menu item associated with 
+    /**
+     * Make sure that the specified submenu is permanently up, the submenu
+     * close timer is not active, and the correct menu item associated with
      * the submenu is highlighted.
      */
     void setSubMenuFocused(ScMenuFloatingWindow* pSubMenu);
 
-    /** 
-     * When a menu item of an invisible submenu is selected, we need to make 
-     * sure that all its parent menu(s) are visible, with the right menu item 
-     * highlighted in each of the parents.  Calling this method ensures it. 
+    /**
+     * When a menu item of an invisible submenu is selected, we need to make
+     * sure that all its parent menu(s) are visible, with the right menu item
+     * highlighted in each of the parents.  Calling this method ensures it.
      */
     void ensureSubMenuVisible(ScMenuFloatingWindow* pSubMenu);
 
-    /** 
-     * Dismiss any visible child submenus when a menu item of a parent menu is 
+    /**
+     * Dismiss any visible child submenus when a menu item of a parent menu is
      * selected.
      */
     void ensureSubMenuNotVisible();
 
-    /** 
-     * Dismiss all visible popup menus and set focus back to the application 
+    /**
+     * Dismiss all visible popup menus and set focus back to the application
      * window.  This method is called e.g. when a menu action is fired.
      */
     void terminateAllPopupMenus();
@@ -249,17 +249,17 @@ private:
 
 // ============================================================================
 
-/** 
- * This class implements a popup window for field button, for quick access 
- * of hide-item list, and possibly more stuff related to field options. 
+/**
+ * This class implements a popup window for field button, for quick access
+ * of hide-item list, and possibly more stuff related to field options.
  */
 class ScDPFieldPopupWindow : public ScMenuFloatingWindow
 {
 public:
-    /** 
-     * Extended data that the client code may need to store.  Create a 
-     * sub-class of this and store data there. 
-     */ 
+    /**
+     * Extended data that the client code may need to store.  Create a
+     * sub-class of this and store data there.
+     */
     struct ExtendedData {};
 
     explicit ScDPFieldPopupWindow(Window* pParent, ScDocument* pDoc);
@@ -280,14 +280,14 @@ public:
     void getResult(::std::hash_map< ::rtl::OUString, bool, ::rtl::OUStringHash>& rResult);
     void close(bool bOK);
 
-    /** 
-     * Set auxiliary data that the client code might need.  Note that this 
-     * popup window class manages its life time; no explicit deletion of the 
+    /**
+     * Set auxiliary data that the client code might need.  Note that this
+     * popup window class manages its life time; no explicit deletion of the
      * instance is needed in the client code.
      */
     void setExtendedData(ExtendedData* p);
 
-    /** 
+    /**
      * Get the store auxiliary data, or NULL if no such data is stored.
      */
     ExtendedData* getExtendedData();

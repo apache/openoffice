@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -88,7 +88,7 @@ class SwMailMergeDlg : public SvxStandardDialog
     RadioButton     aSaveIndividualRB;
 
     CheckBox        aGenerateFromDataBaseCB;
-    
+
     FixedText       aColumnFT;
     ListBox         aColumnLB;
     FixedText       aPathFT;
@@ -152,13 +152,13 @@ public:
 	~SwMailMergeDlg();
 
 	inline sal_uInt16	GetMergeType() { return nMergeType; }
-    
+
     bool IsSaveIndividualDocs() const { return aSaveIndividualRB.IsChecked(); }
     bool IsGenerateFromDataBase() const { return aGenerateFromDataBaseCB.IsChecked(); }
     String GetColumnName() const { return aColumnLB.GetSelectEntry();}
     String GetPath() const { return aPathED.GetText();}
 
-    const ::rtl::OUString& GetSaveFilter() const {return m_sSaveFilter;} 
+    const ::rtl::OUString& GetSaveFilter() const {return m_sSaveFilter;}
 	inline const ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Any > GetSelection() const { return m_aSelection; }
     ::com::sun::star::uno::Reference< ::com::sun::star::sdbc::XResultSet> GetResultSet() const;
 
@@ -195,9 +195,9 @@ class SwMailMergeFieldConnectionsDlg : public ModalDialog
     OKButton        aOK;
     CancelButton    aCancel;
     HelpButton      aHelp;
-public:     
+public:
     SwMailMergeFieldConnectionsDlg(Window* pParent);
-    ~SwMailMergeFieldConnectionsDlg();        
+    ~SwMailMergeFieldConnectionsDlg();
 
     sal_Bool    IsUseExistingConnections() const {return aUseExistingRB.IsChecked();}
 };

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -28,7 +28,7 @@
 #include <WW8StructBase.hxx>
 
 namespace writerfilter {
-namespace doctok 
+namespace doctok
 {
 
 class Empty
@@ -50,7 +50,7 @@ template <class T>
    file character positions. The second array contains elements of
    type T. If the first array contains N elements, the second contains
    N - 1 elements. The N-th element in the first array corresponds to
-   the N-th element of the second array. 
+   the N-th element of the second array.
 
    The second array is referred to as the payload.
  */
@@ -69,14 +69,14 @@ public:
     typedef boost::shared_ptr< PLCF< T > > Pointer_t;
 
     PLCF(sal_uInt32 nLength)
-    : WW8StructBase(nLength), nEntryCount(getEntryCount_()), 
+    : WW8StructBase(nLength), nEntryCount(getEntryCount_()),
       nPayloadOffset((nEntryCount + 1) * 4)
     {
     }
 
     PLCF(WW8Stream & rStream,
          sal_Int32 nOffset, sal_Int32 nCount)
-    : WW8StructBase(rStream, nOffset, nCount), 
+    : WW8StructBase(rStream, nOffset, nCount),
       nEntryCount(getEntryCount_()),
       nPayloadOffset((nEntryCount + 1) * 4)
     {
@@ -115,7 +115,7 @@ public:
     typename T::Pointer_t getEntry(sal_uInt32 nIndex) const;
 
     /**
-       Return a C++ pointer a certain payload element. 
+       Return a C++ pointer a certain payload element.
 
        @param nFc         the file character position of the element
      */
@@ -126,7 +126,7 @@ public:
 
 template <class T>
 sal_uInt32 PLCF<T>::getEntryCount_() const
-{ 
+{
     return (getCount() - 4) / (T::getSize() + 4);
 }
 
@@ -139,7 +139,7 @@ sal_uInt32 PLCF<T>::getFc(sal_uInt32 nIndex) const
 template <class T>
 T * PLCF<T>::getEntryPointer(sal_uInt32 nIndex) const
 {
-    return new T(mSequence, nPayloadOffset + nIndex * T::getSize(), 
+    return new T(mSequence, nPayloadOffset + nIndex * T::getSize(),
                  T::getSize());
 }
 

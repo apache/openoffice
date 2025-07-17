@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -118,41 +118,41 @@ public:
     */
     ::com::sun::star::uno::Sequence< ::rtl::OUString > getSupportedPlaforms() const;
 
-    /** 
+    /**
         Returns the localized publisher name and the corresponding URL.
 
         In case there is no publisher element then a pair of two empty strings is returned.
-    */  
+    */
     ::std::pair< ::rtl::OUString, ::rtl::OUString > getLocalizedPublisherNameAndURL() const;
-    
-    /** 
+
+    /**
         Returns the URL for the release notes corresponding to the office's locale.
 
         In case there is no release-notes element then an empty string is returned.
-    */  
+    */
     ::rtl::OUString getLocalizedReleaseNotesURL() const;
 
     /** returns the relative path to the license file.
-        
+
         In case there is no simple-license element then an empty string is returned.
     */
     ::rtl::OUString getLocalizedLicenseURL() const;
 
     /** returns the attributes of the simple-license element
-        
+
         As long as there is a simple-license element, the function will return
         the structure. If it does not exist, then the optional object is uninitialized.
     */
     ::boost::optional<SimpleLicenseAttributes> getSimpleLicenseAttributes() const;
 
     /** returns the localized display name of the extensions.
-        
+
         In case there is no localized display-name then an empty string is returned.
     */
     ::rtl::OUString getLocalizedDisplayName() const;
 
     /**
-        returns the download website URL from the update information. 
+        returns the download website URL from the update information.
 
         There can be multiple URLs where each is assigned to a particular locale.
         The function returs the URL which locale matches best the one used in the office.
@@ -162,9 +162,9 @@ public:
         properly as "browser based update". The return value will only then not be initialized
         if there is no <code>&lt;update-website&gt;</code>. If the element exists, then it must
         have at least one child element containing an URL.
-        
-        The <code>&lt;update-website&gt;</code> and <code>&lt;update-download&gt;</code> 
-        elements are mutually exclusiv. 
+
+        The <code>&lt;update-website&gt;</code> and <code>&lt;update-download&gt;</code>
+        elements are mutually exclusiv.
 
         @return
         the download website URL, or an empty <code>optional</code> if none is
@@ -172,8 +172,8 @@ public:
     */
     ::boost::optional< ::rtl::OUString > getLocalizedUpdateWebsiteURL() const;
 
-    /** returns the relative URL to the description. 
-        
+    /** returns the relative URL to the description.
+
        The URL is relative to the root directory of the extensions.
     */
     ::rtl::OUString getLocalizedDescriptionURL() const;
@@ -198,19 +198,19 @@ public:
      /**
         Return the download URLs from the update information.
 
-        Because the <code>&lt;update-download&gt;</code> and the <code>&lt;update-website&gt;</code> 
+        Because the <code>&lt;update-download&gt;</code> and the <code>&lt;update-website&gt;</code>
         elements are mutually exclusive one may need to determine exacty if the element
         was provided.
 
         @return
         download URLs
      */
-    ::com::sun::star::uno::Sequence< ::rtl::OUString > 
+    ::com::sun::star::uno::Sequence< ::rtl::OUString >
     getUpdateDownloadUrls() const;
 
-    /** 
+    /**
         Returns the URL for the icon image.
-    */  
+    */
     ::rtl::OUString getIconURL( sal_Bool bHighContrast ) const;
 
     bool hasDescription() const;
@@ -225,34 +225,34 @@ private:
     /** Retrieves a child element which as lang attribute which matches the office locale.
 
         Only top-level children are taken into account. It is also assumed that they are all
-        of the same element type and have a lang attribute. The matching algorithm is according 
+        of the same element type and have a lang attribute. The matching algorithm is according
         to RFC 3066, with the exception that only one variant is allowed.
         @param parent
-        the expression used to obtain the parent of the localized children. It can be null. 
+        the expression used to obtain the parent of the localized children. It can be null.
         Then a null reference is returned.
     */
-    SAL_DLLPRIVATE ::com::sun::star::uno::Reference< ::com::sun::star::xml::dom::XNode > 
+    SAL_DLLPRIVATE ::com::sun::star::uno::Reference< ::com::sun::star::xml::dom::XNode >
         getLocalizedChild( ::rtl::OUString const & sParent) const;
-    SAL_DLLPRIVATE  ::com::sun::star::uno::Reference< ::com::sun::star::xml::dom::XNode> 
-        matchFullLocale(::com::sun::star::uno::Reference< 
+    SAL_DLLPRIVATE  ::com::sun::star::uno::Reference< ::com::sun::star::xml::dom::XNode>
+        matchFullLocale(::com::sun::star::uno::Reference<
         ::com::sun::star::xml::dom::XNode > const & xParent, ::rtl::OUString const & sLocale) const;
-    SAL_DLLPRIVATE  ::com::sun::star::uno::Reference< ::com::sun::star::xml::dom::XNode> 
-        matchCountryAndLanguage(::com::sun::star::uno::Reference< 
+    SAL_DLLPRIVATE  ::com::sun::star::uno::Reference< ::com::sun::star::xml::dom::XNode>
+        matchCountryAndLanguage(::com::sun::star::uno::Reference<
         ::com::sun::star::xml::dom::XNode > const & xParent,
         ::com::sun::star::lang::Locale const & officeLocale) const;
-    SAL_DLLPRIVATE  ::com::sun::star::uno::Reference< ::com::sun::star::xml::dom::XNode> 
+    SAL_DLLPRIVATE  ::com::sun::star::uno::Reference< ::com::sun::star::xml::dom::XNode>
         matchLanguage(
         ::com::sun::star::uno::Reference< ::com::sun::star::xml::dom::XNode > const & xParent,
         ::com::sun::star::lang::Locale const & officeLocale) const;
-    
+
     /** If there is no child element with a locale matching the office locale, then we use
         the first child. In the case of the simple-license we also use the former default locale, which
         was determined by the default-license-id (/description/registration/simple-license/@default-license-id)
         and the license-id attributes (/description/registration/simple-license/license-text/@license-id).
-        However, since OOo 2.4 we use also the first child as default for the license 
+        However, since OOo 2.4 we use also the first child as default for the license
         unless the two attributes are present.
     */
-    SAL_DLLPRIVATE  ::com::sun::star::uno::Reference< ::com::sun::star::xml::dom::XNode> 
+    SAL_DLLPRIVATE  ::com::sun::star::uno::Reference< ::com::sun::star::xml::dom::XNode>
         getChildWithDefaultLocale(
         ::com::sun::star::uno::Reference< ::com::sun::star::xml::dom::XNode > const & xParent) const;
     /**
@@ -262,14 +262,14 @@ private:
     SAL_DLLPRIVATE ::rtl::OUString getLocalizedHREFAttrFromChild(
         ::rtl::OUString const & sXPathParent, bool * out_bParentExists) const;
 
-    static SAL_DLLPRIVATE ::rtl::OUString 
+    static SAL_DLLPRIVATE ::rtl::OUString
         localeToString(::com::sun::star::lang::Locale const & locale);
-    
-    /** Gets the node value for a given expression. The expression is used in 
+
+    /** Gets the node value for a given expression. The expression is used in
         m_xpath-selectSingleNode. The value of the returned node is return value
         of this function.
     */
-    SAL_DLLPRIVATE ::rtl::OUString 
+    SAL_DLLPRIVATE ::rtl::OUString
         getNodeValueFromExpression(::rtl::OUString const & expression) const;
 
     /** Check the extensions blacklist if additional extension meta data (e.g. dependencies)
@@ -277,13 +277,13 @@ private:
     */
     SAL_DLLPRIVATE void
         checkBlacklist() const;
-    
-    /** Helper method to compare the versions with the current version 
+
+    /** Helper method to compare the versions with the current version
      */
     SAL_DLLPRIVATE bool
         checkBlacklistVersion(::rtl::OUString currentversion,
                               ::com::sun::star::uno::Sequence< ::rtl::OUString > const & versions) const;
-    
+
     ::com::sun::star::uno::Reference<
         ::com::sun::star::uno::XComponentContext > m_context;
     ::com::sun::star::uno::Reference<

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -31,7 +31,7 @@
 #include <unotools/fontcvt.hxx>
 
 
-class SfxStyleSheetPool; 
+class SfxStyleSheetPool;
 
 class XEditAttribute
 {
@@ -197,7 +197,7 @@ private:
 	SfxItemPool*			pPool;
 	sal_Bool					bOwnerOfPool;
 	XParaPortionList*		pPortionInfo;
-	
+
 	sal_uInt32				nObjSettings;
 	sal_uInt16 					nMetric;
 	sal_uInt16 					nVersion;
@@ -262,7 +262,7 @@ public:
 
 	virtual sal_Bool			RemoveCharAttribs( sal_uInt16 nWhich = 0 );
 	virtual sal_Bool			RemoveParaAttribs( sal_uInt16 nWhich = 0 );
-	
+
 	virtual void			MergeParaAttribs( const SfxItemSet& rAttribs, sal_uInt16 nStart, sal_uInt16 nEnd );
 
 	virtual sal_Bool			IsFieldObject() const;

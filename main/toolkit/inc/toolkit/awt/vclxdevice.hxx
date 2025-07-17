@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -44,7 +44,7 @@ class VirtualDevice;
 // For using nDummy, no incompatible update, add a sal_Bool bCreatedWithToolkitMember later...
 #define FLAGS_CREATEDWITHTOOLKIT    0x00000001
 
-class TOOLKIT_DLLPUBLIC VCLXDevice :	public ::com::sun::star::awt::XDevice, 
+class TOOLKIT_DLLPUBLIC VCLXDevice :	public ::com::sun::star::awt::XDevice,
 					public ::com::sun::star::lang::XTypeProvider,
 					public ::com::sun::star::lang::XUnoTunnel,
 /* public ::com::sun::star::awt::XTextConstraints,*/
@@ -56,7 +56,7 @@ class TOOLKIT_DLLPUBLIC VCLXDevice :	public ::com::sun::star::awt::XDevice,
 private:
 	vos::IMutex&	mrMutex;	// Reference to SolarMutex
 	OutputDevice*			mpOutputDevice;
-	
+
 public:
 	void*					pDummy;
 	sal_uInt32				nFlags;
@@ -71,10 +71,10 @@ public:
 
 	void					SetOutputDevice( OutputDevice* pOutDev ) { mpOutputDevice = pOutDev; }
 	OutputDevice*			GetOutputDevice() const { return mpOutputDevice; }
-	
+
 	void                    SetCreatedWithToolkit( sal_Bool bCreatedWithToolkit );
 	sal_Bool                IsCreatedWithToolkit() const;
-	
+
 	// ::com::sun::star::uno::XInterface
     ::com::sun::star::uno::Any					SAL_CALL queryInterface( const ::com::sun::star::uno::Type & rType ) throw(::com::sun::star::uno::RuntimeException);
 	void										SAL_CALL acquire() throw()	{ OWeakObject::acquire(); }
@@ -89,7 +89,7 @@ public:
 	::com::sun::star::uno::Sequence< ::com::sun::star::uno::Type >	SAL_CALL getTypes() throw(::com::sun::star::uno::RuntimeException);
 	::com::sun::star::uno::Sequence< sal_Int8 >						SAL_CALL getImplementationId() throw(::com::sun::star::uno::RuntimeException);
 
-	// ::com::sun::star::awt::XDevice, 
+	// ::com::sun::star::awt::XDevice,
 	::com::sun::star::uno::Reference< ::com::sun::star::awt::XGraphics >	SAL_CALL createGraphics(  ) throw(::com::sun::star::uno::RuntimeException);
 	::com::sun::star::uno::Reference< ::com::sun::star::awt::XDevice >		SAL_CALL createDevice( sal_Int32 nWidth, sal_Int32 nHeight ) throw(::com::sun::star::uno::RuntimeException);
 	::com::sun::star::awt::DeviceInfo										SAL_CALL getInfo() throw(::com::sun::star::uno::RuntimeException);
@@ -118,7 +118,7 @@ public:
 class VCLXVirtualDevice : public VCLXDevice
 {
 private:
-	VirtualDevice*	mpVDev;	
+	VirtualDevice*	mpVDev;
 
 public:
 					~VCLXVirtualDevice();

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -36,7 +36,7 @@ namespace pdfi
     struct Element;
     struct EmitContext;
     struct ElementTreeVisitable;
-    
+
     class StyleContainer
     {
     public:
@@ -47,7 +47,7 @@ namespace pdfi
             rtl::OUString            Contents;
             Element*                 ContainedElement;
             std::vector< Style* >    SubStyles;
-            
+
             Style() : ContainedElement( NULL )  {}
             Style( const rtl::OString& rName, const PropertyMap& rProps ) :
                 Name( rName ),
@@ -55,7 +55,7 @@ namespace pdfi
                 ContainedElement( NULL )
             {}
         };
-    
+
     private:
         struct HashedStyle
         {
@@ -64,12 +64,12 @@ namespace pdfi
             rtl::OUString           Contents;
             Element*                ContainedElement;
             std::vector<sal_Int32>  SubStyles;
-            
+
             bool                    IsSubStyle;
             sal_Int32               RefCount;
-            
+
             HashedStyle() : ContainedElement( NULL ), IsSubStyle( true ), RefCount( 0 ) {}
-            
+
             HashedStyle( const HashedStyle& rRight ) :
                 Name( rRight.Name ),
                 Properties( rRight.Properties ),
@@ -95,7 +95,7 @@ namespace pdfi
                      nRet ^= size_t(SubStyles[n]);
                 return nRet;
             }
-            
+
             bool operator==(const HashedStyle& rRight) const
             {
                 if( Name != rRight.Name                 ||
@@ -123,13 +123,13 @@ namespace pdfi
                 return rStyle.hashCode();
             }
         };
-        
+
         struct StyleIdNameSort;
         friend struct StyleIdNameSort;
         struct StyleIdNameSort
         {
             const std::hash_map< sal_Int32, HashedStyle >* m_pMap;
-            
+
             StyleIdNameSort( const std::hash_map< sal_Int32, HashedStyle >* pMap ) :
                 m_pMap(pMap)
             {}
@@ -147,15 +147,15 @@ namespace pdfi
                     return left_it->second.Name < right_it->second.Name;
             }
         };
-   
+
         sal_Int32                                               m_nNextId;
         std::hash_map< sal_Int32, HashedStyle >                 m_aIdToStyle;
         std::hash_map< HashedStyle, sal_Int32, StyleHash >      m_aStyleToId;
-        
-        void impl_emitStyle( sal_Int32           nStyleId, 
+
+        void impl_emitStyle( sal_Int32           nStyleId,
                              EmitContext&        rContext,
                              ElementTreeVisitor& rContainedElemVisitor );
-        
+
     public:
         StyleContainer();
 
@@ -166,7 +166,7 @@ namespace pdfi
         sal_Int32 getStyleId( const Style& rStyle )
         { return impl_getStyleId( rStyle, false ); }
         sal_Int32 getStandardStyleId( const rtl::OString& rFamily );
-        
+
         // returns NULL for an invalid style id
         const PropertyMap* getProperties( sal_Int32 nStyleId ) const;
         sal_Int32 setProperties( sal_Int32 nStyleId, const PropertyMap &rNewProps );

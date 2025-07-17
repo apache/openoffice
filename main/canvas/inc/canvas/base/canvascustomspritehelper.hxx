@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -71,16 +71,16 @@ namespace canvas
 
         /// need to call this method for XCanvas::drawBitmap(), for opacity tracking
         void checkDrawBitmap( const Sprite::Reference& 															rSprite,
-                              const ::com::sun::star::uno::Reference< ::com::sun::star::rendering::XBitmap >&	xBitmap, 
-                              const ::com::sun::star::rendering::ViewState& 									viewState, 
+                              const ::com::sun::star::uno::Reference< ::com::sun::star::rendering::XBitmap >&	xBitmap,
+                              const ::com::sun::star::rendering::ViewState& 									viewState,
                               const ::com::sun::star::rendering::RenderState& 									renderState );
 
         // XSprite
         void setAlpha( const Sprite::Reference& rSprite,
                        double 					alpha );
         void move( const Sprite::Reference& 						rSprite,
-                   const ::com::sun::star::geometry::RealPoint2D& 	aNewPos, 
-                   const ::com::sun::star::rendering::ViewState& 	viewState, 
+                   const ::com::sun::star::geometry::RealPoint2D& 	aNewPos,
+                   const ::com::sun::star::rendering::ViewState& 	viewState,
                    const ::com::sun::star::rendering::RenderState& 	renderState );
         void transform( const Sprite::Reference& 							rSprite,
                        const ::com::sun::star::geometry::AffineMatrix2D&	aTransformation );
@@ -142,7 +142,7 @@ namespace canvas
         double getAlpha() const { return mfAlpha; }
 
         /// Retrieve current clip
-        const ::com::sun::star::uno::Reference< 
+        const ::com::sun::star::uno::Reference<
             ::com::sun::star::rendering::XPolyPolygon2D >& getClip() const { return mxClipPoly; }
 
         const ::basegfx::B2DHomMatrix& getTransformation() const { return maTransform; }
@@ -207,7 +207,7 @@ namespace canvas
 
         	@derive Needs to be provided by backend-specific code
          */
-        virtual ::basegfx::B2DPolyPolygon polyPolygonFromXPolyPolygon2D( 
+        virtual ::basegfx::B2DPolyPolygon polyPolygonFromXPolyPolygon2D(
             ::com::sun::star::uno::Reference< ::com::sun::star::rendering::XPolyPolygon2D >& xPoly ) const = 0;
 
         /** Update clip information from current state
@@ -234,7 +234,7 @@ namespace canvas
         	clip shows the full sprite content, or contains a
         	rectangular subarea of the sprite, outside of which
         	the sprite content is fully clipped.
-            
+
             @see mbIsCurrClipRectangle
          */
 		::basegfx::B2DRange									maCurrClipBounds;
@@ -243,7 +243,7 @@ namespace canvas
         ::basegfx::B2DPoint									maPosition;
         ::basegfx::B2DVector								maSize;
 		::basegfx::B2DHomMatrix								maTransform;
-        ::com::sun::star::uno::Reference< 
+        ::com::sun::star::uno::Reference<
               ::com::sun::star::rendering::XPolyPolygon2D >	mxClipPoly;
         double                                              mfPriority;
         double												mfAlpha;

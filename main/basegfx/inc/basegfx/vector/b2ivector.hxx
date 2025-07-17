@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -43,12 +43,12 @@ namespace basegfx
 	*/
 	class BASEGFX_DLLPUBLIC B2IVector : public ::basegfx::B2ITuple
 	{
-	public:					
+	public:
 		/**	Create a 2D Vector
 
         	The vector is initialized to (0, 0)
 		*/
-		B2IVector() 
+		B2IVector()
 		:	B2ITuple()
 		{}
 
@@ -57,12 +57,12 @@ namespace basegfx
 			@param nX
 			This parameter is used to initialize the X-coordinate
 			of the 2D Vector.
-			
+
 			@param nY
 			This parameter is used to initialize the Y-coordinate
 			of the 2D Vector.
 		*/
-		B2IVector(sal_Int32 nX, sal_Int32 nY) 
+		B2IVector(sal_Int32 nX, sal_Int32 nY)
 		:	B2ITuple(nX, nY)
 		{}
 
@@ -71,36 +71,36 @@ namespace basegfx
 			@param rVec
 			The 2D Vector which will be copied.
 		*/
-		B2IVector(const B2IVector& rVec) 
+		B2IVector(const B2IVector& rVec)
 		:	B2ITuple(rVec)
 		{}
 
 		/** constructor with tuple to allow copy-constructing
 			from B2ITuple-based classes
 		*/
-		B2IVector(const ::basegfx::B2ITuple& rTuple) 
+		B2IVector(const ::basegfx::B2ITuple& rTuple)
 		:	B2ITuple(rTuple)
 		{}
 
-		~B2IVector() 
+		~B2IVector()
 		{}
 
 		/** *=operator to allow usage from B2IVector, too
 		*/
-		B2IVector& operator*=( const B2IVector& rPnt ) 
-		{ 
+		B2IVector& operator*=( const B2IVector& rPnt )
+		{
 			mnX *= rPnt.mnX;
-			mnY *= rPnt.mnY; 
-			return *this; 
+			mnY *= rPnt.mnY;
+			return *this;
 		}
 
 		/** *=operator to allow usage from B2IVector, too
 		*/
-		B2IVector& operator*=(sal_Int32 t) 
-		{ 
-			mnX *= t; 
-			mnY *= t; 
-			return *this; 
+		B2IVector& operator*=(sal_Int32 t)
+		{
+			mnX *= t;
+			mnY *= t;
+			return *this;
 		}
 
 		/** assignment operator to allow assigning the results
@@ -167,7 +167,7 @@ namespace basegfx
 
 		static const B2IVector& getEmptyVector();
 	};
-	
+
 	// external operators
 	//////////////////////////////////////////////////////////////////////////
 
@@ -209,14 +209,14 @@ namespace basegfx
 	BASEGFX_DLLPUBLIC bool areParallel( const B2IVector& rVecA, const B2IVector& rVecB );
 
 	/** Transform vector by given transformation matrix.
-	    
+
 		Since this is a vector, translational components of the
     	matrix are disregarded.
 	*/
 	BASEGFX_DLLPUBLIC B2IVector operator*( const B2DHomMatrix& rMat, const B2IVector& rVec );
 
 	/** Test continuity between given vectors.
-	    
+
 		The two given vectors are assumed to describe control points on a
     	common point. Calculate if there is a continuity between them.
 	*/

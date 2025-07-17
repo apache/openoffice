@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -59,11 +59,11 @@ inline void _defaultConstructStruct(
 	{
 		defaultConstructStruct( pMem, pTypeDescr->pBaseTypeDescription );
 	}
-	
+
 	typelib_TypeDescriptionReference ** ppTypeRefs = (pTypeDescr)->ppTypeRefs;
 	sal_Int32 * pMemberOffsets = pTypeDescr->pMemberOffsets;
 	sal_Int32 nDescr = pTypeDescr->nMembers;
-	
+
 	while (nDescr--)
 	{
 		::uno_type_constructData( (char *)pMem + pMemberOffsets[nDescr], ppTypeRefs[nDescr] );
@@ -102,8 +102,8 @@ inline void _defaultConstructArray(
 		{
 			rtl_uString** ppElement = (rtl_uString **)pMem + i;
 			*ppElement = 0;
-			rtl_uString_new( ppElement);			
-		}		
+			rtl_uString_new( ppElement);
+		}
 		break;
 	case typelib_TypeClass_TYPE:
 		for (i=0; i < nTotalElements; i++)
@@ -140,7 +140,7 @@ inline void _defaultConstructArray(
 	case typelib_TypeClass_SEQUENCE:
 		for (i=0; i < nTotalElements; i++)
 		{
-			uno_Sequence** ppElement = (uno_Sequence **)pMem + i; 
+			uno_Sequence** ppElement = (uno_Sequence **)pMem + i;
 			*ppElement = createEmptySequence();
 		}
 		break;
@@ -157,7 +157,7 @@ inline void _defaultConstructData(
 	typelib_TypeDescriptionReference * pType,
 	typelib_TypeDescription * pTypeDescr )
 	SAL_THROW( () )
-{	
+{
 	switch (pType->eTypeClass)
 	{
 	case typelib_TypeClass_CHAR:

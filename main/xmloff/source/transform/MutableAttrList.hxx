@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -37,7 +37,7 @@ class XMLMutableAttributeList : public ::cppu::WeakImplHelper3<
 		::com::sun::star::util::XCloneable,
 		::com::sun::star::lang::XUnoTunnel>
 {
-	::com::sun::star::uno::Reference< 
+	::com::sun::star::uno::Reference<
 		::com::sun::star::xml::sax::XAttributeList> m_xAttrList;
 
 	SvXMLAttributeList *m_pMutableAttrList;
@@ -46,7 +46,7 @@ class XMLMutableAttributeList : public ::cppu::WeakImplHelper3<
 
 public:
 	XMLMutableAttributeList();
-	XMLMutableAttributeList( const ::com::sun::star::uno::Reference< 
+	XMLMutableAttributeList( const ::com::sun::star::uno::Reference<
 		::com::sun::star::xml::sax::XAttributeList> & rAttrList,
 		   sal_Bool bClone=sal_False );
 	~XMLMutableAttributeList();
@@ -54,7 +54,7 @@ public:
 	static const ::com::sun::star::uno::Sequence< sal_Int8 > & getUnoTunnelId() throw();
 
 	// XUnoTunnel
-    virtual sal_Int64 SAL_CALL getSomething( const ::com::sun::star::uno::Sequence< sal_Int8 >& aIdentifier ) throw(::com::sun::star::uno::RuntimeException);			 
+    virtual sal_Int64 SAL_CALL getSomething( const ::com::sun::star::uno::Sequence< sal_Int8 >& aIdentifier ) throw(::com::sun::star::uno::RuntimeException);
 
 	// ::com::sun::star::xml::sax::XAttributeList
 	virtual sal_Int16 SAL_CALL getLength(void) throw( ::com::sun::star::uno::RuntimeException );

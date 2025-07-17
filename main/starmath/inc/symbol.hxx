@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -134,8 +134,8 @@ typedef std::vector< const SmSym * >            SymbolPtrVec_t;
 
 struct lt_SmSymPtr : public std::binary_function< const SmSym *, const SmSym *, bool >
 {
-    bool operator() ( const SmSym *pSym1, const SmSym *pSym2 ) 
-    { 
+    bool operator() ( const SmSym *pSym1, const SmSym *pSym2 )
+    {
         return pSym1->GetCharacter() < pSym2->GetCharacter();
     }
 };
@@ -173,7 +173,7 @@ public:
 	{
         return ((SmSymbolManager *) this)->GetSymbolByName(rSymbolName);
 	}
-    
+
     bool        IsModified() const          { return m_bModified; }
     void        SetModified(bool bModify)   { m_bModified = bModify; }
 

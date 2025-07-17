@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -41,7 +41,7 @@ namespace connectivity
 	//= but when disposed it doesn't dispose the real connection
 	//==========================================================================
     typedef ::cppu::ImplHelper2<        ::com::sun::star::lang::XServiceInfo,
-										::com::sun::star::lang::XUnoTunnel										
+										::com::sun::star::lang::XUnoTunnel
 								> OConnection_BASE;
 
 	class OOO_DLLPUBLIC_DBTOOLS OConnectionWrapper :	 public OConnection_BASE
@@ -62,12 +62,12 @@ namespace connectivity
 		void disposing();
 	public:
 		OConnectionWrapper( );
-		
+
 		// XServiceInfo
 		DECLARE_SERVICE_INFO();
 		virtual ::com::sun::star::uno::Any SAL_CALL queryInterface( const ::com::sun::star::uno::Type& _rType ) throw (::com::sun::star::uno::RuntimeException);
 		virtual ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Type > SAL_CALL getTypes(  ) throw (::com::sun::star::uno::RuntimeException);
-		
+
 		// com::sun::star::lang::XUnoTunnel
         virtual sal_Int64 SAL_CALL getSomething( const ::com::sun::star::uno::Sequence< sal_Int8 >& aIdentifier ) throw(::com::sun::star::uno::RuntimeException);
         static ::com::sun::star::uno::Sequence< sal_Int8 > getUnoTunnelImplementationId();

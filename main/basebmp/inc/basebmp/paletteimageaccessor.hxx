@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -57,26 +57,26 @@ private:
     template<class A, typename C> friend class PaletteImageAccessor;
 #endif
 
-    Accessor          maAccessor;  
+    Accessor          maAccessor;
     const value_type* mpPalette;
     std::size_t       mnNumEntries;
 
 public:
-    PaletteImageAccessor() : 
+    PaletteImageAccessor() :
         maAccessor(),
         mpPalette(0),
         mnNumEntries(0)
     {}
 
-    template< class A > explicit 
-    PaletteImageAccessor( PaletteImageAccessor<A,ColorType> const& rSrc ) : 
+    template< class A > explicit
+    PaletteImageAccessor( PaletteImageAccessor<A,ColorType> const& rSrc ) :
         maAccessor( rSrc.maAccessor ),
         mpPalette( rSrc.mpPalette ),
         mnNumEntries( rSrc.mnNumEntries )
     {}
 
     PaletteImageAccessor( const value_type* pPalette,
-                          std::size_t       numEntries ) : 
+                          std::size_t       numEntries ) :
         maAccessor(),
         mpPalette(pPalette),
         mnNumEntries(numEntries)
@@ -84,7 +84,7 @@ public:
 
     template< class T > PaletteImageAccessor( T                 accessor,
                                               const value_type* pPalette,
-                                              std::size_t       numEntries ) : 
+                                              std::size_t       numEntries ) :
         maAccessor(accessor),
         mpPalette(pPalette),
         mnNumEntries(numEntries)
@@ -110,7 +110,7 @@ public:
         while( curr_entry != palette_end )
         {
             if( ColorTraits<value_type>::distance(*curr_entry,
-                                                  *best_entry) 
+                                                  *best_entry)
                 > ColorTraits<value_type>::distance(*curr_entry,
                                                     v) )
             {
@@ -126,22 +126,22 @@ public:
     // -------------------------------------------------------
 
     template< class Iterator >
-    value_type operator()(Iterator const& i) const 
-    { 
-        return mpPalette[ maAccessor(i) ]; 
+    value_type operator()(Iterator const& i) const
+    {
+        return mpPalette[ maAccessor(i) ];
     }
 
     template< class Iterator, class Difference >
     value_type operator()(Iterator const& i, Difference const& diff) const
     {
-        return mpPalette[ maAccessor(i,diff) ]; 
+        return mpPalette[ maAccessor(i,diff) ];
     }
 
     // -------------------------------------------------------
 
     template< typename V, class Iterator >
     void set(V const& value, Iterator const& i) const
-    { 
+    {
         maAccessor.set(
             lookup(
                 vigra::detail::RequiresExplicitCast<value_type>::cast(value) ),

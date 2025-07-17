@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -91,7 +91,7 @@ private:
 	com::sun::star::util::Date aNullDate;
 	::com::sun::star::uno::Reference<
 		::com::sun::star::text::XNumberingTypeInfo > xNumTypeInfo;
-	::com::sun::star::uno::Reference< 
+	::com::sun::star::uno::Reference<
 		::com::sun::star::i18n::XCharacterClassification > xCharClass;
 	// #110680#
 	::com::sun::star::uno::Reference< ::com::sun::star::lang::XMultiServiceFactory > mxServiceFactory;
@@ -109,8 +109,8 @@ public:
 		the default unit for textual measures */
 	// #110680#
 	// SvXMLUnitConverter( MapUnit eCoreMeasureUnit, MapUnit eXMLMeasureUnit );
-	SvXMLUnitConverter( 
-		MapUnit eCoreMeasureUnit, 
+	SvXMLUnitConverter(
+		MapUnit eCoreMeasureUnit,
 		MapUnit eXMLMeasureUnit,
 		const ::com::sun::star::uno::Reference< ::com::sun::star::lang::XMultiServiceFactory >& xServiceFactory );
 
@@ -404,15 +404,15 @@ public:
 
 	static void clearUndefinedChars(rtl::OUString& rTarget, const rtl::OUString& rSource);
 
-	::rtl::OUString encodeStyleName( const ::rtl::OUString& rName, 
+	::rtl::OUString encodeStyleName( const ::rtl::OUString& rName,
 									 sal_Bool *pEncoded=0 ) const;
 
-    /** convert an Any to string (typesafe) */                                     
+    /** convert an Any to string (typesafe) */
     static sal_Bool convertAny(      ::rtl::OUStringBuffer&    sValue,
                                      ::rtl::OUStringBuffer&    sType ,
                                const com::sun::star::uno::Any& aValue);
 
-    /** convert a string to Any (typesafe) */                                     
+    /** convert a string to Any (typesafe) */
     static sal_Bool convertAny(      com::sun::star::uno::Any& aValue,
                                const ::rtl::OUString&          sType ,
                                const ::rtl::OUString&          sValue);

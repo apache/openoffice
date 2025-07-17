@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -37,7 +37,7 @@
 #include <com/sun/star/lang/XUnoTunnel.hpp>
 #include <svx/AccessibleTextHelper.hxx>
 #include "svx/svxdllapi.h"
-#ifndef _COM_SUN_STAR_ACCESSIBILITY_XACCESSIBLESELECTION_HPP_ 
+#ifndef _COM_SUN_STAR_ACCESSIBILITY_XACCESSIBLESELECTION_HPP_
 #include <com/sun/star/accessibility/XAccessibleSelection.hpp>
 #endif
 #ifndef _COM_SUN_STAR_ACCESSIBILITY_XACCESSIBLETEXT_HPP_
@@ -96,7 +96,7 @@ class IAccessibleParent;
 class SVX_DLLPUBLIC AccessibleShape
     :	public AccessibleContextBase,
         public AccessibleComponentBase,
-        public ::com::sun::star::accessibility::XAccessibleSelection, 
+        public ::com::sun::star::accessibility::XAccessibleSelection,
         public ::com::sun::star::accessibility::XAccessibleExtendedAttributes,
         public ::com::sun::star::accessibility::XAccessibleGroupPosition,
         public com::sun::star::accessibility::XAccessibleHypertext,
@@ -129,41 +129,41 @@ public:
         const ::com::sun::star::uno::Reference< ::com::sun::star::drawing::XShape>& rxShape, const ::com::sun::star::uno::Reference< ::com::sun::star::accessibility::XAccessible>& rxParent, const AccessibleShapeTreeInfo& rShapeTreeInfo, sal_Int32 nIndex = -1);
 	 //Solution: Overwrite the object's current name.
     virtual ::rtl::OUString SAL_CALL  	getAccessibleName (void) throw (::com::sun::star::uno::RuntimeException);
-    virtual ::rtl::OUString SAL_CALL  	getAccessibleDescription() throw (::com::sun::star::uno::RuntimeException);	
+    virtual ::rtl::OUString SAL_CALL  	getAccessibleDescription() throw (::com::sun::star::uno::RuntimeException);
 	virtual ::com::sun::star::uno::Reference< ::com::sun::star::accessibility::XAccessibleRelationSet> SAL_CALL getAccessibleRelationSet (void) throw (::com::sun::star::uno::RuntimeException);
 //=====  XAccessibleSelection  ============================================
-	
-	virtual void SAL_CALL selectAccessibleChild( 
-		sal_Int32 nChildIndex ) 
-		throw ( ::com::sun::star::lang::IndexOutOfBoundsException, 
+
+	virtual void SAL_CALL selectAccessibleChild(
+		sal_Int32 nChildIndex )
+		throw ( ::com::sun::star::lang::IndexOutOfBoundsException,
 		::com::sun::star::uno::RuntimeException );
-	
-	virtual sal_Bool SAL_CALL isAccessibleChildSelected( 
-		sal_Int32 nChildIndex ) 
-		throw ( ::com::sun::star::lang::IndexOutOfBoundsException, 
+
+	virtual sal_Bool SAL_CALL isAccessibleChildSelected(
+		sal_Int32 nChildIndex )
+		throw ( ::com::sun::star::lang::IndexOutOfBoundsException,
 		::com::sun::star::uno::RuntimeException );
-	
-	virtual void SAL_CALL clearAccessibleSelection(  ) 
+
+	virtual void SAL_CALL clearAccessibleSelection(  )
 		throw ( ::com::sun::star::uno::RuntimeException );
-	
-	virtual void SAL_CALL selectAllAccessibleChildren(  ) 
+
+	virtual void SAL_CALL selectAllAccessibleChildren(  )
 		throw ( ::com::sun::star::uno::RuntimeException );
-	
-	virtual sal_Int32 SAL_CALL getSelectedAccessibleChildCount(  ) 
+
+	virtual sal_Int32 SAL_CALL getSelectedAccessibleChildCount(  )
 		throw ( ::com::sun::star::uno::RuntimeException );
-	
-	virtual ::com::sun::star::uno::Reference< ::com::sun::star::accessibility::XAccessible > SAL_CALL getSelectedAccessibleChild( 
-		sal_Int32 nSelectedChildIndex ) 
-		throw ( ::com::sun::star::lang::IndexOutOfBoundsException, 
+
+	virtual ::com::sun::star::uno::Reference< ::com::sun::star::accessibility::XAccessible > SAL_CALL getSelectedAccessibleChild(
+		sal_Int32 nSelectedChildIndex )
+		throw ( ::com::sun::star::lang::IndexOutOfBoundsException,
 		::com::sun::star::uno::RuntimeException);
-	
-	virtual void SAL_CALL deselectAccessibleChild( 
-		sal_Int32 nSelectedChildIndex ) 
-		throw ( ::com::sun::star::lang::IndexOutOfBoundsException, 
+
+	virtual void SAL_CALL deselectAccessibleChild(
+		sal_Int32 nSelectedChildIndex )
+		throw ( ::com::sun::star::lang::IndexOutOfBoundsException,
 		::com::sun::star::uno::RuntimeException );
 
 	// ====== XAccessibleExtendedAttributes =====================================
-	virtual ::com::sun::star::uno::Any SAL_CALL getExtendedAttributes() 
+	virtual ::com::sun::star::uno::Any SAL_CALL getExtendedAttributes()
 	throw (::com::sun::star::lang::IndexOutOfBoundsException, ::com::sun::star::uno::RuntimeException) ;
 	///	Return this object's role.
 	virtual sal_Int16 SAL_CALL getAccessibleRole (void) throw (::com::sun::star::uno::RuntimeException);
@@ -228,7 +228,7 @@ public:
             A value of <TRUE/> indicates that the state is set.  A <FALSE/>
             value indicates an unset state or the inability to access the
             entity that manages the state set.
-    
+
     */
     sal_Bool GetState (sal_Int16 aState);
 
@@ -239,7 +239,7 @@ public:
     virtual sal_Int32 SAL_CALL
     	getAccessibleChildCount (void)
         throw (::com::sun::star::uno::RuntimeException);
-        
+
     /**	Return the specified child.
         @param nIndex
             Index of the requested child.
@@ -250,7 +250,7 @@ public:
             Throws an exception if the index is not valid.
     */
     virtual ::com::sun::star::uno::Reference<
-            ::com::sun::star::accessibility::XAccessible> SAL_CALL 
+            ::com::sun::star::accessibility::XAccessible> SAL_CALL
     	getAccessibleChild (sal_Int32 nIndex)
         throw (::com::sun::star::lang::IndexOutOfBoundsException, ::com::sun::star::uno::RuntimeException);
 
@@ -268,30 +268,30 @@ public:
 
     //=====  XAccessibleComponent  ============================================
 
-    virtual ::com::sun::star::uno::Reference< 
-        ::com::sun::star::accessibility::XAccessible > SAL_CALL 
-        getAccessibleAtPoint (const ::com::sun::star::awt::Point& aPoint) 
+    virtual ::com::sun::star::uno::Reference<
+        ::com::sun::star::accessibility::XAccessible > SAL_CALL
+        getAccessibleAtPoint (const ::com::sun::star::awt::Point& aPoint)
         throw (::com::sun::star::uno::RuntimeException);
 
-    virtual ::com::sun::star::awt::Rectangle SAL_CALL getBounds (void) 
+    virtual ::com::sun::star::awt::Rectangle SAL_CALL getBounds (void)
         throw (::com::sun::star::uno::RuntimeException);
 
-    virtual ::com::sun::star::awt::Point SAL_CALL getLocation (void) 
+    virtual ::com::sun::star::awt::Point SAL_CALL getLocation (void)
         throw (::com::sun::star::uno::RuntimeException);
 
-    virtual ::com::sun::star::awt::Point SAL_CALL getLocationOnScreen (void) 
+    virtual ::com::sun::star::awt::Point SAL_CALL getLocationOnScreen (void)
         throw (::com::sun::star::uno::RuntimeException);
 
-    virtual ::com::sun::star::awt::Size SAL_CALL getSize (void) 
+    virtual ::com::sun::star::awt::Size SAL_CALL getSize (void)
         throw (::com::sun::star::uno::RuntimeException);
 
-    virtual sal_Int32 SAL_CALL getForeground (void) 
+    virtual sal_Int32 SAL_CALL getForeground (void)
         throw (::com::sun::star::uno::RuntimeException);
 
-    virtual sal_Int32 SAL_CALL getBackground (void) 
+    virtual sal_Int32 SAL_CALL getBackground (void)
         throw (::com::sun::star::uno::RuntimeException);
 
-	
+
 
     //=====  XComponent  ========================================================
 
@@ -306,10 +306,10 @@ public:
         @param rxListener
             This listener is informed about accessibility events.
     */
-    virtual void SAL_CALL 
+    virtual void SAL_CALL
         addEventListener (
-            const ::com::sun::star::uno::Reference< 
-            ::com::sun::star::accessibility::XAccessibleEventListener >& rxListener) 
+            const ::com::sun::star::uno::Reference<
+            ::com::sun::star::accessibility::XAccessibleEventListener >& rxListener)
         throw (::com::sun::star::uno::RuntimeException);
 
     /** This call is forwarded to a) the base class and b) to the
@@ -319,30 +319,30 @@ public:
             This listener will not be informed about accessibility events
             anymore.
     */
-    virtual void SAL_CALL 
-        removeEventListener ( 
-            const ::com::sun::star::uno::Reference< 
-            ::com::sun::star::accessibility::XAccessibleEventListener >& rxListener) 
+    virtual void SAL_CALL
+        removeEventListener (
+            const ::com::sun::star::uno::Reference<
+            ::com::sun::star::accessibility::XAccessibleEventListener >& rxListener)
         throw (::com::sun::star::uno::RuntimeException);
 
 
     //=====  XInterface  ======================================================
-    
+
     virtual com::sun::star::uno::Any SAL_CALL
         queryInterface (const com::sun::star::uno::Type & rType)
         throw (::com::sun::star::uno::RuntimeException);
-        
+
     virtual void SAL_CALL
-        acquire (void) 
+        acquire (void)
         throw ();
-        
+
     virtual void SAL_CALL
         release (void)
         throw ();
-        
-        
+
+
 	//=====  XServiceInfo  ====================================================
-    
+
     /**	Returns an identifier for the implementation of this object.
     */
 	virtual ::rtl::OUString SAL_CALL
@@ -354,7 +354,7 @@ public:
         throw (::com::sun::star::uno::RuntimeException);
 
     //=====  XTypeProvider  ===================================================
-    
+
     virtual ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Type> SAL_CALL
         getTypes (void)
         throw (::com::sun::star::uno::RuntimeException);
@@ -368,8 +368,8 @@ public:
     /** Listen for disposing events of the model.  The accessible shape
         remains functional when this happens.
     */
-    virtual void SAL_CALL 
-        disposing (const ::com::sun::star::lang::EventObject& Source) 
+    virtual void SAL_CALL
+        disposing (const ::com::sun::star::lang::EventObject& Source)
         throw (::com::sun::star::uno::RuntimeException);
 
     //=====  document::XEventListener  ========================================
@@ -380,15 +380,15 @@ public:
 
 
     //===== XUnoTunnel ========================================================
-	
+
     static const ::com::sun::star::uno::Sequence< sal_Int8 >&	getUnoTunnelImplementationId() throw();
 	static AccessibleShape*										getImplementation( const ::com::sun::star::uno::Reference< ::com::sun::star::uno::XInterface >& _rxIFace ) throw();
 	sal_Int64													SAL_CALL getSomething( const ::com::sun::star::uno::Sequence< sal_Int8 >& _rIdentifier ) throw(::com::sun::star::uno::RuntimeException);
 
 	//===== XAccessibleHypertext ========================================================
     virtual sal_Int32 SAL_CALL getHyperLinkCount() 	throw (::com::sun::star::uno::RuntimeException);
-    virtual ::com::sun::star::uno::Reference< ::com::sun::star::accessibility::XAccessibleHyperlink > 
-		SAL_CALL getHyperLink( sal_Int32 nLinkIndex ) 	
+    virtual ::com::sun::star::uno::Reference< ::com::sun::star::accessibility::XAccessibleHyperlink >
+		SAL_CALL getHyperLink( sal_Int32 nLinkIndex )
 		throw (::com::sun::star::lang::IndexOutOfBoundsException, ::com::sun::star::uno::RuntimeException);
     virtual sal_Int32 SAL_CALL getHyperLinkIndex( sal_Int32 nCharIndex )
 		throw (::com::sun::star::lang::IndexOutOfBoundsException, ::com::sun::star::uno::RuntimeException);
@@ -478,17 +478,17 @@ protected:
     	CreateAccessibleDescription (void)
         throw (::com::sun::star::uno::RuntimeException);
 	virtual ::rtl::OUString
-       GetFullAccessibleName(AccessibleShape *shape) 
+       GetFullAccessibleName(AccessibleShape *shape)
        throw (::com::sun::star::uno::RuntimeException);
     virtual::rtl::OUString GetStyle();
-	void UpdateDocumentAllSelState(::com::sun::star::uno::Reference< 
+	void UpdateDocumentAllSelState(::com::sun::star::uno::Reference<
 		::com::sun::star::accessibility::XAccessibleStateSet > &xStateSet);
     /** Update the <const>OPAQUE</const> and <const>SELECTED</const> state.
     */
     virtual void UpdateStates (void);
 
 private:
-    /** Don't use the default constructor.  Use the public constructor that 
+    /** Don't use the default constructor.  Use the public constructor that
         takes the original shape and the parent as arguments instead.
     */
     SVX_DLLPRIVATE explicit AccessibleShape (void);

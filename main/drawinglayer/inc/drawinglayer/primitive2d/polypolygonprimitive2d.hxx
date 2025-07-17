@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -100,7 +100,7 @@ namespace drawinglayer
         private:
             /// the marker hairline geometry
             basegfx::B2DPolyPolygon                 maPolyPolygon;
-            
+
             /// the two colors
             basegfx::BColor                         maRGBColorA;
             basegfx::BColor                         maRGBColorB;
@@ -115,7 +115,7 @@ namespace drawinglayer
         public:
             /// constructor
             PolyPolygonMarkerPrimitive2D(
-                const basegfx::B2DPolyPolygon& rPolyPolygon, 
+                const basegfx::B2DPolyPolygon& rPolyPolygon,
                 const basegfx::BColor& rRGBColorA,
                 const basegfx::BColor& rRGBColorB,
                 double fDiscreteDashLength);
@@ -156,10 +156,10 @@ namespace drawinglayer
         private:
             /// the line geometry
             basegfx::B2DPolyPolygon                 maPolyPolygon;
-            
+
             /// the line attributes like width, join and color
             attribute::LineAttribute                maLineAttribute;
-            
+
             /// the line stroking (if used)
             attribute::StrokeAttribute              maStrokeAttribute;
 
@@ -170,13 +170,13 @@ namespace drawinglayer
         public:
             /// constructor
             PolyPolygonStrokePrimitive2D(
-                const basegfx::B2DPolyPolygon& rPolyPolygon, 
+                const basegfx::B2DPolyPolygon& rPolyPolygon,
                 const attribute::LineAttribute& rLineAttribute,
                 const attribute::StrokeAttribute& rStrokeAttribute);
 
             /// constructor without stroking
             PolyPolygonStrokePrimitive2D(
-                const basegfx::B2DPolyPolygon& rPolyPolygon, 
+                const basegfx::B2DPolyPolygon& rPolyPolygon,
                 const attribute::LineAttribute& rLineAttribute);
 
             /// data read access
@@ -223,17 +223,17 @@ namespace drawinglayer
         public:
             /// constructor
             PolyPolygonStrokeArrowPrimitive2D(
-                const basegfx::B2DPolyPolygon& rPolyPolygon, 
+                const basegfx::B2DPolyPolygon& rPolyPolygon,
                 const attribute::LineAttribute& rLineAttribute,
-                const attribute::StrokeAttribute& rStrokeAttribute, 
-                const attribute::LineStartEndAttribute& rStart, 
+                const attribute::StrokeAttribute& rStrokeAttribute,
+                const attribute::LineStartEndAttribute& rStart,
                 const attribute::LineStartEndAttribute& rEnd);
 
             /// constructor without stroking
             PolyPolygonStrokeArrowPrimitive2D(
-                const basegfx::B2DPolyPolygon& rPolyPolygon, 
+                const basegfx::B2DPolyPolygon& rPolyPolygon,
                 const attribute::LineAttribute& rLineAttribute,
-                const attribute::LineStartEndAttribute& rStart, 
+                const attribute::LineStartEndAttribute& rStart,
                 const attribute::LineStartEndAttribute& rEnd);
 
             /// data read access
@@ -277,7 +277,7 @@ namespace drawinglayer
         public:
             /// constructor
             PolyPolygonColorPrimitive2D(
-                const basegfx::B2DPolyPolygon& rPolyPolygon, 
+                const basegfx::B2DPolyPolygon& rPolyPolygon,
                 const basegfx::BColor& rBColor);
 
             /// data read access
@@ -306,7 +306,7 @@ namespace drawinglayer
         /** PolyPolygonColorPrimitive2D class
 
             This primitive defines a PolyPolygon filled with a gradient. The
-            decomosition will create a MaskPrimitive2D containing a 
+            decomosition will create a MaskPrimitive2D containing a
             FillGradientPrimitive2D.
          */
         class DRAWINGLAYER_DLLPUBLIC PolyPolygonGradientPrimitive2D : public BufferedDecompositionPrimitive2D
@@ -328,10 +328,10 @@ namespace drawinglayer
         public:
             /// constructors. The one without definition range will use output range as definition range
             PolyPolygonGradientPrimitive2D(
-                const basegfx::B2DPolyPolygon& rPolyPolygon, 
+                const basegfx::B2DPolyPolygon& rPolyPolygon,
                 const attribute::FillGradientAttribute& rFillGradient);
             PolyPolygonGradientPrimitive2D(
-                const basegfx::B2DPolyPolygon& rPolyPolygon, 
+                const basegfx::B2DPolyPolygon& rPolyPolygon,
                 const basegfx::B2DRange& rDefinitionRange,
                 const attribute::FillGradientAttribute& rFillGradient);
 
@@ -359,7 +359,7 @@ namespace drawinglayer
         /** PolyPolygonHatchPrimitive2D class
 
             This primitive defines a PolyPolygon filled with a hatch. The
-            decomosition will create a MaskPrimitive2D containing a 
+            decomosition will create a MaskPrimitive2D containing a
             FillHatchPrimitive2D.
          */
         class DRAWINGLAYER_DLLPUBLIC PolyPolygonHatchPrimitive2D : public BufferedDecompositionPrimitive2D
@@ -417,8 +417,8 @@ namespace drawinglayer
     {
         /** PolyPolygonGraphicPrimitive2D class
 
-            This primitive defines a PolyPolygon filled with bitmap data 
-            (including transparence). The decomosition will create a MaskPrimitive2D 
+            This primitive defines a PolyPolygon filled with bitmap data
+            (including transparence). The decomosition will create a MaskPrimitive2D
             containing a FillGraphicPrimitive2D.
          */
         class DRAWINGLAYER_DLLPUBLIC PolyPolygonGraphicPrimitive2D : public BufferedDecompositionPrimitive2D
@@ -440,10 +440,10 @@ namespace drawinglayer
         public:
             /// constructors. The one without definition range will use output range as definition range
             PolyPolygonGraphicPrimitive2D(
-                const basegfx::B2DPolyPolygon& rPolyPolygon, 
+                const basegfx::B2DPolyPolygon& rPolyPolygon,
                 const attribute::FillGraphicAttribute& rFillGraphic);
             PolyPolygonGraphicPrimitive2D(
-                const basegfx::B2DPolyPolygon& rPolyPolygon, 
+                const basegfx::B2DPolyPolygon& rPolyPolygon,
                 const basegfx::B2DRange& rDefinitionRange,
                 const attribute::FillGraphicAttribute& rFillGraphic);
 
@@ -500,7 +500,7 @@ namespace drawinglayer
         public:
             /// constructor
             PolyPolygonSelectionPrimitive2D(
-                const basegfx::B2DPolyPolygon& rPolyPolygon, 
+                const basegfx::B2DPolyPolygon& rPolyPolygon,
                 const basegfx::BColor& rColor,
                 double fTransparence,
                 double fDiscreteGrow,

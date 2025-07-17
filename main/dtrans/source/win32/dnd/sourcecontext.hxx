@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -59,17 +59,17 @@ public:
 	SourceContext( DragSource* pSource, const Reference<XDragSourceListener>& listener);
 	~SourceContext();
 
-	virtual void SAL_CALL addDragSourceListener( const Reference<XDragSourceListener >& dsl ) 
+	virtual void SAL_CALL addDragSourceListener( const Reference<XDragSourceListener >& dsl )
 		throw( RuntimeException);
-    virtual void SAL_CALL removeDragSourceListener( const Reference<XDragSourceListener >& dsl ) 
+    virtual void SAL_CALL removeDragSourceListener( const Reference<XDragSourceListener >& dsl )
 		throw( RuntimeException);
-    virtual sal_Int32 SAL_CALL getCurrentCursor(  ) 
+    virtual sal_Int32 SAL_CALL getCurrentCursor(  )
 		throw( RuntimeException);
-    virtual void SAL_CALL setCursor( sal_Int32 cursorId ) 
+    virtual void SAL_CALL setCursor( sal_Int32 cursorId )
 		throw( RuntimeException);
-    virtual void SAL_CALL setImage( sal_Int32 imageId ) 
+    virtual void SAL_CALL setImage( sal_Int32 imageId )
 		throw( RuntimeException);
-    virtual void SAL_CALL transferablesFlavorsChanged(  ) 
+    virtual void SAL_CALL transferablesFlavorsChanged(  )
 		throw( RuntimeException);
 
 

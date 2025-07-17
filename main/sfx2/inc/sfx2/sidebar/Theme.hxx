@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 #ifndef SFX_SIDEBAR_THEME_HXX
@@ -71,9 +71,9 @@ public:
     {
         __Begin,
         __Pre_Image = __Begin,
-        
+
         __AnyItem = __Pre_Image,
-        
+
         Image_Grip,
         Image_Expand,
         Image_Collapse,
@@ -84,7 +84,7 @@ public:
         Image_CloseIndicator,
 
         __Image_Color,
-        
+
         Color_DeckTitleFont,
         Color_PanelTitleFont,
         Color_TabMenuSeparator,
@@ -94,7 +94,7 @@ public:
         Color_HighlightText,
 
         __Color_Paint,
-        
+
         Paint_DeckBackground,
         Paint_DeckTitleBarBackground,
         Paint_PanelBackground,
@@ -111,7 +111,7 @@ public:
         Paint_DropDownBackground,
 
         __Paint_Int,
-        
+
         Int_DeckTitleBarHeight,
         Int_DeckBorderSize,
         Int_DeckSeparatorHeight,
@@ -141,11 +141,11 @@ public:
 
         Rect_ToolBoxPadding,
         Rect_ToolBoxBorder,
-        
+
         __Post_Rect,
         __End=__Post_Rect
     };
-    
+
     static Image GetImage (const ThemeItem eItem);
     static Color GetColor (const ThemeItem eItem);
     static const Paint& GetPaint (const ThemeItem eItem);
@@ -153,7 +153,7 @@ public:
     static sal_Int32 GetInteger (const ThemeItem eItem);
     static bool GetBoolean (const ThemeItem eItem);
     static Rectangle GetRectangle (const ThemeItem eItem);
-    
+
     static bool IsHighContrastMode (void);
 
     static void HandleDataChange (void);
@@ -164,7 +164,7 @@ public:
     virtual void SAL_CALL disposing (void);
 
     static cssu::Reference<css::beans::XPropertySet> GetPropertySet (void);
-    
+
     // beans::XPropertySet
     virtual cssu::Reference<css::beans::XPropertySetInfo> SAL_CALL getPropertySetInfo (void)
         throw(cssu::RuntimeException);
@@ -210,7 +210,7 @@ public:
             cssu::RuntimeException);
     virtual sal_Bool SAL_CALL hasPropertyByName (const ::rtl::OUString& rsName)
         throw(cssu::RuntimeException);
-    
+
 private:
     static ::rtl::Reference<Theme> mpInstance;
     static Theme& GetCurrentTheme (void);
@@ -223,14 +223,14 @@ private:
     ::std::vector<Rectangle> maRectangles;
     bool mbIsHighContrastMode;
     bool mbIsHighContrastModeSetManually;
-    
+
     typedef ::std::hash_map<rtl::OUString,ThemeItem, rtl::OUStringHash> PropertyNameToIdMap;
     PropertyNameToIdMap maPropertyNameToIdMap;
     typedef ::std::vector<rtl::OUString> PropertyIdToNameMap;
     PropertyIdToNameMap maPropertyIdToNameMap;
     typedef ::std::vector<cssu::Any> RawValueContainer;
     RawValueContainer maRawValues;
-        
+
     typedef ::std::vector<cssu::Reference<css::beans::XPropertyChangeListener> > ChangeListenerContainer;
     typedef ::std::map<ThemeItem,ChangeListenerContainer> ChangeListeners;
     ChangeListeners maChangeListeners;
@@ -248,7 +248,7 @@ private:
         PT_Rectangle,
         PT_Invalid
     };
-    
+
     void SetupPropertyMaps (void);
     void InitializeTheme (void);
     void UpdateTheme (void);

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -36,7 +36,7 @@ private:
     sal_uInt8 mnType; // :2 0x3
     sal_uInt8 mnResult; // :5 0x7c
     bool mbOwnHelp; // :1 0x80
-    
+
     // offset 5
     bool mbOwnStat; // :1 0x01
     bool mbProtected; // :1 0x02
@@ -44,13 +44,13 @@ private:
     sal_uInt8 mnTextType; // :3 0x38
     bool mbRecalc; // :1 0x4
     bool mbListBox; // :1 0x80
-    
+
     // offset 6
     sal_uInt16 mnMaxLen; // :15 0x7fff maximum length of text field, 0 <=> no limit
-    
+
     // offset 8
     sal_uInt16 mnCheckboxHeight;
-    
+
     // offset 10 and beyond
     ::rtl::OUString msName;
     ::rtl::OUString msDefault; // only for type == 0
@@ -60,16 +60,16 @@ private:
     ::rtl::OUString msStatus;
     ::rtl::OUString msMacroEnter;
     ::rtl::OUString msMacroExit;
-    
+
     ::std::vector< ::rtl::OUString > msListEntries;
-    
+
 protected:
     void WriteOUString(SvStream * pStream, const ::rtl::OUString & rStr, bool bAddZero);
-    
+
 public:
     WW8FFData();
     ~WW8FFData();
-    
+
     void setType(sal_uInt8 nType) { mnType = nType; }
     sal_uInt8 getType() const { return mnType; }
     void setResult(sal_uInt8 nResult) { mnResult = nResult; }
@@ -104,9 +104,9 @@ public:
     const ::rtl::OUString & getMacroEnter() const { return msMacroEnter; }
     void setMacroExit(const ::rtl::OUString & rMacroExit) { msMacroExit = rMacroExit; }
     const ::rtl::OUString & getMacroExit() const { return msMacroExit; }
-    
+
     void addListboxEntry(const ::rtl::OUString & rEntry);
-    
+
     void Write(SvStream * pDataStrm);
 };
 }

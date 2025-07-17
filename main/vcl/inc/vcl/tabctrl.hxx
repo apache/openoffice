@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -80,7 +80,7 @@ private:
     SAL_DLLPRIVATE void			ImplPaint( const Rectangle& rRect, bool bLayout = false );
     SAL_DLLPRIVATE void			ImplFreeLayoutData();
     SAL_DLLPRIVATE long			ImplHandleKeyEvent( const KeyEvent& rKeyEvent );
-   
+
     DECL_DLLPRIVATE_LINK(       ImplListBoxSelectHdl, ListBox* );
     DECL_DLLPRIVATE_LINK(       ImplWindowEventListener, VclSimpleEvent* );
 
@@ -162,7 +162,7 @@ public:
 
     void                SetHelpId( sal_uInt16 nPageId, const rtl::OString& rHelpId );
     rtl::OString        GetHelpId( sal_uInt16 nPageId ) const;
-    
+
     void                SetPageImage( sal_uInt16 nPageId, const Image& rImage );
     const Image*        GetPageImage( sal_uInt16 nPageId ) const;
 

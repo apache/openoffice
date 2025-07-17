@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -119,12 +119,12 @@ private:
 	::std::auto_ptr< TDelimiter >					m_aDelimiter;
 	::std::vector< Any >							m_aDataSourceSettings;
     TSectionsGrid                                   m_aSectionsGrid;
-    
+
 	TPropertyStyleMap								m_aAutoStyleNames;
     TGridStyleMap                                   m_aColumnStyleNames;
     TGridStyleMap                                   m_aRowStyleNames;
-    TGroupFunctionMap                               m_aGroupFunctionMap;    
-    
+    TGroupFunctionMap                               m_aGroupFunctionMap;
+
 	::rtl::OUString									m_sCharSet;
     ::rtl::OUString                                 m_sTableStyle;
     ::rtl::OUString                                 m_sCellStyle;
@@ -187,8 +187,8 @@ protected:
     virtual XMLShapeExport*         CreateShapeExport();
 
 	virtual					~ORptExport(){};
-public:						
-							
+public:
+
 	ORptExport(const Reference< XMultiServiceFactory >& _rxMSF, sal_uInt16 nExportFlag = (EXPORT_CONTENT | EXPORT_AUTOSTYLES | EXPORT_FONTDECLS));
 	// XServiceInfo
 	virtual ::sal_Bool SAL_CALL supportsService( const ::rtl::OUString& ServiceName ) throw (::com::sun::star::uno::RuntimeException);
@@ -243,7 +243,7 @@ class ORptStylesExportHelper
 public:
 	static ::rtl::OUString getImplementationName_Static(  ) throw (::com::sun::star::uno::RuntimeException);
 	static Sequence< ::rtl::OUString > getSupportedServiceNames_Static(  ) throw(::com::sun::star::uno::RuntimeException);
-	static ::com::sun::star::uno::Reference< ::com::sun::star::uno::XInterface > SAL_CALL 
+	static ::com::sun::star::uno::Reference< ::com::sun::star::uno::XInterface > SAL_CALL
 		create(::com::sun::star::uno::Reference< ::com::sun::star::uno::XComponentContext > const & xContext);
 };
 

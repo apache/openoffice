@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -47,16 +47,16 @@ class LRU_Cache
 		CacheEntry *		pSucc;
 	};
 	typedef ::std::hash_map< t_Key, CacheEntry *, t_KeyHash, t_KeyEqual > t_Key2Element;
-	
+
 	mutable ::osl::Mutex		_aCacheMutex;
 	sal_Int32					_nCachedElements;
 	t_Key2Element				_aKey2Element;
-	
+
 	CacheEntry *				_pBlock;
 	mutable CacheEntry *		_pHead;
 	mutable CacheEntry *		_pTail;
 	inline void toFront( CacheEntry * pEntry ) const;
-	
+
 public:
 	/** Constructor:
 		<br>
@@ -67,7 +67,7 @@ public:
 		<br>
 	*/
 	inline ~LRU_Cache();
-	
+
 	/** Retrieves a value from the cache. Returns default constructed value,
 		if none was found.
 		<br>
@@ -181,7 +181,7 @@ inline void LRU_Cache< t_Key, t_Val, t_KeyHash, t_KeyEqual >::setValue(
 	{
 		::osl::MutexGuard aGuard( _aCacheMutex );
 		typename t_Key2Element::const_iterator const iFind( _aKey2Element.find( rKey ) );
-		
+
 		CacheEntry * pEntry;
 		if (iFind == _aKey2Element.end())
 		{

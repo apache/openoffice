@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -35,7 +35,7 @@ namespace basegfx {
 	class BZPixelRaster;
 }
 
-namespace drawinglayer { 
+namespace drawinglayer {
 	namespace attribute {
 		class SdrSceneAttribute;
 		class SdrLightingAttribute;
@@ -57,8 +57,8 @@ namespace drawinglayer
 	{
         /** ZBufferProcessor3D class
 
-            This 3D renderer derived from DefaultProcessor3D renders all feeded primitives to a 2D 
-            raster bitmap using a Z-Buffer based approach. It is able to supersample and to handle 
+            This 3D renderer derived from DefaultProcessor3D renders all feeded primitives to a 2D
+            raster bitmap using a Z-Buffer based approach. It is able to supersample and to handle
             transparent content.
          */
 		class ZBufferProcessor3D : public DefaultProcessor3D
@@ -92,7 +92,7 @@ namespace drawinglayer
 		public:
 			ZBufferProcessor3D(
 				const geometry::ViewInformation3D& rViewInformation3D,
-				const geometry::ViewInformation2D& rViewInformation2D, 
+				const geometry::ViewInformation2D& rViewInformation2D,
 				const attribute::SdrSceneAttribute& rSdrSceneAttribute,
 				const attribute::SdrLightingAttribute& rSdrLightingAttribute,
 				double fSizeX,

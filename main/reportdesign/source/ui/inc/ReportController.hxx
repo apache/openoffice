@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -97,7 +97,7 @@ namespace rptui
 		OModuleClient	        m_aModuleClient;
         ::cppu::OInterfaceContainerHelper
                                 m_aSelectionListeners;
-        ::com::sun::star::uno::Sequence< ::com::sun::star::beans::PropertyValue> 
+        ::com::sun::star::uno::Sequence< ::com::sun::star::beans::PropertyValue>
                                 m_aCollapsedSections;
 		TransferableDataHelper	m_aSystemClipboard;		// content of the clipboard
 		TransferableClipboardListener*
@@ -119,7 +119,7 @@ namespace rptui
         mutable ::com::sun::star::uno::Reference< ::com::sun::star::container::XNameAccess >    m_xColumns;
         ::com::sun::star::awt::Size												                m_aVisualAreaSize;
 
-        ::boost::shared_ptr<rptui::OReportModel> 
+        ::boost::shared_ptr<rptui::OReportModel>
                                 m_aReportModel;
 		::rtl::OUString			m_sName;			    /// name for the report definition
         ::rtl::OUString         m_sLastActivePage;      /// last active property browser page
@@ -142,7 +142,7 @@ namespace rptui
 
         /** creates a formatted field in the given section with the given formula as data field
         *
-        * \param _aArgs 
+        * \param _aArgs
         * \param _xSection the section where to create the formatted field
         * \param _sFunction the function which will be set at the data field.
         */
@@ -161,7 +161,7 @@ namespace rptui
 
         /** append a new group or remove it with undo.
         *
-        * \param _bAppend 
+        * \param _bAppend
         * \param _aArgs The args which contains a element named PROPERTY_GROUP of type report::XGroup.
         */
         void modifyGroup(const bool _bAppend, const ::com::sun::star::uno::Sequence< ::com::sun::star::beans::PropertyValue >& _aArgs);
@@ -176,7 +176,7 @@ namespace rptui
 
         /** add or remove me as listener at the report definition
         *
-        * \param _bAdd 
+        * \param _bAdd
         */
         void listen(const bool _bAdd);
 
@@ -232,11 +232,11 @@ namespace rptui
     public:
         void shrinkSection(sal_uInt16 _nUndoStrId, ::com::sun::star::uno::Reference< ::com::sun::star::report::XSection > _xSection, sal_Int32 _nShrinkId);
 
-        /** opens the file open dialog to allow the user to select a image which will be 
+        /** opens the file open dialog to allow the user to select a image which will be
         * bound to a newly created image button.
         */
         void insertGraphic();
-        
+
         /** resets the floater
         */
         void updateFloater();
@@ -249,7 +249,7 @@ namespace rptui
 
         /** inserts a label - field pair into the current selected section
         *
-        * \param aArgs 
+        * \param aArgs
         */
         void addPairControls(const ::com::sun::star::uno::Sequence< ::com::sun::star::beans::PropertyValue >& aArgs);
 
@@ -261,7 +261,7 @@ namespace rptui
 
         /** creates a formatted filed with TODAY() function and if set also an NOW() function
         *
-        * \param _aArgs 
+        * \param _aArgs
         */
         void createDateTime(const ::com::sun::star::uno::Sequence< ::com::sun::star::beans::PropertyValue >& _aArgs);
 
@@ -310,7 +310,7 @@ namespace rptui
         void createDefaultControl(const ::com::sun::star::uno::Sequence< ::com::sun::star::beans::PropertyValue>& _aArgs);
 
         /** fills the state for the feture request.
-            @param  _sProperty  the property which should be filled in the value 
+            @param  _sProperty  the property which should be filled in the value
             @param  _rState     the state to fill
         */
         void impl_fillState_nothrow(const ::rtl::OUString& _sProperty,dbaui::FeatureState& _rState) const;
@@ -338,7 +338,7 @@ namespace rptui
 
         virtual void getPropertyDefaultByHandle( sal_Int32 _nHandle, ::com::sun::star::uno::Any& _rDefault ) const;
         virtual void SAL_CALL setFastPropertyValue_NoBroadcast(sal_Int32 nHandle,const ::com::sun::star::uno::Any& rValue) throw (::com::sun::star::uno::Exception);
-	
+
     private:
 		virtual ~OReportController();
 
@@ -360,7 +360,7 @@ namespace rptui
 		*/
 		sal_Bool							isFormatCommandEnabled(sal_uInt16 _nCommand
 												,const ::com::sun::star::uno::Reference< ::com::sun::star::report::XReportControlFormat>& _xControlFormat) const;
-											
+
 		virtual sal_Bool					Construct(Window* pParent);
 		// XEventListener
 		virtual void SAL_CALL				disposing( const ::com::sun::star::lang::EventObject& Source ) throw(::com::sun::star::uno::RuntimeException);
@@ -425,7 +425,7 @@ namespace rptui
 
 		/** returns the current position of the splitter
 		*
-		* \return 
+		* \return
 		*/
 		inline sal_Int32	getSplitPos() const { return m_nSplitPos;}
 		inline void			setSplitPos(sal_Int32 _nSplitPos)		{ m_nSplitPos = _nSplitPos;}
@@ -449,7 +449,7 @@ namespace rptui
 
         /** return the SdrModel of the real model
         *
-        * \return 
+        * \return
         */
         ::boost::shared_ptr<rptui::OReportModel> getSdrModel() const;
 

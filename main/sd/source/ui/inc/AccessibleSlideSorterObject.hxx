@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -44,7 +44,7 @@ class SlideSorter;
 namespace accessibility {
 
 
-typedef ::cppu::WeakComponentImplHelper5< 
+typedef ::cppu::WeakComponentImplHelper5<
     ::com::sun::star::accessibility::XAccessible,
     ::com::sun::star::accessibility::XAccessibleEventBroadcaster,
     ::com::sun::star::accessibility::XAccessibleContext,
@@ -82,7 +82,7 @@ public:
     /** The page number as given to the constructor.
     */
     sal_uInt16 GetPageNumber (void) const;
-    
+
     void FireAccessibleEvent (
         short nEventId,
         const ::com::sun::star::uno::Any& rOldValue,
@@ -99,14 +99,14 @@ public:
         getAccessibleContext (void)
         throw (::com::sun::star::uno::RuntimeException);
 
-    
+
     //===== XAccessibleEventBroadcaster =======================================
     virtual void SAL_CALL
         addEventListener(
             const ::com::sun::star::uno::Reference<
             ::com::sun::star::accessibility::XAccessibleEventListener >& rxListener)
         throw (::com::sun::star::uno::RuntimeException);
-    
+
     virtual void SAL_CALL
         removeEventListener(
             const ::com::sun::star::uno::Reference<
@@ -115,7 +115,7 @@ public:
 
 	using cppu::WeakComponentImplHelperBase::addEventListener;
 	using cppu::WeakComponentImplHelperBase::removeEventListener;
-    
+
 	//=====  XAccessibleContext  ==============================================
 
     virtual sal_Int32 SAL_CALL
@@ -162,36 +162,36 @@ public:
     //=====  XAccessibleComponent  ================================================
 
     virtual sal_Bool SAL_CALL containsPoint (
-        const ::com::sun::star::awt::Point& aPoint) 
+        const ::com::sun::star::awt::Point& aPoint)
         throw (::com::sun::star::uno::RuntimeException);
 
-    virtual ::com::sun::star::uno::Reference< ::com::sun::star::accessibility::XAccessible > SAL_CALL 
+    virtual ::com::sun::star::uno::Reference< ::com::sun::star::accessibility::XAccessible > SAL_CALL
         getAccessibleAtPoint (
-            const ::com::sun::star::awt::Point& aPoint) 
+            const ::com::sun::star::awt::Point& aPoint)
         throw (::com::sun::star::uno::RuntimeException);
 
     virtual ::com::sun::star::awt::Rectangle SAL_CALL getBounds (void)
         throw (::com::sun::star::uno::RuntimeException);
 
-    virtual ::com::sun::star::awt::Point SAL_CALL getLocation (void) 
+    virtual ::com::sun::star::awt::Point SAL_CALL getLocation (void)
         throw (::com::sun::star::uno::RuntimeException);
 
-    virtual ::com::sun::star::awt::Point SAL_CALL getLocationOnScreen (void) 
+    virtual ::com::sun::star::awt::Point SAL_CALL getLocationOnScreen (void)
         throw (::com::sun::star::uno::RuntimeException);
 
-    virtual ::com::sun::star::awt::Size SAL_CALL getSize (void) 
+    virtual ::com::sun::star::awt::Size SAL_CALL getSize (void)
         throw (::com::sun::star::uno::RuntimeException);
 
-    virtual void SAL_CALL grabFocus (void) 
+    virtual void SAL_CALL grabFocus (void)
         throw (::com::sun::star::uno::RuntimeException);
 
-    virtual sal_Int32 SAL_CALL getForeground (void) 
+    virtual sal_Int32 SAL_CALL getForeground (void)
         throw (::com::sun::star::uno::RuntimeException);
 
-    virtual sal_Int32 SAL_CALL getBackground (void) 
+    virtual sal_Int32 SAL_CALL getBackground (void)
         throw (::com::sun::star::uno::RuntimeException);
 
-    
+
 
 	//=====  XServiceInfo  ====================================================
 
@@ -230,7 +230,7 @@ private:
         throw (::com::sun::star::lang::DisposedException);
 
     /** Check whether or not the object has been disposed (or is in the
-        state of being disposed). 
+        state of being disposed).
 
         @return sal_True, if the object is disposed or in the course
         of being disposed. Otherwise, sal_False is returned.

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -57,7 +57,7 @@ typedef ::std::hash_map < ::rtl::OUString, ProviderDetails , ::rtl::OUStringHash
             ::std::equal_to< ::rtl::OUString > > ProviderDetails_hash;
 
 
-class ProviderCache 
+class ProviderCache
 {
 
 public:
@@ -67,12 +67,12 @@ public:
         const css::uno::Sequence< ::rtl::OUString >& blackList )
         throw ( css::uno::RuntimeException );
     ~ProviderCache();
-     css::uno::Reference< css::script::provider::XScriptProvider > 
+     css::uno::Reference< css::script::provider::XScriptProvider >
          getProvider( const ::rtl::OUString& providerName );
      css::uno::Sequence < css::uno::Reference< css::script::provider::XScriptProvider > >
          getAllProviders() throw ( css::uno::RuntimeException );
 private:
-    void populateCache() 
+    void populateCache()
         throw ( css::uno::RuntimeException );
 
    css::uno::Reference< css::script::provider::XScriptProvider >
@@ -91,10 +91,10 @@ private:
         }
         return false;
     }
-    css::uno::Sequence< ::rtl::OUString >  m_sBlackList; 
+    css::uno::Sequence< ::rtl::OUString >  m_sBlackList;
     ProviderDetails_hash  m_hProviderDetailsCache;
     osl::Mutex m_mutex;
-    css::uno::Sequence< css::uno::Any >  m_Sctx; 
+    css::uno::Sequence< css::uno::Any >  m_Sctx;
     css::uno::Reference< css::uno::XComponentContext > m_xContext;
     css::uno::Reference< css::lang::XMultiComponentFactory > m_xMgr;
 

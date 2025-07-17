@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -89,7 +89,7 @@ extern const sal_uInt16 majorVersion;
 #define REFERENCE_OFFSET_ACCESS	   	(REFERENCE_OFFSET_DOKU + sizeof(sal_uInt16))
 //#define REFERENCE_ENTRY_SIZE	   	(REFERENCE_OFFSET_ACCESS + sizeof(sal_uInt16))
 
-enum CPInfoTag 
+enum CPInfoTag
 {
 	CP_TAG_INVALID = RT_TYPE_NONE,
 	CP_TAG_CONST_BOOL = RT_TYPE_BOOL,
@@ -121,7 +121,7 @@ inline sal_uInt16 readBYTE(const sal_uInt8* buffer, sal_uInt8& v)
 	return sizeof(sal_uInt8);
 }
 
-inline sal_uInt32 writeINT16(sal_uInt8* buffer, sal_Int16 v) 
+inline sal_uInt32 writeINT16(sal_uInt8* buffer, sal_Int16 v)
 {
 	buffer[0] = (sal_uInt8)((v >> 8) & 0xFF);
 	buffer[1] = (sal_uInt8)((v >> 0) & 0xFF);
@@ -129,14 +129,14 @@ inline sal_uInt32 writeINT16(sal_uInt8* buffer, sal_Int16 v)
 	return sizeof(sal_Int16);
 }
 
-inline sal_uInt32 readINT16(const sal_uInt8* buffer, sal_Int16& v) 
+inline sal_uInt32 readINT16(const sal_uInt8* buffer, sal_Int16& v)
 {
 	v = ((buffer[0] << 8) | (buffer[1] << 0));
 
 	return sizeof(sal_Int16);
 }
 
-inline sal_uInt32 writeUINT16(sal_uInt8* buffer, sal_uInt16 v) 
+inline sal_uInt32 writeUINT16(sal_uInt8* buffer, sal_uInt16 v)
 {
 	buffer[0] = (sal_uInt8)((v >> 8) & 0xFF);
 	buffer[1] = (sal_uInt8)((v >> 0) & 0xFF);
@@ -144,14 +144,14 @@ inline sal_uInt32 writeUINT16(sal_uInt8* buffer, sal_uInt16 v)
 	return sizeof(sal_uInt16);
 }
 
-inline sal_uInt32 readUINT16(const sal_uInt8* buffer, sal_uInt16& v) 
+inline sal_uInt32 readUINT16(const sal_uInt8* buffer, sal_uInt16& v)
 {
 	v = ((buffer[0] << 8) | (buffer[1] << 0));
 
 	return sizeof(sal_uInt16);
 }
 
-inline sal_uInt32 writeINT32(sal_uInt8* buffer, sal_Int32 v) 
+inline sal_uInt32 writeINT32(sal_uInt8* buffer, sal_Int32 v)
 {
 	buffer[0] = (sal_uInt8)((v >> 24) & 0xFF);
 	buffer[1] = (sal_uInt8)((v >> 16) & 0xFF);
@@ -161,19 +161,19 @@ inline sal_uInt32 writeINT32(sal_uInt8* buffer, sal_Int32 v)
 	return sizeof(sal_Int32);
 }
 
-inline sal_uInt32 readINT32(const sal_uInt8* buffer, sal_Int32& v) 
+inline sal_uInt32 readINT32(const sal_uInt8* buffer, sal_Int32& v)
 {
 	v = (
-			(buffer[0] << 24) | 
-			(buffer[1] << 16) | 
-			(buffer[2] << 8)  | 
+			(buffer[0] << 24) |
+			(buffer[1] << 16) |
+			(buffer[2] << 8)  |
 			(buffer[3] << 0)
 		);
 
 	return sizeof(sal_Int32);
 }
 
-inline sal_uInt32 writeUINT32(sal_uInt8* buffer, sal_uInt32 v) 
+inline sal_uInt32 writeUINT32(sal_uInt8* buffer, sal_uInt32 v)
 {
 	buffer[0] = (sal_uInt8)((v >> 24) & 0xFF);
 	buffer[1] = (sal_uInt8)((v >> 16) & 0xFF);
@@ -183,19 +183,19 @@ inline sal_uInt32 writeUINT32(sal_uInt8* buffer, sal_uInt32 v)
 	return sizeof(sal_uInt32);
 }
 
-inline sal_uInt32 readUINT32(const sal_uInt8* buffer, sal_uInt32& v) 
+inline sal_uInt32 readUINT32(const sal_uInt8* buffer, sal_uInt32& v)
 {
 	v = (
-			(buffer[0] << 24) | 
-			(buffer[1] << 16) | 
-			(buffer[2] << 8)  | 
+			(buffer[0] << 24) |
+			(buffer[1] << 16) |
+			(buffer[2] << 8)  |
 			(buffer[3] << 0)
 		);
 
 	return sizeof(sal_uInt32);
 }
 
-inline sal_uInt32 writeINT64(sal_uInt8* buffer, sal_Int64 v) 
+inline sal_uInt32 writeINT64(sal_uInt8* buffer, sal_Int64 v)
 {
 	buffer[0] = (sal_uInt8)((v >> 56) & 0xFF);
 	buffer[1] = (sal_uInt8)((v >> 48) & 0xFF);
@@ -209,23 +209,23 @@ inline sal_uInt32 writeINT64(sal_uInt8* buffer, sal_Int64 v)
 	return sizeof(sal_Int64);
 }
 
-inline sal_uInt32 readINT64(const sal_uInt8* buffer, sal_Int64& v) 
+inline sal_uInt32 readINT64(const sal_uInt8* buffer, sal_Int64& v)
 {
 	v = (
-			((sal_Int64)buffer[0] << 56) | 
-			((sal_Int64)buffer[1] << 48) | 
-			((sal_Int64)buffer[2] << 40) | 
+			((sal_Int64)buffer[0] << 56) |
+			((sal_Int64)buffer[1] << 48) |
+			((sal_Int64)buffer[2] << 40) |
 			((sal_Int64)buffer[3] << 32) |
-			((sal_Int64)buffer[4] << 24) | 
-			((sal_Int64)buffer[5] << 16) | 
-			((sal_Int64)buffer[6] << 8)  | 
+			((sal_Int64)buffer[4] << 24) |
+			((sal_Int64)buffer[5] << 16) |
+			((sal_Int64)buffer[6] << 8)  |
 			((sal_Int64)buffer[7] << 0)
 		);
 
 	return sizeof(sal_Int64);
 }
 
-inline sal_uInt32 writeUINT64(sal_uInt8* buffer, sal_uInt64 v) 
+inline sal_uInt32 writeUINT64(sal_uInt8* buffer, sal_uInt64 v)
 {
 	buffer[0] = (sal_uInt8)((v >> 56) & 0xFF);
 	buffer[1] = (sal_uInt8)((v >> 48) & 0xFF);
@@ -239,23 +239,23 @@ inline sal_uInt32 writeUINT64(sal_uInt8* buffer, sal_uInt64 v)
 	return sizeof(sal_uInt64);
 }
 
-inline sal_uInt32 readUINT64(const sal_uInt8* buffer, sal_uInt64& v) 
+inline sal_uInt32 readUINT64(const sal_uInt8* buffer, sal_uInt64& v)
 {
 	v = (
-			((sal_uInt64)buffer[0] << 56) | 
-			((sal_uInt64)buffer[1] << 48) | 
-			((sal_uInt64)buffer[2] << 40) | 
+			((sal_uInt64)buffer[0] << 56) |
+			((sal_uInt64)buffer[1] << 48) |
+			((sal_uInt64)buffer[2] << 40) |
 			((sal_uInt64)buffer[3] << 32) |
-			((sal_uInt64)buffer[4] << 24) | 
-			((sal_uInt64)buffer[5] << 16) | 
-			((sal_uInt64)buffer[6] << 8)  | 
+			((sal_uInt64)buffer[4] << 24) |
+			((sal_uInt64)buffer[5] << 16) |
+			((sal_uInt64)buffer[6] << 8)  |
 			((sal_uInt64)buffer[7] << 0)
 		);
 
 	return sizeof(sal_uInt64);
 }
 
-inline sal_uInt32 writeUtf8(sal_uInt8* buffer, const sal_Char* v) 
+inline sal_uInt32 writeUtf8(sal_uInt8* buffer, const sal_Char* v)
 {
 	sal_uInt32 size = strlen(v) + 1;
 
@@ -264,14 +264,14 @@ inline sal_uInt32 writeUtf8(sal_uInt8* buffer, const sal_Char* v)
 	return (size);
 }
 
-inline sal_uInt32 readUtf8(const sal_uInt8* buffer, sal_Char* v, sal_uInt32 maxSize) 
+inline sal_uInt32 readUtf8(const sal_uInt8* buffer, sal_Char* v, sal_uInt32 maxSize)
 {
 	sal_uInt32 size = SAL_MIN(strlen((const sal_Char*) buffer) + 1, maxSize);
 
 	memcpy(v, buffer, size);
 
 	if (size == maxSize) v[size - 1] = '\0';
-		
+
 	return (size);
 }
 
@@ -282,5 +282,5 @@ sal_uInt32 writeString(sal_uInt8* buffer, const sal_Unicode* v);
 sal_uInt32 readString(const sal_uInt8* buffer, sal_Unicode* v, sal_uInt32 maxSize);
 
 sal_uInt32 UINT16StringLen(const sal_uInt8* wstring);
-	
+
 #endif

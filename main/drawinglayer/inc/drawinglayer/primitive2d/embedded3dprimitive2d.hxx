@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -41,7 +41,7 @@ namespace drawinglayer
 
             This is a helper primitive which allows embedding of single 3D
             primitives to the 2D primitive logic. It will get the scene it's
-            involved and thus the 3D transformation. With this information it 
+            involved and thus the 3D transformation. With this information it
             is able to provide 2D range data for a 3D primitive.
 
             This primitive will not be visualized and decomposes to a yellow
@@ -62,7 +62,7 @@ namespace drawinglayer
 			/** if the embedded 3D primitives contain shadow, these parameters are needed
 			    to extract the shadow which is a sequence od 2D primitives and may expand
 			    the 2D range. Since every single 3D object in a scene may individually
-			    have shadow or not, these values need to be provided and prepared. The shadow 
+			    have shadow or not, these values need to be provided and prepared. The shadow
 			    distance itself (a 2D transformation) is part of the 3D shadow definition
              */
 			basegfx::B3DVector								    maLightNormal;

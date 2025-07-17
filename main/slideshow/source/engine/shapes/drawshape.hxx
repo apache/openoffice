@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -84,15 +84,15 @@ namespace slideshow
                 unsupported content, and, if necessary, returned as a
                 pre-rendererd bitmap.
              */
-            static DrawShapeSharedPtr create( 
-                const ::com::sun::star::uno::Reference< 
+            static DrawShapeSharedPtr create(
+                const ::com::sun::star::uno::Reference<
                    ::com::sun::star::drawing::XShape >&    xShape,
-                const ::com::sun::star::uno::Reference< 
+                const ::com::sun::star::uno::Reference<
                    ::com::sun::star::drawing::XDrawPage >& xContainingPage,
                 double                                     nPrio,
                 bool                                       bForeignSource,
                 const SlideShowContext&                    rContext ); // throw ShapeLoadFailedException;
-            
+
             /** Create a shape for the given XShape and graphic content
 
                 @param xShape
@@ -113,16 +113,16 @@ namespace slideshow
                 DrawShape will register itself for intrinsic animation
                 events.
              */
-            static DrawShapeSharedPtr create( 
-                const ::com::sun::star::uno::Reference< 
+            static DrawShapeSharedPtr create(
+                const ::com::sun::star::uno::Reference<
                    ::com::sun::star::drawing::XShape >&    xShape,
-                const ::com::sun::star::uno::Reference< 
+                const ::com::sun::star::uno::Reference<
                    ::com::sun::star::drawing::XDrawPage >& xContainingPage,
                 double                                     nPrio,
                 const Graphic&                             rGraphic,
                 const SlideShowContext&                    rContext ); // throw ShapeLoadFailedException;
 
-            virtual ::com::sun::star::uno::Reference< 
+            virtual ::com::sun::star::uno::Reference<
                 ::com::sun::star::drawing::XShape > getXShape() const;
 
             virtual ~DrawShape();
@@ -144,7 +144,7 @@ namespace slideshow
             virtual ShapeAttributeLayerSharedPtr getTopmostAttributeLayer() const;
             virtual void setVisibility( bool bVisible );
             virtual ::basegfx::B2DRectangle getBounds() const;
-            virtual ::basegfx::B2DRectangle getDomBounds() const;            
+            virtual ::basegfx::B2DRectangle getDomBounds() const;
             virtual ::basegfx::B2DRectangle getUpdateArea() const;
             virtual bool isVisible() const;
             virtual double getPriority() const;
@@ -172,7 +172,7 @@ namespace slideshow
 
             virtual DocTreeNode                 getSubsetNode() const;
             virtual AttributableShapeSharedPtr  getSubset( const DocTreeNode& rTreeNode ) const;
-            virtual bool                        createSubset( AttributableShapeSharedPtr&   o_rSubset, 
+            virtual bool                        createSubset( AttributableShapeSharedPtr&   o_rSubset,
                                                               const DocTreeNode&            rTreeNode );
             virtual bool                        revokeSubset( const AttributableShapeSharedPtr& rShape );
 
@@ -205,13 +205,13 @@ namespace slideshow
                 animation frame.
              */
             bool setIntrinsicAnimationFrame( ::std::size_t nCurrFrame );
-            
+
             /** forces the drawshape to load and return a specially
                 crafted metafile, usable to display drawing layer text
                 animations.
             */
             GDIMetaFileSharedPtr forceScrollTextMetaFile();
-            
+
         private:
             /** Create a shape for the given XShape
 
@@ -233,9 +233,9 @@ namespace slideshow
                 unsupported content, and, if necessary, returned as a
                 pre-rendererd bitmap.
              */
-            DrawShape( const ::com::sun::star::uno::Reference< 
+            DrawShape( const ::com::sun::star::uno::Reference<
                             ::com::sun::star::drawing::XShape >&    xShape,
-                       const ::com::sun::star::uno::Reference< 
+                       const ::com::sun::star::uno::Reference<
                             ::com::sun::star::drawing::XDrawPage >& xContainingPage,
                        double                                       nPrio,
                        bool                                         bForeignSource,
@@ -261,9 +261,9 @@ namespace slideshow
                 DrawShape will register itself for intrinsic animation
                 events.
              */
-            DrawShape( const ::com::sun::star::uno::Reference< 
+            DrawShape( const ::com::sun::star::uno::Reference<
                             ::com::sun::star::drawing::XShape >&    xShape,
-                       const ::com::sun::star::uno::Reference< 
+                       const ::com::sun::star::uno::Reference<
                             ::com::sun::star::drawing::XDrawPage >& xContainingPage,
                        double                                       nPrio,
                        const Graphic&                               rGraphic,
@@ -274,7 +274,7 @@ namespace slideshow
                 Used to create subsetted shapes
              */
             DrawShape( const DrawShape&, const DocTreeNode& rTreeNode, double nPrio );
-            
+
             int  getUpdateFlags() const;
             bool implRender( int nUpdateFlags ) const;
             void updateStateIds() const;
@@ -286,11 +286,11 @@ namespace slideshow
             bool hasIntrinsicAnimation() const;
             bool hasHyperlinks() const;
             void prepareHyperlinkIndices() const;
-            
+
             /// The associated XShape
-            ::com::sun::star::uno::Reference< 
+            ::com::sun::star::uno::Reference<
                     ::com::sun::star::drawing::XShape >                             mxShape;
-            ::com::sun::star::uno::Reference< 
+            ::com::sun::star::uno::Reference<
                     ::com::sun::star::drawing::XDrawPage >                          mxPage;
 
             /** A vector of metafiles actually representing the Shape.
@@ -313,7 +313,7 @@ namespace slideshow
             // The attributes of this Shape
             const double                                                            mnPriority;
             ::basegfx::B2DRectangle                                                 maBounds; // always needed for rendering.
-                                                                                              // for subset shapes, this member 
+                                                                                              // for subset shapes, this member
                                                                                               // might change when views are
                                                                                               // added, as minimal bounds are
                                                                                               // calculated
@@ -336,8 +336,8 @@ namespace slideshow
             /// the list of active view shapes (one for each registered view layer)
             typedef ::std::vector< ViewShapeSharedPtr > ViewShapeVector;
             ViewShapeVector                                                         maViewShapes;
-            
-            ::com::sun::star::uno::Reference< 
+
+            ::com::sun::star::uno::Reference<
                 ::com::sun::star::uno::XComponentContext>                           mxComponentContext;
 
             /// hyperlink support
@@ -346,7 +346,7 @@ namespace slideshow
             typedef ::std::vector<HyperlinkIndexPair> HyperlinkIndexPairVector;
             mutable HyperlinkIndexPairVector                                        maHyperlinkIndices;
             mutable HyperlinkRegions                                                maHyperlinkRegions;
-            
+
             /// Delegated subset handling
             mutable DrawShapeSubsetting                                             maSubsetting;
 
@@ -367,10 +367,10 @@ namespace slideshow
 
             /// Whether attribute layer was revoked (making a redraw necessary)
             mutable bool                                                            mbAttributeLayerRevoked;
-            
+
             /// whether a drawing layer animation has to be performed
             bool                                                                    mbDrawingLayerAnim;
-            
+
         };
     }
 }

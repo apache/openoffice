@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -63,27 +63,27 @@ class XMLSecurityContext_MSCryptImpl : public ::cppu::WeakImplHelper3<
 		virtual sal_Int32 SAL_CALL addSecurityEnvironment(
 			const ::com::sun::star::uno::Reference< ::com::sun::star::xml::crypto::XSecurityEnvironment >& aSecurityEnvironment
 			) throw (::com::sun::star::security::SecurityInfrastructureException, ::com::sun::star::uno::RuntimeException);
-		
+
 		virtual ::sal_Int32 SAL_CALL getSecurityEnvironmentNumber(  )
 			throw (::com::sun::star::uno::RuntimeException);
-			
+
 		virtual ::com::sun::star::uno::Reference<
 			::com::sun::star::xml::crypto::XSecurityEnvironment > SAL_CALL
 			getSecurityEnvironmentByIndex( ::sal_Int32 index )
 			throw (::com::sun::star::uno::RuntimeException);
-			 
+
 		virtual ::com::sun::star::uno::Reference<
-			::com::sun::star::xml::crypto::XSecurityEnvironment > SAL_CALL 
-			getSecurityEnvironment(  ) 
+			::com::sun::star::xml::crypto::XSecurityEnvironment > SAL_CALL
+			getSecurityEnvironment(  )
 			throw (::com::sun::star::uno::RuntimeException);
-		
+
 		virtual ::sal_Int32 SAL_CALL getDefaultSecurityEnvironmentIndex(  )
 			throw (::com::sun::star::uno::RuntimeException);
 
 		virtual void SAL_CALL setDefaultSecurityEnvironmentIndex( sal_Int32 nDefaultEnvIndex )
 			throw (::com::sun::star::uno::RuntimeException);
 
-#if 0		
+#if 0
 		virtual void SAL_CALL setSecurityEnvironment(
 			const ::com::sun::star::uno::Reference< ::com::sun::star::xml::crypto::XSecurityEnvironment >& aSecurityEnvironment
 		) throw( com::sun::star::security::SecurityInfrastructureException) ;
@@ -118,7 +118,7 @@ class XMLSecurityContext_MSCryptImpl : public ::cppu::WeakImplHelper3<
 
 #if 0
 		//Methods from XUnoTunnel
-		virtual sal_Int64 SAL_CALL getSomething( const ::com::sun::star::uno::Sequence< sal_Int8 >& aIdentifier ) 
+		virtual sal_Int64 SAL_CALL getSomething( const ::com::sun::star::uno::Sequence< sal_Int8 >& aIdentifier )
 		throw (com::sun::star::uno::RuntimeException);
 
 		static const ::com::sun::star::uno::Sequence< sal_Int8 >& getUnoTunnelId() ;

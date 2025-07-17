@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -59,7 +59,7 @@ private:
 
 protected:
 	DlgEdObj();
-	DlgEdObj(const ::rtl::OUString& rModelName, 
+	DlgEdObj(const ::rtl::OUString& rModelName,
 			 const com::sun::star::uno::Reference< com::sun::star::lang::XMultiServiceFactory >& rxSFac);
 
 	virtual void NbcMove( const Size& rSize );
@@ -74,17 +74,17 @@ protected:
 	void EndListening(sal_Bool bRemoveListener = sal_True);
 	sal_Bool	isListening() const { return bIsListening; }
 
-    virtual bool TransformSdrToControlCoordinates( 
-        sal_Int32 nXIn, sal_Int32 nYIn, sal_Int32 nWidthIn, sal_Int32 nHeightIn, 
+    virtual bool TransformSdrToControlCoordinates(
+        sal_Int32 nXIn, sal_Int32 nYIn, sal_Int32 nWidthIn, sal_Int32 nHeightIn,
         sal_Int32& nXOut, sal_Int32& nYOut, sal_Int32& nWidthOut, sal_Int32& nHeightOut );
-    virtual bool TransformSdrToFormCoordinates( 
-        sal_Int32 nXIn, sal_Int32 nYIn, sal_Int32 nWidthIn, sal_Int32 nHeightIn, 
+    virtual bool TransformSdrToFormCoordinates(
+        sal_Int32 nXIn, sal_Int32 nYIn, sal_Int32 nWidthIn, sal_Int32 nHeightIn,
         sal_Int32& nXOut, sal_Int32& nYOut, sal_Int32& nWidthOut, sal_Int32& nHeightOut );
-    virtual bool TransformControlToSdrCoordinates( 
-        sal_Int32 nXIn, sal_Int32 nYIn, sal_Int32 nWidthIn, sal_Int32 nHeightIn, 
+    virtual bool TransformControlToSdrCoordinates(
+        sal_Int32 nXIn, sal_Int32 nYIn, sal_Int32 nWidthIn, sal_Int32 nHeightIn,
         sal_Int32& nXOut, sal_Int32& nYOut, sal_Int32& nWidthOut, sal_Int32& nHeightOut );
-    virtual bool TransformFormToSdrCoordinates( 
-        sal_Int32 nXIn, sal_Int32 nYIn, sal_Int32 nWidthIn, sal_Int32 nHeightIn, 
+    virtual bool TransformFormToSdrCoordinates(
+        sal_Int32 nXIn, sal_Int32 nYIn, sal_Int32 nWidthIn, sal_Int32 nHeightIn,
         sal_Int32& nXOut, sal_Int32& nYOut, sal_Int32& nWidthOut, sal_Int32& nHeightOut );
 
 public:
@@ -92,7 +92,7 @@ public:
 
 	virtual ~DlgEdObj();
 	virtual void SetPage(SdrPage* pNewPage);
-	
+
 	virtual void SetDlgEdForm( DlgEdForm* pForm ) { pDlgEdForm = pForm; }
 	virtual DlgEdForm* GetDlgEdForm() const { return pDlgEdForm; }
 
@@ -149,7 +149,7 @@ private:
 	::std::vector<DlgEdObj*> pChilds;
 
     mutable ::boost::optional< ::com::sun::star::awt::DeviceInfo >   mpDeviceInfo;
-    
+
 
 protected:
 	DlgEdForm();

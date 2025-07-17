@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -44,7 +44,7 @@
 
 #include <memory>
 
-namespace com { namespace sun { namespace star { 
+namespace com { namespace sun { namespace star {
     namespace sdbc{
 	    class XRowUpdate;
     }
@@ -79,7 +79,7 @@ namespace dbaui
 		::com::sun::star::uno::Reference< ::com::sun::star::lang::XMultiServiceFactory> m_xFactory;
 
 		::rtl::OUString m_sName;
-		//dyf add 20070601 
+		//dyf add 20070601
 		//for transfor the tablename
 		::rtl::OUString m_sDefaultTableName;
 		//dyf add end
@@ -148,14 +148,14 @@ namespace dbaui
 		ORTFImportExport(	const ::svx::ODataAccessDescriptor& _aDataDescriptor,
 							const ::com::sun::star::uno::Reference< ::com::sun::star::lang::XMultiServiceFactory >& _rM,
 							const ::com::sun::star::uno::Reference< ::com::sun::star::util::XNumberFormatter >& _rxNumberF,
-							const String& rExchange = String()) 
+							const String& rExchange = String())
 							: ODatabaseImportExport(_aDataDescriptor,_rM,_rxNumberF,rExchange) {};
 
 		// import data
 		ORTFImportExport(	const SharedConnection& _rxConnection,
 							const ::com::sun::star::uno::Reference< ::com::sun::star::util::XNumberFormatter >& _rxNumberF,
-							const ::com::sun::star::uno::Reference< ::com::sun::star::lang::XMultiServiceFactory >& _rM) 
-						: ODatabaseImportExport(_rxConnection,_rxNumberF,_rM) 
+							const ::com::sun::star::uno::Reference< ::com::sun::star::lang::XMultiServiceFactory >& _rM)
+						: ODatabaseImportExport(_rxConnection,_rxNumberF,_rM)
 		{}
 
 		virtual sal_Bool Write();
@@ -198,8 +198,8 @@ namespace dbaui
 		// import data
 		OHTMLImportExport(	const SharedConnection& _rxConnection,
 							const ::com::sun::star::uno::Reference< ::com::sun::star::util::XNumberFormatter >& _rxNumberF,
-							const ::com::sun::star::uno::Reference< ::com::sun::star::lang::XMultiServiceFactory >& _rM) 
-						: ODatabaseImportExport(_rxConnection,_rxNumberF,_rM) 
+							const ::com::sun::star::uno::Reference< ::com::sun::star::lang::XMultiServiceFactory >& _rM)
+						: ODatabaseImportExport(_rxConnection,_rxNumberF,_rM)
 		{}
 
 		virtual sal_Bool Write();
@@ -215,9 +215,9 @@ namespace dbaui
 		OModuleClient		m_aModuleClient;
 		::std::vector<sal_Int32>	m_aColumnMapping;
 		::std::vector<sal_Int32>	m_aColumnTypes;
-		::com::sun::star::uno::Reference< ::com::sun::star::sdbc::XResultSetUpdate >	m_xTargetResultSetUpdate;	// 
+		::com::sun::star::uno::Reference< ::com::sun::star::sdbc::XResultSetUpdate >	m_xTargetResultSetUpdate;	//
 		::com::sun::star::uno::Reference< ::com::sun::star::sdbc::XRowUpdate >			m_xTargetRowUpdate;			//
-		::com::sun::star::uno::Reference< ::com::sun::star::sdbc::XResultSetMetaData >	m_xTargetResultSetMetaData;	// 
+		::com::sun::star::uno::Reference< ::com::sun::star::sdbc::XResultSetMetaData >	m_xTargetResultSetMetaData;	//
 		Window*						m_pParent;
 		sal_Bool					m_bAlreadyAsked;
 
@@ -235,10 +235,10 @@ namespace dbaui
 
 		// import data
 		ORowSetImportExport(const SharedConnection& _rxConnection,
-							const ::com::sun::star::uno::Reference< ::com::sun::star::lang::XMultiServiceFactory >& _rM) 
-						: ODatabaseImportExport(_rxConnection,NULL,_rM) 
+							const ::com::sun::star::uno::Reference< ::com::sun::star::lang::XMultiServiceFactory >& _rM)
+						: ODatabaseImportExport(_rxConnection,NULL,_rM)
 		{}
-		
+
 		virtual sal_Bool Write();
 		virtual sal_Bool Read();
 

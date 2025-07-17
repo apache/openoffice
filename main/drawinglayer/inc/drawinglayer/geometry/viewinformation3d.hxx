@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -100,17 +100,17 @@ namespace drawinglayer
                 be preferred and overwrite the given parameter
             */
 			ViewInformation3D(
-				const basegfx::B3DHomMatrix& rObjectTransformation, 
-				const basegfx::B3DHomMatrix& rOrientation, 
-				const basegfx::B3DHomMatrix& rProjection, 
-				const basegfx::B3DHomMatrix& rDeviceToView, 
+				const basegfx::B3DHomMatrix& rObjectTransformation,
+				const basegfx::B3DHomMatrix& rOrientation,
+				const basegfx::B3DHomMatrix& rProjection,
+				const basegfx::B3DHomMatrix& rDeviceToView,
 				double fViewTime,
 				const ::com::sun::star::uno::Sequence< ::com::sun::star::beans::PropertyValue >& rExtendedParameters);
 
 			/** Constructor: Create a ViewInformation3D
 
                 @param rViewParameters
-                A sequence of property values which allows holding any combination of local and various 
+                A sequence of property values which allows holding any combination of local and various
                 other parameters. This constructor is feeded completely with a sequence of PropertyValues
                 which will be parsed to be able to offer the most used ones in a convenient way.
             */

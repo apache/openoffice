@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -74,7 +74,7 @@ class ShellJob : private ThreadHelpBase
         //.......................................
         /** @short  reference to an uno service manager. */
         css::uno::Reference< css::lang::XMultiServiceFactory > m_xSMGR;
-    
+
     //-------------------------------------------
     // native interface
     public:
@@ -104,7 +104,7 @@ class ShellJob : private ThreadHelpBase
         //---------------------------------------
         // css.lang.XServiceInfo
         DECLARE_XSERVICEINFO
-    
+
         // css.task.XJob
         virtual css::uno::Any SAL_CALL execute(const css::uno::Sequence< css::beans::NamedValue >& lArguments)
             throw(css::lang::IllegalArgumentException,
@@ -114,45 +114,45 @@ class ShellJob : private ThreadHelpBase
     //-------------------------------------------
     // helper
     private:
-        
+
         //---------------------------------------
         /** generate a return value for method execute()
             which will force deactivation of this job for further requests.
-    
+
             @return an Any following the job protocol for deactivation.
          */
         static css::uno::Any impl_generateAnswer4Deactivation();
-    
+
         //---------------------------------------
         /** substitute all might existing placeholder variables
             within the configured command.
-    
+
             The command is part of the job configuration.
             These will make changes more easy (no code changes required).
             Further the command can use placeholder as they are supported
             by the global substitution service (e.g. $(prog) etcpp)
-    
+
             @param  sCommand
                     the command containing placeholder variables.
-    
+
             @return the substituted command.
          */
         ::rtl::OUString impl_substituteCommandVariables(const ::rtl::OUString& sCommand);
 
         //---------------------------------------
         /** executes the command.
-        
+
             @param  sCommand
                     the absolute command as URL or system path (without any argument !).
-                    
+
             @param  lArguments
                     the complete list of arguments configured for these job.
-                    
+
             @param  bCheckExitCode
                     bind the execution result to the exit code of the started process.
                     If it's set to false we return false only in case executable couldn't be found
                     or couldn't be started.
-                    
+
             @return sal_True if command was executed successfully; sal_False otherwise.
          */
         ::sal_Bool impl_execute(const ::rtl::OUString&                       sCommand      ,

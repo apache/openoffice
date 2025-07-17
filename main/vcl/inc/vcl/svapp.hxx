@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -324,7 +324,7 @@ public:
     static void                 ImplCallEventListeners( sal_uLong nEvent, Window* pWin, void* pData );
     static void                 ImplCallEventListeners( VclSimpleEvent* pEvent );
     static sal_Bool             HandleKey( sal_uLong nEvent, Window *pWin, KeyEvent* pKeyEvent );
-    
+
 	static sal_uLong            PostKeyEvent( sal_uLong nEvent, Window *pWin, KeyEvent* pKeyEvent );
     static sal_uLong            PostMouseEvent( sal_uLong nEvent, Window *pWin, MouseEvent* pMouseEvent );
 	static void					RemoveMouseAndKeyEvents( Window *pWin );
@@ -363,7 +363,7 @@ public:
 
     static void                 SetDisplayName( const UniString& rDisplayName );
     static UniString            GetDisplayName();
-    
+
     static unsigned int         GetScreenCount();
     // IsMultiDisplay returns:
     //        true:  different screens are separate and windows cannot be moved
@@ -436,7 +436,7 @@ public:
 
     static void                 SetFilterHdl( const Link& rLink );
     static const Link&          GetFilterHdl();
-    
+
     static sal_Bool             IsAccessibilityEnabled();
 
     static void                 EnableHeadlessMode( sal_Bool bEnable = sal_True );
@@ -445,7 +445,7 @@ public:
     static void                 EnableConversionMode( bool bEnableConv = true );
     static bool                 IsConversionModeEnabled();
 
-    
+
     static void                 ShowNativeErrorBox(const String& sTitle  ,
                                                    const String& sMessage);
 	static bool					EnableAccessInterface(bool bEnable);
@@ -475,19 +475,19 @@ public:
         Can be called without the Solar mutex locked.
      */
     static bool GetShowImeStatusWindowDefault();
-    
-    /** Returns a string representing the desktop environment 
+
+    /** Returns a string representing the desktop environment
         the process is currently running in.
      */
     static const ::rtl::OUString& GetDesktopEnvironment();
 
     /** Add a file to the system shells recent document list if there is any.
-          This function may have no effect under Unix because there is no 
+          This function may have no effect under Unix because there is no
           standard API among the different desktop managers.
-          
+
           @param rFileUrl
                     The file url of the document.
-                    
+
           @param rMimeType
           The mime content type of the document specified by aFileUrl.
           If an empty string will be provided "application/octet-stream"

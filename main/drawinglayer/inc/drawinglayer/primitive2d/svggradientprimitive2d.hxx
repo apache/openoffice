@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 #ifndef INCLUDED_DRAWINGLAYER_PRIMITIVE2D_SVGGRADIENTPRIMITIVE2D_HXX
@@ -44,7 +44,7 @@ namespace drawinglayer
             double              mfOffset;
             basegfx::BColor     maColor;
             double              mfOpacity;
-        
+
         public:
             SvgGradientEntry(double fOffset, const basegfx::BColor& rColor = basegfx::BColor(0.0, 0.0, 0.0), double fOpacity = 1.0)
             :   mfOffset(fOffset),
@@ -126,13 +126,13 @@ namespace drawinglayer
             Primitive2DSequence createSingleGradientEntryFill() const;
             virtual void createAtom(
                 Primitive2DVector& rTargetColor,
-                Primitive2DVector& rTargetOpacity, 
-                const SvgGradientEntry& rFrom, 
+                Primitive2DVector& rTargetOpacity,
+                const SvgGradientEntry& rFrom,
                 const SvgGradientEntry& rTo,
                 sal_Int32 nOffset) const = 0;
             double createRun(
                 Primitive2DVector& rTargetColor,
-                Primitive2DVector& rTargetOpacity, 
+                Primitive2DVector& rTargetOpacity,
                 double fPos,
                 double fMax,
                 const SvgGradientEntryVector& rEntries,
@@ -192,8 +192,8 @@ namespace drawinglayer
             /// local helpers
             virtual void createAtom(
                 Primitive2DVector& rTargetColor,
-                Primitive2DVector& rTargetOpacity, 
-                const SvgGradientEntry& rFrom, 
+                Primitive2DVector& rTargetOpacity,
+                const SvgGradientEntry& rFrom,
                 const SvgGradientEntry& rTo,
                 sal_Int32 nOffset) const;
             virtual void checkPreconditions();
@@ -261,8 +261,8 @@ namespace drawinglayer
             /// local helpers
             virtual void createAtom(
                 Primitive2DVector& rTargetColor,
-                Primitive2DVector& rTargetOpacity, 
-                const SvgGradientEntry& rFrom, 
+                Primitive2DVector& rTargetOpacity,
+                const SvgGradientEntry& rFrom,
                 const SvgGradientEntry& rTo,
                 sal_Int32 nOffset) const;
             virtual void checkPreconditions();

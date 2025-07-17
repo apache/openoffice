@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -126,7 +126,7 @@
 // these atoms first was seen in ppt2000 in a private Tag atom
 #define EPP_PST_ExtendedParagraphAtom			4012
 #define EPP_PST_ExtendedParagraphMasterAtom		4013
-#define EPP_PST_ExtendedPresRuleContainer		4014	// consist of 4012, 4015, 
+#define EPP_PST_ExtendedPresRuleContainer		4014	// consist of 4012, 4015,
 #define EPP_PST_ExtendedParagraphHeaderAtom		4015	// the instance of this atom indices the current presobj
 														// the first sal_uInt32 in this atom indices the current slideId
 

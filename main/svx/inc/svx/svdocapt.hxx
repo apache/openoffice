@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -95,7 +95,7 @@ public:
 	void SetSpecialTextBoxShadow() { mbSpecialTextBoxShadow = sal_True; }
 	sal_Bool GetSpecialTextBoxShadow() const { return mbSpecialTextBoxShadow; }
 
-	// for calc: fixed note tail position. 
+	// for calc: fixed note tail position.
 	void SetFixedTail() { mbFixedTail = sal_True; }
 
 	virtual void TakeObjNameSingul(String& rName) const;
@@ -107,7 +107,7 @@ public:
 
 	virtual sal_uInt32 GetHdlCount() const;
 	virtual SdrHdl* GetHdl(sal_uInt32 nHdlNum) const;
-	
+
     // special drag methods
     virtual bool hasSpecialDrag() const;
 	virtual bool beginSpecialDrag(SdrDragStat& rDrag) const;
@@ -155,7 +155,7 @@ public:
 	// Add own implementation for TRSetBaseGeometry to handle TailPos over changes
 	virtual void TRSetBaseGeometry(const basegfx::B2DHomMatrix& rMatrix, const basegfx::B2DPolyPolygon& rPolyPolygon);
 
-	inline const Point& GetFixedTailPos() const  {return maFixedTailPos;} 
+	inline const Point& GetFixedTailPos() const  {return maFixedTailPos;}
 
 	// geometry access
 	::basegfx::B2DPolygon getTailPolygon() const;

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -36,7 +36,7 @@
 
 /* If you need to define implementation helper classes that deal with more than
    12 interfaces, then use macros as follows, e.g. for 3 interfaces:
-   
+
 #include <cppuhelper/implbase_ex_pre.hxx>
 #define __IFC_EX_TYPE_INIT3( class_cast ) \
     __IFC_EX_TYPE_INIT( class_cast, 1 ), __IFC_EX_TYPE_INIT( class_cast, 2 ), \
@@ -81,19 +81,19 @@ struct class_data
     /** number of supported types in m_typeEntries
     */
     sal_Int16 m_nTypes;
-    
+
     /** determines whether m_typeEntries is initialized and carries unacquired type refs
     */
     sal_Bool m_storedTypeRefs;
-    
+
     /** determines whether an implementation id was created in m_id
     */
     sal_Bool m_createdId;
-    
+
     /** implementation id
      */
 	sal_Int8 m_id[ 16 ];
-    
+
     /** type, object offset
     */
     type_entry m_typeEntries[ 1 ];

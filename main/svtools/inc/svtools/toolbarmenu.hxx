@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -53,11 +53,11 @@ public:
 					ToolbarMenu( const ::com::sun::star::uno::Reference< ::com::sun::star::frame::XFrame >& rFrame,
                                  Window* pParentWindow,
                                  WinBits nBits );
-                    
+
                     ToolbarMenu( const ::com::sun::star::uno::Reference< ::com::sun::star::frame::XFrame >& rFrame,
                                  Window* pParentWindow,
                                  const ResId& rResId );
-                    
+
                     ~ToolbarMenu();
 
     virtual void    MouseMove( const MouseEvent& rMEvt );
@@ -117,7 +117,7 @@ protected:
 
     void            StateChanged( StateChangedType nType );
     void            DataChanged( const DataChangedEvent& rDCEvt );
-	
+
 	::com::sun::star::uno::Reference< ::com::sun::star::frame::XFrame >	GetFrame() const;
 private:
 	DECL_LINK( HighlightHdl, Control * );
@@ -132,7 +132,7 @@ private:
 	void			appendEntry( ToolbarMenuEntry* pEntry );
 
 	void			implPaint( ToolbarMenuEntry* pThisOnly = NULL, bool bHighlight = false );
-    
+
 	void			implHighlightEntry( int nHighlightEntry, bool bHighlight );
 	void			implHighlightEntry( const MouseEvent& rMEvt, bool bMBDown );
 

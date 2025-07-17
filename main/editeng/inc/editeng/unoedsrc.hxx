@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -148,7 +148,7 @@ class EDITENG_DLLPUBLIC SvxTextForwarder
 {
 public:
 	virtual				~SvxTextForwarder();
-	
+
 	virtual sal_uInt32		GetParagraphCount() const = 0;
 	virtual sal_uInt16		GetTextLen( sal_uInt32 nParagraph ) const = 0;
 	virtual String		GetText( const ESelection& rSel ) const = 0;
@@ -157,7 +157,7 @@ public:
 	virtual void		SetParaAttribs( sal_uInt32 nPara, const SfxItemSet& rSet ) = 0;
     virtual void        RemoveAttribs( const ESelection& rSelection, sal_Bool bRemoveParaAttribs, sal_uInt16 nWhich ) = 0;
 	virtual void		GetPortions( sal_uInt32 nPara, SvUShorts& rList ) const = 0;
-	
+
 	virtual sal_uInt16		GetItemState( const ESelection& rSel, sal_uInt16 nWhich ) const = 0;
 	virtual sal_uInt16		GetItemState( sal_uInt32 nPara, sal_uInt16 nWhich ) const = 0;
 
@@ -172,13 +172,13 @@ public:
 	virtual SfxItemPool* GetPool() const = 0;
 
     virtual const SfxItemSet*   GetEmptyItemSetPtr() = 0;
- 
+
     // implementation functions for XParagraphAppend and XTextPortionAppend
     virtual void        AppendParagraph() = 0;
     virtual xub_StrLen  AppendTextPortion( sal_uInt32 nPara, const String &rText, const SfxItemSet &rSet ) = 0;
-    
+
     // XTextCopy
-    virtual void        CopyText(const SvxTextForwarder& rSource) = 0; 
+    virtual void        CopyText(const SvxTextForwarder& rSource) = 0;
 
     /** Query state of forwarder
 
@@ -357,15 +357,15 @@ public:
 
      */
     virtual sal_uInt16			GetLineLen( sal_uInt32 nPara, sal_uInt16 nLine ) const = 0;
-    
+
     /** Query bounds of line in paragraph
 
         @param rStart [output param; 0 .. text_len]
         The index in the paragraph text that belongs to the chara at the start of the line
-        
+
         @param rEnd [output param; 0 .. text_len]
         The index in the paragraph text that follows the last chara in the line
-        
+
         @param nParagraph[0 .. n-1]
         Index of paragraph to query line length in
 
@@ -374,7 +374,7 @@ public:
 
      */
     virtual void            GetLineBoundaries( /*out*/sal_uInt16 &rStart, /*out*/sal_uInt16 &rEnd, sal_uInt32 nParagraph, sal_uInt16 nLine ) const = 0;
-    
+
     /** Query the line number for a index in the paragraphs text
 
         @param nPara[0 .. n-1]

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -37,7 +37,7 @@ namespace osl
 		: m_handle( osl_copySocketAddr( Addr.m_handle ) )
 	{
 	}
-		
+
 	//______________________________________________________________________________
 	inline SocketAddr::SocketAddr(oslSocketAddr Addr)
 		: m_handle( osl_copySocketAddr( Addr ) )
@@ -49,7 +49,7 @@ namespace osl
 		: m_handle( Addr )
 	{
 	}
-	
+
 	//______________________________________________________________________________
 	inline SocketAddr::SocketAddr( const ::rtl::OUString& strAddrOrHostName, sal_Int32 nPort)
 		: m_handle( osl_createInetSocketAddr( strAddrOrHostName.pData, nPort ) )
@@ -70,7 +70,7 @@ namespace osl
 			}
 		}
 	}
-			
+
 	//______________________________________________________________________________
 	inline SocketAddr::~SocketAddr()
 	{
@@ -87,7 +87,7 @@ namespace osl
 			*pResult = result;
 		return hostname;
 	}
-	
+
 	//______________________________________________________________________________
 	inline sal_Int32 SAL_CALL SocketAddr::getPort() const
 	{
@@ -121,14 +121,14 @@ namespace osl
 			*pResult = result;
 		return sequence;
 	}
-	
+
 	//______________________________________________________________________________
 	inline SocketAddr & SAL_CALL SocketAddr::operator= (oslSocketAddr Addr)
 	{
 		oslSocketAddr pNewAddr = osl_copySocketAddr( Addr );
 		if( m_handle )
 			osl_destroySocketAddr( m_handle );
-		m_handle = pNewAddr; 
+		m_handle = pNewAddr;
 		return *this;
 	}
 
@@ -173,7 +173,7 @@ namespace osl
 			*pResult = result;
 		return hostname;
 	}
-		
+
 	// (static method)______________________________________________________________
 	inline void SAL_CALL SocketAddr::resolveHostname(
 		const ::rtl::OUString & strHostName, SocketAddr &Addr)
@@ -190,12 +190,12 @@ namespace osl
 	}
 
 	//______________________________________________________________________________
-	inline Socket::Socket(oslSocketType Type, 
-						  oslAddrFamily Family, 
+	inline Socket::Socket(oslSocketType Type,
+						  oslAddrFamily Family,
 						  oslProtocol   Protocol)
 		: m_handle( osl_createSocket(Family, Type, Protocol) )
 	{}
-	
+
 	//______________________________________________________________________________
 	inline Socket::Socket( oslSocket socketHandle, __sal_NoAcquire )
 		: m_handle( socketHandle )
@@ -207,7 +207,7 @@ namespace osl
 	{
 		osl_acquireSocket( m_handle );
 	}
-	
+
 	//______________________________________________________________________________
 	inline Socket::Socket( const Socket & socket )
 		: m_handle( socket.getHandle() )
@@ -220,7 +220,7 @@ namespace osl
 	{
 		osl_releaseSocket( m_handle );
 	}
-		
+
 	//______________________________________________________________________________
 	inline Socket& Socket::operator= ( oslSocket socketHandle)
 	{
@@ -229,7 +229,7 @@ namespace osl
 		m_handle = socketHandle;
 		return *this;
 	}
-		
+
 	//______________________________________________________________________________
 	inline Socket&  Socket::operator= (const Socket& sock)
 	{
@@ -243,7 +243,7 @@ namespace osl
 	}
 
 	//______________________________________________________________________________
-	inline sal_Bool Socket::operator==( const oslSocket socketHandle ) const 
+	inline sal_Bool Socket::operator==( const oslSocket socketHandle ) const
 	{
 		return m_handle == socketHandle;
 	}
@@ -281,7 +281,7 @@ namespace osl
 		getLocalAddr( addr );
 		return addr.getHostname();
 	}
-    
+
 	//______________________________________________________________________________
 	inline void Socket::getPeerAddr( SocketAddr &addr ) const
 	{
@@ -327,7 +327,7 @@ namespace osl
 	{
 		return osl_isExceptionPending( m_handle, pTimeout );
 	}
-    
+
 	//______________________________________________________________________________
 	inline oslSocketType Socket::getType() const
 	{
@@ -343,9 +343,9 @@ namespace osl
 	{
 		return osl_getSocketOption( m_handle, Level, Option, pBuffer , BufferLen );
 	}
-		
+
 	//______________________________________________________________________________
-	inline sal_Bool Socket::setOption(	oslSocketOption Option, 
+	inline sal_Bool Socket::setOption(	oslSocketOption Option,
 										void* pBuffer,
 										sal_uInt32 BufferLen,
 										oslSocketOptionLevel Level ) const
@@ -412,7 +412,7 @@ namespace osl
 									  oslSocketType	Type )
 		: Socket( Type, Family, Protocol )
 	{}
-	
+
 	//______________________________________________________________________________
 	inline StreamSocket::StreamSocket( oslSocket socketHandle, __sal_NoAcquire noacquire )
 		: Socket( socketHandle, noacquire )
@@ -422,7 +422,7 @@ namespace osl
 	inline StreamSocket::StreamSocket( oslSocket socketHandle )
 		: Socket( socketHandle )
 	{}
-	
+
 	//______________________________________________________________________________
 	inline StreamSocket::StreamSocket( const StreamSocket & socket )
 		: Socket( socket )
@@ -442,23 +442,23 @@ namespace osl
 
 
 	//______________________________________________________________________________
-	inline sal_Int32 StreamSocket::recv(void* pBuffer, 
-										sal_uInt32 BytesToRead, 
+	inline sal_Int32 StreamSocket::recv(void* pBuffer,
+										sal_uInt32 BytesToRead,
 										oslSocketMsgFlag Flag)
 	{
 		return osl_receiveSocket( m_handle, pBuffer,BytesToRead, Flag );
 	}
-		
+
 	//______________________________________________________________________________
-	inline sal_Int32 StreamSocket::send(const void* pBuffer, 
-										sal_uInt32 BytesToSend, 
+	inline sal_Int32 StreamSocket::send(const void* pBuffer,
+										sal_uInt32 BytesToSend,
 										oslSocketMsgFlag Flag)
 	{
 		return osl_sendSocket( m_handle, pBuffer, BytesToSend, Flag );
 	}
 
 	//______________________________________________________________________________
-  	inline ConnectorSocket::ConnectorSocket(oslAddrFamily Family, 
+  	inline ConnectorSocket::ConnectorSocket(oslAddrFamily Family,
 											oslProtocol	Protocol,
 											oslSocketType	Type)
 		: StreamSocket( Family, Protocol ,Type )
@@ -470,14 +470,14 @@ namespace osl
 	{
 		return osl_connectSocketTo( m_handle , TargetHost.getHandle(), pTimeout );
 	}
-	
+
 	//______________________________________________________________________________
-	inline AcceptorSocket::AcceptorSocket(oslAddrFamily Family , 
+	inline AcceptorSocket::AcceptorSocket(oslAddrFamily Family ,
 										  oslProtocol	Protocol ,
 										  oslSocketType	Type )
 		: Socket( Type, Family, Protocol )
 	{}
-	
+
 	//______________________________________________________________________________
 	inline sal_Bool AcceptorSocket::listen(sal_Int32 MaxPendingConnections)
 	{
@@ -500,7 +500,7 @@ namespace osl
 		}
 		return status;
 	}
-	
+
 	//______________________________________________________________________________
 	inline oslSocketResult AcceptorSocket::acceptConnection(
 		StreamSocket&	Connection, SocketAddr & PeerAddr)
@@ -521,16 +521,16 @@ namespace osl
 	}
 
 	//______________________________________________________________________________
-	inline DatagramSocket::DatagramSocket(oslAddrFamily Family, 
+	inline DatagramSocket::DatagramSocket(oslAddrFamily Family,
 										  oslProtocol	Protocol,
 										  oslSocketType	Type)
 		: Socket( Type, Family, Protocol )
 	{}
-		
+
 	//______________________________________________________________________________
-	inline sal_Int32 DatagramSocket::recvFrom(void*  pBuffer, 
-											  sal_uInt32 BufferSize, 
-											  SocketAddr* pSenderAddr, 
+	inline sal_Int32 DatagramSocket::recvFrom(void*  pBuffer,
+											  sal_uInt32 BufferSize,
+											  SocketAddr* pSenderAddr,
 											  oslSocketMsgFlag Flag )
 	{
 		sal_Int32 nByteRead;
@@ -550,9 +550,9 @@ namespace osl
 	}
 
 	//______________________________________________________________________________
-	inline sal_Int32  DatagramSocket::sendTo( const SocketAddr& ReceiverAddr, 
+	inline sal_Int32  DatagramSocket::sendTo( const SocketAddr& ReceiverAddr,
 											  const void* pBuffer,
-											  sal_uInt32 BufferSize, 
+											  sal_uInt32 BufferSize,
 											  oslSocketMsgFlag Flag )
 	{
 		return osl_sendToSocket( m_handle, ReceiverAddr.getHandle(), pBuffer, BufferSize, Flag );

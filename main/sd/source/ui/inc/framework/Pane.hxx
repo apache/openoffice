@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -58,7 +58,7 @@ namespace sd { namespace framework {
     This class has two responsibilities:
     1. It implements the XPane interface.  This is the most important
     interface of this class for API based views (of which there not that
-    many yet) because it gives access to the XWindow. 
+    many yet) because it gives access to the XWindow.
     2. It gives access to the underlying VCL Window by implementing the
     XUnoTunnel interface.  This is necessary at the moment and in the
     foreseeable future because many parts of the Draw and Impress views rely
@@ -86,7 +86,7 @@ public:
 	virtual ~Pane (void) throw();
 
     virtual void SAL_CALL disposing (void);
-    
+
     static const ::com::sun::star::uno::Sequence<sal_Int8>& getUnoTunnelId (void);
 
     /** This method is typically used together with the XUnoTunnel to obtain
@@ -95,7 +95,7 @@ public:
     virtual ::Window* GetWindow (void);
 
     void SetWindow (::Window* pWindow);
-    
+
     //----- XPane -------------------------------------------------------------
 
     /** For a UNO API based implementation of a view this may the most
@@ -112,7 +112,7 @@ public:
 
 
     //----- XPane2 -------------------------------------------------------------
-    
+
     virtual sal_Bool SAL_CALL isVisible (void)
         throw (cssu::RuntimeException);
 
@@ -128,7 +128,7 @@ public:
 
 
     //----- XResource ---------------------------------------------------------
-    
+
     virtual ::com::sun::star::uno::Reference<com::sun::star::drawing::framework::XResourceId>
         SAL_CALL getResourceId (void)
         throw (::com::sun::star::uno::RuntimeException);
@@ -139,7 +139,7 @@ public:
     virtual sal_Bool SAL_CALL isAnchorOnly (void)
         throw (com::sun::star::uno::RuntimeException);
 
-    
+
     //----- XUnoTunnel --------------------------------------------------------
 
     virtual sal_Int64 SAL_CALL getSomething (const com::sun::star::uno::Sequence<sal_Int8>& rId)
