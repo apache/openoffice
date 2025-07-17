@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -29,7 +29,7 @@
 #ifndef _STRING_HXX
 #include <tools/string.hxx>
 #endif
-#ifndef _STREAM_HXX 
+#ifndef _STREAM_HXX
 #include <tools/stream.hxx>
 #endif
 #ifndef _COM_SUN_STAR_BEANS_XPROPERTYSET_HPP_
@@ -43,7 +43,7 @@
 namespace dbaui
 {
 //	class OTableRow;
-//	friend SvStream& operator<<( SvStream& rStr, OTableRow& _rRow ); 
+//	friend SvStream& operator<<( SvStream& rStr, OTableRow& _rRow );
 
 	class OFieldDescription;
 	class OTypeInfo;
@@ -71,7 +71,7 @@ namespace dbaui
 		sal_Bool IsPrimaryKey() const;
 
 		/** returns the current position in the table.
-			@return 
+			@return
 				the current position in the table
 		*/
 		inline long GetPos() const { return m_nPos; }
@@ -89,8 +89,8 @@ namespace dbaui
 		*/
 		inline bool IsReadOnly() const { return m_bReadOnly; }
 
-		friend SvStream& operator<<( SvStream& rStr,const OTableRow& _rRow ); 
-		friend SvStream& operator>>( SvStream& rStr, OTableRow& _rRow ); 
+		friend SvStream& operator<<( SvStream& rStr,const OTableRow& _rRow );
+		friend SvStream& operator>>( SvStream& rStr, OTableRow& _rRow );
 	};
 }
 #endif // DBAUI_TABLEROW_HXX

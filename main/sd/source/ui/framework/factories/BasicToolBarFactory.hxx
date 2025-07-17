@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -60,18 +60,18 @@ namespace sd { namespace framework {
 */
 class BasicToolBarFactory
     : protected ::cppu::BaseMutex,
-      public BasicToolBarFactoryInterfaceBase      
+      public BasicToolBarFactoryInterfaceBase
 {
 public:
     BasicToolBarFactory (
         const css::uno::Reference<com::sun::star::uno::XComponentContext>& rxContext);
     virtual ~BasicToolBarFactory (void);
-    
+
     virtual void SAL_CALL disposing (void);
 
-    
+
     // ToolBarFactory
-    
+
     virtual css::uno::Reference<com::sun::star::drawing::framework::XResource> SAL_CALL
         createResource (
             const css::uno::Reference<
@@ -86,14 +86,14 @@ public:
 
 
     // XInitialization
-    
+
     virtual void SAL_CALL initialize(
         const css::uno::Sequence<com::sun::star::uno::Any>& aArguments)
         throw (css::uno::Exception, css::uno::RuntimeException);
 
-    
+
     // lang::XEventListener
-    
+
     virtual void SAL_CALL disposing (
         const css::lang::EventObject& rEventObject)
         throw (css::uno::RuntimeException);

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -88,9 +88,9 @@ private:
 	void			ImplInitBuf( sal_Bool nIOFlag );
 	void			ImplWriteBack( void );
 
-public:	
+public:
 					ZCodec( sal_uIntPtr nInBuf, sal_uIntPtr nOutBuf, sal_uIntPtr nMemUsage = MAX_MEM_USAGE );
-					ZCodec( void );	
+					ZCodec( void );
 	virtual			~ZCodec();
 
 	virtual void	BeginCompression( sal_uIntPtr nCompressMethod = ZCODEC_DEFAULT );
@@ -107,7 +107,7 @@ public:
 	void			SetBreak( sal_uIntPtr );
 	sal_uIntPtr			GetBreak( void );
 	void			SetCRC( sal_uIntPtr nCurrentCRC );
-	sal_uIntPtr			UpdateCRC( sal_uIntPtr nLatestCRC, sal_uIntPtr nSource );	
+	sal_uIntPtr			UpdateCRC( sal_uIntPtr nLatestCRC, sal_uIntPtr nSource );
 	sal_uIntPtr			UpdateCRC( sal_uIntPtr nLatestCRC, sal_uInt8* pSource, long nDatSize );
 	sal_uIntPtr			GetCRC();
 };

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -81,13 +81,13 @@ public:
     virtual void SAL_CALL disposing (void);
 
 	// XJob
-    
+
     virtual css::uno::Any SAL_CALL execute(
         const css::uno::Sequence<css::beans::NamedValue >& Arguments)
         throw (css::lang::IllegalArgumentException,
             css::uno::Exception,
             css::uno::RuntimeException);
-    
+
 private:
     PresenterScreenJob (const css::uno::Reference<css::uno::XComponentContext>& rxContext);
     virtual ~PresenterScreenJob (void);
@@ -134,9 +134,9 @@ public:
 
 
     // XEventListener
-    
+
     virtual void SAL_CALL disposing ( const css::lang::EventObject& rEvent) throw (css::uno::RuntimeException);
-    
+
 private:
 	css::uno::Reference<css::frame::XModel2 > mxModel;
 	css::uno::Reference<css::frame::XController> mxController;
@@ -205,7 +205,7 @@ private:
     */
     void ProcessViewDescriptions (
         PresenterConfigurationAccess& rConfiguration);
-        
+
     /** Called by ProcessViewDescriptions for a single entry.
     */
     void ProcessViewDescription (

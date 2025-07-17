@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -61,7 +61,7 @@ class E3dScene;
 	will be used
 */
 E3dScene* fillViewInformation3DForCompoundObject(
-	drawinglayer::geometry::ViewInformation3D& o_rViewInformation3D, 
+	drawinglayer::geometry::ViewInformation3D& o_rViewInformation3D,
 	const E3dCompoundObject& rCandidate);
 
 /** support for getting all from a 2d position hit objects in a 3d scene
@@ -80,8 +80,8 @@ E3dScene* fillViewInformation3DForCompoundObject(
 
 */
 SVX_DLLPUBLIC void getAllHit3DObjectsSortedFrontToBack(
-    const basegfx::B2DPoint& rPoint, 
-    const E3dScene& rScene, 
+    const basegfx::B2DPoint& rPoint,
+    const E3dScene& rScene,
     ::std::vector< const E3dCompoundObject* >& o_rResult);
 
 /** support for checking if the single given 3d object is hit at position
@@ -96,7 +96,7 @@ SVX_DLLPUBLIC void getAllHit3DObjectsSortedFrontToBack(
 	true if hit, false if not
 */
 bool checkHitSingle3DObject(
-    const basegfx::B2DPoint& rPoint, 
+    const basegfx::B2DPoint& rPoint,
 	const E3dCompoundObject& rCandidate);
 
 //////////////////////////////////////////////////////////////////////////////

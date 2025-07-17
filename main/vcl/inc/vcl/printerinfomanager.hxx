@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -122,7 +122,7 @@ protected:
     std::list< WatchFile >            m_aWatchFiles;
     rtl::OUString                     m_aDefaultPrinter;
     rtl::OUString                     m_aSystemPrintCommand;
-    
+
     std::list< SystemPrintQueue >     m_aSystemPrintQueues;
 
     SystemQueueInfo*				  m_pQueueInfo;
@@ -131,7 +131,7 @@ protected:
     bool                              m_bUseIncludeFeature;
     bool                              m_bUseJobPatch;
     rtl::OUString                     m_aSystemDefaultPaper;
-    
+
     bool                              m_bDisableCUPS;
 
     PrinterInfoManager( Type eType = Default );
@@ -142,12 +142,12 @@ protected:
     // fill in font substitutions
     // the resulting hash_map maps from source to target font ids
     void fillFontSubstitutions( PrinterInfo& rInfo ) const;
-    
+
     // fill default paper if not configured in config file
     // default paper is e.g. locale dependent
     // if a paper is already set it will not be overwritten
     void setDefaultPaper( PPDContext& rInfo ) const;
-    
+
     void initSystemDefaultPaper();
 public:
 
@@ -167,7 +167,7 @@ public:
 
     // gets info about a named printer
     const PrinterInfo& getPrinterInfo( const rtl::OUString& rPrinter ) const;
-        
+
     // gets the name of the default printer
     const rtl::OUString& getDefaultPrinter() const { return m_aDefaultPrinter; }
 
@@ -206,7 +206,7 @@ public:
     // primarily used internally but also by padmin
     // returns the printer queue names
     virtual const std::list< SystemPrintQueue >& getSystemPrintQueues();
-        
+
     // similar but returnse whole commandlines
     virtual void getSystemPrintCommands( std::list< rtl::OUString >& rCommands );
 
@@ -219,23 +219,23 @@ public:
     // set bBanner to "true" will rely on the system default
     // returns a numerical job id
     virtual int endSpool( const rtl::OUString& rPrinterName, const rtl::OUString& rJobTitle, FILE* pFile, const JobData& rDocumentJobData, bool bBanner );
-    
+
     // for spadmin: whether adding or removing a printer is possible
     virtual bool addOrRemovePossible() const;
-    
+
     bool getUseIncludeFeature() const { return m_bUseIncludeFeature; }
     bool getUseJobPatch() const { return m_bUseJobPatch; }
-    
+
     // check whether a printer's feature string contains a subfeature
     bool checkFeatureToken( const rtl::OUString& rPrinterName, const char* pToken ) const;
-    
+
     // set m_bDisableCUPS and update printer config
     void setCUPSDisabled( bool );
-    
+
     // gets m_bDisableCUPS, initialized from printer config
     bool isCUPSDisabled() const;
 };
-    
+
 } // namespace
 
 #endif // _PSPRINT_PRINTERINFOMANAGER_HXX_

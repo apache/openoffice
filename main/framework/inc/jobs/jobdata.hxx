@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -141,13 +141,13 @@ class JobData : private ThreadHelpBase
             /// this job is used by the global event broadcaster
             E_DOCUMENTEVENT
         };
-        
+
         /** Some jobs can be registered to "logical events", which are generated on demand if another document event
             occurs. E.g. "onDocumentOpened" in case "OnNew" or "OnLoad" was notified to the JobExecutor instance.
             And normally the original event is transported as parameter set to the executed job. But then such job
             can't differ between e.g. "OnNew" and "onDocumentOpened".
             That's why we must know, for which type of event the job was really triggered .-)
-        
+
             The information "sDocEvent" from this struct must be set on the member JobData::m_sEvent from outside
             user of such Jobdata structure.
         */
@@ -155,7 +155,7 @@ class JobData : private ThreadHelpBase
         {
             ::rtl::OUString m_sJobName;
             ::rtl::OUString m_sDocEvent;
-            
+
             TJob2DocEventBinding(const ::rtl::OUString& sJobName ,
                                  const ::rtl::OUString& sDocEvent)
                 : m_sJobName (sJobName )

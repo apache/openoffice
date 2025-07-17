@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -29,7 +29,7 @@
 #	include <vos/refernce.hxx>
 
 namespace vos
-{     
+{
 
 
 /** IExecutable
@@ -46,7 +46,7 @@ namespace vos
 	@version 0.1
 */
 
-class IExecutable : public vos::IReference 
+class IExecutable : public vos::IReference
 {
 public:
 
@@ -60,7 +60,7 @@ public:
 		you should provide here a means to unblock cleanly.
 		@Return False if you are not able to unblock the
 		thread.
-		
+
 	*/
 	virtual sal_Bool SAL_CALL unblock()= 0;
 
@@ -76,11 +76,11 @@ public:
 
 
 /** OExecutable
-	added default impl. of IReferenceCounter 
+	added default impl. of IReferenceCounter
 */
 class OExecutable : public vos::IExecutable,
 					public vos::OReference
-					
+
 {
 public:
 

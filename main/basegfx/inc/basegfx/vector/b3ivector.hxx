@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -56,11 +56,11 @@ namespace basegfx
 			@param nX
 			This parameter is used to initialize the X-coordinate
 			of the 3D Vector.
-			
+
 			@param nY
 			This parameter is used to initialize the Y-coordinate
 			of the 3D Vector.
-			
+
 			@param nZ
 			This parameter is used to initialize the Z-coordinate
 			of the 3D Vector.
@@ -74,49 +74,49 @@ namespace basegfx
 			@param rVec
 			The 3D Vector which will be copied.
 		*/
-		B3IVector(const B3IVector& rVec) 
+		B3IVector(const B3IVector& rVec)
 		:	B3ITuple(rVec)
 		{}
 
 		/** constructor with tuple to allow copy-constructing
 			from B3ITuple-based classes
 		*/
-		B3IVector(const ::basegfx::B3ITuple& rTuple) 
+		B3IVector(const ::basegfx::B3ITuple& rTuple)
 		:	B3ITuple(rTuple)
 		{}
 
-		~B3IVector() 
+		~B3IVector()
 		{}
 
 		/** *=operator to allow usage from B3IVector, too
 		*/
-		B3IVector& operator*=( const B3IVector& rPnt ) 
-		{ 
+		B3IVector& operator*=( const B3IVector& rPnt )
+		{
 			mnX *= rPnt.mnX;
-			mnY *= rPnt.mnY; 
-			mnZ *= rPnt.mnZ; 
-			return *this; 
+			mnY *= rPnt.mnY;
+			mnZ *= rPnt.mnZ;
+			return *this;
 		}
 
 		/** *=operator to allow usage from B3IVector, too
 		*/
-		B3IVector& operator*=(sal_Int32 t) 
-		{ 
-			mnX *= t; 
-			mnY *= t; 
-			mnZ *= t; 
-			return *this; 
+		B3IVector& operator*=(sal_Int32 t)
+		{
+			mnX *= t;
+			mnY *= t;
+			mnZ *= t;
+			return *this;
 		}
 
 		/** assignment operator to allow assigning the results
 			of B3ITuple calculations
 		*/
-		B3IVector& operator=( const ::basegfx::B3ITuple& rVec ) 
-		{ 
+		B3IVector& operator=( const ::basegfx::B3ITuple& rVec )
+		{
 			mnX = rVec.getX();
-			mnY = rVec.getY(); 
-			mnZ = rVec.getZ(); 
-			return *this; 
+			mnY = rVec.getY();
+			mnZ = rVec.getZ();
+			return *this;
 		}
 
 		/** Calculate the length of this 3D Vector
@@ -226,7 +226,7 @@ namespace basegfx
 	//////////////////////////////////////////////////////////////////////////
 
 	/** Transform vector by given transformation matrix.
-	    
+
 		Since this is a vector, translational components of the
     	matrix are disregarded.
 	*/

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -77,17 +77,17 @@ public:
               mpShape( rShape ),
               maSlideBounds( rSlideBounds ),
               mbAutoReverse( bAutoReverse ) {}
-        
+
         /// End event to fire when animation is over
         EventSharedPtr                                  mpEndEvent;
-        
+
         /// Event queue to insert the end event into.
         EventQueue&                                     mrEventQueue;
         /// Event queue to insert the end event into.
         ActivitiesQueue&                                mrActivitiesQueue;
-        
+
         /** Simple duration of the activity
-            
+
             Specifies the minimal simple duration of the
             activity (minimal, because mnMinNumberOfFrames
             might prolongue the activity). According to SMIL,
@@ -97,9 +97,9 @@ public:
             animation over time).
         */
         double                                          mnMinDuration;
-        
+
         /** Minimal number of frames for this activity.
-            
+
             This specifies the minimal number of frames this
             activity will display per simple duration. If less
             than this number are displayed until mnMinDuration
@@ -107,9 +107,9 @@ public:
             mnMinNumberOfFrames are rendered.
         */
         sal_uInt32                                      mnMinNumberOfFrames;
-        
+
         /** Number of repeats for the simple duration
-            
+
             This specified the number of repeats. The
             mnMinDuration times maRepeats yields the total
             duration of this activity. If this value is
@@ -117,197 +117,197 @@ public:
             indefinitely.
         */
         ::boost::optional<double> const                 maRepeats;
-        
+
         /// Fraction of simple time to accelerate animation
         double                                          mnAcceleration;
-        
+
         /// Fraction of simple time to decelerate animation
         double                                          mnDeceleration;
-        
+
         /// Shape, to get bounds from
         ShapeSharedPtr                                  mpShape;
-        
+
         /// LayerManager, to get page size from
         ::basegfx::B2DVector                            maSlideBounds;
-        
+
         /// When true, activity is played reversed after mnDuration.
         bool                                            mbAutoReverse;
     };
-    
+
     /** Create an activity from an XAnimate node.
-        
+
         This method creates an animated activity from the
         given XAnimate node, extracting all necessary
         animation parameters from that. Note that due to the
         animator parameter, the animation values must be
         convertible to a double value.
-        
+
         @param rParms
         Factory parameter structure
-        
+
         @param rAnimator
         Animator sub-object
-        
+
         @param xNode
         The SMIL animation node to animate
     */
     static AnimationActivitySharedPtr createAnimateActivity(
         const CommonParameters&                        rParms,
-        const NumberAnimationSharedPtr&                rAnimator, 
-        const ::com::sun::star::uno::Reference< 
+        const NumberAnimationSharedPtr&                rAnimator,
+        const ::com::sun::star::uno::Reference<
         ::com::sun::star::animations::XAnimate >&   xNode );
-    
+
     /** Create an activity from an XAnimate node.
-        
+
         This method creates an animated activity from the
         given XAnimate node, extracting all necessary
         animation parameters from that. Note that due to the
         animator parameter, the animation values must be
         convertible to a double value.
-        
+
         @param rParms
         Factory parameter structure
-        
+
         @param rAnimator
         Animator sub-object
-        
+
         @param xNode
         The SMIL animation node to animate
     */
     static AnimationActivitySharedPtr createAnimateActivity(
         const CommonParameters&                        rParms,
-        const EnumAnimationSharedPtr&                  rAnimator, 
-        const ::com::sun::star::uno::Reference< 
+        const EnumAnimationSharedPtr&                  rAnimator,
+        const ::com::sun::star::uno::Reference<
         ::com::sun::star::animations::XAnimate >&      xNode );
-    
+
     /** Create an activity from an XAnimate node.
-        
+
         This method creates an animated activity from the
         given XAnimate node, extracting all necessary
         animation parameters from that. Note that due to the
         animator parameter, the animation values must be
         convertible to a color value.
-        
+
         @param rParms
         Factory parameter structure
-        
+
         @param rAnimator
         Animator sub-object
-        
+
         @param xNode
         The SMIL animation node to animate
     */
     static AnimationActivitySharedPtr createAnimateActivity(
         const CommonParameters&                        rParms,
-        const ColorAnimationSharedPtr&                 rAnimator, 
-        const ::com::sun::star::uno::Reference< 
+        const ColorAnimationSharedPtr&                 rAnimator,
+        const ::com::sun::star::uno::Reference<
         ::com::sun::star::animations::XAnimate >&      xNode );
-    
+
     /** Create an activity from an XAnimate node.
-        
+
         This method creates an animated activity from the
         given XAnimate node, extracting all necessary
         animation parameters from that. Note that due to the
         animator parameter, the animation values must be
         convertible to a color value.
-        
+
         @param rParms
         Factory parameter structure
-        
+
         @param rAnimator
         Animator sub-object
-        
+
         @param xNode
         The SMIL animation node to animate
     */
     static AnimationActivitySharedPtr createAnimateActivity(
         const CommonParameters&                            rParms,
-        const HSLColorAnimationSharedPtr&                  rAnimator, 
-        const ::com::sun::star::uno::Reference< 
+        const HSLColorAnimationSharedPtr&                  rAnimator,
+        const ::com::sun::star::uno::Reference<
         ::com::sun::star::animations::XAnimateColor >&     xNode );
-    
+
     /** Create an activity from an XAnimate node.
-        
+
         This method creates an animated activity from the
         given XAnimate node, extracting all necessary
         animation parameters from that. Note that due to the
         animator parameter, the animation values must be
         convertible to a pair of double values.
-        
+
         @param rParms
         Factory parameter structure
-        
+
         @param rAnimator
         Animator sub-object
-        
+
         @param xNode
         The SMIL animation node to animate
     */
     static AnimationActivitySharedPtr createAnimateActivity(
         const CommonParameters&                        rParms,
-        const PairAnimationSharedPtr&                  rAnimator, 
-        const ::com::sun::star::uno::Reference< 
+        const PairAnimationSharedPtr&                  rAnimator,
+        const ::com::sun::star::uno::Reference<
         ::com::sun::star::animations::XAnimate >&   xNode );
-    
+
     /** Create an activity from an XAnimate node.
-        
+
         This method creates an animated activity from the
         given XAnimate node, extracting all necessary
         animation parameters from that. Note that due to the
         animator parameter, the animation values must be
         convertible to a string.
-        
+
         @param rParms
         Factory parameter structure
-        
+
         @param rAnimator
         Animator sub-object
-        
+
         @param xNode
         The SMIL animation node to animate
     */
     static AnimationActivitySharedPtr createAnimateActivity(
         const CommonParameters&                        rParms,
-        const StringAnimationSharedPtr&                rAnimator, 
-        const ::com::sun::star::uno::Reference< 
+        const StringAnimationSharedPtr&                rAnimator,
+        const ::com::sun::star::uno::Reference<
         ::com::sun::star::animations::XAnimate >&      xNode );
-    
+
     /** Create an activity from an XAnimate node.
-        
+
         This method creates an animated activity from the
         given XAnimate node, extracting all necessary
         animation parameters from that. Note that due to the
         animator parameter, the animation values must be
         convertible to a bool value.
-        
+
         @param rParms
         Factory parameter structure
-        
+
         @param rAnimator
         Animator sub-object
-        
+
         @param xNode
         The SMIL animation node to animate
     */
     static AnimationActivitySharedPtr createAnimateActivity(
         const CommonParameters&                        rParms,
-        const BoolAnimationSharedPtr&                  rAnimator, 
-        const ::com::sun::star::uno::Reference< 
+        const BoolAnimationSharedPtr&                  rAnimator,
+        const ::com::sun::star::uno::Reference<
         ::com::sun::star::animations::XAnimate >&      xNode );
-    
+
     /** Create a simple activity for the given animator
-        
+
         This method is suited to create activities for custom
         animations, which need a simple double value and lasts
         a given timespan. This activity always generates values
         from the [0,1] range.
-        
+
         @param rParms
         Factory parameter structure
-        
+
         @param rAnimator
         Animator sub-object
-        
+
         @param bDirectionForward
         If true, the activity goes 'forward', i.e. from 0 to
         1. With false, the direction is reversed.
@@ -316,7 +316,7 @@ public:
         const CommonParameters&         rParms,
         const NumberAnimationSharedPtr& rAnimator,
         bool                            bDirectionForward );
-    
+
 private:
     // default: constructor/destructor disabed
     ActivitiesFactory();

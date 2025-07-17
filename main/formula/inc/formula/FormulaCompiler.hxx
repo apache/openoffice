@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -82,7 +82,7 @@ public:
     FormulaCompiler(FormulaTokenArray& _rArr);
     virtual ~FormulaCompiler();
 
-    // SUNWS8 needs a forward declared friend, otherwise members of the outer 
+    // SUNWS8 needs a forward declared friend, otherwise members of the outer
     // class are not accessible.
     class OpCodeMap;
     friend class FormulaCompiler::OpCodeMap;
@@ -117,7 +117,7 @@ public:
             mbEnglish = FormulaGrammar::isEnglish( meGrammar);
         }
         virtual ~OpCodeMap();
-        
+
 
         /// Get the symbol String -> OpCode hash map for finds.
         inline const OpCodeHashMap* getHashMap() const { return mpHashMap; }
@@ -195,7 +195,7 @@ public:
         @return Map for nLanguage. If nLanguage is unknown, a NULL map is returned.
      */
     OpCodeMapPtr GetOpCodeMap( const sal_Int32 nLanguage ) const;
-    
+
     /** Create an internal symbol map from API mapping.
         @param bEnglish
             Use English number parser / formatter instead of native.
@@ -285,7 +285,7 @@ protected:
     String              aCorrectedSymbol;           // autocorrected Symbol
 
     OpCodeMapPtr        mxSymbols;                  // which symbols are used
-    
+
     FormulaTokenRef     pToken;                     // current token
     FormulaTokenRef     pCurrentFactorToken;        // current factor token (of Factor() method)
     FormulaTokenArray*  pArr;
@@ -299,7 +299,7 @@ protected:
     short               nNumFmt;                    // set during CompileTokenArray()
     sal_uInt16              pc;
 
-    FormulaGrammar::Grammar  
+    FormulaGrammar::Grammar
                         meGrammar;          // The grammar used, language plus convention.
 
     sal_Bool                bAutoCorrect;               // whether to apply AutoCorrection
@@ -361,7 +361,7 @@ private:
         operator FormulaToken*()
             { return operator->(); }
     };
-    
+
 
     mutable NonConstOpCodeMapPtr  mxSymbolsODFF;                          // ODFF symbols
     mutable NonConstOpCodeMapPtr  mxSymbolsPODF;                          // ODF 1.1 symbols

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -45,9 +45,9 @@ class SlideRenderer;
 
 namespace css = ::com::sun::star;
 
-/** Each PageDescriptor object represents the preview of one draw page, 
+/** Each PageDescriptor object represents the preview of one draw page,
     slide, or master page of a Draw or Impress document as they are displayed
-    in the slide sorter.  This class gives access to some associated 
+    in the slide sorter.  This class gives access to some associated
     information like prerendered preview or position on the screen.
 
     <p>Bounding boxes of page objects come in four varieties:
@@ -65,7 +65,7 @@ public:
         @param pPage
             The page pointer can in some situations not be detected from
             rxPage, e.g. after undo of page deletion.  Therefore supply it
-            separately. 
+            separately.
         @param nIndex
             This index is displayed in the view as page number.  It is not
             necessaryily the page index (not even when you add or subtract 1
@@ -93,7 +93,7 @@ public:
     */
     sal_Int32 GetPageIndex (void) const;
     void SetPageIndex (const sal_Int32 nIndex);
-    
+
     bool UpdateMasterPage (void);
     bool UpdateTransitionFlag (void);
 
@@ -130,7 +130,7 @@ private:
 	SdPage* mpPage;
     css::uno::Reference<css::drawing::XDrawPage> mxPage;
 	SdrPage const* mpMasterPage;
-    
+
     /** This index is displayed as page number in the view.  It may or may
         not be the actual page index.
     */
@@ -147,7 +147,7 @@ private:
     bool mbIsMouseOver : 1;
     bool mbHasTransition : 1;
 
-    
+
     // Do not use the copy constructor operator.  It is not implemented.
     PageDescriptor (const PageDescriptor& rDescriptor);
 

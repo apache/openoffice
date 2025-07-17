@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -48,15 +48,15 @@ namespace basegfx
 	protected:
 		double										mfX;
 		double										mfY;
-							
-	public:					
+
+	public:
 		/**	Create a 2D Tuple
 
         	The tuple is initialized to (0.0, 0.0)
 		*/
-		B2DTuple() 
-		:	mfX(0.0), 
-			mfY(0.0) 
+		B2DTuple()
+		:	mfX(0.0),
+			mfY(0.0)
 		{}
 
 		/**	Create a 2D Tuple
@@ -64,14 +64,14 @@ namespace basegfx
 			@param fX
 			This parameter is used to initialize the X-coordinate
 			of the 2D Tuple.
-			
+
 			@param fY
 			This parameter is used to initialize the Y-coordinate
 			of the 2D Tuple.
 		*/
-		B2DTuple(double fX, double fY) 
-		:	mfX( fX ), 
-			mfY( fY ) 
+		B2DTuple(double fX, double fY)
+		:	mfX( fX ),
+			mfY( fY )
 		{}
 
 		/**	Create a copy of a 2D Tuple
@@ -79,9 +79,9 @@ namespace basegfx
 			@param rTup
 			The 2D Tuple which will be copied.
 		*/
-		B2DTuple(const B2DTuple& rTup) 
-		:	mfX( rTup.mfX ), 
-			mfY( rTup.mfY ) 
+		B2DTuple(const B2DTuple& rTup)
+		:	mfX( rTup.mfX ),
+			mfY( rTup.mfY )
 		{}
 
 		/**	Create a copy of a 2D integer Tuple
@@ -91,19 +91,19 @@ namespace basegfx
 		*/
 		BASEGFX_DLLPUBLIC explicit B2DTuple(const B2ITuple& rTup);
 
-		~B2DTuple() 
+		~B2DTuple()
 		{}
 
 		/// Get X-Coordinate of 2D Tuple
 		double getX() const
-		{ 
-			return mfX; 
+		{
+			return mfX;
 		}
 
 		/// Get Y-Coordinate of 2D Tuple
 		double getY() const
-		{ 
-			return mfY; 
+		{
+			return mfY;
 		}
 
 		/// Set X-Coordinate of 2D Tuple
@@ -119,8 +119,8 @@ namespace basegfx
 		}
 
 		/// Array-access to 2D Tuple
-		const double& operator[] (int nPos) const 
-		{ 
+		const double& operator[] (int nPos) const
+		{
 			// Here, normally one if(...) should be used. In the assumption that
 			// both double members can be accessed as an array a shortcut is used here.
 			// if(0 == nPos) return mfX; return mfY;
@@ -129,7 +129,7 @@ namespace basegfx
 
 		/// Array-access to 2D Tuple
 		double& operator[] (int nPos)
-		{ 
+		{
 			// Here, normally one if(...) should be used. In the assumption that
 			// both double members can be accessed as an array a shortcut is used here.
 			// if(0 == nPos) return mfX; return mfY;
@@ -140,99 +140,99 @@ namespace basegfx
 		//////////////////////////////////////////////////////////////////////
 
 		bool equalZero() const
-		{ 
-			return (this == &getEmptyTuple() || 
+		{
+			return (this == &getEmptyTuple() ||
 					(fTools::equalZero(mfX) && fTools::equalZero(mfY)));
 		}
 
 		bool equalZero(const double& rfSmallValue) const
-		{ 
-			return (this == &getEmptyTuple() || 
+		{
+			return (this == &getEmptyTuple() ||
 					(fTools::equalZero(mfX, rfSmallValue) && fTools::equalZero(mfY, rfSmallValue)));
 		}
 
 		bool equal(const B2DTuple& rTup) const
-		{ 
+		{
 			return (
 				this == &rTup ||
-				(fTools::equal(mfX, rTup.mfX) && 
+				(fTools::equal(mfX, rTup.mfX) &&
 				fTools::equal(mfY, rTup.mfY)));
 		}
 
 		bool equal(const B2DTuple& rTup, const double& rfSmallValue) const
-		{ 
+		{
 			return (
 				this == &rTup ||
-				(fTools::equal(mfX, rTup.mfX, rfSmallValue) && 
+				(fTools::equal(mfX, rTup.mfX, rfSmallValue) &&
 				fTools::equal(mfY, rTup.mfY, rfSmallValue)));
 		}
 
 		// operators
 		//////////////////////////////////////////////////////////////////////
 
-		B2DTuple& operator+=( const B2DTuple& rTup ) 
-		{ 
+		B2DTuple& operator+=( const B2DTuple& rTup )
+		{
 			mfX += rTup.mfX;
-			mfY += rTup.mfY; 
-			return *this; 
+			mfY += rTup.mfY;
+			return *this;
 		}
 
-		B2DTuple& operator-=( const B2DTuple& rTup ) 
-		{ 
+		B2DTuple& operator-=( const B2DTuple& rTup )
+		{
 			mfX -= rTup.mfX;
-			mfY -= rTup.mfY; 
-			return *this; 
+			mfY -= rTup.mfY;
+			return *this;
 		}
 
-		B2DTuple& operator/=( const B2DTuple& rTup ) 
-		{ 
+		B2DTuple& operator/=( const B2DTuple& rTup )
+		{
 			mfX /= rTup.mfX;
-			mfY /= rTup.mfY; 
-			return *this; 
+			mfY /= rTup.mfY;
+			return *this;
 		}
 
-		B2DTuple& operator*=( const B2DTuple& rTup ) 
-		{ 
+		B2DTuple& operator*=( const B2DTuple& rTup )
+		{
 			mfX *= rTup.mfX;
-			mfY *= rTup.mfY; 
-			return *this; 
+			mfY *= rTup.mfY;
+			return *this;
 		}
 
-		B2DTuple& operator*=(double t) 
-		{ 
-			mfX *= t; 
-			mfY *= t; 
-			return *this; 
+		B2DTuple& operator*=(double t)
+		{
+			mfX *= t;
+			mfY *= t;
+			return *this;
 		}
 
-		B2DTuple& operator/=(double t) 
-		{ 
+		B2DTuple& operator/=(double t)
+		{
 			const double fVal(1.0 / t);
-			mfX *= fVal; 
-			mfY *= fVal; 
-			return *this; 
+			mfX *= fVal;
+			mfY *= fVal;
+			return *this;
 		}
 
-		B2DTuple operator-(void) const 
-		{	
-			return B2DTuple(-mfX, -mfY); 
+		B2DTuple operator-(void) const
+		{
+			return B2DTuple(-mfX, -mfY);
 		}
-		
-		bool operator==( const B2DTuple& rTup ) const 
-		{ 
+
+		bool operator==( const B2DTuple& rTup ) const
+		{
 			return mfX == rTup.mfX && mfY == rTup.mfY;
 		}
 
-		bool operator!=( const B2DTuple& rTup ) const 
-		{ 
+		bool operator!=( const B2DTuple& rTup ) const
+		{
 			return mfX != rTup.mfX || mfY != rTup.mfY;
 		}
-		
-		B2DTuple& operator=( const B2DTuple& rTup ) 
-		{ 
+
+		B2DTuple& operator=( const B2DTuple& rTup )
+		{
 			mfX = rTup.mfX;
-			mfY = rTup.mfY; 
-			return *this; 
+			mfY = rTup.mfY;
+			return *this;
 		}
 
 		BASEGFX_DLLPUBLIC void correctValues(const double fCompareValue = 0.0);
@@ -243,30 +243,30 @@ namespace basegfx
 	// external operators
 	//////////////////////////////////////////////////////////////////////////
 
-	inline B2DTuple minimum(const B2DTuple& rTupA, const B2DTuple& rTupB) 
-	{ 
+	inline B2DTuple minimum(const B2DTuple& rTupA, const B2DTuple& rTupB)
+	{
         return B2DTuple(
             std::min(rTupB.getX(), rTupA.getX()),
-            std::min(rTupB.getY(), rTupA.getY())); 
+            std::min(rTupB.getY(), rTupA.getY()));
 	}
 
-	inline B2DTuple maximum(const B2DTuple& rTupA, const B2DTuple& rTupB) 
-	{ 
+	inline B2DTuple maximum(const B2DTuple& rTupA, const B2DTuple& rTupB)
+	{
         return B2DTuple(
             std::max(rTupB.getX(), rTupA.getX()),
-            std::max(rTupB.getY(), rTupA.getY())); 
+            std::max(rTupB.getY(), rTupA.getY()));
 	}
 
-	inline B2DTuple absolute(const B2DTuple& rTup) 
-	{ 
+	inline B2DTuple absolute(const B2DTuple& rTup)
+	{
 		B2DTuple aAbs(
             fabs(rTup.getX()),
-            fabs(rTup.getY())); 
+            fabs(rTup.getY()));
 		return aAbs;
 	}
 
-	inline B2DTuple interpolate(const B2DTuple& rOld1, const B2DTuple& rOld2, double t) 
-	{ 
+	inline B2DTuple interpolate(const B2DTuple& rOld1, const B2DTuple& rOld2, double t)
+	{
         if(rOld1 == rOld2)
         {
             return rOld1;
@@ -283,79 +283,79 @@ namespace basegfx
         {
             return B2DTuple(
 			    ((rOld2.getX() - rOld1.getX()) * t) + rOld1.getX(),
-			    ((rOld2.getY() - rOld1.getY()) * t) + rOld1.getY()); 
+			    ((rOld2.getY() - rOld1.getY()) * t) + rOld1.getY());
         }
 	}
 
-	inline B2DTuple average(const B2DTuple& rOld1, const B2DTuple& rOld2) 
-	{ 
+	inline B2DTuple average(const B2DTuple& rOld1, const B2DTuple& rOld2)
+	{
         return B2DTuple(
             rOld1.getX() == rOld2.getX() ? rOld1.getX() : (rOld1.getX() + rOld2.getX()) * 0.5,
             rOld1.getY() == rOld2.getY() ? rOld1.getY() : (rOld1.getY() + rOld2.getY()) * 0.5);
 	}
-	
+
 	inline B2DTuple average(const B2DTuple& rOld1, const B2DTuple& rOld2, const B2DTuple& rOld3)
-	{ 
+	{
         return B2DTuple(
             (rOld1.getX() == rOld2.getX() && rOld2.getX() == rOld3.getX()) ? rOld1.getX() : (rOld1.getX() + rOld2.getX() + rOld3.getX()) * (1.0 / 3.0),
-            (rOld1.getY() == rOld2.getY() && rOld2.getY() == rOld3.getY()) ? rOld1.getY() : (rOld1.getY() + rOld2.getY() + rOld3.getY()) * (1.0 / 3.0)); 
+            (rOld1.getY() == rOld2.getY() && rOld2.getY() == rOld3.getY()) ? rOld1.getY() : (rOld1.getY() + rOld2.getY() + rOld3.getY()) * (1.0 / 3.0));
 	}
 
 	inline B2DTuple operator+(const B2DTuple& rTupA, const B2DTuple& rTupB)
-	{ 
-		B2DTuple aSum(rTupA); 
-		aSum += rTupB; 
-		return aSum; 
+	{
+		B2DTuple aSum(rTupA);
+		aSum += rTupB;
+		return aSum;
 	}
 
 	inline B2DTuple operator-(const B2DTuple& rTupA, const B2DTuple& rTupB)
-	{ 
-		B2DTuple aSub(rTupA); 
-		aSub -= rTupB; 
-		return aSub; 
+	{
+		B2DTuple aSub(rTupA);
+		aSub -= rTupB;
+		return aSub;
 	}
 
 	inline B2DTuple operator/(const B2DTuple& rTupA, const B2DTuple& rTupB)
-	{ 
-		B2DTuple aDiv(rTupA); 
-		aDiv /= rTupB; 
-		return aDiv; 
+	{
+		B2DTuple aDiv(rTupA);
+		aDiv /= rTupB;
+		return aDiv;
 	}
 
 	inline B2DTuple operator*(const B2DTuple& rTupA, const B2DTuple& rTupB)
-	{ 
-		B2DTuple aMul(rTupA); 
-		aMul *= rTupB; 
-		return aMul; 
+	{
+		B2DTuple aMul(rTupA);
+		aMul *= rTupB;
+		return aMul;
 	}
 
 	inline B2DTuple operator*(const B2DTuple& rTup, double t)
-	{ 
-		B2DTuple aNew(rTup); 
-		aNew *= t; 
-		return aNew; 
+	{
+		B2DTuple aNew(rTup);
+		aNew *= t;
+		return aNew;
 	}
 
 	inline B2DTuple operator*(double t, const B2DTuple& rTup)
-	{ 
-		B2DTuple aNew(rTup); 
-		aNew *= t; 
-		return aNew; 
+	{
+		B2DTuple aNew(rTup);
+		aNew *= t;
+		return aNew;
 	}
 
 	inline B2DTuple operator/(const B2DTuple& rTup, double t)
-	{ 
-		B2DTuple aNew(rTup); 
-		aNew /= t; 
-		return aNew; 
+	{
+		B2DTuple aNew(rTup);
+		aNew /= t;
+		return aNew;
 	}
 
 	inline B2DTuple operator/(double t, const B2DTuple& rTup)
 	{
-		B2DTuple aNew(t, t); 
-		B2DTuple aTmp(rTup); 
-		aNew /= aTmp; 
-		return aNew; 
+		B2DTuple aNew(t, t);
+		B2DTuple aTmp(rTup);
+		aNew /= aTmp;
+		return aNew;
 	}
 
 	/** Round double to nearest integer for 2D tuple

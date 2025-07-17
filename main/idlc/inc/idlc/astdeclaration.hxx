@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -29,13 +29,13 @@
 class AstScope;
 
 // Enum defining the different kinds of Ast nodes
-enum NodeType 
+enum NodeType
 {
 	NT_object,				// Denotes an object
 	NT_service,				// Denotes an servcie
 	NT_interface_member,	// Denotes an interface which is exported from object
 	NT_service_member,		// Denotes an service which is exported from object
-	NT_observes,			// Denotes an observed interface 
+	NT_observes,			// Denotes an observed interface
 	NT_needs,				// Denotes an needed service
 	NT_module,				// Denotes a module
 	NT_root,				// Denotes the root of AST
@@ -123,9 +123,9 @@ public:
 
     bool isPredefined() { return m_bPredefined; }
     void setPredefined(bool bPredefined);
-    
+
 protected:
-    ::rtl::OString		m_localName; 
+    ::rtl::OString		m_localName;
 	::rtl::OString		m_scopedName; 		// full qualified name
 	::rtl::OString		m_fullName;			// full qualified name with '/' as seperator
 	AstScope*			m_pScope;
@@ -135,7 +135,7 @@ protected:
 	sal_Bool			m_bInMainFile;		// defined in main file
     bool                m_bPublished;
     bool                m_bPredefined;
-	sal_Int32			m_lineNumber;		// line number defined in	
+	sal_Int32			m_lineNumber;		// line number defined in
 	::rtl::OString		m_fileName;			// fileName	defined in
 	::rtl::OUString		m_documentation; 	// fileName	defined in
 };

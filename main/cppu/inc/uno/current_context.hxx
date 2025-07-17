@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -29,11 +29,11 @@
 
 
 namespace com
-{     
+{
 namespace sun
-{     
+{
 namespace star
-{     
+{
 namespace uno
 {
 
@@ -41,7 +41,7 @@ namespace uno
 	@attention
     Don't spread the returned interface around to other threads.  Every thread has its own
     current context.
-    
+
     @return current context or null ref, if none is set
 */
 inline Reference< XCurrentContext > SAL_CALL getCurrentContext()
@@ -79,10 +79,10 @@ class ContextLayer
         @internal
     */
     Reference< XCurrentContext > m_xPreviousContext;
-    
+
 public:
     /** Constructor: Saves the previous context and sets the new (given) one.
-        
+
         @param xNewContext new context to be set
     */
     inline ContextLayer(
@@ -91,9 +91,9 @@ public:
     /** Destructor: restores the previous context.
     */
     inline ~ContextLayer() SAL_THROW( () );
-    
+
     /** Gets the previously set context.
-        
+
         @return the previously set context
     */
     inline Reference< XCurrentContext > SAL_CALL getPreviousContext() const

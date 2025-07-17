@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -88,24 +88,24 @@ namespace vclcanvas
 
         ::com::sun::star::uno::Reference< ::com::sun::star::rendering::XBitmapCanvas > queryBitmapCanvas();
 
-        ::com::sun::star::uno::Reference< ::com::sun::star::rendering::XBitmap > 
-        	getScaledBitmap( const ::com::sun::star::geometry::RealSize2D& 	newSize, 
+        ::com::sun::star::uno::Reference< ::com::sun::star::rendering::XBitmap >
+        	getScaledBitmap( const ::com::sun::star::geometry::RealSize2D& 	newSize,
                              sal_Bool 										beFast );
 
-        ::com::sun::star::uno::Sequence< sal_Int8 > 
+        ::com::sun::star::uno::Sequence< sal_Int8 >
 	        getData( ::com::sun::star::rendering::IntegerBitmapLayout& 		bitmapLayout,
                      const ::com::sun::star::geometry::IntegerRectangle2D&	rect );
 
-        void setData( const ::com::sun::star::uno::Sequence< sal_Int8 >& 		data, 
-                      const ::com::sun::star::rendering::IntegerBitmapLayout& 	bitmapLayout, 
+        void setData( const ::com::sun::star::uno::Sequence< sal_Int8 >& 		data,
+                      const ::com::sun::star::rendering::IntegerBitmapLayout& 	bitmapLayout,
                       const ::com::sun::star::geometry::IntegerRectangle2D& 	rect );
 
-        void setPixel( const ::com::sun::star::uno::Sequence< sal_Int8 >& 		color, 
-                       const ::com::sun::star::rendering::IntegerBitmapLayout&	bitmapLayout, 
+        void setPixel( const ::com::sun::star::uno::Sequence< sal_Int8 >& 		color,
+                       const ::com::sun::star::rendering::IntegerBitmapLayout&	bitmapLayout,
                        const ::com::sun::star::geometry::IntegerPoint2D& 		pos );
 
-        ::com::sun::star::uno::Sequence< sal_Int8 > 
-        	getPixel( ::com::sun::star::rendering::IntegerBitmapLayout& bitmapLayout, 
+        ::com::sun::star::uno::Sequence< sal_Int8 >
+        	getPixel( ::com::sun::star::rendering::IntegerBitmapLayout& bitmapLayout,
                       const ::com::sun::star::geometry::IntegerPoint2D& pos );
 
         ::com::sun::star::rendering::IntegerBitmapLayout getMemoryLayout();

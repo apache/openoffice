@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -85,7 +85,7 @@ namespace dbaui
 				the graphic
 			@param	rResultRect
 				the resulting rectangle
-			
+
 			@return
 				<TRUE/> when successful
 		*/
@@ -115,7 +115,7 @@ namespace dbaui
 		OPreviewWindow		m_aPreview;
 		::svtools::ODocumentInfoPreview
 							m_aDocumentInfo;
-		Window*				m_pTablePreview;		
+		Window*				m_pTablePreview;
 		::std::auto_ptr<PopupMenu> m_aMenu;
 		PreviewMode			m_ePreviewMode;
 		::com::sun::star::uno::Reference < ::com::sun::star::frame::XFrame >
@@ -234,12 +234,12 @@ namespace dbaui
 
 		/** returns the current visible tree list box
 		*/
-		inline DBTreeListBox* getCurrentView() const 
-		{ 
+		inline DBTreeListBox* getCurrentView() const
+		{
 			ElementType eType = getElementType();
-			return (eType != E_NONE ) ? m_pLists[static_cast<sal_Int32>(eType)] : NULL; 
+			return (eType != E_NONE ) ? m_pLists[static_cast<sal_Int32>(eType)] : NULL;
 		}
-		
+
 		/// select all entries in the visible control
 		void selectAll();
 
@@ -280,7 +280,7 @@ namespace dbaui
 
 		/** return the qualified name.
 			@param	_pEntry
-				The entry of a table, or query, form, report to get the qualified name. 
+				The entry of a table, or query, form, report to get the qualified name.
 				If the entry is <NULL/>, the first selected is chosen.
 			@return
 				the qualified name
@@ -357,7 +357,7 @@ namespace dbaui
 		void elementRemoved(ElementType _eType
 							,const ::rtl::OUString& _rName );
 
-		
+
 		/// returns the preview mode
 		PreviewMode getPreviewMode();
 

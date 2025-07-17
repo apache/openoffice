@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -36,7 +36,7 @@ class SvxMacro;
 /**	SvEventDescription: Description of a single event.
 	mnEvent is the id used by SvxMacroItem
 	mpEventName is the api name for this event
-	
+
 	the last event in an array is indicated by mnEvent && mpEventName == 0
 */
 struct SvEventDescription
@@ -45,12 +45,12 @@ struct SvEventDescription
 	const sal_Char* mpEventName;
 };
 
-/** 
+/**
  * SvBaseEventDescriptor: Abstract class that implements the basics
  * of an XNameReplace that is delivered by the
- * XEventsSupplier::getEvents() method. 
+ * XEventsSupplier::getEvents() method.
  *
- * The functionality this class provides is: 
+ * The functionality this class provides is:
  * 1) Which elements are in the XNameReplace?
  * 2) Mapping from Api names to item IDs.
  * 3) conversion from SvxMacroItem to Any and vice versa.
@@ -92,45 +92,45 @@ public:
 
 	// XNameReplace
 	/// calls replaceByName(const sal_uInt16, const SvxMacro&)
-    virtual void SAL_CALL replaceByName( 
+    virtual void SAL_CALL replaceByName(
 		const ::rtl::OUString& rName,				 /// API name of event
 		const ::com::sun::star::uno::Any& rElement ) /// event (PropertyValues)
 			throw(
-				::com::sun::star::lang::IllegalArgumentException, 
-				::com::sun::star::container::NoSuchElementException, 
-				::com::sun::star::lang::WrappedTargetException, 
+				::com::sun::star::lang::IllegalArgumentException,
+				::com::sun::star::container::NoSuchElementException,
+				::com::sun::star::lang::WrappedTargetException,
 				::com::sun::star::uno::RuntimeException);
 
 	// XNameAccess (via XNameReplace)
 	/// calls getByName(sal_uInt16)
-    virtual ::com::sun::star::uno::Any SAL_CALL getByName( 
+    virtual ::com::sun::star::uno::Any SAL_CALL getByName(
 		const ::rtl::OUString& rName ) 	/// API name of event
 			throw(
-				::com::sun::star::container::NoSuchElementException, 
-				::com::sun::star::lang::WrappedTargetException, 
+				::com::sun::star::container::NoSuchElementException,
+				::com::sun::star::lang::WrappedTargetException,
 				::com::sun::star::uno::RuntimeException);
 
 	// XNameAxcess (via XNameReplace)
-    virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL 
-														getElementNames() 
+    virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL
+														getElementNames()
 		throw(::com::sun::star::uno::RuntimeException);
 
 	// XNameAccess (via XNameReplace)
-    virtual sal_Bool SAL_CALL hasByName( 
-		const ::rtl::OUString& rName ) 
+    virtual sal_Bool SAL_CALL hasByName(
+		const ::rtl::OUString& rName )
 			throw(::com::sun::star::uno::RuntimeException);
 
 	// XElementAccess (via XNameReplace)
-    virtual ::com::sun::star::uno::Type SAL_CALL getElementType() 
+    virtual ::com::sun::star::uno::Type SAL_CALL getElementType()
 		throw(::com::sun::star::uno::RuntimeException);
 
 	// XElementAccess (via XNameReplace)
-    virtual sal_Bool SAL_CALL hasElements() 
+    virtual sal_Bool SAL_CALL hasElements()
 		throw(::com::sun::star::uno::RuntimeException);
 
 	// XServiceInfo
 	/// must be implemented in subclass
-	virtual rtl::OUString SAL_CALL getImplementationName(void) 
+	virtual rtl::OUString SAL_CALL getImplementationName(void)
 		throw( ::com::sun::star::uno::RuntimeException ) = 0;
 
 	// XServiceInfo
@@ -138,29 +138,29 @@ public:
 		throw( ::com::sun::star::uno::RuntimeException );
 
 	// XServiceInfo
-	virtual ::com::sun::star::uno::Sequence< rtl::OUString > SAL_CALL 
-		getSupportedServiceNames(void) 
+	virtual ::com::sun::star::uno::Sequence< rtl::OUString > SAL_CALL
+		getSupportedServiceNames(void)
 			throw( ::com::sun::star::uno::RuntimeException );
 
 protected:
 
 	/// Must be implemented in subclass.
-    virtual void replaceByName( 
+    virtual void replaceByName(
 		const sal_uInt16 nEvent,		/// item ID of event
 		const SvxMacro& rMacro)		/// event (will be copied)
 			throw(
-				::com::sun::star::lang::IllegalArgumentException, 
-				::com::sun::star::container::NoSuchElementException, 
-				::com::sun::star::lang::WrappedTargetException, 
+				::com::sun::star::lang::IllegalArgumentException,
+				::com::sun::star::container::NoSuchElementException,
+				::com::sun::star::lang::WrappedTargetException,
 				::com::sun::star::uno::RuntimeException) = 0;
 
 	/// Must be implemented in subclass.
-    virtual void getByName( 
+    virtual void getByName(
 		SvxMacro& rMacro,
-		const sal_uInt16 nEvent ) 
+		const sal_uInt16 nEvent )
 			throw(
-				::com::sun::star::container::NoSuchElementException, 
-				::com::sun::star::lang::WrappedTargetException, 
+				::com::sun::star::container::NoSuchElementException,
+				::com::sun::star::lang::WrappedTargetException,
 				::com::sun::star::uno::RuntimeException) = 0;
 
 	/// convert an API event name to the event ID as used by SvxMacroItem
@@ -189,11 +189,11 @@ protected:
 
 
 
-/** 
+/**
  * SvEventDescriptor: Implement the XNameReplace that is delivered by
  * the XEventsSupplier::getEvents() method. The SvEventDescriptor has
  * to be subclassed to implement the events for a specific
- * objects. The subclass has to 
+ * objects. The subclass has to
  * 1) supply the super class constructor with a list of known events (item IDs)
  * 2) supply the super class constructor with a reference of it's parent object
  *    (to prevent destruction)
@@ -205,7 +205,7 @@ protected:
 class SVT_DLLPUBLIC SvEventDescriptor : public SvBaseEventDescriptor
 {
 	/// keep reference to parent to prevent it from being destroyed
-	::com::sun::star::uno::Reference< 
+	::com::sun::star::uno::Reference<
 		::com::sun::star::uno::XInterface > xParentRef;
 
 public:
@@ -220,22 +220,22 @@ protected:
 
 
     using SvBaseEventDescriptor::replaceByName;
-    virtual void replaceByName( 
+    virtual void replaceByName(
 		const sal_uInt16 nEvent,		/// item ID of event
 		const SvxMacro& rMacro)		/// event (will be copied)
 			throw(
-				::com::sun::star::lang::IllegalArgumentException, 
-				::com::sun::star::container::NoSuchElementException, 
-				::com::sun::star::lang::WrappedTargetException, 
+				::com::sun::star::lang::IllegalArgumentException,
+				::com::sun::star::container::NoSuchElementException,
+				::com::sun::star::lang::WrappedTargetException,
 				::com::sun::star::uno::RuntimeException);
 
     using SvBaseEventDescriptor::getByName;
-    virtual void getByName( 
+    virtual void getByName(
 		SvxMacro& rMacros,			/// macro to be filled with values
 		const sal_uInt16 nEvent ) 		/// item ID of event
 			throw(
-				::com::sun::star::container::NoSuchElementException, 
-				::com::sun::star::lang::WrappedTargetException, 
+				::com::sun::star::container::NoSuchElementException,
+				::com::sun::star::lang::WrappedTargetException,
 				::com::sun::star::uno::RuntimeException);
 
 
@@ -270,7 +270,7 @@ public:
 	virtual ~SvDetachedEventDescriptor();
 
 	//XServiceInfo
-	virtual rtl::OUString SAL_CALL getImplementationName(void) 
+	virtual rtl::OUString SAL_CALL getImplementationName(void)
 		throw( ::com::sun::star::uno::RuntimeException );
 
 protected:
@@ -278,22 +278,22 @@ protected:
 	sal_Int16 getIndex(const sal_uInt16 nID) const;
 
     using SvBaseEventDescriptor::replaceByName;
-    virtual void replaceByName( 
+    virtual void replaceByName(
 		const sal_uInt16 nEvent,		/// item ID of event
 		const SvxMacro& rMacro)		/// event (will be copied)
 			throw(
-				::com::sun::star::lang::IllegalArgumentException, 
-				::com::sun::star::container::NoSuchElementException, 
-				::com::sun::star::lang::WrappedTargetException, 
+				::com::sun::star::lang::IllegalArgumentException,
+				::com::sun::star::container::NoSuchElementException,
+				::com::sun::star::lang::WrappedTargetException,
 				::com::sun::star::uno::RuntimeException);
 
     using SvBaseEventDescriptor::getByName;
-    virtual void getByName( 
+    virtual void getByName(
 		SvxMacro& rMacro,			/// macro to be filled
 		const sal_uInt16 nEvent ) 		/// item ID of event
 			throw(
-				::com::sun::star::container::NoSuchElementException, 
-				::com::sun::star::lang::WrappedTargetException, 
+				::com::sun::star::container::NoSuchElementException,
+				::com::sun::star::lang::WrappedTargetException,
 				::com::sun::star::uno::RuntimeException);
 
 	/// do we have an event?
@@ -301,7 +301,7 @@ protected:
 	/// return sal_False: no macro; getByName() will return an empty macro
 	/// IllegalArgumentException: the event is not supported
     using SvBaseEventDescriptor::hasByName;
-    virtual sal_Bool hasByName( 
+    virtual sal_Bool hasByName(
 		const sal_uInt16 nEvent ) const		/// item ID of event
  			throw(
 				::com::sun::star::lang::IllegalArgumentException);

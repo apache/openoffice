@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -51,31 +51,31 @@ namespace cppcanvas
 
     typedef ::boost::shared_ptr< ::cppcanvas::Color > ColorSharedPtr;
 
-    inline sal_uInt8 getRed( Color::IntSRGBA nCol ) 
-    { 
-        return static_cast<sal_uInt8>( (nCol&0xFF000000U) >> 24U ); 
+    inline sal_uInt8 getRed( Color::IntSRGBA nCol )
+    {
+        return static_cast<sal_uInt8>( (nCol&0xFF000000U) >> 24U );
     }
 
-    inline sal_uInt8 getGreen( Color::IntSRGBA nCol ) 
-    { 
-        return static_cast<sal_uInt8>( (nCol&0x00FF0000U) >> 16U ); 
+    inline sal_uInt8 getGreen( Color::IntSRGBA nCol )
+    {
+        return static_cast<sal_uInt8>( (nCol&0x00FF0000U) >> 16U );
     }
 
-    inline sal_uInt8 getBlue( Color::IntSRGBA nCol ) 
-    { 
-        return static_cast<sal_uInt8>( (nCol&0x0000FF00U) >> 8U ); 
+    inline sal_uInt8 getBlue( Color::IntSRGBA nCol )
+    {
+        return static_cast<sal_uInt8>( (nCol&0x0000FF00U) >> 8U );
     }
 
-    inline sal_uInt8 getAlpha( Color::IntSRGBA nCol ) 
-    { 
-        return static_cast<sal_uInt8>( nCol&0x000000FFU ); 
+    inline sal_uInt8 getAlpha( Color::IntSRGBA nCol )
+    {
+        return static_cast<sal_uInt8>( nCol&0x000000FFU );
     }
 
-    inline Color::IntSRGBA makeColor( sal_uInt8 nRed, sal_uInt8 nGreen, sal_uInt8 nBlue, sal_uInt8 nAlpha ) 
-    { 
+    inline Color::IntSRGBA makeColor( sal_uInt8 nRed, sal_uInt8 nGreen, sal_uInt8 nBlue, sal_uInt8 nAlpha )
+    {
         return (nRed << 24U)|(nGreen << 16U)|(nBlue << 8U)|(nAlpha);
     }
-    
+
     inline sal_Int32 unMakeColor( sal_uInt8 nAlpha, sal_uInt8 nRed, sal_uInt8 nGreen, sal_uInt8 nBlue)
     {
         return (nAlpha << 24U)|(nRed << 16U)|(nGreen << 8U)|(nBlue);

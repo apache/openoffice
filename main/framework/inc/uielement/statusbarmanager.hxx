@@ -56,8 +56,8 @@ class StatusBarManager : public ::com::sun::star::frame::XFrameActionListener   
     friend class FrameworkStatusBar;
 
     public:
-        StatusBarManager( const com::sun::star::uno::Reference< com::sun::star::lang::XMultiServiceFactory >& rServicveManager, 
-                          const com::sun::star::uno::Reference< com::sun::star::frame::XFrame >& rFrame, 
+        StatusBarManager( const com::sun::star::uno::Reference< com::sun::star::lang::XMultiServiceFactory >& rServicveManager,
+                          const com::sun::star::uno::Reference< com::sun::star::frame::XFrame >& rFrame,
                           const rtl::OUString& rResourceName,
                           StatusBar* pStatusBar );
         virtual ~StatusBarManager();
@@ -65,20 +65,20 @@ class StatusBarManager : public ::com::sun::star::frame::XFrameActionListener   
         //  XInterface, XTypeProvider, XServiceInfo
         FWK_DECLARE_XINTERFACE
         FWK_DECLARE_XTYPEPROVIDER
-		
+
         StatusBar* GetStatusBar() const;
-        
+
         // XFrameActionListener
 		virtual void SAL_CALL frameAction( const com::sun::star::frame::FrameActionEvent& Action ) throw ( ::com::sun::star::uno::RuntimeException );
-        
+
         // XEventListener
 		virtual void SAL_CALL disposing( const com::sun::star::lang::EventObject& Source ) throw ( ::com::sun::star::uno::RuntimeException );
-        
+
         // XUIConfigurationListener
         virtual void SAL_CALL elementInserted( const ::com::sun::star::ui::ConfigurationEvent& Event ) throw (::com::sun::star::uno::RuntimeException);
         virtual void SAL_CALL elementRemoved( const ::com::sun::star::ui::ConfigurationEvent& Event ) throw (::com::sun::star::uno::RuntimeException);
-        virtual void SAL_CALL elementReplaced( const ::com::sun::star::ui::ConfigurationEvent& Event ) throw (::com::sun::star::uno::RuntimeException); 
-        
+        virtual void SAL_CALL elementReplaced( const ::com::sun::star::ui::ConfigurationEvent& Event ) throw (::com::sun::star::uno::RuntimeException);
+
         // XComponent
         void SAL_CALL dispose() throw ( ::com::sun::star::uno::RuntimeException );
         void SAL_CALL addEventListener( const com::sun::star::uno::Reference< XEventListener >& xListener ) throw( com::sun::star::uno::RuntimeException );
@@ -121,7 +121,7 @@ class StatusBarManager : public ::com::sun::star::frame::XFrameActionListener   
         ::com::sun::star::uno::Reference< com::sun::star::lang::XMultiServiceFactory >                  m_xServiceManager;
         ::com::sun::star::uno::Reference< ::com::sun::star::frame::XUIControllerFactory >  m_xStatusbarControllerFactory;
 };
-    
+
 }
 
 #endif // __FRAMEWORK_UIELEMENT_STATUSBARMANAGER_HXX_

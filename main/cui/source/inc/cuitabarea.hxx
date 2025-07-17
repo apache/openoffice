@@ -298,7 +298,7 @@ public:
 	virtual void ActivatePage( const SfxItemSet& rSet );
 	virtual int  DeactivatePage( SfxItemSet* pSet );
 	virtual void PointChanged( Window* pWindow, RECT_POINT eRP );
-	
+
 	void    SetColorTable( XColorListSharedPtr aColTab ) { maColorTab = aColTab; }
 	void    SetGradientList( XGradientListSharedPtr aGrdLst) { maGradientList = aGrdLst; }
 	void    SetHatchingList( XHatchListSharedPtr aHtchLst) { maHatchingList = aHtchLst; }

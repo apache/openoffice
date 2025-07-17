@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 #ifndef _BGFX_POLYPOLYGON_B2DPOLYGONTOOLS_HXX
@@ -70,7 +70,7 @@ namespace basegfx
 		// is created.
 		BASEGFX_DLLPUBLIC B2DPolyPolygon adaptiveSubdivideByCount(const B2DPolyPolygon& rCandidate, sal_uInt32 nCount = 0L);
 
-        // isInside test for B2dPoint. On border is not inside as long as not true is given 
+        // isInside test for B2dPoint. On border is not inside as long as not true is given
 		// in bWithBorder flag. It is assumed that the orientations of the given polygon are correct.
 		BASEGFX_DLLPUBLIC bool isInside(const B2DPolyPolygon& rCandidate, const B2DPoint& rPoint, bool bWithBorder = false);
 
@@ -99,7 +99,7 @@ namespace basegfx
 			The outer range of the polygon
 		*/
 		BASEGFX_DLLPUBLIC B2DRange getRange(const B2DPolyPolygon& rCandidate);
-			
+
 		// get signed area of polygon
 		BASEGFX_DLLPUBLIC double getSignedArea(const B2DPolyPolygon& rCandidate);
 
@@ -111,13 +111,13 @@ namespace basegfx
 			For a description see applyLineDashing in b2dpolygontoos.hxx
 		*/
 		BASEGFX_DLLPUBLIC void applyLineDashing(
-			const B2DPolyPolygon& rCandidate, 
-			const ::std::vector<double>& rDotDashArray, 
+			const B2DPolyPolygon& rCandidate,
+			const ::std::vector<double>& rDotDashArray,
 			B2DPolyPolygon* pLineTarget,
             B2DPolyPolygon* pGapTarget = 0,
 			double fFullDashDotLen = 0.0);
 
-		// test if point is inside epsilon-range around the given PolyPolygon. Can be used 
+		// test if point is inside epsilon-range around the given PolyPolygon. Can be used
 		// for HitTesting. The epsilon-range is defined to be the tube around the PolyPolygon
 		// with distance fDistance and rounded edges (start and end point).
 		BASEGFX_DLLPUBLIC bool isInEpsilonRange(const B2DPolyPolygon& rCandidate, const B2DPoint& rTestPosition, double fDistance);
@@ -168,7 +168,7 @@ namespace basegfx
 
             @param pHelpPointIndexSet
             If given, all points created in the target PolyPolygon
-            which are only helper points are added here using their 
+            which are only helper points are added here using their
             point indices; this are currently points created from
             import of the 'a' and 'A' svg:d statements which create
             bezier curve info as representation and maybe points
@@ -179,7 +179,7 @@ namespace basegfx
             @return true, if the string was successfully parsed
          */
 
-        BASEGFX_DLLPUBLIC bool importFromSvgD( 
+        BASEGFX_DLLPUBLIC bool importFromSvgD(
             B2DPolyPolygon& o_rPolyPoly,
             const ::rtl::OUString& rSvgDAttribute,
             bool bHandleRelativeNextPointCompatible,
@@ -211,7 +211,7 @@ namespace basegfx
 		BASEGFX_DLLPUBLIC B2DPolyPolygon createB2DPolyPolygonFromB3DPolyPolygon(const B3DPolyPolygon& rCandidate, const B3DHomMatrix& rMat);
 
 		// for each contained edge in each contained polygon calculate the smallest distance. Return the index to the smallest
-		// edge in rEdgeIndex and the index to the polygon in rPolygonIndex. The relative position on the edge is returned in rCut. 
+		// edge in rEdgeIndex and the index to the polygon in rPolygonIndex. The relative position on the edge is returned in rCut.
 		// If nothing was found (e.g. empty input plygon), DBL_MAX is returned.
 		BASEGFX_DLLPUBLIC double getSmallestDistancePointToPolyPolygon(const B2DPolyPolygon& rCandidate, const B2DPoint& rTestPoint, sal_uInt32& rPolygonIndex, sal_uInt32& rEdgeIndex, double& rCut);
 
@@ -250,7 +250,7 @@ namespace basegfx
 
             @param rPolyPoly
             The poly-polygon to export
-            
+
             @param bUseRelativeCoordinates
             When true, all coordinate values are exported as relative
             to the current position. This tends to save some space,
@@ -271,7 +271,7 @@ namespace basegfx
             @return the generated SVG-D statement (the XML d attribute
             value alone, without any "<path ...>" or "d="...")
          */
-        BASEGFX_DLLPUBLIC ::rtl::OUString exportToSvgD( 
+        BASEGFX_DLLPUBLIC ::rtl::OUString exportToSvgD(
             const B2DPolyPolygon& rPolyPoly,
             bool bUseRelativeCoordinates,
             bool bDetectQuadraticBeziers,
@@ -281,7 +281,7 @@ namespace basegfx
 		BASEGFX_DLLPUBLIC B2DPolyPolygon simplifyCurveSegments(const B2DPolyPolygon& rCandidate);
 
         /** split each edge of a polyPolygon in exactly nSubEdges equidistant edges
-            
+
             @param rCandidate
             The source polyPolygon. If too small (no edges), nSubEdges too small (<2)
             or neither bHandleCurvedEdgesnor bHandleStraightEdges it will just be returned.
@@ -302,7 +302,7 @@ namespace basegfx
 		/** snap some polygon coordinates to discrete coordinates
 
 			This method allows to snap some polygon points to discrete (integer) values
-			which equals e.g. a snap to discrete coordinates. It will snap points of 
+			which equals e.g. a snap to discrete coordinates. It will snap points of
 			horizontal and vertical edges
 
 			@param rCandidate
@@ -320,18 +320,18 @@ namespace basegfx
 
         /// converters for com::sun::star::drawing::PointSequence
         BASEGFX_DLLPUBLIC B2DPolyPolygon UnoPointSequenceSequenceToB2DPolyPolygon(
-            const com::sun::star::drawing::PointSequenceSequence& rPointSequenceSequenceSource, 
+            const com::sun::star::drawing::PointSequenceSequence& rPointSequenceSequenceSource,
             bool bCheckClosed = true);
         BASEGFX_DLLPUBLIC void B2DPolyPolygonToUnoPointSequenceSequence(
-            const B2DPolyPolygon& rPolyPolygon, 
+            const B2DPolyPolygon& rPolyPolygon,
             com::sun::star::drawing::PointSequenceSequence& rPointSequenceSequenceRetval);
 
         /// converters for com::sun::star::drawing::PolyPolygonBezierCoords (curved polygons)
         BASEGFX_DLLPUBLIC B2DPolyPolygon UnoPolyPolygonBezierCoordsToB2DPolyPolygon(
-            const com::sun::star::drawing::PolyPolygonBezierCoords& rPolyPolygonBezierCoordsSource, 
+            const com::sun::star::drawing::PolyPolygonBezierCoords& rPolyPolygonBezierCoordsSource,
             bool bCheckClosed = true);
         BASEGFX_DLLPUBLIC void B2DPolyPolygonToUnoPolyPolygonBezierCoords(
-            const B2DPolyPolygon& rPolyPolygon, 
+            const B2DPolyPolygon& rPolyPolygon,
             com::sun::star::drawing::PolyPolygonBezierCoords& rPolyPolygonBezierCoordsRetval);
 
     } // end of namespace tools

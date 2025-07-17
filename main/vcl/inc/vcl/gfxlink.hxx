@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -80,11 +80,11 @@ struct ImpGfxLink
     bool			mbPrefMapModeValid;
     bool			mbPrefSizeValid;
 
-    ImpGfxLink() : 
+    ImpGfxLink() :
         maPrefMapMode(),
         maPrefSize(),
-        mbPrefMapModeValid( false ), 
-        mbPrefSizeValid( false ) 
+        mbPrefMapModeValid( false ),
+        mbPrefSizeValid( false )
     {}
 };
 
@@ -139,7 +139,7 @@ private:
 
 	SAL_DLLPRIVATE void	ImplCopy( const GfxLink& rGfxLink );
 
-public:					
+public:
 						GfxLink();
 						GfxLink( const GfxLink& );
 						GfxLink( const String& rPath, GfxLinkType nType );
@@ -154,7 +154,7 @@ public:
 	void				SetUserId( sal_uInt32 nUserId ) { mnUserId = nUserId; }
 	sal_uInt32			GetUserId() const { return mnUserId; }
 
-	sal_uInt32			GetDataSize() const;	
+	sal_uInt32			GetDataSize() const;
 	void				SetData( sal_uInt8* pBuf, sal_uInt32 nSize, GfxLinkType nType, sal_Bool bOwns );
 	const sal_uInt8*			GetData() const;
 

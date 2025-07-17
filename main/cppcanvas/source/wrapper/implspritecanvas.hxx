@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -47,7 +47,7 @@ namespace cppcanvas
         class ImplSpriteCanvas : public virtual SpriteCanvas, protected virtual ImplBitmapCanvas
         {
         public:
-            ImplSpriteCanvas( const ::com::sun::star::uno::Reference< 
+            ImplSpriteCanvas( const ::com::sun::star::uno::Reference<
                               	::com::sun::star::rendering::XSpriteCanvas >& rCanvas );
             ImplSpriteCanvas(const ImplSpriteCanvas&);
 
@@ -56,19 +56,19 @@ namespace cppcanvas
             virtual void 					setTransformation( const ::basegfx::B2DHomMatrix& rMatrix );
 
             virtual bool					updateScreen( bool bUpdateAll ) const;
-        
+
             virtual CustomSpriteSharedPtr 	createCustomSprite( const ::basegfx::B2DSize& ) const;
             virtual SpriteSharedPtr 		createClonedSprite( const SpriteSharedPtr& ) const;
 
-            SpriteSharedPtr					createSpriteFromBitmaps( 
-                const ::com::sun::star::uno::Sequence< 
-                	::com::sun::star::uno::Reference< 
-                		::com::sun::star::rendering::XBitmap > >& 	animationBitmaps, 
+            SpriteSharedPtr					createSpriteFromBitmaps(
+                const ::com::sun::star::uno::Sequence<
+                	::com::sun::star::uno::Reference<
+                		::com::sun::star::rendering::XBitmap > >& 	animationBitmaps,
                 sal_Int8 													interpolationMode );
 
             virtual CanvasSharedPtr			clone() const;
 
-            virtual ::com::sun::star::uno::Reference< 
+            virtual ::com::sun::star::uno::Reference<
                 ::com::sun::star::rendering::XSpriteCanvas > 	getUNOSpriteCanvas() const;
 
             /** This class passes the view transformation
@@ -79,7 +79,7 @@ namespace cppcanvas
                 itself, but has somehow pass an object to child
                 sprites those can query for the canvas' view transform.
              */
-            class TransformationArbiter 
+            class TransformationArbiter
             {
             public:
                 TransformationArbiter();

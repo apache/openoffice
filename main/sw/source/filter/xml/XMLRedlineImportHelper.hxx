@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -73,18 +73,18 @@ public:
 	XMLRedlineImportHelper(
 		sal_Bool bIgnoreRedlines,		/// ignore redlines mode
 
-		// property sets of model + import info for saving + restoring the 
+		// property sets of model + import info for saving + restoring the
 		// redline mode
 		const ::com::sun::star::uno::Reference<
 			::com::sun::star::beans::XPropertySet> & rModel,
 		const ::com::sun::star::uno::Reference<
-			::com::sun::star::beans::XPropertySet> & rImportInfoSet ); 
+			::com::sun::star::beans::XPropertySet> & rImportInfoSet );
 	virtual ~XMLRedlineImportHelper();
 
 	/// create a redline object
 	/// (The redline will be inserted into the document after both start
 	///  and end cursor has been set.)
-	void Add( 
+	void Add(
 		const ::rtl::OUString& rType,		/// redline type (insert, del,... )
 		const ::rtl::OUString& rId,			/// use to identify this redline
 		const ::rtl::OUString& rAuthor,		/// name of the author
@@ -94,7 +94,7 @@ public:
 
 	/// create a text section for the redline, and return an
 	/// XText/XTextCursor that may be used to write into it.
-	::com::sun::star::uno::Reference< 
+	::com::sun::star::uno::Reference<
 		::com::sun::star::text::XTextCursor> CreateRedlineTextSection(
 			::com::sun::star::uno::Reference< 	/// needed to get the document
 					::com::sun::star::text::XTextCursor> xOldCursor,
@@ -109,11 +109,11 @@ public:
 			::com::sun::star::text::XTextRange> & rRange,
 		/// text range is (from an XML view) outside of a paragraph
 		/// (i.e. before a table)
-		sal_Bool bIsOusideOfParagraph);	
+		sal_Bool bIsOusideOfParagraph);
 
 	/**
 	 * Adjust the start (end) position for a redline that begins in a
-	 * start node. It takes the cursor positions _inside_ the redlined 
+	 * start node. It takes the cursor positions _inside_ the redlined
 	 * element (e.g. section or table).
 	 *
 	 * We will do sanity checking of the given text range: It will
@@ -133,7 +133,7 @@ public:
 	void SetRecordChanges( sal_Bool bRecordChanges );
 
 	/// set redline protection key
-	void SetProtectionKey( 
+	void SetProtectionKey(
 		const ::com::sun::star::uno::Sequence<sal_Int8> & rKey );
 
 private:

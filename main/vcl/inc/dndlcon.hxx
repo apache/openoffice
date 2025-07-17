@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -33,8 +33,8 @@
 
 #include <vcl/unohelp2.hxx>
 
-class DNDListenerContainer :    public ::vcl::unohelper::MutexHelper, 
-                                public ::cppu::WeakComponentImplHelper4< 
+class DNDListenerContainer :    public ::vcl::unohelper::MutexHelper,
+                                public ::cppu::WeakComponentImplHelper4<
 	::com::sun::star::datatransfer::dnd::XDragGestureRecognizer, \
 	::com::sun::star::datatransfer::dnd::XDropTargetDragContext,
 	::com::sun::star::datatransfer::dnd::XDropTargetDropContext,
@@ -51,7 +51,7 @@ public:
 	DNDListenerContainer( sal_Int8 nDefaultActions );
 	virtual ~DNDListenerContainer();
 
-	sal_uInt32 fireDropEvent( 
+	sal_uInt32 fireDropEvent(
 		const ::com::sun::star::uno::Reference< ::com::sun::star::datatransfer::dnd::XDropTargetDropContext >& context,
 		sal_Int8 dropAction, sal_Int32 locationX, sal_Int32 locationY, sal_Int8 sourceActions,
 		const ::com::sun::star::uno::Reference< ::com::sun::star::datatransfer::XTransferable >& transferable );
@@ -72,14 +72,14 @@ public:
 		sal_Int8 dropAction, sal_Int32 locationX, sal_Int32 locationY, sal_Int8 sourceActions );
 
 	sal_uInt32 fireDragGestureEvent(
-		sal_Int8 dragAction, sal_Int32 dragOriginX, sal_Int32 dragOriginY, 
+		sal_Int8 dragAction, sal_Int32 dragOriginX, sal_Int32 dragOriginY,
 		const ::com::sun::star::uno::Reference< ::com::sun::star::datatransfer::dnd::XDragSource >& dragSource,
 		const ::com::sun::star::uno::Any& triggerEvent );
 
 	/*
 	 * XDragGestureRecognizer
 	 */
-	 
+
 	virtual void SAL_CALL addDragGestureListener( const ::com::sun::star::uno::Reference< ::com::sun::star::datatransfer::dnd::XDragGestureListener >& dgl ) throw(::com::sun::star::uno::RuntimeException);
 	virtual void SAL_CALL removeDragGestureListener( const ::com::sun::star::uno::Reference< ::com::sun::star::datatransfer::dnd::XDragGestureListener >& dgl ) throw(::com::sun::star::uno::RuntimeException);
 	virtual void SAL_CALL resetRecognizer(  ) throw(::com::sun::star::uno::RuntimeException);
@@ -103,7 +103,7 @@ public:
 	/*
 	 * XDropTarget
 	 */
-	 
+
 	virtual void SAL_CALL addDropTargetListener( const ::com::sun::star::uno::Reference< ::com::sun::star::datatransfer::dnd::XDropTargetListener >& dtl ) throw(::com::sun::star::uno::RuntimeException);
 	virtual void SAL_CALL removeDropTargetListener( const ::com::sun::star::uno::Reference< ::com::sun::star::datatransfer::dnd::XDropTargetListener >& dtl ) throw(::com::sun::star::uno::RuntimeException);
 	virtual sal_Bool SAL_CALL isActive(  ) throw(::com::sun::star::uno::RuntimeException);
@@ -114,7 +114,7 @@ public:
 
 
 //==================================================================================================
-// 
+//
 //==================================================================================================
 
 #endif

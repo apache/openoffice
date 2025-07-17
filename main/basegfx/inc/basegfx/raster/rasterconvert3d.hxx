@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -53,14 +53,14 @@ namespace basegfx
 	    double										mfInc;
 
     public:
-	    ip_single() 
-	    :	mfVal(0.0), 
-		    mfInc(0.0) 
+	    ip_single()
+	    :	mfVal(0.0),
+		    mfInc(0.0)
 	    {}
 
-	    ip_single(double fVal, double fInc) 
-	    :	mfVal(fVal), 
-		    mfInc(fInc) 
+	    ip_single(double fVal, double fInc)
+	    :	mfVal(fVal),
+		    mfInc(fInc)
 	    {}
 
 	    double getVal() const { return mfVal; }
@@ -79,12 +79,12 @@ namespace basegfx
 	    ip_single									maY;
 
     public:
-	    ip_double() 
+	    ip_double()
 	    :	maX(),
 		    maY()
 	    {}
 
-	    ip_double(double fXVal, double fXInc, double fYVal, double fYInc) 
+	    ip_double(double fXVal, double fXInc, double fYVal, double fYInc)
 	    :	maX(fXVal, fXInc),
 		    maY(fYVal, fYInc)
 	    {}
@@ -106,13 +106,13 @@ namespace basegfx
 	    ip_single									maZ;
 
     public:
-	    ip_triple() 
+	    ip_triple()
 	    :	maX(),
 		    maY(),
 		    maZ()
 	    {}
 
-	    ip_triple(double fXVal, double fXInc, double fYVal, double fYInc, double fZVal, double fZInc) 
+	    ip_triple(double fXVal, double fXInc, double fYVal, double fYInc, double fZVal, double fZInc)
 	    :	maX(fXVal, fXInc),
 		    maY(fYVal, fYInc),
 		    maZ(fZVal, fZInc)
@@ -180,8 +180,8 @@ namespace basegfx
 
 		    maColorInterpolators.push_back(
                 ip_triple(
-                    rA.getRed(), aDeltaRed, 
-                    rA.getGreen(), aDeltaGreen, 
+                    rA.getRed(), aDeltaRed,
+                    rA.getGreen(), aDeltaGreen,
                     rA.getBlue(), aDeltaBlue));
 
 		    return (maColorInterpolators.size() - 1);
@@ -224,8 +224,8 @@ namespace basegfx
 
 		    maNormalInterpolators.push_back(
                 ip_triple(
-                    rA.getX(), aDeltaX, 
-                    rA.getY(), aDeltaY, 
+                    rA.getX(), aDeltaX,
+                    rA.getY(), aDeltaY,
                     rA.getZ(), aDeltaZ));
 
 		    return (maNormalInterpolators.size() - 1);
@@ -257,7 +257,7 @@ namespace basegfx
 
 		    maTextureInterpolators.push_back(
                 ip_double(
-                    rA.getX(), aDeltaX, 
+                    rA.getX(), aDeltaX,
                     rA.getY(), aDeltaY));
 
 		    return (maTextureInterpolators.size() - 1);
@@ -286,8 +286,8 @@ namespace basegfx
 
 		    maInverseTextureInterpolators.push_back(
                 ip_triple(
-                    aInvA.getX(), aDeltaX, 
-                    aInvA.getY(), aDeltaY, 
+                    aInvA.getX(), aDeltaX,
+                    aInvA.getY(), aDeltaY,
                     fInvZEyeA, fZDelta));
 
 		    return (maInverseTextureInterpolators.size() - 1);

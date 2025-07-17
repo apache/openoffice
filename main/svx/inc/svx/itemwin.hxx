@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -52,7 +52,7 @@ class SvxLineBox : public LineLB
 	void			ReleaseFocus_Impl();
 #endif
 public:
-	SvxLineBox( Window* pParent, 
+	SvxLineBox( Window* pParent,
                 const ::com::sun::star::uno::Reference< ::com::sun::star::frame::XFrame >& rFrame,
 				WinBits nBits = WB_BORDER | WB_DROPDOWN | WB_AUTOHSCROLL );
 	~SvxLineBox();
@@ -88,7 +88,7 @@ class SvxColorBox : public ColorLB
 #endif
 
 public:
-	SvxColorBox( Window* pParent, 
+	SvxColorBox( Window* pParent,
                  const rtl::OUString& rCommand,
                  const ::com::sun::star::uno::Reference< ::com::sun::star::frame::XFrame >& rFrame,
 				 WinBits nBits = WB_BORDER | WB_DROPDOWN | WB_AUTOHSCROLL );
@@ -130,7 +130,7 @@ protected:
     virtual void    DataChanged( const DataChangedEvent& rDCEvt );
 
 public:
-	SvxMetricField( Window* pParent, 
+	SvxMetricField( Window* pParent,
                     const ::com::sun::star::uno::Reference< ::com::sun::star::frame::XFrame >& rFrame,
 					WinBits nBits = WB_BORDER | WB_SPIN | WB_REPEAT );
 	~SvxMetricField();

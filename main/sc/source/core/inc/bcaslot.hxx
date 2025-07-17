@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -131,11 +131,11 @@ private:
     ScBroadcastAreas::const_iterator  FindBroadcastArea( const ScRange& rRange ) const;
 
     /**
-        More hypothetical (memory would probably be doomed anyway) check 
-        whether there would be an overflow when adding an area, setting the 
+        More hypothetical (memory would probably be doomed anyway) check
+        whether there would be an overflow when adding an area, setting the
         proper state if so.
 
-        @return sal_True if a HardRecalcState is effective and area is not to be 
+        @return sal_True if a HardRecalcState is effective and area is not to be
         added.
       */
     bool                CheckHardRecalcStateCondition() const;
@@ -151,25 +151,25 @@ public:
         Only here new ScBroadcastArea objects are created, prevention of dupes.
 
         @param rpArea
-            If NULL, a new ScBroadcastArea is created and assigned ton the 
-            reference if a matching area wasn't found. If a matching area was 
-            found, that is assigned. In any case, the SvtListener is added to 
+            If NULL, a new ScBroadcastArea is created and assigned ton the
+            reference if a matching area wasn't found. If a matching area was
+            found, that is assigned. In any case, the SvtListener is added to
             the broadcaster.
 
-            If not NULL then no listeners are startet, only the area is 
-            inserted and the reference count incremented. Effectively the same 
+            If not NULL then no listeners are startet, only the area is
+            inserted and the reference count incremented. Effectively the same
             as InsertListeningArea(), so use that instead.
 
         @return
-            sal_True if rpArea passed was NULL and ScBroadcastArea is newly 
-            created. 
+            sal_True if rpArea passed was NULL and ScBroadcastArea is newly
+            created.
      */
 	bool				StartListeningArea( const ScRange& rRange,
 											SvtListener* pListener,
 											ScBroadcastArea*& rpArea );
 
     /**
-        Insert a ScBroadcastArea obtained via StartListeningArea() to 
+        Insert a ScBroadcastArea obtained via StartListeningArea() to
         subsequent slots.
      */
     void                InsertListeningArea( ScBroadcastArea* pArea );
@@ -218,8 +218,8 @@ private:
             inline ScBroadcastAreaSlot**    getSlots() { return ppSlots; }
 
             /**
-                Obtain slot pointer, no check on validity! It is assumed that 
-                all calls are made with the results of ComputeSlotOffset(), 
+                Obtain slot pointer, no check on validity! It is assumed that
+                all calls are made with the results of ComputeSlotOffset(),
                 ComputeAreaPoints() and ComputeNextSlot()
               */
             inline ScBroadcastAreaSlot*     getAreaSlot( SCSIZE nOff ) { return *(ppSlots + nOff); }

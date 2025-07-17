@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -32,7 +32,7 @@
 
 
 namespace osl
-{     
+{
 
 	class Condition
 	{
@@ -91,26 +91,26 @@ namespace osl
 		oslCondition condition;
 
         /** The underlying oslCondition has no reference count.
-        
+
         Since the underlying oslCondition is not a reference counted object, copy
         constructed Condition may work on an already destructed oslCondition object.
-        
+
         */
         Condition(const Condition&);
-        
+
         /** The underlying oslCondition has no reference count.
-        
+
         When destructed, the Condition object destroys the undelying oslCondition,
         which might cause severe problems in case it's a temporary object.
-         
+
         */
         Condition(oslCondition condition);
-        
+
         /** This assignment operator is private for the same reason as
             the copy constructor.
         */
         Condition& operator= (const Condition&);
-        
+
         /** This assignment operator is private for the same reason as
             the constructor taking a oslCondition argument.
         */

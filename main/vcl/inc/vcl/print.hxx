@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -126,7 +126,7 @@ public:
 // ------------------
 
 enum PrinterTransparencyMode
-{   
+{
     PRINTER_TRANSPARENCY_AUTO = 0,
     PRINTER_TRANSPARENCY_NONE = 1
 };
@@ -134,7 +134,7 @@ enum PrinterTransparencyMode
 // -----------------------------------------------------------------------------
 
 enum PrinterGradientMode
-{   
+{
     PRINTER_GRADIENT_STRIPES = 0,
     PRINTER_GRADIENT_COLOR = 1
 };
@@ -142,7 +142,7 @@ enum PrinterGradientMode
 // -----------------------------------------------------------------------------
 
 enum PrinterBitmapMode
-{   
+{
     PRINTER_BITMAP_OPTIMAL = 0,
     PRINTER_BITMAP_NORMAL = 1,
     PRINTER_BITMAP_RESOLUTION = 2
@@ -166,31 +166,31 @@ private:
     sal_Bool                        mbConvertToGreyscales;
 
 public:
-                                   
+
                                 PrinterOptions();
                                 ~PrinterOptions();
 
     sal_Bool                        IsReduceTransparency() const { return mbReduceTransparency; }
     void                        SetReduceTransparency( sal_Bool bSet ) { mbReduceTransparency = bSet; }
-    
+
     PrinterTransparencyMode     GetReducedTransparencyMode() const { return meReducedTransparencyMode; }
     void                        SetReducedTransparencyMode( PrinterTransparencyMode eMode ) { meReducedTransparencyMode = eMode; }
-    
+
     sal_Bool                        IsReduceGradients() const { return mbReduceGradients; }
     void                        SetReduceGradients( sal_Bool bSet ) { mbReduceGradients = bSet; }
-    
+
     PrinterGradientMode         GetReducedGradientMode() const { return meReducedGradientsMode; }
     void                        SetReducedGradientMode( PrinterGradientMode eMode ) { meReducedGradientsMode = eMode; }
 
     sal_uInt16                      GetReducedGradientStepCount() const { return mnReducedGradientStepCount; }
     void                        SetReducedGradientStepCount( sal_uInt16 nStepCount ) { mnReducedGradientStepCount = nStepCount; }
-    
+
     sal_Bool                        IsReduceBitmaps() const { return mbReduceBitmaps; }
     void                        SetReduceBitmaps( sal_Bool bSet ) { mbReduceBitmaps = bSet; }
-    
+
     PrinterBitmapMode           GetReducedBitmapMode() const { return meReducedBitmapMode; }
     void                        SetReducedBitmapMode( PrinterBitmapMode eMode ) { meReducedBitmapMode = eMode; }
-    
+
     sal_uInt16                      GetReducedBitmapResolution() const { return mnReducedBitmapResolution; }
     void                        SetReducedBitmapResolution( sal_uInt16 nResolution ) { mnReducedBitmapResolution = nResolution; }
 
@@ -199,7 +199,7 @@ public:
 
     sal_Bool                        IsConvertToGreyscales() const { return mbConvertToGreyscales; }
     void                        SetConvertToGreyscales( sal_Bool bSet ) { mbConvertToGreyscales = bSet; }
-    
+
     // read printer options from configuration, parameter decides whether the set for
     // print "to printer" or "to file" should be read.
     // returns true if config was read, false if an error occurred
@@ -258,7 +258,7 @@ private:
 	DECL_DLLPRIVATE_LINK(       ImplDestroyPrinterAsync, void* );
 
 	SAL_DLLPRIVATE bool StartJob( const rtl::OUString& rJobName, boost::shared_ptr<vcl::PrinterController>& );
-    
+
     static SAL_DLLPRIVATE sal_uLong ImplSalPrinterErrorCodeToVCL( sal_uLong nError );
 
 private:
@@ -363,9 +363,9 @@ public:
 
 	void						SetErrorHdl( const Link& rLink ) { maErrorHdl = rLink; }
 	const Link& 				GetErrorHdl() const { return maErrorHdl; }
-    
+
     void                        Compat_OldPrinterMetrics( bool bSet );
-    
+
     /** checks the printer list and updates it necessary
     *
     *   sends a DataChanged event of type DATACHANGED_PRINTER
@@ -374,9 +374,9 @@ public:
     static void updatePrinters();
 
     /** execute a print job
-    
+
         starts a print job asynchronously (that is will return
-    
+
     */
     static void PrintJob( const boost::shared_ptr<vcl::PrinterController>& i_pController,
                           const JobSetup& i_rInitSetup
@@ -416,7 +416,7 @@ public:
         long                                   nVerticalSpacing;
         bool                                   bDrawBorder;
         PrinterController::NupOrderType        nOrder;
-        
+
         MultiPageSetup()
         : nRows( 1 ), nColumns( 1 ), nRepeat( 1 ), aPaperSize( 21000, 29700 )
         , nLeftMargin( 0 ), nTopMargin( 0 )
@@ -427,30 +427,30 @@ public:
         {
         }
     };
-    
+
     struct PageSize
     {
         Size        aSize;          // in 100th mm
         bool        bFullPaper;     // full paper, not only imageable area is printed
-        
+
         PageSize( const Size& i_rSize = Size( 21000, 29700 ),
                   bool i_bFullPaper = false
                   ) : aSize( i_rSize ), bFullPaper( i_bFullPaper ) {}
     };
-    
+
     PrinterController();
     virtual ~PrinterController();
-    
+
     const boost::shared_ptr<Printer>& getPrinter() const;
     /* for implementations: get current job properties as changed by e.g. print dialog
        this gets the current set of properties initially told to Printer::PrintJob
-    
+
        For convenience a second sequence will be merged in to get a combined sequence.
        In case of duplicate property names, the value of i_MergeList wins.
     */
     com::sun::star::uno::Sequence< com::sun::star::beans::PropertyValue >
         getJobProperties( const com::sun::star::uno::Sequence< com::sun::star::beans::PropertyValue >& i_rMergeList ) const;
-        
+
     /* get the PropertyValue of a Property
     */
     com::sun::star::beans::PropertyValue* getValue( const rtl::OUString& i_rPropertyName );
@@ -465,12 +465,12 @@ public:
        in case the property is unknown or not convertible to bool, i_nFallback is returned
     */
     sal_Int32 getIntProperty( const rtl::OUString& i_rPropertyName, sal_Int32 i_nFallback ) const;
-    
+
     /* set a property value - can also be used to add another UI property
     */
     void setValue( const rtl::OUString& i_rPropertyName, const com::sun::star::uno::Any& i_rValue );
     void setValue( const com::sun::star::beans::PropertyValue& i_rValue );
-    
+
     /* return the currently active UI options. These are the same that were passed to setUIOptions.
     */
     const com::sun::star::uno::Sequence< com::sun::star::beans::PropertyValue >& getUIOptions() const;
@@ -490,7 +490,7 @@ public:
     /* makeEnabled will chage the property rPropName depends on to the value
        that makes rPropName enabled. If the dependency itself is also disabled,
        no action will be performed.
-       
+
        returns the property name rPropName depends on or an empty string
        if no change was made.
     */
@@ -509,22 +509,22 @@ public:
     virtual void printPage( int i_nPage ) const = 0; // must be overloaded by the app
     virtual void jobStarted(); // will be called after a possible dialog has been shown and the real printjob starts
     virtual void jobFinished( com::sun::star::view::PrintableState );
-    
+
     com::sun::star::view::PrintableState getJobState() const;
-    
+
     void abortJob();
-    
+
     // applications (well, sw) depend on a page request with "IsLastPage" = true
     // to free resources, else they (well, sw) will crash eventually
     void triggerAppToFreeResources();
 
     bool isShowDialogs() const;
     bool isDirectPrint() const;
-    
+
     // implementation details, not usable outside vcl
     // don't use outside vcl. Some of these are exported for
     // the benefit of vcl's plugins.
-    // Still: DO NOT USE OUTSIDE VCL 
+    // Still: DO NOT USE OUTSIDE VCL
     VCL_PLUGIN_PUBLIC int getFilteredPageCount();
     SAL_DLLPRIVATE PageSize getPageFile( int i_inUnfilteredPage, GDIMetaFile& rMtf, bool i_bMayUseCache = false );
     VCL_PLUGIN_PUBLIC PageSize getFilteredPageFile( int i_nFilteredPage, GDIMetaFile& o_rMtf, bool i_bMayUseCache = false );
@@ -541,10 +541,10 @@ public:
     SAL_DLLPRIVATE void pushPropertiesToPrinter();
     VCL_PLUGIN_PUBLIC void setJobState( com::sun::star::view::PrintableState );
     SAL_DLLPRIVATE bool setupPrinter( Window* i_pDlgParent );
-    
+
     SAL_DLLPRIVATE int getPageCountProtected() const;
     SAL_DLLPRIVATE com::sun::star::uno::Sequence< com::sun::star::beans::PropertyValue > getPageParametersProtected( int i_nPage ) const;
-    
+
     SAL_DLLPRIVATE sal_uLong removeTransparencies( GDIMetaFile& i_rIn, GDIMetaFile& o_rOut );
     SAL_DLLPRIVATE void resetPrinterOptions( bool i_bFileOutput );
 };
@@ -579,7 +579,7 @@ class VCL_DLLPUBLIC PrinterOptionsHelper
     bool hasProperty( const rtl::OUString& i_rPropertyName ) const;
     bool hasProperty( const char* i_pPropertyName ) const
     { return hasProperty( rtl::OUString::createFromAscii( i_pPropertyName ) ); }
-    
+
     // returns an empty Any for not existing properties
     com::sun::star::uno::Any getValue( const rtl::OUString& i_rPropertyName ) const;
     // change a value in the property set; this will not have an effect to an eventual PrinterController
@@ -613,7 +613,7 @@ class VCL_DLLPUBLIC PrinterOptionsHelper
         sal_Bool        mbInternalOnly;
         sal_Bool        mbEnabled;
         com::sun::star::uno::Sequence< com::sun::star::beans::PropertyValue > maAddProps;
-        
+
         UIControlOptions( const rtl::OUString& i_rDependsOnName = rtl::OUString(),
                           sal_Int32 i_nDependsOnEntry = -1,
                           sal_Bool i_bAttachToDependency = sal_False,
@@ -628,7 +628,7 @@ class VCL_DLLPUBLIC PrinterOptionsHelper
         , mbInternalOnly( i_bInternalOnly )
         , mbEnabled( i_bEnabled ) {}
     };
-    
+
     // note: in the following helper functions HelpIds are expected as an rtl::OUString
     // the normal HelpId form is rtl::OString (byte string instead of UTF16 string)
     // this is because the whole interface is base on UNO properties; in fact the structures
@@ -661,7 +661,7 @@ class VCL_DLLPUBLIC PrinterOptionsHelper
                                                        sal_Bool i_bValue,
                                                        const UIControlOptions& i_rControlOptions = UIControlOptions()
                                                        );
-    
+
     // create a set of choices (either a radio button group or a list box)
     static com::sun::star::uno::Any getChoiceControlOpt( const rtl::OUString& i_rTitle,
                                                          const com::sun::star::uno::Sequence< rtl::OUString >& i_rHelpId,

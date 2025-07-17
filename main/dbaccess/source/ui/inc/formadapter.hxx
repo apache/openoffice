@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -130,10 +130,10 @@
 #ifndef _COMPHELPER_UNO3_HXX_
 #include <comphelper/uno3.hxx>
 #endif
-#ifndef _CPPUHELPER_IMPLBASE12_HXX_ 
+#ifndef _CPPUHELPER_IMPLBASE12_HXX_
 #include <cppuhelper/implbase12.hxx>
 #endif
-#ifndef _CPPUHELPER_IMPLBASE10_HXX_ 
+#ifndef _CPPUHELPER_IMPLBASE10_HXX_
 #include <cppuhelper/implbase10.hxx>
 #endif
 #ifndef _DBAUI_MODULE_DBU_HXX_
@@ -155,18 +155,18 @@ namespace dbaui
 									,	::com::sun::star::sdbc::XRowUpdate
 									,	::com::sun::star::sdbc::XRow
 									,	::com::sun::star::sdbcx::XColumnsSupplier
-									,	::com::sun::star::sdbc::XColumnLocate			
+									,	::com::sun::star::sdbc::XColumnLocate
 									// --- stardiv::one::form::component::DatabaseForm ---
 									,	::com::sun::star::sdbc::XParameters
 									,	::com::sun::star::sdbcx::XDeleteRows
 									>	SbaXFormAdapter_BASE1;
-	typedef ::cppu::ImplHelper12	<	::com::sun::star::sdbc::XWarningsSupplier				
-									,	::com::sun::star::sdbc::XCloseable				
+	typedef ::cppu::ImplHelper12	<	::com::sun::star::sdbc::XWarningsSupplier
+									,	::com::sun::star::sdbc::XCloseable
 									,	::com::sun::star::form::XLoadable
-									,	::com::sun::star::sdb::XSQLErrorBroadcaster		
+									,	::com::sun::star::sdb::XSQLErrorBroadcaster
 									,	::com::sun::star::form::XDatabaseParameterBroadcaster
-										// --- stardiv::one::form::component::Form ---			
-									,		::com::sun::star::form::XForm			
+										// --- stardiv::one::form::component::Form ---
+									,		::com::sun::star::form::XForm
 									,		::com::sun::star::form::XSubmit
 									,		::com::sun::star::awt::XTabControllerModel
 											// --- stardiv::one::form::FormComponent ---
@@ -179,7 +179,7 @@ namespace dbaui
 	typedef ::cppu::ImplHelper10	<			::com::sun::star::io::XPersistObject
 									,			::com::sun::star::beans::XPropertySet
 										// --- stardiv::one::data::DatabaseCursor ---
-									,		::com::sun::star::util::XCancellable			
+									,		::com::sun::star::util::XCancellable
 										// already present : ::com::sun::star::beans::XPropertySet
 											// --- stardiv::one::data::DatabaseComponent ---
 											// already present : ::com::sun::star::lang::XComponent
@@ -208,9 +208,9 @@ namespace dbaui
 
 		SbaXLoadMultiplexer					m_aLoadListeners;
 		SbaXRowSetMultiplexer				m_aRowSetListeners;
-		SbaXRowSetApproveMultiplexer		m_aRowSetApproveListeners;	
+		SbaXRowSetApproveMultiplexer		m_aRowSetApproveListeners;
 		SbaXSQLErrorMultiplexer				m_aErrorListeners;
-		SbaXParameterMultiplexer			m_aParameterListeners;	
+		SbaXParameterMultiplexer			m_aParameterListeners;
 		SbaXSubmitMultiplexer				m_aSubmitListeners;
 		SbaXResetMultiplexer				m_aResetListeners;
 
@@ -331,7 +331,7 @@ namespace dbaui
 		virtual sal_Bool SAL_CALL rowDeleted() throw(::com::sun::star::sdbc::SQLException, ::com::sun::star::uno::RuntimeException);
 		virtual ::com::sun::star::uno::Reference< ::com::sun::star::uno::XInterface >  SAL_CALL getStatement() throw(::com::sun::star::sdbc::SQLException, ::com::sun::star::uno::RuntimeException);
 
-	// ::com::sun::star::sdbc::XResultSetUpdate	
+	// ::com::sun::star::sdbc::XResultSetUpdate
 		virtual void SAL_CALL insertRow() throw(::com::sun::star::sdbc::SQLException, ::com::sun::star::uno::RuntimeException);
 		virtual void SAL_CALL updateRow() throw(::com::sun::star::sdbc::SQLException, ::com::sun::star::uno::RuntimeException);
 		virtual void SAL_CALL deleteRow() throw(::com::sun::star::sdbc::SQLException, ::com::sun::star::uno::RuntimeException);
@@ -397,7 +397,7 @@ namespace dbaui
 
 		// ::com::sun::star::form::XDatabaseParameterBroadcaster
 		virtual void SAL_CALL addParameterListener(const ::com::sun::star::uno::Reference< ::com::sun::star::form::XDatabaseParameterListener >& aListener) throw(::com::sun::star::uno::RuntimeException);
-		virtual void SAL_CALL removeParameterListener(const ::com::sun::star::uno::Reference< ::com::sun::star::form::XDatabaseParameterListener >& aListener) throw(::com::sun::star::uno::RuntimeException);	
+		virtual void SAL_CALL removeParameterListener(const ::com::sun::star::uno::Reference< ::com::sun::star::form::XDatabaseParameterListener >& aListener) throw(::com::sun::star::uno::RuntimeException);
 
 		// ::com::sun::star::container::XChild
 		virtual ::com::sun::star::uno::Reference< ::com::sun::star::uno::XInterface > SAL_CALL getParent() throw(::com::sun::star::uno::RuntimeException);
@@ -453,7 +453,7 @@ namespace dbaui
 		virtual void SAL_CALL removeVetoableChangeListener(const ::rtl::OUString& PropertyName, const ::com::sun::star::uno::Reference< ::com::sun::star::beans::XVetoableChangeListener >& aListener) throw(::com::sun::star::beans::UnknownPropertyException, ::com::sun::star::lang::WrappedTargetException, ::com::sun::star::uno::RuntimeException);
 
 		// ::com::sun::star::util::XCancellable
-		virtual void SAL_CALL cancel() throw(::com::sun::star::uno::RuntimeException);	
+		virtual void SAL_CALL cancel() throw(::com::sun::star::uno::RuntimeException);
 
 		// ::com::sun::star::beans::XPropertyState
 		virtual ::com::sun::star::beans::PropertyState SAL_CALL getPropertyState(const ::rtl::OUString& PropertyName) throw(::com::sun::star::beans::UnknownPropertyException, ::com::sun::star::uno::RuntimeException);

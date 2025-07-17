@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -105,19 +105,19 @@ public:
 	//////////////////////////////////////////////////////////////////////
 	// Non-interface methods.
 	//////////////////////////////////////////////////////////////////////
-	static ODMHANDLE getHandle(); 
+	static ODMHANDLE getHandle();
 
 	/** append add an entry to the internal map
 		@param	_rProp	the content properties
 	*/
 	void append(const ::rtl::Reference<ContentProperties>& _rProp);
-	
+
 	/** closeDocument closes the document
 		@param	_sDocumentId	the id of the document
 	*/
 	void closeDocument(const ::rtl::OString& _sDocumentId);
-	
-	/** saveDocument saves the document in DMS 
+
+	/** saveDocument saves the document in DMS
 		@param	_sDocumentId	the id of the document
 	*/
 	void saveDocument(const ::rtl::OString& _sDocumentId);
@@ -149,11 +149,11 @@ public:
 		@return the URL of the temporary file
 	*/
 	static ::rtl::OUString openDoc(const ::rtl::Reference<ContentProperties>& _rProp) throw (::com::sun::star::uno::Exception);
-	
+
 	/** convertURL converts a normal URL into an ODMA understandable name
 		@param	_sCanonicURL	the URL from ContentIndentifier
 
-		@return	the ODMA name 
+		@return	the ODMA name
 	*/
 	static ::rtl::OUString convertURL(const ::rtl::OUString& _sCanonicURL);
 

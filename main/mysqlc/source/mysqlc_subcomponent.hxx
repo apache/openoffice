@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 #ifndef _CONNECTIVITY_OSUBCOMPONENT_HXX_
@@ -25,13 +25,13 @@
 #ifndef _CPPUHELPER_WEAK_HXX_
 #include <cppuhelper/weak.hxx>
 #endif
-#ifndef _CPPUHELPER_INTERFACECONTAINER_H_ 
+#ifndef _CPPUHELPER_INTERFACECONTAINER_H_
 #include <cppuhelper/interfacecontainer.h>
 #endif
 #ifndef _COM_SUN_STAR_LANG_DISPOSEDEXCEPTION_HPP_
 #include <com/sun/star/lang/DisposedException.hpp>
 #endif
-#ifndef _CPPUHELPER_PROPSHLP_HXX 
+#ifndef _CPPUHELPER_PROPSHLP_HXX
 #include <cppuhelper/propshlp.hxx>
 #endif
 #ifndef _OSL_MUTEX_HXX_
@@ -146,13 +146,13 @@ namespace connectivity
 			virtual ::cppu::IPropertyArrayHelper* createArrayHelper() const = 0;
 		};
 
-		template<class TYPE> 
+		template<class TYPE>
 		sal_Int32						OPropertyArrayUsageHelper< TYPE >::s_nRefCount	= 0;
 
-		template<class TYPE> 
+		template<class TYPE>
 		::cppu::IPropertyArrayHelper*	OPropertyArrayUsageHelper< TYPE >::s_pProps	= NULL;
 
-		template<class TYPE> 
+		template<class TYPE>
 		::osl::Mutex					OPropertyArrayUsageHelper< TYPE >::s_aMutex;
 
 		//------------------------------------------------------------------

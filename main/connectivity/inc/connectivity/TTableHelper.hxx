@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -43,11 +43,11 @@ namespace connectivity
         ::rtl::OUString aField6;
         ::rtl::OUString sField12; // REMARKS
         ::rtl::OUString sField13;
-        sal_Int32		nField5        
+        sal_Int32		nField5
 		            ,   nField7
 					,	nField9
 					,	nField11;
-		
+
         OrdinalPosition nOrdinalPosition;
 
         ColumnDesc() {}
@@ -64,10 +64,10 @@ namespace connectivity
             ,aField6(_aField6)
             ,sField12(_sField12)
             ,sField13(_sField13)
-            ,nField5(_nField5)            
+            ,nField5(_nField5)
             ,nField7(_nField7)
             ,nField9(_nField9)
-            ,nField11(_nField11)            
+            ,nField11(_nField11)
             ,nOrdinalPosition( _nPosition )
         {
         }

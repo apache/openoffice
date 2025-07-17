@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -52,9 +52,9 @@ class SvNumberFormatsSupplierObj;
 //	----------------------------------------------------
 //	class VCLXMultiLineEdit
 //	----------------------------------------------------
-class VCLXMultiLineEdit :	public ::com::sun::star::awt::XTextComponent, 
-							public ::com::sun::star::awt::XTextArea, 
-							public ::com::sun::star::awt::XTextLayoutConstrains, 
+class VCLXMultiLineEdit :	public ::com::sun::star::awt::XTextComponent,
+							public ::com::sun::star::awt::XTextArea,
+							public ::com::sun::star::awt::XTextLayoutConstrains,
 							public VCLXWindow
 {
 private:
@@ -179,8 +179,8 @@ protected:
 	sal_Bool					bIsStandardSupplier;
 
 	sal_Int32					nKeyToSetDelayed;
-	
-	FormattedField*				GetFormattedField() const { return (FormattedField*)GetWindow(); }	
+
+	FormattedField*				GetFormattedField() const { return (FormattedField*)GetWindow(); }
 
 public:
 	SVTXFormattedField();
@@ -244,16 +244,16 @@ typedef ::cppu::ImplInheritanceHelper3  <   VCLXGraphicControl
                                         ,   ::com::sun::star::awt::XItemEventBroadcaster
                                         >   SVTXRoadmap_Base;
 class SVTXRoadmap : public SVTXRoadmap_Base
-                    
-                    
+
+
 {
 private:
     ItemListenerMultiplexer 	maItemListeners;
-    
+
     RMItemData CurRMItemData;
     RMItemData GetRMItemData( const ::com::sun::star::container::ContainerEvent& _rEvent );
 
-protected:	
+protected:
     ::svt::ORoadmap*				GetRoadmap() const { return (::svt::ORoadmap*)GetWindow(); }
     void                            ProcessWindowEvent( const VclWindowEvent& rVclWindowEvent );
 
@@ -271,8 +271,8 @@ public:
 
     // XContainerListener
     void SAL_CALL elementInserted( const ::com::sun::star::container::ContainerEvent& rEvent )throw(::com::sun::star::uno::RuntimeException);
-    void SAL_CALL elementRemoved( const ::com::sun::star::container::ContainerEvent& rEvent )throw(::com::sun::star::uno::RuntimeException); 
-    void SAL_CALL elementReplaced( const ::com::sun::star::container::ContainerEvent& rEvent )throw(::com::sun::star::uno::RuntimeException); 
+    void SAL_CALL elementRemoved( const ::com::sun::star::container::ContainerEvent& rEvent )throw(::com::sun::star::uno::RuntimeException);
+    void SAL_CALL elementReplaced( const ::com::sun::star::container::ContainerEvent& rEvent )throw(::com::sun::star::uno::RuntimeException);
 
     // XItemEventBroadcaster
     virtual void SAL_CALL addItemListener( const ::com::sun::star::uno::Reference< ::com::sun::star::awt::XItemListener >& l ) throw (::com::sun::star::uno::RuntimeException);
@@ -379,7 +379,7 @@ public:
 //	----------------------------------------------------
 //	class VCLXProgressBar
 //	----------------------------------------------------
-class VCLXProgressBar :	public ::com::sun::star::awt::XProgressBar, 
+class VCLXProgressBar :	public ::com::sun::star::awt::XProgressBar,
 						public VCLXWindow
 {
 private:
@@ -403,13 +403,13 @@ public:
 	::com::sun::star::uno::Sequence< ::com::sun::star::uno::Type >	SAL_CALL getTypes() throw(::com::sun::star::uno::RuntimeException);
 	::com::sun::star::uno::Sequence< sal_Int8 >						SAL_CALL getImplementationId() throw(::com::sun::star::uno::RuntimeException);
 
-	// ::com::sun::star::awt::XProgressBar	
+	// ::com::sun::star::awt::XProgressBar
     void SAL_CALL setForegroundColor( sal_Int32 nColor ) throw(::com::sun::star::uno::RuntimeException);
     void SAL_CALL setBackgroundColor( sal_Int32 nColor ) throw(::com::sun::star::uno::RuntimeException);
     void SAL_CALL setValue( sal_Int32 nValue ) throw(::com::sun::star::uno::RuntimeException);
     void SAL_CALL setRange(	sal_Int32 nMin, sal_Int32 nMax ) throw(::com::sun::star::uno::RuntimeException );
     sal_Int32 SAL_CALL getValue() throw(::com::sun::star::uno::RuntimeException);
-		
+
 	// ::com::sun::star::awt::VclWindowPeer
     void SAL_CALL setProperty( const ::rtl::OUString& PropertyName, const ::com::sun::star::uno::Any& Value ) throw(::com::sun::star::uno::RuntimeException);
     ::com::sun::star::uno::Any SAL_CALL getProperty( const ::rtl::OUString& PropertyName ) throw(::com::sun::star::uno::RuntimeException);

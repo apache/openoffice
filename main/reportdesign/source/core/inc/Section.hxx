@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -39,7 +39,7 @@
 
 namespace reportdesign
 {
-    typedef ::cppu::WeakComponentImplHelper3<   ::com::sun::star::report::XSection 
+    typedef ::cppu::WeakComponentImplHelper3<   ::com::sun::star::report::XSection
                                             ,   ::com::sun::star::lang::XServiceInfo
                                             ,	::com::sun::star::lang::XUnoTunnel> SectionBase;
 	typedef ::cppu::PropertySetMixin<com::sun::star::report::XSection> SectionPropertySet;
@@ -68,11 +68,11 @@ namespace reportdesign
         ::sal_Bool																			m_bBacktransparent;
         bool                                                                                m_bInRemoveNotify;
         bool                                                                                m_bInInsertNotify;
-		
+
 	private:
 		OSection(const OSection&);
 		OSection& operator=(const OSection&);
-		
+
 		template <typename T> void set(	 const ::rtl::OUString& _sProperty
 										,const T& _Value
 										,T& _member)
@@ -96,14 +96,14 @@ namespace reportdesign
 
         void init();
 	protected:
-        // TODO: VirtualFunctionFinder: This is virtual function! 
-        // 
+        // TODO: VirtualFunctionFinder: This is virtual function!
+        //
         virtual ~OSection();
 
         /** this function is called upon disposing the component
         */
-        // TODO: VirtualFunctionFinder: This is virtual function! 
-        // 
+        // TODO: VirtualFunctionFinder: This is virtual function!
+        //
         virtual void SAL_CALL disposing();
 	public:
 		typedef ::comphelper::ImplementationReference< OSection	,::com::sun::star::report::XSection,::com::sun::star::uno::XWeak > TSection;
@@ -114,7 +114,7 @@ namespace reportdesign
 				,const com::sun::star::uno::Reference< com::sun::star::uno::XComponentContext >& context,bool _bPageSection=false);
 
 		DECLARE_XINTERFACE( )
-        
+
 		// ::com::sun::star::lang::XServiceInfo
 		virtual ::sal_Bool SAL_CALL supportsService( const ::rtl::OUString& ServiceName ) throw (::com::sun::star::uno::RuntimeException);
 		virtual ::rtl::OUString SAL_CALL getImplementationName(  ) throw(::com::sun::star::uno::RuntimeException);
@@ -180,12 +180,12 @@ namespace reportdesign
 
         // XComponent
 		virtual void SAL_CALL dispose() throw(::com::sun::star::uno::RuntimeException);
-		virtual void SAL_CALL addEventListener(const ::com::sun::star::uno::Reference< ::com::sun::star::lang::XEventListener > & aListener) throw(::com::sun::star::uno::RuntimeException) 
-		{ 
+		virtual void SAL_CALL addEventListener(const ::com::sun::star::uno::Reference< ::com::sun::star::lang::XEventListener > & aListener) throw(::com::sun::star::uno::RuntimeException)
+		{
 			cppu::WeakComponentImplHelperBase::addEventListener(aListener);
 		}
 		virtual void SAL_CALL removeEventListener(const ::com::sun::star::uno::Reference< ::com::sun::star::lang::XEventListener > & aListener) throw(::com::sun::star::uno::RuntimeException)
-		{ 
+		{
 			cppu::WeakComponentImplHelperBase::removeEventListener(aListener);
 		}
 

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -30,22 +30,22 @@
 
 
 namespace osl
-{     
+{
     /** A mutual exclusion synchronization object
     */
 	class Mutex {
-    
+
     public:
 		/** Create a thread-local mutex.
 			@return 0 if the mutex could not be created, otherwise a handle to the mutex.
             @seealso ::osl_createMutex()
 		*/
-		Mutex() 
+		Mutex()
 		{
 			mutex = osl_createMutex();
 		}
 
-		/** Release the OS-structures and free mutex data-structure. 
+		/** Release the OS-structures and free mutex data-structure.
             @seealso ::osl_destroyMutex()
 		*/
 		~Mutex()
@@ -81,7 +81,7 @@ namespace osl
 		}
 
         /** Returns a global static mutex object.
-            The global and static mutex object can be used to initialize other 
+            The global and static mutex object can be used to initialize other
             static objects in a thread safe manner.
             @return the global mutex object
             @seealso ::osl_getGlobalMutex()
@@ -90,31 +90,31 @@ namespace osl
 		{
 			return (Mutex *)osl_getGlobalMutex();
 		}
-        
+
 	private:
         oslMutex mutex;
 
         /** The underlying oslMutex has no reference count.
-        
+
         Since the underlying oslMutex is not a reference counted object, copy
         constructed Mutex may work on an already destructed oslMutex object.
-        
+
         */
         Mutex(const Mutex&);
-        
+
         /** The underlying oslMutex has no reference count.
-        
-        When destructed, the Mutex object destroys the undelying oslMutex, 
+
+        When destructed, the Mutex object destroys the undelying oslMutex,
         which might cause severe problems in case it's a temporary object.
-         
+
         */
         Mutex(oslMutex Mutex);
-        
+
         /** This assignment operator is private for the same reason as
             the copy constructor.
         */
         Mutex& operator= (const Mutex&);
-        
+
         /** This assignment operator is private for the same reason as
             the constructor taking a oslMutex argument.
         */
@@ -166,7 +166,7 @@ namespace osl
 	protected:
 		T * pT;
 	public:
-		
+
         /** Acquires the object specified as parameter.
         */
 		ClearableGuard(T * pT_) : pT(pT_)
@@ -188,8 +188,8 @@ namespace osl
 			if (pT)
 				pT->release();
 		}
-		
-		/** Releases the mutex or interface. 
+
+		/** Releases the mutex or interface.
         */
 		void clear()
 		{
@@ -219,14 +219,14 @@ namespace osl
                 ClearableGuard<T>( pT_ ),
                 pResetT( pT_ )
         {}
-        
+
         /** Acquires the object specified as parameter.
         */
         ResettableGuard( T& rT ) :
                 ClearableGuard<T>( rT ),
                 pResetT( &rT )
         {}
-        
+
 		/** Re-aquires the mutex or interface.
         */
         void reset()

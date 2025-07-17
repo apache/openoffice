@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -69,7 +69,7 @@ private:
 	typedef ::std::list< UnoControlModelHolder >		UnoControlModelHolderList;
 
 	// for grouping control models (XTabControllerModel::getGroupXXX)
-	typedef ::std::vector< ::com::sun::star::uno::Reference< ::com::sun::star::awt::XControlModel > >	
+	typedef ::std::vector< ::com::sun::star::uno::Reference< ::com::sun::star::awt::XControlModel > >
 														ModelGroup;
 	typedef	::std::vector< ModelGroup >					AllGroups;
 
@@ -92,7 +92,7 @@ protected:
 
     void	Clone_Impl(ControlModelContainerBase& _rClone) const;
 
-protected:	
+protected:
 	::com::sun::star::uno::Any			ImplGetDefaultValue( sal_uInt16 nPropId ) const;
 	::cppu::IPropertyArrayHelper&		SAL_CALL getInfoHelper();
 
@@ -102,7 +102,7 @@ public:
 						ControlModelContainerBase( const ::com::sun::star::uno::Reference< ::com::sun::star::lang::XMultiServiceFactory >& i_factory );
 						ControlModelContainerBase( const ControlModelContainerBase& rModel );
 						~ControlModelContainerBase();
-						
+
 	UnoControlModel*	Clone() const;
 
 	// ::com::sun::star::container::XContainer
@@ -112,7 +112,7 @@ public:
 	// ::com::sun::star::container::XElementAcces
 	::com::sun::star::uno::Type SAL_CALL getElementType(  ) throw(::com::sun::star::uno::RuntimeException);
 	sal_Bool SAL_CALL hasElements(  ) throw(::com::sun::star::uno::RuntimeException);
-	
+
 	// ::com::sun::star::container::XNameContainer, XNameReplace, XNameAccess
 	void SAL_CALL replaceByName( const ::rtl::OUString& aName, const ::com::sun::star::uno::Any& aElement ) throw(::com::sun::star::lang::IllegalArgumentException, ::com::sun::star::container::NoSuchElementException, ::com::sun::star::lang::WrappedTargetException, ::com::sun::star::uno::RuntimeException);
 	::com::sun::star::uno::Any SAL_CALL getByName( const ::rtl::OUString& aName ) throw(::com::sun::star::container::NoSuchElementException, ::com::sun::star::lang::WrappedTargetException, ::com::sun::star::uno::RuntimeException);
@@ -123,12 +123,12 @@ public:
 
 	// ::com::sun::star::beans::XMultiPropertySet
 	::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySetInfo > SAL_CALL getPropertySetInfo(  ) throw(::com::sun::star::uno::RuntimeException);
-	
+
 	// ::com::sun::star::lang::XMultiServiceFactory
     ::com::sun::star::uno::Reference< ::com::sun::star::uno::XInterface > SAL_CALL createInstance( const ::rtl::OUString& aServiceSpecifier ) throw(::com::sun::star::uno::Exception, ::com::sun::star::uno::RuntimeException);
     ::com::sun::star::uno::Reference< ::com::sun::star::uno::XInterface > SAL_CALL createInstanceWithArguments( const ::rtl::OUString& ServiceSpecifier, const ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Any >& Arguments ) throw(::com::sun::star::uno::Exception, ::com::sun::star::uno::RuntimeException);
     ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getAvailableServiceNames(  ) throw(::com::sun::star::uno::RuntimeException);
-	
+
 	// XComponent
 	void SAL_CALL dispose(  ) throw(::com::sun::star::uno::RuntimeException);
 
@@ -195,13 +195,13 @@ class ResourceListener  :public ::com::sun::star::util::XModifyListener,
 		virtual ::com::sun::star::uno::Any SAL_CALL queryInterface( const ::com::sun::star::uno::Type& aType ) throw (::com::sun::star::uno::RuntimeException);
 		virtual void SAL_CALL acquire() throw ();
 		virtual void SAL_CALL release() throw ();
-        
+
         // XModifyListener
         virtual void SAL_CALL modified( const ::com::sun::star::lang::EventObject& aEvent ) throw (::com::sun::star::uno::RuntimeException);
 
         // XEventListener
         virtual void SAL_CALL disposing( const ::com::sun::star::lang::EventObject& Source ) throw (::com::sun::star::uno::RuntimeException);
-        
+
     private:
         ::com::sun::star::uno::Reference< ::com::sun::star::resource::XStringResourceResolver > m_xResource;
         ::com::sun::star::uno::Reference< ::com::sun::star::util::XModifyListener >             m_xListener;
@@ -257,4 +257,4 @@ protected:
 	virtual void removingControl( const ::com::sun::star::uno::Reference< ::com::sun::star::awt::XControl >& _rxControl );
 	virtual void addingControl( const ::com::sun::star::uno::Reference< ::com::sun::star::awt::XControl >& _rxControl );
 };
-#endif 
+#endif

@@ -591,7 +591,7 @@ struct RulerBorder
     long    nWidth;
     sal_uInt16  nStyle;
     // minimum/maximum position, supported for table borders/rows
-    long    nMinPos; 
+    long    nMinPos;
     long    nMaxPos;
 };
 
@@ -733,9 +733,9 @@ private:
     SVT_DLLPRIVATE void                ImplDrawExtra( sal_Bool bPaint = sal_False );
     SVT_DLLPRIVATE void                ImplUpdate( sal_Bool bMustCalc = sal_False );
     using Window::ImplHitTest;
-    SVT_DLLPRIVATE sal_Bool                ImplHitTest( const Point& rPos, 
-                                     ImplRulerHitTest* pHitTest, 
-                                     sal_Bool bRequiredStyle = sal_False, 
+    SVT_DLLPRIVATE sal_Bool                ImplHitTest( const Point& rPos,
+                                     ImplRulerHitTest* pHitTest,
+                                     sal_Bool bRequiredStyle = sal_False,
                                      sal_uInt16 nRequiredStyle = 0 ) const;
     SVT_DLLPRIVATE sal_Bool                ImplDocHitTest( const Point& rPos, RulerType eDragType, ImplRulerHitTest* pHitTest ) const;
     SVT_DLLPRIVATE sal_Bool                ImplStartDrag( ImplRulerHitTest* pHitTest, sal_uInt16 nModifier );

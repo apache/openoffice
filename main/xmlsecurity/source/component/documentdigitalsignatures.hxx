@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -32,15 +32,15 @@
 #include <com/sun/star/io/XInputStream.hpp>
 #include <xmlsecurity/documentsignaturehelper.hxx>
 
-namespace com { namespace  sun { namespace star { 
-	
+namespace com { namespace  sun { namespace star {
+
 	namespace uno {
 		class XComponentContext;
 	}
 }}}
 
-class DocumentDigitalSignatures : public cppu::WeakImplHelper2 
-< 
+class DocumentDigitalSignatures : public cppu::WeakImplHelper2
+<
 	com::sun::star::security::XDocumentDigitalSignatures,
 	com::sun::star::lang::XInitialization
 >
@@ -52,8 +52,8 @@ private:
     //The number of arguments which were passed in XInitialization::initialize
     int m_nArgumentsCount;
     //Indicates if the document already contains a document signature
-    bool m_bHasDocumentSignature; 
-    
+    bool m_bHasDocumentSignature;
+
     sal_Bool ImplViewSignatures( const ::com::sun::star::uno::Reference< ::com::sun::star::embed::XStorage >& rxStorage, const ::com::sun::star::uno::Reference< ::com::sun::star::io::XStream >& xSignStream, DocumentSignatureMode eMode, bool bReadOnly ) throw (::com::sun::star::uno::RuntimeException);
     sal_Bool ImplViewSignatures( const ::com::sun::star::uno::Reference< ::com::sun::star::embed::XStorage >& rxStorage, const ::com::sun::star::uno::Reference< ::com::sun::star::io::XInputStream >& xSignStream, DocumentSignatureMode eMode, bool bReadOnly ) throw (::com::sun::star::uno::RuntimeException);
     com::sun::star::uno::Sequence< ::com::sun::star::security::DocumentSignatureInformation > ImplVerifySignatures( const ::com::sun::star::uno::Reference< ::com::sun::star::embed::XStorage >& rxStorage, const ::com::sun::star::uno::Reference< ::com::sun::star::io::XInputStream >& xSignStream, DocumentSignatureMode eMode ) throw (::com::sun::star::uno::RuntimeException);
@@ -62,11 +62,11 @@ public:
     DocumentDigitalSignatures( const com::sun::star::uno::Reference< com::sun::star::uno::XComponentContext>& rxCtx );
 
     // for service registration...
-	static ::rtl::OUString GetImplementationName() throw (com::sun::star::uno::RuntimeException); 
-	static ::com::sun::star::uno::Sequence < ::rtl::OUString > GetSupportedServiceNames() throw (com::sun::star::uno::RuntimeException);	
-	
+	static ::rtl::OUString GetImplementationName() throw (com::sun::star::uno::RuntimeException);
+	static ::com::sun::star::uno::Sequence < ::rtl::OUString > GetSupportedServiceNames() throw (com::sun::star::uno::RuntimeException);
+
 	//XInitialization
-	void SAL_CALL initialize( const ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Any >& aArguments ) 
+	void SAL_CALL initialize( const ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Any >& aArguments )
 		throw (::com::sun::star::uno::Exception, ::com::sun::star::uno::RuntimeException);
 
     // XDocumentDigitalSignatures
@@ -91,7 +91,7 @@ public:
 
 };
 
-com::sun::star::uno::Reference< com::sun::star::uno::XInterface > SAL_CALL DocumentDigitalSignatures_CreateInstance( 
+com::sun::star::uno::Reference< com::sun::star::uno::XInterface > SAL_CALL DocumentDigitalSignatures_CreateInstance(
 	const com::sun::star::uno::Reference< com::sun::star::uno::XComponentContext >& rCtx) throw ( com::sun::star::uno::Exception );
 
 #endif // _XMLSECURITY_DOCUMENTDIGITALSIGNATURES_HXX

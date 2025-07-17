@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 #ifndef SFX_SIDEBAR_GRID_LAYOUTER_HXX
@@ -112,11 +112,11 @@ public:
     */
     CellDescriptor& SetFixedWidth (void);
     CellDescriptor& SetMinimumWidth (const sal_Int32 nWidth);
-    
+
     /** Set the horizontal offset of the control with respect to the
         containing column.  The offset is only used when the position
         of the control is calculated not when the sizes of columns are
-        calculated. 
+        calculated.
     */
     CellDescriptor& SetOffset (const sal_Int32 nOffset);
 
@@ -152,34 +152,34 @@ public:
     */
     ColumnDescriptor& SetFixedWidth (
         const sal_Int32 nWidth);
-    
+
     /** Set external padding on the left side of the column.
     */
     ColumnDescriptor& SetLeftPadding (
         const sal_Int32 nPadding);
-    
+
     /** Set external padding on the right side of the column.
     */
     ColumnDescriptor& SetRightPadding (
         const sal_Int32 nPadding);
 
     sal_Int32 GetWeight (void) const;
-    
+
     /** Return the minimum width of the column without external
         padding.  This is the value last set with SetMinimumWidth() or SetFixedWidth().
     */
     sal_Int32 GetMinimumWidth (void) const;
-    
+
     /** Return the maximum width of the column without external
         padding.  This is the value last set with SetFixedWidth().
     */
     sal_Int32 GetMaximumWidth (void) const;
-    
+
     /** Return the maximum width of the column including external
         padding.
     */
     sal_Int32 GetTotalMaximumWidth (void) const;
-    
+
     sal_Int32 GetLeftPadding (void) const;
     sal_Int32 GetRightPadding (void) const;
 

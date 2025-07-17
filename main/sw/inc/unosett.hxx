@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -61,7 +61,7 @@ protected:
 	virtual ~SwXFootnoteProperties();
 public:
 	SwXFootnoteProperties(SwDoc* pDoc);
-	
+
 
 	//XPropertySet
     virtual ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySetInfo > SAL_CALL getPropertySetInfo(  ) throw(::com::sun::star::uno::RuntimeException);
@@ -95,7 +95,7 @@ protected:
 	virtual ~SwXEndnoteProperties();
 public:
 	SwXEndnoteProperties(SwDoc* pDoc);
-	
+
 
 	//XPropertySet
     virtual ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySetInfo > SAL_CALL getPropertySetInfo(  ) throw(::com::sun::star::uno::RuntimeException);
@@ -129,7 +129,7 @@ protected:
 	virtual ~SwXLineNumberingProperties();
 public:
 	SwXLineNumberingProperties(SwDoc* pDoc);
-	
+
 
 	//XPropertySet
     virtual ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySetInfo > SAL_CALL getPropertySetInfo(  ) throw(::com::sun::star::uno::RuntimeException);
@@ -180,7 +180,7 @@ public:
 	SwXNumberingRules(SwDocShell& rDocSh);	// chapter numbering
 	SwXNumberingRules(const SwNumRule& rRule); // NumRule for paragraphs, numbering styles
 	SwXNumberingRules(SwDoc& rDoc); //create a new instance
-	
+
 
 	static const ::com::sun::star::uno::Sequence< sal_Int8 > & getUnoTunnelId();
 
@@ -216,8 +216,8 @@ public:
 	virtual sal_Bool SAL_CALL supportsService(const rtl::OUString& ServiceName) throw( ::com::sun::star::uno::RuntimeException );
 	virtual ::com::sun::star::uno::Sequence< rtl::OUString > SAL_CALL getSupportedServiceNames(void) throw( ::com::sun::star::uno::RuntimeException );
 
-    ::com::sun::star::uno::Sequence< 
-		::com::sun::star::beans::PropertyValue> 
+    ::com::sun::star::uno::Sequence<
+		::com::sun::star::beans::PropertyValue>
 			GetNumberingRuleByIndex(const SwNumRule& rNumRule, sal_Int32 nIndex)const;
     void	SetNumberingRuleByIndex(SwNumRule& rNumRule,
 				const ::com::sun::star::uno::Sequence< ::com::sun::star::beans::PropertyValue>& rProperties, sal_Int32 nIndex)
@@ -240,7 +240,7 @@ protected:
 	virtual ~SwXChapterNumbering();
 public:
 	SwXChapterNumbering(SwDocShell& rDocSh);
-	
+
 
 	void	Invalidate() {SwXNumberingRules::Invalidate();}
 
@@ -281,7 +281,7 @@ protected:
 public:
 	SwXTextColumns(sal_uInt16 nColCount);
 	SwXTextColumns(const SwFmtCol& rFmtCol);
-	
+
 
 
 	static const ::com::sun::star::uno::Sequence< sal_Int8 > & getUnoTunnelId();

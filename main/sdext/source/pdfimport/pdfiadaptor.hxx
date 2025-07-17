@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -43,7 +43,7 @@
 
 namespace pdfi
 {
-    typedef ::cppu::WeakComponentImplHelper2< 
+    typedef ::cppu::WeakComponentImplHelper2<
         com::sun::star::document::XFilter,
         com::sun::star::document::XImporter > PDFIHybridAdaptorBase;
 
@@ -51,13 +51,13 @@ namespace pdfi
 							  public PDFIHybridAdaptorBase
     {
     private:
-        com::sun::star::uno::Reference< 
+        com::sun::star::uno::Reference<
             com::sun::star::uno::XComponentContext >  m_xContext;
-        com::sun::star::uno::Reference< 
+        com::sun::star::uno::Reference<
             com::sun::star::frame::XModel >           m_xModel;
 
     public:
-        explicit PDFIHybridAdaptor( const ::com::sun::star::uno::Reference< 
+        explicit PDFIHybridAdaptor( const ::com::sun::star::uno::Reference<
                                           ::com::sun::star::uno::XComponentContext >& xContext );
 
         // XFilter
@@ -70,7 +70,7 @@ namespace pdfi
 
     };
 
-    typedef ::cppu::WeakComponentImplHelper2< 
+    typedef ::cppu::WeakComponentImplHelper2<
         com::sun::star::xml::XImportFilter,
         com::sun::star::document::XImporter > PDFIAdaptorBase;
 
@@ -80,9 +80,9 @@ namespace pdfi
                            public PDFIAdaptorBase
     {
     private:
-        com::sun::star::uno::Reference< 
+        com::sun::star::uno::Reference<
             com::sun::star::uno::XComponentContext >  m_xContext;
-        com::sun::star::uno::Reference< 
+        com::sun::star::uno::Reference<
             com::sun::star::frame::XModel >           m_xModel;
         TreeVisitorFactorySharedPtr                   m_pVisitorFactory;
         bool                                          m_bEnableToplevelText;
@@ -91,11 +91,11 @@ namespace pdfi
                     const com::sun::star::uno::Reference<com::sun::star::task::XInteractionHandler>& xIHdl,
                     const rtl::OUString&                                                          rPwd,
                     const com::sun::star::uno::Reference<com::sun::star::task::XStatusIndicator>& xStatus,
-                    const XmlEmitterSharedPtr&                                                    rEmitter, 
+                    const XmlEmitterSharedPtr&                                                    rEmitter,
                     const rtl::OUString&                                                          rURL );
-    
+
     public:
-        explicit PDFIRawAdaptor( const ::com::sun::star::uno::Reference< 
+        explicit PDFIRawAdaptor( const ::com::sun::star::uno::Reference<
                                        ::com::sun::star::uno::XComponentContext >& xContext );
 
         /** Set factory object used to create the tree visitors
@@ -109,7 +109,7 @@ namespace pdfi
         void enableToplevelText() { m_bEnableToplevelText=true; }
 
         /** Export pdf document to ODG
-            
+
             @param xOutput
             Stream to write the flat xml file to
 
@@ -123,7 +123,7 @@ namespace pdfi
         // XImportFilter
         virtual sal_Bool SAL_CALL importer( const com::sun::star::uno::Sequence< com::sun::star::beans::PropertyValue >& rSourceData,
                                             const com::sun::star::uno::Reference< com::sun::star::xml::sax::XDocumentHandler >& rHdl,
-                                            const com::sun::star::uno::Sequence< rtl::OUString >& rUserData ) throw( com::sun::star::uno::RuntimeException );    
+                                            const com::sun::star::uno::Sequence< rtl::OUString >& rUserData ) throw( com::sun::star::uno::RuntimeException );
 
         // XImporter
         virtual void SAL_CALL setTargetDocument( const com::sun::star::uno::Reference< com::sun::star::lang::XComponent >& xDocument )

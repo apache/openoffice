@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -93,7 +93,7 @@ private:
 	HelpButton			maHelpBtn;
 
     ::rtl::OUString m_sODFVersion;
-    //Signals if the document contains already a document signature. This is only 
+    //Signals if the document contains already a document signature. This is only
     //importent when we are signing macros and if the value is true.
     bool m_bHasDocumentSignature;
     bool m_bWarningShowSignMacro;
@@ -111,7 +111,7 @@ private:
     void                ImplShowSignaturesDetails();
 	SignatureStreamHelper ImplOpenSignatureStream( sal_Int32 eStreamMode, bool bTempStream );
 
-    //Checks if adding is allowed. 
+    //Checks if adding is allowed.
     //See the spec at specs/www/appwide/security/Electronic_Signatures_and_Security.sxw
     //(6.6.2)Behaviour with regard to ODF 1.2
     bool canAdd();
@@ -123,8 +123,8 @@ private:
     bool canAddRemove();
 
 public:
-	DigitalSignaturesDialog( Window* pParent, cssu::Reference< 
-        cssu::XComponentContext >& rxCtx, DocumentSignatureMode eMode, 
+	DigitalSignaturesDialog( Window* pParent, cssu::Reference<
+        cssu::XComponentContext >& rxCtx, DocumentSignatureMode eMode,
         sal_Bool bReadOnly, const ::rtl::OUString& sODFVersion, bool bHasDocumentSignature);
 	~DigitalSignaturesDialog();
 

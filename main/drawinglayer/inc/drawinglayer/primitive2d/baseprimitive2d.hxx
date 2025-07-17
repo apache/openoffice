@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -69,23 +69,23 @@ namespace drawinglayer
 
             Baseclass for all C++ implementations of com::sun::star::graphic::XPrimitive2D
 
-            This class is strongly virtual due to the lack of getPrimitiveID() implementation. 
-            This is by purpose, this base class shall not be incarnated and be used directly as 
+            This class is strongly virtual due to the lack of getPrimitiveID() implementation.
+            This is by purpose, this base class shall not be incarnated and be used directly as
             a XPrimitive2D.
 
             Is is derived from boost::noncopyable to make clear that a primitive is a read-only
-            instance and copying or changing values is not intended. The idea is to hold all data 
+            instance and copying or changing values is not intended. The idea is to hold all data
             needed for visualisation of this primitive in unchangeable form.
 
-            It is derived from comphelper::OBaseMutex to have a Mutex at hand; in a base 
+            It is derived from comphelper::OBaseMutex to have a Mutex at hand; in a base
             implementation this may not be needed, but e.g. when buffering at last decomposition
             in a local member, multiple threads may try to decompose at the same time, so locking
             is needed to avoid race conditions seen from the UNO object implementation.
 
-            A method to get a simplified representation is provided by get2DDecomposition. The 
-            default implementation returns an empty sequence. The idea is that processors 
-            using this primitive and do not know it, may get the decomposition and process 
-            these instead. An example is e.g. a fat line, who's decomposition may contain 
+            A method to get a simplified representation is provided by get2DDecomposition. The
+            default implementation returns an empty sequence. The idea is that processors
+            using this primitive and do not know it, may get the decomposition and process
+            these instead. An example is e.g. a fat line, who's decomposition may contain
             the geometric representation of that line using filled polygon prmimitives. When
             the renderer knows how to handle fat lines, he may process this primitive directly;
             if not he can use the decomposition. With this functionality, renderers may operate by
@@ -109,12 +109,12 @@ namespace drawinglayer
 
             All other implemented primitives have a defined decomposition and can thus be
             decomposed down to this small set.
-            
-            A renderer implementing support for this minimal set of primitives can completely 
+
+            A renderer implementing support for this minimal set of primitives can completely
             render primitive-based visualisations. Of course, he also has to take states into account
             which are representated by GroupPrimitive2D derivations, see groupprimitive2d.hxx
 
-            To support getting the geometric BoundRect, getB2DRange is used. The default 
+            To support getting the geometric BoundRect, getB2DRange is used. The default
             implementation will use the get2DDecomposition result and merge a range from the
             entries. Thus, an implementation is only necessary for the Basic Primitives, but
             of course speedups are possible (and are used) by implementing the method at higher-level
@@ -131,7 +131,7 @@ namespace drawinglayer
             the appropriate C++ implementation class ViewInformation2D.
 
             This base class does not implement any buffering; e.g. buffering the decomposition
-            and/or the range. These may be buffered anytime since the definition is that the primitive 
+            and/or the range. These may be buffered anytime since the definition is that the primitive
             is read-only and thus unchangeable. This implies that the decomposition and/or getting
             the range will lead to the same result as last time, under the precondition that
             the parameter ViewInformation2D is the same as the last one. This is usually the case
@@ -195,7 +195,7 @@ namespace drawinglayer
 	namespace primitive2d
 	{
         /** BufferedDecompositionPrimitive2D class
-        
+
             Baseclass for all C++ implementations of com::sun::star::graphic::XPrimitive2D
             which want to buffer the decomposition result
 
@@ -207,15 +207,15 @@ namespace drawinglayer
             if maBuffered2DDecomposition is empty. If yes, it uses create2DDecomposition
             to create the content. In all cases, maBuffered2DDecomposition is returned.
 
-            For view-dependent primitives derived from Primitive2DBufferDecomposition more needs 
+            For view-dependent primitives derived from Primitive2DBufferDecomposition more needs
             to be done when the decomposition depends on parts of the parameter ViewInformation2D.
             This defines a standard method for processing these:
 
             Implement a view-dependent get2DDecomposition doing te following steps:
             (a) Locally extract needed parameters from ViewInformation2D to new, local parameters
                 (this may be a complete local copy of ViewInformation2D)
-            (b) If a buffered decomposition exists, ckeck if one of the new local parameters 
-                differs from the corresponding locally remembered (as member) ones. If yes, 
+            (b) If a buffered decomposition exists, ckeck if one of the new local parameters
+                differs from the corresponding locally remembered (as member) ones. If yes,
                 clear maBuffered2DDecomposition
             (d) call baseclass::get2DDecomposition which will use create2DDecomposition
                 to fill maBuffered2DDecomposition if it's empty
@@ -247,10 +247,10 @@ namespace drawinglayer
 			// constructor/destructor
 			BufferedDecompositionPrimitive2D();
 
-			/** The getDecomposition default implementation will on demand use create2DDecomposition() if 
-                maBuffered2DDecomposition is empty. It will set maBuffered2DDecomposition to this obtained decomposition 
-                to buffer it. If the decomposition is also ViewInformation2D-dependent, this method needs to be 
-                overloaded and the ViewInformation2D for the last decomposition need to be remembered, too, and 
+			/** The getDecomposition default implementation will on demand use create2DDecomposition() if
+                maBuffered2DDecomposition is empty. It will set maBuffered2DDecomposition to this obtained decomposition
+                to buffer it. If the decomposition is also ViewInformation2D-dependent, this method needs to be
+                overloaded and the ViewInformation2D for the last decomposition need to be remembered, too, and
                 be used in the next call to decide if the buffered decomposition may be reused or not.
              */
 			virtual Primitive2DSequence get2DDecomposition(const geometry::ViewInformation2D& rViewInformation) const;

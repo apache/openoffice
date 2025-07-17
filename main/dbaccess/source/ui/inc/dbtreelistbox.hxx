@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -72,7 +72,7 @@ namespace dbaui
 		Link						m_aEditingHandler;		// called before someone will edit an entry
 		Link						m_aEditedHandler;		// called after someone edited an entry
 		Link						m_aEnterKeyHdl;
-		
+
 
 		sal_Bool					m_bHandleEnterKey;
 
@@ -89,11 +89,11 @@ namespace dbaui
 	public:
 		DBTreeListBox( Window* pParent
 			,const ::com::sun::star::uno::Reference< ::com::sun::star::lang::XMultiServiceFactory >& _rxORB
-			,WinBits nWinStyle=0 
+			,WinBits nWinStyle=0
 			,sal_Bool _bHandleEnterKey = sal_False);
 		DBTreeListBox( Window* pParent
-			,const ::com::sun::star::uno::Reference< ::com::sun::star::lang::XMultiServiceFactory >& _rxORB			
-			,const ResId& rResId 
+			,const ::com::sun::star::uno::Reference< ::com::sun::star::lang::XMultiServiceFactory >& _rxORB
+			,const ResId& rResId
 			,sal_Bool _bHandleEnterKey = sal_False);
 		~DBTreeListBox();
 
@@ -101,7 +101,7 @@ namespace dbaui
 		void			        setContextMenuProvider( IContextMenuProvider* _pContextMenuProvider ) { m_pContextMenuProvider = _pContextMenuProvider; }
 
 		inline void setORB(const ::com::sun::star::uno::Reference< ::com::sun::star::lang::XMultiServiceFactory >& _xORB) { m_xORB = _xORB; }
-		
+
 
 		void	SetPreExpandHandler(const Link& _rHdl)  { m_aPreExpandHandler = _rHdl; }
         void    SetSelChangeHdl( const Link& _rHdl )    { m_aSelChangeHdl = _rHdl; }

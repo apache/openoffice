@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -67,7 +67,7 @@ public:
     ::rtl::OUString sStyleName1;
     PropertyMapPtr  pProperties;
     ::rtl::OUString sConvertedStyleName;
-    
+
     StyleSheetEntry();
     virtual ~StyleSheetEntry();
 };
@@ -110,12 +110,12 @@ private:
 
     void resolveAttributeProperties(Value & val);
     void resolveSprmProps(Sprm & sprm_);
-    void applyDefaults(bool bParaProperties); 
+    void applyDefaults(bool bParaProperties);
 };
 typedef boost::shared_ptr< StyleSheetTable >    StyleSheetTablePtr;
 
 
-class WRITERFILTER_DLLPRIVATE TableStyleSheetEntry : 
+class WRITERFILTER_DLLPRIVATE TableStyleSheetEntry :
     public StyleSheetEntry
 {
 private:
@@ -133,20 +133,20 @@ public:
     // fixes some possible properties conflicts, like borders ones.
     void AddTblStylePr( TblStyleType nType, PropertyMapPtr pProps );
 
-    // Gets all the properties 
+    // Gets all the properties
     //     + corresponding to the mask,
     //     + from the parent styles
-    // 
+    //
     // @param mask      mask describing which properties to return
     // @param pStack    already processed StyleSheetEntries
     PropertyMapPtr GetProperties( sal_Int32 nMask, StyleSheetEntryDequePtr pStack = StyleSheetEntryDequePtr());
-    
+
     TableStyleSheetEntry( StyleSheetEntry& aEntry, StyleSheetTable* pStyles );
     virtual ~TableStyleSheetEntry( );
 
 protected:
     PropertyMapPtr GetLocalPropertiesFromMask( const sal_Int32 nMask );
-    void           MergePropertiesFromMask(const short nBit, const sal_Int32 nMask, 
+    void           MergePropertiesFromMask(const short nBit, const sal_Int32 nMask,
                                            const TblStyleType nStyleId, PropertyMapPtr pToFill);
 };
 typedef boost::shared_ptr<TableStyleSheetEntry> TableStyleSheetEntryPtr;

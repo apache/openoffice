@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -52,7 +52,7 @@ namespace canvas
     	events are later grouped by connected areas (i.e. all sprites
     	that somehow overlap over a rectangular area are grouped
     	together); the forEachSpriteArea() method calls the passed
-    	functor for each of those connected areas. 
+    	functor for each of those connected areas.
 
         Note that, although this class generally works with IEEE
         doubles, the calculation of connected areas happens in the
@@ -61,7 +61,7 @@ namespace canvas
         artifacts. Therefore, sprites that touch the same pixel (but
         don't necessarily have the same floating point coordinates
         there) will reside in a common sprite area and handled
-        together in the forEachSpriteArea functor call. 
+        together in the forEachSpriteArea functor call.
      */
     class CANVASTOOLS_DLLPUBLIC SpriteRedrawManager : private ::boost::noncopyable
     {
@@ -160,7 +160,7 @@ namespace canvas
             {
             }
 
-            SpriteChangeRecord( const Sprite::Reference&	rSprite, 
+            SpriteChangeRecord( const Sprite::Reference&	rSprite,
                                 const ::basegfx::B2DPoint& 	rOldPos,
                                 const ::basegfx::B2DPoint& 	rNewPos,
                                 const ::basegfx::B2DVector&	rSpriteSize ) :
@@ -174,7 +174,7 @@ namespace canvas
             {
             }
 
-            SpriteChangeRecord( const Sprite::Reference&	rSprite, 
+            SpriteChangeRecord( const Sprite::Reference&	rSprite,
                                 const ::basegfx::B2DPoint& 	rPos,
                                 const ::basegfx::B2DRange& 	rUpdateArea ) :
                 meChangeType( update ),
@@ -259,7 +259,7 @@ namespace canvas
 
             setupUpdateAreas( aUpdateAreas );
 
-            aUpdateAreas.forEachAggregate( 
+            aUpdateAreas.forEachAggregate(
                 AreaUpdateCaller< Functor >( rFunc, *this ) );
         }
 
@@ -285,11 +285,11 @@ namespace canvas
         // SpriteSurface interface, is delegated to e.g. from SpriteCanvas
         void showSprite( const Sprite::Reference& rSprite );
         void hideSprite( const Sprite::Reference& rSprite );
-        void moveSprite( const Sprite::Reference&		rSprite, 
+        void moveSprite( const Sprite::Reference&		rSprite,
                          const ::basegfx::B2DPoint& 	rOldPos,
                          const ::basegfx::B2DPoint&		rNewPos,
                          const ::basegfx::B2DVector& 	rSpriteSize );
-        void updateSprite( const Sprite::Reference& 	rSprite, 
+        void updateSprite( const Sprite::Reference& 	rSprite,
                            const ::basegfx::B2DPoint& 	rPos,
                            const ::basegfx::B2DRange&	rUpdateArea );
 
@@ -323,7 +323,7 @@ namespace canvas
                     // cache number of sprites in this area (it's a
                     // list, and both isAreaUpdateScroll() and
                     // isAreaUpdateOpaque() need it).
-                    const ::std::size_t nNumSprites( 
+                    const ::std::size_t nNumSprites(
                         rUpdateArea.maComponentList.size() );
 
                     if( isAreaUpdateScroll( aMoveStart,
@@ -331,15 +331,15 @@ namespace canvas
                                             rUpdateArea,
                                             nNumSprites ) )
                     {
-                        rFunc.scrollUpdate( aMoveStart, 
+                        rFunc.scrollUpdate( aMoveStart,
                                             aMoveEnd,
                                             rUpdateArea );
                     }
-                    else 
+                    else
                     {
-                        // potentially, more than a single sprite   
-                        // involved. Have to sort component lists for   
-                        // sprite prio. 
+                        // potentially, more than a single sprite
+                        // involved. Have to sort component lists for
+                        // sprite prio.
                         VectorOfSprites aSortedUpdateSprites;
                         SpriteConnectedRanges::ComponentListType::const_iterator aCurr(
                             rUpdateArea.maComponentList.begin() );
@@ -357,12 +357,12 @@ namespace canvas
                         ::std::sort( aSortedUpdateSprites.begin(),
                                      aSortedUpdateSprites.end(),
                                      SpriteComparator() );
-                        
+
                         if( isAreaUpdateOpaque( rUpdateArea,
                                                 nNumSprites ) )
                         {
                             rFunc.opaqueUpdate( rUpdateArea.maTotalBounds,
-                                                aSortedUpdateSprites );                    
+                                                aSortedUpdateSprites );
                         }
                         else
                         {
@@ -382,7 +382,7 @@ namespace canvas
 
         bool areSpritesChanged( const UpdateArea& rUpdateArea ) const;
 
-        bool isAreaUpdateNotOpaque( const ::basegfx::B2DRange&	rUpdateRect, 
+        bool isAreaUpdateNotOpaque( const ::basegfx::B2DRange&	rUpdateRect,
                                     const AreaComponent&		rComponent ) const;
 
         bool isAreaUpdateOpaque( const UpdateArea&	rUpdateArea,

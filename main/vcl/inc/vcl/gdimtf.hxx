@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -170,11 +170,11 @@ public:
     Rectangle       GetBoundRect( OutputDevice& i_rReference, Rectangle* pHairline = 0 ) const;
 
 	void			Adjust( short nLuminancePercent = 0, short nContrastPercent = 0,
-							short nChannelRPercent = 0, short nChannelGPercent = 0, 
+							short nChannelRPercent = 0, short nChannelGPercent = 0,
 							short nChannelBPercent = 0, double fGamma = 1.0, sal_Bool bInvert = sal_False );
 	void			Convert( MtfConversion eConversion );
     void			ReplaceColors( const Color& rSearchColor, const Color& rReplaceColor, sal_uLong nTol = 0 );
-    void			ReplaceColors( const Color* pSearchColors, const Color* rReplaceColors, 
+    void			ReplaceColors( const Color* pSearchColors, const Color* rReplaceColors,
 								   sal_uLong nColorCount, sal_uLong* pTols = NULL );
 
     GDIMetaFile     GetMonochromeMtf( const Color& rCol ) const;

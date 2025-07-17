@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 #ifndef INCLUDED_DRAWINGLAYER_PRIMITIVE2D_TRANSPARENCEPRIMITIVE2D_HXX
@@ -36,7 +36,7 @@ namespace drawinglayer
             This is the basic primitive for applying freely defined transparence
             to freely defined content. The basic idea is to associate a content
             which is defined as a sequence of primitives and hold as child content
-            in the GroupPrimitive2D with a transparence channel also defined as a sequence 
+            in the GroupPrimitive2D with a transparence channel also defined as a sequence
             of primitives and hold in the transparence member.
 
             The basic definition is to use the transparence content as transparence-Mask by
@@ -45,7 +45,7 @@ namespace drawinglayer
 
             The defining geometry is the Range of the child primitive sequence,
             this means the renderers will/shall use this geometric information for
-            rendering, not the transparent one. The transparent one should/will be clipped 
+            rendering, not the transparent one. The transparent one should/will be clipped
             accordingly.
          */
 		class DRAWINGLAYER_DLLPUBLIC TransparencePrimitive2D : public GroupPrimitive2D
@@ -67,7 +67,7 @@ namespace drawinglayer
                 using the common RGB_to_luminance definitions
              */
 			TransparencePrimitive2D(
-				const Primitive2DSequence& rChildren, 
+				const Primitive2DSequence& rChildren,
 				const Primitive2DSequence& rTransparence);
 
 			/// data read access

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -36,13 +36,13 @@
 #ifndef _COM_SUN_STAR_FRAME_XDISPATCH_HPP_
 #include <com/sun/star/frame/XDispatch.hpp>
 #endif
-#ifndef _COM_SUN_STAR_LANG_XCOMPONENT_HPP_ 
+#ifndef _COM_SUN_STAR_LANG_XCOMPONENT_HPP_
 #include <com/sun/star/lang/XComponent.hpp>
 #endif
 #ifndef _COM_SUN_STAR_LANG_XMULTISERVICEFACTORY_HPP_
 #include <com/sun/star/lang/XMultiServiceFactory.hpp>
 #endif
-#ifndef _COM_SUN_STAR_FRAME_XCOMPONENTLOADER_HPP_ 
+#ifndef _COM_SUN_STAR_FRAME_XCOMPONENTLOADER_HPP_
 #include <com/sun/star/frame/XComponentLoader.hpp>
 #endif
 #ifndef _COM_SUN_STAR_FRAME_XFRAME_HPP_
@@ -136,7 +136,7 @@ namespace dbaui
 
         /** sets the target frame into which the view should be loaded.
 
-            By default, the view is loaded into a top-level frame not being part of the 
+            By default, the view is loaded into a top-level frame not being part of the
             Desktop.
         */
         void setTargetFrame( const ::com::sun::star::uno::Reference< ::com::sun::star::frame::XFrame >& _rxFrame )
@@ -250,7 +250,7 @@ namespace dbaui
 		virtual void fillDispatchArgs(
 			      ::comphelper::NamedValueCollection& i_rDispatchArgs,
 			const ::com::sun::star::uno::Any& _aDataSource,
-			const ::rtl::OUString& _rQualifiedName 
+			const ::rtl::OUString& _rQualifiedName
 		);
 
 	public:

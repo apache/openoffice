@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,22 +7,22 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
 
-#ifndef _GOODIES_RENDERER_HXX 
-#define _GOODIES_RENDERER_HXX 
+#ifndef _GOODIES_RENDERER_HXX
+#define _GOODIES_RENDERER_HXX
 
 #include <tools/gen.hxx>
 #include <comphelper/propertysethelper.hxx>
@@ -49,13 +49,13 @@ class GraphicRendererVCL : public ::cppu::OWeakAggObject,
 						   public ::com::sun::star::graphic::XGraphicRenderer
 {
 public:
-		
+
 	GraphicRendererVCL();
 	~GraphicRendererVCL() throw();
 
     static ::rtl::OUString getImplementationName_Static() throw();
     static ::com::sun::star::uno::Sequence< ::rtl::OUString >  getSupportedServiceNames_Static() throw();
-		
+
 protected:
 
 	static ::comphelper::PropertySetInfo* createPropertySetInfo();
@@ -65,7 +65,7 @@ protected:
 	virtual ::com::sun::star::uno::Any SAL_CALL queryInterface( const ::com::sun::star::uno::Type & rType ) throw(::com::sun::star::uno::RuntimeException);
 	virtual void SAL_CALL acquire() throw();
 	virtual void SAL_CALL release() throw();
-	
+
 	// XServiceInfo
     virtual rtl::OUString SAL_CALL getImplementationName() throw( ::com::sun::star::uno::RuntimeException );
     virtual sal_Bool SAL_CALL supportsService( const rtl::OUString& ServiceName ) throw( ::com::sun::star::uno::RuntimeException );
@@ -78,14 +78,14 @@ protected:
 	// PropertySetHelper
 	virtual void _setPropertyValues( const comphelper::PropertyMapEntry** ppEntries, const ::com::sun::star::uno::Any* pValues ) throw(::com::sun::star::beans::UnknownPropertyException, ::com::sun::star::beans::PropertyVetoException, ::com::sun::star::lang::IllegalArgumentException, ::com::sun::star::lang::WrappedTargetException );
 	virtual void _getPropertyValues( const comphelper::PropertyMapEntry** ppEntries, ::com::sun::star::uno::Any* pValue ) throw(::com::sun::star::beans::UnknownPropertyException, ::com::sun::star::lang::WrappedTargetException );
-		
+
 	// XGraphicRenderer
     virtual void SAL_CALL render( const ::com::sun::star::uno::Reference< ::com::sun::star::graphic::XGraphic >& Graphic ) throw (::com::sun::star::uno::RuntimeException);
 
 private:
 
 	::com::sun::star::uno::Reference< ::com::sun::star::awt::XDevice > mxDevice;
-	
+
 	OutputDevice*				mpOutDev;
 	Rectangle					maDestRect;
 	::com::sun::star::uno::Any	maRenderData;
@@ -93,4 +93,4 @@ private:
 
 }
 
-#endif 
+#endif

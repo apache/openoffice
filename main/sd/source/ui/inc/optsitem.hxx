@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -71,7 +71,7 @@ private:
 
 	const SdOptionsGeneric&	mrParent;
 
-	
+
 public:
 
 	SdOptionsItem( const SdOptionsGeneric& rParent, const ::rtl::OUString rSubTree );
@@ -80,7 +80,7 @@ public:
 	virtual void			Commit();
     virtual void            Notify( const com::sun::star::uno::Sequence<rtl::OUString>& aPropertyNames);
 
-	::com::sun::star::uno::Sequence< ::com::sun::star::uno::Any > GetProperties( 
+	::com::sun::star::uno::Sequence< ::com::sun::star::uno::Any > GetProperties(
 								const ::com::sun::star::uno::Sequence< ::rtl::OUString >& rNames );
 	sal_Bool                PutProperties( const com::sun::star::uno::Sequence< rtl::OUString >& rNames,
 										   const com::sun::star::uno::Sequence< com::sun::star::uno::Any>& rValues );
@@ -106,13 +106,13 @@ private:
 	SD_DLLPRIVATE void Commit( SdOptionsItem& rCfgItem ) const;
 	SD_DLLPRIVATE ::com::sun::star::uno::Sequence< ::rtl::OUString > GetPropertyNames() const;
 
-protected:					
-							
+protected:
+
 	void					Init() const;
 	void					OptionsChanged() { if( mpCfgItem && mbEnableModify ) mpCfgItem->SetModified(); }
 
 protected:
-	
+
 	virtual void			GetPropNameArray( const char**& ppNames, sal_uLong& rCount ) const = 0;
 	virtual sal_Bool			ReadData( const ::com::sun::star::uno::Any* pValues ) = 0;
 	virtual sal_Bool			WriteData( ::com::sun::star::uno::Any* pValues ) const = 0;
@@ -180,16 +180,16 @@ public:
 
 // -----------------------------------------------------------------------------
 
-class SD_DLLPUBLIC SdOptionsLayoutItem : public SfxPoolItem 
+class SD_DLLPUBLIC SdOptionsLayoutItem : public SfxPoolItem
 {
 public:
-							
+
 							SdOptionsLayoutItem( sal_uInt16 nWhich);
 							SdOptionsLayoutItem( sal_uInt16 nWhich, SdOptions* pOpts, ::sd::FrameView* pView = NULL );
 
 	virtual SfxPoolItem*	Clone( SfxItemPool *pPool = 0 ) const;
 	virtual int 			operator==( const SfxPoolItem& ) const;
-	
+
 	void					SetOptions( SdOptions* pOpts ) const;
 
 	SdOptionsLayout&		GetOptionsLayout() { return maOptionsLayout; }
@@ -228,7 +228,7 @@ public:
 
 	virtual SfxPoolItem*	Clone( SfxItemPool *pPool = 0 ) const;
 	virtual int 			operator==( const SfxPoolItem& ) const;
-	
+
 	void					SetOptions( SdOptions* pOpts ) const;
 
 	SdOptionsContents&		GetOptionsContents() { return maOptionsContents; }
@@ -257,7 +257,7 @@ private:
 	sal_Bool	bDragWithCopy			: 1;	// Misc/CopyWhileMoving
 	sal_Bool	bPickThrough			: 1;	// Misc/TextObject/Selectable
 	sal_Bool	bBigHandles 			: 1;	// Misc/BigHandles
-	sal_Bool	bDoubleClickTextEdit	: 1;	// Misc/DclickTextedit	
+	sal_Bool	bDoubleClickTextEdit	: 1;	// Misc/DclickTextedit
 	sal_Bool	bClickChangeRotation	: 1;	// Misc/RotateClick
 	sal_Bool	bStartWithActualPage	: 1;	// Misc/Start/CurrentPage
     sal_Bool    bStartWithPresenterScreen : 1;  // Misc/Start/PresenterScreen
@@ -269,7 +269,7 @@ private:
 	// #i75315#
 	sal_Bool	bSlideshowRespectZOrder	: 1;	// Misc/SlideshowRespectZOrder
     sal_Bool    bShowComments           : 1;    // Misc/ShowComments
-    
+
 	sal_Bool	bPreviewNewEffects;
 	sal_Bool	bPreviewChangedEffects;
 	sal_Bool	bPreviewTransitions;
@@ -316,9 +316,9 @@ public:
 	sal_Bool	IsSolidDragging() const { Init(); return (sal_Bool) bSolidDragging; }
 	sal_Bool	IsSolidMarkHdl() const { Init(); return (sal_Bool) bSolidMarkHdl; }
 	sal_Bool	IsSummationOfParagraphs() const { Init(); return bSummationOfParagraphs != 0; };
-	
+
     /** Return the currently selected printer independent layout mode.
-        @return 
+        @return
             Returns 1 for printer independent layout enabled and 0 when it
             is disabled.  Other values are reserved for future use.
     */
@@ -358,7 +358,7 @@ public:
     void    SetStartWithPresenterScreen( sal_Bool bOn = sal_True ) { if( bStartWithPresenterScreen != bOn ) { OptionsChanged(); bStartWithPresenterScreen = bOn; } }
 	void	SetSummationOfParagraphs( sal_Bool bOn = sal_True ){ if ( bOn != bSummationOfParagraphs ) { OptionsChanged(); bSummationOfParagraphs = bOn; } }
     /** Set the printer independent layout mode.
-        @param nOn 
+        @param nOn
             The default value is to switch printer independent layout on,
             hence the parameters name.  Use 0 for turning it off.  Other
             values are reserved for future use.
@@ -392,7 +392,7 @@ public:
 
 	virtual SfxPoolItem*	Clone( SfxItemPool *pPool = 0 ) const;
 	virtual int 			operator==( const SfxPoolItem& ) const;
-	
+
 	void					SetOptions( SdOptions* pOpts ) const;
 
 	SdOptionsMisc&			GetOptionsMisc() { return maOptionsMisc; }
@@ -427,7 +427,7 @@ protected:
 	virtual sal_Bool WriteData( ::com::sun::star::uno::Any* pValues ) const;
 
 public:
-			
+
 			SdOptionsSnap( sal_uInt16 nConfigId, sal_Bool bUseConfig );
 			virtual ~SdOptionsSnap() {}
 
@@ -467,7 +467,7 @@ public:
 
 	virtual SfxPoolItem*	Clone( SfxItemPool *pPool = 0 ) const;
 	virtual int 			operator==( const SfxPoolItem& ) const;
-	
+
 	void					SetOptions( SdOptions* pOpts ) const;
 
 	SdOptionsSnap&			GetOptionsSnap() { return maOptionsSnap; }
@@ -493,7 +493,7 @@ protected:
 	virtual sal_Bool WriteData( ::com::sun::star::uno::Any* pValues ) const;
 
 public:
-	
+
 			SdOptionsZoom( sal_uInt16 nConfigId, sal_Bool bUseConfig );
 			virtual ~SdOptionsZoom() {}
 
@@ -527,14 +527,14 @@ public:
 
 	sal_uInt32	GetFldDrawX() const { Init(); return SvxOptionsGrid::GetFldDrawX(); }
 	sal_uInt32 	GetFldDivisionX() const { Init(); return SvxOptionsGrid::GetFldDivisionX(); }
-	sal_uInt32	GetFldDrawY() const { Init(); return SvxOptionsGrid::GetFldDrawY(); } 
+	sal_uInt32	GetFldDrawY() const { Init(); return SvxOptionsGrid::GetFldDrawY(); }
 	sal_uInt32 	GetFldDivisionY() const { Init(); return SvxOptionsGrid::GetFldDivisionY(); }
-	sal_uInt32	GetFldSnapX() const { Init(); return SvxOptionsGrid::GetFldSnapX(); } 
-	sal_uInt32	GetFldSnapY() const { Init(); return SvxOptionsGrid::GetFldSnapY();	} 
-	sal_Bool	IsUseGridSnap() const { Init(); return SvxOptionsGrid::GetUseGridSnap(); } 
-	sal_Bool	IsSynchronize() const { Init(); return SvxOptionsGrid::GetSynchronize(); } 
-	sal_Bool	IsGridVisible() const { Init(); return SvxOptionsGrid::GetGridVisible(); } 
-	sal_Bool	IsEqualGrid() const { Init(); return SvxOptionsGrid::GetEqualGrid(); } 
+	sal_uInt32	GetFldSnapX() const { Init(); return SvxOptionsGrid::GetFldSnapX(); }
+	sal_uInt32	GetFldSnapY() const { Init(); return SvxOptionsGrid::GetFldSnapY();	}
+	sal_Bool	IsUseGridSnap() const { Init(); return SvxOptionsGrid::GetUseGridSnap(); }
+	sal_Bool	IsSynchronize() const { Init(); return SvxOptionsGrid::GetSynchronize(); }
+	sal_Bool	IsGridVisible() const { Init(); return SvxOptionsGrid::GetGridVisible(); }
+	sal_Bool	IsEqualGrid() const { Init(); return SvxOptionsGrid::GetEqualGrid(); }
 
 	void 	SetFldDrawX( sal_uInt32 nSet ) { if( nSet != SvxOptionsGrid::GetFldDrawX() ) { OptionsChanged(); SvxOptionsGrid::SetFldDrawX( nSet ); } }
 	void 	SetFldDivisionX( sal_uInt32 nSet ) { if( nSet != SvxOptionsGrid::GetFldDivisionX() ) { OptionsChanged(); SvxOptionsGrid::SetFldDivisionX( nSet ); } }
@@ -596,7 +596,7 @@ protected:
 	virtual sal_Bool WriteData( ::com::sun::star::uno::Any* pValues ) const;
 
 public:
-	
+
 			SdOptionsPrint( sal_uInt16 nConfigId, sal_Bool bUseConfig );
 			virtual ~SdOptionsPrint() {}
 
@@ -652,13 +652,13 @@ public:
 class SD_DLLPUBLIC SdOptionsPrintItem : public SfxPoolItem
 {
 public:
-						
+
 							SdOptionsPrintItem( sal_uInt16 nWhich);
 							SdOptionsPrintItem( sal_uInt16 nWhich, SdOptions* pOpts, ::sd::FrameView* pView = NULL );
 
 	virtual SfxPoolItem*	Clone( SfxItemPool *pPool = 0 ) const;
 	virtual int 			operator==( const SfxPoolItem& ) const;
-	
+
 	void					SetOptions( SdOptions* pOpts ) const;
 
 	SdOptionsPrint&			GetOptionsPrint() { return maOptionsPrint; }
@@ -674,10 +674,10 @@ private:
 class SdOptions : public SdOptionsLayout, public SdOptionsContents,
 				  public SdOptionsMisc, public SdOptionsSnap,
 				  public SdOptionsZoom, public SdOptionsGrid,
-				  public SdOptionsPrint 
+				  public SdOptionsPrint
 {
 public:
-					
+
 						SdOptions( sal_uInt16 nConfigId );
 						virtual ~SdOptions();
 
