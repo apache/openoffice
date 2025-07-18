@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -29,14 +29,14 @@
 extern int osl_isSingleCPU;
 
 /* For all Intel x86 above x486 we use a spezial inline assembler implementation.
-   The main reason is that WIN9? does not return the result of the operation. 
-   Instead there is only returned a value greater than zero is the increment 
-   result is greater than zero, but not the result of the addition. 
-   For Windows NT the native function could be used, because the correct result 
+   The main reason is that WIN9? does not return the result of the operation.
+   Instead there is only returned a value greater than zero is the increment
+   result is greater than zero, but not the result of the addition.
+   For Windows NT the native function could be used, because the correct result
    is returned. Because of simpler code maintenance and performace reasons we use
    on every x86-Windows-Platform the inline assembler implementation.
 */
- 
+
 /*****************************************************************************/
 /* osl_incrementInterlockedCount */
 /*****************************************************************************/
@@ -61,7 +61,7 @@ oslInterlockedCount SAL_CALL osl_incrementInterlockedCount(oslInterlockedCount* 
 	);
 }
 #else
-#pragma warning(disable: 4035) 
+#pragma warning(disable: 4035)
 {
     __asm
     {
@@ -78,10 +78,10 @@ oslInterlockedCount SAL_CALL osl_incrementInterlockedCount(oslInterlockedCount* 
         inc         eax
     }
 }
-#pragma warning(default: 4035) 
+#pragma warning(default: 4035)
 #endif
 #else
-#pragma message("WARNING: Using system InterlockedIncrement") 
+#pragma message("WARNING: Using system InterlockedIncrement")
 {
     return (InterlockedIncrement(pCount));
 }
@@ -111,7 +111,7 @@ oslInterlockedCount SAL_CALL osl_decrementInterlockedCount(oslInterlockedCount* 
 	);
 }
 #else
-#pragma warning(disable: 4035) 
+#pragma warning(disable: 4035)
 {
     __asm
     {
@@ -128,10 +128,10 @@ oslInterlockedCount SAL_CALL osl_decrementInterlockedCount(oslInterlockedCount* 
         dec         eax
     }
 }
-#pragma warning(default: 4035) 
+#pragma warning(default: 4035)
 #endif
 #else
-#pragma message("WARNING: Using system InterlockedDecrement") 
+#pragma message("WARNING: Using system InterlockedDecrement")
 {
     return (InterlockedDecrement(pCount));
 }
