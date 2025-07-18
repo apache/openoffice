@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -47,7 +47,7 @@ struct passwd *getpwnam_r(const char* name, struct passwd* s, char* buffer, int 
 		ndir= strlen(res->pw_dir)+1;
 
 		if (nname+npasswd+nclass+ngecos
-				+ndir+strlen(res->pw_shell) < size) 
+				+ndir+strlen(res->pw_shell) < size)
 		{
     		memcpy(s, res, sizeof(struct passwd));
 
@@ -75,11 +75,11 @@ struct passwd *getpwnam_r(const char* name, struct passwd* s, char* buffer, int 
       		s->pw_shell = buffer;
 
    			res = s;
-		} 
-		else 
+		}
+		else
 			res = NULL;
-	}  	
-  	
+	}
+
 	pthread_mutex_unlock(&getrtl_mutex);
 
         return(res);
@@ -211,8 +211,8 @@ struct spwd *getspnam_r(const char *name, struct spwd* s, char* buffer, int size
       		s->sp_pwdp = buffer;
 
    			res = s;
-		} 
-		else 
+		}
+		else
 			res = NULL;
 	}
 
@@ -240,7 +240,7 @@ struct passwd *getpwnam_r(const char* name, struct passwd* s, char* buffer, int 
 		ndir= strlen(res->pw_dir)+1;
 
 		if (nname+npasswd+nage+ncomment+ngecos+ndir
-				+strlen(res->pw_shell) < size) 
+				+strlen(res->pw_shell) < size)
 		{
     		memcpy(s, res, sizeof(struct passwd));
 
@@ -272,11 +272,11 @@ struct passwd *getpwnam_r(const char* name, struct passwd* s, char* buffer, int 
       		s->pw_shell = buffer;
 
    			res = s;
-		} 
-		else 
+		}
+		else
 			res = NULL;
-	}  	
-  	
+	}
+
 	pthread_mutex_unlock(&getrtl_mutex);
 
   	return res;
@@ -306,7 +306,7 @@ struct hostent *gethostbyname_r(const char *name, struct hostent *result,
   	{
 		int nname, naliases, naddr_list, naliasesdata, n;
 		char **p, **parray, *data;
-		
+
 		/* Check buffer size before copying, we want to leave the
 		 * buffers unmodified in case something goes wrong.
 		 *
@@ -324,11 +324,11 @@ struct hostent *gethostbyname_r(const char *name, struct hostent *result,
 
 		for ( p = res->h_addr_list; *p != NULL; p++)
 			naddr_list++;
-			
+
 		if ( nname
 			 + (naliases+1)*sizeof(char*) + naliasesdata
 			 + (naddr_list+1)*sizeof(char*) + naddr_list*res->h_length
-			 <= buflen ) 
+			 <= buflen )
 		{
     		memcpy(result, res, sizeof(struct hostent));
 
@@ -358,7 +358,7 @@ struct hostent *gethostbyname_r(const char *name, struct hostent *result,
 			*parray = NULL;
 
    			res = result;
-		} 
+		}
 		else
 		{
 			errno = ERANGE;
@@ -369,7 +369,7 @@ struct hostent *gethostbyname_r(const char *name, struct hostent *result,
 	{
 		*h_errnop = h_errno;
 	}
-  	
+
 	pthread_mutex_unlock(&getrtl_mutex);
 
   	return res;
@@ -388,7 +388,7 @@ int macxp_resolveAlias(char *path, int buflen)
   Boolean bFolder;
   Boolean bAliased;
   char *unprocessedPath = path;
-  
+
   if ( *unprocessedPath == '/' )
     unprocessedPath++;
 
@@ -398,7 +398,7 @@ int macxp_resolveAlias(char *path, int buflen)
       unprocessedPath = strchr( unprocessedPath, '/' );
       if ( unprocessedPath )
 	*unprocessedPath = '\0';
-      
+
       nErr = noErr;
       bFolder = FALSE;
       bAliased = FALSE;
@@ -439,11 +439,11 @@ int macxp_resolveAlias(char *path, int buflen)
 		}
 	    }
 	}
-      
+
       if ( unprocessedPath )
 	*unprocessedPath++ = '/';
     }
-  
+
   return nRet;
 }
 
@@ -474,7 +474,7 @@ pid_t getpid(void)
 {
 	if (pid == -1)
 		savePid();
-	
+
 	return (pid);
 }
 #endif /*  (defined (LINUX) && (GLIBC >= 2)) */
@@ -553,31 +553,31 @@ char *fcvt(double value, int ndigit, int *decpt, int *sign)
   static char ret[256];
   char buf[256],zahl[256],format[256]="%";
   char *v1,*v2;
- 
+
   if (value==0.0) value=1e-30;
-  
+
   if (value<0.0) *sign=1; else *sign=0;
- 
-  if (value<1.0) 
+
+  if (value<1.0)
   {
-    *decpt=(int)log10(value); 
+    *decpt=(int)log10(value);
 	value*=pow(10.0,1-*decpt);
 	ndigit+=*decpt-1;
 	if (ndigit<0) ndigit=0;
   }
-  else 
+  else
   {
     *decpt=(int)log10(value)+1;
   }
-  
+
   sprintf(zahl,"%d",ndigit);
   strcat(format,zahl);
   strcat(format,".");
   strcat(format,zahl);
   strcat(format,"f");
-  
+
   sprintf(buf,format,value);
-  
+
   if (ndigit!=0)
   {
     v1=strtok(buf,".");
@@ -589,7 +589,7 @@ char *fcvt(double value, int ndigit, int *decpt, int *sign)
   {
     strcpy(ret,buf);
   }
-    
+
   return(ret);
 }
 
