@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -64,7 +64,7 @@ sal_Bool SAL_CALL osl_getDateTimeFromTimeValue( TimeValue* pTimeVal, oslDateTime
 	time_t atime;
 
 	atime = (time_t)pTimeVal->Seconds;
-	
+
 	/* Convert time from type time_t to struct tm */
 	pSystemTime = gmtime_r( &atime, &tmBuf );
 
@@ -105,12 +105,12 @@ sal_Bool SAL_CALL osl_getTimeValueFromDateTime( oslDateTime* pDateTime, TimeValu
 
 	if ( pDateTime->Month > 0 )
 		aTime.tm_mon = pDateTime->Month - 1;
-	else 
+	else
 		return sal_False;
 
 	if ( pDateTime->Year >= 1900 )
 		aTime.tm_year = pDateTime->Year - 1900;
-	else 
+	else
 		return sal_False;
 
     aTime.tm_isdst = -1;
@@ -121,14 +121,14 @@ sal_Bool SAL_CALL osl_getTimeValueFromDateTime( oslDateTime* pDateTime, TimeValu
 	nSeconds = mktime( &aTime );
 
     /*
-     * mktime expects the struct tm to be in local timezone, so we have to adjust 
+     * mktime expects the struct tm to be in local timezone, so we have to adjust
      * the returned value to be timezone neutral.
      */
-     
+
 	if ( nSeconds != (time_t) -1 )
 	{
         time_t bias;
-        
+
 		/* timezone corrections */
 		tzset();
 
@@ -143,13 +143,13 @@ sal_Bool SAL_CALL osl_getTimeValueFromDateTime( oslDateTime* pDateTime, TimeValu
         /* exspect daylight saving time to be one hour */
         bias = aTime.tm_isdst > 0 ? timezone - 3600 : timezone;
 #endif
-        
+
         pTimeVal->Seconds = nSeconds;
 		pTimeVal->Nanosec = pDateTime->NanoSeconds;
 
         if ( nSeconds > bias )
 		    pTimeVal->Seconds -= bias;
-           
+
 		return sal_True;
 	}
 
@@ -162,7 +162,7 @@ sal_Bool SAL_CALL osl_getTimeValueFromDateTime( oslDateTime* pDateTime, TimeValu
  *--------------------------------------------------*/
 
 sal_Bool SAL_CALL osl_getLocalTimeFromSystemTime( TimeValue* pSystemTimeVal, TimeValue* pLocalTimeVal )
-{ 
+{
     struct tm *pLocalTime;
     struct tm tmBuf;
     time_t bias;
@@ -174,7 +174,7 @@ sal_Bool SAL_CALL osl_getLocalTimeFromSystemTime( TimeValue* pSystemTimeVal, Tim
 #if defined(STRUCT_TM_HAS_GMTOFF)
     /* members of struct tm are corrected by mktime */
     bias = 0 - pLocalTime->tm_gmtoff;
-       
+
 #elif defined(HAS_ALTZONE)
     /* check if daylight saving time is in effect */
     bias = pLocalTime->tm_isdst > 0 ? altzone : timezone;
@@ -220,7 +220,7 @@ sal_Bool SAL_CALL osl_getSystemTimeFromLocalTime( TimeValue* pLocalTimeVal, Time
 #if defined(STRUCT_TM_HAS_GMTOFF)
     /* members of struct tm are corrected by mktime */
     bias = 0 - pLocalTime->tm_gmtoff;
-       
+
 #elif defined(HAS_ALTZONE)
     /* check if daylight saving time is in effect */
     bias = pLocalTime->tm_isdst > 0 ? altzone : timezone;
@@ -237,7 +237,7 @@ sal_Bool SAL_CALL osl_getSystemTimeFromLocalTime( TimeValue* pLocalTimeVal, Time
 		return sal_True;
 	}
 
-	return sal_False; 
+	return sal_False;
 }
 
 
@@ -256,9 +256,9 @@ sal_uInt32 SAL_CALL osl_getGlobalTimer()
       gettimeofday( &startTime, NULL );
       bGlobalTimer=sal_True;
   }
-  
+
   gettimeofday( &currentTime, NULL );
-  
+
   nSeconds = (sal_uInt32)( currentTime.tv_sec - startTime.tv_sec );
 
   return ( nSeconds * 1000 ) + (long) (( currentTime.tv_usec - startTime.tv_usec) / 1000 );

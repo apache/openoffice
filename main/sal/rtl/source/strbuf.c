@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -38,7 +38,7 @@
  *	rtl_stringbuffer_newFromStr_WithLength
  */
 void SAL_CALL rtl_stringbuffer_newFromStr_WithLength( rtl_String ** newStr,
-													  const sal_Char * value, 
+													  const sal_Char * value,
 													  sal_Int32 count )
 {
 	if (!value)
@@ -50,8 +50,8 @@ void SAL_CALL rtl_stringbuffer_newFromStr_WithLength( rtl_String ** newStr,
 	rtl_string_new_WithLength( newStr, count + 16 );
 	(*newStr)->length = count;
 	rtl_copyMemory( (*newStr)->buffer, value, count );
-	return;	
-}	
+	return;
+}
 
 /*************************************************************************
  *	rtl_stringbuffer_newFromStringBuffer
@@ -71,7 +71,7 @@ sal_Int32 SAL_CALL rtl_stringbuffer_newFromStringBuffer( rtl_String ** newStr,
         rtl_copyMemory( (*newStr)->buffer, oldStr->buffer, oldStr->length );
     }
 	return newCapacity;
-}	
+}
 
 /*************************************************************************
  *	rtl_stringbuffer_ensureCapacity
@@ -79,7 +79,7 @@ sal_Int32 SAL_CALL rtl_stringbuffer_newFromStringBuffer( rtl_String ** newStr,
 void SAL_CALL rtl_stringbuffer_ensureCapacity
 	(rtl_String ** This, sal_Int32* capacity, sal_Int32 minimumCapacity)
 {
-	if (minimumCapacity > *capacity) 
+	if (minimumCapacity > *capacity)
 	{
 		rtl_String * pTmp = *This;
 		rtl_String * pNew = NULL;
@@ -95,15 +95,15 @@ void SAL_CALL rtl_stringbuffer_ensureCapacity
 		rtl_copyMemory( (*This)->buffer, pTmp->buffer, pTmp->length );
 		rtl_string_release( pTmp );
 	}
-}	
+}
 
 /*************************************************************************
  *	rtl_stringbuffer_insert
  */
-void SAL_CALL rtl_stringbuffer_insert( rtl_String ** This, 
+void SAL_CALL rtl_stringbuffer_insert( rtl_String ** This,
 									   sal_Int32 * capacity,
-									   sal_Int32 offset, 
-									   const sal_Char * str, 
+									   sal_Int32 offset,
+									   const sal_Char * str,
 									   sal_Int32 len )
 {
 	sal_Int32 nOldLen;
@@ -113,7 +113,7 @@ void SAL_CALL rtl_stringbuffer_insert( rtl_String ** This,
 	{
 		if (*capacity < (*This)->length + len)
 			rtl_stringbuffer_ensureCapacity( This, capacity, (*This)->length + len );
-		
+
 		/*
 		if( len == 1 )
 			This->buffer
@@ -139,4 +139,4 @@ void SAL_CALL rtl_stringbuffer_insert( rtl_String ** This,
 		(*This)->length = nOldLen + len;
 		pBuf[ nOldLen + len ] = 0;
 	}
-}	
+}
