@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -157,16 +157,16 @@ static oslThread oslCreateThread(oslWorkerFunction pWorker,
     pThreadImpl->m_hmq = 0;
 
     if ( nFlags == sal_True )
-    {    
+    {
 		DosRequestMutexSem( MutexLock, SEM_INDEFINITE_WAIT );
     }
-    
+
     pThreadImpl->m_ThreadId = (TID) _beginthread( oslWorkerWrapperFunction,    /* worker-function */
                                                   NULL,                        /* unused parameter */
                                                   1024*1024,                   /* max. Stacksize */
                                                   pThreadImpl );
     if ( nFlags == sal_True )
-    {    
+    {
         if( pThreadImpl->m_ThreadId != -1 )
             DosSuspendThread( pThreadImpl->m_ThreadId );
 		DosReleaseMutexSem( MutexLock);
@@ -572,7 +572,7 @@ static void AddKeyToList( PTLS pTls )
 
 		pTls->pNext = g_pThreadKeyList;
 		pTls->pPrev = NULL;
-		
+
 		if ( g_pThreadKeyList )
 			g_pThreadKeyList->pPrev = pTls;
 
@@ -604,7 +604,7 @@ static void RemoveKeyFromList( PTLS pTls )
 void SAL_CALL _osl_callThreadKeyCallbackOnThreadDetach(void)
 {
 	PTLS	pTls;
-	
+
     DosRequestMutexSem( MutexLock, SEM_INDEFINITE_WAIT );
 	pTls = g_pThreadKeyList;
 	while ( pTls )
@@ -637,7 +637,7 @@ oslThreadKey SAL_CALL osl_createThreadKey(oslThreadKeyCallbackFunction pCallback
 			rtl_freeMemory( pTls );
 			pTls = NULL;
 		}
-		else 
+		else
 		{
 			*pTls->pulPtr = 0;
 			AddKeyToList( pTls );
@@ -657,7 +657,7 @@ void SAL_CALL osl_destroyThreadKey(oslThreadKey Key)
 		PTLS	pTls = (PTLS)Key;
 
 		RemoveKeyFromList( pTls );
-		DosFreeThreadLocalMemory(pTls->pulPtr);     
+		DosFreeThreadLocalMemory(pTls->pulPtr);
 		rtl_freeMemory( pTls );
 	}
 }
@@ -715,8 +715,8 @@ sal_uInt32 SAL_CALL _GetACP( void)
 	APIRET	rc;
 	ULONG  	aulCpList[8]  = {0};
 	ULONG	ulListSize;
-	
-	rc = DosQueryCp( sizeof( aulCpList), aulCpList, &ulListSize);	
+
+	rc = DosQueryCp( sizeof( aulCpList), aulCpList, &ulListSize);
 	if (rc)
 		return 437;	// in case of error, return codepage EN_US
 	// current codepage is first of list, others are the prepared codepages.
@@ -730,17 +730,17 @@ rtl_TextEncoding SAL_CALL osl_getThreadTextEncoding(void)
 	if ( (ULONG)-1 == g_dwTLSTextEncodingIndex ) {
 		rtl_TextEncoding defaultEncoding;
 		const char *     pszEncoding;
-	
+
 		/* create thread specific data key */
 		g_dwTLSTextEncodingIndex = osl_createThreadKey( NULL);
-	
+
 		/* determine default text encoding */
 		pszEncoding = getenv ("SOLAR_USER_RTL_TEXTENCODING");
 		if (pszEncoding)
 			defaultEncoding = atoi(pszEncoding);
 		else
 			defaultEncoding = rtl_getTextEncodingFromWindowsCodePage( _GetACP());
-	
+
 		//OSL_ASSERT(defaultEncoding != RTL_TEXTENCODING_DONTKNOW);
 		//g_thread.m_textencoding.m_default = defaultEncoding;
 		osl_setThreadKeyData( g_dwTLSTextEncodingIndex, (void*)defaultEncoding);

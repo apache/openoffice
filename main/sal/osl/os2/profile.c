@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -197,7 +197,7 @@ oslProfile SAL_CALL osl_openProfile(rtl_uString *strProfileName, sal_uInt32 Flag
 	osl_TFile*        pFile;
 	osl_TProfileImpl* pProfile;
 	rtl_uString		  *FileName=NULL;
-    
+
 #ifdef TRACE_OSL_PROFILE
     OSL_TRACE("In  osl_openProfile\n");
 #endif
@@ -272,7 +272,7 @@ oslProfile SAL_CALL osl_openProfile(rtl_uString *strProfileName, sal_uInt32 Flag
 
 	if (pProfile->m_pFile == NULL)
 		closeFileImpl(pFile);
-	
+
 #ifdef TRACE_OSL_PROFILE
     OSL_TRACE("Out osl_openProfile [ok]\n");
 #endif
@@ -1156,7 +1156,7 @@ static osl_TFile* openFileImpl(rtl_uString *ustrFileName, oslProfileOption Profi
 
     /* check parameters */
     OSL_ASSERT( ustrFileName );
-	
+
 	rtl_uString2String( &strFileName,
                             rtl_uString_getStr(ustrFileName),
                             rtl_uString_getLength(ustrFileName),
@@ -1172,7 +1172,7 @@ static osl_TFile* openFileImpl(rtl_uString *ustrFileName, oslProfileOption Profi
 #endif
         bWriteable=sal_True;
     }
-        
+
         if (bWriteable)
         {
             flags = FILE_NORMAL | FILE_ARCHIVED;
@@ -1205,7 +1205,7 @@ static osl_TFile* openFileImpl(rtl_uString *ustrFileName, oslProfileOption Profi
         }
 
 	rtl_string_release(strFileName);
-		
+
 	pFile->m_pWriteBuf=NULL;
 	pFile->m_nWriteBufFree=0;
 	pFile->m_nWriteBufLen=0;
@@ -1235,7 +1235,7 @@ static osl_TStamp closeFileImpl(osl_TFile* pFile)
     {
         return stamp;
     }
-        
+
 	if (pFile->m_Handle)
 	{
 		/* mfe: new WriteBuf obsolete */
@@ -1260,7 +1260,7 @@ static osl_TStamp closeFileImpl(osl_TFile* pFile)
 	{
 		free(pFile->m_pWriteBuf);
 	}
-	
+
 	free(pFile);
 
 	return(stamp);
@@ -1286,9 +1286,9 @@ static sal_Bool rewindFile(osl_TFile* pFile, sal_Bool bTruncate)
 		} */
 
 		pFile->m_pReadPtr = pFile->m_ReadBuf + sizeof(pFile->m_ReadBuf);
-		
+
 		DosSetFilePtr(pFile->m_Handle, 0, FILE_BEGIN, &Position);
-		
+
 		if (bTruncate)
 			DosSetFileSize(pFile->m_Handle, 0);
 	}
@@ -1435,7 +1435,7 @@ static sal_Bool putLine(osl_TFile* pFile, const sal_Char *pszLine)
 
 static const sal_Char* stripBlanks(const sal_Char* String, sal_uInt32* pLen)
 {
-	if  ( (pLen != NULL) && ( *pLen != 0 ) ) 
+	if  ( (pLen != NULL) && ( *pLen != 0 ) )
 	{
 		while ((String[*pLen - 1] == ' ') || (String[*pLen - 1] == '\t'))
 			(*pLen)--;
@@ -1477,7 +1477,7 @@ static const sal_Char* addLine(osl_TProfileImpl* pProfile, const sal_Char* Line)
 		}
 
 	}
-	
+
 	pProfile->m_Lines[pProfile->m_NoLines++] = strdup(Line);
 
 	return (pProfile->m_Lines[pProfile->m_NoLines - 1]);
@@ -1522,7 +1522,7 @@ static const sal_Char* insertLine(osl_TProfileImpl* pProfile, const sal_Char* Li
 		for (i = 0; i < pProfile->m_NoSections; i++)
 		{
 			pSec = &pProfile->m_Sections[i];
-			
+
 			if (pSec->m_Line >= LineNo)
 				pSec->m_Line++;
 
@@ -1531,9 +1531,9 @@ static const sal_Char* insertLine(osl_TProfileImpl* pProfile, const sal_Char* Li
 					pSec->m_Entries[n].m_Line++;
 		}
 	}
-	
+
 	pProfile->m_NoLines++;
-	
+
 	pProfile->m_Lines[LineNo] = strdup(Line);
 
 	return (pProfile->m_Lines[LineNo]);
@@ -1556,7 +1556,7 @@ static void removeLine(osl_TProfileImpl* pProfile, sal_uInt32 LineNo)
 			for (i = 0; i < pProfile->m_NoSections; i++)
 			{
 				pSec = &pProfile->m_Sections[i];
-				
+
 				if (pSec->m_Line > LineNo)
 					pSec->m_Line--;
 
@@ -1699,7 +1699,7 @@ static void removeSection(osl_TProfileImpl* pProfile, osl_TProfileSection *pSect
 
 		pProfile->m_NoSections--;
 	}
-	
+
 	return;
 }
 
@@ -1734,7 +1734,7 @@ static  sal_uInt32    Sect = 0;
 	{
 		Len = strlen(Entry);
 		Entry = stripBlanks(Entry, &Len);
-		
+
 		*pNoEntry = pSec->m_NoEntries;
 
 		for (i = 0; i < pSec->m_NoEntries; i++)
@@ -1920,7 +1920,7 @@ static osl_TProfileImpl* acquireProfile(oslProfile Profile, sal_Bool bWriteable)
 		{
 			sal_Bool bWriteable = sal_False;
 			char pszFilename[PATH_MAX] = "";
-		
+
 			if ( pProfile->m_strFileName != NULL  && pProfile->m_strFileName->buffer[0] != 0 )
 				FileURLToPath( pszFilename, PATH_MAX, pProfile->m_strFileName );
 		    /* hack: usually you have a specific HAB, but NULL works here... */
@@ -1993,10 +1993,10 @@ static sal_Bool lookupProfile(const sal_Char *pszPath, const sal_Char *pszFile, 
 	if (*pszPath == '"')
 	{
 		int i = 0;
-		
+
 		pszPath++;
 
-		while ((*pszPath != '"') && (*pszPath != '\0')) 
+		while ((*pszPath != '"') && (*pszPath != '\0'))
 			Product[i++] = *pszPath++;
 
 		Product[i] = '\0';
@@ -2019,7 +2019,7 @@ static sal_Bool lookupProfile(const sal_Char *pszPath, const sal_Char *pszFile, 
 			oslProfile hProfile;
 
 			/* open sversion.ini in the system directory, and try to locate the entry
-			   with the highest version for StarOffice */														   
+			   with the highest version for StarOffice */
 			if ((osl_getProfileName(SVERSION_FALLBACK, SVERSION_NAME, Profile, sizeof(Profile))) &&
 				(hProfile = osl_openProfile(Profile, osl_Profile_READLOCK)))
 			{
@@ -2031,7 +2031,7 @@ static sal_Bool lookupProfile(const sal_Char *pszPath, const sal_Char *pszFile, 
 					if ((strnicmp(pChr, SVERSION_SOFFICE, sizeof(SVERSION_SOFFICE) - 1) == 0) &&
 						(stricmp(Product, pChr) < 0))
 					{
-						osl_readProfileString(hProfile, SVERSION_SECTION, pChr, 
+						osl_readProfileString(hProfile, SVERSION_SECTION, pChr,
 						                      Dir, sizeof(Dir), "");
 
 						/* check for existence of path */
@@ -2044,7 +2044,7 @@ static sal_Bool lookupProfile(const sal_Char *pszPath, const sal_Char *pszFile, 
 			}
 
 			/* open sversion.ini in the users directory, and try to locate the entry
-			   with the highest version for StarOffice */														   
+			   with the highest version for StarOffice */
 			if ((strcmp(SVERSION_LOCATION, SVERSION_FALLBACK) != 0) &&
 			    (osl_getProfileName(SVERSION_LOCATION, SVERSION_NAME, Profile, sizeof(Profile))) &&
 				(hProfile = osl_openProfile(Profile, osl_Profile_READLOCK)))
@@ -2057,7 +2057,7 @@ static sal_Bool lookupProfile(const sal_Char *pszPath, const sal_Char *pszFile, 
 					if ((strnicmp(pChr, SVERSION_SOFFICE, sizeof(SVERSION_SOFFICE) - 1) == 0) &&
 						(stricmp(Product, pChr) < 0))
 					{
-						osl_readProfileString(hProfile, SVERSION_SECTION, pChr, 
+						osl_readProfileString(hProfile, SVERSION_SECTION, pChr,
 						                      Dir, sizeof(Dir), "");
 
 						/* check for existence of path */
@@ -2071,12 +2071,12 @@ static sal_Bool lookupProfile(const sal_Char *pszPath, const sal_Char *pszFile, 
 
 			/* remove any trailing build number */
 			if ((pChr = strrchr(Product, '/')) != NULL)
-				*pChr = '\0';			
+				*pChr = '\0';
 		}
 	}
 
 
-	/* if we have an userid option eg. "-userid:rh[/usr/home/rh/staroffice]", 
+	/* if we have an userid option eg. "-userid:rh[/usr/home/rh/staroffice]",
 	   this will supercede all other locations */
 	if (osl_getCommandArgs(Buffer, sizeof(Buffer)) == osl_Process_E_None)
 	{
@@ -2086,16 +2086,16 @@ static sal_Bool lookupProfile(const sal_Char *pszPath, const sal_Char *pszFile, 
 			if (((*pChr == '-') || (*pChr == '+')) &&
 			    (strnicmp(pChr + 1, SVERSION_OPTION, sizeof(SVERSION_OPTION) - 1) == 0))
 			{
-				if (((pStart = strchr(pChr + sizeof(SVERSION_OPTION), '[')) != NULL) && 
+				if (((pStart = strchr(pChr + sizeof(SVERSION_OPTION), '[')) != NULL) &&
 				    ((pEnd = strchr(pStart + 1, ']')) != NULL))
 				{
 					strncpy(Path, pStart + 1, pEnd - (pStart + 1));
 					Path[pEnd - (pStart + 1)] = '\0';
 
-					/* build full path */						
+					/* build full path */
 					if ((Path[strlen(Path) - 1] != '/') && (Path[strlen(Path) - 1] != '\\'))
 					{
-						strcat(Path, "\\");				
+						strcat(Path, "\\");
 					}
 
 					pChr =&Path[strlen(Path)];
@@ -2116,7 +2116,7 @@ static sal_Bool lookupProfile(const sal_Char *pszPath, const sal_Char *pszFile, 
 					break;
 				}
 			}
-	}	
+	}
 
 	if (strlen(Path) <= 0)
 	{
@@ -2140,7 +2140,7 @@ static sal_Bool lookupProfile(const sal_Char *pszPath, const sal_Char *pszFile, 
 
 			/* remove extension */
 			if ((pChr = strrchr(Product, '.')) != NULL)
-				*pChr = '\0';			
+				*pChr = '\0';
 		}
 
 		/* remember last subdir */
@@ -2157,7 +2157,7 @@ static sal_Bool lookupProfile(const sal_Char *pszPath, const sal_Char *pszFile, 
 			strcat(Path,pszPath);
 		}
 
-		/* if file not exists, remove any specified subdirectories 
+		/* if file not exists, remove any specified subdirectories
 		   like "bin" or "program" */
 		if (((access(Path, 0) < 0) && (pStr != NULL)) || (strlen(pszPath) <= 0))
 		{
@@ -2180,7 +2180,7 @@ static sal_Bool lookupProfile(const sal_Char *pszPath, const sal_Char *pszFile, 
 					{
 						strcpy(pStr + 1, pszPath);
 					}
-					
+
 					break;
 				}
 		}
@@ -2199,7 +2199,7 @@ static sal_Bool lookupProfile(const sal_Char *pszPath, const sal_Char *pszFile, 
 			*pChr = '\0';
 
 			/* open sversion.ini in the system directory, and try to locate the entry
-			   with the highest version for StarOffice */														   
+			   with the highest version for StarOffice */
 			if ((osl_getProfileName(SVERSION_LOCATION, SVERSION_NAME, Profile, sizeof(Profile))) &&
 				(hProfile = osl_openProfile(Profile, osl_Profile_READLOCK)))
 			{
@@ -2209,7 +2209,7 @@ static sal_Bool lookupProfile(const sal_Char *pszPath, const sal_Char *pszFile, 
 				strcat(Product, "/");
 				strcat(Product, BUILD_STR(SUPD));
 
-				osl_readProfileString(hProfile, SVERSION_SECTION, Product, 
+				osl_readProfileString(hProfile, SVERSION_SECTION, Product,
 				                      Buffer, sizeof(Buffer), "");
 
 				/* if not found, try it without build number */
@@ -2217,7 +2217,7 @@ static sal_Bool lookupProfile(const sal_Char *pszPath, const sal_Char *pszFile, 
 				{
 					*pChr = '\0';
 
-					osl_readProfileString(hProfile, SVERSION_SECTION, Product, 
+					osl_readProfileString(hProfile, SVERSION_SECTION, Product,
 					                      Buffer, sizeof(Buffer), "");
 
 					osl_closeProfile(hProfile);
@@ -2231,7 +2231,7 @@ static sal_Bool lookupProfile(const sal_Char *pszPath, const sal_Char *pszFile, 
 							/* prepare build number */
 							*pChr = '/';
 
-							osl_readProfileString(hProfile, SVERSION_SECTION, Product, 
+							osl_readProfileString(hProfile, SVERSION_SECTION, Product,
 							                      Buffer, sizeof(Buffer), "");
 
 							/* if not found, try it without build number */
@@ -2239,9 +2239,9 @@ static sal_Bool lookupProfile(const sal_Char *pszPath, const sal_Char *pszFile, 
 							{
 								*pChr = '\0';
 
-								osl_readProfileString(hProfile, SVERSION_SECTION, Product, 
+								osl_readProfileString(hProfile, SVERSION_SECTION, Product,
 								                      Buffer, sizeof(Buffer), "");
-							}								
+							}
 
 							osl_closeProfile(hProfile);
 						}
@@ -2254,11 +2254,11 @@ static sal_Bool lookupProfile(const sal_Char *pszPath, const sal_Char *pszFile, 
 				{
 					strcpy(Path, Buffer);
 
-					/* build full path */						
+					/* build full path */
 					if ((Path[strlen(Path) - 1] != '/') && (Path[strlen(Path) - 1] != '\\'))
 					{
 						if ((*pszPath != '/') && (*pszPath != '\\'))
-							strcat(Path, "\\");				
+							strcat(Path, "\\");
 					}
 
 					pChr=&Path[strlen(pszPath)];
@@ -2275,7 +2275,7 @@ static sal_Bool lookupProfile(const sal_Char *pszPath, const sal_Char *pszFile, 
 						}
 					}
 				}
-			}			
+			}
 		}
 		else
 			/* remove appended filename */

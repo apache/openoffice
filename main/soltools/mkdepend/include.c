@@ -75,7 +75,7 @@ struct inclist *inc_path(file, include, dot, incCollection)
 // given, which certainly is not the intended behavior. Also it slows down
 // makedepend performance considerably.
 //	if (!found && (dot || *include == '/')) {
-//        
+//
 //		if ((exists_path(incCollection, include)) && stat(include, &st) == 0 && !( st.st_mode & S_IFDIR)) {
 //			ip = newinclude(include, include);
 //			found = TRUE;
@@ -130,9 +130,9 @@ struct inclist *inc_path(file, include, dot, incCollection)
 	return(ip);
 }
 
-int exists_path(incCollection, path) 
+int exists_path(incCollection, path)
     struct IncludesCollection* incCollection;
-    char* path; 
+    char* path;
 {
     convert_slashes(path);
     return call_IncludesCollection_exists(incCollection, path);
@@ -181,7 +181,7 @@ void remove_dotdot(path)
 		    char **fp = cp + 2;
 		    char **tp = cp;
 
-		    do 
+		    do
 			*tp++ = *fp; /* move all the pointers down */
 		    while (*fp++);
 		    if (cp != components)

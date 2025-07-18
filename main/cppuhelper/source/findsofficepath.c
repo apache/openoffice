@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -90,7 +90,7 @@ static char* platformSpecific()
     const char* SUBKEYNAME64 = "Software\\Wow6432Node\\OpenOffice\\UNO\\InstallPath";
 
     char* path = NULL;
-    
+
     /* read the key's default value from HKEY_CURRENT_USER */
     path = getPathFromRegistryKey( HKEY_CURRENT_USER, SUBKEYNAME );
 
@@ -118,13 +118,13 @@ static char* platformSpecific()
 #include <unistd.h>
 #include <limits.h>
 #include <stdio.h>
-/*     
+/*
  * Gets the installation path from the PATH environment variable.
  *
  * <p>An installation is found, if the executable 'soffice' or a symbolic link
  * is in one of the directories listed in the PATH environment variable.</p>
  *
- * @return the installation path or NULL, if no installation was found or 
+ * @return the installation path or NULL, if no installation was found or
  *         if an error occurred
  */
 static char* platformSpecific()
