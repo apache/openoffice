@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,23 +7,23 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
 
 #include "system.h"
 
-#include <osl/diagnose.h> 
+#include <osl/diagnose.h>
 #include <osl/time.h>
 #include <sys/timeb.h>
 
@@ -37,7 +37,7 @@ extern BOOL FileTimeToTimeValue( const FILETIME *cpFTime, TimeValue *pTimeVal );
 
 sal_Bool SAL_CALL osl_getSystemTime(TimeValue* pTimeVal)
 {
-	SYSTEMTIME SystemTime; 
+	SYSTEMTIME SystemTime;
 	FILETIME   CurTime, OffTime;
 	__int64	   Value;
 
@@ -90,7 +90,7 @@ sal_Bool SAL_CALL osl_getDateTimeFromTimeValue( TimeValue* pTimeVal, oslDateTime
 
 			return sal_True;
 		}
-	} 
+	}
 
 	return sal_False;
 }
@@ -106,7 +106,7 @@ sal_Bool SAL_CALL osl_getTimeValueFromDateTime( oslDateTime* pDateTime, TimeValu
 
 	aSystemTime.wMilliseconds	=	0;
 	aSystemTime.wSecond			=	pDateTime->Seconds;
-	aSystemTime.wMinute			=	pDateTime->Minutes; 
+	aSystemTime.wMinute			=	pDateTime->Minutes;
 	aSystemTime.wHour			=	pDateTime->Hours;
 	aSystemTime.wDay			=	pDateTime->Day;
 	aSystemTime.wDayOfWeek		=	pDateTime->DayOfWeek;
@@ -131,7 +131,7 @@ sal_Bool SAL_CALL osl_getTimeValueFromDateTime( oslDateTime* pDateTime, TimeValu
 //--------------------------------------------------
 
 sal_Bool SAL_CALL osl_getLocalTimeFromSystemTime( TimeValue* pSystemTimeVal, TimeValue* pLocalTimeVal )
-{ 
+{
 	TIME_ZONE_INFORMATION aTimeZoneInformation;
 	DWORD Success;
 	sal_Int64	bias;
@@ -154,7 +154,7 @@ sal_Bool SAL_CALL osl_getLocalTimeFromSystemTime( TimeValue* pSystemTimeVal, Tim
 		}
 	}
 
-	return sal_False; 
+	return sal_False;
 }
 
 //--------------------------------------------------
@@ -174,7 +174,7 @@ sal_Bool SAL_CALL osl_getSystemTimeFromLocalTime( TimeValue* pLocalTimeVal, Time
 
 		// add bias for daylight saving time
 		if ( Success== TIME_ZONE_ID_DAYLIGHT )
-			bias+=aTimeZoneInformation.DaylightBias; 
+			bias+=aTimeZoneInformation.DaylightBias;
 
 		if ( (sal_Int64) pLocalTimeVal->Seconds + ( bias * 60 ) > 0 )
 		{
@@ -185,7 +185,7 @@ sal_Bool SAL_CALL osl_getSystemTimeFromLocalTime( TimeValue* pLocalTimeVal, Time
 		}
 	}
 
-	return sal_False; 
+	return sal_False;
 }
 
 
@@ -202,9 +202,9 @@ sal_uInt32 SAL_CALL osl_getGlobalTimer(void)
       _ftime( &startTime );
       bGlobalTimer=sal_True;
   }
-  
+
   _ftime( &currentTime );
-  
+
   nSeconds = (sal_uInt32)( currentTime.time - startTime.time );
 
   return ( nSeconds * 1000 ) + (long)( currentTime.millitm - startTime.millitm );

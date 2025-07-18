@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -113,12 +113,12 @@ oslSecurityError SAL_CALL osl_loginUser( rtl_uString *strUserName, rtl_uString *
 	{
 		sal_Unicode*	strUser;
 		sal_Unicode*	strDomain = _wcsdup(rtl_uString_getStr(strUserName));
-		HANDLE	hUserToken;		
-        
-        #if OSL_DEBUG_LEVEL > 0		    
+		HANDLE	hUserToken;
+
+        #if OSL_DEBUG_LEVEL > 0
 		    LUID luid;
 		#endif
-		
+
 		if (NULL != (strUser = wcschr(strDomain, L'/')))
 			*strUser++ = L'\0';
 		else
@@ -127,7 +127,7 @@ oslSecurityError SAL_CALL osl_loginUser( rtl_uString *strUserName, rtl_uString *
 			strDomain = NULL;
 		}
 
-		// this process must have the right: 'act as a part of operatingsystem'				
+		// this process must have the right: 'act as a part of operatingsystem'
 		OSL_ASSERT(LookupPrivilegeValue(NULL, SE_TCB_NAME, &luid));
 
 		if (LogonUserW(strUser, strDomain ? strDomain : L"", rtl_uString_getStr(strPasswd),
@@ -221,7 +221,7 @@ static BOOL	WINAPI CheckTokenMembership_Stub( HANDLE TokenHandle, PSID SidToChec
 
 	static HMODULE	hModule = NULL;
 	static CheckTokenMembership_PROC	pCheckTokenMembership = NULL;
-	
+
 	if ( !hModule )
 	{
 		/* SAL is always linked against ADVAPI32 so we can rely on that it is already mapped */
@@ -261,7 +261,7 @@ sal_Bool SAL_CALL osl_isAdministrator(oslSecurity Security)
 
 			/* If Security contains an access token we need to duplicate it to an impersonation
 			   access token. NULL works with CheckTokenMembership() as the current effective
-			   impersonation token 
+			   impersonation token
 			 */
 
 			if ( ((oslSecurityImpl*)Security)->m_hToken )
@@ -285,10 +285,10 @@ sal_Bool SAL_CALL osl_isAdministrator(oslSecurity Security)
 			{
 				BOOL	fSuccess = FALSE;
 
-				if ( CheckTokenMembership_Stub( hImpersonationToken, psidAdministrators, &fSuccess ) && fSuccess ) 
+				if ( CheckTokenMembership_Stub( hImpersonationToken, psidAdministrators, &fSuccess ) && fSuccess )
 					bSuccess = sal_True;
 
-				FreeSid(psidAdministrators); 
+				FreeSid(psidAdministrators);
 			}
 
 			if ( hImpersonationToken )
@@ -501,7 +501,7 @@ sal_Bool SAL_CALL osl_getHomeDir(oslSecurity Security, rtl_uString **pustrDirect
 			else
 #endif
 
-				bSuccess = (sal_Bool)(GetSpecialFolder(&ustrSysDir, CSIDL_PERSONAL) && 
+				bSuccess = (sal_Bool)(GetSpecialFolder(&ustrSysDir, CSIDL_PERSONAL) &&
 				                     (osl_File_E_None == osl_getFileURLFromSystemPath(ustrSysDir, pustrDirectory)));
 		}
 	}
@@ -704,10 +704,10 @@ static sal_Bool GetSpecialFolder(rtl_uString **strPath, int nFolder)
 	{
 		BOOL (WINAPI *pSHGetSpecialFolderPathA)(HWND, LPSTR, int, BOOL);
 		BOOL (WINAPI *pSHGetSpecialFolderPathW)(HWND, LPWSTR, int, BOOL);
-        
-        pSHGetSpecialFolderPathA = (BOOL (WINAPI *)(HWND, LPSTR, int, BOOL))GetProcAddress(hLibrary, "SHGetSpecialFolderPathA");        
+
+        pSHGetSpecialFolderPathA = (BOOL (WINAPI *)(HWND, LPSTR, int, BOOL))GetProcAddress(hLibrary, "SHGetSpecialFolderPathA");
         pSHGetSpecialFolderPathW = (BOOL (WINAPI *)(HWND, LPWSTR, int, BOOL))GetProcAddress(hLibrary, "SHGetSpecialFolderPathW");
-        
+
 		if (pSHGetSpecialFolderPathA)
 		{
 			if (pSHGetSpecialFolderPathA(GetActiveWindow(), PathA, nFolder, TRUE))
@@ -970,7 +970,7 @@ static sal_Bool SAL_CALL getUserNameImpl(oslSecurity Security, rtl_uString **str
 				if (wcslen(pSecImpl->m_User) > 0)
 				{
 					rtl_uString_newFromStr( strName, pSecImpl->m_pNetResource->lpRemoteName);
-				
+
 					if (pNameW)
 						free(pNameW);
 
