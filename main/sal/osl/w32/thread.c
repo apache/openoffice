@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -31,9 +31,9 @@
 #include <rtl/tencinfo.h>
 
 /*
-	Thread-data structure hidden behind oslThread:	
+	Thread-data structure hidden behind oslThread:
 */
-typedef struct _osl_TThreadImpl 
+typedef struct _osl_TThreadImpl
 {
 	HANDLE				m_hThread;		/* OS-handle used for all thread-functions */
 	unsigned			m_ThreadId;		/* identifier for this thread */
@@ -64,7 +64,7 @@ static unsigned __stdcall oslWorkerWrapperFunction(void* pData)
 	pThreadImpl->m_WorkerFunction(pThreadImpl->m_pData);
 
 	CoUninitialize();
-	
+
 	return (0);
 }
 
@@ -86,12 +86,12 @@ static oslThread oslCreateThread(oslWorkerFunction pWorker,
     {
         return 0;
     }
-    
+
 	pThreadImpl->m_WorkerFunction= pWorker;
 	pThreadImpl->m_pData= pThreadData;
 	pThreadImpl->m_nTerminationRequested= 0;
 
-	pThreadImpl->m_hThread= 
+	pThreadImpl->m_hThread=
 		(HANDLE)_beginthreadex(NULL,						/* no security */
 							   0,							/* default stack-size */
 							   oslWorkerWrapperFunction,	/* worker-function */
@@ -99,7 +99,7 @@ static oslThread oslCreateThread(oslWorkerFunction pWorker,
 							   nFlags,						/* start thread immediately or suspended */
 							   &pThreadImpl->m_ThreadId);
 
-	if(pThreadImpl->m_hThread == 0) 
+	if(pThreadImpl->m_hThread == 0)
 	{
 		/* create failed */
 		free(pThreadImpl);
@@ -122,7 +122,7 @@ oslThread SAL_CALL osl_createThread(oslWorkerFunction pWorker,
 /* osl_createSuspendedThread */
 /*****************************************************************************/
 oslThread SAL_CALL osl_createSuspendedThread(oslWorkerFunction pWorker,
-                                             void* pThreadData) 
+                                             void* pThreadData)
 {
     return oslCreateThread(pWorker, pThreadData, CREATE_SUSPENDED);
 }
@@ -143,7 +143,7 @@ oslThreadIdentifier SAL_CALL osl_getThreadIdentifier(oslThread Thread)
 /*****************************************************************************/
 /* osl_destroyThread */
 /*****************************************************************************/
-void SAL_CALL osl_destroyThread(oslThread Thread) 
+void SAL_CALL osl_destroyThread(oslThread Thread)
 {
 	osl_TThreadImpl* pThreadImpl= (osl_TThreadImpl*)Thread;
 
@@ -169,19 +169,19 @@ void SAL_CALL osl_resumeThread(oslThread Thread)
 
 	OSL_ASSERT(pThreadImpl);		/* valid ptr? */
 
-	ResumeThread(pThreadImpl->m_hThread);	
+	ResumeThread(pThreadImpl->m_hThread);
 }
 
 /*****************************************************************************/
 /* osl_suspendThread */
 /*****************************************************************************/
-void SAL_CALL osl_suspendThread(oslThread Thread) 
+void SAL_CALL osl_suspendThread(oslThread Thread)
 {
 	osl_TThreadImpl* pThreadImpl= (osl_TThreadImpl*)Thread;
 
 	OSL_ASSERT(pThreadImpl);		/* valid ptr? */
 
-	SuspendThread(pThreadImpl->m_hThread);	
+	SuspendThread(pThreadImpl->m_hThread);
 }
 
 /*****************************************************************************/
@@ -192,11 +192,11 @@ void SAL_CALL osl_setThreadPriority(oslThread Thread,
 {
 	int winPriority;
 	osl_TThreadImpl* pThreadImpl= (osl_TThreadImpl*)Thread;
-	
+
 	OSL_ASSERT(pThreadImpl);		/* valid ptr? */
 
 
-	/*	map enum to WIN32 levels 
+	/*	map enum to WIN32 levels
 		it would be faster and more elegant to preset
 		the enums, but that would require an #ifdef in
 		the exported header, which is not desired.
@@ -231,7 +231,7 @@ void SAL_CALL osl_setThreadPriority(oslThread Thread,
 
 	default:
 		OSL_ASSERT(FALSE);		/* enum expanded, but forgotten here...*/
-		
+
 		/* let release-version behave friendly */
 		return;
 	}
@@ -250,7 +250,7 @@ oslThreadPriority SAL_CALL osl_getThreadPriority(const oslThread Thread)
 	osl_TThreadImpl* pThreadImpl= (osl_TThreadImpl*)Thread;
 
 	/* invalid arguments ?*/
-	if(pThreadImpl==NULL || pThreadImpl->m_hThread==0) 
+	if(pThreadImpl==NULL || pThreadImpl->m_hThread==0)
 	{
 		return osl_Thread_PriorityUnknown;
 	}
@@ -259,13 +259,13 @@ oslThreadPriority SAL_CALL osl_getThreadPriority(const oslThread Thread)
 		GetThreadPriority(pThreadImpl->m_hThread);
 
 
-	if(winPriority == THREAD_PRIORITY_ERROR_RETURN) 
+	if(winPriority == THREAD_PRIORITY_ERROR_RETURN)
 	{
 		return osl_Thread_PriorityUnknown;
 	}
 
 	/* map WIN32 priority to enum */
-	switch(winPriority) 
+	switch(winPriority)
 	{
 	case THREAD_PRIORITY_TIME_CRITICAL:
 	case THREAD_PRIORITY_HIGHEST:
@@ -302,12 +302,12 @@ oslThreadPriority SAL_CALL osl_getThreadPriority(const oslThread Thread)
 /*****************************************************************************/
 /* osl_isThreadRunning */
 /*****************************************************************************/
-sal_Bool SAL_CALL osl_isThreadRunning(const oslThread Thread) 
+sal_Bool SAL_CALL osl_isThreadRunning(const oslThread Thread)
 {
 	osl_TThreadImpl* pThreadImpl= (osl_TThreadImpl*)Thread;
 
 	/* invalid arguments ?*/
-	if(pThreadImpl==NULL || pThreadImpl->m_hThread==0) 
+	if(pThreadImpl==NULL || pThreadImpl->m_hThread==0)
 	{
 		return sal_False;
 	}
@@ -323,7 +323,7 @@ void SAL_CALL osl_joinWithThread(oslThread Thread)
 	osl_TThreadImpl* pThreadImpl= (osl_TThreadImpl*)Thread;
 
 	/* invalid arguments?*/
-	if(pThreadImpl==NULL || pThreadImpl->m_hThread==0) 
+	if(pThreadImpl==NULL || pThreadImpl->m_hThread==0)
 	{
 		/* assume thread is not running */
 		return;
@@ -353,7 +353,7 @@ void SAL_CALL osl_terminateThread(oslThread Thread)
 	osl_TThreadImpl* pThreadImpl= (osl_TThreadImpl*)Thread;
 
 	/* invalid arguments?*/
-	if (pThreadImpl==NULL || pThreadImpl->m_hThread==0) 
+	if (pThreadImpl==NULL || pThreadImpl->m_hThread==0)
 	{
 		/* assume thread is not running */
 		return;
@@ -373,7 +373,7 @@ sal_Bool SAL_CALL osl_scheduleThread(oslThread Thread)
 	osl_yieldThread();
 
 	/* invalid arguments?*/
-	if (pThreadImpl==NULL || pThreadImpl->m_hThread==0) 
+	if (pThreadImpl==NULL || pThreadImpl->m_hThread==0)
 	{
 		/* assume thread is not running */
 		return sal_False;
@@ -433,7 +433,7 @@ static void AddKeyToList( PTLS pTls )
 
 		pTls->pNext = g_pThreadKeyList;
 		pTls->pPrev = NULL;
-		
+
 		if ( g_pThreadKeyList )
 			g_pThreadKeyList->pPrev = pTls;
 
@@ -465,7 +465,7 @@ static void RemoveKeyFromList( PTLS pTls )
 void SAL_CALL _osl_callThreadKeyCallbackOnThreadDetach(void)
 {
 	PTLS	pTls;
-	
+
 
 	EnterCriticalSection( &g_ThreadKeyListCS );
 	pTls = g_pThreadKeyList;

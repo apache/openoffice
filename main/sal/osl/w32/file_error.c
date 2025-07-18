@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -92,7 +92,7 @@ static const struct osl_file_error_entry errtable[] = {
   {  ERROR_FILE_CHECKED_OUT,       osl_File_E_ACCES    },   /* 220 The file is locked or checked out by another user. */
   {  ERROR_INVALID_NAME,           osl_File_E_NOENT    }   /*  123 One or more of the names composing the file path has a wrong syntax. */
 };
-    
+
 /* The following two constants must be the minimum and maximum
    values in the (contiguous) range of osl_File_E_xec Failure errors.
 */
@@ -116,8 +116,8 @@ oslFileError oslTranslateFileError (/*DWORD*/ unsigned long dwError)
 			return (oslFileError)(errtable[i].errnocode);
 	}
 
-	/* The error code wasn't in the table.  We check for a range of 
-	   osl_File_E_ACCES errors or exec failure errors (ENOEXEC).  
+	/* The error code wasn't in the table.  We check for a range of
+	   osl_File_E_ACCES errors or exec failure errors (ENOEXEC).
 	   Otherwise osl_File_E_INVAL is returned.
 	*/
 	if ( (dwError >= MIN_EACCES_RANGE) && (dwError <= MAX_EACCES_RANGE) )
@@ -128,7 +128,7 @@ oslFileError oslTranslateFileError (/*DWORD*/ unsigned long dwError)
 		return osl_File_E_INVAL;
 }
 
-//##################################################### 
+//#####################################################
 #if OSL_DEBUG_LEVEL > 0
 void _osl_warnFile( const char *message, rtl_uString *ustrFile )
 {

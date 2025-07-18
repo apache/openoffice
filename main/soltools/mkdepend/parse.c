@@ -45,7 +45,7 @@ int find_includes(filep, file, file_red, recursion, failOK, incCollection, symbo
 	struct inclist		*file, *file_red;
 	int			recursion;
 	boolean			failOK;
-    struct IncludesCollection* incCollection; 
+    struct IncludesCollection* incCollection;
 	struct symhash		*symbols;
 {
 	register char	*line;
@@ -142,7 +142,7 @@ int find_includes(filep, file, file_red, recursion, failOK, incCollection, symbo
 		    	warning("%s: %d: %s\n", file_red->i_file,
 				 filep->f_line, line);
 		    	break;
-		    
+
 		case PRAGMA:
 		case IDENT:
 		case SCCS:
@@ -321,7 +321,7 @@ int deftype (line, filep, file_red, file, parse_it, symbols)
 							file->i_incstring,
 							sym));
 				/* mark file as having included a 'soft include' */
-				file->i_included_sym = TRUE; 
+				file->i_included_sym = TRUE;
 				sym = hash_lookup(p, symbols);
 			}
 		}
@@ -444,7 +444,7 @@ struct symhash *hash_copy( symbols )
         return NULL;
 
     newsym = (struct symhash *) malloc( sizeof( struct symhash ) );
-    
+
     for ( i = 0; i < SYMHASHMEMBERS; ++i )
     {
         if ( !symbols->s_pairs[ i ] )
@@ -456,7 +456,7 @@ struct symhash *hash_copy( symbols )
             nw->p_name = it->p_name;
             nw->p_value = it->p_value;
             nw->p_next = NULL;
-            
+
             while ( it->p_next )
             {
                 nw->p_next = (struct pair*) malloc( sizeof( struct pair ) );
@@ -518,7 +518,7 @@ void hash_define( name, val, symbols )
 
     hashval = hash( name );
     it = (*symbols)->s_pairs[ hashval ];
-    
+
     /* Replace/insert the symbol */
     if ( it == NULL )
     {
@@ -557,7 +557,7 @@ char *hash_lookup( symbol, symbols )
 
     if ( !symbols )
         return NULL;
-    
+
     it = symbols->s_pairs[ hash( symbol ) ];
 
     while ( it && ( strcmp( it->p_name, symbol ) != 0 ) )
@@ -579,10 +579,10 @@ void hash_undefine( symbol, symbols )
 
     if ( !symbols )
         return;
-    
+
     hashval = hash( symbol );
     it = symbols->s_pairs[ hashval ];
-    
+
     /* Replace/insert the symbol */
     if ( it == NULL )
         return;
