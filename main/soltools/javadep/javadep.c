@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -45,9 +45,9 @@
 #define F_OK        00
 #define PATH_MAX    _MAX_PATH
 #define ntohl(x)    ((((x) & 0xff000000) >> 24) | (((x) & 0x00ff0000) >>  8) | \
-                        (((x) & 0x0000ff00) <<  8) | (((x) & 0x000000ff) << 24))      
+                        (((x) & 0x0000ff00) <<  8) | (((x) & 0x000000ff) << 24))
 
-#define ntohs(x)    ((((x) >> 8) & 0xff) | (((x) & 0xff) << 8)) 
+#define ntohs(x)    ((((x) >> 8) & 0xff) | (((x) & 0xff) << 8))
 #endif
 
 #if defined(OS2)
@@ -214,7 +214,7 @@ read_utf8(const file_t *pfile)
             err_quit("%s: truncated class file", pfile->pname);
         }
     }
-    
+
     return a_utf8;
 }
 
@@ -223,7 +223,7 @@ char *utf8tolatin1(const utf8_t a_utf8)
     /* function returns fresh allocated zero terminated string,
      * caller is responsible for freeing
      */
-    
+
     /* JVMS p. 101: the null byte is encoded using a two byte format,
      * Java Virtual Machine Utf8 strings differ in this respect from
      * standard UTF-8 strings
@@ -241,17 +241,17 @@ char *utf8tolatin1(const utf8_t a_utf8)
           p <  (char*)a_utf8.pdata+a_utf8.nlen;
           p++ ) {
         if ( *p & 0x80 ) {
-            err_quit("sorry, real UTF8 decoding not yet implemented\n"); 
+            err_quit("sorry, real UTF8 decoding not yet implemented\n");
         } else {
             *pp++ = *p;
         }
     }
     *pp = '\0';
-    
+
     return pstr;
 }
 
-    
+
 void
 skip_bytes(const file_t *pfile, const size_t nnumber)
 {
@@ -273,12 +273,12 @@ add_to_dependencies(struct growable *pdep,
     char path[PATH_MAX+1];
     char cnp_class_file[PATH_MAX+1];
     char cnp_str[PATH_MAX+1];
-    
+
     nlen_pdepstr = strlen(pdepstr);
-    pstr = xmalloc((nlen_pdepstr+6+1)*sizeof(char)); 
+    pstr = xmalloc((nlen_pdepstr+6+1)*sizeof(char));
     memcpy(pstr, pdepstr, nlen_pdepstr+1);
     strncat(pstr, ".class", 6);
-    
+
     if ( pfilt->ncur == 0 ) { /* no filters */
         if ( access(pstr, F_OK) == 0 ) {
             append_to_growable(pdep, strdup(pstr));
@@ -305,12 +305,12 @@ add_to_dependencies(struct growable *pdep,
                 && realpath(path, cnp_str) ) ) {
                 err_quit("can't get the canonical path");
             }
-#else           
+#else
             if ( !(_fullpath(cnp_class_file, pclass_file, sizeof(cnp_class_file))
                 && _fullpath(cnp_str, path, sizeof(cnp_str)) ) ) {
                 err_quit("can't get the canonical path");
             }
-#endif          
+#endif
 
             /* truncate so that only the package prefix remains */
             ptrunc = strrchr(cnp_str, cpathsep);
@@ -328,7 +328,7 @@ add_to_dependencies(struct growable *pdep,
         }
     }
     free(pstr);
-    return;  
+    return;
 }
 
 char *
@@ -345,7 +345,7 @@ escape_slash(const char *pstr)
     char *pnew_str;
     int nlen_pnp, nlen_pp;
     int i = 0;
-    
+
     while ( (p=strchr(pp, cpathsep)) != NULL ) {
         ++i;
         pp = ++p;
@@ -361,7 +361,7 @@ escape_slash(const char *pstr)
             memcpy(pnp, pp, p-pp);
             pnp += p-pp;
             *pnp++ = '$';
-            *pnp++ = '/'; 
+            *pnp++ = '/';
             pp = ++p;
         }
     }
@@ -380,7 +380,7 @@ print_dependencies(const struct growable *pdep, const char* pclass_file)
 
     pstr = escape_slash(pclass_file);
     fprintf(pfsout, "%s:", pstr);
-    free(pstr); 
+    free(pstr);
 
     for( i=0; i<pdep->ncur; ++i) {
         fprintf(pfsout, "  \\\n");
@@ -400,20 +400,20 @@ is_inner(const char *pstr)
 
     /*
      * note that a '$' in a classname is not an exact indicator
-     * for an inner class. Java identifier may legally contain 
+     * for an inner class. Java identifier may legally contain
      * this character, and so may classnames. In the context
      * of javadep this doesn't matter since the makefile system
-     * can't cope with classfiles with '$'s in the filename 
+     * can't cope with classfiles with '$'s in the filename
      * anyway.
      *
      */
-    
+
     if ( strchr(pstr, '$') != NULL )
         return 1;
 
-    return 0;   
+    return 0;
 }
-    
+
 void
 process_class_file(const char *pfilename, const struct growable *pfilt)
 {
@@ -437,7 +437,7 @@ process_class_file(const char *pfilename, const struct growable *pfilt)
     file.pfs = fopen(file.pname,"rb");
     if ( !file.pfs )
         silent_quit();
-         
+
     nmagic = read_uint32(&file);
 
     if ( nmagic != 0xCAFEBABE ) {
@@ -447,11 +447,11 @@ process_class_file(const char *pfilename, const struct growable *pfilt)
 
     nminor = read_uint16(&file);
     nmajor = read_uint16(&file);
-    
+
     /* get number of entries in constant pool */
     ncnt = read_uint16(&file);
 
-#ifdef DEBUG    
+#ifdef DEBUG
     printf("Magic: %p\n", (void*)nmagic);
     printf("Major %d, Minor %d\n", nmajor, nminor);
     printf("Const_pool_count %d\n", ncnt);
@@ -462,7 +462,7 @@ process_class_file(const char *pfilename, const struct growable *pfilt)
      * (at leat one CONSTANT_Utf8 entry must exist).
      * Usually way less CONSTANT_Class entries exists, of course
      */
-    
+
     pc_pool = xcalloc(ncnt,sizeof(utf8_t));
     pc_class = xmalloc((ncnt-1)*sizeof(uint16));
 
@@ -471,7 +471,7 @@ process_class_file(const char *pfilename, const struct growable *pfilt)
      */
 
     nclass_cnt = 0;
-    
+
     for (i = 1; i < ncnt; i++) {
         uint8   ntag;
         uint16  nindex;
@@ -530,10 +530,10 @@ process_class_file(const char *pfilename, const struct growable *pfilt)
                  */
                 err_quit("corrupted class file\n");
                 break;
-                
+
         }
     }
-        
+
     fclose(file.pfs);
 
     pdepen = allocate_growable();
@@ -576,7 +576,7 @@ process_class_file(const char *pfilename, const struct growable *pfilt)
 
     for (i = 0; i < ncnt; i++)
         free(pc_pool[i].pdata);
-    
+
     free(pc_class);
     free(pc_pool);
 }
@@ -587,21 +587,21 @@ xmalloc(size_t size)
     void *ptr;
 
     ptr = malloc(size);
-    
+
     if ( !ptr )
         err_quit("out of memory");
 
     return ptr;
 }
 
-                 
+
 void *
 xcalloc(size_t nmemb, size_t size)
 {
     void *ptr;
 
     ptr = calloc(nmemb, size);
-    
+
     if ( !ptr )
         err_quit("out of memory");
 
@@ -612,7 +612,7 @@ void *
 xrealloc(void *ptr, size_t size)
 {
     ptr = realloc(ptr, size);
-    
+
     if ( !ptr )
         err_quit("out of memory");
 
@@ -629,7 +629,7 @@ err_quit(const char* fmt, ...)
     char buffer[PATH_MAX];
 
     va_start(args, fmt);
-    
+
     if ( pprogname )
         fprintf(stderr, "%s: ", pprogname);
     vsnprintf(buffer, sizeof(buffer), fmt, args);
@@ -658,11 +658,11 @@ silent_quit()
     }
     exit(0);
 }
-    
-int append_to_growable(struct growable *pgrow, char *pstr) 
+
+int append_to_growable(struct growable *pgrow, char *pstr)
 {
-    /* append an element pstr to pgrow, 
-     * return new number of elements 
+    /* append an element pstr to pgrow,
+     * return new number of elements
      */
     grow_if_needed(pgrow);
     pgrow->parray[pgrow->ncur++] = pstr;
@@ -684,10 +684,10 @@ grow_if_needed(struct growable *pgrow)
 
 struct growable *allocate_growable(void)
 {
-    /* allocate an growable array, 
+    /* allocate an growable array,
      * initialize with NGROW_INIT elements
      */
-    
+
     struct growable *pgrow;
 
     pgrow = xmalloc(sizeof(struct growable));
@@ -696,7 +696,7 @@ struct growable *allocate_growable(void)
     pgrow->ncur = 0;
     return pgrow;
 }
-        
+
 void
 free_growable(struct growable *pgrow)
 {
@@ -715,7 +715,7 @@ create_filters(struct growable *pfilt, const struct growable *pinc)
     /* break up includes into filter list */
     for ( i = 0; i < pinc->ncur; i++ ) {
         pp = pinc->parray[i];
-    
+
         while ( (p = strchr(pp, csep)) != NULL) {
             nlen = p - pp;
             pstr = xmalloc((nlen+1)*sizeof(char*));
@@ -731,7 +731,7 @@ create_filters(struct growable *pfilt, const struct growable *pinc)
     }
 
 }
-    
+
 void
 usage()
 {
@@ -754,7 +754,7 @@ int simple_getopt(char *pargv[], const char *poptstring)
     if ( parg ) {
         while ( *parg == '@' )
             parg = pargv[++optind];
-        
+
         if ( parg[0] == '-' && parg[1] != '\0' ) {
             char *popt;
             int c = parg[1];
@@ -790,7 +790,7 @@ main(int argc, char *argv[])
     char    **pall_argv;
 
     presp = allocate_growable();
-    
+
     /* FIXME: cleanup the option parsing */
     /* search for response file, read it */
     for ( i = 1; i < argc; i++ ) {
@@ -803,7 +803,7 @@ main(int argc, char *argv[])
                 err_quit("%s: %s", parg, strerror(errno));
             while ( !feof(pfile) ) {
                 char *p, *token;
-                
+
                 if ( fgets(buffer, RES_FILE_BUF, pfile) ) {;
                     p = buffer;
                     while ( (token = strtok(p, " \t\n")) != NULL ) {
@@ -815,7 +815,7 @@ main(int argc, char *argv[])
             fclose(pfile);
         }
     }
-                
+
     /* copy all arguments incl. response file in one array
      * for parsing with getopt
      */
@@ -824,7 +824,7 @@ main(int argc, char *argv[])
     memcpy(pall_argv, argv, argc*sizeof(char *));
     memcpy(pall_argv+argc, presp->parray, presp->ncur*sizeof(char *));
     *(pall_argv+argc+presp->ncur) = '\0'; /* terminate */
-    
+
     opterr = 0;
     pincs = allocate_growable();
 
@@ -890,7 +890,7 @@ main(int argc, char *argv[])
     } else {
         pfsout = stdout;
     }
-    
+
     /* the remaining arguments are either class file
      * names or response files, ignore response file
      * since they have already been included
@@ -905,7 +905,7 @@ main(int argc, char *argv[])
             }
         }
     }
-    
+
     free_growable(pfilters);
     pfilters = NULL;
     free(pall_argv);

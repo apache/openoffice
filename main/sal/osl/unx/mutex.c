@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -41,7 +41,7 @@ int pthread_mutexattr_setkind_np(pthread_mutexattr_t *, int);
 	Implementation notes:
 	oslMutex hides a pointer to the oslMutexImpl structure, which
 	ist needed to manage recursive locks on a mutex.
-	
+
 */
 
 typedef struct _oslMutexImpl
@@ -53,35 +53,35 @@ typedef struct _oslMutexImpl
 /*****************************************************************************/
 /* osl_createMutex */
 /*****************************************************************************/
-oslMutex SAL_CALL osl_createMutex() 
+oslMutex SAL_CALL osl_createMutex()
 {
 	oslMutexImpl* pMutex = (oslMutexImpl*) malloc(sizeof(oslMutexImpl));
     pthread_mutexattr_t aMutexAttr;
     int nRet=0;
-    
+
 	OSL_ASSERT(pMutex);
 
 	if ( pMutex == NULL )
 	{
 		return 0;
 	}
-        
+
     pthread_mutexattr_init(&aMutexAttr);
 
     nRet = pthread_mutexattr_settype(&aMutexAttr, PTHREAD_MUTEX_RECURSIVE);
-    
+
     nRet = pthread_mutex_init(&(pMutex->mutex), &aMutexAttr);
 	if ( nRet != 0 )
 	{
-	    OSL_TRACE("osl_createMutex : mutex init failed. Errno: %d; %s\n",  
+	    OSL_TRACE("osl_createMutex : mutex init failed. Errno: %d; %s\n",
                   nRet, strerror(nRet));
-        
+
 	    free(pMutex);
 		pMutex = NULL;
 	}
 
     pthread_mutexattr_destroy(&aMutexAttr);
-    
+
 	return (oslMutex) pMutex;
 }
 
@@ -93,45 +93,45 @@ void SAL_CALL osl_destroyMutex(oslMutex Mutex)
 	oslMutexImpl* pMutex = (oslMutexImpl*) Mutex;
 
     OSL_ASSERT(pMutex);
-    
+
 	if ( pMutex != NULL )
 	{
         int nRet=0;
-        
+
 	    nRet = pthread_mutex_destroy(&(pMutex->mutex));
         if ( nRet != 0 )
         {
-            OSL_TRACE("osl_destroyMutex : mutex destroy failed. Errno: %d; %s\n",  
+            OSL_TRACE("osl_destroyMutex : mutex destroy failed. Errno: %d; %s\n",
                       nRet, strerror(nRet));
         }
 
 		free(pMutex);
 	}
-    
+
     return;
 }
 
 /*****************************************************************************/
 /* osl_acquireMutex */
 /*****************************************************************************/
-sal_Bool SAL_CALL osl_acquireMutex(oslMutex Mutex) 
+sal_Bool SAL_CALL osl_acquireMutex(oslMutex Mutex)
 {
 	oslMutexImpl* pMutex = (oslMutexImpl*) Mutex;
-    
+
     OSL_ASSERT(pMutex);
 
 	if ( pMutex != NULL )
 	{
         int nRet=0;
-        
+
         nRet = pthread_mutex_lock(&(pMutex->mutex));
         if ( nRet != 0 )
         {
-            OSL_TRACE("osl_acquireMutex : mutex lock failed. Errno: %d; %s\n",  
+            OSL_TRACE("osl_acquireMutex : mutex lock failed. Errno: %d; %s\n",
                       nRet, strerror(nRet));
 			return sal_False;
         }
-		return sal_True;		
+		return sal_True;
 	}
 
     /* not initialized */
@@ -141,22 +141,22 @@ sal_Bool SAL_CALL osl_acquireMutex(oslMutex Mutex)
 /*****************************************************************************/
 /* osl_tryToAcquireMutex */
 /*****************************************************************************/
-sal_Bool SAL_CALL osl_tryToAcquireMutex(oslMutex Mutex) 
+sal_Bool SAL_CALL osl_tryToAcquireMutex(oslMutex Mutex)
 {
 	oslMutexImpl* pMutex = (oslMutexImpl*) Mutex;
 
     OSL_ASSERT(pMutex);
 
-	if ( pMutex ) 
+	if ( pMutex )
 	{
 		int nRet = 0;
         nRet = pthread_mutex_trylock(&(pMutex->mutex));
         if ( nRet != 0  )
             return sal_False;
-        
+
 		return sal_True;
 	}
-    
+
     /* not initialized */
     return sal_False;
 }
@@ -164,25 +164,25 @@ sal_Bool SAL_CALL osl_tryToAcquireMutex(oslMutex Mutex)
 /*****************************************************************************/
 /* osl_releaseMutex */
 /*****************************************************************************/
-sal_Bool SAL_CALL osl_releaseMutex(oslMutex Mutex) 
+sal_Bool SAL_CALL osl_releaseMutex(oslMutex Mutex)
 {
 	oslMutexImpl* pMutex = (oslMutexImpl*) Mutex;
-    
+
     OSL_ASSERT(pMutex);
 
-	if ( pMutex ) 
+	if ( pMutex )
 	{
         int nRet=0;
         nRet = pthread_mutex_unlock(&(pMutex->mutex));
         if ( nRet != 0 )
         {
-            OSL_TRACE("osl_releaseMutex : mutex unlock failed. Errno: %d; %s\n",  
+            OSL_TRACE("osl_releaseMutex : mutex unlock failed. Errno: %d; %s\n",
                       nRet, strerror(nRet));
 			return sal_False;
         }
-            
+
         return sal_True;
-	} 
+	}
 
     /* not initialized */
     return sal_False;
@@ -205,7 +205,7 @@ static void globalMutexInitImpl(void) {
     }
 }
 
-oslMutex * SAL_CALL osl_getGlobalMutex() 
+oslMutex * SAL_CALL osl_getGlobalMutex()
 {
 	/* necessary to get a "oslMutex *" */
 	static oslMutex globalMutex = (oslMutex) &globalMutexImpl;
@@ -214,6 +214,6 @@ oslMutex * SAL_CALL osl_getGlobalMutex()
     if (pthread_once(&once, &globalMutexInitImpl) != 0) {
         abort();
     }
-    
+
 	return &globalMutex;
 }

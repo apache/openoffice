@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -48,7 +48,7 @@ static DWORD g_dwTLSLocaleEncId = (DWORD) -1;
 
 /*****************************************************************************/
 /* callback function test
-/* 
+/*
 /* osl_getTextEncodingFromLocale calls EnumSystemLocalesA, so that we don't
 /* need to provide a unicode wrapper for this function under Win9x
 /* that means the callback function has an ansi prototype and receives
@@ -59,12 +59,12 @@ BOOL CALLBACK EnumLocalesProcA( LPSTR lpLocaleStringA )
 {
 	struct EnumLocalesParams * params;
 
-	LCID  localeId;	
+	LCID  localeId;
 	LPSTR pszEndA;
 
 	WCHAR langCode[4];
-   
-	/* convert hex-string to LCID */	
+
+	/* convert hex-string to LCID */
     localeId = strtol( lpLocaleStringA, &pszEndA, 16 );
 
 	/* check params received via TLS */
@@ -72,13 +72,13 @@ BOOL CALLBACK EnumLocalesProcA( LPSTR lpLocaleStringA )
 	if( NULL == params || '\0' == params->Language[0] )
 		return FALSE;
 
-	/* 
-        get the ISO language code for this locale 
-    
+	/*
+        get the ISO language code for this locale
+
         remember: we call the GetLocaleInfoW function
         because the ansi version of this function returns
-        an error under WinNT/2000 when called with an 
-        unicode only lcid 
+        an error under WinNT/2000 when called with an
+        unicode only lcid
     */
 	if( GetLocaleInfo( localeId, LOCALE_SISO639LANGNAME , langCode, 4 ) )
 	{

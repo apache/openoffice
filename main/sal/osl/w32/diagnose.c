@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -90,7 +90,7 @@ sal_Bool SAL_CALL osl_assertFailedLine(const sal_Char* pszFileName, sal_Int32 nL
 	LPCSTR lpszAppName = "Error";
 	sal_Char   szMessage[512];
     char const * env = getenv( "SAL_DIAGNOSE_ABORT" );
-	
+
 	/* format message into buffer */
 	szMessage[sizeof(szMessage)-1] = '\0';	/* zero terminate always */
 	_snprintf(szMessage, sizeof(szMessage)-1, "%s: File %hs, Line %d\n:%s\n",
@@ -123,9 +123,9 @@ sal_Bool SAL_CALL osl_assertFailedLine(const sal_Char* pszFileName, sal_Int32 nL
 		    szBoxMessage[sizeof(szBoxMessage)-1] = 0;
 		    _snprintf(szBoxMessage, sizeof(szBoxMessage)-1, "%s\n( Yes=Abort / No=Ignore / Cancel=Debugger )",
 	 			      szMessage);
-    		
+
 		    nCode = MessageBox(hWndParent, szBoxMessage, "Assertion Failed!", nFlags);
-     
+
 		    if (nCode == IDYES)
 			    FatalExit(-1);
 
@@ -146,14 +146,14 @@ sal_Int32 SAL_CALL osl_reportError(sal_uInt32 nType, const sal_Char* pszMessage)
 {
 	UINT nFlags;
 	int nDisposition;
-        
+
 	// active popup window for the current thread
 	HWND hWndParent = GetActiveWindow();
 	if (hWndParent != NULL)
 		hWndParent = GetLastActivePopup(hWndParent);
 
     nType = nType; /* avoid warnings */
-    
+
 	/* set message box flags */
 	nFlags = MB_TASKMODAL | MB_ICONERROR | MB_YESNOCANCEL | MB_DEFBUTTON2 | MB_SETFOREGROUND;
 	if (hWndParent == NULL)
