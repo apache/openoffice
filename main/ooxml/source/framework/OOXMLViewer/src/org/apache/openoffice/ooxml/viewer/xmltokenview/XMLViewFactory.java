@@ -47,20 +47,20 @@ public class XMLViewFactory
             new IAction()
             {
                 public void Run (
-                    final ActionTrigger eTrigger, 
+                    final ActionTrigger eTrigger,
                     final ElementContext aContext,
-                    final String sText, 
+                    final String sText,
                     final Location aStartLocation,
                     final Location aEndLocation)
                 {
                     final RunRange<TokenType> aRuns = aView.GetRuns(
-                        aStartLocation.getCharacterOffset(), 
+                        aStartLocation.getCharacterOffset(),
                         aEndLocation.getCharacterOffset());
                     if (aRuns.IsEmpty())
                         aView.GetRuns(
-                            aStartLocation.getCharacterOffset(), 
+                            aStartLocation.getCharacterOffset(),
                             aEndLocation.getCharacterOffset());
-                    
+
                     // Search for the name (including namespace prefix) of the element.
                     int nIndex = aRuns.FindTokens(
                         TokenType.TAG_START,
@@ -74,7 +74,7 @@ public class XMLViewFactory
                     aRuns.Get(nIndex+2).SetToolTipText(aContext.GetTypeName());
                     aRuns.Get(nIndex+3).SetToolTipText(aContext.GetTypeName());
                     nIndex += 4;
-                    
+
                     // Process the attributes.
                     while (true)
                     {
@@ -125,7 +125,7 @@ public class XMLViewFactory
                 aException.Location.getLineNumber(),
                 aException.Location.getColumnNumber(),
                 aException.Location.getCharacterOffset());
-            
+
             final Run<TokenType> aRun = aView.GetRun(aException.Location.getCharacterOffset());
             if (aRun != null)
             {

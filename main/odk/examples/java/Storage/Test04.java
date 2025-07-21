@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 package storagetesting;
@@ -60,7 +60,7 @@ public class Test04 implements StorageTest {
 				m_aTestHelper.Error( "No valid temporary file was created!" );
 				return false;
 			}
-		
+
 			// create temporary storage based on arbitrary medium
 			// after such a storage is closed it is lost
 			Object oTempStorage = m_xStorageFactory.createInstance();
@@ -82,7 +82,7 @@ public class Test04 implements StorageTest {
 				m_aTestHelper.Error( "Can't create substorage!" );
 				return false;
 			}
-			
+
 			byte pBytes1[] = { 1, 1, 1, 1, 1 };
 
 			// open a new substream, set "MediaType" and "Compressed" properties to it and write some bytes
@@ -104,7 +104,7 @@ public class Test04 implements StorageTest {
 			// open a new substream, set "MediaType" and "Compressed" properties to it and write some bytes
 			if ( !m_aTestHelper.WriteBytesToSubstream( xTempSubStorage2, "SubStream2", "MediaType2", false, pBytes2 ) )
 				return false;
-		
+
 			// set "MediaType" property for storages and check that "IsRoot" and "OpenMode" properties are set correctly
 			if ( !m_aTestHelper.setStorageTypeAndCheckProps( xTempStorage,
 															"MediaType3",
@@ -118,14 +118,14 @@ public class Test04 implements StorageTest {
 															false,
 															ElementModes.ELEMENT_WRITE ) )
 				return false;
-	
+
 			// set "MediaType" property for storages and check that "IsRoot" and "OpenMode" properties are set correctly
 			if ( !m_aTestHelper.setStorageTypeAndCheckProps( xTempSubStorage2,
 															"MediaType5",
 															false,
 															ElementModes.ELEMENT_WRITE ) )
 				return false;
-	
+
 			// create temporary storage based on a previously created temporary file
 			Object pArgs[] = new Object[2];
 			pArgs[0] = (Object) sTempFileURL;
@@ -145,7 +145,7 @@ public class Test04 implements StorageTest {
 			// if storage is not committed before disposing all the changes will be lost
 			if ( !m_aTestHelper.commitStorage( xTempSubStorage2 ) )
 				return false;
-			
+
 			// a storage must be disposed before moving/removing otherwise the access will be denied
 			if ( !m_aTestHelper.disposeStorage( xTempSubStorage2 ) )
 				return false;
@@ -208,7 +208,7 @@ public class Test04 implements StorageTest {
 				m_aTestHelper.Error( "Can't open existing substorage!" );
 				return false;
 			}
-	
+
 			if ( !m_aTestHelper.checkStorageProperties( xResSubStorage1, "MediaType4", false, ElementModes.ELEMENT_READ ) )
 				return false;
 
@@ -248,7 +248,7 @@ public class Test04 implements StorageTest {
 			// remove element and check that it was removed completelly
 			if ( !m_aTestHelper.removeElement( xResStorage, "SubStorage2" ) )
 				return false;
-				
+
 			try
 			{
 				XNameAccess xResAccess = (XNameAccess) UnoRuntime.queryInterface( XNameAccess.class, xResStorage );
@@ -288,6 +288,6 @@ public class Test04 implements StorageTest {
 			m_aTestHelper.Error( "Exception: " + e );
 			return false;
 		}
-    } 
+    }
 
 }

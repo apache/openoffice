@@ -40,19 +40,19 @@ public class ElementReference
         final Location aLocation)
     {
         super(aParent, null, null, aLocation);
-        
+
         maReferencedElementName = aReferencedElementName;
     }
-    
-    
-    
-    
+
+
+
+
     public QualifiedName GetReferencedElementName ()
     {
         return maReferencedElementName;
     }
-    
-    
+
+
 
 
     public Element GetReferencedElement (final SchemaBase aSchema)
@@ -63,44 +63,44 @@ public class ElementReference
         return aElement;
     }
 
-    
-    
-    
+
+
+
     @Override
     public INode GetReferencedNode (final SchemaBase aSchema)
     {
         return GetReferencedElement(aSchema);
     }
 
-        
-    
-    
+
+
+
     @Override
     public NodeType GetNodeType ()
     {
         return NodeType.ElementReference;
     }
 
-    
-    
-    
+
+
+
     @Override
     public void AcceptVisitor (final INodeVisitor aVisitor)
     {
         aVisitor.Visit(this);
     }
 
-    
-    
-    
+
+
+
     @Override
     public String toString ()
     {
         return "element reference to "+maReferencedElementName.GetDisplayName();
     }
-    
-    
-    
-    
+
+
+
+
     private final QualifiedName maReferencedElementName;
 }

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 package fvt.uno.sw.bookmark;
@@ -43,13 +43,13 @@ import com.sun.star.uno.UnoRuntime;
 
 public class CheckBookmarks {
 	private static final UnoApp app = new UnoApp();
-	
+
 	private XTextDocument document = null;
-	
+
 	private String[] initBookmarkNames= new String[]{"bookmark1", "bookmark2", "bookmark3"};
-	
+
 	private String[] initBookmarkContents= new String[]{"bookmark1 content", "bookmark2 content", "bookmark3 content!!!!!!!"};
-	
+
 	@Before
 	public void setUp() throws Exception {
 		app.start();
@@ -69,7 +69,7 @@ public class CheckBookmarks {
 			insertBookmark(document, xTextCursor, initBookmarkNames[i]);
 		}
 	}
-	
+
 	@After
 	public void tearDown() {
 		app.closeDocument(document);
@@ -93,7 +93,7 @@ public class CheckBookmarks {
 			XTextContent xBookmarkAsContent = (XTextContent) UnoRuntime.queryInterface(XTextContent.class, xBookmark);
 			bookmarkContents[i] = xBookmarkAsContent.getAnchor().getString();
 		}
-		
+
 		return bookmarkContents;
 	}
     /**
@@ -120,7 +120,7 @@ public class CheckBookmarks {
 		xTextCursor.gotoEnd(false);
 		xTextCursor.goLeft((short)10, true);
 		xTextCursor.setString("new");
-		
+
 		// Let's see the bookmarks
 		XNameAccess xBookmarks = ((XBookmarksSupplier)UnoRuntime.queryInterface(XBookmarksSupplier.class, document)).getBookmarks();
 		assertArrayEquals("Bookmark name list after updating some content:", expectedBookmarkNames, xBookmarks.getElementNames());
@@ -139,11 +139,11 @@ public class CheckBookmarks {
 		XTextCursor xTextCursor = xText.createTextCursor();
 		xTextCursor.goRight((short)40, true);
 		xTextCursor.setString("");
-		
+
 		// Let's see the bookmarks
 		XNameAccess xBookmarks = ((XBookmarksSupplier)UnoRuntime.queryInterface(XBookmarksSupplier.class, document)).getBookmarks();
 		assertArrayEquals("Bookmark name list after deleting some content:", expectedBookmarkNames, xBookmarks.getElementNames());
 		assertArrayEquals("Bookmark content list after deleting some content:", expectedBookmarkContents, getBookmarkContents(xBookmarks));
 	}
-	
+
 }

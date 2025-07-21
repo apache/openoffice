@@ -38,7 +38,7 @@ import org.apache.openoffice.ooxml.schema.model.schema.SchemaBase;
 
 /** Iterate over all attributes of a given node.
  *  References to attributes and attribute groups and their references are resolved.
- *  
+ *
  *  If you want to iterate over all attributes in a node tree then add an outer NodeIterator.
  */
 public class AttributeIterator
@@ -51,18 +51,18 @@ public class AttributeIterator
         maAttributes = new TreeSet<Attribute>();
         CollectAttributes(aNode, aSchemaBase);
     }
-    
-    
-    
-    
+
+
+
+
     public Iterator<Attribute> iterator ()
     {
         return maAttributes.iterator();
     }
-    
-    
-    
-    
+
+
+
+
     private void CollectAttributes (
         final INode aType,
         final SchemaBase aSchemaBase)
@@ -101,9 +101,9 @@ public class AttributeIterator
                 aAttribute.AcceptVisitor(aVisitor);
         }
     }
-    
-    
-    
-    
+
+
+
+
     private final Set<Attribute> maAttributes;
 }

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 package complex.storages;
@@ -57,7 +57,7 @@ public class TestHelper  {
 			Error( "Can't get XOutputStream implementation from substream '" + sStreamName + "'!" );
 			return false;
 		}
-	
+
 		// get XTrucate implementation from output stream
 		XTruncate xTruncate = (XTruncate) UnoRuntime.queryInterface( XTruncate.class, xOutput );
 		if ( xTruncate == null )
@@ -65,7 +65,7 @@ public class TestHelper  {
 			Error( "Can't get XTruncate implementation from substream '" + sStreamName + "'!" );
 			return false;
 		}
-		
+
 		// write requested byte sequence
 		try
 		{
@@ -139,7 +139,7 @@ public class TestHelper  {
 			Error( "Can't create substream '" + sStreamName + "', exception : " + e + "!" );
 			return false;
 		}
-	
+
 		// get output stream of substream
 		XOutputStream xOutput = xSubStream.getOutputStream();
 		if ( xOutput == null )
@@ -147,7 +147,7 @@ public class TestHelper  {
 			Error( "Can't get XOutputStream implementation from substream '" + sStreamName + "'!" );
 			return false;
 		}
-	
+
 		// get XTrucate implementation from output stream
 		XTruncate xTruncate = (XTruncate) UnoRuntime.queryInterface( XTruncate.class, xOutput );
 		if ( xTruncate == null )
@@ -155,7 +155,7 @@ public class TestHelper  {
 			Error( "Can't get XTruncate implementation from substream '" + sStreamName + "'!" );
 			return false;
 		}
-		
+
 		// write requested byte sequence
 		try
 		{
@@ -234,7 +234,7 @@ public class TestHelper  {
 			Error( "Can't create substream '" + sStreamName + "', exception : " + e + "!" );
 			return false;
 		}
-		
+
 		if ( !WriteBytesToStream( xSubStream, sStreamName, sMediaType, bCompressed, pBytes ) )
 			return false;
 
@@ -366,7 +366,7 @@ public class TestHelper  {
 			Error( "Can't create substream '" + sStreamPath + "', exception : " + e + "!" );
 			return false;
 		}
-		
+
 		if ( !WriteBytesToStream( xSubStream, sStreamPath, sMediaType, bCompressed, pBytes ) )
 			return false;
 
@@ -431,7 +431,7 @@ public class TestHelper  {
 			Error( "Can't create substream '" + sStreamPath + "', exception : " + e + "!" );
 			return false;
 		}
-		
+
 		if ( !WriteBytesToStream( xSubStream, sStreamPath, sMediaType, bCompressed, pBytes ) )
 			return false;
 
@@ -576,7 +576,7 @@ public class TestHelper  {
 			Message( "Optional interface XEncryptionProtectedSource is not implemented, feature can not be tested!" );
 			return -1;
 		}
-			
+
 		try {
 			xStreamEncryption.setEncryptionPassword( sNewPass );
 		}
@@ -634,7 +634,7 @@ public class TestHelper  {
 			Message( "Optional interface XEncryptionProtectedSource is not implemented, feature can not be tested!" );
 			return -1;
 		}
-			
+
 		try {
 			xStreamEncryption.setEncryptionPassword( sNewPass );
 		}
@@ -693,7 +693,7 @@ public class TestHelper  {
 					Error( "'IsRoot' property contains wrong value!" );
 					bOk = false;
 				}
-					
+
 				if ( ( bIsRoot
 				  && ( nPropMode | ElementModes.READ ) != ( nMode | ElementModes.READ ) )
 				  || ( !bIsRoot && ( nPropMode & nMode ) != nMode ) )
@@ -737,13 +737,13 @@ public class TestHelper  {
 							+ sMediaType + "', set '" + sPropMediaType + "' !" );
 					bOk = false;
 				}
-	
+
 				if ( bPropIsRoot != bIsRoot )
 				{
 					Error( "'IsRoot' property contains wrong value!" );
 					bOk = false;
 				}
-					
+
 				if ( ( bIsRoot
 				  && ( nPropMode | ElementModes.READ ) != ( nMode | ElementModes.READ ) )
 				  || ( !bIsRoot && ( nPropMode & nMode ) != nMode ) )
@@ -779,7 +779,7 @@ public class TestHelper  {
 			Error( "Can't get XInputStream implementation from substream '" + sName + "'!" );
 			return false;
 		}
-	
+
 		byte pContents[][] = new byte[1][]; // ???
 
 		// read contents
@@ -834,11 +834,11 @@ public class TestHelper  {
 				bOk = true;
 				if ( !sPropMediaType.equals( sMediaType ) )
 				{
-					Error( "'MediaType' property contains wrong value for stream '" + sName + "',\nexpected: '" 
+					Error( "'MediaType' property contains wrong value for stream '" + sName + "',\nexpected: '"
 							+ sMediaType + "', set: '" + sPropMediaType + "'!" );
 					bOk = false;
 				}
-	
+
 				if ( nPropSize != pBytes.length )
 				{
 					Error( "'Size' property contains wrong value for stream'" + sName + "'!" );
@@ -887,7 +887,7 @@ public class TestHelper  {
 			Error( "Can't open substream '" + sName + "', exception : " + e + "!" );
 			return false;
 		}
-		
+
 		boolean bResult = InternalCheckStream( xSubStream, sName, sMediaType, bCompressed, pBytes, true );
 
 		// free the stream resources, garbage collector may remove the object too late
@@ -919,7 +919,7 @@ public class TestHelper  {
 			Error( "Unexpected exception in case of opening of encrypted stream '" + sName + "' without password: " + e + "!" );
 			return false;
 		}
-	
+
 		String sWrongPass = "11";
 		sWrongPass += sPass;
 		try
@@ -935,7 +935,7 @@ public class TestHelper  {
 			Error( "Unexpected exception in case of opening of encrypted stream '" + sName + "' with wrong password: " + e + "!" );
 			return false;
 		}
-	
+
 		XStream xSubStream = null;
 		try
 		{
@@ -952,7 +952,7 @@ public class TestHelper  {
 			Error( "Can't open encrypted substream '" + sName + "', exception : " + e + "!" );
 			return false;
 		}
-		
+
         // encrypted streams will be compressed always, so after the storing this property is always true,
         // although before the storing it can be set to false ( it is not always clear whether a stream is encrypted
         // before the storing )
@@ -996,7 +996,7 @@ public class TestHelper  {
 			Error( "Can't open substream '" + sPath + "', exception : " + e + "!" );
 			return false;
 		}
-		
+
 		boolean bResult = InternalCheckStream( xSubStream, sPath, sMediaType, bCompressed, pBytes, true );
 
 		// free the stream resources, garbage collector may remove the object too late
@@ -1036,7 +1036,7 @@ public class TestHelper  {
 			Error( "Unexpected exception in case of opening of encrypted stream '" + sPath + "' without password: " + e + "!" );
 			return false;
 		}
-	
+
 		String sWrongPass = "11";
 		sWrongPass += sPass;
 		try
@@ -1053,7 +1053,7 @@ public class TestHelper  {
 			Error( "Unexpected exception in case of opening of encrypted stream '" + sPath + "' with wrong password: " + e + "!" );
 			return false;
 		}
-	
+
 		XStream xSubStream = null;
 		try
 		{
@@ -1070,7 +1070,7 @@ public class TestHelper  {
 			Error( "Can't open encrypted substream '" + sPath + "', exception : " + e + "!" );
 			return false;
 		}
-		
+
         // encrypted streams will be compressed always, so after the storing this property is always true,
         // although before the storing it can be set to false ( it is not always clear whether a stream is encrypted
         // before the storing )
@@ -1121,7 +1121,7 @@ public class TestHelper  {
 
 		return true;
 	}
-	
+
 	public boolean disposeStream( XStream xStream, String sStreamName )
 	{
 		XComponent xComponent = (XComponent) UnoRuntime.queryInterface( XComponent.class, xStream );
@@ -1130,7 +1130,7 @@ public class TestHelper  {
 			Error( "Can't get XComponent implementation from substream '" + sStreamName + "'!" );
 			return false;
 		}
-		
+
 		try
 		{
 			xComponent.dispose();
@@ -1211,7 +1211,7 @@ public class TestHelper  {
 			Error( "Can't close output part of a stream, exception :" + e );
 			return false;
 		}
-		
+
 		return true;
 	}
 
@@ -1253,7 +1253,7 @@ public class TestHelper  {
 	public String CreateTempFile( XMultiServiceFactory xMSF )
 	{
 		String sResult = null;
-	
+
 		// try to get temporary file representation
 		XPropertySet xTempFileProps = null;
 		try

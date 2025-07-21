@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -92,7 +92,7 @@ import util.utils;
 public class SdXImpressDocument extends TestCase {
     XComponent xImpressDoc;
     XComponent xImpressDoc2;
-    
+
     /**
      * Called while disposing a <code>TestEnvironment</code>.
      * Disposes Impress document.
@@ -104,7 +104,7 @@ public class SdXImpressDocument extends TestCase {
         util.DesktopTools.closeDoc(xImpressDoc);
         util.DesktopTools.closeDoc(xImpressDoc2);
     }
-    
+
     /**
      * Creating a Testenvironment for the interfaces to be tested.
      * Creates new impress document that is the instance of the service
@@ -115,11 +115,11 @@ public class SdXImpressDocument extends TestCase {
         PrintWriter log)
         throws StatusException {
         log.println("creating a test environment");
-        
+
         // get a soffice factory object
         SOfficeFactory SOF = SOfficeFactory.getFactory(
             (XMultiServiceFactory) Param.getMSF());
-        
+
         try {
             log.println("creating two impress documents");
             xImpressDoc2 = SOF.createImpressDoc(null);
@@ -128,27 +128,27 @@ public class SdXImpressDocument extends TestCase {
             e.printStackTrace(log);
             throw new StatusException("Couldn't create documents", e);
         }
-        
+
         XModel xModel1 = (XModel) UnoRuntime.queryInterface(XModel.class,
             xImpressDoc);
         XModel xModel2 = (XModel) UnoRuntime.queryInterface(XModel.class,
             xImpressDoc2);
-        
+
         XController cont1 = xModel1.getCurrentController();
         XController cont2 = xModel2.getCurrentController();
-        
+
         cont1.getFrame().setName("cont1");
         cont2.getFrame().setName("cont2");
-        
+
         XSelectionSupplier sel = (XSelectionSupplier) UnoRuntime.queryInterface(
             XSelectionSupplier.class, cont1);
-        
+
         XShape aShape = SOF.createShape(xImpressDoc, 5000, 3500, 7500, 5000,
             "Rectangle");
-        
-        
+
+
         XPropertySet xShapeProps = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, aShape);
-        
+
         try {
             xShapeProps.setPropertyValue("FillStyle", com.sun.star.drawing.FillStyle.SOLID);
             xShapeProps.setPropertyValue("FillTransparence", new Integer(50));
@@ -165,20 +165,20 @@ public class SdXImpressDocument extends TestCase {
             ex.printStackTrace(log);
             throw new StatusException("Couldn't make shape transparent", ex);
         }
-        
+
         DrawTools.getDrawPage(xImpressDoc, 0).add(aShape);
-        
+
         log.println("creating a new environment for drawpage object");
-        
+
         TestEnvironment tEnv = new TestEnvironment(xImpressDoc);
-        
+
         log.println("adding Controller as ObjRelation for XModel");
         tEnv.addObjRelation("CONT2", cont2);
-        
+
         log.println("Adding SelectionSupplier and Shape to select for XModel");
         tEnv.addObjRelation("SELSUPP", sel);
         tEnv.addObjRelation("TOSELECT", aShape);
-        
+
         // create object relation for XPrintJobBroadcaster
         String fileName = utils.getOfficeTempDirSys((XMultiServiceFactory) Param.getMSF())+"printfile.prt" ;
         File f = new File(fileName);
@@ -187,8 +187,8 @@ public class SdXImpressDocument extends TestCase {
         }
         _XPrintJobBroadcaster.MyPrintJobListener listener = new _XPrintJobBroadcaster.MyPrintJobListener(xImpressDoc, fileName);
         tEnv.addObjRelation("XPrintJobBroadcaster.XPrintJobListener", listener);
-        
+
         return tEnv;
     } // finish method getTestEnvironment
-    
+
 } // finish class SdDrawPage

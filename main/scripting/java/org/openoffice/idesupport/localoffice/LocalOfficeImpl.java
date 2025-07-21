@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -40,20 +40,20 @@ import drafts.com.sun.star.script.framework.storage.XScriptStorageManager;
 
 import org.openoffice.idesupport.LocalOffice;
 
-/** 
+/**
  * LocalOfficeImpl represents a connection to the local office.
  *
- * This class is an implementation of LocalOffice ane allows to 
- * get access to some scripting framework releated functionality 
- * of the locally running office. The office has to be started 
- * with options appropriate for establishing local connection. 
+ * This class is an implementation of LocalOffice ane allows to
+ * get access to some scripting framework releated functionality
+ * of the locally running office. The office has to be started
+ * with options appropriate for establishing local connection.
  *
  * @author misha <misha@openoffice.org>
  */
 public final class LocalOfficeImpl
     extends LocalOffice
 {
-    private final static String     STORAGE_MRG_SINGLETON = 
+    private final static String     STORAGE_MRG_SINGLETON =
         "/singletons/drafts.com.sun.star.script.framework.storage.theScriptStorageManager";
 
     private transient String                    mOfficePath;
@@ -70,7 +70,7 @@ public final class LocalOfficeImpl
     /**
      * Connects to the running office.
      *
-     * @param officePath is a platform specific path string 
+     * @param officePath is a platform specific path string
      *   to the office distribution.
      * @param port is a communication port.
      */
@@ -122,10 +122,10 @@ System.out.println("*** LocalOfficeImpl.refreshStorage: DONE");
 
     /**
      * Boot straps UNO.
-     * 
+     *
      * The office has to be started with following string:
      * "-accept=socket,host=localhost,port=<PORT>;urp;StarOffice.ServiceManager"
-     * 
+     *
      * @param port is a communication port.
      */
     private void bootstrap(int port)
@@ -135,8 +135,8 @@ System.out.println("*** LocalOfficeImpl.refreshStorage: DONE");
         mComponentContext   = Bootstrap.createInitialComponentContext(null);
         XUnoUrlResolver urlresolver = UnoUrlResolver.create(mComponentContext);
         object              = urlresolver.resolve(
-            "uno:socket,host=localhost,port=" + 
-            port + 
+            "uno:socket,host=localhost,port=" +
+            port +
             ";urp;StarOffice.ServiceManager");
         mComponentFactory   = (XMultiComponentFactory)UnoRuntime.queryInterface(
             XMultiComponentFactory.class, object);

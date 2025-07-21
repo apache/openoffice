@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -33,7 +33,7 @@ import com.sun.star.uno.UnoRuntime;
 
 /** Factory helper class supporting com.sun.star.lang.XServiceInfo and
     com.sun.star.lang.XSingleComponentFactory.
-    
+
     Attention:
     <br>
     This factory implementation does not support lang.XSingleServiceFactory.
@@ -87,7 +87,7 @@ public class Factory
             impl_class, impl_class.getName(), supported_services );
     }
     /** Writes component's implementation info to given registry key.
-        
+
         @param impl_name
                name of implementation
         @param supported_services
@@ -120,14 +120,14 @@ public class Factory
   	    }
 	    return false;
     }
-    
+
     //==============================================================================================
     private String m_impl_name;
     private String [] m_supported_services;
     private Class m_impl_class;
     private java.lang.reflect.Method m_method;
     private java.lang.reflect.Constructor m_ctor;
-    
+
     private Factory(
         Class impl_class, String impl_name, String supported_services [] )
     {
@@ -136,9 +136,9 @@ public class Factory
         m_impl_class = impl_class;
         m_method = null;
         m_ctor = null;
-        
+
         Class params [] = new Class [] { XComponentContext.class };
-        
+
         try
         {
             // seeking for "public static Object __create( XComponentContext )"
@@ -154,7 +154,7 @@ public class Factory
         catch (Exception exc)
         {
         }
-        
+
         if (null == m_method)
         {
             try
@@ -168,7 +168,7 @@ public class Factory
             }
         }
     }
-    
+
     //______________________________________________________________________________________________
     private final Object instantiate( XComponentContext xContext )
         throws com.sun.star.uno.Exception
@@ -239,7 +239,7 @@ public class Factory
         xInit.initialize( arguments );
         return inst;
     }
-    
+
     // XServiceInfo impl
     //______________________________________________________________________________________________
     public final String getImplementationName()

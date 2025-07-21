@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 package com.sun.star.comp.sdbc;
 
@@ -38,12 +38,12 @@ import com.sun.star.uno.Any;
 public class JavaSQLClob extends ComponentBase implements XClob {
     private final ResourceBasedEventLogger logger;
     private final java.sql.Clob jdbcClob;
-    
+
     public JavaSQLClob(ResourceBasedEventLogger logger, java.sql.Clob jdbcClob) {
         this.logger = logger;
         this.jdbcClob = jdbcClob;
     }
-    
+
     @Override
     protected void postDisposing() {
         try {
@@ -52,7 +52,7 @@ public class JavaSQLClob extends ComponentBase implements XClob {
             logger.log(LogLevel.WARNING, jdbcSQLException);
         }
     }
-    
+
     @Override
     public XInputStream getCharacterStream() throws SQLException {
         try {
@@ -66,7 +66,7 @@ public class JavaSQLClob extends ComponentBase implements XClob {
             throw Tools.toUnoException(this, jdbcSQLException);
         }
     }
-    
+
     @Override
     public String getSubString(long pos, int length) throws SQLException {
         try {
@@ -75,7 +75,7 @@ public class JavaSQLClob extends ComponentBase implements XClob {
             throw Tools.toUnoException(this, jdbcSQLException);
         }
     }
-    
+
     @Override
     public long length() throws SQLException {
         try {
@@ -84,7 +84,7 @@ public class JavaSQLClob extends ComponentBase implements XClob {
             throw Tools.toUnoException(this, jdbcSQLException);
         }
     }
-    
+
     @Override
     public long position(String searchstr, int start) throws SQLException {
         try {
@@ -93,7 +93,7 @@ public class JavaSQLClob extends ComponentBase implements XClob {
             throw Tools.toUnoException(this, jdbcSQLException);
         }
     }
-    
+
     @Override
     public long positionOfClob(XClob arg0, long arg1) throws SQLException {
         // this was put here in CWS warnings01. The previous implementation was defective, as it did ignore

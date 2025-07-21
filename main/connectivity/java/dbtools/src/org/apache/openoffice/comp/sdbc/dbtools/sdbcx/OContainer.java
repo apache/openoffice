@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 package org.apache.openoffice.comp.sdbc.dbtools.sdbcx;
@@ -63,7 +63,7 @@ import com.sun.star.util.XRefreshListener;
 import com.sun.star.util.XRefreshable;
 
 /**
- * Base class for a lazy-loaded collection of database objects. 
+ * Base class for a lazy-loaded collection of database objects.
  */
 public abstract class OContainer extends WeakBase implements
         XNameAccess, XIndexAccess, XEnumerationAccess,
@@ -73,7 +73,7 @@ public abstract class OContainer extends WeakBase implements
     private static final String[] services = new String[] {
             "com.sun.star.sdbcx.Container"
     };
-    
+
     protected final Object lock;
     private final boolean isCaseSensitive;
     private TreeMap<String,XPropertySet> entriesByName;
@@ -98,7 +98,7 @@ public abstract class OContainer extends WeakBase implements
         this.entriesByName = new TreeMap<>(caseSensitiveComparator);
         this.namesByIndex = new ArrayList<>();
     }
-    
+
     public OContainer(Object lock, boolean isCaseSensitive, List<String> names) throws ElementExistException {
         this(lock, isCaseSensitive);
         for (String name : names) {
@@ -109,7 +109,7 @@ public abstract class OContainer extends WeakBase implements
             namesByIndex.add(name);
         }
     }
-    
+
     public void refill(List<String> names) {
         // We only add new elements, as per the C++ implementation.
         for (String name : names) {
@@ -119,14 +119,14 @@ public abstract class OContainer extends WeakBase implements
             }
         }
     }
-    
+
     // Would be from XComponent ;)
-    
+
     public void dispose() {
         EventObject event = new EventObject(this);
         containerListeners.disposeAndClear(event);
         refreshListeners.disposeAndClear(event);
-        
+
         synchronized (lock) {
             for (XPropertySet value : entriesByName.values()) {
                 CompHelper.disposeComponent(value);
@@ -137,16 +137,16 @@ public abstract class OContainer extends WeakBase implements
     }
 
     // XServiceInfo
-    
+
     public String getImplementationName() {
         return getClass().getName();
     }
-    
+
     @Override
     public String[] getSupportedServiceNames() {
         return services.clone();
     }
-    
+
     @Override
     public boolean supportsService(String serviceName) {
         for (String service : getSupportedServiceNames()) {
@@ -156,9 +156,9 @@ public abstract class OContainer extends WeakBase implements
         }
         return false;
     }
-    
+
     // XIndexAccess
-    
+
     @Override
     public Object getByIndex(int index) throws IndexOutOfBoundsException, WrappedTargetException {
         synchronized (lock) {
@@ -168,16 +168,16 @@ public abstract class OContainer extends WeakBase implements
             return getObject(index);
         }
     }
-    
+
     @Override
     public int getCount() {
         synchronized (lock) {
             return namesByIndex.size();
         }
     }
-    
+
     // XNameAccess
-    
+
     @Override
     public boolean hasByName(String name) {
         synchronized (lock) {
@@ -196,7 +196,7 @@ public abstract class OContainer extends WeakBase implements
             return getObject(indexOf(name));
         }
     }
-    
+
     @Override
     public String[] getElementNames() {
         synchronized (lock) {
@@ -204,9 +204,9 @@ public abstract class OContainer extends WeakBase implements
             return namesByIndex.toArray(names);
         }
     }
-    
+
     // XRefreshable
-    
+
     @Override
     public void refresh() {
         Iterator<?> iterator;
@@ -218,7 +218,7 @@ public abstract class OContainer extends WeakBase implements
             namesByIndex.clear();
 
             impl_refresh();
-            
+
             iterator = refreshListeners.iterator();
         }
         if (iterator == null) {
@@ -238,48 +238,48 @@ public abstract class OContainer extends WeakBase implements
             refreshListeners.add(listener);
         }
     }
-    
+
     @Override
     public void removeRefreshListener(XRefreshListener listener) {
         synchronized (lock) {
             refreshListeners.remove(listener);
         }
     }
-    
+
     // XDataDescriptorFactory
-    
+
     @Override
     public XPropertySet createDataDescriptor() {
         synchronized (lock) {
             return createDescriptor();
         }
     }
-    
+
     // XAppend
-    
+
     @Override
     public void appendByDescriptor(XPropertySet descriptor) throws SQLException, ElementExistException {
         Iterator<?> iterator;
         ContainerEvent event;
         synchronized (lock) {
             String name = getNameForObject(descriptor);
-            
+
             if (entriesByName.containsKey(name)) {
                 throw new ElementExistException(name, this);
             }
-            
+
             XPropertySet newlyCreated = appendObject(name, descriptor);
             if (newlyCreated == null) {
                 throw new RuntimeException();
             }
-            
+
             name = getNameForObject(newlyCreated);
             XPropertySet value = entriesByName.get(name);
             if (value == null) { // this may happen when the derived class included it itself
                 entriesByName.put(name, newlyCreated);
                 namesByIndex.add(name);
             }
-            
+
             // notify our container listeners
             event = new ContainerEvent(this, name, newlyCreated, null);
             iterator = containerListeners.iterator();
@@ -288,9 +288,9 @@ public abstract class OContainer extends WeakBase implements
             XContainerListener listener = (XContainerListener) iterator.next();
             listener.elementInserted(event);
         }
-        
+
     }
-    
+
     public void insertElement(String name, XPropertySet element) {
         synchronized (lock) {
             if (!entriesByName.containsKey(name)) {
@@ -299,9 +299,9 @@ public abstract class OContainer extends WeakBase implements
             }
         }
     }
-    
+
     // XDrop
-    
+
     @Override
     public void dropByName(String name) throws SQLException, NoSuchElementException {
         synchronized (lock) {
@@ -321,8 +321,8 @@ public abstract class OContainer extends WeakBase implements
             dropImpl(index);
         }
     }
-    
-    
+
+
     private void dropImpl(int index) throws SQLException {
         dropImpl(index, true);
     }
@@ -335,16 +335,16 @@ public abstract class OContainer extends WeakBase implements
         namesByIndex.remove(index);
         XPropertySet propertySet = entriesByName.remove(name);
         CompHelper.disposeComponent(propertySet);
-        
+
         ContainerEvent event = new ContainerEvent(this, name, null, null);
         for (Iterator<?> iterator = containerListeners.iterator(); iterator.hasNext(); ) {
             XContainerListener listener = (XContainerListener) iterator.next();
             listener.elementRemoved(event);
         }
     }
-    
+
     // XColumnLocate
-    
+
     @Override
     public int findColumn(String name) throws SQLException {
         if (!entriesByName.containsKey(name)) {
@@ -354,10 +354,10 @@ public abstract class OContainer extends WeakBase implements
         }
         return indexOf(name) + 1; // because columns start at one
     }
-    
-    
+
+
     // XEnumerationAccess
-    
+
     @Override
     public XEnumeration createEnumeration() {
         return new OEnumerationByIndex(this);
@@ -367,24 +367,24 @@ public abstract class OContainer extends WeakBase implements
     public void addContainerListener(XContainerListener listener) {
         containerListeners.add(listener);
     }
-    
+
     @Override
     public void removeContainerListener(XContainerListener listener) {
         containerListeners.remove(listener);
     }
-    
+
     @Override
     public Type getElementType() {
         return new Type(XPropertySet.class);
     }
-    
+
     @Override
     public boolean hasElements() {
         synchronized (lock) {
             return !entriesByName.isEmpty();
         }
     }
-    
+
     protected int indexOf(String name) {
         for (int i = 0; i < namesByIndex.size(); i++) {
             if (namesByIndex.get(i).equals(name)) {
@@ -393,7 +393,7 @@ public abstract class OContainer extends WeakBase implements
         }
         return -1;
     }
-    
+
     /** return the object, if not existent it creates it.
      * @param  index
      *     The index of the object to create.
@@ -416,12 +416,12 @@ public abstract class OContainer extends WeakBase implements
         }
         return propertySet;
     }
-    
+
     /** clones the given descriptor
-     * 
+     *
      * The method calls createDescriptor to create a new, empty descriptor, and then copies all properties from
      * descriptor to the new object, which is returned.
-     * 
+     *
      * This method might come handy in derived classes for implementing appendObject, when the object
      * is not actually appended to any backend (e.g. for the columns collection of a descriptor object itself,
      * where there is not yet a database backend to append the column to).
@@ -431,7 +431,7 @@ public abstract class OContainer extends WeakBase implements
         CompHelper.copyProperties(descriptor, newDescriptor);
         return newDescriptor;
     }
-    
+
     protected boolean isCaseSensitive() {
         return isCaseSensitive;
     }
@@ -454,17 +454,17 @@ public abstract class OContainer extends WeakBase implements
 
     /// Called when XDrop was called.
     protected abstract void dropObject(int index, String name) throws SQLException;
-    
+
     // The implementing class should refresh their elements.
     protected abstract void impl_refresh();
-    
+
     /** Will be called when a new object should be generated by a call of createDataDescriptor;
-     * 
+     *
      * @return
      * the returned object, empty, to be filled, and added to the collection.
      */
     protected abstract XPropertySet createDescriptor();
-    
+
     /** appends an object described by a descriptor, under a given name
         @param _rForName
             is the name under which the object should be appended. Guaranteed to not be empty.

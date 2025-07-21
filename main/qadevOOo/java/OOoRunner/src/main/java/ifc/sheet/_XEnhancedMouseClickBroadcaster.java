@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -55,13 +55,13 @@ public class _XEnhancedMouseClickBroadcaster extends MultiMethodTest {
     protected boolean mouseReleased = false;
     protected XEnhancedMouseClickHandler listener = new MyListener();
     private XModel docModel = null;
-    
+
     public void before() {
         docModel = (XModel) UnoRuntime.queryInterface(
                 XModel.class,tEnv.getObjRelation("FirstModel"));
         DesktopTools.bringWindowToFront(docModel);
     }
-    
+
     public void _addEnhancedMouseClickHandler() {
         oObj.addEnhancedMouseClickHandler(listener);
         clickOnSheet();
@@ -88,19 +88,19 @@ public class _XEnhancedMouseClickBroadcaster extends MultiMethodTest {
     protected boolean clickOnSheet() {
         log.println("try to open context menu...");
         AccessibilityTools at = new AccessibilityTools();
-        
+
         XWindow xWindow = at.getCurrentWindow((XMultiServiceFactory)tParam.getMSF(), docModel);
-        
+
         XAccessible xRoot = at.getAccessibleObject(xWindow);
-        
+
         XInterface oObj = at.getAccessibleObjectForRole(xRoot, AccessibleRole.PANEL);
-        
+
         XAccessibleComponent window = (XAccessibleComponent) UnoRuntime.queryInterface(
                 XAccessibleComponent.class, oObj);
-        
+
         Point point = window.getLocationOnScreen();
         Rectangle rect = window.getBounds();
-        
+
         log.println("klick mouse button...");
         try {
             Robot rob = new Robot();
@@ -118,11 +118,11 @@ public class _XEnhancedMouseClickBroadcaster extends MultiMethodTest {
             rob.mousePress(InputEvent.BUTTON1_MASK);
             System.out.println("Release Button");
             rob.mouseRelease(InputEvent.BUTTON1_MASK);
-            System.out.println("done "+rob.getAutoDelay());            
+            System.out.println("done "+rob.getAutoDelay());
         } catch (java.awt.AWTException e) {
             log.println("couldn't press mouse button");
         }
-                
+
 
         return true;
     }

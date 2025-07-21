@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -49,7 +49,7 @@ class PrivateLocalOfficeConnection extends com.sun.star.comp.beans.LocalOfficeCo
 
 public class OOoBeanTest
 {
-    
+
     /** For X-Windows we need to prolong the time between painting windows. Because
         it takes longer than on Windows.
     */
@@ -70,7 +70,7 @@ public class OOoBeanTest
     {
         boolean ret = false;
         String os = System.getProperty("os.name");
-        if (os != null) 
+        if (os != null)
         {
             os = os.trim();
             if (os.toLowerCase().indexOf("win") == 0)
@@ -193,14 +193,14 @@ public class OOoBeanTest
             {
                 fail("Sizing error: Frame moved.");
             }
-                            
+
             capturer.grabTwo(f.getClientArea());
             if (capturer.compare() == false)
             {
                 fail("Painting error: Move frame to a different position.");
                 capturer.writeImages();
             }
-            
+
             //move Window down
             Dimension dim = Toolkit.getDefaultToolkit().getScreenSize();
             int maxY = dim.height - f.getBounds().height;
@@ -223,7 +223,7 @@ public class OOoBeanTest
             }
 
             //obscure the window and make it visible again
-            
+
             oldPosition = f.getBounds();
 
             Rectangle pos = new Rectangle(oldPosition.x - 50, oldPosition.y - 50,
@@ -281,7 +281,7 @@ public class OOoBeanTest
             {
                 fail("Sizing error.");
             }
-            
+
         }
         finally
         {
@@ -347,7 +347,7 @@ public class OOoBeanTest
                 f.removeOOoBean();
                 f.addOOoBean();
             }
-            
+
             f.goToStart();
             f.pageDown();
             Thread.sleep(getSleepTime(200));
@@ -359,7 +359,7 @@ public class OOoBeanTest
                        "repeatedly to java.lang.Frame.");
                 capturer.writeImages();
             }
-            
+
             if (f.checkUnoFramePosition() == false)
             {
                 fail("Sizing error.");
@@ -402,7 +402,7 @@ public class OOoBeanTest
                 bean.loadFromURL("private:factory/swriter", null);
                 // #1
                 Thread.sleep(1000);
-                
+
                 StringBuffer buf = new StringBuffer(1000);
                 for (int i = 0; i < 1; i++)
                 {
@@ -415,7 +415,7 @@ public class OOoBeanTest
                     bean.aquireSystemWindow();
 //                    frame.validate();
                 }
-                
+
                 if (isWindows() == false)
                 {
                     Thread.sleep(5000);
@@ -425,7 +425,7 @@ public class OOoBeanTest
                 roby.keyPress(KeyEvent.VK_H);
                 roby.keyRelease(KeyEvent.VK_H);
                 buf.append("h");
-                
+
                 String s = getText(bean);
                 if ( ! s.equals(buf.toString()))
                 {
@@ -440,12 +440,12 @@ public class OOoBeanTest
                 {
                     Thread.sleep(2000);
                 }
-            
+
             } finally {
                 bean.stopOOoConnection();
                 frame.dispose();
             }
-        }   
+        }
     }
 
     /** Tests focus problem just like test6, but the implementation is a little
@@ -473,7 +473,7 @@ public class OOoBeanTest
                 Thread.sleep(1000);
                 StringBuffer buf = new StringBuffer(1000);
                 int i = 0;
-                
+
                 for (; i < 1; i++)
                 {
                 EventQueue q = Toolkit.getDefaultToolkit().getSystemEventQueue();
@@ -481,14 +481,14 @@ public class OOoBeanTest
                         public void run() {
                             try {
 
-                            bean.releaseSystemWindow(); 
+                            bean.releaseSystemWindow();
                             frame.remove(bean);
                             frame.validate();
 
                             } catch (Exception e) {
                                 e.printStackTrace();
                             }
-                            
+
                             }
                         });
                 // #2
@@ -505,11 +505,11 @@ public class OOoBeanTest
                             }
                             }
                         });
-                    
+
                 // #3
                 Thread.sleep(1000);
                 }
-                
+
                 if (isWindows() == false)
                 {
                     Thread.sleep(5000);
@@ -528,7 +528,7 @@ public class OOoBeanTest
                 roby.waitForIdle();
 
                 buf.append("h");
-                Thread.sleep(1000);                
+                Thread.sleep(1000);
                 String s = getText(bean);
                 System.out.println(" getText: " + s);
                 if ( ! s.equals(buf.toString()))
@@ -543,7 +543,7 @@ public class OOoBeanTest
                     roby.waitForIdle();
 
                     String sH = "h";
-                    Thread.sleep(1000);                
+                    Thread.sleep(1000);
                     String s2 = getText(bean);
 
                     if ( ! sH.equals(s2))
@@ -561,7 +561,7 @@ public class OOoBeanTest
                 {
                     //                   Thread.sleep(2000);
                 }
-            
+
             } finally {
                 bean.stopOOoConnection();
                 frame.dispose();
@@ -631,7 +631,7 @@ public class OOoBeanTest
             c.gridx = 0;
             c.gridy = 0;
             f.add(bp1, c);
-            
+
             c.gridx = 1;
             c.insets = new Insets(0, 0, 0, 0);
             f.add(bp2, c);

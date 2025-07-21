@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -32,11 +32,11 @@ import com.sun.star.wizards.common.PropertyNames;
  * CGTopic means: Configuration Group Topic.
  * This object encapsulates a configuration group with topic information.
  * Since the topics gui conftrol uses its own data model, there is
- * also code here to convert from the data model to CGTopic object (the constructor) 
+ * also code here to convert from the data model to CGTopic object (the constructor)
  * and vice versa (setDataToRow method - used when loading the last session...)
  */
 public class CGTopic extends ConfigGroup implements Indexable {
-    
+
     /** sort order  */
     public int cp_Index;
     /** topic name  */
@@ -45,9 +45,9 @@ public class CGTopic extends ConfigGroup implements Indexable {
     public String cp_Responsible;
     /** time */
     public String cp_Time;
-    
+
     public CGTopic() {}
-    
+
     /**
      * create a new CGTopic object with data from the given row.
      * the row object is a PropertyValue array, as used
@@ -62,11 +62,11 @@ public class CGTopic extends ConfigGroup implements Indexable {
         cp_Responsible = (String)pv[2].Value;
         cp_Time = (String)pv[3].Value;
     }
-    
+
     /**
      * copies the data in this CGTopic object
      * to the given row.
-     * @param row the row object (PropertyValue array) to 
+     * @param row the row object (PropertyValue array) to
      * copy the data to.
      */
     public void setDataToRow(Object row) {
@@ -76,9 +76,9 @@ public class CGTopic extends ConfigGroup implements Indexable {
         pv[2].Value = cp_Responsible;
         pv[3].Value = cp_Time;
     }
-    
+
     public int getIndex() {
         return cp_Index;
     }
-    
+
 }

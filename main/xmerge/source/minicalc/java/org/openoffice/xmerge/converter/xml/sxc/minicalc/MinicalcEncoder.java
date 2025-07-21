@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -89,7 +89,7 @@ final class MinicalcEncoder extends SpreadsheetEncoder {
      *  @throws  IOException  If any I/O error occurs.
      */
     MinicalcEncoder(String name, String password) throws IOException {
-        
+
         super(name, password);
 
         try {
@@ -98,12 +98,12 @@ final class MinicalcEncoder extends SpreadsheetEncoder {
         catch (JMCException e) {
             Debug.log(Debug.ERROR, "new Workbook threw exception:" + e.getMessage());
             throw new IOException(e.getMessage());
-        }    
+        }
     }
 
 
     /**
-     *  This method creates a WorkSheet belonging to the 
+     *  This method creates a WorkSheet belonging to the
      *  WorkBook.
      *
      *  @param  sheetName  The name of the WorkSheet.
@@ -160,7 +160,7 @@ final class MinicalcEncoder extends SpreadsheetEncoder {
 
         // Get the number of records in the WorkSheet
         int numRecords = ws.getNumberOfRecords();
-    
+
         // Create the Record array
         Record[] allRecords = new Record[numRecords];
 
@@ -224,14 +224,14 @@ final class MinicalcEncoder extends SpreadsheetEncoder {
                 // We are stripping out the ']'
                 inBrace = false;
                 break;
-                
+
             case ':':
-                // We have a cell range reference.  
+                // We have a cell range reference.
                 // May need to strip out the leading '.'
-                if (inBrace) 
+                if (inBrace)
                     firstCharAfterColon = true;
                 outFormula.append(inFormula.charAt(in));
-                break;                    
+                break;
 
             case '.':
                 if (inBrace == true) {
@@ -242,7 +242,7 @@ final class MinicalcEncoder extends SpreadsheetEncoder {
                         // and a cell reference.  MiniCalc uses a ! as
                         // this type of separator.
                         outFormula.append('!');
-                    } 
+                    }
                     else {
                         firstCharAfterBrace = false;
                         firstCharAfterColon = false;
@@ -258,7 +258,7 @@ final class MinicalcEncoder extends SpreadsheetEncoder {
                 }
 
             case ';':
-                // StarOffice XML format uses ';' as a separator.  MiniCalc (and 
+                // StarOffice XML format uses ';' as a separator.  MiniCalc (and
                 // many spreadsheets) use ',' as a separator instead.
                 outFormula.append(',');
                 break;
@@ -288,17 +288,17 @@ final class MinicalcEncoder extends SpreadsheetEncoder {
      *  @throws  IOException  If any I/O error occurs.
      */
     public void addCell(int row, int column, Format fmt, String cellContents) throws IOException {
-        
-        CellAttributes ca = new CellAttributes(getFormat(fmt), 
+
+        CellAttributes ca = new CellAttributes(getFormat(fmt),
                                                 fmt.getForeground(),
                                                 fmt.getBackground());
        	if (cellContents.startsWith("=")) {
 				cellContents = parseFormula(cellContents);
 				Debug.log(Debug.INFO, "YAHOO Found Formula" + cellContents);
 		}
- 
+
         CellDescriptor cellDes = new CellDescriptor(row, column, ca, cellContents);
-        
+
         try {
             ws.putCell(cellDes);
         }
@@ -307,7 +307,7 @@ final class MinicalcEncoder extends SpreadsheetEncoder {
             throw new IOException(jmce.getMessage());
         }
     }
-    
+
 
     /**
      *  Set the width of the columns in the WorkBook.
@@ -318,30 +318,30 @@ final class MinicalcEncoder extends SpreadsheetEncoder {
     public void setColumnWidths(IntArrayList columnWidths) throws IOException {
         // Get the number of columns
         int numColumns = columnWidths.size();
-        
+
         // Return if there are no columns in the listr
         if (numColumns == 0) {
             return;
         }
-            
+
         // Need to set the FORM_FLAGS_NONDEFAULT flag for the column widths
         // to be used in MiniCalc
         long format = JMCconstants.FORM_FLAGS_NONDEFAULT;
-        
+
         CellAttributes ca = new CellAttributes(format);
-        
+
         try {
             for (int i = 0; i < numColumns; i++) {
                 // Get the column width in Palm pixels
                 int width = columnWidths.get(i) * pixelsPerChar;
-                
+
                 // Check limits on column width
                 if (width < minWidth) {
                     width = minWidth;
                 } else if (width > maxWidth) {
                     width = maxWidth;
                 }
-                
+
                 // Add the column descriptor to the WorkSheet
                 ws.putColumn(i + 1, width, ca);
             }
@@ -352,7 +352,7 @@ final class MinicalcEncoder extends SpreadsheetEncoder {
         }
     }
 
-    
+
     /**
      *  This method sets the format of a cell to <i>string</i>.
      *
@@ -491,7 +491,7 @@ final class MinicalcEncoder extends SpreadsheetEncoder {
 
         return format;
     }
-    
+
 
     /**
      *  This method clears out the format bits associated with
@@ -514,8 +514,8 @@ final class MinicalcEncoder extends SpreadsheetEncoder {
 
         return format;
     }
-    
-    
+
+
     /**
      *  Set a cell's formatting options via a separately create
      *  <code>Format</code> object.
@@ -527,7 +527,7 @@ final class MinicalcEncoder extends SpreadsheetEncoder {
      */
     public void setCellFormat(int row, int column, Format fmt) {
     }
-    
+
 
     /**
      *  Get the names of the sheets in the WorkBook.
@@ -537,16 +537,16 @@ final class MinicalcEncoder extends SpreadsheetEncoder {
     public String getSheetName(int sheet) {
         return wb.getWorksheet(sheet).getName();
     }
-    
+
 
     /*
      *  This method returns a MiniCalc style format from the
      *  <code>Format</code> object.
-     */ 
-    private long getFormat(Format fmt) 
+     */
+    private long getFormat(Format fmt)
     {
         String category = fmt.getCategory();
-        
+
         if (category.equalsIgnoreCase(OfficeConstants.CELLTYPE_BOOLEAN)) {
             return setFormatBoolean(0);
         }

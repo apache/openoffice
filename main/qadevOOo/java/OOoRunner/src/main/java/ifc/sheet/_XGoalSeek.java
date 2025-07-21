@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -66,7 +66,7 @@ public class _XGoalSeek extends MultiMethodTest {
         if (ex != null) {
             throw new StatusException("Could not get a sheet.", ex);
         }
-        
+
         // set value and formula
         try {
             xSheet.getCellByPosition(3, 4).setValue(9);
@@ -78,7 +78,7 @@ public class _XGoalSeek extends MultiMethodTest {
             throw new StatusException("Could not get set formulas on the sheet.", e);
         }
     }
-    
+
     public void _seekGoal() {
         boolean result = true;
         double divergence = 0.01;
@@ -86,7 +86,7 @@ public class _XGoalSeek extends MultiMethodTest {
         log.println("Goal Result: " + goal.Result + "   Divergence: " + goal.Divergence);
         result &= goal.Divergence < divergence;
         result &= goal.Result > 16 - divergence || goal.Result < 16 + divergence;
-        
+
         goal = oObj.seekGoal(aFormula, aValue, "-4");
         log.println("Goal Result: " + goal.Result + "   Divergence: " + goal.Divergence);
         result &= goal.Divergence > 1/divergence;
@@ -102,7 +102,7 @@ public class _XGoalSeek extends MultiMethodTest {
         log.println("Goal Result: " + goal.Result + "   Divergence: " + goal.Divergence);
         result &= goal.Divergence < divergence;
         result &= goal.Result > 16 - divergence || goal.Result < 16 + divergence;
-        
+
         tRes.tested("seekGoal()", result);
     }
 }

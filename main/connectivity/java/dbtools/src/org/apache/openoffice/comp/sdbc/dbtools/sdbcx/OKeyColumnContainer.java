@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 package org.apache.openoffice.comp.sdbc.dbtools.sdbcx;
@@ -40,17 +40,17 @@ import com.sun.star.uno.UnoRuntime;
 
 public class OKeyColumnContainer extends OContainer {
     private OKey key;
-    
+
     public OKeyColumnContainer(Object lock, OKey key, List<String> columnNames) throws ElementExistException {
         super(lock, true, columnNames);
         this.key = key;
     }
-    
+
     @Override
     protected XPropertySet createDescriptor() {
         return new SdbcxKeyColumnDescriptor(isCaseSensitive());
     }
-    
+
     @Override
     protected XPropertySet createObject(String name) throws SQLException {
         try {
@@ -58,7 +58,7 @@ public class OKeyColumnContainer extends OContainer {
             Object catalog = tableProperties.getPropertyValue(PropertyIds.CATALOGNAME.name);
             String schema = AnyConverter.toString(tableProperties.getPropertyValue(PropertyIds.SCHEMANAME.name));
             String table = AnyConverter.toString(tableProperties.getPropertyValue(PropertyIds.NAME.name));
-            
+
             XResultSet results = key.getTable().getConnection().getMetaData().getImportedKeys(catalog, schema, table);
             String refColumnName = "";
             if (results != null) {
@@ -70,7 +70,7 @@ public class OKeyColumnContainer extends OContainer {
                     }
                 }
             }
-            
+
             XPropertySet ret = null;
             // now describe the column name and set its related column
             results = key.getTable().getConnection().getMetaData().getColumns(catalog, schema, table, name);
@@ -91,7 +91,7 @@ public class OKeyColumnContainer extends OContainer {
                         }
                         ret = new OKeyColumn(refColumnName, name, typeName,
                                 "", columnDef, nul, size, dec, dataType, false, false, false, isCaseSensitive());
-                        
+
                     }
                 }
             }
@@ -100,16 +100,16 @@ public class OKeyColumnContainer extends OContainer {
             throw new SQLException("Error", this, StandardSQLState.SQL_GENERAL_ERROR.text(), 0, exception);
         }
     }
-    
+
     @Override
     protected void impl_refresh() {
     }
-    
+
     @Override
     protected XPropertySet appendObject(String _rForName, XPropertySet descriptor) throws SQLException {
         throw new SQLException("Cannot change a key's columns, please delete and re-create the key instead");
     }
-    
+
     @Override
     protected void dropObject(int index, String name) throws SQLException {
         throw new SQLException("Cannot change a key's columns, please delete and re-create the key instead");

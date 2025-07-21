@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -118,7 +118,7 @@ public class _XPagePrintable extends MultiMethodTest {
 
         try {
             XMultiServiceFactory xMSF = (XMultiServiceFactory)tParam.getMSF();
-            
+
             String printFile = utils.getOfficeTemp(xMSF) + "XPagePrintable.prt";
             log.println("Printing to : "+ printFile);
 
@@ -129,21 +129,21 @@ public class _XPagePrintable extends MultiMethodTest {
             firstProp.Value = printFile;
             firstProp.State = com.sun.star.beans.PropertyState.DEFAULT_VALUE;
             PrintOptions[0] = firstProp;
-            
+
             if (! util.utils.deleteFile(xMSF, printFile)){
                 log.println("ERROR: could not remove '" + printFile + "'");
                 res = false;
             }
-            
+
             oObj.printPages(PrintOptions);
-            
+
             util.utils.shortWait(tParam.getInt(util.PropertyName.SHORT_WAIT));
-            
+
             if (! util.utils.fileExists(xMSF, printFile)){
                 log.println("ERROR: could not find '" + printFile + "'");
                 res = false;
             }
-            
+
         } catch (com.sun.star.lang.IllegalArgumentException ex) {
             log.println("Exception while checking 'printPages'");
             res = false;

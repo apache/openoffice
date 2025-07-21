@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -48,7 +48,7 @@ public class ControlMenuController extends TestCase {
      *
     protected void cleanup(TestParameters tParam, PrintWriter log) {
         log.println("    disposing xTextDoc ");
-        
+
         try {
             XCloseable closer = (XCloseable) UnoRuntime.queryInterface(
             XCloseable.class, xTextDoc);
@@ -62,7 +62,7 @@ public class ControlMenuController extends TestCase {
 
     /**
      * Create test environment.
-     */    
+     */
     protected TestEnvironment createTestEnvironment(TestParameters tParam, PrintWriter log) {
         TestEnvironment tEnv = null;
         XMultiServiceFactory xMSF = (XMultiServiceFactory)tParam.getMSF();
@@ -73,7 +73,7 @@ public class ControlMenuController extends TestCase {
             e.printStackTrace(log);
             throw new StatusException("Could not create object 'ControlMenuController'", e);
         }
-            
+
 
 /*        log.println("Creating instance...");
 
@@ -89,7 +89,7 @@ public class ControlMenuController extends TestCase {
         XModel xModel = (XModel)UnoRuntime.queryInterface(XModel.class, xTextDoc);
 
         // the supplier is available from the model
-        XUIConfigurationManagerSupplier xSupplier = 
+        XUIConfigurationManagerSupplier xSupplier =
                 (XUIConfigurationManagerSupplier)UnoRuntime.queryInterface(
                 XUIConfigurationManagerSupplier.class, xModel);
 
@@ -98,9 +98,9 @@ public class ControlMenuController extends TestCase {
         // just to make sure, it's the right one.
         log.println("TestObject: " + util.utils.getImplName(xManager));
         tEnv = new TestEnvironment(xManager); */
-        log.println("TestObject: " + utils.getImplName(oObj)); 
+        log.println("TestObject: " + utils.getImplName(oObj));
         tEnv = new TestEnvironment(oObj);
         return tEnv;
     }
-    
+
 }

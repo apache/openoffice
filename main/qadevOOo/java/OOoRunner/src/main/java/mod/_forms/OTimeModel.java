@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -131,20 +131,20 @@ public class OTimeModel extends GenericModelTest {
      * @param log the log writer
      */
     protected void initialize(TestParameters tParam, PrintWriter log) {
-        
+
         super.initialize(tParam, log);
 
         super.m_ChangePropertyName = "Time";
-        
+
         super.m_kindOfControl="TimeField";
-        
+
         super.m_ObjectName = "stardiv.one.form.component.TimeField";
 
-        NamedValue DataField = new NamedValue(); 
-        DataField.Name = "DataField"; 
-        DataField.Value = DBTools.TST_INT_F; 
+        NamedValue DataField = new NamedValue();
+        DataField.Name = "DataField";
+        DataField.Value = DBTools.TST_INT_F;
         super.m_propertiesToSet.add(DataField);
-        
+
         super.m_LCShape_Type = "FixedText";
 
     }    /**
@@ -165,19 +165,19 @@ public class OTimeModel extends GenericModelTest {
      * @param log the log writer
      * @return lib.TestEnvironment
      */
-    protected synchronized TestEnvironment createTestEnvironment(TestParameters Param, 
+    protected synchronized TestEnvironment createTestEnvironment(TestParameters Param,
                                                                  PrintWriter log) {
         TestEnvironment tEnv = super.createTestEnvironment(Param, log);
 
         HashSet exclude = new HashSet();
-        
+
         exclude.add("FormatKey");
 
-        tEnv.addObjRelation("XUpdateBroadcaster.Checker", 
+        tEnv.addObjRelation("XUpdateBroadcaster.Checker",
                             new Checker(m_XFormLoader, m_XPS, m_XCtrl, m_ChangePropertyName, m_ChangePropertyValue));
         return tEnv;
     }
-    
+
     static class Checker implements UpdateChecker {
             private short lastItem = (short) 0;
             XLoadable formLoaderF = null;
@@ -185,7 +185,7 @@ public class OTimeModel extends GenericModelTest {
             XInterface ctrl = null;
             String ChangePropertyName = null;
             Object ChangePropertyValue = null;
-            
+
             public Checker(XLoadable xl, XPropertySet ps, XInterface ctrl, String ChangePropertyName, Object ChangePropertyValue) {
                 formLoaderF = xl;
                 this.ps = ps;
@@ -193,7 +193,7 @@ public class OTimeModel extends GenericModelTest {
                 this.ChangePropertyName=ChangePropertyName;
                 this.ChangePropertyValue=ChangePropertyValue;
             }
-            
+
             private int lastTime = 0;
 
             public void update() throws com.sun.star.uno.Exception {
@@ -214,7 +214,7 @@ public class OTimeModel extends GenericModelTest {
                 XBoundComponent bound = (XBoundComponent) UnoRuntime.queryInterface(
                                                 XBoundComponent.class, ctrl);
                 XResultSetUpdate update = (XResultSetUpdate) UnoRuntime.queryInterface(
-                                                  XResultSetUpdate.class, 
+                                                  XResultSetUpdate.class,
                                                   formLoaderF);
 
                 bound.commit();
@@ -226,7 +226,7 @@ public class OTimeModel extends GenericModelTest {
 
                 Integer getT = (Integer) ps.getPropertyValue("Time");
 
-                return (getT != null) && 
+                return (getT != null) &&
                        (Math.abs(getT.intValue() - lastTime) < 100);
             }
     }

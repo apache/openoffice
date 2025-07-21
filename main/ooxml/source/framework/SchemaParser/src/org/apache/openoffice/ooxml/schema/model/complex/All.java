@@ -38,14 +38,14 @@ public class All
         final Location aLocation)
     {
         super(aParent, null, aLocation);
-        
+
         assert(CheckParent(aParent));
     }
 
 
-    
-    
-    /** Occurrence values of an 'all' node must be 
+
+
+    /** Occurrence values of an 'all' node must be
      *  min=(0,1)
      *  max=1.
      */
@@ -57,7 +57,7 @@ public class All
             // Missing occurrence parent means that min and max have the default
             // values of 0 and 1, which is valid.
             return true;
-        
+
         final OccurrenceIndicator aIndicator = (OccurrenceIndicator)aParent;
         if (aIndicator.GetMinimum() > 1)
             return false;
@@ -66,28 +66,28 @@ public class All
         else
             return true;
     }
-    
-    
-    
-    
+
+
+
+
     @Override
     public void AcceptVisitor (final INodeVisitor aVisitor)
     {
         aVisitor.Visit(this);
     }
-    
-    
-    
+
+
+
 
     @Override
     public NodeType GetNodeType()
     {
         return NodeType.All;
     }
-    
-    
-    
-    
+
+
+
+
     @Override
     public String toString ()
     {

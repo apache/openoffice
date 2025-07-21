@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -129,7 +129,7 @@ class OfficeZip {
             else if (name.equalsIgnoreCase(MANIFESTXML)) {
                 manifestIndex = i;
             }
-	    
+
         }
 
         zis.close();
@@ -182,7 +182,7 @@ class OfficeZip {
     byte[] getSettingsXMLBytes() {
         return getEntryBytes(settingsIndex);
     }
-    
+
     /**
      * This method returns the MANIFESTXML file in a <code>byte</code> array.
      * It returns null if there is no MANIFESTXML in this zip file.
@@ -195,7 +195,7 @@ class OfficeZip {
 
     /**
      * This method returns the bytes corresponding to the entry named in the
-     * parameter.  
+     * parameter.
      *
      * @param   name    The name of the entry in the Zip file to retrieve.
      *
@@ -203,30 +203,30 @@ class OfficeZip {
      *          <code>null</code> if no entry is found.
      */
     byte[] getNamedBytes(String name) {
-        
+
         // The list is not sorted, and sorting it for a binary search would
         // invalidate the indices stored for the main files.
-        
-        // Could improve performance by caching the name and index when 
+
+        // Could improve performance by caching the name and index when
         // iterating through the ZipFile in read().
         for (int i = 0; i < entryList.size(); i++) {
             Entry e = (Entry)entryList.get(i);
-            
+
             if (e.zipEntry.getName().equals(name)) {
                 return getEntryBytes(i);
             }
         }
-        
+
         return null;
     }
-    
-    
+
+
     /**
-     * This method sets the bytes for the named entry.  It searches for a 
-     * matching entry in the LinkedList.  If no entry is found, a new one is 
+     * This method sets the bytes for the named entry.  It searches for a
+     * matching entry in the LinkedList.  If no entry is found, a new one is
      * created.
      *
-     * Writing of data is defferred to setEntryBytes().  
+     * Writing of data is defferred to setEntryBytes().
      *
      * @param   name    The name of the entry to search for.
      * @param   bytes   The new data to write.
@@ -234,13 +234,13 @@ class OfficeZip {
     void setNamedBytes(String name, byte[] bytes) {
         for (int i = 0; i < entryList.size(); i++) {
             Entry e = (Entry)entryList.get(i);
-            
+
             if (e.zipEntry.getName().equals(name)) {
                 setEntryBytes(i, bytes, name);
                 return;
             }
         }
-        
+
         // If we're here, no entry was found.  Call setEntryBytes with an index
         // of -1 to insert a new entry.
         setEntryBytes(-1, bytes, name);
@@ -255,12 +255,12 @@ class OfficeZip {
      *  @param  index  Index of <code>Entry</code> object in
      *                 <code>entryList</code>.
      *
-     *  @return  <code>byte</code> array associated in that 
+     *  @return  <code>byte</code> array associated in that
      *           <code>Entry</code> object or null, if there is
      *           not such <code>Entry</code>.
      */
     private byte[] getEntryBytes(int index) {
-	
+
         byte[] bytes = null;
 
         if (index > -1) {
@@ -322,16 +322,16 @@ class OfficeZip {
         settingsIndex = setEntryBytes(settingsIndex, bytes, SETTINGSXML);
     }
 
-    
+
     /**
      * Set or replace the <code>byte</code> array for the MANIFESTXML file.
-     * 
+     *
      * @param   bytes   <code>byte</code> array for the MANIFESTXML file.
      */
     void setManifestXMLBytes(byte bytes[]) {
         manifestIndex = setEntryBytes(manifestIndex, bytes, MANIFESTXML);
     }
-    
+
     /**
      *  <p>Used by the <code>setContentXMLBytes</code> method and
      *  the <code>setStyleXMLBytes</code> to either replace an

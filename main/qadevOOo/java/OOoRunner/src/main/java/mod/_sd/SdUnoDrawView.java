@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -224,7 +224,7 @@ public class SdUnoDrawView extends TestCase {
 
 
         tEnv.addObjRelation("Selections", new Object[] {
-            shape1, shape2, shape3});            
+            shape1, shape2, shape3});
 
 
         tEnv.addObjRelation("Pages", the_pages);
@@ -233,7 +233,7 @@ public class SdUnoDrawView extends TestCase {
         tEnv.addObjRelation("FirstModel", aModel);
 
         tEnv.addObjRelation("XUserInputInterception.XModel", aModel);
-        
+
         XFrame the_frame = the_Desk.getCurrentFrame();
         tEnv.addObjRelation("Frame", the_frame);
 
@@ -257,9 +257,9 @@ public class SdUnoDrawView extends TestCase {
             UnoRuntime.queryInterface(XModifiable.class,xDrawDoc);
 
         tEnv.addObjRelation("Modifiable",modify);
-        
+
         tEnv.addObjRelation("XComponent.DisposeThis", xDrawDoc);
-        
+
         tEnv.addObjRelation("Comparer", new Comparator() {
             public int compare(Object o1, Object o2) {
                 XIndexAccess indAc1 = (XIndexAccess)
@@ -287,7 +287,7 @@ public class SdUnoDrawView extends TestCase {
         } catch (InterruptedException e) {
             System.out.println("While waiting :" + e) ;
         }
-    }    
+    }
 
 
 } // finish class SdUnoDrawView

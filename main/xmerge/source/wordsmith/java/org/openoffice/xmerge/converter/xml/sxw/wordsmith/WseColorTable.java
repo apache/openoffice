@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -72,18 +72,18 @@ class WseColorTable extends Wse {
 
         i += 2;  // Skip leading "64" and table length field.
         for (int k = 0; k < 16; k++) {
-            fgColors[k] = new Color(((int)dataArray[i+1]) & 0xFF, 
-                                    ((int)dataArray[i+2]) & 0xFF, 
+            fgColors[k] = new Color(((int)dataArray[i+1]) & 0xFF,
+                                    ((int)dataArray[i+2]) & 0xFF,
                                     ((int)dataArray[i+3]) & 0xFF);
             i += 4;
         }
         for (int k = 0; k < 16; k++) {
-            bgColors[k] = new Color(((int)dataArray[i+1]) & 0xFF, 
-                                    ((int)dataArray[i+2]) & 0xFF, 
+            bgColors[k] = new Color(((int)dataArray[i+1]) & 0xFF,
+                                    ((int)dataArray[i+2]) & 0xFF,
                                     ((int)dataArray[i+3]) & 0xFF);
             i += 4;
        }
-        
+
     }
 
 
@@ -107,7 +107,7 @@ class WseColorTable extends Wse {
 
 
     /**
-     *  Return true if <code>dataArray[startIndex]</code> is the start 
+     *  Return true if <code>dataArray[startIndex]</code> is the start
      *  of a valid paragraph descriptor.
      *
      *  @param dataArray   <code>byte</code> array.
@@ -118,7 +118,7 @@ class WseColorTable extends Wse {
      */
     static boolean isValid(byte dataArray[], int startIndex) {
         try {
-            if (dataArray[startIndex] != 64) 
+            if (dataArray[startIndex] != 64)
                 return false;
             int len = dataArray[startIndex + 1];
             len &= 0xFF;  // eliminate problems with sign-extension
@@ -184,12 +184,12 @@ class WseColorTable extends Wse {
 
 
     /**
-     *  Return the index of the specified foreground or background 
+     *  Return the index of the specified foreground or background
      *  <code>Color</code>.  (If the color is not already in the table,
      *  it will be added.)
      *
      *  Note that the implementation of this may include a "margin of
-     *  error" to prevent the color table from being filled up too 
+     *  error" to prevent the color table from being filled up too
      *  quickly.
      *
      *  @param c           The <code>Color</code>.
@@ -203,14 +203,14 @@ class WseColorTable extends Wse {
      */
     int findColor(Color c, boolean foreground) {
 
-        Color colorArray[] = foreground ? fgColors : bgColors;        
+        Color colorArray[] = foreground ? fgColors : bgColors;
 
         for (int i = 0; i < 16; i++) {
             if (colorArray[i] != null) {
-                if (colorArray[i].equals(c)) 
+                if (colorArray[i].equals(c))
                     return i;
             }
-            else 
+            else
                 break;  // hit a null entry - no more colors in table!
         }
 
@@ -231,12 +231,12 @@ class WseColorTable extends Wse {
      *  @param index       The index
      *  @param foreground  true if foreground color, false if background
      *                     color
-     * 
+     *
      *  @return            The <code>Color</code> at the specified index.
      */
     Color getColor(int index, boolean foreground) {
 
-        Color colorArray[] = foreground ? fgColors : bgColors;        
+        Color colorArray[] = foreground ? fgColors : bgColors;
         return colorArray[index];
     }
 }

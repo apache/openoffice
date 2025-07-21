@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -44,7 +44,7 @@ class CanvasShape implements XAccessibleEventListener
     public final Color maHighlightColor = Color.red;
     public final Color maSelectionColor = Color.green;
     public final Color maFocusColor = Color.blue;
-    
+
     public CanvasShape (javax.swing.tree.TreeNode aNode, Canvas aCanvas)
     {
         maNode = aNode;
@@ -70,7 +70,7 @@ class CanvasShape implements XAccessibleEventListener
     public javax.swing.tree.TreePath getNodePath (javax.swing.tree.TreeNode node)
     {
         javax.swing.tree.TreeNode parent = node.getParent();
-        return (parent != null) ? 
+        return (parent != null) ?
             getNodePath(parent).pathByAddingChild(node) :
             new javax.swing.tree.TreePath(node);
     }
@@ -82,7 +82,7 @@ class CanvasShape implements XAccessibleEventListener
 
 
 
-    /** Update the data obtained from the <type>AccessibilityNode</type> 
+    /** Update the data obtained from the <type>AccessibilityNode</type>
         object.
     */
     public void Update ()
@@ -107,7 +107,7 @@ class CanvasShape implements XAccessibleEventListener
                 mbFocused = xStateSet.contains (AccessibleStateType.FOCUSED);
             }
         }
-         
+
         UpdateGeometry ();
 
         if (mxComponent != null)
@@ -133,7 +133,7 @@ class CanvasShape implements XAccessibleEventListener
     {
         if (mxComponent != null)
         {
-            com.sun.star.awt.Point aLocationOnScreen = 
+            com.sun.star.awt.Point aLocationOnScreen =
                 mxComponent.getLocationOnScreen();
             com.sun.star.awt.Size aSizeOnScreen = mxComponent.getSize();
             maPosition = new Point (
@@ -151,9 +151,9 @@ class CanvasShape implements XAccessibleEventListener
         according to the specified offset and scale.
     */
     public void paint (
-        Graphics2D g, 
-        boolean bShowDescription, 
-        boolean bShowName, 
+        Graphics2D g,
+        boolean bShowDescription,
+        boolean bShowName,
         boolean bShowText)
     {
         try{
@@ -181,7 +181,7 @@ class CanvasShape implements XAccessibleEventListener
                 color = new Color (maFgColor.getRed(), maFgColor.getGreen(), maFgColor.getBlue());
             g.setColor (color);
             g.draw (maShape);
-            
+
             if (mbFocused)
             {
                 g.setColor (maFocusColor);
@@ -236,18 +236,18 @@ class CanvasShape implements XAccessibleEventListener
 
     private void paintName (Graphics2D g)
     {
-        g.drawString ("Name: " + msName, 
-            (float)maShape.x+5, 
-            (float)maShape.y+15); 
+        g.drawString ("Name: " + msName,
+            (float)maShape.x+5,
+            (float)maShape.y+15);
     }
 
 
 
     private void paintDescription (Graphics2D g)
     {
-        g.drawString ("Description: " + msDescription, 
-            (float)maShape.x+5, 
-            (float)maShape.y+35); 
+        g.drawString ("Description: " + msDescription,
+            (float)maShape.x+5,
+            (float)maShape.y+35);
     }
 
 
@@ -270,10 +270,10 @@ class CanvasShape implements XAccessibleEventListener
                 {
                     com.sun.star.awt.Rectangle aRect =
                         xText.getCharacterBounds(i);
-                    
+
                     double x = maShape.x + aRect.X;
                     double y = maShape.y + aRect.Y + aRect.Height;
-                    
+
                     g.drawString (sText.substring(i, i+1), (float)x, (float)y);
                 }
             }
@@ -315,7 +315,7 @@ class CanvasShape implements XAccessibleEventListener
     {
         return new Rectangle (maPosition, maSize);
     }
-    
+
     public Point getOrigin ()
     {
         return maPosition;
@@ -360,12 +360,12 @@ class CanvasShape implements XAccessibleEventListener
                     break;
             }
         } catch (Exception aException) {
-            System.err.println ("caught exception while updating a shape:" 
+            System.err.println ("caught exception while updating a shape:"
                 + aException);
             aException.printStackTrace (System.err);
         }
     }
-    
+
     /** Callback for disposing events.
     */
     public void disposing (com.sun.star.lang.EventObject e)
@@ -375,8 +375,8 @@ class CanvasShape implements XAccessibleEventListener
 
 
 
-    
-    private Canvas 
+
+    private Canvas
         maCanvas;
     private javax.swing.tree.TreeNode
         maNode;

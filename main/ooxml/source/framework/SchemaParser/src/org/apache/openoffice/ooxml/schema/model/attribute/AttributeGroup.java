@@ -36,10 +36,10 @@ public class AttributeGroup
     {
         super(null, aName, aLocation);
     }
-    
-    
-    
-    
+
+
+
+
     @Override
     public NodeType GetNodeType ()
     {
@@ -54,9 +54,9 @@ public class AttributeGroup
     {
         aVisitor.Visit(this);
     }
-    
-    
-    
+
+
+
 
     public String toString ()
     {

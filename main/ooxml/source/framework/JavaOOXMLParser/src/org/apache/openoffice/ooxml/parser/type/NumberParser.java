@@ -34,7 +34,7 @@ public class NumberParser implements ISimpleTypeParser
         {
             case "u1":
                 meNumberType = NumberType.Boolean;
-                meJavaNumberType = JavaNumberType.Boolean; 
+                meJavaNumberType = JavaNumberType.Boolean;
                 break;
             case "s8":
                 meNumberType = NumberType.Byte;
@@ -60,11 +60,11 @@ public class NumberParser implements ISimpleTypeParser
                 meNumberType = NumberType.UnsignedInt;
                 meJavaNumberType = JavaNumberType.Long;
                 break;
-            case "s64": 
+            case "s64":
                 meNumberType = NumberType.Long;
                 meJavaNumberType = JavaNumberType.Long;
                 break;
-            case "u64": 
+            case "u64":
                 meNumberType = NumberType.UnsignedLong;
                 meJavaNumberType = JavaNumberType.Long;
                 break;
@@ -72,18 +72,18 @@ public class NumberParser implements ISimpleTypeParser
                 meNumberType = NumberType.Integer;
                 meJavaNumberType = JavaNumberType.Long;
                 break;
-            case "f": 
+            case "f":
                 meNumberType = NumberType.Float;
                 meJavaNumberType = JavaNumberType.Float;
                 break;
-            case "d": 
+            case "d":
                 meNumberType = NumberType.Double;
                 meJavaNumberType = JavaNumberType.Double;
                 break;
             default:
                 throw new RuntimeException("unsupported numerical type "+aLine[5]);
         }
-        
+
         switch(aLine[6])
         {
             case "E":
@@ -92,7 +92,7 @@ public class NumberParser implements ISimpleTypeParser
                 for (int nIndex=7; nIndex<aLine.length; ++nIndex)
                     maEnumeration.add(ParseNumber(aLine[nIndex]));
                 break;
-                
+
             case "S":
                 meRestrictionType = RestrictionType.Size;
                 for (int nIndex=7; nIndex<=9; nIndex+=2)
@@ -117,19 +117,19 @@ public class NumberParser implements ISimpleTypeParser
                                 break;
                         }
                 break;
-                
+
             case "N":
                 meRestrictionType = RestrictionType.None;
                 break;
-                
+
             default:
                 throw new RuntimeException("unsupported numerical restriction "+aLine[6]);
         }
     }
 
-    
-    
-    
+
+
+
     @Override
     public Object Parse(
         final String sRawValue,
@@ -151,8 +151,8 @@ public class NumberParser implements ISimpleTypeParser
                         if (CompareTo(aNumber, maMinimumValue, meJavaNumberType) < 0)
                             return null;
                     }
-                    else 
-                    { 
+                    else
+                    {
                         if (CompareTo(aNumber, maMinimumValue, meJavaNumberType) <= 0)
                             return null;
                     }
@@ -162,29 +162,29 @@ public class NumberParser implements ISimpleTypeParser
                         if (CompareTo(aNumber, maMaximumValue, meJavaNumberType) > 0)
                             return null;
                     }
-                    else 
-                    { 
+                    else
+                    {
                         if (CompareTo(aNumber, maMaximumValue, meJavaNumberType) >= 0)
                             return null;
                     }
                 return aNumber;
-                
+
             case None:
                 return aNumber;
-                
+
             default:
                 throw new RuntimeException();
         }
     }
 
-    
-    
-    
+
+
+
     Object ParseNumber (final String sNumber)
     {
         switch(meJavaNumberType)
         {
-            case Boolean: return Boolean.parseBoolean(sNumber); 
+            case Boolean: return Boolean.parseBoolean(sNumber);
             case Byte: return Byte.parseByte(sNumber);
             case Short: return Short.parseShort(sNumber);
             case Integer: return Integer.parseInt(sNumber);
@@ -195,12 +195,12 @@ public class NumberParser implements ISimpleTypeParser
                 throw new RuntimeException();
         }
     }
-    
-    
-    
-    
+
+
+
+
     private static int CompareTo (
-        final Object aLeft, 
+        final Object aLeft,
         final Object aRight,
         final JavaNumberType eType)
     {
@@ -224,10 +224,10 @@ public class NumberParser implements ISimpleTypeParser
                 throw new RuntimeException();
         }
     }
-    
-    
-    
-    
+
+
+
+
     enum NumberType
     {
         Boolean,

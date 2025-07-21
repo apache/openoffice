@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 package testlib.gui;
@@ -62,36 +62,36 @@ public class AppTool extends Tester {
 		writer.waitForExistence(10, 2);
 		sleep(1);
 	}
-	
+
 	public static void newSpreadsheet() {
 		app.dispatch("private:factory/scalc");
 		calc.waitForExistence(10, 2);
 		sleep(1);
 	}
-	
+
 	public static void newPresentation() {
 		app.dispatch("private:factory/simpress");
 		impress.waitForExistence(10, 2);
 		sleep(1);
 	}
-	
+
 	public static void newDrawing() {
 		app.dispatch("private:factory/sdraw");
 		draw.waitForExistence(10, 2);
 		sleep(1);
 	}
-	
+
 	public static void newFormula() {
 		app.dispatch("private:factory/smath");
 		mathEditWindow.waitForExistence(10, 2);
 		sleep(1);
 	}
-	
+
 	public static void open(String path) {
 		app.dispatch(".uno:Open");
 		submitOpenDlg(getPath(path));
 	}
-	
+
 	public static void saveAs(String path) {
 		app.dispatch(".uno:SaveAs");
 		submitSaveDlg(getPath(path));
@@ -105,23 +105,23 @@ public class AppTool extends Tester {
 		}
 		app.waitSlot(5 * 60); // 5 minutes
 	}
-	
+
 	public static void close() {
 		app.dispatch(".uno:CloseDoc");
 	}
-	
+
 	public static void saveAndReopen(String path){
 		saveAs(path);
 		close();
 		open(path);
 	}
-	
+
 	public static void discard() {
 		app.dispatch(".uno:CloseDoc");
 		if (activeMsgBox.exists(2))
 			activeMsgBox.no();
 	}
-	
+
 	public static void typeKeys(String keys) {
 		Tester.typeKeys(keys);
 	}
@@ -129,12 +129,12 @@ public class AppTool extends Tester {
 	public static void openStartcenter() {
 		if (startcenter.exists())
 			return;
-	
+
 		if (SystemUtil.isMac()) {
 			SystemUtil.execScript("osascript -e 'tell app \"OpenOffice.org\" to activate'");
 			typeKeys("<command n>");
 		}
-	
+
 	}
 
 	public static String copyAll() {
@@ -147,7 +147,7 @@ public class AppTool extends Tester {
 		app.dispatch(".uno:Copy");
 		return app.getClipboard();
 	}
-	
+
 	public static void submitOpenDlg(String path) {
 		filePickerPath.setText(path);
 		filePickerOpen.click();
@@ -236,7 +236,7 @@ public class AppTool extends Tester {
 
 		}.waitForTrue("Time out wait window to be active.", 120, 2);
 	}
-	
+
 	public static void insertPicture(String path) {
 		app.dispatch(".uno:InsertGraphic");
 		submitOpenDlg(getPath(path));

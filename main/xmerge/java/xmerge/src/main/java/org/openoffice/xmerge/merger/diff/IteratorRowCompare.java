@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -42,7 +42,7 @@ import org.openoffice.xmerge.converter.xml.OfficeConstants;
  *  </li><li>
  *    Otherwise check whether the row repeated attribute is the same.
  *  </li><li>
- *    If the row repeated attribute is the same, then compare two rows 
+ *    If the row repeated attribute is the same, then compare two rows
  *    and mark it as <i>change</i> if those rows are different.
  *  </li><li>
  *    If the row repeated attribute is different, then split the rows and
@@ -123,11 +123,11 @@ public class IteratorRowCompare implements DiffAlgorithm {
                     int modRowNum = 1;
 
                     if (orgRowRepeated.length() > 0) {
-                        orgRowNum = 
+                        orgRowNum =
                             Integer.valueOf(orgRowRepeated).intValue();
                     }
                     if (modRowRepeated.length() > 0) {
-                        modRowNum = 
+                        modRowNum =
                             Integer.valueOf(modRowRepeated).intValue();
                     }
 
@@ -165,7 +165,7 @@ public class IteratorRowCompare implements DiffAlgorithm {
                     }
 
                     if (different) {
-                        Difference diff = new Difference(Difference.CHANGE, 
+                        Difference diff = new Difference(Difference.CHANGE,
                                           i, j);
                         diffVector.add(diff);
                     }

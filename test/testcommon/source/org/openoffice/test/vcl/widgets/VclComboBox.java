@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -27,7 +27,7 @@ import org.openoffice.test.vcl.client.Constant;
 
 /**
  * Proxy used to access Vcl Combo Box
- * 
+ *
  */
 public class VclComboBox extends VclControl {
 
@@ -43,7 +43,7 @@ public class VclComboBox extends VclControl {
 	}
 
 	/**
-	 * Get the text of the index-th item. 
+	 * Get the text of the index-th item.
 	 * @index The index starts from 0.
 	 */
 	public String getItemText(int index) {
@@ -51,7 +51,7 @@ public class VclComboBox extends VclControl {
 	}
 
 	/**
-	 * Get the index of the selected item. 
+	 * Get the index of the selected item.
 	 * @index The index starts from 0.
 	 */
 	public int getSelIndex() {
@@ -104,7 +104,7 @@ public class VclComboBox extends VclControl {
 	/**
 	 * Sets no selection in a list (Sometimes this corresponds to the first
 	 * entry in the list)
-	 * 
+	 *
 	 */
 	public void setNoSelection() {
 		invoke(Constant.M_SetNoSelection);
@@ -116,7 +116,7 @@ public class VclComboBox extends VclControl {
 	public void setText(String text) {
 		invoke(Constant.M_SetText, new Object[] {text});
 	}
-	
+
 	/**
 	 * Check if the list box has the specified item
 	 * @param str

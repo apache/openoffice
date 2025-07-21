@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -62,10 +62,10 @@ public final class Difference {
     /**
      *  <p>The position of the content that should be operated on (original
      *  iterator).</p>
-     * 
-     *  <p>For ADD, the orgPosition is the position of the original sequence 
-     *  where the diff will insert (the element count is starting from 0, and 
-     *  always insert before the element).  The modPosition is the position 
+     *
+     *  <p>For ADD, the orgPosition is the position of the original sequence
+     *  where the diff will insert (the element count is starting from 0, and
+     *  always insert before the element).  The modPosition is the position
      *  of the diff in the modified sequence (also starting from 0).</p>
      *
      *  <blockquote><pre>
@@ -86,15 +86,15 @@ public final class Difference {
      *   &lt;diff orgPos=2 modPos=5 operation=ADD&gt;  &lt;-- element F
      *
      *  </pre> </blockquote>
-     *  <p>One can notice the add operation is inserted before the position. 
-     *  Hence, in order to append an element, we will have a position of 
+     *  <p>One can notice the add operation is inserted before the position.
+     *  Hence, in order to append an element, we will have a position of
      *  original sequence length + 1 to denote an append.</p>
      *
      *  <p>For DELETE, orgPosition is the position that the element
      *  will be deleted (starting from 0) and modPosition is the position
      *  where the deleted element should be (consider as an ADD).</p>
      *
-     *  <p>The modPosition is less useful and it is difficult to understand 
+     *  <p>The modPosition is less useful and it is difficult to understand
      *  how the position is calculated.  One can just skip this piece of
      *  information.  It is useful if one wants to reverse the role
      *  of original sequence and modified sequence and find out the diff

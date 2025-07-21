@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -45,12 +45,12 @@ public class TestComponentMain
 
 	static class InstanceProvider implements XInstanceProvider {
         XComponentContext ctx;
-        
+
         public InstanceProvider( XComponentContext ctx )
         {
             this.ctx = ctx;
         }
-        
+
 		public Object getInstance( /*IN*/String sInstanceName )
             throws com.sun.star.container.NoSuchElementException, com.sun.star.uno.RuntimeException
         {
@@ -80,7 +80,7 @@ public class TestComponentMain
 
 		String dcp = args[0];
         boolean singleaccept = args[1].equals("singleaccept");
-		
+
         int index = dcp.indexOf(':');
         String url = dcp.substring(0, index).trim();
         dcp = dcp.substring(index + 1).trim();
@@ -88,11 +88,11 @@ public class TestComponentMain
         index = dcp.indexOf(';');
         conDcp = dcp.substring(0, index).trim();
         dcp = dcp.substring(index + 1).trim();
-        
+
         index = dcp.indexOf(';');
         protDcp = dcp.substring(0, index).trim();
         dcp = dcp.substring(index + 1).trim();
-        
+
         rootOid = dcp.trim().trim();
 
         XComponentContext ctx = com.sun.star.comp.helper.Bootstrap.createInitialComponentContext( null );
@@ -105,7 +105,7 @@ public class TestComponentMain
         Object o = com.sun.star.comp.bridge.TestComponent.__getServiceFactory(
             "com.sun.star.comp.bridge.TestComponent$_TestObject", oldsmgr,null );
         set.insert(o);
-        
+
 		XAcceptor xAcceptor = Acceptor.create(ctx);
 
         while( true )
@@ -113,11 +113,11 @@ public class TestComponentMain
             System.err.println("waiting for connect...");
 
             XConnection xConnection = xAcceptor.accept(conDcp);
-            
+
             XBridgeFactory xBridgeFactory = UnoRuntime.queryInterface(
                 XBridgeFactory.class,
                 smgr.createInstanceWithContext("com.sun.star.bridge.BridgeFactory",ctx));
-            
+
             XBridge xBridge = xBridgeFactory.createBridge(
                 "", protDcp, xConnection, new InstanceProvider(ctx));
 
@@ -129,7 +129,7 @@ public class TestComponentMain
                 break;
             }
         }
-            
+
 	}
 
     private static final class Listener implements XEventListener {

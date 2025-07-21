@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -27,7 +27,7 @@ package org.openoffice.xmerge.converter.xml.sxc.pexcel;
 /**
  * Interface defining constants for Pocket Excel attributes.
  *
- * @author	Martin Maher 
+ * @author	Martin Maher
  */
 public interface PocketExcelConstants {
     /** File extension for Pocket Word files. */
@@ -55,9 +55,9 @@ public interface PocketExcelConstants {
     public static final int DEF_COL_WIDTH      = 0x55;
     public static final int COLINFO            = 0x7D;
     public static final int BOUND_SHEET        = 0x85;
-    public static final int EXTENDED_FORMAT    = 0xE0;  
+    public static final int EXTENDED_FORMAT    = 0xE0;
 
-	/** Colour lookup table for mapping pexcel color values 
+	/** Colour lookup table for mapping pexcel color values
 		(See util/ColourConverter.java */
 	public short cLookup[] = { 0, 14, 15, 1, 2, 3, 4, 7, 6, 5, 8, 9, 10, 13, 12, 11 };
 }

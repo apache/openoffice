@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 /*
@@ -41,10 +41,10 @@ import org.openide.util.NbBundle;
  * @author tomaso
  */
 public class InstallationPathDescriptor extends WizardDescriptor {
-    
+
     private final InstallationPathIterator iterator;
     public static final String PROP_INSTALLPATH = "INSTALLPATH";
-    
+
     /** Make a descriptor suited to use InstallationPathIterator.
      * Sets up various wizard properties to follow recommended
      * style guidelines.
@@ -82,12 +82,12 @@ public class InstallationPathDescriptor extends WizardDescriptor {
         }
          */
     }
-    
+
     // Called when user moves forward or backward etc.:
     protected void updateState() {
         super.updateState();
         putProperty("WizardPanel_contentData", iterator.getSteps()); // NOI18N
         putProperty("WizardPanel_contentSelectedIndex", new Integer(iterator.getIndex())); // NOI18N
     }
-    
+
 }

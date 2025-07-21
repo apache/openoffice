@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 package fvt.uno.sw.frame;
 
@@ -45,7 +45,7 @@ public class FrameBorderSpacingtoContent {
 	private XText xText=null;
 	@Before
 	public void setUp() throws Exception {
-		app.start();		
+		app.start();
 	}
 
 	@After
@@ -68,7 +68,7 @@ public class FrameBorderSpacingtoContent {
 		xCursorProps.setPropertyValue("RightBorderDistance",499);
 		xCursorProps.setPropertyValue("TopBorderDistance",499);
 		xCursorProps.setPropertyValue("BottomBorderDistance",499);
-		//reopen the document 
+		//reopen the document
 		XTextDocument assertDocument_odt=(XTextDocument)UnoRuntime.queryInterface(XTextDocument.class,SWUtil.saveTo_Override_reload(xTextDocument, "writer8",Testspace.getPath("output/test.odt"), app));
 		XTextFramesSupplier xTFS_odt = (XTextFramesSupplier) UnoRuntime.queryInterface(XTextFramesSupplier.class, assertDocument_odt);
 		XNameAccess xTextFrames_odt = xTFS_odt.getTextFrames();
@@ -80,7 +80,7 @@ public class FrameBorderSpacingtoContent {
 		assertEquals("assert table border spacing to content",499,xCursorProps_assert_odt.getPropertyValue("TopBorderDistance"));
 		assertEquals("assert table border spacing to content",499,xCursorProps_assert_odt.getPropertyValue("BottomBorderDistance"));
 
-		//reopen the document 
+		//reopen the document
 		XTextDocument assertDocument_doc=(XTextDocument)UnoRuntime.queryInterface(XTextDocument.class,SWUtil.saveTo_Override_reload(xTextDocument, "MS Word 97",Testspace.getPath("output/test.doc"), app));
 		XTextFramesSupplier xTFS_doc = (XTextFramesSupplier) UnoRuntime.queryInterface(XTextFramesSupplier.class, assertDocument_doc);
 		XNameAccess xTextFrames_doc = xTFS_doc.getTextFrames();

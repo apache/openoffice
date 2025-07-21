@@ -35,9 +35,9 @@ public class SlideManager
         maSlides = new Vector<>();
         maPartNameToSlideMap = new TreeMap<>();
     }
-    
-    
-    
+
+
+
     public void AddSlide (
         final PartName aName,
         final Slide aSlide)
@@ -45,17 +45,17 @@ public class SlideManager
         maSlides.add(aSlide);
         maPartNameToSlideMap.put(aName, aSlide);
     }
-    
-    
-    
-    
+
+
+
+
     public Iterable<Slide> GetSlides ()
     {
         return maSlides;
     }
-    
-    
-    
+
+
+
 
     public Slide GetSlideForPart (final Part aPart)
     {
@@ -63,15 +63,15 @@ public class SlideManager
         if (aSlide == null)
         {
             aSlide = new SlideParser(aPart).ParseSlide(maSlides.size());
-            
+
             AddSlide(aPart.getPartName(), aSlide);
         }
-        return aSlide;        
+        return aSlide;
     }
 
-    
-    
-    
+
+
+
     private final Vector<Slide> maSlides;
     private final Map<PartName,Slide> maPartNameToSlideMap;
 }

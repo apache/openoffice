@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -43,20 +43,20 @@ public class InstallationOngoingCtrl extends PanelController {
     private String helpFile;
     private String nextDialog = new String("InstallationCompleted");
     private String previousDialog = new String("InstallationImminent");
-            
+
     public InstallationOngoingCtrl() {
         super("InstallationOngoing", new InstallationOngoing());
         helpFile = "String_Helpfile_InstallationOngoing";
     }
-    
+
     public String getNext() {
         return new String("InstallationCompleted");
     }
-    
+
     public String getPrevious() {
         return new String("InstallationImminent");
     }
-    
+
     public final String getHelpFileName () {
         return this.helpFile;
     }
@@ -86,15 +86,15 @@ public class InstallationOngoingCtrl extends PanelController {
             PackageCollector.sortPackages(installData.getOldPackages(), sortedUninstallPackages, "uninstall");
             installData.setOldPackages(sortedUninstallPackages);
         }
-         
+
         Installer installer = InstallerFactory.getInstance();
         installer.preInstallationOngoing();
     }
-   
+
     public void duringShow() {
-        
+
         Thread t = new Thread() {
-        
+
             InstallData installData = InstallData.getInstance();
             InstallationOngoing panel = (InstallationOngoing)getPanel();
             Vector installPackages = installData.getInstallPackages();
@@ -128,11 +128,11 @@ public class InstallationOngoingCtrl extends PanelController {
 
                     installer.installPackage(packageData);
                     installedPackages.add(packageData);
-                    
+
                     if (( installData.isAbortedInstallation() ) || ( installData.isErrorInstallation() )) {
                         ignoreMajorUpgrade = true;
                         break;
-                    }                    
+                    }
                 }
 
                 if (( installData.isMajorUpgrade() ) && ( ! ignoreMajorUpgrade )) {
@@ -155,7 +155,7 @@ public class InstallationOngoingCtrl extends PanelController {
                     panel.setStopButtonEnabled(false);
 
                     LogManager.setCommandsHeaderLine("Uninstallation");
-                    
+
                     // Inverting the package order for uninstallation
                     Collections.reverse(installedPackages);
 
@@ -179,8 +179,8 @@ public class InstallationOngoingCtrl extends PanelController {
                         SystemManager.deleteFile(removeFile);
                     }
                 }
-                
-                installer.postInstallationOngoing();        
+
+                installer.postInstallationOngoing();
 
                 String next = getNext();
                 getSetupFrame().setCurrentPanel(next, false, true);
@@ -198,7 +198,7 @@ public class InstallationOngoingCtrl extends PanelController {
 
         InstallData installData = InstallData.getInstance();
         if (( ! installData.isAbortedInstallation() ) && ( ! installData.isErrorInstallation() )) {
-            InfoDir.prepareUninstallation();        
+            InfoDir.prepareUninstallation();
         }
 
         return repeatDialog;

@@ -34,10 +34,10 @@ public class AttributeValues
         maRawAttributeValues = new TreeMap<>();
         maProcessedAttributeValues = new TreeMap<>();
     }
-    
-    
-    
-    
+
+
+
+
     public void AddAttribute (
         final AttributeDescriptor aAttributeDescriptor,
         final String sRawValue,
@@ -50,16 +50,16 @@ public class AttributeValues
             aAttributeDescriptor.GetName(),
             aProcessedValue);
     }
-    
-    
-    
-    
+
+
+
+
     public Iterable<Entry<String,String>> GetAttributes ()
     {
         return maRawAttributeValues.entrySet();
     }
-    
-    
+
+
 
 
     public String GetRawAttributeValue (final String sName)
@@ -67,25 +67,25 @@ public class AttributeValues
         return maRawAttributeValues.get(sName);
     }
 
-    
-    
-    
+
+
+
     public Object GetProcessedAttributeValue (final String sName)
     {
         return maProcessedAttributeValues.get(sName);
     }
 
-    
-    
-    
+
+
+
     public int GetAttributeCount ()
     {
         return maRawAttributeValues.size();
     }
 
-    
-    
-    
+
+
+
     private Map<String,String> maRawAttributeValues;
     private Map<String,Object> maProcessedAttributeValues;
 }

@@ -64,14 +64,14 @@ public class SchemaReader
             System.err.printf("    write information about optimized schema to file\n");
             System.exit(1);
         }
-    
+
         final SchemaReader aReader = new SchemaReader(new File(aArgumentList[0]));
         aReader.Run();
     }
-    
-    
-    
-    
+
+
+
+
     private SchemaReader (final File aDriverFile)
     {
         maSchemaBase = new SchemaBase();
@@ -85,10 +85,10 @@ public class SchemaReader
 
         ParseDriverFile(aDriverFile);
     }
-    
-    
-    
-    
+
+
+
+
     /** Read and parse the driver file that specifies which schema files to read
      *  and where the output should go.
      */
@@ -99,7 +99,7 @@ public class SchemaReader
             System.err.printf("can not read driver file\n");
             System.exit(1);
         }
-        
+
         try
         {
             final BufferedReader aIn = new BufferedReader(new FileReader(aDriverFile));
@@ -114,11 +114,11 @@ public class SchemaReader
                 // Lines containing only whitespace are also ignored.
                 else if (sLine.matches("^\\s*$"))
                     continue;
-                
+
                 // Handle line continuation.
                 while (sLine.endsWith("\\"))
                     sLine = sLine.substring(0, sLine.length()-1) + aIn.readLine();
-                
+
                 final Vector<String> aParts = SplitLine(sLine);
                 switch (aParts.get(0))
                 {
@@ -134,7 +134,7 @@ public class SchemaReader
                             {
                                 WriteSchema(maFile);
                             }
-                        }); 
+                        });
                         break;
 
                     case "output-optimized-schema":
@@ -145,7 +145,7 @@ public class SchemaReader
                             {
                                 WriteOptimizedSchema(maFile);
                             }
-                        }); 
+                        });
                         break;
 
                     case "output-nonvalidating-parse-tables":
@@ -161,9 +161,9 @@ public class SchemaReader
                                     aSimpleTypeLogFile,
                                     aParseTableFile);
                             }
-                        }); 
+                        });
                         break;
-                        
+
                     case "output-validating-parse-tables":
                         maOutputOperations.add(new Runnable()
                         {
@@ -177,9 +177,9 @@ public class SchemaReader
                                     aSimpleTypeLogFile,
                                     aParseTableFile);
                             }
-                        }); 
+                        });
                         break;
-                        
+
                     case "output-html-page":
                         maOutputOperations.add(new Runnable()
                         {
@@ -188,25 +188,25 @@ public class SchemaReader
                             {
                                 WriteHTMLPage(aHTMLPageFile);
                             }
-                        }); 
+                        });
                         break;
-                        
+
                     default:
                         System.err.printf("unknown command '%s' in driver file", aParts.get(0));
                         System.exit(1);
                 }
             }
             aIn.close();
-        } 
+        }
         catch (final Exception aException)
         {
             aException.printStackTrace();
         }
     }
-    
-    
-    
-    
+
+
+
+
     private void Run ()
     {
         try
@@ -217,7 +217,7 @@ public class SchemaReader
         {
             aException.printStackTrace();
         }
-        
+
         maOptimizedSchemaBase = maSchemaBase.GetOptimizedSchema(maTopLevelSchemas.values());
         for (final Entry<String, Schema> aEntry : maTopLevelSchemas.entrySet())
             aEntry.setValue(aEntry.getValue().GetOptimizedSchema(maOptimizedSchemaBase));
@@ -225,16 +225,16 @@ public class SchemaReader
         System.out.printf("    optimization left %d complex types and %d simple types\n",
             maOptimizedSchemaBase.ComplexTypes.GetCount(),
             maOptimizedSchemaBase.SimpleTypes.GetCount());
-        
+
         for (final Runnable aOperation : maOutputOperations)
         {
             aOperation.run();
         }
     }
 
-    
-    
-    
+
+
+
     private void ParseSchemaFiles ()
         throws XMLStreamException
     {
@@ -260,7 +260,7 @@ public class SchemaReader
             ParseSchemaFile(sMainSchemaFile, aSchema);
             maTopLevelSchemas.put(sMainSchemaShortname, aSchema);
         }
-         
+
         long nStartTime = System.currentTimeMillis();
         while ( ! maWorkList.isEmpty())
         {
@@ -276,7 +276,7 @@ public class SchemaReader
         System.out.printf("    found %d complex types and %d simple types\n",
             maSchemaBase.ComplexTypes.GetCount(),
             maSchemaBase.SimpleTypes.GetCount());
-        
+
         int nTopLevelElementCount = 0;
         for (final Schema aSchema : maTopLevelSchemas.values())
         	nTopLevelElementCount += aSchema.TopLevelElements.GetCount();
@@ -284,10 +284,10 @@ public class SchemaReader
         		maTopLevelSchemas.size(),
         		nTopLevelElementCount);
     }
-    
-    
-    
-    
+
+
+
+
     private void ParseSchemaFile (
     		final String sSchemaFilename,
     		final Schema aSchema)
@@ -295,19 +295,19 @@ public class SchemaReader
     {
         System.out.printf("parsing %s\n", sSchemaFilename);
         maSchemaFiles.add(sSchemaFilename);
-        
+
         final SchemaParser aParser = new SchemaParser(new File(sSchemaFilename), aSchema, maSchemaBase);
         aParser.Parse();
-        
+
         mnTotalLineCount += aParser.GetLineCount();
         mnTotalByteCount += aParser.GetByteCount();
         for (final File aFile : aParser.GetImportedSchemaFilenames())
             AddSchemaReference(aFile.getAbsolutePath());
     }
 
-    
-    
-    
+
+
+
     private void AddSchemaReference (final String sSchemaFilename)
     {
         if ( ! maSchemaFiles.contains(sSchemaFilename))
@@ -315,22 +315,22 @@ public class SchemaReader
             if (sSchemaFilename == null)
                 throw new RuntimeException();
 
-            // We don't know yet the file name of the schema, so just store null to mark the schema name as 'known'. 
+            // We don't know yet the file name of the schema, so just store null to mark the schema name as 'known'.
             maSchemaFiles.add(sSchemaFilename);
             maWorkList.add(sSchemaFilename);
         }
     }
-    
-    
-    
-    
+
+
+
+
     /** Split the given string at whitespace but not at whitespace inside double quotes.
-     *  
+     *
      */
     private Vector<String> SplitLine (final String sLine)
     {
     	final Vector<String> aParts = new Vector<>();
-    	
+
     	boolean bIsInsideQuotes = false;
     	for (final String sPart : sLine.split("\""))
     	{
@@ -347,12 +347,12 @@ public class SchemaReader
 
     		bIsInsideQuotes = ! bIsInsideQuotes;
     	}
-    	
+
     	return aParts;
     }
 
-    
-    
+
+
 
     /** Create a File object for a given file name.
      *  Check that the file is writable, i.e. its directory exists and that if
@@ -369,25 +369,25 @@ public class SchemaReader
         return aFile;
     }
 
-    
-    
+
+
 
     private void WriteSchema (final File aOutputFile)
     {
         LogGenerator.Write(aOutputFile, maSchemaBase, maTopLevelSchemas.values());
     }
-    
-    
-    
-    
+
+
+
+
     private void WriteOptimizedSchema (final File aOutputFile)
     {
         LogGenerator.Write(aOutputFile, maOptimizedSchemaBase, maTopLevelSchemas.values());
     }
-    
-    
-    
-    
+
+
+
+
     private void WriteNonValidatingParseTables (
         final File aAutomatonLogFile,
         final File aSimpleTypeLogFile,
@@ -416,15 +416,15 @@ public class SchemaReader
 
         new ParserTablesGenerator(
             aAutomatons,
-            maOptimizedSchemaBase.Namespaces, 
+            maOptimizedSchemaBase.Namespaces,
             aSimpleTypes,
             maOptimizedSchemaBase.AttributeValueToIdMap)
             .Generate(aParseTableFile);
     }
 
-    
-    
-    
+
+
+
     private void WriteValidatingParseTables (
         final File aAutomatonLogFile,
         final File aSimpleTypeLogFile,
@@ -472,32 +472,32 @@ public class SchemaReader
             (nEndTime-nStartTime)/1000.0);
 
         new ParserTablesGenerator(
-            aAutomatons, 
+            aAutomatons,
             maOptimizedSchemaBase.Namespaces,
             aSimpleTypes,
             maOptimizedSchemaBase.AttributeValueToIdMap)
             .Generate(aParseTableFile);
     }
-    
-    
-    
-    
+
+
+
+
     private void WriteHTMLPage (
         final File aHTMLPageFile)
     {
         long nStartTime = System.currentTimeMillis();
 
         new HtmlGenerator(maOptimizedSchemaBase, maTopLevelSchemas, aHTMLPageFile).Generate();
-        
+
         long nEndTime = System.currentTimeMillis();
         System.out.printf(
             "created HTML page in %fs\n",
             (nEndTime-nStartTime)/1000.0);
     }
 
-    
-    
-    
+
+
+
     private final SchemaBase maSchemaBase;
     private SchemaBase maOptimizedSchemaBase;
     private final Map<String,Schema> maTopLevelSchemas;

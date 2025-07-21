@@ -60,16 +60,16 @@ public class DFACreator
             aLocation);
     }
 
-    
-    
-    
+
+
+
     private DFACreator (
         final StateContainer aDFAStateContainer,
         final StateContext aNFAStateContext,
         final QualifiedName aTypeName)
     {
         maNFAStateContext = aNFAStateContext;
-        
+
         // Create the set of state sets where each element corresponds to a
         // state in the DFA.
         maNFASetToDFAStateMap = new TreeMap<>();
@@ -78,14 +78,14 @@ public class DFACreator
             aTypeName == null
                 ? "<TOP-LEVEL>"
                 : aTypeName.GetStateName());
-        
+
         maDFATransitions = new HashSet<>();
         maAcceptingDFAStates = new Vector<>();
     }
-    
-    
-    
-    
+
+
+
+
     private void CreateDFAforNFA ()
     {
         final State aNFAStartState = maNFAStateContext.GetStartState();
@@ -99,7 +99,7 @@ public class DFACreator
 
         final Queue<StateSet> aWorklist = new LinkedList<>();
         aWorklist.add(aStartSet);
-        
+
         while ( ! aWorklist.isEmpty())
         {
             final Collection<StateSet> aAdditionalWorkList = ProcessTransitionFront(
@@ -109,24 +109,24 @@ public class DFACreator
         }
     }
 
-    
-    
+
+
 
     private Collection<StateSet> ProcessTransitionFront (
         final StateSet aSet)
     {
         final Set<StateSet> aLocalWorklist = new TreeSet<>();
-        
+
         // Find all regular transitions that start from any state in the set.
         final Map<String,Vector<Transition>> aTransitions = GetTransitionFront(aSet);
-        
+
         // Create new state sets for states that are reachable via the same element and
         // the following epsilon transitions.
         for (final Entry<String,Vector<Transition>> aEntry : aTransitions.entrySet())
         {
             // Create new state sets for both the end state of the transition.
             final StateSet aEpsilonClosure = GetEpsilonClosure(GetEndStateSet(aEntry.getValue()));
-    
+
             // When these are new state sets then add them to the worklist
             // and the set of sets.
             State aDFAState = maNFASetToDFAStateMap.get(aEpsilonClosure);
@@ -139,7 +139,7 @@ public class DFACreator
                 if (aDFAState.IsAccepting())
                     maAcceptingDFAStates.add(aDFAState);
             }
-            
+
             final State aStartState = maNFASetToDFAStateMap.get(aSet);
             final QualifiedName aElementName = GetElementName(aEntry.getValue());
             final String sElementTypeName = GetElementTypeName(aEntry.getValue());
@@ -152,13 +152,13 @@ public class DFACreator
             aStartState.AddTransition(aTransition);
             maDFATransitions.add(aTransition);
         }
-        
+
         return aLocalWorklist;
     }
-    
-    
-    
-    
+
+
+
+
     private QualifiedName GetElementName (final Vector<Transition> aTransitions)
     {
         for (final Transition aTransition : aTransitions)
@@ -187,11 +187,11 @@ public class DFACreator
     private StateSet GetEpsilonClosure ( final StateSet aSet)
     {
         final StateSet aClosure = new StateSet(aSet);
-        
+
         final Queue<State> aWorkList = new LinkedList<>();
         for (final State aState : aSet.GetStates())
             aWorkList.add(aState);
-        
+
         while( ! aWorkList.isEmpty())
         {
             final State aState = aWorkList.poll();
@@ -205,13 +205,13 @@ public class DFACreator
                 }
             }
         }
-        
+
         return aClosure;
     }
 
-    
-    
-    
+
+
+
     /** Return the list of regular transitions (i.e. not epsilon transitions)
      *  that start from any of the states in the given set.
      *  The returned map is a partition of the transitions according to their
@@ -230,7 +230,7 @@ public class DFACreator
                     sElementName = aElementName.GetDisplayName();
                 else
                     sElementName = null; // For skip transitions.
-                    
+
                 Vector<Transition> aElementTransitions = aTransitions.get(sElementName);
                 if (aElementTransitions == null)
                 {
@@ -238,13 +238,13 @@ public class DFACreator
                     aTransitions.put(sElementName, aElementTransitions);
                 }
                 aElementTransitions.add(aTransition);
-            }        
+            }
         return aTransitions;
     }
-    
 
-    
-    
+
+
+
     /** Return a state set that contains all end states of all the given transitions.
      */
     private StateSet GetEndStateSet (final Iterable<Transition> aTransitions)
@@ -254,10 +254,10 @@ public class DFACreator
             aStateSet.AddState(aTransition.GetEndState());
         return aStateSet;
     }
-    
-    
-    
-    
+
+
+
+
     /** Propagate accepting state flag and skip data.
      */
     private void PropagateStateFlags (
@@ -267,10 +267,10 @@ public class DFACreator
         for (final State aNFAState : aNFAStateSet.GetStates())
             aDFAState.CopyFrom(aNFAState);
     }
-    
-    
-    
-    
+
+
+
+
     private final StateContext maNFAStateContext;
 
     private final Map<StateSet,State> maNFASetToDFAStateMap;

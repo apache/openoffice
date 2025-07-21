@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 package org.apache.openoffice.comp.sdbc.dbtools.comphelper;
@@ -36,13 +36,13 @@ public class OEnumerationByName extends WeakBase implements XEnumeration, XEvent
     private int position;
     private XNameAccess collection;
     private boolean isListening;
-    
+
     public OEnumerationByName(XNameAccess collection) {
         this.collection = collection;
         names = collection.getElementNames();
         startDisposeListening();
     }
-    
+
     @Override
     public void disposing(EventObject event) {
         synchronized (this) {
@@ -51,7 +51,7 @@ public class OEnumerationByName extends WeakBase implements XEnumeration, XEvent
             }
         }
     }
-    
+
     @Override
     public boolean hasMoreElements() {
         synchronized (this) {
@@ -66,7 +66,7 @@ public class OEnumerationByName extends WeakBase implements XEnumeration, XEvent
             return false;
         }
     }
-    
+
     @Override
     public Object nextElement()
             throws NoSuchElementException, WrappedTargetException {
@@ -87,7 +87,7 @@ public class OEnumerationByName extends WeakBase implements XEnumeration, XEvent
         }
         return value;
     }
-    
+
     private void startDisposeListening() {
         synchronized (this) {
             if (isListening) {
@@ -100,7 +100,7 @@ public class OEnumerationByName extends WeakBase implements XEnumeration, XEvent
             }
         }
     }
-    
+
     private void stopDisposeListening() {
         synchronized (this) {
             if (!isListening) {

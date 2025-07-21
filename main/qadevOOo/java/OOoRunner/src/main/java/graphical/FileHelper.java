@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -45,13 +45,13 @@ public class FileHelper
             String sOSName = System.getProperty("os.name");
             String sOSArch = System.getProperty("os.arch");
             String sOSVersion = System.getProperty("os.version");
-            
+
             GlobalLogWriter.println(sOSName);
             GlobalLogWriter.println(sOSArch);
             GlobalLogWriter.println(sOSVersion);
 
         }
-    
+
     public static void MessageBox(String _sStr)
         {
             String sVersion = System.getProperty("java.version");
@@ -79,17 +79,17 @@ public class FileHelper
             //     System.out.println( _sFile );
             //     System.out.println( aFile.getAbsolutePath() );
             //     MessageBox("Der JavaProzess wartet auf eine interaktion ihrerseits.");
-            // 
+            //
             //     File aFile2 = new File(_sFile);
             //     if (aFile2.exists())
             //     {
             //         System.out.println("Thanks, file exists." );
             //         return true;
             //     }
-            // }   
+            // }
             return false;
         }
-    
+
     public static boolean isDir(String _sDir)
         {
             if (_sDir == null)
@@ -111,7 +111,7 @@ public class FileHelper
             }
             return false;
         }
-    
+
     public static String getBasename(String _sFilename)
         {
             if (_sFilename == null)
@@ -145,7 +145,7 @@ public class FileHelper
             }
             return _sFilename;
         }
-    
+
     public static String getSuffix(String _sFilename)
         {
             if (_sFilename == null)
@@ -159,7 +159,7 @@ public class FileHelper
             }
             return "";
         }
-    
+
     public static String getPath(String _sFilename)
         {
             if (_sFilename == null)
@@ -182,19 +182,19 @@ public class FileHelper
 
 /*
     static ArrayList files = new ArrayList();
-    public static Object[] traverse( String afileDirectory ) 
+    public static Object[] traverse( String afileDirectory )
         {
-            
+
             File fileDirectory = new File(afileDirectory);
             // Testing, if the file is a directory, and if so, it throws an exception
             if ( !fileDirectory.isDirectory() )
             {
                 throw new IllegalArgumentException( "not a directory: " + fileDirectory.getName() );
             }
-            
+
             // Getting all files and directories in the current directory
             File[] entries = fileDirectory.listFiles();
-            
+
             // Iterating for each file and directory
             for ( int i = 0; i < entries.length; ++i )
             {
@@ -233,7 +233,7 @@ public class FileHelper
                 first = path.substring(0, n);
                 path = path.substring(n + 1);
             }
-            
+
             String already_done = null;
             StringTokenizer path_tokenizer = new StringTokenizer(path,fs,false);
             already_done = first;
@@ -245,7 +245,7 @@ public class FileHelper
                 // System.out.println(already_done);
                 //create the directory
                 new_dir.mkdirs();
-                if (OSHelper.isUnix() && 
+                if (OSHelper.isUnix() &&
                     _sMode.length() > 0)
                 {
                     try
@@ -264,7 +264,7 @@ public class FileHelper
     public static void chmod(File file, String mode) throws java.io.IOException
         {
             Runtime.getRuntime().exec
-                (new String[] 
+                (new String[]
                     {"chmod", mode, file.getAbsolutePath()});
         }
 
@@ -301,7 +301,7 @@ public class FileHelper
                     sSubDirs = sSubDirs.substring(1);
                 }
             }
-            
+
             return sSubDirs;
         }
 
@@ -376,11 +376,11 @@ public class FileHelper
         }
     }
 
-    public static void copy(String _sSource, String _sDestination) 
+    public static void copy(String _sSource, String _sDestination)
         {
             FileInputStream aFIS = null;
             FileOutputStream aFOS = null;
-            
+
             try
             {
                 aFIS = new FileInputStream(_sSource);
@@ -412,11 +412,11 @@ public class FileHelper
                     }
                     catch (java.io.IOException e)
                     {
-                        System.out.println("Error: caught Exception: " + e.getMessage());                
+                        System.out.println("Error: caught Exception: " + e.getMessage());
                     }
                 }
             }
-        
+
 //            try
 //            {
 //                File inputFile = new File(_sSource);
@@ -425,12 +425,12 @@ public class FileHelper
 //                java.io.FileReader in = new java.io.FileReader(inputFile);
 //                java.io.FileWriter out = new java.io.FileWriter(outputFile);
 //                int c;
-//                
+//
 //                while ((c = in.read()) != -1)
 //                {
 //                    out.write(c);
 //                }
-//                
+//
 //                in.close();
 //                out.close();
 //            }
@@ -441,12 +441,12 @@ public class FileHelper
 //            }
         }
 
-    
+
     /**
      * Within the directory run through, it's possible to say which file extension types should not
      * consider like '*.prn' because it's not a document.
      *
-     * @return a FileFilter function 
+     * @return a FileFilter function
      */
     public static FileFilter getFileFilter()
         {
@@ -458,7 +458,7 @@ public class FileHelper
                             if (pathname.getName().startsWith("~$"))
                             {
                                 return false;
-                            }                               
+                            }
                             // leave out files starts with '.~lock.' these are OpenOffice.org lock files
                             if (pathname.getName().startsWith(".~lock."))
                             {
@@ -486,7 +486,7 @@ public class FileHelper
                             if (pathname.getName().endsWith("_"))
                             {
                                 return false;
-                            }                            
+                            }
                             return true;
                         }
                 };
@@ -496,7 +496,7 @@ public class FileHelper
      * Within the directory run through, it's possible to say which file extension types should not
      * consider like '*.prn' because it's not a document.
      *
-     * @return a FileFilter function 
+     * @return a FileFilter function
      */
     public static FileFilter getFileFilterPSorPDF()
         {
@@ -507,7 +507,7 @@ public class FileHelper
                             if (pathname.getName().endsWith(".ps"))
                             {
                                 return true;
-                            }                               
+                            }
                             if (pathname.getName().endsWith(".pdf"))
                             {
                                 return true;
@@ -521,7 +521,7 @@ public class FileHelper
      * Within the directory run through, it's possible to say which file extension types should not
      * consider like '*.prn' because it's not a document.
      *
-     * @return a FileFilter function 
+     * @return a FileFilter function
      */
     public static FileFilter getFileFilterJPEG()
         {
@@ -532,7 +532,7 @@ public class FileHelper
                             if (pathname.getName().toLowerCase().endsWith(".jpg"))
                             {
                                 return true;
-                            }                               
+                            }
                             if (pathname.getName().toLowerCase().endsWith(".jpeg"))
                             {
                                 return true;
@@ -546,7 +546,7 @@ public class FileHelper
      * Within the directory run through, it's possible to say which file extension types should not
      * consider like '*.ini' because it's not a document.
      *
-     * @return a FileFilter function 
+     * @return a FileFilter function
      */
     public static FileFilter getFileFilterINI()
         {
@@ -563,7 +563,7 @@ public class FileHelper
                             if (sPathname.endsWith(".ini"))
                             {
                                 return true;
-                            }                               
+                            }
                             return false;
                         }
                 };
@@ -591,7 +591,7 @@ public class FileHelper
         {
             createInfoFile(_sFile, _aGTA, "");
         }
-    
+
     public static void createInfoFile(String _sFile, ParameterHelper _aGTA, String _sSpecial)
         {
             String sFilename;
@@ -612,7 +612,7 @@ public class FileHelper
             IniFile aIniFile = new IniFile(sIniFile);
 
             // OLD INFO FILE
-            
+
             // String fs = System.getProperty("file.separator");
             String ls = System.getProperty("line.separator");
             String sInfoFilename = FileHelper.appendPath(sFileDir, sNameNoSuffix + ".info");
@@ -624,7 +624,7 @@ public class FileHelper
             {
                 FileOutputStream out2 = new FileOutputStream(aInfoFile.toString());
                 PrintStream out = new PrintStream(out2);
-                
+
                 out.println("# automatically created file by graphical compare");
                 if (_aGTA != null)
                 {
@@ -641,7 +641,7 @@ public class FileHelper
                         out.println("buildid=" + sBuildID);
                     }
                     aIniFile.insertValue("global", "buildid", sBuildID);
-                    
+
                     // if (_sSpecial != null && _sSpecial.length() > 0)
                     // {
                     //    out.write("special=" + _sSpecial + ls);
@@ -663,7 +663,7 @@ public class FileHelper
                 //     out.write("# time is given in milli seconds" + ls);
                 //     out.write("time=" + nTime + ls);
                 // }
-                
+
                 out.println();
                 out.println("# Values out of System.getProperty(...)");
                 out.println("os.name=" + System.getProperty("os.name"));
@@ -681,7 +681,7 @@ public class FileHelper
                     _aGTA.getPerformance().print(out);
                     _aGTA.getPerformance().print(aIniFile, "global");
                 }
-                
+
                 out.flush();
                 out.close();
                 out2.close();
@@ -692,13 +692,13 @@ public class FileHelper
                 e.printStackTrace();
             }
             aIniFile.close();
-            
+
 //            String sExtension = FileHelper.getSuffix(_aGTA.getInputFile());
 //            if (sExtension.startsWith("."))
 //            {
 //                sExtension = sExtension.substring(1);
 //            }
-//            
+//
 //            DB.writeToDB(_aGTA.getInputFile(),
 //                         sNameNoSuffix,
 //                         sExtension,
@@ -707,7 +707,7 @@ public class FileHelper
 //                         _aGTA.getResolutionInDPI()
 //                         );
         }
-        
+
         public static void addBasenameToFile(String _sIndexFilename, String _sBasename, String _sCreator, String _sType, String _sSource)
         {
             // String sOutputDir = FileHelper.getPath(_sOutputFilename);
@@ -758,5 +758,5 @@ public class FileHelper
             // String sBasename = FileHelper.getBasename(_sOutputFilename);
             addBasenameToFile(sIndexFilename, _sBasename, _sCreator, _sType, _sSource);
         }
-    
+
 }

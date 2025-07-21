@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -35,10 +35,10 @@ import java.io.InputStream;
  * Windows Registry. It requires the native library unowinreg.dll.
  */
 final class WinRegKey {
-    
+
     private String m_rootKeyName;
     private String m_subKeyName;
-            
+
     // native methods to access the windows registry
     private static native boolean winreg_RegOpenClassesRoot( long[] hkresult );
     private static native boolean winreg_RegOpenCurrentConfig(
@@ -48,21 +48,21 @@ final class WinRegKey {
     private static native boolean winreg_RegOpenUsers( long[] hkresult );
     private static native boolean winreg_RegOpenKeyEx( long parent, String name,
         long[] hkresult );
-    private static native boolean winreg_RegCloseKey( long hkey );    
+    private static native boolean winreg_RegCloseKey( long hkey );
     private static native boolean winreg_RegQueryValueEx(
-        long hkey, String value, long[] type, 
+        long hkey, String value, long[] type,
         byte[] data, long[] size );
     private static native boolean winreg_RegQueryInfoKey(
-        long hkey, long[] subkeys, long[] maxSubkeyLen, 
+        long hkey, long[] subkeys, long[] maxSubkeyLen,
         long[] values, long[] maxValueNameLen,
         long[] maxValueLen, long[] secDescriptor );
-    
+
     // load the native library unowinreg.dll
-    static {        
+    static {
         try {
-            ClassLoader cl = WinRegKey.class.getClassLoader();            
+            ClassLoader cl = WinRegKey.class.getClassLoader();
             InputStream is = cl.getResourceAsStream( "win/unowinreg.dll" );
-            if ( is != null ) {                
+            if ( is != null ) {
                 // generate a temporary name for lib file and write to temp
                 // location
                 BufferedInputStream istream = new BufferedInputStream( is );
@@ -74,23 +74,23 @@ final class WinRegKey {
                 byte[] buffer = new byte[bsize];
                 while ( ( n = istream.read( buffer, 0, bsize ) ) != -1 ) {
                     ostream.write( buffer, 0, n );
-                }        
+                }
                 istream.close();
-                ostream.close();            
+                ostream.close();
                 // load library
                 System.load( libfile.getPath() );
             } else {
                 // If the library cannot be found as a class loader resource,
                 // try the global System.loadLibrary(). The JVM will look for
-                // it in the java.library.path.            
+                // it in the java.library.path.
                 System.loadLibrary( "unowinreg" );
-            }            
+            }
         } catch ( java.lang.Exception e ) {
             System.err.println( "com.sun.star.lib.loader.WinRegKey: " +
                 "loading of native library failed!" + e );
         }
     }
-    
+
     /**
      * Constructs a <code>WinRegKey</code>.
      */
@@ -101,7 +101,7 @@ final class WinRegKey {
 
     /**
      * Reads a string value for the specified value name.
-     */    
+     */
     public String getStringValue( String valueName ) throws WinRegKeyException {
         byte[] data = getValue( valueName );
         // remove terminating null character
@@ -112,10 +112,10 @@ final class WinRegKey {
      * Reads a value for the specified value name.
      */
     private byte[] getValue( String valueName ) throws WinRegKeyException {
-        
+
         byte[] result = null;
         long[] hkey = {0};
-        
+
         // open the specified registry key
         boolean bRet = false;
         long[] hroot = {0};
@@ -140,10 +140,10 @@ final class WinRegKey {
             if ( !winreg_RegCloseKey( hroot[0] ) ) {
                 throw new WinRegKeyException( "opening registry key and " +
                     "releasing root registry key handle failed!" );
-            }            
+            }
             throw new WinRegKeyException( "opening registry key failed!" );
         }
-            
+
         // get the size of the longest data component among the key's values
         long[] subkeys = {0};
         long[] maxSubkeyLen = {0};
@@ -158,13 +158,13 @@ final class WinRegKey {
                 throw new WinRegKeyException( "retrieving information about " +
                     "the registry key and releasing registry key handles " +
                     "failed!" );
-            }                
+            }
             throw new WinRegKeyException( "retrieving information about " +
                 "the registry key failed!" );
         }
-        
+
         // get the data for the specified value name
-        byte[] buffer = new byte[ (int) maxValueLen[0] ];        
+        byte[] buffer = new byte[ (int) maxValueLen[0] ];
         long[] size = new long[1];
         size[0] = buffer.length;
         long[] type = new long[1];
@@ -180,17 +180,17 @@ final class WinRegKey {
             throw new WinRegKeyException( "retrieving data for the " +
                 "specified value name failed!" );
         }
-        
+
         // release registry key handles
         if ( !winreg_RegCloseKey( hkey[0] ) ||
              !winreg_RegCloseKey( hroot[0] ) ) {
             throw new WinRegKeyException( "releasing registry key handles " +
                 "failed!" );
         }
-        
+
         result = new byte[ (int) size[0] ];
         System.arraycopy( buffer, 0, result, 0, (int)size[0] );
-        
+
         return result;
-    } 
+    }
 }

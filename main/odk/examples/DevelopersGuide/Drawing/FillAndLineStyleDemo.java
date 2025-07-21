@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -69,20 +69,20 @@ public class FillAndLineStyleDemo
 				"private:factory/sdraw", "_blank", 0, pPropValues );
 
 			XDrawPage xPage = PageHelper.getDrawPageByIndex( xDrawDoc, 0 );
-			
+
 			XShape xRectangle = ShapeHelper.createShape( xDrawDoc,
 				new Point( 0, 0 ),
 					new Size( 15000, 12000 ),
 						"com.sun.star.drawing.RectangleShape" );
-			
+
 			XShapes xShapes = (XShapes)
 					UnoRuntime.queryInterface( XShapes.class, xPage );
 			xShapes.add( xRectangle );
 
 			XPropertySet xPropSet = (XPropertySet)
 				UnoRuntime.queryInterface( XPropertySet.class, xRectangle );
-			
-			/* apply a gradient fill style that goes from top left to bottom 
+
+			/* apply a gradient fill style that goes from top left to bottom
 			   right and is changing its color from green to yellow */
 			xPropSet.setPropertyValue( "FillStyle",
                                        com.sun.star.drawing.FillStyle.GRADIENT );
@@ -110,7 +110,7 @@ public class FillAndLineStyleDemo
 			aLineDash.Distance = 150;
 			xPropSet.setPropertyValue( "LineDash", aLineDash );
 			xPropSet.setPropertyValue( "LineColor", new Integer( 0x0000ff ) );
-			xPropSet.setPropertyValue( "LineWidth", new Integer( 200 ) );			
+			xPropSet.setPropertyValue( "LineWidth", new Integer( 200 ) );
 
 		}
 		catch( Exception ex )

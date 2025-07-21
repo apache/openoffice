@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -35,7 +35,7 @@ import com.sun.star.lib.uno.environments.java.java_environment;
 public class ProxyProvider
 {
     static java_environment env= new java_environment(null);
-    
+
     /** Creates a new instance of ProxyProvider */
     public ProxyProvider()
     {
@@ -52,7 +52,7 @@ public class ProxyProvider
         Object retVal= null;
         if (obj == null || iface == null || iface.isInstance(obj) == false )
             return retVal;
-        
+
         Type type= new Type(TypeDescription.getTypeDescription(iface));
         Type evtType= new Type(TypeDescription.getTypeDescription(com.sun.star.lang.XEventListener.class));
         // find the object identifier
@@ -82,7 +82,7 @@ class Proxy implements IQueryInterface, XEventListener
     public String getOid() {
         return oid;
     }
-    
+
     public boolean isSame(Object object) {
         if (object instanceof IQueryInterface)
         {
@@ -95,21 +95,21 @@ class Proxy implements IQueryInterface, XEventListener
                     return false;
             }
         }
-        
+
         String oidObj = UnoRuntime.generateOid(object);
         if (oidObj.equals(oid))
             return true;
         else
             return false;
     }
-    
+
     public Object queryInterface(Type type) {
         return null;
     }
-    
+
     public void disposing(com.sun.star.lang.EventObject eventObject) {
     }
-    
+
 }
 
 
@@ -119,7 +119,7 @@ class Proxy implements IQueryInterface, XEventListener
 //    boolean _virtual;
 //    boolean _forceSynchronous;
 //    boolean _passed = true;
-//    
+//
 //    Object _xEventListenerProxy;
 //    int nDisposingCalled= 0;
 //
@@ -128,9 +128,9 @@ class Proxy implements IQueryInterface, XEventListener
 //        _virtual = virtual;
 //        _forceSynchronous = forceSynchronous;
 //        _xEventListenerProxy= evtListener;
-//        
+//
 //    }
-//    
+//
 //    public Object sendRequest(Object object,
 //    Type type,
 //    String operation,
@@ -138,7 +138,7 @@ class Proxy implements IQueryInterface, XEventListener
 //    Boolean synchron[],
 //    Boolean mustReply[]) throws Throwable
 //    {
-//        
+//
 //        Object result = null;
 //        if (operation.equals("disposing"))
 //        {

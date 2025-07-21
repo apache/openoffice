@@ -1,7 +1,7 @@
 package testlib.uno;
 
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -9,16 +9,16 @@ package testlib.uno;
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 // __________ Imports __________
@@ -102,14 +102,14 @@ public class ShapeUtil {
 				XPropertySet.class, xTextRange);
 		return xPropSet;
 	}
-	
+
 	/**
 	 * get a paragraph in a shape. the return value is the PropertySet of the text
 	 * range that specified by the index
 	 */
 	public static XPropertySet getPortion(XShape xShape, int index) throws NoSuchElementException, WrappedTargetException {
 		XEnumerationAccess m_paraAccess = (XEnumerationAccess)UnoRuntime.queryInterface(XEnumerationAccess.class, xShape);
-		XEnumeration xParaEnum = m_paraAccess.createEnumeration();	
+		XEnumeration xParaEnum = m_paraAccess.createEnumeration();
 		XPropertySet xPropSet = null;
 		int i=0;
 		while(xParaEnum.hasMoreElements())
@@ -121,17 +121,17 @@ public class ShapeUtil {
 //				System.out.println(xTextRange.getText().getString());
 				xPropSet = (XPropertySet) UnoRuntime.queryInterface(
 						XPropertySet.class, xTextRange);
-				break;				
+				break;
 			}
-			else i++;			
-		}	
+			else i++;
+		}
 		return xPropSet;
 	}
 
 
 	/**
 	 * try to get text of a shape
-	 * 
+	 *
 	 * @return
 	 */
 	public static String getPortion(XShape xShape) {
@@ -186,7 +186,7 @@ public class ShapeUtil {
 		return xShapes;
 
 	}
-	
+
 	/**
 	 * Remove the specific shape in specific page
 	 * @param impressDocument

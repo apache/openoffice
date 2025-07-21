@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 package com.sun.star.sdbcx.comp.postgresql;
 
@@ -50,17 +50,17 @@ import com.sun.star.uno.UnoRuntime;
 public class PostgresqlViews extends OContainer {
     private PostgresqlCatalog catalog;
     private XDatabaseMetaData metadata;
-    
+
     public PostgresqlViews(Object lock, XDatabaseMetaData metadata, PostgresqlCatalog catalog, List<String> names) throws ElementExistException {
         super(lock, true, names);
         this.metadata = metadata;
         this.catalog = catalog;
     }
-    
+
     @Override
     protected XPropertySet createObject(String name) throws SQLException {
         NameComponents nameComponents = DbTools.qualifiedNameComponents(metadata, name, ComposeRule.InDataManipulation);
-        
+
         String sql = "SELECT view_definition,check_option FROM information_schema.views WHERE ";
         if (!nameComponents.getCatalog().isEmpty()) {
             sql += "table_catalog=? AND ";
@@ -69,7 +69,7 @@ public class PostgresqlViews extends OContainer {
             sql += "table_schema=? AND ";
         }
         sql += "table_name=?";
-        
+
         final String command;
         final String checkOption;
         XPreparedStatement statement = null;
@@ -97,7 +97,7 @@ public class PostgresqlViews extends OContainer {
             CompHelper.disposeComponent(results);
             CompHelper.disposeComponent(statement);
         }
-        
+
         final int checkOptionInt;
         if (checkOption.equals("NONE")) {
             checkOptionInt = CheckOption.NONE;
@@ -109,11 +109,11 @@ public class PostgresqlViews extends OContainer {
             throw new SQLException("Unsupported check option '" + checkOption + "'", this,
                     StandardSQLState.SQL_FEATURE_NOT_IMPLEMENTED.text(), 0, null);
         }
-        
+
         return new OView(nameComponents.getCatalog(), nameComponents.getSchema(), nameComponents.getTable(), isCaseSensitive(),
                 command, checkOptionInt);
     }
-    
+
     @Override
     protected void dropObject(int index, String name) throws SQLException {
         XStatement statement = null;
@@ -123,7 +123,7 @@ public class PostgresqlViews extends OContainer {
             Osl.ensure(propertySet != null, "Object returned from view collection isn't an XPropertySet");
             String sql = String.format("DROP VIEW %s", DbTools.composeTableName(metadata, propertySet, ComposeRule.InTableDefinitions,
                     false, false, true));
-            
+
             statement = metadata.getConnection().createStatement();
             statement.execute(sql);
         } catch (WrappedTargetException exception) {
@@ -137,7 +137,7 @@ public class PostgresqlViews extends OContainer {
     protected XPropertySet createDescriptor() {
         return new SdbcxViewDescriptor(isCaseSensitive());
     }
-    
+
     @Override
     protected XPropertySet appendObject(String _rForName, XPropertySet descriptor) throws SQLException {
         XStatement statement = null;
@@ -156,7 +156,7 @@ public class PostgresqlViews extends OContainer {
         catalog.getTablesInternal().insertElement(_rForName, null);
         return createObject(_rForName);
     }
-    
+
     @Override
     protected void impl_refresh() {
         catalog.refreshObjects();

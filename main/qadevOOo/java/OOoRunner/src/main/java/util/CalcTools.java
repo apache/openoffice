@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -43,9 +43,9 @@ import com.sun.star.uno.UnoRuntime;
  * and its sheets.
  */
 public class CalcTools {
-    
+
     /**
-     * fills a range of a calc sheet with computed data of type 
+     * fills a range of a calc sheet with computed data of type
      * <CODE>Double</CODE>.
      * @param xSheetDoc the Clac documents which should be filled
      * @param sheetNumber the number of the sheet of <CODE>xSheetDoc</CODE>
@@ -67,10 +67,10 @@ public class CalcTools {
                 throw new Exception(
                         "Couldn't fill CalcSheet with content: " + e.toString());
         }
-    }            
-    
+    }
+
     /**
-     * fills a range of a calc sheet with computed data of type 
+     * fills a range of a calc sheet with computed data of type
      * <CODE>Double</CODE>.
      * @param xSheet the sheet to fill with content
      * @param startCellX the cell number of the X start point (row) of the range to fill
@@ -79,10 +79,10 @@ public class CalcTools {
      * @param rangeLengthY the size of the range expansion in Y-direction
      * @throws java.lang.Exception on any error an <CODE>java.lang.Exception</CODE> was thrown
      */
-    public static void fillCalcSheetWithContent(XSpreadsheet xSheet, 
+    public static void fillCalcSheetWithContent(XSpreadsheet xSheet,
                         int startCellX, int startCellY, int rangeLengthX, int rangeLengthY)
                   throws java.lang.Exception {
-        
+
         try{
             // create a range with content
             Object[][] newData = new Object[rangeLengthY][rangeLengthX];
@@ -93,7 +93,7 @@ public class CalcTools {
             }
             XCellRange xRange = null;
             try {
-                xRange = xSheet.getCellRangeByPosition(startCellX, startCellY, 
+                xRange = xSheet.getCellRangeByPosition(startCellX, startCellY,
                                     startCellX+rangeLengthX-1, startCellY+rangeLengthY-1);
             } catch ( IndexOutOfBoundsException e){
                     throw new Exception(
@@ -108,9 +108,9 @@ public class CalcTools {
                         "Couldn't fill CalcSheet with content: " + e.toString());
         }
     }
-    
+
     /**
-     * 
+     *
      * returns an <CODE>XSpreadsheet</CODE> from a Calc document.
      * @param xSheetDoc the Calc docuent which contains the sheet
      * @param sheetNumber the number of the sheet to return
@@ -120,7 +120,7 @@ public class CalcTools {
      */
     public static XSpreadsheet getSpreadSheetFromSheetDoc(XComponent xSheetDoc, int sheetNumber)
                   throws java.lang.Exception {
-        
+
         XSpreadsheet xSheet = null;
 
         try{
@@ -149,7 +149,7 @@ public class CalcTools {
         } catch (Exception e){
             throw new Exception(
                 "Couldn't get sheet '" +sheetNumber + "' : " + e.toString());
-        }   
+        }
          return xSheet;
     }
 }

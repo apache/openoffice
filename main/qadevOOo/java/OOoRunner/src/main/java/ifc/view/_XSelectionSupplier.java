@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -52,26 +52,26 @@ import lib.StatusException;
  * @see com.sun.star.view.XSelectionSupplier
  */
 public class _XSelectionSupplier extends MultiMethodTest {
-    
+
     public XSelectionSupplier oObj = null;
     public boolean selectionChanged = false;
     Object[] selections = null;
     Comparator ObjCompare = null;
-    
+
     protected void before() {
         selections = (Object[])tEnv.getObjRelation("Selections");
         if (selections == null) {
             throw new StatusException(Status.failed(
                     "Couldn't get relation 'Selections'"));
         }
-        
-        ObjCompare = (Comparator)tEnv.getObjRelation("Comparer");        
+
+        ObjCompare = (Comparator)tEnv.getObjRelation("Comparer");
     }
-    
+
     protected void after() {
         disposeEnvironment();
     }
-    
+
     /**
      * Listener implementation which just set flag when listener
      * method is called.
@@ -82,11 +82,11 @@ public class _XSelectionSupplier extends MultiMethodTest {
             log.println("listener called");
             selectionChanged = true;
         }
-        
+
     }
-    
+
     XSelectionChangeListener listener = new MyChangeListener();
-    
+
     /**
      * Test adds listener to the object, then selects first and
      * then second instances to be sure that selection was changed.<p>
@@ -107,7 +107,7 @@ public class _XSelectionSupplier extends MultiMethodTest {
         }
         tRes.tested("addSelectionChangeListener()", res);
     }
-    
+
     /**
      * Selects an instance from relation 'First'. <p>
      * Has <b> OK </b> status if no exceptions were thrown. <p>
@@ -123,8 +123,8 @@ public class _XSelectionSupplier extends MultiMethodTest {
                 locRes = oObj.select(selections[i]);
                 log.println("select #" + i + ": " + locRes);
                 Object curSelection = oObj.getSelection();
-                if (locRes) {                    
-                    
+                if (locRes) {
+
                     if (ObjCompare != null) {
                         ObjCompare.compare(selections[i], curSelection);
                     } else {
@@ -151,10 +151,10 @@ public class _XSelectionSupplier extends MultiMethodTest {
             ex.printStackTrace(log);
             res = false;
         }
-        
+
         tRes.tested("select()", res);
     }
-    
+
     /**
      * Test removes listener, then selects first and
      * then second instances to be sure that selection was changed.<p>
@@ -181,7 +181,7 @@ public class _XSelectionSupplier extends MultiMethodTest {
         }
         tRes.tested("removeSelectionChangeListener()", res);
     }
-    
+
     /**
      * First test changes selection of the object : if nothing is
      * currently selected or first instance ('First' relation) is
@@ -196,6 +196,6 @@ public class _XSelectionSupplier extends MultiMethodTest {
     public void _getSelection() {
         requiredMethod("select()");
         tRes.tested("getSelection()", true);
-    }    
-    
+    }
+
 }  // finish class _XSelectionSupplier

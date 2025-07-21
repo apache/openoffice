@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 import com.sun.star.comp.servicemanager.ServiceManager;
@@ -39,7 +39,7 @@ import com.sun.star.lang.*;
 import storagetesting.*;
 
 public class StorageFunctionality  {
-    
+
     public static void main( String args[] )
 	{
         // connect to the office
@@ -49,9 +49,9 @@ public class StorageFunctionality  {
         if ( args.length == 1 ) {
             sConnectionString = args[0];
         }
-        
+
         XMultiServiceFactory xMSF = null;
-        
+
         // create connection(s) and get multiservicefactory
         try {
             xMSF = connect( sConnectionString );
@@ -65,7 +65,7 @@ public class StorageFunctionality  {
             System.out.println( "Error: Couldn't get MSF, exception: " + e );
             return;
         }
-		
+
 		XSingleServiceFactory xStorageFactory = null;
 		try
 		{
@@ -121,11 +121,11 @@ public class StorageFunctionality  {
         	System.out.println( "\ntesting failed" );
 
         System.out.println( "done" );
-        
+
         System.exit( 0 );
-    } 
-    
-    
+    }
+
+
     public static XMultiServiceFactory connect( String sConnectStr )
     throws com.sun.star.uno.Exception,
     com.sun.star.uno.RuntimeException,
@@ -135,33 +135,33 @@ public class StorageFunctionality  {
         XComponentContext xComponentContext =
         com.sun.star.comp.helper.Bootstrap.createInitialComponentContext(
         null );
-        
+
         // initial serviceManager
         XMultiComponentFactory xLocalServiceManager =
         xComponentContext.getServiceManager();
-                
+
         // create a connector, so that it can contact the office
         Object  oUrlResolver  = xLocalServiceManager.createInstanceWithContext(
         "com.sun.star.bridge.UnoUrlResolver", xComponentContext );
         XUnoUrlResolver xUrlResolver = (XUnoUrlResolver)UnoRuntime.queryInterface(
             XUnoUrlResolver.class, oUrlResolver );
-        
+
         Object oInitialObject = xUrlResolver.resolve( sConnectStr );
         XNamingService xName = (XNamingService)UnoRuntime.queryInterface(
             XNamingService.class, oInitialObject );
-        
+
         XMultiServiceFactory xMSF = null;
         if( xName != null ) {
             System.err.println( "got the remote naming service !" );
             Object oMSF = xName.getRegisteredObject("StarOffice.ServiceManager" );
-            
+
             xMSF = (XMultiServiceFactory)
             UnoRuntime.queryInterface( XMultiServiceFactory.class, oMSF );
         }
 		else
 			System.out.println( "Error: Can't get XNamingService interface from url resolver!" );
-        
+
         return xMSF;
     }
-    
+
 }

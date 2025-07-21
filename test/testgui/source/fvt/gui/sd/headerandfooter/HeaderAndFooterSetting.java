@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,20 +7,20 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 /**
- * 
+ *
  */
 package fvt.gui.sd.headerandfooter;
 
@@ -44,10 +44,10 @@ public class HeaderAndFooterSetting {
 
 	@Rule
 	public Logger log = Logger.getLogger(this);
-	
+
 	@Before
 	public void setUp() throws Exception {
-		app.start(true); 
+		app.start(true);
 		AppTool.newPresentation();
 		for (int i = 0; i < 5; i++) {
 			sdInsertPageButtonOnToolbar.click();
@@ -69,7 +69,7 @@ public class HeaderAndFooterSetting {
 
 	/**
 	 * Test Copy slide with Apply Footer to same file and different file
-	 * 
+	 *
 	 * @throws Exception
 	 */
 	@Test
@@ -119,12 +119,12 @@ public class HeaderAndFooterSetting {
 		assertEquals("Footer Test", sdFooterTextOnSlideInput.getText());
 		assertEquals(false, sdSlideNumAsFooterOnSlide.isChecked());
 		sdHeaderAndFooterDlgSlideTab.cancel();
-		
+
 	}
 
 	/**
 	 * Test Copy slide with Apply to all Footer to same file and different file
-	 * 
+	 *
 	 * @throws Exception
 	 */
 	@Test
@@ -179,7 +179,7 @@ public class HeaderAndFooterSetting {
 
 	/**
 	 * Test Copy slide with Notes Footer to same file and different file
-	 * 
+	 *
 	 * @throws Exception
 	 */
 	@Test
@@ -232,7 +232,7 @@ public class HeaderAndFooterSetting {
 
 	/**
 	 * Test duplicate slide with Apply to all Footer to same file
-	 * 
+	 *
 	 * @throws Exception
 	 */
 	@Test
@@ -263,7 +263,7 @@ public class HeaderAndFooterSetting {
 
 	/**
 	 * Test footer not show on the first slide.
-	 * 
+	 *
 	 * @throws Exception
 	 */
 	@Test
@@ -293,7 +293,7 @@ public class HeaderAndFooterSetting {
 
 	/**
 	 * Test Insert Footer to focus slide.
-	 * 
+	 *
 	 * @throws Exception
 	 */
 	@Test
@@ -347,7 +347,7 @@ public class HeaderAndFooterSetting {
 
 	/**
 	 * Test Insert Footer to Notes View
-	 * 
+	 *
 	 * @throws Exception
 	 */
 	@Test
@@ -417,7 +417,7 @@ public class HeaderAndFooterSetting {
 
 	/**
 	 * Test Insert Footer to Slide, use Apply to All
-	 * 
+	 *
 	 * @throws Exception
 	 */
 	@Test
@@ -476,7 +476,7 @@ public class HeaderAndFooterSetting {
 
 	/**
 	 * Test Insert update automatically time footer to slides.
-	 * 
+	 *
 	 * @throws Exception
 	 */
 	@Test
@@ -498,7 +498,7 @@ public class HeaderAndFooterSetting {
 
 	/**
 	 * Test Insert update automatically time footer to Notes view.
-	 * 
+	 *
 	 * @throws Exception
 	 */
 	@Test
@@ -510,7 +510,7 @@ public class HeaderAndFooterSetting {
 		sdAutoUpdateTimeFooter.check();
 		String currentTime = sdAutoUpdateTimeFooterType.getItemText(7);
 		sdApplyToAllButtonOnSlideFooter.click();
-		sleep(1); 
+		sleep(1);
 
 		app.dispatch(".uno:HeaderAndFooter");
 		sdHeaderAndFooterOnNotesTabPage.select();
@@ -522,7 +522,7 @@ public class HeaderAndFooterSetting {
 
 	/**
 	 * Test Insert Header and Footer to Notes view. Save and ReOpen
-	 * 
+	 *
 	 * @throws Exception
 	 */
 	@Test
@@ -572,7 +572,7 @@ public class HeaderAndFooterSetting {
 
 	/**
 	 * Test Insert Header and Footer to Slide Save and Reopen
-	 * 
+	 *
 	 * @throws Exception
 	 */
 	@Test

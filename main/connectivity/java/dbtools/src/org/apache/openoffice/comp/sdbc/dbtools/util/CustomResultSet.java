@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 package org.apache.openoffice.comp.sdbc.dbtools.util;
@@ -56,25 +56,25 @@ public class CustomResultSet extends PropertySet
     private int currentRow = -1;
     /// 1-based:
     private int currentColumn;
-    
+
     public CustomResultSet(XResultSetMetaData resultSetMetaData, ArrayList<ORowSetValue[]> rows) {
         this.resultSetMetaData = resultSetMetaData;
         this.rows = rows;
     }
-    
+
     // XComponent:
     @Override
     protected void postDisposing() {
     }
 
     // XCloseable:
-    
+
     public void close() throws SQLException {
         dispose();
     }
 
     // XResultSet:
-    
+
     private ORowSetValue getField(int columnIndex) throws SQLException {
         if (isBeforeFirst() || isAfterLast()) {
             throw new SQLException("Row out of range");
@@ -86,7 +86,7 @@ public class CustomResultSet extends PropertySet
         currentColumn = columnIndex;
         return fields[columnIndex - 1];
     }
-    
+
     public synchronized boolean absolute(int position) throws SQLException {
         checkDisposed();
         if (position >= 0) {
@@ -207,14 +207,14 @@ public class CustomResultSet extends PropertySet
     }
 
     // XResultSetMetaDataSupplier:
-    
+
     public synchronized XResultSetMetaData getMetaData() throws SQLException {
         checkDisposed();
         return resultSetMetaData;
     }
 
     // XRow:
-    
+
     public synchronized XArray getArray(int columnIndex) throws SQLException {
         checkDisposed();
         return null;
@@ -330,7 +330,7 @@ public class CustomResultSet extends PropertySet
     }
 
     // XColumnLocate:
-    
+
     public synchronized int findColumn(String name) throws SQLException {
         checkDisposed();
         for (int i = 1; i <= resultSetMetaData.getColumnCount(); i++) {
@@ -351,11 +351,11 @@ public class CustomResultSet extends PropertySet
         throw new SQLException(error, this, StandardSQLState.SQL_COLUMN_NOT_FOUND.text(), 0, null);
     }
 
-    // XRowLocate:    
+    // XRowLocate:
 
     public synchronized int compareBookmarks(Object arg0, Object arg1) throws SQLException {
         checkDisposed();
-        
+
         int bookmark1, bookmark2;
         try {
             bookmark1 = AnyConverter.toInt(arg0);
@@ -363,7 +363,7 @@ public class CustomResultSet extends PropertySet
         } catch (IllegalArgumentException illegalArgumentException) {
             return CompareBookmark.NOT_COMPARABLE;
         }
-        
+
         if (bookmark1 < bookmark2) {
             return CompareBookmark.LESS;
         } else if (bookmark1 > bookmark2) {

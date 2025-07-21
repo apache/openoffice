@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 /*
@@ -48,9 +48,9 @@ public class Instance
     }
 
     /** creates a new element in the instance
-     * 
+     *
      * The element will be inserted immediately below the root node of the instance.
-     * 
+     *
      * @param _elementName
      *      the name of the to-be-created element
      * @return
@@ -63,9 +63,9 @@ public class Instance
     }
 
     /** creates a new element in the instance
-     * 
+     *
      * The element will be inserted immediately below a given XNode.
-     * 
+     *
      * @param _parentElement
      *      the node whose child shall be created
      * @param _elementName
@@ -80,9 +80,9 @@ public class Instance
     }
 
     /** creates a new element in the instance
-     * 
+     *
      * The element will be inserted immediately below a given XNode.
-     * 
+     *
      * @param _parentElement
      *      the node whose child shall be created
      * @param _elementName
@@ -136,7 +136,7 @@ public class Instance
     }
 
     /** creates an attribute for the root node of the instance
-     * 
+     *
      * @param _attribName
      *      the name of the to-be-created attribute
      * @return
@@ -149,7 +149,7 @@ public class Instance
     }
 
     /** creates an attribute for the root node of the instance
-     * 
+     *
      * @param _attribName
      *      the name of the to-be-created attribute
      * @param _initialNodeValue
@@ -164,7 +164,7 @@ public class Instance
     }
 
     /** creates an attribute for the given node
-     * 
+     *
      * @param _parentElement
      *      the element at which the attribute should be created
      * @param _attribName
@@ -179,7 +179,7 @@ public class Instance
     }
 
     /** creates an attribute for the given node
-     * 
+     *
      * @param _parentElement
      *      the element at which the attribute should be created
      * @param _attribName

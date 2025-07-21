@@ -41,7 +41,7 @@ public class SimpleTypeNodeVisitorAdapter
     {
         Default(aType);
     }
-    
+
     @Override
     public void Visit(StringNode aType)
     {
@@ -53,7 +53,7 @@ public class SimpleTypeNodeVisitorAdapter
     {
         Default(aType);
     }
-    
+
     public void Default (final ISimpleTypeNode aType)
     {
     }

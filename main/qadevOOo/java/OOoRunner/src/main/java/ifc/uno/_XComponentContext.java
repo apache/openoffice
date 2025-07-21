@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -47,7 +47,7 @@ public class _XComponentContext extends MultiMethodTest {
                 if (names[i].equals("com.sun.star.i18n.ConversionDictionary_ko")) continue;
                 if (names[i].equals("com.sun.star.i18n.TextConversion_ko")) continue;
                 log.println("try to instantiate found servicename " +
-                            names[i]);                
+                            names[i]);
                 directly.createInstanceWithContext(names[i], oObj);
                 log.println("worked .... ok");
                 res &= true;
@@ -67,7 +67,7 @@ public class _XComponentContext extends MultiMethodTest {
                                "/singletons/com.sun.star.lang.theServiceManager");
         byValue = (XMultiComponentFactory) UnoRuntime.queryInterface(
                           XMultiComponentFactory.class, value);
-        
+
         String[] vNames = byValue.getAvailableServiceNames();
         String[] dNames = directly.getAvailableServiceNames();
 

@@ -41,18 +41,18 @@ public class StringParser
                 for (int nIndex=6; nIndex<aLine.length; ++nIndex)
                     maEnumeration.add(Integer.parseInt(aLine[nIndex]));
                 break;
-                
+
             case "P":
                 meRestrictionType = RestrictionType.Pattern;
                 maPattern = Pattern.compile(aLine[6].replace("\\p{Is", "\\p{In"));
                 break;
-                
+
             case "L":
                 meRestrictionType = RestrictionType.Length;
                 mnMinimumLength = Integer.parseInt(aLine[6]);
                 mnMaximumLength = Integer.parseInt(aLine[7]);
                 break;
-                
+
             case "N":
                 meRestrictionType = RestrictionType.None;
                 break;
@@ -62,9 +62,9 @@ public class StringParser
         }
     }
 
-    
-    
-    
+
+
+
     @Override
     public Object Parse (
         final String sRawValue,
@@ -95,7 +95,7 @@ public class StringParser
                             */
                 else
                     return sRawValue;
-                
+
             case None:
                 return sRawValue;
 
@@ -103,10 +103,10 @@ public class StringParser
                 throw new RuntimeException();
         }
     }
-    
-    
-    
-    
+
+
+
+
     enum RestrictionType
     {
         Enumeration,

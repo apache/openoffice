@@ -38,17 +38,17 @@ public class Location
         mnOffset = nOffset;
     }
 
-    
-    
-    
+
+
+
     public Location ()
     {
         this("<predefined>", 0,0,0);
     }
-    
-    
-    
-    
+
+
+
+
     @Override
     public String toString ()
     {
@@ -58,10 +58,10 @@ public class Location
             mnColumnNumber,
             mnOffset);
     }
-    
-    
-    
-    
+
+
+
+
     private final String msFilename;
     private final int mnLineNumber;
     private final int mnColumnNumber;

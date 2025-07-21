@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -47,7 +47,7 @@ public class FrameGrabber implements com.sun.star.lang.XServiceInfo,
     public FrameGrabber( com.sun.star.lang.XMultiServiceFactory aFactory, String aURL )
     {
         maFactory = aFactory;
-    
+
         try
         {
             maPlayer = javax.media.Manager.createRealizedPlayer( new java.net.URL( aURL ) );
@@ -67,39 +67,39 @@ public class FrameGrabber implements com.sun.star.lang.XServiceInfo,
         catch( java.lang.Exception e )
         {
         }
-        
+
         if( maPlayer != null )
         {
             maFrameGrabbingControl = (javax.media.control.FrameGrabbingControl) maPlayer.getControl(
                                         "javax.media.control.FrameGrabbingControl" );
         }
     }
-    
+
     // -------------------------------------------------------------------------
 
     public com.sun.star.graphic.XGraphic implImageToXGraphic( java.awt.Image aImage )
     {
         com.sun.star.graphic.XGraphic aRet = null;
-        
+
         if( maFactory != null && aImage != null )
         {
             if( aImage instanceof java.awt.image.BufferedImage )
             {
                 java.io.File aTempFile = null;
-                
+
                 try
                 {
                     aTempFile = java.io.File.createTempFile( "sv0", ".png" );
-                
+
                     if( aTempFile.canWrite() )
                     {
                         javax.imageio.ImageIO.write( (java.awt.image.BufferedImage) aImage, "png", aTempFile );
-                        
+
                         com.sun.star.graphic.XGraphicProvider aProvider =
                             (com.sun.star.graphic.XGraphicProvider) UnoRuntime.queryInterface(
                                 com.sun.star.graphic.XGraphicProvider.class,
                                 maFactory.createInstance("com.sun.star.graphic.GraphicProvider") );
-                                
+
                         if( aProvider != null )
                         {
                             com.sun.star.beans.PropertyValue[] aArgs = new com.sun.star.beans.PropertyValue[ 1 ];
@@ -121,15 +121,15 @@ public class FrameGrabber implements com.sun.star.lang.XServiceInfo,
                 catch( com.sun.star.uno.Exception aExcp )
                 {
                 }
-                
+
                 if( aTempFile != null )
                     aTempFile.delete();
             }
         }
-        
+
         return aRet;
     }
-    
+
     // -----------------
     // - XFrameGrabber -
     // -----------------
@@ -137,24 +137,24 @@ public class FrameGrabber implements com.sun.star.lang.XServiceInfo,
     public synchronized com.sun.star.graphic.XGraphic grabFrame( double fMediaTime )
     {
         com.sun.star.graphic.XGraphic aRet = null;
-    
+
         if( maFrameGrabbingControl != null )
         {
             if( fMediaTime >= 0.0 && fMediaTime <= maPlayer.getDuration().getSeconds() )
             {
                 maPlayer.setMediaTime( new javax.media.Time( fMediaTime ) );
-                
+
                 javax.media.Buffer aBuffer = maFrameGrabbingControl.grabFrame();
-                
+
                 if( aBuffer != null && aBuffer.getFormat() instanceof javax.media.format.VideoFormat )
                 {
-                    aRet = implImageToXGraphic( new javax.media.util.BufferToImage( 
+                    aRet = implImageToXGraphic( new javax.media.util.BufferToImage(
                                                     (javax.media.format.VideoFormat) aBuffer.getFormat() ).
                                                         createImage( aBuffer ) );
                 }
             }
         }
-        
+
         return aRet;
     }
 

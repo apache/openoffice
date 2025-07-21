@@ -37,17 +37,17 @@ public class BlobNode
         mnLengthRestriction = null;
     }
 
-    
-    
-    
+
+
+
     public BuiltInType GetBlobType ()
     {
         return meType;
     }
-    
-    
-    
-    
+
+
+
+
     @Override
     public void ApplyRestriction (
         final Restriction aRestriction,
@@ -55,52 +55,52 @@ public class BlobNode
     {
         if (aRestriction.GetFeatureBits() == 0)
             return;
-        
+
         if (aRestriction.GetFeatureBits() != Restriction.LengthBit)
             throw new RuntimeException("unsupported restriction on blob: "+aRestriction);
-        
+
         mnLengthRestriction = aRestriction.GetLength();
     }
-    
-    
-    
-    
+
+
+
+
     @Override
     public void Print (final Log aLog)
     {
         aLog.printf("blob of type %s\n", meType);
     }
 
-    
-    
-    
+
+
+
     @Override
     public boolean IsList ()
     {
         return mbIsList;
     }
-    
-    
-    
-    
+
+
+
+
     @Override
     public void SetIsList ()
     {
         mbIsList = true;
     }
-    
-    
-    
-    
+
+
+
+
     @Override
     public void AcceptVisitor (final ISimpleTypeNodeVisitor aVisitor)
     {
         aVisitor.Visit(this);
     }
-    
-    
-    
-        
+
+
+
+
     public enum RestrictionType
     {
         Length,
@@ -113,18 +113,18 @@ public class BlobNode
         else
             return RestrictionType.None;
     }
-    
-    
-    
-    
+
+
+
+
     public int GetLengthRestriction ()
     {
         return mnLengthRestriction;
     }
-    
-    
-    
-    
+
+
+
+
     private final BuiltInType meType;
     private boolean mbIsList;
     private Integer mnLengthRestriction;

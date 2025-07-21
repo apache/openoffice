@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -29,10 +29,10 @@ import com.sun.star.wizards.web.data.CGStyle;
 
 /**
  * @author rpiterman
- * the style preview, which is a OOo Document Preview in 
+ * the style preview, which is a OOo Document Preview in
  * an Image Control.
  * This class copies the files needed for this
- * preview from the web wizard work directory 
+ * preview from the web wizard work directory
  * to a given temporary directory, and updates them
  * on request, according to the current style/background selection
  * of the user.
@@ -45,7 +45,7 @@ public class StylePreview
      * the destination html url.
      */
     public String htmlFilename;
-    /** 
+    /**
      * the destination css url
      */
     private String cssFilename;
@@ -64,7 +64,7 @@ public class StylePreview
 
     /**
      * copies the html file to the temp directory, and calculates the
-     * destination names of the background and css files. 
+     * destination names of the background and css files.
      * @param wwRoot is the root directory of the web wizard files (
      * usually [oo]/share/template/[lang]/wizard/web
      */
@@ -110,7 +110,7 @@ public class StylePreview
             //copy the background image to the temp directory.
             fileAccess.copy(background, backgroundFilename);
         }
-        //copy the actual css to the temp directory 
+        //copy the actual css to the temp directory
         fileAccess.copy(css, cssFilename);
     }
 

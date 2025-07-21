@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -82,7 +82,7 @@ public class AccessibleFixedText extends TestCase {
      * displays it. Then the text's accessible component is
      * obtained.
      */
-    protected TestEnvironment createTestEnvironment(TestParameters Param, 
+    protected TestEnvironment createTestEnvironment(TestParameters Param,
                                                     PrintWriter log) {
         XInterface oObj = null;
         XMultiServiceFactory xMSF = (XMultiServiceFactory) Param.getMSF();
@@ -93,23 +93,23 @@ public class AccessibleFixedText extends TestCase {
 
         try {
             dlgModel = (XControlModel) UnoRuntime.queryInterface(
-                               XControlModel.class, 
+                               XControlModel.class,
                                xMSF.createInstance(
                                        "com.sun.star.awt.UnoControlDialogModel"));
 
             XControl dlgControl = (XControl) UnoRuntime.queryInterface(
-                                          XControl.class, 
+                                          XControl.class,
                                           xMSF.createInstance(
                                                   "com.sun.star.awt.UnoControlDialog"));
 
             dlgControl.setModel(dlgModel);
 
             txtModel = (XControlModel) UnoRuntime.queryInterface(
-                               XControlModel.class, 
+                               XControlModel.class,
                                xMSF.createInstance(
                                        "com.sun.star.awt.UnoControlFixedTextModel"));
 
-            txtControl = (XControl) UnoRuntime.queryInterface(XControl.class, 
+            txtControl = (XControl) UnoRuntime.queryInterface(XControl.class,
                                                               xMSF.createInstance(
                                                                       "com.sun.star.awt.UnoControlFixedText"));
 
@@ -120,12 +120,12 @@ public class AccessibleFixedText extends TestCase {
             xFT.setText("FxedText");
 
             XControlContainer ctrlCont = (XControlContainer) UnoRuntime.queryInterface(
-                                                 XControlContainer.class, 
+                                                 XControlContainer.class,
                                                  dlgControl);
 
             ctrlCont.addControl("Text", txtControl);
 
-            xWinDlg = (XWindow) UnoRuntime.queryInterface(XWindow.class, 
+            xWinDlg = (XWindow) UnoRuntime.queryInterface(XWindow.class,
                                                           dlgControl);
 
             xWinDlg.setVisible(true);
@@ -159,10 +159,10 @@ public class AccessibleFixedText extends TestCase {
 
         TestEnvironment tEnv = new TestEnvironment(oObj);
 
-        final XWindow xWin = (XWindow) UnoRuntime.queryInterface(XWindow.class, 
+        final XWindow xWin = (XWindow) UnoRuntime.queryInterface(XWindow.class,
                                                                  txtControl);
 
-        tEnv.addObjRelation("EventProducer", 
+        tEnv.addObjRelation("EventProducer",
                             new ifc.accessibility._XAccessibleEventBroadcaster.EventProducer() {
             public void fireEvent() {
                 xWin.setEnable(false);
@@ -175,7 +175,7 @@ public class AccessibleFixedText extends TestCase {
 
         tEnv.addObjRelation("XAccessibleText.Text", text.getText());
 
-        tEnv.addObjRelation("EditOnly", 
+        tEnv.addObjRelation("EditOnly",
                             "This method isn't supported in this component");
 
         tEnv.addObjRelation("LimitedBounds", "yes");

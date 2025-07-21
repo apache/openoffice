@@ -37,8 +37,8 @@ public class SkipData
     }
 
 
-    
-    
+
+
     public SkipData Clone (final State aState)
     {
         return new SkipData(
@@ -46,9 +46,9 @@ public class SkipData
             maNamespaces);
     }
 
-    
-    
-    
+
+
+
     final Any.ProcessContents maProcessContents;
     final String[] maNamespaces;
 }

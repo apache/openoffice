@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 package installer;
@@ -24,7 +24,7 @@ import java.util.*;
 import java.io.*;
 public class ExecCmd
 {
-    
+
     public boolean exec( String cmd, String[] env )
     {
        System.out.println("About to exectute " + cmd);
@@ -35,25 +35,25 @@ public class ExecCmd
            Runtime rt = Runtime.getRuntime();
            p=rt.exec( cmd, env );
            new Thread(new Runnable() {
-               public void run() 
+               public void run()
                {
                    BufferedReader br_in = null;
-                   try   
+                   try
                    {
                        br_in = new BufferedReader(new InputStreamReader(p.getInputStream()));
                        String buff = null;
-                       while ((buff = br_in.readLine()) != null) 
+                       while ((buff = br_in.readLine()) != null)
                        {
                            System.out.println("Process out :" + buff);
-                           /*try 
-                           { 
-                               Thread.sleep(100); 
-                           } 
+                           /*try
+                           {
+                               Thread.sleep(100);
+                           }
                            catch(Exception e) {}*/
                        }
                        System.out.println("finished reading out");
-                    } 
-                    catch (IOException ioe) 
+                    }
+                    catch (IOException ioe)
                     {
                         System.out.println("Exception caught printing javac result");
                         ioe.printStackTrace();
@@ -70,7 +70,7 @@ public class ExecCmd
                        }
                     }
                } } ).start();
-    
+
             new Thread(new Runnable() {
                 public void run() {
                 BufferedReader br_err = null;

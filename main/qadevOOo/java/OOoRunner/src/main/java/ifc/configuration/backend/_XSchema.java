@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -38,13 +38,13 @@ public class _XSchema extends MultiMethodTest {
     public XSchema oObj;
     XSchemaHandlerImpl xSchemaHandlerImpl = new XSchemaHandlerImpl();
     String filename = null;
-    
+
     protected void before() {
         filename = (String)tEnv.getObjRelation("ParsedFileName");
     }
-    
+
     public void _readComponent() {
-        requiredMethod("readTemplates()");        
+        requiredMethod("readTemplates()");
         boolean res = false;
 
         log.println("Checking for Exception in case of null argument");
@@ -66,10 +66,10 @@ public class _XSchema extends MultiMethodTest {
         try {
             xSchemaHandlerImpl.cleanCalls();
             oObj.readComponent(xSchemaHandlerImpl);
-            
+
             String implCalled = xSchemaHandlerImpl.getCalls();
-            
-            System.out.println(implCalled);            
+
+            System.out.println(implCalled);
 
             int sc = implCalled.indexOf("startComponent");
 
@@ -130,7 +130,7 @@ public class _XSchema extends MultiMethodTest {
             xSchemaHandlerImpl.cleanCalls();
             oObj.readSchema(xSchemaHandlerImpl);
 
-            String implCalled = xSchemaHandlerImpl.getCalls();            
+            String implCalled = xSchemaHandlerImpl.getCalls();
 
             int sc = implCalled.indexOf("startSchema");
 
@@ -174,8 +174,8 @@ public class _XSchema extends MultiMethodTest {
         } catch (com.sun.star.configuration.backend.MalformedDataException e) {
             log.println("Unexpected Exception (" + e + ") -- FAILED");
         }
-        
-        tRes.tested("readSchema()", res);        
+
+        tRes.tested("readSchema()", res);
         reopenFile();
     }
 
@@ -201,8 +201,8 @@ public class _XSchema extends MultiMethodTest {
         try {
             xSchemaHandlerImpl.cleanCalls();
             oObj.readComponent(xSchemaHandlerImpl);
-            
-            String implCalled = xSchemaHandlerImpl.getCalls();            
+
+            String implCalled = xSchemaHandlerImpl.getCalls();
 
             int sc = implCalled.indexOf("startGroup");
 
@@ -234,10 +234,10 @@ public class _XSchema extends MultiMethodTest {
             res &= false;
         }
 
-        tRes.tested("readTemplates()", res);        
+        tRes.tested("readTemplates()", res);
         reopenFile();
     }
-    
+
     /**
      * reopen the parsed file again, to avoid the wrapped target exception.
      */
@@ -247,13 +247,13 @@ public class _XSchema extends MultiMethodTest {
         try {
             Object fileacc = ((XMultiServiceFactory)tParam.getMSF()).createInstance("com.sun.star.comp.ucb.SimpleFileAccess");
             simpleAccess = (XSimpleFileAccess)
-                            UnoRuntime.queryInterface(XSimpleFileAccess.class,fileacc);  
+                            UnoRuntime.queryInterface(XSimpleFileAccess.class,fileacc);
             log.println("Going to parse: "+filename);
             xStream = simpleAccess.openFileRead(filename);
         } catch (com.sun.star.uno.Exception e) {
-        } 
+        }
 
-        XActiveDataSink xSink = (XActiveDataSink) UnoRuntime.queryInterface(XActiveDataSink.class, oObj); 
+        XActiveDataSink xSink = (XActiveDataSink) UnoRuntime.queryInterface(XActiveDataSink.class, oObj);
         xSink.setInputStream(xStream);
     }
 }

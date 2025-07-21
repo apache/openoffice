@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -40,7 +40,7 @@ import lib.MultiPropertyTest;
 * @see com.sun.star.sheet.DataPilotField
 */
 public class _DataPilotField extends MultiPropertyTest {
-    
+
     /**
      *This class is destined to custom test of property <code>SortInfo</code>.
      */
@@ -60,13 +60,13 @@ public class _DataPilotField extends MultiPropertyTest {
      */
     public void _SortInfo() {
         testProperty("SortInfo", SortInfoTester);
-    } 
-    
+    }
+
     public void _HasSortInfo() {
         requiredMethod("SortInfo");
         testProperty("HasSortInfo");
     }
-    
+
     /**
      *This class is destined to custom test of property <code>LayoutInfo</code>.
      */
@@ -85,13 +85,13 @@ public class _DataPilotField extends MultiPropertyTest {
      */
     public void _LayoutInfo() {
         testProperty("LayoutInfo", LayoutInfoTester);
-    } 
-    
+    }
+
     public void _HasLayoutInfo() {
         requiredMethod("LayoutInfo");
         testProperty("HasLayoutInfo");
-    }    
-    
+    }
+
     /**
      *This class is destined to custom test of property <code>AutoShowInfo</code>.
      */
@@ -110,13 +110,13 @@ public class _DataPilotField extends MultiPropertyTest {
      */
     public void _AutoShowInfo() {
         testProperty("AutoShowInfo", AutoShowInfoTester);
-    } 
-    
+    }
+
     public void _HasAutoShowInfo() {
         requiredMethod("AutoShowInfo");
         testProperty("HasAutoShowInfo");
-    }        
-    
+    }
+
     /**
      *This class is destined to custom test of property <code>Reference</code>.
      */
@@ -135,13 +135,13 @@ public class _DataPilotField extends MultiPropertyTest {
      */
     public void _Reference() {
         testProperty("Reference", ReferenceTester);
-    } 
-    
+    }
+
     public void _HasReference() {
         requiredMethod("Reference");
         testProperty("HasReference");
-    }      
-    
+    }
+
     /*
      * this property can only set a true value to false, fo ungrouping purposes
      */
@@ -153,7 +153,7 @@ public class _DataPilotField extends MultiPropertyTest {
                 oObj.setPropertyValue ("IsGroupField", Boolean.FALSE);
                 Boolean propV = (Boolean) oObj.getPropertyValue ("IsGroupField");
                 result = !propV.booleanValue ();
-            } 
+            }
         } catch (Exception e) {
             log.println ("Exception while getting Property 'IsGroupField'"+e);
             result = false;

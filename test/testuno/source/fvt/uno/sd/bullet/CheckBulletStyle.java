@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,19 +7,19 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 /**
- * 
+ *
  */
 package fvt.uno.sd.bullet;
 import static org.junit.Assert.*;
@@ -69,54 +69,54 @@ public class CheckBulletStyle {
 	public void setUpDocument() throws Exception {
 		m_filePath = Testspace.getPath("temp/CheckBulletStyle.odp");
 		if(FileUtil.fileExists(m_filePath))
-		{	//load			
+		{	//load
 			m_xReplace = load();
 		}
 		else{
 			//create a sd
-			m_xSDComponent = (XComponent) UnoRuntime.queryInterface(XComponent.class, app.newDocument("simpress"));	
+			m_xSDComponent = (XComponent) UnoRuntime.queryInterface(XComponent.class, app.newDocument("simpress"));
 			Object firstPage = getDrawPageByIndex(m_xSDComponent, 0);
 			Object secondTextBox = SDUtil.getShapeOfPageByIndex(firstPage, 1);
 			XShape xsecondTextBox = (XShape)UnoRuntime.queryInterface(XShape.class, secondTextBox);
 			m_textProperty = addPortion(xsecondTextBox, "Test Bullet Style", false);
-			
+
 			//get numberingRules
 			m_numberingRules = m_textProperty.getPropertyValue("NumberingRules");
-			
+
 			m_xReplace = (XIndexReplace) UnoRuntime.queryInterface(
-		             XIndexReplace.class, m_numberingRules);    
-			
+		             XIndexReplace.class, m_numberingRules);
+
 			PropertyValue[] props = new PropertyValue[1];
 		    props[0] = new PropertyValue();
 		    props[0].Name = "NumberingType";
 		    props[0].Value = new Short(NumberingType.CHAR_SPECIAL );
-			
+
 		    //set numberingType
 		    m_xReplace.replaceByIndex(0, props);
 		    m_textProperty.setPropertyValue("NumberingRules", m_numberingRules);
-		    //set numbering level to 0			
+		    //set numbering level to 0
 		    m_textProperty.setPropertyValue("NumberingLevel", new Short((short)0));
-		}		
+		}
 	}
 	private XIndexReplace load() throws Exception{
-		m_xSDComponent = (XComponent) UnoRuntime.queryInterface(XComponent.class, 
+		m_xSDComponent = (XComponent) UnoRuntime.queryInterface(XComponent.class,
 				app.loadDocument(m_filePath));
 		Object firstPage = getDrawPageByIndex(m_xSDComponent, 0);
 		Object secondTextBox = SDUtil.getShapeOfPageByIndex(firstPage, 1);
 		XShape xsecondTextBox = (XShape)UnoRuntime.queryInterface(XShape.class, secondTextBox);
 		m_textProperty = getPortion(xsecondTextBox, 0);
-	
+
 		m_numberingRules = m_textProperty.getPropertyValue("NumberingRules");
-		
+
 		XIndexReplace xReplace = (XIndexReplace) UnoRuntime.queryInterface(
-	             XIndexReplace.class, m_numberingRules);   
+	             XIndexReplace.class, m_numberingRules);
 		return xReplace;
 	}
 
 	@After
 	public void tearDownDocument() {
 		app.closeDocument(m_xSDComponent);
-		
+
 		//remove the temp file
 		FileUtil.deleteFile(Testspace.getPath("temp"));
 	}
@@ -130,7 +130,7 @@ public class CheckBulletStyle {
 	public static void tearDownConnection() throws InterruptedException,
 			Exception {
 		app.close();
-		
+
 	}
 
 	@Test
@@ -140,19 +140,19 @@ public class CheckBulletStyle {
 	    props[0] = new PropertyValue();
 	    props[0].Name = "BulletColor";
 	    props[0].Value = new Integer(255);
-		
+
 	    m_xReplace.replaceByIndex(0, props);
-	    m_textProperty.setPropertyValue("NumberingRules", m_numberingRules);		
-	    
+	    m_textProperty.setPropertyValue("NumberingRules", m_numberingRules);
+
 	    app.saveDocument(m_xSDComponent, m_filePath);
 		app.closeDocument(m_xSDComponent);
-		
+
 		XIndexReplace xReplace = load();
 		PropertyValue[] proValues = (PropertyValue[])xReplace.getByIndex(0);
 		assertEquals("name should be BulletColor", "BulletColor", proValues[11].Name);
 		assertEquals("BulletColor should be 255(Blue)", new Integer(255), proValues[11].Value);
 	}
-	
+
 	@Test
 	public void testBulletSize() throws Exception {
 		//BulletRelSize, default 45
@@ -160,16 +160,16 @@ public class CheckBulletStyle {
 	    props[0] = new PropertyValue();
 	    props[0].Name = "BulletRelSize";
 	    props[0].Value = new Short((short)200);
-			    
+
 	    m_xReplace.replaceByIndex(0, props);
 	    m_textProperty.setPropertyValue("NumberingRules", m_numberingRules);
-	    
+
 	    app.saveDocument(m_xSDComponent, m_filePath);
 		app.closeDocument(m_xSDComponent);
-		
+
 		XIndexReplace xReplace = load();
 		PropertyValue[] proValues = (PropertyValue[])xReplace.getByIndex(0);
 		assertEquals("name should be BulletRelSize", "BulletRelSize", proValues[12].Name);
-		assertEquals("BulletRelSize should be 200%", new Short((short)200), proValues[12].Value);		
+		assertEquals("BulletRelSize should be 200%", new Short((short)200), proValues[12].Value);
 	}
 }

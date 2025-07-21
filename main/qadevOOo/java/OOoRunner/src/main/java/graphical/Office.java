@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -35,7 +35,7 @@ public class Office implements IOffice
     private String m_sDocumentName;
     private String m_sResult;
     private IOffice m_aOffice = null;
-    
+
     public Office(ParameterHelper _aParam, String _sResult)
     {
         m_aParameterHelper = _aParam;
@@ -71,8 +71,8 @@ public class Office implements IOffice
             sDocumentSuffix.toLowerCase().endsWith(".bmp"))
         {
             throw new OfficeException("The given document is not a document type.");
-        }            
-        
+        }
+
         // TODO: we should start the office after we know if we really need an Office.
         if (m_aOffice != null)
         {
@@ -101,7 +101,7 @@ public class Office implements IOffice
                         String sDocumentName = (String)aList.get(i);
                         m_aOffice.load(sDocumentName);
                         m_aOffice.storeAsPostscript();
-                        
+
 
                         // foreach Report found in the .odb file, create an entry 'report'<number> in the original <name>.odb Section
                         // so it is possible to run through all reports by the given .odb name

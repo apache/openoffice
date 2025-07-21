@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 package org.apache.openoffice.comp.sdbc.dbtools.util;
@@ -73,47 +73,47 @@ public class DbTools {
     private static class NameComponentSupport {
         boolean useCatalogs;
         boolean useSchemas;
-        
+
         NameComponentSupport(boolean useCatalogs, boolean useSchemas) {
             this.useCatalogs = useCatalogs;
             this.useSchemas = useSchemas;
         }
     }
-    
+
     public static class NameComponents {
         private String catalog = "";
         private String schema = "";
         private String table = "";
-        
+
         public NameComponents(String catalog, String schema, String table) {
             this.catalog = catalog;
             this.schema = schema;
             this.table = table;
         }
-        
+
         public NameComponents() {
         }
-        
+
         public String getCatalog() {
             return catalog;
         }
-        
+
         public void setCatalog(String catalog) {
             this.catalog = catalog;
         }
-        
+
         public String getSchema() {
             return schema;
         }
-        
+
         public void setSchema(String schema) {
             this.schema = schema;
         }
-        
+
         public String getTable() {
             return table;
         }
-        
+
         public void setTable(String table) {
             this.table = table;
         }
@@ -153,9 +153,9 @@ public class DbTools {
         }
         String quoteString = metadata.getIdentifierQuoteString();
         NameComponentSupport nameComponentSupport = getNameComponentSupport(metadata, composeRule);
-        
+
         StringBuilder composedName = new StringBuilder();
-        
+
         String catalogSeparator = "";
         boolean catalogAtStart = true;
         if (!catalog.isEmpty() && nameComponentSupport.useCatalogs) {
@@ -177,7 +177,7 @@ public class DbTools {
         }
         return composedName.toString();
     }
-    
+
     public static String composeTableName(
             XDatabaseMetaData metadata, XPropertySet table, ComposeRule composeRule,
             boolean suppressCatalog, boolean suppressSchema, boolean shouldQuote) throws SQLException {
@@ -185,10 +185,10 @@ public class DbTools {
         return doComposeTableName(metadata,
                 suppressCatalog ? "" : nameComponents.getCatalog(),
                 suppressSchema ? "" : nameComponents.getSchema(),
-                nameComponents.getTable(),  
+                nameComponents.getTable(),
                 shouldQuote, composeRule);
     }
-    
+
     /** check if a specific property is enabled in the info sequence
      *  @deprecated
      *  Use getBooleanDataSourceSetting instead, which cares for the default of the property itself,
@@ -212,7 +212,7 @@ public class DbTools {
             throw new SQLException("Error", object, StandardSQLState.SQL_GENERAL_ERROR.text(), 0, exception);
         }
     }
-    
+
     /** search the parent hierarchy for a data source.
      */
     public static XDataSource findDataSource(Object parent) {
@@ -232,40 +232,40 @@ public class DbTools {
         }
         return dataSource;
     }
-    
+
     public static String doComposeTableName(XDatabaseMetaData metadata, String catalog, String schema, String table,
             boolean shouldQuote, ComposeRule composeRule) throws SQLException {
         Osl.ensure(!table.isEmpty(), "At least the table name should be non-empty");
         String quoteString = metadata.getIdentifierQuoteString();
         NameComponentSupport nameComponentSupport = getNameComponentSupport(metadata, composeRule);
-        
+
         StringBuilder composedName = new StringBuilder();
         String catalogSeparator = "";
         boolean catalogAtStart = true;
         if (!catalog.isEmpty() && nameComponentSupport.useCatalogs) {
             catalogSeparator = metadata.getCatalogSeparator();
             catalogAtStart = metadata.isCatalogAtStart();
-            
+
             if (catalogAtStart && !catalogSeparator.isEmpty()) {
                 composedName.append(shouldQuote ? quoteName(quoteString, catalog) : catalog);
                 composedName.append(catalogSeparator);
             }
         }
-        
+
         if (!schema.isEmpty() && nameComponentSupport.useSchemas) {
             composedName.append(shouldQuote ? quoteName(quoteString, schema) : schema);
             composedName.append(".");
         }
-        
+
         composedName.append(shouldQuote ? quoteName(quoteString, table) : table);
-        
+
         if (!catalog.isEmpty() && !catalogAtStart && !catalogSeparator.isEmpty() && nameComponentSupport.useCatalogs) {
             composedName.append(catalogSeparator);
             composedName.append(shouldQuote ? quoteName(quoteString, catalog) : catalog);
         }
         return composedName.toString();
     }
-    
+
     /** composes a table name for usage in a SELECT statement
      *
      * This includes quoting of the table as indicated by the connection's meta data, plus respecting
@@ -279,7 +279,7 @@ public class DbTools {
         return doComposeTableName(connection.getMetaData(), useCatalogInSelect ? catalog : "",
                 useSchemaInSelect ? schema : "", table, true, ComposeRule.InDataManipulation);
     }
-    
+
     /** composes a table name for usage in a SELECT statement
      *
      * This includes quoting of the table as indicated by the connection's meta data, plus respecting
@@ -290,7 +290,7 @@ public class DbTools {
         NameComponents nameComponents = getTableNameComponents(table);
         return composeTableNameForSelect(connection, nameComponents.getCatalog(), nameComponents.getSchema(), nameComponents.getTable());
     }
-    
+
     private static NameComponents getTableNameComponents(XPropertySet table) throws SQLException {
         try {
             NameComponents nameComponents = new NameComponents();
@@ -310,7 +310,7 @@ public class DbTools {
             throw new SQLException("Error", Any.VOID, StandardSQLState.SQL_GENERAL_ERROR.text(), 0, exception);
         }
     }
-    
+
     /** quote the given name with the given quote string.
      */
     public static String quoteName(String quote, String name) {
@@ -319,14 +319,14 @@ public class DbTools {
         }
         return name;
     }
-    
+
     /** quote the given table name (which may contain a catalog and a schema) according to the rules provided by the meta data
      */
     public static String quoteTableName(XDatabaseMetaData metadata, String name, ComposeRule composeRule) throws SQLException {
         NameComponents nameComponents = qualifiedNameComponents(metadata, name, composeRule);
         return doComposeTableName(metadata, nameComponents.getCatalog(), nameComponents.getSchema(), nameComponents.getTable(), true, composeRule);
     }
-    
+
     /** split a fully qualified table name (including catalog and schema, if applicable) into its component parts.
      * @param  _rxConnMetaData     meta data describing the connection where you got the table name from
      * @param  _rQualifiedName     fully qualified table name
@@ -384,13 +384,13 @@ public class DbTools {
      * @param  helper
      *    Allow to add special SQL constructs.
      * @param  createPattern
-     *   
+     *
      * @return
      *   The CREATE TABLE statement.
      */
     public static String createSqlCreateTableStatement(XPropertySet descriptor, XConnection connection,
             ISQLStatementHelper helper, String createPattern) throws SQLException {
-        
+
         String sql = createStandardCreateStatement(descriptor, connection, helper, createPattern);
         final String keyStatement = createStandardKeyStatement(descriptor, connection);
         if (!keyStatement.isEmpty()) {
@@ -400,7 +400,7 @@ public class DbTools {
         }
         return sql;
     }
-    
+
     /** creates the standard sql create table statement without the key part.
      * @param  descriptor
      *    The descriptor of the new table.
@@ -409,7 +409,7 @@ public class DbTools {
      * @param  helper
      *    Allow to add special SQL constructs.
      * @param  createPattern
-     * 
+     *
      */
     public static String createStandardCreateStatement(XPropertySet descriptor, XConnection connection,
             ISQLStatementHelper helper, String createPattern) throws SQLException {
@@ -423,7 +423,7 @@ public class DbTools {
                 throw new SQLException(SharedResources.getInstance().getResourceString(Resources.STR_ERRORMSG_SEQUENCE), connection,
                         StandardSQLState.SQL_FUNCTION_SEQUENCE_ERROR.text(), 0, null);
             }
-            
+
             XIndexAccess columns = null;
             XColumnsSupplier columnsSupplier = UnoRuntime.queryInterface(XColumnsSupplier.class, descriptor);
             if (columnsSupplier != null) {
@@ -433,7 +433,7 @@ public class DbTools {
                 throw new SQLException(SharedResources.getInstance().getResourceString(Resources.STR_ERRORMSG_SEQUENCE), connection,
                         StandardSQLState.SQL_FUNCTION_SEQUENCE_ERROR.text(), 0, null);
             }
-            
+
             int columnCount = columns.getCount();
             StringBuilder columnText = new StringBuilder();
             String separator = "";
@@ -446,13 +446,13 @@ public class DbTools {
                     columnText.append(createStandardColumnPart(columnProperties, connection, helper, createPattern));
                 }
             }
-            
+
             return String.format("CREATE TABLE %s (%s", composedName, columnText.toString());
         } catch (IllegalArgumentException | WrappedTargetException | UnknownPropertyException | IndexOutOfBoundsException exception) {
             throw new SQLException("Error", Any.VOID, StandardSQLState.SQL_GENERAL_ERROR.text(), 0, exception);
         }
     }
-    
+
     /** creates the standard sql statement for the column part of a create table statement.
      *  @param  columnProperties
      *      The descriptor of the column.
@@ -461,31 +461,31 @@ public class DbTools {
      *  @param  helper
      *       Allow to add special SQL constructs.
      *  @param  createPattern
-     *      
+     *
      */
     public static String createStandardColumnPart(XPropertySet columnProperties, XConnection connection,
             ISQLStatementHelper helper, String createPattern) throws SQLException {
         try {
             XDatabaseMetaData metadata = connection.getMetaData();
-            
+
             final String quoteString = metadata.getIdentifierQuoteString();
             final StringBuilder sql = new StringBuilder();
             sql.append(quoteName(quoteString, AnyConverter.toString(columnProperties.getPropertyValue("Name"))));
             sql.append(' ');
-    
+
             String typename = AnyConverter.toString(columnProperties.getPropertyValue("TypeName"));
             int datatype = AnyConverter.toInt(columnProperties.getPropertyValue("Type"));
             int precision = AnyConverter.toInt(columnProperties.getPropertyValue("Precision"));
             int scale = AnyConverter.toInt(columnProperties.getPropertyValue("Scale"));
             boolean isAutoIncrement = AnyConverter.toBoolean(columnProperties.getPropertyValue("IsAutoIncrement"));
-            
+
             // check if the user enter a specific string to create autoincrement values
             String autoIncrementValue = "";
             XPropertySetInfo columnPropertiesInfo = columnProperties.getPropertySetInfo();
             if (columnPropertiesInfo != null && columnPropertiesInfo.hasPropertyByName("AutoIncrementCreation")) {
                 autoIncrementValue = AnyConverter.toString(columnProperties.getPropertyValue("AutoIncrementCreation"));
             }
-            
+
             // look if we have to use precisions
             boolean useLiteral = false;
             String prefix = "";
@@ -515,12 +515,12 @@ public class DbTools {
             } finally {
                 CompHelper.disposeComponent(results);
             }
-            
+
             int index = 0;
             if (!autoIncrementValue.isEmpty() && (index = typename.indexOf(autoIncrementValue)) != -1) {
                 typename = typename.substring(0, index);
             }
-            
+
             if ((precision > 0 || scale > 0) && useLiteral) {
                 int parenPos = typename.indexOf('(');
                 if (parenPos == -1) {
@@ -529,7 +529,7 @@ public class DbTools {
                 } else {
                     sql.append(typename.substring(0, ++parenPos));
                 }
-                
+
                 if (precision > 0 && datatype != DataType.TIMESTAMP) {
                     sql.append(precision);
                     if (scale > 0 || (!createPattern.isEmpty() && createParams.indexOf(createPattern) != -1)) {
@@ -548,7 +548,7 @@ public class DbTools {
             } else {
                 sql.append(typename); // simply add the type name
             }
-            
+
             String defaultValue = AnyConverter.toString(columnProperties.getPropertyValue("DefaultValue"));
             if (!defaultValue.isEmpty()) {
                 sql.append(" DEFAULT ");
@@ -556,26 +556,26 @@ public class DbTools {
                 sql.append(defaultValue);
                 sql.append(postfix);
             }
-            
+
             if (AnyConverter.toInt(columnProperties.getPropertyValue("IsNullable")) == ColumnValue.NO_NULLS) {
                 sql.append(" NOT NULL");
             }
-            
+
             if (isAutoIncrement && !autoIncrementValue.isEmpty()) {
                 sql.append(' ');
                 sql.append(autoIncrementValue);
             }
-            
+
             if (helper != null) {
                 helper.addComment(columnProperties, sql);
             }
-            
+
             return sql.toString();
         } catch (IllegalArgumentException | WrappedTargetException | UnknownPropertyException exception) {
             throw new SQLException("Error", Any.VOID, StandardSQLState.SQL_GENERAL_ERROR.text(), 0, exception);
         }
     }
-    
+
     /** creates the standard sql statement for the key part of a create table statement.
      * @param  descriptor
      *      The descriptor of the new table.
@@ -586,7 +586,7 @@ public class DbTools {
         try {
             XDatabaseMetaData metadata = connection.getMetaData();
             StringBuilder sql = new StringBuilder();
-            
+
             XKeysSupplier keysSupplier = UnoRuntime.queryInterface(XKeysSupplier.class, descriptor);
             XIndexAccess keys = keysSupplier.getKeys();
             if (keys != null) {
@@ -615,18 +615,18 @@ public class DbTools {
                         } else if (keyType == KeyType.FOREIGN) {
                             int deleteRule = AnyConverter.toInt(columnProperties.getPropertyValue("DeleteRule"));
                             sql.append(" FOREIGN KEY ");
-                            
+
                             String referencedTable = AnyConverter.toString(columnProperties.getPropertyValue("ReferencedTable"));
                             NameComponents nameComponents = qualifiedNameComponents(metadata, referencedTable, ComposeRule.InDataManipulation);
                             String composedName = composeTableName(metadata, nameComponents.getCatalog(), nameComponents.getSchema(), nameComponents.getTable(),
                                     true, ComposeRule.InTableDefinitions);
                             if (composedName.isEmpty()) {
                                 throw new SQLException(SharedResources.getInstance().getResourceString(Resources.STR_ERRORMSG_SEQUENCE), connection,
-                                        StandardSQLState.SQL_FUNCTION_SEQUENCE_ERROR.text(), 0, null);                            
+                                        StandardSQLState.SQL_FUNCTION_SEQUENCE_ERROR.text(), 0, null);
                             }
-                            
+
                             sql.append(generateColumnNames(columns, metadata));
-                            
+
                             switch (deleteRule) {
                             case KeyRule.CASCADE:
                                 sql.append(" ON DELETE CASCADE ");
@@ -645,7 +645,7 @@ public class DbTools {
                     }
                 }
             }
-            
+
             if (sql.length() > 0) {
                 sql.append(')');
             }
@@ -654,7 +654,7 @@ public class DbTools {
             throw new SQLException("Error", Any.VOID, StandardSQLState.SQL_GENERAL_ERROR.text(), 0, exception);
         }
     }
-    
+
     private static String generateColumnNames(XIndexAccess columns, XDatabaseMetaData metadata) throws
             SQLException, WrappedTargetException, UnknownPropertyException, IllegalArgumentException, IndexOutOfBoundsException {
         String quote = metadata.getIdentifierQuoteString();
@@ -675,7 +675,7 @@ public class DbTools {
         }
         return sql.toString();
     }
-    
+
     /** collects the information about auto increment, currency and data type for the given column name.
      * The column must be quoted, * is also valid.
      * @param  connection
@@ -716,7 +716,7 @@ public class DbTools {
             CompHelper.disposeComponent(statement);
         }
     }
-    
+
     /** returns the primary key columns of the table
      */
     public static XNameAccess getPrimaryKeyColumns(XPropertySet table) throws SQLException {
@@ -746,14 +746,14 @@ public class DbTools {
             throw new SQLException("Error", Any.VOID, StandardSQLState.SQL_GENERAL_ERROR.text(), 0, exception);
         }
     }
-    
+
     public static void cloneDescriptorColumns(XPropertySet source, XPropertySet destination) throws SQLException {
         XColumnsSupplier sourceColumnsSupplier = UnoRuntime.queryInterface(XColumnsSupplier.class, source);
         XIndexAccess sourceColumns = UnoRuntime.queryInterface(XIndexAccess.class, sourceColumnsSupplier.getColumns());
-        
+
         XColumnsSupplier destinationColumnsSupplier = UnoRuntime.queryInterface(XColumnsSupplier.class, destination);
         XAppend destinationAppend = UnoRuntime.queryInterface(XAppend.class, destinationColumnsSupplier.getColumns());
-        
+
         int count = sourceColumns.getCount();
         for (int i = 0; i < count; i++) {
             try {
@@ -764,7 +764,7 @@ public class DbTools {
             }
         }
     }
-    
+
     public static boolean updateObject(XRowUpdate updatedObject, int columnIndex, Object value) throws SQLException {
         try {
             boolean successfullyReRouted = true;
@@ -849,7 +849,7 @@ public class DbTools {
             throw new SQLException("Error", Any.VOID, StandardSQLState.SQL_GENERAL_ERROR.text(), 0, exception);
         }
     }
-    
+
     public static boolean setObject(XParameters parameters, int index, Object any) throws SQLException {
         Type type = AnyConverter.getType(any);
         try {

@@ -48,7 +48,7 @@ import org.apache.openoffice.ooxml.schema.model.simple.Union;
 
 /** Implementation of the INodeVisitor interface.
  *  All methods that are not overridden are redirected to the Default(INode)
- *  method.  
+ *  method.
  */
 public class NodeVisitorAdapter
     implements INodeVisitor
@@ -112,7 +112,7 @@ public class NodeVisitorAdapter
     {
         Default(aNode);
     }
-    
+
     @Override
     public void Visit (final GroupReference aNode)
     {
@@ -130,7 +130,7 @@ public class NodeVisitorAdapter
     {
         Default(aNode);
     }
-    
+
     @Override
     public void Visit (final BuiltIn aType)
     {
@@ -160,7 +160,7 @@ public class NodeVisitorAdapter
     {
         Default(aSimpleTypeReference);
     }
-    
+
     @Override
     public void Visit (final Union aUnion)
     {
@@ -196,7 +196,7 @@ public class NodeVisitorAdapter
     {
         Default(aAttribute);
     }
-    
+
     public void Default (final INode aNode)
     {
     }

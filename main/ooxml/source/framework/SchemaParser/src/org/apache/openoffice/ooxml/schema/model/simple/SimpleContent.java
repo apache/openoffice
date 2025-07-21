@@ -36,27 +36,27 @@ public class SimpleContent
         super(aParent, null, aLocation);
     }
 
-    
-    
-    
+
+
+
     @Override
     public void AcceptVisitor (final INodeVisitor aVisitor)
     {
         aVisitor.Visit(this);
     }
 
-    
-    
-    
+
+
+
     @Override
     public NodeType GetNodeType()
     {
         return NodeType.SimpleContent;
     }
-    
-    
-    
-    
+
+
+
+
     @Override
     public String toString ()
     {

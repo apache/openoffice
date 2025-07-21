@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -73,14 +73,14 @@ public class LinguisticExamples
     protected XPropertySet  mxLinguProps = null;
 
 
-    public static void main(String args[]) 
+    public static void main(String args[])
 	{
 		// Create an instance of the class and call it's begin method
         try {
             LinguisticExamples aExample = new LinguisticExamples();
             aExample.Connect();
-            aExample.Run();        
-        } catch (Exception e) { 
+            aExample.Run();
+        } catch (Exception e) {
             System.err.println("failed to run examples");
             e.printStackTrace();
         }
@@ -108,12 +108,12 @@ public class LinguisticExamples
         if (mxRemoteContext != null && mxRemoteServiceManager != null) {
             Object aObj = mxRemoteServiceManager.createInstanceWithContext(
                 "com.sun.star.linguistic2.LinguServiceManager", mxRemoteContext );
-            mxLinguSvcMgr = (XLinguServiceManager) 
+            mxLinguSvcMgr = (XLinguServiceManager)
                     UnoRuntime.queryInterface(XLinguServiceManager.class, aObj);
         }
         return mxLinguSvcMgr != null;
-    }    
-    
+    }
+
 
     /** Get the SpellChecker to be used.
     */
@@ -164,9 +164,9 @@ public class LinguisticExamples
 
         // use american english as language
         Locale aLocale = new Locale("en","US","");
-    
-        
-        
+
+
+
         // another list of property values to used in function calls below.
         // Only properties with values different from the (default) values
         // in the LinguProperties property set need to be supllied.
@@ -174,9 +174,9 @@ public class LinguisticExamples
         aProps[0] = new PropertyValue();
         aProps[0].Name  = "IsGermanPreReform";
         aProps[0].Value = new Boolean( true );
-    
-    
-        GetSpell();    
+
+
+        GetSpell();
         if (mxSpell !=  null)
         {
             // test with correct word
@@ -187,7 +187,7 @@ public class LinguisticExamples
             // test with incorrect word
             aWord = "course";
             bIsCorrect = mxSpell.isValid( aWord, aLocale , aEmptyProps );
-            System.out.println( aWord + ": " +  bIsCorrect );    
+            System.out.println( aWord + ": " +  bIsCorrect );
 
 
             aWord = "house";
@@ -209,10 +209,10 @@ public class LinguisticExamples
         }
 
 
-        GetHyph();    
+        GetHyph();
         if (mxHyph != null)
         {
-            // maximum number of characters to remain before the hyphen 
+            // maximum number of characters to remain before the hyphen
             // character in the resulting word of the hyphenation
             short nMaxLeading = 6;
 
@@ -224,16 +224,16 @@ public class LinguisticExamples
             else
             {
                 System.out.println( "valid hyphenation pos found at "
-                                    + xHyphWord.getHyphenationPos() 
+                                    + xHyphWord.getHyphenationPos()
                         + " in " + xHyphWord.getWord() );
                 System.out.println( "hyphenation char will be after char "
-                                    + xHyphWord.getHyphenPos() 
+                                    + xHyphWord.getHyphenPos()
                         + " in " + xHyphWord.getHyphenatedWord() );
             }
 
 
             //! Note: 'aProps' needs to have set 'IsGermanPreReform' to true!
-            xHyphWord = mxHyph.queryAlternativeSpelling( "Schiffahrt", 
+            xHyphWord = mxHyph.queryAlternativeSpelling( "Schiffahrt",
                                 new Locale("de","DE",""), (short)4, aProps );
             if (xHyphWord == null)
                 System.out.println( "no alternative spelling found at specified position." );
@@ -242,10 +242,10 @@ public class LinguisticExamples
                 if (xHyphWord.isAlternativeSpelling())
                     System.out.println( "alternative spelling detectetd!" );
                 System.out.println( "valid hyphenation pos found at "
-                                    + xHyphWord.getHyphenationPos() 
+                                    + xHyphWord.getHyphenationPos()
                         + " in " + xHyphWord.getWord() );
                 System.out.println( "hyphenation char will be after char "
-                                    + xHyphWord.getHyphenPos() 
+                                    + xHyphWord.getHyphenPos()
                         + " in " + xHyphWord.getHyphenatedWord() );
             }
 
@@ -256,12 +256,12 @@ public class LinguisticExamples
             if (xPossHyph == null)
                 System.out.println( "no hyphenation positions found." );
             else
-                System.out.println( xPossHyph.getPossibleHyphens() );    
-        }    
-    
-        
-        GetThes();    
-        if (mxThes != null)    
+                System.out.println( xPossHyph.getPossibleHyphens() );
+        }
+
+
+        GetThes();
+        if (mxThes != null)
         {
             XMeaning[] xMeanings = mxThes.queryMeanings("house", aLocale,
                                                         aEmptyProps );
@@ -276,11 +276,11 @@ public class LinguisticExamples
                     for (int k = 0; k < aSynonyms.length; ++k)
                         System.out.println( "    Synonym: " + aSynonyms[k] );
                 }
-            }    
-        }    
-        
-        
-        
+            }
+        }
+
+
+
         XLinguServiceEventListener aClient = new Client();
 
         // get access to LinguProperties property set
@@ -288,18 +288,18 @@ public class LinguisticExamples
             "com.sun.star.linguistic2.LinguProperties", mxRemoteContext);
         XPropertySet aLinguProps = (XPropertySet) UnoRuntime.queryInterface(
             XPropertySet.class,aObj);
-        
+
         // set a spellchecker and hyphenator property value to a defined state
         try {
             aLinguProps.setPropertyValue("IsGermanPreReform", new Boolean(true));
         } catch (Exception e) {
-        }        
+        }
 
         // now add the client as listener to the service manager to
         // get informed when spellchecking or hyphenation may produce
         // different results then before.
         mxLinguSvcMgr.addLinguServiceManagerListener(aClient);
-        
+
         // change that property value in order to trigger a property change
         // event that eventually results in the listeners
         // 'processLinguServiceEvent' function being called
@@ -307,9 +307,9 @@ public class LinguisticExamples
             aLinguProps.setPropertyValue("IsGermanPreReform", new Boolean(false));
         } catch (Exception e) {
         }
-        
+
         //! keep the listener and the program alive until the event will
-        //! be launched. 
+        //! be launched.
         //! There is a voluntary delay before launching the event!
         // Of course this code would usually not be in a *real* client
         // its
@@ -317,38 +317,38 @@ public class LinguisticExamples
             try {
                 this.wait(4000);
             } catch(Exception e) {
-            
+
             }
         }
-        
+
         //! remove listener before programm termination.
         //! should not be omitted.
         mxLinguSvcMgr.removeLinguServiceManagerListener(aClient);
-        
-        
+
+
         System.exit(0);
     }
 
     /** simple sample implementation of a clients XLinguServiceEventListener
      *  interface implementation
      */
-    public class Client 
+    public class Client
             implements XLinguServiceEventListener
     {
         public void disposing ( EventObject aEventObj )
         {
             //! any references to the EventObjects source have to be
             //! released here now!
-            
+
             System.out.println("object listened to will be disposed");
         }
 
         public void processLinguServiceEvent( LinguServiceEvent aServiceEvent )
-        {   
+        {
             //! do here whatever you think needs to be done depending
             //! on the event received (e.g. trigger background spellchecking
             //! or hyphenation again.)
-                    
+
             System.out.println("Listener called");
         }
     };

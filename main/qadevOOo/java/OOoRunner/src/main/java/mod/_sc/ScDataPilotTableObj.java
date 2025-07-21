@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -278,13 +278,13 @@ public class ScDataPilotTableObj extends TestCase {
         return tEnv;
     }
 
-    /** 
+    /**
      * Create a new DataPilot table output for use with testing XDataPilotTable2
-     * interface. 
-     * 
+     * interface.
+     *
      * @param oSheet current sheet instance
      * @param srcRange source range
-     * @param tEnv test environment instance 
+     * @param tEnv test environment instance
      */
     private void createTable2(XSpreadsheet oSheet, CellRangeAddress srcRange, TestEnvironment tEnv)
     {
@@ -299,7 +299,7 @@ public class ScDataPilotTableObj extends TestCase {
         int fieldCount = xIA.getCount() - 1; // skip the last field because it's always hidden.
         try
         {
-            for (int i = 0; i < fieldCount; ++i) 
+            for (int i = 0; i < fieldCount; ++i)
             {
                 Object o = xIA.getByIndex(i);
                 XPropertySet fieldPropSet = (XPropertySet)UnoRuntime.queryInterface(

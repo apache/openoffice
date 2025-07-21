@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -33,16 +33,16 @@ import java.io.OutputStream;
  * This class deliver some functionality to copy files.
  */
 public class FileTools {
-    
+
     /**
      * Copies all files under srcDir to dstDir.
      * If dstDir does not exist, it will be created.
      * @param srcDir the source directory
      * @param dstDir the destination directory
      * @throws java.io.IOException throws java.io.IOException if something fails
-     */    
+     */
     public static void copyDirectory(File srcDir, File dstDir)
-           throws java.io.IOException {    
+           throws java.io.IOException {
         copyDirectory(srcDir, dstDir, new String[]{});
     }
     /**
@@ -53,7 +53,7 @@ public class FileTools {
      * @param dstDir the destination directory
      * @param ignore a list of files which should not be copied
      * @throws java.io.IOException throws java.io.IOException if something fails
-     */    
+     */
     public static void copyDirectory(File srcDir, File dstDir, String[] ignore)
            throws java.io.IOException {
 
@@ -62,12 +62,12 @@ public class FileTools {
                 return;
             }
         }
-        
+
         if (srcDir.isDirectory()) {
             if (!dstDir.exists()) {
                 dstDir.mkdir();
             }
-    
+
             String[] files = srcDir.list();
             for (int i=0; i< files.length; i++) {
                 copyDirectory(new File(srcDir, files[i]), new File(dstDir, files[i]), ignore);
@@ -77,17 +77,17 @@ public class FileTools {
             copyFile(srcDir, dstDir);
         }
     }
-    
+
     /**
      * Copies src file to dst file. If the dst file does not exist, it is created
      * @param src the source file
      * @param dst the destination file
      * @throws java.io.IOException throws java.io.IOException if something fails
-     */    
+     */
     public static void copyFile(File src, File dst) throws java.io.IOException {
         InputStream in = new FileInputStream(src);
         OutputStream out = new FileOutputStream(dst);
-    
+
         // Transfer bytes from in to out
         byte[] buf = new byte[1024];
         int len;
@@ -96,37 +96,37 @@ public class FileTools {
         }
         in.close();
         out.close();
-    }   
+    }
     /**
      * Deletes all files and subdirectories under dir and the directory itself.
      * Returns true if all deletions were successful.
-     * If the deletion fails, the method the method continues to delete rest 
+     * If the deletion fails, the method the method continues to delete rest
      * of the files and returns false.
      * @return Returns true if all deletions were successful, else false.
      * @param dir the directory to delete
-     */    
+     */
     public static boolean deleteDir(File dir) {
-        
+
         // if (! cleanDir(dir)) return false;
-        
+
         // The directory is now empty so delete it
         // return dir.delete();
         return cleanDir(dir);
     }
-    
+
     /**
      * Deletes all files and subdirectories under dir.
      * Returns true if all deletions were successful.
      * If a deletion fails, the method continues to delete rest of the files.
      * @return Returns true if all deletions were successful, else false.
      * @param dir the directory to clean from content
-     */    
+     */
     // public static boolean cleanDir(File dir){
-    //     
+    //
     //     boolean success = true;
     //     if (dir.isDirectory()){
     //         File [] theFiles = dir.listFiles();
-    // 
+    //
     //         if (theFiles.length != 0 )
     //             for (int i = 0; i < theFiles.length; i++){
     //                 success &= theFiles[i].delete();
@@ -143,13 +143,13 @@ public class FileTools {
                 for (int i=0; i<children.length; i++)
                 {
                     boolean success = cleanDir(new File(dir, children[i]));
-                    if (!success) 
+                    if (!success)
                     {
                         return false;
                     }
                 }
             }
-    
+
             // The directory is now empty so delete it
             return dir.delete();
         }

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -69,7 +69,7 @@ public class PipeConnection implements XConnection, XConnectionBroadcaster {
 	 * @param  description   the description of the connection
 	 * @param  pipe        the pipe of the connection
 	 */
-	public PipeConnection(String description) 
+	public PipeConnection(String description)
 		throws IOException
 	{
 		if (DEBUG) System.err.println("##### " + getClass().getName() + " - instantiated " + description );
@@ -80,7 +80,7 @@ public class PipeConnection implements XConnection, XConnectionBroadcaster {
 		// get pipe name from pipe descriptor
 		String aPipeName  ;
 		StringTokenizer aTokenizer = new StringTokenizer( description, "," );
-		if ( aTokenizer.hasMoreTokens() ) 
+		if ( aTokenizer.hasMoreTokens() )
 		{
 			String aConnType = aTokenizer.nextToken();
 			if ( !aConnType.equals( "pipe" ) )
@@ -95,7 +95,7 @@ public class PipeConnection implements XConnection, XConnectionBroadcaster {
 			throw new RuntimeException( "invalid or empty pipe descriptor" );
 
 		// create the pipe
-		try 
+		try
 		{ createJNI( aPipeName ); }
 		catch ( java.lang.NullPointerException aNPE )
 		{ throw new IOException( aNPE.getMessage() ); }
@@ -128,7 +128,7 @@ public class PipeConnection implements XConnection, XConnectionBroadcaster {
 			xStreamListener.closed();
 		}
 	}
-	
+
 	private void notifyListeners_error(com.sun.star.uno.Exception exception) {
 		Enumeration elements = _aListeners.elements();
 		while(elements.hasMoreElements()) {
@@ -140,21 +140,21 @@ public class PipeConnection implements XConnection, XConnectionBroadcaster {
 	// JNI implementation to create the pipe
 	private native int createJNI( String name )
 		throws com.sun.star.io.IOException, com.sun.star.uno.RuntimeException;
-	
+
 	// JNI implementation to read from the pipe
-	private native int readJNI(/*OUT*/byte[][] bytes, int nBytesToRead) 
+	private native int readJNI(/*OUT*/byte[][] bytes, int nBytesToRead)
 		throws com.sun.star.io.IOException, com.sun.star.uno.RuntimeException;
-	
+
 	// JNI implementation to write to the pipe
-	private native void writeJNI(byte aData[]) 
+	private native void writeJNI(byte aData[])
 		throws com.sun.star.io.IOException, com.sun.star.uno.RuntimeException;
-	
+
 	// JNI implementation to flush the pipe
-	private native void flushJNI() 
+	private native void flushJNI()
 		throws com.sun.star.io.IOException, com.sun.star.uno.RuntimeException;
 
 	// JNI implementation to close the pipe
-	private native void closeJNI() 
+	private native void closeJNI()
 		throws com.sun.star.io.IOException, com.sun.star.uno.RuntimeException;
 
 	/**
@@ -165,8 +165,8 @@ public class PipeConnection implements XConnection, XConnectionBroadcaster {
 	 * @param    nBytesToRead the number of bytes to read
 	 * @see       com.sun.star.connections.XConnection#read
 	 */
-	public int read(/*OUT*/byte[][] bytes, int nBytesToRead) 
-		throws com.sun.star.io.IOException, com.sun.star.uno.RuntimeException 
+	public int read(/*OUT*/byte[][] bytes, int nBytesToRead)
+		throws com.sun.star.io.IOException, com.sun.star.uno.RuntimeException
 	{
 		if(_bFirstRead) {
 			_bFirstRead = false;
@@ -183,8 +183,8 @@ public class PipeConnection implements XConnection, XConnectionBroadcaster {
 	 * @param    aData the bytes to write
 	 * @see       com.sun.star.connections.XConnection#write
 	 */
-	public void write(byte aData[]) 
-		throws com.sun.star.io.IOException, com.sun.star.uno.RuntimeException 
+	public void write(byte aData[])
+		throws com.sun.star.io.IOException, com.sun.star.uno.RuntimeException
 	{
 		writeJNI( aData );
 	}
@@ -194,8 +194,8 @@ public class PipeConnection implements XConnection, XConnectionBroadcaster {
 	 * <p>
 	 * @see       com.sun.star.connections.XConnection#flush
 	 */
-	public void flush() 
-		throws com.sun.star.io.IOException, com.sun.star.uno.RuntimeException 
+	public void flush()
+		throws com.sun.star.io.IOException, com.sun.star.uno.RuntimeException
 	{
 		flushJNI();
 	}
@@ -205,8 +205,8 @@ public class PipeConnection implements XConnection, XConnectionBroadcaster {
 	 * <p>
 	 * @see       com.sun.star.connections.XConnection#close
 	 */
-	public void close() 
-		throws com.sun.star.io.IOException, com.sun.star.uno.RuntimeException 
+	public void close()
+		throws com.sun.star.io.IOException, com.sun.star.uno.RuntimeException
 	{
 		if (DEBUG) System.out.print( "PipeConnection::close() " );
 		closeJNI();

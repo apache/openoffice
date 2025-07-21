@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -37,7 +37,7 @@ import java.io.IOException;
  *  <p>Conversion from the &quot;Office&quot; <code>Document</code>
  *  format to a &quot;Device&quot; <code>Document</code> format may
  *  be lossy, i.e. some information may be lost.  If a plug-in
- *  implements the <code>DocumentMergerFactory</code> interface, 
+ *  implements the <code>DocumentMergerFactory</code> interface,
  *  then there is the possibility for merging the changes done on the
  *  &quot;Device&quot; <code>Document</code> back to the original
  *  &quot;Office&quot; <code>Document</code> via the
@@ -57,7 +57,7 @@ import java.io.IOException;
  *  with the jarfile.  The data in the XML file is managed by the
  *  <code>ConverterInfo</code> object.  The <code>ConverterInfoMgr</code>
  *  manages a registry of all <code>ConverterInfo</code> objects.  For
- *  more information about this XML file, refer to 
+ *  more information about this XML file, refer to
  *  <a href="converter/xml/sxc/package-summary.html">
  *  org.openoffice.xmerge.util.registry</a>.</p>
  *
@@ -118,7 +118,7 @@ public abstract class PluginFactory {
      *  <code>DocumentMerger</code> object.</p>
      *
      *  @param  name  The <code>Document</code> name.
-     *  @param  is    <code>InputStream</code> object corresponding 
+     *  @param  is    <code>InputStream</code> object corresponding
      *                to the <code>Document</code>.
      *
      *  @return  A <code>Document</code> object representing the
@@ -145,9 +145,9 @@ public abstract class PluginFactory {
      *  <code>DocumentMerger</code> object.</p>
      *
      *  @param  name  The <code>Document</code> name.
-     *  @param  is    <code>InputStream</code> object corresponding 
+     *  @param  is    <code>InputStream</code> object corresponding
      *                to the <code>Document</code>.
-     *  @param  isZip <code>boolean</code> to show that the created office 
+     *  @param  isZip <code>boolean</code> to show that the created office
      *                document is to be zipped.
      *
      *  @return  A <code>Document</code> object representing the
@@ -174,7 +174,7 @@ public abstract class PluginFactory {
      *  <code>DocumentMerger</code> object.</p>
      *
      *  @param  name  The <code>Document</code> name.
-     *  @param  is    <code>InputStream</code> object corresponding 
+     *  @param  is    <code>InputStream</code> object corresponding
      *                to the <code>Document</code>.
      *
      *  @return  A <code>Document</code> object representing the

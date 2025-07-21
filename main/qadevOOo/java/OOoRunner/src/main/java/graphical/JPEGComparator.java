@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -303,7 +303,7 @@ public class JPEGComparator extends EnhancedComplexTestCase
         // Failure matrix
         //         0     1
         // ugly    OK    FAILED
-        // bad     OK    
+        // bad     OK
         // good    OK
 
         if (ugly > 0)
@@ -418,7 +418,7 @@ public class JPEGComparator extends EnhancedComplexTestCase
             String sDestination = FileHelper.appendPath(sDestinationPath, sNewSourceBasename);
             FileHelper.copy(sSource, sDestination);
             sSourceBasename = sNewSourceBasename;
-            // 
+            //
             JPEGCreator.convertToNearSameFileWithWidth340(sDestination);
         }
         String sDifferenceBasename = "Difference_between_" + FileHelper.getNameNoSuffix(sSourceBasename) + "_and_" + FileHelper.getNameNoSuffix(sDestinationBasename) + ".jpg";
@@ -523,14 +523,14 @@ public class JPEGComparator extends EnhancedComplexTestCase
 ////            String sHTMLFile = _sFilenamePrefix + sNameNoSuffix + ".html";
 ////            HTMLOutputter HTMLoutput = HTMLOutputter.create(_sOutputPath, sHTMLFile, "", "");
 ////            HTMLoutput.header(sNameNoSuffix);
-////  TODO: version info was fine 
+////  TODO: version info was fine
 ////            HTMLoutput.checkSection(sBasename);
 //            // Status end
 //
 //            String sINIFile = _sFilenamePrefix + sNameNoSuffix + ".ini";
 //            INIOutputter INIoutput = INIOutputter.create(_sOutputPath, sINIFile, "", "");
 //            INIoutput.createHeader();
-////  TODO: version info was fine 
+////  TODO: version info was fine
 //
 //            INIoutput.writeSection("global");
 //            INIoutput.writeValue("pages", String.valueOf(aList.length));
@@ -544,7 +544,7 @@ public class JPEGComparator extends EnhancedComplexTestCase
 //            {
 //                INIoutput.writeSection("page" + String.valueOf(i + 1));   // list start at point 0, but this is page 1 and so on... current_page = (i + 1)
 //                aList[i].printStatus();
-//                
+//
 //                boolean bCurrentResult = true;   // result over exact one page
 //
 //                int nCurrentDiffStatus = aList[i].nDiffStatus;
@@ -598,9 +598,9 @@ public class JPEGComparator extends EnhancedComplexTestCase
      *       text like outlined or the text is little bit move left, right up or down.
      *
      * &gt;>100% Yes it's possible that there is a difference more then 100%, maybe a font problem
-     *       between old and new graphics. The font of the new graphics is little bit bigger, 
+     *       between old and new graphics. The font of the new graphics is little bit bigger,
      *       so the pixel count between old graphics and new graphics is twice the more.
-     * 
+     *
      * @param _sOldGfx path & name to the jpeg file (1)
      * @param _sNewGfx path & name to the other jpeg file (2)
      * @param _sDiffGfx path & name to the new difference file which shows the difference between (1) and (2)
