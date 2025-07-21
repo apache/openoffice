@@ -1,5 +1,5 @@
 /**************************************************************
- *
+ * 
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- *
+ * 
  *   http://www.apache.org/licenses/LICENSE-2.0
- *
+ * 
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- *
+ * 
  *************************************************************/
 
 
@@ -37,7 +37,6 @@ public class CLITest extends ComplexTestCase
         };
     }
 
-<<<<<<< HEAD
     public void runCLITests()
     {
         try
@@ -45,13 +44,6 @@ public class CLITest extends ComplexTestCase
             String testProgram = System.getProperty("cli_test", "");
             if (testProgram.length() == 0)
                 failed("Check the make file. Java must be called with -Dcli_test=pathtoexe");
-=======
-        String arg1 = System.getProperty("cli_test_arg", "");
-        if (arg1.length() == 0)
-            fail("Check the make file. Java must be called with " +
-                 "-Dcli_test_arg=path_to_bootstrap_ini");
-        String[] cmdarray = new String[] {testProgram, arg1};
->>>>>>> 3309286857 (pre-commit auto remove trailing whitespace from java files (#382))
 
             String arg1 = System.getProperty("cli_test_arg", "");
             if (arg1.length() == 0)

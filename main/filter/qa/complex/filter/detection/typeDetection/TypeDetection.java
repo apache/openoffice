@@ -1,5 +1,5 @@
 /**************************************************************
- *
+ * 
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- *
+ * 
  *   http://www.apache.org/licenses/LICENSE-2.0
- *
+ * 
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- *
+ * 
  *************************************************************/
 
 
@@ -180,7 +180,7 @@ import util.utils;
  */
 public class TypeDetection extends ComplexTestCase {
 
-    /**
+    /** 
      * @member m_xDetection     the object to test
      * @member helper           instacne of helper class
      */
@@ -210,30 +210,19 @@ public class TypeDetection extends ComplexTestCase {
     public void before() throws Exception {
 
         // create TypeDetection
-<<<<<<< HEAD
         XMultiServiceFactory xMSF = (XMultiServiceFactory)param.getMSF();
         assure("Could not get XMultiServiceFactory", xMSF != null);
         
-=======
-        XMultiServiceFactory xMSF = UnoRuntime.queryInterface(XMultiServiceFactory.class, connection.getComponentContext().getServiceManager());
-        assertTrue("Could not get XMultiServiceFactory", xMSF != null);
-
->>>>>>> 3309286857 (pre-commit auto remove trailing whitespace from java files (#382))
         Object oInterface = xMSF.createInstance(
                                         "com.sun.star.document.TypeDetection");
-
+                                        
         if (oInterface == null) {
             failed("Service wasn't created") ;
         }
 
         XInterface oObj = (XInterface) oInterface ;
-<<<<<<< HEAD
         log.println("ImplName: "+utils.getImplName(oObj));
         
-=======
-        System.out.println("ImplName: "+utils.getImplName(oObj));
-
->>>>>>> 3309286857 (pre-commit auto remove trailing whitespace from java files (#382))
         m_xDetection = (XTypeDetection)
                 UnoRuntime.queryInterface(XTypeDetection.class, oInterface);
         Enumeration k = param.keys();
@@ -253,8 +242,8 @@ public class TypeDetection extends ComplexTestCase {
     }
 
     /**
-     * The <code>MediaDescriptor</code> was filled with the URL of a file. The
-     * <code>type</code> of the file is kown and must be returned by
+     * The <code>MediaDescriptor</code> was filled with the URL of a file. The 
+     * <code>type</code> of the file is kown and must be returned by 
      * <code>MediaDescriptor</code>
      *
      * Syntax of files.csv:
@@ -271,7 +260,6 @@ public class TypeDetection extends ComplexTestCase {
             while (allToDos.hasMoreElements()){
                 Vector toDo = (Vector) allToDos.nextElement();
 
-<<<<<<< HEAD
                 String fileAlias = (String) toDo.get(0);
                 String fileURL  = (String) toDo.get(1);
                 String URLfileType = (String) toDo.get(2);
@@ -289,22 +277,6 @@ public class TypeDetection extends ComplexTestCase {
             
         } catch (ClassCastException e){
             failed(e.toString(), true);
-=======
-        for (ArrayList<String> toDo : CSVData){
-            String fileAlias = toDo.get(0);
-            String fileURL  = toDo.get(1);
-            String URLfileType = toDo.get(2);
-            String StreamfileType = toDo.get(3);
-
-            fileURL =  utils.getFullURL(Helper.ensureEndingFileSep(
-                          Argument.get("tdoc")) + fileURL);
-
-            System.out.println("actual '"+ fileAlias +
-                               "' ['" + URLfileType + "']: '" + fileURL);
-
-            checkMediaDescriptorURL(fileAlias, fileURL, URLfileType);
-            checkMediaDescriptorXInputStream(fileAlias, fileURL, StreamfileType);
->>>>>>> 3309286857 (pre-commit auto remove trailing whitespace from java files (#382))
         }
     }
 
@@ -318,13 +290,8 @@ public class TypeDetection extends ComplexTestCase {
      */
     private void checkMediaDescriptorURL(
                             String fileAlias, String fileURL, String fileType){
-<<<<<<< HEAD
                                 
         PropertyValue[] MediaDescriptor = helper.createMediaDescriptor(
-=======
-
-        PropertyValue[] MediaDescriptor = Helper.createMediaDescriptor(
->>>>>>> 3309286857 (pre-commit auto remove trailing whitespace from java files (#382))
             new String[] {"URL"},
             new Object[] {fileURL});
             log.println("check only by URL...");
@@ -350,16 +317,15 @@ public class TypeDetection extends ComplexTestCase {
      */
     private void checkMediaDescriptorXInputStream(
                              String fileAlias, String fileURL, String fileType){
-
+        
         XInputStream xStream = null;
-
+        
         try{
             xStream = helper.getFileStream( fileURL );
         } catch (NotConnectedException e) {
             failed("Could not get XInputStream from file :'" + fileURL + "'",true);
             return;
         }
-<<<<<<< HEAD
             
         PropertyValue[] MediaDescriptor = helper.createMediaDescriptor(
             new String[] {"InputStream"},
@@ -374,28 +340,11 @@ public class TypeDetection extends ComplexTestCase {
             assure("\nXInputStream-test: " + fileAlias + ":\n\treturned type: '" + type +
                    "'\n\texpected type: '" + fileType + "'", fileTypeOK, true);
             
-=======
-
-        PropertyValue[] MediaDescriptor = Helper.createMediaDescriptor(
-            new String[] {"InputStream"},
-            new Object[] {xStream}
-        );
-        System.out.println("check only by XInputStream...");
-
-        String type = m_xDetection.queryTypeByDescriptor(
-                           Helper.createInOutPropertyValue(MediaDescriptor), true);
-
-        boolean fileTypeOK = Helper.checkFileType(type, fileType);
-
-        assertTrue("\nXInputStream-test: " + fileAlias + ":\n\treturned type: '" + type +
-                   "'\n\texpected type: '" + fileType + "'", fileTypeOK);
-
->>>>>>> 3309286857 (pre-commit auto remove trailing whitespace from java files (#382))
     }
 
     /**
-     * The <code>MediaDescriptor</code> was filled with the URL of a file. The
-     * <code>type</code> of the file is kown and must be returned by
+     * The <code>MediaDescriptor</code> was filled with the URL of a file. The 
+     * <code>type</code> of the file is kown and must be returned by 
      * <code>MediaDescriptor</code>
      *
      * Syntax of files.csv:
@@ -477,13 +426,8 @@ public class TypeDetection extends ComplexTestCase {
                         new Object[] {fileURL, filterName, 
                                                    filterOptions, filterData});
 
-<<<<<<< HEAD
                     log.println("check '" + fileAlias + "' with filter: '" + 
                                 filterName + "'");
-=======
-            System.out.println("check '" + fileAlias + "' with filter: '" +
-                               filterName + "'");
->>>>>>> 3309286857 (pre-commit auto remove trailing whitespace from java files (#382))
 
                     String type = m_xDetection.queryTypeByDescriptor(
                                helper.createInOutPropertyValue(MediaDescriptor), true);
