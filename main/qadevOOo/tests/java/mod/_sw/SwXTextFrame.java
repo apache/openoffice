@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -72,7 +72,7 @@ public class SwXTextFrame extends TestCase {
     /**
      *    creating a Testenvironment for the interfaces to be tested
      */
-    public synchronized TestEnvironment createTestEnvironment(TestParameters Param, 
+    public synchronized TestEnvironment createTestEnvironment(TestParameters Param,
                                                               PrintWriter log) {
         XInterface oObj = null;
         XTextFrame oFrame1 = null;
@@ -105,7 +105,7 @@ public class SwXTextFrame extends TestCase {
 
             // AnchorTypes: 0 = paragraph, 1 = as char, 2 = page,
             // 3 = frame/paragraph 4= at char
-            oPropSet.setPropertyValue("AnchorType", 
+            oPropSet.setPropertyValue("AnchorType",
                                       TextContentAnchorType.AS_CHARACTER);
             oText = xTextDoc.getText();
             oCursor = oText.createTextCursor();
@@ -122,10 +122,10 @@ public class SwXTextFrame extends TestCase {
             oText.insertTextContent(oCursor, the_content, true);
 
             XText oFrameText = oFrame1.getText();
-            oFrameText.insertString(oFrameText.getStart(), "The FrameText", 
+            oFrameText.insertString(oFrameText.getStart(), "The FrameText",
                                     true);
 
-            instance = SOF.createInstance(xTextDoc, 
+            instance = SOF.createInstance(xTextDoc,
                                           "com.sun.star.text.TextFrame");
         } catch (Exception Ex) {
             Ex.printStackTrace(log);
@@ -138,12 +138,12 @@ public class SwXTextFrame extends TestCase {
 
         TestEnvironment tEnv = new TestEnvironment(oObj);
 
-        tEnv.addObjRelation("CONTENT", 
+        tEnv.addObjRelation("CONTENT",
                             (XTextContent) UnoRuntime.queryInterface(
                                     XTextContent.class, instance));
         tEnv.addObjRelation("RANGE", xTextDoc.getText().createTextCursor());
 
-        log.println("adding ObjRelation for XShape " + 
+        log.println("adding ObjRelation for XShape " +
                     "(get/setPosition won't work there)");
         tEnv.addObjRelation("NoPos", "SwXTextFrame");
         tEnv.addObjRelation("NoSetSize", "SwXTextFrame");

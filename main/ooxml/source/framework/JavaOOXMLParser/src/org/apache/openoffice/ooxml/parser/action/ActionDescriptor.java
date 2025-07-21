@@ -39,8 +39,8 @@ public class ActionDescriptor
     }
 
 
-    
-    
+
+
     public void AddAction (
         final IAction aAction,
         final ActionTrigger eTrigger)
@@ -48,27 +48,27 @@ public class ActionDescriptor
         GetActionsForTrigger(eTrigger, true).add(aAction);
     }
 
-    
-    
-    
+
+
+
     public Iterable<IAction> GetActions (
         final ActionTrigger eTrigger)
     {
         return GetActionsForTrigger(eTrigger, false);
     }
-    
-    
-    
-    
+
+
+
+
     @Override
     public String toString ()
     {
         return "actions for state "+msStateName;
     }
-    
-    
-    
-    
+
+
+
+
     private Vector<IAction> GetActionsForTrigger (
         final ActionTrigger eTrigger,
         final boolean bCreateWhenMissing)
@@ -103,10 +103,10 @@ public class ActionDescriptor
         }
         return aActions;
     }
-    
-    
-    
-    
+
+
+
+
     private final String msStateName;
     private Vector<IAction> maElementStartActions;
     private Vector<IAction> maElementEndActions;

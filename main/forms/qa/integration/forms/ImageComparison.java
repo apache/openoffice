@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 /*
@@ -33,7 +33,7 @@ package integration.forms;
  */
 public final class ImageComparison implements com.sun.star.awt.XImageConsumer
 {
-    
+
     private byte[] m_referenceBytes;
     private int m_referencePosition;
     private java.io.FileOutputStream m_stream;
@@ -59,15 +59,15 @@ public final class ImageComparison implements com.sun.star.awt.XImageConsumer
             m_notifyDone.notify();
         }
     }
-    
+
     public void init(int param, int param1)
     {
     }
-    
+
     public void setColorModel(short param, int[] values, int param2, int param3, int param4, int param5)
     {
     }
-    
+
     public void setPixelsByBytes(int param, int param1, int param2, int param3, byte[] values, int param5, int param6)
     {
         if ( m_referencePosition == -1 )
@@ -86,9 +86,9 @@ public final class ImageComparison implements com.sun.star.awt.XImageConsumer
             ++m_referencePosition;
         }
     }
-    
+
     public void setPixelsByLongs(int param, int param1, int param2, int param3, int[] values, int param5, int param6)
     {
     }
-    
+
 }

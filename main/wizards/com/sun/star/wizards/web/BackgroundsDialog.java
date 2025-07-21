@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -85,7 +85,7 @@ public class BackgroundsDialog extends ImageListDialog
 
     /**
      * trigered when the user clicks the "other" button.
-     * opens a "file open" dialog, adds the selected 
+     * opens a "file open" dialog, adds the selected
      * image to the list and to the web wizard configuration,
      * and then jumps to the new image, selecting it in the list.
      * @see add(String)
@@ -103,7 +103,7 @@ public class BackgroundsDialog extends ImageListDialog
     }
 
     /**
-     * adds the given image to the image list (to the model) 
+     * adds the given image to the image list (to the model)
      * and to the web wizard configuration.
      * @param s
      * @return
@@ -138,9 +138,9 @@ public class BackgroundsDialog extends ImageListDialog
     }
 
     /**
-     * an ImageList Imagerenderer implemtation. 
+     * an ImageList Imagerenderer implemtation.
      * The image URL is the object given from the list model.
-     * the image name, got from the "render" method is 
+     * the image name, got from the "render" method is
      * the filename portion of the url.
      * @author rpiterman
      *
@@ -174,13 +174,13 @@ public class BackgroundsDialog extends ImageListDialog
     }
 
     /**
-     * This is a list model for the image list of the 
+     * This is a list model for the image list of the
      * backgrounds dialog.
      * It takes the Backgrounds config set as an argument,
      * and "parses" it to a list of files:
      * It goes through each image in the set, and checks it:
      * if it is a directory it lists all image files in this directory.
-     * if it is a file, it adds the file to the list. 
+     * if it is a file, it adds the file to the list.
      * @author rpiterman
      */
     private class Model extends DefaultListModel
@@ -269,8 +269,8 @@ public class BackgroundsDialog extends ImageListDialog
 
         /**
          * adds the given image url to the list.
-         * if and only if it ends with jpg, jpeg or gif 
-         * (case insensitive) 
+         * if and only if it ends with jpg, jpeg or gif
+         * (case insensitive)
          * @param filename image url.
          */
         private void add(String filename)

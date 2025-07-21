@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -38,23 +38,23 @@ public class Test01 implements PasswordContainerTest {
     XMultiServiceFactory m_xMSF = null;
     XPasswordContainer m_xPasswordContainer = null;
     TestHelper m_aTestHelper = null;
-    
+
     public Test01 ( XMultiServiceFactory xMSF )
     {
         m_xMSF = xMSF;
         m_aTestHelper = new TestHelper ( "Test01: ");
     }
-    
+
     public boolean test() {
         final String sURL = "http://www.openoffice.org";
         final String sUserPre = "OOoUser";
         final String sPwdPre = "Password";
-        final int iUserNum1 = 10;   
+        final int iUserNum1 = 10;
         final int iUserNum2 = 5;
-        
+
         UserRecord aInputUserList1[] = new UserRecord[iUserNum1];
         for(int i = 0; i < iUserNum1; i++) {
-            String sTemp[] = {sPwdPre + "_1_" + i};     // currently one password for one user 
+            String sTemp[] = {sPwdPre + "_1_" + i};     // currently one password for one user
             aInputUserList1[i] = new UserRecord(sUserPre + "_1_" + i, sTemp);
         }
         UserRecord aInputUserList2[] = new UserRecord[iUserNum2];
@@ -68,8 +68,8 @@ public class Test01 implements PasswordContainerTest {
             Object oHandler = m_xMSF.createInstance( "com.sun.star.task.InteractionHandler" );
             XInteractionHandler xHandler = UnoRuntime.queryInterface(XInteractionHandler.class, oHandler);
             MasterPasswdHandler aMHandler = new MasterPasswdHandler( xHandler );
-            
-            // add a set of users and passwords for the same URL for runtime 
+
+            // add a set of users and passwords for the same URL for runtime
             for(int i = 0; i < iUserNum1; i++) {
                 xContainer.add(sURL, aInputUserList1[i].UserName, aInputUserList1[i].Passwords, aMHandler);
             }
@@ -77,12 +77,12 @@ public class Test01 implements PasswordContainerTest {
                 xContainer.add(sURL, aInputUserList2[i].UserName, aInputUserList2[i].Passwords, aMHandler);
             }
 
-            // remove some of the passwords 
+            // remove some of the passwords
             for (int i = 0; i < iUserNum1; i++) {
                 xContainer.remove(sURL, aInputUserList1[i].UserName);
             }
-            
-            // get the result and check it with the expected one 
+
+            // get the result and check it with the expected one
             UrlRecord aRecord = xContainer.find(sURL, aMHandler);
             if(!aRecord.Url.equals(sURL)) {
                 m_aTestHelper.Error("URL mismatch. Got " + aRecord.Url + "; should be " + sURL);
@@ -92,7 +92,7 @@ public class Test01 implements PasswordContainerTest {
                 m_aTestHelper.Error("User list is not the expected");
                 return false;
             }
-            
+
             // remove the runtime passwords
             aRecord = xContainer.find(sURL, aMHandler);
             for(int i = 0; i < aRecord.UserList.length; i++) {

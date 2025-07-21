@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -44,7 +44,7 @@ import com.sun.star.reflection.InvocationTargetException;
 import com.sun.star.container.NoSuchElementException;
 import com.sun.star.container.ElementExistException;
 
-import java.util.*; 
+import java.util.*;
 
 import com.sun.star.script.framework.log.LogUtils;
 import com.sun.star.script.framework.provider.ScriptProvider;
@@ -54,7 +54,7 @@ public class ScriptBrowseNode extends PropertySet
     implements XBrowseNode, XInvocation
 {
     private ScriptProvider provider;
-   
+
     private Parcel parent;
     private String name;
     public String uri;
@@ -67,11 +67,11 @@ public class ScriptBrowseNode extends PropertySet
         String name )
     {
         this.provider = provider;
-        this.name = name; 
+        this.name = name;
         this.parent = parent;
         ScriptMetaData data = null;
         XSimpleFileAccess xSFA = null;
-        XComponentContext xCtx = provider.getScriptingContext().getComponentContext(); 
+        XComponentContext xCtx = provider.getScriptingContext().getComponentContext();
         XMultiComponentFactory xFac = xCtx.getServiceManager();
         try
         {
@@ -80,27 +80,27 @@ public class ScriptBrowseNode extends PropertySet
                 UnoRuntime.queryInterface( XSimpleFileAccess.class,
                     xFac.createInstanceWithContext(
                         "com.sun.star.ucb.SimpleFileAccess",
-                        xCtx ) );            
+                        xCtx ) );
         }
 
         // TODO fix exception types to be caught here, should we rethrow?
         catch (  Exception e )
         {
             LogUtils.DEBUG("** caught exception getting script data for " + name + " ->" + e.toString() );
-        } 
+        }
 
         uri = data.getShortFormScriptURL();
         description = data.getDescription();
 
         if (provider.hasScriptEditor() == true)
         {
-            
+
             this.editable  = true;
             try
             {
                 if ( !parent.isUnoPkg() &&
                     !xSFA.isReadOnly( parent.getPathToParcel() ) )
-                {    
+                {
                     this.deletable = true;
                     this.renamable = true;
                 }
@@ -110,10 +110,10 @@ public class ScriptBrowseNode extends PropertySet
             {
                 LogUtils.DEBUG("Caught exception in creation of ScriptBrowseNode");
                 LogUtils.DEBUG( LogUtils.getTrace(e));
-            }            
- 
+            }
+
         }
-          
+
         registerProperty("Deletable", new Type(boolean.class),
             (short)0, "deletable");
         registerProperty("Editable", new Type(boolean.class),
@@ -159,7 +159,7 @@ public class ScriptBrowseNode extends PropertySet
         catch (  Exception e )
         {
             LogUtils.DEBUG("** caught exception getting script data for " + name + " ->" + e.toString() );
-        } 
+        }
         uri = data.getShortFormScriptURL();
     }
     // implementation of XInvocation interface
@@ -206,7 +206,7 @@ public class ScriptBrowseNode extends PropertySet
             {
                 // rethrow
                 throw new InvocationTargetException(
-                    "Scripting framework editing script ", 
+                    "Scripting framework editing script ",
                         null, wte.TargetException );
             }
 
@@ -236,7 +236,7 @@ public class ScriptBrowseNode extends PropertySet
             {
                 // rethrow
                 throw new InvocationTargetException(
-                    "Scripting framework deleting script ", 
+                    "Scripting framework deleting script ",
                         null, wte.TargetException );
             }
 
@@ -289,14 +289,14 @@ public class ScriptBrowseNode extends PropertySet
             {
                 // rethrow
                 throw new InvocationTargetException(
-                    "Scripting framework error renaming script ", 
+                    "Scripting framework error renaming script ",
                         null, eee );
             }
             catch ( WrappedTargetException wte )
             {
                 // rethrow
                 throw new InvocationTargetException(
-                    "Scripting framework rename script ", 
+                    "Scripting framework rename script ",
                         null, wte.TargetException );
             }
         }

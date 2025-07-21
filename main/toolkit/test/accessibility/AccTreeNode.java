@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 import com.sun.star.uno.UnoRuntime;
@@ -77,18 +77,18 @@ class AccTreeNode
             System.out.println ("replacing handler " + i);
             HandlerDescriptor aDescriptor = (HandlerDescriptor)maHandlers.get(i);
             aDescriptor.maHandler = aDescriptor.maHandler.createHandler (mxContext);
-            aDescriptor.mnChildCount = 
+            aDescriptor.mnChildCount =
                     aDescriptor.maHandler.getChildCount (this);
         }
     }
 
     public XAccessibleContext getContext ()
-    { 
-        return mxContext; 
+    {
+        return mxContext;
     }
 
     public XAccessibleComponent getComponent ()
-    { 
+    {
         if (mxComponent == null && mxContext != null)
             mxComponent = (XAccessibleComponent)UnoRuntime.queryInterface(
                 XAccessibleComponent.class, mxContext);
@@ -96,7 +96,7 @@ class AccTreeNode
     }
 
     public XAccessibleExtendedComponent getExtendedComponent ()
-    { 
+    {
         if (mxComponent == null)
             getComponent();
         if (mxComponent != null)
@@ -107,38 +107,38 @@ class AccTreeNode
     }
 
     public XAccessibleText getText ()
-    { 
+    {
         if (mxText == null && mxContext != null)
             mxText = (XAccessibleText)UnoRuntime.queryInterface(
                 XAccessibleText.class, mxContext);
-        return mxText; 
+        return mxText;
     }
 
     public XAccessibleEditableText getEditText ()
-    { 
+    {
         return (XAccessibleEditableText)UnoRuntime.queryInterface(
                 XAccessibleEditableText.class, mxContext);
     }
 
     public XAccessibleTable getTable ()
-    { 
+    {
         if (mxTable == null && mxContext != null)
             mxTable = (XAccessibleTable)UnoRuntime.queryInterface(
                 XAccessibleTable.class, mxContext);
-        return mxTable; 
+        return mxTable;
     }
 
 
-    public XAccessible getAccessible() 
+    public XAccessible getAccessible()
     {
         if ((mxAccessible == null) && (mxContext != null))
             mxAccessible = (XAccessible)UnoRuntime.queryInterface(
                 XAccessible.class, mxContext);
-        return mxAccessible; 
+        return mxAccessible;
     }
 
     public XAccessibleSelection getSelection ()
-    { 
+    {
         return (XAccessibleSelection)UnoRuntime.queryInterface(
                 XAccessibleSelection.class, mxContext);
     }
@@ -152,7 +152,7 @@ class AccTreeNode
 
     /** iterate over handlers and return child sum */
     protected HandlerDescriptor getHandlerDescriptor (int i)
-    { 
+    {
         HandlerDescriptor aDescriptor = (HandlerDescriptor)maHandlers.get(i);
         if (aDescriptor.mnChildCount < 0)
             aDescriptor.mnChildCount =
@@ -161,7 +161,7 @@ class AccTreeNode
     }
 
     public int getChildCount()
-    { 
+    {
         int nChildCount = 0;
         for (int i = 0; i < maHandlers.size(); i++)
         {
@@ -267,7 +267,7 @@ class AccTreeNode
 
     /** this node is a leaf if have no handlers, or is those
             handlers show no children */
-    public boolean isLeaf() 
+    public boolean isLeaf()
     {
         return (maHandlers.size() == 0);// || (getChildCount() == 0);
     }
@@ -316,7 +316,7 @@ class AccTreeNode
     }
 
     /** Try to add the specified accessible object as new accessible child of the
-        AccessibleTreeHandler.  
+        AccessibleTreeHandler.
         Note that child is used in another context than
         it is used in the other methods of this class.
     */
@@ -343,7 +343,7 @@ class AccTreeNode
     */
     public Vector updateChildren (java.lang.Class class1)
     {
-        return updateChildren (class1, null); 
+        return updateChildren (class1, null);
     }
 
     public Vector updateChildren (java.lang.Class class1, java.lang.Class class2)

@@ -33,7 +33,7 @@ import org.apache.openoffice.ooxml.schema.model.simple.SimpleType;
 /** Front end of a shared SchemaBase object of a single master schema file (such
  *  as wml.xsd).
  *  Most important member is the TopLevelElements list of top level elements,
- *  which are unique to each master schema. 
+ *  which are unique to each master schema.
  */
 public class Schema
 {
@@ -51,14 +51,14 @@ public class Schema
         AttributeGroups = aBase.AttributeGroups;
         Attributes = aBase.Attributes;
     }
-    
-    
-    
-    
+
+
+
+
     public Node GetTypeForName (final QualifiedName aName)
     {
         final String sTypeName = aName.GetDisplayName();
-        
+
         if (ComplexTypes.Contains(sTypeName))
             return ComplexTypes.Get(sTypeName);
         else if (SimpleTypes.Contains(sTypeName))
@@ -71,17 +71,17 @@ public class Schema
             return null;
     }
 
-    
-    
-    
+
+
+
 	public String GetShortName ()
 	{
 		return msShortName;
 	}
 
-	
-	
-	
+
+
+
     public Schema GetOptimizedSchema (final SchemaBase aSchemaBase)
     {
         final Schema aOptimizedSchema = new Schema(msShortName, aSchemaBase);
@@ -89,13 +89,13 @@ public class Schema
         {
             aOptimizedSchema.TopLevelElements.Add(aElement);
         }
-        
+
         return aOptimizedSchema;
     }
 
-    
-    
-    
+
+
+
     private final String msShortName;
 	public final TypeContainer<Element> TopLevelElements;
     public final NamespaceMap Namespaces;

@@ -40,18 +40,18 @@ public class NodeIterator
         AddNodes(aRoot);
     }
 
-    
-    
-    
+
+
+
     @Override
     public Iterator<INode> iterator ()
     {
         return maNodes.iterator();
     }
 
-    
-    
-    
+
+
+
     /** Recursively add child nodes depth first.
      */
     private void AddNodes (final INode aNode)
@@ -60,9 +60,9 @@ public class NodeIterator
         for (final INode aChild : aNode.GetChildren())
             AddNodes(aChild);
     }
-    
-    
-    
-    
+
+
+
+
     private Vector<INode> maNodes;
 }

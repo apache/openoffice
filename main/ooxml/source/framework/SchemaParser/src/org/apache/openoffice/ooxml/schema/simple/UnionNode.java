@@ -35,10 +35,10 @@ public class UnionNode
         maTypes = new Vector<>();
         mbIsList = false;
     }
-    
-    
-    
-    
+
+
+
+
     @Override
     public void ApplyRestriction (
         final Restriction aNode,
@@ -47,10 +47,10 @@ public class UnionNode
         throw new RuntimeException("can not handle restriction on union");
     }
 
-    
-    
-    
-    
+
+
+
+
     public void AddNode (final ISimpleTypeNode aType)
     {
         if (aType instanceof UnionNode)
@@ -66,7 +66,7 @@ public class UnionNode
             for (int nIndex=0; nIndex<maTypes.size(); ++nIndex)
             {
                 final ISimpleTypeNode aChild = maTypes.get(nIndex);
-            
+
                 if (aChild instanceof StringNode)
                 {
                     // Yes.  Can it be joined with the new child?
@@ -82,15 +82,15 @@ public class UnionNode
             // When we reach this point then there was no join possible.
             // Just add the new type.
             maTypes.add(aType);
-            
+
         }
         else
             maTypes.add(aType);
     }
-    
-    
-    
-    
+
+
+
+
     @Override
     public void Print (final Log aLog)
     {
@@ -101,51 +101,51 @@ public class UnionNode
         aLog.EndBlock();
     }
 
-    
-    
-    
+
+
+
     @Override
     public boolean IsList ()
     {
         return mbIsList;
     }
-    
-    
-    
-    
+
+
+
+
     @Override
     public void SetIsList ()
     {
         mbIsList = true;
     }
-    
-    
-    
-    
+
+
+
+
     @Override
     public String toString ()
     {
         return "union";
     }
-    
-    
+
+
     ISimpleTypeNode[] GetChildren ()
     {
         return maTypes.toArray(new ISimpleTypeNode[maTypes.size()]);
     }
-    
 
-    
-    
+
+
+
     @Override
     public void AcceptVisitor (final ISimpleTypeNodeVisitor aVisitor)
     {
         aVisitor.Visit(this);
     }
-    
-    
-    
-    
+
+
+
+
     private final Vector<ISimpleTypeNode> maTypes;
     private boolean mbIsList;
 }

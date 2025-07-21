@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 package fvt.uno.sc.chart;
@@ -49,7 +49,7 @@ import com.sun.star.table.CellRangeAddress;
 
 /**
  *  Check mean value line in chart can be applied and saved
- * 
+ *
  */
 @RunWith(value = Parameterized.class)
 public class ChartMeanValueLine {
@@ -57,14 +57,14 @@ public class ChartMeanValueLine {
 	private Boolean expected;
 	private Boolean meanValueLine;
 	private String inputType;
-	private double[][] numberData;	
+	private double[][] numberData;
 	private String fileType;
-	
+
 	private static final UnoApp unoApp = new UnoApp();
-	
+
 	XComponent scComponent = null;
 	XSpreadsheetDocument scDocument = null;
-	
+
 	@Parameters
 	public static Collection<Object[]> data() throws Exception {
 		double[][] numberData1 = {
@@ -79,14 +79,14 @@ public class ChartMeanValueLine {
 			{true, true, "com.sun.star.chart.LineDiagram", numberData1, "ods"},
 			{true, true, "com.sun.star.chart.AreaDiagram", numberData1, "ods"},
 			{true, true, "com.sun.star.chart.XYDiagram", numberData1, "ods"},
-			
+
 			{false, true, "com.sun.star.chart.BarDiagram", numberData1, "xls"}, //Excel does not support this property, save as .xls, the setting will be lost.
 			{false, true, "com.sun.star.chart.LineDiagram", numberData1, "xls"},
 			{false, true, "com.sun.star.chart.AreaDiagram", numberData1, "xls"},
-			{false, true, "com.sun.star.chart.XYDiagram", numberData1, "xls"}		
+			{false, true, "com.sun.star.chart.XYDiagram", numberData1, "xls"}
 		});
 	}
-	
+
 	public ChartMeanValueLine(Boolean expected, Boolean meanValueLine, String inputType, double[][] numberData, String fileType) {
 		this.expected = expected;
 		this.meanValueLine = meanValueLine;
@@ -94,7 +94,7 @@ public class ChartMeanValueLine {
 		this.numberData = numberData;
 		this.fileType = fileType;
 	}
-		
+
 	@Before
 	public void setUp() throws Exception {
 		scComponent = unoApp.newDocument("scalc");
@@ -104,9 +104,9 @@ public class ChartMeanValueLine {
 	@After
 	public void tearDown() throws Exception {
 		unoApp.closeDocument(scComponent);
-		
+
 	}
-	
+
 	@BeforeClass
 	public static void setUpConnection() throws Exception {
 		unoApp.start();
@@ -115,9 +115,9 @@ public class ChartMeanValueLine {
 	@AfterClass
 	public static void tearDownConnection() throws InterruptedException, Exception {
 		unoApp.close();
-		SCUtil.clearTempDir();	
+		SCUtil.clearTempDir();
 	}
-	
+
 	/**
 	 * Enable different types of mean value line in chart.
 	 * 1. Create a spreadsheet file.
@@ -133,45 +133,45 @@ public class ChartMeanValueLine {
 		String chartName = "testChart";
 		String cellRangeName = "A1:D4";
 		Boolean result = null;
-		
+
 		if (inputType.equals("com.sun.star.chart.StockDiagram")) {
 			cellRangeName = "A1:C4";
-		}	
-		if (fileType.equalsIgnoreCase("xls")) {
-			chartName = "Object 1";			
 		}
-		
+		if (fileType.equalsIgnoreCase("xls")) {
+			chartName = "Object 1";
+		}
+
 		XSpreadsheet sheet = SCUtil.getCurrentSheet(scDocument);
-		
+
 		SCUtil.setValueToCellRange(sheet, 0, 0, numberData);
 
 		CellRangeAddress[] cellAddress = new CellRangeAddress[1];
 		cellAddress[0] = SCUtil.getChartDataRangeByName(sheet, cellRangeName);
 		Rectangle rectangle = new Rectangle(1000, 1000, 15000, 9500);
-		XChartDocument xChartDocument = null; 		
+		XChartDocument xChartDocument = null;
 		xChartDocument = SCUtil.createChart(sheet, rectangle, cellAddress, chartName);
 		SCUtil.setChartType(xChartDocument, inputType);
-		XDiagram xDiagram = xChartDocument.getDiagram(); 
-		
+		XDiagram xDiagram = xChartDocument.getDiagram();
+
 		SCUtil.setProperties(xDiagram, "MeanValue", meanValueLine);
-		
+
 		SCUtil.saveFileAs(scComponent, fileName, fileType);
 		scDocument = SCUtil.reloadFile(unoApp, scDocument, fileName + "." + fileType);
 		sheet = SCUtil.getCurrentSheet(scDocument);
-		
+
 		xChartDocument = SCUtil.getChartByName(sheet, chartName);
-		xDiagram = xChartDocument.getDiagram(); 
+		xDiagram = xChartDocument.getDiagram();
 		result = (Boolean) SCUtil.getProperties(xDiagram, "MeanValue");
 
 		SCUtil.closeFile(scDocument);
-		
+
 		if (expected) {
 			assertTrue("Incorrect chart trendline got in ." + fileType + " file.", result);
 		}
 		else {
 			assertFalse("Incorrect chart trendline got in ." + fileType + " file.", result);
 		}
-		
+
 	}
-	
+
 }

@@ -58,11 +58,11 @@ import com.sun.star.util.XMergeable;
  */
 
 public class CellMerge {
-	
+
 	UnoApp unoApp = new UnoApp();
 	XSpreadsheetDocument scDocument = null;
 	XComponent scComponent = null;
-	
+
 	@Before
 	public void setUp() throws Exception {
 		unoApp.start();
@@ -73,21 +73,21 @@ public class CellMerge {
 		unoApp.closeDocument(scComponent);
 		unoApp.close();
 		}
-	
+
 	@Test
 	public void testCellMerge() throws Exception {
-		
+
 		String sheetname = "sheet1";
 		scComponent = unoApp.newDocument("scalc");
 		scDocument = (XSpreadsheetDocument) UnoRuntime.queryInterface(XSpreadsheetDocument.class, scComponent);
 		XSpreadsheets spreadsheets = scDocument.getSheets();
 		Object sheetObj = spreadsheets.getByName(sheetname);
 		XSpreadsheet sheet = (XSpreadsheet) UnoRuntime.queryInterface(XSpreadsheet.class, sheetObj);
-		
+
 		// Select A1 and input "12"
 		XCell cell = sheet.getCellByPosition(0, 0);
 		cell.setValue(12);
-		
+
 		// Get cell range A1:B1 by position - (column, row, column, row)
 		XCellRange CellRange = sheet.getCellRangeByPosition( 0, 0, 1, 0 );
 		//XCellRange CellRange = sheet.getCellRangeByName("A1:B1");
@@ -100,7 +100,7 @@ public class CellMerge {
 		assertEquals("Verify if the cell range A1:B1 is completely merged",true, xMerge.getIsMerged());
 
 		// Undo Merge cell range A1:B1 into one cell
-		xMerge.merge(false); 
+		xMerge.merge(false);
 
 		// Verify if the cell range A1:B1 is no longer merged
 		assertEquals("Verify if the cell range A1:B1 is no longer merged",false, xMerge.getIsMerged());

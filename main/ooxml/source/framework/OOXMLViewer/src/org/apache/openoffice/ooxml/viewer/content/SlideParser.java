@@ -37,11 +37,11 @@ public class SlideParser
     SlideParser (final Part aPart)
     {
         maParser = ParserFactory.getParser(
-            aPart.getContentType(), 
-            aPart.getStream(), 
+            aPart.getContentType(),
+            aPart.getStream(),
             new Vector<String>());
         mnShapeCount = 0;
-        
+
         maParser.GetActionManager().AddElementStartAction(
             "p06_CT_Shape",
             new IAction()
@@ -53,28 +53,28 @@ public class SlideParser
                 }
             });
     }
-    
 
-    
-    
+
+
+
     Slide ParseSlide (final int nSlideIndex)
     {
         maParser.Parse();
         final Slide aSlide = new Slide("slide "+nSlideIndex, mnShapeCount);
-        return aSlide;        
+        return aSlide;
     }
-    
-    
-    
-    
+
+
+
+
     private void IncreaseShapeCount ()
     {
         ++mnShapeCount;
     }
-    
-    
-    
-    
+
+
+
+
     private final Parser maParser;
     private int mnShapeCount;
 }

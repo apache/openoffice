@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -31,12 +31,12 @@ import java.util.ArrayList;
 
 /**
  * Solves the problem with translating strings from the
- * Star-Office Help. This Strings contain XML snippets 
+ * Star-Office Help. This Strings contain XML snippets
  * (that means parts of an xml dokument). I call them 'dirty'
  * because the start of a tag (<) and the and of an tag (>)
- * are quoted by a single backslash(\<.....\>). This is done 
+ * are quoted by a single backslash(\<.....\>). This is done
  * because the text out of th tags should not contain '<' and '>'
- * as Entity references (&lt; or &gt;) but as readable signs. 
+ * as Entity references (&lt; or &gt;) but as readable signs.
  * This is for translation purposes.
  * Because translators get mad while find out the really translatable
  * parts between all the markup information, the XLIFF Specification
@@ -44,20 +44,20 @@ import java.util.ArrayList;
  * special tags (<ept>, <bpt>).
  * This Class has two static methods that do the wrapping and unwrapping
  * NOTE: this won't work with not 'dirty' Strings.
- * 
+ *
  * @author Christian Schmidt 2005
  *
  */
 public class DirtyTagWrapper {
-    
+
     private static boolean doWrap=true;
     public static void setWrapping(boolean doWrap){
         DirtyTagWrapper.doWrap=doWrap;
     }
-   
+
     /**
      * Unwraps the 'dirty' parts of a String from ept and bpt tags
-     * 
+     *
      * @param checkString The String to unwrap
      * @return the unwrapped String
      */
@@ -81,11 +81,11 @@ public class DirtyTagWrapper {
         String returnString = new String(returnBuffer);
         return returnString;
     }
-    
-    
+
+
     /**
      * Wrap the dirty parts of a string
-     * 
+     *
      * @param checkString The String to check if there are dirty Parts to wrap
      * @return A String with wrapped dirty parts
      * @throws TagWrapperException
@@ -95,11 +95,11 @@ public class DirtyTagWrapper {
         // if no wrapping should be done return the given string
         if(!doWrap) return checkString;
         // let's wrap
-        String[] parts=null; 
+        String[] parts=null;
         int idx=0;
         //split the string at tag ends
         String[] parts2 = checkString.split("\\\\>");
-   
+
         ArrayList tagString =new ArrayList();
         // put the while splitting lost parts to the end of the single strings
         for(int j=0;j<parts2.length-1;j++){
@@ -109,10 +109,10 @@ public class DirtyTagWrapper {
         if (checkString.endsWith("\\>")){
             parts2[parts2.length-1]+="\\>";
         }
-        // split the leading text from the real tag string (<...>) 
+        // split the leading text from the real tag string (<...>)
         for(int j=0;j<parts2.length;j++){
 
-            //is it just a tag 
+            //is it just a tag
             if(parts2[j].startsWith("\\<")){
                 tagString.add(parts2[j]);
              // or is it a tag with leading text?
@@ -122,12 +122,12 @@ public class DirtyTagWrapper {
                 tagString.add(parts2[j].substring(0,(parts2[j].indexOf("\\<"))));
                 // ...and the tag
                 tagString.add(parts2[j].substring(parts2[j].indexOf("\\<")));
-                
+
             }else{
                 //no tag...must be text only
                 tagString.add(parts2[j]);
             }
-            
+
         }
         ArrayList tagNames=new ArrayList();
         String item="";
@@ -144,7 +144,7 @@ public class DirtyTagWrapper {
                     isStandalone=true;
                 }
                 item=item.substring(start,end);
-                
+
                 if(item.indexOf(" ")>0){
                    item=item.substring(0,item.indexOf(" "));
                 }
@@ -167,9 +167,9 @@ public class DirtyTagWrapper {
             }else {
                 tagType.add("StartTag");
             }
-            
+
         }
-   
+
         ArrayList tagList=new ArrayList();
         for(int i=0;i<tagNames.size();i++){
             tagList.add(new Tag(
@@ -186,7 +186,7 @@ public class DirtyTagWrapper {
         while(tagList.size()>0){
             try{
                 start=new TagPair(tagList);
-                returnBuffer.append(start.getWrapped()); 
+                returnBuffer.append(start.getWrapped());
             }catch(TagPair.TagPairConstructionException e){
                 throw (new DirtyTagWrapper()).new TagWrapperException(e);
             }
@@ -202,43 +202,43 @@ public class DirtyTagWrapper {
 
         /**
          * Create a new Instance of TagWrapperException
-         * 
-         * 
+         *
+         *
          */
         public TagWrapperException() {
             super();
-            // 
+            //
         }
 
         /**
          * Create a new Instance of TagWrapperException
-         * 
+         *
          * @param arg0
          */
         public TagWrapperException(String arg0) {
             super(arg0);
-            // 
+            //
         }
 
         /**
          * Create a new Instance of TagWrapperException
-         * 
+         *
          * @param arg0
          * @param arg1
          */
         public TagWrapperException(String arg0, Throwable arg1) {
             super(arg0, arg1);
-            // 
+            //
         }
 
         /**
          * Create a new Instance of TagWrapperException
-         * 
+         *
          * @param arg0
          */
         public TagWrapperException(Throwable arg0) {
             super(arg0);
-            // 
+            //
         }
 
     }

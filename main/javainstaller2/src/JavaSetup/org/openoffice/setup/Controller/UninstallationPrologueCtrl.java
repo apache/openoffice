@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -44,7 +44,7 @@ import org.openoffice.setup.ResourceManager;
 public class UninstallationPrologueCtrl extends PanelController {
 
     private String helpFile;
-    
+
     public UninstallationPrologueCtrl() {
         super("UninstallationPrologue", new UninstallationPrologue());
         helpFile = "String_Helpfile_UninstallationPrologue";
@@ -53,11 +53,11 @@ public class UninstallationPrologueCtrl extends PanelController {
     public String getNext() {
         return new String("ChooseUninstallationType");
     }
-    
+
     public String getPrevious() {
         return null;
     }
-    
+
     public final String getHelpFileName () {
         return this.helpFile;
     }
@@ -73,7 +73,7 @@ public class UninstallationPrologueCtrl extends PanelController {
         // for (int i = 0; i < infoFileContent.size(); i++) {
         //    System.out.println(infoFileContent.get(i));
         // }
-        
+
         // Iterator m = map.entrySet().iterator();
         // while ( m.hasNext() ) {
         //     Map.Entry entry = (Map.Entry) m.next();
@@ -82,7 +82,7 @@ public class UninstallationPrologueCtrl extends PanelController {
 
         return map;
     }
-    
+
     private void setNewInstallData(HashMap map) {
         InstallData data = InstallData.getInstance();
         // adding information to installData
@@ -93,16 +93,16 @@ public class UninstallationPrologueCtrl extends PanelController {
         data.setAdminFileNameNoRelocNoDepends((String)map.get("AdminFileNoRelocNoDepends"));
         data.setDatabasePath((String)map.get("DatabasePath"));
         data.setInstallDir((String)map.get("InstallationDir"));
-        data.setStoredInstallationPrivileges((String)map.get("InstallationPrivileges"));        
+        data.setStoredInstallationPrivileges((String)map.get("InstallationPrivileges"));
         data.setGetUidPath((String)map.get("GetUidFile"));
     }
-    
+
     private void readInfoFile() {
         HashMap map = getInfoFileData();
         setNewInstallData(map);
         Dumper.dumpNewInstallData();
     }
-    
+
     private void checkUninstallPrivileges() {
         InstallData data = InstallData.getInstance();
         // data.setStoredInstallationPrivileges((String)map.get("InstallationPrivileges"));
@@ -116,7 +116,7 @@ public class UninstallationPrologueCtrl extends PanelController {
                 Informer.showErrorMessage(message, title);
                 String log = "<b>Error: Wrong uninstallation privileges (currently Root)!</b><br>";
                 System.err.println(log);
-                // LogManager.addLogfileComment(log);                
+                // LogManager.addLogfileComment(log);
             } else {
                 String message = ResourceManager.getString("String_UninstallationPrologue_Wrong_Privileges_Current_User");
                 String title = ResourceManager.getString("String_Error");
@@ -125,15 +125,15 @@ public class UninstallationPrologueCtrl extends PanelController {
                 System.err.println(log);
                 // LogManager.addLogfileComment(log);
             }
-            System.exit(1);            
+            System.exit(1);
         }
 
     }
-    
+
     public void beforeShow() {
         getSetupFrame().setButtonEnabled(false, getSetupFrame().BUTTON_PREVIOUS);
         // System.err.println("\nUninstallation module state dump 1:");
-        // PackageDescription packageData = SetupDataProvider.getPackageDescription();                        
+        // PackageDescription packageData = SetupDataProvider.getPackageDescription();
         // ModuleCtrl.dumpModuleStates(packageData);
         getSetupFrame().setButtonSelected(getSetupFrame().BUTTON_NEXT);
     }
@@ -145,15 +145,15 @@ public class UninstallationPrologueCtrl extends PanelController {
                 InstallData installData = InstallData.getInstance();
                 if ( ! installData.databaseAnalyzed() ) {
                     getSetupFrame().setButtonEnabled(false, getSetupFrame().BUTTON_NEXT);
-                
+
                     // now it is time to read the infoFile in directory "installData.getInfoRoot()"
                     readInfoFile();
-                    
+
                     // controlling the installation privileges. Are the original installation privileges
                     // identical with the current deinstallation privileges?
                     checkUninstallPrivileges();
 
-                    PackageDescription packageData = SetupDataProvider.getPackageDescription();                
+                    PackageDescription packageData = SetupDataProvider.getPackageDescription();
                     Installer installer = InstallerFactory.getInstance();
                     installer.preUninstall(packageData);
 
@@ -169,8 +169,8 @@ public class UninstallationPrologueCtrl extends PanelController {
                 }
             }
         };
-        
-        t.start(); 
+
+        t.start();
     }
 
     public boolean afterShow(boolean nextButtonPressed) {
@@ -178,5 +178,5 @@ public class UninstallationPrologueCtrl extends PanelController {
         getSetupFrame().setButtonEnabled(true, getSetupFrame().BUTTON_PREVIOUS);
         return repeatDialog;
     }
-    
+
 }

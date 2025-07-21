@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -140,7 +140,7 @@ public class SvxDrawPage extends TestCase {
      *      <code>com.sun.star.drawing.Line</code> service </li>
      * </ul>
      */
-    protected TestEnvironment createTestEnvironment(TestParameters tParam, 
+    protected TestEnvironment createTestEnvironment(TestParameters tParam,
                                                     PrintWriter log) {
         XInterface oObj = null;
         XShape oShape = null;
@@ -162,17 +162,17 @@ public class SvxDrawPage extends TestCase {
             oDP = (XDrawPages) oDPS.getDrawPages();
             oDP.insertNewByIndex(1);
             oDP.insertNewByIndex(2);
-            oObj = (XDrawPage) AnyConverter.toObject(new Type(XDrawPage.class), 
+            oObj = (XDrawPage) AnyConverter.toObject(new Type(XDrawPage.class),
                                                      oDP.getByIndex(0));
 
             SOfficeFactory SOF = SOfficeFactory.getFactory(
                                          (XMultiServiceFactory) tParam.getMSF());
 
-            oShape = SOF.createShape(xComp, 5000, 3500, 7500, 5000, 
+            oShape = SOF.createShape(xComp, 5000, 3500, 7500, 5000,
                                      "Rectangle");
             DrawTools.getShapes((XDrawPage) oObj).add(oShape);
 
-            XShape oShape1 = SOF.createShape(xComp, 5000, 5500, 5000, 5000, 
+            XShape oShape1 = SOF.createShape(xComp, 5000, 5500, 5000, 5000,
                                              "Rectangle");
             DrawTools.getShapes((XDrawPage) oObj).add(oShape1);
         } catch (com.sun.star.lang.WrappedTargetException e) {
@@ -195,7 +195,7 @@ public class SvxDrawPage extends TestCase {
 
         //adding a controlButton to have a Form
         FormTools.insertControlShape(
-                (XComponent) UnoRuntime.queryInterface(XComponent.class, xDoc), 
+                (XComponent) UnoRuntime.queryInterface(XComponent.class, xDoc),
                 3000, 4500, 15000, 1000, "CommandButton");
 
         // relation for XShapes interface

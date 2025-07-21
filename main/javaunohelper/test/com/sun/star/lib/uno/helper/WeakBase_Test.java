@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -31,18 +31,18 @@ import com.sun.star.uno.XAdapter;
 
 public class WeakBase_Test
 {
-    
+
     /** Creates a new instance of WeakBase_Test */
     public WeakBase_Test()
     {
     }
-    
+
     public boolean getTypes()
     {
         System.out.println("Testing WeakBase.getTypes");
         boolean[] r= new boolean[50];
         int i= 0;
-        
+
         SomeClass comp= new SomeClass();
         Type[] types= comp.getTypes(); //XWeak,XTypeProvider,XReference,XBridgeSupplier2
         r[i++]= types.length == 4;
@@ -58,9 +58,9 @@ public class WeakBase_Test
                 r[i++]= true;
             else
                 r[i++]= false;
-            
+
         }
-        
+
         Foo1 f1= new Foo1();
         Foo1 f2= new Foo1();
         Type[] t1= f1.getTypes();
@@ -82,11 +82,11 @@ public class WeakBase_Test
         System.out.println("Testing WeakBase.getImplementationId");
         boolean[] r= new boolean[50];
         int i= 0;
-        
+
         SomeClass comp= new SomeClass();
         // byte 0 - 3 contain hashcode and the remaining bytes represent the classname
         byte [] ar= comp.getImplementationId();
-        
+
         StringBuffer buff= new StringBuffer();
         for (int c= 0; c < ar.length - 4; c++){
             buff.append((char) ar[4 + c]);
@@ -95,7 +95,7 @@ public class WeakBase_Test
         String retStr= buff.toString();
         r[i++]= retStr.equals("com.sun.star.lib.uno.helper.SomeClass");
 //        System.out.println(buff.toString());
-        
+
         Foo1 f1= new Foo1();
         Foo1 f2= new Foo1();
         r[i++]= f1.getImplementationId().equals(f2.getImplementationId());
@@ -118,14 +118,14 @@ public class WeakBase_Test
         System.out.println("Testing WeakBase.queryAdapter, XAdapter tests");
         boolean[] r= new boolean[50];
         int i= 0;
-        
+
         SomeClass comp= new SomeClass();
         XAdapter adapter= comp.queryAdapter();
         MyRef aRef1= new MyRef();
         MyRef aRef2= new MyRef();
         adapter.addReference(aRef1);
         adapter.addReference(aRef2);
-        
+
         r[i++]= adapter.queryAdapted() == comp;
         comp= null;
         System.out.println("Wait 5 sec");
@@ -140,21 +140,21 @@ public class WeakBase_Test
             {
             }
         }
-        
+
         r[i++]= aRef1.nDisposeCalled == 1;
         r[i++]= aRef2.nDisposeCalled == 1;
         r[i++]= adapter.queryAdapted() == null;
         adapter.removeReference(aRef1); // should not do any harm
-        adapter.removeReference(aRef2); 
-        
+        adapter.removeReference(aRef2);
+
         comp= new SomeClass();
         adapter= comp.queryAdapter();
         aRef1.nDisposeCalled= 0;
         aRef2.nDisposeCalled= 0;
-        
+
         adapter.addReference(aRef1);
         adapter.addReference(aRef2);
-        
+
         adapter.removeReference(aRef1);
         System.out.println("Wait 5 sec");
         comp= null;
@@ -171,7 +171,7 @@ public class WeakBase_Test
         }
         r[i++]= aRef1.nDisposeCalled == 0;
         r[i++]= aRef2.nDisposeCalled == 1;
-       
+
         boolean bOk= true;
         for (int c= 0; c < i; c++)
             bOk= bOk && r[c];
@@ -190,7 +190,7 @@ public class WeakBase_Test
         r[i++]= test.getTypes();
         r[i++]= test.getImplementationId();
         r[i++]= test.queryAdapter();
-        
+
         boolean bOk= true;
         for (int c= 0; c < i; c++)
             bOk= bOk && r[c];
@@ -200,7 +200,7 @@ public class WeakBase_Test
             System.out.println("No errors.");
 
     }
-    
+
 }
 
 interface Aint
@@ -208,7 +208,7 @@ interface Aint
 }
 class OtherClass extends WeakBase implements XBridgeSupplier2
 {
-    
+
     public Object createBridge(Object obj, byte[] values, short param, short param3) throws com.sun.star.lang.IllegalArgumentException
     {
         return null;
@@ -217,17 +217,17 @@ class OtherClass extends WeakBase implements XBridgeSupplier2
 
 class SomeClass extends OtherClass implements Aint,XReference
 {
-    
+
     public void dispose()
     {
     }
-    
+
 }
 
 class MyRef implements XReference
 {
     int nDisposeCalled;
-    
+
     public void dispose()
     {
         nDisposeCalled++;

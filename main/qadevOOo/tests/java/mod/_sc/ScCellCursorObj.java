@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -149,7 +149,7 @@ public class ScCellCursorObj extends TestCase {
     *      retieved from collection)</li>
     * </ul>
     */
-    protected synchronized TestEnvironment createTestEnvironment(TestParameters Param, 
+    protected synchronized TestEnvironment createTestEnvironment(TestParameters Param,
                                                                  PrintWriter log) {
         XInterface oObj = null;
         TestEnvironment tEnv = null;
@@ -162,19 +162,19 @@ public class ScCellCursorObj extends TestCase {
         log.println("Creating a test environment");
 
         XSpreadsheets oSpreadsheets = ((XSpreadsheetDocument) UnoRuntime.queryInterface(
-                                               XSpreadsheetDocument.class, 
+                                               XSpreadsheetDocument.class,
                                                xSheetDoc)).getSheets();
 
         try {
             oSheet = (XSpreadsheet) AnyConverter.toObject(
-                             new Type(XSpreadsheet.class), 
+                             new Type(XSpreadsheet.class),
                              oSpreadsheets.getByName(
                                      oSpreadsheets.getElementNames()[0]));
 
             testRange = oSheet.getCellRangeByName("$A$1:$D$4");
 
             XSheetCellRange testSheetRange = (XSheetCellRange) UnoRuntime.queryInterface(
-                                                     XSheetCellRange.class, 
+                                                     XSheetCellRange.class,
                                                      testRange);
             oObj = oSheet.createCursorByRange(testSheetRange);
             oSheet.getCellByPosition(1, 1).setValue(1);
@@ -203,7 +203,7 @@ public class ScCellCursorObj extends TestCase {
 
         tEnv = new TestEnvironment(oObj);
 
-        tEnv.addObjRelation("CRDESC", 
+        tEnv.addObjRelation("CRDESC",
                             "Column and RowDescriptions can't be changed for this Object");
 
         tEnv.addObjRelation("SHEET", oSheet);
@@ -217,13 +217,13 @@ public class ScCellCursorObj extends TestCase {
         expectedResults[_XCellRangesQuery.QUERYROWDIFFERENCES] = "Sheet1.A2;Sheet1.C2";
         expectedResults[_XCellRangesQuery.QUERYVISIBLECELLS] = "Sheet1.A2";
         tEnv.addObjRelation("XCellRangesQuery.EXPECTEDRESULTS", expectedResults);
-        
-        tEnv.addObjRelation("NewData", 
-                            new Object[][] 
+
+        tEnv.addObjRelation("NewData",
+                            new Object[][]
         {
-            { "", "", "", "" }, 
-            { "", "2", "3", "4" }, 
-            { "", "2", "3", "4" }, 
+            { "", "", "", "" },
+            { "", "2", "3", "4" },
+            { "", "2", "3", "4" },
             { "", "2", "3", "4" }
         });
 
@@ -234,7 +234,7 @@ public class ScCellCursorObj extends TestCase {
         //Adding relation for util.XSortable
         final PrintWriter finalLog = log;
         final XCellRange oTable = testRange;
-        tEnv.addObjRelation("SORTCHECKER", 
+        tEnv.addObjRelation("SORTCHECKER",
                             new ifc.util._XSortable.XSortChecker() {
             PrintWriter out = finalLog;
 
@@ -253,7 +253,7 @@ public class ScCellCursorObj extends TestCase {
                 }
             }
 
-            public boolean checkSort(boolean isSortNumbering, 
+            public boolean checkSort(boolean isSortNumbering,
                                      boolean isSortAscending) {
                 out.println("Sort checking...");
 
@@ -277,16 +277,16 @@ public class ScCellCursorObj extends TestCase {
                         String[] vals = { value[0], value[1], value[2], value[3] };
                         res = ValueComparer.equalValue(vals, rightVal);
                         out.println("Expected 3, 4, 23, b");
-                        out.println("getting: " + value[0] + ", " + 
-                                        value[1] + ", " + value[2] + ", " + 
+                        out.println("getting: " + value[0] + ", " +
+                                        value[1] + ", " + value[2] + ", " +
                                         value[3]);
                     } else {
                         String[] rightVal = { "b", "23", "4", "3" };
                         String[] vals = { value[0], value[1], value[2], value[3] };
                         res = ValueComparer.equalValue(vals, rightVal);
                         out.println("Expected b, 23, 4, 3");
-                        out.println("getting: " + value[0] + ", " + 
-                                        value[1] + ", " + value[2] + ", " + 
+                        out.println("getting: " + value[0] + ", " +
+                                        value[1] + ", " + value[2] + ", " +
                                         value[3]);
                     }
                 } else {
@@ -294,15 +294,15 @@ public class ScCellCursorObj extends TestCase {
                         String[] rightVal = { "3", "4", "23", "b" };
                         res = ValueComparer.equalValue(value, rightVal);
                         out.println("Expected 3, 4, 23, b");
-                        out.println("getting: " + value[0] + ", " + 
-                                        value[1] + ", " + value[2] + ", " + 
+                        out.println("getting: " + value[0] + ", " +
+                                        value[1] + ", " + value[2] + ", " +
                                         value[3]);
                     } else {
                         String[] rightVal = { "b", "23", "4", "3" };
                         res = ValueComparer.equalValue(value, rightVal);
                         out.println("Expected b, 23, 4, 3");
-                        out.println("getting: " + value[0] + ", " + 
-                                        value[1] + ", " + value[2] + ", " + 
+                        out.println("getting: " + value[0] + ", " +
+                                        value[1] + ", " + value[2] + ", " +
                                         value[3]);
                     }
                 }

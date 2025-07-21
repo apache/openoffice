@@ -30,10 +30,10 @@ public class DocumentFactory<TokenType>
     {
         void RequestRepaint();
     }
-    
-    
-    
-    
+
+
+
+
     DocumentFactory (
         final LineContainer<TokenType> aLines,
         final IRepaintTarget aRepaintTarget)
@@ -46,9 +46,9 @@ public class DocumentFactory<TokenType>
         maCurrentGroup = null;
         StartNewLine();
     }
-    
-    
-    
+
+
+
 
     public void AddText (
         final String sText,
@@ -63,7 +63,7 @@ public class DocumentFactory<TokenType>
             if (sText.endsWith("\n"))
                 StartNewLine();
         }
-        
+
         if (mbIsGroupBeginPending)
         {
             maGroupStartStack.push(maCurrentGroup);
@@ -74,38 +74,38 @@ public class DocumentFactory<TokenType>
         else if (maCurrentGroup != null)
             aRun.SetGroupParent(maCurrentGroup);
         maLastRun = aRun;
-        
+
         maRepaintTarget.RequestRepaint();
     }
-    
 
-    
-    
+
+
+
     public void FinishText ()
     {
         StartNewLine();
     }
-    
-    
-    
-    
+
+
+
+
     public void BeginGroup()
     {
         mbIsGroupBeginPending = true;
     }
 
-    
-    
-    
+
+
+
     public void EndGroup ()
     {
         maCurrentGroup.SetGroupEnd(maLastRun);
         maCurrentGroup = maGroupStartStack.pop();
     }
-    
-    
-    
-    
+
+
+
+
 
     private void StartNewLine ()
     {
@@ -113,10 +113,10 @@ public class DocumentFactory<TokenType>
             maLines.AddLine(maCurrentLine);
         maCurrentLine = new Line<TokenType>();
     }
-    
-    
-    
-    
+
+
+
+
     private final LineContainer<TokenType> maLines;
     private final IRepaintTarget maRepaintTarget;
     private Line<TokenType> maCurrentLine;

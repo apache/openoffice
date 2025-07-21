@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -88,7 +88,7 @@ class PropertySetHelper
         {
             m_xPropertySet = UnoRuntime.queryInterface(XPropertySet.class, _aObj);
         }
-    
+
     /**
        get a property and don't convert it
        @param _sName the string name of the property
@@ -156,7 +156,7 @@ class PropertyHelper
 
 public class ReportDesignerTest
 {
-	
+
     String mTestDocumentPath;
 
 //    public String[] getTestMethodNames()
@@ -172,7 +172,7 @@ public class ReportDesignerTest
         int dummy = 0;
         // m_xXMultiServiceFactory = getMSF();
     }
-    
+
     @After public void after()
     {
         System.out.println("after");
@@ -203,21 +203,21 @@ public class ReportDesignerTest
 //                System.exit(0);
 //            }
 //        }
-    
-    
+
+
     private XDesktop m_xDesktop = null;
     public XDesktop getXDesktop()
         {
 
-            if (m_xDesktop == null) 
+            if (m_xDesktop == null)
             {
-                try 
+                try
                 {
                     XInterface xInterface = (XInterface) getMSF().createInstance( "com.sun.star.frame.Desktop" );
                     m_xDesktop = UnoRuntime.queryInterface(XDesktop.class, xInterface);
                     assertNotNull("Can't get XDesktop", m_xDesktop);
                 }
-                catch (com.sun.star.uno.Exception e) 
+                catch (com.sun.star.uno.Exception e)
                 {
                     System.out.println("ERROR: uno.Exception caught");
                     System.out.println("Message: " + e.getMessage());
@@ -225,7 +225,7 @@ public class ReportDesignerTest
             }
             return m_xDesktop;
         }
-            
+
     private void showElements(XNameAccess _xNameAccess)
         {
             if (_xNameAccess != null)
@@ -241,8 +241,8 @@ public class ReportDesignerTest
                 System.out.println("Warning: Given object is null.");
             }
         }
-        
-        
+
+
     private OfficeProvider m_aProvider = null;
 //    private void startOffice()
 //        {
@@ -265,7 +265,7 @@ public class ReportDesignerTest
 //                m_aProvider = null;
 //            }
 //        }
-        
+
     private String m_sMailAddress = null;
     private String m_sUPDMinor;
     private String m_sCWS_WORK_STAMP;
@@ -276,7 +276,7 @@ public class ReportDesignerTest
     @Test public void firsttest()
         {
             // convwatch.GlobalLogWriter.set(log);
-                    
+
             // -------------------- preconditions, try to find an office --------------------
 
 //                String sAppExecutionCommand = (String) param.get("AppExecutionCommand");
@@ -329,16 +329,16 @@ public class ReportDesignerTest
             // ------------------------------ Office shutdown ------------------------------
 //            stopOffice();
         }
-        
+
 // -----------------------------------------------------------------------------
     private void startTestForFile(String _sDocument, int _nType)
         {
             FileURL aFileURL = new FileURL(_sDocument);
             assertTrue("Test File doesn't '" + _sDocument + "'exist.", aFileURL.exists());
-            
+
             String sFileURL = _sDocument; // URLHelper.getFileURLFromSystemPath(_sDocument);
             System.out.println("File URL: " + sFileURL);
-                    
+
             XComponent xDocComponent = loadComponent(sFileURL, getXDesktop(), null);
             System.out.println("Load done");
             assertNotNull("Can't load document ", xDocComponent);
@@ -346,38 +346,38 @@ public class ReportDesignerTest
             // 	context = createUnoService("com.sun.star.sdb.DatabaseContext")
 //     oDataBase = context.getByName("hh")
 //     oDBDoc = oDataBase.DatabaseDocument
-// 
+//
 // 	dim args(1) as new com.sun.star.beans.PropertyValue
 // 	args(0).Name = "ActiveConnection"
 // 	args(0).Value = oDBDoc.getCurrentController().getPropertyValue("ActiveConnection")
 // 	reportContainer = oDBDoc.getReportDocuments()
 //     report = reportContainer.loadComponentFromURL("Report40","",0,args)
-                    
+
             try
             {
                 XInterface x = (XInterface)getMSF().createInstance("com.sun.star.sdb.DatabaseContext");
                 assertNotNull("can't create instance of com.sun.star.sdb.DatabaseContext", x);
                 System.out.println("createInstance com.sun.star.sdb.DatabaseContext done");
-                
+
                 XNameAccess xNameAccess = UnoRuntime.queryInterface(XNameAccess.class, x);
                 showElements(xNameAccess);
                 Object aObj = xNameAccess.getByName(sFileURL);
 //                    System.out.println("1");
-                
+
                     // PropertySetHelper aHelper = new PropertySetHelper(aObj);
                 XDocumentDataSource xDataSource = UnoRuntime.queryInterface(XDocumentDataSource.class, aObj);
 //                    Object aDatabaseDocmuent = aHelper.getPropertyValueAsObject("DatabaseDocument");
                 XOfficeDatabaseDocument xOfficeDBDoc = xDataSource.getDatabaseDocument();
-                
+
                 // XOfficeDatabaseDocument xOfficeDBDoc = (XOfficeDatabaseDocument)UnoRuntime.queryInterface(XOfficeDatabaseDocument.class, aDatabaseDocument);
                 assertNotNull("can't access DatabaseDocument", xOfficeDBDoc);
 //                    System.out.println("2");
-                
+
                 XModel xDBSource = UnoRuntime.queryInterface(XModel.class, xOfficeDBDoc);
                 Object aController = xDBSource.getCurrentController();
                 assertNotNull("Controller of xOfficeDatabaseDocument is empty!", aController);
 //                     System.out.println("3");
-                
+
                 XDatabaseDocumentUI aDBDocUI = UnoRuntime.queryInterface(XDatabaseDocumentUI.class, aController);
                 /* boolean isConnect = */
 // TODO: throws an exception in DEV300m78
@@ -391,28 +391,28 @@ public class ReportDesignerTest
 //                         System.out.println("false");
 //                     }
 //                     System.out.println("4");
-                
+
                 // aHelper = new PropertySetHelper(aController);
-                
+
                 // Object aActiveConnectionObj = aHelper.getPropertyValueAsObject("ActiveConnection");
-                Object aActiveConnectionObj = aDBDocUI.getActiveConnection(); 
+                Object aActiveConnectionObj = aDBDocUI.getActiveConnection();
                 assertNotNull("ActiveConnection is empty", aActiveConnectionObj);
 //                     System.out.println("5");
-                
+
                 XReportDocumentsSupplier xSupplier = UnoRuntime.queryInterface(XReportDocumentsSupplier.class, xOfficeDBDoc);
                 xNameAccess = xSupplier.getReportDocuments();
                 assertNotNull("xOfficeDatabaseDocument returns no Report Document", xNameAccess);
 //                     System.out.println("5");
-                
+
                 showElements(xNameAccess);
-                
+
                 ArrayList<PropertyValue> aPropertyList = new ArrayList<PropertyValue>();
-                
+
                 PropertyValue aActiveConnection = new PropertyValue();
                 aActiveConnection.Name = "ActiveConnection";
                 aActiveConnection.Value = aActiveConnectionObj;
                 aPropertyList.add(aActiveConnection);
-                
+
                 loadAndStoreReports(xNameAccess, aPropertyList, _nType);
                 createDBEntry(_nType);
             }
@@ -420,12 +420,12 @@ public class ReportDesignerTest
             {
                 fail("ERROR: Exception caught" + e.getMessage());
             }
-            
+
                 // String mTestDocumentPath = (String) param.get("TestDocumentPath");
                 // System.out.println("mTestDocumentPath: '" + mTestDocumentPath + "'");
                 // // workaround for issue using deprecated "DOCPTH" prop
                 // System.setProperty("DOCPTH", mTestDocumentPath);
-                    
+
                 // Close the document
                 closeComponent(xDocComponent);
         }
@@ -434,7 +434,7 @@ public class ReportDesignerTest
         {
             return getFileFormat(_nType);
         }
-    
+
 // -----------------------------------------------------------------------------
     private void createDBEntry(int _nType)
         {
@@ -461,7 +461,7 @@ public class ReportDesignerTest
             // DB.test();
             // System.exit(1);
         }
-    
+
     private void loadAndStoreReports(XNameAccess _xNameAccess, ArrayList _aPropertyList, int _nType)
         {
             if (_xNameAccess != null)
@@ -510,7 +510,7 @@ public class ReportDesignerTest
             }
             return sFileType;
         }
-    
+
     private String getOutputPath(int _nType)
         {
             String sOutputPath = util.utils.getOfficeTemp/*Dir*/(getMSF());// (String)param.get( convwatch.PropertyName.DOC_COMPARATOR_OUTPUT_PATH );
@@ -531,7 +531,7 @@ public class ReportDesignerTest
 
             return sOutputPath;
         }
-    
+
     /*
       store given _xComponent under the given Name in DOC_COMPARATOR_INPUTPATH
      */
@@ -548,7 +548,7 @@ public class ReportDesignerTest
 
             sOutputPath += _sName;
             sOutputPath += getFormatExtension(_nType);
-            
+
             String sOutputURL = URLHelper.getFileURLFromSystemPath(sOutputPath);
 
             ArrayList<PropertyValue> aPropertyList = new ArrayList<PropertyValue>(); // set some properties for storeAsURL
@@ -580,7 +580,7 @@ public class ReportDesignerTest
                 }
             }
         }
-    
+
     private XComponent loadComponent(String _sName, Object _xComponent, ArrayList _aPropertyList)
         {
             XComponent xDocComponent = null;
@@ -644,5 +644,5 @@ public class ReportDesignerTest
     }
 
     private static final OfficeConnection connection = new OfficeConnection();
-        
+
 }

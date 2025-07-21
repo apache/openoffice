@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 package fvt.uno.sw.paragraph;
@@ -60,7 +60,7 @@ public class ParagraphNumberingAndBulletCharacterStyle {
 	 * 3.set paragraph numbering bullet character style
 	 * 4.save and close the document
 	 * 5.reload the saved document and check the paragraph numbering bullet character style
-	 */	
+	 */
 	@Test
 	public void testNumberingBulletCharacterStyle_Rubies() throws Exception {
 
@@ -69,23 +69,23 @@ public class ParagraphNumberingAndBulletCharacterStyle {
 		xText.setString("we are Chinese,they are American.we are all living in one earth!Hello,world!Hello,world!Hello,world!Hello,world!Hello,world!Hello,world!" +
 				"Hello,world!Hello,world!");
 		//create cursor to select paragraph and formatting paragraph
-		XTextCursor xTextCursor = xText.createTextCursor();    
+		XTextCursor xTextCursor = xText.createTextCursor();
 		//create paragraph property set
 		XPropertySet xTextProps = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, xTextCursor);
 		//create document service factory
-		XMultiServiceFactory  xWriterFactory= (XMultiServiceFactory) UnoRuntime.queryInterface(XMultiServiceFactory.class, xTextDocument);		
+		XMultiServiceFactory  xWriterFactory= (XMultiServiceFactory) UnoRuntime.queryInterface(XMultiServiceFactory.class, xTextDocument);
 		//set numbering character
 		XIndexAccess xNumRule = (XIndexAccess) UnoRuntime.queryInterface(XIndexAccess.class,xWriterFactory.createInstance("com.sun.star.text.NumberingRules"));
 		PropertyValue[] propsRule = {new PropertyValue(),new PropertyValue()};
 		propsRule[0].Name = "NumberingType";
 		propsRule[0].Value = NumberingType.ARABIC;
 		propsRule[1].Name = "CharStyleName";
-		propsRule[1].Value = "Rubies";	
+		propsRule[1].Value = "Rubies";
 		XIndexReplace xReplaceRule = (XIndexReplace) UnoRuntime.queryInterface(XIndexReplace.class, xNumRule);
-		xReplaceRule.replaceByIndex(0, propsRule);  
+		xReplaceRule.replaceByIndex(0, propsRule);
 		//set paragraph numbering and bullet character
 		xTextProps.setPropertyValue("NumberingRules", xNumRule);
-		//save to odt 
+		//save to odt
 		XStorable xStorable_odt = (XStorable) UnoRuntime.queryInterface(XStorable.class, xTextDocument);
 		PropertyValue[] aStoreProperties_odt = new PropertyValue[2];
 		aStoreProperties_odt[0] = new PropertyValue();
@@ -95,7 +95,7 @@ public class ParagraphNumberingAndBulletCharacterStyle {
 		aStoreProperties_odt[1].Name = "FilterName";
 		aStoreProperties_odt[1].Value = "writer8";
 		xStorable_odt.storeToURL(FileUtil.getUrl(Testspace.getPath("output/test.odt")), aStoreProperties_odt);
-		//save to doc 
+		//save to doc
 		XStorable xStorable_doc = (XStorable) UnoRuntime.queryInterface(XStorable.class, xTextDocument);
 		PropertyValue[] aStoreProperties_doc = new PropertyValue[2];
 		aStoreProperties_doc[0] = new PropertyValue();
@@ -104,10 +104,10 @@ public class ParagraphNumberingAndBulletCharacterStyle {
 		aStoreProperties_doc[0].Value = true;
 		aStoreProperties_doc[1].Name = "FilterName";
 		aStoreProperties_doc[1].Value = "MS Word 97";
-		xStorable_doc.storeToURL(FileUtil.getUrl(Testspace.getPath("output/test.doc")), aStoreProperties_doc);	
+		xStorable_doc.storeToURL(FileUtil.getUrl(Testspace.getPath("output/test.doc")), aStoreProperties_doc);
 		app.closeDocument(xTextDocument);
 
-		//reopen the document 
+		//reopen the document
 		XTextDocument assertDocument_odt=(XTextDocument)UnoRuntime.queryInterface(XTextDocument.class, app.loadDocument(Testspace.getPath("output/test.odt")));
 		XPropertySet xCursorProps_Assert_odt = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, assertDocument_odt.getText().createTextCursor());
 		XIndexAccess xNumRule_assert_odt = (XIndexAccess) UnoRuntime.queryInterface(XIndexAccess.class, xCursorProps_Assert_odt.getPropertyValue("NumberingRules"));
@@ -119,7 +119,7 @@ public class ParagraphNumberingAndBulletCharacterStyle {
 		assertEquals("assert numbering and bullet","NumberingType",propsRule_assert_odt[11].Name);
 		assertEquals("assert numbering and bullet",NumberingType.ARABIC,propsRule_assert_odt[11].Value);
 
-		//reopen the document 
+		//reopen the document
 		XTextDocument assertDocument_doc=(XTextDocument)UnoRuntime.queryInterface(XTextDocument.class, app.loadDocument(Testspace.getPath("output/test.doc")));
 		XPropertySet xCursorProps_Assert_doc = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, assertDocument_doc.getText().createTextCursor());
 		XIndexAccess xNumRule_assert_doc = (XIndexAccess) UnoRuntime.queryInterface(XIndexAccess.class, xCursorProps_Assert_doc.getPropertyValue("NumberingRules"));
@@ -138,23 +138,23 @@ public class ParagraphNumberingAndBulletCharacterStyle {
 		xText.setString("we are Chinese,they are American.we are all living in one earth!Hello,world!Hello,world!Hello,world!Hello,world!Hello,world!Hello,world!" +
 				"Hello,world!Hello,world!");
 		//create cursor to select paragraph and formatting paragraph
-		XTextCursor xTextCursor = xText.createTextCursor();    
+		XTextCursor xTextCursor = xText.createTextCursor();
 		//create paragraph property set
 		XPropertySet xTextProps = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, xTextCursor);
 		//create document service factory
-		XMultiServiceFactory  xWriterFactory= (XMultiServiceFactory) UnoRuntime.queryInterface(XMultiServiceFactory.class, xTextDocument);		
+		XMultiServiceFactory  xWriterFactory= (XMultiServiceFactory) UnoRuntime.queryInterface(XMultiServiceFactory.class, xTextDocument);
 		//set numbering character
 		XIndexAccess xNumRule = (XIndexAccess) UnoRuntime.queryInterface(XIndexAccess.class,xWriterFactory.createInstance("com.sun.star.text.NumberingRules"));
 		PropertyValue[] propsRule = {new PropertyValue(),new PropertyValue()};
 		propsRule[0].Name = "NumberingType";
 		propsRule[0].Value = NumberingType.ARABIC;
 		propsRule[1].Name = "CharStyleName";
-		propsRule[1].Value = "Emphasis";	
+		propsRule[1].Value = "Emphasis";
 		XIndexReplace xReplaceRule = (XIndexReplace) UnoRuntime.queryInterface(XIndexReplace.class, xNumRule);
-		xReplaceRule.replaceByIndex(0, propsRule);  
+		xReplaceRule.replaceByIndex(0, propsRule);
 		//set paragraph numbering and bullet character
 		xTextProps.setPropertyValue("NumberingRules", xNumRule);
-		//save to odt 
+		//save to odt
 		XStorable xStorable_odt = (XStorable) UnoRuntime.queryInterface(XStorable.class, xTextDocument);
 		PropertyValue[] aStoreProperties_odt = new PropertyValue[2];
 		aStoreProperties_odt[0] = new PropertyValue();
@@ -164,7 +164,7 @@ public class ParagraphNumberingAndBulletCharacterStyle {
 		aStoreProperties_odt[1].Name = "FilterName";
 		aStoreProperties_odt[1].Value = "writer8";
 		xStorable_odt.storeToURL(FileUtil.getUrl(Testspace.getPath("output/test.odt")), aStoreProperties_odt);
-		//save to doc 
+		//save to doc
 		XStorable xStorable_doc = (XStorable) UnoRuntime.queryInterface(XStorable.class, xTextDocument);
 		PropertyValue[] aStoreProperties_doc = new PropertyValue[2];
 		aStoreProperties_doc[0] = new PropertyValue();
@@ -173,10 +173,10 @@ public class ParagraphNumberingAndBulletCharacterStyle {
 		aStoreProperties_doc[0].Value = true;
 		aStoreProperties_doc[1].Name = "FilterName";
 		aStoreProperties_doc[1].Value = "MS Word 97";
-		xStorable_doc.storeToURL(FileUtil.getUrl(Testspace.getPath("output/test.doc")), aStoreProperties_doc);	
+		xStorable_doc.storeToURL(FileUtil.getUrl(Testspace.getPath("output/test.doc")), aStoreProperties_doc);
 		app.closeDocument(xTextDocument);
 
-		//reopen the document 
+		//reopen the document
 		XTextDocument assertDocument_odt=(XTextDocument)UnoRuntime.queryInterface(XTextDocument.class, app.loadDocument(Testspace.getPath("output/test.odt")));
 		XPropertySet xCursorProps_Assert_odt = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, assertDocument_odt.getText().createTextCursor());
 		XIndexAccess xNumRule_assert_odt = (XIndexAccess) UnoRuntime.queryInterface(XIndexAccess.class, xCursorProps_Assert_odt.getPropertyValue("NumberingRules"));
@@ -188,7 +188,7 @@ public class ParagraphNumberingAndBulletCharacterStyle {
 		assertEquals("assert numbering and bullet","NumberingType",propsRule_assert_odt[11].Name);
 		assertEquals("assert numbering and bullet",NumberingType.ARABIC,propsRule_assert_odt[11].Value);
 
-		//reopen the document 
+		//reopen the document
 		XTextDocument assertDocument_doc=(XTextDocument)UnoRuntime.queryInterface(XTextDocument.class, app.loadDocument(Testspace.getPath("output/test.doc")));
 		XPropertySet xCursorProps_Assert_doc = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, assertDocument_doc.getText().createTextCursor());
 		XIndexAccess xNumRule_assert_doc = (XIndexAccess) UnoRuntime.queryInterface(XIndexAccess.class, xCursorProps_Assert_doc.getPropertyValue("NumberingRules"));
@@ -207,23 +207,23 @@ public class ParagraphNumberingAndBulletCharacterStyle {
 		xText.setString("we are Chinese,they are American.we are all living in one earth!Hello,world!Hello,world!Hello,world!Hello,world!Hello,world!Hello,world!" +
 				"Hello,world!Hello,world!");
 		//create cursor to select paragraph and formatting paragraph
-		XTextCursor xTextCursor = xText.createTextCursor();    
+		XTextCursor xTextCursor = xText.createTextCursor();
 		//create paragraph property set
 		XPropertySet xTextProps = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, xTextCursor);
 		//create document service factory
-		XMultiServiceFactory  xWriterFactory= (XMultiServiceFactory) UnoRuntime.queryInterface(XMultiServiceFactory.class, xTextDocument);		
+		XMultiServiceFactory  xWriterFactory= (XMultiServiceFactory) UnoRuntime.queryInterface(XMultiServiceFactory.class, xTextDocument);
 		//set numbering character
 		XIndexAccess xNumRule = (XIndexAccess) UnoRuntime.queryInterface(XIndexAccess.class,xWriterFactory.createInstance("com.sun.star.text.NumberingRules"));
 		PropertyValue[] propsRule = {new PropertyValue(),new PropertyValue()};
 		propsRule[0].Name = "NumberingType";
 		propsRule[0].Value = NumberingType.ARABIC;
 		propsRule[1].Name = "CharStyleName";
-		propsRule[1].Value = "Footnote Characters";	
+		propsRule[1].Value = "Footnote Characters";
 		XIndexReplace xReplaceRule = (XIndexReplace) UnoRuntime.queryInterface(XIndexReplace.class, xNumRule);
-		xReplaceRule.replaceByIndex(0, propsRule);  
+		xReplaceRule.replaceByIndex(0, propsRule);
 		//set paragraph numbering and bullet character
 		xTextProps.setPropertyValue("NumberingRules", xNumRule);
-		//save to odt 
+		//save to odt
 		XStorable xStorable_odt = (XStorable) UnoRuntime.queryInterface(XStorable.class, xTextDocument);
 		PropertyValue[] aStoreProperties_odt = new PropertyValue[2];
 		aStoreProperties_odt[0] = new PropertyValue();
@@ -233,7 +233,7 @@ public class ParagraphNumberingAndBulletCharacterStyle {
 		aStoreProperties_odt[1].Name = "FilterName";
 		aStoreProperties_odt[1].Value = "writer8";
 		xStorable_odt.storeToURL(FileUtil.getUrl(Testspace.getPath("output/test.odt")), aStoreProperties_odt);
-		//save to doc 
+		//save to doc
 		XStorable xStorable_doc = (XStorable) UnoRuntime.queryInterface(XStorable.class, xTextDocument);
 		PropertyValue[] aStoreProperties_doc = new PropertyValue[2];
 		aStoreProperties_doc[0] = new PropertyValue();
@@ -242,10 +242,10 @@ public class ParagraphNumberingAndBulletCharacterStyle {
 		aStoreProperties_doc[0].Value = true;
 		aStoreProperties_doc[1].Name = "FilterName";
 		aStoreProperties_doc[1].Value = "MS Word 97";
-		xStorable_doc.storeToURL(FileUtil.getUrl(Testspace.getPath("output/test.doc")), aStoreProperties_doc);	
+		xStorable_doc.storeToURL(FileUtil.getUrl(Testspace.getPath("output/test.doc")), aStoreProperties_doc);
 		app.closeDocument(xTextDocument);
 
-		//reopen the document 
+		//reopen the document
 		XTextDocument assertDocument_odt=(XTextDocument)UnoRuntime.queryInterface(XTextDocument.class, app.loadDocument(Testspace.getPath("output/test.odt")));
 		XPropertySet xCursorProps_Assert_odt = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, assertDocument_odt.getText().createTextCursor());
 		XIndexAccess xNumRule_assert_odt = (XIndexAccess) UnoRuntime.queryInterface(XIndexAccess.class, xCursorProps_Assert_odt.getPropertyValue("NumberingRules"));
@@ -257,7 +257,7 @@ public class ParagraphNumberingAndBulletCharacterStyle {
 		assertEquals("assert numbering and bullet","NumberingType",propsRule_assert_odt[11].Name);
 		assertEquals("assert numbering and bullet",NumberingType.ARABIC,propsRule_assert_odt[11].Value);
 
-		//reopen the document 
+		//reopen the document
 		XTextDocument assertDocument_doc=(XTextDocument)UnoRuntime.queryInterface(XTextDocument.class, app.loadDocument(Testspace.getPath("output/test.doc")));
 		XPropertySet xCursorProps_Assert_doc = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, assertDocument_doc.getText().createTextCursor());
 		XIndexAccess xNumRule_assert_doc = (XIndexAccess) UnoRuntime.queryInterface(XIndexAccess.class, xCursorProps_Assert_doc.getPropertyValue("NumberingRules"));
@@ -276,23 +276,23 @@ public class ParagraphNumberingAndBulletCharacterStyle {
 		xText.setString("we are Chinese,they are American.we are all living in one earth!Hello,world!Hello,world!Hello,world!Hello,world!Hello,world!Hello,world!" +
 				"Hello,world!Hello,world!");
 		//create cursor to select paragraph and formatting paragraph
-		XTextCursor xTextCursor = xText.createTextCursor();    
+		XTextCursor xTextCursor = xText.createTextCursor();
 		//create paragraph property set
 		XPropertySet xTextProps = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, xTextCursor);
 		//create document service factory
-		XMultiServiceFactory  xWriterFactory= (XMultiServiceFactory) UnoRuntime.queryInterface(XMultiServiceFactory.class, xTextDocument);		
+		XMultiServiceFactory  xWriterFactory= (XMultiServiceFactory) UnoRuntime.queryInterface(XMultiServiceFactory.class, xTextDocument);
 		//set numbering character
 		XIndexAccess xNumRule = (XIndexAccess) UnoRuntime.queryInterface(XIndexAccess.class,xWriterFactory.createInstance("com.sun.star.text.NumberingRules"));
 		PropertyValue[] propsRule = {new PropertyValue(),new PropertyValue()};
 		propsRule[0].Name = "NumberingType";
 		propsRule[0].Value = NumberingType.ARABIC;
 		propsRule[1].Name = "CharStyleName";
-		propsRule[1].Value = "Page Number";	
+		propsRule[1].Value = "Page Number";
 		XIndexReplace xReplaceRule = (XIndexReplace) UnoRuntime.queryInterface(XIndexReplace.class, xNumRule);
-		xReplaceRule.replaceByIndex(0, propsRule);  
+		xReplaceRule.replaceByIndex(0, propsRule);
 		//set paragraph numbering and bullet character
 		xTextProps.setPropertyValue("NumberingRules", xNumRule);
-		//save to odt 
+		//save to odt
 		XStorable xStorable_odt = (XStorable) UnoRuntime.queryInterface(XStorable.class, xTextDocument);
 		PropertyValue[] aStoreProperties_odt = new PropertyValue[2];
 		aStoreProperties_odt[0] = new PropertyValue();
@@ -302,7 +302,7 @@ public class ParagraphNumberingAndBulletCharacterStyle {
 		aStoreProperties_odt[1].Name = "FilterName";
 		aStoreProperties_odt[1].Value = "writer8";
 		xStorable_odt.storeToURL(FileUtil.getUrl(Testspace.getPath("output/test.odt")), aStoreProperties_odt);
-		//save to doc 
+		//save to doc
 		XStorable xStorable_doc = (XStorable) UnoRuntime.queryInterface(XStorable.class, xTextDocument);
 		PropertyValue[] aStoreProperties_doc = new PropertyValue[2];
 		aStoreProperties_doc[0] = new PropertyValue();
@@ -311,10 +311,10 @@ public class ParagraphNumberingAndBulletCharacterStyle {
 		aStoreProperties_doc[0].Value = true;
 		aStoreProperties_doc[1].Name = "FilterName";
 		aStoreProperties_doc[1].Value = "MS Word 97";
-		xStorable_doc.storeToURL(FileUtil.getUrl(Testspace.getPath("output/test.doc")), aStoreProperties_doc);	
+		xStorable_doc.storeToURL(FileUtil.getUrl(Testspace.getPath("output/test.doc")), aStoreProperties_doc);
 		app.closeDocument(xTextDocument);
 
-		//reopen the document 
+		//reopen the document
 		XTextDocument assertDocument_odt=(XTextDocument)UnoRuntime.queryInterface(XTextDocument.class, app.loadDocument(Testspace.getPath("output/test.odt")));
 		XPropertySet xCursorProps_Assert_odt = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, assertDocument_odt.getText().createTextCursor());
 		XIndexAccess xNumRule_assert_odt = (XIndexAccess) UnoRuntime.queryInterface(XIndexAccess.class, xCursorProps_Assert_odt.getPropertyValue("NumberingRules"));
@@ -326,7 +326,7 @@ public class ParagraphNumberingAndBulletCharacterStyle {
 		assertEquals("assert numbering and bullet","NumberingType",propsRule_assert_odt[11].Name);
 		assertEquals("assert numbering and bullet",NumberingType.ARABIC,propsRule_assert_odt[11].Value);
 
-		//reopen the document 
+		//reopen the document
 		XTextDocument assertDocument_doc=(XTextDocument)UnoRuntime.queryInterface(XTextDocument.class, app.loadDocument(Testspace.getPath("output/test.doc")));
 		XPropertySet xCursorProps_Assert_doc = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, assertDocument_doc.getText().createTextCursor());
 		XIndexAccess xNumRule_assert_doc = (XIndexAccess) UnoRuntime.queryInterface(XIndexAccess.class, xCursorProps_Assert_doc.getPropertyValue("NumberingRules"));
@@ -345,23 +345,23 @@ public class ParagraphNumberingAndBulletCharacterStyle {
 		xText.setString("we are Chinese,they are American.we are all living in one earth!Hello,world!Hello,world!Hello,world!Hello,world!Hello,world!Hello,world!" +
 				"Hello,world!Hello,world!");
 		//create cursor to select paragraph and formatting paragraph
-		XTextCursor xTextCursor = xText.createTextCursor();    
+		XTextCursor xTextCursor = xText.createTextCursor();
 		//create paragraph property set
 		XPropertySet xTextProps = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, xTextCursor);
 		//create document service factory
-		XMultiServiceFactory  xWriterFactory= (XMultiServiceFactory) UnoRuntime.queryInterface(XMultiServiceFactory.class, xTextDocument);		
+		XMultiServiceFactory  xWriterFactory= (XMultiServiceFactory) UnoRuntime.queryInterface(XMultiServiceFactory.class, xTextDocument);
 		//set numbering character
 		XIndexAccess xNumRule = (XIndexAccess) UnoRuntime.queryInterface(XIndexAccess.class,xWriterFactory.createInstance("com.sun.star.text.NumberingRules"));
 		PropertyValue[] propsRule = {new PropertyValue(),new PropertyValue()};
 		propsRule[0].Name = "NumberingType";
 		propsRule[0].Value = NumberingType.ARABIC;
 		propsRule[1].Name = "CharStyleName";
-		propsRule[1].Value = "Caption Characters";	
+		propsRule[1].Value = "Caption Characters";
 		XIndexReplace xReplaceRule = (XIndexReplace) UnoRuntime.queryInterface(XIndexReplace.class, xNumRule);
-		xReplaceRule.replaceByIndex(0, propsRule);  
+		xReplaceRule.replaceByIndex(0, propsRule);
 		//set paragraph numbering and bullet character
 		xTextProps.setPropertyValue("NumberingRules", xNumRule);
-		//save to odt 
+		//save to odt
 		XStorable xStorable_odt = (XStorable) UnoRuntime.queryInterface(XStorable.class, xTextDocument);
 		PropertyValue[] aStoreProperties_odt = new PropertyValue[2];
 		aStoreProperties_odt[0] = new PropertyValue();
@@ -371,7 +371,7 @@ public class ParagraphNumberingAndBulletCharacterStyle {
 		aStoreProperties_odt[1].Name = "FilterName";
 		aStoreProperties_odt[1].Value = "writer8";
 		xStorable_odt.storeToURL(FileUtil.getUrl(Testspace.getPath("output/test.odt")), aStoreProperties_odt);
-		//save to doc 
+		//save to doc
 		XStorable xStorable_doc = (XStorable) UnoRuntime.queryInterface(XStorable.class, xTextDocument);
 		PropertyValue[] aStoreProperties_doc = new PropertyValue[2];
 		aStoreProperties_doc[0] = new PropertyValue();
@@ -380,10 +380,10 @@ public class ParagraphNumberingAndBulletCharacterStyle {
 		aStoreProperties_doc[0].Value = true;
 		aStoreProperties_doc[1].Name = "FilterName";
 		aStoreProperties_doc[1].Value = "MS Word 97";
-		xStorable_doc.storeToURL(FileUtil.getUrl(Testspace.getPath("output/test.doc")), aStoreProperties_doc);	
+		xStorable_doc.storeToURL(FileUtil.getUrl(Testspace.getPath("output/test.doc")), aStoreProperties_doc);
 		app.closeDocument(xTextDocument);
 
-		//reopen the document 
+		//reopen the document
 		XTextDocument assertDocument_odt=(XTextDocument)UnoRuntime.queryInterface(XTextDocument.class, app.loadDocument(Testspace.getPath("output/test.odt")));
 		XPropertySet xCursorProps_Assert_odt = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, assertDocument_odt.getText().createTextCursor());
 		XIndexAccess xNumRule_assert_odt = (XIndexAccess) UnoRuntime.queryInterface(XIndexAccess.class, xCursorProps_Assert_odt.getPropertyValue("NumberingRules"));
@@ -395,7 +395,7 @@ public class ParagraphNumberingAndBulletCharacterStyle {
 		assertEquals("assert numbering and bullet","NumberingType",propsRule_assert_odt[11].Name);
 		assertEquals("assert numbering and bullet",NumberingType.ARABIC,propsRule_assert_odt[11].Value);
 
-		//reopen the document 
+		//reopen the document
 		XTextDocument assertDocument_doc=(XTextDocument)UnoRuntime.queryInterface(XTextDocument.class, app.loadDocument(Testspace.getPath("output/test.doc")));
 		XPropertySet xCursorProps_Assert_doc = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, assertDocument_doc.getText().createTextCursor());
 		XIndexAccess xNumRule_assert_doc = (XIndexAccess) UnoRuntime.queryInterface(XIndexAccess.class, xCursorProps_Assert_doc.getPropertyValue("NumberingRules"));
@@ -414,23 +414,23 @@ public class ParagraphNumberingAndBulletCharacterStyle {
 		xText.setString("we are Chinese,they are American.we are all living in one earth!Hello,world!Hello,world!Hello,world!Hello,world!Hello,world!Hello,world!" +
 				"Hello,world!Hello,world!");
 		//create cursor to select paragraph and formatting paragraph
-		XTextCursor xTextCursor = xText.createTextCursor();    
+		XTextCursor xTextCursor = xText.createTextCursor();
 		//create paragraph property set
 		XPropertySet xTextProps = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, xTextCursor);
 		//create document service factory
-		XMultiServiceFactory  xWriterFactory= (XMultiServiceFactory) UnoRuntime.queryInterface(XMultiServiceFactory.class, xTextDocument);		
+		XMultiServiceFactory  xWriterFactory= (XMultiServiceFactory) UnoRuntime.queryInterface(XMultiServiceFactory.class, xTextDocument);
 		//set numbering character
 		XIndexAccess xNumRule = (XIndexAccess) UnoRuntime.queryInterface(XIndexAccess.class,xWriterFactory.createInstance("com.sun.star.text.NumberingRules"));
 		PropertyValue[] propsRule = {new PropertyValue(),new PropertyValue()};
 		propsRule[0].Name = "NumberingType";
 		propsRule[0].Value = NumberingType.ARABIC;
 		propsRule[1].Name = "CharStyleName";
-		propsRule[1].Value = "Drop Caps";	
+		propsRule[1].Value = "Drop Caps";
 		XIndexReplace xReplaceRule = (XIndexReplace) UnoRuntime.queryInterface(XIndexReplace.class, xNumRule);
-		xReplaceRule.replaceByIndex(0, propsRule);  
+		xReplaceRule.replaceByIndex(0, propsRule);
 		//set paragraph numbering and bullet character
 		xTextProps.setPropertyValue("NumberingRules", xNumRule);
-		//save to odt 
+		//save to odt
 		XStorable xStorable_odt = (XStorable) UnoRuntime.queryInterface(XStorable.class, xTextDocument);
 		PropertyValue[] aStoreProperties_odt = new PropertyValue[2];
 		aStoreProperties_odt[0] = new PropertyValue();
@@ -440,7 +440,7 @@ public class ParagraphNumberingAndBulletCharacterStyle {
 		aStoreProperties_odt[1].Name = "FilterName";
 		aStoreProperties_odt[1].Value = "writer8";
 		xStorable_odt.storeToURL(FileUtil.getUrl(Testspace.getPath("output/test.odt")), aStoreProperties_odt);
-		//save to doc 
+		//save to doc
 		XStorable xStorable_doc = (XStorable) UnoRuntime.queryInterface(XStorable.class, xTextDocument);
 		PropertyValue[] aStoreProperties_doc = new PropertyValue[2];
 		aStoreProperties_doc[0] = new PropertyValue();
@@ -449,10 +449,10 @@ public class ParagraphNumberingAndBulletCharacterStyle {
 		aStoreProperties_doc[0].Value = true;
 		aStoreProperties_doc[1].Name = "FilterName";
 		aStoreProperties_doc[1].Value = "MS Word 97";
-		xStorable_doc.storeToURL(FileUtil.getUrl(Testspace.getPath("output/test.doc")), aStoreProperties_doc);	
+		xStorable_doc.storeToURL(FileUtil.getUrl(Testspace.getPath("output/test.doc")), aStoreProperties_doc);
 		app.closeDocument(xTextDocument);
 
-		//reopen the document 
+		//reopen the document
 		XTextDocument assertDocument_odt=(XTextDocument)UnoRuntime.queryInterface(XTextDocument.class, app.loadDocument(Testspace.getPath("output/test.odt")));
 		XPropertySet xCursorProps_Assert_odt = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, assertDocument_odt.getText().createTextCursor());
 		XIndexAccess xNumRule_assert_odt = (XIndexAccess) UnoRuntime.queryInterface(XIndexAccess.class, xCursorProps_Assert_odt.getPropertyValue("NumberingRules"));
@@ -464,7 +464,7 @@ public class ParagraphNumberingAndBulletCharacterStyle {
 		assertEquals("assert numbering and bullet","NumberingType",propsRule_assert_odt[11].Name);
 		assertEquals("assert numbering and bullet",NumberingType.ARABIC,propsRule_assert_odt[11].Value);
 
-		//reopen the document 
+		//reopen the document
 		XTextDocument assertDocument_doc=(XTextDocument)UnoRuntime.queryInterface(XTextDocument.class, app.loadDocument(Testspace.getPath("output/test.doc")));
 		XPropertySet xCursorProps_Assert_doc = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, assertDocument_doc.getText().createTextCursor());
 		XIndexAccess xNumRule_assert_doc = (XIndexAccess) UnoRuntime.queryInterface(XIndexAccess.class, xCursorProps_Assert_doc.getPropertyValue("NumberingRules"));
@@ -483,23 +483,23 @@ public class ParagraphNumberingAndBulletCharacterStyle {
 		xText.setString("we are Chinese,they are American.we are all living in one earth!Hello,world!Hello,world!Hello,world!Hello,world!Hello,world!Hello,world!" +
 				"Hello,world!Hello,world!");
 		//create cursor to select paragraph and formatting paragraph
-		XTextCursor xTextCursor = xText.createTextCursor();    
+		XTextCursor xTextCursor = xText.createTextCursor();
 		//create paragraph property set
 		XPropertySet xTextProps = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, xTextCursor);
 		//create document service factory
-		XMultiServiceFactory  xWriterFactory= (XMultiServiceFactory) UnoRuntime.queryInterface(XMultiServiceFactory.class, xTextDocument);		
+		XMultiServiceFactory  xWriterFactory= (XMultiServiceFactory) UnoRuntime.queryInterface(XMultiServiceFactory.class, xTextDocument);
 		//set numbering character
 		XIndexAccess xNumRule = (XIndexAccess) UnoRuntime.queryInterface(XIndexAccess.class,xWriterFactory.createInstance("com.sun.star.text.NumberingRules"));
 		PropertyValue[] propsRule = {new PropertyValue(),new PropertyValue()};
 		propsRule[0].Name = "NumberingType";
 		propsRule[0].Value = NumberingType.ARABIC;
 		propsRule[1].Name = "CharStyleName";
-		propsRule[1].Value = "Numbering Symbols";	
+		propsRule[1].Value = "Numbering Symbols";
 		XIndexReplace xReplaceRule = (XIndexReplace) UnoRuntime.queryInterface(XIndexReplace.class, xNumRule);
-		xReplaceRule.replaceByIndex(0, propsRule);  
+		xReplaceRule.replaceByIndex(0, propsRule);
 		//set paragraph numbering and bullet character
 		xTextProps.setPropertyValue("NumberingRules", xNumRule);
-		//save to odt 
+		//save to odt
 		XStorable xStorable_odt = (XStorable) UnoRuntime.queryInterface(XStorable.class, xTextDocument);
 		PropertyValue[] aStoreProperties_odt = new PropertyValue[2];
 		aStoreProperties_odt[0] = new PropertyValue();
@@ -509,7 +509,7 @@ public class ParagraphNumberingAndBulletCharacterStyle {
 		aStoreProperties_odt[1].Name = "FilterName";
 		aStoreProperties_odt[1].Value = "writer8";
 		xStorable_odt.storeToURL(FileUtil.getUrl(Testspace.getPath("output/test.odt")), aStoreProperties_odt);
-		//save to doc 
+		//save to doc
 		XStorable xStorable_doc = (XStorable) UnoRuntime.queryInterface(XStorable.class, xTextDocument);
 		PropertyValue[] aStoreProperties_doc = new PropertyValue[2];
 		aStoreProperties_doc[0] = new PropertyValue();
@@ -518,10 +518,10 @@ public class ParagraphNumberingAndBulletCharacterStyle {
 		aStoreProperties_doc[0].Value = true;
 		aStoreProperties_doc[1].Name = "FilterName";
 		aStoreProperties_doc[1].Value = "MS Word 97";
-		xStorable_doc.storeToURL(FileUtil.getUrl(Testspace.getPath("output/test.doc")), aStoreProperties_doc);	
+		xStorable_doc.storeToURL(FileUtil.getUrl(Testspace.getPath("output/test.doc")), aStoreProperties_doc);
 		app.closeDocument(xTextDocument);
 
-		//reopen the document 
+		//reopen the document
 		XTextDocument assertDocument_odt=(XTextDocument)UnoRuntime.queryInterface(XTextDocument.class, app.loadDocument(Testspace.getPath("output/test.odt")));
 		XPropertySet xCursorProps_Assert_odt = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, assertDocument_odt.getText().createTextCursor());
 		XIndexAccess xNumRule_assert_odt = (XIndexAccess) UnoRuntime.queryInterface(XIndexAccess.class, xCursorProps_Assert_odt.getPropertyValue("NumberingRules"));
@@ -533,7 +533,7 @@ public class ParagraphNumberingAndBulletCharacterStyle {
 		assertEquals("assert numbering and bullet","NumberingType",propsRule_assert_odt[11].Name);
 		assertEquals("assert numbering and bullet",NumberingType.ARABIC,propsRule_assert_odt[11].Value);
 
-		//reopen the document 
+		//reopen the document
 		XTextDocument assertDocument_doc=(XTextDocument)UnoRuntime.queryInterface(XTextDocument.class, app.loadDocument(Testspace.getPath("output/test.doc")));
 		XPropertySet xCursorProps_Assert_doc = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, assertDocument_doc.getText().createTextCursor());
 		XIndexAccess xNumRule_assert_doc = (XIndexAccess) UnoRuntime.queryInterface(XIndexAccess.class, xCursorProps_Assert_doc.getPropertyValue("NumberingRules"));
@@ -552,23 +552,23 @@ public class ParagraphNumberingAndBulletCharacterStyle {
 		xText.setString("we are Chinese,they are American.we are all living in one earth!Hello,world!Hello,world!Hello,world!Hello,world!Hello,world!Hello,world!" +
 				"Hello,world!Hello,world!");
 		//create cursor to select paragraph and formatting paragraph
-		XTextCursor xTextCursor = xText.createTextCursor();    
+		XTextCursor xTextCursor = xText.createTextCursor();
 		//create paragraph property set
 		XPropertySet xTextProps = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, xTextCursor);
 		//create document service factory
-		XMultiServiceFactory  xWriterFactory= (XMultiServiceFactory) UnoRuntime.queryInterface(XMultiServiceFactory.class, xTextDocument);		
+		XMultiServiceFactory  xWriterFactory= (XMultiServiceFactory) UnoRuntime.queryInterface(XMultiServiceFactory.class, xTextDocument);
 		//set numbering character
 		XIndexAccess xNumRule = (XIndexAccess) UnoRuntime.queryInterface(XIndexAccess.class,xWriterFactory.createInstance("com.sun.star.text.NumberingRules"));
 		PropertyValue[] propsRule = {new PropertyValue(),new PropertyValue()};
 		propsRule[0].Name = "NumberingType";
 		propsRule[0].Value = NumberingType.ARABIC;
 		propsRule[1].Name = "CharStyleName";
-		propsRule[1].Value = "Bullets";	
+		propsRule[1].Value = "Bullets";
 		XIndexReplace xReplaceRule = (XIndexReplace) UnoRuntime.queryInterface(XIndexReplace.class, xNumRule);
-		xReplaceRule.replaceByIndex(0, propsRule);  
+		xReplaceRule.replaceByIndex(0, propsRule);
 		//set paragraph numbering and bullet character
 		xTextProps.setPropertyValue("NumberingRules", xNumRule);
-		//save to odt 
+		//save to odt
 		XStorable xStorable_odt = (XStorable) UnoRuntime.queryInterface(XStorable.class, xTextDocument);
 		PropertyValue[] aStoreProperties_odt = new PropertyValue[2];
 		aStoreProperties_odt[0] = new PropertyValue();
@@ -578,7 +578,7 @@ public class ParagraphNumberingAndBulletCharacterStyle {
 		aStoreProperties_odt[1].Name = "FilterName";
 		aStoreProperties_odt[1].Value = "writer8";
 		xStorable_odt.storeToURL(FileUtil.getUrl(Testspace.getPath("output/test.odt")), aStoreProperties_odt);
-		//save to doc 
+		//save to doc
 		XStorable xStorable_doc = (XStorable) UnoRuntime.queryInterface(XStorable.class, xTextDocument);
 		PropertyValue[] aStoreProperties_doc = new PropertyValue[2];
 		aStoreProperties_doc[0] = new PropertyValue();
@@ -587,10 +587,10 @@ public class ParagraphNumberingAndBulletCharacterStyle {
 		aStoreProperties_doc[0].Value = true;
 		aStoreProperties_doc[1].Name = "FilterName";
 		aStoreProperties_doc[1].Value = "MS Word 97";
-		xStorable_doc.storeToURL(FileUtil.getUrl(Testspace.getPath("output/test.doc")), aStoreProperties_doc);	
+		xStorable_doc.storeToURL(FileUtil.getUrl(Testspace.getPath("output/test.doc")), aStoreProperties_doc);
 		app.closeDocument(xTextDocument);
 
-		//reopen the document 
+		//reopen the document
 		XTextDocument assertDocument_odt=(XTextDocument)UnoRuntime.queryInterface(XTextDocument.class, app.loadDocument(Testspace.getPath("output/test.odt")));
 		XPropertySet xCursorProps_Assert_odt = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, assertDocument_odt.getText().createTextCursor());
 		XIndexAccess xNumRule_assert_odt = (XIndexAccess) UnoRuntime.queryInterface(XIndexAccess.class, xCursorProps_Assert_odt.getPropertyValue("NumberingRules"));
@@ -602,7 +602,7 @@ public class ParagraphNumberingAndBulletCharacterStyle {
 		assertEquals("assert numbering and bullet","NumberingType",propsRule_assert_odt[11].Name);
 		assertEquals("assert numbering and bullet",NumberingType.ARABIC,propsRule_assert_odt[11].Value);
 
-		//reopen the document 
+		//reopen the document
 		XTextDocument assertDocument_doc=(XTextDocument)UnoRuntime.queryInterface(XTextDocument.class, app.loadDocument(Testspace.getPath("output/test.doc")));
 		XPropertySet xCursorProps_Assert_doc = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, assertDocument_doc.getText().createTextCursor());
 		XIndexAccess xNumRule_assert_doc = (XIndexAccess) UnoRuntime.queryInterface(XIndexAccess.class, xCursorProps_Assert_doc.getPropertyValue("NumberingRules"));
@@ -621,23 +621,23 @@ public class ParagraphNumberingAndBulletCharacterStyle {
 		xText.setString("we are Chinese,they are American.we are all living in one earth!Hello,world!Hello,world!Hello,world!Hello,world!Hello,world!Hello,world!" +
 				"Hello,world!Hello,world!");
 		//create cursor to select paragraph and formatting paragraph
-		XTextCursor xTextCursor = xText.createTextCursor();    
+		XTextCursor xTextCursor = xText.createTextCursor();
 		//create paragraph property set
 		XPropertySet xTextProps = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, xTextCursor);
 		//create document service factory
-		XMultiServiceFactory  xWriterFactory= (XMultiServiceFactory) UnoRuntime.queryInterface(XMultiServiceFactory.class, xTextDocument);		
+		XMultiServiceFactory  xWriterFactory= (XMultiServiceFactory) UnoRuntime.queryInterface(XMultiServiceFactory.class, xTextDocument);
 		//set numbering character
 		XIndexAccess xNumRule = (XIndexAccess) UnoRuntime.queryInterface(XIndexAccess.class,xWriterFactory.createInstance("com.sun.star.text.NumberingRules"));
 		PropertyValue[] propsRule = {new PropertyValue(),new PropertyValue()};
 		propsRule[0].Name = "NumberingType";
 		propsRule[0].Value = NumberingType.ARABIC;
 		propsRule[1].Name = "CharStyleName";
-		propsRule[1].Value = "Internet Link";	
+		propsRule[1].Value = "Internet Link";
 		XIndexReplace xReplaceRule = (XIndexReplace) UnoRuntime.queryInterface(XIndexReplace.class, xNumRule);
-		xReplaceRule.replaceByIndex(0, propsRule);  
+		xReplaceRule.replaceByIndex(0, propsRule);
 		//set paragraph numbering and bullet character
 		xTextProps.setPropertyValue("NumberingRules", xNumRule);
-		//save to odt 
+		//save to odt
 		XStorable xStorable_odt = (XStorable) UnoRuntime.queryInterface(XStorable.class, xTextDocument);
 		PropertyValue[] aStoreProperties_odt = new PropertyValue[2];
 		aStoreProperties_odt[0] = new PropertyValue();
@@ -647,7 +647,7 @@ public class ParagraphNumberingAndBulletCharacterStyle {
 		aStoreProperties_odt[1].Name = "FilterName";
 		aStoreProperties_odt[1].Value = "writer8";
 		xStorable_odt.storeToURL(FileUtil.getUrl(Testspace.getPath("output/test.odt")), aStoreProperties_odt);
-		//save to doc 
+		//save to doc
 		XStorable xStorable_doc = (XStorable) UnoRuntime.queryInterface(XStorable.class, xTextDocument);
 		PropertyValue[] aStoreProperties_doc = new PropertyValue[2];
 		aStoreProperties_doc[0] = new PropertyValue();
@@ -656,10 +656,10 @@ public class ParagraphNumberingAndBulletCharacterStyle {
 		aStoreProperties_doc[0].Value = true;
 		aStoreProperties_doc[1].Name = "FilterName";
 		aStoreProperties_doc[1].Value = "MS Word 97";
-		xStorable_doc.storeToURL(FileUtil.getUrl(Testspace.getPath("output/test.doc")), aStoreProperties_doc);	
+		xStorable_doc.storeToURL(FileUtil.getUrl(Testspace.getPath("output/test.doc")), aStoreProperties_doc);
 		app.closeDocument(xTextDocument);
 
-		//reopen the document 
+		//reopen the document
 		XTextDocument assertDocument_odt=(XTextDocument)UnoRuntime.queryInterface(XTextDocument.class, app.loadDocument(Testspace.getPath("output/test.odt")));
 		XPropertySet xCursorProps_Assert_odt = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, assertDocument_odt.getText().createTextCursor());
 		XIndexAccess xNumRule_assert_odt = (XIndexAccess) UnoRuntime.queryInterface(XIndexAccess.class, xCursorProps_Assert_odt.getPropertyValue("NumberingRules"));
@@ -671,7 +671,7 @@ public class ParagraphNumberingAndBulletCharacterStyle {
 		assertEquals("assert numbering and bullet","NumberingType",propsRule_assert_odt[11].Name);
 		assertEquals("assert numbering and bullet",NumberingType.ARABIC,propsRule_assert_odt[11].Value);
 
-		//reopen the document 
+		//reopen the document
 		XTextDocument assertDocument_doc=(XTextDocument)UnoRuntime.queryInterface(XTextDocument.class, app.loadDocument(Testspace.getPath("output/test.doc")));
 		XPropertySet xCursorProps_Assert_doc = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, assertDocument_doc.getText().createTextCursor());
 		XIndexAccess xNumRule_assert_doc = (XIndexAccess) UnoRuntime.queryInterface(XIndexAccess.class, xCursorProps_Assert_doc.getPropertyValue("NumberingRules"));
@@ -690,23 +690,23 @@ public class ParagraphNumberingAndBulletCharacterStyle {
 		xText.setString("we are Chinese,they are American.we are all living in one earth!Hello,world!Hello,world!Hello,world!Hello,world!Hello,world!Hello,world!" +
 				"Hello,world!Hello,world!");
 		//create cursor to select paragraph and formatting paragraph
-		XTextCursor xTextCursor = xText.createTextCursor();    
+		XTextCursor xTextCursor = xText.createTextCursor();
 		//create paragraph property set
 		XPropertySet xTextProps = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, xTextCursor);
 		//create document service factory
-		XMultiServiceFactory  xWriterFactory= (XMultiServiceFactory) UnoRuntime.queryInterface(XMultiServiceFactory.class, xTextDocument);		
+		XMultiServiceFactory  xWriterFactory= (XMultiServiceFactory) UnoRuntime.queryInterface(XMultiServiceFactory.class, xTextDocument);
 		//set numbering character
 		XIndexAccess xNumRule = (XIndexAccess) UnoRuntime.queryInterface(XIndexAccess.class,xWriterFactory.createInstance("com.sun.star.text.NumberingRules"));
 		PropertyValue[] propsRule = {new PropertyValue(),new PropertyValue()};
 		propsRule[0].Name = "NumberingType";
 		propsRule[0].Value = NumberingType.ARABIC;
 		propsRule[1].Name = "CharStyleName";
-		propsRule[1].Value = "Visited Internet Link";	
+		propsRule[1].Value = "Visited Internet Link";
 		XIndexReplace xReplaceRule = (XIndexReplace) UnoRuntime.queryInterface(XIndexReplace.class, xNumRule);
-		xReplaceRule.replaceByIndex(0, propsRule);  
+		xReplaceRule.replaceByIndex(0, propsRule);
 		//set paragraph numbering and bullet character
 		xTextProps.setPropertyValue("NumberingRules", xNumRule);
-		//save to odt 
+		//save to odt
 		XStorable xStorable_odt = (XStorable) UnoRuntime.queryInterface(XStorable.class, xTextDocument);
 		PropertyValue[] aStoreProperties_odt = new PropertyValue[2];
 		aStoreProperties_odt[0] = new PropertyValue();
@@ -716,7 +716,7 @@ public class ParagraphNumberingAndBulletCharacterStyle {
 		aStoreProperties_odt[1].Name = "FilterName";
 		aStoreProperties_odt[1].Value = "writer8";
 		xStorable_odt.storeToURL(FileUtil.getUrl(Testspace.getPath("output/test.odt")), aStoreProperties_odt);
-		//save to doc 
+		//save to doc
 		XStorable xStorable_doc = (XStorable) UnoRuntime.queryInterface(XStorable.class, xTextDocument);
 		PropertyValue[] aStoreProperties_doc = new PropertyValue[2];
 		aStoreProperties_doc[0] = new PropertyValue();
@@ -725,10 +725,10 @@ public class ParagraphNumberingAndBulletCharacterStyle {
 		aStoreProperties_doc[0].Value = true;
 		aStoreProperties_doc[1].Name = "FilterName";
 		aStoreProperties_doc[1].Value = "MS Word 97";
-		xStorable_doc.storeToURL(FileUtil.getUrl(Testspace.getPath("output/test.doc")), aStoreProperties_doc);	
+		xStorable_doc.storeToURL(FileUtil.getUrl(Testspace.getPath("output/test.doc")), aStoreProperties_doc);
 		app.closeDocument(xTextDocument);
 
-		//reopen the document 
+		//reopen the document
 		XTextDocument assertDocument_odt=(XTextDocument)UnoRuntime.queryInterface(XTextDocument.class, app.loadDocument(Testspace.getPath("output/test.odt")));
 		XPropertySet xCursorProps_Assert_odt = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, assertDocument_odt.getText().createTextCursor());
 		XIndexAccess xNumRule_assert_odt = (XIndexAccess) UnoRuntime.queryInterface(XIndexAccess.class, xCursorProps_Assert_odt.getPropertyValue("NumberingRules"));
@@ -740,7 +740,7 @@ public class ParagraphNumberingAndBulletCharacterStyle {
 		assertEquals("assert numbering and bullet","NumberingType",propsRule_assert_odt[11].Name);
 		assertEquals("assert numbering and bullet",NumberingType.ARABIC,propsRule_assert_odt[11].Value);
 
-		//reopen the document 
+		//reopen the document
 		XTextDocument assertDocument_doc=(XTextDocument)UnoRuntime.queryInterface(XTextDocument.class, app.loadDocument(Testspace.getPath("output/test.doc")));
 		XPropertySet xCursorProps_Assert_doc = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, assertDocument_doc.getText().createTextCursor());
 		XIndexAccess xNumRule_assert_doc = (XIndexAccess) UnoRuntime.queryInterface(XIndexAccess.class, xCursorProps_Assert_doc.getPropertyValue("NumberingRules"));
@@ -759,23 +759,23 @@ public class ParagraphNumberingAndBulletCharacterStyle {
 		xText.setString("we are Chinese,they are American.we are all living in one earth!Hello,world!Hello,world!Hello,world!Hello,world!Hello,world!Hello,world!" +
 				"Hello,world!Hello,world!");
 		//create cursor to select paragraph and formatting paragraph
-		XTextCursor xTextCursor = xText.createTextCursor();    
+		XTextCursor xTextCursor = xText.createTextCursor();
 		//create paragraph property set
 		XPropertySet xTextProps = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, xTextCursor);
 		//create document service factory
-		XMultiServiceFactory  xWriterFactory= (XMultiServiceFactory) UnoRuntime.queryInterface(XMultiServiceFactory.class, xTextDocument);		
+		XMultiServiceFactory  xWriterFactory= (XMultiServiceFactory) UnoRuntime.queryInterface(XMultiServiceFactory.class, xTextDocument);
 		//set numbering character
 		XIndexAccess xNumRule = (XIndexAccess) UnoRuntime.queryInterface(XIndexAccess.class,xWriterFactory.createInstance("com.sun.star.text.NumberingRules"));
 		PropertyValue[] propsRule = {new PropertyValue(),new PropertyValue()};
 		propsRule[0].Name = "NumberingType";
 		propsRule[0].Value = NumberingType.ARABIC;
 		propsRule[1].Name = "CharStyleName";
-		propsRule[1].Value = "Placeholder";	
+		propsRule[1].Value = "Placeholder";
 		XIndexReplace xReplaceRule = (XIndexReplace) UnoRuntime.queryInterface(XIndexReplace.class, xNumRule);
-		xReplaceRule.replaceByIndex(0, propsRule);  
+		xReplaceRule.replaceByIndex(0, propsRule);
 		//set paragraph numbering and bullet character
 		xTextProps.setPropertyValue("NumberingRules", xNumRule);
-		//save to odt 
+		//save to odt
 		XStorable xStorable_odt = (XStorable) UnoRuntime.queryInterface(XStorable.class, xTextDocument);
 		PropertyValue[] aStoreProperties_odt = new PropertyValue[2];
 		aStoreProperties_odt[0] = new PropertyValue();
@@ -785,7 +785,7 @@ public class ParagraphNumberingAndBulletCharacterStyle {
 		aStoreProperties_odt[1].Name = "FilterName";
 		aStoreProperties_odt[1].Value = "writer8";
 		xStorable_odt.storeToURL(FileUtil.getUrl(Testspace.getPath("output/test.odt")), aStoreProperties_odt);
-		//save to doc 
+		//save to doc
 		XStorable xStorable_doc = (XStorable) UnoRuntime.queryInterface(XStorable.class, xTextDocument);
 		PropertyValue[] aStoreProperties_doc = new PropertyValue[2];
 		aStoreProperties_doc[0] = new PropertyValue();
@@ -794,10 +794,10 @@ public class ParagraphNumberingAndBulletCharacterStyle {
 		aStoreProperties_doc[0].Value = true;
 		aStoreProperties_doc[1].Name = "FilterName";
 		aStoreProperties_doc[1].Value = "MS Word 97";
-		xStorable_doc.storeToURL(FileUtil.getUrl(Testspace.getPath("output/test.doc")), aStoreProperties_doc);	
+		xStorable_doc.storeToURL(FileUtil.getUrl(Testspace.getPath("output/test.doc")), aStoreProperties_doc);
 		app.closeDocument(xTextDocument);
 
-		//reopen the document 
+		//reopen the document
 		XTextDocument assertDocument_odt=(XTextDocument)UnoRuntime.queryInterface(XTextDocument.class, app.loadDocument(Testspace.getPath("output/test.odt")));
 		XPropertySet xCursorProps_Assert_odt = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, assertDocument_odt.getText().createTextCursor());
 		XIndexAccess xNumRule_assert_odt = (XIndexAccess) UnoRuntime.queryInterface(XIndexAccess.class, xCursorProps_Assert_odt.getPropertyValue("NumberingRules"));
@@ -809,7 +809,7 @@ public class ParagraphNumberingAndBulletCharacterStyle {
 		assertEquals("assert numbering and bullet","NumberingType",propsRule_assert_odt[11].Name);
 		assertEquals("assert numbering and bullet",NumberingType.ARABIC,propsRule_assert_odt[11].Value);
 
-		//reopen the document 
+		//reopen the document
 		XTextDocument assertDocument_doc=(XTextDocument)UnoRuntime.queryInterface(XTextDocument.class, app.loadDocument(Testspace.getPath("output/test.doc")));
 		XPropertySet xCursorProps_Assert_doc = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, assertDocument_doc.getText().createTextCursor());
 		XIndexAccess xNumRule_assert_doc = (XIndexAccess) UnoRuntime.queryInterface(XIndexAccess.class, xCursorProps_Assert_doc.getPropertyValue("NumberingRules"));
@@ -828,23 +828,23 @@ public class ParagraphNumberingAndBulletCharacterStyle {
 		xText.setString("we are Chinese,they are American.we are all living in one earth!Hello,world!Hello,world!Hello,world!Hello,world!Hello,world!Hello,world!" +
 				"Hello,world!Hello,world!");
 		//create cursor to select paragraph and formatting paragraph
-		XTextCursor xTextCursor = xText.createTextCursor();    
+		XTextCursor xTextCursor = xText.createTextCursor();
 		//create paragraph property set
 		XPropertySet xTextProps = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, xTextCursor);
 		//create document service factory
-		XMultiServiceFactory  xWriterFactory= (XMultiServiceFactory) UnoRuntime.queryInterface(XMultiServiceFactory.class, xTextDocument);		
+		XMultiServiceFactory  xWriterFactory= (XMultiServiceFactory) UnoRuntime.queryInterface(XMultiServiceFactory.class, xTextDocument);
 		//set numbering character
 		XIndexAccess xNumRule = (XIndexAccess) UnoRuntime.queryInterface(XIndexAccess.class,xWriterFactory.createInstance("com.sun.star.text.NumberingRules"));
 		PropertyValue[] propsRule = {new PropertyValue(),new PropertyValue()};
 		propsRule[0].Name = "NumberingType";
 		propsRule[0].Value = NumberingType.ARABIC;
 		propsRule[1].Name = "CharStyleName";
-		propsRule[1].Value = "Index Link";	
+		propsRule[1].Value = "Index Link";
 		XIndexReplace xReplaceRule = (XIndexReplace) UnoRuntime.queryInterface(XIndexReplace.class, xNumRule);
-		xReplaceRule.replaceByIndex(0, propsRule);  
+		xReplaceRule.replaceByIndex(0, propsRule);
 		//set paragraph numbering and bullet character
 		xTextProps.setPropertyValue("NumberingRules", xNumRule);
-		//save to odt 
+		//save to odt
 		XStorable xStorable_odt = (XStorable) UnoRuntime.queryInterface(XStorable.class, xTextDocument);
 		PropertyValue[] aStoreProperties_odt = new PropertyValue[2];
 		aStoreProperties_odt[0] = new PropertyValue();
@@ -854,7 +854,7 @@ public class ParagraphNumberingAndBulletCharacterStyle {
 		aStoreProperties_odt[1].Name = "FilterName";
 		aStoreProperties_odt[1].Value = "writer8";
 		xStorable_odt.storeToURL(FileUtil.getUrl(Testspace.getPath("output/test.odt")), aStoreProperties_odt);
-		//save to doc 
+		//save to doc
 		XStorable xStorable_doc = (XStorable) UnoRuntime.queryInterface(XStorable.class, xTextDocument);
 		PropertyValue[] aStoreProperties_doc = new PropertyValue[2];
 		aStoreProperties_doc[0] = new PropertyValue();
@@ -863,10 +863,10 @@ public class ParagraphNumberingAndBulletCharacterStyle {
 		aStoreProperties_doc[0].Value = true;
 		aStoreProperties_doc[1].Name = "FilterName";
 		aStoreProperties_doc[1].Value = "MS Word 97";
-		xStorable_doc.storeToURL(FileUtil.getUrl(Testspace.getPath("output/test.doc")), aStoreProperties_doc);	
+		xStorable_doc.storeToURL(FileUtil.getUrl(Testspace.getPath("output/test.doc")), aStoreProperties_doc);
 		app.closeDocument(xTextDocument);
 
-		//reopen the document 
+		//reopen the document
 		XTextDocument assertDocument_odt=(XTextDocument)UnoRuntime.queryInterface(XTextDocument.class, app.loadDocument(Testspace.getPath("output/test.odt")));
 		XPropertySet xCursorProps_Assert_odt = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, assertDocument_odt.getText().createTextCursor());
 		XIndexAccess xNumRule_assert_odt = (XIndexAccess) UnoRuntime.queryInterface(XIndexAccess.class, xCursorProps_Assert_odt.getPropertyValue("NumberingRules"));
@@ -878,7 +878,7 @@ public class ParagraphNumberingAndBulletCharacterStyle {
 		assertEquals("assert numbering and bullet","NumberingType",propsRule_assert_odt[11].Name);
 		assertEquals("assert numbering and bullet",NumberingType.ARABIC,propsRule_assert_odt[11].Value);
 
-		//reopen the document 
+		//reopen the document
 		XTextDocument assertDocument_doc=(XTextDocument)UnoRuntime.queryInterface(XTextDocument.class, app.loadDocument(Testspace.getPath("output/test.doc")));
 		XPropertySet xCursorProps_Assert_doc = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, assertDocument_doc.getText().createTextCursor());
 		XIndexAccess xNumRule_assert_doc = (XIndexAccess) UnoRuntime.queryInterface(XIndexAccess.class, xCursorProps_Assert_doc.getPropertyValue("NumberingRules"));
@@ -897,23 +897,23 @@ public class ParagraphNumberingAndBulletCharacterStyle {
 		xText.setString("we are Chinese,they are American.we are all living in one earth!Hello,world!Hello,world!Hello,world!Hello,world!Hello,world!Hello,world!" +
 				"Hello,world!Hello,world!");
 		//create cursor to select paragraph and formatting paragraph
-		XTextCursor xTextCursor = xText.createTextCursor();    
+		XTextCursor xTextCursor = xText.createTextCursor();
 		//create paragraph property set
 		XPropertySet xTextProps = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, xTextCursor);
 		//create document service factory
-		XMultiServiceFactory  xWriterFactory= (XMultiServiceFactory) UnoRuntime.queryInterface(XMultiServiceFactory.class, xTextDocument);		
+		XMultiServiceFactory  xWriterFactory= (XMultiServiceFactory) UnoRuntime.queryInterface(XMultiServiceFactory.class, xTextDocument);
 		//set numbering character
 		XIndexAccess xNumRule = (XIndexAccess) UnoRuntime.queryInterface(XIndexAccess.class,xWriterFactory.createInstance("com.sun.star.text.NumberingRules"));
 		PropertyValue[] propsRule = {new PropertyValue(),new PropertyValue()};
 		propsRule[0].Name = "NumberingType";
 		propsRule[0].Value = NumberingType.ARABIC;
 		propsRule[1].Name = "CharStyleName";
-		propsRule[1].Value = "Endnote Characters";	
+		propsRule[1].Value = "Endnote Characters";
 		XIndexReplace xReplaceRule = (XIndexReplace) UnoRuntime.queryInterface(XIndexReplace.class, xNumRule);
-		xReplaceRule.replaceByIndex(0, propsRule);  
+		xReplaceRule.replaceByIndex(0, propsRule);
 		//set paragraph numbering and bullet character
 		xTextProps.setPropertyValue("NumberingRules", xNumRule);
-		//save to odt 
+		//save to odt
 		XStorable xStorable_odt = (XStorable) UnoRuntime.queryInterface(XStorable.class, xTextDocument);
 		PropertyValue[] aStoreProperties_odt = new PropertyValue[2];
 		aStoreProperties_odt[0] = new PropertyValue();
@@ -923,7 +923,7 @@ public class ParagraphNumberingAndBulletCharacterStyle {
 		aStoreProperties_odt[1].Name = "FilterName";
 		aStoreProperties_odt[1].Value = "writer8";
 		xStorable_odt.storeToURL(FileUtil.getUrl(Testspace.getPath("output/test.odt")), aStoreProperties_odt);
-		//save to doc 
+		//save to doc
 		XStorable xStorable_doc = (XStorable) UnoRuntime.queryInterface(XStorable.class, xTextDocument);
 		PropertyValue[] aStoreProperties_doc = new PropertyValue[2];
 		aStoreProperties_doc[0] = new PropertyValue();
@@ -932,10 +932,10 @@ public class ParagraphNumberingAndBulletCharacterStyle {
 		aStoreProperties_doc[0].Value = true;
 		aStoreProperties_doc[1].Name = "FilterName";
 		aStoreProperties_doc[1].Value = "MS Word 97";
-		xStorable_doc.storeToURL(FileUtil.getUrl(Testspace.getPath("output/test.doc")), aStoreProperties_doc);	
+		xStorable_doc.storeToURL(FileUtil.getUrl(Testspace.getPath("output/test.doc")), aStoreProperties_doc);
 		app.closeDocument(xTextDocument);
 
-		//reopen the document 
+		//reopen the document
 		XTextDocument assertDocument_odt=(XTextDocument)UnoRuntime.queryInterface(XTextDocument.class, app.loadDocument(Testspace.getPath("output/test.odt")));
 		XPropertySet xCursorProps_Assert_odt = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, assertDocument_odt.getText().createTextCursor());
 		XIndexAccess xNumRule_assert_odt = (XIndexAccess) UnoRuntime.queryInterface(XIndexAccess.class, xCursorProps_Assert_odt.getPropertyValue("NumberingRules"));
@@ -947,7 +947,7 @@ public class ParagraphNumberingAndBulletCharacterStyle {
 		assertEquals("assert numbering and bullet","NumberingType",propsRule_assert_odt[11].Name);
 		assertEquals("assert numbering and bullet",NumberingType.ARABIC,propsRule_assert_odt[11].Value);
 
-		//reopen the document 
+		//reopen the document
 		XTextDocument assertDocument_doc=(XTextDocument)UnoRuntime.queryInterface(XTextDocument.class, app.loadDocument(Testspace.getPath("output/test.doc")));
 		XPropertySet xCursorProps_Assert_doc = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, assertDocument_doc.getText().createTextCursor());
 		XIndexAccess xNumRule_assert_doc = (XIndexAccess) UnoRuntime.queryInterface(XIndexAccess.class, xCursorProps_Assert_doc.getPropertyValue("NumberingRules"));
@@ -966,23 +966,23 @@ public class ParagraphNumberingAndBulletCharacterStyle {
 		xText.setString("we are Chinese,they are American.we are all living in one earth!Hello,world!Hello,world!Hello,world!Hello,world!Hello,world!Hello,world!" +
 				"Hello,world!Hello,world!");
 		//create cursor to select paragraph and formatting paragraph
-		XTextCursor xTextCursor = xText.createTextCursor();    
+		XTextCursor xTextCursor = xText.createTextCursor();
 		//create paragraph property set
 		XPropertySet xTextProps = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, xTextCursor);
 		//create document service factory
-		XMultiServiceFactory  xWriterFactory= (XMultiServiceFactory) UnoRuntime.queryInterface(XMultiServiceFactory.class, xTextDocument);		
+		XMultiServiceFactory  xWriterFactory= (XMultiServiceFactory) UnoRuntime.queryInterface(XMultiServiceFactory.class, xTextDocument);
 		//set numbering character
 		XIndexAccess xNumRule = (XIndexAccess) UnoRuntime.queryInterface(XIndexAccess.class,xWriterFactory.createInstance("com.sun.star.text.NumberingRules"));
 		PropertyValue[] propsRule = {new PropertyValue(),new PropertyValue()};
 		propsRule[0].Name = "NumberingType";
 		propsRule[0].Value = NumberingType.ARABIC;
 		propsRule[1].Name = "CharStyleName";
-		propsRule[1].Value = "Line numbering";	
+		propsRule[1].Value = "Line numbering";
 		XIndexReplace xReplaceRule = (XIndexReplace) UnoRuntime.queryInterface(XIndexReplace.class, xNumRule);
-		xReplaceRule.replaceByIndex(0, propsRule);  
+		xReplaceRule.replaceByIndex(0, propsRule);
 		//set paragraph numbering and bullet character
 		xTextProps.setPropertyValue("NumberingRules", xNumRule);
-		//save to odt 
+		//save to odt
 		XStorable xStorable_odt = (XStorable) UnoRuntime.queryInterface(XStorable.class, xTextDocument);
 		PropertyValue[] aStoreProperties_odt = new PropertyValue[2];
 		aStoreProperties_odt[0] = new PropertyValue();
@@ -992,7 +992,7 @@ public class ParagraphNumberingAndBulletCharacterStyle {
 		aStoreProperties_odt[1].Name = "FilterName";
 		aStoreProperties_odt[1].Value = "writer8";
 		xStorable_odt.storeToURL(FileUtil.getUrl(Testspace.getPath("output/test.odt")), aStoreProperties_odt);
-		//save to doc 
+		//save to doc
 		XStorable xStorable_doc = (XStorable) UnoRuntime.queryInterface(XStorable.class, xTextDocument);
 		PropertyValue[] aStoreProperties_doc = new PropertyValue[2];
 		aStoreProperties_doc[0] = new PropertyValue();
@@ -1001,10 +1001,10 @@ public class ParagraphNumberingAndBulletCharacterStyle {
 		aStoreProperties_doc[0].Value = true;
 		aStoreProperties_doc[1].Name = "FilterName";
 		aStoreProperties_doc[1].Value = "MS Word 97";
-		xStorable_doc.storeToURL(FileUtil.getUrl(Testspace.getPath("output/test.doc")), aStoreProperties_doc);	
+		xStorable_doc.storeToURL(FileUtil.getUrl(Testspace.getPath("output/test.doc")), aStoreProperties_doc);
 		app.closeDocument(xTextDocument);
 
-		//reopen the document 
+		//reopen the document
 		XTextDocument assertDocument_odt=(XTextDocument)UnoRuntime.queryInterface(XTextDocument.class, app.loadDocument(Testspace.getPath("output/test.odt")));
 		XPropertySet xCursorProps_Assert_odt = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, assertDocument_odt.getText().createTextCursor());
 		XIndexAccess xNumRule_assert_odt = (XIndexAccess) UnoRuntime.queryInterface(XIndexAccess.class, xCursorProps_Assert_odt.getPropertyValue("NumberingRules"));
@@ -1016,7 +1016,7 @@ public class ParagraphNumberingAndBulletCharacterStyle {
 		assertEquals("assert numbering and bullet","NumberingType",propsRule_assert_odt[11].Name);
 		assertEquals("assert numbering and bullet",NumberingType.ARABIC,propsRule_assert_odt[11].Value);
 
-		//reopen the document 
+		//reopen the document
 		XTextDocument assertDocument_doc=(XTextDocument)UnoRuntime.queryInterface(XTextDocument.class, app.loadDocument(Testspace.getPath("output/test.doc")));
 		XPropertySet xCursorProps_Assert_doc = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, assertDocument_doc.getText().createTextCursor());
 		XIndexAccess xNumRule_assert_doc = (XIndexAccess) UnoRuntime.queryInterface(XIndexAccess.class, xCursorProps_Assert_doc.getPropertyValue("NumberingRules"));
@@ -1035,11 +1035,11 @@ public class ParagraphNumberingAndBulletCharacterStyle {
 		xText.setString("we are Chinese,they are American.we are all living in one earth!Hello,world!Hello,world!Hello,world!Hello,world!Hello,world!Hello,world!" +
 				"Hello,world!Hello,world!");
 		//create cursor to select paragraph and formatting paragraph
-		XTextCursor xTextCursor = xText.createTextCursor();    
+		XTextCursor xTextCursor = xText.createTextCursor();
 		//create paragraph property set
 		XPropertySet xTextProps = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, xTextCursor);
 		//create document service factory
-		XMultiServiceFactory  xWriterFactory= (XMultiServiceFactory) UnoRuntime.queryInterface(XMultiServiceFactory.class, xTextDocument);		
+		XMultiServiceFactory  xWriterFactory= (XMultiServiceFactory) UnoRuntime.queryInterface(XMultiServiceFactory.class, xTextDocument);
 		//set numbering character
 		XIndexAccess xNumRule = (XIndexAccess) UnoRuntime.queryInterface(XIndexAccess.class,xWriterFactory.createInstance("com.sun.star.text.NumberingRules"));
 		PropertyValue[] propsRule = {new PropertyValue(),new PropertyValue()};
@@ -1048,10 +1048,10 @@ public class ParagraphNumberingAndBulletCharacterStyle {
 		propsRule[1].Name = "CharStyleName";
 		propsRule[1].Value = "Main index entry";
 		XIndexReplace xReplaceRule = (XIndexReplace) UnoRuntime.queryInterface(XIndexReplace.class, xNumRule);
-		xReplaceRule.replaceByIndex(0, propsRule);  
+		xReplaceRule.replaceByIndex(0, propsRule);
 		//set paragraph numbering and bullet character
 		xTextProps.setPropertyValue("NumberingRules", xNumRule);
-		//save to odt 
+		//save to odt
 		XStorable xStorable_odt = (XStorable) UnoRuntime.queryInterface(XStorable.class, xTextDocument);
 		PropertyValue[] aStoreProperties_odt = new PropertyValue[2];
 		aStoreProperties_odt[0] = new PropertyValue();
@@ -1061,7 +1061,7 @@ public class ParagraphNumberingAndBulletCharacterStyle {
 		aStoreProperties_odt[1].Name = "FilterName";
 		aStoreProperties_odt[1].Value = "writer8";
 		xStorable_odt.storeToURL(FileUtil.getUrl(Testspace.getPath("output/test.odt")), aStoreProperties_odt);
-		//save to doc 
+		//save to doc
 		XStorable xStorable_doc = (XStorable) UnoRuntime.queryInterface(XStorable.class, xTextDocument);
 		PropertyValue[] aStoreProperties_doc = new PropertyValue[2];
 		aStoreProperties_doc[0] = new PropertyValue();
@@ -1070,10 +1070,10 @@ public class ParagraphNumberingAndBulletCharacterStyle {
 		aStoreProperties_doc[0].Value = true;
 		aStoreProperties_doc[1].Name = "FilterName";
 		aStoreProperties_doc[1].Value = "MS Word 97";
-		xStorable_doc.storeToURL(FileUtil.getUrl(Testspace.getPath("output/test.doc")), aStoreProperties_doc);	
+		xStorable_doc.storeToURL(FileUtil.getUrl(Testspace.getPath("output/test.doc")), aStoreProperties_doc);
 		app.closeDocument(xTextDocument);
 
-		//reopen the document 
+		//reopen the document
 		XTextDocument assertDocument_odt=(XTextDocument)UnoRuntime.queryInterface(XTextDocument.class, app.loadDocument(Testspace.getPath("output/test.odt")));
 		XPropertySet xCursorProps_Assert_odt = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, assertDocument_odt.getText().createTextCursor());
 		XIndexAccess xNumRule_assert_odt = (XIndexAccess) UnoRuntime.queryInterface(XIndexAccess.class, xCursorProps_Assert_odt.getPropertyValue("NumberingRules"));
@@ -1085,7 +1085,7 @@ public class ParagraphNumberingAndBulletCharacterStyle {
 		assertEquals("assert numbering and bullet","NumberingType",propsRule_assert_odt[11].Name);
 		assertEquals("assert numbering and bullet",NumberingType.ARABIC,propsRule_assert_odt[11].Value);
 
-		//reopen the document 
+		//reopen the document
 		XTextDocument assertDocument_doc=(XTextDocument)UnoRuntime.queryInterface(XTextDocument.class, app.loadDocument(Testspace.getPath("output/test.doc")));
 		XPropertySet xCursorProps_Assert_doc = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, assertDocument_doc.getText().createTextCursor());
 		XIndexAccess xNumRule_assert_doc = (XIndexAccess) UnoRuntime.queryInterface(XIndexAccess.class, xCursorProps_Assert_doc.getPropertyValue("NumberingRules"));
@@ -1104,23 +1104,23 @@ public class ParagraphNumberingAndBulletCharacterStyle {
 		xText.setString("we are Chinese,they are American.we are all living in one earth!Hello,world!Hello,world!Hello,world!Hello,world!Hello,world!Hello,world!" +
 				"Hello,world!Hello,world!");
 		//create cursor to select paragraph and formatting paragraph
-		XTextCursor xTextCursor = xText.createTextCursor();    
+		XTextCursor xTextCursor = xText.createTextCursor();
 		//create paragraph property set
 		XPropertySet xTextProps = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, xTextCursor);
 		//create document service factory
-		XMultiServiceFactory  xWriterFactory= (XMultiServiceFactory) UnoRuntime.queryInterface(XMultiServiceFactory.class, xTextDocument);		
+		XMultiServiceFactory  xWriterFactory= (XMultiServiceFactory) UnoRuntime.queryInterface(XMultiServiceFactory.class, xTextDocument);
 		//set numbering character
 		XIndexAccess xNumRule = (XIndexAccess) UnoRuntime.queryInterface(XIndexAccess.class,xWriterFactory.createInstance("com.sun.star.text.NumberingRules"));
 		PropertyValue[] propsRule = {new PropertyValue(),new PropertyValue()};
 		propsRule[0].Name = "NumberingType";
 		propsRule[0].Value = NumberingType.ARABIC;
 		propsRule[1].Name = "CharStyleName";
-		propsRule[1].Value = "Footnote anchor";	
+		propsRule[1].Value = "Footnote anchor";
 		XIndexReplace xReplaceRule = (XIndexReplace) UnoRuntime.queryInterface(XIndexReplace.class, xNumRule);
-		xReplaceRule.replaceByIndex(0, propsRule);  
+		xReplaceRule.replaceByIndex(0, propsRule);
 		//set paragraph numbering and bullet character
 		xTextProps.setPropertyValue("NumberingRules", xNumRule);
-		//save to odt 
+		//save to odt
 		XStorable xStorable_odt = (XStorable) UnoRuntime.queryInterface(XStorable.class, xTextDocument);
 		PropertyValue[] aStoreProperties_odt = new PropertyValue[2];
 		aStoreProperties_odt[0] = new PropertyValue();
@@ -1130,7 +1130,7 @@ public class ParagraphNumberingAndBulletCharacterStyle {
 		aStoreProperties_odt[1].Name = "FilterName";
 		aStoreProperties_odt[1].Value = "writer8";
 		xStorable_odt.storeToURL(FileUtil.getUrl(Testspace.getPath("output/test.odt")), aStoreProperties_odt);
-		//save to doc 
+		//save to doc
 		XStorable xStorable_doc = (XStorable) UnoRuntime.queryInterface(XStorable.class, xTextDocument);
 		PropertyValue[] aStoreProperties_doc = new PropertyValue[2];
 		aStoreProperties_doc[0] = new PropertyValue();
@@ -1139,10 +1139,10 @@ public class ParagraphNumberingAndBulletCharacterStyle {
 		aStoreProperties_doc[0].Value = true;
 		aStoreProperties_doc[1].Name = "FilterName";
 		aStoreProperties_doc[1].Value = "MS Word 97";
-		xStorable_doc.storeToURL(FileUtil.getUrl(Testspace.getPath("output/test.doc")), aStoreProperties_doc);	
+		xStorable_doc.storeToURL(FileUtil.getUrl(Testspace.getPath("output/test.doc")), aStoreProperties_doc);
 		app.closeDocument(xTextDocument);
 
-		//reopen the document 
+		//reopen the document
 		XTextDocument assertDocument_odt=(XTextDocument)UnoRuntime.queryInterface(XTextDocument.class, app.loadDocument(Testspace.getPath("output/test.odt")));
 		XPropertySet xCursorProps_Assert_odt = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, assertDocument_odt.getText().createTextCursor());
 		XIndexAccess xNumRule_assert_odt = (XIndexAccess) UnoRuntime.queryInterface(XIndexAccess.class, xCursorProps_Assert_odt.getPropertyValue("NumberingRules"));
@@ -1154,7 +1154,7 @@ public class ParagraphNumberingAndBulletCharacterStyle {
 		assertEquals("assert numbering and bullet","NumberingType",propsRule_assert_odt[11].Name);
 		assertEquals("assert numbering and bullet",NumberingType.ARABIC,propsRule_assert_odt[11].Value);
 
-		//reopen the document 
+		//reopen the document
 		XTextDocument assertDocument_doc=(XTextDocument)UnoRuntime.queryInterface(XTextDocument.class, app.loadDocument(Testspace.getPath("output/test.doc")));
 		XPropertySet xCursorProps_Assert_doc = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, assertDocument_doc.getText().createTextCursor());
 		XIndexAccess xNumRule_assert_doc = (XIndexAccess) UnoRuntime.queryInterface(XIndexAccess.class, xCursorProps_Assert_doc.getPropertyValue("NumberingRules"));
@@ -1173,23 +1173,23 @@ public class ParagraphNumberingAndBulletCharacterStyle {
 		xText.setString("we are Chinese,they are American.we are all living in one earth!Hello,world!Hello,world!Hello,world!Hello,world!Hello,world!Hello,world!" +
 				"Hello,world!Hello,world!");
 		//create cursor to select paragraph and formatting paragraph
-		XTextCursor xTextCursor = xText.createTextCursor();    
+		XTextCursor xTextCursor = xText.createTextCursor();
 		//create paragraph property set
 		XPropertySet xTextProps = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, xTextCursor);
 		//create document service factory
-		XMultiServiceFactory  xWriterFactory= (XMultiServiceFactory) UnoRuntime.queryInterface(XMultiServiceFactory.class, xTextDocument);		
+		XMultiServiceFactory  xWriterFactory= (XMultiServiceFactory) UnoRuntime.queryInterface(XMultiServiceFactory.class, xTextDocument);
 		//set numbering character
 		XIndexAccess xNumRule = (XIndexAccess) UnoRuntime.queryInterface(XIndexAccess.class,xWriterFactory.createInstance("com.sun.star.text.NumberingRules"));
 		PropertyValue[] propsRule = {new PropertyValue(),new PropertyValue()};
 		propsRule[0].Name = "NumberingType";
 		propsRule[0].Value = NumberingType.ARABIC;
 		propsRule[1].Name = "CharStyleName";
-		propsRule[1].Value = "Endnote anchor";	
+		propsRule[1].Value = "Endnote anchor";
 		XIndexReplace xReplaceRule = (XIndexReplace) UnoRuntime.queryInterface(XIndexReplace.class, xNumRule);
-		xReplaceRule.replaceByIndex(0, propsRule);  
+		xReplaceRule.replaceByIndex(0, propsRule);
 		//set paragraph numbering and bullet character
 		xTextProps.setPropertyValue("NumberingRules", xNumRule);
-		//save to odt 
+		//save to odt
 		XStorable xStorable_odt = (XStorable) UnoRuntime.queryInterface(XStorable.class, xTextDocument);
 		PropertyValue[] aStoreProperties_odt = new PropertyValue[2];
 		aStoreProperties_odt[0] = new PropertyValue();
@@ -1199,7 +1199,7 @@ public class ParagraphNumberingAndBulletCharacterStyle {
 		aStoreProperties_odt[1].Name = "FilterName";
 		aStoreProperties_odt[1].Value = "writer8";
 		xStorable_odt.storeToURL(FileUtil.getUrl(Testspace.getPath("output/test.odt")), aStoreProperties_odt);
-		//save to doc 
+		//save to doc
 		XStorable xStorable_doc = (XStorable) UnoRuntime.queryInterface(XStorable.class, xTextDocument);
 		PropertyValue[] aStoreProperties_doc = new PropertyValue[2];
 		aStoreProperties_doc[0] = new PropertyValue();
@@ -1208,10 +1208,10 @@ public class ParagraphNumberingAndBulletCharacterStyle {
 		aStoreProperties_doc[0].Value = true;
 		aStoreProperties_doc[1].Name = "FilterName";
 		aStoreProperties_doc[1].Value = "MS Word 97";
-		xStorable_doc.storeToURL(FileUtil.getUrl(Testspace.getPath("output/test.doc")), aStoreProperties_doc);	
+		xStorable_doc.storeToURL(FileUtil.getUrl(Testspace.getPath("output/test.doc")), aStoreProperties_doc);
 		app.closeDocument(xTextDocument);
 
-		//reopen the document 
+		//reopen the document
 		XTextDocument assertDocument_odt=(XTextDocument)UnoRuntime.queryInterface(XTextDocument.class, app.loadDocument(Testspace.getPath("output/test.odt")));
 		XPropertySet xCursorProps_Assert_odt = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, assertDocument_odt.getText().createTextCursor());
 		XIndexAccess xNumRule_assert_odt = (XIndexAccess) UnoRuntime.queryInterface(XIndexAccess.class, xCursorProps_Assert_odt.getPropertyValue("NumberingRules"));
@@ -1223,7 +1223,7 @@ public class ParagraphNumberingAndBulletCharacterStyle {
 		assertEquals("assert numbering and bullet","NumberingType",propsRule_assert_odt[11].Name);
 		assertEquals("assert numbering and bullet",NumberingType.ARABIC,propsRule_assert_odt[11].Value);
 
-		//reopen the document 
+		//reopen the document
 		XTextDocument assertDocument_doc=(XTextDocument)UnoRuntime.queryInterface(XTextDocument.class, app.loadDocument(Testspace.getPath("output/test.doc")));
 		XPropertySet xCursorProps_Assert_doc = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, assertDocument_doc.getText().createTextCursor());
 		XIndexAccess xNumRule_assert_doc = (XIndexAccess) UnoRuntime.queryInterface(XIndexAccess.class, xCursorProps_Assert_doc.getPropertyValue("NumberingRules"));
@@ -1242,23 +1242,23 @@ public class ParagraphNumberingAndBulletCharacterStyle {
 		xText.setString("we are Chinese,they are American.we are all living in one earth!Hello,world!Hello,world!Hello,world!Hello,world!Hello,world!Hello,world!" +
 				"Hello,world!Hello,world!");
 		//create cursor to select paragraph and formatting paragraph
-		XTextCursor xTextCursor = xText.createTextCursor();    
+		XTextCursor xTextCursor = xText.createTextCursor();
 		//create paragraph property set
 		XPropertySet xTextProps = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, xTextCursor);
 		//create document service factory
-		XMultiServiceFactory  xWriterFactory= (XMultiServiceFactory) UnoRuntime.queryInterface(XMultiServiceFactory.class, xTextDocument);		
+		XMultiServiceFactory  xWriterFactory= (XMultiServiceFactory) UnoRuntime.queryInterface(XMultiServiceFactory.class, xTextDocument);
 		//set numbering character
 		XIndexAccess xNumRule = (XIndexAccess) UnoRuntime.queryInterface(XIndexAccess.class,xWriterFactory.createInstance("com.sun.star.text.NumberingRules"));
 		PropertyValue[] propsRule = {new PropertyValue(),new PropertyValue()};
 		propsRule[0].Name = "NumberingType";
 		propsRule[0].Value = NumberingType.ARABIC;
 		propsRule[1].Name = "CharStyleName";
-		propsRule[1].Value = "Vertical Numbering Symbols";	
+		propsRule[1].Value = "Vertical Numbering Symbols";
 		XIndexReplace xReplaceRule = (XIndexReplace) UnoRuntime.queryInterface(XIndexReplace.class, xNumRule);
-		xReplaceRule.replaceByIndex(0, propsRule);  
+		xReplaceRule.replaceByIndex(0, propsRule);
 		//set paragraph numbering and bullet character
 		xTextProps.setPropertyValue("NumberingRules", xNumRule);
-		//save to odt 
+		//save to odt
 		XStorable xStorable_odt = (XStorable) UnoRuntime.queryInterface(XStorable.class, xTextDocument);
 		PropertyValue[] aStoreProperties_odt = new PropertyValue[2];
 		aStoreProperties_odt[0] = new PropertyValue();
@@ -1268,7 +1268,7 @@ public class ParagraphNumberingAndBulletCharacterStyle {
 		aStoreProperties_odt[1].Name = "FilterName";
 		aStoreProperties_odt[1].Value = "writer8";
 		xStorable_odt.storeToURL(FileUtil.getUrl(Testspace.getPath("output/test.odt")), aStoreProperties_odt);
-		//save to doc 
+		//save to doc
 		XStorable xStorable_doc = (XStorable) UnoRuntime.queryInterface(XStorable.class, xTextDocument);
 		PropertyValue[] aStoreProperties_doc = new PropertyValue[2];
 		aStoreProperties_doc[0] = new PropertyValue();
@@ -1277,10 +1277,10 @@ public class ParagraphNumberingAndBulletCharacterStyle {
 		aStoreProperties_doc[0].Value = true;
 		aStoreProperties_doc[1].Name = "FilterName";
 		aStoreProperties_doc[1].Value = "MS Word 97";
-		xStorable_doc.storeToURL(FileUtil.getUrl(Testspace.getPath("output/test.doc")), aStoreProperties_doc);	
+		xStorable_doc.storeToURL(FileUtil.getUrl(Testspace.getPath("output/test.doc")), aStoreProperties_doc);
 		app.closeDocument(xTextDocument);
 
-		//reopen the document 
+		//reopen the document
 		XTextDocument assertDocument_odt=(XTextDocument)UnoRuntime.queryInterface(XTextDocument.class, app.loadDocument(Testspace.getPath("output/test.odt")));
 		XPropertySet xCursorProps_Assert_odt = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, assertDocument_odt.getText().createTextCursor());
 		XIndexAccess xNumRule_assert_odt = (XIndexAccess) UnoRuntime.queryInterface(XIndexAccess.class, xCursorProps_Assert_odt.getPropertyValue("NumberingRules"));
@@ -1292,7 +1292,7 @@ public class ParagraphNumberingAndBulletCharacterStyle {
 		assertEquals("assert numbering and bullet","NumberingType",propsRule_assert_odt[11].Name);
 		assertEquals("assert numbering and bullet",NumberingType.ARABIC,propsRule_assert_odt[11].Value);
 
-		//reopen the document 
+		//reopen the document
 		XTextDocument assertDocument_doc=(XTextDocument)UnoRuntime.queryInterface(XTextDocument.class, app.loadDocument(Testspace.getPath("output/test.doc")));
 		XPropertySet xCursorProps_Assert_doc = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, assertDocument_doc.getText().createTextCursor());
 		XIndexAccess xNumRule_assert_doc = (XIndexAccess) UnoRuntime.queryInterface(XIndexAccess.class, xCursorProps_Assert_doc.getPropertyValue("NumberingRules"));
@@ -1311,23 +1311,23 @@ public class ParagraphNumberingAndBulletCharacterStyle {
 		xText.setString("we are Chinese,they are American.we are all living in one earth!Hello,world!Hello,world!Hello,world!Hello,world!Hello,world!Hello,world!" +
 				"Hello,world!Hello,world!");
 		//create cursor to select paragraph and formatting paragraph
-		XTextCursor xTextCursor = xText.createTextCursor();    
+		XTextCursor xTextCursor = xText.createTextCursor();
 		//create paragraph property set
 		XPropertySet xTextProps = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, xTextCursor);
 		//create document service factory
-		XMultiServiceFactory  xWriterFactory= (XMultiServiceFactory) UnoRuntime.queryInterface(XMultiServiceFactory.class, xTextDocument);		
+		XMultiServiceFactory  xWriterFactory= (XMultiServiceFactory) UnoRuntime.queryInterface(XMultiServiceFactory.class, xTextDocument);
 		//set numbering character
 		XIndexAccess xNumRule = (XIndexAccess) UnoRuntime.queryInterface(XIndexAccess.class,xWriterFactory.createInstance("com.sun.star.text.NumberingRules"));
 		PropertyValue[] propsRule = {new PropertyValue(),new PropertyValue()};
 		propsRule[0].Name = "NumberingType";
 		propsRule[0].Value = NumberingType.ARABIC;
 		propsRule[1].Name = "CharStyleName";
-		propsRule[1].Value = "Quotation";	
+		propsRule[1].Value = "Quotation";
 		XIndexReplace xReplaceRule = (XIndexReplace) UnoRuntime.queryInterface(XIndexReplace.class, xNumRule);
-		xReplaceRule.replaceByIndex(0, propsRule);  
+		xReplaceRule.replaceByIndex(0, propsRule);
 		//set paragraph numbering and bullet character
 		xTextProps.setPropertyValue("NumberingRules", xNumRule);
-		//save to odt 
+		//save to odt
 		XStorable xStorable_odt = (XStorable) UnoRuntime.queryInterface(XStorable.class, xTextDocument);
 		PropertyValue[] aStoreProperties_odt = new PropertyValue[2];
 		aStoreProperties_odt[0] = new PropertyValue();
@@ -1337,7 +1337,7 @@ public class ParagraphNumberingAndBulletCharacterStyle {
 		aStoreProperties_odt[1].Name = "FilterName";
 		aStoreProperties_odt[1].Value = "writer8";
 		xStorable_odt.storeToURL(FileUtil.getUrl(Testspace.getPath("output/test.odt")), aStoreProperties_odt);
-		//save to doc 
+		//save to doc
 		XStorable xStorable_doc = (XStorable) UnoRuntime.queryInterface(XStorable.class, xTextDocument);
 		PropertyValue[] aStoreProperties_doc = new PropertyValue[2];
 		aStoreProperties_doc[0] = new PropertyValue();
@@ -1346,10 +1346,10 @@ public class ParagraphNumberingAndBulletCharacterStyle {
 		aStoreProperties_doc[0].Value = true;
 		aStoreProperties_doc[1].Name = "FilterName";
 		aStoreProperties_doc[1].Value = "MS Word 97";
-		xStorable_doc.storeToURL(FileUtil.getUrl(Testspace.getPath("output/test.doc")), aStoreProperties_doc);	
+		xStorable_doc.storeToURL(FileUtil.getUrl(Testspace.getPath("output/test.doc")), aStoreProperties_doc);
 		app.closeDocument(xTextDocument);
 
-		//reopen the document 
+		//reopen the document
 		XTextDocument assertDocument_odt=(XTextDocument)UnoRuntime.queryInterface(XTextDocument.class, app.loadDocument(Testspace.getPath("output/test.odt")));
 		XPropertySet xCursorProps_Assert_odt = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, assertDocument_odt.getText().createTextCursor());
 		XIndexAccess xNumRule_assert_odt = (XIndexAccess) UnoRuntime.queryInterface(XIndexAccess.class, xCursorProps_Assert_odt.getPropertyValue("NumberingRules"));
@@ -1361,7 +1361,7 @@ public class ParagraphNumberingAndBulletCharacterStyle {
 		assertEquals("assert numbering and bullet","NumberingType",propsRule_assert_odt[11].Name);
 		assertEquals("assert numbering and bullet",NumberingType.ARABIC,propsRule_assert_odt[11].Value);
 
-		//reopen the document 
+		//reopen the document
 		XTextDocument assertDocument_doc=(XTextDocument)UnoRuntime.queryInterface(XTextDocument.class, app.loadDocument(Testspace.getPath("output/test.doc")));
 		XPropertySet xCursorProps_Assert_doc = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, assertDocument_doc.getText().createTextCursor());
 		XIndexAccess xNumRule_assert_doc = (XIndexAccess) UnoRuntime.queryInterface(XIndexAccess.class, xCursorProps_Assert_doc.getPropertyValue("NumberingRules"));
@@ -1380,23 +1380,23 @@ public class ParagraphNumberingAndBulletCharacterStyle {
 		xText.setString("we are Chinese,they are American.we are all living in one earth!Hello,world!Hello,world!Hello,world!Hello,world!Hello,world!Hello,world!" +
 				"Hello,world!Hello,world!");
 		//create cursor to select paragraph and formatting paragraph
-		XTextCursor xTextCursor = xText.createTextCursor();    
+		XTextCursor xTextCursor = xText.createTextCursor();
 		//create paragraph property set
 		XPropertySet xTextProps = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, xTextCursor);
 		//create document service factory
-		XMultiServiceFactory  xWriterFactory= (XMultiServiceFactory) UnoRuntime.queryInterface(XMultiServiceFactory.class, xTextDocument);		
+		XMultiServiceFactory  xWriterFactory= (XMultiServiceFactory) UnoRuntime.queryInterface(XMultiServiceFactory.class, xTextDocument);
 		//set numbering character
 		XIndexAccess xNumRule = (XIndexAccess) UnoRuntime.queryInterface(XIndexAccess.class,xWriterFactory.createInstance("com.sun.star.text.NumberingRules"));
 		PropertyValue[] propsRule = {new PropertyValue(),new PropertyValue()};
 		propsRule[0].Name = "NumberingType";
 		propsRule[0].Value = NumberingType.ARABIC;
 		propsRule[1].Name = "CharStyleName";
-		propsRule[1].Value = "Strong Emphasis";	
+		propsRule[1].Value = "Strong Emphasis";
 		XIndexReplace xReplaceRule = (XIndexReplace) UnoRuntime.queryInterface(XIndexReplace.class, xNumRule);
-		xReplaceRule.replaceByIndex(0, propsRule);  
+		xReplaceRule.replaceByIndex(0, propsRule);
 		//set paragraph numbering and bullet character
 		xTextProps.setPropertyValue("NumberingRules", xNumRule);
-		//save to odt 
+		//save to odt
 		XStorable xStorable_odt = (XStorable) UnoRuntime.queryInterface(XStorable.class, xTextDocument);
 		PropertyValue[] aStoreProperties_odt = new PropertyValue[2];
 		aStoreProperties_odt[0] = new PropertyValue();
@@ -1406,7 +1406,7 @@ public class ParagraphNumberingAndBulletCharacterStyle {
 		aStoreProperties_odt[1].Name = "FilterName";
 		aStoreProperties_odt[1].Value = "writer8";
 		xStorable_odt.storeToURL(FileUtil.getUrl(Testspace.getPath("output/test.odt")), aStoreProperties_odt);
-		//save to doc 
+		//save to doc
 		XStorable xStorable_doc = (XStorable) UnoRuntime.queryInterface(XStorable.class, xTextDocument);
 		PropertyValue[] aStoreProperties_doc = new PropertyValue[2];
 		aStoreProperties_doc[0] = new PropertyValue();
@@ -1415,10 +1415,10 @@ public class ParagraphNumberingAndBulletCharacterStyle {
 		aStoreProperties_doc[0].Value = true;
 		aStoreProperties_doc[1].Name = "FilterName";
 		aStoreProperties_doc[1].Value = "MS Word 97";
-		xStorable_doc.storeToURL(FileUtil.getUrl(Testspace.getPath("output/test.doc")), aStoreProperties_doc);	
+		xStorable_doc.storeToURL(FileUtil.getUrl(Testspace.getPath("output/test.doc")), aStoreProperties_doc);
 		app.closeDocument(xTextDocument);
 
-		//reopen the document 
+		//reopen the document
 		XTextDocument assertDocument_odt=(XTextDocument)UnoRuntime.queryInterface(XTextDocument.class, app.loadDocument(Testspace.getPath("output/test.odt")));
 		XPropertySet xCursorProps_Assert_odt = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, assertDocument_odt.getText().createTextCursor());
 		XIndexAccess xNumRule_assert_odt = (XIndexAccess) UnoRuntime.queryInterface(XIndexAccess.class, xCursorProps_Assert_odt.getPropertyValue("NumberingRules"));
@@ -1430,7 +1430,7 @@ public class ParagraphNumberingAndBulletCharacterStyle {
 		assertEquals("assert numbering and bullet","NumberingType",propsRule_assert_odt[11].Name);
 		assertEquals("assert numbering and bullet",NumberingType.ARABIC,propsRule_assert_odt[11].Value);
 
-		//reopen the document 
+		//reopen the document
 		XTextDocument assertDocument_doc=(XTextDocument)UnoRuntime.queryInterface(XTextDocument.class, app.loadDocument(Testspace.getPath("output/test.doc")));
 		XPropertySet xCursorProps_Assert_doc = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, assertDocument_doc.getText().createTextCursor());
 		XIndexAccess xNumRule_assert_doc = (XIndexAccess) UnoRuntime.queryInterface(XIndexAccess.class, xCursorProps_Assert_doc.getPropertyValue("NumberingRules"));
@@ -1449,23 +1449,23 @@ public class ParagraphNumberingAndBulletCharacterStyle {
 		xText.setString("we are Chinese,they are American.we are all living in one earth!Hello,world!Hello,world!Hello,world!Hello,world!Hello,world!Hello,world!" +
 				"Hello,world!Hello,world!");
 		//create cursor to select paragraph and formatting paragraph
-		XTextCursor xTextCursor = xText.createTextCursor();    
+		XTextCursor xTextCursor = xText.createTextCursor();
 		//create paragraph property set
 		XPropertySet xTextProps = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, xTextCursor);
 		//create document service factory
-		XMultiServiceFactory  xWriterFactory= (XMultiServiceFactory) UnoRuntime.queryInterface(XMultiServiceFactory.class, xTextDocument);		
+		XMultiServiceFactory  xWriterFactory= (XMultiServiceFactory) UnoRuntime.queryInterface(XMultiServiceFactory.class, xTextDocument);
 		//set numbering character
 		XIndexAccess xNumRule = (XIndexAccess) UnoRuntime.queryInterface(XIndexAccess.class,xWriterFactory.createInstance("com.sun.star.text.NumberingRules"));
 		PropertyValue[] propsRule = {new PropertyValue(),new PropertyValue()};
 		propsRule[0].Name = "NumberingType";
 		propsRule[0].Value = NumberingType.ARABIC;
 		propsRule[1].Name = "CharStyleName";
-		propsRule[1].Value = "Variable";	
+		propsRule[1].Value = "Variable";
 		XIndexReplace xReplaceRule = (XIndexReplace) UnoRuntime.queryInterface(XIndexReplace.class, xNumRule);
-		xReplaceRule.replaceByIndex(0, propsRule);  
+		xReplaceRule.replaceByIndex(0, propsRule);
 		//set paragraph numbering and bullet character
 		xTextProps.setPropertyValue("NumberingRules", xNumRule);
-		//save to odt 
+		//save to odt
 		XStorable xStorable_odt = (XStorable) UnoRuntime.queryInterface(XStorable.class, xTextDocument);
 		PropertyValue[] aStoreProperties_odt = new PropertyValue[2];
 		aStoreProperties_odt[0] = new PropertyValue();
@@ -1475,7 +1475,7 @@ public class ParagraphNumberingAndBulletCharacterStyle {
 		aStoreProperties_odt[1].Name = "FilterName";
 		aStoreProperties_odt[1].Value = "writer8";
 		xStorable_odt.storeToURL(FileUtil.getUrl(Testspace.getPath("output/test.odt")), aStoreProperties_odt);
-		//save to doc 
+		//save to doc
 		XStorable xStorable_doc = (XStorable) UnoRuntime.queryInterface(XStorable.class, xTextDocument);
 		PropertyValue[] aStoreProperties_doc = new PropertyValue[2];
 		aStoreProperties_doc[0] = new PropertyValue();
@@ -1484,10 +1484,10 @@ public class ParagraphNumberingAndBulletCharacterStyle {
 		aStoreProperties_doc[0].Value = true;
 		aStoreProperties_doc[1].Name = "FilterName";
 		aStoreProperties_doc[1].Value = "MS Word 97";
-		xStorable_doc.storeToURL(FileUtil.getUrl(Testspace.getPath("output/test.doc")), aStoreProperties_doc);	
+		xStorable_doc.storeToURL(FileUtil.getUrl(Testspace.getPath("output/test.doc")), aStoreProperties_doc);
 		app.closeDocument(xTextDocument);
 
-		//reopen the document 
+		//reopen the document
 		XTextDocument assertDocument_odt=(XTextDocument)UnoRuntime.queryInterface(XTextDocument.class, app.loadDocument(Testspace.getPath("output/test.odt")));
 		XPropertySet xCursorProps_Assert_odt = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, assertDocument_odt.getText().createTextCursor());
 		XIndexAccess xNumRule_assert_odt = (XIndexAccess) UnoRuntime.queryInterface(XIndexAccess.class, xCursorProps_Assert_odt.getPropertyValue("NumberingRules"));
@@ -1499,7 +1499,7 @@ public class ParagraphNumberingAndBulletCharacterStyle {
 		assertEquals("assert numbering and bullet","NumberingType",propsRule_assert_odt[11].Name);
 		assertEquals("assert numbering and bullet",NumberingType.ARABIC,propsRule_assert_odt[11].Value);
 
-		//reopen the document 
+		//reopen the document
 		XTextDocument assertDocument_doc=(XTextDocument)UnoRuntime.queryInterface(XTextDocument.class, app.loadDocument(Testspace.getPath("output/test.doc")));
 		XPropertySet xCursorProps_Assert_doc = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, assertDocument_doc.getText().createTextCursor());
 		XIndexAccess xNumRule_assert_doc = (XIndexAccess) UnoRuntime.queryInterface(XIndexAccess.class, xCursorProps_Assert_doc.getPropertyValue("NumberingRules"));
@@ -1518,23 +1518,23 @@ public class ParagraphNumberingAndBulletCharacterStyle {
 		xText.setString("we are Chinese,they are American.we are all living in one earth!Hello,world!Hello,world!Hello,world!Hello,world!Hello,world!Hello,world!" +
 				"Hello,world!Hello,world!");
 		//create cursor to select paragraph and formatting paragraph
-		XTextCursor xTextCursor = xText.createTextCursor();    
+		XTextCursor xTextCursor = xText.createTextCursor();
 		//create paragraph property set
 		XPropertySet xTextProps = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, xTextCursor);
 		//create document service factory
-		XMultiServiceFactory  xWriterFactory= (XMultiServiceFactory) UnoRuntime.queryInterface(XMultiServiceFactory.class, xTextDocument);		
+		XMultiServiceFactory  xWriterFactory= (XMultiServiceFactory) UnoRuntime.queryInterface(XMultiServiceFactory.class, xTextDocument);
 		//set numbering character
 		XIndexAccess xNumRule = (XIndexAccess) UnoRuntime.queryInterface(XIndexAccess.class,xWriterFactory.createInstance("com.sun.star.text.NumberingRules"));
 		PropertyValue[] propsRule = {new PropertyValue(),new PropertyValue()};
 		propsRule[0].Name = "NumberingType";
 		propsRule[0].Value = NumberingType.ARABIC;
 		propsRule[1].Name = "CharStyleName";
-		propsRule[1].Value = "Example";	
+		propsRule[1].Value = "Example";
 		XIndexReplace xReplaceRule = (XIndexReplace) UnoRuntime.queryInterface(XIndexReplace.class, xNumRule);
-		xReplaceRule.replaceByIndex(0, propsRule);  
+		xReplaceRule.replaceByIndex(0, propsRule);
 		//set paragraph numbering and bullet character
 		xTextProps.setPropertyValue("NumberingRules", xNumRule);
-		//save to odt 
+		//save to odt
 		XStorable xStorable_odt = (XStorable) UnoRuntime.queryInterface(XStorable.class, xTextDocument);
 		PropertyValue[] aStoreProperties_odt = new PropertyValue[2];
 		aStoreProperties_odt[0] = new PropertyValue();
@@ -1544,7 +1544,7 @@ public class ParagraphNumberingAndBulletCharacterStyle {
 		aStoreProperties_odt[1].Name = "FilterName";
 		aStoreProperties_odt[1].Value = "writer8";
 		xStorable_odt.storeToURL(FileUtil.getUrl(Testspace.getPath("output/test.odt")), aStoreProperties_odt);
-		//save to doc 
+		//save to doc
 		XStorable xStorable_doc = (XStorable) UnoRuntime.queryInterface(XStorable.class, xTextDocument);
 		PropertyValue[] aStoreProperties_doc = new PropertyValue[2];
 		aStoreProperties_doc[0] = new PropertyValue();
@@ -1553,10 +1553,10 @@ public class ParagraphNumberingAndBulletCharacterStyle {
 		aStoreProperties_doc[0].Value = true;
 		aStoreProperties_doc[1].Name = "FilterName";
 		aStoreProperties_doc[1].Value = "MS Word 97";
-		xStorable_doc.storeToURL(FileUtil.getUrl(Testspace.getPath("output/test.doc")), aStoreProperties_doc);	
+		xStorable_doc.storeToURL(FileUtil.getUrl(Testspace.getPath("output/test.doc")), aStoreProperties_doc);
 		app.closeDocument(xTextDocument);
 
-		//reopen the document 
+		//reopen the document
 		XTextDocument assertDocument_odt=(XTextDocument)UnoRuntime.queryInterface(XTextDocument.class, app.loadDocument(Testspace.getPath("output/test.odt")));
 		XPropertySet xCursorProps_Assert_odt = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, assertDocument_odt.getText().createTextCursor());
 		XIndexAccess xNumRule_assert_odt = (XIndexAccess) UnoRuntime.queryInterface(XIndexAccess.class, xCursorProps_Assert_odt.getPropertyValue("NumberingRules"));
@@ -1568,7 +1568,7 @@ public class ParagraphNumberingAndBulletCharacterStyle {
 		assertEquals("assert numbering and bullet","NumberingType",propsRule_assert_odt[11].Name);
 		assertEquals("assert numbering and bullet",NumberingType.ARABIC,propsRule_assert_odt[11].Value);
 
-		//reopen the document 
+		//reopen the document
 		XTextDocument assertDocument_doc=(XTextDocument)UnoRuntime.queryInterface(XTextDocument.class, app.loadDocument(Testspace.getPath("output/test.doc")));
 		XPropertySet xCursorProps_Assert_doc = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, assertDocument_doc.getText().createTextCursor());
 		XIndexAccess xNumRule_assert_doc = (XIndexAccess) UnoRuntime.queryInterface(XIndexAccess.class, xCursorProps_Assert_doc.getPropertyValue("NumberingRules"));
@@ -1586,11 +1586,11 @@ public class ParagraphNumberingAndBulletCharacterStyle {
 		xText.setString("we are Chinese,they are American.we are all living in one earth!Hello,world!Hello,world!Hello,world!Hello,world!Hello,world!Hello,world!" +
 				"Hello,world!Hello,world!");
 		//create cursor to select paragraph and formatting paragraph
-		XTextCursor xTextCursor = xText.createTextCursor();    
+		XTextCursor xTextCursor = xText.createTextCursor();
 		//create paragraph property set
 		XPropertySet xTextProps = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, xTextCursor);
 		//create document service factory
-		XMultiServiceFactory  xWriterFactory= (XMultiServiceFactory) UnoRuntime.queryInterface(XMultiServiceFactory.class, xTextDocument);		
+		XMultiServiceFactory  xWriterFactory= (XMultiServiceFactory) UnoRuntime.queryInterface(XMultiServiceFactory.class, xTextDocument);
 		//set numbering character
 		XIndexAccess xNumRule = (XIndexAccess) UnoRuntime.queryInterface(XIndexAccess.class,xWriterFactory.createInstance("com.sun.star.text.NumberingRules"));
 		PropertyValue[] propsRule = {new PropertyValue(),new PropertyValue()};
@@ -1599,10 +1599,10 @@ public class ParagraphNumberingAndBulletCharacterStyle {
 		propsRule[1].Name = "CharStyleName";
 		propsRule[1].Value = "User Entry";
 		XIndexReplace xReplaceRule = (XIndexReplace) UnoRuntime.queryInterface(XIndexReplace.class, xNumRule);
-		xReplaceRule.replaceByIndex(0, propsRule);  
+		xReplaceRule.replaceByIndex(0, propsRule);
 		//set paragraph numbering and bullet character
 		xTextProps.setPropertyValue("NumberingRules", xNumRule);
-		//save to odt 
+		//save to odt
 		XStorable xStorable_odt = (XStorable) UnoRuntime.queryInterface(XStorable.class, xTextDocument);
 		PropertyValue[] aStoreProperties_odt = new PropertyValue[2];
 		aStoreProperties_odt[0] = new PropertyValue();
@@ -1612,7 +1612,7 @@ public class ParagraphNumberingAndBulletCharacterStyle {
 		aStoreProperties_odt[1].Name = "FilterName";
 		aStoreProperties_odt[1].Value = "writer8";
 		xStorable_odt.storeToURL(FileUtil.getUrl(Testspace.getPath("output/test.odt")), aStoreProperties_odt);
-		//save to doc 
+		//save to doc
 		XStorable xStorable_doc = (XStorable) UnoRuntime.queryInterface(XStorable.class, xTextDocument);
 		PropertyValue[] aStoreProperties_doc = new PropertyValue[2];
 		aStoreProperties_doc[0] = new PropertyValue();
@@ -1621,10 +1621,10 @@ public class ParagraphNumberingAndBulletCharacterStyle {
 		aStoreProperties_doc[0].Value = true;
 		aStoreProperties_doc[1].Name = "FilterName";
 		aStoreProperties_doc[1].Value = "MS Word 97";
-		xStorable_doc.storeToURL(FileUtil.getUrl(Testspace.getPath("output/test.doc")), aStoreProperties_doc);	
+		xStorable_doc.storeToURL(FileUtil.getUrl(Testspace.getPath("output/test.doc")), aStoreProperties_doc);
 		app.closeDocument(xTextDocument);
 
-		//reopen the document 
+		//reopen the document
 		XTextDocument assertDocument_odt=(XTextDocument)UnoRuntime.queryInterface(XTextDocument.class, app.loadDocument(Testspace.getPath("output/test.odt")));
 		XPropertySet xCursorProps_Assert_odt = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, assertDocument_odt.getText().createTextCursor());
 		XIndexAccess xNumRule_assert_odt = (XIndexAccess) UnoRuntime.queryInterface(XIndexAccess.class, xCursorProps_Assert_odt.getPropertyValue("NumberingRules"));
@@ -1636,7 +1636,7 @@ public class ParagraphNumberingAndBulletCharacterStyle {
 		assertEquals("assert numbering and bullet","NumberingType",propsRule_assert_odt[11].Name);
 		assertEquals("assert numbering and bullet",NumberingType.ARABIC,propsRule_assert_odt[11].Value);
 
-		//reopen the document 
+		//reopen the document
 		XTextDocument assertDocument_doc=(XTextDocument)UnoRuntime.queryInterface(XTextDocument.class, app.loadDocument(Testspace.getPath("output/test.doc")));
 		XPropertySet xCursorProps_Assert_doc = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, assertDocument_doc.getText().createTextCursor());
 		XIndexAccess xNumRule_assert_doc = (XIndexAccess) UnoRuntime.queryInterface(XIndexAccess.class, xCursorProps_Assert_doc.getPropertyValue("NumberingRules"));
@@ -1655,23 +1655,23 @@ public class ParagraphNumberingAndBulletCharacterStyle {
 		xText.setString("we are Chinese,they are American.we are all living in one earth!Hello,world!Hello,world!Hello,world!Hello,world!Hello,world!Hello,world!" +
 				"Hello,world!Hello,world!");
 		//create cursor to select paragraph and formatting paragraph
-		XTextCursor xTextCursor = xText.createTextCursor();    
+		XTextCursor xTextCursor = xText.createTextCursor();
 		//create paragraph property set
 		XPropertySet xTextProps = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, xTextCursor);
 		//create document service factory
-		XMultiServiceFactory  xWriterFactory= (XMultiServiceFactory) UnoRuntime.queryInterface(XMultiServiceFactory.class, xTextDocument);		
+		XMultiServiceFactory  xWriterFactory= (XMultiServiceFactory) UnoRuntime.queryInterface(XMultiServiceFactory.class, xTextDocument);
 		//set numbering character
 		XIndexAccess xNumRule = (XIndexAccess) UnoRuntime.queryInterface(XIndexAccess.class,xWriterFactory.createInstance("com.sun.star.text.NumberingRules"));
 		PropertyValue[] propsRule = {new PropertyValue(),new PropertyValue()};
 		propsRule[0].Name = "NumberingType";
 		propsRule[0].Value = NumberingType.ARABIC;
 		propsRule[1].Name = "CharStyleName";
-		propsRule[1].Value = "Source Text";	
+		propsRule[1].Value = "Source Text";
 		XIndexReplace xReplaceRule = (XIndexReplace) UnoRuntime.queryInterface(XIndexReplace.class, xNumRule);
-		xReplaceRule.replaceByIndex(0, propsRule);  
+		xReplaceRule.replaceByIndex(0, propsRule);
 		//set paragraph numbering and bullet character
 		xTextProps.setPropertyValue("NumberingRules", xNumRule);
-		//save to odt 
+		//save to odt
 		XStorable xStorable_odt = (XStorable) UnoRuntime.queryInterface(XStorable.class, xTextDocument);
 		PropertyValue[] aStoreProperties_odt = new PropertyValue[2];
 		aStoreProperties_odt[0] = new PropertyValue();
@@ -1681,7 +1681,7 @@ public class ParagraphNumberingAndBulletCharacterStyle {
 		aStoreProperties_odt[1].Name = "FilterName";
 		aStoreProperties_odt[1].Value = "writer8";
 		xStorable_odt.storeToURL(FileUtil.getUrl(Testspace.getPath("output/test.odt")), aStoreProperties_odt);
-		//save to doc 
+		//save to doc
 		XStorable xStorable_doc = (XStorable) UnoRuntime.queryInterface(XStorable.class, xTextDocument);
 		PropertyValue[] aStoreProperties_doc = new PropertyValue[2];
 		aStoreProperties_doc[0] = new PropertyValue();
@@ -1690,10 +1690,10 @@ public class ParagraphNumberingAndBulletCharacterStyle {
 		aStoreProperties_doc[0].Value = true;
 		aStoreProperties_doc[1].Name = "FilterName";
 		aStoreProperties_doc[1].Value = "MS Word 97";
-		xStorable_doc.storeToURL(FileUtil.getUrl(Testspace.getPath("output/test.doc")), aStoreProperties_doc);	
+		xStorable_doc.storeToURL(FileUtil.getUrl(Testspace.getPath("output/test.doc")), aStoreProperties_doc);
 		app.closeDocument(xTextDocument);
 
-		//reopen the document 
+		//reopen the document
 		XTextDocument assertDocument_odt=(XTextDocument)UnoRuntime.queryInterface(XTextDocument.class, app.loadDocument(Testspace.getPath("output/test.odt")));
 		XPropertySet xCursorProps_Assert_odt = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, assertDocument_odt.getText().createTextCursor());
 		XIndexAccess xNumRule_assert_odt = (XIndexAccess) UnoRuntime.queryInterface(XIndexAccess.class, xCursorProps_Assert_odt.getPropertyValue("NumberingRules"));
@@ -1705,7 +1705,7 @@ public class ParagraphNumberingAndBulletCharacterStyle {
 		assertEquals("assert numbering and bullet","NumberingType",propsRule_assert_odt[11].Name);
 		assertEquals("assert numbering and bullet",NumberingType.ARABIC,propsRule_assert_odt[11].Value);
 
-		//reopen the document 
+		//reopen the document
 		XTextDocument assertDocument_doc=(XTextDocument)UnoRuntime.queryInterface(XTextDocument.class, app.loadDocument(Testspace.getPath("output/test.doc")));
 		XPropertySet xCursorProps_Assert_doc = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, assertDocument_doc.getText().createTextCursor());
 		XIndexAccess xNumRule_assert_doc = (XIndexAccess) UnoRuntime.queryInterface(XIndexAccess.class, xCursorProps_Assert_doc.getPropertyValue("NumberingRules"));
@@ -1724,23 +1724,23 @@ public class ParagraphNumberingAndBulletCharacterStyle {
 		xText.setString("we are Chinese,they are American.we are all living in one earth!Hello,world!Hello,world!Hello,world!Hello,world!Hello,world!Hello,world!" +
 				"Hello,world!Hello,world!");
 		//create cursor to select paragraph and formatting paragraph
-		XTextCursor xTextCursor = xText.createTextCursor();    
+		XTextCursor xTextCursor = xText.createTextCursor();
 		//create paragraph property set
 		XPropertySet xTextProps = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, xTextCursor);
 		//create document service factory
-		XMultiServiceFactory  xWriterFactory= (XMultiServiceFactory) UnoRuntime.queryInterface(XMultiServiceFactory.class, xTextDocument);		
+		XMultiServiceFactory  xWriterFactory= (XMultiServiceFactory) UnoRuntime.queryInterface(XMultiServiceFactory.class, xTextDocument);
 		//set numbering character
 		XIndexAccess xNumRule = (XIndexAccess) UnoRuntime.queryInterface(XIndexAccess.class,xWriterFactory.createInstance("com.sun.star.text.NumberingRules"));
 		PropertyValue[] propsRule = {new PropertyValue(),new PropertyValue()};
 		propsRule[0].Name = "NumberingType";
 		propsRule[0].Value = NumberingType.ARABIC;
 		propsRule[1].Name = "CharStyleName";
-		propsRule[1].Value = "Definition";	
+		propsRule[1].Value = "Definition";
 		XIndexReplace xReplaceRule = (XIndexReplace) UnoRuntime.queryInterface(XIndexReplace.class, xNumRule);
-		xReplaceRule.replaceByIndex(0, propsRule);  
+		xReplaceRule.replaceByIndex(0, propsRule);
 		//set paragraph numbering and bullet character
 		xTextProps.setPropertyValue("NumberingRules", xNumRule);
-		//save to odt 
+		//save to odt
 		XStorable xStorable_odt = (XStorable) UnoRuntime.queryInterface(XStorable.class, xTextDocument);
 		PropertyValue[] aStoreProperties_odt = new PropertyValue[2];
 		aStoreProperties_odt[0] = new PropertyValue();
@@ -1750,7 +1750,7 @@ public class ParagraphNumberingAndBulletCharacterStyle {
 		aStoreProperties_odt[1].Name = "FilterName";
 		aStoreProperties_odt[1].Value = "writer8";
 		xStorable_odt.storeToURL(FileUtil.getUrl(Testspace.getPath("output/test.odt")), aStoreProperties_odt);
-		//save to doc 
+		//save to doc
 		XStorable xStorable_doc = (XStorable) UnoRuntime.queryInterface(XStorable.class, xTextDocument);
 		PropertyValue[] aStoreProperties_doc = new PropertyValue[2];
 		aStoreProperties_doc[0] = new PropertyValue();
@@ -1759,10 +1759,10 @@ public class ParagraphNumberingAndBulletCharacterStyle {
 		aStoreProperties_doc[0].Value = true;
 		aStoreProperties_doc[1].Name = "FilterName";
 		aStoreProperties_doc[1].Value = "MS Word 97";
-		xStorable_doc.storeToURL(FileUtil.getUrl(Testspace.getPath("output/test.doc")), aStoreProperties_doc);	
+		xStorable_doc.storeToURL(FileUtil.getUrl(Testspace.getPath("output/test.doc")), aStoreProperties_doc);
 		app.closeDocument(xTextDocument);
 
-		//reopen the document 
+		//reopen the document
 		XTextDocument assertDocument_odt=(XTextDocument)UnoRuntime.queryInterface(XTextDocument.class, app.loadDocument(Testspace.getPath("output/test.odt")));
 		XPropertySet xCursorProps_Assert_odt = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, assertDocument_odt.getText().createTextCursor());
 		XIndexAccess xNumRule_assert_odt = (XIndexAccess) UnoRuntime.queryInterface(XIndexAccess.class, xCursorProps_Assert_odt.getPropertyValue("NumberingRules"));
@@ -1774,7 +1774,7 @@ public class ParagraphNumberingAndBulletCharacterStyle {
 		assertEquals("assert numbering and bullet","NumberingType",propsRule_assert_odt[11].Name);
 		assertEquals("assert numbering and bullet",NumberingType.ARABIC,propsRule_assert_odt[11].Value);
 
-		//reopen the document 
+		//reopen the document
 		XTextDocument assertDocument_doc=(XTextDocument)UnoRuntime.queryInterface(XTextDocument.class, app.loadDocument(Testspace.getPath("output/test.doc")));
 		XPropertySet xCursorProps_Assert_doc = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, assertDocument_doc.getText().createTextCursor());
 		XIndexAccess xNumRule_assert_doc = (XIndexAccess) UnoRuntime.queryInterface(XIndexAccess.class, xCursorProps_Assert_doc.getPropertyValue("NumberingRules"));
@@ -1793,23 +1793,23 @@ public class ParagraphNumberingAndBulletCharacterStyle {
 		xText.setString("we are Chinese,they are American.we are all living in one earth!Hello,world!Hello,world!Hello,world!Hello,world!Hello,world!Hello,world!" +
 				"Hello,world!Hello,world!");
 		//create cursor to select paragraph and formatting paragraph
-		XTextCursor xTextCursor = xText.createTextCursor();    
+		XTextCursor xTextCursor = xText.createTextCursor();
 		//create paragraph property set
 		XPropertySet xTextProps = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, xTextCursor);
 		//create document service factory
-		XMultiServiceFactory  xWriterFactory= (XMultiServiceFactory) UnoRuntime.queryInterface(XMultiServiceFactory.class, xTextDocument);		
+		XMultiServiceFactory  xWriterFactory= (XMultiServiceFactory) UnoRuntime.queryInterface(XMultiServiceFactory.class, xTextDocument);
 		//set numbering character
 		XIndexAccess xNumRule = (XIndexAccess) UnoRuntime.queryInterface(XIndexAccess.class,xWriterFactory.createInstance("com.sun.star.text.NumberingRules"));
 		PropertyValue[] propsRule = {new PropertyValue(),new PropertyValue()};
 		propsRule[0].Name = "NumberingType";
 		propsRule[0].Value = NumberingType.ARABIC;
 		propsRule[1].Name = "CharStyleName";
-		propsRule[1].Value = "Teletype";	
+		propsRule[1].Value = "Teletype";
 		XIndexReplace xReplaceRule = (XIndexReplace) UnoRuntime.queryInterface(XIndexReplace.class, xNumRule);
-		xReplaceRule.replaceByIndex(0, propsRule);  
+		xReplaceRule.replaceByIndex(0, propsRule);
 		//set paragraph numbering and bullet character
 		xTextProps.setPropertyValue("NumberingRules", xNumRule);
-		//save to odt 
+		//save to odt
 		XStorable xStorable_odt = (XStorable) UnoRuntime.queryInterface(XStorable.class, xTextDocument);
 		PropertyValue[] aStoreProperties_odt = new PropertyValue[2];
 		aStoreProperties_odt[0] = new PropertyValue();
@@ -1819,7 +1819,7 @@ public class ParagraphNumberingAndBulletCharacterStyle {
 		aStoreProperties_odt[1].Name = "FilterName";
 		aStoreProperties_odt[1].Value = "writer8";
 		xStorable_odt.storeToURL(FileUtil.getUrl(Testspace.getPath("output/test.odt")), aStoreProperties_odt);
-		//save to doc 
+		//save to doc
 		XStorable xStorable_doc = (XStorable) UnoRuntime.queryInterface(XStorable.class, xTextDocument);
 		PropertyValue[] aStoreProperties_doc = new PropertyValue[2];
 		aStoreProperties_doc[0] = new PropertyValue();
@@ -1828,10 +1828,10 @@ public class ParagraphNumberingAndBulletCharacterStyle {
 		aStoreProperties_doc[0].Value = true;
 		aStoreProperties_doc[1].Name = "FilterName";
 		aStoreProperties_doc[1].Value = "MS Word 97";
-		xStorable_doc.storeToURL(FileUtil.getUrl(Testspace.getPath("output/test.doc")), aStoreProperties_doc);	
+		xStorable_doc.storeToURL(FileUtil.getUrl(Testspace.getPath("output/test.doc")), aStoreProperties_doc);
 		app.closeDocument(xTextDocument);
 
-		//reopen the document 
+		//reopen the document
 		XTextDocument assertDocument_odt=(XTextDocument)UnoRuntime.queryInterface(XTextDocument.class, app.loadDocument(Testspace.getPath("output/test.odt")));
 		XPropertySet xCursorProps_Assert_odt = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, assertDocument_odt.getText().createTextCursor());
 		XIndexAccess xNumRule_assert_odt = (XIndexAccess) UnoRuntime.queryInterface(XIndexAccess.class, xCursorProps_Assert_odt.getPropertyValue("NumberingRules"));
@@ -1843,7 +1843,7 @@ public class ParagraphNumberingAndBulletCharacterStyle {
 		assertEquals("assert numbering and bullet","NumberingType",propsRule_assert_odt[11].Name);
 		assertEquals("assert numbering and bullet",NumberingType.ARABIC,propsRule_assert_odt[11].Value);
 
-		//reopen the document 
+		//reopen the document
 		XTextDocument assertDocument_doc=(XTextDocument)UnoRuntime.queryInterface(XTextDocument.class, app.loadDocument(Testspace.getPath("output/test.doc")));
 		XPropertySet xCursorProps_Assert_doc = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, assertDocument_doc.getText().createTextCursor());
 		XIndexAccess xNumRule_assert_doc = (XIndexAccess) UnoRuntime.queryInterface(XIndexAccess.class, xCursorProps_Assert_doc.getPropertyValue("NumberingRules"));

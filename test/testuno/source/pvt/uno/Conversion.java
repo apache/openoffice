@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 package pvt.uno;
@@ -59,34 +59,34 @@ public class Conversion {
 	@FileRepos
 	public static String repos = System.getProperty("conversion.repos", getDataPath("uno"));
 	@FileFilter
-	public static String filter = System.getProperty("conversion.filter", 
-			  "-f .*(doc|dot|odt|ott)$ writer_pdf_Export pdf " 
+	public static String filter = System.getProperty("conversion.filter",
+			  "-f .*(doc|dot|odt|ott)$ writer_pdf_Export pdf "
 			+ "-f .*(xls|xlt|ods|ots)$ calc_pdf_Export pdf "
-			+ "-f .*(ppt|ppt|odp|otp)$ impress_pdf_Export pdf " 
+			+ "-f .*(ppt|ppt|odp|otp)$ impress_pdf_Export pdf "
 			+ "-f .*(doc|dot|docx|docm|dotx|dotm)$ writer8 odt "
-			+ "-f .*(xls|xlt|xlsx|xltx|xlsm|xltm)$ calc8 ods " 
+			+ "-f .*(xls|xlt|xlsx|xltx|xlsm|xltm)$ calc8 ods "
 			+ "-f .*(ppt|pot|pptx|pptm|potm|potx)$ impress8 odp "
-			+ "-f .*(odt|ott)$ 'MS Word 97' doc " 
-			+ "-f .*(ods|ots)$ 'MS Excel 97' xls " 
+			+ "-f .*(odt|ott)$ 'MS Word 97' doc "
+			+ "-f .*(ods|ots)$ 'MS Excel 97' xls "
 			+ "-f .*(odp|otp)$ 'MS PowerPoint 97' ppt");
 
 	@FileRepeat
 	public static int repeat = Integer.parseInt(System.getProperty("conversion.repeat", "8"));
-	
+
 	public static String clean = System.getProperty("conversion.clean", "file");
-	
+
 	public static int nLevelInfo = Integer.parseInt(System.getProperty("conversion.limitationcheck", "0"));	// Level info: starts from 1, 0 means no need for limitation check
 
 	public static long nSleep = Long.parseLong(System.getProperty("conversion.sleep", "0"));	// Sleep before loadComponentFromURL and storeToURL, millisecond
-	
+
 	private static OpenOffice aoo = new OpenOffice();
-	
+
 	private static UnoApp app = null;
-	
+
 	private static DataSheet result;
-	
+
 	private static int counter = -1;
-	
+
 	@BeforeClass
 	public static void beforeClass() throws Exception {
 		aoo.setUnoUrl(OpenOffice.DEFAULT_UNO_URL);
@@ -96,16 +96,16 @@ public class Conversion {
 		result = new DataSheet(getFile("output/" + Conversion.class.getName()+ ".xml"));
 		result.addRow("data", "File","Scenario", "No", "Time Consumed After Closing","Time Consumed After Saving","Time Consumed After Loading", "File Size", "Exported File Size");
 	}
-	
+
 	@AfterClass
 	public static void afterClass() throws Exception {
 		app.close();
 	}
-	
+
 	private String sourcePath = null;
 	private String targetFilterName = null;
 	private String targetExtName = null;
-	
+
 	private File sourceFile = null;
 	private File targetFile = null;
 	private String sourceFileUrl = null;
@@ -116,7 +116,7 @@ public class Conversion {
 	private long loadTime = -1;
 	private long saveTime = -1;
 	private long closeTime = -1;
-	
+
 	public Conversion(String sourcePath, String targetFilterName, String targetExtName) {
 		super();
 		this.sourcePath = sourcePath;
@@ -124,14 +124,14 @@ public class Conversion {
 		this.targetExtName = targetExtName;
 		counter++;
 	}
-	
+
 	@Before
 	public void before() throws Exception {
 		sourceFile = new File(sourcePath);
 		sourceFileUrl = FileUtil.getUrl(this.sourceFile);
 		targetFile = getFile("classtemp/" + sourceFile.getName()+ "." + targetExtName);
 		targetFileUrl = FileUtil.getUrl(this.targetFile);
-		
+
 		scenario = FileUtil.getFileExtName(sourceFile.getName()).toLowerCase() + " to " + FileUtil.getFileExtName(targetFile.getName()).toLowerCase();
 		String pathSource = sourceFile.getCanonicalPath().replace("\\", "/");
 		String pathRepos = new File(repos).getCanonicalPath().replace("\\", "/") + "/";
@@ -139,7 +139,7 @@ public class Conversion {
 		log.info("Start [File: " + sourceFileId + "] [Size: " + (sourceFile.length() / 1024) + "KB] [Scenario: " + scenario + "]");
 		app.start();
 	}
-	
+
 	@After
 	public void after() throws Exception{
 		result.addRow("data", sourceFileId, scenario, counter % repeat , closeTime, saveTime, loadTime, sourceFile.length(), targetFile.length());
@@ -158,25 +158,25 @@ public class Conversion {
 		return p;
 	}
 
-	
+
 	@Test(timeout=10 * 60000)
 	public void testConversion() throws Exception {
 		try {
 			if (nSleep > 0)
 				Thread.sleep(nSleep);
 			long start = System.currentTimeMillis();
-			XComponent doc = app.loadDocumentFromURL(sourceFileUrl, 
+			XComponent doc = app.loadDocumentFromURL(sourceFileUrl,
 					propertyValue("Hidden", true),
 					propertyValue("ReadOnly", true),
 					propertyValue("AsyncMode", false),
 					propertyValue("MacroExecutionMode", MacroExecMode.NEVER_EXECUTE),
 					propertyValue("LimitationCheckLevel", nLevelInfo));
-	
+
 			loadTime = System.currentTimeMillis() - start;
-			
+
 			if (nSleep > 0)
 				Thread.sleep(nSleep);
-			app.saveDocumentToURL(doc, targetFileUrl, 
+			app.saveDocumentToURL(doc, targetFileUrl,
 					propertyValue( "FilterName", targetFilterName),
 					propertyValue( "Overwrite", true));
 			saveTime = System.currentTimeMillis() - start - nSleep;
@@ -190,13 +190,13 @@ public class Conversion {
 				saveTime = -2;
 				closeTime = -2;
 			}
-			
+
 			if( 3878 == errCode ) {	// file is corrupt
 				loadTime = -3;
 				saveTime = -3;
 				closeTime = -3;
 			}
-			
+
 			throw e;
 		}
 	}

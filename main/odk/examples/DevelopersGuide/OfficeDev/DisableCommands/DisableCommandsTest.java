@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -40,7 +40,7 @@ import com.sun.star.text.XTextDocument;
  * commands.
  */
 public class DisableCommandsTest extends java.lang.Object {
-    
+
     /*
      * A list of command names
      */
@@ -51,37 +51,37 @@ public class DisableCommandsTest extends java.lang.Object {
         new String( "SelectAll" ),
         new String( "Quit" ),
     };
-    
+
     private static XComponentContext xRemoteContext = null;
     private static XMultiComponentFactory xRemoteServiceManager = null;
     private static XURLTransformer xTransformer = null;
     private static XMultiServiceFactory xConfigProvider = null;
-    
+
     /*
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        
+
         try {
             // get the remote office context. If necessary a new office
             // process is started
             xRemoteContext = com.sun.star.comp.helper.Bootstrap.bootstrap();
             System.out.println("Connected to a running office ...");
             xRemoteServiceManager = xRemoteContext.getServiceManager();
-            
+
             Object transformer = xRemoteServiceManager.createInstanceWithContext(
                           "com.sun.star.util.URLTransformer", xRemoteContext );
             xTransformer = (com.sun.star.util.XURLTransformer)
                 UnoRuntime.queryInterface(com.sun.star.util.XURLTransformer.class,
                                           transformer );
-            
+
             Object configProvider = xRemoteServiceManager.createInstanceWithContext(
                           "com.sun.star.configuration.ConfigurationProvider",
                           xRemoteContext );
             xConfigProvider = (com.sun.star.lang.XMultiServiceFactory)
                 UnoRuntime.queryInterface(
                     com.sun.star.lang.XMultiServiceFactory.class, configProvider );
-        
+
             // create a new test document
             Object oDesktop = xRemoteServiceManager.createInstanceWithContext(
                 "com.sun.star.frame.Desktop", xRemoteContext);
@@ -106,13 +106,13 @@ public class DisableCommandsTest extends java.lang.Object {
                                      + "example and close the document.");
 
             // ensure that the document content is optimal visible
-            com.sun.star.frame.XModel xModel = 
+            com.sun.star.frame.XModel xModel =
                 (com.sun.star.frame.XModel)UnoRuntime.queryInterface(
                     com.sun.star.frame.XModel.class, xDoc);
             // get the frame for later usage
             com.sun.star.frame.XFrame xFrame =
                 xModel.getCurrentController().getFrame();
-            
+
             com.sun.star.view.XViewSettingsSupplier xViewSettings =
                 (com.sun.star.view.XViewSettingsSupplier)UnoRuntime.queryInterface(
                     com.sun.star.view.XViewSettingsSupplier.class,
@@ -125,13 +125,13 @@ public class DisableCommandsTest extends java.lang.Object {
             // First we need a defined starting point. So we have to remove
             // all commands from the disabled set!
             enableCommands();
-            
+
             // Check if the commands are usable
             testCommands( false );
-            
+
             // Disable the commands
             disableCommands();
-            
+
             // Now the commands shouldn't be usable anymore
             testCommands( true );
 
@@ -140,7 +140,7 @@ public class DisableCommandsTest extends java.lang.Object {
             System.out.println("\nYou can now check the disabled commands.\n"
                                +"Please press 'return' to enable the commands!");
             waitForUserInput();
-            
+
             // Remove disable commands to make Office usable again
             enableCommands();
 
@@ -150,7 +150,7 @@ public class DisableCommandsTest extends java.lang.Object {
                                +"Please press 'return' to finish the example and "
                                +"close the document!");
             waitForUserInput();
-            
+
             // close test document
             com.sun.star.util.XCloseable xCloseable = (com.sun.star.util.XCloseable)
                 UnoRuntime.queryInterface(com.sun.star.util.XCloseable.class,
@@ -161,7 +161,7 @@ public class DisableCommandsTest extends java.lang.Object {
             } else
             {
                 xComponent.dispose();
-            }            
+            }
         }
         catch (java.lang.Exception e){
             e.printStackTrace();
@@ -181,7 +181,7 @@ public class DisableCommandsTest extends java.lang.Object {
 
         reader.read();
     }
-    
+
     /**
      * Test the commands that we enabled/disabled
      */
@@ -198,8 +198,8 @@ public class DisableCommandsTest extends java.lang.Object {
         if ( xFrame != null )
         {
             // We have a frame. Now we need access to the dispatch provider.
-            xDispatchProvider = 
-                (com.sun.star.frame.XDispatchProvider)UnoRuntime.queryInterface( 
+            xDispatchProvider =
+                (com.sun.star.frame.XDispatchProvider)UnoRuntime.queryInterface(
 	                com.sun.star.frame.XDispatchProvider.class, xFrame );
             if ( xDispatchProvider != null )
             {
@@ -211,13 +211,13 @@ public class DisableCommandsTest extends java.lang.Object {
                     com.sun.star.util.URL[] aURL  = new com.sun.star.util.URL[1];
                     aURL[0] = new com.sun.star.util.URL();
                     com.sun.star.frame.XDispatch xDispatch = null;
-                    
+
                     aURL[0].Complete = ".uno:" + aCommandURLTestSet[n];
                     xTransformer.parseSmart( aURL, ".uno:" );
-                    
+
                     // Try to get a dispatch object for our URL
                     xDispatch = xDispatchProvider.queryDispatch( aURL[0], "", 0 );
-                    
+
                     if ( xDispatch != null )
                     {
                         if ( bDisabledCmds )
@@ -262,14 +262,14 @@ public class DisableCommandsTest extends java.lang.Object {
         try {
             // Create configuration update access to have write access to the
             // configuration
-            Object xAccess = xConfigProvider.createInstanceWithArguments( 
+            Object xAccess = xConfigProvider.createInstanceWithArguments(
                              "com.sun.star.configuration.ConfigurationUpdateAccess",
                              lParams );
-       
+
             com.sun.star.container.XNameAccess xNameAccess =
                 (com.sun.star.container.XNameAccess)UnoRuntime.queryInterface(
                     com.sun.star.container.XNameAccess.class, xAccess );
-            
+
             if ( xNameAccess != null ) {
                 // We need the XNameContainer interface to remove the nodes by name
                 com.sun.star.container.XNameContainer xNameContainer =
@@ -289,13 +289,13 @@ public class DisableCommandsTest extends java.lang.Object {
                     catch ( com.sun.star.container.NoSuchElementException e ) {
                     }
                 }
-            }                    
+            }
 
             // Commit our changes
             com.sun.star.util.XChangesBatch xFlush =
                 (com.sun.star.util.XChangesBatch)UnoRuntime.queryInterface(
                     com.sun.star.util.XChangesBatch.class, xAccess);
-            
+
             xFlush.commitChanges();
         }
         catch ( com.sun.star.uno.Exception e ) {
@@ -303,7 +303,7 @@ public class DisableCommandsTest extends java.lang.Object {
             System.out.println( e );
         }
     }
-    
+
     /**
      * Disable all commands defined in the aCommandURLTestSet array
      */
@@ -311,7 +311,7 @@ public class DisableCommandsTest extends java.lang.Object {
         // Set the root path for our configuration access
         com.sun.star.beans.PropertyValue[] lParams =
             new com.sun.star.beans.PropertyValue[1];
-        
+
         lParams[0] = new com.sun.star.beans.PropertyValue();
         lParams[0].Name  = new String("nodepath");
         lParams[0].Value = "/org.openoffice.Office.Commands/Execute/Disabled";
@@ -319,41 +319,41 @@ public class DisableCommandsTest extends java.lang.Object {
         try {
             // Create configuration update access to have write access to the
             // configuration
-            Object xAccess = xConfigProvider.createInstanceWithArguments( 
+            Object xAccess = xConfigProvider.createInstanceWithArguments(
                              "com.sun.star.configuration.ConfigurationUpdateAccess",
                              lParams );
-        
-            com.sun.star.lang.XSingleServiceFactory xSetElementFactory = 
+
+            com.sun.star.lang.XSingleServiceFactory xSetElementFactory =
                 (com.sun.star.lang.XSingleServiceFactory)UnoRuntime.queryInterface(
                     com.sun.star.lang.XSingleServiceFactory.class, xAccess );
 
             com.sun.star.container.XNameContainer xNameContainer =
                 (com.sun.star.container.XNameContainer)UnoRuntime.queryInterface(
                     com.sun.star.container.XNameContainer.class, xAccess );
-                        
+
             if ( xSetElementFactory != null && xNameContainer != null ) {
                 Object[] aArgs = new Object[0];
-                    
+
                 for ( int i = 0; i < aCommandURLTestSet.length; i++ ) {
                     // Create the nodes with the XSingleServiceFactory of the
                     // configuration
                     Object xNewElement =
                         xSetElementFactory.createInstanceWithArguments( aArgs );
-                    
+
                     if ( xNewElement != null ) {
                         // We have a new node. To set the properties of the node
                         // we need the XPropertySet interface.
-                        com.sun.star.beans.XPropertySet xPropertySet = 
+                        com.sun.star.beans.XPropertySet xPropertySet =
                             (com.sun.star.beans.XPropertySet)
                             UnoRuntime.queryInterface(
                                 com.sun.star.beans.XPropertySet.class,
                                 xNewElement );
-                            
+
                         if ( xPropertySet != null ) {
                             // Create a unique node name.
                             String aCmdNodeName = new String( "Command-" );
                             aCmdNodeName += i;
-                            
+
                             // Insert the node into the Disabled set
                             xPropertySet.setPropertyValue( "Command",
                                                            aCommandURLTestSet[i] );
@@ -362,20 +362,20 @@ public class DisableCommandsTest extends java.lang.Object {
                         }
                     }
                 }
-                
+
                 // Commit our changes
                 com.sun.star.util.XChangesBatch xFlush =
                     (com.sun.star.util.XChangesBatch)UnoRuntime.queryInterface(
                         com.sun.star.util.XChangesBatch.class, xAccess);
                 xFlush.commitChanges();
-            }            
+            }
         }
         catch ( com.sun.star.uno.Exception e )
         {
             System.err.println( "Exception detected!" + e);
             e.printStackTrace();
         }
-    }    
+    }
 
     /**
      * reset URL so it can be reused

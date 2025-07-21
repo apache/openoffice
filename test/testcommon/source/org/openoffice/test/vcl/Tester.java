@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -36,9 +36,9 @@ import java.util.StringTokenizer;
  */
 public class Tester {
 	static Robot robot;
-	
+
 	static double factor = Double.parseDouble(System.getProperty("sleep.factor", "1.0"));
-	
+
 	static {
 		try {
 			robot = new Robot();
@@ -48,13 +48,13 @@ public class Tester {
 			e.printStackTrace();
 		}
 	}
-	
+
 	public Tester() {
-		
+
 	}
-	
+
 	/**
-	 * 
+	 *
 	 * @param delay
 	 */
 	public static void sleep(double seconds) {
@@ -63,7 +63,7 @@ public class Tester {
 		} catch (InterruptedException e) {
 		}
 	}
-	
+
 	/**
 	 * Click on the screen
 	 * @param x
@@ -75,7 +75,7 @@ public class Tester {
 		robot.mouseRelease(InputEvent.BUTTON1_MASK);
 		robot.delay(100);
 	}
-	
+
 	public static void doubleClick(int x, int y) {
 		robot.mouseMove(x, y);
 		robot.mousePress(InputEvent.BUTTON1_MASK);
@@ -84,7 +84,7 @@ public class Tester {
 		robot.mouseRelease(InputEvent.BUTTON1_MASK);
 		robot.delay(100);
 	}
-	
+
 	/**
 	 * Right click on the screen
 	 * @param x
@@ -96,7 +96,7 @@ public class Tester {
 		robot.mouseRelease(InputEvent.BUTTON3_MASK);
 		robot.delay(100);
 	}
-	
+
 	public static void drag(int fromX, int fromY, int toX, int toY) {
 		robot.mouseMove(fromX, fromY);
 		robot.mousePress(InputEvent.BUTTON1_MASK);
@@ -138,7 +138,7 @@ public class Tester {
 			typeShortcut(shiftKeys);
 		}
 	}
-	
+
 	/**
 	 * Type shortcut
 	 * @param keys
@@ -152,7 +152,7 @@ public class Tester {
 				throw new RuntimeException("Invalid keys!");
 			robot.keyPress(keyCode);
 		}
-		
+
 		for(int i = keys.length - 1; i >= 0; i--) {
 			String key = keys[i];
 			key = key.toLowerCase();
@@ -162,15 +162,15 @@ public class Tester {
 			robot.keyRelease(keyCode);
 		}
 	}
-	
+
 	/**
 	 * Type the keys
 	 * To input shortcut, use "<key key key ...>". The keys is separated with space and surrounded with angle brackets.
 	 * For example, input the word "hello" and then press Ctrl+A to select the all content.
 	 * typeKeys("hello<ctrl a>");
-	 *  
-	 * 
-	 * 
+	 *
+	 *
+	 *
 	 * @param keys
 	 */
 	public static void typeKeys(String keys) {
@@ -310,7 +310,7 @@ public class Tester {
 		keyMap.put(' ', new String[]{"space"});
 		keyMap.put('\t', new String[]{"tab"});
 	}
-	
+
     public static void setCustomizedShortcut(String name, String... keys) {
     	customizedMap.put(name, keys);
     }

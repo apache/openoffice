@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -34,10 +34,10 @@ import com.sun.star.uno.UnoRuntime;
 /**
  * Inteface test for XSheetFilterableEx
  *
- * methods: 
+ * methods:
  *
  *  createFilterDescriptorByObject
- * 
+ *
  */
 public class _XSheetFilterableEx extends MultiMethodTest {
     public XSheetFilterableEx oObj = null;
@@ -47,7 +47,7 @@ public class _XSheetFilterableEx extends MultiMethodTest {
      * a XSheetFilterDescriptor with it.
      * Returns OK if the Descriptor isn't null and checkFilterDescriptor returns true
      */
-    
+
     public void _createFilterDescriptorByObject() {
         boolean res = true;
         Object parent = tEnv.getTestObject();
@@ -64,11 +64,11 @@ public class _XSheetFilterableEx extends MultiMethodTest {
         }
         tRes.tested("createFilterDescriptorByObject()",res);
     }
-    
+
     /**
      * returns true if the Method getFilterFields() returns a non empty array
      * and all Fields can be gained without exception
-     */ 
+     */
 
     public boolean checkFilterDescriptor(XSheetFilterDescriptor desc) {
         TableFilterField[] fields = desc.getFilterFields();

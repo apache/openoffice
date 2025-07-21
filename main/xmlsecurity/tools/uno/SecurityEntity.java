@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -42,7 +42,7 @@ class SecurityEntity
 	 */
 	private static int m_nNextSecurityId = 1;
 	protected int m_nSecurityId;
-	
+
 	/*
 	 * xml security related components
 	 */
@@ -58,7 +58,7 @@ class SecurityEntity
 	 * the uri of the key material of this security entity
 	 */
 	private String m_keyURI;
-	
+
 	SecurityEntity(
 		XSecuritySAXEventKeeper xSAXEventKeeper,
 		XXMLSecurityContext xXMLSecurityContext,
@@ -73,7 +73,7 @@ class SecurityEntity
 		m_xXMLEncryption = xXMLEncryption;
 		m_xRemoteServiceManager = xRemoteServiceManager;
 		m_xRemoteContext = xRemoteContext;
-		
+
 		m_nSecurityId = getNextSecurityId();
 		m_keyURI = null;
 	}
@@ -81,7 +81,7 @@ class SecurityEntity
 /**************************************************************************************
  * private methods
  **************************************************************************************/
-	
+
 	/*
 	 * generates a new security id.
 	 */
@@ -94,7 +94,7 @@ class SecurityEntity
 /**************************************************************************************
  * protected methods
  **************************************************************************************/
-	
+
 	/*
 	 * notifies the key collector about the key id, this key id
 	 * is used to ask the SAXEventKeeper to release the bufferred
@@ -106,7 +106,7 @@ class SecurityEntity
 	{
 		try
 		{
-			XKeyCollector xKeyCollector = 
+			XKeyCollector xKeyCollector =
 				(XKeyCollector)UnoRuntime.queryInterface(
 					XKeyCollector.class, m_xReferenceResolvedListener);
 			xKeyCollector.setKeyId(id);
@@ -116,7 +116,7 @@ class SecurityEntity
 			e.printStackTrace();
 		}
 	}
-	
+
 	/*
 	 * set the key uri, which will be the value of the id attribute
 	 * of the key element
@@ -125,17 +125,17 @@ class SecurityEntity
 	{
 		m_keyURI = new String(uri);
 	}
-	
+
 	protected XReferenceResolvedListener getReferenceListener()
 	{
 		return m_xReferenceResolvedListener;
 	}
-	
+
 	protected int getSecurityId()
 	{
 		return m_nSecurityId;
 	}
-	
+
 	/*
 	 * configures the key material to the security entity.
 	 *
@@ -150,7 +150,7 @@ class SecurityEntity
 	protected boolean setKey(String uri, boolean isExporting)
 	{
 		boolean rc = false;
-		
+
 		if (m_keyURI != null &&
 			m_keyURI.equals(uri))
 		{
@@ -158,40 +158,40 @@ class SecurityEntity
 				isExporting?
 				(ElementMarkPriority.BEFOREMODIFY):(ElementMarkPriority.AFTERMODIFY),
 				false );
-				
+
 			setKeyId(referenceId);
 			m_xSAXEventKeeper.setSecurityId(referenceId, m_nSecurityId);
 
-			XReferenceResolvedBroadcaster xReferenceResolvedBroadcaster = 
+			XReferenceResolvedBroadcaster xReferenceResolvedBroadcaster =
 				(XReferenceResolvedBroadcaster)UnoRuntime.queryInterface(
 					XReferenceResolvedBroadcaster.class, m_xSAXEventKeeper);
-			
+
 			xReferenceResolvedBroadcaster.addReferenceResolvedListener(referenceId, m_xReferenceResolvedListener);
-				
+
 			rc = true;
 		}
-		
+
 		return rc;
 	}
-	
+
 	/*
 	 * ends this misstion, asks the security engine to clear up all
 	 * resources.
 	 */
 	protected boolean endMission()
 	{
-		XMissionTaker xMissionTaker = 
+		XMissionTaker xMissionTaker =
 			(XMissionTaker)UnoRuntime.queryInterface(
 				XMissionTaker.class, m_xReferenceResolvedListener);
-		
+
 		boolean rc = xMissionTaker.endMission();
-		
+
 		m_xXMLSecurityContext = null;
 		m_xXMLSignature = null;
 		m_xXMLEncryption = null;
 		m_xReferenceResolvedListener = null;
 		m_xSAXEventKeeper = null;
-		
+
 		return rc;
 	}
 }

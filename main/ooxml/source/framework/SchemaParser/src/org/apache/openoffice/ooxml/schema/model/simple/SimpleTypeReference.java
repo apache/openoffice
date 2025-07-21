@@ -40,12 +40,12 @@ public class SimpleTypeReference
         final Location aLocation)
     {
         super(aParent, null, aLocation);
-        maReferencedTypeName = aReferencedTypeName;        
+        maReferencedTypeName = aReferencedTypeName;
     }
-    
-    
-    
-    
+
+
+
+
     public SimpleType GetReferencedSimpleType (final SchemaBase aSchemaBase)
     {
         final Node aType = aSchemaBase.GetTypeForName(maReferencedTypeName);
@@ -56,52 +56,52 @@ public class SimpleTypeReference
         else
             return (SimpleType)aType;
     }
-    
-    
-    
-    
+
+
+
+
     @Override
     public INode GetReferencedNode (final SchemaBase aSchemaBase)
     {
         return GetReferencedSimpleType(aSchemaBase);
     }
 
-        
-    
-    
+
+
+
     public QualifiedName GetReferencedTypeName()
     {
         return maReferencedTypeName;
     }
 
-    
-    
-    
+
+
+
     @Override
     public void AcceptVisitor (final INodeVisitor aVisitor)
     {
         aVisitor.Visit(this);
     }
 
-    
-    
-    
+
+
+
     @Override
     public NodeType GetNodeType ()
     {
         return NodeType.SimpleTypeReference;
     }
-    
-    
-    
+
+
+
     @Override
     public String toString ()
     {
         return "reference to simple type "+maReferencedTypeName;
     }
-    
-    
-    
-    
+
+
+
+
     private final QualifiedName maReferencedTypeName;
 }

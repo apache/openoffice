@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 package complex.storages;
@@ -57,7 +57,7 @@ public class RegressionTest_114358 implements StorageTest {
 			XStream xTempFileStream = m_aTestHelper.CreateTempFileStream( m_xMSF );
 			if ( xTempFileStream == null )
 				return false;
-		
+
 			// create storage based on the temporary stream
 			Object pArgs[] = new Object[2];
 			pArgs[0] = (Object) xTempFileStream;
@@ -80,7 +80,7 @@ public class RegressionTest_114358 implements StorageTest {
 				m_aTestHelper.Error( "Can't create substorage!" );
 				return false;
 			}
-			
+
 			byte pBytes1[] = { 1, 1, 1, 1, 1 };
 
 			// open a new substream, set "MediaType" and "Compressed" properties to it and write some bytes
@@ -100,7 +100,7 @@ public class RegressionTest_114358 implements StorageTest {
 															false,
 															ElementModes.WRITE ) )
 				return false;
-	
+
 			// commit substorage first
 			if ( !m_aTestHelper.commitStorage( xTempSubStorage ) )
 				return false;
@@ -141,7 +141,7 @@ public class RegressionTest_114358 implements StorageTest {
 				m_aTestHelper.Error( "Can't create substorage!" );
 				return false;
 			}
-			
+
 			// open the substream, set new "MediaType" and "Compressed" properties to it, truncate and write new contents
 			if ( !m_aTestHelper.WriteBytesToSubstream( xTempSubStorage, "SubStream1", "MediaType4", true, pBytes2 ) )
 				return false;
@@ -184,7 +184,7 @@ public class RegressionTest_114358 implements StorageTest {
 				m_aTestHelper.Error( "Can't create substorage!" );
 				return false;
 			}
-	
+
 			if ( !m_aTestHelper.checkStorageProperties( xTempStorage, "MediaType2", true, ElementModes.READ ) )
 				return false;
 
@@ -206,5 +206,5 @@ public class RegressionTest_114358 implements StorageTest {
 			m_aTestHelper.Error( "Exception: " + e );
 			return false;
 		}
-    } 
+    }
 }

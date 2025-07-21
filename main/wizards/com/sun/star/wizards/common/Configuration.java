@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -40,8 +40,8 @@ import com.sun.star.util.XChangesBatch;
  * For the get methods, two parameters must be given: name and parent, where name is the
  * name of the property, parent is a HierarchyElement (::com::sun::star::configuration::HierarchyElement)<br/>
  * The get and set methods support hieryrchical property names like "options/gridX". <br/>
- * NOTE: not yet supported, but sometime later, 
- * If you will ommit the "parent" parameter, then the "name" parameter must be in hierarchy form from 
+ * NOTE: not yet supported, but sometime later,
+ * If you will ommit the "parent" parameter, then the "name" parameter must be in hierarchy form from
  * the root of the registry.
  * @author  rpiterman
  */

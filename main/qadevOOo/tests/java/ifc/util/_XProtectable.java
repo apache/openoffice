@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -31,7 +31,7 @@ import lib.MultiMethodTest;
 public class _XProtectable extends MultiMethodTest {
     public XProtectable oObj = null;
     String sPassWord = "TopSecret";
-    
+
     /**
      * Check, if the sheet is protected.
      * Has OK status, if this is the case.
@@ -41,7 +41,7 @@ public class _XProtectable extends MultiMethodTest {
         boolean result = oObj.isProtected();
         tRes.tested("isProtected()", result);
     }
-    
+
     /**
      * Protect the sheet
      */
@@ -49,7 +49,7 @@ public class _XProtectable extends MultiMethodTest {
         oObj.protect(sPassWord);
         tRes.tested("protect()", true);
     }
-    
+
     /**
      * Unprotect with wrong password, see if it's still protected.
      * Unprotect with correct password, see if it's unprotected.
@@ -76,5 +76,5 @@ public class _XProtectable extends MultiMethodTest {
         result &= !oObj.isProtected();
         tRes.tested("unprotect()", result);
     }
-    
+
 }

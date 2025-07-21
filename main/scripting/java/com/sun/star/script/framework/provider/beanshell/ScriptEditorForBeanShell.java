@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -117,7 +117,7 @@ public class ScriptEditorForBeanShell
 
     /**
      *  Get the ScriptEditorForBeanShell instance for this URL
-     * 
+     *
      * @param  url         The URL of the script source file
      *
      * @return             The ScriptEditorForBeanShell associated with
@@ -165,16 +165,16 @@ public class ScriptEditorForBeanShell
      */
     public String getExtension() {
         return "bsh";
-    } 
+    }
 
 
     /**
-     *  Indicates the line where error occurred 
+     *  Indicates the line where error occurred
      *
      */
     public void indicateErrorLine( int lineNum )
     {
-        model.indicateErrorLine( lineNum ); 
+        model.indicateErrorLine( lineNum );
     }
     /**
      *  Executes the script edited by the editor
@@ -230,7 +230,7 @@ public class ScriptEditorForBeanShell
             catch (IOException ioe) {
                 showErrorMessage( "Error loading file: " + ioe.getMessage() );
             }
-        }        
+        }
     }
 
     private ScriptEditorForBeanShell() {
@@ -243,15 +243,15 @@ public class ScriptEditorForBeanShell
         this.scriptURL = url;
         this.model     = new ScriptSourceModel(url);
         this.filename  = url.getFile();
-        this.cl = cl; 
+        this.cl = cl;
         try {
             Class c = Class.forName(
                 "org.openoffice.netbeans.editor.NetBeansSourceView");
 
             Class[] types = new Class[] { ScriptSourceModel.class };
-                                                                                
+
             java.lang.reflect.Constructor ctor = c.getConstructor(types);
-                                                                                
+
             if (ctor != null) {
                 Object[] args = new Object[] { this.model };
                 this.view = (ScriptSourceView) ctor.newInstance(args);
@@ -342,7 +342,7 @@ public class ScriptEditorForBeanShell
             return true;
         }
 
-        OutputStream fos = null; 
+        OutputStream fos = null;
         try {
             String s = view.getText();
             fos = scriptURL.openConnection().getOutputStream();

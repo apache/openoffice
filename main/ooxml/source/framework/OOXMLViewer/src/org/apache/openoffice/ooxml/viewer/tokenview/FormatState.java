@@ -35,27 +35,27 @@ public class FormatState<TokenType>
         maBoundingSize = aBoundingSize;
         maVisibleLines = aVisibleLines;
     }
-    
-    
-    
-    
+
+
+
+
     public Dimension GetTextBoundingSize()
     {
         return maBoundingSize;
     }
 
-    
-    
-    
+
+
+
     @Override
     public Iterator<Line<TokenType>> iterator ()
     {
         return maVisibleLines.iterator();
     }
 
-    
-    
-    
+
+
+
     private final Dimension maBoundingSize;
     private final Vector<Line<TokenType>> maVisibleLines;
 }

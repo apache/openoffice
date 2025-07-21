@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -70,7 +70,7 @@ import util.utils;
  */
 public class SwXAutoTextGroup extends TestCase {
     XTextDocument xTextDoc;
-    
+
     /**
      * Creates text document.
      */
@@ -84,7 +84,7 @@ public class SwXAutoTextGroup extends TestCase {
             throw new StatusException( "Couldn't create document", e );
         }
     }
-    
+
     /**
      * Disposes text document.
      */
@@ -92,11 +92,11 @@ public class SwXAutoTextGroup extends TestCase {
         log.println( "    disposing xTextDoc " );
         util.DesktopTools.closeDoc(xTextDoc);
     }
-    
+
     /**
      * Creating a Testenvironment for the interfaces to be tested.
      * Creates an instance of the service
-     * <code>com.sun.star.text.AutoTextContainer</code>, then creates a new 
+     * <code>com.sun.star.text.AutoTextContainer</code>, then creates a new
      * group into the container.<p>
      *     Object relations created :
      * <ul>
@@ -105,10 +105,10 @@ public class SwXAutoTextGroup extends TestCase {
      * </ul>
      */
     protected synchronized TestEnvironment createTestEnvironment(TestParameters Param, PrintWriter log) {
-        
+
         XInterface oObj = null;
         XAutoTextContainer oContainer;
-        
+
         log.println( "creating a test environment" );
         try {
             XMultiServiceFactory myMSF = (XMultiServiceFactory)Param.getMSF();
@@ -119,15 +119,15 @@ public class SwXAutoTextGroup extends TestCase {
             throw new StatusException("Couldn't create AutoTextContainer", e);
         }
         String myGroupName="myNewGroup2*1";
-        
+
         XAutoTextContainer xATC = (XAutoTextContainer) UnoRuntime.queryInterface(XAutoTextContainer.class, oContainer);
-        
+
         try {
             log.println("removing element with name '" + myGroupName + "'");
             xATC.removeByName(myGroupName);
         } catch (com.sun.star.container.NoSuchElementException e) {
         }
-        
+
         try {
             log.println("adding element with name '" + myGroupName + "'");
             xATC.insertNewByName(myGroupName);
@@ -138,37 +138,37 @@ public class SwXAutoTextGroup extends TestCase {
             ex.printStackTrace(log);
             throw new StatusException("could not insert '"+myGroupName+"' into container",ex);
         }
-        
-        
+
+
         XNameAccess oContNames = (XNameAccess) UnoRuntime.queryInterface(XNameAccess.class, oContainer);
-        
+
         if (Param.getBool(util.PropertyName.DEBUG_IS_ACTIVE)){
             String contNames[] = oContNames.getElementNames();
             for (int i =0; i < contNames.length; i++){
                 log.println("ContainerNames[ "+ i + "]: " + contNames[i]);
             }
         }
-        
+
         try{
             oObj = (XInterface) AnyConverter.toObject(new Type(XInterface.class),oContNames.getByName(myGroupName));
         } catch (com.sun.star.uno.Exception e) {
             e.printStackTrace(log);
             throw new StatusException("Couldn't get AutoTextGroup '"+myGroupName + "'", e);
         }
-        
+
         log.println("ImplementationName " + utils.getImplName(oObj));
-        
+
         log.println( "creating a new environment for AutoTextGroup object" );
         TestEnvironment tEnv = new TestEnvironment( oObj );
-        
+
         XText oText = xTextDoc.getText();
         oText.insertString(oText.getStart(), "New AutoText", true);
-        
+
         log.println( "adding TextRange as mod relation to environment" );
         tEnv.addObjRelation("TextRange", oText);
-        
+
         return tEnv;
     } // finish method getTestEnvironment
-    
-    
+
+
 }    // finish class SwXAutoTextGroup

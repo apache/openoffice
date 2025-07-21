@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,20 +7,20 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 /**
- * 
+ *
  */
 package fvt.gui.formula.importexport;
 
@@ -42,7 +42,7 @@ import testlib.gui.AppTool;
 
 
 public class FormulaInDifferentWays {
-	
+
 	@Rule
 	public Logger log = Logger.getLogger(this);
 
@@ -60,7 +60,7 @@ public class FormulaInDifferentWays {
 
 	/**
 	 * Test elements window active and inactive
-	 * 
+	 *
 	 * @throws Exception
 	 */
 	@Test
@@ -74,7 +74,7 @@ public class FormulaInDifferentWays {
 
 	/**
 	 * Test create a formula from Elements window
-	 * 
+	 *
 	 * @throws Exception
 	 */
 	@Test
@@ -98,8 +98,8 @@ public class FormulaInDifferentWays {
 		// Verify if the formula is correct
 		app.dispatch(".uno:Select");
 		app.dispatch(".uno:Copy");
-		assertEquals("The inserted formula into math", insertedFormula.concat(" "), app.getClipboard()); 
-		
+		assertEquals("The inserted formula into math", insertedFormula.concat(" "), app.getClipboard());
+
 		// Save and reopen the formula
 		FileUtil.deleteFile(saveTo);
 		saveAndReopen(saveTo);
@@ -109,12 +109,12 @@ public class FormulaInDifferentWays {
 		app.dispatch(".uno:Select");
 		app.dispatch(".uno:Copy");
 		assertEquals("The inserted formula into math", insertedFormula.concat(" "), app.getClipboard());
-	
+
 	}
 
 	/**
 	 * Test create a formula from right click menu in equation editor
-	 * 
+	 *
 	 * @throws Exception
 	 */
 	@Test
@@ -132,28 +132,28 @@ public class FormulaInDifferentWays {
 		typeKeys("<enter>");
 		typeKeys("<enter>");
 		typeKeys("a");
-		sleep(2); 
+		sleep(2);
 		String insertedFormula = "arcsin(a)";
 
 		// Verify if the formula is correct
 		app.dispatch(".uno:Select");
 		app.dispatch(".uno:Copy");
 
-		assertEquals("The inserted formula into math", insertedFormula.concat(" "), app.getClipboard()); 
+		assertEquals("The inserted formula into math", insertedFormula.concat(" "), app.getClipboard());
 		// Save and reopen the formula
 		FileUtil.deleteFile(saveTo);
 		saveAndReopen(saveTo);
-		
+
 		mathEditWindow.waitForExistence(10, 2);
 		// Verify if the formula still exists in the file, and correct
 		app.dispatch(".uno:Select");
 		app.dispatch(".uno:Copy");
-		assertEquals("The inserted formula into math", insertedFormula.concat(" "), app.getClipboard());																								
+		assertEquals("The inserted formula into math", insertedFormula.concat(" "), app.getClipboard());
 	}
 
 	/**
 	 * Test undo/redo in math
-	 * 
+	 *
 	 * @throws Exception
 	 */
 	@Test
@@ -175,12 +175,12 @@ public class FormulaInDifferentWays {
 		app.dispatch(".uno:Undo");
 		app.dispatch(".uno:Select");
 		app.dispatch(".uno:Copy");
-		assertEquals("The inserted formula into math", "+<?> ", app.getClipboard()); 																					
+		assertEquals("The inserted formula into math", "+<?> ", app.getClipboard());
 
 		// Redo and verify if it works fine
 		app.dispatch(".uno:Redo");
 		app.dispatch(".uno:Select");
 		app.dispatch(".uno:Copy");
-		assertEquals("The inserted formula into math", "+a ", app.getClipboard()); 
+		assertEquals("The inserted formula into math", "+a ", app.getClipboard());
 	}
 }

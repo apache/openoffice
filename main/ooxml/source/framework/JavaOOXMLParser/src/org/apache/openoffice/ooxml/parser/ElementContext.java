@@ -41,34 +41,34 @@ public class ElementContext
         maAttributeValues = aValues;
         maParentContext = aParentContext;
     }
-    
-    
-    
-    
+
+
+
+
     public String GetElementName ()
     {
         return msElementName;
     }
-    
-    
-    
-    
+
+
+
+
     public String GetTypeName ()
     {
         return msTypeName;
     }
-    
-    
-    
-    
+
+
+
+
     public AttributeValues GetAttributes ()
     {
         return maAttributeValues;
     }
-    
-    
-    
-    
+
+
+
+
     /** Return the context of the parent element.
      *  Can be null when there is no parent element.
      */
@@ -76,10 +76,10 @@ public class ElementContext
     {
         return maParentContext;
     }
-    
-    
-    
-    
+
+
+
+
     private final String msElementName;
     private final String msTypeName;
     private final boolean mbIsSkipping;

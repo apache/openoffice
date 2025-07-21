@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -66,7 +66,7 @@ import java.io.FileNotFoundException;
  *  PluginFactoryImpl}.</p>
  *
  *  <p>The <code>serialize</code> method transforms the DOM
- *  document from the given <code>Document</code> object by 
+ *  document from the given <code>Document</code> object by
  *  means of a supplied Xsl Stylesheet.</p>
  *
  *  @author      Aidan Butler
@@ -79,12 +79,12 @@ public final class DocumentSerializerImpl
 
     /** SXW <code>Document</code> object that this converter processes. */
     private GenericOfficeDocument sxwDoc = null;
- 
+
     private PluginFactoryImpl pluginFactory = null;
 
     /**
      *  Constructor.
-     *  
+     *
      *  @param  pf   A <code>PluginFactoryImpl</code>
      *  @param  doc  A SXW <code>Document</code> to be converted.
      */
@@ -96,8 +96,8 @@ public final class DocumentSerializerImpl
 
     /**
      *  Method to convert a <code>Document</code> with an xsl stylesheet.
-     *  It creates a <code>Document</code> object, which is then transformed 
-     *  with the Xslt processor. A <code>ConvertData </code> object is 
+     *  It creates a <code>Document</code> object, which is then transformed
+     *  with the Xslt processor. A <code>ConvertData </code> object is
      *  constructed and returned.
      *
      *  @return cd     A <code>ConvertData</code> object.
@@ -120,29 +120,29 @@ public final class DocumentSerializerImpl
 	    DocumentType docType =domImpl.createDocumentType("office:document","-//OpenOffice.org//DTD OfficeDocument 1.0//EN",null);
 	    org.w3c.dom.Document newDoc = domImpl.createDocument("http://openoffice.org/2000/office","office:document",docType);
 
-	    
-	    Element rootElement=newDoc.getDocumentElement();
-	    rootElement.setAttribute("xmlns:office","http://openoffice.org/2000/office"); 
-	    rootElement.setAttribute("xmlns:style","http://openoffice.org/2000/style" ); 
-	    rootElement.setAttribute("xmlns:text","http://openoffice.org/2000/text"); 
-	     rootElement.setAttribute("xmlns:table","http://openoffice.org/2000/table"); 
 
-	    rootElement.setAttribute("xmlns:draw","http://openoffice.org/2000/drawing"); 
-	    rootElement.setAttribute("xmlns:fo","http://www.w3.org/1999/XSL/Format" ); 
-	    rootElement.setAttribute("xmlns:xlink","http://www.w3.org/1999/xlink" ); 
-	    rootElement.setAttribute("xmlns:dc","http://purl.org/dc/elements/1.1/" ); 
-	    rootElement.setAttribute("xmlns:meta","http://openoffice.org/2000/meta" ); 
-	    rootElement.setAttribute("xmlns:number","http://openoffice.org/2000/datastyle" ); 
-	    rootElement.setAttribute("xmlns:svg","http://www.w3.org/2000/svg" ); 
-	    rootElement.setAttribute("xmlns:chart","http://openoffice.org/2000/chart" ); 
-	    rootElement.setAttribute("xmlns:dr3d","http://openoffice.org/2000/dr3d" ); 
-	    rootElement.setAttribute("xmlns:math","http://www.w3.org/1998/Math/MathML" ); 
-	    rootElement.setAttribute("xmlns:form","http://openoffice.org/2000/form" ); 
-	    rootElement.setAttribute("xmlns:script","http://openoffice.org/2000/script" ); 
-	    rootElement.setAttribute("xmlns:config","http://openoffice.org/2001/config" ); 
-	    rootElement.setAttribute("office:class","text" ); 
-	    rootElement.setAttribute("office:version","1.0"); 
- 
+	    Element rootElement=newDoc.getDocumentElement();
+	    rootElement.setAttribute("xmlns:office","http://openoffice.org/2000/office");
+	    rootElement.setAttribute("xmlns:style","http://openoffice.org/2000/style" );
+	    rootElement.setAttribute("xmlns:text","http://openoffice.org/2000/text");
+	     rootElement.setAttribute("xmlns:table","http://openoffice.org/2000/table");
+
+	    rootElement.setAttribute("xmlns:draw","http://openoffice.org/2000/drawing");
+	    rootElement.setAttribute("xmlns:fo","http://www.w3.org/1999/XSL/Format" );
+	    rootElement.setAttribute("xmlns:xlink","http://www.w3.org/1999/xlink" );
+	    rootElement.setAttribute("xmlns:dc","http://purl.org/dc/elements/1.1/" );
+	    rootElement.setAttribute("xmlns:meta","http://openoffice.org/2000/meta" );
+	    rootElement.setAttribute("xmlns:number","http://openoffice.org/2000/datastyle" );
+	    rootElement.setAttribute("xmlns:svg","http://www.w3.org/2000/svg" );
+	    rootElement.setAttribute("xmlns:chart","http://openoffice.org/2000/chart" );
+	    rootElement.setAttribute("xmlns:dr3d","http://openoffice.org/2000/dr3d" );
+	    rootElement.setAttribute("xmlns:math","http://www.w3.org/1998/Math/MathML" );
+	    rootElement.setAttribute("xmlns:form","http://openoffice.org/2000/form" );
+	    rootElement.setAttribute("xmlns:script","http://openoffice.org/2000/script" );
+	    rootElement.setAttribute("xmlns:config","http://openoffice.org/2001/config" );
+	    rootElement.setAttribute("office:class","text" );
+	    rootElement.setAttribute("office:version","1.0");
+
 
 	    NodeList nodeList;
 	    Node tmpNode;
@@ -165,7 +165,7 @@ public final class DocumentSerializerImpl
 		    tmpNode = newDoc.importNode(nodeList.item(0),true);
 		    rootNode.appendChild(tmpNode);
 		}
-		nodeList= domDoc.getElementsByTagName(TAG_OFFICE_BODY);	
+		nodeList= domDoc.getElementsByTagName(TAG_OFFICE_BODY);
 		if (nodeList.getLength()>0){
 		    tmpNode = newDoc.importNode(nodeList.item(0),true);
 		    rootNode.appendChild(tmpNode);
@@ -175,17 +175,17 @@ public final class DocumentSerializerImpl
 	    }catch(Exception e){
 		System.out.println("\nAn Exception occurred with Xslt Serializer"+e);
 	    }
-	   
+
 	}
-	
+
 	try{
 	     baos=transform(domDoc);
 	}
 	catch (Exception e){
 		System.out.println("\n Error with Xslt\n");
 	}
-	
-	String ext = pluginFactory.getDeviceFileExtension();	
+
+	String ext = pluginFactory.getDeviceFileExtension();
         DOMDocument resultDomDoc=(DOMDocument)pluginFactory.createDeviceDocument(docName,new ByteArrayInputStream(baos.toByteArray()));
 	cd.addDocument (resultDomDoc);
 	return cd;
@@ -209,18 +209,18 @@ public final class DocumentSerializerImpl
 		    return null;
 		}
 	    }
-	    else 
+	    else
 		return null;
     }
 
 
     /*
      * This method performs the sxl transformation on the supplied <code>
-     * Document</code> and returns a <code>DOMResult</code> object. 
+     * Document</code> and returns a <code>DOMResult</code> object.
      *
      *  Xslt transformation code
      *
-     * @return baos A <code>ByteArrayOutputStream</code> object containing 
+     * @return baos A <code>ByteArrayOutputStream</code> object containing
      *               the result of the Xslt transformation.
      * @throws TransformerException,TransformerConfigurationException
      *		  , FileNotFoundException,IOException
@@ -228,7 +228,7 @@ public final class DocumentSerializerImpl
      */
 
 
-    private ByteArrayOutputStream transform(org.w3c.dom.Document domDoc) 
+    private ByteArrayOutputStream transform(org.w3c.dom.Document domDoc)
 	   throws TransformerException,TransformerConfigurationException
 		  , FileNotFoundException,IOException{
 	   //System.out.println("\nTransforming...");
@@ -236,13 +236,13 @@ public final class DocumentSerializerImpl
 	   //DOMResult xmlDomResult = new DOMResult();
 	   ByteArrayOutputStream baos= new ByteArrayOutputStream();
 	   try{
-	          
+
 		  DocumentBuilderFactory dFactory = DocumentBuilderFactory.newInstance();
 		  dFactory.setNamespaceAware(true);
-	   
+
 		  DocumentBuilder dBuilder = dFactory.newDocumentBuilder();
 		  String teststr = ci.getXsltSerial();
-		  
+
 		  teststr= teststr.substring(0,6);
 		  org.w3c.dom.Document xslDoc=null;
 	          if ((teststr.equals("http:/"))||(teststr.equals("file:/"))
@@ -251,23 +251,23 @@ public final class DocumentSerializerImpl
 		      xslDoc= dBuilder.parse(ci.getXsltSerial());
 
 		  }
-		  else{      
+		  else{
 		      //System.out.println(ci.getJarName()+"!/"+ci.getXsltSerial());
 		      xslDoc = dBuilder.parse(
 			      "jar:"+ci.getJarName()+"!/"+ci.getXsltSerial());
 		  }
-		 
-		  DOMSource xslDomSource = new DOMSource(xslDoc);     	
-		  DOMSource xmlDomSource = new DOMSource(domDoc);		
-	
+
+		  DOMSource xslDomSource = new DOMSource(xslDoc);
+		  DOMSource xmlDomSource = new DOMSource(domDoc);
+
 		  //call the transformer using the XSL, Source and Result.
-		  TransformerFactory tFactory = TransformerFactory.newInstance();	
+		  TransformerFactory tFactory = TransformerFactory.newInstance();
 		  tFactory.setURIResolver(this);
 		  Transformer transformer = tFactory.newTransformer(xslDomSource);
 
 		  transformer.transform(xmlDomSource, new StreamResult(baos));
-		  
-			/*  
+
+			/*
 		  transformer.transform(xmlDomSource, xmlDomResult); //Removed this impl because the DocType was not being written out
 
 		 // Serialize for output to standard out
@@ -277,8 +277,8 @@ public final class DocumentSerializerImpl
 		  serializer.setOutputStream(baos);
 		  serializer.asDOMSerializer().serialize(xmlDomResult.getNode());
 		  //serializer.asDOMSerializer().serialize(xmlDomSource.getNode());
-		  
-	      
+
+
 		  //System.out.println("\n** Transform Complete ***");
 		  */
 	   }

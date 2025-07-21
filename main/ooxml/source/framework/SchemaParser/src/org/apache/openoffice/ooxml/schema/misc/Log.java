@@ -27,7 +27,7 @@ import java.io.FileOutputStream;
 import java.io.PrintStream;
 
 /** Make output with indentation easier.
- */ 
+ */
 public class Log
 {
     public Log (final File aFile)
@@ -45,10 +45,10 @@ public class Log
         mbIsActive = maOut!=null;
         msIndentation = "";
     }
-    
-    
-    
-    
+
+
+
+
     public void AddComment (
         final String sFormat,
         final Object ... aArgumentList)
@@ -61,19 +61,19 @@ public class Log
             maOut.print("\n");
         }
     }
-    
-    
-    
-    
+
+
+
+
     public void StartBlock ()
     {
         if (mbIsActive)
             msIndentation += "    ";
     }
-    
-    
-    
-    
+
+
+
+
     public void EndBlock ()
     {
         if (mbIsActive)
@@ -93,10 +93,10 @@ public class Log
             maOut.print(sMessage);
         }
     }
-    
-    
-    
-    
+
+
+
+
     public void println (
         final String sMessage)
     {
@@ -107,19 +107,19 @@ public class Log
             maOut.print("\n");
         }
     }
-    
-    
-    
-    
+
+
+
+
     public void Close()
     {
         if (mbIsActive)
-            maOut.close();        
+            maOut.close();
     }
 
-    
-    
-    
+
+
+
     private final PrintStream maOut;
     private final boolean mbIsActive;
     private String msIndentation;

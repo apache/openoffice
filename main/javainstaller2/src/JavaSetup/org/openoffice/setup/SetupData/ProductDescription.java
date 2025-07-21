@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -36,31 +36,31 @@ import java.util.regex.Pattern;
  * @author Christof Pintaske
  */
 public class ProductDescription {
-    
+
     private class Pair {
         public Pattern search;
         public String  replacement;
-        
+
         public Pair(Pattern key, String value) {
             search      = key;
             replacement = value;
         }
     }
-    
+
     private Vector macro;   /* macro list with precompiled regex patterns */
     private HashMap map;    /* conventional key-value pairs */
     private String backslashText = "THIS_IS_A_BACKSLASH";
-    
-    /** 
+
+    /**
      * read properties from package description data
      */
- 
+
     protected ProductDescription(XMLPackageDescription descriptionData) {
         macro = new Vector();
         map   = new HashMap();
         parse(descriptionData);
      }
-    
+
     /**
      * retrieve information about general installation properties
      */
@@ -100,21 +100,21 @@ public class ProductDescription {
             System.out.println("Key: " + pair.search.pattern() + " Value: " + pair.replacement );
         }
     }
-    
+
     public String get(String key) {
         return (String) map.get(key);
     }
 
     private boolean doMaskBackslash(String[] arr) {
         boolean changed = false;
-        
+
         int index = arr[0].indexOf('\\');
         if ( index >= 0 ) {
             arr[0] = arr[0].replaceAll("\\", backslashText);
             // arr[0] = arr[0].replace("\\", backslashText);
             changed = true;
         }
-        
+
         return changed;
     }
 
@@ -125,9 +125,9 @@ public class ProductDescription {
     }
 
     public String replaceMacros(String s) {
-        
+
         String result = s;
-        
+
         for (int i = 0; i < macro.size(); i++) {
             Pair pair = (Pair) macro.get(i);
             Pattern pattern = pair.search;
@@ -148,13 +148,13 @@ public class ProductDescription {
 
         return result;
     }
-    
+
     /**
      * parse the wrapped package description
      */
-    
+
     private void parse(XMLPackageDescription data) {
-        
+
         XMLPackageDescription section;
 
         /* product description is a leaf at the root */
@@ -163,7 +163,7 @@ public class ProductDescription {
             if (section != null) {
                 parse(section);
             }
-        } else {       
+        } else {
             InstallData installData = InstallData.getInstance();
 
             /* check for a default installation directory */
@@ -172,8 +172,8 @@ public class ProductDescription {
                 String value = section.getValue();
                 if (value != null) {
                     installData.setDefaultDir(value);
-                    // installData.setInstallDir(value); 
-                }            
+                    // installData.setInstallDir(value);
+                }
             }
 
             /* check for a default product directory */
@@ -182,7 +182,7 @@ public class ProductDescription {
                 String value = section.getValue();
                 if (value != null) {
                     installData.setProductDir(value);
-                }            
+                }
             }
 
             /* check for the package format of this installation set */
@@ -191,7 +191,7 @@ public class ProductDescription {
                 String value = section.getValue();
                 if (value != null) {
                     installData.setPackageFormat(value);
-                }            
+                }
             }
 
             /* check for the package directory of this installation set */
@@ -200,7 +200,7 @@ public class ProductDescription {
                 String value = section.getValue();
                 if ((value != null) && (! value.equals(""))) {
                     installData.setPackageSubdir(value);
-                }            
+                }
             }
 
             /* check for the architecture of this installation set */
@@ -209,7 +209,7 @@ public class ProductDescription {
                 String value = section.getValue();
                 if ((value != null) && (! value.equals(""))) {
                     installData.setArchitecture(value);
-                }            
+                }
             }
 
            section = data.getElement("multilingual");
@@ -218,7 +218,7 @@ public class ProductDescription {
                 if ((value != null) && (! value.equals(""))) {
                     boolean multilingualValue = Parser.parseBoolean(value);
                     installData.setIsMultiLingual(multilingualValue);
-                }            
+                }
             }
 
             /* check for the update behaviour of this installation set */
@@ -239,7 +239,7 @@ public class ProductDescription {
                 if (value != null) {
                     int intValue = Integer.parseInt(value);
                     installData.setProductMinor(intValue);
-                }            
+                }
             }
 
             section = data.getElement("hideeula");
@@ -248,7 +248,7 @@ public class ProductDescription {
                 if ((value != null) && (! value.equals(""))) {
                     boolean hideeulaValue = Parser.parseBoolean(value);
                     installData.setHideEula(hideeulaValue);
-                }            
+                }
             }
 
             /* check for any macro definitions */
@@ -257,7 +257,7 @@ public class ProductDescription {
                 if (p.getKey().equals("macro")) {
                     String  key     = p.getAttribute("key");
                     String  value   = p.getValue();
-                                        
+
                     if ((key != null) && (value != null)) {
                         String  match   = "\\$\\{" + key + "\\}";
                         Pattern pattern = Pattern.compile(match, Pattern.CASE_INSENSITIVE);

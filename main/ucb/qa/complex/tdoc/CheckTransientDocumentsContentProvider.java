@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -57,11 +57,15 @@ public class CheckTransientDocumentsContentProvider {
     private final int countDocs = testDocuments.length;
     private XMultiServiceFactory xMSF = null;
     private XTextDocument[] xTextDoc = null;
+<<<<<<< HEAD
     
     public String[] getTestMethodNames() {
         return new String[]{"checkTransientDocumentsContentProvider"};
     }
     
+=======
+
+>>>>>>> 3309286857 (pre-commit auto remove trailing whitespace from java files (#382))
     @Before public void before() {
         xMSF = getMSF();
         xTextDoc = new XTextDocument[countDocs];
@@ -87,18 +91,18 @@ public class CheckTransientDocumentsContentProvider {
         try {
             // create a content provider
             Object o = xMSF.createInstance("com.sun.star.comp.ucb.TransientDocumentsContentProvider");
-            XContentProvider xContentProvider = 
+            XContentProvider xContentProvider =
                             UnoRuntime.queryInterface(XContentProvider.class, o);
-            
+
             // create the ucb
-            XContentIdentifierFactory xContentIdentifierFactory = 
+            XContentIdentifierFactory xContentIdentifierFactory =
                             UnoRuntime.queryInterface(XContentIdentifierFactory.class, xMSF.createInstance("com.sun.star.ucb.UniversalContentBroker"));
             // create a content identifier from the ucb for tdoc
-            XContentIdentifier xContentIdentifier = 
+            XContentIdentifier xContentIdentifier =
                             xContentIdentifierFactory.createContentIdentifier("vnd.sun.star.tdoc:/");
             // get content
             XContent xContent = xContentProvider.queryContent(xContentIdentifier);
-            
+
             // actual test: execute an "open" command with the content
             XCommandProcessor xCommandProcessor = UnoRuntime.queryInterface(XCommandProcessor.class, xContent);
             // build up the command
@@ -107,14 +111,14 @@ public class CheckTransientDocumentsContentProvider {
             commandarg2.Mode = OpenMode.ALL;
             command.Name = "open";
             command.Argument = commandarg2;
-            
+
             // execute the command
             Object result = xCommandProcessor.execute(command, 0, null);
-            
+
             // check the result
             System.out.println("Result: "+ result.getClass().toString());
             XDynamicResultSet xDynamicResultSet = UnoRuntime.queryInterface(XDynamicResultSet.class, result);
-            
+
             // check bug of wrong returned service name.
             XServiceInfo xServiceInfo = UnoRuntime.queryInterface(XServiceInfo.class, xDynamicResultSet);
             String[] sNames = xServiceInfo.getSupportedServiceNames();
@@ -134,7 +138,7 @@ public class CheckTransientDocumentsContentProvider {
                 String identifier = xContentAccess.queryContentIdentifierString();
                 System.out.println("Identifier of row " + xResultSet.getRow() + ": " + identifier);
             }
-            // some feeble test: if the amount >2, we're ok. 
+            // some feeble test: if the amount >2, we're ok.
             // 2do: check better
             assertTrue("Did only find " + countContentIdentifiers + " open documents." +
                         " Should have been at least 3.", countContentIdentifiers>2);
@@ -143,7 +147,7 @@ public class CheckTransientDocumentsContentProvider {
             e.printStackTrace();
             fail("Could not create test objects.");
         }
-        
+
     }
 
      private XMultiServiceFactory getMSF()

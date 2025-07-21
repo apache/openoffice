@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -71,7 +71,7 @@ public class HelpSearch
 		static private final String __serviceName =
 	        "com.sun.star.help.HelpSearch";
 		static private final String aSearchMethodName = "search";
-    
+
         /** The initial component contextr, that gives access to
          * the service manager, supported singletons, ...
          * It's often later used
@@ -82,7 +82,7 @@ public class HelpSearch
          * It's often later used
          */
         private XMultiComponentFactory m_xMCF;
-    
+
         /** The constructor of the inner class has a XMultiServiceFactory parameter.
          * @param xmultiservicefactoryInitialization A special service factory
          * could be introduced while initializing.
@@ -91,13 +91,13 @@ public class HelpSearch
 		{
             try {
                 m_cmpCtx = xCompContext;
-                m_xMCF = m_cmpCtx.getServiceManager();                
+                m_xMCF = m_cmpCtx.getServiceManager();
             }
             catch( Exception e ) {
                 e.printStackTrace();
             }
         }
-        
+
         /** This method returns an array of all supported service names.
          * @return Array of supported service names.
          */
@@ -115,7 +115,7 @@ public class HelpSearch
             String[] sSupportedServiceNames = { __serviceName };
             return sSupportedServiceNames;
         }
-      
+
         /** This method returns true, if the given service will be
          * supported by the component.
          * @param sServiceName Service name.
@@ -125,21 +125,21 @@ public class HelpSearch
 		{
             return sServiceName.equals( __serviceName );
         }
-    
+
         /** Return the class name of the component.
          * @return Class name of the component.
          */
         public String getImplementationName()
 		{
             return  _HelpSearch.class.getName();
-        }        
+        }
 
 		//===================================================
 		// XInvocation
 		public XIntrospectionAccess getIntrospection()
 		{
             return  null;
-        }        
+        }
 
 		public Object invoke( String aFunctionName, java.lang.Object[] aParams,
 			short[][] aOutParamIndex, java.lang.Object[][] aOutParam )
@@ -192,7 +192,7 @@ public class HelpSearch
 			throws com.sun.star.beans.UnknownPropertyException {
 			throw new com.sun.star.beans.UnknownPropertyException();
 		}
-		
+
 		public boolean hasMethod( String aMethodName ) {
 			boolean bRet = (aMethodName.equals( aSearchMethodName ) );
 			return bRet;
@@ -200,7 +200,7 @@ public class HelpSearch
 		public boolean hasProperty( String aName ) {
 			return false;
 		}
-		
+
 		// Command line interface for testing
 		private static String[] doQuery( Object[] args, Object[] aScoreOutArray ) throws Exception
 		{
@@ -251,7 +251,7 @@ public class HelpSearch
 			return aDocs;
         }
 
-		private static String[] queryImpl( String aLanguageStr, String aIndexStr, String aQueryStr, 
+		private static String[] queryImpl( String aLanguageStr, String aIndexStr, String aQueryStr,
 			boolean bCaptionOnly, Object[] aScoreOutArray ) throws Exception
 		{
 			File aIndexFile = new File( aIndexStr );
@@ -275,7 +275,7 @@ public class HelpSearch
 			TopDocs aHits = searcher.search( aQuery, 100 );
 			int nHitCount = aHits.scoreDocs.length;
 
-			String aDocs[] = new String[nHitCount];	
+			String aDocs[] = new String[nHitCount];
 			float aScores[] = null;
 			aScores = new float[nHitCount];
 			for( int iHit = 0 ; iHit < nHitCount ; iHit++ )
@@ -306,11 +306,11 @@ public class HelpSearch
     public static XSingleComponentFactory __getComponentFactory(String sImplName)
     {
         XSingleComponentFactory xFactory = null;
-    
+
         if ( sImplName.equals( _HelpSearch.class.getName() ) )
             xFactory = Factory.createComponentFactory(_HelpSearch.class,
                                              _HelpSearch.getServiceNames());
-        
+
         return xFactory;
     }
 

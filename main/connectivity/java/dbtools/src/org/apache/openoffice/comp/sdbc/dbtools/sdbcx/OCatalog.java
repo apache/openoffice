@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 package org.apache.openoffice.comp.sdbc.dbtools.sdbcx;
@@ -44,18 +44,18 @@ public abstract class OCatalog extends ComponentBase
     private static final String[] services = {
             "com.sun.star.sdbcx.DatabaseDefinition"
     };
-    
+
     // Deleted on destruction, weakly held by caller:
     protected OContainer tables;
     protected OContainer views;
     protected OContainer groups;
     protected OContainer users;
     protected XDatabaseMetaData metadata;
-    
+
     public OCatalog(XDatabaseMetaData metadata) {
-        this.metadata = metadata; 
+        this.metadata = metadata;
     }
-    
+
     @Override
     protected synchronized void postDisposing() {
         if (tables != null) {
@@ -71,19 +71,19 @@ public abstract class OCatalog extends ComponentBase
             users.dispose();
         }
     }
-    
+
     // XServiceInfo
-    
+
     @Override
     public String getImplementationName() {
         return getClass().getName();
     }
-    
+
     @Override
     public String[] getSupportedServiceNames() {
         return services.clone();
     }
-    
+
     @Override
     public boolean supportsService(String serviceName) {
         for (String service : getSupportedServiceNames()) {
@@ -93,9 +93,9 @@ public abstract class OCatalog extends ComponentBase
         }
         return false;
     }
-    
+
     // X(Tables/Views/Groups/Users)Supplier
-    
+
     @Override
     public synchronized XNameAccess getTables() {
         checkDisposed();
@@ -104,16 +104,16 @@ public abstract class OCatalog extends ComponentBase
         }
         return tables;
     }
-    
+
     @Override
     public synchronized XNameAccess getViews() {
         checkDisposed();
         if (views == null) {
             refreshViews();
         }
-        return views;            
+        return views;
     }
-    
+
     @Override
     public synchronized XNameAccess getGroups() {
         checkDisposed();
@@ -122,7 +122,7 @@ public abstract class OCatalog extends ComponentBase
         }
         return groups;
     }
-    
+
     @Override
     public synchronized XNameAccess getUsers() {
         checkDisposed();
@@ -131,7 +131,7 @@ public abstract class OCatalog extends ComponentBase
         }
         return users;
     }
-    
+
     public synchronized void refreshObjects() {
         checkDisposed();
         refreshTables();
@@ -139,7 +139,7 @@ public abstract class OCatalog extends ComponentBase
         refreshGroups();
         refreshUsers();
     }
-    
+
     /**
      * Builds the name which should be used to access the object later on in the collection.
      * Will only be called in fillNames.
@@ -160,7 +160,7 @@ public abstract class OCatalog extends ComponentBase
         }
         return DbTools.composeTableName(metadata, catalog, schema, table, false, ComposeRule.InDataManipulation);
     }
-    
+
     public abstract void refreshTables();
     public abstract void refreshViews();
     public abstract void refreshGroups();

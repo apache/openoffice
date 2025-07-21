@@ -51,9 +51,9 @@ public class BlobParser implements ISimpleTypeParser
         }
     }
 
-    
-    
-    
+
+
+
     @Override
     public Object Parse (
         final String sRawValue,
@@ -68,12 +68,12 @@ public class BlobParser implements ISimpleTypeParser
                         "length restriction (=%d) is violated, actual length is %d",
                         mnLengthRestriction,
                         sRawValue.length()));
-          */          
+          */
         switch(meType)
         {
             case Base64Binary:
                 throw new RuntimeException("not yet implemented");
-                
+
             case HexBinary:
                 try
                 {
@@ -83,15 +83,15 @@ public class BlobParser implements ISimpleTypeParser
                 {
                     return null;
                 }
-                
+
             default:
                 throw new RuntimeException();
         }
     }
 
-    
-    
-    
+
+
+
     enum Type
     {
         Base64Binary,

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 package transex3.view;
@@ -36,7 +36,7 @@ public class Editor extends JFrame{
 	JMenuItem   miSave			= null;
 	JMenuItem   miExit			= null;
 	//JButton     button			= null;
-	
+
     public Editor( Object[][] tabledata , Object[][] firstdata ){
 		table 					= new JTable( tabledata , columnnames );
 		rectable				= new SdfTable( firstdata , stringcolnames );
@@ -50,7 +50,7 @@ public class Editor extends JFrame{
 		filemenu.add( miSave  );
 		filemenu.add( miExit  );
 		menubar.add( filemenu );
-		
+
 		Container contentPane 	= getContentPane();
 		//contentPane.add( new ControlPanel() , BorderLayout.NORTH );
 		contentPane.add( menubar , BorderLayout.NORTH );
@@ -65,7 +65,7 @@ public class Editor extends JFrame{
 		//contentPane.add( new JScrollPane( rectable ), BorderLayout.SOUTH );
 		//contentPane.add( new JScrollPane( rectable ), BorderLayout.SOUTH );
 		this.repaint();
-		
+
 	}
 
 	public JTable getRectable() {
@@ -107,11 +107,11 @@ public class Editor extends JFrame{
 	public void setMiSave(JMenuItem miSave) {
 		this.miSave = miSave;
 	}
-	
+
 	/*public void setTableData(){
-		
+
 	}*/
-	
+
 }
 
 //class ControlPanel extends JPanel{}

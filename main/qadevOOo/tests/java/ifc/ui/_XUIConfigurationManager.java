@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -38,7 +38,7 @@ import java.io.PrintWriter;
 import lib.MultiMethodTest;
 
 public class _XUIConfigurationManager extends MultiMethodTest {
-    
+
     public XUIConfigurationManager oObj;
     private String msResourceUrl = "private:resource/menubar/menubar";
     private String msMyResourceUrl = "private:resource/menubar/mymenubar";
@@ -46,8 +46,8 @@ public class _XUIConfigurationManager extends MultiMethodTest {
     private XIndexAccess mxMenuBarSettings = null;
     private XMultiServiceFactory mxMSF = null;
     private String sShortCutManagerServiceName = null;
-    
-    
+
+
     /**
      * Some stuff before the tests:
      * extract the multi service factory.
@@ -57,7 +57,7 @@ public class _XUIConfigurationManager extends MultiMethodTest {
         sShortCutManagerServiceName = (String)tEnv.getObjRelation("XConfigurationManager.ShortCutManager");
 
     }
-    
+
     /**
      * reset all changes: do at the end.
      */
@@ -66,7 +66,7 @@ public class _XUIConfigurationManager extends MultiMethodTest {
         oObj.reset();
         tRes.tested("reset()", true);
     }
-    
+
     public void _getUIElementsInfo() {
         boolean result = true;
         try {
@@ -81,13 +81,13 @@ public class _XUIConfigurationManager extends MultiMethodTest {
         }
         tRes.tested("getUIElementsInfo()", result);
     }
-    
+
     public void _createSettings() {
         mxSettings = oObj.createSettings();
         util.dbg.printInterfaces(mxSettings);
         tRes.tested("createSettings()", mxSettings != null);
     }
-    
+
     public void _hasSettings() {
         boolean result = false;
         try {
@@ -99,7 +99,7 @@ public class _XUIConfigurationManager extends MultiMethodTest {
         }
         tRes.tested("hasSettings()", result);
     }
-    
+
     public void _getSettings() {
         requiredMethod("hasSettings()");
         boolean result = true;
@@ -133,7 +133,7 @@ public class _XUIConfigurationManager extends MultiMethodTest {
         }
         tRes.tested("getSettings()", result);
     }
-    
+
     public void _replaceSettings() {
         requiredMethod("getSettings()");
         boolean result = true;
@@ -145,7 +145,7 @@ public class _XUIConfigurationManager extends MultiMethodTest {
 
         createMenuBarItem("Click for Macro", (XIndexContainer)UnoRuntime.queryInterface(
                                         XIndexContainer.class, prop[3].Value), log);
-        
+
         XIndexContainer x = (XIndexContainer)UnoRuntime.queryInterface(XIndexContainer.class, mxMenuBarSettings);
         try {
             x.insertByIndex(x.getCount(), prop);
@@ -181,7 +181,7 @@ public class _XUIConfigurationManager extends MultiMethodTest {
         _getSettings();
         tRes.tested("replaceSettings()", result);
     }
-    
+
     public void _removeSettings() {
         requiredMethod("insertSettings()");
         boolean result = true;
@@ -202,7 +202,7 @@ public class _XUIConfigurationManager extends MultiMethodTest {
         }
         tRes.tested("removeSettings()", result);
     }
-    
+
     public void _insertSettings() {
         requiredMethod("createSettings()");
         requiredMethod("replaceSettings()");
@@ -216,7 +216,7 @@ public class _XUIConfigurationManager extends MultiMethodTest {
 
         createMenuBarItem("A new sub entry", (XIndexContainer)UnoRuntime.queryInterface(
                                         XIndexContainer.class, prop[3].Value), log);
-        
+
         XIndexContainer x = (XIndexContainer)UnoRuntime.queryInterface(XIndexContainer.class,mxSettings);
         try {
             int count = x.getCount();
@@ -252,10 +252,10 @@ public class _XUIConfigurationManager extends MultiMethodTest {
         }
         tRes.tested("insertSettings()", result);
     }
-    
+
     /**
      * Only a short test.
-     * See complex.imageManager.CheckImageManager for a more extensive test of 
+     * See complex.imageManager.CheckImageManager for a more extensive test of
      * this implementation.
      */
     public void _getImageManager() {
@@ -264,8 +264,8 @@ public class _XUIConfigurationManager extends MultiMethodTest {
         XImageManager xImageManager = (XImageManager)UnoRuntime.queryInterface(XImageManager.class, o);
         tRes.tested("getImageManager()", xImageManager != null);
     }
-    
-    
+
+
     /**
      * get a shortcut manager
      */
@@ -282,12 +282,12 @@ public class _XUIConfigurationManager extends MultiMethodTest {
         }
         tRes.tested("getShortCutManager()", bSupportedServiceFound);
     }
-    
+
     public void _getEventsManager() {
         Object o = oObj.getEventsManager();
         tRes.tested("getEventsManager()", o == null);
     }
-    
+
     /**
      * Create  a menu bar entry for adding to the menu bar of the Office.
      * @param sLabelName The name of the new entry.
@@ -307,7 +307,7 @@ public class _XUIConfigurationManager extends MultiMethodTest {
         prop[2].Value = new Short((short)0);
         prop[3] = new PropertyValue();
         prop[3].Name = "ItemDescriptorContainer";
-        
+
         XSingleComponentFactory xFactory = (XSingleComponentFactory)UnoRuntime.queryInterface(
                                 XSingleComponentFactory.class, xMenuBarSettings);
         try {
@@ -323,11 +323,11 @@ public class _XUIConfigurationManager extends MultiMethodTest {
         }
         return prop;
     }
-    
+
     /**
      * Create a sub entry to the menu bar.
      * @param sLabelName The name of the entry in the UI.
-     * @param xDescriptionContainer The parent entry in the menu bar where 
+     * @param xDescriptionContainer The parent entry in the menu bar where
      *      this entry is added.
      */
     public static void createMenuBarItem(String sLabelName, XIndexContainer xDescriptionContainer, PrintWriter log) {

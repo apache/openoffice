@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 package org.openoffice.test.common;
@@ -54,7 +54,7 @@ public class FileProvider extends Suite {
 		private final Object[] parameters;
 
 		private int index;
-		
+
 		TestClassRunnerForParameters(Class<?> type, Object[] parameters, int index) throws InitializationError {
 			super(type);
 			this.parameters = parameters;
@@ -100,15 +100,15 @@ public class FileProvider extends Suite {
 	@Retention(RetentionPolicy.RUNTIME)
 	@Target(ElementType.FIELD)
 	public static @interface FileFilter {
-		
+
 	}
-	
+
 	@Retention(RetentionPolicy.RUNTIME)
 	@Target(ElementType.FIELD)
 	public static @interface FileRepeat {
-		
+
 	}
-	
+
 	public FileProvider(Class<?> klass) throws Throwable {
 		super(klass, NO_RUNNERS);
 
@@ -133,7 +133,7 @@ public class FileProvider extends Suite {
 					throw new InitializationError(String.format("Field annotated FileFilter '%s' must be String.", f.getName()));
 				filter = (String) v;
 			}
-			
+
 			a = f.getAnnotation(FileRepeat.class);
 			if (a != null) {
 				Object v = f.get(null);
@@ -141,14 +141,14 @@ public class FileProvider extends Suite {
 					throw new InitializationError(String.format("Field annotated FileFilter '%s' must be Integer.", f.getName()));
 				repeat = (Integer) v;
 			}
-			
+
 		}
 
 		File reposFile = new File(repos);
 //		if (!reposFile.exists())
-//			
+//
 //			throw new InitializationError(String.format("repos '%s' does not exists ", repos));
-		
+
 		if(reposFile.exists()){
 			ArrayList<ArrayList<String>> filterItems = new ArrayList<ArrayList<String>>();
 			if (filter != null) {
@@ -157,24 +157,24 @@ public class FileProvider extends Suite {
 				for (int i = 0; i < args.length; i++) {
 					String a = args[i];
 					if (a.equals("-f")) {
-						if (filterItem.size() > 0) 
+						if (filterItem.size() > 0)
 							filterItems.add(filterItem);
 						filterItem = new ArrayList<String>();
 					} else {
 						filterItem.add(a);
 					}
 				}
-				
-				if (filterItem.size() > 0) 
+
+				if (filterItem.size() > 0)
 					filterItems.add(filterItem);
 			}
-			
-			
+
+
 			ArrayList<Object[]> list = new ArrayList<Object[]>();
 			if (!collectFromFile(reposFile, list, filterItems))
 				if (!collectFromFiles(reposFile, list, filterItems))
 					collectFromDir(reposFile, list, filterItems);
-			
+
 			for (int i = 0; i < list.size(); i++) {
 				Object[] t = list.get(i);
 				for  (int j = 0; j < repeat; j++) {
@@ -185,11 +185,11 @@ public class FileProvider extends Suite {
 		}
 
 	}
-	
+
 	private static boolean collectFromFiles(File dir, ArrayList<Object[]> list, ArrayList<ArrayList<String>> filterItems) {
 		if (!dir.isDirectory())
 			return false;
-		
+
 		boolean hasListFile = false;
 		File[] files = dir.listFiles();
 		for (File f : files) {
@@ -198,14 +198,14 @@ public class FileProvider extends Suite {
 				collectFromFile(f, list, filterItems);
 			}
 		}
-		
+
 		return hasListFile;
 	}
-	
+
 	private static boolean collectFromDir(File dir, ArrayList<Object[]> list, ArrayList<ArrayList<String>> filterItems) {
 		if (!dir.isDirectory())
 			return false;
-		
+
 		File[] files = dir.listFiles();
 		Arrays.sort(files);
 		for (File file : files) {
@@ -216,16 +216,16 @@ public class FileProvider extends Suite {
 
 			filter(file.getAbsolutePath(), list, filterItems);
 		}
-		
+
 		return true;
 	}
 
 	private static boolean collectFromFile(File file, ArrayList<Object[]> list, ArrayList<ArrayList<String>> filterItems) {
 		if (!file.isFile())
 			return false;
-		
+
 		BufferedReader reader = null;
-		try{	
+		try{
 			reader = new BufferedReader(new FileReader(file));
 			String line = null;
 			while((line = reader.readLine()) != null){
@@ -239,15 +239,15 @@ public class FileProvider extends Suite {
 					reader.close();
 					reader = null;
 				}
-			
+
 			}catch(Exception io){
 				//ignore;
 			}
 		}
-		
+
 		return true;
 	}
-	
+
 	private static void filter(String filePath, ArrayList<Object[]> list, ArrayList<ArrayList<String>> filterItems) {
 		if (filterItems.size() == 0) {
 			Object[] data = { filePath};
@@ -263,13 +263,13 @@ public class FileProvider extends Suite {
 				data[0] = filePath;
 				for (int j = 1; j < filterItem.size(); j++)
 					data[j] = filterItem.get(j);
-				
+
 				list.add(data);
 			}
 		}
 	}
-	
-	
+
+
 	@Override
 	protected List<Runner> getChildren() {
 		return runners;

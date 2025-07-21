@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 package org.apache.openoffice.comp.sdbc.dbtools.sdbcx;
@@ -36,11 +36,11 @@ import com.sun.star.sdbcx.XDataDescriptorFactory;
 import com.sun.star.uno.Type;
 
 public class OColumn extends ODescriptor implements XNamed, XDataDescriptorFactory, XServiceInfo {
-    
+
     private static final String[] services = {
             "com.sun.star.sdbcx.Column"
     };
-    
+
     private String typeName = "";
     private String description = "";
     private String defaultValue = "";
@@ -51,7 +51,7 @@ public class OColumn extends ODescriptor implements XNamed, XDataDescriptorFacto
     private boolean isAutoIncrement;
     private boolean isRowVersion;
     private boolean isCurrency;
-    
+
     public OColumn(final boolean isCaseSensitive) {
         super("", isCaseSensitive);
         this.isNullable = ColumnValue.NULLABLE;
@@ -63,7 +63,7 @@ public class OColumn extends ODescriptor implements XNamed, XDataDescriptorFacto
         this.isCurrency = false;
         registerProperties();
     }
-    
+
     public OColumn(
             final String name,
             final String typeName,
@@ -90,14 +90,14 @@ public class OColumn extends ODescriptor implements XNamed, XDataDescriptorFacto
         this.isCurrency = isCurrency;
         registerProperties();
     }
-    
+
     private void registerProperties() {
         registerProperty(PropertyIds.TYPENAME.name, PropertyIds.TYPENAME.id, Type.STRING, PropertyAttribute.READONLY,
                 new PropertyGetter() {
                     @Override
                     public Object getValue() {
                         return typeName;
-                        
+
                     }
                 },
                 new PropertySetter() {
@@ -111,7 +111,7 @@ public class OColumn extends ODescriptor implements XNamed, XDataDescriptorFacto
                     @Override
                     public Object getValue() {
                         return description;
-                        
+
                     }
                 },
                 new PropertySetter() {
@@ -125,7 +125,7 @@ public class OColumn extends ODescriptor implements XNamed, XDataDescriptorFacto
                     @Override
                     public Object getValue() {
                         return defaultValue;
-                        
+
                     }
                 },
                 new PropertySetter() {
@@ -139,7 +139,7 @@ public class OColumn extends ODescriptor implements XNamed, XDataDescriptorFacto
                     @Override
                     public Object getValue() {
                         return precision;
-                        
+
                     }
                 },
                 new PropertySetter() {
@@ -153,7 +153,7 @@ public class OColumn extends ODescriptor implements XNamed, XDataDescriptorFacto
                     @Override
                     public Object getValue() {
                         return type;
-                        
+
                     }
                 },
                 new PropertySetter() {
@@ -167,7 +167,7 @@ public class OColumn extends ODescriptor implements XNamed, XDataDescriptorFacto
                     @Override
                     public Object getValue() {
                         return scale;
-                        
+
                     }
                 },
                 new PropertySetter() {
@@ -181,7 +181,7 @@ public class OColumn extends ODescriptor implements XNamed, XDataDescriptorFacto
                     @Override
                     public Object getValue() {
                         return isNullable;
-                        
+
                     }
                 },
                 new PropertySetter() {
@@ -195,7 +195,7 @@ public class OColumn extends ODescriptor implements XNamed, XDataDescriptorFacto
                     @Override
                     public Object getValue() {
                         return isAutoIncrement;
-                        
+
                     }
                 },
                 new PropertySetter() {
@@ -209,7 +209,7 @@ public class OColumn extends ODescriptor implements XNamed, XDataDescriptorFacto
                     @Override
                     public Object getValue() {
                         return isRowVersion;
-                        
+
                     }
                 },
                 new PropertySetter() {
@@ -223,7 +223,7 @@ public class OColumn extends ODescriptor implements XNamed, XDataDescriptorFacto
                     @Override
                     public Object getValue() {
                         return isCurrency;
-                        
+
                     }
                 },
                 new PropertySetter() {
@@ -235,23 +235,23 @@ public class OColumn extends ODescriptor implements XNamed, XDataDescriptorFacto
     }
 
     // XComponent
-    
+
     @Override
     protected void postDisposing() {
         super.postDisposing();
     }
-    
+
     // XServiceInfo
-    
+
     public String getImplementationName() {
         return getClass().getName();
     }
-    
+
     @Override
     public String[] getSupportedServiceNames() {
         return services.clone();
     }
-    
+
     @Override
     public boolean supportsService(String serviceName) {
         for (String service : getSupportedServiceNames()) {
@@ -261,9 +261,9 @@ public class OColumn extends ODescriptor implements XNamed, XDataDescriptorFacto
         }
         return false;
     }
-    
+
     // XDataDescriptorFactory
-    
+
     @Override
     public XPropertySet createDataDescriptor() {
         SdbcxColumnDescriptor descriptor = new SdbcxColumnDescriptor(isCaseSensitive());

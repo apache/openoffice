@@ -35,23 +35,23 @@ public class AttributeProvider
         maReader = aReader;
     }
 
-    
-    
+
+
     public boolean HasAttributes ()
     {
         return maReader.getAttributeCount() > 0;
     }
-    
-    
-    
-    
+
+
+
+
     public String GetValue (final String sKey)
     {
         return maReader.getAttributeValue(null,  sKey);
     }
-    
-    
-    
+
+
+
     @Override
     public Iterator<String[]> iterator ()
     {
@@ -59,7 +59,7 @@ public class AttributeProvider
         {
             int nIndex = 0;
             final int nCount = maReader.getAttributeCount();
-            
+
             @Override public boolean hasNext()
             {
                 return nIndex < nCount;
@@ -80,20 +80,20 @@ public class AttributeProvider
             @Override public void remove()
             {
             }
-            
+
         };
     }
-    
 
-    
-    
+
+
+
     public Integer GetAttributeCount ()
     {
         return maReader.getAttributeCount();
     }
 
-    
-    
-    
+
+
+
     private final XMLStreamReader maReader;
 }

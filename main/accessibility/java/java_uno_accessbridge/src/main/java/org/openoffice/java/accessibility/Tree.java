@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -31,18 +31,18 @@ import com.sun.star.uno.UnoRuntime;
 import com.sun.star.accessibility.*;
 
 public class Tree extends DescendantManager implements javax.accessibility.Accessible {
-    
+
     protected Tree(XAccessible xAccessible, XAccessibleContext xAccessibleContext) {
         super(xAccessible, xAccessibleContext);
     }
-    
+
     protected void setActiveDescendant(javax.accessibility.Accessible descendant) {
         javax.accessibility.Accessible oldAD = activeDescendant;
         activeDescendant = descendant;
-		firePropertyChange(AccessibleContext.ACCESSIBLE_ACTIVE_DESCENDANT_PROPERTY,	
+		firePropertyChange(AccessibleContext.ACCESSIBLE_ACTIVE_DESCENDANT_PROPERTY,
             oldAD, descendant);
     }
-    
+
     protected void setActiveDescendant(Object any) {
         javax.accessibility.Accessible descendant = null;
         try {
@@ -58,28 +58,28 @@ public class Tree extends DescendantManager implements javax.accessibility.Acces
         } catch (com.sun.star.lang.IllegalArgumentException e) {
         }
     }
-    
+
     protected void add(XAccessible unoAccessible) {
         if (unoAccessible != null) {
             firePropertyChange(AccessibleContext.ACCESSIBLE_CHILD_PROPERTY,
                 null, new TreeItem(unoAccessible));
         }
     }
-    
+
     protected void remove(XAccessible unoAccessible) {
         if (unoAccessible != null) {
             firePropertyChange(AccessibleContext.ACCESSIBLE_CHILD_PROPERTY,
                 new TreeItem(unoAccessible), null);
         }
     }
-    
+
     protected void add(Object any) {
         try {
             add((XAccessible) AnyConverter.toObject(AccessibleObjectFactory.XAccessibleType, any));
         } catch (com.sun.star.lang.IllegalArgumentException e) {
         }
     }
-    
+
     protected void remove(Object any) {
         try {
             remove((XAccessible) AnyConverter.toObject(AccessibleObjectFactory.XAccessibleType, any));
@@ -91,11 +91,11 @@ public class Tree extends DescendantManager implements javax.accessibility.Acces
     * Update the proxy objects appropriately on property change events
     */
     protected class AccessibleTreeListener extends AccessibleDescendantManagerListener {
-        
+
         protected AccessibleTreeListener() {
             super();
         }
-        
+
         /** Called by OpenOffice process to notify property changes */
         public void notifyEvent(AccessibleEventObject event) {
             switch (event.EventId) {
@@ -126,20 +126,20 @@ public class Tree extends DescendantManager implements javax.accessibility.Acces
             }
         }
     }
-    
+
     protected XAccessibleEventListener createEventListener() {
         return new AccessibleTreeListener();
     }
-    
+
     /** Creates the AccessibleContext associated with this object */
     public javax.accessibility.AccessibleContext createAccessibleContext() {
         return new AccessibleTree();
     }
-    
+
     protected class AccessibleTree extends AccessibleDescendantManager implements javax.accessibility.AccessibleExtendedTable {
 
         protected XAccessibleTable unoAccessibleTable;
-        
+
         public AccessibleTree() {
             unoAccessibleTable = (XAccessibleTable) UnoRuntime.queryInterface(XAccessibleTable.class, unoAccessibleContext);
         }
@@ -147,7 +147,7 @@ public class Tree extends DescendantManager implements javax.accessibility.Acces
         /*
         * AccessibleContext
         */
-        
+
         /** Gets the role of this object */
         public javax.accessibility.AccessibleRole getAccessibleRole() {
             return javax.accessibility.AccessibleRole.TREE;
@@ -157,7 +157,7 @@ public class Tree extends DescendantManager implements javax.accessibility.Acces
         public javax.accessibility.AccessibleTable getAccessibleTable() {
             return ( unoAccessibleTable != null ) ? this : null;
         }
-        
+
         /** Returns the specified Accessible child of the object */
         public javax.accessibility.Accessible getAccessibleChild(int i) {
             javax.accessibility.Accessible child = null;
@@ -181,8 +181,8 @@ public class Tree extends DescendantManager implements javax.accessibility.Acces
         /*
          * AccessibleComponent
          */
-        
-        /** Returns the Accessible child, if one exists, contained at the local coordinate Point */     
+
+        /** Returns the Accessible child, if one exists, contained at the local coordinate Point */
         public javax.accessibility.Accessible getAccessibleAt(java.awt.Point p) {
             javax.accessibility.Accessible child = null;
             try {
@@ -201,11 +201,11 @@ public class Tree extends DescendantManager implements javax.accessibility.Acces
             }
             return child;
         }
-        
+
         /*
          * AccessibleSelection
          */
-         
+
         /** Returns an Accessible representing the specified selected child of the object */
         public javax.accessibility.Accessible getAccessibleSelection(int i) {
             javax.accessibility.Accessible child = null;
@@ -225,11 +225,11 @@ public class Tree extends DescendantManager implements javax.accessibility.Acces
             }
             return child;
         }
-        
+
          /*
         * AccessibleTable
         */
-        
+
         /** Returns the Accessible at a specified row and column in the table. */
         public javax.accessibility.Accessible getAccessibleAt(int r, int c) {
             javax.accessibility.Accessible child = null;
@@ -248,7 +248,7 @@ public class Tree extends DescendantManager implements javax.accessibility.Acces
             } catch (com.sun.star.uno.RuntimeException e) {
             }
             return child;
-        }    
+        }
 
         /** Returns the caption for the table. */
         public javax.accessibility.Accessible getAccessibleCaption() {
@@ -277,7 +277,7 @@ public class Tree extends DescendantManager implements javax.accessibility.Acces
             }
         }
 
-        /** 
+        /**
          * Returns the number of columns occupied by the Accessible
          * at a specified row and column in the table.
          */
@@ -319,7 +319,7 @@ public class Tree extends DescendantManager implements javax.accessibility.Acces
         }
 
         /**
-         * Returns the number of rows occupied by the Accessible 
+         * Returns the number of rows occupied by the Accessible
          * at a specified row and column in the table.
          */
         public int getAccessibleRowExtentAt(int r, int c) {
@@ -384,9 +384,9 @@ public class Tree extends DescendantManager implements javax.accessibility.Acces
             }
         }
 
-        /** 
-         * Returns a boolean value indicating whether the accessible 
-         * at a specified row and column is selected. 
+        /**
+         * Returns a boolean value indicating whether the accessible
+         * at a specified row and column is selected.
          */
         public boolean isAccessibleSelected(int r, int c) {
             try {
@@ -461,15 +461,15 @@ public class Tree extends DescendantManager implements javax.accessibility.Acces
             }
         }
    }
-    
+
     class TreeItem extends java.awt.Component implements javax.accessibility.Accessible {
-        
+
         protected XAccessible unoAccessible;
-        
+
         public TreeItem(XAccessible xAccessible) {
             unoAccessible = xAccessible;
         }
-        
+
         public Object[] create(Object[] targetSet) {
             try {
                 java.util.ArrayList list = new java.util.ArrayList(targetSet.length);
@@ -486,9 +486,9 @@ public class Tree extends DescendantManager implements javax.accessibility.Acces
                 return null;
             }
         }
-        
+
         javax.accessibility.AccessibleContext accessibleContext = null;
-        
+
         /** Returns the AccessibleContext associated with this object */
         public javax.accessibility.AccessibleContext getAccessibleContext() {
             if (accessibleContext == null) {
@@ -506,19 +506,19 @@ public class Tree extends DescendantManager implements javax.accessibility.Acces
             }
             return accessibleContext;
         }
-        
-        protected class AccessibleTreeItem extends javax.accessibility.AccessibleContext 
+
+        protected class AccessibleTreeItem extends javax.accessibility.AccessibleContext
             implements javax.accessibility.AccessibleSelection {
-            
+
             XAccessibleContext unoAccessibleContext;
             XAccessibleSelection unoAccessibleSelection;
-            
+
             public AccessibleTreeItem(XAccessibleContext xAccessibleContext) {
                 unoAccessibleContext = xAccessibleContext;
-                unoAccessibleSelection = (XAccessibleSelection) 
+                unoAccessibleSelection = (XAccessibleSelection)
                     UnoRuntime.queryInterface(XAccessibleSelection.class, xAccessibleContext);
             }
-            
+
             /** Returns the accessible name of this object */
             public String getAccessibleName() {
                 try {
@@ -527,12 +527,12 @@ public class Tree extends DescendantManager implements javax.accessibility.Acces
                     return null;
                 }
             }
-            
+
             /** Sets the accessible name of this object */
             public void setAccessibleName(String name) {
                 // Not supported
             }
-            
+
             /** Returns the accessible name of this object */
             public String getAccessibleDescription() {
                 try {
@@ -541,12 +541,12 @@ public class Tree extends DescendantManager implements javax.accessibility.Acces
                     return null;
                 }
             }
-            
+
             /** Sets the accessible name of this object */
             public void setAccessibleDescription(String name) {
                 // Not supported
             }
-            
+
             /** Returns the accessible role of this object */
             public javax.accessibility.AccessibleRole getAccessibleRole() {
                 try {
@@ -557,7 +557,7 @@ public class Tree extends DescendantManager implements javax.accessibility.Acces
                     return null;
                 }
             }
-            
+
             /** Gets the locale of the component */
             public java.util.Locale getLocale() throws java.awt.IllegalComponentStateException {
                 try {
@@ -569,16 +569,16 @@ public class Tree extends DescendantManager implements javax.accessibility.Acces
                     return Tree.this.getLocale();
                 }
             }
-            
+
             /** Gets the 0-based index of this object in its accessible parent */
             public int getAccessibleIndexInParent() {
                 try {
                     return unoAccessibleContext.getAccessibleIndexInParent();
                 } catch (com.sun.star.uno.RuntimeException e) {
                     return -1;
-                } 
+                }
             }
-            
+
             /** Returns the number of accessible children of the object. */
             public int getAccessibleChildrenCount() {
                 try {
@@ -587,7 +587,7 @@ public class Tree extends DescendantManager implements javax.accessibility.Acces
                     return 0;
                 }
             }
-            
+
             /** Returns the specified Accessible child of the object. */
             public javax.accessibility.Accessible getAccessibleChild(int i) {
                 javax.accessibility.Accessible child = null;
@@ -605,7 +605,7 @@ public class Tree extends DescendantManager implements javax.accessibility.Acces
                 }
                 return child;
             }
-            
+
             /** Returns the state set of this object */
             public javax.accessibility.AccessibleStateSet getAccessibleStateSet() {
                 try {
@@ -615,82 +615,82 @@ public class Tree extends DescendantManager implements javax.accessibility.Acces
                     return AccessibleStateAdapter.getDefunctStateSet();
                 }
             }
-            
+
             /** Gets the AccessibleComponent associated with this object that has a graphical representation */
             public javax.accessibility.AccessibleComponent getAccessibleComponent() {
                 try {
                     XAccessibleComponent unoAccessibleComponent = (XAccessibleComponent)
                         UnoRuntime.queryInterface(XAccessibleComponent.class, unoAccessibleContext);
-                    return (unoAccessibleComponent != null) ? 
+                    return (unoAccessibleComponent != null) ?
                         new AccessibleComponentImpl(unoAccessibleComponent) : null;
                 } catch (com.sun.star.uno.RuntimeException e) {
                     return null;
                 }
             }
-            
+
             /** Returns the AccessibleSelection interface for this object */
             public javax.accessibility.AccessibleSelection getAccessibleSelection() {
                 return (unoAccessibleSelection != null) ? this : null;
             }
-        
+
             /** Gets the AccessibleAction associated with this object that has a graphical representation */
             public javax.accessibility.AccessibleAction getAccessibleAction() {
                 try {
                     XAccessibleAction unoAccessibleAction = (XAccessibleAction)
                         UnoRuntime.queryInterface(XAccessibleAction.class, unoAccessibleContext);
-                    return (unoAccessibleAction != null) ? 
+                    return (unoAccessibleAction != null) ?
                         new AccessibleActionImpl(unoAccessibleAction) : null;
                 } catch (com.sun.star.uno.RuntimeException e) {
                     return null;
                 }
             }
-            
+
             /** Gets the AccessibleText associated with this object that has a graphical representation */
             public javax.accessibility.AccessibleText getAccessibleText() {
-                
+
                 if (disposed)
                     return null;
-                
+
                 try {
                     XAccessibleText unoAccessibleText = (XAccessibleText)
                         UnoRuntime.queryInterface(XAccessibleText.class, unoAccessibleContext);
-                    return (unoAccessibleText != null) ? 
+                    return (unoAccessibleText != null) ?
                         new AccessibleTextImpl(unoAccessibleText) : null;
                 } catch (com.sun.star.uno.RuntimeException e) {
                     return null;
                 }
             }
-            
+
             /** Gets the AccessibleValue associated with this object that has a graphical representation */
             public javax.accessibility.AccessibleValue getAccessibleValue() {
                 try {
                     XAccessibleValue unoAccessibleValue = (XAccessibleValue)
                         UnoRuntime.queryInterface(XAccessibleValue.class, unoAccessibleContext);
-                    return (unoAccessibleValue != null) ? 
+                    return (unoAccessibleValue != null) ?
                         new AccessibleValueImpl(unoAccessibleValue) : null;
                 } catch (com.sun.star.uno.RuntimeException e) {
                     return null;
                 }
             }
-            
+
             /** Gets the AccessibleText associated with this object presenting text on the display */
             public javax.accessibility.AccessibleIcon[] getAccessibleIcon() {
                 try {
-                    XAccessibleImage unoAccessibleImage = (XAccessibleImage) 
+                    XAccessibleImage unoAccessibleImage = (XAccessibleImage)
                         UnoRuntime.queryInterface(XAccessibleImage.class, unoAccessibleContext);
                     if (unoAccessibleImage != null) {
                         javax.accessibility.AccessibleIcon[] icons = { new AccessibleIconImpl(unoAccessibleImage) };
                         return icons;
-                    } 
+                    }
                 } catch (com.sun.star.uno.RuntimeException e) {
                 }
                 return null;
             }
-            
+
             /*
              * AccessibleSelection
              */
-             
+
             /** Returns an Accessible representing the specified selected child of the object */
             public javax.accessibility.Accessible getAccessibleSelection(int i) {
                 javax.accessibility.Accessible child = null;
@@ -704,7 +704,7 @@ public class Tree extends DescendantManager implements javax.accessibility.Acces
                 }
                 return child;
             }
-            
+
             /** Adds the specified Accessible child of the object to the object's selection */
             public void addAccessibleSelection(int i) {
                 try {

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -79,7 +79,7 @@ class ScreenComparer
     {
         grabOne(m_rect);
     }
-    
+
     public void grabOne(Rectangle r) throws Exception
     {
         java.awt.Robot robot = new java.awt.Robot();
@@ -90,7 +90,7 @@ class ScreenComparer
     {
         grabTwo(m_rect);
     }
-    
+
     public void grabTwo(Rectangle r) throws Exception
     {
         java.awt.Robot robot = new java.awt.Robot();
@@ -132,7 +132,7 @@ class ScreenComparer
                     {
                         bOutOfRange = true;
                     }
-                    
+
                     if (x < w2 && y < h2)
                     {
                         pixel2 = m_img2.getRGB(x, y);
@@ -150,7 +150,7 @@ class ScreenComparer
                     {
                         m_imgDiff.setRGB(x, y, pixel1);
                     }
-                    
+
                 }
             }
             return false;
@@ -191,7 +191,7 @@ class ScreenComparer
                     if (pixels1[offset] != pixels2[offset])
                     {
                         ret = ret && false;
-                        m_imgDiff.setRGB(x, y, m_diffColor); 
+                        m_imgDiff.setRGB(x, y, m_diffColor);
                     }
                     else
                     {
@@ -205,7 +205,7 @@ class ScreenComparer
 
     /** Writes Images to a location. The
      *  directory is determined by the java property OOoBean.Images
-     * 
+     *
      */
     public void writeImages() throws Exception
     {
@@ -240,5 +240,5 @@ class ScreenComparer
             System.out.println("Diff image: " + file1.getPath() + "\n");
         }
     }
-    
+
 }

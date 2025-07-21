@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -68,7 +68,7 @@ public class SwAccessibleTableCellView extends TestCase {
     * @see TestEnvironment
     * @see #getTestEnvironment
     */
-    protected TestEnvironment createTestEnvironment(TestParameters Param, 
+    protected TestEnvironment createTestEnvironment(TestParameters Param,
                                                     PrintWriter log) {
         XInterface oObj = null;
         XTextTable oTable = null;
@@ -79,7 +79,7 @@ public class SwAccessibleTableCellView extends TestCase {
             oTable = SOF.createTextTable(xTextDoc);
         } catch (com.sun.star.uno.Exception e) {
             e.printStackTrace(log);
-            throw new StatusException("Couldn't create TextTable : " + 
+            throw new StatusException("Couldn't create TextTable : " +
                                       e.getMessage(), e);
         }
 
@@ -87,11 +87,11 @@ public class SwAccessibleTableCellView extends TestCase {
             SOF.insertTextContent(xTextDoc, oTable);
         } catch (com.sun.star.lang.IllegalArgumentException e) {
             e.printStackTrace(log);
-            throw new StatusException("Couldn't insert text content :" + 
+            throw new StatusException("Couldn't insert text content :" +
                                       e.getMessage(), e);
         }
 
-        XModel aModel = (XModel) UnoRuntime.queryInterface(XModel.class, 
+        XModel aModel = (XModel) UnoRuntime.queryInterface(XModel.class,
                                                            xTextDoc);
 
         AccessibilityTools at = new AccessibilityTools();
@@ -109,10 +109,10 @@ public class SwAccessibleTableCellView extends TestCase {
         TestEnvironment tEnv = new TestEnvironment(oObj);
 
         final XAccessibleSelection accSel = (XAccessibleSelection) UnoRuntime.queryInterface(
-                                                    XAccessibleSelection.class, 
+                                                    XAccessibleSelection.class,
                                                     at.SearchedContext.getAccessibleParent());
 
-        tEnv.addObjRelation("EventProducer", 
+        tEnv.addObjRelation("EventProducer",
                             new ifc.accessibility._XAccessibleEventBroadcaster.EventProducer() {
             public void fireEvent() {
                 accSel.selectAllAccessibleChildren();

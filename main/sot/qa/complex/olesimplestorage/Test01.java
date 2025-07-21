@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 package complex.olesimplestorage;
@@ -39,13 +39,13 @@ public class Test01 implements OLESimpleStorageTest
     TestHelper m_aTestHelper = null;
     final int pStreamCnt = 5;
     final int pBytesCnt = 10;
-      
+
     public Test01 ( XMultiServiceFactory xMSF )
     {
         m_xMSF = xMSF;
         m_aTestHelper = new TestHelper ("Test01: ");
     }
-    
+
     public boolean test ()
     {
         try
@@ -54,7 +54,7 @@ public class Test01 implements OLESimpleStorageTest
             Object oTempFile = m_xMSF.createInstance ( "com.sun.star.io.TempFile" );
             XTempFile xTempFile = UnoRuntime.queryInterface(XTempFile.class, oTempFile);
             m_aTestHelper.Message ( "A new temporary stream created." );
-            
+
             //create OLESimpleStorage based on it
             Object pArgs[] = new Object[2];
             pArgs[0] = (Object) xTempFile;
@@ -62,7 +62,7 @@ public class Test01 implements OLESimpleStorageTest
             Object oOLESimpleStorage = m_xMSF.createInstanceWithArguments ( "com.sun.star.embed.OLESimpleStorage", pArgs );
             XOLESimpleStorage xOLESimpleStorage = UnoRuntime.queryInterface(XOLESimpleStorage.class, oOLESimpleStorage);
             m_aTestHelper.Message ( "OLESimpleStorage based on XStream created." );
-            
+
             //fill it with some streams
             Object oStream[] = new Object[pStreamCnt];
             byte pBytesIn[][][] = new byte [pStreamCnt][1][pBytesCnt];
@@ -88,7 +88,7 @@ public class Test01 implements OLESimpleStorageTest
                     m_aTestHelper.Message ( "Substream " + i + " inserted." );
                 }
             }
-            
+
             //commit the storage and close it
             xOLESimpleStorage.commit ();
             m_aTestHelper.Message ( "Storage committed." );
@@ -100,13 +100,13 @@ public class Test01 implements OLESimpleStorageTest
                 xTempStream[i].getOutputStream ().closeOutput ();
             }
             m_aTestHelper.Message ( "Storage closed." );
-            
+
             //open the same stream with the constructor for inputstream
             pArgs[0] = (Object)xTempFile.getInputStream ();
             oOLESimpleStorage = m_xMSF.createInstanceWithArguments ( "com.sun.star.embed.OLESimpleStorage", pArgs );
             xOLESimpleStorage = UnoRuntime.queryInterface(XOLESimpleStorage.class, oOLESimpleStorage);
             m_aTestHelper.Message ( "Storage reopened, based on XInputStream." );
-            
+
             //check that all the streams contain correct information
             m_aTestHelper.Message ( "Checking data contained in all the substreams..." );
             for ( int i = 0; i < pStreamCnt; ++i )
@@ -123,7 +123,7 @@ public class Test01 implements OLESimpleStorageTest
                             m_aTestHelper.Error ( "Stream " + i + " byte " + j + ": INCORRECT DATA!");
                             return false;
                         }
-                        else 
+                        else
                         {
                             m_aTestHelper.Message ( "Stream " + i + " byte " + j + ":  CORRECT." );
                         }

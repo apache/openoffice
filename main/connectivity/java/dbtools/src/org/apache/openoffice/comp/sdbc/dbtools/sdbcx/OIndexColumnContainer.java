@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 package org.apache.openoffice.comp.sdbc.dbtools.sdbcx;
@@ -41,24 +41,24 @@ import com.sun.star.uno.UnoRuntime;
 
 public class OIndexColumnContainer extends OContainer {
     private OIndex index;
-    
+
     public OIndexColumnContainer(Object lock, OIndex index, List<String> columnNames) throws ElementExistException {
         super(lock, true, columnNames);
         this.index = index;
     }
-    
+
     @Override
     protected XPropertySet createDescriptor() {
         return new SdbcxIndexColumnDescriptor(isCaseSensitive());
     }
-    
+
     @Override
     protected XPropertySet createObject(String name) throws SQLException {
         try {
             Object catalog = index.getTable().getPropertyValue(PropertyIds.CATALOGNAME.name);
             String schema = AnyConverter.toString(index.getTable().getPropertyValue(PropertyIds.SCHEMANAME.name));
             String table = AnyConverter.toString(index.getTable().getPropertyValue(PropertyIds.NAME.name));
-            
+
             boolean isAscending = true;
             XResultSet results = null;
             try {
@@ -74,7 +74,7 @@ public class OIndexColumnContainer extends OContainer {
             } finally {
                 CompHelper.disposeComponent(results);
             }
-            
+
             XPropertySet ret = null;
             results = null;
             try {
@@ -89,7 +89,7 @@ public class OIndexColumnContainer extends OContainer {
                             int dec = row.getInt(9);
                             int nul = row.getInt(11);
                             String columnDef = row.getString(13);
-                            
+
                             ret = new OIndexColumn(isAscending, name, typeName, columnDef, "",
                                     nul, size, dec, dataType, false, false, false, isCaseSensitive());
                             break;
@@ -99,23 +99,23 @@ public class OIndexColumnContainer extends OContainer {
             } finally {
                 CompHelper.disposeComponent(results);
             }
-            
+
             return ret;
         } catch (WrappedTargetException | UnknownPropertyException | IllegalArgumentException exception) {
             throw new SQLException("Error", this, StandardSQLState.SQL_GENERAL_ERROR.text(), 0, exception);
-        } 
+        }
     }
 
     @Override
     protected void impl_refresh() {
         // FIXME
     }
-    
+
     @Override
     protected XPropertySet appendObject(String _rForName, XPropertySet descriptor) throws SQLException {
         throw new SQLException("Unsupported");
     }
-    
+
     @Override
     protected void dropObject(int index, String name) throws SQLException {
         throw new SQLException("Unsupported");

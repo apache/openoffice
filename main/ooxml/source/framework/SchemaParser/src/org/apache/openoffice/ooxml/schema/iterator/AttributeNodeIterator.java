@@ -51,18 +51,18 @@ public class AttributeNodeIterator
         maAttributes = new Vector<INode>();
         CollectAttributes(aNode, aSchemaBase);
     }
-    
-    
-    
-    
+
+
+
+
     public Iterator<INode> iterator ()
     {
         return maAttributes.iterator();
     }
-    
-    
-    
-    
+
+
+
+
     private void CollectAttributes (
         final INode aType,
         final SchemaBase aSchemaBase)
@@ -104,9 +104,9 @@ public class AttributeNodeIterator
                 aAttribute.AcceptVisitor(aVisitor);
         }
     }
-    
-    
-    
-    
+
+
+
+
     private final Vector<INode> maAttributes;
 }

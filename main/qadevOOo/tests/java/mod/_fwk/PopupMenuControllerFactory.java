@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -50,7 +50,7 @@ public class PopupMenuControllerFactory extends TestCase {
      */
     protected void cleanup(TestParameters tParam, PrintWriter log) {
         log.println("    disposing xTextDoc ");
-        
+
         try {
             XCloseable closer = (XCloseable) UnoRuntime.queryInterface(
             XCloseable.class, xTextDoc);
@@ -62,7 +62,7 @@ public class PopupMenuControllerFactory extends TestCase {
         }
     }
 
-    
+
     /**
      * Create test environment:
      * @param tParam The test parameters.
@@ -78,7 +78,7 @@ public class PopupMenuControllerFactory extends TestCase {
 
         xTextDoc = WriterTools.createTextDoc(xMSF);
         util.dbg.printInterfaces(xTextDoc);
-        
+
         try {
             xInst = (XInterface)xMSF.createInstance(
                             "com.sun.star.comp.framework.PopupMenuControllerFactory");
@@ -86,7 +86,7 @@ public class PopupMenuControllerFactory extends TestCase {
         catch(com.sun.star.uno.Exception e) {
             throw new StatusException("Couldn't create test object", e);
         }
-        
+
         log.println("TestObject: " + util.utils.getImplName(xInst));
         tEnv = new TestEnvironment(xInst);
         XPropertySet xProp = (XPropertySet)UnoRuntime.queryInterface(XPropertySet.class, xMSF);
@@ -103,15 +103,15 @@ public class PopupMenuControllerFactory extends TestCase {
             log.println("Cannot get the 'DefaultContext' for XMultiComponentFactory test.");
             e.printStackTrace(log);
         }
-        
+
         // register one controller, so it can be instantiated
         XUIControllerRegistration xReg = (XUIControllerRegistration)
                 UnoRuntime.queryInterface(XUIControllerRegistration.class, xInst);
-        
+
         xReg.registerController(".uno:MyCommandUrl", "", "com.sun.star.comp.framework.FooterMenuController");
         tEnv.addObjRelation("XUIControllerRegistration.RegisteredController", ".uno:MyCommandUrl");
         tEnv.addObjRelation("XMultiComponentFactory.ServiceNames", new String[]{".uno:MyCommandUrl"});
-                 
+
         return tEnv;
     }
 }

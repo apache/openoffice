@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -48,7 +48,7 @@ import org.openoffice.netbeans.modules.office.actions.ParcelFolderCookie;
 import org.openoffice.netbeans.modules.office.actions.ParcelFolderSupport;
 
 public class ParcelFolder extends DataFolder {
-    
+
     public static final String LANGUAGE_ATTRIBUTE = "language";
 
     public ParcelFolder(FileObject pf, ParcelFolderDataLoader loader)
@@ -57,7 +57,7 @@ public class ParcelFolder extends DataFolder {
         CookieSet cookies = getCookieSet();
         cookies.add(new ParcelFolderSupport(this));
     }
-    
+
     public Node createNodeDelegate() {
         return new ParcelFolderNode(this, new ParcelFolderFilter());
     }
@@ -67,21 +67,21 @@ public class ParcelFolder extends DataFolder {
         private static final String FILTER = "filter";
         private static final String LANGUAGE = LANGUAGE_ATTRIBUTE;
         private static final String CLASSPATH = "classpath";
-        
+
         private File location;
         private FileFilter filter;
         private String language;
         private String classpath;
-        
+
         private final FileFilter DEFAULT_FILTER = BinaryOnlyFilter.getInstance();
-        
+
         public ParcelFolderNode(ParcelFolder pf, DataFilter dataFilter) {
             super(pf.createNodeChildren(dataFilter));
-            
+
             location = (File)pf.getPrimaryFile().getAttribute(LOCATION);
             if (location == null)
                 location = FileUtil.toFile(pf.getPrimaryFile());
-            
+
             String name = (String)pf.getPrimaryFile().getAttribute(FILTER);
             if (name == null)
                 filter = DEFAULT_FILTER;
@@ -108,11 +108,11 @@ public class ParcelFolder extends DataFolder {
         public File getTargetDir() {
             return location;
         }
-        
+
         public FileFilter getFileFilter() {
             return filter;
         }
-        
+
         public String getLanguage() {
             if (language == null)
                 language = (String)getPrimaryFile().getAttribute(LANGUAGE);
@@ -130,7 +130,7 @@ public class ParcelFolder extends DataFolder {
                 props = Sheet.createPropertiesSet();
                 sheet.put(props);
             }
-        
+
             // prop = createLocationProperty();
             // props.put(prop);
 
@@ -145,7 +145,7 @@ public class ParcelFolder extends DataFolder {
 
             prop = createClasspathProperty();
             props.put(prop);
-            
+
             return sheet;
         }
 
@@ -181,7 +181,7 @@ public class ParcelFolder extends DataFolder {
                     public void setValue(Object obj) {
                         if (obj instanceof String) {
                             language = (String)obj;
-                            
+
                             try {
                                 getPrimaryFile().setAttribute(LANGUAGE, language);
                             }
@@ -195,19 +195,19 @@ public class ParcelFolder extends DataFolder {
                             language = (String)getPrimaryFile().getAttribute(LANGUAGE);
                         return language;
                     }
-                    
+
                     public PropertyEditor getPropertyEditor() {
                         return new PropertyEditorSupport() {
                             public String[] getTags() {
                                 return languages;
                             }
-                                
+
                             public void setAsText(String text) {
                                 for (int i = 0; i < languages.length; i++)
                                     if (text.equals(languages[i]))
                                         this.setValue(languages[i]);
                             }
-                            
+
                             public String getAsText() {
                                 return (String)this.getValue();
                             }
@@ -219,7 +219,7 @@ public class ParcelFolder extends DataFolder {
 
         private FileFilter[] availableFilters = new FileFilter[] {
             BinaryOnlyFilter.getInstance(), AllFilesFilter.getInstance()};
-        
+
         private Node.Property createFilterProperty() {
             Node.Property prop =
                new PropertySupport.ReadWrite(FILTER, String.class,
@@ -227,7 +227,7 @@ public class ParcelFolder extends DataFolder {
                     public void setValue(Object obj) {
                         if (obj instanceof FileFilter) {
                             filter = (FileFilter)obj;
-                            
+
                             try {
                                 getPrimaryFile().setAttribute(FILTER, filter.toString());
                             }
@@ -239,24 +239,24 @@ public class ParcelFolder extends DataFolder {
                     public Object getValue() {
                         return filter;
                     }
-                    
+
                     public PropertyEditor getPropertyEditor() {
                         return new PropertyEditorSupport() {
                             public String[] getTags() {
                                 String[] tags = new String[availableFilters.length];
-                                
+
                                 for (int i = 0; i < availableFilters.length; i++)
                                     tags[i] = availableFilters[i].toString();
-                                
+
                                 return tags;
                             }
-                                
+
                             public void setAsText(String text) {
                                 for (int i = 0; i < availableFilters.length; i++)
                                     if (text.equals(availableFilters[i].toString()))
                                         this.setValue(availableFilters[i]);
                             }
-                            
+
                             public String getAsText() {
                                 return this.getValue().toString();
                             }
@@ -287,7 +287,7 @@ public class ParcelFolder extends DataFolder {
             return prop;
         }
     }
-    
+
     private class ParcelFolderFilter implements DataFilter {
         public boolean acceptDataObject(DataObject dobj) {
             String name = dobj.getPrimaryFile().getNameExt();

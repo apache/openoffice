@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -33,11 +33,11 @@ import com.sun.star.inspection.XPropertyHandler;
  * @see com.sun.star.inspection.XPropertyHandler
  */
 public class PropertyHandlerImpl implements XPropertyHandler{
-    
+
     /** Creates a new instance of PropertyHandlerImpl */
     public PropertyHandlerImpl() {
     }
-    
+
     /**
      * This method currently does nothing
      * @param ActuatingPropertyName the id of the actuating property.
@@ -58,14 +58,14 @@ public class PropertyHandlerImpl implements XPropertyHandler{
             boolean FirstTimeInit)
             throws com.sun.star.lang.NullPointerException {
     }
-    
+
     /**
      * This method currently does nothing
      * @param xEventListener the listener to notify about changes
      */
     public void addEventListener(com.sun.star.lang.XEventListener xEventListener) {
     }
-    
+
     /**
      * This method currently does nothing
      * @param xPropertyChangeListener the listener to notify about property changes
@@ -73,7 +73,7 @@ public class PropertyHandlerImpl implements XPropertyHandler{
      */
     public void addPropertyChangeListener(com.sun.star.beans.XPropertyChangeListener xPropertyChangeListener) throws com.sun.star.lang.NullPointerException {
     }
-    
+
     /**
      * This method currently does nothing
      * @param PropertyName The name of the property whose value is to be converted.
@@ -91,7 +91,7 @@ public class PropertyHandlerImpl implements XPropertyHandler{
             throws com.sun.star.beans.UnknownPropertyException {
         return null;
     }
-    
+
     /**
      * This method currently does nothing
      * @param PropertyName The name of the conversion's target property.
@@ -102,7 +102,7 @@ public class PropertyHandlerImpl implements XPropertyHandler{
     public Object convertToPropertyValue(String PropertyName, Object ControlValue) throws com.sun.star.beans.UnknownPropertyException {
         return null;
     }
-    
+
     /**
      * This method currently does nothing
      * @param PropertyName the name of the property whose user interface is to be described
@@ -118,13 +118,13 @@ public class PropertyHandlerImpl implements XPropertyHandler{
             com.sun.star.lang.NullPointerException {
         return null;
     }
-    
+
     /**
      * This method currently does nothing
      */
     public void dispose() {
     }
-    
+
     /**
      * This method currently does nothing
      * @return null
@@ -132,7 +132,7 @@ public class PropertyHandlerImpl implements XPropertyHandler{
     public String[] getActuatingProperties() {
         return null;
     }
-    
+
     /**
      * This method currently does nothing
      * @param PropertyName the name of the property whose state is to be retrieved
@@ -143,7 +143,7 @@ public class PropertyHandlerImpl implements XPropertyHandler{
     throws com.sun.star.beans.UnknownPropertyException {
         return null;
     }
-    
+
     /**
      * This method currently does nothing
      * @param PropertyName the name of the property whose value is to be retrieved
@@ -153,7 +153,7 @@ public class PropertyHandlerImpl implements XPropertyHandler{
     public Object getPropertyValue(String PropertyName) throws com.sun.star.beans.UnknownPropertyException {
         return null;
     }
-    
+
     /**
      * This method currently does nothing
      * @return null
@@ -161,7 +161,7 @@ public class PropertyHandlerImpl implements XPropertyHandler{
     public String[] getSupersededProperties() {
         return null;
     }
-    
+
     /**
      * This method currently does nothing
      * @return null
@@ -169,7 +169,7 @@ public class PropertyHandlerImpl implements XPropertyHandler{
     public com.sun.star.beans.Property[] getSupportedProperties() {
         return null;
     }
-    
+
     /**
      * This method currently does nothing
      * @param Component the component to inspect. Must not be NULL
@@ -177,7 +177,7 @@ public class PropertyHandlerImpl implements XPropertyHandler{
      */
     public void inspect(Object Component) throws com.sun.star.lang.NullPointerException {
     }
-    
+
     /**
      * This method currently does nothing
      * @param PropertyName the name of the property whose composability is to be determined
@@ -189,7 +189,7 @@ public class PropertyHandlerImpl implements XPropertyHandler{
     public boolean isComposable(String PropertyName) throws com.sun.star.beans.UnknownPropertyException {
         return false;
     }
-    
+
     /**
      * This method currently does nothing
      * @param PropertyName The name of the property whose browse button has been clicked
@@ -210,21 +210,21 @@ public class PropertyHandlerImpl implements XPropertyHandler{
             com.sun.star.lang.NullPointerException {
         return null;
     }
-    
+
     /**
      * This method currently does nothing
      * @param xEventListener the listener to be revoked
      */
     public void removeEventListener(com.sun.star.lang.XEventListener xEventListener) {
     }
-    
+
     /**
      * This method currently does nothing
      * @param xPropertyChangeListener the listener to be revoke
      */
     public void removePropertyChangeListener(com.sun.star.beans.XPropertyChangeListener xPropertyChangeListener) {
     }
-    
+
     /**
      * This method currently does nothing
      * @param PropertyName the name of the property whose value is to be set
@@ -233,7 +233,7 @@ public class PropertyHandlerImpl implements XPropertyHandler{
      */
     public void setPropertyValue(String PropertyName, Object Value) throws com.sun.star.beans.UnknownPropertyException {
     }
-    
+
     /**
      * This method currently does nothing
      * @param Suspend Whether the handler is to be suspended true or reactivated ( false ). The latter happens if a handler was successfully suspended, but an external instance vetoed the whole suspension process.
@@ -249,5 +249,5 @@ public class PropertyHandlerImpl implements XPropertyHandler{
 
     public void describePropertyLine(String string, LineDescriptor[] lineDescriptor, XPropertyControlFactory xPropertyControlFactory) throws UnknownPropertyException, com.sun.star.lang.NullPointerException {
     }
-    
+
 }

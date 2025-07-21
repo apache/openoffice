@@ -37,7 +37,7 @@ import org.apache.openoffice.ooxml.schema.model.base.Location;
 import org.apache.openoffice.ooxml.schema.model.base.QualifiedName;
 
 /** Minimize an DFA with respect to its number of states.
- *  This is most important for the use of the 'all' element in the OOXML 
+ *  This is most important for the use of the 'all' element in the OOXML
  *  specification which leads to a lot of additional states and transitions.
  */
 public class HopcroftMinimizer
@@ -59,7 +59,7 @@ public class HopcroftMinimizer
                 aOriginalStates.GetTransitionCount());
             DisplayStates(aOriginalStates, aLog);
         }
-        
+
         TreeSet<StateSet> aT = new TreeSet<>();
         TreeSet<StateSet> aP = new TreeSet<>();
         Map<State,StateSet> aTMap = new HashMap<>();
@@ -76,7 +76,7 @@ public class HopcroftMinimizer
             aPMap = aTMap;
             aT = new TreeSet<>();
             aTMap = new HashMap<>();
-            
+
             for (final StateSet aSet : aP)
             {
                 final Iterable<StateSet> aParts = Split(aSet, aP, aPMap);
@@ -94,14 +94,14 @@ public class HopcroftMinimizer
                     {
                         assert( ! aPart.IsEmpty());
                         aT.add(aPart);
-                    
+
                         for (final State aState : aPart.GetStates())
                             aTMap.put(aState, aPart);
                     }
                 }
             }
         }
-        
+
         // Create new states.
         final StateContext aMinimizedStates = CreateNewStates(
             aP,
@@ -127,7 +127,7 @@ public class HopcroftMinimizer
     }
 
 
-    
+
 
     /** We start with two sets.  One contains all start states (in our case
     *   just one), the other contains all other states.
@@ -158,10 +158,10 @@ public class HopcroftMinimizer
         if ( ! aNonAcceptingStates.IsEmpty())
             aSet.add(aNonAcceptingStates);
     }
-    
-    
-    
-    
+
+
+
+
     private static Iterable<StateSet> Split (
         final StateSet aSet,
         final Set<StateSet> aT,
@@ -181,9 +181,9 @@ public class HopcroftMinimizer
         }
         return null;
     }
-    
-    
-    
+
+
+
 
     /** Create a partition of the given set of states according to their
      *  transitions.
@@ -208,7 +208,7 @@ public class HopcroftMinimizer
             else
                 aForwardMap.put(aState, aTMap.get(aTransition.GetEndState()));
         }
-        
+
         // Create the partion of aSet according to aForwardMap.  All states that map
         // to the same element go into the same state set.
         if (aForwardMap.size() == 1)
@@ -234,10 +234,10 @@ public class HopcroftMinimizer
             return aReverseMap.values();
         }
     }
-    
-    
-    
-    
+
+
+
+
     private static Transition GetTransition (
         final State aState,
         final QualifiedName aElementName)
@@ -252,23 +252,23 @@ public class HopcroftMinimizer
             }
         return aTransition;
     }
-    
-    
-    
-    
+
+
+
+
     private static Set<QualifiedName> CollectElementNames (final StateSet aSet)
     {
         final Set<QualifiedName> aNames = new TreeSet<>();
         for (final State aState : aSet.GetStates())
             for (final Transition aTransition : aState.GetTransitions())
                 aNames.add(aTransition.GetElementName());
-        
+
         return aNames;
     }
-    
-    
-    
-    
+
+
+
+
     private static boolean AreSetsOfStateSetsEqual (
         final TreeSet<StateSet> aSetOfSetsA,
         final TreeSet<StateSet> aSetOfSetsB)
@@ -288,8 +288,8 @@ public class HopcroftMinimizer
         }
     }
 
-    
-    
+
+
 
     private static StateContext CreateNewStates (
         final TreeSet<StateSet> aP,
@@ -300,7 +300,7 @@ public class HopcroftMinimizer
         final StateContext aMinimizedStates = new StateContext(
             aNewStateContainer,
             aOriginalStates.GetStartState().GetFullname());
-        
+
         // Create the new states.
         final Map<State,State> aOldStateToNewStateMap = new TreeMap<>();
         for (final StateSet aSet : aP)
@@ -313,13 +313,13 @@ public class HopcroftMinimizer
                 aOldStateToNewStateMap.put(aOldState, aNewState);
             }
         }
-        
+
         // Create the new transitions.
         for (final StateSet aSet : aP)
         {
             final State aOldStartState = aSet.GetStates().iterator().next();
             final State aNewStartState = aOldStateToNewStateMap.get(aOldStartState);
-            
+
             for (final Transition aTransition : aOldStartState.GetTransitions())
             {
                 final State aOldEndState = aTransition.GetEndState();
@@ -328,16 +328,16 @@ public class HopcroftMinimizer
                 // Check if the transition already exists.
                 if (HasTransition(aNewStartState, aTransition.GetElementName()))
                     continue;
-                        
+
                 aNewStartState.AddTransition(
                     new Transition(
                         aNewStartState,
                         aNewEndState,
                         aTransition.GetElementName(),
-                        aTransition.GetElementTypeName()));               
+                        aTransition.GetElementTypeName()));
             }
         }
-        
+
         // Transfer skip data and accepting flags.
         for (final State aOldState : aOriginalStates.GetStates())
         {
@@ -347,8 +347,8 @@ public class HopcroftMinimizer
         return aMinimizedStates;
     }
 
-    
-    
+
+
 
     private static boolean HasTransition (
         final State aState,
@@ -359,10 +359,10 @@ public class HopcroftMinimizer
                 return true;
         return false;
     }
-    
-    
-    
-    
+
+
+
+
     private static void DisplayStates (
         final StateContext aStates,
         final PrintStream aLog)
@@ -370,9 +370,9 @@ public class HopcroftMinimizer
         for (final State aState : aStates.GetStates())
         {
             aLog.printf("  %s %s\n", aState.GetFullname(),
-                aState.IsAccepting() ? "is accepting" : ""); 
+                aState.IsAccepting() ? "is accepting" : "");
             for (final Transition aTransition : aState.GetTransitions())
-                aLog.printf("    -> %s via %s\n", 
+                aLog.printf("    -> %s via %s\n",
                     aTransition.GetEndState().GetFullname(),
                     aTransition.GetElementName().GetStateName());
         }

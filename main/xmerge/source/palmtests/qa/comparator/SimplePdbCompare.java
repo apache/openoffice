@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -30,7 +30,7 @@
 /**
  *
  * @author  mh101528
- * @version 
+ * @version
  */
 public final class SimplePdbCompare {
 
@@ -41,7 +41,7 @@ public final class SimplePdbCompare {
     /**
     * @param args the command line arguments
     */
-    public static void main (String args[]) 
+    public static void main (String args[])
     {
         SimplePdbCompare comparator = new SimplePdbCompare();
         if (comparator.comparePDB(args[0], args[1]))
@@ -49,22 +49,22 @@ public final class SimplePdbCompare {
         else
             System.exit(3);
     }
-    
+
     public boolean  comparePDB(String pdbname1, String pdbname2)
     {
         PalmDB pdb1=null, pdb2=null;
         PDBDecoder decoder = new PDBDecoder();
-        try 
+        try
         {
             pdb1 = decoder.parse(pdbname1);
-        } 
-        catch (Exception e) 
+        }
+        catch (Exception e)
         {
             System.out.println("Could not parse PDB " + pdbname1);
             return false;
         }
 
-        try 
+        try
         {
             pdb2 = decoder.parse(pdbname2);
         }
@@ -74,17 +74,17 @@ public final class SimplePdbCompare {
             return false;
         }
 
-        if (pdb1.equals(pdb2)) 
+        if (pdb1.equals(pdb2))
         {
             //writeToLog("PDB " + pdbname1 + "  and PDB " + pdbname2 + " are equal");
             System.out.println("PDB " + pdbname1 + "  and PDB " + pdbname2 + " are equal");
             return true;
-        } 
-        else 
+        }
+        else
         {
             //writeToLog("PDB " + pdbname1 + "  and PDB " + pdbname2 + " are not equal");
             System.out.println("PDB " + pdbname1 + "  and PDB " + pdbname2 + " are not equal");
             return false;
         }
-    } 
+    }
 }

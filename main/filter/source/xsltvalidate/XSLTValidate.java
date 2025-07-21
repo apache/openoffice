@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -69,11 +69,11 @@ public class XSLTValidate {
         XTypeProvider {
 
 		private com.sun.star.xml.sax.XErrorHandler xErrorHandler;
-        
+
         /** The component will be registered under this name.
          */
         static private final String __serviceName = "com.sun.star.documentconversion.XSLTValidate";
-        
+
 		public _XSLTValidate() {
 			xErrorHandler = null;
 		}
@@ -90,17 +90,17 @@ public class XSLTValidate {
                 new Type( XServiceInfo.class ) };
             }
             catch( Exception exception ) {
-		
+
             }
 
             return( typeReturn );
         }
 
 
-	public boolean importer(com.sun.star.beans.PropertyValue[] aSourceData, 
-				com.sun.star.xml.sax.XDocumentHandler xDocHandler, 
-				java.lang.String[] msUserData) throws com.sun.star.uno.RuntimeException,com.sun.star.lang.IllegalArgumentException { 
-	
+	public boolean importer(com.sun.star.beans.PropertyValue[] aSourceData,
+				com.sun.star.xml.sax.XDocumentHandler xDocHandler,
+				java.lang.String[] msUserData) throws com.sun.star.uno.RuntimeException,com.sun.star.lang.IllegalArgumentException {
+
 	    com.sun.star.io.XInputStream xis=null;
 	    com.sun.star.beans.PropertyValue[] pValue = aSourceData;
 		for  (int  i = 0 ; i < pValue.length; i++)
@@ -128,7 +128,7 @@ public class XSLTValidate {
 	}
 
 	 public void convert (com.sun.star.io.XInputStream xml) throws com.sun.star.uno.RuntimeException {
-	     XInputStreamToInputStreamAdapter xis =new XInputStreamToInputStreamAdapter(xml);	 
+	     XInputStreamToInputStreamAdapter xis =new XInputStreamToInputStreamAdapter(xml);
 	     parseErrors =new Vector();
            //String defaultTimeOut = System.getProperty("sun.net.client.defaultConnectTimeout");
            System.getProperties().setProperty("sun.net.client.defaultConnectTimeout", "10000");
@@ -151,7 +151,7 @@ public class XSLTValidate {
 	    catch (Exception e){
 		   //System.out.println("\nException "+ e);
 		   throw new com.sun.star.uno.RuntimeException(e.getLocalizedMessage());
-	    } 
+	    }
 	 }
 
 	public com.sun.star.uno.Any JavaSAXParseEceptionToUno( SAXParseException e )
@@ -183,7 +183,7 @@ public class XSLTValidate {
 
 	//  Warning Event Handler
 	public void warning (SAXParseException e)
-			throws SAXException 
+			throws SAXException
 	{
 //		System.out.println("\n_XSLTValidate::warning " + e.toString() );
 
@@ -210,10 +210,10 @@ public class XSLTValidate {
 			}
 		}
 	}
-	
+
 	//  Error Event Handler
 	public void error (SAXParseException e)
-		throws SAXException 
+		throws SAXException
 	{
 //		System.out.println("\n_XSLTValidate::error " + e.toString() );
 
@@ -267,7 +267,7 @@ public class XSLTValidate {
 			}
 		}
 	}
-	
+
         // Implement methods from interface XTypeProvider
         public byte[] getImplementationId() {
             byte[] byteReturn = {};
@@ -281,16 +281,16 @@ public class XSLTValidate {
         public String getServiceName() {
             return( __serviceName );
         }
-    
+
         // Implement methods from interface XServiceInfo
         public boolean supportsService(String stringServiceName) {
             return( stringServiceName.equals( __serviceName ) );
         }
-    
+
         public String getImplementationName() {
             return( _XSLTValidate.class.getName() );
         }
-    
+
         public String[] getSupportedServiceNames() {
             String[] stringSupportedServiceNames = { __serviceName };
             return( stringSupportedServiceNames );
@@ -322,7 +322,7 @@ public class XSLTValidate {
             multiFactory,
             regKey);
         }
-        
+
         return xSingleServiceFactory;
     }
 }

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -53,7 +53,7 @@ public class GraphicsUtil {
 	 * Error tolerance for ellipse
 	 */
 	static final double ERR_RANGLE_ELLIPSE = 1;
-	
+
 	static Robot robot = null;
 
 	static {
@@ -63,7 +63,7 @@ public class GraphicsUtil {
 			e.printStackTrace();
 		}
 	}
-	
+
 	/**
 	 * Load a image file as buffered image
 	 * @param file
@@ -87,10 +87,10 @@ public class GraphicsUtil {
 		}
 		return image;
 	}
-	
+
 	/**
 	 * Store a buffered image in the given file
-	 * 
+	 *
 	 * @param image
 	 * @param imgFile
 	 */
@@ -115,11 +115,11 @@ public class GraphicsUtil {
 		}
 
 	}
-	
+
 	public static Rectangle getScreenRectangle() {
 		return new Rectangle(Toolkit.getDefaultToolkit().getScreenSize());
 	}
-	
+
 	/**
 	 * Get a BufferedImage including the full current screen shot
 	 * @return
@@ -136,7 +136,7 @@ public class GraphicsUtil {
 	public static BufferedImage screenshot(Rectangle area) {
 		return screenshot(null, area);
 	}
-	
+
 
 	/**
 	 *  Store the screen shot as a image file
@@ -145,7 +145,7 @@ public class GraphicsUtil {
 	public static BufferedImage screenShot(String filename) {
 		return screenshot(filename, null);
 	}
-	
+
 	/**
 	 * Store the specified area of the screen as a image file
 	 * @param filename
@@ -159,12 +159,12 @@ public class GraphicsUtil {
 			storeImage(capture, filename);
 		return capture;
 	}
-	
-	
+
+
 	/**
 	 * Find a rectangle in the screen.
 	 * Note: The rectangle must be filled with solid color and the color must be different from the background color
-	 * 
+	 *
 	 * @param rect the area in the screen to search
 	 * @param color the rectangle color.
 	 * @return The found rectangle's location and size. If no rectangle is
@@ -227,8 +227,8 @@ public class GraphicsUtil {
 		}
 		return re;
 	}
-	
-	
+
+
 	protected static boolean detect(BufferedImage src, int colorSrc,
 			BufferedImage dst, int colorDst, double errMax) {
 		int errCount = 0;
@@ -248,12 +248,12 @@ public class GraphicsUtil {
 			return true;
 		return false;
 	}
-	
-	
+
+
 	public static Rectangle getBoundingBox(BufferedImage image, int color) {
 		return getBoundingBox(image, color, true);
 	}
-	
+
 	public static Rectangle getBoundingBox(BufferedImage image, int color, boolean include) {
 		int w = image.getWidth();
 		int h = image.getHeight();
@@ -271,17 +271,17 @@ public class GraphicsUtil {
 						right = i;
 				}
 			}
-			
-			
+
+
 		}
 		if (right == -1)
 			return null;
 		return new Rectangle(left, top, right - left + 1, bottom - top + 1);
 	}
-	
+
 	/**
 	 * Check if the rectangle in screen is filled with the given color
-	 * 
+	 *
 	 * @param color
 	 * @param rect
 	 * @return
@@ -299,7 +299,7 @@ public class GraphicsUtil {
 
 		return true;
 	}
-	
+
 	/**
 	 * Find a image on the current screen
 	 * @param image
@@ -327,7 +327,7 @@ public class GraphicsUtil {
 
 		return null;
 	}
-	
+
 	/**
 	 * Find a color on the current screen
 	 * @param color
@@ -346,11 +346,11 @@ public class GraphicsUtil {
 		}
 		return null;
 	}
-	
-	
+
+
 	/**
 	 * Check if two BufferedImages equal
-	 * 
+	 *
 	 * @param expected
 	 * @param actual
 	 * @return
@@ -374,7 +374,7 @@ public class GraphicsUtil {
 
 	/**
 	 * Check if two image files equal
-	 * 
+	 *
 	 * @param expectedImage
 	 * @param actualImage
 	 * @return

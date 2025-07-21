@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -38,7 +38,7 @@ public class Player implements javax.media.ControllerListener,
                                com.sun.star.lang.XServiceInfo,
                                com.sun.star.media.XPlayer,
                                com.sun.star.lang.XComponent
-                               
+
 
 {
     private com.sun.star.lang.XMultiServiceFactory maFactory;
@@ -50,7 +50,7 @@ public class Player implements javax.media.ControllerListener,
 
     // -------------------------------------------------------------------------
 
-    public Player( com.sun.star.lang.XMultiServiceFactory aFactory, 
+    public Player( com.sun.star.lang.XMultiServiceFactory aFactory,
                    javax.media.Player aPlayer, String aURL )
     {
         maFactory = aFactory;
@@ -109,9 +109,9 @@ public class Player implements javax.media.ControllerListener,
     {
         return mbStarted;
     }
-    
+
     // -------------------------------------------------------------------------
-    
+
     public synchronized double getDuration()
     {
         return maPlayer.getDuration().getSeconds();
@@ -133,44 +133,44 @@ public class Player implements javax.media.ControllerListener,
     }
 
     // -------------------------------------------------------------------------
-    
+
     public synchronized void setStopTime( double fTime )
     {
         boolean bOldStarted = mbStarted;
-                                                                                                                    
+
         if( mbStarted )
             stop();
-                                                                                                                    
+
         maPlayer.setStopTime( new javax.media.Time( fTime ) );
-                                                                                                                    
+
         if( bOldStarted )
             start();
     }
 
     // -------------------------------------------------------------------------
-    
+
     public synchronized double getStopTime()
     {
         return maPlayer.getStopTime().getSeconds();
     }
 
     // -------------------------------------------------------------------------
-    
+
     public synchronized void setRate( double fRate )
     {
         boolean bOldStarted = mbStarted;
-        
+
         if( mbStarted )
             stop();
 
         maPlayer.setRate( (float) fRate );
-        
-        if( bOldStarted )    
+
+        if( bOldStarted )
             start();
     }
 
     // -------------------------------------------------------------------------
-    
+
     public synchronized double getRate()
     {
         return (double) maPlayer.getRate();
@@ -204,7 +204,7 @@ public class Player implements javax.media.ControllerListener,
     {
         return( maGainControl != null ? (short) maGainControl.getDB() : 0 );
     }
-    
+
     // -------------------------------------------------------------------------
 
     public synchronized void setMute( boolean bSet )
@@ -244,14 +244,14 @@ public class Player implements javax.media.ControllerListener,
     {
         try
         {
-            com.sun.star.media.XPlayerWindow xPlayerWindow = ( ( ( aArgs.length > 1 ) && ( AnyConverter.toInt( aArgs[ 0 ] ) > 0 ) ) ? 
-                                                             new PlayerWindow( maFactory, aArgs, maPlayer ) : 
+            com.sun.star.media.XPlayerWindow xPlayerWindow = ( ( ( aArgs.length > 1 ) && ( AnyConverter.toInt( aArgs[ 0 ] ) > 0 ) ) ?
+                                                             new PlayerWindow( maFactory, aArgs, maPlayer ) :
                                                              null );
-            
+
             // check if it is a real player window (video window)
             if( xPlayerWindow != null && xPlayerWindow.getZoomLevel() == com.sun.star.media.ZoomLevel.NOT_AVAILABLE )
                 xPlayerWindow = null;
-            
+
             return xPlayerWindow;
         }
         catch( com.sun.star.lang.IllegalArgumentException e )
@@ -266,7 +266,7 @@ public class Player implements javax.media.ControllerListener,
     {
         return( (com.sun.star.media.XFrameGrabber) new FrameGrabber( maFactory, maURL ) );
     }
-    
+
     // --------------
     // - XComponent -
     // --------------
@@ -274,7 +274,7 @@ public class Player implements javax.media.ControllerListener,
     public synchronized void addEventListener( com.sun.star.lang.XEventListener xListener )
     {
     }
-    
+
     // -------------------------------------------------------------------------
 
     public synchronized void removeEventListener( com.sun.star.lang.XEventListener xListener )
@@ -282,7 +282,7 @@ public class Player implements javax.media.ControllerListener,
     }
 
     // -------------------------------------------------------------------------
-    
+
     public synchronized void dispose()
     {
         if( maPlayer != null )
@@ -292,7 +292,7 @@ public class Player implements javax.media.ControllerListener,
             maPlayer = null;
         }
     }
-        
+
     // ----------------
     // - XServiceInfo -
     // ----------------

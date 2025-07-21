@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -113,14 +113,14 @@ public class _XMultiServiceFactory extends MultiMethodTest {
         String needArgs = (String) tEnv.getObjRelation("needArgs");
 
         if (needArgs != null) {
-            log.println("The " + needArgs + 
+            log.println("The " + needArgs +
                         " doesn't support createInstance without arguments");
             tRes.tested("createInstance()", true);
 
             return;
         }
 
-        boolean res = true;                
+        boolean res = true;
 
         for (int k = 0; k < services.length; k++) {
             try {
@@ -161,7 +161,7 @@ public class _XMultiServiceFactory extends MultiMethodTest {
 
         if (args == null) {
             log.println("Relation 'XMSF.serviceNamesWithArgs' not found");
-            log.println("The component assumed not support " + 
+            log.println("The component assumed not support " +
                         "createInstanceWithArguments()");
             tRes.tested("createInstanceWithArguments()", true);
         } else {
@@ -172,11 +172,11 @@ public class _XMultiServiceFactory extends MultiMethodTest {
             boolean res = true;
 
             for (int k = 0; k < sNames.length; k++) {
-                log.println("Creating service '" + sNames[k] + 
+                log.println("Creating service '" + sNames[k] +
                             "' with arguments");
 
                 try {
-                    Object Inst = oObj.createInstanceWithArguments(sNames[k], 
+                    Object Inst = oObj.createInstanceWithArguments(sNames[k],
                                                                    args[k]);
                     res &= (Inst != null);
                 } catch (com.sun.star.uno.Exception ex) {

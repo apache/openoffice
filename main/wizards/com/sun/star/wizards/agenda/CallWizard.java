@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -47,7 +47,7 @@ public class CallWizard {
     /**
      * Gives a factory for creating the service. This method is called by the
      * <code>JavaLoader</code>
-     * 
+     *
      * <p></p>
      *
      * @param stringImplementationName The implementation name of the component.
@@ -93,8 +93,8 @@ public class CallWizard {
          * Execute Wizard
          *
          * @param str only valid parameter is 'start' at the moment.
-         */     
-        
+         */
+
         public void trigger(String str) {
             try {
                 if (str.equalsIgnoreCase(PropertyNames.START)) {
@@ -132,7 +132,7 @@ public class CallWizard {
          *         will be passed to the caller.
          */
         public void initialize(Object[] object) throws com.sun.star.uno.Exception {
-            
+
         }
 
         /**

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -91,7 +91,7 @@ class IniFile
             }
             try
             {
-                aReader.close();  
+                aReader.close();
             }
             catch (java.io.IOException ie)
             {
@@ -111,18 +111,18 @@ class IniFile
         }
 
     // -----------------------------------------------------------------------------
-    
+
     boolean isRemark(String _sLine)
         {
             if ( ((_sLine.length() < 2) ) ||
-                 ( _sLine.startsWith("#")) || 
+                 ( _sLine.startsWith("#")) ||
                  ( _sLine.startsWith(";")) )
             {
                 return true;
             }
             return false;
         }
-    
+
     String getItem(int i)
         {
             return (String)m_aList.get(i);
@@ -137,7 +137,7 @@ class IniFile
         {
             return _sName.toLowerCase();
         }
-    
+
     // return the number where this section starts
     int findSection(String _sSection)
         {
@@ -163,7 +163,7 @@ class IniFile
             }
             return -1;
         }
-    
+
     // return the line number, where the key is found.
     int findKey(String _sSection, String _sKey)
         {
@@ -175,7 +175,7 @@ class IniFile
             }
             return findKeyFromKnownSection(i, _sKey);
         }
-    
+
     // i must be the index in the list, where the well known section starts
     int findKeyFromKnownSection(int _nSectionIndex, String _sKey)
         {
@@ -183,18 +183,18 @@ class IniFile
             for (int j=_nSectionIndex + 1; j<m_aList.size();j++)
             {
                 String sLine = getItem(j).trim();
-                
+
                 if (isRemark(sLine))
                 {
                     continue;
                 }
-                
+
                 if (sLine.startsWith("[") /* && sLine.endsWith("]") */)
                 {
                     // found end.
                     break;
                 }
-                
+
                 int nEqual = sLine.indexOf("=");
                 if (nEqual >= 0)
                 {
@@ -207,7 +207,7 @@ class IniFile
             }
             return -1;
         }
-            
+
     // i must be the index in the list, where the well known section starts
     int findLastKnownKeyIndex(int _nSectionIndex, String _sKey)
         {
@@ -216,7 +216,7 @@ class IniFile
             for (int j=i; j<m_aList.size();j++)
             {
                 String sLine = getItem(j).trim();
-                
+
                 if (isRemark(sLine))
                 {
                     continue;
@@ -227,7 +227,7 @@ class IniFile
                     // found end.
                     return j;
                 }
-                
+
                 int nEqual = sLine.indexOf("=");
                 if (nEqual >= 0)
                 {
@@ -240,7 +240,7 @@ class IniFile
             }
             return i;
         }
-    
+
     String getValue(int _nIndex)
         {
             String sLine = getItem(_nIndex).trim();
@@ -259,9 +259,9 @@ class IniFile
                 }
 
     /**
-       @param _sSection string 
+       @param _sSection string
        @param _sKey string
-       @return the value found in the inifile which is given by the section and key parameter 
+       @return the value found in the inifile which is given by the section and key parameter
     */
     public String getValue(String _sSection, String _sKey)
         {
@@ -274,21 +274,21 @@ class IniFile
             }
 
             sValue = getValue(i);
-            
+
             return sValue;
         }
 
     /**
        write back the ini file to the disk, only if there exist changes
     */
-    public void store() 
+    public void store()
         {
             if (m_bListContainUnsavedChanges == false)
             {
                 // nothing has changed, so no need to store
                 return;
             }
-            
+
             File aFile = new File(m_sFilename);
             if (aFile.exists())
             {
@@ -317,7 +317,7 @@ class IniFile
                 }
                 aWriter.close();
             }
-            
+
             catch (java.io.FileNotFoundException fne)
             {
                 GlobalLogWriter.get().println("couldn't open file for writing " + m_sFilename);
@@ -331,9 +331,9 @@ class IniFile
                 // DebugHelper.exception(BasicErrorCode.SbERR_INTERNAL_ERROR, ie.getMessage());
             }
         }
-    
-    
-    
+
+
+
     /**
        insert a value
        there are 3 cases
@@ -341,7 +341,7 @@ class IniFile
        2. section exist but key not, search section, search key, if key is -1 get last known key position and insert new key value pair there
        3. section exist and key exist, remove the old key and insert the key value pair at the same position
     */
-    public void insertValue(String _sSection, String _sKey, String _sValue) 
+    public void insertValue(String _sSection, String _sKey, String _sValue)
         {
             int i = findSection(_sSection);
             if (i == -1)
@@ -423,11 +423,11 @@ class IniFile
     //         }
     //         sLocalValue = replaceEvaluatedKey(_sSection, sLocalValue);
     //         sLocalValue = replaceEvaluatedKey("global", sLocalValue);
-    //     
+    //
     //         return sLocalValue;
     //     }
 
-    
+
     /**
      * some tests for this class
      */

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -59,10 +59,10 @@ import org.openoffice.netbeans.modules.office.utils.PackageRemover;
  * @author tomaso
  */
 public class JavaScriptIterator implements TemplateWizard.Iterator {
-    
+
 
     // private static final long serialVersionUID = ...L;
-    
+
     // You should define what panels you want to use here:
 
     protected WizardDescriptor.Panel[] createPanels() {
@@ -71,21 +71,21 @@ public class JavaScriptIterator implements TemplateWizard.Iterator {
             wiz.targetChooser(),
         };
     }
-    
+
     // And the list of step names:
-    
+
     protected String[] createSteps() {
         return new String[] {
             null,
         };
     }
-    
+
     private DataFolder checkTarget(DataFolder folder) {
         FileObject fo = folder.getPrimaryFile();
-        
+
         try {
             FileSystem fs = fo.getFileSystem();
-            
+
             if (fs instanceof OpenOfficeDocFileSystem && fo.isRoot()) {
                 FileObject scripts =
                     fo.getFileObject(OpenOfficeDocFileSystem.SCRIPTS_ROOT);
@@ -106,7 +106,7 @@ public class JavaScriptIterator implements TemplateWizard.Iterator {
         }
         return folder;
     }
-    
+
     public Set instantiate(TemplateWizard wiz) throws IOException {
         String name = wiz.getTargetName();
         DataFolder targetFolder = wiz.getTargetFolder();
@@ -120,7 +120,7 @@ public class JavaScriptIterator implements TemplateWizard.Iterator {
         } else {
             result = template.createFromTemplate(targetFolder, name);
         }
-        
+
         FileObject tmp = result.getPrimaryFile();
         if (tmp.getExt().equals("java")) {
             try {
@@ -139,16 +139,16 @@ public class JavaScriptIterator implements TemplateWizard.Iterator {
                 TopManager.getDefault().notify(d);
             }
         }
-        
+
         return Collections.singleton(result);
     }
-    
+
     // --- The rest probably does not need to be touched. ---
-    
+
     private transient int index;
     private transient WizardDescriptor.Panel[] panels;
     private transient TemplateWizard wiz;
-    
+
     // You can keep a reference to the TemplateWizard which can
     // provide various kinds of useful information such as
     // the currently selected target name.
@@ -180,16 +180,16 @@ public class JavaScriptIterator implements TemplateWizard.Iterator {
         this.wiz = null;
         panels = null;
     }
-    
+
     // --- WizardDescriptor.Iterator METHODS: ---
     // Note that this is very similar to WizardDescriptor.Iterator, but with a
     // few more options for customization. If you e.g. want to make panels appear
     // or disappear dynamically, go ahead.
-    
+
     public String name() {
         return "";
     }
-    
+
     public boolean hasNext() {
         return index < panels.length - 1;
     }
@@ -207,7 +207,7 @@ public class JavaScriptIterator implements TemplateWizard.Iterator {
     public WizardDescriptor.Panel current() {
         return panels[index];
     }
-    
+
     // If nothing unusual changes in the middle of the wizard, simply:
     public final void addChangeListener(ChangeListener l) {}
     public final void removeChangeListener(ChangeListener l) {}
@@ -242,5 +242,5 @@ public class JavaScriptIterator implements TemplateWizard.Iterator {
         listeners = new HashSet(1);
     }
      */
-    
+
 }

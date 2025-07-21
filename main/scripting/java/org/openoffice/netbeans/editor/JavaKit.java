@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -109,7 +109,7 @@ public class JavaKit extends ExtKit {
     public Formatter createFormatter() {
         return new JavaFormatter(this.getClass());
     }
-    
+
     protected EditorUI createEditorUI() {
         return new ExtEditorUI();
     }
@@ -166,7 +166,7 @@ public class JavaKit extends ExtKit {
             }
         }
 
-        /** Opens DataAccessor file resource 
+        /** Opens DataAccessor file resource
          *  @param requestWrite if true, file is opened for read/write
          */
         public void open(boolean requestWrite) throws IOException {
@@ -183,7 +183,7 @@ public class JavaKit extends ExtKit {
         }
 
         /**
-         * Returns the current offset in this file. 
+         * Returns the current offset in this file.
          *
          * @return     the offset from the beginning of the file, in bytes,
          *             at which the next read or write occurs.
@@ -191,16 +191,16 @@ public class JavaKit extends ExtKit {
         public long getFilePointer() throws IOException {
            return actOff;
         }
-    
+
         /** Clears the file and sets the offset to 0 */
         public void resetFile() throws IOException {
             throw new IllegalArgumentException("read only!");
         }
-    
+
         /**
          * Sets the file-pointer offset, measured from the beginning of this
          * file, at which the next read or write occurs.
-         */    
+         */
         public void seek(long pos) throws IOException {
             actOff = (int)pos;
         }
@@ -226,7 +226,7 @@ public class JavaKit extends ExtKit {
             }
 
             return stream;
-        }    
+        }
 
         public int getFileLength() {
             try {

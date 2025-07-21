@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 package fvt.uno.sw.table;
@@ -48,7 +48,7 @@ public class TableBasic {
 	private XText xText=null;
 	@Before
 	public void setUp() throws Exception {
-		app.start();		
+		app.start();
 	}
 
 	@After
@@ -191,7 +191,7 @@ public class TableBasic {
 		xText.insertTextContent(xTextCursor,xTable,false);
 		XPropertySet xTableProps = (XPropertySet)UnoRuntime.queryInterface(XPropertySet.class, xTable);
 		//set table border
-		TableBorder tableBorder = new TableBorder();	
+		TableBorder tableBorder = new TableBorder();
 		BorderLine[]borderLine=new BorderLine[] {new BorderLine(),new BorderLine(),new BorderLine(),new BorderLine(),new BorderLine(),new BorderLine()};
 		borderLine[0].Color=0x00FF0000;
 		borderLine[0].InnerLineWidth=101;
@@ -200,7 +200,7 @@ public class TableBasic {
 		borderLine[1].Color =0x00FFFF00;
 		borderLine[1].InnerLineWidth=101;
 		borderLine[1].OuterLineWidth=19;
-		borderLine[1].LineDistance=101;	
+		borderLine[1].LineDistance=101;
 		borderLine[2].Color =0x0000FF00;
 		borderLine[2].InnerLineWidth=150;
 		borderLine[2].OuterLineWidth=19;
@@ -208,15 +208,15 @@ public class TableBasic {
 		borderLine[3].Color =0x0000FF00;
 		borderLine[3].InnerLineWidth=150;
 		borderLine[3].OuterLineWidth=19;
-		borderLine[3].LineDistance=101;		
+		borderLine[3].LineDistance=101;
 		borderLine[4].Color =0x0000FF00;
 		borderLine[4].InnerLineWidth=150;
 		borderLine[4].OuterLineWidth=19;
-		borderLine[4].LineDistance=101;		
+		borderLine[4].LineDistance=101;
 		borderLine[5].Color =0x0000FF00;
 		borderLine[5].InnerLineWidth=150;
 		borderLine[5].OuterLineWidth=19;
-		borderLine[5].LineDistance=101;		
+		borderLine[5].LineDistance=101;
 		tableBorder.TopLine =borderLine[0];
 		tableBorder.BottomLine =borderLine[1];
 		tableBorder.LeftLine =borderLine[2];
@@ -228,7 +228,7 @@ public class TableBasic {
 		tableBorder.IsRightLineValid = true;
 		tableBorder.IsTopLineValid = true;
 		tableBorder.IsHorizontalLineValid = true;
-		tableBorder.IsVerticalLineValid = true;	
+		tableBorder.IsVerticalLineValid = true;
 		xTableProps.setPropertyValue("TableBorder", tableBorder);
 		//save and reload text document
 		XStorable xStorable = (XStorable) UnoRuntime.queryInterface(XStorable.class, xTextDocument);
@@ -257,19 +257,19 @@ public class TableBasic {
 		assertEquals("assert bottomline color as setting",0x00FFFF00,tableBorder_Assert.BottomLine.Color);
 		assertEquals("assert bottomline innerline width as setting",101,tableBorder_Assert.BottomLine.InnerLineWidth);
 		assertEquals("assert bottomline outerlinewidth as setting",19,tableBorder_Assert.BottomLine.OuterLineWidth);
-		assertEquals("assert bottomline linedistance as setting",101,tableBorder_Assert.BottomLine.LineDistance);		
+		assertEquals("assert bottomline linedistance as setting",101,tableBorder_Assert.BottomLine.LineDistance);
 		assertEquals("assert leftline color as setting",0x0000FF00,tableBorder_Assert.LeftLine.Color);
 		assertEquals("assert leftline innerline width as setting",150,tableBorder_Assert.LeftLine.InnerLineWidth);
 		assertEquals("assert leftline outerlinewidth as setting",19,tableBorder_Assert.LeftLine.OuterLineWidth);
-		assertEquals("assert leftline linedistance as setting",101,tableBorder_Assert.LeftLine.LineDistance);		
+		assertEquals("assert leftline linedistance as setting",101,tableBorder_Assert.LeftLine.LineDistance);
 		assertEquals("assert rightline color as setting",0x0000FF00,tableBorder_Assert.RightLine.Color);
-		assertEquals("assert rightline linedistance as setting",101,tableBorder_Assert.RightLine.LineDistance);		
+		assertEquals("assert rightline linedistance as setting",101,tableBorder_Assert.RightLine.LineDistance);
 		assertEquals("assert rightline innerline width as setting",150,tableBorder_Assert.RightLine.InnerLineWidth);
-		assertEquals("assert rightline outerlinewidth as setting",19,tableBorder_Assert.RightLine.OuterLineWidth);	
+		assertEquals("assert rightline outerlinewidth as setting",19,tableBorder_Assert.RightLine.OuterLineWidth);
 		assertEquals("assert HorizontalLine color as setting",0x0000FF00,tableBorder_Assert.HorizontalLine.Color);
 		assertEquals("assert HorizontalLine innerline width as setting",150,tableBorder_Assert.HorizontalLine.InnerLineWidth);
 		assertEquals("assert HorizontalLine outerlinewidth as setting",19,tableBorder_Assert.HorizontalLine.OuterLineWidth);
-		assertEquals("assert HorizontalLine linedistance as setting",101,tableBorder_Assert.HorizontalLine.LineDistance);		
+		assertEquals("assert HorizontalLine linedistance as setting",101,tableBorder_Assert.HorizontalLine.LineDistance);
 		assertEquals("assert VerticalLine color as setting",0x0000FF00,tableBorder_Assert.VerticalLine.Color);
 		assertEquals("assert VerticalLine innerline width as setting",150,tableBorder_Assert.VerticalLine.InnerLineWidth);
 		assertEquals("assert VerticalLine outerlinewidth as setting",19,tableBorder_Assert.VerticalLine.OuterLineWidth);
@@ -295,7 +295,7 @@ public class TableBasic {
 		XTextTable xTable1 = (XTextTable)UnoRuntime.queryInterface(XTextTable.class, xWriterFactory.createInstance("com.sun.star.text.TextTable"));
 		xText.insertTextContent(xTextCursor,xTable1,false);
 		XPropertySet xTableProps1 = (XPropertySet)UnoRuntime.queryInterface(XPropertySet.class, xTable1);
-		xTableProps1.setPropertyValue("HoriOrient",com.sun.star.text.HoriOrientation.FULL);				
+		xTableProps1.setPropertyValue("HoriOrient",com.sun.star.text.HoriOrientation.FULL);
 		xTableProps1.setPropertyValue("LeftMargin",2591);
 		xTableProps1.setPropertyValue("RightMargin",3000);
 		xTableProps1.setPropertyValue("TopMargin",2000);
@@ -335,7 +335,7 @@ public class TableBasic {
 		XPropertySet xTableProps6 = (XPropertySet)UnoRuntime.queryInterface(XPropertySet.class, xTable6);
 		xTableProps6.setPropertyValue("HoriOrient",com.sun.star.text.HoriOrientation.RIGHT);
 		xTableProps6.setPropertyValue("TopMargin",2000);
-		xTableProps6.setPropertyValue("BottomMargin",2000);		
+		xTableProps6.setPropertyValue("BottomMargin",2000);
 		//save and reload text document
 		XStorable xStorable = (XStorable) UnoRuntime.queryInterface(XStorable.class, xTextDocument);
 		PropertyValue[] aStoreProperties = new PropertyValue[2];
@@ -440,7 +440,7 @@ public class TableBasic {
 	 * 3.save to odt and close it,then reopen the document
 	 * 4.check the table first row as repeat heading
 	 */
-	
+
 	@Test
 	public void testSetTableRepeatHeading() throws Exception {
 		xTextDocument =(XTextDocument)UnoRuntime.queryInterface(XTextDocument.class, app.newDocument("swriter"));
@@ -508,7 +508,7 @@ public class TableBasic {
 		XPropertySet xTableProps4 = (XPropertySet)UnoRuntime.queryInterface(XPropertySet.class, xTable4);
 		XTextTable xTable5 = (XTextTable)UnoRuntime.queryInterface(XTextTable.class, xWriterFactory.createInstance("com.sun.star.text.TextTable"));
 		xText.insertTextContent(xTextCursor,xTable5,false);
-		XPropertySet xTableProps5 = (XPropertySet)UnoRuntime.queryInterface(XPropertySet.class, xTable5);		
+		XPropertySet xTableProps5 = (XPropertySet)UnoRuntime.queryInterface(XPropertySet.class, xTable5);
 		//set table shadow
 		ShadowFormat[] shadowFormat=new ShadowFormat[] {new ShadowFormat(),new ShadowFormat(),new ShadowFormat(),new ShadowFormat(),new ShadowFormat()};
 		shadowFormat[0].Location=ShadowLocation.BOTTOM_RIGHT;
@@ -523,7 +523,7 @@ public class TableBasic {
 		shadowFormat[3].Color=0x00FF00FF;
 		shadowFormat[4].Location=ShadowLocation.TOP_RIGHT;
 		shadowFormat[4].ShadowWidth=100;
-		shadowFormat[4].Color=0x00FF00FF;		
+		shadowFormat[4].Color=0x00FF00FF;
 		xTableProps1.setPropertyValue("ShadowFormat",shadowFormat[0]);
 		xTableProps2.setPropertyValue("ShadowFormat",shadowFormat[1]);
 		xTableProps3.setPropertyValue("ShadowFormat",shadowFormat[2]);
@@ -553,7 +553,7 @@ public class TableBasic {
 		assertEquals("assert shadow location",ShadowLocation.BOTTOM_RIGHT,shadowFormat_Assert1.Location);
 		assertEquals("assert shadow width",100,shadowFormat_Assert1.ShadowWidth);
 		assertEquals("assert shadow color",0x00FF00FF,shadowFormat_Assert1.Color);
-		
+
 		Object xTable_obj2=xIndexedTables.getByIndex(1);
 		XTextTable xTable_Assert2=(XTextTable) UnoRuntime.queryInterface(XTextTable.class, xTable_obj2);
 		XPropertySet xTableProps_assert2 = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, xTable_Assert2);
@@ -561,13 +561,13 @@ public class TableBasic {
 		assertEquals("assert shadow location",ShadowLocation.BOTTOM_LEFT,shadowFormat_Assert2.Location);
 		assertEquals("assert shadow width",100,shadowFormat_Assert2.ShadowWidth);
 		assertEquals("assert shadow color",0x00FF00FF,shadowFormat_Assert2.Color);
-		
+
 		Object xTable_obj3=xIndexedTables.getByIndex(2);
 		XTextTable xTable_Assert3=(XTextTable) UnoRuntime.queryInterface(XTextTable.class, xTable_obj3);
 		XPropertySet xTableProps_assert3 = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, xTable_Assert3);
 		ShadowFormat shadowFormat_Assert3=(ShadowFormat) UnoRuntime.queryInterface(ShadowFormat.class, xTableProps_assert3.getPropertyValue("ShadowFormat"));
 		assertEquals("assert shadow location",ShadowLocation.NONE,shadowFormat_Assert3.Location);
-		
+
 		Object xTable_obj4=xIndexedTables.getByIndex(3);
 		XTextTable xTable_Assert4=(XTextTable) UnoRuntime.queryInterface(XTextTable.class, xTable_obj4);
 		XPropertySet xTableProps_assert4 = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, xTable_Assert4);
@@ -575,7 +575,7 @@ public class TableBasic {
 		assertEquals("assert shadow location",ShadowLocation.TOP_LEFT,shadowFormat_Assert4.Location);
 		assertEquals("assert shadow width",100,shadowFormat_Assert4.ShadowWidth);
 		assertEquals("assert shadow color",0x00FF00FF,shadowFormat_Assert4.Color);
-		
+
 		Object xTable_obj5=xIndexedTables.getByIndex(4);
 		XTextTable xTable_Assert5=(XTextTable) UnoRuntime.queryInterface(XTextTable.class, xTable_obj5);
 		XPropertySet xTableProps_assert5 = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, xTable_Assert5);
@@ -605,7 +605,7 @@ public class TableBasic {
 		xTableProps1.setPropertyValue("BackGraphicURL",FileUtil.getUrl(Testspace.prepareData("uno/Desert.jpg")));
 		xTableProps1.setPropertyValue("BackGraphicFilter","draw_jpg_Export");
 		xTableProps1.setPropertyValue("BackGraphicLocation",com.sun.star.style.GraphicLocation.LEFT_BOTTOM);
-		
+
 		XTextTable xTable2 = (XTextTable)UnoRuntime.queryInterface(XTextTable.class, xWriterFactory.createInstance("com.sun.star.text.TextTable"));
 		xText.insertTextContent(xTextCursor,xTable2,false);
 		XPropertySet xTableProps2 = (XPropertySet)UnoRuntime.queryInterface(XPropertySet.class, xTable2);
@@ -618,7 +618,7 @@ public class TableBasic {
 		XPropertySet xTableProps3 = (XPropertySet)UnoRuntime.queryInterface(XPropertySet.class, xTable3);
 		xTableProps3.setPropertyValue("BackGraphicURL",FileUtil.getUrl(Testspace.prepareData("uno/Desert.jpg")));
 		xTableProps3.setPropertyValue("BackGraphicFilter","draw_jpg_Export");
-		xTableProps3.setPropertyValue("BackGraphicLocation",com.sun.star.style.GraphicLocation.LEFT_TOP);		
+		xTableProps3.setPropertyValue("BackGraphicLocation",com.sun.star.style.GraphicLocation.LEFT_TOP);
 
 		XTextTable xTable4 = (XTextTable)UnoRuntime.queryInterface(XTextTable.class, xWriterFactory.createInstance("com.sun.star.text.TextTable"));
 		xText.insertTextContent(xTextCursor,xTable4,false);
@@ -626,55 +626,55 @@ public class TableBasic {
 		xTableProps4.setPropertyValue("BackGraphicURL",FileUtil.getUrl(Testspace.prepareData("uno/Desert.jpg")));
 		xTableProps4.setPropertyValue("BackGraphicFilter","draw_jpg_Export");
 		xTableProps4.setPropertyValue("BackGraphicLocation",com.sun.star.style.GraphicLocation.MIDDLE_BOTTOM);
-		
+
 		XTextTable xTable5 = (XTextTable)UnoRuntime.queryInterface(XTextTable.class, xWriterFactory.createInstance("com.sun.star.text.TextTable"));
 		xText.insertTextContent(xTextCursor,xTable5,false);
 		XPropertySet xTableProps5 = (XPropertySet)UnoRuntime.queryInterface(XPropertySet.class, xTable5);
 		xTableProps5.setPropertyValue("BackGraphicURL",FileUtil.getUrl(Testspace.prepareData("uno/Desert.jpg")));
 		xTableProps5.setPropertyValue("BackGraphicFilter","draw_jpg_Export");
 		xTableProps5.setPropertyValue("BackGraphicLocation",com.sun.star.style.GraphicLocation.MIDDLE_MIDDLE);
-		
+
 		XTextTable xTable6 = (XTextTable)UnoRuntime.queryInterface(XTextTable.class, xWriterFactory.createInstance("com.sun.star.text.TextTable"));
 		xText.insertTextContent(xTextCursor,xTable6,false);
 		XPropertySet xTableProps6 = (XPropertySet)UnoRuntime.queryInterface(XPropertySet.class, xTable6);
 		xTableProps6.setPropertyValue("BackGraphicURL",FileUtil.getUrl(Testspace.prepareData("uno/Desert.jpg")));
 		xTableProps6.setPropertyValue("BackGraphicFilter","draw_jpg_Export");
-		xTableProps6.setPropertyValue("BackGraphicLocation",com.sun.star.style.GraphicLocation.MIDDLE_TOP);	
-		
+		xTableProps6.setPropertyValue("BackGraphicLocation",com.sun.star.style.GraphicLocation.MIDDLE_TOP);
+
 		XTextTable xTable7 = (XTextTable)UnoRuntime.queryInterface(XTextTable.class, xWriterFactory.createInstance("com.sun.star.text.TextTable"));
 		xText.insertTextContent(xTextCursor,xTable7,false);
 		XPropertySet xTableProps7 = (XPropertySet)UnoRuntime.queryInterface(XPropertySet.class, xTable7);
 		xTableProps7.setPropertyValue("BackGraphicURL",FileUtil.getUrl(Testspace.prepareData("uno/Desert.jpg")));
 		xTableProps7.setPropertyValue("BackGraphicFilter","draw_jpg_Export");
 		xTableProps7.setPropertyValue("BackGraphicLocation",com.sun.star.style.GraphicLocation.NONE);
-		
+
 		XTextTable xTable8 = (XTextTable)UnoRuntime.queryInterface(XTextTable.class, xWriterFactory.createInstance("com.sun.star.text.TextTable"));
 		xText.insertTextContent(xTextCursor,xTable8,false);
 		XPropertySet xTableProps8 = (XPropertySet)UnoRuntime.queryInterface(XPropertySet.class, xTable8);
 		xTableProps8.setPropertyValue("BackGraphicURL",FileUtil.getUrl(Testspace.prepareData("uno/Desert.jpg")));
 		xTableProps8.setPropertyValue("BackGraphicFilter","draw_jpg_Export");
 		xTableProps8.setPropertyValue("BackGraphicLocation",com.sun.star.style.GraphicLocation.RIGHT_BOTTOM);
-		
+
 		XTextTable xTable9 = (XTextTable)UnoRuntime.queryInterface(XTextTable.class, xWriterFactory.createInstance("com.sun.star.text.TextTable"));
 		xText.insertTextContent(xTextCursor,xTable9,false);
 		XPropertySet xTableProps9 = (XPropertySet)UnoRuntime.queryInterface(XPropertySet.class, xTable9);
 		xTableProps9.setPropertyValue("BackGraphicURL",FileUtil.getUrl(Testspace.prepareData("uno/Desert.jpg")));
 		xTableProps9.setPropertyValue("BackGraphicFilter","draw_jpg_Export");
 		xTableProps9.setPropertyValue("BackGraphicLocation",com.sun.star.style.GraphicLocation.RIGHT_MIDDLE);
-		
+
 		XTextTable xTable10 = (XTextTable)UnoRuntime.queryInterface(XTextTable.class, xWriterFactory.createInstance("com.sun.star.text.TextTable"));
 		xText.insertTextContent(xTextCursor,xTable10,false);
 		XPropertySet xTableProps10 = (XPropertySet)UnoRuntime.queryInterface(XPropertySet.class, xTable10);
 		xTableProps10.setPropertyValue("BackGraphicURL",FileUtil.getUrl(Testspace.prepareData("uno/Desert.jpg")));
 		xTableProps10.setPropertyValue("BackGraphicFilter","draw_jpg_Export");
 		xTableProps10.setPropertyValue("BackGraphicLocation",com.sun.star.style.GraphicLocation.RIGHT_TOP);
-		
+
 		XTextTable xTable11 = (XTextTable)UnoRuntime.queryInterface(XTextTable.class, xWriterFactory.createInstance("com.sun.star.text.TextTable"));
 		xText.insertTextContent(xTextCursor,xTable11,false);
 		XPropertySet xTableProps11 = (XPropertySet)UnoRuntime.queryInterface(XPropertySet.class, xTable11);
 		xTableProps11.setPropertyValue("BackGraphicURL",FileUtil.getUrl(Testspace.prepareData("uno/Desert.jpg")));
 		xTableProps11.setPropertyValue("BackGraphicFilter","draw_jpg_Export");
-		xTableProps11.setPropertyValue("BackGraphicLocation",com.sun.star.style.GraphicLocation.AREA);		
+		xTableProps11.setPropertyValue("BackGraphicLocation",com.sun.star.style.GraphicLocation.AREA);
 		//save and reload text document
 		XStorable xStorable = (XStorable) UnoRuntime.queryInterface(XStorable.class, xTextDocument);
 		PropertyValue[] aStoreProperties = new PropertyValue[2];
@@ -697,73 +697,73 @@ public class TableBasic {
 		assertEquals("verify table backgraphic location",com.sun.star.style.GraphicLocation.LEFT_BOTTOM,xTableProps1_assert.getPropertyValue("BackGraphicLocation"));
 		assertEquals("verify table backgraphic filter","draw_jpg_Export",xTableProps1_assert.getPropertyValue("BackGraphicFilter"));
 		assertEquals("verify table backgraphic URL",FileUtil.getUrl(Testspace.prepareData("uno/Desert.jpg")),xTableProps1_assert.getPropertyValue("BackGraphicURL"));
-		
+
 		Object xTable_obj2=xIndexedTables.getByIndex(1);
 		XTextTable xTable_Assert2=(XTextTable) UnoRuntime.queryInterface(XTextTable.class, xTable_obj2);
 		XPropertySet xTableProps2_assert = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, xTable_Assert2);
 		assertEquals("verify table backgraphic location",com.sun.star.style.GraphicLocation.LEFT_MIDDLE,xTableProps2_assert.getPropertyValue("BackGraphicLocation"));
 		assertEquals("verify table backgraphic filter","draw_jpg_Export",xTableProps2_assert.getPropertyValue("BackGraphicFilter"));
 		assertEquals("verify table backgraphic URL",FileUtil.getUrl(Testspace.prepareData("uno/Desert.jpg")),xTableProps2_assert.getPropertyValue("BackGraphicURL"));
-		
+
 		Object xTable_obj3=xIndexedTables.getByIndex(2);
 		XTextTable xTable_Assert3=(XTextTable) UnoRuntime.queryInterface(XTextTable.class, xTable_obj3);
 		XPropertySet xTableProps3_assert = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, xTable_Assert3);
 		assertEquals("verify table backgraphic location",com.sun.star.style.GraphicLocation.LEFT_TOP,xTableProps3_assert.getPropertyValue("BackGraphicLocation"));
 		assertEquals("verify table backgraphic filter","draw_jpg_Export",xTableProps3_assert.getPropertyValue("BackGraphicFilter"));
 		assertEquals("verify table backgraphic URL",FileUtil.getUrl(Testspace.prepareData("uno/Desert.jpg")),xTableProps3_assert.getPropertyValue("BackGraphicURL"));
-		
+
 		Object xTable_obj4=xIndexedTables.getByIndex(3);
 		XTextTable xTable_Assert4=(XTextTable) UnoRuntime.queryInterface(XTextTable.class, xTable_obj4);
 		XPropertySet xTableProps4_assert = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, xTable_Assert4);
 		assertEquals("verify table backgraphic location",com.sun.star.style.GraphicLocation.MIDDLE_BOTTOM,xTableProps4_assert.getPropertyValue("BackGraphicLocation"));
 		assertEquals("verify table backgraphic filter","draw_jpg_Export",xTableProps4_assert.getPropertyValue("BackGraphicFilter"));
 		assertEquals("verify table backgraphic URL",FileUtil.getUrl(Testspace.prepareData("uno/Desert.jpg")),xTableProps4_assert.getPropertyValue("BackGraphicURL"));
-		
+
 		Object xTable_obj5=xIndexedTables.getByIndex(4);
 		XTextTable xTable_Assert5=(XTextTable) UnoRuntime.queryInterface(XTextTable.class, xTable_obj5);
 		XPropertySet xTableProps5_assert = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, xTable_Assert5);
 		assertEquals("verify table backgraphic location",com.sun.star.style.GraphicLocation.MIDDLE_MIDDLE,xTableProps5_assert.getPropertyValue("BackGraphicLocation"));
 		assertEquals("verify table backgraphic filter","draw_jpg_Export",xTableProps5_assert.getPropertyValue("BackGraphicFilter"));
 		assertEquals("verify table backgraphic URL",FileUtil.getUrl(Testspace.prepareData("uno/Desert.jpg")),xTableProps5_assert.getPropertyValue("BackGraphicURL"));
-		
+
 		Object xTable_obj6=xIndexedTables.getByIndex(5);
 		XTextTable xTable_Assert6=(XTextTable) UnoRuntime.queryInterface(XTextTable.class, xTable_obj6);
 		XPropertySet xTableProps6_assert = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, xTable_Assert6);
 		assertEquals("verify table backgraphic location",com.sun.star.style.GraphicLocation.MIDDLE_TOP,xTableProps6_assert.getPropertyValue("BackGraphicLocation"));
 		assertEquals("verify table backgraphic filter","draw_jpg_Export",xTableProps6_assert.getPropertyValue("BackGraphicFilter"));
 		assertEquals("verify table backgraphic URL",FileUtil.getUrl(Testspace.prepareData("uno/Desert.jpg")),xTableProps6_assert.getPropertyValue("BackGraphicURL"));
-		
+
 		Object xTable_obj7=xIndexedTables.getByIndex(6);
 		XTextTable xTable_Assert7=(XTextTable) UnoRuntime.queryInterface(XTextTable.class, xTable_obj7);
 		XPropertySet xTableProps7_assert = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, xTable_Assert7);
 		assertEquals("verify table backgraphic location is title",com.sun.star.style.GraphicLocation.NONE,xTableProps7_assert.getPropertyValue("BackGraphicLocation"));
-		
+
 		Object xTable_obj8=xIndexedTables.getByIndex(7);
 		XTextTable xTable_Assert8=(XTextTable) UnoRuntime.queryInterface(XTextTable.class, xTable_obj8);
 		XPropertySet xTableProps8_assert = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, xTable_Assert8);
 		assertEquals("verify table backgraphic location",com.sun.star.style.GraphicLocation.RIGHT_BOTTOM,xTableProps8_assert.getPropertyValue("BackGraphicLocation"));
 		assertEquals("verify table backgraphic filter","draw_jpg_Export",xTableProps8_assert.getPropertyValue("BackGraphicFilter"));
 		assertEquals("verify table backgraphic URL",FileUtil.getUrl(Testspace.prepareData("uno/Desert.jpg")),xTableProps8_assert.getPropertyValue("BackGraphicURL"));
-		
+
 		Object xTable_obj9=xIndexedTables.getByIndex(8);
 		XTextTable xTable_Assert9=(XTextTable) UnoRuntime.queryInterface(XTextTable.class, xTable_obj9);
 		XPropertySet xTableProps9_assert = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, xTable_Assert9);
 		assertEquals("verify table backgraphic location",com.sun.star.style.GraphicLocation.RIGHT_MIDDLE,xTableProps9_assert.getPropertyValue("BackGraphicLocation"));
 		assertEquals("verify table backgraphic filter","draw_jpg_Export",xTableProps9_assert.getPropertyValue("BackGraphicFilter"));
 		assertEquals("verify table backgraphic URL",FileUtil.getUrl(Testspace.prepareData("uno/Desert.jpg")),xTableProps9_assert.getPropertyValue("BackGraphicURL"));
-		
+
 		Object xTable_obj10=xIndexedTables.getByIndex(9);
 		XTextTable xTable_Assert10=(XTextTable) UnoRuntime.queryInterface(XTextTable.class, xTable_obj10);
 		XPropertySet xTableProps10_assert = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, xTable_Assert10);
 		assertEquals("verify table backgraphic location",com.sun.star.style.GraphicLocation.RIGHT_TOP,xTableProps10_assert.getPropertyValue("BackGraphicLocation"));
 		assertEquals("verify table backgraphic filter","draw_jpg_Export",xTableProps10_assert.getPropertyValue("BackGraphicFilter"));
 		assertEquals("verify table backgraphic URL",FileUtil.getUrl(Testspace.prepareData("uno/Desert.jpg")),xTableProps10_assert.getPropertyValue("BackGraphicURL"));
-		
+
 		Object xTable_obj11=xIndexedTables.getByIndex(10);
 		XTextTable xTable_Assert11=(XTextTable) UnoRuntime.queryInterface(XTextTable.class, xTable_obj11);
 		XPropertySet xTableProps11_assert = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, xTable_Assert11);
 		assertEquals("verify table backgraphic location",com.sun.star.style.GraphicLocation.AREA,xTableProps11_assert.getPropertyValue("BackGraphicLocation"));
 		assertEquals("verify table backgraphic filter","draw_jpg_Export",xTableProps11_assert.getPropertyValue("BackGraphicFilter"));
-		assertEquals("verify table backgraphic URL",FileUtil.getUrl(Testspace.prepareData("uno/Desert.jpg")),xTableProps11_assert.getPropertyValue("BackGraphicURL"));				
-	}	
+		assertEquals("verify table backgraphic URL",FileUtil.getUrl(Testspace.prepareData("uno/Desert.jpg")),xTableProps11_assert.getPropertyValue("BackGraphicURL"));
+	}
 }

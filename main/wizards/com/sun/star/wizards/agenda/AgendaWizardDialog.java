@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,21 +7,21 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
-package com.sun.star.wizards.agenda; 
-    
+package com.sun.star.wizards.agenda;
+
 import com.sun.star.awt.FontDescriptor;
 import com.sun.star.awt.XButton;
 import com.sun.star.awt.XCheckBox;
@@ -37,18 +37,18 @@ import com.sun.star.wizards.common.Helper;
 import com.sun.star.wizards.common.PropertyNames;
 import com.sun.star.wizards.ui.UIConsts;
 import com.sun.star.wizards.ui.WizardDialog;
-    
+
 /**
  * This class is generated Automatically....
  * bla bla bla
- */      
+ */
 public abstract class AgendaWizardDialog  extends WizardDialog implements AgendaWizardDialogConst, UIConsts {
       //GUI Components as Class members.
   XFixedText lblTitle1;
   XCheckBox chkMinutes;
   XFixedText lblHelp1;
   XFixedText lblPageDesign;
-  XListBox listPageDesign; 
+  XListBox listPageDesign;
   //Image Control
   XControl imgHelp1;
   XControl imgHelp2;
@@ -86,8 +86,8 @@ public abstract class AgendaWizardDialog  extends WizardDialog implements Agenda
   XFixedText lblDuration;
   //XFixedText lblHelp5;
   XTextComponent txtTemplateName;
-  XRadioButton optCreateAgenda; 
-  XRadioButton optMakeChanges; 
+  XRadioButton optCreateAgenda;
+  XRadioButton optMakeChanges;
   XFixedText lblProceed;
   XFixedText lblTemplateName;
   XFixedText lblTemplatePath;
@@ -100,10 +100,10 @@ public abstract class AgendaWizardDialog  extends WizardDialog implements Agenda
   XButton btnRemove;
   XButton btnUp;
   XButton btnDown;
-  
+
   final private String IMGHELP1_HID = PropertyNames.EMPTY_STRING;
-  
-  
+
+
   //Font Descriptors as Class members.
   FontDescriptor fontDescriptor1 = new FontDescriptor();
   FontDescriptor fontDescriptor2 = new FontDescriptor();
@@ -111,7 +111,7 @@ public abstract class AgendaWizardDialog  extends WizardDialog implements Agenda
 
   //Resources Object
   AgendaWizardDialogResources resources;
-  
+
   private String[] PROPS_LIST = new String[] {"Dropdown", PropertyNames.PROPERTY_HEIGHT, PropertyNames.PROPERTY_HELPURL, PropertyNames.PROPERTY_POSITION_X, PropertyNames.PROPERTY_POSITION_Y, PropertyNames.PROPERTY_STEP, PropertyNames.PROPERTY_TABINDEX, PropertyNames.PROPERTY_WIDTH};
   private String[] PROPS_LABEL_B = new String[] {PropertyNames.FONT_DESCRIPTOR, PropertyNames.PROPERTY_HEIGHT, PropertyNames.PROPERTY_LABEL, PropertyNames.PROPERTY_MULTILINE, PropertyNames.PROPERTY_POSITION_X, PropertyNames.PROPERTY_POSITION_Y, PropertyNames.PROPERTY_STEP, PropertyNames.PROPERTY_TABINDEX, PropertyNames.PROPERTY_WIDTH};
   private String[] PROPS_CHECK = new String[] {PropertyNames.PROPERTY_HEIGHT, PropertyNames.PROPERTY_HELPURL, PropertyNames.PROPERTY_LABEL, PropertyNames.PROPERTY_POSITION_X, PropertyNames.PROPERTY_POSITION_Y, PropertyNames.PROPERTY_STATE, PropertyNames.PROPERTY_STEP, PropertyNames.PROPERTY_TABINDEX, PropertyNames.PROPERTY_WIDTH};
@@ -120,34 +120,34 @@ public abstract class AgendaWizardDialog  extends WizardDialog implements Agenda
   private String[] PROPS_TEXTAREA = new String[] {PropertyNames.PROPERTY_HEIGHT, PropertyNames.PROPERTY_LABEL, PropertyNames.PROPERTY_MULTILINE, PropertyNames.PROPERTY_POSITION_X, PropertyNames.PROPERTY_POSITION_Y, PropertyNames.PROPERTY_STEP, PropertyNames.PROPERTY_TABINDEX, PropertyNames.PROPERTY_WIDTH};
   private String[] PROPS_TEXT = new String[] {PropertyNames.PROPERTY_HEIGHT, PropertyNames.PROPERTY_LABEL, PropertyNames.PROPERTY_POSITION_X, PropertyNames.PROPERTY_POSITION_Y, PropertyNames.PROPERTY_STEP, PropertyNames.PROPERTY_TABINDEX, PropertyNames.PROPERTY_WIDTH};
   private String[] PROPS_IMAGE = new String[] {PropertyNames.PROPERTY_BORDER, PropertyNames.PROPERTY_HEIGHT, PropertyNames.PROPERTY_HELPURL, PropertyNames.PROPERTY_IMAGEURL, PropertyNames.PROPERTY_POSITION_X, PropertyNames.PROPERTY_POSITION_Y, "ScaleImage", PropertyNames.PROPERTY_STEP, PropertyNames.PROPERTY_TABINDEX, PropertyNames.PROPERTY_WIDTH};
-  
+
   private static final Short NO_BORDER = new Short((short)0);
-  
+
   public AgendaWizardDialog(XMultiServiceFactory xmsf) {
     super(xmsf,HID);
     //Load Resources
     resources =  new AgendaWizardDialogResources(xmsf);
-   
+
     //set dialog properties...
-    Helper.setUnoPropertyValues(xDialogModel, 
+    Helper.setUnoPropertyValues(xDialogModel,
       new String[] { PropertyNames.PROPERTY_CLOSEABLE,PropertyNames.PROPERTY_HEIGHT,PropertyNames.PROPERTY_MOVEABLE,PropertyNames.PROPERTY_POSITION_X,PropertyNames.PROPERTY_POSITION_Y,PropertyNames.PROPERTY_STEP,PropertyNames.PROPERTY_TABINDEX,PropertyNames.PROPERTY_TITLE,PropertyNames.PROPERTY_WIDTH},
       new Object[] { Boolean.TRUE,210,Boolean.TRUE,200,52,INTEGERS[1],new Short((short)1),resources.resAgendaWizardDialog_title,310}
     );
-    
+
     //Set member- FontDescriptors...
     fontDescriptor1.Weight = 150;
     fontDescriptor1.Underline = com.sun.star.awt.FontUnderline.SINGLE;
     fontDescriptor2.Weight = 100;
     fontDescriptor4.Weight = 150;
   }
-  
+
   //build components
   public void buildStep1() {
-    lblTitle1 = insertLabel("lblTitle1", 
+    lblTitle1 = insertLabel("lblTitle1",
       PROPS_LABEL_B,
       new Object[] { fontDescriptor4,INTEGER_16,resources.reslblTitle1_value,Boolean.TRUE,91,INTEGERS[8],INTEGERS[1],new Short((short)100),212}
     );
-    lblPageDesign = insertLabel("lblPageDesign", 
+    lblPageDesign = insertLabel("lblPageDesign",
       PROPS_TEXT,
       new Object[] { INTEGERS[8],resources.reslblPageDesign_value,97,32,INTEGERS[1],new Short((short)101),66}
     );
@@ -159,11 +159,11 @@ public abstract class AgendaWizardDialog  extends WizardDialog implements Agenda
       PROPS_CHECK,
       new Object[] { INTEGERS[9],CHKMINUTES_HID,resources.reschkMinutes_value,97,50,new Short((short)0),INTEGERS[1],new Short((short)103),203}
     );
-    imgHelp1 = insertImage("imgHelp1", 
+    imgHelp1 = insertImage("imgHelp1",
       PROPS_IMAGE,
       new Object[] { NO_BORDER, INTEGERS[10],IMGHELP1_HID, AgendaWizardDialogConst.INFO_IMAGE_URL, 92,145, Boolean.FALSE, INTEGERS[1], new Short((short)104),INTEGERS[10]}
     );
-    lblHelp1 = insertLabel("lblHelp1", 
+    lblHelp1 = insertLabel("lblHelp1",
             PROPS_TEXTAREA,
             new Object[] { 39,resources.reslblHelp1_value,Boolean.TRUE,104,145,INTEGERS[1],new Short((short)105),199}
           );
@@ -171,11 +171,11 @@ public abstract class AgendaWizardDialog  extends WizardDialog implements Agenda
   }
 
   public void buildStep2() {
-    lblTitle2 = insertLabel("lblTitle2", 
+    lblTitle2 = insertLabel("lblTitle2",
       PROPS_LABEL_B,
       new Object[] { fontDescriptor4,INTEGER_16,resources.reslblTitle2_value,Boolean.TRUE,91,INTEGERS[8],INTEGERS[2],new Short((short)200),212}
     );
-    lblDate = insertLabel("lblDate", 
+    lblDate = insertLabel("lblDate",
       PROPS_TEXT,
       new Object[] { INTEGERS[8],resources.reslblDate_value,97,32,INTEGERS[2],new Short((short)201),66}
     );
@@ -183,7 +183,7 @@ public abstract class AgendaWizardDialog  extends WizardDialog implements Agenda
       PROPS_LIST,
       new Object[] { Boolean.TRUE,INTEGER_12,TXTDATE_HID,166,30,INTEGERS[2],new Short((short)202),70}
     );
-    lblTime = insertLabel("lblTime", 
+    lblTime = insertLabel("lblTime",
       PROPS_TEXT,
       new Object[] { INTEGERS[8],resources.reslblTime_value,97,50,INTEGERS[2],new Short((short)203),66}
     );
@@ -191,8 +191,8 @@ public abstract class AgendaWizardDialog  extends WizardDialog implements Agenda
       new String[] {PropertyNames.PROPERTY_HEIGHT, PropertyNames.PROPERTY_HELPURL, PropertyNames.PROPERTY_POSITION_X, PropertyNames.PROPERTY_POSITION_Y, PropertyNames.PROPERTY_STEP, "StrictFormat", PropertyNames.PROPERTY_TABINDEX, PropertyNames.PROPERTY_WIDTH},
      new Object[] { INTEGER_12,TXTTIME_HID,166,48,INTEGERS[2],Boolean.TRUE,new Short((short)204),70}
     );
-    
-    lblTitle = insertLabel("lblTitle", 
+
+    lblTitle = insertLabel("lblTitle",
       PROPS_TEXT,
       new Object[] { INTEGERS[8],resources.reslblTitle_value,97,68,INTEGERS[2],new Short((short)205),66}
     );
@@ -200,7 +200,7 @@ public abstract class AgendaWizardDialog  extends WizardDialog implements Agenda
       new String[] {PropertyNames.PROPERTY_HEIGHT, PropertyNames.PROPERTY_HELPURL, PropertyNames.PROPERTY_MULTILINE, PropertyNames.PROPERTY_POSITION_X, PropertyNames.PROPERTY_POSITION_Y, PropertyNames.PROPERTY_STEP, PropertyNames.PROPERTY_TABINDEX, PropertyNames.PROPERTY_WIDTH},
       new Object[] { 26,TXTTITLE_HID,Boolean.TRUE,166,66,INTEGERS[2],new Short((short)206),138}
     );
-    lblLocation = insertLabel("lblLocation", 
+    lblLocation = insertLabel("lblLocation",
       PROPS_TEXT,
       new Object[] { INTEGERS[8],resources.reslblLocation_value,97,100,INTEGERS[2],new Short((short)207),66}
     );
@@ -208,20 +208,20 @@ public abstract class AgendaWizardDialog  extends WizardDialog implements Agenda
       new String[] { PropertyNames.PROPERTY_HEIGHT, PropertyNames.PROPERTY_HELPURL, PropertyNames.PROPERTY_MULTILINE, PropertyNames.PROPERTY_POSITION_X, PropertyNames.PROPERTY_POSITION_Y, PropertyNames.PROPERTY_STEP, PropertyNames.PROPERTY_TABINDEX, PropertyNames.PROPERTY_WIDTH},
       new Object[] { 34,CBLOCATION_HID,Boolean.TRUE,166,98,INTEGERS[2],new Short((short)208),138}
     );
-    
-    imgHelp2 = insertImage("imgHelp2", 
+
+    imgHelp2 = insertImage("imgHelp2",
       PROPS_IMAGE,
       new Object[] { NO_BORDER, INTEGERS[10],IMGHELP1_HID,AgendaWizardDialogConst.INFO_IMAGE_URL, 92,145,Boolean.FALSE, INTEGERS[2],new Short((short)209),INTEGERS[10]}
     );
-    lblHelp2 = insertLabel("lblHelp2", 
+    lblHelp2 = insertLabel("lblHelp2",
       PROPS_TEXTAREA,
       new Object[] { 39,resources.reslblHelp2_value,Boolean.TRUE,104,145,INTEGERS[2],new Short((short)210),199}
     );
-    
+
   }
 
   public void buildStep3() {
-    lblTitle3 = insertLabel("lblTitle3", 
+    lblTitle3 = insertLabel("lblTitle3",
       PROPS_LABEL_B,
       new Object[] { fontDescriptor4,INTEGER_16,resources.reslblTitle3_value,Boolean.TRUE,91,INTEGERS[8],INTEGERS[3],new Short((short)300),212}
     );
@@ -241,18 +241,18 @@ public abstract class AgendaWizardDialog  extends WizardDialog implements Agenda
       PROPS_CHECK,
       new Object[] { INTEGERS[8],CHKNOTES_HID,resources.reschkNotes_value,97,74,new Short((short)1),INTEGERS[3],new Short((short)304),160}
     );
-    imgHelp3 = insertImage("imgHelp3", 
+    imgHelp3 = insertImage("imgHelp3",
             PROPS_IMAGE,
             new Object[] { NO_BORDER, INTEGERS[10],IMGHELP1_HID,AgendaWizardDialogConst.INFO_IMAGE_URL, 92,145,Boolean.FALSE, INTEGERS[3],new Short((short)305),INTEGERS[10]}
           );
-    lblHelp3 = insertLabel("lblHelp3", 
+    lblHelp3 = insertLabel("lblHelp3",
       PROPS_TEXTAREA,
       new Object[] { 39,resources.reslblHelp3_value,Boolean.TRUE,104,145,INTEGERS[3],new Short((short)306),199}
     );
   }
 
   public void buildStep4() {
-    lblTitle5 = insertLabel("lblTitle5", 
+    lblTitle5 = insertLabel("lblTitle5",
       PROPS_LABEL_B,
       new Object[] { fontDescriptor4,INTEGER_16,resources.reslblTitle5_value,Boolean.TRUE,91,INTEGERS[8],INTEGERS[4],new Short((short)400),212}
     );
@@ -284,38 +284,38 @@ public abstract class AgendaWizardDialog  extends WizardDialog implements Agenda
       PROPS_CHECK,
       new Object[] { INTEGERS[8],CHKRESOURCEPERSONS_HID,resources.reschkResourcePersons_value,97,116,new Short((short)0),INTEGERS[4],new Short((short)407),150}
     );
-    imgHelp4 = insertImage("imgHelp4", 
+    imgHelp4 = insertImage("imgHelp4",
             PROPS_IMAGE,
             new Object[] { NO_BORDER, INTEGERS[10],IMGHELP1_HID,AgendaWizardDialogConst.INFO_IMAGE_URL, 92,145,Boolean.FALSE, INTEGERS[4],new Short((short)408),INTEGERS[10]}
           );
-    lblHelp4 = insertLabel("lblHelp4", 
+    lblHelp4 = insertLabel("lblHelp4",
       PROPS_TEXTAREA,
       new Object[] { 39,resources.reslblHelp4_value,Boolean.TRUE,104,145,INTEGERS[4],new Short((short)409),199}
     );
   }
 
   public void buildStep5() {
-    lblTitle4 = insertLabel("lblTitle4", 
+    lblTitle4 = insertLabel("lblTitle4",
       PROPS_LABEL_B,
       new Object[] { fontDescriptor4,INTEGER_16,resources.reslblTitle4_value,Boolean.TRUE,91,INTEGERS[8],INTEGERS[5],new Short((short)500),212}
     );
-    lblTopic = insertLabel("lblTopic", 
+    lblTopic = insertLabel("lblTopic",
       PROPS_TEXT,
       new Object[] { INTEGERS[8],resources.reslblTopic_value,107,28,INTEGERS[5],new Short((short)71),501}
     );
-    lblResponsible = insertLabel("lblResponsible", 
+    lblResponsible = insertLabel("lblResponsible",
       PROPS_TEXT,
       new Object[] { INTEGERS[8],resources.reslblResponsible_value,195,28,INTEGERS[5],new Short((short)72),502}
     );
-    lblDuration = insertLabel("lblDuration", 
+    lblDuration = insertLabel("lblDuration",
       PROPS_TEXT,
       new Object[] { INTEGERS[8],resources.reslblDuration_value,267,28,INTEGERS[5],new Short((short)73),503}
     );
-  
-    
-    
-    
-    
+
+
+
+
+
     btnInsert = insertButton("btnInsert", BTNINSERT_ACTION_PERFORMED,
             PROPS_BUTTON,
             new Object[] { INTEGER_14,BTNINSERT_HID,resources.resButtonInsert,92,136,INTEGERS[5],new Short((short)580),INTEGER_40}
@@ -332,22 +332,22 @@ public abstract class AgendaWizardDialog  extends WizardDialog implements Agenda
             PROPS_BUTTON,
             new Object[] { INTEGER_14,BTNDOWN_HID,resources.resButtonDown,264,136,INTEGERS[5],new Short((short)583),INTEGER_40}
           );
-          
-    
+
+
   }
 
   public void buildStep6() {
 
-    lblTitle6 = insertLabel("lblTitle6", 
+    lblTitle6 = insertLabel("lblTitle6",
       PROPS_LABEL_B,
       new Object[] { fontDescriptor4,INTEGER_16,resources.reslblTitle6_value,Boolean.TRUE,91,INTEGERS[8],INTEGERS[6],new Short((short)600),212}
     );
-    lblHelpPg6 = insertLabel("lblHelpPg6", 
+    lblHelpPg6 = insertLabel("lblHelpPg6",
             PROPS_TEXTAREA,
             new Object[] { 24,resources.reslblHelpPg6_value,Boolean.TRUE,97,32,INTEGERS[6],new Short((short)601),204}
           );
-    
-    lblTemplateName = insertLabel("lblTemplateName", 
+
+    lblTemplateName = insertLabel("lblTemplateName",
       PROPS_TEXT,
       new Object[] { INTEGERS[8],resources.reslblTemplateName_value,97,62,INTEGERS[6],new Short((short)602),101}
     );
@@ -355,7 +355,7 @@ public abstract class AgendaWizardDialog  extends WizardDialog implements Agenda
       PROPS_X,
       new Object[] { INTEGER_12,TXTTEMPLATENAME_HID,202,60,INTEGERS[6],new Short((short)603),100}
     );
-    lblProceed = insertLabel("lblProceed", 
+    lblProceed = insertLabel("lblProceed",
       PROPS_TEXT,
       new Object[] { INTEGERS[8],resources.reslblProceed_value,97,101,INTEGERS[6],new Short((short)607),204}
     );
@@ -367,15 +367,15 @@ public abstract class AgendaWizardDialog  extends WizardDialog implements Agenda
       PROPS_BUTTON,
       new Object[] { INTEGERS[8],OPTMAKECHANGES_HID,resources.resoptMakeChanges_value,103,125,INTEGERS[6],new Short((short)609),198}
     );
-    imgHelp6 = insertImage("imgHelp6", 
+    imgHelp6 = insertImage("imgHelp6",
             PROPS_IMAGE,
             new Object[] { NO_BORDER, INTEGERS[10],IMGHELP1_HID,AgendaWizardDialogConst.INFO_IMAGE_URL, 92,145,Boolean.FALSE, INTEGERS[6],new Short((short)610),INTEGERS[10]}
           );
-    lblHelp6 = insertLabel("lblHelp6", 
+    lblHelp6 = insertLabel("lblHelp6",
             PROPS_TEXTAREA,
             new Object[] { 39,resources.reslblHelp6_value,Boolean.TRUE,104,145,INTEGERS[6],new Short((short)611),199}
           );
-          
+
   }
 
 }

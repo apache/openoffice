@@ -35,7 +35,7 @@ import org.apache.openoffice.ooxml.schema.model.schema.SchemaBase;
 
 /** Create a set of stack automatons for a given set of schemas.
  *  Creates one automaton for each complex type and one for the top level elements.
- *   
+ *
  *  Input files but are not validated to conform to the schemas.
  */
 public class NonValidatingCreator
@@ -47,15 +47,15 @@ public class NonValidatingCreator
     {
         super(aSchemaBase, aLogFile);
     }
-    
-    
-    
-    
+
+
+
+
     public FiniteAutomatonContainer Create (
         final Iterable<Schema> aTopLevelSchemas)
     {
         final FiniteAutomatonContainer aAutomatons = new FiniteAutomatonContainer(maStateContainer);
-        
+
         // Create a single automaton for all top level elements.
         aAutomatons.AddAutomaton(
             null,
@@ -66,7 +66,7 @@ public class NonValidatingCreator
             aAutomatons.AddAutomaton(
                 aComplexType.GetName(),
                 CreateForComplexType(aComplexType));
-        
+
         // Create one automaton for each simple type that is referenced by an element.
         for (final INode aSimpleType : maElementSimpleTypes)
             aAutomatons.AddAutomaton(
@@ -77,16 +77,16 @@ public class NonValidatingCreator
 
         return aAutomatons;
     }
-    
-    
-    
-    
+
+
+
+
     private FiniteAutomaton CreateForTopLevelElements (
         final Iterable<Schema> aTopLevelSchemas)
     {
         maLog.AddComment("top level elements");
         maLog.StartBlock();
-        final String sTypeName = "<top-level>"; 
+        final String sTypeName = "<top-level>";
         final StateContext aStateContext = new StateContext(
             maStateContainer,
             sTypeName);
@@ -116,13 +116,13 @@ public class NonValidatingCreator
             maLog.EndBlock();
         }
         maLog.EndBlock();
-        
+
         return new FiniteAutomaton(aStateContext, null, null);
     }
-    
-    
-    
-    
+
+
+
+
     private FiniteAutomaton CreateForComplexType (final ComplexType aComplexType)
     {
         maLog.printf("\n");
@@ -130,7 +130,7 @@ public class NonValidatingCreator
             aComplexType.GetName().GetDisplayName(),
             aComplexType.GetLocation());
         maLog.StartBlock();
-        
+
         final StateContext aStateContext = new StateContext(
             maStateContainer,
             aComplexType.GetName().GetStateName());
@@ -150,14 +150,14 @@ public class NonValidatingCreator
                     aElement.GetElementName(),
                     aElement.GetTypeName().GetStateName()));
 
-            // For elements whose type is a simple type we have to remember that 
+            // For elements whose type is a simple type we have to remember that
             // simple type for later (and then create an NFA for it.)
             final INode aSimpleType = maSchemaBase.GetSimpleTypeForName(
                 aElement.GetTypeName());
             if (aSimpleType != null)
                 maElementSimpleTypes.add(aSimpleType);
         }
-        
+
         for (final Any aAny : CollectAnys(aComplexType))
         {
             AddSkipTransition(
@@ -173,15 +173,15 @@ public class NonValidatingCreator
             ProcessAttributes(aNode);
 
         aStateContext.GetStartState().SetIsAccepting();
-        
+
         maLog.EndBlock();
-        
-        return new FiniteAutomaton(aStateContext, maAttributes, aComplexType.GetLocation()); 
+
+        return new FiniteAutomaton(aStateContext, maAttributes, aComplexType.GetLocation());
     }
-    
-    
-    
-    
+
+
+
+
     /** Collect all elements inside the type tree that is rooted in the given
      *  complex type.
      */
@@ -196,9 +196,9 @@ public class NonValidatingCreator
         return aElements;
     }
 
-    
-    
-    
+
+
+
     private Vector<Any> CollectAnys (final ComplexType aType)
     {
         final Vector<Any> aAnys = new Vector<>();

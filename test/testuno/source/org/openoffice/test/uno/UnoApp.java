@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 package org.openoffice.test.uno;
@@ -59,28 +59,28 @@ public class UnoApp {
 	private XDesktop desktop = null;
 
 	private double reconnectInterval = 2;
-	
+
 	private int reconnectCount = 10;
-	
+
 	public static OpenOffice getDefaultOpenOffice() {
 		OpenOffice openOffice = new OpenOffice();
 		openOffice.addArgs("-nofirststartwizard", "-norestore", "-quickstart=no");
 		openOffice.setUnoUrl(OpenOffice.DEFAULT_UNO_URL);
                 return openOffice;
 	}
-	
+
 	public UnoApp() {
 		this.openOffice = getDefaultOpenOffice();
 	}
-	
+
 	public UnoApp(OpenOffice openOffice) {
 		this.openOffice = openOffice;
 	}
-	
+
 	public UnoApp(String unoUrl) {
 		this.unoUrl = unoUrl;
 	}
-	
+
 	/**
 	 * Start OpenOffice and connect to it
 	 */
@@ -90,10 +90,10 @@ public class UnoApp {
 				componentContext.getServiceManager();
 				return;
 			} catch (Exception e) {
-				
+
 			}
 		}
-		
+
 		if (openOffice != null) {
 			openOffice.start();
 			unoUrl = openOffice.getUnoUrl();
@@ -151,7 +151,7 @@ public class UnoApp {
 
 	/**
 	 * Get the XComponentContext of the connected OpenOffice instance
-	 * 
+	 *
 	 * @return
 	 */
 	public XComponentContext getComponentContext() {
@@ -174,53 +174,53 @@ public class UnoApp {
 //		XComponentLoader componentLoader = (XComponentLoader) UnoRuntime.queryInterface(XComponentLoader.class, desktop);
 //		return componentLoader.loadComponentFromURL(FileUtil.getUrl(file), "_blank", 0, new PropertyValue[0]);
 //	}
-	
+
 	public XComponent loadDocument(String file, PropertyValue... propertyValue) throws Exception {
 		XComponentLoader componentLoader = (XComponentLoader) UnoRuntime.queryInterface(XComponentLoader.class, desktop);
 		return componentLoader.loadComponentFromURL(FileUtil.getUrl(file), "_blank", 0, propertyValue);
 	}
-	
+
 //	public XComponent loadDocumentFromURL(String url) throws Exception {
 //		XComponentLoader componentLoader = (XComponentLoader) UnoRuntime.queryInterface(XComponentLoader.class, desktop);
 //		return componentLoader.loadComponentFromURL(url, "_blank", 0, new PropertyValue[0]);
 //	}
-	
+
 	public XComponent loadDocumentFromURL(String url, PropertyValue... propertyValue) throws Exception {
 		XComponentLoader componentLoader = (XComponentLoader) UnoRuntime.queryInterface(XComponentLoader.class, desktop);
 		return componentLoader.loadComponentFromURL(url, "_blank", 0, propertyValue);
 	}
-	
+
 	public XComponent newDocument(String type) throws Exception {
 		XComponentLoader componentLoader = (XComponentLoader) UnoRuntime.queryInterface(XComponentLoader.class, desktop);
 		return componentLoader.loadComponentFromURL("private:factory/" + type, "_blank", 0, new PropertyValue[0]);
 	}
-	
+
 //	public void saveDocument(XComponent doc, String toPath) throws Exception {
-//		XStorable m_xstorable = (XStorable)UnoRuntime.queryInterface(XStorable.class, doc);	
-//		String fileUrl = FileUtil.getUrl(new File(toPath));	
+//		XStorable m_xstorable = (XStorable)UnoRuntime.queryInterface(XStorable.class, doc);
+//		String fileUrl = FileUtil.getUrl(new File(toPath));
 //		m_xstorable.storeAsURL(fileUrl, new PropertyValue[0]);
 //	}
-	
+
 	public void saveDocument(XComponent doc, String toPath, PropertyValue... propertyValue) throws Exception {
-		XStorable m_xstorable = (XStorable)UnoRuntime.queryInterface(XStorable.class, doc);	
-		String fileUrl = FileUtil.getUrl(new File(toPath));	
+		XStorable m_xstorable = (XStorable)UnoRuntime.queryInterface(XStorable.class, doc);
+		String fileUrl = FileUtil.getUrl(new File(toPath));
 		m_xstorable.storeToURL(fileUrl, propertyValue);
 	}
-	
+
 	public void saveDocumentToURL(XComponent doc, String toURL, PropertyValue... propertyValue) throws Exception {
-		XStorable m_xstorable = (XStorable)UnoRuntime.queryInterface(XStorable.class, doc);	
+		XStorable m_xstorable = (XStorable)UnoRuntime.queryInterface(XStorable.class, doc);
 		m_xstorable.storeToURL(toURL, propertyValue);
 	}
-	
+
 	public void closeDocument(XComponent doc) {
 		try {
 			XModifiable modified = (XModifiable) UnoRuntime.queryInterface(XModifiable.class, doc);
 			XCloseable closer = (XCloseable) UnoRuntime.queryInterface(XCloseable.class, doc);
-			if (modified != null) 
+			if (modified != null)
 				modified.setModified(false);
 			closer.close(true);
 		} catch (Exception e) {
 			// ignore
-		} 
+		}
 	}
 }

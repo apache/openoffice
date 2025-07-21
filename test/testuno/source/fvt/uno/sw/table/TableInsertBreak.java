@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 package fvt.uno.sw.table;
@@ -64,14 +64,14 @@ public class TableInsertBreak {
 		// Create a new table from the document's factory
 		XTextTable xTable = (XTextTable)UnoRuntime.queryInterface(XTextTable.class, xWriterFactory.createInstance("com.sun.star.text.TextTable"));
 		xText.insertTextContent(xTextCursor,xTable,false);
-		//insert page break for table 
+		//insert page break for table
 		XPropertySet xCursorProps = (XPropertySet)UnoRuntime.queryInterface(XPropertySet.class,xTable);
 		assertEquals("assert default split",true,xCursorProps.getPropertyValue("Split"));
 		assertEquals("assert default keep_together",false,xCursorProps.getPropertyValue("KeepTogether"));
 		xCursorProps.setPropertyValue("BreakType",com.sun.star.style.BreakType.PAGE_BEFORE);
 		xCursorProps.setPropertyValue("Split",false);
 		xCursorProps.setPropertyValue("KeepTogether",true);
-		//save to odt 
+		//save to odt
 		XStorable xStorable_odt = (XStorable) UnoRuntime.queryInterface(XStorable.class, xTextDocument);
 		PropertyValue[] aStoreProperties_odt = new PropertyValue[2];
 		aStoreProperties_odt[0] = new PropertyValue();
@@ -81,7 +81,7 @@ public class TableInsertBreak {
 		aStoreProperties_odt[1].Name = "FilterName";
 		aStoreProperties_odt[1].Value = "StarOffice XML (Writer)";
 		xStorable_odt.storeToURL(FileUtil.getUrl(Testspace.getPath("output/test.odt")), aStoreProperties_odt);
-		//save to doc 
+		//save to doc
 		XStorable xStorable_doc = (XStorable) UnoRuntime.queryInterface(XStorable.class, xTextDocument);
 		PropertyValue[] aStoreProperties_doc = new PropertyValue[2];
 		aStoreProperties_doc[0] = new PropertyValue();
@@ -90,10 +90,10 @@ public class TableInsertBreak {
 		aStoreProperties_doc[0].Value = true;
 		aStoreProperties_doc[1].Name = "FilterName";
 		aStoreProperties_doc[1].Value = "MS Word 97";
-		xStorable_doc.storeToURL(FileUtil.getUrl(Testspace.getPath("output/test.doc")), aStoreProperties_doc);	
+		xStorable_doc.storeToURL(FileUtil.getUrl(Testspace.getPath("output/test.doc")), aStoreProperties_doc);
 		app.closeDocument(xTextDocument);
 
-		//reopen the document 
+		//reopen the document
 		XTextDocument assertDocument_odt=(XTextDocument)UnoRuntime.queryInterface(XTextDocument.class, app.loadDocument(Testspace.getPath("output/test.odt")));
 		XTextTablesSupplier xTablesSupplier_odt = (XTextTablesSupplier) UnoRuntime.queryInterface(XTextTablesSupplier.class, assertDocument_odt );
 		XIndexAccess xIndexedTables_odt = (XIndexAccess) UnoRuntime.queryInterface(XIndexAccess.class, xTablesSupplier_odt.getTextTables());
@@ -130,8 +130,8 @@ public class TableInsertBreak {
 		xText.insertTextContent(xTextCursor,xTable,false);
 		XPropertySet xCursorProps = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class,xTable);
 		//set table break type
-		xCursorProps.setPropertyValue("BreakType",com.sun.star.style.BreakType.PAGE_AFTER);		
-		//save to odt 
+		xCursorProps.setPropertyValue("BreakType",com.sun.star.style.BreakType.PAGE_AFTER);
+		//save to odt
 		XStorable xStorable_odt = (XStorable) UnoRuntime.queryInterface(XStorable.class, xTextDocument);
 		PropertyValue[] aStoreProperties_odt = new PropertyValue[2];
 		aStoreProperties_odt[0] = new PropertyValue();
@@ -141,7 +141,7 @@ public class TableInsertBreak {
 		aStoreProperties_odt[1].Name = "FilterName";
 		aStoreProperties_odt[1].Value = "StarOffice XML (Writer)";
 		xStorable_odt.storeToURL(FileUtil.getUrl(Testspace.getPath("output/test.odt")), aStoreProperties_odt);
-		//save to doc 
+		//save to doc
 		XStorable xStorable_doc = (XStorable) UnoRuntime.queryInterface(XStorable.class, xTextDocument);
 		PropertyValue[] aStoreProperties_doc = new PropertyValue[2];
 		aStoreProperties_doc[0] = new PropertyValue();
@@ -150,10 +150,10 @@ public class TableInsertBreak {
 		aStoreProperties_doc[0].Value = true;
 		aStoreProperties_doc[1].Name = "FilterName";
 		aStoreProperties_doc[1].Value = "MS Word 97";
-		xStorable_doc.storeToURL(FileUtil.getUrl(Testspace.getPath("output/test.doc")), aStoreProperties_doc);	
+		xStorable_doc.storeToURL(FileUtil.getUrl(Testspace.getPath("output/test.doc")), aStoreProperties_doc);
 		app.closeDocument(xTextDocument);
 
-		//reopen the document 
+		//reopen the document
 		XTextDocument assertDocument_odt=(XTextDocument)UnoRuntime.queryInterface(XTextDocument.class, app.loadDocument(Testspace.getPath("output/test.odt")));
 		XTextTablesSupplier xTablesSupplier_odt = (XTextTablesSupplier) UnoRuntime.queryInterface(XTextTablesSupplier.class, assertDocument_odt );
 		XIndexAccess xIndexedTables_odt = (XIndexAccess) UnoRuntime.queryInterface(XIndexAccess.class, xTablesSupplier_odt.getTextTables());
@@ -185,8 +185,8 @@ public class TableInsertBreak {
 		XTextTable xTable = (XTextTable)UnoRuntime.queryInterface(XTextTable.class, xWriterFactory.createInstance("com.sun.star.text.TextTable"));
 		xText.insertTextContent(xTextCursor,xTable,false);
 		XPropertySet xCursorProps = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class,xTable);
-		xCursorProps.setPropertyValue("BreakType",com.sun.star.style.BreakType.COLUMN_BEFORE);		
-		//save to odt 
+		xCursorProps.setPropertyValue("BreakType",com.sun.star.style.BreakType.COLUMN_BEFORE);
+		//save to odt
 		XStorable xStorable_odt = (XStorable) UnoRuntime.queryInterface(XStorable.class, xTextDocument);
 		PropertyValue[] aStoreProperties_odt = new PropertyValue[2];
 		aStoreProperties_odt[0] = new PropertyValue();
@@ -196,7 +196,7 @@ public class TableInsertBreak {
 		aStoreProperties_odt[1].Name = "FilterName";
 		aStoreProperties_odt[1].Value = "StarOffice XML (Writer)";
 		xStorable_odt.storeToURL(FileUtil.getUrl(Testspace.getPath("output/test.odt")), aStoreProperties_odt);
-		//save to doc 
+		//save to doc
 		XStorable xStorable_doc = (XStorable) UnoRuntime.queryInterface(XStorable.class, xTextDocument);
 		PropertyValue[] aStoreProperties_doc = new PropertyValue[2];
 		aStoreProperties_doc[0] = new PropertyValue();
@@ -205,10 +205,10 @@ public class TableInsertBreak {
 		aStoreProperties_doc[0].Value = true;
 		aStoreProperties_doc[1].Name = "FilterName";
 		aStoreProperties_doc[1].Value = "MS Word 97";
-		xStorable_doc.storeToURL(FileUtil.getUrl(Testspace.getPath("output/test.doc")), aStoreProperties_doc);	
+		xStorable_doc.storeToURL(FileUtil.getUrl(Testspace.getPath("output/test.doc")), aStoreProperties_doc);
 		app.closeDocument(xTextDocument);
 
-		//reopen the document 
+		//reopen the document
 		XTextDocument assertDocument_odt=(XTextDocument)UnoRuntime.queryInterface(XTextDocument.class, app.loadDocument(Testspace.getPath("output/test.odt")));
 		XTextTablesSupplier xTablesSupplier_odt = (XTextTablesSupplier) UnoRuntime.queryInterface(XTextTablesSupplier.class, assertDocument_odt );
 		XIndexAccess xIndexedTables_odt = (XIndexAccess) UnoRuntime.queryInterface(XIndexAccess.class, xTablesSupplier_odt.getTextTables());
@@ -240,8 +240,8 @@ public class TableInsertBreak {
 		XTextTable xTable = (XTextTable)UnoRuntime.queryInterface(XTextTable.class, xWriterFactory.createInstance("com.sun.star.text.TextTable"));
 		xText.insertTextContent(xTextCursor,xTable,false);
 		XPropertySet xCursorProps = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class,xTable);
-		xCursorProps.setPropertyValue("BreakType",com.sun.star.style.BreakType.COLUMN_AFTER);		
-		//save to odt 
+		xCursorProps.setPropertyValue("BreakType",com.sun.star.style.BreakType.COLUMN_AFTER);
+		//save to odt
 		XStorable xStorable_odt = (XStorable) UnoRuntime.queryInterface(XStorable.class, xTextDocument);
 		PropertyValue[] aStoreProperties_odt = new PropertyValue[2];
 		aStoreProperties_odt[0] = new PropertyValue();
@@ -251,7 +251,7 @@ public class TableInsertBreak {
 		aStoreProperties_odt[1].Name = "FilterName";
 		aStoreProperties_odt[1].Value = "StarOffice XML (Writer)";
 		xStorable_odt.storeToURL(FileUtil.getUrl(Testspace.getPath("output/test.odt")), aStoreProperties_odt);
-		//save to doc 
+		//save to doc
 		XStorable xStorable_doc = (XStorable) UnoRuntime.queryInterface(XStorable.class, xTextDocument);
 		PropertyValue[] aStoreProperties_doc = new PropertyValue[2];
 		aStoreProperties_doc[0] = new PropertyValue();
@@ -260,10 +260,10 @@ public class TableInsertBreak {
 		aStoreProperties_doc[0].Value = true;
 		aStoreProperties_doc[1].Name = "FilterName";
 		aStoreProperties_doc[1].Value = "MS Word 97";
-		xStorable_doc.storeToURL(FileUtil.getUrl(Testspace.getPath("output/test.doc")), aStoreProperties_doc);	
+		xStorable_doc.storeToURL(FileUtil.getUrl(Testspace.getPath("output/test.doc")), aStoreProperties_doc);
 		app.closeDocument(xTextDocument);
 
-		//reopen the document 
+		//reopen the document
 		XTextDocument assertDocument_odt=(XTextDocument)UnoRuntime.queryInterface(XTextDocument.class, app.loadDocument(Testspace.getPath("output/test.odt")));
 		XTextTablesSupplier xTablesSupplier_odt = (XTextTablesSupplier) UnoRuntime.queryInterface(XTextTablesSupplier.class, assertDocument_odt );
 		XIndexAccess xIndexedTables_odt = (XIndexAccess) UnoRuntime.queryInterface(XIndexAccess.class, xTablesSupplier_odt.getTextTables());
@@ -298,7 +298,7 @@ public class TableInsertBreak {
 		xCursorProps.setPropertyValue("BreakType",com.sun.star.style.BreakType.PAGE_BEFORE);
 		xCursorProps.setPropertyValue("PageDescName","Endnote");
 		xCursorProps.setPropertyValue("PageNumberOffset",(short)3);
-		//save to odt 
+		//save to odt
 		XStorable xStorable_odt = (XStorable) UnoRuntime.queryInterface(XStorable.class, xTextDocument);
 		PropertyValue[] aStoreProperties_odt = new PropertyValue[2];
 		aStoreProperties_odt[0] = new PropertyValue();
@@ -308,7 +308,7 @@ public class TableInsertBreak {
 		aStoreProperties_odt[1].Name = "FilterName";
 		aStoreProperties_odt[1].Value = "StarOffice XML (Writer)";
 		xStorable_odt.storeToURL(FileUtil.getUrl(Testspace.getPath("output/test.odt")), aStoreProperties_odt);
-		//save to doc 
+		//save to doc
 		XStorable xStorable_doc = (XStorable) UnoRuntime.queryInterface(XStorable.class, xTextDocument);
 		PropertyValue[] aStoreProperties_doc = new PropertyValue[2];
 		aStoreProperties_doc[0] = new PropertyValue();
@@ -317,10 +317,10 @@ public class TableInsertBreak {
 		aStoreProperties_doc[0].Value = true;
 		aStoreProperties_doc[1].Name = "FilterName";
 		aStoreProperties_doc[1].Value = "MS Word 97";
-		xStorable_doc.storeToURL(FileUtil.getUrl(Testspace.getPath("output/test.doc")), aStoreProperties_doc);	
+		xStorable_doc.storeToURL(FileUtil.getUrl(Testspace.getPath("output/test.doc")), aStoreProperties_doc);
 		app.closeDocument(xTextDocument);
 
-		//reopen the document 
+		//reopen the document
 		XTextDocument assertDocument_odt=(XTextDocument)UnoRuntime.queryInterface(XTextDocument.class, app.loadDocument(Testspace.getPath("output/test.odt")));
 		XTextTablesSupplier xTablesSupplier_odt = (XTextTablesSupplier) UnoRuntime.queryInterface(XTextTablesSupplier.class, assertDocument_odt );
 		XIndexAccess xIndexedTables_odt = (XIndexAccess) UnoRuntime.queryInterface(XIndexAccess.class, xTablesSupplier_odt.getTextTables());
@@ -359,7 +359,7 @@ public class TableInsertBreak {
 		xCursorProps.setPropertyValue("BreakType",com.sun.star.style.BreakType.PAGE_BEFORE);
 		xCursorProps.setPropertyValue("PageDescName","Envelope");
 		xCursorProps.setPropertyValue("PageNumberOffset",(short)3);
-		//save to odt 
+		//save to odt
 		XStorable xStorable_odt = (XStorable) UnoRuntime.queryInterface(XStorable.class, xTextDocument);
 		PropertyValue[] aStoreProperties_odt = new PropertyValue[2];
 		aStoreProperties_odt[0] = new PropertyValue();
@@ -369,7 +369,7 @@ public class TableInsertBreak {
 		aStoreProperties_odt[1].Name = "FilterName";
 		aStoreProperties_odt[1].Value = "StarOffice XML (Writer)";
 		xStorable_odt.storeToURL(FileUtil.getUrl(Testspace.getPath("output/test.odt")), aStoreProperties_odt);
-		//save to doc 
+		//save to doc
 		XStorable xStorable_doc = (XStorable) UnoRuntime.queryInterface(XStorable.class, xTextDocument);
 		PropertyValue[] aStoreProperties_doc = new PropertyValue[2];
 		aStoreProperties_doc[0] = new PropertyValue();
@@ -378,10 +378,10 @@ public class TableInsertBreak {
 		aStoreProperties_doc[0].Value = true;
 		aStoreProperties_doc[1].Name = "FilterName";
 		aStoreProperties_doc[1].Value = "MS Word 97";
-		xStorable_doc.storeToURL(FileUtil.getUrl(Testspace.getPath("output/test.doc")), aStoreProperties_doc);	
+		xStorable_doc.storeToURL(FileUtil.getUrl(Testspace.getPath("output/test.doc")), aStoreProperties_doc);
 		app.closeDocument(xTextDocument);
 
-		//reopen the document 
+		//reopen the document
 		XTextDocument assertDocument_odt=(XTextDocument)UnoRuntime.queryInterface(XTextDocument.class, app.loadDocument(Testspace.getPath("output/test.odt")));
 		XTextTablesSupplier xTablesSupplier_odt = (XTextTablesSupplier) UnoRuntime.queryInterface(XTextTablesSupplier.class, assertDocument_odt );
 		XIndexAccess xIndexedTables_odt = (XIndexAccess) UnoRuntime.queryInterface(XIndexAccess.class, xTablesSupplier_odt.getTextTables());
@@ -420,7 +420,7 @@ public class TableInsertBreak {
 		xCursorProps.setPropertyValue("BreakType",com.sun.star.style.BreakType.PAGE_BEFORE);
 		xCursorProps.setPropertyValue("PageDescName","First Page");
 		xCursorProps.setPropertyValue("PageNumberOffset",(short)3);
-		//save to odt 
+		//save to odt
 		XStorable xStorable_odt = (XStorable) UnoRuntime.queryInterface(XStorable.class, xTextDocument);
 		PropertyValue[] aStoreProperties_odt = new PropertyValue[2];
 		aStoreProperties_odt[0] = new PropertyValue();
@@ -430,7 +430,7 @@ public class TableInsertBreak {
 		aStoreProperties_odt[1].Name = "FilterName";
 		aStoreProperties_odt[1].Value = "StarOffice XML (Writer)";
 		xStorable_odt.storeToURL(FileUtil.getUrl(Testspace.getPath("output/test.odt")), aStoreProperties_odt);
-		//save to doc 
+		//save to doc
 		XStorable xStorable_doc = (XStorable) UnoRuntime.queryInterface(XStorable.class, xTextDocument);
 		PropertyValue[] aStoreProperties_doc = new PropertyValue[2];
 		aStoreProperties_doc[0] = new PropertyValue();
@@ -439,10 +439,10 @@ public class TableInsertBreak {
 		aStoreProperties_doc[0].Value = true;
 		aStoreProperties_doc[1].Name = "FilterName";
 		aStoreProperties_doc[1].Value = "MS Word 97";
-		xStorable_doc.storeToURL(FileUtil.getUrl(Testspace.getPath("output/test.doc")), aStoreProperties_doc);	
+		xStorable_doc.storeToURL(FileUtil.getUrl(Testspace.getPath("output/test.doc")), aStoreProperties_doc);
 		app.closeDocument(xTextDocument);
 
-		//reopen the document 
+		//reopen the document
 		XTextDocument assertDocument_odt=(XTextDocument)UnoRuntime.queryInterface(XTextDocument.class, app.loadDocument(Testspace.getPath("output/test.odt")));
 		XTextTablesSupplier xTablesSupplier_odt = (XTextTablesSupplier) UnoRuntime.queryInterface(XTextTablesSupplier.class, assertDocument_odt );
 		XIndexAccess xIndexedTables_odt = (XIndexAccess) UnoRuntime.queryInterface(XIndexAccess.class, xTablesSupplier_odt.getTextTables());
@@ -480,7 +480,7 @@ public class TableInsertBreak {
 		xCursorProps.setPropertyValue("BreakType",com.sun.star.style.BreakType.PAGE_BEFORE);
 		xCursorProps.setPropertyValue("PageDescName","Footnote");
 		xCursorProps.setPropertyValue("PageNumberOffset",(short)3);
-		//save to odt 
+		//save to odt
 		XStorable xStorable_odt = (XStorable) UnoRuntime.queryInterface(XStorable.class, xTextDocument);
 		PropertyValue[] aStoreProperties_odt = new PropertyValue[2];
 		aStoreProperties_odt[0] = new PropertyValue();
@@ -490,7 +490,7 @@ public class TableInsertBreak {
 		aStoreProperties_odt[1].Name = "FilterName";
 		aStoreProperties_odt[1].Value = "StarOffice XML (Writer)";
 		xStorable_odt.storeToURL(FileUtil.getUrl(Testspace.getPath("output/test.odt")), aStoreProperties_odt);
-		//save to doc 
+		//save to doc
 		XStorable xStorable_doc = (XStorable) UnoRuntime.queryInterface(XStorable.class, xTextDocument);
 		PropertyValue[] aStoreProperties_doc = new PropertyValue[2];
 		aStoreProperties_doc[0] = new PropertyValue();
@@ -499,10 +499,10 @@ public class TableInsertBreak {
 		aStoreProperties_doc[0].Value = true;
 		aStoreProperties_doc[1].Name = "FilterName";
 		aStoreProperties_doc[1].Value = "MS Word 97";
-		xStorable_doc.storeToURL(FileUtil.getUrl(Testspace.getPath("output/test.doc")), aStoreProperties_doc);	
+		xStorable_doc.storeToURL(FileUtil.getUrl(Testspace.getPath("output/test.doc")), aStoreProperties_doc);
 		app.closeDocument(xTextDocument);
 
-		//reopen the document 
+		//reopen the document
 		XTextDocument assertDocument_odt=(XTextDocument)UnoRuntime.queryInterface(XTextDocument.class, app.loadDocument(Testspace.getPath("output/test.odt")));
 		XTextTablesSupplier xTablesSupplier_odt = (XTextTablesSupplier) UnoRuntime.queryInterface(XTextTablesSupplier.class, assertDocument_odt );
 		XIndexAccess xIndexedTables_odt = (XIndexAccess) UnoRuntime.queryInterface(XIndexAccess.class, xTablesSupplier_odt.getTextTables());
@@ -540,7 +540,7 @@ public class TableInsertBreak {
 		xCursorProps.setPropertyValue("BreakType",com.sun.star.style.BreakType.PAGE_BEFORE);
 		xCursorProps.setPropertyValue("PageDescName","HTML");
 		xCursorProps.setPropertyValue("PageNumberOffset",(short)3);
-		//save to odt 
+		//save to odt
 		XStorable xStorable_odt = (XStorable) UnoRuntime.queryInterface(XStorable.class, xTextDocument);
 		PropertyValue[] aStoreProperties_odt = new PropertyValue[2];
 		aStoreProperties_odt[0] = new PropertyValue();
@@ -550,7 +550,7 @@ public class TableInsertBreak {
 		aStoreProperties_odt[1].Name = "FilterName";
 		aStoreProperties_odt[1].Value = "StarOffice XML (Writer)";
 		xStorable_odt.storeToURL(FileUtil.getUrl(Testspace.getPath("output/test.odt")), aStoreProperties_odt);
-		//save to doc 
+		//save to doc
 		XStorable xStorable_doc = (XStorable) UnoRuntime.queryInterface(XStorable.class, xTextDocument);
 		PropertyValue[] aStoreProperties_doc = new PropertyValue[2];
 		aStoreProperties_doc[0] = new PropertyValue();
@@ -559,10 +559,10 @@ public class TableInsertBreak {
 		aStoreProperties_doc[0].Value = true;
 		aStoreProperties_doc[1].Name = "FilterName";
 		aStoreProperties_doc[1].Value = "MS Word 97";
-		xStorable_doc.storeToURL(FileUtil.getUrl(Testspace.getPath("output/test.doc")), aStoreProperties_doc);	
+		xStorable_doc.storeToURL(FileUtil.getUrl(Testspace.getPath("output/test.doc")), aStoreProperties_doc);
 		app.closeDocument(xTextDocument);
 
-		//reopen the document 
+		//reopen the document
 		XTextDocument assertDocument_odt=(XTextDocument)UnoRuntime.queryInterface(XTextDocument.class, app.loadDocument(Testspace.getPath("output/test.odt")));
 		XTextTablesSupplier xTablesSupplier_odt = (XTextTablesSupplier) UnoRuntime.queryInterface(XTextTablesSupplier.class, assertDocument_odt );
 		XIndexAccess xIndexedTables_odt = (XIndexAccess) UnoRuntime.queryInterface(XIndexAccess.class, xTablesSupplier_odt.getTextTables());
@@ -600,7 +600,7 @@ public class TableInsertBreak {
 		xCursorProps.setPropertyValue("BreakType",com.sun.star.style.BreakType.PAGE_BEFORE);
 		xCursorProps.setPropertyValue("PageDescName","Index");
 		xCursorProps.setPropertyValue("PageNumberOffset",(short)3);
-		//save to odt 
+		//save to odt
 		XStorable xStorable_odt = (XStorable) UnoRuntime.queryInterface(XStorable.class, xTextDocument);
 		PropertyValue[] aStoreProperties_odt = new PropertyValue[2];
 		aStoreProperties_odt[0] = new PropertyValue();
@@ -610,7 +610,7 @@ public class TableInsertBreak {
 		aStoreProperties_odt[1].Name = "FilterName";
 		aStoreProperties_odt[1].Value = "StarOffice XML (Writer)";
 		xStorable_odt.storeToURL(FileUtil.getUrl(Testspace.getPath("output/test.odt")), aStoreProperties_odt);
-		//save to doc 
+		//save to doc
 		XStorable xStorable_doc = (XStorable) UnoRuntime.queryInterface(XStorable.class, xTextDocument);
 		PropertyValue[] aStoreProperties_doc = new PropertyValue[2];
 		aStoreProperties_doc[0] = new PropertyValue();
@@ -619,10 +619,10 @@ public class TableInsertBreak {
 		aStoreProperties_doc[0].Value = true;
 		aStoreProperties_doc[1].Name = "FilterName";
 		aStoreProperties_doc[1].Value = "MS Word 97";
-		xStorable_doc.storeToURL(FileUtil.getUrl(Testspace.getPath("output/test.doc")), aStoreProperties_doc);	
+		xStorable_doc.storeToURL(FileUtil.getUrl(Testspace.getPath("output/test.doc")), aStoreProperties_doc);
 		app.closeDocument(xTextDocument);
 
-		//reopen the document 
+		//reopen the document
 		XTextDocument assertDocument_odt=(XTextDocument)UnoRuntime.queryInterface(XTextDocument.class, app.loadDocument(Testspace.getPath("output/test.odt")));
 		XTextTablesSupplier xTablesSupplier_odt = (XTextTablesSupplier) UnoRuntime.queryInterface(XTextTablesSupplier.class, assertDocument_odt );
 		XIndexAccess xIndexedTables_odt = (XIndexAccess) UnoRuntime.queryInterface(XIndexAccess.class, xTablesSupplier_odt.getTextTables());
@@ -660,7 +660,7 @@ public class TableInsertBreak {
 		xCursorProps.setPropertyValue("BreakType",com.sun.star.style.BreakType.PAGE_BEFORE);
 		xCursorProps.setPropertyValue("PageDescName","Landscape");
 		xCursorProps.setPropertyValue("PageNumberOffset",(short)3);
-		//save to odt 
+		//save to odt
 		XStorable xStorable_odt = (XStorable) UnoRuntime.queryInterface(XStorable.class, xTextDocument);
 		PropertyValue[] aStoreProperties_odt = new PropertyValue[2];
 		aStoreProperties_odt[0] = new PropertyValue();
@@ -670,7 +670,7 @@ public class TableInsertBreak {
 		aStoreProperties_odt[1].Name = "FilterName";
 		aStoreProperties_odt[1].Value = "StarOffice XML (Writer)";
 		xStorable_odt.storeToURL(FileUtil.getUrl(Testspace.getPath("output/test.odt")), aStoreProperties_odt);
-		//save to doc 
+		//save to doc
 		XStorable xStorable_doc = (XStorable) UnoRuntime.queryInterface(XStorable.class, xTextDocument);
 		PropertyValue[] aStoreProperties_doc = new PropertyValue[2];
 		aStoreProperties_doc[0] = new PropertyValue();
@@ -679,10 +679,10 @@ public class TableInsertBreak {
 		aStoreProperties_doc[0].Value = true;
 		aStoreProperties_doc[1].Name = "FilterName";
 		aStoreProperties_doc[1].Value = "MS Word 97";
-		xStorable_doc.storeToURL(FileUtil.getUrl(Testspace.getPath("output/test.doc")), aStoreProperties_doc);	
+		xStorable_doc.storeToURL(FileUtil.getUrl(Testspace.getPath("output/test.doc")), aStoreProperties_doc);
 		app.closeDocument(xTextDocument);
 
-		//reopen the document 
+		//reopen the document
 		XTextDocument assertDocument_odt=(XTextDocument)UnoRuntime.queryInterface(XTextDocument.class, app.loadDocument(Testspace.getPath("output/test.odt")));
 		XTextTablesSupplier xTablesSupplier_odt = (XTextTablesSupplier) UnoRuntime.queryInterface(XTextTablesSupplier.class, assertDocument_odt );
 		XIndexAccess xIndexedTables_odt = (XIndexAccess) UnoRuntime.queryInterface(XIndexAccess.class, xTablesSupplier_odt.getTextTables());
@@ -720,7 +720,7 @@ public class TableInsertBreak {
 		xCursorProps.setPropertyValue("BreakType",com.sun.star.style.BreakType.PAGE_BEFORE);
 		xCursorProps.setPropertyValue("PageDescName","Left Page");
 		xCursorProps.setPropertyValue("PageNumberOffset",(short)3);
-		//save to odt 
+		//save to odt
 		XStorable xStorable_odt = (XStorable) UnoRuntime.queryInterface(XStorable.class, xTextDocument);
 		PropertyValue[] aStoreProperties_odt = new PropertyValue[2];
 		aStoreProperties_odt[0] = new PropertyValue();
@@ -730,7 +730,7 @@ public class TableInsertBreak {
 		aStoreProperties_odt[1].Name = "FilterName";
 		aStoreProperties_odt[1].Value = "StarOffice XML (Writer)";
 		xStorable_odt.storeToURL(FileUtil.getUrl(Testspace.getPath("output/test.odt")), aStoreProperties_odt);
-		//save to doc 
+		//save to doc
 		XStorable xStorable_doc = (XStorable) UnoRuntime.queryInterface(XStorable.class, xTextDocument);
 		PropertyValue[] aStoreProperties_doc = new PropertyValue[2];
 		aStoreProperties_doc[0] = new PropertyValue();
@@ -739,10 +739,10 @@ public class TableInsertBreak {
 		aStoreProperties_doc[0].Value = true;
 		aStoreProperties_doc[1].Name = "FilterName";
 		aStoreProperties_doc[1].Value = "MS Word 97";
-		xStorable_doc.storeToURL(FileUtil.getUrl(Testspace.getPath("output/test.doc")), aStoreProperties_doc);	
+		xStorable_doc.storeToURL(FileUtil.getUrl(Testspace.getPath("output/test.doc")), aStoreProperties_doc);
 		app.closeDocument(xTextDocument);
 
-		//reopen the document 
+		//reopen the document
 		XTextDocument assertDocument_odt=(XTextDocument)UnoRuntime.queryInterface(XTextDocument.class, app.loadDocument(Testspace.getPath("output/test.odt")));
 		XTextTablesSupplier xTablesSupplier_odt = (XTextTablesSupplier) UnoRuntime.queryInterface(XTextTablesSupplier.class, assertDocument_odt );
 		XIndexAccess xIndexedTables_odt = (XIndexAccess) UnoRuntime.queryInterface(XIndexAccess.class, xTablesSupplier_odt.getTextTables());
@@ -780,7 +780,7 @@ public class TableInsertBreak {
 		xCursorProps.setPropertyValue("BreakType",com.sun.star.style.BreakType.PAGE_BEFORE);
 		xCursorProps.setPropertyValue("PageDescName","Right Page");
 		xCursorProps.setPropertyValue("PageNumberOffset",(short)3);
-		//save to odt 
+		//save to odt
 		XStorable xStorable_odt = (XStorable) UnoRuntime.queryInterface(XStorable.class, xTextDocument);
 		PropertyValue[] aStoreProperties_odt = new PropertyValue[2];
 		aStoreProperties_odt[0] = new PropertyValue();
@@ -790,7 +790,7 @@ public class TableInsertBreak {
 		aStoreProperties_odt[1].Name = "FilterName";
 		aStoreProperties_odt[1].Value = "StarOffice XML (Writer)";
 		xStorable_odt.storeToURL(FileUtil.getUrl(Testspace.getPath("output/test.odt")), aStoreProperties_odt);
-		//save to doc 
+		//save to doc
 		XStorable xStorable_doc = (XStorable) UnoRuntime.queryInterface(XStorable.class, xTextDocument);
 		PropertyValue[] aStoreProperties_doc = new PropertyValue[2];
 		aStoreProperties_doc[0] = new PropertyValue();
@@ -799,10 +799,10 @@ public class TableInsertBreak {
 		aStoreProperties_doc[0].Value = true;
 		aStoreProperties_doc[1].Name = "FilterName";
 		aStoreProperties_doc[1].Value = "MS Word 97";
-		xStorable_doc.storeToURL(FileUtil.getUrl(Testspace.getPath("output/test.doc")), aStoreProperties_doc);	
+		xStorable_doc.storeToURL(FileUtil.getUrl(Testspace.getPath("output/test.doc")), aStoreProperties_doc);
 		app.closeDocument(xTextDocument);
 
-		//reopen the document 
+		//reopen the document
 		XTextDocument assertDocument_odt=(XTextDocument)UnoRuntime.queryInterface(XTextDocument.class, app.loadDocument(Testspace.getPath("output/test.odt")));
 		XTextTablesSupplier xTablesSupplier_odt = (XTextTablesSupplier) UnoRuntime.queryInterface(XTextTablesSupplier.class, assertDocument_odt );
 		XIndexAccess xIndexedTables_odt = (XIndexAccess) UnoRuntime.queryInterface(XIndexAccess.class, xTablesSupplier_odt.getTextTables());

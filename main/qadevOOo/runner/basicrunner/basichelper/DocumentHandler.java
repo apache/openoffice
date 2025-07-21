@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -51,7 +51,7 @@ public class DocumentHandler implements XServiceInfo, XSingleServiceFactory {
     /** The log writer (just a wrapper around <code>writer</code>) **/
     private PrintWriter log;
 
-    /** 
+    /**
      * Create an instance of the document handler.
      * @param args A boolean value as <codde>args[0]</code> determines,
      *             if checked XML data is printed to the log.
@@ -68,7 +68,7 @@ public class DocumentHandler implements XServiceInfo, XSingleServiceFactory {
         return oDocumentHandler;
     }
 
-    /** 
+    /**
      * Create an instance of the document handler.
      * @return The document handler
      */
@@ -127,19 +127,19 @@ public class DocumentHandler implements XServiceInfo, XSingleServiceFactory {
  * @see com.sun.star.container.XNameAccess
  * @see com.sun.star.lang.XTypeProvider
  */
-class DocumentHandlerImpl extends XMLTools.XMLChecker 
-                        implements XInitialization, XDocumentHandler, 
+class DocumentHandlerImpl extends XMLTools.XMLChecker
+                        implements XInitialization, XDocumentHandler,
                                                 XNameAccess, XTypeProvider {
     /** A string writer **/
     private StringWriter writer;
 
-    /** 
+    /**
      * Constructor
      * @param log_ A log writer.
      * @param printXML Should XML data be printed to the log?
      * @param logWriter A wrapper around <code>log_</code> for convenience.
      */
-    public DocumentHandlerImpl(PrintWriter log_, 
+    public DocumentHandlerImpl(PrintWriter log_,
                                     boolean printXML, StringWriter logWriter) {
         super(log_, printXML);
         writer = logWriter;
@@ -147,7 +147,7 @@ class DocumentHandlerImpl extends XMLTools.XMLChecker
 
     /**
      * Initialize this class with rules.
-     * @param parm1 An array of filter rules: 
+     * @param parm1 An array of filter rules:
      *              <code>processAction()</code> is called for every rule.
      * @throws com.sun.star.uno.Exception for an incorrect rule.
      */
@@ -164,7 +164,7 @@ class DocumentHandlerImpl extends XMLTools.XMLChecker
     * @param filterRule An array building one filter rule.
     * @throws com.sun.star.uno.Exception for an incorrect rule.
     */
-    private void processActionForXMLChecker(Object[] filterRule) 
+    private void processActionForXMLChecker(Object[] filterRule)
                                         throws com.sun.star.uno.Exception {
         int arrLen = filterRule.length;
         String oTagName;
@@ -217,7 +217,7 @@ class DocumentHandlerImpl extends XMLTools.XMLChecker
             // Action for constructor Tag(TagName, attrName, attrValue)
             if (oTag.length == 3) {
                 if ((oTag[1] instanceof String)&&(oTag[2] instanceof String)) {
-                    allTags.add(new Tag(oTagName, 
+                    allTags.add(new Tag(oTagName,
                                     (String) oTag[1], (String) oTag[2]));
                 } else {
                     throw new com.sun.star.uno.Exception("Error: invalid tag '"+

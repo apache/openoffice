@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -83,7 +83,7 @@ import static org.junit.Assert.*;
  *
  * Actually, this is not a service, so we need to create a document and
  * go from there...
- * 
+ *
  * @author mst
  */
 public class DocumentMetadataAccess
@@ -576,7 +576,7 @@ public class DocumentMetadataAccess
             Statement xFoobar_FooBarFoo4 =
                 new Statement(foo, bar, foo, xFoobar4);
             assertTrue("loadMetadataFromMedium (re-load)",
-                eq(xStmtsEnum, merge(manifestStmts4, merge(metadataStmts4, 
+                eq(xStmtsEnum, merge(manifestStmts4, merge(metadataStmts4,
                         new Statement[] { xFoobar_FooBarFoo4 }))));
 
             System.out.println("...done");
@@ -610,7 +610,7 @@ public class DocumentMetadataAccess
             xStmtsEnum = xRep.getStatements(null, null, null);
             XEnumeration xStmtsEnum2 = xRep2.getStatements(null, null, null);
             assertTrue("load: repository differs",
-                eq(xStmtsEnum2, merge(manifestStmts5, merge(metadataStmts5, 
+                eq(xStmtsEnum2, merge(manifestStmts5, merge(metadataStmts5,
                         new Statement[] { xFoobar_FooBarFoo5 }))));
 
             System.out.println("...done");

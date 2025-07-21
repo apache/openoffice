@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -65,24 +65,24 @@ public class UnoScrollBarControl extends TestCase {
         try {
             log.println("creating a textdocument");
             xTextDoc = SOF.createTextDoc(null);
-            
+
             log.println("maximize the window size");
             XModel xModel = (XModel) UnoRuntime.queryInterface(XModel.class, xTextDoc);
             XFrame xFrame = xModel.getCurrentController().getFrame();
             XWindow xWin = xFrame.getContainerWindow();
-            
+
             Toolkit tk = Toolkit.getDefaultToolkit();
             Dimension dim = tk.getScreenSize();
-            
+
             Rectangle newPosSize = xWin.getPosSize();
             newPosSize.Width = new Double(dim.getWidth()).intValue();
             newPosSize.Height = new Double(dim.getHeight()).intValue();
             newPosSize.X = 0;
             newPosSize.Y = 0;
-            
+
             xWin.setPosSize(newPosSize.X, newPosSize.Y, newPosSize.Width,
-                            newPosSize.Height, com.sun.star.awt.PosSize.POSSIZE);            
-            
+                            newPosSize.Height, com.sun.star.awt.PosSize.POSSIZE);
+
         } catch (com.sun.star.uno.Exception e) {
             // Some exception occurred. FAILED
             e.printStackTrace(log);
@@ -96,7 +96,7 @@ public class UnoScrollBarControl extends TestCase {
         util.DesktopTools.closeDoc(xTextDoc);
     }
 
-    protected TestEnvironment createTestEnvironment(TestParameters Param, 
+    protected TestEnvironment createTestEnvironment(TestParameters Param,
                                                     PrintWriter log) {
         XInterface oObj = null;
         XWindowPeer the_win = null;
@@ -106,18 +106,18 @@ public class UnoScrollBarControl extends TestCase {
         XControl aControl = null;
 
         //Insert a ControlShape and get the ControlModel
-        XControlShape aShape = FormTools.createUnoControlShape(xTextDoc, 3000, 
-                                                               4500, 15000, 
-                                                               10000, 
-                                                               "ScrollBar", 
+        XControlShape aShape = FormTools.createUnoControlShape(xTextDoc, 3000,
+                                                               4500, 15000,
+                                                               10000,
+                                                               "ScrollBar",
                                                                "UnoControlScrollBar");
 
         WriterTools.getDrawPage(xTextDoc).add((XShape) aShape);
 
         XControlModel the_Model = aShape.getControl();
 
-        XControlShape aShape2 = FormTools.createControlShape(xTextDoc, 3000, 
-                                                             4500, 5000, 10000, 
+        XControlShape aShape2 = FormTools.createControlShape(xTextDoc, 3000,
+                                                             4500, 5000, 10000,
                                                              "TextField");
 
         WriterTools.getDrawPage(xTextDoc).add((XShape) aShape2);
@@ -126,7 +126,7 @@ public class UnoScrollBarControl extends TestCase {
 
         //Try to query XControlAccess
         XControlAccess the_access = (XControlAccess) UnoRuntime.queryInterface(
-                                            XControlAccess.class, 
+                                            XControlAccess.class,
                                             xTextDoc.getCurrentController());
 
         //get the ScrollBarControl for the needed Object relations
@@ -163,7 +163,7 @@ public class UnoScrollBarControl extends TestCase {
         tEnv.addObjRelation("TOOLKIT", the_kit);
         tEnv.addObjRelation("MODEL", the_Model);
 
-        XWindow forObjRel = (XWindow) UnoRuntime.queryInterface(XWindow.class, 
+        XWindow forObjRel = (XWindow) UnoRuntime.queryInterface(XWindow.class,
                                                                 aControl);
 
         tEnv.addObjRelation("XWindow.AnotherWindow", forObjRel);

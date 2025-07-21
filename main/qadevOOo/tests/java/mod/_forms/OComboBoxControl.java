@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -160,7 +160,7 @@ public class OComboBoxControl extends TestCase {
      *      component. </li>
      * </ul>
      */
-    protected TestEnvironment createTestEnvironment(TestParameters Param, 
+    protected TestEnvironment createTestEnvironment(TestParameters Param,
                                                     PrintWriter log) {
         XInterface oObj = null;
         XWindowPeer the_win = null;
@@ -170,16 +170,16 @@ public class OComboBoxControl extends TestCase {
         XControl aControl = null;
 
         //Insert a ControlShape and get the ControlModel
-        XControlShape aShape = FormTools.createControlShape(xTextDoc, 3000, 
-                                                            4500, 15000, 10000, 
+        XControlShape aShape = FormTools.createControlShape(xTextDoc, 3000,
+                                                            4500, 15000, 10000,
                                                             "ComboBox");
 
         WriterTools.getDrawPage(xTextDoc).add((XShape) aShape);
 
         XControlModel the_Model = aShape.getControl();
 
-        XControlShape aShape2 = FormTools.createControlShape(xTextDoc, 3000, 
-                                                             4500, 5000, 10000, 
+        XControlShape aShape2 = FormTools.createControlShape(xTextDoc, 3000,
+                                                             4500, 5000, 10000,
                                                              "TextField");
 
         WriterTools.getDrawPage(xTextDoc).add((XShape) aShape2);
@@ -188,7 +188,7 @@ public class OComboBoxControl extends TestCase {
 
         //Try to query XControlAccess
         XControlAccess the_access = (XControlAccess) UnoRuntime.queryInterface(
-                                            XControlAccess.class, 
+                                            XControlAccess.class,
                                             xTextDoc.getCurrentController());
 
         //now get the OButtonControl
@@ -221,14 +221,14 @@ public class OComboBoxControl extends TestCase {
         tEnv.addObjRelation("MODEL", the_Model);
 
         // Adding relation for XWindow
-        XWindow forObjRel = (XWindow) UnoRuntime.queryInterface(XWindow.class, 
+        XWindow forObjRel = (XWindow) UnoRuntime.queryInterface(XWindow.class,
                                                                 aControl);
 
         tEnv.addObjRelation("XWindow.AnotherWindow", forObjRel);
         tEnv.addObjRelation("XWindow.ControlShape", aShape);
 
         // Adding relation for XTextListener
-        ifc.awt._XTextListener.TestTextListener listener = 
+        ifc.awt._XTextListener.TestTextListener listener =
                 new ifc.awt._XTextListener.TestTextListener();
         XTextComponent textComp = (XTextComponent) UnoRuntime.queryInterface(
                                           XTextComponent.class, oObj);

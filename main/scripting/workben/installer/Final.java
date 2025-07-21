@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 package installer;
@@ -38,7 +38,7 @@ import java.net.*;
 import javax.swing.*;
 
 public class Final extends javax.swing.JPanel implements ActionListener, InstallListener {
-    
+
     /** Creates new form Welcome */
     public Final(InstallWizard wizard) {
         this.wizard = wizard;
@@ -46,7 +46,7 @@ public class Final extends javax.swing.JPanel implements ActionListener, Install
 		xud = null;
         initComponents();
     }
-    
+
     /** This method is called from within the constructor to
      * initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is
@@ -56,14 +56,14 @@ public class Final extends javax.swing.JPanel implements ActionListener, Install
         statusPanel = new javax.swing.JPanel();
 		statusPanel.setBackground(java.awt.Color.white);
         statusLine = new javax.swing.JLabel("Ready", javax.swing.JLabel.CENTER);
-        
+
         setLayout(new java.awt.BorderLayout());
-        
+
         statusPanel.setLayout(new java.awt.BorderLayout());
-        
+
         statusLine.setText("Waiting to install. \n All Office processes must be terminated.");
         statusPanel.add(statusLine, java.awt.BorderLayout.CENTER);
-        
+
         add(statusPanel, java.awt.BorderLayout.CENTER);
 		nav = new NavPanel(wizard, true, true, true, InstallWizard.VERSIONS, "");
 		nav.setNextListener(this);
@@ -71,15 +71,15 @@ public class Final extends javax.swing.JPanel implements ActionListener, Install
 		nav.setCancelListener(this);
 		nav.navNext.setText("Install");
 		add(nav, java.awt.BorderLayout.SOUTH);
-	
-	
-        
+
+
+
     }//GEN-END:initComponents
-    
+
     public java.awt.Dimension getPreferredSize() {
         return new java.awt.Dimension(InstallWizard.DEFWIDTH, InstallWizard.DEFHEIGHT);
     }
-    
+
     public void actionPerformed(ActionEvent e) {
 	// navNext is "Install"
         if (e.getSource() == nav.navNext)
@@ -100,7 +100,7 @@ public class Final extends javax.swing.JPanel implements ActionListener, Install
             for (int i =0;i<locations.size();i++){
                 path= (String)locations.get(i);
 	        //InstallWizard.currentPath = path;
-	        xud = new XmlUpdater(path, statusLine,progressBar,InstallWizard.bNetworkInstall,InstallWizard.bBindingsInstall);	
+	        xud = new XmlUpdater(path, statusLine,progressBar,InstallWizard.bNetworkInstall,InstallWizard.bBindingsInstall);
 		xud.addInstallListener(this);
 		InstallWizard.setInstallStarted(true);
 		InstallWizard.setPatchedTypes(false);
@@ -109,22 +109,22 @@ public class Final extends javax.swing.JPanel implements ActionListener, Install
 		xud.start();
             }
         }
-	
+
 	// set to "Exit" at end of installation process
 	if (e.getSource() == nav.navCancel) {
 		int answer = JOptionPane.showConfirmDialog(wizard, "Are you sure you want to exit?");
-		if (answer == JOptionPane.YES_OPTION) 
+		if (answer == JOptionPane.YES_OPTION)
 		{
 			wizard.exitForm(null);
-		} 
-		else 
+		}
+		else
 		{
 			return;
 		}
 	}
     }// actionPerformed
-    
-    
+
+
     public void installationComplete(InstallationEvent ev) {
         //System.out.println("Detected installation complete");
 	if( InstUtil.hasNetbeansInstallation() ) {
@@ -145,7 +145,7 @@ public class Final extends javax.swing.JPanel implements ActionListener, Install
 		xud = null;
 	}
     }
-    
+
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JPanel statusPanel;
     private javax.swing.JLabel statusLine;

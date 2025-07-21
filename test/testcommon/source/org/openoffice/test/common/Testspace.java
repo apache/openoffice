@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -35,9 +35,9 @@ import java.net.URL;
 public class Testspace {
 
 	private static final File testspace = initTestspace();
-	
-	private static final File testdata = new File(System.getProperty("testdata", "data")); 
-	
+
+	private static final File testdata = new File(System.getProperty("testdata", "data"));
+
 	private static File initTestspace() {
 		String v = System.getProperty("testspace");
 		File file = null;
@@ -47,10 +47,10 @@ public class Testspace {
 		} else {
 			file = new File(v);
 		}
-		
+
 		return file;
 	}
-	
+
 	public static String getPath() {
 		return testspace.getAbsolutePath();
 	}
@@ -58,38 +58,38 @@ public class Testspace {
 	public static String getPath(String filePath) {
 		return getFile(filePath).getAbsolutePath();
 	}
-	
+
 	public static String getUrl(String filePath) {
 		return FileUtil.getUrl(getFile(filePath));
 	}
-	
+
 	public static File getFile() {
 		return testspace;
 	}
-	
+
 	public static File getFile(String filePath) {
 		File file = new File(filePath);
 		if (file.isAbsolute())
 			return file;
-		
+
 		return new File(testspace, filePath);
 	}
-	
+
 	public static String prepareData(String dataFilePath) {
 		File dataFile = prepareDataFile(dataFilePath);
 		return dataFile.getAbsolutePath();
 	}
-	
+
 	public static String prepareData(String dataFilePath, String to) {
 		File dataFile = prepareDataFile(dataFilePath, to);
 		return dataFile.getAbsolutePath();
 	}
-	
+
 	public static File prepareDataFile(String dataFilePath) {
 		getFile("temp").mkdir();
 		return prepareDataFile(dataFilePath, "temp");
 	}
-	
+
 	public static File prepareDataFile(String dataFilePath, String to) {
 		File workingFile = getFile(to);
 		if (FileUtil.isUrl(dataFilePath)) {
@@ -98,12 +98,12 @@ public class Testspace {
 			}
 			return workingFile;
 		}
-		
+
 		File dataFile = new File(dataFilePath);
-		if (workingFile.isDirectory()) 
+		if (workingFile.isDirectory())
 			workingFile = new File(workingFile, dataFile.getName());
-		
-		if (!dataFile.isAbsolute()) 
+
+		if (!dataFile.isAbsolute())
 			dataFile = new File(testdata, dataFilePath);
 		if (!dataFile.exists()) {
 			InputStream in = Testspace.class.getClassLoader().getResourceAsStream(dataFilePath);
@@ -115,10 +115,10 @@ public class Testspace {
 			if (!FileUtil.copyFile(dataFile, workingFile))
 				throw new RuntimeException("Can not prepare data: " + dataFilePath);
 		}
-		
+
 		return workingFile;
 	}
-	
+
 	public static File getDataFile(String dataFilePath) {
 		File dataFile = new File(dataFilePath);
 		if (!dataFile.isAbsolute())
@@ -132,7 +132,7 @@ public class Testspace {
 			return dataFile;
 		}
 	}
-	
+
 	public static String getDataPath(String dataFilePath) {
 		File file = getDataFile(dataFilePath);
 		if (file == null)
@@ -143,7 +143,7 @@ public class Testspace {
 			return null;
 		}
 	}
-	
+
 	public static boolean deleteFile(String path) {
 		return FileUtil.deleteFile(getPath(path));
 	}

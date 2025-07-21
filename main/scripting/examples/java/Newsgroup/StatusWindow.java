@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 import java.awt.*;
@@ -24,7 +24,7 @@ import java.awt.event.*;
 import javax.swing.*;
 import javax.swing.border.*;
 
-public class StatusWindow extends JFrame 
+public class StatusWindow extends JFrame
 {
 
 	private JProgressBar progressBar = null;
@@ -49,7 +49,7 @@ public class StatusWindow extends JFrame
 		statusWindow.addWindowListener( new WindowAdapter()
 		{
 			public void windowClosing( WindowEvent event ) {
-				mainWindow.enableButtons( true );	
+				mainWindow.enableButtons( true );
 			}
 		});
 
@@ -97,25 +97,25 @@ public class StatusWindow extends JFrame
 		container.setLayout( new GridBagLayout() );
 		GridBagConstraints constraints = new GridBagConstraints();
 		constraints.fill = GridBagConstraints.BOTH;
-		
+
 		constraints.gridx = 0;
 		constraints.gridy = 0;
 		constraints.gridwidth = 1;
-		constraints.gridheight = 1;	
+		constraints.gridheight = 1;
 		constraints.insets = new Insets( 15, 15, 10, 15 );
 		container.add( progressPanel, constraints );
 
 		constraints.gridx = 0;
 		constraints.gridy = 1;
 		constraints.gridwidth = 1;
-		constraints.gridheight = 1;	
+		constraints.gridheight = 1;
 		constraints.insets = new Insets( 10, 15, 10, 15 );
 		container.add( statusPanel, constraints );
 
 		constraints.gridx = 0;
 		constraints.gridy = 2;
 		constraints.gridwidth = 1;
-		constraints.gridheight = 1;	
+		constraints.gridheight = 1;
 		constraints.insets = new Insets( 10, 15, 5, 15 );
 		container.add( buttonPanel, constraints );
 
@@ -125,7 +125,7 @@ public class StatusWindow extends JFrame
 
 	}
 
-	
+
 	public void setStatus( int progress, String status )
 	{
 		progressBar.setValue( progress );
@@ -139,8 +139,8 @@ public class StatusWindow extends JFrame
 		update( getGraphics() );
 		mainWindow.update( mainWindow.getGraphics() );
 	}
-	
-	
+
+
 	public void enableCancelButton( boolean enable )
 	{
 		if( enable )

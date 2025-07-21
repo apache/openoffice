@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -42,33 +42,33 @@ public class AcceptLicense extends JPanel {
 
         setLayout(new java.awt.BorderLayout());
         setBorder(new EmptyBorder(new Insets(10, 10, 10, 10)));
-  
+
         String titletext = ResourceManager.getString("String_AcceptLicense1");
         PanelTitle titlebox = new PanelTitle(titletext);
         add(titlebox, BorderLayout.NORTH);
 
         JPanel contentpanel = new JPanel();
         contentpanel.setLayout(new java.awt.BorderLayout());
-       
+
         String text1 = ResourceManager.getString("String_AcceptLicense2");
         PanelLabel label1 = new PanelLabel(text1);
-        
+
         String text2 = ResourceManager.getString("String_AcceptLicense3");
         PanelLabel label2 = new PanelLabel(text2, true);
 
         JEditorPane editorPane = createEditorPane();
         JScrollPane editorScrollPane = new JScrollPane(editorPane);
-        
+
         editorScrollPane.setPreferredSize(new Dimension(250, 145));
         editorScrollPane.setBorder(new EmptyBorder(new Insets(5, 10, 5, 10)));
-        
+
         contentpanel.add(label1, BorderLayout.NORTH);
         contentpanel.add(editorScrollPane, BorderLayout.CENTER);
-        contentpanel.add(label2, BorderLayout.SOUTH);                
-        
+        contentpanel.add(label2, BorderLayout.SOUTH);
+
         add(contentpanel, BorderLayout.CENTER);
     }
-    
+
     private JEditorPane createEditorPane() {
         JEditorPane editorPane = new JEditorPane();
         editorPane.setEditable(false);

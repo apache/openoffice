@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -54,7 +54,7 @@ public class ParcelSupport implements ParcelCookie
     private FileObject fo;
     private ParcelZipper zipper = ParcelZipper.getParcelZipper();
     private String language = null;
-    
+
     public ParcelSupport(FileObject fo) {
         this.fo = fo;
     }
@@ -62,7 +62,7 @@ public class ParcelSupport implements ParcelCookie
     public File getFile() {
         return FileUtil.toFile(fo);
     }
-    
+
     public String getLanguage() {
         if (language == null) {
             try {
@@ -78,7 +78,7 @@ public class ParcelSupport implements ParcelCookie
     public void mount()
     {
         File parcel = FileUtil.toFile(fo);
-        
+
         if (parcel != null) {
             try {
                 ZipMounter.getZipMounter().mountZipFile(parcel);
@@ -136,7 +136,7 @@ public class ParcelSupport implements ParcelCookie
             zipper.deployParcel(source, target);
 
             out.println("\nDEPLOYMENT SUCCESSFUL.");
-            
+
             FileObject[] fileobjs = FileUtil.fromFile(target);
             if (fileobjs != null) {
                 for (int i = 0; i < fileobjs.length; i++)
@@ -159,7 +159,7 @@ public class ParcelSupport implements ParcelCookie
         InputOutput io = TopManager.getDefault().getIO(title, false);
         io.setFocusTaken(true);
         io.setOutputVisible(true);
-        
+
         OutputWriter out = io.getOut();
         try {
             out.reset();
