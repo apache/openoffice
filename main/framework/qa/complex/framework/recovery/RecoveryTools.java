@@ -1,5 +1,5 @@
 /**************************************************************
- *
+ * 
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- *
+ * 
  *   http://www.apache.org/licenses/LICENSE-2.0
- *
+ * 
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- *
+ * 
  *************************************************************/
 
 
@@ -56,16 +56,10 @@ import util.utils;
  * functions.
  */
 public class RecoveryTools {
-<<<<<<< HEAD
     
     private final TestParameters param;
     private final LogWriter log;
     
-=======
-
-    private final XMultiServiceFactory xMSF;
-
->>>>>>> 3309286857 (pre-commit auto remove trailing whitespace from java files (#382))
     /**
      * Creates new OfficeWatcher
      * @param param the test parameter
@@ -76,17 +70,17 @@ public class RecoveryTools {
         this.log = log;
         
     }
-
+    
     /**
      * get the active dialog from the top of the desktop
      * @param xToolKit xToolKit the <CODE> XExtendedToolkit</CODE> to get the dialog from the top of the desktop.
      * @return a <CODE>XDialog</CODE> interface of the dialog
-     */
+     */    
     public XDialog getActiveDialog( XMultiServiceFactory xMSF){
         XWindow xWin = getActiveWindow(xMSF);
         return (XDialog) UnoRuntime.queryInterface(XDialog.class, xWin);
     }
-
+    
     public XWindow getActiveWindow( XMultiServiceFactory xMSF){
         XInterface xToolKit = null;
         try {
@@ -107,10 +101,10 @@ public class RecoveryTools {
      * tries to get the dialog until the <CODE>OfficeWatcher</CODE> kills the office.
      * @param xToolKit the <CODE> XExtendedToolkit</CODE> to get the dialog from the top of the desktop.
      * @return a <CODE>XDialog</CODE> interface of the dialog
-     */
+     */    
     public XDialog getActiveDialogAfterStartup(XMultiServiceFactory xMSF){
         // while the office starts it takes some time to get the dialog.
-
+        
         // the dialog is accessible AFTER the office has recoverd all documents.
         // This could consumes more time then the TimeOut allow.
         int counter = 0;
@@ -118,9 +112,9 @@ public class RecoveryTools {
         int pause = param.getInt(PropertyName.SHORT_WAIT)*10;
         int timeOut = param.getInt(PropertyName.THREAD_TIME_OUT)*5;
         int maximum = (timeOut / pause) * multi;
-
+        
         XDialog oDialog = getActiveDialog(xMSF);
-
+        
         while (oDialog == null && (counter < maximum)){
             log.println("waiting until the office has recoverd... remaining " + (timeOut * multi - pause * counter)/1000 + " seconds");
             pause(pause);
@@ -132,18 +126,18 @@ public class RecoveryTools {
 
     /**
      * halt the thread for some time
-     */
+     */    
     public void pause(){
        pause(param.getInt(PropertyName.SHORT_WAIT));
     }
-
+    
     /**
      * halt the thread for some time
-     */
+     */    
     public void pause(int sleepTime){
         sleep(sleepTime);
     }
-
+    
     private void sleep(long millis){
         try{
             Thread.sleep(millis);
@@ -154,104 +148,83 @@ public class RecoveryTools {
      * remove the content of the user backup folder and removes the Recovery.xcu. This
      * was done from the Office via XSimpleFileAccess
      * @throws com.sun.star.io.IOException the exception was thrown if something goes wrong.
-     */
+     */    
     public void cleanRecoveryData()
         throws com.sun.star.io.IOException
     {
         try{
             HashMap recFiles = getRecoveryFiles();
-
+            
             String recoveryFolder = (String) recFiles.get("recoveryFolder");
             String recoveryXCU = (String) recFiles.get("recoveryXCU");
 
-<<<<<<< HEAD
             log.println("try to remove content of '" + recoveryFolder + "'");
             
-=======
-            System.out.println("try to remove content of '" + recoveryFolder + "'");
-
->>>>>>> 3309286857 (pre-commit auto remove trailing whitespace from java files (#382))
             File rf = new File(recoveryFolder);
-
+            
             boolean success = FileTools.cleanDir(rf);
-<<<<<<< HEAD
             log.println("removed " + recoveryFolder + ": " + success);
             
             log.println("try to remove '" + recoveryXCU + "'");
             
-=======
-            System.out.println("removed " + recoveryFolder + ": " + success);
-
-            System.out.println("try to remove '" + recoveryXCU + "'");
-
->>>>>>> 3309286857 (pre-commit auto remove trailing whitespace from java files (#382))
             File xcu = new File(recoveryXCU);
             if (xcu.isFile()){
                 success = xcu.delete();
                 log.println("removed " + recoveryXCU + " : " + success);
             }
-
+            
         } catch (Exception e){
             throw new com.sun.star.io.IOException("could not remove old recovery data: " + e.toString());
         }
     }
-
+    
     public HashMap getRecoveryFiles()
         throws com.sun.star.io.IOException
     {
         try{
             log.println("try to get UnoProvider...");
             UnoProvider unoProv = new UnoProvider();
-<<<<<<< HEAD
             XMultiServiceFactory xMSF = (XMultiServiceFactory) unoProv.getManager(param);
             
-=======
-
->>>>>>> 3309286857 (pre-commit auto remove trailing whitespace from java files (#382))
             String userPath = utils.expandMacro(xMSF, "${$ORIGIN/bootstraprc:UserInstallation}");
             System.out.println("userPath:'" + userPath + "'");
-
+            
             if (userPath.equals(""))userPath = utils.expandMacro(xMSF, "${$ORIGIN/bootstrap.ini:UserInstallation}");
             System.out.println("userPath:'" + userPath + "'");
-
+            
             if (userPath.equals("")) throw new com.sun.star.io.IOException("could not get user path at bootstraping");
-
+            
             String recoveryFolder = utils.getSystemURL(userPath + "/user/backup");
-
+            
             String recoveryXCU = utils.getSystemURL(userPath + "/user/registry/data/org/openoffice/Office/Recovery.xcu");
-
+            
             HashMap recFiles = new HashMap();
-
+            
             recFiles.put("recoveryFolder", recoveryFolder);
             recFiles.put("recoveryXCU", recoveryXCU);
             return recFiles;
-
+            
         } catch (Exception e){
             throw new com.sun.star.io.IOException("could not get recovery folder: " + e.toString());
         }
-
+        
     }
     /**
      * This function close the office while calling terminate on the desktop. If
      * this failed, the <CODE>ProcessHandler</CODE> kills the process.
      * @param xMSF the <CODE>XMultiServiceFactory</CODE>
      * @return <CODE>TRUE</CODE> if no exception was thrown, otherwise <CODE>FALSE</CODE>
-     */
+     */    
     public boolean closeOffice(XMultiServiceFactory xMSF) {
         try {
             XDesktop desk = (XDesktop) UnoRuntime.queryInterface(
                     XDesktop.class, xMSF.createInstance(
                     "com.sun.star.frame.Desktop"));
             xMSF = null;
-
+            
             desk.terminate();
-<<<<<<< HEAD
             log.println("Waiting until ProcessHandler loose the office...");
             
-=======
-            System.out.println("Waiting until ProcessHandler loose the office...");
-
->>>>>>> 3309286857 (pre-commit auto remove trailing whitespace from java files (#382))
         }
         catch (java.lang.Exception e) {
             e.printStackTrace();
@@ -260,11 +233,11 @@ public class RecoveryTools {
         waitForClosedOffice();
         return true;
     }
-
+    
     /**
      * This function waits until the office is closed. If the closing time reach
      * the value of parameter <CODE>THREAD_TIME_OUT</CODE> the office was killed.
-     */
+     */    
     public void waitForClosedOffice(){
         // check for the office process
         helper.ProcessHandler ph = (helper.ProcessHandler) param.get("AppProvider");
@@ -281,7 +254,7 @@ public class RecoveryTools {
         // be sure that office is closed
         if (ph != null) ph.kill();
     }
-
+    
     public void killOffice(){
         helper.ProcessHandler ph = (helper.ProcessHandler) param.get("AppProvider");
         ph.kill();
@@ -291,14 +264,13 @@ public class RecoveryTools {
      * The office must be started WITH restore and crashreporter functionality.
      * Therefore the parmater '<CODE>-norestore</CODE>' and '<CODE>-nocrashreport</CODE>'
      * was removed from the <CODE>AppExecutionCommand</CODE> parameter
-     */
+     */    
     public void removeParametersFromAppExecutionCommand(){
-
+                                    
         //remove some params to start office
         String office = (String) param.get("AppExecutionCommand");
         String[] params = {"-norestore", "-nocrashreport"};
 
-<<<<<<< HEAD
         for (int i = 0; i < params.length; i++){
             int index = office.indexOf(params[i]);
             int length = params[i].length();
@@ -310,38 +282,19 @@ public class RecoveryTools {
         param.put("AppExecutionCommand", office);
         log.println("connect: " + (String) param.get("AppExecutionCommand"));
         
-=======
-//        for (int i = 0; i < params.length; i++){
-//            int index = office.indexOf(params[i]);
-//            int length = params[i].length();
-//            if (index != -1){
-//                office = office.substring(0, index) + office.substring(index + length);
-//                System.out.println("removed '" + params[i] + "' from AppExecutionCommand: " + office);
-//            }
-//        }
-//        param.put("AppExecutionCommand", office);
-//        System.out.println("connect: " + (String) param.get("AppExecutionCommand"));
-
->>>>>>> 3309286857 (pre-commit auto remove trailing whitespace from java files (#382))
     }
-
+ 
     /**
      * This function uses accessibility to handle modal dialogs like the
      * "Are you sure" dialog.
      * It cklick the named button given in parameter <CODE>buttonName</CODE>
      * @param buttonName the name of the button which should be chlicked
-     */
+     */    
     public void handleModalDialog(XMultiServiceFactory xMSF, String buttonName)
                 throws com.sun.star.accessibility.IllegalAccessibleComponentStateException
-<<<<<<< HEAD
     {                
     
         log.println("try to get modal Dialog...");
-=======
-    {
-
-        System.out.println("try to get modal Dialog...");
->>>>>>> 3309286857 (pre-commit auto remove trailing whitespace from java files (#382))
 
         pause();
 
@@ -361,7 +314,7 @@ public class RecoveryTools {
         }
         pause();
     }
-
+    
     public void clickThreadButton(XMultiServiceFactory xMSF, XWindow xWindow, String buttonName)
                 throws com.sun.star.accessibility.IllegalAccessibleComponentStateException
     {
@@ -369,12 +322,12 @@ public class RecoveryTools {
         kbt.start();
         pause(param.getInt(PropertyName.SHORT_WAIT) * 10);
     }
-
+ 
     public void copyRecoveryData(boolean backup)
         throws com.sun.star.io.IOException, java.io.IOException
-    {
+    {   
         HashMap recFiles = null;
-
+        
         try{
             recFiles = getRecoveryFiles();
         } catch ( com.sun.star.io.IOException e){
@@ -403,6 +356,6 @@ public class RecoveryTools {
             throw new java.io.IOException("Could not copy recovery files: " + e.toString());
         }
    }
-
-
+    
+    
 }
