@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -65,7 +65,7 @@ public class DynamicClassLoader {
     }
 
     /**
-     * Get an instance of a class. The constructor matching to the 
+     * Get an instance of a class. The constructor matching to the
      * arguments is used and the arguments are given to this constructor.
      * @param className The class to instantiate.
      * @param ctorArgs Arguments for the constructor.
@@ -78,12 +78,12 @@ public class DynamicClassLoader {
             ctorType[i] = ctorArgs[i].getClass();
         }
         return getInstance(className, ctorType, ctorArgs);
-        
+
     }
-    
+
     /**
-     * Get an instance of a class. The constructor matching to the 
-     * given calss types is used and the instance is created using the arguments 
+     * Get an instance of a class. The constructor matching to the
+     * given calss types is used and the instance is created using the arguments
      * for the constructor.
      * @param className The class to instantiate.
      * @param ctorClassTypes The class types matching to the constructor.
@@ -96,7 +96,7 @@ public class DynamicClassLoader {
             Class cls = DynamicClassLoader.forName(className);
             Constructor ctor = cls.getConstructor(ctorClassTypes);
             System.out.println("ctor: " + ctor.getName() +  "  " + ctor.getModifiers());
-            
+
             return ctor.newInstance(ctorArgs);
         } catch ( ClassNotFoundException e ) {
             throw new IllegalArgumentException("Couldn't find " + className

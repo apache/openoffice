@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -37,7 +37,7 @@ public class VclMessageBox extends VclControl {
 	public VclMessageBox(VclApp app) {
 		super(app, Constant.UID_ACTIVE);
 	}
-	
+
 	public VclMessageBox(VclApp app, String id) {
 		super(app, id);
 	}
@@ -46,7 +46,7 @@ public class VclMessageBox extends VclControl {
 		super(app, id);
 		this.message = msg;
 	}
-	
+
 
 	/**
 	 * Get the message on the message box
@@ -55,7 +55,7 @@ public class VclMessageBox extends VclControl {
 	public String getMessage() {
 		return (String) invoke(Constant.M_GetText);
 	}
-	
+
 	public boolean exists() {
 		try {
 			boolean exists = super.exists();
@@ -75,7 +75,7 @@ public class VclMessageBox extends VclControl {
 			return false;
 		}
 	}
-	
+
 	/**
 	 * Click the yes button on the message box
 	 *
@@ -83,7 +83,7 @@ public class VclMessageBox extends VclControl {
 	public void yes(){
 		invoke(Constant.M_Yes);
 	}
-	
+
 	/**
 	 * Click the no button on the message box
 	 *
@@ -91,8 +91,8 @@ public class VclMessageBox extends VclControl {
 	public void no(){
 		invoke(Constant.M_No);
 	}
-	
-	
+
+
 	/**
 	 * Closes a dialog by pressing the Cancel button.
 	 */
@@ -116,7 +116,7 @@ public class VclMessageBox extends VclControl {
 
 	/**
 	 * Presses the Help button to open the help topic for the dialog.
-	 * 
+	 *
 	 */
 	public void help()  {
 		invoke(Constant.M_Help);
@@ -128,7 +128,7 @@ public class VclMessageBox extends VclControl {
 	public void ok()  {
 		invoke(Constant.M_OK);
 	}
-	
+
 
 	/**
 	 * Closes a dialog with the OK button.
@@ -136,16 +136,16 @@ public class VclMessageBox extends VclControl {
 	public void repeat()  {
 		invoke(Constant.M_Repeat);
 	}
-	
+
 	/**
 	 * Get the check box text if it exists
-	 * 
+	 *
 	 * @return the check box text
 	 */
 	public String getCheckBoxText() {
 		return (String) invoke(Constant.M_GetCheckBoxText);
 	}
-	
+
 	/**
 	 * Get the status of check box on the message box
 	 * @return
@@ -153,7 +153,7 @@ public class VclMessageBox extends VclControl {
 	public boolean isChecked() {
 		return (Boolean) invoke(Constant.M_IsChecked);
 	}
-	
+
 	/**
 	 * Check the check box on the message box
 	 *
@@ -161,7 +161,7 @@ public class VclMessageBox extends VclControl {
 	public void check() {
 		invoke(Constant.M_Check);
 	}
-	
+
 	/**
 	 * Uncheck the check box on the message box
 	 *
@@ -169,5 +169,5 @@ public class VclMessageBox extends VclControl {
 	public void uncheck() {
 		invoke(Constant.M_UnCheck);
 	}
-	
+
 }

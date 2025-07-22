@@ -46,7 +46,7 @@ public class StateMachine
     {
         if (Log.Dbg != null)
             Log.Dbg.printf("reading parse tables from %s\n", aParseTableFile.toString());
-        
+
         final ParseTableReader aReader = new ParseTableReader(aParseTableFile);
         maNamespaceMap = new NamespaceMap(aReader.GetSection("namespace"));
         maNameMap = new NameMap(aReader.GetSection("name"));
@@ -67,7 +67,7 @@ public class StateMachine
             aErrorsAndWarnings);
         mnStartStateId = Integer.parseInt(aReader.GetSection("start-state").firstElement()[1]);
         mnEndStateId = Integer.parseInt(aReader.GetSection("end-state").firstElement()[1]);
-        
+
         mnCurrentStateId = mnStartStateId;
         maStateStack = new Stack<>();
         maElementContextStack = new Stack<>();
@@ -89,8 +89,8 @@ public class StateMachine
     }
 
 
-    
-    
+
+
     public boolean ProcessStartElement (
         final String sNamespaceURI,
         final String sElementName,
@@ -112,7 +112,7 @@ public class StateMachine
                     nElementNameId,
                     aStartLocation.getLineNumber(),
                     aStartLocation.getColumnNumber());
-            
+
             final Transition aTransition = maTransitions.GetTransition(
                 mnCurrentStateId,
                 aNamespaceDescriptor.Id,
@@ -146,25 +146,25 @@ public class StateMachine
                         aTransition.GetActionId());
                     Log.Dbg.printf("\n");
                 }
-                
+
                 // Follow the transition to its end state but first process its
                 // content.  We do that by
-                
+
                 if (Log.Dbg != null)
                     Log.Dbg.IncreaseIndentation();
 
                 // a) pushing the end state to the state stack so that on the
                 // end tag that corresponds to the current start tag it will become the current state.
                 maStateStack.push(aTransition.GetEndStateId());
-                
+
                 // b) entering the state that corresponds to start tag that
                 // we are currently processing.
                 mnCurrentStateId = aTransition.GetActionId();
-                
+
                 // c) Prepare the attributes and store them in the new element context.
                 final AttributeValues aAttributeValues = maAttributeManager.ParseAttributes(
                     mnCurrentStateId,
-                    aAttributes);                
+                    aAttributes);
 
                 // d) creating a new ElementContext for the element that just starts.
                 maElementContextStack.push(maCurrentElementContext);
@@ -184,7 +184,7 @@ public class StateMachine
                     null,
                     aStartLocation,
                     aEndLocation);
-                
+
                 bResult = true;
             }
         }
@@ -197,10 +197,10 @@ public class StateMachine
         }
         return bResult;
     }
-    
 
-    
-    
+
+
+
     public void ProcessEndElement (
         final String sNamespaceURI,
         final String sElementName,
@@ -218,9 +218,9 @@ public class StateMachine
         }
 
         final NamespaceMap.NamespaceDescriptor aDescriptor = maNamespaceMap.GetDescriptorForURI(sNamespaceURI);
-        
+
         // Leave the current element.
-        
+
         final int nPreviousStateId = mnCurrentStateId;
         mnCurrentStateId = maStateStack.pop();
         if (mnCurrentStateId == mnEndStateId)
@@ -228,7 +228,7 @@ public class StateMachine
 
         final ElementContext aPreviousElementContext = maCurrentElementContext;
         maCurrentElementContext = maElementContextStack.pop();
-        
+
         ExecuteActions(
             nPreviousStateId,
             aPreviousElementContext,
@@ -236,7 +236,7 @@ public class StateMachine
             null,
             aStartLocation,
             aEndLocation);
-        
+
         if (Log.Dbg != null)
         {
             Log.Dbg.DecreaseIndentation();
@@ -252,10 +252,10 @@ public class StateMachine
                 mnCurrentStateId);
         }
     }
-    
-    
-    
-    
+
+
+
+
     public void ProcessCharacters (
         final String sText,
         final Location aStartLocation,
@@ -273,26 +273,26 @@ public class StateMachine
             aEndLocation);
 
     }
-    
-    
-    
-    
+
+
+
+
     public boolean IsInSkipState ()
     {
         return maSkipStates.Contains(mnCurrentStateId);
     }
-    
-    
-    
+
+
+
 
     public ActionManager GetActionManager ()
     {
         return maActionManager;
     }
-    
-    
-    
-    
+
+
+
+
     private void ExecuteActions (
         final int nStateId,
         final ElementContext aElementContext,
@@ -306,10 +306,10 @@ public class StateMachine
             for (final IAction aAction : aActions)
                 aAction.Run(eTrigger, aElementContext, sText, aStartLocation, aEndLocation);
     }
-    
-    
-    
-    
+
+
+
+
     private final NamespaceMap maNamespaceMap;
     private final NameMap maNameMap;
     private final NameMap maStateNameMap;

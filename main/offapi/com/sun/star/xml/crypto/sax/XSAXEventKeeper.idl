@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,20 +7,20 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
- 
+
 //i20156 - new file for xmlsecurity module
 
 /** -- idl definition -- **/
@@ -55,14 +55,14 @@ interface XSAXEventKeeper : com::sun::star::uno::XInterface
 	 * @return   the keeper id of the new element collector
 	 */
 	long addElementCollector();
-	
+
 	/**
 	 * Removes an element collector.
 	 *
 	 * @param id   the keeper id of the element collector to be removed
 	 */
 	void removeElementCollector([in] long id);
-	
+
 	/**
 	 * Adds a new blocker on the next element in the SAX event stream.
 	 * <p>
@@ -92,9 +92,9 @@ interface XSAXEventKeeper : com::sun::star::uno::XInterface
 	 *
 	 * @param id   the keeper id of the element mark, it can be a element
 	 *             collector or a blocker
-	 */ 
+	 */
 	com::sun::star::xml::wrapper::XXMLElementWrapper getElement([in] long id);
-	
+
 	/**
 	 * Sets the element of an element mark.
 	 * <p>
@@ -103,11 +103,11 @@ interface XSAXEventKeeper : com::sun::star::uno::XInterface
 	 *
 	 * @param id         the keeper id of the element mark to be set
 	 * @param aElement   the new element for this element mark.
-	 */ 
+	 */
 	void setElement(
-		[in] long id, 
+		[in] long id,
 		[in] com::sun::star::xml::wrapper::XXMLElementWrapper aElement);
-	
+
 	/**
 	 * Sets the next document handler in the SAX chain.
 	 * <p>
@@ -118,14 +118,14 @@ interface XSAXEventKeeper : com::sun::star::uno::XInterface
 	 */
 	com::sun::star::xml::sax::XDocumentHandler setNextHandler(
 		[in] com::sun::star::xml::sax::XDocumentHandler nextHandler);
-		
+
 	/**
 	 * Prints information about all bufferred elements.
 	 *
 	 * @return   a tree-style string including all buffer information
 	 */
 	string printBufferNodeTree();
-	
+
 	/**
 	 * Gets the element which current blocking happens.
 	 * <p>

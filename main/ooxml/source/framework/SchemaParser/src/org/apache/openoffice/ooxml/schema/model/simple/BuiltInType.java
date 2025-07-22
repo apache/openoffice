@@ -46,7 +46,7 @@ public enum BuiltInType
     UnsignedInt,
     UnsignedLong,
     UnsignedShort;
-    
+
     public static BuiltInType GetForName (final QualifiedName aName)
     {
         assert(aName.GetNamespacePrefix().equals(XsdNamespace.Prefix));

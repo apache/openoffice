@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 package fvt.uno.sd.paragraph;
 
@@ -65,9 +65,9 @@ public class ParagraphTextProperty {
 	XShapes xShapes = null;
 	XDrawPage xpage = null;
 	String filePath=null;
-    
+
 	UnoApp unoApp = new UnoApp();
-	
+
 	/**
 	 * @throws java.lang.Exception
 	 */
@@ -91,7 +91,7 @@ public class ParagraphTextProperty {
 		 // create the shape
 		 XShape xRectangle = ShapeUtil.createShape(impressDocument, po, new Size(21000, 12500), "com.sun.star.drawing.RectangleShape");
 		 xShapes.add(xRectangle);
-		 
+
 		 XPropertySet xShapePropSet = (XPropertySet)UnoRuntime.queryInterface(XPropertySet.class, xRectangle);
 		 // TextFitToSize
 		 xShapePropSet.setPropertyValue("TextFitToSize", TextFitToSizeType.PROPORTIONAL);
@@ -102,16 +102,16 @@ public class ParagraphTextProperty {
 		 xShapePropSet.setPropertyValue("TextLowerDistance", new Integer(2500));
 		 XPropertySet xTextPropSet = addPortion(xRectangle, "using TextFitToSize", false);
 		 xTextPropSet = addPortion(xRectangle, "and a Border distance of 2,5 cm", true);
-		 
+
 		 xRectangle = saveAndLoadShape(1,0);
-		 
+
 		 Assert.assertEquals("TextLeftDistance is 2500", 2500, xShapePropSet.getPropertyValue("TextLeftDistance"));
 		 Assert.assertEquals("TextRightDistance is 2500", 2500, xShapePropSet.getPropertyValue("TextRightDistance"));
 		 Assert.assertEquals("TextUpperDistance is 2500", 2500, xShapePropSet.getPropertyValue("TextUpperDistance"));
 		 Assert.assertEquals("TextLowerDistance is 2500", 2500, xShapePropSet.getPropertyValue("TextLowerDistance"));
-		 
+
 	}
-		
+
 	public static XPropertySet addPortion(XShape xShape, String sText, boolean bNewParagraph)
 	         throws com.sun.star.lang.IllegalArgumentException {
 	     XText xText = (XText)UnoRuntime.queryInterface(XText.class, xShape);
@@ -127,10 +127,10 @@ public class ParagraphTextProperty {
 	     XPropertySet xPropSet = (XPropertySet)UnoRuntime.queryInterface(XPropertySet.class, xTextRange);
 	     return xPropSet;
 	 }
-	
+
 	/**
 	 * create a new presentation document and insert a new slide.
-	 * 
+	 *
 	 * @throws Exception
 	 */
 	public void createDocumentAndSlide() throws Exception {
@@ -142,10 +142,10 @@ public class ParagraphTextProperty {
 		drawpages.insertNewByIndex(1);
 		xpage = PageUtil.getDrawPageByIndex(impressDocument, 1);
 	}
-	
+
 	/**
 	 * Save presentation and reLoad the presentation and shape in it.
-	 * 
+	 *
 	 * @param po
 	 * @param shapeType
 	 * @return
@@ -160,7 +160,7 @@ public class ParagraphTextProperty {
 
 	/**
 	 * save and reload Presentation document.
-	 * 
+	 *
 	 * @param presentationDocument
 	 * @param sFilter
 	 * @param sExtension

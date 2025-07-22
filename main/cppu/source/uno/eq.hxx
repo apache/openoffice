@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -48,7 +48,7 @@ inline sal_Bool _equalObject(
 	if ((0 == pI1) || (0 == pI2))
 		return sal_False;
     sal_Bool bRet = sal_False;
-    
+
     typelib_TypeDescriptionReference * type_XInterface =
         * typelib_static_type_getByTypeClass( typelib_TypeClass_INTERFACE );
 	if (0 == queryInterface)
@@ -85,11 +85,11 @@ inline sal_Bool _equalStruct(
 	{
 		return sal_False;
 	}
-	
+
 	typelib_TypeDescriptionReference ** ppTypeRefs = pTypeDescr->ppTypeRefs;
 	sal_Int32 * pMemberOffsets = pTypeDescr->pMemberOffsets;
 	sal_Int32 nDescr = pTypeDescr->nMembers;
-	
+
 	while (nDescr--)
 	{
 		sal_Int32 nOffset = pMemberOffsets[nDescr];
@@ -124,10 +124,10 @@ inline sal_Bool _equalSequence(
 		return sal_False;
 	if (! nElements)
 		return sal_True;
-	
+
 	void * pDestElements = pDest->elements;
 	void * pSourceElements = pSource->elements;
-	
+
 	switch (pElementType->eTypeClass)
 	{
 	case typelib_TypeClass_CHAR:
@@ -315,7 +315,7 @@ inline sal_Bool _equalData(
 		pSourceType = ((uno_Any *)pSource)->pType;
 		pSource = ((uno_Any *)pSource)->pData;
 	}
-	
+
 	switch (eDestTypeClass)
 	{
 	case typelib_TypeClass_VOID:

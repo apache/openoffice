@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -36,7 +36,7 @@ namespace com { namespace sun { namespace star {
 namespace frame {
     class XSynchronousFrameLoader;
     class XFrame;
-} 
+}
 namespace uno {
     class XComponentContext;
 }
@@ -76,19 +76,19 @@ namespace slideshow
                 @param nNumPropEntries
                 Number of property table entries (in pPropCopyTable)
              */
-            ViewAppletShape( const ViewLayerSharedPtr&                         rViewLayer, 
-                             const ::com::sun::star::uno::Reference< 
+            ViewAppletShape( const ViewLayerSharedPtr&                         rViewLayer,
+                             const ::com::sun::star::uno::Reference<
                                    ::com::sun::star::drawing::XShape >&        rxShape,
                              const ::rtl::OUString&                            rServiceName,
                              const char**                                      pPropCopyTable,
                              sal_Size                                          nNumPropEntries,
-                             const ::com::sun::star::uno::Reference< 
+                             const ::com::sun::star::uno::Reference<
                                    ::com::sun::star::uno::XComponentContext >& rxContext );
 
             /** destroy the object
              */
             virtual ~ViewAppletShape();
-			
+
             /** Query the associated view layer of this shape
              */
             ViewLayerSharedPtr getViewLayer() const;
@@ -121,7 +121,7 @@ namespace slideshow
 
             /** Render the ViewShape
 
-				This method renders the ViewAppletShape on the associated view. 
+				This method renders the ViewAppletShape on the associated view.
 
                 @param rBounds
                 The current applet shape bounds
@@ -153,7 +153,7 @@ namespace slideshow
             /// the frame containing the applet
             ::com::sun::star::uno::Reference<
                 ::com::sun::star::frame::XFrame>                  mxFrame;
-            ::com::sun::star::uno::Reference< 
+            ::com::sun::star::uno::Reference<
                 ::com::sun::star::uno::XComponentContext>         mxComponentContext;
 		};
 

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -136,7 +136,7 @@ public:
 	FmFilterItems(const ::com::sun::star::uno::Reference< ::com::sun::star::lang::XMultiServiceFactory >& _rxFactory):FmParentData(_rxFactory,NULL, ::rtl::OUString()){}
 	FmFilterItems(const ::com::sun::star::uno::Reference< ::com::sun::star::lang::XMultiServiceFactory >& _rxFactory,FmFormItem* pParent, const ::rtl::OUString& rText ):FmParentData(_rxFactory,pParent, rText){}
 
-    FmFilterItem* Find( const ::sal_Int32 _nFilterComponentIndex ) const;	
+    FmFilterItem* Find( const ::sal_Int32 _nFilterComponentIndex ) const;
 	virtual Image GetImage( BmpColorMode _eMode = BMP_COLOR_NORMAL ) const;
 };
 
@@ -167,7 +167,7 @@ class FmFilterModel : public FmParentData
 					 ,public SfxBroadcaster
 					 ,public ::svxform::OSQLParserClient
 {
-	friend class FmFilterAdapter;	
+	friend class FmFilterAdapter;
 
     ::com::sun::star::uno::Reference< ::com::sun::star::container::XIndexAccess >           m_xControllers;
     ::com::sun::star::uno::Reference< ::com::sun::star::form::runtime::XFormController >    m_xController;
@@ -210,18 +210,18 @@ protected:
 //========================================================================
 //========================================================================
 class OFilterItemExchange : public OLocalExchange
-{	
-	::std::vector<FmFilterItem*>	m_aDraggedEntries;	
+{
+	::std::vector<FmFilterItem*>	m_aDraggedEntries;
 	FmFormItem*				m_pFormItem;		// ensure that we drop on the same form
 
-public:	
+public:
 	OFilterItemExchange();
 
 	static sal_uInt32		getFormatId( );
 	inline static sal_Bool	hasFormat( const DataFlavorExVector& _rFormats );
 
-	const ::std::vector<FmFilterItem*>& getDraggedEntries() const { return m_aDraggedEntries; }	
-	void setDraggedEntries(const ::std::vector<FmFilterItem*>& _rList) { m_aDraggedEntries = _rList; }	
+	const ::std::vector<FmFilterItem*>& getDraggedEntries() const { return m_aDraggedEntries; }
+	void setDraggedEntries(const ::std::vector<FmFilterItem*>& _rList) { m_aDraggedEntries = _rList; }
 	FmFormItem* getFormItem() const { return m_pFormItem; }
 
 	void setFormItem( FmFormItem* _pItem ) { m_pFormItem = _pItem; }
@@ -254,7 +254,7 @@ protected:
 class FmFilterNavigator : public SvTreeListBox, public SfxListener
 {
 	enum DROP_ACTION{ DA_SCROLLUP, DA_SCROLLDOWN, DA_EXPANDNODE };
-	
+
 	FmFilterModel*			m_pModel;
 	SvLBoxEntry*			m_pEditingCurrently;
 	OFilterExchangeHelper	m_aControlExchange;

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -74,7 +74,7 @@ class WriterFrame extends java.awt.Frame
             System.out.println("Exception caught: " + e.getMessage());
         }
     }
-    
+
     public WriterFrame() throws Exception
     {
         this(0, 0, 800, 400, false, null);
@@ -88,7 +88,7 @@ class WriterFrame extends java.awt.Frame
         com.sun.star.text.XText xText = myDoc.getText();
         com.sun.star.text.XTextCursor xTCursor = xText.createTextCursor();
         //inserting some Text
-        xText.insertString( xTCursor, s, false );  
+        xText.insertString( xTCursor, s, false );
     }
 
     public String getText() throws Exception
@@ -127,7 +127,7 @@ class WriterFrame extends java.awt.Frame
         xTViewCursor.gotoStart(false);
     }
 
-    
+
     public void pageDown() throws Exception
     {
         com.sun.star.frame.XModel xModel = (com.sun.star.frame.XModel)m_bean.getDocument();
@@ -143,7 +143,7 @@ class WriterFrame extends java.awt.Frame
 
     public Rectangle getClientArea()
     {
-        
+
         Insets i = getInsets();
         Rectangle r = getBounds();
         Rectangle rc = new Rectangle(r.x + i.left, r.y + i.top,
@@ -201,5 +201,5 @@ class WriterFrame extends java.awt.Frame
         m_bean.aquireSystemWindow();
         validate();
     }
-    
+
 }

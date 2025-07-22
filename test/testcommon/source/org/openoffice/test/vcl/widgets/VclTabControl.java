@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -30,7 +30,7 @@ import org.openoffice.test.vcl.client.Constant;
  *
  */
 public class VclTabControl extends VclControl {
-	
+
 	public VclTabControl(VclApp app) {
 		super(app, Constant.UID_ACTIVE);
 	}
@@ -50,7 +50,7 @@ public class VclTabControl extends VclControl {
 	/**
 	 * Returns the number of tab pages in the TabControl.
 	 * <p>
-	 * 
+	 *
 	 * @return number of tab pages in the dialog. -1 : Return value error
 	 *         <p>
 	 */
@@ -62,7 +62,7 @@ public class VclTabControl extends VclControl {
 	 * Returns the TabpageID of current Tab Page in the Tab dialog. This not the
 	 * UniqueID and is only needed for the SetPageID instruction..
 	 * <p>
-	 * 
+	 *
 	 * @return TabpageID used in SetPageID instruction; -1 : Return value error
 	 *         <p>
 	 */
@@ -74,7 +74,7 @@ public class VclTabControl extends VclControl {
 	 * Returns the TabpageID of specified Tab page in the Tab dialog. This not
 	 * the UniqueID and is only needed for the SetPageID instruction..
 	 * <p>
-	 * 
+	 *
 	 * @param nTabID :
 	 *            Specified Tab Page which order from 1. eg. A tab dialog have
 	 *            two Tab pages, nTabID is 2 if you want to get the TabpageID of
@@ -90,7 +90,7 @@ public class VclTabControl extends VclControl {
 	/**
 	 * Changes to the tab page that has the TabpageID that you specify.
 	 * <p>
-	 * 
+	 *
 	 * @param id
 	 *            TabpageID of tab page
 	 */
@@ -101,7 +101,7 @@ public class VclTabControl extends VclControl {
 	/**
 	 * Change to the tab page you specify
 	 * <p>
-	 * 
+	 *
 	 * @param nTabResID
 	 *            The resource ID of the specified Tab page in Tab Dialog
 	 */

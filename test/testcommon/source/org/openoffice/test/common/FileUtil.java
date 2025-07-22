@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -68,15 +68,15 @@ import org.w3c.dom.Document;
  *
  */
 public class FileUtil {
-	 
+
 	private final static DateFormat FILENAME_FORMAT = new SimpleDateFormat("yyMMddHHmm");
-	
+
 	private final static Logger log = Logger.getLogger(FileUtil.class);
-	
+
 	private FileUtil(){
-		
+
 	}
-	
+
 	/**
 	 * Parse XML file to Document model
 	 * @param path
@@ -92,7 +92,7 @@ public class FileUtil {
 			return null;
 		}
 	}
-	
+
 	/**
 	 * Create a new xml document
 	 * @return
@@ -107,7 +107,7 @@ public class FileUtil {
 			return null;
 		}
 	}
-	
+
 	public static boolean storeXML(Document doc, File file) {
 		try {
 			file.getParentFile().mkdirs();
@@ -117,7 +117,7 @@ public class FileUtil {
 			return false;
 		}
 	}
-	
+
 	public static boolean storeXML(Document doc, File file, File xls) {
 		try {
 			file.getParentFile().mkdirs();
@@ -127,7 +127,7 @@ public class FileUtil {
 			return false;
 		}
 	}
-	
+
 	public static boolean storeXML(Document doc, File file, InputStream xls) {
 		try {
 			file.getParentFile().mkdirs();
@@ -137,7 +137,7 @@ public class FileUtil {
 			return false;
 		}
 	}
-	  
+
 	/**
 	 * Get a string by XPATH from a xml file
 	 * @param xml
@@ -148,7 +148,7 @@ public class FileUtil {
 		Document doc = parseXML(xml);
 		if (doc == null)
 			return null;
-	
+
 	    try {
 	    	XPathFactory factory = XPathFactory.newInstance();
 			XPath xpath = factory.newXPath();
@@ -162,8 +162,8 @@ public class FileUtil {
 
 	}
 
-	
-	
+
+
 	/**
 	 * Update the given property in a properties file
 	 * @param file the properties file path
@@ -175,7 +175,7 @@ public class FileUtil {
 		map.put(key, value);
 		updateProperty(file, map);
 	}
-	
+
 	/**
 	 * Update the given properties in a properties file
 	 * @param file the properties file path
@@ -186,7 +186,7 @@ public class FileUtil {
 		properties.putAll(props);
 		storeProperties(file, properties);
 	}
-	
+
 	/**
 	 * Load a properties file to Properties class
 	 * @param file the properties file path
@@ -195,7 +195,7 @@ public class FileUtil {
 	public static Properties loadProperties(String file) {
 		return loadProperties(new File(file));
 	}
-	
+
 	/**
 	 * Load a properties file to Properties class
 	 * @param file the properties file
@@ -218,10 +218,10 @@ public class FileUtil {
 				}
 			}
 		}
-		
+
 		return properties;
 	}
-	
+
 	/**
 	 * Store properties into a file
 	 * @param file the properties file path
@@ -244,9 +244,9 @@ public class FileUtil {
 			}
 		}
 	}
-	
-	
-	
+
+
+
 	/**
 	 * Delete a property in a properties file
 	 * @param file the properties file path
@@ -261,16 +261,16 @@ public class FileUtil {
 	/**
 	 * Load a file as string
 	 * @param file the file path
-	 * @return 
+	 * @return
 	 */
 	public static String readFileAsString(String file) {
 		return readFileAsString(new File(file));
 	}
-	
+
 	/**
 	 * Load a file as string
 	 * @param file the file path
-	 * @return 
+	 * @return
 	 */
 	public static String readFileAsString(File file) {
 		try {
@@ -279,7 +279,7 @@ public class FileUtil {
 			return "";
 		}
 	}
-	
+
 	public static String readStreamAsString(InputStream inputStream, String charsetName) {
 		StringBuffer strBuffer = new StringBuffer(10240);
 		BufferedReader reader = null;
@@ -291,7 +291,7 @@ public class FileUtil {
 				strBuffer.append(buf, 0, count);
 			}
 		} catch (IOException e) {
-			
+
 		} finally {
 			if (reader != null)
 				try {
@@ -303,7 +303,7 @@ public class FileUtil {
 
 		return strBuffer.toString();
 	}
-	
+
 
 	public static boolean isSymbolicLink(File file) {
 		try {
@@ -335,10 +335,10 @@ public class FileUtil {
 				return files[i];
 			}
 		}
-		
+
 		return null;
 	}
-	
+
 	public static File findFile(File dir, String name, boolean followSymbolicLink) {
 		if (!dir.isDirectory())
 			return null;
@@ -352,10 +352,10 @@ public class FileUtil {
 				return files[i];
 			}
 		}
-		
+
 		return null;
 	}
-	
+
 	/**
 	 * Find the last file matching the given name.
 	 * @param dir The directory to search in
@@ -376,10 +376,10 @@ public class FileUtil {
 				file = files[i];
 			}
 		}
-		
+
 		return file;
 	}
-	
+
 	/**
 	 * find the first file matching the given name.
 	 * @param dirs The directories to search in. Use ';' separate each directory.
@@ -396,11 +396,11 @@ public class FileUtil {
 			if (file != null)
 				return file;
 		}
-		
+
 		return null;
 	}
-	
-	
+
+
 	/**
 	 * find the last file matching the given name.
 	 * @param dirs The directories to search in. Use ';' separate each directory.
@@ -417,10 +417,10 @@ public class FileUtil {
 			if (file != null)
 				return file;
 		}
-		
+
 		return null;
 	}
-	
+
 	/**
 	 * find the directory matching the given name.
 	 * @param dir The directory to search in
@@ -438,10 +438,10 @@ public class FileUtil {
 				return files[i];
 			}
 		}
-		
+
 		return null;
 	}
-	
+
 
 	/**
 	 * Write string into a file
@@ -451,7 +451,7 @@ public class FileUtil {
 	public static void writeStringToFile(String path, String contents) {
 		writeStringToFile(new File(path), contents);
 	}
-	
+
 	/**
 	 * Write string into a file
 	 * @param file
@@ -474,7 +474,7 @@ public class FileUtil {
 				}
 		}
 	}
-	
+
 	/**
 	 * Appeand a string to the tail of a file
 	 * @param file
@@ -495,7 +495,7 @@ public class FileUtil {
 				}
 		}
 	}
-	
+
 	/**
 	 * Replace string in the file use regular expression
 	 * @param file
@@ -507,17 +507,17 @@ public class FileUtil {
 		str = str.replaceAll(expr, substitute);
 		writeStringToFile(file, str);
 	}
-	
+
     /**
      * Recursively copy all files in the source dir into the destination dir
-     * @param fromDirName the source dir 
+     * @param fromDirName the source dir
      * @param toDirName the destination dir
      * @return
      */
     public static boolean copyDir(String fromDirName, String toDirName)  {
     	return copyDir(new File(fromDirName), new File(toDirName), true);
     }
-    
+
     /**
      * Copy all files in the source dir into the destination dir
      * @param fromDir
@@ -541,10 +541,10 @@ public class FileUtil {
     		else
     			result &= copyFile(files[i], toDir);
     	}
-    	
+
     	return result;
     }
-    
+
     /**
      * Copy a file
      * @param fromFile
@@ -567,7 +567,7 @@ public class FileUtil {
            int bytesRead;
            while ((bytesRead = from.read(buffer)) != -1)
              to.write(buffer, 0, bytesRead);
-           
+
            return true;
          } catch (IOException e) {
          	//Can't copy
@@ -586,7 +586,7 @@ public class FileUtil {
              }
          }
     }
-    
+
 
     /**
      * Pump data from an inputstream into a file
@@ -624,7 +624,7 @@ public class FileUtil {
 				}
 		}
 	}
-    
+
 	/**
 	 * Pump data from an inputstream into an output stream
 	 * @param from
@@ -664,7 +664,7 @@ public class FileUtil {
     public static boolean copyFile(String fromFileName, String toFileName) {
     	return copyFile(new File(fromFileName), new File(toFileName));
     }
-    
+
     /**
      * Copy all the files under fromDirName to toDirName
      * @param fromDirName
@@ -673,7 +673,7 @@ public class FileUtil {
      */
     public static boolean copyFiles(String fromDirName, String toDirName) {
     	boolean res = true;
-    	
+
     	File fromDir = new File(fromDirName);
     	if (!fromDir.exists() || !fromDir.isDirectory() || !fromDir.canRead()) {
          	System.err.println(fromDir.getAbsolutePath() + "doesn't exist, or isn't file, or can't be read");
@@ -684,12 +684,12 @@ public class FileUtil {
     		if(files[i].isDirectory()){
     			res = res && copyDir(fromDirName + "/" + files[i].getName(), toDirName + "/" + files[i].getName());
     		}
-    		else 
+    		else
     			res = res && copyFile(fromDirName + "/" + files[i].getName(), toDirName + "/" + files[i].getName());
     	}
     	return res;
     }
-    
+
     /**
      * Delete a file or directory
      * @param file
@@ -698,7 +698,7 @@ public class FileUtil {
     public static boolean deleteFile(File path) {
     	if (!path.exists())
     		return true;
-    	
+
 		if (path.isDirectory()) {
 			File[] files = path.listFiles();
 			for (int i = 0; i < files.length; i++) {
@@ -709,10 +709,10 @@ public class FileUtil {
 				}
 			}
 		}
-		
+
 		return path.delete();
 	}
-    
+
     /**
      * Delete a file or directory.
      * @param path
@@ -721,7 +721,7 @@ public class FileUtil {
     public static boolean deleteFile(String path) {
 		return deleteFile(new File(path));
 	}
-    
+
     /**
      * Check if a file exists
      * @param file
@@ -732,7 +732,7 @@ public class FileUtil {
     		return false;
     	return new File(file).exists();
     }
-   
+
     /**
      * Get the extension name of a file
      * @param file
@@ -747,7 +747,7 @@ public class FileUtil {
 		return file.substring(i+1);
 	}
 
-	
+
 	/**
 	 * Get file size. If it's a directory, it calculates the total size of files
 	 * @param filePath
@@ -765,18 +765,18 @@ public class FileUtil {
 	public static long getFileSize(File file){
 		if (file.isFile())
 			return file.length();
-		
+
 		long size = 0;
 		File[] files = file.listFiles();
 		if (files == null)
 			return size;
-		
+
 		for (File f : files) {
 			size += getFileSize(f);
 		}
 		return size;
 	}
-	
+
 	/**
 	 * Unzip a zip file into the destination directory
 	 * @param zip
@@ -786,7 +786,7 @@ public class FileUtil {
 	public static boolean unzip(String zip, String dest) {
 		return unzip(new File(zip), new File(dest));
 	}
-	
+
 	/**
 	 * Unzip a zip file into the destination directory
 	 * @param zipFile
@@ -813,7 +813,7 @@ public class FileUtil {
 					fos.close();
 					zin.closeEntry();
 				}
-				
+
 				if (entry.getTime() >= 0)
 					entryFile.setLastModified(entry.getTime());
 			}
@@ -834,7 +834,7 @@ public class FileUtil {
 				}
 		}
 	}
-	
+
 	private static void zip(File dir, ZipOutputStream out, String prefix) throws Exception {
 		File[] files = dir.listFiles();
 		for (File f : files) {
@@ -854,24 +854,24 @@ public class FileUtil {
 					if (bis != null)
 						bis.close();
 				}
-				
+
 			} else {
 				zip(f, out, prefix + f.getName() + "/");
 			}
 		}
 	}
-	
+
 	public static void zip(File workingDir, File zipFile) {
 		zip(workingDir, zipFile, null);
 	}
-	
+
 	public static void zip(File workingDir, File zipFile, String prefix) {
 		if (!workingDir.isDirectory())
 			return;
-		
+
 		if (prefix == null)
 			prefix = "";
-		
+
 		ZipOutputStream out = null;
 		try {
 			out = new ZipOutputStream(new BufferedOutputStream(new FileOutputStream(zipFile)));
@@ -885,7 +885,7 @@ public class FileUtil {
 				} catch (IOException e) {
 				}
 		}
-	       
+
 	 }
 	/**
 	 * Get an unique name under the specified directory
@@ -902,10 +902,10 @@ public class FileUtil {
 				return file;
 			}
 		}
-		
+
 		return null;
 	}
-	
+
 	/**
 	 * Get an unique name under the specified directory
 	 * @param dir
@@ -916,7 +916,7 @@ public class FileUtil {
 	public static File getUniqueFile(String dir, String prefix, String suffix) {
 		return getUniqueFile(new File(dir), prefix, suffix);
 	}
-	
+
 	/**
 	 * Download a file from a url to the local file system
 	 * @param urlString
@@ -926,11 +926,11 @@ public class FileUtil {
 	public static File download(String urlString, File output) {
 		return download(urlString, output, false);
 	}
-	
+
 	public static File download(String urlString, File output, boolean usetimestamp) {
 		return download(urlString, output, false, null);
 	}
-	
+
 	/**
 	 * Download a file from a url to the local file system
 	 * @param urlString
@@ -946,7 +946,7 @@ public class FileUtil {
 			URLConnection urlConnection = url.toURL().openConnection();
 			int totalSize = urlConnection.getContentLength();
 			in = urlConnection.getInputStream();
-			if (output.isDirectory()) 
+			if (output.isDirectory())
 				output = new File(output, new File(url.getPath()).getName());
 			output.getParentFile().mkdirs();
 			if (usetimestamp && output.exists()) {
@@ -957,7 +957,7 @@ public class FileUtil {
 					return output;
 				}
 			}
-			
+
 			out = new FileOutputStream(output);
 			byte[] buffer = new byte[1024 * 100]; // 100k
 			int count = 0;
@@ -966,14 +966,14 @@ public class FileUtil {
 			while ((count = in.read(buffer)) > 0) {
 				out.write(buffer, 0, count);
 				totalCount += count;
-				
+
 				if (totalSize > 0) {
 					int nowProgress = totalCount * 10 / totalSize;
 					if (nowProgress > progress) {
 						progress = nowProgress;
 					}
 				}
-				
+
 			}
 			out.close();
 			if (urlConnection.getLastModified() >= 0)
@@ -1011,13 +1011,13 @@ public class FileUtil {
 			String url = file.getCanonicalFile().toURI().toASCIIString();
 			return url.replace("file:/", "file:///");
 		} catch(Exception e) {
-			
+
 		}
-		
+
 		return null;
 	}
-	
-	
+
+
 	/**
 	 * Convert a file path to URL like "file:///dir/some.file"
 	 * @param file
@@ -1026,7 +1026,7 @@ public class FileUtil {
 	public static String getUrl(String path) {
 		return getUrl(new File(path));
 	}
-	
+
 	/**
 	 * Check if the given address is valid URL
 	 * @param address
@@ -1041,6 +1041,6 @@ public class FileUtil {
 		} catch (MalformedURLException e) {
 			return false;
 		}
-		
+
 	}
 }

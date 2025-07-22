@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 package org.apache.openoffice.comp.sdbc.dbtools.sdbcx.descriptors;
@@ -32,24 +32,24 @@ import com.sun.star.sdbcx.XColumnsSupplier;
 import com.sun.star.uno.Type;
 
 public class SdbcxKeyDescriptor extends ODescriptor implements XColumnsSupplier, XServiceInfo {
-    
+
     private static final String[] services = {
             "com.sun.star.sdbcx.KeyDescriptor"
     };
-    
+
     protected int type;
     protected String referencedTable;
     protected int updateRule;
     protected int deleteRule;
-    
+
     private SdbcxKeyColumnDescriptorContainer columns;
-    
+
     public SdbcxKeyDescriptor(boolean isCaseSensitive) {
         super("", isCaseSensitive, false);
         registerProperties();
         columns = new SdbcxKeyColumnDescriptorContainer(this, isCaseSensitive());
     }
-    
+
     private void registerProperties() {
         registerProperty(PropertyIds.TYPE.name, PropertyIds.TYPE.id, Type.LONG, (short)0,
                 new PropertyGetter() {
@@ -69,7 +69,7 @@ public class SdbcxKeyDescriptor extends ODescriptor implements XColumnsSupplier,
                     @Override
                     public Object getValue() {
                         return referencedTable;
-                        
+
                     }
                 },
                 new PropertySetter() {
@@ -83,7 +83,7 @@ public class SdbcxKeyDescriptor extends ODescriptor implements XColumnsSupplier,
                     @Override
                     public Object getValue() {
                         return updateRule;
-                        
+
                     }
                 },
                 new PropertySetter() {
@@ -97,7 +97,7 @@ public class SdbcxKeyDescriptor extends ODescriptor implements XColumnsSupplier,
                     @Override
                     public Object getValue() {
                         return deleteRule;
-                        
+
                     }
                 },
                 new PropertySetter() {
@@ -107,23 +107,23 @@ public class SdbcxKeyDescriptor extends ODescriptor implements XColumnsSupplier,
                     }
                 });
     }
-    
+
     @Override
     public XNameAccess getColumns() {
         return columns;
     }
-    
+
     // XServiceInfo
-    
+
     public String getImplementationName() {
         return getClass().getName();
     }
-    
+
     @Override
     public String[] getSupportedServiceNames() {
         return services.clone();
     }
-    
+
     @Override
     public boolean supportsService(String serviceName) {
         for (String service : getSupportedServiceNames()) {

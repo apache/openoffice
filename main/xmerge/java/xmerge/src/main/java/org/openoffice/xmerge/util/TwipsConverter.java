@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -25,19 +25,19 @@ package org.openoffice.xmerge.util;
 
 
 /**
- * <p>Helper class providing static methods to convert data to/from 
+ * <p>Helper class providing static methods to convert data to/from
  *    twips</p>
  *
- * @author	Martin Maher 
+ * @author	Martin Maher
  */
 public class TwipsConverter {
-    
+
     /**
      * <p>Convert from twips to cm's</p>
      *
      * @param   value   The <code>short</code> to be converted.
      *
-     * @return   float containing the converted 
+     * @return   float containing the converted
      */
     public static float twips2cm(int value) {
 
@@ -46,50 +46,50 @@ public class TwipsConverter {
 
 		return cm;
     }
-    
-    
-    
+
+
+
     /**
      * <p>Convert from cm's to twips</p>
      *
-     * @param   value   <code>byte</code> array containing the LE representation 
+     * @param   value   <code>byte</code> array containing the LE representation
      *                  of the value.
      *
      * @return  int containing the converted value.
      */
     public static int cm2twips(float value) {
-	
-		int twips = (int) ((value/2.54)*1440); 
-		
+
+		int twips = (int) ((value/2.54)*1440);
+
 		return twips;
     }
-	
+
     /**
      * <p>Convert from twips to cm's</p>
      *
      * @param   value   The <code>short</code> to be converted.
      *
-     * @return   float containing the converted 
+     * @return   float containing the converted
      */
     public static float twips2inches(int value) {
 
 		return (float) value/1440;
     }
-    
-    
-    
+
+
+
     /**
      * <p>Convert from cm's to twips</p>
      *
-     * @param   value   <code>byte</code> array containing the LE representation 
+     * @param   value   <code>byte</code> array containing the LE representation
      *                  of the value.
      *
      * @return  int containing the converted value.
      */
     public static int inches2twips(float value) {
-	
+
 		return (int) (value*1440);
     }
-    
-    
+
+
 }

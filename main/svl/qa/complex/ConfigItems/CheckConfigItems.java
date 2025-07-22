@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -41,29 +41,29 @@ import org.openoffice.test.OfficeConnection;
 /** @short  todo document me
  * @deprecated this tests seems no longer work as expected.
  */
-public class CheckConfigItems 
+public class CheckConfigItems
 {
     //-------------------------------------------
     // some const
-    
+
     //-------------------------------------------
     // member
-    
+
     /** points to the global uno service manager. */
     private XMultiServiceFactory m_xSmgr = null;
-    
+
     /** implements real config item tests in C++. */
     private XJob m_xTest = null;
-        
+
     //-------------------------------------------
     // test environment
-    
+
     //-------------------------------------------
     /** @short  A function to tell the framework,
                 which test functions are available.
-                
+
         @return All test methods.
-        @todo   Think about selection of tests from outside ...     
+        @todo   Think about selection of tests from outside ...
      */
 //    public String[] getTestMethodNames()
 //    {
@@ -80,7 +80,7 @@ public class CheckConfigItems
 
     //-------------------------------------------
     /** @short  Create the environment for following tests.
-    
+
      * @throws java.lang.Exception
      * @descr  Use either a component loader from desktop or
                 from frame
@@ -90,9 +90,9 @@ public class CheckConfigItems
     {
         // get uno service manager from global test environment
         m_xSmgr = getMSF();
-    
+
         // TODO register helper service
-    
+
         // create module manager
         m_xTest = UnoRuntime.queryInterface(XJob.class, m_xSmgr.createInstance("com.sun.star.comp.svl.ConfigItemTest"));
     }
@@ -106,7 +106,7 @@ public class CheckConfigItems
         throws java.lang.Exception
     {
         // TODO deregister helper service
-    
+
         m_xTest = null;
         m_xSmgr = null;
     }
@@ -154,7 +154,7 @@ public class CheckConfigItems
 //     {
 //         impl_triggerTest("checkPrintOptions");
 //     }
-    
+
     //-------------------------------------------
     /**
      * @throws java.lang.Exception

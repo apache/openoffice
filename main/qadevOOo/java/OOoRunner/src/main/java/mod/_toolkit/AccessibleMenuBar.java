@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -77,7 +77,7 @@ public class AccessibleMenuBar extends TestCase {
      * Finds accessible component with role <code>MENUBAR</code>
      * walking through the accessible component tree of a document.
      */
-    protected TestEnvironment createTestEnvironment(TestParameters Param, 
+    protected TestEnvironment createTestEnvironment(TestParameters Param,
                                                     PrintWriter log) {
         shortWait();
 
@@ -97,10 +97,10 @@ public class AccessibleMenuBar extends TestCase {
         TestEnvironment tEnv = new TestEnvironment(oObj);
 
         final XAccessibleComponent acomp = (XAccessibleComponent) UnoRuntime.queryInterface(
-                                                   XAccessibleComponent.class, 
+                                                   XAccessibleComponent.class,
                                                    oObj);
 
-        tEnv.addObjRelation("EventProducer", 
+        tEnv.addObjRelation("EventProducer",
                             new ifc.accessibility._XAccessibleEventBroadcaster.EventProducer() {
             public void fireEvent() {
                 System.out.println("Grabbing focus ... ");
@@ -108,10 +108,10 @@ public class AccessibleMenuBar extends TestCase {
             }
         });
 
-        tEnv.addObjRelation("XAccessibleSelection.OneAlwaysSelected", 
+        tEnv.addObjRelation("XAccessibleSelection.OneAlwaysSelected",
                             new Boolean(false));
 
-        tEnv.addObjRelation("XAccessibleSelection.multiSelection", 
+        tEnv.addObjRelation("XAccessibleSelection.multiSelection",
                             new Boolean(false));
 
         return tEnv;

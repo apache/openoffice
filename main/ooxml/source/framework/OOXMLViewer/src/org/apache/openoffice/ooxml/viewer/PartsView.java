@@ -46,25 +46,25 @@ public class PartsView
     implements TreeSelectionListener
 {
     public PartsView (
-        final DetailViewManager aDetailViewManager, 
+        final DetailViewManager aDetailViewManager,
         final OOXMLPackage aPackage)
     {
         maPackage = aPackage;
         maDetailViewManager = aDetailViewManager;
-        
+
         Initialize();
-        
+
         getSelectionModel().addTreeSelectionListener(this);
     }
-    
-    
-    
+
+
+
     private final void Initialize ()
     {
         final DefaultMutableTreeNode aRootNode = new DefaultMutableTreeNode(
             "top level relations");
         final TreeModel aModel = new DefaultTreeModel(aRootNode);
-        
+
         final Queue<IReferenceProvider> aWorklist = new LinkedList<IReferenceProvider>();
         aWorklist.add(maPackage);
         final Set<PartName> aProcessedPartNames = new TreeSet<PartName>();
@@ -72,9 +72,9 @@ public class PartsView
         setModel(aModel);
     }
 
-    
-    
-    
+
+
+
     private void CreateChildren (
         final DefaultMutableTreeNode aNode,
         final Set<PartName> aProcessedPartNames,
@@ -98,9 +98,9 @@ public class PartsView
         }
     }
 
-    
-    
-    
+
+
+
     /** Callback for clicks on the part view.
      */
     @Override
@@ -117,10 +117,10 @@ public class PartsView
                 eType);
         }
     }
-    
-    
-    
-    
+
+
+
+
 
     private PartName GetPackagePathForTreePath (final TreePath aPath)
     {

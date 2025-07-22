@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -90,8 +90,8 @@ namespace sdr
 
 			// This method is responsible for creating the graphical visualisation data derived ONLY from
             // the model data. It will be stored/buffered in mxViewIndependentPrimitive2DSequence. The default implementation
-            // creates a yellow replacement rectangle (1000, 1000, 5000, 3000) to visualize missing 
-            // implementations. All implementations have to provide basic geometry here, this is the central 
+            // creates a yellow replacement rectangle (1000, 1000, 5000, 3000) to visualize missing
+            // implementations. All implementations have to provide basic geometry here, this is the central
             // visualisation method and will also be used for BoundRect computations in the long run.
             // This means it's always an error when the default implementation is called and thus gets
             // asserted there
@@ -127,7 +127,7 @@ namespace sdr
 			bool isAnimatedInAnyViewObjectContact() const;
 
 			// Access to possible sub-hierarchy and parent. GetObjectCount() default is 0L
-			// and GetViewContact default pops up an assert since it's an error if 
+			// and GetViewContact default pops up an assert since it's an error if
 			// GetObjectCount has a result != 0 and it's not overloaded.
 			virtual sal_uInt32 GetObjectCount() const;
 			virtual ViewContact& GetViewContact(sal_uInt32 nIndex) const;

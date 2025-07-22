@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -50,7 +50,7 @@ namespace basegfx
 		BASEGFX_DLLPUBLIC void openWithGeometryChange(B2DPolygon& rCandidate);
 		BASEGFX_DLLPUBLIC void closeWithGeometryChange(B2DPolygon& rCandidate);
 
-		/**	Check if given polygon is closed. 
+		/**	Check if given polygon is closed.
 
         	This is kind of a 'classic' method to support old polygon
         	definitions.  Those old polygon definitions define the
@@ -87,7 +87,7 @@ namespace basegfx
 		BASEGFX_DLLPUBLIC B2DRange getRangeWithControlPoints(const B2DPolygon& rCandidate);
 
 		/** Get the range of a polygon
-			
+
 			This method creates the outer range of the subdivided bezier curve.
             For detailed discussion see B2DPolygon::getB2DRange()
 
@@ -123,13 +123,13 @@ namespace basegfx
 
 		// get a snippet from given polygon for absolute distances. The polygon is assumed
 		// to be opened (not closed). fFrom and fTo need to be in range [0.0 .. fLength], where
-		// fTo >= fFrom. If length is given, it is assumed the correct polygon length, 
+		// fTo >= fFrom. If length is given, it is assumed the correct polygon length,
 		// if 0.0 it is calculated using getLength(...)
 		BASEGFX_DLLPUBLIC B2DPolygon getSnippetAbsolute(const B2DPolygon& rCandidate, double fFrom, double fTo, double fLength = 0.0);
 
 		// get a snippet from given polygon for relative distances. The polygon is assumed
 		// to be opened (not closed). fFrom and fTo need to be in range [0.0 .. 1.0], where
-		// fTo >= fFrom. If length is given, it is assumed the correct polygon length, 
+		// fTo >= fFrom. If length is given, it is assumed the correct polygon length,
 		// if 0.0 it is calculated using getLength(...)
 		BASEGFX_DLLPUBLIC B2DPolygon getSnippetRelative(const B2DPolygon& rCandidate, double fFrom = 0.0, double fTo = 1.0, double fLength = 0.0);
 
@@ -162,8 +162,8 @@ namespace basegfx
 		// (if given) and the return value will contain a cut description.
 		BASEGFX_DLLPUBLIC CutFlagValue findCut(
 			const B2DPolygon& rCandidate,
-			sal_uInt32 nIndex1, sal_uInt32 nIndex2, 
-			CutFlagValue aCutFlags = CUTFLAG_DEFAULT, 
+			sal_uInt32 nIndex1, sal_uInt32 nIndex2,
+			CutFlagValue aCutFlags = CUTFLAG_DEFAULT,
 			double* pCut1 = 0L, double* pCut2 = 0L);
 
 		// This version is working with two indexed edges from different
@@ -171,7 +171,7 @@ namespace basegfx
 		BASEGFX_DLLPUBLIC CutFlagValue findCut(
 			const B2DPolygon& rCandidate1, sal_uInt32 nIndex1,
 			const B2DPolygon& rCandidate2, sal_uInt32 nIndex2,
-			CutFlagValue aCutFlags = CUTFLAG_DEFAULT, 
+			CutFlagValue aCutFlags = CUTFLAG_DEFAULT,
 			double* pCut1 = 0L, double* pCut2 = 0L);
 
 		// This version works with two points and vectors to define the
@@ -187,8 +187,8 @@ namespace basegfx
 		// value in pCut (if provided)
 		BASEGFX_DLLPUBLIC bool isPointOnEdge(
 			const B2DPoint& rPoint,
-			const B2DPoint& rEdgeStart, 
-			const B2DVector& rEdgeDelta, 
+			const B2DPoint& rEdgeStart,
+			const B2DVector& rEdgeDelta,
 			double* pCut = 0L);
 
 		/** Apply given LineDashing to given polygon
@@ -196,8 +196,8 @@ namespace basegfx
 			This method is used to cut down line polygons to the needed
 			pieces when a dashing needs to be applied.
 			It is now capable of keeping contained bezier segments.
-			It is also capable of delivering line and non-line portions 
-			depending on what target polygons You provide. This is useful 
+			It is also capable of delivering line and non-line portions
+			depending on what target polygons You provide. This is useful
 			e.g. for dashed lines with two colors.
 			If the last and the first snippet in one of the results have
 			a common start/end ppoint, they will be merged to achieve as
@@ -225,8 +225,8 @@ namespace basegfx
 			be calculated internally.
 		*/
 		BASEGFX_DLLPUBLIC void applyLineDashing(
-			const B2DPolygon& rCandidate, 
-			const ::std::vector<double>& rDotDashArray, 
+			const B2DPolygon& rCandidate,
+			const ::std::vector<double>& rDotDashArray,
 			B2DPolyPolygon* pLineTarget,
 			B2DPolyPolygon* pGapTarget = 0,
 			double fFullDashDotLen = 0.0);
@@ -237,9 +237,9 @@ namespace basegfx
 		// 2 x fDistance, and the circle around both points with radius fDistance.
 		BASEGFX_DLLPUBLIC bool isInEpsilonRange(const B2DPoint& rEdgeStart, const B2DPoint& rEdgeEnd, const B2DPoint& rTestPosition, double fDistance);
 
-		// test if point is inside epsilon-range around the given Polygon. Can be used 
-		// for HitTesting. The epsilon-range is defined to be the rectangle centered 
-        // to the given edge, using height 2 x fDistance, and the circle around both points 
+		// test if point is inside epsilon-range around the given Polygon. Can be used
+		// for HitTesting. The epsilon-range is defined to be the rectangle centered
+        // to the given edge, using height 2 x fDistance, and the circle around both points
         // with radius fDistance.
 		BASEGFX_DLLPUBLIC bool isInEpsilonRange(const B2DPolygon& rCandidate, const B2DPoint& rTestPosition, double fDistance);
 
@@ -406,7 +406,7 @@ namespace basegfx
 		// calculates if given point is on given line, taking care of the numerical epsilon
 		BASEGFX_DLLPUBLIC bool isPointOnLine(const B2DPoint& rStart, const B2DPoint& rEnd, const B2DPoint& rCandidate, bool bWithPoints = false);
 
-		// calculates if given point is on given polygon, taking care of the numerical epsilon. Uses 
+		// calculates if given point is on given polygon, taking care of the numerical epsilon. Uses
 		// isPointOnLine internally
 		BASEGFX_DLLPUBLIC bool isPointOnPolygon(const B2DPolygon& rCandidate, const B2DPoint& rPoint, bool bWithPoints = true);
 
@@ -450,7 +450,7 @@ namespace basegfx
 			preserved.
 			The polygon is subdivided if curve segments are included. That subdivision is the base
 			for the newly created points.
-			If the source is closed, the indirectly existing last edge may NOT have the 
+			If the source is closed, the indirectly existing last edge may NOT have the
 			given length.
 			If the source is open, all edges will have the given length. You may use the last
 			point of the original when You want to add the last edge Yourself.
@@ -463,7 +463,7 @@ namespace basegfx
 			original start point. Negative values are truncated to 0.0.
 
             @param fEnd
-            The maximum distance for the last point. No more points behind this distance will be created. 
+            The maximum distance for the last point. No more points behind this distance will be created.
 			Use 0.0 to process the whole polygon. Negative values are truncated to 0.0. It also
 			needs to be more or equal to fStart, else it is truncated to fStart.
 
@@ -472,12 +472,12 @@ namespace basegfx
          */
 		BASEGFX_DLLPUBLIC B2DPolygon createEdgesOfGivenLength(const B2DPolygon& rCandidate, double fLength, double fStart = 0.0, double fEnd = 0.0);
 
-		/** Create Waveline along given polygon 
+		/** Create Waveline along given polygon
             The implementation is based on createEdgesOfGivenLength and creates a curve
             segment with the given dimensions for each created line segment. The polygon
             is treated as if opened (closed state will be ignored) and only for whole
             edges a curve segment will be created (no rest handling)
-        
+
             @param rCandidate
             The polygon along which the waveline will be created
 
@@ -490,7 +490,7 @@ namespace basegfx
 		BASEGFX_DLLPUBLIC B2DPolygon createWaveline(const B2DPolygon& rCandidate, double fWaveWidth, double fWaveHeight);
 
         /** split each edge of a polygon in exactly nSubEdges equidistant edges
-            
+
             @param rCandidate
             The source polygon. If too small (no edges), nSubEdges too small (<2)
             or neither bHandleCurvedEdgesnor bHandleStraightEdges it will just be returned.
@@ -498,12 +498,12 @@ namespace basegfx
 
             @param nSubEdges
             How many edges shall be created as replacement for each single edge
-            
+
             @param bHandleCurvedEdges
             Process curved edges or not. If to handle the curved edges will be splitted
             into nSubEdges part curved edges of equidistant bezier distances. If not,
             curved edges will just be copied.
-            
+
             @param bHandleStraightEdges
             Process straight edges or not. If to handle the straight edges will be splitted
             into nSubEdges part curved edges of equidistant length. If not,
@@ -519,7 +519,7 @@ namespace basegfx
 		/** snap some polygon coordinates to discrete coordinates
 
 			This method allows to snap some polygon points to discrete (integer) values
-			which equals e.g. a snap to discrete coordinates. It will snap points of 
+			which equals e.g. a snap to discrete coordinates. It will snap points of
 			horizontal and vertical edges
 
 			@param rCandidate
@@ -535,7 +535,7 @@ namespace basegfx
         */
         BASEGFX_DLLPUBLIC bool containsOnlyHorizontalAndVerticalEdges(const B2DPolygon& rCandidate);
 
-        /// get the tangent with which the given point is entered seen from the previous 
+        /// get the tangent with which the given point is entered seen from the previous
         /// polygon path data. Take into account all stuff like closed state, zero-length edges and others.
         BASEGFX_DLLPUBLIC B2DVector getTangentEnteringPoint(const B2DPolygon& rCandidate, sal_uInt32 nIndex);
 
@@ -545,22 +545,22 @@ namespace basegfx
 
         /// converters for com::sun::star::drawing::PointSequence
         BASEGFX_DLLPUBLIC B2DPolygon UnoPointSequenceToB2DPolygon(
-            const com::sun::star::drawing::PointSequence& rPointSequenceSource, 
+            const com::sun::star::drawing::PointSequence& rPointSequenceSource,
             bool bCheckClosed = true);
         BASEGFX_DLLPUBLIC void B2DPolygonToUnoPointSequence(
-            const B2DPolygon& rPolygon, 
+            const B2DPolygon& rPolygon,
             com::sun::star::drawing::PointSequence& rPointSequenceRetval);
 
-        /* converters for com::sun::star::drawing::PointSequence and 
+        /* converters for com::sun::star::drawing::PointSequence and
            com::sun::star::drawing::FlagSequence to B2DPolygon (curved polygons)
          */
         BASEGFX_DLLPUBLIC B2DPolygon UnoPolygonBezierCoordsToB2DPolygon(
-            const com::sun::star::drawing::PointSequence& rPointSequenceSource, 
-            const com::sun::star::drawing::FlagSequence& rFlagSequenceSource, 
+            const com::sun::star::drawing::PointSequence& rPointSequenceSource,
+            const com::sun::star::drawing::FlagSequence& rFlagSequenceSource,
             bool bCheckClosed = true);
         BASEGFX_DLLPUBLIC void B2DPolygonToUnoPolygonBezierCoords(
-            const B2DPolygon& rPolyPolygon, 
-            com::sun::star::drawing::PointSequence& rPointSequenceRetval, 
+            const B2DPolygon& rPolyPolygon,
+            com::sun::star::drawing::PointSequence& rPointSequenceRetval,
             com::sun::star::drawing::FlagSequence& rFlagSequenceRetval);
 
         /** Read poly-polygon from SVG.

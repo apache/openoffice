@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -36,9 +36,9 @@ class TestBridge implements IBridge {
 	static public final boolean DEBUG = false;
 
 	Hashtable _hashtable = new Hashtable();
-	
+
 	IEnvironment _source ;//= new com.sun.star.lib.uno.environments.java.java_environment(null);
-	
+
 
 	class MyEnv implements IEnvironment {
 		public Object getContext() {
@@ -71,7 +71,7 @@ class TestBridge implements IBridge {
 		public void list() {
 		}
 	}
-	
+
 	TestBridge() {
 		_source = new MyEnv();
 	}
@@ -88,23 +88,23 @@ class TestBridge implements IBridge {
 
 	public Object mapInterfaceFrom(Object object, Type type) {
 		String oid = (String)object;
-		
+
 		return _hashtable.get(oid);
 	}
-	
+
 	public IEnvironment getSourceEnvironment() {
 		return _source;
 	}
-	
+
 	public IEnvironment getTargetEnvironment() {
 		return null;
 	}
-	
+
 	public void acquire() {}
 
 	public void release() {}
-	
+
 	public void reset() throws IOException {}
-	
+
 	public void dispose() throws InterruptedException, IOException {}
 }

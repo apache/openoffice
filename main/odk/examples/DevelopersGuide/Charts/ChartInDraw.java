@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -133,7 +133,7 @@ public class ChartInDraw
     public void unlockControllers()
         throws RuntimeException
     {
-        ((XModel) UnoRuntime.queryInterface( XModel.class, maChartDocument )).unlockControllers();        
+        ((XModel) UnoRuntime.queryInterface( XModel.class, maChartDocument )).unlockControllers();
     }
 
     // ____________________
@@ -215,7 +215,7 @@ public class ChartInDraw
         aDiaProp.setPropertyValue( "Deep", aTrue );
         // from Chart3DBarProperties:
         aDiaProp.setPropertyValue( "SolidType", new Integer( ChartSolidType.CYLINDER ));
-        
+
         // change floor color to Magenta6
         XPropertySet aFloor = ((X3DDisplay) UnoRuntime.queryInterface(
                                    X3DDisplay.class, maDiagram )).getFloor();
@@ -278,13 +278,13 @@ public class ChartInDraw
 
         // set direction
         com.sun.star.drawing.Direction3D aDirection = new com.sun.star.drawing.Direction3D();
-  
+
         aDirection.DirectionX = -0.75;
         aDirection.DirectionY =  0.5;
         aDirection.DirectionZ =  0.5;
 
         aDiaProp.setPropertyValue( "D3DSceneLightDirection1", aDirection );
-        aDiaProp.setPropertyValue( "D3DSceneLightOn1", new Boolean( true ));        
+        aDiaProp.setPropertyValue( "D3DSceneLightOn1", new Boolean( true ));
     }
 
     // ______________________________

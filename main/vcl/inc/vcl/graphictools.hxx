@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -60,29 +60,29 @@ class VCL_DLLPUBLIC SvtGraphicStroke
 {
 public:
     /// Style for open stroke ends
-    enum CapType 
+    enum CapType
     {
         /// No additional cap
-        capButt=0, 
+        capButt=0,
         /// Half-round cap at the line end, the center lying at the end point
-        capRound, 
+        capRound,
         /// Half-square cap at the line end, the center lying at the end point
         capSquare
     };
     /// Style for joins of individual stroke segments
-    enum JoinType 
+    enum JoinType
     {
         /// Extend segment edges, until they cross
-        joinMiter=0, 
+        joinMiter=0,
         /// Connect segments by a filled round arc
-        joinRound, 
+        joinRound,
         /// Connect segments by a direct straight line
-        joinBevel, 
+        joinBevel,
         /// Perform no join, leads to visible gaps between thick line segments
         joinNone
     };
     enum
-    { 
+    {
         /// Width of stroke start/end arrow to exactly fit the joining stroke
         normalizedArrowWidth=65536
     };
@@ -244,7 +244,7 @@ public:
         	one. The part of the scanline where the winding number is
         	non-zero gets filled.
          */
-        fillNonZero=0, 
+        fillNonZero=0,
         /** Even-odd fill rule
 
         	Fill shape scanline-wise. Starting at the left, count the
@@ -257,11 +257,11 @@ public:
     enum FillType
     {
         /// Fill with a specified solid color
-        fillSolid=0, 
+        fillSolid=0,
         /// Fill with the specified gradient
-        fillGradient, 
+        fillGradient,
         /// Fill with the specified hatch
-        fillHatch, 
+        fillHatch,
         /// Fill with the specified texture (a Graphic object)
         fillTexture
     };
@@ -269,9 +269,9 @@ public:
     enum HatchType
     {
         /// horizontal parallel lines, one unit apart
-        hatchSingle=0, 
+        hatchSingle=0,
         /// horizontal and vertical orthogonally crossing lines, one unit apart
-        hatchDouble, 
+        hatchDouble,
         /// three crossing lines, like HatchType::hatchDouble, but
         /// with an additional diagonal line, rising to the upper
         /// right corner. The first diagonal line goes through the
@@ -371,7 +371,7 @@ public:
     Color			getGradient1stColor	() const;
     /// Get end color of the gradient
     Color			getGradient2ndColor	() const;
-    /** Get the numbers of steps to render the gradient. 
+    /** Get the numbers of steps to render the gradient.
 
         @return the step count. gradientStepsInfinite means infinitely many.
     */
@@ -390,7 +390,7 @@ public:
     // mutators
     /// Set path to fill
     void 	setPath				( const PolyPolygon& rPath );
-    /// Set color used for solid fills    
+    /// Set color used for solid fills
     void 	setFillColor		( Color aFillColor );
     /** Set stroke transparency
 
@@ -425,7 +425,7 @@ public:
     void	setGradient1stColor	( Color aColor );
     /// Set end color of the gradient
     void	setGradient2ndColor	( Color aColor );
-    /** Set the numbers of steps to render the gradient. 
+    /** Set the numbers of steps to render the gradient.
 
         @param aCount
         The step count. gradientStepsInfinite means use infinitely many.

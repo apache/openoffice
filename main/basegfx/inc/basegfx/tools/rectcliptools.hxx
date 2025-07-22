@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -32,7 +32,7 @@ namespace basegfx
 {
 	namespace tools
 	{
-        namespace RectClipFlags 
+        namespace RectClipFlags
         {
             static const sal_uInt32 LEFT   = (sal_Int32)0x01;
             static const sal_uInt32 RIGHT  = (sal_Int32)0x02;
@@ -48,9 +48,9 @@ namespace basegfx
             outside one or more of the four half planes defining the
             rectangle (see RectClipFlags for possible values)
          */
-		template< class Point, class Rect > inline 
+		template< class Point, class Rect > inline
            sal_uInt32 getCohenSutherlandClipFlags( const Point& rP,
-                                                   const Rect&  rR ) 
+                                                   const Rect&  rR )
 		{
 			// maxY | minY | maxX | minX
 			sal_uInt32 clip  = (rP.getX() < rR.getMinX()) << 0;

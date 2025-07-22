@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -54,17 +54,17 @@ private:
 	sal_Bool					bImported;
 	sal_Bool					bModified;
 	sal_Bool					bThemeNameFromResource;
-							
+
 							GalleryThemeEntry();
 	INetURLObject			ImplGetURLIgnoreCase( const INetURLObject& rURL ) const;
-							
-public:						
-							
+
+public:
+
 							GalleryThemeEntry( const INetURLObject& rBaseURL, const String& rName,
 											   sal_uInt32 nFileNumber, sal_Bool bReadOnly, sal_Bool bImported,
 											   sal_Bool bNewFile, sal_uInt32 nId, sal_Bool bThemeNameFromResource );
 							~GalleryThemeEntry() {};
-							
+
 	const String&			GetThemeName() const { return aName; }
 	sal_uInt32					GetFileNumber() const { return nFileNumber; }
 
@@ -75,15 +75,15 @@ public:
 	sal_Bool					IsImported() const { return bImported; }
 	sal_Bool					IsReadOnly() const { return bReadOnly; }
 	sal_Bool					IsDefault() const;
-							
+
 	sal_Bool					IsHidden() const { return aName.SearchAscii( "private://gallery/hidden/" ) == 0; }
-							
+
 	sal_Bool					IsModified() const { return bModified; }
 	void					SetModified( sal_Bool bSet ) { bModified = ( bSet && !IsImported() && !IsReadOnly() ); }
-							
+
 	void					SetName( const String& rNewName );
 	sal_Bool					IsNameFromResource() const { return bThemeNameFromResource; }
-							
+
 	sal_uInt32					GetId() const { return nId; }
 	void					SetId( sal_uInt32 nNewId, sal_Bool bResetThemeName );
 };
@@ -131,12 +131,12 @@ private:
 	rtl_TextEncoding			nReadTextEncoding;
 	sal_uIntPtr						nLastFileNumber;
 	sal_Bool						bMultiPath;
-								
+
 	void						ImplLoad( const String& rMultiPath );
 	void						ImplLoadSubDirs( const INetURLObject& rBaseURL, sal_Bool& rbIsReadOnly );
 	void						ImplLoadImports();
 	void 						ImplWriteImportList();
-	
+
 	SVX_DLLPUBLIC GalleryThemeEntry*			ImplGetThemeEntry( const String& rThemeName );
 	GalleryThemeEntry* 			ImplGetThemeEntry( sal_uIntPtr nThemeId );
 	GalleryImportThemeEntry*	ImplGetImportThemeEntry( const String& rImportName );
@@ -150,11 +150,11 @@ private:
 public:
 
 	SVX_DLLPUBLIC static Gallery* GetGalleryInstance();
-								
+
 	sal_uIntPtr					GetThemeCount() const { return aThemeList.Count(); }
 	const GalleryThemeEntry*	GetThemeInfo( sal_uIntPtr nPos ) { return aThemeList.GetObject( nPos ); }
 	const GalleryThemeEntry*	GetThemeInfo( const String& rThemeName ) { return ImplGetThemeEntry( rThemeName ); }
-	
+
 	SVX_DLLPUBLIC sal_Bool			HasTheme( const String& rThemeName );
 	String						GetThemeName( sal_uIntPtr nThemeId ) const;
 
@@ -169,10 +169,10 @@ public:
 public:
 
 	INetURLObject				GetImportURL( const String& rThemeName );
-	
+
 	const INetURLObject&		GetUserURL() const { return aUserURL; }
 	const INetURLObject&		GetRelativeURL() const { return aRelURL; }
-	
+
 	sal_Bool						IsMultiPath() const { return bMultiPath; }
 };
 

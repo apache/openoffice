@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -40,7 +40,7 @@ public class _XSheetOutline extends MultiMethodTest {
     public XSheetOutline oObj = null;
     CellRangeAddress address = null;
     CellRangeAddress subaddress = null;
-    
+
     public void before() {
         address = (CellRangeAddress)tEnv.getObjRelation("CellRangeAddress");
         subaddress = (CellRangeAddress)tEnv.getObjRelation("CellRangeSubAddress");
@@ -49,7 +49,7 @@ public class _XSheetOutline extends MultiMethodTest {
         if (subaddress == null)
             throw new StatusException(Status.failed("Object relation CellRangeSubAddress not found"));
     }
-    
+
     public void _autoOutline() {
         executeMethod("ungroup()");
         boolean result = false;
@@ -61,7 +61,7 @@ public class _XSheetOutline extends MultiMethodTest {
         result &= !isCellShown(subaddress);
         tRes.tested("autoOutline()", result);
     }
-    
+
     public void _clearOutline() {
         executeMethod("autoOutline()");
         boolean result = false;
@@ -71,13 +71,13 @@ public class _XSheetOutline extends MultiMethodTest {
         result &= isCellShown(subaddress);
         tRes.tested("clearOutline()", result);
     }
-    
+
     public void _group() {
         oObj.group(address, TableOrientation.COLUMNS);
         oObj.group(address, TableOrientation.ROWS);
         tRes.tested("group()", true);
     }
-    
+
     public void _ungroup() {
         executeMethod("showDetail()");
         oObj.ungroup(address, TableOrientation.COLUMNS);
@@ -91,13 +91,13 @@ public class _XSheetOutline extends MultiMethodTest {
         oObj.hideDetail(address);
         tRes.tested("hideDetail()", !isCellShown(address));
     }
-    
+
     public void _showDetail() {
         executeMethod("showLevel()");
         oObj.showDetail(address);
         tRes.tested("showDetail()", isCellShown(address));
     }
-    
+
     public void _showLevel() {
         executeMethod("hideDetail()");
         boolean result = false;
@@ -106,11 +106,11 @@ public class _XSheetOutline extends MultiMethodTest {
         result = isCellShown(address);
         oObj.showLevel((short)0, TableOrientation.COLUMNS);
         oObj.showLevel((short)0, TableOrientation.ROWS);
-        
+
         result &= !isCellShown(address);
         tRes.tested("showLevel()", result);
     }
-    
+
     private boolean isCellShown(CellRangeAddress range) {
         boolean isNotShown = true;
         XCellRangesQuery xCellRangesQuery = (XCellRangesQuery)UnoRuntime.queryInterface(XCellRangesQuery.class, oObj);
@@ -127,9 +127,9 @@ public class _XSheetOutline extends MultiMethodTest {
         }
         return !isNotShown;
     }
-    
+
     private boolean dotIsOutsideRange(int dotRow, int dotColumn, CellRangeAddress range) {
-        log.println("Checking dot(" + dotRow + "," + dotColumn + ") against row[" 
+        log.println("Checking dot(" + dotRow + "," + dotColumn + ") against row["
                     + range.StartRow + ":" + range.EndRow + "]  column["
                     + range.StartColumn + ":" + range.EndColumn + "]");
         boolean isInside = true;

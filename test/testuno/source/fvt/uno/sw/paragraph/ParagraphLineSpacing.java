@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 package fvt.uno.sw.paragraph;
@@ -69,12 +69,12 @@ public class ParagraphLineSpacing {
 		// create text cursor for selecting and formatting text
 		XTextCursor xTextCursor = xText.createTextCursor();
 		XPropertySet xCursorProps = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, xTextCursor);
-		//set paragraph line spacing      
+		//set paragraph line spacing
 		LineSpacing lineSpacing = new LineSpacing();
 		lineSpacing.Mode = LineSpacingMode.FIX;
 		lineSpacing.Height = 5000;
 		xCursorProps.setPropertyValue("ParaLineSpacing",lineSpacing);
-		//save to odt 
+		//save to odt
 		XStorable xStorable_odt = (XStorable) UnoRuntime.queryInterface(XStorable.class, xTextDocument);
 		PropertyValue[] aStoreProperties_odt = new PropertyValue[2];
 		aStoreProperties_odt[0] = new PropertyValue();
@@ -84,7 +84,7 @@ public class ParagraphLineSpacing {
 		aStoreProperties_odt[1].Name = "FilterName";
 		aStoreProperties_odt[1].Value = "StarOffice XML (Writer)";
 		xStorable_odt.storeToURL(FileUtil.getUrl(Testspace.getPath("output/test.odt")), aStoreProperties_odt);
-		//save to doc 
+		//save to doc
 		XStorable xStorable_doc = (XStorable) UnoRuntime.queryInterface(XStorable.class, xTextDocument);
 		PropertyValue[] aStoreProperties_doc = new PropertyValue[2];
 		aStoreProperties_doc[0] = new PropertyValue();
@@ -93,7 +93,7 @@ public class ParagraphLineSpacing {
 		aStoreProperties_doc[0].Value = true;
 		aStoreProperties_doc[1].Name = "FilterName";
 		aStoreProperties_doc[1].Value = "MS Word 97";
-		xStorable_doc.storeToURL(FileUtil.getUrl(Testspace.getPath("output/test.doc")), aStoreProperties_doc);	
+		xStorable_doc.storeToURL(FileUtil.getUrl(Testspace.getPath("output/test.doc")), aStoreProperties_doc);
 		app.closeDocument(xTextDocument);
 
 		//reopen the document and assert paragraph line spacing
@@ -102,7 +102,7 @@ public class ParagraphLineSpacing {
 		LineSpacing paraLineSpacing_assert_odt=(LineSpacing) UnoRuntime.queryInterface(LineSpacing.class, xCursorProps_assert_odt.getPropertyValue("ParaLineSpacing"));
 		assertEquals("assert first paragraph line spacing is fix",LineSpacingMode.FIX,paraLineSpacing_assert_odt.Mode);
 		assertEquals("assert first paragraph line spacing is fix",5001,paraLineSpacing_assert_odt.Height);
-		
+
 		//reopen the document and assert paragraph line spacing
 		XTextDocument assertDocument_doc=(XTextDocument)UnoRuntime.queryInterface(XTextDocument.class, app.loadDocument(Testspace.getPath("output/test.doc")));
 		XPropertySet xCursorProps_assert_doc = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class,assertDocument_doc.getText().createTextCursor());
@@ -128,12 +128,12 @@ public class ParagraphLineSpacing {
 		// create text cursor for selecting and formatting text
 		XTextCursor xTextCursor = xText.createTextCursor();
 		XPropertySet xCursorProps = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, xTextCursor);
-		//set paragraph line spacing      
+		//set paragraph line spacing
 		LineSpacing lineSpacing = new LineSpacing();
 		lineSpacing.Mode = LineSpacingMode.LEADING;
 		lineSpacing.Height = 5000;
 		xCursorProps.setPropertyValue("ParaLineSpacing",lineSpacing);
-		//save to odt 
+		//save to odt
 		XStorable xStorable_odt = (XStorable) UnoRuntime.queryInterface(XStorable.class, xTextDocument);
 		PropertyValue[] aStoreProperties_odt = new PropertyValue[2];
 		aStoreProperties_odt[0] = new PropertyValue();
@@ -143,7 +143,7 @@ public class ParagraphLineSpacing {
 		aStoreProperties_odt[1].Name = "FilterName";
 		aStoreProperties_odt[1].Value = "StarOffice XML (Writer)";
 		xStorable_odt.storeToURL(FileUtil.getUrl(Testspace.getPath("output/test.odt")), aStoreProperties_odt);
-		//save to doc 
+		//save to doc
 		XStorable xStorable_doc = (XStorable) UnoRuntime.queryInterface(XStorable.class, xTextDocument);
 		PropertyValue[] aStoreProperties_doc = new PropertyValue[2];
 		aStoreProperties_doc[0] = new PropertyValue();
@@ -152,18 +152,18 @@ public class ParagraphLineSpacing {
 		aStoreProperties_doc[0].Value = true;
 		aStoreProperties_doc[1].Name = "FilterName";
 		aStoreProperties_doc[1].Value = "MS Word 97";
-		xStorable_doc.storeToURL(FileUtil.getUrl(Testspace.getPath("output/test.doc")), aStoreProperties_doc);	
+		xStorable_doc.storeToURL(FileUtil.getUrl(Testspace.getPath("output/test.doc")), aStoreProperties_doc);
 		app.closeDocument(xTextDocument);
 
-		//reopen the document 
+		//reopen the document
 		XTextDocument assertDocument_odt=(XTextDocument)UnoRuntime.queryInterface(XTextDocument.class, app.loadDocument(Testspace.getPath("output/test.odt")));
 		XPropertySet xCursorProps_assert_odt = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class,assertDocument_odt.getText().createTextCursor());
 		LineSpacing paraLineSpacing_assert_odt=(LineSpacing) UnoRuntime.queryInterface(LineSpacing.class, xCursorProps_assert_odt.getPropertyValue("ParaLineSpacing"));
 		//verify paragraph line spacing property
 		assertEquals("assert first paragraph line spacing is fix",LineSpacingMode.LEADING,paraLineSpacing_assert_odt.Mode);
 		assertEquals("assert first paragraph line spacing is fix",5001,paraLineSpacing_assert_odt.Height);
-		
-		//reopen the document 
+
+		//reopen the document
 		XTextDocument assertDocument_doc=(XTextDocument)UnoRuntime.queryInterface(XTextDocument.class, app.loadDocument(Testspace.getPath("output/test.doc")));
 		XPropertySet xCursorProps_assert_doc = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class,assertDocument_doc.getText().createTextCursor());
 		LineSpacing paraLineSpacing_assert_doc=(LineSpacing) UnoRuntime.queryInterface(LineSpacing.class, xCursorProps_assert_doc.getPropertyValue("ParaLineSpacing"));
@@ -189,12 +189,12 @@ public class ParagraphLineSpacing {
 		// create text cursor for selecting and formatting text
 		XTextCursor xTextCursor = xText.createTextCursor();
 		XPropertySet xCursorProps = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, xTextCursor);
-		//set paragraph line spacing      
+		//set paragraph line spacing
 		LineSpacing lineSpacing = new LineSpacing();
 		lineSpacing.Mode = LineSpacingMode.MINIMUM;
 		lineSpacing.Height = 5000;
 		xCursorProps.setPropertyValue("ParaLineSpacing",lineSpacing);
-		//save to odt 
+		//save to odt
 		XStorable xStorable_odt = (XStorable) UnoRuntime.queryInterface(XStorable.class, xTextDocument);
 		PropertyValue[] aStoreProperties_odt = new PropertyValue[2];
 		aStoreProperties_odt[0] = new PropertyValue();
@@ -204,7 +204,7 @@ public class ParagraphLineSpacing {
 		aStoreProperties_odt[1].Name = "FilterName";
 		aStoreProperties_odt[1].Value = "StarOffice XML (Writer)";
 		xStorable_odt.storeToURL(FileUtil.getUrl(Testspace.getPath("output/test.odt")), aStoreProperties_odt);
-		//save to doc 
+		//save to doc
 		XStorable xStorable_doc = (XStorable) UnoRuntime.queryInterface(XStorable.class, xTextDocument);
 		PropertyValue[] aStoreProperties_doc = new PropertyValue[2];
 		aStoreProperties_doc[0] = new PropertyValue();
@@ -213,18 +213,18 @@ public class ParagraphLineSpacing {
 		aStoreProperties_doc[0].Value = true;
 		aStoreProperties_doc[1].Name = "FilterName";
 		aStoreProperties_doc[1].Value = "MS Word 97";
-		xStorable_doc.storeToURL(FileUtil.getUrl(Testspace.getPath("output/test.doc")), aStoreProperties_doc);	
+		xStorable_doc.storeToURL(FileUtil.getUrl(Testspace.getPath("output/test.doc")), aStoreProperties_doc);
 		app.closeDocument(xTextDocument);
 
-		//reopen the document 
+		//reopen the document
 		XTextDocument assertDocument_odt=(XTextDocument)UnoRuntime.queryInterface(XTextDocument.class, app.loadDocument(Testspace.getPath("output/test.odt")));
 		XPropertySet xCursorProps_assert_odt = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class,assertDocument_odt.getText().createTextCursor());
 		LineSpacing paraLineSpacing_assert_odt=(LineSpacing) UnoRuntime.queryInterface(LineSpacing.class, xCursorProps_assert_odt.getPropertyValue("ParaLineSpacing"));
 		//verify paragraph line spacing property
 		assertEquals("assert first paragraph line spacing is fix",LineSpacingMode.MINIMUM,paraLineSpacing_assert_odt.Mode);
 		assertEquals("assert first paragraph line spacing is fix",5001,paraLineSpacing_assert_odt.Height);
-		
-		//reopen the document 
+
+		//reopen the document
 		XTextDocument assertDocument_doc=(XTextDocument)UnoRuntime.queryInterface(XTextDocument.class, app.loadDocument(Testspace.getPath("output/test.doc")));
 		XPropertySet xCursorProps_assert_doc = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class,assertDocument_doc.getText().createTextCursor());
 		LineSpacing paraLineSpacing_assert_doc=(LineSpacing) UnoRuntime.queryInterface(LineSpacing.class, xCursorProps_assert_doc.getPropertyValue("ParaLineSpacing"));
@@ -250,12 +250,12 @@ public class ParagraphLineSpacing {
 		// create text cursor for selecting and formatting text
 		XTextCursor xTextCursor = xText.createTextCursor();
 		XPropertySet xCursorProps = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, xTextCursor);
-		//set paragraph line spacing      
+		//set paragraph line spacing
 		LineSpacing lineSpacing = new LineSpacing();
 		lineSpacing.Mode = LineSpacingMode.PROP;
 		lineSpacing.Height = 150;
 		xCursorProps.setPropertyValue("ParaLineSpacing",lineSpacing);
-		//save to odt 
+		//save to odt
 		XStorable xStorable_odt = (XStorable) UnoRuntime.queryInterface(XStorable.class, xTextDocument);
 		PropertyValue[] aStoreProperties_odt = new PropertyValue[2];
 		aStoreProperties_odt[0] = new PropertyValue();
@@ -265,7 +265,7 @@ public class ParagraphLineSpacing {
 		aStoreProperties_odt[1].Name = "FilterName";
 		aStoreProperties_odt[1].Value = "StarOffice XML (Writer)";
 		xStorable_odt.storeToURL(FileUtil.getUrl(Testspace.getPath("output/test.odt")), aStoreProperties_odt);
-		//save to doc 
+		//save to doc
 		XStorable xStorable_doc = (XStorable) UnoRuntime.queryInterface(XStorable.class, xTextDocument);
 		PropertyValue[] aStoreProperties_doc = new PropertyValue[2];
 		aStoreProperties_doc[0] = new PropertyValue();
@@ -274,18 +274,18 @@ public class ParagraphLineSpacing {
 		aStoreProperties_doc[0].Value = true;
 		aStoreProperties_doc[1].Name = "FilterName";
 		aStoreProperties_doc[1].Value = "MS Word 97";
-		xStorable_doc.storeToURL(FileUtil.getUrl(Testspace.getPath("output/test.doc")), aStoreProperties_doc);	
+		xStorable_doc.storeToURL(FileUtil.getUrl(Testspace.getPath("output/test.doc")), aStoreProperties_doc);
 		app.closeDocument(xTextDocument);
 
-		//reopen the document 
+		//reopen the document
 		XTextDocument assertDocument_odt=(XTextDocument)UnoRuntime.queryInterface(XTextDocument.class, app.loadDocument(Testspace.getPath("output/test.odt")));
 		XPropertySet xCursorProps_assert_odt = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class,assertDocument_odt.getText().createTextCursor());
 		LineSpacing paraLineSpacing_assert_odt=(LineSpacing) UnoRuntime.queryInterface(LineSpacing.class, xCursorProps_assert_odt.getPropertyValue("ParaLineSpacing"));
 		//verify paragraph line spacing property
 		assertEquals("assert line spacing is prop",LineSpacingMode.PROP,paraLineSpacing_assert_odt.Mode);
 		assertEquals("assert line spacing height is 150",150,paraLineSpacing_assert_odt.Height);
-		
-		//reopen the document 
+
+		//reopen the document
 		XTextDocument assertDocument_doc=(XTextDocument)UnoRuntime.queryInterface(XTextDocument.class, app.loadDocument(Testspace.getPath("output/test.doc")));
 		XPropertySet xCursorProps_assert_doc = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class,assertDocument_doc.getText().createTextCursor());
 		LineSpacing paraLineSpacing_assert_doc=(LineSpacing) UnoRuntime.queryInterface(LineSpacing.class, xCursorProps_assert_doc.getPropertyValue("ParaLineSpacing"));
@@ -311,11 +311,11 @@ public class ParagraphLineSpacing {
 		// create text cursor for selecting and formatting text
 		XTextCursor xTextCursor = xText.createTextCursor();
 		XPropertySet xCursorProps = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, xTextCursor);
-		//set paragraph line spacing      
+		//set paragraph line spacing
 		LineSpacing lineSpacing = new LineSpacing();
 		lineSpacing.Height = 100;
 		xCursorProps.setPropertyValue("ParaLineSpacing",lineSpacing);
-		//save to odt 
+		//save to odt
 		XStorable xStorable_odt = (XStorable) UnoRuntime.queryInterface(XStorable.class, xTextDocument);
 		PropertyValue[] aStoreProperties_odt = new PropertyValue[2];
 		aStoreProperties_odt[0] = new PropertyValue();
@@ -325,7 +325,7 @@ public class ParagraphLineSpacing {
 		aStoreProperties_odt[1].Name = "FilterName";
 		aStoreProperties_odt[1].Value = "StarOffice XML (Writer)";
 		xStorable_odt.storeToURL(FileUtil.getUrl(Testspace.getPath("output/test.odt")), aStoreProperties_odt);
-		//save to doc 
+		//save to doc
 		XStorable xStorable_doc = (XStorable) UnoRuntime.queryInterface(XStorable.class, xTextDocument);
 		PropertyValue[] aStoreProperties_doc = new PropertyValue[2];
 		aStoreProperties_doc[0] = new PropertyValue();
@@ -334,17 +334,17 @@ public class ParagraphLineSpacing {
 		aStoreProperties_doc[0].Value = true;
 		aStoreProperties_doc[1].Name = "FilterName";
 		aStoreProperties_doc[1].Value = "MS Word 97";
-		xStorable_doc.storeToURL(FileUtil.getUrl(Testspace.getPath("output/test.doc")), aStoreProperties_doc);	
+		xStorable_doc.storeToURL(FileUtil.getUrl(Testspace.getPath("output/test.doc")), aStoreProperties_doc);
 		app.closeDocument(xTextDocument);
 
-		//reopen the document 
+		//reopen the document
 		XTextDocument assertDocument_odt=(XTextDocument)UnoRuntime.queryInterface(XTextDocument.class, app.loadDocument(Testspace.getPath("output/test.odt")));
 		XPropertySet xCursorProps_assert_odt = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class,assertDocument_odt.getText().createTextCursor());
 		LineSpacing paraLineSpacing_assert_odt=(LineSpacing) UnoRuntime.queryInterface(LineSpacing.class, xCursorProps_assert_odt.getPropertyValue("ParaLineSpacing"));
 		//verify paragraph line spacing property
 		assertEquals("assert first paragraph line spacing is single",100,paraLineSpacing_assert_odt.Height);
-		
-		//reopen the document 
+
+		//reopen the document
 		XTextDocument assertDocument_doc=(XTextDocument)UnoRuntime.queryInterface(XTextDocument.class, app.loadDocument(Testspace.getPath("output/test.doc")));
 		XPropertySet xCursorProps_assert_doc = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class,assertDocument_doc.getText().createTextCursor());
 		LineSpacing paraLineSpacing_assert_doc=(LineSpacing) UnoRuntime.queryInterface(LineSpacing.class, xCursorProps_assert_doc.getPropertyValue("ParaLineSpacing"));
@@ -369,11 +369,11 @@ public class ParagraphLineSpacing {
 		// create text cursor for selecting and formatting text
 		XTextCursor xTextCursor = xText.createTextCursor();
 		XPropertySet xCursorProps = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, xTextCursor);
-		//set paragraph line spacing      
+		//set paragraph line spacing
 		LineSpacing lineSpacing = new LineSpacing();
 		lineSpacing.Height = 200;
 		xCursorProps.setPropertyValue("ParaLineSpacing",lineSpacing);
-		//save to odt 
+		//save to odt
 		XStorable xStorable_odt = (XStorable) UnoRuntime.queryInterface(XStorable.class, xTextDocument);
 		PropertyValue[] aStoreProperties_odt = new PropertyValue[2];
 		aStoreProperties_odt[0] = new PropertyValue();
@@ -383,7 +383,7 @@ public class ParagraphLineSpacing {
 		aStoreProperties_odt[1].Name = "FilterName";
 		aStoreProperties_odt[1].Value = "StarOffice XML (Writer)";
 		xStorable_odt.storeToURL(FileUtil.getUrl(Testspace.getPath("output/test.odt")), aStoreProperties_odt);
-		//save to doc 
+		//save to doc
 		XStorable xStorable_doc = (XStorable) UnoRuntime.queryInterface(XStorable.class, xTextDocument);
 		PropertyValue[] aStoreProperties_doc = new PropertyValue[2];
 		aStoreProperties_doc[0] = new PropertyValue();
@@ -392,7 +392,7 @@ public class ParagraphLineSpacing {
 		aStoreProperties_doc[0].Value = true;
 		aStoreProperties_doc[1].Name = "FilterName";
 		aStoreProperties_doc[1].Value = "MS Word 97";
-		xStorable_doc.storeToURL(FileUtil.getUrl(Testspace.getPath("output/test.doc")), aStoreProperties_doc);	
+		xStorable_doc.storeToURL(FileUtil.getUrl(Testspace.getPath("output/test.doc")), aStoreProperties_doc);
 		app.closeDocument(xTextDocument);
 
 		//reopen the document and assert line spacing
@@ -401,7 +401,7 @@ public class ParagraphLineSpacing {
 		LineSpacing paraLineSpacing_assert_odt=(LineSpacing) UnoRuntime.queryInterface(LineSpacing.class, xCursorProps_assert_odt.getPropertyValue("ParaLineSpacing"));
 		//verify paragraph line spacing property
 		assertEquals("assert first paragraph line spacing is single",200,paraLineSpacing_assert_odt.Height);
-		
+
 		//reopen the document and assert line spacing
 		XTextDocument assertDocument_doc=(XTextDocument)UnoRuntime.queryInterface(XTextDocument.class, app.loadDocument(Testspace.getPath("output/test.doc")));
 		XPropertySet xCursorProps_assert_doc = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class,assertDocument_doc.getText().createTextCursor());
@@ -427,11 +427,11 @@ public class ParagraphLineSpacing {
 		// create text cursor for selecting and formatting text
 		XTextCursor xTextCursor = xText.createTextCursor();
 		XPropertySet xCursorProps = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, xTextCursor);
-		//set paragraph line spacing      
+		//set paragraph line spacing
 		LineSpacing lineSpacing = new LineSpacing();
 		lineSpacing.Height = 150;
 		xCursorProps.setPropertyValue("ParaLineSpacing",lineSpacing);
-		//save to odt 
+		//save to odt
 		XStorable xStorable_odt = (XStorable) UnoRuntime.queryInterface(XStorable.class, xTextDocument);
 		PropertyValue[] aStoreProperties_odt = new PropertyValue[2];
 		aStoreProperties_odt[0] = new PropertyValue();
@@ -441,7 +441,7 @@ public class ParagraphLineSpacing {
 		aStoreProperties_odt[1].Name = "FilterName";
 		aStoreProperties_odt[1].Value = "StarOffice XML (Writer)";
 		xStorable_odt.storeToURL(FileUtil.getUrl(Testspace.getPath("output/test.odt")), aStoreProperties_odt);
-		//save to doc 
+		//save to doc
 		XStorable xStorable_doc = (XStorable) UnoRuntime.queryInterface(XStorable.class, xTextDocument);
 		PropertyValue[] aStoreProperties_doc = new PropertyValue[2];
 		aStoreProperties_doc[0] = new PropertyValue();
@@ -450,17 +450,17 @@ public class ParagraphLineSpacing {
 		aStoreProperties_doc[0].Value = true;
 		aStoreProperties_doc[1].Name = "FilterName";
 		aStoreProperties_doc[1].Value = "MS Word 97";
-		xStorable_doc.storeToURL(FileUtil.getUrl(Testspace.getPath("output/test.doc")), aStoreProperties_doc);	
+		xStorable_doc.storeToURL(FileUtil.getUrl(Testspace.getPath("output/test.doc")), aStoreProperties_doc);
 		app.closeDocument(xTextDocument);
 
-		//reopen the document 
+		//reopen the document
 		XTextDocument assertDocument_odt=(XTextDocument)UnoRuntime.queryInterface(XTextDocument.class, app.loadDocument(Testspace.getPath("output/test.odt")));
 		XPropertySet xCursorProps_assert_odt = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class,assertDocument_odt.getText().createTextCursor());
 		LineSpacing paraLineSpacing_assert_odt=(LineSpacing) UnoRuntime.queryInterface(LineSpacing.class, xCursorProps_assert_odt.getPropertyValue("ParaLineSpacing"));
 		//verify paragraph line spacing property
 		assertEquals("assert first paragraph line spacing is single",150,paraLineSpacing_assert_odt.Height);
-		
-		//reopen the document 
+
+		//reopen the document
 		XTextDocument assertDocument_doc=(XTextDocument)UnoRuntime.queryInterface(XTextDocument.class, app.loadDocument(Testspace.getPath("output/test.doc")));
 		XPropertySet xCursorProps_assert_doc = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class,assertDocument_doc.getText().createTextCursor());
 		LineSpacing paraLineSpacing_assert_doc=(LineSpacing) UnoRuntime.queryInterface(LineSpacing.class, xCursorProps_assert_doc.getPropertyValue("ParaLineSpacing"));

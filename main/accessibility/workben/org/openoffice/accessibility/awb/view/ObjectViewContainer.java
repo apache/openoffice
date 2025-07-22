@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -122,7 +122,7 @@ public class ObjectViewContainer
                 Class aViewClass = (Class)maViewTemplates.elementAt (i);
                 Method aCreateMethod = aViewClass.getDeclaredMethod (
                     "Create", new Class[] {
-                        ObjectViewContainer.class, 
+                        ObjectViewContainer.class,
                         XAccessibleContext.class});
                 if (aCreateMethod != null)
                 {
@@ -133,13 +133,13 @@ public class ObjectViewContainer
                 }
             }
             catch (NoSuchMethodException e)
-            {System.err.println ("Caught exception while creating view " 
+            {System.err.println ("Caught exception while creating view "
                 + i + " : " + e);}
             catch (IllegalAccessException e)
-            {System.err.println ("Caught exception while creating view " 
+            {System.err.println ("Caught exception while creating view "
                 + i + " : " + e);}
             catch (InvocationTargetException e)
-            {System.err.println ("Caught exception while creating view " 
+            {System.err.println ("Caught exception while creating view "
                 + i + " : " + e);}
         }
 
@@ -223,7 +223,7 @@ public class ObjectViewContainer
     /** Update the layout manager by setting the vertical weight of the
         bottom entry to 1 and so make it strech to over the available
         space.
-        
+
     */
     private void UpdateLayoutManager ()
     {
@@ -246,10 +246,10 @@ public class ObjectViewContainer
     */
     public void notifyEvent (final AccessibleEventObject aEvent)
     {
-        SwingUtilities.invokeLater( 
-            new Runnable() 
+        SwingUtilities.invokeLater(
+            new Runnable()
             {
-                public void run() 
+                public void run()
                 {
                     DispatchEvent (aEvent);
                 }
@@ -278,14 +278,14 @@ public class ObjectViewContainer
     public void disposing (EventObject aEvent)
     {
         mxContext = null;
-       SwingUtilities.invokeLater( 
+       SwingUtilities.invokeLater(
             new Runnable()
             {
                 public void run()
                 {
                     SetObject (null);
                 }
-            } 
+            }
             );
     }
 

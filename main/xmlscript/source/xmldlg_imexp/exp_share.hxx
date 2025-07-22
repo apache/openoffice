@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -56,27 +56,27 @@ struct Style
     // current highest mask: 0x40
     short _all;
     short _set;
-    
+
     ::rtl::OUString _id;
-    
+
     inline Style( short all_ ) SAL_THROW( () )
         : _fontRelief( css::awt::FontRelief::NONE )
         , _fontEmphasisMark( css::awt::FontEmphasisMark::NONE )
         , _all( all_ )
         , _set( 0 )
         {}
-    
+
     css::uno::Reference< css::xml::sax::XAttributeList > createElement();
 };
 class StyleBag
 {
     ::std::vector< Style * > _styles;
-    
+
 public:
     ~StyleBag() SAL_THROW( () );
-    
+
     ::rtl::OUString getStyleId( Style const & rStyle ) SAL_THROW( () );
-    
+
     void dump( css::uno::Reference< css::xml::sax::XExtendedDocumentHandler >
                const & xOut );
 };
@@ -86,7 +86,7 @@ class ElementDescriptor
 {
     css::uno::Reference< css::beans::XPropertySet > _xProps;
     css::uno::Reference< css::beans::XPropertyState > _xPropState;
-    
+
 public:
     inline ElementDescriptor(
         css::uno::Reference< css::beans::XPropertySet > const & xProps,
@@ -107,7 +107,7 @@ public:
     inline void read(
         ::rtl::OUString const & propName, ::rtl::OUString const & attrName,
         bool forceAttribute = false );
-    
+
     //
     template<typename T>
     inline bool readProp( T * ret, ::rtl::OUString const & rPropName );
@@ -132,7 +132,7 @@ public:
     inline void readBoolAttr(
         ::rtl::OUString const & rPropName, ::rtl::OUString const & rAttrName )
         { read<sal_Bool>( rPropName, rAttrName ); }
-    
+
     void readAlignAttr(
         ::rtl::OUString const & rPropName, ::rtl::OUString const & rAttrName );
     void readVerticalAlignAttr(
@@ -163,7 +163,7 @@ public:
         css::uno::Reference< css::beans::XPropertySet >
         const & xFormatProperties,
         ::rtl::OUString const & rAttrName );
-    
+
     //
     void readEvents() SAL_THROW( (css::uno::Exception) );
     //

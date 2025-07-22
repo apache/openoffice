@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -57,12 +57,12 @@ static const int MAX_OUTLINERVIEWS = 4;
 |*
 \************************************************************************/
 
-class OutlineView 
+class OutlineView
     : public ::sd::View
 {
 	friend class OutlineViewModelChangeGuard;
 public:
-    OutlineView (DrawDocShell* pDocSh, 
+    OutlineView (DrawDocShell* pDocSh,
         ::Window* pWindow,
         OutlineViewShell* pOutlineViewSh);
 	~OutlineView (void);
@@ -100,7 +100,7 @@ public:
 
 	virtual void Paint (const Rectangle& rRect, ::sd::Window* pWin);
 	virtual void AdjustPosSizePixel(
-        const Point &rPos, 
+        const Point &rPos,
         const Size &rSize,
         ::sd::Window* pWindow);
 
@@ -134,16 +134,16 @@ public:
 	void               SetSelectedPages();
 
 	virtual sal_Int8 AcceptDrop (
-        const AcceptDropEvent& rEvt, 
-        DropTargetHelper& rTargetHelper, 
-        ::sd::Window* pTargetWindow = NULL, 
-        sal_uInt16 nPage = SDRPAGE_NOTFOUND, 
+        const AcceptDropEvent& rEvt,
+        DropTargetHelper& rTargetHelper,
+        ::sd::Window* pTargetWindow = NULL,
+        sal_uInt16 nPage = SDRPAGE_NOTFOUND,
         sal_uInt16 nLayer = SDRPAGE_NOTFOUND);
 	virtual sal_Int8 ExecuteDrop (
-        const ExecuteDropEvent& rEvt, 
-        DropTargetHelper& rTargetHelper, 
-        ::sd::Window* pTargetWindow = NULL, 
-        sal_uInt16 nPage = SDRPAGE_NOTFOUND, 
+        const ExecuteDropEvent& rEvt,
+        DropTargetHelper& rTargetHelper,
+        ::sd::Window* pTargetWindow = NULL,
+        sal_uInt16 nPage = SDRPAGE_NOTFOUND,
         sal_uInt16 nLayer = SDRPAGE_NOTFOUND);
 
 
@@ -158,7 +158,7 @@ public:
     */
     void IgnoreCurrentPageChanges (bool bIgnore);
 
-#if 0	
+#if 0
 	sal_Int32 GetPageNumberWidthPixel();
 #endif
 
@@ -174,7 +174,7 @@ protected:
     virtual void OnEndPasteOrDrop( PasteOrDropInfos* pInfos );
 
 private:
-	/** call this method before you do anything that can modify the outliner 
+	/** call this method before you do anything that can modify the outliner
 		and or the drawing document model. It will create needed undo actions */
 	void BeginModelChange();
 

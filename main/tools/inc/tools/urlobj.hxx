@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -150,7 +150,7 @@ public:
 	/** The way input strings that represent (parts of) URIs are interpreted
 		in set-methods.
 
-		@descr  Most set-methods accept either a ByteString or a rtl::OUString 
+		@descr  Most set-methods accept either a ByteString or a rtl::OUString
 		as input.  Using a ByteString, octets in the range 0x80--0xFF are
 		replaced by single escape sequences.  Using a rtl::OUString , UTF-32
 		characters in the range 0x80--0x10FFFF are replaced by sequences of
@@ -809,7 +809,7 @@ public:
 		the specified segment does not exist, false is returned.  If false is
 		returned, the object is not modified.
 	 */
-	bool setName(rtl::OUString const & rTheName, 
+	bool setName(rtl::OUString const & rTheName,
 				 sal_Int32 nIndex = LAST_SEGMENT,
 				 bool bIgnoreFinalSlash = true,
 				 EncodeMechanism eMechanism = WAS_ENCODED,
@@ -856,7 +856,7 @@ public:
 		the specified segment does not exist, false is returned.  If false is
 		returned, the object is not modified.
 	 */
-	bool setBase(rtl::OUString const & rTheBase, 
+	bool setBase(rtl::OUString const & rTheBase,
 				 sal_Int32 nIndex = LAST_SEGMENT,
 				 bool bIgnoreFinalSlash = true,
 				 EncodeMechanism eMechanism = WAS_ENCODED,
@@ -1179,7 +1179,7 @@ public:
 								   rtl_TextEncoding eCharset
 								       = RTL_TEXTENCODING_UTF8);
 
-	static void appendUCS4Escape(rtl::OUStringBuffer & rTheText, 
+	static void appendUCS4Escape(rtl::OUStringBuffer & rTheText,
 								 sal_Char cEscapePrefix,
 								 sal_uInt32 nUCS4);
 
@@ -1330,7 +1330,7 @@ private:
 
 		inline void operator +=(sal_Int32 nDelta);
 
-		int compare(SubString const & rOther, 
+		int compare(SubString const & rOther,
 			rtl::OUStringBuffer const & rThisString,
 			rtl::OUStringBuffer const & rOtherString) const;
 	};
@@ -1493,9 +1493,9 @@ private:
     // Coding:
 
     static inline rtl::OUString extend(ByteString const & rOctets)
-    { 
-        return rtl::OUString(rOctets.GetBuffer(), rOctets.Len(), 
-            RTL_TEXTENCODING_ISO_8859_1); 
+    {
+        return rtl::OUString(rOctets.GetBuffer(), rOctets.Len(),
+            RTL_TEXTENCODING_ISO_8859_1);
     }
 
     static inline sal_Char getEscapePrefix(INetProtocol eTheScheme)

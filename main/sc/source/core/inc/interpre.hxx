@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 #ifndef SC_INTERPRE_HXX
@@ -149,7 +149,7 @@ public:
             BITOR,
             BITXOR
         };
-        
+
         enum bitShift
         {
             BITLSHIFT,
@@ -186,7 +186,7 @@ private:
     ScFormulaCell* pMyFormulaCell;      // the cell of this formula expression
     SvNumberFormatter* pFormatter;
 
-    const formula::FormulaToken* 
+    const formula::FormulaToken*
                 pCur;                // current token
     ScToken*    pLastStackRefToken;     // i120962: current valid reference token
     bool        bRefFunc;               // i120962: is a reference function
@@ -595,10 +595,10 @@ void ScTTT();
 
 /** Obtain the date serial number for a given date.
     @param bStrict
-        If sal_False, nYear < 100 takes the two-digit year setting into account, 
-        and rollover of invalid calendar dates takes place, e.g. 1999-02-31 => 
+        If sal_False, nYear < 100 takes the two-digit year setting into account,
+        and rollover of invalid calendar dates takes place, e.g. 1999-02-31 =>
         1999-03-03.
-        If sal_True, the date passed must be a valid Gregorian calendar date. No 
+        If sal_True, the date passed must be a valid Gregorian calendar date. No
         two-digit expanding or rollover is done.
  */
 double GetDateSerial( sal_Int16 nYear, sal_Int16 nMonth, sal_Int16 nDay, bool bStrict );
@@ -857,7 +857,7 @@ public:
     formula::StackVar  GetResultType()              const   { return xResult->GetType(); }
     const String&   GetStringResult()               const   { return xResult->GetString(); }
     double          GetNumResult()                  const   { return xResult->GetDouble(); }
-    formula::FormulaTokenRef 
+    formula::FormulaTokenRef
                     GetResultToken()                const   { return xResult; }
     short           GetRetFormatType()              const   { return nRetFmtType; }
     sal_uLong       GetRetFormatIndex()             const   { return nRetFmtIndex; }

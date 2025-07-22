@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -107,14 +107,14 @@ published interface XHierarchicalStorageAccess
 
 		@param sStreamPath
 			the path to the substream that should be open
-	
+
 		@param nOpenMode
 			a mode the stream should be open in,
 			can be a combination of <type>ElementModes</type> values
 
 		@throws ::com::sun::star::embed::InvalidStorageException
 			this storage is in invalid state for any reason
-	
+
 		@throws ::com::sun::star::lang::IllegalArgumentException
 			one of provided arguments is illegal
 
@@ -144,7 +144,7 @@ published interface XHierarchicalStorageAccess
 		If storage does not allow any encryption this method will always throw
 		<type scope="com::sun::star::packages">NoEncryptionException</type>.
 		</p>
-	
+
 		<p>
 		In case the stream is open in readonly mode the
 		<method scope="com::sun::star::io">XStream::getOutputStream</method>
@@ -153,7 +153,7 @@ published interface XHierarchicalStorageAccess
 
 		@param sStreamPath
 			the path to the substream that should be open
-	
+
 		@param nOpenMode
 			a mode the stream should be open in,
 			can be a combination of <type>ElementModes</type> values
@@ -197,7 +197,7 @@ published interface XHierarchicalStorageAccess
 
 		@param sElementPath
 			the path to the element to remove
-	
+
 		@throws ::com::sun::star::embed::InvalidStorageException
 			this storage is in invalid state for eny reason
 
@@ -206,7 +206,7 @@ published interface XHierarchicalStorageAccess
 
 		@throws ::com::sun::star::container::NoSuchElementException
 			there is no element with such name
-		
+
 		@throws ::com::sun::star::io::IOException
 			in case of io errors during removing
 

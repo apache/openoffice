@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -62,7 +62,7 @@ struct BaseLock
 };
 
 
-typedef ::comphelper::SequenceAsVector< ::rtl::OUString > OUStringList; 
+typedef ::comphelper::SequenceAsVector< ::rtl::OUString > OUStringList;
 
 //_______________________________________________
 
@@ -162,12 +162,12 @@ class CacheItem : public ::comphelper::SequenceAsHashMap
                     the list of possible ones.
          */
         void validateUINames(const ::rtl::OUString& sActLocale);
-        
+
         //---------------------------------------
 
         /** @short  convert this structure to a seq< PropertyValue >
                     and ignore all empty properties!
-                    
+
             @descr  Normally the converter routines of the base class
                     SequenceAsHashMap done this job already.
                     But it doesn't provide a "pack" mechanism to
@@ -223,22 +223,22 @@ struct  FlatDetectionInfo
 {
     // the internal type name
     ::rtl::OUString sType;
-    
+
     // this type was found by a matching the URL extension
     sal_Bool bMatchByExtension;
-    
+
     // this type was found by a matching URL Pattern
     sal_Bool bMatchByPattern;
-    
+
     // the user selected this type explicitly
     sal_Bool bPreselectedAsType;
-    
+
     // the user selected this type implicit by selecting a corresponding filter
     sal_Bool bPreselectedByFilter;
-    
+
     // the user selected this type implicit by selecting a corresponding office module
     sal_Bool bPreselectedByDocumentService;
-    
+
     FlatDetectionInfo()
         : sType                        (::rtl::OUString())
         , bMatchByExtension            (sal_False        )

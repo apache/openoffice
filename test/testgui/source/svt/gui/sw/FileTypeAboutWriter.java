@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,20 +7,20 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 /**
- * 
+ *
  */
 package svt.gui.sw;
 
@@ -79,13 +79,13 @@ public class FileTypeAboutWriter {
 	public static void afterClass() throws Exception {
 		app.stop();
 	}
-	
+
 	@Before
 	public void before()throws Exception{
 		app.start(true);
 	}
 
-	
+
 	@Test
 	public void saveNewSWWithShapeToHTML()throws Exception{
 		for ( i = 1; i <= iterator; i++) {
@@ -108,12 +108,12 @@ public class FileTypeAboutWriter {
 			startCenterOpenButton.click();
 			submitOpenDlg(saveTo);
 			sleep(1);
-			app.dispatch(".uno:CloseDoc");	
+			app.dispatch(".uno:CloseDoc");
 			long end = System.currentTimeMillis();
 			addRecord(i, start, end);
 		}
 	}
-	
+
 	@Test
     public void saveNewSWWithLineToDoc()throws Exception{
 		for (i = 1; i <= iterator; i++) {
@@ -137,7 +137,7 @@ public class FileTypeAboutWriter {
 			addRecord(i, start, end);
 		}
 	}
-	
+
 	@Test
 	public void saveNewSWWithPicToDoc() throws Exception {
 		String pic = prepareData("image/blue_256x256.jpg");
@@ -170,18 +170,18 @@ public class FileTypeAboutWriter {
 		if (activeMsgBox.exists()) {
 			activeMsgBox.yes();
 			sleep(2);
-		}		
+		}
 		if (alienFormatDlg.exists(3))
 			alienFormatDlg.ok();
-		app.dispatch(".uno:CloseDoc");	
+		app.dispatch(".uno:CloseDoc");
 		startCenterOpenButton.waitForExistence(30, 2);
 		startCenterOpenButton.click();
 		submitOpenDlg(saveTo);
-		sleep(2);		
+		sleep(2);
 		app.dispatch(".uno:CloseDoc");
-		
+
 	}
-	
+
 	private void addRecord(int i, long start, long end) {
 		HashMap<String, Object>  perf = aoo.getPerfData();
 		xmlResult.addRow("Data",testname.getMethodName(), i, (end - start),
@@ -189,5 +189,5 @@ public class FileTypeAboutWriter {
 		log.log( Level.INFO, "\t"+testname.getMethodName()+"["+i+"] took "+(end-start)+"ms");
 	}
 
-	
+
 }

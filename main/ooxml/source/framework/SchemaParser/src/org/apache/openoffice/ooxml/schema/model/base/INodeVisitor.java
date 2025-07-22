@@ -49,7 +49,7 @@ import org.apache.openoffice.ooxml.schema.model.simple.Union;
 /** Interface for the visitor pattern.
  *  Use a node visitor instead of INode/NodeType and casting INode to a derived
  *  class.
- *  See also the default implementation NodeVisitorAdapter. 
+ *  See also the default implementation NodeVisitorAdapter.
  */
 public interface INodeVisitor
 {
@@ -67,7 +67,7 @@ public interface INodeVisitor
     void Visit (final GroupReference aGroupReference);
     void Visit (final OccurrenceIndicator aOccurrenceIndicator);
     void Visit (final Sequence aNode);
-    
+
     // Simple nodes.
     void Visit (final BuiltIn aType);
     void Visit (final List aList);
@@ -76,7 +76,7 @@ public interface INodeVisitor
     void Visit (final SimpleType aSimpleType);
     void Visit (final SimpleTypeReference aSimpleTypeReference);
     void Visit (final Union aUnion);
-    
+
     // Attributes.
     void Visit (final AttributeGroup attributeGroup);
     void Visit (final AttributeReference attributeReference);

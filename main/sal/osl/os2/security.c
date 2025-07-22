@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -43,7 +43,7 @@
 
 extern oslModule SAL_CALL osl_psz_loadModule(const sal_Char *pszModuleName, sal_Int32 nRtldMode);
 extern void* SAL_CALL osl_psz_getSymbol(oslModule hModule, const sal_Char* pszSymbolName);
-extern oslSecurityError SAL_CALL 
+extern oslSecurityError SAL_CALL
 osl_psz_loginUser(const sal_Char* pszUserName, const sal_Char* pszPasswd,
                   oslSecurity* pSecurity);
 sal_Bool SAL_CALL osl_psz_getUserIdent(oslSecurity Security, sal_Char *pszIdent, sal_uInt32 nMax);
@@ -55,7 +55,7 @@ sal_Bool SAL_CALL osl_psz_getConfigDir(oslSecurity Security, sal_Char* pszDirect
 
 oslSecurity SAL_CALL osl_getCurrentSecurity()
 {
-	
+
 	oslSecurityImpl *pSecImpl = (oslSecurityImpl*) malloc(sizeof(oslSecurityImpl));
 	struct passwd	*pPasswd  = getpwuid(getuid());
 
@@ -72,7 +72,7 @@ oslSecurity SAL_CALL osl_getCurrentSecurity()
 		pSecImpl->m_pPasswd.pw_dir		= getenv("HOME");
 		if (pSecImpl->m_pPasswd.pw_name && pSecImpl->m_pPasswd.pw_dir)
 			pSecImpl->m_isValid				= sal_True;
-		else 
+		else
 		{
 			pSecImpl->m_pPasswd.pw_name		= "unknown";
 			pSecImpl->m_pPasswd.pw_dir		= "/tmp";
@@ -104,7 +104,7 @@ oslSecurityError SAL_CALL osl_loginUser(
     return ret;
 }
 
-    
+
 
 oslSecurityError SAL_CALL osl_loginUserOnFileServer(
     rtl_uString *strUserName,
@@ -114,7 +114,7 @@ oslSecurityError SAL_CALL osl_loginUserOnFileServer(
 	)
 {
 	oslSecurityError erg;
-	return erg = osl_Security_E_UserUnknown;   
+	return erg = osl_Security_E_UserUnknown;
 }
 
 
@@ -133,13 +133,13 @@ sal_Bool SAL_CALL osl_getUserIdent(oslSecurity Security, rtl_uString **ustrIdent
     sal_Char pszIdent[1024];
 
     pszIdent[0] = '\0';
-    
+
     bRet = osl_psz_getUserIdent(Security,pszIdent,sizeof(pszIdent));
 
     rtl_string2UString( ustrIdent, pszIdent, rtl_str_getLength( pszIdent ), osl_getThreadTextEncoding(), OUSTRING_TO_OSTRING_CVTFLAGS );
     OSL_ASSERT(*ustrIdent != NULL);
-    
-    return bRet;    
+
+    return bRet;
 }
 
 
@@ -167,17 +167,17 @@ sal_Bool SAL_CALL osl_getUserName(oslSecurity Security, rtl_uString **ustrName)
     sal_Char pszName[1024];
 
     pszName[0] = '\0';
-    
+
     bRet = osl_psz_getUserName(Security,pszName,sizeof(pszName));
-    
+
     rtl_string2UString( ustrName, pszName, rtl_str_getLength( pszName ), osl_getThreadTextEncoding(), OUSTRING_TO_OSTRING_CVTFLAGS );
     OSL_ASSERT(*ustrName != NULL);
-    
+
     return bRet;
 }
 
 
- 
+
 sal_Bool SAL_CALL osl_psz_getUserName(oslSecurity Security, sal_Char* pszName, sal_uInt32  nMax)
 {
 	oslSecurityImpl *pSecImpl = (oslSecurityImpl *)Security;
@@ -196,7 +196,7 @@ sal_Bool SAL_CALL osl_getHomeDir(oslSecurity Security, rtl_uString **pustrDirect
     sal_Char pszDirectory[PATH_MAX];
 
     pszDirectory[0] = '\0';
-    
+
     bRet = osl_psz_getHomeDir(Security,pszDirectory,sizeof(pszDirectory));
 
     if ( bRet == sal_True )
@@ -205,7 +205,7 @@ sal_Bool SAL_CALL osl_getHomeDir(oslSecurity Security, rtl_uString **pustrDirect
         OSL_ASSERT(*pustrDirectory != NULL);
         osl_getFileURLFromSystemPath( *pustrDirectory, pustrDirectory );
     }
-    
+
     return bRet;
 }
 
@@ -261,7 +261,7 @@ sal_Bool SAL_CALL osl_getConfigDir(oslSecurity Security, rtl_uString **pustrDire
     sal_Char pszDirectory[PATH_MAX];
 
     pszDirectory[0] = '\0';
-    
+
     bRet = osl_psz_getConfigDir(Security,pszDirectory,sizeof(pszDirectory));
 
     if ( bRet == sal_True )

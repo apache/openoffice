@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 package org.apache.openoffice.comp.sdbc.dbtools.util;
@@ -48,85 +48,85 @@ public class ORowSetValue {
     private static final int FLAG_BOUND = 0b0100;
     private static final int FLAG_MODIFIED = 0b0010;
     private static final int FLAG_SIGNED = 0b0001;
-  
+
     public ORowSetValue() {
         flags = FLAG_NULL | FLAG_BOUND | FLAG_SIGNED;
         typeKind = DataType.VARCHAR;
     }
-    
+
     public ORowSetValue(boolean value) {
         this();
         setBoolean(value);
     }
-    
+
     public ORowSetValue(Date value) {
         this();
         setDate(value);
     }
-    
+
     public ORowSetValue(DateTime value) {
         this();
         setDateTime(value);
     }
-    
+
     public ORowSetValue(double value) {
         this();
         setDouble(value);
     }
-    
+
     public ORowSetValue(float value) {
         this();
         setFloat(value);
     }
-    
+
     public ORowSetValue(byte value) {
         this();
         setInt8(value);
     }
-    
+
     public ORowSetValue(short value) {
         this();
         setInt16(value);
     }
-    
+
     public ORowSetValue(int value) {
         this();
         setInt32(value);
     }
-    
+
     public ORowSetValue(long value) {
         this();
         setLong(value);
     }
-  
+
     public ORowSetValue(byte[] value) {
         this();
         setSequence(value);
     }
-    
+
     public ORowSetValue(String value) {
         this();
         setString(value);
     }
-    
+
     public ORowSetValue(Time value) {
         this();
         setTime(value);
     }
-    
+
     public boolean isNull() {
         return (flags & FLAG_NULL) != 0;
     }
-  
+
     public void setNull() {
         free();
         flags |= FLAG_NULL;
     }
-  
+
     public boolean isBound() {
         return (flags & FLAG_BOUND) != 0;
     }
-  
+
     public void setBound(boolean isBound) {
         if (isBound) {
             flags |= FLAG_BOUND;
@@ -134,15 +134,15 @@ public class ORowSetValue {
             flags &= ~FLAG_BOUND;
         }
     }
-  
+
     public boolean isModified() {
         return (flags & FLAG_MODIFIED) != 0;
     }
-  
+
     public void setModified(boolean isModified) {
         flags |= FLAG_MODIFIED;
     }
-  
+
     public boolean isSigned() {
         return (flags & FLAG_SIGNED) != 0;
     }
@@ -158,7 +158,7 @@ public class ORowSetValue {
             flags &= ~FLAG_SIGNED;
         }
     }
-    
+
     private boolean isStorageCompatible(int _eType1, int _eType2) {
         boolean bIsCompatible = true;
 
@@ -220,11 +220,11 @@ public class ORowSetValue {
         }
         return bIsCompatible;
     }
-  
+
     public int getTypeKind() {
         return typeKind;
     }
-  
+
     public void setTypeKind(int type) throws SQLException {
         if (!isNull() && !isStorageCompatible(type, typeKind)) {
             switch (type) {
@@ -293,10 +293,10 @@ public class ORowSetValue {
             flags |= FLAG_NULL;
         }
     }
-    
+
     public void fill(Object any) {
         final Type type = AnyConverter.getType(any);
-        
+
         switch (type.getTypeClass().getValue()) {
         case TypeClass.VOID_value:
             setNull();
@@ -470,7 +470,7 @@ public class ORowSetValue {
     public Object getAny() {
         return value;
     }
-    
+
     public boolean getBoolean() {
         boolean bRet = false;
         if (!isNull()) {
@@ -528,7 +528,7 @@ public class ORowSetValue {
         }
         return bRet;
     }
-    
+
     public Date getDate() throws SQLException {
         Date aValue = new Date();
         if (!isNull()) {
@@ -872,7 +872,7 @@ public class ORowSetValue {
         }
         return nRet;
     }
-    
+
     public int getInt32() {
         int nRet = 0;
         if (!isNull()) {
@@ -1047,7 +1047,7 @@ public class ORowSetValue {
         }
         return aSeq;
     }
-   
+
     public String getString() throws SQLException {
         String aRet = "";
         if (!isNull()) {
@@ -1085,7 +1085,7 @@ public class ORowSetValue {
                     StringBuilder sVal = new StringBuilder("0x");
                     byte[] sSeq = getSequence();
                     for (byte b : sSeq) {
-                        sVal.append(String.format("%02x", DBTypeConversion.toUnsignedInt(b))); 
+                        sVal.append(String.format("%02x", DBTypeConversion.toUnsignedInt(b)));
                     }
                     aRet = sVal.toString();
                 }
@@ -1098,7 +1098,7 @@ public class ORowSetValue {
                 aRet = isSigned() ? Integer.toString((byte)value) : DBTypeConversion.toUnsignedString(0xff & (byte)value);
                 break;
             case DataType.SMALLINT:
-                aRet = isSigned() ? Integer.toString((short)value) : DBTypeConversion.toUnsignedString(0xffff & (short)value); 
+                aRet = isSigned() ? Integer.toString((short)value) : DBTypeConversion.toUnsignedString(0xffff & (short)value);
                 break;
             case DataType.INTEGER:
                 aRet = isSigned() ? Integer.toString((int)value) : DBTypeConversion.toUnsignedString((int)value);
@@ -1125,7 +1125,7 @@ public class ORowSetValue {
         }
         return aRet;
     }
-    
+
     public Time getTime() throws SQLException {
         Time aValue = new Time();
         if (!isNull()) {
@@ -1169,7 +1169,7 @@ public class ORowSetValue {
         }
         return aValue;
     }
-    
+
     public void setAny(Object value) {
         flags &= ~FLAG_NULL;
         this.value = value;
@@ -1206,19 +1206,19 @@ public class ORowSetValue {
         this.value = value;
         typeKind = DataType.FLOAT;
     }
-  
+
     public void setInt8(byte value) {
         flags &= ~FLAG_NULL;
         this.value = value;
         typeKind = DataType.TINYINT;
     }
-  
+
     public void setInt16(short value) {
         flags &= ~FLAG_NULL;
         this.value = value;
         typeKind = DataType.SMALLINT;
     }
-  
+
     public void setInt32(int value) {
         flags &= ~FLAG_NULL;
         this.value = value;
@@ -1242,13 +1242,13 @@ public class ORowSetValue {
         this.value = value;
         typeKind = DataType.VARCHAR;
     }
-  
+
     public void setTime(Time value) {
         flags &= ~FLAG_NULL;
         this.value = new Time(value.Hours, value.Minutes, value.Seconds, value.HundredthSeconds);
         typeKind = DataType.TIME;
     }
-    
+
     public Object makeAny() {
         Object rValue = Any.VOID;
         if(isBound() && !isNull()) {

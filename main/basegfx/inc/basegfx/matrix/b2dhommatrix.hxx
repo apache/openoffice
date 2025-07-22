@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -142,16 +142,16 @@ namespace basegfx
 	// Multiplikation, Division mit Konstante
 	inline B2DHomMatrix	operator*(const B2DHomMatrix& rMat, double fValue)
 	{
-		B2DHomMatrix aNew(rMat); 
-		aNew *= fValue; 
-		return aNew; 
+		B2DHomMatrix aNew(rMat);
+		aNew *= fValue;
+		return aNew;
 	}
 
 	inline B2DHomMatrix	operator/(const B2DHomMatrix& rMat, double fValue)
 	{
-		B2DHomMatrix aNew(rMat); 
+		B2DHomMatrix aNew(rMat);
 		aNew *= 1.0 / fValue;
-		return aNew; 
+		return aNew;
 	}
 
 	inline B2DHomMatrix	operator*(const B2DHomMatrix& rMatA, const B2DHomMatrix& rMatB)

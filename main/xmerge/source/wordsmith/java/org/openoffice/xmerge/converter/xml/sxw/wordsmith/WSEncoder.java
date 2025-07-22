@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -116,12 +116,12 @@ final class WSEncoder {
 
         Vector allRecs = new Vector();
         int nElements = elements.size();
-        
+
         // Count up the number of paragraphs, atoms, and characters.
         int currElement = 0;
         while (currElement < nElements) {
             Wse e = (Wse)elements.elementAt(currElement++);
-            if (e.getClass() == WsePara.class) 
+            if (e.getClass() == WsePara.class)
                 nrParagraphs++;
             if (e.getClass() == WseTextRun.class) {
                 nrAtoms++;
@@ -140,12 +140,12 @@ final class WSEncoder {
         currRecLen += header.getByteCount();
 
         if (ft != null) {
-            System.arraycopy(ft.getBytes(), 0, currRec, currRecLen, 
+            System.arraycopy(ft.getBytes(), 0, currRec, currRecLen,
                              ft.getByteCount());
             currRecLen += ft.getByteCount();
         }
         if (ct != null) {
-            System.arraycopy(ct.getBytes(), 0, currRec, currRecLen, 
+            System.arraycopy(ct.getBytes(), 0, currRec, currRecLen,
                              ct.getByteCount());
             currRecLen += ct.getByteCount();
         }
@@ -158,10 +158,10 @@ final class WSEncoder {
                 System.arraycopy(e.getBytes(), 0, currRec, currRecLen, length);
                 currRecLen += length;
         } else {
-                // Copy in enough to get to full size, then create a 
+                // Copy in enough to get to full size, then create a
                 // new Record and add it to the Vector.
                 int firstPartLen = 4096 - currRecLen;
-                System.arraycopy(e.getBytes(), 0, currRec, currRecLen, 
+                System.arraycopy(e.getBytes(), 0, currRec, currRecLen,
                                  firstPartLen);
                 Record r = new Record(currRec);
                 allRecs.addElement(r);
@@ -184,7 +184,7 @@ final class WSEncoder {
 
 
         // Record 0 is the WordSmith header.  Do it last since it
-        // contains totals for the entire document.  It goes 
+        // contains totals for the entire document.  It goes
         // before everything else.
         ByteArrayOutputStream bos = new ByteArrayOutputStream();
         DataOutputStream dos = new DataOutputStream(bos);

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -76,19 +76,19 @@ class DictionaryNeo :
 	DictionaryNeo & operator = (const DictionaryNeo &);
 
 	void					launchEvent(sal_Int16 nEvent,
-		::com::sun::star::uno::Reference< 
+		::com::sun::star::uno::Reference<
 			::com::sun::star::linguistic2::XDictionaryEntry > xEntry);
 
     sal_uLong                   loadEntries(const ::rtl::OUString &rMainURL);
     sal_uLong                   saveEntries(const ::rtl::OUString &rMainURL);
-	int						cmpDicEntry(const ::rtl::OUString &rWord1, 
+	int						cmpDicEntry(const ::rtl::OUString &rWord1,
 										const ::rtl::OUString &rWord2,
 										sal_Bool bSimilarOnly = sal_False);
 	sal_Bool					seekEntry(const ::rtl::OUString &rWord, sal_Int32 *pPos,
 										sal_Bool bSimilarOnly = sal_False);
 	sal_Bool					isSorted();
 
-	sal_Bool		 			addEntry_Impl(const ::com::sun::star::uno::Reference< 
+	sal_Bool		 			addEntry_Impl(const ::com::sun::star::uno::Reference<
 		::com::sun::star::linguistic2::XDictionaryEntry > xDicEntry,
 										  sal_Bool bIsLoadEntries = sal_False);
 
@@ -101,99 +101,99 @@ public:
 	virtual ~DictionaryNeo();
 
 	// XNamed
-    virtual ::rtl::OUString SAL_CALL 
-		getName() 
+    virtual ::rtl::OUString SAL_CALL
+		getName()
 			throw(::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL 
-		setName( const ::rtl::OUString& aName ) 
+    virtual void SAL_CALL
+		setName( const ::rtl::OUString& aName )
 			throw(::com::sun::star::uno::RuntimeException);
 
 	// XDictionary
-    virtual ::com::sun::star::linguistic2::DictionaryType SAL_CALL 
-		getDictionaryType() 
+    virtual ::com::sun::star::linguistic2::DictionaryType SAL_CALL
+		getDictionaryType()
 			throw(::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL 
-		setActive( sal_Bool bActivate ) 
+    virtual void SAL_CALL
+		setActive( sal_Bool bActivate )
 			throw(::com::sun::star::uno::RuntimeException);
-    virtual sal_Bool SAL_CALL 
-		isActive() 
+    virtual sal_Bool SAL_CALL
+		isActive()
 			throw(::com::sun::star::uno::RuntimeException);
-    virtual sal_Int32 SAL_CALL 
-		getCount() 
+    virtual sal_Int32 SAL_CALL
+		getCount()
 			throw(::com::sun::star::uno::RuntimeException);
-    virtual ::com::sun::star::lang::Locale SAL_CALL 
-		getLocale() 
+    virtual ::com::sun::star::lang::Locale SAL_CALL
+		getLocale()
 			throw(::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL 
-		setLocale( const ::com::sun::star::lang::Locale& aLocale ) 
+    virtual void SAL_CALL
+		setLocale( const ::com::sun::star::lang::Locale& aLocale )
 			throw(::com::sun::star::uno::RuntimeException);
-    virtual ::com::sun::star::uno::Reference< 
-			::com::sun::star::linguistic2::XDictionaryEntry > SAL_CALL 
-		getEntry( const ::rtl::OUString& aWord ) 
+    virtual ::com::sun::star::uno::Reference<
+			::com::sun::star::linguistic2::XDictionaryEntry > SAL_CALL
+		getEntry( const ::rtl::OUString& aWord )
 			throw(::com::sun::star::uno::RuntimeException);
-    virtual sal_Bool SAL_CALL 
-		addEntry( const ::com::sun::star::uno::Reference< 
-				::com::sun::star::linguistic2::XDictionaryEntry >& xDicEntry ) 
+    virtual sal_Bool SAL_CALL
+		addEntry( const ::com::sun::star::uno::Reference<
+				::com::sun::star::linguistic2::XDictionaryEntry >& xDicEntry )
 			throw(::com::sun::star::uno::RuntimeException);
-    virtual sal_Bool SAL_CALL 
-		add( const ::rtl::OUString& aWord, sal_Bool bIsNegative, 
-				const ::rtl::OUString& aRplcText ) 
+    virtual sal_Bool SAL_CALL
+		add( const ::rtl::OUString& aWord, sal_Bool bIsNegative,
+				const ::rtl::OUString& aRplcText )
 			throw(::com::sun::star::uno::RuntimeException);
-    virtual sal_Bool SAL_CALL 
-		remove( const ::rtl::OUString& aWord ) 
+    virtual sal_Bool SAL_CALL
+		remove( const ::rtl::OUString& aWord )
 			throw(::com::sun::star::uno::RuntimeException);
-    virtual sal_Bool SAL_CALL 
-		isFull() 
+    virtual sal_Bool SAL_CALL
+		isFull()
 			throw(::com::sun::star::uno::RuntimeException);
-    virtual ::com::sun::star::uno::Sequence< 
-			::com::sun::star::uno::Reference< 
-				::com::sun::star::linguistic2::XDictionaryEntry > > SAL_CALL 
-		getEntries() 
+    virtual ::com::sun::star::uno::Sequence<
+			::com::sun::star::uno::Reference<
+				::com::sun::star::linguistic2::XDictionaryEntry > > SAL_CALL
+		getEntries()
 			throw(::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL 
-		clear() 
+    virtual void SAL_CALL
+		clear()
 			throw(::com::sun::star::uno::RuntimeException);
-    virtual sal_Bool SAL_CALL 
-		addDictionaryEventListener( const ::com::sun::star::uno::Reference< 
-				::com::sun::star::linguistic2::XDictionaryEventListener >& xListener ) 
+    virtual sal_Bool SAL_CALL
+		addDictionaryEventListener( const ::com::sun::star::uno::Reference<
+				::com::sun::star::linguistic2::XDictionaryEventListener >& xListener )
 			throw(::com::sun::star::uno::RuntimeException);
-    virtual sal_Bool SAL_CALL 
-		removeDictionaryEventListener( const ::com::sun::star::uno::Reference< 
-				::com::sun::star::linguistic2::XDictionaryEventListener >& xListener ) 
+    virtual sal_Bool SAL_CALL
+		removeDictionaryEventListener( const ::com::sun::star::uno::Reference<
+				::com::sun::star::linguistic2::XDictionaryEventListener >& xListener )
 			throw(::com::sun::star::uno::RuntimeException);
 
 	// XStorable
-    virtual sal_Bool SAL_CALL 
-		hasLocation() 
+    virtual sal_Bool SAL_CALL
+		hasLocation()
 			throw(::com::sun::star::uno::RuntimeException);
-    virtual ::rtl::OUString SAL_CALL 
-		getLocation() 
+    virtual ::rtl::OUString SAL_CALL
+		getLocation()
 			throw(::com::sun::star::uno::RuntimeException);
-    virtual sal_Bool SAL_CALL 
-		isReadonly() 
+    virtual sal_Bool SAL_CALL
+		isReadonly()
 			throw(::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL 
-		store() 
-			throw(::com::sun::star::io::IOException, 
+    virtual void SAL_CALL
+		store()
+			throw(::com::sun::star::io::IOException,
 				  ::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL 
-		storeAsURL( const ::rtl::OUString& aURL, 
-				const ::com::sun::star::uno::Sequence< 
-					::com::sun::star::beans::PropertyValue >& aArgs ) 
-			throw(::com::sun::star::io::IOException, 
+    virtual void SAL_CALL
+		storeAsURL( const ::rtl::OUString& aURL,
+				const ::com::sun::star::uno::Sequence<
+					::com::sun::star::beans::PropertyValue >& aArgs )
+			throw(::com::sun::star::io::IOException,
 				  ::com::sun::star::uno::RuntimeException);
-    virtual void SAL_CALL 
-		storeToURL( const ::rtl::OUString& aURL, 
-				const ::com::sun::star::uno::Sequence< 
-					::com::sun::star::beans::PropertyValue >& aArgs ) 
-			throw(::com::sun::star::io::IOException, 
+    virtual void SAL_CALL
+		storeToURL( const ::rtl::OUString& aURL,
+				const ::com::sun::star::uno::Sequence<
+					::com::sun::star::beans::PropertyValue >& aArgs )
+			throw(::com::sun::star::io::IOException,
 				  ::com::sun::star::uno::RuntimeException);
 };
 
 
 ///////////////////////////////////////////////////////////////////////////
 
-class DicEntry :	
+class DicEntry :
 	public cppu::WeakImplHelper1
 	<
 		::com::sun::star::linguistic2::XDictionaryEntry
@@ -208,7 +208,7 @@ class DicEntry :
 	DicEntry & operator = (const DicEntry &);
 
 	void			splitDicFileWord(const ::rtl::OUString &rDicFileWord,
-									 ::rtl::OUString &rDicWord, 
+									 ::rtl::OUString &rDicWord,
 									 ::rtl::OUString &rReplacement);
 
 public:
@@ -219,11 +219,11 @@ public:
 	virtual ~DicEntry();
 
 	// XDictionaryEntry
-    virtual ::rtl::OUString SAL_CALL 
+    virtual ::rtl::OUString SAL_CALL
 		getDictionaryWord() throw(::com::sun::star::uno::RuntimeException);
-    virtual sal_Bool SAL_CALL 
+    virtual sal_Bool SAL_CALL
 		isNegative() throw(::com::sun::star::uno::RuntimeException);
-    virtual ::rtl::OUString SAL_CALL 
+    virtual ::rtl::OUString SAL_CALL
 		getReplacementText() throw(::com::sun::star::uno::RuntimeException);
 };
 

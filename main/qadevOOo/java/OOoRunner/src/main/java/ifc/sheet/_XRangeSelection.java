@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -56,7 +56,7 @@ import util.AccessibilityTools;
 public class _XRangeSelection extends MultiMethodTest {
     public XRangeSelection oObj = null;
     MyRangeSelectionListener aListener = null;
-    
+
     public void before() {
         aListener = new _XRangeSelection.MyRangeSelectionListener(log);
         // workaround for i34499
@@ -68,44 +68,44 @@ public class _XRangeSelection extends MultiMethodTest {
         xTopWindow.toFront();
         util.utils.shortWait(500);
     }
-    
-    
+
+
     public void _abortRangeSelection() {
         requiredMethod("removeRangeSelectionChangeListener()");
         requiredMethod("removeRangeSelectionListener()");
         oObj.abortRangeSelection();
         tRes.tested("abortRangeSelection()", true);
     }
-    
+
     public void _addRangeSelectionChangeListener() {
         oObj.addRangeSelectionChangeListener(aListener);
         tRes.tested("addRangeSelectionChangeListener()", true);
     }
-    
+
     public void _addRangeSelectionListener() {
         oObj.addRangeSelectionListener(aListener);
         tRes.tested("addRangeSelectionListener()", true);
     }
-    
+
     public void _removeRangeSelectionChangeListener() {
         oObj.removeRangeSelectionChangeListener(aListener);
         tRes.tested("removeRangeSelectionChangeListener()", true);
     }
-    
+
     public void _removeRangeSelectionListener() {
         oObj.removeRangeSelectionListener(aListener);
         tRes.tested("removeRangeSelectionListener()", true);
     }
-    
+
     public void _startRangeSelection() {
         requiredMethod("addRangeSelectionChangeListener()");
         requiredMethod("addRangeSelectionListener()");
-        
+
         // get the sheet center
         Point center = getSheetCenter();
         if (center == null)
             throw new StatusException(Status.failed("Couldn't get the sheet center."));
-        
+
         PropertyValue[] props = new PropertyValue[3];
         props[0] = new PropertyValue();
         props[0].Name = "InitialValue";
@@ -134,7 +134,7 @@ public class _XRangeSelection extends MultiMethodTest {
         util.utils.shortWait(5000);
 
 //        System.out.println("X: " + closer.X + "    Y: " + closer.Y);
-        
+
         // just check that we do not have the page instead of the range descriptor
 /*        int childCount = xRoot.getAccessibleContext().getAccessibleChildCount();
         if (childCount > 3) {// too many children: wrong type
@@ -145,10 +145,10 @@ public class _XRangeSelection extends MultiMethodTest {
             xAcc = xRoot.getAccessibleContext().getAccessibleChild(1);
         }
         catch(com.sun.star.lang.IndexOutOfBoundsException e) {
-            
+
         }
         accTools.printAccessibleTree(log, xAcc);
-*/        
+*/
         // open a new range selection
         props[0].Value = "C4:E6";
         oObj.startRangeSelection(props);
@@ -156,16 +156,16 @@ public class _XRangeSelection extends MultiMethodTest {
         props[0].Value = "C2:E3";
         oObj.startRangeSelection(props);
         util.utils.shortWait(1000);
-        
+
         oObj.startRangeSelection(props);
         util.utils.shortWait(1000);
         oObj.abortRangeSelection();
         aListener.reset();
         System.out.println("Listener called: " + aListener.bAbortCalled);
-        
+
         tRes.tested("startRangeSelection()", aListener.listenerCalled());
     }
-    
+
     /**
      * Determine the current top window center and return this as a point.
      * @return a point representing the sheet center.
@@ -174,11 +174,11 @@ public class _XRangeSelection extends MultiMethodTest {
         log.println("Trying to get AccessibleSpreadsheet");
         AccessibilityTools at = new AccessibilityTools();
         XComponent xSheetDoc = (XComponent) tEnv.getObjRelation("DOCUMENT");
-        
+
         XModel xModel = (XModel)
             UnoRuntime.queryInterface(XModel.class, xSheetDoc);
         System.out.println("Name: " + xModel.getCurrentController().getFrame().getName());
-        
+
         XWindow xWindow = at.getCurrentWindow((XMultiServiceFactory)tParam.getMSF(), xModel);
         XAccessible xRoot = at.getAccessibleObject(xWindow);
 
@@ -186,10 +186,10 @@ public class _XRangeSelection extends MultiMethodTest {
 
         XAccessibleComponent AccessibleSpreadsheet = (XAccessibleComponent) UnoRuntime.queryInterface(XAccessibleComponent.class,AccessibilityTools.SearchedContext);
 
-        log.println("Got " + util.utils.getImplName(AccessibleSpreadsheet));                
+        log.println("Got " + util.utils.getImplName(AccessibleSpreadsheet));
 
         Object toolkit = null;
-        
+
         try {
             toolkit = ((XMultiServiceFactory)tParam.getMSF()).createInstance("com.sun.star.awt.Toolkit");
         } catch (com.sun.star.uno.Exception e) {
@@ -199,14 +199,14 @@ public class _XRangeSelection extends MultiMethodTest {
         }
 
         XExtendedToolkit tk = (XExtendedToolkit) UnoRuntime.queryInterface(
-                                      XExtendedToolkit.class, toolkit);        
-        
+                                      XExtendedToolkit.class, toolkit);
+
         XTopWindow tw = null;
-        
+
         int k = tk.getTopWindowCount();
         for (int i=0;i<k;i++) {
             try {
-                XTopWindow tw_temp = tk.getTopWindow(i);            
+                XTopWindow tw_temp = tk.getTopWindow(i);
                 XAccessible xacc = (XAccessible) UnoRuntime.queryInterface(XAccessible.class,  tw_temp);
                 if (xacc != null) {
                     if (xacc.getAccessibleContext().getAccessibleName().indexOf("d2")>0) {
@@ -223,7 +223,7 @@ public class _XRangeSelection extends MultiMethodTest {
             System.out.println("No TopWindow :-(");
             return null;
         }
-        
+
         Point point = AccessibleSpreadsheet.getLocationOnScreen();
         Rectangle rect = AccessibleSpreadsheet.getBounds();
         Point retPoint = new Point();
@@ -231,7 +231,7 @@ public class _XRangeSelection extends MultiMethodTest {
         retPoint.Y = point.Y + (rect.Height / 2);
         return retPoint;
     }
-    
+
     /**
      * Get the closer button on the right top of the current window.
      * @return A point representing the closer button.
@@ -247,12 +247,12 @@ public class _XRangeSelection extends MultiMethodTest {
         }
         XExtendedToolkit xExtendedToolkit = (XExtendedToolkit)UnoRuntime.queryInterface(XExtendedToolkit.class, aToolkit);
         XTopWindow tw = null;
-        
+
         XAccessibleComponent xAccessibleComponent = null;
         int k = xExtendedToolkit.getTopWindowCount();
         for (int i=0;i<k;i++) {
             try {
-                XTopWindow tw_temp = xExtendedToolkit.getTopWindow(i);            
+                XTopWindow tw_temp = xExtendedToolkit.getTopWindow(i);
                 XAccessible xacc = (XAccessible)UnoRuntime.queryInterface(XAccessible.class,  tw_temp);
                 if (xacc != null) {
                     System.out.println("Name: " + xacc.getAccessibleContext().getAccessibleName());
@@ -265,7 +265,7 @@ public class _XRangeSelection extends MultiMethodTest {
                         else
                             System.out.println("########## KLAPPT ########## ");
                     }
-                } 
+                }
                 else {
                     log.println("\t unknown window");
                 }
@@ -277,10 +277,10 @@ public class _XRangeSelection extends MultiMethodTest {
             System.out.println("No TopWindow :-(");
             return null;
         }
-        
+
         XWindow xWindow = (XWindow)UnoRuntime.queryInterface(XWindow.class, tw);
         Rectangle posSize = xWindow.getPosSize();
-        
+
         // compare the center point with the dimensions of the current top window
         boolean windowOK = false;
         while(!windowOK) {
@@ -298,7 +298,7 @@ public class _XRangeSelection extends MultiMethodTest {
             else {
                 windowOK = true;
             }
-            
+
         }
 
         Point p = xAccessibleComponent.getLocationOnScreen();
@@ -309,8 +309,8 @@ public class _XRangeSelection extends MultiMethodTest {
         closer.Y = p.Y + 5;
         System.out.println("Closer: " + closer.X + "   " + closer.Y);
         return closer;
-    }    
-    
+    }
+
     protected boolean clickOnSheet(Point point) {
         log.println("Clicking in the center of the AccessibleSpreadsheet");
 
@@ -324,10 +324,10 @@ public class _XRangeSelection extends MultiMethodTest {
         } catch (java.awt.AWTException e) {
             log.println("couldn't press mouse button");
         }
-        
+
         return true;
     }
-    
+
     /**
      *
      */
@@ -340,32 +340,32 @@ public class _XRangeSelection extends MultiMethodTest {
         public MyRangeSelectionListener(PrintWriter log) {
             this.log = log;
         }
-        
+
         public void aborted(RangeSelectionEvent rangeSelectionEvent) {
             log.println("Called 'aborted' with: " + rangeSelectionEvent.RangeDescriptor);
             bAbortCalled = true;
         }
-        
+
         public void descriptorChanged(RangeSelectionEvent rangeSelectionEvent) {
             log.println("Called 'descriptorChanged' with: " + rangeSelectionEvent.RangeDescriptor);
             bChangeCalled = true;
         }
-        
+
         public void done(RangeSelectionEvent rangeSelectionEvent) {
             log.println("Called 'done' with: " + rangeSelectionEvent.RangeDescriptor);
             bDoneCalled = true;
         }
-        
+
         public boolean listenerCalled() {
             return bAbortCalled & bChangeCalled & bDoneCalled;
         }
-        
+
         public void reset() {
             bAbortCalled = false;
             bChangeCalled = false;
             bDoneCalled = false;
         }
-        
+
         /**
          * ignore disposing
          * @param eventObject The event.

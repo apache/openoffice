@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -39,7 +39,7 @@ template <typename T> struct ReleaseFunc : ::std::unary_function<T *, void> {
 /** Makes a boost::shared_ptr from a ref-counted UNO object pointer.
     This makes sense if the object is used via UNO (implementing some X
     interface) and also internally using its implementation class, e.g.
-    
+
     <pre>
         boost::shared_ptr<MyUnoImpl> const ptr(
             comphelper::make_shared_from_UNO( new MyUnoImpl ) );
@@ -49,12 +49,12 @@ template <typename T> struct ReleaseFunc : ::std::unary_function<T *, void> {
         takeSharedPtr( ptr );
         ...
     </pre>
-    
+
     @attention The shared_ptr operates on a separate reference counter, so
                weak pointers (boost::weak_ptr) are invalidated when the last
                shared_ptr is destroyed, although the UNO object may still be
                alive.
-               
+
     @param p object pointer
     @return shared_ptr to object
 */

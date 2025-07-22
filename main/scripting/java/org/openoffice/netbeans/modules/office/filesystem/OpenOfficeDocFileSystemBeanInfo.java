@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -32,7 +32,7 @@ import org.openide.filesystems.FileSystem;
 import org.openide.util.NbBundle;
 import org.openide.util.Utilities;
 
-/** 
+/**
  * Description of the OpenOffice.org Document filesystem.
  *
  * @author misha <misha@openoffice.org>
@@ -42,9 +42,9 @@ public class OpenOfficeDocFileSystemBeanInfo
 {
     private static String ICONLOCATION =
         "org/openoffice/netbeans/modules/office/resources";
-    private static String COLORICON16NAME = 
+    private static String COLORICON16NAME =
         ICONLOCATION + File.separator + "OpenOfficeDocFileSystemIcon.png";
-    private static String COLORICON32NAME = 
+    private static String COLORICON32NAME =
         ICONLOCATION + File.separator + "OpenOfficeDocFileSystemIcon32.png";
 
     /**
@@ -61,12 +61,12 @@ public class OpenOfficeDocFileSystemBeanInfo
             return null;
         }
     }
-/*    
-    // If you have a visual dialog to customize configuration of the 
+/*
+    // If you have a visual dialog to customize configuration of the
     // filesystem:
     public BeanDescriptor getBeanDescriptor()
     {
-        return new BeanDescriptor(OpenOfficeDocFileSystem.class, 
+        return new BeanDescriptor(OpenOfficeDocFileSystem.class,
             OpenOfficeDocFileSystemCustomizer.class);
     }
 */
@@ -76,7 +76,7 @@ public class OpenOfficeDocFileSystemBeanInfo
     public PropertyDescriptor[] getPropertyDescriptors()
     {
         try {
-            // Included only to make it a writable property (it is read-only 
+            // Included only to make it a writable property (it is read-only
             // in FileSystem):
             PropertyDescriptor readOnly = new PropertyDescriptor(
                 "readOnly", OpenOfficeDocFileSystem.class);
@@ -85,7 +85,7 @@ public class OpenOfficeDocFileSystemBeanInfo
             readOnly.setShortDescription(NbBundle.getMessage(
                 OpenOfficeDocFileSystemBeanInfo.class, "HINT_readOnly"));
 
-            // This could be whatever properties you use to configure the 
+            // This could be whatever properties you use to configure the
             // filesystem:
             PropertyDescriptor document = new PropertyDescriptor(
                 "Document", OpenOfficeDocFileSystem.class);
@@ -93,7 +93,7 @@ public class OpenOfficeDocFileSystemBeanInfo
                 OpenOfficeDocFileSystemBeanInfo.class, "PROP_document"));
             document.setShortDescription(NbBundle.getMessage(
                 OpenOfficeDocFileSystemBeanInfo.class, "HINT_document"));
-            // Request to the property editor that it be permitted only to 
+            // Request to the property editor that it be permitted only to
             // choose directories:
             document.setValue("directories", Boolean.FALSE);    // NOI18N
             document.setValue("files", Boolean.TRUE);           // NOI18N
@@ -104,7 +104,7 @@ public class OpenOfficeDocFileSystemBeanInfo
             return null;
         }
     }
-    
+
     /**
      * Retrieves an icon by the icon type.
      */
@@ -117,5 +117,5 @@ public class OpenOfficeDocFileSystemBeanInfo
             return Utilities.loadImage(COLORICON32NAME);
         }
     }
-    
+
 }

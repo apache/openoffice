@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -114,7 +114,7 @@ public abstract class NodeIterator implements Iterator {
 
         if (currentPosition < 0 || currentPosition >= nodeList.size()) {
             return null;
-        } 
+        }
 
         return nodeList.get(currentPosition);
     }
@@ -186,7 +186,7 @@ public abstract class NodeIterator implements Iterator {
                 break nodeCheck;
             }
 
-            // try to compare attributes 
+            // try to compare attributes
             if (!attributesEqual(node1, node2)) {
                 break nodeCheck;
             }
@@ -199,7 +199,7 @@ public abstract class NodeIterator implements Iterator {
             } else if (!node1.hasChildNodes() || !node2.hasChildNodes()) {
                 equal = false;
                 break nodeCheck;
-            // need to compare if both node has children  
+            // need to compare if both node has children
             } else if (!childrenEqual(node1, node2)) {
                 break nodeCheck;
             }
@@ -269,7 +269,7 @@ public abstract class NodeIterator implements Iterator {
 
         boolean equal = false;
         String nodeName = node1.getNodeName();
-        NamedNodeMap attrNode[] = new NamedNodeMap[2]; 
+        NamedNodeMap attrNode[] = new NamedNodeMap[2];
         attrNode[0] = node1.getAttributes();
         attrNode[1] = node2.getAttributes();
 
@@ -307,24 +307,24 @@ public abstract class NodeIterator implements Iterator {
                     String srcAttrName = srcAttr.getNodeName();
 
                     // copy the supported attrs
-                    if (cc_ == null || 
+                    if (cc_ == null ||
                         cc_.canConvertAttribute(nodeName, srcAttrName)) {
 
                         // check whether the attribute exist in dst node
                         Node dstAttr = attrNode[dst].getNamedItem(srcAttrName);
 
                         if (dstAttr == null)  {
-                            Debug.log(Debug.INFO, 
+                            Debug.log(Debug.INFO,
                                       "[NodeIterator] Attr not exist in dst - "
                                       + srcAttrName);
                             break attrCheck;
                         }
 
-                        // then compare the attribute values 
+                        // then compare the attribute values
                         if (!srcAttr.getNodeValue().equals(
                              dstAttr.getNodeValue())) {
-                            Debug.log(Debug.INFO, 
-                                      "[NodeIterator] Attr diff src: " + 
+                            Debug.log(Debug.INFO,
+                                      "[NodeIterator] Attr diff src: " +
                                       srcAttr.getNodeValue() + " dst: "+
                                       dstAttr.getNodeValue());
                             break attrCheck;

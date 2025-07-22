@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -76,12 +76,12 @@ class SVL_DLLPUBLIC SfxItemSet
 
 	//optimize a comparing operation from 'memcmp' to 'hash compare' to improve xls loading performance, i120575
 	sal_Int32 _aHashKey; //hash result of array of points: _aItems.
-	
+
 	void UpdateHashKey();
 	//Need invlidate the hashkey at every possible place where the array _aItems may be changed.
 	//thread safe : there is always solarmutex outter, so no need to add mutex here.
 	void InvalidateHashKey() { _aHashKey = 0;} //treat '0' as an invalidate key.
-	sal_Bool IsValidateHashKey() const { return (0!=_aHashKey);} 
+	sal_Bool IsValidateHashKey() const { return (0!=_aHashKey);}
 	sal_Int32 GetHashKey() const { return _aHashKey; }
 	//end:i120575
 	//---------------------------------------------------------------------
@@ -100,7 +100,7 @@ public:
 	//optimize a comparing operation from 'memcmp' to 'hash compare' to improve xls loading performance, i120575
 	//Make this method public is dangerous, may disrupt the item array. so invalidate the hash key here.
 	//currently this method is never called, pls also do not do it in future.
-	SfxItemArray	GetItems_Impl() const 
+	SfxItemArray	GetItems_Impl() const
 	{
 		const_cast<SfxItemSet &>(*this).InvalidateHashKey();
 		return _aItems;
@@ -182,9 +182,9 @@ public:
 	virtual SvStream &			Store( SvStream &, FASTBOOL bDirect = sal_False ) const;
 
 	virtual int                 operator==(const SfxItemSet &) const;
-	
+
 	//optimize a comparing operation from 'memcmp' to 'hash compare' to improve xls loading performance, i120575
-	//in some situation (e.g.. ScPatternAttr::operator== ), 
+	//in some situation (e.g.. ScPatternAttr::operator== ),
 	//two sfxitemset can be compared 'quickly' by the Hashkey only.
 	//may also update the hashkey in this method.
 	sal_Bool QuickCompare( SfxItemSet & rCmp);

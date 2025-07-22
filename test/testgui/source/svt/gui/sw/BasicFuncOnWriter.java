@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,20 +7,20 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 /**
- * 
+ *
  */
 package svt.gui.sw;
 
@@ -78,12 +78,12 @@ public class BasicFuncOnWriter {
 	public static void afterClass() throws Exception {
 		app.stop();
 	}
-	
+
 	@Before
 	public void before()throws Exception{
 		app.start(true);
 	}
-	
+
 	@Test
 	public void saveNewSWWithPic() throws Exception {
 		String pic = prepareData("image/blue_256x256.jpg");
@@ -104,7 +104,7 @@ public class BasicFuncOnWriter {
 		}
 	}
 
-	
+
 	@Test
 	public void saveNewSWWithBullet() throws Exception {
 		for (i = 1; i <= iterator; i++) {
@@ -125,14 +125,14 @@ public class BasicFuncOnWriter {
 			writer.typeKeys("<ctrl end>");
 			writer.typeKeys("<enter>");
 			sleep(2);
-			
+
 			writer.focus();
 			saveAndReopenNewSW(i);
 			long end = System.currentTimeMillis();
 			addRecord(i, start, end);
 		}
 	}
-	
+
 	@Test
 	public void saveNewSWWithUnDoDelete()throws Exception{
 		if(!sdDrawingToolbar.exists()){
@@ -153,8 +153,8 @@ public class BasicFuncOnWriter {
 			addRecord(i, start, end);
 		}
 	}
-	
-	
+
+
 	@Test
 	public void saveNewSWWithSpellCheck() throws Exception {
 		for (i = 1; i <= iterator; i++) {
@@ -196,7 +196,7 @@ public class BasicFuncOnWriter {
 			addRecord(i, start, end);
 		}
 	}
-	
+
 	@Test
 	public void saveNewSWWithFrameAnchor() throws Exception {
 		for (i = 1; i <= iterator; i++) {
@@ -222,7 +222,7 @@ public class BasicFuncOnWriter {
 			addRecord(i, start, end);
 		}
 	}
-	
+
 	@Test
 	public void saveNewSWWithSDAsOLE()throws Exception{
 		String linkFile = prepareData("pvt/plain_200p.odp");
@@ -237,20 +237,20 @@ public class BasicFuncOnWriter {
 			objectFileLink.check();
 			insertObject.ok();
 			sleep(10);
-			
+
 			writer.focus();
 			writer.doubleClick(200, 300);
 			sleep(15);
 			writer.activate();
 			writer.click(10, 10);
 			sleep(5);
-			
+
 			saveAndReopenNewSW(i);
 			long end = System.currentTimeMillis();
 			addRecord(i, start, end);
 		}
 	}
-	
+
 	@Test
 	public void saveNewSWWithTOC() throws Exception {
 		for (i = 1; i <= iterator; i++) {
@@ -324,7 +324,7 @@ public class BasicFuncOnWriter {
 			addRecord(i, start, end);
 		}
 	}
-	
+
 	@Test
 	public void addDelColumnsRowsInTableOnOpenedSW() throws Exception {
 		String file = prepareData("svt/swdesign.odt");
@@ -350,13 +350,13 @@ public class BasicFuncOnWriter {
 
 			writer.menuItem("Table->Delete->Columns").select();
 			sleep(2);
-			
+
 			closeWithoutSaveSW();
 			long end = System.currentTimeMillis();
 			addRecord(i, start, end);
 		}
 	}
-	
+
 	@Test
 	public void setParaPropertoesOnOpenedSW() throws Exception {
 		String file = prepareData("pvt/plain_200p.odt");
@@ -376,13 +376,13 @@ public class BasicFuncOnWriter {
 			sleep(2);
 			writer.typeKeys("<ctrl end>");
 			sleep(5);
-			
+
 			closeWithoutSaveSW();
 			long end = System.currentTimeMillis();
 			addRecord(i, start, end);
 		}
 	}
-	
+
 	@Test
 	public void InsertPicToOpenedSW() throws Exception {
 		String file = prepareData("pvt/plain_200p.odt");
@@ -400,13 +400,13 @@ public class BasicFuncOnWriter {
 			filePickerOpen.click();
 			sleep(5);
 			writer.typeKeys("<esc>");
-			sleep(2);			
+			sleep(2);
 			closeWithoutSaveSW();
 			long end = System.currentTimeMillis();
 			addRecord(i, start, end);
 		}
 	}
-	
+
 	@Test
 	public void InsertOLEToOpenedSW() throws Exception {
 		String file = prepareData("pvt/plain_200p.odt");
@@ -423,13 +423,13 @@ public class BasicFuncOnWriter {
 			typeKeys("<esc>");
 			sleep(5);
 			typeKeys("<esc>");
-			sleep(5);		
+			sleep(5);
 			closeWithoutSaveSW();
 			long end = System.currentTimeMillis();
 			addRecord(i, start, end);
 		}
 	}
-	
+
 	@Test
 	public void InsertChartToOpenedSW() throws Exception {
 		String file = prepareData("pvt/plain_200p.odt");
@@ -463,12 +463,12 @@ public class BasicFuncOnWriter {
 			submitOpenDlg(file);
 			writer.waitForExistence(10, 2);
 			app.dispatch(".uno:CloseDoc");
-			
+
 			long end = System.currentTimeMillis();
 			addRecord(i, start, end);
 		}
 	}
-	
+
 	@Test
 	public void openSWWithSecuritySignature()throws Exception{
 		String file = prepareData("svt/howtouse.odt");
@@ -478,17 +478,17 @@ public class BasicFuncOnWriter {
 			submitOpenDlg(file);
 			writer.waitForExistence(10, 2);
 			app.dispatch(".uno:CloseDoc");
-			
+
 			long end = System.currentTimeMillis();
 			addRecord(i, start, end);
 		}
 	}
-	
-	
+
+
 	private void createNewSW() {
 		app.dispatch("private:factory/swriter");
 	}
-	
+
 	private void saveAndReopenNewSW(int iterator) {
 		String saveTo = getPath("temp/" + "tempSW_New" + iterator + ".odt");
 		writer.menuItem("File->Save As...").select();
@@ -498,11 +498,11 @@ public class BasicFuncOnWriter {
 			activeMsgBox.yes();
 			sleep(2);
 		}
-		app.dispatch(".uno:CloseDoc");	
+		app.dispatch(".uno:CloseDoc");
 		startCenterOpenButton.waitForExistence(30, 2);
 		startCenterOpenButton.click();
 		submitOpenDlg(saveTo);
-		sleep(1);		
+		sleep(1);
 		app.dispatch(".uno:CloseDoc");
 	}
 
@@ -520,5 +520,5 @@ public class BasicFuncOnWriter {
 				perf.get("vsz"), perf.get("rss"), perf.get("handles"));
 		log.log( Level.INFO, "\t"+testname.getMethodName()+"["+i+"] took "+(end-start)+"ms");
 	}
-	
+
 }

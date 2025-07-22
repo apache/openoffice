@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -179,9 +179,9 @@ public class OfficeProvider implements AppProvider
         XMultiServiceFactory msf = connectOffice(cncstr);
 
         // if the office is running and the office crashes while testing it could
-        // be usesfull to restart the office if possible and continuing the tests. 
+        // be usesfull to restart the office if possible and continuing the tests.
         // Example: The UNO-API-Tests in the projects will be executed by calling
-        // 'damke'. This connects to an existing office. If the office crashes 
+        // 'damke'. This connects to an existing office. If the office crashes
         // it is useful to restart the office and continuing the tests.
         if ((param.getBool(util.PropertyName.AUTO_RESTART)) && (msf != null))
         {
@@ -706,7 +706,7 @@ public class OfficeProvider implements AppProvider
 
     /**
      * If the office is connected but the <CODE>AppExecutionCommand</CODE> is not set,
-     * this function asks the office for its location and fill the 
+     * this function asks the office for its location and fill the
      * <CODE>AppExecutionCommand</CODE> with valid contet.
      * This function was only called if parameter <CODE>AutoRestart</CODE> is set.
      * @param msf the <CODE>MultiServiceFactory</CODE>
@@ -810,20 +810,20 @@ public class OfficeProvider implements AppProvider
     }
 
 private void deleteFilesAndDirector(File file)
-        {   
-            File f = file;   
+        {
+            File f = file;
             if(f.isDirectory())
-            {   
-                File files[] = f.listFiles();   
+            {
+                File files[] = f.listFiles();
                 for(int i = 0; i < files.length; i++)
-                {   
-                    deleteFilesAndDirector(files[i]);   
-                }   
-                f.delete();   
+                {
+                    deleteFilesAndDirector(files[i]);
+                }
+                f.delete();
             }
             else if (f.isFile())
-            {   
-                f.delete();   
-            }   
-        }   
+            {
+                f.delete();
+            }
+        }
 }

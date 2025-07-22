@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -49,7 +49,7 @@ public class Factory_Test
     static final String m_impl_name = Factory_Test.class.getName();
     static final String m_supported_services [] = {
         "Factory_Test.Service0", "Factory_Test.Service1" };
-    
+
     //______________________________________________________________________________________________
     public Factory_Test()
     {
@@ -70,7 +70,7 @@ public class Factory_Test
     {
         return new Factory_Test( xContext );
     }
-    
+
     // XServiceInfo impl
     //______________________________________________________________________________________________
     public final String getImplementationName()
@@ -92,7 +92,7 @@ public class Factory_Test
     {
         return m_supported_services;
     }
-    
+
     //==============================================================================================
 	public static XSingleComponentFactory __getComponentFactory( String implName )
 	{
@@ -109,12 +109,12 @@ public class Factory_Test
 		return Factory.writeRegistryServiceInfo(
             m_impl_name, Factory_Test.m_supported_services, xKey );
     }
-    
+
     //==============================================================================================
     static void service_info_test( Object inst )
     {
         XServiceInfo xInfo = UnoRuntime.queryInterface( XServiceInfo.class, inst );
-        
+
         if (! xInfo.getImplementationName().equals( m_impl_name ))
         {
             System.err.println( "Factory_Test: err -- 1" );
@@ -149,7 +149,7 @@ public class Factory_Test
             String rdb = "file://" + new java.io.File( args[ 1 ] ).toURL().getPath();
             System.out.println( "jar file = " + jar );
             System.out.println( "rdb file = " + rdb );
-        
+
             // bootstrap service manager
             XMultiServiceFactory xMgr = RegistryServiceFactory.create( rdb );
             XPropertySet xProps = UnoRuntime.queryInterface(
@@ -170,7 +170,7 @@ public class Factory_Test
                     xContext.getServiceManager().createInstanceWithContext(
                         "com.sun.star.registry.ImplementationRegistration", xContext ) );
             xImpReg.registerImplementation( "com.sun.star.loader.Java2", jar, xRDB );
-            
+
             // tests
             System.out.println( "testing instance" );
             service_info_test( new Factory_Test() );

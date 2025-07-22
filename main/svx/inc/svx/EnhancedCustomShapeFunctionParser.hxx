@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -98,7 +98,7 @@ public:
     virtual ~ExpressionNode();
 
     /** Predicate whether this node is constant.
-            
+
         This predicate returns true, if this node is
         neither time- nor ViewInfo dependent. This allows
         for certain obtimizations, i.e. not the full
@@ -140,10 +140,10 @@ class FunctionParser
 public:
 
     /** Parse a string
-        
+
         The following grammar is accepted by this method:
         <code>
-		
+
 		number_digit = '0'|'1'|'2'|'3'|'4'|'5'|'6'|'7'|'8'|'9'
 
 		number = number number_digit | number_digit
@@ -157,10 +157,10 @@ public:
 
 		function_reference = '?' 'a-z,A-Z,0-9' ' '
 		modifier_reference = '$' '0-9' ' '
-					  
-		basic_expression = 
+
+		basic_expression =
 			number |
-			identifier | 
+			identifier |
 			function_reference |
 			unary_function '(' additive_expression ')' |
 			binary_function '(' additive_expression ',' additive_expression ')' |
@@ -169,17 +169,17 @@ public:
 
 		unary_expression = '-' basic_expression
 
-		multiplicative_expression = 
+		multiplicative_expression =
 						  basic_expression |
 						  multiplicative_expression '*' basic_expression |
 						  multiplicative_expression '/' basic_expression
 
-		additive_expression = 
+		additive_expression =
 						multiplicative_expression |
 						additive_expression '+' multiplicative_expression |
 						additive_expression '-' multiplicative_expression
 
-        </code> 
+        </code>
 
         @param rFunction
         The string to parse
@@ -196,7 +196,7 @@ public:
     SVX_DLLPUBLIC static ExpressionNodeSharedPtr parseFunction( const ::rtl::OUString& rFunction, const EnhancedCustomShape2d& rCustoShape );
 
 private:
-    // disabled constructor/destructor, since this is 
+    // disabled constructor/destructor, since this is
     // supposed to be a singleton
     FunctionParser();
 

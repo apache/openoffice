@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -50,7 +50,7 @@ private boolean checkBox;
  * @param xMSF A MultiServiceFactory.
  * @param log The log writer.
  */
-public SecurityDialogUtil(XMultiServiceFactory xMSF, String btnName, boolean checkBox ) 
+public SecurityDialogUtil(XMultiServiceFactory xMSF, String btnName, boolean checkBox )
 {
     this.xMSF = xMSF;
     this.btnName = btnName;
@@ -64,7 +64,7 @@ public SecurityDialogUtil(XMultiServiceFactory xMSF, String btnName, boolean che
  * accessing and pressing the button.
  * @return Error message.
  */
-public String getErrorMessage() 
+public String getErrorMessage()
 {
     return errorMsg;
 }
@@ -73,7 +73,7 @@ public String getErrorMessage()
  * Is there an error message available?
  * @return true, if an error happened
  */
-public boolean hasErrorMessage() 
+public boolean hasErrorMessage()
 {
     return !errorMsg.equals("");
 }
@@ -81,22 +81,22 @@ public boolean hasErrorMessage()
 /**
  * Press the named button in the currently visible dialog box.
  */
-public void run() 
+public void run()
 {
     // wait for the message box to appear
-    try 
+    try
     {
         Thread.currentThread().sleep(4000) ;
-    } 
-    catch (InterruptedException e) 
+    }
+    catch (InterruptedException e)
     {
         System.err.println("While waiting :" + e.getMessage()) ;
     }
 
     // access the message box
-   
+
      XAccessibleContext xCon = null;
-    try 
+    try
     {
         XInterface x = (XInterface) xMSF.createInstance(
                                     "com.sun.star.awt.Toolkit") ;
@@ -108,8 +108,8 @@ public void run()
                                 XWindow.class,tk.getActiveTopWindow());
         XAccessible xRoot = at.getAccessibleObject(xWindow);
         xCon = xRoot.getAccessibleContext();
-    } 
-    catch (Exception e) 
+    }
+    catch (Exception e)
     {
         errorMsg="Exception while using Accessibility\n"+
                                                     e.getMessage();
@@ -117,7 +117,7 @@ public void run()
     }
     // get the button
     XInterface oObj = null;
-    try 
+    try
     {
         /* System.err.println("Name of the AccessibleContext:\n\t"+
                                         xCon.getAccessibleName()); */

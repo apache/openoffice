@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 import java.io.*;
@@ -25,7 +25,7 @@ import java.util.Vector;
 
 public class SubscribedNewsgroups {
 
-	
+
 	private static NewsGroup[] allSubscribed = null;
 	private static boolean windows = false;
 
@@ -34,7 +34,7 @@ public class SubscribedNewsgroups {
 		SubscribedNewsgroups subscribed = new SubscribedNewsgroups();
 
 		NewsGroup allGroups[] = subscribed.getNewsGroups();
-		
+
 		if( allGroups == null )
 		{
 			System.out.println("Could not find subscribed newsgroups from mozilla/netscape mailrc files");
@@ -43,23 +43,23 @@ public class SubscribedNewsgroups {
 		{
 			for( int i=0; i < allGroups.length; i++ )
 			{
-				System.out.println( "Hostname is: " + allGroups[i].getHostName() + " Newsgroup is: " + allGroups[i].getNewsgroupName() );	
+				System.out.println( "Hostname is: " + allGroups[i].getHostName() + " Newsgroup is: " + allGroups[i].getNewsgroupName() );
 			}
 		}
 	}
-		
+
 
 
 	// Only public method of the class
 	// Returns and array of unique NewsGroup objects
-	public NewsGroup[] getNewsGroups() 
+	public NewsGroup[] getNewsGroups()
 	{
 		windows = false;
 		if( System.getProperty( "os.name" ).indexOf( "Windows" ) != -1 )
 		{
 			windows = true;
 		}
-		
+
 		String mozillaHome = "";
 		if( windows )
 		{
@@ -121,15 +121,15 @@ public class SubscribedNewsgroups {
 
 		Vector subscribed = new Vector();
 		// Get the newsgroups in each mailrc file
-		for( int i=0; i < allMailrcs.length; i++ ) 
+		for( int i=0; i < allMailrcs.length; i++ )
 		{
 			File mailrc = (File) allMailrcs[i];
 			NewsGroup newsgroup[] = findNewsgroups( mailrc );
 			//if the Newsgroup has not already been added to the list
-			for( int j=0; j < newsgroup.length; j++ ) 
+			for( int j=0; j < newsgroup.length; j++ )
 			{
 				// if newsgroup is unique then add to the list
-				if( !listed( newsgroup[j], subscribed ) ) 
+				if( !listed( newsgroup[j], subscribed ) )
 				{
 					subscribed.addElement( newsgroup[j] );
 				}
@@ -140,7 +140,7 @@ public class SubscribedNewsgroups {
 		allSubscribed = new NewsGroup[ subscribed.size() ];
 		subscribed.copyInto( allSubscribed );
 		// Test that at least one subscribed newsgroup has been found
-		if( allSubscribed.length < 1 ) 
+		if( allSubscribed.length < 1 )
 		{
 			//System.out.println("Could not find Subscribed newsgroups ");
 			return null;
@@ -160,7 +160,7 @@ public class SubscribedNewsgroups {
 		{
 			NewsGroup tempGroup = (NewsGroup) uniqueSubscription.elementAt(i);
 			// Test for duplication
-			if(newsgroup.getHostName().equalsIgnoreCase( tempGroup.getHostName()) && 
+			if(newsgroup.getHostName().equalsIgnoreCase( tempGroup.getHostName()) &&
 			   newsgroup.getNewsgroupName().equalsIgnoreCase( tempGroup.getNewsgroupName() ) )
 				return true;
 		}
@@ -171,7 +171,7 @@ public class SubscribedNewsgroups {
 
 
 	// Finds all the NewsGroups in an individual mailrc file
-	private static NewsGroup[] findNewsgroups(File mailrcfile ) 
+	private static NewsGroup[] findNewsgroups(File mailrcfile )
 	{
 
 		String hostname = "";
@@ -181,7 +181,7 @@ public class SubscribedNewsgroups {
 		//Retrieve name of news host/server from file name
 		//Sequentially access each of the newsgroups
 		//If the newsgroup is not already contained in the global NewsGroup[] array then add it
-	
+
 		String filename = mailrcfile.getPath();
 		if( windows )
 		{
@@ -206,9 +206,9 @@ public class SubscribedNewsgroups {
 			String inString = "";
 			int line = 0;
 			while( inString != null )
-			{ 
+			{
 				in.setLineNumber( line );
-				inString = in.readLine(); 
+				inString = in.readLine();
 				line++;
 				if( inString != null )
 				{
@@ -224,11 +224,11 @@ public class SubscribedNewsgroups {
 		}
 		catch( IOException ioe ) {
 			ioe.printStackTrace();
-		}	
+		}
 
 		return mailrcNewsGroups;
 	}
-		
+
 
 	// Finds all the mailrc files for all the given News directories
 	private static File[] findMailrcFiles(File[] newsDirs)
@@ -240,11 +240,11 @@ public class SubscribedNewsgroups {
 			//System.out.println( "Finding mailrc for: " + newsDirs[i] );
 			if( newsDirs[i] != null )
 			{
-				File mailrcFiles[] = newsDirs[i].listFiles( new VersionFilter() );		
+				File mailrcFiles[] = newsDirs[i].listFiles( new VersionFilter() );
 				if( mailrcFiles != null )
 				{
 					//System.out.println( "Number found: " + mailrcFiles.length );
-					for( int j=0; j < mailrcFiles.length; j++ ) 
+					for( int j=0; j < mailrcFiles.length; j++ )
 					{
 						//System.out.println( "This mailrc was found: " + mailrcFiles[j] );
 						allFiles.addElement( mailrcFiles[j] );
@@ -252,7 +252,7 @@ public class SubscribedNewsgroups {
 				}
 			}
 		}
-		File allMailrcFiles[] = new File[ allFiles.size() ]; 
+		File allMailrcFiles[] = new File[ allFiles.size() ];
 		allFiles.copyInto(allMailrcFiles);
 
 		//System.out.println( "number of mailrcs in total: " + allMailrcFiles.length );
@@ -261,7 +261,7 @@ public class SubscribedNewsgroups {
 			//System.out.println( "Returning null");
 			return null;
 		}
-		
+
 		//System.out.println( "Returning an File array containing mailrcs");
 		return allMailrcFiles;
 	}
@@ -285,13 +285,13 @@ public class SubscribedNewsgroups {
 			}
 		}
 
-		// Add each directory to a user profile array 
+		// Add each directory to a user profile array
 		File[] profileDirs = new File[dirCounter];
 		for( int i=0; i < dirCounter; i++ )
 		{
 			profileDirs[i] = dirs[i];
 		}
-		
+
 		// return a File array containing the profile dirs
 		return profileDirs;
 	}
@@ -320,8 +320,8 @@ public class SubscribedNewsgroups {
                                 }
                         }
                 }
-                else 
-		{ 
+                else
+		{
 			// end recursion
 			// Check for a News directory inside the News directory (fix for bug)
 			// Original solution had only "mailrcFile = files[0];"
@@ -349,7 +349,7 @@ public class SubscribedNewsgroups {
 				String childNewsPathName = files[0].getAbsolutePath() + System.getProperty( "file.separator" ) + "News";
 				mailrcFile = new File( childNewsPathName );
 			}
-			
+
 		}
 
 		// return a File representing the News dir in a profile
@@ -371,14 +371,14 @@ class DirFilter implements FileFilter
 class VersionFilter implements FileFilter
 {
         public boolean accept(File aFile)
-        {	
+        {
 		if( System.getProperty( "os.name" ).indexOf( "Windows" ) != -1 )
 		{
 			if (aFile.getName().compareToIgnoreCase("News") == 0 ||
-			aFile.getName().indexOf(".rc") != -1 ) 
+			aFile.getName().indexOf(".rc") != -1 )
 			{
 				return true;
-			}			
+			}
 		}
 		else
 		{

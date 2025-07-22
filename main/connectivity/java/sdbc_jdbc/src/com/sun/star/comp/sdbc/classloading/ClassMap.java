@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 package com.sun.star.comp.sdbc.classloading;
 
@@ -58,19 +58,19 @@ import com.sun.star.util.XMacroExpander;
  * Class is simply re-loaded.
  */
 public class ClassMap {
-    
+
     private static class ClassMapEntry {
         String classPath;
         String className;
         WeakReference<ClassLoader> classLoader;
         WeakReference<Class<?>> classObject;
     }
-    
+
     private final LinkedList<ClassMapEntry> map = new LinkedList<>();
-    
+
     public synchronized ClassLoaderAndClass loadClass(XComponentContext context, String classPath, String className)
             throws MalformedURLException, ClassNotFoundException {
-        
+
         ClassLoader classLoader = null;
         Class<?> classObject = null;
         // Prune dangling weak references from the list while searching for a match,
@@ -112,7 +112,7 @@ public class ClassMap {
         }
         return new ClassLoaderAndClass(classLoader, classObject);
     }
-    
+
     private static List<URL> translateToUrls(XComponentContext context, String classPath) throws MalformedURLException {
         StringTokenizer tokenizer = new StringTokenizer(classPath, " ", false);
         ArrayList<URL> urls = new ArrayList<>();

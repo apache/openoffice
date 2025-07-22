@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 package org.openoffice.test.common;
@@ -46,7 +46,7 @@ import java.util.zip.ZipInputStream;
 
 /**
  * Utilities related to system
- * 
+ *
  */
 public class SystemUtil {
 
@@ -57,13 +57,13 @@ public class SystemUtil {
 	private static final File SCRIPT_TEMP_DIR = Testspace.getFile("bin");
 
 	private static String platform = System.getProperty("os.name");
-	
+
 	private static String osName = System.getProperty("os.name");
-	
+
 	private static String osVersion  = System.getProperty("os.version");
-	
+
 	private static String osArch = System.getProperty("os.arch");
-	
+
 	static {
 		if (isLinux()) {
 			StringBuffer output = new StringBuffer();
@@ -71,14 +71,14 @@ public class SystemUtil {
 				osName = output.toString().trim();
 			output.setLength(0);
 			if (exec(new String[]{"lsb_release", "-rs"}, output) == 0)
-				osVersion = output.toString().trim();	
+				osVersion = output.toString().trim();
 		}
 	}
 
 	/**
 	 * Play beep sound! The method doesn't work, if the code is executed on
 	 * Eclipse IDE.
-	 * 
+	 *
 	 */
 	public static void beep() {
 		System.out.print("\007\007\007");
@@ -96,7 +96,7 @@ public class SystemUtil {
 	public static boolean isMac() {
 		return platform.startsWith("Mac");
 	}
-	
+
 	public static boolean isBSD() {
 		return platform.endsWith("BSD");
 	}
@@ -104,15 +104,15 @@ public class SystemUtil {
 	public static String getOSName() {
 		return osName;
 	}
-	
+
 	public static String getOSVersion() {
 		return osVersion;
 	}
-	
+
 	public static String getOSArch() {
 		return osArch;
 	}
-	
+
 	/**
 	 * Set the contents of the clipboard to the provided text
 	 */
@@ -144,7 +144,7 @@ public class SystemUtil {
 
 	/**
 	 * Get plain text from clipboard
-	 * 
+	 *
 	 * @return
 	 */
 	public static String getClipboardText() {
@@ -175,7 +175,7 @@ public class SystemUtil {
 
 	/**
 	 * Execute a script and waiting it for finishing
-	 * 
+	 *
 	 * @param content
 	 * @return
 	 */
@@ -185,7 +185,7 @@ public class SystemUtil {
 		LOG.info(content + "\n" + "Exit Code: " + code + "\n" + output);
 		return code;
 	}
-	
+
 	/**
 	 * Execute a script and waiting it for finishing
 	 * @param content
@@ -207,11 +207,11 @@ public class SystemUtil {
 		} catch (Exception e) {
 			return -1;
 		} finally {
-			if (file != null && !file.delete()) 
+			if (file != null && !file.delete())
 				file.deleteOnExit();
 		}
 	}
-	
+
 	/**
 	 * Start a background process
 	 * @param cmd
@@ -252,12 +252,12 @@ public class SystemUtil {
 			e.printStackTrace();
 			return -1;
 		}
-		
+
 		StreamPump inputPump = new StreamPump(output, process.getInputStream());
 		StreamPump errorPump = new StreamPump(error, process.getErrorStream());
 		inputPump.start();
 		errorPump.start();
-		
+
 		try {
 			int code = process.waitFor();
 			inputPump.join();
@@ -271,10 +271,10 @@ public class SystemUtil {
 	public static int exec(String[] cmd, StringBuffer output) {
 		return exec(cmd, null, null, output, output);
 	}
-	
+
 	/**
 	 * Make the current thread sleep some seconds.
-	 * 
+	 *
 	 * @param second
 	 */
 	public static void sleep(double second) {
@@ -287,7 +287,7 @@ public class SystemUtil {
 
 	/**
 	 * Get Information of running processes
-	 * 
+	 *
 	 */
 	public static List<HashMap<String, Object>> getProcesses() {
 		List<HashMap<String, Object>> ret = new ArrayList<HashMap<String, Object>>();
@@ -324,7 +324,7 @@ public class SystemUtil {
 					switch (col) {
 					case 0:
 						if (!" ".equals(token)) {
-							// 
+							//
 							p.put("pid", token);
 							col++;
 						}
@@ -334,7 +334,7 @@ public class SystemUtil {
 						break;
 					}
 				}
-				
+
 				p.put("command", last.toString().trim());
 				ret.add(p);
 			}
@@ -359,11 +359,11 @@ public class SystemUtil {
 			}
 		}
 	}
-	
+
 	public static boolean hasProcess(String pattern) {
 		return findProcess(pattern) != null;
 	}
-	
+
 	public static HashMap<String, Object> findProcess(String pattern) {
 		List<HashMap<String, Object>> processes = SystemUtil.getProcesses();
 		for (HashMap<String, Object> p : processes) {
@@ -372,10 +372,10 @@ public class SystemUtil {
 				return p;
 			}
 		}
-		
+
 		return null;
 	}
-	
+
 	public static List<HashMap<String, Object>> findProcesses(String pattern) {
 		List<HashMap<String, Object>> result = new ArrayList<HashMap<String, Object>>();
 		List<HashMap<String, Object>> processes = SystemUtil.getProcesses();
@@ -385,13 +385,13 @@ public class SystemUtil {
 				result.add(p);
 			}
 		}
-		
+
 		return result;
 	}
-	
+
 	/**
 	 * Get Information of running processes
-	 * 
+	 *
 	 */
 	public static HashMap<String, Object> getProcessPerfData(String processId) {
 		try {
@@ -428,21 +428,21 @@ public class SystemUtil {
 					switch (col) {
 					case 0:
 						if (!" ".equals(token)) {
-							// 
+							//
 							p.put("pcpu", Double.parseDouble(token));
 							col++;
 						}
 						break;
 					case 1:
 						if (!" ".equals(token)) {
-							// 
+							//
 							p.put("vsz", Long.parseLong(token));
 							col++;
 						}
 						break;
 					case 2:
 						if (!" ".equals(token)) {
-							// 
+							//
 							p.put("rss", Long.parseLong(token));
 							col++;
 						}
@@ -455,7 +455,7 @@ public class SystemUtil {
 							} catch (Exception e) {
 								p.put("handles", 0l);
 							}
-							
+
 							col++;
 						}
 						break;
@@ -469,10 +469,10 @@ public class SystemUtil {
 
 		return null;
 	}
-	
+
 	/**
 	 * parse a string to arguments array.
-	 * 
+	 *
 	 * @param line
 	 * @return
 	 */
@@ -530,7 +530,7 @@ public class SystemUtil {
 			return null;
 		}
 	}
-	
+
 	/**
 	 * Get local host name
 	 * @return
@@ -541,9 +541,9 @@ public class SystemUtil {
 		} catch (UnknownHostException e) {
 			return null;
 		}
-		
+
 	}
-	
+
 	public static List<String> getClassesInPackage(String packageName) {
 		ArrayList<String> classes = new ArrayList<String>();
 		ClassLoader classLoader = Thread.currentThread().getContextClassLoader();
@@ -589,8 +589,8 @@ public class SystemUtil {
 			}
 		}
 	}
-	
-	
+
+
 	private static void findClasses(String packageName, URL jar, List<String> classes) {
 		try {
 			ZipInputStream zip = new ZipInputStream(jar.openStream());

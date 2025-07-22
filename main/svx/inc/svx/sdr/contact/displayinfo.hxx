@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -57,18 +57,18 @@ namespace sdr
 			Region											maRedrawArea;
 
 			// bitfield
-			
+
 			// Internal flag to know when the control layer is painted. Default is
-			// false. If set to true, painting of the page, page borders and 
+			// false. If set to true, painting of the page, page borders and
 			// the rasters will be suppressed as if mbPageProcessingActive is set (see there).
             // This flag is set internally from the processing mechanism to avoid double page
 			// painting when the control layer needs to be painted as last layer
 			unsigned										mbControlLayerProcessingActive : 1;
 
 			// Internal flag to decide if page stuff (background, border, MasterPage, grid, etc...)
-            // will be processed at all. This flag is user-defined and will not be changed from the 
+            // will be processed at all. This flag is user-defined and will not be changed from the
             // processing mechanism. Default is true, thus set to false if PagePainting should be suppressed.
-            // For more granular switching page stuff painting on and off, use the according flags at the 
+            // For more granular switching page stuff painting on and off, use the according flags at the
             // view (->Is*Visible())
 			unsigned										mbPageProcessingActive : 1;
 
@@ -79,7 +79,7 @@ namespace sdr
 			unsigned										mbGhostedDrawModeActive : 1;
 
 			// Internal flag to know if a MasterPage is processed as SubContent of another
-            // page. Initialized to false, this should only be changed from the instance which 
+            // page. Initialized to false, this should only be changed from the instance which
             // is processing the MasterPage asSubContent and knows what it does
 			unsigned										mbSubContentActive : 1;
 

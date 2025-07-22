@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -30,7 +30,7 @@ import com.sun.star.registry.XRegistryKey;
 /**
  * @deprecated use class Bootstrap bootstrapping a native UNO installation
  *             and use the shared library loader service.
- * 
+ *
  * The <code>SharedLibraryLoader</code> class provides the functionality of the <code>com.sun.star.loader.SharedLibrary</code>
  * service.
  * <p>
@@ -39,25 +39,25 @@ import com.sun.star.registry.XRegistryKey;
  * @see	        "com.sun.star.lang.ServiceManager"
  */
 public class SharedLibraryLoader {
-	/** 
-	 * The default library which contains the SharedLibraryLoader component 
+	/**
+	 * The default library which contains the SharedLibraryLoader component
 	 */
 	public static final String DEFAULT_LIBRARY = "shlibloader.uno";
 
-	/** 
+	/**
 	 * The default implementation name
 	 */
 	public static final String DEFAULT_IMPLEMENTATION = "com.sun.star.comp.stoc.DLLComponentLoader";
-	
+
 	static {
 		System.loadLibrary("juh");
 	}
-		
-	private static native boolean component_writeInfo( 
+
+	private static native boolean component_writeInfo(
 			String libName, XMultiServiceFactory smgr, XRegistryKey regKey,
             ClassLoader loader );
-	
-	private static native Object component_getFactory( 
+
+	private static native Object component_getFactory(
 			String libName, String implName, XMultiServiceFactory smgr,
             XRegistryKey regKey, ClassLoader loader );
 
@@ -75,11 +75,11 @@ public class SharedLibraryLoader {
 	 * @see		"com.sun.star.registry.RegistryKey"
 	 */
 	public static XSingleServiceFactory getServiceFactory(
-				XMultiServiceFactory smgr, 
+				XMultiServiceFactory smgr,
 				XRegistryKey regKey )
 	{
 		return UnoRuntime.queryInterface(
-					XSingleServiceFactory.class, 
+					XSingleServiceFactory.class,
 					component_getFactory(
                         DEFAULT_LIBRARY, DEFAULT_IMPLEMENTATION, smgr, regKey,
                         SharedLibraryLoader.class.getClassLoader() ) );
@@ -100,16 +100,16 @@ public class SharedLibraryLoader {
 	public static XSingleServiceFactory getServiceFactory(
 				String libName,
 				String impName,
-				XMultiServiceFactory smgr, 
+				XMultiServiceFactory smgr,
 				XRegistryKey regKey )
 	{
 		return UnoRuntime.queryInterface(
-					XSingleServiceFactory.class, 
+					XSingleServiceFactory.class,
 					component_getFactory(
                         libName, impName, smgr, regKey,
                         SharedLibraryLoader.class.getClassLoader() ) );
 	}
-	
+
 	/**
 	 * Registers the SharedLibraryLoader under a RegistryKey.
 	 * <p>
@@ -121,7 +121,7 @@ public class SharedLibraryLoader {
 	 * @see		"com.sun.star.registry.RegistryKey"
 	 */
 	public static boolean writeRegistryServiceInfo(
-				com.sun.star.lang.XMultiServiceFactory smgr, 
+				com.sun.star.lang.XMultiServiceFactory smgr,
 				com.sun.star.registry.XRegistryKey regKey )
 	{
 		return component_writeInfo(
@@ -142,10 +142,10 @@ public class SharedLibraryLoader {
 	 */
 	public static boolean writeRegistryServiceInfo(
 				String libName,
-				com.sun.star.lang.XMultiServiceFactory smgr, 
+				com.sun.star.lang.XMultiServiceFactory smgr,
 				com.sun.star.registry.XRegistryKey regKey )
-				
-			throws 	com.sun.star.registry.InvalidRegistryException, 
+
+			throws 	com.sun.star.registry.InvalidRegistryException,
 					com.sun.star.uno.RuntimeException
 	{
 		return component_writeInfo(

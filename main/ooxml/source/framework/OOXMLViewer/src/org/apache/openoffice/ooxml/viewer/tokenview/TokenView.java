@@ -41,7 +41,7 @@ import javax.swing.JScrollPane;
 import javax.swing.UIManager;
 
 /** A simple view of tokenized content.
- *  
+ *
  *  Create the content by calling GetDocumentFactory() and using the returned
  *  factory to add tokenized text.
  */
@@ -58,15 +58,15 @@ public class TokenView<TokenType>
         addMouseMotionListener(this);
         addComponentListener(this);
     }
-    
-    
-    
-    
+
+
+
+
     @Override
     public void paintComponent (final Graphics aGraphics)
     {
         super.paintComponent(aGraphics);
-        
+
         final Graphics2D aG2 = (Graphics2D)aGraphics;
         aG2.setRenderingHint(RenderingHints.KEY_TEXT_ANTIALIASING, RenderingHints.VALUE_TEXT_ANTIALIAS_DEFAULT);
 
@@ -81,7 +81,7 @@ public class TokenView<TokenType>
         {
             PaintLineHighlight(aG2, aLine);
             PaintLineNumber(aG2, aLine);
-            
+
             int nX = mnTextStart;
             for (final Run<TokenType> aRun : aLine)
             {
@@ -101,11 +101,11 @@ public class TokenView<TokenType>
                 nX += aRun.GetWidth();
             }
         }
-        
+
         aGraphics.setColor(maSeparatorColor);
 
         final int nTop = aGraphics.getClipBounds().y;
-        final int nBottom = aGraphics.getClipBounds().y+aGraphics.getClipBounds().height; 
+        final int nBottom = aGraphics.getClipBounds().y+aGraphics.getClipBounds().height;
         aGraphics.drawLine(
             mnBarPosition0,
             nTop,
@@ -118,9 +118,9 @@ public class TokenView<TokenType>
             nBottom);
     }
 
-    
-    
-    
+
+
+
     /** Paint a line with a highlight.
      *  There are different kinds of highlight:
      *  - the current line
@@ -160,10 +160,10 @@ public class TokenView<TokenType>
             getWidth() - mnLeftBarWidth,
             aLine.GetHeight());
     }
-    
-    
-    
-    
+
+
+
+
     private void PaintLineNumber (
         final Graphics2D aG2,
         final Line<TokenType> aLine)
@@ -180,10 +180,10 @@ public class TokenView<TokenType>
             mnBarPosition0+1 + mnNumberBarWidth-nWidth,
             aLine.GetBottom() - (aLine.GetHeight()-nHeight)/2 - aMetrics.getDescent());
     }
-    
-    
-    
-    
+
+
+
+
     @Override
     public void mouseDragged (final MouseEvent aEvent)
     {
@@ -203,14 +203,14 @@ public class TokenView<TokenType>
             SetRunUnderMouse(aRun);
         }
     }
-    
-    
-    
-    
+
+
+
+
     private void UpdateHighlightedLine (final Line<TokenType> aLine)
     {
         HighlightLine(aLine);
-        
+
         final Iterator<Run<TokenType>> aRunIterator = aLine.iterator();
         if (aRunIterator.hasNext())
         {
@@ -219,29 +219,29 @@ public class TokenView<TokenType>
                 HighlightGroup(aRun);
             else
                 HighlightGroup(aRun.GetParent());
-        }   
+        }
     }
 
-    
-    
-    
+
+
+
     @Override
     public void RequestRepaint()
     {
         repaint();
     }
 
-    
-    
-    
+
+
+
     public DocumentFactory<TokenType> GetDocumentFactory()
     {
         return new DocumentFactory<TokenType>(maLines, this);
     }
 
-    
-    
-    
+
+
+
     private void HighlightLine (final Line<TokenType> aLine)
     {
         if (aLine != maHighlightedLine)
@@ -250,21 +250,21 @@ public class TokenView<TokenType>
             repaint();
         }
     }
-    
-    
-    
-    
+
+
+
+
     private void HighlightGroup (final Run<TokenType> aRun)
     {
         if (maHighlightedGroup0 != aRun)
         {
             maHighlightedGroup0 = aRun;
-                
+
             if (aRun != null)
             {
                 final Run<TokenType> aGroup1 = aRun.GetParent();
                 maHighlightedGroup1 = aGroup1;
-                
+
                 if (aGroup1 != null)
                 {
                     final Run<TokenType> aGroup2 = aGroup1.GetParent();
@@ -274,10 +274,10 @@ public class TokenView<TokenType>
             repaint();
         }
     }
-    
-    
-    
-    
+
+
+
+
     @Override
     public void componentHidden(ComponentEvent e)
     {
@@ -308,11 +308,11 @@ public class TokenView<TokenType>
     @Override
     public void componentShown(ComponentEvent e)
     {
-    } 
+    }
 
-    
-    
-    
+
+
+
     public Run<TokenType> GetRun (final int nOffset)
     {
         final Line<TokenType> aLine = maLines.GetLineForOffset(nOffset);
@@ -323,34 +323,34 @@ public class TokenView<TokenType>
     }
 
 
-    
-    
+
+
     /** Return all runs that completely or partially lie in the range from
      *  start offset (including) and end offset (excluding).
      */
     public RunRange<TokenType> GetRuns (final int nStartOffset, final int nEndOffset)
     {
         final Vector<Run<TokenType>> aRuns = new Vector<>();
-        
+
         for (final Line<TokenType> aLine : maLines.GetLinesForOffsets(nStartOffset, nEndOffset))
             for (final Run<TokenType> aRun : aLine.GetRunsForOffsets(nStartOffset, nEndOffset))
                 aRuns.add(aRun);
-        
+
         return new RunRange<TokenType>(aRuns);
     }
 
 
-    
-    
+
+
     public void MarkError (final Run<TokenType> aRun)
     {
         maHighlightedErrorRun = aRun;
         repaint();
     }
-    
-    
-    
-    
+
+
+
+
     public void ShowRun (final Run<TokenType> aRun)
     {
         final Container aComponent = getParent().getParent();
@@ -360,8 +360,8 @@ public class TokenView<TokenType>
     }
 
 
-    
-    
+
+
     private void SetRunUnderMouse (final Run<TokenType> aRun)
     {
         if (maRunUnderMouse != aRun)
@@ -374,10 +374,10 @@ public class TokenView<TokenType>
             repaint();
         }
     }
-    
-    
-    
-    
+
+
+
+
     private final LineContainer<TokenType> maLines;
     private final Formatter<TokenType> maFormatter;
     private Line<TokenType> maHighlightedLine;
@@ -400,7 +400,7 @@ public class TokenView<TokenType>
     private final static Color maGroupHighlightColor2 = new Color(0xbbFfbb);
     private final static Color maErrorHighlightColor = new Color(0xff3020);
     private final static Color maLineNumberColor = new Color(0x808080);
-    private final static Color maRunUnderMouseColor = maGroupHighlightColor2; 
+    private final static Color maRunUnderMouseColor = maGroupHighlightColor2;
     private final static Font maLineNumberFont = UIManager.getDefaults().getFont("TextField.font").deriveFont(9.0f);
 
 }

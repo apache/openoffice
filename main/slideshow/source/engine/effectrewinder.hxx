@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -63,7 +63,7 @@ public:
 
     /** Call Dispose() before the ownder of an EffectRewinder object dies so
         that the EffectRewinder can release all references to the owner.
-        
+
     */
     void dispose (void);
 
@@ -108,7 +108,7 @@ private:
     EventMultiplexer& mrEventMultiplexer;
     EventQueue& mrEventQueue;
     UserEventQueue& mrUserEventQueue;
-    
+
     EventHandlerSharedPtr mpSlideStartHandler;
     EventHandlerSharedPtr mpSlideEndHandler;
     AnimationEventHandlerSharedPtr mpAnimationStartHandler;
@@ -122,12 +122,12 @@ private:
         nested rewinds.
     */
     EventSharedPtr mpAsynchronousRewindEvent;
-    
+
     css::uno::Reference<css::animations::XAnimationNode> mxCurrentAnimationRootNode;
     ::boost::shared_ptr<ScreenUpdater::UpdateLock> mpPaintLock;
 
     bool mbNonUserTriggeredMainSequenceEffectSeen;
-    
+
     void initialize (void);
 
     bool resetEffectCount (void);
@@ -144,7 +144,7 @@ private:
     /** Skip the next main sequence effect.
     */
     void skipSingleMainSequenceEffects (void);
-    
+
     /** Skip the specified number of main sequence effects.
     */
     void skipSomeMainSequenceEffects (const sal_Int32 nSkipCount);

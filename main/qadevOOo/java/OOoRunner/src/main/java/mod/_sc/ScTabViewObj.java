@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -91,15 +91,15 @@ import com.sun.star.uno.XInterface;
 public class ScTabViewObj extends TestCase {
     public static XSpreadsheetDocument xSpreadsheetDoc;
     public static XSpreadsheetDocument xSpreadsheetDoc2;
-    
+
     /**
      * Creates Spreadsheet document.
      */
     public void initialize( TestParameters Param, PrintWriter log ) {
         // get a soffice factory object
-        
+
         SOfficeFactory SOF = SOfficeFactory.getFactory( (XMultiServiceFactory)Param.getMSF());
-        
+
         try {
             log.println("creating two spreadsheet documents");
             xSpreadsheetDoc = SOF.createCalcDoc(null);
@@ -112,7 +112,7 @@ public class ScTabViewObj extends TestCase {
             throw new StatusException( "Couldn't create document ", e );
         }
     }
-    
+
     /**
      * Disposes Spreadsheet document.
      */
@@ -125,7 +125,7 @@ public class ScTabViewObj extends TestCase {
         UnoRuntime.queryInterface(XComponent.class, xSpreadsheetDoc2) ;
         util.DesktopTools.closeDoc(oComp2);
     }
-    
+
     /**
      * Creating a Testenvironment for the interfaces to be tested.
      * Retieves the current controller of the spreadsheet document using the
@@ -143,18 +143,18 @@ public class ScTabViewObj extends TestCase {
      */
     protected synchronized TestEnvironment createTestEnvironment(TestParameters Param, PrintWriter log) {
         XDrawPage oDrawPage = null;
-        
+
         XModel aModel = (XModel)
         UnoRuntime.queryInterface(XModel.class, xSpreadsheetDoc);
-        
+
         XModel aSecondModel = (XModel)
         UnoRuntime.queryInterface(XModel.class, xSpreadsheetDoc2);
-        
+
         XInterface oObj = aModel.getCurrentController();
-        
+
         log.println("getting sheets");
         XSpreadsheets xSpreadsheets = (XSpreadsheets)xSpreadsheetDoc.getSheets();
-        
+
         log.println("getting a sheet");
         XSpreadsheet oSheet = null;
         XIndexAccess oIndexAccess = (XIndexAccess)
@@ -172,17 +172,17 @@ public class ScTabViewObj extends TestCase {
             e.printStackTrace(log);
             throw new StatusException( "Couldn't get a spreadsheet", e);
         }
-        
+
         TestEnvironment tEnv = new TestEnvironment(oObj);
-        
+
         tEnv.addObjRelation("XDispatchProvider.URL", ".uno:Copy") ;
-        
+
         log.println("adding 'Sheet' as ObjRelation");
         tEnv.addObjRelation("Sheet", oSheet);
         tEnv.addObjRelation("Frame",aModel.getCurrentController().getFrame());
         tEnv.addObjRelation("SecondModel",aSecondModel);
         tEnv.addObjRelation("FirstModel",aModel);
-        
+
         //Relation for XControlAccess
         tEnv.addObjRelation("DOCUMENT", UnoRuntime.queryInterface(XComponent.class,xSpreadsheetDoc));
         tEnv.addObjRelation("XControlAccess.isSheet", Boolean.TRUE);
@@ -200,10 +200,10 @@ public class ScTabViewObj extends TestCase {
             e.printStackTrace(log);
             throw new StatusException("Couldn't get some cell", e);
         }
-        
+
         Object[] selections = {oSheet, cellRange, cell_1, cell_2};
         tEnv.addObjRelation("Selections", selections);
-        
+
         tEnv.addObjRelation("Comparer", new Comparator() {
             public int compare(Object o1, Object o2) {
                 XCellRangeAddressable adr1 = (XCellRangeAddressable)
@@ -218,26 +218,26 @@ public class ScTabViewObj extends TestCase {
             public boolean equals(Object obj) {
                 return compare(this, obj) == 0;
             } });
-            
+
             tEnv.addObjRelation("XUserInputInterception.XModel", aModel);
-            
+
             // XForm for com.sun.star.view.XFormLayerAccess
-            
+
             XForm myForm = null;
             String kindOfControl="CommandButton";
             XShape aShape = null;
             try{
                 log.println("adding contol shape '" + kindOfControl + "'");
                 XComponent oComp = (XComponent) UnoRuntime.queryInterface(XComponent.class, xSpreadsheetDoc) ;
-                
+
                 aShape = FormTools.createControlShape(oComp, 3000, 4500, 15000, 10000, kindOfControl);
-                
+
             } catch (Exception e){
                 e.printStackTrace(log);
                 throw new StatusException("Couldn't create following control shape : '" +
                     kindOfControl + "': ", e);
             }
-            
+
             log.println("adding relation for com.sun.star.view.XFormLayerAccess: XForm");
             try {
                 log.println( "getting Drawpages" );
@@ -250,7 +250,7 @@ public class ScTabViewObj extends TestCase {
                     new Type(XDrawPage.class),oDP.getByIndex(0));
                 if (oDrawPage == null)
                     log.println("ERROR: could not get DrawPage: null");
-                
+
                 oDrawPage.add(aShape);
                 log.println("getting XForm");
                 XNameContainer xForm = FormTools.getForms(oDrawPage);
@@ -275,5 +275,5 @@ public class ScTabViewObj extends TestCase {
             }
             return tEnv;
     }
-    
+
 }    // finish class ScTabViewObj

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -80,7 +80,7 @@ struct FrameHash : public std::hash<sal_IntPtr>
 
 struct SalData
 {
-    
+
 	SALTIMERPROC                                  mpTimerProc;		// timer callback proc
 	AquaSalInstance                              *mpFirstInstance;	// pointer of first instance
 	std::list<AquaSalFrame*>                      maFrames;	        // list of all frames
@@ -92,37 +92,37 @@ struct SalData
     SystemFontList                               *mpFontList;
     NSStatusItem*                                 mpStatusItem;     // one status item that draws all our stati
                                                                     // at the moment this is only one add menu button
-    
+
     CGColorSpaceRef                               mxRGBSpace;
     CGColorSpaceRef                               mxGraySpace;
     CGColorSpaceRef                               mxP50Space;
     CGPatternRef                                  mxP50Pattern;
-    
+
     std::vector< NSCursor* >                      maCursors;
     std::vector< NSMenuItem* >                    maFallbackMenu;
     std::map< NSEvent*, bool >                    maKeyEventAnswer;
-    
+
     static oslThreadKey                           s_aAutoReleaseKey;
 
     bool			                              mbIsScrollbarDoubleMax;	// TODO: support DoubleMin and DoubleBoth too
     SInt32                                        mnSystemVersion;          // Store System Version
     AppleRemoteMainController*                    mpAppleRemoteMainController;
-    
+
     NSObject*                                     mpDockIconClickHandler;
     long                                          mnDPIX;           // #i100617# read DPI only once per office life
     long                                          mnDPIY;           // #i100617# read DPI only once per office life
-    
+
     com::sun::star::uno::Reference< com::sun::star::uno::XInterface >
                                                   mxClipboard;
 
     SalData();
     ~SalData();
-    
+
     NSCursor* getCursor( PointerStyle i_eStyle );
-    
+
     static void ensureThreadAutoreleasePool();
     static void drainThreadAutoreleasePool();
-    
+
     static NSStatusItem* getStatusItem();
 };
 

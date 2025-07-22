@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -33,16 +33,16 @@ public class SystemWindowAdapter
 
         if( aOS.startsWith( "SunOS" ) )
         {
-            try 
+            try
             {
                 Class aClass = Class.forName( "sun.awt.motif.MEmbeddedFrame" );
-                    
+
                 if( aClass != null )
-                { 
+                {
                     try
                     {
                         Constructor aCtor = aClass.getConstructor( new Class[] { long.class, boolean.class } );
-                    
+
                         if( aCtor != null )
                         {
                             aFrame = (java.awt.Frame) aCtor.newInstance( new Object[] { new Long( windowHandle ),
@@ -52,7 +52,7 @@ public class SystemWindowAdapter
                     catch( Exception e )
                     {
                     }
-                    
+
                     if( aFrame == null )
                     {
                         try
@@ -76,12 +76,12 @@ public class SystemWindowAdapter
         }
         else
         {
-            try 
+            try
             {
                 Class aClass = Class.forName( "sun.awt.motif.MEmbeddedFrame" );
 
                 if( aClass != null )
-                { 
+                {
                     Constructor aCtor = aClass.getConstructor( new Class[] { long.class } );
 
                     if( aCtor != null )
@@ -96,12 +96,12 @@ public class SystemWindowAdapter
 
             if( aFrame == null )
             {
-                try 
+                try
                 {
                     Class aClass = Class.forName( "sun.awt.X11.XEmbeddedFrame" );
 
                     if( aClass != null )
-                    { 
+                    {
                         Constructor aCtor = aClass.getConstructor( new Class[] { long.class } );
 
                         if( aCtor != null )
@@ -113,7 +113,7 @@ public class SystemWindowAdapter
                 }
             }
         }
-        
+
         return aFrame;
     }
 }

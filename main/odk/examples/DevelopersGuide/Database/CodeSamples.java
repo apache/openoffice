@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -39,12 +39,12 @@ import com.sun.star.sdbc.*;
 import com.sun.star.sdb.*;
 import com.sun.star.sdbcx.*;
 import com.sun.star.frame.*;
-    
+
 public class CodeSamples
 {
 	public static XComponentContext xContext;
 	public static XMultiComponentFactory xMCF;
-    
+
 	public static void main(String argv[]) throws java.lang.Exception
 	{
         try {
@@ -125,7 +125,7 @@ public class CodeSamples
 		else
 			System.out.println("Connection could not be created!");
 	}
-    
+
 	// uses the driver manager to create a new connection and dispose it.
 	public static XConnection openConnectionWithDriverManager() throws com.sun.star.uno.Exception
 	{
@@ -265,11 +265,11 @@ public class CodeSamples
                                            xContext));
 		// we use the first datasource
 		XQueryDefinitionsSupplier xQuerySup = (XQueryDefinitionsSupplier)
-											UnoRuntime.queryInterface(XQueryDefinitionsSupplier.class, 
-											xNameAccess.getByName( "Bibliography" )); 
+											UnoRuntime.queryInterface(XQueryDefinitionsSupplier.class,
+											xNameAccess.getByName( "Bibliography" ));
 		XNameAccess xQDefs = xQuerySup.getQueryDefinitions();
 		// create new query definition
-		XSingleServiceFactory xSingleFac =	(XSingleServiceFactory) 
+		XSingleServiceFactory xSingleFac =	(XSingleServiceFactory)
 											UnoRuntime.queryInterface(XSingleServiceFactory.class, xQDefs);
 
 		XPropertySet xProp = (XPropertySet) UnoRuntime.queryInterface(
@@ -287,7 +287,7 @@ public class CodeSamples
                 {}
 		xCont.insertByName("Query1",xProp);
 		XDocumentDataSource xDs = (XDocumentDataSource)UnoRuntime.queryInterface(XDocumentDataSource.class, xQuerySup);
-        
+
         XStorable xStore = (XStorable)UnoRuntime.queryInterface(XStorable.class,xDs.getDatabaseDocument());
         xStore.store();
 	}
@@ -301,13 +301,13 @@ public class CodeSamples
                                            xContext));
 		// we use the first datasource
 		XDataSource xDS = (XDataSource)UnoRuntime.queryInterface(
-            XDataSource.class, xNameAccess.getByName( "Bibliography" )); 
+            XDataSource.class, xNameAccess.getByName( "Bibliography" ));
 		XConnection con = xDS.getConnection("","");
 		XQueriesSupplier xQuerySup = (XQueriesSupplier)
-											UnoRuntime.queryInterface(XQueriesSupplier.class, con); 
-		
+											UnoRuntime.queryInterface(XQueriesSupplier.class, con);
+
 		XNameAccess xQDefs = xQuerySup.getQueries();
-		
+
 		XColumnsSupplier xColsSup = (XColumnsSupplier) UnoRuntime.queryInterface(
             XColumnsSupplier.class,xQDefs.getByName("Query1"));
 		XNameAccess xCols = xColsSup.getColumns();

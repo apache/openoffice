@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -36,29 +36,29 @@ struct EmptyBase
     struct EmptyGuard{ explicit EmptyGuard(EmptyBase) {} };
     struct EmptyClearableGuard
     {
-        explicit EmptyClearableGuard(EmptyBase) {} 
-        void clear() {} 
-        void reset() {} 
+        explicit EmptyClearableGuard(EmptyBase) {}
+        void clear() {}
+        void reset() {}
     };
 
     typedef EmptyGuard           Guard;
     typedef EmptyClearableGuard ClearableGuard;
 };
- 
+
 class MutexBase
 {
 public:
-    struct Guard : public osl::MutexGuard 
-    { 
-        explicit Guard(MutexBase const& rBase) : 
-            osl::MutexGuard(rBase.maMutex) 
-        {} 
+    struct Guard : public osl::MutexGuard
+    {
+        explicit Guard(MutexBase const& rBase) :
+            osl::MutexGuard(rBase.maMutex)
+        {}
     };
     struct ClearableGuard : public osl::ClearableMutexGuard
-    { 
-        explicit ClearableGuard(MutexBase const& rBase) : 
-            osl::ClearableMutexGuard(rBase.maMutex) 
-        {} 
+    {
+        explicit ClearableGuard(MutexBase const& rBase) :
+            osl::ClearableMutexGuard(rBase.maMutex)
+        {}
     };
 
     mutable osl::Mutex maMutex;
@@ -68,7 +68,7 @@ public:
 
 template< typename result_type, typename ListenerTargetT > struct FunctionApply
 {
-    template<typename FuncT> static bool apply( 
+    template<typename FuncT> static bool apply(
         FuncT           func,
         ListenerTargetT const& rArg )
     {
@@ -78,7 +78,7 @@ template< typename result_type, typename ListenerTargetT > struct FunctionApply
 
 template<typename ListenerTargetT> struct FunctionApply<void,ListenerTargetT>
 {
-    template<typename FuncT> static bool apply( 
+    template<typename FuncT> static bool apply(
         FuncT                  func,
         ListenerTargetT const& rArg )
     {
@@ -92,7 +92,7 @@ template<typename ListenerTargetT> struct FunctionApply<void,ListenerTargetT>
 template< typename ListenerT > struct ListenerOperations
 {
     /// Notify a single one of the listeners
-    template< typename ContainerT, 
+    template< typename ContainerT,
               typename FuncT >
     static bool notifySingleListener( ContainerT& rContainer,
                                       FuncT       func )
@@ -101,13 +101,13 @@ template< typename ListenerT > struct ListenerOperations
 
         // true: a handler in this queue processed the event
         // false: no handler in this queue finally processed the event
-        return (std::find_if( rContainer.begin(), 
+        return (std::find_if( rContainer.begin(),
                               aEnd,
                               func ) != aEnd);
     }
 
     /// Notify all listeners
-    template< typename ContainerT, 
+    template< typename ContainerT,
               typename FuncT >
     static bool notifyAllListeners( ContainerT& rContainer,
                                     FuncT       func )
@@ -124,7 +124,7 @@ template< typename ListenerT > struct ListenerOperations
             {
                 bRet = true;
             }
-        
+
             ++aCurr;
         }
 
@@ -142,10 +142,10 @@ template< typename ListenerT > struct ListenerOperations
 
 // specializations for weak_ptr
 // ----------------------------
-template< typename ListenerTargetT > 
+template< typename ListenerTargetT >
 struct ListenerOperations< boost::weak_ptr<ListenerTargetT> >
 {
-    template< typename ContainerT, 
+    template< typename ContainerT,
               typename FuncT >
     static bool notifySingleListener( ContainerT& rContainer,
                                       FuncT       func )
@@ -155,17 +155,17 @@ struct ListenerOperations< boost::weak_ptr<ListenerTargetT> >
         while( aCurr != aEnd )
         {
             boost::shared_ptr<ListenerTargetT> pListener( aCurr->lock() );
-        
+
             if( pListener && func(pListener) )
                 return true;
-        
+
             ++aCurr;
         }
 
         return false;
     }
 
-    template< typename ContainerT, 
+    template< typename ContainerT,
               typename FuncT >
     static bool notifyAllListeners( ContainerT& rContainer,
                                     FuncT       func )
@@ -176,14 +176,14 @@ struct ListenerOperations< boost::weak_ptr<ListenerTargetT> >
         while( aCurr != aEnd )
         {
             boost::shared_ptr<ListenerTargetT> pListener( aCurr->lock() );
-        
-            if( pListener.get() && 
+
+            if( pListener.get() &&
                 FunctionApply< typename FuncT::result_type,
                                boost::shared_ptr<ListenerTargetT> >::apply(func,pListener) )
             {
                 bRet = true;
             }
-        
+
             ++aCurr;
         }
 
@@ -199,7 +199,7 @@ struct ListenerOperations< boost::weak_ptr<ListenerTargetT> >
 
         ContainerT aAliveListeners;
         aAliveListeners.reserve(rContainer.size());
-    
+
         typename ContainerT::const_iterator       aCurr( rContainer.begin() );
         typename ContainerT::const_iterator const aEnd ( rContainer.end() );
         while( aCurr != aEnd )

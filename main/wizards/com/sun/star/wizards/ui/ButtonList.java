@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -90,7 +90,7 @@ public class ButtonList implements XItemEventBroadcaster, XActionListener
     {
         m_aControlName = _sName;
     }
-    
+
     /** Setter for property m_aButtonSize.
      * @param imageSize  New value of property m_aButtonSize.
      */
@@ -349,7 +349,7 @@ public class ButtonList implements XItemEventBroadcaster, XActionListener
     }
 
     /**
-     * 
+     *
      * @param i
      * @return the Object in the list model corresponding to the given image index.
      */
@@ -367,7 +367,7 @@ public class ButtonList implements XItemEventBroadcaster, XActionListener
     }
 
     /**
-     * 
+     *
      * @param i
      * @return the index in the listModel for the given image index.
      */
@@ -446,7 +446,7 @@ public class ButtonList implements XItemEventBroadcaster, XActionListener
      */
     private void fireItemSelected()
     {
-//      java.awt.event.ItemEvent event = new java.awt.event.ItemEvent(this, 0, 
+//      java.awt.event.ItemEvent event = new java.awt.event.ItemEvent(this, 0,
 //          getSelectedObject(), java.awt.event.ItemEvent.SELECTED);
         java.util.ArrayList list;
         synchronized(this)
@@ -750,9 +750,9 @@ public class ButtonList implements XItemEventBroadcaster, XActionListener
     {
 
         /**
-         * 
+         *
          * @param listItem
-         * @return two resource ids for an image referenced in the imaglist resourcefile of the 
+         * @return two resource ids for an image referenced in the imaglist resourcefile of the
          * wizards project; The second one of them is designed to be used for High Contrast Mode.
          */
         public Object[] getImageUrls(Object listItem);

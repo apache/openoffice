@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -168,7 +168,7 @@ public:
     virtual void                    DrawMenuBar() = 0;
 
     virtual void                SetExtendedFrameStyle( SalExtStyle nExtStyle ) = 0;
-    
+
     // Before the window is visible, a resize event
     // must be sent with the correct size
     virtual void				Show( sal_Bool bVisible, sal_Bool bNoActivate = sal_False ) = 0;
@@ -230,7 +230,7 @@ public:
 
     // returns system data (most prominent: window handle)
     virtual const SystemEnvData*	GetSystemData() const = 0;
-    
+
     // sets a background bitmap on the frame; the implementation
     // must not make assumptions about the lifetime of the passed SalBitmap
     // but should copy its contents to an own buffer
@@ -252,7 +252,7 @@ public:
     // may choose to use a new system window inetrnally
     // return false to indicate failure
     virtual bool				SetPluginParent( SystemParentData* pNewParent ) = 0;
-    
+
     // move the frame to a new screen
     virtual void                SetScreenNumber( unsigned int nScreen ) = 0;
 

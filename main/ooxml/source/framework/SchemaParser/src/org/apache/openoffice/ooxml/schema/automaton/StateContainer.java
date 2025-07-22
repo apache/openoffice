@@ -33,17 +33,17 @@ public class StateContainer
     {
         maNameToStateMap = new HashMap<>();
     }
-    
-    
-    
-    
+
+
+
+
     boolean HasState (final String sFullname)
     {
         return maNameToStateMap.containsKey(sFullname);
     }
-    
-    
-    
+
+
+
 
     State GetStateForFullname (final String sFullname)
     {
@@ -57,17 +57,17 @@ public class StateContainer
     {
         maNameToStateMap.put(aState.GetFullname(), aState);
     }
-    
-    
-    
-    
+
+
+
+
     public void RemoveState (final State aState)
     {
         maNameToStateMap.remove(aState);
     }
-    
-    
-    
-    
+
+
+
+
     private final Map<String,State> maNameToStateMap;
 }

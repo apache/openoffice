@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -58,7 +58,7 @@ published service AccessibleTextDocumentView
 		structure of the document as it is displayed.
 
 		<ul>
-			<li>The children returned by 
+			<li>The children returned by
                 <method scope="::com::sun::star::accessibility"
                 >XAccessibleContext::getAccessibleChild</method> all support
                 the interface XAccessible. Calling
@@ -108,8 +108,8 @@ published service AccessibleTextDocumentView
 						is at least partially visible. These objects are
 						children of the <type>AccessibleTextDocumentView</type>
 						regardless whether they are bound to a page, paragraph,
-						a frame or a character. The only exception 
-						are text frames that are bound as character. They are 
+						a frame or a character. The only exception
+						are text frames that are bound as character. They are
 						children of the paragraph they are contained in.
 					<li><type scope="::com::sun::star::text"
                         >AccessibleTextEmbeddedObject</type>:
@@ -202,7 +202,7 @@ published service AccessibleTextDocumentView
     */
 	interface ::com::sun::star::accessibility::XAccessibleSelection;
 
-	/** This is the interface for listeners 
+	/** This is the interface for listeners
     */
 	interface ::com::sun::star::accessibility::XAccessibleEventBroadcaster;
 };

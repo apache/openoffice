@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -33,8 +33,8 @@
 
 struct TypeReader_Impl
 {
-	TypeReader_Impl(const sal_uInt8* buffer, 
-			   	    sal_uInt32 bufferLen, 
+	TypeReader_Impl(const sal_uInt8* buffer,
+			   	    sal_uInt32 bufferLen,
 			   	    sal_Bool copyData)
 		: m_refCount(0)
 		, m_copyData(copyData)
@@ -68,14 +68,14 @@ struct TypeReader_Impl
 	sal_Int32			m_blopSize;
 	const sal_uInt8* 	m_pBlop;
 	typereg::Reader*	m_pReader;
-};	
+};
 
 class TypeReader
 {
 /*
 	inline TypeReader(const RegistryTypeReader_Api* pApi,
-							  const sal_uInt8* buffer, 
-							  sal_uInt32 bufferLen, 
+							  const sal_uInt8* buffer,
+							  sal_uInt32 bufferLen,
 							  sal_Bool copyData);
 */
 public:
@@ -83,8 +83,8 @@ public:
 		: m_pImpl(NULL)
 	{}
 
-	inline TypeReader(        const sal_uInt8* buffer, 
-							  sal_uInt32 bufferLen, 
+	inline TypeReader(        const sal_uInt8* buffer,
+							  sal_uInt32 bufferLen,
 							  sal_Bool copyData)
 	{
 		m_pImpl = new TypeReader_Impl(buffer, bufferLen, copyData);
@@ -93,23 +93,23 @@ public:
 
 	inline TypeReader(const TypeReader& toCopy)
 		: m_pImpl(toCopy.m_pImpl)
-	{ 
+	{
 		acquire();
 	}
 
     inline ~TypeReader()
-	{ 
+	{
 		release();
-	}    
+	}
 
     inline void acquire()
-	{ 
+	{
 		if (m_pImpl)
 			osl_incrementInterlockedCount(&m_pImpl->m_refCount);
 	}
 
 	inline void release()
-	{ 
+	{
 		if (m_pImpl && 0 == osl_decrementInterlockedCount(&m_pImpl->m_refCount))
 		{
 			delete m_pImpl;
@@ -124,8 +124,8 @@ public:
 		return *this;
 	}
 
-	inline sal_Bool			isValid() const 
-		{ 
+	inline sal_Bool			isValid() const
+		{
 			if (m_pImpl)
 				return m_pImpl->m_pReader->isValid();
 			else
@@ -198,7 +198,7 @@ public:
 
 private:
 	TypeReader_Impl* m_pImpl;
-};		
+};
 
-	
+
 #endif // _CODEMAKER_REGISTRY_HXX_

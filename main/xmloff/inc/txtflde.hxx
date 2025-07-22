@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -42,14 +42,14 @@ class SvXMLExport;
 class SvXMLNumFmtExport;
 struct XMLPropertyState;
 
-namespace com { namespace sun { namespace star { 
+namespace com { namespace sun { namespace star {
 	namespace util { struct DateTime; }
 	namespace util { struct Date; }
-	namespace text { class XTextField; } 
-	namespace text { class XText; } 
-	namespace beans { class XPropertySet; } 
-	namespace beans { class XPropertySetInfo; } 
-	namespace frame { class XModel; } 
+	namespace text { class XTextField; }
+	namespace text { class XText; }
+	namespace beans { class XPropertySet; }
+	namespace beans { class XPropertySetInfo; }
+	namespace frame { class XModel; }
     namespace uno { template<typename A> class Sequence; }
 } } }
 namespace rtl { class OUString; }
@@ -162,12 +162,12 @@ class XMLTextFieldExport
 	/// store used text field master names (NULL means: don't collect)
 	::std::map<
 			::com::sun::star::uno::Reference< ::com::sun::star::text::XText >,
-			::std::set< ::rtl::OUString > > * 
+			::std::set< ::rtl::OUString > > *
 		pUsedMasters;
 
 public:
 
-	XMLTextFieldExport( SvXMLExport& rExp, 
+	XMLTextFieldExport( SvXMLExport& rExp,
 						/// XMLPropertyState for the combined characters field
 						XMLPropertyState* pCombinedCharState = NULL );
 	virtual ~XMLTextFieldExport();
@@ -194,7 +194,7 @@ public:
 	/// (Requires that a list of used field declarations has previously been
 	///  built-up in ExportFieldAutoStyle() )
 	void ExportFieldDeclarations(
-		const ::com::sun::star::uno::Reference < 
+		const ::com::sun::star::uno::Reference <
 				::com::sun::star::text::XText > & rText);
 
 	/// export all field declarations, or only those that have been used?
@@ -260,7 +260,7 @@ protected:
 
 	/// export a boolean attribute
 	void ProcessBoolean(
-		enum ::xmloff::token::XMLTokenEnum eXmlName,	/// attribute token (namespace text) 
+		enum ::xmloff::token::XMLTokenEnum eXmlName,	/// attribute token (namespace text)
 		sal_Bool bBool,		/// attribute value
 		sal_Bool bDefault);	/// attribute default; omit, if attribute differs
 
@@ -268,13 +268,13 @@ protected:
 	void ProcessInteger(
 		enum ::xmloff::token::XMLTokenEnum eXmlName,	/// attribute token (namespace text)
 		sal_Int32 nNum);			/// attribute value
-						
+
 	/// export an integer attribute, omit if default
 	void ProcessIntegerDef(
 		enum ::xmloff::token::XMLTokenEnum eXmlName,	/// attribute token (namespace text)
 		sal_Int32 nNum,				/// attribute value
 		sal_Int32 nDefault);		/// default value
-						
+
 	/// export a string attribute
 	void ProcessString(
 		enum ::xmloff::token::XMLTokenEnum eXmlName,		/// attribute token (namespace text)
@@ -380,7 +380,7 @@ protected:
 
 	/// export all attributes for bibliography data fields
 	void ProcessBibliographyData(
-		const ::com::sun::star::uno::Reference < 
+		const ::com::sun::star::uno::Reference <
 			::com::sun::star::beans::XPropertySet > & rPropertySet);
 
 	/// export CommandTypeAttribute
@@ -399,9 +399,9 @@ protected:
     void ExportDataBaseElement(
         enum ::xmloff::token::XMLTokenEnum eElement,
         const ::rtl::OUString& sContent,
-		const ::com::sun::star::uno::Reference < 
+		const ::com::sun::star::uno::Reference <
             ::com::sun::star::beans::XPropertySet > & rPropertySet,
-		const ::com::sun::star::uno::Reference < 
+		const ::com::sun::star::uno::Reference <
             ::com::sun::star::beans::XPropertySetInfo > & rPropertySetInfo );
 
 	/// for XDependentTextFields, get PropertySet of FieldMaster
@@ -413,7 +413,7 @@ protected:
 	sal_Bool GetDependentFieldPropertySet(
 		const ::com::sun::star::uno::Reference<
 		::com::sun::star::beans::XPropertySet> & xmaster,
-		::com::sun::star::uno::Reference< 
+		::com::sun::star::uno::Reference<
 		::com::sun::star::beans::XPropertySet> & xField);
 
 

@@ -41,23 +41,23 @@ public class NamespaceMap
     {
         maUriToDescriptorMap = new HashMap<>();
         maIdToDescriptorMap = new HashMap<>();
-        
+
         for (final String[] aLine : aData)
         {
             final int nId = Integer.parseInt(aLine[2]);
             final NamespaceDescriptor aDescriptor = new NamespaceDescriptor(aLine[1], nId);
             maUriToDescriptorMap.put(
-                aLine[3], 
+                aLine[3],
                 aDescriptor);
             maIdToDescriptorMap.put(
                 nId,
                 aDescriptor);
         }
     }
-    
-    
-    
-    
+
+
+
+
     public NamespaceDescriptor GetDescriptorForURI (final String sURI)
     {
         if (sURI == null)
@@ -67,25 +67,25 @@ public class NamespaceMap
         return maUriToDescriptorMap.get(sURI);
     }
 
-    
-    
-    
+
+
+
     public NamespaceDescriptor GetDescriptorForId (final int nId)
     {
         return maIdToDescriptorMap.get(nId);
     }
 
-    
-    
+
+
 
     public int GetNamespaceCount ()
     {
         return maUriToDescriptorMap.size();
     }
-    
-    
-    
-    
+
+
+
+
     private final Map<String,NamespaceDescriptor> maUriToDescriptorMap;
     private final Map<Integer,NamespaceDescriptor> maIdToDescriptorMap;
 }

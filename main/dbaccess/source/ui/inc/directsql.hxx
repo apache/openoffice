@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -27,19 +27,19 @@
 #ifndef _SV_DIALOG_HXX
 #include <vcl/dialog.hxx>
 #endif
-#ifndef _SVEDIT_HXX 
+#ifndef _SVEDIT_HXX
 #include <svtools/editsyntaxhighlighter.hxx>
 #endif
-#ifndef _SV_FIXED_HXX 
+#ifndef _SV_FIXED_HXX
 #include <vcl/fixed.hxx>
 #endif
-#ifndef _SV_LSTBOX_HXX 
+#ifndef _SV_LSTBOX_HXX
 #include <vcl/lstbox.hxx>
 #endif
-#ifndef _SV_BUTTON_HXX 
+#ifndef _SV_BUTTON_HXX
 #include <vcl/button.hxx>
 #endif
-#ifndef _COMPHELPER_STLTYPES_HXX_ 
+#ifndef _COMPHELPER_STLTYPES_HXX_
 #include <comphelper/stl_types.hxx>
 #endif
 #include <deque>
@@ -47,7 +47,7 @@
 #ifndef _COM_SUN_STAR_SDBC_XCONNECTION_HPP_
 #include <com/sun/star/sdbc/XConnection.hpp>
 #endif
-#ifndef _UNOTOOLS_EVENTLISTENERADAPTER_HXX_ 
+#ifndef _UNOTOOLS_EVENTLISTENERADAPTER_HXX_
 #include <unotools/eventlisteneradapter.hxx>
 #endif
 #ifndef _DBAUI_MODULE_DBU_HXX_

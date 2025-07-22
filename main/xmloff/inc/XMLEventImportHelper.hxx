@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -46,13 +46,13 @@ typedef ::std::list< NameMap* > NameMapList;
 
 /**
  * Helps the XMLEventsImportContext.
- * 
+ *
  * This class stores
  * a) the translation from XML event names to API event names, and
  * b) a mapping from script language names to XMLEventContextFactory objects
  *    (that handle particular languages).
  *
- * Event name translation tables may be added, i.e. they will be joined 
+ * Event name translation tables may be added, i.e. they will be joined
  * together. If different translations are needed (i.e., if the same XML name
  * needs to be translated to different API names in different contexts), then
  * translation tables may be saved on a translation table stack.
@@ -91,7 +91,7 @@ public:
 		SvXMLImport& rImport,
 		sal_uInt16 nPrefix,
 		const ::rtl::OUString& rLocalName,
-		const ::com::sun::star::uno::Reference< 
+		const ::com::sun::star::uno::Reference<
 			::com::sun::star::xml::sax::XAttributeList> & xAttrList,
 		XMLEventsImportContext* rEvents,
 		const ::rtl::OUString& rXmlEventName,

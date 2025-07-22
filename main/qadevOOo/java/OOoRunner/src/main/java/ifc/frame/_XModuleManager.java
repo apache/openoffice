@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -66,7 +66,7 @@ public class _XModuleManager extends MultiMethodTest {
      * coresponding value.<p>
      * As enhancement the method <CODE>identify()</CODE> was called with incvalid
      * parameter. In this case the thrown exceptions was catched.
-     */    
+     */
     public XModuleManager oObj = null;
     /**
     * Test calls the method. <p>
@@ -78,35 +78,35 @@ public class _XModuleManager extends MultiMethodTest {
     * relation 'Frame' </li>
     * </ul>
     */
-    
+
     private PropertyValue[] xFrameSeq = null;
     private PropertyValue[] xControllerSeq = null;
     private PropertyValue[] xModelSeq = null;
     /** Retrieves object relations. */
-    
+
     public void before() {
-        
+
         xFrameSeq = (PropertyValue[]) tEnv.getObjRelation("XModuleManager.XFrame") ;
 
         if (xFrameSeq == null) throw new StatusException
             (Status.failed("Relation 'xFrameSeq' not found.")) ;
-        
-        
+
+
         xControllerSeq = (PropertyValue[]) tEnv.getObjRelation("XModuleManager.XController") ;
 
         if (xControllerSeq == null) throw new StatusException
             (Status.failed("Relation 'xControllerSeq' not found.")) ;
-        
-        
+
+
         xModelSeq = (PropertyValue[]) tEnv.getObjRelation("XModuleManager.XModel") ;
 
         if (xModelSeq == null) throw new StatusException
             (Status.failed("Relation 'xModelSeq' not found.")) ;
     }
-    
+
     /** The method <CODE>identify()</CODE> was tesed for every entry in sequeze of
      * object relations.
-     */    
+     */
     public void _identify() {
         boolean ok = true;
         log.println("testing frame sequenze...");
@@ -126,7 +126,7 @@ public class _XModuleManager extends MultiMethodTest {
             log.println("expected exception.");
         }
     }
-    
+
     private boolean testSequenze(PropertyValue[] sequenze){
         boolean ok = true;
         for (int i = 0 ; i < sequenze.length; i++){
@@ -134,10 +134,10 @@ public class _XModuleManager extends MultiMethodTest {
                 log.println("testing '" + sequenze[i].Name + "'");
                 if (oObj.identify(sequenze[i].Value).equals(
                                                         sequenze[i].Name)){
-                     ok &= ok;                                
+                     ok &= ok;
                 }else{
-                     log.println("failure: returned value: '" + 
-                                 oObj.identify(sequenze[i].Value) + 
+                     log.println("failure: returned value: '" +
+                                 oObj.identify(sequenze[i].Value) +
                                  "' ,expected value: '" + sequenze[i].Name + "'");
                      ok = false;
                 }
@@ -145,7 +145,7 @@ public class _XModuleManager extends MultiMethodTest {
                 log.println("Could not get value of sequenze '" +
                             sequenze[i].Name + "'");
                 return false;
-            
+
             } catch (UnknownModuleException e){
                 log.println("Could not indetify value of sequenze '" +
                             sequenze[i].Name + "'");
@@ -154,5 +154,5 @@ public class _XModuleManager extends MultiMethodTest {
         }
         return ok;
     }
-    
+
 }

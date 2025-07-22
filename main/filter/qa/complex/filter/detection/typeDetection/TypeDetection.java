@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -190,7 +190,7 @@ import org.openoffice.test.OfficeConnection;
 public class TypeDetection {
     private static final OfficeConnection connection = new OfficeConnection();
 
-    /** 
+    /**
      * @member m_xDetection     the object to test
      * @member helper           instacne of helper class
      */
@@ -206,17 +206,17 @@ public class TypeDetection {
         // create TypeDetection
         XMultiServiceFactory xMSF = UnoRuntime.queryInterface(XMultiServiceFactory.class, connection.getComponentContext().getServiceManager());
         assertTrue("Could not get XMultiServiceFactory", xMSF != null);
-        
+
         Object oInterface = xMSF.createInstance(
                                         "com.sun.star.document.TypeDetection");
-                                        
+
         if (oInterface == null) {
             fail("Service wasn't created") ;
         }
 
         XInterface oObj = (XInterface) oInterface ;
         System.out.println("ImplName: "+utils.getImplName(oObj));
-        
+
         m_xDetection = (XTypeDetection)
                 UnoRuntime.queryInterface(XTypeDetection.class, oInterface);
         // create instrace of helper class
@@ -231,8 +231,8 @@ public class TypeDetection {
     }
 
     /**
-     * The <code>MediaDescriptor</code> was filled with the URL of a file. The 
-     * <code>type</code> of the file is kown and must be returned by 
+     * The <code>MediaDescriptor</code> was filled with the URL of a file. The
+     * <code>type</code> of the file is kown and must be returned by
      * <code>MediaDescriptor</code>
      *
      * Syntax of files.csv:
@@ -253,7 +253,7 @@ public class TypeDetection {
             fileURL =  utils.getFullURL(Helper.ensureEndingFileSep(
                           Argument.get("tdoc")) + fileURL);
 
-            System.out.println("actual '"+ fileAlias + 
+            System.out.println("actual '"+ fileAlias +
                                "' ['" + URLfileType + "']: '" + fileURL);
 
             checkMediaDescriptorURL(fileAlias, fileURL, URLfileType);
@@ -271,7 +271,7 @@ public class TypeDetection {
      */
     private void checkMediaDescriptorURL(
                             String fileAlias, String fileURL, String fileType){
-                                
+
         PropertyValue[] MediaDescriptor = Helper.createMediaDescriptor(
             new String[] {"URL"},
             new Object[] {fileURL}
@@ -299,16 +299,16 @@ public class TypeDetection {
      */
     private void checkMediaDescriptorXInputStream(
                              String fileAlias, String fileURL, String fileType){
-        
+
         XInputStream xStream = null;
-        
+
         try{
             xStream = helper.getFileStream( fileURL );
         } catch (NotConnectedException e) {
             fail("Could not get XInputStream from file :'" + fileURL + "'");
             return;
         }
-            
+
         PropertyValue[] MediaDescriptor = Helper.createMediaDescriptor(
             new String[] {"InputStream"},
             new Object[] {xStream}
@@ -322,12 +322,12 @@ public class TypeDetection {
 
         assertTrue("\nXInputStream-test: " + fileAlias + ":\n\treturned type: '" + type +
                    "'\n\texpected type: '" + fileType + "'", fileTypeOK);
-            
+
     }
 
     /**
-     * The <code>MediaDescriptor</code> was filled with the URL of a file. The 
-     * <code>type</code> of the file is kown and must be returned by 
+     * The <code>MediaDescriptor</code> was filled with the URL of a file. The
+     * <code>type</code> of the file is kown and must be returned by
      * <code>MediaDescriptor</code>
      *
      * Syntax of files.csv:
@@ -387,7 +387,7 @@ public class TypeDetection {
                 new String[] {"URL","FilterName", "FilterOptions","FilterData"},
                 new Object[] {fileURL, filterName, filterOptions, filterData});
 
-            System.out.println("check '" + fileAlias + "' with filter: '" + 
+            System.out.println("check '" + fileAlias + "' with filter: '" +
                                filterName + "'");
 
             String type = m_xDetection.queryTypeByDescriptor(

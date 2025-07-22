@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,20 +7,20 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 /**
- * 
+ *
  */
 
 package svt.gui.sd;
@@ -165,7 +165,7 @@ public class BasicFuncOnImpress {
 			addRecord(i, start, end);
 		}
 	}
-	
+
 	@Test
 	public void saveNewSDWithExternalSlides() throws Exception {
 		String externalFile = prepareData("pvt/plain_200p.odp");
@@ -189,7 +189,7 @@ public class BasicFuncOnImpress {
 	public void saveNewSDWithAnimation()throws Exception{
 		for (i = 1; i <= iterator; i++) {
 			long start = System.currentTimeMillis();
-			createNewSD();			
+			createNewSD();
 			//Insert a Shape and select it via Navigator
 			sdCalloutShapes.click();
 			impress.focus();
@@ -210,7 +210,7 @@ public class BasicFuncOnImpress {
 			addRecord(i, start, end);
 		}
 	}
-	
+
 	@Test
 	public void saveNewSDWithShowSettings() throws Exception {
 		String externalFile = prepareData("pvt/plain_200p.odp");
@@ -246,7 +246,7 @@ public class BasicFuncOnImpress {
 			addRecord(i, start, end);
 		}
 	}
-	
+
 	@Test
 	public void saveSDTemplate()throws Exception{
 		String templateFile = prepareData("svt/DarkBlue.otp");
@@ -255,13 +255,13 @@ public class BasicFuncOnImpress {
 			app.dispatch(".uno:Open");
 			submitOpenDlg(templateFile);
 			impress.waitForExistence(10, 2);
-			sleep(5);	
+			sleep(5);
 			saveAndReopenNewSD(i);
 			long end = System.currentTimeMillis();
 			addRecord(i, start, end);
 		}
 	}
-	
+
 	@Test
 	@Ignore
 	public void opChartOnOpenedSD() throws Exception {
@@ -355,14 +355,14 @@ public class BasicFuncOnImpress {
 			sleep(2);
 		}
 		sleep(5);
-		app.dispatch(".uno:CloseDoc");	
+		app.dispatch(".uno:CloseDoc");
 		startCenterOpenButton.waitForExistence(30, 2);
 		startCenterOpenButton.click();
 		submitOpenDlg(saveTo);
-		sleep(2);		
+		sleep(2);
 		app.dispatch(".uno:CloseDoc");
 	}
-	
+
 	private void closeWithoutSaveSD() {
 		impress.menuItem("File->Close").select();
 		if (activeMsgBox.exists()) {

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -31,12 +31,12 @@ import com.sun.star.lang.IndexOutOfBoundsException;
 import com.sun.star.uno.UnoRuntime;
 
 
-class TextEditDialog 
+class TextEditDialog
     extends TextActionDialog
 {
     public TextEditDialog (
         XAccessibleContext xContext,
-        String sExplanation, 
+        String sExplanation,
         String sTitle )
     {
         super (xContext, sExplanation, sTitle);
@@ -79,7 +79,7 @@ class TextEditDialog
                 nFront++;
             int nBack = 0;
             while ((nBack < nMinLength) &&
-                (sNew.charAt(sNew.length()-nBack-1) == 
+                (sNew.charAt(sNew.length()-nBack-1) ==
                  sOld.charAt(sOld.length()-nBack-1)    ))
                 nBack++;
             if (nFront + nBack > nMinLength)
@@ -90,7 +90,7 @@ class TextEditDialog
             String sDel = sOld.substring (nFront, sOld.length() - nBack);
             String sIns = sNew.substring (nFront, sNew.length() - nBack);
 
-            System.out.println ("edit text: " + 
+            System.out.println ("edit text: " +
                 sOld.substring(0, nFront) +
                 " [ " + sDel + " -> " + sIns + " ] " +
                 sOld.substring(sOld.length() - nBack));

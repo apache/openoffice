@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -543,7 +543,7 @@ public:
 
     SAL_DLLPRIVATE static FontEmphasisMark ImplGetEmphasisMarkStyle( const Font& rFont );
     SAL_DLLPRIVATE static sal_Bool ImplIsUnderlineAbove( const Font& );
- 
+
     // tells whether this output device is RTL in an LTR UI or LTR in a RTL UI
     SAL_DLLPRIVATE bool ImplIsAntiparallel() const ;
 
@@ -560,8 +560,8 @@ public:
 	// #i101491#
 	// Helper who tries to use SalGDI's DrawPolyLine direct and returns it's bool. Contains no AA check.
 	SAL_DLLPRIVATE bool ImpTryDrawPolyLineDirect(
-        const basegfx::B2DPolygon& rB2DPolygon, 
-        double fLineWidth = 0.0, 
+        const basegfx::B2DPolygon& rB2DPolygon,
+        double fLineWidth = 0.0,
         double fTransparency = 0.0,
         basegfx::B2DLineJoin eLineJoin = basegfx::B2DLINEJOIN_NONE,
         com::sun::star::drawing::LineCap eLineCap = com::sun::star::drawing::LineCap_BUTT);
@@ -695,14 +695,14 @@ public:
         @see DrawPolyPolygon
      */
     void                DrawPolyLine( const Polygon& rPoly );
-    void DrawPolyLine( 
-        const basegfx::B2DPolygon&, 
-        double fLineWidth = 0.0, 
+    void DrawPolyLine(
+        const basegfx::B2DPolygon&,
+        double fLineWidth = 0.0,
         basegfx::B2DLineJoin = basegfx::B2DLINEJOIN_ROUND,
         com::sun::star::drawing::LineCap = com::sun::star::drawing::LineCap_BUTT);
     bool TryDrawPolyLineDirect(
-        const basegfx::B2DPolygon& rB2DPolygon, 
-        double fLineWidth = 0.0, 
+        const basegfx::B2DPolygon& rB2DPolygon,
+        double fLineWidth = 0.0,
         double fTransparency = 0.0,
         basegfx::B2DLineJoin eLineJoin = basegfx::B2DLINEJOIN_NONE,
         com::sun::star::drawing::LineCap eLineCap = com::sun::star::drawing::LineCap_BUTT);
@@ -846,10 +846,10 @@ public:
 
     /// Fill the given rectangle with checkered rectangles of size nLen x nLen using the colors aStart and aEnd
     void DrawCheckered(
-        const Point& rPos, 
-        const Size& rSize, 
-        sal_uInt32 nLen = 8, 
-        Color aStart = Color(COL_WHITE), 
+        const Point& rPos,
+        const Size& rSize,
+        sal_uInt32 nLen = 8,
+        Color aStart = Color(COL_WHITE),
         Color aEnd = Color(COL_BLACK));
 
     Color               GetPixel( const Point& rPt ) const;

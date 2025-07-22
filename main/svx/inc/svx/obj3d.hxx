@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -133,8 +133,8 @@ private:
     basegfx::B3DRange RecalcBoundVolume() const;
 
 protected:
-	// E3dObject is only a helper class (for E3DScene and E3DCompoundObject) 
-	// and no instances should be created from anyone, so i move the constructors 
+	// E3dObject is only a helper class (for E3DScene and E3DCompoundObject)
+	// and no instances should be created from anyone, so i move the constructors
 	// to protected area
 	E3dObject();
 	E3dObject(sal_Bool bIsFromChart);
@@ -250,7 +250,7 @@ public :
 	virtual basegfx::B2DPolyPolygon TakeXorPoly() const;
 	virtual sal_uInt32 GetHdlCount() const;
 	virtual void	AddToHdlList(SdrHdlList& rHdlList) const;
-	
+
 	// DoubleSided: sal_True/FALSE
 	sal_Bool GetDoubleSided() const
 		{ return ((const Svx3DDoubleSidedItem&)GetObjectItemSet().Get(SDRATTR_3DOBJ_DOUBLE_SIDED)).GetValue(); }

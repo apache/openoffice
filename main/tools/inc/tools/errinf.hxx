@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -198,14 +198,14 @@ class TOOLS_DLLPUBLIC ErrorHandler
 private:
     ErrHdl_Impl*        pImpl;
 
-    static sal_uInt16       HandleError_Impl( sal_uIntPtr lId, 
-					  sal_uInt16 nFlags, 
-					  sal_Bool bJustCreateString, 
+    static sal_uInt16       HandleError_Impl( sal_uIntPtr lId,
+					  sal_uInt16 nFlags,
+					  sal_Bool bJustCreateString,
 					  String & rError);
 protected:
-    virtual sal_Bool        CreateString( const ErrorInfo *, 
+    virtual sal_Bool        CreateString( const ErrorInfo *,
 				      String &, sal_uInt16& nMask ) const = 0;
-            sal_Bool        ForwCreateString( const ErrorInfo*, 
+            sal_Bool        ForwCreateString( const ErrorInfo*,
 					  String&, sal_uInt16& nMask ) const;
 
 public:
@@ -227,7 +227,7 @@ public:
 class TOOLS_DLLPUBLIC SimpleErrorHandler : private ErrorHandler
 {
 protected:
-    virtual sal_Bool        CreateString( const ErrorInfo*, String &, 
+    virtual sal_Bool        CreateString( const ErrorInfo*, String &,
 									  sal_uInt16 &nMask ) const;
 
 public:

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -41,12 +41,12 @@ namespace svt
 /**
     Context menu helper class.
 
-    Fills images and labels for a provided popup menu or 
-    com.sun.star.awt.XPopupMenu. 
-    
+    Fills images and labels for a provided popup menu or
+    com.sun.star.awt.XPopupMenu.
+
     PRECONDITION:
-    All commands must be set via SetItemCommand and are part 
-    of the configuration files 
+    All commands must be set via SetItemCommand and are part
+    of the configuration files
     (see org.openoffice.Office.UI.[Module]Commands.xcu)
 */
 struct ExecuteInfo;
@@ -67,29 +67,29 @@ class SVT_DLLPUBLIC ContextMenuHelper
         // methods to create a popup menu referenced by resource URL
         // NOT IMPLEMENTED YET!
         ::com::sun::star::uno::Reference< ::com::sun::star::awt::XPopupMenu > create( const ::rtl::OUString& aPopupMenuResourceURL );
-        
+
         // method to create and execute a popup menu referenced by a resource URL
         // NOT IMPLEMENTED YET!
         bool createAndExecute( const Point& aPos, const ::rtl::OUString& aPopupMenuResourceURL );
 
     private:
         // asynchronous link to prevent destruction while on stack
-        DECL_STATIC_LINK( ContextMenuHelper, ExecuteHdl_Impl, ExecuteInfo* ); 
-        
+        DECL_STATIC_LINK( ContextMenuHelper, ExecuteHdl_Impl, ExecuteInfo* );
+
         // no copy-ctor and operator=
         ContextMenuHelper( const ContextMenuHelper& );
         const ContextMenuHelper& operator=( const ContextMenuHelper& );
 
         // show context menu and dispatch command automatically
         void            executePopupMenu( const Point& aPos, PopupMenu* pMenu );
-        
+
         // fill image and label for every menu item on the provided menu
         void            completeMenuProperties( Menu* pMenu );
 
         // dispatch provided command
         bool            dispatchCommand( const ::com::sun::star::uno::Reference< ::com::sun::star::frame::XFrame >& xFrame, const ::rtl::OUString& aCommandURL );
 
-        
+
         // methods to retrieve a single command URL dependent value from a
         // ui configuration manager
         Image           getImageFromCommandURL( const ::rtl::OUString& aCmdURL, bool bHiContrast ) const;
@@ -98,7 +98,7 @@ class SVT_DLLPUBLIC ContextMenuHelper
         // creates an association between current module/controller bound to the
         // provided frame and their ui configuration managers.
         bool            associateUIConfigurationManagers();
-        
+
         // resets associations to create associations again on-demand.
         // Useful for implementations which recycle frames. Normal
         // implementations can profit from caching and should set

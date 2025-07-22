@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -47,13 +47,13 @@ import com.sun.star.uno.UnoRuntime;
 /**
  * Display a dialog with a text field and a pair of cancel/do-it buttons
  */
-class TextActionDialog 
+class TextActionDialog
     extends JDialog
     implements ActionListener
 {
     public TextActionDialog (
         XAccessibleContext xContext,
-        String sExplanation, 
+        String sExplanation,
         String sTitle)
     {
         super();// AccessibilityWorkBench.Instance() );
@@ -92,7 +92,7 @@ class TextActionDialog
         maText.setText (sText);
         maText.setRows (sText.length() / 40 + 1);
         maText.setColumns (Math.min (Math.max (40, sText.length()), 20));
-        
+
         JPanel aButtons = new JPanel();
         aButtons.setLayout (new FlowLayout());
         maIndexToggle = new JCheckBox ("reverse selection");
@@ -129,17 +129,17 @@ class TextActionDialog
     }
 
 
-    protected int GetSelectionStart()     
-    { 
-        return GetSelection(true); 
-    }
-    protected int GetSelectionEnd()       
+    protected int GetSelectionStart()
     {
-        return GetSelection(false); 
+        return GetSelection(true);
+    }
+    protected int GetSelectionEnd()
+    {
+        return GetSelection(false);
     }
     private int GetSelection (boolean bStart)
     {
-        if (bStart ^ maIndexToggle.isSelected()) 
+        if (bStart ^ maIndexToggle.isSelected())
             return maText.getSelectionStart();
         else
             return maText.getSelectionEnd();
@@ -153,18 +153,18 @@ class TextActionDialog
         boolean bSuccess = true;
         try
         {
-            XAccessibleText xText = 
+            XAccessibleText xText =
                 (XAccessibleText)UnoRuntime.queryInterface(
                     XAccessibleText.class, mxContext);
             if (xText != null)
                 bSuccess = bSuccess && TextAction (xText);
 
-            XAccessibleEditableText xEditableText = 
+            XAccessibleEditableText xEditableText =
                 (XAccessibleEditableText)UnoRuntime.queryInterface(
                     XAccessibleEditableText.class, mxContext);
             if (xEditableText != null)
                 bSuccess = bSuccess && EditableTextAction (xEditableText);
-            
+
             if ( ! bSuccess)
                 sError = "Can't execute";
         }
@@ -175,9 +175,9 @@ class TextActionDialog
 
         if (sError != null)
             JOptionPane.showMessageDialog (
-                this,// AccessibilityWorkBench.Instance(), 
-                sError, 
-                msTitle, 
+                this,// AccessibilityWorkBench.Instance(),
+                sError,
+                msTitle,
                 JOptionPane.ERROR_MESSAGE);
 
         Cancel();
@@ -190,7 +190,7 @@ class TextActionDialog
         return true;
     }
 
-    boolean EditableTextAction (XAccessibleEditableText xText) 
+    boolean EditableTextAction (XAccessibleEditableText xText)
         throws IndexOutOfBoundsException
     {
         return true;

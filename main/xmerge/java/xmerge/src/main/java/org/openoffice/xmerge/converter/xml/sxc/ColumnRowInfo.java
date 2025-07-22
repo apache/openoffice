@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -52,13 +52,13 @@ public class ColumnRowInfo {
 
 		this.type = type;
 	}
-	
+
 	/**
 	 * Constructor for a <code>ColumnRowInfo</code>
 	 *
-	 * @param dimension if it's a row the height, a column the width 
+	 * @param dimension if it's a row the height, a column the width
 	 * @param repeated how many times it is repeated
-	 * @param type whether Row or column record 
+	 * @param type whether Row or column record
 	 */
 	public ColumnRowInfo(int dimension, int repeated, int type) {
 
@@ -73,13 +73,13 @@ public class ColumnRowInfo {
 	 * @param userDefined whether the record is manually set
 	 */
 	public ColumnRowInfo(int dimension, int repeated, int type, boolean userDefined) {
-	
+
 		this(dimension, repeated, type);
 		this.userDefined = userDefined;
 	}
-	
+
 	/**
-	 * sets the definition 
+	 * sets the definition
 	 *
 	 * @param fmt sets the definition
 	 */
@@ -89,8 +89,8 @@ public class ColumnRowInfo {
 	}
 
 	/**
-	 * returns Name of the definition 
-	 * 
+	 * returns Name of the definition
+	 *
 	 * @return the name which identifies the definition
 	 */
 	public Format getFormat() {
@@ -99,17 +99,17 @@ public class ColumnRowInfo {
 	}
 
 	/**
-	 * returns Name of the definition 
-	 * 
+	 * returns Name of the definition
+	 *
 	 * @return the name which identifies the definition
 	 */
 	public int getSize() {
 
 		return dimension;
 	}
-	
+
 	/**
-	 * Sets the definition 
+	 * Sets the definition
 	 *
 	 * @param dimension
 	 */
@@ -120,10 +120,10 @@ public class ColumnRowInfo {
 	/**
 	 * Returns the definition itself
 	 *
-	 * @return the definition 
+	 * @return the definition
 	 */
 	public int getRepeated() {
-	
+
 		return repeated;
 	}
 
@@ -131,30 +131,30 @@ public class ColumnRowInfo {
 
 		this.repeated = repeated;
 	}
-	
+
 	/**
 	 * Returns the definition itself
 	 *
-	 * @return the definition 
+	 * @return the definition
 	 */
 	public boolean isRow() {
-	
+
 		if(type==ROW)
 			return true;
-		else 
+		else
 			return false;
 	}
 
 	/**
-	 * Returns the base Cell address 
-	 * 
+	 * Returns the base Cell address
+	 *
 	 * @return the base cell address
 	 */
 	public boolean isColumn() {
 
 		if(type==COLUMN)
 			return true;
-		else 
+		else
 			return false;
 	}
 
@@ -167,7 +167,7 @@ public class ColumnRowInfo {
 
 		return userDefined;
 	}
-	
+
 	/**
 	 * Test if the row height is default
 	 *
@@ -179,7 +179,7 @@ public class ColumnRowInfo {
 			dimension>DEFAULTROWSIZE_MIN &&
 			dimension<DEFAULTROWSIZE_MAX)
 			return true;
-		else 
+		else
 			return false;
-	}		
+	}
 }

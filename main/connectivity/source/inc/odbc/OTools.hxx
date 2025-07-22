@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -101,7 +101,7 @@ namespace connectivity
 		class OOO_DLLPUBLIC_ODBCBASE OTools
 		{
 		public:
-			static void ThrowException(	OConnection* _pConnection,	
+			static void ThrowException(	OConnection* _pConnection,
 										SQLRETURN _rRetCode,
 										SQLHANDLE _pContext,
 										SQLSMALLINT _nHandleType,
@@ -110,7 +110,7 @@ namespace connectivity
 										rtl_TextEncoding _nTextEncoding = RTL_TEXTENCODING_MS_1252)
                                         throw(::com::sun::star::sdbc::SQLException);
 
-			static void GetInfo(OConnection* _pConnection,	
+			static void GetInfo(OConnection* _pConnection,
 								SQLHANDLE _aConnectionHandle,
 								SQLUSMALLINT _nInfo,
 								::rtl::OUString &_rValue,
@@ -135,7 +135,7 @@ namespace connectivity
 								SQLUSMALLINT _nInfo,
 								SQLUINTEGER &_rValue,
 								const ::com::sun::star::uno::Reference< ::com::sun::star::uno::XInterface >& _xInterface) throw(::com::sun::star::sdbc::SQLException, ::com::sun::star::uno::RuntimeException);
-			            
+
 			static void GetInfo(OConnection* _pConnection,
 								SQLHANDLE _aConnectionHandle,
 								SQLUSMALLINT _nInfo,
@@ -173,7 +173,7 @@ namespace connectivity
 				aVal.fraction	= x.HundredthSeconds * ODBC_FRACTION_UNITS_PER_HSECOND;
 				return aVal;
 			}
-			/** 
+			/**
 				getBindTypes set the ODBC type for C
 				@param	_bUseWChar			true when Unicode should be used
 				@param	_bUseOldTimeDate	true when the old datetime format should be used
@@ -187,7 +187,7 @@ namespace connectivity
 									 SQLSMALLINT& fCType,
 									 SQLSMALLINT& fSqlType);
 
-			static ::rtl::OUString getStringValue(	OConnection* _pConnection,	
+			static ::rtl::OUString getStringValue(	OConnection* _pConnection,
 													SQLHANDLE _aStatementHandle,
 													sal_Int32 columnIndex,
 													SQLSMALLINT _fSqlType,
@@ -195,13 +195,13 @@ namespace connectivity
 													const ::com::sun::star::uno::Reference< ::com::sun::star::uno::XInterface >& _xInterface,
 													rtl_TextEncoding _nTextEncoding) throw(::com::sun::star::sdbc::SQLException, ::com::sun::star::uno::RuntimeException);
 
-			static  ::com::sun::star::uno::Sequence<sal_Int8> getBytesValue(OConnection* _pConnection,	
+			static  ::com::sun::star::uno::Sequence<sal_Int8> getBytesValue(OConnection* _pConnection,
 																			SQLHANDLE _aStatementHandle,
 																			sal_Int32 columnIndex,
 																			SQLSMALLINT _fSqlType,
 																			sal_Bool &_bWasNull,
 																			const ::com::sun::star::uno::Reference< ::com::sun::star::uno::XInterface >& _xInterface) throw(::com::sun::star::sdbc::SQLException, ::com::sun::star::uno::RuntimeException);
-			static void getValue(	OConnection* _pConnection,	
+			static void getValue(	OConnection* _pConnection,
 									SQLHANDLE _aStatementHandle,
 									sal_Int32 columnIndex,
 									SQLSMALLINT _nType,
@@ -210,7 +210,7 @@ namespace connectivity
 									void* _pValue,
 									SQLLEN _nSize) throw(::com::sun::star::sdbc::SQLException, ::com::sun::star::uno::RuntimeException);
 
-			/** 
+			/**
 				bindData copies the from pValue to pData
 				@param	_nOdbcType			the ODBC sql type
 				@param	_bUseWChar			true when Unicode should be used
@@ -227,9 +227,9 @@ namespace connectivity
 									rtl_TextEncoding _nTextEncoding,
 									SQLULEN& _nColumnSize);
 
-			static void bindParameter(	OConnection* _pConnection,	
+			static void bindParameter(	OConnection* _pConnection,
 										SQLHANDLE _hStmt,
-										sal_Int32 nPos, 
+										sal_Int32 nPos,
 										sal_Int8*& pDataBuffer,
 										sal_Int8* pLenBuffer,
 										SQLSMALLINT _nJDBCtype,
@@ -240,7 +240,7 @@ namespace connectivity
 										rtl_TextEncoding _nTextEncoding)
 										 throw(::com::sun::star::sdbc::SQLException, ::com::sun::star::uno::RuntimeException);
 
-			static void bindValue(	OConnection* _pConnection,	
+			static void bindValue(	OConnection* _pConnection,
 									SQLHANDLE _aStatementHandle,
 									sal_Int32 columnIndex,
 									SQLSMALLINT _nType,
@@ -253,7 +253,7 @@ namespace connectivity
 									sal_Bool _bUseOldTimeDate) throw(::com::sun::star::sdbc::SQLException, ::com::sun::star::uno::RuntimeException);
 		};
 
-		template <class T> void getValue(	OConnection* _pConnection,	
+		template <class T> void getValue(	OConnection* _pConnection,
 											SQLHANDLE _aStatementHandle,
 											sal_Int32 columnIndex,
 											SQLSMALLINT _nType,
@@ -261,11 +261,11 @@ namespace connectivity
 											const ::com::sun::star::uno::Reference< ::com::sun::star::uno::XInterface >& _xInterface,
 											T& _rValue) throw(::com::sun::star::sdbc::SQLException, ::com::sun::star::uno::RuntimeException)
 		{
-			OTools::getValue(_pConnection,_aStatementHandle,columnIndex,_nType,_bWasNull,_xInterface,&_rValue,sizeof _rValue);			
+			OTools::getValue(_pConnection,_aStatementHandle,columnIndex,_nType,_bWasNull,_xInterface,&_rValue,sizeof _rValue);
 		}
 		//-----------------------------------------------------------------------------
 
-		
+
 	}
 }
 #endif // _CONNECTIVITY_OTOOLS_HXX_

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -40,7 +40,7 @@ class SimpleGuesser{
 public:
     /**inits the object with conf file "./conf.txt"*/
     SimpleGuesser();
-    
+
     /** Compares the current Simpleguesser with an other
      * @param SimpleGuesser& sg the other guesser to compare
      */
@@ -50,51 +50,51 @@ public:
      * destroy the object
      */
     ~SimpleGuesser();
-    
+
     /**
      * Analyze a text and return the most probable languages of the text
      * @param char* text is the text to analyze
      * @return the list of guess
      */
     vector<Guess> GuessLanguage(char* text);
-    
+
     /**
      * Analyze a text and return the most probable language of the text
      * @param char* text is the text to analyze
      * @return the guess (containing language)
      */
     Guess GuessPrimaryLanguage(char* text);
-    
+
     /**
      * List all available languages (possibly to be in guesses)
      * @return the list of languages
      */
     vector<Guess> GetAvailableLanguages();
-    
+
     /**
      * List all languages (possibly in guesses or not)
      * @return the list of languages
      */
     vector<Guess> GetAllManagedLanguages();
-    
+
     /**
      * List all Unavailable languages (disable for any reason)
      * @return the list of languages
      */
     vector<Guess> GetUnavailableLanguages();
-    
+
     /**
      * Mark a language enabled
      * @param string lang the language to enable (build like language-COUNTRY-encoding)
      */
     void EnableLanguage(string lang);
-    
+
     /**
      * Mark a language disabled
      * @param string lang the language to disable (build like language-COUNTRY-encoding)
      */
     void DisableLanguage(string lang);
-    
+
     /**
      * Load a new DB of fingerprints
      * @param const char* thePathOfConfFile self explaining
@@ -103,13 +103,13 @@ public:
     void SetDBPath(const char* thePathOfConfFile, const char* prefix);
 
 protected:
-    
+
     //Where typical fingerprints (n-gram tables) are stored
     void* h;
-    
+
     //Is used to select languages into the fingerprints DB, the mask is used to indicate if we want enabled disabled or both
     vector<Guess> GetManagedLanguages(const char mask);
-    
+
     //Like getManagedLanguages, this function enable or disable a language and it depends of the mask
     void XableLanguage(string lang, char mask);
 };

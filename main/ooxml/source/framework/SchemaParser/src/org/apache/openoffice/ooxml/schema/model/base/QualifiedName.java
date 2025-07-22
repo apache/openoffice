@@ -24,7 +24,7 @@ package org.apache.openoffice.ooxml.schema.model.base;
 import javax.xml.namespace.QName;
 
 /** Similar to the QName class.  A qualified name that consists of the local
- *  part and a namespace. 
+ *  part and a namespace.
  *  The namespace is stored both as URI and short form (prefix).
  */
 public class QualifiedName
@@ -36,10 +36,10 @@ public class QualifiedName
         msNamespacePrefix = aName.getPrefix();
         msNamespaceURI = aName.getNamespaceURI();
     }
-    
-    
-    
-    
+
+
+
+
     public QualifiedName (
         final String sNamespaceURI,
         final String sNamespacePrefix,
@@ -49,15 +49,15 @@ public class QualifiedName
         msNamespacePrefix = sNamespacePrefix;
         msNamespaceURI = sNamespaceURI;
     }
-    
-    
-    
-    
+
+
+
+
     public QualifiedName (final String sLocalPart)
     {
         this(null, null, sLocalPart);
     }
-    
+
 
 
 
@@ -70,9 +70,9 @@ public class QualifiedName
         else
             return msNamespacePrefix + ":" + msLocalPart;
     }
-    
-    
-    
+
+
+
 
     public String GetStateName()
     {
@@ -82,33 +82,33 @@ public class QualifiedName
             return msNamespacePrefix + "_" + msLocalPart;
     }
 
-    
-    
-    
+
+
+
     public String GetNamespaceURI ()
     {
         return msNamespaceURI;
     }
-    
-    
-    
-    
+
+
+
+
     public String GetNamespacePrefix ()
     {
         return msNamespacePrefix;
     }
-    
-    
-    
-    
+
+
+
+
     public String GetLocalPart ()
     {
         return msLocalPart;
     }
 
-    
-    
-    
+
+
+
     /** Compare QualifiedName objects (e.g. for sorting them).
      *  Primary sort key is the local part.
      *  Secondary key is the namespace prefix.
@@ -130,19 +130,19 @@ public class QualifiedName
             else
                 return +1;
     }
-    
-    
-    
-    
+
+
+
+
     @Override
     public String toString ()
     {
-        return GetDisplayName(); 
+        return GetDisplayName();
     }
-    
-    
-    
-    
+
+
+
+
     private final String msLocalPart;
     private final String msNamespacePrefix;
     private final String msNamespaceURI;

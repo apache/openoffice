@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 package org.apache.openoffice.comp.sdbc.dbtools.sdbcx;
@@ -48,14 +48,14 @@ public class OColumnContainer extends OContainer {
     private XDatabaseMetaData metadata;
     private Map<String,ColumnDescription> columnDescriptions = new HashMap<>();
     private Map<String,ExtraColumnInfo> extraColumnInfo = new HashMap<>();
-    
+
     /// The XDatabaseMetaData.getColumns() data stored in columnDescriptions doesn't provide everything we need, so this class stores the rest.
     public static class ExtraColumnInfo {
         public boolean isAutoIncrement;
         public boolean isCurrency;
         public int dataType;
     }
-    
+
     public OColumnContainer(Object lock, boolean isCaseSensitive, List<ColumnDescription> columnDescriptions, OTable table, XDatabaseMetaData metadata)
             throws ElementExistException {
         super(lock, isCaseSensitive, toColumnNames(columnDescriptions));
@@ -65,7 +65,7 @@ public class OColumnContainer extends OContainer {
             this.columnDescriptions.put(columnDescription.columnName, columnDescription);
         }
     }
-    
+
     private static List<String> toColumnNames(List<ColumnDescription> columns) {
         List<String> columnNames = new ArrayList<>(columns.size());
         for (ColumnDescription columnDescription : columns) {
@@ -73,14 +73,14 @@ public class OColumnContainer extends OContainer {
         }
         return columnNames;
     }
-    
+
     @Override
     protected XPropertySet createObject(String name) throws SQLException {
         boolean queryInfo = true;
         boolean isAutoIncrement = false;
         boolean isCurrency = false;
         int dataType = DataType.OTHER;
-        
+
         ColumnDescription columnDescription = columnDescriptions.get(name);
         if (columnDescription == null) {
             // could be a recently added column. Refresh:
@@ -96,7 +96,7 @@ public class OColumnContainer extends OContainer {
         if (columnDescription == null) {
             throw new SQLException("No column " + name + " found");
         }
-        
+
         ExtraColumnInfo columnInfo = extraColumnInfo.get(name);
         if (columnInfo == null) {
             String composedName = DbTools.composeTableNameForSelect(metadata.getConnection(), table);
@@ -109,7 +109,7 @@ public class OColumnContainer extends OContainer {
             isCurrency = columnInfo.isCurrency;
             dataType = columnInfo.dataType;
         }
-        
+
         XNameAccess primaryKeyColumns = DbTools.getPrimaryKeyColumns(UnoRuntime.queryInterface(XPropertySet.class, table));
         int nullable = columnDescription.nullable;
         if (nullable != ColumnValue.NO_NULLS && primaryKeyColumns != null && primaryKeyColumns.hasByName(name)) {
@@ -119,19 +119,19 @@ public class OColumnContainer extends OContainer {
                 nullable, columnDescription.columnSize, columnDescription.decimalDigits, columnDescription.type,
                 isAutoIncrement, false, isCurrency, isCaseSensitive());
     }
-    
+
     @Override
     protected XPropertySet createDescriptor() {
         return new SdbcxColumnDescriptor(isCaseSensitive());
     }
-    
+
     @Override
     protected void impl_refresh() {
         extraColumnInfo.clear();
         // FIXME: won't help
         table.refreshColumns();
     }
-    
+
     @Override
     protected XPropertySet appendObject(String _rForName, XPropertySet descriptor) throws SQLException {
         if (table == null) {
@@ -149,7 +149,7 @@ public class OColumnContainer extends OContainer {
         }
         return createObject(_rForName);
     }
-    
+
     @Override
     protected void dropObject(int index, String name) throws SQLException {
         Osl.ensure(table, "Table is null!");

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -45,10 +45,10 @@ import com.sun.star.util.XCancellable;
  * @see com.sun.star.ui.dialogs.XExecutableDialog
  */
 public class _XExecutableDialog extends MultiMethodTest {
-    
+
     public XExecutableDialog oObj = null;
     private ExecThread eThread = null;
-    
+
     /**
      * Test calls the method. <p>
      * Has <b> OK </b> status if the method successfully returns
@@ -58,7 +58,7 @@ public class _XExecutableDialog extends MultiMethodTest {
         oObj.setTitle("The Title");
         tRes.tested("setTitle()",true);
     }
-    
+
     /**
      * This method is excluded from automated test since
      * we can't close the dialog. <p>
@@ -90,25 +90,25 @@ public class _XExecutableDialog extends MultiMethodTest {
                 log.println("XCancellable isn't supported and the "+
                         "environment is killed hard");
             }
-            
-            
+
+
         }
         tRes.tested("execute()",result);
     }
-    
+
     /**
      * Calls <code>execute()</code> method in a separate thread.
      * Necessary to check if this method works
      */
     protected class ExecThread extends Thread {
-        
+
         public short execRes = (short) 17 ;
         private XExecutableDialog Diag = null ;
-        
+
         public ExecThread(XExecutableDialog Diag) {
             this.Diag = Diag ;
         }
-        
+
         public void run() {
             try {
                 execRes = Diag.execute();
@@ -118,7 +118,7 @@ public class _XExecutableDialog extends MultiMethodTest {
             }
         }
     }
-    
+
     /**
      * Sleeps for 5 sec. to allow StarOffice to react on <code>
      * reset</code> call.
@@ -130,14 +130,14 @@ public class _XExecutableDialog extends MultiMethodTest {
             log.println("While waiting :" + e) ;
         }
     }
-    
+
     public void after() {
         if (eThread.isAlive()) {
             log.println("Thread didn't die ... cleaning up");
             disposeEnvironment();
         }
     }
-    
+
     private void closeDialog() {
         XCancellable canc = (XCancellable) UnoRuntime.queryInterface(
                 XCancellable.class, tEnv.getTestObject());
@@ -147,19 +147,19 @@ public class _XExecutableDialog extends MultiMethodTest {
         } else {
             this.disposeEnvironment();
         }
-        
+
         long st = System.currentTimeMillis();
         boolean toLong = false;
-        
+
         log.println("waiting for dialog to close");
-        
+
         while (eThread.isAlive() && !toLong) {
             //wait for dialog to close
             toLong = (System.currentTimeMillis()-st > 10000);
         }
-        
+
         log.println("done");
-        
+
         try {
             if (eThread.isAlive()) {
                 log.println("Interrupting Thread");
@@ -169,21 +169,21 @@ public class _XExecutableDialog extends MultiMethodTest {
         } catch (Exception e) {
             // who cares ;-)
         }
-        
+
         st = System.currentTimeMillis();
         toLong = false;
-        
+
         log.println("waiting for interruption to work");
-        
+
         while (eThread.isAlive() && !toLong) {
             //wait for dialog to close
             toLong = (System.currentTimeMillis()-st > 10000);
         }
-        
+
         log.println("DialogThread alive: "+eThread.isAlive());
-        
+
         log.println("done");
-        
+
     }
-    
+
 }

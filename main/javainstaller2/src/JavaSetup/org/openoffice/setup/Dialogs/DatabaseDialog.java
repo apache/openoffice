@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -34,7 +34,7 @@ import javax.swing.border.EmptyBorder;
 import org.openoffice.setup.ResourceManager;
 
 public class DatabaseDialog extends JDialog {
-    
+
     public DatabaseDialog(SetupFrame setupFrame) {
 
         // super(setupFrame.getDialog());
@@ -44,12 +44,12 @@ public class DatabaseDialog extends JDialog {
 
         setTitle(text1);
         this.getContentPane().setLayout(new java.awt.BorderLayout());
-        
+
         JPanel toppanel = new JPanel();
         toppanel.setLayout(new java.awt.BorderLayout());
         toppanel.setBorder(new EmptyBorder(new Insets(50, 50, 50, 50)));
 
-        PanelLabel label1 = new PanelLabel(text2);        
+        PanelLabel label1 = new PanelLabel(text2);
         toppanel.add(label1, BorderLayout.NORTH);
 
         Container contentPane = this.getContentPane();

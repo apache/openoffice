@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -34,9 +34,9 @@ import java.lang.reflect.Constructor;
 
 //
 // purpose of this class is to provide a service factory that instantiates
-// the services only once (as long as this factory itself exists) 
+// the services only once (as long as this factory itself exists)
 // and returns only reference to that instance.
-// 
+//
 
 public class OneInstanceFactory implements
         XSingleServiceFactory,
@@ -64,8 +64,8 @@ public class OneInstanceFactory implements
     //**********************
     // XSingleServiceFactory
     //**********************
-    public Object createInstance() 
-        throws com.sun.star.uno.Exception, 
+    public Object createInstance()
+        throws com.sun.star.uno.Exception,
                com.sun.star.uno.RuntimeException
     {
         if (xInstantiatedService == null)
@@ -77,7 +77,7 @@ public class OneInstanceFactory implements
             }
             catch( Exception e ) {
             }
-        
+
             //!! workaround for services not always being created
             //!! via 'createInstanceWithArguments'
             XInitialization xIni = (XInitialization) UnoRuntime.queryInterface(
@@ -91,15 +91,15 @@ public class OneInstanceFactory implements
                         XPropertySet.class ,  xMultiFactory.createInstance(
                             "com.sun.star.linguistic2.LinguProperties" ) );
                     aArguments[0] = xPropSet;
-                }                            
+                }
                 xIni.initialize( aArguments );
             }
         }
         return xInstantiatedService;
     }
 
-    public Object createInstanceWithArguments( Object[] aArguments ) 
-        throws com.sun.star.uno.Exception, 
+    public Object createInstanceWithArguments( Object[] aArguments )
+        throws com.sun.star.uno.Exception,
                com.sun.star.uno.RuntimeException
     {
         if (xInstantiatedService == null)
@@ -134,7 +134,7 @@ public class OneInstanceFactory implements
     {
         return aSvcImplName;
     }
-        
+
     public String[] getSupportedServiceNames()
         throws com.sun.star.uno.RuntimeException
     {

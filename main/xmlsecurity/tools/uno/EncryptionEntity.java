@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -38,7 +38,7 @@ import com.sun.star.xml.crypto.sax.*;
 class EncryptionEntity extends SecurityEntity
 {
 	private int m_nEncryptionElementCollectorId;
-	
+
 	EncryptionEntity(
 		XSecuritySAXEventKeeper xSAXEventKeeper,
 		boolean isExporting,
@@ -51,13 +51,13 @@ class EncryptionEntity extends SecurityEntity
 	{
 		super(xSAXEventKeeper, xXMLSecurityContext, xXMLSignature,
 			 xXMLEncryption, xRemoteServiceManager, xRemoteContext);
-		
+
 		m_nEncryptionElementCollectorId = m_xSAXEventKeeper.addSecurityElementCollector(
 			ElementMarkPriority.AFTERMODIFY,
 			true);
-			
+
 		m_xSAXEventKeeper.setSecurityId(m_nEncryptionElementCollectorId, m_nSecurityId);
-		
+
 		if (isExporting)
 		{
 			try
@@ -67,11 +67,11 @@ class EncryptionEntity extends SecurityEntity
 				 */
 				Object encryptor = m_xRemoteServiceManager.createInstanceWithContext(
 					TestTool.ENCRYPTOR_COMPONENT, m_xRemoteContext);
-					
-				m_xReferenceResolvedListener = 
+
+				m_xReferenceResolvedListener =
 					(XReferenceResolvedListener)UnoRuntime.queryInterface(
-						XReferenceResolvedListener.class, encryptor); 
-	
+						XReferenceResolvedListener.class, encryptor);
+
 				/*
 				 * initializes the Encryptor.
 				 */
@@ -85,11 +85,11 @@ class EncryptionEntity extends SecurityEntity
 				args[3] = m_xXMLSecurityContext.getSecurityEnvironment();
 				args[4] = m_xXMLEncryption;
 				xInitialization.initialize(args);
-				
+
 				/*
 				 * sets encryption result listener.
 				 */
-				XEncryptionResultBroadcaster m_xEncryptionResultBroadcaster = 
+				XEncryptionResultBroadcaster m_xEncryptionResultBroadcaster =
 					(XEncryptionResultBroadcaster)UnoRuntime.queryInterface(
 						XEncryptionResultBroadcaster.class, m_xReferenceResolvedListener);
 				m_xEncryptionResultBroadcaster.addEncryptionResultListener(
@@ -109,11 +109,11 @@ class EncryptionEntity extends SecurityEntity
 				 */
 				Object decryptor = m_xRemoteServiceManager.createInstanceWithContext(
 					TestTool.DECRYPTOR_COMPONENT, m_xRemoteContext);
-					
-				m_xReferenceResolvedListener = 
+
+				m_xReferenceResolvedListener =
 					(XReferenceResolvedListener)UnoRuntime.queryInterface(
-						XReferenceResolvedListener.class, decryptor); 
-	
+						XReferenceResolvedListener.class, decryptor);
+
 				/*
 				 * initializes the Decryptor.
 				 */
@@ -125,11 +125,11 @@ class EncryptionEntity extends SecurityEntity
 				args[3] = m_xXMLSecurityContext;
 				args[4] = m_xXMLEncryption;
 				xInitialization.initialize(args);
-				
+
 				/*
 				 * sets decryption result listener.
 				 */
-				XDecryptionResultBroadcaster m_xDecryptionResultBroadcaster = 
+				XDecryptionResultBroadcaster m_xDecryptionResultBroadcaster =
 					(XDecryptionResultBroadcaster)UnoRuntime.queryInterface(
 						XDecryptionResultBroadcaster.class, m_xReferenceResolvedListener);
 				m_xDecryptionResultBroadcaster.addDecryptionResultListener(
@@ -141,13 +141,13 @@ class EncryptionEntity extends SecurityEntity
 				e.printStackTrace();
 			}
 		}
-		
+
 		/*
 		 * creates a Blocker.
 		 */
 		int blockerId = m_xSAXEventKeeper.addBlocker();
 		m_xSAXEventKeeper.setSecurityId(blockerId, m_nSecurityId);
-		
+
 		try
 		{
 			XBlockerMonitor xBlockerMonitor = (XBlockerMonitor)UnoRuntime.queryInterface(
@@ -162,12 +162,12 @@ class EncryptionEntity extends SecurityEntity
 		/*
 		 * configures the resolve listener for the encryption template.
 		 */
-		XReferenceResolvedBroadcaster xReferenceResolvedBroadcaster = 
+		XReferenceResolvedBroadcaster xReferenceResolvedBroadcaster =
 			(XReferenceResolvedBroadcaster)UnoRuntime.queryInterface(
 				XReferenceResolvedBroadcaster.class, m_xSAXEventKeeper);
 		xReferenceResolvedBroadcaster.addReferenceResolvedListener(m_nEncryptionElementCollectorId, m_xReferenceResolvedListener);
 	}
-	
+
 	/*
 	 * add the reference to this encryption.
 	 *
@@ -181,23 +181,23 @@ class EncryptionEntity extends SecurityEntity
 	protected boolean setReference(boolean isExporting)
 	{
 		boolean rc = false;
-		
+
 		int referenceId = m_xSAXEventKeeper.addSecurityElementCollector(
 			isExporting?
 			(ElementMarkPriority.AFTERMODIFY):(ElementMarkPriority.BEFOREMODIFY),
 			true);
-				
+
 		m_xSAXEventKeeper.setSecurityId(referenceId, m_nSecurityId);
 
-		XReferenceResolvedBroadcaster xReferenceResolvedBroadcaster = 
+		XReferenceResolvedBroadcaster xReferenceResolvedBroadcaster =
 			(XReferenceResolvedBroadcaster)UnoRuntime.queryInterface(
 				XReferenceResolvedBroadcaster.class, m_xSAXEventKeeper);
 		xReferenceResolvedBroadcaster.addReferenceResolvedListener(
 			referenceId, m_xReferenceResolvedListener);
-			
+
 		try
 		{
-			XReferenceCollector xReferenceCollector = 
+			XReferenceCollector xReferenceCollector =
 				(XReferenceCollector)UnoRuntime.queryInterface(
 					XReferenceCollector.class, m_xReferenceResolvedListener);
 			xReferenceCollector.setReferenceId(referenceId);
@@ -207,7 +207,7 @@ class EncryptionEntity extends SecurityEntity
 			e.printStackTrace();
 			rc = false;
 		}
-		
+
 		return rc;
 	}
 }

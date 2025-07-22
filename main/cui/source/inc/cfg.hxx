@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -130,7 +130,7 @@ public:
     ::com::sun::star::uno::Reference
         < ::com::sun::star::ui::XUIConfigurationManager >
 			GetParentConfigManager() { return m_xParentCfgMgr; };
-	
+
 	::com::sun::star::uno::Reference
         < ::com::sun::star::ui::XImageManager >
 			GetImageManager() { return m_xImgMgr; };
@@ -258,7 +258,7 @@ public:
                     bool bParentData = sal_False );
 
 	SvxConfigEntry()
-		:	
+		:
 			nId( 0 ),
 			bPopUp( sal_False ),
 			bStrEdited( sal_False ),
@@ -361,7 +361,7 @@ class SvxDescriptionEdit : public ExtMultiLineEdit
 {
 private:
     Rectangle           m_aRealRect;
-	
+
 public:
     SvxDescriptionEdit( Window* pParent, const ResId& _rId );
     inline ~SvxDescriptionEdit() {}
@@ -739,7 +739,7 @@ private:
 	CancelButton	aBtnCancel;
 	HelpButton		aBtnHelp;
 	PushButton		aBtnImport;
-	PushButton      aBtnDelete; 
+	PushButton      aBtnDelete;
 	FixedLine       aFlSeparator;
     sal_uInt16      m_nNextId;
 
@@ -752,13 +752,13 @@ private:
 		::com::sun::star::ui::XImageManager > m_xParentImageManager;
 
 	::com::sun::star::uno::Reference<
-		::com::sun::star::ui::XImageManager > m_xImportedImageManager; 
+		::com::sun::star::ui::XImageManager > m_xImportedImageManager;
 
     ::com::sun::star::uno::Reference<
 		::com::sun::star::graphic::XGraphicProvider > m_xGraphProvider;
-	
+
     bool ReplaceGraphicItem( const ::rtl::OUString& aURL );
-    
+
     bool ImportGraphic( const ::rtl::OUString& aURL );
 
 	void ImportGraphics(
@@ -773,8 +773,8 @@ public:
 		const ::com::sun::star::uno::Reference<
 			::com::sun::star::ui::XImageManager >& rXImageManager,
 		const ::com::sun::star::uno::Reference<
-			::com::sun::star::ui::XImageManager >& rXParentImageManager 
-			); 
+			::com::sun::star::ui::XImageManager >& rXParentImageManager
+			);
 
 	~SvxIconSelectorDialog();
 
@@ -783,19 +783,19 @@ public:
 
 	DECL_LINK( SelectHdl, ToolBox * );
 	DECL_LINK( ImportHdl, PushButton * );
-	DECL_LINK( DeleteHdl, PushButton * ); 
+	DECL_LINK( DeleteHdl, PushButton * );
 };
 
 class SvxIconReplacementDialog : public MessBox
 {
 public:
-	SvxIconReplacementDialog( 
-		Window *pWindow, 
+	SvxIconReplacementDialog(
+		Window *pWindow,
 		const rtl::OUString& aMessage,
 		bool aYestoAll);
 
-	SvxIconReplacementDialog( 
-		Window *pWindow, 
+	SvxIconReplacementDialog(
+		Window *pWindow,
 		const rtl::OUString& aMessage );
 
 	rtl::OUString ReplaceIconName( const rtl::OUString& );

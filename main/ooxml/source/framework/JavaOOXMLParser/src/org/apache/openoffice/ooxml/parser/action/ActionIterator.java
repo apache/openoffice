@@ -36,16 +36,16 @@ public class ActionIterator implements Iterable<IAction>
         maAllStateActions = aAllStateActions;
     }
 
-    
-    
-    
+
+
+
     @Override public Iterator<IAction> iterator()
     {
         return new Iterator<IAction>()
         {
             Iterator<IAction> maIterator = null;
             int mnPhase = 0;
-            
+
             @Override
             public boolean hasNext()
             {
@@ -91,18 +91,18 @@ public class ActionIterator implements Iterable<IAction>
                 }
             }
 
-            
-            
-            
+
+
+
             @Override
             public IAction next()
             {
                 return maIterator.next();
             }
 
-            
-            
-            
+
+
+
             @Override
             public void remove()
             {
@@ -110,9 +110,9 @@ public class ActionIterator implements Iterable<IAction>
         };
     }
 
-    
-    
-    
+
+
+
     private final Iterable<IAction> maOneStateActions;
     private final Iterable<IAction> maAllStateActions;
 }

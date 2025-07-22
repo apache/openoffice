@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -147,7 +147,7 @@ class CloseDispatcher : public css::lang::XTypeProvider
 
             @param  xFrame
                     the frame where the corresponding dispatch was started.
-    
+
             @param  sTarget
                     help us to find the right target for this close operation.
          */
@@ -291,7 +291,7 @@ class CloseDispatcher : public css::lang::XTypeProvider
         //---------------------------------------
         /** @short  try to find the right target frame where this close request
                     must be really done.
-                    
+
             @descr  The problem behind: closing some resources depends sometimes from the
                     context where its dispatched. Sometimes the start frame of the dispatch
                     has to be closed itself (target=_self) ... sometimes it's parent frame
@@ -300,14 +300,14 @@ class CloseDispatcher : public css::lang::XTypeProvider
                     not frames containing top level windows. So normally _magic (which btw does not
                     exists at the moment .-) ) should be used. So we interpret target=<empty>
                     as _magic !
-                    
+
             @param  xFrame
                     start point for search of right dispatch frame.
-                    
+
             @param  sTarget
                     give us an idea how this target frame must be searched.
         */
-        
+
         static css::uno::Reference< css::frame::XFrame > static_impl_searchRightTargetFrame(const css::uno::Reference< css::frame::XFrame >& xFrame ,
                                                                                             const ::rtl::OUString&                           sTarget);
 

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 package fvt.uno.sc.chart;
@@ -48,7 +48,7 @@ import com.sun.star.table.CellRangeAddress;
 
 /**
  *  Check Axis in chart can be applied and saved
- * 
+ *
  */
 @RunWith(value = Parameterized.class)
 public class ChartAxis {
@@ -56,14 +56,14 @@ public class ChartAxis {
 	private Boolean[] axes;
 	private Boolean[] secondaryAxes;
 	private String inputType;
-	private double[][] numberData;	
+	private double[][] numberData;
 	private String fileType;
-	
+
 	private static final UnoApp unoApp = new UnoApp();
-	
+
 	XComponent scComponent = null;
 	XSpreadsheetDocument scDocument = null;
-	
+
 	@Parameters
 	public static Collection<Object[]> data() throws Exception {
 		double[][] numberData1 = {
@@ -74,7 +74,7 @@ public class ChartAxis {
 		};
 		Boolean[][] axesList = {
 				{false, false, false}, //[0] no Axis
-				{true, false, false}, // [1] X 
+				{true, false, false}, // [1] X
 				{false, true, false}, // [2] Y
 				{true, true, false}, // [3] X & Y
 				{true, true, true}, // [4] X & Y & Z
@@ -90,17 +90,17 @@ public class ChartAxis {
 //			{axesList[6], axesList[7], "com.sun.star.chart.BarDiagram", numberData1, "ods"}, //Bug #121046
 			{axesList[1], axesList[5], "com.sun.star.chart.AreaDiagram", numberData1, "ods"},
 			{axesList[4], axesList[4], "com.sun.star.chart.LineDiagram", numberData1, "ods"},
-			
+
 //			{axesList[0], axesList[0], "com.sun.star.chart.BarDiagram", numberData1, "xls"}, //Bug #121043
 //			{axesList[2], axesList[3], "com.sun.star.chart.BarDiagram", numberData1, "xls"}, //Bug #121043
 			{null, axesList[4], "com.sun.star.chart.BarDiagram", numberData1, "xls"},
 			{axesList[6], axesList[7], "com.sun.star.chart.BarDiagram", numberData1, "xls"},
 			{axesList[1], axesList[5], "com.sun.star.chart.AreaDiagram", numberData1, "xls"},
 			{axesList[4], axesList[4], "com.sun.star.chart.LineDiagram", numberData1, "xls"}
-		
+
 		});
 	}
-	
+
 	public ChartAxis(Boolean[] axes, Boolean[] secondaryAxes, String inputType, double[][] numberData, String fileType) {
 		this.axes = axes;
 		this.secondaryAxes = secondaryAxes;
@@ -108,7 +108,7 @@ public class ChartAxis {
 		this.numberData = numberData;
 		this.fileType = fileType;
 	}
-		
+
 	@Before
 	public void setUp() throws Exception {
 		scComponent = unoApp.newDocument("scalc");
@@ -118,9 +118,9 @@ public class ChartAxis {
 	@After
 	public void tearDown() throws Exception {
 		unoApp.closeDocument(scComponent);
-		
+
 	}
-	
+
 	@BeforeClass
 	public static void setUpConnection() throws Exception {
 		unoApp.start();
@@ -129,9 +129,9 @@ public class ChartAxis {
 	@AfterClass
 	public static void tearDownConnection() throws InterruptedException, Exception {
 		unoApp.close();
-		SCUtil.clearTempDir();	
+		SCUtil.clearTempDir();
 	}
-	
+
 	/**
 	 * Enable different types of axes in chart.
 	 * 1. Create a spreadsheet file.
@@ -153,27 +153,27 @@ public class ChartAxis {
 		Boolean[][] results = {
 				{false, false, false},
 				{false, false, false}
-		};	
-		
+		};
+
 		if (inputType.equals("com.sun.star.chart.StockDiagram")) {
 			cellRangeName = "A1:C4";
-		}	
-		if (fileType.equalsIgnoreCase("xls")) {
-			chartName = "Object 1";			
 		}
-		
+		if (fileType.equalsIgnoreCase("xls")) {
+			chartName = "Object 1";
+		}
+
 		XSpreadsheet sheet = SCUtil.getCurrentSheet(scDocument);
-		
+
 		SCUtil.setValueToCellRange(sheet, 0, 0, numberData);
 
 		CellRangeAddress[] cellAddress = new CellRangeAddress[1];
 		cellAddress[0] = SCUtil.getChartDataRangeByName(sheet, cellRangeName);
 		Rectangle rectangle = new Rectangle(1000, 1000, 15000, 9500);
-		XChartDocument xChartDocument = null; 		
+		XChartDocument xChartDocument = null;
 		xChartDocument = SCUtil.createChart(sheet, rectangle, cellAddress, chartName);
 		SCUtil.setChartType(xChartDocument, inputType);
 		XDiagram xDiagram = xChartDocument.getDiagram();
-		
+
 		if (axes != null) {
 			SCUtil.setProperties(xDiagram, "HasXAxis", axes[0]);
 			SCUtil.setProperties(xDiagram, "HasYAxis", axes[1]);
@@ -186,33 +186,33 @@ public class ChartAxis {
 			expected[1][0] = secondaryAxes[0];
 			expected[1][1] = secondaryAxes[1];
 		}
-		
+
 		//Excel does not has secondary X axis, the value depends on the secondary Y axis setting
 		if (fileType.equalsIgnoreCase("xls")) {
-			expected[1][0] = false;			
+			expected[1][0] = false;
 			if (expected[1][1]) {
 				expected[1][0] = true;
 				SCUtil.setProperties(xDiagram.getDataRowProperties(1), "Axis", 4);
 			}
 		}
-		
+
 		SCUtil.saveFileAs(scComponent, fileName, fileType);
 		scDocument = SCUtil.reloadFile(unoApp, scDocument, fileName + "." + fileType);
 		sheet = SCUtil.getCurrentSheet(scDocument);
-		
+
 		xChartDocument = SCUtil.getChartByName(sheet, chartName);
-		xDiagram = xChartDocument.getDiagram(); 
+		xDiagram = xChartDocument.getDiagram();
 		results[0][0] = (Boolean) SCUtil.getProperties(xDiagram, "HasXAxis");
 		results[0][1] = (Boolean) SCUtil.getProperties(xDiagram, "HasYAxis");
 		results[1][0] = (Boolean) SCUtil.getProperties(xDiagram, "HasSecondaryXAxis");
 		results[1][1] = (Boolean) SCUtil.getProperties(xDiagram, "HasSecondaryYAxis");
 
 		SCUtil.closeFile(scDocument);
-		
+
 		assertArrayEquals("Incorrect chart grids got in ." + fileType + " file.", expected, results);
 
 	}
-	
+
 	/**
 	 * Enable different types of axes in 3D chart.
 	 * 1. Create a spreadsheet file.
@@ -234,28 +234,28 @@ public class ChartAxis {
 		Boolean[][] results = {
 				{false, false, false},
 				{false, false, false}
-		};	
-		
+		};
+
 		if (inputType.equals("com.sun.star.chart.StockDiagram")) {
 			cellRangeName = "A1:C4";
-		}	
-		if (fileType.equalsIgnoreCase("xls")) {
-			chartName = "Object 1";			
 		}
-		
+		if (fileType.equalsIgnoreCase("xls")) {
+			chartName = "Object 1";
+		}
+
 		XSpreadsheet sheet = SCUtil.getCurrentSheet(scDocument);
-		
+
 		SCUtil.setValueToCellRange(sheet, 0, 0, numberData);
 
 		CellRangeAddress[] cellAddress = new CellRangeAddress[1];
 		cellAddress[0] = SCUtil.getChartDataRangeByName(sheet, cellRangeName);
 		Rectangle rectangle = new Rectangle(1000, 1000, 15000, 9500);
-		XChartDocument xChartDocument = null; 		
+		XChartDocument xChartDocument = null;
 		xChartDocument = SCUtil.createChart(sheet, rectangle, cellAddress, chartName);
 		SCUtil.setChartType(xChartDocument, inputType);
 		SCUtil.setProperties(xChartDocument.getDiagram(), "Dim3D", true);
-		XDiagram xDiagram = xChartDocument.getDiagram(); 
-		
+		XDiagram xDiagram = xChartDocument.getDiagram();
+
 		if (axes != null) {
 			SCUtil.setProperties(xDiagram, "HasXAxis", axes[0]);
 			SCUtil.setProperties(xDiagram, "HasYAxis", axes[1]);
@@ -265,21 +265,21 @@ public class ChartAxis {
 			expected[0][2] = axes[2];
 		}
 
-		
+
 		SCUtil.saveFileAs(scComponent, fileName, fileType);
 		scDocument = SCUtil.reloadFile(unoApp, scDocument, fileName + "." + fileType);
 		sheet = SCUtil.getCurrentSheet(scDocument);
-		
+
 		xChartDocument = SCUtil.getChartByName(sheet, chartName);
-		xDiagram = xChartDocument.getDiagram(); 
+		xDiagram = xChartDocument.getDiagram();
 		results[0][0] = (Boolean) SCUtil.getProperties(xDiagram, "HasXAxis");
 		results[0][1] = (Boolean) SCUtil.getProperties(xDiagram, "HasYAxis");
 		results[0][2] = (Boolean) SCUtil.getProperties(xDiagram, "HasZAxis");
-		
+
 		SCUtil.closeFile(scDocument);
 
 		assertArrayEquals("Incorrect chart Axes got in ." + fileType + " file.", expected, results);
-		
+
 	}
-	
+
 }

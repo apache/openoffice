@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -54,43 +54,43 @@ import lib.StatusException;
  * @see com.sun.star.view.XSelectionSupplier
  */
 public class _XMultiSelectionSupplier extends MultiMethodTest {
-    
+
     public XMultiSelectionSupplier oObj = null;
     public boolean selectionChanged = false;
     Object[] selections = null;
     Comparator ObjCompare = null;
-    
+
     protected void before() {
         selections = (Object[])tEnv.getObjRelation("Selections");
         if (selections == null) {
             throw new StatusException(Status.failed(
                 "Couldn't get relation 'Selections'"));
         }
-        
+
         ObjCompare = (Comparator)tEnv.getObjRelation("Comparer");
     }
-    
+
     protected void after() {
         disposeEnvironment();
     }
-    
+
     /**
      * Selects an instance from relation 'First'. <p>
      * Has <b> OK </b> status if no exceptions were thrown. <p>
      */
     public void _addSelection() {
-        
+
         boolean bOK = true;
-        
+
         log.println("clear selections");
         oObj.clearSelection();
-        
+
         int count = oObj.getSelectionCount();
-        
+
         bOK &= (count == 0);
-        
+
         if ( ! bOK) log.println("ERROR: after clear selection I got a selection count of '" + count + "' => FAILED");
-        
+
         for(int i = 0; i < selections.length; i++) {
             try {
                 log.println("select object from object relation 'selections["+i+"]'");
@@ -106,7 +106,7 @@ public class _XMultiSelectionSupplier extends MultiMethodTest {
                 bOK = false;
             }
         }
-        
+
         log.println("try to select object relation 'selections[0]' second time...");
         try {
             count = oObj.getSelectionCount();
@@ -118,35 +118,35 @@ public class _XMultiSelectionSupplier extends MultiMethodTest {
             log.println("ERROR: the selected count ("+oObj.getSelectionCount() +") is not that before (" + count + ")");
             bOK = false;
         }
-        
+
         log.println("try to select invalid object...");
         try {
-            
+
             oObj.addSelection(oObj);
-            
+
             log.println("ERORR: expected exception 'com.sun.star.lang.IllegalArgumentException' was not thrown => FAILED");
             bOK = false;
         } catch (com.sun.star.lang.IllegalArgumentException ex) {
             log.println("expected exception 'com.sun.star.lang.IllegalArgumentException' => OK");
         }
-        
+
         tRes.tested("addSelection()", bOK);
     }
-    
+
     public void _removeSelection() {
         requiredMethod("addSelection()");
-        
+
         boolean bOK = true;
-        
+
         log.println("clear selections");
         oObj.clearSelection();
-        
+
         int count = oObj.getSelectionCount();
-        
+
         bOK &= (count == 0);
-        
+
         if ( ! bOK) log.println("ERROR: after clear selection I got a selection count of '" + count + "' => FAILED");
-        
+
         log.println("add some selections...");
         for(int i = 0; i < selections.length; i++) {
             try {
@@ -163,9 +163,9 @@ public class _XMultiSelectionSupplier extends MultiMethodTest {
                 bOK = false;
             }
         }
-        
+
         log.println("try now to remove selections...");
-        
+
         count = oObj.getSelectionCount();
         int oldCount = oObj.getSelectionCount();
         for(int i = 0; i < selections.length; i++) {
@@ -183,7 +183,7 @@ public class _XMultiSelectionSupplier extends MultiMethodTest {
                 bOK = false;
             }
         }
-        
+
         log.println("try to remove a removed selection a second time...");
         count = oObj.getSelectionCount();
         try {
@@ -195,22 +195,22 @@ public class _XMultiSelectionSupplier extends MultiMethodTest {
             log.println("ERROR: the selected count ("+oObj.getSelectionCount() +") is not that before (" + count + ")");
             bOK = false;
         }
-        
+
         log.println("try to remove invalid object...");
         try {
-            
+
             oObj.removeSelection(oObj);
-            
+
             log.println("ERORR: expected exception 'com.sun.star.lang.IllegalArgumentException' was not thrown => FAILED");
             bOK = false;
         } catch (com.sun.star.lang.IllegalArgumentException ex) {
             log.println("expected exception 'com.sun.star.lang.IllegalArgumentException' => OK");
         }
-        
+
         tRes.tested("removeSelection()", bOK);
     }
-    
-    
+
+
     /**
      * First test changes selection of the object : if nothing is
      * currently selected or first instance ('First' relation) is
@@ -226,20 +226,20 @@ public class _XMultiSelectionSupplier extends MultiMethodTest {
         requiredMethod("addSelection()");
         tRes.tested("getSelectionCount()", true);
     }
-    
+
     public void _clearSelection() {
         requiredMethod("addSelection()");
         boolean bOK = true;
-        
+
         log.println("clear selections");
         oObj.clearSelection();
-        
+
         int count = oObj.getSelectionCount();
-        
+
         bOK &= (count == 0);
-        
+
         if ( ! bOK) log.println("ERROR: after clear selection I got a selection count of '" + count + "' => FAILED");
-        
+
         log.println("add some selections...");
         for(int i = 0; i < selections.length; i++) {
             try {
@@ -256,34 +256,34 @@ public class _XMultiSelectionSupplier extends MultiMethodTest {
                 bOK = false;
             }
         }
-        
+
         count = oObj.getSelectionCount();
-        
+
         log.println("clear selections...");
         oObj.clearSelection();
-        
+
         count = oObj.getSelectionCount();
-        
+
         bOK &= (count == 0);
-        
+
         if ( ! bOK) log.println("ERROR: after clear selection I got a selection count of '" + count + "' => FAILED");
-        
+
         tRes.tested("clearSelection()", bOK);
     }
-    
+
     public void _createSelectionEnumeration() {
         requiredMethod("addSelection()");
         boolean bOK = true;
-        
+
         log.println("clear selections");
         oObj.clearSelection();
-        
+
         int count = oObj.getSelectionCount();
-        
+
         bOK &= (count == 0);
-        
+
         if ( ! bOK) log.println("ERROR: after clear selection I got a selection count of '" + count + "' => FAILED");
-        
+
         log.println("add some selections...");
         for(int i = 0; i < selections.length; i++) {
             try {
@@ -300,13 +300,13 @@ public class _XMultiSelectionSupplier extends MultiMethodTest {
                 bOK = false;
             }
         }
-        
+
         log.println("create enumeration...");
         XEnumeration xEnum = oObj.createSelectionEnumeration();
-        
+
         boolean compRes = true; //compare result
         int i = 0;
-        
+
         while (xEnum.hasMoreElements()){
             log.println("try to get first element..");
             Object nextElement = null;
@@ -321,15 +321,15 @@ public class _XMultiSelectionSupplier extends MultiMethodTest {
             }
             Object shouldElement = selections[i];
             i++;
-            
+
             if (ObjCompare != null) {
                 ObjCompare.compare(shouldElement, nextElement);
             } else {
                 compRes = util.ValueComparer.equalValue(shouldElement, nextElement);
             }
-            
+
             log.println("nextElement()-object and expected object 'selections["+i+"]' are equal: "+compRes);
-            
+
             if (!compRes) {
                 if ((selections[i]) instanceof Object[]){
                     if (((Object[])selections[i])[0] instanceof Integer) {
@@ -340,23 +340,23 @@ public class _XMultiSelectionSupplier extends MultiMethodTest {
             }
             bOK &= compRes;
         }
-        
+
         tRes.tested("createSelectionEnumeration()", bOK);
     }
-    
+
     public void _createReverseSelectionEnumeration() {
         requiredMethod("addSelection()");
         boolean bOK = true;
-        
+
         log.println("clear selections");
         oObj.clearSelection();
-        
+
         int count = oObj.getSelectionCount();
-        
+
         bOK &= (count == 0);
-        
+
         if ( ! bOK) log.println("ERROR: after clear selection I got a selection count of '" + count + "' => FAILED");
-        
+
         log.println("add some selections...");
         for(int i = 0; i < selections.length; i++) {
             try {
@@ -373,13 +373,13 @@ public class _XMultiSelectionSupplier extends MultiMethodTest {
                 bOK = false;
             }
         }
-        
+
         log.println("create enumeration...");
         XEnumeration xEnum = oObj.createSelectionEnumeration();
-        
+
         boolean compRes = true; //compare result
         int i = selections.length - 1;
-        
+
         while (xEnum.hasMoreElements()){
             log.println("try to get first element..");
             Object nextElement = null;
@@ -394,15 +394,15 @@ public class _XMultiSelectionSupplier extends MultiMethodTest {
             }
             Object shouldElement = selections[i];
             i--;
-            
+
             if (ObjCompare != null) {
                 ObjCompare.compare(shouldElement, nextElement);
             } else {
                 compRes = util.ValueComparer.equalValue(shouldElement, nextElement);
             }
-            
+
             log.println("nextElement()-object and expected object 'selections["+i+"]' are equal: "+compRes);
-            
+
             if (!compRes) {
                 if ((selections[i]) instanceof Object[]){
                     if (((Object[])selections[i])[0] instanceof Integer) {
@@ -413,8 +413,8 @@ public class _XMultiSelectionSupplier extends MultiMethodTest {
             }
             bOK &= compRes;
         }
-        
+
         tRes.tested("createReverseSelectionEnumeration()", bOK);
     }
-    
+
 }  // finish class _XMultiSelectionSupplier

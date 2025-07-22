@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -40,9 +40,9 @@ import java.util.Vector;
  * @version 1.1
  */
 public class OfficeUtil implements OfficeConstants {
-    
+
     /**
-     * <p>Method to replace whitespace character within text with appropriate 
+     * <p>Method to replace whitespace character within text with appropriate
      *    OpenOffice.org XML tags.</p>
      *
      * @param   text      The text to parse for whitespace.
@@ -53,7 +53,7 @@ public class OfficeUtil implements OfficeConstants {
     public static Node[] parseText(String text, Document parentDoc) {
         Vector nodeVec = new Vector();
 
-        /* 
+        /*
          * Break up the text from the text run into Open
          * Office text runs.  There may be more runs in OO because
          * runs of 2 or more spaces map to nodes.
@@ -76,7 +76,7 @@ public class OfficeUtil implements OfficeConstants {
                 closerIndex = spaceIndex;
             else
                 closerIndex = (spaceIndex > tabIndex) ? tabIndex : spaceIndex;
-                
+
             /*
              * If there is any text prior to the first occurrence of a
              * tab or spaces, create a text node from it, then chop it
@@ -89,7 +89,7 @@ public class OfficeUtil implements OfficeConstants {
             }
             text = text.substring(closerIndex);
 
-            /* 
+            /*
              * Handle either tab character or space sequence by creating
              * an element for it, and then chopping out the text that
              * represented it in "text".
@@ -106,7 +106,7 @@ public class OfficeUtil implements OfficeConstants {
                     nrSpaces++;
 
                 Element spaceNode = parentDoc.createElement(TAG_SPACE);
-                spaceNode.setAttribute(ATTRIBUTE_SPACE_COUNT, 
+                spaceNode.setAttribute(ATTRIBUTE_SPACE_COUNT,
                                        new Integer(nrSpaces).toString());
                 nodeVec.add(spaceNode);
                 text = text.substring(nrSpaces);

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -314,7 +314,7 @@ class VCL_DLLPUBLIC CommandDialogData
     CommandDialogData( int nDialogId = SHOWDIALOG_ID_PREFERENCES )
     : m_nDialogId( nDialogId )
     {}
-    
+
     int GetDialogId() const { return m_nDialogId; }
 };
 
@@ -322,8 +322,8 @@ class VCL_DLLPUBLIC CommandDialogData
 // Media Commands
 // --------------
 
-#define MEDIA_COMMAND_CHANNEL_DOWN			 ((sal_Int16)1)	// Decrement the channel value, for example, for a TV or radio tuner. 
-#define MEDIA_COMMAND_CHANNEL_UP			 ((sal_Int16)2)	// Increment the channel value, for example, for a TV or radio tuner. 
+#define MEDIA_COMMAND_CHANNEL_DOWN			 ((sal_Int16)1)	// Decrement the channel value, for example, for a TV or radio tuner.
+#define MEDIA_COMMAND_CHANNEL_UP			 ((sal_Int16)2)	// Increment the channel value, for example, for a TV or radio tuner.
 #define MEDIA_COMMAND_NEXTTRACK				 ((sal_Int16)3)	// Go to next media track/slide.
 #define MEDIA_COMMAND_PAUSE					 ((sal_Int16)4) // Pause. If already paused, take no further action. This is a direct PAUSE command that has no state.
 #define MEDIA_COMMAND_PLAY					 ((sal_Int16)5)	// Begin playing at the current position. If already paused, it will resume. This is a direct PLAY command that has no state.

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 #include <math.h>
@@ -30,9 +30,9 @@ bool is_equal(T x, T y, sal_Int16 _nPrec)
 {
     // due to the fact that this check looks only if both values are equal
     // we only need to look on one value
-    
+
     // 14 digits will announce the checkPrecisionSize
-    
+
     sal_Int32 nPRECISION;
     switch(_nPrec)
     {
@@ -48,7 +48,7 @@ bool is_equal(T x, T y, sal_Int16 _nPrec)
     default:
         nPRECISION = 2;
     }
-    
+
     if (x < 0)
     {
         x = -x;
@@ -57,7 +57,7 @@ bool is_equal(T x, T y, sal_Int16 _nPrec)
     {
         y = -y;
     }
-    
+
     // LLA: due to a bug in printf with '%f' and long double within linux environment
     //      we have to use %lf instead.
 
@@ -74,19 +74,19 @@ bool is_equal(T x, T y, sal_Int16 _nPrec)
     }
     //t_print(T_VERBOSE, "nPRECISION is  %d\n", nPRECISION);
     sal_Int32 nPrecOfN = -nPRECISION + nBeforeDot;
-    
+
     if (_nPrec != PREC_long_double)
     {
         //t_print(T_VERBOSE, "nPrecOfN is  %d\n", nPrecOfN);
     }
 
     long double nPrec = pow(0.1, -nPrecOfN);
-    
+
     if (_nPrec != PREC_long_double)
     {
         //t_print(T_VERBOSE, "        prec: %.20f\n", nPrec);
     }
-    
+
     long double nDelta = fabs( x - y ) ;
 
     if (_nPrec != PREC_long_double)
@@ -95,7 +95,7 @@ bool is_equal(T x, T y, sal_Int16 _nPrec)
         //t_print(T_VERBOSE, "       nPrec: %.20f\n", nPrec);
         //t_print(T_VERBOSE, "delta must be less or equal to prec!\n\n");
     }
-    
+
     if (nDelta > nPrec)
     {
         // t_print(T_VERBOSE, "values are not equal! ndelta:%.20f\n", nDelta);
@@ -112,9 +112,9 @@ bool is_equal(T x, T y, sal_Int16 _nPrec)
 // LLA: {
 // LLA:     // due to the fact that this check looks only if both values are equal
 // LLA:     // we only need to look on one value
-// LLA:     
+// LLA:
 // LLA:     // 6 digits will announce the checkPrecisionSize
-// LLA:     
+// LLA:
 // LLA:     const sal_Int32 nPRECISION = 6;
 // LLA:     if (x < 0)
 // LLA:     {
@@ -124,18 +124,18 @@ bool is_equal(T x, T y, sal_Int16 _nPrec)
 // LLA:     {
 // LLA:         y = -y;
 // LLA:     }
-// LLA:     
+// LLA:
 // LLA:     t_print(T_VERBOSE, "double equal: %.20f\n#               %.20f\n", x, y);
 // LLA:     sal_Int32 nPrecOfN = -nPRECISION + sal_Int32( log10(x) );
-// LLA:     
+// LLA:
 // LLA:     t_print(T_VERBOSE, "prec: %d\n", nPrecOfN);
 // LLA:     double nPrec = pow(10, nPrecOfN) * 1;
-// LLA:     
+// LLA:
 // LLA:     t_print(T_VERBOSE, "        prec: %.20f\n", nPrec);
-// LLA:     
+// LLA:
 // LLA:     double nDelta = fabs( x - y );
 // LLA:     t_print(T_VERBOSE, "       delta: %.20f\n\n", nDelta);
-// LLA:     
+// LLA:
 // LLA:     if (nDelta > nPrec)
 // LLA:     {
 // LLA:         // t_print(T_VERBOSE, "values are not equal! ndelta:%.20f\n", nDelta);

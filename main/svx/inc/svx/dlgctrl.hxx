@@ -53,7 +53,7 @@ namespace com { namespace sun { namespace star { namespace awt {
 
 /*************************************************************************
 |*
-|* Derived from SfxTabPage to be able to be notified by the control 
+|* Derived from SfxTabPage to be able to be notified by the control
 |* via virtual method.
 |*
 \************************************************************************/
@@ -251,7 +251,7 @@ public:
 
 	//Device Pixel .
 	long ShowPosition( const Point &pt);
-	
+
 	long PointToIndex(const Point &pt) const;
 	Point IndexToPoint(long nIndex) const ;
 	long GetFoucsPosIndex() const ;

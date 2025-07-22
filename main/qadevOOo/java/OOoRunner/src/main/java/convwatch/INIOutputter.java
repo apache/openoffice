@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -58,7 +58,7 @@ public class INIOutputter
             }
             a.m_sFilename = sFilename;
             a.m_sNamePrefix = _sNamePrefix;
-            
+
             return a;
         }
     public String getFilename() {return m_sFilename;}
@@ -79,7 +79,7 @@ public class INIOutputter
             {
             }
         }
-    
+
     public void writeSection(String _sSectionName)
         {
             try
@@ -91,7 +91,7 @@ public class INIOutputter
             {
             }
         }
-    
+
     public void writeValue(String _sName, String _sValue)
         {
             try
@@ -124,7 +124,7 @@ public class INIOutputter
     public void checkLine(StatusHelper _aStatus, boolean _bCurrentResult)
         {
             try
-            {                
+            {
                 m_aOut.write( "oldgfx=" + _aStatus.m_sOldGfx + ls);
                 m_aOut.write( "newgfx=" + _aStatus.m_sNewGfx + ls);
                 m_aOut.write( "diffgfx=" + _aStatus.m_sDiffGfx + ls);
@@ -135,7 +135,7 @@ public class INIOutputter
                     sPercent += " (less 5% is ok)";
                 }
                 m_aOut.write("percent=" +  sPercent + ls);
-                
+
                 if (_aStatus.m_sDiff_BM_Gfx == null)
                 {
                     m_aOut.write("BM=false" + ls);
@@ -175,7 +175,7 @@ public class INIOutputter
                 m_aOut.write("result=NO" + ls);
             }
         }
-    
+
     public void checkDiffDiffLine(StatusHelper _aStatus, boolean _bCurrentResult)
         {
             try

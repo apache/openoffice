@@ -26,7 +26,7 @@ import org.apache.openoffice.ooxml.schema.model.base.Location;
 import org.apache.openoffice.ooxml.schema.model.base.Node;
 import org.apache.openoffice.ooxml.schema.model.base.NodeType;
 
-/** Representation of the 'any' XML schema element.  It specifies that its 
+/** Representation of the 'any' XML schema element.  It specifies that its
  *  children conform to a non-standard schema.  If it is unknown than the
  *  children are to be ignored.
  */
@@ -39,7 +39,7 @@ public class Any
         skip,
         strict
     }
-    
+
     public Any (
         final Node aParent,
         final Location aLocation,
@@ -51,8 +51,8 @@ public class Any
         maNamespaces = sNamespace.split("\\s+");
     }
 
-    
-    
+
+
     @Override
     public NodeType GetNodeType ()
     {
@@ -68,23 +68,23 @@ public class Any
         aVisitor.Visit(this);
     }
 
-    
+
     public ProcessContents GetProcessContentsFlag ()
     {
         return meProcessContents;
     }
-    
-    
-    
-    
+
+
+
+
     public String[] GetNamespaces ()
     {
         return maNamespaces;
     }
-    
-    
-    
-    
+
+
+
+
     @Override
     public String toString ()
     {
@@ -103,10 +103,10 @@ public class Any
         }
         return aBuffer.toString();
     }
-    
-    
-    
-    
+
+
+
+
     private final ProcessContents meProcessContents;
     private final String[] maNamespaces;
 }

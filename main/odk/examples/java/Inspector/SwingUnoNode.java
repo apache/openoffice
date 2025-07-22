@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -26,31 +26,31 @@ import javax.swing.tree.TreeNode;
 
 public class SwingUnoNode extends HideableMutableTreeNode implements XUnoNode{
     private UnoNode m_oUnoNode;
-    
+
     /** Creates a new instance of SwingUnoNode */
     public SwingUnoNode(Object _oUnoObject) {
-        super();      
+        super();
         m_oUnoNode = new UnoNode(_oUnoObject);
     }
-    
+
 
     public SwingUnoNode(Object _oUnoObject, Type _aType) {
         super();
-        m_oUnoNode = new UnoNode(_oUnoObject, _aType);                
+        m_oUnoNode = new UnoNode(_oUnoObject, _aType);
         if (_aType != null){
             this.setLabel(_aType.getTypeName());
         }
     }
-    
-    
+
+
     public Object getUnoObject(){
         return m_oUnoNode.getUnoObject();
     }
-    
+
     public void setVisible(String _sFilter){
         boolean bisVisible = isFilterApplicable(_sFilter);
         super.setVisible(bisVisible);
-    }      
+    }
 
     public boolean isFilterApplicable(String _sFilter) {
         return m_oUnoNode.isFilterApplicable(_sFilter, getName());
@@ -80,13 +80,13 @@ public class SwingUnoNode extends HideableMutableTreeNode implements XUnoNode{
             }
         }
         return sClassName;
-    }    
+    }
 
     public String getAnchor() {
         return m_oUnoNode.getAnchor();
     }
-    
-    
+
+
     public void setFoldable(boolean _bIsFoldable){
         if (_bIsFoldable){
             addDummyNode();
@@ -96,16 +96,16 @@ public class SwingUnoNode extends HideableMutableTreeNode implements XUnoNode{
         }
     }
 
-        
+
     public XUnoNode getParentNode(){
         return (SwingUnoNode) super.getParent();
     }
-    
-    
+
+
     public void addChildNode(XUnoNode _xUnoNode) {
         super.add((SwingUnoNode) _xUnoNode);
     }
-    
+
     public void  setLabel(String _sLabel){
         super.setUserObject(_sLabel);
         this.m_oUnoNode.setLabel(_sLabel);
@@ -115,30 +115,30 @@ public class SwingUnoNode extends HideableMutableTreeNode implements XUnoNode{
         return (String) super.getUserObject();
     }
 
- 
+
     public int getChildCount(){
         return super.getChildCount();
     }
-    
-    
+
+
     public XUnoNode getChild(int _i){
         return (SwingUnoNode) super.getChildAt(_i);
     }
-    
+
     public int getNodeType(){
         return m_oUnoNode.getNodeType();
     }
-    
+
     public void setNodeType(int _nNodeType){
         m_oUnoNode.setNodeType(_nNodeType);
     }
-    
-    
+
+
     public String getName(){
         return getClassName();
     }
-    
-    
+
+
     public Type getUnoType(){
         return m_oUnoNode.getUnoType();
     }

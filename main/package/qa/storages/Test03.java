@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 package complex.storages;
@@ -72,7 +72,7 @@ public class Test03 implements StorageTest {
 				m_aTestHelper.Error( "Can't create substorage!" );
 				return false;
 			}
-			
+
             byte pBigBytes[] = new byte[33000];
 			for ( int nInd = 0; nInd < 33000; nInd++ )
 				pBigBytes[nInd] = (byte)( nInd % 128 );
@@ -109,7 +109,7 @@ public class Test03 implements StorageTest {
 
 			if ( !m_aTestHelper.disposeStorage( xTempSubStorage ) )
 				return false;
-				
+
 			// ================================================
 			// check storage hyerarchy tree
 			// ================================================
@@ -195,7 +195,7 @@ public class Test03 implements StorageTest {
 				m_aTestHelper.Error( "Root storage contains wrong list of children!" );
 				return false;
 			}
-			
+
 			// get storage through XNameAccess
 			XStorage xResultSubStorage = getStorageFromNameAccess( xRootNameAccess, "SubStorage1" );
 			if ( xResultSubStorage == null )
@@ -218,7 +218,7 @@ public class Test03 implements StorageTest {
 				m_aTestHelper.Error( "'SubStream2' can not be detected as child stream element of 'SubStorage1'!" );
 				return false;
 			}
-			
+
 			return true;
 		}
 		catch( Exception e )
@@ -226,7 +226,7 @@ public class Test03 implements StorageTest {
 			m_aTestHelper.Error( "Exception: " + e );
 			return false;
 		}
-    } 
+    }
 
 	public XStorage getStorageFromNameAccess( XNameAccess xAccess, String sName )
 	{

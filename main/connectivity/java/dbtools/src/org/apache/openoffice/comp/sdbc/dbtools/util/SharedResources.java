@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 package org.apache.openoffice.comp.sdbc.dbtools.util;
@@ -38,7 +38,7 @@ import com.sun.star.uno.XComponentContext;
 public class SharedResources {
     private static SharedResources instance;
     private static int referenceCount = 0;
-    
+
     private OfficeResourceBundle resourceBundle;
 
     // FIXME: the C++ implementation gets the XComponentContext using ::comphelper::getProcessServiceFactory(), we don't.
@@ -48,25 +48,25 @@ public class SharedResources {
         }
         ++referenceCount;
     }
-    
+
     public synchronized static void revokeClient() {
         if (--referenceCount == 0) {
             CompHelper.disposeComponent(instance);
             instance = null;
         }
     }
-    
+
     public synchronized static SharedResources getInstance() {
         return instance;
     }
-    
+
     private SharedResources(XComponentContext context) {
         try {
             resourceBundle = new OfficeResourceBundle(context, "cnr");
         } catch (NullPointerException nullPointerException) {
         }
     }
-    
+
     private int substitute( MutableObject<String> _inout_rString,
             String sPattern, String _rReplace ) {
         int nOccurences = 0;
@@ -82,7 +82,7 @@ public class SharedResources {
         return nOccurences;
     }
 
-    
+
     /** loads a string from the shared resource file
         @param  _nResId
             the resource ID of the string
@@ -98,17 +98,17 @@ public class SharedResources {
         }
         return resourceBundle.loadString(_nResId);
     }
-    
+
     /** loads a string from the shared resource file, and replaces
         a given ASCII pattern with a given string
-    
+
         @param  _nResId
             the resource ID of the string to load
         @param  _pAsciiPatternToReplace
             the ASCII string which is to search in the string. Must not be null.
         @param  _rStringToSubstitute
             the String which should substitute the ASCII pattern.
-        
+
         @return
             the string from the resource file, with applied string substitution
      */
@@ -122,10 +122,10 @@ public class SharedResources {
         substitute(string, _pAsciiPatternToReplace, _rStringToSubstitute);
         return string.getValue();
     }
-    
+
     /** loads a string from the shared resource file, and replaces
         a given ASCII pattern with a given string
-    
+
         @param  _nResId
             the resource ID of the string to load
         @param  _pAsciiPatternToReplace1
@@ -136,7 +136,7 @@ public class SharedResources {
             the ASCII string (2) which is to search in the string. Must not be null.
         @param  _rStringToSubstitute2
             the String which should substitute the ASCII pattern (2)
-        
+
         @return
             the string from the resource file, with applied string substitution
      */
@@ -153,7 +153,7 @@ public class SharedResources {
         substitute(string, _pAsciiPatternToReplace2, _rStringToSubstitute2);
         return string.getValue();
     }
-    
+
     /** loads a string from the shared resource file, and replaces
         a given ASCII pattern with a given string
 
@@ -171,7 +171,7 @@ public class SharedResources {
             the ASCII string (3) which is to search in the string. Must not be null.
         @param  _rStringToSubstitute3
             the String which should substitute the ASCII pattern (3)
-        
+
         @return
             the string from the resource file, with applied string substitution
      */
@@ -191,14 +191,14 @@ public class SharedResources {
         substitute(string, _pAsciiPatternToReplace3, _rStringToSubstitute3);
         return string.getValue();
     }
-    
+
     /** loads a string from the shared resource file, and replaces a given ASCII pattern with a given string
 
         @param  _nResId
             the resource ID of the string to load
         @param  patternsAndSubstitutes
             A list of substitutions.
-    
+
         @return
             the string from the resource file, with applied string substitution
      */

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -60,7 +60,7 @@ public:
 
     virtual void SAL_CALL initialize (const css::uno::Sequence<css::uno::Any>& rArguments)
         throw(css::uno::Exception,css::uno::RuntimeException);
-    
+
 
     // XPresenterHelper
 
@@ -71,7 +71,7 @@ public:
         sal_Bool bEnableChildTransparentMode,
         sal_Bool bEnableParentClip)
         throw (css::uno::RuntimeException);
-    
+
     virtual css::uno::Reference<css::rendering::XCanvas> SAL_CALL createSharedCanvas (
         const css::uno::Reference<css::rendering::XSpriteCanvas>& rxUpdateCanvas,
         const css::uno::Reference<css::awt::XWindow>& rxUpdateWindow,
@@ -105,7 +105,7 @@ public:
         const css::uno::Reference<css::awt::XWindow>& rxChildWindow,
         const css::uno::Reference<css::awt::XWindow>& rxParentWindow)
         throw (css::uno::RuntimeException);
-    
+
 private:
     css::uno::Reference<css::uno::XComponentContext> mxComponentContext;
     ::boost::scoped_ptr<GraphicFilter> mpGraphicFilter;

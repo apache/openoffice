@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 package installer;
@@ -25,7 +25,7 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
 public class NavPanel extends JPanel implements ActionListener {
-    
+
     NavPanel(InstallWizard wizard, boolean bBack, boolean bNext, boolean bCancel, String prev, String next) {
         setBackground(Color.white);
         setBorder(new javax.swing.border.EtchedBorder(javax.swing.border.EtchedBorder.LOWERED));
@@ -36,19 +36,19 @@ public class NavPanel extends JPanel implements ActionListener {
         navNext = new javax.swing.JButton("Next >>");
         navCancel = new javax.swing.JButton("Cancel");
         setLayout(new GridBagLayout());
-        
+
         gridBagConstraints1 = new java.awt.GridBagConstraints();
         gridBagConstraints1.insets = new java.awt.Insets(1, 1, 1, 1);
-	  gridBagConstraints1.anchor = gridBagConstraints1.WEST;	
+	  gridBagConstraints1.anchor = gridBagConstraints1.WEST;
 
         gridBagConstraints2 = new java.awt.GridBagConstraints();
         gridBagConstraints2.gridx = 2;
         gridBagConstraints2.gridy = 0;
-        
+
         gridBagConstraints3 = new java.awt.GridBagConstraints();
         gridBagConstraints3.gridx = 6;
         gridBagConstraints3.gridy = 0;
-        
+
         navNext.setEnabled(bNext);
         navBack.setEnabled(bBack);
         navCancel.setEnabled(bCancel);
@@ -59,23 +59,23 @@ public class NavPanel extends JPanel implements ActionListener {
         add(navNext, gridBagConstraints2);
         add(navCancel, gridBagConstraints3);
     }
-    
+
     public void enableNext(boolean bEnable) {
         navNext.setEnabled(bEnable);
     }
-    
+
     public void enableBack(boolean bEnable) {
         navBack.setEnabled(bEnable);
     }
-    
+
     public void enableCancel(boolean bEnable) {
         navCancel.setEnabled(bEnable);
     }
-    
+
     public void enableIDE(boolean bEnable) {
 	ideDetected = bEnable;
     }
-    
+
     public void actionPerformed(ActionEvent ev) {
         if ((ev.getSource() == navNext) && (next.length() != 0)) {
             wizard.show(next);
@@ -93,11 +93,11 @@ public class NavPanel extends JPanel implements ActionListener {
 	    enableIDE(false);
         }
     }
-    
+
     public void setNextListener(ActionListener listener) {
         navNext.addActionListener(listener);
     }
-    
+
     public void setBackListener(ActionListener listener) {
         navBack.addActionListener(listener);
     }
@@ -105,22 +105,22 @@ public class NavPanel extends JPanel implements ActionListener {
     public void setCancelListener(ActionListener listener) {
         navCancel.addActionListener(listener);
     }
-	
+
 	public void removeNextListener(ActionListener listener)
 	{
 		navNext.removeActionListener(listener);
 	}
-    
+
 	public void removeBackListener(ActionListener listener)
 	{
 		navBack.removeActionListener(listener);
 	}
-    
+
 	public void removeCancelListener(ActionListener listener)
 	{
 		navCancel.removeActionListener(listener);
 	}
-	
+
     public JButton navBack;
     public JButton navNext;
     public JButton navCancel;

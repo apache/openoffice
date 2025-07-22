@@ -30,18 +30,18 @@ import org.apache.openoffice.ooxml.schema.model.simple.SimpleType;
 
 /** The http://www.w3.org/XML/1998/namespace namespace is
  *  implicitly included in all schema files.
- *  
+ *
  *  This class makes the necessary additions to namespace map and Schema object.
  */
 public class XmlNamespace
 {
-    public static final String URI = "http://www.w3.org/XML/1998/namespace"; 
+    public static final String URI = "http://www.w3.org/XML/1998/namespace";
     public static final String Prefix = "xml";
 
     public static void Apply (final SchemaBase aSchemaBase)
     {
         aSchemaBase.Namespaces.ProvideNamespace(URI, Prefix);
-        
+
         final QualifiedName aStSpaceSimpleTypeName = new QualifiedName(URI, Prefix, "ST__space");
         aSchemaBase.Attributes.Add(
             new Attribute(
@@ -52,7 +52,7 @@ public class XmlNamespace
                 null,
                 FormDefault.unqualified,
                 null));
-        
+
         final SimpleType aType = new SimpleType(
             null,
             aStSpaceSimpleTypeName,

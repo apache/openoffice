@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -66,7 +66,7 @@ public class TextView
     extends ObjectView
     implements ActionListener
 {
-        
+
     /** Create a TextView when the given object supports the
         XAccessibleText interface.
     */
@@ -167,8 +167,8 @@ public class TextView
                 Integer.toString(mxText.getCharacterCount()));
             // Selection.
             maSelectionLabel.setText (
-                "[" + mxText.getSelectionStart() 
-                + "," + mxText.getSelectionEnd() 
+                "[" + mxText.getSelectionStart()
+                + "," + mxText.getSelectionEnd()
                 + "] \"" + mxText.getSelectedText() + "\"");
 
             // Character bounds.
@@ -181,7 +181,7 @@ public class TextView
             XAccessibleMultiLineText xMultiText = (XAccessibleMultiLineText)
                 UnoRuntime.queryInterface( XAccessibleMultiLineText.class, mxText );
 
-            if( null != xMultiText ) { 
+            if( null != xMultiText ) {
                 try {
                   maCaretLineNoLabel.setText ( Integer.toString( xMultiText.getNumberOfLineWithCaret() ) );
                   TextSegment ts = xMultiText.getTextAtLineWithCaret();
@@ -263,7 +263,7 @@ public class TextView
                     aCharacterArray.append (",");
                 nIndex ++;
             }
-            if (nMaxDisplayCount < nCharacterCount) 
+            if (nMaxDisplayCount < nCharacterCount)
                 aCharacterArray.append (", ...");
         }
         catch (IndexOutOfBoundsException e)
@@ -276,7 +276,7 @@ public class TextView
 
 
 
-    /** Iterate over all characters and translate their positions 
+    /** Iterate over all characters and translate their positions
         back and forth.
         */
     private String GetTextBoundsString ()
@@ -306,14 +306,14 @@ public class TextView
             }
         }
         catch (IndexOutOfBoundsException aEvent)
-        { 
+        {
             // Ignore errors.
         }
 
         return aBuffer.toString();
     }
 
-    
+
 
 
     private final static int BEFORE = -1;
@@ -342,7 +342,7 @@ public class TextView
             DefaultMutableTreeNode aSegmentNode = new DefaultMutableTreeNode (
                 new StringBuffer (
                     Integer.toString (nIndex) + " -> "
-                    + Integer.toString (aSegment.SegmentStart) + " - " 
+                    + Integer.toString (aSegment.SegmentStart) + " - "
                     + Integer.toString (aSegment.SegmentEnd) + " : "
                     + aSegment.SegmentText.toString()));
             aNode.add (aSegmentNode);
@@ -369,18 +369,18 @@ public class TextView
                 case BEFORE:
                     aSegment = mxText.getTextBeforeIndex (nIndex, nTextType);
                     break;
-                    
+
                 case AT:
                     aSegment = mxText.getTextAtIndex (nIndex, nTextType);
                     break;
-                    
+
                 case BEHIND:
                     aSegment = mxText.getTextBehindIndex (nIndex, nTextType);
                     break;
 
                 default:
                     aSegment = new TextSegment();
-                    aSegment.SegmentText = new String ("unknown position "   + nWhere); 
+                    aSegment.SegmentText = new String ("unknown position "   + nWhere);
                     aSegment.SegmentStart = nIndex;
                     aSegment.SegmentStart = nIndex+1;
                     break;
@@ -410,7 +410,7 @@ public class TextView
     /** Add to the given node one node for every attribute of the given segment.
     */
     private void AddAttributeNodes (
-        DefaultMutableTreeNode aNode, 
+        DefaultMutableTreeNode aNode,
         TextSegment aSegment)
     {
         try
@@ -429,7 +429,7 @@ public class TextView
     }
 
     private XAccessibleText mxText;
-    private JLabel 
+    private JLabel
         maTextLabel,
         maCharacterArrayLabel,
         maCharacterCountLabel,

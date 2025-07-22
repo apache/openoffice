@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -126,16 +126,16 @@ public:
 //UNUSED2008-05  public:
 //UNUSED2008-05                              ScEmptyEnumerationAccess();
 //UNUSED2008-05      virtual                 ~ScEmptyEnumerationAccess();
-//UNUSED2008-05  
+//UNUSED2008-05
 //UNUSED2008-05                              // XEnumerationAccess
 //UNUSED2008-05      virtual ::com::sun::star::uno::Reference< ::com::sun::star::container::XEnumeration > SAL_CALL
 //UNUSED2008-05                              createEnumeration() throw(::com::sun::star::uno::RuntimeException);
-//UNUSED2008-05  
+//UNUSED2008-05
 //UNUSED2008-05                              // XElementAccess
 //UNUSED2008-05      virtual ::com::sun::star::uno::Type SAL_CALL getElementType()
 //UNUSED2008-05                                  throw(::com::sun::star::uno::RuntimeException);
 //UNUSED2008-05      virtual sal_Bool SAL_CALL hasElements() throw(::com::sun::star::uno::RuntimeException);
-//UNUSED2008-05  
+//UNUSED2008-05
 //UNUSED2008-05                              // XServiceInfo
 //UNUSED2008-05      virtual ::rtl::OUString SAL_CALL getImplementationName(  )
 //UNUSED2008-05                                  throw(::com::sun::star::uno::RuntimeException);
@@ -152,14 +152,14 @@ public:
 //UNUSED2008-05  public:
 //UNUSED2008-05                              ScEmptyEnumeration();
 //UNUSED2008-05      virtual                 ~ScEmptyEnumeration();
-//UNUSED2008-05  
+//UNUSED2008-05
 //UNUSED2008-05                              // XEnumeration
 //UNUSED2008-05      virtual sal_Bool SAL_CALL hasMoreElements() throw(::com::sun::star::uno::RuntimeException);
 //UNUSED2008-05      virtual ::com::sun::star::uno::Any SAL_CALL nextElement()
 //UNUSED2008-05                                  throw(::com::sun::star::container::NoSuchElementException,
 //UNUSED2008-05                                          ::com::sun::star::lang::WrappedTargetException,
 //UNUSED2008-05                                          ::com::sun::star::uno::RuntimeException);
-//UNUSED2008-05  
+//UNUSED2008-05
 //UNUSED2008-05                              // XServiceInfo
 //UNUSED2008-05      virtual ::rtl::OUString SAL_CALL getImplementationName(  )
 //UNUSED2008-05                                  throw(::com::sun::star::uno::RuntimeException);
@@ -212,7 +212,7 @@ public:
 //UNUSED2008-05  public:
 //UNUSED2008-05                              ScPrintSettingsObj();
 //UNUSED2008-05      virtual                 ~ScPrintSettingsObj();
-//UNUSED2008-05  
+//UNUSED2008-05
 //UNUSED2008-05                              // XPropertySet
 //UNUSED2008-05      virtual ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySetInfo >
 //UNUSED2008-05                              SAL_CALL getPropertySetInfo()
@@ -253,7 +253,7 @@ public:
 //UNUSED2008-05                                  throw(::com::sun::star::beans::UnknownPropertyException,
 //UNUSED2008-05                                      ::com::sun::star::lang::WrappedTargetException,
 //UNUSED2008-05                                      ::com::sun::star::uno::RuntimeException);
-//UNUSED2008-05  
+//UNUSED2008-05
 //UNUSED2008-05                              // XServiceInfo
 //UNUSED2008-05      virtual ::rtl::OUString SAL_CALL getImplementationName(  )
 //UNUSED2008-05                                  throw(::com::sun::star::uno::RuntimeException);

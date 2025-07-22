@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -56,14 +56,14 @@ published service AccessibleTreeListBoxEntry
 	/** This interface gives access to the structural information of a tree list box entry:
 
        <ul>
-       <li>Role: The role of a tree list box entry is <const 
+       <li>Role: The role of a tree list box entry is <const
            scope="com::sun::star::accessibility"
            >AccessibleRole::LABEL</const>.</li>
        <li>Name: The name of a tree list box entry is it's text.</li>
        <li>Description: The description of a tree list box entry is empty.</li>
-       <li>Children: There can exist children of type <type scope="com::sun::star::awt">AccessibleTreeListBoxEntry</type>. 
-		</li>            
-       <li>Parent: The parent is either the <type scope="com::sun::star::awt">AccessibleTreeListBox</type> 
+       <li>Children: There can exist children of type <type scope="com::sun::star::awt">AccessibleTreeListBoxEntry</type>.
+		</li>
+       <li>Parent: The parent is either the <type scope="com::sun::star::awt">AccessibleTreeListBox</type>
 			or an <type scope="com::sun::star::awt">AccessibleTreeListBoxEntry</type> that contains the tree list box entry.</li>
        <li>Relations: There are no relations.</li>
        <li>States: The states supported by this service are
@@ -71,7 +71,7 @@ published service AccessibleTreeListBoxEntry
            <li><const scope="com::sun::star::accessibility"
                >AccessibleStateType::DEFUNC</const>
                is set if the object has already been disposed
-               and subsequent calls to this object result in				
+               and subsequent calls to this object result in
                <type scope="com::sun::star::lang">DisposedException</type>
                exceptions.</li>
            <li><const scope="com::sun::star::accessibility"

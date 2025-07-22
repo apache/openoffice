@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -58,7 +58,7 @@ import java.io.*;
 public class XStorageHelper implements XEventListener
 {
     XStorage[] xStorages;
-    XStream xStream; 
+    XStream xStream;
     XInputStream xIs = null;
     XOutputStream xOs = null;
     static Map modelMap = new HashMap();
@@ -75,21 +75,21 @@ public class XStorageHelper implements XEventListener
             modelUrl = path.substring( 0, indexOfScriptsDir - 1 );
             path = path.substring( indexOfScriptsDir, path.length());
         }
-            
+
         LogUtils.DEBUG("XStorageHelper ctor, path: " + path);
         this.xModel =  getModelForURL( modelUrl );
-            
-        try 
+
+        try
         {
             StringTokenizer tokens = new StringTokenizer(path, "/");
 
-            if (tokens.countTokens() == 0) 
+            if (tokens.countTokens() == 0)
             {
                throw new IOException("Invalid path");
             }
             XDocumentSubStorageSupplier xDocumentSubStorageSupplier =
                 (XDocumentSubStorageSupplier) UnoRuntime.queryInterface(
-                    XDocumentSubStorageSupplier.class, xModel); 
+                    XDocumentSubStorageSupplier.class, xModel);
             xStorages =  new XStorage[tokens.countTokens()  ];
             LogUtils.DEBUG("XStorageHelper ctor, path chunks length: " + xStorages.length );
 
@@ -112,7 +112,7 @@ public class XStorageHelper implements XEventListener
                         String mediaType = AnyConverter.toString( xProps.getPropertyValue( "MediaType" ) );
                         LogUtils.DEBUG("***** media type is " + mediaType );
                         if ( !mediaType.equals("scripts") )
-                        { 
+                        {
                             xProps.setPropertyValue("MediaType","scripts");
                         }
                     }
@@ -132,7 +132,7 @@ public class XStorageHelper implements XEventListener
                         {
                             disposeObject();
                             throw new IOException("No subdir: " + name);
-                        } 
+                        }
                         else
                         {
                             // attempt to create new storage
@@ -149,14 +149,14 @@ public class XStorageHelper implements XEventListener
                     throw new IOException("storage not found: " + name);
                 }
                 xStorages[ i ] = storage;
-                   
+
             }
         }
-        catch ( com.sun.star.io.IOException ioe) 
+        catch ( com.sun.star.io.IOException ioe)
         {
             disposeObject();
         }
-        catch (com.sun.star.uno.Exception e) 
+        catch (com.sun.star.uno.Exception e)
         {
             disposeObject();
             throw new IOException(e.getMessage());
@@ -195,8 +195,8 @@ public class XStorageHelper implements XEventListener
             Object result = modelMap.remove( model );
             result = null;
         }
-    } 
-    public XStorage getStorage() 
+    }
+    public XStorage getStorage()
     {
         return xStorages[ xStorages.length - 1 ];
     }
@@ -220,7 +220,7 @@ public class XStorageHelper implements XEventListener
                 XStorage xStorage = xStorages[i];
                 if ( shouldCommit )
                 {
-                    commit(xStorage); 
+                    commit(xStorage);
                 }
                 disposeObject(xStorage);
                 LogUtils.DEBUG("In disposeObject disposed storage " + i );
@@ -229,9 +229,9 @@ public class XStorageHelper implements XEventListener
             {
                 LogUtils.DEBUG("Exception disposing storage " + i );
             }
-             
+
         }
-            
+
     }
     static public void disposeObject( XInterface xInterface )
     {
@@ -261,7 +261,7 @@ public class XStorageHelper implements XEventListener
             {
                 LogUtils.DEBUG("Something went bellyup exception: " + e );
             }
-        } 
+        }
     }
 
     public XModel getModelForURL( String url )
@@ -270,4 +270,4 @@ public class XStorageHelper implements XEventListener
        return (XModel)modelMap.get( url );
     }
 
-} 
+}

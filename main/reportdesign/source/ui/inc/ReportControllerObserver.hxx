@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -47,7 +47,7 @@ namespace rptui
 	//========================================================================
 	class /* REPORTDESIGN_DLLPUBLIC */ OXReportControllerObserver
         : public ::cppu::WeakImplHelper3<	::com::sun::star::beans::XPropertyChangeListener
-                                        ,   ::com::sun::star::container::XContainerListener 
+                                        ,   ::com::sun::star::container::XContainerListener
 										,	::com::sun::star::util::XModifyListener
                                         >
         /*,public SfxListener*/
@@ -116,11 +116,11 @@ namespace rptui
         // void ModeChanged(); // will be called from 'Notify'
 		DECL_LINK(SettingsChanged, VclWindowEvent* );
     private:
-        
+
         ::std::vector< ::com::sun::star::uno::Reference< ::com::sun::star::container::XChild> >::const_iterator getSection(const ::com::sun::star::uno::Reference< ::com::sun::star::container::XChild>& _xContainer) const;
-        
+
     };
-    
+
 } // namespace rptui
 
 #endif /* INCLUDED_REPORTCONTROLLEROBSERVER_HXX */

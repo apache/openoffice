@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -43,11 +43,11 @@ public class OpenQuery {
 
     private XComponentContext xContext = null;
     private XMultiComponentFactory xMCF = null;
-    
+
     /** Creates a new instance of OpenQuery */
     public OpenQuery() {
     }
-    
+
     /**
      * @param args the command line arguments
      */
@@ -76,12 +76,12 @@ public class OpenQuery {
             e.printStackTrace();
             System.exit(1);
         }
-        
+
         // first we create our RowSet object and get its XRowSet interface
         Object rowSet = xMCF.createInstanceWithContext(
             "com.sun.star.sdb.RowSet", xContext);
 
-        com.sun.star.sdbc.XRowSet xRowSet = (com.sun.star.sdbc.XRowSet) 
+        com.sun.star.sdbc.XRowSet xRowSet = (com.sun.star.sdbc.XRowSet)
             UnoRuntime.queryInterface(com.sun.star.sdbc.XRowSet.class, rowSet);
 
         // set the properties needed to connect to a database
@@ -126,26 +126,26 @@ public class OpenQuery {
         com.sun.star.sdbc.XResultSetUpdate xResultSetUpdate = (com.sun.star.sdbc.XResultSetUpdate)
             UnoRuntime.queryInterface(
                 com.sun.star.sdbc.XResultSetUpdate.class, xRowSet);
-        
+
         // XRowUpdate for row updates
         com.sun.star.sdbc.XRowUpdate xRowUpdate = (com.sun.star.sdbc.XRowUpdate)
             UnoRuntime.queryInterface(
                 com.sun.star.sdbc.XRowUpdate.class, xRowSet);
-        
+
         // move to insertRow buffer
         xResultSetUpdate.moveToInsertRow();
-        
+
         // edit insertRow buffer
         xRowUpdate.updateString(xLoc.findColumn("IDENTIFIER"), "GOF95");
-        xRowUpdate.updateString(xLoc.findColumn("AUTHOR"), "Gamma, Helm, Johnson, Vlissides"); 
-        
+        xRowUpdate.updateString(xLoc.findColumn("AUTHOR"), "Gamma, Helm, Johnson, Vlissides");
+
         // write buffer to database
         xResultSetUpdate.insertRow();
-        
+
         // throw away the row set
         com.sun.star.lang.XComponent xComp = (com.sun.star.lang.XComponent)UnoRuntime.queryInterface(
             com.sun.star.lang.XComponent.class, xRowSet);
         xComp.dispose();
-    }        
-    
+    }
+
 }

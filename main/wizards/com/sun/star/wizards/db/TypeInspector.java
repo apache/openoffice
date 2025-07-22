@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -409,21 +409,21 @@ public class TypeInspector
         return (getAutoIncrementIndex(_xColPropertySet) != INVALID);
     }
 
-    /** finds the first available DataType that can be used as a primary key in a table. 
+    /** finds the first available DataType that can be used as a primary key in a table.
      * @return The first datatype that also supports Autoincrmentation is taken according to the following list:
      *1) INTEGER
      *2) FLOAT
      *3) REAL
      *4) DOUBLE
      *5) NUMERIC
-     *6) DECIMAL         * 
-     * If no appropriate datatype is found ther first available numeric type after DataType.INTEGER 
+     *6) DECIMAL         *
+     * If no appropriate datatype is found ther first available numeric type after DataType.INTEGER
      * according to the 'convertDataType' method is returned
      */
-    /**TODO the fallback order is the same as implemented in the method 'convertDataType'. 
+    /**TODO the fallback order is the same as implemented in the method 'convertDataType'.
      * It's not very elegant to have the same intelligence
      * on several spots in the class!!
-     * 
+     *
      */
     public TypeInfo findAutomaticPrimaryKeyType()
     {

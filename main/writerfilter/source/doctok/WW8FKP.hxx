@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -61,7 +61,7 @@ public:
     : WW8StructBase(rStream, nOffset, 512)
     {
     }
-        
+
     /**
        Return count of entries.
     */
@@ -88,7 +88,7 @@ public:
        Check if an FKP contains an FC.
 
        @param rFc   FC to look for
-       
+
        @retval true    FKP contains FC
        @retval false   else
      */
@@ -97,15 +97,15 @@ public:
     /**
        Return properties stored in an FKP for a FC.
 
-       @param rFc   FC to look for       
+       @param rFc   FC to look for
      */
-    virtual writerfilter::Reference<Properties>::Pointer_t 
-    getProperties(const Fc & rFc) 
+    virtual writerfilter::Reference<Properties>::Pointer_t
+    getProperties(const Fc & rFc)
         const = 0;
 };
 
 /**
-   Cache providing FKPs.   
+   Cache providing FKPs.
  */
 class WW8FKPCache
 {
@@ -114,7 +114,7 @@ public:
        Shared pointer to cache.
      */
     typedef boost::shared_ptr<WW8FKPCache> Pointer_t;
-        
+
     virtual ~WW8FKPCache();
 
     /**

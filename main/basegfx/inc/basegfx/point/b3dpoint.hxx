@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -42,12 +42,12 @@ namespace basegfx
 	*/
 	class BASEGFX_DLLPUBLIC B3DPoint : public ::basegfx::B3DTuple
 	{
-	public:					
+	public:
 		/**	Create a 3D Point
 
         	The point is initialized to (0.0, 0.0, 0.0)
 		*/
-		B3DPoint() 
+		B3DPoint()
 		:	B3DTuple()
 		{}
 
@@ -56,16 +56,16 @@ namespace basegfx
 			@param fX
 			This parameter is used to initialize the X-coordinate
 			of the 3D Point.
-			
+
 			@param fY
 			This parameter is used to initialize the Y-coordinate
 			of the 3D Point.
-			
+
 			@param fZ
 			This parameter is used to initialize the Z-coordinate
 			of the 3D Point.
 		*/
-		B3DPoint(double fX, double fY, double fZ) 
+		B3DPoint(double fX, double fY, double fZ)
 		:	B3DTuple(fX, fY, fZ)
 		{}
 
@@ -74,49 +74,49 @@ namespace basegfx
 			@param rVec
 			The 3D Point which will be copied.
 		*/
-		B3DPoint(const B3DPoint& rVec) 
+		B3DPoint(const B3DPoint& rVec)
 		:	B3DTuple(rVec)
 		{}
 
 		/** constructor with tuple to allow copy-constructing
 			from B3DTuple-based classes
 		*/
-		B3DPoint(const ::basegfx::B3DTuple& rTuple) 
+		B3DPoint(const ::basegfx::B3DTuple& rTuple)
 		:	B3DTuple(rTuple)
 		{}
 
-		~B3DPoint() 
+		~B3DPoint()
 		{}
 
 		/** *=operator to allow usage from B3DPoint, too
 		*/
-		B3DPoint& operator*=( const B3DPoint& rPnt ) 
-		{ 
+		B3DPoint& operator*=( const B3DPoint& rPnt )
+		{
 			mfX *= rPnt.mfX;
-			mfY *= rPnt.mfY; 
-			mfZ *= rPnt.mfZ; 
-			return *this; 
+			mfY *= rPnt.mfY;
+			mfZ *= rPnt.mfZ;
+			return *this;
 		}
 
 		/** *=operator to allow usage from B3DPoint, too
 		*/
-		B3DPoint& operator*=(double t) 
-		{ 
-			mfX *= t; 
-			mfY *= t; 
-			mfZ *= t; 
-			return *this; 
+		B3DPoint& operator*=(double t)
+		{
+			mfX *= t;
+			mfY *= t;
+			mfZ *= t;
+			return *this;
 		}
 
 		/** assignment operator to allow assigning the results
 			of B3DTuple calculations
 		*/
-		B3DPoint& operator=( const ::basegfx::B3DTuple& rVec ) 
-		{ 
+		B3DPoint& operator=( const ::basegfx::B3DTuple& rVec )
+		{
 			mfX = rVec.getX();
-			mfY = rVec.getY(); 
-			mfZ = rVec.getZ(); 
-			return *this; 
+			mfY = rVec.getY();
+			mfZ = rVec.getZ();
+			return *this;
 		}
 
 		/** Transform point by given transformation matrix.
@@ -136,7 +136,7 @@ namespace basegfx
 	//////////////////////////////////////////////////////////////////////////
 
 	/** Transform B3DPoint by given transformation matrix.
-	    
+
 		Since this is a Point, translational components of the
     	matrix are used.
 	*/

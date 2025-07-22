@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -45,15 +45,15 @@ const char* PATHSEPARATOR = ":";
 
 /*
  * The main function implements a loader for applications which use UNO.
- * 
+ *
  * <p>This code runs on the Unix/Linux platforms only.</p>
  *
  * <p>The main function detects a UNO installation on the system and adds the
  * relevant directories of the installation to the LD_LIBRARY_PATH environment
- * variable. After that, the application process is loaded and started, whereby 
+ * variable. After that, the application process is loaded and started, whereby
  * the new process inherits the environment of the calling process, including
- * the modified LD_LIBRARY_PATH environment variable. The application's 
- * executable name must be the same as the name of this executable, prefixed 
+ * the modified LD_LIBRARY_PATH environment variable. The application's
+ * executable name must be the same as the name of this executable, prefixed
  * by '_'.</p>
  * <p>On MACOSX DYLD_LIBRARY_PATH is used instead of LD_LIBRARY_PATH!<p>
  *
@@ -61,8 +61,8 @@ const char* PATHSEPARATOR = ":";
  * environment variable to the program directory of the UNO installation.
  * If no installation is specified by the user, the default installation on
  * the system will be taken. The default installation is found from the
- * PATH environment variable. This requires that the 'soffice' executable or 
- * a symbolic link is in one of the directories listed in the PATH environment 
+ * PATH environment variable. This requires that the 'soffice' executable or
+ * a symbolic link is in one of the directories listed in the PATH environment
  * variable.</p>
  */
 int main( int argc, char *argv[] )
@@ -70,7 +70,7 @@ int main( int argc, char *argv[] )
     char const* path;
     char* cmdname;
 
-    (void) argc; /* avoid warning about unused parameter */ 
+    (void) argc; /* avoid warning about unused parameter */
 
     /* get the path of the UNO installation */
     path = getPath();
@@ -194,7 +194,7 @@ int main( int argc, char *argv[] )
         strcat( envstr, "=/usr/lib:" );
 #else
         strcat( envstr, "=" );
-#endif        
+#endif
         strcat( envstr, libpath );
         if ( freeLibpath != 0 )
         {
@@ -242,7 +242,7 @@ int main( int argc, char *argv[] )
     cmdname = createCommandName( argv[0] );
     argv[0] = cmdname;
 
-    /* 
+    /*
      * create the application process;
      * if successful, execvp doesn't return to the calling process
      */
@@ -255,9 +255,9 @@ int main( int argc, char *argv[] )
 
 /*
  * Gets the path of a UNO installation.
- *                                 
+ *
  * @return the installation path or NULL, if no installation was specified or
- *         found, or if an error occurred     
+ *         found, or if an error occurred
  */
 char const* getPath()
 {
@@ -271,7 +271,7 @@ char const* getPath()
 
     return path;
 }
-    
+
 /*
  * Creates the application's executable file name.
  *
@@ -295,7 +295,7 @@ char* createCommandName( char* argv0 )
     /* get the executable file name from argv0 */
 	prgname = argv0;
 
-	/* 
+	/*
      * if argv0 doesn't contain an absolute path name, try to get the absolute
      * path name from dladdr; note that this only works for Solaris, not for
      * Linux
@@ -315,7 +315,7 @@ char* createCommandName( char* argv0 )
         if ( sep != NULL )
         {
 			pos = ++sep - prgname;
-            strncpy( cmdname, prgname, pos ); 
+            strncpy( cmdname, prgname, pos );
             cmdname[ pos ] = '\0';
             strcat( cmdname, CMDPREFIX );
             strcat( cmdname, sep );

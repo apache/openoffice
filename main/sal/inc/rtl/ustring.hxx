@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -227,13 +227,13 @@ public:
     {
         rtl_uString_release( pData );
     }
-    
+
     /** Provides an OUString const & passing a storage pointer of an
         rtl_uString * handle.
         It is more convenient to use C++ OUString member functions when dealing
         with rtl_uString * handles.  Using this function avoids unnecessary
         acquire()/release() calls for a temporary OUString object.
-        
+
         @param ppHandle
                pointer to storage
         @return
@@ -241,7 +241,7 @@ public:
     */
     static inline OUString const & unacquired( rtl_uString * const * ppHandle )
         { return * reinterpret_cast< OUString const * >( ppHandle ); }
-    
+
     /**
       Assign a new string.
 
@@ -562,7 +562,7 @@ public:
         if ( pData->length != asciiStrLength )
             return sal_False;
 
-        return rtl_ustr_asciil_reverseEquals_WithLength( 
+        return rtl_ustr_asciil_reverseEquals_WithLength(
 					pData->buffer, asciiStr, asciiStrLength );
     }
 

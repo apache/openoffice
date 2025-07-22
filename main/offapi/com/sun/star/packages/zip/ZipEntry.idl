@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,50 +7,50 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
 #ifndef __com_sun_star_packages_zip_ZipEntry_idl__
-#define __com_sun_star_packages_zip_ZipEntry_idl__ 
- 
-#ifndef __com_sun_star_uno_XInterface_idl__ 
-#include <com/sun/star/uno/XInterface.idl> 
-#endif 
- 
-#ifndef __com_sun_star_xml_sax_InputSource_idl__ 
-#include <com/sun/star/xml/sax/InputSource.idl> 
-#endif 
- 
-#ifndef __com_sun_star_io_IOException_idl__ 
-#include <com/sun/star/io/IOException.idl> 
-#endif 
- 
- 
-//============================================================================= 
- 
+#define __com_sun_star_packages_zip_ZipEntry_idl__
+
+#ifndef __com_sun_star_uno_XInterface_idl__
+#include <com/sun/star/uno/XInterface.idl>
+#endif
+
+#ifndef __com_sun_star_xml_sax_InputSource_idl__
+#include <com/sun/star/xml/sax/InputSource.idl>
+#endif
+
+#ifndef __com_sun_star_io_IOException_idl__
+#include <com/sun/star/io/IOException.idl>
+#endif
+
+
+//=============================================================================
+
 module com {  module sun {  module star {   module packages {  module zip {
- 
-//============================================================================= 
- 
+
+//=============================================================================
+
 /** used to represent a ZIP file entry
-	
-	
-	<p>This interface is an IDL version of the Java interface 
+
+
+	<p>This interface is an IDL version of the Java interface
 	<em>java.util.zip.ZipFile</em> with some minor adaptations.</p>
  */
 published struct ZipEntry
-{ 
-	//------------------------------------------------------------------------- 
+{
+	//-------------------------------------------------------------------------
 	/** version needed to extract
 	 */
 	short nVersion;
@@ -98,7 +98,7 @@ published struct ZipEntry
 	//-------------------------------------------------------------------------
 	/** the entry name
 	 */
-	string sName; 
+	string sName;
 
 	//-------------------------------------------------------------------------
 	/** optional extra field data for entry
@@ -109,10 +109,10 @@ published struct ZipEntry
 	/** optional comment
 	 */
 	string sComment;
-}; 
- 
-//============================================================================= 
- 
+};
+
+//=============================================================================
+
 }; }; }; }; };
- 
-#endif 
+
+#endif

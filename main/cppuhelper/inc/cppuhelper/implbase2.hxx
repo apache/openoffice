@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -59,7 +59,7 @@ namespace cppu
 
     /** Implementation helper implementing interface ::com::sun::star::lang::XTypeProvider
         and queryInterface(), but no reference counting.
-        
+
         @derive
         Inherit from this class giving your interface(s) to be implemented as template argument(s).
         Your base class defines method implementations, acquire(), release() and delegates incoming
@@ -83,7 +83,7 @@ namespace cppu
     /** Implementation helper implementing interfaces ::com::sun::star::lang::XTypeProvider and
         ::com::sun::star::uno::XInterface which supports weak mechanism to be held weakly
         (supporting ::com::sun::star::uno::XWeak thru ::cppu::OWeakObject).
-        
+
         @derive
         Inherit from this class giving your interface(s) to be implemented as template argument(s).
         Your sub class defines method implementations for these interface(s).
@@ -116,7 +116,7 @@ namespace cppu
         If a delegator is set (this object is aggregated), then incoming queryInterface()
         calls are delegated to the delegator object. If the delegator does not support the
         demanded interface, it calls queryAggregation() on its aggregated objects.
-        
+
         @derive
         Inherit from this class giving your interface(s) to be implemented as template argument(s).
         Your sub class defines method implementations for these interface(s).
@@ -154,7 +154,7 @@ namespace cppu
         and ::com::sun::star::lang::XTypeProvider are implemented properly.  The
         BaseClass must have at least one ctor that can be called with six or
         fewer arguments, of which none is of non-const reference type.
-        
+
         @derive
         Inherit from this class giving your additional interface(s) to be implemented as
         template argument(s). Your sub class defines method implementations for these interface(s).
@@ -216,14 +216,14 @@ namespace cppu
         All acquire(),  release() and queryInterface() calls are delegated to the BaseClass.
         Upon queryAggregation(), if a demanded interface is not supported by this class directly,
         the request is delegated to the BaseClass.
-        
+
         @attention
         The BaseClass has to be complete in a sense, that ::com::sun::star::uno::XInterface,
         ::com::sun::star::uno::XAggregation and ::com::sun::star::lang::XTypeProvider
         are implemented properly.  The BaseClass must have at least one ctor
         that can be called with six or fewer arguments, of which none is of
         non-const reference type.
-        
+
         @derive
         Inherit from this class giving your additional interface(s) to be implemented as
         template argument(s). Your sub class defines method implementations for these interface(s).

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -80,7 +80,7 @@ namespace dbaui
 		OTextConnectionPageSetup( Window* pParent, const SfxItemSet& _rCoreAttrs );
         OTextConnectionHelper*  m_pTextConnectionHelper;
 	private:
-        
+
 	protected:
 		virtual ~OTextConnectionPageSetup();
 		virtual sal_Bool prepareLeave();
@@ -185,7 +185,7 @@ namespace dbaui
 		FixedText			m_aFTPortNumber;
 		FixedText			m_aFTDefaultPortNumber;
         NumericField		m_aNFPortNumber;
-        
+
 
 		FixedText			m_aFTDriverClass;
 		Edit				m_aETDriverClass;
@@ -245,7 +245,7 @@ namespace dbaui
         DECL_LINK(ImplClickHdl, OMySQLIntroPageSetup*);
 
 
-        
+
 
 	protected:
 		virtual sal_Bool FillItemSet(SfxItemSet& _rSet);

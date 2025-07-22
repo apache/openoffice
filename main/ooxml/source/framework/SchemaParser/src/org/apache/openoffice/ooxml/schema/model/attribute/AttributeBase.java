@@ -36,9 +36,9 @@ public abstract class AttributeBase
         Optional,
         Required
     }
-    
-    
-    
+
+
+
     public AttributeBase (
         final QualifiedName aName,
         final String sUse,
@@ -65,33 +65,33 @@ public abstract class AttributeBase
         meFormDefault = eFormDefault;
     }
 
-    
-    
-    
+
+
+
     public FormDefault GetFormDefault()
     {
         return meFormDefault;
     }
 
-    
-    
-    
+
+
+
     public Use GetUse ()
     {
         return meUse;
     }
-    
-    
-    
-    
+
+
+
+
     public String GetDefault()
     {
         return msDefault;
     }
-    
-    
-    
-    
+
+
+
+
     @Override
     public String toString ()
     {
@@ -106,10 +106,10 @@ public abstract class AttributeBase
             sText += ", not fixed";
         return sText;
     }
-    
-    
-    
-    
+
+
+
+
     private final Use meUse;
     private final String msDefault;
     private final String msFixed;

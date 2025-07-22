@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -622,11 +622,11 @@ namespace svt
 		// Children ---------------------------------------------------------------
 
 		/** Creates the accessible object of a data table cell.
-        @param nRow  
+        @param nRow
 			The row index of the cell.
-        @param nColumnId  
+        @param nColumnId
 			The column ID of the cell.
-        @return  
+        @return
 			The XAccessible interface of the specified cell. */
 		virtual ::com::sun::star::uno::Reference<
 			::com::sun::star::accessibility::XAccessible >
@@ -636,18 +636,18 @@ namespace svt
 		virtual sal_Int32 GetAccessibleControlCount() const;
 
 		/** Creates the accessible object of an additional control.
-			@param nIndex  
+			@param nIndex
 				The 0-based index of the control.
-			@return  
+			@return
 				The XAccessible interface of the specified control. */
 		virtual ::com::sun::star::uno::Reference<
 			::com::sun::star::accessibility::XAccessible >
 		CreateAccessibleControl( sal_Int32 nIndex );
 
 		/** Creates the accessible object of a column header.
-			@param nColumnId  
+			@param nColumnId
 				The column ID of the header.
-			@return  
+			@return
 				The XAccessible interface of the specified column header. */
 		virtual ::com::sun::star::uno::Reference<
 			::com::sun::star::accessibility::XAccessible >

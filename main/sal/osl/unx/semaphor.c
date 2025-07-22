@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -41,7 +41,7 @@
 /* osl_createSemaphore  */
 /*****************************************************************************/
 
-oslSemaphore SAL_CALL osl_createSemaphore(sal_uInt32 initialCount) 
+oslSemaphore SAL_CALL osl_createSemaphore(sal_uInt32 initialCount)
 {
 	int ret = 0;
 	oslSemaphore Semaphore;
@@ -54,7 +54,7 @@ oslSemaphore SAL_CALL osl_createSemaphore(sal_uInt32 initialCount)
 	{
 		return 0;
 	}
-	
+
 	/* unnamed semaphore, not shared between processes */
 
    	ret= sem_init((sem_t*)Semaphore, 0, initialCount);
@@ -62,14 +62,14 @@ oslSemaphore SAL_CALL osl_createSemaphore(sal_uInt32 initialCount)
 	/* create failed? */
 	if (ret != 0)
 	{
-	    OSL_TRACE("osl_createSemaphore failed. Errno: %d; %s\n", 
-				  errno, 
+	    OSL_TRACE("osl_createSemaphore failed. Errno: %d; %s\n",
+				  errno,
 				  strerror(errno));
 
 	    free(Semaphore);
 	    Semaphore = NULL;
 	}
-	
+
 	return Semaphore;
 }
 
@@ -89,7 +89,7 @@ void SAL_CALL osl_destroySemaphore(oslSemaphore Semaphore)
 /* osl_acquireSemaphore  */
 /*****************************************************************************/
 sal_Bool SAL_CALL osl_acquireSemaphore(oslSemaphore Semaphore) {
-	
+
 	OSL_ASSERT(Semaphore != 0);	/* abort in debug mode */
 
 	if (Semaphore != 0)		/* be tolerant in release mode */
@@ -104,7 +104,7 @@ sal_Bool SAL_CALL osl_acquireSemaphore(oslSemaphore Semaphore) {
 /* osl_tryToAcquireSemaphore  */
 /*****************************************************************************/
 sal_Bool SAL_CALL osl_tryToAcquireSemaphore(oslSemaphore Semaphore) {
-	
+
 	OSL_ASSERT(Semaphore != 0);	/* abort in debug mode */
 	if (Semaphore != 0)		/* be tolerant in release mode */
 	{
@@ -120,7 +120,7 @@ sal_Bool SAL_CALL osl_tryToAcquireSemaphore(oslSemaphore Semaphore) {
 sal_Bool SAL_CALL osl_releaseSemaphore(oslSemaphore Semaphore) {
 
 	OSL_ASSERT(Semaphore != 0);		/* abort in debug mode */
-	
+
 	if (Semaphore != 0)			/* be tolerant in release mode */
 	{
 	    return (sem_post((sem_t*)Semaphore) == 0);
@@ -159,10 +159,10 @@ typedef struct _osl_TSemImpl
 /*****************************************************************************/
 /* osl_createSemaphore  */
 /*****************************************************************************/
-oslSemaphore SAL_CALL osl_createSemaphore(sal_uInt32 initialCount) 
+oslSemaphore SAL_CALL osl_createSemaphore(sal_uInt32 initialCount)
 {
 	union semun arg;
-	
+
 	oslSemaphore Semaphore;
 	osl_TSemImpl* pSem;
 
@@ -180,8 +180,8 @@ oslSemaphore SAL_CALL osl_createSemaphore(sal_uInt32 initialCount)
 	/* create failed? */
 	if (pSem->m_Id < 0)
 	{
-	    OSL_TRACE("osl_createSemaphore failed (semget). Errno: %d; %s\n", 
-			   errno, 
+	    OSL_TRACE("osl_createSemaphore failed (semget). Errno: %d; %s\n",
+			   errno,
 			   strerror(errno));
 
 	    free(Semaphore);
@@ -194,20 +194,20 @@ oslSemaphore SAL_CALL osl_createSemaphore(sal_uInt32 initialCount)
 
 	if(semctl(pSem->m_Id, 0, SETVAL, arg) < 0)
 	{
-	    OSL_TRACE("osl_createSemaphore failed (semctl(SETVAL)). Errno: %d; %s\n", 
-			   errno, 
+	    OSL_TRACE("osl_createSemaphore failed (semctl(SETVAL)). Errno: %d; %s\n",
+			   errno,
 			   strerror(errno));
 
 		if(semctl(pSem->m_Id, 0, IPC_RMID, arg) < 0)
 		{
 		    OSL_TRACE("semctl(IPC_RMID) failed. Errno: %d; %s\n", errno, strerror(errno));
 	    }
-		
+
 		free(Semaphore);
 		return 0;
 	}
-    
-	
+
+
 	return Semaphore;
 }
 
@@ -215,7 +215,7 @@ oslSemaphore SAL_CALL osl_createSemaphore(sal_uInt32 initialCount)
 /* osl_destroySemaphore  */
 /*****************************************************************************/
 void SAL_CALL osl_destroySemaphore(oslSemaphore Semaphore) {
-	
+
 	if(Semaphore)			/* ptr valid? */
 	{
 		union semun arg;
@@ -225,11 +225,11 @@ void SAL_CALL osl_destroySemaphore(oslSemaphore Semaphore) {
 		if(semctl(pSem->m_Id, 0, IPC_RMID, arg) < 0)
 
 		{
-		    OSL_TRACE("osl_destroySemaphore failed. (semctl(IPC_RMID)). Errno: %d; %s\n", 
-				   errno, 
-				   strerror(errno));			
+		    OSL_TRACE("osl_destroySemaphore failed. (semctl(IPC_RMID)). Errno: %d; %s\n",
+				   errno,
+				   strerror(errno));
 	    }
-		
+
 	    free(Semaphore);
 	}
 }
@@ -238,9 +238,9 @@ void SAL_CALL osl_destroySemaphore(oslSemaphore Semaphore) {
 /* osl_acquireSemaphore  */
 /*****************************************************************************/
 sal_Bool SAL_CALL osl_acquireSemaphore(oslSemaphore Semaphore) {
-	
+
 	/* abort in debug mode */
-	OSL_PRECOND(Semaphore != 0, "Semaphore not created\n");	
+	OSL_PRECOND(Semaphore != 0, "Semaphore not created\n");
 
 
 	if (Semaphore != 0)		/* be tolerant in release mode */
@@ -263,9 +263,9 @@ sal_Bool SAL_CALL osl_acquireSemaphore(oslSemaphore Semaphore) {
 /* osl_tryToAcquireSemaphore  */
 /*****************************************************************************/
 sal_Bool SAL_CALL osl_tryToAcquireSemaphore(oslSemaphore Semaphore) {
-	
+
 	/* abort in debug mode */
-	OSL_PRECOND(Semaphore != 0, "Semaphore not created\n");	
+	OSL_PRECOND(Semaphore != 0, "Semaphore not created\n");
 
 	if (Semaphore != 0)		/* be tolerant in release mode */
 	{
@@ -285,12 +285,12 @@ sal_Bool SAL_CALL osl_tryToAcquireSemaphore(oslSemaphore Semaphore) {
 /*****************************************************************************/
 /* osl_releaseSemaphore  */
 /*****************************************************************************/
-sal_Bool SAL_CALL osl_releaseSemaphore(oslSemaphore Semaphore) 
+sal_Bool SAL_CALL osl_releaseSemaphore(oslSemaphore Semaphore)
 {
 
 	/* abort in debug mode */
-	OSL_PRECOND(Semaphore != 0, "Semaphore not created\n");	
-	
+	OSL_PRECOND(Semaphore != 0, "Semaphore not created\n");
+
 	if (Semaphore != 0)			/* be tolerant in release mode */
 	{
 	    struct sembuf op;

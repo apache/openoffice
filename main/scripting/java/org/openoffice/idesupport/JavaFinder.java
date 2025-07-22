@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 package org.openoffice.idesupport;
@@ -74,14 +74,14 @@ public class JavaFinder implements MethodFinder {
         if (basedir == null || basedir.exists() == false ||
             basedir.isDirectory() == false)
             return empty;
-      
+
         parcelName = basedir.getName();
         if (parcelName.equals(ParcelZipper.CONTENTS_DIRNAME))
             parcelName = basedir.getParentFile().getName();
 
         String[] classNames = findClassNames(basedir);
         if (classNames != null && classNames.length != 0) {
-                
+
             ClassLoader classloader;
 
             if (classpath == null)
@@ -111,7 +111,7 @@ public class JavaFinder implements MethodFinder {
                                 }
                             }
                         }
-                    } 
+                    }
                 }
                 catch (ClassNotFoundException e)
                 {
@@ -157,7 +157,7 @@ public class JavaFinder implements MethodFinder {
         files.add(basedir);
 
         try {
-            Enumeration offices = SVersionRCFile.createInstance().getVersions(); 
+            Enumeration offices = SVersionRCFile.createInstance().getVersions();
 
             while (offices.hasMoreElements()) {
                 OfficeInstallation oi = (OfficeInstallation)offices.nextElement();
@@ -210,11 +210,11 @@ public class JavaFinder implements MethodFinder {
         ArrayList classFiles = findFiles(basedir, CLASS_SUFFIX);
         if(classFiles == null || classFiles.size() == 0)
             return null;
-        
+
         ArrayList javaFiles = findFiles(basedir, JAVA_SUFFIX);
         if(javaFiles == null || javaFiles.size() == 0)
             return null;
-        
+
         ArrayList result = new ArrayList();
         for (int i = 0; i < classFiles.size(); i++)
         {
@@ -222,21 +222,21 @@ public class JavaFinder implements MethodFinder {
             String className = classFile.getName();
             className = className.substring(0, className.lastIndexOf(CLASS_SUFFIX));
             boolean finished = false;
-            
+
 
             for (int j = 0; j < javaFiles.size() && finished == false; j++)
             {
                 File javaFile = (File)javaFiles.get(j);
                 String javaName = javaFile.getName();
                 javaName = javaName.substring(0, javaName.lastIndexOf(JAVA_SUFFIX));
-                
+
                 if (javaName.equals(className))
                 {
                     String path = classFile.getAbsolutePath();
                     path = path.substring(basedir.getAbsolutePath().length() + 1);
                     path = path.replace(File.separatorChar, '.');
                     path = path.substring(0, path.lastIndexOf(CLASS_SUFFIX));
-                    
+
                     result.add(path);
                     javaFiles.remove(j);
                     finished = true;

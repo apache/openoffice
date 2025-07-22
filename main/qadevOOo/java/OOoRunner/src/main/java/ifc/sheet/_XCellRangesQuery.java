@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -45,7 +45,7 @@ import com.sun.star.uno.UnoRuntime;
  * <ul>
  *   <li>"SHEET": an XSpreadSheet object
  *   </li>
- *   <li>"XCellRangesQuery.EXPECTEDRESULTS": the expected results for the test 
+ *   <li>"XCellRangesQuery.EXPECTEDRESULTS": the expected results for the test
  *       methods as a String array.<br>
  *       @see mod._sc.ScCellCursorObj or
  *       @see mod._sc.ScCellObj for an example how this should look like.
@@ -69,7 +69,7 @@ public class _XCellRangesQuery extends MultiMethodTest {
     public static final int QUERYINTERSECTION = 4;
     public static final int QUERYROWDIFFERENCES = 5;
     public static final int QUERYVISIBLECELLS = 6;
-    
+
     protected void before() {
         oSheet = (XSpreadsheet) tEnv.getObjRelation("SHEET");
 
@@ -90,13 +90,13 @@ public class _XCellRangesQuery extends MultiMethodTest {
                                             "XCellRangesQuery.EXPECTEDRESULTS");
 
         XColumnRowRange oColumnRowRange = (XColumnRowRange) UnoRuntime.queryInterface(
-                                                  XColumnRowRange.class, 
+                                                  XColumnRowRange.class,
                                                   oSheet);
         oRows = (XTableRows)oColumnRowRange.getRows();
         oColumns = (XTableColumns) oColumnRowRange.getColumns();
 
-        // set this in object if the interface has to make its own settings 
-        // and the environment has to be disposed: this is necessary for objects 
+        // set this in object if the interface has to make its own settings
+        // and the environment has to be disposed: this is necessary for objects
         // that do not make entries on the sheet themselves
         Object o = tEnv.getObjRelation("XCellRangesQuery.CREATEENTRIES");
         if (o != null && o instanceof Boolean) {
@@ -112,7 +112,7 @@ public class _XCellRangesQuery extends MultiMethodTest {
                 oSheet.getCellByPosition(2, 1).setFormula("=B2+B3");
                 oSheet.getCellByPosition(1, 3).setFormula("=B2+B4");
                 oSheet.getCellByPosition(3, 2).setFormula("");
-                oSheet.getCellByPosition(3, 3).setFormula("");            
+                oSheet.getCellByPosition(3, 3).setFormula("");
             } catch (com.sun.star.lang.IndexOutOfBoundsException e) {
                 log.println("Couldn't fill cells " + e.getLocalizedMessage());
             }
@@ -121,7 +121,7 @@ public class _XCellRangesQuery extends MultiMethodTest {
     }
 
     /**
-     * Tested method returns each cell of each column that is different to the 
+     * Tested method returns each cell of each column that is different to the
      * cell in a given row
      */
     public void _queryColumnDifferences() {
@@ -141,7 +141,7 @@ public class _XCellRangesQuery extends MultiMethodTest {
     }
 
     /**
-     * Tested method returns all cells of a given type, defind in 
+     * Tested method returns all cells of a given type, defind in
      * CellFlags
      * @see com.sun.star.sheet.CellFlags
      */
@@ -169,17 +169,17 @@ public class _XCellRangesQuery extends MultiMethodTest {
         XSheetCellRanges ranges = oObj.queryEmptyCells();
         getting = ranges.getRangeAddressesAsString();
         expected = mExpectedResults[QUERYEMPTYCELLS];
-        
+
         int startIndex = 0;
         int endIndex = -5;
         String checkString = null;
-        
+
         while (endIndex != -1) {
             startIndex = endIndex + 5;
             endIndex = expected.indexOf(" ... ", startIndex);
             if (endIndex == -1) {
                 checkString = expected.substring(startIndex);
-            } 
+            }
             else {
                 checkString = expected.substring(startIndex, endIndex);
             }
@@ -195,7 +195,7 @@ public class _XCellRangesQuery extends MultiMethodTest {
     }
 
     /**
-     * Tested method returns all cells of a given type, defind in 
+     * Tested method returns all cells of a given type, defind in
      * FormulaResult
      * @see com.sun.star.sheet.FormulaResult
      */
@@ -232,7 +232,7 @@ public class _XCellRangesQuery extends MultiMethodTest {
     }
 
     /**
-     * Tested method returns each cell of each row that is different to the 
+     * Tested method returns each cell of each row that is different to the
      * cell in a given column
      */
     public void _queryRowDifferences() {
@@ -272,22 +272,22 @@ public class _XCellRangesQuery extends MultiMethodTest {
     protected void setRowVisible(boolean vis) {
         try {
             XPropertySet rowProp = (XPropertySet) UnoRuntime.queryInterface(
-                                           XPropertySet.class, 
+                                           XPropertySet.class,
                                            oRows.getByIndex(0));
             rowProp.setPropertyValue("IsVisible", new Boolean(vis));
         } catch (com.sun.star.lang.IndexOutOfBoundsException e) {
             log.println("couldn't get Row " + e.getLocalizedMessage());
         } catch (com.sun.star.lang.WrappedTargetException e) {
-            log.println("problems setting Property 'isVisible' " + 
+            log.println("problems setting Property 'isVisible' " +
                         e.getLocalizedMessage());
         } catch (com.sun.star.beans.UnknownPropertyException e) {
-            log.println("problems setting Property 'isVisible' " + 
+            log.println("problems setting Property 'isVisible' " +
                         e.getLocalizedMessage());
         } catch (com.sun.star.beans.PropertyVetoException e) {
-            log.println("problems setting Property 'isVisible' " + 
+            log.println("problems setting Property 'isVisible' " +
                         e.getLocalizedMessage());
         } catch (com.sun.star.lang.IllegalArgumentException e) {
-            log.println("problems setting Property 'isVisible' " + 
+            log.println("problems setting Property 'isVisible' " +
                         e.getLocalizedMessage());
         }
     }

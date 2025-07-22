@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 import java.util.Vector;
@@ -65,8 +65,8 @@ abstract class NodeHandler
     }
 
     /**
-     * return a child object. Complex 
-     * children have to be AccTreeNode instances. 
+     * return a child object. Complex
+     * children have to be AccTreeNode instances.
      * @see AccTreeNode
      */
     public AccessibleTreeNode getChild (AccessibleTreeNode aParent, int nIndex)
@@ -131,7 +131,7 @@ abstract class NodeHandler
     // The following methods support editing of children and actions.
     // They have default implementations for no actions and read-only.
     //
-    
+
     /** May this child be changed? */
     public boolean isChildEditable (AccessibleTreeNode aNode, int nIndex)
     {
@@ -143,13 +143,13 @@ abstract class NodeHandler
 
 
     /** get names of supported actions */
-    public String[] getActions (AccessibleTreeNode aNode) 
-    { 
+    public String[] getActions (AccessibleTreeNode aNode)
+    {
         return new String[] {};
     }
 
     /** perform action */
-    public void performAction (AccessibleTreeNode aNode, int nIndex) 
+    public void performAction (AccessibleTreeNode aNode, int nIndex)
     {
     }
 

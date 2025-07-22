@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -51,7 +51,7 @@ using namespace std;
 #include <iterator> /* std::iterator*/
 #include <list>		/* std::list*/
 #include <vector>	/* std::vector*/
-#define XML_NODE_TYPE_FILE			0x001                      
+#define XML_NODE_TYPE_FILE			0x001
 #define XML_NODE_TYPE_ELEMENT		0x002
 #define XML_NODE_TYPE_DATA			0x003
 #define XML_NODE_TYPE_COMMENT		0x004
@@ -68,25 +68,25 @@ class XMLAttribute : public String
 {
 private:
 	String sValue;
-	
+
 public:
 	/// creates an attribute
-	XMLAttribute( 
+	XMLAttribute(
 		const String &rName, 	// attributes name
-		const String &rValue	// attributes data 
-	) 
+		const String &rValue	// attributes data
+	)
 				: String( rName ), sValue( rValue ) {}
 
     /// getting value of an attribue
 	const String &GetValue() { return sValue; }
-    
+
     void setValue(const String &rValue){sValue=rValue;}
 
 	/// returns true if two attributes are equal and have the same value
-	sal_Bool IsEqual( 
+	sal_Bool IsEqual(
 		const XMLAttribute &rAttribute	// the attribute which has to be equal
 	)
-	{ 
+	{
 		return (( rAttribute == *this ) && ( rAttribute.sValue == sValue ));
 	}
 };
@@ -144,18 +144,18 @@ private:
 	static int dbgcnt;
     //int         nParentPos;
 protected:
-	XMLParentNode( XMLParentNode *pPar ) 
-				: XMLChildNode( pPar ), pChildList( NULL ) 
+	XMLParentNode( XMLParentNode *pPar )
+				: XMLChildNode( pPar ), pChildList( NULL )
               {
 			  }
 	XMLParentNode(): pChildList(NULL){
 	}
     /// Copyconstructor
     XMLParentNode( const XMLParentNode& );
-	
+
     XMLParentNode& operator=(const XMLParentNode& obj);
     virtual ~XMLParentNode();
-    
+
 
 public:
 	virtual sal_uInt16 GetNodeType() = 0;
@@ -164,14 +164,14 @@ public:
 	XMLChildNodeList *GetChildList() { return pChildList; }
 
 	/// adds a new child
-	void AddChild( 
+	void AddChild(
 		XMLChildNode *pChild  	/// the new child
 	);
 
-    void AddChild( 
+    void AddChild(
 		XMLChildNode *pChild , int pos 	/// the new child
 	);
-    
+
     virtual int GetPosition( ByteString id );
     int RemoveChild( XMLElement *pRefElement );
 	void RemoveAndDeleteAllChilds();
@@ -186,18 +186,18 @@ public:
 
 DECLARE_LIST( XMLStringList, XMLElement* )
 
-/// Mapping numeric Language code <-> XML Element 
+/// Mapping numeric Language code <-> XML Element
 typedef std::hash_map< ByteString ,XMLElement* , hashByteString,equalByteString > LangHashMap;
 
 /// Mapping XML Element string identifier <-> Language Map
-typedef std::hash_map<ByteString , LangHashMap* , 
+typedef std::hash_map<ByteString , LangHashMap* ,
 					  hashByteString,equalByteString>					XMLHashMap;
 
 /// Mapping iso alpha string code <-> iso numeric code
 typedef std::hash_map<ByteString, int, hashByteString,equalByteString>	HashMap;
 
-/// Mapping XML tag names <-> have localizable strings 
-typedef std::hash_map<ByteString , sal_Bool , 
+/// Mapping XML tag names <-> have localizable strings
+typedef std::hash_map<ByteString , sal_Bool ,
 					  hashByteString,equalByteString>					TagMap;
 
 /** Holds information of a XML file, is root node of tree
@@ -208,12 +208,12 @@ class XMLFile : public XMLParentNode
 {
 public:
 	XMLFile() ;
-	XMLFile( 
+	XMLFile(
 				const String &rFileName // the file name, empty if created from memory stream
 	);
     XMLFile( const XMLFile& obj ) ;
     ~XMLFile();
-	
+
     ByteString*	GetGroupID(std::deque<ByteString> &groupid);
 	void 		Print( XMLNode *pCur = NULL, sal_uInt16 nLevel = 0 );
 	virtual void SearchL10NElements( XMLParentNode *pCur, int pos = 0 );
@@ -229,7 +229,7 @@ public:
     bool        CheckExportStatus( XMLParentNode *pCur = NULL );// , int pos = 0 );
 
     XMLFile&    operator=(const XMLFile& obj);
-	
+
 	virtual sal_uInt16 	GetNodeType();
 
 	/// returns file name
@@ -237,11 +237,11 @@ public:
     void          SetName( const String &rFilename ) { sFileName = rFilename; }
     void          SetFullName( const String &rFullFilename ) { sFullName = rFullFilename; }
     const std::vector<ByteString> getOrder(){ return order; }
-	
+
 protected:
 	// writes a string as UTF8 with dos line ends to a given stream
     void        WriteString( ofstream &rStream, const String &sString );
-	
+
     // quotes the given text for writing to a file
 	void 		QuotHTML( String &rString );
 
@@ -268,31 +268,31 @@ public:
     static void         QuotHTML( String &rString );
 
     /// UnQuot the XML characters and restore \n \t
-    static void         UnQuotHTML  ( String &rString );  
+    static void         UnQuotHTML  ( String &rString );
 
-    /// Return the numeric iso language code 
+    /// Return the numeric iso language code
     //sal_uInt16		        GetLangByIsoLang( const ByteString &rIsoLang );
-    
+
     /// Return the alpha strings representation
     ByteString	        GetIsoLangByIndex( sal_uInt16 nIndex );
-    
-    static XMLUtil&     Instance(); 
+
+    static XMLUtil&     Instance();
     ~XMLUtil();
 
     void         dump();
 
 private:
-    /// Mapping iso alpha string code <-> iso numeric code 
+    /// Mapping iso alpha string code <-> iso numeric code
     HashMap      lMap;
 
-    /// Mapping iso numeric code      <-> iso alpha string code 	
+    /// Mapping iso numeric code      <-> iso alpha string code
     ByteString	 isoArray[MAX_LANGUAGES];
 
     static void UnQuotData( String &rString );
     static void UnQuotTags( String &rString );
 
-	XMLUtil();				
-	XMLUtil(const XMLUtil&);	
+	XMLUtil();
+	XMLUtil(const XMLUtil&);
 
 };
 
@@ -314,30 +314,30 @@ private:
 			     resourceType,
 			     languageId;
     int          nPos;
-    
+
 protected:
 	void Print(XMLNode *pCur, OUStringBuffer& buffer , bool rootelement);
 public:
 	/// create a element node
 	XMLElement(){}
-    XMLElement( 
+    XMLElement(
 		const String &rName, 	// the element name
 		XMLParentNode *Parent 	// parent node of this element
-	):			XMLParentNode( Parent ), 
-				sElementName( rName ), 
+	):			XMLParentNode( Parent ),
+				sElementName( rName ),
 				pAttributes( NULL ),
-				project(""), 
-				filename(""), 
-				id(""), 
-				sOldRef(""), 
-				resourceType(""), 
+				project(""),
+				filename(""),
+				id(""),
+				sOldRef(""),
+				resourceType(""),
 				languageId(""),
                 nPos(0)
    				{
 				}
 	~XMLElement();
     XMLElement(const XMLElement&);
-    
+
     XMLElement& operator=(const XMLElement& obj);
 	/// returns node type XML_NODE_ELEMENT
 	virtual sal_uInt16 GetNodeType();
@@ -354,10 +354,10 @@ public:
     void ChangeLanguageTag( const String &rValue );
 	// Return a ASCII String representation of this object
 	OString ToOString();
-	
+
 	// Return a Unicode String representation of this object
 	OUString ToOUString();
-	
+
 	bool	Equals(OUString refStr);
 
 	/// returns a attribute
@@ -370,10 +370,10 @@ public:
 	void SetResourceType    ( ByteString rt         ){ resourceType = rt;    }
 	void SetLanguageId      ( ByteString lid        ){ languageId = lid;     }
     void SetPos             ( int nPos_in           ){ nPos = nPos_in;       }
-    void SetOldRef          ( ByteString sOldRef_in ){ sOldRef = sOldRef_in; }    
+    void SetOldRef          ( ByteString sOldRef_in ){ sOldRef = sOldRef_in; }
 
     virtual int        GetPos()         { return nPos;         }
-    ByteString GetProject()     { return project;      } 
+    ByteString GetProject()     { return project;      }
 	ByteString GetFileName()    { return filename;     }
 	ByteString GetId()          { return id;           }
 	ByteString GetOldref()      { return sOldRef;      }
@@ -395,20 +395,20 @@ private:
 
 public:
 	/// create a data node
-	XMLData( 
+	XMLData(
 		const String &rData, 	// the initial data
-		XMLParentNode *Parent	// the parent node of this data, typically a element node 
-	) 
-				: XMLChildNode( Parent ), sData( rData ) , isNewCreated ( false ){}	
-	XMLData( 
+		XMLParentNode *Parent	// the parent node of this data, typically a element node
+	)
+				: XMLChildNode( Parent ), sData( rData ) , isNewCreated ( false ){}
+	XMLData(
 		const String &rData, 	// the initial data
-		XMLParentNode *Parent,	// the parent node of this data, typically a element node 
+		XMLParentNode *Parent,	// the parent node of this data, typically a element node
         bool newCreated
-    ) 
-				: XMLChildNode( Parent ), sData( rData ) , isNewCreated ( newCreated ){}	
-    
+    )
+				: XMLChildNode( Parent ), sData( rData ) , isNewCreated ( newCreated ){}
+
     XMLData(const XMLData& obj);
-    
+
     XMLData& operator=(const XMLData& obj);
 	virtual sal_uInt16 GetNodeType();
 
@@ -417,12 +417,12 @@ public:
 
     bool isNew() { return isNewCreated; }
     /// adds new character data to the existing one
-	void AddData( 
+	void AddData(
 		const String &rData	// the new data
-	); 
-	
-    
-    
+	);
+
+
+
 };
 
 //-------------------------------------------------------------------------
@@ -445,9 +445,9 @@ public:
 	virtual sal_uInt16 GetNodeType();
 
     XMLComment( const XMLComment& obj );
-    
+
     XMLComment& operator=(const XMLComment& obj);
-	
+
     /// returns the comment
 	const String &GetComment()  { return sComment; }
 };
@@ -472,7 +472,7 @@ public:
     XMLDefault(const XMLDefault& obj);
 
     XMLDefault& operator=(const XMLDefault& obj);
-    
+
     /// returns node type XML_NODE_TYPE_COMMENT
 	virtual sal_uInt16 GetNodeType();
 
@@ -495,7 +495,7 @@ struct XMLError {
 
 /** validating xml parser, creates a document tree with xml nodes
  */
- 
+
 
 class SimpleXMLParser
 {
@@ -506,21 +506,21 @@ private:
 	XMLFile *pXMLFile;
 	XMLParentNode *pCurNode;
 	XMLData *pCurData;
- 
-	
+
+
     static void StartElementHandler( void *userData, const XML_Char *name, const XML_Char **atts );
 	static void EndElementHandler( void *userData, const XML_Char *name );
 	static void CharacterDataHandler( void *userData, const XML_Char *s, int len );
 	static void CommentHandler( void *userData, const XML_Char *data );
 	static void DefaultHandler( void *userData, const XML_Char *s, int len );
-    
-    
+
+
 	void StartElement( const XML_Char *name, const XML_Char **atts );
 	void EndElement( const XML_Char *name );
 	void CharacterData( const XML_Char *s, int len );
 	void Comment( const XML_Char *data );
 	void Default( const XML_Char *s, int len );
-	
+
 
 public:
 	/// creates a new parser
@@ -528,14 +528,14 @@ public:
 	~SimpleXMLParser();
 
 	/// parse a file, returns NULL on criticall errors
-	XMLFile *Execute( 
+	XMLFile *Execute(
         const String &rFullFileName,
         const String &rFileName,	// the file name
         XMLFile *pXMLFileIn         // the XMLFile
 	);
 
 	/// parse a memory stream, returns NULL on criticall errors
-	XMLFile *Execute( 
+	XMLFile *Execute(
 		SvMemoryStream *pStream	// the stream
 	);
 

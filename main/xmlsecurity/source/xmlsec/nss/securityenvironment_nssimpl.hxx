@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -66,12 +66,12 @@ class SecurityEnvironment_NssImpl : public ::cppu::WeakImplHelper4<
 	::com::sun::star::lang::XUnoTunnel >
 {
 private :
-		
+
     std::list< PK11SlotInfo* > m_Slots;
     typedef std::list< PK11SlotInfo* >::const_iterator CIT_SLOTS;
 
     osl::Mutex m_mutex;
-    
+
 		CERTCertDBHandle*					m_pHandler ;
 		std::list< PK11SymKey* >			m_tSymKeyList ;
 		std::list< SECKEYPublicKey* >		m_tPubKeyList ;
@@ -121,7 +121,7 @@ private :
 		virtual ::rtl::OUString SAL_CALL getSecurityEnvironmentInformation(  ) throw (::com::sun::star::uno::RuntimeException);
 
 		//Methods from XUnoTunnel
-		virtual sal_Int64 SAL_CALL getSomething( const ::com::sun::star::uno::Sequence< sal_Int8 >& aIdentifier ) 
+		virtual sal_Int64 SAL_CALL getSomething( const ::com::sun::star::uno::Sequence< sal_Int8 >& aIdentifier )
 			throw (::com::sun::star::uno::RuntimeException);
 
 		static const ::com::sun::star::uno::Sequence< sal_Int8 >& getUnoTunnelId() ;

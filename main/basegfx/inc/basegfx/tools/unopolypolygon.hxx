@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -35,10 +35,10 @@
 
 
 namespace basegfx
-{ 
+{
 namespace unotools
 {
-    typedef ::cppu::WeakComponentImplHelper3< 
+    typedef ::cppu::WeakComponentImplHelper3<
        	  ::com::sun::star::rendering::XLinePolyPolygon2D,
           ::com::sun::star::rendering::XBezierPolyPolygon2D,
           ::com::sun::star::lang::XServiceInfo > UnoPolyPolygonBase;
@@ -85,9 +85,9 @@ namespace unotools
                 throw ::com::sun::star::lang::IndexOutOfBoundsException();
         }
 
-        B2DPolyPolygon getSubsetPolyPolygon( sal_Int32 nPolygonIndex, 
-                                             sal_Int32 nNumberOfPolygons, 
-                                             sal_Int32 nPointIndex, 
+        B2DPolyPolygon getSubsetPolyPolygon( sal_Int32 nPolygonIndex,
+                                             sal_Int32 nNumberOfPolygons,
+                                             sal_Int32 nPointIndex,
                                              sal_Int32 nNumberOfPoints ) const;
 
         /// Get cow copy of internal polygon. not thread-safe outside this object.

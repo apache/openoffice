@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -126,8 +126,8 @@ namespace svt
 
         // #i104867#
         // Provides a graphic version number for the fetchable Graphic during this object's lifetime. Internally,
-        // that number is incremented at each change of the Graphic. This mechanism is needed to identify if a 
-        // remembered Graphic (e.g. primitives) has changed compared to the current one, but without actively 
+        // that number is incremented at each change of the Graphic. This mechanism is needed to identify if a
+        // remembered Graphic (e.g. primitives) has changed compared to the current one, but without actively
         // fetching the Graphic what would be too expensive e.g. for charts
         sal_uInt32 getGraphicVersion() const;
         void            SetDefaultSizeForChart( const Size& rSizeIn_100TH_MM );//#i103460# charts do not necessarily have an own size within ODF files, in this case they need to use the size settings from the surrounding frame, which is made available with this method

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -65,7 +65,7 @@ public:
 	 Beschreibung: fuer ComboBoxen
  --------------------------------------------------------------------*/
 
-typedef sal_uInt16 SwComboBoxStyle; 
+typedef sal_uInt16 SwComboBoxStyle;
 namespace nsSwComboBoxStyle
 {
 	const SwComboBoxStyle CBS_UPPER 		= 0x01;
@@ -100,8 +100,8 @@ public:
 	virtual void 			KeyInput( const KeyEvent& rKEvt );
 
     void                    InsertEntry(const SwBoxEntry&);
-    sal_uInt16                  InsertEntry( const XubString& rStr, sal_uInt16 = 0) 
-                            {        InsertEntry( SwBoxEntry( rStr ) ); return 0;    }    
+    sal_uInt16                  InsertEntry( const XubString& rStr, sal_uInt16 = 0)
+                            {        InsertEntry( SwBoxEntry( rStr ) ); return 0;    }
 
 	void					RemoveEntry(sal_uInt16 nPos);
 

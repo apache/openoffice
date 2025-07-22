@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -101,7 +101,7 @@ class TextualDisplay
     private void showContextInfo (XAccessibleContext xContext, String sIndentation)
     {
         // Show the description.
-        msTextContent += sIndentation + "Description: " 
+        msTextContent += sIndentation + "Description: "
             + xContext.getAccessibleDescription() + "\n";
 
         showStates (xContext, sIndentation);
@@ -109,7 +109,7 @@ class TextualDisplay
 
 
 
-        
+
     /** Show a list of all of the given object's states.  Use the
         NameConverter class to transform the numerical state ids into human
         readable names.
@@ -136,7 +136,7 @@ class TextualDisplay
 
 
 
-    
+
     /** When the given object supports the XAccessibleComponent interface then
         show its size and location on the screen.
     */
@@ -144,17 +144,17 @@ class TextualDisplay
     {
         // Try to cast the given accessible context to the
         // XAccessibleComponent interface.
-        XAccessibleComponent xComponent = 
+        XAccessibleComponent xComponent =
             (XAccessibleComponent)UnoRuntime.queryInterface(
                 XAccessibleComponent.class, xContext);
         if (xComponent != null)
         {
             Point aLocation = xComponent.getLocationOnScreen();
-            msTextContent += sIndentation + "Position   : " 
+            msTextContent += sIndentation + "Position   : "
                 + aLocation.X + ", " + aLocation.Y + "\n";
-                
+
             Size aSize = xComponent.getSize();
-            msTextContent += sIndentation + "Size       : " 
+            msTextContent += sIndentation + "Size       : "
                 + aSize.Width + ", " + aSize.Height + "\n";
         }
     }
@@ -197,7 +197,7 @@ class TextualDisplay
             XAccessibleContext xParentContext = (XAccessibleContext)aPathToRoot.get(i);
             String sParentName = xParentContext.getAccessibleName();
             if (sParentName.length() == 0)
-                sParentName = "<unnamed> / Role " 
+                sParentName = "<unnamed> / Role "
                     + NameProvider.getRoleName(xParentContext.getAccessibleRole());
             msTextContent += sIndentation + sParentName + "\n";
             sIndentation += msIndentation;

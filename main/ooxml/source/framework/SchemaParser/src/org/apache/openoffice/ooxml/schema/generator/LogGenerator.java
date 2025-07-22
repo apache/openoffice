@@ -48,13 +48,13 @@ public class LogGenerator
     		final Iterable<Schema> aTopLevelSchemas)
     {
         final long nStartTime = System.currentTimeMillis();
-        
+
         try
         {
             final LogGenerator aGenerator = new LogGenerator(
                 new PrintStream(aOutputFile),
                 aSchemaBase);
-            
+
             aGenerator.WriteNamespaces(aSchemaBase);
             aGenerator.WriteTopLevelElements(aTopLevelSchemas);
             aGenerator.WriteComplexTypes(aSchemaBase);
@@ -66,7 +66,7 @@ public class LogGenerator
         catch (final FileNotFoundException aException)
         {
             aException.printStackTrace();
-        }        
+        }
 
         final long nEndTime = System.currentTimeMillis();
         System.out.printf("wrote log output to '%s' in %fs\n",
@@ -74,9 +74,9 @@ public class LogGenerator
             (nEndTime-nStartTime)/1000.0f);
     }
 
-    
-    
-    
+
+
+
     private LogGenerator (
         final PrintStream aOut,
         final SchemaBase aSchemaBase)
@@ -85,16 +85,16 @@ public class LogGenerator
         maOut = aOut;
     }
 
-    
-    
+
+
 
     private void WriteComment (final String sFormat, final Object ... aArgumentList)
     {
         maOut.printf("// "+sFormat+"\n", aArgumentList);
     }
-    
-    
-    
+
+
+
 
     private void WriteNamespaces (final SchemaBase aSchema)
     {
@@ -118,15 +118,15 @@ public class LogGenerator
         {
         	WriteComment(" Schema %s.", aSchema.GetShortName());
         	for (final Element aElement : aSchema.TopLevelElements.GetSorted())
-        		maOut.printf("    \"%s\" -> %s\n", 
+        		maOut.printf("    \"%s\" -> %s\n",
         				aElement.GetElementName().GetDisplayName(),
         				aElement.GetTypeName().GetDisplayName());
         }
     }
 
 
-    
-    
+
+
     private void WriteComplexTypes (final SchemaBase aSchema)
     {
         WriteComment(" %d Complex Types.", aSchema.ComplexTypes.GetCount());
@@ -135,10 +135,10 @@ public class LogGenerator
             WriteType("    ", aType, true);
         }
     }
-    
 
-    
-    
+
+
+
     private void WriteSimpleTypes (final SchemaBase aSchema)
     {
         WriteComment(" %d Simple Types.", aSchema.SimpleTypes.GetCount());
@@ -147,10 +147,10 @@ public class LogGenerator
             WriteType("    ", aType, true);
         }
     }
-    
-    
-    
-    
+
+
+
+
     private void WriteGroups (final SchemaBase aSchema)
     {
         WriteComment(" %d Groups.", aSchema.Groups.GetCount());
@@ -160,9 +160,9 @@ public class LogGenerator
         }
     }
 
-    
-    
-    
+
+
+
     private void WriteAttributeGroups (final SchemaBase aSchema)
     {
         WriteComment(" %d Attribute Groups.", aSchema.AttributeGroups.GetCount());
@@ -172,9 +172,9 @@ public class LogGenerator
         }
     }
 
-    
-    
-    
+
+
+
     private void WriteAttributes (final SchemaBase aSchema)
     {
         WriteComment(" %d Attributes.", aSchema.Attributes.GetCount());
@@ -184,20 +184,20 @@ public class LogGenerator
         }
     }
 
-    
-    
-    
+
+
+
     private void WriteType (
         final String sIndentation,
         final INode aType,
         final boolean bIsTopLevel)
     {
         maOut.printf("%s%s", sIndentation, aType.toString());
-        
+
         if (bIsTopLevel)
         {
             final Node aNode = (Node)aType;
-            maOut.printf(" defined at %s", 
+            maOut.printf(" defined at %s",
                 aNode.GetLocation());
         }
         if ( ! HasChild(aType))
@@ -215,7 +215,7 @@ public class LogGenerator
                     for (final INode aAttribute : ((ComplexType)aType).GetAttributes())
                         WriteAttribute(sIndentation+"    ", aAttribute);
                     break;
-                    
+
                 case SimpleTypeReference:
                     WriteType(
                     		sIndentation+"    ",
@@ -226,19 +226,19 @@ public class LogGenerator
                 default:
                     break;
             }
-            
-            
+
+
             // Write child types.
             for (final INode aChild : aType.GetChildren())
                 WriteType(sIndentation+"    ", aChild, false);
-            
+
             maOut.printf("%s}\n", sIndentation);
         }
     }
-    
 
-    
-    
+
+
+
     private void WriteAttribute (
         final String sIndentation,
         final INode aAttribute)
@@ -247,15 +247,15 @@ public class LogGenerator
         {
             case Attribute:
                 maOut.printf(
-                    "%sattribute %s of type %s\n", 
+                    "%sattribute %s of type %s\n",
                     sIndentation,
                     ((Attribute)aAttribute).GetName().GetDisplayName(),
                     ((Attribute)aAttribute).GetTypeName().GetDisplayName());
                 break;
-                
+
             case AttributeGroup:
                 maOut.printf(
-                    "%sattribute group %s {\n", 
+                    "%sattribute group %s {\n",
                     sIndentation,
                     ((AttributeGroup)aAttribute).GetName().GetDisplayName());
                 for (final INode aChildAttribute : ((AttributeGroup)aAttribute).GetChildren())
@@ -264,50 +264,50 @@ public class LogGenerator
                 break;
             case AttributeGroupReference:
                 maOut.printf(
-                    "%sreference to attribute group %s {\n", 
+                    "%sreference to attribute group %s {\n",
                     sIndentation,
                     ((AttributeGroupReference)aAttribute).GetReferencedName().GetDisplayName());
-                WriteAttribute(sIndentation+"    ", ((AttributeGroupReference)aAttribute).GetReferencedAttributeGroup(maSchemaBase)); 
+                WriteAttribute(sIndentation+"    ", ((AttributeGroupReference)aAttribute).GetReferencedAttributeGroup(maSchemaBase));
                 maOut.printf("%s}\n", sIndentation);
                 break;
-                
+
             case AttributeReference:
                 maOut.printf(
-                    "%sreference to attribute %s {\n", 
+                    "%sreference to attribute %s {\n",
                     sIndentation,
                     ((AttributeReference)aAttribute).GetReferencedName().GetDisplayName());
-                WriteAttribute(sIndentation+"    ", ((AttributeReference)aAttribute).GetReferencedAttribute(maSchemaBase)); 
+                WriteAttribute(sIndentation+"    ", ((AttributeReference)aAttribute).GetReferencedAttribute(maSchemaBase));
                 maOut.printf("%s}\n", sIndentation);
                 break;
             default:
                 throw new RuntimeException();
         }
     }
-    
-    
-    
-    
+
+
+
+
     private boolean HasChild (final INode aType)
     {
         if (aType.GetChildren().iterator().hasNext())
             return true;
-        
+
         switch (aType.GetNodeType())
         {
             case ComplexType:
                 return ((ComplexType)aType).GetAttributes().iterator().hasNext();
-                
+
             case SimpleTypeReference:
                 return true;
-                
+
             default:
                 return false;
         }
     }
-    
-    
-    
-    
+
+
+
+
     private final SchemaBase maSchemaBase;
     private final PrintStream maOut;
 }

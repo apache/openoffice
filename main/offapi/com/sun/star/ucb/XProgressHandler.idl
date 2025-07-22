@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -30,7 +30,7 @@
 
 //=============================================================================
 
-module com { module sun { module star { module ucb { 
+module com { module sun { module star { module ucb {
 
 //=============================================================================
 /** Handle a tasks notification that it has made some progress.
@@ -44,13 +44,13 @@ published interface XProgressHandler: com::sun::star::uno::XInterface
 
 		@param Status  An object representing the new activity.  There has to
 		be an agreement between caller and callee of methods
-		<member>XProgressHandler::push</member> and 
+		<member>XProgressHandler::push</member> and
         <member>XProgressHandler::update</member> as to which Status
 		arguments are meaningful.  For example, a <atom>string</atom> argument
 		to <member>XProgressHandler::push</member> should be used to transport
-        some status text that describes the progress being made (possibly 
+        some status text that describes the progress being made (possibly
         followed by one or more <member>XProgressHandler::update</member>s with
-        <atom>string</atom> arguments, if the appropriate status text changes 
+        <atom>string</atom> arguments, if the appropriate status text changes
         as progress is being made).
 	*/
 	void push([in] any Status);
@@ -60,7 +60,7 @@ published interface XProgressHandler: com::sun::star::uno::XInterface
 		progress.
 
 		@param Status  An object representing the progress made.  See the
-		documentation of <member>XProgressHandler::push</member> for more 
+		documentation of <member>XProgressHandler::push</member> for more
         information.
 	*/
 	void update([in] any Status);
@@ -74,6 +74,6 @@ published interface XProgressHandler: com::sun::star::uno::XInterface
 
 //=============================================================================
 
-}; }; }; }; 
+}; }; }; };
 
 #endif

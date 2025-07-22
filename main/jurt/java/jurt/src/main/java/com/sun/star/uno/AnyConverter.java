@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 package com.sun.star.uno;
@@ -54,7 +54,7 @@ public class AnyConverter
         }
         return t;
     }
-    
+
     /** checks if the any contains the idl type <code>void</code>.
         @param object the object to check
         @return true when the any is void, false otherwise
@@ -101,7 +101,7 @@ public class AnyConverter
      */
 	static public boolean isInt(Object object){
 		return containsType(TypeClass.LONG, object);
-	}		
+	}
 
     /** checks if the any contains a value of the idl type <code>hyper</code> (which maps to a java-long).
         @param object the object to check
@@ -125,7 +125,7 @@ public class AnyConverter
      */
 	static public boolean isDouble(Object object){
 		return containsType(TypeClass.DOUBLE, object);
-	}		
+	}
 
     /** checks if the any contains a value of the idl type <code>string</code>.
         @param object the object to check
@@ -134,7 +134,7 @@ public class AnyConverter
 	static public boolean isString(Object object){
 		return containsType(TypeClass.STRING, object);
 	}
-    
+
     /** checks if the any contains a value of the idl type <code>enum</code>.
         @param object the object to check
         @return true if the any contains an enum, false otherwise
@@ -150,7 +150,7 @@ public class AnyConverter
      */
 	static public boolean isType(Object object){
 		return containsType(TypeClass.TYPE, object);
-	}		
+	}
 
     /** checks if the any contains an interface, struct, exception, sequence or enum.
         If <em>object</em> is an any with an interface type, then true is also returned if
@@ -168,7 +168,7 @@ public class AnyConverter
                 TypeClass.SEQUENCE_value == tc ||
                 TypeClass.ENUM_value == tc);
 	}
-    
+
     /** checks if the any contains UNO idl sequence value (meaning a java array
         containing elements which are values of UNO idl types).
         @param object the object to check
@@ -210,16 +210,16 @@ public class AnyConverter
 		Byte ret= (Byte)convertSimple(TypeClass.BYTE, null, object);
 		return ret.byteValue();
 	}
-    
+
     /** converts a number object into a simple short and allows widening conversions.
         Allowed argument types are Byte, Short or Any containing these types.
         @param object the object to convert
         @throws com.sun.star.lang.IllegalArgumentException in case no short or byte is contained within object
         @return the short contained within the object
-     */        
+     */
 	static public short toShort(Object object) throws   com.sun.star.lang.IllegalArgumentException{
 		Short ret= (Short)convertSimple(TypeClass.SHORT, null, object);
-		return ret.shortValue();	
+		return ret.shortValue();
 	}
     /** converts a number object into an idl unsigned short and allows widening conversions.
         Allowed argument types are Anies containing idl unsigned short values.
@@ -227,7 +227,7 @@ public class AnyConverter
         @throws com.sun.star.lang.IllegalArgumentException
                 in case no idl unsigned short is contained within Any
         @return an (unsigned) short
-     */        
+     */
 	static public short toUnsignedShort(Object object)
         throws com.sun.star.lang.IllegalArgumentException
     {
@@ -240,7 +240,7 @@ public class AnyConverter
         @param object the object to convert
         @throws com.sun.star.lang.IllegalArgumentException in case no short, byte or int is contained within object.
         @return the int contained within the object
-     */        
+     */
 	static public int toInt(Object object) throws  com.sun.star.lang.IllegalArgumentException{
 		Integer ret= (Integer) convertSimple( TypeClass.LONG, null, object);
 		return ret.intValue();
@@ -251,7 +251,7 @@ public class AnyConverter
         @throws com.sun.star.lang.IllegalArgumentException
                 in case no idl unsigned short nor unsigned long is contained within Any
         @return an (unsigned) int
-     */        
+     */
 	static public int toUnsignedInt(Object object)
         throws  com.sun.star.lang.IllegalArgumentException
     {
@@ -265,7 +265,7 @@ public class AnyConverter
         @throws com.sun.star.lang.IllegalArgumentException in case no short, byte, int or long
                 is contained within object.
         @return the long contained within the object
-     */        
+     */
 	static public long toLong(Object object) throws   com.sun.star.lang.IllegalArgumentException{
 		Long ret= (Long) convertSimple( TypeClass.HYPER, null, object);
 		return ret.longValue();
@@ -278,7 +278,7 @@ public class AnyConverter
                 in case no idl unsigned short, nor unsigned long nor unsigned hyper
                 is contained within object.
         @return an (unsigned) long
-     */        
+     */
 	static public long toUnsignedLong(Object object)
         throws com.sun.star.lang.IllegalArgumentException
     {
@@ -292,7 +292,7 @@ public class AnyConverter
         @throws com.sun.star.lang.IllegalArgumentException in case no byte, short or float
                 is contained within object.
         @return the float contained within the object
-     */        
+     */
 	static public float toFloat(Object object) throws com.sun.star.lang.IllegalArgumentException{
 		Float ret= (Float) convertSimple( TypeClass.FLOAT,null, object);
 		return ret.floatValue();
@@ -304,36 +304,36 @@ public class AnyConverter
         @throws com.sun.star.lang.IllegalArgumentException in case no byte, short, int, float
                 or double is contained within object.
         @return the double contained within the object
-     */        
+     */
 	static public double toDouble(Object object) throws com.sun.star.lang.IllegalArgumentException {
 		Double ret= (Double) convertSimple( TypeClass.DOUBLE, null, object);
 		return ret.doubleValue();
 	}
-		
+
     /** converts a string or an any containing a string into a string.
         @param object the object to convert
         @throws com.sun.star.lang.IllegalArgumentException in case no string is contained within object.
         @return the string contained within the object
-     */        
+     */
 	static public String toString(Object object) throws com.sun.star.lang.IllegalArgumentException {
 		return (String) convertSimple( TypeClass.STRING, null, object);
 	}
-	
+
     /** converts a Type or an any containing a Type into a Type.
         @param object the object to convert
         @throws com.sun.star.lang.IllegalArgumentException in case no type is contained within object.
         @return the type contained within the object
-     */        
+     */
 	static public Type toType(Object object) throws com.sun.star.lang.IllegalArgumentException {
 		return (Type) convertSimple( TypeClass.TYPE, null, object);
 	}
-	
+
     /** converts a UNO object (struct, exception, sequence, enum or interface) or an Any containing
      *  these types into an UNO object of a specified destination type.
      *  For interfaces, the argument <em>object</em> is queried for the interface specified
      *  by the <em>type</em> argument. That query (UnoRuntime.queryInterface) might return null,
      *  if the interface is not implemented or a null-ref or a VOID any is given.
-     *  
+     *
      *  @param type type of the returned value
      *  @param object the object that is to be converted
      *  @return destination object
@@ -350,7 +350,7 @@ public class AnyConverter
      *  For interfaces, the argument <em>object</em> is queried for the interface specified
      *  by the <em>type</em> argument. That query (UnoRuntime.queryInterface) might return null,
      *  if the interface is not implemented or a null-ref or a VOID any is given.
-     *  
+     *
      *  @param clazz class of the returned value
      *  @param object the object that is to be converted
      *  @return destination object
@@ -363,16 +363,16 @@ public class AnyConverter
     {
         return (T) toObject( new Type( clazz ), object );
 	}
-    
+
     /** converts an array or an any containing an array into an array.
         @param object the object to convert
         @throws com.sun.star.lang.IllegalArgumentException in case no array is contained within object.
         @return the array contained within the object
-     */        
+     */
 	static public Object toArray( Object object) throws com.sun.star.lang.IllegalArgumentException {
 		return convertSimple( TypeClass.SEQUENCE, null, object);
 	}
-    
+
 	/**
 	   Examines the argument <em>object</em> if is correspond to the type in argument <em>what</em>.
 	   <em>object</em> is either matched directly against the type or if it is an any then the
@@ -381,9 +381,9 @@ public class AnyConverter
 	static private boolean containsType( TypeClass what, Object object){
         return (getType(object).getTypeClass().getValue() == what.getValue());
 	}
-    
+
     static private final Type m_XInterface_type = new Type( XInterface.class );
-    
+
 	static private Object convertSimple( TypeClass destTClass, Type destType, Object object_ )
 		throws com.sun.star.lang.IllegalArgumentException
     {
@@ -404,10 +404,10 @@ public class AnyConverter
             object = object_;
             type = (null == object ? m_XInterface_type : new Type( object.getClass() ));
         }
-        
+
         int tc = type.getTypeClass().getValue();
         int dest_tc = destTClass.getValue();
-        
+
         if (null == object)
         {
             // special for interfaces
@@ -445,7 +445,7 @@ public class AnyConverter
                 case TypeClass.UNSIGNED_SHORT_value:
                     return object;
                 }
-                break;                
+                break;
             case TypeClass.LONG_value:
                 switch (tc)
                 {

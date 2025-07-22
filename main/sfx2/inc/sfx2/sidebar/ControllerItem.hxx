@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 #ifndef SVX_SIDEBAR_CONTROLLER_ITEM_HXX
@@ -75,7 +75,7 @@ public:
         ItemUpdateReceiverInterface& rItemUpdateReceiver,
         const ::rtl::OUString& rsCommandName,
         const cssu::Reference<css::frame::XFrame>& rxFrame);
-    
+
     /** This is the simpler constructor variant that still exists for
         compatibility resons.  Note that GetLabel() and GetIcon() will
         return empty strings/images.
@@ -84,7 +84,7 @@ public:
         const sal_uInt16 nId,
         SfxBindings &rBindings,
         ItemUpdateReceiverInterface& rItemUpdateReceiver);
-    
+
     virtual ~ControllerItem (void);
 
     /** Returns </TRUE> when the slot/command has not been disabled.
@@ -97,7 +97,7 @@ public:
         callback with up-to-date data.
     */
     void RequestUpdate (void);
-    
+
     /** Return the label for the command.  It contains the keyboard
         accelerator when one exists.
     */
@@ -140,7 +140,7 @@ private:
     cssu::Reference<css::frame::XFrame> mxFrame;
     cssu::Reference<css::lang::XComponent> mxFrameActionListener;
     const ::rtl::OUString msCommandName;
-    
+
     void SetupCommandURL (const sal_Char* sCommandName);
 };
 

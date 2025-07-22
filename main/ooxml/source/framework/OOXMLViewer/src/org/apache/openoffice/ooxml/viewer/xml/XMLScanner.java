@@ -49,15 +49,15 @@ public class XMLScanner
         mbIsInsideTag = false;
         maTextBuffer = new int[1024];
     }
-    
-    
-    
-    
+
+
+
+
     public Token Next ()
     {
         while (maTokens.isEmpty())
             ProvideToken();
-        
+
         final Token aToken = maTokens.get(mnTokensReadIndex);
         ++mnTokensReadIndex;
         if (mnTokensReadIndex >= maTokens.size())
@@ -67,21 +67,21 @@ public class XMLScanner
         }
         return aToken;
     }
-    
-    
-    
-    
+
+
+
+
     public Token Peek()
     {
         while (maTokens.isEmpty())
             ProvideToken();
-        
+
         return maTokens.get(mnTokensReadIndex);
     }
 
-    
-    
-    
+
+
+
     private void ProvideToken ()
     {
         final int nC = PeekCharacter();
@@ -97,7 +97,7 @@ public class XMLScanner
                 case Character.DIRECTIONALITY_LEFT_TO_RIGHT_OVERRIDE:
                     ScanWhitespace();
                     break;
-                    
+
                 default:
                     switch(nC)
                     {
@@ -137,7 +137,7 @@ public class XMLScanner
                 case Character.DIRECTIONALITY_LEFT_TO_RIGHT_OVERRIDE:
                     ScanWhitespace();
                     break;
-                        
+
                 default:
                     if (nC == '<')
                     {
@@ -153,9 +153,9 @@ public class XMLScanner
         }
     }
 
-    
-    
-    
+
+
+
     Token NextNonWhitespaceToken ()
     {
         while(true)
@@ -165,10 +165,10 @@ public class XMLScanner
                 return aToken;
         }
     }
-    
-    
-    
-    
+
+
+
+
     private TokenType ScanSymbol ()
     {
         final int nStartOffset = mnOffset;
@@ -178,7 +178,7 @@ public class XMLScanner
             case -1:
                 AddToken(TokenType.EOF, "", nStartOffset);
                 return TokenType.EOF;
-                
+
             case '<':
                 GetNextCharacter();
                 switch(PeekCharacter())
@@ -187,7 +187,7 @@ public class XMLScanner
                         GetNextCharacter();
                         AddToken(TokenType.END_TAG_START, "</", nStartOffset);
                         break;
-                        
+
                     case '?':
                         GetNextCharacter();
                         AddToken(TokenType.INTRO_START, "<?", nStartOffset);
@@ -201,32 +201,32 @@ public class XMLScanner
                             throw new RuntimeException("expected '-' after '<!-'");
                         AddToken(TokenType.COMMENT_START, "<!--", nStartOffset);
                         break;
-                        
+
                     default:
                         AddToken(TokenType.TAG_START, "<", nStartOffset);
                         break;
                 }
                 return maTokens.lastElement().Type;
-             
+
             case '>':
                 GetNextCharacter();
                 AddToken(TokenType.TAG_END, ">", nStartOffset);
                 return TokenType.TAG_END;
-                
+
             case '/':
                 GetNextCharacter();
                 if (GetNextCharacter() != '>')
                     throw new RuntimeException("expected '>' after '/'");
                 AddToken(TokenType.ELEMENT_END, "/>", nStartOffset);
                 return TokenType.ELEMENT_END;
-                
+
             case '?':
                 GetNextCharacter();
                 if (GetNextCharacter() != '>')
                     throw new RuntimeException("expected '>' after '?'");
                 AddToken(TokenType.INTRO_END, "?>", nStartOffset);
                 return TokenType.INTRO_END;
-                
+
             case '-':
                 GetNextCharacter();
                 if (GetNextCharacter() != '-')
@@ -253,15 +253,15 @@ public class XMLScanner
                             Character.getType(PeekCharacter())));
         }
     }
-    
 
-    
-    
+
+
+
     private boolean ScanIdentifier ()
     {
         final int nStartOffset = mnOffset;
         int nBufferWriteIndex = 0;
-        
+
         while (true)
         {
             switch(Character.getType(PeekCharacter()))
@@ -275,11 +275,11 @@ public class XMLScanner
                                         PeekCharacter(),
                                         Character.getType(PeekCharacter())));
                     AddToken(
-                        TokenType.IDENTIFIER, 
-                        new String(maTextBuffer, 0, nBufferWriteIndex), 
+                        TokenType.IDENTIFIER,
+                        new String(maTextBuffer, 0, nBufferWriteIndex),
                         nStartOffset);
                     return true;
-                    
+
                 case Character.LOWERCASE_LETTER:
                 case Character.UPPERCASE_LETTER:
                 case Character.DECIMAL_DIGIT_NUMBER:
@@ -291,15 +291,15 @@ public class XMLScanner
             }
         }
     }
-    
-    
-    
-    
+
+
+
+
     private void ScanWhitespace ()
     {
         final StringBuffer aBuffer = new StringBuffer();
         final int nStartOffset = mnOffset;
-        
+
         while (true)
         {
             switch(Character.getType(PeekCharacter()))
@@ -313,7 +313,7 @@ public class XMLScanner
                     AddToken(TokenType.WHITESPACE, aBuffer.toString(), nStartOffset);
                     AddToken(TokenType.EOF, "", nStartOffset);
                     return;
-                    
+
                 case Character.DIRECTIONALITY_WHITESPACE:
                 case Character.DIRECTIONALITY_LEFT_TO_RIGHT_OVERRIDE:
                     aBuffer.append((char)GetNextCharacter());
@@ -321,10 +321,10 @@ public class XMLScanner
             }
         }
     }
-    
-    
-    
-    
+
+
+
+
     private void ScanQuotedValue ()
     {
         if (PeekCharacter() == '"')
@@ -342,14 +342,14 @@ public class XMLScanner
             }
 
             maTextBuffer[nBufferWriteIndex++] = GetNextCharacter();
-            
+
             AddToken(TokenType.ATTRIBUTE_VALUE, new String(maTextBuffer, 0, nBufferWriteIndex), nStartOffset);
         }
     }
-    
-    
-    
-    
+
+
+
+
     private void ScanText ()
     {
         final int nStartOffset = mnOffset;
@@ -365,10 +365,10 @@ public class XMLScanner
 
         AddToken(TokenType.TEXT, new String(maTextBuffer, 0, nBufferWriteIndex), nStartOffset);
     }
-    
-    
-    
-    
+
+
+
+
     private int GetNextCharacter ()
     {
         final int nC;
@@ -392,10 +392,10 @@ public class XMLScanner
         ++mnOffset;
         return nC;
     }
-    
-    
-    
-    
+
+
+
+
     private int PeekCharacter ()
     {
         if (mnNextCharacter == 0)
@@ -412,10 +412,10 @@ public class XMLScanner
         }
         return mnNextCharacter;
     }
-    
-    
-    
-    
+
+
+
+
     private void AddToken (
             final TokenType eType,
             final String sText,
@@ -424,10 +424,10 @@ public class XMLScanner
         if (eType != TokenType.WHITESPACE)
             maTokens.add(new Token(eType, sText, nOffset));
     }
-    
-    
-    
-    
+
+
+
+
     private final Reader maIn;
     private int mnNextCharacter;
     private Vector<Token> maTokens;

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 package testlib.uno;
 import static org.junit.Assert.*;
@@ -53,23 +53,23 @@ import com.sun.star.awt.Size;
 //import com.sun.star.uno.AnyConverter;
 
 public class GraphicUtil {
-	
+
 	public static String getUniqueIDbyXGraphic(UnoApp unoApp, XGraphic xgraphic) throws Exception{
 		Object graphicObj = unoApp.getServiceFactory().createInstance("com.sun.star.graphic.GraphicObject");
 		XGraphicObject xgraphicObj = (XGraphicObject)UnoRuntime.queryInterface(XGraphicObject.class, graphicObj);
 		xgraphicObj.setGraphic(xgraphic);
-		
+
 		return xgraphicObj.getUniqueID();
 	}
-	
+
 //	String sUrl = "file:///F:/work/36.gif";
-	public static String getUniqueIDOfGraphicFile(UnoApp unoApp, String sUrl) throws Exception{		
-		XGraphic xgraphic = getXGraphicOfGraphicFile(unoApp,sUrl);		
+	public static String getUniqueIDOfGraphicFile(UnoApp unoApp, String sUrl) throws Exception{
+		XGraphic xgraphic = getXGraphicOfGraphicFile(unoApp,sUrl);
 		String uniqueID = getUniqueIDbyXGraphic(unoApp, xgraphic);
-		
+
 		return uniqueID;
 	}
-	
+
 	public static XGraphic getXGraphicOfGraphicFile(UnoApp unoApp, String sUrl) throws Exception
 	{
 		Object graphicObj = unoApp.getServiceFactory().createInstance("com.sun.star.graphic.GraphicProvider");
@@ -78,9 +78,9 @@ public class GraphicUtil {
 		sourceProps[0]       = new PropertyValue();
 		sourceProps[0].Name  = "URL";
 		sourceProps[0].Value = sUrl;
-		return xgraphicProvider.queryGraphic(sourceProps);		
+		return xgraphicProvider.queryGraphic(sourceProps);
 	}
-	
+
 	public static Size getSize100thMMOfGraphicFile(UnoApp unoApp, String sUrl) throws Exception
 	{
 		Object graphicObj = unoApp.getServiceFactory().createInstance("com.sun.star.graphic.GraphicProvider");
@@ -89,11 +89,11 @@ public class GraphicUtil {
 		sourceProps[0]       = new PropertyValue();
 		sourceProps[0].Name  = "URL";
 		sourceProps[0].Value = sUrl;
-		XPropertySet xGraphicPro = xgraphicProvider.queryGraphicDescriptor(sourceProps);		
+		XPropertySet xGraphicPro = xgraphicProvider.queryGraphicDescriptor(sourceProps);
 		Size size = (Size)xGraphicPro.getPropertyValue("Size100thMM");
 		return size;
 	}
-	
+
 	public static Size getSizePixelOfGraphicFile(UnoApp unoApp, String sUrl) throws Exception
 	{
 		Object graphicObj = unoApp.getServiceFactory().createInstance("com.sun.star.graphic.GraphicProvider");
@@ -106,8 +106,8 @@ public class GraphicUtil {
 		Size size = (Size)xGraphicPro.getPropertyValue("SizePixel");
 		return size;
 	}
-	
-	
+
+
 	//GraphicObjectShape
 	public static Object[] getGraphicsOfPage(XDrawPage xDrawPage) throws Exception {
 		XShapes m_xdrawShapes = (XShapes) UnoRuntime.queryInterface(XShapes.class, xDrawPage);
@@ -117,20 +117,20 @@ public class GraphicUtil {
 		for(int i=0;i<count; i++)
 		{
 			Object shape = m_xdrawShapes.getByIndex(i);
-			XShape xshape = (XShape)UnoRuntime.queryInterface(XShape.class, shape);		
+			XShape xshape = (XShape)UnoRuntime.queryInterface(XShape.class, shape);
 			String type = xshape.getShapeType();
 			if(type.equals("com.sun.star.drawing.GraphicObjectShape"))
 			{
 				temp[graphicNum] = shape;
-				graphicNum++;				
+				graphicNum++;
 			}
 		}
-		
+
 		Object[] graphics = new Object[graphicNum];
 		System.arraycopy(temp, 0, graphics, 0, graphicNum);
 		return graphics;
 	}
-	
+
 	/*Insert a graphic into a Impress
 	 * component: the Impress document
 	 * toPage: the page that the graphic will be inserted to
@@ -139,21 +139,21 @@ public class GraphicUtil {
 	 * position: position of the graphic to be inserted
 	 * */
 	public static void insertGraphic(XComponent component, XDrawPage toPage, String graphicURL, Size size, Point position) throws Exception
-	{		
-		XMultiServiceFactory xDrawFactory = 
+	{
+		XMultiServiceFactory xDrawFactory =
 	            (XMultiServiceFactory)UnoRuntime.queryInterface(
 	                XMultiServiceFactory.class, component);
 
 	    Object oGraphic = xDrawFactory.createInstance("com.sun.star.drawing.GraphicObjectShape");
 	    XPropertySet xGraphicPro = (XPropertySet)UnoRuntime.queryInterface(XPropertySet.class, oGraphic);
 	    xGraphicPro.setPropertyValue("GraphicURL", graphicURL);
-	    
+
 	    XShape xDrawShape = (XShape)UnoRuntime.queryInterface(XShape.class, oGraphic);
-	    
-	    xDrawShape.setSize(size); 
+
+	    xDrawShape.setSize(size);
 	    xDrawShape.setPosition(position);
 
 	    toPage.add(xDrawShape);
 	}
-	
+
 }

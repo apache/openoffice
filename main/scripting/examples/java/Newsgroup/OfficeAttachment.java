@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 //import com.sun.star.frame.XComponentLoader;
@@ -51,7 +51,7 @@ public class OfficeAttachment
 		status = sw;
 		isHtmlDoc = html;
 		isOfficeDoc = office;
-		
+
 		templocationSystem = templocationURL = System.getProperty( "user.home" );
 		if( System.getProperty( "os.name" ).indexOf( "Windows" ) != -1 )
 		{
@@ -64,7 +64,7 @@ public class OfficeAttachment
 				//JOptionPane.showMessageDialog( null, "Temp Location URL is: " + templocationURL + "\nfirstPart is: " + firstPart + "\nlastPart is: " + lastPart );
 			}
 		}
-		
+
 		try
 		{
 			statusLine = "Querying Office for current document";
@@ -94,13 +94,13 @@ public class OfficeAttachment
 			attachmentName = attachmentName.substring( 0, dot );
 		}
 	}
-	
-	
+
+
 	public boolean createTempDocs()
 	{
 		String filenameURL = "file:///" + templocationURL +  "/" + attachmentName;
 		//String filenameSystem = templocationSystem + System.getProperty( "file.separator" ) + attachmentName;
-		//JOptionPane.showMessageDialog( null, "Filename URL " + filenameURL ); 
+		//JOptionPane.showMessageDialog( null, "Filename URL " + filenameURL );
 		try
 		{
 			if( isHtmlDoc )
@@ -125,9 +125,9 @@ public class OfficeAttachment
 				String file = "";
 				for(int i=0; i < homefiles.length; i++ )
 				{
-					if( homefiles[i].getName().equals( attachmentName + ".html" ) ) 
+					if( homefiles[i].getName().equals( attachmentName + ".html" ) )
 					{
-						//htmlFile = new File( homefiles[i].getAbsolutePath() );						
+						//htmlFile = new File( homefiles[i].getAbsolutePath() );
 						//JOptionPane.showMessageDialog( null, "Found HTML" );
 						file = homefiles[i].getAbsolutePath();
 					}
@@ -136,7 +136,7 @@ public class OfficeAttachment
 				//htmlFile = new File( filename + ".html" );
 				//htmlFile = new File( storedDoc.getLocation() );
 			}
-		
+
 			if( isOfficeDoc )
 			{
 				//JOptionPane.showMessageDialog( null, "Saving doc in .sxw format" );
@@ -153,16 +153,16 @@ public class OfficeAttachment
 			        storedDoc.storeAsURL( filenameURL + ".sxw", propertyvalue_sxw);
 
 				File homedir = new File( templocationSystem );
-				
+
 				//JOptionPane.showMessageDialog( null, "homedir (Java File): " + homedir.getPath() );
 
                                 File homefiles[] = homedir.listFiles();
 				String file = "";
                                 for(int i=0; i < homefiles.length; i++ )
                                 {
-                                        if( homefiles[i].getName().equals( attachmentName + ".sxw" ) ) 
+                                        if( homefiles[i].getName().equals( attachmentName + ".sxw" ) )
                                         {
-                                                //officeFile = new File( homefiles[i].getAbsolutePath() );     
+                                                //officeFile = new File( homefiles[i].getAbsolutePath() );
 						//JOptionPane.showMessageDialog( null, "Found .sxw" );
 						file = homefiles[i].getAbsolutePath();
                                         }
@@ -171,13 +171,13 @@ public class OfficeAttachment
 				//officeFile = new File( filename + ".sxw" );
 				//officeFile = new File (storedDoc.getLocation() );
 			}
-			
+
 			//status.setStatus( 10, "Attachments successfully created" );
 
 		}
 		catch( SecurityException se )
 		{
-			status.setStatus( 4, "Error: " + statusLine );			
+			status.setStatus( 4, "Error: " + statusLine );
 			System.out.println( "Security error while saving temporary Document(s). Check file permissions in home directory." );
 			se.printStackTrace();
 			htmlFile = null;
@@ -196,7 +196,7 @@ public class OfficeAttachment
 		return true;
 	}
 
-	
+
 	public boolean removeTempDocs()
 	{
 		/*
@@ -205,19 +205,19 @@ public class OfficeAttachment
 			System.out.println("Error: Document(s) have not been saved." );
 		}
 		*/
-	
+
 		statusLine = "Removing temp docs";
 		status.setStatus( 13, statusLine );
-	
+
 		try
-		{	
+		{
 			if( isOfficeDoc && isHtmlDoc )
 			{
 				//System.out.println( "Removing: " + htmlFile.getPath() + " " + officeFile.getPath() );
 				//System.out.println( "htmlfile " + htmlFile.exists() + " officeFile " + officeFile.exists() );
 				//JOptionPane.showMessageDialog( null, "Removing: " + htmlFile.getPath() + " " + officeFile.getPath() );
 				//JOptionPane.showMessageDialog( null, "htmlfile " + htmlFile.exists() + " officeFile " + officeFile.exists() );
-				htmlFile.delete();	
+				htmlFile.delete();
 				officeFile.delete();
 				//JOptionPane.showMessageDialog( null, "htmlfile " + htmlFile.exists() + " officeFile " + officeFile.exists() );
 			}
@@ -249,10 +249,10 @@ public class OfficeAttachment
 	public void cleanUpOnError()
 	{
 		try
-		{	
+		{
 			if( isOfficeDoc && isHtmlDoc )
 			{
-				htmlFile.delete();	
+				htmlFile.delete();
 				officeFile.delete();
 			}
 			else
@@ -271,10 +271,10 @@ public class OfficeAttachment
 		{
 			System.out.println( "Security Error while deleting temporary Document(s). Check file permissions in home directory." );
 			se.printStackTrace();
-		}	
+		}
 	}
-	
-	
+
+
 	public File[] getAttachments()
 	{
 		/*
@@ -288,7 +288,7 @@ public class OfficeAttachment
 
 		statusLine = "Retrieving temp docs";
 		status.setStatus( 8, statusLine );
-		
+
 		File attachments[] = null;
 		if( isOfficeDoc && isHtmlDoc )
 		{
@@ -309,7 +309,7 @@ public class OfficeAttachment
 				attachments[0] = htmlFile;
 			}
 		}
-		
+
 		return attachments;
 	}
 

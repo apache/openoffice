@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -54,7 +54,7 @@ public class PlayerWindow implements java.awt.event.KeyListener,
                          java.lang.Object[] aArgs, javax.media.Player aPlayer )
     {
         maFactory = aFactory;
-    
+
         try
         {
             if( aArgs.length > 1 )
@@ -98,7 +98,7 @@ public class PlayerWindow implements java.awt.event.KeyListener,
 
                 if( maFrame.getJavaFrame() != null )
                     maFrame.getJavaFrame().add( aPanel );
-                
+
                 LayoutComponents();
             }
         }
@@ -117,33 +117,33 @@ public class PlayerWindow implements java.awt.event.KeyListener,
             int             nW = maFrame.getJavaFrame().getWidth();
             int             nH = maFrame.getJavaFrame().getHeight();
             int             nControlH = 0;
-    
+
             aPanel.setBounds( 0, 0, nW, nH );
-    
+
             if( mbShowControls )
             {
                 java.awt.Component aControlComponent = aPanel.getComponent( 0 );
-    
+
                 if( aControlComponent != null )
                 {
                     java.awt.Dimension aControlDimension = aControlComponent.getPreferredSize();
-    
+
                     nControlH = Math.min( nH, aControlDimension.height );
                     aControlComponent.setBounds( 0, nH - nControlH, nW, nControlH );
                 }
             }
-    
+
             if( com.sun.star.media.ZoomLevel.NOT_AVAILABLE != meZoomLevel )
             {
                 java.awt.Component aVisualComponent = aPanel.getComponent( mbShowControls ? 1 : 0 );
-    
+
                 if( aVisualComponent != null )
                 {
                     java.awt.Dimension  aPrefDim = aVisualComponent.getPreferredSize();
                     int                 nVideoW = nW, nVideoH = ( nH - nControlH );
                     int                 nX = 0, nY = 0, nWidth = 0, nHeight = 0;
                     boolean             bDone = false, bZoom = false;
-    
+
                     if( com.sun.star.media.ZoomLevel.ORIGINAL == meZoomLevel )
                     {
                         bZoom = true;
@@ -178,7 +178,7 @@ public class PlayerWindow implements java.awt.event.KeyListener,
                         nHeight = nVideoH;
                         bDone = true;
                     }
-    
+
                     if( bZoom )
                     {
                         if( ( aPrefDim.width <= nVideoW ) && ( aPrefDim.height <= nVideoH ) )
@@ -190,18 +190,18 @@ public class PlayerWindow implements java.awt.event.KeyListener,
                             bDone = true;
                         }
                     }
-    
+
                     if( !bDone )
                     {
                         if( aPrefDim.width > 0 && aPrefDim.height > 0 && nVideoW > 0 && nVideoH > 0 )
                         {
                             double fPrefWH = (double) aPrefDim.width / aPrefDim.height;
-    
+
                             if( fPrefWH < ( (double) nVideoW / nVideoH ) )
                                 nVideoW = (int)( nVideoH * fPrefWH );
                             else
                                 nVideoH = (int)( nVideoW / fPrefWH );
-    
+
                             nX = ( nW - nVideoW ) >> 1;
                             nY = ( nH - nControlH - nVideoH ) >> 1;
                             nWidth = nVideoW;
@@ -210,7 +210,7 @@ public class PlayerWindow implements java.awt.event.KeyListener,
                         else
                             nX = nY = nWidth = nHeight = 0;
                     }
-    
+
                     aVisualComponent.setBounds( nX, nY, nWidth, nHeight );
                     aVisualComponent.requestFocus();
                 }
@@ -375,17 +375,17 @@ public class PlayerWindow implements java.awt.event.KeyListener,
         if( maFrame.getJavaFrame() != null )
         {
             int nCursor;
-        
+
             switch( nPointerType )
             {
                 case( com.sun.star.awt.SystemPointer.CROSS ): nCursor = java.awt.Cursor.CROSSHAIR_CURSOR; break;
                 case( com.sun.star.awt.SystemPointer.HAND ): nCursor = java.awt.Cursor.HAND_CURSOR; break;
                 case( com.sun.star.awt.SystemPointer.MOVE ): nCursor = java.awt.Cursor.MOVE_CURSOR; break;
                 case( com.sun.star.awt.SystemPointer.WAIT ): nCursor = java.awt.Cursor.WAIT_CURSOR; break;
-                
+
                 default: nCursor = java.awt.Cursor.DEFAULT_CURSOR; break;
             }
-            
+
             maFrame.getJavaFrame().setCursor( java.awt.Cursor.getPredefinedCursor( nCursor ) );
         }
     }
@@ -399,13 +399,13 @@ public class PlayerWindow implements java.awt.event.KeyListener,
         if( maFrame != null )
         {
             java.awt.Panel aPanel = (java.awt.Panel) maFrame.getJavaFrame().getComponent( 0 );
-            
+
             if( aPanel != null && aPanel.getComponent( 0 ) != null )
                 aPanel.getComponent( 0 ).removeFocusListener( this );
-                
+
             if( maFrame.getJavaFrame() != null )
                 maFrame.getJavaFrame().dispose();
-        
+
             maFrame.fireDisposingEvent();
         }
 
@@ -471,7 +471,7 @@ public class PlayerWindow implements java.awt.event.KeyListener,
         if( maFrame != null )
             maFrame.removeEventListener( xListener );
     }
-        
+
     // -------------------------------------------------------------------------
 
     public synchronized void addWindowListener( XWindowListener xListener )

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -49,26 +49,26 @@ import com.sun.star.uno.Type;
 
 
 public class DrawTools {
-    
+
     /**
      * Opens a new draw document
      * with arguments
      * @param xMSF the MultiServiceFactory
      * @return the XComponent Interface of the document
-    */     
+    */
 
     public static XComponent createDrawDoc( XMultiServiceFactory xMSF ) {
         PropertyValue[] Args = new PropertyValue [0];
         XComponent DrawDoc = DesktopTools.openNewDoc(  xMSF, "sdraw", Args );
         return DrawDoc;
     } // finish createDrawDoc
-    
+
     /**
      * gets the XDrawPages container of a draw document
-     * 
+     *
      * @param aDoc the draw document
      * @return the XDrawpages container of the document
-    */         
+    */
 
     public static XDrawPages getDrawPages ( XComponent aDoc ) {
         XDrawPages oDPn = null;
@@ -82,14 +82,14 @@ public class DrawTools {
         }
         return oDPn;
     } // finish getDrawPages
-    
+
     /**
      * gets the specified XDrawPage of a draw document
-     * 
+     *
      * @param aDoc the draw document
      * @param nr the index of the DrawPage
      * @return the XDrawpage with index nr of the document
-    */             
+    */
 
     public static XDrawPage getDrawPage ( XComponent aDoc, int nr ) {
         XDrawPage oDP = null;
@@ -101,29 +101,29 @@ public class DrawTools {
         }
         return oDP;
     }
-    
+
     /**
      * gets the XShapes container of a draw page
-     * 
-     * @param oDP the draw page    
+     *
+     * @param oDP the draw page
      * @return the XDrawShape container of the drawpage
-    */                 
+    */
 
     public static XShapes getShapes ( XDrawPage oDP ) {
         return (XShapes) UnoRuntime.queryInterface(XShapes.class,oDP);
     }
-    
+
     /**
      * creates a XShape
-     * 
+     *
      * @param oDoc the document
      * @param height the height of the shape
      * @param width the width of the shape
      * @param x the x-position of the shape
      * @param y the y-position of the shape
      * @param kind the kind of the shape ('Ellipse', 'Line' or 'Rectangle')
-     * @return the created XShape 
-    */                     
+     * @return the created XShape
+    */
 
     public XShape createShape( XComponent oDoc, int height, int width, int x,
                                                      int y, String kind ) {
@@ -132,10 +132,10 @@ public class DrawTools {
         ShapeDsc sDsc = new ShapeDsc( height, width, x, y, kind );
         InstCreator instCreate = new InstCreator( oDoc, sDsc );
         XShape oShape = (XShape)instCreate.getInstance();
-        
+
         return oShape;
     }
-    
+
     /**
      * creates a XShape and adds it to the documents
      * first drawpage
@@ -145,8 +145,8 @@ public class DrawTools {
      * @param x the x-position of the shape
      * @param y the y-position of the shape
      * @param kind the kind of the shape ('Ellipse', 'Line' or 'Rectangle')
-     * @return the created XShape 
-    */                         
+     * @return the created XShape
+    */
 
     public void addShape(  XComponent oDoc, int height, int width, int x,
                                                          int y, String kind ) {

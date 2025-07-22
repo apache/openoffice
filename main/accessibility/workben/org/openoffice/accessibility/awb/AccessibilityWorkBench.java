@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -75,10 +75,10 @@ import org.openoffice.accessibility.awb.view.ObjectViewContainerWindow;
     @see Canvas
         for the graphical view of the accessible objects.
 */
-public class AccessibilityWorkBench 
-            extends JFrame 
-            implements XTerminateListener, 
-                       ActionListener, 
+public class AccessibilityWorkBench
+            extends JFrame
+            implements XTerminateListener,
+                       ActionListener,
                        TreeSelectionListener
 {
     public static final String msVersion = "v1.9";
@@ -103,7 +103,7 @@ public class AccessibilityWorkBench
                 sPipeName = args[++i];
             }
         }
-        
+
         saWorkBench = new AccessibilityWorkBench (sPipeName);
     }
 
@@ -132,7 +132,7 @@ public class AccessibilityWorkBench
         OfficeConnection.SetPipeName (sPipeName);
         Options.Instance().Load (msOptionsFileName);
         Layout ();
-        
+
         MessageArea.println (System.getProperty ("os.name") + " / "
             + System.getProperty ("os.arch") + " / "
             + System.getProperty ("os.version"));
@@ -141,7 +141,7 @@ public class AccessibilityWorkBench
         maTree.addTreeSelectionListener (this);
 
         addWindowListener (new WindowAdapter ()
-            { public void windowClosing (WindowEvent e) {Quit();} } 
+            { public void windowClosing (WindowEvent e) {Quit();} }
             );
 
         OfficeConnection.Instance().AddConnectionListener (this);
@@ -152,7 +152,7 @@ public class AccessibilityWorkBench
 
 
     /** Create and arrange the widgets of the GUI.
-    */    
+    */
     public void Layout ()
     {
         setSize (new java.awt.Dimension (800,600));
@@ -167,11 +167,11 @@ public class AccessibilityWorkBench
         //  Accessible Tree.
         javax.swing.tree.TreeModel treeModel = new DynamicAccessibilityModel();
         maTree = new AccessibilityTree(treeModel);
-        // Add the model as tree listeners to be able to populate/clear the 
+        // Add the model as tree listeners to be able to populate/clear the
         // child lists on demand.
         maTree.addTreeExpansionListener((TreeExpansionListener) treeModel);
         maTree.addTreeWillExpandListener((TreeWillExpandListener) treeModel);
-        
+
         JScrollPane aTreeScrollPane = new JScrollPane(
             maTree,
             JScrollPane.VERTICAL_SCROLLBAR_ALWAYS,
@@ -196,7 +196,7 @@ public class AccessibilityWorkBench
         // Split pane for tree view and object view.
         JSplitPane aLeftViewSplitPane = new JSplitPane (
             JSplitPane.VERTICAL_SPLIT,
-            aTreeScrollPane, 
+            aTreeScrollPane,
             aObjectViewContainerScrollPane
             );
         aLeftViewSplitPane.setDividerLocation (300);
@@ -205,7 +205,7 @@ public class AccessibilityWorkBench
         //  Canvas.
         maCanvas = new Canvas ();
         maCanvas.SetTree (maTree);
-        JScrollPane aScrolledCanvas = new JScrollPane(maCanvas, 
+        JScrollPane aScrolledCanvas = new JScrollPane(maCanvas,
             JScrollPane.VERTICAL_SCROLLBAR_AS_NEEDED,
             JScrollPane.HORIZONTAL_SCROLLBAR_AS_NEEDED);
         aScrolledCanvas.getViewport().setBackground (java.awt.Color.RED);
@@ -214,7 +214,7 @@ public class AccessibilityWorkBench
         // Split pane for tree view and canvas.
         JSplitPane aViewSplitPane = new JSplitPane (
             JSplitPane.HORIZONTAL_SPLIT,
-            aLeftViewSplitPane, 
+            aLeftViewSplitPane,
             aScrolledCanvas
             );
         aViewSplitPane.setOneTouchExpandable(true);
@@ -225,7 +225,7 @@ public class AccessibilityWorkBench
         MessageArea.Instance().setPreferredSize (new java.awt.Dimension(600,50));
         JSplitPane aSplitPane = new JSplitPane (
             JSplitPane.VERTICAL_SPLIT,
-            aViewSplitPane, 
+            aViewSplitPane,
             MessageArea.Instance());
         aSplitPane.setOneTouchExpandable(true);
         aSplitPane.setContinuousLayout (true);
@@ -244,7 +244,7 @@ public class AccessibilityWorkBench
         //        maUpdateButton = createButton ("Update", "update");
         //        maShapesButton = createButton ("Expand Shapes", "shapes");
         maExpandButton = createButton ("Expand All", "expand");
-        maQuitButton = createButton ("Quit", "quit");        
+        maQuitButton = createButton ("Quit", "quit");
         UpdateButtonStates ();
 
         setJMenuBar (CreateMenuBar ());
@@ -263,10 +263,10 @@ public class AccessibilityWorkBench
 
     /** Shortcut method for adding an object to a GridBagLayout.
     */
-    void addGridElement (JComponent object, 
-        int x, int y, 
-        int width, int height, 
-        int weightx, int weighty, 
+    void addGridElement (JComponent object,
+        int x, int y,
+        int width, int height,
+        int weightx, int weighty,
         int anchor, int fill)
     {
         GridBagConstraints constraints = new GridBagConstraints ();
@@ -293,7 +293,7 @@ public class AccessibilityWorkBench
         aButton.setEnabled (false);
         aButton.setActionCommand (command);
         aButton.addActionListener (this);
-        
+
         maButtonBar.add (aButton);
         return aButton;
     }
@@ -310,7 +310,7 @@ public class AccessibilityWorkBench
     {
         // Menu bar.
         maMenuBar = new JMenuBar ();
-   
+
         // File menu.
         JMenu aFileMenu = new JMenu ("File");
         maMenuBar.add (aFileMenu);
@@ -354,22 +354,22 @@ public class AccessibilityWorkBench
         JMenu aOptionsMenu = new JMenu ("Options");
         maMenuBar.add (aOptionsMenu);
         JCheckBoxMenuItem aCBItem;
-        aCBItem = new JCheckBoxMenuItem ("Show Descriptions", 
+        aCBItem = new JCheckBoxMenuItem ("Show Descriptions",
                                          Options.GetBoolean("ShowDescriptions"));
         aOptionsMenu.add (aCBItem);
         aCBItem.addActionListener (this);
 
-        aCBItem = new JCheckBoxMenuItem ("Show Names", 
+        aCBItem = new JCheckBoxMenuItem ("Show Names",
                                          Options.GetBoolean ("ShowNames"));
         aOptionsMenu.add (aCBItem);
         aCBItem.addActionListener (this);
 
-        aCBItem = new JCheckBoxMenuItem ("Show Text", 
+        aCBItem = new JCheckBoxMenuItem ("Show Text",
                                          Options.GetBoolean ("ShowText"));
         aOptionsMenu.add (aCBItem);
         aCBItem.addActionListener (this);
 
-        aCBItem = new JCheckBoxMenuItem ("Antialiased Rendering", 
+        aCBItem = new JCheckBoxMenuItem ("Antialiased Rendering",
                                          Options.GetBoolean ("Antialiasing"));
         aOptionsMenu.add (aCBItem);
         aCBItem.addActionListener (this);
@@ -377,7 +377,7 @@ public class AccessibilityWorkBench
         // Help menu.
         JMenu aHelpMenu = new JMenu ("Help");
         maMenuBar.add (aHelpMenu);
-        
+
         aItem = new JMenuItem ("Help");
         aHelpMenu.add (aItem);
         aItem.addActionListener (this);
@@ -407,7 +407,7 @@ public class AccessibilityWorkBench
     protected void Initialize ()
     {
         maCanvas.SetTree (maTree);
-		
+
         SimpleOffice aOffice = SimpleOffice.Instance ();
         if (aOffice != null)
         {
@@ -440,7 +440,7 @@ public class AccessibilityWorkBench
 
     /** Callback for GUI actions from the buttons.
     */
-    public void actionPerformed (ActionEvent aEvent) 
+    public void actionPerformed (ActionEvent aEvent)
     {
         String sCommand = aEvent.getActionCommand();
         if (sCommand.equals("connect"))
@@ -481,25 +481,25 @@ public class AccessibilityWorkBench
         }
         else if (sCommand.equals ("Show Descriptions"))
         {
-            Options.SetBoolean ("ShowDescriptions", 
+            Options.SetBoolean ("ShowDescriptions",
                 ((JCheckBoxMenuItem)aEvent.getSource()).getState());
             maCanvas.repaint();
         }
         else if (sCommand.equals ("Show Names"))
         {
-            Options.SetBoolean ("ShowNames", 
+            Options.SetBoolean ("ShowNames",
                 ((JCheckBoxMenuItem)aEvent.getSource()).getState());
             maCanvas.repaint();
         }
         else if (sCommand.equals ("Show Text"))
         {
-            Options.SetBoolean ("ShowText", 
+            Options.SetBoolean ("ShowText",
                 ((JCheckBoxMenuItem)aEvent.getSource()).getState());
             maCanvas.repaint();
         }
         else if (sCommand.equals ("Antialiased Rendering"))
         {
-            Options.SetBoolean ("Antialiasing", 
+            Options.SetBoolean ("Antialiasing",
                 ((JCheckBoxMenuItem)aEvent.getSource()).getState());
             maCanvas.repaint();
         }
@@ -556,7 +556,7 @@ public class AccessibilityWorkBench
             TreePath aSelectionPath = maTree.getSelectionPath();
             if (aSelectionPath != null)
             {
-                javax.swing.tree.TreeNode aSelectedNode = 
+                javax.swing.tree.TreeNode aSelectedNode =
                     (javax.swing.tree.TreeNode)aSelectionPath.getLastPathComponent();
                 if (aSelectedNode instanceof XAccessible) {
                    new ObjectViewContainerWindow (((XAccessible) aSelectedNode).getAccessibleContext());
@@ -576,7 +576,7 @@ public class AccessibilityWorkBench
 		Tell the object view and the canvas about the selected object.
 	*/
     public void valueChanged (TreeSelectionEvent aEvent) {
-        
+
         if (aEvent.isAddedPath()) {
             Cursor aCursor = getCursor();
             setCursor (new Cursor (Cursor.WAIT_CURSOR));
@@ -660,7 +660,7 @@ public class AccessibilityWorkBench
 //        maTree.expandRow (0);
 
         // Register the top window listener.
-        XExtendedToolkit xToolkit = 
+        XExtendedToolkit xToolkit =
             SimpleOffice.Instance().GetExtendedToolkit();
         if (xToolkit != null)
         {
@@ -678,15 +678,15 @@ public class AccessibilityWorkBench
     }
 
     /// The Singleton Workbench object.
-    private static AccessibilityWorkBench 
+    private static AccessibilityWorkBench
         saWorkBench = null;
-    
+
     private JPanel maMainPanel;
     private JPanel maButtonBar;
     private Canvas maCanvas;
     private AccessibilityTree maTree;
     private ObjectViewContainer maObjectViewContainer;
-    private JButton 
+    private JButton
         maConnectButton,
         maQuitButton,
         maUpdateButton,

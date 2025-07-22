@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 package fvt.uno.sw.paragraph;
@@ -71,10 +71,10 @@ public class ParagraphIndentAndSpacing {
 		xCursorProps.setPropertyValue("ParaLeftMargin",2000);
 		xCursorProps.setPropertyValue("ParaRightMargin",3000);
 		xCursorProps.setPropertyValue("ParaTopMargin",1000);
-		xCursorProps.setPropertyValue("ParaBottomMargin",4000);				
+		xCursorProps.setPropertyValue("ParaBottomMargin",4000);
 		xCursorProps.setPropertyValue("ParaFirstLineIndent",4000);
-	
-		//save to odt 
+
+		//save to odt
 		XStorable xStorable_odt = (XStorable) UnoRuntime.queryInterface(XStorable.class, xTextDocument);
 		PropertyValue[] aStoreProperties_odt = new PropertyValue[2];
 		aStoreProperties_odt[0] = new PropertyValue();
@@ -84,7 +84,7 @@ public class ParagraphIndentAndSpacing {
 		aStoreProperties_odt[1].Name = "FilterName";
 		aStoreProperties_odt[1].Value = "StarOffice XML (Writer)";
 		xStorable_odt.storeToURL(FileUtil.getUrl(Testspace.getPath("output/test.odt")), aStoreProperties_odt);
-		//save to doc 
+		//save to doc
 		XStorable xStorable_doc = (XStorable) UnoRuntime.queryInterface(XStorable.class, xTextDocument);
 		PropertyValue[] aStoreProperties_doc = new PropertyValue[2];
 		aStoreProperties_doc[0] = new PropertyValue();
@@ -93,7 +93,7 @@ public class ParagraphIndentAndSpacing {
 		aStoreProperties_doc[0].Value = true;
 		aStoreProperties_doc[1].Name = "FilterName";
 		aStoreProperties_doc[1].Value = "MS Word 97";
-		xStorable_doc.storeToURL(FileUtil.getUrl(Testspace.getPath("output/test.doc")), aStoreProperties_doc);	
+		xStorable_doc.storeToURL(FileUtil.getUrl(Testspace.getPath("output/test.doc")), aStoreProperties_doc);
 		app.closeDocument(xTextDocument);
 
 		//reopen the document and assert line spacing
@@ -106,7 +106,7 @@ public class ParagraphIndentAndSpacing {
 		assertEquals("assert below paragraph margin",4001,xCursorProps_Assert_odt.getPropertyValue("ParaBottomMargin"));
 		assertEquals("assert first line indent",4001,xCursorProps_Assert_odt.getPropertyValue("ParaFirstLineIndent"));
 		assertEquals("assert paragraph first line is no autoindent",false,xCursorProps_Assert_odt.getPropertyValue("ParaIsAutoFirstLineIndent"));
-		
+
 		//reopen the document and assert line spacing
 		XTextDocument assertDocument_doc=(XTextDocument)UnoRuntime.queryInterface(XTextDocument.class, app.loadDocument(Testspace.getPath("output/test.doc")));
 		XPropertySet xCursorProps_Assert_doc = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, assertDocument_doc.getText().createTextCursor());
@@ -128,10 +128,10 @@ public class ParagraphIndentAndSpacing {
 		// create text cursor for selecting and formatting text
 		XTextCursor xTextCursor = xText.createTextCursor();
 		XPropertySet xCursorProps = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, xTextCursor);
-		//set paragraph margin with page border	
+		//set paragraph margin with page border
 		xCursorProps.setPropertyValue("ParaIsAutoFirstLineIndent",true);
-	
-		//save to odt 
+
+		//save to odt
 		XStorable xStorable_odt = (XStorable) UnoRuntime.queryInterface(XStorable.class, xTextDocument);
 		PropertyValue[] aStoreProperties_odt = new PropertyValue[2];
 		aStoreProperties_odt[0] = new PropertyValue();
@@ -141,7 +141,7 @@ public class ParagraphIndentAndSpacing {
 		aStoreProperties_odt[1].Name = "FilterName";
 		aStoreProperties_odt[1].Value = "StarOffice XML (Writer)";
 		xStorable_odt.storeToURL(FileUtil.getUrl(Testspace.getPath("output/test.odt")), aStoreProperties_odt);
-		//save to doc 
+		//save to doc
 		XStorable xStorable_doc = (XStorable) UnoRuntime.queryInterface(XStorable.class, xTextDocument);
 		PropertyValue[] aStoreProperties_doc = new PropertyValue[2];
 		aStoreProperties_doc[0] = new PropertyValue();
@@ -150,7 +150,7 @@ public class ParagraphIndentAndSpacing {
 		aStoreProperties_doc[0].Value = true;
 		aStoreProperties_doc[1].Name = "FilterName";
 		aStoreProperties_doc[1].Value = "MS Word 97";
-		xStorable_doc.storeToURL(FileUtil.getUrl(Testspace.getPath("output/test.doc")), aStoreProperties_doc);	
+		xStorable_doc.storeToURL(FileUtil.getUrl(Testspace.getPath("output/test.doc")), aStoreProperties_doc);
 		app.closeDocument(xTextDocument);
 
 
@@ -159,12 +159,12 @@ public class ParagraphIndentAndSpacing {
 		XPropertySet xCursorProps_Assert_doc = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, assertDocument_doc.getText().createTextCursor());
 		//verify paragraph auto indent
 		assertEquals("assert paragraph first line is autoindent",true,xCursorProps_Assert_doc.getPropertyValue("ParaIsAutoFirstLineIndent"));
-		
+
 		//reopen the document and assert paragraph indent
 		XTextDocument assertDocument_odt=(XTextDocument)UnoRuntime.queryInterface(XTextDocument.class, app.loadDocument(Testspace.getPath("output/test.odt")));
 		XPropertySet xCursorProps_Assert_odt = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, assertDocument_odt.getText().createTextCursor());
 		//verify paragraph auto indent
 		assertEquals("assert paragraph first line is autoindent",true,xCursorProps_Assert_odt.getPropertyValue("ParaIsAutoFirstLineIndent"));
 	}
-	
+
 }

@@ -34,13 +34,13 @@ public interface ISimpleTypeNode
         final Restriction aNode,
         final Map<String,Integer> aValueToIdMap);
     void Print (final Log aLog);
-    
+
     /** List elements are not represented by their own node (type).
      *  There is only this flag that makes this node a list of the item type
-     *  which is represented by the node.  
+     *  which is represented by the node.
      */
     boolean IsList ();
-    
+
     /** Set the IsList flag.
      */
     void SetIsList ();

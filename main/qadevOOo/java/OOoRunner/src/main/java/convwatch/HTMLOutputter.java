@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -32,7 +32,7 @@ public class HTMLOutputter
     FileWriter m_aOut;
     String m_sFilename;
     String m_sNamePrefix;              // the HTML files used a suffix to build it's right name
-    
+
     /**
      * ls is the current line separator (carridge return)
      */
@@ -63,7 +63,7 @@ public class HTMLOutputter
             return a;
         }
     public String getFilename() {return m_sFilename;}
-    
+
     public void header(String _sTitle)
         {
             try
@@ -75,17 +75,17 @@ public class HTMLOutputter
                 m_aOut.write( "<link rel=\"stylesheet\" type=\"text/css\" href=\"/gfxcmp_ui/style.css\" media=\"screen\" />" + ls);
                 m_aOut.write( "</head>" + ls);
                 m_aOut.write( "<body bgcolor=white>" + ls);
-                m_aOut.flush();            
+                m_aOut.flush();
             }
             catch (java.io.IOException e)
             {
             }
         }
-    
+
     final static String TEST_TABLETITLE = "Test";
     final static String VISUAL_STATUS_TABLETITLE = "Visual status";
     final static String VISUAL_STATUS_MESSAGE_TABLETITLE = "Message";
-    
+
     public void indexSection(String _sOfficeInfo)
         {
             try
@@ -147,7 +147,7 @@ public class HTMLOutputter
                 //     sbUNIXPath.append(_sHREF.substring(index + 2));
                 //     String sUNIXPath = sbUNIXPath.toString();
                 //     sUNIXPath = utils.replaceAll13(sUNIXPath, "\\", "/");
-                // 
+                //
                 //     a.append("<A HREF=\"");
                 //     a.append(sUNIXPath);
                 //     a.append("\">");
@@ -158,7 +158,7 @@ public class HTMLOutputter
                 // {
                 //     System.out.println("Path is '" + _sHREF + "'");
                 // }
-                
+
             }
             return a.toString();
         }
@@ -171,7 +171,7 @@ public class HTMLOutputter
             a.append("</TD>");
             return a.toString();
         }
-    
+
     String tableHeaderCell(String _sValue)
         {
             StringBuffer a = new StringBuffer();
@@ -180,7 +180,7 @@ public class HTMLOutputter
             a.append("</TH>");
             return a.toString();
         }
-    
+
     public void indexLine(String _sHTMLFile, String _sHTMLName, String _sHTMLFile2, String _sHTMLName2, String _sStatusRunThrough, String _sStatusMessage)
         {
             try
@@ -195,7 +195,7 @@ public class HTMLOutputter
                 {
                     m_aOut.write(tableDataCell( "" ) );
                 }
-                
+
                 m_aOut.write( tableDataCell(_sStatusRunThrough) );
                 m_aOut.write( tableDataCell(_sStatusMessage) );
                 m_aOut.write( "</TR>" + ls);
@@ -206,7 +206,7 @@ public class HTMLOutputter
             {
             }
         }
-    
+
     public void close()
         {
             try
@@ -220,7 +220,7 @@ public class HTMLOutputter
             {
             }
         }
-    
+
 // -----------------------------------------------------------------------------
     String stronghtml(String _sValue)
         {
@@ -230,7 +230,7 @@ public class HTMLOutputter
             a.append("</STRONG>");
             return a.toString();
         }
-    
+
     final static String FIRSTGFX_TABLETITLE = "Original print file as jpeg";
     final static String SECONDGFX_TABLETITLE = "New print file as jpeg";
     final static String DIFFER_TABLETITLE = "Difference file";
@@ -261,7 +261,7 @@ public class HTMLOutputter
 
                 m_aOut.write( "<table class=\"infotable\">" + ls);
 
-                m_aOut.write( "<TR>" + ls);               
+                m_aOut.write( "<TR>" + ls);
                 m_aOut.write( tableHeaderCell( FIRSTGFX_TABLETITLE) );
                 m_aOut.write( tableHeaderCell( SECONDGFX_TABLETITLE ) );
                 m_aOut.write( tableHeaderCell(DIFFER_TABLETITLE ) );
@@ -279,11 +279,11 @@ public class HTMLOutputter
             {
             }
         }
-    
+
     public void checkLine(StatusHelper _aStatus, boolean _bCurrentResult)
         {
             try
-            {                
+            {
                 m_aOut.write( "<TR>" + ls);
                 String sLink = getHREF(FileHelper.getBasename(_aStatus.m_sOldGfx), FileHelper.getBasename(_aStatus.m_sOldGfx));
                 m_aOut.write( tableDataCell(sLink) );
@@ -293,14 +293,14 @@ public class HTMLOutputter
 
                 sLink = getHREF(FileHelper.getBasename(_aStatus.m_sDiffGfx), FileHelper.getBasename(_aStatus.m_sDiffGfx));
                 m_aOut.write( tableDataCell(sLink) );
-                
+
                 String sPercent = String.valueOf(_aStatus.nPercent) + "%";
                 if (_aStatus.nPercent > 0 && _aStatus.nPercent < 5)
                 {
                     sPercent += " (less 5% is ok)";
                 }
                 m_aOut.write(tableDataCell( sPercent ) );
-                
+
                 if (_aStatus.m_sDiff_BM_Gfx == null)
                 {
                     sLink = "No diffs, therefore no moves";
@@ -329,7 +329,7 @@ public class HTMLOutputter
                 {
                     m_aOut.write(tableDataCell( "NO" ) );
                 }
-                
+
                 m_aOut.write( "</TR>" + ls);
             }
             catch (java.io.IOException e)
@@ -349,7 +349,7 @@ public class HTMLOutputter
 
                 m_aOut.write( "<table class=\"infotable\">" + ls);
 
-                m_aOut.write( "<TR>" + ls); 
+                m_aOut.write( "<TR>" + ls);
                 m_aOut.write( tableHeaderCell( "Source to actual difference" ) );
                 m_aOut.write( tableHeaderCell( "Actual difference" ) );
                 m_aOut.write( tableHeaderCell(DIFFER_TABLETITLE ) );
@@ -364,11 +364,11 @@ public class HTMLOutputter
             {
             }
         }
-    
+
     public void checkDiffDiffLine(StatusHelper _aStatus, boolean _bCurrentResult)
         {
             try
-            {                
+            {
                 m_aOut.write( "<TR>" + ls);
                 // the link to the old difference can't offer here
                 //  String sLink = getHREF(FileHelper.getBasename(_aStatus.m_sOldGfx), FileHelper.getBasename(_aStatus.m_sOldGfx));
@@ -376,7 +376,7 @@ public class HTMLOutputter
 
                 String sBasename = FileHelper.getBasename(m_sFilename);
                 String sNew = sBasename.substring(m_sNamePrefix.length());
-                
+
                 String sLink;
                 sLink = getHREF(sNew, sNew);
                 m_aOut.write( tableDataCell(sLink) );
@@ -403,7 +403,7 @@ public class HTMLOutputter
                 {
                     m_aOut.write(tableDataCell( "NO" ) );
                 }
-                
+
                 m_aOut.write( "</TR>" + ls);
             }
             catch (java.io.IOException e)

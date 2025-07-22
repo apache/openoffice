@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 import java.awt.*;
@@ -82,7 +82,7 @@ class CanvasShape
                 mbFocused = xStateSet.contains (AccessibleStateType.FOCUSED);
             }
         }
-         
+
         updateGeometry ();
         if (mxComponent != null)
         {
@@ -120,7 +120,7 @@ class CanvasShape
     /** Paint the object into the specified canvas.  It is transformed
         according to the specified offset and scale.
     */
-    public void paint (Graphics2D g, 
+    public void paint (Graphics2D g,
         double nXOffset, double nYOffset, double nScaleFactor,
         boolean bShowDescription, boolean bShowName, boolean bShowText)
     {
@@ -133,7 +133,7 @@ class CanvasShape
                 maPosition.y * nScaleFactor + nYOffset,
                 maSize.width * nScaleFactor,
                 maSize.height * nScaleFactor);
-            
+
             // Fill the object's bounding box with its background color if it
             // has no children.
             if (mxContext.getAccessibleChildCount() == 0)
@@ -148,7 +148,7 @@ class CanvasShape
                 color = new Color (maFgColor.getRed(), maFgColor.getGreen(), maFgColor.getBlue());
             g.setColor (color);
             g.draw (maShape);
-            
+
             if (mbFocused)
             {
                 g.setColor (maFocusColor);
@@ -188,7 +188,7 @@ class CanvasShape
         }
     }
 
-    public void paint_highlight (Graphics2D g, 
+    public void paint_highlight (Graphics2D g,
         double nXOffset, double nYOffset, double nScaleFactor)
     {
         if (mbHighlighted)
@@ -203,18 +203,18 @@ class CanvasShape
 
     private void paintName (Graphics2D g)
     {
-        g.drawString ("Name: " + msName, 
-            (float)maShape.x+5, 
-            (float)maShape.y+15); 
+        g.drawString ("Name: " + msName,
+            (float)maShape.x+5,
+            (float)maShape.y+15);
     }
 
 
 
     private void paintDescription (Graphics2D g)
     {
-        g.drawString ("Description: " + msDescription, 
-            (float)maShape.x+5, 
-            (float)maShape.y+35); 
+        g.drawString ("Description: " + msDescription,
+            (float)maShape.x+5,
+            (float)maShape.y+35);
     }
 
 
@@ -236,10 +236,10 @@ class CanvasShape
                 {
                     com.sun.star.awt.Rectangle aRect =
                         xText.getCharacterBounds(i);
-                    
+
                     double x = maShape.x + aRect.X;
                     double y = maShape.y + aRect.Y + aRect.Height;
-                    
+
                     g.drawString(sText.substring(i, i+1), (float)x, (float)y);
                 }
             }
@@ -288,7 +288,7 @@ class CanvasShape
     {
         return new Rectangle (maPosition, maSize);
     }
-    
+
     public Point getOrigin ()
     {
         return maPosition;

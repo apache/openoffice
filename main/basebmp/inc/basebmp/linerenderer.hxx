@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -56,7 +56,7 @@ namespace basebmp
 
     @param end
     right-bottom image iterator
-    
+
     @param acc
     Image accessor
 
@@ -66,12 +66,12 @@ namespace basebmp
     pixel, the pixel closer to pt1 will be chosen. Giving true here
     makes renderClippedLine() choose pt2 in those cases.
  */
-template< class Iterator, class Accessor > 
+template< class Iterator, class Accessor >
 void renderLine( const basegfx::B2IPoint&      rPt1,
                  const basegfx::B2IPoint&      rPt2,
                  typename Accessor::value_type color,
-                 Iterator                      begin, 
-                 Accessor                      acc, 
+                 Iterator                      begin,
+                 Accessor                      acc,
                  bool                          bRoundTowardsPt2=false )
 {
     // code inspired by Paul Heckbert's Digital Line Drawing
@@ -110,7 +110,7 @@ void renderLine( const basegfx::B2IPoint&      rPt1,
         ady *= 2;
 
         Iterator currIter( begin + vigra::Diff2D(0,ys) );
-        typename vigra::IteratorTraits<Iterator>::row_iterator 
+        typename vigra::IteratorTraits<Iterator>::row_iterator
             rowIter( currIter.rowIterator() + xs );
         while(true)
         {
@@ -119,7 +119,7 @@ void renderLine( const basegfx::B2IPoint&      rPt1,
             if( xs == x2 )
                 return;
 
-            if( rem >= 0 ) 
+            if( rem >= 0 )
             {
                 ys += sy;
                 xs += sx;
@@ -144,7 +144,7 @@ void renderLine( const basegfx::B2IPoint&      rPt1,
         ady *= 2;
 
         Iterator currIter( begin + vigra::Diff2D(xs,0) );
-        typename vigra::IteratorTraits<Iterator>::column_iterator 
+        typename vigra::IteratorTraits<Iterator>::column_iterator
             colIter( currIter.columnIterator() + ys );
         while(true)
         {
@@ -152,8 +152,8 @@ void renderLine( const basegfx::B2IPoint&      rPt1,
 
             if( ys == y2 )
                 return;
-            
-            if( rem >= 0 ) 
+
+            if( rem >= 0 )
             {
                 xs += sx;
                 ys += sy;

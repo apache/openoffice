@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -49,9 +49,9 @@ namespace drawinglayer
         /** HelplinePrimitive2D class
 
             This primitive provides a view-dependent helpline definition. The Helpline
-            is defined by a line equation (Point and vector) and a style. When the style 
-            is a line, dependent from Viewport the visible part of that Helpline is 
-            constructed. For Point, a cross is constructed. This primitive is highly 
+            is defined by a line equation (Point and vector) and a style. When the style
+            is a line, dependent from Viewport the visible part of that Helpline is
+            constructed. For Point, a cross is constructed. This primitive is highly
             view-dependent.
 
             The visualisation uses the two given colors to create a dashed line with
@@ -70,7 +70,7 @@ namespace drawinglayer
 			basegfx::BColor									maRGBColB;
 			double											mfDiscreteDashLength;
 
-			/** the last used object to view transformtion and the last Viewport, 
+			/** the last used object to view transformtion and the last Viewport,
                 used from getDecomposition for decide buffering
              */
 			basegfx::B2DHomMatrix							maLastObjectToViewTransformation;
@@ -83,11 +83,11 @@ namespace drawinglayer
 		public:
             /// constructor
 			HelplinePrimitive2D(
-				const basegfx::B2DPoint& rPosition, 
-				const basegfx::B2DVector& rDirection, 
-				HelplineStyle2D eStyle, 
-				const basegfx::BColor& rRGBColA, 
-				const basegfx::BColor& aRGBColB, 
+				const basegfx::B2DPoint& rPosition,
+				const basegfx::B2DVector& rDirection,
+				HelplineStyle2D eStyle,
+				const basegfx::BColor& rRGBColA,
+				const basegfx::BColor& aRGBColB,
 				double fDiscreteDashLength);
 
 			/// data read access

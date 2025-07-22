@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -29,34 +29,34 @@ import java.util.Vector;
 import javax.swing.*;
 import javax.swing.event.*;
 import javax.swing.tree.*;
- 
+
 
 public class HideableTreeModel implements TreeModel {
 
 	private Vector modelListeners = new Vector();
 	private Object root = null;
-    
-        
+
+
         public HideableTreeModel(TreeNode _root) {
             super();
-            setRoot(_root);            
+            setRoot(_root);
 	}
-  
-        
+
+
 	public Object getRoot() {
 		return this.root;
 	}
- 
+
 
         protected void setRoot(Object r) {
             this.root = r;
 	}
-        
+
 
         public Object[] getPathToRoot(Object node) {
             return getPathToRoot(node, 0);
 	}
- 
+
 
         private Object[] getPathToRoot(Object node, int i) {
             Object anode[];
@@ -76,22 +76,22 @@ public class HideableTreeModel implements TreeModel {
             }
             return anode;
 	}
-  
+
 
         public void addTreeModelListener(TreeModelListener l) {
             modelListeners.addElement(l);
 	}
- 
+
 
         public void removeTreeModelListener(TreeModelListener l) {
             modelListeners.removeElement(l);
 	}
- 
+
 
 	public void reload() {
             reload(getRoot());
 	}
- 
+
 
         public void reload(Object node) {
             if(node != null) {
@@ -99,16 +99,16 @@ public class HideableTreeModel implements TreeModel {
                 fireTreeStructureChanged(new TreeModelEvent(this, tp));
             }
 	}
- 
+
 
         public void valueForPathChanged(TreePath path, Object newValue) {
             nodeChanged(path.getLastPathComponent());
 	}
- 
+
 	public void nodeInserted(Object node, Object child) {
             nodeInserted(node, child, -1);
 	}
- 
+
 
         public void nodeInserted(Object node, Object child, int index) {
             if(index < 0) {
@@ -121,7 +121,7 @@ public class HideableTreeModel implements TreeModel {
                 fireTreeNodesInserted(new TreeModelEvent(this, tp, ai, ac));
             }
 	}
- 
+
 
         public void nodeRemoved(Object node, Object child, int index) {
             if(node != null && child != null && index >= 0) {
@@ -131,7 +131,7 @@ public class HideableTreeModel implements TreeModel {
                 fireTreeNodesRemoved(new TreeModelEvent(this, tp, ai, ac));
             }
 	}
- 
+
 
         public void nodeChanged(Object node) {
             if(node != null) {
@@ -139,41 +139,41 @@ public class HideableTreeModel implements TreeModel {
                 fireTreeNodesChanged(new TreeModelEvent(this, tp, null, null));
             }
 	}
- 
+
 
         protected void fireTreeNodesChanged(TreeModelEvent event) {
             for(int i = 0; i < modelListeners.size(); i++) {
                 ((TreeModelListener)modelListeners.elementAt(i)).treeNodesChanged(event);
             }
 	}
- 
+
 
         protected void fireTreeNodesInserted(TreeModelEvent event) {
             for(int i = 0; i < modelListeners.size(); i++) {
                 ((TreeModelListener)modelListeners.elementAt(i)).treeNodesInserted(event);
             }
 	}
- 
+
 
         protected void fireTreeNodesRemoved(TreeModelEvent event) {
             for(int i = 0; i < modelListeners.size(); i++) {
                 ((TreeModelListener)modelListeners.elementAt(i)).treeNodesRemoved(event);
             }
 	}
- 
+
 	protected void fireTreeStructureChanged(TreeModelEvent event) {
             for(int i = 0; i < modelListeners.size(); i++) {
                 ((TreeModelListener)modelListeners.elementAt(i)).treeStructureChanged(event);
             }
 	}
- 
+
 
         public ArrayList getExpandedPaths(JTree tree) {
 		ArrayList expandedPaths = new ArrayList();
 		addExpandedPaths(tree, tree.getPathForRow(0), expandedPaths);
 		return expandedPaths;
 	}
- 
+
 
         private void addExpandedPaths(JTree tree, TreePath path, ArrayList pathlist) {
             Enumeration aEnum = tree.getExpandedDescendants(path);
@@ -183,14 +183,14 @@ public class HideableTreeModel implements TreeModel {
                 addExpandedPaths(tree, tp, pathlist);
             }
 	}
- 
+
 
         public void expandPaths(JTree tree, ArrayList pathlist) {
             for(int i = 0; i < pathlist.size(); i++) {
                 tree.expandPath((TreePath)pathlist.get(i));
             }
 	}
-                
+
 
         public boolean isLeaf(Object _oNode) {
             if(_oNode instanceof TreeNode) {
@@ -198,16 +198,16 @@ public class HideableTreeModel implements TreeModel {
             }
             return true;
 	}
-        
-        
-        
+
+
+
 	public Object getParent(Object node) {
             if(node != getRoot() && (node instanceof TreeNode)) {
                 return ((TreeNode)node).getParent();
             }
             return null;
 	}
-        
+
 
         public boolean isNodeVisible(Object node) {
             if(node != getRoot()) {
@@ -217,7 +217,7 @@ public class HideableTreeModel implements TreeModel {
             }
             return true;
 	}
- 
+
 
         public boolean setNodeVisible(Object node, boolean v) {
             // can't hide root
@@ -243,7 +243,7 @@ public class HideableTreeModel implements TreeModel {
             }
             return false;
 	}
- 
+
 
         public boolean isPathToNodeVisible(Object node) {
             Object[] path = getPathToRoot(node);
@@ -254,7 +254,7 @@ public class HideableTreeModel implements TreeModel {
             }
             return true;
 	}
- 
+
 
         public void ensurePathToNodeVisible(Object node) {
             Object[] path = getPathToRoot(node);
@@ -262,7 +262,7 @@ public class HideableTreeModel implements TreeModel {
                 setNodeVisible(path[i], true);
             }
 	}
- 
+
 
         public Object getChild(Object parent, int index) {
             if(parent instanceof TreeNode) {
@@ -279,7 +279,7 @@ public class HideableTreeModel implements TreeModel {
             }
             return null;
 	}
- 
+
 
         public int getChildCount(Object parent) {
             int count = 0;
@@ -294,7 +294,7 @@ public class HideableTreeModel implements TreeModel {
             }
             return count;
 	}
- 
+
 
         public int getIndexOfChild(Object parent, Object child) {
             int index = -1;

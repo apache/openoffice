@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -42,38 +42,38 @@ public class UninstallationImminent extends JPanel {
     private String infoText;
     private JEditorPane ProductInformation;
     private JScrollPane ProductPane;
-    
+
     public UninstallationImminent() {
 
         InstallData data = InstallData.getInstance();
-        
+
         setLayout(new java.awt.BorderLayout());
         setBorder(new EmptyBorder(new Insets(10, 10, 10, 10)));
- 
+
         String titletext = ResourceManager.getString("String_UninstallationImminent1");
         PanelTitle titlebox = new PanelTitle(titletext);
         add(titlebox, BorderLayout.NORTH);
-       
+
         JPanel contentpanel = new JPanel();
         contentpanel.setLayout(new java.awt.BorderLayout());
         if ( data.useRtl() ) { contentpanel.setComponentOrientation(ComponentOrientation.RIGHT_TO_LEFT); }
-       
+
         String text1 = ResourceManager.getString("String_UninstallationImminent2");
         PanelLabel label1 = new PanelLabel(text1);
         if ( data.useRtl() ) { label1.setComponentOrientation(ComponentOrientation.RIGHT_TO_LEFT); }
-           
+
         ProductInformation = new JEditorPane("text/html", getInfoText());
         ProductInformation.setEditable(false);
         if ( data.useRtl() ) { ProductInformation.setComponentOrientation(ComponentOrientation.RIGHT_TO_LEFT); }
-        
+
         ProductPane = new JScrollPane(ProductInformation);
         ProductPane.setPreferredSize(new Dimension(250, 145));
         ProductPane.setBorder(new EmptyBorder(10, 0, 10, 0));
         if ( data.useRtl() ) { ProductPane.setComponentOrientation(ComponentOrientation.RIGHT_TO_LEFT); }
- 
-        contentpanel.add(label1, BorderLayout.NORTH);        
+
+        contentpanel.add(label1, BorderLayout.NORTH);
         contentpanel.add(ProductPane, BorderLayout.CENTER);
- 
+
         add(contentpanel, BorderLayout.CENTER);
     }
 
@@ -85,15 +85,15 @@ public class UninstallationImminent extends JPanel {
     public String getInfoText() {
         return infoText;
     }
-    
+
     public void updateInfoText() {
         ProductInformation.setText(infoText);
     }
-    
+
     public void setTabOrder() {
         JScrollBar ScrollBar = ProductPane.getVerticalScrollBar();
         if ( ScrollBar.isShowing() ) {
-            ProductInformation.setFocusable(true);            
+            ProductInformation.setFocusable(true);
         } else {
             ProductInformation.setFocusable(false);
         }

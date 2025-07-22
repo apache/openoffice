@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -67,14 +67,14 @@ import com.sun.star.util.XCloseable;
  */
 
 public class SCUtil {
-	
+
 	private static final String scTempDir = "output/sc/"; //Spreadsheet temp file directory
-	private static HashMap filterName = new HashMap(); 
-		
+	private static HashMap filterName = new HashMap();
+
 	private SCUtil() {
-		
+
 	}
-	
+
 	/**
 	 * Get spreadsheet document object
 	 * @param xSpreadsheetComponent
@@ -82,27 +82,27 @@ public class SCUtil {
 	 * @throws Exception
 	 */
     public static XSpreadsheetDocument getSCDocument(XComponent xSpreadsheetComponent) throws Exception {
-    	XSpreadsheetDocument xSpreadsheetDocument = 
+    	XSpreadsheetDocument xSpreadsheetDocument =
         		(XSpreadsheetDocument) UnoRuntime.queryInterface(XSpreadsheetDocument.class, xSpreadsheetComponent);
-        
+
         return xSpreadsheetDocument;
     }
-	
+
     /**
      * Get sheet object by sheet name
      * @param xSpreadsheetDocument
-     * @param sheetName 
+     * @param sheetName
      * @return
      * @throws Exception
      */
 	public static XSpreadsheet getSCSheetByName(XSpreadsheetDocument xSpreadsheetDocument, String sheetName) throws Exception {
 		XSpreadsheets xSpreadsheets = xSpreadsheetDocument.getSheets();
-		XSpreadsheet xSpreadsheet = 
+		XSpreadsheet xSpreadsheet =
 				(XSpreadsheet) UnoRuntime.queryInterface(XSpreadsheet.class, xSpreadsheets.getByName(sheetName));
-		
+
 		return xSpreadsheet;
 	}
-	
+
 	/**
 	 * Get sheet object by sheet index
 	 * @param xSpreadsheetDocument
@@ -112,17 +112,17 @@ public class SCUtil {
 	 */
 	public static XSpreadsheet getSCSheetByIndex(XSpreadsheetDocument xSpreadsheetDocument, short index) throws Exception {
 		XSpreadsheets xSpreadsheets = xSpreadsheetDocument.getSheets();
-		XIndexAccess xIndexAccess = 
+		XIndexAccess xIndexAccess =
 				(XIndexAccess) UnoRuntime.queryInterface(XIndexAccess.class, xSpreadsheets);
-		XSpreadsheet xSpreadsheet = 
+		XSpreadsheet xSpreadsheet =
 				(XSpreadsheet) UnoRuntime.queryInterface(XSpreadsheet.class, xIndexAccess.getByIndex(index));
-		
+
 		return xSpreadsheet;
 	}
-	
+
 	/**
 	 * Get sheet name by sheet index
-	 * 
+	 *
 	 * @param xSpreadsheetDocument
 	 * @param index
 	 *            (Short) 0,1,2,...
@@ -144,7 +144,7 @@ public class SCUtil {
 
 	/**
 	 * Set sheet name by sheet index
-	 * 
+	 *
 	 * @param xSpreadsheetDocument
 	 * @param index
 	 *            (Short) 0,1,2,...
@@ -163,7 +163,7 @@ public class SCUtil {
 				xSpreadsheet);
 		xsheetname.setName(sheetname);
 	}
-	
+
 	/**
 	 * Get rows object
 	 * @param xSpreadsheet
@@ -171,13 +171,13 @@ public class SCUtil {
 	 * @throws Exception
 	 */
 	public static XTableRows getSCRows(XSpreadsheet xSpreadsheet) throws Exception {
-		XColumnRowRange xColumnRowRange = 
+		XColumnRowRange xColumnRowRange =
 				(XColumnRowRange) UnoRuntime.queryInterface(XColumnRowRange.class, xSpreadsheet);
 		XTableRows xTableRows = xColumnRowRange.getRows();
-		
+
 		return xTableRows;
 	}
-	
+
 	/**
 	 * Get columns object
 	 * @param xSpreadsheet
@@ -185,15 +185,15 @@ public class SCUtil {
 	 * @throws Exception
 	 */
 	public static XTableColumns getSCColumns(XSpreadsheet xSpreadsheet) throws Exception {
-		XColumnRowRange xColumnRowRange = 
+		XColumnRowRange xColumnRowRange =
 				(XColumnRowRange) UnoRuntime.queryInterface(XColumnRowRange.class, xSpreadsheet);
 		XTableColumns xTableColumns = xColumnRowRange.getColumns();
-		
+
 		return xTableColumns;
 	}
-	
+
 	/**
-	 * Set floating number into specific cell 
+	 * Set floating number into specific cell
 	 * @param xSpreadsheet
 	 * @param column
 	 * @param row
@@ -204,7 +204,7 @@ public class SCUtil {
 		XCell xCell = xSpreadsheet.getCellByPosition(column, row);
 		xCell.setValue(value);
 	}
-	
+
 	/**
 	 * Set text into specific cell
 	 * @param xSpreadsheet
@@ -229,7 +229,7 @@ public class SCUtil {
 		XText xText = (XText) UnoRuntime.queryInterface(XText.class, xCell);
 		xText.setString(text);
 	}
-	
+
 	/**
 	 * Set formula into specific cell
 	 * @param xSpreadsheet
@@ -242,7 +242,7 @@ public class SCUtil {
 		XCell xCell = xSpreadsheet.getCellByPosition(column, row);
 		xCell.setFormula(formula);
 	}
-	
+
 	/**
 	 * Get value from specific cell
 	 * @param xSpreadsheet
@@ -254,26 +254,26 @@ public class SCUtil {
 	public static double getValueFromCell(XSpreadsheet xSpreadsheet, int column, int row) throws Exception {
 		XCell xCell = xSpreadsheet.getCellByPosition(column, row);
 		double cellValue = xCell.getValue();
-		
+
 		return cellValue;
 	}
-	
+
 	/**
 	 * Get text from specific cell
 	 * @param xSpreadsheet
 	 * @param column
 	 * @param row
-	 * 
+	 *
 	 * @return
 	 * @throws Exception
 	 */
 	public static String getTextFromCell(XSpreadsheet xSpreadsheet, int column, int row) throws Exception {
 		XCell xCell = xSpreadsheet.getCellByPosition(column, row);
 		XText xText = (XText) UnoRuntime.queryInterface(XText.class, xCell);
-		
+
 		return xText.getString();
 	}
-	
+
 	/**
 	 * Get formula string from specific cell
 	 * @param xSpreadsheet
@@ -285,10 +285,10 @@ public class SCUtil {
 	public static String getFormulaFromCell(XSpreadsheet xSpreadsheet, int column, int row) throws Exception {
 		XCell xCell = xSpreadsheet.getCellByPosition(column, row);
 		String cellFormula = xCell.getFormula();
-		
+
 		return cellFormula;
 	}
-	
+
 	/**
 	 * Set numbers into a cell range
 	 * @param xSpreadsheet
@@ -310,7 +310,7 @@ public class SCUtil {
 			}
 		}
 	}
-	
+
 	public static void setValueToCellRange(XSpreadsheet xSpreadsheet, int start_col, int start_row, double[][] values) throws Exception {
 		XCellRange xCellRange = xSpreadsheet.getCellRangeByPosition(start_col, start_row, start_col + values[0].length - 1, start_row + values.length - 1);
 		XCell xCell = null;
@@ -321,7 +321,7 @@ public class SCUtil {
 			}
 		}
 	}
-	
+
 	/**
 	 * Set text into a cell range
 	 * @param xSpreadsheet
@@ -332,7 +332,7 @@ public class SCUtil {
 	 * @param texts
 	 * @throws Exception
 	 */
-	@Deprecated  
+	@Deprecated
 	public static void setTextToCellRange(XSpreadsheet xSpreadsheet, int start_col, int start_row, int end_col, int end_row,  String[][] texts) throws Exception {
 		XCellRange xCellRange = xSpreadsheet.getCellRangeByPosition(start_col, start_row, end_col, end_row);
 		XCell xCell = null;
@@ -345,7 +345,7 @@ public class SCUtil {
 			}
 		}
 	}
-	
+
 	public static void setTextToCellRange(XSpreadsheet xSpreadsheet, int start_col, int start_row, String[][] texts) throws Exception {
 		XCellRange xCellRange = xSpreadsheet.getCellRangeByPosition(start_col, start_row, start_col + texts[0].length - 1, start_row + texts.length - 1);
 		XCell xCell = null;
@@ -358,7 +358,7 @@ public class SCUtil {
 			}
 		}
 	}
-	
+
 	/**
 	 * Get number content from a cell range
 	 * @param xSpreadsheet
@@ -373,17 +373,17 @@ public class SCUtil {
 		XCellRange xCellRange = xSpreadsheet.getCellRangeByPosition(start_col, start_row, end_col, end_row);
 		XCell xCell = null;
 		double[][] cellValues = new double[end_row - start_row+1][end_col - start_col +1];
-		
+
 		for (int i = 0; i <= (end_row - start_row); i++ ) {
 			for(int j = 0; j <= (end_col - start_col); j++) {
 				xCell = xCellRange.getCellByPosition(j, i);
 				cellValues[i][j] = xCell.getValue();
 			}
 		}
-		
+
 		return cellValues;
 	}
-	
+
 	/**
 	 * Get text content from a cell range
 	 * @param xSpreadsheet
@@ -399,7 +399,7 @@ public class SCUtil {
 		XCell xCell = null;
 		XText xText = null;
 		String[][] cellTexts = new String[end_row - start_row+1][end_col - start_col +1];
-		
+
 		for (int i = 0; i <= (end_row - start_row); i++ ) {
 			for (int j = 0; j <= (end_col - start_col); j++) {
 				xCell = xCellRange.getCellByPosition(j, i);
@@ -407,12 +407,12 @@ public class SCUtil {
 				cellTexts[i][j] = xText.getString();
 			}
 		}
-		
+
 		return cellTexts;
 	}
-		
+
 	//TODO ZS - public static String[][] getAllFromCellRange
-	
+
 	/**
 	 * Switch to specific sheet
 	 * @param xSpreadsheetDocument
@@ -424,7 +424,7 @@ public class SCUtil {
 		XSpreadsheetView xSpreadsheetView = (XSpreadsheetView) UnoRuntime.queryInterface(XSpreadsheetView.class, xController);
 		xSpreadsheetView.setActiveSheet(xSpreadsheet);
 	}
-	
+
 	/**
 	 * Get sheet object of current active sheet
 	 * @param xSpreadsheetDocument
@@ -435,13 +435,13 @@ public class SCUtil {
 		XController xController = xModel.getCurrentController();
 		XSpreadsheetView xSpreadsheetView = (XSpreadsheetView) UnoRuntime.queryInterface(XSpreadsheetView.class, xController);
 		XSpreadsheet xSpreadsheet = xSpreadsheetView.getActiveSheet();
-		
+
 		return xSpreadsheet;
 	}
-	
+
 	/**
 	 * Get sheet object by sheet index
-	 * 
+	 *
 	 * @param xSpreadsheetDocument
 	 * @return
 	 * @throws Exception
@@ -458,7 +458,7 @@ public class SCUtil {
 				XNamed.class, activesheet);
 		return activesheetName.getName();
 	}
-	
+
 	/**
 	 * Set specific property's value for an object
 	 * @param obj
@@ -467,11 +467,11 @@ public class SCUtil {
 	 * @throws Exception
 	 */
 	public static void setProperties(Object obj, String propName, Object value) throws Exception {
-		XPropertySet xPropertySet = 
+		XPropertySet xPropertySet =
 				(XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, obj);
 		xPropertySet.setPropertyValue(propName, value);
 	}
-	
+
 	/**
 	 * Get specific property's value of an object
 	 * @param obj
@@ -480,13 +480,13 @@ public class SCUtil {
 	 * @throws Exception
 	 */
 	public static Object getProperties(Object obj, String propName) throws Exception {
-		XPropertySet xPropertySet = 
+		XPropertySet xPropertySet =
 				(XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, obj);
 		Object value = xPropertySet.getPropertyValue(propName);
-		
+
 		return value;
-	}	
-	
+	}
+
 	/**
 	 * Set value of specific property from a cell
 	 * @param xCell
@@ -495,7 +495,7 @@ public class SCUtil {
 	 * @throws Exception
 	 */
 	public static void setCellProperties(XCell xCell, String propName, Object value) throws Exception {
-		
+
 		setProperties(xCell, propName, value);
 	}
 
@@ -509,14 +509,14 @@ public class SCUtil {
 	public static Object getCellProperties(XCell xCell, String propName) throws Exception {
 			return getProperties(xCell, propName);
 	}
-	
+
 	/**
 	 * Clear temp file directory
 	 */
 	public static void clearTempDir() {
-		FileUtil.deleteFile(Testspace.getFile(Testspace.getPath(scTempDir))); 
+		FileUtil.deleteFile(Testspace.getFile(Testspace.getPath(scTempDir)));
 	}
-	
+
 	/**
 	 * Save file as specific file format into spreadsheet temp file folder.
 	 * @param scComponent
@@ -525,11 +525,11 @@ public class SCUtil {
 	 * @throws Exception
 	 */
 	public static void saveFileAs(XComponent scComponent, String fileName, String extName) throws Exception {
-		
+
 		initFilterName();
 
 		String storeUrl = Testspace.getUrl(scTempDir + fileName + "." + extName);
-		
+
 		PropertyValue[] storeProps = new PropertyValue[2];
 		storeProps[0] = new PropertyValue();
 		storeProps[0].Name = "FilterName";
@@ -537,14 +537,14 @@ public class SCUtil {
 		storeProps[1] = new PropertyValue();
 		storeProps[1].Name = "Overwrite";
 		storeProps[1].Value = new Boolean(true);
-		
-		XStorable scStorable = 
+
+		XStorable scStorable =
 				(XStorable) UnoRuntime.queryInterface(XStorable.class, scComponent);
 		scStorable.storeAsURL(storeUrl, storeProps);
 	}
-	
+
 	/**
-	 * Save file after open file. 
+	 * Save file after open file.
 	 * @param xSpreadsheetDocument
 	 * @throws Exception
 	 */
@@ -555,7 +555,7 @@ public class SCUtil {
 		scStorable.store();
 	}
 
-	
+
 	/**
 	 * Close specific opening spreadsheet file which has been saved
 	 * @param xSpreadsheetDocument
@@ -565,7 +565,7 @@ public class SCUtil {
 		XCloseable xCloseable = (XCloseable) UnoRuntime.queryInterface(XCloseable.class, xSpreadsheetDocument);
 		xCloseable.close(false);
 	}
-	
+
 	/**
 	 * Close a opening file saved in spreadsheet temp file direction and reopen it in Spreadsheet. For save&reload test scenario only.
 	 * @param unoApp
@@ -576,16 +576,16 @@ public class SCUtil {
 	 */
 	public static XSpreadsheetDocument reloadFile(UnoApp unoApp, XSpreadsheetDocument xSpreadsheetDocument, String fullFileName) throws Exception {
 		closeFile(xSpreadsheetDocument);
-		
+
 		String filePath = Testspace.getPath(scTempDir + fullFileName);
 		XSpreadsheetDocument xScDocument = (XSpreadsheetDocument) UnoRuntime.queryInterface(XSpreadsheetDocument.class, unoApp.loadDocument(filePath));
-		
+
 		return xScDocument;
 	}
-	
+
 	/**
 	 * open file in Spreadsheet.
-	 * @param app  
+	 * @param app
 	 * @param filePath   File path with the extension name. (e.g. "testcase/uno/sc/data/sample.xls")
 	 * @return
 	 * @throws Exception
@@ -593,7 +593,7 @@ public class SCUtil {
 	public static XSpreadsheetDocument openFile(String filePath, UnoApp app) throws Exception {
 		return (XSpreadsheetDocument) UnoRuntime.queryInterface(XSpreadsheetDocument.class, app.loadDocument(filePath));
 	}
-	
+
 	/**
 	 * Initial the filter name list
 	 * @throws Exception
@@ -602,15 +602,15 @@ public class SCUtil {
 		if (filterName.size() > 0) {
 			return;
 		}
-		
+
 		filterName.put("ods", "calc8");
 		filterName.put("ots", "calc8_template");
 		filterName.put("xls", "MS Excel 97");
 		filterName.put("xlt", "MS Excel 97 Vorlage/Template");
 		filterName.put("csv", "Text - txt - csv (StarCalc)");
 	}
-	
-	
+
+
 	/***************************************************************
 	 *      Chart Utility method - using chart interface           *
 	****************************************************************/
@@ -623,13 +623,13 @@ public class SCUtil {
 	 */
 	public static CellRangeAddress getChartDataRangeByName(XSpreadsheet xSpreadsheet, String rangeName) {
 		XCellRange cellRange = xSpreadsheet.getCellRangeByName(rangeName);
-		XCellRangeAddressable xCellRangeAddressable = 
+		XCellRangeAddressable xCellRangeAddressable =
 			(XCellRangeAddressable) UnoRuntime.queryInterface(XCellRangeAddressable.class, cellRange);
-	
+
 		CellRangeAddress cellRangeAddress = xCellRangeAddressable.getRangeAddress();
 		return cellRangeAddress;
 	}
-	
+
 	/**
 	 * Create a spreadsheet chart with data in a specific cell range.
 	 * @param xSpreadsheet
@@ -640,30 +640,30 @@ public class SCUtil {
 	 * @throws Exception
 	 */
 	public static XChartDocument createChart(XSpreadsheet xSpreadsheet, Rectangle rec, CellRangeAddress[] dataRangeAddress, String chartName) throws Exception {
-		
+
 		return createChart(xSpreadsheet, rec, dataRangeAddress, chartName, true, false);
 	}
-	
+
 	/**
 	 * Create a spreadsheet chart with data in a specific cell range with column/row label enable/not.
 	 * @param xSpreadsheet
 	 * @param rec    a rectangle shape object
 	 * @param dataRangeAddress    the CellRangeAddress array of chart data source
 	 * @param chartName
-	 * @param hasColumnLabel  
+	 * @param hasColumnLabel
 	 * @param hasRowLabel
 	 * @return
 	 * @throws Exception
 	 */
 	public static XChartDocument createChart(XSpreadsheet xSpreadsheet, Rectangle rec, CellRangeAddress[] dataRangeAddress, String chartName, Boolean hasColumnLabel, Boolean hasRowLabel) throws Exception {
 		XChartDocument xChartDocument = null;
-		XTableChartsSupplier xTChartSupplier = 
+		XTableChartsSupplier xTChartSupplier =
 				(XTableChartsSupplier) UnoRuntime.queryInterface(XTableChartsSupplier.class, xSpreadsheet);
 		XTableCharts xTableCharts = xTChartSupplier.getCharts();
-		XNameAccess xNameAccess = 
+		XNameAccess xNameAccess =
 				(XNameAccess) UnoRuntime.queryInterface(XNameAccess.class, xTableCharts);
 		if (xNameAccess != null && !xNameAccess.hasByName(chartName)) {
-			
+
 			xTableCharts.addNewByName(chartName, rec, dataRangeAddress, hasColumnLabel, hasRowLabel);
 			XTableChart xTableChart = (XTableChart) UnoRuntime.queryInterface(
 					XTableChart.class, xNameAccess.getByName(chartName));
@@ -672,10 +672,10 @@ public class SCUtil {
 			xChartDocument = (XChartDocument) UnoRuntime.queryInterface(
 					XChartDocument.class, xEmbeddedObjectSupplier.getEmbeddedObject());
 		}
-		
+
 		return xChartDocument;
 	}
-	
+
 	/**
 	 * Get XChartDocument object via the chart name.
 	 * @param xSpreadsheet
@@ -685,12 +685,12 @@ public class SCUtil {
 	 */
 	public static XChartDocument getChartByName(XSpreadsheet xSpreadsheet, String chartName) throws Exception {
 		XChartDocument xChartDocument = null;
-		XTableChartsSupplier xTChartSupplier = 
+		XTableChartsSupplier xTChartSupplier =
 				(XTableChartsSupplier) UnoRuntime.queryInterface(XTableChartsSupplier.class, xSpreadsheet);
 		XTableCharts xTableCharts = xTChartSupplier.getCharts();
-		XNameAccess xNameAccess = 
+		XNameAccess xNameAccess =
 				(XNameAccess) UnoRuntime.queryInterface(XNameAccess.class, xTableCharts);
-		
+
 		if (xNameAccess != null && xNameAccess.hasByName(chartName)) {
 			XTableChart xTableChart = (XTableChart) UnoRuntime.queryInterface(
 					XTableChart.class, xNameAccess.getByName(chartName));
@@ -699,10 +699,10 @@ public class SCUtil {
 			xChartDocument = (XChartDocument) UnoRuntime.queryInterface(
 					XChartDocument.class, xEmbeddedObjectSupplier.getEmbeddedObject());
 		}
-		
+
 		return xChartDocument;
 	}
-	
+
 	/**
 	 * Set specific basic type to chart
 	 * @param xChartDocument
@@ -716,7 +716,7 @@ public class SCUtil {
 			XDiagram.class, xMultiServiceFactory.createInstance(chartType));
 		xChartDocument.setDiagram(xDiagram);
 	}
-	
+
 	/**
 	 * Get the type string of a chart
 	 * @param xChartDocument
@@ -726,7 +726,7 @@ public class SCUtil {
 	public static String getChartType(XChartDocument xChartDocument) throws Exception {
 		return xChartDocument.getDiagram().getDiagramType();
 	}
-	
+
 	/**
 	 * Get the names of charts in specific sheet
 	 * @param xSpreadsheet
@@ -734,13 +734,13 @@ public class SCUtil {
 	 * @throws Exception
 	 */
 	public static String[] getChartNameList(XSpreadsheet xSpreadsheet) throws Exception {
-		XTableChartsSupplier xTChartSupplier = 
+		XTableChartsSupplier xTChartSupplier =
 				(XTableChartsSupplier) UnoRuntime.queryInterface(XTableChartsSupplier.class, xSpreadsheet);
 		XTableCharts xTableCharts = xTChartSupplier.getCharts();
 		String[] chartNames = xTableCharts.getElementNames();
 		return chartNames;
 	}
-	
+
 
 
 }

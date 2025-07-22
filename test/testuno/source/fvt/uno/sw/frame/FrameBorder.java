@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 package fvt.uno.sw.frame;
 
@@ -48,7 +48,7 @@ public class FrameBorder {
 	private XText xText=null;
 	@Before
 	public void setUp() throws Exception {
-		app.start();		
+		app.start();
 	}
 
 	@After
@@ -65,9 +65,9 @@ public class FrameBorder {
 		xWriterFactory =(XMultiServiceFactory)UnoRuntime.queryInterface(XMultiServiceFactory.class, xTextDocument);
 		// Create a new table from the document's factory
 		XTextFrame xTextFrame = (XTextFrame)UnoRuntime.queryInterface(XTextFrame.class, xWriterFactory.createInstance("com.sun.star.text.TextFrame"));
-		xText.insertTextContent(xTextCursor,xTextFrame,false);		
+		xText.insertTextContent(xTextCursor,xTextFrame,false);
 		XPropertySet xTextFramerops = (XPropertySet)UnoRuntime.queryInterface(XPropertySet.class, xTextFrame);
-		//set frame border	
+		//set frame border
 		BorderLine[]borderLine=new BorderLine[] {new BorderLine(),new BorderLine(),new BorderLine(),new BorderLine()};
 		borderLine[0].Color=0x00FF0000;
 		borderLine[0].InnerLineWidth=101;
@@ -76,7 +76,7 @@ public class FrameBorder {
 		borderLine[1].Color =0x00FFFF00;
 		borderLine[1].InnerLineWidth=101;
 		borderLine[1].OuterLineWidth=19;
-		borderLine[1].LineDistance=101;	
+		borderLine[1].LineDistance=101;
 		borderLine[2].Color =0x0000FF00;
 		borderLine[2].InnerLineWidth=150;
 		borderLine[2].OuterLineWidth=19;
@@ -84,12 +84,12 @@ public class FrameBorder {
 		borderLine[3].Color =0x0000FF00;
 		borderLine[3].InnerLineWidth=150;
 		borderLine[3].OuterLineWidth=19;
-		borderLine[3].LineDistance=101;			
+		borderLine[3].LineDistance=101;
 		xTextFramerops.setPropertyValue("LeftBorder", borderLine[0]);
 		xTextFramerops.setPropertyValue("RightBorder", borderLine[1]);
 		xTextFramerops.setPropertyValue("TopBorder", borderLine[2]);
 		xTextFramerops.setPropertyValue("BottomBorder", borderLine[3]);
-		//reopen the document 
+		//reopen the document
 		XTextDocument assertDocument_odt=(XTextDocument)UnoRuntime.queryInterface(XTextDocument.class, SWUtil.saveTo_Override_reload(xTextDocument,"writer8", Testspace.getPath("output/test.odt"),app));
 		XTextFramesSupplier xTFS_odt = (XTextFramesSupplier) UnoRuntime.queryInterface(XTextFramesSupplier.class, assertDocument_odt);
 		XNameAccess xTextFrames_odt = xTFS_odt.getTextFrames();
@@ -108,11 +108,11 @@ public class FrameBorder {
 		assertEquals("assert leftline color as setting",0x0000FF00,TopBorder_Assert_odt.Color);
 		assertEquals("assert leftline innerline width as setting",150,TopBorder_Assert_odt.InnerLineWidth);
 		assertEquals("assert leftline outerlinewidth as setting",19,TopBorder_Assert_odt.OuterLineWidth);
-		assertEquals("assert leftline linedistance as setting",101,TopBorder_Assert_odt.LineDistance);	
+		assertEquals("assert leftline linedistance as setting",101,TopBorder_Assert_odt.LineDistance);
 		BorderLine BottomBorder_Assert_odt=(BorderLine) UnoRuntime.queryInterface(BorderLine.class, xFrameProps_Assert_odt.getPropertyValue("BottomBorder"));
 		assertEquals("assert rightline color as setting",0x0000FF00,BottomBorder_Assert_odt.Color);
-		assertEquals("assert rightline linedistance as setting",101,BottomBorder_Assert_odt.LineDistance);		
+		assertEquals("assert rightline linedistance as setting",101,BottomBorder_Assert_odt.LineDistance);
 		assertEquals("assert rightline innerline width as setting",150,BottomBorder_Assert_odt.InnerLineWidth);
-		assertEquals("assert rightline outerlinewidth as setting",19,BottomBorder_Assert_odt.OuterLineWidth);	
+		assertEquals("assert rightline outerlinewidth as setting",19,BottomBorder_Assert_odt.OuterLineWidth);
 	}
 }
