@@ -151,7 +151,7 @@
 <bookmark xml-lang="en-US" branch="hid/cui:CheckBox:RID_SFXPAGE_SAVE:BTN_ODFENCRYPTION" id="bm_id3165414" localize="false"/>
 <paragraph xml-lang="en-US" id="hd_id3164920" role="heading" level="3" l10n="NEW"
                  oldref="77">File encryption algorithm for ODF 1.2 format</paragraph>
-      <paragraph xml-lang="en-US" id="par_id3160488" role="paragraph" l10n="U" oldref="78"><ahelp hid="SVX_CHECKBOX_RID_SFXPAGE_SAVE_BTN_ODFENCRYPTION">Change the default file encryption from blowfish to AES-256 when ODF 1.2 is used.</ahelp> The default file encryption algorithm is blowfish but when ODF 1.2 is used the user can change the default to AES-256. Older encrypted documents can still be loaded but new encrypted documents can't be opened with older office versions. The AES-256 algorithm is more secure than blowfish.</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3160488" role="paragraph" l10n="U" oldref="78"><ahelp hid="SVX_CHECKBOX_RID_SFXPAGE_SAVE_BTN_ODFENCRYPTION">Change the default file encryption from Blowfish to AES-256 when ODF 1.2 is used.</ahelp> The default file encryption algorithm is Blowfish but when ODF 1.2 is used the user can change the default to AES-256. Older encrypted documents can still be loaded but new encrypted documents can't be opened with older office versions. The AES-256 algorithm is more secure than Blowfish.</paragraph>
 <bookmark xml-lang="en-US" branch="hid/cui:CheckBox:RID_SFXPAGE_SAVE:BTN_NOPRETTYPRINTING" id="bm_id3155414" localize="false"/>
 <paragraph xml-lang="en-US" id="hd_id3154920" role="heading" level="3" l10n="CHG"
                  oldref="77">Size optimization for ODF format</paragraph>
