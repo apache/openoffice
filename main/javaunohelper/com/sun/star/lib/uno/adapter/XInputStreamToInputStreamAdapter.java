@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -37,15 +37,15 @@ import java.io.InputStream;
  */
 public class XInputStreamToInputStreamAdapter extends InputStream {
 
-    /** 
+    /**
      *  Internal handle to the XInputStream
      */
     private XInputStream xin;
- 
+
     /**
      *  Constructor.
      *
-     *  @param  in  The <code>XInputStream</code> to be 
+     *  @param  in  The <code>XInputStream</code> to be
      *              accessed as an <code>InputStream</code>.
      */
     public XInputStreamToInputStreamAdapter (XInputStream in) {
@@ -73,11 +73,11 @@ public class XInputStreamToInputStreamAdapter extends InputStream {
         }
     }
 
-    public int read () throws IOException {	
-        byte [][] tmp = new byte [1][1]; 
+    public int read () throws IOException {
+        byte [][] tmp = new byte [1][1];
         try {
             long bytesRead = xin.readBytes(tmp, 1);
-	  
+
             if (bytesRead <= 0) {
                return (-1);
             } else {
@@ -94,8 +94,8 @@ public class XInputStreamToInputStreamAdapter extends InputStream {
     }
 
     public int read (byte[] b) throws IOException {
-	
-        byte [][] tmp = new byte [1][b.length]; 
+
+        byte [][] tmp = new byte [1][b.length];
         int bytesRead;
 
         try {
@@ -127,7 +127,7 @@ public class XInputStreamToInputStreamAdapter extends InputStream {
 		bytesRead = xin.readBytes(tmp,len);
 	    }
             // Casting bytesRead to an int is okay, since the user can
-            // only pass in an integer length to read, so the bytesRead 
+            // only pass in an integer length to read, so the bytesRead
             // must <= len.
             //
             if (bytesRead <= 0) {
@@ -137,10 +137,10 @@ public class XInputStreamToInputStreamAdapter extends InputStream {
 	    } else {
                 System.arraycopy(tmp[0], 0, b, off, len);
 	    }
-	    
+
 	    return ((int)bytesRead);
-	    
-		
+
+
         } catch (Exception e) {
             throw new IOException("reader error: "+e.toString());
         }
@@ -166,7 +166,7 @@ public class XInputStreamToInputStreamAdapter extends InputStream {
                tmpIntVal = (int)tmpLongVal;
             }
             tmpLongVal -= tmpIntVal;
- 
+
             try {
                 xin.skipBytes(tmpIntVal);
             } catch (Exception e) {

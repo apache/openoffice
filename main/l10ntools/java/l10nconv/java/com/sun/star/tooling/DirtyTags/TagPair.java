@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -37,7 +37,7 @@ import java.util.Iterator;
  */
 public class TagPair {
 
-    
+
     private Tag startTag=Tag.EMPTYTAG;
     private Tag endTag=Tag.EMPTYTAG;
     private String startingText="";
@@ -54,7 +54,7 @@ public class TagPair {
 
         /**
          * Create a new Instance of TagPairConstructionException
-         * 
+         *
          * @param string
          */
         public TagPairConstructionException(String string) {
@@ -62,11 +62,11 @@ public class TagPair {
         }
 
     }
-    
+
     /**
      * Create a new Instance of TagPair
-     * 
-     * 
+     *
+     *
      */
     public TagPair() {
 
@@ -75,14 +75,14 @@ public class TagPair {
 
     /**
      * Create a new Instance of TagPair
-     * 
-     * Find matching tags in tagList, create a TagPair of it, create 
+     *
+     * Find matching tags in tagList, create a TagPair of it, create
      * tagPairs from the content in the tagPair and remove all used
-     * tags from tagList. The rest of the tagList starts after the 
+     * tags from tagList. The rest of the tagList starts after the
      * endTag of this TagPair.
-     * 
+     *
      * @param tagList a List of the tags to check
-     * 
+     *
      * @throws TagPairConstructionException
      */
     public TagPair(ArrayList tagList) throws TagPairConstructionException {
@@ -94,12 +94,12 @@ public class TagPair {
         Tag tag=(Tag)tagList.get(0);
         tagList.remove(0);
 
-        
+
         if("Text".equals(tag.getTagType())){
-            // is this Text the only content 
+            // is this Text the only content
             // of this Tag ?
             if(tagList.size()==0){
-                //yes...then it is the starting Text of this TagPair 
+                //yes...then it is the starting Text of this TagPair
                 this.startingText=tag.getTagString();
                 return;
             }else{
@@ -120,7 +120,7 @@ public class TagPair {
                 //is this the end tag?
                 if((tag=(Tag)iter.next()).getTagName().equals('/'+this.startTag.getTagName())&&equivalentTagCounter==0){
                     //found the corresponding end tag
-                    
+
                     //this TagPair is complete
                     //so it needs an id
                     this.id=TagPair.ElementCounter++;
@@ -131,8 +131,8 @@ public class TagPair {
                     break;
                 }else{
                     // tag is not the end tag
-                    // so it is between the start and the end tag 
-                    // and belongs to the content 
+                    // so it is between the start and the end tag
+                    // and belongs to the content
                    // but first check if it has the same name as the current tag
                     if(tag.getTagName().equals(this.startTag.getTagName())){
                         // if this is a start tag like the current start tag
@@ -146,17 +146,17 @@ public class TagPair {
                             equivalentTagCounter--;
                         }
                     }
-                    
+
                     contentList.add(tag);
                 }
             }
             //found the end tag ?
             //no...
             if (this.endTag.getTagType()==""){
-                
+
                 throw new TagPairConstructionException("ERROR: Missing end tag ("+
                         this.startTag.getTagString()+").");
-            //...yes            
+            //...yes
             }else{
                 //We need to check whether the content is starting or ending with text
                 //...check starting with text
@@ -182,7 +182,7 @@ public class TagPair {
             this.endTag=new Tag("EndOfStandAlone","","");
             createEnclosedTags(contentList);
         }
- 
+
     }
 
     /**
@@ -194,9 +194,9 @@ public class TagPair {
             //create the inner TagPairs
             this.enclosedTags.add(new TagPair(contentList));
         }
-        
+
     }
-    
+
     public String toString(){
         StringBuffer outString= new StringBuffer(this.startTag.toString());
         TagPair help=new TagPair();
@@ -213,28 +213,28 @@ public class TagPair {
         outString.append(this.endTag.toString());
         return new String(outString);
     }
-    
+
     public String getWrapped() throws IOException{
         Iterator iter=enclosedTags.iterator();
         StringBuffer returnBuffer=new StringBuffer();
-        
+
             returnBuffer.append(wrap(this.startTag)+xmlString(this.startingText));
             while(iter.hasNext()){
                 returnBuffer.append(((TagPair)iter.next()).getWrapped());
             }
             returnBuffer.append(xmlString(this.endingText)+wrap(this.endTag));
-       
-            
-       
+
+
+
         return new String(returnBuffer);
     }
-    
+
     private String wrap(Tag tag) throws IOException{
         String string="";
         //can be a start tag
         if(tag.getTagType().startsWith("Start")){
             return new String("<bpt id='"+this.id+"'>"+tag.getWrappedTagString()+"</bpt>");
-        //...or a end tag      
+        //...or a end tag
         }else if (tag.getTagType().startsWith("End")){
             //maybe the end tag of a Start and end tag
 //            if("EndOfStandAlone".equals(tag.getTagType())){
@@ -243,7 +243,7 @@ public class TagPair {
                 string=tag.getWrappedTagString();
                 return new String("<ept id='"+this.id+"'>"+string+"</ept>");
 //            }
-            
+
         //...or text
         }else{
             return xmlString(tag.getTagString());
@@ -251,7 +251,7 @@ public class TagPair {
     }
     /**
      * Replaces all characters that mustn't be in XLIFF PCdata
-     * 
+     *
      * @param string the string to check
      * @return the checked string with all characters replaced
      * @throws java.io.IOException
@@ -266,7 +266,7 @@ public class TagPair {
                  str=str.substring(0, i)+"&amp;"+str.substring(i+1);
                  continue;
              }
-    
+
              if(str.charAt(i)=='<'){
                  str=str.substring(0, i)+"&lt;"+str.substring(i+1);
                  continue;
@@ -292,12 +292,12 @@ public class TagPair {
     }
 
     /**
-     * 
+     *
      */
     public static void resetCounter() {
-        TagPair.ElementCounter=1; 
-        
+        TagPair.ElementCounter=1;
+
     }
-    
+
 
 }

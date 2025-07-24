@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -233,7 +233,7 @@ public class ParcelDescriptor {
             Map langProps = new HashMap();
             NodeList nl;
             Element tmp;
-            
+
             Element scriptElement = (Element)scriptNodes.item(i);
             language = scriptElement.getAttribute("language");
 
@@ -274,7 +274,7 @@ public class ParcelDescriptor {
             nl = scriptElement.getElementsByTagName("languagedepprops");
             if ( nl != null && nl.getLength() > 0 )
             {
-                
+
                 NodeList props = ((Element)nl.item(0)).getElementsByTagName("prop");
                 if ( props != null )
                 {
@@ -356,10 +356,10 @@ public class ParcelDescriptor {
                 catch (DOMException de) {
                     // ignore
                 }
-            }   
+            }
         }
     }
-        
+
     public void removeScriptEntry(ScriptEntry script) {
         NodeList scriptNodes;
         Element main = document.getDocumentElement();
@@ -389,17 +389,17 @@ public class ParcelDescriptor {
                 catch (DOMException de) {
                     // ignore
                 }
-            }   
+            }
         }
     }
 
     public void addScriptEntry(ScriptEntry script) {
         Element main = document.getDocumentElement();
-        Element root, item, tempitem; 
+        Element root, item, tempitem;
 
         root = document.createElement("script");
         root.setAttribute("language", script.getLanguage());
-            
+
         item = document.createElement("locale");
         item.setAttribute("lang", "en");
         tempitem = document.createElement("displayname");

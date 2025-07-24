@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -35,14 +35,14 @@ import java.io.*;
 
 public class Parcel implements XNameContainer
 {
-    protected ParcelDescriptor m_descriptor; 
+    protected ParcelDescriptor m_descriptor;
     protected String name;
     protected ParcelContainer parent;
     protected XSimpleFileAccess m_xSFA;
     public Parcel( XSimpleFileAccess xSFA, ParcelContainer parent, ParcelDescriptor desc, String parcelName )
     {
        this( parent, desc, parcelName );
-       this.m_xSFA = xSFA; 
+       this.m_xSFA = xSFA;
     }
 
     public Parcel( ParcelContainer parent, ParcelDescriptor desc, String parcelName )
@@ -83,7 +83,7 @@ public class Parcel implements XNameContainer
                             break;
                         }
                     }
-                }     
+                }
             }
         }
         // catch unknown or un-checked exceptions
@@ -95,7 +95,7 @@ public class Parcel implements XNameContainer
         {
             LogUtils.DEBUG("No script for " + aName );
             throw new com.sun.star.container.NoSuchElementException("No script named " + aName );
-        } 
+        }
         ScriptMetaData data = new ScriptMetaData( this, script, null );
 
         LogUtils.DEBUG("returning date  for " + aName );
@@ -103,14 +103,14 @@ public class Parcel implements XNameContainer
     }
     public String[] getElementNames()
     {
-        String[] results = new String[0]; 
+        String[] results = new String[0];
         if ( m_descriptor != null )
         {
             ScriptEntry[] scripts = m_descriptor.getScriptEntries();
             results = new String[ scripts.length ];
             for ( int index = 0; index < scripts.length; index++ )
             {
-                results[ index ] = scripts[ index ].getLanguageName(); 
+                results[ index ] = scripts[ index ].getLanguageName();
             }
         }
         return results;
@@ -125,7 +125,7 @@ public class Parcel implements XNameContainer
             containee = getByName( aName );
             if ( containee != null )
             {
-                result = true; 
+                result = true;
             }
         }
         catch( Exception e )
@@ -139,7 +139,7 @@ public class Parcel implements XNameContainer
         // TODO at the moment this returns void indicating
         // type is unknown ( from UNO point of view this is correct )
         // but, maybe we want to have a private UNO interface
-        // 
+        //
         return new Type();
     }
 
@@ -161,7 +161,7 @@ public class Parcel implements XNameContainer
            try
            {
                ScriptEntry script = (ScriptEntry)getByName( aName );
-               if ( script != null ) 
+               if ( script != null )
                {
                    //m_descriptor.removeScriptEntry( script );
                    // TODO needs to create source file ( if there is one )
@@ -171,15 +171,15 @@ public class Parcel implements XNameContainer
                {
                    throw new com.sun.star.container.NoSuchElementException("No script named " + aName );
                }
- 
- 
+
+
            }
            // TO DO should catch specified exceptions
            catch ( Exception e )
            {
                throw new com.sun.star.lang.WrappedTargetException();
            }
- 
+
        }
    }
 
@@ -188,7 +188,7 @@ public class Parcel implements XNameContainer
     {
         // TODO check the type of aElement and throw#
         // if not appropriate
-        try 
+        try
         {
             if ( hasByName( aName ) )
             {
@@ -207,13 +207,13 @@ public class Parcel implements XNameContainer
             m_descriptor.addScriptEntry( script );
             writeParcelDescriptor();
         }
-        catch ( Exception e ) 
+        catch ( Exception e )
         {
             LogUtils.DEBUG("Failed to insert entry " + aName + ": " + e.getMessage());
             throw new com.sun.star.lang.WrappedTargetException( e.toString() );
         }
     }
-  
+
 
     private void writeParcelDescriptor()
         throws com.sun.star.ucb.CommandAbortedException,
@@ -254,7 +254,7 @@ public class Parcel implements XNameContainer
     {
         try
         {
-            ScriptMetaData script = null; 
+            ScriptMetaData script = null;
             if ( ( script = (ScriptMetaData)getByName( Name ) ) != null )
             {
 //                if ( script.hasSource() )
@@ -274,7 +274,7 @@ public class Parcel implements XNameContainer
             {
                 throw new com.sun.star.container.NoSuchElementException( "No script named " + Name );
             }
- 
+
         }
         catch ( Exception e )
         {
@@ -287,17 +287,17 @@ public class Parcel implements XNameContainer
     public void rename( String name ) throws com.sun.star.lang.WrappedTargetException
     {
         this.name = name;
-    } 
+    }
     public ParcelContainer getParent() { return parent; }
     /**
      * Returns the path of this  <tt>Parcel</tt>
      *
-     * @return    <tt>String</tt> path to parcel 
+     * @return    <tt>String</tt> path to parcel
     */
     public String getPathToParcel()
     {
         String path = parent.getParcelContainerDir() + "/" + name;
         return path;
     }
-    
+
 }

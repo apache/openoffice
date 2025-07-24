@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -31,16 +31,16 @@ import com.sun.star.uno.UnoRuntime;
 import java.util.LinkedList;
 
 /** This class acts as a proxy for the simple screen reader.  It waits for
-    two types of events: 
+    two types of events:
     1. Accessibility events signal modifications concerning accessibility
        objects.
     2. Top window events inform the listener about new or removed windows.
 
     This class exists because events had to be handled in a separate thread
     to avoid dead locks: The thread that receives an event must no call back
-    to the Office directly.  
+    to the Office directly.
 
-    Soon this should not be necessary anymore.  There is now a flag which 
+    Soon this should not be necessary anymore.  There is now a flag which
     switches between synchronous and asynchronous callbacks.
 
     All reveived events are eventually forwarded to the actual listener.  In
@@ -98,7 +98,7 @@ class EventListenerProxy
                     else
                         aEvent = null;
                 }
- 
+
                 if (aEvent != null)
                 {
                     try
@@ -107,7 +107,7 @@ class EventListenerProxy
                     }
                     catch (Throwable aException)
                     {
-                        MessageArea.println( 
+                        MessageArea.println(
                             "Exception during event delivery: " + aException);
                         aException.printStackTrace();
                     }
@@ -125,7 +125,7 @@ class EventListenerProxy
             }
             catch (Exception aException)
             {
-                // Ignore this exception since there is not much 
+                // Ignore this exception since there is not much
                 // that we can do about it.
             }
         }
@@ -134,9 +134,9 @@ class EventListenerProxy
 
     public void disposing( final EventObject aEvent)
     {
-        addEvent (new Runnable() 
+        addEvent (new Runnable()
             {
-                public void run() 
+                public void run()
                 {
                     maListener.disposing (aEvent);
                 }

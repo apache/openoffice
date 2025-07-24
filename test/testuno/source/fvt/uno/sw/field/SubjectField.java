@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 package fvt.uno.sw.field;
 
@@ -47,18 +47,18 @@ public class SubjectField {
 	private static XTextDocument docDocument = null;
 	private  static String odtSample = "uno/sw/field/SubjectField.odt";
 	private static String docSample = "uno/sw/field/Test_Sample.doc";
-	
+
 	private  static String odtSaveAsDocSample = "uno/sw/field/odtSaveAsDOC.doc";
 	private static String docSaveAsODTSample = "uno/sw/field/docSaveAsODT.odt";
 
 	@Before
 	public void setUpDocument() throws Exception {
-		
+
 	}
 
 	@After
 	public void tearDownDocument() {
-	
+
 
 	}
 
@@ -72,9 +72,9 @@ public class SubjectField {
 			Exception {
 		app.close();
 	}
-	
+
 	/**
-	 * 
+	 *
 	 * Test Subject Field Can created and Saved in odt file
 	 * 1.launch a odt document
 	 * 2.Create a page count field at end of this page
@@ -85,34 +85,34 @@ public class SubjectField {
 	@Test
 	public void testSubjectFieldODT() throws Throwable {
 		odtDocument = SWUtil.openDocument(Testspace.prepareData(odtSample), app);
-		
-		
+
+
 		String subjectStr = "Test Subject Field";
 		createSubjectFiled(odtDocument);
-	
+
 		assertTrue("Verify Subject field is created use exist subject", isContainSubjectField(odtDocument, "UNO API Subject"));
 		assertTrue("Verify Subject field is created use exist subject, can get text from document",
 				isContainSubjectText(odtDocument, "UNO API Subject"));
-		//Set subject 
+		//Set subject
 		SWUtil.setDocumentProperty(odtDocument, "Subject", subjectStr);
 		//Verify after set subject
-		assertTrue("Verify Subject field is created, can get text from document", 
+		assertTrue("Verify Subject field is created, can get text from document",
 				isContainSubjectText(odtDocument, subjectStr));
-		
+
 		odtDocument = SWUtil.saveAndReload(odtDocument, app);
 		//verify after save and reload
 		assertTrue("Verify Subject field is created, after save, still exist.", isContainSubjectField(odtDocument, subjectStr));
-		assertTrue("Verify Subject field is created, can get text from document after saved.", 
+		assertTrue("Verify Subject field is created, can get text from document after saved.",
 				isContainSubjectText(odtDocument, subjectStr));
 		SWUtil.saveAsDoc(odtDocument, Testspace.getUrl(odtSaveAsDocSample));
 		app.closeDocument(odtDocument);
 		docDocument = SWUtil.openDocumentFromURL(Testspace.getUrl(odtSaveAsDocSample), app);
 		assertTrue("Verify Subject field is created, after saved to doc format, field still exist.", isContainSubjectField(docDocument, subjectStr));
-		assertTrue("Verify Subject field is created, after saved to doc format, can get text from document", 
+		assertTrue("Verify Subject field is created, after saved to doc format, can get text from document",
 				isContainSubjectText(docDocument, subjectStr));
 		app.closeDocument(docDocument);
 	}
-	
+
 	/**
 	 *  Test Subject Field Can created and Saved in Doc file
 	 * 1.launch a doc document
@@ -127,47 +127,47 @@ public class SubjectField {
 //		String subjectStr = "Test Subject Field";
 //		SWUtil.setDocumentProperty(docDocument, "Subject", subjectStr);
 //		createSubjectFiled(docDocument);
-//		
+//
 //		assertTrue("Verify Subject field is created.", isContainSubjectField(docDocument, subjectStr));
-//		assertTrue("Verify Subject field is created, can get text from document", 
+//		assertTrue("Verify Subject field is created, can get text from document",
 //				isContainSubjectText(docDocument, subjectStr));
-//		
+//
 //		docDocument = SWUtil.saveAndReload(docDocument, app);
 //		//verify after save and reload
 //		assertTrue("Verify Subject field is created, after save, still exist.", isContainSubjectField(docDocument, subjectStr));
-//		assertTrue("Verify Subject field is created, can get text from document after saved.", 
+//		assertTrue("Verify Subject field is created, can get text from document after saved.",
 //				isContainSubjectText(docDocument, subjectStr));
 //		SWUtil.saveAsODT(docDocument, Testspace.getUrl(docSaveAsODTSample));
 //		app.closeDocument(docDocument);
 //		odtDocument = SWUtil.openDocumentFromURL(Testspace.getUrl(docSaveAsODTSample), app);
 //		assertTrue("Verify Subject field is created, after saved to doc format, field still exist.", isContainSubjectField(odtDocument, subjectStr));
-//		assertTrue("Verify Subject field is created, after saved to doc format, can get text from document", 
+//		assertTrue("Verify Subject field is created, after saved to doc format, can get text from document",
 //				isContainSubjectText(odtDocument, subjectStr));
 //		app.closeDocument(odtDocument);
 //	}
-	
 
-	
+
+
 	/**
 	 * Create a subject field at start of this document
 	 * @param document
 	 * @throws Exception
 	 */
 	private void createSubjectFiled(XTextDocument document) throws Exception {
-		
+
 		XMultiServiceFactory sevriceFactory = (XMultiServiceFactory) UnoRuntime.queryInterface(XMultiServiceFactory.class, document);
 		XTextField  subjectField = (XTextField)UnoRuntime.queryInterface(XTextField.class, sevriceFactory.createInstance("com.sun.star.text.textfield.docinfo.Subject"));
-		
-	
+
+
 		SWUtil.moveCuror2Start(document);
 		document.getText().insertTextContent(document.getText().getStart(), subjectField, true);
-		
+
 	}
 
-	
+
 	/**
 	 * Check is contain subject content at start of this document
-	 * 
+	 *
 	 * @param document
 	 * @param content
 	 * @return
@@ -176,7 +176,7 @@ public class SubjectField {
 		String documentString = document.getText().getString().trim();
 		return documentString.indexOf(content) == 0;
 	}
-	
+
 	/**
 	 * Check is contain subject field
 	 * @param document
@@ -191,10 +191,10 @@ public class SubjectField {
 				XPropertySet props = (XPropertySet)UnoRuntime.queryInterface(XPropertySet.class, field);
 				String strContent = (String) props.getPropertyValue("Content");
 			    return content.equals(strContent);
-			
+
 		}
 		return false;
-		
+
 	}
-	
+
 }

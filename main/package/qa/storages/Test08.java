@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 package complex.storages;
@@ -52,7 +52,7 @@ public class Test08 implements StorageTest {
 	{
 		try
 		{
-	
+
 			// create temporary storage based on arbitrary medium
 			// after such a storage is closed it is lost
 			Object oTempStorage = m_xStorageFactory.createInstance();
@@ -72,7 +72,7 @@ public class Test08 implements StorageTest {
 				m_aTestHelper.Message( "Optional interface XEncryptionProtectedSource is not implemented, feature can not be tested!" );
 				return true;
 			}
-			
+
 			String sPass1 = "123";
 			String sPass2 = "321";
 
@@ -84,7 +84,7 @@ public class Test08 implements StorageTest {
 				m_aTestHelper.Error( "Can't set a common encryption key for the storage, exception:" + e );
 				return false;
 			}
-			
+
 			// open a new substorage
 			XStorage xTempSubStorage = m_aTestHelper.openSubStorage( xTempStorage,
 																		"SubStorage1",
@@ -94,7 +94,7 @@ public class Test08 implements StorageTest {
 				m_aTestHelper.Error( "Can't create substorage!" );
 				return false;
 			}
-			
+
             byte pBigBytes[] = new byte[33000];
 			for ( int nInd = 0; nInd < 33000; nInd++ )
 				pBigBytes[nInd] = (byte)( nInd % 128 );
@@ -147,7 +147,7 @@ public class Test08 implements StorageTest {
 				m_aTestHelper.Error( "No valid temporary file was created!" );
 				return false;
 			}
-	
+
 			// create temporary storage based on a previously created temporary file
 			Object pArgs[] = new Object[2];
 			pArgs[0] = (Object) sTempFileURL;
@@ -196,7 +196,7 @@ public class Test08 implements StorageTest {
 				m_aTestHelper.Error( "Can't open existing substorage!" );
 				return false;
 			}
-	
+
 			if ( !m_aTestHelper.checkStorageProperties( xResultSubStorage, "MediaType5", false, ElementModes.READ ) )
 				return false;
 
@@ -209,7 +209,7 @@ public class Test08 implements StorageTest {
 				m_aTestHelper.Error( "XEncryptionProtectedSource was successfully used already, so it must be supported!" );
 				return false;
 			}
-	
+
 			try {
 				xResultStorageEncryption.setEncryptionPassword( sPass2 );
 			}
@@ -246,5 +246,5 @@ public class Test08 implements StorageTest {
 			m_aTestHelper.Error( "Exception: " + e );
 			return false;
 		}
-    } 
+    }
 }

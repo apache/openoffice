@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -32,9 +32,9 @@ public class SwingUnoMethodNode extends SwingUnoNode implements ActionListener, 
 
     private UnoMethodNode m_oUnoMethodNode;
     private XDialogProvider m_xDialogProvider = null;
-    
+
     public SwingUnoMethodNode(XIdlMethod _xIdlMethod, Object _oUnoObject, XDialogProvider _xDialogProvider) {
-        super(_oUnoObject);      
+        super(_oUnoObject);
         m_oUnoMethodNode = new UnoMethodNode(_xIdlMethod, _oUnoObject, this);
         m_xDialogProvider = _xDialogProvider;
         setUserObject(m_oUnoMethodNode.getNodeDescription());
@@ -46,11 +46,11 @@ public class SwingUnoMethodNode extends SwingUnoNode implements ActionListener, 
     public boolean isFoldable(){
         return m_oUnoMethodNode.isFoldable();
     }
-    
+
     public String getName(){
         return m_oUnoMethodNode.getName();
-    }    
-    
+    }
+
     public String getClassName(){
         String sClassName = "";
         sClassName = getXIdlMethod().getDeclaringClass().getName();
@@ -58,17 +58,17 @@ public class SwingUnoMethodNode extends SwingUnoNode implements ActionListener, 
             sClassName = super.getClassName();
         }
         return sClassName;
-    }    
-    
+    }
+
     public String getAnchor(){
         return m_oUnoMethodNode.getAnchor();
     }
-    
+
     public Object invoke(Object _oUnoObject, Object[] _oParameters) throws com.sun.star.uno.Exception{
         return m_oUnoMethodNode.invoke(_oUnoObject, _oParameters);
     }
-    
-    
+
+
     public Object[] getLastParameterObjects(){
         return m_oUnoMethodNode.getLastParameterObjects();
     }
@@ -97,30 +97,30 @@ public class SwingUnoMethodNode extends SwingUnoNode implements ActionListener, 
         return m_oUnoMethodNode.isInvoked();
     }
 
-    public boolean isInvokable(){    
+    public boolean isInvokable(){
         return m_oUnoMethodNode.isInvokable();
     }
-    
+
     public boolean isPrimitive() {
         return m_oUnoMethodNode.isPrimitive();
     }
-    
+
     public void actionPerformed(ActionEvent e){
         openIdlDescription(m_xDialogProvider.getIDLPath());
     }
-    
+
     public Vector getMethodObjects(){
         MethodParametersDialog oMethodParametersDialog = new MethodParametersDialog(this);
         oMethodParametersDialog.addActionListener(this);
-        return oMethodParametersDialog.getMethodObjects();        
+        return oMethodParametersDialog.getMethodObjects();
     }
-    
-    
+
+
     public String getParameterDescription(){
         return m_oUnoMethodNode.getParameterDescription();
     }
-    
-    
+
+
     public String getStandardMethodDescription(){
         return m_oUnoMethodNode.getStandardMethodDescription();
     }

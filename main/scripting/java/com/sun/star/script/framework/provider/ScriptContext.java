@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -67,7 +67,7 @@ public class ScriptContext extends PropertySet implements XScriptContext
     public Integer m_iStorageID = null;
     public XComponentContext m_xComponentContext = null;
 
-    public ScriptContext( XComponentContext xmComponentContext, 
+    public ScriptContext( XComponentContext xmComponentContext,
         XDesktop xDesktop, XModel xModel, XScriptInvocationContext xInvocContext)
     {
         this.m_xDeskTop = xDesktop;
@@ -120,10 +120,10 @@ public class ScriptContext extends PropertySet implements XScriptContext
     }
 
     //----------------------------------------------------------------------
-    /** 
+    /**
         Obtain the document reference on which the script can operate
 
-        @returns 
+        @returns
 	      XModel interface
     */
     public XModel getDocument()
@@ -136,10 +136,10 @@ public class ScriptContext extends PropertySet implements XScriptContext
         return m_xInvocationContext;
     }
 
-    /** 
+    /**
         Obtain the desktop reference on which the script can operate
 
-        @returns 
+        @returns
 	      XDesktop interface
     */
     public XDesktop getDesktop()
@@ -147,10 +147,10 @@ public class ScriptContext extends PropertySet implements XScriptContext
         return m_xDeskTop;
     }
 
-    /** 
+    /**
         Obtain the component context which the script can use to create other uno components
 
-        @returns 
+        @returns
 	      XComponentContext interface
     */
     public XComponentContext getComponentContext()

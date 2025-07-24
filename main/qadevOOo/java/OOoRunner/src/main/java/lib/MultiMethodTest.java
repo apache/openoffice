@@ -163,7 +163,7 @@ public class MultiMethodTest
             String ifcName = getInterfaceName();
             // System.out.println("checking : " + ifcName);
             System.out.print("checking: [" + entry.longName + "]");
-            
+
             // defining a name of the class corresponding to the tested interface
             // or service
             String testedClassName;

@@ -40,10 +40,10 @@ import org.apache.openoffice.ooxml.schema.model.base.QualifiedName;
     {
         super(aParent, aName, aLocation);
     }
-    
-    
-    
-    
+
+
+
+
     @Override
     public NodeType GetNodeType ()
     {
@@ -58,10 +58,10 @@ import org.apache.openoffice.ooxml.schema.model.base.QualifiedName;
     {
         aVisitor.Visit(this);
     }
-    
-    
-    
-    
+
+
+
+
     @Override
     public String toString ()
     {

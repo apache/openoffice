@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -50,7 +50,7 @@ import org.w3c.dom.Node;
 public class MSOfficePostscriptCreator implements IOffice
 {
     private String m_sPrinterName;               // within Windows the tools need a printer name;
-    
+
     public void setPrinterName(String _s)
     {
         m_sPrinterName = _s;
@@ -59,7 +59,7 @@ public class MSOfficePostscriptCreator implements IOffice
     private ParameterHelper m_aParameterHelper;
     private String m_sDocumentName;
     private String m_sResult;
-    
+
     // CTor
     public MSOfficePostscriptCreator(ParameterHelper _aParam, String _sResult)
     {
@@ -241,7 +241,7 @@ public class MSOfficePostscriptCreator implements IOffice
                 realStartCommand(aStartCommand);
             }
         }
-    
+
     // -----------------------------------------------------------------------------
     /**
      * print the given file (_sInputFile) to the file name (_sPrintFile)
@@ -322,14 +322,14 @@ public class MSOfficePostscriptCreator implements IOffice
             FileHelper.createInfoFile(_sPrintFilename, _aGTA, "msoffice");
             TimeHelper.waitInSeconds(2, "Give Microsoft Office some time to print.");
         }
-    
+
     public void realStartCommand(ArrayList _aStartCommand) throws OfficeException
-        {    
+        {
             if (_aStartCommand.isEmpty())
             {
                 throw new OfficeException/*WrongEnvironmentException*/("Given list is empty.");
-            }           
-            
+            }
+
             try
             {
                 // Convert the StartCommand ArrayList to a String List
@@ -355,7 +355,7 @@ public class MSOfficePostscriptCreator implements IOffice
                     // TODO: use a better Exception!!!
                     throw new WrongEnvironmentException("We doesn't work within windows environment.");
                 }
-                
+
 
                 ProcessHandler aHandler = new ProcessHandler(aList);
                 boolean bBackValue = aHandler.executeSynchronously();
@@ -364,10 +364,10 @@ public class MSOfficePostscriptCreator implements IOffice
             {
                 throw new WrongEnvironmentException("Given list is too short.");
             }
-            
+
             // return aHandler.getExitCode();
         }
-        
+
 
     private String getPerlExe()
     {
@@ -388,7 +388,7 @@ public class MSOfficePostscriptCreator implements IOffice
             {
                 return aList;
             }
-            
+
             String sFileName = FileHelper.appendPath(sTmpPath, sPrintViaWord);
             File aFile = new File(sFileName);
             FileWriter out = new FileWriter(aFile);
@@ -490,14 +490,14 @@ public class MSOfficePostscriptCreator implements IOffice
             {
                 GlobalLogWriter.println("Search for local existence of " + aPerlScript.getAbsolutePath());
             }
-            
+
             if (aPerlScript.exists())
             {
                 if (FileHelper.isDebugEnabled())
                 {
                     GlobalLogWriter.println("OK, found it, use this instead the internal one.");
                 }
-                
+
                 String sName = aPerlScript.getAbsolutePath();
                 // String sCommand = "perl " + sName;
                 // System.out.println(sCommand);
@@ -507,13 +507,13 @@ public class MSOfficePostscriptCreator implements IOffice
             }
             return aList;
         }
-    
+
     ArrayList<String> createWordStoreHelper() throws java.io.IOException
         {
             // create a program in tmp file
             String sTmpPath = util.utils.getUsersTempDir();
             String ls = System.getProperty("line.separator");
-            
+
             // ArrayList aList = new ArrayList();
             String sSaveViaWord = "saveViaWord.pl";
 
@@ -522,13 +522,13 @@ public class MSOfficePostscriptCreator implements IOffice
             {
                 return aList;
             }
-            
+
             String sName = FileHelper.appendPath(sTmpPath, sSaveViaWord);
             if (FileHelper.isDebugEnabled())
             {
                 GlobalLogWriter.println("No local found, create a perl script: " + sName);
             }
-            
+
             File aFile = new File(sName);
             FileWriter out = new FileWriter(aFile);
 
@@ -588,7 +588,7 @@ public class MSOfficePostscriptCreator implements IOffice
             aList.add(sName);
             return aList;
         }
-    
+
 
     ArrayList<String> createExcelPrintHelper() throws java.io.IOException
         {
@@ -608,7 +608,7 @@ public class MSOfficePostscriptCreator implements IOffice
             {
                 GlobalLogWriter.println("No local found, create a perl script: " + sName);
             }
-            
+
             File aFile = new File(sName);
             FileWriter out = new FileWriter(aFile);
 
@@ -711,10 +711,10 @@ public class MSOfficePostscriptCreator implements IOffice
             {
                 GlobalLogWriter.println("No local found, create a script: " + sName);
             }
-            
+
             File aFile = new File(sName);
             FileWriter out = new FileWriter(aFile);
-            
+
             out.write( "eval 'exec perl -wS $0 ${1+\"$@\"}'                                                                                " + ls );
             out.write( "   if 0;                                                                                                         " + ls );
             out.write( "use strict;                                                                                                      " + ls );
@@ -781,7 +781,7 @@ public class MSOfficePostscriptCreator implements IOffice
             aList.add(sName);
             return aList;
         }
-    
+
     ArrayList<String> createPowerPointPrintHelper() throws java.io.IOException
         {
             // create a program in tmp file
@@ -789,7 +789,7 @@ public class MSOfficePostscriptCreator implements IOffice
             String ls = System.getProperty("line.separator");
 
             String sPrintViaPowerPoint = "printViaPowerPoint.pl";
-            
+
             ArrayList<String> aList = searchLocalFile(sPrintViaPowerPoint);
             if (aList.isEmpty() == false)
             {
@@ -800,7 +800,7 @@ public class MSOfficePostscriptCreator implements IOffice
             {
                 GlobalLogWriter.println("No local found, create a script: " + sName);
             }
-            
+
             File aFile = new File(sName);
             FileWriter out = new FileWriter(aFile);
 
@@ -908,7 +908,7 @@ public class MSOfficePostscriptCreator implements IOffice
                     {
                         aLine = aLine.trim();
                         if ( (! (aLine.length() < 2) ) &&
-                             (! aLine.startsWith("#")) && 
+                             (! aLine.startsWith("#")) &&
                              (! aLine.startsWith(";")) )
                         {
                             int nIdx = aLine.indexOf("mso-application");
@@ -943,7 +943,7 @@ public class MSOfficePostscriptCreator implements IOffice
             }
             try
             {
-                aReader.close();  
+                aReader.close();
             }
             catch (java.io.IOException ie)
             {

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -84,7 +84,7 @@ public abstract class WWD_General extends WebWizardDialog
     }
 
     /*
-     *  File Dialog methods 
+     *  File Dialog methods
      */
     protected SystemDialog getDocAddDialog()
     {
@@ -96,7 +96,7 @@ public abstract class WWD_General extends WebWizardDialog
             docAddDialog.addFilter(
                     JavaTools.replaceSubString(f.cp_Name, resources.prodName, "%PRODNAME"), f.cp_Filter, i == 0);
         }
-        //docAddDialog.addFilter(resources.resSODocs, "*.oxt;*.sxw;*.sxc;*.sxd;*.sxi;*.sdw;*.sdc;*.sdd;*.sdi;*.sda;*.sdp"  ,true); 
+        //docAddDialog.addFilter(resources.resSODocs, "*.oxt;*.sxw;*.sxc;*.sxd;*.sxi;*.sdw;*.sdc;*.sdd;*.sdi;*.sda;*.sdp"  ,true);
         //docAddDialog.addFilter(resources.resMSDocs, "*.doc;*.xls;*.ppt;*.pps",false);
         //docAddDialog.addFilter(resources.resImages, "*.jpg;*.gif;*.png;*.bmp;*.tiff;*.jpeg;*.jpe",false);
         //docAddDialog.addFilter(resources.resAllFiles,"*.*",false);
@@ -157,7 +157,7 @@ public abstract class WWD_General extends WebWizardDialog
     }
 
     /**
-     * returns the document specified 
+     * returns the document specified
      * by the given short array.
      * @param s
      * @return
@@ -197,8 +197,8 @@ public abstract class WWD_General extends WebWizardDialog
     }
 
     /**
-     * returns a publisher object for the given name 
-     * @param name one of the WebWizardConst constants : FTP 
+     * returns a publisher object for the given name
+     * @param name one of the WebWizardConst constants : FTP
      * @return
      */
     protected CGPublish getPublisher(String name)
@@ -251,7 +251,7 @@ public abstract class WWD_General extends WebWizardDialog
         {
             return;
         /*
-         * disbale steps 3-7 
+         * disbale steps 3-7
          */
         }
         for (int i = 3; i < 8; i++)
@@ -259,7 +259,7 @@ public abstract class WWD_General extends WebWizardDialog
             setStepEnabled(i, enabled, true);
         /* in this place i just disable the finish button.
          * later, in the checkPublish, which is only performed if
-         * this one is true, it will be enabled (if the check 
+         * this one is true, it will be enabled (if the check
          * is positive)
          */
         }
@@ -329,9 +329,9 @@ public abstract class WWD_General extends WebWizardDialog
     }
 
     /**
-     * 
+     *
      * @return false either if publishing input is wrong or there
-     * are no publishing targets chosen. returns true when at least 
+     * are no publishing targets chosen. returns true when at least
      * one target is chosen, *and* all
      * which are chosen are legal.
      * If proxies are on, ftp publisher is ignored.
@@ -350,7 +350,7 @@ public abstract class WWD_General extends WebWizardDialog
 
     /**
      * This method checks if the publishing
-     * input is ok, and enables and disables 
+     * input is ok, and enables and disables
      * the 'create' button.
      * public because it is called from
      * an event listener object.
@@ -372,8 +372,8 @@ public abstract class WWD_General extends WebWizardDialog
     }
 
     /**
-     * substitutes path variables with the corresponding values. 
-     * @param path a path, which might contain OOo path variables. 
+     * substitutes path variables with the corresponding values.
+     * @param path a path, which might contain OOo path variables.
      * @return the path, after substituing path variables.
      */
     protected String substitute(String path)

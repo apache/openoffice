@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -180,7 +180,7 @@ public class SdUnoPresView extends TestCase {
             the_pages.insertNewByIndex(0);
             the_pages.insertNewByIndex(0);
            secondDrawPage = (XDrawPage) AnyConverter.toObject(
-                    new Type(XDrawPage.class),oDPi.getByIndex(3));            
+                    new Type(XDrawPage.class),oDPi.getByIndex(3));
         } catch (com.sun.star.lang.WrappedTargetException e) {
             e.printStackTrace( log );
             throw new StatusException("Couldn't get DrawPage", e);
@@ -199,7 +199,7 @@ public class SdUnoPresView extends TestCase {
         XShape shape1 = SOF.createShape(
             xImpressDoc, 5000, 3500, 7500, 5000, "Rectangle");
         oShapes.add(shape1);
-        
+
         oShapes = (XShapes)
             UnoRuntime.queryInterface(XShapes.class, secondDrawPage);
         shape1 = SOF.createShape(
@@ -223,10 +223,10 @@ public class SdUnoPresView extends TestCase {
         if (anotherWindow != null) {
             tEnv.addObjRelation("XWindow.AnotherWindow",anotherWindow);
         }
-        
+
         tEnv.addObjRelation("Selections", new Object[] {
             oDrawPage, secondDrawPage});
-            
+
         tEnv.addObjRelation("Comparer", new Comparator() {
             public int compare(Object o1, Object o2) {
                 XIndexAccess indAc1 = (XIndexAccess)
@@ -241,7 +241,7 @@ public class SdUnoPresView extends TestCase {
             }
             public boolean equals(Object obj) {
                 return compare(this, obj) == 0;
-            } });        
+            } });
 
         tEnv.addObjRelation("FirstPage", oDrawPage);
         tEnv.addObjRelation("SecondPage", secondDrawPage);
@@ -255,7 +255,7 @@ public class SdUnoPresView extends TestCase {
         tEnv.addObjRelation("FirstModel", aModel);
 
         tEnv.addObjRelation("XUserInputInterception.XModel", aModel);
-        
+
         XFrame the_frame = the_Desk.getCurrentFrame();
         tEnv.addObjRelation("Frame", the_frame);
 

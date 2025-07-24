@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -42,7 +42,7 @@ public interface ITypeDescription {
 
 	/**
 	 * Gets the <code>IMethodDescription</code> for every
-	 * method, if this type is an interface. Otherwise 
+	 * method, if this type is an interface. Otherwise
 	 * returns <code>null</code>.
 	 * <p>
 	 * @return  the <code>IMethodDescription[]</code>.
@@ -60,7 +60,7 @@ public interface ITypeDescription {
 
 	/**
 	 * Gets the <code>IMethodDescription</code> for the
-	 * method with the name <code>name</code>, if it exists, 
+	 * method with the name <code>name</code>, if it exists,
 	 * otherwise returns <code>null</code>.
 	 * <p>
 	 * @return  the <code>IMethodDescription</code>.
@@ -69,7 +69,7 @@ public interface ITypeDescription {
 
 	/**
 	 * Gets the <code>IFieldDescription</code> for every
-	 * field, if this type is an interface. Otherwise 
+	 * field, if this type is an interface. Otherwise
 	 * returns <code>null</code>.
 	 * <p>
 	 * @return  the <code>IFieldDescription[]</code>.
@@ -78,7 +78,7 @@ public interface ITypeDescription {
 
 	/**
 	 * Gets the <code>IFieldDescription</code> for the
-	 * field with the name <code>name</code>, if it exists, 
+	 * field with the name <code>name</code>, if it exists,
 	 * otherwise returns <code>null</code>.
 	 * <p>
 	 * @return  the <code>IFieldDescription</code>.
@@ -159,7 +159,7 @@ public interface ITypeDescription {
 	 * @return the type name.
 	 */
 	String getTypeName();
-	
+
 	/**
 	 * Gets the (Java) array type name.
      *
@@ -174,7 +174,7 @@ public interface ITypeDescription {
 	 * @return the array type name.
 	 */
 	String getArrayTypeName();
-	
+
 	/**
 	 * Gets the corresponding java class for the type.
 	 * <p>

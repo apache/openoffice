@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -32,7 +32,7 @@ import org.openoffice.test.vcl.client.Constant;
  *
  */
 public class VclWindow extends VclControl {
-	
+
 	public VclWindow(VclApp app, String id) {
 		super(app, id);
 	}
@@ -45,25 +45,25 @@ public class VclWindow extends VclControl {
 	public String getText() {
 		return getCaption();
 	}
-	
+
 	/**
 	 * Presses the Help button to open the help topic for the window
-	 * 
+	 *
 	 */
 	public void help()  {
 		invoke(Constant.M_Help);
 	}
-	
+
 	/**
 	 * Closes a window with the Close button.
 	 */
 	public void close() {
 		invoke(Constant.M_Close);
 	}
-	
+
 	/**
 	 * Move the window by percent
-	 * 
+	 *
 	 * @param x
 	 * @param y
 	 */
@@ -78,13 +78,13 @@ public class VclWindow extends VclControl {
 	public void move(Point p) {
 		move(p.x, p.y);
 	}
-	
-	
-	
+
+
+
 	/**
 	 * Returns the state of the window (maximize or minimize).
 	 * <p>
-	 * 
+	 *
 	 * @return Returns TRUE if the window is maximized, otherwise FALSE is
 	 *         returned.
 	 */
@@ -115,7 +115,7 @@ public class VclWindow extends VclControl {
 	public void resize(int x, int y) {
 		invoke(Constant.M_Size, new Object[]{new Integer(x), new Integer(y)});
 	}
-	
+
 	/**
 	 * Restore the window
 	 *

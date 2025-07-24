@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -29,9 +29,9 @@ import share.LogWriter;
 import util.*;
 
 /**
- * This class support you to execute some shell commands in a buld environment. At ervery call of commands 
+ * This class support you to execute some shell commands in a buld environment. At ervery call of commands
  * a build environment was created and the commands will be executed.
- * 
+ *
  */
 public class BuildEnvTools {
 
@@ -74,7 +74,7 @@ public class BuildEnvTools {
         }
         if(
             (!mPlatform.equalsIgnoreCase(PropertyName.UNXSOLS)) &&
-            (!mPlatform.equalsIgnoreCase(PropertyName.UNXSOLI)) && 
+            (!mPlatform.equalsIgnoreCase(PropertyName.UNXSOLI)) &&
             (!mPlatform.equalsIgnoreCase(PropertyName.UNXLNGI)) &&
             (!mPlatform.equalsIgnoreCase(PropertyName.UNXMACXI))&&
             (!mPlatform.equalsIgnoreCase(PropertyName.UNXFBSDX))&&
@@ -93,7 +93,7 @@ public class BuildEnvTools {
         }
 
         mCygwin = (param.getBool(PropertyName.CYGWIN));
-        
+
         if (error) {
             throw new ParameterNotFoundException(msg);
         }

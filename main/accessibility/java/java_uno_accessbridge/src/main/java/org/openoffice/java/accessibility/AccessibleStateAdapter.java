@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -65,11 +65,11 @@ public class AccessibleStateAdapter {
         AccessibleState.VERTICAL,
         AccessibleState.VISIBLE
     };
-    
+
     private static void printToplevelStateMessage(AccessibleState s, java.awt.Component c) {
         System.err.println("*** ERROR *** " + s + " state is a toplevel window state " + c);
     }
-    
+
     private static String getDisplayName(java.awt.Component c) {
         javax.accessibility.Accessible a = (javax.accessibility.Accessible) c;
         if( a != null) {
@@ -79,11 +79,11 @@ public class AccessibleStateAdapter {
             return c.toString();
         }
     }
-    
+
     private static void printOutOfSyncMessage(AccessibleState s, java.awt.Component c, boolean enabled) {
         System.err.println("*** ERROR *** " + s + " state out of sync (UNO state set: " + !enabled + ", Java component state: " + enabled + ") for " + getDisplayName(c));
     }
-    
+
     public static AccessibleState getAccessibleState(Object any) {
        try {
             if (AnyConverter.isShort(any)) {
@@ -93,24 +93,24 @@ public class AccessibleStateAdapter {
         } catch (com.sun.star.lang.IllegalArgumentException e) {
             return null;
         }
-    }        
-    
+    }
+
     public static AccessibleState getAccessibleState(short unoStateType) {
         if (unoStateType > 0 && unoStateType < stateTypeMap.length) {
             return stateTypeMap[unoStateType];
         }
         return null;
     }
-    
+
     public static AccessibleStateSet getDefunctStateSet() {
         AccessibleStateSet ass = new AccessibleStateSet();
         ass.add(AccessibleExtendedState.DEFUNCT);
         return ass;
     }
-    
+
     public static void setComponentState(java.awt.Component c,
             XAccessibleStateSet xAccessibleStateSet) {
-        
+
         try {
             if (xAccessibleStateSet != null) {
                 // Set the boundings of the component if it is visible ..
@@ -128,28 +128,28 @@ public class AccessibleStateAdapter {
             }
         } catch (com.sun.star.uno.RuntimeException e) {
         }
-    }		    
+    }
 
     public static AccessibleStateSet getAccessibleStateSet(java.awt.Component c,
             XAccessibleStateSet xAccessibleStateSet) {
-                
+
         try {
             if (xAccessibleStateSet != null) {
                 AccessibleStateSet as = new AccessibleStateSet();
                 short[] unoStateTypes = xAccessibleStateSet.getStates();
                 for (int i=0; i<unoStateTypes.length; i++) {
-                    if (unoStateTypes[i] > 0 && 
+                    if (unoStateTypes[i] > 0 &&
                             unoStateTypes[i] < stateTypeMap.length) {
                         as.add(stateTypeMap[unoStateTypes[i]]);
                     }
                 }
-            
+
                 // Note: COLLAPSED does not exists in the UAA.
                 if (as.contains(AccessibleState.EXPANDABLE) &&
                         ! as.contains(AccessibleState.EXPANDED)) {
                     as.add(AccessibleState.COLLAPSED);
                 }
-            
+
                 // Sync office and Java FOCUSED state
                 boolean isFocusInSync;
                 if (c.isFocusOwner()) {
@@ -157,8 +157,8 @@ public class AccessibleStateAdapter {
                 } else {
                     isFocusInSync = !as.remove(AccessibleState.FOCUSED);
                 }
-                
-                // Sync office and Java ACTIVE state 
+
+                // Sync office and Java ACTIVE state
                 boolean isActiveInSync;
                 if (c instanceof java.awt.Window && ((java.awt.Window) c).isActive()) {
                     isActiveInSync = !as.add(AccessibleState.ACTIVE);
@@ -186,7 +186,7 @@ public class AccessibleStateAdapter {
                     if (as.contains(AccessibleState.VISIBLE) != c.isVisible()) {
                         printOutOfSyncMessage(AccessibleState.VISIBLE, c, c.isVisible());
                     }
-                
+
                     // The following states are for toplevel windows only
                     if (! (c instanceof java.awt.Window)) {
                         if (as.contains(AccessibleState.ACTIVE)) {

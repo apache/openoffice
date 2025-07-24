@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -38,7 +38,7 @@ public class SdfEntity implements Cloneable{
 	private String quickhelptext= new String("");
 	private String title        = new String("");
 	private String date         = new String("");
-	
+
 	public static int PROJECT_POS 		= 0;
 	public static int SOURCE_FILE_POS	= 1;
 	public static int DUMMY1_POS		= 2;
@@ -54,7 +54,7 @@ public class SdfEntity implements Cloneable{
 	public static int QUICKHELPTEXT_POS	= 12;
 	public static int TITLE_POS			= 13;
 	public static int DATE_POS			= 14;
-	
+
 	public Object clone()
     {
         try
@@ -128,7 +128,7 @@ public class SdfEntity implements Cloneable{
 	public String getId(){
 		return new StringBuffer( project ).append( gid ).append( lid ).append( source_file ).append( resource_type ).append( platform ).append( helpid ).append( langid ).toString();
 	}
-	
+
 	public String getDummy1() {
 		return dummy1;
 	}
@@ -246,6 +246,6 @@ public class SdfEntity implements Cloneable{
 	public void setDate(String date) {
 		this.date = date;
 	}
-	
-	
+
+
 }

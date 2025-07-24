@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -93,7 +93,7 @@ public class ChartHelper
                 {
                     XPropertySet xPropSet = (XPropertySet)UnoRuntime.queryInterface(
                         XPropertySet.class, xTextContent);
-                    
+
                     Any aAny = new Any(String.class, msChartClassID);
                     xPropSet.setPropertyValue("CLSID", aAny );
 
@@ -105,12 +105,12 @@ public class ChartHelper
 
                     //insert embedded object in text -> object will be created
                     xText.insertTextContent( xCursor, xTextContent, true );
-                    
+
                     // set size and position
                     XShape xShape = (XShape)UnoRuntime.queryInterface(
                         XShape.class, xTextContent);
                     xShape.setSize( aExtent );
-                    
+
                     aAny = new Any(Short.class,
                                new Short(com.sun.star.text.VertOrientation.NONE));
                     xPropSet.setPropertyValue("VertOrient", aAny );
@@ -121,12 +121,12 @@ public class ChartHelper
                     xPropSet.setPropertyValue("VertOrientPosition", aAny );
                     aAny = new Any(Integer.class, new Integer(aUpperLeft.X));
                     xPropSet.setPropertyValue("HoriOrientPosition", aAny );
-                    
+
                     // retrieve the chart document as model of the OLE shape
                     aResult = (XChartDocument) UnoRuntime.queryInterface(
                             XChartDocument.class,
                             xPropSet.getPropertyValue( "Model" ));
-                    
+
                     // create a diagram via the factory and set this as
                     // new diagram
                     aResult.setDiagram(
@@ -139,12 +139,12 @@ public class ChartHelper
             } catch( Exception ex)
             {
                 System.out.println( "caught exception: " + ex );
-            }    
+            }
         }
 
         return aResult;
     }
-    
+
     public XChartDocument insertOLEChartInDraw(
         String sChartName,
         Point  aUpperLeft,
@@ -202,7 +202,7 @@ public class ChartHelper
                     XShape aShape = (XShape) UnoRuntime.queryInterface(
                         XShape.class,
                         aFact.createInstance( "com.sun.star.drawing.OLE2Shape" ));
-                    
+
                     // insert the shape into the page
                     aPage.add( aShape );
                     aShape.setPosition( aUpperLeft );

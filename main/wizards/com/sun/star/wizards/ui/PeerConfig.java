@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -157,9 +157,9 @@ public class PeerConfig implements XWindowListener
     }
 
     /**
-     * 
+     *
      * @param oAPIControl an API control that the interface XControl can be derived from
-     * @param _saccessname 
+     * @param _saccessname
      */
     public void setAccessibleName(Object oAPIControl, String _saccessname)
     {
@@ -185,10 +185,10 @@ public class PeerConfig implements XWindowListener
     }
 
     /**
-     * 
+     *
      * @param oAPIControl an API control that the interface XControl can be derived from
-     * @param _propnames 
-     * @param _propvalues 
+     * @param _propnames
+     * @param _propvalues
      */
     public void setPeerProperties(Object oAPIControl, String[] _propnames, Object[] _propvalues)
     {
@@ -218,7 +218,7 @@ public class PeerConfig implements XWindowListener
     /**
      * Assigns an image to the property 'ImageUrl' of a dialog control. The image id must be assigned in a resource file
      * within the wizards project
-     * wizards project 
+     * wizards project
      * @param _ocontrolmodel
      * @param _nResId
      * @param _nhcResId
@@ -230,7 +230,7 @@ public class PeerConfig implements XWindowListener
     }
 
     /**
-     * Assigns an image to the property 'ImageUrl' of a dialog control. The image ids that the Resource urls point to 
+     * Assigns an image to the property 'ImageUrl' of a dialog control. The image ids that the Resource urls point to
      * may be assigned in a Resource file outside the wizards project
      * @param _ocontrolmodel
      * @param _sResourceUrl
@@ -245,10 +245,10 @@ public class PeerConfig implements XWindowListener
     /**
      * Assigns an image to the property 'ImageUrl' of a dialog control. The image id must be assigned in a resource file
      * within the wizards project
-     * wizards project 
+     * wizards project
      * @param _ocontrolmodel
      * @param _oResource
-     * @param _oHCResource 
+     * @param _oHCResource
      */
     public void setImageUrl(Object _ocontrolmodel, Object _oResource, Object _oHCResource)
     {

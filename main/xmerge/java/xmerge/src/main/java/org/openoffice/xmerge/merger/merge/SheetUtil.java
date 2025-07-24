@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -32,12 +32,12 @@ import org.openoffice.xmerge.ConverterCapabilities;
 import org.openoffice.xmerge.converter.xml.OfficeConstants;
 
 
-/** 
+/**
  *  Utility methods to handle sheet XML tree.
  */
 public class SheetUtil {
 
-    /** 
+    /**
      *  <p>Empty the content of a cell value.   This includes the following:
      *  </p>
      *
@@ -55,14 +55,14 @@ public class SheetUtil {
         NamedNodeMap attrNodes = node.getAttributes();
 
         if (attrNodes != null) {
-            
-            // empty the first text:p node. 
+
+            // empty the first text:p node.
             // Note: it's not necessary only string type cell contain text:p
             // basically, all different type of cell will contain one
             Element cell = (Element)node;
 
             // get the paragraph node list
-            NodeList paraNodes = 
+            NodeList paraNodes =
                 cell.getElementsByTagName(OfficeConstants.TAG_PARAGRAPH);
 
             Node firstParaNode = paraNodes.item(0);
@@ -73,8 +73,8 @@ public class SheetUtil {
                 parent.removeChild(firstParaNode);
             }
 
-            // check all the attributes and remove those we supported in 
-            // converter 
+            // check all the attributes and remove those we supported in
+            // converter
             // NOTE: for attribute list, refer to section 4.7.2 in specification
             int len = attrNodes.getLength();
 

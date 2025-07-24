@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -38,7 +38,7 @@ public class UnoUrlTest  {
 	}
 
 	private void assertTrue(boolean b) {
-		if (!b) 
+		if (!b)
 			fail("boolean assertion failed");
 	}
 
@@ -213,7 +213,7 @@ public class UnoUrlTest  {
 
 	public static void main(String args[]) {
 		UnoUrlTest t = new UnoUrlTest();
-		
+
 		log("Running test case 1");
 		t.testStart1();
 		log("Running test case 2");
@@ -226,32 +226,32 @@ public class UnoUrlTest  {
 		log("Running test case 5");
 		t.testParam1();
 		log("Running test case 6");
-		t.testParam2();		
-		
+		t.testParam2();
+
 		log("Running test case 7");
 		t.testPartName1();
-		
+
 		log("Running test case 8");
 		t.testOID1();
-		
+
 		log("Running test case 9");
 		t.testOIDandParams1();
 		log("Running test case 10");
 		t.testOIDandParams2();
-		
+
 		log("Running test case 11");
 		t.testParams1();
 		log("Running test case 12");
 		t.testParams2();
 		log("Running test case 13");
 		t.testParams3();
-		
+
 		log("Running test case 14");
 		t.testCommon();
-		
+
 		log("Running test case 15");
 		t.testUTF();
 		log("Running test case 16");
-		t.testUTF1();				
+		t.testUTF1();
 	}
 }

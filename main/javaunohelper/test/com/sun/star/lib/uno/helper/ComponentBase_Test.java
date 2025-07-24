@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -48,7 +48,7 @@ public class ComponentBase_Test
         proxyObj2TypeProv= ProxyProvider.createProxy(obj2, XTypeProvider.class);
         proxyObj3TypeProv= ProxyProvider.createProxy(obj3, XTypeProvider.class);
     }
-    
+
     public boolean dispose()
     {
         System.out.println("Testing ComponentBase");
@@ -56,7 +56,7 @@ public class ComponentBase_Test
         boolean r[]= new boolean[50];
         int i= 0;
         // addEventListener
-        
+
         comp.addEventListener(obj1);
         comp.addEventListener(obj2);
         comp.addEventListener(obj3);
@@ -81,7 +81,7 @@ public class ComponentBase_Test
         obj3.nDisposingCalled= 0;
         comp.dispose(); // already disposed;
         r[i++]= obj1.nDisposingCalled == 0;
-        
+
         boolean bOk= true;
         for (int c= 0; c < i; c++)
             bOk= bOk && r[c];
@@ -91,7 +91,7 @@ public class ComponentBase_Test
             System.out.println("Ok");
         return bOk;
     }
-    
+
     public boolean test_finalize()
     {
         System.out.println("Testing ComponentBase");
@@ -115,7 +115,7 @@ public class ComponentBase_Test
             }
         }
         r[i++]= obj1.nDisposingCalled == 1;
-        
+
         boolean bOk= true;
         for (int c= 0; c < i; c++)
             bOk= bOk && r[c];
@@ -125,16 +125,16 @@ public class ComponentBase_Test
             System.out.println("Ok");
         return bOk;
     }
-    
+
     public static void main(String[] args)
     {
         ComponentBase_Test test= new ComponentBase_Test();
-        
+
         boolean r[]= new boolean[50];
         int i= 0;
         r[i++]= test.dispose();
         r[i++]= test.test_finalize();
-        
+
         boolean bOk= true;
         for (int c= 0; c < i; c++)
             bOk= bOk && r[c];
@@ -144,5 +144,5 @@ public class ComponentBase_Test
             System.out.println("No errors.");
 
     }
-    
+
 }

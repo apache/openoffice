@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -27,7 +27,7 @@ import java.io.IOException;
 import java.util.Vector;
 
 /**
- *  <p>This class is a abstract class for encoding an SXC into an 
+ *  <p>This class is a abstract class for encoding an SXC into an
  *  alternative spreadsheet format.</p>
  *
  *  <p>TODO - Add appropriate exceptions to each of the methods.</p>
@@ -39,7 +39,7 @@ public abstract class SpreadsheetEncoder {
 
     /**
      *  Creates new SpreadsheetEncoder.
-     * 
+     *
      *  @param  name      The name of the WorkBook to be created.
      *  @param  password  An optional password for the WorkBook.
      *
@@ -71,14 +71,14 @@ public abstract class SpreadsheetEncoder {
 
     /**
      *  Add a cell to the current WorkSheet.
-     * 
+     *
      *  @param  row           The row number of the cell
      *  @param  column        The column number of the cell
      *  @param  fmt           The <code>Format</code> object describing the
      *                        appearance of this cell.
      *  @param  cellContents  The text or formula of the cell's contents.
      */
-    public abstract void addCell(int row, int column, 
+    public abstract void addCell(int row, int column,
                                  Format fmt, String cellContents) throws IOException;
 
 
@@ -112,5 +112,5 @@ public abstract class SpreadsheetEncoder {
 
     /**
      */
-    public abstract void addSettings(BookSettings s) throws IOException;		
+    public abstract void addSettings(BookSettings s) throws IOException;
 }

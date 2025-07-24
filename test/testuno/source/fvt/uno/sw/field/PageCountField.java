@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 package fvt.uno.sw.field;
 
@@ -50,13 +50,13 @@ public class PageCountField {
 	private static XTextDocument docDocument = null;
 	private  static String odtSample = "uno/sw/field/PageCountField.odt";
 	private static String docSample = "uno/sw/field/PageCountField.doc";
-	
+
 	private  static String odtSaveAsDocSample = "uno/sw/field/PageCountFieldNewSave.doc";
 	private static String docSaveAsODTSample = "uno/sw/field/PageCountFieldNewSave.odt";
 
 	@Before
 	public void setUpDocument() throws Exception {
-	
+
 	}
 
 	@After
@@ -75,10 +75,10 @@ public class PageCountField {
 			Exception {
 		app.close();
 	}
-	
-	
+
+
 	/**
-	 * 
+	 *
 	 * Test Page count Field Can created and Saved in odt file
 	 * 1.launch a odt document
 	 * 2.Create a page count field at end of this page
@@ -99,13 +99,13 @@ public class PageCountField {
 		SWUtil.saveAsDoc(odtDocument, Testspace.getUrl(odtSaveAsDocSample));
 		app.closeDocument(odtDocument);
 		docDocument = SWUtil.openDocumentFromURL(Testspace.getUrl(odtSaveAsDocSample), app);
-		
+
 		assertTrue("Test page count field still exist after odt sample file save as doc format", isContainPageCountField(docDocument));
 		PageCount = getPageCount(docDocument);
 		assertEquals("Verify page count value still exist after saved as doc format.", 3, PageCount);
 		app.closeDocument(docDocument);
 	}
-	
+
 	/**
 	 *  Test Page count Field Can created and Saved in Doc file
 	 * 1.launch a doc document
@@ -127,15 +127,15 @@ public class PageCountField {
 		SWUtil.saveAsODT(docDocument, Testspace.getUrl(docSaveAsODTSample));
 		app.closeDocument(docDocument);
 		odtDocument = SWUtil.openDocumentFromURL(Testspace.getUrl(docSaveAsODTSample), app);
-		
+
 		assertTrue("Test page count field still exist after doc sample file save as odt format", isContainPageCountField(odtDocument));
 		PageCount = getPageCount(odtDocument);
 		assertEquals("Verify page count value still exist after saved as doc format.", 4, PageCount);
 		app.closeDocument(odtDocument);
 	}
-	
 
-	
+
+
 	/**
 	 * Create a page count field at start of this document
 	 * @param document
@@ -144,14 +144,14 @@ public class PageCountField {
 	private void createPageCountField(XTextDocument document) throws Exception {
 		XMultiServiceFactory sevriceFactory = (XMultiServiceFactory) UnoRuntime.queryInterface(XMultiServiceFactory.class, document);
 		XTextField  PageCountField = (XTextField)UnoRuntime.queryInterface(XTextField.class, sevriceFactory.createInstance("com.sun.star.text.textfield.PageCount"));
-		
+
 		XPropertySet props = (XPropertySet)UnoRuntime.queryInterface(XPropertySet.class, PageCountField);
 		props.setPropertyValue("NumberingType", NumberingType.ARABIC);//Set page count display as Arabic
-	
+
 		SWUtil.moveCuror2Start(document);
 		document.getText().insertTextContent(document.getText().getStart(), PageCountField, true);
-		
-		
+
+
 	}
 	/**
 	 * Get the page count by getText
@@ -161,12 +161,12 @@ public class PageCountField {
 	 */
 	private int getPageCount(XTextDocument document) {
 		String documentString = document.getText().getString().trim();
-		String strNum = String.valueOf(documentString.charAt(0)); 
+		String strNum = String.valueOf(documentString.charAt(0));
 		int count = Integer.valueOf(strNum);
 		return count;
 	}
 
-	
+
 	/**
 	 * Check is contain page count field
 	 * @param document
@@ -175,18 +175,18 @@ public class PageCountField {
 	private boolean isContainPageCountField(XTextDocument document) throws Exception {
 		XTextFieldsSupplier fieldsSupplier = (XTextFieldsSupplier) UnoRuntime.queryInterface(XTextFieldsSupplier.class, document);
 		XEnumerationAccess xEnumeratedFields = fieldsSupplier.getTextFields();
-		
+
 		XEnumeration enumeration = xEnumeratedFields.createEnumeration();
 		while (enumeration.hasMoreElements()) {
 			  	Object field =  enumeration.nextElement();
-			 
+
 				XPropertySet props = (XPropertySet)UnoRuntime.queryInterface(XPropertySet.class, field);
 				short countType = (Short) props.getPropertyValue("NumberingType");
 			    return countType == NumberingType.ARABIC;
-			
+
 		}
 		return false;
-		
+
 	}
-	
+
 }

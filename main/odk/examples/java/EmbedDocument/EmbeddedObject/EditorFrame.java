@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 package org.openoffice.examples.embedding;
@@ -31,12 +31,12 @@ import javax.imageio.ImageIO;
 
 import org.openoffice.examples.embedding.OwnEmbeddedObject;
 
-public class EditorFrame extends JFrame 
+public class EditorFrame extends JFrame
 {
     OwnEmbeddedObject m_aEmbObj;
     JTextArea m_aTextArea;
     BufferedImage m_aBufImage;
-    
+
     WindowListener m_aCloser = new WindowAdapter()
     {
         public void windowClosing( WindowEvent e )
@@ -46,13 +46,13 @@ public class EditorFrame extends JFrame
             Graphics2D aGr = m_aBufImage.createGraphics();
             m_aTextArea.paintAll( aGr );
             aGr.dispose();
-            
+
             hide();
             m_aEmbObj.CloseFrameRequest();
         }
     };
 
-    public EditorFrame( String sName, OwnEmbeddedObject aEmbObj, int nWidth, int nHeight ) 
+    public EditorFrame( String sName, OwnEmbeddedObject aEmbObj, int nWidth, int nHeight )
     {
         super( sName );
         m_aEmbObj = aEmbObj;
@@ -86,18 +86,18 @@ public class EditorFrame extends JFrame
         Dimension aToSet =
            new Dimension( (int)( aSize.getWidth() + aOwnSize.getWidth() - aAppSize.getWidth() ),
                           (int)(aSize.getHeight() + aOwnSize.getHeight() - aAppSize.getHeight() ) );
-        
+
         setSize( aToSet );
         validate();
-        
+
         // pack();
     }
-    
+
     public byte[] getReplacementImage()
     {
         Dimension aDim = m_aTextArea.getSize();
         BufferedImage aBufImage = null;
-        
+
         if ( m_aBufImage != null )
             aBufImage = m_aBufImage;
         else
@@ -115,7 +115,7 @@ public class EditorFrame extends JFrame
             catch ( java.lang.Exception e )
             {}
         }
-            
+
         if ( aBufImage != null )
         {
             try
@@ -138,4 +138,4 @@ public class EditorFrame extends JFrame
 
         return new byte[0];
     }
-}  
+}

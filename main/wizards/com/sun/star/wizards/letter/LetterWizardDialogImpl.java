@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -354,7 +354,7 @@ public class LetterWizardDialogImpl extends LetterWizardDialog
     {
         try
         {
-            //xComponent.dispose();                       
+            //xComponent.dispose();
             XCloseable xCloseable = UnoRuntime.queryInterface(XCloseable.class, myLetterDoc.xFrame);
             xCloseable.close(false);
         }
@@ -745,7 +745,7 @@ public class LetterWizardDialogImpl extends LetterWizardDialog
         }
     }
 
-    //switch Elements on/off -------------------------------------------------------    
+    //switch Elements on/off -------------------------------------------------------
     public void chkUseLogoItemChanged()
     {
         try
@@ -819,7 +819,7 @@ public class LetterWizardDialogImpl extends LetterWizardDialog
                 myLetterDoc.switchFooter("Standard", bFooterPossible, (chkFooterPageNumbers.getState() != 0), txtFooter.getText());
             }
 
-            //enable/disable roadmap item for footer page       
+            //enable/disable roadmap item for footer page
             XInterface BPaperItem = getRoadmapItemByID(RM_FOOTER);
             Helper.setUnoPropertyValue(BPaperItem, PropertyNames.PROPERTY_ENABLED, Boolean.valueOf(bFooterPossible));
 
@@ -1074,7 +1074,7 @@ public class LetterWizardDialogImpl extends LetterWizardDialog
 
     public void lstLetterNormItemChanged()
     {
-        //when the norm changes, the correct template needs to be reloaded      
+        //when the norm changes, the correct template needs to be reloaded
         sCurrentNorm = Norms[getCurrentLetter().cp_Norm];
         initializeTemplates(xMSF);
         if (optBusinessLetter.getState())

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -147,7 +147,7 @@ public class ProcessHandler
      * Creates instance with specified external command.
      * Debug info and output
      * of external command is printed to stdout.
-     * @param cmdLine 
+     * @param cmdLine
      */
     public ProcessHandler(String cmdLine)
     {
@@ -155,11 +155,11 @@ public class ProcessHandler
     }
 
     /**
-     * Creates instance with specified external command 
+     * Creates instance with specified external command
      * including parameters as an array.
      * Debug info and output
      * of external command is printed to stdout.
-     * @param cmdLines 
+     * @param cmdLines
      */
     public ProcessHandler(String[] cmdLines)
     {
@@ -168,13 +168,13 @@ public class ProcessHandler
     }
 
     /**
-     * Creates instance with specified external command 
+     * Creates instance with specified external command
      * including parameters as an array, with environment
      * variables.
      * Debug info and output
      * of external command is printed to stdout.
-     * @param cmdLines 
-     * @param envVars 
+     * @param cmdLines
+     * @param envVars
      * @see java.lang.Runtime exec(String[], String[])
      */
     public ProcessHandler(String[] cmdLines, String[] envVars)
@@ -184,13 +184,13 @@ public class ProcessHandler
     }
 
     /**
-     * Creates instance with specified external command 
+     * Creates instance with specified external command
      * including parameters as an array, with environment
      * variables. The command will be started in workDir.
      * Debug info and output
      * of external command is printed to stdout.
-     * @param cmdLines 
-     * @param workDir 
+     * @param cmdLines
+     * @param workDir
      */
     public ProcessHandler(String[] cmdLines, File workDir)
     {
@@ -203,9 +203,9 @@ public class ProcessHandler
      * Creates instance with specified external command and
      * log stream where debug info and output
      * of external command is printed out.  The command will be started in workDir.
-     * @param cmdLines 
-     * @param log 
-     * @param workDir 
+     * @param cmdLines
+     * @param log
+     * @param workDir
      */
     public ProcessHandler(String[] cmdLines, PrintWriter log, File workDir)
     {
@@ -215,10 +215,10 @@ public class ProcessHandler
 
     /**
      * Creates instance with specified external command and
-     * log stream where debug info and output 
+     * log stream where debug info and output
      * of external command is printed out.
      * @param cmdLine
-     * @param log 
+     * @param log
      */
     public ProcessHandler(String cmdLine, PrintWriter log)
     {
@@ -228,7 +228,7 @@ public class ProcessHandler
     /**
      * Creates instance with specified external command and set the time out for the command.
      * @param cmdLine
-     * @param timeOut 
+     * @param timeOut
      */
     public ProcessHandler(String cmdLine, int timeOut)
     {
@@ -241,7 +241,7 @@ public class ProcessHandler
      * Debug info and output
      * of external commandis printed to stdout.
      * @param cmdLine
-     * @param workDir 
+     * @param workDir
      */
     public ProcessHandler(String cmdLine, File workDir)
     {
@@ -254,7 +254,7 @@ public class ProcessHandler
      * Debug info and output printed in log stream.
      * @param cmdLine
      * @param log
-     * @param workDir 
+     * @param workDir
      */
     public ProcessHandler(String cmdLine, PrintWriter log, File workDir)
     {
@@ -268,10 +268,10 @@ public class ProcessHandler
      * of external command is printed .
      * The specified environment variables are set for the new process.
      * If log stream is null, logging is printed to stdout.
-     * @param cmdLine 
-     * @param log 
-     * @param workDir 
-     * @param envVars 
+     * @param cmdLine
+     * @param log
+     * @param workDir
+     * @param envVars
      */
     public ProcessHandler(String cmdLine, PrintWriter log, File workDir, String[] envVars)
     {
@@ -375,7 +375,7 @@ public class ProcessHandler
     }
 
     /**
-     * This method do an asynchronous execution of the commands. To avoid a interruption on long running processes 
+     * This method do an asynchronous execution of the commands. To avoid a interruption on long running processes
      * caused by <CODE>OfficeWatcher</CODE>, the OfficeWatcher get frequently a ping.
      * @see helper.OfficeWatcher
      */
@@ -794,7 +794,7 @@ public class ProcessHandler
      * The method can also be called before the command
      * starts its execution. Then the text is buffered
      * and transferred to command when it will be started.
-     * @param str 
+     * @param str
      */
     public void printInputText(String str)
     {
@@ -847,7 +847,7 @@ public class ProcessHandler
     }
 
     /** Causes the thread to sleep some time.
-     * @param milliseconds 
+     * @param milliseconds
      */
     public static void shortWait(long milliseconds)
     {

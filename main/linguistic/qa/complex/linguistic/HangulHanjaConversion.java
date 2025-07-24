@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -93,7 +93,7 @@ public class HangulHanjaConversion {
         XConversionDictionary xDict = null;
 
         try {
-            xDict = xCList.addNewDictionary("addNewDictionary", aLocale, 
+            xDict = xCList.addNewDictionary("addNewDictionary", aLocale,
                                             dictType);
         } catch (com.sun.star.lang.NoSupportException e) {
             res = false;
@@ -120,7 +120,7 @@ public class HangulHanjaConversion {
         String FileToLoad = TestDocument.getUrl("hangulhanja.sxc");
         // String FileToLoad = util.utils.getFullTestURL();
 
-XComponent xDoc = DesktopTools.loadDoc(xMSF, FileToLoad, 
+XComponent xDoc = DesktopTools.loadDoc(xMSF, FileToLoad,
                                                new PropertyValue[] {  });
         XSpreadsheet xSheet = getSheet(xDoc);
         boolean done = false;
@@ -161,7 +161,7 @@ XComponent xDoc = DesktopTools.loadDoc(xMSF, FileToLoad,
             //ignored
         }
 
-        localRes = xCList.queryMaxCharCount(aLocale, dictType, 
+        localRes = xCList.queryMaxCharCount(aLocale, dictType,
                                             ConversionDirection.FROM_LEFT) == 42;
         res &= localRes;
         assertTrue("queryMaxCharCount returned the wrong value", localRes);
@@ -169,10 +169,10 @@ XComponent xDoc = DesktopTools.loadDoc(xMSF, FileToLoad,
         String[] conversion = null;
 
         try {
-            conversion = xCList.queryConversions(wordToCheck, 0, 
-                                                 wordToCheck.length(), aLocale, 
-                                                 dictType, 
-                                                 ConversionDirection.FROM_LEFT, 
+            conversion = xCList.queryConversions(wordToCheck, 0,
+                                                 wordToCheck.length(), aLocale,
+                                                 dictType,
+                                                 ConversionDirection.FROM_LEFT,
                                                  TextConversionOption.NONE);
         } catch (com.sun.star.lang.IllegalArgumentException e) {
             res = false;
@@ -297,8 +297,8 @@ XComponent xDoc = DesktopTools.loadDoc(xMSF, FileToLoad,
             return ConversionDictionaryType.HANGUL_HANJA;
         }
 
-        public String[] getConversions(String str, int param, int param2, 
-                                       ConversionDirection conversionDirection, 
+        public String[] getConversions(String str, int param, int param2,
+                                       ConversionDirection conversionDirection,
                                        int param4)
                                 throws IllegalArgumentException {
             return new String[] { "getConversion" };

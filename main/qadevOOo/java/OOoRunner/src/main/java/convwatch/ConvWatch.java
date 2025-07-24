@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -32,7 +32,7 @@ import convwatch.StatusHelper;
 import helper.URLHelper;
 import java.io.File;
 
-public class ConvWatch 
+public class ConvWatch
 {
 
     String getBuildID_FromFile(String _sInfoFile)
@@ -46,13 +46,13 @@ public class ConvWatch
         return sBuildID;
     }
     /**
-     * Check if given document (_sAbsoluteInputFile) and it's postscript representation (_sAbsoluteReferenceFile) produce 
+     * Check if given document (_sAbsoluteInputFile) and it's postscript representation (_sAbsoluteReferenceFile) produce
      * the same output like the StarOffice / OpenOffice.org which is accessible with XMultiServiceFactory.
      * Here a simple graphically difference check is run through.
      *
      * Hint: In the OutputPath all needed files will create, there must
      * be very much space. It's not possible to say how much.
-     * One page need up to 800kb as jpeg. 
+     * One page need up to 800kb as jpeg.
      * Sample: If a document contains 2 pages, we need 2*800kb for prn
      * output and 2*800kb for ps output and 2*800kb for it's difference
      * output. So up to 4800kb or 4.8mb.
@@ -61,12 +61,12 @@ public class ConvWatch
      *
      * It's also absolutlly impossible to say, how much time this functions consume.
      */
-    
+
     StatusHelper[] createPostscriptStartCheck(GraphicalTestArguments _aGTA,
                                               String _sOutputPath, String _sAbsoluteInputFile, String _sAbsoluteReferenceFile)
         throws ConvWatchCancelException
         {
-//  TODO: some more checks 
+//  TODO: some more checks
 
             if (! FileHelper.exists(_sAbsoluteInputFile))
             {
@@ -84,7 +84,7 @@ public class ConvWatch
             File aAbsoluteReferenceFile = new File(_sAbsoluteReferenceFile);
 
             if (aAbsoluteReferenceFile.isDirectory())
-            {   
+            {
                 String sBasename = FileHelper.getBasename(_sAbsoluteInputFile);
                 String sNameNoSuffix = FileHelper.getNameNoSuffix(sBasename);
                 String sAbsoluteReferenceFileInfo = _sAbsoluteReferenceFile + fs + sNameNoSuffix + ".info";
@@ -111,8 +111,8 @@ public class ConvWatch
                     throw new ConvWatchCancelException("createPostscriptStartCheck: Given reference directory: '" + _sAbsoluteReferenceFile + "' does not exist.");
                 }
             }
-            
-            
+
+
             boolean bAbsoluteReferenceFile = true;
             if (! FileHelper.exists(_sAbsoluteReferenceFile))
             {
@@ -126,7 +126,7 @@ public class ConvWatch
                     throw new ConvWatchCancelException("createPostscriptStartCheck: Given reference file: " + _sAbsoluteReferenceFile + " does not exist.");
                 }
             }
-            
+
             FileHelper.makeDirectories("", _sOutputPath);
 
             // runner.convwatch.compare();
@@ -135,10 +135,10 @@ public class ConvWatch
 
             String sInputFile = FileHelper.getBasename(_sAbsoluteInputFile);
             // System.out.println("InputFile: " + sInputFile);
-        
+
             String sInputFileNoSuffix = FileHelper.getNameNoSuffix(sInputFile);
             // System.out.println("BasenameNoSuffix: " + sInputFileNoSuffix);
-            
+
 
             String sAbsoluteOutputFile = _sOutputPath + fs + sInputFile;
             String sAbsoluteOutputFileURL = URLHelper.getFileURLFromSystemPath(sAbsoluteOutputFile);
@@ -150,7 +150,7 @@ public class ConvWatch
 
             String sAbsolutePrintFile = _sOutputPath + fs + sPostScriptFile;
             String sAbsolutePrintFileURL = URLHelper.getFileURLFromSystemPath(sAbsolutePrintFile);
-        
+
             // System.out.println("AbsoluteInputFileURL: " + sAbsoluteInputFileURL);
             // System.out.println("AbsoluteOutputFileURL: " + sAbsoluteOutputFileURL);
             // System.out.println("AbsolutePrintFileURL: " + sAbsolutePrintFileURL);
@@ -159,7 +159,7 @@ public class ConvWatch
             OfficePrint.printToFile(_aGTA, sAbsoluteInputFileURL, sAbsoluteOutputFileURL, sAbsolutePrintFileURL);
 
             // wait(2);
-            
+
             if (! FileHelper.exists(sAbsolutePrintFile))
             {
                 throw new ConvWatchCancelException("createPostscriptStartCheck: Printed file " + sAbsolutePrintFile + " does not exist.");
@@ -177,16 +177,16 @@ public class ConvWatch
                     throw new ConvWatchCancelException("createPostscriptStartCheck: Given reference file: " + _sAbsoluteReferenceFile + " does not exist, after try to copy.");
                 }
             }
-            
+
             PRNCompare a = new PRNCompare();
             String sInputPath = FileHelper.getPath(_sAbsoluteInputFile);
             String sReferencePath = FileHelper.getPath(_sAbsoluteReferenceFile);
             // String sReferenceFile = FileHelper.getBasename(sAbsoluteReferenceFile);
-            
+
             // System.out.println("InputPath: " + sInputPath);
             // System.out.println("sReferencePath: " + sReferencePath);
             // System.out.println("sReferenceFile: " + sReferenceFile);
-            
+
             a.setInputPath(     sInputPath );
             a.setReferencePath( sReferencePath );
             a.setOutputPath(    _sOutputPath );
@@ -209,7 +209,7 @@ public class ConvWatch
                     a.setMaxPages(9999);
                 }
             }
-            
+
             a.setResolutionInDPI(_aGTA.getResolutionInDPI());
             a.setBorderMove(_aGTA.getBorderMove());
             a.setDocumentType(_aGTA.getDocumentType());
@@ -219,7 +219,7 @@ public class ConvWatch
             _aGTA.setBorderMove(a.getBorderMove());
             return aList;
         }
-    
+
     // -----------------------------------------------------------------------------
     // This creates a status for exact on document
     static boolean createINIStatus(StatusHelper[] aList, String _sFilenamePrefix, String _sOutputPath, String _sAbsoluteInputFile, String _sBuildID, String _sRefBuildID)
@@ -231,14 +231,14 @@ public class ConvWatch
 //            String sHTMLFile = _sFilenamePrefix + sNameNoSuffix + ".html";
 //            HTMLOutputter HTMLoutput = HTMLOutputter.create(_sOutputPath, sHTMLFile, "", "");
 //            HTMLoutput.header(sNameNoSuffix);
-//  TODO: version info was fine 
+//  TODO: version info was fine
 //            HTMLoutput.checkSection(sBasename);
             // Status end
 
             String sINIFile = _sFilenamePrefix + sNameNoSuffix + ".ini";
             INIOutputter INIoutput = INIOutputter.create(_sOutputPath, sINIFile, "", "");
             INIoutput.createHeader();
-//  TODO: version info was fine 
+//  TODO: version info was fine
 
             INIoutput.writeSection("global");
             INIoutput.writeValue("pages", String.valueOf(aList.length));
@@ -252,7 +252,7 @@ public class ConvWatch
             {
                 INIoutput.writeSection("page" + String.valueOf(i + 1));   // list start at point 0, but this is page 1 and so on... current_page = (i + 1)
                 aList[i].printStatus();
-                
+
                 boolean bCurrentResult = true;   // result over exact one page
 
                 int nCurrentDiffStatus = aList[i].nDiffStatus;
@@ -290,7 +290,7 @@ public class ConvWatch
             INIoutput.close();
             return bResultIsOk;
         }
-    
+
     // -----------------------------------------------------------------------------
 
     static void createINIStatus_DiffDiff(StatusHelper[] aDiffDiffList, String _sFilenamePrefix, String _sOutputPath, String _sAbsoluteInputFile, String _sBuildID)
@@ -326,7 +326,7 @@ public class ConvWatch
 //            HTMLoutput.close();
             INIoutput.close();
         }
-    
+
 
     // -----------------------------------------------------------------------------
 
@@ -351,7 +351,7 @@ public class ConvWatch
             }
             return bResultIsOk;
         }
-    
+
     // -----------------------------------------------------------------------------
     public static boolean checkDiffDiff(GraphicalTestArguments _aGTA,
                                      String _sOutputPath, String _sAbsoluteInputFile, String _sAbsoluteReferenceFile,
@@ -392,7 +392,7 @@ public class ConvWatch
                 String sSourceFile1 = sDiffBasename;
                 String sSourcePath2 = _sAbsoluteDiffPath;
                 String sSourceFile2 = sDiffBasename;
-                
+
                 StatusHelper aCurrentStatus = aCompare.checkDiffDiff(_sOutputPath, sSourcePath1, sSourceFile1, sSourcePath2, sSourceFile2);
                 boolean bCurrentResult = (aCurrentStatus.nDiffStatus == StatusHelper.DIFF_NO_DIFFERENCES); // logic: nDiff==0 = true if there is no difference
                 bDiffIsOk &= bCurrentResult;
@@ -413,7 +413,7 @@ public class ConvWatch
             }
             return bDiffIsOk;
         }
-    
+
     // public static void main( String[] argv )
     //     {
     //         PRNCompare a = new PRNCompare();
@@ -421,7 +421,7 @@ public class ConvWatch
     //         a.setDocFile(       "1_Gov.ppt");
     //         a.setReferencePath( "/cws/so-cwsserv06/qadev18/SRC680/src.m47/convwatch.keep/input/msoffice/xp/PowerPoint");
     //         a.setReferenceFile( "1_Gov.prn" );
-    // 
+    //
     //         a.setOutputPath(    "/tmp/convwatch_java");
     //         a.setPostScriptFile("1_Gov.ps" );
     //     }

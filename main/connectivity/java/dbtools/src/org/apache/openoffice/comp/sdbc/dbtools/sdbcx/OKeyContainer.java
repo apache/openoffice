@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 package org.apache.openoffice.comp.sdbc.dbtools.sdbcx;
@@ -54,7 +54,7 @@ import com.sun.star.uno.UnoRuntime;
 public class OKeyContainer extends OContainer {
     private OTable table;
     private Map<String,OKey> keys;
-    
+
     public OKeyContainer(Object lock, boolean isCaseSensitive, Map<String,OKey> keys, OTable table) throws ElementExistException {
         super(lock, isCaseSensitive, Arrays.asList(keys.keySet().toArray(new String[keys.size()])));
         System.out.println("Keys.size()=" + keys.size());
@@ -77,33 +77,33 @@ public class OKeyContainer extends OContainer {
         this.keys = keys;
         this.table = table;
     }
-    
+
     @Override
     protected XPropertySet createDescriptor() {
         return new SdbcxKeyDescriptor(isCaseSensitive());
     }
-    
+
     @Override
     protected XPropertySet createObject(String name) throws SQLException {
         OKey ret = null;
-        
+
         if (!name.isEmpty()) {
             ret = keys.get(name);
         }
-        
+
         if (ret == null) { // we have a primary key with a system name
             // FIXME: so why was this exactly the same?
             ret = keys.get(name);
         }
-        
+
         return ret;
     }
-    
+
     @Override
     protected void impl_refresh() {
         //throw new NotImplementedException("");
     }
-    
+
     @Override
     protected XPropertySet appendObject(String _rForName, XPropertySet descriptor) throws SQLException {
         XConnection connection = table.getConnection();
@@ -120,10 +120,10 @@ public class OKeyContainer extends OContainer {
                 updateRule = AnyConverter.toInt(descriptor.getPropertyValue(PropertyIds.UPDATERULE.name));
                 deleteRule = AnyConverter.toInt(descriptor.getPropertyValue(PropertyIds.DELETERULE.name));
             }
-            
+
             String quote = connection.getMetaData().getIdentifierQuoteString();
             String tableName = DbTools.composeTableName(connection.getMetaData(), table, ComposeRule.InTableDefinitions, false, false, true);
-            
+
             String keyTypeString;
             if (keyType == KeyType.PRIMARY) {
                 keyTypeString = "PRIMARY KEY";
@@ -132,7 +132,7 @@ public class OKeyContainer extends OContainer {
             } else {
                 throw new SQLException();
             }
-            
+
             StringBuilder columnsText = new StringBuilder();
             XColumnsSupplier columnsSupplier = UnoRuntime.queryInterface(XColumnsSupplier.class, descriptor);
             XIndexAccess columns = UnoRuntime.queryInterface(XIndexAccess.class, columnsSupplier.getColumns());
@@ -143,9 +143,9 @@ public class OKeyContainer extends OContainer {
                 XPropertySet columnProperties = AnyConverter.toObject(XPropertySet.class, columns.getByIndex(i));
                 columnsText.append(DbTools.quoteName(quote, AnyConverter.toString(columnProperties.getPropertyValue(PropertyIds.NAME.name))));
             }
-            
+
             String sql = String.format("ALTER TABLE %s ADD %s (%s)", tableName, keyTypeString, columnsText.toString());
-            
+
             if (keyType == KeyType.FOREIGN) {
                 String quotedTableName = DbTools.quoteTableName(connection.getMetaData(), referencedName, ComposeRule.InTableDefinitions);
                 StringBuilder relatedColumns = new StringBuilder();
@@ -166,7 +166,7 @@ public class OKeyContainer extends OContainer {
             } finally {
                 CompHelper.disposeComponent(statement);
             }
-            
+
             // find the name which the database gave the new key
             String newName = _rForName;
             try {
@@ -209,7 +209,7 @@ public class OKeyContainer extends OContainer {
         }
         return null;
     }
-    
+
     protected String getKeyRuleString(boolean isUpdate, int rule) {
         String keyRule = "";
         switch (rule) {
@@ -228,7 +228,7 @@ public class OKeyContainer extends OContainer {
         }
         return keyRule;
     }
-    
+
     @Override
     protected void dropObject(int index, String name) throws SQLException {
         XConnection connection = table.getConnection();
@@ -260,12 +260,12 @@ public class OKeyContainer extends OContainer {
                 CompHelper.disposeComponent(statement);
             }
         } catch (IllegalArgumentException illegalArgumentException) {
-            
+
         } catch (WrappedTargetException wrappedTargetException) {
         } catch (UnknownPropertyException unknownPropertyException) {
         }
     }
-    
+
     public String getDropForeignKey() {
         return "DROP CONSTRAINT";
     }

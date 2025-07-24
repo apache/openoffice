@@ -32,19 +32,19 @@ public class Token
         Text = sText;
         Offset = nOffset;
     }
-    
-    
-    
-    
+
+
+
+
     @Override
     public String toString ()
     {
         return String.format("%s(%s)", Type.toString(), Text);
     }
-    
-    
-    
-    
+
+
+
+
     public final TokenType Type;
     public final String Text;
     public final int Offset;

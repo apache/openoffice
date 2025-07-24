@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -31,14 +31,14 @@ public class LogManager {
     static private Vector commandsLogFile;  /* collects all system commands information during installation */
     static private Vector saveLogFile;  /* contains the content of the saved log file */
     static private Vector modulesLogFile;
-    
+
     private LogManager() {
     }
 
     static public Vector getSaveLogfile() {
         return saveLogFile;
     }
-    
+
     static public void addLogfileComment(String text) {
         logfile.add(text);
     }
@@ -50,7 +50,7 @@ public class LogManager {
     static public void addModulesLogfileComment(String text) {
         modulesLogFile.add(text);
     }
-    
+
     static public void setCommandsHeaderLine(String text) {
         String line = "*************************************";
         commandsLogFile.add("");
@@ -66,16 +66,16 @@ public class LogManager {
         modulesLogFile.add(text);
         modulesLogFile.add(line);
     }
-  
+
     static public String publishLogfileContent(String text, String separatorline) {
         for (int i = 0; i < logfile.size(); i++) {
             text = text + logfile.get(i) + "<br>";
-        }    
+        }
 
         if ( ! logfile.isEmpty() ) {
-            text = text + separatorline + "<br>";            
+            text = text + separatorline + "<br>";
         }
-  
+
         return text;
     }
 
@@ -86,11 +86,11 @@ public class LogManager {
 
         return text;
     }
-    
+
     static public Vector getModulesLogFile() {
         return modulesLogFile;
     }
-    
+
     static {
         logfile = new Vector();
         commandsLogFile = new Vector();

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -31,11 +31,11 @@ import com.sun.star.ucb.XSimpleFileAccess;
 
 
 public class TestHelper {
-    
+
     String m_sTestPrefix;
-    
+
     public TestHelper( String sTestPrefix ) {
-        
+
         m_sTestPrefix = sTestPrefix;
     }
     public void SetTempFileRemove( XTempFile xTempFile, boolean b ) {
@@ -45,7 +45,7 @@ public class TestHelper {
             Error( "Cannot set TempFileRemove. exception: " + e );
         }
     }
-    
+
     public boolean GetTempFileRemove ( XTempFile xTempFile ) {
         boolean b = false;
         try {
@@ -55,7 +55,7 @@ public class TestHelper {
         }
         return b;
     }
-    
+
     public String GetTempFileURL ( XTempFile xTempFile ) {
         String sTempFileURL = null;
         try {
@@ -68,7 +68,7 @@ public class TestHelper {
         }
         return sTempFileURL;
     }
-    
+
     public String GetTempFileName( XTempFile xTempFile ) {
         String sTempFileName = null;
         try {
@@ -81,7 +81,7 @@ public class TestHelper {
         }
         return sTempFileName;
     }
-    
+
     public boolean CompareFileNameAndURL ( String sTempFileName, String sTempFileURL ) {
         boolean bRet = false;
         try {
@@ -94,7 +94,7 @@ public class TestHelper {
         }
         return bRet;
     }
-    
+
     public void WriteBytesWithStream( byte [] pBytes, XTempFile xTempFile ) {
         try {
             XOutputStream xOutTemp = xTempFile.getOutputStream();
@@ -108,7 +108,7 @@ public class TestHelper {
             Error( "Cannot write to stream. exception: " + e );
         }
     }
-    
+
     public void ReadBytesWithStream( byte [][] pBytes, int nBytes, XTempFile xTempFile ) {
         try {
             XInputStream xInTemp = xTempFile.getInputStream();
@@ -144,7 +144,7 @@ public class TestHelper {
                     "ReadDirectlyFromTempFile(). exception: " + e );
         }
     }
-    
+
     public void CloseTempFile( XTempFile xTempFile ) {
         XOutputStream xOutTemp = null;
         XInputStream xInTemp = null;
@@ -176,7 +176,7 @@ public class TestHelper {
             Error( "Cannot close input stream. exception:" + e );
         }
     }
-    
+
     public void KillTempFile ( String sTempFileURL, XSimpleFileAccess xSFA ) {
         try {
             if ( sTempFileURL != null ) {
@@ -191,7 +191,7 @@ public class TestHelper {
                     "KillTempFile(): " + e);
         }
     }
-    
+
     public boolean IfTempFileExists( XSimpleFileAccess xSFA, String sTempFileURL ) {
         boolean bRet = false;
         try {
@@ -200,7 +200,7 @@ public class TestHelper {
                     bRet = xSFA.exists( sTempFileURL );
                     Message ( "Tempfile " + ( bRet ? "still " : "no longer " ) + "exists." );
                 }
-            } 
+            }
         }
         catch( Exception e ) {
             Error( "Exception caught in TestHelper." +
@@ -208,11 +208,11 @@ public class TestHelper {
         }
         return bRet;
     }
-    
+
     public void Error( String sError ) {
         System.out.println( m_sTestPrefix + "Error: " + sError );
     }
-    
+
     public void Message( String sMessage ) {
         System.out.println( m_sTestPrefix + sMessage );
     }

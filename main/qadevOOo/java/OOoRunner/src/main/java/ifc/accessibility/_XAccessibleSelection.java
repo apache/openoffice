@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -217,7 +217,7 @@ public class _XAccessibleSelection extends MultiMethodTest {
                         oObj.selectAccessibleChild(k);
                         shortWait();
                         isSelected = oObj.isAccessibleChildSelected(k);
-                        log.println("isAccessibleChildSelected - " + 
+                        log.println("isAccessibleChildSelected - " +
                                     isSelected);
                         res &= isSelected;
                     } else {
@@ -254,7 +254,7 @@ public class _XAccessibleSelection extends MultiMethodTest {
 
         if ((childCount > 0) && !OneAlwaysSelected) {
             try {
-                log.print("isAccessibleChildSelected(" + (childCount - 1) + 
+                log.print("isAccessibleChildSelected(" + (childCount - 1) +
                           ")? ");
 
                 boolean isSel = oObj.isAccessibleChildSelected(childCount - 1);
@@ -301,7 +301,7 @@ public class _XAccessibleSelection extends MultiMethodTest {
                 log.println(isSelected);
                 res = isSelected;
 
-                log.print("isAccessibleChildSelected(" + (childCount - 1) + 
+                log.print("isAccessibleChildSelected(" + (childCount - 1) +
                           ")? ");
                 isSelected = oObj.isAccessibleChildSelected(childCount - 1);
                 log.println(isSelected);
@@ -346,11 +346,11 @@ public class _XAccessibleSelection extends MultiMethodTest {
                             oObj.selectAccessibleChild(i);
                             long curtime = System.currentTimeMillis();
                             long checktime = System.currentTimeMillis();
-                            
+
                             while (!oObj.isAccessibleChildSelected(i) && (checktime-curtime<5000)) {
                                 checktime = System.currentTimeMillis();
                             }
-                            
+
                             log.println("OK");
                         }
                     }
@@ -363,9 +363,9 @@ public class _XAccessibleSelection extends MultiMethodTest {
 
         int sCount = chkSelectable(tEnv.getTestObject());
         log.println("Found " + sCount + " selectable Childs");
-        
+
         int selectedCount = oObj.getSelectedAccessibleChildCount();
-        log.println("After selecting all accessible " + selectedCount + 
+        log.println("After selecting all accessible " + selectedCount +
                     " are selected");
 
         boolean res = true;
@@ -439,7 +439,7 @@ public class _XAccessibleSelection extends MultiMethodTest {
                     if (isSelectable(tEnv.getTestObject(), k)) {
                         oObj.selectAccessibleChild(k);
                         shortWait();
-                        log.println("selected child count: " + 
+                        log.println("selected child count: " +
                                     oObj.getSelectedAccessibleChildCount());
                         XAccessible selChild = oObj.getSelectedAccessibleChild(0);
                         res &= (selChild != null);
@@ -517,7 +517,7 @@ public class _XAccessibleSelection extends MultiMethodTest {
                 }
 
                 int newSelCount = oObj.getSelectedAccessibleChildCount();
-                log.println("getSelectedAccessibleChildCount():" + 
+                log.println("getSelectedAccessibleChildCount():" +
                             newSelCount);
 
                 if (OneAlwaysSelected && (selCount == 1)) {
@@ -575,7 +575,7 @@ public class _XAccessibleSelection extends MultiMethodTest {
 
             //selecting menuitems or the separator will lead to closing the menu
             if ((accCon.getAccessibleChild(index).getAccessibleContext()
-                       .getAccessibleRole() == AccessibleRole.MENU_ITEM) || 
+                       .getAccessibleRole() == AccessibleRole.MENU_ITEM) ||
                     (accCon.getAccessibleChild(index).getAccessibleContext()
                            .getAccessibleRole() == AccessibleRole.SEPARATOR)) {
                 res = false;

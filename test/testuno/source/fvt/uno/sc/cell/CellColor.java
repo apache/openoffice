@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -49,7 +49,7 @@ import com.sun.star.table.XCell;
 
 /**
  *  Check the cell background color and font color setting can be applied and saved
- * 
+ *
  */
 @RunWith(value = Parameterized.class)
 public class CellColor {
@@ -58,12 +58,12 @@ public class CellColor {
 	private String inputType;
 	private int[] inputData;
 	private String fileType;
-	
+
 	private static final UnoApp unoApp = new UnoApp();
-	
+
 	XComponent scComponent = null;
 	XSpreadsheetDocument scDocument = null;
-	
+
 	@Parameters
 	public static Collection<Object[]> data() throws Exception {
 		int[] list1 = TestUtil.randColorList(30);
@@ -76,7 +76,7 @@ public class CellColor {
 			{list1, "CellBackColor", list1, "xls"},
 //			{list2, "CellBackColor", list2, "xls"},   Bug 120679
 			{list3, "CellBackColor", list3, "xls"},
-			
+
 			{list1, "CharColor", list1, "ods"},
 			{list2, "CharColor", list2, "ods"},
 			{list3, "CharColor", list3, "ods"},
@@ -85,15 +85,15 @@ public class CellColor {
 			{list3, "CharColor", list3, "xls"}
 		});
 	}
-	
+
 	public CellColor(int[] expected, String inputType, int[] inputData, String fileType) {
 		this.expected = expected;
 		this.inputType = inputType;
 		this.inputData = inputData;
 		this.fileType = fileType;
 	}
-	
-	
+
+
 	@Before
 	public void setUp() throws Exception {
 		scComponent = unoApp.newDocument("scalc");
@@ -103,9 +103,9 @@ public class CellColor {
 	@After
 	public void tearDown() throws Exception {
 		unoApp.closeDocument(scComponent);
-		
+
 	}
-	
+
 	@BeforeClass
 	public static void setUpConnection() throws Exception {
 		unoApp.start();
@@ -114,9 +114,9 @@ public class CellColor {
 	@AfterClass
 	public static void tearDownConnection() throws InterruptedException, Exception {
 		unoApp.close();
-		SCUtil.clearTempDir();	
+		SCUtil.clearTempDir();
 	}
-	
+
 	/**
 	 * Check the cell background color and font color
 	 * 1. Create a spreadsheet file.
@@ -130,18 +130,18 @@ public class CellColor {
 	@Test
 	public void testCellColor() throws Exception {
 		String fileName = "testCellColor";
-		
+
 		int cellNum = inputData.length;
 		XCell[] cells = new XCell[cellNum];
 		int[] results = new int[cellNum];
 		CellInfo cInfo = TestUtil.randCell(256, 100);
-		
+
 		XSpreadsheet sheet = SCUtil.getCurrentSheet(scDocument);
-		
+
 		for (int i = 0; i < cellNum; i++) {
 			cells[i] = sheet.getCellByPosition(cInfo.getCol(), cInfo.getRow() + i);
 		}
-		
+
 		cells[0].setValue(inputData[0]);
 		SCUtil. setTextToCell(cells[1], inputType);
 		cells[2].setFormula("=100*23/5");
@@ -150,11 +150,11 @@ public class CellColor {
 		for (int i = 0; i < cellNum; i++) {
 			SCUtil.setCellProperties(cells[i], inputType, inputData[i]);
 		}
-		
+
 		SCUtil.saveFileAs(scComponent, fileName, fileType);
 		scDocument = SCUtil.reloadFile(unoApp, scDocument, fileName + "." + fileType);
 		sheet = SCUtil.getCurrentSheet(scDocument);
-		
+
 		for (int i = 0; i < cellNum; i++) {
 			cells[i] = sheet.getCellByPosition(cInfo.getCol(), cInfo.getRow() + i);
 			results[i] = ((Integer) SCUtil.getCellProperties(cells[i], inputType)).intValue();
@@ -162,7 +162,7 @@ public class CellColor {
 		SCUtil.closeFile(scDocument);
 
 		assertArrayEquals("Incorrect cell background color(" + inputType + ") value got in ." + fileType + " file.", expected, results);
-			
-	}	
+
+	}
 
 }

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -103,7 +103,7 @@ public class GraphicalTestArguments
     String m_sDistinct = null;
 
     boolean m_bCreateDefaultReference = false;
-    
+
     // CONSTRUCTOR
     private GraphicalTestArguments(){}
 
@@ -112,7 +112,7 @@ public class GraphicalTestArguments
             m_aCurrentParams = param;
             // collect interesting information from the ComplexTestCase
             // ....
-            
+
             // REFERENCE_TYPE ----------
             String sReferenceType = (String)param.get( PropertyName.DOC_COMPARATOR_REFERENCE_TYPE );
             if (sReferenceType == null || sReferenceType.length() == 0)
@@ -123,7 +123,7 @@ public class GraphicalTestArguments
                 // log.println("found REFERENCE_TYPE " + sReferenceType );
                 setReferenceType(sReferenceType);
             }
-            
+
             // PRINTER_NAME ----------
             String sPrinterName = (String)param.get( PropertyName.DOC_COMPARATOR_PRINTER_NAME );
             if (sPrinterName == null || sPrinterName.length() == 0)
@@ -217,7 +217,7 @@ public class GraphicalTestArguments
             {
                 m_bResuseOffice = false;
             }
-            
+
 
             String sHTMLOutputPrefix = (String)param.get( PropertyName.DOC_COMPARATOR_HTML_OUTPUT_PREFIX);
             if (sHTMLOutputPrefix == null)
@@ -251,19 +251,19 @@ public class GraphicalTestArguments
                 m_tWithBorderMove = TriState.FALSE;
                 // m_tWithBorderMove = TriState.UNSET;
             }
-            
+
             String sLeaveOutNames = (String)param.get(PropertyName.DOC_COMPARATOR_LEAVE_OUT_FILES);
             if (sLeaveOutNames != null)
             {
                 m_sLeaveOutNames = sLeaveOutNames;
-            }            
-            
+            }
+
             String sDBInfoString = (String)param.get(PropertyName.DOC_COMPARATOR_DB_INFO_STRING);
             if (sDBInfoString != null)
             {
                 m_sDBInfoString = sDBInfoString;
             }
-            
+
             // DISTINCT ----------
             String sDistinct = (String)param.get( "DISTINCT" );
             if (sDistinct == null || sDistinct.length() == 0)
@@ -302,7 +302,7 @@ public class GraphicalTestArguments
                     m_bCreateDefaultReference = false;
                 }
             }
-            
+
         }
 
     public boolean checkIfUsableDocumentType(String _sName)
@@ -318,18 +318,18 @@ public class GraphicalTestArguments
             {
                 return false;
             }
-            
+
             return true;
         }
-    
-    static void showInternalFilterName(String _sFilterName, XMultiServiceFactory _xMSF) 
+
+    static void showInternalFilterName(String _sFilterName, XMultiServiceFactory _xMSF)
         {
             if (_sFilterName.length() == 0)
             {
                 // System.out.println("No FilterName set.");
                 return;
             }
-            
+
             if (_xMSF == null)
             {
                 GlobalLogWriter.get().println("MultiServiceFactory not set.");
@@ -351,7 +351,7 @@ public class GraphicalTestArguments
                 XNameAccess aNameAccess = (XNameAccess)UnoRuntime.queryInterface(XNameAccess.class, aObj);
                 if (aNameAccess != null)
                 {
-                    
+
                     if (_sFilterName.toLowerCase().equals("help"))
                     {
                         GlobalLogWriter.get().println("Show all possible ElementNames from current version." );
@@ -364,7 +364,7 @@ public class GraphicalTestArguments
                 }
             }
         }
-    
+
     /*
     public GraphicalTestArguments(TestParameters param, Log xxx)
     {
@@ -393,12 +393,12 @@ public class GraphicalTestArguments
     public void setDefaultXMLFormatApp(String _sNameOfApp) {m_sDefaultXMLFormatApplication = _sNameOfApp;}
 
     // get methods
-    public XMultiServiceFactory getMultiServiceFactory() 
+    public XMultiServiceFactory getMultiServiceFactory()
         {
             XMultiServiceFactory xMSF = (XMultiServiceFactory)m_aCurrentParams.getMSF();
-            
+
             // check if MultiServiceFactory is given
-            if (getReferenceType().toLowerCase().equals("pdf") || 
+            if (getReferenceType().toLowerCase().equals("pdf") ||
                 getReferenceType().toLowerCase().equals("ooo"))
             {
                 if (xMSF == null)
@@ -450,7 +450,7 @@ public class GraphicalTestArguments
             }
             return true;
         }
- 
+
     /**
      * @return integer value, which contain resolution in DPI.
      */
@@ -470,7 +470,7 @@ public class GraphicalTestArguments
                 }
             }
         }
-    
+
 
     /**
      * @return the INPUT_PATH out of the TestParameters
@@ -524,7 +524,7 @@ public class GraphicalTestArguments
             sReferenceInputPath = (String)m_aCurrentParams.get(PropertyName.DOC_COMPARATOR_REFERENCE_INPUT_PATH);
             return sReferenceInputPath;
         }
-    
+
     /**
      * Helper function to get the buildid of the current used OpenOffice.org
      * out of the AppExecutionCommand the build ID
@@ -533,7 +533,7 @@ public class GraphicalTestArguments
         {
             String sAPP = (String)m_aCurrentParams.get(util.PropertyName.APP_EXECUTION_COMMAND);
             // return getBuildID(sAPP);
-//  TODO: here we need the getBuildID(string) method 
+//  TODO: here we need the getBuildID(string) method
             String sBuildID = convwatch.BuildID.getBuildID(sAPP);
             return sBuildID;
         }
@@ -550,7 +550,7 @@ public class GraphicalTestArguments
             }
             return true;
         }
-    
+
         // Handle for Reference Build ID, is set in ConvWatch.createPostscriptStartCheck()
     private String m_sRefBuildID;
 
@@ -562,7 +562,7 @@ public class GraphicalTestArguments
         {
             return m_sRefBuildID;
         }
-    
+
     public void disallowStore()
         {
             m_bStoreFile = false;
@@ -579,7 +579,7 @@ public class GraphicalTestArguments
         {
             return m_bCreateDefaultReference;
         }
-    
+
 
     // get/set for FilterName
     // get the right Filtername (internal Name) from
@@ -622,13 +622,13 @@ public class GraphicalTestArguments
             }
             return false;
         }
-    
+
     String m_sHTMLOutputPrefix = "";
     public String getHTMLOutputPrefix()
         {
             return m_sHTMLOutputPrefix;
         }
-    
+
     TriState m_tWithBorderMove = TriState.UNSET;
     // public TriState isBorderMove()
     //     {
@@ -642,7 +642,7 @@ public class GraphicalTestArguments
         {
             m_tWithBorderMove = _tBorderMove;
         }
-    
+
     String m_sDocumentType = "";
     public void setDocumentType(String _sName)
         {
@@ -652,7 +652,7 @@ public class GraphicalTestArguments
         {
             return m_sDocumentType;
         }
-    
+
     /*
       helper class for performance analyser features
      */
@@ -665,7 +665,7 @@ public class GraphicalTestArguments
             }
             return m_aPerformanceContainer;
         }
-    
+
     private String m_aInputFile;
     public void setInputFile(String _sInputFile)
         {
@@ -686,10 +686,10 @@ public class GraphicalTestArguments
                     return null;
                 }
             }
-            
+
             return m_sDBInfoString;
         }
-    
+
     public boolean cancelRequest()
         {
             File aCancelFile = null;
@@ -699,15 +699,15 @@ public class GraphicalTestArguments
             if (sTempPath != null)
             {
                 String sGDC_Dir = sTempPath;
-                
+
                 if (m_sDistinct.length() > 0)
                 {
                     sGDC_Dir = sGDC_Dir + fs + m_sDistinct;
                 }
-            
+
                 String sCancelFile = sGDC_Dir + fs + "cancel_compare.txt";
                 aCancelFile = new File(sCancelFile);
-                
+
                 if (aCancelFile.exists())
                 {
                     GlobalLogWriter.get().println("ATTENTION: Found file: '" + sCancelFile + "'.");
@@ -717,7 +717,7 @@ public class GraphicalTestArguments
             }
             return false;
         }
-    
+
 }
 
 

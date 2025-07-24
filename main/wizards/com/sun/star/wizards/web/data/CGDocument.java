@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -89,7 +89,7 @@ public class CGDocument extends ConfigSetItem implements XMLProvider
     /**
      * The contents subdirectory name in which the document is in.
      * This subdirectory will be created in the content's "docs"
-     * subdirectory.  
+     * subdirectory.
      */
     public String dirName;
     /**
@@ -177,7 +177,7 @@ public class CGDocument extends ConfigSetItem implements XMLProvider
             xProps = UnoRuntime.queryInterface(XDocumentPropertiesSupplier.class, component).getDocumentProperties();
         }
 
-        task.advance(true); //4    
+        task.advance(true); //4
 
         //now use the object to read some document properties.
         if (xProps != null)
@@ -252,7 +252,7 @@ public class CGDocument extends ConfigSetItem implements XMLProvider
     /**
      * @param media is the media description string returned by an UNO TypeDetection object.
      * @return one of the constants in the interface TypeDetection.
-     * 
+     *
      */
     private String getDocType(String media)
     {

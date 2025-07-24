@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 package storagetesting;
@@ -53,7 +53,7 @@ public class TestHelper  {
 			Error( "Can't get XOutputStream implementation from substream '" + sStreamName + "'!" );
 			return false;
 		}
-	
+
 		// get XTrucate implementation from output stream
 		XTruncate xTruncate = (XTruncate) UnoRuntime.queryInterface( XTruncate.class, xOutput );
 		if ( xTruncate == null )
@@ -61,7 +61,7 @@ public class TestHelper  {
 			Error( "Can't get XTruncate implementation from substream '" + sStreamName + "'!" );
 			return false;
 		}
-		
+
 		// write requested byte sequence
 		try
 		{
@@ -146,7 +146,7 @@ public class TestHelper  {
 			Error( "Can't create substream '" + sStreamName + "', exception : " + e + "!" );
 			return false;
 		}
-		
+
 		return WriteBytesToStream( xSubStream, sStreamName, sMediaType, bCompressed, pBytes );
 	}
 
@@ -258,7 +258,7 @@ public class TestHelper  {
 			Message( "Optional interface XEncryptionProtectedSource is not implemented, feature can not be tested!" );
 			return -1;
 		}
-			
+
 		try {
 			xStreamEncryption.setEncryptionKey( pNewPass );
 		}
@@ -303,7 +303,7 @@ public class TestHelper  {
 					Error( "'IsRoot' property contains wrong value!" );
 					bOk = false;
 				}
-					
+
 				if ( ( bIsRoot && ( nPropMode | ElementModes.ELEMENT_READ ) != ( nMode | ElementModes.ELEMENT_READ ) )
 				  || ( !bIsRoot && ( nPropMode & nMode ) != nMode ) )
 				{
@@ -346,13 +346,13 @@ public class TestHelper  {
 							+ sMediaType + "', set '" + sPropMediaType + "' !" );
 					bOk = false;
 				}
-	
+
 				if ( bPropIsRoot != bIsRoot )
 				{
 					Error( "'IsRoot' property contains wrong value!" );
 					bOk = false;
 				}
-					
+
 				if ( ( bIsRoot && ( nPropMode | ElementModes.ELEMENT_READ ) != ( nMode | ElementModes.ELEMENT_READ ) )
 				  || ( !bIsRoot && ( nPropMode & nMode ) != nMode ) )
 				{
@@ -385,7 +385,7 @@ public class TestHelper  {
 			Error( "Can't get XInputStream implementation from substream '" + sName + "'!" );
 			return false;
 		}
-	
+
 		byte pContents[][] = new byte[1][]; // ???
 
 		// read contents
@@ -439,11 +439,11 @@ public class TestHelper  {
 				bOk = true;
 				if ( !sPropMediaType.equals( sMediaType ) )
 				{
-					Error( "'MediaType' property contains wrong value for stream '" + sName + "',\nexpected: '" 
+					Error( "'MediaType' property contains wrong value for stream '" + sName + "',\nexpected: '"
 							+ sMediaType + "', set: '" + sPropMediaType + "'!" );
 					bOk = false;
 				}
-	
+
 				if ( nPropSize != pBytes.length )
 				{
 					Error( "'Size' property contains wrong value for stream'" + sName + "'!" );
@@ -485,7 +485,7 @@ public class TestHelper  {
 			Error( "Can't open substream '" + sName + "', exception : " + e + "!" );
 			return false;
 		}
-		
+
 		return InternalCheckStream( xSubStream, sName, sMediaType, pBytes );
 	}
 
@@ -517,7 +517,7 @@ public class TestHelper  {
 			Error( "Unexpected exception in case of opening of encrypted stream '" + sName + "' without password: " + e + "!" );
 			return false;
 		}
-	
+
 		byte pWrongPass[] = { 1, 1 };
 		pWrongPass[0] += pPass[0];
 		try
@@ -533,7 +533,7 @@ public class TestHelper  {
 			Error( "Unexpected exception in case of opening of encrypted stream '" + sName + "' with wrong password: " + e + "!" );
 			return false;
 		}
-	
+
 		XStream xSubStream = null;
 		try
 		{
@@ -550,7 +550,7 @@ public class TestHelper  {
 			Error( "Can't open encrypted substream '" + sName + "', exception : " + e + "!" );
 			return false;
 		}
-		
+
 		return InternalCheckStream( xSubStream, sName, sMediaType, pBytes );
 	}
 
@@ -592,7 +592,7 @@ public class TestHelper  {
 
 		return true;
 	}
-	
+
 	public boolean disposeStorage( XStorage xStorage )
 	{
 		// dispose the storage
@@ -660,7 +660,7 @@ public class TestHelper  {
 			Error( "Can't close output part of a stream, exception :" + e );
 			return false;
 		}
-		
+
 		return true;
 	}
 
@@ -702,7 +702,7 @@ public class TestHelper  {
 	public String CreateTempFile( XMultiServiceFactory xMSF )
 	{
 		String sResult = null;
-	
+
 		// try to get temporary file representation
 		XPropertySet xTempFileProps = null;
 		try

@@ -37,52 +37,52 @@ public class Style
         maFont = DefaultFont;
     }
 
-    
-    
-    
+
+
+
     public void Set(Graphics2D aG2)
     {
         aG2.setColor(maForegroundColor);
         aG2.setFont(maFont);
     }
 
-    
-    
-    
+
+
+
     public Style SetForegroundColor (final Color aColor)
     {
         maForegroundColor = aColor;
         return this;
     }
-    
-    
-    
-    
+
+
+
+
     public Color GetForegroundColor()
     {
         return maForegroundColor;
     }
 
-    
-    
-    
+
+
+
     public Style SetBackgroundColor (final Color aColor)
     {
         maBackgroundColor = aColor;
         return this;
     }
-    
-    
-    
-    
+
+
+
+
     public Color GetBackgroundColor()
     {
         return maBackgroundColor;
     }
 
-    
-    
-    
+
+
+
     public Style SetBold()
     {
         maFont = maFont.deriveFont(Font.BOLD);
@@ -97,9 +97,9 @@ public class Style
         return maFont;
     }
 
-    
-    
-    
+
+
+
     public static final Style DefaultStyle = new Style();
     public static Font DefaultFont = null;
 

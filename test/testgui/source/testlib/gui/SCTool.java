@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 package testlib.gui;
@@ -34,7 +34,7 @@ public class SCTool {
 
 	/**
 	 * Select a range.
-	 * 
+	 *
 	 * @param range
 	 *            e.g. Sheet1.A10, Sheet1.A11:B30, A11, A30:B45
 	 */
@@ -48,7 +48,7 @@ public class SCTool {
 	/**
 	 * Get the input at the given cell. If the cell is a formula, return the
 	 * formula rather than the result
-	 * 
+	 *
 	 * @param cell
 	 * @return
 	 */
@@ -65,7 +65,7 @@ public class SCTool {
 	/**
 	 * Get the text at the given cell. If the cell is a formula, return the
 	 * result rather than the formula
-	 * 
+	 *
 	 * @param cell
 	 * @return
 	 */
@@ -85,7 +85,7 @@ public class SCTool {
 	/**
 	 * convert the format of column number to integer e.g. A -> 1 AA -> 27 AMJ
 	 * -> 1024
-	 * 
+	 *
 	 * @param no
 	 * @return
 	 */
@@ -102,7 +102,7 @@ public class SCTool {
 
 	/**
 	 * Convert the format of column number to char
-	 * 
+	 *
 	 * @param no
 	 * @return
 	 */
@@ -120,7 +120,7 @@ public class SCTool {
 
 	/**
 	 * Parse location string into integer values
-	 * 
+	 *
 	 * @param loc
 	 *            e.g. A1
 	 * @return
@@ -142,7 +142,7 @@ public class SCTool {
 
 	/**
 	 * Parse range string into integer values
-	 * 
+	 *
 	 * @param range
 	 *            e.g. A3:F9
 	 * @return
@@ -173,7 +173,7 @@ public class SCTool {
 	/**
 	 * Get the text at the given cells. If the cell is a formula, return the
 	 * result rather than the formula. Note:
-	 * 
+	 *
 	 * @param range
 	 *            e.g. A3:D9
 	 * @return

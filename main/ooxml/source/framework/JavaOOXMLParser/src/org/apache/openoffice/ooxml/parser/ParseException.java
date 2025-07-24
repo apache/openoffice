@@ -28,7 +28,7 @@ public class ParseException
     extends RuntimeException
 {
     public ParseException (
-        final Exception aException, 
+        final Exception aException,
         final Location aLocation)
     {
         super(aException);
@@ -36,7 +36,7 @@ public class ParseException
     }
 
 
-    
-    
+
+
     public final Location Location;
 }

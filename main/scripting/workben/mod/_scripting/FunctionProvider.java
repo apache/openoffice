@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -48,18 +48,18 @@ public class FunctionProvider extends TestCase {
         XInterface oObj = null;
 	log.println("creating test environment");
         try {
-      
+
             XMultiServiceFactory xMSF = tParam.getMSF();
-            
+
             Object xInterface = xMSF.createInstance( "com.sun.star.frame.Desktop" );
             XDesktop dtop = ( XDesktop )UnoRuntime.queryInterface( XDesktop.class,
                 xInterface );
 
             XModel model = dtop.getCurrentFrame().getController().getModel();
-            oObj  = 
+            oObj  =
                 (XInterface)xMSF.createInstanceWithArguments( "drafts.com.sun.star.script.framework.provider.FunctionProvider", new Object[]{ model } );
-            
-            
+
+
         } catch (com.sun.star.uno.Exception e) {
             throw new StatusException("Can't create object environment", e) ;
         }

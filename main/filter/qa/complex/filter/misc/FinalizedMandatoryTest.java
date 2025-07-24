@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -51,7 +51,7 @@ import static org.junit.Assert.*;
  * <CODE>com.sun.star.document.TypeDetection</CODE>.
  *
  * Each of these services represent a container of <CODE>PropertyValue[]</CODE>.
- * The <CODE>PropertyValue[]</CODE> contains among others the properties called 
+ * The <CODE>PropertyValue[]</CODE> contains among others the properties called
  * <CODE>Finalized</CODE> and <CODE>Mandatory</CODE>. If the property
  * <CODE>Finalized</CODE> is set to <CODE>true</CODE>, a filter can be removed
  * but will not be able to be changed.
@@ -59,10 +59,10 @@ import static org.junit.Assert.*;
  * can not be removed.
  *
  * Every filter, which is registered to the office, will be tested. For every filter-test
- * a new instance of the mentioned services will be created. 
+ * a new instance of the mentioned services will be created.
 
  * During the test the property <CODE>UIName</CODE>
- * will be changed and the service will be flushed. The test checks for expected exceptions: 
+ * will be changed and the service will be flushed. The test checks for expected exceptions:
  * If the property <CODE>Finalized</CODE> equals
  * <CODE>true</CODE> the tests check if an <CODE>Exception</CODE> must be thrown.
  * The next step of the test is the removal of the filter was removed, then the service
@@ -164,7 +164,7 @@ public class FinalizedMandatoryTest
         // XNameContainer; XNameReplace
         String filterName = filterNames[0];
         Object[] instance = null;
-        
+
         for (int i = 0; i < filterNames.length; i++)
         {
             System.out.println("------------------------------------------------");
@@ -174,7 +174,7 @@ public class FinalizedMandatoryTest
                 filterName = filterNames[i];
                 System.out.println(filterName);
 
-                // testobject must new created for every test. 
+                // testobject must new created for every test.
                 // We change in a loop the container and try to flush this changes.
                 // If we get an expected exception this container is corrupt. It's
                 // similar to a document which could not be saved because of invalid

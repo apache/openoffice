@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -32,7 +32,7 @@ public class SimpleFileSemaphore /* extends *//* implements */
     String m_sInternSemaphoreFile;
     File m_aInternSemaphoreFile;
     GlobalLogWriter m_aLog;
-            
+
     public static void sleep( int _nSeconds)
         {
             // wait a second here
@@ -44,7 +44,7 @@ public class SimpleFileSemaphore /* extends *//* implements */
             {
             }
         }
-    
+
     public SimpleFileSemaphore() throws IllegalArgumentException
         {
             String sInternFileName;
@@ -61,7 +61,7 @@ public class SimpleFileSemaphore /* extends *//* implements */
                 m_sInternSemaphoreFile = null;
                 throw new IllegalArgumentException("Unknown System, can't initialise SimpleFileSemaphore");
             }
-            
+
             m_sInternSemaphoreFile = sInternFileName;
             m_aInternSemaphoreFile = new File(sInternFileName);
         }
@@ -76,7 +76,7 @@ public class SimpleFileSemaphore /* extends *//* implements */
         {
             int nCount = 0;
             int nCheckLoop = 1;
-            
+
             while ( nCheckLoop == 1)
             {
                 // check if resource is available, if not, wait.
@@ -100,7 +100,7 @@ public class SimpleFileSemaphore /* extends *//* implements */
                     }
                 }
             }
-            
+
             // block resource by ourself
             try
             {
@@ -108,7 +108,7 @@ public class SimpleFileSemaphore /* extends *//* implements */
                 aWriter.writeByte((int)1);
                 aWriter.close();
             }
-            
+
             catch (java.io.FileNotFoundException fne)
             {
                 m_aLog.get().println( "caught: FileNotFoundException");
@@ -152,7 +152,7 @@ public class SimpleFileSemaphore /* extends *//* implements */
                 System.out.println("FAILED");
             }
         }
-    
+
     private static void testSemaphoreFile(SimpleFileSemaphore a, boolean _bShouldFileExists)
         {
             System.out.println("Check if semaphore file exists.");
@@ -167,8 +167,8 @@ public class SimpleFileSemaphore /* extends *//* implements */
                 assure(_bShouldFileExists == SEMAPHORE_SHOULD_NOT_EXIST, "Semaphore should not exist!");
             }
         }
-    
-    public static void main( String[] argv ) 
+
+    public static void main( String[] argv )
         {
             SimpleFileSemaphore a = new SimpleFileSemaphore();
 

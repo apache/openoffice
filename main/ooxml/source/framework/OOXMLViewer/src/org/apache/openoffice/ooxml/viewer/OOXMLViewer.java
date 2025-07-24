@@ -61,7 +61,7 @@ public class OOXMLViewer
         }
 
         Log.Dbg = null;
-        
+
         // Process options.
         final Vector<String> aFilenames = new Vector<>();
         for (int nIndex=0; nIndex<aArguments.length; ++nIndex)
@@ -79,18 +79,18 @@ public class OOXMLViewer
                         }
                         ParserFactory.SetParserTableFilename(aArguments[nIndex]);
                         break;
-                        
+
                     default:
                         System.out.printf("unknown option '%s'\n", aArguments[nIndex]);
                         System.exit(1);
                         break;
-                        
+
                 }
             }
             else
                 aFilenames.add(aArguments[nIndex]);
         }
-        
+
         for (final String sFilename : aFilenames)
         {
             final OOXMLViewer aViewer = new OOXMLViewer();
@@ -98,10 +98,10 @@ public class OOXMLViewer
             aViewer.maFrame.setVisible(true);
         }
     }
-    
-    
-    
-    
+
+
+
+
     private OOXMLViewer ()
     {
         maFrame = new JFrame("OOXML Viewer");
@@ -113,10 +113,10 @@ public class OOXMLViewer
         maFrame.setJMenuBar(CreateMenuBar());
         maFrame.addKeyListener(new KeyListener());
     }
-    
-    
-    
-    
+
+
+
+
     private void SetFile (final File aFile)
     {
         if ( ! aFile.exists())
@@ -139,48 +139,48 @@ public class OOXMLViewer
         {
             maContainer.removeAll();
             maContainer.setLayout(new BorderLayout());
-            
+
             final OOXMLPackage aPackage = OOXMLPackage.Create(aFile);
             final JScrollPane aDetailViewContainer = new JScrollPane(
                 JScrollPane.VERTICAL_SCROLLBAR_ALWAYS,
                 JScrollPane.HORIZONTAL_SCROLLBAR_AS_NEEDED);
             aDetailViewContainer.getVerticalScrollBar().setUnitIncrement(10);
             final DetailViewManager aDetailViewManager = new DetailViewManager(aDetailViewContainer, aPackage);
-            
+
             final JTabbedPane aLeftSidebar = new JTabbedPane();
-            
+
             final ContentView aContentView = new ContentView(aDetailViewManager, aPackage);
             aLeftSidebar.addTab("Content", new JScrollPane(aContentView));
 
             final StreamView aFragmentView = new StreamView(aDetailViewManager, aPackage);
             aLeftSidebar.addTab("Streams", new JScrollPane(aFragmentView));
-            
+
             final PartsView aPartsView = new PartsView(aDetailViewManager, aPackage);
             aLeftSidebar.addTab("Parts", new JScrollPane(aPartsView));
-            
+
             final JSplitPane aPane = new JSplitPane(
                     JSplitPane.HORIZONTAL_SPLIT,
                     aLeftSidebar,
                     aDetailViewContainer
                     );
             aPane.setDividerLocation(200);
-            
+
             maContainer.add(aPane, BorderLayout.CENTER);
-            
+
             aFragmentView.ShowInitialPart();
         }
     }
-    
-    
-    
-    
+
+
+
+
     private JMenuBar CreateMenuBar ()
     {
         final JMenuBar aMenuBar = new JMenuBar();
-        
+
         final JMenu aFileMenu = new JMenu("File");
         aMenuBar.add(aFileMenu);
-        
+
         final JMenuItem aOpenItem = new JMenuItem("Open");
         aOpenItem.addActionListener(new ActionListener()
         {
@@ -199,10 +199,10 @@ public class OOXMLViewer
 
         return aMenuBar;
     }
-    
-    
-    
-    
+
+
+
+
     private final JFrame maFrame;
     private final JComponent maContainer;
 }

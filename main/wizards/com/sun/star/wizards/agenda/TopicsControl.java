@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -51,9 +51,9 @@ import com.sun.star.wizards.ui.event.MethodInvocation;
  * @author rpiterman
  * This class implements the UI functionality of the topics scroller control.
  * <br/>
- * During development, there has been a few changes which were not *fully* done - 
+ * During development, there has been a few changes which were not *fully* done -
  * mainly in converting the topics and time boxes from combobox and time box to normal textboxes,
- * so in the code they might be referenced as combobox or timebox. This should be 
+ * so in the code they might be referenced as combobox or timebox. This should be
  * rather understood as topicstextbox and timetextbox.
  * <br/>
  * <br/>
@@ -67,7 +67,7 @@ import com.sun.star.wizards.ui.event.MethodInvocation;
  * The control shows 5 rows at a time.<br/>
  * If, for example, only 2 rows exist (from which the 2nd one is empty...)
  * then the other three rows, which do not exist in the data model, are disabled.
- * <br/> 
+ * <br/>
  * The following other functionality is implemented:
  * <br/>
  * 0. synchronizing data between controls, data model and live preview.
@@ -76,7 +76,7 @@ import com.sun.star.wizards.ui.event.MethodInvocation;
  * 3. Removing rows and adding new rows.<br/>
  * 4. Moving rows up and down. <br/>
  * <br/>
- * This control relays on the ControlScroller control which uses the following 
+ * This control relays on the ControlScroller control which uses the following
  * Data model:<br/>
  * 1. It uses a vector, whos members are arrays of PropertyValue.<br/>
  * 2. Each array represents a row.<br/>
@@ -84,10 +84,10 @@ import com.sun.star.wizards.ui.event.MethodInvocation;
  * 3. Each property Value represents a value for a single control with the following rules:<br/>
  * 3. a. the Value of the property is used for as value of the controls (usually text).<br/>
  * 3. b. the Name of the property is used to map values to UI controls in the following manner:<br/>
- * 3. b. 1. only the Name of the first X Rows is regarded, where X is the number of visible rows 
+ * 3. b. 1. only the Name of the first X Rows is regarded, where X is the number of visible rows
  * (in the agenda wizard this would be 5, since 5 topic rows are visible on the dialog).<br/>
- * 3. b. 2. The Names of the first X (or 5...) rows are the names of the UI Controls to 
- * hold values. When the control scroller scrolls, it looks at the first 5 rows and uses 
+ * 3. b. 2. The Names of the first X (or 5...) rows are the names of the UI Controls to
+ * hold values. When the control scroller scrolls, it looks at the first 5 rows and uses
  * the names specified there to map the current values to the specified controls.
  * <br/>
  * This data model makes the following limitations on the implementation:
@@ -99,26 +99,26 @@ import com.sun.star.wizards.ui.event.MethodInvocation;
  * <br/>
  * To save the topics in the registry a ConfigSet of objects of type CGTopic is
  * being used.
- * This one is not synchronized "live", since it is unnecessary... instead, it is 
+ * This one is not synchronized "live", since it is unnecessary... instead, it is
  * synchronized on call, before the settings should be saved.
  */
 public class TopicsControl extends ControlScroller implements XFocusListener
 {
 
     /**
-     * The name prefix of the number (label) controls 
+     * The name prefix of the number (label) controls
      */
     public static final String LABEL = "lblTopicCnt_";
     /**
-     * The name prefix of the topic (text) controls 
+     * The name prefix of the topic (text) controls
      */
     public static final String TOPIC = "txtTopicTopic_";
     /**
-     * The name prefix of the responsible (text) controls 
+     * The name prefix of the responsible (text) controls
      */
     public static final String RESP = "cbTopicResp_";
     /**
-     * The name prefix of the time (text) controls 
+     * The name prefix of the time (text) controls
      */
     public static final String TIME = "txtTopicTime_";
     Object lastFocusControl;
@@ -227,10 +227,10 @@ public class TopicsControl extends ControlScroller implements XFocusListener
         insertRowAtEnd();
     }
 
-    /** 
-     * Insert a blank (empty) row 
+    /**
+     * Insert a blank (empty) row
      * as last row of the control.
-     * The control has always a blank row at the 
+     * The control has always a blank row at the
      * end, which enables the user to enter data...
      */
     protected void insertRowAtEnd()
@@ -265,7 +265,7 @@ public class TopicsControl extends ControlScroller implements XFocusListener
     /**
      * overrides the parent class method to also enable the
      * row whenever data is written to it.
-     * @param guiRow 
+     * @param guiRow
      */
     protected void fillupControls(int guiRow)
     {
@@ -303,7 +303,7 @@ public class TopicsControl extends ControlScroller implements XFocusListener
      * in order to use the "move up", "downPropertyNames.SPACEinsert" and "remove" buttons,
      * we track the last control the gained focus, in order to know which
      * row should be handled.
-     * @param fe 
+     * @param fe
      */
     public void focusGained(FocusEvent fe)
     {
@@ -353,7 +353,7 @@ public class TopicsControl extends ControlScroller implements XFocusListener
 
     /**
      * compolsary implementation of FocusListener.
-     * @param fe 
+     * @param fe
      */
     public void focusLost(FocusEvent fe)
     {
@@ -361,7 +361,7 @@ public class TopicsControl extends ControlScroller implements XFocusListener
 
     /**
      * compolsary implementation of FocusListener.
-     * @param o 
+     * @param o
      */
     public void disposing(EventObject o)
     {
@@ -385,7 +385,7 @@ public class TopicsControl extends ControlScroller implements XFocusListener
         rowUp(lastFocusRow - nscrollvalue, lastFocusControl);
     }
 
-    /** 
+    /**
      * move the current row down.
      */
     public void rowDown()
@@ -477,7 +477,7 @@ public class TopicsControl extends ControlScroller implements XFocusListener
      * The index is important because it is used in the
      * Name member of the PropertyValue objects.
      * To know why see general class documentation above (data model explanation).
-     * @param i the index of the new row 
+     * @param i the index of the new row
      * @return
      */
     private PropertyValue[] newRow(int i)
@@ -494,8 +494,8 @@ public class TopicsControl extends ControlScroller implements XFocusListener
      * Implementation of ControlScroller
      * This is a UI method which inserts a new row to the control.
      * It uses the child-class ControlRow. (see below).
-     * @param _index 
-     * @param npos 
+     * @param _index
+     * @param npos
      * @see ControlRow
      */
     protected void insertControlGroup(int _index, int npos)
@@ -507,10 +507,10 @@ public class TopicsControl extends ControlScroller implements XFocusListener
 
     /**
      * Implementation of ControlScroller
-     * This is a UI method which makes a row visibele. 
+     * This is a UI method which makes a row visibele.
      * As far as I know it is never called.
-     * @param _index 
-     * @param _bIsVisible 
+     * @param _index
+     * @param _bIsVisible
      * @see ControlRow
      */
     protected void setControlGroupVisible(int _index, boolean _bIsVisible)
@@ -543,7 +543,7 @@ public class TopicsControl extends ControlScroller implements XFocusListener
     private Object[] oldData;
 
     /**
-     * update the preview document and 
+     * update the preview document and
      * remove/insert rows if needed.
      * @param guiRow
      * @param column
@@ -650,7 +650,7 @@ public class TopicsControl extends ControlScroller implements XFocusListener
     }
 
     /**
-     * If the user presses tab on the last control, and 
+     * If the user presses tab on the last control, and
      * there *are* more rows in the model, scroll down.
      * @param event
      */
@@ -671,7 +671,7 @@ public class TopicsControl extends ControlScroller implements XFocusListener
     }
 
     /**
-     * If the user presses shift-tab on the first control, and 
+     * If the user presses shift-tab on the first control, and
      * there *are* more rows in the model, scroll up.
      * @param event
      */
@@ -705,7 +705,7 @@ public class TopicsControl extends ControlScroller implements XFocusListener
     /**
      * moves the given row one row down.
      * @param guiRow the gui index of the row to move.
-     * @param control the control to gain focus after moving. 
+     * @param control the control to gain focus after moving.
      */
     synchronized void rowDown(int guiRow, Object control)
     {
@@ -849,9 +849,9 @@ public class TopicsControl extends ControlScroller implements XFocusListener
             insertRowAtEnd();
         /*
          * if we did not change the last row but
-         * we did change the one before - check if we 
-         * have two empty rows at the end. 
-         * If so, delete the last one... 
+         * we did change the one before - check if we
+         * have two empty rows at the end.
+         * If so, delete the last one...
          */
         }
         else if ((row1 + nscrollvalue) + (row2 + nscrollvalue) == (scrollfields.size() * 2 - 5))
@@ -1025,7 +1025,7 @@ public class TopicsControl extends ControlScroller implements XFocusListener
 
     /**
      * needed to make this data public.
-     * @return the List containing the topics data. 
+     * @return the List containing the topics data.
      */
     public List getTopicsData()
     {
@@ -1055,7 +1055,7 @@ public class TopicsControl extends ControlScroller implements XFocusListener
     };
 
     /**
-     * 
+     *
      * @author rp143992
      * A class representing a single GUI row.
      * Note that the instance methods of this class
@@ -1066,7 +1066,7 @@ public class TopicsControl extends ControlScroller implements XFocusListener
     {
 
         /**
-         * the number (label) control 
+         * the number (label) control
          */
         Object label;
         /**
@@ -1255,7 +1255,7 @@ public class TopicsControl extends ControlScroller implements XFocusListener
         /**
          * returns the column number of the given control.
          * The given control must belong to this row or
-         * an IllegalArgumentException will accure. 
+         * an IllegalArgumentException will accure.
          * @param control
          * @return an int columnd number of the given control (0 to 3).
          */

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -89,7 +89,7 @@ public class _XAccessibleContext extends MultiMethodTest {
         requiredMethod("getAccessibleChildCount()");
 
         log.println("testing 'getAccessibleChild()'...");
-        
+
         boolean bOK = true;
         int counter = childCount;
 
@@ -102,72 +102,72 @@ public class _XAccessibleContext extends MultiMethodTest {
                 XAccessible ch = oObj.getAccessibleChild(i);
                 XAccessibleContext chAC = ch.getAccessibleContext();
 
-                log.println("## Child " + i + ": " + 
+                log.println("## Child " + i + ": " +
                             chAC.getAccessibleDescription());
 
                 if (!AccessibilityTools.equals(chAC.getAccessibleParent()
-                                                   .getAccessibleContext(), 
+                                                   .getAccessibleContext(),
                                                oObj)) {
-                    log.println("The parent of child and component " + 
+                    log.println("The parent of child and component " +
                                 "itself differ.");
                     log.println("\tRole:");
-                    log.println("Getting:  " + 
+                    log.println("Getting:  " +
                                 chAC.getAccessibleParent()
                                     .getAccessibleContext()
                                     .getAccessibleRole());
                     log.println("Expected: " + oObj.getAccessibleRole());
 
                     log.println("\tImplementationName:");
-                    log.println("Getting:  " + 
+                    log.println("Getting:  " +
                                 util.utils.getImplName(
                                         chAC.getAccessibleParent()
                                             .getAccessibleContext()));
                     log.println("Expected: " + util.utils.getImplName(oObj));
 
                     log.println("\tAccessibleDescription:");
-                    log.println("Getting(Description):  " + 
+                    log.println("Getting(Description):  " +
                                 chAC.getAccessibleParent()
                                     .getAccessibleContext()
                                     .getAccessibleDescription());
-                    log.println("Expected(Description): " + 
+                    log.println("Expected(Description): " +
                                 oObj.getAccessibleDescription());
 
                     log.println("\tAccessibleName:");
-                    log.println("Getting(Name):  " + 
+                    log.println("Getting(Name):  " +
                                 chAC.getAccessibleParent()
                                     .getAccessibleContext()
                                     .getAccessibleName());
-                    log.println("Expected(Name): " + 
+                    log.println("Expected(Name): " +
                                 oObj.getAccessibleName());
 
                     log.println("\tChildCount:");
-                    log.println("Getting:  " + 
+                    log.println("Getting:  " +
                                 chAC.getAccessibleParent()
                                     .getAccessibleContext()
                                     .getAccessibleChildCount());
-                    log.println("Expected: " + 
+                    log.println("Expected: " +
                                 oObj.getAccessibleChildCount());
 
                     log.println("\tParentName:");
-                    log.println("Getting (Name):  " + 
+                    log.println("Getting (Name):  " +
                                 chAC.getAccessibleParent()
                                     .getAccessibleContext()
                                     .getAccessibleParent()
                                     .getAccessibleContext()
                                     .getAccessibleName());
-                    log.println("Expected(Name): " + 
+                    log.println("Expected(Name): " +
                                 oObj.getAccessibleParent()
                                     .getAccessibleContext()
                                     .getAccessibleName());
-                                    
+
                     log.println("##");
                     bOK = false;
                 } else {
                     log.println("Role: " + chAC.getAccessibleRole());
                     log.println("Name: " + chAC.getAccessibleName());
-                    log.println("IndexInParent: " + 
+                    log.println("IndexInParent: " +
                                 chAC.getAccessibleIndexInParent());
-                    log.println("ImplementationName: " + 
+                    log.println("ImplementationName: " +
                                 util.utils.getImplName(chAC));
                 }
             } catch (com.sun.star.lang.IndexOutOfBoundsException e) {
@@ -218,7 +218,7 @@ public class _XAccessibleContext extends MultiMethodTest {
             } else {
                 bOK &= AccessibilityTools.equals(parentAC.getAccessibleChild(
                                                          idx)
-                                                         .getAccessibleContext(), 
+                                                         .getAccessibleContext(),
                                                  oObj);
             }
 
@@ -226,7 +226,7 @@ public class _XAccessibleContext extends MultiMethodTest {
                 log.println("Expected: " + util.utils.getImplName(oObj));
 
                 if (parentAC.getAccessibleChild(idx) != null) {
-                    log.println("Getting: " + 
+                    log.println("Getting: " +
                                 util.utils.getImplName(
                                         parentAC.getAccessibleChild(idx)
                                                 .getAccessibleContext()));
@@ -322,12 +322,12 @@ public class _XAccessibleContext extends MultiMethodTest {
             e.printStackTrace(log);
         }
 
-        tRes.tested("getLocale()", 
+        tRes.tested("getLocale()",
                     (loc != null) && (loc.Language.length() > 0));
     }
 
-    protected boolean checkStates(String[] expectedStateNames, 
-                                  short[] expectedStates, 
+    protected boolean checkStates(String[] expectedStateNames,
+                                  short[] expectedStates,
                                   XAccessibleStateSet set) {
         boolean works = true;
 
@@ -335,11 +335,11 @@ public class _XAccessibleContext extends MultiMethodTest {
             boolean contains = set.contains(expectedStates[k]);
 
             if (contains) {
-                log.println("Set contains " + expectedStateNames[k] + 
+                log.println("Set contains " + expectedStateNames[k] +
                             " ... OK");
                 works &= true;
             } else {
-                log.println("Set doesn't contain " + expectedStateNames[k] + 
+                log.println("Set doesn't contain " + expectedStateNames[k] +
                             " ... FAILED");
                 works &= false;
             }

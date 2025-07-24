@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -50,12 +50,12 @@ import lib.TestParameters;
  * @see lib.TestEnvironment
  */
 public abstract class TestCase {
-        
+
     /**
      * Specifies the PrintWriter to log information.
      */
-    public PrintWriter log;    
-    
+    public PrintWriter log;
+
     //public static TestCase tCase;
 
     /**
@@ -63,7 +63,7 @@ public abstract class TestCase {
      */
     public void setLogWriter( PrintWriter log ) {
         this.log = log;
-    }    
+    }
 
     /**
      * Initializes the <code>TestCase</code>. Calls <code>initialize()</code>
@@ -87,7 +87,7 @@ public abstract class TestCase {
      */
     protected void initialize( TestParameters tParam, PrintWriter log ) {
     }
-    
+
 
     /**
      * Cleans up the <code>TestCase</code>. Calls <code>cleanup()</code>.
@@ -125,19 +125,19 @@ public abstract class TestCase {
     public synchronized TestEnvironment getTestEnvironment( TestParameters tParam ) {
         TestEnvironment tEnv = null;
         try {
-            tEnv = createTestEnvironment( tParam, log ); 
+            tEnv = createTestEnvironment( tParam, log );
             System.out.println("Environment created");
             if (tEnv != null) {
                 tEnv.setTestCase(this);
             }
-        } catch (Exception e) {            
+        } catch (Exception e) {
             String message = e.getMessage();
             if (message == null)
                 message = e.toString();
             System.out.println("Exception while getting Environment "+message);
             e.printStackTrace();
             cleanup(tParam, log);
-        }                   
+        }
         return tEnv;
     }
 
@@ -173,6 +173,6 @@ public abstract class TestCase {
     public String getObjectName() {
         String clName = this.getClass().getName();
         return clName.substring( clName.lastIndexOf('.') + 1 );
-    }           
+    }
 
 }

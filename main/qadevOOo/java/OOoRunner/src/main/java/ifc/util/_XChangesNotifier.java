@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -39,16 +39,16 @@ import lib.MultiMethodTest;
  * @see com.sun.star.util.XChangesBatch
  */
 public class _XChangesNotifier extends MultiMethodTest {
-    
+
     public XChangesNotifier oObj = null;
-    private XChangesBatch xBatch = null; 
+    private XChangesBatch xBatch = null;
     private Object changeElement = null;
     private Object originalElement = null;
     private String elementName = null;
     private XPropertySet xProp = null;
     private XNameReplace xNameReplace = null;
-    private _XChangesNotifier.MyChangesListener xListener = null; 
-    
+    private _XChangesNotifier.MyChangesListener xListener = null;
+
     /**
      * Own implementation of the XChangesListener interface
      * @see com.sun.star.util.XChangesListener
@@ -56,28 +56,28 @@ public class _XChangesNotifier extends MultiMethodTest {
     private static class MyChangesListener implements XChangesListener {
         /** Just lo a call of the listener **/
         boolean bChangesOccured = false;
-        
-        /** A change did occur 
+
+        /** A change did occur
          * @param changesEvent The event.
          **/
         public void changesOccurred(com.sun.star.util.ChangesEvent changesEvent) {
             bChangesOccured = true;
         }
-        
+
         /** Disposing of the listener
          * @param eventObject The event.
          **/
         public void disposing(com.sun.star.lang.EventObject eventObject) {
             bChangesOccured = true;
         }
-        
+
         /**
          * Reset the listener
          */
         public void reset() {
             bChangesOccured = false;
         }
-        
+
         /**
          * Has the listener been called?
          * @return True, if the listener has been called.
@@ -96,7 +96,7 @@ public class _XChangesNotifier extends MultiMethodTest {
         changeElement = tEnv.getObjRelation("XChangesNotifier.ChangeElement");
         originalElement = tEnv.getObjRelation("XChangesNotifier.OriginalElement");
         elementName = (String)tEnv.getObjRelation("XChangesNotifier.PropertyName");
-        
+
         xProp = (XPropertySet)tEnv.getObjRelation("XChangesNotifier.PropertySet");
         try {
             if (originalElement == null && xProp != null)
@@ -127,7 +127,7 @@ public class _XChangesNotifier extends MultiMethodTest {
             );
             throw new StatusException("Some needed object relations are missing.", new Exception());
         }
-        
+
         xListener = new _XChangesNotifier.MyChangesListener();
     }
 
@@ -136,7 +136,7 @@ public class _XChangesNotifier extends MultiMethodTest {
         oObj.addChangesListener(xListener);
         tRes.tested("addChangesListener()", true);
     }
-    
+
     /** test removeChangesListener **/
     public void _removeChangesListener() {
         requiredMethod("addChangesListener()");
@@ -151,10 +151,10 @@ public class _XChangesNotifier extends MultiMethodTest {
         boolean result2 = xListener.didChangesOccur();
         if (result2)
             log.println("Removed listener has been called.");
-        
+
         tRes.tested("removeChangesListener()", result && !result2);
     }
-    
+
     /**
      * Commit a change, using an implementation of the XChangesBatch interface.
      * @return true, if changing worked.
@@ -188,9 +188,9 @@ public class _XChangesNotifier extends MultiMethodTest {
         }
         return true;
     }
-    
+
     /**
-     * Execute the change, use XPropertySet or XNameReplace 
+     * Execute the change, use XPropertySet or XNameReplace
      * @return False, if changing did throw an exception.
      */
     private boolean executeChange(Object element) throws StatusException {

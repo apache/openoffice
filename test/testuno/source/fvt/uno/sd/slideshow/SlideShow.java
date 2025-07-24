@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 package fvt.uno.sd.slideshow;
 
@@ -103,15 +103,15 @@ public class SlideShow {
 				new Size(21000, 12500), "com.sun.star.drawing.RectangleShape");
 		xShapes3.add(xRectangle3);
 		ShapeUtil.addPortion(xRectangle3, "Page3", false);
-		
+
 		XPropertySet xPresPropSet = (XPropertySet) UnoRuntime.queryInterface(
 				XPropertySet.class, pre);
 		xPresPropSet.setPropertyValue("IsEndless", Boolean.FALSE);
 		xPresPropSet.setPropertyValue("IsFullScreen", Boolean.TRUE);
 		xPresPropSet.setPropertyValue("Pause", new Integer(0));
-		
+
 		saveAndLoadSlide();
-		
+
 		Assert.assertEquals("IsEndless set to false",
 				xPresPropSet.getPropertyValue("IsEndless"), Boolean.FALSE);
 		Assert.assertEquals("IsFullScreen set to true",
@@ -128,7 +128,7 @@ public class SlideShow {
 
 	/**
 	 * create a new presentation document and insert a new slide.
-	 * 
+	 *
 	 * @throws Exception
 	 */
 	public void createDocumentAndSlide() throws Exception {
@@ -141,10 +141,10 @@ public class SlideShow {
 				XPresentationSupplier.class, impressDocument);
 		pre = sdDocument.getPresentation();
 	}
-	
+
 	/**
 	 * Save presentation and reLoad the slide.
-	 * 
+	 *
 	 * @param no
 	 * @return void
 	 * @throws Exception
@@ -163,7 +163,7 @@ public class SlideShow {
 
 	/**
 	 * save and reload Presentation document.
-	 * 
+	 *
 	 * @param presentationDocument
 	 * @param sFilter
 	 * @param sExtension

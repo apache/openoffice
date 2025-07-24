@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 package org.openoffice.test.vcl.widgets;
@@ -34,18 +34,18 @@ import org.openoffice.test.vcl.client.WinInfoReceiver;
 
 /**
  * This class provides a proxy to interact with OpenOffice application.
- * 
+ *
  */
 public class VclApp {
-	
+
 	protected CommunicationManager communicationManager = null;
 
 	protected CommandCaller caller = null;
-	
+
 	protected OpenOffice openOffice = null;
-	
+
 	/**
-	 * 
+	 *
 	 * @param openOffice
 	 */
 	public VclApp(OpenOffice openOffice) {
@@ -58,12 +58,12 @@ public class VclApp {
 	public void setWinInfoReceiver(WinInfoReceiver receiver) {
 		caller.setWinInfoReceiver(receiver);
 	}
-	
+
 	public void clean() {
 		openOffice.kill();
 		openOffice.cleanUserInstallation();
 	}
-	
+
 	public void start() {
 		openOffice.start();
 		//wait for UI to be ready
@@ -77,18 +77,18 @@ public class VclApp {
 				} catch (Exception e) {
 					return false;
 				}
-				
+
 			}
-			
+
 		}.waitForTrue("Can't connect to automation server!", 20, 1);
 	}
-	
-	public void start(boolean clean) { 
-		if (clean) 
+
+	public void start(boolean clean) {
+		if (clean)
 			clean();
 		start();
 	}
-	
+
 	/**
 	 * Quit the application, if failed, one exception will be thrown
 	 */
@@ -104,30 +104,30 @@ public class VclApp {
 			}.waitForTrue("OpenOffice can't quit!", 5, 1);
 		}
 	}
-	
+
 	public void stop() {
 		if (openOffice != null) {
-			if (!openOffice.isRunning()) 
+			if (!openOffice.isRunning())
 				return;
 		}
-		
+
 		try {
 			quit();
 		} catch(Exception e) {
 			openOffice.kill();
 		}
-		
+
 		communicationManager.stop();
 	}
-	
+
 	/**
 	 * @deprecated use stop
 	 */
 	public void close() {
 		stop();
 	}
-	
-	
+
+
 	/**
 	 * Activate the document window at the given index
 	 * Note: this method requires automation enabled.
@@ -261,7 +261,7 @@ public class VclApp {
 		caller.callUNOSlot(url);
 		waitSlot(time);
 	}
-	
+
 	public void waitSlot(double time) {
 		int result = (Integer) caller.callCommand(Constant.RC_WaitSlot, (int) time * 1000);
 		if (result == CONST_WSTimeout)

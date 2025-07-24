@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -51,7 +51,7 @@ public final class ConverterInfoMgr {
     *  Adds a converter plug-in to the registry.  The
     *  <code>ConverterInfo</code> must have a unique DisplayName
     *  and must have non-null values for DisplayName, ClassImpl,
-    *  OfficeMime, and DeviceMime.  
+    *  OfficeMime, and DeviceMime.
     *
     *  @param   ci  A <code>ConverterInfo</code> object
     *                         describing a plug-in.
@@ -98,7 +98,7 @@ public final class ConverterInfoMgr {
                 throw re;
             }
         }
-       
+
         // Since this is a adding to a static Vector, make sure this
         // add method call is synchronized.
         //
@@ -106,15 +106,15 @@ public final class ConverterInfoMgr {
             converterInfoList.add(ci);
         }
     }
-   
+
 
    /**
     *  Adds an <code>Enumeration</code> of converter plug-ins to the registry.
-    *  Each <code>ConverterInfo</code> in the <code>Enumeration</code> must have 
+    *  Each <code>ConverterInfo</code> in the <code>Enumeration</code> must have
     *  a unique DisplayName and must have non-null values for DisplayName,
-    *  ClassImpl, OfficeMime, and DeviceMime.  
+    *  ClassImpl, OfficeMime, and DeviceMime.
     *
-    *  @param  jarEnum  An <code>Enumeration</code> of <code>ConverterInfo</code> 
+    *  @param  jarEnum  An <code>Enumeration</code> of <code>ConverterInfo</code>
     *                     objects describing one or more plug-in(s).
     *
     *  @throws  RegistryException  If a <code>ConverterInfo</code> in the
@@ -148,7 +148,7 @@ public final class ConverterInfoMgr {
     *
     *  @param  jar  The name of the jarfile.
     *
-    *  @return  True if a <code>ConverterInfo</code> object was 
+    *  @return  True if a <code>ConverterInfo</code> object was
     *           removed, false otherwise.
     */
    public static boolean removeByJar(String jar) {
@@ -186,7 +186,7 @@ public final class ConverterInfoMgr {
     *
     *  @param  name  The display name.
     *
-    *  @return  True if a <code>ConverterInfo</code> object was 
+    *  @return  True if a <code>ConverterInfo</code> object was
     *           removed, false otherwise.
     */
    public static boolean removeByName(String name) {
@@ -216,7 +216,7 @@ public final class ConverterInfoMgr {
     *  @param  deviceMime  The device mime.
     *  @param  officeMime  The office mime.
     *
-    *  @return  The first plug-in that supports the specified 
+    *  @return  The first plug-in that supports the specified
     *           conversion.
     */
     public static ConverterInfo findConverterInfo(String deviceMime, String officeMime) {
@@ -321,9 +321,9 @@ public final class ConverterInfoMgr {
 
 
     /**
-     *  main to let the user specify what plug-ins to register from 
+     *  main to let the user specify what plug-ins to register from
      *  jarfiles and to display the currently registered plug-ins.
-     * 
+     *
      *  @param  args  Not used.
      */
     public static void main(String args[]) {
@@ -356,7 +356,7 @@ public final class ConverterInfoMgr {
             }
 
             System.out.println("");
- 
+
             // Quit
             //
             if (c == 'Q') {
@@ -388,7 +388,7 @@ public final class ConverterInfoMgr {
                     }
                 }
 
-            // Unload by Display Name or Jarfile 
+            // Unload by Display Name or Jarfile
             //
 	    } else if (c == 'T') {
 		if (validate== true){
@@ -422,7 +422,7 @@ public final class ConverterInfoMgr {
                     } else {
                         System.out.println("Remove failed.");
                     }
-             
+
                 } catch (Exception e) {
                     System.out.println("Error removing value from registry");
                     System.out.println("Error msg: " + e.getMessage());
@@ -447,7 +447,7 @@ public final class ConverterInfoMgr {
                     System.out.println("Error adding data to registry");
                     System.out.println("Error msg: " + e.getMessage());
                 }
-            
+
                 if (c == 'F') {
                     System.out.println("Enter office mime: ");
                 } else {
@@ -502,7 +502,7 @@ public final class ConverterInfoMgr {
                     int feCnt = 1;
                     while (fromEnum.hasMoreElements())
                     {
-                        System.out.println("    DeviceMime   : (#" + feCnt + ") : " + 
+                        System.out.println("    DeviceMime   : (#" + feCnt + ") : " +
                             (String)fromEnum.nextElement());
                         feCnt++;
                     }

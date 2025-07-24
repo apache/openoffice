@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -28,20 +28,20 @@ import javax.accessibility.AccessibleContext;
 import com.sun.star.uno.*;
 import com.sun.star.accessibility.*;
 
-/** 
+/**
  * Specialized container for MenuBar and Popup-Menu(s)
  * FIXME: join with Menu ?
  */
 public class MenuContainer extends Container implements javax.accessibility.Accessible {
 
     protected XAccessibleSelection unoAccessibleSelection = null;
-    
+
     protected MenuContainer(javax.accessibility.AccessibleRole role, XAccessible xAccessible, XAccessibleContext xAccessibleContext) {
         super(role, xAccessible, xAccessibleContext);
     }
-    
+
     protected class AccessibleMenuContainerListener extends AccessibleContainerListener {
-        
+
         protected AccessibleMenuContainerListener() {
             super();
         }
@@ -59,18 +59,18 @@ public class MenuContainer extends Container implements javax.accessibility.Acce
             }
         }
     }
-    
+
     protected XAccessibleEventListener createEventListener() {
         return new AccessibleMenuContainerListener();
     }
-    
+
     /** Creates the AccessibleContext associated with this object */
     public javax.accessibility.AccessibleContext createAccessibleContext() {
         return new AccessibleMenuContainer();
     }
 
     protected class AccessibleMenuContainer extends AccessibleContainer implements javax.accessibility.AccessibleSelection {
-        
+
         protected AccessibleMenuContainer() {
             unoAccessibleSelection = (XAccessibleSelection) UnoRuntime.queryInterface(XAccessibleSelection.class,
                     unoAccessibleContext);
@@ -99,7 +99,7 @@ public class MenuContainer extends Container implements javax.accessibility.Acce
         public void addAccessibleSelection(int i) {
             try {
                 javax.accessibility.Accessible a = getAccessibleChild(i);
-            
+
                 // selecting menu items invokes the click action in Java 1.5
                 if( a instanceof MenuItem )
                     a.getAccessibleContext().getAccessibleAction().doAccessibleAction(0);

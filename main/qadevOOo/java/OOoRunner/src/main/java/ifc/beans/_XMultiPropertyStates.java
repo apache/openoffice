@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -67,7 +67,7 @@ public class _XMultiPropertyStates extends MultiMethodTest {
         log.print("}");
         log.println("");
     }
-        
+
 
     /**
     * Test calls the method and checks return value.
@@ -116,14 +116,14 @@ public class _XMultiPropertyStates extends MultiMethodTest {
         // searching for property which currently don't have default value
         // and preferable has MAYBEDEFAULT attr
         // if no such properties are found then the first one is selected
-        
+
         String ro = (String) tEnv.getObjRelation("allReadOnly");
         if (ro != null) {
             log.println(ro);
             tRes.tested("setPropertiesToDefault()",Status.skipped(true));
             return;
         }
-        
+
         boolean mayBeDef = false;
         String propName = names[0];
 
@@ -136,7 +136,7 @@ public class _XMultiPropertyStates extends MultiMethodTest {
                 Property prop = null;
                 try {
                     prop = xPropSetInfo.getPropertyByName(names[i]);
-                } 
+                }
                 catch(com.sun.star.beans.UnknownPropertyException e) {
                     log.println("couldn't get property info: " + e.toString());
                     throw new StatusException(Status.failed
@@ -189,7 +189,7 @@ public class _XMultiPropertyStates extends MultiMethodTest {
             oObj.setAllPropertiesToDefault();
        } catch(RuntimeException e) {
            log.println("Ignore Runtime Exception: " + e.getMessage());
-       }     
+       }
         log.println("Checking that all properties are now in DEFAULT state" +
             " excepting may be those which 'can't be default'");
 

@@ -49,20 +49,20 @@ public class Line<TokenType>
         if (aRun.GetHeight() > mnHeight)
             mnHeight = aRun.GetHeight();
         aRun.SetLine(this);
-        
+
         if (aRun.GetStreamOffset() >= 0)
         {
             if (mnStartOffset < 0)
                 mnStartOffset = aRun.GetStreamOffset();
-            
+
             if (mnEndOffset < aRun.GetStreamEndOffset())
                 mnEndOffset = aRun.GetStreamEndOffset();
         }
     }
 
 
-    
-    
+
+
     public void Format (
         final Graphics2D aG2,
         final int nY)
@@ -80,68 +80,68 @@ public class Line<TokenType>
         }
     }
 
-    
-    
-    
+
+
+
     public int GetWidth ()
     {
         return mnWidth;
     }
-    
-    
-    
-    
+
+
+
+
     public int GetHeight ()
     {
         return mnHeight;
     }
-    
-    
-    
-    
+
+
+
+
     public int GetTop ()
     {
         return mnY;
     }
-    
-    
-    
-    
+
+
+
+
     public int GetBottom ()
     {
         return mnY + mnHeight;
     }
-    
-    
-    
+
+
+
 
     public boolean Overlaps (
-        final double nTop, 
+        final double nTop,
         final double nBottom)
     {
         return mnY<=nBottom && mnY+mnHeight>nTop;
     }
 
-    
-    
-    
+
+
+
     public boolean Contains (final int nY)
     {
         return nY>=mnY && nY<mnY+mnHeight;
     }
 
-    
-    
-    
+
+
+
     @Override
     public Iterator<Run<TokenType>> iterator()
     {
         return maRuns.iterator();
     }
-    
-    
-    
-    
+
+
+
+
     public Run<TokenType> GetRunForX (final int nX)
     {
         int nRunX = 0;
@@ -155,10 +155,10 @@ public class Line<TokenType>
         }
         return null;
     }
-    
-    
-    
-    
+
+
+
+
     public Run<TokenType> GetRunForOffset (int nOffset)
     {
         for (int nIndex=0; nIndex<maRuns.size(); ++nIndex)
@@ -172,15 +172,15 @@ public class Line<TokenType>
         return null;
     }
 
-    
-    
-    
+
+
+
     public Iterable<Run<TokenType>> GetRunsForOffsets (
         final int nStartOffset,
         final int nEndOffset)
     {
         final Vector<Run<TokenType>> aRuns = new Vector<>();
-        
+
         for (final Run<TokenType> aRun : maRuns)
         {
             if (aRun.GetStreamOffset() >= nEndOffset)
@@ -193,18 +193,18 @@ public class Line<TokenType>
 
         return aRuns;
     }
-    
 
-    
-    
+
+
+
     public int GetStartOffset()
     {
         return mnStartOffset;
     }
-    
-    
-    
-    
+
+
+
+
     public int GetEndOffset ()
     {
         return mnEndOffset;
@@ -218,18 +218,18 @@ public class Line<TokenType>
         return mnStartOffset<=nOffset && nOffset<mnEndOffset;
     }
 
-    
-    
-    
+
+
+
     @Override
     public String toString ()
     {
         return String.format("line of %d runs: %s", maRuns.size(), maRuns.toString());
     }
-    
-    
-    
-    
+
+
+
+
     private final Vector<Run<TokenType>> maRuns;
     private int mnY;
     private int mnWidth;

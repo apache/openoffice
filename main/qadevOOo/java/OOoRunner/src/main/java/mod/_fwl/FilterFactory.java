@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -98,7 +98,7 @@ public class FilterFactory extends TestCase {
         XNameAccess xNA = (XNameAccess) UnoRuntime.queryInterface
             (XNameAccess.class, oObj);
         String[] filterNames = xNA.getElementNames();
-        
+
         // XNameContainer; XNameReplace
         String filterName = filterNames[0];
         Object[] instance = null;
@@ -115,14 +115,14 @@ public class FilterFactory extends TestCase {
             throw new StatusException(
             Status.failed("Couldn't get elements from object"));
         }
-        
+
         log.println("adding INSTANCE 1 as obj relation to environment");
-        
+
         log.println("fill property 'TemplateName' with 'INSTANCE1'");
         setPropertyValueValue((PropertyValue[])instance, "TemplateName", "INSTANCE1");
         tEnv.addObjRelation("INSTANCE" +1, instance);
-        
-        
+
+
         // XMSF
         Vector vFTypes = new Vector();
         Vector vFArgs = new Vector();
@@ -159,16 +159,16 @@ public class FilterFactory extends TestCase {
             vFArgs.toArray(new Object[vFArgs.size()][]));
 
         // com.sun.star.container.XContainerQuery
-        NamedValue[] querySequenze = new NamedValue[1]; 
+        NamedValue[] querySequenze = new NamedValue[1];
 		NamedValue query = new NamedValue();
 		query.Name = "Name";
         query.Value = "Rich Text Format";
         querySequenze[0] = query;
-        
+
         tEnv.addObjRelation("XContainerQuery.createSubSetEnumerationByProperties",
             querySequenze);
-        
-        
+
+
         return tEnv;
     } // finish method getTestEnvironment
 
@@ -178,7 +178,7 @@ public class FilterFactory extends TestCase {
             i++;
         }
         return i < props.length ? props[i].Value : null;
-        
+
     }
 
     protected void setPropertyValueValue(PropertyValue[] props, String pName, Object pValue) {
@@ -195,6 +195,6 @@ public class FilterFactory extends TestCase {
             i++;
         }
         return i < props.length ? props[i] : null;
-        
+
     }
 }

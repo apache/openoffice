@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -27,14 +27,14 @@ import java.util.zip.*;
 
 public class XmlWrapper
 {
-    public static void main(String args[]) throws IOException 
+    public static void main(String args[]) throws IOException
     {
         System.out.println("args.length is " + args.length);
         if (args.length < 2) {
             System.out.println("Usage: java XmlWrapper [<zipfile1> <zipfile2>].");
             //return;
 		 	System.exit(-1);
-			
+
         }
 
         XmlWrapper w = new XmlWrapper();
@@ -116,7 +116,7 @@ public class XmlWrapper
                same = xmldiff.diff();
            }
         }
-        catch (Exception ex) 
+        catch (Exception ex)
         {
          System.out.println("XmlDiff failed");
          System.out.println("Exception: " + ex.toString());
@@ -126,7 +126,7 @@ public class XmlWrapper
 		 System.exit(-1);
         }
 
-        System.out.println("Diff result: " + same); 
+        System.out.println("Diff result: " + same);
         if (same)
         {
           System.out.println("XMLDIFFRESULT:PASSED");

@@ -36,28 +36,28 @@ public class NumberNode<T extends Comparable<T>>
         meType = eType;
         mbIsList = false;
     }
-    
-    
-    
-    
+
+
+
+
     public BuiltInType GetNumberType ()
     {
         return meType;
     }
-    
-    
-    
-    
+
+
+
+
     T ParseString (final String sValue)
     {
         switch(meType)
         {
             case Float:
                 return (T)(Float)Float.parseFloat(sValue);
-                
+
             case Double:
                 return (T)(Double)Double.parseDouble(sValue);
-                
+
             case Byte:
                 return (T)(Byte)Byte.parseByte(sValue);
 
@@ -73,15 +73,15 @@ public class NumberNode<T extends Comparable<T>>
             case UnsignedInt:
             case Integer:
                 return (T)(Long)Long.parseLong(sValue);
-                
+
             default:
                 throw new RuntimeException("unsupported type "+meType);
         }
     }
-    
-    
-    
-    
+
+
+
+
     @Override
     public void ApplyRestriction (
         final Restriction aNode,
@@ -96,7 +96,7 @@ public class NumberNode<T extends Comparable<T>>
             ApplyMaximum(ParseString(aNode.GetMaxExclusive()), false);
         if (aNode.HasFeature(Restriction.MaxInclusiveBit))
             ApplyMaximum(ParseString(aNode.GetMaxInclusive()), true);
-        
+
         if (aNode.HasFeature(Restriction.EnumerationBit))
         {
             final Vector<T> aValues = new Vector<>();
@@ -106,8 +106,8 @@ public class NumberNode<T extends Comparable<T>>
         }
     }
 
-    
-    
+
+
 
     @Override
     public void Print (final Log aLog)
@@ -115,9 +115,9 @@ public class NumberNode<T extends Comparable<T>>
         aLog.printf("%s\n", toString());
     }
 
-    
-    
-    
+
+
+
     @Override
     public String toString ()
     {
@@ -135,7 +135,7 @@ public class NumberNode<T extends Comparable<T>>
         else if (maMinimumValue!=null || maMaximumValue!=null)
         {
             sMessage.append(" restricted to ");
-          
+
             if (maMinimumValue != null)
             {
                 sMessage.append(maMinimumValue);
@@ -161,8 +161,8 @@ public class NumberNode<T extends Comparable<T>>
     }
 
 
-    
-    
+
+
     private void ApplyMinimum (
         final T nValue,
         final boolean bIsInclusive)
@@ -181,10 +181,10 @@ public class NumberNode<T extends Comparable<T>>
         maMinimumValue = nValue;
         mbIsMinimumInclusive = bIsInclusive;
     }
-    
-    
-    
-    
+
+
+
+
 
     private void ApplyMaximum (
         final T nValue,
@@ -197,52 +197,52 @@ public class NumberNode<T extends Comparable<T>>
             final int nComparison = maMaximumValue.compareTo(nValue);
             if (nComparison < 0)
                 throw new RuntimeException("second restriction tries to enlarge value space");
-            else if (nComparison == 0) 
+            else if (nComparison == 0)
                 if ( ! mbIsMaximumInclusive && bIsInclusive)
                     throw new RuntimeException("second restriction tries to enlarge value space");
         }
         maMaximumValue = nValue;
         mbIsMaximumInclusive = bIsInclusive;
     }
-    
 
-    
-    
+
+
+
     private void ApplyEnumeration (final Vector<T> aValues)
     {
         if (maEnumeration!=null || maMaximumValue!=null || maMinimumValue!=null)
             throw new RuntimeException("can not apply enumeration to existing restriction");
         maEnumeration = aValues;
     }
-    
-    
-    
+
+
+
 
     @Override
     public boolean IsList ()
     {
         return mbIsList;
     }
-    
-    
-    
-    
+
+
+
+
     @Override
     public void SetIsList ()
     {
         mbIsList = true;
     }
-    
-    
-    
-    
+
+
+
+
     @Override
     public void AcceptVisitor (final ISimpleTypeNodeVisitor aVisitor)
     {
         aVisitor.Visit(this);
     }
-    
-    
+
+
     public enum RestrictionType
     {
         Size,
@@ -258,48 +258,48 @@ public class NumberNode<T extends Comparable<T>>
         else
             return RestrictionType.None;
     }
-    
-    
-    
+
+
+
     public Iterable<T> GetEnumerationRestriction ()
     {
         return maEnumeration;
     }
-    
-    
-    
-    
+
+
+
+
     public T GetMinimum ()
     {
         return maMinimumValue;
     }
 
-    
-    
-    
+
+
+
     public T GetMaximum ()
     {
         return maMaximumValue;
     }
-    
-    
-    
+
+
+
     public boolean IsMinimumInclusive ()
     {
         return mbIsMinimumInclusive;
     }
-    
-    
-    
-    
+
+
+
+
     public boolean IsMaximumInclusive ()
     {
         return mbIsMaximumInclusive;
     }
 
-    
-    
-    
+
+
+
     private final BuiltInType meType;
     private T maMinimumValue;
     private boolean mbIsMinimumInclusive;

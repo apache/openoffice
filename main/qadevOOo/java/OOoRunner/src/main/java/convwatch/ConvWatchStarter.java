@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -151,7 +151,7 @@ public class ConvWatchStarter extends EnhancedComplexTestCase
 
 
     /**
-     * 
+     *
      * @return a List of software which must accessible as an external executable
      */
     protected Object[] mustInstalledSoftware()
@@ -174,11 +174,11 @@ public class ConvWatchStarter extends EnhancedComplexTestCase
                 // Ghostscript
                 aList.add( "gswin32c.exe -version" );
             }
-            
+
             return aList.toArray();
         }
 
-    
+
     /**
      * The test method itself.
      * Don't try to call it from outside, it is started only from qadevOOo runner
@@ -201,7 +201,7 @@ public class ConvWatchStarter extends EnhancedComplexTestCase
             {
                 return;
             }
-            
+
             initMember();
 
             aGTA.allowStore();
@@ -216,7 +216,7 @@ public class ConvWatchStarter extends EnhancedComplexTestCase
             // }
 
             String fs = System.getProperty("file.separator");
-            
+
             String sHTMLName = "index.html";
             File aInputPathTest = new File(m_sInputPath);
             if (!aInputPathTest.isDirectory())
@@ -291,13 +291,13 @@ public class ConvWatchStarter extends EnhancedComplexTestCase
                     runGDCWithStatus(HTMLoutput, LISToutput, m_sInputPath, m_sOutputPath, m_sReferencePath, m_sDiffPath, "");
                 }
             }
-            
+
             LISToutput.close();
             HTMLoutput.close();
             log.println("The file '" + HTMLoutput.getFilename() + "' shows a HTML based status.");
             DB.writeHTMLFile(HTMLoutput.getFilename());
         }
-    
+
 
     // -----------------------------------------------------------------------------
     void runGDCWithStatus(HTMLOutputter _aHTMLoutput, LISTOutputter _aLISToutput, String _sInputFile, String _sOutputPath, String _sReferencePath, String _sDiffPath, String _sNewSubDir )
@@ -313,7 +313,7 @@ public class ConvWatchStarter extends EnhancedComplexTestCase
                 // {
                 //     aSemaphore.P(aSemaphore.getSemaphoreFile());
                 // }
-                
+
                 aGTA.getPerformance().startTime(PerformanceContainer.OfficeStart);
                 aProvider = new OfficeProvider();
                 XMultiServiceFactory xMSF = (XMultiServiceFactory) aProvider.getManager(param);
@@ -324,7 +324,7 @@ public class ConvWatchStarter extends EnhancedComplexTestCase
                 aGTA = getGraphicalTestArguments(); // get new TestArguments
                 aGTA.getPerformance().setTime(PerformanceContainer.OfficeStart, nStartTime);
             }
-            
+
             // Watcher Object is need in log object to give a simple way to say if a running office is alive.
             // As long as a log comes, it pings the Watcher and says the office is alive, if not an
             // internal counter increase and at a given point (300 seconds) the office is killed.
@@ -367,7 +367,7 @@ public class ConvWatchStarter extends EnhancedComplexTestCase
                 sStatusRunThrough = "FAILED, FAILED";
                 DB.destination_failed(sStatusRunThrough, sStatusMessage);
             }
-        
+
             GlobalLogWriter.get().println("Watcher count is: " + aWatcher.getPing());
 
             // Office shutdown
@@ -437,5 +437,5 @@ public class ConvWatchStarter extends EnhancedComplexTestCase
 
         }
 
-    
+
 }

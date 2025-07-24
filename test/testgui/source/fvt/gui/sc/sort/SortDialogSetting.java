@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,20 +7,20 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 /**
- * 
+ *
  */
 package fvt.gui.sc.sort;
 
@@ -48,7 +48,7 @@ public class SortDialogSetting {
 
 	@Rule
 	public Logger log = Logger.getLogger(this);
-	
+
 	@Before
 	public void setUp() throws Exception {
 		app.start(true);
@@ -62,7 +62,7 @@ public class SortDialogSetting {
 
 	/**
 	 * Test sort with options setting: case sensitive
-	 * 
+	 *
 	 * @throws Exception
 	 */
 	@Test
@@ -101,7 +101,7 @@ public class SortDialogSetting {
 
 	/**
 	 * Test sort with options setting: copy sort result to
-	 * 
+	 *
 	 * @throws Exception
 	 */
 	@Ignore("Bug #119035 - Redo is not work when sort result to other position")
@@ -157,7 +157,7 @@ public class SortDialogSetting {
 		String saveTo = getPath("temp/" + "RowsSortWithOptionsCopyResultTo.ods");
 		FileUtil.deleteFile(saveTo);
 		saveAndReopen(saveTo);
-		
+
 		calc.waitForExistence(10, 2);
 		assertArrayEquals("Saved sorted result", expectedSortedResult, SCTool.getCellTexts("$Sheet3.$A4:$B9"));
 		assertArrayEquals("Saved sorted result to cell range", expectedSortedResult, SCTool.getCellTexts("$Sheet2.$A1:$B6"));
@@ -165,7 +165,7 @@ public class SortDialogSetting {
 
 	/**
 	 * Test sort criteria: sort first by
-	 * 
+	 *
 	 * @throws Exception
 	 */
 	@Test
@@ -200,7 +200,7 @@ public class SortDialogSetting {
 		String saveTo = getPath("temp/" + "SortCriteriaSortFirstBy.ods");
 		FileUtil.deleteFile(saveTo);
 		saveAndReopen(saveTo);
-		
+
 		calc.waitForExistence(10, 2);
 		// "Data->Sort...", choose "Descending", sort first by Column A
 		app.dispatch(".uno:DataSort");
@@ -214,7 +214,7 @@ public class SortDialogSetting {
 
 	/**
 	 * Test sort criteria: sort second by
-	 * 
+	 *
 	 * @throws Exception
 	 */
 	@Test
@@ -249,7 +249,7 @@ public class SortDialogSetting {
 		String saveTo = getPath("temp/" + "SortCriteriaSortSecondBy.ods");
 		FileUtil.deleteFile(saveTo);
 		saveAndReopen(saveTo);
-		
+
 //		// "Data->Sort...", sort first by Column B "Ascending", sort
 //		// second by Column A "Descending"
 		calc.waitForExistence(10, 2);
@@ -266,7 +266,7 @@ public class SortDialogSetting {
 
 	/**
 	 * Test sort criteria: sort third by
-	 * 
+	 *
 	 * @throws Exception
 	 */
 	@Test
@@ -308,7 +308,7 @@ public class SortDialogSetting {
 		String saveTo = getPath("temp/" + "SortCriteriaSortThirdBy.ods");
 		FileUtil.deleteFile(saveTo);
 		saveAndReopen(saveTo);
-		
+
 		// Reopen, "Data->Sort...", sort first by Column B "Ascending", sort
 		// second by Column C "Descending"
 		calc.waitForExistence(10, 2);
@@ -354,7 +354,7 @@ public class SortDialogSetting {
 	/**
 	 * Test sort options: custom sort order, predefined in preferences from copy
 	 * list
-	 * 
+	 *
 	 * @throws Exception
 	 */
 	@Test
@@ -473,7 +473,7 @@ public class SortDialogSetting {
 	/**
 	 * Test sort options: custom sort order, predefined in preferences from new
 	 * list
-	 * 
+	 *
 	 * @throws Exception
 	 */
 	@Test
@@ -569,7 +569,7 @@ public class SortDialogSetting {
 		String saveTo = getPath("temp/" + "SortOptionsCustomSortOrderPredefineFromNewList.ods");
 		FileUtil.deleteFile(saveTo);
 		saveAndReopen(saveTo);
-		
+
 		calc.waitForExistence(10, 2);
 		app.dispatch(".uno:SelectTables");
 		scSheetsList.select(0); // Sheet 1
@@ -583,7 +583,7 @@ public class SortDialogSetting {
 
 	/**
 	 * Test sort options: sort columns, direction "Left to right"
-	 * 
+	 *
 	 * @throws Exception
 	 */
 	@Test
@@ -627,7 +627,7 @@ public class SortDialogSetting {
 
 	/**
 	 * Test sort options: "Include formats"
-	 * 
+	 *
 	 * @throws Exception
 	 */
 	@Test
@@ -707,7 +707,7 @@ public class SortDialogSetting {
 
 	/**
 	 * Test sort options: multiple sort, data overlap
-	 * 
+	 *
 	 * @throws Exception
 	 */
 	@Test
@@ -774,7 +774,7 @@ public class SortDialogSetting {
 	/**
 	 * Test sort options: multiple sort, no data overlap, sort parameter saved
 	 * correctly
-	 * 
+	 *
 	 * @throws Exception
 	 */
 	@Test

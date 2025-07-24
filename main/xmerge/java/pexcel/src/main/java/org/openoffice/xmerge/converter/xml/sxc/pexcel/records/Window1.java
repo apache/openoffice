@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -33,13 +33,13 @@ import org.openoffice.xmerge.converter.xml.sxc.pexcel.PocketExcelConstants;
 
 
 /**
- * Represents a BIFF REcord that describes workbook window attributes 
+ * Represents a BIFF REcord that describes workbook window attributes
  */
 public class Window1 implements BIFFRecord {
 
     private byte[] grbit 	= new byte[2];
     private byte[] itabCur	= new byte[2];		// index of selected worksheet
-    
+
 	/**
  	 * Constructor
  	 */
@@ -49,57 +49,57 @@ public class Window1 implements BIFFRecord {
     }
 
    	/**
- 	 * Constructs a Window1 Record from an <code>InputStream</code> 
+ 	 * Constructs a Window1 Record from an <code>InputStream</code>
  	 *
- 	 * @param	is InputStream containing a Window1 Record 
+ 	 * @param	is InputStream containing a Window1 Record
  	 */
     public Window1(InputStream is) throws IOException{
-		read(is);	
+		read(is);
     }
-	
+
     /**
 	 * Set the number of the active sheet
 	 *
-	 * @param activeSheet number of the active sheet 
+	 * @param activeSheet number of the active sheet
 	 */
     public void setActiveSheet(int activeSheet) {
         itabCur = EndianConverter.writeShort((short) activeSheet);
     }
-	
+
     /**
-	 * Get the number of the active sheet 
+	 * Get the number of the active sheet
 	 *
 	 * @return 	 number of the active sheet
 	 */
     public int getActiveSheet() {
         return EndianConverter.readShort(itabCur);
-    }	
+    }
 
     /**
-	 * Get the hex code for this particular <code>BIFFRecord</code> 
+	 * Get the hex code for this particular <code>BIFFRecord</code>
 	 *
 	 * @return the hex code for <code>Window1</code>
 	 */
     public short getBiffType() {
         return PocketExcelConstants.WINDOW_INFO;
     }
-    
+
    	/**
- 	 * Reads a Window1 Record from an <code>InputStream</code> 
+ 	 * Reads a Window1 Record from an <code>InputStream</code>
  	 *
- 	 * @param	input InputStream containing a Window1 Record 
+ 	 * @param	input InputStream containing a Window1 Record
  	 */
     public int read(InputStream input) throws IOException {
-		
+
         int numOfBytesRead	= input.read(grbit);
         numOfBytesRead		+= input.read(itabCur);
-                
-        Debug.log(Debug.TRACE,"\tgrbit : "+ EndianConverter.readShort(grbit) + 
+
+        Debug.log(Debug.TRACE,"\tgrbit : "+ EndianConverter.readShort(grbit) +
                             " itabCur : " + EndianConverter.readShort(itabCur));
-                            
-        return numOfBytesRead;        
+
+        return numOfBytesRead;
     }
-    
+
     public void write(OutputStream output) throws IOException {
 
 		output.write(getBiffType());

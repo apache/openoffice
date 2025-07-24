@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -80,14 +80,14 @@ public class _XAccessibleComponent extends MultiMethodTest {
         int curX = 0;
 
         //while (!oObj.containsPoint(new Point(curX, bounds.Y)) && curX < bounds.Width+bounds.X) {
-        while (!oObj.containsPoint(new Point(curX, 0)) && 
+        while (!oObj.containsPoint(new Point(curX, 0)) &&
                (curX < bounds.Width)) {
             curX++;
         }
 
         //if ((bounds.X <= curX) && (curX < bounds.Width+bounds.X)) {
         if (curX < bounds.Width) {
-            log.println("Upper bound of box containsPoint point (" + curX + 
+            log.println("Upper bound of box containsPoint point (" + curX +
                         ",0) - OK");
         } else {
             log.println(
@@ -98,16 +98,16 @@ public class _XAccessibleComponent extends MultiMethodTest {
         curX = 0;
 
         //while (!oObj.containsPoint(new Point(curX, bounds.Y+bounds.Height - 1))
-        while (!oObj.containsPoint(new Point(curX, bounds.Height - 1)) && 
+        while (!oObj.containsPoint(new Point(curX, bounds.Height - 1)) &&
                (curX < bounds.Width)) {
-            log.println("containsPoint returns false for (" + curX + "," + 
+            log.println("containsPoint returns false for (" + curX + "," +
                         bounds.Height + ")");
             curX++;
         }
 
         //if ((bounds.X <= curX) && (curX < bounds.Width+bounds.X)) {
         if (curX < bounds.Width) {
-            log.println("Lower bound of box containsPoint point (" + curX + 
+            log.println("Lower bound of box containsPoint point (" + curX +
                         "," + (bounds.Height - 1) + ") - OK");
         } else {
             log.println(
@@ -118,14 +118,14 @@ public class _XAccessibleComponent extends MultiMethodTest {
         int curY = 0;
 
         //while (!oObj.containsPoint(new Point(bounds.X, curY)) && curY < bounds.Height+bounds.Y) {
-        while (!oObj.containsPoint(new Point(0, curY)) && 
+        while (!oObj.containsPoint(new Point(0, curY)) &&
                (curY < bounds.Height)) {
             curY++;
         }
 
         //if ((bounds.Y <= curY) && (curY < bounds.Height+bounds.Y)) {
         if (curY < bounds.Height) {
-            log.println("Left bound of box containsPoint point (0," + curY + 
+            log.println("Left bound of box containsPoint point (0," + curY +
                         ") - OK");
         } else {
             log.println(
@@ -137,14 +137,14 @@ public class _XAccessibleComponent extends MultiMethodTest {
 
         //while (!oObj.containsPoint(new Point(bounds.X+bounds.Width - 1, curY))
         //       && curY < bounds.Height+bounds.Y) {
-        while (!oObj.containsPoint(new Point(bounds.Width - 1, curY)) && 
+        while (!oObj.containsPoint(new Point(bounds.Width - 1, curY)) &&
                (curY < bounds.Height)) {
             curY++;
         }
 
         //if ((bounds.Y <= curY) && (curY < bounds.Height + bounds.Y)) {
         if (curY < bounds.Height) {
-            log.println("Right bound of box containsPoint point (" + 
+            log.println("Right bound of box containsPoint point (" +
                         (bounds.Width - 1) + "," + curY + ") - OK");
         } else {
             log.println(
@@ -173,7 +173,7 @@ public class _XAccessibleComponent extends MultiMethodTest {
         }
 
         if (locRes) {
-            log.println("Outer upper and lower bounds contain no component " + 
+            log.println("Outer upper and lower bounds contain no component " +
                         "points - OK");
         } else {
             result = false;
@@ -199,7 +199,7 @@ public class _XAccessibleComponent extends MultiMethodTest {
         }
 
         if (locRes) {
-            log.println("Outer left and right bounds contain no component " + 
+            log.println("Outer left and right bounds contain no component " +
                         "points - OK");
         } else {
             result = false;
@@ -232,20 +232,20 @@ public class _XAccessibleComponent extends MultiMethodTest {
                     continue;
                 }
 
-                log.println("Checking child with bounds " + "(" + chBnd.X + 
-                            "," + chBnd.Y + "),(" + chBnd.Width + "," + 
-                            chBnd.Height + "): " + 
+                log.println("Checking child with bounds " + "(" + chBnd.X +
+                            "," + chBnd.Y + "),(" + chBnd.Width + "," +
+                            chBnd.Height + "): " +
                             util.AccessibilityTools.accessibleToString(
                                     children[i]));
 
                 XAccessibleContext xAc = (XAccessibleContext) UnoRuntime.queryInterface(
-                                                 XAccessibleContext.class, 
+                                                 XAccessibleContext.class,
                                                  children[i]);
 
                 boolean MightBeCovered = false;
                 boolean isShowing = xAc.getAccessibleStateSet()
                                        .contains(com.sun.star.accessibility.AccessibleStateType.SHOWING);
-                log.println("\tStateType containsPoint SHOWING: " + 
+                log.println("\tStateType containsPoint SHOWING: " +
                             isShowing);
 
                 if (!isShowing) {
@@ -259,7 +259,7 @@ public class _XAccessibleComponent extends MultiMethodTest {
                 int curX = chBnd.Width / 2;
                 int curY = chBnd.Height / 2;
 
-                while (!children[i].containsPoint(new Point(curX, curY)) && 
+                while (!children[i].containsPoint(new Point(curX, curY)) &&
                        (curX > 0) && (curY > 0)) {
                     curX--;
                     curY--;
@@ -273,23 +273,23 @@ public class _XAccessibleComponent extends MultiMethodTest {
 
                 // trying the point laying on child
                 XAccessible xAcc = oObj.getAccessibleAtPoint(
-                                           new Point(chBnd.X + curX, 
+                                           new Point(chBnd.X + curX,
                                                      chBnd.Y + curY));
-                
+
 
                 Point p = new Point(chBnd.X + curX,chBnd.X + curX);
-                
+
                 if (isCovered(p) && isShowing) {
                     log.println(
                             "Child might be covered by another and can't be reached");
                     MightBeCovered = true;
                 }
-                
+
                 KnownBounds.add(chBnd);
 
                 if (xAcc == null) {
-                    log.println("The child not found at point (" + 
-                                (chBnd.X + curX) + "," + (chBnd.Y + curY) + 
+                    log.println("The child not found at point (" +
+                                (chBnd.X + curX) + "," + (chBnd.Y + curY) +
                                 ") - FAILED");
 
                     if (isShowing) {
@@ -299,12 +299,12 @@ public class _XAccessibleComponent extends MultiMethodTest {
                     }
                 } else {
                     XAccessible xAccCh = (XAccessible) UnoRuntime.queryInterface(
-                                                 XAccessible.class, 
+                                                 XAccessible.class,
                                                  children[i]);
                     XAccessibleContext xAccC = (XAccessibleContext) UnoRuntime.queryInterface(
-                                                       XAccessibleContext.class, 
+                                                       XAccessibleContext.class,
                                                        children[i]);
-                    log.println("Child found at point (" + (chBnd.X + curX) + 
+                    log.println("Child found at point (" + (chBnd.X + curX) +
                                 "," + (chBnd.Y + curY) + ") - OK");
 
                     boolean res = false;
@@ -339,24 +339,24 @@ public class _XAccessibleComponent extends MultiMethodTest {
                             log.print("is hidden behind the found Child ");
                             log.println(xAcc.getAccessibleContext()
                                             .getAccessibleName() + " - OK");
-                        } else {                            
+                        } else {
                             log.println(
                                     "The children found is not the same");
                             log.println("Expected: " + expName);
                             log.println("Description:  " + expDesc);
-                            log.println("Found: " + 
+                            log.println("Found: " +
                                         xAcc.getAccessibleContext()
                                             .getAccessibleName());
-                            log.println("Description:  " + 
+                            log.println("Description:  " +
                                         xAcc.getAccessibleContext()
                                             .getAccessibleDescription());
                             if (MightBeCovered) {
                                 log.println("... Child is covered by another - OK");
-                            } else {                                
+                            } else {
                                 log.println("... FAILED");
                                 result = false;
                             }
-                            
+
                         }
                     }
                 }
@@ -367,26 +367,26 @@ public class _XAccessibleComponent extends MultiMethodTest {
                                new Point(chBnd.X - 1, chBnd.Y - 1));
 
                 if (xAcc == null) {
-                    log.println("No children found at point (" + 
-                                (chBnd.X - 1) + "," + (chBnd.Y - 1) + 
+                    log.println("No children found at point (" +
+                                (chBnd.X - 1) + "," + (chBnd.Y - 1) +
                                 ") - OK");
                     result &= true;
                 } else {
                     XAccessible xAccCh = (XAccessible) UnoRuntime.queryInterface(
-                                                 XAccessible.class, 
+                                                 XAccessible.class,
                                                  children[i]);
                     boolean res = util.AccessibilityTools.equals(xAccCh, xAcc);
 
                     if (res) {
-                        log.println("The same child found outside " + 
-                                    "its bounds at (" + (chBnd.X - 1) + "," + 
+                        log.println("The same child found outside " +
+                                    "its bounds at (" + (chBnd.X - 1) + "," +
                                     (chBnd.Y - 1) + ") - FAILED");
                         result = false;
                     }
                 }
             }
         } else {
-            log.println("There are no children supporting " + 
+            log.println("There are no children supporting " +
                         "XAccessibleComponent");
         }
 
@@ -405,9 +405,9 @@ public class _XAccessibleComponent extends MultiMethodTest {
         bounds = oObj.getBounds();
         result &= ((bounds != null) && (bounds.X >= 0) && (bounds.Y >= 0) && (bounds.Width > 0) && (bounds.Height > 0));
 
-        log.println("Bounds = " + 
-                    ((bounds != null)             
-                     ? ("(" + bounds.X + "," + bounds.Y + "),(" + 
+        log.println("Bounds = " +
+                    ((bounds != null)
+                     ? ("(" + bounds.X + "," + bounds.Y + "),(" +
                                bounds.Width + "," + bounds.Height + ")") : "null"));
 
         tRes.tested("getBounds()", result);
@@ -460,7 +460,7 @@ public class _XAccessibleComponent extends MultiMethodTest {
 
         if (parent != null) {
             Point parLoc = parent.getLocationOnScreen();
-            log.println("Parent location is (" + parLoc.X + "," + parLoc.Y + 
+            log.println("Parent location is (" + parLoc.X + "," + parLoc.Y +
                         ")");
 
             result &= ((parLoc.X + bounds.X) == loc.X);
@@ -536,7 +536,7 @@ public class _XAccessibleComponent extends MultiMethodTest {
                 XAccessible child = xAccCon.getAccessibleChild(i);
                 XAccessibleContext xAccConCh = child.getAccessibleContext();
                 XAccessibleComponent xChAccComp = (XAccessibleComponent) UnoRuntime.queryInterface(
-                                                          XAccessibleComponent.class, 
+                                                          XAccessibleComponent.class,
                                                           xAccConCh);
 
                 if (xChAccComp != null) {
@@ -578,7 +578,7 @@ public class _XAccessibleComponent extends MultiMethodTest {
 
         XAccessibleContext xAccConPar = xAccPar.getAccessibleContext();
         XAccessibleComponent parent = (XAccessibleComponent) UnoRuntime.queryInterface(
-                                              XAccessibleComponent.class, 
+                                              XAccessibleComponent.class,
                                               xAccConPar);
 
         if (parent == null) {
@@ -617,9 +617,9 @@ public class _XAccessibleComponent extends MultiMethodTest {
             disposeEnvironment();
         }
     }
-    
+
     private boolean isCovered(Point p) {
-        int elements = KnownBounds.size();        
+        int elements = KnownBounds.size();
         boolean Covered = false;
         for (int k=0;k<elements;k++) {
             Rectangle known = (Rectangle) KnownBounds.get(k);
@@ -627,11 +627,11 @@ public class _XAccessibleComponent extends MultiMethodTest {
             Covered &= (known.Y < p.Y);
             Covered &= (p.Y < known.Y+known.Height);
             Covered &= (p.X < known.X+known.Width);
-            
+
             if (Covered) {
                 break;
             }
-        } 
+        }
         return Covered;
     }
 }

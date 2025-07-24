@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -40,11 +40,11 @@ import com.sun.star.uno.XComponentContext;
 
 
 public class DialogDocument extends UnoDialogSample {
-    
+
     public DialogDocument(XComponentContext _xContext, XMultiComponentFactory _xMCF) {
         super(_xContext, _xMCF);
     }
-    
+
     public static void main(String args[]){
         DialogDocument oDialogDocument = null;
         try {
@@ -64,8 +64,8 @@ public class DialogDocument extends UnoDialogSample {
             // add the model to the NameContainer of the dialog model
             oDialogDocument.m_xDlgModelNameContainer.insertByName("Headerlabel", oFTHeaderModel);
             oDialogDocument.showDocumentinDialogWindow(oDialogDocument.m_xWindowPeer, new Rectangle(40, 50, 420, 550), "private:factory/swriter");
-            
-            oDialogDocument.insertButton(oDialogDocument, 126, 370, 50, "~Close dialog", (short) PushButtonType.OK_value);            
+
+            oDialogDocument.insertButton(oDialogDocument, 126, 370, 50, "~Close dialog", (short) PushButtonType.OK_value);
             oDialogDocument.executeDialog();
         }catch( Exception ex ) {
             ex.printStackTrace(System.out);
@@ -77,16 +77,16 @@ public class DialogDocument extends UnoDialogSample {
                 }
             }
         }
-        
+
         System.exit( 0 );
     }
-    
+
     public void showDocumentinDialogWindow(XWindowPeer _xParentWindowPeer, Rectangle _aRectangle, String _sUrl){
         try {
             // The Toolkit is the creator of all windows...
             Object oToolkit = m_xMCF.createInstanceWithContext("com.sun.star.awt.Toolkit", m_xContext);
             XToolkit xToolkit = (XToolkit) UnoRuntime.queryInterface(XToolkit.class, oToolkit);
-            
+
             // set up a window description and create the window. A parent window is always necessary for this...
             com.sun.star.awt.WindowDescriptor aWindowDescriptor = new com.sun.star.awt.WindowDescriptor();
             // a simple window is enough for this purpose...
@@ -96,20 +96,20 @@ public class DialogDocument extends UnoDialogSample {
             aWindowDescriptor.Parent = _xParentWindowPeer;
             aWindowDescriptor.ParentIndex = 1;
             aWindowDescriptor.Bounds = _aRectangle;
-            
+
             // set the window attributes...
             // The attribute CLIPCHILDREN causes the parent to not repaint the areas of the children...
             aWindowDescriptor.WindowAttributes = VclWindowPeerAttribute.CLIPCHILDREN + WindowAttribute.BORDER + WindowAttribute.SHOW;
             XWindowPeer xWindowPeer = xToolkit.createWindow(aWindowDescriptor);
             XWindow xWindow = (XWindow) UnoRuntime.queryInterface(XWindow.class, xWindowPeer);
             XView xView = (XView) UnoRuntime.queryInterface(XView.class, xWindow);
-            
+
             // create a frame and initialize it with the created window...
             Object oFrame = m_xMCF.createInstanceWithContext("com.sun.star.frame.Frame", m_xContext);
             // The frame should be of global scope because it's within the responsibility to dispose it after usage
             m_xFrame = (XFrame) UnoRuntime.queryInterface(XFrame.class, oFrame);
             m_xFrame.initialize(xWindow);
-            
+
             // load the document and open it in preview mode
             XComponentLoader xComponentLoader = (XComponentLoader) UnoRuntime.queryInterface(XComponentLoader.class, m_xFrame);
             PropertyValue[] aPropertyValues = new PropertyValue[2];
@@ -130,5 +130,5 @@ public class DialogDocument extends UnoDialogSample {
             throw new java.lang.RuntimeException("cannot happen...");
         }
     }
-    
+
 }

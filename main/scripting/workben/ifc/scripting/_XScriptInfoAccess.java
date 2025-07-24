@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -55,8 +55,8 @@ public class _XScriptInfoAccess extends MultiMethodTest {
 
     public void _getScriptLogicalNames() {
         boolean result = true;
-        
-        Collection c = 
+
+        Collection c =
             (Collection) tEnv.getObjRelation("_getScriptLogicalNames");
 
         Iterator tests;
@@ -81,7 +81,7 @@ public class _XScriptInfoAccess extends MultiMethodTest {
         String output = "";
 
         log.println(testdata.get("description"));
-        
+
         // try {
             log.println("In _XScriptInfoAccess.getScriptLogicalNames()");
             String[] logicalNames = oObj.getScriptLogicalNames();
@@ -113,8 +113,8 @@ public class _XScriptInfoAccess extends MultiMethodTest {
 
     public void _getImplementations() {
         boolean result = true;
-        
-        Collection c = 
+
+        Collection c =
             (Collection) tEnv.getObjRelation("_getImplementations");
 
         Iterator tests;
@@ -140,7 +140,7 @@ public class _XScriptInfoAccess extends MultiMethodTest {
         String output = "";
 
         log.println(testdata.get("description"));
-        
+
 	// performs a basic check to see if 1 match (XScriptInfo) is returned
 	// the XScriptInfo object is tested more completely in _XScriptInfo
 	// which is drive from ScriptInfo
@@ -153,7 +153,7 @@ public class _XScriptInfoAccess extends MultiMethodTest {
                 output = "null";
             else if (impls.length == 0)
                 output = "empty";
-            else 
+            else
                 output = impls[0].getLogicalName();
         }
         catch (com.sun.star.uno.Exception e) {
@@ -170,8 +170,8 @@ public class _XScriptInfoAccess extends MultiMethodTest {
 
     public void _getAllImplementations() {
         boolean result = true;
-        
-        Collection c = 
+
+        Collection c =
             (Collection) tEnv.getObjRelation("_getAllImplementations");
 
         Iterator tests;
@@ -197,7 +197,7 @@ public class _XScriptInfoAccess extends MultiMethodTest {
         String output = "";
 
         log.println(testdata.get("description"));
-        
+
         Object obj = ScriptingUtils.getDefault().getScriptStorage(
             tParam.getMSF(), location);
 

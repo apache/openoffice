@@ -47,8 +47,8 @@ public class RequestVisitor
         maSourceSchemaBase = aSourceSchema;
         maSchemaOptimizer = aOptimizer;
     }
-    
-    
+
+
     @Override public void Visit (final Attribute aAttribute)
     {
         maSchemaOptimizer.RequestType(aAttribute.GetTypeName());
@@ -68,22 +68,22 @@ public class RequestVisitor
     {
         maSchemaOptimizer.RequestType(aElement.GetTypeName());
     }
-    
+
     @Override public void Visit (final Extension aExtension)
     {
         maSchemaOptimizer.RequestType(aExtension.GetBaseTypeName());
     }
-    
+
     @Override public void Visit (final GroupReference aReference)
     {
         maSchemaOptimizer.RequestType(aReference.GetReferencedGroup(maSourceSchemaBase));
     }
-    
+
     @Override public void Visit (final List aList)
     {
         maSchemaOptimizer.RequestType(aList.GetItemType());
     }
-    
+
     @Override public void Visit (final Restriction aRestriction)
     {
         maSchemaOptimizer.RequestType(aRestriction.GetBaseType());
@@ -93,7 +93,7 @@ public class RequestVisitor
     {
         maSchemaOptimizer.RequestType(aReference.GetReferencedSimpleType(maSourceSchemaBase));
     }
-    
+
     @Override public void Default (final INode aNode)
     {
         switch (aNode.GetNodeType())
@@ -122,7 +122,7 @@ public class RequestVisitor
                         aNode.GetLocation()));
         }
     }
-    
+
     private final SchemaBase maSourceSchemaBase;
     private final SchemaOptimizer maSchemaOptimizer;
 }

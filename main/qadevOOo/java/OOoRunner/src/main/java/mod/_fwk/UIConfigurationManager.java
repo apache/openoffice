@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -49,8 +49,8 @@ import util.utils;
  */
 public class UIConfigurationManager extends TestCase {
     XUIConfigurationManager xManager = null;
-    
-    
+
+
     /**
      * Create test environment:
      * <ul>
@@ -66,9 +66,9 @@ public class UIConfigurationManager extends TestCase {
     protected TestEnvironment createTestEnvironment(TestParameters tParam, PrintWriter log) {
         TestEnvironment tEnv = null;
         XMultiServiceFactory xMSF = (XMultiServiceFactory)tParam.getMSF();
-        
+
         log.println("Creating instance...");
-        
+
         try {
             xManager = (XUIConfigurationManager)UnoRuntime.queryInterface(
                     XUIConfigurationManager.class, xMSF.createInstance(
@@ -79,7 +79,7 @@ public class UIConfigurationManager extends TestCase {
         // just to make sure, it's the right one.
         log.println("TestObject: " + utils.getImplName(xManager));
         tEnv = new TestEnvironment(xManager);
-        
+
         // create a configuration storage
         try {
             String sourceDeleteCfg = util.utils.getFullTestURL("delete.cfg");
@@ -94,7 +94,7 @@ public class UIConfigurationManager extends TestCase {
             props[1] = new Integer(ElementModes.READWRITE);
             XStorage xRootStorage = (XStorage)UnoRuntime.queryInterface(XStorage.class, xSSF.createInstanceWithArguments(props));
             xSubStorage = xRootStorage.openStorageElement("Configurations2", ElementModes.READWRITE);
-            
+
             XUIConfigurationStorage xConfigStorage =(XUIConfigurationStorage)UnoRuntime.queryInterface(XUIConfigurationStorage.class, xManager);
             xConfigStorage.setStorage(xSubStorage);
             tEnv.addObjRelation("XUIConfigurationStorage.Storage", xSubStorage);
@@ -103,17 +103,17 @@ public class UIConfigurationManager extends TestCase {
             log.println("Could not create storage: " + e.toString());
         }
         util.dbg.printInterfaces(xManager);
-        
+
         tEnv.addObjRelation("XUIConfiguration.XUIConfigurationListenerImpl",
             new ConfigurationListener(log, xManager, xMSF));
 
         // the short cut manager service name
-        // 2do: correct the service name when it's no longer in 
-        tEnv.addObjRelation("XConfigurationManager.ShortCutManager", 
+        // 2do: correct the service name when it's no longer in
+        tEnv.addObjRelation("XConfigurationManager.ShortCutManager",
             "com.sun.star.ui.DocumentAcceleratorConfiguration");
         return tEnv;
     }
-    
+
     /**
      * An implementation of the _XUIConfiguration.XUIConfigurationListenerImpl
      * interface to trigger the event for a listener call.
@@ -125,7 +125,7 @@ public class UIConfigurationManager extends TestCase {
         private XUIConfigurationManager xUIManager = null;
         private XMultiServiceFactory xMSF = null;
         private static int iUniqueCounter;
-        
+
         public ConfigurationListener(PrintWriter _log, XUIConfigurationManager xUIManager, XMultiServiceFactory xMSF) {
             log = _log;
             this.xUIManager = xUIManager;
@@ -142,7 +142,7 @@ public class UIConfigurationManager extends TestCase {
                     PropertyValue[][]props = xUIManager.getUIElementsInfo(UIElementType.UNKNOWN);
                     XIndexAccess xMenuBarSettings = xUIManager.getSettings(
                     "private:resource/menubar/menubar", true);
-                    
+
                     PropertyValue[]prop = _XUIConfigurationManager.createMenuBarEntry(
                     "Trigger Event", xMenuBarSettings, xMSF, log);
                     _XUIConfigurationManager.createMenuBarItem("Click for Macro",
@@ -195,5 +195,5 @@ public class UIConfigurationManager extends TestCase {
             log.println("_XUIConfiguration.XUIConfigurationListenerImpl.elementReplaced.");
         }
     }
-    
+
 }

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -77,7 +77,7 @@ public class AccessibleMenuSeparator extends TestCase {
      * and implementation name <code>AccessibleMenuSeparator</code>
      * walking through the accessible component tree of a document.
      */
-    protected TestEnvironment createTestEnvironment(TestParameters Param, 
+    protected TestEnvironment createTestEnvironment(TestParameters Param,
                                                     PrintWriter log) {
         shortWait();
 
@@ -89,7 +89,7 @@ public class AccessibleMenuSeparator extends TestCase {
         XAccessible xRoot = at.getAccessibleObject(xWindow);
 
         at.printAccessibleTree(log, xRoot, Param.getBool(util.PropertyName.DEBUG_IS_ACTIVE));
-        XAccessibleContext MenuBar = at.getAccessibleObjectForRole(xRoot, 
+        XAccessibleContext MenuBar = at.getAccessibleObjectForRole(xRoot,
                                                                    AccessibleRole.MENU_BAR);
         XAccessibleAction act = null;
         XInterface oObj = null;
@@ -116,7 +116,7 @@ public class AccessibleMenuSeparator extends TestCase {
 
         final XAccessibleAction aAct = act;
 
-        tEnv.addObjRelation("EventProducer", 
+        tEnv.addObjRelation("EventProducer",
                             new ifc.accessibility._XAccessibleEventBroadcaster.EventProducer() {
             public void fireEvent() {
                 try {

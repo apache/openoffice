@@ -32,7 +32,7 @@ import javax.xml.stream.XMLStreamReader;
 import org.apache.openoffice.ooxml.parser.action.ActionManager;
 import org.apache.openoffice.ooxml.parser.attribute.AttributeProvider;
 
-/** This is the actual parser (where OOXMLParser is the front end that handles 
+/** This is the actual parser (where OOXMLParser is the front end that handles
  *  parameters given to the main method).
  */
 public class Parser
@@ -45,10 +45,10 @@ public class Parser
         maReader = GetStreamReader(aIn, "input");
         mnElementCount = 0;
     }
-    
-    
-    
-    
+
+
+
+
     public void Parse ()
     {
         Location aLocation = null;
@@ -81,7 +81,7 @@ public class Parser
                             Skip();
                         }
                         break;
-                        
+
                     case XMLStreamReader.END_ELEMENT:
                         maMachine.ProcessEndElement(
                             maReader.getNamespaceURI(),
@@ -89,22 +89,22 @@ public class Parser
                             aLocation,
                             maReader.getLocation());
                         break;
-                        
+
                     case XMLStreamReader.CHARACTERS:
                         maMachine.ProcessCharacters(
                             maReader.getText(),
                             aLocation,
                             maReader.getLocation());
                         break;
-                        
+
                     case XMLStreamReader.END_DOCUMENT:
                         break;
-                        
+
                     default:
                         Log.Err.printf("can't handle XML event of type %d\n", nCode);
                 }
             }
-            
+
             maReader.close();
         }
         catch (final XMLStreamException aException)
@@ -118,20 +118,20 @@ public class Parser
                 aLocation);
         }
     }
-    
 
-    
 
-    
+
+
+
 
     public int GetElementCount ()
     {
         return mnElementCount;
     }
 
-    
-    
-    
+
+
+
     private void Skip ()
     {
         if (Log.Dbg != null)
@@ -142,7 +142,7 @@ public class Parser
                 maReader.getLocation().getColumnNumber());
             Log.Dbg.IncreaseIndentation();
         }
-        
+
         // We are called when processing a start element.  This means that we are
         // already at relative depth 1.
         int nRelativeDepth = 1;
@@ -162,7 +162,7 @@ public class Parser
                             Log.Dbg.IncreaseIndentation();
                         }
                         break;
-                        
+
                     case XMLStreamReader.END_ELEMENT:
                         --nRelativeDepth;
                         if (Log.Dbg != null)
@@ -174,10 +174,10 @@ public class Parser
                             return;
                         }
                         break;
-                        
+
                     case XMLStreamReader.END_DOCUMENT:
                         throw new RuntimeException("saw end of document while skipping elements\n");
-                        
+
                     case XMLStreamReader.CHARACTERS:
                         SkipText(maReader.getText());
                         break;
@@ -194,19 +194,19 @@ public class Parser
             aException.printStackTrace();
         }
     }
-    
-    
-    
-    
+
+
+
+
     private void SkipText (final String sText)
     {
         if (Log.Dbg != null)
             Log.Dbg.printf("skipping text [%s]\n", sText.replace("\n", "\\n"));
     }
-    
 
-    
-    
+
+
+
     private XMLStreamReader GetStreamReader (
         final InputStream aIn,
         final String sDescription)
@@ -220,7 +220,7 @@ public class Parser
             aFactory.setProperty(XMLInputFactory.IS_REPLACING_ENTITY_REFERENCES, false);
             aFactory.setProperty(XMLInputFactory.IS_SUPPORTING_EXTERNAL_ENTITIES, false);
             aFactory.setProperty(XMLInputFactory.IS_COALESCING, false);
-            
+
             return (XMLStreamReader)aFactory.createXMLStreamReader(
                 sDescription,
                 aIn);
@@ -232,17 +232,17 @@ public class Parser
         }
     }
 
-    
-    
-    
+
+
+
     public ActionManager GetActionManager()
     {
         return maMachine.GetActionManager();
     }
-    
-    
-    
-    
+
+
+
+
     private final XMLStreamReader maReader;
     private final StateMachine maMachine;
     private int mnElementCount;

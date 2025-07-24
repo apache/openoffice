@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 package org.openoffice.accessibility.misc;
@@ -97,7 +97,7 @@ public class InformationWriter
         {
             XPropertySet xPropertySet =  (XPropertySet) UnoRuntime.queryInterface(
                 XPropertySet.class, xObject);
-            maOut.println (prefix + 
+            maOut.println (prefix +
                 xPropertySet.getPropertyValue (name));
         }
         catch (Exception e)
@@ -107,7 +107,7 @@ public class InformationWriter
         }
     }
 
-    
+
 
     public void showShapes (XDrawPage xPage)
     {
@@ -115,24 +115,24 @@ public class InformationWriter
         {
             XIndexAccess xShapeList = (XIndexAccess) UnoRuntime.queryInterface(
                 XIndexAccess.class, xPage);
-                
-            maOut.println ("There are " + xShapeList.getCount() 
+
+            maOut.println ("There are " + xShapeList.getCount()
                 + " shapes");
             for (int i=0; i<xShapeList.getCount(); i++)
             {
                 XShape xShape = (XShape) UnoRuntime.queryInterface(
                     XShape.class, xShapeList.getByIndex (i));
-                    
-                XShapeDescriptor xShapeDescriptor = 
+
+                XShapeDescriptor xShapeDescriptor =
                     (XShapeDescriptor) UnoRuntime.queryInterface(
                         XShapeDescriptor.class, xShape);
                 String sName = xShapeDescriptor.getShapeType ();
                 maOut.println ("   shape " + i + " : " + sName);
-                
-                XPropertySet xPropertySet = 
+
+                XPropertySet xPropertySet =
                     (XPropertySet) UnoRuntime.queryInterface(
                         XPropertySet.class, xShape);
-                Integer nZOrder = 
+                Integer nZOrder =
                     (Integer) xPropertySet.getPropertyValue ("ZOrder");
                 maOut.println ("   zorder = " + nZOrder);
             }
@@ -142,11 +142,11 @@ public class InformationWriter
             maOut.println ("caught exception in showShapes: " + e);
         }
     }
-    
 
 
 
-    /** @descr Print all available services of the given object to the 
+
+    /** @descr Print all available services of the given object to the
                 standard output.
     */
     public void showServices (XInterface xObject)
@@ -163,7 +163,7 @@ public class InformationWriter
             else
             {
                 String[] sServiceNames = xMSF.getAvailableServiceNames ();
-                maOut.println ("    object can create " 
+                maOut.println ("    object can create "
                     + sServiceNames.length + " services");
                 for (int i=0; i<sServiceNames.length; i++)
                     maOut.println ("        service " + i + " : " + sServiceNames[i]);
@@ -174,7 +174,7 @@ public class InformationWriter
             maOut.println ("caught exception in showServices : " + e);
         }
     }
-    
+
     /** @descr Print the service and implementation name of the given
                 object.
     */
@@ -192,7 +192,7 @@ public class InformationWriter
             {
                 maOut.println ("    Service name        : " + xSN.getServiceName ());
             }
-            
+
             // Use interface XServiceInfo to retrieve information about
             // supported services.
             XServiceInfo xSI = (XServiceInfo) UnoRuntime.queryInterface (
@@ -201,8 +201,8 @@ public class InformationWriter
                 maOut.println ("    interface XServiceInfo not supported");
             else
             {
-                maOut.println ("    Implementation name : " 
-                    + xSI.getImplementationName ());    
+                maOut.println ("    Implementation name : "
+                    + xSI.getImplementationName ());
             }
         }
         catch (Exception e)
@@ -210,10 +210,10 @@ public class InformationWriter
             maOut.println ("caught exception in showInfo : " + e);
         }
     }
-    
-    
-    
-    
+
+
+
+
     /** @descr Print information about supported interfaces.
     */
     public void showInterfaces (XInterface xObject)
@@ -230,10 +230,10 @@ public class InformationWriter
             else
             {
                 Type[] aTypeList = xTP.getTypes ();
-                maOut.println ("    object supports " + aTypeList.length 
+                maOut.println ("    object supports " + aTypeList.length
                     + " interfaces");
                 for (int i=0; i<aTypeList.length; i++)
-                    maOut.println ("        " + i + " : " 
+                    maOut.println ("        " + i + " : "
                         + aTypeList[i].getTypeName());
             }
         }
@@ -242,8 +242,8 @@ public class InformationWriter
             maOut.println ("caught exception in showInterfaces : " + e);
         }
     }
-    
-    
+
+
     /** @descr Print information concerning the accessibility of the given
         object.
     */
@@ -258,46 +258,46 @@ public class InformationWriter
 
             //  Get XAccessibleContext object if given object does not
             //  already support this interface.
-            XAccessibleContext xContext 
+            XAccessibleContext xContext
                 = (XAccessibleContext) UnoRuntime.queryInterface (
                     XAccessibleContext.class, xObject);
             if (xContext == null)
             {
-                XAccessible xAccessible 
+                XAccessible xAccessible
                     = (XAccessible) UnoRuntime.queryInterface (
                         XAccessible.class, xObject);
                 if (xAccessible == null)
                 {
-                    maOut.println (sIndent + "given object " + xObject 
+                    maOut.println (sIndent + "given object " + xObject
                         + " is not accessible");
                     return false;
                 }
                 else
                     xContext = xAccessible.getAccessibleContext();
             }
-            
+
             //  Print information about the accessible context.
             if (xContext != null)
             {
-                maOut.println (sIndent + "Name         : " 
+                maOut.println (sIndent + "Name         : "
                     + xContext.getAccessibleName());
-                maOut.println (sIndent + "Description  : " 
+                maOut.println (sIndent + "Description  : "
                     + xContext.getAccessibleDescription());
-                maOut.println (sIndent + "Role         : " 
+                maOut.println (sIndent + "Role         : "
                     + xContext.getAccessibleRole());
                 String sHasParent;
                 if (xContext.getAccessibleParent() != null)
                 {
                     maOut.println (sIndent + "Has parent   : yes");
-                    maOut.println (sIndent + "Parent index : " 
+                    maOut.println (sIndent + "Parent index : "
                         + xContext.getAccessibleIndexInParent());
                 }
                 else
                     maOut.println (sIndent + "Has parent   : no");
-                maOut.println (sIndent + "Child count  : " 
+                maOut.println (sIndent + "Child count  : "
                     + xContext.getAccessibleChildCount());
                 maOut.print (sIndent + "Relation set : ");
-                XAccessibleRelationSet xRelationSet 
+                XAccessibleRelationSet xRelationSet
                     = xContext.getAccessibleRelationSet();
                 if (xRelationSet != null)
                 {
@@ -312,13 +312,13 @@ public class InformationWriter
                 }
                 else
                     maOut.println ("no relation set");
-                
+
                 maOut.print (sIndent + "State set    : ");
-                XAccessibleStateSet xStateSet = 
+                XAccessibleStateSet xStateSet =
                     xContext.getAccessibleStateSet();
                 if (xStateSet != null)
                 {
-                    XIndexAccess xStates = 
+                    XIndexAccess xStates =
                         (XIndexAccess) UnoRuntime.queryInterface (
                             XIndexAccess.class, xStateSet);
                     maOut.print (xStates.getCount() + " (");
@@ -337,7 +337,7 @@ public class InformationWriter
             }
             else
                 maOut.println ("object has no accessible context.");
-            
+
             //            showInfo (xContext);
             //            showServices (xContext);
             //            showInterfaces (xContext);
@@ -348,7 +348,7 @@ public class InformationWriter
         }
         return true;
     }
-    
+
 
 
 
@@ -358,20 +358,20 @@ public class InformationWriter
     {
         try
         {
-            XAccessibleComponent xComponent = 
+            XAccessibleComponent xComponent =
                 (XAccessibleComponent) UnoRuntime.queryInterface (
                     XAccessibleComponent.class, xObject);
-            
+
             //  Print information about the accessible context.
             if (xComponent != null)
             {
-                maOut.println (sIndent + "Position        : " 
+                maOut.println (sIndent + "Position        : "
                     + xComponent.getLocation().X+", "
                     + xComponent.getLocation().Y);
-                maOut.println (sIndent + "Screen position : " 
+                maOut.println (sIndent + "Screen position : "
                     + xComponent.getLocationOnScreen().X+", "
                     + xComponent.getLocationOnScreen().Y);
-                maOut.println (sIndent + "Size            : " 
+                maOut.println (sIndent + "Size            : "
                     + xComponent.getSize().Width+", "
                     + xComponent.getSize().Height);
             }
@@ -393,7 +393,7 @@ public class InformationWriter
         {
             if ( ! showAccessibility (xRoot, depth))
                 return false;
-            
+
             String sIndent = "";
             for (int i=0; i<depth; i++)
                 sIndent += "    ";

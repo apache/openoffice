@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -84,7 +84,7 @@ public class _XMultiLayerStratum extends MultiMethodTest {
             log.println("Checking first on "+LayerIds[0]);
             res &= checkLayer(Layers[0]);
             log.println("Checking second on "+LayerIds[1]);
-            res &= checkLayer(Layers[1]);            
+            res &= checkLayer(Layers[1]);
         } catch (com.sun.star.configuration.backend.BackendAccessException e) {
             log.println("unexpected Exception -- FAILED");
             res = false;
@@ -106,14 +106,14 @@ public class _XMultiLayerStratum extends MultiMethodTest {
             String[] Times = new String[2];
             Times[0] = "";
             Times[1] = "";
-            
+
             XLayer[] Layers = oObj.getMultipleLayers(LayerIds, Times);
             res = Layers.length == 2;
             log.println("Getting two XLayers -- OK");
             log.println("Checking first on "+LayerIds[0]);
             res &= checkLayer(Layers[0]);
             log.println("Checking second on "+LayerIds[1]);
-            res &= checkLayer(Layers[1]);            
+            res &= checkLayer(Layers[1]);
         } catch (com.sun.star.configuration.backend.BackendAccessException e) {
             log.println("unexpected Exception -- FAILED");
             res = false;
@@ -122,7 +122,7 @@ public class _XMultiLayerStratum extends MultiMethodTest {
             res = false;
         }
 
-        tRes.tested("getMultipleLayers()", res);        
+        tRes.tested("getMultipleLayers()", res);
     }
 
     public void _getUpdatableLayer() {
@@ -162,7 +162,7 @@ public class _XMultiLayerStratum extends MultiMethodTest {
             res = false;
         }
 
-        tRes.tested("getUpdatableLayer()", res);        
+        tRes.tested("getUpdatableLayer()", res);
     }
 
     public void _getUpdateLayerId() {
@@ -170,7 +170,7 @@ public class _XMultiLayerStratum extends MultiMethodTest {
 
         try {
             String UpdateLayerID = oObj.getUpdateLayerId(
-                                           "org.openoffice.Office.TypeDetection", 
+                                           "org.openoffice.Office.TypeDetection",
                                            "illegal");
             log.println("Exception expected -- FAILED");
             res = false;
@@ -186,7 +186,7 @@ public class _XMultiLayerStratum extends MultiMethodTest {
 
         try {
             String ent = util.utils.getOfficeURL(
-                                 (XMultiServiceFactory) tParam.getMSF()) + 
+                                 (XMultiServiceFactory) tParam.getMSF()) +
                          "/../share/registry";
             String UpdateLayerID = oObj.getUpdateLayerId(
                                            "org.openoffice.Office.Linguistic", ent);
@@ -216,7 +216,7 @@ public class _XMultiLayerStratum extends MultiMethodTest {
 
         try {
             String[] LayerIDs = oObj.listLayerIds(
-                                        "org.openoffice.Office.TypeDetection", 
+                                        "org.openoffice.Office.TypeDetection",
                                         "illegal");
             log.println("Exception expected -- FAILED");
             res = false;
@@ -229,9 +229,9 @@ public class _XMultiLayerStratum extends MultiMethodTest {
 
         try {
             String ent = util.utils.getOfficeURL(
-                                 (XMultiServiceFactory) tParam.getMSF()) + 
+                                 (XMultiServiceFactory) tParam.getMSF()) +
                          "/../share/registry";
-            String[] LayerIDs = oObj.listLayerIds("org.openoffice.Office.Jobs", 
+            String[] LayerIDs = oObj.listLayerIds("org.openoffice.Office.Jobs",
                                                   ent);
             res &= LayerIDs[0].endsWith("Jobs.xcu");
             aLayerID = LayerIDs[0];

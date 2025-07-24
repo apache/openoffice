@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -74,7 +74,7 @@ import util.SOfficeFactory;
  * @see ifc.util._XFlushable
  */
 public class TypeDetection extends TestCase {
-    
+
     /**
     * Disposes text document.
     */
@@ -84,7 +84,7 @@ public class TypeDetection extends TestCase {
     }
 
     XTextDocument xTextDoc = null;
-    
+
     /**
     * Creating a Testenvironment for the interfaces to be tested.
     * Creates an instance of the service
@@ -129,35 +129,35 @@ public class TypeDetection extends TestCase {
             throw new StatusException(
             Status.failed("Couldn't get elements from object"));
         }
-        
+
         log.println("adding INSTANCE 1 as obj relation to environment");
-        
+
         setPropertyValueValue((PropertyValue[])instance, "Preferred", "INSTANCE1");
         tEnv.addObjRelation("INSTANCE" +1, instance);
 
         // com.sun.star.container.XContainerQuery
-        NamedValue[] querySequenze = new NamedValue[1]; 
+        NamedValue[] querySequenze = new NamedValue[1];
 		NamedValue query = new NamedValue();
 		query.Name = "Name";
         query.Value = "writer_Text";
         querySequenze[0] = query;
-        
-        
+
+
         log.println("create text document with bookmarks");
-        SOfficeFactory SOF = SOfficeFactory.getFactory( (XMultiServiceFactory)Param.getMSF() );        
+        SOfficeFactory SOF = SOfficeFactory.getFactory( (XMultiServiceFactory)Param.getMSF() );
         String fileURL = null;
         try {
             xTextDoc = SOF.createTextDoc( null );
             XInterface xBookMark = SOF.createBookmark( xTextDoc );
             SOF.insertTextContent( xTextDoc, (XTextContent) xBookMark );
-            
+
             fileURL = utils.getOfficeTemp((XMultiServiceFactory)Param.getMSF() );
             fileURL = fileURL + "bookmarks.oot";
 
             XStorable store = (XStorable) UnoRuntime.queryInterface(XStorable.class, xTextDoc);
             System.out.println(fileURL);
             store.storeToURL(fileURL, new PropertyValue[0]);
-            
+
         } catch( com.sun.star.uno.Exception e ) {
             e.printStackTrace( log );
             throw new StatusException( "Couldn't create Bookmark", e );
@@ -170,7 +170,7 @@ public class TypeDetection extends TestCase {
         return tEnv;
     } // finish method getTestEnvironment
 
-    
+
     protected void setPropertyValueValue(PropertyValue[] props, String pName, Object pValue) {
         int i = 0;
         while (i < props.length && !props[i].Name.equals(pName)) {

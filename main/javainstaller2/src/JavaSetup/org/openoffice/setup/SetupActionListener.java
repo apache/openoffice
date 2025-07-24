@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -32,9 +32,9 @@ import javax.swing.JDialog;
 import javax.swing.JOptionPane;
 
 public class SetupActionListener implements ActionListener {
-    
+
     private SetupFrame setupFrame;
-    
+
     public SetupActionListener(SetupFrame setup) {
         setupFrame = setup;
     }
@@ -49,7 +49,7 @@ public class SetupActionListener implements ActionListener {
             } else {
                 StringCancelDialog = ResourceManager.getString("String_Cancel_Dialog_Uninstallation");
             }
-            StringCancelDialogTitle = ResourceManager.getString("String_Cancel_Dialog_Title");            
+            StringCancelDialogTitle = ResourceManager.getString("String_Cancel_Dialog_Title");
             JDialog dialog = setupFrame.getDialog();
             int n = JOptionPane.showConfirmDialog(dialog, StringCancelDialog, StringCancelDialogTitle,
                                                       JOptionPane.YES_NO_OPTION);
@@ -66,7 +66,7 @@ public class SetupActionListener implements ActionListener {
                 StringStopDialogTitle = ResourceManager.getString("String_Stop_Dialog_Title");
             } else {
                 StringStopDialog = ResourceManager.getString("String_Stop_Dialog_Uninstallation");
-                StringStopDialogTitle = ResourceManager.getString("String_Stop_Dialog_Title_Uninstallation");                
+                StringStopDialogTitle = ResourceManager.getString("String_Stop_Dialog_Title_Uninstallation");
             }
             JDialog dialog = setupFrame.getDialog();
             int n = JOptionPane.showConfirmDialog(dialog, StringStopDialog, StringStopDialogTitle,
@@ -80,14 +80,14 @@ public class SetupActionListener implements ActionListener {
             // panel.setStopButtonSelected();
         } else if (evt.getActionCommand().equals(SetupFrame.ACTION_PREVIOUS)) {
             PanelController panel = setupFrame.getCurrentPanel();
-            String previous = panel.getPrevious();        
+            String previous = panel.getPrevious();
             setupFrame.setCurrentPanel(previous, true, false);
         } else if (evt.getActionCommand().equals(SetupFrame.ACTION_NEXT)) {
             PanelController panel = setupFrame.getCurrentPanel();
-            String next = panel.getNext();        
-            if (next == null) { 
+            String next = panel.getNext();
+            if (next == null) {
                 setupFrame.close(SetupFrame.CODE_OK);
-            } else { 
+            } else {
                 setupFrame.setCurrentPanel(next, false, true);
             }
         } else if (evt.getActionCommand().equals(SetupFrame.ACTION_DETAILS)) {

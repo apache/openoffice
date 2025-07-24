@@ -46,19 +46,19 @@ public class DetailViewManager
         maViewFactory = new XMLTokenViewFactory();
     }
 
-    
-    
-    
+
+
+
     public void ShowPart (
         final PartName aName,
         final ContentType eType)
     {
         ShowPart(maPackage.getPart(aName));
     }
-    
-    
-    
-    
+
+
+
+
     public void ShowPart (final Part aPart)
     {
         switch(aPart.getContentType())
@@ -69,7 +69,7 @@ public class DetailViewManager
                 maDetailViewContainer.setViewportView(
                     new ImageView(aPart.getStream()).GetComponent());
                 break;
-        
+
             case ApplicationDrawing:
             case ApplicationExcel:
             case ApplicationXML:
@@ -122,9 +122,9 @@ public class DetailViewManager
         }
     }
 
-    
-    
-    
+
+
+
     private final JScrollPane maDetailViewContainer;
     private XMLTokenViewFactory maViewFactory;
     private OOXMLPackage maPackage;
