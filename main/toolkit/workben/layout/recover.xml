@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--***********************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -8,16 +8,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  ***********************************************************-->
 <!-- This is a template.  i18n translation is not performed in-place;
      i18n translated xml files are generated from this template by
@@ -34,7 +34,7 @@
 	    <fixedtext id="FT_HEADER" _label="OpenOffice.org Document Restore"/>
 	</hbox>
 	<fixedline id="FL_HEADER"/>
-	<!-- mockup: fixedtext multiline=true" does not work? 
+	<!-- mockup: fixedtext multiline=true" does not work?
 	<multilineedit id="MLE_RECOVER" has_border="false" foobar="x" _text="At least one document was found that was not stored safely to the media.  Uncheck any documents you do not want to restore (information may be lost)."/>
 	<fixedtext id="FT_RECOVER" has_border="false" multi-line="true" font-word-line-mode="true" word-break="true"  _label="At least one document was found that was not stored safely to the media.  Uncheck any documents you do not want to restore (information may be lost).
 LINE TEST"/>
@@ -48,7 +48,7 @@ LINE TEST"/>
 		<fixedtext id="FT_DOC" _label="My document"/>
 	    </hbox>
 	    <hbox>
-		<checkbox id="CB_SHEET" state="1" cnt:expand="false" scale="false" /> 
+		<checkbox id="CB_SHEET" state="1" cnt:expand="false" scale="false" />
 		<fixedimage id="FI_SHEET" cnt:expand="false" scale="false" graphic="res/commandimagelist/lc_inserttable.png" />
 		<fixedtext id="FT_SHEET" _label="My spreadsheet"/>
 	    </hbox>
@@ -71,7 +71,7 @@ LINE TEST"/>
 	    <fixedtext id="FT_PROGRESS" _label="Restore progress (idle)"/>
 	    <hbox height="40" cnt:expand="true">
 		<progressbar cnt:expand="true" cnt:fill="true" id="PB_RECOVER" has_border="true" border="10" fill-color="#ccccff" background-color="#ffffff" progress-value-min="0" progress-value-max="100" progress-value="50" />
-		<!-- FIXME: cannot set progress bar's height, use space as strut... !--> 
+		<!-- FIXME: cannot set progress bar's height, use space as strut... !-->
 		<fixedtext label="" height="10" cnt:expand="false" cnt:fill="false"/>
 	    </hbox>
 	</vbox>
