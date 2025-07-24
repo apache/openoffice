@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -186,7 +186,7 @@ public class ScTableSheetObj extends TestCase {
     * </ul>
     * @see com.sun.star.sheet.XArrayFormulaRange
     */
-    protected synchronized TestEnvironment createTestEnvironment(TestParameters Param, 
+    protected synchronized TestEnvironment createTestEnvironment(TestParameters Param,
                                                                  PrintWriter log) {
         XInterface oObj = null;
 
@@ -202,7 +202,7 @@ public class ScTableSheetObj extends TestCase {
 
         try {
             oSheet = (XSpreadsheet) AnyConverter.toObject(
-                             new Type(XSpreadsheet.class), 
+                             new Type(XSpreadsheet.class),
                              oIndexAccess.getByIndex(0));
         } catch (com.sun.star.lang.WrappedTargetException e) {
             e.printStackTrace(log);
@@ -237,38 +237,38 @@ public class ScTableSheetObj extends TestCase {
         log.println("creating a new environment for object");
 
         TestEnvironment tEnv = new TestEnvironment(oObj);
-        
+
         // do not execute com::sun::star::sheets::XCellSeries::fillAuto()
         tEnv.addObjRelation("XCELLSERIES_FILLAUTO", new Boolean(false));
 
         // set the address ranges of the cells (see values set above): for e.g. XSheetOutline test
-        tEnv.addObjRelation("CellRangeAddress", 
+        tEnv.addObjRelation("CellRangeAddress",
             new CellRangeAddress((short)0, 6, 6, 8, 8));
-        tEnv.addObjRelation("CellRangeSubAddress", 
+        tEnv.addObjRelation("CellRangeSubAddress",
             new CellRangeAddress((short)0, 6, 6, 7, 8));
         // pick a cell with a formula for XSheetAuditing, a dependent cell and a precedent cell
         tEnv.addObjRelation("XSheetAuditing.CellAddress", new CellAddress((short)0, 8, 6));
         tEnv.addObjRelation("XSheetAuditing.PrecedentCellAddress", new CellAddress((short)0, 7, 6));
         tEnv.addObjRelation("XSheetAuditing.DependentCellAddress", new CellAddress((short)0, 9, 6));
-        
+
         // add an existing sheet for linking
         tEnv.addObjRelation("XSheetLinkable.LinkSheet", "ScSheetLinksObj.sdc");
-        
+
         //adding Scenario and with that a ScenarioSheet-Relation for Scenario and XScenarioEnhanced
         XScenariosSupplier scene = (XScenariosSupplier) UnoRuntime.queryInterface(
-                                           XScenariosSupplier.class, 
+                                           XScenariosSupplier.class,
                                            tEnv.getTestObject());
         scene.getScenarios()
-             .addNewByName("Scenario", 
+             .addNewByName("Scenario",
                            new CellRangeAddress[] {
             new CellRangeAddress((short) 0, 0, 0, 10, 10)
         }, "Comment");
 
         XSpreadsheet sSheet = null;
-        
+
         try {
             sSheet = (XSpreadsheet) UnoRuntime.queryInterface(
-                             XSpreadsheet.class, 
+                             XSpreadsheet.class,
                              xSpreadsheets.getByName("Scenario"));
         } catch (com.sun.star.container.NoSuchElementException e) {
             log.println("Couldn't get Scenario");
@@ -278,7 +278,7 @@ public class ScTableSheetObj extends TestCase {
 
         tEnv.addObjRelation("ScenarioSheet", sSheet);
 
-        log.println("adding ObjRelation 'noArray' to avoid the test" + 
+        log.println("adding ObjRelation 'noArray' to avoid the test" +
                     " 'XArrayFormulaRange'");
         tEnv.addObjRelation("noArray", "ScTableSheetObj");
 
@@ -296,17 +296,17 @@ public class ScTableSheetObj extends TestCase {
         expectedResults[_XCellRangesQuery.QUERYINTERSECTION] = "Sheet1.D4";
         expectedResults[_XCellRangesQuery.QUERYROWDIFFERENCES] = "Sheet1.A5;Sheet1.C1";
         expectedResults[_XCellRangesQuery.QUERYVISIBLECELLS] = "Sheet1.A2";
-        tEnv.addObjRelation("XCellRangesQuery.EXPECTEDRESULTS", 
+        tEnv.addObjRelation("XCellRangesQuery.EXPECTEDRESULTS",
                             expectedResults);
 
         // for XFormulaQuery interface test
         try {
-            tEnv.addObjRelation("MAKEENTRYINCELL", 
+            tEnv.addObjRelation("MAKEENTRYINCELL",
                                 oSheet.getCellByPosition(15, 15));
             tEnv.addObjRelation("RANGEINDICES", new int[] { 0, 0 });
-            tEnv.addObjRelation("EXPECTEDDEPENDENTVALUES", 
+            tEnv.addObjRelation("EXPECTEDDEPENDENTVALUES",
                                 new int[] { 0, 255, 0, 65535 });
-            tEnv.addObjRelation("EXPECTEDPRECEDENTVALUES", 
+            tEnv.addObjRelation("EXPECTEDPRECEDENTVALUES",
                                 new int[] { 0, 255, 0, 65535 });
         } catch (com.sun.star.lang.IndexOutOfBoundsException e) {
             log.println(
@@ -315,9 +315,9 @@ public class ScTableSheetObj extends TestCase {
 
         // XSearchable interface test
         try {
-            tEnv.addObjRelation("XSearchable.MAKEENTRYINCELL", 
+            tEnv.addObjRelation("XSearchable.MAKEENTRYINCELL",
                                 new XCell[] {
-                oSheet.getCellByPosition(15, 15), 
+                oSheet.getCellByPosition(15, 15),
                 oSheet.getCellByPosition(15, 16)
             });
         } catch (com.sun.star.lang.IndexOutOfBoundsException e) {
@@ -329,7 +329,7 @@ public class ScTableSheetObj extends TestCase {
         //Adding relation for util.XSortable
         final PrintWriter finalLog = log;
         final XCellRange oTable = oSheet;
-        tEnv.addObjRelation("SORTCHECKER", 
+        tEnv.addObjRelation("SORTCHECKER",
                             new ifc.util._XSortable.XSortChecker() {
             PrintWriter out = finalLog;
 
@@ -348,7 +348,7 @@ public class ScTableSheetObj extends TestCase {
                 }
             }
 
-            public boolean checkSort(boolean isSortNumbering, 
+            public boolean checkSort(boolean isSortNumbering,
                                      boolean isSortAscending) {
                 out.println("Sort checking...");
 
@@ -372,16 +372,16 @@ public class ScTableSheetObj extends TestCase {
                         String[] vals = { value[0], value[1], value[2], value[3] };
                         res = ValueComparer.equalValue(vals, rightVal);
                         out.println("Expected 3, 4, 23, b");
-                        out.println("getting: " + value[0] + ", " + 
-                                        value[1] + ", " + value[2] + ", " + 
+                        out.println("getting: " + value[0] + ", " +
+                                        value[1] + ", " + value[2] + ", " +
                                         value[3]);
                     } else {
                         String[] rightVal = { "b", "23", "4", "3" };
                         String[] vals = { value[0], value[1], value[2], value[3] };
                         res = ValueComparer.equalValue(vals, rightVal);
                         out.println("Expected b, 23, 4, 3");
-                        out.println("getting: " + value[0] + ", " + 
-                                        value[1] + ", " + value[2] + ", " + 
+                        out.println("getting: " + value[0] + ", " +
+                                        value[1] + ", " + value[2] + ", " +
                                         value[3]);
                     }
                 } else {
@@ -389,15 +389,15 @@ public class ScTableSheetObj extends TestCase {
                         String[] rightVal = { "3", "4", "23", "b" };
                         res = ValueComparer.equalValue(value, rightVal);
                         out.println("Expected 3, 4, 23, b");
-                        out.println("getting: " + value[0] + ", " + 
-                                        value[1] + ", " + value[2] + ", " + 
+                        out.println("getting: " + value[0] + ", " +
+                                        value[1] + ", " + value[2] + ", " +
                                         value[3]);
                     } else {
                         String[] rightVal = { "b", "23", "4", "3" };
                         res = ValueComparer.equalValue(value, rightVal);
                         out.println("Expected b, 23, 4, 3");
-                        out.println("getting: " + value[0] + ", " + 
-                                        value[1] + ", " + value[2] + ", " + 
+                        out.println("getting: " + value[0] + ", " +
+                                        value[1] + ", " + value[2] + ", " +
                                         value[3]);
                     }
                 }

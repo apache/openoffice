@@ -34,7 +34,7 @@ import org.apache.openoffice.ooxml.schema.model.base.QualifiedName;
  *  It defines constraints on a another simple type.
  *  Examples for such restrictions are minimum and maximum values
  *  (inclusive or exclusive), patterns or length constraints of strings,
- *  sets of valid values. 
+ *  sets of valid values.
  */
 public class Restriction
     extends Node
@@ -48,7 +48,7 @@ public class Restriction
     public final static int MaxLengthBit = 0x0040;
     public final static int PatternBit = 0x0080;
     public final static int EnumerationBit = 0x0100;
-    
+
     public Restriction (
         final Node aParent,
         final QualifiedName aBaseType,
@@ -59,10 +59,10 @@ public class Restriction
         maEnumerations = new TreeSet<>();
         mnFeatures = 0;
     }
-    
-    
-    
-    
+
+
+
+
     @Override
     public void AcceptVisitor (final INodeVisitor aVisitor)
     {
@@ -70,7 +70,7 @@ public class Restriction
     }
 
 
-    
+
 
     @Override
     public NodeType GetNodeType()
@@ -78,23 +78,23 @@ public class Restriction
         return NodeType.Restriction;
     }
 
-    
-    
-    
+
+
+
     public QualifiedName GetBaseType ()
     {
         return maBaseType;
     }
-    
-    
-    
-    
+
+
+
+
     @Override
     public String toString ()
     {
         final StringBuffer aBuffer = new StringBuffer("restriction based on ");
         aBuffer.append(maBaseType.GetDisplayName());
-        
+
         if (msMinInclusive != null)
         {
             aBuffer.append(",minInclusive=");
@@ -143,186 +143,186 @@ public class Restriction
         }
         return aBuffer.toString();
     }
-    
-    
-    
+
+
+
     public void AddEnumeration (final String sValue)
     {
         maEnumerations.add(sValue);
         mnFeatures |= EnumerationBit;
     }
-    
-    
-    
-    
+
+
+
+
     public void SetMinInclusive (final String sValue)
     {
         msMinInclusive = sValue;
         assert( ! HasFeature(MinExclusiveBit));
         mnFeatures |= MinInclusiveBit;
     }
-    
-    
-    
-    
+
+
+
+
     public void SetMinExclusive (final String sValue)
     {
         msMinExclusive = sValue;
         assert( ! HasFeature(MinInclusiveBit));
         mnFeatures |= MinExclusiveBit;
     }
-    
-    
-    
-    
+
+
+
+
     public void SetMaxInclusive (final String sValue)
     {
         msMaxInclusive = sValue;
         assert( ! HasFeature(MaxExclusiveBit));
         mnFeatures |= MaxInclusiveBit;
     }
-    
-    
-    
-    
+
+
+
+
     public void SetMaxExclusive (final String sValue)
     {
         msMaxExclusive = sValue;
         assert( ! HasFeature(MaxInclusiveBit));
         mnFeatures |= MaxExclusiveBit;
     }
-    
 
-    
-    
+
+
+
     public void SetLength (final String sValue)
     {
         mnLength = Integer.parseInt(sValue);
         assert( ! HasFeature(MinLengthBit|MaxLengthBit));
         mnFeatures |= LengthBit;
     }
-    
 
-    
-    
+
+
+
     public void SetMinLength (final String sValue)
     {
         mnMinLength = Integer.parseInt(sValue);
         assert( ! HasFeature(LengthBit));
         mnFeatures |= MinLengthBit;
     }
-    
 
-    
-    
+
+
+
     public void SetMaxLength (final String sValue)
     {
         mnMaxLength = Integer.parseInt(sValue);
         assert( ! HasFeature(LengthBit));
         mnFeatures |= MaxLengthBit;
     }
-    
-    
-    
-    
+
+
+
+
     public void SetPattern (final String sValue)
     {
         msPattern = sValue;
         mnFeatures |= PatternBit;
     }
-    
-    
-    
-    
+
+
+
+
     public String GetMinInclusive ()
     {
         return msMinInclusive;
     }
-    
-    
-    
-    
+
+
+
+
     public String GetMinExclusive ()
     {
         return msMinExclusive;
     }
-    
-    
-    
-    
+
+
+
+
     public String GetMaxInclusive ()
     {
         return msMaxInclusive;
     }
-    
-    
-    
-    
+
+
+
+
     public String GetMaxExclusive ()
     {
         return msMaxExclusive;
     }
-    
-    
-    
-    
+
+
+
+
     public Set<String> GetEnumeration()
     {
-        return maEnumerations;        
+        return maEnumerations;
     }
 
-    
-    
-    
+
+
+
     public int GetLength()
     {
         return mnLength;
     }
 
-    
-    
-    
+
+
+
     public int GetMinimumLength()
     {
         return mnMinLength;
     }
 
-    
-    
-    
+
+
+
     public int GetMaximumLength()
     {
         return mnMaxLength;
     }
 
-    
-    
-    
+
+
+
 
     public String GetPattern()
     {
         return msPattern;
     }
 
-    
-    
-    
+
+
+
     public int GetFeatureBits ()
     {
         return mnFeatures;
     }
-    
-    
-    
-    
+
+
+
+
     public boolean HasFeature (final int nBitMask)
     {
         return (mnFeatures & nBitMask) != 0;
     }
-    
-    
-    
-    
+
+
+
+
     private final QualifiedName maBaseType;
     private final Set<String> maEnumerations;
     private String msMinInclusive;

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -42,7 +42,7 @@ public class _XTableRows extends MultiMethodTest {
 
     public XTableRows oObj = null;
     public XCellRange range = null;
-    
+
     public void before() {
         range = (XCellRange) tEnv.getObjRelation("XTableRows.XCellRange");
         if (range==null) {
@@ -64,14 +64,14 @@ public class _XTableRows extends MultiMethodTest {
     public void _insertByIndex() {
 
         boolean result = true;
-        
+
         requiredMethod("removeByIndex()");
 
         int origCnt = oObj.getCount();
         log.println("Inserting row before first row");
         oObj.insertByIndex(0,1);
         result &= checkCell(1,15);
-        if (checkCell(1,15)) log.println("... successful"); 
+        if (checkCell(1,15)) log.println("... successful");
 
         try {
             oObj.insertByIndex(-1,1);
@@ -94,12 +94,12 @@ public class _XTableRows extends MultiMethodTest {
      */
     public void _removeByIndex() {
 
-        boolean result = true;        
+        boolean result = true;
 
         oObj.removeByIndex(0,1);
         log.println("Removing first row");
         result &= checkCell(0,15);
-        if (checkCell(0,15)) log.println("... successful"); 
+        if (checkCell(0,15)) log.println("... successful");
 
         try {
             oObj.removeByIndex(-1,1);
@@ -112,15 +112,15 @@ public class _XTableRows extends MultiMethodTest {
 
         tRes.tested( "removeByIndex()", result );
     } // end removeByIndex()
-    
+
     public boolean checkCell(int row,double expected) {
         double getting=0;
         try {
             getting = range.getCellByPosition(0,row).getValue();
         } catch (com.sun.star.lang.IndexOutOfBoundsException e) {
             log.println("Couldn't set value for Cell A1");
-        }        
-        
+        }
+
         boolean res = (getting==expected);
         if (!res) {
             log.println("Expected for row "+row+" was "+expected);

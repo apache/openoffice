@@ -38,9 +38,9 @@ public class ActionManager
         maStateToActionsMap = new HashMap<>();
     }
 
-    
-    
-    
+
+
+
     /** Add an action for an element start.
      *  @param sStateSelector
      *      The element is specified via a state name.  This allows one element
@@ -53,7 +53,7 @@ public class ActionManager
      *  @param aAction
      *      The action to call on entering any of the states that match the
      *      selector.
-     */ 
+     */
     public void AddElementStartAction (
         final String sStateSelector,
         final IAction aAction)
@@ -61,9 +61,9 @@ public class ActionManager
         AddAction(sStateSelector, aAction, ActionTrigger.ElementStart);
     }
 
-    
-    
-    
+
+
+
     /** Add an action for an element end.
      *  @see AddElementStartAction.
      */
@@ -74,9 +74,9 @@ public class ActionManager
         AddAction(sStateSelector, aAction, ActionTrigger.ElementEnd);
     }
 
-    
-    
-    
+
+
+
     /** Add an action for XML text events.
      *  @see AddElementStartAction.
      */
@@ -87,24 +87,24 @@ public class ActionManager
         AddAction(sStateSelector, aAction, ActionTrigger.Text);
     }
 
-    
-    
-    
+
+
+
     /** Return an iterable object that gives access to all actions
      *  bound to the given state and trigger.
      *  Return value can be null when there are no actions bound to the state
-     *  and trigger. 
+     *  and trigger.
      */
     public Iterable<IAction> GetActions (
         final int nStateId,
         final ActionTrigger eTrigger)
     {
         final ActionDescriptor aOneStateActionsDescriptor = maStateToActionsMap.get(nStateId);
-        final Iterable<IAction> aOneStateActions = aOneStateActionsDescriptor!=null 
-            ? aOneStateActionsDescriptor.GetActions(eTrigger) 
+        final Iterable<IAction> aOneStateActions = aOneStateActionsDescriptor!=null
+            ? aOneStateActionsDescriptor.GetActions(eTrigger)
             : null;
         final Iterable<IAction> aAllStateActions = maAllStatesActions.GetActions(eTrigger);
-        
+
         if (aOneStateActions == null)
             return aAllStateActions;
         else if (aAllStateActions == null)
@@ -112,10 +112,10 @@ public class ActionManager
         else
             return new ActionIterator(aOneStateActions, aAllStateActions);
     }
-    
-    
-    
-    
+
+
+
+
     private void AddAction (
         final String sStateSelector,
         final IAction aAction,
@@ -142,9 +142,9 @@ public class ActionManager
         }
     }
 
-    
-    
-    
+
+
+
     private ActionDescriptor GetActionDescriptor (final int nStateId)
     {
         ActionDescriptor aDescriptor = maStateToActionsMap.get(nStateId);
@@ -155,10 +155,10 @@ public class ActionManager
         }
         return aDescriptor;
     }
-    
-    
-    
-    
+
+
+
+
     private final NameMap maStateNameToIdMap;
     private final ActionDescriptor maAllStatesActions;
     private final Map<Integer,ActionDescriptor> maStateToActionsMap;

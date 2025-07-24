@@ -36,9 +36,9 @@ public class NameMap
         for (final String[] aLine : aData)
         {
             final int nId = Integer.parseInt(aLine[1]);
-            
+
             maNameToIdMap.put(aLine[2], nId);
-            
+
             if (maIdToNameMap.size() <= nId)
                 maIdToNameMap.setSize(nId+1);
             maIdToNameMap.set(nId, aLine[2]);
@@ -53,13 +53,13 @@ public class NameMap
     {
         if ( ! maNameToIdMap.containsKey(sName))
             throw new RuntimeException("token '"+sName+"' is not known");
-        
+
         return maNameToIdMap.get(sName);
     }
-    
-    
-    
-    
+
+
+
+
     public int GetIdForOptionalName (
         final String sName)
     {
@@ -69,10 +69,10 @@ public class NameMap
         else
             return aId;
     }
-    
-    
-    
-    
+
+
+
+
     public String GetNameForId (final int nId)
     {
         if (nId == -1)
@@ -80,18 +80,18 @@ public class NameMap
         else
             return maIdToNameMap.get(nId);
     }
-    
-    
-    
-    
+
+
+
+
     public int GetNameCount ()
     {
         return maIdToNameMap.size();
     }
-    
-    
-    
-    
+
+
+
+
     /** Return the ids of all states whose names match the given pattern.
      */
     public Vector<Integer> GetMatchingStateIds (final String sPattern)
@@ -104,9 +104,9 @@ public class NameMap
         }
         return aStateIds;
     }
-    
-    
-    
+
+
+
 
     private final Map<String,Integer> maNameToIdMap;
     private final Vector<String> maIdToNameMap;

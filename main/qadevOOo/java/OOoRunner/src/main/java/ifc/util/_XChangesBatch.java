@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -33,14 +33,14 @@ import lib.Status;
 import lib.StatusException;
 
 public class _XChangesBatch extends MultiMethodTest {
-    
-    public XChangesBatch oObj;    
+
+    public XChangesBatch oObj;
     private Object changeElement = null;
     private Object originalElement = null;
     private String elementName = null;
     private XPropertySet xProp = null;
     private XNameReplace xNameReplace = null;
-    
+
     /**
      * add a change that can be committed
      */
@@ -68,7 +68,7 @@ public class _XChangesBatch extends MultiMethodTest {
         catch(com.sun.star.uno.Exception e) {
             throw new StatusException("Could not get element by name '" + elementName + "'.", e);
         }
-        
+
         if (changeElement == null || originalElement == null || elementName == null || (xProp == null && xNameReplace == null)) {
             log.println(
                 changeElement == null?"Missing property 'XChangesBatch.ChangeElement'\n":"" +
@@ -80,7 +80,7 @@ public class _XChangesBatch extends MultiMethodTest {
             throw new StatusException("Some needed object relations are missing.", new Exception());
         }
     }
-    
+
     public void _commitChanges() {
         requiredMethod("getPendingChanges()");
         try {
@@ -109,7 +109,7 @@ public class _XChangesBatch extends MultiMethodTest {
         }
         tRes.tested("commitChanges()", true);
     }
-    
+
     public void _getPendingChanges() {
         requiredMethod("hasPendingChanges()");
         ElementChange[]changes = oObj.getPendingChanges();
@@ -122,9 +122,9 @@ public class _XChangesBatch extends MultiMethodTest {
             log.println("Found not the right number of changes: " + amount);
             log.println("It should have been 1 change.");
             for (int i=0; i<amount; i++) {
-                System.out.println("Detailed Change " + i + " -> new Element: '" + 
-                            changes[i].Element.toString() + "'  ReplacedElement: '" + 
-                            changes[i].ReplacedElement.toString() + "'"); 
+                System.out.println("Detailed Change " + i + " -> new Element: '" +
+                            changes[i].Element.toString() + "'  ReplacedElement: '" +
+                            changes[i].ReplacedElement.toString() + "'");
             }
             tRes.tested("getPendingChanges()", false);
         }
@@ -134,7 +134,7 @@ public class _XChangesBatch extends MultiMethodTest {
             tRes.tested("getPendingChanges()", result);
         }
     }
-    
+
     public void _hasPendingChanges() {
         try {
             executeChange(changeElement);
@@ -146,7 +146,7 @@ public class _XChangesBatch extends MultiMethodTest {
         boolean hasPendingChanges = oObj.hasPendingChanges();
         tRes.tested("hasPendingChanges()", hasPendingChanges);
     }
-   
+
     private void executeChange(Object element) throws StatusException {
         if (xProp != null) {
             try {

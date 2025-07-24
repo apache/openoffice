@@ -40,25 +40,25 @@ public class ImageView
         try
         {
             aImage = ImageIO.read(aInputStream);
-        } 
+        }
         catch (IOException e)
         {
             e.printStackTrace();
         }
         maImage = aImage;
     }
-    
-    
-    
+
+
+
 
     public JComponent GetComponent()
     {
         return this;
     }
 
-    
-    
-    
+
+
+
     @Override
     public void paintComponent (final Graphics aGraphics)
     {
@@ -68,8 +68,8 @@ public class ImageView
             aGraphics.drawImage(maImage, 10, 10, null);
         }
     }
-    
-    
-    
+
+
+
     private final BufferedImage maImage;
 }

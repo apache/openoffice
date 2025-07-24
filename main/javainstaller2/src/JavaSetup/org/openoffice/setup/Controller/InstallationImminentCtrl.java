@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -46,11 +46,11 @@ public class InstallationImminentCtrl extends PanelController {
         super("InstallationImminent", new InstallationImminent());
         helpFile = "String_Helpfile_InstallationImminent";
     }
-    
+
     public String getNext() {
         return new String("InstallationOngoing");
     }
-    
+
     public String getPrevious() {
 
         InstallData data = InstallData.getInstance();
@@ -58,7 +58,7 @@ public class InstallationImminentCtrl extends PanelController {
         if ( data.isRootInstallation() ) {
             if ( data.olderVersionExists() ) {
                 if ( data.hideEula() ) {
-                    return new String("Prologue");            
+                    return new String("Prologue");
                 } else {
                     return new String("AcceptLicense");
                 }
@@ -68,10 +68,10 @@ public class InstallationImminentCtrl extends PanelController {
                 if ( data.getInstallationType().equals(data.getCustomActionCommand()) ) {
                     return new String("ChooseComponents");
                 } else if ( data.getInstallationType().equals(data.getTypicalActionCommand()) ) {
-                    return new String("ChooseInstallationType");            
+                    return new String("ChooseInstallationType");
                 } else {
-                    System.err.println("Error: Unknown installation type!" );            
-                    return new String("Error");            
+                    System.err.println("Error: Unknown installation type!" );
+                    return new String("Error");
                 }
             }
         } else {
@@ -83,14 +83,14 @@ public class InstallationImminentCtrl extends PanelController {
                 if ( data.getInstallationType().equals(data.getCustomActionCommand()) ) {
                     return new String("ChooseComponents");
                 } else if ( data.getInstallationType().equals(data.getTypicalActionCommand()) ) {
-                    return new String("ChooseInstallationType");            
+                    return new String("ChooseInstallationType");
                 } else {
-                    System.err.println("Error: Unknown installation type!" );            
-                    return new String("Error");            
+                    System.err.println("Error: Unknown installation type!" );
+                    return new String("Error");
                 }
             }
         }
-    }  
+    }
 
     public final String getHelpFileName () {
         return this.helpFile;
@@ -99,7 +99,7 @@ public class InstallationImminentCtrl extends PanelController {
     public void beforeShow() {
         String StringInstall = ResourceManager.getString("String_Install");
         getSetupFrame().setButtonText(StringInstall, getSetupFrame().BUTTON_NEXT);
-        
+
         ProductDescription productData = SetupDataProvider.getProductDescription();
         PackageDescription packageData = SetupDataProvider.getPackageDescription();
         // Dumper.dumpPackageSettings(packageData);
@@ -111,7 +111,7 @@ public class InstallationImminentCtrl extends PanelController {
         InstallationImminent panel = (InstallationImminent)getPanel();
         panel.setInfoText(htmlInfoText);
         panel.setCaretPosition();
-        
+
         // Update mode
         InstallData data = InstallData.getInstance();
         if ( data.olderVersionExists() ) {
@@ -145,7 +145,7 @@ public class InstallationImminentCtrl extends PanelController {
                 repeatDialog = true;
             }
         }
-        
+
         return repeatDialog;
     }
 }

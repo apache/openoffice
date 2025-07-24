@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -43,20 +43,20 @@ public class _XUIConfiguration extends MultiMethodTest {
 
     public XUIConfiguration oObj;
     XUIConfigurationListenerImpl xListener = null;
-    
+
     /**
      * Interface for the Listener of the object relation
      * <CODE>XUIConfiguration.XUIConfigurationListenerImpl</CODE>
      * @see com.sun.star.ui.XUIConfigurationListener
      */
-    public static interface XUIConfigurationListenerImpl 
+    public static interface XUIConfigurationListenerImpl
                                     extends XUIConfigurationListener {
-        public void reset();                                
-        public void fireEvent();                                
+        public void reset();
+        public void fireEvent();
         public boolean actionWasTriggered();
     }
-    
-    
+
+
     /**
      * try to get a listener out of the object relation
      * <CODE>XUIConfiguration.XUIConfigurationListenerImpl</CODE>
@@ -66,7 +66,7 @@ public class _XUIConfiguration extends MultiMethodTest {
                         "XUIConfiguration.XUIConfigurationListenerImpl");
         XUIConfigurationListener l;
     }
-    
+
     /**
      * adds a listener an fire an event
      * Has <B>OK</B> status if listener was called
@@ -76,7 +76,7 @@ public class _XUIConfiguration extends MultiMethodTest {
         xListener.fireEvent();
         tRes.tested("addConfigurationListener()", xListener.actionWasTriggered());
     }
-    
+
     /**
      * removes the listener and calls an event.
      * Has <B>OK</B> status if listener is not called.
@@ -88,7 +88,7 @@ public class _XUIConfiguration extends MultiMethodTest {
         xListener.fireEvent();
         tRes.tested("removeConfigurationListener()", !xListener.actionWasTriggered());
     }
-    
+
     /**
      * Dispose because the UIConfigurationManager has to be recreated
      */

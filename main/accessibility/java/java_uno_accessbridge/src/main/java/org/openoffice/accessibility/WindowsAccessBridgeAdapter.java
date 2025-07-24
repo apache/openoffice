@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -45,7 +45,7 @@ public class WindowsAccessBridgeAdapter {
 
     protected static native boolean createMapping(long jvmaccess);
 
-    // On Windows all native frames must be registered to the access bridge. 
+    // On Windows all native frames must be registered to the access bridge.
     // Therefor the bridge exports two methods that we try to find here.
     protected static void attach(XComponentContext xComponentContext) {
         try {
@@ -61,7 +61,7 @@ public class WindowsAccessBridgeAdapter {
                 revokeVirtualFrame = bridge.getMethod("revokeVirtualFrame",
                         parameterTypes);
 
-                // load the native dll 
+                // load the native dll
                 System.loadLibrary("java_uno_accessbridge");
 
                 Object any = xComponentContext.getValueByName(
@@ -120,7 +120,7 @@ public class WindowsAccessBridgeAdapter {
     protected static boolean isAttached() {
         return frameMap != null;
     }
-    
+
     protected static Accessible getAccessibleWrapper(XAccessible xAccessible) {
         Accessible a = null;
 
@@ -152,7 +152,7 @@ public class WindowsAccessBridgeAdapter {
                     case AccessibleRole.TOOL_TIP:
                         a = PopupWindow.create(xAccessible);
                         break;
-                        
+
                     default:
                         a = (Accessible) AccessBridge.getTopWindow(xAccessible);
                         break;
@@ -228,7 +228,7 @@ public class WindowsAccessBridgeAdapter {
                     e.getMessage());
             }
         }
-        
+
         if (a instanceof PopupWindow) {
             PopupWindow toolTipWindow = (PopupWindow) a;
             toolTipWindow.removeAll();
@@ -245,7 +245,7 @@ public class WindowsAccessBridgeAdapter {
         PopupMenuProxy(AccessibleContext ac) {
             menu = ac;
             menuComponent = menu.getAccessibleComponent();
-            
+
             /** calculate the bounding rectangle by iterating over the
              *  the children.
              */
@@ -259,11 +259,11 @@ public class WindowsAccessBridgeAdapter {
 
                     if (childAC != null) {
                         AccessibleComponent comp = ac.getAccessibleComponent();
-                        
+
                         if (comp != null) {
                             java.awt.Point p = comp.getLocationOnScreen();
                             java.awt.Dimension d = comp.getSize();
-                            
+
                             if (p != null && d != null) {
                                 if (p.x < x) {
                                     x = p.x;
@@ -282,7 +282,7 @@ public class WindowsAccessBridgeAdapter {
                     }
                 }
             }
-            
+
             width = x2 - x;
             height = y2 - y;
         }
@@ -450,8 +450,8 @@ public class WindowsAccessBridgeAdapter {
             // Not supported by UNO accessibility API
         }
 
-        /** Returns the Accessible child, if one exists, contained at the local 
-         * coordinate Point 
+        /** Returns the Accessible child, if one exists, contained at the local
+         * coordinate Point
          */
         public javax.accessibility.Accessible getAccessibleAt(java.awt.Point p) {
             java.awt.Point p2 = menuComponent.getLocationOnScreen();
@@ -467,7 +467,7 @@ public class WindowsAccessBridgeAdapter {
             menuComponent.requestFocus();
         }
     }
-    
+
     protected static class ListProxy extends AccessibleContext
         implements Accessible, AccessibleComponent {
         AccessibleContext list;
@@ -597,7 +597,7 @@ public class WindowsAccessBridgeAdapter {
         }
 
         /** Gets the location of this component in the form of a point specifying
-         * the component's top-left corner 
+         * the component's top-left corner
          */
         public java.awt.Point getLocation() {
             // This object represents a toplevel object, so getLocation() should
@@ -632,8 +632,8 @@ public class WindowsAccessBridgeAdapter {
             // Not supported by UNO accessibility API
         }
 
-        /** Returns the Accessible child, if one exists, contained at the local 
-         * coordinate Point 
+        /** Returns the Accessible child, if one exists, contained at the local
+         * coordinate Point
          */
         public javax.accessibility.Accessible getAccessibleAt(java.awt.Point p) {
             return listComponent.getAccessibleAt(p);

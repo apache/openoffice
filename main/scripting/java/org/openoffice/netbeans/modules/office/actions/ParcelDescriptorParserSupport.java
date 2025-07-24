@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -42,7 +42,7 @@ public class ParcelDescriptorParserSupport
     private FileObject fo;
     private Document document;
     private Set listeners;
-    
+
     public ParcelDescriptorParserSupport(FileObject fo)
     {
         this.fo = fo;
@@ -53,7 +53,7 @@ public class ParcelDescriptorParserSupport
     {
         File file = FileUtil.toFile(fo);
         InputSource is;
-        
+
         try {
             is = new InputSource(new FileInputStream(file));
         }
@@ -61,7 +61,7 @@ public class ParcelDescriptorParserSupport
             System.out.println("Couldn't find file: " + file.getName());
             return;
         }
-        
+
         document = null;
         try {
             document = XMLUtil.parse(is, false, false, null, null);
@@ -78,37 +78,37 @@ public class ParcelDescriptorParserSupport
     {
         if (document == null)
             parseFile();
-        
+
         if (document != null)
             return document.getElementsByTagName("script");
         return null;
     }
-    
+
     public void addChangeListener(ChangeListener cl) {
         if (listeners == null)
             listeners = new HashSet();
-        
+
         listeners.add(cl);
     }
-    
+
     public void removeChangeListener(ChangeListener cl) {
         if (listeners == null)
             return;
-        
+
         listeners.remove(cl);
     }
-    
+
     public void fileChanged(FileEvent fe) {
         parseFile();
-        
+
         if (listeners != null) {
             Iterator iter = listeners.iterator();
-         
+
             while (iter.hasNext())
                 ((ChangeListener)iter.next()).stateChanged(new ChangeEvent(this));
         }
     }
-    
+
     public void fileAttributeChanged(FileAttributeEvent fe) {}
     public void fileDataCreated(FileEvent fe) {}
     public void fileDeleted(FileEvent fe) {}

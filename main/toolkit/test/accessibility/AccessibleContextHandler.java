@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 import com.sun.star.accessibility.XAccessible;
@@ -28,7 +28,7 @@ import java.util.HashMap;
 
 import tools.NameProvider;
 
-class AccessibleContextHandler 
+class AccessibleContextHandler
     extends NodeHandler
 {
     protected int nChildrenCount;
@@ -58,14 +58,14 @@ class AccessibleContextHandler
         XAccessibleContext xContext = null;
         if (aParent instanceof AccTreeNode)
             xContext = ((AccTreeNode)aParent).getContext();
-        
+
         String sChild = new String();
         if (xContext != null)
         {
             switch( nIndex )
             {
                 case 0:
-                    sChild = "Description: " + 
+                    sChild = "Description: " +
                         xContext.getAccessibleDescription();
                     break;
                 case 1:
@@ -77,14 +77,14 @@ class AccessibleContextHandler
                     sChild = "Has parent: " + (xParent!=null ? "yes" : "no");
                     /*                    if (xParent != ((AccTreeNode)aParent).getAccessible())
                     {
-                        sChild += " but that is inconsistent" 
+                        sChild += " but that is inconsistent"
                             + "#" + xParent + " # " + ((AccTreeNode)aParent).getAccessible();
                     }
                     */
                     break;
                 case 3:
                     sChild = "";
-                    XAccessibleStateSet xStateSet = 
+                    XAccessibleStateSet xStateSet =
                         xContext.getAccessibleStateSet();
                     if (xStateSet != null)
                     {

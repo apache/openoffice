@@ -37,8 +37,8 @@ public class DateTimeNode
     }
 
 
-    
-    
+
+
     @Override
     public void ApplyRestriction (
         final Restriction aRestriction,
@@ -48,10 +48,10 @@ public class DateTimeNode
             return;
         System.out.println(aRestriction);
     }
-    
 
-    
-    
+
+
+
     @Override
     public void Print (final Log aLog)
     {
@@ -66,27 +66,27 @@ public class DateTimeNode
     {
         return mbIsList;
     }
-    
-    
-    
-    
+
+
+
+
     @Override
     public void SetIsList ()
     {
         mbIsList = true;
     }
-    
-    
-    
-    
+
+
+
+
     @Override
     public void AcceptVisitor (final ISimpleTypeNodeVisitor aVisitor)
     {
         aVisitor.Visit(this);
     }
-    
-    
-    
-    
+
+
+
+
     private boolean mbIsList;
 }

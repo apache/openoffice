@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -51,9 +51,9 @@ import share.LogWriter;
  * This class is a java-part of BASIC-java interaction "driver"
  * It is used to call Star-Basic's function from java using
  * basic's part of "driver" where listeners are implemented.
- * The instance of the BasicHandler should be added to the MSF that will be 
+ * The instance of the BasicHandler should be added to the MSF that will be
  * used for loading BASIC's part of "driver".<br>
- * After opening basic's document it creates an instance of the 
+ * After opening basic's document it creates an instance of the
  * HandlerContainer using BasicHandler. HandlerContainer is a UNO
  * XContainer and XNameContainer.
  * Only one instance of BasicHandler can be used at the moment.
@@ -64,11 +64,11 @@ public class BasicHandler implements XServiceInfo, XSingleServiceFactory {
     /**
      * serviceName is the name of service that can be created in BASIC.
      */
-    static final String serviceName = 
+    static final String serviceName =
                             "com.sun.star.jsuite.basicrunner.BasicHandler";
 
     /**
-     * <code>container</code> is a SHARED variable (between BASIC and Java). 
+     * <code>container</code> is a SHARED variable (between BASIC and Java).
      * It is used for interacting.
      */
     static private HandlerContainer container = null;
@@ -104,9 +104,9 @@ public class BasicHandler implements XServiceInfo, XSingleServiceFactory {
     static private boolean respFlag = false;
 
     /**
-     * <code>iBasicTimeout</code> is the amount of milliseconds that 
-     * the BasicHandler will wait for a response from tests 
-     * (finish to execute a method or add log information) 
+     * <code>iBasicTimeout</code> is the amount of milliseconds that
+     * the BasicHandler will wait for a response from tests
+     * (finish to execute a method or add log information)
      * before it decides that SOffice is dead.
      */
     static private int iBasicTimeout = 10000;
@@ -128,7 +128,7 @@ public class BasicHandler implements XServiceInfo, XSingleServiceFactory {
     /**
      * Set the tested interface and a log writer.
      * @param ifc The test of an interface
-     * @param log A log writer. 
+     * @param log A log writer.
      */
     public void setTestedInterface(BasicIfcTest ifc, LogWriter log) {
         this.log = log;
@@ -179,8 +179,8 @@ public class BasicHandler implements XServiceInfo, XSingleServiceFactory {
      * @see com.sun.star.lang.XMultiServiceFactory
      * @throws ConnectionSetupException Exception is thrown, if no connection could be made.
      */
-    public synchronized void Connect(String sBasicBridgeURL, 
-                            TestParameters tParam, XMultiServiceFactory xMSF, 
+    public synchronized void Connect(String sBasicBridgeURL,
+                            TestParameters tParam, XMultiServiceFactory xMSF,
                             LogWriter log) throws ConnectionSetupException {
         this.log = log;
         try {
@@ -192,7 +192,7 @@ public class BasicHandler implements XServiceInfo, XSingleServiceFactory {
             XComponentLoader oCLoader = (XComponentLoader)
                                         UnoRuntime.queryInterface(
                                         XComponentLoader.class, oDesktop);
-            
+
             // load BasicBridge with MarcoEceutionMode = Always-no warn
             //PropertyValue[] DocArgs = null;
             PropertyValue[] DocArgs = new PropertyValue[1];
@@ -200,7 +200,7 @@ public class BasicHandler implements XServiceInfo, XSingleServiceFactory {
             DocArg.Name = "MacroExecutionMode";
             DocArg.Value = new Short(
                     com.sun.star.document.MacroExecMode.ALWAYS_EXECUTE_NO_WARN);
-            DocArgs[0] = DocArg; 
+            DocArgs[0] = DocArg;
 
             // configure Office to allow to execute macos
             PropertyValue [] ProvArgs = new PropertyValue [1];
@@ -208,40 +208,40 @@ public class BasicHandler implements XServiceInfo, XSingleServiceFactory {
             Arg.Name = "nodepath";
             Arg.Value = "/org.openoffice.Office.Common/Security";
             ProvArgs[0] = Arg;
-            
+
             Object oProvider = xMSF.createInstance(
                         "com.sun.star.configuration.ConfigurationProvider");
-            
-            XMultiServiceFactory oProviderMSF = (XMultiServiceFactory) 
+
+            XMultiServiceFactory oProviderMSF = (XMultiServiceFactory)
                                     UnoRuntime.queryInterface(
                                     XMultiServiceFactory.class, oProvider);
-            
+
             Object oSecure = oProviderMSF.createInstanceWithArguments(
                         "com.sun.star.configuration.ConfigurationUpdateAccess",
-                        ProvArgs);  
-            
-            XPropertySet oSecureProps = (XPropertySet) 
+                        ProvArgs);
+
+            XPropertySet oSecureProps = (XPropertySet)
                         UnoRuntime.queryInterface(XPropertySet.class, oSecure);
-            
+
             Object oScripting = oSecureProps.getPropertyValue("Scripting");
             XPropertySet oScriptingSettings = (XPropertySet)
                     UnoRuntime.queryInterface(XPropertySet.class, oScripting);
-            
+
             oScriptingSettings.setPropertyValue("Warning", Boolean.FALSE);
             oScriptingSettings.setPropertyValue("OfficeBasic", new Integer(2));
-            
-            XChangesBatch oSecureChange = (XChangesBatch) 
+
+            XChangesBatch oSecureChange = (XChangesBatch)
                     UnoRuntime.queryInterface(XChangesBatch.class, oSecure);
             oSecureChange.commitChanges();
-            
-            // As we want to have some information about a debugFile 
+
+            // As we want to have some information about a debugFile
             // BEFORE connection is established
             // we pass the information about it in frame name.
             String sFrameName = (String)tParam.get(
                                                 "soapi.test.basic.debugFile");
             if (sFrameName == null) sFrameName = "BasicRunner";
 
-            oHandlerDoc = oCLoader.loadComponentFromURL(sBasicBridgeURL, 
+            oHandlerDoc = oCLoader.loadComponentFromURL(sBasicBridgeURL,
                                                     sFrameName, 40, DocArgs);
 
             do {
@@ -264,7 +264,7 @@ public class BasicHandler implements XServiceInfo, XSingleServiceFactory {
      * Overloads perform(Strin fName, Object params) for convenience.
      * @return A proprty value as result.
      *
-    public synchronized PropertyValue perform(String fName) 
+    public synchronized PropertyValue perform(String fName)
                                                         throws BasicException {
         return perform(fName, "");
     }
@@ -276,7 +276,7 @@ public class BasicHandler implements XServiceInfo, XSingleServiceFactory {
      * @return A proprty value as result of the test.
      * @throws BasicException The method could not be executed.
      */
-    public synchronized PropertyValue perform(String fName, Object params) 
+    public synchronized PropertyValue perform(String fName, Object params)
                                                         throws BasicException {
         try {
             container.callBasicFunction(fName, params);
@@ -284,7 +284,7 @@ public class BasicHandler implements XServiceInfo, XSingleServiceFactory {
             do {
                 respFlag = false;
                 // waiting for basic response for iBasicTimeout milliseconds.
-                wait(iBasicTimeout); 
+                wait(iBasicTimeout);
             } while(respFlag && !container.hasByName("BASIC_Done"));
 
         } catch (InterruptedException e) {
@@ -296,7 +296,7 @@ public class BasicHandler implements XServiceInfo, XSingleServiceFactory {
         if (!container.hasByName("BASIC_Done")) {
             System.out.println("Operation timed out.");
                 throw new BasicException(
-                            "Operation timed out.");                  
+                            "Operation timed out.");
         }
 
         Object res = container.getByName("BASIC_Done") ;
@@ -307,7 +307,7 @@ public class BasicHandler implements XServiceInfo, XSingleServiceFactory {
                 System.out.println(
                             "BasicBridge returns null");
                 throw new BasicException(
-                            "BasicBridge returns null");                
+                            "BasicBridge returns null");
             } else {
                 System.out.println(
                             "BasicBridge returns wrong type: " + res.getClass());
@@ -350,7 +350,7 @@ public class BasicHandler implements XServiceInfo, XSingleServiceFactory {
         return getClass().getName();
     }
 
-    /** 
+    /**
      * Create an instance of HandlerContainer.
      * Arguments are not supported here, so they will be ignored.
      * @param args The arguments.
@@ -360,7 +360,7 @@ public class BasicHandler implements XServiceInfo, XSingleServiceFactory {
         return container;
     }
 
-    /** 
+    /**
      * Create an instance of HandlerContainer.
      * @return The instance.
      */
@@ -390,7 +390,7 @@ public class BasicHandler implements XServiceInfo, XSingleServiceFactory {
  * @see com.sun.star.container.XContainer
  * @see com.sun.star.container.XNameContainer
  * @see com.sun.star.lang.XTypeProvider
- */ 
+ */
 class HandlerContainer implements XContainer, XNameContainer, XTypeProvider{
 
     /** Container for parameters.
@@ -401,13 +401,13 @@ class HandlerContainer implements XContainer, XNameContainer, XTypeProvider{
      * @see com.sun.star.container.XContainerListener
      */
     static XContainerListener[] listener = null;
-    
+
     /** The BasicHandler belonging to this handler. **/
     BasicHandler parent = null;
 
     /**
      * Constructor with the parent BasicHandler.
-     * @param par The BasicHandler. 
+     * @param par The BasicHandler.
      */
     public HandlerContainer(BasicHandler par) {
         parent = par;
@@ -458,7 +458,7 @@ class HandlerContainer implements XContainer, XNameContainer, XTypeProvider{
                     parent.notify();
                 }
             } else if (name.equals("BASIC_MethodTested")) {
-                parent.methodTested(result.Name, 
+                parent.methodTested(result.Name,
                                 ((Boolean)result.Value).booleanValue());
             }
         } else if (name.equals("BASIC_Log")) {
@@ -562,8 +562,8 @@ class HandlerContainer implements XContainer, XNameContainer, XTypeProvider{
         int length = 0;
         if (listener != null)
             length = listener.length;
-        
-        XContainerListener[] mListener = 
+
+        XContainerListener[] mListener =
                         new XContainerListener[length+1];
         for (int i=0; i<length-1; i++) {
             mListener[i] = listener[i];
@@ -582,7 +582,7 @@ class HandlerContainer implements XContainer, XNameContainer, XTypeProvider{
     public void removeContainerListener(XContainerListener xListener){
         if (listener != null && listener.length != 0) {
             int length = listener.length;
-            XContainerListener[] mListener = 
+            XContainerListener[] mListener =
                                     new XContainerListener[length-1];
             boolean found = false;
             int j=0;
@@ -602,7 +602,7 @@ class HandlerContainer implements XContainer, XNameContainer, XTypeProvider{
             }
             else
                 listener = mListener;
-                
+
         }
     }
 }

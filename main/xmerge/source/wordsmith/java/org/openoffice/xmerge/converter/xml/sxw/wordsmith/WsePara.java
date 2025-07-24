@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -55,19 +55,19 @@ class WsePara extends Wse {
     private byte lineSpace = 0;
     private byte outline = 0;
     private byte reserved = 0;
-    
+
     private static final byte LS_EXACTLY   = (byte)0xC0;
     private static final byte LS_ATLEAST   = (byte)0x80;
     private static final byte LS_MULTIPLE  = (byte)0x40;
     private static final byte LS_VALUEMASK = (byte)0x3F;
-    
+
     private static final byte ALIGN_RIGHT  = (byte)2;
     private static final byte ALIGN_LEFT   = (byte)0;
     private static final byte ALIGN_CENTER = (byte)1;
     private static final byte ALIGN_JUST   = (byte)3;
 
     private StyleCatalog sc = null;
-            
+
 
     /**
      *  Constructor for use when going from DOM to WordSmith.
@@ -123,7 +123,7 @@ class WsePara extends Wse {
         if (ps.isAttributeSet(ParaStyle.TEXT_ALIGN)) {
 
             int val = ps.getAttribute(ParaStyle.TEXT_ALIGN);
-          
+
             switch (val) {
             case ParaStyle.ALIGN_RIGHT:
                 misc = ALIGN_RIGHT;
@@ -139,9 +139,9 @@ class WsePara extends Wse {
                 break;
             }
         }
-        
+
     }
-    
+
 
     /**
      *  Constructor for use when going from WordSmith to DOM.
@@ -162,8 +162,8 @@ class WsePara extends Wse {
         lineSpace   = dataArray[startIndex + 8];
         outline     = dataArray[startIndex + 9];
     }
-    
-    
+
+
     /**
      *  Compute the index of the first <code>byte</code> following the
      *  paragraph descriptor, assuming that
@@ -179,8 +179,8 @@ class WsePara extends Wse {
     static int computeNewIndex(byte dataArray[], int startIndex) {
         return startIndex + 13;
     }
-    
-    
+
+
     /**
      *  Return true if <code>dataArray[startIndex]</code> is the start
      *  of a valid paragraph descriptor.
@@ -202,8 +202,8 @@ class WsePara extends Wse {
      */
     int getByteCount() {
         return 13;
-    }    
-    
+    }
+
     /**
      *  Return an <code>byte</code> array representing this paragraph.
      *
@@ -211,7 +211,7 @@ class WsePara extends Wse {
      */
     byte[] getBytes() {
         byte b[] = new byte[13];
-        
+
         b[0] = 5;
         b[1] = spaceBefore;
         b[2] = spaceAfter;
@@ -225,10 +225,10 @@ class WsePara extends Wse {
         b[10] = reserved;
         b[11] = 0;
         b[12] = 0;
-        
+
         return b;
     }
-    
+
     /**
      *  Return a <code>ParaStyle</code> that reflects the formatting of
      *  this run.
@@ -237,26 +237,26 @@ class WsePara extends Wse {
      *           of this run.
      */
     ParaStyle makeStyle() {
-        /* Csaba: Commented out the LINE_HEIGHT syle, because there was no 
+        /* Csaba: Commented out the LINE_HEIGHT syle, because there was no
                   incoming data for that style. It was resulting a zero line
                   height in the xml document, ie. the doc looked empty.
         */
-        int attrs[] = { ParaStyle.MARGIN_LEFT, ParaStyle.MARGIN_RIGHT, 
+        int attrs[] = { ParaStyle.MARGIN_LEFT, ParaStyle.MARGIN_RIGHT,
                            ParaStyle.TEXT_INDENT, //ParaStyle.LINE_HEIGHT,
                            ParaStyle.MARGIN_TOP, ParaStyle.MARGIN_BOTTOM,
                            ParaStyle.TEXT_ALIGN };
         String values[] = new String[attrs.length];
         double temp;
-        
+
         temp = leftIndent / 1.6;
         values[0] = (new Double(temp)).toString() + "mm";
-        
+
         temp = rightIndent / 1.6;
         values[1] = (new Double(temp)).toString() + "mm";
 
         temp = firstIndent / 1.6;
         values[2] = (new Double(temp)).toString() + "mm";
-        
+
 /*        if ((lineSpace & LS_MULTIPLE) != 0) {
             temp = (lineSpace & LS_VALUEMASK) / 2;
             temp *= 100;
@@ -265,11 +265,11 @@ class WsePara extends Wse {
             values[3] = (new Double(temp)).toString() + "mm";
             // DJP: handle other cases
           }
-*/        
+*/
         temp = spaceBefore / 1.6;
 //        values[4] = (new Double(temp)).toString() + "mm";
         values[3] = (new Double(temp)).toString() + "mm";
-          
+
         temp = spaceAfter / 1.6;
 //        values[5] = (new Double(temp)).toString() + "mm";
         values[4] = (new Double(temp)).toString() + "mm";
@@ -286,9 +286,9 @@ class WsePara extends Wse {
             case ALIGN_CENTER:values[5] = "center"; break;
             case ALIGN_JUST:  values[5] = "justified"; break;
         }
-        ParaStyle x = new ParaStyle(null, "paragraph", null, attrs, 
+        ParaStyle x = new ParaStyle(null, "paragraph", null, attrs,
                                         values, sc);
-        
+
         return x;
     }
 }

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -49,35 +49,35 @@ public class ChooseUninstallationType extends JPanel {
     public ChooseUninstallationType() {
 
         InstallData data = InstallData.getInstance();
-        
+
         setLayout(new BorderLayout());
         setBorder(new EmptyBorder(new Insets(10, 10, 10, 10)));
-               
+
         String titleText    = ResourceManager.getString("String_ChooseUninstallationType1");
         String subtitleText = ResourceManager.getString("String_ChooseUninstallationType2");
         PanelTitle titleBox = new PanelTitle(titleText, subtitleText);
         titleBox.addVerticalStrut(20);
-        add(titleBox, BorderLayout.NORTH); 
-        
+        add(titleBox, BorderLayout.NORTH);
+
         String borderTitle = ResourceManager.getString("String_ChooseUninstallationType1");
         TitledBorder PanelBorder = BorderFactory.createTitledBorder(borderTitle);
-        
+
         JPanel contentPanel = new JPanel();
         contentPanel.setBorder(PanelBorder);
         contentPanel.setLayout(new GridBagLayout());
         if ( data.useRtl() ) { contentPanel.setComponentOrientation(ComponentOrientation.RIGHT_TO_LEFT); }
-        
+
             GridBagConstraints constraints = new GridBagConstraints();
             constraints.insets = new Insets(0, 0, 0, 10);
             // constraints.anchor = GridBagConstraints.NORTHWEST;
-       
+
             String completeText = ResourceManager.getString("String_ChooseUninstallationType4");
-            PanelLabel completeComment = new PanelLabel(completeText, true);         
+            PanelLabel completeComment = new PanelLabel(completeText, true);
             if ( data.useRtl() ) { completeComment.setComponentOrientation(ComponentOrientation.RIGHT_TO_LEFT); }
             String customText  = ResourceManager.getString("String_ChooseUninstallationType5");
             PanelLabel customComment  = new PanelLabel(customText, true);
             if ( data.useRtl() ) { customComment.setComponentOrientation(ComponentOrientation.RIGHT_TO_LEFT); }
-        
+
             ButtonGroup group = new ButtonGroup();
 
             String completeButtonText = ResourceManager.getString("String_ChooseUninstallationType6");
@@ -88,7 +88,7 @@ public class ChooseUninstallationType extends JPanel {
             custom  = new JRadioButton(customButtonText,  false);
             custom.setMnemonic(KeyEvent.VK_U);
             if ( data.useRtl() ) { custom.setComponentOrientation(ComponentOrientation.RIGHT_TO_LEFT); }
-          
+
             group.add(complete);
             group.add(custom);
 
@@ -99,13 +99,13 @@ public class ChooseUninstallationType extends JPanel {
             constraints.fill = GridBagConstraints.VERTICAL;
 
         contentPanel.add(new JPanel(), constraints);
-        
+
             constraints.gridx = 0;
             constraints.gridy = 1;
             constraints.weightx = 0;
             constraints.weighty = 0;
             constraints.fill = GridBagConstraints.HORIZONTAL;
-       
+
         contentPanel.add(complete, constraints);
 
             constraints.gridx = 1;
@@ -113,7 +113,7 @@ public class ChooseUninstallationType extends JPanel {
             constraints.weightx = 1;
             constraints.weighty = 0;
             constraints.fill = GridBagConstraints.HORIZONTAL;
-        
+
         contentPanel.add(completeComment, constraints);
 
             constraints.gridx = 0;
@@ -121,23 +121,23 @@ public class ChooseUninstallationType extends JPanel {
             constraints.weightx = 0;
             constraints.weighty = 1;
             constraints.fill = GridBagConstraints.VERTICAL;
-        
+
         contentPanel.add(new JPanel(), constraints);
-    
+
             constraints.gridx = 0;
             constraints.gridy = 3;
             constraints.weightx = 0;
             constraints.weighty = 0;
             constraints.fill = GridBagConstraints.HORIZONTAL;
-        
+
         contentPanel.add(custom, constraints);
-        
+
             constraints.gridx = 1;
             constraints.gridy = 3;
             constraints.weightx = 1;
             constraints.weighty = 0;
             constraints.fill = GridBagConstraints.HORIZONTAL;
-        
+
         contentPanel.add(customComment, constraints);
 
             constraints.gridx = 0;
@@ -145,9 +145,9 @@ public class ChooseUninstallationType extends JPanel {
             constraints.weightx = 0;
             constraints.weighty = 1;
             constraints.fill = GridBagConstraints.VERTICAL;
-        
+
         contentPanel.add(new JPanel(), constraints);
-        
+
         add(contentPanel, BorderLayout.CENTER);
     }
 

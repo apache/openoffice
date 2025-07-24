@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -66,8 +66,8 @@ public class PipedConnection implements XConnection {
 	 * @param   regKey       the registryKey
 	 * @see                  com.sun.star.comp.loader.JavaLoader
 	 */
-	public static XSingleServiceFactory __getServiceFactory(String implName, 
-														  XMultiServiceFactory multiFactory, 
+	public static XSingleServiceFactory __getServiceFactory(String implName,
+														  XMultiServiceFactory multiFactory,
 														  XRegistryKey regKey)
 	{
 		XSingleServiceFactory xSingleServiceFactory = null;
@@ -75,9 +75,9 @@ public class PipedConnection implements XConnection {
 	    if (implName.equals(PipedConnection.class.getName()) )
 	        xSingleServiceFactory = FactoryHelper.getServiceFactory(PipedConnection.class,
 																	__serviceName,
-																	multiFactory, 
+																	multiFactory,
 																	regKey);
-	    
+
 	    return xSingleServiceFactory;
 	}
 
@@ -88,13 +88,13 @@ public class PipedConnection implements XConnection {
 	protected static final int __waitTime = 10000;
 
 	protected byte			   _buffer[] = new byte[4096];
-	protected int			   _in, 
+	protected int			   _in,
 							   _out;
 	protected boolean		   _closed;
 	protected PipedConnection  _otherSide;
 
 	/**
-	 * Constructs a new <code>PipedConnection</code>, sees if there 
+	 * Constructs a new <code>PipedConnection</code>, sees if there
 	 * is an other side, which it should be connected to.
 	 * <p>
 	 * @param    args   Another side could be in index 0.
@@ -104,7 +104,7 @@ public class PipedConnection implements XConnection {
 
 		_otherSide = (args.length == 1) ? (PipedConnection)args[0] : null;
 		if(_otherSide != null) {
-			if(_otherSide == this) 
+			if(_otherSide == this)
 				throw new RuntimeException("can not connect to myself");
 
 			_otherSide._otherSide = this;
@@ -149,7 +149,7 @@ public class PipedConnection implements XConnection {
 				else {
 					bytes = Math.min(aData.length - bytesWritten, _buffer.length - _out - 1);
 				}
-				
+
 				System.arraycopy(aData, bytesWritten, _buffer, _out, bytes);
 			}
 
@@ -245,7 +245,7 @@ public class PipedConnection implements XConnection {
     public synchronized void close() throws com.sun.star.io.IOException, com.sun.star.uno.RuntimeException {
 		if(!_closed) {
 			_closed = true;
-			
+
 			_otherSide.close();
 
 			notify();

@@ -363,7 +363,7 @@ public class SheetBasicTest {
 				.queryInterface(XSheetLinkable.class, secondexternalsheet);
 		xsecondSheetLinkable.link(SourcestoreUrl, "Sheet2", "MS Excel 97", "",
 				SheetLinkMode.VALUE);
-		
+
 		// Insert secondexternalsheet sheet, link with Sheet2 in source document
 		// and the link mode is NONE
 		spreadsheets.insertNewByName("thirdexternalsheet", (short) 5);
@@ -385,7 +385,7 @@ public class SheetBasicTest {
 				SCUtil.getFormulaFromCell(secondexternalsheet, 1, 2));
 		assertEquals("Expect formula result should be 4", "4",
 				SCUtil.getTextFromCell(secondexternalsheet, 1, 2));
-		
+
 		// Verify thirdexternalsheet
 		assertEquals("Expect formula should be blank", "",
 				SCUtil.getFormulaFromCell(thirdexternalsheet, 1, 2));
@@ -412,17 +412,17 @@ public class SheetBasicTest {
 				SCUtil.getFormulaFromCell(secondexternalsheet, 1, 2));
 		assertEquals("Expect formula result should be 4", "4",
 				SCUtil.getTextFromCell(secondexternalsheet, 1, 2));
-		
+
 		// Verify thirdexternalsheet
 		assertEquals("Expect formula should be blank", "",
 				SCUtil.getFormulaFromCell(thirdexternalsheet, 1, 2));
 		assertEquals("Expect formula result should be blank", "",
 				SCUtil.getTextFromCell(thirdexternalsheet, 1, 2));
-		
+
 		// save and close document
 		SCUtil.save(scDocument);
 		SCUtil.closeFile(scDocument);
-		
+
 		// Open source document and change the value in source document
 		XSpreadsheetDocument sourcescDocument = SCUtil.reloadFile(unoApp,
 				scDocument, "source.xls");
@@ -443,7 +443,7 @@ public class SheetBasicTest {
 		firstexternalsheet = SCUtil.getSCSheetByIndex(scDocument, (short) 3);
 		secondexternalsheet = SCUtil.getSCSheetByIndex(scDocument, (short) 4);
 		thirdexternalsheet = SCUtil.getSCSheetByIndex(scDocument, (short) 5);
-		
+
 		// get Object SheetLinks for document
 		XPropertySet sheetpropertyset = (XPropertySet) UnoRuntime
 				.queryInterface(XPropertySet.class, scDocument);
@@ -451,7 +451,7 @@ public class SheetBasicTest {
 
 		XIndexAccess xsheetlinks = (XIndexAccess) UnoRuntime.queryInterface(
 				XIndexAccess.class, sheetLinks);
-		
+
 		// Refresh all links
 		for (int i = 0; i < xsheetlinks.getCount(); i++) {
 			Object sheetlink = xsheetlinks.getByIndex(i);
@@ -471,13 +471,13 @@ public class SheetBasicTest {
 				SCUtil.getFormulaFromCell(secondexternalsheet, 1, 2));
 		assertEquals("Expect formula result should be 9", "9",
 				SCUtil.getTextFromCell(secondexternalsheet, 1, 2));
-		
+
 		// Verify thirdexternalsheet
 		assertEquals("Expect formula should be blank", "",
 				SCUtil.getFormulaFromCell(thirdexternalsheet, 1, 2));
 		assertEquals("Expect formula result should be blank", "",
 				SCUtil.getTextFromCell(thirdexternalsheet, 1, 2));
-		
+
 		// Save the document before close
 		SCUtil.save(scDocument);
 

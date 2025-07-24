@@ -33,7 +33,7 @@ import org.apache.openoffice.ooxml.schema.model.schema.SchemaBase;
  */
 public class DereferencingNodeIterator
     implements Iterable<INode>
-    
+
 {
     public DereferencingNodeIterator (
         final INode aRoot,
@@ -44,19 +44,19 @@ public class DereferencingNodeIterator
         maSchemaBase = aSchemaBase;
         mbIncludeReferencingNodes = bIncludeReferencingNodes;
     }
-    
-    
-    
-    
+
+
+
+
     @Override
     public Iterator<INode> iterator()
     {
         return CollectNodes(maRoot, mbIncludeReferencingNodes).iterator();
     }
-    
-    
-    
-    
+
+
+
+
     private Vector<INode> CollectNodes (
         final INode aRoot,
         final boolean bIncludeReferencingNodes)
@@ -66,9 +66,9 @@ public class DereferencingNodeIterator
         return aNodes;
     }
 
-    
-    
-    
+
+
+
     private void AddNodes (
         final Vector<INode> aNodes,
         final INode aRoot,
@@ -95,16 +95,16 @@ public class DereferencingNodeIterator
                         aNodes.add(aChild);
                     }
                     break;
-                
+
                 default:
                     aNodes.add(aNode);
             }
         }
     }
-    
-    
-        
-    
+
+
+
+
     private final INode maRoot;
     private final SchemaBase maSchemaBase;
     private final boolean mbIncludeReferencingNodes;

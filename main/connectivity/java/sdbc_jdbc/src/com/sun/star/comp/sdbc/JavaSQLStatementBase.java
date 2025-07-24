@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 package com.sun.star.comp.sdbc;
 
@@ -57,19 +57,19 @@ public abstract class JavaSQLStatementBase extends PropertySet
     protected int resultSetConcurrency = ResultSetConcurrency.READ_ONLY;
     protected String sqlStatement = "";
     protected XStatement generatedStatement;
-    
+
     public JavaSQLStatementBase(JavaSQLConnection connection) {
         this.connection = connection;
         this.logger = new ConnectionLog(connection.getLogger(), ObjectType.STATEMENT);
         registerProperties();
     }
-    
+
     public int getStatementObjectId() {
         return logger.getObjectId();
     }
-    
+
     // XComponent
-    
+
     @Override
     protected synchronized void postDisposing() {
         super.postDisposing();
@@ -83,11 +83,11 @@ public abstract class JavaSQLStatementBase extends PropertySet
         }
         CompHelper.disposeComponent(generatedStatement);
     }
-    
+
     protected abstract void createStatement() throws SQLException;
-    
-    // XPropertySet 
-    
+
+    // XPropertySet
+
     private void registerProperties() {
         registerProperty(PropertyIds.CURSORNAME.name, PropertyIds.CURSORNAME.id, Type.STRING, (short)0,
                 new PropertyGetter() {
@@ -216,7 +216,7 @@ public abstract class JavaSQLStatementBase extends PropertySet
                 }
         );
     }
-    
+
     private String getCursorName() throws WrappedTargetException {
         try {
             createStatement();
@@ -311,7 +311,7 @@ public abstract class JavaSQLStatementBase extends PropertySet
             throw new WrappedTargetException("SQL error", this, Tools.toUnoException(this, exception));
         }
     }
-    
+
     private int getMaxRows() throws WrappedTargetException {
         try {
             createStatement();
@@ -338,7 +338,7 @@ public abstract class JavaSQLStatementBase extends PropertySet
             throw new WrappedTargetException("SQL error", this, Tools.toUnoException(this, exception));
         }
     }
-    
+
     private synchronized void setQueryTimeOut(int value) throws WrappedTargetException {
         try {
             createStatement();
@@ -356,7 +356,7 @@ public abstract class JavaSQLStatementBase extends PropertySet
             throw new WrappedTargetException("SQL error", this, Tools.toUnoException(this, exception));
         }
     }
-    
+
     private synchronized void setResultSetConcurrency(int value) throws WrappedTargetException {
         checkDisposed();
         try {
@@ -378,7 +378,7 @@ public abstract class JavaSQLStatementBase extends PropertySet
             throw new WrappedTargetException("SQL error", this, Tools.toUnoException(this, exception));
         }
     }
-    
+
     private synchronized void setResultSetType(int value) throws WrappedTargetException {
         checkDisposed();
         try {
@@ -393,7 +393,7 @@ public abstract class JavaSQLStatementBase extends PropertySet
     }
 
     // XCancellable
-    
+
     @Override
     public void cancel() {
         try {
@@ -405,17 +405,17 @@ public abstract class JavaSQLStatementBase extends PropertySet
             logger.log(LogLevel.SEVERE, jdbcException);
         }
     }
-    
+
     // XCloseable
-    
+
     @Override
     public synchronized void close() throws SQLException {
         checkDisposed();
         dispose();
     }
-    
+
     // XWarningsSupplier
-    
+
     @Override
     public synchronized void clearWarnings() throws SQLException {
         try {
@@ -425,7 +425,7 @@ public abstract class JavaSQLStatementBase extends PropertySet
             throw Tools.toUnoException(this, sqlException);
         }
     }
-    
+
     @Override
     public synchronized Object getWarnings() throws SQLException {
         try {
@@ -445,9 +445,9 @@ public abstract class JavaSQLStatementBase extends PropertySet
             throw Tools.toUnoException(this, sqlException);
         }
     }
-    
+
     // XGeneratedResultSet
-    
+
     @Override
     public synchronized com.sun.star.sdbc.XResultSet getGeneratedValues() throws SQLException {
         logger.log(LogLevel.FINE, Resources.STR_LOG_GENERATED_VALUES);
@@ -457,7 +457,7 @@ public abstract class JavaSQLStatementBase extends PropertySet
             jdbcResultSet = jdbcStatement.getGeneratedKeys();
         } catch (java.sql.SQLException jdbcException) {
         }
-        
+
         XResultSet resultSet = null;
         if (jdbcResultSet != null) {
             resultSet = new JavaSQLResultSet(jdbcResultSet, connection, this);
@@ -474,9 +474,9 @@ public abstract class JavaSQLStatementBase extends PropertySet
         }
         return resultSet;
     }
-    
+
     // XMultipleResults
-    
+
     @Override
     public boolean getMoreResults() throws SQLException {
         try {
@@ -486,7 +486,7 @@ public abstract class JavaSQLStatementBase extends PropertySet
             throw Tools.toUnoException(this, sqlException);
         }
     }
-    
+
     @Override
     public XResultSet getResultSet() throws SQLException {
         try {
@@ -501,7 +501,7 @@ public abstract class JavaSQLStatementBase extends PropertySet
             throw Tools.toUnoException(this, sqlException);
         }
     }
-    
+
     @Override
     public int getUpdateCount() throws SQLException {
         try {

@@ -30,9 +30,9 @@ public abstract class Node
     implements INode, Comparable<Node>
 {
     abstract public NodeType GetNodeType ();
-    
-    
-    
+
+
+
     protected Node (
         final Node aParent,
         final QualifiedName aName,
@@ -45,27 +45,27 @@ public abstract class Node
         maAttributes = new Vector<>();
         maChildren = new Vector<>();
     }
-    
-    
-    
-    
+
+
+
+
     @Override
     public QualifiedName GetName ()
     {
         return maName;
     }
-    
-    
-    
-    
+
+
+
+
     public Node GetParent ()
     {
         return maParent;
     }
-    
 
-    
-    
+
+
+
     /** Store the location in the schema files.  This is used for debugging or the creation of documentation.
      */
     public void SetLocation (
@@ -73,57 +73,57 @@ public abstract class Node
     {
         maLocation = aLocation;
     }
-    
-    
-    
-    
+
+
+
+
     public Location GetLocation ()
     {
         return maLocation;
     }
-    
 
-    
-    
+
+
+
     public void AddAttribute (final INode aAttribute)
     {
-        maAttributes.add(aAttribute);        
+        maAttributes.add(aAttribute);
     }
-    
-    
-    
-    
+
+
+
+
     @Override
     public int GetAttributeCount ()
     {
         return maAttributes.size();
     }
 
-    
-    
-    
+
+
+
     @Override
     public Iterable<INode> GetAttributes ()
     {
         return maAttributes;
     }
-    
-    
-    
+
+
+
     public void ClearChildren ()
     {
         maChildren.clear();
     }
-    
-    
-    
+
+
+
     public void AddChild (final INode aChild)
     {
         maChildren.add(aChild);
     }
-    
-    
-    
+
+
+
 
     public Iterable<INode> GetChildren ()
     {
@@ -131,25 +131,25 @@ public abstract class Node
     }
 
 
-    
-    
+
+
     public INode GetOnlyChild ()
     {
         assert(maChildren.size() == 1);
         return maChildren.get(0);
     }
-    
-    
-    
-    
+
+
+
+
     public int GetChildCount ()
     {
         return maChildren.size();
     }
 
-    
-    
-    
+
+
+
     @Override
     public int compareTo (final Node aOther)
     {
@@ -161,9 +161,9 @@ public abstract class Node
             return maName.compareTo(aOther.maName);
     }
 
-    
-    
-    
+
+
+
     private final Node maParent;
     private final QualifiedName maName;
     private Location maLocation;

@@ -40,12 +40,12 @@ public class ComplexTypeReference
         final Location aLocation)
     {
         super(aParent, null, aLocation);
-        maReferencedTypeName = aReferencedTypeName;        
+        maReferencedTypeName = aReferencedTypeName;
     }
-    
-    
-    
-    
+
+
+
+
     public ComplexType GetReferencedComplexType (final SchemaBase aSchema)
     {
         final Node aType = aSchema.GetTypeForName(maReferencedTypeName);
@@ -56,45 +56,45 @@ public class ComplexTypeReference
         else
             return (ComplexType)aType;
     }
-    
-    
-    
-    
-    
+
+
+
+
+
     public QualifiedName GetReferencedTypeName ()
     {
         return maReferencedTypeName;
     }
 
-    
-    
-    
+
+
+
     @Override
     public INode GetReferencedNode (final SchemaBase aSchema)
     {
         return GetReferencedComplexType(aSchema);
     }
 
-        
-    
-    
+
+
+
     @Override
     public void AcceptVisitor (final INodeVisitor aVisitor)
     {
         aVisitor.Visit(this);
     }
 
-    
-    
-    
+
+
+
     @Override
     public NodeType GetNodeType ()
     {
         return NodeType.SimpleTypeReference;
     }
-    
-    
-    
-    
+
+
+
+
     private final QualifiedName maReferencedTypeName;
 }

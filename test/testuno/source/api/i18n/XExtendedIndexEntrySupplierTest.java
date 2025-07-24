@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -78,7 +78,7 @@ public class XExtendedIndexEntrySupplierTest {
         short result1 = oObj.compareIndexEntry(val1, "", locale, val1, "", locale);
         short result2 = oObj.compareIndexEntry(val1, "", locale, val2, "", locale);
         short result3 = oObj.compareIndexEntry(val2, "", locale, val1, "", locale);
-        
+
         Assert.assertTrue("compareIndexEntry()", result1 == 0 && result2 + result3 == 0);
     }
 
@@ -90,20 +90,20 @@ public class XExtendedIndexEntrySupplierTest {
     public void _getAlgorithmList() {
         HashMap<Integer, String[]> algorithms = getAlgorithmList();
         boolean result = true;
-        boolean locResult = false; 
-        
+        boolean locResult = false;
+
         for (int i = 0; i < locales.length; i++) {
             String[] algNames = algorithms.get(i);
 
             locResult = algNames != null && algNames.length > 0;
             System.out.println("Locale " + i + ": " + locales[i].Country+","+locales[i].Language);
-            
+
             for (int j=0; j<algNames.length; j++) {
                 System.out.println("\tAlgorithm " + j + ": " + algNames[j]);
             }
-            
+
             if (!locResult) {
-                System.out.println("No Algorithm found for " + locales[i].Country + 
+                System.out.println("No Algorithm found for " + locales[i].Country +
                             "," + locales[i].Language);
             }
 
@@ -136,10 +136,10 @@ public class XExtendedIndexEntrySupplierTest {
             for (int j = 0; j < algorithms.size(); j++) {
                 String[] algs = (String[])algorithms.get(new Integer(j));
                 for (int k=0;k<algs.length;k++) {
-                System.out.println("\t Algorithm :" + 
+                System.out.println("\t Algorithm :" +
                             algs[k]);
                 oObj.loadAlgorithm(locales[i], algs[k], CollatorOptions.CollatorOptions_IGNORE_CASE);
-                System.out.println("\t\t Get: " + 
+                System.out.println("\t\t Get: " +
                             oObj.getIndexKey(getIndexFor, "", locales[i]));
                 }
             }
@@ -165,8 +165,8 @@ public class XExtendedIndexEntrySupplierTest {
         boolean res = true;
 
         Locale loc = new Locale("zh", "CN", "");
-        
-        for (int i = 0;i<UnicodeStringPair.getValCount();i++) {             
+
+        for (int i = 0;i<UnicodeStringPair.getValCount();i++) {
 
             char[] c = new char[]{UnicodeStringPair.getUnicodeValue(i)};
 
@@ -186,8 +186,8 @@ public class XExtendedIndexEntrySupplierTest {
     }
 
     /*
-     * loads all algorithms available in all language. 
-     * Is OK if no exception occurs and the method returns 
+     * loads all algorithms available in all language.
+     * Is OK if no exception occurs and the method returns
      * true for each valid algorithm and false otherwise
      */
     @Test
@@ -196,13 +196,13 @@ public class XExtendedIndexEntrySupplierTest {
 
         for (int i = 0; i < algorithms.size(); i++) {
             String[] names = (String[]) algorithms.get(new Integer(i));
-            System.out.println("loading algorithms for " + locales[i].Country + 
+            System.out.println("loading algorithms for " + locales[i].Country +
                         "," + locales[i].Language);
 
             for (int j = 0; j < names.length; j++) {
                 System.out.println("\t Loading " + names[j]);
 
-                boolean localres = oObj.loadAlgorithm(locales[i], names[j], 
+                boolean localres = oObj.loadAlgorithm(locales[i], names[j],
                                                       CollatorOptions.CollatorOptions_IGNORE_CASE);
 
                 if (!localres) {
@@ -216,7 +216,7 @@ public class XExtendedIndexEntrySupplierTest {
 
 /*            System.out.println("\tTrying to load 'dummy' algorithm");
 
-            boolean localres = !oObj.loadAlgorithm(locales[i], "dummy", 
+            boolean localres = !oObj.loadAlgorithm(locales[i], "dummy",
                                                    CollatorOptions.CollatorOptions_IGNORE_WIDTH);
 
             if (!localres) {
@@ -232,7 +232,7 @@ public class XExtendedIndexEntrySupplierTest {
     }
 
     /*
-     * checks the method usePhoneticEntry(). Only the languages ja, ko and zh 
+     * checks the method usePhoneticEntry(). Only the languages ja, ko and zh
      * should return true. Has OK state if exactly this is the case.
      */
     @Test
@@ -242,8 +242,8 @@ public class XExtendedIndexEntrySupplierTest {
         for (int i = 0; i < locales.length; i++) {
             boolean expected = false;
 
-            if (locales[i].Language.equals("ja") || 
-                    locales[i].Language.equals("ko") || 
+            if (locales[i].Language.equals("ja") ||
+                    locales[i].Language.equals("ko") ||
                     locales[i].Language.equals("zh")) {
                 expected = true;
             }
@@ -261,7 +261,7 @@ public class XExtendedIndexEntrySupplierTest {
 
         Assert.assertTrue("usePhoneticEntry()", res);
     }
-    
+
     /**
      * Helper class to handle the phonetic equivalence of unicode characters
      * This class delivers an amount of unicode characters and the equivalent phonetics
@@ -271,27 +271,27 @@ public class XExtendedIndexEntrySupplierTest {
         final static int valCount = 78;
         static String[] sStringEquivalence = null;
         static char[] iUnicodeEquivalence = null;
-         
+
         static {
             sStringEquivalence = new String[valCount];
             iUnicodeEquivalence = new char[valCount];
             fillValues();
         }
-        
+
         public static int getValCount() {
             return valCount;
         }
-        
+
         public static String getExpectedPhoneticString(int index) {
             if (index >= valCount) return null;
             return sStringEquivalence[index];
         }
-        
+
         public static char getUnicodeValue(int index) {
             if (index > valCount) return 0;
             return iUnicodeEquivalence[index];
         }
-        
+
         private static void fillValues() {
             iUnicodeEquivalence[0] = 20049; sStringEquivalence[0] = "zhong";
             iUnicodeEquivalence[1] = 19968; sStringEquivalence[1] = "yi";

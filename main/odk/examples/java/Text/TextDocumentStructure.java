@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -31,10 +31,10 @@
 import com.sun.star.uno.UnoRuntime;
 
 public class TextDocumentStructure {
-    
+
     public static void main(String args[]) {
         com.sun.star.uno.XComponentContext xContext = null;
-            
+
         try {
             // get the remote office component context
             xContext = com.sun.star.comp.helper.Bootstrap.bootstrap();
@@ -59,7 +59,7 @@ public class TextDocumentStructure {
             String strDoc = "private:factory/swriter";
 
             System.out.println("create new text document");
-            
+
             com.sun.star.lang.XComponent xComp = xCLoader.loadComponentFromURL(
                 strDoc, "_blank", 0, szEmptyArgs);
 
@@ -70,16 +70,16 @@ public class TextDocumentStructure {
 
             // create some example data
             com.sun.star.text.XText xText = xTextDocument.getText();
-            createExampleData( xText );           
-            
+            createExampleData( xText );
+
             // Begin section 'The structure of text documents' of the Tutorial
-            
+
             com.sun.star.container.XEnumeration xParagraphEnumeration = null;
             com.sun.star.container.XEnumerationAccess xParaEnumerationAccess = null;
             com.sun.star.container.XEnumeration xPortionEnumeration = null;
             com.sun.star.container.XEnumeration xTextPortionEnum;
             com.sun.star.text.XTextContent xTextElement = null;
-            
+
             System.out.println("create an enumeration of all paragraphs");
             // create an enumeration access of all paragraphs of a document
             com.sun.star.container.XEnumerationAccess xEnumerationAccess =
@@ -87,7 +87,7 @@ public class TextDocumentStructure {
                     UnoRuntime.queryInterface(
                         com.sun.star.container.XEnumerationAccess.class, xText);
             xParagraphEnumeration = xEnumerationAccess.createEnumeration();
-            
+
             // Loop through all paragraphs of the document
             while ( xParagraphEnumeration.hasMoreElements() ) {
                 xTextElement = (com.sun.star.text.XTextContent)
@@ -97,14 +97,14 @@ public class TextDocumentStructure {
                 com.sun.star.lang.XServiceInfo xServiceInfo =
                     (com.sun.star.lang.XServiceInfo)UnoRuntime.queryInterface(
                         com.sun.star.lang.XServiceInfo.class, xTextElement);
-                
+
                 // check ifs the current paragraph really a paragraph or an
                 // anchor of a frame or picture
                 if( xServiceInfo.supportsService("com.sun.star.text.Paragraph") ) {
                     com.sun.star.text.XTextRange xTextRange =
                         xTextElement.getAnchor();
                     System.out.println( "This is a Paragraph" );
-                    
+
                     // create another enumeration to get all text portions of
                     // the paragraph
                     xParaEnumerationAccess =
@@ -113,7 +113,7 @@ public class TextDocumentStructure {
                                 com.sun.star.container.XEnumerationAccess.class,
                                 xTextElement);
                     xTextPortionEnum = xParaEnumerationAccess.createEnumeration();
-                    
+
                     while ( xTextPortionEnum.hasMoreElements() ) {
                         com.sun.star.text.XTextRange xTextPortion =
                             (com.sun.star.text.XTextRange)UnoRuntime.queryInterface(
@@ -121,7 +121,7 @@ public class TextDocumentStructure {
                                 xTextPortionEnum.nextElement());
                         System.out.println( "Text from the portion : "
                                             + xTextPortion.getString() );
-                        
+
                         com.sun.star.beans.XPropertySet xPropertySet =
                             (com.sun.star.beans.XPropertySet)
                                  UnoRuntime.queryInterface(
@@ -129,22 +129,22 @@ public class TextDocumentStructure {
                                      xTextPortion);
                         System.out.println( "Name of the font : "
                             + xPropertySet.getPropertyValue( "CharFontName" ) );
-                        
+
                         // PropertyState status of each text portion.
                         com.sun.star.beans.XPropertyState xPropertyState =
                             (com.sun.star.beans.XPropertyState)
                                 UnoRuntime.queryInterface(
                                     com.sun.star.beans.XPropertyState.class,
                                     xTextPortion);
-                        
+
                         if( xPropertyState.getPropertyState("CharWeight").equals(
                                 com.sun.star.beans.PropertyState.AMBIGUOUS_VALUE) )
                             System.out.println( "-  The text range contains more than one different attributes" );
-                        
+
                         if( xPropertyState.getPropertyState( "CharWeight" ).equals(
                                 com.sun.star.beans.PropertyState.DIRECT_VALUE ) )
                             System.out.println( " - The text range contains hard formats" );
-                        
+
                         if( xPropertyState.getPropertyState( "CharWeight" ).equals(
                                 com.sun.star.beans.PropertyState.DEFAULT_VALUE ) )
                             System.out.println( " - The text range doesn't contains hard formats" );
@@ -159,36 +159,36 @@ public class TextDocumentStructure {
             e.printStackTrace(System.err);
             System.exit(1);
         }
-        
+
         System.out.println("done");
         System.exit(0);
     }
-    
+
     public static void createExampleData( com.sun.star.text.XText xText ) {
-        
+
         try {
             xText.setString( "This is an example sentence" );
-            
+
             com.sun.star.text.XWordCursor xWordCursor =
                 (com.sun.star.text.XWordCursor)UnoRuntime.queryInterface(
                     com.sun.star.text.XWordCursor.class, xText.getStart());
-            
+
             xWordCursor.gotoNextWord(false);
             xWordCursor.gotoNextWord(false);
             xWordCursor.gotoEndOfWord(true);
-            
+
             com.sun.star.beans.XPropertySet xPropertySet =
                 (com.sun.star.beans.XPropertySet)UnoRuntime.queryInterface(
                     com.sun.star.beans.XPropertySet.class, xWordCursor );
             xPropertySet.setPropertyValue("CharWeight",
                              new Float( com.sun.star.awt.FontWeight.BOLD ));
-            
+
             System.out.println("create example data");
         }
         catch( Exception e) {
             e.printStackTrace(System.err);
         }
-        
-        
+
+
     }
 }

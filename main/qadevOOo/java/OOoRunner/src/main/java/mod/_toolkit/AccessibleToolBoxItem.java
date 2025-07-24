@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -89,7 +89,7 @@ public class AccessibleToolBoxItem extends TestCase {
      * Creates the Desktop service (<code>com.sun.star.frame.Desktop</code>).
      */
     protected void initialize(TestParameters Param, PrintWriter log) {
-        the_Desk = (XDesktop) UnoRuntime.queryInterface(XDesktop.class, 
+        the_Desk = (XDesktop) UnoRuntime.queryInterface(XDesktop.class,
                                                         DesktopTools.createDesktop(
                                                                 (XMultiServiceFactory) Param.getMSF()));
     }
@@ -129,7 +129,7 @@ public class AccessibleToolBoxItem extends TestCase {
      * @see com.sun.star.accessibility.XAccessibleEventBroadcaster
      * @see com.sun.star.accessibility.XAccessibleText
      */
-    protected TestEnvironment createTestEnvironment(TestParameters tParam, 
+    protected TestEnvironment createTestEnvironment(TestParameters tParam,
                                                     PrintWriter log) {
         log.println("creating a test environment");
 
@@ -150,7 +150,7 @@ public class AccessibleToolBoxItem extends TestCase {
             throw new StatusException("Couldn't create document", e);
         }
 
-        XModel aModel = (XModel) UnoRuntime.queryInterface(XModel.class, 
+        XModel aModel = (XModel) UnoRuntime.queryInterface(XModel.class,
                                                            xTextDoc);
 
         XInterface oObj = null;
@@ -158,31 +158,31 @@ public class AccessibleToolBoxItem extends TestCase {
         AccessibilityTools at = new AccessibilityTools();
 
         XWindow xWindow = at.getCurrentContainerWindow(
-                                  (XMultiServiceFactory) tParam.getMSF(), 
+                                  (XMultiServiceFactory) tParam.getMSF(),
                                   aModel);
 
         XAccessible xRoot = at.getAccessibleObject(xWindow);
 
 
         at.printAccessibleTree(log, xRoot, tParam.getBool(util.PropertyName.DEBUG_IS_ACTIVE));
-        oObj = at.getAccessibleObjectForRole(xRoot, 
-                                             AccessibleRole.TOGGLE_BUTTON, 
+        oObj = at.getAccessibleObjectForRole(xRoot,
+                                             AccessibleRole.TOGGLE_BUTTON,
                                              "Bold");
 
         log.println("ImplementationName: " + util.utils.getImplName(oObj));
 
         TestEnvironment tEnv = new TestEnvironment(oObj);
 
-        tEnv.addObjRelation("EditOnly", 
+        tEnv.addObjRelation("EditOnly",
                             "This method isn't supported in this dialog");
 
         tEnv.addObjRelation("LimitedBounds", "yes");
 
         final XAccessibleAction oAction = (XAccessibleAction) UnoRuntime.queryInterface(
-                                                  XAccessibleAction.class, 
+                                                  XAccessibleAction.class,
                                                   oObj);
 
-        tEnv.addObjRelation("EventProducer", 
+        tEnv.addObjRelation("EventProducer",
                             new ifc.accessibility._XAccessibleEventBroadcaster.EventProducer() {
             public void fireEvent() {
                 try {

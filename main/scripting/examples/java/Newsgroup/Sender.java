@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 import javax.mail.*;
@@ -41,8 +41,8 @@ public class Sender
 
 
 
-	public Sender( StatusWindow sw, OfficeAttachment attach, String reply, 
-		       String sub, String com, String host, String group ) 
+	public Sender( StatusWindow sw, OfficeAttachment attach, String reply,
+		       String sub, String com, String host, String group )
 	{
 		status = sw;
 		attachments = attach;
@@ -63,7 +63,7 @@ public class Sender
 			attachments.createTempDocs();
 			// Property for any information
 			Properties props = new Properties();
-	
+
 			// Create unique session (null is unused authenticator info)
 			statusLine = "Creating unique session";
 			status.setStatus( statusPos, statusLine ); // 5
@@ -102,7 +102,7 @@ public class Sender
 
 			// Add multipart to mail
 			message.setContent( multipart );
-		
+
 			// Create and send NNTP transport
 			statusPos += 2; // 9
 			statusLine = "Creating NNTP transport";
@@ -114,27 +114,27 @@ public class Sender
 			statusLine = "Connecting to mail server";
 			status.setStatus( statusPos, statusLine );
 			transport.connect( hostname, null, null );
-			
+
 			statusPos++; // 11
 			statusLine = "Sending message";
-			status.setStatus( statusPos, statusLine );			
+			status.setStatus( statusPos, statusLine );
 			transport.sendMessage( message, message.getAllRecipients() );
 
 			statusPos++; // 12
 			statusLine = "Closing transport";
-			status.setStatus( statusPos, statusLine );			
+			status.setStatus( statusPos, statusLine );
 			transport.close();
 
 			// Clean up when finished
 			attachments.removeTempDocs();
-			
+
 			return true;
 		}
 		catch( MessagingException me )
 		{
 			if( statusPos == 10 )
 			{
-				statusLine = "Error connecting (User authentication?)";	
+				statusLine = "Error connecting (User authentication?)";
 			}
 			status.setStatus( statusPos, statusLine );
 			System.out.println( "Error sending message: ");

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -33,7 +33,7 @@ import share.LogWriter;
 
 /**
 * Testing <code>com.sun.star.text.NumberingLevel</code><p>
-* This service is currently konwn as property value of 
+* This service is currently konwn as property value of
 * com.sun.star.text.ParagraphProperties.NumberingRules
 * This test checks only for completnes of implemented properties.
 * service properties :
@@ -66,13 +66,13 @@ import share.LogWriter;
 * @see ifc.style._ParagraphProperties
 */
 public class _NumberingLevel {
-    
+
     private static TestParameters tParam = null;
     private static Hashtable NumberingLevel = new Hashtable();
     private static PropertyValue[] PropertyArray = null;
     private static LogWriter log = null;
-    
-    
+
+
     /**
      * returns an instance of _NumberingLevel
      * @param log the log writer
@@ -80,12 +80,12 @@ public class _NumberingLevel {
      * @param propertyValues a PropertyValue[] which should contain all properties of com.sun.star.text.NumberingLevel
      */
     public _NumberingLevel(LogWriter log, TestParameters tParam, PropertyValue[] propertyValues){
-    
+
         this.tParam = tParam;
         this.PropertyArray = propertyValues;
-        
+
         this.log = log;
-        
+
         //key = PropertyName, value = Ooptional
         NumberingLevel.put("Adjust", new Boolean(false));
         NumberingLevel.put("ParentNumbering", new Boolean(true));
@@ -108,23 +108,23 @@ public class _NumberingLevel {
         NumberingLevel.put("HeadingStyleName", new Boolean(false));
         NumberingLevel.put("BulletColor", new Boolean(true));
         NumberingLevel.put("BulletRelSize", new Boolean(true));
-        
+
     }
-    
+
     /**
-     * This methods checks the PropertyValue for completnes. If one or more properties 
+     * This methods checks the PropertyValue for completnes. If one or more properties
      * are missing the return value is FALSE, else TRUE
      * @return returns TRUE if PropertyValue[] is complete, else FALSE
      */
     public boolean testPropertieArray(){
-        
+
         boolean status = true;
         try{
-            
+
             // iterate over the given property array and remove it from the must list
             for (int i = 0; i < PropertyArray.length; i++){
                 String propertyName=PropertyArray[i].Name;
-                
+
                 if ( NumberingLevel.containsKey(propertyName) ) {
                     NumberingLevel.remove(propertyName);
                 } else {
@@ -137,17 +137,17 @@ public class _NumberingLevel {
                         status = false;
                         log.println("-> '" + propertyName + "'");
                 }
-                
+
             }
-            
+
             // get rest of properties and check if they are optional
             if (! NumberingLevel.isEmpty()){
                 for (Enumeration e = NumberingLevel.keys() ; e.hasMoreElements() ;) {
                     String property = (String) e.nextElement();
-                    
+
                     // if some elements are not optional -> failed
                     if ( ! ((Boolean)NumberingLevel.get(property)).booleanValue() ){
-                        
+
                         if ( status ) {
                             log.println("FAILED: com.sun.star.text.NumberingLevel -> " +
                                         "could not find not optional property:");
@@ -162,9 +162,9 @@ public class _NumberingLevel {
         }catch( Exception e ){
             throw new StatusException("ERROR: could not test all properties of com.sun.star.text.NumberingLevel",e);
         }
-        
+
         return status;
     }
-    
-    
+
+
 }  // finish class _NumberingLevel

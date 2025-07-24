@@ -34,10 +34,10 @@ public class XMLTokenViewFactory
         maIn = null;
         start();
     }
-    
-    
-    
-    
+
+
+
+
     public TokenView<TokenType> Create (final InputStream aIn)
     {
         TokenView<TokenType> aView = null;
@@ -49,25 +49,25 @@ public class XMLTokenViewFactory
                 aView = new TokenView<TokenType>();
                 aView.addKeyListener(new KeyListener());
                 maCurrentView = aView;
-                
+
                 FillDocument();
                 //notify();
             }
         }
-        
+
         return aView;
     }
-        
-    
-    
-    
+
+
+
+
     @Override
     public void run ()
     {
         while(true)
         {
             FillDocument();
-            
+
             synchronized(this)
             {
                 if (maIn == null)
@@ -84,10 +84,10 @@ public class XMLTokenViewFactory
             }
         }
     }
-    
 
-    
-    
+
+
+
     private void FillDocument ()
     {
         final InputStream aIn = maIn;
@@ -97,9 +97,9 @@ public class XMLTokenViewFactory
             new DocumentTokenFormatter(new XMLScanner(aIn), maCurrentView).Parse();
         }
     }
-    
-    
-    
+
+
+
 
     private InputStream maIn;
     private TokenView<TokenType> maCurrentView;

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 package com.sun.star.sdbcx.comp.postgresql;
@@ -51,7 +51,7 @@ import com.sun.star.uno.UnoRuntime;
 public class PostgresqlTables extends OContainer {
     private XDatabaseMetaData metadata;
     private PostgresqlCatalog catalog;
-    
+
     public PostgresqlTables(Object lock, XDatabaseMetaData metadata, PostgresqlCatalog catalog, List<String> names) throws ElementExistException {
         super(lock, true, names);
         this.metadata = metadata;
@@ -87,15 +87,15 @@ public class PostgresqlTables extends OContainer {
     public void dropObject(int index, String name) throws SQLException {
         try {
             Object object = getObject(index);
-            
+
             NameComponents nameComponents = DbTools.qualifiedNameComponents(metadata, name, ComposeRule.InDataManipulation);
-            
+
             boolean isView = false;
             XPropertySet propertySet = UnoRuntime.queryInterface(XPropertySet.class, object);
             if (propertySet != null) {
                 isView = AnyConverter.toString(propertySet.getPropertyValue(PropertyIds.TYPE.name)).equals("VIEW");
             }
-            
+
             String composedName = DbTools.composeTableName(metadata, nameComponents.getCatalog(), nameComponents.getSchema(), nameComponents.getTable(),
                     true, ComposeRule.InDataManipulation);
             if (isView) {
@@ -105,9 +105,9 @@ public class PostgresqlTables extends OContainer {
                 dropView.dropByName(unquotedName);
                 return;
             }
-            
+
             String sql = "DROP TABLE " + composedName;
-            
+
             XStatement statement = null;
             try {
                 statement = metadata.getConnection().createStatement();
@@ -135,7 +135,7 @@ public class PostgresqlTables extends OContainer {
         createTable(descriptor);
         return createObject(name);
     }
-    
+
     void createTable(XPropertySet descriptor) throws SQLException {
         XStatement statement = null;
         try {

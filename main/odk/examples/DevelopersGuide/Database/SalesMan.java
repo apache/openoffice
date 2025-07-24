@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -34,7 +34,7 @@ import com.sun.star.util.Date;
 import com.sun.star.beans.XPropertySet;
 import com.sun.star.container.XNameAccess;
 import com.sun.star.sdbc.*;
-    
+
 public class SalesMan
 {
 	private XConnection con;
@@ -72,20 +72,20 @@ public class SalesMan
 	public void insertDataIntoSalesMan() throws com.sun.star.uno.Exception
 	{
 		XStatement stmt = con.createStatement();
-		stmt.executeUpdate("INSERT INTO SALESMAN " + 
-				"VALUES (1, 'Joseph', 'Smith','Bond Street','CA',95460," 
+		stmt.executeUpdate("INSERT INTO SALESMAN " +
+				"VALUES (1, 'Joseph', 'Smith','Bond Street','CA',95460,"
 				+ "'1946-07-02')");
 		stmt.executeUpdate("INSERT INTO SALESMAN " +
-				"VALUES (2, 'Frank', 'Jones','Lake Silver','CA',95460," 
+				"VALUES (2, 'Frank', 'Jones','Lake Silver','CA',95460,"
 				+ "'1963-12-24')");
 		stmt.executeUpdate("INSERT INTO SALESMAN " +
-				"VALUES (3, 'Jane', 'Esperansa','23 Hollywood drive','CA',95460," 
+				"VALUES (3, 'Jane', 'Esperansa','23 Hollywood drive','CA',95460,"
 				+ "'1972-04-01')");
 		stmt.executeUpdate("INSERT INTO SALESMAN " +
-				"VALUES (4, 'George', 'Flint','12 Washington street','CA',95460," 
+				"VALUES (4, 'George', 'Flint','12 Washington street','CA',95460,"
 				+ "'1953-02-13')");
 		stmt.executeUpdate("INSERT INTO SALESMAN " +
-				"VALUES (5, 'Bob', 'Meyers','2 Moon way','CA',95460," 
+				"VALUES (5, 'Bob', 'Meyers','2 Moon way','CA',95460,"
 				+ "'1949-09-07')");
 	}
 
@@ -99,19 +99,19 @@ public class SalesMan
 		setPara.setInt(2, 1);
 		updateStreet.executeUpdate();
 
-		setPara.setString(1, "Marryland"); 
+		setPara.setString(1, "Marryland");
 		setPara.setInt(2, 4);
-		updateStreet.executeUpdate(); 
+		updateStreet.executeUpdate();
 		// changes STREET column of salesman George to Marryland
 		setPara.setString(1, "Michigan road");
-		updateStreet.executeUpdate(); 
-		// changes again STREET column of salesman George to    
-		// Michigan road 
+		updateStreet.executeUpdate();
+		// changes again STREET column of salesman George to
+		// Michigan road
 		// parameter 2 stayed 4, and the first parameter was reset
 		// to "Michigan road")
 
-		setPara.setString(1, "Bond Street"); 
-		setPara.setInt(2, 3); 
+		setPara.setString(1, "Bond Street");
+		setPara.setInt(2, 3);
 		int n = updateStreet.executeUpdate();
 		System.out.println("executeUpdate returns: " + n);
 		// n = 1 because one row had a change in it

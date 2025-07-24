@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -72,16 +72,16 @@ public class _XChartData extends MultiMethodTest {
         dataArray.setData(data);
 
         if (!dataChanged[0]) {
-            log.println("ChartDataChangeEventListener1 " + 
+            log.println("ChartDataChangeEventListener1 " +
                         "isn't called after changing data");
         }
 
         if (!dataChanged[1]) {
-            log.println("ChartDataChangeEventListener2 " + 
+            log.println("ChartDataChangeEventListener2 " +
                         "isn't called after changing data");
         }
 
-        tRes.tested("addChartDataChangeEventListener()", 
+        tRes.tested("addChartDataChangeEventListener()",
                     dataChanged[0] && dataChanged[1]);
     }
 
@@ -111,11 +111,11 @@ public class _XChartData extends MultiMethodTest {
         oObj.removeChartDataChangeEventListener(listener2);
 
         if (dataChanged[0]) {
-            log.println("ChartDataChangeEventListener1 is " + 
+            log.println("ChartDataChangeEventListener1 is " +
                         "called after removing listener");
         }
 
-        tRes.tested("removeChartDataChangeEventListener()", 
+        tRes.tested("removeChartDataChangeEventListener()",
                     ((!dataChanged[0]) && (dataChanged[1])));
     }
 

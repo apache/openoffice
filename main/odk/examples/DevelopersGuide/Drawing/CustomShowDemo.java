@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -86,7 +86,7 @@ public class CustomShowDemo
 				(XDrawPagesSupplier)UnoRuntime.queryInterface(
 					XDrawPagesSupplier.class, xDrawDoc );
 			XDrawPages xDrawPages = xDrawPagesSupplier.getDrawPages();
-						
+
 			// take care that this document has ten pages
 		    while ( xDrawPages.getCount() < 10 )
 				xDrawPages.insertNewByIndex( 0 );
@@ -96,13 +96,13 @@ public class CustomShowDemo
 									"page five", "page six", "page seven", "page eight", "page nine" };
 			int i;
 			for ( i = 0; i < 10; i++ )
-			{			
+			{
 				XDrawPage xDrawPage = (XDrawPage)UnoRuntime.queryInterface(
 					XDrawPage.class, xDrawPages.getByIndex( i ));
 				XNamed xPageName = (XNamed)UnoRuntime.queryInterface(
-					XNamed.class, xDrawPage );				
+					XNamed.class, xDrawPage );
 				xPageName.setName( aNameArray[ i ] );
-				
+
 				// now we will create and insert the text object
 				XShape xTextObj = ShapeHelper.createShape( xDrawDoc, new Point( 10000, 9000 ),
 					new Size( 10000, 5000 ),

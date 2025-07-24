@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -40,32 +40,32 @@ import org.openoffice.netbeans.modules.office.nodes.OfficeDocumentChildren;
  * @author tomaso
  */
 public class OfficeDocumentDataNode extends DataNode {
-    
+
     public OfficeDocumentDataNode(OfficeDocumentDataObject obj) {
         // this(obj, Children.LEAF);
         this(obj, new OfficeDocumentChildren((OfficeDocumentCookie)
             obj.getCookie(OfficeDocumentCookie.class)));
     }
-    
+
     public OfficeDocumentDataNode(OfficeDocumentDataObject obj, Children ch) {
         super(obj, ch);
         setIconBase("/org/openoffice/netbeans/modules/office/resources/OfficeIcon");
     }
-    
+
     protected OfficeDocumentDataObject getOfficeDocumentDataObject() {
         return (OfficeDocumentDataObject)getDataObject();
     }
-    
+
     // Allow for pasting of Script Parcels to Office Documents
     protected void createPasteTypes(Transferable t, List ls) {
         Node[] copies = NodeTransfer.nodes(t, NodeTransfer.COPY);
-        
+
         if (copies != null) {
             for (int i = 0; i < copies.length; i++) {
                 if (copies[i] instanceof ParcelDataNode) {
                     File source = FileUtil.toFile(((ParcelDataNode)copies[i]).getDataObject().getPrimaryFile());
                     File target = FileUtil.toFile(getDataObject().getPrimaryFile());
-                    
+
                     if (source.exists()  && source.canRead() &&
                         target.exists() && target.canWrite()) {
                         ls.add(new ParcelDataNode.ParcelPasteType((ParcelDataNode)copies[i], target, false));
@@ -73,14 +73,14 @@ public class OfficeDocumentDataNode extends DataNode {
                 }
             }
         }
-        
+
         Node[] moves = NodeTransfer.nodes(t, NodeTransfer.MOVE);
         if (moves != null) {
             for (int i = 0; i < moves.length; i++) {
                 if (moves[i] instanceof ParcelDataNode) {
                     File source = FileUtil.toFile(((ParcelDataNode)moves[i]).getDataObject().getPrimaryFile());
                     File target = FileUtil.toFile(getDataObject().getPrimaryFile());
-                    
+
                     if (source.exists() && source.canRead() &&
                         target.exists() && target.canWrite()) {
                         ls.add(new ParcelDataNode.ParcelPasteType((ParcelDataNode)moves[i], target, true));
@@ -92,7 +92,7 @@ public class OfficeDocumentDataNode extends DataNode {
         // Also try superclass, but give it lower priority:
         super.createPasteTypes(t, ls);
     }
-    
+
     /* Example of adding Executor / Debugger / Arguments to node:
     protected Sheet createSheet() {
         Sheet sheet = super.createSheet();
@@ -110,7 +110,7 @@ public class OfficeDocumentDataNode extends DataNode {
         return sheet;
     }
      */
-    
+
     // Don't use getDefaultAction(); just make that first in the data loader's getActions list
-    
+
 }

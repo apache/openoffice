@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 import com.sun.star.uno.UnoRuntime;
@@ -29,7 +29,7 @@ import com.sun.star.lang.IndexOutOfBoundsException;
 
 import tools.NameProvider;
 
-class AccessibleRelationHandler 
+class AccessibleRelationHandler
     extends NodeHandler
 {
     public NodeHandler createHandler( XAccessibleContext xContext )
@@ -55,7 +55,7 @@ class AccessibleRelationHandler
             maChildList.setSize( 1 );
     }
 
-    public AccessibleTreeNode createChild( AccessibleTreeNode aParent, 
+    public AccessibleTreeNode createChild( AccessibleTreeNode aParent,
                                            int nIndex )
     {
         XAccessibleRelationSet xRelation = null;
@@ -63,7 +63,7 @@ class AccessibleRelationHandler
 
         if( aParent instanceof AccTreeNode )
         {
-            xRelation = 
+            xRelation =
                 ((AccTreeNode)aParent).getContext().getAccessibleRelationSet();
         }
         if( xRelation == null )
@@ -85,8 +85,8 @@ class AccessibleRelationHandler
                 for( int j = 0; j < aRelation.TargetSet.length; j++ )
                 {
                     Object aTarget = aRelation.TargetSet[j];
-                    XAccessible xAccTarget = 
-                        (XAccessible)UnoRuntime.queryInterface( 
+                    XAccessible xAccTarget =
+                        (XAccessible)UnoRuntime.queryInterface(
                              XAccessible.class, aTarget );
                     if( xAccTarget == null )
                     {
@@ -101,7 +101,7 @@ class AccessibleRelationHandler
                 }
                 aBuffer.delete( aBuffer.length() - 2, aBuffer.length() );
 
-                aVNode.addChild( new StringNode( aBuffer.toString(), 
+                aVNode.addChild( new StringNode( aBuffer.toString(),
                                                  aParent ) );
             }
 

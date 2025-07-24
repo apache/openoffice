@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 package org.apache.openoffice.comp.sdbc.dbtools.util;
@@ -70,7 +70,7 @@ public class DatabaseMetaDataResultSet extends ComponentBase
     private int currentRow = -1;
     /// 1-based:
     private int currentColumn;
-    
+
     public DatabaseMetaDataResultSet(XResultSet impl, ArrayList<ORowSetValue[]> rows) {
         implCloseable = UnoRuntime.queryInterface(XCloseable.class, impl);
         implPropertySet = UnoRuntime.queryInterface(XPropertySet.class, impl);
@@ -79,7 +79,7 @@ public class DatabaseMetaDataResultSet extends ComponentBase
         implResultSetMetaDataSupplier = UnoRuntime.queryInterface(XResultSetMetaDataSupplier.class, impl);
         this.rows = rows;
     }
-    
+
     // XComponent:
     @Override
     protected void postDisposing() {
@@ -90,13 +90,13 @@ public class DatabaseMetaDataResultSet extends ComponentBase
     }
 
     // XCloseable:
-    
+
     public void close() throws SQLException {
         dispose();
     }
 
     // XResultSet:
-    
+
     private ORowSetValue getField(int columnIndex) throws SQLException {
         if (isBeforeFirst() || isAfterLast()) {
             throw new SQLException("Row out of range");
@@ -108,7 +108,7 @@ public class DatabaseMetaDataResultSet extends ComponentBase
         currentColumn = columnIndex;
         return fields[columnIndex - 1];
     }
-    
+
     public synchronized boolean absolute(int position) throws SQLException {
         checkDisposed();
         if (position >= 0) {
@@ -229,14 +229,14 @@ public class DatabaseMetaDataResultSet extends ComponentBase
     }
 
     // XResultSetMetaDataSupplier:
-    
+
     public synchronized XResultSetMetaData getMetaData() throws SQLException {
         checkDisposed();
         return implResultSetMetaDataSupplier.getMetaData();
     }
 
     // XRow:
-    
+
     public synchronized XArray getArray(int columnIndex) throws SQLException {
         checkDisposed();
         return null;
@@ -352,14 +352,14 @@ public class DatabaseMetaDataResultSet extends ComponentBase
     }
 
     // XColumnLocate:
-    
+
     public synchronized int findColumn(String arg0) throws SQLException {
         checkDisposed();
         return implColumnLocate.findColumn(arg0);
     }
 
     // XPropertySet:
-    
+
     public synchronized void addPropertyChangeListener(String arg0, XPropertyChangeListener arg1) throws UnknownPropertyException, WrappedTargetException {
         checkDisposed();
         implPropertySet.addPropertyChangeListener(arg0, arg1);
@@ -395,12 +395,12 @@ public class DatabaseMetaDataResultSet extends ComponentBase
         checkDisposed();
         implPropertySet.setPropertyValue(arg0, arg1);
     }
-    
-    // XRowLocate:    
+
+    // XRowLocate:
 
     public synchronized int compareBookmarks(Object arg0, Object arg1) throws SQLException {
         checkDisposed();
-        
+
         int bookmark1, bookmark2;
         try {
             bookmark1 = AnyConverter.toInt(arg0);
@@ -408,7 +408,7 @@ public class DatabaseMetaDataResultSet extends ComponentBase
         } catch (IllegalArgumentException illegalArgumentException) {
             return CompareBookmark.NOT_COMPARABLE;
         }
-        
+
         if (bookmark1 < bookmark2) {
             return CompareBookmark.LESS;
         } else if (bookmark1 > bookmark2) {
@@ -473,7 +473,7 @@ public class DatabaseMetaDataResultSet extends ComponentBase
     }
 
     // XColumnSupplier:
-    
+
     public synchronized XNameAccess getColumns() {
         checkDisposed();
         return implColumnSupplier.getColumns();

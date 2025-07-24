@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -44,7 +44,7 @@ class GraphicalComparator implements DocComparator
         {
             m_aArguments = new GraphicalTestArguments(aParams);
         }
-    
+
     /**
      * @return an instance of this object, but only it's interface
      */
@@ -89,7 +89,7 @@ class GraphicalComparator implements DocComparator
                 sNewSubDir = FileHelper.removeFirstDirectorysAndBasenameFrom(_sEntry, _sInputPath);
             }
             String sNameNoSuffix = FileHelper.getNameNoSuffix(FileHelper.getBasename(_sEntry));
-            
+
             // add the sub path to the difference path
             String sNewReferencePath;
             if (sNewSubDir.length() > 0)
@@ -104,11 +104,11 @@ class GraphicalComparator implements DocComparator
             sNewReferencePath += fs + sNameNoSuffix + _sNewSuffix;
             return sNewReferencePath;
         }
-    
+
     boolean isReferenceOrDiffExistent(String _sNewSuffix)
         {
             boolean isExistent = false;
-            
+
             // LLA? What if sReferencePath is a directory, but directory is empty? is the result then true or false;
 
             // wir muessen durch den InputPath durch und dann fuer jedes Dokument prufen, ob im angegebenen ReferencePath eine Reference existiert.
@@ -130,7 +130,7 @@ class GraphicalComparator implements DocComparator
             }
             else
             {
-                // sInputPath is a file                
+                // sInputPath is a file
                 String sNewReferencePath = createSpecialFile(sInputPath, "", m_aArguments.getReferencePath(), _sNewSuffix);
                 if (FileHelper.exists(sNewReferencePath))
                 {
@@ -139,7 +139,7 @@ class GraphicalComparator implements DocComparator
             }
             return isExistent;
         }
-    
+
     /**
      *  REFERENCE_PATH must set to directory/file, where the reference (*.prn files) (should) exist
      */
@@ -194,7 +194,7 @@ class GraphicalComparator implements DocComparator
                     System.err.println("    Inputpath: '" + m_aArguments.getInputPath() + "'");
                     System.err.println("   Outputpath: '" + m_aArguments.getOutputPath() + "'");
                     System.err.println("Referencepath: '" + m_aArguments.getReferencePath() + "'");
-                }                
+                }
                 return GraphicalDifferenceCheck.check(m_aArguments.getInputPath(), m_aArguments.getOutputPath(), m_aArguments.getReferencePath(), m_aArguments);
             }
             catch(ConvWatchException e)
@@ -232,7 +232,7 @@ class GraphicalComparator implements DocComparator
             // this is the same like compareDiff(), but trash the result.
             compareDiff();
         }
-    
+
     /**
      *  INPUT_PATH must set, to directory/file, where the documents exist.
      *  REFERENCE_PATH must set to directory/file, where the created references (*.prn files) exists.
@@ -252,5 +252,5 @@ class GraphicalComparator implements DocComparator
                 throw new java.io.IOException(e.getMessage());
             }
         }
-    
+
 }

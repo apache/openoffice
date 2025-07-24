@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -25,7 +25,7 @@ package org.openoffice.test.vcl.client;
 
 /**
  * Define all constant variables
- * 
+ *
  */
 public interface Constant {
 
@@ -362,7 +362,7 @@ public interface Constant {
 	public static final char M_IsEditing = (M_WITH_RETURN | 58);
 
 	public static final char M_IsItemEnabled = (M_WITH_RETURN | 59);
-	
+
 	// For TreeListBox
 	public static final char M_Collapse = (M_WITH_RETURN | 60);
 	public static final char M_Expand = (M_WITH_RETURN | 61);
@@ -514,7 +514,7 @@ public interface Constant {
 
 	public static final char RC_WaitSlot = (M_SOFFICE | M_WITH_RETURN | 44);
 
-	
+
 	public final static int WINDOW_BASE = 0x0100;
 
 	public final static int WINDOW_FIRST = (WINDOW_BASE + 0x30);
@@ -681,6 +681,6 @@ public interface Constant {
 	public final static int WINDOW_VALUESETLISTBOX = (WINDOW_FIRST + 0x55);
 
 	public final static int WINDOW_LAST = (WINDOW_DOCKINGAREA);
-	
+
 	public final static String UID_ACTIVE = "UID_ACTIVE";
 }

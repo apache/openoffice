@@ -43,10 +43,10 @@ public class CopyVisitor
         maSourceSchemaBase = aSourceSchemaBase;
         maTargetSchemaBase = aTargetSchemaBase;
     }
-    
-    
-    
-    
+
+
+
+
     @Override public void Visit (final ComplexType aComplexType)
     {
         maTargetSchemaBase.ComplexTypes.Add(aComplexType);
@@ -57,24 +57,24 @@ public class CopyVisitor
         maTargetSchemaBase.Groups.Add(
             aGroupReference.GetReferencedGroup(maSourceSchemaBase));
     }
-    
+
     @Override public void Visit (final SimpleType aSimpleType)
     {
         maTargetSchemaBase.SimpleTypes.Add(aSimpleType);
     }
-    
+
     @Override public void Visit (final AttributeReference aAttributeReference)
     {
         maTargetSchemaBase.Attributes.Add(
             aAttributeReference.GetReferencedAttribute(maSourceSchemaBase));
     }
-    
+
     @Override public void Visit (final AttributeGroupReference aAttributeGroupReference)
     {
         maTargetSchemaBase.AttributeGroups.Add(
             aAttributeGroupReference.GetReferencedAttributeGroup(maSourceSchemaBase));
     }
-    
+
     @Override public void Default (final INode aNode)
     {
         switch(aNode.GetNodeType())
@@ -98,15 +98,15 @@ public class CopyVisitor
             case SimpleTypeReference:
             case Union:
                 break;
-                
+
             default:
                 throw new RuntimeException("don't know how to copy "+aNode.toString());
         }
     }
-    
-    
-    
-    
+
+
+
+
     private final SchemaBase maSourceSchemaBase;
     private final SchemaBase maTargetSchemaBase;
 }

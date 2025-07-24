@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -45,7 +45,7 @@ import org.openoffice.xmerge.converter.xml.sxc.Format;
 import org.openoffice.xmerge.converter.xml.sxc.SxcDocumentSerializer;
 
 /**
- *  <p>MiniCalc implementation of <code>SxcDocumentDeserializer</code> 
+ *  <p>MiniCalc implementation of <code>SxcDocumentDeserializer</code>
  *  for the {@link
  *  org.openoffice.xmerge.converter.xml.sxc.minicalc.PluginFactoryImpl
  *  PluginFactoryImpl}.</p>
@@ -68,7 +68,7 @@ public final class SxcDocumentSerializerImpl extends SxcDocumentSerializer {
         super(document);
     }
 
-    
+
     public ConvertData serialize() throws ConvertException, IOException {
 
 
@@ -106,8 +106,8 @@ public final class SxcDocumentSerializerImpl extends SxcDocumentSerializer {
             Record records[] = ((MinicalcEncoder) encoder).getRecords(i);
 
             // Get the sheet name for sheet i
-            String fullSheetName = new String(docName 
-                                              + "-" 
+            String fullSheetName = new String(docName
+                                              + "-"
                                               + encoder.getSheetName(i));
 
             // Create a PalmDB object
@@ -120,7 +120,7 @@ public final class SxcDocumentSerializerImpl extends SxcDocumentSerializer {
         }
 
 
-        // OutputStream os = new FileOutputStream(docName); 
+        // OutputStream os = new FileOutputStream(docName);
 
         //pdbSet.write(os);
         //os.flush();
@@ -130,7 +130,7 @@ public final class SxcDocumentSerializerImpl extends SxcDocumentSerializer {
 
         return cd;
     }
-    
+
 
 
 }

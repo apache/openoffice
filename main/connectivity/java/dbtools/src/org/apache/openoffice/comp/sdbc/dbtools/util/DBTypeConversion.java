@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 package org.apache.openoffice.comp.sdbc.dbtools.util;
@@ -33,7 +33,7 @@ public class DBTypeConversion {
     private static Date standardDate = new Date((short)1, (short)1, (short)1900);
     private static int aDaysInMonth[] = { 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 };
     private static final double fMilliSecondsPerDay = 86400000.0;
-    
+
     public static double safeParseDouble(String value) {
         try {
             return Double.parseDouble(value);
@@ -49,7 +49,7 @@ public class DBTypeConversion {
             return 0.0f;
         }
     }
-    
+
     public static int safeParseInt(String value) {
         try {
             return Integer.parseInt(value);
@@ -81,15 +81,15 @@ public class DBTypeConversion {
         }
         return d;
     }
-    
+
     public static int toUnsignedInt(byte value) {
         return value & 0xff;
     }
-    
+
     public static int toUnsignedInt(short value) {
         return value & 0xffff;
     }
-    
+
     public static String toUnsignedString(int value) {
         return Long.toString(value & 0xffffFFFFL);
     }
@@ -150,7 +150,7 @@ public class DBTypeConversion {
     public static Date getStandardDate() {
         return standardDate;
     }
-    
+
     private static int implDaysInMonth(int _nMonth, int _nYear) {
         if (_nMonth != 2)
             return aDaysInMonth[_nMonth-1];
@@ -210,7 +210,7 @@ public class DBTypeConversion {
                 ;
     }
 
-    
+
     private static int implRelativeToAbsoluteNull(final Date _rDate) {
         int nDays = 0;
 
@@ -230,23 +230,23 @@ public class DBTypeConversion {
     public static int toDays(Date rVal) {
         return toDays(rVal, getStandardDate());
     }
-    
+
     public static int toDays(Date rVal, Date rNullDate) {
         return implRelativeToAbsoluteNull(rVal) - implRelativeToAbsoluteNull(rNullDate);
     }
-    
+
     public static double toDouble(Date rVal) {
         return toDouble(rVal, getStandardDate());
     }
-    
+
     public static double toDouble(Date rVal, Date _rNullDate) {
         return (double)toDays(rVal, _rNullDate);
     }
-    
+
     public static double toDouble(DateTime _rVal) {
         return toDouble(_rVal, getStandardDate());
     }
-    
+
     public static double toDouble(DateTime _rVal, Date _rNullDate) {
         long   nTime     = toDays(new Date(_rVal.Day, _rVal.Month, _rVal.Year), _rNullDate);
         Time aTimePart = new Time();
@@ -258,15 +258,15 @@ public class DBTypeConversion {
 
         return ((double)nTime) + toDouble(aTimePart);
     }
-    
+
     public static double toDouble(Time rVal) {
         return (double)getMsFromTime(rVal) / fMilliSecondsPerDay;
     }
-    
+
     public static Date toDate(double dVal) {
         return toDate(dVal, getStandardDate());
     }
-    
+
     public static Date toDate(double dVal, Date _rNullDate) {
         Date aRet = _rNullDate;
 
@@ -278,10 +278,10 @@ public class DBTypeConversion {
 
         return aRet;
     }
-    
+
     public static Date toDate(String value) {
         String[] tokens = value.split("-");
-        
+
         short  nYear   = 0,
                 nMonth  = 0,
                 nDay    = 0;
@@ -297,11 +297,11 @@ public class DBTypeConversion {
 
         return new Date(nDay,nMonth,nYear);
     }
-    
+
     public static DateTime toDateTime(double dVal) {
         return toDateTime(dVal, getStandardDate());
     }
-    
+
     public static DateTime toDateTime(double dVal, Date _rNullDate) {
         Date aDate = toDate(dVal, _rNullDate);
         Time aTime = toTime(dVal);
@@ -334,13 +334,13 @@ public class DBTypeConversion {
         }
         Date aDate = toDate(dateString);
         Time aTime = new Time();
-        
+
         if ( -1 != nSeparation )
             aTime = toTime( timeString );
 
         return new DateTime(aTime.HundredthSeconds,aTime.Seconds,aTime.Minutes,aTime.Hours,aDate.Day,aDate.Month,aDate.Year);
     }
-    
+
     public static Time toTime(int _nVal) {
         Time aReturn = new Time();
         aReturn.Hours = (short)(((int)(_nVal >= 0 ? _nVal : _nVal*-1)) / 1000000);
@@ -349,7 +349,7 @@ public class DBTypeConversion {
         aReturn.HundredthSeconds = (short)(((int)(_nVal >= 0 ? _nVal : _nVal*-1)) % 100);
         return aReturn;
     }
-    
+
     public static Time toTime(double dVal) {
         int nDays     = (int)dVal;
         int nMS = (int)((dVal - (double)nDays) * fMilliSecondsPerDay + 0.5);
@@ -387,7 +387,7 @@ public class DBTypeConversion {
         }
         return xRet;
     }
-    
+
     public static Time toTime(String _sSQLString) {
         short  nHour   = 0,
                     nMinute = 0,
@@ -417,7 +417,7 @@ public class DBTypeConversion {
         }
         return new Time(nHundredthSeconds,nSecond,nMinute,nHour);
     }
-    
+
     /// Return the date in the format %04d-%02d-%02d.
     public static String toDateString(Date date) {
         return String.format("%04d-%02d-%02d",
@@ -425,7 +425,7 @@ public class DBTypeConversion {
                 toUnsignedInt(date.Month),
                 toUnsignedInt(date.Day));
     }
-    
+
     /// Return the time in the format %02d:%02d:%02d.
     public static String toTimeString(Time time) {
         return String.format("%02d:%02d:%02d",
@@ -433,7 +433,7 @@ public class DBTypeConversion {
                 toUnsignedInt(time.Minutes),
                 toUnsignedInt(time.Seconds));
     }
-    
+
     /// Return the DateTime in the format %04d-%02d-%02d %02d:%02d:%02d.%d.
     public static String toDateTimeString(DateTime dateTime) {
         return String.format("%04d-%02d-%02d %02d:%02d:%02d.%d",

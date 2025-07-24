@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 /*
@@ -431,7 +431,7 @@ public class CellBinding
         }
         return true;
     }
-    
+
     /* ------------------------------------------------------------------ */
     /** verifies that the content of a given cell equals a given string
     */
@@ -458,7 +458,7 @@ public class CellBinding
         );
         cell.setString( text );
     }
-   
+
     /* ------------------------------------------------------------------ */
     /** sets a numeric value in a given cell
     */
@@ -469,7 +469,7 @@ public class CellBinding
         );
         cell.setValue( value );
     }
-   
+
     /* ------------------------------------------------------------------ */
     /** sets a numeric value in a given cell
     */
@@ -483,7 +483,7 @@ public class CellBinding
         String[][] args = new String[][] { new String[] { "=INVALID_FUNCTION()" } };
         cell.setFormulaArray( args );
     }
-   
+
     /* ------------------------------------------------------------------ */
     /** binds the given control model to the given cell in the first sheet,
      *  using the given service name for the binding
@@ -502,7 +502,7 @@ public class CellBinding
         NamedValue[] parameters = new NamedValue[] { new NamedValue() };
         parameters[0].Name = "BoundCell";
         parameters[0].Value = address;
-        
+
         XValueBinding cellBinding = (XValueBinding)UnoRuntime.queryInterface( XValueBinding.class,
             m_document.createInstanceWithArguments( _bindingServiceName, parameters )
         );
@@ -525,7 +525,7 @@ public class CellBinding
     {
         CellRangeAddress listSourceAddress = new CellRangeAddress( (short)0, (int)_sourceCol, (int)_rowStart, (int)_sourceCol, (int)_rowEnd );
         NamedValue addressParameter = new NamedValue( "CellRange", listSourceAddress );
-        
+
         XListEntrySource listSource = (XListEntrySource)UnoRuntime.queryInterface( XListEntrySource.class,
             m_document.createInstanceWithArguments( "com.sun.star.table.CellRangeListSource", new NamedValue[]{ addressParameter } )
         );

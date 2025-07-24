@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -38,15 +38,15 @@ public class SmoketestCommandEnvironment extends WeakBase
 
     static private final String __serviceName =
     "com.sun.star.deployment.test.SmoketestCommandEnvironment";
-    
+
     private XComponentContext m_cmpCtx;
     private XMultiComponentFactory m_xMCF;
-    
+
 
     public SmoketestCommandEnvironment(XComponentContext xCompContext) {
         try {
             m_cmpCtx = xCompContext;
-            m_xMCF = m_cmpCtx.getServiceManager();                
+            m_xMCF = m_cmpCtx.getServiceManager();
         }
         catch( Exception e ) {
             e.printStackTrace();
@@ -63,24 +63,24 @@ public class SmoketestCommandEnvironment extends WeakBase
         return getServiceNames();
     }
 
-    
+
     public boolean supportsService( String sServiceName ) {
         boolean bSupported = false;
         if (sServiceName.equals(__serviceName))
             bSupported = true;
         return bSupported;
     }
-    
+
     public String getImplementationName() {
         return  SmoketestCommandEnvironment.class.getName();
     }
-    
+
     //XCommandEnvironment ================================================
     public com.sun.star.task.XInteractionHandler getInteractionHandler()
     {
         return new InteractionImpl();
     }
-    
+
     public com.sun.star.ucb.XProgressHandler getProgressHandler()
     {
         return new ProgressImpl();
@@ -127,7 +127,7 @@ class InteractionImpl implements com.sun.star.task.XInteractionHandler
                 //don't query again for ongoing extensions
                 abort = false;
             }
-        }   
+        }
     }
 }
 

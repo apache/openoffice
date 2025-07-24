@@ -45,26 +45,26 @@ public class Element
         maElementName = aElementName;
         maTypeName = aTypeName;
     }
-    
-    
-    
-    
+
+
+
+
     public QualifiedName GetElementName ()
     {
         return maElementName;
     }
-    
-    
-    
-    
+
+
+
+
     public QualifiedName GetTypeName ()
     {
         return maTypeName;
     }
-    
-    
-    
-    
+
+
+
+
     @Override
     public int compareTo (final Node aOther)
     {
@@ -73,37 +73,37 @@ public class Element
         else
             return maElementName.compareTo(((Element)aOther).maElementName);
     }
-    
-    
-    
-    
+
+
+
+
     @Override
     public NodeType GetNodeType ()
     {
         return NodeType.Element;
     }
 
-    
-    
-    
+
+
+
     @Override
     public void AcceptVisitor (final INodeVisitor aVisitor)
     {
         aVisitor.Visit(this);
     }
 
-    
-    
-    
+
+
+
     @Override
     public String toString ()
     {
         return "element " + maElementName.GetDisplayName() +" -> " + maTypeName.GetDisplayName();
     }
-    
-    
-    
-    
+
+
+
+
     private final QualifiedName maElementName;
     private final QualifiedName maTypeName;
 }

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -91,10 +91,10 @@ public class CalcRTL
         assertTrue("Problems when setting property 'PageStyle'",
                changeProperty(set, "PageStyle", "Default"));
         assertTrue("Problems when setting property 'TableLayout'",
-               changeProperty(set, "TableLayout", 
+               changeProperty(set, "TableLayout",
                               new Short(com.sun.star.text.WritingMode2.RL_TB)));
         assertTrue("Problems when setting property 'TableLayout'",
-               changeProperty(set, "TableLayout", 
+               changeProperty(set, "TableLayout",
                               new Short(com.sun.star.text.WritingMode2.LR_TB)));
         assertTrue("Couldn't close document", closeSpreadsheetDocument());
     }
@@ -118,7 +118,7 @@ public class CalcRTL
 
         try {
             assertTrue("Problems when setting property 'Anchor'",
-                   changeProperty(set, "Anchor", 
+                   changeProperty(set, "Anchor",
                                   getSpreadsheet().getCellByPosition(5, 5)));
         } catch (com.sun.star.lang.IndexOutOfBoundsException e) {
             // assure("Problems when setting property 'Anchor'", false);
@@ -145,12 +145,12 @@ public class CalcRTL
 
         String[] previous = getShapeProps(shapeProps, oShape);
         assertTrue("Problems when setting property 'TableLayout'",
-               changeProperty(sheetProps, "TableLayout", 
+               changeProperty(sheetProps, "TableLayout",
                               new Short(com.sun.star.text.WritingMode2.RL_TB)));
 
         String[] RL_TB = getShapeProps(shapeProps, oShape);
         assertTrue("Problems when setting property 'TableLayout'",
-               changeProperty(sheetProps, "TableLayout", 
+               changeProperty(sheetProps, "TableLayout",
                               new Short(com.sun.star.text.WritingMode2.LR_TB)));
 
         String[] LR_TB = getShapeProps(shapeProps, oShape);
@@ -159,17 +159,17 @@ public class CalcRTL
         assertEquals("HoriOrientPosition has changed",
                2100, (Integer.valueOf(previous[1]).intValue() + Integer.valueOf(
                                                                   RL_TB[1])
-                                                                 .intValue() + 
+                                                                 .intValue() +
                    Integer.valueOf(LR_TB[1]).intValue()));
         assertEquals("VertOrientPosition has changed",
                 3*Integer.valueOf(previous[2]).intValue(),
                (Integer.valueOf(previous[2]).intValue() + Integer.valueOf(
                                                                   RL_TB[2])
-                                                                 .intValue() + 
+                                                                 .intValue() +
                    Integer.valueOf(LR_TB[2]).intValue()));
         assertTrue("x-position hasn't changed",
-               (previous[3].equals(LR_TB[3]) && 
-                   ((Integer.valueOf(previous[3]).intValue() * (-1)) - 
+               (previous[3].equals(LR_TB[3]) &&
+                   ((Integer.valueOf(previous[3]).intValue() * (-1)) -
                        oShape.getSize().Width != Integer.valueOf(LR_TB[2])
                                                         .intValue())));
         assertTrue("Couldn't close document", closeSpreadsheetDocument());
@@ -283,7 +283,7 @@ public class CalcRTL
      * @param pName : The name of the Property that has to be changed
      * @param pValue : The value, the property should be changed too.
      */
-    protected boolean changeProperty(XPropertySet set, String pName, 
+    protected boolean changeProperty(XPropertySet set, String pName,
                                      Object pValue) {
         boolean worked = true;
 
@@ -313,10 +313,10 @@ public class CalcRTL
 
 
             // checking results
-            worked = checkResult(set, pName, oldValue, pValue, resValue, 
+            worked = checkResult(set, pName, oldValue, pValue, resValue,
                                  exception);
         } catch (Exception e) {
-            System.out.println("Exception occurred while testing property '" + 
+            System.out.println("Exception occurred while testing property '" +
                                pName + "'");
             e.printStackTrace();
             worked = false;
@@ -335,8 +335,8 @@ public class CalcRTL
      * @param resValue : the value getPropertyValue returned for the property
      * @param exception : the exeption thrown during the change of the property
      */
-    protected boolean checkResult(XPropertySet set, String propName, 
-                                  Object oldValue, Object newValue, 
+    protected boolean checkResult(XPropertySet set, String propName,
+                                  Object oldValue, Object newValue,
                                   Object resValue, Exception exception)
                            throws Exception {
         XPropertySetInfo info = set.getPropertySetInfo();
@@ -406,10 +406,10 @@ public class CalcRTL
                                 "' has changed");
 
                     try {
-                        if (!util.utils.isVoid(oldValue) && 
+                        if (!util.utils.isVoid(oldValue) &&
                                 oldValue instanceof Any) {
                             oldValue = AnyConverter.toObject(
-                                               new Type(((Any) oldValue).getClass()), 
+                                               new Type(((Any) oldValue).getClass()),
                                                oldValue);
                         }
 
@@ -432,16 +432,16 @@ public class CalcRTL
             if (exception == null) {
                 // if no exception thrown
                 // check that the new value is set
-                if ((!ValueComparer.equalValue(resValue, newValue)) || 
+                if ((!ValueComparer.equalValue(resValue, newValue)) ||
                         (ValueComparer.equalValue(resValue, oldValue))) {
                     System.out.println("Value for '" + propName +
                                 "' hasn't changed as expected");
 
                     try {
-                        if (!util.utils.isVoid(oldValue) && 
+                        if (!util.utils.isVoid(oldValue) &&
                                 oldValue instanceof Any) {
                             oldValue = AnyConverter.toObject(
-                                               new Type(((Any) oldValue).getClass()), 
+                                               new Type(((Any) oldValue).getClass()),
                                                oldValue);
                         }
 
@@ -452,7 +452,7 @@ public class CalcRTL
                     }
 
                     if (resValue != null) {
-                        if ((!ValueComparer.equalValue(resValue, oldValue)) || 
+                        if ((!ValueComparer.equalValue(resValue, oldValue)) ||
                                 (!resValue.equals(oldValue))) {
                             System.out.println("But it has changed.");
 
@@ -469,10 +469,10 @@ public class CalcRTL
                     System.out.println("Property '" + propName + "' OK");
 
                     try {
-                        if (!util.utils.isVoid(oldValue) && 
+                        if (!util.utils.isVoid(oldValue) &&
                                 oldValue instanceof Any) {
                             oldValue = AnyConverter.toObject(
-                                               new Type(((Any) oldValue).getClass()), 
+                                               new Type(((Any) oldValue).getClass()),
                                                oldValue);
                         }
 
@@ -506,9 +506,9 @@ public class CalcRTL
 
         if (UnoRuntime.queryInterface(XCellRangeAddressable.class, obj) != null) {
             XCellRangeAddressable aCell =  UnoRuntime.queryInterface(
-                                                  XCellRangeAddressable.class, 
+                                                  XCellRangeAddressable.class,
                                                   obj);
-            value = "Cell in Column " + aCell.getRangeAddress().StartColumn + 
+            value = "Cell in Column " + aCell.getRangeAddress().StartColumn +
                     " and Row " + aCell.getRangeAddress().StartRow;
         } else {
             return obj;
@@ -527,11 +527,11 @@ public class CalcRTL
             System.out.println("getting Drawpages");
 
             XDrawPagesSupplier oDPS =  UnoRuntime.queryInterface(
-                                              XDrawPagesSupplier.class, 
+                                              XDrawPagesSupplier.class,
                                               xSheetDoc);
             XDrawPages oDP =  oDPS.getDrawPages();
             XDrawPage firstDrawPage =  UnoRuntime.queryInterface(
-                                              XDrawPage.class, 
+                                              XDrawPage.class,
                                               oDP.getByIndex(0));
 
             final XMultiServiceFactory xMsf = UnoRuntime.queryInterface(XMultiServiceFactory.class, connection.getComponentContext().getServiceManager());
@@ -541,7 +541,7 @@ public class CalcRTL
             //                              (XMultiServiceFactory) param.getMSF());
             XComponent xComp =  UnoRuntime.queryInterface(
                                        XComponent.class, xSheetDoc);
-            insertedShape = SOF.createShape(xComp, 5000, 3500, 700, 500, 
+            insertedShape = SOF.createShape(xComp, 5000, 3500, 700, 500,
                                             "Rectangle");
             DrawTools.getShapes(firstDrawPage).add(insertedShape);
         } catch (com.sun.star.lang.WrappedTargetException e) {

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 package org.openoffice.test;
@@ -44,57 +44,57 @@ import org.openoffice.test.common.SystemUtil;
  *
  */
 public class OpenOffice {
-	
+
 	private static Logger LOG = Logger.getLogger(OpenOffice.class.getName());
-	
+
 	private static final String[] DEFAULT_HOME = new String[] {
 		"C:/Program Files/OpenOffice.org 3",
 		"C:/Program Files (x86)/OpenOffice.org 3",
 		"/Applications/OpenOffice.org.app/Contents",
 		"/opt/openoffice.org3",
 	};
-	
+
 	private static final String USERHOME = System.getProperty("user.home");
-	private static final String BIN = SystemUtil.isWindows() ? "program/soffice.exe" : SystemUtil.isMac() ? "MacOS/soffice": "program/soffice"; 
+	private static final String BIN = SystemUtil.isWindows() ? "program/soffice.exe" : SystemUtil.isMac() ? "MacOS/soffice": "program/soffice";
 	private static final String SYSUSERCONFIG = SystemUtil.isWindows()? System.getenv("APPDATA") : SystemUtil.isMac() ?  USERHOME + "/Library/Application Support" : USERHOME;
 	public static final String DEFAULT_UNO_URL = "socket,host=127.0.0.1,port=2002;urp";
 	public static final int DEFAULT_AUTOMATION_PORT = 12479;
-	
+
 	private static OpenOffice defaultInstance = null;
 
 	private File userInstallation = null;
 
 	private File defaultUserInstallation = null;
-	
+
 	private File home = null;
 
 	private File bin = null;
-	
+
 	private String binPath = null;
-	
+
 	private ArrayList<String> args = new ArrayList<String>();
 
 	private ArrayList<String> registryModifications = new ArrayList<String>();
-	
+
 	private int automationPort = 0;
 
 	private Process process = null;
-	
+
 	private String unoUrl = null;
-	
+
 	private Properties versionProps = null;
-	
+
 	private String id = UUID.randomUUID().toString().replace("-", "");
-	
+
 	private String processPattern = SystemUtil.isMac() ? ".*soffice .*" + id + ".*" : ".*soffice\\.bin.*" + id + ".*|.*soffice\\.exe.*" + id + ".*-env.*";
-	
+
 	public OpenOffice() {
 		this(null);
 	}
-	
+
 	/**
 	 * Construct Process with the home path of OpenOffice.
-	 * 
+	 *
 	 * @param appHome
 	 */
 	public OpenOffice(String appHome) {
@@ -107,16 +107,16 @@ public class OpenOffice {
 			try {
 				URL url = getClass().getClassLoader().getResource(BIN);
 				File file = new File(url.toURI());
-				if (file.exists()) 
+				if (file.exists())
 					appHome = file.getParentFile().getParentFile().getAbsolutePath();
 			} catch (Exception e) {
 				// ignore
 			}
 		}
-		
+
 		if (appHome == null) {
-			for (int i = 0; i < DEFAULT_HOME.length; i++) 
-				if (new File(DEFAULT_HOME[i]).exists()) 
+			for (int i = 0; i < DEFAULT_HOME.length; i++)
+				if (new File(DEFAULT_HOME[i]).exists())
 					appHome = DEFAULT_HOME[i];
 		}
 
@@ -137,7 +137,7 @@ public class OpenOffice {
 		Properties props = FileUtil.loadProperties(bootstrapFile);
 		String defaultUserInstallationPath = props.getProperty("UserInstallation").replace("$ORIGIN", binParent.getAbsolutePath()).replace("$SYSUSERCONFIG", SYSUSERCONFIG);
 		defaultUserInstallation = new File(defaultUserInstallationPath);
-		
+
 		File versionFile = new File(binParent, "versionrc");
 		if (!versionFile.exists())
 			versionFile = new File(binParent, "version.ini");
@@ -167,10 +167,10 @@ public class OpenOffice {
 
 	public static void restoreDefault() {
 		if (defaultInstance != null) {
-			
+
 		}
 	}
-	
+
 	public Properties getVersionProps() {
 		return versionProps;
 	}
@@ -178,7 +178,7 @@ public class OpenOffice {
 	/**
 	 * Set UserInstallation directory. When openoffice is launched, the argument
 	 * "-env:UserInstallation" will be enabled.
-	 * 
+	 *
 	 * @param dir
 	 *            user installation directory. If null is given, the default
 	 *            will be used.
@@ -189,7 +189,7 @@ public class OpenOffice {
 
 	/**
 	 * Get UserInstallation directory
-	 * 
+	 *
 	 * @return
 	 */
 	public File getUserInstallation() {
@@ -198,23 +198,23 @@ public class OpenOffice {
 
 	/**
 	 * Get default UserInstallation directory
-	 * 
+	 *
 	 * @return
 	 */
 	public File getDefaultUserInstallation() {
 		return defaultUserInstallation;
 	}
-	
+
 	/**
 	 * Clean the user installation
 	 */
 	public void cleanUserInstallation() {
 		FileUtil.deleteFile(getUserInstallation());
 	}
-	
+
 	/**
 	 * Get installation directory of OpenOffice.
-	 * 
+	 *
 	 * @return
 	 */
 	public File getHome() {
@@ -223,19 +223,19 @@ public class OpenOffice {
 
 	/**
 	 * Set other command line arguments
-	 * 
+	 *
 	 * @param args
 	 */
 	public void addArgs(String... arguments) {
 		for (String a : arguments)
 			args.add(a);
 	}
-	
+
 	public void addRegistryModifications(String... items) {
 		for (String i : items)
 			registryModifications.add(i);
 	}
-	
+
 	public int getAutomationPort() {
 		return automationPort;
 	}
@@ -276,30 +276,30 @@ public class OpenOffice {
 		SystemUtil.killProcess(".*soffice.*");
 		SystemUtil.sleep(1);
 	}
-	
+
 	public boolean isRunning() {
 		if (process == null)
 			return false;
-		
+
 		try {
 			process.exitValue();
 		} catch (Exception e1) {
 			return true;
 		}
-		
+
 		return false;
 	}
-																																																														
+
 	/**
 	 * Start OpenOffice
-	 * 
+	 *
 	 * @return return true when the process is created.
 	 */
 	@SuppressWarnings("all")
 	public boolean start() {
 		if (isRunning())
 			return false;
-		
+
 		ArrayList<String> cmds = new ArrayList<String>();
 		cmds.add(binPath);
 		if (automationPort > 0) {
@@ -309,7 +309,7 @@ public class OpenOffice {
 
 		if (unoUrl != null)
 			cmds.add("-accept=" + unoUrl);
-		
+
 		if (userInstallation != null) {
 			try {
 				String url = userInstallation.toURL().toString();
@@ -338,19 +338,19 @@ public class OpenOffice {
 			content += newContent + "</oor:items>";
 			FileUtil.writeStringToFile(registry.getAbsolutePath(), content);
 		}
-		
+
 		process = SystemUtil.backgroundExec(cmds.toArray(new String[]{}), null, null, null, null);
-		
+
 		String cmdLine="";
 		for (String s : cmds)
 			cmdLine += "\""+ s + "\" ";
-	
+
 		LOG.info(cmdLine);
 		if (process == null)
 			throw new RuntimeException("OpenOffice can't be started!");
 		return true;
 	}
-	
+
 	public HashMap<String, Object> getPerfData() {
 		HashMap<String, Object> proccessInfo = SystemUtil.findProcess(processPattern);
 		String pid = (String) proccessInfo.get("pid");

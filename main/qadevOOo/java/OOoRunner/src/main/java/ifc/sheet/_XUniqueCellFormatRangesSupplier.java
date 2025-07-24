@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -29,15 +29,15 @@ import com.sun.star.container.XIndexAccess;
 import com.sun.star.sheet.XUniqueCellFormatRangesSupplier;
 
 public class _XUniqueCellFormatRangesSupplier extends MultiMethodTest {
-    
+
     public XUniqueCellFormatRangesSupplier oObj;
-    
+
     /**
      * call the method getUniqueCellFormatRanges and returns OK result if
      * the gained XIndexAccess isn't null and the method checkIndexAccess
      * returns true.
-     */    
-        
+     */
+
     public void _getUniqueCellFormatRanges() {
         boolean res = true;
         XIndexAccess xIA = oObj.getUniqueCellFormatRanges();
@@ -47,14 +47,14 @@ public class _XUniqueCellFormatRangesSupplier extends MultiMethodTest {
             log.println("The gained IndexAccess is null");
             res = false;
         }
-        tRes.tested("getUniqueCellFormatRanges()",res);        
+        tRes.tested("getUniqueCellFormatRanges()",res);
     }
-    
+
     /**
      * calls the method getCount at the IndexAccess, returns true is it is >0
      * and getByIndex() doesn't throw an exception for Indexes between 0 and count
      */
-    
+
     protected boolean checkIndexAccess(XIndexAccess xIA) {
         boolean res = true;
         int count = xIA.getCount();
@@ -74,6 +74,6 @@ public class _XUniqueCellFormatRangesSupplier extends MultiMethodTest {
         }
         return res;
     }
-        
-    
+
+
 }

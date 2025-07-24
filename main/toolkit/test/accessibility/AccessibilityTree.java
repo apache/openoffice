@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 import com.sun.star.accessibility.*;
@@ -32,11 +32,11 @@ import javax.swing.tree.*;
 import javax.swing.event.*;
 
 
-      
+
 /** This is the tree component that is responsible for displaying the
     contents of the tree model on the screen.
-*/  
-public class AccessibilityTree 
+*/
+public class AccessibilityTree
     implements TreeExpansionListener, TreeWillExpandListener
 {
     /** Create a new accessibility tree.  Use the specified message display
@@ -47,16 +47,16 @@ public class AccessibilityTree
     {
         maTree = new JTree ();
 
-        AccessibilityTreeModel aModel = 
+        AccessibilityTreeModel aModel =
             new AccessibilityTreeModel (
                 new StringNode ("Please press Update button", null));
         maTree.setModel (aModel);
-        
+
         maCellRenderer = new AccessibleTreeCellRenderer();
         //        setCellRenderer (maCellRenderer);
 
         // allow editing of XAccessibleText interfaces
-        //        setEditable (true); 
+        //        setEditable (true);
         //        maTreeModel.addTreeModelListener( new TextUpdateListener() );
 
         maTree.addMouseListener (new MouseListener (this));
@@ -152,7 +152,7 @@ public class AccessibilityTree
 
         //        System.out.print ("e");
 
-        try 
+        try
         {
             // get 'our' object
             Object aObj = aPath.getLastPathComponent();
@@ -161,7 +161,7 @@ public class AccessibilityTree
             if( aExpander.expand( aObj ) )
             {
                 maTree.expandPath (aPath);
-                if( aFirst == null )  
+                if( aFirst == null )
                     aFirst = aPath;
             }
 
@@ -172,8 +172,8 @@ public class AccessibilityTree
                 int nLength = aNode.getChildCount();
                 for( int i = 0; i < nLength; i++ )
                 {
-                    TreePath aRet = expandTree( 
-                        aPath.pathByAddingChild( aNode.getChild( i ) ), 
+                    TreePath aRet = expandTree(
+                        aPath.pathByAddingChild( aNode.getChild( i ) ),
                         aExpander );
                     if( aFirst == null )
                         aFirst = aRet;
@@ -182,7 +182,7 @@ public class AccessibilityTree
         }
         catch (Exception e)
         {
-            System.out.println ("caught exception while expanding tree path " 
+            System.out.println ("caught exception while expanding tree path "
                 + aPath + ": " + e);
             e.printStackTrace ();
         }
@@ -232,7 +232,7 @@ public class AccessibilityTree
 
     class MouseListener extends MouseAdapter
     {
-        public MouseListener (AccessibilityTree aTree) 
+        public MouseListener (AccessibilityTree aTree)
         {
             maTree=aTree;
         }
@@ -258,7 +258,7 @@ public class AccessibilityTree
                     if( aObject instanceof AccTreeNode )
                     {
                         AccTreeNode aNode = (AccTreeNode)aObject;
-                        
+
                         Vector aActions = new Vector();
                         aMenu.add (new AccessibilityTree.ShapeExpandAction(maTree, aNode));
                         aMenu.add (new AccessibilityTree.SubtreeExpandAction(maTree, aNode));
@@ -266,7 +266,7 @@ public class AccessibilityTree
                         aNode.getActions(aActions);
                         for( int i = 0; i < aActions.size(); i++ )
                         {
-                            aMenu.add( new NodeAction( 
+                            aMenu.add( new NodeAction(
                                            aActions.elementAt(i).toString(),
                                            aNode, i ) );
                         }
@@ -279,16 +279,16 @@ public class AccessibilityTree
                         if (nCount > 0)
                         {
                             for (int i=0; i<nCount; i++)
-                                aMenu.add( new NodeAction( 
+                                aMenu.add( new NodeAction(
                                     aActionNames[i],
-                                    aNode, 
+                                    aNode,
                                     i));
                         }
                         else
                             aMenu = null;
                     }
                     if (aMenu != null)
-                        aMenu.show (maTree.getComponent(), 
+                        aMenu.show (maTree.getComponent(),
                             e.getX(), e.getY());
                 }
             }
@@ -322,13 +322,13 @@ public class AccessibilityTree
     {
         private AccessibilityTree maTree;
         private AccTreeNode maNode;
-        public ShapeExpandAction (AccessibilityTree aTree, AccTreeNode aNode) 
+        public ShapeExpandAction (AccessibilityTree aTree, AccTreeNode aNode)
         {
             super ("Expand Shapes");
             maTree = aTree;
             maNode = aNode;
         }
-        public void actionPerformed (ActionEvent e) 
+        public void actionPerformed (ActionEvent e)
         {
             maTree.expandShapes (maNode);
         }
@@ -339,13 +339,13 @@ public class AccessibilityTree
     {
         private AccessibilityTree maTree;
         private AccTreeNode maNode;
-        public SubtreeExpandAction (AccessibilityTree aTree, AccTreeNode aNode) 
+        public SubtreeExpandAction (AccessibilityTree aTree, AccTreeNode aNode)
         {
             super ("Expand Subtree");
             maTree = aTree;
             maNode = aNode;
         }
-        public void actionPerformed (ActionEvent e) 
+        public void actionPerformed (ActionEvent e)
         {
             maTree.expandAll (maNode);
         }
@@ -354,8 +354,8 @@ public class AccessibilityTree
     /** Predicate class to determine whether a node should be expanded
      * For use with expandTree method */
     abstract class Expander
-    { 
-        abstract public boolean expand (Object aObject);  
+    {
+        abstract public boolean expand (Object aObject);
     }
 
     /** expand all nodes */
@@ -386,13 +386,13 @@ public class AccessibilityTree
     protected AccessibleTreeCellRenderer
         maCellRenderer;
 
-    
+
     private JTree
         maTree;
     private Canvas
         maCanvas;
     private boolean
         mbFirstShapeSeen;
-    private int 
+    private int
         mnExpandLevel;
 }

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -63,7 +63,7 @@ import com.sun.star.pgp.*;
 
 
 public class TestPGP {
-	
+
 
 	static void doSomething(Object r) throws com.sun.star.uno.Exception, IOException, Exception {
 		XNamingService rName = (XNamingService)UnoRuntime.queryInterface(XNamingService.class, r);
@@ -71,7 +71,7 @@ public class TestPGP {
 		if(rName != null) {
 			System.err.println("got the remote naming service !");
 			Object rXsmgr = rName.getRegisteredObject("StarOffice.ServiceManager");
-			
+
 			XMultiServiceFactory rSmgr = (XMultiServiceFactory)UnoRuntime.queryInterface(XMultiServiceFactory.class, rXsmgr);
 			if(rSmgr != null) {
 				System.err.println("got the remote service manager !");
@@ -97,7 +97,7 @@ public class TestPGP {
 //  			}catch(Exception e ){
 //  				System.err.println( "exception caught in TestPGP");
 //  			}
-				
+
 		}
 	}
 
@@ -122,13 +122,13 @@ public class TestPGP {
 
   			XConnector  xConnector  = (XConnector)smgr.createInstance("com.sun.star.connection.Connector");
   			XConnection xConnection = xConnector.connect(argv[0]);
-			
+
 			String rootOid = "classic_uno";
   			IBridge iBridge = UnoRuntime.getBridgeByName("java", null, "remote", null, new Object[]{"iiop", xConnection, null});
 
 			Object rInitialObject = iBridge.mapInterfaceFrom(rootOid, XInterface.class);
 //  			Object rInitialObject = xBridge.getInstance("NamingService");
-			
+
 			if(rInitialObject != null) {
 				System.err.println("got the remote object");
 				doSomething(rInitialObject);

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 package org.apache.openoffice.comp.sdbc.dbtools.comphelper;
 
@@ -35,7 +35,7 @@ public class EventLogger {
     protected XComponentContext context;
     private String loggerName;
     private XLogger logger;
-    
+
     public static XLoggerPool getLoggerPool(XComponentContext context) {
         Object loggerPoolObject = context.getValueByName("/singletons/com.sun.star.logging.LoggerPool");
         XLoggerPool loggerPool = UnoRuntime.queryInterface(XLoggerPool.class, loggerPoolObject);
@@ -46,11 +46,11 @@ public class EventLogger {
         }
         return loggerPool;
     }
-    
+
     public EventLogger(XComponentContext context) {
         this(context, "");
     }
-    
+
     /**
      * Creates an <code>EventLogger</code> instance working with a css.logging.XLogger
      * instance given by name.
@@ -74,7 +74,7 @@ public class EventLogger {
         } catch (com.sun.star.uno.RuntimeException exception) {
         }
     }
-    
+
     /**
      * Returns the name of the logger
      */
@@ -108,12 +108,12 @@ public class EventLogger {
         if (logger == null) {
             return false;
         }
-        
+
         try {
             return logger.isLoggable(logLevel);
         } catch (com.sun.star.uno.RuntimeException exception) {
         }
-        
+
         return false;
     }
 
@@ -168,7 +168,7 @@ public class EventLogger {
             return impl_log(logLevel, null, null, message, arguments);
         return false;
     }
-    
+
     /**
      * Logs the given exception.
      * @param logLevel the log level
@@ -178,7 +178,7 @@ public class EventLogger {
     public boolean log(int logLevel, Throwable exception) {
         return log(logLevel, "", exception);
     }
-    
+
     /**
      * Logs the given message and exception.
      * @param logLevel the log level
@@ -196,7 +196,7 @@ public class EventLogger {
         }
         return true;
     }
-    
+
     /**
      * Logs a given message with its arguments, with the caller's class and method
      * taken from a (relatively costly!) stack trace.
@@ -226,7 +226,7 @@ public class EventLogger {
                             message.substring(position + placeholder.length());
                 }
             }
-            
+
             if (sourceClass != null && sourceMethod != null) {
                 logger.logp(logLevel, sourceClass, sourceMethod, message);
             } else {

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 package transex3.model;
@@ -26,11 +26,11 @@ import java.util.*;
 public class ResourceFile {
 	Vector 		sdfStrings		= new Vector();
 	HashMap		sdfHashMap		= new HashMap();
-	String filepathid			= null;		
+	String filepathid			= null;
 	String modulename			= null;
 	String filename				= null;
-	
-	
+
+
 	public String getModuleName(){
 		return modulename;
 	}
@@ -54,13 +54,13 @@ public class ResourceFile {
 		if( filename == null )
 			filename = aSdfstring.getFileName();
 	}
-		
-	
+
+
 	public void ParseString( String aSourceString ){
 		//sourceString 			= new SdfEntity();
 		SdfEntity aSdfEntity 	= new SdfEntity();
 		aSdfEntity.setProperties( aSourceString );
-		SdfString sdfstring		= null; 
+		SdfString sdfstring		= null;
 		if( sdfHashMap.containsKey( aSdfEntity.getFileId() ) ){
 			sdfstring = (SdfString) sdfHashMap.get( aSdfEntity.getFileId() );
 		}
@@ -70,8 +70,8 @@ public class ResourceFile {
 			addString( sdfstring );
 		}
 		sdfstring.addLanguageString( aSdfEntity );
-		
-		
+
+
 	}
 	/*public void ParseSdfFile( java.util.Vector aSdfList ){
 		ListIterator aLI = aSdfList.listIterator();
@@ -83,7 +83,7 @@ public class ResourceFile {
 			aSdfEntity = new SdfEntity();
 			aSdfEntity.setProperties( (String) aLI.next() );
 			SdfString aString;
-			
+
 			if( sdfHashMap.containsKey( aSdfEntity.getFileId() ) )
 				aString = (SdfString) sdfHashMap.get( aSdfEntity.getFileId() );
 			else
@@ -93,6 +93,6 @@ public class ResourceFile {
 			}
 			aString.addLanguageString( aSdfEntity );
 		}
-		
+
 	}*/
 }

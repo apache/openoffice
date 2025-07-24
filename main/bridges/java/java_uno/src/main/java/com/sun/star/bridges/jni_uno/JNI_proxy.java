@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -42,14 +42,14 @@ public final class JNI_proxy implements java.lang.reflect.InvocationHandler
         JNI_proxy.class.getClassLoader();
     protected static Class s_InvocationHandler [] =
         new Class [] { java.lang.reflect.InvocationHandler.class };
-    
+
     protected long m_bridge_handle;
     protected IEnvironment m_java_env;
     protected long m_receiver_handle;
     protected long m_td_handle;
     protected Type m_type;
     protected String m_oid;
-    protected Class m_class;    
+    protected Class m_class;
 
     //__________________________________________________________________________
     public static String get_stack_trace( Throwable throwable )
@@ -79,10 +79,10 @@ public final class JNI_proxy implements java.lang.reflect.InvocationHandler
         }
         return "\njava stack trace:\n" + trace;
     }
-    
+
     //__________________________________________________________________________
     private native void finalize( long bridge_handle );
-    
+
     //__________________________________________________________________________
     public void finalize()
     {
@@ -92,7 +92,7 @@ public final class JNI_proxy implements java.lang.reflect.InvocationHandler
                 }
             });
     }
-    
+
     //__________________________________________________________________________
     private JNI_proxy(
         long bridge_handle, IEnvironment java_env,
@@ -106,7 +106,7 @@ public final class JNI_proxy implements java.lang.reflect.InvocationHandler
         m_oid = oid;
         m_class = m_type.getZClass();
     }
-    
+
     //__________________________________________________________________________
     public static Object create(
         long bridge_handle, IEnvironment java_env,
@@ -119,7 +119,7 @@ public final class JNI_proxy implements java.lang.reflect.InvocationHandler
         Object proxy = proxy_ctor.newInstance( new Object [] { handler } );
         return java_env.registerInterface( proxy, new String [] { oid }, type );
     }
-    
+
     //__________________________________________________________________________
     public static java.lang.reflect.Constructor get_proxy_ctor( Class clazz )
         throws Throwable
@@ -130,12 +130,12 @@ public final class JNI_proxy implements java.lang.reflect.InvocationHandler
                            com.sun.star.lib.uno.Proxy.class } );
         return proxy_class.getConstructor( s_InvocationHandler );
     }
-    
+
     //__________________________________________________________________________
     private native Object dispatch_call(
         long bridge_handle, String decl_class, String method, Object args [] )
         throws Throwable;
-    
+
     // InvocationHandler impl
     //__________________________________________________________________________
     public Object invoke(
@@ -144,7 +144,7 @@ public final class JNI_proxy implements java.lang.reflect.InvocationHandler
     {
         Class decl_class = method.getDeclaringClass();
         String method_name = method.getName();
-        
+
         if (Object.class.equals( decl_class ))
         {
             if (method_name.equals( "hashCode" ))
@@ -201,7 +201,7 @@ public final class JNI_proxy implements java.lang.reflect.InvocationHandler
                 return m_oid;
             }
         }
-        
+
         throw new com.sun.star.uno.RuntimeException(
             "[jni_uno bridge error] unexpected call on proxy " +
             proxy.toString() + ": " + method.toString() );

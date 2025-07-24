@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -63,14 +63,14 @@ public class UnoTreeControl extends TestCase {
     private static XMultiServiceFactory mxMSF;
     private static PrintWriter log;
     private static boolean debug = false;
-    
+
     protected void initialize(TestParameters Param, PrintWriter log) {
         this.log = log;
         debug = Param.getBool(PropertyName.DEBUG_IS_ACTIVE);
 
         SOfficeFactory SOF = SOfficeFactory.getFactory(
             (XMultiServiceFactory) Param.getMSF());
-        
+
         try {
             log.println("creating a textdocument");
             xTextDoc = SOF.createTextDoc(null);
@@ -80,24 +80,24 @@ public class UnoTreeControl extends TestCase {
             throw new StatusException("Couldn't create document", e);
         }
     }
-    
+
     protected void cleanup(TestParameters tParam, PrintWriter log) {
 //        log.println("    disposing xTextDoc ");
-//        
+//
 //        util.DesktopTools.closeDoc(xTextDoc);
     }
-    
+
     protected TestEnvironment createTestEnvironment(TestParameters Param,
         PrintWriter log) {
         String sTreeControlName = "UnoTreeControl-Test";
         mxMSF = (XMultiServiceFactory) Param.getMSF();
         XInterface oObj = null;
         XMutableTreeNode xNode = null;
-        
+
         try {
-            
+
             mXTreeDataModel = (XMutableTreeDataModel )
-                UnoRuntime.queryInterface(XMutableTreeDataModel.class, 
+                UnoRuntime.queryInterface(XMutableTreeDataModel.class,
                 mxMSF.createInstance("com.sun.star.awt.tree.MutableTreeDataModel"));
 
             xNode = mXTreeDataModel.createNode("UnoTreeControl", false);
@@ -107,27 +107,27 @@ public class UnoTreeControl extends TestCase {
             xNode.setCollapsedGraphicURL( "private:graphicrepository/sd/res/triangle_right.png");
 
             fillNode(xNode);
-            
+
             mXTreeDataModel.setRoot(xNode);
-            
+
             XControlModel xDialogModel = (XControlModel)
                 UnoRuntime.queryInterface(XControlModel.class,
                 mxMSF.createInstance("com.sun.star.awt.UnoControlDialogModel"));
-            
+
             XPropertySet xDialogPropertySet = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, xDialogModel);
             xDialogPropertySet.setPropertyValue( "PositionX",	new Integer(50) );
             xDialogPropertySet.setPropertyValue( "PositionY",	new Integer(50) );
             xDialogPropertySet.setPropertyValue( "Width",		new Integer(256) );
             xDialogPropertySet.setPropertyValue( "Height",		new Integer(256) );
             xDialogPropertySet.setPropertyValue( "Title",		"Tree Control Test");
-            
+
             XMultiServiceFactory xDialogMSF = (XMultiServiceFactory)
                 UnoRuntime.queryInterface(XMultiServiceFactory.class, xDialogModel);
-            
+
             XControlModel  xTreeControlModel = (XControlModel)
                 UnoRuntime.queryInterface(XControlModel.class,
                 xDialogMSF.createInstance("com.sun.star.awt.tree.TreeControlModel"));
-            
+
             XPropertySet XTreeControlModelSet = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, xTreeControlModel);
 
             XTreeControlModelSet.setPropertyValue( "SelectionType",com.sun.star.view.SelectionType.NONE);
@@ -140,59 +140,59 @@ public class UnoTreeControl extends TestCase {
             XTreeControlModelSet.setPropertyValue( "ShowsHandles",	new Boolean (false));
             XTreeControlModelSet.setPropertyValue( "RootDisplayed",	new Boolean (true));
             XTreeControlModelSet.setPropertyValue( "Editable",		new Boolean (true ));
-            
+
             XNameContainer xDialogModelContainer = (XNameContainer)
             UnoRuntime.queryInterface(XNameContainer.class, xDialogModel);
-            
+
             xDialogModelContainer.insertByName( sTreeControlName, xTreeControlModel);
-            
+
             XControl xDialogControl = (XControl)
             UnoRuntime.queryInterface(XControl.class,
                 mxMSF.createInstance("com.sun.star.awt.UnoControlDialog"));
-            
+
             xDialogControl.setModel( xDialogModel );
-	
-            XToolkit xToolkit = (XToolkit) UnoRuntime.queryInterface(XToolkit.class, 
+
+            XToolkit xToolkit = (XToolkit) UnoRuntime.queryInterface(XToolkit.class,
                         mxMSF.createInstance("com.sun.star.awt.Toolkit" ));
-            
+
         	xDialogControl.createPeer( xToolkit, null );
-	
+
             // get the peers of the sub controls from the dialog peer container
             XControlContainer xDialogContainer = (XControlContainer)
             UnoRuntime.queryInterface(XControlContainer.class ,xDialogControl);
-            
+
             XTreeControl xTreeControl = (XTreeControl)
             UnoRuntime.queryInterface(XTreeControl.class, xDialogContainer.getControl( sTreeControlName ));
-            
+
             xTreeControl.expandNode(xNode);
             oObj = xTreeControl;
 
         	XDialog xDialog = (XDialog) UnoRuntime.queryInterface(XDialog.class, xDialogControl);
-            
+
             execurteDialog aDialog = new execurteDialog(xDialog);
-            
+
             aDialog.start();
-            
-//            xDialog.execute();           
-            
+
+//            xDialog.execute();
+
         } catch (com.sun.star.uno.Exception ex) {
             ex.printStackTrace();
         }
         TestEnvironment tEnv = new TestEnvironment(oObj);
-        
+
         tEnv.addObjRelation("XTreeControl_Node", xNode);
 
         //com.sun.star.view.XSelectionSupplier
         try {
-            
+
             System.out.println("count of children: " + xNode.getChildCount());
             tEnv.addObjRelation("Selections", new Object[]{xNode.getChildAt(0), xNode});
         } catch (com.sun.star.lang.IndexOutOfBoundsException ex) {
             log.println("ERROR: could not add object relation 'Selections' because 'xNode.getChildAt(1) failed: " +
                         ex.toString());
         }
-        
-        tEnv.addObjRelation("Comparer", 
+
+        tEnv.addObjRelation("Comparer",
                             new Comparator() {
             public int compare(Object o1, Object o2) {
                 XMutableTreeNode xNode1 = (XMutableTreeNode) UnoRuntime.queryInterface(
@@ -203,10 +203,10 @@ public class UnoTreeControl extends TestCase {
                 } catch (com.sun.star.lang.IllegalArgumentException ex) {
                     ex.printStackTrace();
                 }
-                
+
                 XMutableTreeNode xNode2 = (XMutableTreeNode) UnoRuntime.queryInterface(
                                         XMutableTreeNode.class, xNode2a);
-                
+
                 if (((String) xNode1.getDataValue()).equals((String)xNode2.getDataValue())) {
                     return 0;
                 }
@@ -215,12 +215,12 @@ public class UnoTreeControl extends TestCase {
             }
         });
         System.out.println("ImplementationName: " + utils.getImplName(oObj));
-        
+
         return tEnv;
     } // finish method getTestEnvironment
-    
+
     private void fillNode( XMutableTreeNode xNode ){
-        
+
         if( xNode.getChildCount() == 0 )
         {
             String sParentPath = (String) xNode.getDataValue();
@@ -234,14 +234,14 @@ public class UnoTreeControl extends TestCase {
             }
             XSimpleFileAccess sA = (XSimpleFileAccess)
                             UnoRuntime.queryInterface(XSimpleFileAccess.class,fileacc);
-                            
+
 
             dirlist(officeUserPath, xNode);
         }
     }
-    
+
     private void dirlist(String dir, XMutableTreeNode xNode){
-        
+
         Object fileacc = null;
         try {
             fileacc = mxMSF.createInstance("com.sun.star.comp.ucb.SimpleFileAccess");
@@ -275,21 +275,21 @@ public class UnoTreeControl extends TestCase {
         } catch (com.sun.star.uno.Exception ex) {
             ex.printStackTrace();
         }
-        
+
         try {
             xNode.appendChild( xChildNode );
         } catch (com.sun.star.lang.IllegalArgumentException ex) {
             ex.printStackTrace();
         }
     }
-    
+
     private class execurteDialog extends Thread{
         private XDialog mXDialog;
-        
+
         public execurteDialog(XDialog xDialog){
             mXDialog = xDialog;
         }
-        
+
         public void run() {
             mXDialog.endExecute();
         }

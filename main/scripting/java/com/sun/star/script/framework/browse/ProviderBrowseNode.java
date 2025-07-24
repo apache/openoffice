@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -61,7 +61,7 @@ public class ProviderBrowseNode extends PropertySet
     public boolean deletable = true;
     public boolean creatable = true;
     public boolean editable = false;
-    
+
     public ProviderBrowseNode( ScriptProvider provider, ParcelContainer container, XComponentContext xCtx ) {
         LogUtils.DEBUG("*** ProviderBrowseNode ctor");
         this.container = container;
@@ -88,7 +88,7 @@ public class ProviderBrowseNode extends PropertySet
             {
                 deletable = false;
                 creatable = false;
-            }               
+            }
         }
         // TODO propage errors
         catch( com.sun.star.uno.Exception e )
@@ -105,8 +105,8 @@ public class ProviderBrowseNode extends PropertySet
 
     public XBrowseNode[] getChildNodes() {
         LogUtils.DEBUG("***** ProviderBrowseNode.getChildNodes()");
-        if ( hasChildNodes() ) 
-        { 
+        if ( hasChildNodes() )
+        {
             // needs initialisation?
             LogUtils.DEBUG("** ProviderBrowseNode.getChildNodes(), container is " + container );
             String[] parcels = container.getElementNames();
@@ -116,9 +116,9 @@ public class ProviderBrowseNode extends PropertySet
                 try
                 {
                     XBrowseNode node  = new ParcelBrowseNode( provider, container, parcels[ index ] );
-                    browsenodes.add( node ); 
+                    browsenodes.add( node );
                 }
-                catch ( Exception e ) 
+                catch ( Exception e )
                 {
                     LogUtils.DEBUG("*** Failed to create parcel node for " + parcels[ index ] );
                     LogUtils.DEBUG( e.toString() );
@@ -135,7 +135,7 @@ public class ProviderBrowseNode extends PropertySet
         }
         else
         {
-            LogUtils.DEBUG("*** No container available"); 
+            LogUtils.DEBUG("*** No container available");
             return new XBrowseNode[0];
         }
         return ( XBrowseNode[] )browsenodes.toArray( new XBrowseNode[0] );
@@ -144,7 +144,7 @@ public class ProviderBrowseNode extends PropertySet
     public boolean hasChildNodes() {
         boolean result = true;
 
-        if ( container == null || 
+        if ( container == null ||
              ( !container.hasElements() &&
                container.getChildContainers().length == 0 ) )
         {
@@ -197,14 +197,14 @@ public class ProviderBrowseNode extends PropertySet
                 {
                     String prompt = "Enter name for new Parcel";
                     String title = "Create Parcel";
-                                                                                
+
                     // try to get a DialogFactory instance, if it fails
                     // just use a Swing JOptionPane to prompt for the name
                     try
                     {
                         DialogFactory dialogFactory =
                             DialogFactory.getDialogFactory();
-                                                                                
+
                         name = dialogFactory.showInputDialog(title, prompt);
                     }
                     catch (Exception e)
@@ -223,7 +223,7 @@ public class ProviderBrowseNode extends PropertySet
                 }
                 else
                 {
-                    
+
                     Object newParcel  = container.createParcel( name );
                     LogUtils.DEBUG("Parcel created " + name + " " + newParcel );
                     if ( newParcel == null )
@@ -237,11 +237,11 @@ public class ProviderBrowseNode extends PropertySet
                         if ( browsenodes == null )
                         {
                             browsenodes = new ArrayList( 5 );
-                        } 
-                        
+                        }
+
                         browsenodes.add(parcel);
-                       
-                                                                                
+
+
                         result = new Any(new Type(XBrowseNode.class), parcel);
                     }
                 }

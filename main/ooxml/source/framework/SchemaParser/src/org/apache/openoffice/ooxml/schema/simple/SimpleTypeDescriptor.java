@@ -33,42 +33,42 @@ public class SimpleTypeDescriptor
         maSubTypes = null;
     }
 
-    
-    
-    
+
+
+
     public QualifiedName GetName()
     {
         return maName;
     }
-   
-    
-    
-    
+
+
+
+
     public void SetSubTypes (final ISimpleTypeNode[] aSubTypes)
     {
-        maSubTypes = aSubTypes;        
+        maSubTypes = aSubTypes;
     }
 
-    
-    
-    
+
+
+
     public ISimpleTypeNode[] GetSubType ()
     {
         return maSubTypes;
     }
-    
-    
-    
-    
+
+
+
+
     @Override
     public String toString ()
     {
         return "simple type "+maName;
     }
-    
-    
-    
-    
+
+
+
+
     public void Print (final Log aLog)
     {
         aLog.printf("%s\n", toString());
@@ -78,9 +78,9 @@ public class SimpleTypeDescriptor
         aLog.EndBlock();
     }
 
-    
-    
-    
+
+
+
     private final QualifiedName maName;
     private ISimpleTypeNode[] maSubTypes;
 }

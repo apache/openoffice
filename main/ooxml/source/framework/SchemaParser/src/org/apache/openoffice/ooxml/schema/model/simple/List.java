@@ -41,10 +41,10 @@ public class List
         super(aParent, null, aLocation);
         maItemType = aItemType;
     }
-    
-    
-    
-    
+
+
+
+
     @Override
     public NodeType GetNodeType ()
     {
@@ -59,26 +59,26 @@ public class List
     {
         aVisitor.Visit(this);
     }
-    
-    
-    
-    
+
+
+
+
     public QualifiedName GetItemType ()
     {
         return maItemType;
     }
-    
-    
-    
-    
+
+
+
+
     @Override
     public String toString ()
     {
         return "list of "+maItemType.GetDisplayName()+" items";
     }
-    
-    
-    
-    
+
+
+
+
     private final QualifiedName maItemType;
 }

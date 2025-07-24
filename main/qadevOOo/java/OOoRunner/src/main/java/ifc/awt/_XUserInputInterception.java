@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -63,9 +63,9 @@ import util.AccessibilityTools;
 */
 public class _XUserInputInterception extends MultiMethodTest {
     public XUserInputInterception oObj = null;
-    
+
     private XModel m_XModel = null;
-    
+
     /** the listener 1 for the mouse click test */
     private MyMouseClickHandler1 m_MouseListener1 = null;
     /** the listener 2 for the mouse click test */
@@ -80,23 +80,23 @@ public class _XUserInputInterception extends MultiMethodTest {
     private boolean m_mousePressed1 = false;
     /** indicates if the mouseReleased event was called*/
     private boolean m_mouseReleased1 = false;
-    
+
     /** indicates if the mousePressed event was called*/
     private boolean m_mousePressed2 = false;
     /** indicates if the mouseReleased event was called*/
     private boolean m_mouseReleased2 = false;
-    
+
     /** indicates if the mousePressed event was called*/
     private boolean m_keyPressed1 = false;
     /** indicates if the mouseReleased event was called*/
     private boolean m_keyReleased1 = false;
-    
+
     /** indicates if the mousePressed event was called*/
     private boolean m_keyPressed2 = false;
     /** indicates if the mouseReleased event was called*/
     private boolean m_keyReleased2 = false;
-    
-    /** get the object rlation XUserInputInterception.XModel from the 
+
+    /** get the object rlation XUserInputInterception.XModel from the
      * test environment
      */
     protected void before() {
@@ -109,25 +109,25 @@ public class _XUserInputInterception extends MultiMethodTest {
 
     /**
     * This test adds two different key listener to the object. <p>
-    * 
+    *
     * Has <b> OK </b> if no exception is thrown.
     */
     public void _addKeyHandler() {
-        
+
         log.println("creating key listener 1");
         m_KeyListener1 = new MyKeyHandler1();
-        
+
         log.println("creating key listener 2");
         m_KeyListener2 = new MyKeyHandler2();
-        
-        
+
+
         log.println("adding key listener 1");
         oObj.addKeyHandler(m_KeyListener1);
-        
+
 
         log.println("adding key listener 2");
         oObj.addKeyHandler(m_KeyListener2);
-        
+
         tRes.tested("addKeyHandler()", true);
     }
 
@@ -145,21 +145,21 @@ public class _XUserInputInterception extends MultiMethodTest {
         requiredMethod("addKeyHandler()");
 
         log.println("remove key listener 2");
-        
+
         oObj.removeKeyHandler(m_KeyListener2);
-        
+
         log.println("starting thread to check the key listener...");
         EventTrigger et = new EventTrigger(m_XModel, EventTriggerType.KEY_TEXT_INTO_DOC);
 
         et.run();
-        
+
         util.utils.shortWait(tParam.getInt(util.PropertyName.SHORT_WAIT) * 2);
         log.println("key listener thread should be finished.");
-        
-        
+
+
         boolean bOK = m_keyPressed1 & m_keyReleased1 &
                       ! m_keyPressed2 & ! m_keyReleased2;
-        
+
         if (! bOK){
             log.println("The key listener has not the expectd status:");
             log.println("listener\texpected\tgot");
@@ -168,16 +168,16 @@ public class _XUserInputInterception extends MultiMethodTest {
             log.println("keyPressed2\tfalse\t"+m_keyPressed2);
             log.println("keyReleased2\tfalse\t"+m_keyReleased2);
         }
-        
+
         log.println("remove Key listener 1");
         oObj.removeKeyHandler(m_KeyListener1);
-        
+
         tRes.tested("removeKeyHandler()", bOK);
     }
 
     /**
      * This test adds two different mouse klick listener to the object. <p>
-     * 
+     *
      * Has <b> OK </b> if no exception is thrown.
      */
     public void _addMouseClickHandler() {
@@ -185,12 +185,12 @@ public class _XUserInputInterception extends MultiMethodTest {
         m_MouseListener1 = new MyMouseClickHandler1();
         log.println("creating mouse listener 2");
         m_MouseListener2 = new MyMouseClickHandler2();
-        
+
         log.println("adding mouse listener 1");
         oObj.addMouseClickHandler(m_MouseListener1);
         log.println("adding mouse listener 2");
         oObj.addMouseClickHandler(m_MouseListener2);
-        
+
         tRes.tested("addMouseClickHandler()", true);
     }
 
@@ -206,22 +206,22 @@ public class _XUserInputInterception extends MultiMethodTest {
      */
     public void _removeMouseClickHandler() {
         requiredMethod("addMouseClickHandler");
-        
+
         log.println("remove mouse listener 2");
-        
+
         oObj.removeMouseClickHandler(m_MouseListener2);
-        
+
         log.println("starting thread to check the mouse listener...");
         EventTrigger et = new EventTrigger(m_XModel, EventTriggerType.MOUSE_KLICK_INTO_DOC);
 
         et.run();
-        
+
         util.utils.shortWait(tParam.getInt(util.PropertyName.SHORT_WAIT) * 2);
         log.println("mouse listener thread should be finished.");
-        
+
         boolean bOK = m_mousePressed1 & m_mouseReleased1 &
                       ! m_mousePressed2 & ! m_mouseReleased2;
-        
+
         if (! bOK){
             log.println("The mouse listener has not the expectd status:");
             log.println("listener\t\texpected\tgot");
@@ -230,21 +230,21 @@ public class _XUserInputInterception extends MultiMethodTest {
             log.println("mousePressed2\tfalse\t\t"+m_mousePressed2);
             log.println("mouseReleased2\tfalse\t\t"+m_mouseReleased2);
         }
-        
+
         log.println("remove mouse listener 1");
         oObj.removeMouseClickHandler(m_MouseListener1);
-        
+
         tRes.tested("removeMouseClickHandler()", bOK);
     }
 
-    
+
     /**
     * Forces environment recreation.
     */
     protected void after() {
         disposeEnvironment();
-    }    
-    
+    }
+
     /**
      * Listener which added and its method must be called
      * on <code>keyPressed</code> and <code>keyReleased</code> call.
@@ -318,7 +318,7 @@ public class _XUserInputInterception extends MultiMethodTest {
                         "This should not be happen because listener is removed!");
         }
     }
-    
+
     /**
      * Listener which added and its method must be called
      * on <code>mousePressed</code> and <code>mouseReleased</code> call.
@@ -354,7 +354,7 @@ public class _XUserInputInterception extends MultiMethodTest {
             log.println("XMouseClickHandler 1: disposing-Event");
         }
     };
-    
+
     /**
      * Listener which added and removed. Its method must NOT be called
      * on <code>mousePressed</code> and <code>mouseReleased</code> call.
@@ -393,14 +393,14 @@ public class _XUserInputInterception extends MultiMethodTest {
                     "   This should not be happen because listener is removed!");
         }
     };
-    
+
     /**
      * To check the events this class is a thread which click a mouse button and
      * press a key with the <CODE>Robot</CODE> class
      * @see java.awt.Robot
      */
     private class EventTrigger extends Thread{
-        
+
         /**
          * represents a <CODE>AccessibilityTools</CODE>
          */
@@ -414,7 +414,7 @@ public class _XUserInputInterception extends MultiMethodTest {
          * represents a <CODE>XModel</CODE> of a document
          */
         private XModel xModel = null;
-        
+
         /**
          * Creates an instacne of this class. The parameter <CODE>eType</CODE> represents
          * the kind of event which will be triggert at <CODE>run()</CODE>
@@ -426,17 +426,17 @@ public class _XUserInputInterception extends MultiMethodTest {
             this.xModel = model;
             this.eventType = eType;
         }
-        
+
         /**
          * Triggers the event which is represented by <CODE>eventType</CODE>
          * The scenarios are:
          * <ul>
          *    <li>EventTest.EventTriggerType.MOUSE_KLICK_INTO_DOC
-         *        which calls 
+         *        which calls
          *        <li><CODE>clickIntoDoc</CODE></LI>
          *        </LI>
          *    <li>EventTest.EventTriggerType.KEY_TEXT_INTO_DOC
-         *        which calls 
+         *        which calls
          *            <li><CODE>clickIntodoc</CODE></LI>
          *            <li><CODE>keyIntoDoc</CODE></LI>
          *    </LI>
@@ -445,7 +445,7 @@ public class _XUserInputInterception extends MultiMethodTest {
         public void run(){
 
             switch (this.eventType){
-                
+
                 case EventTriggerType.MOUSE_KLICK_INTO_DOC:
                     clickIntoDoc();
                     break;
@@ -453,7 +453,7 @@ public class _XUserInputInterception extends MultiMethodTest {
                     clickIntoDoc();
                     keyIntoDoc();
                     break;
-                    
+
             }
         }
         /**
@@ -467,14 +467,14 @@ public class _XUserInputInterception extends MultiMethodTest {
             try{
 
                 util.DesktopTools.bringWindowToFront(xModel);
-                
+
                 XWindow xWindow = at.getCurrentWindow(
-                                          (XMultiServiceFactory) tParam.getMSF(), 
+                                          (XMultiServiceFactory) tParam.getMSF(),
                                           xModel);
-                
+
                 XAccessible xRoot = at.getAccessibleObject(xWindow);
-                
-                
+
+
 
                 XAccessibleContext xPanel = at.getAccessibleObjectForRole(xRoot, AccessibleRole.PANEL);
                 XAccessibleComponent xPanelCont = (XAccessibleComponent) UnoRuntime.queryInterface(XAccessibleComponent.class, xPanel);
@@ -500,7 +500,7 @@ public class _XUserInputInterception extends MultiMethodTest {
                 log.println("could not click into the scroll bar: " + e.toString());
             }
         }
-        
+
         /**
          * This method press the "A" key. Therefore it uses the <CODE>Robot</CODE>
          * class.
@@ -515,20 +515,20 @@ public class _XUserInputInterception extends MultiMethodTest {
             } catch (java.awt.AWTException e) {
                 log.println("couldn't press key");
             }
-            
+
         }
     }
-    
-    /** This interface represents all possible actions which could be used 
+
+    /** This interface represents all possible actions which could be used
      * in the <CODE>EventTrigger</CODE> class.
      * @see EventTest.EventTrigger
-    */ 
+    */
     private interface EventTriggerType{
-        
+
         /** klick the mouse into the scroll bar*/
         final public static int MOUSE_KLICK_INTO_DOC = 1;
-        
+
         /** write some text into a spread sheet*/
         final public static int KEY_TEXT_INTO_DOC = 2;
-    }   
+    }
 }

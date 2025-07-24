@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -70,7 +70,7 @@ import util.SOfficeFactory;
 public class AccessibleToolBox extends TestCase {
     private static XDesktop the_Desk;
     private static XTextDocument xTextDoc;
-    
+
     /**
      * Creates the Desktop service (<code>com.sun.star.frame.Desktop</code>).
      */
@@ -79,19 +79,19 @@ public class AccessibleToolBox extends TestCase {
                 DesktopTools.createDesktop(
                 (XMultiServiceFactory) Param.getMSF()));
     }
-    
+
     /**
      * Disposes the document, if exists, created in
      * <code>createTestEnvironment</code> method.
      */
     protected void cleanup(TestParameters Param, PrintWriter log) {
         log.println("disposing xTextDoc");
-        
+
         if (xTextDoc != null) {
             util.DesktopTools.closeDoc(xTextDoc);
         }
     }
-    
+
     /**
      * Creates a text document.
      * Then obtains an accessible object with
@@ -115,16 +115,16 @@ public class AccessibleToolBox extends TestCase {
     protected TestEnvironment createTestEnvironment(TestParameters tParam,
             PrintWriter log) {
         log.println("creating a test environment");
-        
+
         if (xTextDoc != null) {
             util.DesktopTools.closeDoc(xTextDoc);
         }
-        
+
         XMultiServiceFactory msf = (XMultiServiceFactory) tParam.getMSF();
-        
+
         // get a soffice factory object
         SOfficeFactory SOF = SOfficeFactory.getFactory(msf);
-        
+
         try {
             log.println("creating a text document");
             xTextDoc = SOF.createTextDoc(null);
@@ -133,40 +133,40 @@ public class AccessibleToolBox extends TestCase {
             e.printStackTrace(log);
             throw new StatusException("Couldn't create document", e);
         }
-        
+
         XInterface oObj = null;
-        
+
         XWindow xWindow = UnoRuntime.queryInterface(XModel.class, xTextDoc).
             getCurrentController().getFrame().getContainerWindow();
-        
+
         AccessibilityTools at = new AccessibilityTools();
 
         XAccessible xRoot = at.getAccessibleObject(xWindow);
-        
+
         at.printAccessibleTree(log, xRoot, tParam.getBool(util.PropertyName.DEBUG_IS_ACTIVE));
-        
+
         oObj = at.getAccessibleObjectForRole(xRoot, AccessibleRole.TOOL_BAR);
-        
+
         log.println("ImplementationName: " + util.utils.getImplName(oObj));
-        
+
         TestEnvironment tEnv = new TestEnvironment(oObj);
-        
+
         tEnv.addObjRelation("LimitedBounds", "yes");
-        
+
         XAccessible acc = at.getAccessibleObject(oObj);
         XAccessible child = null;
-        
+
         try {
             child = acc.getAccessibleContext().getAccessibleChild(0);
         } catch (com.sun.star.lang.IndexOutOfBoundsException e) {
         }
-        
+
         util.dbg.printInterfaces(child);
-        
+
         final XAccessibleAction action = (XAccessibleAction) UnoRuntime.queryInterface(
                 XAccessibleAction.class,
                 child);
-        
+
         tEnv.addObjRelation("EventProducer",
                 new ifc.accessibility._XAccessibleEventBroadcaster.EventProducer() {
             public void fireEvent() {
@@ -177,7 +177,7 @@ public class AccessibleToolBox extends TestCase {
                 }
             }
         });
-        
+
         return tEnv;
     }
 }

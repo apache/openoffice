@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -70,7 +70,7 @@ public class OfficeDocumentSupport implements OfficeDocumentCookie, OpenCookie, 
 
     public void mount() {
         File file = FileUtil.toFile(dataObj.getPrimaryFile());
-        
+
         try {
             ZipMounter.getZipMounter().mountZipFile(file);
             isMounted = true;
@@ -82,14 +82,14 @@ public class OfficeDocumentSupport implements OfficeDocumentCookie, OpenCookie, 
             ErrorManager.getDefault().notify(pve);
         }
     }
-    
+
     public void open () {
         File file = FileUtil.toFile(dataObj.getPrimaryFile());
-        
+
         OfficeSettings settings = OfficeSettings.getDefault();
         File soffice = new File(settings.getOfficeDirectory().getPath(
             File.separator + "soffice"));
-        
+
         try {
             Process p = Runtime.getRuntime ().exec (new String[] {
                 soffice.getAbsolutePath(), file.getAbsolutePath ()
@@ -98,39 +98,39 @@ public class OfficeDocumentSupport implements OfficeDocumentCookie, OpenCookie, 
             ErrorManager.getDefault().notify(ioe);
         }
     }
-    
+
     public Enumeration getParcels() {
         return document.getParcels();
     }
-    
+
     public void removeParcel(String name) {
         document.removeParcel(name);
         dataObj.getPrimaryFile().refresh(true);
     }
-    
+
     public void addChangeListener(ChangeListener cl) {
         if (listeners == null)
             listeners = new HashSet();
-        
+
         listeners.add(cl);
     }
-    
+
     public void removeChangeListener(ChangeListener cl) {
         if (listeners == null)
             return;
-        
+
         listeners.remove(cl);
     }
-    
+
     public void fileChanged(FileEvent fe) {
         if (listeners != null) {
             Iterator iter = listeners.iterator();
-         
+
             while (iter.hasNext())
                 ((ChangeListener)iter.next()).stateChanged(new ChangeEvent(this));
         }
     }
-    
+
     public void fileAttributeChanged(FileAttributeEvent fe) {}
     public void fileDataCreated(FileEvent fe) {}
     public void fileDeleted(FileEvent fe) {}

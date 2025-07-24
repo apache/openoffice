@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -32,7 +32,7 @@ public class XPossibleHyphens_impl implements
     Locale              aLang;
 
     public XPossibleHyphens_impl(
-            String      aWord, 
+            String      aWord,
             Locale      aLang,
             String      aHyphWord,
             short[]     aOrigHyphenPos)
@@ -41,8 +41,8 @@ public class XPossibleHyphens_impl implements
         this.aLang = aLang;
         this.aHyphWord = aHyphWord;
         this.aOrigHyphenPos = aOrigHyphenPos;
-    
-        //!! none of these cases should ever occur! 
+
+        //!! none of these cases should ever occur!
         //!! values provided only for safety
         if (this.aWord == null)
             this.aWord = new String();
@@ -56,7 +56,7 @@ public class XPossibleHyphens_impl implements
         if (this.aOrigHyphenPos == null)
             this.aOrigHyphenPos = new short[]{};
     }
-    
+
     // XPossibleHyphens
     public String getWord() throws com.sun.star.uno.RuntimeException
     {
@@ -67,9 +67,9 @@ public class XPossibleHyphens_impl implements
     {
         return aLang;
     }
-    public String getPossibleHyphens() throws com.sun.star.uno.RuntimeException 
+    public String getPossibleHyphens() throws com.sun.star.uno.RuntimeException
     {
-        return aHyphWord;            
+        return aHyphWord;
     }
     public short[] getHyphenationPositions() throws com.sun.star.uno.RuntimeException
     {

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -41,7 +41,7 @@ import lib.MultiMethodTest;
 public class _XMutableTreeDataModel extends MultiMethodTest {
 
     public XMutableTreeDataModel oObj = null;
-    
+
     private XMutableTreeNode mNewNode = null;
 
     /**
@@ -66,26 +66,26 @@ public class _XMutableTreeDataModel extends MultiMethodTest {
     */
     public void _setRoot() {
         requiredMethod("createNode()") ;
-        
+
         boolean bOK = true;
         try {
-            
+
             oObj.setRoot(mNewNode);
         } catch (com.sun.star.lang.IllegalArgumentException ex) {
             bOK = false;
             log.println("ERROR: while trying to set a new root an IllegalArgumentException was thrown:\n" + ex.toString());
         }
-        
+
         try {
-            
+
             oObj.setRoot(null);
             bOK = false;
             log.println("ERROR: while trying to set a null object as root expected IllegalArgumentException was not thrown.");
         } catch (com.sun.star.lang.IllegalArgumentException ex) {
             log.println("expected IllegalArgumentException was thrown => ok");
-               
+
         }
-        
+
         tRes.tested("setRoot()", bOK);
 
     }

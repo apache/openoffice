@@ -32,33 +32,33 @@ public class Log
     public static Log Std = new Log(System.out);
     public static Log Err = new Log(System.err);
     public static Log Dbg = Std;
-    
-    
+
+
     public Log (final OutputStream aOut)
     {
         maOut = aOut;
         msIndentation = "";
     }
-    
-    
-    
-    
+
+
+
+
     public Log (final String sFilename)
     {
         this(CreateFileOutputStream(sFilename));
     }
-    
-    
-    
-    
+
+
+
+
     public Log (final File aFile)
     {
         this(CreateFileOutputStream(aFile));
     }
 
-    
-    
-    
+
+
+
     private static OutputStream CreateFileOutputStream (final File aFile)
     {
         try
@@ -73,7 +73,7 @@ public class Log
     }
 
 
-    
+
 
     public void printf (final String sFormat, final Object ... aArgumentList)
     {
@@ -81,32 +81,32 @@ public class Log
         {
             maOut.write(msIndentation.getBytes());
             maOut.write(String.format(sFormat, aArgumentList).getBytes());
-        } 
+        }
         catch (IOException e)
         {
             e.printStackTrace();
         }
     }
-    
-    
-    
-    
+
+
+
+
     public void IncreaseIndentation ()
     {
         msIndentation += "    ";
     }
-    
-    
-    
-    
+
+
+
+
     public void DecreaseIndentation ()
     {
         msIndentation = msIndentation.substring(4);
     }
-    
-    
-    
-    
+
+
+
+
     private static OutputStream CreateFileOutputStream (final String sFilename)
     {
         OutputStream aOut;
@@ -121,10 +121,10 @@ public class Log
             return null;
         }
     }
-    
-    
-    
-    
+
+
+
+
     private final OutputStream maOut;
     private String msIndentation;
 }

@@ -42,9 +42,9 @@ public class StringNode
         mbIsList = false;
     }
 
-    
-    
-    
+
+
+
     @Override
     public void ApplyRestriction (
         final Restriction aRestriction,
@@ -55,7 +55,7 @@ public class StringNode
             | Restriction.MinInclusiveBit
             | Restriction.MaxExclusiveBit
             | Restriction.MaxInclusiveBit));
-        
+
         if (aRestriction.HasFeature(Restriction.EnumerationBit))
         {
             if (aRestriction.HasFeature(Restriction.LengthBit|Restriction.MinLengthBit|Restriction.MaxLengthBit))
@@ -100,19 +100,19 @@ public class StringNode
             assert(aRestriction.GetFeatureBits() == 0);
         }
     }
-    
-    
-    
-    
+
+
+
+
     @Override
     public void Print (final Log aLog)
     {
         aLog.println(toString());
     }
 
-    
-    
-    
+
+
+
     @Override
     public String toString ()
     {
@@ -140,28 +140,28 @@ public class StringNode
         }
         return aBuffer.toString();
     }
-    
-    
-    
-    
+
+
+
+
     @Override
     public boolean IsList ()
     {
         return mbIsList;
     }
-    
-    
-    
-    
+
+
+
+
     @Override
     public void SetIsList ()
     {
         mbIsList = true;
     }
-    
-    
-    
-    
+
+
+
+
     /** Try to join the called and the given string types.
      *  If that is possible then return the resulting type.
      *  Otherwise return null.
@@ -178,8 +178,8 @@ public class StringNode
         else
             return null;
     }
-    
-    
+
+
     public enum RestrictionType
     {
         Pattern,
@@ -198,41 +198,41 @@ public class StringNode
         else
             return RestrictionType.None;
     }
-    
-    
-    
-    
+
+
+
+
     public Set<Integer> GetEnumerationRestriction ()
     {
         final Set<Integer> aSortedIds = new TreeSet<>();
         aSortedIds.addAll(maEnumerationValueIds);
         return aSortedIds;
     }
-    
-    
-    
-    
+
+
+
+
     public String GetPatternRestriction ()
     {
         return msPattern;
     }
-    
-    
-    
-    
+
+
+
+
     public int[] GetLengthRestriction ()
     {
         return new int[]{mnMinimumLength, mnMaximumLength};
     }
-    
-    
-    
-    
+
+
+
+
     private boolean CheckLengthRestriction (
         final String sValue,
         final Restriction aRestriction)
     {
-        final int nValueLength = sValue.length(); 
+        final int nValueLength = sValue.length();
         if (aRestriction.HasFeature(Restriction.LengthBit))
             return nValueLength == aRestriction.GetLength();
         else if (aRestriction.HasFeature(Restriction.MinLengthBit | Restriction.MaxLengthBit))
@@ -245,19 +245,19 @@ public class StringNode
         else
             throw new RuntimeException();
     }
-    
-    
-    
-    
+
+
+
+
     @Override
     public void AcceptVisitor (final ISimpleTypeNodeVisitor aVisitor)
     {
         aVisitor.Visit(this);
     }
-    
-    
-    
-    
+
+
+
+
     private final BuiltInType meType;
     private Set<String> maEnumerationValues;
     private Set<Integer> maEnumerationValueIds;

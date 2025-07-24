@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -36,18 +36,18 @@ import org.openoffice.setup.Util.ModuleCtrl;
 import org.openoffice.setup.Util.SystemManager;
 
 public class PrologueCtrl extends PanelController {
-    
+
     private String helpFile;
 
     public PrologueCtrl() {
         super("Prologue", new Prologue());
         helpFile = "String_Helpfile_Prologue";
     }
-    
+
     // public void beforeShow() {
     public void duringShow() {
         getSetupFrame().setButtonEnabled(false, getSetupFrame().BUTTON_PREVIOUS);
-        
+
         Thread t = new Thread() {
             public void run() {
                 InstallData installData = InstallData.getInstance();
@@ -56,7 +56,7 @@ public class PrologueCtrl extends PanelController {
 
                     Controller.checkPackagePathExistence(installData);
                     Controller.checkPackageFormat(installData);
-                    
+
                     if (( installData.getOSType().equalsIgnoreCase("SunOS") ) && ( installData.isMultiLingual() )) {
                         Controller.collectSystemLanguages(installData);
                     }
@@ -77,12 +77,12 @@ public class PrologueCtrl extends PanelController {
 
                     if (( installData.getOSType().equalsIgnoreCase("SunOS") ) && ( installData.isMultiLingual() )) {
                         ModuleCtrl.checkLanguagesPackages(packageData, installData);
-                        
+
                         // int count = installData.getPreselectedLanguages();
                         // System.err.println("Number of preselected language packages: " + count);
-                        
+
                         if ( installData.getPreselectedLanguages() == 0 ) {
-                            // Something mysterious happened. Setting all languages again. 
+                            // Something mysterious happened. Setting all languages again.
                             ModuleCtrl.setLanguagesPackages(packageData);
                         }
 
@@ -141,11 +141,11 @@ public class PrologueCtrl extends PanelController {
 
                         // Setting macro
                         SetupDataProvider.setNewMacro("DIR", dir); // important for string replacement
-                        
+
                         // Calculate available disc space
                         int discSpace = SystemManager.calculateDiscSpace(dir);
                         installData.setAvailableDiscSpace(discSpace);
-                        
+
                         if ( ! installData.databaseAnalyzed()) {
                             ModuleCtrl.defaultDatabaseAnalysis(installData);
                             installData.setDatabaseAnalyzed(true);
@@ -158,13 +158,13 @@ public class PrologueCtrl extends PanelController {
         };
         t.start();
     }
-    
+
     public boolean afterShow(boolean nextButtonPressed) {
         boolean repeatDialog = false;
         getSetupFrame().setButtonEnabled(true, getSetupFrame().BUTTON_PREVIOUS);
         return repeatDialog;
     }
-    
+
     public String getNext() {
         InstallData data = InstallData.getInstance();
 
@@ -173,24 +173,24 @@ public class PrologueCtrl extends PanelController {
                 if ( data.olderVersionExists() ) {
                     return new String("InstallationImminent");
                 } else if ( data.sameVersionExists() ) {
-                    return new String("ChooseComponents");            
+                    return new String("ChooseComponents");
                 } else {
                     return new String("ChooseInstallationType");
                 }
             } else {
-                return new String("ChooseDirectory");            
-            }            
+                return new String("ChooseDirectory");
+            }
         } else {
             return new String("AcceptLicense");
         }
     }
-    
+
     public String getPrevious() {
         return null;
     }
-    
+
     public final String getHelpFileName() {
         return this.helpFile;
     }
-    
+
 }

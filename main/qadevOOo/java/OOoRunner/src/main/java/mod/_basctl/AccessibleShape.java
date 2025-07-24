@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -50,10 +50,10 @@ import util.WriterTools;
 import util.utils;
 
 public class AccessibleShape extends TestCase {
-    
+
     XTextDocument xTextDoc = null;
     XInterface oObj = null;
-    
+
     protected void cleanup(TestParameters Param, PrintWriter log) {
         log.println("Cleaning up");
         DesktopTools.closeDoc(xTextDoc);
@@ -66,7 +66,7 @@ public class AccessibleShape extends TestCase {
             log.println("Couldn't close IDE");
         }
     }
-    
+
     protected TestEnvironment createTestEnvironment(TestParameters tParam, PrintWriter log) {
         XMultiServiceFactory xMSF = (XMultiServiceFactory)tParam.getMSF();
         log.println( "creating a test environment" );
@@ -75,7 +75,7 @@ public class AccessibleShape extends TestCase {
         XModel xModel = (XModel) UnoRuntime.queryInterface(XModel.class, xTextDoc);
         XFrame xFrame = xModel.getCurrentController().getFrame();
         XDispatchProvider xDPP = (XDispatchProvider) UnoRuntime.queryInterface(XDispatchProvider.class, xFrame);
-        
+
         log.println( "opening the basic dialog editor" );
         try {
             Object o = xMSF.createInstance("com.sun.star.frame.DispatchHelper");
@@ -97,9 +97,9 @@ public class AccessibleShape extends TestCase {
         } catch (Exception e) {
             throw new StatusException("Couldn't open Basic Dialog",e);
         }
-        
+
         utils.shortWait(3000);
-        
+
         try {
             oObj = (XInterface) ((XMultiServiceFactory)tParam.getMSF()).createInstance
                     ("com.sun.star.awt.Toolkit") ;
@@ -110,42 +110,42 @@ public class AccessibleShape extends TestCase {
         }
 
         AccessibilityTools at = new AccessibilityTools();
-        
+
         final XWindow basicIDE = xFrame.getContainerWindow();
-        
+
         XAccessible xRoot = at.getAccessibleObject(basicIDE);
-        
+
         at.printAccessibleTree(log, xRoot, tParam.getBool(util.PropertyName.DEBUG_IS_ACTIVE));
-        
+
         oObj = at.getAccessibleObjectForRole(xRoot, AccessibleRole.SHAPE);
-        
+
         // create test environment here
         TestEnvironment tEnv = new TestEnvironment( oObj );
-        
+
         log.println("Implementation Name: " + utils.getImplName(oObj));
-        
+
         tEnv.addObjRelation("Destroy", Boolean.TRUE);
-        
+
         tEnv.addObjRelation("EventProducer",
                 new ifc.accessibility._XAccessibleEventBroadcaster.EventProducer() {
-            public void fireEvent() {                
+            public void fireEvent() {
                 Rectangle oldPosSize = basicIDE.getPosSize();
                 Rectangle newPosSize = new Rectangle();
                 newPosSize.Width = oldPosSize.Width/2;
                 newPosSize.Height = oldPosSize.Height/2;
                 newPosSize.X = oldPosSize.X + 20;
                 newPosSize.Y = oldPosSize.Y + 20;
-                basicIDE.setPosSize(newPosSize.X, newPosSize.Y, newPosSize.Width, 
-                                newPosSize.Height, PosSize.POSSIZE);   
+                basicIDE.setPosSize(newPosSize.X, newPosSize.Y, newPosSize.Width,
+                                newPosSize.Height, PosSize.POSSIZE);
                 utils.shortWait(1000);
-                basicIDE.setPosSize(oldPosSize.X, oldPosSize.Y, oldPosSize.Width, 
-                                oldPosSize.Height, PosSize.POSSIZE);                   
+                basicIDE.setPosSize(oldPosSize.X, oldPosSize.Y, oldPosSize.Width,
+                                oldPosSize.Height, PosSize.POSSIZE);
             }
         });
-        
+
         return tEnv;
     }
-    
-    
-    
+
+
+
 }

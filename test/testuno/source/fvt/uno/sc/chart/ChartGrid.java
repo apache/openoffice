@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 package fvt.uno.sc.chart;
@@ -48,7 +48,7 @@ import com.sun.star.table.CellRangeAddress;
 
 /**
  *  Check Grids in chart can be applied and saved
- * 
+ *
  */
 @RunWith(value = Parameterized.class)
 public class ChartGrid {
@@ -56,14 +56,14 @@ public class ChartGrid {
 	private Boolean[] majorGrids;
 	private Boolean[] minorGrids;
 	private String inputType;
-	private double[][] numberData;	
+	private double[][] numberData;
 	private String fileType;
-	
+
 	private static final UnoApp unoApp = new UnoApp();
-	
+
 	XComponent scComponent = null;
 	XSpreadsheetDocument scDocument = null;
-	
+
 	@Parameters
 	public static Collection<Object[]> data() throws Exception {
 		double[][] numberData1 = {
@@ -74,7 +74,7 @@ public class ChartGrid {
 		};
 		Boolean[][] gridsList = {
 				{false, false, false}, //[0] no grid
-				{true, false, false}, // [1] X 
+				{true, false, false}, // [1] X
 				{false, true, false}, // [2] Y
 				{true, true, false}, // [3] X & Y
 				{true, true, true}, // [4] X & Y & Z
@@ -90,17 +90,17 @@ public class ChartGrid {
 			{gridsList[6], gridsList[7], "com.sun.star.chart.BarDiagram", numberData1, "ods"},
 			{gridsList[1], gridsList[5], "com.sun.star.chart.BarDiagram", numberData1, "ods"},
 			{gridsList[4], gridsList[4], "com.sun.star.chart.BarDiagram", numberData1, "ods"},
-			
+
 			{gridsList[0], null, "com.sun.star.chart.BarDiagram", numberData1, "xls"},
 			{gridsList[2], gridsList[3], "com.sun.star.chart.BarDiagram", numberData1, "xls"}
 //			{null, gridsList[4], "com.sun.star.chart.BarDiagram", numberData1, "xls"},
 //			{gridsList[6], gridsList[7], "com.sun.star.chart.BarDiagram", numberData1, "xls"},
 //			{gridsList[1], gridsList[5], "com.sun.star.chart.BarDiagram", numberData1, "xls"},
 //			{gridsList[4], gridsList[4], "com.sun.star.chart.BarDiagram", numberData1, "xls"}
-		
+
 		});
 	}
-	
+
 	public ChartGrid(Boolean[] majorGrids, Boolean[] minorGrids, String inputType, double[][] numberData, String fileType) {
 		this.majorGrids = majorGrids;
 		this.minorGrids = minorGrids;
@@ -108,7 +108,7 @@ public class ChartGrid {
 		this.numberData = numberData;
 		this.fileType = fileType;
 	}
-		
+
 	@Before
 	public void setUp() throws Exception {
 		scComponent = unoApp.newDocument("scalc");
@@ -118,9 +118,9 @@ public class ChartGrid {
 	@After
 	public void tearDown() throws Exception {
 		unoApp.closeDocument(scComponent);
-		
+
 	}
-	
+
 	@BeforeClass
 	public static void setUpConnection() throws Exception {
 		unoApp.start();
@@ -129,9 +129,9 @@ public class ChartGrid {
 	@AfterClass
 	public static void tearDownConnection() throws InterruptedException, Exception {
 		unoApp.close();
-		SCUtil.clearTempDir();	
+		SCUtil.clearTempDir();
 	}
-	
+
 	/**
 	 * Enable different types of grids in chart.
 	 * 1. Create a spreadsheet file.
@@ -153,27 +153,27 @@ public class ChartGrid {
 		Boolean[][] results = {
 				{false, false, false},
 				{false, false, false}
-		};	
-		
+		};
+
 		if (inputType.equals("com.sun.star.chart.StockDiagram")) {
 			cellRangeName = "A1:C4";
-		}	
-		if (fileType.equalsIgnoreCase("xls")) {
-			chartName = "Object 1";			
 		}
-		
+		if (fileType.equalsIgnoreCase("xls")) {
+			chartName = "Object 1";
+		}
+
 		XSpreadsheet sheet = SCUtil.getCurrentSheet(scDocument);
-		
+
 		SCUtil.setValueToCellRange(sheet, 0, 0, numberData);
 
 		CellRangeAddress[] cellAddress = new CellRangeAddress[1];
 		cellAddress[0] = SCUtil.getChartDataRangeByName(sheet, cellRangeName);
 		Rectangle rectangle = new Rectangle(1000, 1000, 15000, 9500);
-		XChartDocument xChartDocument = null; 		
+		XChartDocument xChartDocument = null;
 		xChartDocument = SCUtil.createChart(sheet, rectangle, cellAddress, chartName);
 		SCUtil.setChartType(xChartDocument, inputType);
-		XDiagram xDiagram = xChartDocument.getDiagram(); 
-		
+		XDiagram xDiagram = xChartDocument.getDiagram();
+
 		if (majorGrids != null) {
 			SCUtil.setProperties(xDiagram, "HasXAxisGrid", majorGrids[0]);
 			SCUtil.setProperties(xDiagram, "HasYAxisGrid", majorGrids[1]);
@@ -186,25 +186,25 @@ public class ChartGrid {
 			expected[1][0] = minorGrids[0];
 			expected[1][1] = minorGrids[1];
 		}
-		
+
 		SCUtil.saveFileAs(scComponent, fileName, fileType);
 		scDocument = SCUtil.reloadFile(unoApp, scDocument, fileName + "." + fileType);
 		sheet = SCUtil.getCurrentSheet(scDocument);
-		
+
 		xChartDocument = SCUtil.getChartByName(sheet, chartName);
-		xDiagram = xChartDocument.getDiagram(); 
+		xDiagram = xChartDocument.getDiagram();
 		results[0][0] = (Boolean) SCUtil.getProperties(xDiagram, "HasXAxisGrid");
 		results[0][1] = (Boolean) SCUtil.getProperties(xDiagram, "HasYAxisGrid");
 		results[1][0] = (Boolean) SCUtil.getProperties(xDiagram, "HasXAxisHelpGrid");
 		results[1][1] = (Boolean) SCUtil.getProperties(xDiagram, "HasYAxisHelpGrid");
-		
+
 		SCUtil.closeFile(scDocument);
-		
+
 		assertArrayEquals("Incorrect chart grids got in ." + fileType + " file.", expected, results);
 
 	}
-	
-	/** 
+
+	/**
 	 * Enable different types of grids in chart.
 	 * 1. Create a spreadsheet file.
 	 * 2. Input number in a cell range and create a 3D chart.
@@ -225,28 +225,28 @@ public class ChartGrid {
 		Boolean[][] results = {
 				{false, false, false},
 				{false, false, false}
-		};	
-		
+		};
+
 		if (inputType.equals("com.sun.star.chart.StockDiagram")) {
 			cellRangeName = "A1:C4";
-		}	
-		if (fileType.equalsIgnoreCase("xls")) {
-			chartName = "Object 1";			
 		}
-		
+		if (fileType.equalsIgnoreCase("xls")) {
+			chartName = "Object 1";
+		}
+
 		XSpreadsheet sheet = SCUtil.getCurrentSheet(scDocument);
-		
+
 		SCUtil.setValueToCellRange(sheet, 0, 0, numberData);
 
 		CellRangeAddress[] cellAddress = new CellRangeAddress[1];
 		cellAddress[0] = SCUtil.getChartDataRangeByName(sheet, cellRangeName);
 		Rectangle rectangle = new Rectangle(1000, 1000, 15000, 9500);
-		XChartDocument xChartDocument = null; 		
+		XChartDocument xChartDocument = null;
 		xChartDocument = SCUtil.createChart(sheet, rectangle, cellAddress, chartName);
 		SCUtil.setChartType(xChartDocument, inputType);
 		SCUtil.setProperties(xChartDocument.getDiagram(), "Dim3D", true);
 		XDiagram xDiagram = xChartDocument.getDiagram();
-		
+
 		if (majorGrids != null) {
 			SCUtil.setProperties(xDiagram, "HasXAxisGrid", majorGrids[0]);
 			SCUtil.setProperties(xDiagram, "HasYAxisGrid", majorGrids[1]);
@@ -267,9 +267,9 @@ public class ChartGrid {
 		SCUtil.saveFileAs(scComponent, fileName, fileType);
 		scDocument = SCUtil.reloadFile(unoApp, scDocument, fileName + "." + fileType);
 		sheet = SCUtil.getCurrentSheet(scDocument);
-		
+
 		xChartDocument = SCUtil.getChartByName(sheet, chartName);
-		xDiagram = xChartDocument.getDiagram(); 
+		xDiagram = xChartDocument.getDiagram();
 		results[0][0] = (Boolean) SCUtil.getProperties(xDiagram, "HasXAxisGrid");
 		results[0][1] = (Boolean) SCUtil.getProperties(xDiagram, "HasYAxisGrid");
 		results[0][2] = (Boolean) SCUtil.getProperties(xDiagram, "HasZAxisGrid");
@@ -278,9 +278,9 @@ public class ChartGrid {
 		results[1][2] = (Boolean) SCUtil.getProperties(xDiagram, "HasZAxisHelpGrid");
 
 		SCUtil.closeFile(scDocument);
-		
+
 		assertArrayEquals("Incorrect chart grids got in ." + fileType + " file.", expected, results);
 
 	}
-	
+
 }

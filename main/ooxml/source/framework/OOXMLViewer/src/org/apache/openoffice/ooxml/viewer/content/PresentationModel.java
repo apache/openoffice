@@ -27,17 +27,17 @@ public class PresentationModel
     {
         maSlideManager = new SlideManager();
     }
-    
-    
-    
-    
+
+
+
+
     public SlideManager GetSlideManager()
     {
         return maSlideManager;
     }
 
-    
-    
-    
+
+
+
     private final SlideManager maSlideManager;
 }

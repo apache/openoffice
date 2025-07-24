@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -58,7 +58,7 @@ public class AccessibilityTreeModel
 
 
     /** Calls to this method are dispatched to the given node but are
-        observed for exceptions.  
+        observed for exceptions.
     */
     synchronized public boolean isLeaf (Object aObject)
     {
@@ -85,7 +85,7 @@ public class AccessibilityTreeModel
             }
             catch (Exception aException)
             {
-                System.err.println ("caught exception in AccessibilityTreeModel.isLeaf():" 
+                System.err.println ("caught exception in AccessibilityTreeModel.isLeaf():"
                     + aException);
                 aException.printStackTrace (System.err);
             }
@@ -112,7 +112,7 @@ public class AccessibilityTreeModel
     synchronized public Object getChild (Object aParent, final int nIndex)
     {
         AccessibilityNode aChild = null;
-        
+
         final AccessibilityNode aParentNode = (AccessibilityNode)aParent;
 
         // Try to get an existing child from the super class object.
@@ -169,7 +169,7 @@ public class AccessibilityTreeModel
     }
 
 
-	
+
 
 	/** Add a new child to the root node.
     */

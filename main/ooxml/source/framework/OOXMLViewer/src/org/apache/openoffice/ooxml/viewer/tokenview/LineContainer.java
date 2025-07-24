@@ -29,9 +29,9 @@ public class LineContainer<TokenType>
     {
         maLines = new Vector<>();
     }
-    
-    
-    
+
+
+
 
     boolean IsLineInGroup (
         final Line<TokenType> aLine,
@@ -46,13 +46,13 @@ public class LineContainer<TokenType>
         final Line<TokenType> aEndLine = aGroup.GetGroupEnd().GetLine();
         if (aLine.GetTop() > aEndLine.GetTop())
             return false;
-        
+
         return true;
     }
-    
-    
-    
-    
+
+
+
+
     Line<TokenType> GetLineForY (final int nY)
     {
         int nMin = 0;
@@ -73,10 +73,10 @@ public class LineContainer<TokenType>
         }
         return null;
     }
-    
-    
-    
-    
+
+
+
+
     public Line<TokenType> GetLineForOffset (final int nOffset)
     {
         final int nLineIndex = GetLineIndexForOffset(nOffset, 0);
@@ -84,14 +84,14 @@ public class LineContainer<TokenType>
             return null;
         else
             return maLines.get(nLineIndex);
-        
-    }
-    
 
-    
+    }
+
+
+
 
     public Iterable<Line<TokenType>> GetLinesForOffsets (
-        final int nStartOffset, 
+        final int nStartOffset,
         final int nEndOffset)
     {
         final Vector<Line<TokenType>> aLines = new Vector<>();
@@ -109,25 +109,25 @@ public class LineContainer<TokenType>
         return aLines;
     }
 
-    
-    
-    
+
+
+
     public int GetLineCount()
     {
         return maLines.size();
     }
 
-    
-    
-    
+
+
+
     public Line<TokenType> GetLine (final int nIndex)
     {
         return maLines.get(nIndex);
     }
-    
-    
-    
-    
+
+
+
+
     public Iterable<Line<TokenType>> GetLines ()
     {
         return maLines;
@@ -138,12 +138,12 @@ public class LineContainer<TokenType>
 
     public void AddLine (final Line<TokenType> aLine)
     {
-        maLines.add(aLine);        
+        maLines.add(aLine);
     }
-    
-    
-    
-    
+
+
+
+
     /** Return the index of the line that contains the given offset.
      *  When there is no line that contains the line that look at the bias
      *  to return the previous or next line.
@@ -186,9 +186,9 @@ public class LineContainer<TokenType>
 
         return -1;
     }
-    
-    
 
-    
+
+
+
     private final Vector<Line<TokenType>> maLines;
 }

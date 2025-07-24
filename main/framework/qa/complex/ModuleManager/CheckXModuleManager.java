@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -50,28 +50,28 @@ public class CheckXModuleManager
 {
     //-------------------------------------------
     // some const
-    
+
     //-------------------------------------------
     // member
-    
+
     /** points to the global uno service manager. */
     private XMultiServiceFactory m_xSmgr = null;
-    
+
     /** the module manager for testing. */
     private XModuleManager m_xMM = null;
-        
+
     /** a special frame used to load documents there. */
     private XComponentLoader m_xLoader = null;
-        
+
     //-------------------------------------------
     // test environment
-    
+
     //-------------------------------------------
     /** @short  A function to tell the framework,
                 which test functions are available.
-                
+
         @return All test methods.
-        @todo   Think about selection of tests from outside ...     
+        @todo   Think about selection of tests from outside ...
      */
 //    public String[] getTestMethodNames()
 //    {
@@ -86,7 +86,7 @@ public class CheckXModuleManager
 
     //-------------------------------------------
     /** @short  Create the environment for following tests.
-    
+
         @descr  Use either a component loader from desktop or
                 from frame
      */
@@ -98,10 +98,10 @@ public class CheckXModuleManager
 
         // create module manager
         m_xMM = UnoRuntime.queryInterface(XModuleManager.class, m_xSmgr.createInstance("com.sun.star.frame.ModuleManager"));
-                    
+
         // create desktop instance to create a special frame to load documents there.
         XFrame xDesktop = UnoRuntime.queryInterface(XFrame.class, m_xSmgr.createInstance("com.sun.star.frame.Desktop"));
-                                
+
         m_xLoader = UnoRuntime.queryInterface(XComponentLoader.class, xDesktop.findFrame("_blank", 0));
     }
 
@@ -113,7 +113,7 @@ public class CheckXModuleManager
     {
         XCloseable xClose = UnoRuntime.queryInterface(XCloseable.class, m_xLoader);
         xClose.close(false);
-                                
+
         m_xLoader = null;
         m_xMM     = null;
         m_xSmgr   = null;
@@ -136,7 +136,7 @@ public class CheckXModuleManager
         // TODO: fails
         // impl_identifyModulesBasedOnDocs("com.sun.star.chart.ChartDocument"              );
     }
-    
+
     //-------------------------------------------
     /** @todo document me
      */
@@ -161,7 +161,7 @@ public class CheckXModuleManager
         impl_checkReadOnlyPropsOfModule("com.sun.star.presentation.PresentationDocument");
         impl_checkReadOnlyPropsOfModule("com.sun.star.sdb.OfficeDatabaseDocument"       );
         impl_checkReadOnlyPropsOfModule("com.sun.star.chart.ChartDocument"              );
-    
+
         // other modules
         impl_checkReadOnlyPropsOfModule("com.sun.star.sdb.FormDesign"       );
         impl_checkReadOnlyPropsOfModule("com.sun.star.sdb.TextReportDesign" );
@@ -198,12 +198,12 @@ public class CheckXModuleManager
         throws java.lang.Exception
     {
         System.out.println("search modules matching document service '"+sDocumentService+"' ...");
-    
+
         NamedValue[] lProps          = new NamedValue[1];
                      lProps[0]       = new NamedValue();
                      lProps[0].Name  = "ooSetupFactoryDocumentService";
                      lProps[0].Value = sDocumentService;
-    
+
         XContainerQuery xMM     = UnoRuntime.queryInterface(XContainerQuery.class, m_xMM);
         XEnumeration    xResult = xMM.createSubSetEnumerationByProperties(lProps);
         while(xResult.hasMoreElements())
@@ -224,17 +224,17 @@ public class CheckXModuleManager
                     sFoundDocService = AnyConverter.toString(lModuleProps[i].Value);
                 }
             }
-        
+
             if (sFoundModule.length() < 1)
             {
                 fail("Miss module identifier in result set. Returned data are incomplete.");
             }
-            
+
             if ( ! sFoundDocService.equals(sDocumentService))
             {
                 fail("Query returned wrong module '" + sFoundModule + "' with DocumentService='" + sFoundDocService + "'.");
             }
-            
+
             System.out.println("Found module '"+sFoundModule+"'.");
         }
     }
@@ -246,13 +246,13 @@ public class CheckXModuleManager
         throws java.lang.Exception
     {
         System.out.println("check identification of module '"+sModule+"' ...");
-    
+
         XNameAccess     xMM          = UnoRuntime.queryInterface(XNameAccess.class, m_xMM);
         PropertyValue[] lModuleProps = (PropertyValue[])AnyConverter.toArray(xMM.getByName(sModule));
         int             c            = lModuleProps.length;
         int             i            = 0;
         String          sFactoryURL  = "";
-    
+
         for (i=0; i<c; ++i)
         {
             if (lModuleProps[i].Name.equals("ooSetupFactoryEmptyDocumentURL"))
@@ -261,20 +261,20 @@ public class CheckXModuleManager
                 break;
             }
         }
-    
+
         PropertyValue[] lArgs             = new PropertyValue[1];
                         lArgs[0]          = new PropertyValue();
                         lArgs[0].Name     = "Hidden";
                         lArgs[0].Value    = Boolean.TRUE;
-    
+
         XComponent      xModel            = m_xLoader.loadComponentFromURL(sFactoryURL, "_self", 0, lArgs);
         XFrame          xFrame            = UnoRuntime.queryInterface(XFrame.class, m_xLoader);
         XController     xController       = xFrame.getController();
-        
+
         String          sModuleFrame      = m_xMM.identify(xFrame     );
         String          sModuleController = m_xMM.identify(xController);
         String          sModuleModel      = m_xMM.identify(xModel     );
-        
+
         if ( ! sModuleFrame.equals(sModule))
         {
             fail("Identification of module '" + sModule + "' failed if frame was used as entry point.");
@@ -296,7 +296,7 @@ public class CheckXModuleManager
         throws java.lang.Exception
     {
         XNameReplace xWrite = UnoRuntime.queryInterface(XNameReplace.class, m_xMM);
-            
+
         impl_checkReadOnlyPropOfModule(xWrite, sModule, "ooSetupFactoryDocumentService"     , "test");
         impl_checkReadOnlyPropOfModule(xWrite, sModule, "ooSetupFactoryActualFilter"        , "test");
         impl_checkReadOnlyPropOfModule(xWrite, sModule, "ooSetupFactoryActualTemplateFilter", "test");
@@ -316,7 +316,7 @@ public class CheckXModuleManager
                         lChanges[0]       = new PropertyValue();
                         lChanges[0].Name  = sPropName;
                         lChanges[0].Value = aPropValue;
-    
+
         // Note: Exception is expected !
         System.out.println("check readonly state of module '"+sModule+"' for property '"+sPropName+"' ...");
         try

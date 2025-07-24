@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -36,7 +36,7 @@ import java.util.ListIterator;
 /**
  * Translate language codes into another format
  * between ISO, RFC3066 and numeric
- * 
+ *
  * @author Christian Schmidt 2005
  *
  */
@@ -45,21 +45,21 @@ public class LanguageResolver {
     private final static int LANGID     =0;
     private final static int LANGNAME   =1;
     private final static int RFC3066    =3;
-    
+
     ArrayList languages=new ArrayList();
-    
+
 //    public static void main(String[] args){
 //        try {
 //            LanguageResolver lr=new LanguageResolver();
 //        } catch (IOException e) {
-//            // 
+//            //
 //            e.printStackTrace();
 //        }
 //    }
-    
+
     /**
      * Create a new Instance of LanguageResolver
-     * 
+     *
      * @throws IOException
      */
     public LanguageResolver() throws IOException{
@@ -67,16 +67,16 @@ public class LanguageResolver {
         ClassLoader cl = this.getClass().getClassLoader();
         InputStream in = cl.getResourceAsStream(lang);
         BufferedReader languageTable= new BufferedReader(new InputStreamReader(in));
-        
+
         String line;
-        
+
         while((line=(languageTable.readLine()))!=null){
             languages.add(line.split(","));
         }
     }
     /**
      * Get the numeric value of the given ISO Language Code
-     * 
+     *
      * @param isoCode the ISO Language Code to find
      * @return numeric value of the given isoCode
      * @throws LanguageResolvingException if the Language ISO Code is not known
@@ -90,12 +90,12 @@ public class LanguageResolver {
                 if(line[ISO].equals(isoCode)) return line[LANGID];
             }
             throw new LanguageResolvingException("Can not find ISO Code: "+isoCode );
-        
+
     }
-    
+
     /**
      * Get the ISO Language Code corresponding with the given Language ID
-     * 
+     *
      * @param ID the numeric language id to find
      * @return the ISO Language Code corresponding with the given Language ID
      * @throws LanguageResolvingException if the Language ID is not known
@@ -110,10 +110,10 @@ public class LanguageResolver {
         }
         throw new LanguageResolvingException("Can not find Language Id: "+ID );
     }
-    
+
     /**
      * Get the RFC3066 value of the given ISO Language Code
-     * 
+     *
      * @param isoCode the ISO Language Code to find
      * @return RFC3066 value of the given isoCode
      * @throws LanguageResolvingException if the Language ISO Code is not known
@@ -128,10 +128,10 @@ public class LanguageResolver {
         }
         throw new LanguageResolvingException("Can not find ISO Code: "+isoCode );
     }
-    
+
     /**
      * Get the ISO Language Code corresponding with the given RFC3066 code
-     * 
+     *
      * @param RFC RFC3066 language id to find
      * @return the ISO Language Code corresponding with the given RFC3066 code
      * @throws LanguageResolvingException if the RFC3066 code is not known
@@ -146,22 +146,22 @@ public class LanguageResolver {
         }
         throw new LanguageResolvingException("Can not find Language Id: "+RFC );
     }
-    
-    
+
+
     /**
-     * This Exception is thrown if a Language Identfier is unknown 
-     * 
+     * This Exception is thrown if a Language Identfier is unknown
+     *
      * @author Christian Schmidt 2005
      *
      */
     public class LanguageResolvingException extends Exception {
 
         /**
-         * 
+         *
          */
         public LanguageResolvingException() {
             super();
-            // 
+            //
         }
 
         /**
@@ -169,7 +169,7 @@ public class LanguageResolver {
          */
         public LanguageResolvingException(String arg0) {
             super(arg0);
-            // 
+            //
         }
 
         /**
@@ -178,7 +178,7 @@ public class LanguageResolver {
          */
         public LanguageResolvingException(String arg0, Throwable arg1) {
             super(arg0, arg1);
-            // 
+            //
         }
 
         /**
@@ -186,7 +186,7 @@ public class LanguageResolver {
          */
         public LanguageResolvingException(Throwable arg0) {
             super(arg0);
-            // 
+            //
         }
 
     }
