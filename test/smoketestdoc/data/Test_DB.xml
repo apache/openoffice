@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--***********************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -8,16 +8,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  ***********************************************************-->
 
 
@@ -40,32 +40,32 @@ Sub TestDB
 	Const sTestString = &quot;Automatical Test&quot;
 
 	On Local Error GoTo DBERROR
-	
+
 	gCurrentTestCase = cLogfileFailed
 	LocalTestLog% = OpenLogDat (GetLogFileName(gCurrentDocTest))
 
 	gCurrentTestCase = cDBService
 	sCurrentMessage = cMessageDatabaseService + &quot; &quot; + cUnoDatabaseContext
-	
+
 	oDBContext = CreateUnoService(cUnoDatabaseContext)
 	sDBName=oDBContext.ElementNames(0) &apos;Names of Databases
-	
+
 	gCurrentTestCase = cDBOpen
 	sCurrentMessage = cMessageDatabaseOpen
-	
+
 	oDataSource = oDBContext.GetByName(sDBName)
 	sTable=oDataSource.Tables.ElementNames(0)
 	oDBConnection = oDBContext.GetByName(sDBName).GetConnection(&quot;&quot;,&quot;&quot;)
-	
+
 	LogTestResult( &quot;Database &quot;+ cMessageDatabaseOpen, not IsNull (oDBConnection) )
 	if (IsNull(oDBConnection)) then
    	Close #LocalTestLog%
 		LocalTestLog = 0
 		Exit Sub
 	End If
-	
+
 	&apos; Database is open now
-	
+
 	gCurrentTestCase = cDBService
 	sCurrentMessage = cMessageDatabaseService + &quot; &quot; + cUnoRowSet
 	oRowSet = createUnoService(cUnoRowSet)
@@ -76,10 +76,10 @@ Sub TestDB
 	else
 		LogTestResult( &quot;Database &quot;+ cMessageDatabaseService, TRUE )
 	End If
-	
+
 	gCurrentTestCase = cDBInsert
 	sCurrentMessage = cMessageDatabaseInsert
-	
+
 	oRowSet.ActiveConnection = oDBConnection
 
 	oRowSet.CommandType = com.sun.star.sdb.CommandType.COMMAND
@@ -91,14 +91,14 @@ Sub TestDB
 
 	oRowSet.insertRow()
 	nRowCount=oRowSet.RowCount
-	
+
 	oRowSet.moveToCurrentRow()
-	
+
 	bResult = (oRowSet.getString(5) = sTestString)
 	LogTestResult( &quot;Database &quot;+ cMessageDatabaseInsert, bResult )
-	
+
 	&apos;delete only if insert passed
-	
+
 	if (bResult) Then
 		gCurrentTestCase = cDBDelete
 		sCurrentMessage = cMessageDatabaseDelete
@@ -109,16 +109,16 @@ Sub TestDB
 			bResult = (nRowCount - oRowSet.RowCount = 1)
 		End If
 		LogTestResult( &quot;Database &quot;+ cMessageDatabaseDelete, bResult )
-	End If	
+	End If
 
 	&apos; read other record
-	
+
 	gCurrentTestCase = cDBSeek
 	sCurrentMessage = cMessageDatabaseSeek
 	oRowSet.first()
 	bResult = not (oRowSet.getString(5) = sTestString)
 	LogTestResult( &quot;Database &quot;+ cMessageDatabaseSeek, bResult )
-	
+
 	gCurrentTestCase = cDBClose
 	sCurrentMessage = cMessageDatabaseClose
 	oDBConnection.Dispose()
@@ -128,7 +128,7 @@ Sub TestDB
 	Close #LocalTestLog%
 	LocalTestLog = 0
 	Exit Sub &apos; Without error
-	
+
 	DBERROR:
 	If ( gCurrentTestCase = cLogfileFailed ) then
 		LogTestResult( &quot; &quot;, False )
@@ -137,7 +137,7 @@ Sub TestDB
 		LogTestResult( &quot;Database &quot;+ sCurrentMessage, FALSE )
 		Close #LocalTestLog%
 		LocalTestLog = 0
-	End If	
+	End If
 	Exit Sub &apos; With error
 End Sub
 </script:module>
