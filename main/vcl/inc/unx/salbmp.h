@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -47,7 +47,7 @@ class VCLPLUG_GEN_PUBLIC X11SalBitmap : public SalBitmap
 private:
 
 	static BitmapBuffer*		ImplCreateDIB( const Size& rSize,
-											   sal_uInt16 nBitCount, 
+											   sal_uInt16 nBitCount,
 											   const BitmapPalette& rPal );
 	static BitmapBuffer*		ImplCreateDIB( Drawable aDrawable,
                                                int nScreen,
@@ -74,44 +74,44 @@ private:
 
 	BitmapBuffer*	mpDIB;
 	ImplSalDDB*		mpDDB;
-								
+
 public:
 
 	SAL_DLLPRIVATE bool    ImplCreateFromDrawable( Drawable aDrawable,
                                                   int nScreen,
                                                   long nDrawableDepth,
-                                                  long nX, long nY, 
+                                                  long nX, long nY,
                                                   long nWidth, long nHeight );
 
 	SAL_DLLPRIVATE XImage* ImplCreateXImage( SalDisplay* pSalDisp,
-                                            int nScreen, long nDepth, 
+                                            int nScreen, long nDepth,
 									  		const SalTwoRect& rTwoRect ) const;
 
     SAL_DLLPRIVATE ImplSalDDB* ImplGetDDB( Drawable, int nScreen, long nDrawableDepth,
                                            const SalTwoRect& ) const;
-	void    ImplDraw( Drawable aDrawable, int nScreen, long nDrawableDepth, 
+	void    ImplDraw( Drawable aDrawable, int nScreen, long nDrawableDepth,
                       const SalTwoRect& rTwoRect, const GC& rGC ) const;
-						
-public:					
-								
+
+public:
+
     X11SalBitmap();
     virtual ~X11SalBitmap();
 
     // overload pure virtual methods
-	virtual bool			Create( const Size& rSize, 
-                            sal_uInt16 nBitCount, 
+	virtual bool			Create( const Size& rSize,
+                            sal_uInt16 nBitCount,
 							const BitmapPalette& rPal );
 	virtual bool			Create( const SalBitmap& rSalBmp );
-	virtual bool			Create( const SalBitmap& rSalBmp, 
+	virtual bool			Create( const SalBitmap& rSalBmp,
                                     SalGraphics* pGraphics );
 	virtual bool			Create( const SalBitmap& rSalBmp,
                                     sal_uInt16 nNewBitCount );
-						
+
 	virtual void			Destroy();
-						
+
 	virtual Size			GetSize() const;
 	virtual sal_uInt16			GetBitCount() const;
-						
+
 	virtual BitmapBuffer*	AcquireBuffer( bool bReadOnly );
 	virtual void			ReleaseBuffer( BitmapBuffer* pBuffer, bool bReadOnly );
     virtual bool            GetSystemData( BitmapSystemData& rData );
@@ -134,14 +134,14 @@ private:
 
     static void	ImplDraw( Drawable aSrcDrawable, long nSrcDrawableDepth,
                           Drawable aDstDrawable, long nDstDrawableDepth,
-                          long nSrcX, long nSrcY, 
-                          long nDestWidth, long nDestHeight, 
+                          long nSrcX, long nSrcY,
+                          long nDestWidth, long nDestHeight,
                           long nDestX, long nDestY, const GC& rGC );
-					
-public:				
-					
+
+public:
+
 					ImplSalDDB( XImage* pImage,
-                                Drawable aDrawable, int nScreen, 
+                                Drawable aDrawable, int nScreen,
 								const SalTwoRect& rTwoRect );
 					ImplSalDDB( Drawable aDrawable,
                                 int nScreen,
@@ -150,18 +150,18 @@ public:
                     ImplSalDDB( Display* pDisplay,
                                 XLIB_Window hWindow,
                                 int nScreen,
-                                XImage* pImage); 
+                                XImage* pImage);
 					~ImplSalDDB();
-					
+
 	Pixmap			ImplGetPixmap() const { return maPixmap; }
 	long			ImplGetWidth() const { return maTwoRect.mnDestWidth; }
 	long			ImplGetHeight() const { return maTwoRect.mnDestHeight; }
 	long			ImplGetDepth() const { return mnDepth; }
 	sal_uIntPtr			ImplGetMemSize() const { return( ( maTwoRect.mnDestWidth * maTwoRect.mnDestHeight * mnDepth ) >> 3 ); }
     int             ImplGetScreen() const { return mnScreen; }
-					
+
 	bool			ImplMatches( int nScreen, long nDepth, const SalTwoRect& rTwoRect ) const;
-	void			ImplDraw( Drawable aDrawable, long nDrawableDepth, 
+	void			ImplDraw( Drawable aDrawable, long nDrawableDepth,
                               const SalTwoRect& rTwoRect, const GC& rGC ) const;
 };
 
@@ -176,8 +176,8 @@ private:
 	List			maBmpList;
 	sal_uIntPtr			mnTotalSize;
 
-public:				
-					
+public:
+
 					ImplSalBitmapCache();
 					~ImplSalBitmapCache();
 

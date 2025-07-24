@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -63,7 +63,7 @@ public:
 
 	virtual ImplMacTextStyle* CreateMacTextStyle( const ImplFontSelectData& ) const = 0;
 	virtual int             GetFontTable( const char pTagName[5], unsigned char* ) const = 0;
-    
+
 	const ImplFontCharMap*	GetImplFontCharMap() const;
 	bool					HasChar( sal_uInt32 cChar ) const;
 
@@ -167,7 +167,7 @@ protected:
     /// path representing current clip region
     CGMutablePathRef                        mxClipPath;
 
-    /// Drawing colors    
+    /// Drawing colors
     /// pen color RGBA
     RGBAColor                               maLineColor;
     /// brush color RGBA
@@ -181,7 +181,7 @@ protected:
 	bool                                    mbNonAntialiasedText;
 
 	// Graphics types
-    
+
     /// is this a printer graphics
 	bool                                    mbPrinter;
     /// is this a virtual device graphics
@@ -190,12 +190,12 @@ protected:
 	bool                                    mbWindow;
 
 public:
-    AquaSalGraphics();	
+    AquaSalGraphics();
     virtual ~AquaSalGraphics();
 
     bool                IsPenVisible() const	{ return maLineColor.IsVisible(); }
     bool                IsBrushVisible() const	{ return maFillColor.IsVisible(); }
-    
+
     void                SetWindowGraphics( AquaSalFrame* pFrame );
     void                SetPrinterGraphics( CGContextRef, long nRealDPIX, long nRealDPIY, double fFakeScale );
     void                SetVirDevGraphics( CGLayerRef, CGContextRef, int nBitDepth = 0 );
@@ -203,7 +203,7 @@ public:
     void                initResolution( NSWindow* );
     void                copyResolution( AquaSalGraphics& );
     void                updateResolution();
-    
+
     bool                IsWindowGraphics()      const   { return mbWindow; }
     bool                IsPrinterGraphics()     const   { return mbPrinter; }
     bool                IsVirDevGraphics()      const   { return mbVirDev; }
@@ -211,7 +211,7 @@ public:
     void                setGraphicsFrame( AquaSalFrame* pFrame ) { mpFrame = pFrame; }
 
     void                ImplDrawPixel( long nX, long nY, const RGBAColor& ); // helper to draw single pixels
-    
+
     bool                CheckContext();
     void                UpdateWindow( NSRect& ); // delivered in NSView coordinates
 	void				RefreshRect( const CGRect& );
@@ -239,10 +239,10 @@ public:
     virtual sal_Bool	drawPolyLineBezier( sal_uInt32 nPoints, const SalPoint* pPtAry, const sal_uInt8* pFlgAry );
     virtual sal_Bool	drawPolygonBezier( sal_uInt32 nPoints, const SalPoint* pPtAry, const sal_uInt8* pFlgAry );
     virtual sal_Bool	drawPolyPolygonBezier( sal_uInt32 nPoly, const sal_uInt32* pPoints, const SalPoint* const* pPtAry, const sal_uInt8* const* pFlgAry );
-    virtual bool        drawPolyLine( 
-        const ::basegfx::B2DPolygon&, 
-        double fTransparency, 
-        const ::basegfx::B2DVector& rLineWidths, 
+    virtual bool        drawPolyLine(
+        const ::basegfx::B2DPolygon&,
+        double fTransparency,
+        const ::basegfx::B2DVector& rLineWidths,
         basegfx::B2DLineJoin,
         com::sun::star::drawing::LineCap eLineCap);
 

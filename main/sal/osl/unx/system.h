@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -78,7 +78,7 @@
 #   include <dlfcn.h>
 #	include <endian.h>
 #	include <sys/time.h>
-#	include <semaphore.h> 
+#	include <semaphore.h>
 #	if __BYTE_ORDER == __LITTLE_ENDIAN
 #		define _LITTLE_ENDIAN
 #	elif __BYTE_ORDER == __BIG_ENDIAN
@@ -88,7 +88,7 @@
 #	elif __BYTE_ORDER == __PDP_ENDIAN
 #		define _PDP_ENDIAN
 #	endif
-#	define 	IORESOURCE_TRANSFER_BSD 
+#	define 	IORESOURCE_TRANSFER_BSD
 #	define 	IOCHANNEL_TRANSFER_BSD_RENO
 #	define	pthread_testcancel()
 #	define  NO_PTHREAD_PRIORITY
@@ -112,7 +112,7 @@
 #	elif __BYTE_ORDER == __PDP_ENDIAN
 #		define _PDP_ENDIAN
 #	endif
-#	define 	IORESOURCE_TRANSFER_BSD 
+#	define 	IORESOURCE_TRANSFER_BSD
 #	define 	IOCHANNEL_TRANSFER_BSD_RENO
 #	define	pthread_testcancel()
 #	define  NO_PTHREAD_RTL
@@ -149,7 +149,7 @@
 #   elif BYTE_ORDER == PDP_ENDIAN
 #   	define _PDP_ENDIAN_OO
 #   endif
-#	define 	IORESOURCE_TRANSFER_BSD 
+#	define 	IORESOURCE_TRANSFER_BSD
 #	define 	IOCHANNEL_TRANSFER_BSD_RENO
 #	define	pthread_testcancel()
 #	define  NO_PTHREAD_PRIORITY
@@ -176,7 +176,7 @@
 #   include <vm/swap_pager.h>
 #	include <sys/un.h>
 #   include <netinet/tcp.h>
-#	define 	IORESOURCE_TRANSFER_BSD 
+#	define 	IORESOURCE_TRANSFER_BSD
 #   include <machine/endian.h>
 #   if BYTE_ORDER == LITTLE_ENDIAN
 #   	undef _BIG_ENDIAN
@@ -214,7 +214,7 @@ extern int pthread_cancel(pthread_t);
 extern unsigned int nanosleep(unsigned int);
 #	define  SLEEP_TIMESPEC(timespec)  	(timespec .tv_sec > 0) ? sleep(timespec .tv_sec), nanosleep(timespec .tv_nsec) : nanosleep(timespec .tv_nsec)
 #	define  PATH_MAX 					_POSIX_PATH_MAX
-#	define	S_ISSOCK					S_ISFIFO 
+#	define	S_ISSOCK					S_ISFIFO
 #	define	PTHREAD_SIGACTION 			pthread_sigaction
 #	define	STAT_PARENT					stat
 #endif
@@ -278,7 +278,7 @@ extern unsigned int nanosleep(unsigned int);
 #	include <sys/filio.h>
 #	include <dlfcn.h>
 #	include <sys/isa_defs.h>
-#	define 	IORESOURCE_TRANSFER_SYSV 
+#	define 	IORESOURCE_TRANSFER_SYSV
 #	define 	IOCHANNEL_TRANSFER_BSD
 #	define  LIBPATH "LD_LIBRARY_PATH"
 #	define  OLD_SHADOW_API
@@ -292,7 +292,7 @@ extern unsigned int nanosleep(unsigned int);
 #	ifndef ETIME
 #		define  ETIME ETIMEDOUT
 #	endif
-#	include <dlfcn.h>    
+#	include <dlfcn.h>
 #	include <pthread.h>
 #	include <sys/file.h>
 #	include <sys/ioctl.h>
@@ -301,10 +301,10 @@ extern unsigned int nanosleep(unsigned int);
 #	include <netinet/tcp.h>
 #	include <machine/endian.h>
 #	include <sys/time.h>
-#	include <sys/semaphore.h> 
+#	include <sys/semaphore.h>
 /* fixme are premac and postmac still needed here? */
 #	include <premac.h>
-#	include <mach-o/dyld.h> 
+#	include <mach-o/dyld.h>
 #	include <postmac.h>
 #	if BYTE_ORDER == LITTLE_ENDIAN
 #		ifndef _LITTLE_ENDIAN
@@ -364,7 +364,7 @@ int macxp_resolveAlias(char *path, int buflen);
 #ifndef NORMALIZE_TIMESPEC
 #	define NORMALIZE_TIMESPEC(timespec) \
   		timespec . tv_sec  += timespec . tv_nsec / 1000000000; \
-  		timespec . tv_nsec %= 1000000000; 
+  		timespec . tv_nsec %= 1000000000;
 #endif
 
 #ifndef SET_TIMESPEC
@@ -378,7 +378,7 @@ int macxp_resolveAlias(char *path, int buflen);
 #	define SLEEP_TIMESPEC(timespec) nanosleep(&timespec, 0)
 #endif
 
-#ifndef INIT_GROUPS	
+#ifndef INIT_GROUPS
 #	define  INIT_GROUPS(name, gid)	((setgid((gid)) == 0) && (initgroups((name), (gid)) == 0))
 #endif
 
@@ -398,7 +398,7 @@ extern pthread_t _pthread_none_;
 #ifndef PTHREAD_ATTR_DEFAULT
 #	define PTHREAD_ATTR_DEFAULT 		NULL
 #endif
-#ifndef PTHREAD_MUTEXATTR_DEFAULT 
+#ifndef PTHREAD_MUTEXATTR_DEFAULT
 #	define PTHREAD_MUTEXATTR_DEFAULT 	NULL
 #endif
 #ifndef PTHREAD_CONDATTR_DEFAULT

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -73,29 +73,29 @@ public:
     bool                            mbPositioned:1;
     bool                            mbSized:1;
     bool                            mbPresentation:1;
-    
+
     sal_uLong                           mnStyle;
     unsigned int                    mnStyleMask;            // our style mask from NSWindow creation
-    
+
     sal_uLong                           mnLastEventTime;
     unsigned int                    mnLastModifierFlags;
     AquaSalMenu*                    mpMenu;
-    
+
     SalExtStyle                     mnExtStyle;             // currently document frames are marked this way
-    
+
     PointerStyle                    mePointerStyle;         // currently active pointer style
-    
+
     NSTrackingRectTag               mnTrackingRectTag;      // used to get enter/leave messages
 
     CGMutablePathRef                mrClippingPath;         // used for "shaping"
     std::vector< CGRect >           maClippingRects;
-    
+
     std::list<AquaBlinker*>         maBlinkers;
-    
+
     Rectangle                       maInvalidRect;
-    
+
     sal_uLong                           mnICOptions;
-    
+
     boost::shared_ptr< Timer >      mpActivityTimer; // Timer to prevent system sleep during presentation
 public:
     /** Constructor
@@ -166,21 +166,21 @@ public:
     virtual void SetClientSize( long nWidth, long nHeight );
 
     void UpdateFrameGeometry();
-    
+
     // trigger painting of the window
     void SendPaintEvent( const Rectangle* pRect = NULL );
 
     static bool isAlive( const AquaSalFrame* pFrame )
     { return GetSalData()->maFrameCheck.find( pFrame ) != GetSalData()->maFrameCheck.end(); }
-    
+
     static AquaSalFrame* GetCaptureFrame() { return s_pCaptureFrame; }
-    
+
     NSWindow* getNSWindow() const { return mpNSWindow; }
     NSView* getNSView() const { return mpNSView; }
     unsigned int getStyleMask() const { return mnStyleMask; }
-    
+
     void getResolution( sal_Int32& o_rDPIX, sal_Int32& o_rDPIY );
-    
+
     // actually the follwing methods do the same thing: flipping y coordinates
     // but having two of them makes clearer what the coordinate system
     // is supposed to be before and after
@@ -189,11 +189,11 @@ public:
 
     void VCLToCocoa( NSPoint& io_rPoint, bool bRelativeToScreen = true );
     void CocoaToVCL( NSPoint& io_Point, bool bRelativeToScreen = true );
-    
+
     NSCursor* getCurrentCursor() const;
-    
+
     CGMutablePathRef getClipPath() const { return mrClippingPath; }
-    
+
     // called by VCL_NSApplication to indicate screen settings have changed
     void screenParametersChanged();
 
@@ -201,12 +201,12 @@ public:
     /** do things on initial show (like centering on parent or on screen)
     */
     void initShow();
-    
+
     void initWindowAndView();
 
- private: // data    
+ private: // data
     static AquaSalFrame*                   s_pCaptureFrame;
-    
+
     // make AquaSalFrame non copyable
     AquaSalFrame( const AquaSalFrame& );
     AquaSalFrame& operator=(const AquaSalFrame&);

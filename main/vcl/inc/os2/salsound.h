@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -41,7 +41,7 @@
 class Os2SalSound : public SalSound
 {
 private:
-						
+
 	static HMODULE		mhMCILib;
 	static ULONG		mnSoundState;
 	static void*		mpMCIFnc;
@@ -59,19 +59,19 @@ public:
     void                ImplSetError( ULONG nMciErr );
 	void				ImplNotify( SoundNotification eNotification, ULONG nError );
 
-public:					
+public:
 
 	BOOL				Create();
-	//static BOOL			IsValid() { return( SOUND_STATE_VALID == Os2SalSound::mnSoundState ); } 
+	//static BOOL			IsValid() { return( SOUND_STATE_VALID == Os2SalSound::mnSoundState ); }
 	//BOOL				Init( SalFrame* pFrame, const String& rSoundName, ULONG& rSoundLen );
 	//BOOL				Init( SalFrame* pFrame, const BYTE* pSound, ULONG nDataLen, ULONG& rSoundLen );
 
-	void				SetNotifyProc( void* pInst, SALSOUNDPROC pProc ) 
+	void				SetNotifyProc( void* pInst, SALSOUNDPROC pProc )
 							{ mpInst = pInst; mpProc = pProc; }
 public:
     Os2SalSound();
     virtual ~Os2SalSound();
-    
+
     virtual bool		IsValid();
     virtual bool		Init( const String& rSoundName, ULONG& rSoundLen );
    	virtual void		Play( ULONG nStartTime, ULONG nPlayTime, bool bLoop );

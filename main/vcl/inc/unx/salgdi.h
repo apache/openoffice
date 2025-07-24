@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -196,7 +196,7 @@ protected:
     void                    DrawServerAAFontString( const ServerFontLayout& );
     bool                    DrawServerAAForcedString( const ServerFontLayout& );
     void                    DrawCairoAAFontString( const ServerFontLayout& );
-    
+
     void freeResources();
 public:
                             X11SalGraphics();
@@ -284,10 +284,10 @@ public:
                                              const sal_uInt32* pPoints,
                                              PCONSTSALPOINT* pPtAry );
     virtual bool			drawPolyPolygon( const ::basegfx::B2DPolyPolygon&, double fTransparency );
-    virtual bool			drawPolyLine( 
-        const ::basegfx::B2DPolygon&, 
-        double fTransparency, 
-        const ::basegfx::B2DVector& rLineWidth, 
+    virtual bool			drawPolyLine(
+        const ::basegfx::B2DPolygon&,
+        double fTransparency,
+        const ::basegfx::B2DVector& rLineWidth,
         basegfx::B2DLineJoin,
         com::sun::star::drawing::LineCap);
     virtual bool			drawFilledTrapezoids( const ::basegfx::B2DTrapezoid*, int nTrapCount, double fTransparency );
@@ -342,7 +342,7 @@ public:
         const SalBitmap& rSourceBitmap,
         const SalBitmap* pAlphaBitmap);
 
-    virtual bool		    drawAlphaRect( long nX, long nY, long nWidth, 
+    virtual bool		    drawAlphaRect( long nX, long nY, long nWidth,
                                            long nHeight, sal_uInt8 nTransparency );
 
     virtual SystemGraphicsData GetGraphicsData() const;
