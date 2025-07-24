@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -37,14 +37,14 @@ public:
 		rgsabound[0].cElements= count;
 		rgsabound[0].lLbound= 0;
 		m_array= SafeArrayCreate( destVartype, 1, rgsabound);
-		SafeArrayLock( m_array);	
-		
+		SafeArrayLock( m_array);
+
 		void* pData;
 		if( m_array && (SUCCEEDED( SafeArrayAccessData( m_array, (void**)&pData)) ) )
 		{
 
 			for( int i=0; i< count; i++)
-			{	
+			{
 				CComVariant varSource( parParams[i]);
 				switch (destVartype)
 				{
@@ -140,7 +140,7 @@ public:
 		}
 		SafeArrayUnaccessData( m_array);
 	}
-	~SmartArray(){ 
+	~SmartArray(){
 		SafeArrayUnlock( m_array);
 		SafeArrayDestroy( m_array );
 	}
@@ -157,7 +157,7 @@ class SmartArray<IUnknown*>
 	SAFEARRAY *m_array;
 public:
 
-	SmartArray( sourceType * parParams, int count, VARTYPE destVartype); 
+	SmartArray( sourceType * parParams, int count, VARTYPE destVartype);
 //	{
 //		ATLTRACE("SmartArray<IUnknown>");
 //		HRESULT hr= S_OK;
@@ -165,14 +165,14 @@ public:
 //		rgsabound[0].cElements= count;
 //		rgsabound[0].lLbound= 0;
 //		m_array= SafeArrayCreateVector( VT_UNKNOWN, 0, count);
-//		SafeArrayLock( m_array);	
-//		
+//		SafeArrayLock( m_array);
+//
 //		IUnknown* *pData;
 //		if( m_array && (SUCCEEDED( SafeArrayAccessData( m_array, (void**)&pData)) ) )
 //		{
 //
 //			for( int i=0; i< count; i++)
-//			{	
+//			{
 //				CComVariant varSource( parParams[i]);
 //				switch (destVartype)
 //				{
@@ -194,7 +194,7 @@ public:
 //		}
 //		SafeArrayUnaccessData( m_array);
 //	}
-	~SmartArray(){ 
+	~SmartArray(){
 		SafeArrayUnlock( m_array);
 		SafeArrayDestroy( m_array );
 	}
@@ -213,13 +213,13 @@ template <> SmartArray <IUnknown*>::SmartArray(sourceType * parParams, int count
 	rgsabound[0].cElements= count;
 	rgsabound[0].lLbound= 0;
 	m_array= SafeArrayCreateVector( VT_UNKNOWN, 0, count);
-	SafeArrayLock( m_array);	
-	
+	SafeArrayLock( m_array);
+
 	IUnknown* *pData;
 	if( m_array && (SUCCEEDED( SafeArrayAccessData( m_array, (void**)&pData)) ) )
 	{
 		for( int i=0; i< count; i++)
-		{	
+		{
 			pData[i]= parParams[i];
 			pData[i]->AddRef();
 		}

@@ -29,7 +29,7 @@ in this Software without prior written authorization from the X Consortium.
 */
 
 
-/* 
+/*
  * This file contains machine-dependent constants for the imake utility.
  * When porting imake, read each of the steps below and add in any necessary
  * definitions.  In general you should *not* edit ccimake.c or imake.c!
@@ -88,10 +88,10 @@ in this Software without prior written authorization from the X Consortium.
 #ifdef Mips
 #  if defined(SYSTYPE_BSD) || defined(BSD) || defined(BSD43)
 #    define imake_ccflags "-DBSD43"
-#  else 
+#  else
 #    define imake_ccflags "-DSYSV"
 #  endif
-#endif 
+#endif
 
 #ifdef is68k
 #define imake_ccflags "-Dluna -Duniosb"
@@ -162,7 +162,7 @@ in this Software without prior written authorization from the X Consortium.
 #endif
 
 /* this is for OS/2 under EMX. This won't work with DOS */
-#if defined(__EMX__) 
+#if defined(__EMX__)
 #define imake_ccflags "-DBSD43"
 #endif
 
@@ -252,17 +252,17 @@ in this Software without prior written authorization from the X Consortium.
 /*
  * Step 5:  cpp_argv
  *     The following table contains the flags that should be passed
- *     whenever a Makefile is being generated.  If your preprocessor 
+ *     whenever a Makefile is being generated.  If your preprocessor
  *     doesn't predefine any unique symbols, choose one and add it to the
  *     end of this table.  Then, do the following:
- * 
+ *
  *         a.  Use this symbol in Imake.tmpl when setting MacroFile.
  *         b.  Put this symbol in the definition of BootstrapCFlags in your
  *             <platform>.cf file.
- *         c.  When doing a make World, always add "BOOTSTRAPCFLAGS=-Dsymbol" 
+ *         c.  When doing a make World, always add "BOOTSTRAPCFLAGS=-Dsymbol"
  *             to the end of the command line.
- * 
- *     Note that you may define more than one symbol (useful for platforms 
+ *
+ *     Note that you may define more than one symbol (useful for platforms
  *     that support multiple operating systems).
  */
 
@@ -343,7 +343,7 @@ char *cpp_argv[ARGUMENTS] = {
 #ifdef MOTOROLA
 	"-DMOTOROLA",    /* Motorola Delta Systems */
 # ifdef SYSV
-	"-DSYSV", 
+	"-DSYSV",
 # endif
 # ifdef SVR4
 	"-DSVR4",

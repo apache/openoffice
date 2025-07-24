@@ -1,39 +1,39 @@
 /* odma.h - Definitions, prototypes, etc. for Open Document Management API
 	(ODMA) version 2.0.
                OPEN DOCUMENT MANAGEMENT API LICENSE 1.0
-                     
+
                  ODMA 2.0 SPECIFICATIONS AND SOFTWARE
                  ------------------------------------
-                 
+
                Copyright © 1994-1998 AIIM International
-               
+
 LICENSE:
 
     Redistribution and use in source and binary forms, with or
-    without modifications, are permitted provided that the 
+    without modifications, are permitted provided that the
     following conditions are met:
-    
+
       * Redistributions of source code must retain the above
         copyright notice, this list of conditions and the
         following disclaimer.
-        
+
       * Redistributions in binary form must reproduce the
         above copyright notice, this list of conditions and
         the following disclaimer in the documentation and/or
         other materials provided with the distribution.
-        
+
       * Neither the name of AIIM International nor the names
         of its contributors may be used to endorse or promote
         products derived from this software without specific
         prior written permission.
-        
+
 DISCLAIMER:
 
     THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND
     CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES,
     INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF
     MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
-    DISCLAIMED.  IN NO EVENT SHALL THE COPYRIGHT OWNER OR 
+    DISCLAIMED.  IN NO EVENT SHALL THE COPYRIGHT OWNER OR
     CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
     SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING
     BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
@@ -43,7 +43,7 @@ DISCLAIMER:
     NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
     OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
     SUCH DAMAGE.
-    
+
 	COPYRIGHT (C) 1994, 1995
 	AIIM International
 	All Right Reserved
@@ -70,7 +70,7 @@ typedef int ODMSTATUS;
 	#define ODM_DOCID_MAX		255		/* Other platforms */
 #endif
 
-#define ODM_DMSID_MAX			9		/* Max length of a DMS ID including the 
+#define ODM_DMSID_MAX			9		/* Max length of a DMS ID including the
 										/* terminating NULL character.  */
 
 #define ODM_APPID_MAX			16		/* Max length of a application ID including
@@ -120,22 +120,22 @@ typedef int ODMSTATUS;
 #define ODM_E_CANCEL		2		/* Action was cancelled at user's request */
 #define ODM_E_NODMS			3		/* DMS not registered */
 #define ODM_E_CANTINIT		4		/* DMS failed to initialize */
-#define ODM_E_VERSION		5		/* DMS doesn't support the requested 
+#define ODM_E_VERSION		5		/* DMS doesn't support the requested
 									           version of ODMA */
-#define ODM_E_APPSELECT		6        /* User has indicated that he wants to use 
-                                       the application's file selection 
-                                       capabilities rather than those of the 
+#define ODM_E_APPSELECT		6        /* User has indicated that he wants to use
+                                       the application's file selection
+                                       capabilities rather than those of the
                                        DMS. */
-#define ODM_E_USERINT		7        /* Requested action cannot be performed 
-                                       without user interaction, but silent 
+#define ODM_E_USERINT		7        /* Requested action cannot be performed
+                                       without user interaction, but silent
                                        mode was specified. */
 #define ODM_E_HANDLE		8        /* The DMHANDLE argument was invalid. */
-#define ODM_E_ACCESS		9        /* User does not have requested access 
+#define ODM_E_ACCESS		9        /* User does not have requested access
                                        rights to specified document. */
-#define ODM_E_INUSE			10        /* Document is currently in use and cannot 
+#define ODM_E_INUSE			10        /* Document is currently in use and cannot
                                        be accessed in specified mode. */
 #define ODM_E_DOCID			11        /* Invalid document ID */
-#define ODM_E_OPENMODE		12        /* The specified action is incompatible 
+#define ODM_E_OPENMODE		12        /* The specified action is incompatible
                                        with the mode in which the document was
                                        opened. */
 #define ODM_E_NOOPEN		13        /* The specified document is not open. */
@@ -161,13 +161,13 @@ typedef int ODMSTATUS;
 // Actions for ODMActivate
 #define ODM_NONE			0        /* No specific action is requested.  */
 #define ODM_DELETE			1        /* Delete the specified document.  */
-#define ODM_SHOWATTRIBUTES	2        /* Display the specified document's profile 
+#define ODM_SHOWATTRIBUTES	2        /* Display the specified document's profile
                                        or attributes. */
 #define ODM_EDITATTRIBUTES	3        /* Edit the specified document's profile or
                                        attributes. */
-#define ODM_VIEWDOC			4        /* Display the specified document in a 
+#define ODM_VIEWDOC			4        /* Display the specified document in a
                                        viewer window. */
-#define ODM_OPENDOC			5        /* Open the specified document in its 
+#define ODM_OPENDOC			5        /* Open the specified document in its
                                        native application.  */
 // ODMA 2.0
 #define ODM_NEWDOC			6
@@ -181,7 +181,7 @@ typedef int ODMSTATUS;
 #define ODM_AUTHOR			1        /* Author of the document. */
 #define ODM_NAME			2        /* Descriptive name of the document.  */
 #define ODM_TYPE			3        /* Type of the document.  */
-#define ODM_TITLETEXT		4        /* Suggested text to display in the 
+#define ODM_TITLETEXT		4        /* Suggested text to display in the
                                        document window's title bar. */
 #define ODM_DMS_DEFINED		5        /* DMS defined data. */
 #define ODM_CONTENTFORMAT	6        /* String describing document's format */
@@ -240,15 +240,15 @@ typedef int ODMSTATUS;
 #define ODM_SILENT			16        /* Don't interact with the user while
                                        fulfilling this request. */
 //ODMA 2.0
-#define ODM_VERSION_SAME	1 
+#define ODM_VERSION_SAME	1
 #define ODM_VERSION_MAJOR	2
 #define ODM_VERSION_MINOR	4
-#define ODM_VERSION_CHANGED	8 
+#define ODM_VERSION_CHANGED	8
 #define ODM_ALT_DELETE		32
 
-//ODMA 2.0 DMS Info Flags 
-#define ODM_EXT_QUERY		1	
-#define ODM_EXT_WORKFLOW 	2	
+//ODMA 2.0 DMS Info Flags
+#define ODM_EXT_QUERY		1
+#define ODM_EXT_WORKFLOW 	2
 
 // Flags for Query Interface
 #define ODM_ALL				1		// All DMS's should be searched

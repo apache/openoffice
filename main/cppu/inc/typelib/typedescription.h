@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -57,7 +57,7 @@ typedef struct _typelib_TypeDescriptionReference
 	*/
 	typelib_TypeClass					eTypeClass;
 	/** fully qualified name of type
-	*/ 
+	*/
 	rtl_uString *						pTypeName;
 	/** pointer to full typedescription; this value is only valid if the type is never swapped out
 	*/
@@ -72,7 +72,7 @@ typedef struct _typelib_TypeDescriptionReference
 
 /** Full type description of a type. Memory layout of this struct is identical to the
     typelib_TypeDescriptionReference for the first six members.
-    So a typedescription can be used as type reference. 
+    So a typedescription can be used as type reference.
 */
 typedef struct _typelib_TypeDescription
 {
@@ -86,9 +86,9 @@ typedef struct _typelib_TypeDescription
 	sal_Int32							nStaticRefCount;
 	/** type class of type
 	*/
-	typelib_TypeClass					eTypeClass;	
+	typelib_TypeClass					eTypeClass;
 	/** fully qualified name of type
-	*/ 
+	*/
 	rtl_uString *						pTypeName;
 	/** pointer to self to distinguish reference from description; for internal use only
 	*/
@@ -99,7 +99,7 @@ typedef struct _typelib_TypeDescription
 	/** reserved for future use; 0 if not used
 	*/
 	void *								pReserved;
-	
+
 	/** flag to determine whether the description is complete:
         compound and union types lack of member names, enums lack of member types and names,
 		interfaces lack of members and table init.
@@ -127,11 +127,11 @@ typedef struct _typelib_CompoundTypeDescription
 	/** inherits all members of typelib_TypeDescription
 	*/
 	typelib_TypeDescription				aBase;
-	
+
 	/** pointer to base type description, else 0
 	*/
 	struct _typelib_CompoundTypeDescription * pBaseTypeDescription;
-	
+
 	/** number of members
 	*/
 	sal_Int32							nMembers;
@@ -178,11 +178,11 @@ typedef struct _typelib_UnionTypeDescription
 	/** inherits all members of typelib_TypeDescription
 	*/
 	typelib_TypeDescription				aBase;
-	
+
 	/** type of the discriminant
 	*/
 	typelib_TypeDescriptionReference *	pDiscriminantTypeRef;
-	
+
 	/** union default descriminant
 	*/
 	sal_Int64							nDefaultDiscriminant;
@@ -213,7 +213,7 @@ typedef struct _typelib_IndirectTypeDescription
 	/** inherits all members of typelib_TypeDescription
 	*/
 	typelib_TypeDescription				aBase;
-	
+
 	/** array, sequence: pointer to element type
 	*/
 	typelib_TypeDescriptionReference *	pType;
@@ -226,7 +226,7 @@ typedef struct _typelib_ArrayTypeDescription
 	/** inherits all members of typelib_IndirectTypeDescription
 	*/
 	typelib_IndirectTypeDescription		aBase;
-	
+
 	/** number of dimensions
 	*/
 	sal_Int32							nDimensions;
@@ -245,7 +245,7 @@ typedef struct _typelib_EnumTypeDescription
 	/** inherits all members of typelib_TypeDescription
 	*/
 	typelib_TypeDescription				aBase;
-	
+
 	/** first value of the enum
 	*/
 	sal_Int32							nDefaultEnumValue;
@@ -288,7 +288,7 @@ typedef struct _typelib_InterfaceMemberTypeDescription
 	/** inherits all members of typelib_TypeDescription
 	*/
 	typelib_TypeDescription				aBase;
-	
+
 	/** position of member in the interface including the number of members of
         any base interfaces
 	*/
@@ -306,7 +306,7 @@ typedef struct _typelib_InterfaceMethodTypeDescription
 	/** inherits all members of typelib_InterfaceMemberTypeDescription
 	*/
 	typelib_InterfaceMemberTypeDescription		aBase;
-	
+
 	/** type of the return value
 	*/
 	typelib_TypeDescriptionReference *			pReturnTypeRef;
@@ -355,10 +355,10 @@ typedef struct _typelib_InterfaceAttributeTypeDescription
 	/** inherits all members of typelib_InterfaceMemberTypeDescription
 	*/
 	typelib_InterfaceMemberTypeDescription		aBase;
-	
+
 	/** determines whether attribute is read only
 	*/
-	sal_Bool									bReadOnly;	   
+	sal_Bool									bReadOnly;
 	/** type of the attribute
 	*/
 	typelib_TypeDescriptionReference *			pAttributeTypeRef;
@@ -438,7 +438,7 @@ typedef struct _typelib_InterfaceTypeDescription
 	/** inherits all members of typelib_TypeDescription
 	*/
 	typelib_TypeDescription						aBase;
-	
+
 	/** pointer to base type description, else 0
 
         @deprecated
@@ -562,7 +562,7 @@ typedef struct _typelib_Union_Init
 
 /** Creates a union type description. All discriminants are handled as int64 values.
 	The pDiscriminantTypeRef must be of type byte, short, ..., up to hyper.
-    
+
 	@param ppRet inout union type description
 	@param pTypeName name of union type
 	@param pDiscriminantTypeRef discriminant type
@@ -582,7 +582,7 @@ void SAL_CALL typelib_typedescription_newUnion(
 	SAL_THROW_EXTERN_C();
 
 /** Creates an enum type description.
-    
+
 	@param ppRet inout enum type description
 	@param pTypeName name of enum
 	@param nDefaultEnumValue default enum value
@@ -600,7 +600,7 @@ void SAL_CALL typelib_typedescription_newEnum(
 	SAL_THROW_EXTERN_C();
 
 /** Creates an array type description.
-    
+
 	@param ppRet inout enum type description
 	@param pElementTypeRef element type
 	@param nDimensions number of dimensions
@@ -638,7 +638,7 @@ void SAL_CALL typelib_typedescription_new(
 	SAL_THROW_EXTERN_C();
 
 /** Creates a new struct type description.
-    
+
 	@param ppRet inout type description
 	@param pTypeName name of type
 	@param pType base type;
@@ -656,7 +656,7 @@ void SAL_CALL typelib_typedescription_newStruct(
 	SAL_THROW_EXTERN_C();
 
 /** Creates an interface type description.
-    
+
 	@param ppRet inout interface type description
 	@param pTypeName the fully qualified name of the interface.
 	@param nUik1 uik part
@@ -681,7 +681,7 @@ void SAL_CALL typelib_typedescription_newInterface(
 	SAL_THROW_EXTERN_C();
 
 /** Creates a multiple-inheritance interface type description.
-    
+
 	@param ppRet inout interface type description
 	@param pTypeName the fully qualified name of the interface.
 	@param nUik1 uik part
@@ -707,7 +707,7 @@ void SAL_CALL typelib_typedescription_newMIInterface(
 	SAL_THROW_EXTERN_C();
 
 /** Creates an interface method type description.
-    
+
 	@param ppRet inout method type description
 	@param nAbsolutePosition position of member including all members of base interfaces
 	@param bOneWay determines whether method is declared oneway
@@ -733,7 +733,7 @@ void SAL_CALL typelib_typedescription_newInterfaceMethod(
 	SAL_THROW_EXTERN_C();
 
 /** Creates an interface attribute type description.
-    
+
 	@param ppRet inout attribute type description
 	@param nAbsolutePosition position of this attribute including all members of base interfaces
 	@param pAttributeName fully qualified name of attribute including interface
@@ -755,7 +755,7 @@ void SAL_CALL typelib_typedescription_newInterfaceAttribute(
 	SAL_THROW_EXTERN_C();
 
 /** Creates an extended interface attribute type description.
-    
+
 	@param ppRet inout attribute type description
 	@param nAbsolutePosition position of this attribute including all members of
     base interfaces
@@ -783,7 +783,7 @@ void SAL_CALL typelib_typedescription_newExtendedInterfaceAttribute(
     SAL_THROW_EXTERN_C();
 
 /** Increments reference count of given type description.
-    
+
 	@param pDesc type description
 */
 void SAL_CALL typelib_typedescription_acquire(
@@ -792,7 +792,7 @@ void SAL_CALL typelib_typedescription_acquire(
 
 /** Decrements reference count of given type. If reference count reaches 0, the trype description
     is deleted.
-    
+
 	@param pDesc type description
 */
 void SAL_CALL typelib_typedescription_release(
@@ -801,7 +801,7 @@ void SAL_CALL typelib_typedescription_release(
 
 /** Registers a type description and creates a type description reference. Type descriptions
     will be registered automatically if they are provided via the callback chain.
-    
+
 	@param ppNewDescription	inout description to be registered;
 */
 void SAL_CALL typelib_typedescription_register(
@@ -809,7 +809,7 @@ void SAL_CALL typelib_typedescription_register(
 	SAL_THROW_EXTERN_C();
 
 /** Tests whether two types descriptions are equal, i.e. type class and names are equal.
-    
+
 	@param p1 a type description
 	@param p2 another type description
 	@return true, if type descriptions are equal
@@ -819,7 +819,7 @@ sal_Bool SAL_CALL typelib_typedescription_equals(
 	SAL_THROW_EXTERN_C();
 
 /** Retrieves a type description via its fully qualified name.
-    
+
 	@param ppRet inout type description; *ppRet is 0, if type description was not found
 	@param pName name demanded type description
 */
@@ -828,7 +828,7 @@ void SAL_CALL typelib_typedescription_getByName(
 	SAL_THROW_EXTERN_C();
 
 /** Sets size of type description cache.
-    
+
 	@param nNewSize new size of cache
 */
 void SAL_CALL typelib_setCacheSize(
@@ -837,8 +837,8 @@ void SAL_CALL typelib_setCacheSize(
 
 /** Function pointer declaration of callback function get additional descriptions. Callbacks
     must provide complete type descriptions (see typelib_typedescription_complete())!
-    
-	@param pContext callback context 
+
+	@param pContext callback context
 	@param ppRet inout type description
 	@param pTypeName  name of demanded type description
 */
@@ -846,8 +846,8 @@ typedef void (SAL_CALL * typelib_typedescription_Callback)(
 	void * pContext, typelib_TypeDescription ** ppRet, rtl_uString * pTypeName );
 
 /** Registers callback function providing additional type descriptions.
-    
-	@param pContext callback context 
+
+	@param pContext callback context
 	@param pCallback callback function
 */
 void SAL_CALL typelib_typedescription_registerCallback(
@@ -855,8 +855,8 @@ void SAL_CALL typelib_typedescription_registerCallback(
 	SAL_THROW_EXTERN_C();
 
 /** Revokes a previously registered callback function.
-    
-	@param pContext callback context 
+
+	@param pContext callback context
 	@param pCallback registered callback function
 */
 void SAL_CALL typelib_typedescription_revokeCallback(
@@ -870,12 +870,12 @@ void SAL_CALL typelib_typedescription_revokeCallback(
 
 /** Creates a type description reference. This is a weak reference not holding the description.
 	If the description is already registered, the previous one is returned.
-    
+
 	@param ppTDR inout type description reference
 	@param eTypeClass type class of type
 	@param pTypeName name of type
 */
-void SAL_CALL typelib_typedescriptionreference_new( 
+void SAL_CALL typelib_typedescriptionreference_new(
 	typelib_TypeDescriptionReference ** ppTDR,
 	typelib_TypeClass eTypeClass,
 	rtl_uString * pTypeName )
@@ -883,7 +883,7 @@ void SAL_CALL typelib_typedescriptionreference_new(
 
 /** Creates a type description reference. This is a weak reference not holding the description.
 	If the description is already registered, the previous one is returned.
-    
+
 	@param ppTDR inout type description reference
 	@param eTypeClass type class of type
 	@param pTypeName ascii name of type
@@ -895,7 +895,7 @@ void SAL_CALL typelib_typedescriptionreference_newByAsciiName(
 	SAL_THROW_EXTERN_C();
 
 /** Increments reference count of type description reference.
-    
+
 	@param pRef type description reference
 */
 void SAL_CALL typelib_typedescriptionreference_acquire(
@@ -904,7 +904,7 @@ void SAL_CALL typelib_typedescriptionreference_acquire(
 
 /** Increments reference count of type description reference. If the reference count reaches 0,
     then the reference is deleted.
-    
+
 	@param pRef type description reference
 */
 void SAL_CALL typelib_typedescriptionreference_release(
@@ -913,7 +913,7 @@ void SAL_CALL typelib_typedescriptionreference_release(
 
 /** Retrieves the type description for a given reference. If it is not possible to resolve the
     reference, null is returned.
-    
+
 	@param ppRet inout type description
 */
 void SAL_CALL typelib_typedescriptionreference_getDescription(
@@ -921,7 +921,7 @@ void SAL_CALL typelib_typedescriptionreference_getDescription(
 	SAL_THROW_EXTERN_C();
 
 /** Tests whether two types description references are equal, i.e. type class and names are equal.
-    
+
 	@param p1 a type description reference
 	@param p2 another type description reference
 	@return true, if type description references are equal
@@ -931,7 +931,7 @@ sal_Bool SAL_CALL typelib_typedescriptionreference_equals(
 	SAL_THROW_EXTERN_C();
 
 /** Assigns a type.
-    
+
 	@param ppDest destination type
 	@param pSource source type
 */
@@ -942,7 +942,7 @@ void SAL_CALL typelib_typedescriptionreference_assign(
 
 /** Tests if values of type pAssignable can be assigned by values of type pFrom. This includes
     widening conversion (e.g., long assignable from short), as long as there is no data loss.
-    
+
 	@param pAssignable type description of value to be assigned
 	@param pFrom type description of value
 */
@@ -953,7 +953,7 @@ sal_Bool SAL_CALL typelib_typedescription_isAssignableFrom(
 
 /** Tests if values of type pAssignable can be assigned by values of type pFrom. This includes
     widening conversion (e.g., long assignable from short), as long as there is no data loss.
-    
+
 	@param pAssignable type of value to be assigned
 	@param pFrom type of value
 */
@@ -965,9 +965,9 @@ sal_Bool SAL_CALL typelib_typedescriptionreference_isAssignableFrom(
 /** Gets static type reference of standard types by type class.
 	ADDITIONAL OPT: provides Type com.sun.star.uno.Exception for typelib_TypeClass_EXCEPTION
                     and com.sun.star.uno.XInterface for typelib_TypeClass_INTERFACE.
-    
+
 	Thread synchronizes on typelib mutex.
-    
+
 	@param eTypeClass type class of basic type
 	@return pointer to type reference pointer
 */
@@ -976,7 +976,7 @@ typelib_TypeDescriptionReference ** SAL_CALL typelib_static_type_getByTypeClass(
 	SAL_THROW_EXTERN_C();
 
 /** Inits static type reference. Thread synchronizes on typelib init mutex.
-    
+
 	@param ppRef pointer to type reference pointer
 	@param eTypeClass type class of type
 	@param pTypeName ascii name of type
@@ -987,7 +987,7 @@ void SAL_CALL typelib_static_type_init(
 	SAL_THROW_EXTERN_C();
 
 /** Inits static sequence type reference. Thread synchronizes on typelib init mutex.
-    
+
 	@param ppRef pointer to type reference pointer
 	@param pElementType element type of sequence
 */
@@ -997,7 +997,7 @@ void SAL_CALL typelib_static_sequence_type_init(
 	SAL_THROW_EXTERN_C ();
 
 /** Inits static array type reference. Thread synchronizes on typelib init mutex.
-    
+
 	@param ppRef pointer to type reference pointer
 	@param pElementType element type of sequence
 	@param nDimensions number of dimensions
@@ -1052,7 +1052,7 @@ void SAL_CALL typelib_static_struct_type_init(
 	SAL_THROW_EXTERN_C();
 
 /** Inits incomplete static interface type reference. Thread synchronizes on typelib init mutex.
-    
+
 	@param ppRef pointer to type reference pointer
 	@param pTypeName name of interface
 	@param pBaseType base type
@@ -1081,7 +1081,7 @@ void SAL_CALL typelib_static_mi_interface_type_init(
     SAL_THROW_EXTERN_C();
 
 /** Inits incomplete static enum type reference. Thread synchronizes on typelib init mutex.
-    
+
 	@param ppRef pointer to type reference pointer
 	@param pTypeName name of enum
 	@param nDefaultEnumValue default enum value
@@ -1096,7 +1096,7 @@ void SAL_CALL typelib_static_enum_type_init(
     INTERFACE and ENUM type descriptions may be partly initialized (see typelib_static_...(),
     typelib_TypeDescription::bComplete). For interface type descriptions, this will also
     init index tables.
-    
+
 	@param ppTypeDescr [inout] type description to be completed (may be exchanged!)
 	@return true, if type description is complete
 */

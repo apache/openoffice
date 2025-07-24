@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -36,7 +36,7 @@ struct _typelib_TypeDescription;
 typedef sal_Sequence uno_Sequence;
 
 /** Assigns a sequence.
-    
+
 	@param ppDest		destinstaion sequence
 	@param pSource		source sequence
 	@param pTypeDescr	type description of the sequence and NOT of an element
@@ -50,7 +50,7 @@ void SAL_CALL uno_sequence_assign(
 	uno_ReleaseFunc release )
 	SAL_THROW_EXTERN_C();
 /** Assigns a sequence.
-    
+
 	@param ppDest		destinstaion sequence
 	@param pSource		source sequence
 	@param pType		type of the sequence and NOT of an element
@@ -65,7 +65,7 @@ void SAL_CALL uno_type_sequence_assign(
 	SAL_THROW_EXTERN_C();
 
 /** Constructs a new sequence with given elements.
-    
+
 	@param ppSequence		  out parameter sequence;
                               0 if memory allocation has failed
 	@param pTypeDescr		  type description of the sequence and NOT of an
@@ -83,7 +83,7 @@ sal_Bool SAL_CALL uno_sequence_construct(
 	uno_AcquireFunc acquire )
 	SAL_THROW_EXTERN_C();
 /** Constructs a new sequence with given elements.
-    
+
 	@param ppSequence		  out parameter sequence;
                               0 if memory allocation has failed
 	@param pType			  type of the sequence and NOT of an element
@@ -103,7 +103,7 @@ sal_Bool SAL_CALL uno_type_sequence_construct(
 /** Assures that the reference count of the given sequence is one.
     Otherwise a new copy of the sequence is created with a reference count
     of one.
-    
+
 	@param ppSequence		inout sequence
 	@param pTypeDescr		type description of sequence
 	@param acquire			function called each time an interface needs to
@@ -121,7 +121,7 @@ sal_Bool SAL_CALL uno_sequence_reference2One(
 /** Assures that the reference count of the given sequence is one.
     Otherwise a new copy of the sequence is created with a reference count
     of one.
-    
+
 	@param ppSequence		inout sequence
 	@param pType			type of sequence
 	@param acquire			function called each time an interface needs to
@@ -139,7 +139,7 @@ sal_Bool SAL_CALL uno_type_sequence_reference2One(
 
 /** Reallocates length of a sequence. This truncates a sequence or enlarges
     it default constructing appended elements.
-    
+
 	@param ppSequence		inout sequence
 	@param pTypeDescr		type description of sequence
 	@param nSize			new size of sequence
@@ -158,7 +158,7 @@ sal_Bool SAL_CALL uno_sequence_realloc(
 	SAL_THROW_EXTERN_C();
 /** Reallocates length of a sequence. This truncates a sequence or enlarges
     it default constructing appended elements.
-    
+
 	@param ppSequence		inout sequence
 	@param pType			type of sequence
 	@param nSize			new size of sequence

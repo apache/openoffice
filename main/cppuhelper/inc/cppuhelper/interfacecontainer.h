@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -40,7 +40,7 @@
 
 /** */ //for docpp
 namespace cppu
-{     
+{
 
 namespace detail {
 
@@ -59,7 +59,7 @@ class OInterfaceContainerHelper;
   This is the iterator of a InterfaceContainerHelper. Typically
   one constructs an instance on the stack for one firing session.
   It is not allowed to assign or copy an instance of this class.
-  
+
   @see OInterfaceContainerHelper
  */
 class CPPUHELPER_DLLPUBLIC OInterfaceIteratorHelper
@@ -68,14 +68,14 @@ public:
 	/**
 	   Create an iterator over the elements of the container. The iterator
 	   copies the elements of the conatainer. A change to the container
-       during the lifetime of an iterator is allowed and does not 
+       during the lifetime of an iterator is allowed and does not
 	   affect the iterator-instance. The iterator and the container take cares
        themself for concurrent access, no additional guarding is necessary.
-       
+
 	   Remark: The copy is on demand. The iterator copy the elements only if the container
 	   change the contents. It is not allowed to destroy the container as long
        as an iterator exist.
-	 
+
 	   @param rCont	the container of the elements.
 	 */
 	OInterfaceIteratorHelper( OInterfaceContainerHelper & rCont ) SAL_THROW( () );
@@ -90,17 +90,17 @@ public:
 		{ return nRemain != 0; }
 	/** Return the next element of the iterator. Calling this method if
 	    hasMoreElements() has returned sal_False, is an error. Cast the
-        returned pointer to the 
+        returned pointer to the
 	 */
 	::com::sun::star::uno::XInterface *	SAL_CALL next() SAL_THROW( () );
 
 	/** Removes the current element (the last one returned by next())
 	    from the underlying container. Calling this method before
 		next() has been called or calling it twice with no next()
-		inbetween is an error. 
+		inbetween is an error.
 	*/
 	void SAL_CALL remove() SAL_THROW( () );
-	
+
 private:
 	OInterfaceContainerHelper &	rCont;
 	sal_Bool					bIsList;
@@ -117,7 +117,7 @@ private:
 /**
   A container of interfaces. To access the elements use an iterator.
   This implementation is thread save.
- 
+
   @see OInterfaceIteratorHelper
  */
 class CPPUHELPER_DLLPUBLIC OInterfaceContainerHelper
@@ -132,10 +132,10 @@ public:
 		{ return pMem; }
 	inline static void SAL_CALL operator delete( void *, void * ) SAL_THROW( () )
 		{}
-	
+
 	/**
-	   Create an interface container. 
-	 
+	   Create an interface container.
+
 	   @param rMutex	the mutex to protect multi thread access.
        The lifetime must be longer than the lifetime
 	   of this object.
@@ -166,7 +166,7 @@ public:
         removeInterface() the same number of times.
         In the latter case, you will also get events fired more than once (if the interface is a
         listener interface).
-        
+
         @param rxIFace
                interface to be added; it is allowed to insert null or
                the same interface more than once
@@ -175,7 +175,7 @@ public:
     */
 	sal_Int32 SAL_CALL addInterface( const ::com::sun::star::uno::Reference< ::com::sun::star::uno::XInterface > & rxIFace ) SAL_THROW( () );
 	/** Removes an element from the container.  It uses interface equality to remove the interface.
-        
+
         @param rxIFace
                interface to be removed
         @return
@@ -194,10 +194,10 @@ public:
 
     /** Executes a functor for each contained listener of specified type, e.g.
         <code>forEach<awt::XPaintListener>(...</code>.
-        
+
         If a com::sun::star::lang::DisposedException occurs which relates to
         the called listener, then that listener is removed from the container.
-        
+
         @tpl ListenerT listener type
         @tpl FuncT unary functor type, let your compiler deduce this for you
         @param func unary functor object expecting an argument of type
@@ -205,7 +205,7 @@ public:
     */
     template <typename ListenerT, typename FuncT>
     inline void forEach( FuncT const& func );
-    
+
     /** Calls a UNO listener method for each contained listener.
 
         The listener method must take a single argument of type EventT,
@@ -213,7 +213,7 @@ public:
 
         If a com::sun::star::lang::DisposedException occurs which relates to
         the called listener, then that listener is removed from the container.
-        
+
         @tpl ListenerT UNO event listener type, let your compiler deduce this for you
         @tpl EventT event type, let your compiler deduce this for you
         @param NotificationMethod
@@ -229,10 +229,10 @@ public:
     */
     template< typename ListenerT, typename EventT >
     inline void notifyEach( void ( SAL_CALL ListenerT::*NotificationMethod )( const EventT& ), const EventT& Event );
-    
+
 private:
 friend class OInterfaceIteratorHelper;
-	/** 
+	/**
 	  bIsList == TRUE -> aData.pAsSequence of type Sequence< XInterfaceSequence >,
 	  otherwise aData.pAsInterface == of type (XEventListener *)
 	 */
@@ -302,7 +302,7 @@ inline void OInterfaceContainerHelper::notifyEach( void ( SAL_CALL ListenerT::*N
 //===================================================================
 /**
   A helper class to store interface references of different types.
- 
+
   @see OInterfaceIteratorHelper
   @see OInterfaceContainerHelper
  */
@@ -319,10 +319,10 @@ public:
 		{ return pMem; }
 	inline static void SAL_CALL operator delete( void *, void * ) SAL_THROW( () )
 		{}
-    
+
 	/**
 	  Create a container of interface containers.
-	 
+
 	  @param rMutex	the mutex to protect multi thread access.
 	 					The lifetime must be longer than the lifetime
 	 					of this object.
@@ -345,17 +345,17 @@ public:
 	 			was not created, null was returned.
 	 */
 	inline OInterfaceContainerHelper * SAL_CALL getContainer( const key & ) const SAL_THROW( () );
-	
+
 	/** Inserts an element into the container with the specified key.
         The position is not specified, thus it is not specified in which order events are fired.
-        
+
         @attention
         If you add the same interface more than once, then it will be added to the elements list
         more than once and thus if you want to remove that interface from the list, you have to call
         removeInterface() the same number of times.
         In the latter case, you will also get events fired more than once (if the interface is a
         listener interface).
-        
+
         @param rKey
                the id of the container
         @param r
@@ -364,14 +364,14 @@ public:
         @return
                 the new count of elements in the container
     */
-	inline sal_Int32 SAL_CALL addInterface( 
+	inline sal_Int32 SAL_CALL addInterface(
 		const key & rKey,
 		const ::com::sun::star::uno::Reference< ::com::sun::star::uno::XInterface > & r )
 		SAL_THROW( () );
-	
+
 	/** Removes an element from the container with the specified key.
         It uses interface equality to remove the interface.
-        
+
         @param rKey
                the id of the container
         @param rxIFace
@@ -379,11 +379,11 @@ public:
         @return
                 the new count of elements in the container
     */
-	inline sal_Int32 SAL_CALL removeInterface(	
+	inline sal_Int32 SAL_CALL removeInterface(
 		const key & rKey,
 		const ::com::sun::star::uno::Reference< ::com::sun::star::uno::XInterface > & rxIFace )
 		SAL_THROW( () );
-	
+
 	/**
 	  Call disposing on all references in the container, that
 	  support XEventListener. Then clears the container.
@@ -415,7 +415,7 @@ private:
         }
         return iter;
     }
-    
+
 	inline OMultiTypeInterfaceContainerHelperVar( const OMultiTypeInterfaceContainerHelperVar & ) SAL_THROW( () );
 	inline OMultiTypeInterfaceContainerHelperVar & operator = ( const OMultiTypeInterfaceContainerHelperVar & ) SAL_THROW( () );
 };
@@ -423,16 +423,16 @@ private:
 
 
 
-/** 
+/**
   This struct contains the standard variables of a broadcaster. Helper
   classes only know a reference to this struct instead of references
   to the four members. The access to the members must be guarded with
   rMutex.
- 
+
   The additional template parameter keyType has been added, because gcc
   can't compile addListener( const container::keyType &key ).
  */
-template < class container , class keyType > 
+template < class container , class keyType >
 struct OBroadcastHelperVar
 {
 	/** The shared mutex. */
@@ -440,7 +440,7 @@ struct OBroadcastHelperVar
 	/** ListenerContainer class is thread save. */
 	container	aLC;
 	/** Dispose call ready. */
-	sal_Bool							bDisposed; 
+	sal_Bool							bDisposed;
 	/** In dispose call. */
 	sal_Bool							bInDispose;
 
@@ -524,10 +524,10 @@ public:
 		{ return pMem; }
 	inline static void SAL_CALL operator delete( void *, void * ) SAL_THROW( () )
 		{}
-    
+
 	/**
 	  Create a container of interface containers.
-	 
+
 	  @param rMutex	the mutex to protect multi thread access.
 	 					The lifetime must be longer than the lifetime
 	 					of this object.
@@ -549,17 +549,17 @@ public:
 	 			was not created, null was returned.
 	 */
 	OInterfaceContainerHelper * SAL_CALL getContainer( const ::com::sun::star::uno::Type & rKey ) const SAL_THROW( () );
-	
+
 	/** Inserts an element into the container with the specified key.
         The position is not specified, thus it is not specified in which order events are fired.
-        
+
         @attention
         If you add the same interface more than once, then it will be added to the elements list
         more than once and thus if you want to remove that interface from the list, you have to call
         removeInterface() the same number of times.
         In the latter case, you will also get events fired more than once (if the interface is a
         listener interface).
-        
+
         @param rKey
                the id of the container
         @param r
@@ -568,14 +568,14 @@ public:
         @return
                 the new count of elements in the container
     */
-	sal_Int32 SAL_CALL addInterface( 
+	sal_Int32 SAL_CALL addInterface(
 		const ::com::sun::star::uno::Type & rKey,
 		const ::com::sun::star::uno::Reference< ::com::sun::star::uno::XInterface > & r )
 		SAL_THROW( () );
-	
+
 	/** Removes an element from the container with the specified key.
         It uses interface equality to remove the interface.
-        
+
         @param rKey
                the id of the container
         @param rxIFace
@@ -583,11 +583,11 @@ public:
         @return
                 the new count of elements in the container
     */
-	sal_Int32 SAL_CALL removeInterface(	
+	sal_Int32 SAL_CALL removeInterface(
 		const ::com::sun::star::uno::Type & rKey,
 		const ::com::sun::star::uno::Reference< ::com::sun::star::uno::XInterface > & rxIFace )
 		SAL_THROW( () );
-	
+
 	/**
 	  Call disposing on all object in the container that
 	  support XEventListener. Than clear the container.
@@ -597,7 +597,7 @@ public:
 	  Remove all elements of all containers. Does not delete the container.
 	 */
 	void SAL_CALL clear() SAL_THROW( () );
-    
+
 	typedef ::com::sun::star::uno::Type keyType;
 private:
 	void *m_pMap;
@@ -609,6 +609,6 @@ private:
 
 typedef OBroadcastHelperVar< OMultiTypeInterfaceContainerHelper , OMultiTypeInterfaceContainerHelper::keyType > OBroadcastHelper;
 
-}     
+}
 
 #endif

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -52,7 +52,7 @@ public: // for OOStatusView
     };
 private:
     std::vector< MenuBarButtonEntry >   maButtons;
-    
+
     MenuBarButtonEntry* findButtonItem( sal_uInt16 i_nItemId );
     void releaseButtonEntry( MenuBarButtonEntry& i_rEntry );
     static void statusLayout();
@@ -80,14 +80,14 @@ public:
 
     int getItemIndexByPos( sal_uInt16 nPos ) const;
     const AquaSalFrame* getFrame() const;
-    
+
     void setMainMenu();
     static void unsetMainMenu();
     static void setDefaultMenu();
     static void enableMainMenu( bool bEnable );
     static void addFallbackMenuItem( NSMenuItem* NewItem );
     static void removeFallbackMenuItem( NSMenuItem* pOldItem );
-    
+
     const std::vector< MenuBarButtonEntry >& getButtons() const { return maButtons; }
 
     bool                    mbMenuBar;          // true - Menubar, false - Menu
@@ -95,9 +95,9 @@ public:
     Menu*                   mpVCLMenu;          // the corresponding vcl Menu object
     const AquaSalFrame*     mpFrame;            // the frame to dispatch the menu events to
     AquaSalMenu*            mpParentSalMenu;    // the parent menu that contains us (and perhaps has a frame)
-    
+
     static const AquaSalMenu* pCurrentMenuBar;
-    
+
 };
 
 class AquaSalMenuItem : public SalMenuItem

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -33,7 +33,7 @@ extern "C" {
 
 typedef sal_uInt32 oslProfileOption;
 
-#define	osl_Profile_DEFAULT     0x0000    
+#define	osl_Profile_DEFAULT     0x0000
 #define	osl_Profile_SYSTEM      0x0001    /* use system depended functionality */
 #define	osl_Profile_READLOCK    0x0002    /* lock file for reading            */
 #define	osl_Profile_WRITELOCK   0x0004    /* lock file for writing            */
@@ -64,21 +64,21 @@ sal_Bool SAL_CALL osl_flushProfile(oslProfile Profile);
 /** Deprecated API.
     @deprecated
 */
-sal_Bool SAL_CALL osl_readProfileString(oslProfile Profile, 
-                              const sal_Char* pszSection, const sal_Char* pszEntry, 
-                              sal_Char* pszString, sal_uInt32 MaxLen, 
+sal_Bool SAL_CALL osl_readProfileString(oslProfile Profile,
+                              const sal_Char* pszSection, const sal_Char* pszEntry,
+                              sal_Char* pszString, sal_uInt32 MaxLen,
                               const sal_Char* pszDefault);
 /** Deprecated API.
     @deprecated
 */
-sal_Bool SAL_CALL osl_readProfileBool(oslProfile Profile, 
-                            const sal_Char* pszSection, const sal_Char* pszEntry, 
+sal_Bool SAL_CALL osl_readProfileBool(oslProfile Profile,
+                            const sal_Char* pszSection, const sal_Char* pszEntry,
 							sal_Bool Default);
 /** Deprecated API.
     @deprecated
 */
-sal_uInt32 SAL_CALL osl_readProfileIdent(oslProfile Profile, 
-                              const sal_Char* pszSection, const sal_Char* pszEntry, 
+sal_uInt32 SAL_CALL osl_readProfileIdent(oslProfile Profile,
+                              const sal_Char* pszSection, const sal_Char* pszEntry,
 							  sal_uInt32 FirstId, const sal_Char* Strings[],
 							  sal_uInt32 Default);
 
@@ -86,20 +86,20 @@ sal_uInt32 SAL_CALL osl_readProfileIdent(oslProfile Profile,
     @deprecated
 */
 sal_Bool SAL_CALL osl_writeProfileString(oslProfile Profile,
-                               const sal_Char* pszSection, const sal_Char* pszEntry, 
-							   const sal_Char* pszString);								
+                               const sal_Char* pszSection, const sal_Char* pszEntry,
+							   const sal_Char* pszString);
 /** Deprecated API.
     @deprecated
 */
 sal_Bool SAL_CALL osl_writeProfileBool(oslProfile Profile,
-                             const sal_Char* pszSection, const sal_Char* pszEntry, 
+                             const sal_Char* pszSection, const sal_Char* pszEntry,
 							 sal_Bool Value);
 /** Deprecated API.
     @deprecated
 */
 sal_Bool SAL_CALL osl_writeProfileIdent(oslProfile Profile,
-                              const sal_Char* pszSection, const sal_Char* pszEntry, 
-							  sal_uInt32 FirstId, const sal_Char* Strings[], 
+                              const sal_Char* pszSection, const sal_Char* pszEntry,
+							  sal_uInt32 FirstId, const sal_Char* Strings[],
 							  sal_uInt32 Value);
 
 /** Deprecated API.
@@ -108,7 +108,7 @@ sal_Bool SAL_CALL osl_writeProfileIdent(oslProfile Profile,
 	@return False if section or entry could not be found.
 	@deprecated
 */
-sal_Bool SAL_CALL osl_removeProfileEntry(oslProfile Profile, 
+sal_Bool SAL_CALL osl_removeProfileEntry(oslProfile Profile,
                                const sal_Char *pszSection, const sal_Char *pszEntry);
 
 /** Deprecated API.
