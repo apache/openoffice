@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -37,7 +37,7 @@ import org.openoffice.xmerge.converter.xml.sxc.pexcel.PocketExcelConstants;
 
 
 /**
- * Represents a BIFF Record describing a formula  
+ * Represents a BIFF Record describing a formula
  */
 public class Formula extends CellValue implements OfficeConstants {
 
@@ -46,13 +46,13 @@ public class Formula extends CellValue implements OfficeConstants {
     private byte[] cce		= new byte[2];
     private byte[] rgce;
 	private FormulaHelper fh = new FormulaHelper();
-   
+
 	/**
  	 * Constructs a <code>Formula</code> using specified attributes
-	 * 
+	 *
 	 * @param row row number
-	 * @param column column number 
-	 * @param cellContents contents of the cell 
+	 * @param column column number
+	 * @param cellContents contents of the cell
 	 * @param ixfe font index
  	 */
     public Formula(int row, int column, String cellContents, int ixfe, Format fmt, Workbook wb)
@@ -64,10 +64,10 @@ public class Formula extends CellValue implements OfficeConstants {
 		setCol(column);
 		setIxfe(ixfe);
 		setFormula(cellContents);
-		
+
 		String category = fmt.getCategory();
 		String value = fmt.getValue();
-		
+
 		if(category.equalsIgnoreCase(CELLTYPE_BOOLEAN)) {
 			num[0]=(byte)0x01;
 			num[1]=(byte)0x00;
@@ -106,7 +106,7 @@ public class Formula extends CellValue implements OfficeConstants {
 			num = EndianConverter.writeDouble(cellLong);
 		}
     }
-  
+
 	/**
  	 * Translates a <code>String</code> written in infix which represents a
 	 * formula into a byte[] what can be written to pocket excel file.
@@ -118,10 +118,10 @@ public class Formula extends CellValue implements OfficeConstants {
 		rgce = fh.convertCalcToPXL(inFormula);
 		cce = EndianConverter.writeShort((short) rgce.length);
 	}
-  
+
 	/**
  	 * Constructs a pocket Excel formula from the
- 	 * <code>InputStream</code> 
+ 	 * <code>InputStream</code>
  	 *
  	 * @param	is InputStream containing a Pocket Excel Data file.
  	 */
@@ -131,51 +131,51 @@ public class Formula extends CellValue implements OfficeConstants {
 	}
 
     /**
-	 * Get the hex code for this particular <code>BIFFRecord</code> 
+	 * Get the hex code for this particular <code>BIFFRecord</code>
 	 *
 	 * @return the hex code for <code>Formula</code>
 	 */
     public short getBiffType() {
         return PocketExcelConstants.FORMULA_CELL;
     }
-    
+
     /**
 	 * Reads the formula data members from the stream. Byte arrays for Strings
 	 * are doubled as they are stored as  unicode
 	 *
-	 * @return total number of bytes read 
+	 * @return total number of bytes read
 	 */
     public int read(InputStream input) throws IOException {
 
 		int numOfBytesRead = super.read(input);
 
         numOfBytesRead += input.read(num);
-        grbit				= (byte) input.read();        
+        grbit				= (byte) input.read();
         numOfBytesRead		++;
         numOfBytesRead		+= input.read(cce);
-       
+
 		int strLen = EndianConverter.readShort(cce);
         rgce = new byte[strLen];
-        input.read(rgce, 0, strLen);        
-        
+        input.read(rgce, 0, strLen);
+
         Debug.log(Debug.TRACE, " num : " + num +
-                            "\n\tgrbit : " + grbit +        
+                            "\n\tgrbit : " + grbit +
                             " cce : " + EndianConverter.readShort(cce) +
-                            " rgce : " + new String(rgce,"UTF-16LE") + 
+                            " rgce : " + new String(rgce,"UTF-16LE") +
 							"\n" + numOfBytesRead + " Bytes Read");
-        
+
         return numOfBytesRead;
     }
 
      /**
-	 * Writes the Formula record to the <code>OutputStream</code> 
+	 * Writes the Formula record to the <code>OutputStream</code>
 	 *
-	 * @param output the <code>OutputStream</code> being written to 
-	 */   
+	 * @param output the <code>OutputStream</code> being written to
+	 */
     public void write(OutputStream output) throws IOException {
 
     	output.write(getBiffType());
-		
+
 		super.write(output);
 
 	    output.write(num);
@@ -199,7 +199,7 @@ public class Formula extends CellValue implements OfficeConstants {
 	}
 
     /**
-	 * Gets the <code>String</code> representing the cells contents 
+	 * Gets the <code>String</code> representing the cells contents
 	 *
 	 * @return the <code>String</code> representing the cells contents
 	 */
@@ -207,13 +207,13 @@ public class Formula extends CellValue implements OfficeConstants {
 
 		return fh.convertPXLToCalc(rgce);
 	}
-	
+
     /**
 	 * Excel dates are the number of days since 1/1/1900. This method converts
 	 * to this date.
 	 *
-	 * @param s String representing a date in the form YYYY-MM-DD 
-	 * @return The excel serial date  
+	 * @param s String representing a date in the form YYYY-MM-DD
+	 * @return The excel serial date
 	 */
 	public long toExcelSerialDate(String s) throws IOException {
 
@@ -224,17 +224,17 @@ public class Formula extends CellValue implements OfficeConstants {
 		long serialDate =	(1461 * (year + 4800 + (month - 14) / 12)) / 4 +
 							(367 * (month - 2 - 12 * ((month - 14) / 12))) / 12 -
 							(3 * ((year + 4900 + (month - 14) / 12)) / 100) / 4 +
-							day - 2415019 - 32075;	
+							day - 2415019 - 32075;
 
 		return serialDate;
 	}
-	
+
     /**
 	 * Excel times are a fraction of a 24 hour day expressed in seconds. This method converts
 	 * to this time.
 	 *
-	 * @param s String representing a time in the form ??HH?MM?SS? 
-	 * @return The excel serial time  
+	 * @param s String representing a time in the form ??HH?MM?SS?
+	 * @return The excel serial time
 	 */
 	public double toExcelSerialTime(String s) throws IOException {
 
@@ -244,7 +244,7 @@ public class Formula extends CellValue implements OfficeConstants {
 
 		int timeSecs = (hours*3600) + (mins*60) + (secs);
 
-		double d = (double) timeSecs / (24 * 3600);	
+		double d = (double) timeSecs / (24 * 3600);
 
 		return d;
 	}

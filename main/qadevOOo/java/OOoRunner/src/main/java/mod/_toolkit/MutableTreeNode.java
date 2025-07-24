@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -50,7 +50,7 @@ public class MutableTreeNode extends TestCase {
     private static XMultiServiceFactory mxMSF;
     private static PrintWriter log;
     private static boolean debug = false;
-    
+
     /**
      * Creates StarOffice Writer document.
      */
@@ -61,20 +61,20 @@ public class MutableTreeNode extends TestCase {
 //        log.println("creating a textdocument");
 //        xTextDoc = WriterTools.createTextDoc(mxMSF);
     }
-    
+
     /**
      * Disposes StarOffice Writer document.
      */
     protected void cleanup(TestParameters tParam, PrintWriter log) {
         log.println("    disposing xTextDoc ");
-        
+
         util.DesktopTools.closeDoc(xTextDoc);
     }
-    
+
     protected synchronized TestEnvironment createTestEnvironment(TestParameters Param,
         PrintWriter log) {
         XMutableTreeNode xNode;
-        
+
         try {
             mXTreeDataModel = (XMutableTreeDataModel) UnoRuntime.queryInterface(XMutableTreeDataModel.class,
                 mxMSF.createInstance("com.sun.star.awt.tree.MutableTreeDataModel"));
@@ -82,47 +82,47 @@ public class MutableTreeNode extends TestCase {
             throw new StatusException(Status.failed("ERROR: could not create instance of" +
                 " 'com.sun.star.awt.tree.MutableTreeDataModel'"));
         }
-        
+
         xNode = mXTreeDataModel.createNode("UnoTreeControl", false);
-        
+
         String sDisplayValue = "UnoTreeControl";
         String sExpandedGraphicURL = "private:graphicrepository/sd/res/triangle_down.png";
         String sCollapsedGraphicURL = "private:graphicrepository/sd/res/triangle_right.png";
         String sNodeGraphicURL = "private:graphicrepository/sw/imglst/nc20010.png";
-        
+
         xNode.setDisplayValue( sDisplayValue);
         xNode.setDataValue(sDisplayValue);
         xNode.setExpandedGraphicURL(sExpandedGraphicURL);
         xNode.setCollapsedGraphicURL(sCollapsedGraphicURL);
         xNode.setNodeGraphicURL(sNodeGraphicURL);
         xNode.setHasChildrenOnDemand(true);
-        
+
         fillNode(xNode);
-        
+
         TestEnvironment tEnv = new TestEnvironment(xNode);
-        
+
         tEnv.addObjRelation("OBJNAME", "toolkit.MutableTreeDataModel");
         log.println("ImplementationName: " + utils.getImplName(oObj));
-        
+
         tEnv.addObjRelation("XTreeNode_DisplayValue", sDisplayValue);
         tEnv.addObjRelation("XTreeNode_ExpandedGraphicURL", sExpandedGraphicURL);
         tEnv.addObjRelation("XTreeNode_CollapsedGraphicURL", sCollapsedGraphicURL);
         tEnv.addObjRelation("XTreeNode_NodeGraphicURL", sNodeGraphicURL);
-        
-        tEnv.addObjRelation("XMutableTreeNode_NodeToAppend", 
+
+        tEnv.addObjRelation("XMutableTreeNode_NodeToAppend",
                             mXTreeDataModel.createNode("XMutableTreeNode_NodeToAppend", true));
-        
+
         tEnv.addObjRelation("XMutableTreeNodeCreator", new XMutableTreeNodeCreator(){
             public XMutableTreeNode createNode(String name){
                 return mXTreeDataModel.createNode(name, true);
             }
         });
-        
+
         return tEnv;
     } // finish method getTestEnvironment
-    
+
     private void fillNode( XMutableTreeNode xNode ){
-        
+
         if( xNode.getChildCount() == 0 )
         {
             String sParentPath = (String) xNode.getDataValue();
@@ -136,14 +136,14 @@ public class MutableTreeNode extends TestCase {
             }
             XSimpleFileAccess sA = (XSimpleFileAccess)
                             UnoRuntime.queryInterface(XSimpleFileAccess.class,fileacc);
-                            
+
 
             dirlist(officeUserPath, xNode);
         }
     }
-    
+
     private void dirlist(String dir, XMutableTreeNode xNode){
-        
+
         Object fileacc = null;
         try {
             fileacc = mxMSF.createInstance("com.sun.star.comp.ucb.SimpleFileAccess");
@@ -177,7 +177,7 @@ public class MutableTreeNode extends TestCase {
         } catch (com.sun.star.uno.Exception ex) {
             ex.printStackTrace();
         }
-        
+
         try {
             xNode.appendChild( xChildNode );
         } catch (com.sun.star.lang.IllegalArgumentException ex) {

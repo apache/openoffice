@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -258,7 +258,7 @@ public class Desktop
 
     /**
      * Checks if the passed Element Name already exists in the  ElementContainer. If yes it appends a
-     * suffix to make it unique 
+     * suffix to make it unique
      * @param xElementContainer
      * @param sElementName
      * @return a unique Name ready to be added to the container.
@@ -271,7 +271,7 @@ public class Desktop
 
     /**
      * Checks if the passed Element Name already exists in the  ElementContainer. If yes it appends a
-     * suffix to make it unique 
+     * suffix to make it unique
      * @param xElementContainer
      * @param sElementName
      * @return a unique Name ready to be added to the container.
@@ -287,7 +287,7 @@ public class Desktop
      * suffix to make it unique
      * @param _slist
      * @param _sElementName
-     * @param _sSuffixSeparator 
+     * @param _sSuffixSeparator
      * @return a unique Name not being in the passed list.
      */
     public static String getUniqueName(String[] _slist, String _sElementName, String _sSuffixSeparator)
@@ -354,7 +354,7 @@ public class Desktop
     /**
      * @deprecated used to retrieve the most common paths used in the office application
      * @author bc93774
-     * 
+     *
      */
     public class OfficePathRetriever
     {
@@ -455,10 +455,10 @@ public class Desktop
      * 1. Check if the given desktop argument has a componentWindow.
      * If it is null, the myFrame argument is taken.
      * 2. Go up the tree of frames and search a frame with a component window.
-     * 3. Get from the desktop all the components, and give the first one 
+     * 3. Get from the desktop all the components, and give the first one
      * which has a frame.
      * @param xMSF
-     * @param myFrame 
+     * @param myFrame
      * @param desktop
      * @return
      * @throws NoSuchElementException

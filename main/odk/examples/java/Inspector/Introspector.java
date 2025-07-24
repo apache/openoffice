@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -70,18 +70,18 @@ import java.util.Vector;
 import javax.swing.JOptionPane;
 
 public class Introspector extends WeakBase{
-    
+
     private XIntrospection m_xIntrospection;
     private XMultiComponentFactory m_xMultiComponentFactory;
     private XComponentContext m_xComponentContext;
-    private XTypeDescriptionEnumerationAccess m_xTDEnumerationAccess;      
+    private XTypeDescriptionEnumerationAccess m_xTDEnumerationAccess;
     private static XComponentContext xOfficeComponentContext;
     private XIdlReflection mxIdlReflection;
     private URL openHyperlink;
     private static Introspector m_oIntrospector = null;
     private XSimpleFileAccess xSimpleFileAccess = null;
 
-    
+
 
     public static Introspector getIntrospector(){
         if (m_oIntrospector == null){
@@ -91,22 +91,22 @@ public class Introspector extends WeakBase{
             return m_oIntrospector;
         }
     }
-    
+
     public static Introspector getIntrospector(XComponentContext _xComponentContext){
         if (m_oIntrospector == null){
             m_oIntrospector =  new Introspector(_xComponentContext);
         }
         return m_oIntrospector;
     }
-    
-    
+
+
     /** Creates a new instance of Introspection */
     private Introspector(XComponentContext _xComponentContext) {
     try{
         m_xComponentContext = _xComponentContext;
         m_xMultiComponentFactory = m_xComponentContext.getServiceManager();
         Object o = m_xMultiComponentFactory.createInstanceWithContext("com.sun.star.beans.Introspection", m_xComponentContext);
-        m_xIntrospection = ( XIntrospection ) UnoRuntime.queryInterface(XIntrospection.class, o );  
+        m_xIntrospection = ( XIntrospection ) UnoRuntime.queryInterface(XIntrospection.class, o );
         Object oCoreReflection = getXMultiComponentFactory().createInstanceWithContext("com.sun.star.reflection.CoreReflection", getXComponentContext());
         mxIdlReflection = (XIdlReflection) UnoRuntime.queryInterface(XIdlReflection.class, oCoreReflection);
         initTypeDescriptionManager();
@@ -114,23 +114,23 @@ public class Introspector extends WeakBase{
     catch( Exception exception ) {
         System.err.println( exception );
     }}
-    
-    
+
+
     protected XComponentContext getXComponentContext(){
         return m_xComponentContext;
     }
-    
-    
+
+
     protected XMultiComponentFactory getXMultiComponentFactory(){
         return m_xMultiComponentFactory;
     }
-    
-    
+
+
     protected XIntrospectionAccess getXIntrospectionAccess(Object _oUnoComponent){
         return m_xIntrospection.inspect(_oUnoComponent);
     }
-    
-    
+
+
     public boolean isContainer(Object _oUnoObject){
     boolean bIsContainer = false;
     try {
@@ -153,8 +153,8 @@ public class Introspector extends WeakBase{
     }
         return bIsContainer;
     }
-    
-    
+
+
     //  add all containers for the given object to the tree under the node
     //  parent
     public Object[] getUnoObjectsOfContainer(Object _oUnoParentObject) {
@@ -190,36 +190,36 @@ public class Introspector extends WeakBase{
     }
     return oRetComponents;
     }
-        
+
 
     protected XIdlMethod[] getMethodsOfInterface(Type _aType){
     try{
-        XIdlClass xIdlClass = mxIdlReflection.forName(_aType.getTypeName());            
+        XIdlClass xIdlClass = mxIdlReflection.forName(_aType.getTypeName());
         return xIdlClass.getMethods();
     }
     catch( Exception e ) {
         System.err.println( e );
         return null;
-    }}          
+    }}
 
 
     protected XIdlField[] getFieldsOfType(Type _aType){
     try{
-        XIdlClass xIdlClass = mxIdlReflection.forName(_aType.getTypeName());            
+        XIdlClass xIdlClass = mxIdlReflection.forName(_aType.getTypeName());
         return xIdlClass.getFields();
     }
     catch( Exception e ) {
         System.err.println( e );
         return null;
-    }}          
+    }}
 
-    
+
     public boolean hasMethods(Object _oUnoObject){
         boolean bHasMethods = (getMethods(_oUnoObject).length > 0);
         return bHasMethods;
     }
-    
-    
+
+
     //  add all methods for the given object to the tree under the node parent
     public XIdlMethod[] getMethods(Object _oUnoParentObject) {
     try {
@@ -235,18 +235,18 @@ public class Introspector extends WeakBase{
     return null;
     }
 
-    
+
     public boolean hasProperties(Object _oUnoObject){
         boolean bHasProperties = (getProperties(_oUnoObject).length > 0);
         return bHasProperties;
     }
-    
-    
+
+
     protected Property[] getProperties( Object _oUnoParentObject){
     try {
         XIntrospectionAccess xIntrospectionAccess = getXIntrospectionAccess(_oUnoParentObject);
         if (xIntrospectionAccess != null){
-            Property[] aProperties = xIntrospectionAccess.getProperties(com.sun.star.beans.PropertyConcept.ATTRIBUTES + com.sun.star.beans.PropertyConcept.PROPERTYSET);                
+            Property[] aProperties = xIntrospectionAccess.getProperties(com.sun.star.beans.PropertyConcept.ATTRIBUTES + com.sun.star.beans.PropertyConcept.PROPERTYSET);
             return aProperties;
         }
     }
@@ -255,8 +255,8 @@ public class Introspector extends WeakBase{
     }
         return null;
     }
-    
-    
+
+
     protected Property[] getProperties(Object _oUnoObject, String _sServiceName){
         Property[] aProperties = getProperties(_oUnoObject);
         List aListOfProperties = java.util.Arrays.asList(aProperties);
@@ -273,7 +273,7 @@ public class Introspector extends WeakBase{
         aPropertiesVector.toArray(aRetProperties);
         return aRetProperties;
     }
-    
+
 
     protected Type[] getInterfaces(Object _oUnoObject, String _sServiceName){
         Type[] aTypes = getInterfaces(_oUnoObject);
@@ -292,12 +292,12 @@ public class Introspector extends WeakBase{
         return aRetTypes;
     }
 
-    
+
     public boolean hasInterfaces(Object _oUnoObject){
         return (getInterfaces(_oUnoObject).length > 0);
     }
 
-    
+
     protected Type[] getInterfaces(Object _oUnoParentObject){
         Type[] aTypes = new Type[]{};
         XTypeProvider xTypeProvider = ( XTypeProvider ) UnoRuntime.queryInterface( XTypeProvider.class, _oUnoParentObject);
@@ -306,25 +306,25 @@ public class Introspector extends WeakBase{
         }
         return aTypes;
     }
-    
-    
-    
+
+
+
     public static boolean isObjectSequence(Object _oUnoObject){
         Type aType = AnyConverter.getType(_oUnoObject);
         return aType.getTypeClass().getValue() == TypeClass.SEQUENCE_value;
     }
-    
-    
+
+
     public static boolean isObjectPrimitive(Object _oUnoObject){
         boolean breturn = false;
         if (_oUnoObject != null){
             Type aType = AnyConverter.getType(_oUnoObject);
-            breturn = isObjectPrimitive(_oUnoObject.getClass(), aType.getTypeClass());        
+            breturn = isObjectPrimitive(_oUnoObject.getClass(), aType.getTypeClass());
         }
         return breturn;
     }
-    
-    
+
+
     public static boolean isPrimitive(TypeClass _typeClass){
                return (( _typeClass == TypeClass.BOOLEAN )
                      || ( _typeClass == TypeClass.BYTE )
@@ -340,7 +340,7 @@ public class Introspector extends WeakBase{
                      || ( _typeClass == TypeClass.UNSIGNED_LONG )
                      || ( _typeClass == TypeClass.UNSIGNED_SHORT ));
     }
-    
+
     public static boolean isObjectPrimitive(Class _oUnoClass, TypeClass _typeClass){
         return !( ( !_oUnoClass.isPrimitive() ) && ( _typeClass != TypeClass.ARRAY )
                                                          && ( _typeClass != TypeClass.BOOLEAN )
@@ -356,9 +356,9 @@ public class Introspector extends WeakBase{
                                                          && ( _typeClass != TypeClass.UNSIGNED_HYPER )
                                                          && ( _typeClass != TypeClass.UNSIGNED_LONG )
                                                          && ( _typeClass != TypeClass.UNSIGNED_SHORT ));
-    }    
-    
-        
+    }
+
+
     protected void initTypeDescriptionManager() {
     try {
         Object oTypeDescriptionManager = getXComponentContext().getValueByName("/singletons/com.sun.star.reflection.theTypeDescriptionManager");
@@ -371,14 +371,14 @@ public class Introspector extends WeakBase{
     protected XTypeDescriptionEnumerationAccess getXTypeDescriptionEnumerationAccess(){
         return m_xTDEnumerationAccess;
     }
-    
-    
+
+
     protected XConstantTypeDescription[] getFieldsOfConstantGroup(String _sTypeClass){
     XConstantTypeDescription[] xConstantTypeDescriptions = null;
     try {
         TypeClass[] eTypeClasses = new com.sun.star.uno.TypeClass[1];
         eTypeClasses[0] = com.sun.star.uno.TypeClass.CONSTANTS;
-        XTypeDescriptionEnumeration xTDEnumeration = m_xTDEnumerationAccess.createTypeDescriptionEnumeration(getModuleName(_sTypeClass), eTypeClasses, TypeDescriptionSearchDepth.INFINITE);       
+        XTypeDescriptionEnumeration xTDEnumeration = m_xTDEnumerationAccess.createTypeDescriptionEnumeration(getModuleName(_sTypeClass), eTypeClasses, TypeDescriptionSearchDepth.INFINITE);
         while (xTDEnumeration.hasMoreElements()) {
             XTypeDescription xTD = xTDEnumeration.nextTypeDescription();
             if (xTD.getName().equals(_sTypeClass)){
@@ -386,21 +386,21 @@ public class Introspector extends WeakBase{
                 xConstantTypeDescriptions = xConstantsTypeDescription.getConstants();
             }
             String sName = xTD.getName();
-        }            
+        }
         return xConstantTypeDescriptions;
     } catch ( java.lang.Exception e) {
         System.out.println(System.out);
     }
         return null;
     }
-    
+
     private XServiceTypeDescription getServiceTypeDescription(String _sServiceName, TypeClass _eTypeClass){
     try{
         if (_sServiceName.length() > 0){
             TypeClass[] eTypeClasses = new com.sun.star.uno.TypeClass[2];
             eTypeClasses[0] = com.sun.star.uno.TypeClass.SERVICE;
             eTypeClasses[1] = _eTypeClass;
-            XTypeDescriptionEnumeration xTDEnumeration = getXTypeDescriptionEnumerationAccess().createTypeDescriptionEnumeration(Introspector.getModuleName(_sServiceName), eTypeClasses, TypeDescriptionSearchDepth.INFINITE);       
+            XTypeDescriptionEnumeration xTDEnumeration = getXTypeDescriptionEnumerationAccess().createTypeDescriptionEnumeration(Introspector.getModuleName(_sServiceName), eTypeClasses, TypeDescriptionSearchDepth.INFINITE);
             while (xTDEnumeration.hasMoreElements()) {
                 XTypeDescription xTD = xTDEnumeration.nextTypeDescription();
                 if (xTD.getName().equals(_sServiceName)){
@@ -414,8 +414,8 @@ public class Introspector extends WeakBase{
         ex.printStackTrace(System.out);
         return null;
     }}
-    
-    
+
+
     public XPropertyTypeDescription[] getPropertyDescriptionsOfService(String _sServiceName){
     try {
         XServiceTypeDescription xServiceTypeDescription = getServiceTypeDescription(_sServiceName, com.sun.star.uno.TypeClass.PROPERTY);
@@ -428,8 +428,8 @@ public class Introspector extends WeakBase{
     }
     return new XPropertyTypeDescription[]{};
     }
-    
-    
+
+
     public XTypeDescription getReferencedType(String _sTypeName){
     XTypeDescription xTypeDescription = null;
     try{
@@ -447,8 +447,8 @@ public class Introspector extends WeakBase{
     }
         return xTypeDescription;
     }
-    
-    
+
+
     public XInterfaceTypeDescription[] getInterfaceDescriptionsOfService(String _sServiceName){
     try {
         XServiceTypeDescription xServiceTypeDescription = getServiceTypeDescription(_sServiceName, com.sun.star.uno.TypeClass.INTERFACE);
@@ -462,7 +462,7 @@ public class Introspector extends WeakBase{
         return new XInterfaceTypeDescription[]{};
     }
 
-    
+
     static boolean hasByName(XTypeDescription[] _xTypeDescriptions, String _sTypeName){
         for (int i = 0; i < _xTypeDescriptions.length; i++){
             if (_xTypeDescriptions[i].getName().equals(_sTypeName)){
@@ -471,8 +471,8 @@ public class Introspector extends WeakBase{
         }
         return false;
     }
-    
-    
+
+
     public static String getModuleName(String _sTypeClass){
         int nlastindex = _sTypeClass.lastIndexOf(".");
         if (nlastindex > -1){
@@ -481,9 +481,9 @@ public class Introspector extends WeakBase{
         else{
             return "";
         }
-    }        
+    }
 
-    
+
     public static String getShortClassName(String _sClassName){
         String sShortClassName = _sClassName;
         int nindex = _sClassName.lastIndexOf(".");
@@ -491,25 +491,25 @@ public class Introspector extends WeakBase{
             sShortClassName = _sClassName.substring(nindex + 1);
         }
         return sShortClassName;
-    }    
-    
-           
+    }
+
+
 
     public static boolean isUnoTypeObject(Object _oUnoObject){
         return isOfUnoType(_oUnoObject, "com.sun.star.uno.Type");
     }
 
-    
+
     public static boolean isUnoPropertyTypeObject(Object _oUnoObject){
         return isOfUnoType(_oUnoObject, "com.sun.star.beans.Property");
     }
 
-    
+
     public static boolean isUnoPropertyValueTypeObject(Object _oUnoObject){
         return isOfUnoType(_oUnoObject, "com.sun.star.beans.PropertyValue");
     }
-    
-    
+
+
     public static boolean isOfUnoType(Object _oUnoObject, String _sTypeName){
         boolean bIsUnoObject = false;
         if (_oUnoObject != null){
@@ -519,7 +519,7 @@ public class Introspector extends WeakBase{
                     if (oUnoArray.length > 0){
                         bIsUnoObject = ( oUnoArray[0].getClass().getName().equals(_sTypeName));
                     }
-                }   
+                }
             }
         }
         else{
@@ -527,8 +527,8 @@ public class Introspector extends WeakBase{
         }
         return bIsUnoObject;
     }
-    
-    
+
+
     public String getConstantDisplayString(int _nValue, XConstantTypeDescription[] _xConstantTypeDescription, String _sDisplayString){
         String sPrefix = "";
         int[] nbits = new int[_xConstantTypeDescription.length];
@@ -542,7 +542,7 @@ public class Introspector extends WeakBase{
         }
         return _sDisplayString;
     }
-        
+
 
     public static boolean isValid(Object[] _oObject){
         if (_oObject != null){
@@ -565,20 +565,20 @@ public class Introspector extends WeakBase{
     public static boolean isArray(Object _oObject){
         return _oObject.getClass().isArray();
     }
-    
-        
+
+
     public boolean hasSupportedServices(Object _oUnoObject){
         boolean bHasSupportedServices = false;
         XServiceInfo xServiceInfo = ( XServiceInfo ) UnoRuntime.queryInterface( XServiceInfo.class, _oUnoObject);
         if ( xServiceInfo != null ){
-            String[] sSupportedServiceNames = xServiceInfo.getSupportedServiceNames(); 
+            String[] sSupportedServiceNames = xServiceInfo.getSupportedServiceNames();
             bHasSupportedServices = sSupportedServiceNames.length > 0;
         }
         return bHasSupportedServices;
     }
-    
-    
-    public Object getValueOfText(TypeClass aTypeClass, String sText){        
+
+
+    public Object getValueOfText(TypeClass aTypeClass, String sText){
         Object oReturn = null;
         switch (aTypeClass.getValue()){
             case TypeClass.CHAR_value:
@@ -589,7 +589,7 @@ public class Introspector extends WeakBase{
             case TypeClass.ENUM_value:
                 break;
             case TypeClass.FLOAT_value:
-                oReturn = Float.valueOf(sText);                    
+                oReturn = Float.valueOf(sText);
                 break;
             case TypeClass.HYPER_value:
                 oReturn = Long.valueOf(sText);
@@ -598,7 +598,7 @@ public class Introspector extends WeakBase{
                 oReturn = Integer.valueOf(sText);
                 break;
             case TypeClass.SHORT_value:
-                oReturn = Byte.valueOf(sText); 
+                oReturn = Byte.valueOf(sText);
                 break;
             case TypeClass.STRING_value:
                 oReturn = sText;
@@ -610,14 +610,14 @@ public class Introspector extends WeakBase{
                 oReturn = Integer.valueOf(sText);
                 break;
             case TypeClass.UNSIGNED_SHORT_value:
-                oReturn = Byte.valueOf(sText); 
+                oReturn = Byte.valueOf(sText);
                 break;
-            default:                    
+            default:
         }
         return oReturn;
-    }    
+    }
 
-    
+
     public XSimpleFileAccess getXSimpleFileAccess(){
     try {
         if (xSimpleFileAccess == null){
@@ -629,22 +629,22 @@ public class Introspector extends WeakBase{
         ex.printStackTrace(System.out);
         return null;
     }}
-    
-    
+
+
     public boolean isValidSDKInstallationPath(String _sSDKInstallationPath){
     boolean bIsValid = false;
     try {
         String sIDLFolder = Introspector.addToPath(_sSDKInstallationPath, Inspector.sIDLDOCUMENTSUBFOLDER);
         String sIndexFile = Introspector.addToPath(_sSDKInstallationPath, "index.html");
         if (getXSimpleFileAccess() != null){
-            bIsValid = (getXSimpleFileAccess().exists(sIDLFolder) && getXSimpleFileAccess().exists(sIndexFile));            
+            bIsValid = (getXSimpleFileAccess().exists(sIDLFolder) && getXSimpleFileAccess().exists(sIndexFile));
         }
     } catch (com.sun.star.uno.Exception ex) {
         ex.printStackTrace(System.out);
     }
         return bIsValid;
     }
-    
+
 
     public static String addToPath(String _sPath, String _sSubPath){
         if (!_sPath.endsWith("/")){
@@ -652,5 +652,5 @@ public class Introspector extends WeakBase{
         }
         return _sPath + _sSubPath;
     }
-    
+
 }

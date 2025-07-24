@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 /*
@@ -43,13 +43,13 @@ import org.openoffice.netbeans.modules.office.options.OfficeSettings;
  * @author tomaso
  */
 public class SelectPathVisualPanel extends javax.swing.JPanel {
-    
+
     /** The wizard panel descriptor associated with this GUI panel.
      * If you need to fire state changes or something similar, you can
      * use this handle to do so.
      */
     private final SelectPathPanel panel;
-    
+
     /** Create the wizard panel and set up some basic properties. */
     public SelectPathVisualPanel(SelectPathPanel panel) {
         this.panel = panel;
@@ -95,7 +95,7 @@ public class SelectPathVisualPanel extends javax.swing.JPanel {
         }
          */
     }
-    
+
     private void installationsComboBoxActionPerformed(
         java.awt.event.ActionEvent evt) {
 
@@ -180,11 +180,11 @@ public class SelectPathVisualPanel extends javax.swing.JPanel {
     private void browseButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_browseButtonActionPerformed
         // Add your handling code here:
         File target = null;
-        
+
         JFileChooser chooser = new JFileChooser();
         chooser.setFileSelectionMode(JFileChooser.DIRECTORIES_ONLY);
         int result = chooser.showDialog(null, null);
-        
+
         if (result == JFileChooser.APPROVE_OPTION) {
             target = chooser.getSelectedFile();
 
@@ -195,7 +195,7 @@ public class SelectPathVisualPanel extends javax.swing.JPanel {
             catch (IOException ioe) {
                 path = target.getAbsolutePath();
             }
-            
+
             OfficeInstallation oi = new OfficeInstallation(path, path);
 
             if (oi.supportsFramework()) {
@@ -205,7 +205,7 @@ public class SelectPathVisualPanel extends javax.swing.JPanel {
         }
 
     }//GEN-LAST:event_browseButtonActionPerformed
-    
+
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JTextField installPath;
     private javax.swing.JButton browseButton;

@@ -31,10 +31,10 @@ import org.apache.openoffice.ooxml.schema.model.base.NodeType;
  *  The maximum value is at least as large as the minimum value.
  *  It can be 'unbounded' in which case the child node can appear any number of times.
  *  'Unbounded' is internally stored as -1.
- *  
+ *
  *  An OccurrenceIndicator represents the minOccur and maxOccur attributes of
  *  XML schema elements.
- *   
+ *
  *  There is usually exactly one child.
  */
 public class OccurrenceIndicator
@@ -49,36 +49,36 @@ public class OccurrenceIndicator
         final Location aLocation)
     {
         super(aParent, null, aLocation);
-        
+
         mnMinimum = ParseValue(sMinimum);
         mnMaximum = ParseValue(sMaximum);
-        
+
         assert(mnMinimum>=0);
         assert(mnMaximum==unbounded || mnMaximum>=mnMinimum);
     }
-    
-    
-    
-    
+
+
+
+
     @Override
     public NodeType GetNodeType ()
     {
         return NodeType.OccurrenceIndicator;
     }
-    
-    
-    
-    
+
+
+
+
     /** Return a string version of the minimum value for textual display.
      */
     public String GetDisplayMinimum ()
     {
         return Integer.toString(mnMinimum);
     }
-    
 
-    
-    
+
+
+
     /** Return a string version of the maximum value for textual display.
      */
     public String GetDisplayMaximum ()
@@ -88,35 +88,35 @@ public class OccurrenceIndicator
         else
             return Integer.toString(mnMaximum);
     }
-    
-    
-    
-    
+
+
+
+
     public int GetMinimum ()
     {
         return mnMinimum;
     }
-    
-    
-    
-    
+
+
+
+
     public int GetMaximum ()
     {
         return mnMaximum;
     }
 
-    
-    
-    
+
+
+
     @Override
     public void AcceptVisitor (final INodeVisitor aVisitor)
     {
         aVisitor.Visit(this);
-    } 
-    
-    
-    
-    
+    }
+
+
+
+
     @Override
     public String toString ()
     {
@@ -124,10 +124,10 @@ public class OccurrenceIndicator
             GetDisplayMinimum(),
             GetDisplayMaximum());
     }
-    
-    
-    
-    
+
+
+
+
     private static int ParseValue (final String sValue)
     {
         if (sValue == null)
@@ -144,9 +144,9 @@ public class OccurrenceIndicator
                 default: return Integer.parseInt(sValue);
             }
     }
-    
-    
-    
+
+
+
     private final int mnMinimum;
     private final int mnMaximum;
 }

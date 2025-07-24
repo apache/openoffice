@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 package complex.storages;
@@ -89,7 +89,7 @@ public class Test11 implements StorageTest {
 				m_aTestHelper.Error( "Can't create substorage!" );
 				return false;
 			}
-			
+
 			String sPass2 = "2222222222";
 			byte pBytes2[] = { 2, 2, 2, 2, 2 };
 
@@ -142,7 +142,7 @@ public class Test11 implements StorageTest {
 				m_aTestHelper.Error( "The new substorage still was not committed so it must be empty!" );
 				return false;
 			}
-			
+
 			if ( !m_aTestHelper.disposeStorage( xClonedSubStorage ) )
 				return false;
 
@@ -191,7 +191,7 @@ public class Test11 implements StorageTest {
 			// ==============================
 			// commit the root storage and check cloning
 			// ==============================
-	
+
 			if ( !m_aTestHelper.commitStorage( xTempStorage ) )
 				return false;
 
@@ -234,5 +234,5 @@ public class Test11 implements StorageTest {
 			m_aTestHelper.Error( "Exception: " + e );
 			return false;
 		}
-    } 
+    }
 }

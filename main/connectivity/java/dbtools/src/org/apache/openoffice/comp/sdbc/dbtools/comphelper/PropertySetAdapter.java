@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 package org.apache.openoffice.comp.sdbc.dbtools.comphelper;
@@ -63,34 +63,34 @@ public class PropertySetAdapter implements XPropertySet, XFastPropertySet, XMult
     protected final MultiTypeInterfaceContainer vetoableListeners = new MultiTypeInterfaceContainer();
     protected final InterfaceContainer propertiesChangeListeners = new InterfaceContainer();
     private final PropertySetInfo propertySetInfo = new PropertySetInfo();
-    
+
     public static interface PropertyGetter {
         Object getValue() throws WrappedTargetException;
     }
-    
+
     public static interface PropertySetter {
         void setValue(Object value) throws PropertyVetoException, IllegalArgumentException, WrappedTargetException;
     }
-    
+
     private static class PropertyData {
         Property property;
         PropertyGetter getter;
         PropertySetter setter;
-        
+
         PropertyData(Property property, PropertyGetter getter, PropertySetter setter) {
             this.property = property;
             this.getter = getter;
             this.setter = setter;
         }
     }
-    
+
     private static final Comparator<Property> propertyNameComparator = new Comparator<Property>() {
         @Override
         public int compare(Property first, Property second) {
             return first.Name.compareTo(second.Name);
         }
     };
-    
+
     private class PropertySetInfo implements XPropertySetInfo {
         @Override
         public Property[] getProperties() {
@@ -114,7 +114,7 @@ public class PropertySetAdapter implements XPropertySet, XFastPropertySet, XMult
             return propertiesByName.containsKey(propertyName);
         }
     }
-    
+
     /**
      * Creates a new instance.
      * @param lock the lock that will be held while calling the getters and setters
@@ -124,16 +124,16 @@ public class PropertySetAdapter implements XPropertySet, XFastPropertySet, XMult
         this.lock = lock;
         this.eventSource = eventSource;
     }
-    
+
     public void dispose() {
         // Create an event with this as sender
         EventObject event = new EventObject(eventSource);
-        
+
         // inform all listeners to release this object
         boundListeners.disposeAndClear(event);
         vetoableListeners.disposeAndClear(event);
     }
-    
+
     public void registerProperty(String propertyName, int handle, Type type, short attributes,
             PropertyGetter getter, PropertySetter setter) {
         Property property = new Property(propertyName, handle, type, attributes);
@@ -141,7 +141,7 @@ public class PropertySetAdapter implements XPropertySet, XFastPropertySet, XMult
         propertiesByName.put(propertyName, propertyData);
         propertiesByHandle.put(property.Handle, propertyData);
     }
-    
+
     public void registerProperty(String propertyName, Type type, short attributes,
             PropertyGetter getter, PropertySetter setter) {
         int handle;
@@ -149,7 +149,7 @@ public class PropertySetAdapter implements XPropertySet, XFastPropertySet, XMult
         handle = nextHandle.getAndIncrement();
         registerProperty(propertyName, handle, type, attributes, getter, setter);
     }
-    
+
     @Override
     public void addPropertyChangeListener(
             String propertyName, XPropertyChangeListener listener) throws UnknownPropertyException, WrappedTargetException {
@@ -167,7 +167,7 @@ public class PropertySetAdapter implements XPropertySet, XFastPropertySet, XMult
             vetoableListeners.addInterface(propertyName, listener);
         } // else ignore silently
     }
-    
+
     @Override
     public void addPropertiesChangeListener(String[] propertyNames, XPropertiesChangeListener listener) {
         propertiesChangeListeners.add(listener);
@@ -185,7 +185,7 @@ public class PropertySetAdapter implements XPropertySet, XFastPropertySet, XMult
         }
         return propertyData;
     }
-    
+
     private PropertyData getPropertyData(int handle) throws UnknownPropertyException {
         PropertyData propertyData = propertiesByHandle.get(handle);
         if (propertyData == null) {
@@ -193,13 +193,13 @@ public class PropertySetAdapter implements XPropertySet, XFastPropertySet, XMult
         }
         return propertyData;
     }
-    
+
     private Object getPropertyValue(PropertyData propertyData) throws WrappedTargetException {
         Object ret;
         synchronized (lock) {
             ret = propertyData.getter.getValue();
         }
-        
+
         // null must not be returned. Either a void any is returned or an any containing
         // an interface type and a null reference.
         if (ret == null) {
@@ -211,7 +211,7 @@ public class PropertySetAdapter implements XPropertySet, XFastPropertySet, XMult
         }
         return ret;
     }
-    
+
     @Override
     public Object getPropertyValue(String propertyName) throws UnknownPropertyException, WrappedTargetException {
         PropertyData propertyData = getPropertyData(propertyName);
@@ -223,7 +223,7 @@ public class PropertySetAdapter implements XPropertySet, XFastPropertySet, XMult
         PropertyData propertyData = getPropertyData(handle);
         return getPropertyValue(propertyData);
     }
-    
+
     @Override
     public Object[] getPropertyValues(String[] propertyNames) {
         Object[] values = new Object[propertyNames.length];
@@ -254,7 +254,7 @@ public class PropertySetAdapter implements XPropertySet, XFastPropertySet, XMult
         getPropertyData(propertyName);
         vetoableListeners.removeInterface(propertyName, listener);
     }
-    
+
     @Override
     public void removePropertiesChangeListener(XPropertiesChangeListener listener) {
         propertiesChangeListeners.remove(listener);
@@ -279,14 +279,14 @@ public class PropertySetAdapter implements XPropertySet, XFastPropertySet, XMult
         if ((propertyData.property.Attributes & PropertyAttribute.READONLY) != 0) {
             throw new PropertyVetoException();
         }
-        // The value may be null only if MAYBEVOID attribute is set         
+        // The value may be null only if MAYBEVOID attribute is set
         boolean isVoid = false;
         if (value instanceof Any) {
             isVoid = ((Any) value).getObject() == null;
         } else {
             isVoid = value == null;
         }
-        if (isVoid && (propertyData.property.Attributes & PropertyAttribute.MAYBEVOID) == 0) { 
+        if (isVoid && (propertyData.property.Attributes & PropertyAttribute.MAYBEVOID) == 0) {
             throw new IllegalArgumentException("The property must have a value; the MAYBEVOID attribute is not set!");
         }
 
@@ -304,14 +304,14 @@ public class PropertySetAdapter implements XPropertySet, XFastPropertySet, XMult
         Object[] futureValue = new Object[] { AnyConverter.toObject(propertyData.property.Type, value) };
         Object[] currentValue = new Object[] { getPropertyValue(propertyData.property.Name) };
         Property[] properties = new Property[] { propertyData.property };
-        
+
         fire(properties, currentValue, futureValue, false);
         synchronized (lock) {
             propertyData.setter.setValue(futureValue[0]);
         }
         fire(properties, currentValue, futureValue, true);
     }
-    
+
     @Override
     public void setPropertyValues(String[] propertyNames, Object[] values) throws PropertyVetoException, IllegalArgumentException, WrappedTargetException {
         for (int i = 0; i < propertyNames.length; i++) {
@@ -324,8 +324,8 @@ public class PropertySetAdapter implements XPropertySet, XFastPropertySet, XMult
     }
 
     private boolean checkType(Object obj) {
-        if (obj == null 
-        || obj instanceof Boolean 
+        if (obj == null
+        || obj instanceof Boolean
         || obj instanceof Character
         || obj instanceof Number
         || obj instanceof String
@@ -336,7 +336,7 @@ public class PropertySetAdapter implements XPropertySet, XFastPropertySet, XMult
             return true;
         return false;
     }
-    
+
     @Override
     public void firePropertiesChangeEvent(String[] propertyNames, XPropertiesChangeListener listener) {
         PropertyChangeEvent[] events = new PropertyChangeEvent[propertyNames.length];
@@ -360,7 +360,7 @@ public class PropertySetAdapter implements XPropertySet, XFastPropertySet, XMult
             listener.propertiesChange(events);
         }
     }
-    
+
     private void fire(Property[] properties, Object[] oldValues, Object[] newValues, boolean hasChanged) throws PropertyVetoException {
         PropertyChangeEvent[] events = new PropertyChangeEvent[properties.length];
         int eventCount = 0;
@@ -387,7 +387,7 @@ public class PropertySetAdapter implements XPropertySet, XFastPropertySet, XMult
             }
         }
     }
-    
+
     private void fireListeners(boolean hasChanged, String key, PropertyChangeEvent event) throws PropertyVetoException {
         InterfaceContainer listeners;
         if (hasChanged) {

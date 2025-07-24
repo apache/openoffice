@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 package fvt.uno.sd.paragraph;
 
@@ -67,9 +67,9 @@ public class ParagraphStyle {
 	XShapes xShapes = null;
 	XDrawPage xpage = null;
 	String filePath=null;
-	
+
     UnoApp unoApp = new UnoApp();
-	
+
 	/**
 	 * @throws java.lang.Exception
 	 */
@@ -87,7 +87,7 @@ public class ParagraphStyle {
 	}
 
 	@Test
-	public void ParaStyle() throws Exception {		
+	public void ParaStyle() throws Exception {
 		Point po = new Point(5000, 5000);
 		xShapes = (XShapes) UnoRuntime.queryInterface(XShapes.class, xpage);
 		// create the shape
@@ -96,35 +96,35 @@ public class ParagraphStyle {
 		 XPropertySet xShapePropSet = (XPropertySet)UnoRuntime.queryInterface(XPropertySet.class, xRectangle);
 		 // TextFitToSize
 		 xShapePropSet.setPropertyValue("TextFitToSize", TextFitToSizeType.PROPORTIONAL);
-		 
+
 		 XPropertySet xTextPropSet1 = addPortion(xRectangle, "New text paragraph", true);
 		 xTextPropSet1.setPropertyValue("ParaAdjust", ParagraphAdjust.CENTER);
-		 
+
 		 //Line Spacing
 		 LineSpacing xLineSpacing = new LineSpacing(LineSpacingMode.LEADING, (short)1);
 		 xTextPropSet1.setPropertyValue("ParaLineSpacing",  xLineSpacing);
-		 
+
 		 //left, right, top and bottom margin
 		 xTextPropSet1.setPropertyValue("ParaLeftMargin",  1000);
 		 xTextPropSet1.setPropertyValue("ParaRightMargin",  1000);
 		 xTextPropSet1.setPropertyValue("ParaTopMargin",  1000);
 		 xTextPropSet1.setPropertyValue("ParaBottomMargin",  1000);
-		 
+
 		 XPropertySet xTextPropSet2 = addPortion(xRectangle, "And another text paragraph", true);
 		 xTextPropSet2.setPropertyValue("CharColor", new Integer(0xff0000));
-		 
+
 		 xRectangle = saveAndLoadShape(1, 0);
-		
+
 
 		 Assert.assertEquals("Paragraph Left Margin is 1000",1000, xTextPropSet1.getPropertyValue("ParaLeftMargin"));
 		 Assert.assertEquals("Paragraph Right Margin is 1000", 1000,xTextPropSet1.getPropertyValue("ParaRightMargin"));
 		 Assert.assertEquals("Paragraph Top Margin is 1000",1000, xTextPropSet1.getPropertyValue("ParaTopMargin") );
 		 Assert.assertEquals("Paragraph Bottom Margin is 1000 ",1000, xTextPropSet1.getPropertyValue("ParaBottomMargin"));
 		 Assert.assertEquals("Text Color is red",0xff0000,xTextPropSet2.getPropertyValue("CharColor"));
-	     
+
 	}
-	
-		
+
+
 	public static XShape createShape(XComponent xComponent, int x, int y,
 			int width, int height, String sShapeType)
 			throws java.lang.Exception {
@@ -144,7 +144,7 @@ public class ParagraphStyle {
 		xShape.setSize(aSize);
 		return xShape;
 	}
-	
+
 	public static XPropertySet addPortion(XShape xShape, String sText, boolean bNewParagraph)
 	         throws com.sun.star.lang.IllegalArgumentException {
 	     XText xText = (XText)UnoRuntime.queryInterface(XText.class, xShape);
@@ -160,10 +160,10 @@ public class ParagraphStyle {
 	     XPropertySet xPropSet = (XPropertySet)UnoRuntime.queryInterface(XPropertySet.class, xTextRange);
 	     return xPropSet;
 	 }
-	
+
 	/**
 	 * create a new presentation document and insert a new slide.
-	 * 
+	 *
 	 * @throws Exception
 	 */
 	public void createDocumentAndSlide() throws Exception {
@@ -175,10 +175,10 @@ public class ParagraphStyle {
 		drawpages.insertNewByIndex(1);
 		xpage = PageUtil.getDrawPageByIndex(impressDocument, 1);
 	}
-	
+
 	/**
 	 * Save presentation and reLoad the presentation and shape in it.
-	 * 
+	 *
 	 * @param po
 	 * @param shapeType
 	 * @return
@@ -193,7 +193,7 @@ public class ParagraphStyle {
 
 	/**
 	 * save and reload Presentation document.
-	 * 
+	 *
 	 * @param presentationDocument
 	 * @param sFilter
 	 * @param sExtension

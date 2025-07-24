@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 package fvt.uno.sc.chart;
@@ -46,7 +46,7 @@ import com.sun.star.table.CellRangeAddress;
 
 /**
  *  Check the chart type setting can be applied and saved
- * 
+ *
  */
 @RunWith(value = Parameterized.class)
 public class ChartType {
@@ -55,12 +55,12 @@ public class ChartType {
 	private String inputType;
 	private double[][] numberData;
 	private String fileType;
-	
+
 	private static final UnoApp unoApp = new UnoApp();
-	
+
 	XComponent scComponent = null;
 	XSpreadsheetDocument scDocument = null;
-	
+
 	@Parameters
 	public static Collection<Object[]> data() throws Exception {
 		double[][] numberData1 = {
@@ -86,7 +86,7 @@ public class ChartType {
 			{"com.sun.star.chart.XYDiagram", "com.sun.star.chart.XYDiagram", numberData1, "ods"},
 			{"com.sun.star.chart.StockDiagram", "com.sun.star.chart.StockDiagram", numberData2, "ods"},
 			{"com.sun.star.chart.BubbleDiagram", "com.sun.star.chart.BubbleDiagram", numberData1, "ods"},
-			
+
 			{"com.sun.star.chart.BarDiagram", "com.sun.star.chart.BarDiagram", numberData1, "xls"},
 			{"com.sun.star.chart.AreaDiagram", "com.sun.star.chart.AreaDiagram", numberData1, "xls"},
 			{"com.sun.star.chart.LineDiagram", "com.sun.star.chart.LineDiagram", numberData1, "xls"},
@@ -95,18 +95,18 @@ public class ChartType {
 			{"com.sun.star.chart.NetDiagram", "com.sun.star.chart.NetDiagram", numberData1, "xls"},
 			{"com.sun.star.chart.XYDiagram", "com.sun.star.chart.XYDiagram", numberData1, "xls"},
 			{"com.sun.star.chart.StockDiagram", "com.sun.star.chart.StockDiagram", numberData2, "xls"},
-			{"com.sun.star.chart.BubbleDiagram", "com.sun.star.chart.BubbleDiagram", numberData1, "xls"}		
+			{"com.sun.star.chart.BubbleDiagram", "com.sun.star.chart.BubbleDiagram", numberData1, "xls"}
 		});
 	}
-	
+
 	public ChartType(String expected, String inputType, double[][] numberData, String fileType) {
 		this.expected = expected;
 		this.inputType = inputType;
 		this.numberData = numberData;
 		this.fileType = fileType;
 	}
-	
-	
+
+
 	@Before
 	public void setUp() throws Exception {
 		scComponent = unoApp.newDocument("scalc");
@@ -116,9 +116,9 @@ public class ChartType {
 	@After
 	public void tearDown() throws Exception {
 		unoApp.closeDocument(scComponent);
-		
+
 	}
-	
+
 	@BeforeClass
 	public static void setUpConnection() throws Exception {
 		unoApp.start();
@@ -127,9 +127,9 @@ public class ChartType {
 	@AfterClass
 	public static void tearDownConnection() throws InterruptedException, Exception {
 		unoApp.close();
-		SCUtil.clearTempDir();	
+		SCUtil.clearTempDir();
 	}
-	
+
 	/**
 	 * Check the basic types of chart
 	 * 1. Create a spreadsheet file.
@@ -144,35 +144,35 @@ public class ChartType {
 		String fileName = "testCreateChart";
 		String chartName = "testChart";
 		String cellRangeName = "A1:D4";
-		String result = null;		
+		String result = null;
 		if (inputType.equals("com.sun.star.chart.StockDiagram")) {
 			cellRangeName = "A1:C4";
-		}	
-		if (fileType.equalsIgnoreCase("xls")) {
-			chartName = "Object 1";			
 		}
-		
+		if (fileType.equalsIgnoreCase("xls")) {
+			chartName = "Object 1";
+		}
+
 		XSpreadsheet sheet = SCUtil.getCurrentSheet(scDocument);
-		
+
 		SCUtil.setValueToCellRange(sheet, 0, 0, numberData);
 
 		CellRangeAddress[] cellAddress = new CellRangeAddress[1];
 		cellAddress[0] = SCUtil.getChartDataRangeByName(sheet, cellRangeName);
 		Rectangle rectangle = new Rectangle(1000, 1000, 15000, 9500);
-		XChartDocument xChartDocument = null; 		
+		XChartDocument xChartDocument = null;
 		xChartDocument = SCUtil.createChart(sheet, rectangle, cellAddress, chartName);
 
 		SCUtil.setChartType(xChartDocument, inputType);
-		
+
 		SCUtil.saveFileAs(scComponent, fileName, fileType);
 		scDocument = SCUtil.reloadFile(unoApp, scDocument, fileName + "." + fileType);
 		sheet = SCUtil.getCurrentSheet(scDocument);
-		
+
 		xChartDocument = SCUtil.getChartByName(sheet, chartName);
 		result = xChartDocument.getDiagram().getDiagramType();
-		
+
 		SCUtil.closeFile(scDocument);
-		
+
 		assertEquals("Incorrect chart type string got in ." + fileType + " file.", expected, result);
 
 	}

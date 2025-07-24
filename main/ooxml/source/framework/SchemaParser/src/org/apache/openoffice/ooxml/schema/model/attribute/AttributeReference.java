@@ -43,7 +43,7 @@ public class AttributeReference
         final Location aLocation)
     {
         super(aReferencedName, sUse, sDefault, sFixed, eFormDefault, aLocation);
-        
+
         maReferencedName = aReferencedName;
     }
 
@@ -63,27 +63,27 @@ public class AttributeReference
         }
         return aAttribute;
     }
-    
-    
-    
-    
+
+
+
+
     @Override
     public INode GetReferencedNode (final SchemaBase aSchemaBase)
     {
         return GetReferencedAttribute(aSchemaBase);
     }
 
-        
-    
-    
+
+
+
     public QualifiedName GetReferencedName ()
     {
         return maReferencedName;
     }
 
-    
-    
-    
+
+
+
     @Override
     public NodeType GetNodeType ()
     {
@@ -99,17 +99,17 @@ public class AttributeReference
         aVisitor.Visit(this);
     }
 
-    
-    
-    
+
+
+
     @Override
     public String toString ()
     {
         return "attribute reference to "+maReferencedName;
     }
-    
-    
-    
-    
+
+
+
+
     private final QualifiedName maReferencedName;
 }

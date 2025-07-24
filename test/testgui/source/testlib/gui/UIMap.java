@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 package testlib.gui;
@@ -47,22 +47,22 @@ import org.openoffice.test.vcl.widgets.VclWindow;
 /**
  * Define all UI controls in the class. One control should be defined once and
  * only once.
- * 
+ *
  */
 public class UIMap {
 	private static IDList idList = new IDList(new File("./hid"));
-	
+
 	public static final OpenOffice aoo = new OpenOffice();
-	
+
 	static {
 		aoo.setAutomationPort(OpenOffice.DEFAULT_AUTOMATION_PORT);
 		aoo.addArgs("-nofirststartwizard", "-norestore", "-quickstart=no");
 		aoo.addRegistryModifications("<item oor:path=\"/org.openoffice.Office.Common/Misc\"><prop oor:name=\"UseSystemFileDialog\" oor:op=\"fuse\"><value>false</value></prop></item>",
 				"<item oor:path=\"/org.openoffice.Office.Common/Security/Scripting\"><prop oor:name=\"MacroSecurityLevel\" oor:op=\"fuse\"><value>0</value></prop></item>");
 	}
-	
+
 	public static final VclApp app = new VclApp(aoo);
-	
+
 	public static VclEditBox editbox(String id) {
 		return new VclEditBox(app, idList.getId(id));
 	}
@@ -479,7 +479,7 @@ public class UIMap {
 
 	// Fontwork
 	public static final VclDialog fontworkGalleryDlg = dialog("svx:ModalDialog:RID_SVX_MDLG_FONTWORK_GALLERY");
-	
+
 	public static final VclEditBox swTableSizeColBox=editbox("sw:NumericField:DLG_INSERT_TABLE:ED_COL");
 	public static final VclEditBox swTableSizeRowBox=editbox("sw:NumericField:DLG_INSERT_TABLE:ED_ROW");
 	public static final VclControl swTableBackgroundColor=control("CUI_HID_BACKGROUND_CTL_BGDCOLORSET");
@@ -525,13 +525,13 @@ public class UIMap {
 	public static final VclTabPage sdTableBACGColorArea = tabpage("CUI_HID_AREA_AREA");
 	public static final VclTabPage sdTableBACGColorsOption = tabpage("CUI_HID_OPTIONS_COLOR");
 	public static final VclEditBox sdTableBACGColorsOptionName = editbox("cui:Edit:RID_SVXPAGE_COLOR:EDT_NAME");
-	
+
 	public static final VclTreeListBox sdNavigator = tree("SD_HID_SD_NAVIGATOR_TLB");
 	public static final VclButton sdNavigatorShapeFilter = button("SD_HID_SD_NAVIGATOR_TBI_SHAPE_FILTER");
 	public static final VclButton sdCalloutShapes = button(".uno:CalloutShapes");
 	public static final VclButton sdStarShapes = button(".uno:StarShapes");
 	public static final VclToolBox sdDrawingToolbar = toolbox(".HelpId:toolbar");
-	
+
 	public static final VclWindow impressHandoutView = window(".uno:NotesMode");
 	public static final VclWindow helpWindow = window("SFX2_HID_HELP_ONHELP");
 	public static final VclDialog printerSetUpDlg = dialog("svtools:ModalDialog:DLG_SVT_PRNDLG_PRNSETUPDLG");
@@ -540,7 +540,7 @@ public class UIMap {
 	public static final VclTreeListBox runMacroDlgCategories = tree("CUI_HID_SELECTOR_CATEGORIES");
 	public static final VclTreeListBox runMacroDlgCommands = tree("CUI_HID_SELECTOR_COMMANDS");
 	public static final VclButton optionUseOOdialog = button("cui:CheckBox:OFA_TP_MISC:CB_FILEDLG");
-	
+
 	public static final VclButton standardBarSave = button(".uno:Save");
 
 	public static final VclControl swFormatParagragh = control("CUI_HID_FORMAT_PARAGRAPH_STD");

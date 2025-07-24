@@ -33,10 +33,10 @@ public class Formatter<TokenType>
         mnWidth = 0;
         mnHeight = 0;
     }
-    
-    
-    
-    
+
+
+
+
     public FormatState<TokenType> FormatText (
         final Graphics2D aG2,
         final LineContainer<TokenType> aLines)
@@ -54,15 +54,15 @@ public class Formatter<TokenType>
                 aVisibleLines.add(aLine);
             }
         }
-        
+
         return new FormatState<TokenType>(
             new Dimension(mnWidth,mnHeight),
             aVisibleLines);
     }
 
-    
-    
-    
+
+
+
     private void FormatLines (
         final Graphics2D aG2,
         final LineContainer<TokenType> aLines)
@@ -83,10 +83,10 @@ public class Formatter<TokenType>
         }
         mnLastFormattedLine = aLines.GetLineCount()-1;
     }
-    
-    
-    
-    
+
+
+
+
     private int mnLastFormattedLine;
     private int mnWidth;
     private int mnHeight;

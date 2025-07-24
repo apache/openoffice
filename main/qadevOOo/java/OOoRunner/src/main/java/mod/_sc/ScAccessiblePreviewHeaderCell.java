@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -121,7 +121,7 @@ public class ScAccessiblePreviewHeaderCell extends TestCase {
      * Switchs the document to preview mode and then obtains the
      * accessible object for the header cell.
      */
-    protected synchronized TestEnvironment createTestEnvironment(TestParameters Param, 
+    protected synchronized TestEnvironment createTestEnvironment(TestParameters Param,
                                                                  PrintWriter log) {
         XInterface oObj = null;
 
@@ -142,7 +142,7 @@ public class ScAccessiblePreviewHeaderCell extends TestCase {
             throw new StatusException("Couldn't create document", e);
         }
 
-        XModel xModel = (XModel) UnoRuntime.queryInterface(XModel.class, 
+        XModel xModel = (XModel) UnoRuntime.queryInterface(XModel.class,
                                                            xSheetDoc);
 
         XController xController = xModel.getCurrentController();
@@ -157,7 +157,7 @@ public class ScAccessiblePreviewHeaderCell extends TestCase {
             XIndexAccess oIndexSheets = (XIndexAccess) UnoRuntime.queryInterface(
                                                 XIndexAccess.class, oSheets);
             XSpreadsheet oSheet = (XSpreadsheet) AnyConverter.toObject(
-                                          new Type(XSpreadsheet.class), 
+                                          new Type(XSpreadsheet.class),
                                           oIndexSheets.getByIndex(0));
 
             log.println("Getting a cell from sheet");
@@ -180,14 +180,14 @@ public class ScAccessiblePreviewHeaderCell extends TestCase {
 
         //setting property 'PrintHeaders' of the style 'Default'
         XStyleFamiliesSupplier xSFS = (XStyleFamiliesSupplier) UnoRuntime.queryInterface(
-                                              XStyleFamiliesSupplier.class, 
+                                              XStyleFamiliesSupplier.class,
                                               xSheetDoc);
         XNameAccess xNA = xSFS.getStyleFamilies();
         XPropertySet xPropSet = null;
 
         try {
             Object oPageStyles = xNA.getByName("PageStyles");
-            xNA = (XNameAccess) UnoRuntime.queryInterface(XNameAccess.class, 
+            xNA = (XNameAccess) UnoRuntime.queryInterface(XNameAccess.class,
                                                           oPageStyles);
 
             Object oDefStyle = xNA.getByName("Default");
@@ -224,10 +224,10 @@ public class ScAccessiblePreviewHeaderCell extends TestCase {
         //switching to 'Print Preview' mode
         try {
             XDispatchProvider xDispProv = (XDispatchProvider) UnoRuntime.queryInterface(
-                                                  XDispatchProvider.class, 
+                                                  XDispatchProvider.class,
                                                   xController);
             XURLTransformer xParser = (com.sun.star.util.XURLTransformer) UnoRuntime.queryInterface(
-                                              XURLTransformer.class, 
+                                              XURLTransformer.class,
                                               ( (XMultiServiceFactory) Param.getMSF())
                                                    .createInstance("com.sun.star.util.URLTransformer"));
             URL[] aParseURL = new URL[1];
@@ -257,8 +257,8 @@ public class ScAccessiblePreviewHeaderCell extends TestCase {
 
         if (oObj == null) {
             log.println("Version with a fixed #103863#");
-            oObj = at.getAccessibleObjectForRole(xRoot, 
-                                                 AccessibleRole.TABLE_CELL, 
+            oObj = at.getAccessibleObjectForRole(xRoot,
+                                                 AccessibleRole.TABLE_CELL,
                                                  true);
         }
 
@@ -266,7 +266,7 @@ public class ScAccessiblePreviewHeaderCell extends TestCase {
 
         TestEnvironment tEnv = new TestEnvironment(oObj);
 
-        tEnv.addObjRelation("EventProducer", 
+        tEnv.addObjRelation("EventProducer",
                             new ifc.accessibility._XAccessibleEventBroadcaster.EventProducer() {
             public void fireEvent() {
             }

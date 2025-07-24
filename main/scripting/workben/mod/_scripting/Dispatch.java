@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -62,7 +62,7 @@ public class Dispatch extends TestCase {
         XInterface oObj = null;
         URL dispatchURL = null;
         try {
-      
+
             XMultiServiceFactory xMSF = tParam.getMSF();
             SOfficeFactory SOF = null;
             SOF = SOfficeFactory.getFactory( xMSF );
@@ -71,12 +71,12 @@ public class Dispatch extends TestCase {
             XModel model = ( XModel ) UnoRuntime.queryInterface( XModel.class,
                 doc );
             XFrame frame = model.getCurrentController().getFrame();
-            oObj = ( XInterface )xMSF.createInstanceWithArguments( "com.sun.star.comp.ScriptProtocolHandler", new Object[] { frame } ); 
-            
+            oObj = ( XInterface )xMSF.createInstanceWithArguments( "com.sun.star.comp.ScriptProtocolHandler", new Object[] { frame } );
+
             XURLTransformer xParser=(XURLTransformer)
                 UnoRuntime.queryInterface(XURLTransformer.class,
                     tParam.getMSF().createInstance
-                        ("com.sun.star.util.URLTransformer"));  
+                        ("com.sun.star.util.URLTransformer"));
             // Because it's an in/out parameter we must use an array of
             // URL objects.
             URL[] aParseURL = new URL[1];

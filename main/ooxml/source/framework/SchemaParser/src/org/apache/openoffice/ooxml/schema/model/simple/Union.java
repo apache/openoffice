@@ -27,7 +27,7 @@ import org.apache.openoffice.ooxml.schema.model.base.Node;
 import org.apache.openoffice.ooxml.schema.model.base.NodeType;
 
 /** Representation of the 'union' XML schema element.
- *  Its set of valid values is the union of all of its children. 
+ *  Its set of valid values is the union of all of its children.
  */
 public class Union
     extends Node
@@ -38,10 +38,10 @@ public class Union
     {
         super(aParent, null, aLocation);
     }
-    
-    
-    
-    
+
+
+
+
     @Override
     public NodeType GetNodeType ()
     {
@@ -56,10 +56,10 @@ public class Union
     {
         aVisitor.Visit(this);
     }
-    
-    
-    
-    
+
+
+
+
     @Override
     public String toString ()
     {

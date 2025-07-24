@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -69,7 +69,7 @@ public class _XMailMergeBroadcaster extends MultiMethodTest {
     protected XMailMergeListener listener = new MyMailMergeEventListener();
 
     /**
-     * Tries to query the tested component for object relation 
+     * Tries to query the tested component for object relation
      * <code>executeArgs</code> [<code>NamedValue</code>] and <code>Job</code>
      * [<code>XJob</code>]
      * @throw StatusException If relations are not found
@@ -91,12 +91,12 @@ public class _XMailMergeBroadcaster extends MultiMethodTest {
     */
     public void _addMailMergeEventListener() {
         log.println("Testing addMailMergeEventListener ...");
-        
+
         oObj.addMailMergeEventListener( listener );
-        
+
         NamedValue[] executeArgs = (NamedValue[]) tEnv.getObjRelation("executeArgs");
         XJob Job = (XJob) tEnv.getObjRelation("Job");
-        
+
         try {
             Job.execute(executeArgs);
         } catch ( com.sun.star.lang.IllegalArgumentException e) {
@@ -106,7 +106,7 @@ public class _XMailMergeBroadcaster extends MultiMethodTest {
             throw new StatusException(Status.failed
                 ("'could not fire event: " + e)) ;
         }
-            
+
         shortWait();
 
         tRes.tested("addMailMergeEventListener()", changed);
@@ -120,12 +120,12 @@ public class _XMailMergeBroadcaster extends MultiMethodTest {
         log.println("Testing removeMailMergeEventListener ...");
         requiredMethod("addMailMergeEventListener()");
         changed = false;
-        
+
         oObj.removeMailMergeEventListener( listener );
-        
+
         NamedValue[] executeArgs = (NamedValue[]) tEnv.getObjRelation("executeArgs");
         XJob Job = (XJob) tEnv.getObjRelation("Job");
-        
+
         try {
             Job.execute(executeArgs);
         } catch ( com.sun.star.lang.IllegalArgumentException e) {

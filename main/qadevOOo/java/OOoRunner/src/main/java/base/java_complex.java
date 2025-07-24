@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -45,7 +45,7 @@ public class java_complex implements TestBase
     /**
      * This function executes the complex tests given as parameter "-o" or "TestJob". It querys for the correspond class
      * and crates the JobDescription.
-     * @param param 
+     * @param param
      * @return true of all tests run successfully, else false
      */
     public boolean executeTest(TestParameters param)
@@ -71,8 +71,8 @@ public class java_complex implements TestBase
 
     /**
      * This function run the given DescEntry[] as ComplexTest
-     * @param param 
-     * @param entries 
+     * @param param
+     * @param entries
      * @return true of all tests run successfully, else false
      */
     public boolean executeTest(TestParameters param, DescEntry[] entries)
@@ -89,10 +89,10 @@ public class java_complex implements TestBase
         ComplexTestCase testClass = null;
         boolean returnVal = true;
 
-//        the concept of the TimeOut depends on runner logs. If the runner log, 
+//        the concept of the TimeOut depends on runner logs. If the runner log,
 //        for example to start a test method, the timeout was reset. This is not
 //        while the test itself log something like "open document...".
-//        An property of complex test could be that it have only one test method 
+//        An property of complex test could be that it have only one test method
 //        which works for several minutes. Ih this case the TimeOut get not trigger
 //        and the office was killed.
 //        In complex tests just use "ThreadTimeOut" as timeout.

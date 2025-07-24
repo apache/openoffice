@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -103,7 +103,7 @@ public final class PdbDecoder {
                 int attr = file.readInt();
                 recAttrs[i] = (byte) (attr >>> 24);
             }
-	   
+
 
             // read the records
 
@@ -120,14 +120,14 @@ public final class PdbDecoder {
                 file.readFully(bytes);
 		recArray[i] = new Record(bytes, recAttrs[i]);
 	    }
-	    
+
             // last record
             file.seek(recOffset[lastIndex]);
             len = (int) file.length() - recOffset[lastIndex];
             bytes = new byte[len];
             file.readFully(bytes);
             recArray[lastIndex] = new Record(bytes, recAttrs[lastIndex]);
-	   
+
         }
 
         file.close();
@@ -138,7 +138,7 @@ public final class PdbDecoder {
 
         return pdb;
     }
-    
+
     /**
      *  <p>This method decodes a PDB file into a <code>PalmDB</code>
      *  object.</p>
@@ -157,12 +157,12 @@ public final class PdbDecoder {
      */
 
      public PalmDB parse(byte[] b) throws IOException {
-	 
+
 	 ByteArrayInputStream bais = new ByteArrayInputStream(b);
 	 DataInputStream dis = new DataInputStream(bais);
 
         // read the PDB header
-	 
+
         PdbHeader header = new PdbHeader();
         header.read(dis);
 
@@ -202,21 +202,21 @@ public final class PdbDecoder {
                 dis.readFully(bytes);
                 recArray[i] = new Record(bytes, recAttrs[i]);
             }
-	   
+
             // last record
-          
+
             dis.reset();
 	    len = (int) dis.available() - recOffset[lastIndex];
-	    dis.skip(recOffset[lastIndex]);	   
+	    dis.skip(recOffset[lastIndex]);
 	    bytes = new byte[len];
             dis.readFully(bytes);
             recArray[lastIndex] = new Record(bytes, recAttrs[lastIndex]);
         }
-	
+
 
 
         // create PalmDB and return it
-	
+
         PalmDB pdb = new PalmDB(header.pdbName, header.creatorID,
             header.typeID, header.version, header.attribute, recArray);
 

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -225,26 +225,26 @@ public class DocumentInfo
             {
                 // get an XPropertySet, here the one of a text cursor
                 // XPropertySet xCursorProps = (XPropertySet)UnoRuntime.queryInterface(XPropertySet.class, mxDocCursor);
-                
+
                 // get the property info interface of this XPropertySet
                 XPropertySetInfo xPropsInfo = xProps.getPropertySetInfo();
-                
+
                 // get all properties (NOT the values) from XPropertySetInfo
                 Property[] aProps = xPropsInfo.getProperties();
                 int i;
                 for (i = 0; i < aProps.length; ++i) {
                     // number of property within this info object
                     System.out.print("Property #" + i);
-                    
+
                     // name of property
                     System.out.print(": Name<" + aProps[i].Name);
-                    
+
                     // handle of property (only for XFastPropertySet)
                     System.out.print("> Handle<" + aProps[i].Handle);
-                    
+
                     // type of property
                     System.out.print("> " + aProps[i].Type.toString());
-                    
+
                     // attributes (flags)
                     System.out.print(" Attributes<");
                     short nAttribs = aProps[i].Attributes;
@@ -271,7 +271,7 @@ public class DocumentInfo
                 e.printStackTrace(System.out);
             }
         }
-    
+
     private boolean checkType(XPropertySet xProps, String aName,
             String expected)
     {

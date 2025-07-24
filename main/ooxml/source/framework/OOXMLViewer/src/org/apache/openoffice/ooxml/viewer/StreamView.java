@@ -47,7 +47,7 @@ public class StreamView
     implements TreeSelectionListener, MouseMotionListener
 {
     /** Create a new PartsView object for the given OOXML file.
-     *  When the user clicks on one part entry then the DetailViewManager is 
+     *  When the user clicks on one part entry then the DetailViewManager is
      *  called and asked to display the part.
      */
     StreamView (
@@ -57,7 +57,7 @@ public class StreamView
         maDetailViewManager = aDetailViewManager;
         maOOXMLPackage = aPackage;
         getSelectionModel().addTreeSelectionListener(this);
-        
+
         // Listen for motion events so that the tooltip can be set according to
         // the entry under the mouse pointer.
         addMouseMotionListener(this);
@@ -76,13 +76,13 @@ public class StreamView
                 }
             }
         });
-        
+
         setToolTipText("hallo");
     }
 
 
-    
-    
+
+
     private TreeModel CreateTreeModel (final OOXMLPackage aPackage)
     {
         final DefaultMutableTreeNode aRootNode = new DefaultMutableTreeNode(
@@ -101,7 +101,7 @@ public class StreamView
                         aChild = new DefaultMutableTreeNode(sPart);
                         aNode.add(aChild);
                     }
-    
+
                     aNode = aChild;
                 }
             }
@@ -112,20 +112,20 @@ public class StreamView
         }
         return aModel;
     }
-    
-    
-    
-    
+
+
+
+
     public void ShowInitialPart ()
     {
-        final Part aPart = maOOXMLPackage.getOfficeDocumentPart(); 
+        final Part aPart = maOOXMLPackage.getOfficeDocumentPart();
         MakePartVisible(aPart);
         maDetailViewManager.ShowPart(aPart);
     }
 
-    
-    
-    
+
+
+
     private DefaultMutableTreeNode GetChildNodeForName (final TreeNode aNode, final String sName)
     {
         for (int nIndex=0; nIndex<aNode.getChildCount(); ++nIndex)
@@ -138,10 +138,10 @@ public class StreamView
         }
         return null;
     }
-    
-    
-    
-    
+
+
+
+
     /** Callback for clicks on the part view.
      */
     @Override
@@ -159,10 +159,10 @@ public class StreamView
                 eType);
         }
     }
-    
-    
-    
-    
+
+
+
+
     @Override
     public void mouseDragged (final MouseEvent aEvent)
     {
@@ -182,9 +182,9 @@ public class StreamView
         }
     }
 
-    
-        
-    
+
+
+
     private String GetPackagePathForTreePath (final TreePath aPath)
     {
         final StringBuffer sPath = new StringBuffer("");
@@ -196,28 +196,28 @@ public class StreamView
         }
         return sPath.toString();
     }
-    
-    
-    
-    
+
+
+
+
     private void SetPartUnderMouse (final String sPartPath)
     {
         if (msPartPathUnderMouse==null
             || ! msPartPathUnderMouse.equals(sPartPath))
         {
             msPartPathUnderMouse = sPartPath;
-            
+
             final ContentType eType = maOOXMLPackage.getPart(
                 new PartName(msPartPathUnderMouse)).getContentType();
             String sToolTipText = eType.toString();
             if ( ! eType.GetLongName().isEmpty())
-                sToolTipText += " (" + eType.GetLongName() + ")"; 
+                sToolTipText += " (" + eType.GetLongName() + ")";
             setToolTipText(sToolTipText);
         }
     }
-    
-    
-    
+
+
+
 
     private void MakePartVisible (final Part aPart)
     {
@@ -244,22 +244,22 @@ public class StreamView
             if ( ! bFoundChild)
                 return;
         }
-        
+
         SelectNode(new TreePath(aTreeNodePath));
     }
-    
 
-    
-    
+
+
+
     private void SelectNode (final TreePath aTreePath)
     {
 //        getSelectionModel().setSelectionPath(aTreePath);
 //        scrollPathToVisible(aTreePath);
     }
-    
-    
-    
-    
+
+
+
+
     private final DetailViewManager maDetailViewManager;
     private final OOXMLPackage maOOXMLPackage;
     private String msPartPathUnderMouse;

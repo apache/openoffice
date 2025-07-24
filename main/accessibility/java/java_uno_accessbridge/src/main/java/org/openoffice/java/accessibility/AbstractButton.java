@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -28,41 +28,41 @@ import javax.accessibility.AccessibleState;
 import com.sun.star.uno.*;
 import com.sun.star.accessibility.*;
 
-/** 
+/**
  */
 public abstract class AbstractButton extends Component {
-    
+
     protected AbstractButton(XAccessible xAccessible, XAccessibleContext xAccessibleContext) {
         super(xAccessible, xAccessibleContext);
     }
-    
-    protected abstract class AccessibleAbstractButton extends AccessibleUNOComponent 
+
+    protected abstract class AccessibleAbstractButton extends AccessibleUNOComponent
         implements javax.accessibility.AccessibleAction {
-        
+
         /**
         * Though the class is abstract, this should be called by all sub-classes
         */
         protected AccessibleAbstractButton() {
             super();
         }
-        
+
         /*
         * AccessibleContext
         */
-        
+
         /** Gets the AccessibleAction associated with this object that supports one or more actions */
         public javax.accessibility.AccessibleAction getAccessibleAction() {
             return this;
         }
-        
+
         /** Gets the AccessibleText associated with this object presenting text on the display */
         public javax.accessibility.AccessibleText getAccessibleText() {
-            
+
             if (disposed)
                 return null;
-            
+
             try {
-                XAccessibleText unoAccessibleText = (XAccessibleText) 
+                XAccessibleText unoAccessibleText = (XAccessibleText)
                     UnoRuntime.queryInterface(XAccessibleText.class,unoAccessibleComponent);
                 if (unoAccessibleText != null) {
                     return new AccessibleTextImpl(unoAccessibleText);
@@ -73,7 +73,7 @@ public abstract class AbstractButton extends Component {
                 return null;
             }
         }
-        
+
         /** Returns the relation set of this object */
         public javax.accessibility.AccessibleRelationSet getAccessibleRelationSet() {
             try {
@@ -119,7 +119,7 @@ public abstract class AbstractButton extends Component {
         /*
         * AccessibleAction
         */
-        
+
         /** Performs the specified Action on the object */
         public boolean doAccessibleAction(int param) {
             if (param == 0) {
@@ -142,7 +142,7 @@ public abstract class AbstractButton extends Component {
                         XAccessibleContext xAccessibleContext = unoAccessibleContext;
                         if (xAccessibleContext != null) {
                             // Query for XAccessibleAction interface
-                            XAccessibleAction xAccessibleAction = (XAccessibleAction) 
+                            XAccessibleAction xAccessibleAction = (XAccessibleAction)
                                 UnoRuntime.queryInterface(XAccessibleAction.class, xAccessibleContext);
 
                             if (xAccessibleAction != null) {
@@ -154,15 +154,15 @@ public abstract class AbstractButton extends Component {
                     }
                 }
             }
-            
+
             return false;
         }
-        
+
         /** Returns a description of the specified action of the object */
         public java.lang.String getAccessibleActionDescription(int param) {
-            return javax.swing.UIManager.getString("AbstractButton.clickText"); 
+            return javax.swing.UIManager.getString("AbstractButton.clickText");
         }
-        
+
         /** Returns the number of accessible actions available in this object */
         public int getAccessibleActionCount() {
             return 1;

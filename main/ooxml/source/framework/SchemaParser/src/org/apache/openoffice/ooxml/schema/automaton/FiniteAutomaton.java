@@ -34,7 +34,7 @@ import org.apache.openoffice.ooxml.schema.model.base.QualifiedName;
  *  the input file.  During parsing the current automaton is pushed on a stack
  *  and the automaton that represents the complex type associated with the
  *  starting element is made the current automaton.  An end tag pops an automaton
- *  from the stack and replaces the current automaton with it. 
+ *  from the stack and replaces the current automaton with it.
  */
 public class FiniteAutomaton
 {
@@ -49,50 +49,50 @@ public class FiniteAutomaton
             : new Vector<Attribute>();
         maLocation = aLocation;
     }
-    
-    
-    
-    
+
+
+
+
     public int GetStateCount ()
     {
         return maStateContext.GetStateCount();
     }
-    
-    
-    
-    
+
+
+
+
     public Iterable<State> GetStates()
     {
         return maStateContext.GetStates();
     }
 
-    
-    
-    
+
+
+
     public Iterable<State> GetStatesSorted ()
     {
         return maStateContext.GetStatesSorted();
     }
 
-    
-    
-    
+
+
+
     public State GetStartState ()
     {
         return maStateContext.GetStartState();
     }
 
-    
-    
-    
+
+
+
     public Iterable<State> GetAcceptingStates ()
     {
         return maStateContext.GetAcceptingStates();
     }
 
-    
-    
-    
+
+
+
     public FiniteAutomaton CreateDFA (
         final StateContainer aDFAContainer,
         final QualifiedName aTypeName)
@@ -105,9 +105,9 @@ public class FiniteAutomaton
             maLocation);
     }
 
-    
-    
-    
+
+
+
     public StateContext GetStateContext()
     {
         return maStateContext;
@@ -125,9 +125,9 @@ public class FiniteAutomaton
         return aTransitions;
     }
 
-    
-    
-    
+
+
+
     public int GetTransitionCount()
     {
         int nTransitionCount = 0;
@@ -136,33 +136,33 @@ public class FiniteAutomaton
         return nTransitionCount;
     }
 
-    
-    
-    
+
+
+
     public String GetTypeName ()
     {
         return maStateContext.GetStartState().GetFullname();
     }
-    
-    
-    
-    
+
+
+
+
     public Location GetLocation ()
     {
         return maLocation;
     }
-    
-    
-    
-    
+
+
+
+
     public Vector<Attribute> GetAttributes ()
     {
         return maAttributes;
     }
-    
-    
-    
-    
+
+
+
+
     private final StateContext maStateContext;
     private final Vector<Attribute> maAttributes;
     private final Location maLocation;

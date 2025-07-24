@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -58,13 +58,13 @@ import com.sun.star.wizards.ui.UnoDialog2;
 import com.sun.star.wizards.ui.event.DataAware;
 
 /**
- * 
- * The classes here implement the whole document-functionality of the agenda wizard: 
+ *
+ * The classes here implement the whole document-functionality of the agenda wizard:
  * the live-preview and the final "creation" of the document, when the user clicks "finish". <br/>
  * <br/>
  * <h2>Some terminology:<h2/>
  * items are names or headings. we don't make any distinction.
- * 
+ *
  * <br/>
  * The Agenda Template is used as general "controller" of the whole document, whereas the
  * two child-classes ItemsTable and TopicsTable control the item tables (note plural!) and the
@@ -98,7 +98,7 @@ import com.sun.star.wizards.ui.event.DataAware;
  * Many methods here are synchronized, in order to avoid collision made by
  * events fired too often.
  * @author rpiterman
- *  
+ *
  */
 public class AgendaTemplate extends TextDocument implements TemplateConsts, DataAware.Listener
 {
@@ -128,7 +128,7 @@ public class AgendaTemplate extends TextDocument implements TemplateConsts, Data
      * This is practically an identical copy of the current template.
      */
     String template;
-    /** 
+    /**
      * used for common operations on sections.
      */
     TextSectionHandler textSectionHandler;
@@ -137,8 +137,8 @@ public class AgendaTemplate extends TextDocument implements TemplateConsts, Data
      */
     XComponentLoader xComponentLoader;
     /**
-     * an array containing all ItemTable object (which control each an Items 
-     * Table in the document. 
+     * an array containing all ItemTable object (which control each an Items
+     * Table in the document.
      */
     ItemsTable[] itemsTables;
     /**
@@ -160,8 +160,8 @@ public class AgendaTemplate extends TextDocument implements TemplateConsts, Data
      * A temporary variable used to list all items and map them.
      */
     List _allItems = new Vector();
-    /** 
-     * keep a reference on some static items in the document, 
+    /**
+     * keep a reference on some static items in the document,
      * so when their content is changed (through the user), we
      * can just reference them and set their text.
      */
@@ -357,7 +357,7 @@ public class AgendaTemplate extends TextDocument implements TemplateConsts, Data
     }
 
     /**
-     * itemsCache is a Map containing all agenda item. These are object which 
+     * itemsCache is a Map containing all agenda item. These are object which
      * "write themselves" to the table, given a table cursor.
      * A cache is used in order to reuse the objects, instead of recreate them.
      * This method fills the cache will all items objects (names and headings).
@@ -707,7 +707,7 @@ public class AgendaTemplate extends TextDocument implements TemplateConsts, Data
         textSectionHandler.removeAllTextSections();
     }
 
-    /** 
+    /**
      * hidden sections exist when an item's section is hidden because the
      * user specified not to display any items which it contains.
      * When finishing the wizard removes this sections entirely from the document.
@@ -737,9 +737,9 @@ public class AgendaTemplate extends TextDocument implements TemplateConsts, Data
 
     /**
      * create the minutes for the given topics or remove the minutes section from the document.
-     * If no topics are supplied, or the user 
+     * If no topics are supplied, or the user
      * specified not to create minutes, the minutes section will be removed,
-     * @param topicsData supplies PropertyValue arrays containing the values for the topics. 
+     * @param topicsData supplies PropertyValue arrays containing the values for the topics.
      */
     public synchronized void createMinutes(List topicsData)
     {
@@ -808,7 +808,7 @@ public class AgendaTemplate extends TextDocument implements TemplateConsts, Data
                  * now add minutes for each topic.
                  * The template contains *one* minutes section, so
                  * we first use the one available, and then add a new one...
-                 * 
+                 *
                  * topics data has *always* an empty topic at the end...
                  */
                 for (int i = 0; i < topicsData.size() - 1; i++)
@@ -1021,9 +1021,9 @@ public class AgendaTemplate extends TextDocument implements TemplateConsts, Data
                 /* now go through all items that belong to this
                  * table. Check each one against the model. If it should
                  * be display, call it's write method.
-                 * All items are of type AgendaItem which means they write 
+                 * All items are of type AgendaItem which means they write
                  * two cells to the table: a title (text) and a placeholder.
-                 * see AgendaItem class below. 
+                 * see AgendaItem class below.
                  */
                 for (int i = 0; i < items.size(); i++)
                 {
@@ -1102,7 +1102,7 @@ public class AgendaTemplate extends TextDocument implements TemplateConsts, Data
     /**
      * This class handles the preview of the topics table.
      * You can call it the controller of the topics table.
-     * It differs from ItemsTable in that it has no data model - 
+     * It differs from ItemsTable in that it has no data model -
      * the update is done programmatically.<br/>
      * <br/>
      * The decision to make this class a class by its own
@@ -1110,7 +1110,7 @@ public class AgendaTemplate extends TextDocument implements TemplateConsts, Data
      * since there is anyway only one instance of this class at runtime
      * it could have also be implemented in the AgendaTemplate class
      * but for clarity and separation I decided to make a subclass for it.
-     * 
+     *
      * @author rp143992
      */
     public class Topics
@@ -1140,7 +1140,7 @@ public class AgendaTemplate extends TextDocument implements TemplateConsts, Data
         List topicCells = new Vector();
         int rowsPerTopic;
         /**
-         * fields which hold the number of the 
+         * fields which hold the number of the
          * fillins in the cells vectors.
          */
         int numCell = -1;
@@ -1160,7 +1160,7 @@ public class AgendaTemplate extends TextDocument implements TemplateConsts, Data
         /**
          * Analyze the structure of the Topics table.
          * The structure Must be as follows:<br>
-         * -One Header Row. <br> 
+         * -One Header Row. <br>
          * -arbitrary number of rows per topic <br>
          * -arbitrary content in the topics row <br>
          * -only soft formatting will be restored. <br>
@@ -1218,7 +1218,7 @@ public class AgendaTemplate extends TextDocument implements TemplateConsts, Data
             }
 
             /*
-             * in the topics table, there are always one 
+             * in the topics table, there are always one
              * title row and three topics defined.
              * So no mutter how many rows a topic takes - we
              * can restore its structure and format.
@@ -1269,7 +1269,7 @@ public class AgendaTemplate extends TextDocument implements TemplateConsts, Data
 
 
 
-            /* now that we know how the topics look like, 
+            /* now that we know how the topics look like,
              * we get the format of the first and last rows.
              */
 
@@ -1345,8 +1345,8 @@ public class AgendaTemplate extends TextDocument implements TemplateConsts, Data
         /**
          * check if the topic with the given index is written to the table.
          * @param topic the topic number (0 base)
-         * @return true if the topic is already written to the table. False if not. 
-         * (false would mean new rows must be added to the table in order to 
+         * @return true if the topic is already written to the table. False if not.
+         * (false would mean new rows must be added to the table in order to
          * be able to write this topic).
          */
         private boolean isWritten(int topic)
@@ -1356,7 +1356,7 @@ public class AgendaTemplate extends TextDocument implements TemplateConsts, Data
 
         /**
          * rewrites a single cell containing.
-         * This is used in order to refresh the topic/responsible/duration data in the 
+         * This is used in order to refresh the topic/responsible/duration data in the
          * preview document, in response to a change in the gui (by the user).
          * Since the structure of the topics table is flexible, we don't reference a cell
          * number. Rather, we use "what" argument to specify which cell should be redrawn.
@@ -1420,10 +1420,10 @@ public class AgendaTemplate extends TextDocument implements TemplateConsts, Data
          * writes the given topic.
          * if the first topic was involved, reformat the
          * first row.
-         * If any rows were added to the table, reformat 
-         * the last row. 
+         * If any rows were added to the table, reformat
+         * the last row.
          * @param topic the index of the topic to write.
-         * @param data the topic's data. (see TopicsControl 
+         * @param data the topic's data. (see TopicsControl
          * for explanation about the topics data model)
          * @throws Exception if something goes wrong (though nothing should).
          */
@@ -1475,10 +1475,10 @@ public class AgendaTemplate extends TextDocument implements TemplateConsts, Data
          * number of actual topics it does *not* add
          * new rows !
          * Note also that the first topic will never be removed.
-         * If the table contains no topics, the whole section will 
+         * If the table contains no topics, the whole section will
          * be removed upon finishing.
          * The reason for that is a "table-design" one: the first topic is
-         * maintained in order to be able to add rows with a design of this topic, 
+         * maintained in order to be able to add rows with a design of this topic,
          * and not of the header row.
          * @param topics the number of topics the table should contain.
          * @throws Exception
@@ -1525,7 +1525,7 @@ public class AgendaTemplate extends TextDocument implements TemplateConsts, Data
         /**
          * returns a text element for the given cell,
          * which will write the given text.
-         * @param cell the topics cell number. 
+         * @param cell the topics cell number.
          * @param value the value to write.
          * @return a TextElement object which will write the given value
          * to the given cell.
@@ -1548,7 +1548,7 @@ public class AgendaTemplate extends TextDocument implements TemplateConsts, Data
          * formats a series of cells from the given one,
          * using the given List of TableCellFormatter objects,
          * in the given order.
-         * This method is used to format the first (header) and the last 
+         * This method is used to format the first (header) and the last
          * rows of the table.
          * @param cursor a table cursor, pointing to the start cell to format
          * @param formats a List containing TableCellFormatter objects. Each will format one cell in the direction specified.
@@ -1647,7 +1647,7 @@ public class AgendaTemplate extends TextDocument implements TemplateConsts, Data
     }
 
     /**
-     * returns the rows count of this table, assuming 
+     * returns the rows count of this table, assuming
      * there is no vertical merged cells.
      * @param table
      * @return the rows count of the given table.
@@ -1661,11 +1661,11 @@ public class AgendaTemplate extends TextDocument implements TemplateConsts, Data
 
 /*
  * ===========================================================================================
- * 
+ *
  *                  End of AgendaTemplate class
- *  
+ *
  * ===========================================================================================
- * 
+ *
  */
 /*
  * =================================
@@ -1673,7 +1673,7 @@ public class AgendaTemplate extends TextDocument implements TemplateConsts, Data
  * =================================
  */
 /**
- * Interface that is used for writing content to a Uno Text / TextRange 
+ * Interface that is used for writing content to a Uno Text / TextRange
  * @author rp143992
  *
  */
@@ -1690,8 +1690,8 @@ interface AgendaElement
  * =================================
  */
 /**
- * Basic implementation of the AgendaElement interface - 
- * writes nothing, but applies a ParaStyle to the given XText/XTextRange 
+ * Basic implementation of the AgendaElement interface -
+ * writes nothing, but applies a ParaStyle to the given XText/XTextRange
  * @author rp143992
  *
  * TODO To change the template for this generated type comment go to
@@ -1819,7 +1819,7 @@ class PlaceholderTextElement extends TextElement
  *  The PlaceHolder class
  * =================================
  */
-/** 
+/**
  * An Agenda element which writes no text, but inserts a placeholder, and formats
  * it using a ParaStyleName.
  * @author rp143992
@@ -1863,7 +1863,7 @@ class PlaceholderElement extends ParaStyled
  * =================================
  */
 /**
- * An implementation of AgendaElement which 
+ * An implementation of AgendaElement which
  * gets as a parameter a table cursor, and writes
  * a text to the cell marked by this table cursor, and
  * a place holder to the next cell.
@@ -1949,5 +1949,3 @@ class TableCellFormatter
         Helper.setUnoPropertyValues(tableCell, properties, values);
     }
 }
-
-    

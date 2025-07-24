@@ -44,27 +44,27 @@ public class Attribute
         super(aName, sUse, sDefault, sFixed, eFormDefault, aLocation);
         maTypeName = aTypeName;
     }
-    
-    
-    
-    
+
+
+
+
     public QualifiedName GetTypeName ()
     {
         return maTypeName;
     }
 
-    
-    
-    
+
+
+
     @Override
     public NodeType GetNodeType ()
     {
         return NodeType.Attribute;
     }
 
-    
-    
-    
+
+
+
     @Override
     public void AcceptVisitor (final INodeVisitor aVisitor)
     {
@@ -83,9 +83,9 @@ public class Attribute
             maTypeName.GetDisplayName(),
             super.toString());
     }
-    
 
-    
-    
+
+
+
     private final QualifiedName maTypeName;
 }

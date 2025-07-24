@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 package fvt.uno.sc.chart;
@@ -51,7 +51,7 @@ import com.sun.star.table.CellRangeAddress;
 
 /**
  *  Check the chart legend and the position can be applied and saved
- * 
+ *
  */
 @RunWith(value = Parameterized.class)
 public class ChartLegend {
@@ -60,12 +60,12 @@ public class ChartLegend {
 	private double[][] numberData;
 	private int[] offset;
 	private String fileType;
-	
+
 	private static final UnoApp unoApp = new UnoApp();
-	
+
 	XComponent scComponent = null;
 	XSpreadsheetDocument scDocument = null;
-	
+
 	@Parameters
 	public static Collection<Object[]> data() throws Exception {
 		int[][] offsetList = {
@@ -73,7 +73,7 @@ public class ChartLegend {
 				{-1000, 3000},
 				{-4000, -1000}
 		};
-		
+
 		double[][] numberData1 = {
 				{1, 2, 3, 4},
 				{2, 4.3, 5, 8},
@@ -89,15 +89,15 @@ public class ChartLegend {
 			{"com.sun.star.chart.NetDiagram", numberData1, offsetList[2], "xls"}
 		});
 	}
-	
+
 	public ChartLegend(String inputType, double[][] numberData, int[] offset, String fileType) {
 		this.inputType = inputType;
 		this.numberData = numberData;
 		this.offset = offset;
 		this.fileType = fileType;
 	}
-	
-	
+
+
 	@Before
 	public void setUp() throws Exception {
 		scComponent = unoApp.newDocument("scalc");
@@ -107,9 +107,9 @@ public class ChartLegend {
 	@After
 	public void tearDown() throws Exception {
 		unoApp.closeDocument(scComponent);
-		
+
 	}
-	
+
 	@BeforeClass
 	public static void setUpConnection() throws Exception {
 		unoApp.start();
@@ -118,9 +118,9 @@ public class ChartLegend {
 	@AfterClass
 	public static void tearDownConnection() throws InterruptedException, Exception {
 		unoApp.close();
-		SCUtil.clearTempDir();	
+		SCUtil.clearTempDir();
 	}
-	
+
 	/**
 	 * Check remove the legend of chart
 	 * 1. Create a spreadsheet file.
@@ -136,19 +136,19 @@ public class ChartLegend {
 		String fileName = "testDisableLegend";
 		String chartName = "testChart";
 		String cellRangeName = "A1:D4";
-		Boolean result = true;		
+		Boolean result = true;
 
 		if (fileType.equalsIgnoreCase("xls")) {
-			chartName = "Object 1";			
+			chartName = "Object 1";
 		}
-		
+
 		XSpreadsheet sheet = SCUtil.getCurrentSheet(scDocument);
-		
+
 		SCUtil.setValueToCellRange(sheet, 0, 0, numberData);
 		CellRangeAddress[] cellAddress = new CellRangeAddress[1];
 		cellAddress[0] = SCUtil.getChartDataRangeByName(sheet, cellRangeName);
 		Rectangle rectangle = new Rectangle(1000, 1000, 15000, 9500);
-		XChartDocument xChartDocument = null; 		
+		XChartDocument xChartDocument = null;
 		xChartDocument = SCUtil.createChart(sheet, rectangle, cellAddress, chartName);
 
 		SCUtil.setChartType(xChartDocument, inputType);
@@ -156,20 +156,20 @@ public class ChartLegend {
 		if (result) {
 			SCUtil.setProperties(xChartDocument, "HasLegend", false);
 		}
-		
+
 		SCUtil.saveFileAs(scComponent, fileName, fileType);
 		scDocument = SCUtil.reloadFile(unoApp, scDocument, fileName + "." + fileType);
 		sheet = SCUtil.getCurrentSheet(scDocument);
-		
+
 		xChartDocument = SCUtil.getChartByName(sheet, chartName);
 		result = (Boolean) SCUtil.getProperties(xChartDocument, "HasLegend");
 
 		SCUtil.closeFile(scDocument);
-		
+
 		assertFalse("Chart legend has not been disabled in " + fileType + " file.", result);
 
 	}
-	
+
 	/**
 	 * Check change the position of legend in chart
 	 * 1. Create a spreadsheet file.
@@ -190,38 +190,38 @@ public class ChartLegend {
 
 		if (fileType.equalsIgnoreCase("xls")) {
 			delta = 4; // increase tolerance for legend position changes in the XLS roundtrip
-			chartName = "Object 1";			
+			chartName = "Object 1";
 		}
-		
+
 		XSpreadsheet sheet = SCUtil.getCurrentSheet(scDocument);
-		
+
 		SCUtil.setValueToCellRange(sheet, 0, 0, numberData);
 		CellRangeAddress[] cellAddress = new CellRangeAddress[1];
 		cellAddress[0] = SCUtil.getChartDataRangeByName(sheet, cellRangeName);
 		Rectangle rectangle = new Rectangle(1000, 1000, 15000, 9500);
-		XChartDocument xChartDocument = null; 		
+		XChartDocument xChartDocument = null;
 		xChartDocument = SCUtil.createChart(sheet, rectangle, cellAddress, chartName);
 
 		SCUtil.setChartType(xChartDocument, inputType);
-		
+
 		XShape legend = xChartDocument.getLegend();
 		Point aPoint = legend.getPosition();
 		aPoint = new Point(aPoint.X + offset[0], aPoint.Y + offset[1]);
 		legend.setPosition(aPoint);
-		
+
 		SCUtil.saveFileAs(scComponent, fileName, fileType);
 		scDocument = SCUtil.reloadFile(unoApp, scDocument, fileName + "." + fileType);
 		sheet = SCUtil.getCurrentSheet(scDocument);
-		
+
 		xChartDocument = SCUtil.getChartByName(sheet, chartName);
 		result = (Boolean) SCUtil.getProperties(xChartDocument, "HasLegend");
 		legend = xChartDocument.getLegend();
 		Point resultPoint = legend.getPosition();
 
 		SCUtil.closeFile(scDocument);
-		
+
 		assertTrue("Chart legend has not been enabled in ." + fileType + " file.", result);
-		
+
 		assertEquals("Incorrect chart legend position X got in ." + fileType + " file.", aPoint.X, resultPoint.X, delta);
 		assertEquals("Incorrect chart legend position Y got in ." + fileType + " file.", aPoint.Y, resultPoint.Y, delta);
 	}

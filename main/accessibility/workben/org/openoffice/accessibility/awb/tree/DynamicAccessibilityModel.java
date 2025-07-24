@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -39,11 +39,11 @@ import com.sun.star.accessibility.XAccessibleContext;
 public class DynamicAccessibilityModel extends AccessibilityModel implements TreeExpansionListener, TreeWillExpandListener {
 
     /* Creates a AccessibilityNode object for a window */
-    protected AccessibilityNode createWindowNode(XAccessible xAccessible, 
+    protected AccessibilityNode createWindowNode(XAccessible xAccessible,
             XAccessibleContext xAccessibleContext) {
         if (xAccessible != null) {
-            // Some objects inherit XAccessible, but should not appear in 
-            // the hierarchy as toplevels (like sub-menus), so they don't 
+            // Some objects inherit XAccessible, but should not appear in
+            // the hierarchy as toplevels (like sub-menus), so they don't
             // return an accessible context.
             if (xAccessibleContext != null) {
                 AccessibilityNode node = new AccessibilityNode(this);
@@ -55,12 +55,12 @@ public class DynamicAccessibilityModel extends AccessibilityModel implements Tre
         }
         return null;
     }
-        
+
     /* Creates a DynamicAccessibilityNode object */
     protected AccessibilityNode createNode(XAccessible xAccessible) {
         if (xAccessible != null) {
             try {
-                // Some objects inherit XAccessible, but should not appear in 
+                // Some objects inherit XAccessible, but should not appear in
                 // the hierarchy as toplevels (like sub-menus), so they don't
                 // return an accessible context.
                 XAccessibleContext xAccessibleContext = xAccessible.getAccessibleContext();
@@ -76,7 +76,7 @@ public class DynamicAccessibilityModel extends AccessibilityModel implements Tre
         }
         return null;
     }
-    
+
     public void treeCollapsed(javax.swing.event.TreeExpansionEvent treeExpansionEvent) {
         TreeNode node = (TreeNode) treeExpansionEvent.getPath().getLastPathComponent();
         if (node instanceof DynamicAccessibilityNode) {
@@ -84,7 +84,7 @@ public class DynamicAccessibilityModel extends AccessibilityModel implements Tre
             dynode.clear();
         }
     }
-    
+
     public void treeExpanded(javax.swing.event.TreeExpansionEvent treeExpansionEvent) {
         TreeNode node = (TreeNode) treeExpansionEvent.getPath().getLastPathComponent();
         if (node instanceof AccessibilityNode) {
@@ -95,7 +95,7 @@ public class DynamicAccessibilityModel extends AccessibilityModel implements Tre
             }
         }
     }
-    
+
     public void treeWillCollapse(javax.swing.event.TreeExpansionEvent treeExpansionEvent)
             throws javax.swing.tree.ExpandVetoException {
         TreeNode node = (TreeNode) treeExpansionEvent.getPath().getLastPathComponent();
@@ -107,8 +107,8 @@ public class DynamicAccessibilityModel extends AccessibilityModel implements Tre
             }
         }
     }
-    
-    public void treeWillExpand(javax.swing.event.TreeExpansionEvent treeExpansionEvent) 
+
+    public void treeWillExpand(javax.swing.event.TreeExpansionEvent treeExpansionEvent)
             throws javax.swing.tree.ExpandVetoException {
         TreeNode node = (TreeNode) treeExpansionEvent.getPath().getLastPathComponent();
         if (node instanceof DynamicAccessibilityNode) {

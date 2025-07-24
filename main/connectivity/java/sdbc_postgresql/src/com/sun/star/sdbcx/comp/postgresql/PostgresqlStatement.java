@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 package com.sun.star.sdbcx.comp.postgresql;
@@ -42,7 +42,7 @@ import com.sun.star.util.XCancellable;
 
 public class PostgresqlStatement extends ComponentBase
         implements XCloseable, XPropertySet, XCancellable, XStatement, XWarningsSupplier, XMultipleResults {
-    
+
     private XStatement impl;
     private XCloseable implCloseable;
     private XPropertySet implPropertySet;
@@ -50,7 +50,7 @@ public class PostgresqlStatement extends ComponentBase
     private XWarningsSupplier implWarningsSupplier;
     private XMultipleResults implMultipleResults;
     private XConnection connection;
-    
+
     public PostgresqlStatement(XStatement impl, XConnection connection) {
         this.impl = impl;
         this.implCloseable = UnoRuntime.queryInterface(XCloseable.class, impl);
@@ -60,9 +60,9 @@ public class PostgresqlStatement extends ComponentBase
         this.implMultipleResults = UnoRuntime.queryInterface(XMultipleResults.class, impl);
         this.connection = connection;
     }
-    
+
     // XComponentBase:
-    
+
     @Override
     protected void postDisposing() {
         try {
@@ -70,9 +70,9 @@ public class PostgresqlStatement extends ComponentBase
         } catch (SQLException sqlException) {
         }
     }
-    
+
     // XStatement:
-    
+
     public boolean execute(String arg0) throws SQLException {
         System.out.println(arg0);
         return impl.execute(arg0);
@@ -92,13 +92,13 @@ public class PostgresqlStatement extends ComponentBase
     }
 
     // XCloseable:
-    
+
     public void close() throws SQLException {
         dispose();
     }
 
     // XPropertySet:
-    
+
     public void addPropertyChangeListener(String arg0, XPropertyChangeListener arg1) throws UnknownPropertyException, WrappedTargetException {
         implPropertySet.addPropertyChangeListener(arg0, arg1);
     }
@@ -129,13 +129,13 @@ public class PostgresqlStatement extends ComponentBase
     }
 
     // XCancellable:
-    
+
     public void cancel() {
         implCancellable.cancel();
     }
 
     // XWarningsSupplier:
-    
+
     public void clearWarnings() throws SQLException {
         implWarningsSupplier.clearWarnings();
     }
@@ -145,7 +145,7 @@ public class PostgresqlStatement extends ComponentBase
     }
 
     // XMultipleResults:
-    
+
     public boolean getMoreResults() throws SQLException {
         return implMultipleResults.getMoreResults();
     }

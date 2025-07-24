@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -188,7 +188,7 @@ public class ImageList implements XItemEventBroadcaster, ListDataListener
         //XWindow win = (XWindow)UnoRuntime.queryInterface(XWindow.class,lblContainer);
         /*dialog.xWindow.addWindowListener(uiEventListener);
         String dName = (String)Helper.getUnoPropertyValue(dialog.xDialogModel,PropertyNames.PROPERTY_NAME);
-        
+
         uiEventListener.add(dName,EventNames.EVENT_WINDOW_SHOWN,"disableContainerMouseEvents",this);
          */
         int selectionWidth = rowSelect ?
@@ -500,7 +500,7 @@ public class ImageList implements XItemEventBroadcaster, ListDataListener
     }
 
     /**
-     * 
+     *
      * @param i
      * @return the Object in the list model corresponding to the given image index.
      */
@@ -518,7 +518,7 @@ public class ImageList implements XItemEventBroadcaster, ListDataListener
     }
 
     /**
-     * 
+     *
      * @param i
      * @return the index in the listModel for the given image index.
      */
@@ -596,7 +596,7 @@ public class ImageList implements XItemEventBroadcaster, ListDataListener
      */
     private void fireItemSelected()
     {
-//      java.awt.event.ItemEvent event = new java.awt.event.ItemEvent(this, 0, 
+//      java.awt.event.ItemEvent event = new java.awt.event.ItemEvent(this, 0,
 //          getSelectedObject(), java.awt.event.ItemEvent.SELECTED);
         java.util.ArrayList list;
         synchronized(this)
@@ -876,15 +876,15 @@ public class ImageList implements XItemEventBroadcaster, ListDataListener
     System.out.println("mouse enter");
     int i = getImageFromEvent(event);
     //TODO what is when the image does not display an image?
-    if (getIndexFor(i) != selected) 
+    if (getIndexFor(i) != selected)
     setBorder(m_aImages[i],imageBorderMO);
     }
-    
+
     public void mouseExitImage(Object event) {
     //System.out.println("mouse exit");
     int i = getImageFromEvent(event);
     //TODO what is when the image does not display an image?
-    if (getIndexFor(i) != selected) 
+    if (getIndexFor(i) != selected)
     setBorder(m_aImages[i],imageBorder);
     }
      */
@@ -928,9 +928,9 @@ public class ImageList implements XItemEventBroadcaster, ListDataListener
     {
 
         /**
-         * 
+         *
          * @param listItem
-         * @return two resource ids for an image referenced in the imaglist resourcefile of the 
+         * @return two resource ids for an image referenced in the imaglist resourcefile of the
          * wizards project; The second one of them is designed to be used for High Contrast Mode.
          */
         public Object[] getImageUrls(Object listItem);

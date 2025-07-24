@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -88,15 +88,15 @@ public class ScriptSourceModel {
             // public void run() {
                 if ( cl != null )
                 {
-                    // sets this threads class loader 
+                    // sets this threads class loader
                     // hopefully any threads spawned by this
                     // will inherit this cl
-                    // this enables any class files imported 
+                    // this enables any class files imported
                     // from the interpreter to be loaded
-                    // note: setting the classloader on the  
-                    // interpreter has a slightly different 
-                    // meaning in that the classloader for 
-                    // the interpreter seems only to look for 
+                    // note: setting the classloader on the
+                    // interpreter has a slightly different
+                    // meaning in that the classloader for
+                    // the interpreter seems only to look for
                     // source files ( bla.java ) in the classpath
                     Thread.currentThread().setContextClassLoader(cl);
                 }
@@ -113,7 +113,7 @@ public class ScriptSourceModel {
                 // reset position
                 currentPosition = -1;
                 view.update();
-                
+
                 interpreter.set("XSCRIPTCONTEXT", context);
                 interpreter.set("ARGUMENTS", new Object[0]);
 
@@ -124,7 +124,7 @@ public class ScriptSourceModel {
                     result = interpreter.eval(getText());
                 }
             // }
-        // };    
+        // };
         // execThread.start();
         return result;
     }

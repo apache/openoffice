@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -56,7 +56,7 @@ public class ScenarioSelector extends FieldSelection implements XItemListener, X
 {
     final static int PRIVATE = 0;
     final static int BUSINESS = 1;
-    
+
     private XFixedText lblExplanation;
     private XFixedText lblCategories;
     private XRadioButton optBusiness;
@@ -324,7 +324,7 @@ public class ScenarioSelector extends FieldSelection implements XItemListener, X
             {
                 int selindex = JavaTools.FieldInList(NewItems, SelItems[i]);
                 super.xSelectedFieldsListBox.removeItems((short) selindex, (short) 1);
-                /**TODO In this context the items should be better placed at their original position. 
+                /**TODO In this context the items should be better placed at their original position.
                  * but how is this position retrieved?
                  */
                 super.xFieldsListBox.addItem(SelItems[i], xFieldsListBox.getItemCount());

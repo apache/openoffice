@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -34,7 +34,7 @@ public interface PropertyName {
     /**
      * parameter name: "AppKillCommand"
      */
-    final public static String APP_KILL_COMMAND = "AppKillCommand";    
+    final public static String APP_KILL_COMMAND = "AppKillCommand";
     /**
      * parameter name: "ConnectionString"
      */
@@ -117,17 +117,17 @@ public interface PropertyName {
      * the name of the version to test
      */
     final public static String VERSION = "Version";
-    
+
     /**
      * parameter name "Shell"<p>
-     * Path to a shell. 
+     * Path to a shell.
      * This shell is used to run some commands outside of Java
      * example: /bin/tcsh c:\\myShell\\myShell.exe
      */
     final public static String SHELL = "Shell";
     /**
      * parameter name "Cygwin"<p>
-     * If Cygwin is set to TRUE it indicates if the runner runs in a Cygwin 
+     * If Cygwin is set to TRUE it indicates if the runner runs in a Cygwin
      * environment
      */
     final public static String CYGWIN = "Cygwin";

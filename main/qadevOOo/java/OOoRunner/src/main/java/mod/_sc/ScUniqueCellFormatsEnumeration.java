@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -71,12 +71,12 @@ public class ScUniqueCellFormatsEnumeration extends TestCase {
     * Disposes Spreadsheet document.
     */
     protected void cleanup(TestParameters tParam, PrintWriter log) {
-        //add this lines after synchronisation 
+        //add this lines after synchronisation
 	//log.println("    disposing xSheetDoc ");
         //DesktopTools.closeDoc(xSheetDoc);
     }
 
-    protected TestEnvironment createTestEnvironment(TestParameters tParam, 
+    protected TestEnvironment createTestEnvironment(TestParameters tParam,
                                                     PrintWriter log) {
         log.println("Getting the first sheet");
 
@@ -103,11 +103,11 @@ public class ScUniqueCellFormatsEnumeration extends TestCase {
         changeColor("D1:D10", 0, 255, 0);
 
         XUniqueCellFormatRangesSupplier xUCRS = (XUniqueCellFormatRangesSupplier) UnoRuntime.queryInterface(
-                                                        XUniqueCellFormatRangesSupplier.class, 
+                                                        XUniqueCellFormatRangesSupplier.class,
                                                         oSheet);
 
         XEnumerationAccess xEnum = (XEnumerationAccess) UnoRuntime.queryInterface(
-                                           XEnumerationAccess.class, 
+                                           XEnumerationAccess.class,
                                            xUCRS.getUniqueCellFormatRanges());
         XInterface oObj = xEnum.createEnumeration();
         log.println("Implementationname: " + util.utils.getImplName(oObj));
@@ -115,7 +115,7 @@ public class ScUniqueCellFormatsEnumeration extends TestCase {
         TestEnvironment tEnv = new TestEnvironment(oObj);
 
         tEnv.addObjRelation("ExpectedCount", new Integer(4));
-        
+
         return tEnv;
     }
 

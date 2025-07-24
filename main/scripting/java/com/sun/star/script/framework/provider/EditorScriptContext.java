@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -42,7 +42,7 @@ public class EditorScriptContext implements XScriptContext
     private XDesktop m_xDeskTop;
     private XComponentContext  m_xComponentContext;
     private XDesktop m_xCtx;
-    public EditorScriptContext( XComponentContext xmComponentContext, 
+    public EditorScriptContext( XComponentContext xmComponentContext,
         XDesktop xDesktop )
     {
         this.m_xComponentContext = xmComponentContext;
@@ -50,17 +50,17 @@ public class EditorScriptContext implements XScriptContext
     }
 
     //----------------------------------------------------------------------
-    /** 
+    /**
         Obtain the document reference on which the script can operate
 
-        @returns 
+        @returns
 	      XModel interface
     */
     public XModel getDocument()
     {
         XModel xModel = ( XModel ) UnoRuntime.queryInterface( XModel.class,
              m_xDeskTop.getCurrentComponent() );
- 
+
         return xModel;
     }
 
@@ -71,10 +71,10 @@ public class EditorScriptContext implements XScriptContext
         return xContext;
     }
 
-    /** 
+    /**
         Obtain the desktop reference on which the script can operate
 
-        @returns 
+        @returns
 	      XDesktop interface
     */
     public XDesktop getDesktop()
@@ -82,10 +82,10 @@ public class EditorScriptContext implements XScriptContext
         return m_xDeskTop;
     }
 
-    /** 
+    /**
         Obtain the component context which the script can use to create other uno components
 
-        @returns 
+        @returns
 	      XComponentContext interface
     */
     public XComponentContext getComponentContext()

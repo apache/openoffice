@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -26,20 +26,20 @@ package org.openoffice.java.accessibility;
 import com.sun.star.uno.UnoRuntime;
 import com.sun.star.accessibility.*;
 
-/** 
+/**
  */
 public class TextComponent extends Component implements javax.accessibility.Accessible {
-    
+
     protected TextComponent(XAccessible xAccessible, XAccessibleContext xAccessibleContext) {
         super(xAccessible, xAccessibleContext);
     }
-    
+
     protected class AccessibleTextComponentListener extends AccessibleUNOComponentListener {
-        
+
         protected AccessibleTextComponentListener() {
             super();
         }
-        
+
         protected void setComponentState(short state, boolean enable) {
             switch (state) {
                 case AccessibleStateType.EDITABLE:
@@ -56,42 +56,42 @@ public class TextComponent extends Component implements javax.accessibility.Acce
             }
         }
     }
-    
+
     protected XAccessibleEventListener createEventListener() {
         return new AccessibleTextComponentListener();
     }
-    
+
     /** Creates the AccessibleContext associated with this object */
     public javax.accessibility.AccessibleContext createAccessibleContext() {
         return new AccessibleTextComponent();
     }
-    
+
     protected class AccessibleTextComponent extends AccessibleUNOComponent {
-        
+
         /**
         * Though the class is abstract, this should be called by all sub-classes
         */
         protected AccessibleTextComponent() {
             super();
         }
-        
+
         /*
         * AccessibleContext
         */
-        
+
         /** Gets the role of this object */
         public javax.accessibility.AccessibleRole getAccessibleRole() {
             return javax.accessibility.AccessibleRole.TEXT;
         }
-        
+
         /** Gets the AccessibleText associated with this object presenting text on the display */
         public javax.accessibility.AccessibleText getAccessibleText() {
-            
+
             if (disposed)
                 return null;
-            
+
             try {
-                XAccessibleText unoAccessibleText = (XAccessibleText) 
+                XAccessibleText unoAccessibleText = (XAccessibleText)
                     UnoRuntime.queryInterface(XAccessibleText.class,unoAccessibleComponent);
                 if (unoAccessibleText != null) {
                     return new AccessibleTextImpl(unoAccessibleText);
@@ -102,11 +102,11 @@ public class TextComponent extends Component implements javax.accessibility.Acce
                 return null;
             }
         }
-        
+
         /** Gets the AccessibleEditableText associated with this object presenting text on the display */
         public javax.accessibility.AccessibleEditableText getAccessibleEditableText() {
             try {
-                XAccessibleEditableText unoAccessibleText = (XAccessibleEditableText) 
+                XAccessibleEditableText unoAccessibleText = (XAccessibleEditableText)
                     UnoRuntime.queryInterface(XAccessibleEditableText.class,unoAccessibleComponent);
                 if (unoAccessibleText != null) {
                     return new AccessibleEditableTextImpl(unoAccessibleText);
@@ -117,28 +117,28 @@ public class TextComponent extends Component implements javax.accessibility.Acce
                 return null;
             }
         }
-        
+
         /** Gets the AccessibleAction associated with this object that has a graphical representation */
         public javax.accessibility.AccessibleAction getAccessibleAction() {
             try {
                 XAccessibleAction unoAccessibleAction = (XAccessibleAction)
                     UnoRuntime.queryInterface(XAccessibleAction.class, unoAccessibleComponent);
-                return (unoAccessibleAction != null) ? 
+                return (unoAccessibleAction != null) ?
                     new AccessibleActionImpl(unoAccessibleAction) : null;
             } catch (com.sun.star.uno.RuntimeException e) {
                 return null;
             }
         }
-        
+
         /** Returns the relation set of this object */
         public javax.accessibility.AccessibleRelationSet getAccessibleRelationSet() {
             try {
-                XAccessibleRelationSet unoAccessibleRelationSet = 
+                XAccessibleRelationSet unoAccessibleRelationSet =
                     unoAccessible.getAccessibleContext().getAccessibleRelationSet();
                 if (unoAccessibleRelationSet == null) {
                     return super.getAccessibleRelationSet();
                 }
-                
+
                 javax.accessibility.AccessibleRelationSet relationSet = new javax.accessibility.AccessibleRelationSet();
                 int count = unoAccessibleRelationSet.getRelationCount();
                 for (int i = 0; i < count; i++) {

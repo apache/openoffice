@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -75,7 +75,7 @@ public class Merger
     private static final java.lang.String PROP_LANGUAGEPACK    = "languagepack"             ; // <= cmdline
 
     private static final java.lang.String PROP_ITEMS           = "items"                    ; // <= pkg cfg files!
-    
+
     //___________________________________________
     // member
 
@@ -105,7 +105,7 @@ public class Merger
     private java.util.Vector m_lFilters;
     private java.util.Vector m_lLoaders;
     private java.util.Vector m_lHandlers;
-    
+
     //___________________________________________
     // interface
 
@@ -145,7 +145,7 @@ public class Merger
             m_lTypes = new java.util.Vector();
             //m_aLog.setWarning("Fragment list of types is missing. Parameter \"items\" seems to be invalid.");
         }
-        
+
         try
         {
             ConfigHelper aFcfg = new ConfigHelper(m_aCfg.getString(PROP_FCFG), null);
@@ -296,10 +296,10 @@ public class Merger
             m_aLog.setWarning("List of fragments is empty!? Will be ignored ...");
             return;
         }
-        
+
         java.util.Enumeration  pFragments = lFragments.elements();
         java.lang.String       sExtXcu    = m_aCfg.getString(PROP_EXTENSION_XCU);
-        
+
         for (int tabs=0; tabs<nPrettyTabs; ++tabs)
             sBuffer.append("\t");
         sBuffer.append("<node oor:name=\""+sSetName+"\">\n");
@@ -315,7 +315,7 @@ public class Merger
         java.lang.String sEncoding   = "UTF-8";
         if (bDebug)
             sEncoding = "UTF-8Special";
-        
+
         while(pFragments.hasMoreElements())
         {
             java.lang.String sFragment = (java.lang.String)pFragments.nextElement();
@@ -345,7 +345,7 @@ public class Merger
             // on such errors :-)
             m_aLog.setDetailedInfo("merge fragment \""+aFragment.getPath()+"\" ...");
             FileHelper.readEncodedBufferFromFile(aFragment, sEncoding, sBuffer);
-            
+
             sBuffer.append("\n");
         }
 

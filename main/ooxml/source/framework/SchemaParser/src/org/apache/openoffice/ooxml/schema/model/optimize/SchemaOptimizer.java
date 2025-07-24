@@ -51,10 +51,10 @@ public class SchemaOptimizer
         maTodoList = new LinkedList<>();
         maProcessedTypes = new HashSet<>();
     }
-    
-    
-    
-    
+
+
+
+
     public SchemaBase Run ()
     {
         // Seed the work list with the top-level elements.
@@ -62,7 +62,7 @@ public class SchemaOptimizer
         {
             maOptimizedSchemaBase.TopLevelElements.Add(aElement);
             RequestType(aElement.GetTypeName());
-        }        
+        }
 
         final INodeVisitor aCopyVisitor = new CopyVisitor(
             maOriginalSchemaBase,
@@ -74,7 +74,7 @@ public class SchemaOptimizer
         while ( ! maTodoList.isEmpty())
         {
             final INode aNode = maTodoList.poll();
-        
+
             // Iterate over all child nodes and attributes.
             for (final INode aChild : new DereferencingNodeIterator(aNode, maOriginalSchemaBase, true))
             {
@@ -85,13 +85,13 @@ public class SchemaOptimizer
                 for (final INode aAttribute : new AttributeNodeIterator(aChild, maOriginalSchemaBase))
                     aAttribute.AcceptVisitor(aRequestVisitor);
             }
-                
+
             // Request used namespaces.
             final QualifiedName aName = aNode.GetName();
             if (aName != null)
                 maOptimizedSchemaBase.Namespaces.ProvideNamespace(aName.GetNamespaceURI(), aName.GetNamespacePrefix());
         }
-        
+
         /*
         System.out.printf("%d original attributes\n", maOriginalSchemaBase.Attributes.GetCount());
         for (final Attribute aAttribute : maOriginalSchemaBase.Attributes.GetUnsorted())
@@ -100,13 +100,13 @@ public class SchemaOptimizer
         for (final Attribute aAttribute : maOptimizedSchemaBase.Attributes.GetUnsorted())
             System.out.printf("%s\n",  aAttribute);
             */
-        
+
         return maOptimizedSchemaBase;
     }
-    
-    
-    
-    
+
+
+
+
     void RequestType (final QualifiedName aName)
     {
         final Node aNode = maOriginalSchemaBase.GetTypeForName(aName);
@@ -115,10 +115,10 @@ public class SchemaOptimizer
         else
             RequestType(aNode);
     }
-    
-    
-    
-    
+
+
+
+
     void RequestType (final INode aNode)
     {
         if (aNode.GetNodeType() == NodeType.SimpleTypeReference)
@@ -129,10 +129,10 @@ public class SchemaOptimizer
             maTodoList.add(aNode);
         }
     }
-    
 
-    
-    
+
+
+
     private final SchemaBase maOriginalSchemaBase;
     private final SchemaBase maOptimizedSchemaBase;
     private final Queue<INode> maTodoList;

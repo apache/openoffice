@@ -39,10 +39,10 @@ public class RunRange<TokenType>
     {
         return FindTokens(0, eTypeList);
     }
-    
-    
-    
-    
+
+
+
+
     public int FindTokens (
         final int nFirstIndex,
         @SuppressWarnings("unchecked")
@@ -72,16 +72,16 @@ public class RunRange<TokenType>
         return maRuns.isEmpty();
     }
 
-    
-    
-    
+
+
+
     public Run<TokenType> Get (final int nIndex)
     {
         return maRuns.get(nIndex);
     }
-    
-    
-    
-    
+
+
+
+
     private final Vector<Run<TokenType>> maRuns;
 }

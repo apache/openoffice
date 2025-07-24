@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -91,7 +91,7 @@ public class AccessibleWindow extends TestCase {
      * Creates the Desktop service (<code>com.sun.star.frame.Desktop</code>).
      */
     protected void initialize(TestParameters Param, PrintWriter log) {
-        the_Desk = (XDesktop) UnoRuntime.queryInterface(XDesktop.class, 
+        the_Desk = (XDesktop) UnoRuntime.queryInterface(XDesktop.class,
                                                         DesktopTools.createDesktop(
                                                                 (XMultiServiceFactory) Param.getMSF()));
     }
@@ -131,7 +131,7 @@ public class AccessibleWindow extends TestCase {
      * @see com.sun.star.accessibility.XAccessibleEventBroadcaster
      * @see com.sun.star.accessibility.XAccessibleText
      */
-    protected TestEnvironment createTestEnvironment(TestParameters tParam, 
+    protected TestEnvironment createTestEnvironment(TestParameters tParam,
                                                     PrintWriter log) {
         log.println("creating a test environment");
 
@@ -156,7 +156,7 @@ public class AccessibleWindow extends TestCase {
             throw new StatusException("Couldn't create document", e);
         }
 
-        XModel aModel = (XModel) UnoRuntime.queryInterface(XModel.class, 
+        XModel aModel = (XModel) UnoRuntime.queryInterface(XModel.class,
                                                            xTextDoc);
 
         XInterface oObj = null;
@@ -164,7 +164,7 @@ public class AccessibleWindow extends TestCase {
         AccessibilityTools at = new AccessibilityTools();
 
         XWindow xWindow = at.getCurrentWindow(
-                                  (XMultiServiceFactory) tParam.getMSF(), 
+                                  (XMultiServiceFactory) tParam.getMSF(),
                                   aModel);
 
         XAccessible xRoot = at.getAccessibleObject(xWindow);
@@ -180,7 +180,7 @@ public class AccessibleWindow extends TestCase {
         final XExtendedToolkit tk = (XExtendedToolkit) UnoRuntime.queryInterface(
                                             XExtendedToolkit.class, toolkit);
 
-        tEnv.addObjRelation("EventProducer", 
+        tEnv.addObjRelation("EventProducer",
                             new ifc.accessibility._XAccessibleEventBroadcaster.EventProducer() {
             public void fireEvent() {
                 XWindow xWin = (XWindow) UnoRuntime.queryInterface(
@@ -190,7 +190,7 @@ public class AccessibleWindow extends TestCase {
                 newPosSize.Height = newPosSize.Height - 20;
                 newPosSize.X = newPosSize.X + 20;
                 newPosSize.Y = newPosSize.Y + 20;
-                xWin.setPosSize(newPosSize.X, newPosSize.Y, newPosSize.Width, 
+                xWin.setPosSize(newPosSize.X, newPosSize.Y, newPosSize.Width,
                                 newPosSize.Height, PosSize.POSSIZE);
             }
         });

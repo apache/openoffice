@@ -55,10 +55,10 @@ public class SimpleTypeDescriptorFactory
             Counters.put(aNode.GetNodeType(), Counters.get(aNode.GetNodeType())+1);
         }
     }
-    
-    
-    
-    
+
+
+
+
     public static SimpleTypeDescriptor CreateSimpleTypeDescriptor(
         final SimpleType aSimpleType,
         final SchemaBase aSchemaBase,
@@ -71,7 +71,7 @@ public class SimpleTypeDescriptorFactory
         aLog.AddComment("Simple type %s, defined at %s",
             aSimpleType.GetName(),
             aSimpleType.GetLocation().toString());
-        
+
         final ISimpleTypeNode aSubType = aFactory.ProcessSimpleType(aSimpleType);
         final SimpleTypeDescriptor aDescriptor = new SimpleTypeDescriptor(aSimpleType.GetName());
         aSubType.AcceptVisitor(new SimpleTypeNodeVisitorAdapter ()
@@ -80,22 +80,22 @@ public class SimpleTypeDescriptorFactory
             {
                 aDescriptor.SetSubTypes(aType.GetChildren());
             }
-            
+
             @Override public void Default (final ISimpleTypeNode aType)
             {
                 aDescriptor.SetSubTypes(new ISimpleTypeNode[]{aSubType});
             }
         });
-        
+
         aDescriptor.Print(aLog);
         aLog.printf("\n");
-        
+
         return aDescriptor;
     }
-    
-    
-    
-    
+
+
+
+
     private SimpleTypeDescriptorFactory (
         final SchemaBase aSchemaBase,
         final Log aLog)
@@ -104,24 +104,24 @@ public class SimpleTypeDescriptorFactory
         maLog = aLog;
         maResult = null;
     }
-    
-    
-    
-    
+
+
+
+
     ISimpleTypeNode ProcessSimpleType (final SimpleType aSimpleType)
     {
         return ApplyVisitor(aSimpleType);
     }
-    
-    
-    
-    
+
+
+
+
     @Override
     public void Visit (final BuiltIn aNode)
     {
         assert(aNode.GetChildCount() == 0);
         assert(maResult == null);
-        
+
         maLog.AddComment("builtin %s", aNode.toString());
 
         switch(aNode.GetBuiltInType())
@@ -132,7 +132,7 @@ public class SimpleTypeDescriptorFactory
             case Float:
                 maResult = new NumberNode<Float>(aNode.GetBuiltInType());
                 break;
-                
+
             case Boolean:
                 maResult = new NumberNode<Boolean>(aNode.GetBuiltInType());
             case Integer:
@@ -155,15 +155,15 @@ public class SimpleTypeDescriptorFactory
             case UnsignedShort:
                 maResult = new NumberNode<Integer>(aNode.GetBuiltInType());
                 break;
-                
+
             case AnyURI:
             case ID:
             case NcName:
             case String:
             case Token:
-                maResult = new StringNode(aNode.GetBuiltInType()); 
+                maResult = new StringNode(aNode.GetBuiltInType());
                 break;
-                
+
             case Base64Binary:
             case HexBinary:
                 maResult = new BlobNode(aNode.GetBuiltInType());
@@ -172,15 +172,15 @@ public class SimpleTypeDescriptorFactory
             case DateTime:
                 maResult = new DateTimeNode(aNode.GetBuiltInType());
                 break;
-                
+
             default:
                 throw new RuntimeException(aNode.toString()+" is not supported");
         }
     }
-    
-    
-    
-    
+
+
+
+
     @Override
     public void Visit (final List aNode)
     {
@@ -188,21 +188,21 @@ public class SimpleTypeDescriptorFactory
         maLog.StartBlock();
         final ISimpleTypeNode aItemType = ApplyVisitor(maSchemaBase.GetSimpleTypeForName(aNode.GetItemType()));
         maLog.EndBlock();
-        
+
         aItemType.SetIsList();
         maResult = aItemType;
     }
-    
 
-    
-    
+
+
+
     @Override
     public void Visit (final Restriction aNode)
     {
         assert(aNode.GetChildCount() == 0);
-        
+
         maLog.AddComment("%s", aNode.toString());
-        
+
         final INode aBaseType = maSchemaBase.GetSimpleTypeForName(aNode.GetBaseType());
         if (aBaseType == null)
             throw new RuntimeException("got no type for name "+aNode.GetBaseType());
@@ -213,21 +213,21 @@ public class SimpleTypeDescriptorFactory
             aNode,
             maSchemaBase.AttributeValueToIdMap);
     }
-    
-    
-    
-    
+
+
+
+
     @Override
     public void Visit (final SimpleType aNode)
     {
         maLog.AddComment(aNode.toString());
-        
+
         assert(aNode.GetChildCount() <= 1);
         switch(aNode.GetChildCount())
         {
             case 0:
                 maResult = null;
-                break;                
+                break;
             case 1:
                 maLog.StartBlock();
                 maResult = ApplyVisitor(aNode.GetOnlyChild());
@@ -237,22 +237,22 @@ public class SimpleTypeDescriptorFactory
                 throw new RuntimeException();
         }
     }
-    
-    
-    
+
+
+
 
     @Override
     public void Visit (final SimpleTypeReference aNode)
     {
         maLog.AddComment("reference to %s", aNode.GetReferencedTypeName());
-       
+
         maLog.StartBlock();
         maResult = ApplyVisitor(aNode.GetReferencedNode(maSchemaBase));
         maLog.EndBlock();
     }
-    
-    
-    
+
+
+
 
     @Override
     public void Visit (final Union aNode)
@@ -260,7 +260,7 @@ public class SimpleTypeDescriptorFactory
         maLog.AddComment("union");
 
         final UnionNode aUnion = new UnionNode();
-        
+
         // Make sure that all children have compatible types and value sets.
         maLog.StartBlock();
 
@@ -273,10 +273,10 @@ public class SimpleTypeDescriptorFactory
 
         maResult = aUnion;
     }
-    
-    
-    
-    
+
+
+
+
     @Override
     public void Default (final INode aNode)
     {
@@ -286,10 +286,10 @@ public class SimpleTypeDescriptorFactory
                 throw new RuntimeException(aNode.GetNodeType() +" is not yet supported");
         }
     }
-    
-    
-    
-    
+
+
+
+
     ISimpleTypeNode ApplyVisitor (final INode aNode)
     {
         aNode.AcceptVisitor(this);
@@ -297,10 +297,10 @@ public class SimpleTypeDescriptorFactory
         maResult = null;
         return aResult;
     }
-    
 
-    
-    
+
+
+
     private final SchemaBase maSchemaBase;
     private final Log maLog;
     private ISimpleTypeNode maResult;

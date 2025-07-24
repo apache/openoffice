@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -128,15 +128,15 @@ public class DeployParcelAction extends CookieAction implements Presenter.Popup 
     protected int mode () {
         return MODE_ONE;
     }
-    
+
     protected Class[] cookieClasses () {
         return new Class[] { ParcelCookie.class };
     }
-    
+
     protected void performAction (Node[] activatedNodes) {
         // do nothing, should not happen
     }
-    
+
     private void deploy(final File target) {
         Node[] nodes = getActivatedNodes();
         final ParcelCookie parcelCookie =
@@ -195,7 +195,7 @@ public class DeployParcelAction extends CookieAction implements Presenter.Popup 
             " menu item in Office so that the scripts in this parcel can be detected.";
 
         OfficeSettings settings = OfficeSettings.getDefault();
-    
+
         if (settings.getWarnAfterDirDeploy() == true) {
             NagDialog warning = NagDialog.createInformationDialog(
                 message, "Show this message in future", true);
@@ -209,7 +209,7 @@ public class DeployParcelAction extends CookieAction implements Presenter.Popup 
 
     private File getTargetFile() {
         File target = null;
-        
+
         JFileChooser chooser = new JFileChooser();
         chooser.setDialogTitle("Deploy Parcel To Office Document");
         chooser.setApproveButtonText("Deploy");
@@ -224,14 +224,14 @@ public class DeployParcelAction extends CookieAction implements Presenter.Popup 
                     return true;
                 return false;
             }
-            
+
             public String getDescription() {
                 return "Office Documents";
             }
         });
-        
+
         int result = chooser.showDialog(null, null);
-        
+
         if (result == JFileChooser.APPROVE_OPTION) {
             target = chooser.getSelectedFile();
         }

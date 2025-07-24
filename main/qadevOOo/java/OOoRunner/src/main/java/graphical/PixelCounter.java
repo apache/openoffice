@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -39,14 +39,14 @@ class CountNotWhite extends CountPixel
         {
             // System.out.println("CountWhite()");
         }
-    
+
     public void countold(final int pixel)
         {
             // final int alpha = (pixel >> 24) & 0xff;
             final int red   = (pixel >> 16) & 0xff;
             final int green = (pixel >>  8) & 0xff;
             final int blue  = (pixel      ) & 0xff;
-        
+
             // System.out.println(String.valueOf(red) + ":" + String.valueOf(green) + ":" + String.valueOf(blue));
             if (red == 0xff && green == 0xff && blue == 0xff)
             {
@@ -85,14 +85,14 @@ class CountNotBlack extends CountPixel
         {
             // System.out.println("CountBlack()");
         }
-    
+
     public void countold(final int pixel)
         {
             // final int alpha = (pixel >> 24) & 0xff;
             final int red   = (pixel >> 16) & 0xff;
             final int green = (pixel >>  8) & 0xff;
             final int blue  = (pixel      ) & 0xff;
-        
+
             if (red == 0x00 && green == 0x00 && blue == 0x00)
             {
                 return;
@@ -135,7 +135,7 @@ class graphics_stuff
 //            int blue = rgba & 0xff;
 //            int alpha = (rgba >> 24) & 0xff;
 //// (2) now modify red, green, blue and alpha as you like;
-////     make sure that each of the four values stays in the 
+////     make sure that each of the four values stays in the
 ////     interval 0 to 255
 ////            ...
 //// (3) and encode back to an int, e.g. to give it to MemoryImageSource or
@@ -143,7 +143,7 @@ class graphics_stuff
 //                rgba = (alpha << 24) | (red << 16) | (green << 8) | blue;
 //                return 0;
 //        }
-    
+
 //    public static void handlesinglepixel(int x, int y, int pixel)
 //        {
 //            int alpha = (pixel >> 24) & 0xff;
@@ -171,7 +171,7 @@ class graphics_stuff
             countPixel(_aImage, 0, 0, w, h, aCountNotWhite);
             return aCountNotWhite.getCount();
         }
-    
+
     public static int countNotBlackPixel(ImageHelper _aImage)
         {
             final int w = _aImage.getWidth();
@@ -188,8 +188,8 @@ class graphics_stuff
 public class PixelCounter {
 	// private Image m_aImage;
     // ImageHelper m_aImage;
-    
-    
+
+
     public int countNotWhitePixel(String _sFile)
         throws java.io.IOException
         {
@@ -205,14 +205,14 @@ public class PixelCounter {
             final int nw = graphics_stuff.countNotBlackPixel(aImage);
             return nw;
         }
-    
+
     public static int countNotWhitePixelsFromImage(String _sFile)
         throws java.io.IOException
         {
             PixelCounter a = new PixelCounter();
             return a.countNotWhitePixel(_sFile);
         }
-    
+
     public static int countNotBlackPixelsFromImage(String _sFile)
         throws java.io.IOException
         {
@@ -239,4 +239,3 @@ public class PixelCounter {
 // */
 //    }
 }
- 

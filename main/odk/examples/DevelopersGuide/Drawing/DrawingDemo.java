@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -101,10 +101,10 @@ public class DrawingDemo
 			System.exit( 0 );
 		}
 
- 
+
 		Demo_PageCreation( xDrawDoc, 10 );
 		Demo_PageNaming( xDrawDoc, "this page is called: LastPage" );
-		Demo_ShapeCreation( xDrawDoc );	
+		Demo_ShapeCreation( xDrawDoc );
 		Demo_PolyPolygonBezier( xDrawDoc );
 		Demo_Group1( xDrawDoc );
 		Demo_Group2( xDrawDoc );
@@ -130,8 +130,8 @@ public class DrawingDemo
 				nMasterPages < ( ( nDrawPages + 1 ) / 2 ); nMasterPages++ )
 				PageHelper.insertNewMasterPageByIndex( xDrawDoc, nMasterPages );
 
-			// Now connect master page 1 to draw page 1 and 2, 
-			// master page 2 to draw page 3 and 4 and so on.			
+			// Now connect master page 1 to draw page 1 and 2,
+			// master page 2 to draw page 3 and 4 and so on.
 			for ( i = 0; i < nDrawPages; i++ )
 			{
 				XDrawPage xDrawPage = PageHelper.getDrawPageByIndex( xDrawDoc, i );
@@ -242,7 +242,7 @@ public class DrawingDemo
 
 				XShapes xShapes = (XShapes)
 					UnoRuntime.queryInterface( XShapes.class, pPages[ i ] );
-				ShapeHelper.createAndInsertShape( xDrawDoc, xShapes, 
+				ShapeHelper.createAndInsertShape( xDrawDoc, xShapes,
 					new Point( nRndObjPosX, nRndObjPosY ),
 						new Size( nRndObjWidth, nRndObjHeight ),
 							"com.sun.star.drawing.RectangleShape" );
@@ -264,7 +264,7 @@ public class DrawingDemo
 				new Point( 0, 0 ),
 					new Size( 0, 0 ),
 						"com.sun.star.drawing.ClosedBezierShape" );
-	
+
 			// the fact that the shape must have been added to the page before
 			// it is possible to apply changes to the PropertySet, it is a good
 			// proceeding to add the shape as soon as possible
@@ -290,7 +290,7 @@ public class DrawingDemo
 			PolyPolygonBezierCoords aCoords = new PolyPolygonBezierCoords();
 			// allocating the outer sequence
 			int nPolygonCount = 50;
-			aCoords.Coordinates = new Point[ nPolygonCount ][ ];	
+			aCoords.Coordinates = new Point[ nPolygonCount ][ ];
 			aCoords.Flags = new PolygonFlags[ nPolygonCount ][ ];
 			int i, n, nY;
 			// fill the inner point sequence now
@@ -345,7 +345,7 @@ public class DrawingDemo
 		}
 	}
 
-	// This method will create a group containing two ellipses 
+	// This method will create a group containing two ellipses
 	// the shapes will be added into the top right corner of the first
 	// draw page
 	public static void Demo_Group1( XComponent xDrawDoc )
@@ -369,7 +369,7 @@ public class DrawingDemo
 
 			Size aPageSize = PageHelper.getPageSize( xDrawPage );
 
-			int nWidth  = 4000; 
+			int nWidth  = 4000;
 			int nHeight = 2000;
 			int nPosX = ( aPageSize.Width * 3 ) / 4 - nWidth / 2;
 			int nPosY1 = 2000;

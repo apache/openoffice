@@ -30,7 +30,7 @@ import java.util.TreeMap;
 /** Map between namespace prefixes and URIs.
  *  While namespace URIs can have different prefixes in different schemas,
  *  we will use only one prefix in the OOXML parser.  This class
- *  provides these global prefixes. 
+ *  provides these global prefixes.
  */
 public class NamespaceMap
     implements Iterable<Entry<String, String>>
@@ -38,10 +38,10 @@ public class NamespaceMap
     public NamespaceMap ()
     {
         maURIToPrefixMap = new HashMap<>(maPredefinedURIToPrefixMap);
-        
+
         // Predefine namespace prefixes.
         // If possible then use the ones already in use in the schema files or documents written by MS Office,
-        // appended with a 06 or 12 for the ECMA-376 standards of 2006 (1st edition) or 2012 (4th edition). 
+        // appended with a 06 or 12 for the ECMA-376 standards of 2006 (1st edition) or 2012 (4th edition).
         maURIToPrefixMap.put("http://schemas.openxmlformats.org/drawingml/2006/main", "a06");
         maURIToPrefixMap.put("http://purl.oclc.org/ooxml/drawingml/main", "a12");
 
@@ -53,20 +53,20 @@ public class NamespaceMap
 
         maURIToPrefixMap.put("http://schemas.openxmlformats.org/drawingml/2006/picture", "dpct06");
         maURIToPrefixMap.put("http://purl.oclc.org/ooxml/drawingml/picture", "dpct12");
-        
+
         maURIToPrefixMap.put("http://schemas.openxmlformats.org/officeDocument/2006/math", "m06");
         maURIToPrefixMap.put("http://purl.oclc.org/ooxml/officeDocument/math", "m12");
-        
+
         maURIToPrefixMap.put("http://schemas.openxmlformats.org/officeDocument/2006/relationships", "r06");
         maURIToPrefixMap.put("http://purl.oclc.org/ooxml/officeDocument/relationships", "r12");
-        
+
         // Invent prefixes that are not in use.
         maURIToPrefixMap.put("http://schemas.openxmlformats.org/spreadsheetml/2006/main", "s06");
         maURIToPrefixMap.put("http://purl.oclc.org/ooxml/spreadsheetml/main", "s12");
-        
+
         maURIToPrefixMap.put("http://schemas.openxmlformats.org/presentationml/2006/main", "p06");
         maURIToPrefixMap.put("http://purl.oclc.org/ooxml/presentationml/main", "p12");
-        
+
         maURIToPrefixMap.put("http://schemas.openxmlformats.org/schemaLibrary/2006/main", "sl06");
         maURIToPrefixMap.put("http://purl.oclc.org/ooxml/schemaLibrary/main", "sl12");
 
@@ -74,10 +74,10 @@ public class NamespaceMap
         maURIToPrefixMap.put("http://purl.oclc.org/ooxml/drawingml/chart", "dc12");
         maURIToPrefixMap.put("http://purl.oclc.org/ooxml/drawingml/lockedCanvas", "dlc12");
     }
-    
-    
-    
-    
+
+
+
+
     public void ProvideNamespace (
         final String sNamespaceURI,
         final String sDefaultPrefix)
@@ -109,34 +109,34 @@ public class NamespaceMap
             maURIToPrefixMap.put(sNamespaceURI, sPrefix);
         }
     }
-    
-    
-    
-    
+
+
+
+
     public String GetNamespacePrefix (final String sURI)
     {
         return maURIToPrefixMap.get(sURI);
     }
-    
-    
-    
-    
+
+
+
+
     public Iterator<Entry<String,String>> iterator ()
     {
         return maURIToPrefixMap.entrySet().iterator();
     }
-    
-    
-    
-    
+
+
+
+
     public Object GetCount()
     {
         return maURIToPrefixMap.size();
     }
 
-    
-    
-    
+
+
+
     /** Return all namespace entries sorted on the prefix.
      */
     public Iterable<Entry<String,String>> GetSorted ()
@@ -149,10 +149,10 @@ public class NamespaceMap
     			aSortedEntries.put(aEntry.getValue(), aEntry);
     	return aSortedEntries.values();
     }
-    
-    
-    
-    
+
+
+
+
     private boolean IsPrefixUsed (final String sPrefix)
     {
         for (final String sUsedPrefix : maURIToPrefixMap.values())
@@ -164,10 +164,10 @@ public class NamespaceMap
         }
         return false;
     }
-    
-    
-    
-    
+
+
+
+
     private final Map<String,String> maURIToPrefixMap;
     private final static Map<String,String> maPredefinedURIToPrefixMap;
     static

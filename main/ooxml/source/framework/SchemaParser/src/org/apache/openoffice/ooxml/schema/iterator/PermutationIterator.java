@@ -25,7 +25,7 @@ package org.apache.openoffice.ooxml.schema.iterator;
 /** Enumerate all permutations of a given array with elements of type T.
  *  The permutations are created in place, i.e. the array given to the constructor
  *  is modified as side effect of calling HasMore().
- *  
+ *
  *  The algorithm is taken from "The Art of Computer Programming, Volume 4,
  *  Fasicle 2, by Donald E. Knuth" from section 7.2.1.2, Algorithm P.
  */
@@ -53,8 +53,8 @@ public class PermutationIterator<T>
     }
 
 
-    
-    
+
+
     public boolean HasMore ()
     {
         if ( ! mbIsNextPermutationReady)
@@ -73,7 +73,7 @@ public class PermutationIterator<T>
     }
 
 
-    
+
 
     private void ProvideNextPermutation ()
     {
@@ -82,7 +82,7 @@ public class PermutationIterator<T>
         // Create the next permutation.
         int nJ = mnItemCount;
         int nS = 0;
-        
+
         while (true)
         {
             final int nQ = maInversions[nJ-1] + maDirections[nJ-1];
@@ -90,14 +90,14 @@ public class PermutationIterator<T>
             {
                 // Exchange j-cj+s and j-q+s
                 final int nIndexA = nJ-maInversions[nJ - 1]+nS - 1;
-                final int nIndexB = nJ-nQ+nS - 1; 
+                final int nIndexB = nJ-nQ+nS - 1;
                 final T aItem = maItems[nIndexA];
                 maItems[nIndexA] = maItems[nIndexB];
                 maItems[nIndexB] = aItem;
-                
+
                 // cj=q
                 maInversions[nJ - 1] = nQ;
-                
+
                 // Next permutation is ready.
                 break;
             }
@@ -124,10 +124,10 @@ public class PermutationIterator<T>
             }
         }
     }
-    
-    
-    
-    
+
+
+
+
     private final int mnItemCount;
     private final T[] maItems;
     private final int[] maInversions;

@@ -40,7 +40,7 @@ import org.apache.openoffice.ooxml.parser.type.SimpleTypeManager;
 public class AttributeManager
 {
     /** Create a new AttributeManager for the attribute specifications that
-     *  are given in the parse table. 
+     *  are given in the parse table.
      */
     public AttributeManager (
         final Vector<String[]> aData,
@@ -58,10 +58,10 @@ public class AttributeManager
         maErrorsAndWarnings = aErrorsAndWarnings;
         ParseData(aData);
     }
-    
-    
-    
-    
+
+
+
+
     private void ParseData (final Vector<String[]> aData)
     {
         for (final String[] aLine : aData)
@@ -76,14 +76,14 @@ public class AttributeManager
             // State name.
             final String sAttributeName = aLine[9];
             // Attribute type name.
-            
+
             Map<Integer,AttributeDescriptor> aAttributesPerState = maStateIdToAttributesMap.get(nStateId);
             if (aAttributesPerState == null)
             {
                 aAttributesPerState = new HashMap<>();
                 maStateIdToAttributesMap.put(nStateId, aAttributesPerState);
             }
-            
+
             final AttributeDescriptor aAttributeDescriptor = new AttributeDescriptor(
                 nPrefixId,
                 nAttributeId,
@@ -92,7 +92,7 @@ public class AttributeManager
                 sDefault,
                 sAttributeName,
                 nAttributeTypeId);
-            
+
             aAttributesPerState.put(
                 (nPrefixId<<16)|nAttributeId,
                 aAttributeDescriptor);
@@ -102,19 +102,19 @@ public class AttributeManager
                     aAttributeDescriptor);
         }
     }
-    
-    
-    
-    
+
+
+
+
     /** For the state with id nStateId, match the attributes from the document
-     *  with the attribute specifications of that state. 
+     *  with the attribute specifications of that state.
      */
     public AttributeValues ParseAttributes (
         final int nStateId,
         final AttributeProvider aDocumentAttributes)
     {
         final AttributeValues aValues = new AttributeValues();
-        
+
         final Map<Integer,AttributeDescriptor> aAttributesPerState = maStateIdToAttributesMap.get(nStateId);
         if (aAttributesPerState == null)
         {
@@ -132,7 +132,7 @@ public class AttributeManager
         else
         {
             final Set<AttributeDescriptor> aUsedAttributes = new HashSet<>();
-            
+
             // Process all attributes from the document.
             for (final String[] aEntry : aDocumentAttributes)
             {
@@ -157,10 +157,10 @@ public class AttributeManager
                             aAttributeDescriptor.GetName()));
                 }
                 aValues.AddAttribute(
-                    aAttributeDescriptor, 
+                    aAttributeDescriptor,
                     sRawValue,
                     aProcessedValue);
-                
+
                 if (Log.Dbg != null)
                 {
                     if (aAttributeDescriptor == null)
@@ -179,7 +179,7 @@ public class AttributeManager
                             sRawValue);
                 }
             }
-            
+
             // Check if all required attributes where given.
             for (final AttributeDescriptor aAttribute : aAttributesPerState.values())
             {
@@ -201,13 +201,13 @@ public class AttributeManager
                 }
             }
         }
-        
+
         return aValues;
     }
 
-    
-    
-    
+
+
+
     private AttributeDescriptor ProcessAttribute (
         final String sNamespace,
         final String sAttributeName,
@@ -250,9 +250,9 @@ public class AttributeManager
         }
     }
 
-    
-    
-    
+
+
+
     public int GetAttributeCount ()
     {
         int nCount = 0;
@@ -260,10 +260,10 @@ public class AttributeManager
             nCount += aMap.size();
         return nCount;
     }
-    
-    
-    
-    
+
+
+
+
     private final Map<Integer,Map<Integer,AttributeDescriptor>> maStateIdToAttributesMap;
     private final NamespaceMap maNamespaceMap;
     private final NameMap maNameMap;

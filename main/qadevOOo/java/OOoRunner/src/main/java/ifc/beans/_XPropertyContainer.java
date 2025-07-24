@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -43,19 +43,19 @@ import lib.StatusException;
  * @see com.sun.star.beans.XPropertyAccess
  */
 public class _XPropertyContainer extends MultiMethodTest {
-    
+
     /**
      * oObj filled by MultiMethodTest
      */
     public XPropertyContainer oObj = null;// oObj filled by MultiMethodTest
-    
+
     /**
      * object relation X<CODE>PropertyAccess.propertyNotRemovable</CODE><br>
      * This relation must be filled from the module. It contains a property which must
      * be a property of the implementaion object.
      */
     private String propertyNotRemovable = null;
-    
+
     /**
      * checks if the object relation <CODE>XPropertyAccess.propertyNotRemovable</CODE>
      * is available
@@ -66,19 +66,19 @@ public class _XPropertyContainer extends MultiMethodTest {
             throw new StatusException(Status.failed("Object relation 'XPropertyAccess.propertyNotRemovable' is null"));
         }
     }
-    
-    
-    
+
+
+
     /**
      * Test calls the method and checks if the returned sequence contains a property which is named
      * in the object relation <code>XPropertyAccess.propertyNotRemovable</code>.
      */
     public void _addProperty() {
-        
+
         boolean ok = true;
         boolean test = true;
         boolean exp = false;
-        
+
         try {
             log.println("try to add following property:\n" +
                     "\t('myXPropertContainerProperty', com.sun.star.beans.PropertyAttribute.MAYBEVOID, null) ...");
@@ -106,7 +106,7 @@ public class _XPropertyContainer extends MultiMethodTest {
         if ( test){
             log.println("... OK");
         }
-        
+
         ok &= test;
         test = false;
         exp = false;
@@ -140,7 +140,7 @@ public class _XPropertyContainer extends MultiMethodTest {
         } else {
             if (test) log.println("... OK");
         }
-        
+
         ok &= test;
         test = false;
         exp = false;
@@ -169,13 +169,13 @@ public class _XPropertyContainer extends MultiMethodTest {
             test = true;
             exp = true;
         }
-        
+
         if (! exp){
             log.println("FAILED: expected exception 'IllegalTypeException' was not thrown");
         } else {
             if (test) log.println("... OK");
         }
-        
+
         ok &= test;
         test = false;
         exp = false;
@@ -205,31 +205,31 @@ public class _XPropertyContainer extends MultiMethodTest {
             log.println("... FAILED");
             exp = true;
         }
-        
+
         if (! exp){
             log.println("FAILED: expected exception 'IllegalArgumentException' was not thrown");
         } else {
             if (test) log.println("... OK");
         }
-        
+
         ok &= test;
-        
+
         tRes.tested("addProperty()", ok );
         return;
     }
-    
+
     /**
      * Test calls the method and checks if the returned sequence contains a property which is named
      * in the object relation <code>XPropertyAccess.propertyNotRemovable</code>.
      */
     public void _removeProperty() {
-        
-        requiredMethod("addProperty()");        
-        
+
+        requiredMethod("addProperty()");
+
         boolean ok = true;
         boolean test = true;
         boolean exp = false;
-        
+
         try {
             log.println("remove 'myXPropertContainerProperty'");
             oObj.removeProperty("myXPropertContainerProperty");
@@ -245,11 +245,11 @@ public class _XPropertyContainer extends MultiMethodTest {
         if ( test){
             log.println("... OK");
         }
-        
+
         ok &= test;
         test = false;
         exp=false;
-        
+
         try {
             log.println("remove not removeable property '" + propertyNotRemovable + "'") ;
             oObj.removeProperty(propertyNotRemovable);
@@ -265,13 +265,13 @@ public class _XPropertyContainer extends MultiMethodTest {
             log.println("... FAILED");
             exp = true;
         }
-        
+
         if (! exp){
             log.println("FAILED: expected exception 'NotRemoveableException' was not thrown");
         } else {
             if (test) log.println("... OK");
         }
-        
+
         ok &= test;
         test = false;
         exp = false;
@@ -299,7 +299,7 @@ public class _XPropertyContainer extends MultiMethodTest {
 
         tRes.tested("removeProperty()", ok );
         return;
-    }    
-    
-    
+    }
+
+
 }    /// finish class XPropertyContainer

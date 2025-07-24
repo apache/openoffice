@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -65,7 +65,7 @@ public class CheckContentProvider {
     private XContent xContent = null;
 
     /**
-     * The test methods: the test methods have to be executed in a specified 
+     * The test methods: the test methods have to be executed in a specified
      * order. This order is:
      * <ol>
      * <li>"checkTDOCRoot"</li>
@@ -91,7 +91,7 @@ public class CheckContentProvider {
 //                            "checkTDOCStreamInterfaces",
 //                            };
 //    }
-    
+
     /**
      * Open some documents before the test
      */
@@ -106,7 +106,7 @@ public class CheckContentProvider {
             assertNotNull("Can't load document " + fileName, xTextDoc[i]);
         }
     }
-    
+
     /**
      * Close the documents
      */
@@ -124,25 +124,25 @@ public class CheckContentProvider {
         try {
             // create a content provider
             Object o = xMSF.createInstance("com.sun.star.comp.ucb.TransientDocumentsContentProvider");
-            XContentProvider xContentProvider = 
+            XContentProvider xContentProvider =
                             UnoRuntime.queryInterface(XContentProvider.class, o);
-            
+
             // create the ucb
-            XContentIdentifierFactory xContentIdentifierFactory = 
+            XContentIdentifierFactory xContentIdentifierFactory =
                             UnoRuntime.queryInterface(XContentIdentifierFactory.class, xMSF.createInstance("com.sun.star.ucb.UniversalContentBroker"));
             // create a content identifier from the ucb for tdoc
-            XContentIdentifier xContentIdentifier = 
+            XContentIdentifier xContentIdentifier =
                             xContentIdentifierFactory.createContentIdentifier("vnd.sun.star.tdoc:/");
             // get content
             xContent = xContentProvider.queryContent(xContentIdentifier);
-            
+
             String content = xContent.getContentType();
             System.out.println("#### Content root: " + content);
-            
+
             // try to get some documents: should be "countDocs" at least.
             XContentIdentifier[] xContentId = new XContentIdentifier[countDocs+5];
             XContent[] xCont = new XContent[countDocs+5];
-            
+
             for (int i=0; i<countDocs+5; i++) {
                 xContentId[i] = xContentIdentifierFactory.createContentIdentifier("vnd.sun.star.tdoc:/" + i);
                 // get content
@@ -165,7 +165,7 @@ public class CheckContentProvider {
                 }
                 System.out.println("\tContent.xml Content " + i + ": " + cont);
             }
-            
+
             util.dbg.printInterfaces(xContent);
         }
         catch(Exception e) {
@@ -173,14 +173,14 @@ public class CheckContentProvider {
             fail("Unexpected Exception: " + e.getMessage());
         }
     }
-    
+
     /**
      * Check the interfaces of the root.
      */
     @Test public void checkTDOCRootInterfaces() {
         checkInterfaces(false);
     }
-    
+
     /**
      * Check the tdcp document: document 3 is used.
      */
@@ -188,13 +188,13 @@ public class CheckContentProvider {
         try {
             xContent = null;
             Object o = xMSF.createInstance("com.sun.star.comp.ucb.TransientDocumentsContentProvider");
-            XContentProvider xContentProvider = 
+            XContentProvider xContentProvider =
                             UnoRuntime.queryInterface(XContentProvider.class, o);
             // create the ucb
-            XContentIdentifierFactory xContentIdentifierFactory = 
+            XContentIdentifierFactory xContentIdentifierFactory =
                             UnoRuntime.queryInterface(XContentIdentifierFactory.class, xMSF.createInstance("com.sun.star.ucb.UniversalContentBroker"));
             // create a content identifier from the ucb for tdoc
-            XContentIdentifier xContentIdentifier = 
+            XContentIdentifier xContentIdentifier =
                             xContentIdentifierFactory.createContentIdentifier("vnd.sun.star.tdoc:/3");
             // get content
             xContent = xContentProvider.queryContent(xContentIdentifier);
@@ -207,29 +207,29 @@ public class CheckContentProvider {
             fail("Unexpected Exception: " + e.getMessage());
         }
     }
-    
+
     /**
      * Check the interfaces on the document.
      */
     @Test public void checkTDOCDocumentInterfaces() {
         checkInterfaces(true);
     }
- 
+
     /**
-     * Check a folder on document 2 (document 2 contains an embedded picture and 
+     * Check a folder on document 2 (document 2 contains an embedded picture and
      * therefore contains a subfolder "Pictures"
      */
     @Test public void checkTDOCFolder() {
         try {
             xContent = null;
             Object o = xMSF.createInstance("com.sun.star.comp.ucb.TransientDocumentsContentProvider");
-            XContentProvider xContentProvider = 
+            XContentProvider xContentProvider =
                             UnoRuntime.queryInterface(XContentProvider.class, o);
             // create the ucb
-            XContentIdentifierFactory xContentIdentifierFactory = 
+            XContentIdentifierFactory xContentIdentifierFactory =
                             UnoRuntime.queryInterface(XContentIdentifierFactory.class, xMSF.createInstance("com.sun.star.ucb.UniversalContentBroker"));
             // create a content identifier from the ucb for tdoc
-            XContentIdentifier xContentIdentifier = 
+            XContentIdentifier xContentIdentifier =
                             xContentIdentifierFactory.createContentIdentifier("vnd.sun.star.tdoc:/2/Pictures");
             // get content
             xContent = xContentProvider.queryContent(xContentIdentifier);
@@ -242,7 +242,7 @@ public class CheckContentProvider {
             fail("Unexpected Exception: " + e.getMessage());
         }
     }
-    
+
     /**
      * Check the interfaces on the folder.
      */
@@ -257,14 +257,14 @@ public class CheckContentProvider {
         try {
             xContent = null;
             Object o = xMSF.createInstance("com.sun.star.comp.ucb.TransientDocumentsContentProvider");
-            XContentProvider xContentProvider = 
+            XContentProvider xContentProvider =
                             UnoRuntime.queryInterface(XContentProvider.class, o);
 
             // create the ucb
-            XContentIdentifierFactory xContentIdentifierFactory = 
+            XContentIdentifierFactory xContentIdentifierFactory =
                             UnoRuntime.queryInterface(XContentIdentifierFactory.class, xMSF.createInstance("com.sun.star.ucb.UniversalContentBroker"));
             // create a content identifier from the ucb for tdoc
-            XContentIdentifier xContentIdentifier = 
+            XContentIdentifier xContentIdentifier =
                             xContentIdentifierFactory.createContentIdentifier("vnd.sun.star.tdoc:/1/Pictures/10000000000000640000004B9C743800.gif");
             // get content
             xContent = xContentProvider.queryContent(xContentIdentifier);
@@ -277,14 +277,14 @@ public class CheckContentProvider {
             fail("Unexpected Exception: " + e.getMessage());
         }
     }
-    
+
     /**
      * Check the interfaces on the stream.
      */
     @Test public void checkTDOCStreamInterfaces() {
         checkInterfaces(true);
     }
- 
+
     /**
      * Since all tdcp content types implement (nearly) the same interfaces, they
      * are called here.
@@ -301,7 +301,7 @@ public class CheckContentProvider {
      * <li>XPropertyContainer</li>
      * <li>XComponent</li>
      * </ol>
-     * @param hasParent True, if the tested content type does have a parent: 
+     * @param hasParent True, if the tested content type does have a parent:
      * only the root has not. Used in the XChild interface test.
      */
     private void checkInterfaces(boolean hasParent) {
@@ -311,7 +311,7 @@ public class CheckContentProvider {
         // xTypeProvider.log = log;
         assertNotNull("getImplementationId()", xTypeProvider._getImplementationId());
         assertNotNull("getTypes()", xTypeProvider._getTypes());
-        
+
         // check the XServiceInfo interface
         _XServiceInfo xServiceInfo = new _XServiceInfo();
         xServiceInfo.oObj = UnoRuntime.queryInterface(XServiceInfo.class, xContent);
@@ -319,7 +319,7 @@ public class CheckContentProvider {
         assertNotNull("getImplementationName()", xServiceInfo._getImplementationName());
         assertNotNull("getSupportedServiceNames()", xServiceInfo._getSupportedServiceNames());
         assertNotNull("supportsService()", xServiceInfo._supportsService());
-        
+
         // check the XCommandProcessor interface
         _XCommandProcessor xCommandProcessor = new _XCommandProcessor();
         xCommandProcessor.oObj = UnoRuntime.queryInterface(XCommandProcessor.class, xContent);
@@ -328,7 +328,7 @@ public class CheckContentProvider {
         assertNotNull("createCommandIdentifier()", xCommandProcessor._createCommandIdentifier());
         assertNotNull("execute()", xCommandProcessor._execute());
         assertNotNull("abort()", xCommandProcessor._abort());
-        
+
         // check the XChild interface
         _XChild xChild = new _XChild();
         xChild.oObj = UnoRuntime.queryInterface(XChild.class, xContent);
@@ -358,7 +358,7 @@ public class CheckContentProvider {
         // xCommandChange.log = log;
         assertNotNull("addCommandInfoChangeListener()", xCommandChange._addCommandInfoChangeListener());
         assertNotNull("removeCommandInfoChangeListener()", xCommandChange._removeCommandInfoChangeListener());
-        
+
         // check the XContent interface
         _XContent xCont = new _XContent();
         xCont.oObj = UnoRuntime.queryInterface(XContent.class, xContent);
@@ -367,7 +367,7 @@ public class CheckContentProvider {
         assertNotNull("getContentType()", xCont._getContentType());
         assertNotNull("getIdentifier()", xCont._getIdentifier());
         assertNotNull("removeContentEventListener()", xCont._removeContentEventListener());
-        
+
         // check the XPropertyContainer interface
         _XPropertyContainer xPropCont = new _XPropertyContainer();
         xPropCont.oObj = UnoRuntime.queryInterface(XPropertyContainer.class, xContent);

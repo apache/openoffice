@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -40,7 +40,7 @@ public class VclMenuItem extends VclWidget {
 
 	/**
 	 * Construct menu item with its ID
-	 * 
+	 *
 	 * @param id
 	 */
 	public VclMenuItem(VclApp app, int id) {
@@ -51,7 +51,7 @@ public class VclMenuItem extends VclWidget {
 	/**
 	 * Construct menu item with its path like
 	 * "RootMenuItem->Level1Item->Level2Item".
-	 * 
+	 *
 	 * @param path
 	 */
 	public VclMenuItem(VclApp app, String path) {
@@ -61,7 +61,7 @@ public class VclMenuItem extends VclWidget {
 
 	/**
 	 * Vcl Menu Item on menu bar
-	 * 
+	 *
 	 * @param menu
 	 * @param id
 	 */
@@ -74,7 +74,7 @@ public class VclMenuItem extends VclWidget {
 
 	/**
 	 * Vcl Menu Item on menu bar
-	 * 
+	 *
 	 * @param menu
 	 * @param path
 	 */
@@ -93,7 +93,7 @@ public class VclMenuItem extends VclWidget {
 	}
 
 	/**
-	 * 
+	 *
 	 * @return
 	 */
 	public int getId() {
@@ -120,7 +120,7 @@ public class VclMenuItem extends VclWidget {
 
 	/**
 	 * Select the menu item
-	 * 
+	 *
 	 */
 	public void select() {
 		if (menu != null)
@@ -137,7 +137,7 @@ public class VclMenuItem extends VclWidget {
 
 	/**
 	 * Select the parent of the item
-	 * 
+	 *
 	 */
 	public void selectParent() {
 		if (menu != null)
@@ -148,7 +148,7 @@ public class VclMenuItem extends VclWidget {
 
 	/**
 	 * Check if the menu item exists
-	 * 
+	 *
 	 * @return
 	 */
 	public boolean exists() {
@@ -157,7 +157,7 @@ public class VclMenuItem extends VclWidget {
 
 	/**
 	 * Check if the menu item is selected!
-	 * 
+	 *
 	 * @return
 	 */
 	public boolean isSelected() {
@@ -166,7 +166,7 @@ public class VclMenuItem extends VclWidget {
 
 	/**
 	 * Check if the menu item is enabled
-	 * 
+	 *
 	 * @return
 	 */
 	public boolean isEnabled() {
@@ -175,7 +175,7 @@ public class VclMenuItem extends VclWidget {
 
 	/**
 	 * Get the menu item position
-	 * 
+	 *
 	 * @return
 	 */
 	public int getPosition() {
@@ -184,7 +184,7 @@ public class VclMenuItem extends VclWidget {
 
 	/**
 	 * Get the menu item text
-	 * 
+	 *
 	 * @return
 	 */
 	public String getText() {
@@ -193,7 +193,7 @@ public class VclMenuItem extends VclWidget {
 
 	/**
 	 * Get the command id which is UNO-Slot
-	 * 
+	 *
 	 * @return
 	 */
 	public String getCommand() {
@@ -228,7 +228,7 @@ public class VclMenuItem extends VclWidget {
 
 	/**
 	 * Check if the menu item has sub menu
-	 * 
+	 *
 	 * @return
 	 */
 	public boolean hasSubMenu() {

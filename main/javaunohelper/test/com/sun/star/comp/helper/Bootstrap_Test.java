@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -32,12 +32,12 @@ import com.sun.star.lang.XMultiServiceFactory;
 
 
 public class Bootstrap_Test {
-	
+
 	static public boolean test( String ini_file, java.util.Hashtable bootstrap_parameters )
         throws java.lang.Exception
     {
 		boolean passed = false;
-		System.err.println();			
+		System.err.println();
 		System.out.println("*******************************************************************");
 		System.err.println("Bootstrap - doing tests...");
 		System.err.println();
@@ -46,7 +46,7 @@ public class Bootstrap_Test {
             XComponentContext xContext =
                 com.sun.star.comp.helper.Bootstrap.defaultBootstrap_InitialComponentContext(
                     ini_file, bootstrap_parameters );
-            
+
             if (AnyConverter.isVoid(
                     xContext.getValueByName(
                         "/singletons/com.sun.star.reflection.theTypeDescriptionManager" ) ))
@@ -54,7 +54,7 @@ public class Bootstrap_Test {
                 throw new Exception(
                     "no /singletons/com.sun.star.reflection.theTypeDescriptionManager!" );
             }
-            
+
 			XMultiServiceFactory msf = UnoRuntime.queryInterface(
                 XMultiServiceFactory.class, xContext.getServiceManager() );
 			String services[] = msf.getAvailableServiceNames();
@@ -63,16 +63,16 @@ public class Bootstrap_Test {
 			if (services.length == 0)
 				System.out.println("No services available!");
 
-			else 			
+			else
 				for ( int i=0; i<services.length; i++ )
 					System.out.println(services[i]);
 
             XComponent xComp = UnoRuntime.queryInterface(
                 XComponent.class, xContext );
             xComp.dispose();
-            
+
 			passed = true;
-		}		
+		}
 		catch (Exception e) {
 			e.printStackTrace();
 		}
@@ -95,7 +95,7 @@ public class Bootstrap_Test {
 	static public void main(String args[]) throws java.lang.Exception {
 		if ( args.length == 0 )
 			usage();
-        
+
         java.util.Hashtable bootstrap_parameters = new java.util.Hashtable();
         for ( int nPos = 1; nPos < args.length; ++nPos )
         {
@@ -106,7 +106,7 @@ public class Bootstrap_Test {
                 bootstrap_parameters.put( arg.substring( 0, n ), arg.substring( n +1 ) );
             }
         }
-        
-		System.exit( test(args[0], bootstrap_parameters) == true ? 0: -1 );		
+
+		System.exit( test(args[0], bootstrap_parameters) == true ? 0: -1 );
 	}
 }

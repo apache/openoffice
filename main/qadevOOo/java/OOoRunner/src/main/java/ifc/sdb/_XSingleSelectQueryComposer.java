@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -58,13 +58,13 @@ public class _XSingleSelectQueryComposer extends MultiMethodTest {
     public XSingleSelectQueryComposer oObj = null ;
 
     private String queryString = "SELECT * FROM \"biblio\"";
-    
+
     private XSingleSelectQueryAnalyzer xQueryAna = null;
-    
+
     private XPropertySet xProp = null;
-    
+
     private String colName = null;
-    
+
     /**
      * Retcieves the object relations:
     * <ul>
@@ -84,9 +84,9 @@ public class _XSingleSelectQueryComposer extends MultiMethodTest {
         if (xQueryAna == null) {
             throw new StatusException(Status.failed(
            "Couldn't get object relation 'xQueryAna'. Test must be modified"));
-            
+
         }
-    
+
         xProp = (XPropertySet)
                       UnoRuntime.queryInterface(XPropertySet.class,
                       tEnv.getObjRelation("xProp"));
@@ -94,9 +94,9 @@ public class _XSingleSelectQueryComposer extends MultiMethodTest {
         if (xProp == null) {
             throw new StatusException(Status.failed(
            "Couldn't get object relation 'xProp'. Test must be modified"));
-            
+
         }
-    
+
         try
         {
             colName = AnyConverter.toString(tEnv.getObjRelation("colName"));
@@ -109,12 +109,12 @@ public class _XSingleSelectQueryComposer extends MultiMethodTest {
         if (colName == null) {
             throw new StatusException(Status.failed(
            "Couldn't get object relation 'colName'. Test must be modified"));
-            
+
         }
-    
+
     }
-    
-    
+
+
     /**
     * Object relation <code>xQueryAna</code> set a filter. This filter
     * must returned while calling <code>getFilter</code>
@@ -124,13 +124,13 @@ public class _XSingleSelectQueryComposer extends MultiMethodTest {
             String filter = "\"Identifier\" = 'BOR02b'";
             oObj.setFilter(filter);
             tRes.tested("setFilter()", (xQueryAna.getFilter().equals(filter)));
-            
+
         } catch (com.sun.star.sdbc.SQLException e){
             log.println("unexpected Exception: " + e.toString());
             tRes.tested("setFilter()", false);
         }
     }
-    
+
     /**
     * Object relation <code>xQueryAna</code> set a complex filter with method
     . <code>setFilter</code>. Then <code>getStructuredFilter</code> returns a
@@ -148,7 +148,7 @@ public class _XSingleSelectQueryComposer extends MultiMethodTest {
             oObj.setFilter("");
             oObj.setStructuredFilter(aStructuredFilter);
             tRes.tested("setStructuredFilter()", (xQueryAna.getFilter().equals(complexFilter)));
-            
+
         } catch (com.sun.star.sdbc.SQLException e){
             log.println("unexpected Exception: " + e.toString());
             tRes.tested("setStructuredFilter()", false);
@@ -157,10 +157,10 @@ public class _XSingleSelectQueryComposer extends MultiMethodTest {
             tRes.tested("setStructuredFilter()", false);
         }
     }
-    
+
     /**
-    * At first the object relation <code>xProp</code> was set as parameter. 
-    * Relation <code>xQueryAna</code> was used to check if realtion 
+    * At first the object relation <code>xProp</code> was set as parameter.
+    * Relation <code>xQueryAna</code> was used to check if realtion
     * <code>colName</code> was found.
     * Second an empty <code>XPropertySet</code> was used as parameter. A
     * <code>com.sun.star.sdbc.SQLException</code> must be thrown.
@@ -168,22 +168,22 @@ public class _XSingleSelectQueryComposer extends MultiMethodTest {
     public void _appendFilterByColumn() {
         boolean ok = true;
         try{
-            
+
             oObj.appendFilterByColumn(xProp, true,SQLFilterOperator.EQUAL);
             log.println("appendFilterByColumn: " + xQueryAna.getFilter());
             ok = ok && (xQueryAna.getFilter().indexOf(colName) > 0);
-            
+
         } catch (com.sun.star.sdbc.SQLException e){
             log.println("unexpected Exception: " + e.toString());
             tRes.tested("appendFilterByColumn()", false);
         }
 
         try{
-            
+
             oObj.appendFilterByColumn(xProp, false,SQLFilterOperator.EQUAL);
             log.println("appendFilterByColumn: " + xQueryAna.getFilter());
             ok = ok && (xQueryAna.getFilter().indexOf(colName) > 0);
-            
+
         } catch (com.sun.star.sdbc.SQLException e){
             log.println("unexpected Exception: " + e.toString());
             tRes.tested("appendFilterByColumn()", false);
@@ -194,7 +194,7 @@ public class _XSingleSelectQueryComposer extends MultiMethodTest {
             oObj.appendFilterByColumn(dummy, true,SQLFilterOperator.EQUAL);
             log.println("expected Exception was not thrown");
             tRes.tested("appendFilterByColumn()", false);
-            
+
         } catch (com.sun.star.sdbc.SQLException e){
             log.println("expected Exception");
             ok = ok && true;
@@ -212,11 +212,11 @@ public class _XSingleSelectQueryComposer extends MultiMethodTest {
     public void _appendGroupByColumn() {
         boolean ok = true;
         try{
-            
+
             oObj.appendGroupByColumn(xProp);
             log.println("appendGroupByColumn: " + xQueryAna.getFilter());
             ok = ok && (xQueryAna.getFilter().indexOf(colName) > 0);
-            
+
         } catch (com.sun.star.sdbc.SQLException e){
             log.println("unexpected Exception: " + e.toString());
             tRes.tested("appendGroupByColumn()", false);
@@ -226,17 +226,17 @@ public class _XSingleSelectQueryComposer extends MultiMethodTest {
             oObj.appendGroupByColumn(dummy);
             log.println("expected Exception was not thrown");
             tRes.tested("appendGroupByColumn()", false);
-            
+
         } catch (com.sun.star.sdbc.SQLException e){
             log.println("expected Exception");
             ok = ok && true;
         }
-        tRes.tested("appendGroupByColumn()", ok); 
+        tRes.tested("appendGroupByColumn()", ok);
     }
 
     /**
     * The group which was set by <code>setGroup</code> must be returned
-    * while calling from object relation <code>XQueryAna</code> 
+    * while calling from object relation <code>XQueryAna</code>
     * method <code>getGroup</code>
     */
     public void _setGroup() {
@@ -244,17 +244,17 @@ public class _XSingleSelectQueryComposer extends MultiMethodTest {
             String group = "\"Identifier\"";
             oObj.setGroup(group);
             tRes.tested("setGroup()", (xQueryAna.getGroup().equals(group)));
-            
+
         } catch (com.sun.star.sdbc.SQLException e){
             log.println("unexpected Exception: " + e.toString());
             tRes.tested("setGroup()", false);
         }
     }
-    
-    
+
+
     /**
     * The cluase which was set by <code>setHavingClause</code> must be returned
-    * while calling from object relation <code>XQueryAna</code> 
+    * while calling from object relation <code>XQueryAna</code>
     * method <code>getHavingClause</code>
     */
     public void _setHavingClause() {
@@ -263,17 +263,17 @@ public class _XSingleSelectQueryComposer extends MultiMethodTest {
             oObj.setHavingClause(clause);
             tRes.tested("setHavingClause()", (
                                    xQueryAna.getHavingClause().equals(clause)));
-            
+
         } catch (com.sun.star.sdbc.SQLException e){
             log.println("unexpected Exception: " + e.toString());
             tRes.tested("setHavingClause()", false);
         }
     }
-    
+
     /**
     * At first <code>setHavingClause</code> sets a complex clause.
     * Then method <code>getStructuredHavingClause</code> from object relation
-    * <code>xQueryAna</code> returns a valid <code>PropertyValue[][]</code> 
+    * <code>xQueryAna</code> returns a valid <code>PropertyValue[][]</code>
     * Method <code>setHavingClause</code> was called with an empty sting to
     * reset filter. Now <code>setStructuredHavingClause</code> with the valid
     * <code>PropertyValue[][]</code> as parameter was called.
@@ -290,16 +290,16 @@ public class _XSingleSelectQueryComposer extends MultiMethodTest {
         requiredMethod("setHavingClause()");
         executeMethod("setStructuredFilter()");
         String complexFilter = "( \"Identifier\" = '1' AND \"Type\" = '4' ) OR ( \"Identifier\" = '2' AND \"Type\" = '5' ) OR ( \"Identifier\" = '3' AND \"Type\" = '6' AND \"Address\" = '7' ) OR ( \"Address\" = '8' ) OR ( \"Type\" = '9' )";
-        
+
         try{
            oObj.setHavingClause(complexFilter);
-           PropertyValue[][] aStructuredHaving = 
+           PropertyValue[][] aStructuredHaving =
                                           xQueryAna.getStructuredHavingClause();
            oObj.setHavingClause("");
            oObj.setStructuredHavingClause(aStructuredHaving);
-           tRes.tested("setStructuredHavingClause()", 
+           tRes.tested("setStructuredHavingClause()",
                            (xQueryAna.getHavingClause().equals(complexFilter)));
-            
+
         } catch (com.sun.star.sdbc.SQLException e){
             log.println("unexpected Exception: " + e.toString());
             tRes.tested("setStructuredHavingClause()", false);
@@ -316,11 +316,11 @@ public class _XSingleSelectQueryComposer extends MultiMethodTest {
     public void _appendHavingClauseByColumn() {
         boolean ok = true;
         try{
-            
+
             oObj.appendHavingClauseByColumn(xProp, true,SQLFilterOperator.EQUAL);
             log.println("appendHavingClauseByColumn: " + xQueryAna.getFilter());
             ok = ok && (xQueryAna.getFilter().indexOf(colName) > 0);
-            
+
         } catch (com.sun.star.sdbc.SQLException e){
             log.println("unexpected Exception: " + e.toString());
             tRes.tested("appendHavingClauseByColumn()", false);
@@ -330,7 +330,7 @@ public class _XSingleSelectQueryComposer extends MultiMethodTest {
             oObj.appendHavingClauseByColumn(dummy, true,SQLFilterOperator.EQUAL);
             log.println("expected Exception was not thrown");
             tRes.tested("appendHavingClauseByColumn()", false);
-            
+
         } catch (com.sun.star.sdbc.SQLException e){
             log.println("expected Exception");
             ok = ok && true;
@@ -348,11 +348,11 @@ public class _XSingleSelectQueryComposer extends MultiMethodTest {
     public void _appendOrderByColumn() {
         boolean ok = true;
         try{
-            
+
             oObj.appendOrderByColumn(xProp, true);
             log.println("appendOrderByColumn: " + xQueryAna.getFilter());
             ok = ok && (xQueryAna.getFilter().indexOf(colName) > 0);
-            
+
         } catch (com.sun.star.sdbc.SQLException e){
             log.println("unexpected Exception: " + e.toString());
             tRes.tested("appendOrderByColumn()", false);
@@ -362,7 +362,7 @@ public class _XSingleSelectQueryComposer extends MultiMethodTest {
             oObj.appendOrderByColumn(dummy, true);
             log.println("expected Exception was not thrown");
             tRes.tested("appendOrderByColumn()", false);
-            
+
         } catch (com.sun.star.sdbc.SQLException e){
             log.println("expected Exception");
             ok = ok && true;
@@ -380,13 +380,13 @@ public class _XSingleSelectQueryComposer extends MultiMethodTest {
             String order = "\"Identifier\"";
             oObj.setOrder(order);
             tRes.tested("setOrder()", (xQueryAna.getOrder().equals(order)));
-            
+
         } catch (com.sun.star.sdbc.SQLException e){
             log.println("unexpected Exception: " + e.toString());
             tRes.tested("setOrder()", false);
         }
     }
-    
-    
+
+
 
 }  // finish class _XSingleSelectQueryComposer

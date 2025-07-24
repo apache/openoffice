@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -51,48 +51,48 @@ import com.sun.star.util.XCancellable;
  * @see com.sun.star.ui.XFilePickerNotifier
  */
 public class _XFilePickerNotifier extends MultiMethodTest {
-    
+
     public XFilePickerNotifier oObj = null;
     private XFilePicker fps = null ;
     private String dir1 = null,
             dir2 = null ;
     ExecThread eThread = null;
-    
-    
+
+
     /**
      * Listener implementation which sets a flag if some of its
      * methods was called.
      */
     protected class TestListener implements XFilePickerListener {
         public boolean called = false ;
-        
+
         public void dialogSizeChanged() {
             called = true;
         }
-        
+
         public void fileSelectionChanged(FilePickerEvent e) {
             called = true;
         }
-        
+
         public void directoryChanged(FilePickerEvent e) {
             log.println("***** Directory Changed *****");
             called = true;
         }
-        
+
         public String helpRequested(FilePickerEvent e) {
             called = true;
             return "help";
         }
-        
+
         public void controlStateChanged(FilePickerEvent e) {
             called = true;
         }
-        
+
         public void disposing(EventObject e) {}
     }
-    
+
     TestListener listener = new TestListener() ;
-    
+
     /**
      * Tries to query object for <code>XFilePicker</code> interface, and
      * initializes two different URLs for changing file picker directory. <p>
@@ -102,21 +102,21 @@ public class _XFilePickerNotifier extends MultiMethodTest {
     public void before() {
         fps = (XFilePicker) UnoRuntime.queryInterface
                 (XFilePicker.class, oObj) ;
-        
+
         if (fps == null) {
             log.println("The object doesn't implement XFilePicker") ;
             throw new StatusException(Status.failed
                     ("The object doesn't implement XFilePicker"));
         }
-        
+
         XExecutableDialog exD = (XExecutableDialog) UnoRuntime.queryInterface(
                 XExecutableDialog.class, tEnv.getTestObject());
-        
+
         dir1 = util.utils.getOfficeTemp((XMultiServiceFactory)tParam.getMSF());
         dir2 = util.utils.getFullTestURL("");
         eThread = new ExecThread(exD);
     }
-    
+
     /**
      * Adds a listener, then tries to change display directory and
      * checks if the listener was called. <p>
@@ -124,7 +124,7 @@ public class _XFilePickerNotifier extends MultiMethodTest {
      */
     public void _addFilePickerListener() {
         oObj.addFilePickerListener(listener) ;
-        
+
         try {
             log.println("***** Setting DisplayDirectory to " + dir1);
             fps.setDisplayDirectory(dir1) ;
@@ -133,23 +133,23 @@ public class _XFilePickerNotifier extends MultiMethodTest {
             log.println("***** Setting DisplayDirectory to " + dir2);
             fps.setDisplayDirectory(dir2) ;
             log.println("***** Getting: " + fps.getDisplayDirectory());
-            
+
         } catch(com.sun.star.lang.IllegalArgumentException e) {
             log.println("!!! Exception changing dir !!!") ;
             e.printStackTrace(log) ;
         }
-        
+
         shortWait();
-        
+
         if (!listener.called) {
             log.println("Listener wasn't called :-(");
         }
-        
+
         closeDialog();
-        
+
         tRes.tested("addFilePickerListener()", listener.called) ;
     }
-    
+
     /**
      * Removes the listener and changes display directory. <p>
      * Has <b>OK</b> status if the listener wasn't called. <p>
@@ -160,11 +160,11 @@ public class _XFilePickerNotifier extends MultiMethodTest {
      */
     public void _removeFilePickerListener() {
         requiredMethod("addFilePickerListener()") ;
-        
+
         oObj.removeFilePickerListener(listener) ;
-        
+
         listener.called = false ;
-        
+
         try {
             fps.setDisplayDirectory(dir1) ;
             openDialog();
@@ -173,27 +173,27 @@ public class _XFilePickerNotifier extends MultiMethodTest {
             log.println("!!! Exception changing dir !!!") ;
             e.printStackTrace(log) ;
         }
-        
+
         shortWait();
-        
+
         closeDialog();
-        
+
         tRes.tested("removeFilePickerListener()", !listener.called) ;
     }
-    
+
     /**
      * Calls <code>execute()</code> method in a separate thread.
      * Necessary to check if this method works
      */
     protected class ExecThread extends Thread {
-        
+
         public short execRes = (short) 17 ;
         private XExecutableDialog Diag = null ;
-        
+
         public ExecThread(XExecutableDialog Diag) {
             this.Diag = Diag ;
         }
-        
+
         public void run() {
             try {
                 execRes = Diag.execute();
@@ -203,7 +203,7 @@ public class _XFilePickerNotifier extends MultiMethodTest {
             }
         }
     }
-    
+
     /**
      * Sleeps for 0.5 sec. to allow StarOffice to react on <code>
      * reset</code> call.
@@ -215,7 +215,7 @@ public class _XFilePickerNotifier extends MultiMethodTest {
             log.println("While waiting :" + e) ;
         }
     }
-    
+
     private void closeDialog() {
         XCancellable canc = (XCancellable) UnoRuntime.queryInterface(
                 XCancellable.class, tEnv.getTestObject());
@@ -225,19 +225,19 @@ public class _XFilePickerNotifier extends MultiMethodTest {
         } else {
             this.disposeEnvironment();
         }
-        
+
         long st = System.currentTimeMillis();
         boolean toLong = false;
-        
+
         log.println("waiting for dialog to close");
-        
+
         while (eThread.isAlive() && !toLong) {
             //wait for dialog to close
             toLong = (System.currentTimeMillis()-st > 10000);
         }
-        
+
         log.println("done");
-        
+
         try {
             if (eThread.isAlive()) {
                 log.println("Interrupting Thread");
@@ -247,38 +247,38 @@ public class _XFilePickerNotifier extends MultiMethodTest {
         } catch (Exception e) {
             // who cares ;-)
         }
-        
+
         st = System.currentTimeMillis();
         toLong = false;
-        
+
         log.println("waiting for interruption to work");
-        
+
         while (eThread.isAlive() && !toLong) {
             //wait for dialog to close
             toLong = (System.currentTimeMillis()-st > 10000);
         }
-        
+
         log.println("DialogThread alive: "+eThread.isAlive());
-        
-        log.println("done");        
-        
+
+        log.println("done");
+
     }
-    
-    private void openDialog() {        
+
+    private void openDialog() {
         log.println("Starting Dialog");
         if (eThread.isAlive()) {
             log.println("second interrupt");
             eThread.interrupt();
             eThread.yield();
         }
-        
+
         XExecutableDialog exD = (XExecutableDialog) UnoRuntime.queryInterface(
                 XExecutableDialog.class, tEnv.getTestObject());
-        
+
         dir1 = util.utils.getOfficeTemp((XMultiServiceFactory)tParam.getMSF());
         dir2 = util.utils.getFullTestURL("");
-        eThread = new ExecThread(exD);        
-        
+        eThread = new ExecThread(exD);
+
         eThread.start();
     }
 }

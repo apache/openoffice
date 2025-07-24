@@ -28,7 +28,7 @@ import org.apache.openoffice.ooxml.schema.model.base.NodeType;
 import org.apache.openoffice.ooxml.schema.model.base.QualifiedName;
 
 /** Representation of the 'complexType' XML schema element.  It specifies the
- *  structure of its children. 
+ *  structure of its children.
  */
 public class ComplexType
     extends Node
@@ -39,13 +39,13 @@ public class ComplexType
         final Location aLocation)
     {
         super(aParent, aName, aLocation);
-        
+
         assert(aName!=null);
     }
-    
-    
-    
-    
+
+
+
+
     @Override
     public NodeType GetNodeType ()
     {
@@ -53,17 +53,17 @@ public class ComplexType
     }
 
 
-    
+
 
     @Override
     public void AcceptVisitor (final INodeVisitor aVisitor)
     {
         aVisitor.Visit(this);
     }
-    
 
-    
-    
+
+
+
     @Override
     public String toString ()
     {

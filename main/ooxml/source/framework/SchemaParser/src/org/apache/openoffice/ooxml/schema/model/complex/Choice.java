@@ -38,10 +38,10 @@ public class Choice
     {
         super(aParent, null, aLocation);
     }
-    
-    
-    
-    
+
+
+
+
     @Override
     public NodeType GetNodeType ()
     {
@@ -56,10 +56,10 @@ public class Choice
     {
         aVisitor.Visit(this);
     }
-    
-    
-    
-    
+
+
+
+
     @Override
     public String toString ()
     {

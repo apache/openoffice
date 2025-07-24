@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 package transex3.controller;
@@ -58,7 +58,7 @@ public class EditorController {
 
         //String outputfile = "h:\\workspace\\recommandEditor\\null2";
 		File tempfile = null;
-		
+
 		try {
 			tempfile = File.createTempFile( "receditor" , "tmp" );
 		} catch (IOException e1) {
@@ -66,7 +66,7 @@ public class EditorController {
 			System.err.println("Can not create temp file\n");
 			e1.printStackTrace();
 		}
-		
+
 		String outputfile = tempfile.getAbsolutePath();
 		try
 		{
@@ -99,7 +99,7 @@ public class EditorController {
 					findRecommandFiles( aFileArray[ cnt ] , list);
 				else if( aFileArray[ cnt ].isFile() && isRecommandFile( aFileArray[ cnt ] ) )
 					list.add( aFileArray[ cnt ]);
-			}		
+			}
 	    }
 	}
 	private boolean isResourceType( File aFile ){
@@ -109,7 +109,7 @@ public class EditorController {
 			if( filename.endsWith( RESTYPES[ cnt ] ) )
 					isResType = true;
 		}
-		return isResType;			
+		return isResType;
 	}
 	private boolean isRecommandFile( File aFile ){
 		return aFile.getName().endsWith( RECFILE );
@@ -126,7 +126,7 @@ public class EditorController {
 	// Add all data to view
     void updateData(){
         JTable recTable =transex3.controller.EditorController.aEditor.getRectable();
-				
+
 		SdfString aSdfString = (SdfString) sdfstrings.get( oldindex );
 		Vector newStrings = new Vector();
 		for ( int n = 1; n < recTable.getRowCount() ; n++ ){
@@ -182,11 +182,11 @@ public class EditorController {
 	    	counter++;
 	    }
 		// Set the source srtings
-		
-		
+
+
 		//aEditor = new transex3.view.Editor( sourceStringData , filedata.toArray() );
 	    aEditor = new transex3.view.Editor( sourceStringData , firstData );
-		
+
 		aEditor.setBounds(100,100,800,900);
 		aEditor.setDefaultCloseOperation( WindowConstants.DISPOSE_ON_CLOSE );
 		aEditor.setVisible(true);
@@ -196,7 +196,7 @@ public class EditorController {
 				System.exit( 0 );
 			}
 		});
-		
+
 		aEditor.getMiExit().addActionListener( new ActionListener(){
 			public void actionPerformed( ActionEvent e ){
 				System.exit( 0 );
@@ -240,8 +240,8 @@ public class EditorController {
             public void tableChanged( TableModelEvent e ){
                 //System.out.println( e );
             }});
-        
-    
+
+
         aEditor.getRectable().getSelectionModel().addListSelectionListener( new  ListSelectionListener(){
 			public void valueChanged( ListSelectionEvent e ){
                 JTable aTable = aEditor.getRectable();
@@ -258,14 +258,14 @@ public class EditorController {
 				//System.out.println("Selected = " +e.getFirstIndex()+"\n");
 				JTable table =transex3.controller.EditorController.aEditor.getTable();
 				JTable recTable =transex3.controller.EditorController.aEditor.getRectable();
-			    SdfString aSdfString;	
+			    SdfString aSdfString;
 	            JTable aTable = aEditor.getRectable();
                 if(  aTable.getSelectedRow() != -1 && aTable.getSelectedColumn() != -1 )
                     aTable.getCellEditor( aTable.getSelectedRow(), aTable.getSelectedColumn() ).stopCellEditing();
- 			
+
                 updateData();
 				clearAllRows( recTable );
-	
+
 				aSdfString = (SdfString) sdfstrings.get( table.getSelectedRow() );
 				recTable.setValueAt( "en-US" , 0, 0 );
 	    		recTable.setValueAt( aSdfString.getSourceString().getText() 		 , 0, 1 );
@@ -317,7 +317,7 @@ public class EditorController {
 				//System.out.println("Put ID '"+aSdfString.getId()+"'");
 				sdfstrings.add( aSdfString );
 				current = aBR.readLine();
-				
+
 			}
 			Iterator aIter=recfiles.iterator();
 			File aFile;
@@ -331,13 +331,13 @@ public class EditorController {
 				while ( current2 != null ){
 					SdfEntity aEntity = new SdfEntity();
 					aEntity.setProperties( current2 );
-										
+
 					if( hashedsdfstrings.containsKey( aEntity.getId() ) )
 					{
 						aSdfString = (SdfString) hashedsdfstrings.get( aEntity.getId() );
 						aSdfString.addLanguageString( aEntity );
 					}
-					else 
+					else
 					{
 						System.out.println("DBG: Can't find source string '"+aEntity.getId()+"'" );
 					}
@@ -350,6 +350,6 @@ public class EditorController {
 		} catch ( IOException e){
 			e.printStackTrace();
 		}
-		
+
 	}
 }

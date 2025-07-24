@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -39,31 +39,31 @@ import org.openoffice.test.common.SystemUtil;
  * Manage the communication with the automation server.
  * It's used to establish the connection, send and receive data package.
  * Data package format:
- * 
+ *
  * | [Force Multi Channel (0xFFFFFFFF)] | Data Length (32 bits) | Check Byte (8 bits) | Header Length (16 bits) | Header Data | Body Data |
- * 
+ *
  * To handle the received data, add a communication listener to the manager.
  * The listener will be called back when data package arrives.
  *
  */
 public class CommunicationManager implements Runnable, Constant{
-	
+
 	private static Logger logger = Logger.getLogger("CommunicationManager");
-	
+
 	private final static int DEFAULT_PORT = 12479;
-	
+
 	private String host = "localhost";
 
 	private int port = DEFAULT_PORT;
 
 	private Socket socket = null;
-	
+
 	private double reconnectInterval = 2;
-	
+
 	private int reconnectCount = 5;
-	
+
 	private List<CommunicationListener> listeners = new Vector<CommunicationListener>();
-	
+
 	/**
 	 * Create a communication manager with the default host and port.
 	 * The default host is local and the default port is 12479.
@@ -78,7 +78,7 @@ public class CommunicationManager implements Runnable, Constant{
 			// use default
 		}
 	}
-	
+
 	/**
 	 * Create a communication manager with the given host and port
 	 * @param host
@@ -88,7 +88,7 @@ public class CommunicationManager implements Runnable, Constant{
 		this.host = host;
 		this.port = port;
 	}
-	
+
 	/**
 	 * Send a data package to server
 	 * @param headerType the package header type
@@ -98,14 +98,14 @@ public class CommunicationManager implements Runnable, Constant{
 	public synchronized void sendPackage(int headerType, byte[] header, byte[] data) throws CommunicationException {
 		if (socket == null)
 			start();
-		
+
 		try {
 			if (header == null)
 				header = new byte[0];
-			
+
 			if (data == null)
 				data = new byte[0];
-			
+
 			DataOutputStream os = new DataOutputStream(socket.getOutputStream());
 			int len = 1 + 2 + 2 + header.length + data.length;
 			// Total len
@@ -125,7 +125,7 @@ public class CommunicationManager implements Runnable, Constant{
 			throw new CommunicationException("Failed to send data to automation server!", e);
 		}
 	}
-	
+
 	/**
 	 * Start a new thread to read the data sent by sever
 	 */
@@ -133,9 +133,9 @@ public class CommunicationManager implements Runnable, Constant{
 		try {
 			while (socket != null) {
 				DataInputStream is = new DataInputStream(socket.getInputStream());
-				
+
 				int len = is.readInt();
-				if (len == 0xFFFFFFFF) 
+				if (len == 0xFFFFFFFF)
 					len = is.readInt();
 
 				byte checkByte = is.readByte();
@@ -156,7 +156,7 @@ public class CommunicationManager implements Runnable, Constant{
 			stop();
 		}
 	}
-	
+
 	/**
 	 * Add a communication listener
 	 * @param listener
@@ -165,8 +165,8 @@ public class CommunicationManager implements Runnable, Constant{
 		if (listener != null && !listeners.contains(listener))
 			listeners.add(listener);
 	}
-	
-	
+
+
 	/**
 	 * Stop the communication manager.
 	 *
@@ -174,7 +174,7 @@ public class CommunicationManager implements Runnable, Constant{
 	public synchronized void stop() {
 		if (socket == null)
 			return;
-			
+
 		try {
 			socket.close();
 		} catch (IOException e) {
@@ -185,16 +185,16 @@ public class CommunicationManager implements Runnable, Constant{
 		for (int i = 0; i < listeners.size(); i++)
 			((CommunicationListener) listeners.get(i)).stop();
 	}
-	
+
 	public synchronized boolean isConnected() {
 		return socket != null;
 	}
 
-	
+
 	public synchronized void connect() throws IOException {
 		if (socket != null)
 			return;
-		
+
 		try{
 			socket = new Socket();
 			socket.setTcpNoDelay(true);
@@ -208,10 +208,10 @@ public class CommunicationManager implements Runnable, Constant{
 			throw e;
 		}
 	}
-	
+
 	/**
 	 * Start the communication manager.
-	 * 
+	 *
 	 */
 	public synchronized void start() {
 		logger.log(Level.CONFIG, "Start Communication Manager");
@@ -223,14 +223,14 @@ public class CommunicationManager implements Runnable, Constant{
 			} catch (IOException e) {
 				logger.log(Level.FINEST, "Failed to connect! Tried " + i, e);
 			}
-			
+
 			SystemUtil.sleep(reconnectInterval);
 		}
-		
+
 		throw new CommunicationException("Failed to connect to automation server on: " + host + ":" + port);
 	}
-	
-	
+
+
 	private static byte calcCheckByte(int i) {
 		int nRes = 0;
 		int[] bytes = new int[4];

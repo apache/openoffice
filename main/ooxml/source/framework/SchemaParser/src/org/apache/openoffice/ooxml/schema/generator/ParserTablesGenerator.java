@@ -69,10 +69,10 @@ public class ParserTablesGenerator
         maTypeNameToIdMap = new TreeMap<>();
         maAttributeValueToIdMap = aAttributeValueToIdMap;
     }
-    
-    
-    
-    
+
+
+
+
     public void Generate (
         final File aParseTableFile)
     {
@@ -80,11 +80,11 @@ public class ParserTablesGenerator
 
         SetupNameList();
         AssignNameIds();
-        
+
         try
         {
             final PrintStream aOut = new PrintStream(new FileOutputStream(aParseTableFile));
-            
+
             WriteNamespaceList(aOut);
             WriteNameList(aOut);
             WriteGlobalStartEndStates(aOut);
@@ -97,20 +97,20 @@ public class ParserTablesGenerator
         {
             aException.printStackTrace();
         }
-        
+
         final long nEndTime = System.currentTimeMillis();
         System.out.printf("wrote parse tables to %s in %fs\n",
             aParseTableFile.toString(),
             (nEndTime-nStartTime)/1000.0);
     }
-    
-    
-    
-    
+
+
+
+
     private void SetupNameList ()
     {
         final Set<String> aNames = new TreeSet<>();
-        
+
         // Add the element names.
         for (final FiniteAutomaton aAutomaton : maAutomatons.GetAutomatons())
             for (final Transition aTransition : aAutomaton.GetTransitions())
@@ -119,18 +119,18 @@ public class ParserTablesGenerator
                     throw new RuntimeException();
                 aNames.add(aTransition.GetElementName().GetLocalPart());
             }
-        
+
         // Add the attribute names.
         for (final FiniteAutomaton aAutomaton : maAutomatons.GetAutomatons())
             for (final Attribute aAttribute : aAutomaton.GetAttributes())
                 aNames.add(aAttribute.GetName().GetLocalPart());
-        
+
         // Create unique ids for the names.
         int nIndex = 1;
         maNameToIdMap.clear();
         for (final String sName : aNames)
             maNameToIdMap.put(sName, nIndex++);
-        
+
         // Create unique ids for namespace prefixes.
         nIndex = 1;
         maPrefixToIdMap.clear();
@@ -139,11 +139,11 @@ public class ParserTablesGenerator
             maPrefixToIdMap.put(aEntry.getValue(), nIndex++);
         }
     }
-    
-    
-    
-    
-    /** During the largest part of the parsing process, states and elements are 
+
+
+
+
+    /** During the largest part of the parsing process, states and elements are
      *  identified not via their name but via a unique id.
      *  That allows a fast lookup.
      */
@@ -151,21 +151,21 @@ public class ParserTablesGenerator
     {
         maTypeNameToIdMap.clear();
         int nIndex = 0;
-        
+
         // Process state names.
         final Set<QualifiedName> aSortedTypeNames = new TreeSet<>();
         for (final State aState : maAutomatons.GetStates())
             aSortedTypeNames.add(aState.GetQualifiedName());
         for (final Entry<String, SimpleTypeDescriptor> aSimpleType : maSimpleTypes.GetSimpleTypes())
             aSortedTypeNames.add(aSimpleType.getValue().GetName());
-        
+
         for (final QualifiedName aName : aSortedTypeNames)
             maTypeNameToIdMap.put(aName.GetStateName(), nIndex++);
     }
-    
-    
-    
-    
+
+
+
+
     private void WriteNamespaceList (final PrintStream aOut)
     {
         aOut.printf("# namespaces\n");
@@ -177,14 +177,14 @@ public class ParserTablesGenerator
                 aEntry.getKey());
         }
     }
-    
-    
-    
-    
+
+
+
+
     private void WriteGlobalStartEndStates (final PrintStream aOut)
     {
         aOut.printf("\n# start and end states\n");
-        
+
         final FiniteAutomaton aAutomaton = maAutomatons.GetTopLevelAutomaton();
         final State aStartState = aAutomaton.GetStartState();
         aOut.printf("start-state %4d %s\n",
@@ -195,10 +195,10 @@ public class ParserTablesGenerator
                 maTypeNameToIdMap.get(aAcceptingState.GetFullname()),
                 aAcceptingState.GetFullname());
     }
-    
-    
-    
-    
+
+
+
+
     private void WriteNameList (final PrintStream aOut)
     {
         aOut.printf("\n# %d names\n", maNameToIdMap.size());
@@ -208,7 +208,7 @@ public class ParserTablesGenerator
                 aEntry.getValue(),
                 aEntry.getKey());
         }
-        
+
         aOut.printf("\n# %s states\n",  maTypeNameToIdMap.size());
         for (final Entry<String, Integer> aEntry : maTypeNameToIdMap.entrySet())
         {
@@ -217,10 +217,10 @@ public class ParserTablesGenerator
                 aEntry.getKey());
         }
     }
-    
-    
-    
-    
+
+
+
+
     private void WriteAutomatonList (final PrintStream aOut)
     {
         for (final FiniteAutomaton aAutomaton : maAutomatons.GetAutomatons())
@@ -234,7 +234,7 @@ public class ParserTablesGenerator
             aOut.printf("start-state %d %s\n",
                 nStartStateId,
                 aStartState);
-            
+
             // Write accepting states.
             for (final State aState : aAutomaton.GetAcceptingStates())
             {
@@ -242,7 +242,7 @@ public class ParserTablesGenerator
                     maTypeNameToIdMap.get(aState.GetFullname()),
                     aState.GetFullname());
             }
-            
+
             // Write text type.
             final INode aTextType = aStartState.GetTextType();
             if (aTextType != null)
@@ -265,12 +265,12 @@ public class ParserTablesGenerator
                         throw new RuntimeException();
                 }
             }
-            
+
             WriteAttributes(
                 aOut,
                 aStartState,
                 aAutomaton.GetAttributes());
-            
+
             // Write transitions.
             for (final Transition aTransition : aAutomaton.GetTransitions())
             {
@@ -296,10 +296,10 @@ public class ParserTablesGenerator
             }
         }
     }
-    
-    
-    
-    
+
+
+
+
     private void WriteAttributes (
         final PrintStream aOut,
         final State aState,
@@ -322,9 +322,9 @@ public class ParserTablesGenerator
         }
     }
 
-    
-    
-    
+
+
+
     private void WriteSimpleTypes (
         final PrintStream aOut)
     {
@@ -377,11 +377,11 @@ public class ParserTablesGenerator
             }
         }
     }
-    
-    
-    
-        
-    private void WriteAttributeValues ( 
+
+
+
+
+    private void WriteAttributeValues (
         final PrintStream aOut)
     {
         final Map<String,Integer> aSortedMap = new TreeMap<>();
@@ -390,10 +390,10 @@ public class ParserTablesGenerator
         for (final Entry<String,Integer> aEntry : aSortedMap.entrySet())
             aOut.printf("attribute-value %5d %s\n", aEntry.getValue(), QuoteString(aEntry.getKey()));
     }
-    
-    
-    
-    
+
+
+
+
     private static void AppendStringDescription (
         final StringBuffer aLine,
         final StringNode aType)
@@ -428,8 +428,8 @@ public class ParserTablesGenerator
         }
     }
 
-    
-    
+
+
 
     private static void AppendNumberDescription (
         final StringBuffer aLine,
@@ -490,20 +490,20 @@ public class ParserTablesGenerator
                 throw new RuntimeException("unsupported numerical restriction "+aType.GetRestrictionType());
         }
     }
-     
-    
-    
-    
+
+
+
+
     private static void AppendDateTimeDescription (
         final StringBuffer aLine,
         final DateTimeNode aType)
     {
         aLine.append("D");
     }
-    
-    
-    
-    
+
+
+
+
     private static void AppendBlobDescription (
         final StringBuffer aLine,
         final BlobNode aType)
@@ -533,17 +533,17 @@ public class ParserTablesGenerator
                 throw new RuntimeException();
         }
     }
-    
-    
-    
-    
+
+
+
+
     private static String QuoteString(final String sText)
     {
         return "\"" + sText.replace("\"", "&quot;").replace(" ", "%20") + "\"";
-    }    
-    
-    
-    
+    }
+
+
+
 
     private final FiniteAutomatonContainer maAutomatons;
     private final SimpleTypeContainer maSimpleTypes;

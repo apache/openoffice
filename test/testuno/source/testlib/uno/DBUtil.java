@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 package testlib.uno;
@@ -99,7 +99,7 @@ public class DBUtil {
 						false, PropertyState.DIRECT_VALUE) });
 	}
 
-	
+
 	public static void getDocument(final String _docURL) throws Exception {
 		m_databaseDocumentFile = _docURL;
 
@@ -115,7 +115,7 @@ public class DBUtil {
 
 	/**
 	 * drops the table with a given name
-	 * 
+	 *
 	 * @param _name
 	 *            the name of the table to drop
 	 * @param _ifExists
@@ -238,7 +238,7 @@ public class DBUtil {
 
 	/**
 	 * returns a connection to the database
-	 * 
+	 *
 	 * Multiple calls to this method return the same connection. The
 	 * DbaseDatabase object keeps the ownership of the connection, so you don't
 	 * need to (and should not) dispose/close it.
@@ -253,7 +253,7 @@ public class DBUtil {
 
 	/**
 	 * closes the database document
-	 * 
+	 *
 	 * Any CloseVetoExceptions fired by third parties are ignored, and any
 	 * reference to the database document is released.
 	 */

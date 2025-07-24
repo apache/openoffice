@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 package fvt.uno.sw.frame;
 
@@ -49,7 +49,7 @@ public class FrameSize {
 	private XText xText=null;
 	@Before
 	public void setUp() throws Exception {
-		app.start();		
+		app.start();
 	}
 
 	@After
@@ -78,8 +78,8 @@ public class FrameSize {
         aSize.Height = 41;
         aSize.Width = 15000;
         xShape.setSize(aSize);
-		
-		//reopen the odt document 
+
+		//reopen the odt document
 		XTextDocument assertDocument_odt=(XTextDocument)UnoRuntime.queryInterface(XTextDocument.class,SWUtil.saveTo_Override_reload(xTextDocument, "writer8",Testspace.getPath("output/test.odt"), app));
 		XTextFramesSupplier xTFS_odt = (XTextFramesSupplier) UnoRuntime.queryInterface(XTextFramesSupplier.class, assertDocument_odt);
 		XNameAccess xTextFrames_odt = xTFS_odt.getTextFrames();
@@ -89,7 +89,7 @@ public class FrameSize {
 		assertEquals("verify Frame height size",41,xShape_odt.getSize().Height);
 		assertEquals("verify Frame width size",15000,xShape_odt.getSize().Width);
 
-		//reopen the doc document 
+		//reopen the doc document
 		XTextDocument assertDocument_doc=(XTextDocument)UnoRuntime.queryInterface(XTextDocument.class,SWUtil.saveTo_Override_reload(xTextDocument, "MS Word 97",Testspace.getPath("output/test.doc"), app));
 		XTextFramesSupplier xTFS_doc = (XTextFramesSupplier) UnoRuntime.queryInterface(XTextFramesSupplier.class, assertDocument_doc);
 		XNameAccess xTextFrames_doc = xTFS_doc.getTextFrames();

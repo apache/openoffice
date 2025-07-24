@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -154,20 +154,20 @@ public class AccessibleEditableTextPara_PreviewCell extends TestCase {
         AccessibilityTools.getAccessibleObjectForRole(xRoot, AccessibleRole.TABLE_CELL,true);
 
         xRoot = AccessibilityTools.SearchedAccessible;
-        
+
         //AccessibilityTools.printAccessibleTree(log,xRoot);
 
         oObj = AccessibilityTools.getAccessibleObjectForRole(xRoot,AccessibleRole.PARAGRAPH);
-        
+
         log.println("ImplementationName " + utils.getImplName(oObj));
         log.println("AccessibleName " + oObj.getAccessibleName());
         log.println("Parent " + utils.getImplName(oObj.getAccessibleParent()));
 
         TestEnvironment tEnv = new TestEnvironment( oObj );
-        
+
         tEnv.addObjRelation("EditOnly", "AccessibleEditableTextPara_PreviewCell");
         tEnv.addObjRelation("Destroy", "AccessibleEditableTextPara_PreviewCell");
-        
+
         final XCell cell_to_change = xCell;
         tEnv.addObjRelation("EventProducer",
             new ifc.accessibility._XAccessibleEventBroadcaster.EventProducer(){
@@ -175,7 +175,7 @@ public class AccessibleEditableTextPara_PreviewCell extends TestCase {
                     cell_to_change.setFormula("NewString");
                 }
             });
-            
+
         return tEnv;
     }
 

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -41,7 +41,7 @@ import java.util.Vector;
 class Disposer implements XEventListener
 {
     private XComponent m_xComp;
-    
+
     //----------------------------------------------------------------------------------------------
     Disposer( XComponent xComp )
     {
@@ -61,19 +61,19 @@ public class ComponentContext implements XComponentContext, XComponent
     private static final boolean DEBUG = false;
     private static final String SMGR_NAME = "/singletons/com.sun.star.lang.theServiceManager";
     private static final String TDMGR_NAME = "/singletons/com.sun.star.reflection.theTypeDescriptionManager";
-    
+
     private Hashtable m_table;
     private XComponentContext m_xDelegate;
-    
+
     private XMultiComponentFactory m_xSMgr;
     private boolean m_bDisposeSMgr;
-    
+
     private Vector m_eventListener;
 
     /** Ctor to create a component context passing a hashtable for values and a delegator
         reference. Entries of the passed hashtable are either direct values or
         ComponentContextEntry objects.
-        
+
         @param table
                entries
         @param xDelegate
@@ -105,7 +105,7 @@ public class ComponentContext implements XComponentContext, XComponent
         {
             m_xSMgr = m_xDelegate.getServiceManager();
         }
-        
+
         // listen for delegate
         XComponent xComp = UnoRuntime.queryInterface(
             XComponent.class, m_xDelegate );
@@ -114,7 +114,7 @@ public class ComponentContext implements XComponentContext, XComponent
             xComp.addEventListener( new Disposer( this ) );
         }
     }
-    
+
     // XComponentContext impl
     //______________________________________________________________________________________________
     public Object getValueByName( String rName )
@@ -165,7 +165,7 @@ public class ComponentContext implements XComponentContext, XComponent
                         if (DEBUG)
                             System.err.println( "### exception occurred on late init of singleton instance \"" + rName + "\": " + exc.getMessage() );
                     }
-                
+
                     if (xInstance != null)
                     {
                         synchronized (entry)
@@ -214,14 +214,14 @@ public class ComponentContext implements XComponentContext, XComponent
     {
         return m_xSMgr;
     }
-    
+
     // XComponent impl
     //______________________________________________________________________________________________
     public void dispose()
     {
         if (DEBUG)
             System.err.print( "> disposing context " + this );
-        
+
         // fire events
         EventObject evt = new EventObject( this );
         Enumeration eventListener = m_eventListener.elements();
@@ -231,7 +231,7 @@ public class ComponentContext implements XComponentContext, XComponent
             listener.disposing( evt );
         }
         m_eventListener.removeAllElements();
-        
+
         XComponent tdmgr = null;
         // dispose values, then service manager, then typdescription manager
         Enumeration keys = m_table.keys();
@@ -245,7 +245,7 @@ public class ComponentContext implements XComponentContext, XComponent
                 {
                     o = ((ComponentContextEntry)o).m_value;
                 }
-                
+
                 XComponent xComp = UnoRuntime.queryInterface( XComponent.class, o );
                 if (xComp != null)
                 {
@@ -261,7 +261,7 @@ public class ComponentContext implements XComponentContext, XComponent
             }
         }
         m_table.clear();
-        
+
         // smgr
         if (m_bDisposeSMgr)
         {
@@ -273,13 +273,13 @@ public class ComponentContext implements XComponentContext, XComponent
             }
         }
         m_xSMgr = null;
-        
+
         // tdmgr
         if (tdmgr != null)
         {
             tdmgr.dispose();
         }
-        
+
         if (DEBUG)
             System.err.println( "... finished" );
     }
@@ -289,8 +289,8 @@ public class ComponentContext implements XComponentContext, XComponent
         if (xListener == null)
         	throw new com.sun.star.uno.RuntimeException( "Listener must not be null" );
   		if (m_eventListener.contains( xListener ))
-  			throw new com.sun.star.uno.RuntimeException( "Listener already registred." );      	
-        
+  			throw new com.sun.star.uno.RuntimeException( "Listener already registred." );
+
        	m_eventListener.addElement( xListener );
     }
     //______________________________________________________________________________________________
@@ -299,8 +299,8 @@ public class ComponentContext implements XComponentContext, XComponent
         if (xListener == null)
         	throw new com.sun.star.uno.RuntimeException( "Listener must not be null" );
   		if (! m_eventListener.contains( xListener ))
-  			throw new com.sun.star.uno.RuntimeException( "Listener is not registered." );      	
-        
-        m_eventListener.removeElement( xListener );	
+  			throw new com.sun.star.uno.RuntimeException( "Listener is not registered." );
+
+        m_eventListener.removeElement( xListener );
     }
 }

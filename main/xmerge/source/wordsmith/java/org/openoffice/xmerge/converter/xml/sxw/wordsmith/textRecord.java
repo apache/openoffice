@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -30,8 +30,8 @@ import java.io.ByteArrayOutputStream;
 
 /**
  *  This class represents a single text record in a WordSmith document.
- *  A record is composed of one or more "WordSmith elements", which 
- *  include: WordSmith header, font table, color table, paragraphs, 
+ *  A record is composed of one or more "WordSmith elements", which
+ *  include: WordSmith header, font table, color table, paragraphs,
  *  and text runs.
  *
  *  @author   David Proulx
@@ -98,13 +98,13 @@ class textRecord {
                 os.write(e.getBytes());
             }
 
-        } catch (IOException e) { 
-            e.printStackTrace(); 
+        } catch (IOException e) {
+            e.printStackTrace();
         }
 
         if (bs != null)
             return bs.toByteArray();
-        else 
+        else
             return null;
     }
 }

@@ -31,9 +31,9 @@ public class ListParser implements ISimpleTypeParser
         maItemParser = aItemParser;
     }
 
-    
-    
-    
+
+
+
     @Override
     public Object Parse(
         final String sRawValue,
@@ -46,8 +46,8 @@ public class ListParser implements ISimpleTypeParser
         return aValues;
     }
 
-    
-    
-    
+
+
+
     private final ISimpleTypeParser maItemParser;
 }

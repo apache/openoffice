@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -44,7 +44,7 @@ import util.WriterTools;
 
 /**
  * Methods to open Writer docs
- * 
+ *
  */
 public class WriterHelper {
     XMultiServiceFactory m_xMSF = null;
@@ -89,7 +89,7 @@ public class WriterHelper {
      * otherwise this document remains open
      * @return returns the created Textdocument
      */
-    public XTextDocument openFromDialog(String url, String createButton, 
+    public XTextDocument openFromDialog(String url, String createButton,
                                         boolean destroyLocal) {
         xLocalDoc = WriterTools.createTextDoc(m_xMSF);
         XComponent comp = UnoRuntime.queryInterface(XComponent.class, xLocalDoc);
@@ -105,14 +105,14 @@ public class WriterHelper {
 
             XAccessible xRoot = AccessibilityTools.getAccessibleObject(xWindow);
             XAccessibleContext buttonContext = AccessibilityTools.getAccessibleObjectForRole(
-                                                       xRoot, 
-                                                       AccessibleRole.PUSH_BUTTON, 
+                                                       xRoot,
+                                                       AccessibleRole.PUSH_BUTTON,
                                                        createButton);
 
             XAccessibleAction buttonAction = UnoRuntime.queryInterface(XAccessibleAction.class, buttonContext);
 
             try {
-                System.out.println("Name: " + 
+                System.out.println("Name: " +
                                    buttonContext.getAccessibleName());
                 buttonAction.doAccessibleAction(0);
             } catch (com.sun.star.lang.IndexOutOfBoundsException e) {
@@ -145,8 +145,8 @@ public class WriterHelper {
     }
 
 
-    public XTextDocument DocByAutopilot(XMultiServiceFactory msf, 
-                                        int[] indexes, boolean destroyLocal, 
+    public XTextDocument DocByAutopilot(XMultiServiceFactory msf,
+                                        int[] indexes, boolean destroyLocal,
                                         String bName) {
         XTextDocument xTextDoc = WriterTools.createTextDoc(m_xMSF);
         Object toolkit = null;
@@ -183,13 +183,13 @@ public class WriterHelper {
         }
 
         shortWait();
-        
+
         atw = tk.getActiveTopWindow();
 
         xWindow = UnoRuntime.queryInterface(XWindow.class, atw);
 
         xRoot = AccessibilityTools.getAccessibleObject(xWindow);
-        
+
         //at.printAccessibleTree(new PrintWriter(System.out),xRoot);
 
         XAccessibleAction action = UnoRuntime.queryInterface(XAccessibleAction.class, AccessibilityTools.getAccessibleObjectForRole(xRoot, AccessibleRole.PUSH_BUTTON, bName));
@@ -198,15 +198,15 @@ public class WriterHelper {
             action.doAccessibleAction(0);
         } catch (com.sun.star.lang.IndexOutOfBoundsException e) {
         }
-        
+
         shortWait();
-        
+
         atw = tk.getActiveTopWindow();
 
         xWindow = UnoRuntime.queryInterface(XWindow.class, atw);
 
         xRoot = AccessibilityTools.getAccessibleObject(xWindow);
-        
+
         AccessibilityTools.printAccessibleTree(new PrintWriter(System.out),xRoot);
 
         action = UnoRuntime.queryInterface(XAccessibleAction.class, AccessibilityTools.getAccessibleObjectForRole(xRoot, AccessibleRole.PUSH_BUTTON, "Yes"));
@@ -214,8 +214,8 @@ public class WriterHelper {
         try {
             if (action != null) action.doAccessibleAction(0);
         } catch (com.sun.star.lang.IndexOutOfBoundsException e) {
-        }   
-        
+        }
+
         shortWait();
 
         XDesktop xDesktop = getDesktop();

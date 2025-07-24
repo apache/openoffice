@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -132,7 +132,7 @@ import com.sun.star.util.XCloseable;
 */
 
 public class OGridControlModel extends GenericModelTest {
-    
+
     /**
      * Set some member variable of the super class <CODE>GenericModelTest</CODE>:
      * <pre>
@@ -144,17 +144,17 @@ public class OGridControlModel extends GenericModelTest {
      * @param tParam the test parameter
      * @param log the log writer
      */
-    
+
     protected void initialize(TestParameters tParam, PrintWriter log) {
-        
+
         super.initialize(tParam, log);
-        
+
         super.m_kindOfControl="GridControl";
-        
+
         super.m_ObjectName = "stardiv.one.form.component.Grid";
-        
+
         super.m_LCShape_Type = "GridControl";
-        
+
     }
     /**
      * calls <CODE>cleanup()</CODE> from it's super class
@@ -164,8 +164,8 @@ public class OGridControlModel extends GenericModelTest {
     protected void cleanup(TestParameters tParam, PrintWriter log) {
         super.cleanup(tParam, log);
     }
-    
-    
+
+
     /**
      * calls <CODE>createTestEnvironment()</CODE> from it's super class
      * @param Param the test parameter
@@ -175,7 +175,7 @@ public class OGridControlModel extends GenericModelTest {
     protected synchronized TestEnvironment createTestEnvironment(TestParameters Param,
             PrintWriter log) {
         TestEnvironment tEnv = super.createTestEnvironment(Param, log);
-        
+
         XInterface oObj = tEnv.getTestObject();
 
         XPropertySet aControl = null;
@@ -183,7 +183,7 @@ public class OGridControlModel extends GenericModelTest {
         XPropertySet aControl3 = null;
         XPropertySet aControl4 = null;
         XPropertySet aControl5 = null;
-        
+
         try {
             XGridColumnFactory columns = (XGridColumnFactory) UnoRuntime.queryInterface(
                               XGridColumnFactory.class, oObj);
@@ -230,8 +230,8 @@ public class OGridControlModel extends GenericModelTest {
         tEnv.addObjRelation("INSTANCE1", aControl4);
         tEnv.addObjRelation("INSTANCE2", aControl5);
 
-        
-        tEnv.addObjRelation("Comparer", 
+
+        tEnv.addObjRelation("Comparer",
                             new Comparator() {
             public int compare(Object o1, Object o2) {
                 XNamed named1 = (XNamed) UnoRuntime.queryInterface(
@@ -253,14 +253,14 @@ public class OGridControlModel extends GenericModelTest {
 
 
 //        HashSet exclude = new HashSet();
-//        
+//
 //        exclude.add("FormatKey");
 //
-//        tEnv.addObjRelation("XUpdateBroadcaster.Checker", 
+//        tEnv.addObjRelation("XUpdateBroadcaster.Checker",
 //                            new Checker(m_XFormLoader, m_XPS, m_XCtrl, m_ChangePropertyName, m_ChangePropertyValue));
         return tEnv;
     }
-    
+
 }    // finish class OButtonModelold
 
 
@@ -320,7 +320,7 @@ class OGridControlModelold extends TestCase {
     *      {@link ifc.container._XContainer} : a column instance. </li>
     * </ul>
     */
-    protected synchronized TestEnvironment createTestEnvironment(TestParameters Param, 
+    protected synchronized TestEnvironment createTestEnvironment(TestParameters Param,
                                                                  PrintWriter log) {
         XInterface oObj = null;
         XInterface oInstance = null;
@@ -338,8 +338,8 @@ class OGridControlModelold extends TestCase {
 
         //get GridControlModel
         String objName = "Grid";
-        XControlShape shape = FormTools.insertControlShape(xDrawDoc, 5000, 
-                                                           7000, 2000, 2000, 
+        XControlShape shape = FormTools.insertControlShape(xDrawDoc, 5000,
+                                                           7000, 2000, 2000,
                                                            "GridControl");
         oObj = shape.getControl();
 
@@ -385,7 +385,7 @@ class OGridControlModelold extends TestCase {
         tEnv.addObjRelation("Selections", new Object[] { aControl, aControl2 });
 
         // COMPARER
-        
+
         int THRCNT = 1;
         String count = (String)Param.get("THRCNT");
         if (count != null)
@@ -397,7 +397,7 @@ class OGridControlModelold extends TestCase {
 
         try {
             for (int n = 1; n < (3 * THRCNT + 1); n++) {
-                log.println("adding INSTANCE" + n + 
+                log.println("adding INSTANCE" + n +
                             " as obj relation to environment");
                 oInstance = columns.createColumn("TextField");
                 tEnv.addObjRelation("INSTANCE" + n, oInstance);

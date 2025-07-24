@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -70,7 +70,7 @@ public class SwAccessibleDocumentPageView extends TestCase {
         TestParameters Param, PrintWriter log) {
 
         XInterface oObj = null;
-        
+
         XText oText = xTextDoc.getText();
         XTextCursor oCursor = oText.createTextCursor();
 
@@ -94,10 +94,10 @@ public class SwAccessibleDocumentPageView extends TestCase {
         } catch ( com.sun.star.lang.IllegalArgumentException e ){
             e.printStackTrace(log);
             throw new StatusException( "Couldn't insert lines", e );
-        }        
-        
-        XController xController = xTextDoc.getCurrentController();        
-        
+        }
+
+        XController xController = xTextDoc.getCurrentController();
+
         XModel aModel = (XModel)
             UnoRuntime.queryInterface(XModel.class, xTextDoc);
 
@@ -121,7 +121,7 @@ public class SwAccessibleDocumentPageView extends TestCase {
             log.println("Couldn't change mode");
             throw new StatusException(Status.failed("Couldn't change mode"));
         }
-        
+
         shortWait();
 
         AccessibilityTools at = new AccessibilityTools();
@@ -135,25 +135,25 @@ public class SwAccessibleDocumentPageView extends TestCase {
 
         log.println("ImplementationName " + utils.getImplName(oObj));
 
-        TestEnvironment tEnv = new TestEnvironment(oObj);        
+        TestEnvironment tEnv = new TestEnvironment(oObj);
 
         final XText the_text = oText;
 
         tEnv.addObjRelation("EventProducer",
             new ifc.accessibility._XAccessibleEventBroadcaster.EventProducer() {
-                public void fireEvent() {                  
+                public void fireEvent() {
                     String oldText = the_text.getString();
                     the_text.setString("EVENT FIRED");
                     shortWait();
                     the_text.setString(oldText);
                 }
-            });        
-        
+            });
+
         return tEnv;
 
-    }  
-    
-    
+    }
+
+
     /**
     * Sleeps for 1 sec. to allow StarOffice to react on <code>
     * reset</code> call.
@@ -164,8 +164,8 @@ public class SwAccessibleDocumentPageView extends TestCase {
         } catch (InterruptedException e) {
             log.println("While waiting :" + e) ;
         }
-    }   
-        
+    }
+
 
     /**
     * Called while disposing a <code>TestEnvironment</code>.

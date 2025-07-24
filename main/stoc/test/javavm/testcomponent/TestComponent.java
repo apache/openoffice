@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 import com.sun.star.comp.loader.FactoryHelper;
@@ -29,14 +29,14 @@ import java.net.*;
 
 
 /** This component implements XTypeProvider for use with StarBasic.
- *  The XServiceInfo is implemented to have an interface in which we can put some 
+ *  The XServiceInfo is implemented to have an interface in which we can put some
  *  code just for the sake of debugging.
  *
  *  To debug with JPDA (jdk 1.3), put these lines in the java.ini within the  [Java] section:
  *  -Xdebug
  *  -Xrunjdwp:transport=dt_socket,address=8000,server=y,suspend=y
- *  
- *  When the Virtual Machine service is instantiated it will block until the debugger 
+ *
+ *  When the Virtual Machine service is instantiated it will block until the debugger
  *  attaches to it on port 8000. You can chose a different port. You attach to the VM using
  *  jdb by
  *
@@ -47,7 +47,7 @@ import java.net.*;
 public class TestComponent implements XServiceInfo, XTypeProvider
 {
     public static final String __serviceName="JavaTestComponent";
-    
+
     // XTypeProvider
     public com.sun.star.uno.Type[] getTypes(  )
     {
@@ -62,7 +62,7 @@ public class TestComponent implements XServiceInfo, XTypeProvider
         return TestComponent.class.getName().getBytes();
     }
 
-    
+
     // XServiceName
     public String getImplementationName(  )
     {
@@ -79,12 +79,12 @@ public class TestComponent implements XServiceInfo, XTypeProvider
 
 		prop= System.getProperty("stardiv.security.disableSecurity");
 		prop= System.getProperty("appletviewer.security.mode");
-        
+
         // Test security settings
         File f= new File("c:/temp/javasecurity.txt");
         try {
             f.createNewFile();
-        
+
                // local connection
         URL url= new URL("http://localhost:8080/index.html");
         InputStream is= url.openStream();
@@ -106,10 +106,10 @@ public class TestComponent implements XServiceInfo, XTypeProvider
     // XServiceName
     public boolean supportsService( /*IN*/String ServiceName )
     {
-        
+
         return false;
     }
-    
+
     //XServiceName
     public String[] getSupportedServiceNames(  )
     {
@@ -140,7 +140,7 @@ public class TestComponent implements XServiceInfo, XTypeProvider
    * @param   regKey       the registryKey
    * @see                  com.sun.star.comp.loader.JavaLoader
    */
-    public static boolean __writeRegistryServiceInfo(XRegistryKey regKey) 
+    public static boolean __writeRegistryServiceInfo(XRegistryKey regKey)
     {
         return FactoryHelper.writeRegistryServiceInfo( TestComponent.class.getName(),
         TestComponent.__serviceName, regKey);

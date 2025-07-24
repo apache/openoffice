@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 package fvt.uno.sd.slideshow;
 
@@ -84,11 +84,11 @@ public class CustomShow {
 	public void testCustomShow() throws Exception {
 
 		String aNameArray[] = { "Page 1", "Page 2",  "Page 3", "Page 4", "Page 5"};
-		
+
 		//insert five  pages
 	    while (drawpages.getCount() < aNameArray.length)
 		    drawpages.insertNewByIndex(0);
-	    
+
 	    //add text shape to each page
 		for (int i = 0; i < aNameArray.length; i++) {
 			XDrawPage xDrawPage = (XDrawPage) UnoRuntime.queryInterface(
@@ -106,14 +106,14 @@ public class CustomShow {
 			ShapeUtil.addPortion(xTextObj, aNameArray[i], true);
 		}
 
-		
-		//create two custom shows 
-		//one will play slide 3 to 5 and is named "Part" 
-		//the other one will play slide 1 t0 5 and is named "All"		
+
+		//create two custom shows
+		//one will play slide 3 to 5 and is named "Part"
+		//the other one will play slide 1 t0 5 and is named "All"
 		XCustomPresentationSupplier xCustPresSupplier = (XCustomPresentationSupplier) UnoRuntime
 				.queryInterface(XCustomPresentationSupplier.class, impressDocument);
 
-		
+
 		// the following container is a container for further container which
 		// includes the list of pages that are to play within a custom show
 		XNameContainer xNameContainer = xCustPresSupplier
@@ -123,7 +123,7 @@ public class CustomShow {
 
 		Object xObj;
 		XIndexContainer xContainer;
-		
+
 		//instantiate an IndexContainer that will take a list of draw pages for
 		//the first custom show
 		xObj = xFactory.createInstance();
@@ -134,7 +134,7 @@ public class CustomShow {
 					drawpages.getByIndex(i));
 		xNameContainer.insertByName("Part", xContainer);
 
-		
+
 		//instantiate an IndexContainer that will take a list of draw page for
 		//the second custom show
 		xObj = xFactory.createInstance();
@@ -145,7 +145,7 @@ public class CustomShow {
 					drawpages.getByIndex(i));
 		xNameContainer.insertByName("All", xContainer);
 
-		
+
 		//set which custom show is to used
 		XPresentationSupplier xPresSupplier = (XPresentationSupplier) UnoRuntime
 				.queryInterface(XPresentationSupplier.class, impressDocument);
@@ -153,16 +153,16 @@ public class CustomShow {
 		XPropertySet xPresPropSet = (XPropertySet) UnoRuntime.queryInterface(
 				XPropertySet.class, xPresentation);
 		xPresPropSet.setPropertyValue("CustomShow", "Part");
-		
+
 		saveAndLoadSlide();
-		
+
 		//assert if custom show is set
 		Assert.assertEquals("Set Part as CustomSHow", xPresPropSet.getPropertyValue("CustomShow"), "Part");
 	}
 
 	/**
 	 * create a new presentation document and insert a new slide.
-	 * 
+	 *
 	 * @throws Exception
 	 */
 	public void createDocumentAndSlide() throws Exception {
@@ -171,15 +171,15 @@ public class CustomShow {
 		drawsupplier = (XDrawPagesSupplier) UnoRuntime.queryInterface(
 				XDrawPagesSupplier.class, impressDocument);
 		drawpages = drawsupplier.getDrawPages();
-		
+
 		sdDocument = (XPresentationSupplier) UnoRuntime.queryInterface(
 				XPresentationSupplier.class, impressDocument);
 		pre = sdDocument.getPresentation();
 	}
-	
+
 	/**
 	 * Save presentation and reLoad the slide.
-	 * 
+	 *
 	 * @param no
 	 * @return void
 	 * @throws Exception
@@ -198,7 +198,7 @@ public class CustomShow {
 
 	/**
 	 * save and reload Presentation document.
-	 * 
+	 *
 	 * @param presentationDocument
 	 * @param sFilter
 	 * @param sExtension

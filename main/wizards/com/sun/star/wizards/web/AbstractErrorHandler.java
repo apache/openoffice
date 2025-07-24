@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -30,8 +30,8 @@ import com.sun.star.wizards.common.SystemDialog;
 /**
  * An abstract implementation of ErrorHandler, which
  * uses a renderer method geMessageFor(Exception, Object, int, int)
- * (in this class still abstract...) 
- * to render the errors, and displays 
+ * (in this class still abstract...)
+ * to render the errors, and displays
  * error messeges.
  */
 public abstract class AbstractErrorHandler implements ErrorHandler
@@ -96,7 +96,7 @@ public abstract class AbstractErrorHandler implements ErrorHandler
     /**
      * display a message
      * @deprecated
-     * @param xmsf 
+     * @param xmsf
      * @param message the message to display
      * @param errorType an int constant from the ErrorHandler interface.
      * @return
@@ -155,7 +155,7 @@ public abstract class AbstractErrorHandler implements ErrorHandler
 
     /**
      * @param errorType
-     * @return the Uno attributes for each error type. 
+     * @return the Uno attributes for each error type.
      */
     private static int getAttributeFor(int errorType)
     {
@@ -223,7 +223,7 @@ public abstract class AbstractErrorHandler implements ErrorHandler
      * @param ex the exception
      * @param arg a free argument
      * @param ix a free argument
-     * @param type the error type (from the int constants 
+     * @param type the error type (from the int constants
      * in ErrorHandler interface)
      * @return a Strings which will be displayed in the message box,
      * and which describes the error, and the needed action from the user.

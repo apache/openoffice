@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -48,9 +48,9 @@ import org.openoffice.xmerge.converter.xml.sxw.SxwPluginFactory;
  * @author  Mark Murnane
  * @version 1.1
  */
-public final class PluginFactoryImpl extends SxwPluginFactory 
+public final class PluginFactoryImpl extends SxwPluginFactory
     implements DocumentDeserializerFactory, DocumentSerializerFactory,
-               DocumentMergerFactory{    
+               DocumentMergerFactory{
 
    /**
     *  <p>Constructor that caches the <code>ConvertInfo</code> that
@@ -61,15 +61,15 @@ public final class PluginFactoryImpl extends SxwPluginFactory
     public PluginFactoryImpl (ConverterInfo ci) {
         super(ci);
     }
-   
+
     /** ConverterCapabilities object for this type of conversion. */
     private final static ConverterCapabilities converterCap =
         new ConverterCapabilitiesImpl();
-     
+
 
     /**
-     *  <p>The <code>DocumentSerializer</code> is used to convert 
-     *  from the OpenOffice.org XML Writer <code>Document</code> format 
+     *  <p>The <code>DocumentSerializer</code> is used to convert
+     *  from the OpenOffice.org XML Writer <code>Document</code> format
      *  to the Pocket Word <code>Document</code> format.</p>
      *
      *  <p>The <code>ConvertData</code> object is passed along to the
@@ -83,11 +83,11 @@ public final class PluginFactoryImpl extends SxwPluginFactory
      *               as input.
      *
      *  @return  A <code>DocumentSerializer</code> object.
-     */   
+     */
     public DocumentSerializer createDocumentSerializer(Document doc) {
         return new DocumentSerializerImpl(doc);
     }
-        
+
 
     /**
      *  <p>The <code>DocumentDeserializer</code> is used to convert
@@ -110,12 +110,12 @@ public final class PluginFactoryImpl extends SxwPluginFactory
     public DocumentDeserializer createDocumentDeserializer(ConvertData cd) {
         return new DocumentDeserializerImpl(cd);
     }
-    
-    
+
+
     /**
      *  <p>Create a <code>Document</code> object that corresponds to
      *  the Pocket Word data passed in via the <code>InputStream</code>
-     *  object.  
+     *  object.
      *
      *  <p>This method will read from the given <code>InputStream</code>
      *  object.  The returned <code>Document</code> object will contain
@@ -125,7 +125,7 @@ public final class PluginFactoryImpl extends SxwPluginFactory
      *  <code>DocumentMerger</code> object.</p>
      *
      *  @param  name  The <code>Document</code> name.
-     *  @param  is    <code>InputStream</code> object corresponding 
+     *  @param  is    <code>InputStream</code> object corresponding
      *                to the <code>Document</code>.
      *
      *  @return  A <code>Document</code> object representing the
@@ -134,12 +134,12 @@ public final class PluginFactoryImpl extends SxwPluginFactory
      *  @throws   IOException   If any I/O error occurs.
      */
 
-    public Document createDeviceDocument(String name, InputStream is) 
+    public Document createDeviceDocument(String name, InputStream is)
             throws IOException {
         PocketWordDocument pwd = new PocketWordDocument(name);
         pwd.read(is);
         return pwd;
-    }    
+    }
 
      /**
      *  Returns an instance of <code>DocumentMergerImpl</code>,
@@ -150,7 +150,7 @@ public final class PluginFactoryImpl extends SxwPluginFactory
      *
      *  @return  A DocumentMergerImpl object.
      */
-    public DocumentMerger createDocumentMerger(Document doc) {  
+    public DocumentMerger createDocumentMerger(Document doc) {
 	ConverterCapabilities cc = converterCap;
         DocumentMergerImpl merger = new DocumentMergerImpl(doc, cc);
         return merger;
