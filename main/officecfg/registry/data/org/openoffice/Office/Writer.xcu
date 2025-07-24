@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--***********************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -8,16 +8,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  ***********************************************************-->
 
 
@@ -58,12 +58,12 @@
           <node oor:name="Settings">
             <prop oor:name="Category">
               <value xml:lang="en-US">Table</value>
-              
+
             </prop>
             <prop oor:name="CaptionText">
               <value xml:lang="en-US">: </value>
-              
-              
+
+
             </prop>
           </node>
         </node>
@@ -71,12 +71,12 @@
           <node oor:name="Settings">
             <prop oor:name="Category">
               <value xml:lang="en-US">Text</value>
-              
+
             </prop>
             <prop oor:name="CaptionText">
               <value xml:lang="en-US">: </value>
-              
-              
+
+
             </prop>
           </node>
         </node>
@@ -84,12 +84,12 @@
           <node oor:name="Settings">
             <prop oor:name="Category">
               <value xml:lang="en-US">Illustration</value>
-              
+
             </prop>
             <prop oor:name="CaptionText">
               <value xml:lang="en-US">: </value>
-              
-              
+
+
             </prop>
           </node>
         </node>
@@ -99,12 +99,12 @@
           <node oor:name="Settings">
             <prop oor:name="Category">
               <value xml:lang="en-US">Illustration</value>
-              
+
             </prop>
             <prop oor:name="CaptionText">
               <value xml:lang="en-US">: </value>
-              
-              
+
+
             </prop>
           </node>
         </node>
@@ -112,12 +112,12 @@
           <node oor:name="Settings">
             <prop oor:name="Category">
               <value xml:lang="en-US">Illustration</value>
-              
+
             </prop>
             <prop oor:name="CaptionText">
               <value xml:lang="en-US">: </value>
-              
-              
+
+
             </prop>
           </node>
         </node>
@@ -125,12 +125,12 @@
           <node oor:name="Settings">
             <prop oor:name="Category">
               <value xml:lang="en-US">Illustration</value>
-              
+
             </prop>
             <prop oor:name="CaptionText">
               <value xml:lang="en-US">: </value>
-              
-              
+
+
             </prop>
           </node>
         </node>
@@ -138,12 +138,12 @@
           <node oor:name="Settings">
             <prop oor:name="Category">
               <value xml:lang="en-US">Illustration</value>
-              
+
             </prop>
             <prop oor:name="CaptionText">
               <value xml:lang="en-US">: </value>
-              
-              
+
+
             </prop>
           </node>
         </node>
@@ -151,12 +151,12 @@
           <node oor:name="Settings">
             <prop oor:name="Category">
               <value xml:lang="en-US">Illustration</value>
-              
+
             </prop>
             <prop oor:name="CaptionText">
               <value xml:lang="en-US">: </value>
-              
-              
+
+
             </prop>
           </node>
         </node>
@@ -164,12 +164,12 @@
           <node oor:name="Settings">
             <prop oor:name="Category">
               <value xml:lang="en-US">Illustration</value>
-              
+
             </prop>
             <prop oor:name="CaptionText">
               <value xml:lang="en-US">: </value>
-              
-              
+
+
             </prop>
           </node>
         </node>
@@ -177,12 +177,12 @@
           <node oor:name="Settings">
             <prop oor:name="Category">
               <value xml:lang="en-US">Illustration</value>
-              
+
             </prop>
             <prop oor:name="CaptionText">
               <value xml:lang="en-US">: </value>
-              
-              
+
+
             </prop>
           </node>
         </node>
@@ -612,7 +612,7 @@
     </prop>
     <prop oor:name="PrintCommunicationType" oor:type="xs:boolean">
      <value>true</value>
-    </prop>        
+    </prop>
     <prop oor:name="ReceiverAddressType" oor:type="xs:int">
      <value>1</value>
     </prop>
@@ -636,7 +636,7 @@
     </prop>
     <prop oor:name="SenderFax" oor:type="xs:string">
      <value/>
-    </prop>    
+    </prop>
     <prop oor:name="Style" oor:type="xs:int">
      <value>0</value>
     </prop>
@@ -693,7 +693,7 @@
     <prop oor:name="ShowCalledBy">
       <value>true</value>
     </prop>
-    <prop oor:name="ShowAttendees"> 
+    <prop oor:name="ShowAttendees">
       <value>true</value>
     </prop>
     <node oor:name="Topics"/>
