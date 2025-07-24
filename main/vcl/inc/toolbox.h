@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -66,7 +66,7 @@ struct ImplToolItem
 	Rectangle			maRect;
 	Rectangle			maCalcRect;
     // the overall horizontal item size, including one or more of [image size + textlength + dropdown arrow]
-    Size                maItemSize;     
+    Size                maItemSize;
 	long				mnSepSize;
     long                mnDropDownArrowWidth;
 	ToolBoxItemType 	meType;
@@ -97,7 +97,7 @@ struct ImplToolItem
     // the default size is the precomputed size for standard items
     // ie those that are just ordinary buttons (no windows or text etc.)
     // bCheckMaxWidth indicates that item windows must not exceed maxWidth in which case they will be painted as buttons
-    Size                GetSize( sal_Bool bHorz, sal_Bool bCheckMaxWidth, long maxWidth, const Size& rDefaultSize );  
+    Size                GetSize( sal_Bool bHorz, sal_Bool bCheckMaxWidth, long maxWidth, const Size& rDefaultSize );
 
     // only useful for buttons: returns if the text or image part or both can be drawn according to current button drawing style
     void DetermineButtonDrawStyle( ButtonType eButtonType, sal_Bool& rbImage, sal_Bool& rbText ) const;
@@ -147,14 +147,14 @@ struct ImplToolBoxPrivateData
     sal_uIntPtr       mnEventId;
 
     // called when menu button is clicked and before the popup menu is executed
-    Link        maMenuButtonHdl; 
+    Link        maMenuButtonHdl;
 
     // a dummy item representing the custom menu button
     ImplToolItem   maMenubuttonItem;
     long           mnMenuButtonWidth;
-    
+
     Wallpaper   maDisplayBackground;
-    
+
     // support for highcontrast
     vcl::IImageListProvider* mpImageListProvider;
     vcl::ImageListType       meImageListType;

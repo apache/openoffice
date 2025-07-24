@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -64,7 +64,7 @@ typedef struct _uno_Any
 
 /** Assign an any with a given value. Interfaces are acquired or released by the given callback
     functions.
-    
+
 	@param pDest			pointer memory of destination any
 	@param pSource			pointer to source value; defaults (0) to default constructed value
 	@param pTypeDescr		type description of value; defaults (0) to void
@@ -80,7 +80,7 @@ void SAL_CALL uno_any_assign(
 	SAL_THROW_EXTERN_C();
 /** Assign an any with a given value. Interfaces are acquired or released by the given callback
     functions.
-    
+
 	@param pDest			pointer memory of destination any
 	@param pSource			pointer to source value; defaults (0) to default constructed value
 	@param pTypeDescr		type description of value; defaults (0) to void
@@ -96,7 +96,7 @@ void SAL_CALL uno_type_any_assign(
 	SAL_THROW_EXTERN_C();
 
 /** Constructs an any with a given value. Interfaces are acquired by the given callback function.
-    
+
 	@param pDest			pointer memory of destination any
 	@param pSource			pointer to source value; defaults (0) to default constructed value
 	@param pTypeDescr		type description of value; defaults (0) to void
@@ -109,7 +109,7 @@ void SAL_CALL uno_any_construct(
 	uno_AcquireFunc acquire )
 	SAL_THROW_EXTERN_C();
 /** Constructs an any with a given value. Interfaces are acquired by the given callback function.
-	
+
 	@param pDest			pointer memory of destination any
 	@param pSource			pointer to source value; defaults (0) to default constructed value
 	@param pType			type of value; defaults (0) to void
@@ -123,7 +123,7 @@ void SAL_CALL uno_type_any_construct(
 	SAL_THROW_EXTERN_C();
 
 /** Constructs an any with a given value and converts/ maps interfaces.
-    
+
 	@param pDest			pointer memory of destination any
 	@param pSource			pointer to source value; defaults (0) to default constructed value
 	@param pTypeDescr		type description of value; defaults (0) to void
@@ -135,7 +135,7 @@ void SAL_CALL uno_any_constructAndConvert(
 	struct _uno_Mapping * mapping )
 	SAL_THROW_EXTERN_C();
 /** Constructs an any with a given value and converts/ maps interfaces.
-    
+
 	@param pDest			pointer memory of destination any
 	@param pSource			pointer to source value; defaults (0) to default constructed value
 	@param pType			type of value; defaults (0) to void
@@ -148,7 +148,7 @@ void SAL_CALL uno_type_any_constructAndConvert(
 	SAL_THROW_EXTERN_C();
 
 /** Destructs an any.
-    
+
 	@param pValue			pointer to any
 	@param release			function called each time an interface needs to be released;
                             defaults (0) to uno
@@ -158,7 +158,7 @@ void SAL_CALL uno_any_destruct(
 	SAL_THROW_EXTERN_C();
 
 /** Sets value to void.
-    
+
 	@param pValue			pointer to any
 	@param release			function called each time an interface needs to be released;
                             defaults (0) to uno

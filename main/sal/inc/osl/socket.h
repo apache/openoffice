@@ -38,7 +38,7 @@ extern "C" {
 #define OSL_INVALID_IPX_SOCKET_NO	0xffffffff
 
 /**@HTML
-   
+
 */
 
 /**
@@ -49,7 +49,7 @@ typedef struct oslSocketAddrImpl * oslSocketAddr;
 /**
 	Represents the address-family of a socket
 */
-typedef enum {	
+typedef enum {
 	osl_Socket_FamilyInet,  	/* IP */
 	osl_Socket_FamilyIpx,	  	/* Novell IPX/SPX */
 	osl_Socket_FamilyInvalid,	/* always last entry in enum! */
@@ -93,7 +93,7 @@ typedef enum {
 	osl_Socket_OptionKeepAlive,
 	osl_Socket_OptionDontRoute,
 	osl_Socket_OptionBroadcast,
-	osl_Socket_OptionUseLoopback,	
+	osl_Socket_OptionUseLoopback,
 	osl_Socket_OptionLinger,
 	osl_Socket_OptionOOBinLine,
 	osl_Socket_OptionSndBuf,
@@ -107,7 +107,7 @@ typedef enum {
 	osl_Socket_OptionTcpNoDelay,
 	osl_Socket_OptionInvalid,		/* always last entry in enum! */
 	osl_Socket_Option_FORCE_EQUAL_SIZE = SAL_MAX_ENUM
-} oslSocketOption;	
+} oslSocketOption;
 
 /**
 	Represents the different socket-option levels
@@ -313,7 +313,7 @@ oslSocketResult SAL_CALL osl_setAddrOfSocketAddr( oslSocketAddr Addr, sal_Sequen
 	@return <code>osl_Socket_Ok</code> or <code>osl_Socket_Error</code>
  */
 oslSocketResult SAL_CALL osl_getAddrOfSocketAddr( oslSocketAddr Addr, sal_Sequence **ppByteSeq );
-	
+
 /*
 	Opaque datatype HostAddr.
 */
@@ -402,7 +402,7 @@ void SAL_CALL osl_acquireSocket( oslSocket Socket );
 	is destroyed and becomes invalid.
  */
 void SAL_CALL osl_releaseSocket( oslSocket Socket );
-	
+
 /** Create a socket of the specified Family and Type. The semantic of
 	the Protocol parameter depends on the given family and type.
 	@return 0 if socket could not be created, otherwise you get a handle
@@ -442,7 +442,7 @@ sal_Bool SAL_CALL osl_bindAddrToSocket(oslSocket Socket,
     @param Socket [in] a bound socket.
     @param Addr [in] the peer address.
 	@param pTimeout Timeout value or NULL for blocking.
-    
+
 	@return <code>osl_Socket_Ok</code> on successful connection,
 	        <code>osl_Socket_TimedOut</code> if operation timed out,
             <code>osl_Socket_Interrupted</code> if operation was interrupted
@@ -517,7 +517,7 @@ sal_Int32 SAL_CALL osl_receiveSocket(oslSocket Socket,
 	<li><code>osl_Socket_MsgDontRoute</code>
 	<li><code>osl_Socket_MsgMaxIOVLen</code>
 	</ul>
-	
+
 	@return the number of received bytes.
 */
 sal_Int32 SAL_CALL osl_receiveFromSocket(oslSocket Socket,
@@ -528,7 +528,7 @@ sal_Int32 SAL_CALL osl_receiveFromSocket(oslSocket Socket,
 
 /** Tries to send BytesToSend data from the connected socket,
 	if no error occurs.
-	
+
 	@param Socket [in] A connected socket.
     @param pBuffer [in] Points to a buffer that contains the send-data.
 	@param BytesToSend [in] The number of bytes to send. pBuffer must have at least
@@ -581,15 +581,15 @@ sal_Int32 SAL_CALL osl_sendToSocket(oslSocket Socket,
 					     oslSocketMsgFlag Flag);
 
 /** Checks if read operations will block.
-	
+
 	You can specify a timeout-value in seconds/microseconds that denotes
 	how long the operation will block if the Socket is not ready.
 
 	@return <code>sal_True</code> if read operations (recv, recvFrom, accept) on the Socket
 	will NOT block; <code>sal_False</code> if it would block or if an error occurred.
-	
+
 	@param Socket the Socket to perfom the operation on.
-	@param pTimeout if NULL, the operation will block without a timeout. 
+	@param pTimeout if NULL, the operation will block without a timeout.
 */
 sal_Bool SAL_CALL osl_isReceiveReady(oslSocket Socket, const TimeValue* pTimeout);
 
@@ -598,7 +598,7 @@ sal_Bool SAL_CALL osl_isReceiveReady(oslSocket Socket, const TimeValue* pTimeout
 	how long the operation will block if the Socket is not ready.
 	@return <code>sal_True</code> if send operations (send, sendTo) on the Socket
 	will NOT block; <code>sal_False</code> if it would block or if an error occurred.
-	
+
 	@param Socket the Socket to perfom the operation on.
 	@param pTimeout if NULL, the operation will block without a timeout. Otherwise
 	the time define by timeout value.
@@ -610,9 +610,9 @@ sal_Bool SAL_CALL osl_isSendReady(oslSocket Socket, const TimeValue* pTimeout);
 	how long the operation will block if the Socket has no pending OOB data.
 	@return <code>sal_True</code> if OOB-request operations (recv with appropriate flags)
 	on the Socket will NOT block; <code>sal_False</code> if it would block or if an error occurred.
-	
+
 	@param Socket the Socket to perfom the operation on.
-	@param pTimeout if NULL, the operation will block without a timeout. 
+	@param pTimeout if NULL, the operation will block without a timeout.
 */
 sal_Bool SAL_CALL osl_isExceptionPending(oslSocket Socket, const TimeValue* pTimeout);
 
@@ -638,60 +638,60 @@ sal_Bool SAL_CALL osl_shutdownSocket(oslSocket Socket,
 	<li> osl_sol_socket:	Socket Level
 	<li> osl_sol_tcp:		Level of Transmission Control Protocol
 	</ul>
-	
+
 	@param Option denotes the option to query.
 	Valid values (depending on the Level) are:
 	<ul>
 	<li> <code>osl_Socket_Option_Debug</code><br>
 	(sal_Bool) Socket debug flag 1 = enabled, 0 = disabled.
-			
+
 	<li> <code>osl_Socket_OptionAcceptConn</code><br>
 	<li> <code>osl_Socket_OptionReuseAddr</code><br>
 	(sal_Bool) Allows the socket to be bound to an address that is
 	already in use.
 	1 = multiple bound allowed, 0 = no multiple bounds allowed
-			  
+
 	<li><code>osl_Socket_OptionKeepAlive</code><br>
 	(sal_Bool) Keepalive packets are sent by the underlying socket.
 	1 = enabled, 0 = disabled
-			  
+
 	<li><code>osl_Socket_OptionDontRoute</code><br>
 	(sal_Bool) Do not route: send directly to interface.
 	1 = do not route , 0 = routing possible
-			   
+
 	<li><code>osl_Socket_OptionBroadcast</code><br>
-	(sal_Bool) Transmission of broadcast messages are allowed on the socket. 
+	(sal_Bool) Transmission of broadcast messages are allowed on the socket.
 	1 = transmission allowed, 0 = transmission disallowed
-			   
+
 	<li><code>osl_Socket_OptionUseLoopback</code><br>
 
 	<li><code>osl_Socket_OptionLinger</code><br>
 	(sal_Int32) Linger on close if unsent data is present.
 	0 = linger is off, > 0  = timeout in seconds.
-			  
+
 	<li><code>osl_Socket_OptionOOBinLine</code><br>
-			  
+
 
 	<li><code>osl_Socket_OptionSndBuf</code><br>
 	(sal_Int32) Size of the send buffer in bytes. Data is sent after
 	SndTimeo or when the buffer is full. This allows faster writing
 	to the socket.
-			
+
 	<li><code>osl_Socket_OptionRcvBuf</code><br>
 	(sal_Int32) Size of the receive buffer in bytes. Data is sent after
 	SndTimeo or when the buffer is full. This allows faster writing
 	to the socket and larger packet sizes.
-			
+
 	<li><code>osl_Socket_OptionSndLowat</code><br>
-			
+
 	<li><code>osl_Socket_OptionRcvLowat</code><br>
-			
+
 	<li><code>osl_Socket_OptionSndTimeo</code><br>
 	(sal_Int32) Data is sent after this timeout. This allows gathering
 	of data to send larger packages but increases latency times.
-			
+
 	<li><code>osl_Socket_OptionRcvTimeo</code><br>
-			
+
 	<li><code>osl_Socket_OptionError</code><br>
 	<li><code>osl_Socket_OptionType</code><br>
 
@@ -699,7 +699,7 @@ sal_Bool SAL_CALL osl_shutdownSocket(oslSocket Socket,
 	Disables the Nagle algorithm for send coalescing. (Do not
 	collect data until a packet is full, instead send immediately.
 	This increases network traffic but might improve latency-times.)
-	1 = disables the algorithm, 0 = keeps it enabled. 
+	1 = disables the algorithm, 0 = keeps it enabled.
 	</ul>
 	If not above mentioned otherwise, the options are only valid for
 	level <code>osl_Socket_LevelSocket</code>.
@@ -729,10 +729,10 @@ sal_Int32 SAL_CALL osl_getSocketOption(oslSocket            Socket,
 	<li> osl_sol_socket:	Socket Level
 	<li> osl_sol_tcp:		Level of Transmission Control Protocol
 	</ul>
-	
+
 	@param Option denotes the option to modify. See osl_setSocketOption() for more
 	details.
-	
+
 	@param pBuffer Pointer to a Buffer which contains the attribute-value.
 
 	@param BufferSize contains the length of the Buffer.
@@ -771,7 +771,7 @@ sal_Bool SAL_CALL osl_isNonBlockingMode(oslSocket Socket);
 	<li> osl_Socket_TypeSeqPacket
 	<li> osl_invalid_SocketType, if an error occurred
 	</ul>
-	
+
 */
 oslSocketType SAL_CALL osl_getSocketType(oslSocket Socket);
 
@@ -848,23 +848,23 @@ sal_Int32 SAL_CALL osl_demultiplexSocketEvents(oslSocketSet IncomingSet,
  */
 void SAL_CALL osl_closeSocket(oslSocket Socket);
 
-	
+
 /** Retrieves n bytes from the stream and copies them into pBuffer.
-	The function avoids incomplete reads due to packet boundaries.		
+	The function avoids incomplete reads due to packet boundaries.
 	@param pBuffer receives the read data.
 	@param n the number of bytes to read. pBuffer must be large enough
 	to hold the n bytes!
 	@return	the number of read bytes. The number will only be smaller than
-	n if an exceptional condition (e.g. connection closed) occurs. 
+	n if an exceptional condition (e.g. connection closed) occurs.
 */
 sal_Int32 SAL_CALL osl_readSocket( oslSocket Socket, void *pBuffer, sal_Int32 nSize );
 
-/** Writes n bytes from pBuffer to the stream. The method avoids 
+/** Writes n bytes from pBuffer to the stream. The method avoids
 	incomplete writes due to packet boundaries.
 	@param pBuffer contains the data to be written.
 	@param n the number of bytes to write.
 	@return the number of written bytes. The number will only be smaller than
-	n if an exceptional condition (e.g. connection closed) occurs.				
+	n if an exceptional condition (e.g. connection closed) occurs.
 */
 sal_Int32 SAL_CALL osl_writeSocket( oslSocket Socket, const void *pBuffer, sal_Int32 nSize );
 

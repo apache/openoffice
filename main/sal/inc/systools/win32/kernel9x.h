@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -33,7 +33,7 @@ extern "C" {
 
 //------------------------------------------------------------------------
 // undefine the macros defined in the winbase.h file in order to avoid
-// warnings because of multiple defines 
+// warnings because of multiple defines
 //------------------------------------------------------------------------
 
 #ifdef LoadLibraryW
@@ -160,7 +160,7 @@ KERNEL9X_API HMODULE (WINAPI *lpfnLoadLibraryExW ) (
 KERNEL9X_API DWORD (WINAPI *lpfnGetModuleFileNameW ) (
 	HMODULE hModule,    // handle to module
 	LPWSTR lpFilename,  // file name of module
-	DWORD nSize         // size of buffer 
+	DWORD nSize         // size of buffer
 );
 
 KERNEL9X_API DWORD (WINAPI *lpfnGetLogicalDriveStringsW ) (
@@ -235,22 +235,22 @@ KERNEL9X_API BOOL ( WINAPI * lpfnCreateDirectoryExW ) (
 KERNEL9X_API DWORD ( WINAPI * lpfnGetLongPathNameW ) (
   LPCWSTR lpszShortPath, // file name
   LPWSTR lpszLongPath,   // path buffer
-  DWORD cchBuffer        // size of path buffer 
+  DWORD cchBuffer        // size of path buffer
 );
 
 // GetCanonicalPath is a tool function with no exact counterpart
-// in the win32 api; we use nevertheless a function pointer 
+// in the win32 api; we use nevertheless a function pointer
 // because every variable etc. must root in the Kernel9x.lib else
 // we loose our AutoSystoolInit object during linking
 KERNEL9X_API DWORD ( WINAPI * lpfnGetCanonicalPathW ) (
 	LPCWSTR lpszPath,			// file name
 	LPWSTR lpszCanonicalPath,	// path buffer
-	DWORD cchBuffer				// size of path buffer 
+	DWORD cchBuffer				// size of path buffer
 );
 
 KERNEL9X_API int ( WINAPI* lpfnGetLocaleInfoW ) (
     LCID Locale,        // locale identifier
-    LCTYPE LCType,      // information type 
+    LCTYPE LCType,      // information type
     LPWSTR lpLCData,    // information buffer
     int cchData         // size of buffer
 );
@@ -358,7 +358,7 @@ KERNEL9X_API BOOL (WINAPI *lpfnGetDiskFreeSpaceExW)(
 #define GetFullPathNameW			lpfnGetFullPathNameW
 
 #define GetCanonicalPath			lpfnGetCanonicalPathW
-#define GetLocaleInfoW              lpfnGetLocaleInfoW      
+#define GetLocaleInfoW              lpfnGetLocaleInfoW
 
 #define CreateProcessW              lpfnCreateProcessW
 #define CreateProcessAsUserW        lpfnCreateProcessAsUserW
