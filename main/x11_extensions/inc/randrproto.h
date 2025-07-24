@@ -18,7 +18,7 @@
  * IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS, IN NO EVENT SHALL COMPAQ
  * BE LIABLE FOR ANY SPECIAL, INDIRECT OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
  * WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION
- * OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF OR IN 
+ * OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF OR IN
  * CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
  *
  * Author:  Jim Gettys, Hewlett-Packard Company, Inc.
@@ -59,7 +59,7 @@ typedef struct {
 } xScreenSizes;
 #define sz_xScreenSizes 8
 
-/* 
+/*
  * requests and replies
  */
 
@@ -94,7 +94,7 @@ typedef struct {
 } xRRGetScreenInfoReq;
 #define sz_xRRGetScreenInfoReq   8
 
-/* 
+/*
  * the xRRScreenInfoReply structure is followed by:
  *
  * the size information
@@ -149,7 +149,7 @@ typedef struct {
     CARD8   status;
     CARD16  sequenceNumber B16;
     CARD32  length B32;
-    Time    newTimestamp B32;  
+    Time    newTimestamp B32;
     Time    newConfigTimestamp B32;
     Window  root;
     CARD16  subpixelOrder B16;

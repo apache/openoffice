@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -27,7 +27,7 @@
 #include <sal/types.h>
 #include <sal/udkversion.h>
 
-// version number of the library. This number is used for the load on call 
+// version number of the library. This number is used for the load on call
 // mechanism and must be modifed when the library will be upgraded to a new version.
 #define LIBRARY_VERSION SAL_UDK_MAJOR
 
@@ -38,12 +38,12 @@ typedef void* 		RegHandle;
 typedef void* 		RegKeyHandle;
 
 /// defines the type of a registry key value handle used in the C API.
-typedef void*		RegValue;	
+typedef void*		RegValue;
 
 /** defines the open/access mode of the registry.
 
     Two modes are valid:
-    -REG_READONLY    allows readonly access 
+    -REG_READONLY    allows readonly access
     -REG_READWRITE   allows read and write access
  */
 typedef sal_uInt16	RegAccessMode;
@@ -54,7 +54,7 @@ typedef sal_uInt16	RegAccessMode;
 #define REG_READWRITE      	0x0002
 
 /** defines the type of a registry key.
-    
+
     The registry differs between normal keys which can contain subkeys or
     a value and link keys which navigate over the linktarget to an existing
     other key (which are no longer supported).
@@ -68,13 +68,13 @@ enum RegKeyType
 };
 
 /** defines the type of a key value.
-    
+
     A registry key can contain a value which has one of seven different types.
     Three simple types (long, ascii and unicode string) and a list type of
     these simple types. Furthermore a binary type which provides the possibility
     to define own data structures and store these types in the registry. The UNO
-    core reflection data is stored as a binary blob in the type registry. 
- */    
+    core reflection data is stored as a binary blob in the type registry.
+ */
 enum RegValueType
 {
 	/// The key has no value or the value type is unknown.
@@ -83,7 +83,7 @@ enum RegValueType
 	RG_VALUETYPE_LONG,
 	/// The key has a value of type ascii string
 	RG_VALUETYPE_STRING,
-	/// The key has a value of type unicode string 
+	/// The key has a value of type unicode string
 	RG_VALUETYPE_UNICODE,
 	/// The key has a value of type binary
 	RG_VALUETYPE_BINARY,
@@ -111,7 +111,7 @@ enum RegError
 	REG_REGISTRY_READONLY,
 	/// destroy a registry failed. There are may be any open keys.
 	REG_DESTROY_REGISTRY_FAILED,
-	/** registry cannot be opened with readwrite access because the registry is already 
+	/** registry cannot be opened with readwrite access because the registry is already
 		open with readwrite access anywhere.
 	*/
 	REG_CANNOT_OPEN_FOR_READWRITE,
@@ -126,7 +126,7 @@ enum RegError
 	REG_KEY_NOT_EXISTS,
 	///	the key with the specified keyname cannot be created.
 	REG_CREATE_KEY_FAILED,
-	/// the specified key cannot be deleted. Maybe an open key handle exists to this key. 
+	/// the specified key cannot be deleted. Maybe an open key handle exists to this key.
 	REG_DELETE_KEY_FAILED,
 	/** the keyname is invalid. This error will return if the keyname
 		is NULL but should not be NULL in the context of a called function.
@@ -165,7 +165,7 @@ enum RegError
 	REG_INVALID_LINKTARGET,
 	/// the link target points to a nonexisting key (no longer used).
 	REG_LINKTARGET_NOT_EXIST,
-	/// the reserved buffer for the resolved keyname is to small. 
+	/// the reserved buffer for the resolved keyname is to small.
 	REG_BUFFERSIZE_TOSMALL
 };
 

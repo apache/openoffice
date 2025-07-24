@@ -52,11 +52,11 @@ in this Software without prior written authorization from the X Consortium.
 #include <sys/stat.h>
 
 #ifndef S_IFDIR
-#define        S_IFDIR  0040000 
+#define        S_IFDIR  0040000
 #endif
 
 #ifndef S_IFREG
-#define        S_IFREG  0100000 
+#define        S_IFREG  0100000
 #endif
 
 #define MAXDEFINES	2048
@@ -96,7 +96,7 @@ in this Software without prior written authorization from the X Consortium.
 extern int	_debugmask;
 /*
  * debug levels are:
- * 
+ *
  *     0	show ifn*(def)*,endif
  *     1	trace defined/!defined
  *     2	show #include
@@ -168,7 +168,7 @@ struct symhash *hash_copy( struct symhash *symbols );
 void hash_free( struct symhash *symbols );
 void freefile( struct filepointer * fp );
 int find_includes(struct filepointer *filep, struct inclist *file,
-    struct inclist *file_red, int recursion, boolean failOK, 
+    struct inclist *file_red, int recursion, boolean failOK,
     struct IncludesCollection* incCollection, struct symhash *symbols);
 void included_by(register struct inclist *ip,
     register struct inclist * newfile);

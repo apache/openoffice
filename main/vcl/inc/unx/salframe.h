@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -58,14 +58,14 @@ class VCLPLUG_GEN_PUBLIC X11SalFrame : public SalFrame
     friend class vcl_sal::WMAdaptor;
     friend class vcl_sal::NetWMAdaptor;
     friend class vcl_sal::GnomeWMAdaptor;
-    
+
     static X11SalFrame* s_pSaveYourselfFrame;
-                                
+
     X11SalFrame*	mpParent;            // pointer to parent frame
 	                                // which should never obscur this frame
     bool			mbTransientForRoot;
     std::list< X11SalFrame* > maChildren;         // List of child frames
-    
+
     SalDisplay	   *pDisplay_;
     int             m_nScreen;
     XLIB_Window		mhWindow;
@@ -74,15 +74,15 @@ class VCLPLUG_GEN_PUBLIC X11SalFrame : public SalFrame
     // window to fall back to when no longer in fullscreen mode
     XLIB_Window		mhStackingWindow;
     // window to listen for CirculateNotify events
-    
+
     Pixmap          mhBackgroundPixmap;
-    
+
     XLIB_Cursor		hCursor_;
     int				nCaptured_;			// is captured
-    
+
     X11SalGraphics	*pGraphics_;			// current frame graphics
     X11SalGraphics	*pFreeGraphics_;		// first free frame graphics
-    
+
     XLIB_Time		nReleaseTime_;		// timestamp of last key release
     sal_uInt16			nKeyCode_;			// last key code
     sal_uInt16			nKeyState_;			// last key state
@@ -90,7 +90,7 @@ class VCLPLUG_GEN_PUBLIC X11SalFrame : public SalFrame
     bool			mbKeyMenu;
     bool			mbSendExtKeyModChange;
     sal_uInt16			mnExtKeyMod;
-    
+
     int				nShowState_;		// show state
     int				nWidth_;			// client width
     int				nHeight_;			// client height
@@ -107,12 +107,12 @@ class VCLPLUG_GEN_PUBLIC X11SalFrame : public SalFrame
     int             m_nWorkArea;
     bool            m_bSetFocusOnMap;
 
-    
+
     int				nScreenSaversTimeout_;
     Rectangle		maPaintRegion;
 
     Timer			maAlwaysOnTopRaiseTimer;
-    
+
     // data for WMAdaptor
     int				meWindowType;
     int				mnDecorationFlags;
@@ -120,22 +120,22 @@ class VCLPLUG_GEN_PUBLIC X11SalFrame : public SalFrame
     bool			mbMaximizedHorz;
     bool			mbShaded;
     bool			mbFullScreen;
-    
+
     // icon id
     int			    mnIconID;
-    
+
     String          m_aTitle;
-    
+
     SystemChildData maSystemChildData;
-    
+
     SalI18N_InputContext *mpInputContext;
     Bool			mbInputFocus;
-    
+
     XRectangle*     m_pClipRectangles;
     int             m_nCurClipRect;
     int             m_nMaxClipRect;
-    
-    
+
+
     void			GetPosSize( Rectangle &rPosSize );
     void			SetSize   ( const Size      &rSize );
     void            Center();
@@ -144,10 +144,10 @@ class VCLPLUG_GEN_PUBLIC X11SalFrame : public SalFrame
     void			Maximize();
     void			Restore();
     void            SetWindowGravity (int nGravity ) const;
-    
+
     void			RestackChildren( XLIB_Window* pTopLevelWindows, int nTopLevelWindows );
     void			RestackChildren();
-    
+
     long			HandleKeyEvent		( XKeyEvent			*pEvent );
     long			HandleMouseEvent	( XEvent			*pEvent );
     long			HandleFocusEvent	( XFocusChangeEvent *pEvent );
@@ -158,14 +158,14 @@ class VCLPLUG_GEN_PUBLIC X11SalFrame : public SalFrame
     long			HandleStateEvent	( XPropertyEvent	*pEvent );
     long			HandleReparentEvent	( XReparentEvent	*pEvent );
     long			HandleClientMessage	( XClientMessageEvent*pEvent );
-    
+
     DECL_LINK( HandleAlwaysOnTopRaise, void* );
 
     void			passOnSaveYourSelf();
-    
+
     void            createNewWindow( XLIB_Window aParent, int nScreen = -1 );
     void            updateScreenNumber();
-    
+
     void            setXEmbedInfo();
     void            askForXEmbedFocus( sal_Int32 i_nTimeCode );
 public:
@@ -187,12 +187,12 @@ public:
 	long					ShutDown() const { return CallCallback( SALEVENT_SHUTDOWN, 0 ); }
 	long					Close() const { return CallCallback( SALEVENT_CLOSE, 0 ); }
           	sal_uIntPtr           GetStyle() const { return nStyle_; }
-	
+
 	inline	XLIB_Cursor		GetCursor() const { return hCursor_; }
 	inline	sal_Bool			IsCaptured() const { return nCaptured_ == 1; }
 #if !defined(__synchronous_extinput__)
     void 			HandleExtTextEvent (XClientMessageEvent *pEvent);
-    void			PostExtTextEvent (sal_uInt16 nExtTextEventType, 
+    void			PostExtTextEvent (sal_uInt16 nExtTextEventType,
                                       void *pExtTextEvent);
 #endif
     bool					IsOverrideRedirect() const;
@@ -204,14 +204,14 @@ public:
     void					setPosSize( const Rectangle& rRect ) { SetPosSize( rRect ); }
     bool					isMapped() const { return bMapped_; }
     bool                    hasFocus() const { return mbInputFocus; }
-    
+
     void                    beginUnicodeSequence();
     bool                    appendUnicodeSequence( sal_Unicode );
     bool                    endUnicodeSequence();
-    
+
     virtual SalGraphics*		GetGraphics();
     virtual void				ReleaseGraphics( SalGraphics* pGraphics );
-    
+
     // call with true to clear graphics (setting None as drawable)
     // call with false to setup graphics with window (GetWindow())
     virtual void                updateGraphics( bool bClear );
@@ -260,7 +260,7 @@ public:
     virtual void                SetBackgroundBitmap( SalBitmap* pBitmap );
 
     virtual void                SetScreenNumber( unsigned int );
-    
+
     // shaped system windows
     // set clip region to none (-> rectangular windows, normal state)
 	virtual void					ResetClipRegion();
