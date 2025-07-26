@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--***********************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -8,16 +8,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  ***********************************************************-->
 
 
@@ -143,11 +143,11 @@ Sub Main
 	DeleteAllSavedFiles()
 	DeleteAllLogFiles()
 	SetupWorkPath()
-	
+
 	if GetSystem (sWorkPath) = &quot;windows&quot; then
 		sWorkPath = ConvertPathToWin (sWorkPath)
 	end if
-	
+
 	LocalTestLog% = OpenLogDat( GetLogFileName( gCurrentDocTest ) )
 
 	gCurrentTestCase = cTestClosureSetupDoc
@@ -170,7 +170,7 @@ Sub Main
 	nPreserveFileHandle% = LocalTestLog%
 	Call Test_10er.Main
 	LocalTestLog% = nPreserveFileHandle%
-		
+
 	gCurrentDocTest = frmTestClosure
 	gCurrentTestCase = cTestClosureWriteStatus
 	if bShowTable then
@@ -202,7 +202,7 @@ MainError:
 		LogTestResult( &quot;testclosure &quot; + GetTestGlueDescription( gCurrentTestCase ), FALSE )
 		Close #LocalTestLog%
 		LocalTestLog = 0
-	End If	
+	End If
 End Sub
 
 Function GetTestGlueDescription( nTestCase as Integer )
@@ -277,44 +277,44 @@ Sub CreateStatusTable2
 	tableRows(cDBDelete  ) = &quot;delete&quot;
 	tableRows(cDBSeek ) = &quot;seek&quot;
 	tableRows(cDBClose ) = &quot;close&quot;
-	
+
 	dim tableRows2(2) as string
 	tableRows2(cEXTService ) = &quot;services&quot;
 	tableRows2(cEXTInstall ) = &quot;install&quot;
 	tableRows2(cEXTUninstall ) = &quot;uninstall&quot;
-	
+
 	dim tableRows3(1) as string
 	tableRows3(cTestClosureSetupDoc ) = &quot;setup test&quot;
 	tableRows3(cTestClosureWriteStatus ) = &quot;write test result&quot;
-	
+
 	aDoc = gOutputDoc
-	
+
 	xText = aDoc.Text
 	xCursor = xText.createTextCursor()
-	
+
 	xCursor.gotoStart(FALSE)
 	xCursor.GoRight (4, False)
 	SetParagraphBreak (xCursor)
 	SetParagraphBreak (xCursor)
 	xCursor.gotoEnd(FALSE)
-	
+
 	table = aDoc.createInstance(&quot;com.sun.star.text.TextTable&quot;)
 	table.initialize(7,6)
 	table.Name = &quot;StTab2&quot;
 	table.BackColor = cCoGrey
-	
+
 	xText.insertTextContent(xCursor, table, FALSE)
-	
+
 	for i% = LBound( tableHeaders ) to UBound( tableHeaders )
 		tableCell = table.getCellByPosition( i% + 1, 0 )
 		tableCell.String = tableHeaders(i%)
 	next i%
-	
+
 	for i% = LBound( tableRows ) to UBound( tableRows )
 		tableCell = table.getCellByPosition( 0, i% + 1 )
 	  tableCell.String=tableRows(i%)
 	next i%
-	
+
 	for i% = LBound( tableRows2 ) to UBound( tableRows2 )
 		tableCell = table.getCellByPosition( 2, i% + 1 )
 	  tableCell.String=tableRows2(i%)
@@ -355,8 +355,8 @@ Sub CreateDocState
 						xCell.insertTextContent( xCell, annotation, false )
 					End If
 				else
-					xCell.BackColor = cCoGrey	
-				end If	
+					xCell.BackColor = cCoGrey
+				end If
 			end If
 		next i%
 	next j%
@@ -376,7 +376,7 @@ Sub CreateSecondState
 		for i% = 1 to 6
 			tableCell = table.getCellByPosition( 2 * j + 1, i% )
 			tableCell.BackTransparent = False
-		  	
+
 			if gErrorState( stateIndex(j), i% - 1 ) = cLogTrue then
 				tableCell.BackColor = cCoGreen
 			else
@@ -390,8 +390,8 @@ Sub CreateSecondState
 						tableCell.insertTextContent( tableCell, annotation, false )
 					End If
 				else
-					tableCell.BackColor = cCoGrey	
-				end If	
+					tableCell.BackColor = cCoGrey
+				end If
   			end If
 		next i%
 	next j%
@@ -423,13 +423,13 @@ Function RecordTestCaseStatus( nAction as Integer, bState as Boolean, sFailureAn
 	Dim nState as integer
 	nStatusType = GetStatusType( gCurrentDocTest )
 	If nStatusType = cStNone then Exit Function
-	
+
   If ( gErrorState( nStatusType, nAction ) = cLogFalse ) Then
     &apos; don't overwrite a previous &quot;failed&quot; state for this test
     bState = FALSE
   End If
-	
-	if bState then 
+
+	if bState then
 		nState = cLogTrue
 	else
 		nState = cLogFalse
@@ -446,7 +446,7 @@ End Function
 
 Function GetStatusType (nDocType as Integer) as Integer
 	Select Case ( nDocType )
-		case frmWriter 
+		case frmWriter
 			GetStatusType = cStWriter &apos; text document
 		case frmCalc
 			GetStatusType = cStCalc &apos; spreadsheet document
@@ -470,7 +470,7 @@ Function GetStatusType (nDocType as Integer) as Integer
 			GetStatusType = cStExtension &apos;Extension
 		case else
 			GetStatusType = cStNone
-	end Select		
+	end Select
 end Function
 
 Sub SetParagraphBreak (aCursor as Object)
@@ -513,13 +513,13 @@ Sub SetGlobalOptionsDialog ()
 
     Const sLibName = cTest10Modul
     Const sDialogName = cOptionsDialogName
-    
+
     REM get library and input stream provider
     oLibContainer = DialogLibraries
-    
+
     REM load the library
     oLibContainer.loadLibrary( sLibName )
-    
+
     oLib = oLibContainer.getByName( sLibName )
     oInputStreamProvider = oLib.getByName( sDialogName )
 
@@ -536,9 +536,9 @@ Sub ShowOptionsDlg
 
     REM show the dialog
     gOptionsDialog.execute()
-    
+
    	&apos; jetzt läuft der Dialog, bis ein Button gedrückt wird
-   	
+
    	Select Case (gDlgState)
    		case cDlgOk
    			call SetOptions ()
@@ -546,7 +546,7 @@ Sub ShowOptionsDlg
    			call SetOptions ()
    			call StartTestByOptions ()
 	end Select
-   	
+
     gOptionsDialog.dispose()
 
 end Sub
@@ -560,9 +560,9 @@ Sub SetOptions
 	SetUserFieldState (cUserFieldTestHTML, -(gOptionsDialog.getControl(&quot;cbHTMLTest&quot;).getState), gOutputDoc)
 	SetUserFieldState (cUserFieldTestMath, -(gOptionsDialog.getControl(&quot;cbMathTest&quot;).getState), gOutputDoc)
 	SetUserFieldState (cUserFieldTestChart, -(gOptionsDialog.getControl(&quot;cbChartTest&quot;).getState), gOutputDoc)
-	SetUserFieldState (cUserFieldTestJava, -(gOptionsDialog.getControl(&quot;cbJavaTest&quot;).getState), gOutputDoc)	
-	SetUserFieldState (cUserFieldTestDatabase, -(gOptionsDialog.getControl(&quot;cbDatabaseTest&quot;).getState), gOutputDoc)	
-	SetUserFieldState (cUserFieldTestExtension, -(gOptionsDialog.getControl(&quot;cbExtensionTest&quot;).getState), gOutputDoc)	
+	SetUserFieldState (cUserFieldTestJava, -(gOptionsDialog.getControl(&quot;cbJavaTest&quot;).getState), gOutputDoc)
+	SetUserFieldState (cUserFieldTestDatabase, -(gOptionsDialog.getControl(&quot;cbDatabaseTest&quot;).getState), gOutputDoc)
+	SetUserFieldState (cUserFieldTestExtension, -(gOptionsDialog.getControl(&quot;cbExtensionTest&quot;).getState), gOutputDoc)
 	SetUserFieldState (cUserFieldTestOpenSaveXML, -(gOptionsDialog.getControl(&quot;cbSaveOpenXMLTest&quot;).getState), gOutputDoc)
 	SetUserFieldState (cUserFieldTestOpenSave8, -(gOptionsDialog.getControl(&quot;cbSaveOpen8Test&quot;).getState), gOutputDoc)
 	SetUserFieldState (cUserFieldTestTerminateAfterTest, -(gOptionsDialog.getControl(&quot;cbTerminateAfterTest&quot;).getState), gOutputDoc)
@@ -633,7 +633,7 @@ Sub StartTestByOptions
 		ClearDocFull (gOutputDoc)
 		gOutputDoc.dispose
 		&apos;StarDesktop.Terminate
-		
+
 		&apos;EnableReschedule( false )
 		&apos;DispatchSlot( 5300 )
 		stop
@@ -700,18 +700,18 @@ Sub DispatchSlot(SlotID as Integer)
 	oUrl.Complete = &quot;slot:&quot; &amp; CStr(SlotID)
 	oTrans.parsestrict(oUrl)
 
-	oDisp = StarDesktop.queryDispatch(oUrl, &quot;_self&quot;, 0)	
+	oDisp = StarDesktop.queryDispatch(oUrl, &quot;_self&quot;, 0)
 	oDisp.dispatch(oUrl, oArg())
 End Sub
 
 Sub LoadLibrary( LibName As String )
-	
+
 	dim args(1)
 	dim arg as new com.sun.star.beans.PropertyValue
 	arg.Name = &quot;LibraryName&quot;
 	arg.Value = LibName
 	args(0) = arg
-	
+
 	dim url as new com.sun.star.util.URL
 	dim trans as object
 	trans = createUnoService(&quot;com.sun.star.util.URLTransformer&quot; )
@@ -721,7 +721,7 @@ Sub LoadLibrary( LibName As String )
 	dim disp as object
 	disp = StarDesktop.currentFrame.queryDispatch( url, &quot;&quot;, 0 )
 	disp.dispatch( url, args() )
-	
+
 End Sub
 
 Sub ExecuteSlot( SlotNr As String, oDoc as Object )
@@ -729,14 +729,14 @@ Sub ExecuteSlot( SlotNr As String, oDoc as Object )
 	dim url as new com.sun.star.util.URL
 	dim trans as object
 	dim disp as object
-	
+
 	trans = createUnoService(&quot;com.sun.star.util.URLTransformer&quot; )
 	url.Complete = &quot;slot:&quot; + SlotNr
 	trans.parsestrict( url )
-	
+
 	disp = oDoc.CurrentController.Frame.queryDispatch( url, &quot;&quot;, 0 )
 	disp.dispatch( url, args() )
-	
+
 End Sub
 
 Sub DelAllUserFields (aDoc as Object)
@@ -744,7 +744,7 @@ Sub DelAllUserFields (aDoc as Object)
 	Dim aElements as Variant
 	Dim i%
 	Dim aFieldMasters, aFieldMaster as Object
-	Dim sElement$ 
+	Dim sElement$
 	aFieldMasters = aDoc.TextFieldMasters
 	aElements = aFieldMasters.ElementNames
 	for i = 0 to UBound(aElements)
@@ -753,7 +753,7 @@ Sub DelAllUserFields (aDoc as Object)
 			aFieldMaster = aFieldMasters.GetByName(sElement$)
 			aFieldMaster.Dispose
 		endif
-	next	
+	next
 end Sub
 
 Function GetUserFieldState (sName as String, aDoc as Object) as boolean
@@ -792,7 +792,7 @@ Function ReadUserField(sFieldName as String, aDoc as Object) as String
 		ReadUserField = aMasters.GetByName (cUnoUserField+cUnoSeparator+sFieldName).Content
 	else
 		ReadUserField = &quot;&quot;
-	end If	
+	end If
 End Function
 
 Sub WriteUserField(sValue as String, sFieldName as String, aDoc as Object, optional aCursor as Object)
@@ -800,10 +800,10 @@ Sub WriteUserField(sValue as String, sFieldName as String, aDoc as Object, optio
 	aMasters = aDoc.TextFieldMasters
 	if aMasters.HasByName (cUnoUserField+cUnoSeparator+sFieldName) then
 		aUserField = aMasters.GetByName (cUnoUserField+cUnoSeparator+sFieldName)
-	else	
+	else
 		aUserField = aDoc.CreateInstance (cUnoUserField)
 		aUserField.Name = sFieldName
-	end if	
+	end if
 	aUserField.Content = sValue
 End Sub
 
