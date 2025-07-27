@@ -41,7 +41,7 @@
 #define HELPWINSTYLE_BALLOON	1
 
 #define HELPTEXTMARGIN_QUICK	4
-#define HELPTEXTMARGIN_BALLOON	4
+#define HELPTEXTMARGIN_BALLOON	4 // same margin as quickhelp
 
 #define HELPDELAY_NORMAL		1
 #define HELPDELAY_SHORT 		2
@@ -398,7 +398,7 @@ HelpTextWindow::~HelpTextWindow()
 void HelpTextWindow::SetHelpText( const String& rHelpText )
 {
 	maHelpText = rHelpText;
-	if ( mnHelpWinStyle == HELPWINSTYLE_QUICK )
+	if ( mnHelpWinStyle == HELPWINSTYLE_QUICK && maHelpText.Len() < 100 )
 	{
 		Size aSize;
 		aSize.Height() = GetTextHeight();
@@ -465,7 +465,7 @@ void HelpTextWindow::Paint( const Rectangle& )
 	}
 
 	// paint text
-	if ( mnHelpWinStyle == HELPWINSTYLE_QUICK )
+	if ( mnHelpWinStyle == HELPWINSTYLE_QUICK && maHelpText.Len() < 100 )
 	{
 		if ( mnStyle & QUICKHELP_CTRLTEXT )
 			DrawCtrlText( maTextRect.TopLeft(), maHelpText );
@@ -486,7 +486,7 @@ void HelpTextWindow::Paint( const Rectangle& )
 	{
 		Size aSz = GetOutputSizePixel();
 		DrawRect( Rectangle( Point(), aSz ) );
-//		if ( mnHelpWinStyle == HELPWINSTYLE_BALLOON )
+//		if ( mnHelpWinStyle == HELPWINSTYLE_BALLOON ) // same border as quickhelp
 //		{
 //			aSz.Width() -= 2;
 //			aSz.Height() -= 2;
@@ -754,20 +754,20 @@ void ImplSetHelpWindowPos( Window* pHelpWin, sal_uInt16 nHelpWinStyle, sal_uInt1
 				aPos.Y() = devHelpArea.Bottom();
 		}
 
-		// Welche Richtung?
+		// Which direction?
 		if ( nStyle & QUICKHELP_LEFT )
 			;
 		else if ( nStyle & QUICKHELP_RIGHT )
 			aPos.X() -= aSz.Width();
 		else
-			aPos.X() -= aSz.Width()/2;
+			aPos.X() -= aSz.Width() / 2;
 
 		if ( nStyle & QUICKHELP_TOP )
 			;
 		else if ( nStyle & QUICKHELP_BOTTOM )
 			aPos.Y() -= aSz.Height();
 		else
-			aPos.Y() -= aSz.Height()/2;
+			aPos.Y() -= aSz.Height() / 2;
 	}
 
 	if ( aPos.X() < aScreenRect.Left() )
