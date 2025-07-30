@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -904,7 +904,7 @@ void SpellDialog::SetTitle_Impl(LanguageType nLang)
         if( pSpellErrorDescription && pSpellErrorDescription->sServiceName.getLength() )
         {
             bool bHighContrast = GetSettings().GetStyleSettings().GetHighContrastMode();
-            ::rtl::OUString sSuggestionImageUrl = 
+            ::rtl::OUString sSuggestionImageUrl =
                 SvtLinguConfig().GetSpellAndGrammarDialogImage( pSpellErrorDescription->sServiceName, bHighContrast );
             aVendorImageFI.SetImage( lcl_GetImageFromPngUrl( sSuggestionImageUrl ) );
             uno::Reference< lang::XServiceDisplayName > xDisplayName( pSpellErrorDescription->xGrammarChecker, uno::UNO_QUERY );
@@ -913,7 +913,7 @@ void SpellDialog::SetTitle_Impl(LanguageType nLang)
         }
         else
         {
-            bool bHighContrast = GetSettings().GetStyleSettings().GetHighContrastMode();            
+            bool bHighContrast = GetSettings().GetStyleSettings().GetHighContrastMode();
             aVendorImageFI.SetImage( bHighContrast ? aVendorImageHC : aVendorImage );
         }
 
@@ -1184,7 +1184,7 @@ bool SpellDialog::GetNextSentence_Impl(bool bUseSavedSentence, bool bRecheck)
     bool bRet = false;
     if(!bUseSavedSentence /*&& aSentenceED.IsModified()*/)
     {
-        //apply changes and ignored text parts 
+        //apply changes and ignored text parts
         rParent.ApplyChangedSentence(aSentenceED.CreateSpellPortions(true), bRecheck);
     }
     aSentenceED.ResetIgnoreErrorsAt();

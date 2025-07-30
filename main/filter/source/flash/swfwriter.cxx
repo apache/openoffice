@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -118,7 +118,7 @@ Writer::~Writer()
 void ImplCopySvStreamToXOutputStream( SvStream& rIn, Reference< XOutputStream > &xOut )
 {
 	sal_uInt32 nBufferSize = 64*1024;
-	
+
 	rIn.Seek( STREAM_SEEK_TO_END );
 	sal_uInt32 nSize = rIn.Tell();
 	rIn.Seek( STREAM_SEEK_TO_BEGIN );
@@ -244,7 +244,7 @@ void Writer::placeShape( sal_uInt16 nID, sal_uInt16 nDepth, sal_Int32 x, sal_Int
 
     // #i73264#
     const basegfx::B2DHomMatrix aMatrix(basegfx::tools::createTranslateB2DHomMatrix(
-        _Int16(static_cast<long>(map100thmm(x)*mnDocXScale)), 
+        _Int16(static_cast<long>(map100thmm(x)*mnDocXScale)),
         _Int16(static_cast<long>(map100thmm(y)*mnDocYScale))));
 	mpTag->addMatrix( aMatrix );		// transformation matrix
 
@@ -279,7 +279,7 @@ void Writer::moveShape( sal_uInt16 nDepth, sal_Int32 x, sal_Int32 y )
 
     // #i73264#
     const basegfx::B2DHomMatrix aMatrix(basegfx::tools::createTranslateB2DHomMatrix(
-        _Int16(static_cast<long>(map100thmm(x)*mnDocXScale)), 
+        _Int16(static_cast<long>(map100thmm(x)*mnDocXScale)),
         _Int16(static_cast<long>(map100thmm(y)*mnDocYScale))));
 	mpTag->addMatrix( aMatrix );		// transformation matrix
 
@@ -348,7 +348,7 @@ sal_uInt16 Writer::defineShape( const GDIMetaFile& rMtf, sal_Int16 x, sal_Int16 
 {
 	mpVDev->SetMapMode( rMtf.GetPrefMapMode() );
 	Impl_writeActions( rMtf );
-	
+
 	sal_uInt16 nId = 0;
 	sal_uInt16 iDepth = 1;
 	{
@@ -419,7 +419,7 @@ sal_uInt16 Writer::defineShape( const PolyPolygon& rPolyPoly, const FillStyle& r
 		if( rPoly.GetSize() )
 			Impl_addPolygon( aBits, rPoly, true );
 	}
-	
+
 	Impl_addEndShapeRecord( aBits );
 
 	mpTag->addBits( aBits );
@@ -464,7 +464,7 @@ sal_uInt16 Writer::defineShape( const PolyPolygon& rPolyPoly, sal_uInt16 nLineWi
 		if( rPoly.GetSize() )
 			Impl_addPolygon( aBits, rPoly, false );
 	}
-	
+
 	Impl_addEndShapeRecord( aBits );
 
 	mpTag->addBits( aBits );
@@ -514,7 +514,7 @@ sal_Bool Writer::streamSound( const char * filename )
 		int samples_per_frame = 22050 / 12; // AS: (samples/sec) / (frames/sec) = samples/frame
 		int mp3buffer_size = static_cast<int>(samples_per_frame*1.25 + 7200 + 7200);
 
-		
+
 		startTag(TAG_SOUNDSTREAMHEAD2);
 
 		mpTag->addUI8(2<<2 | 1<<1 | 0<<0);  // Preferred mixer format ??
@@ -543,7 +543,7 @@ sal_Bool Writer::streamSound( const char * filename )
 // mp3buffer_size (in bytes) = 1.25*num_samples + 7200.
 // num_samples = the number of PCM samples in each channel.  It is
 // not the sum of the number of samples in the L and R channels.
-// 
+//
 // The return code = number of bytes output in mp3buffer.  This can be 0.
 // If it is <0, an error occurred.
 
@@ -556,7 +556,7 @@ sal_Bool Writer::streamSound( const char * filename )
 
 			// AS: Since we're mono, left and right sample buffs are the same
 			//  ie, samplebuff (which is why we pass it twice).
-			int ret = lame_encode_buffer(m_lame_flags, sample_buff + samples_written, 
+			int ret = lame_encode_buffer(m_lame_flags, sample_buff + samples_written,
 											sample_buff + samples_written,
 											samples_to_write, mp3buffer, mp3buffer_size);
 

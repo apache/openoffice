@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -207,12 +207,12 @@ void GtkSalDisplay::monitorsChanged( GdkScreen* pScreen )
     /* Caution: since we support the _NET_WM_FULLSCREEN_MONITORS property now and
        the EWMH spec says, the index used for that needs to be that of the
        Xinerama extension, we need to ensure that the order of m_aXineramaScreens is actually intact.
-       
+
        gdk_screen_get_monitor_geometry however has a different sort order that has a default monitor number
        Xinerama returns the default monitor as 0.
        That means if we fill in the multiple montors vector from gdk, we'll get the wrong order unless
        the default monitor is incidentally the same (number 0).
-       
+
        Given that XRandR (which is what gdk_screen_get_monitor_geometry is based on) is
        supposed to replace Xinerama, this is bound to get a problem at some time again,
        unfortunately there does not currently seem to be a way to map the returns of xinerama to
@@ -221,7 +221,7 @@ void GtkSalDisplay::monitorsChanged( GdkScreen* pScreen )
     */
     InitXinerama();
     (void)pScreen;
-    
+
     #if 0
     if( pScreen )
     {
@@ -260,7 +260,7 @@ extern "C"
 int GtkSalDisplay::GetDefaultMonitorNumber() const
 {
     int n = 0;
-    
+
     // currently disabled, see remarks in monitorsChanged
 #if 0
     GdkScreen* pScreen = gdk_display_get_screen( m_pGdkDisplay, m_nDefaultScreen );
@@ -285,7 +285,7 @@ void GtkSalDisplay::initScreen( int nScreen ) const
     ScreenData& rSD = const_cast<ScreenData&>(m_aScreens[nScreen]);
     if( rSD.m_bInit )
         return;
-    
+
     // choose visual for screen
     SalDisplay::initScreen( nScreen );
     // now set a gdk default colormap matching the chosen visual to the screen
@@ -640,7 +640,7 @@ void GtkXLib::Init()
         rtl::OString aPrgName = rtl::OUStringToOString(aAppName, aEnc);
         g_set_prgname( aPrgName.getStr());
     }
-    
+
     // init gtk/gdk
     gtk_init_check( &nParams, &pCmdLineAry );
 
@@ -703,7 +703,7 @@ void GtkXLib::Init()
 	m_pGtkSalDisplay->SetKbdExtension( pKbdExtension );
 
     g_signal_connect( G_OBJECT(gdk_keymap_get_default()), "keys_changed", G_CALLBACK(signalKeysChanged), m_pGtkSalDisplay );
-    
+
     // add signal handler to notify screen size changes
     int nScreens = gdk_display_get_n_screens( pGdkDisp );
     for( int n = 0; n < nScreens; n++ )
@@ -767,7 +767,7 @@ void GtkXLib::StartTimer( sal_uLong nMS )
 	g_source_set_callback (m_pTimeout, call_timeoutFn,
 						   (gpointer) this, NULL);
 	g_source_attach (m_pTimeout, g_main_context_default ());
-    
+
     SalXLib::StartTimer( nMS );
 }
 
@@ -848,7 +848,7 @@ void GtkXLib::Yield( bool bWait, bool bHandleAllCurrentEvents )
      * another thread in in there. Having only one yielding thread actually dispatch
      * fits the vcl event model (see e.g. the generic plugin).
      */
-    
+
     bool bDispatchThread = false;
     gboolean wasEvent = FALSE;
     {
@@ -859,7 +859,7 @@ void GtkXLib::Yield( bool bWait, bool bHandleAllCurrentEvents )
         else if( ! bWait )
             return; // someone else is waiting already, return
 
-        
+
         if( bDispatchThread )
         {
             int nMaxEvents = bHandleAllCurrentEvents ? 100 : 1;

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -86,17 +86,17 @@ OUString resolver_getImplementationName()
 	}
 	return *pImplName;
 }
-	
+
 //==================================================================================================
 class ResolverImpl : public WeakImplHelper2< XServiceInfo, XUnoUrlResolver >
 {
 	Reference< XMultiComponentFactory > _xSMgr;
 	Reference< XComponentContext > _xCtx;
-	
+
 public:
 	ResolverImpl( const Reference< XComponentContext > & xSMgr );
 	virtual ~ResolverImpl();
-	
+
 	// XServiceInfo
 	virtual OUString SAL_CALL getImplementationName() throw(::com::sun::star::uno::RuntimeException);
 	virtual sal_Bool SAL_CALL supportsService( const OUString & rServiceName ) throw(::com::sun::star::uno::RuntimeException);
@@ -174,10 +174,10 @@ Reference< XInterface > ResolverImpl::resolve( const OUString & rUnoUrl )
 			OUString( RTL_CONSTASCII_USTRINGPARAM("com.sun.star.connection.Connector") ),
 			_xCtx ),
 		UNO_QUERY );
-	
+
 	if (! xConnector.is())
 		throw RuntimeException( OUString( RTL_CONSTASCII_USTRINGPARAM("no connector!" ) ), Reference< XInterface >() );
-	
+
 	Reference< XConnection > xConnection( xConnector->connect( aConnectDescr ) );
 
 	// As soon as singletons are ready, switch to singleton !
@@ -186,17 +186,17 @@ Reference< XInterface > ResolverImpl::resolve( const OUString & rUnoUrl )
 			OUString( RTL_CONSTASCII_USTRINGPARAM("com.sun.star.bridge.BridgeFactory") ),
 			_xCtx ),
 		UNO_QUERY );
-	
+
 	if (! xBridgeFactory.is())
 		throw RuntimeException( OUString( RTL_CONSTASCII_USTRINGPARAM("no bridge factory!" ) ), Reference< XInterface >() );
-	
+
 	// bridge
 	Reference< XBridge > xBridge( xBridgeFactory->createBridge(
 		OUString(), aProtocolDescr,
 		xConnection, Reference< XInstanceProvider >() ) );
-	
+
 	Reference< XInterface > xRet( xBridge->getInstance( aInstanceName ) );
-	
+
 	return xRet;
 }
 

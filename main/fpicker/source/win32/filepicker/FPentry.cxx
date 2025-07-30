@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -52,10 +52,10 @@ using ::com::sun::star::ui::dialogs::XFilePicker;
 using ::com::sun::star::ui::dialogs::XFilePicker2;
 
 //------------------------------------------------
-// 
+//
 //------------------------------------------------
 
-static Reference< XInterface > SAL_CALL createInstance( 
+static Reference< XInterface > SAL_CALL createInstance(
 	const Reference< XMultiServiceFactory >& rServiceManager )
 {
 	Reference< XInterface > xDlg;
@@ -64,15 +64,15 @@ static Reference< XInterface > SAL_CALL createInstance(
 	if (bVistaOrNewer)
 	{
         OSL_TRACE("use special (vista) system file picker ...");
-		xDlg.set( 
-			static_cast< XFilePicker2* >( 
+		xDlg.set(
+			static_cast< XFilePicker2* >(
 				new ::fpicker::win32::vista::VistaFilePicker( rServiceManager ) ) );
 	}
 	else
 	{
         OSL_TRACE("use normal system file picker ...");
-		xDlg.set( 
-			static_cast< XFilePicker2* >( 
+		xDlg.set(
+			static_cast< XFilePicker2* >(
 				new CFilePicker( rServiceManager ) ) );
 	}
 
@@ -83,7 +83,7 @@ static Reference< XInterface > SAL_CALL createInstance(
 // the three uno functions that will be exported
 //------------------------------------------------
 
-extern "C" 
+extern "C"
 {
 
 //------------------------------------------------
@@ -100,7 +100,7 @@ SAL_DLLPUBLIC_EXPORT void SAL_CALL component_getImplementationEnvironment(
 //
 //------------------------------------------------
 
-SAL_DLLPUBLIC_EXPORT void* SAL_CALL component_getFactory( 
+SAL_DLLPUBLIC_EXPORT void* SAL_CALL component_getFactory(
 	const sal_Char* pImplName, uno_Interface* pSrvManager, uno_Interface* )
 {
 	void* pRet = 0;
@@ -108,8 +108,8 @@ SAL_DLLPUBLIC_EXPORT void* SAL_CALL component_getFactory(
 	if ( pSrvManager && ( 0 == rtl_str_compare( pImplName, FILE_PICKER_IMPL_NAME ) ) )
 	{
 		Sequence< OUString > aSNS( 1 );
-		aSNS.getArray( )[0] = OUString::createFromAscii( FILE_PICKER_SERVICE_NAME );		
-				
+		aSNS.getArray( )[0] = OUString::createFromAscii( FILE_PICKER_SERVICE_NAME );
+
 		Reference< XSingleServiceFactory > xFactory ( createSingleFactory(
 			reinterpret_cast< XMultiServiceFactory* > ( pSrvManager ),
 			OUString::createFromAscii( pImplName ),
@@ -119,7 +119,7 @@ SAL_DLLPUBLIC_EXPORT void* SAL_CALL component_getFactory(
 		{
 			xFactory->acquire();
 			pRet = xFactory.get();
-		}			
+		}
 	}
 
 	return pRet;

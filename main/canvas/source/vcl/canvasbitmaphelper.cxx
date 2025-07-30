@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -56,7 +56,7 @@ namespace vclcanvas
     CanvasBitmapHelper::CanvasBitmapHelper() :
         mpBackBuffer(),
         mpOutDevReference()
-    { 
+    {
     }
 
     void CanvasBitmapHelper::setBitmap( const BitmapEx& rBitmap )
@@ -82,8 +82,8 @@ namespace vclcanvas
         // forward new settings to base class (ref device, output
         // surface, no protection (own backbuffer), alpha depends on
         // whether BmpEx is transparent or not)
-        CanvasHelper::init( rDevice, 
-                            mpBackBuffer, 
+        CanvasHelper::init( rDevice,
+                            mpBackBuffer,
                             false,
                             rBitmap.IsTransparent() );
     }
@@ -96,7 +96,7 @@ namespace vclcanvas
         // forward to base class
         CanvasHelper::disposing();
     }
-    
+
     geometry::IntegerSize2D CanvasBitmapHelper::getSize()
     {
         if( !mpBackBuffer )
@@ -112,7 +112,7 @@ namespace vclcanvas
             mpBackBuffer->clear(); // alpha vdev needs special treatment
     }
 
-    uno::Reference< rendering::XBitmap > CanvasBitmapHelper::getScaledBitmap( const geometry::RealSize2D& 	newSize, 
+    uno::Reference< rendering::XBitmap > CanvasBitmapHelper::getScaledBitmap( const geometry::RealSize2D& 	newSize,
                                                                               sal_Bool 						beFast )
     {
         ENSURE_OR_THROW( mpDevice,
@@ -125,10 +125,10 @@ namespace vclcanvas
 
         BitmapEx aRes( mpBackBuffer->getBitmapReference() );
 
-        aRes.Scale( ::vcl::unotools::sizeFromRealSize2D(newSize), 
+        aRes.Scale( ::vcl::unotools::sizeFromRealSize2D(newSize),
                      beFast ? BMP_SCALE_FASTESTINTERPOLATE : BMP_SCALE_INTERPOLATE );
 
-        return uno::Reference< rendering::XBitmap >( 
+        return uno::Reference< rendering::XBitmap >(
             new CanvasBitmap( aRes, *mpDevice, mpOutDevReference ) );
     }
 
@@ -146,7 +146,7 @@ namespace vclcanvas
 
         ScopedBitmapReadAccess pReadAccess( aBitmap.AcquireReadAccess(),
                                             aBitmap );
-        ScopedBitmapReadAccess pAlphaReadAccess( aAlpha.IsEmpty() ? 
+        ScopedBitmapReadAccess pAlphaReadAccess( aAlpha.IsEmpty() ?
                                                  (BitmapReadAccess*)NULL : aAlpha.AcquireReadAccess(),
                                                  aAlpha );
 
@@ -155,24 +155,24 @@ namespace vclcanvas
 
         // TODO(F1): Support more formats.
         const Size aBmpSize( aBitmap.GetSizePixel() );
-            
+
         rLayout.ScanLines = aBmpSize.Height();
         rLayout.ScanLineBytes = aBmpSize.Width()*4;
-        rLayout.ScanLineStride = rLayout.ScanLineBytes;        
+        rLayout.ScanLineStride = rLayout.ScanLineBytes;
 
-        // for the time being, always return as BGRA 
+        // for the time being, always return as BGRA
         uno::Sequence< sal_Int8 > aRes( 4*aBmpSize.Width()*aBmpSize.Height() );
         sal_Int8* pRes = aRes.getArray();
 
         int nCurrPos(0);
-        for( int y=rect.Y1; 
-             y<aBmpSize.Height() && y<rect.Y2; 
+        for( int y=rect.Y1;
+             y<aBmpSize.Height() && y<rect.Y2;
              ++y )
         {
             if( pAlphaReadAccess.get() != NULL )
             {
-                for( int x=rect.X1; 
-                     x<aBmpSize.Width() && x<rect.X2; 
+                for( int x=rect.X1;
+                     x<aBmpSize.Width() && x<rect.X2;
                      ++x )
                 {
                     pRes[ nCurrPos++ ] = pReadAccess->GetColor( y, x ).GetRed();
@@ -183,8 +183,8 @@ namespace vclcanvas
             }
             else
             {
-                for( int x=rect.X1; 
-                     x<aBmpSize.Width() && x<rect.X2; 
+                for( int x=rect.X1;
+                     x<aBmpSize.Width() && x<rect.X2;
                      ++x )
                 {
                     pRes[ nCurrPos++ ] = pReadAccess->GetColor( y, x ).GetRed();
@@ -197,9 +197,9 @@ namespace vclcanvas
 
         return aRes;
     }
-    
-    void CanvasBitmapHelper::setData( const uno::Sequence< sal_Int8 >& 		data, 
-                                      const rendering::IntegerBitmapLayout& rLayout, 
+
+    void CanvasBitmapHelper::setData( const uno::Sequence< sal_Int8 >& 		data,
+                                      const rendering::IntegerBitmapLayout& rLayout,
                                       const geometry::IntegerRectangle2D&	rect )
     {
         RTL_LOGFILE_CONTEXT( aLog, "::vclcanvas::CanvasBitmapHelper::setData()" );
@@ -226,27 +226,27 @@ namespace vclcanvas
         {
             ScopedBitmapWriteAccess pWriteAccess( aBitmap.AcquireWriteAccess(),
                                                   aBitmap );
-            ScopedBitmapWriteAccess pAlphaWriteAccess( aAlpha.IsEmpty() ? 
+            ScopedBitmapWriteAccess pAlphaWriteAccess( aAlpha.IsEmpty() ?
                                                        (BitmapWriteAccess*)NULL : aAlpha.AcquireWriteAccess(),
                                                        aAlpha );
 
             if( pAlphaWriteAccess.get() )
             {
                 DBG_ASSERT( pAlphaWriteAccess->GetScanlineFormat() == BMP_FORMAT_8BIT_PAL ||
-                            pAlphaWriteAccess->GetScanlineFormat() == BMP_FORMAT_8BIT_TC_MASK, 
+                            pAlphaWriteAccess->GetScanlineFormat() == BMP_FORMAT_8BIT_TC_MASK,
                             "non-8bit alpha not supported!" );
-            } 
-            
+            }
+
             ENSURE_OR_THROW( pWriteAccess.get() != NULL,
                              "Could not acquire write access to bitmap" );
 
             // TODO(F1): Support more formats.
-            const Size aBmpSize( aBitmap.GetSizePixel() ); 
+            const Size aBmpSize( aBitmap.GetSizePixel() );
 
-            // for the time being, always read as BGRA 
+            // for the time being, always read as BGRA
             int x, y, nCurrPos(0);
-            for( y=rect.Y1; 
-                 y<aBmpSize.Height() && y<rect.Y2; 
+            for( y=rect.Y1;
+                 y<aBmpSize.Height() && y<rect.Y2;
                  ++y )
             {
                 if( pAlphaWriteAccess.get() != NULL )
@@ -258,8 +258,8 @@ namespace vclcanvas
                             Scanline pScan  = pWriteAccess->GetScanline( y );
                             Scanline pAScan = pAlphaWriteAccess->GetScanline( y );
 
-                            for( x=rect.X1; 
-                                 x<aBmpSize.Width() && x<rect.X2; 
+                            for( x=rect.X1;
+                                 x<aBmpSize.Width() && x<rect.X2;
                                  ++x )
                             {
                                 *pScan++ = (sal_uInt8)pWriteAccess->GetBestPaletteIndex(
@@ -268,9 +268,9 @@ namespace vclcanvas
                                                  data[ nCurrPos+2 ] ) );
 
                                 nCurrPos += 3;
-                        
+
                                 // cast to unsigned byte, for correct subtraction result
-                                *pAScan++ = static_cast<sal_uInt8>(255 - 
+                                *pAScan++ = static_cast<sal_uInt8>(255 -
                                                               static_cast<sal_uInt8>(data[ nCurrPos++ ]));
                             }
                         }
@@ -281,8 +281,8 @@ namespace vclcanvas
                             Scanline pScan  = pWriteAccess->GetScanline( y );
                             Scanline pAScan = pAlphaWriteAccess->GetScanline( y );
 
-                            for( x=rect.X1; 
-                                 x<aBmpSize.Width() && x<rect.X2; 
+                            for( x=rect.X1;
+                                 x<aBmpSize.Width() && x<rect.X2;
                                  ++x )
                             {
                                 *pScan++ = data[ nCurrPos+2 ];
@@ -290,9 +290,9 @@ namespace vclcanvas
                                 *pScan++ = data[ nCurrPos   ];
 
                                 nCurrPos += 3;
-                        
+
                                 // cast to unsigned byte, for correct subtraction result
-                                *pAScan++ = static_cast<sal_uInt8>(255 - 
+                                *pAScan++ = static_cast<sal_uInt8>(255 -
                                                               static_cast<sal_uInt8>(data[ nCurrPos++ ]));
                             }
                         }
@@ -303,8 +303,8 @@ namespace vclcanvas
                             Scanline pScan  = pWriteAccess->GetScanline( y );
                             Scanline pAScan = pAlphaWriteAccess->GetScanline( y );
 
-                            for( x=rect.X1; 
-                                 x<aBmpSize.Width() && x<rect.X2; 
+                            for( x=rect.X1;
+                                 x<aBmpSize.Width() && x<rect.X2;
                                  ++x )
                             {
                                 *pScan++ = data[ nCurrPos   ];
@@ -312,9 +312,9 @@ namespace vclcanvas
                                 *pScan++ = data[ nCurrPos+2 ];
 
                                 nCurrPos += 3;
-                        
+
                                 // cast to unsigned byte, for correct subtraction result
-                                *pAScan++ = static_cast<sal_uInt8>(255 - 
+                                *pAScan++ = static_cast<sal_uInt8>(255 -
                                                               static_cast<sal_uInt8>(data[ nCurrPos++ ]));
                             }
                         }
@@ -322,19 +322,19 @@ namespace vclcanvas
 
                         default:
                         {
-                            for( x=rect.X1; 
-                                 x<aBmpSize.Width() && x<rect.X2; 
+                            for( x=rect.X1;
+                                 x<aBmpSize.Width() && x<rect.X2;
                                  ++x )
-                            { 
+                            {
                                 pWriteAccess->SetPixel( y, x, BitmapColor( data[ nCurrPos   ],
                                                                            data[ nCurrPos+1 ],
                                                                            data[ nCurrPos+2 ] ) );
                                 nCurrPos += 3;
-                        
+
                                 // cast to unsigned byte, for correct subtraction result
-                                pAlphaWriteAccess->SetPixel( y, x, 
-                                                             BitmapColor( 
-                                                                 static_cast<sal_uInt8>(255 - 
+                                pAlphaWriteAccess->SetPixel( y, x,
+                                                             BitmapColor(
+                                                                 static_cast<sal_uInt8>(255 -
                                                                                    static_cast<sal_uInt8>(data[ nCurrPos++ ])) ) );
                             }
                         }
@@ -351,8 +351,8 @@ namespace vclcanvas
                         {
                             Scanline pScan = pWriteAccess->GetScanline( y );
 
-                            for( x=rect.X1; 
-                                 x<aBmpSize.Width() && x<rect.X2; 
+                            for( x=rect.X1;
+                                 x<aBmpSize.Width() && x<rect.X2;
                                  ++x )
                             {
                                 *pScan++ = (sal_uInt8)pWriteAccess->GetBestPaletteIndex(
@@ -369,8 +369,8 @@ namespace vclcanvas
                         {
                             Scanline pScan = pWriteAccess->GetScanline( y );
 
-                            for( x=rect.X1; 
-                                 x<aBmpSize.Width() && x<rect.X2; 
+                            for( x=rect.X1;
+                                 x<aBmpSize.Width() && x<rect.X2;
                                  ++x )
                             {
                                 *pScan++ = data[ nCurrPos+2 ];
@@ -386,8 +386,8 @@ namespace vclcanvas
                         {
                             Scanline pScan = pWriteAccess->GetScanline( y );
 
-                            for( x=rect.X1; 
-                                 x<aBmpSize.Width() && x<rect.X2; 
+                            for( x=rect.X1;
+                                 x<aBmpSize.Width() && x<rect.X2;
                                  ++x )
                             {
                                 *pScan++ = data[ nCurrPos   ];
@@ -401,8 +401,8 @@ namespace vclcanvas
 
                         default:
                         {
-                            for( x=rect.X1; 
-                                 x<aBmpSize.Width() && x<rect.X2; 
+                            for( x=rect.X1;
+                                 x<aBmpSize.Width() && x<rect.X2;
                                  ++x )
                             {
                                 pWriteAccess->SetPixel( y, x, BitmapColor( data[ nCurrPos   ],
@@ -426,13 +426,13 @@ namespace vclcanvas
             if( aAlpha.IsEmpty() )
                 setBitmap( BitmapEx( aBitmap ) );
             else
-                setBitmap( BitmapEx( aBitmap, 
+                setBitmap( BitmapEx( aBitmap,
                                      AlphaMask( aAlpha ) ) );
         }
     }
 
-    void CanvasBitmapHelper::setPixel( const uno::Sequence< sal_Int8 >& 	 color, 
-                                       const rendering::IntegerBitmapLayout& rLayout, 
+    void CanvasBitmapHelper::setPixel( const uno::Sequence< sal_Int8 >& 	 color,
+                                       const rendering::IntegerBitmapLayout& rLayout,
                                        const geometry::IntegerPoint2D& 		 pos )
     {
         RTL_LOGFILE_CONTEXT( aLog, "::vclcanvas::CanvasBitmapHelper::setPixel()" );
@@ -442,11 +442,11 @@ namespace vclcanvas
 
         const Size aBmpSize( mpBackBuffer->getBitmapReference().GetSizePixel() );
 
-        ENSURE_ARG_OR_THROW( pos.X >= 0 && pos.X < aBmpSize.Width(), 
+        ENSURE_ARG_OR_THROW( pos.X >= 0 && pos.X < aBmpSize.Width(),
                          "X coordinate out of bounds" );
-        ENSURE_ARG_OR_THROW( pos.Y >= 0 && pos.Y < aBmpSize.Height(), 
+        ENSURE_ARG_OR_THROW( pos.Y >= 0 && pos.Y < aBmpSize.Height(),
                          "Y coordinate out of bounds" );
-        ENSURE_ARG_OR_THROW( color.getLength() > 3, 
+        ENSURE_ARG_OR_THROW( color.getLength() > 3,
                          "not enough color components" );
 
         const rendering::IntegerBitmapLayout aRefLayout( getMemoryLayout() );
@@ -468,7 +468,7 @@ namespace vclcanvas
         {
             ScopedBitmapWriteAccess pWriteAccess( aBitmap.AcquireWriteAccess(),
                                                   aBitmap );
-            ScopedBitmapWriteAccess pAlphaWriteAccess( aAlpha.IsEmpty() ? 
+            ScopedBitmapWriteAccess pAlphaWriteAccess( aAlpha.IsEmpty() ?
                                                        (BitmapWriteAccess*)NULL : aAlpha.AcquireWriteAccess(),
                                                        aAlpha );
 
@@ -492,12 +492,12 @@ namespace vclcanvas
             if( aAlpha.IsEmpty() )
                 setBitmap( BitmapEx( aBitmap ) );
             else
-                setBitmap( BitmapEx( aBitmap, 
+                setBitmap( BitmapEx( aBitmap,
                                      AlphaMask( aAlpha ) ) );
         }
     }
 
-    uno::Sequence< sal_Int8 > CanvasBitmapHelper::getPixel( rendering::IntegerBitmapLayout&	rLayout, 
+    uno::Sequence< sal_Int8 > CanvasBitmapHelper::getPixel( rendering::IntegerBitmapLayout&	rLayout,
                                                             const geometry::IntegerPoint2D& pos )
     {
         RTL_LOGFILE_CONTEXT( aLog, "::vclcanvas::CanvasBitmapHelper::getPixel()" );
@@ -508,13 +508,13 @@ namespace vclcanvas
         rLayout = getMemoryLayout();
         rLayout.ScanLines = 1;
         rLayout.ScanLineBytes = 4;
-        rLayout.ScanLineStride = rLayout.ScanLineBytes;        
+        rLayout.ScanLineStride = rLayout.ScanLineBytes;
 
         const Size aBmpSize( mpBackBuffer->getBitmapReference().GetSizePixel() );
 
-        ENSURE_ARG_OR_THROW( pos.X >= 0 && pos.X < aBmpSize.Width(), 
+        ENSURE_ARG_OR_THROW( pos.X >= 0 && pos.X < aBmpSize.Width(),
                          "X coordinate out of bounds" );
-        ENSURE_ARG_OR_THROW( pos.Y >= 0 && pos.Y < aBmpSize.Height(), 
+        ENSURE_ARG_OR_THROW( pos.Y >= 0 && pos.Y < aBmpSize.Height(),
                          "Y coordinate out of bounds" );
 
         Bitmap aBitmap( mpBackBuffer->getBitmapReference().GetBitmap() );
@@ -522,7 +522,7 @@ namespace vclcanvas
 
         ScopedBitmapReadAccess pReadAccess( aBitmap.AcquireReadAccess(),
                                             aBitmap );
-        ScopedBitmapReadAccess pAlphaReadAccess( aAlpha.IsEmpty() ? 
+        ScopedBitmapReadAccess pAlphaReadAccess( aAlpha.IsEmpty() ?
                                                  (BitmapReadAccess*)NULL : aAlpha.AcquireReadAccess(),
                                                  aAlpha );
         ENSURE_OR_THROW( pReadAccess.get() != NULL,
@@ -530,7 +530,7 @@ namespace vclcanvas
 
         uno::Sequence< sal_Int8 > aRes( 4 );
         sal_Int8* pRes = aRes.getArray();
-            
+
         const BitmapColor aColor( pReadAccess->GetColor( pos.Y, pos.X ) );
         pRes[ 0 ] = aColor.GetRed();
         pRes[ 1 ] = aColor.GetGreen();

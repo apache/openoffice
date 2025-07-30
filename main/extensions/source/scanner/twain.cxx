@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -29,7 +29,7 @@
 
 #if defined( WNT )
 #include <tools/svwin.h>
-#endif  
+#endif
 #ifdef OS2
 #include <svpm.h>
 #endif // OS2
@@ -93,7 +93,7 @@ static ImpTwain* pImpTwainInstance = NULL;
 	{
 		MSG* pMsg = (MSG*) lParam;
 
-		if( ( nCode < 0 ) || 
+		if( ( nCode < 0 ) ||
 			( pImpTwainInstance->hTwainWnd != pMsg->hwnd ) ||
 			!pImpTwainInstance->ImplHandleMsg( (void*) lParam ) )
 		{
@@ -103,7 +103,7 @@ static ImpTwain* pImpTwainInstance = NULL;
 		{
 			pMsg->message = WM_USER;
 			pMsg->lParam = 0;
-			
+
 			return 0;
 		}
 	}
@@ -146,7 +146,7 @@ ImpTwain::ImpTwain( const Link& rNotifyLink ) :
 #else
 
 	HWND		hParentWnd = HWND_DESKTOP;
-	WNDCLASS	aWc = { 0, &TwainWndProc, 0, sizeof( WNDCLASS ), GetModuleHandle( NULL ), 
+	WNDCLASS	aWc = { 0, &TwainWndProc, 0, sizeof( WNDCLASS ), GetModuleHandle( NULL ),
 						NULL, NULL, NULL, NULL, "TwainClass" };
 
 	RegisterClass( &aWc );
@@ -267,7 +267,7 @@ void ImpTwain::ImplOpenSource()
 #ifdef OS2
 
 			// negotiate capabilities
-			
+
 #else
 
 			TW_CAPABILITY	aCap = { CAP_XFERCOUNT, TWON_ONEVALUE, GlobalAlloc( GHND, sizeof( TW_ONEVALUE ) ) };
@@ -336,7 +336,7 @@ BOOL ImpTwain::ImplHandleMsg( void* pMsg )
 				ImplFallback( nEvent );
 			}
 			break;
-			
+
 			case MSG_CLOSEDSREQ:
 				ImplFallback( TWAIN_EVENT_QUIT );
 			break;
@@ -453,7 +453,7 @@ IMPL_LINK( ImpTwain, ImplFallbackHdl, void*, pData )
 		case( 5 ):
 		{
 			TW_USERINTERFACE aUI = { TRUE, TRUE, hTwainWnd };
-		
+
 			PFUNC( &aAppIdent, &aSrcIdent, DG_CONTROL, DAT_USERINTERFACE, MSG_DISABLEDS, &aUI );
 			nCurState = 4;
 		}

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -196,9 +196,9 @@ namespace dxcanvas
 
         int numColorSteps( const Gdiplus::Color& rColor1, const Gdiplus::Color& rColor2 )
         {
-            return ::std::max( 
+            return ::std::max(
                 labs( rColor1.GetRed() - rColor2.GetRed() ),
-                ::std::max(                    
+                ::std::max(
                     labs( rColor1.GetGreen() - rColor2.GetGreen() ),
                     labs( rColor1.GetBlue()  - rColor2.GetBlue() ) ) );
         }
@@ -271,7 +271,7 @@ namespace dxcanvas
                                                            nColorSteps);
 
                 ::basegfx::B2DHomMatrix aTextureTransform;
-                ::basegfx::unotools::homMatrixFromAffineMatrix( aTextureTransform, 
+                ::basegfx::unotools::homMatrixFromAffineMatrix( aTextureTransform,
                                                                 texture.AffineTransform );
                 // determine overall transformation for inner polygon (might
                 // have to be prefixed by anisotrophic scaling)
@@ -311,7 +311,7 @@ namespace dxcanvas
                 else if( nAspectRatio < 1.0 )
                 {
                     // width < height case
-                    aInnerPolygonTransformMatrix.scale( 0.0, 
+                    aInnerPolygonTransformMatrix.scale( 0.0,
                                                         1.0 - nAspectRatio );
                 }
                 else
@@ -334,7 +334,7 @@ namespace dxcanvas
                 {
                     std::ptrdiff_t nIndex;
                     double fAlpha;
-                    const double fT( i/double(nStepCount) );            
+                    const double fT( i/double(nStepCount) );
                     boost::tuples::tie(nIndex,fAlpha)=aLerper.lerp(fT);
 
                     const Gdiplus::Color aFillColor(
@@ -578,7 +578,7 @@ namespace dxcanvas
                     const ::canvas::ParametricPolyPolygon::Values& rValues(
                         pGradient->getValues() );
 
-                    OSL_ASSERT(rValues.maColors.getLength() == rValues.maStops.getLength() 
+                    OSL_ASSERT(rValues.maColors.getLength() == rValues.maStops.getLength()
                                && rValues.maColors.getLength() > 1);
 
                     std::vector< Gdiplus::Color > aColors(rValues.maColors.getLength());

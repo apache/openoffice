@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -225,7 +225,7 @@ sal_Bool SAL_CALL OStaticSet::last(  ) throw(SQLException, RuntimeException)
 	m_bInserted = m_bUpdated = m_bDeleted = sal_False;
 	fillAllRows();
 	m_aSetIter = m_aSet.end()-1;
-	
+
 	return !isBeforeFirst() && !isAfterLast();
 }
 // -------------------------------------------------------------------------
@@ -269,7 +269,7 @@ sal_Bool SAL_CALL OStaticSet::absolute( sal_Int32 row ) throw(SQLException, Runt
 					bNext = fetchRow();
 			}
 
-			if(row > (sal_Int32)m_aSet.size())		
+			if(row > (sal_Int32)m_aSet.size())
 				m_aSetIter = m_aSet.end();	// check again
 			else
 				m_aSetIter = m_aSet.begin() + row;
@@ -295,7 +295,7 @@ sal_Bool SAL_CALL OStaticSet::previous(  ) throw(SQLException, RuntimeException)
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "dbaccess", "Ocke.Janssen@sun.com", "OStaticSet::previous" );
 	m_bInserted = m_bUpdated = m_bDeleted = sal_False;
-	
+
 	if(m_aSetIter != m_aSet.begin())
 		--m_aSetIter;
 

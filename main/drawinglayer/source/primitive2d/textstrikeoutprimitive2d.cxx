@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -82,13 +82,13 @@ namespace drawinglayer
 
             // get decomposition
 			getObjectTransformation().decompose(aScale, aTranslate, fRotate, fShearX);
-            
+
 			// prepare TextLayouter
 		    TextLayouterDevice aTextLayouter;
-		    
+
             aTextLayouter.setFontAttribute(
-                getFontAttribute(), 
-                aScale.getX(), 
+                getFontAttribute(),
+                aScale.getX(),
                 aScale.getY(),
                 getLocale());
 
@@ -172,7 +172,7 @@ namespace drawinglayer
 			basegfx::B2DVector aScale, aTranslate;
 			double fRotate, fShearX;
 			getObjectTransformation().decompose(aScale, aTranslate, fRotate, fShearX);
-            
+
             // set line attribute
             switch(getTextStrikeout())
             {
@@ -234,10 +234,10 @@ namespace drawinglayer
 			    aTransform.translate(aTranslate.getX(), aTranslate.getY());
 
 			    // add transform primitive
-                appendPrimitive2DReferenceToPrimitive2DSequence(xRetval, 
+                appendPrimitive2DReferenceToPrimitive2DSequence(xRetval,
                     Primitive2DReference(
                         new TransformPrimitive2D(
-                            aTransform, 
+                            aTransform,
                             xRetval)));
 		    }
 

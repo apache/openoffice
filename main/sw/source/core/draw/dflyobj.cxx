@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -239,14 +239,14 @@ namespace drawinglayer
 			if(!getOuterRange().isEmpty())
 			{
 				// currently this SW object has no primitive representation. As long as this is the case,
-				// create invisible geometry to allow corfect HitTest and BoundRect calculations for the 
+				// create invisible geometry to allow corfect HitTest and BoundRect calculations for the
                 // object. Use a filled primitive to get 'inside' as default object hit. The special cases from
                 // the old SwVirtFlyDrawObj::CheckHit implementation are handled now in SwDrawView::PickObj;
                 // this removed the 'hack' to get a view from inside model data or to react on null-tolerance
                 // as it was done in the old implementation
                 const Primitive2DReference aHitTestReference(
                     createHiddenGeometryPrimitives2D(
-                        true, 
+                        true,
                         getOuterRange()));
 
 				aRetval = Primitive2DSequence(&aHitTestReference, 1);
@@ -477,14 +477,14 @@ namespace
         public:
             explicit RestoreMapMode( ViewShell* pViewShell )
                 : mbMapModeRestored( false )
-                , mpOutDev( pViewShell->GetOut() )                    
+                , mpOutDev( pViewShell->GetOut() )
             {
                 if ( pViewShell->getPrePostMapMode() != mpOutDev->GetMapMode() )
                 {
                     mpOutDev->Push(PUSH_MAPMODE);
-                    
+
                     GDIMetaFile* pMetaFile = mpOutDev->GetConnectMetaFile();
-                    if ( pMetaFile && 
+                    if ( pMetaFile &&
                          pMetaFile->IsRecord() && !pMetaFile->IsPause() )
                     {
                         ASSERT( false,
@@ -495,7 +495,7 @@ namespace
                     {
                         mpOutDev->SetMapMode( pViewShell->getPrePostMapMode() );
                     }
-                    
+
                     mbMapModeRestored = true;
                 }
             };
@@ -506,7 +506,7 @@ namespace
                 {
                     mpOutDev->Pop();
                 }
-            };            
+            };
 
         private:
             bool mbMapModeRestored;
@@ -540,8 +540,8 @@ void SwVirtFlyDrawObj::wrap_DoPaintObject() const
 				// it is also necessary to restore the VCL MapMode from ViewInformation since e.g.
 				// the VCL PixelRenderer resets it at the used OutputDevice. Unfortunately, this
 				// excludes shears and rotates which are not expressable in MapMode.
-                // OD #i102707# 
-                // new helper class to restore MapMode - restoration, only if 
+                // OD #i102707#
+                // new helper class to restore MapMode - restoration, only if
                 // needed and consideration of paint for meta file creation .
                 RestoreMapMode aRestoreMapModeIfNeeded( pShell );
 
@@ -728,7 +728,7 @@ void __EXPORT SwVirtFlyDrawObj::NbcMove(const Size& rSiz)
 	    		lXDiff += rVert.GetPos();
 	    		lXDiff = -lXDiff;
 	    	}
-	    	else 
+	    	else
 	    	{
 				lXDiff -= rVert.GetPos();
             	lYDiff += rHori.GetPos();

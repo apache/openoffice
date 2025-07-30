@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -97,9 +97,9 @@ Hyphenator::~Hyphenator()
 	if (pPropHelper)
 		pPropHelper->RemoveAsPropListener();
 
-    if ((numdict) && (aDicts)) 
+    if ((numdict) && (aDicts))
     {
-        for (int i=0; i < numdict; i++) 
+        for (int i=0; i < numdict; i++)
         {
             if (aDicts[i].apCC) delete aDicts[i].apCC;
             aDicts[i].apCC = NULL;
@@ -202,7 +202,7 @@ Sequence< Locale > SAL_CALL Hyphenator::getLocales()
 
             // add dictionary information
             aDicts = new HDInfo[numdict];
-            
+
             k = 0;
             for (aDictIt = aDics.begin();  aDictIt != aDics.end();  ++aDictIt)
             {
@@ -302,15 +302,15 @@ Reference< XHyphenatedWord > SAL_CALL Hyphenator::hyphenate( const ::rtl::OUStri
     k = -1;
     for (int j = 0; j < numdict; j++)
     {
-        if (aLocale == aDicts[j].aLoc) 
+        if (aLocale == aDicts[j].aLoc)
             k = j;
     }
 
     // if we have a hyphenation dictionary matching this locale
-    if (k != -1) 
+    if (k != -1)
     {
         // if this dictionary has not been loaded yet do that
-        if (!aDicts[k].aPtr) 
+        if (!aDicts[k].aPtr)
         {
             OUString DictFN = aDicts[k].aName + A2OU(".dic");
             OUString dictpath;
@@ -355,12 +355,12 @@ Reference< XHyphenatedWord > SAL_CALL Hyphenator::hyphenate( const ::rtl::OUStri
 	    OUStringBuffer rBuf(aWord);
         sal_Int32 nc = rBuf.getLength();
         sal_Unicode ch;
-        for (sal_Int32 ix=0; ix < nc; ix++) 
+        for (sal_Int32 ix=0; ix < nc; ix++)
         {
 	        ch = rBuf.charAt(ix);
-            if ((ch == 0x201C) || (ch == 0x201D)) 
+            if ((ch == 0x201C) || (ch == 0x201D))
                 rBuf.setCharAt(ix,(sal_Unicode)0x0022);
-            if ((ch == 0x2018) || (ch == 0x2019)) 
+            if ((ch == 0x2018) || (ch == 0x2019))
                 rBuf.setCharAt(ix,(sal_Unicode)0x0027);
         }
         OUString nWord(rBuf.makeStringAndClear());
@@ -384,13 +384,13 @@ Reference< XHyphenatedWord > SAL_CALL Hyphenator::hyphenate( const ::rtl::OUStri
 
         // now strip off any ending periods
         int n = wordlen-1;
-        while((n >=0) && (lcword[n] == '.')) 
+        while((n >=0) && (lcword[n] == '.'))
             n--;
         n++;
-        if (n > 0) 
+        if (n > 0)
         {
-            const bool bFailed = 0 != hnj_hyphen_hyphenate3( dict, lcword, n, hyphens, NULL, 
-                    &rep, &pos, &cut, minLead, minTrail, 
+            const bool bFailed = 0 != hnj_hyphen_hyphenate3( dict, lcword, n, hyphens, NULL,
+                    &rep, &pos, &cut, minLead, minTrail,
                     Max(dict->clhmin, Max(dict->clhmin, 2) + Max(0, minLead  - Max(dict->lhmin, 2))),
                     Max(dict->crhmin, Max(dict->crhmin, 2) + Max(0, minTrail - Max(dict->rhmin, 2))) );
             if (bFailed)
@@ -398,9 +398,9 @@ Reference< XHyphenatedWord > SAL_CALL Hyphenator::hyphenate( const ::rtl::OUStri
                 //whoops something did not work
                 delete[] hyphens;
                 delete[] lcword;
-                if (rep) 
+                if (rep)
                 {
-                    for(int j = 0; j < n; j++) 
+                    for(int j = 0; j < n; j++)
                     {
                         if (rep[j]) free(rep[j]);
                     }
@@ -422,33 +422,33 @@ Reference< XHyphenatedWord > SAL_CALL Hyphenator::hyphenate( const ::rtl::OUStri
 	    {
             int leftrep = 0;
             sal_Bool hit = (n >= minLen);
-            if (!rep || !rep[i] || (i >= n)) 
+            if (!rep || !rep[i] || (i >= n))
             {
                 hit = hit && (hyphens[i]&1) && (i < Leading);
                 hit = hit && (i >= (minLead-1) );
                 hit = hit && ((n - i - 1) >= minTrail);
-            } 
-            else 
+            }
+            else
             {
                 // calculate change character length before hyphenation point signed with '='
-                for (char * c = rep[i]; *c && (*c != '='); c++) 
+                for (char * c = rep[i]; *c && (*c != '='); c++)
                 {
-                    if (eEnc == RTL_TEXTENCODING_UTF8) 
+                    if (eEnc == RTL_TEXTENCODING_UTF8)
                     {
-                        if (((unsigned char) *c) >> 6 != 2) 
+                        if (((unsigned char) *c) >> 6 != 2)
                             leftrep++;
-                    } 
-                    else 
+                    }
+                    else
                         leftrep++;
                 }
                 hit = hit && (hyphens[i]&1) && ((i + leftrep - pos[i]) < Leading);
                 hit = hit && ((i + leftrep - pos[i]) >= (minLead-1) );
                 hit = hit && ((n - i - 1 + sal::static_int_cast< sal_sSize >(strlen(rep[i])) - leftrep - 1) >= minTrail);
             }
-            if (hit) 
+            if (hit)
             {
                 nHyphenationPos = i;
-                if (rep && (i < n) && rep[i]) 
+                if (rep && (i < n) && rep[i])
                 {
                     nHyphenationPosAlt = i - pos[i];
                     nHyphenationPosAltHyph = i + leftrep - pos[i];
@@ -456,25 +456,25 @@ Reference< XHyphenatedWord > SAL_CALL Hyphenator::hyphenate( const ::rtl::OUStri
             }
         }
 
-        if (nHyphenationPos  == -1) 
+        if (nHyphenationPos  == -1)
         {
             xRes = NULL;
-        } 
-        else 
+        }
+        else
         {
-            if (rep && rep[nHyphenationPos]) 
+            if (rep && rep[nHyphenationPos])
             {
                 // remove equal sign
                 char * s = rep[nHyphenationPos];
                 int eq = 0;
-                for (; *s; s++) 
+                for (; *s; s++)
                 {
                     if (*s == '=') eq = 1;
                     if (eq) *s = *(s + 1);
                 }
                 OUString repHyphlow(rep[nHyphenationPos], strlen(rep[nHyphenationPos]), eEnc);
                 OUString repHyph;
-                switch (ct) 
+                switch (ct)
                 {
                     case CAPTYPE_ALLCAP:
                     {
@@ -483,9 +483,9 @@ Reference< XHyphenatedWord > SAL_CALL Hyphenator::hyphenate( const ::rtl::OUStri
                     }
                     case CAPTYPE_INITCAP:
                     {
-                        if (nHyphenationPosAlt == 0) 
+                        if (nHyphenationPosAlt == 0)
                             repHyph = makeInitCap(repHyphlow, pCC);
-                        else 
+                        else
                              repHyph = repHyphlow;
                         break;
                     }
@@ -504,7 +504,7 @@ Reference< XHyphenatedWord > SAL_CALL Hyphenator::hyphenate( const ::rtl::OUStri
                     aWord.replaceAt(nHyphenationPosAlt + 1, cut[nHyphenationPos], repHyph),
                     (sal_Int16) nHyphenationPosAltHyph);
             }
-            else 
+            else
             {
                 xRes = HyphenatedWord::CreateHyphenatedWord( aWord, LocaleToLanguage( aLocale ),
                     (sal_Int16)nHyphenationPos, aWord, (sal_Int16) nHyphenationPos);
@@ -513,9 +513,9 @@ Reference< XHyphenatedWord > SAL_CALL Hyphenator::hyphenate( const ::rtl::OUStri
 
         delete[] lcword;
 	    delete[] hyphens;
-        if (rep) 
+        if (rep)
         {
-            for(int j = 0; j < n; j++) 
+            for(int j = 0; j < n; j++)
             {
                 if (rep[j]) free(rep[j]);
             }
@@ -529,7 +529,7 @@ Reference< XHyphenatedWord > SAL_CALL Hyphenator::hyphenate( const ::rtl::OUStri
 }
 
 
-Reference < XHyphenatedWord > SAL_CALL Hyphenator::queryAlternativeSpelling( 
+Reference < XHyphenatedWord > SAL_CALL Hyphenator::queryAlternativeSpelling(
         const ::rtl::OUString& /*aWord*/,
         const ::com::sun::star::lang::Locale& /*aLocale*/,
         sal_Int16 /*nIndex*/,
@@ -570,10 +570,10 @@ Reference< XPossibleHyphens > SAL_CALL Hyphenator::createPossibleHyphens( const 
     }
 
     // if we have a hyphenation dictionary matching this locale
-    if (k != -1) 
+    if (k != -1)
     {
         // if this dictionary has not been loaded yet do that
-        if (!aDicts[k].aPtr) 
+        if (!aDicts[k].aPtr)
         {
             OUString DictFN = aDicts[k].aName + A2OU(".dic");
             OUString dictpath;
@@ -615,12 +615,12 @@ Reference< XPossibleHyphens > SAL_CALL Hyphenator::createPossibleHyphens( const 
         OUStringBuffer rBuf(aWord);
         sal_Int32 nc = rBuf.getLength();
         sal_Unicode ch;
-        for (sal_Int32 ix=0; ix < nc; ix++) 
+        for (sal_Int32 ix=0; ix < nc; ix++)
         {
             ch = rBuf.charAt(ix);
-            if ((ch == 0x201C) || (ch == 0x201D)) 
+            if ((ch == 0x201C) || (ch == 0x201D))
                 rBuf.setCharAt(ix,(sal_Unicode)0x0022);
-            if ((ch == 0x2018) || (ch == 0x2019)) 
+            if ((ch == 0x2018) || (ch == 0x2019))
                 rBuf.setCharAt(ix,(sal_Unicode)0x0027);
         }
         OUString nWord(rBuf.makeStringAndClear());
@@ -635,7 +635,7 @@ Reference< XPossibleHyphens > SAL_CALL Hyphenator::createPossibleHyphens( const 
         lcword = new char[wordlen+1];
         hyphens = new char[wordlen+5];
         char ** rep = NULL; // replacements of discretionary hyphenation
-        int * pos = NULL; // array of [hyphenation point] minus [deletion position] 
+        int * pos = NULL; // array of [hyphenation point] minus [deletion position]
         int * cut = NULL; // length of deletions in original word
 
         // copy converted word into simple char buffer
@@ -643,14 +643,14 @@ Reference< XPossibleHyphens > SAL_CALL Hyphenator::createPossibleHyphens( const 
 
         // first remove any trailing periods
         int n = wordlen-1;
-        while((n >=0) && (lcword[n] == '.')) 
+        while((n >=0) && (lcword[n] == '.'))
             n--;
         n++;
         // fprintf(stderr,"hyphenate... %s\n",lcword); fflush(stderr);
-        if (n > 0) 
+        if (n > 0)
         {
-            const bool bFailed = 0 != hnj_hyphen_hyphenate3(dict, lcword, n, hyphens, NULL, 
-                    &rep, &pos, &cut, minLead, minTrail, 
+            const bool bFailed = 0 != hnj_hyphen_hyphenate3(dict, lcword, n, hyphens, NULL,
+                    &rep, &pos, &cut, minLead, minTrail,
                     Max(dict->clhmin, Max(dict->clhmin, 2) + Max(0, minLead - Max(dict->lhmin, 2))),
                     Max(dict->crhmin, Max(dict->crhmin, 2) + Max(0, minTrail - Max(dict->rhmin, 2))) );
             if (bFailed)
@@ -658,9 +658,9 @@ Reference< XPossibleHyphens > SAL_CALL Hyphenator::createPossibleHyphens( const 
                 delete[] hyphens;
                 delete[] lcword;
 
-                if (rep) 
+                if (rep)
                 {
-                    for(int j = 0; j < n; j++) 
+                    for(int j = 0; j < n; j++)
                     {
                         if (rep[j]) free(rep[j]);
                     }
@@ -673,7 +673,7 @@ Reference< XPossibleHyphens > SAL_CALL Hyphenator::createPossibleHyphens( const 
             }
         }
         // now backfill hyphens[] for any removed periods
-        for (int c = n; c < wordlen; c++) 
+        for (int c = n; c < wordlen; c++)
             hyphens[c] = '0';
         hyphens[wordlen] = '\0';
         // fprintf(stderr,"... %s\n",hyphens); fflush(stderr);
@@ -693,11 +693,11 @@ Reference< XPossibleHyphens > SAL_CALL Hyphenator::createPossibleHyphens( const 
         OUString hyphenatedWord;
         nHyphCount = 0;
 
-        for (i = 0; i < nWord.getLength(); i++) 
+        for (i = 0; i < nWord.getLength(); i++)
         {
             hyphenatedWordBuffer.append(aWord[i]);
             // hyphenation position (not alternative)
-            if (hyphens[i]&1 && (!rep || !rep[i])) 
+            if (hyphens[i]&1 && (!rep || !rep[i]))
             {
                 pPos[nHyphCount] = i;
                 hyphenatedWordBuffer.append(sal_Unicode('='));
@@ -715,9 +715,9 @@ Reference< XPossibleHyphens > SAL_CALL Hyphenator::createPossibleHyphens( const 
         delete[] hyphens;
         delete[] lcword;
 
-        if (rep) 
+        if (rep)
         {
-            for(int j = 0; j < n; j++) 
+            for(int j = 0; j < n; j++)
             {
                 if (rep[j]) free(rep[j]);
             }
@@ -735,19 +735,19 @@ Reference< XPossibleHyphens > SAL_CALL Hyphenator::createPossibleHyphens( const 
 sal_uInt16 SAL_CALL Hyphenator::capitalType(const OUString& aTerm, CharClass * pCC)
 {
     sal_Int32 tlen = aTerm.getLength();
-    if ((pCC) && (tlen)) 
+    if ((pCC) && (tlen))
     {
         String aStr(aTerm);
         sal_Int32 nc = 0;
-        for (xub_StrLen tindex = 0; tindex < tlen;  tindex++) 
+        for (xub_StrLen tindex = 0; tindex < tlen;  tindex++)
         {
-            if (pCC->getCharacterType(aStr,tindex) & ::com::sun::star::i18n::KCharacterType::UPPER) 
+            if (pCC->getCharacterType(aStr,tindex) & ::com::sun::star::i18n::KCharacterType::UPPER)
                 nc++;
         }
 
-        if (nc == 0) 
+        if (nc == 0)
             return (sal_uInt16) CAPTYPE_NOCAP;
-        if (nc == tlen) 
+        if (nc == tlen)
             return (sal_uInt16) CAPTYPE_ALLCAP;
         if ((nc == 1) && (pCC->getCharacterType(aStr,0) & ::com::sun::star::i18n::KCharacterType::UPPER))
             return (sal_uInt16) CAPTYPE_INITCAP;
@@ -775,7 +775,7 @@ OUString SAL_CALL Hyphenator::makeUpperCase(const OUString& aTerm, CharClass * p
 OUString SAL_CALL Hyphenator::makeInitCap(const OUString& aTerm, CharClass * pCC)
 {
     sal_Int32 tlen = aTerm.getLength();
-    if ((pCC) && (tlen)) 
+    if ((pCC) && (tlen))
     {
         OUString bTemp = aTerm.copy(0,1);
         if (tlen > 1)
@@ -855,7 +855,7 @@ void SAL_CALL Hyphenator::initialize( const Sequence< Any >& rArguments )
 			pPropHelper = new PropertyHelper_Hyphenation( (XHyphenator *) this, xPropSet );
 			pPropHelper->AddAsPropListener();	//! after a reference is established
 		}
-        else 
+        else
         {
 			DBG_ERROR( "wrong number of arguments in sequence" );
         }

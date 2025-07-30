@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -78,9 +78,9 @@ VCLXGraphics::~VCLXGraphics()
 	delete mpClipRegion;
 }
 
-void VCLXGraphics::SetOutputDevice( OutputDevice* pOutDev ) 
-{ 
-	mpOutputDevice = pOutDev; 
+void VCLXGraphics::SetOutputDevice( OutputDevice* pOutDev )
+{
+	mpOutputDevice = pOutDev;
 	mxDevice = NULL;
     initAttrs();
 }
@@ -115,7 +115,7 @@ void VCLXGraphics::initAttrs()
 
 void VCLXGraphics::InitOutputDevice( sal_uInt16 nFlags )
 {
-	if(mpOutputDevice) 
+	if(mpOutputDevice)
 	{
 		vos::OGuard aVclGuard( Application::GetSolarMutex()  );
 
@@ -165,7 +165,7 @@ awt::SimpleFontMetric VCLXGraphics::getFontMetric() throw(uno::RuntimeException)
 	::vos::OGuard aGuard( GetMutex() );
 
 	awt::SimpleFontMetric aM;
-	if( mpOutputDevice ) 
+	if( mpOutputDevice )
 	{
 		mpOutputDevice->SetFont( maFont );
 		aM = VCLUnoHelper::CreateFontMetric( mpOutputDevice->GetFontMetric() );
@@ -330,14 +330,14 @@ void VCLXGraphics::copy( const uno::Reference< awt::XDevice >& rxSource, sal_Int
 {
 	::vos::OGuard aGuard( GetMutex() );
 
-	if ( mpOutputDevice ) 
+	if ( mpOutputDevice )
 	{
 		VCLXDevice* pFromDev = VCLXDevice::GetImplementation( rxSource );
 		DBG_ASSERT( pFromDev, "VCLXGraphics::copy - invalid device" );
 		if ( pFromDev )
 		{
 			InitOutputDevice( INITOUTDEV_CLIPREGION|INITOUTDEV_RASTEROP );
-			mpOutputDevice->DrawOutDev( Point( nDestX, nDestY ), Size( nDestWidth, nDestHeight ), 
+			mpOutputDevice->DrawOutDev( Point( nDestX, nDestY ), Size( nDestWidth, nDestHeight ),
 									Point( nSourceX, nSourceY ), Size( nSourceWidth, nSourceHeight ), *pFromDev->GetOutputDevice() );
 		}
 	}
@@ -352,23 +352,23 @@ void VCLXGraphics::draw( const uno::Reference< awt::XDisplayBitmap >& rxBitmapHa
 		InitOutputDevice( INITOUTDEV_CLIPREGION|INITOUTDEV_RASTEROP);
 		uno::Reference< awt::XBitmap > xBitmap( rxBitmapHandle, uno::UNO_QUERY );
 		BitmapEx aBmpEx = VCLUnoHelper::GetBitmap( xBitmap );
-		
+
 		Point aPos(nDestX - nSourceX, nDestY - nSourceY);
   		Size aSz = aBmpEx.GetSizePixel();
 
-		if(nDestWidth != nSourceWidth) 
+		if(nDestWidth != nSourceWidth)
 		{
 			float zoomX = (float)nDestWidth / (float)nSourceWidth;
-			aSz.Width() = (long) ((float)aSz.Width() * zoomX); 
+			aSz.Width() = (long) ((float)aSz.Width() * zoomX);
 		}
 
-		if(nDestHeight != nSourceHeight) 
+		if(nDestHeight != nSourceHeight)
 		{
 			float zoomY = (float)nDestHeight / (float)nSourceHeight;
 			aSz.Height() = (long) ((float)aSz.Height() * zoomY);
 		}
 
-		if(nSourceX || nSourceY || aSz.Width() != nSourceWidth || aSz.Height() != nSourceHeight) 
+		if(nSourceX || nSourceY || aSz.Width() != nSourceWidth || aSz.Height() != nSourceHeight)
 			mpOutputDevice->IntersectClipRegion(Region(Rectangle(nDestX, nDestY, nDestX + nDestWidth - 1, nDestY + nDestHeight - 1)));
 
 		mpOutputDevice->DrawBitmapEx( aPos, aSz, aBmpEx );

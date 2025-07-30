@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -165,7 +165,7 @@ FASTBOOL SdrObjUserData::HasMacro(const SdrObject* /*pObj*/) const
 
 SdrObject* SdrObjUserData::CheckMacroHit(const SdrObjMacroHitRec& rRec, const SdrObject* pObj) const
 {
-	if(pObj) 
+	if(pObj)
     {
         if(rRec.pPageView)
         {
@@ -323,7 +323,7 @@ sdr::properties::BaseProperties& SdrObject::GetProperties() const
 {
 	if(!mpProperties)
 	{
-		const_cast< SdrObject* >(this)->mpProperties = 
+		const_cast< SdrObject* >(this)->mpProperties =
             const_cast< SdrObject* >(this)->CreateObjectSpecificProperties();
 	}
 
@@ -359,7 +359,7 @@ sdr::contact::ViewContact& SdrObject::GetViewContact() const
 {
 	if(!mpViewContact)
 	{
-		const_cast< SdrObject* >(this)->mpViewContact = 
+		const_cast< SdrObject* >(this)->mpViewContact =
             const_cast< SdrObject* >(this)->CreateObjectSpecificViewContact();
 	}
 
@@ -1428,7 +1428,7 @@ FASTBOOL SdrObject::EndCreate(SdrDragStat& rStat, SdrCreateCmd eCmd)
 {
 	rStat.TakeCreateRect(aOutRect);
 	aOutRect.Justify();
-	
+
 	// #i101648# see description at MovCreate
 	//
 	// SetRectsDirty();
@@ -1837,8 +1837,8 @@ FASTBOOL SdrObject::HasMacro() const
 SdrObject* SdrObject::CheckMacroHit(const SdrObjMacroHitRec& rRec) const
 {
 	SdrObjUserData* pData = ImpGetMacroUserData();
-	
-    if(pData) 
+
+    if(pData)
     {
 		return pData->CheckMacroHit(rRec, this);
 	}

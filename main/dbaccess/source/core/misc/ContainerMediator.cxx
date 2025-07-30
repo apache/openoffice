@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -76,8 +76,8 @@ OContainerMediator::OContainerMediator( const Reference< XContainer >& _xContain
     , m_aConnection( _rxConnection )
 	, m_eType( _eType )
 {
-	DBG_CTOR(OContainerMediator,NULL);	
-	
+	DBG_CTOR(OContainerMediator,NULL);
+
     if ( _xSettings.is() && _xContainer.is() )
     {
         osl_incrementInterlockedCount(&m_refCount);
@@ -103,7 +103,7 @@ OContainerMediator::OContainerMediator( const Reference< XContainer >& _xContain
 // -----------------------------------------------------------------------------
 OContainerMediator::~OContainerMediator()
 {
-	DBG_DTOR(OContainerMediator,NULL);	
+	DBG_DTOR(OContainerMediator,NULL);
     acquire();
     impl_cleanup_nothrow();
 }
@@ -133,7 +133,7 @@ void OContainerMediator::impl_cleanup_nothrow()
 
 // -----------------------------------------------------------------------------
 void SAL_CALL OContainerMediator::elementInserted( const ContainerEvent& _rEvent ) throw(RuntimeException)
-{		
+{
 	::osl::MutexGuard aGuard(m_aMutex);
 	if ( _rEvent.Source == m_xSettings && m_xSettings.is() )
 	{
@@ -177,7 +177,7 @@ void SAL_CALL OContainerMediator::elementReplaced( const ContainerEvent& _rEvent
 	{
         ::rtl::OUString sElementName;
 		_rEvent.ReplacedElement >>= sElementName;
-        
+
         PropertyForwardList::iterator aFind = m_aForwardList.find(sElementName);
 		if ( aFind != m_aForwardList.end() )
         {
@@ -206,7 +206,7 @@ void SAL_CALL OContainerMediator::elementReplaced( const ContainerEvent& _rEvent
 void SAL_CALL OContainerMediator::disposing( const EventObject& /*Source*/ ) throw(RuntimeException)
 {
 	::osl::MutexGuard aGuard(m_aMutex);
-	
+
     impl_cleanup_nothrow();
 }
 

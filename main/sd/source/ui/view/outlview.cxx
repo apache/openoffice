@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -325,7 +325,7 @@ void OutlineView::Paint(const Rectangle& rRect, ::sd::Window* pWin)
 				sal_Int32 nLineHeight = pOlView->GetOutliner()->GetLineHeight( nPara, 0 );
 
 				aPos.X() = nNumberOffset;
-				
+
 				Point aPoint( aPos.X() - pWin->GetTextWidth( aStr ), aPos.Y() + ( nLineHeight - maPageNumberFont.GetHeight()) / 2 );
 				pWin->DrawText( aPoint, aStr );
 
@@ -337,13 +337,13 @@ void OutlineView::Paint(const Rectangle& rRect, ::sd::Window* pWin)
 		}
 
 		pWin->SetFont( aOldFont );
-*/		
+*/
 		mbFirstPaint = sal_False;
 	}
 }
 
 void OutlineView::InvalidateSlideNumberArea()
-{   
+{
 /*
 	for( sal_Int16 nView = 0; nView < MAX_OUTLINERVIEWS; ++nView )
 	{
@@ -1349,7 +1349,7 @@ void OutlineView::FillOutliner()
 
 		if (!pTO) // if no subtile found, try outline
 			pTO = GetOutlineTextObject(pPage);
-		
+
 		if(pTO && !(pTO->IsEmptyPresObj())) // found some text
 		{
 			OutlinerParaObject* pOPO = pTO->GetOutlinerParaObject();

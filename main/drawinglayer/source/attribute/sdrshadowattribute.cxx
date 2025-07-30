@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
@@ -44,8 +44,8 @@ namespace drawinglayer
 			basegfx::BColor						maColor;					// color of shadow
 
 			ImpSdrShadowAttribute(
-				const basegfx::B2DVector& rOffset, 
-                double fTransparence, 
+				const basegfx::B2DVector& rOffset,
+                double fTransparence,
                 const basegfx::BColor& rColor)
 			:	mnRefCount(0),
 		    	maOffset(rOffset),
@@ -65,7 +65,7 @@ namespace drawinglayer
                     && getTransparence() == rCandidate.getTransparence()
 				    && getColor() == rCandidate.getColor());
 		    }
-            
+
             static ImpSdrShadowAttribute* get_global_default()
             {
                 static ImpSdrShadowAttribute* pDefault = 0;
@@ -74,7 +74,7 @@ namespace drawinglayer
                 {
                     pDefault = new ImpSdrShadowAttribute(
                         basegfx::B2DVector(),
-                        0.0, 
+                        0.0,
                         basegfx::BColor());
 
                     // never delete; start with RefCount 1, not 0
@@ -86,8 +86,8 @@ namespace drawinglayer
 		};
 
         SdrShadowAttribute::SdrShadowAttribute(
-            const basegfx::B2DVector& rOffset, 
-            double fTransparence, 
+            const basegfx::B2DVector& rOffset,
+            double fTransparence,
             const basegfx::BColor& rColor)
 		:	mpSdrShadowAttribute(new ImpSdrShadowAttribute(
                 rOffset, fTransparence, rColor))
@@ -135,7 +135,7 @@ namespace drawinglayer
 				{
 					delete mpSdrShadowAttribute;
 				}
-				
+
 				mpSdrShadowAttribute = rCandidate.mpSdrShadowAttribute;
 				mpSdrShadowAttribute->mnRefCount++;
 			}
@@ -158,19 +158,19 @@ namespace drawinglayer
 			return (*rCandidate.mpSdrShadowAttribute == *mpSdrShadowAttribute);
 		}
 
-		const basegfx::B2DVector& SdrShadowAttribute::getOffset() const 
-        { 
-            return mpSdrShadowAttribute->getOffset(); 
+		const basegfx::B2DVector& SdrShadowAttribute::getOffset() const
+        {
+            return mpSdrShadowAttribute->getOffset();
         }
 
-		double SdrShadowAttribute::getTransparence() const 
-        { 
-            return mpSdrShadowAttribute->getTransparence();	
+		double SdrShadowAttribute::getTransparence() const
+        {
+            return mpSdrShadowAttribute->getTransparence();
         }
 
-		const basegfx::BColor& SdrShadowAttribute::getColor() const 
-        { 
-            return mpSdrShadowAttribute->getColor(); 
+		const basegfx::BColor& SdrShadowAttribute::getColor() const
+        {
+            return mpSdrShadowAttribute->getColor();
         }
     } // end of namespace attribute
 } // end of namespace drawinglayer

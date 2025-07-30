@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -42,7 +42,7 @@
 #include <vector>
 #include <basidesh.hrc>
 #include <baside3.hxx>
-#include <localizationmgr.hxx> 
+#include <localizationmgr.hxx>
 #include <accessibledialogwindow.hxx>
 #include <dlged.hxx>
 #include <dlgedmod.hxx>
@@ -123,7 +123,7 @@ DialogWindow::DialogWindow( Window* pParent, const ScriptDocument& rDocument, St
     // set readonly mode for readonly libraries
     ::rtl::OUString aOULibName( aLibName );
     Reference< script::XLibraryContainer2 > xDlgLibContainer( GetDocument().getLibraryContainer( E_DIALOGS ), UNO_QUERY );
-    if ( xDlgLibContainer.is() && xDlgLibContainer->hasByName( aOULibName ) && xDlgLibContainer->isLibraryReadOnly( aOULibName ) ) 
+    if ( xDlgLibContainer.is() && xDlgLibContainer->hasByName( aOULibName ) && xDlgLibContainer->isLibraryReadOnly( aOULibName ) )
         SetReadOnly( sal_True );
 
     if ( rDocument.isDocument() && rDocument.isReadOnly() )
@@ -263,10 +263,10 @@ void DialogWindow::Command( const CommandEvent& rCEvt )
             {
 			    pDispatcher->ExecutePopup( IDEResId(RID_POPUP_DLGED) );
             }
-            
+
         }
     }
-    else	
+    else
 		IDEBaseWindow::Command( rCEvt );
 }
 
@@ -276,7 +276,7 @@ void DialogWindow::Command( const CommandEvent& rCEvt )
 IMPL_LINK( DialogWindow, NotifyUndoActionHdl, SfxUndoAction *, pUndoAction )
 {
     // #120515# pUndoAction needs to be deleted, this hand over is an ownership
-    // change. As long as it does not get added to the undo manager, it needs at 
+    // change. As long as it does not get added to the undo manager, it needs at
     // least to be deleted.
 	delete pUndoAction;
 
@@ -423,7 +423,7 @@ void __EXPORT DialogWindow::GetState( SfxItemSet& rSet )
 			case SID_SHOW_PROPERTYBROWSER:
 			{
                 BasicIDEShell* pIDEShell = IDE_DLL()->GetShell();
-                SfxViewFrame* pViewFrame = pIDEShell ? pIDEShell->GetViewFrame() : NULL;        
+                SfxViewFrame* pViewFrame = pIDEShell ? pIDEShell->GetViewFrame() : NULL;
                 if ( pViewFrame && !pViewFrame->HasChildWindow( SID_SHOW_PROPERTYBROWSER ) && !pEditor->GetView()->AreObjectsMarked() )
                     rSet.DisableItem( nWh );
 
@@ -431,7 +431,7 @@ void __EXPORT DialogWindow::GetState( SfxItemSet& rSet )
                     rSet.DisableItem( nWh );
             }
 			break;
-			
+
 			case SID_SELECTALL:
 			{
 				rSet.DisableItem( nWh );
@@ -660,7 +660,7 @@ void __EXPORT DialogWindow::ExecuteCommand( SfxRequest& rReq )
 	rReq.Done();
 }
 
-Reference< container::XNameContainer > DialogWindow::GetDialog() const 
+Reference< container::XNameContainer > DialogWindow::GetDialog() const
 {
 	return pEditor->GetDialog();
 }
@@ -746,16 +746,16 @@ sal_Bool DialogWindow::SaveDialog()
 
 		Reference< XSimpleFileAccess > xSFI( xMSF->createInstance
 			( ::rtl::OUString::createFromAscii( "com.sun.star.ucb.SimpleFileAccess" ) ), UNO_QUERY );
-	 
+
 		Reference< XOutputStream > xOutput;
 		try
 		{
 			if( xSFI->exists( aCurPath ) )
 				xSFI->kill( aCurPath );
-			xOutput = xSFI->openFileWrite( aCurPath ); 
+			xOutput = xSFI->openFileWrite( aCurPath );
         }
         catch( Exception& )
-        {} 
+        {}
 
 		if( xOutput.is() )
 		{
@@ -803,7 +803,7 @@ sal_Bool DialogWindow::SaveDialog()
 				aURLObj.removeSegment();
 				::rtl::OUString aURL( aURLObj.GetMainURL( INetURLObject::NO_DECODE ) );
 				sal_Bool bReadOnly = sal_False;
-				::rtl::OUString aComment( ::rtl::OUString::createFromAscii( "# " ) ); 
+				::rtl::OUString aComment( ::rtl::OUString::createFromAscii( "# " ) );
 				aComment += aDialogName;
 				aComment += ::rtl::OUString::createFromAscii( " strings" );
 				Reference< task::XInteractionHandler > xDummyHandler;
@@ -846,9 +846,9 @@ sal_Bool DialogWindow::SaveDialog()
 						}
 					}
 				}
-		
+
 				Reference< XStringResourceWithLocation > xStringResourceWithLocation =
-					StringResourceWithLocation::create( xContext, aURL, bReadOnly, 
+					StringResourceWithLocation::create( xContext, aURL, bReadOnly,
 						xStringResourceResolver->getDefaultLocale(), aDialogName, aComment, xDummyHandler );
 
 				// Add locales
@@ -909,7 +909,7 @@ std::vector< lang::Locale > implGetLanguagesOnlyContainedInFirstSeq
 		if( !bAlsoContainedInSecondSeq )
 			avRet.push_back( rFirstLocale );
 	}
-	
+
 	return avRet;
 }
 
@@ -1014,10 +1014,10 @@ sal_Bool implImportDialog( Window* pWin, const String& rCurPath, const ScriptDoc
 
 			Reference< XSimpleFileAccess > xSFI( xMSF->createInstance
 				( ::rtl::OUString::createFromAscii( "com.sun.star.ucb.SimpleFileAccess" ) ), UNO_QUERY_THROW );
-		 
+
 			Reference< XInputStream > xInput;
 			if( xSFI->exists( aCurPath ) )
-				xInput = xSFI->openFileRead( aCurPath ); 
+				xInput = xSFI->openFileRead( aCurPath );
 
 			Reference< XComponentContext > xContext;
 			Reference< beans::XPropertySet > xProps( xMSF, UNO_QUERY );
@@ -1058,7 +1058,7 @@ sal_Bool implImportDialog( Window* pWin, const String& rCurPath, const ScriptDoc
 			{
 				String aQueryBoxTitle( IDEResId( RID_STR_DLGIMP_CLASH_TITLE ) );
 				String aQueryBoxText( IDEResId( RID_STR_DLGIMP_CLASH_TEXT ) );
-				aQueryBoxText.SearchAndReplace( String( RTL_CONSTASCII_USTRINGPARAM( "$(ARG1)" ) ), aXmlDlgName ); 
+				aQueryBoxText.SearchAndReplace( String( RTL_CONSTASCII_USTRINGPARAM( "$(ARG1)" ) ), aXmlDlgName );
 
 				NameClashQueryBox aQueryBox( pWin, aQueryBoxTitle, aQueryBoxText );
 				sal_uInt16 nRet = aQueryBox.Execute();
@@ -1079,7 +1079,7 @@ sal_Bool implImportDialog( Window* pWin, const String& rCurPath, const ScriptDoc
 					return bDone;
 				}
 			}
-	 
+
 			BasicIDEShell* pIDEShell = IDE_DLL()->GetShell();
 			if( pIDEShell == NULL )
 			{
@@ -1092,7 +1092,7 @@ sal_Bool implImportDialog( Window* pWin, const String& rCurPath, const ScriptDoc
 			Reference< task::XInteractionHandler > xDummyHandler;
 			bool bReadOnly = true;
 			Reference< XStringResourceWithLocation > xImportStringResource =
-				StringResourceWithLocation::create( xContext, aBasePath, bReadOnly, 
+				StringResourceWithLocation::create( xContext, aBasePath, bReadOnly,
 				aLocale, aXmlDlgName, ::rtl::OUString(), xDummyHandler );
 
 			Sequence< lang::Locale > aImportLocaleSeq = xImportStringResource->getLocales();
@@ -1260,7 +1260,7 @@ sal_Bool implImportDialog( Window* pWin, const String& rCurPath, const ScriptDoc
 			bDone = sal_True;
         }
         catch( Exception& )
-        {} 
+        {}
 	}
 
 	return bDone;
@@ -1278,7 +1278,7 @@ sal_Bool DialogWindow::ImportDialog()
 
 DlgEdModel* DialogWindow::GetModel() const
 {
-	return pEditor ? pEditor->GetModel() : NULL;	
+	return pEditor ? pEditor->GetModel() : NULL;
 }
 
 DlgEdPage* DialogWindow::GetPage() const
@@ -1342,7 +1342,7 @@ sal_Bool DialogWindow::IsPasteAllowed()
 }
 
 void DialogWindow::StoreData()
-{	
+{
 	if ( IsModified() )
 	{
 		try
@@ -1352,7 +1352,7 @@ void DialogWindow::StoreData()
 			if( xLib.is() )
 			{
 				Reference< container::XNameContainer > xDialogModel = pEditor->GetDialog();
-					
+
 				if( xDialogModel.is() )
 				{
                     Reference< XComponentContext > xContext;

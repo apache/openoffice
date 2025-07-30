@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -45,12 +45,12 @@ void RTSDialog::insertAllPPDValues( ListBox& rBox, const PPDParser* pParser, con
 	const PPDValue* pValue = NULL;
 	sal_uInt16 nPos = 0;
 	String aOptionText;
-	
+
 	for( int i = 0; i < pKey->countValues(); i++ )
 	{
 		pValue = pKey->getValue( i );
 		aOptionText = pParser->translateOption( pKey->getKey(), pValue->m_aOption) ;
-		
+
 		if( m_aJobData.m_aContext.checkConstraints( pKey, pValue ) )
 		{
 			if( rBox.GetEntryPos( (void*)pValue ) == LISTBOX_ENTRY_NOTFOUND )
@@ -202,7 +202,7 @@ IMPL_LINK( RTSDialog, ClickButton, Button*, pButton )
 		if( m_pCommandPage )
 			// write command settings
 			m_pCommandPage->save();
-	
+
 		EndDialog( 1 );
 	}
 	else if( pButton == &m_aCancelButton )
@@ -221,7 +221,7 @@ RTSPaperPage::RTSPaperPage( RTSDialog* pParent ) :
 		TabPage( & pParent->m_aTabControl, PaResId( RID_RTS_PAPERPAGE ) ),
 
 		m_pParent( pParent ),
-		
+
 		m_aPaperText( this, PaResId( RID_RTS_PAPER_PAPER_TXT ) ),
 		m_aPaperBox( this, PaResId( RID_RTS_PAPER_PAPER_BOX ) ),
 		m_aOrientText( this, PaResId( RID_RTS_PAPER_ORIENTATION_TXT ) ),
@@ -239,7 +239,7 @@ RTSPaperPage::RTSPaperPage( RTSDialog* pParent ) :
 	FreeResource();
 
 	sal_uInt16 nPos = 0;
-	
+
 	m_aOrientBox.InsertEntry( PORTRAIT_STRING );
 	m_aOrientBox.InsertEntry( LSCAPE_STRING );
 	// duplex
@@ -266,12 +266,12 @@ RTSPaperPage::~RTSPaperPage()
 void RTSPaperPage::update()
 {
 	const PPDKey* pKey		= NULL;
-	
+
 	// orientation
 	m_aOrientBox.SelectEntry(
 		m_pParent->m_aJobData.m_eOrientation == orientation::Landscape
 		? LSCAPE_STRING : PORTRAIT_STRING );
-		
+
 	// duplex
 	if( m_pParent->m_aJobData.m_pParser &&
         (pKey = m_pParent->m_aJobData.m_pParser->getKey( String( RTL_CONSTASCII_USTRINGPARAM( "Duplex" ) ) )) )
@@ -395,7 +395,7 @@ RTSDevicePage::RTSDevicePage( RTSDialog* pParent ) :
 	        break;
 	    }
 	}
-	
+
 	m_aDepthBox.SelectEntry( String::CreateFromInt32( m_pParent->m_aJobData.m_nColorDepth ).AppendAscii( " Bit" ) );
 
 	// fill ppd boxes
@@ -601,7 +601,7 @@ IMPL_LINK( RTSOtherPage, ClickBtnHdl, Button*, pButton )
 			m_pParent->m_aJobData.m_nTopMarginAdjust =
 			m_pParent->m_aJobData.m_nBottomMarginAdjust = 0;
 
-		initValues();		
+		initValues();
 	}
 	return 0;
 }
@@ -759,7 +759,7 @@ class RTSPWDialog : public ModalDialog
 public:
     RTSPWDialog( const OString& rServer, const OString& rUserName, Window* pParent );
     ~RTSPWDialog();
-    
+
     OString getUserName() const;
     OString getPassword() const;
 };
@@ -822,7 +822,7 @@ extern "C" {
     bool SPA_DLLPUBLIC Sal_authenticateQuery( const OString& rServer, OString& rUserName, OString& rPassword )
     {
         bool bRet = false;
-        
+
         RTSPWDialog aDialog( rServer, rUserName, NULL );
         if( aDialog.Execute() )
         {

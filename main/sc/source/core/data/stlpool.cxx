@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -508,7 +508,7 @@ void ScStyleSheetPool::CreateStandardStyles()
 //UNUSED2008-05  void ScStyleSheetPool::UpdateStdNames()
 //UNUSED2008-05  {
 //UNUSED2008-05      //  Standard-Styles den richtigen Namen in der Programm-Sprache geben
-//UNUSED2008-05  
+//UNUSED2008-05
 //UNUSED2008-05      String aHelpFile;
 //UNUSED2008-05      sal_uInt32 nCount = aStyles.size();
 //UNUSED2008-05      for (sal_uInt32 n=0; n<nCount; n++)
@@ -519,7 +519,7 @@ void ScStyleSheetPool::CreateStandardStyles()
 //UNUSED2008-05              String aOldName     = pStyle->GetName();
 //UNUSED2008-05              sal_uLong nHelpId       = pStyle->GetHelpId( aHelpFile );
 //UNUSED2008-05              SfxStyleFamily eFam = pStyle->GetFamily();
-//UNUSED2008-05  
+//UNUSED2008-05
 //UNUSED2008-05              sal_Bool bHelpKnown = sal_True;
 //UNUSED2008-05              String aNewName;
 //UNUSED2008-05              sal_uInt16 nNameId = 0;
@@ -540,13 +540,13 @@ void ScStyleSheetPool::CreateStandardStyles()
 //UNUSED2008-05              {
 //UNUSED2008-05                  if ( nNameId )
 //UNUSED2008-05                      aNewName = SCSTR( nNameId );
-//UNUSED2008-05  
+//UNUSED2008-05
 //UNUSED2008-05                  if ( aNewName.Len() && aNewName != aOldName && !Find( aNewName, eFam ) )
 //UNUSED2008-05                  {
 //UNUSED2008-05                      DBG_TRACE( "Renaming style..." );
-//UNUSED2008-05  
+//UNUSED2008-05
 //UNUSED2008-05                      pStyle->SetName( aNewName );    // setzt auch Parents um
-//UNUSED2008-05  
+//UNUSED2008-05
 //UNUSED2008-05                      //  Styles in Patterns sind schon auf Pointer umgesetzt
 //UNUSED2008-05                      if (eFam == SFX_STYLE_FAMILY_PAGE)
 //UNUSED2008-05                      {
@@ -561,12 +561,12 @@ void ScStyleSheetPool::CreateStandardStyles()
 //UNUSED2008-05              else
 //UNUSED2008-05              {
 //UNUSED2008-05                  //  wrong or no HelpId -> set new HelpId
-//UNUSED2008-05  
+//UNUSED2008-05
 //UNUSED2008-05                  //  no assertion for wrong HelpIds because this happens
 //UNUSED2008-05                  //  with old files (#67218#) or with old files that were
 //UNUSED2008-05                  //  saved again with a new version in a different language
 //UNUSED2008-05                  //  (so SrcVersion doesn't help)
-//UNUSED2008-05  
+//UNUSED2008-05
 //UNUSED2008-05                  sal_uInt16 nNewId = 0;
 //UNUSED2008-05                  if ( eFam == SFX_STYLE_FAMILY_PARA )
 //UNUSED2008-05                  {
@@ -588,7 +588,7 @@ void ScStyleSheetPool::CreateStandardStyles()
 //UNUSED2008-05                      else if ( aOldName == SCSTR( STR_STYLENAME_REPORT ) )
 //UNUSED2008-05                          nNewId = HID_SC_SHEET_PAGE_REP;
 //UNUSED2008-05                  }
-//UNUSED2008-05  
+//UNUSED2008-05
 //UNUSED2008-05                  if ( nNewId )               // new ID found from name -> set ID
 //UNUSED2008-05                  {
 //UNUSED2008-05                      pStyle->SetHelpId( aHelpFile, nNewId );

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -410,7 +410,7 @@ void XMLTableImportContext::InitColumns()
 			if( pAutoStyles && xInfo->msStyleName.getLength() )
 			{
 				const XMLPropStyleContext* pStyle =
-					dynamic_cast< const XMLPropStyleContext* >( 
+					dynamic_cast< const XMLPropStyleContext* >(
 						pAutoStyles->FindStyleChildContext(XML_STYLE_FAMILY_TABLE_COLUMN, xInfo->msStyleName) );
 
 				if( pStyle )
@@ -495,7 +495,7 @@ SvXMLImportContext * XMLTableImportContext::ImportRow( sal_uInt16 nPrefix, const
 			if( pAutoStyles )
 			{
 				const XMLPropStyleContext* pStyle =
-					dynamic_cast< const XMLPropStyleContext* >( 
+					dynamic_cast< const XMLPropStyleContext* >(
 						pAutoStyles->FindStyleChildContext(XML_STYLE_FAMILY_TABLE_ROW, sStyleName) );
 
 				if( pStyle )
@@ -672,7 +672,7 @@ XMLCellImportContext::XMLCellImportContext( SvXMLImport& rImport, const Referenc
 		if( pAutoStyles )
 		{
 			const XMLPropStyleContext* pStyle =
-				dynamic_cast< const XMLPropStyleContext* >( 
+				dynamic_cast< const XMLPropStyleContext* >(
 					pAutoStyles->FindStyleChildContext(XML_STYLE_FAMILY_TABLE_CELL, sStyleName) );
 
 			if( pStyle )

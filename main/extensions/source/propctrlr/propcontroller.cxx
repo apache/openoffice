@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -179,7 +179,7 @@ namespace pcr
     {
         return m_xModel;
     }
-    
+
     //--------------------------------------------------------------------
     void OPropertyBrowserController::impl_initializeView_nothrow()
     {
@@ -219,7 +219,7 @@ namespace pcr
     {
         if ( !m_xModel.is() )
             return false;
-        
+
         return m_xModel->getIsReadOnly();
     }
 
@@ -274,7 +274,7 @@ namespace pcr
 
         impl_bindToNewModel_nothrow( _inspectorModel );
     }
-    
+
     //--------------------------------------------------------------------
     Reference< XObjectInspectorUI > SAL_CALL OPropertyBrowserController::getInspectorUI() throw (RuntimeException)
     {
@@ -309,7 +309,7 @@ namespace pcr
         // we don't have any dispatches at all, right now
         return Reference< XDispatch >();
     }
-    
+
     //--------------------------------------------------------------------
     Sequence< Reference< XDispatch > > SAL_CALL OPropertyBrowserController::queryDispatches( const Sequence< DispatchDescriptor >& Requests ) throw (RuntimeException)
     {
@@ -1353,7 +1353,7 @@ namespace pcr
             InteractiveSelectionResult eResult =
                 handler->second->onInteractivePropertySelection( _rName, _bPrimary, aData,
                     m_pUIRequestComposer->getUIForPropertyHandler( handler->second ) );
-            
+
             switch ( eResult )
             {
             case InteractiveSelectionResult_Cancelled:
@@ -1400,7 +1400,7 @@ namespace pcr
 
             if ( rName.equals( PROPERTY_IMAGE_URL ) )
             {
-                // if the prop value is the PlaceHolder 
+                // if the prop value is the PlaceHolder
                 // can ignore it
                 rtl::OUString sVal;
                 _rValue >>= sVal;
@@ -1459,7 +1459,7 @@ namespace pcr
     {
         m_aControlObservers.notifyEach( &XPropertyControlObserver::focusGained, _Control );
     }
-    
+
     //--------------------------------------------------------------------
     void OPropertyBrowserController::valueChanged( const Reference< XPropertyControl >& _Control )
     {
@@ -1716,7 +1716,7 @@ namespace pcr
     {
         m_aControlObservers.addInterface( _Observer );
     }
-    
+
     //--------------------------------------------------------------------
     void SAL_CALL OPropertyBrowserController::revokeControlObserver( const Reference< XPropertyControlObserver >& _Observer ) throw (RuntimeException)
     {

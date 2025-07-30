@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -244,7 +244,7 @@ void BubbleChart::createShapes()
     {
         ::std::vector< ::std::vector< VDataSeriesGroup > >::iterator             aZSlotIter = m_aZSlots.begin();
         const ::std::vector< ::std::vector< VDataSeriesGroup > >::const_iterator  aZSlotEnd = m_aZSlots.end();
-        
+
         aZSlotIter = m_aZSlots.begin();
         for( sal_Int32 nZ=1; aZSlotIter != aZSlotEnd; aZSlotIter++, nZ++ )
         {
@@ -284,7 +284,7 @@ void BubbleChart::createShapes()
 
                     if( !m_bShowNegativeValues && fBubbleSize<0.0 )
                         continue;
-                    
+
                     if( ::rtl::math::approxEqual( fBubbleSize, 0.0 ) || ::rtl::math::isNan(fBubbleSize) )
                         continue;
 
@@ -301,7 +301,7 @@ void BubbleChart::createShapes()
                     //transformation 3) -> 4)
                     drawing::Position3D aScenePosition( pPosHelper->transformLogicToScene( fLogicX,fLogicY,fLogicZ, false ) );
 
-                    //better performance for big data   
+                    //better performance for big data
                     FormerPoint aFormerPoint( aSeriesFormerPointMap[pSeries] );
                     pPosHelper->setCoordinateSystemResolution( m_aCoordinateSystemResolution );
                     if( !pSeries->isAttributedDataPoint(nIndex)
@@ -344,7 +344,7 @@ void BubbleChart::createShapes()
 
                             m_pShapeFactory->setShapeName( xShape, C2U("MarkHandles") );
                         }
-                     
+
                         //create data point label
                         if( (**aSeriesIter).getDataPointLabelIfLabel(nIndex) )
                         {
@@ -354,7 +354,7 @@ void BubbleChart::createShapes()
                                         , aScenePosition.PositionZ+this->getTransformedDepth() );
 
                             sal_Int32 nLabelPlacement = pSeries->getLabelPlacement( nIndex, m_xChartTypeModel, m_nDimension, pPosHelper->isSwapXAndY() );
-                            
+
                             switch(nLabelPlacement)
                             {
                             case ::com::sun::star::chart::DataLabelPlacement::TOP:

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 #include "quickstarter.hxx"
@@ -35,7 +35,7 @@ std::string GetOfficeInstallationPath(MSIHANDLE handle)
     std::string progpath;
     DWORD sz = 0;
     LPTSTR dummy = TEXT("");
-    
+
     if (MsiGetProperty(handle, TEXT("INSTALLLOCATION"), dummy, &sz) == ERROR_MORE_DATA)
     {
         sz++; // space for the final '\0'
@@ -43,7 +43,7 @@ std::string GetOfficeInstallationPath(MSIHANDLE handle)
         LPTSTR buff = reinterpret_cast<LPTSTR>(_alloca(nbytes));
         ZeroMemory(buff, nbytes);
         MsiGetProperty(handle, TEXT("INSTALLLOCATION"), buff, &sz);
-        progpath = buff;            
+        progpath = buff;
     }
     return progpath;
 }
@@ -53,7 +53,7 @@ std::string GetOfficeProductName(MSIHANDLE handle)
     std::string productname;
     DWORD sz = 0;
     LPTSTR dummy = TEXT("");
-    
+
     if (MsiGetProperty(handle, TEXT("ProductName"), dummy, &sz) == ERROR_MORE_DATA)
     {
         sz++; // space for the final '\0'
@@ -61,7 +61,7 @@ std::string GetOfficeProductName(MSIHANDLE handle)
         LPTSTR buff = reinterpret_cast<LPTSTR>(_alloca(nbytes));
         ZeroMemory(buff, nbytes);
         MsiGetProperty(handle, TEXT("ProductName"), buff, &sz);
-        productname = buff;            
+        productname = buff;
     }
     return productname;
 }
@@ -71,7 +71,7 @@ std::string GetQuickstarterLinkName(MSIHANDLE handle)
     std::string quickstarterlinkname;
     DWORD sz = 0;
     LPTSTR dummy = TEXT("");
-    
+
     if (MsiGetProperty(handle, TEXT("Quickstarterlinkname"), dummy, &sz) == ERROR_MORE_DATA)
     {
         sz++; // space for the final '\0'
@@ -79,7 +79,7 @@ std::string GetQuickstarterLinkName(MSIHANDLE handle)
         LPTSTR buff = reinterpret_cast<LPTSTR>(_alloca(nbytes));
         ZeroMemory(buff, nbytes);
         MsiGetProperty(handle, TEXT("Quickstarterlinkname"), buff, &sz);
-        quickstarterlinkname = buff;            
+        quickstarterlinkname = buff;
     }
     else if (MsiGetProperty(handle, TEXT("ProductName"), dummy, &sz) == ERROR_MORE_DATA)
     {
@@ -88,7 +88,7 @@ std::string GetQuickstarterLinkName(MSIHANDLE handle)
         LPTSTR buff = reinterpret_cast<LPTSTR>(_alloca(nbytes));
         ZeroMemory(buff, nbytes);
         MsiGetProperty(handle, TEXT("ProductName"), buff, &sz);
-        quickstarterlinkname = buff;            
+        quickstarterlinkname = buff;
     }
     return quickstarterlinkname;
 }

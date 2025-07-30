@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -42,7 +42,7 @@ namespace connectivity
 	}
 }
 // --------------------------------------------------------------------------------
-SkeletonDriver::SkeletonDriver() 
+SkeletonDriver::SkeletonDriver()
 	: ODriver_BASE(m_aMutex)
 {
 }
@@ -50,7 +50,7 @@ SkeletonDriver::SkeletonDriver()
 void SkeletonDriver::disposing()
 {
 	::osl::MutexGuard aGuard(m_aMutex);
-	
+
 	// when driver will be destroied so all our connections have to be destroied as well
 	for (OWeakRefArray::iterator i = m_xConnections.begin(); m_xConnections.end() != i; ++i)
 	{
@@ -74,7 +74,7 @@ rtl::OUString SkeletonDriver::getImplementationName_Static(  ) throw(RuntimeExce
 //------------------------------------------------------------------------------
 Sequence< ::rtl::OUString > SkeletonDriver::getSupportedServiceNames_Static(  ) throw (RuntimeException)
 {
-	// which service is supported 
+	// which service is supported
 	// for more information @see com.sun.star.sdbc.Driver
 	Sequence< ::rtl::OUString > aSNS( 1 );
 	aSNS[0] = ::rtl::OUString::createFromAscii("com.sun.star.sdbc.Driver");
@@ -113,11 +113,11 @@ Reference< XConnection > SAL_CALL SkeletonDriver::connect( const ::rtl::OUString
 	Reference< XConnection > xCon = pCon;	// important here because otherwise the connection could be deleted inside (refcount goes -> 0)
 	pCon->construct(url,info);				// late constructor call which can throw exception and allows a correct dtor call when so
 	m_xConnections.push_back(WeakReferenceHelper(*pCon));
-	
+
 	return xCon;
 }
 // --------------------------------------------------------------------------------
-sal_Bool SAL_CALL SkeletonDriver::acceptsURL( const ::rtl::OUString& url ) 
+sal_Bool SAL_CALL SkeletonDriver::acceptsURL( const ::rtl::OUString& url )
 		throw(SQLException, RuntimeException)
 {
 	// here we have to look if we support this url format
@@ -190,7 +190,7 @@ void checkDisposed(sal_Bool _bThrow) throw ( DisposedException )
 {
 	if (_bThrow)
 		throw DisposedException();
-		
+
 }
 //.........................................................................
 	}

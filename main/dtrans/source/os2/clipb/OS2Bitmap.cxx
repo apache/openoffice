@@ -69,7 +69,7 @@ LONG	lBitCountScreen;
 /*
  * Convert an OOo bitmap to an OS/2 bitmap handle
  *
- * An OOo bitmap is a BITMAPFILEHEADER structure followed by a Windows DIB 
+ * An OOo bitmap is a BITMAPFILEHEADER structure followed by a Windows DIB
  *
  * OS/2 InfoHeader is a superset of Win32 InhoHeader, so we can just copy
  * the win32 memory over the os2 memory and fix the cbFix field.
@@ -122,14 +122,14 @@ HBITMAP	OOoBmpToOS2Handle( Any &aAnyB)
 /*
  * Convert an OS/2 bitmap handle to OOo bitmap
  *
- * First we need to copy the bitmap to a PS, then we can get bitmap data. 
+ * First we need to copy the bitmap to a PS, then we can get bitmap data.
  *
 */
 int	OS2HandleToOOoBmp( HBITMAP hbm, Sequence< sal_Int8 >* OOoDIBStream)
 {
 	HAB 	hab = WinQueryAnchorBlock(HWND_DESKTOP);
-	HDC 	hdc; 
-	SIZEL 	sizl; 
+	HDC 	hdc;
+	SIZEL 	sizl;
 	HPS 	hps;
 	PM_BYTE*	pbBuffer;
 	ULONG	cbBuffer;
@@ -138,7 +138,7 @@ int	OS2HandleToOOoBmp( HBITMAP hbm, Sequence< sal_Int8 >* OOoDIBStream)
 		BITMAPINFOHEADER2 bmp2;
 		RGB2 argb2Color[0x100];
 	} bm;
-	
+
 	if (!lBitCountScreen) {
 		HPS hps = WinGetPS(HWND_DESKTOP);
 		HDC hdc = GpiQueryDevice(hps);
@@ -175,7 +175,7 @@ int	OS2HandleToOOoBmp( HBITMAP hbm, Sequence< sal_Int8 >* OOoDIBStream)
 	}
 	// copy bitmap to hps
 	GpiSetBitmap(hps, hbm);
-	
+
 	// buffer lengths
 	cbBuffer = (((bm.bmp2.cBitCount * bm.bmp2.cx) + 31) / 32) * 4 * bm.bmp2.cy * bm.bmp2.cPlanes;
 	pbBuffer = (PM_BYTE*) malloc( cbBuffer);
@@ -194,16 +194,16 @@ int	OS2HandleToOOoBmp( HBITMAP hbm, Sequence< sal_Int8 >* OOoDIBStream)
 	else
 		iNumColors = bm.bmp2.cclrUsed;
 	int iColorTableSize = iNumColors*sizeof(RGBQUAD);
-	
+
 	// reallocate data stream object size
-	OOoDIBStream->realloc( sizeof( W32_BITMAPFILEHEADER ) 
+	OOoDIBStream->realloc( sizeof( W32_BITMAPFILEHEADER )
 				+ sizeof( W32_BITMAPINFOHEADER) + iColorTableSize + cbBuffer);
 
 	// fill w32 file header data
 	PW32_BITMAPFILEHEADER pbfh = (PW32_BITMAPFILEHEADER) OOoDIBStream->getArray();
 	memset( pbfh, 0, sizeof( W32_BITMAPFILEHEADER));
 	pbfh->bfType = 'MB';
-	pbfh->bfSize = sizeof( W32_BITMAPFILEHEADER ) 
+	pbfh->bfSize = sizeof( W32_BITMAPFILEHEADER )
 				+ sizeof( W32_BITMAPINFOHEADER) + iColorTableSize + cbBuffer;
 	pbfh->bfOffBits = sizeof( W32_BITMAPFILEHEADER) + sizeof( W32_BITMAPINFOHEADER) + iColorTableSize;
 
@@ -233,7 +233,7 @@ int	OS2HandleToOOoBmp( HBITMAP hbm, Sequence< sal_Int8 >* OOoDIBStream)
 int main( void)
 {
 	HAB hAB = WinQueryAnchorBlock( HWND_DESKTOP );
-	
+
 	// query clipboard data to get mimetype
 	if( WinOpenClipbrd( hAB ) )
 	{
@@ -249,7 +249,7 @@ int main( void)
 				close( fd);
 			} else
 				printf( "failed conversion.\n");
-			
+
 		}
 		WinCloseClipbrd( hAB);
 	}

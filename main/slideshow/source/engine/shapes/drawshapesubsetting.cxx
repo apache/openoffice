@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -250,7 +250,7 @@ namespace slideshow
             maCurrentSubsets(),
             mbNodeTreeInitialized( false )
         {
-            ENSURE_OR_THROW( mpMtf, 
+            ENSURE_OR_THROW( mpMtf,
                               "DrawShapeSubsetting::DrawShapeSubsetting(): Invalid metafile" );
 
             initCurrentSubsets();
@@ -267,7 +267,7 @@ namespace slideshow
             maCurrentSubsets(),
             mbNodeTreeInitialized( false )
         {
-            ENSURE_OR_THROW( mpMtf, 
+            ENSURE_OR_THROW( mpMtf,
                               "DrawShapeSubsetting::DrawShapeSubsetting(): Invalid metafile" );
 
             initCurrentSubsets();
@@ -328,7 +328,7 @@ namespace slideshow
 
             // subset shape already created for this DocTreeNode?
             SubsetEntry aEntry;
-            
+
             aEntry.mnStartActionIndex 	= rTreeNode.getStartIndex();
             aEntry.mnEndActionIndex 	= rTreeNode.getEndIndex();
 
@@ -349,7 +349,7 @@ namespace slideshow
             // subset shape already created for this DocTreeNode?
             SubsetEntry aEntry;
             const DocTreeNode& rEffectiveSubset( rShape->getSubsetNode() );
-            
+
             aEntry.mnStartActionIndex 	= rEffectiveSubset.getStartIndex();
             aEntry.mnEndActionIndex 	= rEffectiveSubset.getEndIndex();
 
@@ -367,9 +367,9 @@ namespace slideshow
                 // not yet created, init entry
                 aEntry.mnSubsetQueriedCount = 1;
                 aEntry.mpShape = rShape;
-                
+
                 maSubsetShapes.insert( aEntry );
-                
+
                 // update cached subset borders
                 updateSubsetBounds( aEntry );
                 updateSubsets();
@@ -383,7 +383,7 @@ namespace slideshow
             // lookup subset shape
             SubsetEntry aEntry;
             const DocTreeNode& rEffectiveSubset( rShape->getSubsetNode() );
-            
+
             aEntry.mnStartActionIndex 	= rEffectiveSubset.getStartIndex();
             aEntry.mnEndActionIndex 	= rEffectiveSubset.getEndIndex();
 
@@ -425,7 +425,7 @@ namespace slideshow
             mnMinSubsetActionIndex = SAL_MAX_INT32;
             mnMaxSubsetActionIndex = 0;
 
-            // TODO(P2): This is quite expensive, when 
+            // TODO(P2): This is quite expensive, when
             // after every subset effect end, we have to scan
             // the whole shape set
 
@@ -535,7 +535,7 @@ namespace slideshow
 
                         case DrawShapeSubsetting::CLASS_SHAPE_END:
                             if( !io_rFunctor( DrawShapeSubsetting::CLASS_SHAPE_END,
-                                              nCurrShapeCount, 
+                                              nCurrShapeCount,
                                               aLastShapeStart,
                                               aNext ) )
                             {
@@ -547,7 +547,7 @@ namespace slideshow
                             // ends lines
                         case DrawShapeSubsetting::CLASS_PARAGRAPH_END:
                             if( !io_rFunctor( DrawShapeSubsetting::CLASS_PARAGRAPH_END,
-                                              nCurrParaCount, 
+                                              nCurrParaCount,
                                               aLastParaStart,
                                               aNext ) )
                             {
@@ -560,7 +560,7 @@ namespace slideshow
                             // ends line
                         case DrawShapeSubsetting::CLASS_LINE_END:
                             if( !io_rFunctor( DrawShapeSubsetting::CLASS_LINE_END,
-                                              nCurrLineCount, 
+                                              nCurrLineCount,
                                               aLastLineStart,
                                               aNext ) )
                             {
@@ -587,7 +587,7 @@ namespace slideshow
                             // FALLTHROUGH intended
                         case DrawShapeSubsetting::CLASS_SENTENCE_END:
                             if( !io_rFunctor( DrawShapeSubsetting::CLASS_SENTENCE_END,
-                                              nCurrSentenceCount, 
+                                              nCurrSentenceCount,
                                               aLastSentenceStart,
                                               aNext ) )
                             {
@@ -599,7 +599,7 @@ namespace slideshow
                             // FALLTHROUGH intended
                         case DrawShapeSubsetting::CLASS_WORD_END:
                             if( !io_rFunctor( DrawShapeSubsetting::CLASS_WORD_END,
-                                              nCurrWordCount, 
+                                              nCurrWordCount,
                                               aLastWordStart,
                                               aNext ) )
                             {
@@ -611,7 +611,7 @@ namespace slideshow
                             // FALLTHROUGH intended
                         case DrawShapeSubsetting::CLASS_CHARACTER_CELL_END:
                             if( !io_rFunctor( DrawShapeSubsetting::CLASS_CHARACTER_CELL_END,
-                                              nCurrCharCount, 
+                                              nCurrCharCount,
                                               aLastCharStart,
                                               aNext ) )
                             {
@@ -664,7 +664,7 @@ namespace slideshow
             class CountClassFunctor
             {
             public:
-                CountClassFunctor( DrawShapeSubsetting::IndexClassificator eClass ) : 
+                CountClassFunctor( DrawShapeSubsetting::IndexClassificator eClass ) :
                     meClass( eClass ),
                     mnCurrCount(0)
                 {
@@ -696,7 +696,7 @@ namespace slideshow
                                                                  const DrawShapeSubsetting::IndexClassificatorVector::const_iterator& rEnd,
                                                                  DocTreeNode::NodeType 												  eNodeType ) const
         {
-            const IndexClassificator eRequestedClass( 
+            const IndexClassificator eRequestedClass(
                 mapDocTreeNode( eNodeType ) );
 
             // create a counting functor for the requested class of
@@ -792,7 +792,7 @@ namespace slideshow
                                                           sal_Int32											nNodeIndex,
                                                           DocTreeNode::NodeType								eNodeType ) const
         {
-            const IndexClassificator eRequestedClass( 
+            const IndexClassificator eRequestedClass(
                 mapDocTreeNode( eNodeType ) );
 
             // create a nth element functor for the requested class of
@@ -856,6 +856,6 @@ namespace slideshow
         {
             return maCurrentSubsets;
         }
-        
+
     }
 }

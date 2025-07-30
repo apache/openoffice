@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -100,12 +100,12 @@ namespace drawinglayer
                         {
                             pNewTex.reset(
                                 new texture::GeoTexSvxGradientLinear(
-                                    aOutlineRange, 
-                                    aOutlineRange, 
-                                    aStart, 
-                                    aEnd, 
-                                    nSteps, 
-                                    rFillGradient.getBorder(), 
+                                    aOutlineRange,
+                                    aOutlineRange,
+                                    aStart,
+                                    aEnd,
+                                    nSteps,
+                                    rFillGradient.getBorder(),
                                     rFillGradient.getAngle()));
                             break;
                         }
@@ -113,12 +113,12 @@ namespace drawinglayer
                         {
                             pNewTex.reset(
                                 new texture::GeoTexSvxGradientAxial(
-                                    aOutlineRange, 
-                                    aOutlineRange, 
-                                    aStart, 
-                                    aEnd, 
-                                    nSteps, 
-                                    rFillGradient.getBorder(), 
+                                    aOutlineRange,
+                                    aOutlineRange,
+                                    aStart,
+                                    aEnd,
+                                    nSteps,
+                                    rFillGradient.getBorder(),
                                     rFillGradient.getAngle()));
                             break;
                         }
@@ -126,12 +126,12 @@ namespace drawinglayer
                         {
                             pNewTex.reset(
                                 new texture::GeoTexSvxGradientRadial(
-                                    aOutlineRange, 
-                                    aStart, 
-                                    aEnd, 
-                                    nSteps, 
-                                    rFillGradient.getBorder(), 
-                                    rFillGradient.getOffsetX(), 
+                                    aOutlineRange,
+                                    aStart,
+                                    aEnd,
+                                    nSteps,
+                                    rFillGradient.getBorder(),
+                                    rFillGradient.getOffsetX(),
                                     rFillGradient.getOffsetY()));
                             break;
                         }
@@ -139,13 +139,13 @@ namespace drawinglayer
                         {
                             pNewTex.reset(
                                 new texture::GeoTexSvxGradientElliptical(
-                                    aOutlineRange, 
-                                    aStart, 
-                                    aEnd, 
-                                    nSteps, 
-                                    rFillGradient.getBorder(), 
-                                    rFillGradient.getOffsetX(), 
-                                    rFillGradient.getOffsetY(), 
+                                    aOutlineRange,
+                                    aStart,
+                                    aEnd,
+                                    nSteps,
+                                    rFillGradient.getBorder(),
+                                    rFillGradient.getOffsetX(),
+                                    rFillGradient.getOffsetY(),
                                     rFillGradient.getAngle()));
                             break;
                         }
@@ -153,13 +153,13 @@ namespace drawinglayer
                         {
                             pNewTex.reset(
                                 new texture::GeoTexSvxGradientSquare(
-                                    aOutlineRange, 
-                                    aStart, 
-                                    aEnd, 
-                                    nSteps, 
-                                    rFillGradient.getBorder(), 
-                                    rFillGradient.getOffsetX(), 
-                                    rFillGradient.getOffsetY(), 
+                                    aOutlineRange,
+                                    aStart,
+                                    aEnd,
+                                    nSteps,
+                                    rFillGradient.getBorder(),
+                                    rFillGradient.getOffsetX(),
+                                    rFillGradient.getOffsetY(),
                                     rFillGradient.getAngle()));
                             break;
                         }
@@ -167,13 +167,13 @@ namespace drawinglayer
                         {
                             pNewTex.reset(
                                 new texture::GeoTexSvxGradientRect(
-                                    aOutlineRange, 
-                                    aStart, 
-                                    aEnd, 
-                                    nSteps, 
-                                    rFillGradient.getBorder(), 
-                                    rFillGradient.getOffsetX(), 
-                                    rFillGradient.getOffsetY(), 
+                                    aOutlineRange,
+                                    aStart,
+                                    aEnd,
+                                    nSteps,
+                                    rFillGradient.getBorder(),
+                                    rFillGradient.getOffsetX(),
+                                    rFillGradient.getOffsetY(),
                                     rFillGradient.getAngle()));
                             break;
                         }
@@ -271,13 +271,13 @@ namespace drawinglayer
 
                 // create texture
                 const attribute::FillGraphicAttribute& rFillGraphicAttribute = rPrimitive.getFillGraphicAttribute();
-                
+
                 // #121194# For 3D texture we will use the BitmapRex representation
                 const BitmapEx aBitmapEx(rFillGraphicAttribute.getGraphic().GetBitmapEx());
-                
+
                 // create range scaled by texture size
                 basegfx::B2DRange aGraphicRange(rFillGraphicAttribute.getGraphicRange());
-                
+
                 aGraphicRange.transform(
                     basegfx::tools::createScaleB2DHomMatrix(
                         rPrimitive.getTextureSize()));
@@ -286,7 +286,7 @@ namespace drawinglayer
                 {
                     mpGeoTexSvx.reset(
                         new texture::GeoTexSvxBitmapExTiled(
-                            aBitmapEx, 
+                            aBitmapEx,
                             aGraphicRange,
                             rFillGraphicAttribute.getOffsetX(),
                             rFillGraphicAttribute.getOffsetY()));
@@ -295,7 +295,7 @@ namespace drawinglayer
                 {
                     mpGeoTexSvx.reset(
                         new texture::GeoTexSvxBitmapEx(
-                            aBitmapEx, 
+                            aBitmapEx,
                             aGraphicRange));
                 }
 
@@ -345,7 +345,7 @@ namespace drawinglayer
                 if(a2DRange.overlaps(maRasterRange))
                 {
                     const attribute::MaterialAttribute3D aMaterial(maBColorModifierStack.getModifiedColor(rPrimitive.getBColor()));
-                    
+
                     rasterconvertB3DPolygon(aMaterial, aHairline);
                 }
             }
@@ -359,7 +359,7 @@ namespace drawinglayer
 
             // #i98295# get ShadeMode. Correct early when only flat is possible due to missing normals
             const ::com::sun::star::drawing::ShadeMode aShadeMode(
-                aFill.areNormalsUsed() ? 
+                aFill.areNormalsUsed() ?
                     getSdrSceneAttribute().getShadeMode() : ::com::sun::star::drawing::ShadeMode_FLAT);
 
             if(bPaintIt)
@@ -439,7 +439,7 @@ namespace drawinglayer
                         for(sal_uInt32 a(0L); a < aFill.count(); a++)
                         {
                             basegfx::B3DPolygon aPartFill(aFill.getB3DPolygon(a));
-                            
+
                             for(sal_uInt32 b(0L); b < aPartFill.count(); b++)
                             {
                                 // solve color model. Transform normal to eye coor
@@ -480,11 +480,11 @@ namespace drawinglayer
 
                 // draw it to ZBuffer
                 const attribute::MaterialAttribute3D aMaterial(
-                    maBColorModifierStack.getModifiedColor(aObjectColor), 
-                    rPrimitive.getMaterial().getSpecular(), 
-                    rPrimitive.getMaterial().getEmission(), 
+                    maBColorModifierStack.getModifiedColor(aObjectColor),
+                    rPrimitive.getMaterial().getSpecular(),
+                    rPrimitive.getMaterial().getEmission(),
                     rPrimitive.getMaterial().getSpecularIntensity());
-                
+
                 rasterconvertB3DPolyPolygon(aMaterial, aFill);
             }
         }

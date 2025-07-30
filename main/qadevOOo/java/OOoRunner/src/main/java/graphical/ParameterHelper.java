@@ -19,8 +19,6 @@
  *
  *************************************************************/
 
-
-
 package graphical;
 
 import com.sun.star.lang.XMultiServiceFactory;
@@ -29,8 +27,8 @@ import lib.TestParameters;
 /**
  * This class object is more a Helper or Controller.
  * It stores information like:
- * - How to create a document (with a OpenOffice.org method, or with MS Word, or with OpenOffice.org as pdf)
- * - some more infos for OpenOffice.org method
+ * - How to create a document (with a OpenOffice method, or with MS Word, or with OpenOffice as pdf)
+ * - some more info for OpenOffice method
  *   - a service factory pointer
  *   - if hidden mode should use
  *   - target name
@@ -40,7 +38,7 @@ import lib.TestParameters;
  * - how to handle .xml files, which in Microsoft could be Excel or Word documents
  *
  * HOWTO USE:
- * For OOo,
+ * For AOO,
  *   create an ParameterHelper with a set of TestParameters
  *    ParameterHelper a = new ParameterHelper(params);
  *
@@ -165,7 +163,7 @@ public class ParameterHelper
             String sRECURSIVE = (String)getTestParameters().get( PropertyName.DOC_COMPARATOR_INCLUDE_SUBDIRS );
 // TODO: I need to get the boolean value with get("name") because, if it is not given getBool() returns
 //       with a default of 'false' which is not very helpful if the default should be 'true'
-//       maybe a getBoolean("name", true) could be a better choise.
+//       maybe a getBoolean("name", true) could be a better choice.
             if (sRECURSIVE == null)
             {
                 sRECURSIVE = "true";
@@ -220,7 +218,7 @@ public class ParameterHelper
 
     PerformanceContainer m_aPerformanceContainer = null;
     /**
-     * helper class for performance analyser features
+     * helper class for performance analyzer features
      * @return
      */
     public PerformanceContainer getPerformance()
@@ -233,7 +231,7 @@ public class ParameterHelper
         }
 
     /**
-     * Helper function to get the buildid of the current used OpenOffice.org
+     * Helper function to get the buildid of the current used OpenOffice
      * out of the AppExecutionCommand the build ID
      * @return
      */
@@ -272,7 +270,7 @@ public class ParameterHelper
             return xMSF;
         }
 
-    // Hidden = true hiddes a used OpenOffice.org, all code is executed in the background
+    // Hidden = true hides a used OpenOffice, all code is executed in the background
     // This parameter is not used for RefType: msoffice
     // boolean m_bHidden = true;
 

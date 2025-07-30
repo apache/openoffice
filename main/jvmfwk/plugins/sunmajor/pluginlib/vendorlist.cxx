@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -53,7 +53,7 @@ BEGIN_VENDOR_MAP()
     VENDOR_MAP_ENTRY("The FreeBSD Foundation", OtherInfo)
     VENDOR_MAP_ENTRY("AdoptOpenJDK", OtherInfo)
     VENDOR_MAP_ENTRY("OpenJDK", SunInfo)
-END_VENDOR_MAP()    
+END_VENDOR_MAP()
 
 
 Sequence<OUString> getVendorNames()
@@ -73,7 +73,7 @@ bool isVendorSupported(const rtl::OUString& sVendor)
     Sequence<OUString> seqNames = getVendorNames();
     const OUString * arNames = seqNames.getConstArray();
     sal_Int32 count = seqNames.getLength();
-    
+
     for (int i = 0; i < count; i++)
     {
         if (sVendor.equals(arNames[i]))
@@ -83,7 +83,7 @@ bool isVendorSupported(const rtl::OUString& sVendor)
     OString sVendorName = OUStringToOString(sVendor, osl_getThreadTextEncoding());
     fprintf(stderr, "[Java frameworksunjavaplugin.so]sunjavaplugin does not support vendor: %s.\n",
             sVendorName.getStr());
-#endif    
+#endif
     return false;
 }
 

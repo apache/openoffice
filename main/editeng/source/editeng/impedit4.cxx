@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -1469,7 +1469,7 @@ SpellInfo * ImpEditEngine::CreateSpellInfo( const EditSelection &rSel, bool bMul
 //    pSpellInfo->aSpellStart = CreateEPaM( aSentenceSel.Min() );
 //    pSpellInfo->aSpellTo    = CreateEPaM( rSel.HasRange()? aSentenceSel.Max() : aSentenceSel.Min() );
     // always spell draw objects completely, startting at the top.
-    // (spelling in only a selection or not starting with the top requires 
+    // (spelling in only a selection or not starting with the top requires
     // further changes elsewehe to work properly)
 	pSpellInfo->aSpellStart = EPaM();
     pSpellInfo->aSpellTo    = EPaM( EE_PARA_NOT_FOUND, EE_INDEX_NOT_FOUND );
@@ -2020,8 +2020,8 @@ Reference< XSpellAlternatives > ImpEditEngine::ImpFindNextError(EditSelection& r
 /*-- 13.10.2003 16:43:27---------------------------------------------------
 
   -----------------------------------------------------------------------*/
-bool ImpEditEngine::SpellSentence(EditView& rEditView, 
-    ::svx::SpellPortions& rToFill, 
+bool ImpEditEngine::SpellSentence(EditView& rEditView,
+    ::svx::SpellPortions& rToFill,
     bool /*bIsGrammarChecking*/ )
 {
 #ifdef SVX_LIGHT
@@ -2189,8 +2189,8 @@ void ImpEditEngine::AddPortionIterated(
 /*-- 13.10.2003 16:43:33---------------------------------------------------
 
   -----------------------------------------------------------------------*/
-void ImpEditEngine::ApplyChangedSentence(EditView& rEditView, 
-    const ::svx::SpellPortions& rNewPortions, 
+void ImpEditEngine::ApplyChangedSentence(EditView& rEditView,
+    const ::svx::SpellPortions& rNewPortions,
     bool bRecheck )
 {
 #ifdef SVX_LIGHT
@@ -2313,7 +2313,7 @@ void ImpEditEngine::ApplyChangedSentence(EditView& rEditView,
             aNext = EditPaM( aOldSel.Max().GetNode(), nEndOfSentence );
         }
         rEditView.pImpEditView->SetEditSelection( aNext );
-        
+
         FormatAndUpdate();
         aEditDoc.SetModified(sal_True);
     }
@@ -2330,7 +2330,7 @@ void ImpEditEngine::PutSpellingToSentenceStart( EditView& rEditView )
     {
         rEditView.pImpEditView->SetEditSelection( pSpellInfo->aLastSpellContentSelections.begin()->Min() );
     }
-  
+
 #endif
 }
 
@@ -2865,17 +2865,17 @@ EditSelection ImpEditEngine::TransliterateText( const EditSelection& rSelection,
 		sal_uInt16 nLanguage = LANGUAGE_SYSTEM;
 
         // since we don't use Hiragana/Katakana or half-width/full-width transliterations here
-        // it is fine to use ANYWORD_IGNOREWHITESPACES. (ANY_WORD btw is broken and will 
+        // it is fine to use ANYWORD_IGNOREWHITESPACES. (ANY_WORD btw is broken and will
         // occasionally miss words in consecutive sentences). Also with ANYWORD_IGNOREWHITESPACES
         // text like 'just-in-time' will be converted to 'Just-In-Time' which seems to be the
         // proper thing to do.
         const sal_Int16 nWordType = i18n::WordType::ANYWORD_IGNOREWHITESPACES;
 
         //! In order to have less trouble with changing text size, e.g. because
-        //! of ligatures or � (German small sz) being resolved, we need to process 
-        //! the text replacements from end to start. 
-        //! This way the offsets for the yet to be changed words will be 
-        //! left unchanged by the already replaced text. 
+        //! of ligatures or � (German small sz) being resolved, we need to process
+        //! the text replacements from end to start.
+        //! This way the offsets for the yet to be changed words will be
+        //! left unchanged by the already replaced text.
         //! For this we temporarily save the changes to be done in this vector
         std::vector< TransliterationChgData >   aChanges;
         TransliterationChgData                  aChgData;
@@ -2888,11 +2888,11 @@ EditSelection ImpEditEngine::TransliterateText( const EditSelection& rSelection,
             i18n::Boundary aEndBndry;
             aSttBndry = _xBI->getWordBoundary(
                         *pNode, nStartPos,
-                        SvxCreateLocale( GetLanguage( EditPaM( pNode, nStartPos + 1 ) ) ), 
+                        SvxCreateLocale( GetLanguage( EditPaM( pNode, nStartPos + 1 ) ) ),
                         nWordType, sal_True /*prefer forward direction*/);
             aEndBndry = _xBI->getWordBoundary(
                         *pNode, nEndPos,
-                        SvxCreateLocale( GetLanguage( EditPaM( pNode, nEndPos + 1 ) ) ), 
+                        SvxCreateLocale( GetLanguage( EditPaM( pNode, nEndPos + 1 ) ) ),
                         nWordType, sal_False /*prefer backward direction*/);
 
             // prevent backtracking to the previous word if selection is at word boundary
@@ -2924,8 +2924,8 @@ EditSelection ImpEditEngine::TransliterateText( const EditSelection& rSelection,
 #endif
 
 	            Sequence< sal_Int32 > aOffsets;
-                String aNewText( aTranslitarationWrapper.transliterate( *pNode, 
-                        GetLanguage( EditPaM( pNode, nCurrentStart + 1 ) ), 
+                String aNewText( aTranslitarationWrapper.transliterate( *pNode,
+                        GetLanguage( EditPaM( pNode, nCurrentStart + 1 ) ),
                         nCurrentStart, nLen, &aOffsets ));
 
                 if (!pNode->Equals( aNewText, nCurrentStart, nLen ))
@@ -2942,8 +2942,8 @@ EditSelection ImpEditEngine::TransliterateText( const EditSelection& rSelection,
                 (void) aSelTxt;
 #endif
 
-                aCurWordBndry = _xBI->nextWord( *pNode, nCurrentEnd, 
-                        SvxCreateLocale( GetLanguage( EditPaM( pNode, nCurrentEnd + 1 ) ) ), 
+                aCurWordBndry = _xBI->nextWord( *pNode, nCurrentEnd,
+                        SvxCreateLocale( GetLanguage( EditPaM( pNode, nCurrentEnd + 1 ) ) ),
                         nWordType);
             }
             DBG_ASSERT( nCurrentEnd >= aEndBndry.endPos, "failed to reach end of transliteration" );
@@ -2952,19 +2952,19 @@ EditSelection ImpEditEngine::TransliterateText( const EditSelection& rSelection,
         {
             // for 'sentence case' we need to iterate sentence by sentence
 
-            sal_Int32 nLastStart = _xBI->beginOfSentence( 
-                    *pNode, nEndPos, 
+            sal_Int32 nLastStart = _xBI->beginOfSentence(
+                    *pNode, nEndPos,
                     SvxCreateLocale( GetLanguage( EditPaM( pNode, nEndPos + 1 ) ) ) );
-            sal_Int32 nLastEnd = _xBI->endOfSentence( 
-                    *pNode, nLastStart, 
+            sal_Int32 nLastEnd = _xBI->endOfSentence(
+                    *pNode, nLastStart,
                     SvxCreateLocale( GetLanguage( EditPaM( pNode, nLastStart + 1 ) ) ) );
-            
+
             // extend nCurrentStart, nCurrentEnd to the current sentence boundaries
-            nCurrentStart = _xBI->beginOfSentence( 
-                    *pNode, nStartPos, 
+            nCurrentStart = _xBI->beginOfSentence(
+                    *pNode, nStartPos,
                     SvxCreateLocale( GetLanguage( EditPaM( pNode, nStartPos + 1 ) ) ) );
-            nCurrentEnd = _xBI->endOfSentence( 
-                    *pNode, nCurrentStart, 
+            nCurrentEnd = _xBI->endOfSentence(
+                    *pNode, nCurrentStart,
                     SvxCreateLocale( GetLanguage( EditPaM( pNode, nCurrentStart + 1 ) ) ) );
 
             // prevent backtracking to the previous sentence if selection starts at end of a sentence
@@ -2972,18 +2972,18 @@ EditSelection ImpEditEngine::TransliterateText( const EditSelection& rSelection,
             {
                 // now nCurrentStart is probably located on a non-letter word. (unless we
                 // are in Asian text with no spaces...)
-                // Thus to get the real sentence start we should locate the next real word, 
+                // Thus to get the real sentence start we should locate the next real word,
                 // that is one found by DICTIONARY_WORD
-                i18n::Boundary aBndry = _xBI->nextWord( *pNode, nCurrentEnd, 
-                        SvxCreateLocale( GetLanguage( EditPaM( pNode, nCurrentEnd + 1 ) ) ), 
+                i18n::Boundary aBndry = _xBI->nextWord( *pNode, nCurrentEnd,
+                        SvxCreateLocale( GetLanguage( EditPaM( pNode, nCurrentEnd + 1 ) ) ),
                         i18n::WordType::DICTIONARY_WORD);
 
                 // now get new current sentence boundaries
-                nCurrentStart = _xBI->beginOfSentence( 
-                        *pNode, aBndry.startPos, 
+                nCurrentStart = _xBI->beginOfSentence(
+                        *pNode, aBndry.startPos,
                         SvxCreateLocale( GetLanguage( EditPaM( pNode, aBndry.startPos + 1 ) ) ) );
-                nCurrentEnd = _xBI->endOfSentence( 
-                        *pNode, nCurrentStart, 
+                nCurrentEnd = _xBI->endOfSentence(
+                        *pNode, nCurrentStart,
                         SvxCreateLocale( GetLanguage( EditPaM( pNode, nCurrentStart + 1 ) ) ) );
             }
             // prevent advancing to the next sentence if selection ends at start of a sentence
@@ -2991,13 +2991,13 @@ EditSelection ImpEditEngine::TransliterateText( const EditSelection& rSelection,
             {
                 // now nCurrentStart is probably located on a non-letter word. (unless we
                 // are in Asian text with no spaces...)
-                // Thus to get the real sentence start we should locate the previous real word, 
+                // Thus to get the real sentence start we should locate the previous real word,
                 // that is one found by DICTIONARY_WORD
-                i18n::Boundary aBndry = _xBI->previousWord( *pNode, nLastStart, 
-                        SvxCreateLocale( GetLanguage( EditPaM( pNode, nLastStart + 1 ) ) ), 
+                i18n::Boundary aBndry = _xBI->previousWord( *pNode, nLastStart,
+                        SvxCreateLocale( GetLanguage( EditPaM( pNode, nLastStart + 1 ) ) ),
                         i18n::WordType::DICTIONARY_WORD);
-                nLastEnd = _xBI->endOfSentence( 
-                        *pNode, aBndry.startPos, 
+                nLastEnd = _xBI->endOfSentence(
+                        *pNode, aBndry.startPos,
                         SvxCreateLocale( GetLanguage( EditPaM( pNode, aBndry.startPos + 1 ) ) ) );
                 if (nCurrentEnd > nLastEnd)
                     nCurrentEnd = nLastEnd;
@@ -3012,8 +3012,8 @@ EditSelection ImpEditEngine::TransliterateText( const EditSelection& rSelection,
 #endif
 
 	            Sequence< sal_Int32 > aOffsets;
-                String aNewText( aTranslitarationWrapper.transliterate( *pNode, 
-                        GetLanguage( EditPaM( pNode, nCurrentStart + 1 ) ), 
+                String aNewText( aTranslitarationWrapper.transliterate( *pNode,
+                        GetLanguage( EditPaM( pNode, nCurrentStart + 1 ) ),
                         nCurrentStart, nLen, &aOffsets ));
 
                 if (!pNode->Equals( aNewText, nCurrentStart, nLen ))
@@ -3032,8 +3032,8 @@ EditSelection ImpEditEngine::TransliterateText( const EditSelection& rSelection,
                         SvxCreateLocale( GetLanguage( EditPaM( pNode, nCurrentEnd + 1 ) ) ),
                         nWordType);
                 nCurrentStart = aFirstWordBndry.startPos;
-                nCurrentEnd = _xBI->endOfSentence( 
-                        *pNode, nCurrentStart, 
+                nCurrentEnd = _xBI->endOfSentence(
+                        *pNode, nCurrentStart,
                         SvxCreateLocale( GetLanguage( EditPaM( pNode, nCurrentStart + 1 ) ) ) );
             }
             DBG_ASSERT( nCurrentEnd >= nLastEnd, "failed to reach end of transliteration" );
@@ -3119,8 +3119,8 @@ EditSelection ImpEditEngine::TransliterateText( const EditSelection& rSelection,
 
                 sal_uInt32 nSelNode = aEditDoc.GetPos( rData.aSelection.Min().GetNode() );
                 ParaPortion* pParaPortion = GetParaPortions()[nSelNode];
-			    pParaPortion->MarkSelectionInvalid( rData.nStart, 
-                        std::max< sal_uInt16 >( rData.nStart + rData.nLen, 
+			    pParaPortion->MarkSelectionInvalid( rData.nStart,
+                        std::max< sal_uInt16 >( rData.nStart + rData.nLen,
                                             rData.nStart + rData.aNewText.Len() ) );
 		    }
         } // if (aChanges.size() > 0)
@@ -3148,7 +3148,7 @@ EditSelection ImpEditEngine::TransliterateText( const EditSelection& rSelection,
 }
 
 
-short ImpEditEngine::ReplaceTextOnly( 
+short ImpEditEngine::ReplaceTextOnly(
     ContentNode* pNode,
     sal_uInt16 nCurrentStart, xub_StrLen nLen,
 	const String& rNewText,

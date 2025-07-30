@@ -19,7 +19,6 @@
  *
  *************************************************************/
 
-
 package complex.filter.detection.typeDetection;
 
 import com.sun.star.beans.PropertyValue;
@@ -45,8 +44,6 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 import org.openoffice.test.Argument;
 import org.openoffice.test.OfficeConnection;
-
-
 
 /** Check "TypeDetection"
  * <p>
@@ -96,7 +93,7 @@ import org.openoffice.test.OfficeConnection;
  * %SO6formatversion=6.0
  *
  * <code>TestDocumentPath</code>: this is the path to your test documents. If
- * you have grouped your documents ie. by writer, calc, ... then it should be
+ * you have grouped your documents i.e. by Writer, Calc, ... then it should be
  * the root path. To specify the particular sub folders you have to use
  * <code>csv.files</code>
  * <p>
@@ -124,7 +121,7 @@ import org.openoffice.test.OfficeConnection;
  * <H3><A name="preselectedFilter.csv"</a>
  * <code>preselectedFilter.csv</code></H3>
  * In this file you can choose a special
- * filter to detect the document. This make sense ie. for csv-files: You can
+ * filter to detect the document. This make sense i.e. for csv-files: You can
  * open csv files as Writer or as Calc. To check this case you have to specify
  * in <code>csv.files</code> a fileAlias like ?csv_writer? and ?csv_calc? with
  * the same fileURL and it's specific defaultFileType.
@@ -141,7 +138,7 @@ import org.openoffice.test.OfficeConnection;
  * %SO6formatversion</code> will be replaced by the equals of
  * <code>typeDetection.props</code>. The filter names depends on the Office
  * name and version. So a future Office could called ?StarSuite 8?.
- * <code>FilterOptions</code> is not relevant for this filter. But ie. for csv
+ * <code>FilterOptions</code> is not relevant for this filter. But i.e. for csv
  * filter this entry could be used to specify the separator of the csv file.
  * <code>FilterData<code> if filter needs some FilterData arguments you can
  * specify it here
@@ -192,7 +189,7 @@ public class TypeDetection {
 
     /**
      * @member m_xDetection     the object to test
-     * @member helper           instacne of helper class
+     * @member helper           instance of helper class
      */
     static XTypeDetection   m_xDetection;
     static Helper helper = null;
@@ -219,7 +216,7 @@ public class TypeDetection {
 
         m_xDetection = (XTypeDetection)
                 UnoRuntime.queryInterface(XTypeDetection.class, oInterface);
-        // create instrace of helper class
+        // create instance of helper class
         helper = new Helper(xMSF);
     }
 
@@ -232,7 +229,7 @@ public class TypeDetection {
 
     /**
      * The <code>MediaDescriptor</code> was filled with the URL of a file. The
-     * <code>type</code> of the file is kown and must be returned by
+     * <code>type</code> of the file is known and must be returned by
      * <code>MediaDescriptor</code>
      *
      * Syntax of files.csv:
@@ -287,7 +284,7 @@ public class TypeDetection {
                    "'\n\texpected type: '" + fileType + "'",fileTypeOK);
     }
 
-    /** Filles a MediaDescriptor with a <code>XInputStream</code> of the test
+    /** Fills a MediaDescriptor with a <code>XInputStream</code> of the test
      * file given by URL.
      * Then the MediaDescriptor was used as parameter for TypeDetection.
      * The TypeDetection must return expected type
@@ -327,7 +324,7 @@ public class TypeDetection {
 
     /**
      * The <code>MediaDescriptor</code> was filled with the URL of a file. The
-     * <code>type</code> of the file is kown and must be returned by
+     * <code>type</code> of the file is known and must be returned by
      * <code>MediaDescriptor</code>
      *
      * Syntax of files.csv:

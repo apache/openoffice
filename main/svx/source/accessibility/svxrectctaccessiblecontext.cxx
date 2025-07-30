@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -1039,15 +1039,15 @@ Reference<XAccessibleRelationSet> SAL_CALL SvxRectCtlChildAccessibleContext::get
 {
 	//return Reference< XAccessibleRelationSet >();
 	utl::AccessibleRelationSetHelper* pRelationSetHelper = new utl::AccessibleRelationSetHelper;
-	uno::Reference< accessibility::XAccessibleRelationSet > xSet = pRelationSetHelper;	
+	uno::Reference< accessibility::XAccessibleRelationSet > xSet = pRelationSetHelper;
 	if( mxParent.is() )
       {
 		uno::Sequence< uno::Reference< uno::XInterface > > aSequence(1);
 		aSequence[0] = mxParent;
 		pRelationSetHelper->AddRelation( accessibility::AccessibleRelation( accessibility::AccessibleRelationType::MEMBER_OF, aSequence ) );
-		
+
 	}
-	
+
 	return xSet;
 }
 
@@ -1165,7 +1165,7 @@ sal_Int32 SvxRectCtlChildAccessibleContext::getAccessibleActionCount( ) throw (R
 {
 	::osl::MutexGuard	aGuard( maMutex );
 
-	return 1;	
+	return 1;
 }
 
 // -----------------------------------------------------------------------------
@@ -1180,7 +1180,7 @@ sal_Bool SvxRectCtlChildAccessibleContext::doAccessibleAction ( sal_Int32 nIndex
 	Reference<XAccessibleSelection> xSelection( mxParent, UNO_QUERY);
 
 	xSelection->selectAccessibleChild(mnIndexInParent);
-	
+
 	return sal_True;
 }
 
@@ -1203,7 +1203,7 @@ Reference< XAccessibleKeyBinding > SvxRectCtlChildAccessibleContext::getAccessib
 
     if ( nIndex < 0 || nIndex >= getAccessibleActionCount() )
         throw IndexOutOfBoundsException();
-	
+
     return Reference< XAccessibleKeyBinding >();
 }
 

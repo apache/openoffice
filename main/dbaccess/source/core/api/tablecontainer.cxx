@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -110,7 +110,7 @@ namespace
 //==========================================================================
 DBG_NAME(OTableContainer)
 //------------------------------------------------------------------------------
-OTableContainer::OTableContainer(::cppu::OWeakObject& _rParent, 
+OTableContainer::OTableContainer(::cppu::OWeakObject& _rParent,
 								 ::osl::Mutex& _rMutex,
 								 const Reference< XConnection >& _xCon,
 								 sal_Bool _bCase,
@@ -122,7 +122,7 @@ OTableContainer::OTableContainer(::cppu::OWeakObject& _rParent,
 	,m_xTableDefinitions(_xTableDefinitions)
 	,m_pTableMediator( NULL )
 	,m_bInDrop(sal_False)
-{					  
+{
 	DBG_CTOR(OTableContainer, NULL);
 }
 
@@ -188,7 +188,7 @@ void lcl_createDefintionObject(const ::rtl::OUString& _rName
 		}
 		Reference<XColumnsSupplier> xColumnsSupplier(_xTableDefinition,UNO_QUERY);
 		if ( xColumnsSupplier.is() )
-			_xColumnDefinitions = xColumnsSupplier->getColumns();		
+			_xColumnDefinitions = xColumnsSupplier->getColumns();
 	}
 }
 // -------------------------------------------------------------------------
@@ -207,7 +207,7 @@ connectivity::sdbcx::ObjectType OTableContainer::createObject(const ::rtl::OUStr
 		Reference<XPropertySet> xTableDefinition;
 		Reference<XNameAccess> xColumnDefinitions;
 		lcl_createDefintionObject(_rName,m_xTableDefinitions,xTableDefinition,xColumnDefinitions,sal_False);
-		
+
 		if ( xSup.is() )
 		{
             ODBTableDecorator* pTable = new ODBTableDecorator( m_xConnection, xSup, ::dbtools::getNumberFormats( m_xConnection ) ,xColumnDefinitions);
@@ -219,8 +219,8 @@ connectivity::sdbcx::ObjectType OTableContainer::createObject(const ::rtl::OUStr
 			::rtl::OUString sCatalog,sSchema,sTable;
 			::dbtools::qualifiedNameComponents(m_xMetaData,
 												_rName,
-												sCatalog, 
-												sSchema, 
+												sCatalog,
+												sSchema,
 												sTable,
 												::dbtools::eInDataManipulation);
 			Any aCatalog;
@@ -262,7 +262,7 @@ connectivity::sdbcx::ObjectType OTableContainer::createObject(const ::rtl::OUStr
 		if ( m_pTableMediator.is() )
 			m_pTableMediator->notifyElementCreated(_rName,xDest);
 	}
-	
+
 	return xRet;
 }
 // -----------------------------------------------------------------------------
@@ -414,7 +414,7 @@ void OTableContainer::dropObject(sal_Int32 _nPos,const ::rtl::OUString _sElement
 				::dbtools::throwFunctionSequenceException(static_cast<XTypeProvider*>(static_cast<OFilteredContainer*>(this)));
 
 			::rtl::OUString aSql = ::rtl::OUString::createFromAscii("DROP ");
-			
+
 			// #104282# OJ
 			if ( bIsView ) // here we have a view
 				aSql += ::rtl::OUString(RTL_CONSTASCII_USTRINGPARAM("VIEW "));
@@ -477,7 +477,7 @@ void SAL_CALL OTableContainer::elementReplaced( const ContainerEvent& Event ) th
 		::rtl::OUString sOldComposedName,sNewComposedName;
 		Event.ReplacedElement	>>= sOldComposedName;
 		Event.Accessor			>>= sNewComposedName;
-		
+
 		renameObject(sOldComposedName,sNewComposedName);
 	}
 }

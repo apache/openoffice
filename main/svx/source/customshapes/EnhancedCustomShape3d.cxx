@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -245,7 +245,7 @@ basegfx::B3DPolygon EnhancedCustomShape3d::Transformation2D::ApplySkewSettings( 
 		double fDepth(-( aPoint.getZ() * fSkew ) / 100.0);
 		aRetval.append(basegfx::B3DPoint(
 			aPoint.getX() + (fDepth * cos( fSkewAngle )),
-			aPoint.getY() - (fDepth * sin( fSkewAngle )), 
+			aPoint.getY() - (fDepth * sin( fSkewAngle )),
 			aPoint.getZ()));
 	}
 
@@ -282,7 +282,7 @@ SdrObject* EnhancedCustomShape3d::Create3DObject( const SdrObject* pShape2d, con
 	SdrObject*	pRet = NULL;
 	SdrModel*	pModel = pCustomShape->GetModel();
 	SdrCustomShapeGeometryItem& rGeometryItem = (SdrCustomShapeGeometryItem&)pCustomShape->GetMergedItem( SDRATTR_CUSTOMSHAPE_GEOMETRY );
-	
+
 	double		fMap, *pMap = NULL;
 	if ( pModel )
 	{
@@ -418,7 +418,7 @@ SdrObject* EnhancedCustomShape3d::Create3DObject( const SdrObject* pShape2d, con
                 // line object get created. When we have fill, we want no line. That line has
                 // always been there, but since it was never converted to contour, it kept
                 // invisible (all this 'hidden' logic should be migrated to primitives).
-                if(!bMultipleSubObjects) 
+                if(!bMultipleSubObjects)
                 {
                     const XFillStyle eStyle(((XFillStyleItem&)(rSet.Get(XATTR_FILLSTYLE))).GetValue());
 
@@ -434,7 +434,7 @@ SdrObject* EnhancedCustomShape3d::Create3DObject( const SdrObject* pShape2d, con
                             const drawinglayer::attribute::SdrLineStartEndAttribute aLineStartEnd(
                                 drawinglayer::primitive2d::createNewSdrLineStartEndAttribute(rSet, aLine.getWidth()));
 
-                            if((aLineStartEnd.getStartWidth() && aLineStartEnd.isStartActive()) 
+                            if((aLineStartEnd.getStartWidth() && aLineStartEnd.isStartActive())
                                 || (aLineStartEnd.getEndWidth() && aLineStartEnd.isEndActive()))
                             {
                                 bNeedToConvertToContour = true;
@@ -503,7 +503,7 @@ SdrObject* EnhancedCustomShape3d::Create3DObject( const SdrObject* pShape2d, con
 			    {
 				    aPolyPoly = basegfx::tools::adaptiveSubdivideByAngle(aPolyPoly);
 			    }
-				
+
                 const basegfx::B2DRange aTempRange(basegfx::tools::getRange(aPolyPoly));
                 const Rectangle aBoundRect(basegfx::fround(aTempRange.getMinX()), basegfx::fround(aTempRange.getMinY()), basegfx::fround(aTempRange.getMaxX()), basegfx::fround(aTempRange.getMaxY()));
 				aBoundRect2d.Union( aBoundRect );
@@ -516,7 +516,7 @@ SdrObject* EnhancedCustomShape3d::Create3DObject( const SdrObject* pShape2d, con
 				if ( bIsPlaceholderObject )
 					aPlaceholderObjectList.push_back( p3DObj );
 				else if ( bUseTwoFillStyles )
-				{			
+				{
 					BitmapEx aFillBmp;
 					sal_Bool bFillBmpTile = ((XFillBmpTileItem&)p3DObj->GetMergedItem( XATTR_FILLBMP_TILE )).GetValue();
 					if ( bFillBmpTile )
@@ -530,7 +530,7 @@ SdrObject* EnhancedCustomShape3d::Create3DObject( const SdrObject* pShape2d, con
                         //
 						//Size aLogicalSize = aFillBmp.GetPrefSize();
 						//if ( aFillBmp.GetPrefMapMode() == MAP_PIXEL )
-						//	aLogicalSize = Application::GetDefaultDevice()->PixelToLogic( aLogicalSize, MAP_100TH_MM ); 
+						//	aLogicalSize = Application::GetDefaultDevice()->PixelToLogic( aLogicalSize, MAP_100TH_MM );
 						//else
 						//	aLogicalSize = OutputDevice::LogicToLogic( aLogicalSize, aFillBmp.GetPrefMapMode(), MAP_100TH_MM );
 						//aLogicalSize.Width()  *= 5;			;//				:-(		nice scaling, look at engine3d/obj3d.cxx
@@ -574,7 +574,7 @@ SdrObject* EnhancedCustomShape3d::Create3DObject( const SdrObject* pShape2d, con
 
 					p3DObj->NbcSetLayer( pShape2d->GetLayer() );
 					p3DObj->SetMergedItemSet( aLocalSet );
-					
+
 					basegfx::B3DHomMatrix aFrontTransform( p3DObj->GetTransform() );
 					aFrontTransform.translate( 0.0, 0.0, fDepth );
 					p3DObj->NbcSetTransform( aFrontTransform );
@@ -653,7 +653,7 @@ SdrObject* EnhancedCustomShape3d::Create3DObject( const SdrObject* pShape2d, con
 					if(fInvTanBeta)
 					{
 						aNewTransform.shearXY(
-							fInvTanBeta * cos(fAlpha), 
+							fInvTanBeta * cos(fAlpha),
 							fInvTanBeta * sin(fAlpha));
 					}
 				}

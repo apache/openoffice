@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -36,12 +36,12 @@ rtl::OUString FilterTracer_getImplementationName()
 {
 	return B2UCONST( "com.sun.star.util.FilterTracer" );
 }
-sal_Bool SAL_CALL FilterTracer_supportsService( const rtl::OUString& ServiceName ) 
+sal_Bool SAL_CALL FilterTracer_supportsService( const rtl::OUString& ServiceName )
 	throw( NMSP_UNO::RuntimeException )
 {
     return ServiceName.equalsAsciiL( RTL_CONSTASCII_STRINGPARAM( "com.sun.star.util.logging.Logger" ) );
 }
-SEQ( rtl::OUString ) SAL_CALL FilterTracer_getSupportedServiceNames() 
+SEQ( rtl::OUString ) SAL_CALL FilterTracer_getSupportedServiceNames()
 	throw( NMSP_UNO::RuntimeException )
 {
 	SEQ( rtl::OUString ) aRet(1);
@@ -144,17 +144,17 @@ void SAL_CALL FilterTracer::initialize( const SEQ( NMSP_UNO::Any )& aArguments )
 // -----------------------------------------------------------------------------
 
 // XServiceInfo
-rtl::OUString SAL_CALL FilterTracer::getImplementationName() 
+rtl::OUString SAL_CALL FilterTracer::getImplementationName()
 	throw( NMSP_UNO::RuntimeException )
 {
 	return FilterTracer_getImplementationName();
 }
-sal_Bool SAL_CALL FilterTracer::supportsService( const rtl::OUString& rServiceName ) 
+sal_Bool SAL_CALL FilterTracer::supportsService( const rtl::OUString& rServiceName )
 	throw( NMSP_UNO::RuntimeException )
 {
     return FilterTracer_supportsService( rServiceName );
 }
-SEQ( rtl::OUString ) SAL_CALL FilterTracer::getSupportedServiceNames() 
+SEQ( rtl::OUString ) SAL_CALL FilterTracer::getSupportedServiceNames()
 	throw ( NMSP_UNO::RuntimeException )
 {
     return FilterTracer_getSupportedServiceNames();
@@ -221,7 +221,7 @@ void SAL_CALL FilterTracer::logp( sal_Int32 /* nLevel */, const rtl::OUString& r
 // -----------------------------------------------------------------------------
 
 // XTextSearch
-void SAL_CALL  FilterTracer::setOptions( const NMSP_UTIL::SearchOptions& rSearchOptions ) 
+void SAL_CALL  FilterTracer::setOptions( const NMSP_UTIL::SearchOptions& rSearchOptions )
     throw (::com::sun::star::uno::RuntimeException)
 {
 	maSearchOptions = rSearchOptions;

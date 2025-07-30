@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -64,10 +64,10 @@ namespace {
 
     int GetStringFromClassID( const GUID& guid, char* pBuf, int nLen )
     {
-        // is not allowed to insert 
+        // is not allowed to insert
         if ( nLen < 38 )
             return 0;
-        
+
         pBuf[0] = '{';
         FillCharFromInt( guid.Data1, &pBuf[1], 8 );
         pBuf[9] = '-';
@@ -326,7 +326,7 @@ STDMETHODIMP InprocEmbedProvider_Impl::CreateInstance(IUnknown FAR* punkOuter,
 
 	if ( !SUCCEEDED( hr ) )
         *ppv = NULL;
-    
+
     return hr;
 }
 

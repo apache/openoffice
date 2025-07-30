@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -31,22 +31,22 @@
 using namespace ::osl;
 
 namespace cppu_threadpool {
-	
+
 	JobQueue::JobQueue() :
 		m_nToDo( 0 ),
 		m_bSuspended( sal_False ),
 		m_cndWait( osl_createCondition() )
 	{
-		osl_resetCondition( m_cndWait );		
+		osl_resetCondition( m_cndWait );
 		m_DisposedCallerAdmin = DisposedCallerAdmin::getInstance();
 	}
-	
+
 	JobQueue::~JobQueue()
 	{
 		osl_destroyCondition( m_cndWait );
 	}
-		
-		
+
+
 	void JobQueue::add( void *pThreadSpecificData, RequestFun * doRequest )
 	{
 		MutexGuard guard( m_mutex );
@@ -58,7 +58,7 @@ namespace cppu_threadpool {
 		}
 		m_nToDo ++;
 	}
-		
+
 	void *JobQueue::enter( sal_Int64 nDisposeId , sal_Bool bReturnWhenNoJob )
 	{
 		void *pReturn = 0;
@@ -72,7 +72,7 @@ namespace cppu_threadpool {
 			m_lstCallstack.push_front( nDisposeId );
 		}
 
-		
+
 		while( sal_True )
 		{
 			if( bReturnWhenNoJob )
@@ -85,7 +85,7 @@ namespace cppu_threadpool {
 			}
 
 			osl_waitCondition( m_cndWait , 0 );
-			
+
 			struct Job job={0,0};
 			{
 				// synchronize with add and dispose calls
@@ -131,10 +131,10 @@ namespace cppu_threadpool {
 			MutexGuard guard( m_mutex );
 			m_lstCallstack.pop_front();
 		}
-		
+
 		return pReturn;
 	}
-	
+
 	void JobQueue::dispose( sal_Int64 nDisposeId )
 	{
 		MutexGuard guard( m_mutex );
@@ -154,7 +154,7 @@ namespace cppu_threadpool {
 			osl_setCondition( m_cndWait );
 		}
 	}
-		
+
 	void JobQueue::suspend()
 	{
 		MutexGuard guard( m_mutex );

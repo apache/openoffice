@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -112,7 +112,7 @@ sal_Bool SdrTextObj::BegTextEdit(SdrOutliner& rOutl)
 	{
 		Rectangle aAnchorRect;
 		Rectangle aTextRect;
-		TakeTextRect(rOutl, aTextRect, sal_False, 
+		TakeTextRect(rOutl, aTextRect, sal_False,
 			&aAnchorRect/* #97097# give sal_True here, not sal_False */);
 		Fraction aFitXKorreg(1,1);
 		ImpSetCharStretching(rOutl,aTextRect,aAnchorRect,aFitXKorreg);
@@ -163,13 +163,13 @@ void SdrTextObj::TakeTextEditArea(Size* pPaperMin, Size* pPaperMax, Rectangle* p
 		if (aTmpSiz.Width()!=0) aMaxSiz.Width()=aTmpSiz.Width();
 		if (aTmpSiz.Height()!=0) aMaxSiz.Height()=aTmpSiz.Height();
 	}
-	
+
 	// #106879#
 	// Done earlier since used in else tree below
 	SdrTextHorzAdjust eHAdj(GetTextHorizontalAdjust());
 	SdrTextVertAdjust eVAdj(GetTextVerticalAdjust());
 
-	if(IsTextFrame()) 
+	if(IsTextFrame())
 	{
 		long nMinWdt=GetMinTextFrameWidth();
 		long nMinHgt=GetMinTextFrameHeight();
@@ -180,32 +180,32 @@ void SdrTextObj::TakeTextEditArea(Size* pPaperMin, Size* pPaperMax, Rectangle* p
 		if (!bFitToSize) {
 			if (nMaxWdt==0 || nMaxWdt>aMaxSiz.Width())  nMaxWdt=aMaxSiz.Width();
 			if (nMaxHgt==0 || nMaxHgt>aMaxSiz.Height()) nMaxHgt=aMaxSiz.Height();
-			
-            if (!IsAutoGrowWidth() ) 
-            { 
-                nMinWdt = aAnkSiz.Width();  
-                nMaxWdt = nMinWdt; 
+
+            if (!IsAutoGrowWidth() )
+            {
+                nMinWdt = aAnkSiz.Width();
+                nMaxWdt = nMinWdt;
             }
-			
-            if (!IsAutoGrowHeight()) 
-            { 
-                nMinHgt = aAnkSiz.Height(); 
-                nMaxHgt = nMinHgt; 
+
+            if (!IsAutoGrowHeight())
+            {
+                nMinHgt = aAnkSiz.Height();
+                nMaxHgt = nMinHgt;
             }
-			
+
             SdrTextAniKind      eAniKind=GetTextAniKind();
 			SdrTextAniDirection eAniDirection=GetTextAniDirection();
 
 			// #101684#
 			sal_Bool bInEditMode = IsInEditMode();
 
-			if (!bInEditMode && (eAniKind==SDRTEXTANI_SCROLL || eAniKind==SDRTEXTANI_ALTERNATE || eAniKind==SDRTEXTANI_SLIDE)) 
+			if (!bInEditMode && (eAniKind==SDRTEXTANI_SCROLL || eAniKind==SDRTEXTANI_ALTERNATE || eAniKind==SDRTEXTANI_SLIDE))
 			{
 				// Grenzenlose Papiergroesse fuer Laufschrift
 				if (eAniDirection==SDRTEXTANI_LEFT || eAniDirection==SDRTEXTANI_RIGHT) nMaxWdt=1000000;
 				if (eAniDirection==SDRTEXTANI_UP || eAniDirection==SDRTEXTANI_DOWN) nMaxHgt=1000000;
 			}
-            
+
             // #119885# Do not limit/force height to geometrical frame (vice versa for vertical writing)
             if(IsVerticalWriting())
             {
@@ -218,15 +218,15 @@ void SdrTextObj::TakeTextEditArea(Size* pPaperMin, Size* pPaperMax, Rectangle* p
 
             aPaperMax.Width()=nMaxWdt;
 			aPaperMax.Height()=nMaxHgt;
-		} 
-        else 
+		}
+        else
         {
 			aPaperMax=aMaxSiz;
 		}
 		aPaperMin.Width()=nMinWdt;
 		aPaperMin.Height()=nMinHgt;
-	} 
-	else 
+	}
+	else
 	{
 		// #106879#
 		// aPaperMin needs to be set to object's size if full width is activated
@@ -266,7 +266,7 @@ void SdrTextObj::TakeTextEditArea(Size* pPaperMin, Size* pPaperMax, Rectangle* p
 	}
 
 	// #103516# For complete ver adjust support, set paper min height to 0, here.
-	if(SDRTEXTVERTADJUST_BLOCK != eVAdj || bFitToSize) 
+	if(SDRTEXTVERTADJUST_BLOCK != eVAdj || bFitToSize)
 	{
 		aPaperMin.Height() = 0;
 	}

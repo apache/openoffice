@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -58,7 +58,7 @@ XUnbufferedStream::XUnbufferedStream(
                       SotMutexHolderRef aMutexHolder,
                       ZipEntry & rEntry,
                       Reference < XInputStream > xNewZipStream,
-                      const ::rtl::Reference< EncryptionData >& rData, 
+                      const ::rtl::Reference< EncryptionData >& rData,
                       sal_Int8 nStreamMode,
                       sal_Bool bIsEncrypted,
                       const ::rtl::OUString& aMediaType,
@@ -93,7 +93,7 @@ XUnbufferedStream::XUnbufferedStream(
 	}
 	sal_Bool bHaveEncryptData = ( rData.is() && rData->m_aSalt.getLength() && rData->m_aInitVector.getLength() && rData->m_nIterationCount != 0 ) ? sal_True : sal_False;
 	sal_Bool bMustDecrypt = ( nStreamMode == UNBUFF_STREAM_DATA && bHaveEncryptData && bIsEncrypted ) ? sal_True : sal_False;
-	
+
 	if ( bMustDecrypt )
     {
 		m_xCipherContext = ZipFile::StaticGetCipher( xFactory, rData, false );
@@ -108,8 +108,8 @@ XUnbufferedStream::XUnbufferedStream(
 
 		// Make a buffer big enough to hold both the header and the data itself
 		maHeader.realloc  ( n_ConstHeaderSize +
-							rData->m_aInitVector.getLength() + 
-							rData->m_aSalt.getLength() + 
+							rData->m_aInitVector.getLength() +
+							rData->m_aSalt.getLength() +
 							rData->m_aDigest.getLength() +
 							aMediaType.getLength() * sizeof( sal_Unicode ) );
 		sal_Int8 * pHeader = maHeader.getArray();
@@ -143,7 +143,7 @@ XUnbufferedStream::XUnbufferedStream(
 	OSL_ENSURE( mxZipSeek.is(), "The stream must be seekable!\n" );
 
 	// skip raw header, it must be already parsed to rData
-	mnZipCurrent = n_ConstHeaderSize + rData->m_aInitVector.getLength() + 
+	mnZipCurrent = n_ConstHeaderSize + rData->m_aInitVector.getLength() +
 							rData->m_aSalt.getLength() + rData->m_aDigest.getLength();
 
 	try {
@@ -153,18 +153,18 @@ XUnbufferedStream::XUnbufferedStream(
 	{
 		// in case of problem the size will stay set to 0
 	}
-	
+
 	mnZipEnd = mnZipCurrent + mnZipSize;
 
     // the raw data will not be decrypted, no need for the cipher
     // m_xCipherContext = ZipFile::StaticGetCipher( xFactory, rData, false );
 }
 
-XUnbufferedStream::~XUnbufferedStream() 
+XUnbufferedStream::~XUnbufferedStream()
 {
 }
 
-sal_Int32 SAL_CALL XUnbufferedStream::readBytes( Sequence< sal_Int8 >& aData, sal_Int32 nBytesToRead ) 
+sal_Int32 SAL_CALL XUnbufferedStream::readBytes( Sequence< sal_Int8 >& aData, sal_Int32 nBytesToRead )
 		throw( NotConnectedException, BufferSizeExceededException, IOException, RuntimeException)
 {
     ::osl::MutexGuard aGuard( maMutexHolder->GetMutex() );
@@ -176,7 +176,7 @@ sal_Int32 SAL_CALL XUnbufferedStream::readBytes( Sequence< sal_Int8 >& aData, sa
 
 	sal_Int32 nRead = 0, nLastRead = 0, nTotal = 0;
 	aData.realloc ( nRequestedBytes );
-	if ( nRequestedBytes ) 
+	if ( nRequestedBytes )
 	{
 		if ( mbRawStream )
 		{
@@ -217,8 +217,8 @@ sal_Int32 SAL_CALL XUnbufferedStream::readBytes( Sequence< sal_Int8 >& aData, sa
 			{
 				mxZipSeek->seek ( mnZipCurrent );
 
-				nRead = mxZipStream->readBytes ( 
-										aData, 
+				nRead = mxZipStream->readBytes (
+										aData,
 										static_cast < sal_Int32 > ( nDiff < nRequestedBytes ? nDiff : nRequestedBytes ) );
 
 				mnZipCurrent += nRead;
@@ -230,16 +230,16 @@ sal_Int32 SAL_CALL XUnbufferedStream::readBytes( Sequence< sal_Int8 >& aData, sa
 		}
 		else
 		{
-			while ( 0 == ( nLastRead = maInflater.doInflateSegment( aData, nRead, aData.getLength() - nRead ) ) || 
+			while ( 0 == ( nLastRead = maInflater.doInflateSegment( aData, nRead, aData.getLength() - nRead ) ) ||
 				  ( nRead + nLastRead != nRequestedBytes && mnZipCurrent < mnZipEnd ) )
 			{
 				nRead += nLastRead;
 
 				if ( nRead > nRequestedBytes )
-					throw RuntimeException( 
+					throw RuntimeException(
 						OUString( RTL_CONSTASCII_USTRINGPARAM( "Should not be possible to read more then requested!" ) ),
 						Reference< XInterface >() );
-					
+
 				if ( maInflater.finished() || maInflater.getLastInflateError() )
 					throw ZipIOException( OUString( RTL_CONSTASCII_USTRINGPARAM( "The stream seems to be broken!" ) ),
 										Reference< XInterface >() );
@@ -317,22 +317,22 @@ sal_Int32 SAL_CALL XUnbufferedStream::readBytes( Sequence< sal_Int8 >& aData, sa
 				}
 			}
 #endif
-			
+
 			if ( mnZipSize + maHeader.getLength() == mnMyCurrent && maCRC.getValue() != maEntry.nCrc )
 				throw ZipIOException( OUString( RTL_CONSTASCII_USTRINGPARAM( "The stream seems to be broken!" ) ),
 									Reference< XInterface >() );
 		}
 	}
-	
+
 	return nTotal;
 }
 
-sal_Int32 SAL_CALL XUnbufferedStream::readSomeBytes( Sequence< sal_Int8 >& aData, sal_Int32 nMaxBytesToRead ) 
+sal_Int32 SAL_CALL XUnbufferedStream::readSomeBytes( Sequence< sal_Int8 >& aData, sal_Int32 nMaxBytesToRead )
 		throw( NotConnectedException, BufferSizeExceededException, IOException, RuntimeException)
 {
 	return readBytes ( aData, nMaxBytesToRead );
 }
-void SAL_CALL XUnbufferedStream::skipBytes( sal_Int32 nBytesToSkip ) 
+void SAL_CALL XUnbufferedStream::skipBytes( sal_Int32 nBytesToSkip )
 		throw( NotConnectedException, BufferSizeExceededException, IOException, RuntimeException)
 {
 	if ( nBytesToSkip )
@@ -342,27 +342,27 @@ void SAL_CALL XUnbufferedStream::skipBytes( sal_Int32 nBytesToSkip )
 	}
 }
 
-sal_Int32 SAL_CALL XUnbufferedStream::available(  ) 
+sal_Int32 SAL_CALL XUnbufferedStream::available(  )
 		throw( NotConnectedException, IOException, RuntimeException)
 {
 	return static_cast < sal_Int32 > ( mnZipSize - mnMyCurrent );
 }
 
-void SAL_CALL XUnbufferedStream::closeInput(  ) 
+void SAL_CALL XUnbufferedStream::closeInput(  )
 		throw( NotConnectedException, IOException, RuntimeException)
 {
 }
 /*
-void SAL_CALL XUnbufferedStream::seek( sal_Int64 location ) 
+void SAL_CALL XUnbufferedStream::seek( sal_Int64 location )
 		throw( IllegalArgumentException, IOException, RuntimeException)
 {
 }
-sal_Int64 SAL_CALL XUnbufferedStream::getPosition(  ) 
+sal_Int64 SAL_CALL XUnbufferedStream::getPosition(  )
 		throw(IOException, RuntimeException)
 {
 	return mnMyCurrent;
 }
-sal_Int64 SAL_CALL XUnbufferedStream::getLength(  ) 
+sal_Int64 SAL_CALL XUnbufferedStream::getLength(  )
 		throw(IOException, RuntimeException)
 {
 	return mnZipSize;

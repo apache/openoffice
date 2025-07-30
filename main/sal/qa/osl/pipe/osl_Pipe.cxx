@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -197,7 +197,7 @@ namespace osl_Pipe
         sal_Bool bRes = aSecurityPipe.is( );
 
         // #test comment#: test constructor with name, option and security, the test of security is not implemented yet.
-        ASSERT_TRUE( bRes ); 
+        ASSERT_TRUE( bRes );
     }
 
     TEST(Sal_Test_Pipe, ctors_copy) {
@@ -227,12 +227,12 @@ namespace osl_Pipe
         ::osl::Pipe aPipe( uniquePipeName(aTestPipeName), osl_Pipe_CREATE );
         /// constructs a pipe reference without acquiring the handle.
         ::osl::Pipe aNoAcquirePipe( aPipe.getHandle( ), SAL_NO_ACQUIRE );
-        
+
         sal_Bool bRes = aNoAcquirePipe.is( );
         ///aPipe.clear( );
         ///bRes1 = aNoAcquirePipe.is( );
-        
-        
+
+
         // #test comment#: test constructor with no acquire of handle, only validation test, do not know how to test no acquire.
         ASSERT_TRUE( bRes );
     }
@@ -243,7 +243,7 @@ namespace osl_Pipe
         /// constructs two pipes without acquiring the handle on the base pipe.
         ::osl::Pipe aAcquirePipe( aPipe.getHandle( ) );
         ::osl::Pipe aAcquirePipe1( NULL );
-        
+
         sal_Bool bRes = aAcquirePipe.is( );
         sal_Bool bRes1 = aAcquirePipe1.is( );
 
@@ -328,7 +328,7 @@ namespace osl_Pipe
         sal_Bool bRes = aPipe.create( uniquePipeName(aTestPipeName), osl_Pipe_CREATE );
         sal_Bool bRes1 = aPipe1.create( uniquePipeName(aTestPipeName), osl_Pipe_OPEN );
         aPipe.clear( );
-        
+
         // #test comment#: test creation and open.
         ASSERT_TRUE( bRes && bRes1);
     }
@@ -351,7 +351,7 @@ namespace osl_Pipe
         aPipe.create( uniquePipeName(aTestPipeName), osl_Pipe_CREATE );
         aPipe.clear( );
         sal_Bool bRes = aPipe.is( );
-        
+
         // #test comment#: test clear.
         ASSERT_TRUE( !bRes );
     }
@@ -384,7 +384,7 @@ namespace osl_Pipe
         aPipe1.close( );
 
         // #test comment#: test assign with handle.
-        ASSERT_TRUE( bRes && bRes1 );        
+        ASSERT_TRUE( bRes && bRes1 );
     }
 
 
@@ -409,7 +409,7 @@ namespace osl_Pipe
         aPipe.close( );
 
         // #test comment#: test isEqual(), compare its self.
-        ASSERT_TRUE( bRes );       
+        ASSERT_TRUE( bRes );
     }
 
     TEST(Sal_Test_Pipe, isEqual_002) {
@@ -425,7 +425,7 @@ namespace osl_Pipe
         aPipe2.close( );
 
         // #test comment#: test isEqual(),create one copy instance, and compare.
-        ASSERT_TRUE( bRes && !bRes1 );   
+        ASSERT_TRUE( bRes && !bRes1 );
     }
 
 
@@ -436,10 +436,10 @@ namespace osl_Pipe
         ::osl::Pipe aPipe( uniquePipeName(aTestPipe1), osl_Pipe_CREATE );
         aPipe.close( );
         sal_Bool bRes = aPipe.is( );
-        
+
         aPipe.clear( );
         sal_Bool bRes1 = aPipe.is( );
-        
+
         // #test comment#: difference between close and clear.
         ASSERT_TRUE( bRes && !bRes1);
     }
@@ -501,7 +501,7 @@ namespace osl_Pipe
         printPipeError( aPipe );
         aPipe.clear( );
         aPipe1.clear( );
-        
+
         // #test comment#: create an already exist pipe.
         ASSERT_NE( nError, osl_Pipe_E_None );
     }
@@ -525,7 +525,7 @@ namespace osl_Pipe
         sal_Bool bRes = aPipe == aPipe1;
         aPipe.clear( );
         aPipe1.clear( );
-        
+
         // #test comment#: one pipe derived from another pipe's handle.
         ASSERT_TRUE( bRes );
     }
@@ -605,7 +605,7 @@ namespace osl_StreamPipe
         // create a security pipe.
         const ::osl::Security rSecurity;
         ::osl::StreamPipe aSecurityPipe( uniquePipeName(aTestPipeName), osl_Pipe_CREATE, rSecurity );
-        
+
         sal_Bool bRes = aSecurityPipe.is( );
         aSecurityPipe.clear( );
 
@@ -649,7 +649,7 @@ namespace osl_StreamPipe
     //     sal_Bool bRes1 = aPipe == aPipe1;
     //     aPipe.close( );
     //     aPipe1.close( );
-        
+
     //     // #test comment#: test assign with reference.
     //     ASSERT_TRUE( bRes && bRes1 );
     // }
@@ -703,10 +703,10 @@ namespace osl_StreamPipe
         void SAL_CALL run( )
         {
             sal_Int32 nChars = 0;
-            
+
             printf("open pipe\n");
             // uniquePipeName(aTestPipeName) is a string = "TestPipe"
-            ::osl::StreamPipe aSenderPipe( uniquePipeName(aTestPipeName), osl_Pipe_OPEN );  
+            ::osl::StreamPipe aSenderPipe( uniquePipeName(aTestPipeName), osl_Pipe_OPEN );
             if ( aSenderPipe.is() == sal_False )
             {
                 printf("pipe open failed! \n");
@@ -764,7 +764,7 @@ namespace osl_StreamPipe
             else
             {
                 //::osl::StreamPipe aConnectionPipe;
-                
+
                 //start server and wait for connection.
                 printf("accept\n");
                 if ( osl_Pipe_E_None != aListenPipe.accept( aConnectionPipe ) )
@@ -782,7 +782,7 @@ namespace osl_StreamPipe
                 }
                 printf("recv\n");
                 nChars = aConnectionPipe.recv( buf, 256 );
-                
+
                 if ( nChars < 0)
                 {
                     printf("server receive failed! \n");

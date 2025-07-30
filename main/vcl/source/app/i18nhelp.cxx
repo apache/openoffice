@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -84,9 +84,9 @@ LocaleDataWrapper& vcl::I18nHelper::ImplGetLocaleDataWrapper() const
     return *mpLocaleDataWrapper;
 }
 
-const ::com::sun::star::lang::Locale& vcl::I18nHelper::getLocale() const 
+const ::com::sun::star::lang::Locale& vcl::I18nHelper::getLocale() const
 {
-    return maLocale; 
+    return maLocale;
 }
 
 inline bool is_formatting_mark( sal_Unicode c )
@@ -102,7 +102,7 @@ inline bool is_formatting_mark( sal_Unicode c )
    the transliteration. The real solution would have been an additional TransliterationModule
    to ignore these marks during transliteration; however changin the code in i18npool that actually
    implements this could produce unwanted side effects.
-   
+
    Of course this copying around is not really good, but looking at i18npool, one more time
    will not hurt.
 */
@@ -133,7 +133,7 @@ sal_Int32 vcl::I18nHelper::CompareString( const String& rStr1, const String& rSt
         ((vcl::I18nHelper*)this)->mpTransliterationWrapper = NULL;
     }
 
-    
+
     String aStr1( filterFormattingChars(rStr1) );
     String aStr2( filterFormattingChars(rStr2) );
     return ImplGetTransliterationWrapper().compareString( aStr1, aStr2 );

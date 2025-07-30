@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -422,7 +422,7 @@ void VCLXWindow::SetWindow( Window* pWindow )
         sal_Bool bDirectVisible = pWindow ? pWindow->IsVisible() : false;
         mpImpl->setDirectVisible( bDirectVisible );
     }
-    
+
 }
 
 void VCLXWindow::suspendVclEventListening( )
@@ -1371,7 +1371,7 @@ void VCLXWindow::ImplGetPropertyIds( std::list< sal_uInt16 > &rIds, bool bWithDe
             // some properties are not included in the FontDescriptor, but every time
             // when we have a FontDescriptor we want to have these properties too.
             // => Easier to register the here, istead everywhere where I register the FontDescriptor...
-            
+
             rIds.push_back( BASEPROPERTY_TEXTCOLOR );
             rIds.push_back( BASEPROPERTY_TEXTLINECOLOR );
             rIds.push_back( BASEPROPERTY_FONTRELIEF );
@@ -1551,7 +1551,7 @@ void VCLXWindow::setProperty( const ::rtl::OUString& PropertyName, const ::com::
 		                if (aText.getLength())
 			                pWindow->SetText( aText );
 		                break;
-		            
+
                     default:
 		                pWindow->SetText( aText );
 		                break;
@@ -1584,7 +1584,7 @@ void VCLXWindow::setProperty( const ::rtl::OUString& PropertyName, const ::com::
 			::rtl::OUString aHelpText;
 			if ( Value >>= aHelpText )
 			{
-				pWindow->SetQuickHelpText( aHelpText );	
+				pWindow->SetQuickHelpText( aHelpText );
 			}
 		}
 		break;
@@ -1654,9 +1654,9 @@ void VCLXWindow::setProperty( const ::rtl::OUString& PropertyName, const ::com::
                         pWindow->SetPaintTransparent( sal_True );
                         break;
                     }
-                    
+
                     default:
-                    {    
+                    {
                         // default code which enables transparency for
                         // compound controls. It's not real transparency
                         // as most of these controls repaint their client
@@ -2286,7 +2286,7 @@ void VCLXWindow::draw( sal_Int32 nX, sal_Int32 nY ) throw(::com::sun::star::uno:
 	Window* pWindow = GetWindow();
     if ( !pWindow )
         return;
-    
+
 	if ( isDesignMode() || mpImpl->isEnableVisible() )
 	{
 		TabPage* pTabPage = dynamic_cast< TabPage* >( pWindow );
@@ -2411,7 +2411,7 @@ void SAL_CALL VCLXWindow::disposing( const ::com::sun::star::lang::EventObject& 
 	using namespace ::com::sun::star;
 
 	::vos::OGuard aGuard( GetMutex() );
-    
+
     // already disposed
     if( ! mpImpl )
         return uno::Reference< accessibility::XAccessibleContext >();

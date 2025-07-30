@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -48,18 +48,18 @@ rtl::OUString XSecParser::getIdAttr(const cssu::Reference< cssxs::XAttributeList
 {
 	rtl::OUString ouIdAttr = xAttribs->getValueByName(
 		rtl::OUString(RTL_ASCII_USTRINGPARAM("id")));
-		
-	if (ouIdAttr == NULL) 
+
+	if (ouIdAttr == NULL)
 	{
 		ouIdAttr = xAttribs->getValueByName(
 			rtl::OUString(RTL_ASCII_USTRINGPARAM("Id")));
 	}
-	
+
 	return ouIdAttr;
 }
 
 /*
- * XDocumentHandler 
+ * XDocumentHandler
  */
 void SAL_CALL XSecParser::startDocument(  )
 	throw (cssxs::SAXException, cssu::RuntimeException)
@@ -71,13 +71,13 @@ void SAL_CALL XSecParser::startDocument(  )
 	m_bInDigestValue = false;
 	m_bInDate = false;
 	//m_bInTime = false;
-	
+
 	if (m_xNextHandler.is())
 	{
 		m_xNextHandler->startDocument();
 	}
 }
-	
+
 void SAL_CALL XSecParser::endDocument(  )
 	throw (cssxs::SAXException, cssu::RuntimeException)
 {
@@ -99,7 +99,7 @@ void SAL_CALL XSecParser::startElement(
 		{
 			m_pXSecController->collectToVerify( ouIdAttr );
 		}
-		
+
 		if ( aName == rtl::OUString(RTL_ASCII_USTRINGPARAM(TAG_SIGNATURE)) )
 		{
 			m_pXSecController->addSignature();
@@ -112,7 +112,7 @@ void SAL_CALL XSecParser::startElement(
 		{
 			rtl::OUString ouUri = xAttribs->getValueByName(rtl::OUString(RTL_ASCII_USTRINGPARAM(ATTR_URI)));
 			DBG_ASSERT( ouUri != NULL, "URI == NULL" );
-			
+
 			if (0 == ouUri.compareTo(rtl::OUString(RTL_ASCII_USTRINGPARAM(CHAR_FRAGMENT)),1))
 			{
 				/*
@@ -134,7 +134,7 @@ void SAL_CALL XSecParser::startElement(
 			if ( m_bReferenceUnresolved )
 			{
 				rtl::OUString ouAlgorithm = xAttribs->getValueByName(rtl::OUString(RTL_ASCII_USTRINGPARAM(ATTR_ALGORITHM)));
-				
+
 				if (ouAlgorithm != NULL && ouAlgorithm == rtl::OUString(RTL_ASCII_USTRINGPARAM(ALGO_C14N)))
 				/*
 				* a xml stream
@@ -191,7 +191,7 @@ void SAL_CALL XSecParser::startElement(
         		m_bInTime = true;
 			}
 			*/
-			
+
 		if (m_xNextHandler.is())
 		{
 			m_xNextHandler->startElement(aName, xAttribs);
@@ -212,11 +212,11 @@ void SAL_CALL XSecParser::startElement(
 			cssu::Any());
 	}
 }
-	
-void SAL_CALL XSecParser::endElement( const rtl::OUString& aName ) 
+
+void SAL_CALL XSecParser::endElement( const rtl::OUString& aName )
 	throw (cssxs::SAXException, cssu::RuntimeException)
 {
-	try 
+	try
 	{
         if (aName == rtl::OUString(RTL_ASCII_USTRINGPARAM(TAG_DIGESTVALUE)))
 			{
@@ -232,7 +232,7 @@ void SAL_CALL XSecParser::endElement( const rtl::OUString& aName )
 				m_pXSecController->addStreamReference( m_currentReferenceURI, sal_True);
 				m_bReferenceUnresolved = false;
 			}
-			
+
 			m_pXSecController->setDigestValue( m_ouDigestValue );
 		}
 		else if ( aName == rtl::OUString(RTL_ASCII_USTRINGPARAM(TAG_SIGNEDINFO)) )
@@ -294,7 +294,7 @@ void SAL_CALL XSecParser::endElement( const rtl::OUString& aName )
 			cssu::Any());
 	}
 }
-	
+
 void SAL_CALL XSecParser::characters( const rtl::OUString& aChars )
 	throw (cssxs::SAXException, cssu::RuntimeException)
 {
@@ -326,15 +326,15 @@ void SAL_CALL XSecParser::characters( const rtl::OUString& aChars )
 	else if (m_bInTime)
 	{
 		m_ouTime += aChars;
-	} 
+	}
 	*/
-	
+
 	if (m_xNextHandler.is())
 	{
 		m_xNextHandler->characters(aChars);
         }
 }
-	
+
 void SAL_CALL XSecParser::ignorableWhitespace( const rtl::OUString& aWhitespaces )
 	throw (cssxs::SAXException, cssu::RuntimeException)
 {
@@ -343,7 +343,7 @@ void SAL_CALL XSecParser::ignorableWhitespace( const rtl::OUString& aWhitespaces
 		m_xNextHandler->ignorableWhitespace( aWhitespaces );
         }
 }
-	
+
 void SAL_CALL XSecParser::processingInstruction( const rtl::OUString& aTarget, const rtl::OUString& aData )
 	throw (cssxs::SAXException, cssu::RuntimeException)
 {
@@ -352,7 +352,7 @@ void SAL_CALL XSecParser::processingInstruction( const rtl::OUString& aTarget, c
 		m_xNextHandler->processingInstruction(aTarget, aData);
         }
 }
-	
+
 void SAL_CALL XSecParser::setDocumentLocator( const cssu::Reference< cssxs::XLocator >& xLocator )
 	throw (cssxs::SAXException, cssu::RuntimeException)
 {

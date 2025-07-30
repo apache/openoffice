@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -54,7 +54,7 @@ IndexEntrySupplier_asian::~IndexEntrySupplier_asian()
     if (hModule) osl_unloadModule(hModule);
 }
 
-OUString SAL_CALL 
+OUString SAL_CALL
 IndexEntrySupplier_asian::getIndexCharacter( const OUString& rIndexEntry,
     const Locale& rLocale, const OUString& rAlgorithm ) throw (RuntimeException)
 {
@@ -65,7 +65,7 @@ IndexEntrySupplier_asian::getIndexCharacter( const OUString& rIndexEntry,
         sal_uInt16** (*func)(sal_Int16*)=NULL;
         if (rLocale.Language.equalsAscii("zh") && OUString::createFromAscii("TW HK MO").indexOf(rLocale.Country) >= 0)
             func=(sal_uInt16** (*)(sal_Int16*))osl_getFunctionSymbol(hModule, (get+rLocale.Language+OUString::createFromAscii("_TW_")+rAlgorithm).pData);
-        if (!func) 
+        if (!func)
             func=(sal_uInt16** (*)(sal_Int16*))osl_getFunctionSymbol(hModule, (get+rLocale.Language+OUString('_')+rAlgorithm).pData);
         if (func) {
             sal_Int16 max_index;
@@ -77,20 +77,20 @@ IndexEntrySupplier_asian::getIndexCharacter( const OUString& rIndexEntry,
                     return idx[2] ? OUString(&idx[2][address]) : OUString(address);
                 }
             }
-        } 
+        }
     }
     // using alphanumeric index for non-define string
     return OUString(&idxStr[(ch & 0xFFFFFF00) ? 0 : ch], 1);
 }
 
-OUString SAL_CALL 
-IndexEntrySupplier_asian::getIndexKey( const OUString& rIndexEntry, 
+OUString SAL_CALL
+IndexEntrySupplier_asian::getIndexKey( const OUString& rIndexEntry,
     const OUString& rPhoneticEntry, const Locale& rLocale) throw (RuntimeException)
 {
     return getIndexCharacter(getEntry(rIndexEntry, rPhoneticEntry, rLocale), rLocale, aAlgorithm);
 }
 
-sal_Int16 SAL_CALL 
+sal_Int16 SAL_CALL
 IndexEntrySupplier_asian::compareIndexEntry(
 	const OUString& rIndexEntry1, const OUString& rPhoneticEntry1, const Locale& rLocale1,
 	const OUString& rIndexEntry2, const OUString& rPhoneticEntry2, const Locale& rLocale2 )
@@ -108,7 +108,7 @@ IndexEntrySupplier_asian::compareIndexEntry(
     return sal::static_int_cast< sal_Int16 >(result); // result in { -1, 0, 1 }
 }
 
-OUString SAL_CALL 
+OUString SAL_CALL
 IndexEntrySupplier_asian::getPhoneticCandidate( const OUString& rIndexEntry,
         const Locale& rLocale ) throw (RuntimeException)
 {
@@ -119,7 +119,7 @@ IndexEntrySupplier_asian::getPhoneticCandidate( const OUString& rIndexEntry,
             func_name=(OUString::createFromAscii("TW HK MO").indexOf(rLocale.Country) >= 0) ?  "get_zh_zhuyin" : "get_zh_pinyin";
         else if (rLocale.Language.equalsAscii("ko"))
             func_name="get_ko_phonetic";
-        if (func_name) 
+        if (func_name)
             func=(sal_uInt16 **(*)(sal_Int16*))osl_getFunctionSymbol(hModule, OUString::createFromAscii(func_name).pData);
         if (func) {
             OUStringBuffer candidate;
@@ -134,9 +134,9 @@ IndexEntrySupplier_asian::getPhoneticCandidate( const OUString& rIndexEntry,
                         address = idx[1][address + (ch & 0xFF)];
                         if (i > 0 && rLocale.Language.equalsAscii("zh"))
                             candidate.appendAscii(" ");
-                        if (idx[2]) 
+                        if (idx[2])
                             candidate.append(&idx[2][address]);
-                        else 
+                        else
                             candidate.append(address);
                     } else
                         candidate.appendAscii(" ");

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -33,8 +33,8 @@
 
 /* -----------------------------------------------------------------------
    ffi.c - Copyright (c) 2002  Bo Thorsen <bo@suse.de>
-   
-   x86-64 Foreign Function Interface 
+
+   x86-64 Foreign Function Interface
 
    Permission is hereby granted, free of charge, to any person obtaining
    a copy of this software and associated documentation files (the
@@ -367,7 +367,7 @@ ffi_prep_args (stackLayout *stack, extended_cif *ecif)
   /* First check if the return value should be passed in memory. If so,
      pass the pointer as the first argument.  */
   gprcount = ssecount = 0;
-  if (ecif->cif->rtype->type != FFI_TYPE_VOID 
+  if (ecif->cif->rtype->type != FFI_TYPE_VOID
       && examine_argument (ecif->cif->rtype, 1, &g, &s) == 0)
     (void *)stack->gpr[gprcount++] = ecif->rvalue;
 
@@ -472,7 +472,7 @@ ffi_prep_cif_machdep (ffi_cif *cif)
 
   /* If the return value should be passed in memory, pass the pointer
      as the first argument. The actual memory isn't allocated here.  */
-  if (cif->rtype->type != FFI_TYPE_VOID 
+  if (cif->rtype->type != FFI_TYPE_VOID
       && examine_argument (cif->rtype, 1, &g, &s) == 0)
     gprcount = 1;
 
@@ -605,14 +605,14 @@ ffi_fill_return_value (return_value *rv, extended_cif *ecif)
 /*@-exportheader@*/
 extern void ffi_call_UNIX64(void (*)(stackLayout *, extended_cif *),
 			    void (*) (return_value *, extended_cif *),
-			    /*@out@*/ extended_cif *, 
+			    /*@out@*/ extended_cif *,
 			    unsigned, /*@out@*/ unsigned *, void (*fn)());
 /*@=declundef@*/
 /*@=exportheader@*/
 
-void ffi_call(/*@dependent@*/ ffi_cif *cif, 
-	      void (*fn)(), 
-	      /*@out@*/ void *rvalue, 
+void ffi_call(/*@dependent@*/ ffi_cif *cif,
+	      void (*fn)(),
+	      /*@out@*/ void *rvalue,
 	      /*@dependent@*/ void **avalue)
 {
   extended_cif ecif;
@@ -620,11 +620,11 @@ void ffi_call(/*@dependent@*/ ffi_cif *cif,
 
   ecif.cif = cif;
   ecif.avalue = avalue;
-  
+
   /* If the return value is a struct and we don't have a return	*/
   /* value address then we need to make one		        */
 
-  if ((rvalue == NULL) && 
+  if ((rvalue == NULL) &&
       (examine_argument (cif->rtype, 1, &dummy, &dummy) == 0))
     {
       /*@-sysunrecog@*/
@@ -633,11 +633,11 @@ void ffi_call(/*@dependent@*/ ffi_cif *cif,
     }
   else
     ecif.rvalue = rvalue;
-    
+
   /* Stack must always be 16byte aligned. Make it so.  */
   cif->bytes = ALIGN(cif->bytes, 16);
-  
-  switch (cif->abi) 
+
+  switch (cif->abi)
     {
     case FFI_SYSV:
       /* Calling 32bit code from 64bit is not possible  */
@@ -700,7 +700,7 @@ ffi_closure_UNIX64_inner(ffi_closure *closure, va_list l, void *rp)
   i = 0;
   avn = cif->nargs;
   arg_types = cif->arg_types;
-  
+
   /* Grab the addresses of the arguments from the stack frame.  */
   while (i < avn)
     {
@@ -751,7 +751,7 @@ ffi_closure_UNIX64_inner(ffi_closure *closure, va_list l, void *rp)
 	  fprintf (stderr, "double arg %d = %g\n", i, *(double *)avalue[i]);
 #endif
 	  break;
-	  
+
 	case FFI_TYPE_FLOAT:
 	  {
 	    if (l->fp_offset > 176-16)
@@ -769,7 +769,7 @@ ffi_closure_UNIX64_inner(ffi_closure *closure, va_list l, void *rp)
 	  fprintf (stderr, "float arg %d = %g\n", i, *(float *)avalue[i]);
 #endif
 	  break;
-	  
+
 	default:
 	  FFI_ASSERT(0);
 	}

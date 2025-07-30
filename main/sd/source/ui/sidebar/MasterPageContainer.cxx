@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 #include "precompiled_sd.hxx"
@@ -143,7 +143,7 @@ private:
         determine the correct size ratio.
     */
     bool mbFirstPageObjectSeen;
-    
+
     // The widths for the previews contain two pixels for the border that is
     // painted around the preview.
     static const int SMALL_PREVIEW_WIDTH = 72 + 2;
@@ -201,7 +201,7 @@ static const MasterPageContainer::Token NIL_TOKEN (-1);
     MasterPageContainer::Implementation::Instance (void)
 {
     ::boost::shared_ptr<MasterPageContainer::Implementation> pInstance;
-    
+
     if (Implementation::mpInstance.expired())
     {
         ::osl::GetGlobalMutex aMutexFunctor;
@@ -694,7 +694,7 @@ void MasterPageContainer::Implementation::UpdatePreviewSizePixel (void)
     // The default aspect ratio is 4:3
     int nWidth (4);
     int nHeight (3);
-    
+
     // Search for the first entry with an existing master page.
     MasterPageContainerType::const_iterator iDescriptor;
     MasterPageContainerType::const_iterator iContainerEnd(maContainer.end());
@@ -782,7 +782,7 @@ MasterPageContainer::Token MasterPageContainer::Implementation::PutMasterPage (
         {
             if (mbContainerCleaningPending)
                 CleanContainer();
-            
+
             aResult = maContainer.size();
             rpDescriptor->SetToken(aResult);
 
@@ -799,10 +799,10 @@ MasterPageContainer::Token MasterPageContainer::Implementation::PutMasterPage (
                 default:
                     break;
             }
-            
+
             maContainer.push_back(rpDescriptor);
             aEntry = maContainer.end()-1;
-            
+
             FireContainerChange(MasterPageContainerChangeEvent::CHILD_ADDED,aResult);
         }
     }
@@ -817,7 +817,7 @@ MasterPageContainer::Token MasterPageContainer::Implementation::PutMasterPage (
             // One or more aspects of the descriptor have changed.  Send
             // appropriate events to the listeners.
             UpdateDescriptor(*aEntry,false,false, true);
-            
+
             std::vector<MasterPageContainerChangeEvent::EventType>::const_iterator iEventType;
             for (iEventType=pEventTypes->begin(); iEventType!=pEventTypes->end(); ++iEventType)
             {
@@ -894,7 +894,7 @@ Image MasterPageContainer::Implementation::GetPreviewForToken (
     PreviewState ePreviewState (GetPreviewState(aToken));
 
     SharedMasterPageDescriptor pDescriptor = GetDescriptor(aToken);
-    
+
     // When the preview is missing but inexpensively creatable then do that
     // now.
     if (pDescriptor.get()!=NULL)
@@ -933,7 +933,7 @@ Image MasterPageContainer::Implementation::GetPreviewForToken (
                 break;
         }
     }
-    
+
     return aPreview;
 }
 
@@ -994,7 +994,7 @@ Reference<frame::XModel> MasterPageContainer::Implementation::GetModel (void)
             RTL_CONSTASCII_USTRINGPARAM("com.sun.star.frame.Desktop"));
         uno::Reference<frame::XComponentLoader> xDesktop (
             ::comphelper::getProcessServiceFactory()->createInstance(
-                sDesktopServiceName), 
+                sDesktopServiceName),
             uno::UNO_QUERY);
 
         // Create a new model.
@@ -1060,7 +1060,7 @@ Image MasterPageContainer::Implementation::GetPreviewSubstitution (
     const ::osl::MutexGuard aGuard (maMutex);
 
     Image aPreview;
-    
+
     switch (nId)
     {
         case STR_TASKPANEL_PREPARING_PREVIEW_SUBSTITUTION:

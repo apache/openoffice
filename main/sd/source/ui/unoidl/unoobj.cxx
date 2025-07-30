@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -172,7 +172,7 @@ static SdTypesCache gImplTypesCache;
 
     const SfxItemPropertyMapEntry* lcl_GetImpress_SdXShapePropertyGraphicMap_Impl()
     {
-        
+
         static const SfxItemPropertyMapEntry aImpress_SdXShapePropertyGraphicMap_Impl[] =
         {
             { MAP_CHAR_LEN("ImageMap"),				WID_IMAGEMAP,		 &::getCppuType((const uno::Reference< container::XIndexContainer >*)0),	0, 0 },
@@ -183,7 +183,7 @@ static SdTypesCache gImplTypesCache;
 
     const SfxItemPropertyMapEntry* lcl_GetImpress_SdXShapePropertySimpleMap_Impl()
     {
-        
+
         static const SfxItemPropertyMapEntry aImpress_SdXShapePropertySimpleMap_Impl[] =
         {
             IMPRESS_MAP_ENTRIES
@@ -233,7 +233,7 @@ static SdTypesCache gImplTypesCache;
                 pRet = lcl_GetDraw_SdXShapePropertySimpleMap_Impl();
         }
         return pRet;
-        
+
     }
     const SvxItemPropertySet* lcl_ImplGetShapePropertySet( sal_Bool bImpress, sal_Bool bGraphicObj )
     {
@@ -248,7 +248,7 @@ static SdTypesCache gImplTypesCache;
             else
             {
                 static SvxItemPropertySet aImpress_SdXShapePropertySet_Impl(lcl_GetImpress_SdXShapePropertySimpleMap_Impl(), SdrObject::GetGlobalDrawObjectItemPool());
-                pRet = &aImpress_SdXShapePropertySet_Impl; 
+                pRet = &aImpress_SdXShapePropertySet_Impl;
             }
         }
         else
@@ -256,7 +256,7 @@ static SdTypesCache gImplTypesCache;
             if( bGraphicObj )
             {
                 static SvxItemPropertySet aDraw_SdXShapePropertyGraphicSet_Impl(lcl_GetDraw_SdXShapePropertyGraphicMap_Impl(), SdrObject::GetGlobalDrawObjectItemPool());
-                pRet = &aDraw_SdXShapePropertyGraphicSet_Impl; 
+                pRet = &aDraw_SdXShapePropertyGraphicSet_Impl;
             }
             else
             {
@@ -274,7 +274,7 @@ static SdTypesCache gImplTypesCache;
         };
         return aEmpty_SdXShapePropertyMap_Impl;
     }
-        
+
     static const SvxItemPropertySet* lcl_GetEmpty_SdXShapePropertySet_Impl()
     {
         static SvxItemPropertySet aEmptyPropSet( lcl_GetEmpty_SdXShapePropertyMap_Impl(), SdrObject::GetGlobalDrawObjectItemPool() );
@@ -318,9 +318,9 @@ SdXShape::SdXShape( SvxShape* pShape, SdXImpressDocument* pModel) throw()
 				:	lcl_GetEmpty_SdXShapePropertyMap_Impl() ),
 	mpModel(pModel),
 	mpImplementationId( NULL )
-	
+
 {
-	
+
     pShape->setMaster( this );
 }
 
@@ -466,7 +466,7 @@ uno::Any SAL_CALL SdXShape::getPropertyDefault( const OUString& aPropertyName ) 
 	sal_uIntPtr nObjId = (sal_uIntPtr)mpShape->getPropertyMapEntries();
 	SfxExtItemPropertySetInfo* pInfo = NULL;
 
-	SdExtPropertySetInfoCache* pCache = (mpModel && mpModel->IsImpressDocument()) ? 
+	SdExtPropertySetInfoCache* pCache = (mpModel && mpModel->IsImpressDocument()) ?
 		&gImplImpressPropertySetInfoCache : &gImplDrawPropertySetInfoCache;
 
 	SdExtPropertySetInfoCache::iterator aIter( pCache->find( nObjId ) );
@@ -635,7 +635,7 @@ void SAL_CALL SdXShape::setPropertyValue( const ::rtl::OUString& aPropertyName, 
 				{
 					sal_Int32 nColor = 0;
 
-					if( !(aValue >>= nColor) )					
+					if( !(aValue >>= nColor) )
 						throw lang::IllegalArgumentException();
 
 					EffectMigration::SetDimColor( mpShape, nColor );
@@ -961,7 +961,7 @@ sal_Bool SdXShape::IsEmptyPresObj() const throw()
         else
         {
             return sal_True;
-        }        
+        }
     }
 
     return sal_False;
@@ -1144,7 +1144,7 @@ public:
 
     // XNameReplace
     virtual void SAL_CALL replaceByName( const ::rtl::OUString& aName, const ::com::sun::star::uno::Any& aElement ) throw(::com::sun::star::lang::IllegalArgumentException, ::com::sun::star::container::NoSuchElementException, ::com::sun::star::lang::WrappedTargetException, ::com::sun::star::uno::RuntimeException);
-    
+
     // XNameAccess
     virtual ::com::sun::star::uno::Any SAL_CALL getByName( const ::rtl::OUString& aName ) throw(::com::sun::star::container::NoSuchElementException, ::com::sun::star::lang::WrappedTargetException, ::com::sun::star::uno::RuntimeException);
     virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getElementNames(  ) throw(::com::sun::star::uno::RuntimeException);
@@ -1470,7 +1470,7 @@ void SAL_CALL SdUnoEventsAccess::replaceByName( const OUString& aName, const uno
 				{
 					sBuffer.append( aStrLibrary );
 				}
-			
+
 				pInfo->SetBookmark( sBuffer.makeStringAndClear() );
 			}
 			bOk = sal_True;
@@ -1659,7 +1659,7 @@ uno::Any SAL_CALL SdUnoEventsAccess::getByName( const OUString& aName )
 			pProperties->Value = aAny;
 			pProperties->State = beans::PropertyState_DIRECT_VALUE;
 			pProperties++;
-		
+
 			// NOTE: no break here!!!
 
 		case presentation::ClickAction_SOUND:

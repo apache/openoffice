@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -90,7 +90,7 @@ extern char *GetOutputFile( int argc, char* argv[])
 	for( int i = 1; i < argc; i++ ) {
         ByteString sSwitch( argv[ i ] );
         sSwitch.ToUpperAscii();
-        
+
         if ( sSwitch == "-I" ) {
 			nState = STATE_INPUT; // next token specifies source file
 		}
@@ -186,9 +186,9 @@ int InitCfgExport( char *pOutput , char* pFilename )
 
 	if ( bMergeMode )
 		pParser = new CfgMerge( sMergeSrc, sOutputFile, sFilename );
-  	else if ( sOutputFile.Len()) 
+  	else if ( sOutputFile.Len())
 		pParser = new CfgExport( sOutputFile, sPrj, sActFileName );
-	
+
 	return 1;
 }
 
@@ -209,7 +209,7 @@ void removeTempFile(){
 }
 extern const char* getFilename()
 {
-	return sInputFileName.GetBuffer(); 
+	return sInputFileName.GetBuffer();
 }
 /*****************************************************************************/
 extern FILE *GetCfgFile()
@@ -250,7 +250,7 @@ extern FILE *GetCfgFile()
 			// (e.g.: source\ui\src\menue.src)
 //			printf("sFullEntry = %s\n",sFullEntry.GetBuffer());
             sActFileName = sFullEntry.Copy( sPrjEntry.Len() + 1 );
-//            printf("sActFileName = %s\n",sActFileName.GetBuffer());    
+//            printf("sActFileName = %s\n",sActFileName.GetBuffer());
 
 			sActFileName.SearchAndReplaceAll( "/", "\\" );
 
@@ -291,12 +291,12 @@ int GetError()
 //
 
 CfgStackData* CfgStack::Push( const ByteString &rTag, const ByteString &rId )
-{ 
-    CfgStackData *pD = new CfgStackData( rTag, rId ); 
-    Insert( pD, LIST_APPEND ); 
-    return pD; 
+{
+    CfgStackData *pD = new CfgStackData( rTag, rId );
+    Insert( pD, LIST_APPEND );
+    return pD;
 }
-            
+
 //
 // class CfgStack
 //
@@ -725,7 +725,7 @@ CfgMerge::CfgMerge(
 {
     if ( rMergeSource.Len()){
 		pMergeDataFile = new MergeDataFile(
-		rMergeSource, sInputFileName  , bErrorLog, RTL_TEXTENCODING_MS_1252, true ); 
+		rMergeSource, sInputFileName  , bErrorLog, RTL_TEXTENCODING_MS_1252, true );
         if( Export::sLanguages.EqualsIgnoreCaseAscii("ALL") ){
             Export::SetLanguages( pMergeDataFile->GetLanguages() );
             aLanguages = pMergeDataFile->GetLanguages();
@@ -779,11 +779,11 @@ void CfgMerge::WorkOnText(
 		if ( pEntrys ) {
 			ByteString sContent;
             pEntrys->GetText( sContent, STRING_TYP_TEXT, nLangIndex );
-            
+
 			if ( Export::isAllowed( nLangIndex ) &&
 				( sContent != "-" ) && ( sContent.Len()))
 			{
-#ifdef MERGE_SOURCE_LANGUAGES 
+#ifdef MERGE_SOURCE_LANGUAGES
                     if( nLangIndex.EqualsIgnoreCaseAscii("de") || nLangIndex.EqualsIgnoreCaseAscii("en-US") )
                         rText = sContent;
 #endif
@@ -802,9 +802,9 @@ void CfgMerge::Output( const ByteString& rOutput )
 }
 
 sal_uLong CfgStack::Push( CfgStackData *pStackData )
-{ 
-    Insert( pStackData, LIST_APPEND ); 
-    return Count() - 1; 
+{
+    Insert( pStackData, LIST_APPEND );
+    return Count() - 1;
 }
 
 /*****************************************************************************/
@@ -822,13 +822,13 @@ void CfgMerge::WorkOnRessourceEnd()
 
 				ByteString sContent;
                 pEntrys->GetText( sContent, STRING_TYP_TEXT, sCur , sal_True );
-                if ( 
+                if (
                     // (!sCur.EqualsIgnoreCaseAscii("de") )    &&
 					( !sCur.EqualsIgnoreCaseAscii("en-US") ) &&
 
 					( sContent != "-" ) && ( sContent.Len()))
 				{
-                    
+
 					ByteString sText = sContent;
                     Export::QuotHTML( sText );
 

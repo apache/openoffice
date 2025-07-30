@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -148,7 +148,7 @@ void lcl_AddPropertiesToVector(
                   ::getCppuType( reinterpret_cast< const double * >(0)),
                   beans::PropertyAttribute::BOUND
                   | beans::PropertyAttribute::MAYBEVOID ));
-    
+
     rOutProperties.push_back(
         Property( C2U( "AutoMax" ),
                   PROP_AXIS_AUTO_MAX,
@@ -231,7 +231,7 @@ void lcl_AddPropertiesToVector(
                   PROP_AXIS_CROSSOVER_VALUE,
                   ::getCppuType( reinterpret_cast< const double * >(0)),
                   beans::PropertyAttribute::MAYBEVOID ));
-    
+
 
     rOutProperties.push_back(
         Property( C2U( "Origin" ),
@@ -267,7 +267,7 @@ void lcl_AddPropertiesToVector(
                   PROP_AXIS_MARK_POSITION,
                   ::getCppuType( reinterpret_cast< const ::com::sun::star::chart::ChartAxisMarkPosition * >(0)),
                   beans::PropertyAttribute::MAYBEDEFAULT ));
-    
+
 
     //Properties for labels:
     rOutProperties.push_back(
@@ -559,7 +559,7 @@ void SAL_CALL AxisWrapper::dispose()
     DisposeHelper::DisposeAndClear( m_xAxisTitle );
     DisposeHelper::DisposeAndClear( m_xMajorGrid );
     DisposeHelper::DisposeAndClear( m_xMinorGrid );
-        
+
     clearWrappedPropertySet();
 }
 
@@ -645,7 +645,7 @@ const Sequence< beans::Property >& AxisWrapper::getPropertySequence()
 const std::vector< WrappedProperty* > AxisWrapper::createWrappedProperties()
 {
     ::std::vector< ::chart::WrappedProperty* > aWrappedProperties;
-    
+
     aWrappedProperties.push_back( new WrappedTextRotationProperty() );
     aWrappedProperties.push_back( new WrappedProperty( C2U( "Marks" ), C2U( "MajorTickmarks" ) ) );
     aWrappedProperties.push_back( new WrappedProperty( C2U( "HelpMarks" ), C2U( "MinorTickmarks" ) ) );
@@ -675,10 +675,10 @@ const std::vector< WrappedProperty* > AxisWrapper::createWrappedProperties()
     }
 
     WrappedScaleProperty::addWrappedProperties( aWrappedProperties, m_spChart2ModelContact );
-        
+
     WrappedCharacterHeightProperty::addWrappedProperties( aWrappedProperties, this );
     WrappedScaleTextProperties::addWrappedProperties( aWrappedProperties, m_spChart2ModelContact );
-    
+
     return aWrappedProperties;
 }
 

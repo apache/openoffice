@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -69,7 +69,7 @@ Calendar_hijri::Calendar_hijri()
 	cCalendar = "com.sun.star.i18n.Calendar_hijri";
 }
 
-#define FIELDS  ((1 << CalendarFieldIndex::ERA) | (1 << CalendarFieldIndex::YEAR) | (1 << CalendarFieldIndex::MONTH) | (1 << CalendarFieldIndex::DAY_OF_MONTH)) 
+#define FIELDS  ((1 << CalendarFieldIndex::ERA) | (1 << CalendarFieldIndex::YEAR) | (1 << CalendarFieldIndex::MONTH) | (1 << CalendarFieldIndex::DAY_OF_MONTH))
 
 // map field value from hijri calendar to gregorian calendar
 void Calendar_hijri::mapToGregorian() throw(RuntimeException)
@@ -115,7 +115,7 @@ void Calendar_hijri::mapFromGregorian() throw(RuntimeException)
 // This function returns the Julian date/time of the Nth new moon since
 // January 1900.  The synodic month is passed as parameter.
 //
-// Adapted from "Astronomical  Formulae for Calculators" by 
+// Adapted from "Astronomical  Formulae for Calculators" by
 // Jean Meeus, Third Edition, Willmann-Bell, 1985.
 //
 double
@@ -131,17 +131,17 @@ Calendar_hijri::NewMoon(sal_Int32 n)
 	jd =  jd1900
 		+ SynPeriod * k
 		- 0.0001178 * t2
-		- 0.000000155 * t3 
+		- 0.000000155 * t3
 		+ 0.00033 * sin(RadPerDeg * (166.56 + 132.87 * t - 0.009173 * t2));
 
 	// Sun's mean anomaly in radian
 	sa =  RadPerDeg * (359.2242
-				+ 29.10535608 * k 
+				+ 29.10535608 * k
 				- 0.0000333 * t2
 				- 0.00000347 * t3);
 
 	// Moon's mean anomaly
-	ma =  RadPerDeg * (306.0253 
+	ma =  RadPerDeg * (306.0253
 				+ 385.81691806 * k
 				+ 0.0107306 * t2
 				+ 0.00001236 * t3);
@@ -208,7 +208,7 @@ Calendar_hijri::getHijri(sal_Int32 *day, sal_Int32 *month, sal_Int32 *year)
 
 	// Round up the day
 	*day = (sal_Int32)(((sal_Int32)julday) - newjd + 0.5);
-	*month =  (syndiff % 12) + 1; 
+	*month =  (syndiff % 12) + 1;
 
 	// currently not supported
 	//dayOfYear = (sal_Int32)(month * SynPeriod + day);

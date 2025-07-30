@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -59,7 +59,7 @@ static void callVirtualMethod(
   // reference parameters are pointers
 
   // the basic idea here is to use gpr[8] as a storage area for
-  // the future values of registers r3 to r10 needed for the call, 
+  // the future values of registers r3 to r10 needed for the call,
   // and similarly fpr[8] as a storage area for the future values
   // of floating point registers f1 to f8
 
@@ -86,14 +86,14 @@ static void callVirtualMethod(
      // Note: This keeps us from having to decode the signature twice and
      // prevents problems with later local variables.
 
-     // Note: could require up to  2*nStackLongs words of parameter stack area 
-     // if the call has many float parameters (i.e. floats take up only 1 
+     // Note: could require up to  2*nStackLongs words of parameter stack area
+     // if the call has many float parameters (i.e. floats take up only 1
      // word on the stack but double takes 2 words in parameter area in the
      // stack frame .
 
      // Update! floats on the outgoing parameter stack only take up 1 word
      // (stfs is used) which is not correct according to the ABI but we
-     // will match what the compiler does until this is figured out 
+     // will match what the compiler does until this is figured out
 
      // this grows the current stack to the appropriate size
      // and sets the outgoing stack pointer p to the right place
@@ -151,7 +151,7 @@ static void callVirtualMethod(
                gpr[n++] = *(pStackLongs+1);
 #endif
 	    } else {
-	       if (((long) p) & 4)          
+	       if (((long) p) & 4)
 	          p++;
                *p++ = *pStackLongs;       /* or on the parameter stack */
                *p++ = *(pStackLongs + 1);
@@ -164,7 +164,7 @@ static void callVirtualMethod(
 	    stack and that if passed in parameter stack to C, should be
 	    as double word.
 
-            Whoops: the abi is not actually followed by gcc, need to 
+            Whoops: the abi is not actually followed by gcc, need to
             store floats as a *single* word on outgoing parameter stack
             to match what gcc actually does
 	 */
@@ -177,7 +177,7 @@ static void callVirtualMethod(
 #endif
 	    } else {
 #if 0 /* if abi were followed */
-	       if (((long) p) & 4)          
+	       if (((long) p) & 4)
 	          p++;
 	       *((double *)p) = *((float *)pStackLongs);
                p += 2;
@@ -196,7 +196,7 @@ static void callVirtualMethod(
                gpr[n++] = *pStackLongs;
                gpr[n++] = *(pStackLongs+1);
 	    } else {
-	       if (((long) p) & 4)          
+	       if (((long) p) & 4)
 	          p++;
                *p++ = *pStackLongs;
                *p++ = *(pStackLongs+1);
@@ -235,12 +235,12 @@ static void callVirtualMethod(
      }
 
      /* figure out the address of the function we need to invoke */
-     off = nVtableIndex; 
+     off = nVtableIndex;
      off = off * 4;                         // 4 bytes per slot
      mfunc = *((unsigned long **)pAdjustedThisPtr);    // get the address of the vtable
-     mfunc = (unsigned long *)((char *)mfunc + off); // get the address from the vtable entry at offset 
+     mfunc = (unsigned long *)((char *)mfunc + off); // get the address from the vtable entry at offset
      mfunc = *((unsigned long **)mfunc);                 // the function is stored at the address
-     ptr = (void (*)())mfunc;   
+     ptr = (void (*)())mfunc;
 
     /* Set up the machine registers and invoke the function */
 
@@ -323,7 +323,7 @@ static void callVirtualMethod(
 }
 
 
-//================================================================================================== 
+//==================================================================================================
 static void cpp_call(
 	bridges::cpp_uno::shared::UnoInterfaceProxy * pThis,
 	bridges::cpp_uno::shared::VtableSlot  aVtableSlot,
@@ -335,7 +335,7 @@ static void cpp_call(
   	char * pCppStack		=
   		(char *)alloca( sizeof(sal_Int32) + ((nParams+2) * sizeof(sal_Int64)) );
   	char * pCppStackStart	= pCppStack;
-	
+
         // need to know parameter types for callVirtualMethod so generate a signature string
         char * pParamType = (char *) alloca(nParams+2);
         char * pPT = pParamType;
@@ -344,9 +344,9 @@ static void cpp_call(
 	typelib_TypeDescription * pReturnTypeDescr = 0;
 	TYPELIB_DANGER_GET( &pReturnTypeDescr, pReturnTypeRef );
 	// OSL_ENSURE( pReturnTypeDescr, "### expected return type description!" );
-	
+
 	void * pCppReturn = 0; // if != 0 && != pUnoReturn, needs reconversion
-	
+
 	if (pReturnTypeDescr)
 	{
 		if (bridges::cpp_uno::shared::isSimpleType( pReturnTypeDescr ))
@@ -356,7 +356,7 @@ static void cpp_call(
 		else
 		{
 			// complex return via ptr
-			pCppReturn = *(void **)pCppStack = 
+			pCppReturn = *(void **)pCppStack =
                               (bridges::cpp_uno::shared::relatesToInterfaceType( pReturnTypeDescr )
 			       ? alloca( pReturnTypeDescr->nSize ): pUnoReturn); // direct way
                         *pPT++ = 'I'; //signify that a complex return type on stack
@@ -377,20 +377,20 @@ static void cpp_call(
 	sal_Int32 * pTempIndizes = (sal_Int32 *)(pCppArgs + nParams);
 	// type descriptions for reconversions
 	typelib_TypeDescription ** ppTempParamTypeDescr = (typelib_TypeDescription **)(pCppArgs + (2 * nParams));
-	
+
 	sal_Int32 nTempIndizes   = 0;
-	
+
 	for ( sal_Int32 nPos = 0; nPos < nParams; ++nPos )
 	{
 		const typelib_MethodParameter & rParam = pParams[nPos];
 		typelib_TypeDescription * pParamTypeDescr = 0;
 		TYPELIB_DANGER_GET( &pParamTypeDescr, rParam.pTypeRef );
-		
+
 		if (!rParam.bOut && bridges::cpp_uno::shared::isSimpleType( pParamTypeDescr ))
 		{
 			uno_copyAndConvertData( pCppArgs[nPos] = pCppStack, pUnoArgs[nPos], pParamTypeDescr,
 									pThis->getBridge()->getUno2Cpp() );
-			
+
 			switch (pParamTypeDescr->eTypeClass)
 			{
 
@@ -453,9 +453,9 @@ static void cpp_call(
 			{
 				uno_copyAndConvertData(
 					*(void **)pCppStack = pCppArgs[nPos] = alloca( pParamTypeDescr->nSize ),
-					pUnoArgs[nPos], pParamTypeDescr, 
+					pUnoArgs[nPos], pParamTypeDescr,
                                         pThis->getBridge()->getUno2Cpp() );
-				
+
 				pTempIndizes[nTempIndizes] = nPos; // has to be reconverted
 				// will be released at reconversion
 				ppTempParamTypeDescr[nTempIndizes++] = pParamTypeDescr;
@@ -471,7 +471,7 @@ static void cpp_call(
 		}
 		pCppStack += sizeof(sal_Int32); // standard parameter length
 	}
-  
+
         // terminate the signature string
         *pPT++='X';
         *pPT=0;
@@ -485,13 +485,13 @@ static void cpp_call(
 			(sal_Int32 *)pCppStackStart, (pCppStack - pCppStackStart) / sizeof(sal_Int32) );
 		// NO exception occurred...
 		*ppUnoExc = 0;
-		
+
 		// reconvert temporary params
 		for ( ; nTempIndizes--; )
 		{
 			sal_Int32 nIndex = pTempIndizes[nTempIndizes];
 			typelib_TypeDescription * pParamTypeDescr = ppTempParamTypeDescr[nTempIndizes];
-			
+
 			if (pParams[nIndex].bIn)
 			{
 				if (pParams[nIndex].bOut) // inout
@@ -508,7 +508,7 @@ static void cpp_call(
 			}
 			// destroy temp cpp param => cpp: every param was constructed
 			uno_destructData( pCppArgs[nIndex], pParamTypeDescr, cpp_release );
-			
+
 			TYPELIB_DANGER_RELEASE( pParamTypeDescr );
 		}
 		// return value
@@ -522,9 +522,9 @@ static void cpp_call(
  	catch (...)
  	{
   		// fill uno exception
-		fillUnoException( CPPU_CURRENT_NAMESPACE::__cxa_get_globals()->caughtExceptions, 
+		fillUnoException( CPPU_CURRENT_NAMESPACE::__cxa_get_globals()->caughtExceptions,
                                   *ppUnoExc, pThis->getBridge()->getCpp2Uno() );
-        
+
 		// temporary params
 		for ( ; nTempIndizes--; )
 		{
@@ -548,9 +548,9 @@ void unoInterfaceProxyDispatch(
 	void * pReturn, void * pArgs[], uno_Any ** ppException )
 {
 	// is my surrogate
-        bridges::cpp_uno::shared::UnoInterfaceProxy * pThis 
+        bridges::cpp_uno::shared::UnoInterfaceProxy * pThis
             = static_cast< bridges::cpp_uno::shared::UnoInterfaceProxy *> (pUnoI);
-	
+
 	switch (pMemberDescr->eTypeClass)
 	{
 	case typelib_TypeClass_INTERFACE_ATTRIBUTE:
@@ -584,7 +584,7 @@ void unoInterfaceProxyDispatch(
 			OUString aVoidName( RTL_CONSTASCII_USTRINGPARAM("void") );
 			typelib_typedescriptionreference_new(
 				&pReturnTypeRef, typelib_TypeClass_VOID, aVoidName.pData );
-			
+
 			// dependent dispatch
                         aVtableSlot.index += 1; //get then set method
 			cpp_call(
@@ -592,10 +592,10 @@ void unoInterfaceProxyDispatch(
 				pReturnTypeRef,
 				1, &aParam,
 				pReturn, pArgs, ppException );
-			
+
 			typelib_typedescriptionreference_release( pReturnTypeRef );
 		}
-		
+
 		break;
 	}
 	case typelib_TypeClass_INTERFACE_METHOD:
@@ -627,7 +627,7 @@ void unoInterfaceProxyDispatch(
                 (*pThis->pBridge->getUnoEnv()->getRegisteredInterface)(
                     pThis->pBridge->getUnoEnv(),
                     (void **)&pInterface, pThis->oid.pData, (typelib_InterfaceTypeDescription *)pTD );
-			
+
                 if (pInterface)
                 {
                     ::uno_any_construct(
@@ -657,7 +657,7 @@ void unoInterfaceProxyDispatch(
 		::com::sun::star::uno::RuntimeException aExc(
 			OUString( RTL_CONSTASCII_USTRINGPARAM("illegal member type description!") ),
 			::com::sun::star::uno::Reference< ::com::sun::star::uno::XInterface >() );
-		
+
 		Type const & rExcType = ::getCppuType( &aExc );
 		// binary identical null reference
 		::uno_type_any_construct( *ppException, &aExc, rExcType.getTypeLibType(), 0 );

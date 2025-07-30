@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -117,7 +117,7 @@ AxisPositionsTabPage::AxisPositionsTabPage(Window* pWindow,const SfxItemSet& rIn
     , m_aPB_MajorGrid(this,SchResId(PB_MAJOR_GRID))
     , m_aCB_MinorGrid(this,SchResId(CB_MINOR_GRID))
     , m_aPB_MinorGrid(this,SchResId(PB_MINOR_GRID))
-    
+
 	, m_pNumFormatter(NULL)
     , m_bCrossingAxisIsCategoryAxis(false)
     , m_aCategories()
@@ -135,7 +135,7 @@ AxisPositionsTabPage::AxisPositionsTabPage(Window* pWindow,const SfxItemSet& rIn
             m_aFT_CrossesAt.SetSizePixel(m_aFT_CrossesAt.CalcMinimumSize());
             long nXPos = m_aFT_CrossesAt.GetPosPixel().X() + m_aFT_CrossesAt.GetSizePixel().Width() + nDistance;
             lcl_newXPos( m_aLB_CrossesAt, nXPos );
-            
+
             nXPos += m_aLB_CrossesAt.GetSizePixel().Width() + nDistance;
             lcl_newXPos( m_aED_CrossesAt, nXPos );
             lcl_newXPos( m_aED_CrossesAtCategory, nXPos );
@@ -172,14 +172,14 @@ AxisPositionsTabPage::AxisPositionsTabPage(Window* pWindow,const SfxItemSet& rIn
     {
         long nWidth_1 = ::std::max( m_aCB_TicksInner.CalcMinimumSize().Width(), m_aCB_MinorInner.CalcMinimumSize().Width() );
         long nWidth_2 = ::std::max( m_aCB_TicksOuter.CalcMinimumSize().Width(), m_aCB_MinorOuter.CalcMinimumSize().Width() );
-        
+
         long nLeftSpace = nDialogWidth - nWidth_0 - nWidth_1 - nWidth_2 - 3*nDistance;
 
         if(nLeftSpace>=0)
         {
             m_aFT_Major.SetSizePixel(m_aFT_Major.CalcMinimumSize());
             m_aFT_Minor.SetSizePixel(m_aFT_Minor.CalcMinimumSize());
-    
+
             m_aCB_TicksInner.SetSizePixel( m_aCB_TicksInner.CalcMinimumSize()  );
             m_aCB_MinorInner.SetSizePixel( m_aCB_MinorInner.CalcMinimumSize()  );
 
@@ -386,7 +386,7 @@ void AxisPositionsTabPage::Reset(const SfxItemSet& rInAttrs)
         m_aLB_PlaceLabels.Show(false);
         m_aFT_LabelDistance.Show(false);
         m_aED_LabelDistance.Show(false);
-        
+
         m_aFL_Vertical.Show(false);
         m_aFT_PlaceTicks.Show(false);
         m_aLB_PlaceTicks.Show(false);
@@ -415,7 +415,7 @@ void AxisPositionsTabPage::Reset(const SfxItemSet& rInAttrs)
         m_aLB_PlaceLabels.Enable(false);
         m_aFT_LabelDistance.Enable(false);
         m_aED_LabelDistance.Enable(false);
-        
+
         m_aFL_Vertical.Enable(false);
         m_aFT_PlaceTicks.Enable(false);
         m_aLB_PlaceTicks.Enable(false);
@@ -437,7 +437,7 @@ void AxisPositionsTabPage::SetNumFormatter( SvNumberFormatter* pFormatter )
 	m_pNumFormatter = pFormatter;
     m_aED_CrossesAt.SetFormatter( m_pNumFormatter );
 	m_aED_CrossesAt.UseInputStringForFormatting();
-    
+
 	const SfxPoolItem *pPoolItem = NULL;
     if( GetItemSet().GetItemState( SCHATTR_AXIS_CROSSING_MAIN_AXIS_NUMBERFORMAT, sal_True, &pPoolItem ) == SFX_ITEM_SET )
 	{
@@ -489,7 +489,7 @@ IMPL_LINK ( AxisPositionsTabPage, PlaceLabelsSelectHdl, void *, EMPTYARG )
     }
     m_aFT_PlaceTicks.Enable(bEnableTickmarkPlacement);
     m_aLB_PlaceTicks.Enable(bEnableTickmarkPlacement);
-    
+
     return 0;
 }
 

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -28,7 +28,7 @@
 
 #include <osl/diagnose.h>
 
-#include <cppuhelper/factory.hxx>  // for EXTERN_SERVICE_CALLTYPE 
+#include <cppuhelper/factory.hxx>  // for EXTERN_SERVICE_CALLTYPE
 
 using namespace ::rtl;
 using namespace ::cppu;
@@ -70,49 +70,49 @@ sal_Bool SAL_CALL component_writeInfo(
 				OUString( RTL_CONSTASCII_USTRINGPARAM("/UNO/SERVICES") );
 			xNewKey = xKey->createKey( str );
 			xNewKey->createKey( OPumpTest_getServiceName() );
-			
+
 			str = OUString( RTL_CONSTASCII_USTRINGPARAM("/") ) +
 				ODataStreamTest_getImplementationName(1) +
 				OUString( RTL_CONSTASCII_USTRINGPARAM("/UNO/SERVICES") );
 			xNewKey = xKey->createKey( str );
 			xNewKey->createKey( ODataStreamTest_getServiceName(1) );
-			
+
 			str = OUString( RTL_CONSTASCII_USTRINGPARAM("/") ) +
 				ODataStreamTest_getImplementationName(2) +
 				OUString( RTL_CONSTASCII_USTRINGPARAM("/UNO/SERVICES") );
 			xNewKey = xKey->createKey( str );
 			xNewKey->createKey( ODataStreamTest_getServiceName(2) );
-			
+
 			str = OUString( RTL_CONSTASCII_USTRINGPARAM("/") ) +
 				OObjectStreamTest_getImplementationName(1) +
 				OUString( RTL_CONSTASCII_USTRINGPARAM("/UNO/SERVICES") );
 			xNewKey = xKey->createKey( str );
 			xNewKey->createKey( OObjectStreamTest_getServiceName(1) );
-			
+
 			str = OUString( RTL_CONSTASCII_USTRINGPARAM("/") ) +
 				OObjectStreamTest_getImplementationName(2) +
 				OUString( RTL_CONSTASCII_USTRINGPARAM("/UNO/SERVICES") );
 			xNewKey = xKey->createKey( str );
 			xNewKey->createKey( OObjectStreamTest_getServiceName(2) );
-			
+
 			str = OUString( RTL_CONSTASCII_USTRINGPARAM("/") ) +
 				OMarkableOutputStreamTest_getImplementationName() +
 				OUString( RTL_CONSTASCII_USTRINGPARAM("/UNO/SERVICES") );
 			xNewKey = xKey->createKey( str );
 			xNewKey->createKey( OMarkableOutputStreamTest_getServiceName() );
-			
+
 			str = OUString( RTL_CONSTASCII_USTRINGPARAM("/") ) +
 				OMarkableInputStreamTest_getImplementationName() +
 				OUString( RTL_CONSTASCII_USTRINGPARAM("/UNO/SERVICES") );
 			xNewKey = xKey->createKey( str );
 			xNewKey->createKey( OMarkableInputStreamTest_getServiceName() );
-			
+
 			str = OUString( RTL_CONSTASCII_USTRINGPARAM("/") ) +
 				OMyPersistObject_getImplementationName() +
 				OUString( RTL_CONSTASCII_USTRINGPARAM("/UNO/SERVICES") );
 			xNewKey = xKey->createKey( str );
 			xNewKey->createKey( OMyPersistObject_getServiceName() );
-			
+
 			return sal_True;
 		}
 		catch (InvalidRegistryException &)
@@ -127,13 +127,13 @@ void * SAL_CALL component_getFactory(
 	const sal_Char * pImplName, void * pServiceManager, void * pRegistryKey )
 {
 	void * pRet = 0;
-	
+
 	if (pServiceManager )
 	{
 		Reference< XSingleServiceFactory > xRet;
 		Reference< XMultiServiceFactory > xSMgr =
 			reinterpret_cast< XMultiServiceFactory * > ( pServiceManager );
-		
+
 		OUString aImplementationName = OUString::createFromAscii( pImplName );
 
 		if (aImplementationName == OPipeTest_getImplementationName() )
@@ -148,41 +148,41 @@ void * SAL_CALL component_getFactory(
 										OPumpTest_CreateInstance,
 										OPumpTest_getSupportedServiceNames() );
 		}
-		
+
 		else if( aImplementationName == ODataStreamTest_getImplementationName(1) ) {
 			xRet = createSingleFactory( xSMgr , aImplementationName,
 										ODataStreamTest_CreateInstance,
-										ODataStreamTest_getSupportedServiceNames(1) );	
+										ODataStreamTest_getSupportedServiceNames(1) );
 		}
 		else if( aImplementationName == ODataStreamTest_getImplementationName(2) ) {
 			xRet = createSingleFactory( xSMgr , aImplementationName,
 										ODataStreamTest_CreateInstance,
-										ODataStreamTest_getSupportedServiceNames(2) );	
+										ODataStreamTest_getSupportedServiceNames(2) );
 		}
 		else if( aImplementationName == OObjectStreamTest_getImplementationName(1) ) {
 			xRet = createSingleFactory( xSMgr , aImplementationName,
 										OObjectStreamTest_CreateInstance,
-										OObjectStreamTest_getSupportedServiceNames(1) );	
+										OObjectStreamTest_getSupportedServiceNames(1) );
 		}
 		else if( aImplementationName == OObjectStreamTest_getImplementationName(2) ) {
 			xRet = createSingleFactory( xSMgr , aImplementationName,
 										OObjectStreamTest_CreateInstance,
-										OObjectStreamTest_getSupportedServiceNames(2) );	
+										OObjectStreamTest_getSupportedServiceNames(2) );
 		}
 		else if( aImplementationName == OMarkableOutputStreamTest_getImplementationName() ) {
 			xRet = createSingleFactory( xSMgr , aImplementationName,
 										OMarkableOutputStreamTest_CreateInstance,
-										OMarkableOutputStreamTest_getSupportedServiceNames() );	
+										OMarkableOutputStreamTest_getSupportedServiceNames() );
 		}
 		else if( aImplementationName == OMarkableInputStreamTest_getImplementationName() ) {
 			xRet = createSingleFactory( xSMgr , aImplementationName,
 										OMarkableInputStreamTest_CreateInstance,
-										OMarkableInputStreamTest_getSupportedServiceNames() );	
+										OMarkableInputStreamTest_getSupportedServiceNames() );
 		}
 		else if( aImplementationName == OMyPersistObject_getImplementationName() ) {
 			xRet = createSingleFactory( xSMgr , aImplementationName,
 									OMyPersistObject_CreateInstance,
-										OMyPersistObject_getSupportedServiceNames() );	
+										OMyPersistObject_getSupportedServiceNames() );
 		}
 		if (xRet.is())
 		{
@@ -190,7 +190,7 @@ void * SAL_CALL component_getFactory(
 			pRet = xRet.get();
 		}
 	}
-	
+
 	return pRet;
 }
 
@@ -203,7 +203,7 @@ Sequence<sal_Int8 > createSeq( char * p )
 	return seq;
 }
 
-Sequence<sal_Int8> createIntSeq( sal_Int32 i ) 
+Sequence<sal_Int8> createIntSeq( sal_Int32 i )
 {
 	char pcCount[20];
 	sprintf( pcCount , "%d" , i );

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,20 +7,20 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
- 
+
 #include "vbacheckbox.hxx"
 #include "vbanewfont.hxx"
 #include <vbahelper/helperdecl.hxx>
@@ -36,7 +36,7 @@ ScVbaCheckbox::ScVbaCheckbox( const uno::Reference< ov::XHelperInterface >& xPar
 }
 
 // Attributes
-rtl::OUString SAL_CALL 
+rtl::OUString SAL_CALL
 ScVbaCheckbox::getCaption() throw (css::uno::RuntimeException)
 {
     rtl::OUString Label;
@@ -44,26 +44,26 @@ ScVbaCheckbox::getCaption() throw (css::uno::RuntimeException)
     return Label;
 }
 
-void SAL_CALL 
+void SAL_CALL
 ScVbaCheckbox::setCaption( const rtl::OUString& _caption ) throw (::com::sun::star::uno::RuntimeException)
 {
     m_xProps->setPropertyValue( LABEL, uno::makeAny( _caption ) );
 }
 
-uno::Any SAL_CALL 
+uno::Any SAL_CALL
 ScVbaCheckbox::getValue() throw (css::uno::RuntimeException)
 {
     sal_Int16 nValue = -1;
     m_xProps->getPropertyValue( STATE ) >>= nValue;
     if( nValue != 0 )
         nValue = -1;
-//    return uno::makeAny( nValue ); 
+//    return uno::makeAny( nValue );
 // I must be missing something MSO says value should be -1 if selected, 0 if not
 // selected
-    return uno::makeAny( ( nValue == -1 ) ? sal_True : sal_False ); 
+    return uno::makeAny( ( nValue == -1 ) ? sal_True : sal_False );
 }
 
-void SAL_CALL 
+void SAL_CALL
 ScVbaCheckbox::setValue( const uno::Any& _value ) throw (css::uno::RuntimeException)
 {
     sal_Int16 nValue = 0;
@@ -93,7 +93,7 @@ ScVbaCheckbox::getServiceImplName()
 	return sImplName;
 }
 
-uno::Sequence< rtl::OUString > 
+uno::Sequence< rtl::OUString >
 ScVbaCheckbox::getServiceNames()
 {
 	static uno::Sequence< rtl::OUString > aServiceNames;

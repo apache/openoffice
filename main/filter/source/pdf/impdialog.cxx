@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,19 +7,19 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
- 
+
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_filter.hxx"
@@ -549,9 +549,9 @@ void ImpPDFTabGeneralPage::SetFilterConfigItem( const ImpPDFTabDialog* paParent 
     maLbFormsFormat.Enable( paParent->mbExportFormFields );
     maCbAllowDuplicateFieldNames.Check( paParent->mbAllowDuplicateFieldNames );
     maCbAllowDuplicateFieldNames.Enable( paParent->mbExportFormFields );
-    
+
 	maCbExportBookmarks.Check( paParent->mbExportBookmarks );
-	
+
 	maCbExportNotes.Check( paParent->mbExportNotes );
 
 	if ( mbIsPresentation )
@@ -741,7 +741,7 @@ IMPL_LINK( ImpPDFTabGeneralPage, ToggleExportPDFAHdl, void*, EMPTYARG )
         WarningBox aBox( this, PDFFilterResId( RID_PDF_WARNPDFAPASSWORD ) );
         aBox.Execute();
     }
-    
+
     return 0;
 }
 
@@ -1022,7 +1022,7 @@ ImpPDFTabSecurityPage::ImpPDFTabSecurityPage( Window* i_pParent,
     maUserPwdSet( PDFFilterResId( STR_USER_PWD_SET ) ),
     maUserPwdUnset( PDFFilterResId( STR_USER_PWD_UNSET ) ),
     maUserPwdPdfa( PDFFilterResId( STR_USER_PWD_PDFA ) ),
-    
+
     maStrSetPwd( PDFFilterResId( STR_SET_PWD ) ),
 	maFtOwnerPwd( this, PDFFilterResId( FT_OWNER_PWD ) ),
     maOwnerPwdSet( PDFFilterResId( STR_OWNER_PWD_SET ) ),
@@ -1052,18 +1052,18 @@ ImpPDFTabSecurityPage::ImpPDFTabSecurityPage( Window* i_pParent,
 {
     maUserPwdSet.Append( sal_Unicode( '\n' ) );
     maUserPwdSet.Append( String( PDFFilterResId( STR_USER_PWD_ENC ) ) );
-    
+
     maUserPwdUnset.Append( sal_Unicode( '\n' ) );
     maUserPwdUnset.Append( String( PDFFilterResId( STR_USER_PWD_UNENC ) ) );
-    
+
     maOwnerPwdSet.Append( sal_Unicode( '\n' ) );
     maOwnerPwdSet.Append( String( PDFFilterResId( STR_OWNER_PWD_REST ) ) );
-    
+
     maOwnerPwdUnset.Append( sal_Unicode( '\n' ) );
     maOwnerPwdUnset.Append( String( PDFFilterResId( STR_OWNER_PWD_UNREST ) ) );
-    
+
 	FreeResource();
-    
+
     maFtUserPwd.SetText( maUserPwdUnset );
     maFtOwnerPwd.SetText( maOwnerPwdUnset );
 
@@ -1085,7 +1085,7 @@ ImpPDFTabSecurityPage::ImpPDFTabSecurityPage( Window* i_pParent,
             (*pCurrent++)->SetPosPixel( aNewPos );
         }
     }
-    
+
     maPbSetPwd.SetClickHdl( LINK( this, ImpPDFTabSecurityPage, ClickmaPbSetPwdHdl ) );
 }
 
@@ -1178,7 +1178,7 @@ void ImpPDFTabSecurityPage::SetFilterConfigItem( const  ImpPDFTabDialog* paParen
 
 // set the status of this windows, according to the PDFA selection
     enablePermissionControls();
-    
+
     if( paParent && paParent->GetTabPage( RID_PDF_TAB_GENER ) )
         ImplPDFASecurityControl(
             !( ( ImpPDFTabGeneralPage* )paParent->GetTabPage( RID_PDF_TAB_GENER ) )->IsPdfaSelected() );
@@ -1196,19 +1196,19 @@ IMPL_LINK( ImpPDFTabSecurityPage, ClickmaPbSetPwdHdl, void*, EMPTYARG )
 	{
 	    rtl::OUString aUserPW( aPwdDialog.GetPassword() );
 	    rtl::OUString aOwnerPW( aPwdDialog.GetPassword2() );
-	    
+
 	    mbHaveUserPassword = (aUserPW.getLength() != 0);
 	    mbHaveOwnerPassword = (aOwnerPW.getLength() != 0);
-	    
+
 	    mxPreparedPasswords = vcl::PDFWriter::InitEncryption( aOwnerPW, aUserPW, true );
-	    
+
 	    if( mbHaveOwnerPassword )
 	    {
 	        maPreparedOwnerPassword = comphelper::OStorageHelper::CreatePackageEncryptionData( aOwnerPW );
 	    }
 	    else
 	        maPreparedOwnerPassword = Sequence< NamedValue >();
-	    
+
 	    // trash clear text passwords string memory
 	    rtl_zeroMemory( (void*)aUserPW.getStr(), aUserPW.getLength() );
 	    rtl_zeroMemory( (void*)aOwnerPW.getStr(), aOwnerPW.getLength() );
@@ -1228,7 +1228,7 @@ void ImpPDFTabSecurityPage::enablePermissionControls()
         maFtUserPwd.SetText( maUserPwdPdfa );
     else
         maFtUserPwd.SetText( (mbHaveUserPassword && IsEnabled()) ? maUserPwdSet : maUserPwdUnset );
-    
+
 	sal_Bool bLocalEnable = mbHaveOwnerPassword && IsEnabled();
 	if( bIsPDFASel )
 	    maFtOwnerPwd.SetText( maOwnerPwdPdfa );

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -59,7 +59,7 @@ XMLTextPropertySetContext::XMLTextPropertySetContext(
 XMLTextPropertySetContext::~XMLTextPropertySetContext()
 {
 }
-	
+
 SvXMLImportContext *XMLTextPropertySetContext::CreateChildContext(
 				   sal_uInt16 nPrefix,
 				   const OUString& rLocalName,
@@ -118,12 +118,12 @@ SvXMLImportContext *XMLTextPropertySetContext::CreateChildContext(
         // to. Thus, this is checked with an if, rather than with an assertion.
         sal_Int32 nTranspIndex = -1;
         if( (rProp.mnIndex >= 3) &&
-            ( CTF_BACKGROUND_TRANSPARENCY == 
-              mxMapper->getPropertySetMapper()->GetEntryContextId( 
+            ( CTF_BACKGROUND_TRANSPARENCY ==
+              mxMapper->getPropertySetMapper()->GetEntryContextId(
                   rProp.mnIndex-3 ) ) )
             nTranspIndex = rProp.mnIndex-3;
 
-		pContext = 
+		pContext =
 			new XMLBackgroundImageContext( GetImport(), nPrefix,
 										   rLocalName, xAttrList,
 										   rProp,
@@ -136,17 +136,17 @@ SvXMLImportContext *XMLTextPropertySetContext::CreateChildContext(
 #ifndef SVX_LIGHT
 	case CTF_SECTION_FOOTNOTE_END:
 	case CTF_SECTION_ENDNOTE_END:
-		pContext = new XMLSectionFootnoteConfigImport( 
-			GetImport(), nPrefix, rLocalName, rProperties, 
+		pContext = new XMLSectionFootnoteConfigImport(
+			GetImport(), nPrefix, rLocalName, rProperties,
 			mxMapper->getPropertySetMapper());
 		break;
 #endif // #ifndef SVX_LIGHT
 	}
-	
+
 	if( !pContext )
 		pContext = SvXMLPropertySetContext::CreateChildContext( nPrefix, rLocalName,
-															xAttrList, 
+															xAttrList,
 															rProperties, rProp );
-	
+
 	return pContext;
 }

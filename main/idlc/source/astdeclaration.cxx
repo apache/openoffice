@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -45,7 +45,7 @@ static OString convertName(const OString& name)
         }
     } while( nIndex != -1 );
 	return nameBuffer.makeStringAndClear();
-}	
+}
 
 AstDeclaration::AstDeclaration(NodeType type, const OString& name, AstScope* pScope)
 	: m_localName(name)
@@ -87,11 +87,11 @@ AstDeclaration::AstDeclaration(NodeType type, const OString& name, AstScope* pSc
 
     m_bPublished = idlc()->isPublished();
 }
-	
+
 
 AstDeclaration::~AstDeclaration()
 {
-	
+
 }
 
 void AstDeclaration::setPredefined(bool bPredefined)
@@ -100,7 +100,7 @@ void AstDeclaration::setPredefined(bool bPredefined)
     if ( m_bPredefined )
     {
         m_fileName = OString();
-        m_bInMainFile = sal_False;    
+        m_bInMainFile = sal_False;
     }
 }
 
@@ -135,7 +135,7 @@ void AstDeclaration::setName(const ::rtl::OString& name)
 // 		m_scopedName = name;
 // 	}
 	m_fullName = convertName(m_scopedName);
-}	
+}
 
 bool AstDeclaration::isType() const {
     switch (m_nodeType) {
@@ -163,12 +163,12 @@ sal_Bool AstDeclaration::hasAncestor(AstDeclaration* pDecl)
 	if ( !m_pScope )
 		return sal_False;
 	return scopeAsDecl(m_pScope)->hasAncestor(pDecl);
-}	
+}
 
 sal_Bool AstDeclaration::dump(RegistryKey& rKey)
 {
 	AstScope* pScope = declAsScope(this);
-	sal_Bool bRet = sal_True;	
+	sal_Bool bRet = sal_True;
 
 	if ( pScope )
 	{
@@ -196,11 +196,11 @@ sal_Bool AstDeclaration::dump(RegistryKey& rKey)
                         break;
                     default:
                         break;
-				}	
+				}
 			}
-            
+
 			++iter;
-		}		
+		}
 	}
 	return bRet;
-}	
+}

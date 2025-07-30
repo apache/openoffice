@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -120,7 +120,7 @@ sal_Bool SAL_CALL IndexEntrySupplier::createLocaleSpecificIndexEntrySupplier(con
 Reference < com::sun::star::i18n::XExtendedIndexEntrySupplier > SAL_CALL
 IndexEntrySupplier::getLocaleSpecificIndexEntrySupplier(const Locale& rLocale, const OUString& rSortAlgorithm) throw (RuntimeException)
 {
-        if (xIES.is() && rSortAlgorithm == aSortAlgorithm && rLocale.Language == aLocale.Language && 
+        if (xIES.is() && rSortAlgorithm == aSortAlgorithm && rLocale.Language == aLocale.Language &&
                 rLocale.Country == aLocale.Country && rLocale.Variant == aLocale.Variant)
             return xIES;
         else if (xMSF.is()) {
@@ -176,7 +176,7 @@ OUString SAL_CALL IndexEntrySupplier::getIndexFollowPageWord( sal_Bool bMorePage
         Sequence< OUString > aFollowPageWords = LocaleData().getFollowPageWords(rLocale);
 
         return (bMorePages && aFollowPageWords.getLength() > 1) ?
-            aFollowPageWords[1] : (aFollowPageWords.getLength() > 0 ? 
+            aFollowPageWords[1] : (aFollowPageWords.getLength() > 0 ?
             aFollowPageWords[0] : OUString());
 }
 

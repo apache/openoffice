@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,29 +7,29 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_codemaker.hxx"
-#include 	<stdio.h> 
+#include 	<stdio.h>
 
 #include	"cunooptions.hxx"
 
 using namespace rtl;
 
-sal_Bool CunoOptions::initOptions(int ac, char* av[], sal_Bool bCmdFile) 
+sal_Bool CunoOptions::initOptions(int ac, char* av[], sal_Bool bCmdFile)
 	throw( IllegalArgument )
 {
 	sal_Bool 	ret = sal_True;
@@ -38,7 +38,7 @@ sal_Bool CunoOptions::initOptions(int ac, char* av[], sal_Bool bCmdFile)
 	if (!bCmdFile)
 	{
 		bCmdFile = sal_True;
-		
+
 		m_program = av[0];
 
 		if (ac < 2)
@@ -76,7 +76,7 @@ sal_Bool CunoOptions::initOptions(int ac, char* av[], sal_Bool bCmdFile)
 								{
 									tmp += " your input '" + OString(av[i+1]) + "'";
 								}
-								
+
 								throw IllegalArgument(tmp);
 							}
 						} else
@@ -100,14 +100,14 @@ sal_Bool CunoOptions::initOptions(int ac, char* av[], sal_Bool bCmdFile)
 							{
 								tmp += " your input '" + OString(av[i+1]) + "'";
 							}
-							
+
 							throw IllegalArgument(tmp);
 						}
 					} else
 					{
 						s = av[i] + 2;
 					}
-					
+
 					m_options["-O"] = OString(s);
 					break;
 				case 'B':
@@ -124,14 +124,14 @@ sal_Bool CunoOptions::initOptions(int ac, char* av[], sal_Bool bCmdFile)
 							{
 								tmp += " your input '" + OString(av[i+1]) + "'";
 							}
-							
+
 							throw IllegalArgument(tmp);
 						}
 					} else
 					{
 						s = av[i] + 2;
 					}
-					
+
 					m_options["-B"] = OString(s);
 					break;
 				case 'T':
@@ -148,14 +148,14 @@ sal_Bool CunoOptions::initOptions(int ac, char* av[], sal_Bool bCmdFile)
 							{
 								tmp += " your input '" + OString(av[i+1]) + "'";
 							}
-							
+
 							throw IllegalArgument(tmp);
 						}
 					} else
 					{
 						s = av[i] + 2;
 					}
-					
+
 					if (m_options.count("-T") > 0)
 					{
 						OString tmp(m_options["-T"]);
@@ -177,7 +177,7 @@ sal_Bool CunoOptions::initOptions(int ac, char* av[], sal_Bool bCmdFile)
 
 						throw IllegalArgument(tmp);
 					}
-					
+
 					m_options["-U"] = OString("");
 					break;
 /*
@@ -192,7 +192,7 @@ sal_Bool CunoOptions::initOptions(int ac, char* av[], sal_Bool bCmdFile)
 
 						throw IllegalArgument(tmp);
 					}
-					
+
 					if (isValid("-C") || isValid("-CS"))
 					{
 						OString tmp("'-L' could not be combined with '-C' or '-CS' option");
@@ -212,7 +212,7 @@ sal_Bool CunoOptions::initOptions(int ac, char* av[], sal_Bool bCmdFile)
 
 						throw IllegalArgument(tmp);
 					}
-					
+
 					if (isValid("-L") || isValid("-CS"))
 					{
 						OString tmp("'-C' could not be combined with '-L' or '-CS' option");
@@ -247,12 +247,12 @@ sal_Bool CunoOptions::initOptions(int ac, char* av[], sal_Bool bCmdFile)
 
 						throw IllegalArgument(tmp);
 					}
-					
+
 					m_options["-G"] = OString("");
 					break;
 				default:
 					throw IllegalArgument("the option is unknown" + OString(av[i]));
-					break;					
+					break;
 			}
 		} else
 		{
@@ -275,23 +275,23 @@ sal_Bool CunoOptions::initOptions(int ac, char* av[], sal_Bool bCmdFile)
 						rargc++;
 					}
 					fclose(cmdFile);
-					
+
 					ret = initOptions(rargc, rargv, bCmdFile);
-					
-					for (long i=0; i < rargc; i++) 
+
+					for (long i=0; i < rargc; i++)
 					{
 						free(rargv[i]);
 					}
-				}		
+				}
 			} else
 			{
 				m_inputFiles.push_back(av[i]);
-			}		
+			}
 		}
 	}
-	
-	return ret;	
-}	
+
+	return ret;
+}
 
 OString	CunoOptions::prepareHelp()
 {
@@ -302,7 +302,7 @@ OString	CunoOptions::prepareHelp()
 	help += "    -T<name>   = name specifies a type or a list of types. The output for this\n";
 	help += "      [t1;...]   type is generated. If no '-T' option is specified,\n";
 	help += "                 then output for all types is generated.\n";
-	help += "                 Example: 'com.sun.star.uno.XInterface' is a valid type.\n";		
+	help += "                 Example: 'com.sun.star.uno.XInterface' is a valid type.\n";
 	help += "    -B<name>   = name specifies the base node. All types are searched under this\n";
 	help += "                 node. Default is the root '/' of the registry files.\n";
 	help += "    -U         = activate the generating of a getCppuType_<name> function.\n";
@@ -311,15 +311,13 @@ OString	CunoOptions::prepareHelp()
 	help += "    -G         = generate only target files which does not exists.\n";
 	help += "    -Gc        = generate only target files which content will be changed.\n";
 	help += prepareVersion();
-	
+
 	return help;
-}	
+}
 
 OString	CunoOptions::prepareVersion()
 {
 	OString version(m_program);
 	version += " Version 1.0\n\n";
 	return version;
-}	
-
-	
+}

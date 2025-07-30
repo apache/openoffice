@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -111,7 +111,7 @@ void VCLXAccessibleHeaderBar::FillAccessibleStateSet( utl::AccessibleStateSetHel
 
 ::rtl::OUString VCLXAccessibleHeaderBar::getImplementationName() throw (RuntimeException)
 {
-	return ::rtl::OUString::createFromAscii( "com.sun.star.comp.toolkit.AccessibleHeaderBar" );	
+	return ::rtl::OUString::createFromAscii( "com.sun.star.comp.toolkit.AccessibleHeaderBar" );
 }
 
 // -----------------------------------------------------------------------------
@@ -125,16 +125,16 @@ Sequence< ::rtl::OUString > VCLXAccessibleHeaderBar::getSupportedServiceNames() 
 
 // =======XAccessibleContext=======
 
-sal_Int32 SAL_CALL VCLXAccessibleHeaderBar::getAccessibleChildCount(  ) 
+sal_Int32 SAL_CALL VCLXAccessibleHeaderBar::getAccessibleChildCount(  )
 		throw (::com::sun::star::uno::RuntimeException)
 {
 	sal_Int32 nCount = 0;
 	if ( m_pHeadBar )
 		nCount = m_pHeadBar->GetItemCount();
-	
+
     return nCount;
 }
-::com::sun::star::uno::Reference< ::com::sun::star::accessibility::XAccessible > SAL_CALL 
+::com::sun::star::uno::Reference< ::com::sun::star::accessibility::XAccessible > SAL_CALL
 		VCLXAccessibleHeaderBar::getAccessibleChild( sal_Int32 i ) 	throw (::com::sun::star::lang::IndexOutOfBoundsException, ::com::sun::star::uno::RuntimeException)
 {
 	if ( i < 0 || i >= getAccessibleChildCount() )
@@ -161,7 +161,7 @@ sal_Int16 SAL_CALL VCLXAccessibleHeaderBar::getAccessibleRole(  ) throw (::com::
 void SAL_CALL VCLXAccessibleHeaderBar::disposing (void)
 {
 	ListItems().swap(m_aAccessibleChildren);
-	VCLXAccessibleComponent::disposing();	
+	VCLXAccessibleComponent::disposing();
 }
 
 ::com::sun::star::uno::Reference< ::com::sun::star::accessibility::XAccessible > VCLXAccessibleHeaderBar::CreateChild (sal_Int32 i)
@@ -181,7 +181,7 @@ void SAL_CALL VCLXAccessibleHeaderBar::disposing (void)
 	{
 		xChild = m_aAccessibleChildren[nPos];
 		// check if position is empty and can be used else we have to adjust all entries behind this
-		if ( !xChild.is() )		
+		if ( !xChild.is() )
 		{
 			xChild = new VCLXAccessibleHeaderBarItem(m_pHeadBar, i);
 			m_aAccessibleChildren[nPos] = xChild;

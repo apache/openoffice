@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -130,7 +130,7 @@ sal_Bool cmpstr( const sal_Char* str1, const sal_Char* str2 )
     const sal_Char* pBuf1 = str1;
     const sal_Char* pBuf2 = str2;
     sal_Bool res = sal_True;
-   
+
     while ( (*pBuf1 == *pBuf2) && *pBuf1 !='\0' && *pBuf2 != '\0')
     {
         (pBuf1)++;
@@ -164,7 +164,7 @@ sal_Bool cmpustr( const sal_Unicode* str1, const sal_Unicode* str2 )
     const sal_Unicode* pBuf1 = str1;
     const sal_Unicode* pBuf2 = str2;
     sal_Bool res = sal_True;
-   
+
     while ( (*pBuf1 == *pBuf2) && *pBuf1 !='\0' && *pBuf2 != '\0')
     {
         (pBuf1)++;

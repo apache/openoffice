@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
@@ -166,8 +166,8 @@ public:
 	//Begin Bug 119922:Graphic in header and footer can not be displayed correctly.
 	//Set default value for "Follow text flow" to false if a previous version didn't support "Follow text flow".
 	sal_Bool                        FillBaseProperties(SfxItemSet& rToSet,
-														const SfxItemSet &rFromSet, 
-														sal_Bool& rSizeFound, 
+														const SfxItemSet &rFromSet,
+														sal_Bool& rSizeFound,
 														const sal_Bool bOasis = sal_False );
 	//End Bug 119922
 
@@ -191,7 +191,7 @@ sal_Bool BaseFrameProperties_Impl::GetProperty(sal_uInt16 nWID, sal_uInt8 nMembe
 //Begin Bug 119922:Graphic in header and footer can not be displayed correctly.
 //Set default value for "Follow text flow" to false if a previous version didn't support "Follow text flow".
 sal_Bool BaseFrameProperties_Impl::FillBaseProperties(SfxItemSet& rToSet,
-													  const SfxItemSet& rFromSet, 
+													  const SfxItemSet& rFromSet,
 													  sal_Bool& rSizeFound,
 													  const sal_Bool bOasis /*sal_False*/ )
 //End Bug 119922
@@ -227,13 +227,13 @@ sal_Bool BaseFrameProperties_Impl::FillBaseProperties(SfxItemSet& rToSet,
     const ::uno::Any* pGrFilter = 0; GetProperty(RES_BACKGROUND, MID_GRAPHIC_FILTER, pGrFilter     );
     const ::uno::Any* pGrTranparency = 0; GetProperty(RES_BACKGROUND, MID_GRAPHIC_TRANSPARENCY, pGrTranparency     );
     const bool bSvxBrushItemPropertiesUsed(
-        pCol || 
-        pTrans || 
-        pGrURL || 
-        pGrFilter || 
-        pGrLoc || 
-        pGrTranparency || 
-        pColTrans || 
+        pCol ||
+        pTrans ||
+        pGrURL ||
+        pGrFilter ||
+        pGrLoc ||
+        pGrTranparency ||
+        pColTrans ||
         pRGBCol);
 
     //UUUU check for FillStyle properties in the range XATTR_FILL_FIRST, XATTR_FILL_LAST
@@ -273,23 +273,23 @@ sal_Bool BaseFrameProperties_Impl::FillBaseProperties(SfxItemSet& rToSet,
     const uno::Any* pOwnAttrFillBmpItem = 0; GetProperty(OWN_ATTR_FILLBMP_MODE, 0, pOwnAttrFillBmpItem);
 
     const bool bXFillStyleItemUsed(
-        pXFillStyleItem || 
-        pXFillColorItem || 
-        pXFillGradientItem || pXFillGradientNameItem || 
+        pXFillStyleItem ||
+        pXFillColorItem ||
+        pXFillGradientItem || pXFillGradientNameItem ||
         pXFillHatchItem || pXFillHatchNameItem ||
         pXFillBitmapItem || pXFillBitmapNameItem || pXFillBitmapURLItem ||
-        pXFillTransparenceItem || 
-        pXGradientStepCountItem || 
-        pXFillBmpPosItem || 
-        pXFillBmpSizeXItem || 
-        pXFillBmpSizeYItem || 
+        pXFillTransparenceItem ||
+        pXGradientStepCountItem ||
+        pXFillBmpPosItem ||
+        pXFillBmpSizeXItem ||
+        pXFillBmpSizeYItem ||
         pXFillFloatTransparenceItem || pXFillFloatTransparenceNameItem ||
-        pXSecondaryFillColorItem || 
-        pXFillBmpSizeLogItem || 
-        pXFillBmpTileOffsetXItem || 
-        pXFillBmpTileOffsetYItem || 
-        pXFillBmpPosOffsetXItem || 
-        pXFillBmpPosOffsetYItem || 
+        pXSecondaryFillColorItem ||
+        pXFillBmpSizeLogItem ||
+        pXFillBmpTileOffsetXItem ||
+        pXFillBmpTileOffsetYItem ||
+        pXFillBmpPosOffsetXItem ||
+        pXFillBmpPosOffsetYItem ||
         pXFillBackgroundItem ||
         pOwnAttrFillBmpItem);
 
@@ -354,33 +354,33 @@ sal_Bool BaseFrameProperties_Impl::FillBaseProperties(SfxItemSet& rToSet,
 
     if(bXFillStyleItemUsed)
     {
-        if(pXFillStyleItem) 
-        { 
-            XFillStyleItem aXFillStyleItem; 
+        if(pXFillStyleItem)
+        {
+            XFillStyleItem aXFillStyleItem;
 
-            aXFillStyleItem.PutValue(*pXFillStyleItem); 
-            rToSet.Put(aXFillStyleItem); 
+            aXFillStyleItem.PutValue(*pXFillStyleItem);
+            rToSet.Put(aXFillStyleItem);
         }
 
-        if(pXFillColorItem) 
-        { 
+        if(pXFillColorItem)
+        {
             const XubString aNullStr;
             const Color aNullCol(COL_DEFAULT_SHAPE_FILLING);
-            XFillColorItem aXFillColorItem(aNullStr, aNullCol); 
+            XFillColorItem aXFillColorItem(aNullStr, aNullCol);
 
-            aXFillColorItem.PutValue(*pXFillColorItem); 
-            rToSet.Put(aXFillColorItem); 
+            aXFillColorItem.PutValue(*pXFillColorItem);
+            rToSet.Put(aXFillColorItem);
         }
 
-        if(pXFillGradientItem || pXFillGradientNameItem) 
-        { 
+        if(pXFillGradientItem || pXFillGradientNameItem)
+        {
             if(pXFillGradientItem)
             {
                 const XGradient aNullGrad(RGB_Color(COL_BLACK), RGB_Color(COL_WHITE));
-                XFillGradientItem aXFillGradientItem(rToSet.GetPool(), aNullGrad); 
+                XFillGradientItem aXFillGradientItem(rToSet.GetPool(), aNullGrad);
 
-                aXFillGradientItem.PutValue(*pXFillGradientItem, MID_FILLGRADIENT); 
-                rToSet.Put(aXFillGradientItem); 
+                aXFillGradientItem.PutValue(*pXFillGradientItem, MID_FILLGRADIENT);
+                rToSet.Put(aXFillGradientItem);
             }
 
             if(pXFillGradientNameItem)
@@ -396,16 +396,16 @@ sal_Bool BaseFrameProperties_Impl::FillBaseProperties(SfxItemSet& rToSet,
             }
         }
 
-        if(pXFillHatchItem || pXFillHatchNameItem) 
-        { 
+        if(pXFillHatchItem || pXFillHatchNameItem)
+        {
             if(pXFillHatchItem)
             {
                 const Color aNullCol(COL_DEFAULT_SHAPE_STROKE);
                 const XHatch aNullHatch(aNullCol);
-                XFillHatchItem aXFillHatchItem(rToSet.GetPool(), aNullHatch); 
+                XFillHatchItem aXFillHatchItem(rToSet.GetPool(), aNullHatch);
 
-                aXFillHatchItem.PutValue(*pXFillHatchItem, MID_FILLHATCH); 
-                rToSet.Put(aXFillHatchItem); 
+                aXFillHatchItem.PutValue(*pXFillHatchItem, MID_FILLHATCH);
+                rToSet.Put(aXFillHatchItem);
             }
 
             if(pXFillHatchNameItem)
@@ -421,15 +421,15 @@ sal_Bool BaseFrameProperties_Impl::FillBaseProperties(SfxItemSet& rToSet,
             }
         }
 
-        if(pXFillBitmapItem || pXFillBitmapNameItem || pXFillBitmapURLItem) 
-        { 
+        if(pXFillBitmapItem || pXFillBitmapNameItem || pXFillBitmapURLItem)
+        {
             if(pXFillBitmapItem)
             {
                 const Graphic aNullGraphic;
-                XFillBitmapItem aXFillBitmapItem(rToSet.GetPool(), aNullGraphic); 
+                XFillBitmapItem aXFillBitmapItem(rToSet.GetPool(), aNullGraphic);
 
-                aXFillBitmapItem.PutValue(*pXFillBitmapItem, MID_BITMAP); 
-                rToSet.Put(aXFillBitmapItem); 
+                aXFillBitmapItem.PutValue(*pXFillBitmapItem, MID_BITMAP);
+                rToSet.Put(aXFillBitmapItem);
             }
 
             if(pXFillBitmapNameItem)
@@ -447,63 +447,63 @@ sal_Bool BaseFrameProperties_Impl::FillBaseProperties(SfxItemSet& rToSet,
             if(pXFillBitmapURLItem)
             {
                 const Graphic aNullGraphic;
-                XFillBitmapItem aXFillBitmapItem(rToSet.GetPool(), aNullGraphic); 
+                XFillBitmapItem aXFillBitmapItem(rToSet.GetPool(), aNullGraphic);
 
-                aXFillBitmapItem.PutValue(*pXFillBitmapURLItem, MID_GRAFURL); 
-                rToSet.Put(aXFillBitmapItem); 
+                aXFillBitmapItem.PutValue(*pXFillBitmapURLItem, MID_GRAFURL);
+                rToSet.Put(aXFillBitmapItem);
             }
         }
 
-        if(pXFillTransparenceItem) 
-        { 
+        if(pXFillTransparenceItem)
+        {
             const XGradient aNullGrad(RGB_Color(COL_BLACK), RGB_Color(COL_WHITE));
-            XFillTransparenceItem aXFillTransparenceItem; 
+            XFillTransparenceItem aXFillTransparenceItem;
 
-            aXFillTransparenceItem.PutValue(*pXFillTransparenceItem); 
-            rToSet.Put(aXFillTransparenceItem); 
+            aXFillTransparenceItem.PutValue(*pXFillTransparenceItem);
+            rToSet.Put(aXFillTransparenceItem);
         }
 
-        if(pXGradientStepCountItem) 
-        { 
-            XGradientStepCountItem aXGradientStepCountItem; 
+        if(pXGradientStepCountItem)
+        {
+            XGradientStepCountItem aXGradientStepCountItem;
 
-            aXGradientStepCountItem.PutValue(*pXGradientStepCountItem); 
-            rToSet.Put(aXGradientStepCountItem); 
+            aXGradientStepCountItem.PutValue(*pXGradientStepCountItem);
+            rToSet.Put(aXGradientStepCountItem);
         }
 
-        if(pXFillBmpPosItem) 
-        { 
-            XFillBmpPosItem aXFillBmpPosItem; 
+        if(pXFillBmpPosItem)
+        {
+            XFillBmpPosItem aXFillBmpPosItem;
 
-            aXFillBmpPosItem.PutValue(*pXFillBmpPosItem); 
-            rToSet.Put(aXFillBmpPosItem); 
+            aXFillBmpPosItem.PutValue(*pXFillBmpPosItem);
+            rToSet.Put(aXFillBmpPosItem);
         }
 
-        if(pXFillBmpSizeXItem) 
-        { 
-            XFillBmpSizeXItem aXFillBmpSizeXItem; 
+        if(pXFillBmpSizeXItem)
+        {
+            XFillBmpSizeXItem aXFillBmpSizeXItem;
 
-            aXFillBmpSizeXItem.PutValue(*pXFillBmpSizeXItem); 
-            rToSet.Put(aXFillBmpSizeXItem); 
+            aXFillBmpSizeXItem.PutValue(*pXFillBmpSizeXItem);
+            rToSet.Put(aXFillBmpSizeXItem);
         }
 
-        if(pXFillBmpSizeYItem) 
-        { 
-            XFillBmpSizeYItem aXFillBmpSizeYItem; 
+        if(pXFillBmpSizeYItem)
+        {
+            XFillBmpSizeYItem aXFillBmpSizeYItem;
 
-            aXFillBmpSizeYItem.PutValue(*pXFillBmpSizeYItem); 
-            rToSet.Put(aXFillBmpSizeYItem); 
+            aXFillBmpSizeYItem.PutValue(*pXFillBmpSizeYItem);
+            rToSet.Put(aXFillBmpSizeYItem);
         }
 
-        if(pXFillFloatTransparenceItem || pXFillFloatTransparenceNameItem) 
-        { 
+        if(pXFillFloatTransparenceItem || pXFillFloatTransparenceNameItem)
+        {
             if(pXFillFloatTransparenceItem)
             {
                 const XGradient aNullGrad(RGB_Color(COL_BLACK), RGB_Color(COL_WHITE));
-                XFillFloatTransparenceItem aXFillFloatTransparenceItem(rToSet.GetPool(), aNullGrad, false); 
+                XFillFloatTransparenceItem aXFillFloatTransparenceItem(rToSet.GetPool(), aNullGrad, false);
 
-                aXFillFloatTransparenceItem.PutValue(*pXFillFloatTransparenceItem, MID_FILLGRADIENT); 
-                rToSet.Put(aXFillFloatTransparenceItem); 
+                aXFillFloatTransparenceItem.PutValue(*pXFillFloatTransparenceItem, MID_FILLGRADIENT);
+                rToSet.Put(aXFillFloatTransparenceItem);
             }
 
             if(pXFillFloatTransparenceNameItem)
@@ -519,62 +519,62 @@ sal_Bool BaseFrameProperties_Impl::FillBaseProperties(SfxItemSet& rToSet,
             }
         }
 
-        if(pXSecondaryFillColorItem) 
-        { 
+        if(pXSecondaryFillColorItem)
+        {
             const XubString aNullStr;
             const Color aNullCol(COL_DEFAULT_SHAPE_FILLING);
-            XSecondaryFillColorItem aXSecondaryFillColorItem(aNullStr, aNullCol); 
+            XSecondaryFillColorItem aXSecondaryFillColorItem(aNullStr, aNullCol);
 
-            aXSecondaryFillColorItem.PutValue(*pXSecondaryFillColorItem); 
-            rToSet.Put(aXSecondaryFillColorItem); 
+            aXSecondaryFillColorItem.PutValue(*pXSecondaryFillColorItem);
+            rToSet.Put(aXSecondaryFillColorItem);
         }
 
-        if(pXFillBmpSizeLogItem) 
-        { 
-            XFillBmpSizeLogItem aXFillBmpSizeLogItem; 
+        if(pXFillBmpSizeLogItem)
+        {
+            XFillBmpSizeLogItem aXFillBmpSizeLogItem;
 
-            aXFillBmpSizeLogItem.PutValue(*pXFillBmpSizeLogItem); 
-            rToSet.Put(aXFillBmpSizeLogItem); 
+            aXFillBmpSizeLogItem.PutValue(*pXFillBmpSizeLogItem);
+            rToSet.Put(aXFillBmpSizeLogItem);
         }
 
-        if(pXFillBmpTileOffsetXItem) 
-        { 
-            XFillBmpTileOffsetXItem aXFillBmpTileOffsetXItem; 
+        if(pXFillBmpTileOffsetXItem)
+        {
+            XFillBmpTileOffsetXItem aXFillBmpTileOffsetXItem;
 
-            aXFillBmpTileOffsetXItem.PutValue(*pXFillBmpTileOffsetXItem); 
-            rToSet.Put(aXFillBmpTileOffsetXItem); 
+            aXFillBmpTileOffsetXItem.PutValue(*pXFillBmpTileOffsetXItem);
+            rToSet.Put(aXFillBmpTileOffsetXItem);
         }
 
-        if(pXFillBmpTileOffsetYItem) 
-        { 
-            XFillBmpTileOffsetYItem aXFillBmpTileOffsetYItem; 
+        if(pXFillBmpTileOffsetYItem)
+        {
+            XFillBmpTileOffsetYItem aXFillBmpTileOffsetYItem;
 
-            aXFillBmpTileOffsetYItem.PutValue(*pXFillBmpTileOffsetYItem); 
-            rToSet.Put(aXFillBmpTileOffsetYItem); 
+            aXFillBmpTileOffsetYItem.PutValue(*pXFillBmpTileOffsetYItem);
+            rToSet.Put(aXFillBmpTileOffsetYItem);
         }
 
-        if(pXFillBmpPosOffsetXItem) 
-        { 
-            XFillBmpPosOffsetXItem aXFillBmpPosOffsetXItem; 
+        if(pXFillBmpPosOffsetXItem)
+        {
+            XFillBmpPosOffsetXItem aXFillBmpPosOffsetXItem;
 
-            aXFillBmpPosOffsetXItem.PutValue(*pXFillBmpPosOffsetXItem); 
-            rToSet.Put(aXFillBmpPosOffsetXItem); 
+            aXFillBmpPosOffsetXItem.PutValue(*pXFillBmpPosOffsetXItem);
+            rToSet.Put(aXFillBmpPosOffsetXItem);
         }
 
-        if(pXFillBmpPosOffsetYItem) 
-        { 
-            XFillBmpPosOffsetYItem aXFillBmpPosOffsetYItem; 
+        if(pXFillBmpPosOffsetYItem)
+        {
+            XFillBmpPosOffsetYItem aXFillBmpPosOffsetYItem;
 
-            aXFillBmpPosOffsetYItem.PutValue(*pXFillBmpPosOffsetYItem); 
-            rToSet.Put(aXFillBmpPosOffsetYItem); 
+            aXFillBmpPosOffsetYItem.PutValue(*pXFillBmpPosOffsetYItem);
+            rToSet.Put(aXFillBmpPosOffsetYItem);
         }
 
-        if(pXFillBackgroundItem) 
-        { 
-            XFillBackgroundItem aXFillBackgroundItem; 
+        if(pXFillBackgroundItem)
+        {
+            XFillBackgroundItem aXFillBackgroundItem;
 
-            aXFillBackgroundItem.PutValue(*pXFillBackgroundItem); 
-            rToSet.Put(aXFillBackgroundItem); 
+            aXFillBackgroundItem.PutValue(*pXFillBackgroundItem);
+            rToSet.Put(aXFillBackgroundItem);
         }
 
         if(pOwnAttrFillBmpItem)
@@ -1817,10 +1817,10 @@ void SwXFrame::setPropertyValue(const :: OUString& rPropertyName, const :: uno::
                         case XATTR_FILLBITMAP:
                         {
                             const Graphic aNullGraphic;
-                            XFillBitmapItem aXFillBitmapItem(aSet.GetPool(), aNullGraphic); 
+                            XFillBitmapItem aXFillBitmapItem(aSet.GetPool(), aNullGraphic);
 
-                            aXFillBitmapItem.PutValue(aValue, nMemberId); 
-                            aSet.Put(aXFillBitmapItem); 
+                            aXFillBitmapItem.PutValue(aValue, nMemberId);
+                            aSet.Put(aXFillBitmapItem);
                             bDone = true;
                             break;
                         }
@@ -2041,7 +2041,7 @@ uno::Any SwXFrame::getPropertyValue(const OUString& rPropertyName)
         {
             String sGrfName;
             const SwNodeIndex* pIdx = pFmt->GetCntnt().GetCntntIdx();
-            
+
             if(pIdx)
             {
                 SwNodeIndex aIdx(*pIdx, 1);
@@ -2185,7 +2185,7 @@ uno::Any SwXFrame::getPropertyValue(const OUString& rPropertyName)
                         uno::Reference < frame::XModel > xModel( xComp, uno::UNO_QUERY );
                         if ( FN_EMBEDDED_OBJECT == pEntry->nWID )
                         {
-                            // ensure the 
+                            // ensure the
                             ASSERT( pDoc->GetDocShell(), "no doc shell => no client site" );
                             if ( pDoc->GetDocShell() )
                                 pDoc->GetDocShell()->GetIPClient( svt::EmbeddedObjectRef( xIP, embed::Aspects::MSOLE_CONTENT ) );

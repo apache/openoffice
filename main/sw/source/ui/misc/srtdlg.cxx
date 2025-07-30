@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -135,7 +135,7 @@ SwSortDlg::SwSortDlg(Window* pParent, SwWrtShell &rShell) :
 	aDirLbl(this, 		SW_RES(FT_DIR	)),
     aSortFL(this,      SW_RES(FL_SORT_2  )),
 
-    
+
     aKeyCB1(this,       SW_RES(CB_KEY1  )),
 	aColEdt1(this, 		SW_RES(ED_KEY1  )),
 	aTypDLB1(this, 		SW_RES(DLB_KEY1 )),
@@ -187,7 +187,7 @@ SwSortDlg::SwSortDlg(Window* pParent, SwWrtShell &rShell) :
 	aColEdt3.SetAccessibleName(aColLbl.GetText());
 	aTypDLB1.SetAccessibleName(aTypLbl.GetText());
 	aTypDLB2.SetAccessibleName(aTypLbl.GetText());
-	aTypDLB3.SetAccessibleName(aTypLbl.GetText());	
+	aTypDLB3.SetAccessibleName(aTypLbl.GetText());
 	aSortUpRB.SetAccessibleRelationMemberOf( &aKeyCB1 );
 	aSortDnRB.SetAccessibleRelationMemberOf( &aKeyCB1 );
 	aSortUp2RB.SetAccessibleRelationMemberOf( &aKeyCB2 );
@@ -281,7 +281,7 @@ SwSortDlg::SwSortDlg(Window* pParent, SwWrtShell &rShell) :
 	aColEdt1.SetAccessibleRelationLabeledBy(&aColLbl);
 	aTypDLB1.SetAccessibleRelationMemberOf(&aKeyCB1);
 	aTypDLB1.SetAccessibleRelationLabeledBy(&aTypLbl);
-	
+
 	aColEdt2.SetAccessibleRelationMemberOf(&aKeyCB2);
 	aColEdt2.SetAccessibleRelationLabeledBy(&aColLbl);
 	aTypDLB2.SetAccessibleRelationMemberOf(&aKeyCB2);

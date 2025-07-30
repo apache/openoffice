@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
@@ -29,8 +29,8 @@ namespace basegfx
 {
     namespace internal
     {
-        void lcl_skipSpaces(sal_Int32& 				io_rPos, 
-                            const ::rtl::OUString& 	rStr, 
+        void lcl_skipSpaces(sal_Int32& 				io_rPos,
+                            const ::rtl::OUString& 	rStr,
                             const sal_Int32 		nLen)
         {
             while( io_rPos < nLen &&
@@ -40,11 +40,11 @@ namespace basegfx
             }
         }
 
-        void lcl_skipSpacesAndCommas(sal_Int32& 			io_rPos, 
-                                        const ::rtl::OUString& rStr, 
+        void lcl_skipSpacesAndCommas(sal_Int32& 			io_rPos,
+                                        const ::rtl::OUString& rStr,
                                         const sal_Int32 		nLen)
         {
-            while(io_rPos < nLen 
+            while(io_rPos < nLen
                     && (sal_Unicode(' ') == rStr[io_rPos] || sal_Unicode(',') == rStr[io_rPos]))
             {
                 ++io_rPos;
@@ -108,10 +108,10 @@ namespace basegfx
             if(sNumberString.getLength())
             {
                 rtl_math_ConversionStatus eStatus;
-                o_fRetval = ::rtl::math::stringToDouble( sNumberString.makeStringAndClear(), 
-                                                            (sal_Unicode)('.'), 
-                                                            (sal_Unicode)(','), 
-                                                            &eStatus, 
+                o_fRetval = ::rtl::math::stringToDouble( sNumberString.makeStringAndClear(),
+                                                            (sal_Unicode)('.'),
+                                                            (sal_Unicode)(','),
+                                                            &eStatus,
                                                             NULL );
                 return ( eStatus == rtl_math_ConversionStatus_Ok );
             }
@@ -119,9 +119,9 @@ namespace basegfx
             return false;
         }
 
-        bool lcl_importDoubleAndSpaces( double& 				o_fRetval, 
-                                        sal_Int32& 				io_rPos, 
-                                        const ::rtl::OUString& 	rStr, 
+        bool lcl_importDoubleAndSpaces( double& 				o_fRetval,
+                                        sal_Int32& 				io_rPos,
+                                        const ::rtl::OUString& 	rStr,
                                         const sal_Int32 		nLen )
         {
             if( !lcl_getDoubleChar(o_fRetval, io_rPos, rStr) )
@@ -133,8 +133,8 @@ namespace basegfx
         }
 
         bool lcl_importNumberAndSpaces(sal_Int32&                o_nRetval,
-                                        sal_Int32& 				io_rPos, 
-                                        const ::rtl::OUString& 	rStr, 
+                                        sal_Int32& 				io_rPos,
+                                        const ::rtl::OUString& 	rStr,
                                         const sal_Int32 		nLen)
         {
             sal_Unicode aChar( rStr[io_rPos] );
@@ -163,8 +163,8 @@ namespace basegfx
             return false;
         }
 
-        void lcl_skipNumber(sal_Int32& 				io_rPos, 
-                            const ::rtl::OUString& 	rStr, 
+        void lcl_skipNumber(sal_Int32& 				io_rPos,
+                            const ::rtl::OUString& 	rStr,
                             const sal_Int32 		nLen)
         {
             bool bSignAllowed(true);
@@ -223,7 +223,7 @@ namespace basegfx
             }
         }
 
-        void lcl_putNumberCharWithSpace( ::rtl::OUStringBuffer& rStr, 
+        void lcl_putNumberCharWithSpace( ::rtl::OUStringBuffer& rStr,
                                             double 		        fValue,
                                             double 		        fOldValue,
                                             bool 			        bUseRelativeCoordinates )
@@ -234,7 +234,7 @@ namespace basegfx
             const sal_Int32 aLen( rStr.getLength() );
             if(aLen)
             {
-                if( lcl_isOnNumberChar(rStr.charAt(aLen - 1), false, true) && 
+                if( lcl_isOnNumberChar(rStr.charAt(aLen - 1), false, true) &&
                     fValue >= 0.0 )
                 {
                     rStr.append( sal_Unicode(' ') );

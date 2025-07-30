@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -256,17 +256,17 @@ void XclImpFont::FillToItemSet( SfxItemSet& rItemSet, XclFontItemType eType, boo
         rtl_TextEncoding eFontEnc = maData.GetFontEncoding();
         rtl_TextEncoding eTempTextEnc = (bEE && (eFontEnc == GetTextEncoding())) ?
             ScfTools::GetSystemTextEncoding() : eFontEnc;
-		
+
 		//add corresponding pitch for FontFamily
 		FontPitch ePitch = PITCH_DONTKNOW;
-		FontFamily eFtFamily = maData.GetScFamily( GetTextEncoding() ); 
+		FontFamily eFtFamily = maData.GetScFamily( GetTextEncoding() );
 		switch( eFtFamily ) //refer http://msdn.microsoft.com/en-us/library/aa246306(v=VS.60).aspx
 		{
 			case FAMILY_ROMAN:				ePitch = PITCH_VARIABLE;		break;
 			case FAMILY_SWISS:				ePitch = PITCH_VARIABLE;		break;
 			case FAMILY_MODERN:				ePitch = PITCH_FIXED;			break;
 			default:						break;
-		 } 
+		 }
         SvxFontItem aFontItem( eFtFamily , maData.maName, EMPTY_STRING, ePitch, eTempTextEnc, ATTR_FONT );
 
         // #91658# set only for valid script types
@@ -1229,7 +1229,7 @@ void XclImpXF::ApplyPattern(
 			rDoc.ApplyPatternAreaTab( nScCol1, nScRow1, nScCol2, nScRow2, nScTab, rPattern );
 			bApplyPattern = sal_True;
 		}
-	}		
+	}
 
 	if (IsCellXF() && !mpPooledPattern && bApplyPattern)
 	{

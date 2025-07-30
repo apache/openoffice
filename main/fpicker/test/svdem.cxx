@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -87,10 +87,10 @@ SAL_IMPLEMENT_MAIN()
     Reference< XMultiServiceFactory > xMS;
     xMS = cppu::createRegistryServiceFactory( rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "applicat.rdb" ) ), sal_True );
 
-   com::sun::star::uno::Reference< com::sun::star::lang::XMultiServiceFactory> xMSch;     
-   com::sun::star::uno::Reference< com::sun::star::uno::XComponentContext > xComponentContext; 
-           xComponentContext = cppu::defaultBootstrap_InitialComponentContext();        
-       xMSch.set(xComponentContext->getServiceManager(), com::sun::star::uno::UNO_QUERY); 
+   com::sun::star::uno::Reference< com::sun::star::lang::XMultiServiceFactory> xMSch;
+   com::sun::star::uno::Reference< com::sun::star::uno::XComponentContext > xComponentContext;
+           xComponentContext = cppu::defaultBootstrap_InitialComponentContext();
+       xMSch.set(xComponentContext->getServiceManager(), com::sun::star::uno::UNO_QUERY);
        comphelper::setProcessServiceFactory(xMSch);
 
 //    comphelper::setProcessServiceFactory( xMS);
@@ -137,7 +137,7 @@ void Main()
 
 // -----------------------------------------------------------------------
 
-MyWin::MyWin( Window* pParent, WinBits nWinStyle ) 
+MyWin::MyWin( Window* pParent, WinBits nWinStyle )
 	:WorkWindow( pParent, nWinStyle )
 	,aOKBtn(this)
 {

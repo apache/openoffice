@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -33,7 +33,7 @@
 extern "C" {
 #endif
 
-/** @file 
+/** @file
 
 Main goals and usage hints
 
@@ -44,7 +44,7 @@ There are a few main goals:<p>
 
 1.The path specifications always has to be absolut. Any usage of relative path
 specifications is forbidden. Exceptions are <code>osl_getSystemPathFromFileURL</code>,
-<code>osl_getFileURLFromSystemPath</code> and <code>osl_getAbsoluteFileURL</code>. Most operating systems 
+<code>osl_getFileURLFromSystemPath</code> and <code>osl_getAbsoluteFileURL</code>. Most operating systems
 provide a "Current Directory" per process. This is the reason why relative path
 specifications can cause problems in multithreading environments.<p>
 
@@ -125,7 +125,7 @@ typedef enum {
 	osl_File_E_NOLCK,
 	osl_File_E_NOSYS,
 	osl_File_E_NOTEMPTY,
-	osl_File_E_LOOP,	
+	osl_File_E_LOOP,
 	osl_File_E_ILSEQ,
 	osl_File_E_NOLINK,
 	osl_File_E_MULTIHOP,
@@ -143,16 +143,16 @@ typedef	void *oslDirectory;
 typedef void *oslDirectoryItem;
 
 
-/** Open a directory for enumerating its contents.	 
+/** Open a directory for enumerating its contents.
 
-	@param	pustrDirectoryURL [in] 
+	@param	pustrDirectoryURL [in]
 	The full qualified URL of the directory.
-	
-	@param	pDirectory [out] 
-	On success it receives a handle used for subsequent calls by osl_getNextDirectoryItem(). 
+
+	@param	pDirectory [out]
+	On success it receives a handle used for subsequent calls by osl_getNextDirectoryItem().
 	The handle has to be released by a call to osl_closeDirectory().
 
-	@return 
+	@return
 	osl_File_E_None on success<br>
 	osl_File_E_INVAL the format of the parameters was not valid<br>
 	osl_File_E_NOENT the specified path doesn't exist<br>
@@ -171,25 +171,25 @@ typedef void *oslDirectoryItem;
 oslFileError SAL_CALL osl_openDirectory( rtl_uString *pustrDirectoryURL, oslDirectory *pDirectory);
 
 
-/**	Retrieve the next item of a previously opened directory. 
+/**	Retrieve the next item of a previously opened directory.
 
     Retrieves the next item of a previously opened directory.
     All handles have an initial refcount of 1.
 
-	@param	Directory [in] 
+	@param	Directory [in]
 	A directory handle received from a previous call to osl_openDirectory().
-	
-	@param	pItem [out] 
+
+	@param	pItem [out]
 	On success it receives a handle that can be used for subsequent calls to osl_getFileStatus().
 	The handle has to be released by a call to osl_releaseDirectoryItem().
-	
-	@param	uHint [in] 
+
+	@param	uHint [in]
 	With this parameter the caller can tell the implementation that (s)he
     is going to call this function uHint times afterwards. This enables the implementation to
     get the information for more than one file and cache it until the next calls.
 
-	@return 
-	osl_File_E_None on success<br> 
+	@return
+	osl_File_E_None on success<br>
 	osl_File_E_INVAL the format of the parameters was not valid<br>
 	osl_File_E_NOMEM not enough memory for allocating structures <br>
 	osl_File_E_NOENT no more entries in this directory<br>
@@ -210,12 +210,12 @@ oslFileError SAL_CALL osl_getNextDirectoryItem(
 
 
 /**	Release a directory handle.
-	
-	@param Directory [in] 
+
+	@param Directory [in]
 	A handle received by a call to osl_openDirectory().
 
-	@return 
-	osl_File_E_None on success<br> 
+	@return
+	osl_File_E_None on success<br>
 	osl_File_E_INVAL the format of the parameters was not valid<br>
 	osl_File_E_NOMEM not enough memory for allocating structures<br>
 	osl_File_E_BADF invalid oslDirectory parameter<br>
@@ -227,21 +227,21 @@ oslFileError SAL_CALL osl_getNextDirectoryItem(
 oslFileError SAL_CALL osl_closeDirectory(oslDirectory Directory);
 
 
-/**	Retrieve a single directory item. 
+/**	Retrieve a single directory item.
 
     Retrieves a single directory item. The returned handle has an initial refcount of 1.
-    Due to performance issues it is not recommended to use this function while 
+    Due to performance issues it is not recommended to use this function while
     enumerating the contents of a directory. In this case use osl_getNextDirectoryItem() instead.
-	
-	@param pustrFileURL [in] 
-	An absolute file URL. 
-	
-	@param pItem [out] 
+
+	@param pustrFileURL [in]
+	An absolute file URL.
+
+	@param pItem [out]
 	On success it receives a handle which can be used for subsequent calls to osl_getFileStatus().
 	The handle has to be released by a call to osl_releaseDirectoryItem().
-	
-	@return 
-	osl_File_E_None on success<br> 
+
+	@return
+	osl_File_E_None on success<br>
 	osl_File_E_INVAL the format of the parameters was not valid<br>
 	osl_File_E_NOMEM not enough memory for allocating structures <br>
 	osl_File_E_ACCES permission denied<br>
@@ -250,7 +250,7 @@ oslFileError SAL_CALL osl_closeDirectory(oslDirectory Directory);
 	osl_File_E_NOENT no such file or directory<br>
 	osl_File_E_LOOP	too many symbolic links encountered<br>
 	osl_File_E_NAMETOOLONG the file name is too long<br>
-	osl_File_E_NOTDIR a component of the path prefix of path is not a directory<br>	
+	osl_File_E_NOTDIR a component of the path prefix of path is not a directory<br>
 	osl_File_E_IO on I/O errors<br>
 	osl_File_E_MULTIHOP multihop attempted<br>
 	osl_File_E_NOLINK link has been severed<br>
@@ -264,20 +264,20 @@ oslFileError SAL_CALL osl_closeDirectory(oslDirectory Directory);
 */
 
 oslFileError SAL_CALL osl_getDirectoryItem(
-	rtl_uString *pustrFileURL, 
+	rtl_uString *pustrFileURL,
 	oslDirectoryItem *pItem
 	);
 
 
 /**	Increase the refcount of a directory item handle.
-	
+
 	The caller responsible for releasing the directory item handle using osl_releaseDirectoryItem().
-	
-	@param	Item [in] 
+
+	@param	Item [in]
 	A handle received by a call to osl_getDirectoryItem() or osl_getNextDirectoryItem().
 
-	@return 
-	osl_File_E_None on success<br> 
+	@return
+	osl_File_E_None on success<br>
 	osl_File_E_NOMEM not enough memory for allocating structures<br>
 	osl_File_E_INVAL the format of the parameters was not valid<br>
 
@@ -289,16 +289,16 @@ oslFileError SAL_CALL osl_getDirectoryItem(
 oslFileError SAL_CALL osl_acquireDirectoryItem( oslDirectoryItem Item );
 
 
-/**	Decrease the refcount of a directory item handle. 
+/**	Decrease the refcount of a directory item handle.
 
-    Decreases the refcount of a directory item handle. 
-    If the refcount reaches 0 the data associated with 
+    Decreases the refcount of a directory item handle.
+    If the refcount reaches 0 the data associated with
     this directory item handle will be released.
-	
-	@param	Item [in] 
+
+	@param	Item [in]
 	A handle received by a call to osl_getDirectoryItem() or osl_getNextDirectoryItem().
 
-	@return 
+	@return
 	osl_File_E_None on success<br>
 	osl_File_E_NOMEM not enough memory for allocating structures<br>
 	osl_File_E_INVAL the format of the parameters was not valid<br>
@@ -308,7 +308,7 @@ oslFileError SAL_CALL osl_acquireDirectoryItem( oslDirectoryItem Item );
 	@see osl_acquireDirectoryItem()
 */
 
-oslFileError SAL_CALL osl_releaseDirectoryItem( oslDirectoryItem Item ); 
+oslFileError SAL_CALL osl_releaseDirectoryItem( oslDirectoryItem Item );
 
 /* File types */
 
@@ -320,7 +320,7 @@ typedef enum {
     osl_File_Type_Socket,
     osl_File_Type_Link,
     osl_File_Type_Special,
-    osl_File_Type_Unknown             
+    osl_File_Type_Unknown
 } oslFileType;
 
 /* File attributes */
@@ -361,7 +361,7 @@ typedef
 */
 
 struct _oslFileStatus {
-/** Must be initialized with the size in bytes of the structure before passing it to any function */		
+/** Must be initialized with the size in bytes of the structure before passing it to any function */
 	sal_uInt32		uStructSize;
 /** Determines which members of the structure contain valid data */
 	sal_uInt32		uValidFields;
@@ -369,10 +369,10 @@ struct _oslFileStatus {
 	oslFileType	eType;
 /** File attributes */
 	sal_uInt64	uAttributes;
-/** First creation time in nanoseconds since 1/1/1970. Can be the last modify time depending on 
+/** First creation time in nanoseconds since 1/1/1970. Can be the last modify time depending on
 	platform or file system. */
 	TimeValue	aCreationTime;
-/** Last access time in nanoseconds since 1/1/1970. Can be the last modify time depending on 
+/** Last access time in nanoseconds since 1/1/1970. Can be the last modify time depending on
 	platform or file system. */
 	TimeValue	aAccessTime;
 /** Last modify time in nanoseconds since 1/1/1970. */
@@ -394,18 +394,18 @@ struct _oslFileStatus {
 
 /**	Retrieve information about a single file or directory.
 
-	@param	Item [in] 
+	@param	Item [in]
 	A handle received by a previous call to osl_getDirectoryItem() or osl_getNextDirectoryItem().
-	
-	@param	pStatus [in|out] 
+
+	@param	pStatus [in|out]
 	Points to a structure which receives the information of the file or directory
 	represented by the handle Item. The member uStructSize has to be initialized to
 	sizeof(oslFileStatus) before calling this function.
-	
-	@param	uFieldMask [in] 
+
+	@param	uFieldMask [in]
 	Specifies which fields of the structure pointed to by pStatus are of interest to the caller.
 
-	@return 
+	@return
 	osl_File_E_None on success<br>
 	osl_File_E_NOMEM not enough memory for allocating structures <br>
 	osl_File_E_INVAL the format of the parameters was not valid<br>
@@ -439,17 +439,17 @@ typedef void *oslVolumeDeviceHandle;
 
 /** Unmount a volume device.
 
-    Unmount the volume specified by the given oslVolumeDeviceHandle. 
-    
+    Unmount the volume specified by the given oslVolumeDeviceHandle.
+
     @param Handle [in]
     An oslVolumeDeviceHandle received by a call to osl_getVolumeInformation().
-    
+
     @return
     osl_File_E_None on success<br>
-    
-    @todo 
+
+    @todo
     specify all error codes that may be returned
-    
+
     @see osl_getVolumeInformation()
 */
 
@@ -459,16 +459,16 @@ oslFileError SAL_CALL osl_unmountVolumeDevice( oslVolumeDeviceHandle Handle );
 /** Automount a volume device.
 
     Automount the volume device specified by the given oslVolumeDeviceHandle.
-    
+
     @param Handle [in]
     An oslVolumeDeviceHandle received by a call to osl_getVolumeInformation().
-    
+
     @return
     osl_File_E_None on success<br>
-    
-    @todo 
+
+    @todo
     specify all error codes that may be returned
-    
+
     @see osl_getVolumeInformation()
 */
 
@@ -479,37 +479,37 @@ oslFileError SAL_CALL osl_automountVolumeDevice( oslVolumeDeviceHandle Handle );
 
     Releases the given oslVolumeDeviceHandle which was acquired by a call to
     osl_getVolumeInformation() or osl_acquireVolumeDeviceHandle().
-    
+
     @param Handle [in]
     An oslVolumeDeviceHandle received by a call to osl_getVolumeInformation().
-    
+
     @return
     osl_File_E_None on success<br>
-    
-    @todo 
+
+    @todo
     specify all error codes that may be returned
-    
+
     @see osl_acquireVolumeDeviceHandle()
-    @see osl_getVolumeInformation()    
+    @see osl_getVolumeInformation()
 */
 
 oslFileError SAL_CALL osl_releaseVolumeDeviceHandle( oslVolumeDeviceHandle Handle );
 
 /** Acquire a volume device handle.
 
-    Acquires the given oslVolumeDeviceHandle which was acquired by a call to 
-    osl_getVolumeInformation(). The caller is responsible for releasing the 
+    Acquires the given oslVolumeDeviceHandle which was acquired by a call to
+    osl_getVolumeInformation(). The caller is responsible for releasing the
     acquired handle by calling osl_releaseVolumeDeviceHandle().
-    
+
     @param Handle [in]
     An oslVolumeDeviceHandle received by a call to osl_getVolumeInformation().
-    
+
     @return
     osl_File_E_None on success<br>
-    
-    @todo 
+
+    @todo
     specify all error codes that may be returned
-    
+
     @see osl_getVolumeInformation()
 */
 
@@ -520,11 +520,11 @@ oslFileError SAL_CALL osl_acquireVolumeDeviceHandle( oslVolumeDeviceHandle Handl
 
 	@param Handle [in]
 	An oslVolumeDeviceHandle received by a call to osl_getVolumeInformation().
-	
-	@param ppustrDirectoryURL [out] 
+
+	@param ppustrDirectoryURL [out]
 	Receives the full qualified URL where the device is mounted to.
-	
-	@return 
+
+	@return
 	osl_File_E_None on success<br>
 	osl_File_E_NOMEM not enough memory for allocating structures <br>
 	osl_File_E_INVAL the format of the parameters was not valid<br>
@@ -579,7 +579,7 @@ typedef
 */
 
 struct _oslVolumeInfo {
-/** Must be initialized with the size in bytes of the structure before passing it to any function */		
+/** Must be initialized with the size in bytes of the structure before passing it to any function */
 	sal_uInt32		uStructSize;
 /** Determines which members of the structure contain valid data */
 	sal_uInt32		uValidFields;
@@ -603,7 +603,7 @@ struct _oslVolumeInfo {
 } oslVolumeInfo;
 
 
-/** Retrieve information about a volume. 
+/** Retrieve information about a volume.
 
     Retrieves information about a volume. A volume can either be a mount point, a network
 	resource or a drive depending on Operating System and File System. Before calling this
@@ -612,15 +612,15 @@ struct _oslVolumeInfo {
 
 	@param pustrDirectoryURL [in]
 	Full qualified URL of the volume
-	
+
 	@param pInfo [out]
 	On success it receives information about the volume.
-	
+
 	@param uFieldMask [in]
 	Specifies which members of the structure should be filled
-	
-	@return 
-	osl_File_E_None on success<br> 
+
+	@return
+	osl_File_E_None on success<br>
 	osl_File_E_NOMEM not enough memory for allocating structures <br>
 	osl_File_E_INVAL the format of the parameters was not valid<br>
 	osl_File_E_NOTDIR not a directory<br>
@@ -637,11 +637,11 @@ struct _oslVolumeInfo {
 
 	@see	osl_getFileStatus()
 	@see	oslVolumeInfo
-*/	
+*/
 
 oslFileError SAL_CALL osl_getVolumeInformation(
-    rtl_uString *pustrDirectoryURL, 
-    oslVolumeInfo *pInfo, 
+    rtl_uString *pustrDirectoryURL,
+    oslVolumeInfo *pInfo,
     sal_uInt32 uFieldMask );
 
 typedef	void *oslFileHandle;
@@ -656,18 +656,18 @@ typedef	void *oslFileHandle;
 /** Open a regular file.
 
     Open a file. Only regular files	can be opened.
-    
-	@param pustrFileURL [in] 
-	The full qualified URL of the file to open. 
-	
-	@param pHandle [out] 
+
+	@param pustrFileURL [in]
+	The full qualified URL of the file to open.
+
+	@param pHandle [out]
 	On success it receives a handle to the open file.
-	
+
 	@param uFlags [in]
 	Specifies the open mode.
-	
-	@return 
-	osl_File_E_None on success<br> 
+
+	@return
+	osl_File_E_None on success<br>
 	osl_File_E_NOMEM not enough memory for allocating structures <br>
 	osl_File_E_INVAL the format of the parameters was not valid<br>
 	osl_File_E_NAMETOOLONG pathname was too long<br>
@@ -710,17 +710,17 @@ oslFileError SAL_CALL osl_openFile( rtl_uString *pustrFileURL, oslFileHandle *pH
 
 /** Set the internal position pointer of an open file.
 
-	@param Handle [in] 
+	@param Handle [in]
 	Handle to a file received by a previous call to osl_openFile().
-	
-	@param uHow [in] 
+
+	@param uHow [in]
 	Distance to move the internal position pointer (from uPos).
-	
+
 	@param uPos [in]
 	Absolute position from the beginning of the file.
-	
-	@return 
-	osl_File_E_None on success<br> 
+
+	@return
+	osl_File_E_None on success<br>
 	osl_File_E_INVAL the format of the parameters was not valid<br>
 	osl_File_E_OVERFLOW the resulting file offset would be a value which cannot be represented correctly for regular files<br>
 
@@ -735,12 +735,12 @@ oslFileError SAL_CALL osl_setFilePos( oslFileHandle Handle, sal_uInt32 uHow, sal
 
 	@param Handle [in]
 	Handle to a file received by a previous call to osl_openFile().
-	
-	@param pPos [out] 
+
+	@param pPos [out]
 	On success receives the current position of the file pointer.
-	
-	@return 
-	osl_File_E_None on success<br> 
+
+	@return
+	osl_File_E_None on success<br>
 	osl_File_E_INVAL the format of the parameters was not valid<br>
 	osl_File_E_OVERFLOW the resulting file offset would be a value which cannot be represented correctly for regular files<br>
 
@@ -753,19 +753,19 @@ oslFileError SAL_CALL osl_setFilePos( oslFileHandle Handle, sal_uInt32 uHow, sal
 oslFileError SAL_CALL osl_getFilePos( oslFileHandle Handle, sal_uInt64 *pPos );
 
 
-/**	Set the file size of an open file. 
+/**	Set the file size of an open file.
 
     Sets the file size of an open file. The file can be truncated or enlarged by the function.
 	The position of the file pointer is not affeced by this function.
-	
-	@param Handle [in] 
+
+	@param Handle [in]
 	Handle to a file received by a previous call to osl_openFile().
-	
-	@param uSize [in] 
+
+	@param uSize [in]
 	New size in bytes.
-	
-	@return 
-	osl_File_E_None on success<br> 
+
+	@return
+	osl_File_E_None on success<br>
 	osl_File_E_INVAL the format of the parameters was not valid<br>
 	osl_File_E_OVERFLOW the resulting file offset would be a value which cannot	be represented correctly for regular files<br>
 
@@ -778,19 +778,19 @@ oslFileError SAL_CALL osl_getFilePos( oslFileHandle Handle, sal_uInt64 *pPos );
 oslFileError SAL_CALL osl_setFileSize( oslFileHandle Handle, sal_uInt64 uSize );
 
 
-/**	Get the file size of an open file. 
+/**	Get the file size of an open file.
 
     Gets the file size of an open file.
 	The position of the file pointer is not affeced by this function.
-	
-	@param Handle [in] 
+
+	@param Handle [in]
 	Handle to a file received by a previous call to osl_openFile().
-	
-	@param pSize [out] 
+
+	@param pSize [out]
 	Current size in bytes.
-	
-	@return 
-	osl_File_E_None on success<br> 
+
+	@return
+	osl_File_E_None on success<br>
 	osl_File_E_INVAL the format of the parameters was not valid<br>
 	osl_File_E_OVERFLOW the resulting file offset would be a value which cannot	be represented correctly for regular files<br>
 
@@ -841,25 +841,25 @@ SAL_CALL osl_unmapFile (
 );
 
 
-/**	Read a number of bytes from a file. 
+/**	Read a number of bytes from a file.
 
-    Reads a number of bytes from a file. The internal file pointer is 
+    Reads a number of bytes from a file. The internal file pointer is
     increased by the number of bytes read.
-    
+
 	@param Handle [in]
 	Handle to a file received by a previous call to osl_openFile().
-	
+
 	@param pBuffer [out]
-	Points to a buffer which receives data. The buffer must be large enough	
+	Points to a buffer which receives data. The buffer must be large enough
 	to hold uBytesRequested bytes.
-	
+
 	@param uBytesRequested [in]
 	Number of bytes which should be retrieved.
-	
+
 	@param pBytesRead [out]
 	On success the number of bytes which have actually been retrieved.
-	
-	@return 
+
+	@return
 	osl_File_E_None on success<br>
 	osl_File_E_INVAL the format of the parameters was not valid<br>
 	osl_File_E_INTR function call was interrupted<br>
@@ -883,12 +883,12 @@ oslFileError SAL_CALL osl_readFile( oslFileHandle Handle, void *pBuffer, sal_uIn
 
 	@param Handle [in]
 	Handle to a file received by a previous call to osl_openFile().
-	
+
 	@param pIsEOF [out]
 	Points to a variable that receives the end-of-file status.
-	
+
 	@return
-	osl_File_E_None on success <br> 
+	osl_File_E_None on success <br>
 	osl_File_E_INVAL the format of the parameters was not valid<br>
 	osl_File_E_INTR function call was interrupted<br>
 	osl_File_E_IO on I/O errors<br>
@@ -907,25 +907,25 @@ oslFileError SAL_CALL osl_readFile( oslFileHandle Handle, void *pBuffer, sal_uIn
 oslFileError SAL_CALL osl_isEndOfFile( oslFileHandle Handle, sal_Bool *pIsEOF );
 
 
-/** Write a number of bytes to a file. 
-	
-	Writes a number of bytes to a file. 
+/** Write a number of bytes to a file.
+
+	Writes a number of bytes to a file.
 	The internal file pointer is increased by the number of bytes read.
-	
+
 	@param Handle [in]
 	Handle to a file received by a previous call to osl_openFile().
-	
+
 	@param pBuffer [in]
 	Points to a buffer which contains the data.
-	
+
 	@param uBytesToWrite [in]
 	Number of bytes which should be written.
-	
+
 	@param pBytesWritten [out]
 	On success the number of bytes which have actually been written.
 
-	@return 
-	osl_File_E_None on success<br> 
+	@return
+	osl_File_E_None on success<br>
 	osl_File_E_INVAL the format of the parameters was not valid<br>
 	osl_File_E_FBIG file too large<br>
 	osl_File_E_DQUOT quota exceeded<p>
@@ -976,16 +976,16 @@ oslFileError SAL_CALL osl_writeFileAt(
 );
 
 
-/** Read a line from a file. 
+/** Read a line from a file.
 
     Reads a line from a file. The new line delimiter is NOT returned!
 
 	@param Handle [in]
 	Handle to a file received by a previous call to osl_openFile().
-	
-	@param	ppSequence [in/out] 
+
+	@param	ppSequence [in/out]
 	A pointer pointer to a sal_Sequence that will hold the line read on success.
-	
+
 	@return
 	osl_File_E_None on success<br>
 	osl_File_E_INVAL the format of the parameters was not valid<br>
@@ -1007,21 +1007,21 @@ oslFileError SAL_CALL osl_readLine( oslFileHandle Handle, sal_Sequence** ppSeque
 
 /** Synchronize the memory representation of a file with that on the physical medium.
 
-     The function ensures that all modified data and attributes of the file associated with 
-     the given file handle have been written to the physical medium. 
-     In case the hard disk has a write cache enabled, the data may not really be on 
+     The function ensures that all modified data and attributes of the file associated with
+     the given file handle have been written to the physical medium.
+     In case the hard disk has a write cache enabled, the data may not really be on
      permanent storage when osl_syncFile returns.
-     
+
       @param Handle
-      [in] Handle to a file received by a previous call to osl_openFile().      
-      
+      [in] Handle to a file received by a previous call to osl_openFile().
+
       @return
       <dl>
       <dt>osl_File_E_None</dt>
       <dd>On success</dd>
       <dt>osl_File_E_INVAL</dt>
       <dd>The value of the input parameter is invalid</dd>
-      </dl>      
+      </dl>
       <br><p><strong>In addition to these error codes others may occur as well, for instance:</strong></p><br>
       <dl>
       <dt>osl_File_E_BADF</dt>
@@ -1035,9 +1035,9 @@ oslFileError SAL_CALL osl_readLine( oslFileHandle Handle, sal_Sequence** ppSeque
       <dt>osl_File_E_TIMEDOUT</dt>
       <dd>A remote connection timed out. This may happen when a file is on a remote location</dd>
       </dl>
-      
+
       @see osl_openFile()
-      @see osl_writeFile()      
+      @see osl_writeFile()
 */
 oslFileError SAL_CALL osl_syncFile(oslFileHandle Handle);
 
@@ -1045,29 +1045,29 @@ oslFileError SAL_CALL osl_syncFile(oslFileHandle Handle);
 
 	@param Handle [in]
 	Handle to a file received by a previous call to osl_openFile().
-	
-	@return 
-	osl_File_E_None on success<br> 
-	osl_File_E_INVAL the format of the parameters was not valid<br>	
+
+	@return
+	osl_File_E_None on success<br>
+	osl_File_E_INVAL the format of the parameters was not valid<br>
 	osl_File_E_BADF Bad file<br>
 	osl_File_E_INTR function call was interrupted<br>
 	osl_File_E_NOLINK link has been severed<br>
 	osl_File_E_NOSPC no space left on device<br>
 	osl_File_E_IO on I/O errors<br>
-	
+
 	@see osl_openFile()
 */
 
 oslFileError SAL_CALL osl_closeFile( oslFileHandle Handle );
 
-	
+
 /**	Create a directory.
 
-	@param pustrDirectoryURL [in] 
+	@param pustrDirectoryURL [in]
 	Full qualified URL of the directory to create.
 
-	@return 
-	osl_File_E_None on success<br> 
+	@return
+	osl_File_E_None on success<br>
 	osl_File_E_INVAL the format of the parameters was not valid<br>
 	osl_File_E_NOMEM not enough memory for allocating structures <br>
 	osl_File_E_EXIST file exists<br>
@@ -1095,9 +1095,9 @@ oslFileError SAL_CALL osl_createDirectory( rtl_uString* pustrDirectoryURL );
 
 	@param pustrDirectoryURL [in]
 	Full qualified URL of the directory.
-	
-	@return 
-	osl_File_E_None on success<br> 
+
+	@return
+	osl_File_E_None on success<br>
 	osl_File_E_INVAL the format of the parameters was not valid<br>
 	osl_File_E_NOMEM not enough memory for allocating structures <br>
 	osl_File_E_PERM operation not permitted<br>
@@ -1118,53 +1118,53 @@ oslFileError SAL_CALL osl_createDirectory( rtl_uString* pustrDirectoryURL );
 
 	@see osl_createDirectory()
 */
-	
+
 oslFileError SAL_CALL osl_removeDirectory( rtl_uString* pustrDirectoryURL );
 
 /** Function pointer representing a function that will be called by osl_createDirectoryPath
     if a directory has been created.
 
-    To avoid unpredictable results the callee must not access the directory whose 
-    creation is just notified. 
-    
+    To avoid unpredictable results the callee must not access the directory whose
+    creation is just notified.
+
     @param pData
     [in] User specified data given in osl_createDirectoryPath.
-    
+
     @param aDirectoryUrl
     [in] The absolute file URL of the directory that was just created by
-    osl_createDirectoryPath.        
-    
+    osl_createDirectoryPath.
+
     @see osl_createDirectoryPath
 */
 typedef void (SAL_CALL *oslDirectoryCreationCallbackFunc)(void* pData, rtl_uString* aDirectoryUrl);
 
 /** Create a directory path.
 
-    The osl_createDirectoryPath function creates a specified directory path. 
+    The osl_createDirectoryPath function creates a specified directory path.
     All nonexisting sub directories will be created.
-    <p><strong>PLEASE NOTE:</strong> You cannot rely on getting the error code 
-    osl_File_E_EXIST for existing directories. Programming against this error 
+    <p><strong>PLEASE NOTE:</strong> You cannot rely on getting the error code
+    osl_File_E_EXIST for existing directories. Programming against this error
     code is in general a strong indication of a wrong usage of osl_createDirectoryPath.</p>
-    
-    @param aDirectoryUrl 
+
+    @param aDirectoryUrl
     [in] The absolute file URL of the directory path to create.
     A relative file URL will not be accepted.
-            
+
     @param aDirectoryCreationFunc
-    [in] Pointer to a function that will be called synchronously 
-    for each sub directory that was created. The value of this 
+    [in] Pointer to a function that will be called synchronously
+    for each sub directory that was created. The value of this
     parameter may be NULL, in this case notifications will not be
-    sent. 
-    
+    sent.
+
     @param pData
-    [in] User specified data to be passed to the directory creation 
-    callback function. The value of this parameter may be arbitrary 
-    and will not be interpreted by osl_createDirectoryPath. 
-    
-    @return 
+    [in] User specified data to be passed to the directory creation
+    callback function. The value of this parameter may be arbitrary
+    and will not be interpreted by osl_createDirectoryPath.
+
+    @return
     <dl>
-    <dt>osl_File_E_None</dt> 
-    <dd>On success</dd> 
+    <dt>osl_File_E_None</dt>
+    <dd>On success</dd>
     <dt>osl_File_E_INVAL</dt>
     <dd>The format of the parameters was not valid</dd>
     <dt>osl_File_E_ACCES</dt>
@@ -1192,23 +1192,23 @@ typedef void (SAL_CALL *oslDirectoryCreationCallbackFunc)(void* pData, rtl_uStri
     <dt>osl_File_E_invalidError</dt>
     <dd>An unknown error occurred</dd>
 	</dl>
-	
+
 	@see oslDirectoryCreationFunc
 	@see oslFileError
 	@see osl_createDirectory
 */
 oslFileError SAL_CALL osl_createDirectoryPath(
-    rtl_uString* aDirectoryUrl, 
-    oslDirectoryCreationCallbackFunc aDirectoryCreationCallbackFunc, 
+    rtl_uString* aDirectoryUrl,
+    oslDirectoryCreationCallbackFunc aDirectoryCreationCallbackFunc,
     void* pData);
-    
+
 /** Remove a regular file.
 
 	@param pustrFileURL [in]
 	Full qualified URL of the file to remove.
-	
-	@return 
-	osl_File_E_None on success<br> 
+
+	@return
+	osl_File_E_None on success<br>
 	osl_File_E_INVAL the format of the parameters was not valid<br>
 	osl_File_E_NOMEM not enough memory for allocating structures <br>
 	osl_File_E_ACCES permission denied<br>
@@ -1226,25 +1226,25 @@ oslFileError SAL_CALL osl_createDirectoryPath(
 	osl_File_E_MULTIHOP multihop attempted<br>
 	osl_File_E_NOLINK link has been severed<br>
 	osl_File_E_TXTBSY text file busy<br>
-	
+
 	@see osl_openFile()
 */
 
 oslFileError SAL_CALL osl_removeFile( rtl_uString* pustrFileURL );
 
 
-/** Copy a file to a new destination. 
+/** Copy a file to a new destination.
 
-    Copies a file to a new destination. Copies only files not directories. 
+    Copies a file to a new destination. Copies only files not directories.
     No assumptions should be made about preserving attributes or file time.
-    
-	@param pustrSourceFileURL [in] 
+
+	@param pustrSourceFileURL [in]
 	Full qualified URL of the source file.
-	
+
 	@param pustrDestFileURL [in]
 	Full qualified URL of the destination file. A directory is NOT a valid destination file!
-	
-	@return 
+
+	@return
 	osl_File_E_None on success<br>
 	osl_File_E_INVAL the format of the parameters was not valid<br>
 	osl_File_E_NOMEM not enough memory for allocating structures <br>
@@ -1262,19 +1262,19 @@ oslFileError SAL_CALL osl_removeFile( rtl_uString* pustrFileURL );
 oslFileError SAL_CALL osl_copyFile( rtl_uString* pustrSourceFileURL, rtl_uString *pustrDestFileURL );
 
 
-/** Move a file or directory to a new destination or renames it. 
+/** Move a file or directory to a new destination or renames it.
 
-    Moves a file or directory to a new destination or renames it. 
+    Moves a file or directory to a new destination or renames it.
     File time and attributes are preserved.
-	
+
 	@param pustrSourceFileURL [in]
 	Full qualified URL of the source file.
-	
+
 	@param pustrDestFileURL [in]
 	Full qualified URL of the destination file. An existing directory is NOT a valid destination !
-	
-	@return 
-	osl_File_E_None on success<br> 
+
+	@return
+	osl_File_E_None on success<br>
 	osl_File_E_INVAL the format of the parameters was not valid<br>
 	osl_File_E_NOMEM not enough memory for allocating structures <br>
 	osl_File_E_ACCES permission denied<br>
@@ -1289,16 +1289,16 @@ oslFileError SAL_CALL osl_copyFile( rtl_uString* pustrSourceFileURL, rtl_uString
 oslFileError SAL_CALL osl_moveFile( rtl_uString* pustrSourceFileURL, rtl_uString *pustrDestFileURL );
 
 
-/**	Determine a valid unused canonical name for a requested name. 
+/**	Determine a valid unused canonical name for a requested name.
 
-    Determines a valid unused canonical name for a requested name. 
-    Depending on the Operating System and the File System the illegal characters are replaced by valid ones. 
-    If a file or directory with the requested name already exists a new name is generated following 
+    Determines a valid unused canonical name for a requested name.
+    Depending on the Operating System and the File System the illegal characters are replaced by valid ones.
+    If a file or directory with the requested name already exists a new name is generated following
     the common rules on the actual Operating System and File System.
 
 	@param pustrRequestedURL [in]
 	Requested name of a file or directory.
-	
+
 	@param ppustrValidURL [out]
 	On success receives a name which is unused and valid on the actual Operating System and
 	File System.
@@ -1314,24 +1314,24 @@ oslFileError SAL_CALL osl_getCanonicalName( rtl_uString *pustrRequestedURL, rtl_
 
 
 /**	Convert a path relative to a given directory into an full qualified file URL.
-	
+
 	Convert a path relative to a given directory into an full qualified file URL.
 	The function resolves symbolic links if possible and path ellipses, so on success
 	the resulting absolute path is fully resolved.
-	
+
 	@param pustrBaseDirectoryURL [in]
 	Base directory URL to which the relative path is related to.
-	
+
 	@param pustrRelativeFileURL [in]
 	An URL of a file or directory relative to the directory path specified by pustrBaseDirectoryURL
 	or an absolute path.
 	If pustrRelativeFileURL denotes an absolute path pustrBaseDirectoryURL will be ignored.
-	
+
 	@param ppustrAbsoluteFileURL [out]
 	On success it receives the full qualified absolute file URL.
 
-	@return 
-	osl_File_E_None on success<br> 
+	@return
+	osl_File_E_None on success<br>
 	osl_File_E_INVAL the format of the parameters was not valid<br>
 	osl_File_E_NOMEM not enough memory for allocating structures <br>
 	osl_File_E_NOTDIR not a directory<br>
@@ -1348,9 +1348,9 @@ oslFileError SAL_CALL osl_getCanonicalName( rtl_uString *pustrRequestedURL, rtl_
 	@see	osl_getFileStatus()
 */
 
-oslFileError SAL_CALL osl_getAbsoluteFileURL( 
-    rtl_uString* pustrBaseDirectoryURL, 
-    rtl_uString *pustrRelativeFileURL, 
+oslFileError SAL_CALL osl_getAbsoluteFileURL(
+    rtl_uString* pustrBaseDirectoryURL,
+    rtl_uString *pustrRelativeFileURL,
     rtl_uString **ppustrAbsoluteFileURL );
 
 
@@ -1358,11 +1358,11 @@ oslFileError SAL_CALL osl_getAbsoluteFileURL(
 
 	@param pustrSystemPath [in]
 	A System dependent path of a file or directory.
-	
+
 	@param ppustrFileURL [out]
 	On success it receives the file URL.
 
-	@return 
+	@return
 	osl_File_E_None on success<br>
 	osl_File_E_INVAL the format of the parameters was not valid<br>
 
@@ -1374,44 +1374,44 @@ oslFileError SAL_CALL osl_getFileURLFromSystemPath( rtl_uString *pustrSystemPath
 
 /**	Searche a full qualified system path or a file URL.
 
-    @param pustrFileName [in] 
+    @param pustrFileName [in]
     A system dependent path, a file URL, a file or relative directory.
-    
+
     @param pustrSearchPath [in]
-    A list of system paths, in which a given file has to be searched. The Notation of a path list is 
+    A list of system paths, in which a given file has to be searched. The Notation of a path list is
     system dependend, e.g. on UNIX system "/usr/bin:/bin" and on Windows "C:\BIN;C:\BATCH".
-    These paths are only for the search of a file or a relative path, otherwise it will be ignored. 
-    If pustrSearchPath is NULL or while using the search path the search failed, the function searches for 
-    a matching file in all system directories and in the directories listed in the PATH environment 
-    variable. 
-    The value of an environment variable should be used (e.g. LD_LIBRARY_PATH) if the caller is not 
+    These paths are only for the search of a file or a relative path, otherwise it will be ignored.
+    If pustrSearchPath is NULL or while using the search path the search failed, the function searches for
+    a matching file in all system directories and in the directories listed in the PATH environment
+    variable.
+    The value of an environment variable should be used (e.g. LD_LIBRARY_PATH) if the caller is not
     aware of the Operating System and so doesn't know which path list delimiter to use.
-						   
+
 	@param ppustrFileURL [out]
 	On success it receives the full qualified file URL.
 
-	@return 
+	@return
 	osl_File_E_None on success<br>
 	osl_File_E_INVAL the format of the parameters was not valid<br>
 	osl_File_E_NOTDIR not a directory<br>
 	osl_File_E_NOENT no such file or directory not found<br>
-	
+
 	@see osl_getFileURLFromSystemPath()
 	@see osl_getSystemPathFromFileURL()
 */
 
-oslFileError SAL_CALL osl_searchFileURL( rtl_uString *pustrFileName, rtl_uString *pustrSearchPath, rtl_uString **ppustrFileURL ); 
+oslFileError SAL_CALL osl_searchFileURL( rtl_uString *pustrFileName, rtl_uString *pustrSearchPath, rtl_uString **ppustrFileURL );
 
 
 /**	Convert a file URL into a system dependend path.
 
 	@param pustrFileURL [in]
 	A File URL.
-	
+
 	@param ppustrSystemPath [out]
 	On success it receives the system path.
 
-	@return 
+	@return
 	osl_File_E_None on success
 	osl_File_E_INVAL the format of the parameters was not valid
 
@@ -1425,9 +1425,9 @@ oslFileError SAL_CALL osl_getSystemPathFromFileURL( rtl_uString *pustrFileURL, r
 
 	@param ustrText [in]
 	Text to calculate the width for
-	
+
 	@return
-	The width of the text specified by ustrText, e.g. it can return the width in pixel 
+	The width of the text specified by ustrText, e.g. it can return the width in pixel
 	or the width in character count.
 
 	@see osl_abbreviateSystemPath()
@@ -1440,27 +1440,27 @@ typedef sal_uInt32 (SAL_CALL *oslCalcTextWidthFunc)( rtl_uString *ustrText );
 
 	@param ustrSystemPath [in]
 	The full system path to abbreviate
-	
+
 	@param pustrCompacted [out]
 	Receives the compacted system path on output
-	
-	@param pfnCalcWidth [in] 
+
+	@param pfnCalcWidth [in]
 	Function ptr that calculates the width of a string. Can be zero.
-	
+
 	@param uMaxWidth [in]
-	Maximum width allowed that is retunrned from pfnCalcWidth. 
+	Maximum width allowed that is retunrned from pfnCalcWidth.
 	If pfnCalcWidth is zero the character count is assumed as width.
 
-	@return	
+	@return
 	osl_File_E_None on success<br>
 
 	@see	oslCalcTextWidthFunc
 */
 
-oslFileError SAL_CALL osl_abbreviateSystemPath( 
-    rtl_uString *ustrSystemPath, 
-    rtl_uString **pustrCompacted, 
-    sal_uInt32 uMaxWidth, 
+oslFileError SAL_CALL osl_abbreviateSystemPath(
+    rtl_uString *ustrSystemPath,
+    rtl_uString **pustrCompacted,
+    sal_uInt32 uMaxWidth,
     oslCalcTextWidthFunc pCalcWidth );
 
 
@@ -1468,31 +1468,31 @@ oslFileError SAL_CALL osl_abbreviateSystemPath(
 
 	@param pustrFileURL [in]
 	The full qualified file URL.
-	
+
 	@param uAttributes [in]
 	Attributes of the file to be set.
 
-	@return 
-	osl_File_E_None on success<br> 
+	@return
+	osl_File_E_None on success<br>
 	osl_File_E_INVAL the format of the parameters was not valid<br>
-	
+
 	@see osl_getFileStatus()
 */
 
-oslFileError SAL_CALL osl_setFileAttributes( rtl_uString *pustrFileURL, sal_uInt64 uAttributes ); 
+oslFileError SAL_CALL osl_setFileAttributes( rtl_uString *pustrFileURL, sal_uInt64 uAttributes );
 
 
 /**	Set the file time.
 
 	@param pustrFileURL [in]
 	The full qualified URL of the file.
-	
+
 	@param aCreationTime [in]
 	Creation time of the given file.
-	
+
 	@param aLastAccessTime [in]
 	Time of the last access of the given file.
-	
+
 	@param aLastWriteTime [in]
 	Time of the last modifying of the given file.
 
@@ -1500,23 +1500,23 @@ oslFileError SAL_CALL osl_setFileAttributes( rtl_uString *pustrFileURL, sal_uInt
 	osl_File_E_None on success<br>
 	osl_File_E_INVAL the format of the parameters was not valid<br>
 	osl_File_E_NOENT no such file or directory not found<br>
-	
+
 	@see osl_getFileStatus()
 */
 
-oslFileError SAL_CALL osl_setFileTime( 
-    rtl_uString *pustrFileURL,	
+oslFileError SAL_CALL osl_setFileTime(
+    rtl_uString *pustrFileURL,
     const TimeValue *aCreationTime,
 	const TimeValue *aLastAccessTime,
-	const TimeValue *aLastWriteTime); 
+	const TimeValue *aLastWriteTime);
 
 
 /**	Retrieves the file URL of the system's temporary directory path
 
-	@param pustrTempDirURL[out] 
+	@param pustrTempDirURL[out]
 	On success receives the URL of system's	temporary directory path.
 
-	@return 
+	@return
 	osl_File_E_None on success
 	osl_File_E_NOENT no such file or directory not found
 */
@@ -1525,46 +1525,46 @@ oslFileError SAL_CALL osl_getTempDirURL( rtl_uString **pustrTempDirURL );
 
 
 /** Creates a temporary file in the directory provided by the caller or the
-    directory returned by osl_getTempDirURL. 
-	
+    directory returned by osl_getTempDirURL.
+
 	Creates a temporary file in the directory provided by the caller or the
-    directory returned by osl_getTempDirURL. 
-    Under UNIX Operating Systems the file will be created with read and write 
-    access for the user exclusively. 
-    If the caller requests only a handle to the open file but not the name of 
-    it, the file will be automatically removed on close else the caller is 
+    directory returned by osl_getTempDirURL.
+    Under UNIX Operating Systems the file will be created with read and write
+    access for the user exclusively.
+    If the caller requests only a handle to the open file but not the name of
+    it, the file will be automatically removed on close else the caller is
     responsible for removing the file on success.
 
-    @param  pustrDirectoryURL [in] 
-	Specifies the full qualified URL where the temporary file should be created. 
+    @param  pustrDirectoryURL [in]
+	Specifies the full qualified URL where the temporary file should be created.
     If pustrDirectoryURL is 0 the path returned by osl_getTempDirURL will be used.
-            
-    @param  pHandle [out] 
-	On success receives a handle to the open file. If pHandle is 0 the file will 
+
+    @param  pHandle [out]
+	On success receives a handle to the open file. If pHandle is 0 the file will
 	be closed on return, in this case ppustrTempFileURL must not be 0.
-            
-    @param  ppustrTempFileURL [out] 
+
+    @param  ppustrTempFileURL [out]
 	On success receives the full qualified URL of the temporary file.
-    If ppustrTempFileURL is 0 the file will be automatically removed on close, 
+    If ppustrTempFileURL is 0 the file will be automatically removed on close,
 	in this case pHandle must not be 0.
-    If ppustrTempFileURL is not 0 the caller receives the name of the created 
+    If ppustrTempFileURL is not 0 the caller receives the name of the created
 	file and is responsible for removing the file, in this case
 	*ppustrTempFileURL must be 0 or must point to a valid rtl_uString.
 
-    @descr  
+    @descr
 	Description of the different pHandle, ppustrTempFileURL parameter combinations.
     pHandle is 0 and ppustrTempDirURL is 0 - this combination is invalid
-    pHandle is not 0 and ppustrTempDirURL is 0 - a handle to the open file 
+    pHandle is not 0 and ppustrTempDirURL is 0 - a handle to the open file
     will be returned on success and the file will be automatically removed on close.
-    pHandle is 0 and ppustrTempDirURL is not 0 - the name of the file will be returned, 
+    pHandle is 0 and ppustrTempDirURL is not 0 - the name of the file will be returned,
 	the caller is responsible for opening, closing and removing the file.
     pHandle is not 0 and ppustrTempDirURL is not 0 - a handle to the open file as well as
-    the file name will be returned, the caller is responsible for closing and removing 
+    the file name will be returned, the caller is responsible for closing and removing
     the file.
-                                
-    @return 
+
+    @return
 	osl_File_E_None   on success
-    osl_File_E_INVAL  the format of the parameter is invalid          
+    osl_File_E_INVAL  the format of the parameter is invalid
     osl_File_E_NOMEM  not enough memory for allocating structures
 	osl_File_E_ACCES  Permission denied
 	osl_File_E_NOENT  No such file or directory
@@ -1572,15 +1572,15 @@ oslFileError SAL_CALL osl_getTempDirURL( rtl_uString **pustrTempDirURL );
 	osl_File_E_ROFS   Read-only file system
 	osl_File_E_NOSPC  No space left on device
 	osl_File_E_DQUOT  Quota exceeded
-	    
-	@see    osl_getTempDirURL()	
+
+	@see    osl_getTempDirURL()
 */
 
 oslFileError SAL_CALL osl_createTempFile(
-    rtl_uString*   pustrDirectoryURL, 
-    oslFileHandle* pHandle, 
+    rtl_uString*   pustrDirectoryURL,
+    oslFileHandle* pHandle,
     rtl_uString**  ppustrTempFileURL);
-        
+
 #ifdef __cplusplus
 }
 #endif

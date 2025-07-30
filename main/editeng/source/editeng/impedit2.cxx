@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -2780,7 +2780,7 @@ EditPaM ImpEditEngine::ImpInsertText( EditSelection aCurSel, const XubString& rS
 	EditPaM aCurPaM( aPaM );	// fuers Invalidieren
 
     // get word boundaries in order to clear possible WrongList entries
-    // and invalidate all the necessary text (everything after and including the 
+    // and invalidate all the necessary text (everything after and including the
     // start of the word)
     // #i107201# do the expensive SelectWord call only if online spelling is active
     EditSelection aCurWord;
@@ -3365,7 +3365,7 @@ void ImpEditEngine::GetLineBoundaries( /*out*/sal_uInt16 &rStart, /*out*/sal_uIn
         rStart = pLine->GetStart();
         rEnd   = pLine->GetEnd();
     }
-}    
+}
 
 sal_uInt16 ImpEditEngine::GetLineNumberAtIndex( sal_uInt32 nPara, sal_uInt16 nIndex ) const
 {
@@ -3389,11 +3389,11 @@ sal_uInt16 ImpEditEngine::GetLineNumberAtIndex( sal_uInt32 nPara, sal_uInt16 nIn
                 if (nStart <= nIndex && nIndex < nEnd)
                     nLineNo = i;
             }
-        }    
+        }
     }
     return nLineNo;
 }
-    
+
 sal_uInt16 ImpEditEngine::GetLineHeight( sal_uInt32 nParagraph, sal_uInt16 nLine )
 {
 	DBG_ASSERT( nParagraph < GetParaPortions().Count(), "GetLineCount: Out of range" );

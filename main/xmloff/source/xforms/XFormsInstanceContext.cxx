@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -66,8 +66,8 @@ static SvXMLTokenMapEntry aAttributes[] =
     XML_TOKEN_MAP_END
 };
 
-XFormsInstanceContext::XFormsInstanceContext( 
-    SvXMLImport& rImport, 
+XFormsInstanceContext::XFormsInstanceContext(
+    SvXMLImport& rImport,
     sal_uInt16 nPrefix,
     const OUString& rLocalName,
     Reference<XPropertySet> xModel ) :
@@ -81,7 +81,7 @@ XFormsInstanceContext::~XFormsInstanceContext()
 {
 }
 
-SvXMLImportContext* XFormsInstanceContext::CreateChildContext( 
+SvXMLImportContext* XFormsInstanceContext::CreateChildContext(
     sal_uInt16 nPrefix,
     const OUString& rLocalName,
     const Reference<XAttributeList>& )
@@ -89,7 +89,7 @@ SvXMLImportContext* XFormsInstanceContext::CreateChildContext(
     SvXMLImportContext* pContext = NULL;
 
     // only the first element child of an xforms:instance element
-    // is used as an instance. The other children remainder must be 
+    // is used as an instance. The other children remainder must be
     // ignored.
     if( mxInstance.is() )
     {
@@ -99,7 +99,7 @@ SvXMLImportContext* XFormsInstanceContext::CreateChildContext(
     else
     {
         // create new DomBuilderContext. Save reference to tree in Model.
-        DomBuilderContext* pInstance = 
+        DomBuilderContext* pInstance =
             new DomBuilderContext( GetImport(), nPrefix, rLocalName );
         mxInstance = pInstance->getTree();
         pContext = pInstance;
@@ -125,8 +125,8 @@ void XFormsInstanceContext::EndElement()
 }
 
 
-void XFormsInstanceContext::HandleAttribute( 
-    sal_uInt16 nToken, 
+void XFormsInstanceContext::HandleAttribute(
+    sal_uInt16 nToken,
     const rtl::OUString& rValue )
 {
     switch( nToken )
@@ -143,7 +143,7 @@ void XFormsInstanceContext::HandleAttribute(
     }
 }
 
-SvXMLImportContext* XFormsInstanceContext::HandleChild( 
+SvXMLImportContext* XFormsInstanceContext::HandleChild(
     sal_uInt16,
     sal_uInt16,
     const OUString&,

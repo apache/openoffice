@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 #include "mysqlc_databasemetadata.hxx"
 #include <com/sun/star/sdbc/DataType.hpp>
@@ -1370,7 +1370,7 @@ sal_Bool SAL_CALL ODatabaseMetaData::supportsResultSetConcurrency(sal_Int32 setT
 	try {
 		return meta->supportsResultSetConcurrency(setType, concurrency==com::sun::star::sdbc::TransactionIsolation::READ_COMMITTED?
 													sql::TRANSACTION_READ_COMMITTED:
-													(concurrency == com::sun::star::sdbc::TransactionIsolation::SERIALIZABLE? 
+													(concurrency == com::sun::star::sdbc::TransactionIsolation::SERIALIZABLE?
 														sql::TRANSACTION_SERIALIZABLE:sql::TRANSACTION_SERIALIZABLE))? sal_True:sal_False;
 	} catch (sql::MethodNotImplementedException) {
 		mysqlc_sdbc_driver::throwFeatureNotImplementedException("ODatabaseMetaData::supportsResultSetConcurrency", *this);
@@ -1680,10 +1680,10 @@ Reference< XResultSet > SAL_CALL ODatabaseMetaData::getColumnPrivileges(
 
 
 /* {{{ ODatabaseMetaData::getColumns() -I- */
-Reference< XResultSet > SAL_CALL ODatabaseMetaData::getColumns( 
+Reference< XResultSet > SAL_CALL ODatabaseMetaData::getColumns(
 		const Any& catalog,
 		const OUString& schemaPattern,
-		const OUString& tableNamePattern, 
+		const OUString& tableNamePattern,
 		const OUString& columnNamePattern)
 	throw(SQLException, RuntimeException)
 {
@@ -1729,9 +1729,9 @@ Reference< XResultSet > SAL_CALL ODatabaseMetaData::getColumns(
 
 
 /* {{{ ODatabaseMetaData::getTables() -I- */
-Reference< XResultSet > SAL_CALL ODatabaseMetaData::getTables( 
+Reference< XResultSet > SAL_CALL ODatabaseMetaData::getTables(
 		const Any& catalog,
-		const OUString& schemaPattern, 
+		const OUString& schemaPattern,
 		const OUString& tableNamePattern,
 		const Sequence< OUString >& types )
 	throw(SQLException, RuntimeException)
@@ -1793,7 +1793,7 @@ Reference< XResultSet > SAL_CALL ODatabaseMetaData::getTables(
 /* {{{ ODatabaseMetaData::getProcedureColumns() -I- */
 Reference< XResultSet > SAL_CALL ODatabaseMetaData::getProcedureColumns(
 		const Any& /* catalog */,
-		const OUString& /* schemaPattern */, 
+		const OUString& /* schemaPattern */,
 		const OUString& /* procedureNamePattern */,
 		const OUString& /* columnNamePattern */)
 	throw(SQLException, RuntimeException)
@@ -1820,7 +1820,7 @@ Reference< XResultSet > SAL_CALL ODatabaseMetaData::getProcedures(
 				sPattern(OUStringToOString(schemaPattern, m_rConnection.getConnectionEncoding()).getStr()),
 				pNamePattern(OUStringToOString(procedureNamePattern, m_rConnection.getConnectionEncoding()).getStr());
 
-	
+
 	try {
 		std::auto_ptr< sql::ResultSet> rset( meta->getProcedures(cat,
 												   sPattern.compare("")? sPattern:wild,
@@ -2033,7 +2033,7 @@ Reference< XResultSet > SAL_CALL ODatabaseMetaData::getIndexInfo(
 
 
 /* {{{ ODatabaseMetaData::getBestRowIdentifier() -I- */
-Reference< XResultSet > SAL_CALL ODatabaseMetaData::getBestRowIdentifier( 
+Reference< XResultSet > SAL_CALL ODatabaseMetaData::getBestRowIdentifier(
 		const Any& catalog,
 		const OUString& schema,
 		const OUString& table,

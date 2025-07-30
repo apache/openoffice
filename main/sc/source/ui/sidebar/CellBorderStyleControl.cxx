@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 #include "precompiled_sc.hxx"
@@ -103,7 +103,7 @@ void CellBorderStyleControl::Initialize()
     mpImageListH[14] = Image(ScResId(IMG_BORDER15_H));
     mpImageListH[15] = Image(ScResId(IMG_BORDER16_H));
 
-    maTBBorder1.SetItemImage(TBI_BORDER1_NONE, GetDisplayBackground().GetColor().IsDark() ? mpImageListH[0] : mpImageList[0]); 
+    maTBBorder1.SetItemImage(TBI_BORDER1_NONE, GetDisplayBackground().GetColor().IsDark() ? mpImageListH[0] : mpImageList[0]);
     maTBBorder1.SetItemImage(TBI_BORDER1_ALL, GetDisplayBackground().GetColor().IsDark() ? mpImageListH[1] : mpImageList[1]);
     maTBBorder1.SetItemImage(TBI_BORDER1_OUTER, GetDisplayBackground().GetColor().IsDark() ? mpImageListH[2] : mpImageList[2]);
     maTBBorder1.SetItemImage(TBI_BORDER1_OUTERBOLD, GetDisplayBackground().GetColor().IsDark() ? mpImageListH[3] : mpImageList[3]);
@@ -113,7 +113,7 @@ void CellBorderStyleControl::Initialize()
     maTBBorder1.SetOutputSizePixel( aTbxSize );
     Link aLink  = LINK(this, CellBorderStyleControl, TB1SelectHdl);
     maTBBorder1.SetSelectHdl ( aLink );
-    
+
     maTBBorder2.SetLineCount(2);
     maTBBorder2.InsertItem(TBI_BORDER2_LEFT, GetDisplayBackground().GetColor().IsDark() ? mpImageListH[4] : mpImageList[4]);
     maTBBorder2.InsertItem(TBI_BORDER2_RIGHT, GetDisplayBackground().GetColor().IsDark() ? mpImageListH[5] : mpImageList[5]);
@@ -146,7 +146,7 @@ void CellBorderStyleControl::Initialize()
     maTBBorder2.SetItemText(TBI_BORDER2_LEFTRIGHT, ScResId(STR_BORDER_8));
     aLink  = LINK(this, CellBorderStyleControl, TB2SelectHdl);
     maTBBorder2.SetSelectHdl ( aLink );
-    
+
     maTBBorder3.SetItemImage(TBI_BORDER3_S1, GetDisplayBackground().GetColor().IsDark() ? mpImageListH[12] : mpImageList[12]);
     maTBBorder3.SetItemImage(TBI_BORDER3_S2, GetDisplayBackground().GetColor().IsDark() ? mpImageListH[13] : mpImageList[13]);
     maTBBorder3.SetItemImage(TBI_BORDER3_S3, GetDisplayBackground().GetColor().IsDark() ? mpImageListH[14] : mpImageList[14]);
@@ -173,10 +173,10 @@ IMPL_LINK(CellBorderStyleControl, TB1SelectHdl, ToolBox*, pToolBox)
 	case TBI_BORDER1_NONE:
 		{
 		 nValidFlags |= FRM_VALID_ALL;
-		SvxLineItem     aLineItem1( SID_ATTR_BORDER_DIAG_BLTR );	
-		SvxLineItem     aLineItem2( SID_ATTR_BORDER_DIAG_TLBR );	
-		aLineItem1.SetLine( NULL );		//modify 
-		aLineItem2.SetLine( NULL );		//modify 
+		SvxLineItem     aLineItem1( SID_ATTR_BORDER_DIAG_BLTR );
+		SvxLineItem     aLineItem2( SID_ATTR_BORDER_DIAG_TLBR );
+		aLineItem1.SetLine( NULL );		//modify
+		aLineItem2.SetLine( NULL );		//modify
 		mrCellAppearancePropertyPanel.GetBindings()->GetDispatcher()->Execute(SID_ATTR_BORDER_DIAG_BLTR, SFX_CALLMODE_RECORD, &aLineItem1, 0L);
 		mrCellAppearancePropertyPanel.GetBindings()->GetDispatcher()->Execute(SID_ATTR_BORDER_DIAG_TLBR, SFX_CALLMODE_RECORD, &aLineItem2, 0L);
 		}
@@ -287,14 +287,14 @@ IMPL_LINK(CellBorderStyleControl, TB2SelectHdl, ToolBox *, pToolBox)
 	else if(nId == TBI_BORDER2_BLTR)
 	{
 		SvxBorderLine aTmp( NULL, 1, 0, 0 );
-		SvxLineItem     aLineItem( SID_ATTR_BORDER_DIAG_BLTR );	
+		SvxLineItem     aLineItem( SID_ATTR_BORDER_DIAG_BLTR );
 		aLineItem.SetLine( &aTmp );
 		mrCellAppearancePropertyPanel.GetBindings()->GetDispatcher()->Execute(SID_ATTR_BORDER_DIAG_BLTR, SFX_CALLMODE_RECORD, &aLineItem, 0L);
 	}
 	else if(nId == TBI_BORDER2_TLBR)
 	{
 		SvxBorderLine aTmp( NULL, 1, 0, 0 );
-		SvxLineItem     aLineItem( SID_ATTR_BORDER_DIAG_TLBR );	
+		SvxLineItem     aLineItem( SID_ATTR_BORDER_DIAG_TLBR );
 		aLineItem.SetLine( &aTmp );
 		mrCellAppearancePropertyPanel.GetBindings()->GetDispatcher()->Execute(SID_ATTR_BORDER_DIAG_TLBR, SFX_CALLMODE_RECORD, &aLineItem, 0L);
 	}

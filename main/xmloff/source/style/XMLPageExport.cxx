@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -129,7 +129,7 @@ sal_Bool XMLPageExport::exportStyle(
 						  GetExport().EncodeStyleName( sName, &bEncoded ) );
 
 		if( bEncoded )
-			GetExport().AddAttribute( XML_NAMESPACE_STYLE, XML_DISPLAY_NAME, 
+			GetExport().AddAttribute( XML_NAMESPACE_STYLE, XML_DISPLAY_NAME,
 							  	 sName);
 
 		OUString sPMName;
@@ -141,7 +141,7 @@ sal_Bool XMLPageExport::exportStyle(
         {
             OUString sNextName;
 		    xPropSet->getPropertyValue( sFollowStyle ) >>= sNextName;
-		    
+
 		    if( sName != sNextName && sNextName.getLength() )
 		    {
 			    GetExport().AddAttribute( XML_NAMESPACE_STYLE, XML_NEXT_STYLE_NAME,
@@ -247,7 +247,7 @@ void XMLPageExport::exportDefaultStyle()
 
 			::std::vector< XMLPropertyState > xPropStates =
 				xPageMasterExportPropMapper->FilterDefaults( xPropSet );
-			
+
 			sal_Bool bExport = sal_False;
 			UniReference < XMLPropertySetMapper > aPropMapper(xPageMasterExportPropMapper->getPropertySetMapper());
 			for( ::std::vector< XMLPropertyState >::iterator aIter = xPropStates.begin(); aIter != xPropStates.end(); ++aIter )
@@ -263,7 +263,7 @@ void XMLPageExport::exportDefaultStyle()
 
 		//	if ( xPropStates.size() != 0 &&
           //          ( xPropStates.size() != 1 || xPropStates[0].mnIndex != -1 ) )
-			if( bExport )	
+			if( bExport )
 			{
 				//<style:default-page-layout>
 				SvXMLElementExport aElem( GetExport(), XML_NAMESPACE_STYLE,

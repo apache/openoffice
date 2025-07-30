@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -42,7 +42,7 @@ using namespace ::com::sun::star;
 namespace vclcanvas
 {
     CanvasFont::CanvasFont( const rendering::FontRequest& 					rFontRequest,
-                            const uno::Sequence< beans::PropertyValue >&	, 
+                            const uno::Sequence< beans::PropertyValue >&	,
                             const geometry::Matrix2D& 						rFontMatrix,
                             rendering::XGraphicDevice&                      rDevice,
                             const OutDevProviderSharedPtr&                  rOutDevProvider ) :
@@ -78,13 +78,13 @@ namespace vclcanvas
             const Size aSize = rOutDev.GetFontMetric( *maFont ).GetSize();
 
             const double fDividend( rFontMatrix.m10 + rFontMatrix.m11 );
-            double fStretch = (rFontMatrix.m00 + rFontMatrix.m01);            
-            
+            double fStretch = (rFontMatrix.m00 + rFontMatrix.m01);
+
             if( !::basegfx::fTools::equalZero( fDividend) )
                 fStretch /= fDividend;
-            
+
             const long nNewWidth = ::basegfx::fround( aSize.Width() * fStretch );
-            
+
             maFont->SetWidth( nNewWidth );
 
             rOutDev.EnableMapMode(bOldMapState);
@@ -106,10 +106,10 @@ namespace vclcanvas
         if( !mpRefDevice.is() )
             return uno::Reference< rendering::XTextLayout >(); // we're disposed
 
-        return new TextLayout( aText, 
-                               nDirection, 
-                               nRandomSeed, 
-                               Reference( this ), 
+        return new TextLayout( aText,
+                               nDirection,
+                               nRandomSeed,
+                               Reference( this ),
                                mpRefDevice,
                                mpOutDevProvider);
     }

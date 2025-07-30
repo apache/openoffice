@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -110,7 +110,7 @@ void SelectorListBox::UpdateChartElementsListAndSelection()
             aSelectedOID = ObjectIdentifier( xSelectionSupplier->getSelection() );
             aSelectedCID = aSelectedOID.getObjectCID();
         }
-                
+
         Reference< chart2::XChartDocument > xChartDoc( xChartController->getModel(), uno::UNO_QUERY );
         ObjectType eType( aSelectedOID.getObjectType() );
         bool bAddSelectionToList = false;
@@ -314,7 +314,7 @@ void SAL_CALL ElementSelectorToolbarController::statusChanged( const frame::Feat
     }
 }
 // -----------------------------------------------------------------------------
-uno::Reference< awt::XWindow > SAL_CALL ElementSelectorToolbarController::createItemWindow( const uno::Reference< awt::XWindow >& xParent ) 
+uno::Reference< awt::XWindow > SAL_CALL ElementSelectorToolbarController::createItemWindow( const uno::Reference< awt::XWindow >& xParent )
         throw (uno::RuntimeException)
 {
     uno::Reference< awt::XWindow > xItemWindow;

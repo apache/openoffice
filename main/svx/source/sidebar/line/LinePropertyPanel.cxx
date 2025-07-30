@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 #include <sfx2/sidebar/ResourceDefinitions.hrc>
@@ -184,7 +184,7 @@ LinePropertyPanel::LinePropertyPanel(
     const cssu::Reference<css::frame::XFrame>& rxFrame,
     SfxBindings* pBindings)
 :   Control(
-        pParent, 
+        pParent,
         SVX_RES(RID_SIDEBAR_LINE_PANEL)),
     mpFTWidth(new FixedText(this, SVX_RES(FT_WIDTH))),
     mpTBWidthBackground(sfx2::sidebar::ControlFactory::CreateToolBoxBackground(this)),
@@ -242,7 +242,7 @@ LinePropertyPanel::LinePropertyPanel(
 
     // Setup the grid layouter.
     const sal_Int32 nMappedToolBoxWidth (Layouter::MapWidth(*this, TOOLBOX_WIDTH));
-    
+
     maLayouter.GetCell(0,0).SetControl(*mpFTWidth);
     maLayouter.GetCell(1,0).SetControl(*mpTBWidthBackground).SetFixedWidth();
 
@@ -251,17 +251,17 @@ LinePropertyPanel::LinePropertyPanel(
 
     maLayouter.GetCell(2,0).SetControl(*mpFTStyle);
     maLayouter.GetCell(3,0).SetControl(*mpLBStyle);
-    
+
     maLayouter.GetCell(2,2).SetControl(*mpFTTrancparency);
     maLayouter.GetCell(3,2).SetControl(*mpMFTransparent);
-    
+
     maLayouter.GetCell(4,0).SetControl(*mpFTArrow).SetGridWidth(3);
     maLayouter.GetCell(5,0).SetControl(*mpLBStart);
     maLayouter.GetCell(5,2).SetControl(*mpLBEnd);
-        
+
     maLayouter.GetCell(6,0).SetControl(*mpFTEdgeStyle);
     maLayouter.GetCell(7,0).SetControl(*mpLBEdgeStyle);
-    
+
     maLayouter.GetCell(6,2).SetControl(*mpFTCapStyle);
     maLayouter.GetCell(7,2).SetControl(*mpLBCapStyle);
 
@@ -379,7 +379,7 @@ void LinePropertyPanel::Initialize()
     aLink = LINK(this, LinePropertyPanel, ChangeTransparentHdl);
     mpMFTransparent->SetModifyHdl(aLink);
     mpMFTransparent->SetAccessibleName(::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM("Transparency")));	//wj acc
-    
+
     mpTBWidth->SetAccessibleRelationLabeledBy(mpFTWidth.get());
     mpTBColor->SetAccessibleRelationLabeledBy(mpFTColor.get());
     mpLBStyle->SetAccessibleRelationLabeledBy(mpFTStyle.get());
@@ -423,7 +423,7 @@ LinePropertyPanel* LinePropertyPanel::Create (
         throw lang::IllegalArgumentException(A2S("no XFrame given to LinePropertyPanel::Create"), NULL, 1);
     if (pBindings == NULL)
         throw lang::IllegalArgumentException(A2S("no SfxBindings given to LinePropertyPanel::Create"), NULL, 2);
-    
+
     return new LinePropertyPanel(
         pParent,
         rxFrame,
@@ -437,16 +437,16 @@ void LinePropertyPanel::DataChanged(
     const DataChangedEvent& rEvent)
 {
     (void)rEvent;
-    
+
     SetupIcons();
 }
 
 
 
 
-void LinePropertyPanel::NotifyItemUpdate( 
-    sal_uInt16 nSID, 
-    SfxItemState eState, 
+void LinePropertyPanel::NotifyItemUpdate(
+    sal_uInt16 nSID,
+    SfxItemState eState,
     const SfxPoolItem* pState,
     const bool bIsEnabled)
 {
@@ -458,7 +458,7 @@ void LinePropertyPanel::NotifyItemUpdate(
         case SID_ATTR_LINE_COLOR:
         {
             if(bDisabled)
-            { 
+            {
                 mpFTColor->Disable();
                 mpTBColor->Disable();
             }
@@ -525,7 +525,7 @@ void LinePropertyPanel::NotifyItemUpdate(
                 {
                     mpStyleItem.reset(0);
                 }
-                else 
+                else
                 {
                     mpDashItem.reset(0);
                 }
@@ -559,7 +559,7 @@ void LinePropertyPanel::NotifyItemUpdate(
                 }
             }
 
-            mpMFTransparent->SetValue(0);//add 
+            mpMFTransparent->SetValue(0);//add
             mpMFTransparent->SetText(String());
             break;
         }
@@ -784,15 +784,15 @@ void LinePropertyPanel::NotifyItemUpdate(
 
 
 
-SfxBindings* LinePropertyPanel::GetBindings() 
-{ 
-    return mpBindings; 
+SfxBindings* LinePropertyPanel::GetBindings()
+{
+    return mpBindings;
 }
 
 
 
 IMPL_LINK( LinePropertyPanel, ImplPopupModeEndHdl, FloatingWindow*, EMPTYARG )
-{	
+{
     return 0;
 }
 
@@ -993,7 +993,7 @@ IMPL_LINK( LinePropertyPanel, ChangeTransparentHdl, void *, EMPTYARG )
 
 
 
-namespace 
+namespace
 {
     Color GetTransparentColor (void)
     {
@@ -1061,22 +1061,22 @@ void LinePropertyPanel::SetWidthIcon()
 
     long nVal = LogicToLogic(mnWidthCoreValue * 10,(MapUnit)meMapUnit , MAP_POINT);
 
-    if(nVal <= 6)	
-        mpTBWidth->SetItemImage( TBI_WIDTH, GetDisplayBackground().GetColor().IsDark() ? mpIMGWidthIconH[0] : mpIMGWidthIcon[0]); 
-    else if(nVal > 6 && nVal <= 9)	
-        mpTBWidth->SetItemImage( TBI_WIDTH, GetDisplayBackground().GetColor().IsDark() ? mpIMGWidthIconH[1] : mpIMGWidthIcon[1]);  
-    else if(nVal > 9 && nVal <= 12)	
-        mpTBWidth->SetItemImage( TBI_WIDTH, GetDisplayBackground().GetColor().IsDark() ? mpIMGWidthIconH[2] : mpIMGWidthIcon[2]); 
-    else if(nVal > 12 && nVal <= 19)	
-        mpTBWidth->SetItemImage( TBI_WIDTH, GetDisplayBackground().GetColor().IsDark() ? mpIMGWidthIconH[3] : mpIMGWidthIcon[3]); 
-    else if(nVal > 19 && nVal <= 26)		
-        mpTBWidth->SetItemImage( TBI_WIDTH, GetDisplayBackground().GetColor().IsDark() ? mpIMGWidthIconH[4] : mpIMGWidthIcon[4]); 
-    else if(nVal > 26 && nVal <= 37)	
-        mpTBWidth->SetItemImage( TBI_WIDTH, GetDisplayBackground().GetColor().IsDark() ? mpIMGWidthIconH[5] : mpIMGWidthIcon[5]); 
-    else if(nVal > 37 && nVal <=52)		
-        mpTBWidth->SetItemImage( TBI_WIDTH, GetDisplayBackground().GetColor().IsDark() ? mpIMGWidthIconH[6] : mpIMGWidthIcon[6]); 
-    else if(nVal > 52)		
-        mpTBWidth->SetItemImage( TBI_WIDTH, GetDisplayBackground().GetColor().IsDark() ? mpIMGWidthIconH[7] : mpIMGWidthIcon[7]); 
+    if(nVal <= 6)
+        mpTBWidth->SetItemImage( TBI_WIDTH, GetDisplayBackground().GetColor().IsDark() ? mpIMGWidthIconH[0] : mpIMGWidthIcon[0]);
+    else if(nVal > 6 && nVal <= 9)
+        mpTBWidth->SetItemImage( TBI_WIDTH, GetDisplayBackground().GetColor().IsDark() ? mpIMGWidthIconH[1] : mpIMGWidthIcon[1]);
+    else if(nVal > 9 && nVal <= 12)
+        mpTBWidth->SetItemImage( TBI_WIDTH, GetDisplayBackground().GetColor().IsDark() ? mpIMGWidthIconH[2] : mpIMGWidthIcon[2]);
+    else if(nVal > 12 && nVal <= 19)
+        mpTBWidth->SetItemImage( TBI_WIDTH, GetDisplayBackground().GetColor().IsDark() ? mpIMGWidthIconH[3] : mpIMGWidthIcon[3]);
+    else if(nVal > 19 && nVal <= 26)
+        mpTBWidth->SetItemImage( TBI_WIDTH, GetDisplayBackground().GetColor().IsDark() ? mpIMGWidthIconH[4] : mpIMGWidthIcon[4]);
+    else if(nVal > 26 && nVal <= 37)
+        mpTBWidth->SetItemImage( TBI_WIDTH, GetDisplayBackground().GetColor().IsDark() ? mpIMGWidthIconH[5] : mpIMGWidthIcon[5]);
+    else if(nVal > 37 && nVal <=52)
+        mpTBWidth->SetItemImage( TBI_WIDTH, GetDisplayBackground().GetColor().IsDark() ? mpIMGWidthIconH[6] : mpIMGWidthIcon[6]);
+    else if(nVal > 52)
+        mpTBWidth->SetItemImage( TBI_WIDTH, GetDisplayBackground().GetColor().IsDark() ? mpIMGWidthIconH[7] : mpIMGWidthIcon[7]);
 
 }
 
@@ -1107,7 +1107,7 @@ void  LinePropertyPanel::FillLineEndList()
     if ( pSh && pSh->GetItem( SID_LINEEND_LIST ) )
     {
         mpLBStart->Enable();
-        SvxLineEndListItem aItem( *(const SvxLineEndListItem*)(pSh->GetItem( SID_LINEEND_LIST ) ) );		
+        SvxLineEndListItem aItem( *(const SvxLineEndListItem*)(pSh->GetItem( SID_LINEEND_LIST ) ) );
         maLineEndList = aItem.GetLineEndList();
 
         if(maLineEndList.get())
@@ -1133,7 +1133,7 @@ void  LinePropertyPanel::FillLineStyleList()
     if ( pSh && pSh->GetItem( SID_DASH_LIST ) )
     {
         mpLBStyle->Enable();
-        SvxDashListItem aItem( *(const SvxDashListItem*)(pSh->GetItem( SID_DASH_LIST ) ) );		
+        SvxDashListItem aItem( *(const SvxDashListItem*)(pSh->GetItem( SID_DASH_LIST ) ) );
         maLineStyleList = aItem.GetDashList();
 
         if(maLineStyleList.get())
@@ -1188,7 +1188,7 @@ void LinePropertyPanel::SelectLineStyle()
             }
             break;
     }
-    
+
     if(!bSelected)
         mpLBStyle->SelectEntryPos( 0 );
 }

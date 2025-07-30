@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -102,7 +102,7 @@ DXFLineInfo DXF2GDIMetaFile::LTypeToDXFLineInfo(const char * sLineType)
 // ####
 			// x = (sal_Int32) rTransform.TransLineWidth( pLT->fDash[i] * pDXF->getGlobalLineTypeScale() );
 			if ( x >= 0.0 ) {
-				if ( aDXFLineInfo.nDotCount == 0 ) { 
+				if ( aDXFLineInfo.nDotCount == 0 ) {
 					aDXFLineInfo.nDotCount ++;
 					aDXFLineInfo.fDotLen = x;
 				}
@@ -519,7 +519,7 @@ void DXF2GDIMetaFile::DrawAttribEntity(const DXFAttribEntity & rE, const DXFTran
 		sal_uInt16 nHeight;
 		short nAng;
 		ByteString aStr( rE.sText );
-		DXFTransform aT( DXFTransform( rE.fXScale, rE.fHeight, 1.0, rE.fRotAngle, rE.aP0 ), rTransform ); 
+		DXFTransform aT( DXFTransform( rE.fXScale, rE.fHeight, 1.0, rE.fRotAngle, rE.aP0 ), rTransform );
 		aT.TransDir(DXFVector(0,1,0),aV);
 		nHeight=(sal_uInt16)(aV.Abs()+0.5);
 		fA=aT.CalcRotAngle();
@@ -636,7 +636,7 @@ void DXF2GDIMetaFile::DrawHatchEntity(const DXFHatchEntity & rE, const DXFTransf
 					const DXFEdgeType* pEdge = rPathData.aEdges[ i ];
 					switch( pEdge->nEdgeType )
 					{
-						case 1 : 
+						case 1 :
 						{
 							Point aPt;
 							rTransform.Transform( ((DXFEdgeTypeLine*)pEdge)->aStartPoint, aPt );

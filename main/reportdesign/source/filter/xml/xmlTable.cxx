@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -126,7 +126,7 @@ OXMLTable::OXMLTable( ORptFilter& rImport
 }
 // -----------------------------------------------------------------------------
 OXMLTable::~OXMLTable()
-{  
+{
     DBG_DTOR( rpt_OXMLTable,NULL);
 }
 // -----------------------------------------------------------------------------
@@ -264,7 +264,7 @@ void OXMLTable::EndElement()
                                 try
                                 {
                                     (*aCellIter)->setSize(awt::Size(nWidth,nHeight));
-                                    (*aCellIter)->setPosition(awt::Point(nPosX,nPosY));                                
+                                    (*aCellIter)->setPosition(awt::Point(nPosX,nPosY));
                                 }
                                 catch(beans::PropertyVetoException)
                                 {
@@ -309,8 +309,8 @@ void OXMLTable::addCell(const Reference<XReportComponent>& _xElement)
 }
 // -----------------------------------------------------------------------------
 void OXMLTable::incrementRowIndex()
-{ 
-    ++m_nRowIndex; 
+{
+    ++m_nRowIndex;
     m_nColumnIndex = 0;
     m_aGrid.push_back(::std::vector<TCell>(m_aWidth.size()));
 }

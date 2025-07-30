@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 #include "precompiled_sc.hxx"
@@ -58,7 +58,7 @@ NumberFormatPropertyPanel::NumberFormatPropertyPanel(
     const cssu::Reference<css::frame::XFrame>& rxFrame,
     SfxBindings* pBindings)
 :   Control(
-        pParent, 
+        pParent,
         ScResId(RID_PROPERTYPANEL_SC_NUMBERFORMAT)),
     mpFtCategory(new FixedText(this, ScResId(FT_CATEGORY))),
     mpLbCategory(new ListBox(this, ScResId(LB_CATEGORY))),
@@ -134,8 +134,8 @@ void NumberFormatPropertyPanel::Initialize()
 	mpTBCategory->SetSelectHdl ( aLink );
 
 	aLink = LINK(this, NumberFormatPropertyPanel, NumFormatValueHdl);
-	
-	mpEdDecimals->SetModifyHdl( aLink );	
+
+	mpEdDecimals->SetModifyHdl( aLink );
 	mpEdLeadZeroes->SetModifyHdl( aLink );
 	mpEdDecimals->SetAccessibleName(::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM("Decimal Places")));		//wj acc
 	mpEdLeadZeroes->SetAccessibleName(::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM("Leading Zeroes")));		//wj acc
@@ -245,7 +245,7 @@ NumberFormatPropertyPanel* NumberFormatPropertyPanel::Create (
         throw lang::IllegalArgumentException(A2S("no XFrame given to NumberFormatPropertyPanel::Create"), NULL, 1);
     if (pBindings == NULL)
         throw lang::IllegalArgumentException(A2S("no SfxBindings given to NumberFormatPropertyPanel::Create"), NULL, 2);
-    
+
     return new NumberFormatPropertyPanel(
         pParent,
         rxFrame,
@@ -280,14 +280,14 @@ void NumberFormatPropertyPanel::HandleContextChange(
 
 //////////////////////////////////////////////////////////////////////////////
 
-void NumberFormatPropertyPanel::NotifyItemUpdate( 
-    sal_uInt16 nSID, 
-    SfxItemState eState, 
+void NumberFormatPropertyPanel::NotifyItemUpdate(
+    sal_uInt16 nSID,
+    SfxItemState eState,
     const SfxPoolItem* pState,
     const bool bIsEnabled)
 {
     (void)bIsEnabled;
-    
+
 	switch(nSID)
 	{
 	case SID_NUMBER_TYPE_FORMAT:
@@ -351,7 +351,7 @@ void NumberFormatPropertyPanel::NotifyItemUpdate(
 				}*/
 				sal_uInt16 aLen = aCode.Len();
 				String* sFormat = new String[4];
-				String  sTmpStr = String::CreateFromAscii(""); 
+				String  sTmpStr = String::CreateFromAscii("");
 				sal_uInt16 nCount = 0;
 				sal_uInt16 nStrCount = 0;
 				while( nCount < aLen )
@@ -394,9 +394,9 @@ void NumberFormatPropertyPanel::NotifyItemUpdate(
 
 //////////////////////////////////////////////////////////////////////////////
 
-SfxBindings* NumberFormatPropertyPanel::GetBindings() 
-{ 
-    return mpBindings; 
+SfxBindings* NumberFormatPropertyPanel::GetBindings()
+{
+    return mpBindings;
 }
 
 

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -56,7 +56,7 @@ namespace unographic {
 // ---------------------
 // - GraphicDescriptor -
 // ---------------------
-	
+
 GraphicDescriptor::GraphicDescriptor() :
 	::comphelper::PropertySetHelper( createPropertySetInfo(), SAL_NO_ACQUIRE ),
 	mpGraphic( NULL ),
@@ -77,7 +77,7 @@ GraphicDescriptor::~GraphicDescriptor()
 
 // ------------------------------------------------------------------------------
 
-void GraphicDescriptor::init( const ::Graphic& rGraphic ) 
+void GraphicDescriptor::init( const ::Graphic& rGraphic )
 	throw()
 {
 	mpGraphic = &rGraphic;
@@ -85,11 +85,11 @@ void GraphicDescriptor::init( const ::Graphic& rGraphic )
 
 // ------------------------------------------------------------------------------
 
-void GraphicDescriptor::init( const ::rtl::OUString& rURL ) 
+void GraphicDescriptor::init( const ::rtl::OUString& rURL )
 	throw()
 {
 	SvStream* pIStm = ::utl::UcbStreamHelper::CreateStream( rURL, STREAM_READ );
-	
+
 	if( pIStm )
 	{
 		implCreate( *pIStm, &rURL );
@@ -99,11 +99,11 @@ void GraphicDescriptor::init( const ::rtl::OUString& rURL )
 
 // ------------------------------------------------------------------------------
 
-void GraphicDescriptor::init( const uno::Reference< io::XInputStream >& rxIStm, const ::rtl::OUString& rURL ) 
+void GraphicDescriptor::init( const uno::Reference< io::XInputStream >& rxIStm, const ::rtl::OUString& rURL )
 	throw()
 {
 	SvStream* pIStm = ::utl::UcbStreamHelper::CreateStream( rxIStm );
-	
+
 	if( pIStm )
 	{
 		implCreate( *pIStm, &rURL );
@@ -132,12 +132,12 @@ void GraphicDescriptor::implCreate( SvStream& rIStm, const ::rtl::OUString* pURL
 	meType = GRAPHIC_NONE;
 	mnBitsPerPixel = 0;
 	mbTransparent = false;
-		
+
 	if( aDescriptor.Detect( true ) && aDescriptor.GetFileFormat() != GFF_NOT )
 	{
 		const char* 			pMimeType = NULL;
 		sal_uInt8 				cType = graphic::GraphicType::EMPTY;
-	
+
 		switch( aDescriptor.GetFileFormat() )
 		{
 			case( GFF_BMP ): pMimeType = MIMETYPE_BMP; cType = graphic::GraphicType::PIXEL; break;
@@ -155,7 +155,7 @@ void GraphicDescriptor::implCreate( SvStream& rIStm, const ::rtl::OUString* pURL
 			case( GFF_RAS ): pMimeType = MIMETYPE_RAS; cType = graphic::GraphicType::PIXEL; break;
 			case( GFF_TGA ): pMimeType = MIMETYPE_TGA; cType = graphic::GraphicType::PIXEL; break;
 			case( GFF_PSD ): pMimeType = MIMETYPE_PSD; cType = graphic::GraphicType::PIXEL; break;
-			
+
 			case( GFF_EPS ): pMimeType = MIMETYPE_EPS; cType = graphic::GraphicType::VECTOR; break;
 			case( GFF_DXF ): pMimeType = MIMETYPE_DXF; cType = graphic::GraphicType::VECTOR; break;
 			case( GFF_MET ): pMimeType = MIMETYPE_MET; cType = graphic::GraphicType::VECTOR; break;
@@ -166,11 +166,11 @@ void GraphicDescriptor::implCreate( SvStream& rIStm, const ::rtl::OUString* pURL
 			case( GFF_SGV ): pMimeType = MIMETYPE_SGV; cType = graphic::GraphicType::VECTOR; break;
 			case( GFF_EMF ): pMimeType = MIMETYPE_EMF; cType = graphic::GraphicType::VECTOR; break;
 			case( GFF_SVG ): pMimeType = MIMETYPE_SVG; cType = graphic::GraphicType::VECTOR; break;
-			
+
 			default:
 			break;
 		}
-		
+
 		if( graphic::GraphicType::EMPTY != cType )
 		{
 			meType = ( ( graphic::GraphicType::PIXEL == cType ) ? GRAPHIC_BITMAP : GRAPHIC_GDIMETAFILE );
@@ -186,7 +186,7 @@ void GraphicDescriptor::implCreate( SvStream& rIStm, const ::rtl::OUString* pURL
 
 // ------------------------------------------------------------------------------
 
-::rtl::OUString GraphicDescriptor::getImplementationName_Static() 
+::rtl::OUString GraphicDescriptor::getImplementationName_Static()
 	throw()
 {
 	return ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "com.sun.star.comp.graphic.GraphicDescriptor" ) );
@@ -194,19 +194,19 @@ void GraphicDescriptor::implCreate( SvStream& rIStm, const ::rtl::OUString* pURL
 
 // ------------------------------------------------------------------------------
 
-uno::Sequence< ::rtl::OUString > GraphicDescriptor::getSupportedServiceNames_Static() 
+uno::Sequence< ::rtl::OUString > GraphicDescriptor::getSupportedServiceNames_Static()
 	throw(	)
 {
 	uno::Sequence< ::rtl::OUString > aSeq( 1 );
-	
+
 	aSeq.getArray()[ 0 ] = ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "com.sun.star.graphic.GraphicDescriptor" ) );
-	
+
 	return aSeq;
 }
 
 // ------------------------------------------------------------------------------
 
-uno::Any SAL_CALL GraphicDescriptor::queryAggregation( const uno::Type & rType ) 
+uno::Any SAL_CALL GraphicDescriptor::queryAggregation( const uno::Type & rType )
 	throw( uno::RuntimeException )
 {
 	uno::Any aAny;
@@ -229,7 +229,7 @@ uno::Any SAL_CALL GraphicDescriptor::queryAggregation( const uno::Type & rType )
 
 // ------------------------------------------------------------------------------
 
-uno::Any SAL_CALL GraphicDescriptor::queryInterface( const uno::Type & rType ) 
+uno::Any SAL_CALL GraphicDescriptor::queryInterface( const uno::Type & rType )
 	throw( uno::RuntimeException )
 {
 	return OWeakAggObject::queryInterface( rType );
@@ -237,7 +237,7 @@ uno::Any SAL_CALL GraphicDescriptor::queryInterface( const uno::Type & rType )
 
 // ------------------------------------------------------------------------------
 
-void SAL_CALL GraphicDescriptor::acquire() 
+void SAL_CALL GraphicDescriptor::acquire()
 	throw()
 {
 	OWeakAggObject::acquire();
@@ -253,7 +253,7 @@ void SAL_CALL GraphicDescriptor::release()
 
 // ------------------------------------------------------------------------------
 
-::rtl::OUString SAL_CALL GraphicDescriptor::getImplementationName() 
+::rtl::OUString SAL_CALL GraphicDescriptor::getImplementationName()
 	throw( uno::RuntimeException )
 {
 	return getImplementationName_Static();
@@ -299,7 +299,7 @@ uno::Sequence< uno::Type > SAL_CALL GraphicDescriptor::getTypes()
 
 	return aTypes;
 }
-   
+
 // ------------------------------------------------------------------------------
 
 uno::Sequence< sal_Int8 > SAL_CALL GraphicDescriptor::getImplementationId()
@@ -307,13 +307,13 @@ uno::Sequence< sal_Int8 > SAL_CALL GraphicDescriptor::getImplementationId()
 {
 	vos::OGuard 						aGuard( Application::GetSolarMutex() );
 	static uno::Sequence< sal_Int8 >	aId;
-	
+
 	if( aId.getLength() == 0 )
 	{
 		aId.realloc( 16 );
 		rtl_createUuid( reinterpret_cast< sal_uInt8* >( aId.getArray() ), 0, sal_True );
 	}
-	
+
 	return aId;
 }
 
@@ -334,7 +334,7 @@ uno::Sequence< sal_Int8 > SAL_CALL GraphicDescriptor::getImplementationId()
 		{ MAP_CHAR_LEN( "Transparent" ), UNOGRAPHIC_TRANSPARENT, &::getCppuType( (const sal_Bool*)(0)), beans::PropertyAttribute::READONLY, 0 },
 		{ MAP_CHAR_LEN( "Alpha" ), UNOGRAPHIC_ALPHA, &::getCppuType( (const sal_Bool*)(0)), beans::PropertyAttribute::READONLY, 0 },
 		{ MAP_CHAR_LEN( "Animated" ), UNOGRAPHIC_ANIMATED, &::getCppuType( (const sal_Bool*)(0)), beans::PropertyAttribute::READONLY, 0 },
-		
+
 		{ 0,0,0,0,0,0 }
 	};
 
@@ -347,14 +347,14 @@ uno::Sequence< sal_Int8 > SAL_CALL GraphicDescriptor::getImplementationId()
 // ------------------------------------------------------------------------------
 
 void GraphicDescriptor::_setPropertyValues( const comphelper::PropertyMapEntry** /*ppEntries*/, const uno::Any* /*pValues*/ )
-	throw( beans::UnknownPropertyException, 
-		   beans::PropertyVetoException, 
+	throw( beans::UnknownPropertyException,
+		   beans::PropertyVetoException,
 		   lang::IllegalArgumentException,
 	   	   lang::WrappedTargetException )
 {
 	// we only have readonly attributes
 }
-	
+
 // ------------------------------------------------------------------------------
 
 void GraphicDescriptor::_getPropertyValues( const comphelper::PropertyMapEntry** ppEntries, uno::Any* pValues )
@@ -369,9 +369,9 @@ void GraphicDescriptor::_getPropertyValues( const comphelper::PropertyMapEntry**
 			case( UNOGRAPHIC_GRAPHICTYPE ):
 			{
 				const GraphicType eType( mpGraphic ? mpGraphic->GetType() : meType );
-			
-				*pValues <<= ( ( eType == GRAPHIC_BITMAP ? graphic::GraphicType::PIXEL : 
-								( eType == GRAPHIC_GDIMETAFILE ? graphic::GraphicType::VECTOR : 
+
+				*pValues <<= ( ( eType == GRAPHIC_BITMAP ? graphic::GraphicType::PIXEL :
+								( eType == GRAPHIC_GDIMETAFILE ? graphic::GraphicType::VECTOR :
 								graphic::GraphicType::EMPTY ) ) );
 			}
 			break;
@@ -379,13 +379,13 @@ void GraphicDescriptor::_getPropertyValues( const comphelper::PropertyMapEntry**
 			case( UNOGRAPHIC_MIMETYPE ):
 			{
 				::rtl::OUString aMimeType;
-				
+
 				if( mpGraphic )
 				{
 					if( mpGraphic->IsLink() )
 					{
 						const char* pMimeType;
-					
+
 						switch( const_cast< Graphic* >( mpGraphic )->GetLink().GetType() )
 						{
 							case( GFX_LINK_TYPE_NATIVE_GIF ): pMimeType = MIMETYPE_GIF; break;
@@ -401,30 +401,30 @@ void GraphicDescriptor::_getPropertyValues( const comphelper::PropertyMapEntry**
 
                             // added Svg mimetype support
                             case( GFX_LINK_TYPE_NATIVE_SVG ): pMimeType = MIMETYPE_SVG; break;
-							
+
 							default:
 								pMimeType = NULL;
 							break;
 						}
-						
+
 						if( pMimeType )
 							aMimeType = ::rtl::OUString::createFromAscii( pMimeType );
 					}
-				
+
 					if( !aMimeType.getLength() && ( mpGraphic->GetType() != GRAPHIC_NONE ) )
 						aMimeType = ::rtl::OUString::createFromAscii( MIMETYPE_VCLGRAPHIC );
 				}
 				else
 					aMimeType = maMimeType;
-				
+
  				*pValues <<= aMimeType;
 			}
 			break;
-			
+
 			case( UNOGRAPHIC_SIZEPIXEL ):
 			{
 				awt::Size aAWTSize( 0, 0 );
-			
+
 				if( mpGraphic )
 				{
 					if( mpGraphic->GetType() == GRAPHIC_BITMAP )
@@ -439,11 +439,11 @@ void GraphicDescriptor::_getPropertyValues( const comphelper::PropertyMapEntry**
 				*pValues <<= aAWTSize;
 			}
 			break;
-			
+
 			case( UNOGRAPHIC_SIZE100THMM ):
 			{
 				awt::Size aAWTSize( 0, 0 );
-				
+
 				if( mpGraphic )
 				{
 					if( mpGraphic->GetPrefMapMode().GetMapUnit() != MAP_PIXEL )
@@ -454,15 +454,15 @@ void GraphicDescriptor::_getPropertyValues( const comphelper::PropertyMapEntry**
 				}
 				else
 					aAWTSize = awt::Size( maSize100thMM.Width(), maSize100thMM.Height() );
-			
+
 				*pValues <<= aAWTSize;
 			}
 			break;
-			
+
 			case( UNOGRAPHIC_BITSPERPIXEL ):
 			{
 				sal_uInt16 nBitsPerPixel = 0;
-				
+
 				if( mpGraphic )
 				{
 					if( mpGraphic->GetType() == GRAPHIC_BITMAP )
@@ -470,11 +470,11 @@ void GraphicDescriptor::_getPropertyValues( const comphelper::PropertyMapEntry**
 				}
 				else
 					nBitsPerPixel = mnBitsPerPixel;
-			
+
 				*pValues <<= sal::static_int_cast< sal_Int8 >(nBitsPerPixel);
 			}
 			break;
-			
+
 			case( UNOGRAPHIC_TRANSPARENT ):
 			{
 				*pValues <<= static_cast< sal_Bool >( mpGraphic ? mpGraphic->IsTransparent() : mbTransparent );
@@ -486,14 +486,14 @@ void GraphicDescriptor::_getPropertyValues( const comphelper::PropertyMapEntry**
 				*pValues <<= static_cast< sal_Bool >( mpGraphic ? mpGraphic->IsAlpha() : mbAlpha );
 			}
 			break;
-						
+
 			case( UNOGRAPHIC_ANIMATED ):
 			{
 				*pValues <<= static_cast< sal_Bool >( mpGraphic ? mpGraphic->IsAnimated() : mbAnimated );
 			}
 			break;
 		}
-		
+
 		++ppEntries;
 		++pValues;
 	}

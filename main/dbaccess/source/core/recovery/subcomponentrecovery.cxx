@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -319,12 +319,12 @@ namespace dbaccess
     void SAL_CALL SettingsDocumentHandler::startDocument(  ) throw (SAXException, RuntimeException)
     {
     }
-    
+
     //--------------------------------------------------------------------
     void SAL_CALL SettingsDocumentHandler::endDocument(  ) throw (SAXException, RuntimeException)
     {
     }
-    
+
     //--------------------------------------------------------------------
     void SAL_CALL SettingsDocumentHandler::startElement( const ::rtl::OUString& i_Name, const Reference< XAttributeList >& i_Attribs ) throw (SAXException, RuntimeException)
     {
@@ -356,7 +356,7 @@ namespace dbaccess
 
         m_aStates.push( pNewState );
     }
-    
+
     //--------------------------------------------------------------------
     void SAL_CALL SettingsDocumentHandler::endElement( const ::rtl::OUString& i_Name ) throw (SAXException, RuntimeException)
     {
@@ -367,7 +367,7 @@ namespace dbaccess
         pCurrentState->endElement();
         m_aStates.pop();
     }
-    
+
     //--------------------------------------------------------------------
     void SAL_CALL SettingsDocumentHandler::characters( const ::rtl::OUString& i_Chars ) throw (SAXException, RuntimeException)
     {
@@ -376,14 +376,14 @@ namespace dbaccess
         ::rtl::Reference< SettingsImport > pCurrentState( m_aStates.top() );
         pCurrentState->characters( i_Chars );
     }
-    
+
     //--------------------------------------------------------------------
     void SAL_CALL SettingsDocumentHandler::ignorableWhitespace( const ::rtl::OUString& aWhitespaces ) throw (SAXException, RuntimeException)
     {
         // ignore them - that's why they're called "ignorable"
         (void)aWhitespaces;
     }
-    
+
     //--------------------------------------------------------------------
     void SAL_CALL SettingsDocumentHandler::processingInstruction( const ::rtl::OUString& i_Target, const ::rtl::OUString& i_Data ) throw (SAXException, RuntimeException)
     {
@@ -391,7 +391,7 @@ namespace dbaccess
         (void)i_Target;
         (void)i_Data;
     }
-    
+
     //--------------------------------------------------------------------
     void SAL_CALL SettingsDocumentHandler::setDocumentLocator( const Reference< XLocator >& i_Locator ) throw (SAXException, RuntimeException)
     {

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -29,7 +29,7 @@ using namespace ::com::sun::star;
 
 /**
  * get a range in a xText by creating
- * a cursor that iterates over the text. If the iterating cursor is 
+ * a cursor that iterates over the text. If the iterating cursor is
  * equal to the desired position, the range equivalent is returned.
  * Some special cases are tables that are inside of the text, because the
  * position has to be adjusted.
@@ -52,7 +52,7 @@ uno::Reference< text::XTextRange > SwVbaRangeHelper::getRangeByPosition( const u
             if( _position == nPos )
             {
                 xRange = xCursor->getStart();
-            }    
+            }
             else
             {
                 bCanGo = xCursor->goRight( 1, sal_False );
@@ -69,7 +69,7 @@ void SwVbaRangeHelper::insertString( uno::Reference< text::XTextRange >& rTextRa
     sal_Int32 nlastIndex = 0;
     sal_Int32 nIndex = 0;
     uno::Reference< text::XTextRange > xRange = rTextRange;
-    
+
     while(( nIndex = rStr.indexOf('\n', nlastIndex)) >= 0  )
     {
         xRange = xRange->getEnd();

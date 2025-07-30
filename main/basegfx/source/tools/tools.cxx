@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -38,7 +38,7 @@ namespace basegfx
         {
             inline double distance( const double&					nX,
                                     const double&					nY,
-                                    const ::basegfx::B2DVector& 	rNormal, 
+                                    const ::basegfx::B2DVector& 	rNormal,
                                     const double&					nC )
             {
                 return nX*rNormal.getX() + nY*rNormal.getY() - nC;
@@ -56,17 +56,17 @@ namespace basegfx
                 // rect corners to the line
                 const double nMaxDistance( ::std::max(
                                                0.0,
-                                               ::std::max( 
+                                               ::std::max(
                                                    distance(rFitTarget.getMinX(),
                                                             rFitTarget.getMinY(),
                                                             rMoveDirection,
                                                             nC),
-                                                   ::std::max( 
+                                                   ::std::max(
                                                        distance(rFitTarget.getMinX(),
                                                                 rFitTarget.getMaxY(),
                                                                 rMoveDirection,
                                                                 nC),
-                                                       ::std::max( 
+                                                       ::std::max(
                                                            distance(rFitTarget.getMaxX(),
                                                                     rFitTarget.getMinY(),
                                                                     rMoveDirection,
@@ -110,7 +110,7 @@ namespace basegfx
 
             const ::basegfx::B2DVector aNormalTop( aDirectionVertical );
             const ::basegfx::B2DVector aNormalBottom( -aDirectionVertical );
-            
+
             // now extend parallelogram, such that the bound rect
             // point are included
             moveLineOutsideRect( io_rLeftTop, io_rRightTop, aNormalTop, rFitTarget );

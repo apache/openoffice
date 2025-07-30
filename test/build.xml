@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <!--***********************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -8,16 +8,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  ***********************************************************-->
 
 
@@ -29,7 +29,7 @@
 	<property name="dist.name" value="aoo_test" />
 	<property name="junit.jar.repos" value="https://repo1.maven.org/maven2/junit/junit/4.13.2/junit-4.13.2.jar" />
 	<property name="hamcrest.jar.repos" value="https://repo1.maven.org/maven2/org/hamcrest/hamcrest/2.2/hamcrest-2.2.jar" />
-	
+
 	<path id="uno.classpath">
 		<fileset dir="${env.OUTDIR}/bin" erroronmissingdir="false">
 			<include name="juh.jar" />
@@ -44,7 +44,7 @@
 			<include name="**/jurt.jar" />
 		</fileset>
 	</path>
-				
+
 	<target name="check.junit">
 	    <copy todir="lib" >
 	        <fileset dir="${junit.home}" erroronmissingdir="false">
@@ -148,14 +148,14 @@
 	<target name="compile" depends="testcommon.compile,testgui.compile,testuno.compile" description="Compile source code">
 		<ant antfile="smoketestdoc/build.xml" inheritAll="false" useNativeBasedir="true"/>
 	</target>
-	
+
 	<target name="dist" depends="clean,compile">
 		<tstamp/>
         	<zip destfile="${dist.dir}/${dist.name}_${DSTAMP}.zip" update="false">
 			<zipfileset dir="." includes="lib/**, testcommon/**,testgui/**,testuno/**,build.xml,run,run.bat" filemode="751" prefix="aoo_test/"/>
 		</zip>
 	</target>
-	
+
 	<target name="test" depends="compile" description="start test">
 		<!-- Try the specified ${openoffice.home} first -->
 		<condition property="test.arg0" value="-Dopenoffice.home=${openoffice.home}">

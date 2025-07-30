@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -78,11 +78,11 @@ rtl::OUString WW8Style::get_xstzName()
     if (nCount > 0)
     {
         Sequence aSeq(mSequence, 0xe, nCount * 2);
-        
+
         rtl_uString * pNew = 0;
         rtl_uString_newFromStr
             (&pNew, reinterpret_cast<const sal_Unicode *>(&aSeq[0]));
-        
+
         return rtl::OUString(pNew);
 
     }
@@ -101,17 +101,17 @@ rtl::OUString WW8Style::get_xstzName1()
         if (nOffset < getCount())
         {
             sal_uInt32 nCount = getU16(nOffset);
-            
+
             if (nCount > 0)
             {
                 Sequence aSeq(mSequence, nOffset + 2, nCount * 2);
-                
+
                 rtl_uString * pNew = 0;
                 rtl_uString_newFromStr
                     (&pNew, reinterpret_cast<const sal_Unicode *>(&aSeq[0]));
-                
+
                 return rtl::OUString(pNew);
-                
+
             }
         }
     }
@@ -132,7 +132,7 @@ sal_uInt32 WW8Style::get_upxstart()
     }
     else
     {
-        WW8StyleSheet * pParentStyleSheet = 
+        WW8StyleSheet * pParentStyleSheet =
             dynamic_cast<WW8StyleSheet *>(mpParent);
 
         nResult = pParentStyleSheet->get_cbSTDBaseInFile() + 2;
@@ -179,15 +179,15 @@ writerfilter::Reference<Properties>::Pointer_t WW8Style::get_upx
         if (nCount > 0)
         {
             aOffset.inc(2);
-            
+
             bool bIsPap = get_cupx() == 2 && nIndex == 0;
-            WW8PropertySet::Pointer_t  
-                pProps(new WW8PropertySetImpl(*this, aOffset.get(), nCount, 
+            WW8PropertySet::Pointer_t
+                pProps(new WW8PropertySetImpl(*this, aOffset.get(), nCount,
                                               bIsPap));
-            
-            WW8PropertiesReference * pRef = 
+
+            WW8PropertiesReference * pRef =
                 new WW8PropertiesReference(pProps);
-            
+
             pResult = writerfilter::Reference<Properties>::Pointer_t(pRef);
         }
     }

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -57,7 +57,7 @@ using ::rtl::OUString;
 #define FILE_PATH_SEPERATOR "/"
 #else // windows
 #define FILE_PATH_SEPERATOR "\\"
-#endif 
+#endif
 
 #define EXCELVERSION "11.0"
 
@@ -89,7 +89,7 @@ SwVbaApplication::getActiveDocument() throw (uno::RuntimeException)
     return new SwVbaDocument( this, mxContext, getCurrentDocument() );
 }
 
-uno::Reference< word::XWindow > SAL_CALL 
+uno::Reference< word::XWindow > SAL_CALL
 SwVbaApplication::getActiveWindow() throw (uno::RuntimeException)
 {
 	// #FIXME sofar can't determine Parent
@@ -175,20 +175,20 @@ float SAL_CALL SwVbaApplication::CentimetersToPoints( float _Centimeters ) throw
     return VbaApplicationBase::CentimetersToPoints( _Centimeters );
 }
 
-uno::Reference< frame::XModel > 
+uno::Reference< frame::XModel >
 SwVbaApplication::getCurrentDocument() throw (css::uno::RuntimeException)
 {
     return getCurrentWordDoc( mxContext );
 }
 
-rtl::OUString& 
+rtl::OUString&
 SwVbaApplication::getServiceImplName()
 {
 	static rtl::OUString sImplName( RTL_CONSTASCII_USTRINGPARAM("SwVbaApplication") );
 	return sImplName;
 }
 
-uno::Sequence< rtl::OUString > 
+uno::Sequence< rtl::OUString >
 SwVbaApplication::getServiceNames()
 {
 	static uno::Sequence< rtl::OUString > aServiceNames;

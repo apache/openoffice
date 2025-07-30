@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -42,7 +42,7 @@
 extern "C"
 {
 	struct tm *localtime_r(const time_t *timep, struct tm *buffer);
-	struct passwd* getpwnam_r(char*, struct passwd*, char *, int); 
+	struct passwd* getpwnam_r(char*, struct passwd*, char *, int);
 	struct spwd* getspnam_r(char*, struct spwd*, char *, int);
 	struct hostent *gethostbyname_r(const char *name, struct hostent *result,
 									char *buffer, int buflen, int *h_errnop);
@@ -70,7 +70,7 @@ extern "C" void *workfunc1(void*)
 	}
 	return 0;
 }
-	
+
 extern "C" void *workfunc2(void*)
 {
 	char buffer[256];
@@ -99,7 +99,7 @@ int main(int argc, char *argv[])
 	struct tm		*ptm;
 	time_t			nepoch;
 	struct passwd 	*pwd, *pres1;
-#ifndef NETBSD	
+#ifndef NETBSD
 	struct spwd 	*spwd, *pres2;
 #endif
 	struct hostent	*phostent, *pres3;
@@ -107,7 +107,7 @@ int main(int argc, char *argv[])
 
 	pthread_t 		tid1,tid2;
 	int 			res1,res2;
-	
+
 	go = 1;
 
 	pthread_create(&tid1, NULL, workfunc1, &res1);
@@ -142,7 +142,7 @@ int main(int argc, char *argv[])
 
 #ifndef NETBSD
 	spwd = (struct spwd*)malloc(sizeof(struct spwd));
-	
+
 	pres2 = getspnam_r("hr", spwd, buffer, sizeof(buffer));
 
 	if (pres2) {
@@ -163,16 +163,16 @@ int main(int argc, char *argv[])
 	time(&nepoch);
 	localtime_r(&nepoch, ptm);
 
-	printf("Seconds: %d\n", ptm->tm_sec); 
-	printf("Minutes: %d\n", ptm->tm_min); 
-	printf("Hour: %d\n", ptm->tm_hour); 
-	printf("Day of Month: %d\n", ptm->tm_mday); 
-	printf("Month: %d\n", ptm->tm_mon); 
-	printf("Year: %d\n", ptm->tm_year); 
-	printf("Day of week: %d\n", ptm->tm_wday); 
-	printf("Day in the year: %d\n", ptm->tm_yday); 
+	printf("Seconds: %d\n", ptm->tm_sec);
+	printf("Minutes: %d\n", ptm->tm_min);
+	printf("Hour: %d\n", ptm->tm_hour);
+	printf("Day of Month: %d\n", ptm->tm_mday);
+	printf("Month: %d\n", ptm->tm_mon);
+	printf("Year: %d\n", ptm->tm_year);
+	printf("Day of week: %d\n", ptm->tm_wday);
+	printf("Day in the year: %d\n", ptm->tm_yday);
 	printf("Daylight saving time: %d\n", ptm->tm_isdst);
-#ifdef NETBSD	
+#ifdef NETBSD
 	printf("Timezone: %s\n", ptm->tm_zone);
 #else
 	printf("Timezone: %s\n", ptm->tm_name);
@@ -195,7 +195,7 @@ int main(int argc, char *argv[])
 				printf("Address: %s\n", inet_ntoa(**((in_addr**)p)));
 		}
 	}
-	
+
 
 	/* test boundary conditions */
 	char smallbuf[23]; /* buffer to small */
@@ -227,10 +227,10 @@ int main(int argc, char *argv[])
 	if (!pres3) {
 		herror("Expect HOST_NOT_FOUND");
 	}
-	else 
+	else
 	{
 		printf("failed to detect non existent host\n");
-	} 
+	}
 
 	free(phostent);
 	go = 0; /* atomic enough for our purposes */

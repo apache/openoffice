@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -257,34 +257,34 @@ void UnoWrapper::WindowDestroyed( Window* pWindow )
 	// ggf. existieren noch von ::com::sun::star::loader::Java erzeugte Childs, die sonst erst
 	// im Garbage-Collector zerstoert werden...
 	Window* pChild = pWindow->GetWindow( WINDOW_FIRSTCHILD );
-	while ( pChild ) 
+	while ( pChild )
 	{
 		Window* pNextChild = pChild->GetWindow( WINDOW_NEXT );
 
 		Window* pClient = pChild->GetWindow( WINDOW_CLIENT );
-        if ( pClient->GetWindowPeer() ) 
+        if ( pClient->GetWindowPeer() )
         {
             ::com::sun::star::uno::Reference< ::com::sun::star::lang::XComponent > xComp( pClient->GetComponentInterface( sal_False ), ::com::sun::star::uno::UNO_QUERY );
 			xComp->dispose();
         }
-		
+
 		pChild = pNextChild;
 	}
 
 	// ::com::sun::star::chaos::System-Windows suchen...
 	Window* pOverlap = pWindow->GetWindow( WINDOW_OVERLAP );
 	pOverlap = pOverlap->GetWindow( WINDOW_FIRSTOVERLAP );
-	while ( pOverlap ) 
+	while ( pOverlap )
 	{
 		Window* pNextOverlap = pOverlap->GetWindow( WINDOW_NEXT );
 		Window* pClient = pOverlap->GetWindow( WINDOW_CLIENT );
-		
+
 		if ( pClient->GetWindowPeer() && lcl_ImplIsParent( pWindow, pClient ) )
         {
             ::com::sun::star::uno::Reference< ::com::sun::star::lang::XComponent > xComp( pClient->GetComponentInterface( sal_False ), ::com::sun::star::uno::UNO_QUERY );
 			xComp->dispose();
         }
-		
+
 		pOverlap = pNextOverlap;
 	}
 

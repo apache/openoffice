@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -1531,8 +1531,8 @@ IMPL_LINK(SwTOXSelectTabPage, TOXTypeHdl, 	ListBox*, pBox)
 	//}
 	//else if( nType & TO_ILLUSTRATION )//<-removed end.
         // initialize button positions
-    
-    //#i111993# add styles button has two different positions 
+
+    //#i111993# add styles button has two different positions
     if( !aAddStylesPosDef.X() )
     {
         aAddStylesPosDef = ( aAddStylesPB.GetPosPixel() );
@@ -1541,7 +1541,7 @@ IMPL_LINK(SwTOXSelectTabPage, TOXTypeHdl, 	ListBox*, pBox)
         aPos.X() -= 2 * aAddStylesPB.GetSizePixel().Width();
         aAddStylesPosUser = aPos;
     }
-    
+
     if( nType & TO_ILLUSTRATION )       //add by zhaojianwei
 		aCaptionSequenceLB.SelectEntry( SwStyleNameMapper::GetUIName(
 									RES_POOLCOLL_LABEL_ABB, aEmptyStr ));
@@ -2108,7 +2108,7 @@ SwTOXEntryTabPage::SwTOXEntryTabPage(Window* pParent, const SfxItemSet& rAttrSet
     aTabPosMF(this,             SW_RES(MF_TABPOS                )),
     aAutoRightCB(this,          SW_RES(CB_AUTORIGHT         )),
     aFormatFL(this,             SW_RES(FL_FORMAT             )),
-    
+
 
     aRelToStyleCB(this,         SW_RES(CB_RELTOSTYLE         )),
     aMainEntryStyleFT(this,     SW_RES(FT_MAIN_ENTRY_STYLE)),
@@ -2667,7 +2667,7 @@ long SwTOXEntryTabPage::Notify( NotifyEvent& rNEvt )
 	{
 		const KeyEvent& rKEvt = *rNEvt.GetKeyEvent();
 		KeyCode aCode = rKEvt.GetKeyCode();
-		if ( (aCode.GetCode() == KEY_F4) && aCode.IsShift() && !aCode.IsMod1() && !aCode.IsMod2() )		
+		if ( (aCode.GetCode() == KEY_F4) && aCode.IsShift() && !aCode.IsMod1() && !aCode.IsMod2() )
 		{
 			if ( aTokenWIN.GetActiveControl() )
 			{
@@ -4059,7 +4059,7 @@ sal_uInt32 SwTokenWindow::GetControlIndex(FormTokenType eType, const Control* /*
 		}
 		pControl = ((SwTokenWindow*)this)->aControlList.Next();
 	}
-	
+
 	return nIndex;
 }
 /* -----------------25.03.99 15:17-------------------
@@ -4089,11 +4089,11 @@ SwTOXStylesTabPage::SwTOXStylesTabPage(Window* pParent, const SfxItemSet& rAttrS
 	aParaLayLB.SetSelectHdl	   (LINK(	this, SwTOXStylesTabPage, EnableSelectHdl));
 	aLevelLB.SetSelectHdl  	   (LINK(	this, SwTOXStylesTabPage, EnableSelectHdl));
 	aParaLayLB.SetDoubleClickHdl(LINK(	this, SwTOXStylesTabPage, DoubleClickHdl));
-	
+
 	aStdBT.SetAccessibleRelationMemberOf(&aFormatFL);
 	aAssignBT.SetAccessibleRelationMemberOf(&aFormatFL);
 	aEditStyleBT.SetAccessibleRelationMemberOf(&aFormatFL);
-	
+
 }
 /* -----------------25.03.99 15:17-------------------
  *

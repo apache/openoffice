@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -175,7 +175,7 @@ ORowSetCache::ORowSetCache(const Reference< XResultSet >& _xRs,
 			OSL_ENSURE(xTabSup.is(),"ORowSet::execute composer isn't a tablesupplier!");
 			Reference<XNameAccess> xTables = xTabSup->getTables();
             Sequence< ::rtl::OUString> aTableNames = xTables->getElementNames();
-            if ( aTableNames.getLength() > 1 && !_rUpdateTableName.getLength() && bNeedKeySet ) 
+            if ( aTableNames.getLength() > 1 && !_rUpdateTableName.getLength() && bNeedKeySet )
             {// here we have a join or union and nobody told us which table to update, so we update them all
                 m_nPrivileges = Privilege::SELECT|Privilege::DELETE|Privilege::INSERT|Privilege::UPDATE;
                 OptimisticSet* pCursor = new OptimisticSet(m_aContext,xConnection,_xAnalyzer,_aParameterValueForCache,i_nMaxRows,m_nRowCount);
@@ -275,7 +275,7 @@ ORowSetCache::ORowSetCache(const Reference< XResultSet >& _xRs,
 		if(!bAllKeysFound )
 		{
 			if ( bBookmarkable )
-			{ 
+			{
 				// here I know that we have a read only bookmarable cursor
 				_xRs->beforeFirst();
 				m_nPrivileges = Privilege::SELECT;
@@ -622,7 +622,7 @@ void ORowSetCache::updateCharacterStream( sal_Int32 columnIndex, const Reference
 // -------------------------------------------------------------------------
 void ORowSetCache::updateObject( sal_Int32 columnIndex, const Any& x
                                 ,ORowSetValueVector::Vector& io_aRow
-                                ,::std::vector<sal_Int32>& o_ChangedColumns 
+                                ,::std::vector<sal_Int32>& o_ChangedColumns
                                 )
 {
 	checkUpdateConditions(columnIndex);
@@ -761,7 +761,7 @@ sal_Bool ORowSetCache::fillMatrix(sal_Int32& _nNewStartPos,sal_Int32 _nNewEndPos
     }
     bCheck = m_pCacheSet->absolute(i); // -1 no need to
 
-	
+
 	for(;i<_nNewEndPos;++i,++aIter)
 	{
 		if(bCheck)
@@ -1334,7 +1334,7 @@ void ORowSetCache::updateRow( ORowSetMatrix::iterator& _rUpdateRow,::std::vector
 	m_pCacheSet->updateRow(*_rUpdateRow,*m_aMatrixIter,m_aUpdateTable);
 	// refetch the whole row
 	(*m_aMatrixIter) = NULL;
-    
+
 	if ( moveToBookmark(aBookmark) )
     {
         // update the cached values
@@ -1710,7 +1710,7 @@ void ORowSetCache::impl_updateRowFromCache_throw(ORowSetValueVector::Vector& io_
                 break;
             }
         }
-        
+
         if ( aIter == m_pMatrix->end() )
         {
             m_pCacheSet->fillMissingValues(io_aRow);

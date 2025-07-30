@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -49,7 +49,7 @@ CharacterClassificationImpl::~CharacterClassificationImpl() {
 
 
 OUString SAL_CALL
-CharacterClassificationImpl::toUpper( const OUString& Text, sal_Int32 nPos, 
+CharacterClassificationImpl::toUpper( const OUString& Text, sal_Int32 nPos,
         sal_Int32 nCount, const Locale& rLocale ) throw(RuntimeException)
 {
         return getLocaleSpecificCharacterClassification(rLocale)->toUpper(Text, nPos, nCount, rLocale);
@@ -63,14 +63,14 @@ CharacterClassificationImpl::toLower( const OUString& Text, sal_Int32 nPos,
 }
 
 OUString SAL_CALL
-CharacterClassificationImpl::toTitle( const OUString& Text, sal_Int32 nPos, 
+CharacterClassificationImpl::toTitle( const OUString& Text, sal_Int32 nPos,
         sal_Int32 nCount, const Locale& rLocale ) throw(RuntimeException)
 {
         return getLocaleSpecificCharacterClassification(rLocale)->toTitle(Text, nPos, nCount, rLocale);
 }
 
 sal_Int16 SAL_CALL
-CharacterClassificationImpl::getType( const OUString& Text, sal_Int32 nPos ) 
+CharacterClassificationImpl::getType( const OUString& Text, sal_Int32 nPos )
         throw(RuntimeException)
 {
         if (xUCI.is())
@@ -104,7 +104,7 @@ CharacterClassificationImpl::getCharacterType( const OUString& Text, sal_Int32 n
 }
 
 sal_Int32 SAL_CALL
-CharacterClassificationImpl::getStringType( const OUString& Text, sal_Int32 nPos, 
+CharacterClassificationImpl::getStringType( const OUString& Text, sal_Int32 nPos,
         sal_Int32 nCount, const Locale& rLocale ) throw(RuntimeException)
 {
         return getLocaleSpecificCharacterClassification(rLocale)->getStringType(Text, nPos, nCount, rLocale);
@@ -174,8 +174,8 @@ CharacterClassificationImpl::getLocaleSpecificCharacterClassification(const Loca
 
             static sal_Unicode under = (sal_Unicode)'_';
             static OUString tw(OUString::createFromAscii("TW"));
-            sal_Int32 l = rLocale.Language.getLength(); 
-            sal_Int32 c = rLocale.Country.getLength(); 
+            sal_Int32 l = rLocale.Language.getLength();
+            sal_Int32 c = rLocale.Country.getLength();
             sal_Int32 v = rLocale.Variant.getLength();
             OUStringBuffer aBuf(l+c+v+3);
 
@@ -184,16 +184,16 @@ CharacterClassificationImpl::getLocaleSpecificCharacterClassification(const Loca
                     createLocaleSpecificCharacterClassification(aBuf.append(rLocale.Language).append(under).append(
                                     rLocale.Country).append(under).append(rLocale.Variant).makeStringAndClear(), rLocale)) ||
                     // load service with name <base>_<lang>_<country>
-                (l > 0 && c > 0 && 
+                (l > 0 && c > 0 &&
                     createLocaleSpecificCharacterClassification(aBuf.append(rLocale.Language).append(under).append(
                                     rLocale.Country).makeStringAndClear(), rLocale)) ||
-                (l > 0 && c > 0 && rLocale.Language.compareToAscii("zh") == 0 && 
+                (l > 0 && c > 0 && rLocale.Language.compareToAscii("zh") == 0 &&
                                     (rLocale.Country.compareToAscii("HK") == 0 ||
                                     rLocale.Country.compareToAscii("MO") == 0) &&
                     // if the country code is HK or MO, one more step to try TW.
                     createLocaleSpecificCharacterClassification(aBuf.append(rLocale.Language).append(under).append(
                                     tw).makeStringAndClear(), rLocale)) ||
-                (l > 0 && 
+                (l > 0 &&
                     // load service with name <base>_<lang>
                     createLocaleSpecificCharacterClassification(rLocale.Language, rLocale))) {
                 return cachedItem->xCI;

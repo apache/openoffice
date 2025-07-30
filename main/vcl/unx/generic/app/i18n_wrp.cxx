@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -24,7 +24,7 @@
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_vcl.hxx"
 
-struct XIMArg 
+struct XIMArg
 {
     char *name;
     char *value;
@@ -165,8 +165,8 @@ XvaGetArgs( va_list pInArgs, XIMArg *pOutArgs )
 #ifdef __cplusplus
 extern "C"
 #endif
-XIM 
-XvaOpenIM(Display *display, XrmDatabase rdb, 
+XIM
+XvaOpenIM(Display *display, XrmDatabase rdb,
 		char *res_name, char *res_class, ...)
 {
   	XIM xim = (XIM)0;
@@ -176,7 +176,7 @@ XvaOpenIM(Display *display, XrmDatabase rdb,
   	/*
    	 * so count the stuff dangling here
      */
-  
+
 #if defined(SOLARIS) && !defined(__GNUC__)
   	va_start(variable);
 #else
@@ -185,8 +185,8 @@ XvaOpenIM(Display *display, XrmDatabase rdb,
   	total_count = XvaCountArgs(variable);
   	va_end(variable);
 
-  	if (total_count > 0) 
-	{ 
+  	if (total_count > 0)
+	{
 		/* call a new open IM method */
 
     	XIMArg* args = (XIMArg*)alloca( (total_count + 1) * sizeof(XIMArg) );
@@ -202,23 +202,23 @@ XvaOpenIM(Display *display, XrmDatabase rdb,
 		XvaGetArgs( variable, args );
     	va_end(variable);
 
-    	if (!g_dlmodule) 
+    	if (!g_dlmodule)
 		{
             g_dlmodule = dlopen(XIIIMP_LIB, RTLD_LAZY);
             if(!g_dlmodule)
             {
                 g_dlmodule = dlopen(XIIIMP_PATH, RTLD_LAZY);
-                if (!g_dlmodule) 
+                if (!g_dlmodule)
                     goto legacy_XIM;
             }
       		g_open_im = (OpenFunction)(long)dlsym(g_dlmodule, "__XOpenIM");
-      		if (!g_open_im) 
+      		if (!g_open_im)
 				goto legacy_XIM;
 
       		xim = (*g_open_im)(display, (XrmDatabase)rdb,
 				  (char*)res_name, (char *)res_class, (XIMArg*)args);
-    	} 
-		else 
+    	}
+		else
 		{
       		goto legacy_XIM;
     	}
@@ -226,10 +226,10 @@ XvaOpenIM(Display *display, XrmDatabase rdb,
 
 // in #if to prevent warning "warning: label 'legacy_XIM' defined but not used"
  	legacy_XIM:
-    
+
 	if (!xim)
     	xim = XOpenIM(display, rdb, res_name, res_class);
-  
+
 	return xim;
 }
 
@@ -241,8 +241,8 @@ Status XvaCloseIM(XIM)
 {
   	Status s = False;
 
-	if (!g_dlmodule) 
-	{		
+	if (!g_dlmodule)
+	{
 		/* assuming one XvaOpenIM call */
     	dlclose(g_dlmodule);
    	 	g_dlmodule = (void*)0;

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -721,9 +721,9 @@ sal_uLong RefreshDPObject( ScDPObject *pDPObj, ScDocument *pDoc, ScDocShell *pDo
 				ScDBDocFunc aFunc( * pDocSh );
 				if ( !aFunc.DataPilotUpdate( (*pDPCollection)[i], (*pDPCollection)[i], bRecord, bApi ) )
 					break;
-			}       
+			}
 		}
-		
+
 		return nErrId;
 	}
 
@@ -1522,7 +1522,7 @@ void ScDBFunc::DataPilotInput( const ScAddress& rPos, const String& rString )
                 if (rString.Len())
                 {
                     if (rString.EqualsIgnoreCaseAscii(aDimName))
-                    {    
+                    {
                         pDim->RemoveLayoutName();
                         bChange = true;
                     }
@@ -1768,7 +1768,7 @@ bool ScDBFunc::DataPilotSort( const ScAddress& rPos, bool bAscending, sal_uInt16
     // We need to run this to get all members later.
     if ( pUserListId )
         pDPObj->BuildAllDimensionMembers();
-    
+
     sal_uInt16 nOrientation;
     long nDimIndex = pDPObj->GetHeaderDim(rPos, nOrientation);
     if (nDimIndex < 0)
@@ -1817,13 +1817,13 @@ bool ScDBFunc::DataPilotSort( const ScAddress& rPos, bool bAscending, sal_uInt16
             ScUserList* pUserList = ScGlobal::GetUserList();
             if (!pUserList)
                 return false;
-    
+
             {
                 sal_uInt16 n = pUserList->GetCount();
                 if (!n || *pUserListId >= n)
                     return false;
             }
-        
+
             ScUserListData* pData = static_cast<ScUserListData*>((*pUserList)[*pUserListId]);
             if (pData)
             {
@@ -1844,7 +1844,7 @@ bool ScDBFunc::DataPilotSort( const ScAddress& rPos, bool bAscending, sal_uInt16
 
         vector<OUString> aRankedNames(nMemberCount);
         sal_uInt16 nCurStrId = 0;
-        for (list<OUString>::const_iterator itr = aMembers.begin(), itrEnd = aMembers.end(); 
+        for (list<OUString>::const_iterator itr = aMembers.begin(), itrEnd = aMembers.end();
               itr != itrEnd; ++itr)
         {
             OUString aName = *itr;
@@ -2321,7 +2321,7 @@ void ScDBFunc::RepeatDB( sal_Bool bRecord )
 					aAdvSource.aEnd.Col(), aAdvSource.aEnd.Row(),
 					aAdvSource.aStart.Tab(), aQueryParam );
 				Query( aQueryParam, &aAdvSource, sal_False );
-			}				
+			}
 			else
 				Query( aQueryParam, NULL, sal_False );
 

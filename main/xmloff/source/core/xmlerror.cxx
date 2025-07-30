@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -55,7 +55,7 @@ class ErrorRecord
 {
 public:
 
-    ErrorRecord( sal_Int32 nId, 
+    ErrorRecord( sal_Int32 nId,
                  const Sequence<OUString>& rParams,
                  const OUString& rExceptionMessage,
                  sal_Int32 nRow,
@@ -75,7 +75,7 @@ public:
     OUString sSystemId; /// public identifier
 
     /// message Parameters
-    Sequence<OUString> aParams;  
+    Sequence<OUString> aParams;
 };
 
 
@@ -91,7 +91,7 @@ ErrorRecord::ErrorRecord( sal_Int32 nID, const Sequence<OUString>& rParams,
         aParams(rParams)
 {
 }
-    
+
 ErrorRecord::~ErrorRecord()
 {
 }
@@ -107,7 +107,7 @@ XMLErrors::~XMLErrors()
 {
 }
 
-void XMLErrors::AddRecord( 
+void XMLErrors::AddRecord(
     sal_Int32 nId,
     const Sequence<OUString> & rParams,
     const OUString& rExceptionMessage,
@@ -116,7 +116,7 @@ void XMLErrors::AddRecord(
     const OUString& rPublicId,
     const OUString& rSystemId )
 {
-    aErrors.push_back( ErrorRecord( nId, rParams, rExceptionMessage, 
+    aErrors.push_back( ErrorRecord( nId, rParams, rExceptionMessage,
                                     nRow, nColumn, rPublicId, rSystemId ) );
 
 #ifdef DBG_UTIL
@@ -188,13 +188,13 @@ void XMLErrors::AddRecord(
     }
 
     // convert to byte string and signal the error
-    ByteString aError( String( sMessage.makeStringAndClear() ), 
+    ByteString aError( String( sMessage.makeStringAndClear() ),
                        RTL_TEXTENCODING_ASCII_US );
     DBG_ERROR( aError.GetBuffer() );
-#endif    
+#endif
 }
 
-void XMLErrors::AddRecord( 
+void XMLErrors::AddRecord(
     sal_Int32 nId,
     const Sequence<OUString> & rParams,
     const OUString& rExceptionMessage,
@@ -202,19 +202,19 @@ void XMLErrors::AddRecord(
 {
     if ( rLocator.is() )
     {
-        AddRecord( nId, rParams, rExceptionMessage, 
+        AddRecord( nId, rParams, rExceptionMessage,
                    rLocator->getLineNumber(), rLocator->getColumnNumber(),
                    rLocator->getPublicId(), rLocator->getSystemId() );
     }
     else
     {
         OUString sEmpty;
-        AddRecord( nId, rParams, rExceptionMessage, 
+        AddRecord( nId, rParams, rExceptionMessage,
                    -1, -1, sEmpty, sEmpty );
     }
 }
 
-void XMLErrors::AddRecord( 
+void XMLErrors::AddRecord(
     sal_Int32 nId,
     const Sequence<OUString> & rParams,
     const OUString& rExceptionMessage)
@@ -223,14 +223,14 @@ void XMLErrors::AddRecord(
     AddRecord( nId, rParams, rExceptionMessage, -1, -1, sEmpty, sEmpty );
 }
 
-void XMLErrors::AddRecord( 
+void XMLErrors::AddRecord(
     sal_Int32 nId,
     const Sequence<OUString> & rParams)
 {
     OUString sEmpty;
     AddRecord( nId, rParams, sEmpty, -1, -1, sEmpty, sEmpty );
 }
-    
+
 void XMLErrors::ThrowErrorAsSAXException(sal_Int32 nIdMask)
     throw( SAXParseException )
 {
@@ -245,7 +245,7 @@ void XMLErrors::ThrowErrorAsSAXException(sal_Int32 nIdMask)
             ErrorRecord& rErr = aErrors[0];
             Any aAny;
             aAny <<= rErr.aParams;
-            throw SAXParseException( 
+            throw SAXParseException(
                 rErr.sExceptionMessage, NULL, aAny,
                 rErr.sPublicId, rErr.sSystemId, rErr.nRow, rErr.nColumn );
         }

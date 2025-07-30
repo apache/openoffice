@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -62,7 +62,7 @@ namespace
 		DBG_ASSERT( sDataStyleName.getLength(), "xmloff::lcl_exportDataStyle: invalid property value for the data style name!" );
 
 		// add the attribute
-		_rExport.AddAttribute( 
+		_rExport.AddAttribute(
 			_rxMapper->GetEntryNameSpace( _rProperty.mnIndex ),
 			_rxMapper->GetEntryXMLName( _rProperty.mnIndex ),
 			sDataStyleName );
@@ -73,7 +73,7 @@ void SvXMLAutoStylePoolP::exportStyleAttributes(
 		SvXMLAttributeList&,
 		sal_Int32 nFamily,
 		const vector< XMLPropertyState >& rProperties,
-		const SvXMLExportPropertyMapper& rPropExp, 
+		const SvXMLExportPropertyMapper& rPropExp,
         const SvXMLUnitConverter&,
 		const SvXMLNamespaceMap&
         ) const
@@ -149,7 +149,7 @@ void SvXMLAutoStylePoolP::exportStyleAttributes(
 
 						bFoundNumberingRulesName = sal_True;
 						break;
-					}	
+					}
 				}
 			}
 		}
@@ -170,8 +170,8 @@ void SvXMLAutoStylePoolP::exportStyleAttributes(
 					{
 						OUString sValue;
 						const XMLPropertyHandler* pPropHdl = aPropMapper->GetPropertyHandler( nIndex );
-						if( pPropHdl && 
-                            pPropHdl->exportXML( sValue, pProp->maValue, 
+						if( pPropHdl &&
+                            pPropHdl->exportXML( sValue, pProp->maValue,
                                                  GetExport().GetMM100UnitConverter() ) &&
 							( ! IsXMLToken( sValue, XML_ALL ) ) )
                         {
@@ -252,12 +252,12 @@ void SvXMLAutoStylePoolP::exportStyleContent(
 
         // export header style element
         {
-            SvXMLElementExport aElem( 
+            SvXMLElementExport aElem(
                 GetExport(), XML_NAMESPACE_STYLE, XML_HEADER_STYLE,
                 sal_True, sal_True );
 
-            rPropExp.exportXML( 
-                GetExport(), rProperties, 
+            rPropExp.exportXML(
+                GetExport(), rProperties,
                 nHeaderStartIndex, nHeaderEndIndex, XML_EXPORT_FLAG_IGN_WS);
         }
 
@@ -268,7 +268,7 @@ void SvXMLAutoStylePoolP::exportStyleContent(
                 sal_True, sal_True );
 
             rPropExp.exportXML(
-                GetExport(), rProperties, 
+                GetExport(), rProperties,
                 nFooterStartIndex, nFooterEndIndex, XML_EXPORT_FLAG_IGN_WS);
         }
 	}
@@ -323,14 +323,14 @@ void SvXMLAutoStylePoolP::RegisterName( sal_Int32 nFamily,
 	pImpl->RegisterName( nFamily, rName );
 }
 
-void SvXMLAutoStylePoolP::GetRegisteredNames( 
+void SvXMLAutoStylePoolP::GetRegisteredNames(
     uno::Sequence<sal_Int32>& rFamilies,
     uno::Sequence<OUString>& rNames )
 {
     pImpl->GetRegisteredNames( rFamilies, rNames );
 }
 
-void SvXMLAutoStylePoolP::RegisterNames( 
+void SvXMLAutoStylePoolP::RegisterNames(
     uno::Sequence<sal_Int32>& aFamilies,
     uno::Sequence<OUString>& aNames )
 {
@@ -425,13 +425,13 @@ OUString SvXMLAutoStylePoolP::FindAndRemoveCached( sal_Int32 nFamily ) const
 }
 
 
-void SvXMLAutoStylePoolP::exportXML( sal_Int32 nFamily, 
+void SvXMLAutoStylePoolP::exportXML( sal_Int32 nFamily,
     const uno::Reference< ::com::sun::star::xml::sax::XDocumentHandler > &,
 	const SvXMLUnitConverter&,
 	const SvXMLNamespaceMap&
     ) const
 {
-	pImpl->exportXML( nFamily, 
+	pImpl->exportXML( nFamily,
                       GetExport().GetDocHandler(),
                       GetExport().GetMM100UnitConverter(),
 					  GetExport().GetNamespaceMap(),

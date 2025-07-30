@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,19 +7,19 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
- 
+
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_file.hxx"
@@ -116,7 +116,7 @@ XInteractionAbortImpl::queryInterface( const Type& rType )
 //  XTypeProvider
 //////////////////////////////////////////////////////////////////////////////////////////
 
-XTYPEPROVIDER_IMPL_2( XInteractionAbortImpl, 
+XTYPEPROVIDER_IMPL_2( XInteractionAbortImpl,
 					  XTypeProvider,
 					  XInteractionAbort )
 
@@ -140,7 +140,7 @@ XInteractionRequestImpl::XInteractionRequestImpl(
 	m_aSeq[1] = Reference<XInteractionContinuation>(p2);
 }
 
-	
+
 void SAL_CALL
 XInteractionRequestImpl::acquire( void )
 	throw()
@@ -163,8 +163,8 @@ Any SAL_CALL
 XInteractionRequestImpl::queryInterface( const Type& rType )
 	throw( RuntimeException )
 {
-	Any aRet = 
-        cppu::queryInterface( 
+	Any aRet =
+        cppu::queryInterface(
             rType,
             SAL_STATIC_CAST( lang::XTypeProvider*, this ),
             SAL_STATIC_CAST( XInteractionRequest*,this) );
@@ -176,10 +176,10 @@ XInteractionRequestImpl::queryInterface( const Type& rType )
 //  XTypeProvider
 //////////////////////////////////////////////////////////////////////////////////////////
 
-XTYPEPROVIDER_IMPL_2( XInteractionRequestImpl, 
+XTYPEPROVIDER_IMPL_2( XInteractionRequestImpl,
 					  XTypeProvider,
 					  XInteractionRequest )
-    
+
 
 Any SAL_CALL
 XInteractionRequestImpl::getRequest()
@@ -214,7 +214,7 @@ XInteractionRequestImpl::getRequest()
 			RTL_CONSTASCII_USTRINGPARAM(
 				"the name contained invalid characters"));
 		aAny <<= excep;
-		
+
 	}
     return aAny;
 }

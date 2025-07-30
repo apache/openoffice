@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -202,7 +202,7 @@ void ScViewFunc::DoRefConversion( sal_Bool bRecord )
         aMarkRange = ScRange( GetViewData()->GetCurX(),
             GetViewData()->GetCurY(), GetViewData()->GetTabNo() );
     }
-    ScEditableTester aTester( pDoc, aMarkRange.aStart.Col(), aMarkRange.aStart.Row(), 
+    ScEditableTester aTester( pDoc, aMarkRange.aStart.Col(), aMarkRange.aStart.Row(),
                             aMarkRange.aEnd.Col(), aMarkRange.aEnd.Row(),rMark );
     if (!aTester.IsEditable())
     {
@@ -221,7 +221,7 @@ void ScViewFunc::DoRefConversion( sal_Bool bRecord )
         pUndoDoc->InitUndo( pDoc, nTab, nTab );
 
         if ( rMark.GetSelectCount() > 1 )
-        {           
+        {
             for (SCTAB i=0; i<nTabCount; i++)
                 if ( rMark.GetTableSelect(i) && i != nTab )
                     pUndoDoc->AddUndoTab( i, i );
@@ -259,8 +259,8 @@ void ScViewFunc::DoRefConversion( sal_Bool bRecord )
                         if (aFinder.GetFound())
                         {
                             ScAddress aPos = ((ScFormulaCell*)pCell)->aPos;
-                            String aNew = aFinder.GetText(); 
-                            ScCompiler aComp( pDoc, aPos);           
+                            String aNew = aFinder.GetText();
+                            ScCompiler aComp( pDoc, aPos);
                             aComp.SetGrammar(pDoc->GetGrammar());
                             ScTokenArray* pArr = aComp.CompileString( aNew );
                             ScFormulaCell* pNewCell = new ScFormulaCell( pDoc, aPos,
@@ -281,7 +281,7 @@ void ScViewFunc::DoRefConversion( sal_Bool bRecord )
         pRedoDoc->InitUndo( pDoc, nTab, nTab );
 
         if ( rMark.GetSelectCount() > 1 )
-        {           
+        {
             for (SCTAB i=0; i<nTabCount; i++)
                 if ( rMark.GetTableSelect(i) && i != nTab )
                     pRedoDoc->AddUndoTab( i, i );
@@ -613,7 +613,7 @@ void ScViewFunc::DoSheetConversion( const ScConversionParam& rConvParam, sal_Boo
 //UNUSED2008-05      String aErr = aLangTab.GetString((LanguageType) (sal_uLong) nLang);
 //UNUSED2008-05      ErrorHandler::HandleError(*new StringErrorInfo(
 //UNUSED2008-05                                  ERRCODE_SVX_LINGU_LANGUAGENOTEXISTS, aErr) );
-//UNUSED2008-05  
+//UNUSED2008-05
 //UNUSED2008-05      return 0;
 //UNUSED2008-05  }
 //UNUSED2008-05  IMPL_LINK_INLINE_END( ScViewFunc, SpellError, void *, nLang )

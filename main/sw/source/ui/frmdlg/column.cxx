@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -540,7 +540,7 @@ SwColumnPage::SwColumnPage(Window *pParent, const SfxItemSet &rSet)
 					aItemText =  SW_RESSTR( STR_COLUMN_VALUESET_ITEM4 );
 					break;
 				default:
-					break;	
+					break;
 			}
 			aDefaultVS.InsertItem( i + 1,  aItemText, i );
 		}
@@ -964,13 +964,13 @@ void SwColumnPage::SetLabels( sal_uInt16 nVis )
 	sColumnWidth = SW_RESSTR( STR_ACCESS_COLUMN_WIDTH ) ;
 	sColumnWidth.SearchAndReplaceAscii("%1", tmp3);
 	aEd3.SetAccessibleName(sColumnWidth);
-	
+
 	String sDist = SW_RESSTR( STR_ACCESS_PAGESETUP_SPACING ) ;
 	String sDist1 = sDist;
 	sDist1.SearchAndReplaceAscii("%1", tmp1);
 	sDist1.SearchAndReplaceAscii("%2", tmp2);
 	aDistEd1.SetAccessibleName(sDist1);
-	
+
 	String sDist2 = sDist;
 	sDist2.SearchAndReplaceAscii("%1", tmp2);
 	sDist2.SearchAndReplaceAscii("%2", tmp3);

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -412,8 +412,8 @@ public:
 	// 1) virtual void visitElem( long& nCol, long& nRow, const double& elem )
 	// 2) virtual void visitElem( long& nCol, long& nRow, const rtl::OUString& elem )
 	// 3) virtual void visitElem( long& nCol, long& nRow, const uno::Any& elem )
-	// the other types methods are here just to reflect the orig code and for 
-	// completeness. 
+	// the other types methods are here just to reflect the orig code and for
+	// completeness.
 
 	void visitElem( long nCol, long nRow, const sal_Int16& elem )
 	{
@@ -465,23 +465,23 @@ public:
 	}
 	bool hasArgError() { return mbArgError; }
 };
-	
+
 template< class seq >
-class SequencesContainer 
+class SequencesContainer
 {
 	uno::Sequence< uno::Sequence< seq > > maSeq;
-	
+
 	long& mrDocRow;
 	bool mbOverflow;
 	bool mbArgError;
 	ScDocument* mpDoc;
 	ScTokenArray& mrTokenArr;
-		
+
 public:
 	SequencesContainer( const uno::Any& rArg, ScTokenArray& rTokenArr, long& rDocRow, ScDocument* pDoc ) :
         mrDocRow( rDocRow ), mbOverflow(false), mbArgError(false), mpDoc( pDoc ), mrTokenArr( rTokenArr )
-	{ 
-		rArg >>= maSeq; 
+	{
+		rArg >>= maSeq;
 	}
 
 	void process()
@@ -490,7 +490,7 @@ public:
 		long nStartRow = mrDocRow;
 		long nRowCount = maSeq.getLength();
 		long nMaxColCount = 0;
-		const uno::Sequence< seq >* pRowArr = maSeq.getConstArray();		
+		const uno::Sequence< seq >* pRowArr = maSeq.getConstArray();
 		for ( long nRow=0; nRow<nRowCount; nRow++ )
 		{
 			long nColCount = pRowArr[nRow].getLength();
@@ -499,7 +499,7 @@ public:
 			const seq* pColArr = pRowArr[nRow].getConstArray();
 			for (long nCol=0; nCol<nColCount; nCol++)
 				if ( nCol <= MAXCOL && mrDocRow <= MAXROW )
-					aVisitor.visitElem( nCol, mrDocRow, pColArr[ nCol ] );	
+					aVisitor.visitElem( nCol, mrDocRow, pColArr[ nCol ] );
 				else
 					mbOverflow=true;
 			mrDocRow++;
@@ -523,7 +523,7 @@ static void processSequences( ScDocument* pDoc, const uno::Any& rArg, ScTokenArr
 	aContainer.process();
 	rArgErr = aContainer.getArgError();
 	rOverflow = aContainer.getOverflow();
-} 
+}
 };
 
 uno::Any SAL_CALL ScFunctionAccess::callFunction( const rtl::OUString& aName,
@@ -615,23 +615,23 @@ uno::Any SAL_CALL ScFunctionAccess::callFunction( const rtl::OUString& aName,
 		}
 		else if ( aType.equals( getCppuType( (uno::Sequence< uno::Sequence<sal_Int16> > *)0 ) ) )
 		{
-			ArrayOfArrayProc<sal_Int16>::processSequences( pDoc, rArg, aTokenArr, nDocRow, bArgErr, bOverflow );	
+			ArrayOfArrayProc<sal_Int16>::processSequences( pDoc, rArg, aTokenArr, nDocRow, bArgErr, bOverflow );
 		}
 		else if ( aType.equals( getCppuType( (uno::Sequence< uno::Sequence<sal_Int32> > *)0 ) ) )
 		{
-			ArrayOfArrayProc<sal_Int32>::processSequences( pDoc, rArg, aTokenArr, nDocRow, bArgErr, bOverflow );	
+			ArrayOfArrayProc<sal_Int32>::processSequences( pDoc, rArg, aTokenArr, nDocRow, bArgErr, bOverflow );
 		}
 		else if ( aType.equals( getCppuType( (uno::Sequence< uno::Sequence<double> > *)0 ) ) )
 		{
-			ArrayOfArrayProc<double>::processSequences( pDoc, rArg, aTokenArr, nDocRow, bArgErr, bOverflow );	
+			ArrayOfArrayProc<double>::processSequences( pDoc, rArg, aTokenArr, nDocRow, bArgErr, bOverflow );
 		}
 		else if ( aType.equals( getCppuType( (uno::Sequence< uno::Sequence<rtl::OUString> > *)0 ) ) )
 		{
-			ArrayOfArrayProc<rtl::OUString>::processSequences( pDoc, rArg, aTokenArr, nDocRow, bArgErr, bOverflow );	
+			ArrayOfArrayProc<rtl::OUString>::processSequences( pDoc, rArg, aTokenArr, nDocRow, bArgErr, bOverflow );
 		}
 		else if ( aType.equals( getCppuType( (uno::Sequence< uno::Sequence<uno::Any> > *)0 ) ) )
 		{
-			ArrayOfArrayProc<uno::Any>::processSequences( pDoc, rArg, aTokenArr, nDocRow, bArgErr, bOverflow );	
+			ArrayOfArrayProc<uno::Any>::processSequences( pDoc, rArg, aTokenArr, nDocRow, bArgErr, bOverflow );
 		}
 		else if ( aType.equals( getCppuType( (uno::Reference<table::XCellRange>*)0 ) ) )
 		{

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 #include "vbafont.hxx"
@@ -44,8 +44,8 @@ static MapPair UnderLineTable[] = {
         { word::WdUnderline::wdUnderlineDouble, com::sun::star::awt::FontUnderline::DOUBLE },
         { word::WdUnderline::wdUnderlineDotted, com::sun::star::awt::FontUnderline::DOTTED },
         { word::WdUnderline::wdUnderlineThick, com::sun::star::awt::FontUnderline::BOLDDASH },
-        { word::WdUnderline::wdUnderlineDash, com::sun::star::awt::FontUnderline::DASH }, 
-	{ word::WdUnderline::wdUnderlineDotDash, com::sun::star::awt::FontUnderline::DASHDOT }, 
+        { word::WdUnderline::wdUnderlineDash, com::sun::star::awt::FontUnderline::DASH },
+	{ word::WdUnderline::wdUnderlineDotDash, com::sun::star::awt::FontUnderline::DASHDOT },
 	{ word::WdUnderline::wdUnderlineDotDotDash, com::sun::star::awt::FontUnderline::DASHDOTDOT },
         { word::WdUnderline::wdUnderlineWavy, com::sun::star::awt::FontUnderline::WAVE },
         { word::WdUnderline::wdUnderlineDottedHeavy, com::sun::star::awt::FontUnderline::BOLDDOTTED },
@@ -84,7 +84,7 @@ public:
     static UnderLineMapper& instance()
     {
         static  UnderLineMapper theMapper;
-        return theMapper; 
+        return theMapper;
     }
 
     sal_Int32 getOOOFromMSO( sal_Int32 nMSOConst ) throw( lang::IllegalArgumentException )
@@ -107,7 +107,7 @@ SwVbaFont::SwVbaFont( const uno::Reference< XHelperInterface >& xParent, const u
 {
 }
 
-uno::Any SAL_CALL 
+uno::Any SAL_CALL
 SwVbaFont::getUnderline() throw (uno::RuntimeException)
 {
     sal_Int32 nOOVal = 0;
@@ -115,7 +115,7 @@ SwVbaFont::getUnderline() throw (uno::RuntimeException)
     return uno::makeAny( UnderLineMapper::instance().getMSOFromOOO( nOOVal ) );
 }
 
-void SAL_CALL 
+void SAL_CALL
 SwVbaFont::setUnderline( const uno::Any& _underline ) throw (uno::RuntimeException)
 {
     sal_Int32 nMSOVal = 0;
@@ -140,7 +140,7 @@ SwVbaFont::setColorIndex( const uno::Any& _colorindex ) throw( uno::RuntimeExcep
         sal_Int32 nIndex = 0;
         _colorindex >>= nIndex;
         return setColor( OORGBToXLRGB(mxPalette->getByIndex( nIndex )) );
-} 
+}
 
 uno::Any SAL_CALL
 SwVbaFont::getColorIndex() throw ( uno::RuntimeException )
@@ -161,8 +161,8 @@ SwVbaFont::getColorIndex() throw ( uno::RuntimeException )
 		}
 	}
 	return uno::makeAny( nIndex );
-}	
-uno::Any SAL_CALL 
+}
+uno::Any SAL_CALL
 SwVbaFont::getSubscript() throw ( uno::RuntimeException )
 {
     sal_Bool bRes = sal_False;
@@ -172,7 +172,7 @@ SwVbaFont::getSubscript() throw ( uno::RuntimeException )
     return aLongAnyFalse;
 }
 
-uno::Any SAL_CALL 
+uno::Any SAL_CALL
 SwVbaFont::getSuperscript() throw ( uno::RuntimeException )
 {
     sal_Bool bRes = sal_False;
@@ -182,7 +182,7 @@ SwVbaFont::getSuperscript() throw ( uno::RuntimeException )
     return aLongAnyFalse;
 }
 
-uno::Any SAL_CALL 
+uno::Any SAL_CALL
 SwVbaFont::getBold() throw (uno::RuntimeException)
 {
     sal_Bool bRes = sal_False;
@@ -192,7 +192,7 @@ SwVbaFont::getBold() throw (uno::RuntimeException)
     return aLongAnyFalse;
 }
 
-uno::Any SAL_CALL 
+uno::Any SAL_CALL
 SwVbaFont::getItalic() throw (uno::RuntimeException)
 {
     sal_Bool bRes = sal_False;
@@ -202,7 +202,7 @@ SwVbaFont::getItalic() throw (uno::RuntimeException)
     return aLongAnyFalse;
 }
 
-uno::Any SAL_CALL 
+uno::Any SAL_CALL
 SwVbaFont::getStrikethrough() throw (css::uno::RuntimeException)
 {
     sal_Bool bRes = sal_False;
@@ -212,7 +212,7 @@ SwVbaFont::getStrikethrough() throw (css::uno::RuntimeException)
     return aLongAnyFalse;
 }
 
-uno::Any SAL_CALL 
+uno::Any SAL_CALL
 SwVbaFont::getShadow() throw (uno::RuntimeException)
 {
     sal_Bool bRes = sal_False;

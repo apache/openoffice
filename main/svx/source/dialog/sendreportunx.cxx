@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -53,22 +53,22 @@ static bool read_line( FILE *fp, string& rLine )
 	bool bEOL = false;
 	string	line;
 
-		
+
 	while ( !bEOL && fgets( szBuffer, sizeof(szBuffer), fp ) )
 	{
 		int	len = strlen(szBuffer);
-		
+
 		bSuccess = true;
-		
+
 		while ( len && szBuffer[len - 1] == '\n' )
 		{
 			szBuffer[--len] = 0;
 			bEOL = true;
 		}
-			
+
 		line.append( szBuffer );
 	}
-	
+
 	rLine = line;
 	return bSuccess;
 }
@@ -76,18 +76,18 @@ static bool read_line( FILE *fp, string& rLine )
 static string trim_string( const string& rString )
 {
 	string temp = rString;
-	
+
 	while ( temp.length() && (temp[0] == ' ' || temp[0] == '\t') )
 		temp.erase( 0, 1 );
-		
+
 	string::size_type	len = temp.length();
-	
+
 	while ( len && (temp[len-1] == ' ' || temp[len-1] == '\t') )
 	{
 		temp.erase( len - 1, 1 );
 		len = temp.length();
 	}
-	
+
 	return temp;
 }
 
@@ -95,38 +95,38 @@ static string get_profile_string( const char *pFileName, const char *pSectionNam
 {
 	FILE	*fp = fopen( pFileName, "r" );
 	string	retValue = pDefault ? pDefault : "";
-	
+
 	if ( fp )
 	{
 		string line;
 		string section;
-		
+
 		while ( read_line( fp, line ) )
 		{
 			line = trim_string( line );
-			
+
 			if ( line.length() && line[0] == '[' )
 			{
 				line.erase( 0, 1 );
 				string::size_type end = line.find( ']', 0 );
-				
+
 				if ( string::npos != end )
 					section = trim_string( line.substr( 0, end ) );
 			}
 			else
 			{
 
-				string::size_type iEqualSign = line.find( '=', 0 ); 
+				string::size_type iEqualSign = line.find( '=', 0 );
 
 				if ( iEqualSign != string::npos )
 				{
 					string	keyname = line.substr( 0, iEqualSign );
 					keyname = trim_string( keyname );
-					
+
                     string  value = line.substr( iEqualSign + 1, string::npos );
 					value = trim_string( value );
-					
-					if ( 
+
+					if (
 						0 == strcasecmp( section.c_str(), pSectionName ) &&
 						0 == strcasecmp( keyname.c_str(), pKeyName )
 						 )
@@ -137,10 +137,10 @@ static string get_profile_string( const char *pFileName, const char *pSectionNam
 				}
 			}
 		}
-		
+
 		fclose( fp );
 	}
-	
+
 	return retValue;
 }
 
@@ -255,7 +255,7 @@ namespace svx{
                 ret = system(cmd.getStr());
             }
 
-			if ( szBodyFile[0] ) 
+			if ( szBodyFile[0] )
 			{
 				unlink( szBodyFile );
 			}
@@ -263,6 +263,6 @@ namespace svx{
 			return -1 != ret;
 		}
 
-		
+
 	}	// namespace DocRecovery
 }	// namespace svx

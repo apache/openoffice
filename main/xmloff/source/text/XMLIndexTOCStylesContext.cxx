@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -57,7 +57,7 @@ TYPEINIT1( XMLIndexTOCStylesContext, SvXMLImportContext );
 
 
 XMLIndexTOCStylesContext::XMLIndexTOCStylesContext(
-	SvXMLImport& rImport, 
+	SvXMLImport& rImport,
 	Reference<XPropertySet> & rPropSet,
 	sal_uInt16 nPrfx,
 	const OUString& rLocalName )
@@ -80,7 +80,7 @@ void XMLIndexTOCStylesContext::StartElement(
 	{
 		OUString sLocalName;
 		sal_uInt16 nPrefix = GetImport().GetNamespaceMap().
-			GetKeyByAttrName( xAttrList->getNameByIndex(nAttr), 
+			GetKeyByAttrName( xAttrList->getNameByIndex(nAttr),
 							  &sLocalName );
 		if ( (XML_NAMESPACE_TEXT == nPrefix) &&
 			 (IsXMLToken(sLocalName, XML_OUTLINE_LEVEL)) )
@@ -124,13 +124,13 @@ void XMLIndexTOCStylesContext::EndElement()
 	}
 }
 
-SvXMLImportContext *XMLIndexTOCStylesContext::CreateChildContext( 
+SvXMLImportContext *XMLIndexTOCStylesContext::CreateChildContext(
 	sal_uInt16 p_nPrefix,
 	const OUString& rLocalName,
 	const Reference<XAttributeList> & xAttrList )
 {
 	// check for index-source-style
-	if ( (XML_NAMESPACE_TEXT == p_nPrefix) && 
+	if ( (XML_NAMESPACE_TEXT == p_nPrefix) &&
 		 IsXMLToken( rLocalName, XML_INDEX_SOURCE_STYLE ) )
 	{
 		// find text:style-name attribute and record in aStyleNames
@@ -139,7 +139,7 @@ SvXMLImportContext *XMLIndexTOCStylesContext::CreateChildContext(
 		{
 			OUString sLocalName;
 			sal_uInt16 nPrefix = GetImport().GetNamespaceMap().
-				GetKeyByAttrName( xAttrList->getNameByIndex(nAttr), 
+				GetKeyByAttrName( xAttrList->getNameByIndex(nAttr),
 								  &sLocalName );
 			if ( (XML_NAMESPACE_TEXT == nPrefix) &&
 				 IsXMLToken( sLocalName, XML_STYLE_NAME ) )
@@ -150,6 +150,6 @@ SvXMLImportContext *XMLIndexTOCStylesContext::CreateChildContext(
 	}
 
 	// always return default context; we already got the interesting info
-	return SvXMLImportContext::CreateChildContext(p_nPrefix, rLocalName, 
+	return SvXMLImportContext::CreateChildContext(p_nPrefix, rLocalName,
 												  xAttrList);
 }

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -114,7 +114,7 @@ void SAL_CALL CachedContentResultSetStub
 		   RuntimeException )
 {
 	impl_EnsureNotDisposed();
-	
+
 	//don't notify events on fetchsize and fetchdirection to the above CachedContentResultSet
 	//because it will ignore them anyway and we can save this remote calls
 	if(	   rEvt.PropertyName == m_aPropertyNameForFetchSize
@@ -447,10 +447,10 @@ void SAL_CALL CachedContentResultSetStub
 		if(!bFirstPropagationDone)
 		{
 			//check whether the properties 'FetchSize' and 'FetchDirection' do exist
-			
+
 			Reference< XPropertySetInfo > xPropertySetInfo = getPropertySetInfo();
-			sal_Bool bHasSize = xPropertySetInfo->hasPropertyByName( m_aPropertyNameForFetchSize ); 
-			sal_Bool bHasDirection = xPropertySetInfo->hasPropertyByName( m_aPropertyNameForFetchDirection ); 
+			sal_Bool bHasSize = xPropertySetInfo->hasPropertyByName( m_aPropertyNameForFetchSize );
+			sal_Bool bHasDirection = xPropertySetInfo->hasPropertyByName( m_aPropertyNameForFetchDirection );
 
 			if(!bHasSize || !bHasDirection)
 			{
@@ -459,7 +459,7 @@ void SAL_CALL CachedContentResultSetStub
 				return;
 			}
 		}
-		
+
 		sal_Bool bSetSize		= ( nLastSize		!=nFetchSize		) || !bFirstPropagationDone;
 		sal_Bool bSetDirection	= ( bLastDirection	!=bFetchDirection	) || !bFirstPropagationDone;
 
@@ -469,7 +469,7 @@ void SAL_CALL CachedContentResultSetStub
 			m_nLastFetchSize		= nFetchSize;
 			m_bLastFetchDirection	= bFetchDirection;
 		}
-		
+
 		if( bSetSize )
 		{
 			Any aValue;

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -41,8 +41,8 @@
 PrintMonitor::PrintMonitor( Window *pParent, PrintMonitorType eType )
 :	ModelessDialog( pParent, SW_RES(DLG_PRINTMONITOR) ),
 	aDocName	(this, SW_RES( FT_DOCNAME )),
-	aPrinting	(this, SW_RES( 
-	    eType == MONITOR_TYPE_MAIL ? 
+	aPrinting	(this, SW_RES(
+	    eType == MONITOR_TYPE_MAIL ?
 	        FT_SENDING : eType == MONITOR_TYPE_SAVE ? FT_SAVING : FT_PRINTING )),
 	aPrinter	(this, SW_RES( FT_PRINTER 		)),
 	aPrintInfo	(this, SW_RES( FT_PRINTINFO		)),
@@ -57,20 +57,20 @@ PrintMonitor::PrintMonitor( Window *pParent, PrintMonitorType eType )
 	FreeResource();
 }
 /*---------------------------------------------------------------------
-	
+
 ---------------------------------------------------------------------*/
 void lcl_ResizeControl( Window* pWin, long nDiff )
 {
     Size aSize( pWin->GetSizePixel() );
-    aSize.Width() += nDiff; 
-    pWin->SetSizePixel( aSize );   
-}      
+    aSize.Width() += nDiff;
+    pWin->SetSizePixel( aSize );
+}
 void lcl_RePosControl( Window* pWin, long nDiff )
 {
     Point aPos( pWin->GetPosPixel() );
-    aPos.X()  += nDiff; 
-    pWin->SetPosPixel( aPos );   
-}      
+    aPos.X()  += nDiff;
+    pWin->SetPosPixel( aPos );
+}
 
 void PrintMonitor::ResizeControls()
 {
@@ -84,18 +84,18 @@ void PrintMonitor::ResizeControls()
         long nDiff = nPrinterTextWidth - aPrinterSize.Width();
         if( nDiff > 2 * aDlgSize.Width() )
         {
-            aPrinter.SetStyle( WB_RIGHT | aPrinter.GetStyle() ); 
+            aPrinter.SetStyle( WB_RIGHT | aPrinter.GetStyle() );
             nDiff = 2 * aDlgSize.Width();
         }
         aDlgSize.Width() += nDiff;
         SetSizePixel(aDlgSize);
-        lcl_ResizeControl( &aPrinter, nDiff );      
+        lcl_ResizeControl( &aPrinter, nDiff );
 
         nDiff /= 2;
-        lcl_RePosControl( &aDocName, nDiff );      
-        lcl_RePosControl( &aPrinting, nDiff );      
+        lcl_RePosControl( &aDocName, nDiff );
+        lcl_RePosControl( &aPrinting, nDiff );
         lcl_RePosControl( &aPrintInfo, nDiff );
-        lcl_RePosControl( &aCancel, nDiff );      
+        lcl_RePosControl( &aCancel, nDiff );
     }
 }
 /*---------------------------------------------------------------------
@@ -123,7 +123,7 @@ CreateMonitor::CreateMonitor( Window *pParent )
 
 void CreateMonitor::UpdateCountingText()
 {
-    String sText(m_sCountingPattern); 
+    String sText(m_sCountingPattern);
     sText.SearchAndReplaceAll( m_sVariable_Total, String::CreateFromInt32( m_nTotalCount ) );
     sText.SearchAndReplaceAll( m_sVariable_Position, String::CreateFromInt32( m_nCurrentPosition ) );
     m_aCounting.SetText(sText);

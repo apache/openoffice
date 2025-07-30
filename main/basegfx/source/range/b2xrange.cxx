@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -35,11 +35,11 @@ namespace basegfx
     {
         /** Generic implementation of the difference set computation
 
-            @tpl RangeType 
+            @tpl RangeType
             Type to operate on. Must provide ValueType and TraitsType
             nested types.
          */
-		template< class RangeType > void doComputeSetDifference( 
+		template< class RangeType > void doComputeSetDifference(
             ::std::vector< RangeType >&	o_rRanges,
             const RangeType&			a,
             const RangeType&			b )
@@ -78,27 +78,27 @@ namespace basegfx
             // TODO(E2): Use numeric_cast instead of static_cast here,
             // need range checks!
 			if (h0 > 0)
-				o_rRanges.push_back( 
+				o_rRanges.push_back(
                     RangeType(ax,ay,
                               static_cast<typename RangeType::ValueType>(ax+aw),
                               static_cast<typename RangeType::ValueType>(ay+h0)) );
 
 			if (w1 > 0 && h12 > 0)
-				o_rRanges.push_back( 
+				o_rRanges.push_back(
                     RangeType(ax,
                               static_cast<typename RangeType::ValueType>(ay+h0),
                               static_cast<typename RangeType::ValueType>(ax+w1),
                               static_cast<typename RangeType::ValueType>(ay+h0+h12)) );
 
 			if (w2 > 0 && h12 > 0)
-				o_rRanges.push_back( 
+				o_rRanges.push_back(
                     RangeType(static_cast<typename RangeType::ValueType>(bx+bw),
                               static_cast<typename RangeType::ValueType>(ay+h0),
                               static_cast<typename RangeType::ValueType>(bx+bw+w2),
                               static_cast<typename RangeType::ValueType>(ay+h0+h12)) );
 
 			if (h3 > 0)
-				o_rRanges.push_back( 
+				o_rRanges.push_back(
                     RangeType(ax,
                               static_cast<typename RangeType::ValueType>(ay+h0+h12),
                               static_cast<typename RangeType::ValueType>(ax+aw),

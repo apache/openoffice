@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -106,11 +106,11 @@ static void getPaLib()
         {
             return;
         }
-        
+
         pSetupFunction	= (setupFunction)osl_getAsciiFunctionSymbol( driverLib, "Sal_SetupPrinterDriver" );
         if ( !pSetupFunction )
             fprintf( stderr, "could not resolve Sal_SetupPrinterDriver\n" );
-        
+
         pFaxNrFunction = (faxFunction)osl_getAsciiFunctionSymbol( driverLib, "Sal_queryFaxNumber" );
         if ( !pFaxNrFunction )
             fprintf( stderr, "could not resolve Sal_queryFaxNumber\n" );
@@ -171,11 +171,11 @@ static void copyJobDataToJobSetup( ImplJobSetup* pJobSetup, JobData& rData )
         if( pJobSetup->mnPaperBin >= pKey->countValues() )
             pJobSetup->mnPaperBin = 0;
     }
-	
+
     // copy duplex
     pKey = NULL;
     pValue = NULL;
-	
+
     pJobSetup->meDuplexMode = DUPLEX_UNKNOWN;
     if( rData.m_pParser )
         pKey = rData.m_pParser->getKey( String( RTL_CONSTASCII_USTRINGPARAM( "Duplex" ) ) );
@@ -392,12 +392,12 @@ SalInfoPrinter* X11SalInstance::CreateInfoPrinter( SalPrinterQueueInfo*	pQueueIn
 		pJobSetup->maPrinterName	= pQueueInfo->maPrinterName;
 		pJobSetup->maDriver			= aInfo.m_aDriverName;
 		copyJobDataToJobSetup( pJobSetup, aInfo );
-        
+
         // set/clear backwards compatibility flag
         bool bStrictSO52Compatibility = false;
         std::hash_map<rtl::OUString, rtl::OUString, rtl::OUStringHash >::const_iterator compat_it =
             pJobSetup->maValueMap.find( rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "StrictSO52Compatibility" ) ) );
-           
+
         if( compat_it != pJobSetup->maValueMap.end() )
         {
             if( compat_it->second.equalsIgnoreAsciiCaseAscii( "true" ) )
@@ -601,7 +601,7 @@ sal_Bool PspSalInfoPrinter::Setup( SalFrame* pFrame, ImplJobSetup* pJobSetup )
 		SetData( ~0, pJobSetup );
 		JobData::constructFromStreamBuffer( pJobSetup->mpDriverData, pJobSetup->mnDriverDataLen, aInfo );
     }
-	
+
 	if( pSetupFunction( aInfo ) )
 	{
 		rtl_freeMemory( pJobSetup->mpDriverData );
@@ -646,7 +646,7 @@ sal_Bool PspSalInfoPrinter::SetPrinterData( ImplJobSetup* pJobSetup )
 		return SetData( ~0, pJobSetup );
 
 	copyJobDataToJobSetup( pJobSetup, m_aJobData );
-	
+
     return sal_True;
 }
 
@@ -693,7 +693,7 @@ sal_Bool PspSalInfoPrinter::SetData(
 
 			pKey = aData.m_pParser->getKey( String( RTL_CONSTASCII_USTRINGPARAM( "PageSize" ) ) );
 			pValue = pKey ? pKey->getValueCaseInsensitive( aPaper ) : NULL;
-            
+
             // some PPD files do not specify the standard paper names (e.g. C5 instead of EnvC5)
             // try to find the correct paper anyway using the size
             if( pKey && ! pValue && pJobSetup->mePaperFormat != PAPER_USER )
@@ -704,7 +704,7 @@ sal_Bool PspSalInfoPrinter::SetData(
                     TenMuToPt( aInfo.getHeight() ) );
                 pValue = pKey->getValueCaseInsensitive( aPaper );
             }
-            
+
 			if( ! ( pKey && pValue && aData.m_aContext.setValue( pKey, pValue, false ) == pValue ) )
 				return sal_False;
 		}
@@ -899,7 +899,7 @@ sal_uLong PspSalInfoPrinter::GetCapabilities( const ImplJobSetup* pJobSetup, sal
                 if( pJobSetup->mpDriverData )
                     JobData::constructFromStreamBuffer( pJobSetup->mpDriverData, pJobSetup->mnDriverDataLen, aData );
                 return aData.m_nPDFDevice > 0 ? 1 : 0;
-            }                
+            }
 		case PRINTER_CAPABILITIES_EXTERNALDIALOG:
             return PrinterInfoManager::get().checkFeatureToken( pJobSetup->maPrinterName, "external_dialog" ) ? 1 : 0;
         case PRINTER_CAPABILITIES_USEPULLMODEL:
@@ -1017,7 +1017,7 @@ sal_Bool PspSalPrinter::StartJob(
 		}
 	}
 	m_aPrinterGfx.Init( m_aJobData );
-    
+
     // set/clear backwards compatibility flag
     bool bStrictSO52Compatibility = false;
     std::hash_map<rtl::OUString, rtl::OUString, rtl::OUStringHash >::const_iterator compat_it =
@@ -1043,13 +1043,13 @@ sal_Bool PspSalPrinter::EndJob()
     else
     {
         bSuccess = m_aPrintJob.EndJob();
-    
+
         if( bSuccess )
         {
             // check for fax
             if( m_bFax )
             {
-    
+
                 const PrinterInfo& rInfo( PrinterInfoManager::get().getPrinterInfo( m_aJobData.m_aPrinterName ) );
                 // sendAFax removes the file after use
                 bSuccess = sendAFax( m_aFaxNr, m_aTmpFile, rInfo.m_aCommand );
@@ -1117,11 +1117,11 @@ struct PDFNewJobParameters
 {
     Size        maPageSize;
     sal_uInt16      mnPaperBin;
-    
+
     PDFNewJobParameters( const Size& i_rSize = Size(),
                          sal_uInt16 i_nPaperBin = 0xffff )
     : maPageSize( i_rSize ), mnPaperBin( i_nPaperBin ) {}
-    
+
     bool operator!=(const PDFNewJobParameters& rComp ) const
     {
         Size aCompLSSize( rComp.maPageSize.Height(), rComp.maPageSize.Width() );
@@ -1130,7 +1130,7 @@ struct PDFNewJobParameters
         ||  mnPaperBin != rComp.mnPaperBin
         ;
     }
-    
+
     bool operator==(const PDFNewJobParameters& rComp) const
     {
         return ! this->operator!=(rComp);
@@ -1141,7 +1141,7 @@ struct PDFPrintFile
 {
     rtl::OUString       maTmpURL;
     PDFNewJobParameters maParameters;
-    
+
     PDFPrintFile( const rtl::OUString& i_rURL, const PDFNewJobParameters& i_rNewParameters )
     : maTmpURL( i_rURL )
     , maParameters( i_rNewParameters ) {}
@@ -1159,7 +1159,7 @@ sal_Bool PspSalPrinter::StartJob( const String* i_pFileName, const String& i_rJo
     // update job data
     if( i_pSetupData )
         JobData::constructFromStreamBuffer( i_pSetupData->mpDriverData, i_pSetupData->mnDriverDataLen, m_aJobData );
-    
+
     OSL_ASSERT( m_aJobData.m_nPDFDevice > 0 );
     m_aJobData.m_nPDFDevice = 1;
 
@@ -1173,7 +1173,7 @@ sal_Bool PspSalPrinter::StartJob( const String* i_pFileName, const String& i_rJo
 
     int nCopies = i_rController.getPrinter()->GetCopyCount();
     bool bCollate = i_rController.getPrinter()->IsCollateCopy();
-    
+
     // notify start of real print job
     i_rController.jobStarted();
 
@@ -1194,7 +1194,7 @@ sal_Bool PspSalPrinter::StartJob( const String* i_pFileName, const String& i_rJo
     // define how we handle metafiles in PDFWriter
     vcl::PDFWriter::PlayMetafileContext aMtfContext;
     aMtfContext.m_bOnlyLosslessCompression = true;
-    
+
     boost::shared_ptr<vcl::PDFWriter> pWriter;
     std::vector< PDFPrintFile > aPDFFiles;
     boost::shared_ptr<Printer> pPrinter( i_rController.getPrinter() );
@@ -1202,14 +1202,14 @@ sal_Bool PspSalPrinter::StartJob( const String* i_pFileName, const String& i_rJo
     i_rController.createProgressDialog();
     bool bAborted = false;
     PDFNewJobParameters aLastParm;
-    
+
     aContext.DPIx = pPrinter->ImplGetDPIX();
     aContext.DPIy = pPrinter->ImplGetDPIY();
     for( int nPage = 0; nPage < nAllPages && ! bAborted; nPage++ )
     {
         if( nPage == nAllPages-1 )
             i_rController.setLastPage( sal_True );
-        
+
         // get the page's metafile
         GDIMetaFile aPageFile;
         vcl::PrinterController::PageSize aPageSize = i_rController.getFilteredPageFile( nPage, aPageFile );
@@ -1228,7 +1228,7 @@ sal_Bool PspSalPrinter::StartJob( const String* i_pFileName, const String& i_rJo
             pPrinter->SetMapMode( MapMode( MAP_100TH_MM ) );
             pPrinter->SetPaperSizeUser( aPageSize.aSize, true );
             PDFNewJobParameters aNewParm( pPrinter->GetPaperSize(), pPrinter->GetPaperBin() );
-            
+
             // create PDF writer on demand
             // either on first page
             // or on paper format change - cups does not support multiple paper formats per job (yet?)
@@ -1275,7 +1275,7 @@ sal_Bool PspSalPrinter::StartJob( const String* i_pFileName, const String& i_rJo
             pWriter->NewPage( TenMuToPt( aNewParm.maPageSize.Width() ),
                               TenMuToPt( aNewParm.maPageSize.Height() ),
                               vcl::PDFWriter::Portrait );
-        
+
             pWriter->PlayMetafile( aPageFile, aMtfContext, NULL );
         }
     }
@@ -1312,7 +1312,7 @@ sal_Bool PspSalPrinter::StartJob( const String* i_pFileName, const String& i_rJo
             m_aJobData.m_nCopies = nCopies;
         }
     }
-    
+
     // spool files
     if( ! i_pFileName && ! bAborted )
     {
@@ -1331,8 +1331,8 @@ sal_Bool PspSalPrinter::StartJob( const String* i_pFileName, const String& i_rJo
                     Size aPageSize( aPDFFiles[i].maParameters.maPageSize );
                     m_aJobData.setPaper( TenMuToPt( aPageSize.Width() ), TenMuToPt( aPageSize.Height() ) );
                     // update job data with current paperbin
-                    m_aJobData.setPaperBin( aPDFFiles[i].maParameters.mnPaperBin ); 
-                    
+                    m_aJobData.setPaperBin( aPDFFiles[i].maParameters.mnPaperBin );
+
                     // spool current file
                     FILE* fp = PrinterInfoManager::get().startSpool( pPrinter->GetName(), i_rController.isDirectPrint() );
                     if( fp )
@@ -1362,7 +1362,7 @@ sal_Bool PspSalPrinter::StartJob( const String* i_pFileName, const String& i_rJo
 
     // job has been spooled
     i_rController.setJobState( bAborted ? view::PrintableState_JOB_ABORTED : view::PrintableState_JOB_SPOOLED );
-    
+
     // clean up the temporary PDF files
     if( ! i_pFileName || bAborted )
     {
@@ -1372,7 +1372,7 @@ sal_Bool PspSalPrinter::StartJob( const String* i_pFileName, const String& i_rJo
             OSL_TRACE( "removed print PDF file %s\n", rtl::OUStringToOString( aPDFFiles[i].maTmpURL, RTL_TEXTENCODING_UTF8 ).getStr() );
         }
     }
-    
+
     return sal_True;
 }
 
@@ -1420,14 +1420,14 @@ void vcl_sal::PrinterUpdate::update()
 {
     if( Application::GetSettings().GetMiscSettings().GetDisablePrinting() )
         return;
-    
+
     if( ! static_cast< X11SalInstance* >(GetSalData()->m_pInstance)->isPrinterInit() )
     {
         // #i45389# start background printer detection
         psp::PrinterInfoManager::get();
         return;
     }
-    
+
     if( nActiveJobs < 1 )
         doUpdate();
     else if( ! pPrinterUpdateTimer )

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -59,11 +59,11 @@ SchOptionTabPage::SchOptionTabPage(Window* pWindow,const SfxItemSet& rInAttrs) :
 	aCBConnect(this,SchResId(CB_CONNECTOR)),
     aCBAxisSideBySide(this,SchResId(CB_BARS_SIDE_BY_SIDE)),
     m_aFL_PlotOptions(this,SchResId(FL_PLOT_OPTIONS)),
-    m_aFT_MissingValues(this,SchResId(FT_MISSING_VALUES)), 
+    m_aFT_MissingValues(this,SchResId(FT_MISSING_VALUES)),
     m_aRB_DontPaint(this,SchResId(RB_DONT_PAINT)),
     m_aRB_AssumeZero(this,SchResId(RB_ASSUME_ZERO)),
     m_aRB_ContinueLine(this,SchResId(RB_CONTINUE_LINE)),
-    m_aCBIncludeHiddenCells(this,SchResId(CB_INCLUDE_HIDDEN_CELLS)), 
+    m_aCBIncludeHiddenCells(this,SchResId(CB_INCLUDE_HIDDEN_CELLS)),
     m_bProvidesSecondaryYAxis(true),
     m_bProvidesOverlapAndGapWidth(false)
 {
@@ -154,13 +154,13 @@ void SchOptionTabPage::Reset(const SfxItemSet& rInAttrs)
 		nTmp = (long)((const SfxInt32Item*)pPoolItem)->GetValue();
 		aMTOverlap.SetValue(nTmp);
 	}
-	
+
 	if (rInAttrs.GetItemState(SCHATTR_BAR_CONNECT, sal_True, &pPoolItem) == SFX_ITEM_SET)
 	{
 		sal_Bool bCheck = static_cast< const SfxBoolItem * >( pPoolItem )->GetValue();
 		aCBConnect.Check(bCheck);
 	}
-	
+
     if (rInAttrs.GetItemState(SCHATTR_AXIS_FOR_ALL_SERIES, sal_True, &pPoolItem) == SFX_ITEM_SET)
     {
         m_nAllSeriesAxisIndex = static_cast< const SfxInt32Item * >( pPoolItem )->GetValue();
@@ -190,7 +190,7 @@ void SchOptionTabPage::Reset(const SfxItemSet& rInAttrs)
             m_aRB_DontPaint.Enable(sal_False);
             m_aRB_AssumeZero.Enable(sal_False);
             m_aRB_ContinueLine.Enable(sal_False);
-		    
+
             for( sal_Int32 nN =0; nN<aMissingValueTreatments.getLength(); nN++ )
             {
                 sal_Int32 nVal = aMissingValueTreatments[nN];
@@ -263,12 +263,12 @@ void SchOptionTabPage::AdaptControlPositionsAndVisibility()
 
 	aMTGap.Show(m_bProvidesOverlapAndGapWidth);
 	aFTGap.Show(m_bProvidesOverlapAndGapWidth);
-	
+
 	aMTOverlap.Show(m_bProvidesOverlapAndGapWidth);
 	aFTOverlap.Show(m_bProvidesOverlapAndGapWidth);
 
     aCBConnect.Show(m_bProvidesBarConnectors);
-	
+
     if( !aMTGap.IsVisible() && !aMTOverlap.IsVisible() )
     {
 		aGrpBar.Show(sal_False);
@@ -297,7 +297,7 @@ void SchOptionTabPage::AdaptControlPositionsAndVisibility()
     lcl_offsetControl(m_aRB_DontPaint,         nXOffset, 0);
     lcl_offsetControl(m_aRB_AssumeZero,        nXOffset, 0);
     lcl_offsetControl(m_aRB_ContinueLine,      nXOffset, 0);
-    
+
     if( !m_aFT_MissingValues.IsVisible() )
     {
         //for example for stock charts

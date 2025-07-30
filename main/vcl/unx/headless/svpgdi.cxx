@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -118,7 +118,7 @@ void SvpSalGraphics::setDevice( BitmapDeviceSharedPtr& rDevice )
 
     // determine matching bitmap format for masks
     sal_uInt32 nDeviceFmt = m_aDevice->getScanlineFormat();
-    DBG_ASSERT( (nDeviceFmt <= (sal_uInt32)Format::MAX), "SVP::setDevice() with invalid bitmap format" ); 
+    DBG_ASSERT( (nDeviceFmt <= (sal_uInt32)Format::MAX), "SVP::setDevice() with invalid bitmap format" );
     switch( nDeviceFmt )
     {
         case Format::EIGHT_BIT_GREY:
@@ -175,7 +175,7 @@ bool SvpSalGraphics::setClipRegion( const Region& i_rClip )
     {
         m_aClipMap.reset();
         const Rectangle& aBoundRect = aRectangles[0];
-        m_aDevice = basebmp::subsetBitmapDevice( 
+        m_aDevice = basebmp::subsetBitmapDevice(
             m_aOrigDevice,
             basegfx::B2IRange(aBoundRect.Left(),aBoundRect.Top(),aBoundRect.Right(),aBoundRect.Bottom()) );
         return true;
@@ -197,14 +197,14 @@ bool SvpSalGraphics::setClipRegion( const Region& i_rClip )
             if(nH)
             {
                 B2DPolyPolygon aFull;
-                
+
                 aFull.append(
                     tools::createPolygonFromRect(
                         B2DRectangle(
-                            aRectIter->Left(), 
-                            aRectIter->Top(), 
-                            aRectIter->Left() + nW, 
-                            aRectIter->Top() + nH))); 
+                            aRectIter->Left(),
+                            aRectIter->Top(),
+                            aRectIter->Left() + nW,
+                            aRectIter->Top() + nH)));
                 m_aClipMap->fillPolyPolygon(aFull, basebmp::Color(0), DrawMode_PAINT);
             }
         }
@@ -218,7 +218,7 @@ bool SvpSalGraphics::setClipRegion( const Region& i_rClip )
     //    if ( nW && nH )
     //    {
     //        B2DPolyPolygon aFull;
-    //        aFull.append( tools::createPolygonFromRect( B2DRectangle( nX, nY, nX+nW, nY+nH ) ) ); 
+    //        aFull.append( tools::createPolygonFromRect( B2DRectangle( nX, nY, nX+nW, nY+nH ) ) );
     //        m_aClipMap->fillPolyPolygon( aFull, basebmp::Color(0), DrawMode_PAINT );
     //    }
     //    bRegionRect = i_rClip.ImplGetNextRect( aInfo, nX, nY, nW, nH );
@@ -310,7 +310,7 @@ void SvpSalGraphics::drawPixel( long nX, long nY, SalColor nSalColor )
                          aColor,
                          m_aDrawMode,
                          m_aClipMap
-                         ); 
+                         );
     dbgOut( m_aDevice );
 }
 
@@ -414,10 +414,10 @@ void SvpSalGraphics::drawPolyPolygon( sal_uInt32 nPoly,
     dbgOut( m_aDevice );
 }
 
-bool SvpSalGraphics::drawPolyLine( 
-    const ::basegfx::B2DPolygon&, 
-    double /*fTransparency*/, 
-    const ::basegfx::B2DVector& /*rLineWidths*/, 
+bool SvpSalGraphics::drawPolyLine(
+    const ::basegfx::B2DPolygon&,
+    double /*fTransparency*/,
+    const ::basegfx::B2DVector& /*rLineWidths*/,
     basegfx::B2DLineJoin /*eJoin*/,
     com::sun::star::drawing::LineCap /*eLineCap*/)
 {
@@ -470,7 +470,7 @@ void SvpSalGraphics::copyArea( long nDestX,
 void SvpSalGraphics::copyBits( const SalTwoRect& rPosAry,
                                SalGraphics*      pSrcGraphics )
 {
-    SvpSalGraphics* pSrc = pSrcGraphics ? 
+    SvpSalGraphics* pSrc = pSrcGraphics ?
         static_cast<SvpSalGraphics*>(pSrcGraphics) : this;
     B2IRange aSrcRect( rPosAry.mnSrcX, rPosAry.mnSrcY,
                        rPosAry.mnSrcX+rPosAry.mnSrcWidth,
@@ -478,7 +478,7 @@ void SvpSalGraphics::copyBits( const SalTwoRect& rPosAry,
     B2IRange aDestRect( rPosAry.mnDestX, rPosAry.mnDestY,
                         rPosAry.mnDestX+rPosAry.mnDestWidth,
                         rPosAry.mnDestY+rPosAry.mnDestHeight );
-    m_aDevice->drawBitmap( pSrc->m_aOrigDevice, aSrcRect, aDestRect, DrawMode_PAINT, m_aClipMap );    
+    m_aDevice->drawBitmap( pSrc->m_aOrigDevice, aSrcRect, aDestRect, DrawMode_PAINT, m_aClipMap );
     dbgOut( m_aDevice );
 }
 
@@ -491,7 +491,7 @@ void SvpSalGraphics::drawBitmap( const SalTwoRect& rPosAry, const SalBitmap& rSa
     B2IRange aDestRect( rPosAry.mnDestX, rPosAry.mnDestY,
                         rPosAry.mnDestX+rPosAry.mnDestWidth,
                         rPosAry.mnDestY+rPosAry.mnDestHeight );
-    m_aDevice->drawBitmap( rSrc.getBitmap(), aSrcRect, aDestRect, DrawMode_PAINT, m_aClipMap );    
+    m_aDevice->drawBitmap( rSrc.getBitmap(), aSrcRect, aDestRect, DrawMode_PAINT, m_aClipMap );
     dbgOut( m_aDevice );
 }
 
@@ -597,7 +597,7 @@ SystemFontData SvpSalGraphics::GetSysFontData( int nFallbacklevel ) const
 
     if (nFallbacklevel >= MAX_FALLBACK) nFallbacklevel = MAX_FALLBACK - 1;
     if (nFallbacklevel < 0 ) nFallbacklevel = 0;
-    
+
     aSysFontData.nSize = sizeof( SystemFontData );
     aSysFontData.nFontId = 0;
     aSysFontData.nFontFlags = 0;

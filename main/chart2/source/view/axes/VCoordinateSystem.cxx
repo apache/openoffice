@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -174,7 +174,7 @@ uno::Sequence< sal_Int32 > VCoordinateSystem::getCoordinateSystemResolution(
     for( nN = 0 ;nN<aResolution.getLength(); nN++ )
         aResolution[nN]=1000;
 
-    ::basegfx::B3DTuple aScale( BaseGFXHelper::GetScaleFromMatrix( 
+    ::basegfx::B3DTuple aScale( BaseGFXHelper::GetScaleFromMatrix(
         BaseGFXHelper::HomogenMatrixToB3DHomMatrix(
             m_aMatrixSceneToScreen ) ) );
 
@@ -192,10 +192,10 @@ uno::Sequence< sal_Int32 > VCoordinateSystem::getCoordinateSystemResolution(
         nXResolution = 10;
     if( nYResolution < 10 )
         nYResolution = 10;
-       
+
     if( this->getPropertySwapXAndYAxis() )
         std::swap(nXResolution,nYResolution);
-    
+
     //2D
     if( 2 == aResolution.getLength() )
     {
@@ -210,7 +210,7 @@ uno::Sequence< sal_Int32 > VCoordinateSystem::getCoordinateSystemResolution(
         for( nN = 0 ;nN<aResolution.getLength(); nN++ )
             aResolution[nN]=nMaxResolution;
     }
-    
+
     return aResolution;
 }
 
@@ -272,7 +272,7 @@ std::vector< ExplicitScaleData > VCoordinateSystem::getExplicitScales( sal_Int32
 
     impl_adjustDimensionAndIndex( nDimensionIndex, nAxisIndex );
     aRet[nDimensionIndex]=this->getExplicitScale( nDimensionIndex, nAxisIndex );
-    
+
     return aRet;
 }
 
@@ -291,7 +291,7 @@ ExplicitScaleData VCoordinateSystem::getExplicitScale( sal_Int32 nDimensionIndex
     ExplicitScaleData aRet;
 
     impl_adjustDimensionAndIndex( nDimensionIndex, nAxisIndex );
-    
+
     if( nAxisIndex == 0)
     {
         aRet = m_aExplicitScales[nDimensionIndex];
@@ -432,7 +432,7 @@ VAxisBase* VCoordinateSystem::getVAxis( sal_Int32 nDimensionIndex, sal_Int32 nAx
     tVAxisMap::const_iterator aIt = m_aAxisMap.find( aFullAxisIndex );
     if( aIt != m_aAxisMap.end() )
         pRet = aIt->second.get();
-    
+
     return pRet;
 }
 
@@ -539,7 +539,7 @@ void VCoordinateSystem::createAxesShapes()
                             m_aExplicitScales[0].Origin );
                 }
             }
-            
+
             pVAxis->createShapes();
         }
     }

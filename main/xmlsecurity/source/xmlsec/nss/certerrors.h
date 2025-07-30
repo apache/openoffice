@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -95,7 +95,7 @@
 {SEC_ERROR_EXTENSION_NOT_FOUND, "Certificate extension not found."},
 
 {SEC_ERROR_CA_CERT_INVALID, "Issuer certificate is invalid."},
-   
+
 {SEC_ERROR_PATH_LEN_CONSTRAINT_INVALID,	"Certificate path length constraint is invalid."},
 
 {SEC_ERROR_CERT_USAGES_INVALID, "Certificate usages field is invalid."},
@@ -249,7 +249,7 @@ Please remove it and return it to your issuer."},
 {SEC_ERROR_JS_DEL_MOD_FAILURE, "Unable to delete module"},
 
 {SEC_ERROR_OLD_KRL, "New KRL is not later than the current one."},
- 
+
 {SEC_ERROR_CKL_CONFLICT, "New CKL has different issuer than current CKL.  Delete current CKL."},
 
 {SEC_ERROR_CERT_NOT_IN_NAME_SPACE, "The Certifying Authority for this certificate is not permitted to issue a \

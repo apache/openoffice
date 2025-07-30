@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -245,7 +245,7 @@ String  GetWritableDictionaryURL( const String &rDicName )
     aURLObj.Append( rDicName, INetURLObject::ENCODE_ALL );
     DBG_ASSERT(!aURLObj.HasError(), "lng : invalid URL");
 
-    // NO_DECODE preserves the escape sequences that might be included in aDirName 
+    // NO_DECODE preserves the escape sequences that might be included in aDirName
     // depending on the characters used in the path string. (Needed when comparing
     // the dictionary URL with GetDictionaryWriteablePath in DicList::createDictionary.)
     return aURLObj.GetMainURL( INetURLObject::NO_DECODE );

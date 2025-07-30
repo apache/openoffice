@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -43,7 +43,7 @@ using namespace com::sun::star;
 
 Deflater::~Deflater(void)
 {
-	end();	
+	end();
 }
 void Deflater::init (sal_Int32 nLevelArg, sal_Int32 nStrategyArg, sal_Bool bNowrap)
 {
@@ -137,15 +137,15 @@ sal_Int32 Deflater::doDeflateBytes (uno::Sequence < sal_Int8 > &rBuffer, sal_Int
 	}
 }
 
-void SAL_CALL Deflater::setInputSegment( const uno::Sequence< sal_Int8 >& rBuffer, sal_Int32 nNewOffset, sal_Int32 nNewLength ) 
+void SAL_CALL Deflater::setInputSegment( const uno::Sequence< sal_Int8 >& rBuffer, sal_Int32 nNewOffset, sal_Int32 nNewLength )
 {
     OSL_ASSERT( !(nNewOffset < 0 || nNewLength < 0 || nNewOffset + nNewLength > rBuffer.getLength()));
-	
+
     sInBuffer = rBuffer;
     nOffset = nNewOffset;
     nLength = nNewLength;
 }
-void SAL_CALL Deflater::setLevel( sal_Int32 nNewLevel ) 
+void SAL_CALL Deflater::setLevel( sal_Int32 nNewLevel )
 {
 	if ((nNewLevel < 0 || nNewLevel > 9) && nNewLevel != DEFAULT_COMPRESSION)
 	{
@@ -157,32 +157,32 @@ void SAL_CALL Deflater::setLevel( sal_Int32 nNewLevel )
 		bSetParams = sal_True;
 	}
 }
-sal_Bool SAL_CALL Deflater::needsInput(  ) 
+sal_Bool SAL_CALL Deflater::needsInput(  )
 {
 	return nLength <=0;
 }
-void SAL_CALL Deflater::finish(  ) 
+void SAL_CALL Deflater::finish(  )
 {
 	bFinish = sal_True;
 }
-sal_Bool SAL_CALL Deflater::finished(  ) 
+sal_Bool SAL_CALL Deflater::finished(  )
 {
 	return bFinished;
 }
-sal_Int32 SAL_CALL Deflater::doDeflateSegment( uno::Sequence< sal_Int8 >& rBuffer, sal_Int32 nNewOffset, sal_Int32 nNewLength ) 
+sal_Int32 SAL_CALL Deflater::doDeflateSegment( uno::Sequence< sal_Int8 >& rBuffer, sal_Int32 nNewOffset, sal_Int32 nNewLength )
 {
     OSL_ASSERT( !(nNewOffset < 0 || nNewLength < 0 || nNewOffset + nNewLength > rBuffer.getLength()));
     return doDeflateBytes(rBuffer, nNewOffset, nNewLength);
 }
-sal_Int32 SAL_CALL Deflater::getTotalIn(  ) 
+sal_Int32 SAL_CALL Deflater::getTotalIn(  )
 {
 	return pStream->total_in;
 }
-sal_Int32 SAL_CALL Deflater::getTotalOut(  ) 
+sal_Int32 SAL_CALL Deflater::getTotalOut(  )
 {
 	return pStream->total_out;
 }
-void SAL_CALL Deflater::reset(  ) 
+void SAL_CALL Deflater::reset(  )
 {
 #if defined SYSTEM_ZLIB || !defined ZLIB_PREFIXB
 	deflateReset(pStream);
@@ -193,7 +193,7 @@ void SAL_CALL Deflater::reset(  )
 	bFinished = sal_False;
 	nOffset = nLength = 0;
 }
-void SAL_CALL Deflater::end(  ) 
+void SAL_CALL Deflater::end(  )
 {
 	if (pStream != NULL)
 	{

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -75,11 +75,11 @@ void PresenterAnimator::Process (void)
     ::osl::MutexGuard aGuard (m_aMutex);
 
     mnNextTime = 0;
-    
+
     const sal_uInt64 nCurrentTime (GetCurrentTime());
 
     ActivateAnimations(nCurrentTime);
-    
+
     while ( ! maActiveAnimations.empty())
     {
         sal_uInt64 nRequestedTime (maActiveAnimations.begin()->first);
@@ -87,9 +87,9 @@ void PresenterAnimator::Process (void)
 
         if (nRequestedTime > nCurrentTime)
             break;
-        
+
         maActiveAnimations.erase(maActiveAnimations.begin());
-        
+
         const double nTotalDuration (double(pAnimation->GetEndTime() - pAnimation->GetStartTime()));
         double nProgress (nTotalDuration > 0 ? (nCurrentTime - pAnimation->GetStartTime()) / nTotalDuration : 1);
         if (nProgress <= 0)
@@ -100,7 +100,7 @@ void PresenterAnimator::Process (void)
         OSL_TRACE("running animation step at %f (requested was %f) %f\n",
             nCurrentTime/1e6, nRequestedTime/1e6, nProgress);
         pAnimation->Run(nProgress, nCurrentTime);
-        
+
         if (nCurrentTime < pAnimation->GetEndTime())
             maActiveAnimations.insert(
                 AnimationList::value_type(

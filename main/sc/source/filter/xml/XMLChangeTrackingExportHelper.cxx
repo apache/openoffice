@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -122,7 +122,7 @@ void ScChangeTrackingExportHelper::WriteChangeInfo(const ScChangeAction* pAction
 
     {
     	SvXMLElementExport aCreatorElem( rExport, XML_NAMESPACE_DC,
-	    									XML_CREATOR, sal_True, 
+	    									XML_CREATOR, sal_True,
 		    								sal_False );
         rtl::OUString sAuthor(pAction->GetUser());
 	    rExport.Characters(sAuthor);
@@ -132,10 +132,10 @@ void ScChangeTrackingExportHelper::WriteChangeInfo(const ScChangeAction* pAction
 	    rtl::OUStringBuffer sDate;
 	    ScXMLConverter::ConvertDateTimeToString(pAction->GetDateTimeUTC(), sDate);
 		SvXMLElementExport aDateElem( rExport, XML_NAMESPACE_DC,
-										  XML_DATE, sal_True, 
+										  XML_DATE, sal_True,
 										  sal_False );
 		rExport.Characters(sDate.makeStringAndClear());
-	} 	
+	}
 
 	rtl::OUString sComment(pAction->GetComment());
 	if (sComment.getLength())
@@ -415,12 +415,12 @@ void ScChangeTrackingExportHelper::WriteFormulaCell(const ScBaseCell* pCell, con
 				rExport.AddAttribute(XML_NAMESPACE_TABLE, XML_MATRIX_COVERED, XML_TRUE);
 			}
 			rtl::OUString sMatrixFormula = sOUFormula.copy(1, sOUFormula.getLength() - 2);
-            rtl::OUString sQValue = rExport.GetNamespaceMap().GetQNameByKey( nNamespacePrefix, sMatrixFormula, sal_False ); 
+            rtl::OUString sQValue = rExport.GetNamespaceMap().GetQNameByKey( nNamespacePrefix, sMatrixFormula, sal_False );
 			rExport.AddAttribute(XML_NAMESPACE_TABLE, XML_FORMULA, sQValue);
 		}
 		else
         {
-            rtl::OUString sQValue = rExport.GetNamespaceMap().GetQNameByKey( nNamespacePrefix, sFormula, sal_False ); 
+            rtl::OUString sQValue = rExport.GetNamespaceMap().GetQNameByKey( nNamespacePrefix, sFormula, sal_False );
 			rExport.AddAttribute(XML_NAMESPACE_TABLE, XML_FORMULA, sQValue);
         }
 		if (pFormulaCell->IsValue())

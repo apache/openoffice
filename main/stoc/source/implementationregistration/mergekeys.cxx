@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -45,7 +45,7 @@ struct Link
 {
     OUString m_name;
     OUString m_target;
-    
+
     inline Link( OUString const & name, OUString const & target )
         : m_name( name )
         , m_target( target )
@@ -70,7 +70,7 @@ static void mergeKeys(
             OUSTR("destination key is null or invalid!"),
             Reference<XInterface>() );
     }
-    
+
     // write value
     switch (xSource->getValueType())
     {
@@ -101,7 +101,7 @@ static void mergeKeys(
         OSL_ASSERT(false);
         break;
     }
-    
+
     // sub keys
     Sequence< OUString > sourceKeys( xSource->getKeyNames() );
     OUString const * pSourceKeys = sourceKeys.getConstArray();
@@ -114,7 +114,7 @@ static void mergeKeys(
         {
             name = name.copy( nSlash +1 );
         }
-        
+
         if (xSource->getKeyType( name ) == registry::RegistryKeyType_KEY)
         {
             // try to open exisiting dest key or create new one
@@ -140,7 +140,7 @@ static void mergeKeys(
                     xDest->deleteKey( name );
                 }
             }
-            
+
             links.push_back( Link(
                 pSourceKeys[ nPos ], // abs path
                 xSource->getResolvedName( name ) // abs resolved name
@@ -167,11 +167,11 @@ void mergeKeys(
                           "destination registry is read-only!  cannot merge!") ),
             Reference< XInterface >() );
     }
-    
+
     t_links links;
     links.reserve( 16 );
     mergeKeys( xDest, xSource, links );
-    
+
     for ( size_t nPos = links.size(); nPos--; )
     {
         Link const & r = links[ nPos ];

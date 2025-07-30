@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -749,7 +749,7 @@ void AssignmentPersistentData::Commit()
 			OFileNotation aFileNotation( aURL.GetMainURL( INetURLObject::NO_DECODE ) );
 			sName = aFileNotation.get(OFileNotation::N_SYSTEM);
         }
-        
+
 		m_aDatasource.SetText(sName);
 		m_aTable.SetText(m_pImpl->pConfigData->getCommand());
 		// we ignore the CommandType: only tables are supported
@@ -867,7 +867,7 @@ void AssignmentPersistentData::Commit()
             if ( m_pImpl->bWorkingPersistent )
             {
                 String sSelectedDS = lcl_getSelectedDataSource(  m_aDatasource );
-                
+
 			    // get the data source the user has chosen and let it build a connection
                 INetURLObject aURL( sSelectedDS );
                 if ( aURL.GetProtocol() != INET_PROT_NOT_VALID || m_xDatabaseContext->hasByName(sSelectedDS) )
@@ -959,7 +959,7 @@ void AssignmentPersistentData::Commit()
 		{
 			DBG_ERROR("AddressBookSourceDialog::resetFields: could not retrieve the table columns!");
 		}
-		
+
 
 		const ::rtl::OUString* pColumnNames = aColumnNames.getConstArray();
 		const ::rtl::OUString* pEnd = pColumnNames + aColumnNames.getLength();
@@ -1201,7 +1201,7 @@ void AssignmentPersistentData::Commit()
 				++aLogical, ++aAssignment
 			)
 			m_pImpl->pConfigData->setFieldAssignment(*aLogical, *aAssignment);
-		
+
 
 		EndDialog(RET_OK);
 		return 0L;
@@ -1238,7 +1238,7 @@ void AssignmentPersistentData::Commit()
 				{
                     ::rtl::OUString sName;
                     xProp->getPropertyValue(::rtl::OUString(RTL_CONSTASCII_USTRINGPARAM("DataSourceName"))) >>= sName;
-                    
+
                     INetURLObject aURL( sName );
                     if( aURL.GetProtocol() != INET_PROT_NOT_VALID )
 			        {
@@ -1261,7 +1261,7 @@ void AssignmentPersistentData::Commit()
 
 		// re-fill the data source list
 		// try to preserve the current selection
-		
+
 //		initializeDatasources();
 
 		return 0L;

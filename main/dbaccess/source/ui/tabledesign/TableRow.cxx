@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -45,14 +45,14 @@ using namespace ::com::sun::star::beans;
 //========================================================================
 DBG_NAME(OTableRow)
 //------------------------------------------------------------------------------
-OTableRow::OTableRow() 
+OTableRow::OTableRow()
 	:m_pActFieldDescr( NULL )
 	,m_nPos( -1 )
 	,m_bReadOnly( false )
 	,m_bOwnsDescriptions(false)
 {
 	DBG_CTOR(OTableRow,NULL);
-}												 
+}
 //------------------------------------------------------------------------------
 OTableRow::OTableRow(const Reference< XPropertySet >& xAffectedCol)
 	:m_pActFieldDescr( NULL )
@@ -85,7 +85,7 @@ OTableRow::~OTableRow()
 {
 	DBG_DTOR(OTableRow,NULL);
 	if(m_bOwnsDescriptions)
-		delete m_pActFieldDescr;	
+		delete m_pActFieldDescr;
 }
 
 //------------------------------------------------------------------------------
@@ -141,7 +141,7 @@ namespace dbaui
 				_rStr << sal_Int32(1);
 				_rStr << nValue;
 			}
-			else 
+			else
 			{
 				_rStr << sal_Int32(2);
 				_rStr.WriteByteString(::comphelper::getString(aValue));
@@ -169,13 +169,13 @@ namespace dbaui
 		sal_Int32 nValue = 0;
 		_rStr >> nValue;
 		if ( nValue )
-		{		
+		{
 			OFieldDescription* pFieldDesc = new OFieldDescription();
 			_rRow.m_pActFieldDescr = pFieldDesc;
 			String sValue;
 			_rStr.ReadByteString(sValue);
 			pFieldDesc->SetName(sValue);
-			
+
 			_rStr.ReadByteString(sValue);
 			pFieldDesc->SetDescription(sValue);
             _rStr.ReadByteString(sValue);
@@ -200,7 +200,7 @@ namespace dbaui
 
 			pFieldDesc->SetControlDefault(aControlDefault);
 
-			
+
 			_rStr >> nValue;
 			pFieldDesc->SetTypeValue(nValue);
 

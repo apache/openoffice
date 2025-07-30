@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -466,7 +466,7 @@ Polygon::Polygon( const Rectangle& rRect, sal_uIntPtr nHorzRound, sal_uIntPtr nV
 			sal_uInt16			i, nEnd, nSize4 = pEllipsePoly->GetSize() >> 2;
 
 			mpImplPolygon = new ImplPolygon( pEllipsePoly->GetSize() + 1 );
-			
+
 			const Point*	pSrcAry = pEllipsePoly->GetConstPointAry();
 			Point*			pDstAry = mpImplPolygon->mpPointAry;
 
@@ -621,12 +621,12 @@ Polygon::Polygon( const Rectangle& rBound,
 
 // -----------------------------------------------------------------------
 
-Polygon::Polygon( const Point& rBezPt1, const Point& rCtrlPt1, 
+Polygon::Polygon( const Point& rBezPt1, const Point& rCtrlPt1,
 				  const Point& rBezPt2, const Point& rCtrlPt2,
 				  sal_uInt16 nPoints )
 {
 	DBG_CTOR( Polygon, NULL );
-	
+
 	nPoints = ( 0 == nPoints ) ? 25 : ( ( nPoints < 2 ) ? 2 : nPoints );
 
 	const double	fInc = 1.0 / ( nPoints - 1 );
@@ -821,7 +821,7 @@ sal_Bool Polygon::IsRect() const
 void Polygon::SetSize( sal_uInt16 nNewSize )
 {
 	DBG_CHKTHIS( Polygon, NULL );
-	
+
 	if( nNewSize != mpImplPolygon->mnPoints )
 	{
 		ImplMakeUnique();
@@ -935,13 +935,13 @@ void Polygon::Optimize( sal_uIntPtr nOptimizeFlags, const PolyOptimizeData* pDat
 
 		if( nSize > 1 )
 		{
-			if( ( nOptimizeFlags & POLY_OPTIMIZE_CLOSE ) && 
+			if( ( nOptimizeFlags & POLY_OPTIMIZE_CLOSE ) &&
 				( mpImplPolygon->mpPointAry[ 0 ] != mpImplPolygon->mpPointAry[ nSize - 1 ] ) )
 			{
 				SetSize( mpImplPolygon->mnPoints + 1 );
 				mpImplPolygon->mpPointAry[ mpImplPolygon->mnPoints - 1 ] = mpImplPolygon->mpPointAry[ 0 ];
 			}
-			else if( ( nOptimizeFlags & POLY_OPTIMIZE_OPEN ) && 
+			else if( ( nOptimizeFlags & POLY_OPTIMIZE_OPEN ) &&
 					 ( mpImplPolygon->mpPointAry[ 0 ] == mpImplPolygon->mpPointAry[ nSize - 1 ] ) )
 			{
 				const Point& rFirst = mpImplPolygon->mpPointAry[ 0 ];
@@ -957,8 +957,8 @@ void Polygon::Optimize( sal_uIntPtr nOptimizeFlags, const PolyOptimizeData* pDat
 
 // =======================================================================
 
-/* Recursively subdivide cubic bezier curve via deCasteljau. 
-    
+/* Recursively subdivide cubic bezier curve via deCasteljau.
+
    @param rPointIter
    Output iterator, where the subdivided polylines are written to.
 
@@ -968,8 +968,8 @@ void Polygon::Optimize( sal_uIntPtr nOptimizeFlags, const PolyOptimizeData* pDat
    @param P*
    Exactly four points, interpreted as support and control points of
    a cubic bezier curve. Must be in device coordinates, since stop
-   criterion is based on the following assumption: the device has a 
-   finite resolution, it is thus sufficient to stop subdivision if the 
+   criterion is based on the following assumption: the device has a
+   finite resolution, it is thus sufficient to stop subdivision if the
    curve does not deviate more than one pixel from a straight line.
 
 */
@@ -999,7 +999,7 @@ static void ImplAdaptiveSubdivide( ::std::back_insert_iterator< ::std::vector< P
     const double fJ1y( P2y - P1y - 1.0/3.0*(P4y - P1y) );
     const double fJ2x( P3x - P1x - 2.0/3.0*(P4x - P1x) );
     const double fJ2y( P3y - P1y - 2.0/3.0*(P4y - P1y) );
-    const double distance2( ::std::max( fJ1x*fJ1x + fJ1y*fJ1y, 
+    const double distance2( ::std::max( fJ1x*fJ1x + fJ1y*fJ1y,
                                         fJ2x*fJ2x + fJ2y*fJ2y) );
 
     // stop if error measure does not improve anymore. This is a
@@ -1056,7 +1056,7 @@ void Polygon::AdaptiveSubdivide( Polygon& rResult, const double d ) const
 		for(i=0; i<nPts;)
 		{
 			if( ( i + 3 ) < nPts )
-            { 
+            {
                 sal_uInt8 P1( mpImplPolygon->mpFlagAry[ i ] );
                 sal_uInt8 P4( mpImplPolygon->mpFlagAry[ i + 3 ] );
 
@@ -1107,7 +1107,7 @@ void Polygon::GetIntersection( const PolyPolygon& rPolyPoly, PolyPolygon& rResul
 
 // -----------------------------------------------------------------------
 
-void Polygon::GetUnion( const PolyPolygon& rPolyPoly, PolyPolygon& rResult ) const 
+void Polygon::GetUnion( const PolyPolygon& rPolyPoly, PolyPolygon& rResult ) const
 {
 	const PolyPolygon aTmp( *this );
 	aTmp.GetUnion( rPolyPoly, rResult );
@@ -1136,7 +1136,7 @@ void Polygon::ImplReduceEdges( Polygon& rPoly, const double& rArea, sal_uInt16 n
 	const double	fBound = 2000.0 * ( 100 - nPercent ) * 0.01;
 	sal_uInt16			nNumNoChange = 0, nNumRuns = 0;
 
-	while( nNumNoChange < 2 ) 
+	while( nNumNoChange < 2 )
 	{
 		sal_uInt16	nPntCnt = rPoly.GetSize(), nNewPos = 0;
 		Polygon	aNewPoly( nPntCnt );
@@ -1156,7 +1156,7 @@ void Polygon::ImplReduceEdges( Polygon& rPoly, const double& rArea, sal_uInt16 n
 				Vector2D	aVec2( rPoly[ n ] ); aVec2 -= rPoly[ nIndPrev ];
 				Vector2D	aVec3( rPoly[ nIndNext ] ); aVec3 -= rPoly[ n ];
 				Vector2D	aVec4( rPoly[ nIndNextNext ] ); aVec4 -= rPoly[ nIndNext ];
-				double		fDist1 = aVec1.GetLength(), fDist2 = aVec2.GetLength(); 
+				double		fDist1 = aVec1.GetLength(), fDist2 = aVec2.GetLength();
 				double		fDist3 = aVec3.GetLength(), fDist4 = aVec4.GetLength();
 				double		fTurnB = aVec2.Normalize().Scalar( aVec3.Normalize() );
 
@@ -1184,7 +1184,7 @@ void Polygon::ImplReduceEdges( Polygon& rPoly, const double& rArea, sal_uInt16 n
 					else
 						fGradNext = acos( fTurnNext ) / ( aVec3.IsNegative( aVec4 ) ? -F_PI180 : F_PI180 );
 
-					if( ( fGradPrev > 0.0 && fGradB < 0.0 && fGradNext > 0.0 ) || 
+					if( ( fGradPrev > 0.0 && fGradB < 0.0 && fGradNext > 0.0 ) ||
 						( fGradPrev < 0.0 && fGradB > 0.0 && fGradNext < 0.0 ) )
 					{
 						if( ( fLenFact < ( FSQRT2 + SMALL_DVALUE ) ) &&
@@ -1202,7 +1202,7 @@ void Polygon::ImplReduceEdges( Polygon& rPoly, const double& rArea, sal_uInt16 n
 						else if( fRelLen > 1.0 )
 							fRelLen = 1.0;
 
-						if( ( (sal_uInt32) ( ( ( fLenFact - 1.0 ) * 1000000.0 ) + 0.5 ) < fBound ) && 
+						if( ( (sal_uInt32) ( ( ( fLenFact - 1.0 ) * 1000000.0 ) + 0.5 ) < fBound ) &&
 							( fabs( fGradB ) <= ( fRelLen * fBound * 0.01 ) ) )
 						{
 							bDeletePoint = sal_True;
@@ -1592,7 +1592,7 @@ void ImplEdgePointFilter::LastPoint()
 void Polygon::Clip( const Rectangle& rRect, sal_Bool bPolygon )
 {
     // #105251# Justify rect befor edge filtering
-    Rectangle				aJustifiedRect( rRect );    
+    Rectangle				aJustifiedRect( rRect );
     aJustifiedRect.Justify();
 
 	sal_uInt16					nSourceSize = mpImplPolygon->mnPoints;
@@ -1628,7 +1628,7 @@ Rectangle Polygon::GetBoundRect() const
 	DBG_CHKTHIS( Polygon, NULL );
     // Removing the assert. Bezier curves have the attribute that each single
     // curve segment defined by four points can not exit the four-point polygon
-    // defined by that points. This allows to say that the curve segment can also 
+    // defined by that points. This allows to say that the curve segment can also
     // never leave the Range of it's defining points.
     // The result is that Polygon::GetBoundRect() may not create the minimal
     // BoundRect of the Polygon (to get that, use basegfx::B2DPolygon classes),
@@ -1650,7 +1650,7 @@ Rectangle Polygon::GetBoundRect() const
 	for ( sal_uInt16 i = 0; i < nCount; i++ )
 	{
 		pPt = &(mpImplPolygon->mpPointAry[i]);
-	
+
 		if ( pPt->X() < nXMin )
 			nXMin = pPt->X();
 		if ( pPt->X() > nXMax )
@@ -2139,7 +2139,7 @@ void impCorrectContinuity(basegfx::B2DPolygon& roPolygon, sal_uInt32 nIndex, sal
             // it needs to be corrected to be able to detect the continuity in this points
             // correctly.
             //
-            // We only have the integer data here (already in double precision form, but no mantisses 
+            // We only have the integer data here (already in double precision form, but no mantisses
             // used), so the best correction is to use:
             //
             // for C1: The longest vector since it potentially has best preserved the original vector.
@@ -2240,7 +2240,7 @@ basegfx::B2DPolygon Polygon::getB2DPolygon() const
 
 			// if exist, remove double first/last points, set closed and correct control points
 			basegfx::tools::checkClosed(aRetval);
-			
+
 			if(aRetval.isClosed())
 			{
 				// closeWithGeometryChange did really close, so last point(s) were removed.
@@ -2369,7 +2369,7 @@ Polygon::Polygon(const basegfx::B2DPolygon& rPolygon)
 			}
 
 			DBG_ASSERT(nArrayInsert <= nMaxTargetCount, "Polygon::Polygon from basegfx::B2DPolygon: wrong max point count estimation (!)");
-			
+
 			if(nArrayInsert != nMaxTargetCount)
 			{
 				mpImplPolygon->ImplSetSize(static_cast< sal_uInt16 >(nArrayInsert), true);

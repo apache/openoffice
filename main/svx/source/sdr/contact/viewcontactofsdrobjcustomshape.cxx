@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -49,7 +49,7 @@ namespace sdr
 		ViewContactOfSdrObjCustomShape::~ViewContactOfSdrObjCustomShape()
 		{
 		}
-	
+
         basegfx::B2DRange ViewContactOfSdrObjCustomShape::getCorrectedTextBoundRect() const
         {
 			const Rectangle aObjectBound(GetCustomShapeObj().GetGeoRect());
@@ -66,7 +66,7 @@ namespace sdr
                 // only correct when rotation and/or shear is used
                 if(rGeoStat.nShearWink || rGeoStat.nDrehWink )
 			    {
-                    // text range needs to be corrected by 
+                    // text range needs to be corrected by
                     // aObjectRange.getCenter() - aRotObjectRange.getCenter() since it's
                     // defined differently by using rotation around object center. Start
                     // with positive part
@@ -113,8 +113,8 @@ namespace sdr
             // a TextPath FontworkGallery object
 			const drawinglayer::attribute::SdrShadowTextAttribute aAttribute(
 				drawinglayer::primitive2d::createNewSdrShadowTextAttribute(
-					rItemSet, 
-					GetCustomShapeObj().getText(0), 
+					rItemSet,
+					GetCustomShapeObj().getText(0),
 					GetCustomShapeObj().IsTextPath()));
 			drawinglayer::primitive2d::Primitive2DSequence xGroup;
 			bool bHasText(!aAttribute.getText().isDefault());
@@ -126,7 +126,7 @@ namespace sdr
 			if(pSdrObjRepresentation)
 			{
 				SdrObjListIter aIterator(*pSdrObjRepresentation);
-				
+
 				while(aIterator.IsMore())
 				{
 					SdrObject& rCandidate = *aIterator.Next();
@@ -170,7 +170,7 @@ namespace sdr
                         {
 						    // move relative to unrotated object range
 						    aTextBoxMatrix.translate(
-                                aTextRange.getMinX() - aObjectRange.getMinimum().getX(), 
+                                aTextRange.getMinX() - aObjectRange.getMinimum().getX(),
                                 aTextRange.getMinY() - aObjectRange.getMinimum().getY());
                         }
 
@@ -209,9 +209,9 @@ namespace sdr
 				// create primitive
 				const drawinglayer::primitive2d::Primitive2DReference xReference(
                     new drawinglayer::primitive2d::SdrCustomShapePrimitive2D(
-					    aAttribute, 
-					    xGroup, 
-					    aTextBoxMatrix, 
+					    aAttribute,
+					    xGroup,
+					    aTextBoxMatrix,
 					    bWordWrap,
 					    b3DShape,
 					    false));		// #SJ# New parameter to force to clipped BlockText for SC
@@ -223,7 +223,7 @@ namespace sdr
             {
 			    const Rectangle aObjectBound(GetCustomShapeObj().GetGeoRect());
                 const basegfx::B2DRange aObjectRange(
-				    aObjectBound.Left(), aObjectBound.Top(), 
+				    aObjectBound.Left(), aObjectBound.Top(),
 				    aObjectBound.Right(), aObjectBound.Bottom());
 
 				// create object matrix
@@ -234,9 +234,9 @@ namespace sdr
 					aObjectRange.getWidth(), aObjectRange.getHeight(), fShearX, fRotate,
 					aObjectRange.getMinX(), aObjectRange.getMinY()));
 
-                drawinglayer::primitive2d::appendPrimitive2DReferenceToPrimitive2DSequence(xRetval, 
+                drawinglayer::primitive2d::appendPrimitive2DReferenceToPrimitive2DSequence(xRetval,
 				    drawinglayer::primitive2d::createHiddenGeometryPrimitives2D(
-					    false, 
+					    false,
                         aObjectMatrix));
             }
 

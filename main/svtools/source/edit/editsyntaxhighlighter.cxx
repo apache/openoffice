@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -30,14 +30,14 @@
 #include <svtools/txtattr.hxx>
 
 
-MultiLineEditSyntaxHighlight::MultiLineEditSyntaxHighlight( Window* pParent, WinBits nWinStyle, 
+MultiLineEditSyntaxHighlight::MultiLineEditSyntaxHighlight( Window* pParent, WinBits nWinStyle,
 	HighlighterLanguage aLanguage): MultiLineEdit(pParent,nWinStyle), mbDoBracketHilight(true)
 {
 	EnableUpdateData(300);
 	aHighlighter.initialize( aLanguage );
 }
 
-MultiLineEditSyntaxHighlight::MultiLineEditSyntaxHighlight( Window* pParent, const ResId& rResId , 
+MultiLineEditSyntaxHighlight::MultiLineEditSyntaxHighlight( Window* pParent, const ResId& rResId ,
 	HighlighterLanguage aLanguage): MultiLineEdit(pParent,rResId), mbDoBracketHilight(true)
 {
 	EnableUpdateData(300);
@@ -57,7 +57,7 @@ bool MultiLineEditSyntaxHighlight::IsBracketHilight()
 {
 	return mbDoBracketHilight;
 }
-		
+
 void MultiLineEditSyntaxHighlight::SetText(const String& rNewText)
 {
 	MultiLineEdit::SetText(rNewText);
@@ -75,7 +75,7 @@ void MultiLineEditSyntaxHighlight::DoBracketHilight(sal_uInt16 aKey)
 	switch (aKey)
 	{
 		case '\'':	// no break
-		case '"': 
+		case '"':
 		{
 			aChar = aKey;
 			break;
@@ -106,7 +106,7 @@ void MultiLineEditSyntaxHighlight::DoBracketHilight(sal_uInt16 aKey)
 
 			String aLine( GetTextEngine()->GetText( aPara ) );
 			for (sal_uInt16 i = ((unsigned long)aPara==nStartPara) ? aStartPos-1 : (sal_uInt16)(aLine.Len()-1); i>0; --i)
-			{	
+			{
 				if (aLine.GetChar(i)==aChar)
 				{
 					if (!aCount)
@@ -185,7 +185,7 @@ void MultiLineEditSyntaxHighlight::UpdateData()
 	{
 		String aLine( GetTextEngine()->GetText( nLine ) );
 		Range aChanges = aHighlighter.notifyChange( nLine, 0, &aLine, 1 );
-			
+
 		GetTextEngine()->RemoveAttribs( nLine, sal_True );
 		HighlightPortions aPortions;
 		aHighlighter.getHighlightPortions( nLine, aLine, aPortions );

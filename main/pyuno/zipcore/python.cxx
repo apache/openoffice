@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -99,7 +99,7 @@ int wmain(int argc, wchar_t ** argv, wchar_t **) {
     wchar_t * bootstrapEnd = tools::buildPath(
         bootstrap + MY_LENGTH(L"vnd.sun.star.pathname:"), path, pathEnd,
         MY_STRING(L"fundamental.ini"));
-    if (bootstrapEnd == NULL) 
+    if (bootstrapEnd == NULL)
     {
         exit(EXIT_FAILURE);
     }
@@ -157,7 +157,7 @@ int wmain(int argc, wchar_t ** argv, wchar_t **) {
     if (pythonexeEnd == NULL) {
         exit(EXIT_FAILURE);
     }
-    
+
     std::size_t clSize = MY_LENGTH(L"\"") + 4 * (pythonexeEnd - pythonexe) +
         MY_LENGTH(L"\"\0"); //TODO: overflow
         // 4 * len: each char preceded by backslash, each trailing backslash
@@ -183,7 +183,7 @@ int wmain(int argc, wchar_t ** argv, wchar_t **) {
         MultiByteToWideChar(CP_ACP, 0, argv[i], -1, buff, nNeededWStrBuffSize);
         buff[nNeededWStrBuffSize] = 0;
         cp = encode(cp, buff);
-        delete [] buff;        
+        delete [] buff;
 #else
         cp = encode(cp, argv[i]);
 #endif
@@ -207,7 +207,7 @@ int wmain(int argc, wchar_t ** argv, wchar_t **) {
     wchar_t * value = new wchar_t[
        (pathEnd - path) + MY_LENGTH(L";") +
        (n == 0 ? 0 : MY_LENGTH(L";") + (n - 1)) + 1]; //TODO: overflow
- 
+
     wsprintfW(value, L"%s%s%s", path, n == 0 ? L"" : L";", orig);
 
     if (!SetEnvironmentVariableW(L"PATH", value)) {

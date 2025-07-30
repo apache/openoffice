@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -130,7 +130,7 @@ class Invocation_Impl
     , public XTypeProvider
 {
 public:
-	Invocation_Impl( const Any & rAdapted, const Reference<XTypeConverter> &, 
+	Invocation_Impl( const Any & rAdapted, const Reference<XTypeConverter> &,
 										   const Reference<XIntrospection> &,
 										   const Reference<XIdlReflection> & );
 	virtual ~Invocation_Impl();
@@ -140,7 +140,7 @@ public:
 	virtual void		SAL_CALL acquire() throw() { OWeakObject::acquire(); }
 	virtual void		SAL_CALL release() throw() { OWeakObject::release(); }
 
-	
+
 	// XTypeProvider
     virtual Sequence< ::com::sun::star::uno::Type > SAL_CALL getTypes(  )
 	   throw(RuntimeException);
@@ -152,55 +152,55 @@ public:
 
 	// ? XTool
 	virtual void		SAL_CALL setMaterial( const Any& rMaterial );
-	
+
 	// XInvocation
     virtual Reference<XIntrospectionAccess> SAL_CALL getIntrospection(void) throw( RuntimeException );
-    virtual Any SAL_CALL invoke(const OUString& FunctionName, const Sequence< Any >& Params, Sequence< sal_Int16 >& OutParamIndex, Sequence< Any >& OutParam) 
+    virtual Any SAL_CALL invoke(const OUString& FunctionName, const Sequence< Any >& Params, Sequence< sal_Int16 >& OutParamIndex, Sequence< Any >& OutParam)
 		throw( IllegalArgumentException, CannotConvertException, InvocationTargetException, RuntimeException );
-    virtual void SAL_CALL setValue(const OUString& PropertyName, const Any& Value) 
+    virtual void SAL_CALL setValue(const OUString& PropertyName, const Any& Value)
 		throw( UnknownPropertyException, CannotConvertException, InvocationTargetException, RuntimeException );
-    virtual Any SAL_CALL getValue(const OUString& PropertyName) 
+    virtual Any SAL_CALL getValue(const OUString& PropertyName)
 		throw( UnknownPropertyException, RuntimeException );
     virtual sal_Bool SAL_CALL hasMethod(const OUString& Name) throw( RuntimeException );
     virtual sal_Bool SAL_CALL hasProperty(const OUString& Name) throw( RuntimeException );
 
     // XInvocation2
-    virtual Sequence< OUString > SAL_CALL getMemberNames(  ) 
+    virtual Sequence< OUString > SAL_CALL getMemberNames(  )
 		throw( RuntimeException );
-    virtual Sequence< InvocationInfo > SAL_CALL getInfo(  ) 
+    virtual Sequence< InvocationInfo > SAL_CALL getInfo(  )
 		throw( RuntimeException );
-    virtual InvocationInfo SAL_CALL getInfoForName( const OUString& aName, sal_Bool bExact ) 
+    virtual InvocationInfo SAL_CALL getInfoForName( const OUString& aName, sal_Bool bExact )
 		throw( IllegalArgumentException, RuntimeException );
 
 	// All Access and Container methods are not thread save
 	// XElementAccess
 	virtual Type SAL_CALL getElementType(void) throw( RuntimeException )
 		{ return _xElementAccess->getElementType(); }
-	
+
 	virtual sal_Bool SAL_CALL hasElements(void) throw( RuntimeException )
 		{ return _xElementAccess->hasElements(); }
-	
+
 	// XNameContainer
     virtual void SAL_CALL insertByName( const OUString& Name, const Any& Element )
 		throw( IllegalArgumentException, ElementExistException, WrappedTargetException, RuntimeException )
 		{ _xNameContainer->insertByName( Name, Element ); }
-	
+
     virtual void SAL_CALL replaceByName( const OUString& Name, const Any& Element )
 		throw( IllegalArgumentException, NoSuchElementException, WrappedTargetException, RuntimeException )
 		{ _xNameContainer->replaceByName( Name, Element ); }
-	
+
     virtual void SAL_CALL removeByName( const OUString& Name )
 		throw( NoSuchElementException, WrappedTargetException, RuntimeException )
 		{ _xNameContainer->removeByName( Name ); }
-	
+
 	// XNameAccess
     virtual Any SAL_CALL getByName( const OUString& Name )
 		throw( NoSuchElementException, WrappedTargetException, RuntimeException )
 		{ return _xNameAccess->getByName( Name ); }
-	
+
     virtual Sequence<OUString> SAL_CALL getElementNames(void) throw( RuntimeException )
 		{ return _xNameAccess->getElementNames(); }
-	
+
     virtual sal_Bool SAL_CALL hasByName( const OUString& Name ) throw( RuntimeException )
 		{ return _xNameAccess->hasByName( Name ); }
 
@@ -208,31 +208,31 @@ public:
     virtual void SAL_CALL insertByIndex( sal_Int32 Index, const Any& Element )
 		throw( IllegalArgumentException, IndexOutOfBoundsException, WrappedTargetException, RuntimeException )
 		{ _xIndexContainer->insertByIndex( Index, Element ); }
-	
+
     virtual void SAL_CALL replaceByIndex( sal_Int32 Index, const Any& Element )
 		throw( IllegalArgumentException, IndexOutOfBoundsException, WrappedTargetException, RuntimeException )
 		{ _xIndexContainer->replaceByIndex( Index, Element ); }
-	
+
     virtual void SAL_CALL removeByIndex( sal_Int32 Index )
 		throw( IndexOutOfBoundsException, WrappedTargetException, RuntimeException )
 		{ _xIndexContainer->removeByIndex( Index ); }
-	
+
 	// XIndexAccess
     virtual sal_Int32 SAL_CALL getCount(void) throw( RuntimeException )
 		{ return _xIndexAccess->getCount(); }
-	
-    virtual Any SAL_CALL getByIndex( sal_Int32 Index ) 
+
+    virtual Any SAL_CALL getByIndex( sal_Int32 Index )
 		throw( IndexOutOfBoundsException, WrappedTargetException, RuntimeException )
 		{ return _xIndexAccess->getByIndex( Index ); }
-	
+
 	// XEnumerationAccess
     virtual Reference<XEnumeration> SAL_CALL createEnumeration(void) throw( RuntimeException )
 		{ return _xEnumerationAccess->createEnumeration(); }
 
 	// XExactName
     virtual OUString SAL_CALL getExactName( const OUString& rApproximateName ) throw( RuntimeException );
-		
-	
+
+
 	//=====================================================================================================
 private:
 	void getInfoSequenceImpl( Sequence< OUString >* pStringSeq, Sequence< InvocationInfo >* pInfoSeq );
@@ -243,7 +243,7 @@ private:
 	Reference<XTypeConverter>			xTypeConverter;
 	Reference<XIntrospection>			xIntrospection;
 	Reference<XIdlReflection>			xCoreReflection;
-	
+
 	Any								_aMaterial;
 	// _xDirect and (_xIntrospectionAccess, xPropertySet) are exclusive
 	Reference<XInvocation>				_xDirect;
@@ -271,8 +271,8 @@ private:
 //--------------------------------------------------------------------------------------------------
 Invocation_Impl::Invocation_Impl
 (
-	const Any & rAdapted, 
-	const Reference<XTypeConverter> & rTC, 
+	const Any & rAdapted,
+	const Reference<XTypeConverter> & rTC,
 	const Reference<XIntrospection>	& rI,
 	const Reference<XIdlReflection> & rCR
 )
@@ -294,11 +294,11 @@ Invocation_Impl::~Invocation_Impl()
 //##################################################################################################
 
 
-Any SAL_CALL Invocation_Impl::queryInterface( const Type & aType ) 
+Any SAL_CALL Invocation_Impl::queryInterface( const Type & aType )
 	throw( RuntimeException )
 {
 	// PropertySet-Implementation
-	Any a = ::cppu::queryInterface( aType, 
+	Any a = ::cppu::queryInterface( aType,
 								   SAL_STATIC_CAST(XInvocation*, this),
 								   SAL_STATIC_CAST(XMaterialHolder*, this),
 								   SAL_STATIC_CAST(XTypeProvider *,this)	);
@@ -322,7 +322,7 @@ Any SAL_CALL Invocation_Impl::queryInterface( const Type & aType )
 		if( _xNameContainer.is() )
 			return makeAny( Reference< XNameContainer >( SAL_STATIC_CAST(XNameContainer*, this) ) );
 	}
-	else if ( aType == getCppuType( (Reference<XNameAccess>*) NULL ) ) 
+	else if ( aType == getCppuType( (Reference<XNameAccess>*) NULL ) )
 	{
 		if( _xNameAccess.is() )
 			return makeAny( Reference< XNameAccess >( SAL_STATIC_CAST(XNameAccess*, this) ) );
@@ -413,7 +413,7 @@ void Invocation_Impl::setMaterial( const Any& rMaterial )
 		_xNameContainer		= Reference<XNameContainer>::query( _xDirect );
 		_xENDirect			= Reference<XExactName>::query( _xDirect );
 		_xDirect2			= Reference<XInvocation2>::query( _xDirect );
-		
+
 		// only once!!!
 		//_xIntrospectionAccess = XIntrospectionAccessRef();
 		//_xPropertySet			= XPropertySetRef();
@@ -559,7 +559,7 @@ Any Invocation_Impl::getValue( const OUString& PropertyName )
     catch (Exception &)
     {
     }
-    
+
 	throw UnknownPropertyException(
         OUString( RTL_CONSTASCII_USTRINGPARAM("cannot get value ") ) + PropertyName,
         Reference< XInterface >() );
@@ -607,7 +607,7 @@ void Invocation_Impl::setValue( const OUString& PropertyName, const Any& Value )
                     throw RuntimeException(
                         OUString( RTL_CONSTASCII_USTRINGPARAM("no type converter service!") ),
                         Reference< XInterface >() );
-			
+
                 // bei Vorhandensein ersetzen, ansonsten einfuegen
                 if (_xNameContainer->hasByName( PropertyName ))
                     _xNameContainer->replaceByName( PropertyName, aConv );
@@ -651,13 +651,13 @@ Any Invocation_Impl::invoke( const OUString& FunctionName, const Sequence<Any>& 
 {
 	if (_xDirect.is())
 		return _xDirect->invoke( FunctionName, InParams, OutIndizes, OutParams );
-	
+
 	if (_xIntrospectionAccess.is())
 	{
 		// throw NoSuchMethodException if not exist
 		Reference<XIdlMethod> xMethod = _xIntrospectionAccess->getMethod(
 			FunctionName, MethodConcept::ALL ^ MethodConcept::DANGEROUS );
-		
+
 		// ParameterInfos
 		Sequence<ParamInfo> aFParams		= xMethod->getParameterInfos();
 		const ParamInfo* pFParams			= aFParams.getConstArray();
@@ -668,14 +668,14 @@ Any Invocation_Impl::invoke( const OUString& FunctionName, const Sequence<Any>& 
                 OUString( RTL_CONSTASCII_USTRINGPARAM("incorrect number of parameters passed invoking function ") ) + FunctionName,
                 (OWeakObject *) this, (sal_Int16) 1 );
         }
-		
+
 		// IN Parameter
 		const Any* pInParams				= InParams.getConstArray();
-		
+
 		// Introspection Invoke Parameter
 		Sequence<Any> aInvokeParams( nFParamsLen );
 		Any* pInvokeParams					= aInvokeParams.getArray();
-		
+
 		// OUT Indizes
 		OutIndizes.realloc( nFParamsLen );
 		sal_Int16* pOutIndizes				= OutIndizes.getArray();
@@ -687,7 +687,7 @@ Any Invocation_Impl::invoke( const OUString& FunctionName, const Sequence<Any>& 
 			{
 				const ParamInfo& rFParam = pFParams[nPos];
 				const Reference<XIdlClass>& rDestType = rFParam.aType;
-				
+
 				// is IN/INOUT parameter?
 				if (rFParam.aMode != ParamMode_OUT)
 				{
@@ -708,7 +708,7 @@ Any Invocation_Impl::invoke( const OUString& FunctionName, const Sequence<Any>& 
 						throw aExc;
 					}
 				}
-				
+
 				// is OUT/INOUT parameter?
 				if (rFParam.aMode != ParamMode_IN)
 				{
@@ -733,15 +733,15 @@ Any Invocation_Impl::invoke( const OUString& FunctionName, const Sequence<Any>& 
         pOutIndizes		   = OutIndizes.getArray();
         OutParams.realloc( nOutIndex );
         Any* pOutParams = OutParams.getArray();
-			
+
         while (nOutIndex--)
         {
             pOutParams[nOutIndex] = pInvokeParams[ pOutIndizes[nOutIndex] ];
         }
-			
+
         return aRet;
 	}
-	
+
 	RuntimeException aExc;
 	aExc.Context = *this;
 	aExc.Message = OUString( RTL_CONSTASCII_USTRINGPARAM("invocation lacking of introspection access!") );
@@ -758,7 +758,7 @@ struct MemberItem
 	// Defines where the member comes from
 	enum Mode { NAMEACCESS, PROPERTYSET, METHOD } eMode;
 
-	// Index to respective sequence 
+	// Index to respective sequence
 	// (Index to NameAccess sequence for eMode==NAMEACCESS etc.)
 	sal_Int32 nIndex;
 };
@@ -775,7 +775,7 @@ void Invocation_Impl::getInfoSequenceImpl
 	//Sequence< OUString > aStrSeq;
 	//if( !pStringSeq )
 		//pStringSeq = &aStrSeq;
-	
+
 
 	// Get all needed sequences
 	Sequence<OUString> aNameAccessNames;
@@ -791,7 +791,7 @@ void Invocation_Impl::getInfoSequenceImpl
 	{
 		aPropertySeq = _xIntrospectionAccess->getProperties
 			( PropertyConcept::ALL - PropertyConcept::DANGEROUS );
-		
+
 		aMethodSeq = _xIntrospectionAccess->getMethods
 			( MethodConcept::ALL - MethodConcept::DANGEROUS );
 	}
@@ -838,7 +838,7 @@ void Invocation_Impl::getInfoSequenceImpl
 		rItem.nIndex = i;
 	}
 
-	// Setting up result sequences 
+	// Setting up result sequences
 	OUString* pRetStrings = NULL;
 	if( pStringSeq )
 	{
@@ -881,7 +881,7 @@ void Invocation_Impl::getInfoSequenceImpl
 }
 
 // XInvocation2
-Sequence< OUString > SAL_CALL Invocation_Impl::getMemberNames(  ) 
+Sequence< OUString > SAL_CALL Invocation_Impl::getMemberNames(  )
 	throw( RuntimeException )
 {
 	if( _xDirect2.is() )
@@ -893,7 +893,7 @@ Sequence< OUString > SAL_CALL Invocation_Impl::getMemberNames(  )
 	return aRetSeq;
 }
 
-Sequence< InvocationInfo > SAL_CALL Invocation_Impl::getInfo(  ) 
+Sequence< InvocationInfo > SAL_CALL Invocation_Impl::getInfo(  )
 	throw( RuntimeException )
 {
 	if( _xDirect2.is() )
@@ -905,7 +905,7 @@ Sequence< InvocationInfo > SAL_CALL Invocation_Impl::getInfo(  )
 	return aRetSeq;
 }
 
-InvocationInfo SAL_CALL Invocation_Impl::getInfoForName( const OUString& aName, sal_Bool bExact ) 
+InvocationInfo SAL_CALL Invocation_Impl::getInfoForName( const OUString& aName, sal_Bool bExact )
 	throw( IllegalArgumentException, RuntimeException )
 {
 	if( _xDirect2.is() )
@@ -958,7 +958,7 @@ InvocationInfo SAL_CALL Invocation_Impl::getInfoForName( const OUString& aName, 
 // Helper functions to fill InvocationInfo for XNameAccess
 void Invocation_Impl::fillInfoForNameAccess
 (
-	InvocationInfo& rInfo, 
+	InvocationInfo& rInfo,
 	const OUString& aName
 )
 {
@@ -973,9 +973,9 @@ void Invocation_Impl::fillInfoForNameAccess
 }
 
 void Invocation_Impl::fillInfoForProperty
-( 
-	InvocationInfo& rInfo, 
-	const Property& rProp 
+(
+	InvocationInfo& rInfo,
+	const Property& rProp
 )
 {
 	rInfo.aName = rProp.Name;
@@ -986,7 +986,7 @@ void Invocation_Impl::fillInfoForProperty
 
 void Invocation_Impl::fillInfoForMethod
 (
-	InvocationInfo& rInfo, 
+	InvocationInfo& rInfo,
 	const Reference< XIdlMethod > xMethod
 )
 {
@@ -1026,12 +1026,12 @@ Sequence< Type > SAL_CALL Invocation_Impl::getTypes(void) throw( RuntimeExceptio
         Sequence< Type > types( 4 +8 );
         Type * pTypes = types.getArray();
         sal_Int32 n = 0;
-        
+
         pTypes[ n++ ] = ::getCppuType( (Reference< XTypeProvider > const *)0 );
         pTypes[ n++ ] = ::getCppuType( (Reference< XWeak > const *)0 );
         pTypes[ n++ ] = ::getCppuType( (Reference< XInvocation > const *)0 );
         pTypes[ n++ ] = ::getCppuType( (Reference< XMaterialHolder > const *)0 );
-        
+
 		// Ivocation does not support XExactName, if direct object supports
 		// XInvocation, but not XExactName.
 		if ((_xDirect.is() && _xENDirect.is()) ||
@@ -1070,9 +1070,9 @@ Sequence< Type > SAL_CALL Invocation_Impl::getTypes(void) throw( RuntimeExceptio
 		{
             pTypes[ n++ ] = ::getCppuType( (Reference< XInvocation2 > const *)0 );
 		}
-        
+
         types.realloc( n );
-        
+
         // store types
         MutexGuard guard( Mutex::getGlobalMutex() );
         if (! s_pTypes)
@@ -1108,7 +1108,7 @@ class InvocationService
 public:
 	InvocationService( const Reference<XComponentContext> & xCtx );
 	virtual ~InvocationService();
-    
+
 	// XServiceInfo
 	OUString 					SAL_CALL getImplementationName() throw( RuntimeException );
     sal_Bool 						SAL_CALL supportsService(const OUString& ServiceName) throw( RuntimeException );
@@ -1200,8 +1200,8 @@ Reference<XInterface> InvocationService::createInstanceWithArguments(
 {
 	if (rArguments.getLength() == 1)
 	{
-		return Reference< XInterface > 
-			( *new Invocation_Impl( *rArguments.getConstArray(), 
+		return Reference< XInterface >
+			( *new Invocation_Impl( *rArguments.getConstArray(),
 			  xTypeConverter, xIntrospection, xCoreReflection ) );
 	}
 	else
@@ -1213,7 +1213,7 @@ Reference<XInterface> InvocationService::createInstanceWithArguments(
 
 
 //*************************************************************************
-Reference<XInterface> SAL_CALL InvocationService_CreateInstance( const Reference<XComponentContext> & xCtx ) 
+Reference<XInterface> SAL_CALL InvocationService_CreateInstance( const Reference<XComponentContext> & xCtx )
 	throw( RuntimeException )
 {
 	Reference<XInterface> xService = Reference< XInterface > ( *new InvocationService( xCtx ) );

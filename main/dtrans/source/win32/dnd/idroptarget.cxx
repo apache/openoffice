@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -55,7 +55,7 @@ HRESULT STDMETHODCALLTYPE IDropTargetImpl::QueryInterface( REFIID riid, void  **
 		*ppvObject= static_cast<IUnknown*>( this);
 	else if (  riid == __uuidof( IDropTarget))
 		*ppvObject= static_cast<IDropTarget*>( this);
-	
+
 	if(*ppvObject)
 	{
 		AddRef();
@@ -63,14 +63,14 @@ HRESULT STDMETHODCALLTYPE IDropTargetImpl::QueryInterface( REFIID riid, void  **
 	}
 	else
 		return E_NOINTERFACE;
-	
+
 }
-        
+
 ULONG STDMETHODCALLTYPE IDropTargetImpl::AddRef( void)
 {
     return InterlockedIncrement( &m_nRefCount);
 }
-        
+
 ULONG STDMETHODCALLTYPE IDropTargetImpl::Release( void)
 {
     LONG count= InterlockedDecrement( &m_nRefCount);
@@ -87,24 +87,24 @@ STDMETHODIMP IDropTargetImpl::DragEnter( IDataObject __RPC_FAR *pDataObj,
     return m_rDropTarget.DragEnter( pDataObj, grfKeyState,
                                   pt, pdwEffect);
 }
-        
+
 STDMETHODIMP IDropTargetImpl::DragOver( DWORD grfKeyState,
 								   POINTL pt,
 								   DWORD  *pdwEffect)
 {
     return m_rDropTarget.DragOver( grfKeyState, pt, pdwEffect);
 }
-        
+
 STDMETHODIMP IDropTargetImpl::DragLeave( void)
 {
     return m_rDropTarget.DragLeave();
 }
-        
+
 STDMETHODIMP IDropTargetImpl::Drop( IDataObject  *pDataObj,
 				   DWORD grfKeyState,
 				   POINTL pt,
 				   DWORD __RPC_FAR *pdwEffect)
 {
-    return m_rDropTarget.Drop( pDataObj, grfKeyState, 
+    return m_rDropTarget.Drop( pDataObj, grfKeyState,
                                    pt, pdwEffect);
 }

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -101,17 +101,17 @@ void MergeCells( const uno::Reference< XTable >& xTable, sal_Int32 nCol, sal_Int
    catch( Exception& )
    {
    }
-} 
+}
 
 static TableStyle* pDefaultTableStyle = new TableStyle();
 
 //for pptx just has table style id
 static void SetTableStyleProperties(TableStyle* &pTableStyle , const sal_Int32& tblFillClr,const sal_Int32& tblTextClr, const sal_Int32& lineBdrClr)
-{	
+{
 	//whole table fill style and color
 	oox::drawingml::FillPropertiesPtr pWholeTabFillProperties( new oox::drawingml::FillProperties );
 	pWholeTabFillProperties->moFillType.set(XML_solidFill);
-	pWholeTabFillProperties->maFillColor.setSchemeClr(tblFillClr);  
+	pWholeTabFillProperties->maFillColor.setSchemeClr(tblFillClr);
 	pWholeTabFillProperties->maFillColor.addTransformation(XML_tint,20000);
 	pTableStyle->getWholeTbl().getFillProperties() = pWholeTabFillProperties;
 	//whole table text color
@@ -134,10 +134,10 @@ static void SetTableStyleProperties(TableStyle* &pTableStyle , const sal_Int32& 
 	//Band1H style
 	oox::drawingml::FillPropertiesPtr pBand1HFillProperties( new oox::drawingml::FillProperties );
 	pBand1HFillProperties->moFillType.set(XML_solidFill);
-	pBand1HFillProperties->maFillColor.setSchemeClr(tblFillClr);	
+	pBand1HFillProperties->maFillColor.setSchemeClr(tblFillClr);
 	pBand1HFillProperties->maFillColor.addTransformation(XML_tint,40000);
 	pTableStyle->getBand1H().getFillProperties() = pBand1HFillProperties;
-	
+
 	//Band1V style
 	pTableStyle->getBand1V().getFillProperties() = pBand1HFillProperties;
 
@@ -150,7 +150,7 @@ static void SetTableStyleProperties(TableStyle* &pTableStyle , const sal_Int32& 
 }
 
  sal_Bool CreateTableStyle(TableStyle* &pTableStyle , const OUString& styleId)
-{	
+{
 	sal_Bool createdTblStyle = sal_False;
 	if(!styleId.compareToAscii("{5C22544A-7EE6-4342-B048-85BDC9FD1C3A}")){           //Medium Style 2 Accenat 1
 		pTableStyle = new TableStyle();
@@ -159,7 +159,7 @@ static void SetTableStyleProperties(TableStyle* &pTableStyle , const sal_Int32& 
         //fill color and type
 		oox::drawingml::FillPropertiesPtr pFstRowFillProperties( new oox::drawingml::FillProperties );
 		pFstRowFillProperties->moFillType.set(XML_solidFill);
-		pFstRowFillProperties->maFillColor.setSchemeClr(XML_accent1);   
+		pFstRowFillProperties->maFillColor.setSchemeClr(XML_accent1);
 		pTableStyle->getFirstRow().getFillProperties() = pFstRowFillProperties;
 		//text color
 		::oox::drawingml::Color fstRowTextColor;
@@ -194,13 +194,13 @@ static void SetTableStyleProperties(TableStyle* &pTableStyle , const sal_Int32& 
 		createdTblStyle = sal_True;
 		oox::drawingml::FillPropertiesPtr pFstRowFillProperties( new oox::drawingml::FillProperties );
 		pFstRowFillProperties->moFillType.set(XML_solidFill);
-		pFstRowFillProperties->maFillColor.setSchemeClr(XML_accent2);   
+		pFstRowFillProperties->maFillColor.setSchemeClr(XML_accent2);
 		pTableStyle->getFirstRow().getFillProperties() = pFstRowFillProperties;
 
 		::oox::drawingml::Color fstRowTextColor;
 		fstRowTextColor.setSchemeClr(XML_lt1);
 		pTableStyle->getFirstRow().getTextColor() = fstRowTextColor;
-		
+
 		oox::drawingml::LinePropertiesPtr pFstBottomBorder( new oox::drawingml::LineProperties);
 		pFstBottomBorder->moLineWidth = 38100;
 		pFstBottomBorder->moPresetDash = XML_sng;
@@ -214,9 +214,9 @@ static void SetTableStyleProperties(TableStyle* &pTableStyle , const sal_Int32& 
 
 		pTableStyle->getFirstCol().getFillProperties() = pFstRowFillProperties;
 		pTableStyle->getFirstCol().getTextColor() = fstRowTextColor;
-	
+
 		pTableStyle->getLastCol().getFillProperties() = pFstRowFillProperties;
-		pTableStyle->getLastCol().getTextColor() = fstRowTextColor;		
+		pTableStyle->getLastCol().getTextColor() = fstRowTextColor;
 
 		SetTableStyleProperties(pTableStyle, XML_accent2, XML_dk1, XML_lt1);
 	}
@@ -228,7 +228,7 @@ static void SetTableStyleProperties(TableStyle* &pTableStyle , const sal_Int32& 
 	}
 
 	return createdTblStyle;
-} 
+}
 //end
 
 const TableStyle& TableProperties::getUsedTableStyle( const ::oox::core::XmlFilterBase& rFilterBase, sal_Bool &isCreateTabStyle )
@@ -260,7 +260,7 @@ const TableStyle& TableProperties::getUsedTableStyle( const ::oox::core::XmlFilt
 	}
 	if ( !pTableStyle )
 		pTableStyle = pDefaultTableStyle;
-	
+
 	return *pTableStyle;
 }
 
@@ -302,7 +302,7 @@ void TableProperties::pushToPropSet( const ::oox::core::XmlFilterBase& rFilterBa
 		nRow++;
 		aTableRowIter++;
 	}
-	
+
 	if(mbOwnTblStyle == sal_True)
 	{
 		TableStyle* pTableStyle = (TableStyle*)&rTableStyle;

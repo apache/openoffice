@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -241,14 +241,14 @@ ContentInfo::~ContentInfo()
 /* cl removed because not needed anymore since binfilter
 void ContentInfo::CreateLoadStoreTempInfos()
 {
-    delete pTempLoadStoreInfos; 
+    delete pTempLoadStoreInfos;
     pTempLoadStoreInfos = new LoadStoreTempInfos;
 }
 
 void ContentInfo::DestroyLoadStoreTempInfos()
 {
-    delete pTempLoadStoreInfos; 
-    pTempLoadStoreInfos = NULL; 
+    delete pTempLoadStoreInfos;
+    pTempLoadStoreInfos = NULL;
 }
 */
 
@@ -266,7 +266,7 @@ bool ContentInfo::isWrongListEqual(const ContentInfo& rCompare) const
 
 bool ContentInfo::operator==( const ContentInfo& rCompare ) const
 {
-	if( (aText == rCompare.aText) && 
+	if( (aText == rCompare.aText) &&
 			(aStyle == rCompare.aStyle ) &&
 			(aAttribs.Count() == rCompare.aAttribs.Count() ) &&
 			(eFamily == rCompare.eFamily ) &&
@@ -609,7 +609,7 @@ void BinTextObject::ObjectInDestruction(const SfxItemPool& rSfxItemPool)
 		    aContents.Replace(pNew, n);
             delete pOrg;
 	    }
-        
+
         // set local variables
         pPool = pNewPool;
         bOwnerOfPool = sal_True;
@@ -642,7 +642,7 @@ BinTextObject::BinTextObject( SfxItemPool* pP ) :
 	nUserType = 0;
 	nObjSettings = 0;
 	pPortionInfo = 0;
-	
+
 	// #i101239# ensure target is a EditEngineItemPool, else
 	// fallback to pool ownership. This is needed to ensure that at
 	// pool destruction time of an alien pool, the pool is still alive.
@@ -650,7 +650,7 @@ BinTextObject::BinTextObject( SfxItemPool* pP ) :
 	// EditEngineItemPool as some sub-pool, that pool could already
 	// be decoupled and deleted which would lead to crashes.
 	pPool =	getEditEngineItemPool(pP);
-	
+
 	if ( pPool )
 	{
 		bOwnerOfPool = sal_False;

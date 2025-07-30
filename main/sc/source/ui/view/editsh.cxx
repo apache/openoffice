@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -230,7 +230,7 @@ void ScEditShell::Execute( SfxRequest& rReq )
                     ReplaceTextWithSynonym( *pEditView, aReplaceText );
             }
             break;
-                
+
 		case SID_COPY:
 			pTableView->Copy();
             bSetModified = sal_False;
@@ -339,8 +339,8 @@ void ScEditShell::Execute( SfxRequest& rReq )
 					rBindings.Invalidate( SID_ATTR_CHAR_POSTURE );
 					rBindings.Invalidate( SID_ATTR_CHAR_UNDERLINE );
 					rBindings.Invalidate( SID_ATTR_CHAR_STRIKEOUT );
-					rBindings.Invalidate( SID_ATTR_CHAR_SHADOWED ); 
-					rBindings.Invalidate( SID_ATTR_CHAR_KERNING ); 
+					rBindings.Invalidate( SID_ATTR_CHAR_SHADOWED );
+					rBindings.Invalidate( SID_ATTR_CHAR_KERNING );
 					rBindings.Invalidate( SID_ATTR_CHAR_COLOR );
 					rBindings.Invalidate( SID_SET_SUPER_SCRIPT );
 					rBindings.Invalidate( SID_SET_SUB_SCRIPT );
@@ -730,7 +730,7 @@ void __EXPORT ScEditShell::GetState( SfxItemSet& rSet )
                         rSet.DisableItem( SID_THES );
                 }
                 break;
-                
+
 
 		}
 		nWhich = aIter.NextWhich();
@@ -1019,7 +1019,7 @@ void ScEditShell::ExecuteAttr(SfxRequest& rReq)
 				if(pArgs)
 				{
 					aSet.Put ( pArgs->Get(pArgs->GetPool()->GetWhich(nSlot)));
-					rBindings.Invalidate( nSlot );  
+					rBindings.Invalidate( nSlot );
 				}
 			}
 			break;
@@ -1120,7 +1120,7 @@ void ScEditShell::GetAttrState(SfxItemSet &rSet)
 	{
 		rSet.Put( SfxBoolItem( SID_SET_SUB_SCRIPT, sal_True ) );
 	}
-	pViewData->GetBindings().Invalidate( SID_SET_SUPER_SCRIPT );	
+	pViewData->GetBindings().Invalidate( SID_SET_SUPER_SCRIPT );
 	pViewData->GetBindings().Invalidate( SID_SET_SUB_SCRIPT );
 
 	eState = aAttribs.GetItemState( EE_CHAR_KERNING, sal_True );

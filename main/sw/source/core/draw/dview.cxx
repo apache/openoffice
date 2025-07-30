@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
@@ -265,7 +265,7 @@ void SwDrawView::AddCustomHdl()
 	// add anchor handle:
     //Badaa: 2008-04-18 * Support for Classical Mongolian Script (SCMS) joint with Jiayanmin
     aHdl.AddHdl( new SwSdrHdl( aPos, ( pAnch->IsVertical() && !pAnch->IsVertLR() ) ||
-                                     pAnch->IsRightToLeft() ) );	
+                                     pAnch->IsRightToLeft() ) );
 }
 
 /*************************************************************************
@@ -815,7 +815,7 @@ const SwFrm* SwDrawView::CalcAnchor()
 	}
 
 	//Badaa: 2008-04-18 * Support for Classical Mongolian Script (SCMS) joint with Jiayanmin
-    const sal_Bool bTopRight = pAnch && ( ( pAnch->IsVertical() && 
+    const sal_Bool bTopRight = pAnch && ( ( pAnch->IsVertical() &&
     										!pAnch->IsVertLR() ) ||
                                          	pAnch->IsRightToLeft() );
     const Point aMyPt = bTopRight ? aMyRect.TopRight() : aMyRect.TopLeft();
@@ -982,8 +982,8 @@ void SwDrawView::CheckPossibilities()
 
                             // #i972: protect position if it is a Math object anchored 'as char' and baseline alignment is activated
                         	SwDoc* pDoc = Imp().GetShell()->GetDoc();
-                            const bool bProtectMathPos = SotExchange::IsMath( xObj->getClassID() ) 
-                                    && FLY_AS_CHAR == pFly->GetFmt()->GetAnchor().GetAnchorId() 
+                            const bool bProtectMathPos = SotExchange::IsMath( xObj->getClassID() )
+                                    && FLY_AS_CHAR == pFly->GetFmt()->GetAnchor().GetAnchorId()
                                     && pDoc->get( IDocumentSettingAccess::MATH_BASELINE_ALIGNMENT );
                             if (bProtectMathPos)
                                 bMoveProtect = true;
@@ -1072,7 +1072,7 @@ void SwDrawView::DeleteMarked()
 	SwDoc* pDoc = Imp().GetShell()->GetDoc();
 	SwRootFrm *pTmpRoot = pDoc->GetCurrentLayout();//swmod 080317
     if ( pTmpRoot )
-		pTmpRoot->StartAllAction();	
+		pTmpRoot->StartAllAction();
     pDoc->GetIDocumentUndoRedo().StartUndo(UNDO_EMPTY, NULL);
     // OD 18.06.2003 #108784# - replace marked <SwDrawVirtObj>-objects by its
     // reference objects.

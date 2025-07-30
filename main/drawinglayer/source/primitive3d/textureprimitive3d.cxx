@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -39,8 +39,8 @@ namespace drawinglayer
 	namespace primitive3d
 	{
 		TexturePrimitive3D::TexturePrimitive3D(
-			const Primitive3DSequence& rChildren, 
-			const basegfx::B2DVector& rTextureSize, 
+			const Primitive3DSequence& rChildren,
+			const basegfx::B2DVector& rTextureSize,
 			bool bModulate, bool bFilter)
 		:	GroupPrimitive3D(rChildren),
 			maTextureSize(rTextureSize),
@@ -54,8 +54,8 @@ namespace drawinglayer
 			if(GroupPrimitive3D::operator==(rPrimitive))
 			{
 				const TexturePrimitive3D& rCompare = (TexturePrimitive3D&)rPrimitive;
-				
-				return (getModulate() == rCompare.getModulate() 
+
+				return (getModulate() == rCompare.getModulate()
 					&& getFilter() == rCompare.getFilter());
 			}
 
@@ -71,7 +71,7 @@ namespace drawinglayer
 	namespace primitive3d
 	{
 		UnifiedTransparenceTexturePrimitive3D::UnifiedTransparenceTexturePrimitive3D(
-			double fTransparence, 
+			double fTransparence,
 			const Primitive3DSequence& rChildren)
 		:	TexturePrimitive3D(rChildren, basegfx::B2DVector(), false, false),
 			mfTransparence(fTransparence)
@@ -132,10 +132,10 @@ namespace drawinglayer
 	namespace primitive3d
 	{
 		GradientTexturePrimitive3D::GradientTexturePrimitive3D(
-			const attribute::FillGradientAttribute& rGradient, 
-			const Primitive3DSequence& rChildren, 
-			const basegfx::B2DVector& rTextureSize, 
-			bool bModulate, 
+			const attribute::FillGradientAttribute& rGradient,
+			const Primitive3DSequence& rChildren,
+			const basegfx::B2DVector& rTextureSize,
+			bool bModulate,
 			bool bFilter)
 		:	TexturePrimitive3D(rChildren, rTextureSize, bModulate, bFilter),
 			maGradient(rGradient)
@@ -147,7 +147,7 @@ namespace drawinglayer
 			if(TexturePrimitive3D::operator==(rPrimitive))
 			{
 				const GradientTexturePrimitive3D& rCompare = (GradientTexturePrimitive3D&)rPrimitive;
-				
+
 				return (getGradient() == rCompare.getGradient());
 			}
 
@@ -167,9 +167,9 @@ namespace drawinglayer
 	namespace primitive3d
 	{
 		BitmapTexturePrimitive3D::BitmapTexturePrimitive3D(
-			const attribute::FillGraphicAttribute& rFillGraphicAttribute, 
-			const Primitive3DSequence& rChildren, 
-			const basegfx::B2DVector& rTextureSize, 
+			const attribute::FillGraphicAttribute& rFillGraphicAttribute,
+			const Primitive3DSequence& rChildren,
+			const basegfx::B2DVector& rTextureSize,
 			bool bModulate, bool bFilter)
 		:	TexturePrimitive3D(rChildren, rTextureSize, bModulate, bFilter),
 			maFillGraphicAttribute(rFillGraphicAttribute)
@@ -201,8 +201,8 @@ namespace drawinglayer
 	namespace primitive3d
 	{
 		TransparenceTexturePrimitive3D::TransparenceTexturePrimitive3D(
-			const attribute::FillGradientAttribute& rGradient, 
-			const Primitive3DSequence& rChildren, 
+			const attribute::FillGradientAttribute& rGradient,
+			const Primitive3DSequence& rChildren,
 			const basegfx::B2DVector& rTextureSize)
 		:	GradientTexturePrimitive3D(rGradient, rChildren, rTextureSize, false, false)
 		{

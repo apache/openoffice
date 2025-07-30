@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -64,7 +64,7 @@ namespace drawinglayer
 		{
 			const AnimationEntryFixed* pCompare = dynamic_cast< const AnimationEntryFixed* >(&rCandidate);
 
-			return (pCompare 
+			return (pCompare
 				&& basegfx::fTools::equal(mfDuration, pCompare->mfDuration)
 				&& basegfx::fTools::equal(mfState, pCompare->mfState));
 		}
@@ -113,8 +113,8 @@ namespace drawinglayer
 		bool AnimationEntryLinear::operator==(const AnimationEntry& rCandidate) const
 		{
 			const AnimationEntryLinear* pCompare = dynamic_cast< const AnimationEntryLinear* >(&rCandidate);
-			
-			return (pCompare 
+
+			return (pCompare
 				&& basegfx::fTools::equal(mfDuration, pCompare->mfDuration)
 				&& basegfx::fTools::equal(mfStart, pCompare->mfStart)
 				&& basegfx::fTools::equal(mfStop, pCompare->mfStop));
@@ -198,19 +198,19 @@ namespace drawinglayer
 		AnimationEntry* AnimationEntryList::clone() const
 		{
 			AnimationEntryList* pNew = new AnimationEntryList();
-			
+
 			for(sal_uInt32 a(0L); a < maEntries.size(); a++)
 			{
 				pNew->append(*maEntries[a]);
 			}
-			
+
 			return pNew;
 		}
 
 		bool AnimationEntryList::operator==(const AnimationEntry& rCandidate) const
 		{
 			const AnimationEntryList* pCompare = dynamic_cast< const AnimationEntryList* >(&rCandidate);
-			
+
 			if(pCompare && mfDuration == pCompare->mfDuration)
 			{
 				for(sal_uInt32 a(0L); a < maEntries.size(); a++)
@@ -292,20 +292,20 @@ namespace drawinglayer
 		AnimationEntry* AnimationEntryLoop::clone() const
 		{
 			AnimationEntryLoop* pNew = new AnimationEntryLoop(mnRepeat);
-			
+
 			for(sal_uInt32 a(0L); a < maEntries.size(); a++)
 			{
 				pNew->append(*maEntries[a]);
 			}
-			
+
 			return pNew;
 		}
 
 		bool AnimationEntryLoop::operator==(const AnimationEntry& rCandidate) const
 		{
 			const AnimationEntryLoop* pCompare = dynamic_cast< const AnimationEntryLoop* >(&rCandidate);
-			
-			return (pCompare 
+
+			return (pCompare
 				&& mnRepeat == pCompare->mnRepeat
 				&& AnimationEntryList::operator==(rCandidate));
 		}
@@ -349,7 +349,7 @@ namespace drawinglayer
 					const double fTimeAtLoopStart((double)nCurrentLoop * mfDuration);
 					const double fRelativeTime(fTime - fTimeAtLoopStart);
 					const double fNextEventAtLoop(AnimationEntryList::getNextEventTime(fRelativeTime));
-					
+
 					if(!basegfx::fTools::equalZero(fNextEventAtLoop))
 					{
 						fNewTime = fNextEventAtLoop + fTimeAtLoopStart;

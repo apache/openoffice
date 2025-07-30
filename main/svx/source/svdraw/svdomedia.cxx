@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -111,7 +111,7 @@ void SdrMediaObj::TakeObjNameSingul(XubString& rName) const
 	rName=ImpGetResStr(STR_ObjNameSingulMEDIA);
 
 	String aName( GetName() );
-	
+
 	if(aName.Len())
 	{
 		rName += sal_Unicode(' ');
@@ -133,11 +133,11 @@ void SdrMediaObj::TakeObjNamePlural(XubString& rName) const
 void SdrMediaObj::operator=(const SdrObject& rObj)
 {
 	SdrRectObj::operator=( rObj );
-	
+
 	if( rObj.ISA( SdrMediaObj ) )
     {
         const SdrMediaObj& rMediaObj = static_cast< const SdrMediaObj& >( rObj );
-		
+
         setMediaProperties( rMediaObj.getMediaProperties() );
         setGraphic( rMediaObj.mapGraphic.get() );
     }
@@ -195,13 +195,13 @@ void SdrMediaObj::AdjustToMaxRect( const Rectangle& rMaxRect, bool bShrinkOnly /
 void SdrMediaObj::setURL( const ::rtl::OUString& rURL )
 {
 	::avmedia::MediaItem aURLItem;
-	
+
 	aURLItem.setURL( rURL );
 	setMediaProperties( aURLItem );
 }
 
 // ------------------------------------------------------------------------------
-	
+
 const ::rtl::OUString& SdrMediaObj::getURL() const
 {
 	return getMediaProperties().getURL();
@@ -214,7 +214,7 @@ void SdrMediaObj::setMediaProperties( const ::avmedia::MediaItem& rState )
 	mediaPropertiesChanged( rState );
 	static_cast< ::sdr::contact::ViewContactOfSdrMediaObj& >( GetViewContact() ).executeMediaItem( getMediaProperties() );
 }
-		
+
 // ------------------------------------------------------------------------------
 
 const ::avmedia::MediaItem& SdrMediaObj::getMediaProperties() const
@@ -247,7 +247,7 @@ const Graphic& SdrMediaObj::getGraphic() const
 }
 
 // ------------------------------------------------------------------------------
-        
+
 void SdrMediaObj::setGraphic( const Graphic* pGraphic )
 {
     mapGraphic.reset( pGraphic ? new Graphic( *pGraphic ) : NULL );
@@ -260,22 +260,22 @@ void SdrMediaObj::mediaPropertiesChanged( const ::avmedia::MediaItem& rNewProper
 	const sal_uInt32 nMaskSet = rNewProperties.getMaskSet();
 
 	// use only a subset of MediaItem properties for own own properties
-	if( ( AVMEDIA_SETMASK_URL & nMaskSet ) && 
+	if( ( AVMEDIA_SETMASK_URL & nMaskSet ) &&
         ( rNewProperties.getURL() != getURL() ) )
     {
         setGraphic();
     	maMediaProperties.setURL( rNewProperties.getURL() );
     }
-	
+
 	if( AVMEDIA_SETMASK_LOOP & nMaskSet )
 		maMediaProperties.setLoop( rNewProperties.isLoop() );
-	
+
 	if( AVMEDIA_SETMASK_MUTE & nMaskSet )
 		maMediaProperties.setMute( rNewProperties.isMute() );
-	
+
 	if( AVMEDIA_SETMASK_VOLUMEDB & nMaskSet )
 		maMediaProperties.setVolumeDB( rNewProperties.getVolumeDB() );
-	
+
 	if( AVMEDIA_SETMASK_ZOOM & nMaskSet )
 		maMediaProperties.setZoom( rNewProperties.getZoom() );
 }

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -53,7 +53,7 @@ namespace /* private */
 		sal_Bool m_bValid;
 		wchar_t* m_pBuffer;
 		DWORD m_nBufLen;
-		
+
 	public:
 		CurDirGuard()
 		: m_bValid( sal_False )
@@ -130,7 +130,7 @@ namespace /* private */
 	//-----------------------------------------------
 
 	struct GetFileNameParam
-	{	
+	{
 		GetFileNameParam(bool bOpen, LPOPENFILENAME lpofn) :
 			m_bOpen(bOpen),
 			m_lpofn(lpofn),
@@ -141,7 +141,7 @@ namespace /* private */
 		bool			m_bOpen;
 		LPOPENFILENAME  m_lpofn;
 		bool			m_bRet;
-		int				m_ExtErr;		
+		int				m_ExtErr;
 	};
 
 	//-----------------------------------------------
@@ -152,7 +152,7 @@ namespace /* private */
 	{
 		CurDirGuard aGuard;
 
-		GetFileNameParam* lpgfnp = 
+		GetFileNameParam* lpgfnp =
 			reinterpret_cast<GetFileNameParam*>(pParam);
 
 		HRESULT	hr = OleInitialize( NULL );
@@ -171,30 +171,30 @@ namespace /* private */
 	}
 
 	//-----------------------------------------------
-	// exceutes GetOpenFileName/GetSaveFileName in 
+	// exceutes GetOpenFileName/GetSaveFileName in
 	// a separat thread
 	//-----------------------------------------------
 
 	bool ThreadExecGetFileName(LPOPENFILENAME lpofn, bool bOpen, /*out*/ int& ExtErr)
 	{
-		GetFileNameParam gfnp(bOpen,lpofn);		
-		unsigned         id;		
+		GetFileNameParam gfnp(bOpen,lpofn);
+		unsigned         id;
 
 		HANDLE hThread = reinterpret_cast<HANDLE>(
 			_beginthreadex(0, 0, ThreadProc, &gfnp, 0, &id));
-        
+
 		OSL_POSTCOND(hThread, "could not create STA thread");
 
 		WaitForSingleObject(hThread, INFINITE);
-		CloseHandle(hThread);		
-		
+		CloseHandle(hThread);
+
 		ExtErr = gfnp.m_ExtErr;
 
 		return gfnp.m_bRet;
 	}
 
 	//-----------------------------------------------
-	// This function returns true if the calling 
+	// This function returns true if the calling
 	// thread belongs to a Multithreaded Appartment
 	// (MTA)
 	//-----------------------------------------------
@@ -202,10 +202,10 @@ namespace /* private */
 	bool IsMTA()
 	{
 		HRESULT hr = CoInitialize(NULL);
-		
+
 		if (RPC_E_CHANGED_MODE == hr)
 			return true;
-		
+
 		if(SUCCEEDED(hr))
 			CoUninitialize();
 
@@ -229,7 +229,7 @@ CGetFileNameWrapper::CGetFileNameWrapper() :
 //-----------------------------------------------
 
 bool CGetFileNameWrapper::getOpenFileName(LPOPENFILENAME lpofn)
-{    
+{
 	OSL_PRECOND(lpofn,"invalid parameter");
 
     bool bRet = false;
@@ -237,7 +237,7 @@ bool CGetFileNameWrapper::getOpenFileName(LPOPENFILENAME lpofn)
 	if (IsMTA())
 	{
 		bRet = ThreadExecGetFileName(
-			lpofn, true, m_ExtendedDialogError);		
+			lpofn, true, m_ExtendedDialogError);
 	}
 	else
 	{
@@ -248,7 +248,7 @@ bool CGetFileNameWrapper::getOpenFileName(LPOPENFILENAME lpofn)
 		bRet = GetOpenFileName(lpofn);
 		m_ExtendedDialogError = CommDlgExtendedError();
 
-		if ( SUCCEEDED( hr ) ) 
+		if ( SUCCEEDED( hr ) )
 			OleUninitialize();
 	}
 
@@ -260,7 +260,7 @@ bool CGetFileNameWrapper::getOpenFileName(LPOPENFILENAME lpofn)
 //-----------------------------------------------
 
 bool CGetFileNameWrapper::getSaveFileName(LPOPENFILENAME lpofn)
-{    
+{
     OSL_PRECOND(lpofn,"invalid parameter");
 
     bool bRet = false;
@@ -268,7 +268,7 @@ bool CGetFileNameWrapper::getSaveFileName(LPOPENFILENAME lpofn)
 	if (IsMTA())
 	{
 		bRet = ThreadExecGetFileName(
-			lpofn, false, m_ExtendedDialogError);		
+			lpofn, false, m_ExtendedDialogError);
 	}
 	else
 	{

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -24,7 +24,7 @@
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_connectivity.hxx"
 
-// Makes parser a static resource, 
+// Makes parser a static resource,
 // we're synchronized externally.
 // But watch out, the parser might have
 // state not visible to this code!
@@ -108,7 +108,7 @@ public:
     {
         ORowSetValueDecoratorRef aRet;
         switch(meFunct)
-        { 
+        {
             case ENUM_FUNC_EQUATION:
                 aRet = new ORowSetValueDecorator(sal_Bool(mpFirstArg->evaluate(_aRow )->getValue() == mpSecondArg->evaluate(_aRow )->getValue()) );
                 break;
@@ -126,7 +126,7 @@ public:
     virtual void fill(const ODatabaseMetaDataResultSet::ORow& _aRow ) const
     {
         switch(meFunct)
-        { 
+        {
             case ENUM_FUNC_EQUATION:
                 (*mpFirstArg->evaluate(_aRow )) = mpSecondArg->evaluate(_aRow )->getValue();
                 break;
@@ -215,7 +215,7 @@ public:
     @tpl Generator
     Generator functor, to generate an ExpressionNode of
     appropriate type
-    
+
     */
 class BinaryFunctionFunctor
 {
@@ -287,7 +287,7 @@ class UnaryFunctionFunctor
     ParserContextSharedPtr	mpContext;
 
 public :
-	
+
 	UnaryFunctionFunctor( const ExpressionFunct eFunct, const ParserContextSharedPtr& rContext ) :
 		meFunct( eFunct ),
 		mpContext( rContext )
@@ -295,7 +295,7 @@ public :
 	}
 	void operator()( StringIteratorT, StringIteratorT ) const
 	{
-        
+
 		ParserContext::OperandStack& rNodeStack( mpContext->maOperandStack );
 
 		if( rNodeStack.size() < 1 )
@@ -313,20 +313,20 @@ public :
     less literally written down below, only slightly
     obfuscated by the parser actions):
 
-    basic_expression =                                                                                   
-               		number |                                                                            
-               		'(' additive_expression ')'                                                         
-                                                                                                        
-    unary_expression = 
+    basic_expression =
+               		number |
+               		'(' additive_expression ')'
+
+    unary_expression =
                     basic_expression
-                                                                                                        
-    multiplicative_expression =                                                                          
-               		unary_expression ( ( '*' unary_expression )* |                           
+
+    multiplicative_expression =
+               		unary_expression ( ( '*' unary_expression )* |
                                 		( '/' unary_expression )* )
-                                                                                                        
-    additive_expression =                                                                                
-               		multiplicative_expression ( ( '+' multiplicative_expression )* |                              
-               									( '-' multiplicative_expression )* ) 
+
+    additive_expression =
+               		multiplicative_expression ( ( '+' multiplicative_expression )* |
+               									( '-' multiplicative_expression )* )
 
     */
 class ExpressionGrammar : public ::boost::spirit::grammar< ExpressionGrammar >
@@ -359,29 +359,29 @@ public:
             using ::boost::spirit::as_lower_d;
             using ::boost::spirit::strlit;
             using ::boost::spirit::inhibit_case;
-            
+
 
             typedef inhibit_case<strlit<> > token_t;
             token_t COLUMN  = as_lower_d[ "column" ];
             token_t OR_     = as_lower_d[ "or" ];
             token_t AND_    = as_lower_d[ "and" ];
 
-            integer = 
+            integer =
                     int_p
                                 [IntConstantFunctor(self.getContext())];
 
-            argument = 
+            argument =
                     integer
 				|    lexeme_d[ +( range_p('a','z') | range_p('A','Z') | range_p('0','9') ) ]
                                 [ ConstantFunctor(self.getContext()) ]
                ;
 
-            unaryFunction = 
+            unaryFunction =
                     (COLUMN >> '(' >> integer >> ')' )
                                 [ UnaryFunctionFunctor( UNARY_FUNC_COLUMN,  self.getContext()) ]
                 ;
 
-            assignment = 
+            assignment =
                     unaryFunction >> ch_p('=') >> argument
                                 [ BinaryFunctionFunctor( ENUM_FUNC_EQUATION,  self.getContext()) ]
                ;
@@ -392,12 +392,12 @@ public:
                 |   ( assignment >> AND_ >> assignment )  [ BinaryFunctionFunctor( ENUM_FUNC_AND,  self.getContext()) ]
                 ;
 
-            orExpression = 
+            orExpression =
                     andExpression
                 |   ( orExpression >> OR_ >> andExpression ) [ BinaryFunctionFunctor( ENUM_FUNC_OR,  self.getContext()) ]
                 ;
 
-            basicExpression = 
+            basicExpression =
                     orExpression
                 ;
 
@@ -414,16 +414,16 @@ public:
         {
             return basicExpression;
         }
-        
+
     private:
-        // the constituents of the Spirit arithmetic expression grammar. 
+        // the constituents of the Spirit arithmetic expression grammar.
         // For the sake of readability, without 'ma' prefix.
 		::boost::spirit::rule< ScannerT >	basicExpression;
 		::boost::spirit::rule< ScannerT >	unaryFunction;
         ::boost::spirit::rule< ScannerT >	assignment;
         ::boost::spirit::rule< ScannerT >	integer,argument;
         ::boost::spirit::rule< ScannerT >	orExpression,andExpression;
-    };                
+    };
 
     const ParserContextSharedPtr& getContext() const
     {
@@ -433,13 +433,13 @@ public:
 private:
     ParserContextSharedPtr			mpParserContext; // might get modified during parsing
 };
-    
+
 #ifdef BOOST_SPIRIT_SINGLE_GRAMMAR_INSTANCE
 const ParserContextSharedPtr& getParserContext()
 {
     static ParserContextSharedPtr lcl_parserContext( new ParserContext() );
 
-    // clear node stack (since we reuse the static object, that's 
+    // clear node stack (since we reuse the static object, that's
     // the whole point here)
     while( !lcl_parserContext->maOperandStack.empty() )
         lcl_parserContext->maOperandStack.pop();
@@ -451,10 +451,10 @@ const ParserContextSharedPtr& getParserContext()
 
 ExpressionNodeSharedPtr FunctionParser::parseFunction( const ::rtl::OUString& _sFunction)
 {
-    // TODO(Q1): Check if a combination of the RTL_UNICODETOTEXT_FLAGS_* 
-    // gives better conversion robustness here (we might want to map space 
+    // TODO(Q1): Check if a combination of the RTL_UNICODETOTEXT_FLAGS_*
+    // gives better conversion robustness here (we might want to map space
     // etc. to ASCII space here)
-    const ::rtl::OString& rAsciiFunction( 
+    const ::rtl::OString& rAsciiFunction(
         rtl::OUStringToOString( _sFunction, RTL_TEXTENCODING_ASCII_US ) );
 
     StringIteratorT aStart( rAsciiFunction.getStr() );
@@ -472,7 +472,7 @@ ExpressionNodeSharedPtr FunctionParser::parseFunction( const ::rtl::OUString& _s
 
     ExpressionGrammar aExpressionGrammer( pContext );
 
-    const ::boost::spirit::parse_info<StringIteratorT> aParseInfo( 
+    const ::boost::spirit::parse_info<StringIteratorT> aParseInfo(
             ::boost::spirit::parse( aStart,
                                     aEnd,
                                     aExpressionGrammer,
@@ -484,7 +484,7 @@ ExpressionNodeSharedPtr FunctionParser::parseFunction( const ::rtl::OUString& _s
 	if( !aParseInfo.full )
 		throw ParseError( "RowFunctionParser::parseFunction(): string not fully parseable" );
 
-    // parser's state stack now must contain exactly _one_ ExpressionNode, 
+    // parser's state stack now must contain exactly _one_ ExpressionNode,
     // which represents our formula.
 	if( pContext->maOperandStack.size() != 1 )
 		throw ParseError( "RowFunctionParser::parseFunction(): incomplete or empty expression" );

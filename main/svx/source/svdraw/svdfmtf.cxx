@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -82,8 +82,8 @@
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
 ImpSdrGDIMetaFileImport::ImpSdrGDIMetaFileImport(
-    SdrModel& rModel, 
-    SdrLayerID nLay, 
+    SdrModel& rModel,
+    SdrLayerID nLay,
     const Rectangle& rRect)
 :   maTmpList(),
     maVD(),
@@ -182,7 +182,7 @@ void ImpSdrGDIMetaFileImport::DoLoopActions(GDIMetaFile& rMtf, SvdProgressInfo* 
 			case META_HATCH_ACTION			: DoAction((MetaHatchAction          &)*pAct); break;
 
             // #i125211# MetaCommentAction may change index, thus hand it over
-            case META_COMMENT_ACTION		: DoAction((MetaCommentAction&)*pAct, rMtf, a); 
+            case META_COMMENT_ACTION		: DoAction((MetaCommentAction&)*pAct, rMtf, a);
                 break;
 
             // missing actions added
@@ -209,7 +209,7 @@ void ImpSdrGDIMetaFileImport::DoLoopActions(GDIMetaFile& rMtf, SvdProgressInfo* 
 		if(pProgrInfo && pActionsToReport)
 		{
             (*pActionsToReport)++;
-            
+
             if(*pActionsToReport >= 16) // Alle 16 Action updaten
             {
                 if(!pProgrInfo->ReportActions(*pActionsToReport))
@@ -273,7 +273,7 @@ sal_uInt32 ImpSdrGDIMetaFileImport::DoImport(
 
     // execute
     DoLoopActions(const_cast< GDIMetaFile& >(rMtf), pProgrInfo, &nActionsToReport);
-    
+
     if(pProgrInfo)
 	{
 		pProgrInfo->ReportActions(nActionsToReport);
@@ -299,7 +299,7 @@ sal_uInt32 ImpSdrGDIMetaFileImport::DoImport(
     nActionsToReport = 0;
 
 	// alle in maTmpList zwischengespeicherten Objekte nun in rOL ab der Position nInsPos einfuegen
-	if(nInsPos > rOL.GetObjCount()) 
+	if(nInsPos > rOL.GetObjCount())
     {
         nInsPos = rOL.GetObjCount();
     }
@@ -335,7 +335,7 @@ sal_uInt32 ImpSdrGDIMetaFileImport::DoImport(
 
 void ImpSdrGDIMetaFileImport::SetAttributes(SdrObject* pObj, bool bForceTextAttr)
 {
-	mbNoLine = false; 
+	mbNoLine = false;
     mbNoFill = false;
 	bool bLine(!bForceTextAttr);
 	bool bFill(!pObj || (pObj->IsClosedObj() && !bForceTextAttr));
@@ -450,12 +450,12 @@ void ImpSdrGDIMetaFileImport::SetAttributes(SdrObject* pObj, bool bForceTextAttr
 	{
 		pObj->SetLayer(mnLayer);
 
-        if(bLine) 
+        if(bLine)
         {
             pObj->SetMergedItemSet(*mpLineAttr);
         }
 
-		if(bFill) 
+		if(bFill)
         {
             pObj->SetMergedItemSet(*mpFillAttr);
         }
@@ -531,7 +531,7 @@ void ImpSdrGDIMetaFileImport::InsertObj(SdrObject* pObj, bool bScale)
                     // and when working with the original objects the loop itself could
                     // break and the cleanup later would be pretty complicated (only delete group
                     // objects, are these empty, ...?)
-                    while(aIter.IsMore()) 
+                    while(aIter.IsMore())
                     {
                         SdrObject* pCandidate = aIter.Next();
                         OSL_ENSURE(pCandidate && 0 == dynamic_cast< SdrObjGroup* >(pCandidate), "SdrObjListIter with IM_DEEPNOGROUPS error (!)");
@@ -570,16 +570,16 @@ void ImpSdrGDIMetaFileImport::InsertObj(SdrObject* pObj, bool bScale)
                 // clip against ClipRegion
                 const basegfx::B2DPolyPolygon aNewPoly(
                     basegfx::tools::clipPolyPolygonOnPolyPolygon(
-                        aPoly, 
-                        maClip, 
-                        true, 
+                        aPoly,
+                        maClip,
+                        true,
                         aPoly.isClosed() ? false : true));
                 const basegfx::B2DRange aNewRange(aNewPoly.getB2DRange());
-            
+
                 if(!aNewRange.isEmpty())
                 {
                     pObj = new SdrPathObj(
-                        aNewPoly.isClosed() ? OBJ_POLY : OBJ_PLIN, 
+                        aNewPoly.isClosed() ? OBJ_POLY : OBJ_PLIN,
                         aNewPoly);
 
                     pObj->SetLayer(aOldLayer);
@@ -599,13 +599,13 @@ void ImpSdrGDIMetaFileImport::InsertObj(SdrObject* pObj, bool bScale)
 
                         const Size aOrigSizePixel(aBitmapEx.GetSizePixel());
                         const Point aClipTopLeft(
-                            basegfx::fround(floor(std::max(0.0, aPixel.getMinX()))), 
+                            basegfx::fround(floor(std::max(0.0, aPixel.getMinX()))),
                             basegfx::fround(floor(std::max(0.0, aPixel.getMinY()))));
                         const Size aClipSize(
                             basegfx::fround(ceil(std::min((double)aOrigSizePixel.Width(), aPixel.getWidth()))),
                             basegfx::fround(ceil(std::min((double)aOrigSizePixel.Height(), aPixel.getHeight()))));
                         const BitmapEx aClippedBitmap(
-                            aBitmapEx, 
+                            aBitmapEx,
                             aClipTopLeft,
                             aClipSize);
 
@@ -905,11 +905,11 @@ void ImpSdrGDIMetaFileImport::checkClip()
         {
     		const basegfx::B2DHomMatrix aTransform(
                 basegfx::tools::createScaleTranslateB2DHomMatrix(
-                    mfScaleX, 
-                    mfScaleY, 
-                    maOfs.X(), 
+                    mfScaleX,
+                    mfScaleY,
+                    maOfs.X(),
                     maOfs.Y()));
-	    	
+
             maClip.transform(aTransform);
         }
     }
@@ -1320,8 +1320,8 @@ void ImpSdrGDIMetaFileImport::DoAction(MetaBmpScalePartAction& rAct)
 {
 	Rectangle aRect(rAct.GetDestPoint(), rAct.GetDestSize());
     Bitmap aBitmap(rAct.GetBitmap());
-	
-    aRect.Right()++; 
+
+    aRect.Right()++;
     aRect.Bottom()++;
     aBitmap.Crop(Rectangle(rAct.GetSrcPoint(), rAct.GetSrcSize()));
     SdrGrafObj* pGraf = new SdrGrafObj(aBitmap, aRect);
@@ -1336,8 +1336,8 @@ void ImpSdrGDIMetaFileImport::DoAction(MetaBmpExScalePartAction& rAct)
 {
 	Rectangle aRect(rAct.GetDestPoint(),rAct.GetDestSize());
     BitmapEx aBitmapEx(rAct.GetBitmapEx());
-	
-    aRect.Right()++; 
+
+    aRect.Right()++;
     aRect.Bottom()++;
     aBitmapEx.Crop(Rectangle(rAct.GetSrcPoint(), rAct.GetSrcSize()));
     SdrGrafObj* pGraf = new SdrGrafObj(aBitmapEx, aRect);
@@ -1380,7 +1380,7 @@ void ImpSdrGDIMetaFileImport::DoAction(MetaMaskScalePartAction& rAct)
 {
 	Rectangle aRect(rAct.GetDestPoint(), rAct.GetDestSize());
     BitmapEx aBitmapEx(rAct.GetBitmap(), rAct.GetColor());
-	
+
     aRect.Right()++; aRect.Bottom()++;
     aBitmapEx.Crop(Rectangle(rAct.GetSrcPoint(), rAct.GetSrcSize()));
     SdrGrafObj* pGraf = new SdrGrafObj(aBitmapEx, aRect);
@@ -1403,12 +1403,12 @@ XGradientStyle getXGradientStyleFromGradientStyle(const GradientStyle& rGradient
         case GRADIENT_ELLIPTICAL: aXGradientStyle = XGRAD_ELLIPTICAL; break;
         case GRADIENT_SQUARE: aXGradientStyle = XGRAD_SQUARE; break;
         case GRADIENT_RECT: aXGradientStyle = XGRAD_RECT; break;
-        
+
         // Needed due to GRADIENT_FORCE_EQUAL_SIZE; this again is needed
         // to force the enum defines in VCL to a defined size for the compilers,
         // so despite it is never used it cannot be removed (would break the
         // API implementation probably).
-        default: break; 
+        default: break;
     }
 
     return aXGradientStyle;
@@ -1433,7 +1433,7 @@ void ImpSdrGDIMetaFileImport::DoAction(MetaGradientAction& rAct)
         SfxItemSet aGradientAttr(mpModel->GetItemPool(), pRect->GetMergedItemSet().GetRanges());
         const XGradientStyle aXGradientStyle(getXGradientStyleFromGradientStyle(rGradient.GetStyle()));
         const XFillGradientItem aXFillGradientItem(
-            &mpModel->GetItemPool(), 
+            &mpModel->GetItemPool(),
             XGradient(
                 rGradient.GetStartColor(),
                 rGradient.GetEndColor(),
@@ -1504,7 +1504,7 @@ void ImpSdrGDIMetaFileImport::DoAction(MetaGradientExAction& rAct)
             SfxItemSet aGradientAttr(mpModel->GetItemPool(), pPath->GetMergedItemSet().GetRanges());
             const XGradientStyle aXGradientStyle(getXGradientStyleFromGradientStyle(rGradient.GetStyle()));
             const XFillGradientItem aXFillGradientItem(
-                &mpModel->GetItemPool(), 
+                &mpModel->GetItemPool(),
                 XGradient(
                     rGradient.GetStartColor(),
                     rGradient.GetEndColor(),
@@ -1543,7 +1543,7 @@ void ImpSdrGDIMetaFileImport::DoAction(MetaFloatTransparentAction& rAct)
             convertMetafileToBitmapEx(
                 rMtf,
                 basegfx::B2DRange(
-                    aRect.Left(), aRect.Top(), 
+                    aRect.Left(), aRect.Top(),
                     aRect.Right(), aRect.Bottom()),
                 125000));
 
@@ -1551,7 +1551,7 @@ void ImpSdrGDIMetaFileImport::DoAction(MetaFloatTransparentAction& rAct)
         const Gradient& rGradient = rAct.GetGradient();
 	    basegfx::BColor aStart(rGradient.GetStartColor().getBColor());
 	    basegfx::BColor aEnd(rGradient.GetEndColor().getBColor());
-	    
+
         if(100 != rGradient.GetStartIntensity())
 	    {
             aStart *= (double)rGradient.GetStartIntensity() / 100.0;
@@ -1642,11 +1642,11 @@ void ImpSdrGDIMetaFileImport::DoAction(MetaFloatTransparentAction& rAct)
                     if(pOld)
                     {
                         const double fFactor(1.0 / 255.0);
-                        
+
                         if(bFixedTransparence)
                         {
                             const double fOpNew(1.0 - fTransparence);
-                            
+
                             for(sal_uInt32 y(0); y < static_cast< sal_uInt32 >(pOld->Height()); y++)
                             {
                                 for(sal_uInt32 x(0); x < static_cast< sal_uInt32 >(pOld->Width()); x++)
@@ -1682,7 +1682,7 @@ void ImpSdrGDIMetaFileImport::DoAction(MetaFloatTransparentAction& rAct)
                                 {
                                     OSL_ENSURE(false, "Alpha masks have different sizes (!)");
                                 }
-        
+
                                 aNewMask.ReleaseAccess(pNew);
                             }
                             else

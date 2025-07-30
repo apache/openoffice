@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -32,8 +32,8 @@
 using namespace vos;
 
 
-VOS_IMPLEMENT_CLASSINFO(VOS_CLASSNAME(OSocketAddr, vos), 
-						VOS_NAMESPACE(OSocketAddr, vos), 
+VOS_IMPLEMENT_CLASSINFO(VOS_CLASSNAME(OSocketAddr, vos),
+						VOS_NAMESPACE(OSocketAddr, vos),
 						VOS_NAMESPACE(OObject, vos), 0);
 
 
@@ -146,8 +146,8 @@ OSocketAddr& OSocketAddr::operator=(const OSocketAddr& Addr)
 }
 
 
-VOS_IMPLEMENT_CLASSINFO(VOS_CLASSNAME(OInetSocketAddr, vos), 
-						VOS_NAMESPACE(OInetSocketAddr, vos), 
+VOS_IMPLEMENT_CLASSINFO(VOS_CLASSNAME(OInetSocketAddr, vos),
+						VOS_NAMESPACE(OInetSocketAddr, vos),
 						VOS_NAMESPACE(OSocketAddr, vos), 0);
 
 
@@ -156,7 +156,7 @@ VOS_IMPLEMENT_CLASSINFO(VOS_CLASSNAME(OInetSocketAddr, vos),
 // OInetSocketAddr
 // creates arbitrary inet-address (INADDR_ANY)
 /*****************************************************************************/
-OInetSocketAddr::OInetSocketAddr() 
+OInetSocketAddr::OInetSocketAddr()
 {
 	m_SockAddr= osl_createEmptySocketAddr(osl_Socket_FamilyInet);
 }
@@ -180,7 +180,7 @@ OInetSocketAddr::OInetSocketAddr(const rtl::OUString& ustrAddrOrHostname, sal_In
 {
 	// first try as dotted address.
 	m_SockAddr= osl_createInetSocketAddr(ustrAddrOrHostname.pData, Port);
-	
+
 	// create failed, maybe it's an hostname
 	if(m_SockAddr == 0)
 	{
@@ -202,7 +202,7 @@ OInetSocketAddr::OInetSocketAddr(const OInetSocketAddr& sa) :
 	OSocketAddr(sa)
 {
 	VOS_ASSERT(getFamily() == TFamily_Inet);
-}   
+}
 
 /*****************************************************************************/
 // OInetSocketAddr(const OSocketAddr&)
@@ -211,7 +211,7 @@ OInetSocketAddr::OInetSocketAddr(const OSocketAddr& sa) :
 	OSocketAddr(sa)
 {
 	VOS_ASSERT(sa.getFamily() == TFamily_Inet);
-}   
+}
 
 /*****************************************************************************/
 // ~OInetSocketAddr
@@ -225,7 +225,7 @@ OInetSocketAddr::~OInetSocketAddr()
 /*****************************************************************************/
 void OInetSocketAddr::operator= (oslSocketAddr Addr)
 {
-	VOS_PRECOND(osl_getFamilyOfSocketAddr(Addr) == osl_Socket_FamilyInet, 
+	VOS_PRECOND(osl_getFamilyOfSocketAddr(Addr) == osl_Socket_FamilyInet,
 				"oslSocketAddr not of type osl_Socket_FamilyInet!");
 
 	OSocketAddr::operator=(Addr);
@@ -266,7 +266,7 @@ OInetSocketAddr& OInetSocketAddr::operator=(const OSocketAddr& Addr)
 /*****************************************************************************/
 // getServicePort()
 /*****************************************************************************/
-sal_Int32 OInetSocketAddr::getServicePort(const rtl::OUString& ustrServiceName, 
+sal_Int32 OInetSocketAddr::getServicePort(const rtl::OUString& ustrServiceName,
 									const rtl::OUString& ustrProtocolName)
 {
 	return osl_getServicePort(ustrServiceName.pData, ustrProtocolName.pData);
@@ -305,20 +305,20 @@ OSocketAddr::TResult OInetSocketAddr::getDottedAddr( rtl::OUString& pBuffer ) co
 sal_Bool OInetSocketAddr::setAddr(const rtl::OUString& ustrAddrOrHostname)
 {
 	sal_Int32 Port = 0;
-	
+
 	if(m_SockAddr) {
-	
+
 		// retrieve old port
 		Port= getPort();
 
 		// free old address
 		osl_destroySocketAddr(m_SockAddr);
 		m_SockAddr= 0;
-	} 
+	}
 
 	// first try as dotted address.
 	m_SockAddr= osl_createInetSocketAddr(ustrAddrOrHostname.pData, Port);
-	
+
 	// create failed, maybe it's an hostname
 	if(m_SockAddr == 0)
 	{
@@ -342,8 +342,8 @@ sal_Bool OInetSocketAddr::setAddr(const rtl::OUString& ustrAddrOrHostname)
 ///////////////////////////////////////////////////////////////////////////////
 // OIpxSocketAddr
 
-VOS_IMPLEMENT_CLASSINFO(VOS_CLASSNAME(OIpxSocketAddr, vos), 
-						VOS_NAMESPACE(OIpxSocketAddr, vos), 
+VOS_IMPLEMENT_CLASSINFO(VOS_CLASSNAME(OIpxSocketAddr, vos),
+						VOS_NAMESPACE(OIpxSocketAddr, vos),
 						VOS_NAMESPACE(OSocketAddr, vos), 0);
 
 
@@ -406,7 +406,7 @@ OIpxSocketAddr::~OIpxSocketAddr()
 /*****************************************************************************/
 void OIpxSocketAddr::operator= (oslSocketAddr Addr)
 {
-	VOS_PRECOND(osl_getFamilyOfSocketAddr(Addr) == osl_Socket_FamilyIpx, 
+	VOS_PRECOND(osl_getFamilyOfSocketAddr(Addr) == osl_Socket_FamilyIpx,
 			"oslSocketAddr not of type osl_Socket_FamilyIpx!");
 
 	OSocketAddr::operator=(Addr);
@@ -486,8 +486,8 @@ void OIpxSocketAddr::getAddressString( rtl::OUString& ) const
 // Socket
 
 
-VOS_IMPLEMENT_CLASSINFO(VOS_CLASSNAME(OSocket, vos), 
-						VOS_NAMESPACE(OSocket, vos), 
+VOS_IMPLEMENT_CLASSINFO(VOS_CLASSNAME(OSocket, vos),
+						VOS_NAMESPACE(OSocket, vos),
 						VOS_NAMESPACE(OObject, vos), 0);
 
 /*****************************************************************************/
@@ -505,18 +505,18 @@ OSocket::OSocket()
 /*****************************************************************************/
 // OSocket()
 /*****************************************************************************/
-OSocket::OSocket(TSocketType Type, 
-				 TAddrFamily Family, 
-				 TProtocol   Protocol) 
+OSocket::OSocket(TSocketType Type,
+				 TAddrFamily Family,
+				 TProtocol   Protocol)
 {
 	m_pRecvTimeout = 0;
 	m_pSendTimeout = 0;
 
-	m_pSockRef= 
-		new SockRef(osl_createSocket((oslAddrFamily)Family, 
-									 (oslSocketType)Type, 
+	m_pSockRef=
+		new SockRef(osl_createSocket((oslAddrFamily)Family,
+									 (oslSocketType)Type,
 									 (oslProtocol)Protocol));
-	
+
 	VOS_POSTCOND(m_pSockRef != 0, "OSocket(): new failed.\n");
 	VOS_POSTCOND((*m_pSockRef)(), "OSocket(): creation of socket failed!\n");
 }
@@ -530,16 +530,16 @@ ISocketTypes(), OReference(), OObject()
 	m_pRecvTimeout = 0;
 	m_pSendTimeout = 0;
 	m_pSockRef=0;
-    
+
 	VOS_ASSERT(sock.m_pSockRef != 0);
 
     if ( sock.m_pSockRef !=0 )
-    {    
+    {
         m_pSockRef= sock.m_pSockRef;
 
         setRecvTimeout(sock.m_pRecvTimeout);
         setSendTimeout(sock.m_pSendTimeout);
-        
+
         m_pSockRef->acquire();
     }
 }
@@ -571,8 +571,8 @@ OSocket::~OSocket()
 /*****************************************************************************/
 // create
 /*****************************************************************************/
-sal_Bool OSocket::create(TSocketType Type, 
-						TAddrFamily Family, 
+sal_Bool OSocket::create(TSocketType Type,
+						TAddrFamily Family,
 						TProtocol   Protocol)
 {
 	// if this was a valid socket, decrease reference
@@ -583,9 +583,9 @@ sal_Bool OSocket::create(TSocketType Type,
 		m_pSockRef= 0;
 	}
 
-	m_pSockRef= 
-		new SockRef(osl_createSocket((oslAddrFamily)Family, 
-									 (oslSocketType)Type, 
+	m_pSockRef=
+		new SockRef(osl_createSocket((oslAddrFamily)Family,
+									 (oslSocketType)Type,
 									 (oslProtocol)Protocol));
 
 	VOS_POSTCOND(m_pSockRef != 0, "OSocket(): new failed.\n");
@@ -644,7 +644,7 @@ sal_Bool OSocket::isValid() const
 /*****************************************************************************/
 void OSocket::close()
 {
-	if (m_pSockRef && (*m_pSockRef)() && (m_pSockRef->release() == 0)) 
+	if (m_pSockRef && (*m_pSockRef)() && (m_pSockRef->release() == 0))
 	{
 		osl_releaseSocket((*m_pSockRef)());
 		delete m_pSockRef;
@@ -661,7 +661,7 @@ void OSocket::getLocalAddr(OSocketAddr& sa) const
 	VOS_ASSERT(m_pSockRef && (*m_pSockRef)());
 
     if ( m_pSockRef && (*m_pSockRef)() )
-    {    
+    {
         sa= osl_getLocalAddrOfSocket((*m_pSockRef)());
     }
 }
@@ -669,23 +669,23 @@ void OSocket::getLocalAddr(OSocketAddr& sa) const
 /*****************************************************************************/
 // getLocalPort
 /*****************************************************************************/
-sal_Int32 OSocket::getLocalPort() const 
+sal_Int32 OSocket::getLocalPort() const
 {
 	VOS_ASSERT(m_pSockRef && (*m_pSockRef)());
 
 	sal_Int32 Port= OSL_INVALID_PORT;
 
     if ( m_pSockRef && (*m_pSockRef)() )
-    {   
+    {
         oslSocketAddr Addr= osl_getLocalAddrOfSocket((*m_pSockRef)());
-        
-        if(Addr) 
+
+        if(Addr)
         {
             Port= osl_getInetPortOfSocketAddr(Addr);
             osl_destroySocketAddr(Addr);
         }
     }
-    
+
 	return Port;
 }
 
@@ -697,22 +697,22 @@ OSocket::TResult OSocket::getLocalHost( rtl::OUString& pBuffer) const
 	VOS_ASSERT(m_pSockRef && (*m_pSockRef)());
 
     if ( m_pSockRef && (*m_pSockRef)() )
-    {    
+    {
         oslSocketAddr Addr= osl_getLocalAddrOfSocket((*m_pSockRef)());
-	
-        if(Addr) 
+
+        if(Addr)
         {
-//	    	TResult Result= (TResult)osl_getHostnameOfSocketAddr(Addr, 
+//	    	TResult Result= (TResult)osl_getHostnameOfSocketAddr(Addr,
 //														pBuffer, BufferSize);
-            TResult Result= (TResult)osl_getHostnameOfSocketAddr(Addr, 
+            TResult Result= (TResult)osl_getHostnameOfSocketAddr(Addr,
 															 &pBuffer.pData );
-	
+
             osl_destroySocketAddr(Addr);
 
             return Result;
         }
     }
-    
+
 	return TResult_Error;
 }
 
@@ -724,7 +724,7 @@ void OSocket::getPeerAddr(OSocketAddr& sa) const
 	VOS_ASSERT(m_pSockRef && (*m_pSockRef)());
 
     if ( m_pSockRef && (*m_pSockRef)() )
-    {    
+    {
         sa= osl_getPeerAddrOfSocket((*m_pSockRef)());
     }
 }
@@ -737,12 +737,12 @@ sal_Int32 OSocket::getPeerPort() const
 	VOS_ASSERT(m_pSockRef && (*m_pSockRef)());
 
     sal_Int32 Port= OSL_INVALID_PORT;
-    
+
     if ( m_pSockRef && (*m_pSockRef)() )
-    {   
+    {
         oslSocketAddr Addr= osl_getPeerAddrOfSocket((*m_pSockRef)());
 
-        if(Addr) 
+        if(Addr)
         {
             Port= osl_getInetPortOfSocketAddr(Addr);
             osl_destroySocketAddr(Addr);
@@ -763,11 +763,11 @@ OSocket::TResult OSocket::getPeerHost( rtl::OUString& pBuffer ) const
     {
         oslSocketAddr Addr= osl_getPeerAddrOfSocket((*m_pSockRef)());
 
-        if(Addr) 
+        if(Addr)
         {
-//		    TResult Result= (TResult)osl_getHostnameOfSocketAddr(Addr, 
+//		    TResult Result= (TResult)osl_getHostnameOfSocketAddr(Addr,
 //														pBuffer, BufferSize);
-            TResult Result= (TResult)osl_getHostnameOfSocketAddr(Addr, 
+            TResult Result= (TResult)osl_getHostnameOfSocketAddr(Addr,
 															 &pBuffer.pData );
 
             osl_destroySocketAddr(Addr);
@@ -790,7 +790,7 @@ sal_Bool OSocket::bind(const OSocketAddr& Addr)
     {
         return osl_bindAddrToSocket((*m_pSockRef)(), (oslSocketAddr)Addr);
     }
-    
+
 	return sal_False;
 }
 
@@ -829,10 +829,10 @@ sal_Bool OSocket::isRecvReady(const TimeValue* pTimeout) const
 	VOS_ASSERT(m_pSockRef && (*m_pSockRef)());
 
     if ( m_pSockRef && (*m_pSockRef)() )
-    {    
+    {
         return osl_isReceiveReady((*m_pSockRef)(), pTimeout);
     }
-    
+
     return sal_False;
 }
 
@@ -859,10 +859,10 @@ sal_Bool OSocket::isExceptionPending(const TimeValue* pTimeout) const
 	VOS_ASSERT(m_pSockRef && (*m_pSockRef)());
 
     if ( m_pSockRef && (*m_pSockRef)() )
-    {    
+    {
         return osl_isExceptionPending((*m_pSockRef)(), pTimeout);
     }
-    
+
     return sal_False;
 }
 
@@ -870,7 +870,7 @@ sal_Bool OSocket::isExceptionPending(const TimeValue* pTimeout) const
 /*****************************************************************************/
 // getOption
 /*****************************************************************************/
-sal_Int32 OSocket::getOption(TSocketOption Option, 
+sal_Int32 OSocket::getOption(TSocketOption Option,
 					   	   void* pBuffer,
 					       sal_uInt32 BufferLen,
 					       TSocketOptionLevel Level) const
@@ -882,7 +882,7 @@ sal_Int32 OSocket::getOption(TSocketOption Option,
         return osl_getSocketOption((*m_pSockRef)(),
                                    (oslSocketOptionLevel)Level,
                                    (oslSocketOption)Option,
-                                   pBuffer, 
+                                   pBuffer,
                                    BufferLen);
     }
 
@@ -892,7 +892,7 @@ sal_Int32 OSocket::getOption(TSocketOption Option,
 /*****************************************************************************/
 // setOption
 /*****************************************************************************/
-sal_Bool OSocket::setOption(TSocketOption Option, 
+sal_Bool OSocket::setOption(TSocketOption Option,
 						   void* pBuffer,
 						   sal_uInt32 BufferLen,
 						   TSocketOptionLevel Level) const
@@ -900,11 +900,11 @@ sal_Bool OSocket::setOption(TSocketOption Option,
 	VOS_ASSERT(m_pSockRef && (*m_pSockRef)());
 
     if ( m_pSockRef && (*m_pSockRef)() )
-    {    
+    {
         return osl_setSocketOption((*m_pSockRef)(),
                                    (oslSocketOptionLevel)Level,
                                    (oslSocketOption)Option,
-                                   pBuffer, 
+                                   pBuffer,
                                    BufferLen);
     }
 
@@ -920,7 +920,7 @@ sal_Bool OSocket::enableNonBlockingMode(sal_Bool On)
 	VOS_ASSERT(m_pSockRef && (*m_pSockRef)());
 
     if ( m_pSockRef && (*m_pSockRef)() )
-    {    
+    {
         return osl_enableNonBlockingMode((*m_pSockRef)(), On);
     }
 
@@ -935,7 +935,7 @@ sal_Bool OSocket::isNonBlockingMode() const
 	VOS_ASSERT(m_pSockRef && (*m_pSockRef)());
 
     if ( m_pSockRef && (*m_pSockRef)() )
-    {    
+    {
         return osl_isNonBlockingMode((*m_pSockRef)());
     }
 
@@ -950,7 +950,7 @@ OSocket::TSocketType OSocket::getType() const
 	VOS_ASSERT(m_pSockRef && (*m_pSockRef)());
 
     if ( m_pSockRef && (*m_pSockRef)() )
-    {    
+    {
         return (TSocketType)osl_getSocketType((*m_pSockRef)());
     }
 
@@ -977,10 +977,10 @@ sal_Int32 OSocket::setDebug(sal_Int32 opt) const
 	sal_Int32 old= 0;
 
 	getOption(TOption_Debug, &old, sizeof(old));
-	
+
 	if (opt != -1)
 		setOption(TOption_Debug, &opt, sizeof(opt));
-  
+
 	return old;
 }
 
@@ -990,9 +990,9 @@ sal_Int32 OSocket::setDebug(sal_Int32 opt) const
 sal_Int32 OSocket::setReuseAddr(sal_Int32 opt) const
 {
 	sal_Int32 old = 0;
-	
+
 	getOption(TOption_ReuseAddr, &old, sizeof(old));
-  
+
 	if (opt != -1)
 		setOption(TOption_ReuseAddr, &opt, sizeof(opt));
 
@@ -1005,12 +1005,12 @@ sal_Int32 OSocket::setReuseAddr(sal_Int32 opt) const
 sal_Int32 OSocket::setKeepAlive(sal_Int32 opt) const
 {
 	sal_Int32 old = 0;
-	
+
 	getOption(TOption_KeepAlive, &old, sizeof(old));
 
 	if (opt != -1)
 		setOption(TOption_KeepAlive, &opt, sizeof(opt));
-  
+
 	return (old);
 }
 
@@ -1020,12 +1020,12 @@ sal_Int32 OSocket::setKeepAlive(sal_Int32 opt) const
 sal_Int32 OSocket::setDontRoute(sal_Int32 opt) const
 {
 	sal_Int32 old = 0;
-  
+
 	getOption(TOption_DontRoute, &old, sizeof(old));
-  
+
 	if (opt != -1)
 		setOption(TOption_DontRoute, &opt, sizeof(opt));
-  
+
 	return (old);
 }
 
@@ -1035,12 +1035,12 @@ sal_Int32 OSocket::setDontRoute(sal_Int32 opt) const
 sal_Int32 OSocket::setBroadcast(sal_Int32 opt) const
 {
 	sal_Int32 old = 0;
-  
+
 	getOption(TOption_Broadcast, &old, sizeof(old));
-  
+
 	if (opt != -1)
 		setOption(TOption_Broadcast, &opt, sizeof(opt));
-  
+
 	return (old);
 }
 
@@ -1050,12 +1050,12 @@ sal_Int32 OSocket::setBroadcast(sal_Int32 opt) const
 sal_Int32 OSocket::setOobinline(sal_Int32 opt) const
 {
 	sal_Int32 old = 0;
-  
+
 	getOption(TOption_OOBinLine, &old, sizeof(old));
-  
+
 	if (opt != -1)
 		setOption(TOption_OOBinLine, &opt, sizeof(opt));
-  
+
 	return (old);
 }
 
@@ -1065,7 +1065,7 @@ sal_Int32 OSocket::setOobinline(sal_Int32 opt) const
 sal_Int32 OSocket::setLinger(sal_Int32 time) const
 {
 	/* local decl. of linger-struct */
-	struct SockLinger 
+	struct SockLinger
 	{
 		sal_Int32 m_onoff;    // option on/off
 		sal_Int32 m_linger;   // linger time
@@ -1073,10 +1073,10 @@ sal_Int32 OSocket::setLinger(sal_Int32 time) const
 
 
 	SockLinger  old = { 0, 0 };
-  
+
 	getOption(TOption_Linger, &old, sizeof(old));
-  
-	if (time > 0) // enable linger with wait-times > 0 
+
+	if (time > 0) // enable linger with wait-times > 0
 	{
 		SockLinger nw = { 1, time };
 		setOption(TOption_Linger, &nw, sizeof(nw));
@@ -1112,12 +1112,12 @@ sal_Int32 OSocket::setSendBufSize(sal_Int32 sz) const
 sal_Int32 OSocket::setRecvBufSize(sal_Int32 sz) const
 {
 	sal_Int32 old = 0;
-	
+
 	getOption(TOption_RcvBuf, &old, sizeof(old));
-  
+
 	if (sz >= 0)
 		setOption(TOption_RcvBuf, &sz, sizeof(sz));
-  
+
 	return (old);
 }
 
@@ -1127,12 +1127,12 @@ sal_Int32 OSocket::setRecvBufSize(sal_Int32 sz) const
 sal_Int32 OSocket::setTcpNoDelay(sal_Int32 sz) const
 {
 	sal_Int32 old = 0;
-	
+
 	getOption(TOption_TcpNoDelay, &old, sizeof(old), TLevel_Tcp);
-  
+
 	if (sz >= 0)
 		setOption(TOption_TcpNoDelay, &sz, sizeof(sz), TLevel_Tcp);
-  
+
 	return (old);
 }
 
@@ -1142,7 +1142,7 @@ sal_Int32 OSocket::setTcpNoDelay(sal_Int32 sz) const
 //void OSocket::getError(sal_Char* pBuffer, sal_uInt32 nSize) const
 void OSocket::getError( rtl::OUString& pBuffer ) const
 {
-	VOS_ASSERT(m_pSockRef && (*m_pSockRef)());    
+	VOS_ASSERT(m_pSockRef && (*m_pSockRef)());
 
     if (m_pSockRef && (*m_pSockRef)())
 		osl_getLastSocketErrorDescription((*m_pSockRef)(), &pBuffer.pData );
@@ -1155,7 +1155,7 @@ void OSocket::getError( rtl::OUString& pBuffer ) const
 /*****************************************************************************/
 OSocket::TSocketError OSocket::getError() const
 {
-	VOS_ASSERT(m_pSockRef && (*m_pSockRef)());    
+	VOS_ASSERT(m_pSockRef && (*m_pSockRef)());
 
     if (m_pSockRef && (*m_pSockRef)())
 		return (TSocketError)osl_getLastSocketError((*m_pSockRef)());
@@ -1165,15 +1165,15 @@ OSocket::TSocketError OSocket::getError() const
 
 
 
-VOS_IMPLEMENT_CLASSINFO(VOS_CLASSNAME(OAcceptorSocket, vos), 
-						VOS_NAMESPACE(OAcceptorSocket, vos), 
+VOS_IMPLEMENT_CLASSINFO(VOS_CLASSNAME(OAcceptorSocket, vos),
+						VOS_NAMESPACE(OAcceptorSocket, vos),
 						VOS_NAMESPACE(OSocket, vos), 0);
 
 
 /*****************************************************************************/
 // OAcceptorSocket
 /*****************************************************************************/
-OAcceptorSocket::OAcceptorSocket(TAddrFamily Family, 
+OAcceptorSocket::OAcceptorSocket(TAddrFamily Family,
 								 TProtocol   Protocol,
 								 TSocketType Type) :
 	OSocket(Type, Family, Protocol)
@@ -1184,21 +1184,21 @@ OAcceptorSocket::OAcceptorSocket(TAddrFamily Family,
 // OAcceptorSocket
 /*****************************************************************************/
 OAcceptorSocket::OAcceptorSocket(const OAcceptorSocket& sock) :
-	OSocket(sock)	
+	OSocket(sock)
 {
 }
 
 /*****************************************************************************/
 // ~OAcceptorSocket
 /*****************************************************************************/
-OAcceptorSocket::~OAcceptorSocket() 
+OAcceptorSocket::~OAcceptorSocket()
 {
 	if (m_pSockRef && (*m_pSockRef)() && (m_pSockRef->release() == 0))
 	{
         /* mfe: prepare for forthcoming api change */
-		osl_closeSocket((*m_pSockRef)());        
+		osl_closeSocket((*m_pSockRef)());
 		osl_releaseSocket((*m_pSockRef)());
-		delete m_pSockRef;  
+		delete m_pSockRef;
 		m_pSockRef = 0;
 	}
 }
@@ -1212,7 +1212,7 @@ void OAcceptorSocket::close()
 	{
 		osl_closeSocket((*m_pSockRef)());
 	}
-    
+
 	m_pSockRef= 0;
 }
 
@@ -1224,10 +1224,10 @@ sal_Bool OAcceptorSocket::listen(sal_Int32 MaxPendingConnections)
 	VOS_ASSERT(m_pSockRef && (*m_pSockRef)());
 
     if ( m_pSockRef && (*m_pSockRef)() )
-    {    
+    {
         return osl_listenOnSocket((*m_pSockRef)(), MaxPendingConnections);
     }
-    
+
     return sal_False;
 }
 
@@ -1237,27 +1237,27 @@ sal_Bool OAcceptorSocket::listen(sal_Int32 MaxPendingConnections)
 /*****************************************************************************/
 OSocket::TResult OAcceptorSocket::acceptConnection(OStreamSocket& connection)
 {
-	if (m_pRecvTimeout && ! isRecvReady(m_pRecvTimeout)) 
+	if (m_pRecvTimeout && ! isRecvReady(m_pRecvTimeout))
 		return TResult_TimedOut;
 
 	VOS_ASSERT(m_pSockRef && (*m_pSockRef)());
     OStreamSocket aSocket;
-    
+
     if ( m_pSockRef && (*m_pSockRef)() )
-    {    
+    {
         aSocket = osl_acceptConnectionOnSocket((*m_pSockRef)(), 0);
     }
-	
+
 	if( aSocket.isValid() )
     {
         connection = aSocket;
 		return TResult_Ok;
     }
 	else
-    {    
+    {
 		return TResult_Error;
     }
-    
+
 }
 
 /*****************************************************************************/
@@ -1269,22 +1269,22 @@ OSocket::TResult OAcceptorSocket::acceptConnection(OStreamSocket& connection,
 	oslSocketAddr PeerAddr = 0;
 	oslSocket     Socket = 0;
 
-	if (m_pRecvTimeout && ! isRecvReady(m_pRecvTimeout)) 
+	if (m_pRecvTimeout && ! isRecvReady(m_pRecvTimeout))
 		return TResult_TimedOut;
 
 	VOS_ASSERT(m_pSockRef && (*m_pSockRef)());
 
     if ( m_pSockRef && (*m_pSockRef)() )
-    {    
+    {
         Socket= osl_acceptConnectionOnSocket((*m_pSockRef)(), &PeerAddr);
     }
-	
+
 	if (Socket)
 	{
 		sa= PeerAddr;
 		connection= Socket;
 		return TResult_Ok;
-	} 
+	}
 	else
 	{
 		return TResult_Error;
@@ -1292,8 +1292,8 @@ OSocket::TResult OAcceptorSocket::acceptConnection(OStreamSocket& connection,
 }
 
 
-VOS_IMPLEMENT_CLASSINFO(VOS_CLASSNAME(OStreamSocket, vos), 
-						VOS_NAMESPACE(OStreamSocket, vos), 
+VOS_IMPLEMENT_CLASSINFO(VOS_CLASSNAME(OStreamSocket, vos),
+						VOS_NAMESPACE(OStreamSocket, vos),
 						VOS_NAMESPACE(OSocket, vos), 0);
 
 
@@ -1308,7 +1308,7 @@ OStreamSocket::OStreamSocket()
 /*****************************************************************************/
 // OStreamSocket
 /*****************************************************************************/
-OStreamSocket::OStreamSocket(TAddrFamily Family, 
+OStreamSocket::OStreamSocket(TAddrFamily Family,
 							 TProtocol   Protocol,
 							 TSocketType Type) :
 	OSocket(Type, Family, Protocol)
@@ -1402,16 +1402,16 @@ sal_Int32 OStreamSocket::read(void* pBuffer, sal_uInt32 n) const
 {
 	sal_uInt8 *Ptr = (sal_uInt8  *)pBuffer;
 
-	if (m_pRecvTimeout && ! isRecvReady(m_pRecvTimeout)) 
+	if (m_pRecvTimeout && ! isRecvReady(m_pRecvTimeout))
 		return 0;
 
 	VOS_ASSERT(m_pSockRef && (*m_pSockRef)());
 
     if ( ! ( m_pSockRef && (*m_pSockRef)() ) )
     {
-        return -1;    
+        return -1;
     }
-    
+
 	/* loop until all desired bytes were read or an error occurred */
 	sal_uInt32 BytesRead= 0;
 	sal_uInt32 BytesToRead= n;
@@ -1456,9 +1456,9 @@ sal_Int32 OStreamSocket::write(const void* pBuffer, sal_uInt32 n)
 
     if ( ! ( m_pSockRef && (*m_pSockRef)() ) )
     {
-        return -1;    
+        return -1;
     }
-    
+
 	/* loop until all desired bytes were send or an error occurred */
 	sal_uInt32 BytesSend= 0;
 	sal_uInt32 BytesToSend= n;
@@ -1511,7 +1511,7 @@ sal_Int32 OStreamSocket::recv(void* pBuffer,
     {
         return -1;
     }
-    
+
 	return osl_receiveSocket((*m_pSockRef)(),
 							 pBuffer,
 							 BytesToRead,
@@ -1521,22 +1521,22 @@ sal_Int32 OStreamSocket::recv(void* pBuffer,
 /*****************************************************************************/
 // send
 /*****************************************************************************/
-sal_Int32 OStreamSocket::send(const void* pBuffer, 
-						    sal_uInt32 BytesToSend, 
+sal_Int32 OStreamSocket::send(const void* pBuffer,
+						    sal_uInt32 BytesToSend,
 						    TSocketMsgFlag Flag)
 {
-	if (m_pSendTimeout && ! isSendReady(m_pSendTimeout)) 
+	if (m_pSendTimeout && ! isSendReady(m_pSendTimeout))
 		return 0;
-	
+
 	VOS_ASSERT(m_pSockRef && (*m_pSockRef)());
 
     if ( ! ( m_pSockRef && (*m_pSockRef)() ) )
     {
         return -1;
     }
-    
-	return osl_sendSocket((*m_pSockRef)(), 
-						  pBuffer, 
+
+	return osl_sendSocket((*m_pSockRef)(),
+						  pBuffer,
 						  BytesToSend,
 						  (oslSocketMsgFlag)Flag);
 }
@@ -1552,14 +1552,14 @@ sal_Bool OStreamSocket::shutdown(TSocketDirection Direction)
     {
         return osl_shutdownSocket((*m_pSockRef)(), (oslSocketDirection)Direction);
     }
-    
+
     return sal_False;
 }
 
 
 
-VOS_IMPLEMENT_CLASSINFO(VOS_CLASSNAME(OConnectorSocket, vos), 
-						VOS_NAMESPACE(OConnectorSocket, vos), 
+VOS_IMPLEMENT_CLASSINFO(VOS_CLASSNAME(OConnectorSocket, vos),
+						VOS_NAMESPACE(OConnectorSocket, vos),
 						VOS_NAMESPACE(OStreamSocket, vos), 0);
 
 
@@ -1567,7 +1567,7 @@ VOS_IMPLEMENT_CLASSINFO(VOS_CLASSNAME(OConnectorSocket, vos),
 /*****************************************************************************/
 // OConnectorSocket
 /*****************************************************************************/
-OConnectorSocket::OConnectorSocket(TAddrFamily Family, 
+OConnectorSocket::OConnectorSocket(TAddrFamily Family,
 								   TProtocol   Protocol,
 								   TSocketType Type) :
 	OStreamSocket(Family, Protocol, Type)
@@ -1592,32 +1592,32 @@ OConnectorSocket::~OConnectorSocket()
 /*****************************************************************************/
 // connect
 /*****************************************************************************/
-OSocket::TResult OConnectorSocket::connect(const OSocketAddr& Addr, 
+OSocket::TResult OConnectorSocket::connect(const OSocketAddr& Addr,
 										   const TimeValue* pTimeout)
 {
-	
+
 	VOS_ASSERT(m_pSockRef && (*m_pSockRef)());
 
     if ( m_pSockRef && (*m_pSockRef)() )
-    {    
+    {
         return (TResult)osl_connectSocketTo((*m_pSockRef)(),
                                             (oslSocketAddr)Addr,
                                             pTimeout);
     }
-    
+
     return TResult_Error;
 }
 
 
-VOS_IMPLEMENT_CLASSINFO(VOS_CLASSNAME(ODatagramSocket, vos), 
-						VOS_NAMESPACE(ODatagramSocket, vos), 
+VOS_IMPLEMENT_CLASSINFO(VOS_CLASSNAME(ODatagramSocket, vos),
+						VOS_NAMESPACE(ODatagramSocket, vos),
 						VOS_NAMESPACE(OSocket, vos), 0);
 
 
 /*****************************************************************************/
 // ODatagramSocket
 /*****************************************************************************/
-ODatagramSocket::ODatagramSocket(TAddrFamily Family, 
+ODatagramSocket::ODatagramSocket(TAddrFamily Family,
 								 TProtocol   Protocol,
 								 TSocketType Type) :
 	OSocket(Type, Family, Protocol)
@@ -1643,13 +1643,13 @@ ODatagramSocket::~ODatagramSocket()
 /*****************************************************************************/
 // recvFrom
 /*****************************************************************************/
-sal_Int32 ODatagramSocket::recvFrom(void* pBuffer, 
-					              sal_uInt32 BufferSize, 
+sal_Int32 ODatagramSocket::recvFrom(void* pBuffer,
+					              sal_uInt32 BufferSize,
 					  			  OSocketAddr* pSenderAddr,
 					  			  TSocketMsgFlag Flag)
 {
 
-	if (m_pRecvTimeout && ! isRecvReady(m_pRecvTimeout)) 
+	if (m_pRecvTimeout && ! isRecvReady(m_pRecvTimeout))
 		return 0;
 
 	VOS_ASSERT(m_pSockRef && (*m_pSockRef)());
@@ -1658,7 +1658,7 @@ sal_Int32 ODatagramSocket::recvFrom(void* pBuffer,
     {
         return -1;
     }
-    
+
 	sal_Int32 BytesRead;
 
 	if(pSenderAddr)
@@ -1694,22 +1694,22 @@ sal_Int32 ODatagramSocket::recvFrom(void* pBuffer,
 /*****************************************************************************/
 // sendTo
 /*****************************************************************************/
-sal_Int32 ODatagramSocket::sendTo(const OSocketAddr& ReceiverAddr, 
+sal_Int32 ODatagramSocket::sendTo(const OSocketAddr& ReceiverAddr,
 							    const void* pBuffer,
-							    sal_uInt32 BufferSize, 
+							    sal_uInt32 BufferSize,
 							    TSocketMsgFlag Flag)
 {
-	if (m_pSendTimeout && ! isSendReady(m_pSendTimeout)) 
+	if (m_pSendTimeout && ! isSendReady(m_pSendTimeout))
 		return 0;
 
 	VOS_ASSERT(m_pSockRef && (*m_pSockRef)());
 
     if ( ( m_pSockRef && (*m_pSockRef)() ) )
     {
-        
-        return osl_sendToSocket((*m_pSockRef)(), 
+
+        return osl_sendToSocket((*m_pSockRef)(),
                                 (oslSocketAddr)ReceiverAddr,
-                                pBuffer, 
+                                pBuffer,
                                 BufferSize,
                                 (oslSocketMsgFlag)Flag);
     }

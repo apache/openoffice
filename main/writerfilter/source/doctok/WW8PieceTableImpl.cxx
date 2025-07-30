@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -38,11 +38,11 @@ using namespace ::std;
 ostream & operator << (ostream & o, const WW8PieceTable & rPieceTable)
 {
     rPieceTable.dump(o);
-        
+
     return o;
 }
 
-WW8PieceTableImpl::WW8PieceTableImpl(WW8Stream & rStream, 
+WW8PieceTableImpl::WW8PieceTableImpl(WW8Stream & rStream,
                                      sal_uInt32 nOffset,
                                      sal_uInt32 nCount)
 {
@@ -56,16 +56,16 @@ WW8PieceTableImpl::WW8PieceTableImpl(WW8Stream & rStream,
         {
             Cp aCp(aClx.getCp(n));
             Fc aFc(aClx.getFc(n), aClx.isComplexFc(n));
-                
+
             CpAndFc aCpAndFc(aCp, aFc, PROP_DOC);
 
             mEntries.push_back(aCpAndFc);
         }
-            
+
         CpAndFc aBack = mEntries.back();
         Cp aCp(aClx.getCp(aClx.getPieceCount()));
         Fc aFc(aBack.getFc() + (aCp - aBack.getCp()));
-            
+
         CpAndFc aCpAndFc(aCp, aFc, PROP_DOC);
 
         mEntries.push_back(aCpAndFc);
@@ -77,19 +77,19 @@ sal_uInt32 WW8PieceTableImpl::getCount() const
     return mEntries.size();
 }
 
-WW8PieceTableImpl::tEntries::const_iterator 
+WW8PieceTableImpl::tEntries::const_iterator
 WW8PieceTableImpl::findCp(const Cp & rCp) const
 {
     tEntries::const_iterator aResult = mEntries.end();
     tEntries::const_iterator aEnd = mEntries.end();
 
-    for (tEntries::const_iterator aIt = mEntries.begin(); aIt != aEnd; 
+    for (tEntries::const_iterator aIt = mEntries.begin(); aIt != aEnd;
          aIt++)
     {
         if (aIt->getCp() <= rCp)
         {
             aResult = aIt;
-                
+
             //break;
         }
     }
@@ -97,7 +97,7 @@ WW8PieceTableImpl::findCp(const Cp & rCp) const
     return aResult;
 }
 
-WW8PieceTableImpl::tEntries::const_iterator 
+WW8PieceTableImpl::tEntries::const_iterator
 WW8PieceTableImpl::findFc(const Fc & rFc) const
 {
     tEntries::const_iterator aResult = mEntries.end();
@@ -109,7 +109,7 @@ WW8PieceTableImpl::findFc(const Fc & rFc) const
             aResult = mEntries.begin();
         else
         {
-            for (tEntries::const_iterator aIt = mEntries.begin(); 
+            for (tEntries::const_iterator aIt = mEntries.begin();
                  aIt != aEnd; aIt++)
             {
                 if (aIt->getFc() <= rFc)
@@ -132,7 +132,7 @@ WW8PieceTableImpl::findFc(const Fc & rFc) const
                             break;
                         }
                     }
-                    
+
                 }
             }
         }
@@ -163,7 +163,7 @@ Fc WW8PieceTableImpl::getFirstFc() const
         throw ExceptionNotFound(" WW8PieceTableImpl::getFirstFc");
 
     return aResult;
-}    
+}
 
 Cp WW8PieceTableImpl::getLastCp() const
 {
@@ -187,7 +187,7 @@ Fc WW8PieceTableImpl::getLastFc() const
         throw ExceptionNotFound("WW8PieceTableImpl::getLastFc");
 
     return aResult;
-}    
+}
 
 Cp WW8PieceTableImpl::getCp(sal_uInt32 nIndex) const
 {
@@ -213,7 +213,7 @@ Cp WW8PieceTableImpl::fc2cp(const Fc & rFc) const
             aFc = rFc;
 
         tEntries::const_iterator aIt = findFc(aFc);
-            
+
         if (aIt != mEntries.end())
         {
             cpResult = aIt->getCp() + (aFc - aIt->getFc());
@@ -224,7 +224,7 @@ Cp WW8PieceTableImpl::fc2cp(const Fc & rFc) const
 
     return cpResult;
 }
-    
+
 Fc WW8PieceTableImpl::cp2fc(const Cp & rCp) const
 {
     Fc aResult;
@@ -234,7 +234,7 @@ Fc WW8PieceTableImpl::cp2fc(const Cp & rCp) const
     if (aItCp == mCp2FcCache.end())
     {
         tEntries::const_iterator aIt = findCp(rCp);
-        
+
         if (aIt != mEntries.end())
         {
             aResult = aIt->getFc() + (rCp - aIt->getCp());
@@ -270,7 +270,7 @@ bool WW8PieceTableImpl::isComplex(const Fc & rFc) const
 
     if (aIt != mEntries.end())
         bResult = aIt->isComplex();
-        
+
     return bResult;
 }
 

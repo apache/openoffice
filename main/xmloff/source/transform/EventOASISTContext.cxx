@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -50,7 +50,7 @@ using namespace ::com::sun::star::xml::sax;
 using namespace ::xmloff::token;
 
 class XMLTransformerOASISEventMap_Impl:
-	public ::std::hash_map< NameKey_Impl, ::rtl::OUString, 
+	public ::std::hash_map< NameKey_Impl, ::rtl::OUString,
 						    NameHash_Impl, NameHash_Impl >
 {
 public:
@@ -89,10 +89,10 @@ XMLTransformerOASISEventMap_Impl::~XMLTransformerOASISEventMap_Impl()
 
 TYPEINIT1( XMLEventOASISTransformerContext, XMLRenameElemTransformerContext);
 
-XMLEventOASISTransformerContext::XMLEventOASISTransformerContext( 
-		XMLTransformerBase& rImp, 
+XMLEventOASISTransformerContext::XMLEventOASISTransformerContext(
+		XMLTransformerBase& rImp,
 		const OUString& rQName ) :
-	XMLRenameElemTransformerContext( rImp, rQName, 
+	XMLRenameElemTransformerContext( rImp, rQName,
 		 rImp.GetNamespaceMap().GetKeyByAttrName( rQName ), XML_EVENT )
 {
 }
@@ -101,13 +101,13 @@ XMLEventOASISTransformerContext::~XMLEventOASISTransformerContext()
 {
 }
 
-XMLTransformerOASISEventMap_Impl 
+XMLTransformerOASISEventMap_Impl
 	*XMLEventOASISTransformerContext::CreateEventMap()
 {
 	return new XMLTransformerOASISEventMap_Impl( aTransformerEventMap );
 }
 
-XMLTransformerOASISEventMap_Impl 
+XMLTransformerOASISEventMap_Impl
 	*XMLEventOASISTransformerContext::CreateFormEventMap()
 {
 	return new XMLTransformerOASISEventMap_Impl( aFormTransformerEventMap );
@@ -119,7 +119,7 @@ void XMLEventOASISTransformerContext::FlushEventMap(
 	delete p;
 }
 
-OUString XMLEventOASISTransformerContext::GetEventName( 
+OUString XMLEventOASISTransformerContext::GetEventName(
 		sal_uInt16 nPrefix,
 		const OUString& rName,
 	   	XMLTransformerOASISEventMap_Impl& rMap,
@@ -128,7 +128,7 @@ OUString XMLEventOASISTransformerContext::GetEventName(
 	XMLTransformerOASISEventMap_Impl::key_type aKey( nPrefix, rName );
 	if( pMap2 )
 	{
-		XMLTransformerOASISEventMap_Impl::const_iterator aIter = 
+		XMLTransformerOASISEventMap_Impl::const_iterator aIter =
 			pMap2->find( aKey );
 		if( !(aIter == pMap2->end()) )
 			return (*aIter).second;
@@ -154,10 +154,10 @@ bool ParseURLAsString(
 	}
 
 	sal_Int32 start = SCHEME.getLength();
-	*pName = rAttrValue.copy( start, params - start ); 
+	*pName = rAttrValue.copy( start, params - start );
 
 	OUString aToken;
-	OUString aLanguage; 
+	OUString aLanguage;
 	params++;
 	do
 	{
@@ -194,7 +194,7 @@ bool ParseURL(
 	OUString* pName, OUString* pLocation )
 {
 #ifdef OASIS_FILTER_OOO_1X
-	return ParseURLAsString( rAttrValue, pName, pLocation ); 
+	return ParseURLAsString( rAttrValue, pName, pLocation );
 #else
 	Reference< com::sun::star::lang::XMultiServiceFactory >
 		xSMgr = ::comphelper::getProcessServiceFactory();
@@ -240,12 +240,12 @@ bool ParseURL(
 	}
 	else
 	{
-		return ParseURLAsString( rAttrValue, pName, pLocation ); 
+		return ParseURLAsString( rAttrValue, pName, pLocation );
 	}
 #endif
 }
 
-void XMLEventOASISTransformerContext::StartElement( 
+void XMLEventOASISTransformerContext::StartElement(
 	const Reference< XAttributeList >& rAttrList )
 {
 	OSL_TRACE("XMLEventOASISTransformerContext::StartElement");
@@ -253,7 +253,7 @@ void XMLEventOASISTransformerContext::StartElement(
 	XMLTransformerActions *pActions =
 		GetTransformer().GetUserDefinedActions( OASIS_EVENT_ACTIONS );
 	OSL_ENSURE( pActions, "go no actions" );
-	
+
 	Reference< XAttributeList > xAttrList( rAttrList );
 	XMLMutableAttributeList *pMutableAttrList = 0;
 	sal_Int16 nAttrCount = xAttrList.is() ? xAttrList->getLength() : 0;
@@ -262,7 +262,7 @@ void XMLEventOASISTransformerContext::StartElement(
 		const OUString& rAttrName = xAttrList->getNameByIndex( i );
 		OUString aLocalName;
 		sal_uInt16 nPrefix =
-			GetTransformer().GetNamespaceMap().GetKeyByAttrName( rAttrName, 
+			GetTransformer().GetNamespaceMap().GetKeyByAttrName( rAttrName,
 																 &aLocalName );
 		XMLTransformerActions::key_type aKey( nPrefix, aLocalName );
 		XMLTransformerActions::const_iterator aIter =
@@ -271,7 +271,7 @@ void XMLEventOASISTransformerContext::StartElement(
 		{
 			if( !pMutableAttrList )
 			{
-				pMutableAttrList = 
+				pMutableAttrList =
 						new XMLMutableAttributeList( xAttrList );
 				xAttrList = pMutableAttrList;
 			}
@@ -292,7 +292,7 @@ void XMLEventOASISTransformerContext::StartElement(
 
 						OUString aAttrQName(
 							GetTransformer().GetNamespaceMap().GetQNameByKey(
-								XML_NAMESPACE_SCRIPT, 
+								XML_NAMESPACE_SCRIPT,
 							::xmloff::token::GetXMLToken( XML_MACRO_NAME ) ) );
 
 						pMutableAttrList->AddAttribute( aAttrQName, aName );
@@ -321,10 +321,10 @@ void XMLEventOASISTransformerContext::StartElement(
 					// <form:button><form:event-listeners><form:event-listener>
 					const XMLTransformerContext *pObjContext =
 						GetTransformer().GetAncestorContext( 1 );
-					sal_Bool bForm = pObjContext && 
+					sal_Bool bForm = pObjContext &&
 
 						pObjContext->HasNamespace(XML_NAMESPACE_FORM );
-					pMutableAttrList->SetValueByIndex( i, 
+					pMutableAttrList->SetValueByIndex( i,
 								   GetTransformer().GetEventName( rAttrValue,
 									  							  bForm ) );
 				}
@@ -334,7 +334,7 @@ void XMLEventOASISTransformerContext::StartElement(
 					OUString aAttrValue( rAttrValue );
 					sal_uInt16 nValPrefix =
 						static_cast<sal_uInt16>((*aIter).second.m_nParam1);
-					if( GetTransformer().RemoveNamespacePrefix( 
+					if( GetTransformer().RemoveNamespacePrefix(
 								aAttrValue, nValPrefix ) )
 						pMutableAttrList->SetValueByIndex( i, aAttrValue );
 				}
@@ -344,30 +344,30 @@ void XMLEventOASISTransformerContext::StartElement(
                 OUString aName, aLocation;
                 bool bNeedsTransform =
                 ParseURL( rAttrValue, &aName, &aLocation );
-                
+
                 if ( bNeedsTransform )
                 {
                     pMutableAttrList->SetValueByIndex( i, aName );
-                    
+
                     sal_Int16 idx = pMutableAttrList->GetIndexByName(
                     GetTransformer().GetNamespaceMap().GetQNameByKey(
                     XML_NAMESPACE_SCRIPT,
                     GetXMLToken( XML_LANGUAGE ) ) );
-                    
+
                     pMutableAttrList->SetValueByIndex( idx,
                     OUString::createFromAscii("StarBasic") );
-                    
+
                     OUString aLocQName(
                     GetTransformer().GetNamespaceMap().GetQNameByKey(
                     XML_NAMESPACE_SCRIPT,
                     GetXMLToken( XML_LOCATION ) ) );
-                    
+
                     pMutableAttrList->AddAttribute( aLocQName, aLocation );
                 }
                 else
                 {
-                    const OUString& rApp = GetXMLToken( XML_APPLICATION ); 
-                    const OUString& rDoc = GetXMLToken( XML_DOCUMENT ); 
+                    const OUString& rApp = GetXMLToken( XML_APPLICATION );
+                    const OUString& rDoc = GetXMLToken( XML_DOCUMENT );
                     OUString aAttrValue;
                     if( rAttrValue.getLength() > rApp.getLength()+1 &&
                         rAttrValue.copy(0,rApp.getLength()).
@@ -386,17 +386,17 @@ void XMLEventOASISTransformerContext::StartElement(
                         aAttrValue = rAttrValue.copy( rDoc.getLength()+1 );
                     }
                     if( aAttrValue.getLength() )
-                        pMutableAttrList->SetValueByIndex( i, 
+                        pMutableAttrList->SetValueByIndex( i,
                     aAttrValue );
                     if( aLocation.getLength() )
-                    {	
+                    {
                         OUString aAttrQName( GetTransformer().GetNamespaceMap().
-                        GetQNameByKey( XML_NAMESPACE_SCRIPT, 
+                        GetQNameByKey( XML_NAMESPACE_SCRIPT,
                         ::xmloff::token::GetXMLToken( XML_LOCATION ) ) );
                         pMutableAttrList->AddAttribute( aAttrQName, aLocation );
                         // draw bug
                         aAttrQName = GetTransformer().GetNamespaceMap().
-                        GetQNameByKey( XML_NAMESPACE_SCRIPT, 
+                        GetQNameByKey( XML_NAMESPACE_SCRIPT,
                         ::xmloff::token::GetXMLToken( XML_LIBRARY ) );
                         pMutableAttrList->AddAttribute( aAttrQName, aLocation );
                     }

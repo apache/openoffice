@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -103,7 +103,7 @@ using namespace comphelper;
 DBG_NAME( ModulWindow )
 
 TYPEINIT1( ModulWindow , IDEBaseWindow );
- 
+
 void lcl_PrintHeader( Printer* pPrinter, sal_uInt16 nPages, sal_uInt16 nCurPage, const String& rTitle, bool bOutput )
 {
 	short nLeftMargin 	= LMARGPRN;
@@ -188,7 +188,7 @@ void lcl_ConvertTabsToSpaces( String& rLine )
 }
 
 
-ModulWindow::ModulWindow( ModulWindowLayout* pParent, const ScriptDocument& rDocument, String aLibName, 
+ModulWindow::ModulWindow( ModulWindowLayout* pParent, const ScriptDocument& rDocument, String aLibName,
                           String aName, ::rtl::OUString& aModule )
 		:IDEBaseWindow( pParent, rDocument, aLibName, aName )
 		,aXEditorWindow( this )
@@ -204,10 +204,10 @@ ModulWindow::ModulWindow( ModulWindowLayout* pParent, const ScriptDocument& rDoc
 
 SbModuleRef ModulWindow::XModule()
 {
-    // ModuleWindows can now be created as a result of the 
+    // ModuleWindows can now be created as a result of the
     // modules getting created via the api. This is a result of an
     // elementInserted event from the BasicLibrary container.
-    // However the SbModule is also created from a different listener to 
+    // However the SbModule is also created from a different listener to
     // the same event ( in basmgr ) Therefore it is possible when we look
     // for xModule it may not yet be available, here we keep trying to access
     // the module until such time as it exists
@@ -355,7 +355,7 @@ sal_Bool ModulWindow::BasicExecute()
 				pM->GetLineRange( nStart, nEnd );
 				if ( aDocument.isInVBAMode() )
 				{
-					if (  nCurMethodStart >= nStart && nCurMethodStart <= nEnd ) 
+					if (  nCurMethodStart >= nStart && nCurMethodStart <= nEnd )
 					{
 						pMethod = pM;
 						break;
@@ -565,7 +565,7 @@ sal_Bool ModulWindow::SaveBasicSource()
 	return bDone;
 }
 
-sal_Bool implImportDialog( Window* pWin, const String& rCurPath, const ScriptDocument& rDocument, const String& aLibName ); 
+sal_Bool implImportDialog( Window* pWin, const String& rCurPath, const ScriptDocument& rDocument, const String& aLibName );
 
 sal_Bool ModulWindow::ImportDialog()
 {
@@ -761,7 +761,7 @@ long __EXPORT ModulWindow::BasicBreakHdl( StarBASIC* pBasic )
 	sal_uInt16 nErrorLine = pBasic->GetLine();
 
 	// Gibt es hier einen BreakPoint?
-	BreakPoint* pBrk = GetBreakPoints().FindBreakPoint( nErrorLine );    
+	BreakPoint* pBrk = GetBreakPoints().FindBreakPoint( nErrorLine );
     if ( pBrk )
     {
         pBrk->nHitCount++;
@@ -962,7 +962,7 @@ sal_Int32 ModulWindow::FormatAndPrint( Printer* pPrinter, sal_Int32 nPrintPage )
 	DBG_CHKTHIS( ModulWindow, 0 );
 
 	AssertValidEditEngine();
-    
+
 	MapMode eOldMapMode( pPrinter->GetMapMode() );
 	Font aOldFont( pPrinter->GetFont() );
 
@@ -1017,7 +1017,7 @@ sal_Int32 ModulWindow::FormatAndPrint( Printer* pPrinter, sal_Int32 nPrintPage )
 
 	pPrinter->SetFont( aOldFont );
 	pPrinter->SetMapMode( eOldMapMode );
-    
+
     return sal_Int32(nCurPage);
 }
 
@@ -1419,7 +1419,7 @@ BasicEntryDescriptor ModulWindow::CreateEntryDescriptor()
                     }
                 }
                 break;
-            }    
+            }
             case script::ModuleType::FORM:
                 aLibSubName = String( IDEResId( RID_STR_USERFORMS ) );
                 break;

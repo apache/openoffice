@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -51,7 +51,7 @@ namespace slideshow
     namespace internal
     {
         /** Update state ids
-            
+
         	This method updates all state IDs from possible
         	children. Whenever a child's state ID changed, we
         	increment ours.
@@ -105,10 +105,10 @@ namespace slideshow
                         case animations::AnimationAdditiveMode::BASE:
                             // FALTHROUGH intended
                         case animations::AnimationAdditiveMode::REPLACE:
-                            // TODO(F2): reverse-engineer the semantics of these 
+                            // TODO(F2): reverse-engineer the semantics of these
                             // values
-                            
-                            // currently, treat them the same and replace 
+
+                            // currently, treat them the same and replace
                             // the child value by our own
                             return rCurrValue;
 
@@ -121,16 +121,16 @@ namespace slideshow
                 }
                 else
                 {
-                    // this object is the only one defining 
+                    // this object is the only one defining
                     // the value, so take it
                     return rCurrValue;
                 }
             }
             else
             {
-                return bChildInstanceValueValid ? 
-                    ((*mpChild).*pGetValue)() : 
-                    T(); 			// pass on child value, regardless 
+                return bChildInstanceValueValid ?
+                    ((*mpChild).*pGetValue)() :
+                    T(); 			// pass on child value, regardless
                 					// if it's valid or not. If not, it's
                 					// a default anyway
             }
@@ -155,7 +155,7 @@ namespace slideshow
 
             meFillStyle( drawing::FillStyle_NONE ),
             meLineStyle( drawing::LineStyle_NONE ),
-            meCharPosture( awt::FontSlant_NONE ), 	   
+            meCharPosture( awt::FontSlant_NONE ),
             mnUnderlineMode(),
 
             maDimColor(),
@@ -174,33 +174,33 @@ namespace slideshow
 
             mbVisibility( false ),
 
-            mbWidthValid( false ), 			
-            mbHeightValid( false ), 			
-            mbPosXValid( false ), 		
-            mbPosYValid( false ), 		
-            mbClipValid( false ),				
+            mbWidthValid( false ),
+            mbHeightValid( false ),
+            mbPosXValid( false ),
+            mbPosYValid( false ),
+            mbClipValid( false ),
 
-            mbFontFamilyValid( false ), 		
+            mbFontFamilyValid( false ),
 
-            mbRotationAngleValid( false ),	
-            mbShearXAngleValid( false ),		
-            mbShearYAngleValid( false ),		
+            mbRotationAngleValid( false ),
+            mbShearXAngleValid( false ),
+            mbShearYAngleValid( false ),
 
-            mbAlphaValid( false ),			
+            mbAlphaValid( false ),
 
             mbCharRotationAngleValid( false ),
-            mbCharScaleValid( false ),		
+            mbCharScaleValid( false ),
 
-            mbDimColorValid( false ),		
-            mbFillColorValid( false ),		
-            mbLineColorValid( false ),		
-            mbCharColorValid( false ),		
+            mbDimColorValid( false ),
+            mbFillColorValid( false ),
+            mbLineColorValid( false ),
+            mbCharColorValid( false ),
 
-            mbFillStyleValid( false ),			
-            mbLineStyleValid( false ),			
-            mbCharWeightValid( false ),			
-            mbUnderlineModeValid( false ),	
-            mbCharPostureValid( false ),		
+            mbFillStyleValid( false ),
+            mbLineStyleValid( false ),
+            mbCharWeightValid( false ),
+            mbUnderlineModeValid( false ),
+            mbCharPostureValid( false ),
             mbVisibilityValid( false )
         {
         }
@@ -218,7 +218,7 @@ namespace slideshow
                 // we have it - replace by removed child's sibling.
                 mpChild = rChildLayer->getChildLayer();
 
-                // if we're now the first one, defensively increment _all_ 
+                // if we're now the first one, defensively increment _all_
                 // state ids: possibly all underlying attributes have now
                 // changed to default
                 if( !haveChild() )
@@ -229,8 +229,8 @@ namespace slideshow
                     ++mnClipState;
                     ++mnAlphaState;
                     ++mnPositionState;
-                    ++mnContentState;                    
-                    ++mnVisibilityState;                    
+                    ++mnContentState;
+                    ++mnVisibilityState;
                 }
             }
             else
@@ -245,12 +245,12 @@ namespace slideshow
 
             return true;
         }
-        
+
         ShapeAttributeLayerSharedPtr  ShapeAttributeLayer::getChildLayer() const
         {
             return mpChild;
         }
-        
+
         void ShapeAttributeLayer::setAdditiveMode( sal_Int16 nMode )
         {
             if( mnAdditiveMode != nMode )
@@ -258,15 +258,15 @@ namespace slideshow
                 // TODO(P1): Check whether it pays off to check more
                 // detailed, which attributes really change
 
-                // defensively increment all states - possibly each of them 
+                // defensively increment all states - possibly each of them
                 // will change with different additive mode
                 ++mnTransformationState;
                 ++mnClipState;
                 ++mnAlphaState;
                 ++mnPositionState;
-                ++mnContentState;   
-                ++mnVisibilityState;   
-            }                 
+                ++mnContentState;
+                ++mnVisibilityState;
+            }
 
             mnAdditiveMode = nMode;
         }
@@ -275,13 +275,13 @@ namespace slideshow
         {
             return mbWidthValid ? true : haveChild() ? mpChild->isWidthValid() : false;
         }
-            
+
         double ShapeAttributeLayer::getWidth() const
         {
-            return calcValue< double >( 
+            return calcValue< double >(
                 maSize.getX(),
                 mbWidthValid,
-                &ShapeAttributeLayer::isWidthValid, 
+                &ShapeAttributeLayer::isWidthValid,
                 &ShapeAttributeLayer::getWidth );
         }
 
@@ -299,13 +299,13 @@ namespace slideshow
         {
             return mbHeightValid ? true : haveChild() ? mpChild->isHeightValid() : false;
         }
-            
+
         double ShapeAttributeLayer::getHeight() const
         {
-            return calcValue< double >( 
+            return calcValue< double >(
                 maSize.getY(),
                 mbHeightValid,
-                &ShapeAttributeLayer::isHeightValid, 
+                &ShapeAttributeLayer::isHeightValid,
                 &ShapeAttributeLayer::getHeight );
         }
 
@@ -337,10 +337,10 @@ namespace slideshow
 
         double ShapeAttributeLayer::getPosX() const
         {
-            return calcValue< double >( 
+            return calcValue< double >(
                 maPosition.getX(),
                 mbPosXValid,
-                &ShapeAttributeLayer::isPosXValid, 
+                &ShapeAttributeLayer::isPosXValid,
                 &ShapeAttributeLayer::getPosX );
         }
 
@@ -361,10 +361,10 @@ namespace slideshow
 
         double ShapeAttributeLayer::getPosY() const
         {
-            return calcValue< double >( 
+            return calcValue< double >(
                 maPosition.getY(),
                 mbPosYValid,
-                &ShapeAttributeLayer::isPosYValid, 
+                &ShapeAttributeLayer::isPosYValid,
                 &ShapeAttributeLayer::getPosY );
         }
 
@@ -392,10 +392,10 @@ namespace slideshow
 
         double ShapeAttributeLayer::getRotationAngle() const
         {
-            return calcValue< double >( 
+            return calcValue< double >(
                 mnRotationAngle,
                 mbRotationAngleValid,
-                &ShapeAttributeLayer::isRotationAngleValid, 
+                &ShapeAttributeLayer::isRotationAngleValid,
                 &ShapeAttributeLayer::getRotationAngle );
         }
 
@@ -416,7 +416,7 @@ namespace slideshow
 
         double ShapeAttributeLayer::getShearXAngle() const
         {
-            return calcValue( mnShearXAngle, 
+            return calcValue( mnShearXAngle,
                               mbShearXAngleValid,
                               &ShapeAttributeLayer::isShearXAngleValid,
                               &ShapeAttributeLayer::getShearXAngle );
@@ -439,7 +439,7 @@ namespace slideshow
 
         double ShapeAttributeLayer::getShearYAngle() const
         {
-            return calcValue( mnShearYAngle, 
+            return calcValue( mnShearYAngle,
                               mbShearYAngleValid,
                               &ShapeAttributeLayer::isShearYAngleValid,
                               &ShapeAttributeLayer::getShearYAngle );
@@ -462,7 +462,7 @@ namespace slideshow
 
         double ShapeAttributeLayer::getAlpha() const
         {
-            return calcValue( mnAlpha, 
+            return calcValue( mnAlpha,
                               mbAlphaValid,
                               &ShapeAttributeLayer::isAlphaValid,
                               &ShapeAttributeLayer::getAlpha );
@@ -477,7 +477,7 @@ namespace slideshow
             mbAlphaValid = true;
             ++mnAlphaState;
         }
-            
+
         bool ShapeAttributeLayer::isClipValid() const
         {
             return mbClipValid ? true : haveChild() ? mpChild->isClipValid() : false;
@@ -505,10 +505,10 @@ namespace slideshow
         {
             return mbDimColorValid ? true : haveChild() ? mpChild->isDimColorValid() : false;
         }
-            
+
         RGBColor ShapeAttributeLayer::getDimColor() const
         {
-            return calcValue( maDimColor, 
+            return calcValue( maDimColor,
                               mbDimColorValid,
                               &ShapeAttributeLayer::isDimColorValid,
                               &ShapeAttributeLayer::getDimColor );
@@ -525,10 +525,10 @@ namespace slideshow
         {
             return mbFillColorValid ? true : haveChild() ? mpChild->isFillColorValid() : false;
         }
-            
+
         RGBColor ShapeAttributeLayer::getFillColor() const
         {
-            return calcValue( maFillColor, 
+            return calcValue( maFillColor,
                               mbFillColorValid,
                               &ShapeAttributeLayer::isFillColorValid,
                               &ShapeAttributeLayer::getFillColor );
@@ -548,7 +548,7 @@ namespace slideshow
 
         RGBColor  ShapeAttributeLayer::getLineColor() const
         {
-            return calcValue( maLineColor, 
+            return calcValue( maLineColor,
                               mbLineColorValid,
                               &ShapeAttributeLayer::isLineColorValid,
                               &ShapeAttributeLayer::getLineColor );
@@ -565,10 +565,10 @@ namespace slideshow
         {
             return mbFillStyleValid ? true : haveChild() ? mpChild->isFillStyleValid() : false;
         }
-            
+
         sal_Int16 ShapeAttributeLayer::getFillStyle() const
         {
-            // mnAdditiveMode is ignored, cannot combine strings in 
+            // mnAdditiveMode is ignored, cannot combine strings in
             // any sensible way
             if( mbFillStyleValid )
                 return sal::static_int_cast<sal_Int16>(meFillStyle);
@@ -593,7 +593,7 @@ namespace slideshow
 
         sal_Int16 ShapeAttributeLayer::getLineStyle() const
         {
-            // mnAdditiveMode is ignored, cannot combine strings in 
+            // mnAdditiveMode is ignored, cannot combine strings in
             // any sensible way
             if( mbLineStyleValid )
                 return sal::static_int_cast<sal_Int16>(meLineStyle);
@@ -642,7 +642,7 @@ namespace slideshow
 
         RGBColor ShapeAttributeLayer::getCharColor() const
         {
-            return calcValue( maCharColor, 
+            return calcValue( maCharColor,
                               mbCharColorValid,
                               &ShapeAttributeLayer::isCharColorValid,
                               &ShapeAttributeLayer::getCharColor );
@@ -654,7 +654,7 @@ namespace slideshow
             mbCharColorValid = true;
             ++mnContentState;
         }
-            
+
         bool ShapeAttributeLayer::isCharRotationAngleValid() const
         {
             return mbCharRotationAngleValid ? true : haveChild() ? mpChild->isCharRotationAngleValid() : false;
@@ -662,7 +662,7 @@ namespace slideshow
 
         double ShapeAttributeLayer::getCharRotationAngle() const
         {
-            return calcValue( mnCharRotationAngle, 
+            return calcValue( mnCharRotationAngle,
                               mbCharRotationAngleValid,
                               &ShapeAttributeLayer::isCharRotationAngleValid,
                               &ShapeAttributeLayer::getCharRotationAngle );
@@ -685,7 +685,7 @@ namespace slideshow
 
         double ShapeAttributeLayer::getCharWeight() const
         {
-            // mnAdditiveMode is ignored, cannot combine strings in 
+            // mnAdditiveMode is ignored, cannot combine strings in
             // any sensible way
             if( mbCharWeightValid )
                 return mnCharWeight;
@@ -702,7 +702,7 @@ namespace slideshow
             mbCharWeightValid = true;
             ++mnContentState;
         }
-            
+
         bool ShapeAttributeLayer::isUnderlineModeValid() const
         {
             return mbUnderlineModeValid ? true : haveChild() ? mpChild->isUnderlineModeValid() : false;
@@ -735,7 +735,7 @@ namespace slideshow
 
         ::rtl::OUString ShapeAttributeLayer::getFontFamily() const
         {
-            // mnAdditiveMode is ignored, cannot combine strings in 
+            // mnAdditiveMode is ignored, cannot combine strings in
             // any sensible way
             if( mbFontFamilyValid )
                 return maFontFamily;
@@ -759,7 +759,7 @@ namespace slideshow
 
         sal_Int16 ShapeAttributeLayer::getCharPosture() const
         {
-            // mnAdditiveMode is ignored, cannot combine strings in 
+            // mnAdditiveMode is ignored, cannot combine strings in
             // any sensible way
             if( mbCharPostureValid )
                 return sal::static_int_cast<sal_Int16>(meCharPosture);
@@ -784,7 +784,7 @@ namespace slideshow
 
         double ShapeAttributeLayer::getCharScale() const
         {
-            return calcValue( mnCharScale, 
+            return calcValue( mnCharScale,
                               mbCharScaleValid,
                               &ShapeAttributeLayer::isCharScaleValid,
                               &ShapeAttributeLayer::getCharScale );
@@ -800,53 +800,53 @@ namespace slideshow
             ++mnContentState;
         }
 
-        State::StateId ShapeAttributeLayer::getTransformationState() const 	
-        { 
-            return haveChild() ? 
+        State::StateId ShapeAttributeLayer::getTransformationState() const
+        {
+            return haveChild() ?
                 ::std::max( mnTransformationState,
-                            mpChild->getTransformationState() ) : 
-                mnTransformationState; 
+                            mpChild->getTransformationState() ) :
+                mnTransformationState;
         }
 
         State::StateId ShapeAttributeLayer::getClipState() const
-        { 
-            return haveChild() ? 
+        {
+            return haveChild() ?
                 ::std::max( mnClipState,
-                            mpChild->getClipState() ) : 
-                mnClipState; 
+                            mpChild->getClipState() ) :
+                mnClipState;
         }
 
         State::StateId ShapeAttributeLayer::getAlphaState() const
-        { 
-            return haveChild() ? 
+        {
+            return haveChild() ?
                 ::std::max( mnAlphaState,
-                            mpChild->getAlphaState() ) : 
-                mnAlphaState; 
+                            mpChild->getAlphaState() ) :
+                mnAlphaState;
         }
 
         State::StateId ShapeAttributeLayer::getPositionState() const
- 		{ 
-            return haveChild() ? 
+ 		{
+            return haveChild() ?
                 ::std::max( mnPositionState,
-                            mpChild->getPositionState() ) : 
-                mnPositionState; 
+                            mpChild->getPositionState() ) :
+                mnPositionState;
         }
 
         State::StateId ShapeAttributeLayer::getContentState() const
-        { 
-            return haveChild() ? 
+        {
+            return haveChild() ?
                 ::std::max( mnContentState,
-                            mpChild->getContentState() ) : 
-                mnContentState; 
+                            mpChild->getContentState() ) :
+                mnContentState;
         }
-        
+
         State::StateId ShapeAttributeLayer::getVisibilityState() const
-        { 
-            return haveChild() ? 
+        {
+            return haveChild() ?
                 ::std::max( mnVisibilityState,
-                            mpChild->getVisibilityState() ) : 
-                mnVisibilityState; 
+                            mpChild->getVisibilityState() ) :
+                mnVisibilityState;
         }
-        
+
     }
 }

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -59,7 +59,7 @@ static const sal_Int32 ConfigurationUpdateEvent = 2;
 
 namespace sd { namespace tools {
 
-typedef cppu::WeakComponentImplHelper4< 
+typedef cppu::WeakComponentImplHelper4<
       ::com::sun::star::beans::XPropertyChangeListener,
       ::com::sun::star::frame::XFrameActionListener,
       ::com::sun::star::view::XSelectionChangeListener,
@@ -76,11 +76,11 @@ public:
     ~Implementation (void);
 
     void AddEventListener (
-        Link& rCallback, 
+        Link& rCallback,
         EventMultiplexerEvent::EventId aEventTypes);
 
     void RemoveEventListener (
-        Link& rCallback, 
+        Link& rCallback,
         EventMultiplexerEvent::EventId aEventTypes);
 
 	void CallListeners (EventMultiplexerEvent& rEvent);
@@ -88,19 +88,19 @@ public:
 	ViewShellBase& GetViewShellBase() const { return mrBase; }
 
     //===== lang::XEventListener ==============================================
-    virtual void SAL_CALL 
+    virtual void SAL_CALL
         disposing (const ::com::sun::star::lang::EventObject& rEventObject)
         throw (::com::sun::star::uno::RuntimeException);
 
 
     //===== beans::XPropertySetListener =======================================
-    virtual void SAL_CALL 
+    virtual void SAL_CALL
         propertyChange (
             const com::sun::star::beans::PropertyChangeEvent& rEvent)
         throw (::com::sun::star::uno::RuntimeException);
 
     //===== view::XSelectionChangeListener ====================================
-    virtual void SAL_CALL 
+    virtual void SAL_CALL
         selectionChanged (
             const com::sun::star::lang::EventObject& rEvent)
         throw (::com::sun::star::uno::RuntimeException);
@@ -110,12 +110,12 @@ public:
         frame it is listening to.  This usually happens when the view shell
         in the center pane is replaced by another view shell.
     */
-    virtual void SAL_CALL 
+    virtual void SAL_CALL
         frameAction (const ::com::sun::star::frame::FrameActionEvent& rEvent)
         throw (::com::sun::star::uno::RuntimeException);
 
     //===== drawing::framework::XConfigurationChangeListener ==================
-    virtual void SAL_CALL 
+    virtual void SAL_CALL
         notifyConfigurationChange (
             const ::com::sun::star::drawing::framework::ConfigurationChangeEvent& rEvent)
         throw (::com::sun::star::uno::RuntimeException);
@@ -213,7 +213,7 @@ EventMultiplexer::~EventMultiplexer (void)
 
 
 void EventMultiplexer::AddEventListener (
-    Link& rCallback, 
+    Link& rCallback,
     EventMultiplexerEvent::EventId aEventTypes)
 {
     mpImpl->AddEventListener (rCallback, aEventTypes);
@@ -237,7 +237,7 @@ void EventMultiplexer::MultiplexEvent(
     void* pUserData )
 {
 	EventMultiplexerEvent aEvent (mpImpl->GetViewShellBase(), eEventId, pUserData);
-    mpImpl->CallListeners(aEvent);	
+    mpImpl->CallListeners(aEvent);
 }
 
 
@@ -362,7 +362,7 @@ void EventMultiplexer::Implementation::ReleaseListeners (void)
 
 
 void EventMultiplexer::Implementation::AddEventListener (
-    Link& rCallback, 
+    Link& rCallback,
     EventMultiplexerEvent::EventId aEventTypes)
 {
     ListenerList::iterator iListener (maListeners.begin());
@@ -432,7 +432,7 @@ void EventMultiplexer::Implementation::ConnectToController (void)
             mbListeningToController = true;
         }
 
-        // Listen to changes of certain properties. 
+        // Listen to changes of certain properties.
         Reference<beans::XPropertySet> xSet (xController, UNO_QUERY);
         if (xSet.is())
         {
@@ -444,7 +444,7 @@ void EventMultiplexer::Implementation::ConnectToController (void)
                 {
                     OSL_TRACE("EventMultiplexer::ConnectToController: CurrentPage unknown");
                 }
-                
+
                 try
                 {
                     xSet->addPropertyChangeListener(msEditModePropertyName, this);
@@ -454,7 +454,7 @@ void EventMultiplexer::Implementation::ConnectToController (void)
                     OSL_TRACE("EventMultiplexer::ConnectToController: IsMasterPageMode unknown");
                 }
         }
-    
+
         // Listen for selection change events.
         Reference<view::XSelectionSupplier> xSelection (xController, UNO_QUERY);
         if (xSelection.is())
@@ -501,7 +501,7 @@ void EventMultiplexer::Implementation::DisconnectFromController (void)
                 OSL_TRACE ("DisconnectFromController: IsMasterPageMode unknown");
             }
         }
-        
+
         // Remove selection change listener.
         Reference<view::XSelectionSupplier> xSelection (xController, UNO_QUERY);
         if (xSelection.is())
@@ -596,7 +596,7 @@ void SAL_CALL EventMultiplexer::Implementation::frameAction (
                 ConnectToController();
                 CallListeners (EventMultiplexerEvent::EID_CONTROLLER_ATTACHED);
                 break;
-                
+
             case frame::FrameAction_COMPONENT_ATTACHED:
                 ConnectToController();
                 CallListeners (EventMultiplexerEvent::EID_CONTROLLER_ATTACHED);
@@ -658,7 +658,7 @@ void SAL_CALL EventMultiplexer::Implementation::notifyConfigurationChange (
                 }
             }
             break;
-        
+
         case ResourceDeactivationEvent:
             if (rEvent.ResourceId->getResourceURL().match(FrameworkHelper::msViewURLPrefix))
             {
@@ -691,7 +691,7 @@ void SAL_CALL EventMultiplexer::Implementation::notifyConfigurationChange (
             CallListeners (EventMultiplexerEvent::EID_CONFIGURATION_UPDATED);
             break;
     }
-    
+
 }
 
 

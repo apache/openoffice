@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -64,7 +64,7 @@ IMPL_LINK_INLINE_START( SfxPasswordDialog, EditModifyHdl, Edit *, pEdit )
             pEdit->SetSelection( Selection( 0, nLen ) );
             pEdit->ReplaceSelected( aFilter.makeStringAndClear() );
         }
-        
+
     }
     bool bEnable = maPasswordED.GetText().Len() >= mnMinLen;
     if( maPassword2ED.IsVisible() )
@@ -123,7 +123,7 @@ SfxPasswordDialog::SfxPasswordDialog( Window* pParent, const String* pGroupText 
 {
 	maPasswordED.SetAccessibleName(String(SfxResId(TEXT_PASSWD)));
 	FreeResource();
-	
+
 	// setup layout
     boost::shared_ptr<vcl::RowOrColumn> xLayout =
         boost::dynamic_pointer_cast<vcl::RowOrColumn>( getLayout() );
@@ -136,10 +136,10 @@ SfxPasswordDialog::SfxPasswordDialog( Window* pParent, const String* pGroupText 
     boost::shared_ptr<vcl::LabelColumn> xEdits( new vcl::LabelColumn( xLayout.get() ) );
     size_t nChildIndex = xLayout->addChild( xEdits );
     xLayout->setBorders( nChildIndex, -2, -2, -2, 0 );
-    
+
     // add group box
     xEdits->addWindow( &maPasswordBox );
-    
+
     // add user line
     xEdits->addRow( &maUserFT, &maUserED, -2, aEditSize );
 
@@ -148,7 +148,7 @@ SfxPasswordDialog::SfxPasswordDialog( Window* pParent, const String* pGroupText 
 
     // add confirm line
     xEdits->addRow( &maConfirmFT, &maConfirmED, -2, aEditSize );
-    
+
     // add second group box
     xEdits->addWindow( &maPassword2Box );
 
@@ -157,7 +157,7 @@ SfxPasswordDialog::SfxPasswordDialog( Window* pParent, const String* pGroupText 
 
     // add second confirm line
     xEdits->addRow( &maConfirm2FT, &maConfirm2ED, -2, aEditSize );
-    
+
     // add a FixedLine
     FixedLine* pLine = new FixedLine( this, 0 );
     pLine->Show();
@@ -241,7 +241,7 @@ short SfxPasswordDialog::Execute()
         maConfirm2FT.Show();
         maConfirm2ED.Show();
     }
-    
+
     boost::shared_ptr<vcl::RowOrColumn> xLayout =
         boost::dynamic_pointer_cast<vcl::RowOrColumn>( getLayout() );
 	SetSizePixel( xLayout->getOptimalSize( WINDOWSIZE_PREFERRED ) );

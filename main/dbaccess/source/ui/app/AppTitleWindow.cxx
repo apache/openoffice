@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -39,7 +39,7 @@
 
 namespace dbaui
 {
-    
+
 DBG_NAME(OTitleWindow)
 OTitleWindow::OTitleWindow(Window* _pParent,sal_uInt16 _nTitleId,WinBits _nBits,sal_Bool _bShift)
 : Window(_pParent,_nBits | WB_DIALOGCONTROL)
@@ -85,7 +85,7 @@ void OTitleWindow::Resize()
 	Size aOutputSize( GetOutputSize() );
 	long nOutputWidth	= aOutputSize.Width();
 	long nOutputHeight	= aOutputSize.Height();
-	
+
 	Size aTextSize = LogicToPixel( Size( 6, 3 ), MAP_APPFONT );
 	sal_Int32 nXOffset = aTextSize.Width();
 	sal_Int32 nYOffset = aTextSize.Height();
@@ -148,7 +148,7 @@ void OTitleWindow::ImplInitSettings( sal_Bool bFont, sal_Bool bForeground, sal_B
 	StyleSettings aStyle = aAllSettings.GetStyleSettings();
 	aStyle.SetMonoColor(aStyle.GetActiveBorderColor());//GetMenuBorderColor());
 	aAllSettings.SetStyleSettings(aStyle);
-	SetSettings(aAllSettings);	
+	SetSettings(aAllSettings);
 
 	const StyleSettings& rStyleSettings = GetSettings().GetStyleSettings();
 	if( bFont )
@@ -177,7 +177,7 @@ void OTitleWindow::ImplInitSettings( sal_Bool bFont, sal_Bool bForeground, sal_B
 		pWindows[i]->SetFont(aFont);
 		pWindows[i]->SetTextColor( aStyle.GetLightColor() );
 		pWindows[i]->SetBackground( Wallpaper( aStyle.GetShadowColor() ) );
-	}	
+	}
 }
 // .............................................................
 } // namespace dbaui

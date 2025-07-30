@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -2423,7 +2423,7 @@ void SAL_CALL SfxLibraryContainer::loadLibrary( const OUString& Name )
 			}
 
 			Reference< XNameContainer > xLib( pImplLib );
-			Any aAny = importLibraryElement( xLib, aElementName, 
+			Any aAny = importLibraryElement( xLib, aElementName,
 					   						 aFile, xInStream );
 			if( pImplLib->hasByName( aElementName ) )
             {
@@ -2844,7 +2844,7 @@ OUString SAL_CALL SfxLibraryContainer::getOriginalLibraryLinkURL( const OUString
     OUString aRetStr = pImplLib->maOrignialStorageURL;
     return aRetStr;
 }
-    
+
 
 // XVBACompatibility
 ::sal_Bool SAL_CALL SfxLibraryContainer::getVBACompatibilityMode() throw (RuntimeException)
@@ -3281,7 +3281,7 @@ rtl::OUString ScriptExtensionIterator::nextBasicOrDialogLibrary( bool& rbPureDia
 			}
 			case BUNDLED_EXTENSIONS:
 			{
-				Reference< deployment::XPackage > xScriptPackage = 
+				Reference< deployment::XPackage > xScriptPackage =
 					implGetNextBundledScriptPackage( rbPureDialogLib );
 				if( !xScriptPackage.is() )
 					break;
@@ -3514,7 +3514,7 @@ Reference< deployment::XPackage > ScriptExtensionIterator::implGetNextSharedScri
 		try
 		{
 			Reference< XExtensionManager > xSharedManager =
-				ExtensionManager::get( m_xContext ); 
+				ExtensionManager::get( m_xContext );
 			m_aSharedPackagesSeq = xSharedManager->getDeployedExtensions
 				(rtl::OUString::createFromAscii("shared"),
                  Reference< task::XAbortChannel >(), Reference< ucb::XCommandEnvironment >() );
@@ -3567,7 +3567,7 @@ Reference< deployment::XPackage > ScriptExtensionIterator::implGetNextBundledScr
 		try
 		{
 			Reference< XExtensionManager > xManager =
-				ExtensionManager::get( m_xContext ); 
+				ExtensionManager::get( m_xContext );
 			m_aBundledPackagesSeq = xManager->getDeployedExtensions
 				(rtl::OUString::createFromAscii("bundled"),
                  Reference< task::XAbortChannel >(), Reference< ucb::XCommandEnvironment >() );

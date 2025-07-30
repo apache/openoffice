@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -114,7 +114,7 @@ private:
         ::chart::PropertyHelper::setPropertyValueDefault( rOutMap, PROP_STOCKCHARTTYPE_TEMPLATE_OPEN, false );
         ::chart::PropertyHelper::setPropertyValueDefault( rOutMap, PROP_STOCKCHARTTYPE_TEMPLATE_LOW_HIGH, true );
         ::chart::PropertyHelper::setPropertyValueDefault( rOutMap, PROP_STOCKCHARTTYPE_TEMPLATE_JAPANESE, false );
-    }    
+    }
 };
 
 struct StaticStockChartTypeTemplateDefaults : public rtl::StaticAggregate< ::chart::tPropertyValueMap, StaticStockChartTypeTemplateDefaults_Initializer >
@@ -270,7 +270,7 @@ void SAL_CALL StockChartTypeTemplate::applyStyle(
                     xProp->setPropertyValue( C2U("LineStyle"), uno::makeAny( drawing::LineStyle_SOLID ));
             }
         }
-        
+
     }
     catch( uno::Exception & ex )
     {
@@ -362,7 +362,7 @@ void StockChartTypeTemplate::createChartTypes(
                 xFact->createInstance(
                     CHART2_SERVICE_NAME_CHARTTYPE_COLUMN ), uno::UNO_QUERY_THROW );
             aChartTypeVec.push_back( xCT );
-            
+
             if( aSeriesSeq.getLength() > nSeriesIndex &&
                 aSeriesSeq[nSeriesIndex].getLength() > 0 )
             {
@@ -384,7 +384,7 @@ void StockChartTypeTemplate::createChartTypes(
             xCTProp->setPropertyValue( C2U("ShowFirst"), uno::makeAny( bShowFirst ));
             xCTProp->setPropertyValue( C2U("ShowHighLow"), uno::makeAny( bShowHighLow ));
         }
-        
+
         if( aSeriesSeq.getLength() > nSeriesIndex &&
             aSeriesSeq[ nSeriesIndex ].getLength() > 0 )
         {

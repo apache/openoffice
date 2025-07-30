@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -54,14 +54,14 @@ namespace drawinglayer
 			unsigned								mbLogSize : 1;
 
 			ImpSdrFillGraphicAttribute(
-				const Graphic& rFillGraphic, 
+				const Graphic& rFillGraphic,
                 const basegfx::B2DVector& rGraphicLogicSize,
-                const basegfx::B2DVector& rSize, 
+                const basegfx::B2DVector& rSize,
                 const basegfx::B2DVector& rOffset,
-				const basegfx::B2DVector& rOffsetPosition, 
+				const basegfx::B2DVector& rOffsetPosition,
                 const basegfx::B2DVector& rRectPoint,
-				bool bTiling, 
-                bool bStretch, 
+				bool bTiling,
+                bool bStretch,
                 bool bLogSize)
 		    :	mnRefCount(0),
 		    	maFillGraphic(rFillGraphic),
@@ -95,11 +95,11 @@ namespace drawinglayer
 				    && getOffset() == rCandidate.getOffset()
 				    && getOffsetPosition() == rCandidate.getOffsetPosition()
 				    && getRectPoint() == rCandidate.getRectPoint()
-				    && getTiling() == rCandidate.getTiling() 
-				    && getStretch() == rCandidate.getStretch() 
+				    && getTiling() == rCandidate.getTiling()
+				    && getStretch() == rCandidate.getStretch()
 				    && getLogSize() == rCandidate.getLogSize());
             }
-            
+
             static ImpSdrFillGraphicAttribute* get_global_default()
             {
                 static ImpSdrFillGraphicAttribute* pDefault = 0;
@@ -113,8 +113,8 @@ namespace drawinglayer
                         basegfx::B2DVector(),
 			            basegfx::B2DVector(),
                         basegfx::B2DVector(),
-			            false, 
-                        false, 
+			            false,
+                        false,
                         false);
 
                     // never delete; start with RefCount 1, not 0
@@ -126,25 +126,25 @@ namespace drawinglayer
 		};
 
         SdrFillGraphicAttribute::SdrFillGraphicAttribute(
-			const Graphic& rFillGraphic, 
+			const Graphic& rFillGraphic,
             const basegfx::B2DVector& rGraphicLogicSize,
-            const basegfx::B2DVector& rSize, 
+            const basegfx::B2DVector& rSize,
             const basegfx::B2DVector& rOffset,
-			const basegfx::B2DVector& rOffsetPosition, 
+			const basegfx::B2DVector& rOffsetPosition,
             const basegfx::B2DVector& rRectPoint,
-			bool bTiling, 
-            bool bStretch, 
+			bool bTiling,
+            bool bStretch,
             bool bLogSize)
 		:	mpSdrFillGraphicAttribute(
                 new ImpSdrFillGraphicAttribute(
-                    rFillGraphic, 
+                    rFillGraphic,
                     rGraphicLogicSize,
-                    rSize, 
-                    rOffset, 
-                    rOffsetPosition, 
-                    rRectPoint, 
-                    bTiling,  
-                    bStretch, 
+                    rSize,
+                    rOffset,
+                    rOffsetPosition,
+                    rRectPoint,
+                    bTiling,
+                    bStretch,
                     bLogSize))
 		{
 		}
@@ -190,7 +190,7 @@ namespace drawinglayer
 				{
 					delete mpSdrFillGraphicAttribute;
 				}
-				
+
 				mpSdrFillGraphicAttribute = rCandidate.mpSdrFillGraphicAttribute;
 				mpSdrFillGraphicAttribute->mnRefCount++;
 			}
@@ -213,49 +213,49 @@ namespace drawinglayer
 			return (*rCandidate.mpSdrFillGraphicAttribute == *mpSdrFillGraphicAttribute);
 		}
 
-        const Graphic& SdrFillGraphicAttribute::getFillGraphic() const 
-        { 
-            return mpSdrFillGraphicAttribute->getFillGraphic(); 
+        const Graphic& SdrFillGraphicAttribute::getFillGraphic() const
+        {
+            return mpSdrFillGraphicAttribute->getFillGraphic();
         }
 
         const basegfx::B2DVector& SdrFillGraphicAttribute::getGraphicLogicSize() const
         {
-            return mpSdrFillGraphicAttribute->getGraphicLogicSize(); 
+            return mpSdrFillGraphicAttribute->getGraphicLogicSize();
         }
 
-        const basegfx::B2DVector& SdrFillGraphicAttribute::getSize() const 
-        { 
-            return mpSdrFillGraphicAttribute->getSize(); 
+        const basegfx::B2DVector& SdrFillGraphicAttribute::getSize() const
+        {
+            return mpSdrFillGraphicAttribute->getSize();
         }
 
-        const basegfx::B2DVector& SdrFillGraphicAttribute::getOffset() const 
-        { 
-            return mpSdrFillGraphicAttribute->getOffset(); 
+        const basegfx::B2DVector& SdrFillGraphicAttribute::getOffset() const
+        {
+            return mpSdrFillGraphicAttribute->getOffset();
         }
 
-        const basegfx::B2DVector& SdrFillGraphicAttribute::getOffsetPosition() const 
-        { 
-            return mpSdrFillGraphicAttribute->getOffsetPosition(); 
+        const basegfx::B2DVector& SdrFillGraphicAttribute::getOffsetPosition() const
+        {
+            return mpSdrFillGraphicAttribute->getOffsetPosition();
         }
 
-        const basegfx::B2DVector& SdrFillGraphicAttribute::getRectPoint() const 
-        { 
-            return mpSdrFillGraphicAttribute->getRectPoint(); 
+        const basegfx::B2DVector& SdrFillGraphicAttribute::getRectPoint() const
+        {
+            return mpSdrFillGraphicAttribute->getRectPoint();
         }
 
-        bool SdrFillGraphicAttribute::getTiling() const 
-        { 
-            return mpSdrFillGraphicAttribute->getTiling(); 
+        bool SdrFillGraphicAttribute::getTiling() const
+        {
+            return mpSdrFillGraphicAttribute->getTiling();
         }
 
-        bool SdrFillGraphicAttribute::getStretch() const 
-        { 
-            return mpSdrFillGraphicAttribute->getStretch(); 
+        bool SdrFillGraphicAttribute::getStretch() const
+        {
+            return mpSdrFillGraphicAttribute->getStretch();
         }
 
-        bool SdrFillGraphicAttribute::getLogSize() const 
-        { 
-            return mpSdrFillGraphicAttribute->getLogSize(); 
+        bool SdrFillGraphicAttribute::getLogSize() const
+        {
+            return mpSdrFillGraphicAttribute->getLogSize();
         }
 
         FillGraphicAttribute SdrFillGraphicAttribute::createFillGraphicAttribute(const basegfx::B2DRange& rRange) const
@@ -357,9 +357,9 @@ namespace drawinglayer
 
             // create FillGraphicAttribute
             return FillGraphicAttribute(
-                aGraphic, 
-                basegfx::B2DRange(aBitmapTopLeft, aBitmapTopLeft + aBitmapSize), 
-                getTiling(), 
+                aGraphic,
+                basegfx::B2DRange(aBitmapTopLeft, aBitmapTopLeft + aBitmapSize),
+                getTiling(),
                 fOffsetX,
                 fOffsetY);
 		}

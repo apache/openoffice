@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -78,7 +78,7 @@ sal_Int16 SAL_CALL checkScriptType(sal_Unicode c) throw (RuntimeException)
 
   if ( !U_SUCCESS(status) ) throw RuntimeException();
 
-  return scriptCode == USCRIPT_HANGUL ? SCRIPT_HANGUL : 
+  return scriptCode == USCRIPT_HANGUL ? SCRIPT_HANGUL :
             scriptCode == USCRIPT_HAN ? SCRIPT_HANJA : SCRIPT_OTHERS;
 }
 
@@ -109,13 +109,13 @@ HHConvDic::~HHConvDic()
 }
 
 
-void SAL_CALL HHConvDic::addEntry( 
-        const OUString& aLeftText, 
-        const OUString& aRightText ) 
+void SAL_CALL HHConvDic::addEntry(
+        const OUString& aLeftText,
+        const OUString& aRightText )
     throw (IllegalArgumentException, container::ElementExistException, RuntimeException)
 {
     MutexGuard  aGuard( GetLinguMutex() );
-    
+
     if ((aLeftText.getLength() != aRightText.getLength()) ||
         !TextIsAllScriptType( aLeftText,  SCRIPT_HANGUL ) ||
         !TextIsAllScriptType( aRightText, SCRIPT_HANJA ))
@@ -124,7 +124,7 @@ void SAL_CALL HHConvDic::addEntry(
 }
 
 
-OUString SAL_CALL HHConvDic::getImplementationName(  ) 
+OUString SAL_CALL HHConvDic::getImplementationName(  )
     throw (RuntimeException)
 {
     MutexGuard  aGuard( GetLinguMutex() );
@@ -132,7 +132,7 @@ OUString SAL_CALL HHConvDic::getImplementationName(  )
 }
 
 
-sal_Bool SAL_CALL HHConvDic::supportsService( const OUString& rServiceName ) 
+sal_Bool SAL_CALL HHConvDic::supportsService( const OUString& rServiceName )
     throw (RuntimeException)
 {
     MutexGuard  aGuard( GetLinguMutex() );
@@ -144,7 +144,7 @@ sal_Bool SAL_CALL HHConvDic::supportsService( const OUString& rServiceName )
 }
 
 
-uno::Sequence< OUString > SAL_CALL HHConvDic::getSupportedServiceNames(  ) 
+uno::Sequence< OUString > SAL_CALL HHConvDic::getSupportedServiceNames(  )
     throw (RuntimeException)
 {
     MutexGuard  aGuard( GetLinguMutex() );
@@ -152,7 +152,7 @@ uno::Sequence< OUString > SAL_CALL HHConvDic::getSupportedServiceNames(  )
 }
 
 
-uno::Sequence< OUString > HHConvDic::getSupportedServiceNames_Static() 
+uno::Sequence< OUString > HHConvDic::getSupportedServiceNames_Static()
     throw()
 {
     uno::Sequence< OUString > aSNS( 2 );

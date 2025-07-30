@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -181,14 +181,14 @@ void lcl_OutInstance( OUStringBuffer& rBuffer,
                       Model* pModel )
 {
     Reference<XDocument> xDoc = xNode->getOwnerDocument();
-    
+
     if( xDoc != pModel->getDefaultInstance() )
     {
         rBuffer.insert( 0, OUSTRING("')") );
 
         // iterate over instances, and find the right one
         OUString sInstanceName;
-        Reference<XEnumeration> xEnum = 
+        Reference<XEnumeration> xEnum =
             pModel->getInstances()->createEnumeration();
         while( ( sInstanceName.getLength() == 0 ) && xEnum->hasMoreElements() )
         {
@@ -365,7 +365,7 @@ OUString Model::getBindingName( const XPropertySet_t& xBinding,
     xBinding->getPropertyValue( OUSTRING("BindingID" ) ) >>= sID;
     OUString sExpression;
     xBinding->getPropertyValue( OUSTRING("BindingExpression" ) ) >>= sExpression;
-    
+
     OUStringBuffer aBuffer;
     if( sID.getLength() > 0 )
     {
@@ -426,7 +426,7 @@ Model::XDocument_t Model::newInstance( const rtl::OUString& sName,
     XDocument_t xInstance = getDocumentBuilder()->newDocument();
     DBG_ASSERT( xInstance.is(), "failed to create DOM instance" );
 
-    Reference<XNode>( xInstance, UNO_QUERY_THROW )->appendChild( 
+    Reference<XNode>( xInstance, UNO_QUERY_THROW )->appendChild(
         Reference<XNode>( xInstance->createElement( OUSTRING("instanceData") ),
                           UNO_QUERY_THROW ) );
 
@@ -516,7 +516,7 @@ void Model::removeInstance( const rtl::OUString& sName )
         mpInstances->removeItem( mpInstances->getItem( nPos ) );
 }
 
-Reference<XNameContainer> lcl_getModels( 
+Reference<XNameContainer> lcl_getModels(
     const Reference<com::sun::star::frame::XModel>& xComponent )
 {
     Reference<XNameContainer> xRet;
@@ -555,7 +555,7 @@ void Model::renameModel( const Reference<com::sun::star::frame::XModel>& xCmp,
     throw( RuntimeException )
 {
     Reference<XNameContainer> xModels = lcl_getModels( xCmp );
-    if( xModels.is() 
+    if( xModels.is()
         && xModels->hasByName( sFrom )
         && ! xModels->hasByName( sTo ) )
     {
@@ -571,7 +571,7 @@ void Model::removeModel( const Reference<com::sun::star::frame::XModel>& xCmp,
     throw( RuntimeException )
 {
     Reference<XNameContainer> xModels = lcl_getModels( xCmp );
-    if( xModels.is() 
+    if( xModels.is()
         && xModels->hasByName( sName ) )
     {
         xModels->removeByName( sName );
@@ -583,11 +583,11 @@ Model::XNode_t Model::createElement( const XNode_t& xParent,
     throw( RuntimeException )
 {
     Reference<XNode> xNode;
-    if( xParent.is() 
+    if( xParent.is()
         && isValidXMLName( sName ) )
     {
         // TODO: implement proper namespace handling
-        xNode.set( xParent->getOwnerDocument()->createElement( sName ), 
+        xNode.set( xParent->getOwnerDocument()->createElement( sName ),
                    UNO_QUERY );
     }
     return xNode;
@@ -599,7 +599,7 @@ Model::XNode_t Model::createAttribute( const XNode_t& xParent,
 {
     Reference<XNode> xNode;
     Reference<XElement> xElement( xParent, UNO_QUERY );
-    if( xParent.is() 
+    if( xParent.is()
         && xElement.is()
         && isValidXMLName( sName ) )
     {
@@ -634,7 +634,7 @@ Model::XNode_t Model::renameNode( const XNode_t& xNode,
         return xNode;
 
     // note old binding expression so we can adjust bindings below
-    OUString sOldDefaultBindingExpression = 
+    OUString sOldDefaultBindingExpression =
         getDefaultBindingExpressionForNode( xNode );
 
     Reference<XDocument> xDoc = xNode->getOwnerDocument();
@@ -686,14 +686,14 @@ Model::XNode_t Model::renameNode( const XNode_t& xNode,
     if( xNew.is() )
     {
         // iterate over bindings and replace default expressions
-        OUString sNewDefaultBindingExpression = 
+        OUString sNewDefaultBindingExpression =
             getDefaultBindingExpressionForNode( xNew );
         for( sal_Int32 n = 0; n < mpBindings->countItems(); n++ )
         {
             Binding* pBinding = Binding::getBinding(
                 mpBindings->Collection<XPropertySet_t>::getItem( n ) );
 
-            if( pBinding->getBindingExpression() 
+            if( pBinding->getBindingExpression()
                     == sOldDefaultBindingExpression )
                 pBinding->setBindingExpression( sNewDefaultBindingExpression );
         }
@@ -752,7 +752,7 @@ Model::XPropertySet_t Model::getBindingForNode( const XNode_t& xNode,
     if( bCreate  &&  pBestBinding == NULL )
     {
         pBestBinding = new Binding();
-        pBestBinding->setBindingExpression( 
+        pBestBinding->setBindingExpression(
             getDefaultBindingExpressionForNode( xNode ) );
         mpBindings->addItem( pBestBinding );
     }
@@ -807,7 +807,7 @@ OUString lcl_serializeForDisplay( const Reference<XNodeList>& xNodes )
     for( sal_Int32 i = 0; i < nLength; i++ )
     {
         Reference<XNode> xCurrent = xNodes->item( i );
-        
+
         switch ( xCurrent->getNodeType() )
         {
         case NodeType_DOCUMENT_NODE:
@@ -837,14 +837,14 @@ OUString lcl_serializeForDisplay( const Reference<XNodeList>& xNodes )
     if ( nAttributeNodes )
         // had only attribute nodes
         return sResult;
-    
+
     // serialize fragment
     CSerializationAppXML aSerialization;
     aSerialization.setSource( xFragment );
     aSerialization.serialize();
 
     // copy stream into buffer
-    Reference<XTextInputStream> xTextInputStream( 
+    Reference<XTextInputStream> xTextInputStream(
         createInstance( OUSTRING("com.sun.star.io.TextInputStream") ),
         UNO_QUERY );
     Reference<XActiveDataSink>( xTextInputStream, UNO_QUERY_THROW )
@@ -922,7 +922,7 @@ OUString lcl_serializeForDisplay( const Reference<XXPathObject>& xResult )
     return aBuffer.makeStringAndClear();
 }
 
-OUString Model::getResultForExpression( 
+OUString Model::getResultForExpression(
     const XPropertySet_t& xBinding,
     sal_Bool bIsBindingExpression,
     const OUString& sExpression )
@@ -945,7 +945,7 @@ OUString Model::getResultForExpression(
     else
     {
         // MIP (not binding): iterate over bindings contexts
-        std::vector<EvaluationContext> aContext = 
+        std::vector<EvaluationContext> aContext =
             pBinding->getMIPEvaluationContexts();
         for( std::vector<EvaluationContext>::iterator aIter = aContext.begin();
              aIter != aContext.end();
@@ -971,7 +971,7 @@ sal_Bool Model::isValidPrefixName( const OUString& sName )
     return ::isValidPrefixName( sName, NULL );
 }
 
-void Model::setNodeValue( 
+void Model::setNodeValue(
     const XNode_t& xNode,
     const rtl::OUString& sValue )
     throw( RuntimeException )
@@ -984,7 +984,7 @@ void Model::setNodeValue(
 // helper functions from model_helper.hxx
 //
 
-void xforms::getInstanceData( 
+void xforms::getInstanceData(
     const Sequence<PropertyValue>& aValues,
     OUString* pID,
     Reference<XDocument>* pInstance,
@@ -1008,7 +1008,7 @@ void xforms::getInstanceData(
     }
 }
 
-void xforms::setInstanceData( 
+void xforms::setInstanceData(
     Sequence<PropertyValue>& aSequence,
     const OUString* _pID,
     const Reference<XDocument>* _pInstance,

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -46,17 +46,17 @@ static accessibility::XAccessibleComponent*
             pWrap->mpComponent = reinterpret_cast< accessibility::XAccessibleComponent * > (any.pReserved);
             pWrap->mpComponent->acquire();
         }
-        
+
         return pWrap->mpComponent;
     }
-    
+
     return NULL;
 }
 
 /*****************************************************************************/
 
 static awt::Point
-translatePoint( accessibility::XAccessibleComponent *pComponent, 
+translatePoint( accessibility::XAccessibleComponent *pComponent,
                 gint x, gint y, AtkCoordType t)
 {
     awt::Point aOrigin( 0, 0 );
@@ -64,7 +64,7 @@ translatePoint( accessibility::XAccessibleComponent *pComponent,
         aOrigin = pComponent->getLocationOnScreen();
 
 #ifdef ENABLE_TRACING
-    fprintf(stderr, "coordinates ( %u, %u ) translated to: ( %u, %u )\n", 
+    fprintf(stderr, "coordinates ( %u, %u ) translated to: ( %u, %u )\n",
         x, y, x - aOrigin.X, y - aOrigin.Y);
 #endif
 
@@ -91,7 +91,7 @@ component_wrapper_grab_focus (AtkComponent *component)
     {
         g_warning( "Exception in grabFocus()" );
     }
-    
+
     return FALSE;
 }
 
@@ -113,7 +113,7 @@ component_wrapper_contains (AtkComponent *component,
     {
         g_warning( "Exception in containsPoint()" );
     }
-    
+
     return FALSE;
 }
 
@@ -128,20 +128,20 @@ component_wrapper_ref_accessible_at_point (AtkComponent *component,
     try
     {
         accessibility::XAccessibleComponent* pComponent = getComponent( component );
-        
+
         if( pComponent )
         {
             uno::Reference< accessibility::XAccessible > xAccessible;
             xAccessible = pComponent->getAccessibleAtPoint(
                 translatePoint( pComponent, x, y, coord_type ) );
-            
+
 #ifdef ENABLE_TRACING
             fprintf(stderr, "getAccessibleAtPoint( %u, %u ) returned %p\n",
               x, y, xAccessible.get());
-            
+
             uno::Reference< accessibility::XAccessibleComponent > xComponent(
                 xAccessible->getAccessibleContext(), uno::UNO_QUERY );
-            
+
             if( xComponent.is() )
             {
                 awt::Rectangle rect = xComponent->getBounds();
@@ -153,11 +153,11 @@ component_wrapper_ref_accessible_at_point (AtkComponent *component,
             return atk_object_wrapper_ref( xAccessible );
         }
     }
-    catch( const uno::Exception &e ) 
+    catch( const uno::Exception &e )
     {
         g_warning( "Exception in getAccessibleAtPoint()" );
     }
-    
+
     return NULL;
 }
 
@@ -175,21 +175,21 @@ component_wrapper_get_position (AtkComponent   *component,
         if( pComponent )
         {
             awt::Point aPos;
-            
+
             if( coord_type == ATK_XY_SCREEN )
                 aPos = pComponent->getLocationOnScreen();
             else
                 aPos = pComponent->getLocation();
-            
+
             *x = aPos.X;
             *y = aPos.Y;
-            
+
 #ifdef ENABLE_TRACING
             fprintf(stderr, "getLocation[OnScreen]() returned: ( %u, %u )\n", *x, *y );
 #endif
         }
     }
-    catch( const uno::Exception &e ) 
+    catch( const uno::Exception &e )
     {
         g_warning( "Exception in getLocation[OnScreen]()" );
     }
@@ -210,13 +210,13 @@ component_wrapper_get_size (AtkComponent   *component,
             awt::Size aSize = pComponent->getSize();
             *width = aSize.Width;
             *height = aSize.Height;
-            
+
 #ifdef ENABLE_TRACING
             fprintf(stderr, "getSize() returned: ( %u, %u )\n", *width, *height );
 #endif
         }
     }
-    catch( const uno::Exception &e ) 
+    catch( const uno::Exception &e )
     {
         g_warning( "Exception in getSize()" );
     }
@@ -270,7 +270,7 @@ component_wrapper_get_layer (AtkComponent   *component)
 {
     AtkRole role = atk_object_get_role( ATK_OBJECT( component ) );
     AtkLayer layer = ATK_LAYER_WIDGET;
-    
+
     switch (role)
     {
         case ATK_ROLE_POPUP_MENU:
@@ -287,7 +287,7 @@ component_wrapper_get_layer (AtkComponent   *component)
                     layer = ATK_LAYER_POPUP;
             }
             break;
-        
+
         case ATK_ROLE_LIST:
             {
                 AtkObject * parent = atk_object_get_parent( ATK_OBJECT( component ) );
@@ -295,11 +295,11 @@ component_wrapper_get_layer (AtkComponent   *component)
                     layer = ATK_LAYER_POPUP;
             }
             break;
-        
+
         default:
             ;
     }
-    
+
     return layer;
 }
 

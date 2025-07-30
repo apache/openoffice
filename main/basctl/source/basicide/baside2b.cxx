@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -1196,8 +1196,8 @@ WatchWindow::WatchWindow( Window* pParent ) :
 	aHeaderBar( this, WB_BUTTONSTYLE | WB_BORDER )
 {
 	aXEdit.SetAccessibleName(String(IDEResId( RID_STR_WATCHNAME)));
-	aTreeListBox.SetAccessibleName(String(IDEResId(RID_STR_WATCHNAME)));		
-	
+	aTreeListBox.SetAccessibleName(String(IDEResId(RID_STR_WATCHNAME)));
+
 	nVirtToolBoxHeight = aXEdit.GetSizePixel().Height() + 7;
 	nHeaderBarHeight = 16;
 
@@ -1537,7 +1537,7 @@ StackWindow::StackWindow( Window* pParent ) :
 	aStackStr( IDEResId( RID_STR_STACK ) )
 {
    	aTreeListBox.SetHelpId(HID_BASICIDE_STACKWINDOW_LIST);
-	aTreeListBox.SetAccessibleName(String( IDEResId(RID_STR_STACKNAME)));		
+	aTreeListBox.SetAccessibleName(String( IDEResId(RID_STR_STACKNAME)));
 	aTreeListBox.SetPosPixel( Point( DWBORDER, nVirtToolBoxHeight ) );
 	aTreeListBox.SetHighlightRange();
     aTreeListBox.SetSelectionMode( NO_SELECTION );
@@ -1829,7 +1829,7 @@ void WatchTreeListBox::RequestingChilds( SvLBoxEntry * pParent )
 		createAllObjectProperties( pObj );
  	    SbxArray* pProps = pObj->GetProperties();
 	    sal_uInt16 nPropCount = pProps->Count();
-	    if ( nPropCount >= 3 && 
+	    if ( nPropCount >= 3 &&
 		     pProps->Get( nPropCount -1 )->GetName().EqualsIgnoreCaseAscii( "Dbg_Methods" ) &&
 		     pProps->Get( nPropCount -2 )->GetName().EqualsIgnoreCaseAscii( "Dbg_Properties" ) &&
 		     pProps->Get( nPropCount -3 )->GetName().EqualsIgnoreCaseAscii( "Dbg_SupportedInterfaces" ) )

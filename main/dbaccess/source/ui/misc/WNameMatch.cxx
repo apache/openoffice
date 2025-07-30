@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -122,10 +122,10 @@ void OWizNameMatching::Reset()
 		m_CTRL_RIGHT.SetEntryHeight(m_CTRL_LEFT.GetEntryHeight());
 		m_CTRL_RIGHT.SetIndent(m_CTRL_LEFT.GetIndent());
 		m_CTRL_RIGHT.SetSpaceBetweenEntries(m_CTRL_LEFT.GetSpaceBetweenEntries());
-		
+
 		m_bFirstTime = sal_False;
 	}
-	
+
 	//	m_CTRL_LEFT.Clear();
 }
 // -----------------------------------------------------------------------
@@ -136,7 +136,7 @@ void OWizNameMatching::ActivatePage( )
 	// set source table name
     String aName = m_sSourceText;
 	aName += String(m_pParent->m_sSourceName);
-	
+
 	m_FT_TABLE_LEFT.SetText(aName);
 
 	// set dest table name
@@ -144,7 +144,7 @@ void OWizNameMatching::ActivatePage( )
 	aName += String(m_pParent->m_sName);
 	m_FT_TABLE_RIGHT.SetText(aName);
 
-	
+
 	m_CTRL_LEFT.FillListBox(*m_pParent->getSrcVector());
 	m_CTRL_RIGHT.FillListBox(*m_pParent->getDestVector());
 
@@ -153,7 +153,7 @@ void OWizNameMatching::ActivatePage( )
 
 	m_ibColumn_up_right.Enable( m_CTRL_RIGHT.GetEntryCount() > 1 );
 	m_ibColumn_down_right.Enable( m_CTRL_RIGHT.GetEntryCount() > 1 );
-		
+
 
 	m_pParent->EnableButton(OCopyTableWizard::WIZARD_NEXT,sal_False);
 	m_CTRL_LEFT.GrabFocus();
@@ -164,13 +164,13 @@ sal_Bool OWizNameMatching::LeavePage()
 	DBG_CHKTHIS(OWizNameMatching,NULL);
 
 	const ODatabaseExport::TColumnVector* pSrcColumns = m_pParent->getSrcVector();
-	
+
 	m_pParent->m_vColumnPos.clear();
 	m_pParent->m_vColumnTypes.clear();
 	m_pParent->m_vColumnPos.resize( pSrcColumns->size(), ODatabaseExport::TPositions::value_type( COLUMN_POSITION_NOT_FOUND, COLUMN_POSITION_NOT_FOUND ) );
 	m_pParent->m_vColumnTypes.resize( pSrcColumns->size(), COLUMN_POSITION_NOT_FOUND );
 
-	
+
 	sal_Int32 nParamPos = 0;
 	SvLBoxEntry* pLeftEntry = m_CTRL_LEFT.GetModel()->First();
 	SvLBoxEntry* pRightEntry = m_CTRL_RIGHT.GetModel()->First();

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -278,7 +278,7 @@ void  ComboBox::SetMpSubEditAccessibleName(String &aName)
 {
 	if(mpSubEdit!=NULL)
         mpSubEdit->SetAccessibleName(aName);
-}              
+}
 // -----------------------------------------------------------------------
 
 IMPL_LINK( ComboBox, ImplClickBtnHdl, void*, EMPTYARG )
@@ -354,7 +354,7 @@ IMPL_LINK( ComboBox, ImplAutocompleteHdl, Edit*, pEdit )
 			bForward = sal_False;
 			nStart = nStart ? nStart - 1 : mpImplLB->GetEntryList()->GetEntryCount()-1;
 		}
-        
+
         sal_uInt16 nPos = LISTBOX_ENTRY_NOTFOUND;
         if( ! mbMatchCase )
         {
@@ -364,7 +364,7 @@ IMPL_LINK( ComboBox, ImplAutocompleteHdl, Edit*, pEdit )
                 // Try match case insensitive, but from start
                 nPos = mpImplLB->GetEntryList()->FindMatchingEntry( aStartText, bForward ? 0 : (mpImplLB->GetEntryList()->GetEntryCount()-1), bForward, sal_True );
         }
-            
+
 		if ( nPos == LISTBOX_ENTRY_NOTFOUND )
             // Try match full from current position
             nPos = mpImplLB->GetEntryList()->FindMatchingEntry( aStartText, nStart, bForward, sal_False );
@@ -805,7 +805,7 @@ void ComboBox::DataChanged( const DataChangedEvent& rDCEvt )
 		}
 		Resize();
 		mpImplLB->Resize(); // Wird nicht durch ComboBox::Resize() gerufen, wenn sich die ImplLB nicht aendert.
-        SetBackground();    // due to a hack in Window::UpdateSettings the background must be reset 
+        SetBackground();    // due to a hack in Window::UpdateSettings the background must be reset
                             // otherwise it will overpaint NWF drawn comboboxes
 	}
 }
@@ -1302,9 +1302,9 @@ void ComboBox::Draw( OutputDevice* pDev, const Point& rPos, const Size& rSize, s
 		if ( !nLines )
 			nLines = 1;
 		sal_uInt16 nTEntry = IsReallyVisible() ? mpImplLB->GetTopEntry() : 0;
-		
+
         Rectangle aTextRect( aPos, aSize );
-        
+
         aTextRect.Left() += 3*nOnePixel;
         aTextRect.Right() -= 3*nOnePixel;
         aTextRect.Top() += nEditHeight + nOnePixel;
@@ -1320,14 +1320,14 @@ void ComboBox::Draw( OutputDevice* pDev, const Point& rPos, const Size& rSize, s
 	}
 
 	pDev->Pop();
-	
+
     // Call Edit::Draw after restoring the MapMode...
 	if ( IsDropDownBox() )
 	{
 		mpSubEdit->Draw( pDev, rPos, rSize, nFlags );
 		// DD-Button ?
 	}
-	
+
 }
 
 // -----------------------------------------------------------------------
@@ -1588,7 +1588,7 @@ long ComboBox::GetIndexForPoint( const Point& rPoint, sal_uInt16& rPos ) const
         // point must be either in main list window
         // or in impl window (dropdown case)
         ImplListBoxWindow* pMain = mpImplLB->GetMainWindow();
-    
+
         // convert coordinates to ImplListBoxWindow pixel coordinate space
         Point aConvPoint = LogicToPixel( rPoint );
         aConvPoint = OutputToAbsoluteScreenPixel( aConvPoint );

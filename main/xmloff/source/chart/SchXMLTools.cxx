@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -144,7 +144,7 @@ Reference< chart2::data::XDataSequence > lcl_createNewSequenceFromCachedXMLRange
     OUString aRange;
     if( xSeq.is() && SchXMLTools::getXMLRangePropertyFromDataSequence( xSeq, aRange, /* bClearProp = */ true ) )
     {
-        xRet.set( xDataProvider->createDataSequenceByRangeRepresentation( 
+        xRet.set( xDataProvider->createDataSequenceByRangeRepresentation(
             lcl_ConvertRange( aRange, xDataProvider )) );
         SchXMLTools::copyProperties( Reference< beans::XPropertySet >( xSeq, uno::UNO_QUERY ),
             Reference< beans::XPropertySet >( xRet, uno::UNO_QUERY ));
@@ -221,7 +221,7 @@ const tMakeStringStringMap& lcl_getChartTypeNameMap()
 
         ( ::rtl::OUString::createFromAscii( "com.sun.star.chart.BubbleDiagram" )
         , ::rtl::OUString::createFromAscii( "com.sun.star.chart2.BubbleChartType" ) )
-        
+
         ;
     return g_aChartTypeNameMap;
 }
@@ -404,7 +404,7 @@ Reference< chart2::data::XDataSequence > CreateDataSequence(
         DBG_ERROR( "need a data provider" );
         return xRet;
     }
-    
+
     try
     {
         xRet.set( xDataProvider->createDataSequenceByRangeRepresentation( lcl_ConvertRange( rRange, xDataProvider )));
@@ -609,7 +609,7 @@ void exportRangeToSomewhere( SvXMLExport& rExport, const ::rtl::OUString& rValue
     const SvtSaveOptions::ODFDefaultVersion nCurrentODFVersion( SvtSaveOptions().GetODFDefaultVersion() );
     if( nCurrentODFVersion == SvtSaveOptions::ODFVER_010 || nCurrentODFVersion == SvtSaveOptions::ODFVER_011 )
         return;//svg:desc is not allowed at draw:g in ODF1.0; but as the ranges for error bars are anyhow not allowed within ODF1.0 nor ODF1.1 we do not need the information
-    
+
     SvXMLElementExport aEmptyShapeGroup( rExport, XML_NAMESPACE_DRAW,
                               ::xmloff::token::GetXMLToken( ::xmloff::token::XML_G ),
                               sal_True, sal_False );
@@ -749,9 +749,9 @@ bool switchBackToDataProviderFromParent( const Reference< chart2::XChartDocument
     uno::Reference< chart2::data::XDataReceiver > xDataReceiver( xChartDoc, uno::UNO_QUERY );
     if( !xDataReceiver.is() )
         return false;
-    
+
     xDataReceiver->attachDataProvider( xDataProviderFromParent );
-    
+
     for( tSchXMLLSequencesPerIndex::const_iterator aLSeqIt( rLSequencesPerIndex.begin() );
          aLSeqIt != rLSequencesPerIndex.end(); ++aLSeqIt )
     {
@@ -839,7 +839,7 @@ bool isDocumentGeneratedWithOpenOfficeOlderThan2_3( const uno::Reference< frame:
             aGenerator = lcl_getGeneratorFromModel( uno::Reference< frame::XModel >( xChild->getParent(), uno::UNO_QUERY) );
             if( aGenerator.indexOf( ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM("OpenOffice.org_project") ) ) != -1 )
             {
-                //the chart application has not created files without a meta stream since OOo 2.3 (OOo 2.3 has written a metastream already) 
+                //the chart application has not created files without a meta stream since OOo 2.3 (OOo 2.3 has written a metastream already)
                 //only the report builder extension has created some files with OOo 3.1 that do not have a meta stream
                 if( aGenerator.indexOf( ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM("OpenOffice.org_project/31") ) ) != -1 )
                     bResult = false;//#i100102# probably generated with OOo 3.1 by the report designer

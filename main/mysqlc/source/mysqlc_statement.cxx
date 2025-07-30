@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 #include <stdio.h>
 #include "mysqlc_connection.hxx"
@@ -55,7 +55,7 @@ using ::rtl::OUString;
 #include <stdio.h>
 
 /* {{{ OConnection::OCommonStatement() -I- */
-OCommonStatement::OCommonStatement(OConnection* _pConnection, sql::Statement *_cppStatement) 
+OCommonStatement::OCommonStatement(OConnection* _pConnection, sql::Statement *_cppStatement)
 	:OCommonStatement_IBase(m_aMutex)
 	,OPropertySetHelper(OCommonStatement_IBase::rBHelper)
     ,OStatement_CBase( (::cppu::OWeakObject*)_pConnection, this )
@@ -154,7 +154,7 @@ void SAL_CALL OCommonStatement::close()
 {
 	OSL_TRACE("OCommonStatement::close");
 	/*
-	  We need a block for the checkDisposed call. 
+	  We need a block for the checkDisposed call.
 	  After the check we can call dispose() as we are not under lock ??
 	*/
 	{
@@ -333,7 +333,7 @@ sal_Bool SAL_CALL OCommonStatement::getMoreResults()
 	MutexGuard aGuard(m_aMutex);
 	checkDisposed(rBHelper.bDisposed);
 
-	// if your driver supports more than only one resultset 
+	// if your driver supports more than only one resultset
 	// and has one more at this moment return(true
 	return (sal_False);
 }

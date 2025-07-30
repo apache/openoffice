@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,19 +7,19 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
- 
+
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_file.hxx"
@@ -216,13 +216,13 @@ XStream_impl::readBytes(
 		if( m_nIsOpen ) m_aFile.close();
 		throw io::BufferSizeExceededException( ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( OSL_LOG_PREFIX ) ), uno::Reference< uno::XInterface >() );
 	}
-	
+
 	sal_uInt64 nrc(0);
 	if(m_aFile.read( (void* )buffer,sal_uInt64(nBytesToRead),nrc )
        != osl::FileBase::E_None)
 	{
 		delete[] buffer;
-        throw io::IOException( ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( OSL_LOG_PREFIX ) ), uno::Reference< uno::XInterface >() );		
+        throw io::IOException( ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( OSL_LOG_PREFIX ) ), uno::Reference< uno::XInterface >() );
 	}
 	aData = uno::Sequence< sal_Int8 > ( buffer, (sal_uInt32)nrc );
 	delete[] buffer;
@@ -295,14 +295,14 @@ XStream_impl::closeStream(
 	if( m_nIsOpen )
 	{
 		osl::FileBase::RC err = m_aFile.close();
-        
+
         if( err != osl::FileBase::E_None ) {
             io::IOException ex;
             ex.Message = rtl::OUString::createFromAscii(
                 "could not close file");
 			throw ex;
         }
-		
+
 		m_nIsOpen = false;
 	}
 }
@@ -316,7 +316,7 @@ XStream_impl::closeInput(
 {
 	osl::MutexGuard aGuard( m_aMutex );
 	m_bInputStreamCalled = false;
-	
+
 	if( ! m_bOutputStreamCalled )
 		closeStream();
 }
@@ -331,7 +331,7 @@ XStream_impl::closeOutput(
 {
 	osl::MutexGuard aGuard( m_aMutex );
 	m_bOutputStreamCalled = false;
-	
+
 	if( ! m_bInputStreamCalled )
 		closeStream();
 }

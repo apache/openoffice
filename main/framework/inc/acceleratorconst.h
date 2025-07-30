@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -36,9 +36,9 @@
 // other includes
 
 namespace framework{
-    
+
 #define DOCTYPE_ACCELERATORS            DECLARE_ASCII("<!DOCTYPE accel:acceleratorlist PUBLIC \"-//OpenOffice.org//DTD OfficeDocument 1.0//EN\" \"accelerator.dtd\">")
-    
+
 #define ATTRIBUTE_TYPE_CDATA		    DECLARE_ASCII("CDATA")
 
 #define XMLNS_ACCEL                     DECLARE_ASCII("accel")
@@ -68,7 +68,7 @@ namespace framework{
 // same items with full qualified name space
 #define NS_ELEMENT_ACCELERATORLIST      DECLARE_ASCII("http://openoffice.org/2001/accel^acceleratorlist")
 #define NS_ELEMENT_ITEM                 DECLARE_ASCII("http://openoffice.org/2001/accel^item"           )
-                       
+
 #define NS_XMLNS_ACCEL					DECLARE_ASCII("http://openoffice.org/2001/accel")
 #define NS_XMLNS_XLINK					DECLARE_ASCII("http://www.w3.org/1999/xlink"    )
 

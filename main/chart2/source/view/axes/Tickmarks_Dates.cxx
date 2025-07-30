@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -54,11 +54,11 @@ DateTickFactory::DateTickFactory(
         m_xInverseScaling = m_aScale.Scaling->getInverseScaling();
         DBG_ASSERT( m_xInverseScaling.is(), "each Scaling needs to return a inverse Scaling" );
     }
-    
+
     m_fScaledVisibleMin = m_aScale.Minimum;
     if( m_xInverseScaling.is() )
         m_fScaledVisibleMin = m_aScale.Scaling->doScaling(m_fScaledVisibleMin);
-    
+
     m_fScaledVisibleMax = m_aScale.Maximum;
     if( m_xInverseScaling.is() )
         m_fScaledVisibleMax = m_aScale.Scaling->doScaling(m_fScaledVisibleMax);
@@ -75,7 +75,7 @@ void DateTickFactory::getAllTicks( ::std::vector< ::std::vector< TickInfo > >& r
     ::std::vector< TickInfo >& rMinorTicks = rAllTickInfos[1];
     rMajorTicks.clear();
     rMinorTicks.clear();
-    
+
     Date aNull(m_aScale.NullDate);
 
     Date aDate = aNull + static_cast<long>(::rtl::math::approxFloor(m_aScale.Minimum));

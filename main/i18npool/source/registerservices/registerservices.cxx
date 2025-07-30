@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -400,16 +400,16 @@ static const struct InstancesArray {
         &InputSequenceChecker_th_CreateInstance },
     {   "com.sun.star.i18n.InputSequenceChecker_hi",
         "com.sun.star.i18n.InputSequenceChecker_hi",
-        &InputSequenceChecker_hi_CreateInstance },  
+        &InputSequenceChecker_hi_CreateInstance },
     {   "com.sun.star.i18n.TextConversion",
         "com.sun.star.i18n.TextConversion",
-        &TextConversionImpl_CreateInstance },  
+        &TextConversionImpl_CreateInstance },
     {   "com.sun.star.i18n.TextConversion_ko",
         "com.sun.star.i18n.TextConversion_ko",
-        &TextConversion_ko_CreateInstance },  
+        &TextConversion_ko_CreateInstance },
     {   "com.sun.star.i18n.TextConversion_zh",
         "com.sun.star.i18n.TextConversion_zh",
-        &TextConversion_zh_CreateInstance },  
+        &TextConversion_zh_CreateInstance },
     {   TRLT_SERVICELNAME,
         TRLT_IMPLNAME ,
         &TransliterationImpl_CreateInstance },
@@ -550,7 +550,7 @@ static const struct InstancesArray {
     {   "com.sun.star.i18n.OrdinalSuffix",
         "com.sun.star.i18n.OrdinalSuffix",
         & OrdinalSuffix_CreateInstance },
- 
+
     {   TRLT_SERVICELNAME_L10N,
         TRLT_IMPLNAME_PREFIX  "FULLWIDTHKATAKANA_HALFWIDTHKATAKANA",
         &fullwidthKatakanaToHalfwidthKatakana_CreateInstance },

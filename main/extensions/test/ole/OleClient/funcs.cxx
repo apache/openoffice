@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -52,7 +52,7 @@ template< class T >
 bool equalSequences(const Sequence<T>& seqIn, const Sequence<Any> & returned);
 
 
-Reference< XMultiServiceFactory > objectFactory;// 
+Reference< XMultiServiceFactory > objectFactory;//
 
 
 Reference<XMultiServiceFactory> getMultiServiceFactory()
@@ -74,7 +74,7 @@ Reference<XInvocation> getComObject( OUString progId)
 //	Reference<XMultiServiceFactory> fac;
 	if(  ! objectFactory.is())
 	{	Reference<XMultiServiceFactory> mgr= getMultiServiceFactory();
-		Reference<XInterface> xInt= mgr->createInstance( 
+		Reference<XInterface> xInt= mgr->createInstance(
 			OUString(L"com.sun.star.bridge.oleautomation.Factory"));
 		objectFactory= Reference<XMultiServiceFactory>::query(  xInt);
 	}
@@ -103,7 +103,7 @@ Reference<XInvocation> convertComObject( IUnknown* pUnk)
 	sal_uInt8 arId[16];
 	rtl_getGlobalProcessId( arId);
 	Any target=	xSuppl->createBridge( any, Sequence<sal_Int8>( (sal_Int8*)arId, 16), OLE, UNO );
-	
+
 	Reference<XInvocation> ret;
 	target>>= ret;
 	return ret;
@@ -116,7 +116,7 @@ Reference<XInvocation> convertComObject( IUnknown* pUnk)
 
   The number of items in value must be the
   same as the number of provided parameter during the  call on the  method.
-  
+
   The parameter outArgs, indices correspond to the sequences which are
   arguments to XInvocation::invoke
  */
@@ -164,7 +164,7 @@ bool checkOutArgs(const Sequence<Any> & outArgs,
     return true;
 }
 
-/* The returned sequence always contains Any elements 
+/* The returned sequence always contains Any elements
 */
 bool equalSequences(const Any& orig, const Any& returned)
 {
@@ -175,13 +175,13 @@ bool equalSequences(const Any& orig, const Any& returned)
 	}
 	TypeDescription td(orig.getValueTypeRef());
 	typelib_IndirectTypeDescription * indirect_td = (typelib_IndirectTypeDescription *) td.get();
-	
+
 	switch (indirect_td->pType->eTypeClass)
 	{
 		case TypeClass_CHAR:
 			{
 				Sequence<sal_Unicode> seq;
-				orig >>= seq;	
+				orig >>= seq;
 				Sequence<Any> seq2;
 				returned >>= seq2;
 				return equalSequences(seq, seq2);
@@ -189,7 +189,7 @@ bool equalSequences(const Any& orig, const Any& returned)
 		case TypeClass_BOOLEAN:
 			{
 				Sequence<sal_Bool> seq;
-				orig >>= seq;	
+				orig >>= seq;
 				Sequence<Any> seq2;
 				returned >>= seq2;
 				return equalSequences(seq, seq2);
@@ -197,7 +197,7 @@ bool equalSequences(const Any& orig, const Any& returned)
 		case TypeClass_BYTE:
 			{
 				Sequence<sal_Int8> seq;
-				orig >>= seq;	
+				orig >>= seq;
 				Sequence<Any> seq2;
 				returned >>= seq2;
 				return equalSequences(seq, seq2);
@@ -205,7 +205,7 @@ bool equalSequences(const Any& orig, const Any& returned)
 		case TypeClass_SHORT:
 			{
 				Sequence<sal_Int16> seq;
-				orig >>= seq;	
+				orig >>= seq;
 				Sequence<Any> seq2;
 				returned >>= seq2;
 				return equalSequences(seq, seq2);
@@ -213,7 +213,7 @@ bool equalSequences(const Any& orig, const Any& returned)
 		case TypeClass_LONG:
 			{
 				Sequence<sal_Int32> seq;
-				orig >>= seq;	
+				orig >>= seq;
 				Sequence<Any> seq2;
 				returned >>= seq2;
 				return equalSequences(seq, seq2);
@@ -221,7 +221,7 @@ bool equalSequences(const Any& orig, const Any& returned)
 		case TypeClass_FLOAT:
 			{
 				Sequence<float> seq;
-				orig >>= seq;	
+				orig >>= seq;
 				Sequence<Any> seq2;
 				returned >>= seq2;
 				return equalSequences(seq, seq2);
@@ -229,7 +229,7 @@ bool equalSequences(const Any& orig, const Any& returned)
 		case TypeClass_DOUBLE:
 			{
 				Sequence<double> seq;
-				orig >>= seq;	
+				orig >>= seq;
 				Sequence<Any> seq2;
 				returned >>= seq2;
 				return equalSequences(seq, seq2);
@@ -237,7 +237,7 @@ bool equalSequences(const Any& orig, const Any& returned)
 		case TypeClass_STRING:
 			{
 				Sequence<OUString> seq;
-				orig >>= seq;		
+				orig >>= seq;
 				Sequence<Any> seq2;
 				returned >>= seq2;
 				return equalSequences(seq, seq2);
@@ -245,7 +245,7 @@ bool equalSequences(const Any& orig, const Any& returned)
 		case TypeClass_ANY:
 			{
 				Sequence<Any> seq;
-				orig >>= seq;	
+				orig >>= seq;
 				Sequence<Any> seq2;
 				returned >>= seq2;
 				return equalSequences(seq, seq2);
@@ -253,7 +253,7 @@ bool equalSequences(const Any& orig, const Any& returned)
 		case TypeClass_SEQUENCE:
 			{
 				//Sequence<sal_Unicode> seq;
-				//orig >>= seq;	
+				//orig >>= seq;
 				//Sequence<Any> seq2;
 				//returned >>= seq2;
 				//return equalSequences(seq, seq2);
@@ -262,7 +262,7 @@ bool equalSequences(const Any& orig, const Any& returned)
 		case TypeClass_INTERFACE:
 			{
 				Sequence<Reference<XInvocation> > seq;
-				orig >>= seq;	
+				orig >>= seq;
 				Sequence<Any> seq2;
 				returned >>= seq2;
 				return equalSequences(seq, seq2);
@@ -287,7 +287,7 @@ bool equalSequences(const Sequence<T>& seqIn, const Sequence<Any> & seqOut)
 		if (anyIn != anyOut)
 			return false;
 	}
-    
+
 	return true;
 }
 

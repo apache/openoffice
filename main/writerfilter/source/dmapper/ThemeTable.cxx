@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -96,7 +96,7 @@ void ThemeTable::lcl_sprm(Sprm& rSprm)
     dmapper_logger->startElement("ThemeTable.sprm");
     dmapper_logger->chars(rSprm.toString());
 #endif
-    
+
     sal_uInt32 nSprmId = rSprm.getId();
     (void)nSprmId;
 
@@ -160,7 +160,7 @@ void ThemeTable::lcl_entry(int /*pos*/, writerfilter::Reference<Properties>::Poi
 #endif
 
     ref->resolve(*this);
-    
+
 #ifdef DEBUG_DMAPPER_THEME_TABLE
     dmapper_logger->endElement("ThemeTable.entry");
 #endif
@@ -186,7 +186,7 @@ const ::rtl::OUString ThemeTable::getFontNameForTheme(const Id id) const
     default:
         return ::rtl::OUString();
     }
-    
+
     switch (id)
     {
     case NS_ooxml::LN_Value_ST_Theme_majorAscii:

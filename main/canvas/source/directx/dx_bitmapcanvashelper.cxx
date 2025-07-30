@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -95,11 +95,11 @@ namespace dxcanvas
         {
             GraphicsSharedPtr pGraphics( mpTarget->getGraphics() );
 
-            Gdiplus::Color aClearColor = hasAlpha() ? 
+            Gdiplus::Color aClearColor = hasAlpha() ?
                 Gdiplus::Color( 0,255,255,255 ) : Gdiplus::Color((Gdiplus::ARGB)Gdiplus::Color::White);
 
             ENSURE_OR_THROW(
-                Gdiplus::Ok == pGraphics->SetCompositingMode( 
+                Gdiplus::Ok == pGraphics->SetCompositingMode(
                     Gdiplus::CompositingModeSourceCopy ), // force set, don't blend
                 "BitmapCanvasHelper::clear(): GDI+ SetCompositingMode call failed" );
             ENSURE_OR_THROW(
@@ -108,26 +108,26 @@ namespace dxcanvas
         }
     }
 
-    uno::Reference< rendering::XCachedPrimitive > BitmapCanvasHelper::drawTextLayout( const rendering::XCanvas* 					  /*pCanvas*/, 
-                                                                                      const uno::Reference< rendering::XTextLayout >& xLayoutetText, 
-                                                                                      const rendering::ViewState& 					  viewState, 
+    uno::Reference< rendering::XCachedPrimitive > BitmapCanvasHelper::drawTextLayout( const rendering::XCanvas* 					  /*pCanvas*/,
+                                                                                      const uno::Reference< rendering::XTextLayout >& xLayoutetText,
+                                                                                      const rendering::ViewState& 					  viewState,
                                                                                       const rendering::RenderState& 				  renderState )
     {
-        ENSURE_OR_THROW( xLayoutetText.is(), 
+        ENSURE_OR_THROW( xLayoutetText.is(),
                           "BitmapCanvasHelper::drawTextLayout: layout is NULL");
 
         if( needOutput() )
         {
-			TextLayout* pTextLayout = 
+			TextLayout* pTextLayout =
                 dynamic_cast< TextLayout* >( xLayoutetText.get() );
 
             ENSURE_OR_THROW( pTextLayout,
                                 "BitmapCanvasHelper::drawTextLayout(): TextLayout not compatible with this canvas" );
 
 			pTextLayout->draw( mpTarget->getGraphics(),
-                               viewState, 
-                               renderState, 
-                               maOutputOffset, 
+                               viewState,
+                               renderState,
+                               maOutputOffset,
                                mpDevice,
                                mpTarget->hasAlpha() );
         }
@@ -135,13 +135,13 @@ namespace dxcanvas
         return uno::Reference< rendering::XCachedPrimitive >(NULL);
     }
 
-    void BitmapCanvasHelper::copyRect( const rendering::XCanvas* 							/*pCanvas*/, 
-                                       const uno::Reference< rendering::XBitmapCanvas >&	/*sourceCanvas*/, 
-                                       const geometry::RealRectangle2D& 					/*sourceRect*/, 
-                                       const rendering::ViewState& 							/*sourceViewState*/, 
-                                       const rendering::RenderState& 						/*sourceRenderState*/, 
-                                       const geometry::RealRectangle2D& 					/*destRect*/, 
-                                       const rendering::ViewState& 							/*destViewState*/, 
+    void BitmapCanvasHelper::copyRect( const rendering::XCanvas* 							/*pCanvas*/,
+                                       const uno::Reference< rendering::XBitmapCanvas >&	/*sourceCanvas*/,
+                                       const geometry::RealRectangle2D& 					/*sourceRect*/,
+                                       const rendering::ViewState& 							/*sourceViewState*/,
+                                       const rendering::RenderState& 						/*sourceRenderState*/,
+                                       const geometry::RealRectangle2D& 					/*destRect*/,
+                                       const rendering::ViewState& 							/*destViewState*/,
                                        const rendering::RenderState& 						/*destRenderState*/ )
     {
         // TODO(F2): copyRect NYI
@@ -155,14 +155,14 @@ namespace dxcanvas
         return basegfx::unotools::integerSize2DFromB2ISize(mpTarget->getSize());
     }
 
-    uno::Reference< rendering::XBitmap > BitmapCanvasHelper::getScaledBitmap( const geometry::RealSize2D& /*newSize*/, 
+    uno::Reference< rendering::XBitmap > BitmapCanvasHelper::getScaledBitmap( const geometry::RealSize2D& /*newSize*/,
                                                                               sal_Bool 					  /*beFast*/ )
     {
         // TODO(F1):
         return uno::Reference< rendering::XBitmap >();
     }
 
-    uno::Sequence< sal_Int8 > BitmapCanvasHelper::getData( rendering::IntegerBitmapLayout&     bitmapLayout, 
+    uno::Sequence< sal_Int8 > BitmapCanvasHelper::getData( rendering::IntegerBitmapLayout&     bitmapLayout,
                                                            const geometry::IntegerRectangle2D& rect )
     {
         RTL_LOGFILE_CONTEXT( aLog, "::dxcanvas::BitmapCanvasHelper::getData()" );
@@ -172,13 +172,13 @@ namespace dxcanvas
 
 		if( !mpTarget )
 	        return uno::Sequence< sal_Int8 >();
-	
+
 		bitmapLayout = getMemoryLayout();
 		return mpTarget->getData(bitmapLayout,rect);
     }
 
-    void BitmapCanvasHelper::setData( const uno::Sequence< sal_Int8 >& 		data, 
-                                      const rendering::IntegerBitmapLayout& bitmapLayout, 
+    void BitmapCanvasHelper::setData( const uno::Sequence< sal_Int8 >& 		data,
+                                      const rendering::IntegerBitmapLayout& bitmapLayout,
                                       const geometry::IntegerRectangle2D& 	rect )
     {
         RTL_LOGFILE_CONTEXT( aLog, "::dxcanvas::BitmapCanvasHelper::setData()" );
@@ -192,8 +192,8 @@ namespace dxcanvas
 		mpTarget->setData(data,bitmapLayout,rect);
     }
 
-    void BitmapCanvasHelper::setPixel( const uno::Sequence< sal_Int8 >&       color, 
-                                       const rendering::IntegerBitmapLayout&  bitmapLayout, 
+    void BitmapCanvasHelper::setPixel( const uno::Sequence< sal_Int8 >&       color,
+                                       const rendering::IntegerBitmapLayout&  bitmapLayout,
                                        const geometry::IntegerPoint2D&        pos )
     {
         RTL_LOGFILE_CONTEXT( aLog, "::dxcanvas::BitmapCanvasHelper::setPixel()" );
@@ -207,7 +207,7 @@ namespace dxcanvas
 		mpTarget->setPixel(color,bitmapLayout,pos);
     }
 
-    uno::Sequence< sal_Int8 > BitmapCanvasHelper::getPixel( rendering::IntegerBitmapLayout&   bitmapLayout, 
+    uno::Sequence< sal_Int8 > BitmapCanvasHelper::getPixel( rendering::IntegerBitmapLayout&   bitmapLayout,
                                                             const geometry::IntegerPoint2D&   pos )
     {
         RTL_LOGFILE_CONTEXT( aLog, "::dxcanvas::BitmapCanvasHelper::getPixel()" );

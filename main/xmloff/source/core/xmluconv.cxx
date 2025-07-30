@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -1047,7 +1047,7 @@ sal_Bool SvXMLUnitConverter::convertTime( ::com::sun::star::util::DateTime& rDat
 
 /** convert double to ISO Date Time String */
 void SvXMLUnitConverter::convertDateTime( ::rtl::OUStringBuffer& rBuffer,
-        const double& fDateTime, 
+        const double& fDateTime,
 		const com::sun::star::util::Date& aTempNullDate,
 		sal_Bool bAddTimeIf0AM )
 {
@@ -1174,7 +1174,7 @@ sal_Bool SvXMLUnitConverter::convertDateTime( double& fDateTime,
 }
 
 /** convert util::DateTime to ISO Date String */
-void SvXMLUnitConverter::convertDateTime( 
+void SvXMLUnitConverter::convertDateTime(
 				::rtl::OUStringBuffer& rBuffer,
                 const com::sun::star::util::DateTime& rDateTime,
 				sal_Bool bAddTimeIf0AM )
@@ -1845,8 +1845,8 @@ void SvXMLUnitConverter::clearUndefinedChars(rtl::OUString& rTarget, const rtl::
 	rTarget = sBuffer.makeStringAndClear();
 }
 
-OUString SvXMLUnitConverter::encodeStyleName( 
-		const OUString& rName, 
+OUString SvXMLUnitConverter::encodeStyleName(
+		const OUString& rName,
 	    sal_Bool *pEncoded ) const
 {
 	if( pEncoded )
@@ -1861,7 +1861,7 @@ OUString SvXMLUnitConverter::encodeStyleName(
 		sal_Bool bValidChar = sal_False;
 		if( c < 0x00ffU )
 		{
-			bValidChar = 
+			bValidChar =
 				(c >= 0x0041 && c <= 0x005a) ||
 				(c >= 0x0061 && c <= 0x007a) ||
 				(c >= 0x00c0 && c <= 0x00d6) ||
@@ -1895,7 +1895,7 @@ OUString SvXMLUnitConverter::encodeStyleName(
 						try
 						{
 							const_cast < SvXMLUnitConverter * >(this)
-								->xCharClass = 
+								->xCharClass =
 									Reference < XCharacterClassification >(
 								mxServiceFactory->createInstance(
 									OUString::createFromAscii(
@@ -1942,15 +1942,15 @@ OUString SvXMLUnitConverter::encodeStyleName(
 		{
 			aBuffer.append( static_cast< sal_Unicode >( '_' ) );
 			if( c > 0x0fff )
-				aBuffer.append( static_cast< sal_Unicode >( 
+				aBuffer.append( static_cast< sal_Unicode >(
 							aHexTab[ (c >> 12) & 0x0f ]  ) );
 			if( c > 0x00ff )
-				aBuffer.append( static_cast< sal_Unicode >( 
+				aBuffer.append( static_cast< sal_Unicode >(
 						aHexTab[ (c >> 8) & 0x0f ] ) );
 			if( c > 0x000f )
-				aBuffer.append( static_cast< sal_Unicode >( 
+				aBuffer.append( static_cast< sal_Unicode >(
 						aHexTab[ (c >> 4) & 0x0f ] ) );
-			aBuffer.append( static_cast< sal_Unicode >( 
+			aBuffer.append( static_cast< sal_Unicode >(
 						aHexTab[ c & 0x0f ] ) );
 			aBuffer.append( static_cast< sal_Unicode >( '_' ) );
 			if( pEncoded )
@@ -2125,10 +2125,10 @@ sal_Bool SvXMLUnitConverter::convertAny(      ::rtl::OUStringBuffer&    sValue,
                                         const com::sun::star::uno::Any& aValue)
 {
     sal_Bool bConverted = sal_False;
-    
+
     sValue.setLength(0);
     sType.setLength (0);
-    
+
     switch(aValue.getValueTypeClass())
     {
         case com::sun::star::uno::TypeClass_BYTE :
@@ -2146,7 +2146,7 @@ sal_Bool SvXMLUnitConverter::convertAny(      ::rtl::OUStringBuffer&    sValue,
                 }
             }
             break;
-            
+
         case com::sun::star::uno::TypeClass_BOOLEAN :
             {
                 sal_Bool bTempValue = sal_False;
@@ -2158,7 +2158,7 @@ sal_Bool SvXMLUnitConverter::convertAny(      ::rtl::OUStringBuffer&    sValue,
                 }
             }
             break;
-            
+
         case com::sun::star::uno::TypeClass_FLOAT :
         case com::sun::star::uno::TypeClass_DOUBLE :
             {
@@ -2166,12 +2166,12 @@ sal_Bool SvXMLUnitConverter::convertAny(      ::rtl::OUStringBuffer&    sValue,
                 if (aValue >>= fTempValue)
                 {
                     sType.appendAscii("float");
-                    bConverted = sal_True; 
+                    bConverted = sal_True;
                     SvXMLUnitConverter::convertDouble(sValue, fTempValue);
                 }
             }
             break;
-            
+
         case com::sun::star::uno::TypeClass_STRING :
             {
                 ::rtl::OUString sTempValue;
@@ -2183,13 +2183,13 @@ sal_Bool SvXMLUnitConverter::convertAny(      ::rtl::OUStringBuffer&    sValue,
                 }
             }
             break;
-            
+
         case com::sun::star::uno::TypeClass_STRUCT :
             {
                 com::sun::star::util::Date     aDate    ;
                 com::sun::star::util::Time     aTime    ;
                 com::sun::star::util::DateTime aDateTime;
-                
+
                 if (aValue >>= aDate)
                 {
                     sType.appendAscii("date");
@@ -2231,16 +2231,16 @@ sal_Bool SvXMLUnitConverter::convertAny(      ::rtl::OUStringBuffer&    sValue,
 		default:
 			break;
     }
-    
+
     return bConverted;
 }
-                       
+
 sal_Bool SvXMLUnitConverter::convertAny(      com::sun::star::uno::Any& aValue,
                                         const ::rtl::OUString&          sType ,
                                         const ::rtl::OUString&          sValue)
 {
     sal_Bool bConverted = sal_False;
-    
+
     if (sType.equalsAscii("boolean"))
     {
         sal_Bool bTempValue = sal_False;
@@ -2248,7 +2248,7 @@ sal_Bool SvXMLUnitConverter::convertAny(      com::sun::star::uno::Any& aValue,
         aValue <<= bTempValue;
         bConverted = sal_True;
     }
-    else    
+    else
     if (sType.equalsAscii("integer"))
     {
         sal_Int32 nTempValue = 0;
@@ -2256,7 +2256,7 @@ sal_Bool SvXMLUnitConverter::convertAny(      com::sun::star::uno::Any& aValue,
         aValue <<= nTempValue;
         bConverted = sal_True;
     }
-    else    
+    else
     if (sType.equalsAscii("float"))
     {
         double fTempValue = 0.0;
@@ -2264,7 +2264,7 @@ sal_Bool SvXMLUnitConverter::convertAny(      com::sun::star::uno::Any& aValue,
         aValue <<= fTempValue;
         bConverted = sal_True;
     }
-    else    
+    else
     if (sType.equalsAscii("string"))
     {
         aValue <<= sValue;
@@ -2291,6 +2291,6 @@ sal_Bool SvXMLUnitConverter::convertAny(      com::sun::star::uno::Any& aValue,
         aValue <<= aConvValue;
         bConverted = sal_True;
     }
-    
+
     return bConverted;
 }

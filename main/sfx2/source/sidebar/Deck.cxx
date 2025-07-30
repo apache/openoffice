@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 #include "precompiled_sfx2.hxx"
@@ -95,7 +95,7 @@ Deck::~Deck (void)
 
     // We have to explicitly trigger the destruction of panels.
     // Otherwise that is done by one of our base class destructors
-    // without updating maPanels.  
+    // without updating maPanels.
     maPanels.clear();
 }
 
@@ -173,7 +173,7 @@ Rectangle Deck::GetContentArea (void) const
 void Deck::Paint (const Rectangle& rUpdateArea)
 {
     (void) rUpdateArea;
-    
+
     const Size aWindowSize (GetSizePixel());
     const SvBorder aPadding (
             Theme::GetInteger(Theme::Int_DeckLeftPadding),
@@ -238,7 +238,7 @@ long Deck::Notify (NotifyEvent& rEvent)
                     break;
             }
     }
-    
+
     return Window::Notify(rEvent);
 }
 
@@ -339,14 +339,14 @@ void Deck::ShowPanel (const Panel& rPanel)
             nNewThumbPos = nPanelBottom - mpVerticalScrollBar->GetVisibleSize();
         if (nPanelTop < nNewThumbPos)
             nNewThumbPos = nPanelTop;
-        
+
         mpVerticalScrollBar->SetThumbPos(nNewThumbPos);
         mpScrollContainer->SetPosPixel(
             Point(
                 mpScrollContainer->GetPosPixel().X(),
                 -nNewThumbPos));
 
-    }    
+    }
 }
 
 
@@ -401,7 +401,7 @@ void Deck::PrintWindowTree (void)
 void Deck::PrintWindowTree (const ::std::vector<Panel*>& rPanels)
 {
     (void)rPanels;
-    
+
     PrintWindowTree();
 }
 
@@ -445,7 +445,7 @@ Deck::ScrollContainerWindow::~ScrollContainerWindow (void)
 void Deck::ScrollContainerWindow::Paint (const Rectangle& rUpdateArea)
 {
     (void)rUpdateArea;
-    
+
     // Paint the separators.
     const sal_Int32 nSeparatorHeight (Theme::GetInteger(Theme::Int_DeckSeparatorHeight));
     const sal_Int32 nLeft  (0);

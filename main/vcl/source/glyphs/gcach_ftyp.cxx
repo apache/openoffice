@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -233,7 +233,7 @@ bool FtFontFile::Map()
         mpFileMap = (const unsigned char*)
             mmap( NULL, mnFileSize, PROT_READ, MAP_SHARED, nFile, 0 );
         if( mpFileMap == MAP_FAILED )
-            mpFileMap = NULL;		
+            mpFileMap = NULL;
         close( nFile );
 #elif defined(WNT)
         void* pFileDesc = ::CreateFile( pFileName, GENERIC_READ, FILE_SHARE_READ,
@@ -533,7 +533,7 @@ FreetypeManager::~FreetypeManager()
 		}
 		maFontList.clear();
 
-#if 0	// FT_Done_FreeType crashes on Solaris 10 
+#if 0	// FT_Done_FreeType crashes on Solaris 10
 	// TODO: check which versions have this problem
 	FT_Error rcFT = FT_Done_FreeType( aLibFT );
 #endif
@@ -1324,7 +1324,7 @@ void FreetypeServerFont::InitGlyphData( sal_GlyphId aGlyphId, GlyphData& rGD ) c
     int nLoadFlags = mnLoadFlags;
 
 //  if( mbArtItalic )
-//      nLoadFlags |= FT_LOAD_NO_BITMAP;    
+//      nLoadFlags |= FT_LOAD_NO_BITMAP;
 
     FT_Error rc = -1;
 #if (FTVERSION <= 2008)
@@ -1475,7 +1475,7 @@ bool FreetypeServerFont::GetGlyphBitmap1( sal_GlyphId aGlyphId, RawBitmap& rRawB
     //  becomes an expensive nop when a glyph covers no pixels.
     FT_BBox cbox;
     FT_Glyph_Get_CBox(pGlyphFT, ft_glyph_bbox_unscaled, &cbox);
-  
+
     if( (cbox.xMax - cbox.xMin) == 0 || (cbox.yMax - cbox.yMin == 0) )
     {
         nAngle = 0;
@@ -1483,7 +1483,7 @@ bool FreetypeServerFont::GetGlyphBitmap1( sal_GlyphId aGlyphId, RawBitmap& rRawB
         FT_Done_Glyph( pGlyphFT );
         return true;
     }
-    
+
     if( pGlyphFT->format != FT_GLYPH_FORMAT_BITMAP )
     {
         if( pGlyphFT->format == FT_GLYPH_FORMAT_OUTLINE )
@@ -1587,7 +1587,7 @@ bool FreetypeServerFont::GetGlyphBitmap8( sal_GlyphId aGlyphId, RawBitmap& rRawB
     FT_Int nLoadFlags = mnLoadFlags;
 
     if( mbArtItalic )
-        nLoadFlags |= FT_LOAD_NO_BITMAP;    
+        nLoadFlags |= FT_LOAD_NO_BITMAP;
 
 #if (FTVERSION <= 2004) && !defined(TT_CONFIG_OPTION_BYTECODE_INTERPRETER)
     // autohinting in FT<=2.0.4 makes antialiased glyphs look worse
@@ -1784,7 +1784,7 @@ bool FtFontInfo::GetFontCodeRanges( CmapResult& rResult ) const
 {
     rResult.mbSymbolic = IsSymbolFont();
 
-    // TODO: is the full CmapResult needed on platforms calling this? 
+    // TODO: is the full CmapResult needed on platforms calling this?
     if( FT_IS_SFNT( maFaceFT ) )
     {
         sal_uLong nLength = 0;
@@ -1803,7 +1803,7 @@ bool FtFontInfo::GetFontCodeRanges( CmapResult& rResult ) const
     for( sal_uInt32 cCode = FT_Get_First_Char( maFaceFT, &nGlyphIndex );; )
     {
         if( !nGlyphIndex )
-            break;	
+            break;
         aCodes.push_back( cCode );	// first code inside range
         sal_uInt32 cNext = cCode;
         do cNext = FT_Get_Next_Char( maFaceFT, cCode, &nGlyphIndex ); while( cNext == ++cCode );
@@ -2209,7 +2209,7 @@ void PolyArgs::ClosePolygon()
     const sal_uInt16 nPolySize(aPoly.GetSize());
     if(nPolySize)
     {
-        if((aPoly.HasFlags() && POLY_CONTROL == aPoly.GetFlags(nPolySize - 1)) 
+        if((aPoly.HasFlags() && POLY_CONTROL == aPoly.GetFlags(nPolySize - 1))
             || (aPoly.GetPoint(nPolySize - 1) != aPoly.GetPoint(0)))
         {
             aPoly.SetSize(nPolySize + 1);

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -523,21 +523,21 @@ void FileStat::ImpInit( void* p )
     FILETIME aLocTime;
 
     // use the last write date / time when the creation date / time isn't set
-    if ( ( pDirEnt->ftCreationTime.dwLowDateTime == 0 ) && 
+    if ( ( pDirEnt->ftCreationTime.dwLowDateTime == 0 ) &&
          ( pDirEnt->ftCreationTime.dwHighDateTime == 0 ) )
     {
         pDirEnt->ftCreationTime.dwLowDateTime = pDirEnt->ftLastWriteTime.dwLowDateTime;
         pDirEnt->ftCreationTime.dwHighDateTime = pDirEnt->ftLastWriteTime.dwHighDateTime;
     }
-    
+
     // use the last write date / time when the last accessed date / time isn't set
-    if ( ( pDirEnt->ftLastAccessTime.dwLowDateTime == 0 ) && 
+    if ( ( pDirEnt->ftLastAccessTime.dwLowDateTime == 0 ) &&
          ( pDirEnt->ftLastAccessTime.dwHighDateTime == 0 ) )
     {
         pDirEnt->ftLastAccessTime.dwLowDateTime = pDirEnt->ftLastWriteTime.dwLowDateTime;
         pDirEnt->ftLastAccessTime.dwHighDateTime = pDirEnt->ftLastWriteTime.dwHighDateTime;
     }
-    
+
     FileTimeToLocalFileTime( &pDirEnt->ftCreationTime, &aLocTime );
     FileTimeToSystemTime( &aLocTime, &aSysTime );
     aDateCreated  = Date( aSysTime.wDay, aSysTime.wMonth, aSysTime.wYear );

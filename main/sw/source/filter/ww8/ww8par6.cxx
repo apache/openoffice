@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -2745,15 +2745,15 @@ void SwWW8ImplReader::NewAttr( const SfxPoolItem& rAttr,
             pAktColl->SetFmtAttr(rAttr);
         }
         else if (pAktItemSet)
-        {        
+        {
             pAktItemSet->Put(rAttr);
         }
         else if (rAttr.Which() == RES_FLTR_REDLINE)
-        {        
+        {
             mpRedlineStack->open(*pPaM->GetPoint(), rAttr);
         }
         else
-        {        
+        {
             pCtrlStck->NewAttr(*pPaM->GetPoint(), rAttr);
             // --> OD 2010-05-06 #i103711#
             if ( bFirstLineOfStSet )
@@ -3041,7 +3041,7 @@ void SwWW8ImplReader::Read_Bidi(sal_uInt16, const sal_uInt8* pData, short nLen)
 	{
 		bBidi = sal_True;
 		sal_uInt8 nBidi = SVBT8ToByte( pData );
-		NewAttr( SfxInt16Item( RES_CHRATR_BIDIRTL, (nBidi!=0)? 1 : 0 ) );	
+		NewAttr( SfxInt16Item( RES_CHRATR_BIDIRTL, (nBidi!=0)? 1 : 0 ) );
 	}
 }
 
@@ -3501,7 +3501,7 @@ void SwWW8ImplReader::Read_UnderlineColor(sal_uInt16, const sal_uInt8* pData, sh
 {
 	if( nLen < 0 )
 	{
-		//because the UnderlineColor is not a standalone attribute in SW, it belongs to the underline attribute. 
+		//because the UnderlineColor is not a standalone attribute in SW, it belongs to the underline attribute.
 		//And, the .doc file stores attributes separately, this attribute ends here, the "underline"
 		//attribute also terminates (if the character next owns underline, that will be a new underline attribute).
 		//so nothing is left to be done here.
@@ -3514,7 +3514,7 @@ void SwWW8ImplReader::Read_UnderlineColor(sal_uInt16, const sal_uInt8* pData, sh
 			if( SFX_ITEM_SET == pAktColl->GetItemState( RES_CHRATR_UNDERLINE, sal_False ) )
 			{
 				const SwAttrSet& aSet = pAktColl->GetAttrSet();
-				SvxUnderlineItem *pUnderline 
+				SvxUnderlineItem *pUnderline
 					= (SvxUnderlineItem *)(aSet.Get( RES_CHRATR_UNDERLINE, sal_False ).Clone());
 				if(pUnderline){
 					pUnderline->SetColor( Color( wwUtility::BGRToRGB(SVBT32ToUInt32(pData)) ) );
@@ -3527,7 +3527,7 @@ void SwWW8ImplReader::Read_UnderlineColor(sal_uInt16, const sal_uInt8* pData, sh
 		{
 			if ( SFX_ITEM_SET == pAktItemSet->GetItemState( RES_CHRATR_UNDERLINE, sal_False ) )
 			{
-				SvxUnderlineItem *pUnderline 
+				SvxUnderlineItem *pUnderline
 					= (SvxUnderlineItem *)(pAktItemSet->Get( RES_CHRATR_UNDERLINE, sal_False ) .Clone());
 				if(pUnderline){
 					pUnderline->SetColor( Color( wwUtility::BGRToRGB(SVBT32ToUInt32(pData)) ) );
@@ -3645,7 +3645,7 @@ bool SwWW8ImplReader::GetFontParams( sal_uInt16 nFCode, FontFamily& reFamily,
 sal_uInt16 SwWW8ImplReader::CorrectResIdForCharset(CharSet nCharSet, sal_uInt16 nWhich)
 {
     sal_uInt16 nResult = 0;
-    
+
     switch (nCharSet) {
         case RTL_TEXTENCODING_MS_932:
             nResult = RES_CHRATR_CJK_FONT;
@@ -3655,7 +3655,7 @@ sal_uInt16 SwWW8ImplReader::CorrectResIdForCharset(CharSet nCharSet, sal_uInt16 
             nResult = nWhich;
             break;
     }
-    
+
     return nResult;
 }
 
@@ -3684,7 +3684,7 @@ bool SwWW8ImplReader::SetNewFontAttr(sal_uInt16 nFCode, bool bSetEnums,
                 {
                     eSrcCharSet = RTL_TEXTENCODING_DONTKNOW;
                 }
-                    
+
                 maFontSrcCJKCharSets.push(eSrcCharSet);
             }
             else
@@ -3697,7 +3697,7 @@ bool SwWW8ImplReader::SetNewFontAttr(sal_uInt16 nFCode, bool bSetEnums,
                 {
                     eSrcCharSet = RTL_TEXTENCODING_DONTKNOW;
                 }
-                    
+
                 maFontSrcCharSets.push(eSrcCharSet);
             }
         }
@@ -3707,7 +3707,7 @@ bool SwWW8ImplReader::SetNewFontAttr(sal_uInt16 nFCode, bool bSetEnums,
     CharSet eDstCharSet = eSrcCharSet;
 
     SvxFontItem aFont( eFamily, aName, aEmptyStr, ePitch, eDstCharSet, nWhich);
-    
+
     nWhich = CorrectResIdForCharset(eSrcCharSet, nWhich);
 
     if( bSetEnums )
@@ -3789,7 +3789,7 @@ void SwWW8ImplReader::Read_FontCode( sal_uInt16 nId, const sal_uInt8* pData, sho
             pCtrlStck->SetAttr( *pPaM->GetPoint(), nId );
             if (nId == RES_CHRATR_CJK_FONT)
                 ResetCJKCharSetVars();
-            else            
+            else
                 ResetCharSetVars();
         }
         else
@@ -3923,7 +3923,7 @@ void SwWW8ImplReader::Read_CColl( sal_uInt16, const sal_uInt8* pData, short nLen
         || pCollA[nId].bColl )              // oder Para-Style ?
         return;                             // dann ignorieren
 
-    // if current on loading a TOX field, and current trying to apply a hyperlink character style, 
+    // if current on loading a TOX field, and current trying to apply a hyperlink character style,
     // just ignore. For the hyperlinks inside TOX in MS Word is not same with a common hyperlink
     // Character styles: without underline and blue font color. And such type style will be applied in others
     // processes.
@@ -4121,7 +4121,7 @@ void SwWW8ImplReader::Read_LR( sal_uInt16 nId, const sal_uInt8* pData, short nLe
         case 0x845E:
             aLR.SetTxtLeft( nPara );
             if (pAktColl)
-            {        
+            {
                 pCollA[nAktColl].bListReleventIndentSet = true;
             }
             // --> OD 2010-05-11 #i105414#
@@ -4176,10 +4176,10 @@ void SwWW8ImplReader::Read_LR( sal_uInt16 nId, const sal_uInt8* pData, short nLe
 					}
 				}
 		}
-            
+
 
             if (pAktColl)
-            {        
+            {
                 pCollA[nAktColl].bListReleventIndentSet = true;
             }
             // --> OD 2010-05-06 #i103711#
@@ -4408,19 +4408,19 @@ void SwWW8ImplReader::Read_UL( sal_uInt16 nId, const sal_uInt8* pData, short nLe
 
 void SwWW8ImplReader::Read_IdctHint( sal_uInt16, const sal_uInt8* pData, short nLen )
 {
-    // sprmcidcthint (opcode 0x286f) specifies a script bias for the text in the run. 
-    // for unicode characters that are shared between far east and non-far east scripts, 
-    // this property determines what font and language the character will use. 
-    // when this value is 0, text properties bias towards non-far east properties. 
-    // when this value is 1, text properties bias towards far east properties. 
-	if( nLen < 0 )	//Property end 
+    // sprmcidcthint (opcode 0x286f) specifies a script bias for the text in the run.
+    // for unicode characters that are shared between far east and non-far east scripts,
+    // this property determines what font and language the character will use.
+    // when this value is 0, text properties bias towards non-far east properties.
+    // when this value is 1, text properties bias towards far east properties.
+	if( nLen < 0 )	//Property end
 	{
 		pCtrlStck->SetAttr(*pPaM->GetPoint(),RES_CHRATR_IDCTHINT);
 	}
 	else	//Property start
 	{
 		sal_uInt8 nVal = SVBT8ToByte( pData );
-		NewAttr( SfxInt16Item( RES_CHRATR_IDCTHINT, (nVal!=0)? 1 : 0 ) );	
+		NewAttr( SfxInt16Item( RES_CHRATR_IDCTHINT, (nVal!=0)? 1 : 0 ) );
 	}
 }
 

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -45,7 +45,7 @@ using namespace com::sun::star::container;
 using namespace com::sun::star::io;
 using namespace com::sun::star::util;
 //------------------------------------------------------------------------------
-OStatement_Base::OStatement_Base(OConnection* _pConnection ) 
+OStatement_Base::OStatement_Base(OConnection* _pConnection )
 	: OStatement_BASE(m_aMutex),
 	OPropertySetHelper(OStatement_BASE::rBHelper),
 	rBHelper(OStatement_BASE::rBHelper),
@@ -118,7 +118,7 @@ void SAL_CALL OStatement_Base::close(  ) throw(SQLException, RuntimeException)
 	{
 		::osl::MutexGuard aGuard( m_aMutex );
 		checkDisposed(OStatement_BASE::rBHelper.bDisposed);
-			
+
 	}
 	dispose();
 }
@@ -133,7 +133,7 @@ sal_Bool SAL_CALL OStatement_Base::execute( const ::rtl::OUString& sql ) throw(S
 {
 	::osl::MutexGuard aGuard( m_aMutex );
 	checkDisposed(OStatement_BASE::rBHelper.bDisposed);
-		
+
 	// returns true when a resultset is available
 	return sal_False;
 }
@@ -143,7 +143,7 @@ Reference< XResultSet > SAL_CALL OStatement_Base::executeQuery( const ::rtl::OUS
 {
 	::osl::MutexGuard aGuard( m_aMutex );
 	checkDisposed(OStatement_BASE::rBHelper.bDisposed);
-		
+
 
 	Reference< XResultSet > xRS = NULL;
 	// create a resultset as result of executing the sql statement
@@ -157,7 +157,7 @@ Reference< XConnection > SAL_CALL OStatement_Base::getConnection(  ) throw(SQLEx
 {
 	::osl::MutexGuard aGuard( m_aMutex );
 	checkDisposed(OStatement_BASE::rBHelper.bDisposed);
-		
+
 	// just return our connection here
 	return (Reference< XConnection >)m_pConnection;
 }
@@ -181,7 +181,7 @@ void SAL_CALL OStatement::addBatch( const ::rtl::OUString& sql ) throw(SQLExcept
 {
 	::osl::MutexGuard aGuard( m_aMutex );
 	checkDisposed(OStatement_BASE::rBHelper.bDisposed);
-		
+
 
 	m_aBatchList.push_back(sql);
 }
@@ -190,7 +190,7 @@ Sequence< sal_Int32 > SAL_CALL OStatement::executeBatch(  ) throw(SQLException, 
 {
 	::osl::MutexGuard aGuard( m_aMutex );
 	checkDisposed(OStatement_BASE::rBHelper.bDisposed);
-		
+
 	return Sequence< sal_Int32 >();
 }
 // -------------------------------------------------------------------------
@@ -200,8 +200,8 @@ sal_Int32 SAL_CALL OStatement_Base::executeUpdate( const ::rtl::OUString& sql ) 
 {
 	::osl::MutexGuard aGuard( m_aMutex );
 	checkDisposed(OStatement_BASE::rBHelper.bDisposed);
-		
-	// the return values gives information about how many rows are affected by executing the sql statement		
+
+	// the return values gives information about how many rows are affected by executing the sql statement
 	return 0;
 
 }
@@ -211,7 +211,7 @@ Reference< XResultSet > SAL_CALL OStatement_Base::getResultSet(  ) throw(SQLExce
 {
 	::osl::MutexGuard aGuard( m_aMutex );
 	checkDisposed(OStatement_BASE::rBHelper.bDisposed);
-		
+
 //	return our save resultset here
 	return m_xResultSet;
 }
@@ -222,7 +222,7 @@ sal_Bool SAL_CALL OStatement_Base::getMoreResults(  ) throw(SQLException, Runtim
 	::osl::MutexGuard aGuard( m_aMutex );
 	checkDisposed(OStatement_BASE::rBHelper.bDisposed);
 
-	// if your driver supports more than only one resultset 
+	// if your driver supports more than only one resultset
 	// and has one more at this moment return true
 	return sal_False;
 }
@@ -233,7 +233,7 @@ Any SAL_CALL OStatement_Base::getWarnings(  ) throw(SQLException, RuntimeExcepti
 {
 	::osl::MutexGuard aGuard( m_aMutex );
 	checkDisposed(OStatement_BASE::rBHelper.bDisposed);
-		
+
 
 	return makeAny(m_aLastWarning);
 }
@@ -244,7 +244,7 @@ void SAL_CALL OStatement_Base::clearWarnings(  ) throw(SQLException, RuntimeExce
 {
 	::osl::MutexGuard aGuard( m_aMutex );
 	checkDisposed(OStatement_BASE::rBHelper.bDisposed);
-		
+
 
 	m_aLastWarning = SQLWarning();
 }
@@ -284,7 +284,7 @@ sal_Bool OStatement_Base::convertFastPropertyValue(
 								throw (::com::sun::star::lang::IllegalArgumentException)
 {
 	sal_Bool bConverted = sal_False;
-	// here we have to try to convert 
+	// here we have to try to convert
 	return bConverted;
 }
 // -------------------------------------------------------------------------

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -144,7 +144,7 @@ void SdrTableRtfExporter::WriteRow( const Reference< XPropertySet >& xRowSet, sa
 
 	mrStrm << OOO_STRING_SVTOOLS_RTF_TROWD << OOO_STRING_SVTOOLS_RTF_TRGAPH << "30" << OOO_STRING_SVTOOLS_RTF_TRLEFT << "-30";
 	mrStrm << OOO_STRING_SVTOOLS_RTF_TRRH << ByteString::CreateFromInt32( nRowHeight ).GetBuffer();
-	
+
 	const sal_Int32 nColCount = mxTable->getColumnCount();
 	for( sal_Int32 nCol = 0; nCol < nColCount; nCol++ )
 	{
@@ -159,7 +159,7 @@ void SdrTableRtfExporter::WriteRow( const Reference< XPropertySet >& xRowSet, sa
 		const sal_Int32 nColSpan = xCell->getColumnSpan();
 
 		const sal_Char* pChar;
-		
+
 		if( !bIsMerged && ((nRowSpan > 1) || (nColSpan > 1)) )
 			mrStrm << OOO_STRING_SVTOOLS_RTF_CLMGF; // The first cell in a range of table cells to be merged.
 
@@ -212,7 +212,7 @@ void SdrTableRtfExporter::WriteCell( sal_Int32 nCol, sal_Int32 nRow )
 
 	if( pParaObj == 0 )
 		pParaObj = xCell->GetOutlinerParaObject();
-	
+
 	if(pParaObj)
 	{
 		// handle outliner attributes

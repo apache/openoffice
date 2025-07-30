@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -188,8 +188,8 @@ void ScGridWindow::DoPushButton( SCCOL nCol, SCROW nRow, const MouseEvent& rMEvt
 			pDragDPObj = pDPObj;
 
             if (DPTestFieldPopupArrow(rMEvt, aPos, pDPObj))
-            {    
-                // field name pop up menu has been launched.  Don't activate 
+            {
+                // field name pop up menu has been launched.  Don't activate
                 // field move.
                 bDPMouse = false;
                 return;
@@ -222,7 +222,7 @@ void ScGridWindow::DoPushButton( SCCOL nCol, SCROW nRow, const MouseEvent& rMEvt
 			ScAbstractDialogFactory* pFact = ScAbstractDialogFactory::Create();
 			DBG_ASSERT(pFact, "ScAbstractFactory create fail!");//CHINA001
 
-			AbstractScPivotFilterDlg* pDlg = pFact->CreateScPivotFilterDlg( pViewData->GetViewShell()->GetDialogParent(), 
+			AbstractScPivotFilterDlg* pDlg = pFact->CreateScPivotFilterDlg( pViewData->GetViewShell()->GetDialogParent(),
 																			aArgSet, nSrcTab,
 																			RID_SCDLG_PIVOTFILTER);
 			DBG_ASSERT(pDlg, "Dialog create fail!");//CHINA001
@@ -408,7 +408,7 @@ struct DPFieldPopupData : public ScDPFieldPopupWindow::ExtendedData
 class DPFieldPopupOKAction : public ScMenuFloatingWindow::Action
 {
 public:
-    explicit DPFieldPopupOKAction(ScGridWindow* p) : 
+    explicit DPFieldPopupOKAction(ScGridWindow* p) :
         mpGridWindow(p) {}
 
     virtual void execute()
@@ -463,7 +463,7 @@ bool lcl_GetLabelIndex( size_t& rLabelIndex, long nDimension, const ScDPLabelDat
             rLabelIndex = i;
             return true;
         }
-    return false;    
+    return false;
 }
 
 void ScGridWindow::DPLaunchFieldPopupMenu(
@@ -516,7 +516,7 @@ void ScGridWindow::DPLaunchFieldPopupMenu(
     // Populate the menus.
     ScTabViewShell* pViewShell = pViewData->GetViewShell();
     mpDPFieldPopup->addMenuItem(
-        ScRscStrLoader(RID_POPUP_FILTER, STR_MENU_SORT_ASC).GetString(), true, 
+        ScRscStrLoader(RID_POPUP_FILTER, STR_MENU_SORT_ASC).GetString(), true,
         new PopupSortAction(rPos, PopupSortAction::ASCENDING, 0, pViewShell));
     mpDPFieldPopup->addMenuItem(
         ScRscStrLoader(RID_POPUP_FILTER, STR_MENU_SORT_DESC).GetString(), true,
@@ -528,9 +528,9 @@ void ScGridWindow::DPLaunchFieldPopupMenu(
     {
         size_t n = aUserSortNames.size();
         for (size_t i = 0; i < n; ++i)
-        {    
+        {
             pSubMenu->addMenuItem(
-                aUserSortNames[i], true, 
+                aUserSortNames[i], true,
                 new PopupSortAction(rPos, PopupSortAction::CUSTOM, static_cast<sal_uInt16>(i), pViewShell));
         }
     }
@@ -546,7 +546,7 @@ void ScGridWindow::DPLaunchFieldPopupMenu(
     }
     else if (rScrSize.getWidth() > rPopupSize.getWidth())
     {
-        // If the cell width is larger than the popup window width, launch it 
+        // If the cell width is larger than the popup window width, launch it
         // right-aligned with the cell.
         long nXOffset = rScrSize.getWidth() - rPopupSize.getWidth();
         aCellRect.SetPos(Point(rScrPos.X() + nXOffset, rScrPos.Y()));

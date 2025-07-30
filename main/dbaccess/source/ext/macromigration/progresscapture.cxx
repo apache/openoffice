@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -95,7 +95,7 @@ namespace dbmm
         if ( !m_pData->bDisposed )
             m_pData->rMasterProgress.startObject( m_pData->sObjectName, _rText, _nRange );
     }
-    
+
     //--------------------------------------------------------------------
     void SAL_CALL ProgressCapture::end(  ) throw (RuntimeException)
     {
@@ -103,7 +103,7 @@ namespace dbmm
         if ( !m_pData->bDisposed )
             m_pData->rMasterProgress.endObject();
     }
-    
+
     //--------------------------------------------------------------------
     void SAL_CALL ProgressCapture::setText( const ::rtl::OUString& _rText ) throw (RuntimeException)
     {
@@ -111,7 +111,7 @@ namespace dbmm
         if ( !m_pData->bDisposed )
             m_pData->rMasterProgress.setObjectProgressText( _rText );
     }
-    
+
     //--------------------------------------------------------------------
     void SAL_CALL ProgressCapture::setValue( ::sal_Int32 _nValue ) throw (RuntimeException)
     {
@@ -119,7 +119,7 @@ namespace dbmm
         if ( !m_pData->bDisposed )
             m_pData->rMasterProgress.setObjectProgressValue( _nValue );
     }
-    
+
     //--------------------------------------------------------------------
     void SAL_CALL ProgressCapture::reset(  ) throw (RuntimeException)
     {

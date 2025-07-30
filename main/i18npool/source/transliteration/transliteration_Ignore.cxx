@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -99,7 +99,7 @@ transliteration_Ignore::transliterate( const OUString& inStr, sal_Int32 startPos
 }
 
 Sequence< OUString > SAL_CALL
-transliteration_Ignore::transliterateRange( const OUString& str1, const OUString& str2, 
+transliteration_Ignore::transliterateRange( const OUString& str1, const OUString& str2,
         XTransliteration& t1, XTransliteration& t2 ) throw(RuntimeException)
 {
         if (str1.getLength() < 1 || str2.getLength() < 1)
@@ -126,14 +126,14 @@ transliteration_Ignore::transliterateRange( const OUString& str1, const OUString
         return r;
 }
 
-OUString SAL_CALL 
-transliteration_Ignore::folding( const OUString& inStr, sal_Int32 startPos, 
-    sal_Int32 nCount, Sequence< sal_Int32 >& offset) 
+OUString SAL_CALL
+transliteration_Ignore::folding( const OUString& inStr, sal_Int32 startPos,
+    sal_Int32 nCount, Sequence< sal_Int32 >& offset)
     throw(RuntimeException)
 {
     // Create a string buffer which can hold nCount + 1 characters.
     // The reference count is 0 now.
-    rtl_uString * newStr = x_rtl_uString_new_WithLength( nCount ); // defined in x_rtl_ustring.h  
+    rtl_uString * newStr = x_rtl_uString_new_WithLength( nCount ); // defined in x_rtl_ustring.h
     sal_Unicode * dst = newStr->buffer;
     const sal_Unicode * src = inStr.getStr() + startPos;
 
@@ -207,7 +207,7 @@ transliteration_Ignore::folding( const OUString& inStr, sal_Int32 startPos,
     return OUString( newStr, SAL_NO_ACQUIRE ); // take over ownership of <newStr>
 }
 
-sal_Unicode SAL_CALL 
+sal_Unicode SAL_CALL
 transliteration_Ignore::transliterateChar2Char( sal_Unicode inChar) throw(RuntimeException, MultipleCharsOutputException)
 {
     return func ? func( inChar) : table ? (*table)[ inChar ] : inChar;

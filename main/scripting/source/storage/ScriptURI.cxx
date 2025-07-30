@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -46,26 +46,26 @@ static const OUString schema = OUString::createFromAscii( "vnd.sun.star.script:/
 
 /**
  *  Constructor
- *  
+ *
  *  @param scriptURI the string script URI
  */
-ScriptURI::ScriptURI( const ::rtl::OUString& scriptURI ) 
+ScriptURI::ScriptURI( const ::rtl::OUString& scriptURI )
     throw ( IllegalArgumentException ) : m_uri( scriptURI )
 {
     OSL_TRACE( "received uri: %s\n",::rtl::OUStringToOString( m_uri, RTL_TEXTENCODING_ASCII_US).pData->buffer );
     set_values( parseIt() );
-    if( !isValid() ) 
+    if( !isValid() )
     {
         OSL_TRACE( "ScriptURI ctor: throwing IllegalArgException" );
-        throw IllegalArgumentException( 
-            OUSTR( "Failed to parse invalid URI: " ).concat( scriptURI ), 
+        throw IllegalArgumentException(
+            OUSTR( "Failed to parse invalid URI: " ).concat( scriptURI ),
             Reference < XInterface > (), 1 );
     }
 }
 
 /**
  *  Destuctor
- *  
+ *
  */
 // dtor should never throw exceptions, so ensure this by specifying it
 ScriptURI::~ScriptURI() SAL_THROW( () )
@@ -75,7 +75,7 @@ ScriptURI::~ScriptURI() SAL_THROW( () )
 
 /**
  *  This function is used to determine if this object represents a valid URI
- *  
+ *
  */
 bool ScriptURI::isValid(  ) {
     return ( m_valid == sal_True );
@@ -83,45 +83,45 @@ bool ScriptURI::isValid(  ) {
 
 /**
  *  This function returns the location of the script
- *  
+ *
  */
-::rtl::OUString ScriptURI::getLocation(  ) 
+::rtl::OUString ScriptURI::getLocation(  )
 {
     return m_location;
 }
 
 /**
  *  This function returns the language of the script, eg. java, StarBasic,...
- *  
+ *
  */
-::rtl::OUString ScriptURI::getLanguage(  ) 
+::rtl::OUString ScriptURI::getLanguage(  )
 {
     return m_language;
 }
 
 /**
  *  This function returns the language dependent function name of the script
- *  
+ *
  */
-::rtl::OUString ScriptURI::getFunctionName(  ) 
+::rtl::OUString ScriptURI::getFunctionName(  )
 {
     return m_functionName;
 }
 
 /**
  *  This function returns the language independent logical name of the script
- *  
+ *
  */
-::rtl::OUString ScriptURI::getLogicalName(  ) 
+::rtl::OUString ScriptURI::getLogicalName(  )
 {
     return m_logicalName;
 }
 
 /**
  *  This function returns the full URI
- *  
+ *
  */
-::rtl::OUString ScriptURI::getURI(  ) 
+::rtl::OUString ScriptURI::getURI(  )
 {
     return m_uri;
 }
@@ -138,7 +138,7 @@ void ScriptURI::set_values( scripting_impl::Uri values )
 // will be retired also and a new UNO service will be used. Additionally the
 // parcel-description will also need to be modified to remove logical name
 // In order to temporarly support the existing code functionname is
-// set to the logica name parsed by this class. So getLogicalName() and 
+// set to the logica name parsed by this class. So getLogicalName() and
 // getFunctionName() return identical string.
 //
 
@@ -147,9 +147,9 @@ void ScriptURI::set_values( scripting_impl::Uri values )
 
 }
 /**
- *  This is a private method used for parsing the URI received by the 
+ *  This is a private method used for parsing the URI received by the
  * initialization.
- *  
+ *
  */
 // rather naive parsing?
 Uri ScriptURI::parseIt()
@@ -158,7 +158,7 @@ Uri ScriptURI::parseIt()
     scripting_impl::Uri results;
     results.valid = sal_True;
     //attempt to parse
-    // check that it starts vnd.sun.star.script 
+    // check that it starts vnd.sun.star.script
     // better check for OBO errors here
     if( m_uri.indexOf( schema ) != 0 )
     {
@@ -188,7 +188,7 @@ Uri ScriptURI::parseIt()
         OSL_TRACE( "chunk: %s\n", ::rtl::OUStringToOString( attr,
             RTL_TEXTENCODING_ASCII_US ).pData->buffer );
 
-        if( attr.matchAsciiL( RTL_CONSTASCII_STRINGPARAM( "language" ) ) 
+        if( attr.matchAsciiL( RTL_CONSTASCII_STRINGPARAM( "language" ) )
             == sal_True )
         {
             sal_Int32 len2 = attr.indexOf('=');
@@ -220,4 +220,4 @@ Uri ScriptURI::parseIt()
     return results;
 }
 
-} // namespace script_uri 
+} // namespace script_uri

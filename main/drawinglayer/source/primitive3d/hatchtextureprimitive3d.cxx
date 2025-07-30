@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -84,7 +84,7 @@ namespace drawinglayer
                                         // add original primitive for background
                                         aDestination.push_back(xReference);
                                     }
-                                    
+
                                     if(aFillPolyPolygon.areTextureCoordinatesUsed())
                                     {
                                         const sal_uInt32 nPolyCount(aFillPolyPolygon.count());
@@ -120,7 +120,7 @@ namespace drawinglayer
                                                 else if(!b2Y && !a2N.equal(a2Candidate) && !a2X.equal(a2Candidate))
                                                 {
                                                     a2Y = a2Candidate - a2N;
-                                                    
+
                                                     const double fCross(a2X.cross(a2Y));
 
                                                     if(!basegfx::fTools::equalZero(fCross))
@@ -153,9 +153,9 @@ namespace drawinglayer
                                                 {
                                                     // rotated 45 degrees
                                                     texture::GeoTexSvxHatch aHatch(
-                                                        aOutlineRange, 
-                                                        aOutlineRange, 
-                                                        getHatch().getDistance(), 
+                                                        aOutlineRange,
+                                                        aOutlineRange,
+                                                        getHatch().getDistance(),
                                                         fAngle - F_PI4);
 
                                                     aHatch.appendTransformations(aMatrices);
@@ -164,9 +164,9 @@ namespace drawinglayer
                                                 {
                                                     // rotated 90 degrees
                                                     texture::GeoTexSvxHatch aHatch(
-                                                        aOutlineRange, 
-                                                        aOutlineRange, 
-                                                        getHatch().getDistance(), 
+                                                        aOutlineRange,
+                                                        aOutlineRange,
+                                                        getHatch().getDistance(),
                                                         fAngle - F_PI2);
 
                                                     aHatch.appendTransformations(aMatrices);
@@ -175,9 +175,9 @@ namespace drawinglayer
                                                 {
                                                     // angle as given
                                                     texture::GeoTexSvxHatch aHatch(
-                                                        aOutlineRange, 
-                                                        aOutlineRange, 
-                                                        getHatch().getDistance(), 
+                                                        aOutlineRange,
+                                                        aOutlineRange,
+                                                        getHatch().getDistance(),
                                                         fAngle);
 
                                                     aHatch.appendTransformations(aMatrices);
@@ -284,10 +284,10 @@ namespace drawinglayer
         }
 
         HatchTexturePrimitive3D::HatchTexturePrimitive3D(
-            const attribute::FillHatchAttribute& rHatch, 
-            const Primitive3DSequence& rChildren, 
-            const basegfx::B2DVector& rTextureSize, 
-            bool bModulate, 
+            const attribute::FillHatchAttribute& rHatch,
+            const Primitive3DSequence& rChildren,
+            const basegfx::B2DVector& rTextureSize,
+            bool bModulate,
             bool bFilter)
         :	TexturePrimitive3D(rChildren, rTextureSize, bModulate, bFilter),
             maHatch(rHatch),
@@ -300,7 +300,7 @@ namespace drawinglayer
             if(TexturePrimitive3D::operator==(rPrimitive))
             {
                 const HatchTexturePrimitive3D& rCompare = (HatchTexturePrimitive3D&)rPrimitive;
-                
+
                 return (getHatch() == rCompare.getHatch());
             }
 

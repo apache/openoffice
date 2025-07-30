@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -327,7 +327,7 @@ rtl::OUString ObjectNameProvider::getAxisName( const rtl::OUString& rObjectCID
 {
     rtl::OUString aRet;
 
-    
+
 
     Reference< XAxis > xAxis(
         ObjectIdentifier::getObjectPropertySet( rObjectCID , xChartModel ), uno::UNO_QUERY );
@@ -336,7 +336,7 @@ rtl::OUString ObjectNameProvider::getAxisName( const rtl::OUString& rObjectCID
     sal_Int32 nDimensionIndex = 0;
     sal_Int32 nAxisIndex = 0;
     AxisHelper::getIndicesForAxis( xAxis, ChartModelHelper::findDiagram( xChartModel ), nCooSysIndex, nDimensionIndex, nAxisIndex );
-    
+
     switch(nDimensionIndex)
     {
         case 0://x-axis
@@ -358,7 +358,7 @@ rtl::OUString ObjectNameProvider::getAxisName( const rtl::OUString& rObjectCID
             aRet=String(SchResId(STR_OBJECT_AXIS));
             break;
     }
-    
+
     return aRet;
 }
 
@@ -393,7 +393,7 @@ OUString ObjectNameProvider::getTitleNameByType( TitleHelper::eTitleType eType )
             DBG_ERROR("unknown title type");
             break;
     }
-     
+
     if( aRet.isEmpty() )
         aRet=String(SchResId(STR_OBJECT_TITLE));
 
@@ -423,7 +423,7 @@ rtl::OUString ObjectNameProvider::getGridName( const rtl::OUString& rObjectCID
                         , const uno::Reference< frame::XModel >& xChartModel )
 {
     rtl::OUString aRet;
-    
+
 
     sal_Int32 nCooSysIndex = -1;
     sal_Int32 nDimensionIndex = -1;
@@ -544,7 +544,7 @@ rtl::OUString ObjectNameProvider::getHelpText( const rtl::OUString& rObjectCID, 
                         break;
                     }
                 }
-                
+
                 OUString aReplacement( OUString::valueOf(nSeriesIndex+1) );
                 aRet = aRet.replaceAt( nIndex, aWildcard.getLength(), aReplacement );
             }

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -64,30 +64,30 @@ OOXMLFastDocumentHandler::OOXMLFastDocumentHandler(
 
 // ::com::sun::star::xml::sax::XFastContextHandler:
 void SAL_CALL OOXMLFastDocumentHandler::startFastElement
-(::sal_Int32 /*Element*/, const uno::Reference< xml::sax::XFastAttributeList > & /*Attribs*/) 
+(::sal_Int32 /*Element*/, const uno::Reference< xml::sax::XFastAttributeList > & /*Attribs*/)
     throw (uno::RuntimeException, xml::sax::SAXException)
 {
 }
 
 void SAL_CALL OOXMLFastDocumentHandler::startUnknownElement
-(const ::rtl::OUString & /*Namespace*/, const ::rtl::OUString & /*Name*/, 
- const uno::Reference< xml::sax::XFastAttributeList > & /*Attribs*/) 
+(const ::rtl::OUString & /*Namespace*/, const ::rtl::OUString & /*Name*/,
+ const uno::Reference< xml::sax::XFastAttributeList > & /*Attribs*/)
 throw (uno::RuntimeException, xml::sax::SAXException)
 {
 }
 
-void SAL_CALL OOXMLFastDocumentHandler::endFastElement(::sal_Int32 /*Element*/) 
+void SAL_CALL OOXMLFastDocumentHandler::endFastElement(::sal_Int32 /*Element*/)
 throw (uno::RuntimeException, xml::sax::SAXException)
 {
 }
 
 void SAL_CALL OOXMLFastDocumentHandler::endUnknownElement
-(const ::rtl::OUString & /*Namespace*/, const ::rtl::OUString &  /*Name*/) 
+(const ::rtl::OUString & /*Namespace*/, const ::rtl::OUString &  /*Name*/)
 throw (uno::RuntimeException, xml::sax::SAXException)
 {
 }
 
-OOXMLFastContextHandler::Pointer_t 
+OOXMLFastContextHandler::Pointer_t
 OOXMLFastDocumentHandler::getContextHandler() const
 {
     if (mpContextHandler == OOXMLFastContextHandler::Pointer_t())
@@ -101,11 +101,11 @@ OOXMLFastDocumentHandler::getContextHandler() const
 
     return mpContextHandler;
 }
-    
+
 uno::Reference< xml::sax::XFastContextHandler > SAL_CALL
  OOXMLFastDocumentHandler::createFastChildContext
-(::sal_Int32 Element, 
- const uno::Reference< xml::sax::XFastAttributeList > & /*Attribs*/) 
+(::sal_Int32 Element,
+ const uno::Reference< xml::sax::XFastAttributeList > & /*Attribs*/)
     throw (uno::RuntimeException, xml::sax::SAXException)
 {
 
@@ -118,36 +118,36 @@ uno::Reference< xml::sax::XFastContextHandler > SAL_CALL
 
     return OOXMLFactory::getInstance()->createFastChildContextFromStart(getContextHandler().get(), Element);
 }
-    
-uno::Reference< xml::sax::XFastContextHandler > SAL_CALL 
+
+uno::Reference< xml::sax::XFastContextHandler > SAL_CALL
 OOXMLFastDocumentHandler::createUnknownChildContext
-(const ::rtl::OUString & /*Namespace*/, 
- const ::rtl::OUString & /*Name*/, 
- const uno::Reference< xml::sax::XFastAttributeList > & /*Attribs*/) 
+(const ::rtl::OUString & /*Namespace*/,
+ const ::rtl::OUString & /*Name*/,
+ const uno::Reference< xml::sax::XFastAttributeList > & /*Attribs*/)
     throw (uno::RuntimeException, xml::sax::SAXException)
 {
     return uno::Reference< xml::sax::XFastContextHandler >
         ( new OOXMLFastDocumentHandler( m_xContext, 0, 0 ) );
 }
 
-void SAL_CALL OOXMLFastDocumentHandler::characters(const ::rtl::OUString & /*aChars*/) 
+void SAL_CALL OOXMLFastDocumentHandler::characters(const ::rtl::OUString & /*aChars*/)
     throw (uno::RuntimeException, xml::sax::SAXException)
 {
 }
 
 // ::com::sun::star::xml::sax::XFastDocumentHandler:
-void SAL_CALL OOXMLFastDocumentHandler::startDocument() 
+void SAL_CALL OOXMLFastDocumentHandler::startDocument()
     throw (uno::RuntimeException, xml::sax::SAXException)
 {
 }
 
-void SAL_CALL OOXMLFastDocumentHandler::endDocument() 
+void SAL_CALL OOXMLFastDocumentHandler::endDocument()
     throw (uno::RuntimeException, xml::sax::SAXException)
 {
 }
 
 void SAL_CALL OOXMLFastDocumentHandler::setDocumentLocator
-(const uno::Reference< xml::sax::XLocator > & /*xLocator*/) 
+(const uno::Reference< xml::sax::XLocator > & /*xLocator*/)
     throw (uno::RuntimeException, xml::sax::SAXException)
 {
 }

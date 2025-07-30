@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -61,7 +61,7 @@ using namespace	::com::sun::star::container;
 
 namespace accessibility
 {
-	
+
 struct hash
 {
 	std::size_t operator()( const Reference< XCell >& xCell ) const
@@ -138,7 +138,7 @@ void AccessibleTableShapeImpl::dispose()
 {
 	if( mxTable.is() )
 	{
-		//IAccessibility2 Implementation 2009-----, remove all the cell's acc object in table's dispose. 
+		//IAccessibility2 Implementation 2009-----, remove all the cell's acc object in table's dispose.
 		for( AccessibleCellMap::iterator iter( maChildMap.begin() ); iter != maChildMap.end(); iter++ )
 		{
 			(*iter).second->dispose();
@@ -161,7 +161,7 @@ Reference< AccessibleCell > AccessibleTableShapeImpl::getAccessibleCell (Referen
 		Reference< AccessibleCell > xChild( (*iter).second.get() );
 		return xChild;
 	}
-	return Reference< AccessibleCell >(); 
+	return Reference< AccessibleCell >();
 }
 
 //-----------------------------------------------------------------------------
@@ -181,7 +181,7 @@ Reference< XAccessible > AccessibleTableShapeImpl::getAccessibleChild( sal_Int32
 	else
 	{
 		CellRef xCellRef( dynamic_cast< Cell* >( xCell.get() ) );
-		
+
 		rtl::Reference< AccessibleCell > xAccessibleCell( new AccessibleCell( mxAccessible, xCellRef, nChildIndex, mrShapeTreeInfo ) );
 
 		xAccessibleCell->Init();
@@ -259,7 +259,7 @@ void SAL_CALL AccessibleTableShapeImpl::modified( const EventObject& /*aEvent*/ 
 					{
 						xAccessibleCell->SetAccessibleName(xAccessibleCell->getAccessibleName(), AccessibleContextBase::ManuallySet);
 					}
-					// For merged cell, add invisible & disabled state. 
+					// For merged cell, add invisible & disabled state.
 					Reference< XMergeableCell > xMergedCell( mxTable->getCellByPosition( nCol, nRow ),  UNO_QUERY );
 					if (xMergedCell.is() && xMergedCell->isMerged())
 					{
@@ -286,7 +286,7 @@ void SAL_CALL AccessibleTableShapeImpl::modified( const EventObject& /*aEvent*/ 
 				else
 				{
 					CellRef xCellRef( dynamic_cast< Cell* >( xCell.get() ) );
-		
+
 					rtl::Reference< AccessibleCell > xAccessibleCell( new AccessibleCell( mxAccessible, xCellRef, nChildIndex, mrShapeTreeInfo ) );
 
 					xAccessibleCell->Init();
@@ -299,12 +299,12 @@ void SAL_CALL AccessibleTableShapeImpl::modified( const EventObject& /*aEvent*/ 
 
 		// all accessible cell instances still left in aTempChildMap must be disposed
 		// as they are no longer part of the table
-		
+
 		for( AccessibleCellMap::iterator iter( aTempChildMap.begin() ); iter != aTempChildMap.end(); iter++ )
 		{
 			(*iter).second->dispose();
 		}
-		//IAccessibility2 Implementation 2009-----, notify bridge to update the acc cache. 
+		//IAccessibility2 Implementation 2009-----, notify bridge to update the acc cache.
 		AccessibleTableShape *pAccTable = dynamic_cast <AccessibleTableShape *> (mxAccessible.get());
 		pAccTable->CommitChange(AccessibleEventId::INVALIDATE_ALL_CHILDREN, Any(), Any());
 	}
@@ -343,7 +343,7 @@ AccessibleTableShape::~AccessibleTableShape (void)
 void AccessibleTableShape::Init()
 {
 	try
-	{		
+	{
 		Reference< XPropertySet > xSet( mxShape, UNO_QUERY_THROW );
 		Reference< XTable > xTable( xSet->getPropertyValue(C2U("Model")), UNO_QUERY_THROW );
 
@@ -577,13 +577,13 @@ Sequence< sal_Int32 > SAL_CALL AccessibleTableShape::getSelectedAccessibleRows( 
 			aSelected[i] = isAccessibleRowSelected( i );
 		}
 		catch( ... )
-		{			
+		{
 			return Sequence< sal_Int32 >();
 		}
 
-		if( !aSelected[i] ) 
+		if( !aSelected[i] )
 			nCount--;
-	}	
+	}
 	Sequence < sal_Int32 > aRet( nCount );
 	sal_Int32 *pRet = aRet.getArray();
 	sal_Int32 nPos = 0;
@@ -615,13 +615,13 @@ Sequence< sal_Int32 > SAL_CALL AccessibleTableShape::getSelectedAccessibleColumn
 			aSelected[i] = isAccessibleColumnSelected( i );
 		}
 		catch( ... )
-		{			
+		{
 			return Sequence< sal_Int32 >();
 		}
 
-		if( !aSelected[i] ) 
+		if( !aSelected[i] )
 			nCount--;
-	}	
+	}
 	Sequence < sal_Int32 > aRet( nCount );
 	sal_Int32 *pRet = aRet.getArray();
 	sal_Int32 nPos = 0;
@@ -682,7 +682,7 @@ Reference< XAccessible > SAL_CALL AccessibleTableShape::getAccessibleCellAt( sal
 
 //--------------------------------------------------------------------
 
-Reference< XAccessible > SAL_CALL AccessibleTableShape::getAccessibleCaption(  ) throw (RuntimeException) 
+Reference< XAccessible > SAL_CALL AccessibleTableShape::getAccessibleCaption(  ) throw (RuntimeException)
 {
 	Reference< XAccessible > xRet;
 	return xRet;
@@ -886,7 +886,7 @@ void SAL_CALL AccessibleTableShape::deselectAccessibleChild( sal_Int32 nChildInd
 	{
 		CellPos aFirstPos, aLastPos;
 		pController->getSelectedCells( aFirstPos, aLastPos );
-	
+
 		// create a selection where aPos is not part of anymore
 		aFirstPos.mnRow = std::min( aFirstPos.mnRow, aPos.mnRow+1 );
 		aFirstPos.mnCol = std::min( aFirstPos.mnCol, aPos.mnCol+1 );
@@ -903,8 +903,8 @@ void SAL_CALL AccessibleTableShape::deselectAccessibleChild( sal_Int32 nChildInd
 //--------------------------------------------------------------------
 
 //=====  XAccessibleTableSelection  ============================================
-sal_Bool SAL_CALL AccessibleTableShape::selectRow( sal_Int32 row ) 
-throw (IndexOutOfBoundsException, RuntimeException) 
+sal_Bool SAL_CALL AccessibleTableShape::selectRow( sal_Int32 row )
+throw (IndexOutOfBoundsException, RuntimeException)
 {
 	::vos::OGuard aSolarGuard (::Application::GetSolarMutex());
 	SvxTableController* pController = getTableController();
@@ -912,7 +912,7 @@ throw (IndexOutOfBoundsException, RuntimeException)
 		return sal_False;
 	return pController->selectRow( row );
 }
-sal_Bool SAL_CALL AccessibleTableShape::selectColumn( sal_Int32 column ) 
+sal_Bool SAL_CALL AccessibleTableShape::selectColumn( sal_Int32 column )
 throw (IndexOutOfBoundsException, RuntimeException)
 {
 	::vos::OGuard aSolarGuard (::Application::GetSolarMutex());
@@ -921,7 +921,7 @@ throw (IndexOutOfBoundsException, RuntimeException)
 		return sal_False;
 	return pController->selectColumn( column );
 }
-sal_Bool SAL_CALL AccessibleTableShape::unselectRow( sal_Int32 row ) 
+sal_Bool SAL_CALL AccessibleTableShape::unselectRow( sal_Int32 row )
 throw (IndexOutOfBoundsException, RuntimeException)
 {
 	::vos::OGuard aSolarGuard (::Application::GetSolarMutex());
@@ -930,7 +930,7 @@ throw (IndexOutOfBoundsException, RuntimeException)
 		return sal_False;
 	return pController->deselectRow( row );
 }
-sal_Bool SAL_CALL AccessibleTableShape::unselectColumn( sal_Int32 column ) 
+sal_Bool SAL_CALL AccessibleTableShape::unselectColumn( sal_Int32 column )
 throw (IndexOutOfBoundsException, RuntimeException)
 {
 	::vos::OGuard aSolarGuard (::Application::GetSolarMutex());
@@ -941,7 +941,7 @@ throw (IndexOutOfBoundsException, RuntimeException)
 }
 sal_Int32 AccessibleTableShape::GetIndexOfSelectedChild(
 				sal_Int32 nSelectedChildIndex ) const
-{    
+{
     sal_Int32 nChildren = const_cast<AccessibleTableShape*>(this)->getAccessibleChildCount();
 
 	if( nSelectedChildIndex >= nChildren )
@@ -984,7 +984,7 @@ void  SAL_CALL AccessibleTableShape::selectionChanged (const EventObject& rEvent
 		Reference< AccessibleCell > xAccCell = mxImpl->getAccessibleCell( xCell );
 		if (xAccCell.is())
 		{
-			sal_Int32 nIndex = xAccCell->getAccessibleIndexInParent(), 
+			sal_Int32 nIndex = xAccCell->getAccessibleIndexInParent(),
 				nCount = getSelectedAccessibleChildCount();
 			sal_Bool bSelected = isAccessibleChildSelected(nIndex);
 			if (mnPreviousSelectionCount == 0 && nCount > 0 && bSelected)
@@ -1250,13 +1250,13 @@ Sequence< sal_Int32 > SAL_CALL AccessibleTableHeaderShape::getSelectedAccessible
 			aSelected[i] = isAccessibleRowSelected( i );
 		}
 		catch( ... )
-		{			
+		{
 			return Sequence< sal_Int32 >();
 		}
 
-		if( !aSelected[i] ) 
+		if( !aSelected[i] )
 			nCount--;
-	}	
+	}
 	Sequence < sal_Int32 > aRet( nCount );
 	sal_Int32 *pRet = aRet.getArray();
 	sal_Int32 nPos = 0;
@@ -1285,13 +1285,13 @@ Sequence< sal_Int32 > SAL_CALL AccessibleTableHeaderShape::getSelectedAccessible
 			aSelected[i] = isAccessibleColumnSelected( i );
 		}
 		catch( ... )
-		{			
+		{
 			return Sequence< sal_Int32 >();
 		}
 
-		if( !aSelected[i] ) 
+		if( !aSelected[i] )
 			nCount--;
-	}	
+	}
 	Sequence < sal_Int32 > aRet( nCount );
 	sal_Int32 *pRet = aRet.getArray();
 	sal_Int32 nPos = 0;
@@ -1323,7 +1323,7 @@ Reference< XAccessible > SAL_CALL AccessibleTableHeaderShape::getAccessibleCellA
 	return mpTable->getAccessibleCellAt( nRow, nColumn );
 }
 
-Reference< XAccessible > SAL_CALL AccessibleTableHeaderShape::getAccessibleCaption(  ) throw (RuntimeException) 
+Reference< XAccessible > SAL_CALL AccessibleTableHeaderShape::getAccessibleCaption(  ) throw (RuntimeException)
 {
 	return mpTable->getAccessibleCaption();
 }
@@ -1354,8 +1354,8 @@ sal_Int32 SAL_CALL AccessibleTableHeaderShape::getAccessibleColumn( sal_Int32 nC
 }
 
 //=====  XAccessibleTableSelection  ============================================
-sal_Bool SAL_CALL AccessibleTableHeaderShape::selectRow( sal_Int32 row ) 
-throw (IndexOutOfBoundsException, RuntimeException) 
+sal_Bool SAL_CALL AccessibleTableHeaderShape::selectRow( sal_Int32 row )
+throw (IndexOutOfBoundsException, RuntimeException)
 {
 	if( mbRow )
 		return mpTable->selectRow( row );
@@ -1368,7 +1368,7 @@ throw (IndexOutOfBoundsException, RuntimeException)
 	}
 }
 
-sal_Bool SAL_CALL AccessibleTableHeaderShape::selectColumn( sal_Int32 column ) 
+sal_Bool SAL_CALL AccessibleTableHeaderShape::selectColumn( sal_Int32 column )
 throw (IndexOutOfBoundsException, RuntimeException)
 {
 	if( !mbRow )
@@ -1382,7 +1382,7 @@ throw (IndexOutOfBoundsException, RuntimeException)
 	}
 }
 
-sal_Bool SAL_CALL AccessibleTableHeaderShape::unselectRow( sal_Int32 row ) 
+sal_Bool SAL_CALL AccessibleTableHeaderShape::unselectRow( sal_Int32 row )
 throw (IndexOutOfBoundsException, RuntimeException)
 {
 	if( mbRow )
@@ -1395,7 +1395,7 @@ throw (IndexOutOfBoundsException, RuntimeException)
 	}
 }
 
-sal_Bool SAL_CALL AccessibleTableHeaderShape::unselectColumn( sal_Int32 column ) 
+sal_Bool SAL_CALL AccessibleTableHeaderShape::unselectColumn( sal_Int32 column )
 throw (IndexOutOfBoundsException, RuntimeException)
 {
 	if( !mbRow )

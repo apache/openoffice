@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -31,7 +31,7 @@
 #include "TableRow.hxx"
 #include "TypeInfo.hxx"
 #include "UITools.hxx"
-#include "browserids.hxx"		   
+#include "browserids.hxx"
 #include "dbu_reghelper.hxx"
 #include "dbu_tbl.hrc"
 #include "dbustrings.hrc"
@@ -122,7 +122,7 @@ namespace
 	//------------------------------------------------------------------------------
 	struct OTableRowCompare : public ::std::binary_function<  ::boost::shared_ptr<OTableRow> , ::rtl::OUString, bool>
 	{
-		bool operator() (const  ::boost::shared_ptr<OTableRow>  lhs, const ::rtl::OUString& rhs) const 
+		bool operator() (const  ::boost::shared_ptr<OTableRow>  lhs, const ::rtl::OUString& rhs) const
 		{
 			OFieldDescription* pField = lhs->GetActFieldDescr();
 			return pField && pField->GetName() == rhs;
@@ -240,7 +240,7 @@ FeatureState OTableController::GetState(sal_uInt16 _nId) const
 				aReturn.bEnabled = aIter != m_vRowList.end();
 			}
 			break;
-		
+
 		case ID_BROWSER_CUT:
 			aReturn.bEnabled = isEditable() && m_aCurrentFrame.isActive() && getView() && static_cast<OTableDesignView*>(getView())->isCutAllowed();
 			break;
@@ -409,10 +409,10 @@ sal_Bool OTableController::doSaveDoc(sal_Bool _bSaveAs)
 
 			assignTable();
 			if(!m_xTable.is()) // correct name and try again
-			{	
+			{
 				// it can be that someone inserted new data for us
 				m_sName = ::dbtools::composeTableName( getConnection()->getMetaData(), xTable, ::dbtools::eInDataManipulation, false, false, false );
-				assignTable();									
+				assignTable();
 			}
 			// now check if our datasource has set a tablefilter and if append the new table name to it
 			::dbaui::appendToFilter(getConnection(),m_sName,getORB(),getView()); // we are not interessted in the return value
@@ -431,17 +431,17 @@ sal_Bool OTableController::doSaveDoc(sal_Bool _bSaveAs)
 		}
 		reSyncRows();
 	}
-	catch(const SQLContext& e) 
-	{ 
-		aInfo = SQLExceptionInfo(e); 
+	catch(const SQLContext& e)
+	{
+		aInfo = SQLExceptionInfo(e);
 	}
 	catch(const SQLWarning& e)
-	{ 
-		aInfo = SQLExceptionInfo(e); 
+	{
+		aInfo = SQLExceptionInfo(e);
 	}
 	catch(const SQLException& e)
-	{ 
-		aInfo = SQLExceptionInfo(e); 
+	{
+		aInfo = SQLExceptionInfo(e);
 	}
 	catch(const ElementExistException& )
 	{
@@ -550,7 +550,7 @@ void OTableController::impl_initialize()
     {
         DBG_UNHANDLED_EXCEPTION();
     }
-	
+
 	try
 	{
 		::dbaui::fillTypeInfo(getConnection(),m_sTypeNames,m_aTypeInfo,m_aTypeInfoIndex);				// fill the needed type information
@@ -716,8 +716,8 @@ void OTableController::losingConnection( )
 	InvalidateAll();
 }
 // -----------------------------------------------------------------------------
-TOTypeInfoSP OTableController::getTypeInfoByType(sal_Int32 _nDataType) const 
-{ 
+TOTypeInfoSP OTableController::getTypeInfoByType(sal_Int32 _nDataType) const
+{
 	return queryTypeInfoByType(_nDataType,m_aTypeInfo);
 }
 // -----------------------------------------------------------------------------
@@ -744,7 +744,7 @@ void OTableController::appendColumns(Reference<XColumnsSupplier>& _rxColSup,sal_
 			OFieldDescription* pField = (*aIter)->GetActFieldDescr();
 			if ( !pField || (!_bNew && (*aIter)->IsReadOnly() && !_bKeyColumns) )
 				continue;
-			
+
 			Reference<XPropertySet> xColumn;
 			if(pField->IsPrimaryKey() || !_bKeyColumns)
 				xColumn = xColumnFactory->createDataDescriptor();
@@ -768,7 +768,7 @@ void OTableController::appendColumns(Reference<XColumnsSupplier>& _rxColSup,sal_
 				{
 					OSL_ENSURE(sal_False, "OTableController::appendColumns: invalid field name!");
 				}
-				
+
 			}
 		}
 	}
@@ -878,7 +878,7 @@ void OTableController::loadData()
 
 			if(xColumn->getPropertySetInfo()->hasPropertyByName(PROPERTY_HELPTEXT))
 				xColumn->getPropertyValue(PROPERTY_HELPTEXT)	>>= sHelpText;
-            
+
 			if(xColumn->getPropertySetInfo()->hasPropertyByName(PROPERTY_CONTROLDEFAULT))
 				aControlDefault = xColumn->getPropertyValue(PROPERTY_CONTROLDEFAULT);
 			if(xColumn->getPropertySetInfo()->hasPropertyByName(PROPERTY_FORMATKEY))
@@ -941,7 +941,7 @@ void OTableController::loadData()
 			}
 		}
 	}
-	
+
 	//////////////////////////////////////////////////////////////////////
 	// Leere Zeilen fuellen
 
@@ -1071,14 +1071,14 @@ void OTableController::alterColumns()
 			aColumns[pField->GetName()] = sal_True;
 			continue;
 		}
-		
+
 		Reference<XPropertySet> xColumn;
 		if ( xColumns->hasByName(pField->GetName()) )
 		{
 			aColumns[pField->GetName()] = sal_True;
 			xColumns->getByName(pField->GetName()) >>= xColumn;
 			OSL_ENSURE(xColumn.is(),"Column is null!");
-			
+
 			sal_Int32 nType=0,nPrecision=0,nScale=0,nNullable=0;
 			sal_Bool bAutoIncrement = false;
 			::rtl::OUString sTypeName,sDescription;
@@ -1102,13 +1102,13 @@ void OTableController::alterColumns()
 
 			//	xColumn->getPropertyValue(PROPERTY_ISCURRENCY,::cppu::bool2any(pField->IsCurrency()));
 			// check if something changed
-			if((nType != pField->GetType()					|| 
+			if((nType != pField->GetType()					||
                 sTypeName != pField->GetTypeName()         ||
-                (nPrecision != pField->GetPrecision() && nPrecision )		|| 
-				nScale != pField->GetScale()				|| 
+                (nPrecision != pField->GetPrecision() && nPrecision )		||
+				nScale != pField->GetScale()				||
 				nNullable != pField->GetIsNullable()		||
                 sDescription != pField->GetDescription()		||
-				bAutoIncrement != pField->IsAutoIncrement())&& 
+				bAutoIncrement != pField->IsAutoIncrement())&&
 				xColumnFactory.is())
 			{
 				Reference<XPropertySet> xNewColumn;
@@ -1157,8 +1157,8 @@ void OTableController::alterColumns()
 					xColumns->getByName(pField->GetName()) >>= xColumn;
 				bReload = sal_True;
 			}
-			
-			
+
+
 		}
 		else if(xColumnFactory.is() && xAlter.is() && nPos < nColumnCount)
 		{ // we can't find the column so we could try it with the index before we drop and append a new column
@@ -1207,7 +1207,7 @@ void OTableController::alterColumns()
 	} // for(sal_Int32 nPos = 0;aIter != aEnd;++aIter,++nPos)
     // alter column settings
     aIter = m_vRowList.begin();
-	
+
 	// first look for columns where something other than the name changed
 	for(nPos = 0;aIter != aEnd;++aIter,++nPos)
 	{
@@ -1220,7 +1220,7 @@ void OTableController::alterColumns()
 			aColumns[pField->GetName()] = sal_True;
 			continue;
 		}
-		
+
 		Reference<XPropertySet> xColumn;
 		if ( xColumns->hasByName(pField->GetName()) )
 		{
@@ -1228,7 +1228,7 @@ void OTableController::alterColumns()
             Reference<XPropertySetInfo> xInfo = xColumn->getPropertySetInfo();
             if ( xInfo->hasPropertyByName(PROPERTY_HELPTEXT) )
 				xColumn->setPropertyValue(PROPERTY_HELPTEXT,makeAny(pField->GetHelpText()));
-            
+
 			if(xInfo->hasPropertyByName(PROPERTY_CONTROLDEFAULT))
 				xColumn->setPropertyValue(PROPERTY_CONTROLDEFAULT,pField->GetControlDefault());
 			if(xInfo->hasPropertyByName(PROPERTY_FORMATKEY))
@@ -1319,7 +1319,7 @@ void OTableController::alterColumns()
 		}
 	}
 
-	
+
 	// check if we have to do something with the primary key
 	sal_Bool bNeedDropKey = sal_False;
 	sal_Bool bNeedAppendKey = sal_False;
@@ -1332,7 +1332,7 @@ void OTableController::alterColumns()
 			OFieldDescription* pField = (*aIter)->GetActFieldDescr();
 			if ( !pField )
 				continue;
-			
+
 			if	(	pField->IsPrimaryKey()
 				&&	!xKeyColumns->hasByName( pField->GetName() )
 				)
@@ -1396,17 +1396,17 @@ void OTableController::dropPrimaryKey()
 		    }
 	    }
     }
-    catch(const SQLContext& e) 
-	{ 
-		aInfo = SQLExceptionInfo(e); 
+    catch(const SQLContext& e)
+	{
+		aInfo = SQLExceptionInfo(e);
 	}
 	catch(const SQLWarning& e)
-	{ 
-		aInfo = SQLExceptionInfo(e); 
+	{
+		aInfo = SQLExceptionInfo(e);
 	}
 	catch(const SQLException& e)
-	{ 
-		aInfo = SQLExceptionInfo(e); 
+	{
+		aInfo = SQLExceptionInfo(e);
 	}
     catch( const Exception& )
     {
@@ -1416,7 +1416,7 @@ void OTableController::dropPrimaryKey()
 	showError(aInfo);
 }
 // -----------------------------------------------------------------------------
-void OTableController::assignTable() 
+void OTableController::assignTable()
 {
 	::rtl::OUString sComposedName;
 	// get the table
@@ -1430,7 +1430,7 @@ void OTableController::assignTable()
 			OSL_ENSURE(xNameAccess.is(),"no nameaccess for the queries!");
 
 			Reference<XPropertySet> xProp;
-			if(xNameAccess->hasByName(m_sName) && ::cppu::extractInterface(xProp,xNameAccess->getByName(m_sName)) && xProp.is()) 
+			if(xNameAccess->hasByName(m_sName) && ::cppu::extractInterface(xProp,xNameAccess->getByName(m_sName)) && xProp.is())
 			{
 				m_xTable = xProp;
 				startTableListening();
@@ -1447,7 +1447,7 @@ void OTableController::assignTable()
 				// be notified when the table is in disposing
 				InvalidateAll();
 			}
-		}		
+		}
 	}
 	//updateTitle();
 }
@@ -1509,7 +1509,7 @@ void OTableController::reSyncRows()
 			(*aIter)->SetReadOnly(!bAlterAllowed);
 		else
 			(*aIter)->SetReadOnly(!bAddAllowed);
-			
+
 	}
 	static_cast<OTableDesignView*>(getView())->reSync();	// show the windows and fill with our informations
 
@@ -1542,7 +1542,7 @@ void OTableController::reSyncRows()
 {
     ::rtl::OUString sTitle;
 	try
-	{	
+	{
 		// get the table
 		if ( m_sName.getLength() && getConnection().is() )
 		{
@@ -1593,7 +1593,7 @@ sal_Int32 OTableController::getFirstEmptyRowPosition()
 	    ::boost::shared_ptr<OTableRow> pTabEdRow(new OTableRow());
 	    pTabEdRow->SetReadOnly(bReadRow);
         nRet = m_vRowList.size();
-	    m_vRowList.push_back( pTabEdRow);        
+	    m_vRowList.push_back( pTabEdRow);
     }
 	return nRet;
 }

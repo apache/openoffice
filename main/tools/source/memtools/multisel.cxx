@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -876,7 +876,7 @@ StringRangeEnumerator::StringRangeEnumerator( const rtl::OUString& i_rInput,
     : mnCount( 0 )
     , mnMin( i_nMinNumber )
     , mnMax( i_nMaxNumber )
-    , mnOffset( i_nLogicalOffset )                   
+    , mnOffset( i_nLogicalOffset )
 {
     setRange( i_rInput );
 }
@@ -947,7 +947,7 @@ bool StringRangeEnumerator::insertRange( sal_Int32 i_nFirst, sal_Int32 i_nLast, 
                 bSuccess = false;
         }
     }
-    
+
     return bSuccess;
 }
 
@@ -965,7 +965,7 @@ bool StringRangeEnumerator::setRange( const rtl::OUString& i_rNewRange, bool i_b
         }
         return true;
     }
-    
+
     const sal_Unicode* pInput = i_rNewRange.getStr();
     rtl::OUStringBuffer aNumberBuf( 16 );
     sal_Int32 nLastNumber = -1, nNumber = -1;
@@ -1014,11 +1014,11 @@ bool StringRangeEnumerator::setRange( const rtl::OUString& i_rNewRange, bool i_b
             bInsertRange = true;
         else if( *pInput )
         {
-            
+
             bSuccess = false;
             break; // parse error
         }
-        
+
         if( bInsertRange )
         {
             if( ! insertRange( nLastNumber, nNumber, bSequence, ! i_bStrict ) && i_bStrict )
@@ -1034,7 +1034,7 @@ bool StringRangeEnumerator::setRange( const rtl::OUString& i_rNewRange, bool i_b
     }
     // insert last entries
     insertRange( nLastNumber, nNumber, bSequence, ! i_bStrict );
-    
+
     return bSuccess;
 }
 

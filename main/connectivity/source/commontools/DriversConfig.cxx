@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -27,7 +27,7 @@ using namespace connectivity;
 using namespace utl;
 using namespace ::com::sun::star;
 
-namespace 
+namespace
 {
     void lcl_convert(const uno::Sequence< ::rtl::OUString >& _aSource,uno::Any& _rDest)
     {
@@ -96,7 +96,7 @@ namespace
     }
 }
 // -----------------------------------------------------------------------------
-DriversConfigImpl::DriversConfigImpl() 
+DriversConfigImpl::DriversConfigImpl()
 {
 }
 // -----------------------------------------------------------------------------
@@ -169,7 +169,7 @@ DriversConfig& DriversConfig::operator=( const DriversConfig& _rhs )
             sOldPattern = aIter->first;
         }
     }
-    
+
     return sRet;
 }
 // -----------------------------------------------------------------------------
@@ -189,7 +189,7 @@ DriversConfig& DriversConfig::operator=( const DriversConfig& _rhs )
             sOldPattern = aIter->first;
         }
     }
-    
+
     return sRet;
 }
 // -----------------------------------------------------------------------------
@@ -210,7 +210,7 @@ const ::comphelper::NamedValueCollection& DriversConfig::getMetaData(const ::rtl
 // -----------------------------------------------------------------------------
 const ::comphelper::NamedValueCollection& DriversConfig::impl_get(const ::rtl::OUString& _sURL,sal_Int32 _nProps) const
 {
-    const TInstalledDrivers& rDrivers = m_aNode->getInstalledDrivers(m_xORB);    
+    const TInstalledDrivers& rDrivers = m_aNode->getInstalledDrivers(m_xORB);
     const ::comphelper::NamedValueCollection* pRet = NULL;
     ::rtl::OUString sOldPattern;
     TInstalledDrivers::const_iterator aIter = rDrivers.begin();

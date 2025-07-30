@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -48,10 +48,10 @@
 #include "tpusrlst.hxx"
 #undef _TPUSRLST_CXX
 
-//CHINA001 #include "scui_def.hxx" //CHINA001 
+//CHINA001 #include "scui_def.hxx" //CHINA001
 //CHINA001 #include "scresid.hxx" //add by CHINA001
 //CHINA001 #include "miscdlgs.hrc"  //add by CHINA001
-//CHINA001 
+//CHINA001
 //CHINA001 #include "scabstdlg.hxx" //CHINA001
 // STATIC DATA -----------------------------------------------------------
 
@@ -437,15 +437,15 @@ void ScTpUserLists::CopyListFromArea( const ScRefAddress& rStartPos,
 	sal_Bool	bValueIgnored	= sal_False;
 
 	if ( (nStartCol != nEndCol) && (nStartRow != nEndRow) )
-	{	
+	{
 		nCellDir = ScColOrRowDlg( this, aStrCopyList, aStrCopyFrom ).Execute();
 //CHINA001		ScAbstractDialogFactory* pFact = ScAbstractDialogFactory::Create();
 //CHINA001		DBG_ASSERT(pFact, "ScAbstractFactory create fail!");//CHINA001
-//CHINA001 
+//CHINA001
 //CHINA001		VclAbstractDialog* pDlg = pFact->CreateScColOrRowDlg( this, aStrCopyList, aStrCopyFrom,ResId(RID_SCDLG_COLORROW) );
 //CHINA001		DBG_ASSERT(pDlg, "Dialog create fail!");//CHINA001
 //CHINA001		nCellDir = pDlg->Execute();
-//CHINA001		delete pDlg; //CHINA001 
+//CHINA001		delete pDlg; //CHINA001
 	}
 	else if ( nStartCol != nEndCol )
 		nCellDir = SCRET_ROWS;
@@ -515,7 +515,7 @@ void ScTpUserLists::CopyListFromArea( const ScRefAddress& rStartPos,
 	//----------------------------------------------------------
 
 	bCopyDone = sal_True;
-	
+
 }
 
 // -----------------------------------------------------------------------

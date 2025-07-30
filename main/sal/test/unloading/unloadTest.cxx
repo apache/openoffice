@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -105,7 +105,7 @@ int main(int argc, char* argv[])
 //  	   "Is the executable in the office program directory?\n");
 //      return -1;
 //    }
-  
+
 //    Reference<XInterface> xint1=	serviceManager->createInstance( OUString(
 //  				RTL_CONSTASCII_USTRINGPARAM(SERVICENAME1)));
 
@@ -145,8 +145,8 @@ int main(int argc, char* argv[])
 //  	  osl_unloadModule( m1);
 //  	  osl_unloadModule( m2);
 //  	  osl_unloadModule( m2);
-	  
-  
+
+
   sal_Bool ret1= test1();
   if( ret1) printf( "\n Test 1 successful \n");
 	else printf("\n !!!!!! Test 1 failed\n");
@@ -178,8 +178,8 @@ int main(int argc, char* argv[])
 /* Create an instance of SERVICENAME1, call a function and unload module.
    This tests the loader and basic functionality.
    The library will be loaded once manually and the handle will be stored.
-   Then the library will be unloaded. After rtl_unloadUnusedLibraries we try to 
-   get a symbol of the unloaded lib. If this fails then the test is successful. 
+   Then the library will be unloaded. After rtl_unloadUnusedLibraries we try to
+   get a symbol of the unloaded lib. If this fails then the test is successful.
 */
 sal_Bool test1()
 {
@@ -192,7 +192,7 @@ sal_Bool test1()
 	Reference<XInterface> xint=	serviceManager->createInstance( OUString(
 				RTL_CONSTASCII_USTRINGPARAM(SERVICENAME1)));
 
-	// get the handle 
+	// get the handle
 	handleMod=	osl_loadModule( lib1Name.pData, 0);
 	osl_unloadModule( handleMod);
 	xint=0;
@@ -209,7 +209,7 @@ sal_Bool test1()
 	// Try to get a symbol, must fail
 	OUString sSymbol( RTL_CONSTASCII_USTRINGPARAM("component_getFactory"));
 	void* pSymbol= osl_getSymbol(  handleMod, sSymbol.pData);
-	
+
 	if( !pSymbol)
 		return sal_True;
 	return sal_False;
@@ -253,7 +253,7 @@ sal_Bool test2()
 	// Try to get a symbol, must fail
 	OUString sSymbol( RTL_CONSTASCII_USTRINGPARAM("component_getFactory"));
 	void* pSymbol= osl_getSymbol(  handleMod, sSymbol.pData);
-	
+
 	if( !pSymbol)
 		return sal_True;
 	return sal_False;
@@ -297,7 +297,7 @@ sal_Bool test3()
 	// Try to get a symbol, must succeed
 	OUString sSymbol( RTL_CONSTASCII_USTRINGPARAM("component_getFactory"));
 	void* pSymbol= osl_getSymbol(  handleMod, sSymbol.pData);
-	
+
 	if( pSymbol)
 	{
 		retval= sal_True;
@@ -345,7 +345,7 @@ sal_Bool test4()
 	// Try to get a symbol, must fail
 	OUString sSymbol( RTL_CONSTASCII_USTRINGPARAM("component_getFactory"));
 	void* pSymbol= osl_getSymbol(  handleMod1, sSymbol.pData);
-	
+
 	void* pSymbol2= osl_getSymbol(  handleMod2, sSymbol.pData);
 	if( ! pSymbol && !pSymbol2)
 		return sal_True;
@@ -363,7 +363,7 @@ sal_Bool test5()
 	sal_Bool btest1= sal_False;
 	OUString lib1Name( RTL_CONSTASCII_USTRINGPARAM(LIBRARY1));
 	OUString lib2Name( RTL_CONSTASCII_USTRINGPARAM(LIBRARY2));
-	OUString sSymbol( RTL_CONSTASCII_USTRINGPARAM("component_getFactory"));	
+	OUString sSymbol( RTL_CONSTASCII_USTRINGPARAM("component_getFactory"));
 	{
 	Reference<XMultiServiceFactory> serviceManager= createRegistryServiceFactory(
  		OUString( RTL_CONSTASCII_USTRINGPARAM("applicat.rdb")));
@@ -399,7 +399,7 @@ sal_Bool test5()
 	// try unloading, must fail
 	rtl_unloadUnusedModules( NULL);
 	void* pSymbol= osl_getSymbol(  handleMod1, sSymbol.pData);
-	
+
 	void* pSymbol2= osl_getSymbol(  handleMod2, sSymbol.pData);
 	if(  pSymbol && pSymbol2)
 		btest1= sal_True;
@@ -416,7 +416,7 @@ sal_Bool test5()
 	return sal_False;
 }
 
-/* 
+/*
 TimeValue Test
 rtl_unloadUnusedModules takes a TimeValue which determines a timespan
 a module must have been constantly unused in order to be unloaded.
@@ -432,7 +432,7 @@ sal_Bool test6()
 	oslModule handleMod2=0;
 	OUString lib1Name( RTL_CONSTASCII_USTRINGPARAM(LIBRARY1));
 	OUString lib2Name( RTL_CONSTASCII_USTRINGPARAM(LIBRARY2));
-	OUString sSymbol( RTL_CONSTASCII_USTRINGPARAM("component_getFactory"));	
+	OUString sSymbol( RTL_CONSTASCII_USTRINGPARAM("component_getFactory"));
 	{
 	Reference<XMultiServiceFactory> serviceManager= createRegistryServiceFactory(
  		OUString( RTL_CONSTASCII_USTRINGPARAM("applicat.rdb")));
@@ -461,7 +461,7 @@ sal_Bool test6()
 	osl_getSystemTime( &beforeTime);
 	for(;;)
 	{
-		
+
 		rtl_unloadUnusedModules( &time);
 		void* pSymbol= osl_getSymbol(  handleMod1, sSymbol.pData);
 		if( ! pSymbol)
@@ -477,7 +477,7 @@ sal_Bool test6()
 	return sal_True;
 }
 
-/* 
+/*
 */
 sal_Bool test7()
 {
@@ -489,7 +489,7 @@ sal_Bool test7()
 	sal_Int32 cookie1= rtl_addUnloadingListener( listenerCallback, &id1);
 	sal_Int32 cookie2= rtl_addUnloadingListener( listenerCallback, &id2);
 	sal_Int32 cookie3= rtl_addUnloadingListener( listenerCallback, &id3);
-	
+
 	printf("\nTest 7 \nThe listener should be called 3 times\n");
 	rtl_unloadUnusedModules( NULL);
 
@@ -500,7 +500,7 @@ sal_Bool test7()
 	sal_Int32 cookie4= rtl_addUnloadingListener( listenerCallback, &id1);
 	sal_Int32 cookie5= rtl_addUnloadingListener( listenerCallback, &id2);
 	sal_Int32 cookie6= rtl_addUnloadingListener( listenerCallback, &id3);
-	
+
 	if( cookie1 == cookie4 &&
 		cookie2 == cookie5 )
 	{
@@ -529,7 +529,7 @@ sal_Bool test8()
 	printf("Test 8 ####################################################\n");
 	oslModule handleMod1=0;
 	OUString lib1Name( RTL_CONSTASCII_USTRINGPARAM(LIBRARY1));
-	OUString sSymbol( RTL_CONSTASCII_USTRINGPARAM("component_getFactory"));	
+	OUString sSymbol( RTL_CONSTASCII_USTRINGPARAM("component_getFactory"));
 
 	sal_Bool b_ifaceSupported=sal_False;
 	sal_Bool b_instances_identical= sal_False;
@@ -543,7 +543,7 @@ sal_Bool test8()
 	Reference<XContentEnumerationAccess> xContent( serviceManager, UNO_QUERY);
 	Reference<XEnumeration> xenum=	xContent->createContentEnumeration(
 		OUString( RTL_CONSTASCII_USTRINGPARAM( SERVICENAME4)));
-	
+
 	Any any_elem;
 	if( xenum->hasMoreElements())
 		any_elem= xenum->nextElement();
@@ -561,7 +561,7 @@ sal_Bool test8()
 			b_ifaceSupported= sal_True;
 	}
 
-	// XUnloadingPreference::releaseOnNotification should return true now because we haven't 
+	// XUnloadingPreference::releaseOnNotification should return true now because we haven't
 	// created an instance yet
 	Reference<XUnloadingPreference> xreject( xinterfaceFact, UNO_QUERY);
 	b_releaseBeforeLoading= xreject->releaseOnNotification();
@@ -571,7 +571,7 @@ sal_Bool test8()
 				RTL_CONSTASCII_USTRINGPARAM(SERVICENAME4)));
 	b_releaseAfterLoading= xreject->releaseOnNotification();
 	b_releaseAfterLoading= b_releaseAfterLoading? sal_False : sal_True;
-	
+
 	// safe the handle of the module
 	handleMod1=	osl_loadModule( lib1Name.pData, 0);
 	osl_unloadModule( handleMod1);
@@ -603,7 +603,7 @@ sal_Bool test8()
 	if( ! pSymbol )
 		b_unloaded= sal_True;
 
-	if( b_ifaceSupported && b_instances_identical && b_releaseBeforeLoading && 
+	if( b_ifaceSupported && b_instances_identical && b_releaseBeforeLoading &&
 		b_releaseAfterLoading && b_unloaded)
 		return sal_True;
 	return sal_False;
@@ -623,7 +623,7 @@ sal_Bool test9()
 	oslModule handleMod=0;
 	sal_Bool retval=sal_False;
 	OUString lib1Name( RTL_CONSTASCII_USTRINGPARAM(LIBRARY1));
-	
+
 	Reference<XMultiServiceFactory> serviceManager= createRegistryServiceFactory(
  		OUString( RTL_CONSTASCII_USTRINGPARAM("applicat.rdb")));
 
@@ -641,7 +641,7 @@ sal_Bool test9()
 	// Try to get a symbol, must fail
 	OUString sSymbol( RTL_CONSTASCII_USTRINGPARAM("component_getFactory"));
 	void* pSymbol= osl_getSymbol(  handleMod, sSymbol.pData);
-	
+
 	if( pSymbol)
 	{
 		retval= sal_False;

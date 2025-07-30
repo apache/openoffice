@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -647,12 +647,12 @@ static void SetBaseAnlv(
 
     static SvxAdjust eAdjA[4] =
     { SVX_ADJUST_LEFT, SVX_ADJUST_RIGHT, SVX_ADJUST_LEFT, SVX_ADJUST_LEFT };
-    
+
     if (SVBT8ToByte( rAV.nfc ) < 8) {
         rNum.SetNumberingType(static_cast< sal_Int16 >(eNumA[SVBT8ToByte( rAV.nfc ) ]));
     } else {
         sal_Int16 nType = style::NumberingType::ARABIC; // Fallback to ARABIC instead of NONE
-        switch(SVBT8ToByte( rAV.nfc )) 
+        switch(SVBT8ToByte( rAV.nfc ))
         {
         case 14:
         case 19:nType = style::NumberingType::FULLWIDTH_ARABIC ;	break;
@@ -661,11 +661,11 @@ static void SetBaseAnlv(
         case 35:
         case 36:
         case 37:
-        case 39: 		
+        case 39:
             nType = style::NumberingType::NUMBER_LOWER_ZH ;	break;
         case 34:nType = style::NumberingType::NUMBER_UPPER_ZH_TW ;	break;
         case 38:nType = style::NumberingType::NUMBER_UPPER_ZH ;	break;
-        case 10: 		
+        case 10:
         case 11:
             nType = style::NumberingType::NUMBER_TRADITIONAL_JA ;	break;
         case 20: 	nType = style::NumberingType::AIU_FULLWIDTH_JA ;	break;
@@ -679,7 +679,7 @@ static void SetBaseAnlv(
         default:    nType = style::NumberingType::ARABIC; break;
         }
 
-    	rNum.SetNumberingType( nType ) ; 
+    	rNum.SetNumberingType( nType ) ;
     }
 
     if ((SVBT8ToByte(rAV.aBits1 ) & 0x4) >> 2)
@@ -894,7 +894,7 @@ void SwWW8ImplReader::Read_ANLevelNo( sal_uInt16, const sal_uInt8* pData, short 
 void SwWW8ImplReader::Read_ANLevelDesc( sal_uInt16, const sal_uInt8* pData, short nLen ) // Sprm 12
 {
     {
-        SwWW8StyInf * pStyInf = GetStyle(nAktColl);    
+        SwWW8StyInf * pStyInf = GetStyle(nAktColl);
         if( !pAktColl || nLen <= 0                  // nur bei Styledef
             || (pStyInf && !pStyInf->bColl)              // CharFmt -> ignorieren
             || ( nIniFlags & WW8FL_NO_OUTLINE ) ){
@@ -2431,7 +2431,7 @@ void WW8TabDesc::CalcDefaults()
         }
     } */
 
-    if ((nMinLeft && !bIsBiDi && text::HoriOrientation::LEFT == eOri) || 
+    if ((nMinLeft && !bIsBiDi && text::HoriOrientation::LEFT == eOri) ||
         (nMinLeft != -108 && bIsBiDi && text::HoriOrientation::RIGHT == eOri)) // Word sets the first nCenter value to -108 when no indent is used
         eOri = text::HoriOrientation::LEFT_AND_WIDTH; //  absolutely positioned
 
@@ -2604,7 +2604,7 @@ void WW8TabDesc::CreateSwTable()
                 nLeft = GetMinLeft();
             else
             {
-                if (nPreferredWidth)                   
+                if (nPreferredWidth)
                 {
                     nLeft = pIo->maSectionManager.GetTextAreaWidth();
                     nLeft = nLeft - nPreferredWidth  - nOrgDxaLeft;
@@ -3634,25 +3634,25 @@ bool SwWW8ImplReader::StartTable(WW8_CP nStartCp)
 
 bool lcl_PamContainsFly(SwPaM & rPam)
 {
-    bool bResult = false;    
+    bool bResult = false;
     SwNodeRange aRg( rPam.Start()->nNode, rPam.End()->nNode );
     SwDoc * pDoc = rPam.GetDoc();
-    
-    sal_uInt16 n = 0;     
+
+    sal_uInt16 n = 0;
     SwSpzFrmFmts * pSpzFmts = pDoc->GetSpzFrmFmts();
-    sal_uInt16 nCount = pSpzFmts->Count(); 
+    sal_uInt16 nCount = pSpzFmts->Count();
     while (!bResult && n < nCount)
     {
         SwFrmFmt* pFly = (*pSpzFmts)[n];
         const SwFmtAnchor* pAnchor = &pFly->GetAnchor();
-        
+
         switch (pAnchor->GetAnchorId())
         {
             case FLY_AT_PARA:
             case FLY_AT_CHAR:
             {
                 const SwPosition* pAPos = pAnchor->GetCntntAnchor();
-                
+
                 if (pAPos != NULL &&
                     aRg.aStart <= pAPos->nNode &&
                     pAPos->nNode <= aRg.aEnd)
@@ -3664,10 +3664,10 @@ bool lcl_PamContainsFly(SwPaM & rPam)
             default:
                 break;
         }
-        
+
         ++n;
     }
-    
+
     return bResult;
 }
 

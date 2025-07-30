@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -522,7 +522,7 @@ Reference< XInterface > OInstanceProvider::getInstance( const OUString & rName )
 		if (_aInstanceName == rName)
 		{
 			Reference< XInterface > xRet;
-            
+
             if (_aImplName.getLength() == 0 && _aServiceName.getLength() == 0)
             {
                 OSL_ASSERT(
@@ -731,11 +731,11 @@ SAL_IMPLEMENT_MAIN_WITH_ARGS(argc,)
 
         if (aReadOnlyRegistries.size() > 0 ||
             aReadWriteRegistry.getLength() > 0)
-        {   
+        {
             //#### create registry #############################################
-            
+
             Reference< XSimpleRegistry > xRegistry;
-            
+
             // ReadOnly registries
             for ( size_t nReg = 0; nReg < aReadOnlyRegistries.size(); ++nReg )
             {
@@ -768,7 +768,7 @@ SAL_IMPLEMENT_MAIN_WITH_ARGS(argc,)
                                  ? nestRegistries( xNewReg, xRegistry )
                                  : xNewReg);
             }
-            
+
             OSL_ASSERT( xRegistry.is() );
             xContext = bootstrap_InitialComponentContext( xRegistry );
         }
@@ -776,7 +776,7 @@ SAL_IMPLEMENT_MAIN_WITH_ARGS(argc,)
         {
             xContext = defaultBootstrap_InitialComponentContext();
         }
-        
+
 		//#### accept, instantiate, etc. ###########################################################
 
 		if (aUnoUrl.getLength()) // accepting connections

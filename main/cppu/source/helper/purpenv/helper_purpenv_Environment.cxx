@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -46,33 +46,33 @@
 #endif
 
 
-extern "C" { 
-typedef void SAL_CALL EnvFun_P   (uno_Environment *); 
+extern "C" {
+typedef void SAL_CALL EnvFun_P   (uno_Environment *);
 typedef void SAL_CALL EnvFun_PP_P(uno_Environment ** ppHardEnv, uno_Environment *);
 typedef void SAL_CALL ExtEnv_registerProxyInterface (uno_ExtEnvironment                 *,
                                                      void                              ** ppProxy,
                                                      uno_freeProxyFunc                    freeProxy,
                                                      rtl_uString * pOId,
                                                      typelib_InterfaceTypeDescription   * pTypeDescr);
-typedef void SAL_CALL ExtEnv_revokeInterface        (uno_ExtEnvironment                 *, 
+typedef void SAL_CALL ExtEnv_revokeInterface        (uno_ExtEnvironment                 *,
                                                      void                               * pInterface);
-typedef void SAL_CALL ExtEnv_getObjectIdentifier    (uno_ExtEnvironment                 *, 
-                                                     rtl_uString                       **, 
+typedef void SAL_CALL ExtEnv_getObjectIdentifier    (uno_ExtEnvironment                 *,
+                                                     rtl_uString                       **,
                                                      void                               *);
-typedef void SAL_CALL ExtEnv_getRegisteredInterface (uno_ExtEnvironment                 *, 
-                                                     void                              **, 
-                                                     rtl_uString                        *, 
+typedef void SAL_CALL ExtEnv_getRegisteredInterface (uno_ExtEnvironment                 *,
+                                                     void                              **,
+                                                     rtl_uString                        *,
                                                      typelib_InterfaceTypeDescription   *);
-typedef void SAL_CALL ExtEnv_getRegisteredInterfaces(uno_ExtEnvironment                 *, 
+typedef void SAL_CALL ExtEnv_getRegisteredInterfaces(uno_ExtEnvironment                 *,
                                                      void                             *** pppInterfaces,
                                                      sal_Int32                          * pnLen,
                                                      uno_memAlloc                         memAlloc);
-typedef void SAL_CALL ExtEnv_computeObjectIdentifier(uno_ExtEnvironment                 *, 
-                                                     rtl_uString                       ** ppOId, 
+typedef void SAL_CALL ExtEnv_computeObjectIdentifier(uno_ExtEnvironment                 *,
+                                                     rtl_uString                       ** ppOId,
                                                      void                               * pInterface);
-typedef void SAL_CALL ExtEnv_acquireInterface       (uno_ExtEnvironment                 *, 
+typedef void SAL_CALL ExtEnv_acquireInterface       (uno_ExtEnvironment                 *,
                                                      void                               * pInterface);
-typedef void SAL_CALL ExtEnv_releaseInterface       (uno_ExtEnvironment                 *, 
+typedef void SAL_CALL ExtEnv_releaseInterface       (uno_ExtEnvironment                 *,
                                                      void                               * pInterface);
 }
 
@@ -87,20 +87,20 @@ public:
 	void acquire    (void);
 	void release    (void);
 
-	void registerProxyInterface (void                                  ** ppProxy, 
-								 uno_freeProxyFunc                        freeProxy, 
+	void registerProxyInterface (void                                  ** ppProxy,
+								 uno_freeProxyFunc                        freeProxy,
 								 rtl::OUString                    const & oid,
 								 typelib_InterfaceTypeDescription       * pTypeDescr);
 	void revokeInterface        (void                                   * pInterface);
-	void getObjectIdentifier    (void                                   * pInterface, 
+	void getObjectIdentifier    (void                                   * pInterface,
 								 rtl::OUString                          * pOid);
-	void getRegisteredInterface (void                                  **, 
-								 rtl::OUString                    const & oid, 
+	void getRegisteredInterface (void                                  **,
+								 rtl::OUString                    const & oid,
 								 typelib_InterfaceTypeDescription       *);
-	void getRegisteredInterfaces(void                                 ***, 
+	void getRegisteredInterfaces(void                                 ***,
 								 sal_Int32                              * pnLen,
 								 uno_memAlloc                             memAlloc);
-	void computeObjectIdentifier(void                                   * pInterface, 
+	void computeObjectIdentifier(void                                   * pInterface,
 								 rtl::OUString                          * pOid);
 	void acquireInterface       (void                                   * pInterface);
 	void releaseInterface       (void                                   * pInterface);
@@ -166,40 +166,40 @@ static void SAL_CALL s_releaseWeak(uno_Environment * pEnv) SAL_THROW_EXTERN_C()
 }
 
 
-static void SAL_CALL s_registerProxyInterface(uno_ExtEnvironment                * pExtEnv, 
+static void SAL_CALL s_registerProxyInterface(uno_ExtEnvironment                * pExtEnv,
                                                          void                             ** ppProxy,
                                                          uno_freeProxyFunc                   freeProxy,
-                                                         rtl_uString                       * pOId, 
-                                                         typelib_InterfaceTypeDescription  * pTypeDescr) 
+                                                         rtl_uString                       * pOId,
+                                                         typelib_InterfaceTypeDescription  * pTypeDescr)
 {
 	Base * pBase = static_cast<Base *>(pExtEnv->aBase.pReserved);
 	pBase->registerProxyInterface(ppProxy, freeProxy, pOId, pTypeDescr);
 }
 
-static void SAL_CALL s_revokeInterface(uno_ExtEnvironment * pExtEnv, void * pInterface) 
+static void SAL_CALL s_revokeInterface(uno_ExtEnvironment * pExtEnv, void * pInterface)
 {
 	Base * pBase = static_cast<Base *>(pExtEnv->aBase.pReserved);
 	pBase->revokeInterface(pInterface);
 }
 
-static void SAL_CALL s_getObjectIdentifier(uno_ExtEnvironment *  pExtEnv, 
-                                                      rtl_uString        ** ppOId, 
-                                                      void               *  pInterface) 
+static void SAL_CALL s_getObjectIdentifier(uno_ExtEnvironment *  pExtEnv,
+                                                      rtl_uString        ** ppOId,
+                                                      void               *  pInterface)
 {
 	Base * pBase = static_cast<Base *>(pExtEnv->aBase.pReserved);
 	pBase->getObjectIdentifier(pInterface, reinterpret_cast<rtl::OUString *>(ppOId));
 }
 
-static void SAL_CALL s_getRegisteredInterface(uno_ExtEnvironment *  pExtEnv, 
+static void SAL_CALL s_getRegisteredInterface(uno_ExtEnvironment *  pExtEnv,
                                                          void               ** ppInterface,
-                                                         rtl_uString        *  pOId, 
-                                                         typelib_InterfaceTypeDescription * pTypeDescr) 
+                                                         rtl_uString        *  pOId,
+                                                         typelib_InterfaceTypeDescription * pTypeDescr)
 {
 	Base * pBase = static_cast<Base *>(pExtEnv->aBase.pReserved);
 	pBase->getRegisteredInterface(ppInterface, pOId, pTypeDescr);
 }
 
-static void SAL_CALL s_getRegisteredInterfaces(uno_ExtEnvironment   * pExtEnv, 
+static void SAL_CALL s_getRegisteredInterfaces(uno_ExtEnvironment   * pExtEnv,
                                                           void               *** pppInterface,
                                                           sal_Int32            * pnLen,
                                                           uno_memAlloc           memAlloc)
@@ -208,9 +208,9 @@ static void SAL_CALL s_getRegisteredInterfaces(uno_ExtEnvironment   * pExtEnv,
 	pBase->getRegisteredInterfaces(pppInterface, pnLen, memAlloc);
 }
 
-static void SAL_CALL s_computeObjectIdentifier(uno_ExtEnvironment *  pExtEnv, 
-                                                          rtl_uString        ** ppOId, 
-                                                          void               *  pInterface) 
+static void SAL_CALL s_computeObjectIdentifier(uno_ExtEnvironment *  pExtEnv,
+                                                          rtl_uString        ** ppOId,
+                                                          void               *  pInterface)
 {
 	Base * pBase = static_cast<Base *>(pExtEnv->aBase.pReserved);
 	pBase->computeObjectIdentifier(pInterface, reinterpret_cast<rtl::OUString *>(ppOId));
@@ -270,7 +270,7 @@ Base::Base(uno_Environment * pEnv, cppu::Enterable * pEnterable)
 	pEnv->pReserved = this;
 }
 
-Base::~Base() 
+Base::~Base()
 {
 	LOG_LIFECYCLE_cppu_helper_purpenv_Base_emit(fprintf(stderr, "LIFE: %s -> %p\n", "cppu::helper::purpenv::Base::~Base()", this));
 
@@ -319,7 +319,7 @@ void Base::releaseWeak(void)
 }
 
 
-extern "C" { static void s_registerProxyInterface_v(va_list * pParam) 
+extern "C" { static void s_registerProxyInterface_v(va_list * pParam)
 {
 	uno_ExtEnvironment                   * pExtEnv    = va_arg(*pParam, uno_ExtEnvironment *);
 	void                                ** ppProxy    = va_arg(*pParam, void **);
@@ -332,15 +332,15 @@ extern "C" { static void s_registerProxyInterface_v(va_list * pParam)
 	pRegisterProxyInterface(pExtEnv, ppProxy, freeProxy, pOId, pTypeDescr);
 }}
 
-void Base::registerProxyInterface(void                                  ** ppProxy, 
-								  uno_freeProxyFunc                        freeProxy, 
+void Base::registerProxyInterface(void                                  ** ppProxy,
+								  uno_freeProxyFunc                        freeProxy,
 								  rtl::OUString                    const & oid,
 								  typelib_InterfaceTypeDescription       * pTypeDescr)
 {
- 	uno_Environment_invoke(m_pEnv, 
-						   s_registerProxyInterface_v, 
-						   m_pEnv->pExtEnv, 
-						   ppProxy, 
+ 	uno_Environment_invoke(m_pEnv,
+						   s_registerProxyInterface_v,
+						   m_pEnv->pExtEnv,
+						   ppProxy,
 						   freeProxy,
 						   oid.pData,
 						   pTypeDescr,
@@ -348,7 +348,7 @@ void Base::registerProxyInterface(void                                  ** ppPro
 }
 
 
-extern "C" { static void s_revokeInterface_v(va_list * pParam) 
+extern "C" { static void s_revokeInterface_v(va_list * pParam)
 {
 	uno_ExtEnvironment * pExtEnv    = va_arg(*pParam, uno_ExtEnvironment *);
 	void               * pInterface = va_arg(*pParam, void *);
@@ -359,15 +359,15 @@ extern "C" { static void s_revokeInterface_v(va_list * pParam)
 
 void Base::revokeInterface(void * pInterface)
 {
- 	uno_Environment_invoke(m_pEnv, 
-						   s_revokeInterface_v, 
-						   m_pEnv->pExtEnv, 
-						   pInterface, 
+ 	uno_Environment_invoke(m_pEnv,
+						   s_revokeInterface_v,
+						   m_pEnv->pExtEnv,
+						   pInterface,
 						   m_env_revokeInterface);
 }
 
 
-extern "C" { static void s_getObjectIdentifier_v(va_list * pParam) 
+extern "C" { static void s_getObjectIdentifier_v(va_list * pParam)
 {
 	uno_ExtEnvironment * pExtEnv    = va_arg(*pParam, uno_ExtEnvironment *);
 	void               * pInterface = va_arg(*pParam, void *);
@@ -380,16 +380,16 @@ extern "C" { static void s_getObjectIdentifier_v(va_list * pParam)
 
 void Base::getObjectIdentifier(void * pInterface, rtl::OUString * pOid)
 {
- 	uno_Environment_invoke(m_pEnv, 
-						   s_getObjectIdentifier_v, 
-						   m_pEnv->pExtEnv, 
-						   pInterface, 
+ 	uno_Environment_invoke(m_pEnv,
+						   s_getObjectIdentifier_v,
+						   m_pEnv->pExtEnv,
+						   pInterface,
 						   pOid,
 						   m_env_getObjectIdentifier);
 }
 
 
-extern "C" { static void s_getRegisteredInterface_v(va_list * pParam) 
+extern "C" { static void s_getRegisteredInterface_v(va_list * pParam)
 {
 	uno_ExtEnvironment                   * pExtEnv     = va_arg(*pParam, uno_ExtEnvironment *);
 	void                                ** ppInterface = va_arg(*pParam, void **);
@@ -401,21 +401,21 @@ extern "C" { static void s_getRegisteredInterface_v(va_list * pParam)
 	pGetRegisteredInterface(pExtEnv, ppInterface, pOId, pTypeDescr);
 }}
 
-void Base::getRegisteredInterface(void ** ppInterface, 
+void Base::getRegisteredInterface(void ** ppInterface,
 								  rtl::OUString const & oid,
 								  typelib_InterfaceTypeDescription * pTypeDescr)
 {
- 	uno_Environment_invoke(m_pEnv, 
-						   s_getRegisteredInterface_v, 
-						   m_pEnv->pExtEnv, 
-						   ppInterface, 
+ 	uno_Environment_invoke(m_pEnv,
+						   s_getRegisteredInterface_v,
+						   m_pEnv->pExtEnv,
+						   ppInterface,
 						   oid.pData,
 						   pTypeDescr,
 						   m_env_getRegisteredInterface);
 }
 
 
-extern "C" { static void s_getRegisteredInterfaces_v(va_list * pParam) 
+extern "C" { static void s_getRegisteredInterfaces_v(va_list * pParam)
 {
 	uno_ExtEnvironment   * pExtEnv      = va_arg(*pParam, uno_ExtEnvironment *);
 	void               *** pppInterface = va_arg(*pParam, void ***);
@@ -427,21 +427,21 @@ extern "C" { static void s_getRegisteredInterfaces_v(va_list * pParam)
 	pGetRegisteredInterfaces(pExtEnv, pppInterface, pnLen, memAlloc);
 }}
 
-void Base::getRegisteredInterfaces(void         *** pppInterface, 
+void Base::getRegisteredInterfaces(void         *** pppInterface,
 								   sal_Int32      * pnLen,
 								   uno_memAlloc     memAlloc)
 {
- 	uno_Environment_invoke(m_pEnv, 
-						   s_getRegisteredInterfaces_v, 
-						   m_pEnv->pExtEnv, 
-						   pppInterface, 
+ 	uno_Environment_invoke(m_pEnv,
+						   s_getRegisteredInterfaces_v,
+						   m_pEnv->pExtEnv,
+						   pppInterface,
 						   pnLen,
 						   memAlloc,
 						   m_env_getRegisteredInterfaces);
 }
 
 
-extern "C" { static void s_computeObjectIdentifier_v(va_list * pParam) 
+extern "C" { static void s_computeObjectIdentifier_v(va_list * pParam)
 {
 	uno_ExtEnvironment * pExtEnv    = va_arg(*pParam, uno_ExtEnvironment *);
 	void               * pInterface = va_arg(*pParam, void *);
@@ -454,20 +454,20 @@ extern "C" { static void s_computeObjectIdentifier_v(va_list * pParam)
 
 void Base::computeObjectIdentifier(void * pInterface, rtl::OUString * pOid)
 {
- 	uno_Environment_invoke(m_pEnv, 
-						   s_computeObjectIdentifier_v, 
-						   m_pEnv->pExtEnv, 
-						   pInterface, 
+ 	uno_Environment_invoke(m_pEnv,
+						   s_computeObjectIdentifier_v,
+						   m_pEnv->pExtEnv,
+						   pInterface,
 						   pOid,
 						   m_env_computeObjectIdentifier);
 }
 
 
-extern "C" { static void s_acquireInterface_v(va_list * pParam) 
+extern "C" { static void s_acquireInterface_v(va_list * pParam)
 {
 	uno_ExtEnvironment * pExtEnv    = va_arg(*pParam, uno_ExtEnvironment *);
 	void               * pInterface = va_arg(*pParam, void *);
-	ExtEnv_acquireInterface * pAcquireInterface 
+	ExtEnv_acquireInterface * pAcquireInterface
 		= va_arg(*pParam, ExtEnv_acquireInterface *);
 
 	pAcquireInterface(pExtEnv, pInterface);
@@ -479,7 +479,7 @@ void Base::acquireInterface(void * pInterface)
 }
 
 
-extern "C" { static void s_releaseInterface_v(va_list * pParam) 
+extern "C" { static void s_releaseInterface_v(va_list * pParam)
 {
 	uno_ExtEnvironment * pExtEnv    = va_arg(*pParam, uno_ExtEnvironment *);
 	void               * pInterface = va_arg(*pParam, void *);
@@ -491,10 +491,10 @@ extern "C" { static void s_releaseInterface_v(va_list * pParam)
 
 void Base::releaseInterface(void * pInterface)
 {
- 	uno_Environment_invoke(m_pEnv, 
-						   s_releaseInterface_v, 
-						   m_pEnv->pExtEnv, 
-						   pInterface, 
+ 	uno_Environment_invoke(m_pEnv,
+						   s_releaseInterface_v,
+						   m_pEnv->pExtEnv,
+						   pInterface,
 						   m_env_releaseInterface);
 }
 
@@ -518,7 +518,7 @@ void Base::v_callOut_v(uno_EnvCallee * pCallee, va_list * pParam)
     m_pEnterable->callOut_v(pCallee, pParam);
 }
 
-int Base::v_isValid(rtl::OUString * pReason) 
+int Base::v_isValid(rtl::OUString * pReason)
 {
     return m_pEnterable->isValid(pReason);
 }

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -102,7 +102,7 @@ AxisItemConverter::AxisItemConverter(
         m_pExplicitScale = new ::chart::ExplicitScaleData( *pScale );
     if( pIncrement )
         m_pExplicitIncrement = new ::chart::ExplicitIncrementData( *pIncrement );
-   
+
     m_aConverters.push_back( new GraphicPropertyItemConverter(
                                  rPropertySet, rItemPool, rDrawModel,
                                  xNamedPropertyContainerFactory,
@@ -369,12 +369,12 @@ void AxisItemConverter::FillSpecialItem( sal_uInt16 nWhichId, SfxItemSet & rOutI
         {
             //read only item
             //necessary tp display the crossing value with an appropriate format
-            
+
             Reference< chart2::XCoordinateSystem > xCooSys( AxisHelper::getCoordinateSystemOfAxis(
                 m_xAxis, ChartModelHelper::findDiagram( m_xChartDoc ) ) );
 
             Reference< chart2::XAxis > xCrossingMainAxis( AxisHelper::getCrossingMainAxis( m_xAxis, xCooSys ) );
-            
+
             sal_Int32 nFormatKey = ExplicitValueProvider::getExplicitNumberFormatKeyForAxis(
                 xCrossingMainAxis, xCooSys, Reference< util::XNumberFormatsSupplier >( m_xChartDoc, uno::UNO_QUERY ) );
 
@@ -478,9 +478,9 @@ bool AxisItemConverter::ApplySpecialItem( sal_uInt16 nWhichId, const SfxItemSet 
 {
     if( !m_xAxis.is() )
         return false;
-    
+
     chart2::ScaleData     aScale( m_xAxis->getScaleData() );
-    
+
     bool bSetScale    = false;
     bool bChangedOtherwise = false;
 
@@ -566,7 +566,7 @@ bool AxisItemConverter::ApplySpecialItem( sal_uInt16 nWhichId, const SfxItemSet 
 
         case SCHATTR_AXIS_REVERSE:
         {
-            bool bWasReverse = ( AxisOrientation_REVERSE == aScale.Orientation );  
+            bool bWasReverse = ( AxisOrientation_REVERSE == aScale.Orientation );
             bool bNewReverse = (static_cast< const SfxBoolItem & >(
                      rItemSet.Get( nWhichId )).GetValue() );
             if( bWasReverse != bNewReverse )
@@ -763,7 +763,7 @@ bool AxisItemConverter::ApplySpecialItem( sal_uInt16 nWhichId, const SfxItemSet 
 
         case SCHATTR_AXIS_POSITION:
         {
-            ::com::sun::star::chart::ChartAxisPosition eAxisPos = 
+            ::com::sun::star::chart::ChartAxisPosition eAxisPos =
                 (::com::sun::star::chart::ChartAxisPosition)
                 static_cast< const SfxInt32Item & >( rItemSet.Get( nWhichId )).GetValue();
 
@@ -835,7 +835,7 @@ bool AxisItemConverter::ApplySpecialItem( sal_uInt16 nWhichId, const SfxItemSet 
 
         case SCHATTR_AXIS_LABEL_POSITION:
         {
-            ::com::sun::star::chart::ChartAxisLabelPosition ePos = 
+            ::com::sun::star::chart::ChartAxisLabelPosition ePos =
                 (::com::sun::star::chart::ChartAxisLabelPosition)
                 static_cast< const SfxInt32Item & >( rItemSet.Get( nWhichId )).GetValue();
 
@@ -873,7 +873,7 @@ bool AxisItemConverter::ApplySpecialItem( sal_uInt16 nWhichId, const SfxItemSet 
 
         case SCHATTR_AXIS_MARK_POSITION:
         {
-            ::com::sun::star::chart::ChartAxisMarkPosition ePos = 
+            ::com::sun::star::chart::ChartAxisMarkPosition ePos =
                 (::com::sun::star::chart::ChartAxisMarkPosition)
                 static_cast< const SfxInt32Item & >( rItemSet.Get( nWhichId )).GetValue();
 
@@ -993,7 +993,7 @@ bool AxisItemConverter::ApplySpecialItem( sal_uInt16 nWhichId, const SfxItemSet 
 
     if( bSetScale )
         m_xAxis->setScaleData( aScale );
-    
+
     return (bSetScale || bChangedOtherwise);
 }
 

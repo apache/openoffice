@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -60,7 +60,7 @@ static struct ImplementationEntry g_entries[] =
 	{
 		ODataInputStream_CreateInstance, ODataInputStream_getImplementationName,
 		ODataInputStream_getSupportedServiceNames, createSingleComponentFactory,
-		&g_moduleCount.modCnt, 0 
+		&g_moduleCount.modCnt, 0
 	},
 	{
 		ODataOutputStream_CreateInstance, ODataOutputStream_getImplementationName,
@@ -70,7 +70,7 @@ static struct ImplementationEntry g_entries[] =
 	{
 		OObjectInputStream_CreateInstance, OObjectInputStream_getImplementationName,
 		OObjectInputStream_getSupportedServiceNames, createSingleComponentFactory,
-		&g_moduleCount.modCnt, 0 
+		&g_moduleCount.modCnt, 0
 	},
 	{
 		OObjectOutputStream_CreateInstance, OObjectOutputStream_getImplementationName,
@@ -80,15 +80,15 @@ static struct ImplementationEntry g_entries[] =
 	{
 		OMarkableInputStream_CreateInstance, OMarkableInputStream_getImplementationName,
 		OMarkableInputStream_getSupportedServiceNames, createSingleComponentFactory,
-		&g_moduleCount.modCnt, 0 
+		&g_moduleCount.modCnt, 0
 	},
 	{
 		OMarkableOutputStream_CreateInstance, OMarkableOutputStream_getImplementationName,
 		OMarkableOutputStream_getSupportedServiceNames, createSingleComponentFactory,
-		&g_moduleCount.modCnt, 0 
+		&g_moduleCount.modCnt, 0
 	},
 	{ 0, 0, 0, 0, 0, 0 }
-	
+
 };
 
 extern "C"
@@ -98,7 +98,7 @@ SAL_DLLPUBLIC_EXPORT sal_Bool SAL_CALL component_canUnload( TimeValue *pTime )
 {
 	return g_moduleCount.canUnload( &g_moduleCount , pTime );
 }
-	
+
 //==================================================================================================
 SAL_DLLPUBLIC_EXPORT void SAL_CALL component_getImplementationEnvironment(
 	const sal_Char ** ppEnvTypeName, uno_Environment ** )

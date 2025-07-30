@@ -1927,7 +1927,7 @@ void ToolBox::SetHelpId( sal_uInt16 nItemId, const rtl::OString& rHelpId )
 rtl::OString ToolBox::GetHelpId( sal_uInt16 nItemId ) const
 {
     rtl::OString aRet;
-    
+
 	ImplToolItem* pItem = ImplGetItem( nItemId );
 
 	if ( pItem )
@@ -1935,9 +1935,9 @@ rtl::OString ToolBox::GetHelpId( sal_uInt16 nItemId ) const
         if ( pItem->maHelpId.getLength() )
             aRet = pItem->maHelpId;
         else
-            aRet = ::rtl::OUStringToOString( pItem->maCommandStr, RTL_TEXTENCODING_UTF8 );        
+            aRet = ::rtl::OUStringToOString( pItem->maCommandStr, RTL_TEXTENCODING_UTF8 );
     }
-	
+
 	return aRet;
 }
 
@@ -2421,7 +2421,7 @@ void ToolBox::ImplUpdateImageList()
                 vcl::IImageListProvider* pImageListProvider = mpData->mpImageListProvider;
                 SetImageList( pImageListProvider->getImageList(eType) );
                 mpData->meImageListType = eType;
-            }            
+            }
         }
         catch (com::sun::star::lang::IllegalArgumentException &) {}
     }

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -557,7 +557,7 @@ static void ImplSalYield( sal_Bool bWait, sal_Bool bHandleAllCurrentEvents )
 		else
 			bQuit = true;
 	}
-	
+
 	if (bQuit)
 	{
 		ImplSalYieldMutexAcquireWithWait();
@@ -588,7 +588,7 @@ void Os2SalInstance::Yield( bool bWait, bool bHandleAllCurrentEvents )
 	}
 	if ( pSalData->mnAppThreadId != nCurThreadId )
 	{
-		// #97739# A SendMessage call blocks until the called thread (here: the main thread) 
+		// #97739# A SendMessage call blocks until the called thread (here: the main thread)
 		// returns. During a yield however, messages are processed in the main thread that might
 		// result in a new message loop due to opening a dialog. Thus, SendMessage would not
 		// return which will block this thread!
@@ -658,7 +658,7 @@ MRESULT EXPENTRY SalComWndProc( HWND hWnd, ULONG nMsg,
             return 0;
         case SAL_MSG_DESTROYHWND:
             //We only destroy the native window here. We do NOT destroy the SalFrame contained
-			//in the structure (GetWindowPtr()). 
+			//in the structure (GetWindowPtr()).
 			if (WinDestroyWindow((HWND)nMP2) == 0)
 			{
 				OSL_ENSURE(0, "DestroyWindow failed!");
@@ -782,7 +782,7 @@ void Os2SalInstance::DestroyFrame( SalFrame* pFrame )
 
 SalObject* Os2SalInstance::CreateObject( SalFrame* pParent,
                                          SystemWindowData* /*pWindowData*/, // SystemWindowData meaningless on Windows
-                                         sal_Bool /*bShow*/ ) 
+                                         sal_Bool /*bShow*/ )
 {
 	// Um auf Main-Thread umzuschalten
 	return (SalObject*)WinSendMsg( mhComWnd, SAL_MSG_CREATEOBJECT, 0, (MPARAM)pParent );
@@ -830,7 +830,7 @@ class Os2ImeStatus : public SalI18NImeStatus
   public:
     Os2ImeStatus() {}
     virtual ~Os2ImeStatus() {}
-    
+
     // asks whether there is a status window available
     // to toggle into menubar
     virtual bool canToggle() { return false; }

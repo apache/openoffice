@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -143,7 +143,7 @@ void SilentCommandEnv::handle( Reference< task::XInteractionRequest> const & xRe
         uno::Reference< uno::XComponentContext > xContext = comphelper_getProcessComponentContext();
         uno::Reference< ui::dialogs::XExecutableDialog > xDialog(
             deployment::ui::LicenseDialog::create(
-            xContext, VCLUnoHelper::GetInterface( NULL ), 
+            xContext, VCLUnoHelper::GetInterface( NULL ),
             licExc.ExtensionName, licExc.Text ) );
         sal_Int16 res = xDialog->execute();
         if ( res == ui::dialogs::ExecutableDialogResults::CANCEL )
@@ -228,7 +228,7 @@ static sal_Int16 impl_showExtensionDialog( uno::Reference< uno::XComponentContex
 
     uno::Reference< lang::XMultiComponentFactory > xServiceManager( xContext->getServiceManager() );
     if( !xServiceManager.is() )
-        throw uno::RuntimeException( 
+        throw uno::RuntimeException(
             UNISTRING( "impl_showExtensionDialog(): unable to obtain service manager from component context" ), uno::Reference< uno::XInterface > () );
 
     xService = xServiceManager->createInstanceWithContext( sServiceName, xContext );
@@ -329,7 +329,7 @@ static void impl_setNeedsCompatCheck()
                 xFactory->createInstance(sConfigSrvc), UNO_QUERY_THROW);
 
         Sequence< Any > theArgs(1);
-        beans::NamedValue v( OUString::createFromAscii("NodePath"), 
+        beans::NamedValue v( OUString::createFromAscii("NodePath"),
                       makeAny( OUString::createFromAscii("org.openoffice.Setup/Office") ) );
         theArgs[0] <<= v;
         Reference< beans::XPropertySet > pset = Reference< beans::XPropertySet >(
@@ -382,7 +382,7 @@ static bool impl_needsCompatCheck()
                 xFactory->createInstance(sConfigSrvc), UNO_QUERY_THROW);
 
         Sequence< Any > theArgs(1);
-        beans::NamedValue v( OUString::createFromAscii("NodePath"), 
+        beans::NamedValue v( OUString::createFromAscii("NodePath"),
                       makeAny( OUString::createFromAscii("org.openoffice.Setup/Office") ) );
         theArgs[0] <<= v;
         Reference< beans::XPropertySet > pset = Reference< beans::XPropertySet >(

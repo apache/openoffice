@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -60,7 +60,7 @@ static OUString s_serviceName =
 static Sequence< OUString > s_serviceNames = Sequence< OUString >( &s_serviceName, 1 );
 
 //extern ::rtl_StandardModuleCount s_moduleCount = MODULE_COUNT_INIT;
-//extern ::rtl_StandardModuleCount s_moduleCount; 
+//extern ::rtl_StandardModuleCount s_moduleCount;
 
 
 //*************************************************************************
@@ -230,7 +230,7 @@ throw ( RuntimeException )
         displayDialog = false;
     }
     sal_Int32 returnedID = getScriptStorageID(stringURI);
- 
+
 
     // convert file:///... url to vnd... syntax
     ::rtl::OUString canonicalURI(
@@ -246,7 +246,7 @@ throw ( RuntimeException )
                 RTL_TEXTENCODING_ASCII_US ).pData->buffer );
         returnedID = setupAnyStorage( xSFA, canonicalURI, stringURI );
     }
-    else 
+    else
     {
        OSL_TRACE("Using existing storage for %s",
            ::rtl::OUStringToOString( stringURI,
@@ -325,7 +325,7 @@ ScriptStorageManager::getScriptStorageID( const ::rtl::OUString& origURI )
                                             RTL_TEXTENCODING_ASCII_US ).pData->buffer );
         return -1;
     }
-    
+
     return it->second;
 }
 
@@ -355,14 +355,14 @@ throw( RuntimeException )
                    stringURI, RTL_TEXTENCODING_ASCII_US ).pData->buffer);
 
     sal_Int32 storageID = getScriptStorageID( stringURI );
-    
+
     if ( storageID == -1 )
     {
         OSL_TRACE( "** id was -1, no storage");
         // Refreshing noexistent storage - just return
         return;
     }
-    
+
     try
     {
         Reference < storage::XScriptStorageRefresh > xSSR(
@@ -385,8 +385,8 @@ throw( RuntimeException )
 }
 
 //*************************************************************************
-void SAL_CALL 
-ScriptStorageManager::checkPermission( const OUString & 
+void SAL_CALL
+ScriptStorageManager::checkPermission( const OUString &
 scriptStorageURI, const OUString & permissionRequest )
 throw ( RuntimeException, lang::IllegalArgumentException, css::security::AccessControlException )
 {
@@ -460,7 +460,7 @@ throw ( ::com::sun::star::uno::RuntimeException )
     try
     {
         Reference< XInterface > xInterface = Source.Source;
-        // no UNO_QUERY_THROW since we want a 2nd change to query if it's 
+        // no UNO_QUERY_THROW since we want a 2nd change to query if it's
         // not a document being disposed
         Reference< frame::XModel > xModel = Reference< frame::XModel > ( xInterface, UNO_QUERY );
         if( xModel.is() )

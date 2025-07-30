@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -59,7 +59,7 @@ namespace slideshow
 {
     namespace internal
     {
-        
+
         bool ViewBackgroundShape::prefetch( const ::cppcanvas::CanvasSharedPtr&	rDestinationCanvas,
                                             const GDIMetaFileSharedPtr&			rMtf ) const
         {
@@ -67,7 +67,7 @@ namespace slideshow
             ENSURE_OR_RETURN_FALSE( rMtf,
                                "ViewBackgroundShape::prefetch(): no valid metafile!" );
 
-            const ::basegfx::B2DHomMatrix& rCanvasTransform( 
+            const ::basegfx::B2DHomMatrix& rCanvasTransform(
                 mpViewLayer->getTransformation() );
 
             if( !mxBitmap.is() ||
@@ -78,21 +78,21 @@ namespace slideshow
 
                 // determine transformed page bounds
                 ::basegfx::B2DRectangle aTmpRect;
-                ::canvas::tools::calcTransformedRectBounds( aTmpRect, 
-                                                            maBounds, 
+                ::canvas::tools::calcTransformedRectBounds( aTmpRect,
+                                                            maBounds,
                                                             rCanvasTransform );
 
                 // determine pixel size of bitmap (choose it one pixel
                 // larger, as polygon rendering takes one pixel more
                 // to the right and to the bottom)
-                const ::basegfx::B2ISize aBmpSizePixel( 
+                const ::basegfx::B2ISize aBmpSizePixel(
                     ::basegfx::fround( aTmpRect.getRange().getX() + 1),
                     ::basegfx::fround( aTmpRect.getRange().getY() + 1) );
 
                 // create a bitmap of appropriate size
-                ::cppcanvas::BitmapSharedPtr pBitmap( 
-                    ::cppcanvas::BaseGfxFactory::getInstance().createBitmap( 
-                        rDestinationCanvas, 
+                ::cppcanvas::BitmapSharedPtr pBitmap(
+                    ::cppcanvas::BaseGfxFactory::getInstance().createBitmap(
+                        rDestinationCanvas,
                         aBmpSizePixel ) );
 
                 ENSURE_OR_THROW( pBitmap,
@@ -107,7 +107,7 @@ namespace slideshow
                 initSlideBackground( pBitmapCanvas,
                                      aBmpSizePixel );
 
-                // apply linear part of destination canvas transformation (linear means in this context: 
+                // apply linear part of destination canvas transformation (linear means in this context:
                 // transformation without any translational components)
                 ::basegfx::B2DHomMatrix aLinearTransform( rCanvasTransform );
                 aLinearTransform.set( 0, 2, 0.0 );
@@ -119,8 +119,8 @@ namespace slideshow
                     maBounds.getMinX(), maBounds.getMinY()));
 
                 ::cppcanvas::RendererSharedPtr pRenderer(
-                    ::cppcanvas::VCLFactory::getInstance().createRenderer( 
-                        pBitmapCanvas, 
+                    ::cppcanvas::VCLFactory::getInstance().createRenderer(
+                        pBitmapCanvas,
                         *rMtf.get(),
                         ::cppcanvas::Renderer::Parameters() ) );
 
@@ -161,11 +161,11 @@ namespace slideshow
             RTL_LOGFILE_CONTEXT( aLog, "::presentation::internal::ViewBackgroundShape::draw()" );
 
             const ::cppcanvas::CanvasSharedPtr&	rDestinationCanvas( mpViewLayer->getCanvas() );
-                                          
+
             if( !prefetch( rDestinationCanvas, rMtf ) )
                 return false;
 
-            ENSURE_OR_RETURN_FALSE( mxBitmap.is(), 
+            ENSURE_OR_RETURN_FALSE( mxBitmap.is(),
                                "ViewBackgroundShape::draw(): Invalid background bitmap" );
 
             ::basegfx::B2DHomMatrix aTransform( mpViewLayer->getTransformation() );
@@ -182,13 +182,13 @@ namespace slideshow
 
             rendering::RenderState aRenderState;
             ::canvas::tools::initRenderState( aRenderState );
-            
+
             ::canvas::tools::setRenderStateTransform( aRenderState, aTransform );
 
             try
             {
-                rDestinationCanvas->getUNOCanvas()->drawBitmap( mxBitmap, 
-                                                                rDestinationCanvas->getViewState(), 
+                rDestinationCanvas->getUNOCanvas()->drawBitmap( mxBitmap,
+                                                                rDestinationCanvas->getViewState(),
                                                                 aRenderState );
             }
             catch( uno::Exception& )

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -81,7 +81,7 @@ double BesselJ( double x, sal_Int32 N ) throw (IllegalArgumentException, NoConve
         and an odd function for odd N (means J(-x)=-J(x)).*/
     double fSign = (N % 2 == 1 && x < 0) ? -1.0 : 1.0;
     double fX = fabs(x);
-    
+
     const double fMaxIteration = 9000000.0; //experimental, for to return in < 3 seconds
     double fEstimateIteration = fX * 1.5 + N;
     bool bAsymptoticPossible = pow(fX,0.4) > N;
@@ -232,7 +232,7 @@ double BesselI( double x, sal_Int32 n ) throw( IllegalArgumentException, NoConve
         nK++;
         }
         while( (fabs( fTerm ) > fabs(fResult) * fEpsilon) && (nK < nMaxIteration) );
-        
+
     }
     return fResult;
 }

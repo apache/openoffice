@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -58,7 +58,7 @@ struct EmitImplData
     const PDFContainer* m_pObjectContainer;
     unsigned int m_nDecryptObject;
     unsigned int m_nDecryptGeneration;
-    
+
     // returns true if the xref table was updated
     bool insertXref( unsigned int nObject, unsigned int nGeneration, unsigned int nOffset )
     {
@@ -77,7 +77,7 @@ struct EmitImplData
         }
         return false;
     }
-    
+
     EmitImplData( const PDFContainer* pTopContainer ) :
         m_pObjectContainer( pTopContainer ),
         m_nDecryptObject( 0 ),
@@ -90,7 +90,7 @@ struct EmitImplData
         const PDFFile* pFile = dynamic_cast<const PDFFile*>(m_pObjectContainer);
         return pFile ? pFile->decrypt( pInBuffer, nLen, pOutBuffer, nObject, nGeneration ) : false;
     }
-    
+
     void setDecryptObject( unsigned int nObject, unsigned int nGeneration )
     {
         m_nDecryptObject = nObject;
@@ -258,7 +258,7 @@ OString PDFString::getFilteredString() const
 {
     int nLen = m_aString.getLength();
     OStringBuffer aBuf( nLen );
-    
+
     const sal_Char* pStr = m_aString.getStr();
     if( *pStr == '(' )
     {
@@ -342,7 +342,7 @@ OString PDFString::getFilteredString() const
             aBuf.append( rResult );
         }
     }
-    
+
     return aBuf.makeStringAndClear();
 }
 
@@ -354,7 +354,7 @@ bool PDFNumber::emit( EmitContext& rWriteContext ) const
 {
     rtl::OStringBuffer aBuf( 32 );
     aBuf.append( ' ' );
-    
+
     double fValue = m_fValue;
     bool bNeg = false;
     int nPrecision = 5;
@@ -394,7 +394,7 @@ bool PDFNumber::emit( EmitContext& rWriteContext ) const
 			nBound /= 10;
 		}
     }
-    
+
     return rWriteContext.write( aBuf.getStr(), aBuf.getLength() );
 }
 
@@ -540,7 +540,7 @@ void PDFDict::insertValue( const OString& rName, PDFEntry* pValue )
 {
     if( ! pValue )
         eraseValue( rName );
-    
+
     std::hash_map<OString,PDFEntry*,OStringHash>::iterator it = m_aMap.find( rName );
     if( it == m_aMap.end() )
     {
@@ -703,7 +703,7 @@ bool PDFObject::getDeflatedStream( char** ppStream, unsigned int* pBytes, const 
                     pFilter = dynamic_cast<PDFName*>(pArray->m_aSubElements.front());
                 }
             }
-            
+
             // is the (first) filter FlateDecode ?
             if( pFilter && pFilter->m_aName.equals( "FlateDecode" ) )
             {
@@ -747,7 +747,7 @@ static void unzipToBuffer( const char* pBegin, unsigned int nLen,
     aZStr.zfree         = ( free_func )0;
     aZStr.opaque        = ( voidpf )0;
     inflateInit(&aZStr);
-    
+
     const unsigned int buf_increment_size = 16384;
 
     *pOutBuf = (sal_uInt8*)rtl_reallocateMemory( *pOutBuf, buf_increment_size );
@@ -810,11 +810,11 @@ bool PDFObject::emit( EmitContext& rWriteContext ) const
 {
     if( ! rWriteContext.write( "\n", 1 ) )
         return false;
-    
+
     EmitImplData* pEData = getEmitData( rWriteContext );
     if( pEData )
         pEData->insertXref( m_nNumber, m_nGeneration, rWriteContext.getCurPos() );
-    
+
     OStringBuffer aBuf( 32 );
     aBuf.append( sal_Int32( m_nNumber ) );
     aBuf.append( ' ' );
@@ -822,7 +822,7 @@ bool PDFObject::emit( EmitContext& rWriteContext ) const
     aBuf.append( " obj\n" );
     if( ! rWriteContext.write( aBuf.getStr(), aBuf.getLength() ) )
         return false;
-    
+
     if( pEData )
         pEData->setDecryptObject( m_nNumber, m_nGeneration );
     if( (rWriteContext.m_bDeflate || rWriteContext.m_bDecrypt) && pEData )
@@ -843,7 +843,7 @@ bool PDFObject::emit( EmitContext& rWriteContext ) const
                 pOutBytes = (sal_uInt8*)pStream;
                 nOutBytes = (sal_uInt32)nBytes;
             }
-            
+
             if( nOutBytes )
             {
                 // clone this object
@@ -1039,9 +1039,9 @@ struct PDFFileImplData
     OString     m_aDocID;
     rtlCipher   m_aCipher;
     rtlDigest   m_aDigest;
-    
+
     sal_uInt8   m_aDecryptionKey[ENCRYPTION_KEY_LEN+5]; // maximum handled key length
-    
+
     PDFFileImplData() :
         m_bIsEncrypted( false ),
         m_bStandardHandler( false ),
@@ -1056,7 +1056,7 @@ struct PDFFileImplData
         rtl_zeroMemory( m_aUEntry, sizeof( m_aUEntry ) );
         rtl_zeroMemory( m_aDecryptionKey, sizeof( m_aDecryptionKey ) );
     }
-    
+
     ~PDFFileImplData()
     {
         if( m_aCipher )
@@ -1083,10 +1083,10 @@ bool PDFFile::decrypt( const sal_uInt8* pInBuffer, sal_uInt32 nLen, sal_uInt8* p
 {
     if( ! isEncrypted() )
         return false;
-    
+
     if( ! m_pData->m_aCipher )
         m_pData->m_aCipher = rtl_cipher_createARCFOUR( rtl_Cipher_ModeStream );
-    
+
     // modify encryption key
     sal_uInt32 i = m_pData->m_nKeyLength;
     m_pData->m_aDecryptionKey[i++] = sal_uInt8(nObject&0xff);
@@ -1094,11 +1094,11 @@ bool PDFFile::decrypt( const sal_uInt8* pInBuffer, sal_uInt32 nLen, sal_uInt8* p
     m_pData->m_aDecryptionKey[i++] = sal_uInt8((nObject>>16)&0xff);
     m_pData->m_aDecryptionKey[i++] = sal_uInt8(nGeneration&0xff);
     m_pData->m_aDecryptionKey[i++] = sal_uInt8((nGeneration>>8)&0xff);
-    
+
     sal_uInt8 aSum[ENCRYPTION_KEY_LEN];
     rtl_digest_updateMD5( m_pData->m_aDigest, m_pData->m_aDecryptionKey, i );
     rtl_digest_getMD5( m_pData->m_aDigest, aSum, sizeof( aSum ) );
-    
+
     if( i > 16 )
         i = 16;
 
@@ -1181,12 +1181,12 @@ static bool check_user_password( const OString& rPwd, PDFFileImplData* pData )
     {
         // see PDF reference 1.4 Algorithm 3.4
         // encrypt pad string
-        rtl_cipher_initARCFOUR( pData->m_aCipher, rtl_Cipher_DirectionEncode, 
+        rtl_cipher_initARCFOUR( pData->m_aCipher, rtl_Cipher_DirectionEncode,
                                 aKey, nKeyLen,
                                 NULL, 0 );
         rtl_cipher_encodeARCFOUR( pData->m_aCipher, nPadString, sizeof( nPadString ),
                                   nEncryptedEntry, sizeof( nEncryptedEntry ) );
-        bValid = (rtl_compareMemory( nEncryptedEntry, pData->m_aUEntry, 32 ) == 0); 
+        bValid = (rtl_compareMemory( nEncryptedEntry, pData->m_aUEntry, 32 ) == 0);
     }
     else if( pData->m_nStandardRevision == 3 )
     {
@@ -1194,7 +1194,7 @@ static bool check_user_password( const OString& rPwd, PDFFileImplData* pData )
         rtl_digest_updateMD5( pData->m_aDigest, nPadString, sizeof( nPadString ) );
         rtl_digest_updateMD5( pData->m_aDigest, pData->m_aDocID.getStr(), pData->m_aDocID.getLength() );
         rtl_digest_getMD5( pData->m_aDigest, nEncryptedEntry, sizeof(nEncryptedEntry) );
-        rtl_cipher_initARCFOUR( pData->m_aCipher, rtl_Cipher_DirectionEncode, 
+        rtl_cipher_initARCFOUR( pData->m_aCipher, rtl_Cipher_DirectionEncode,
                                 aKey, sizeof(aKey), NULL, 0 );
         rtl_cipher_encodeARCFOUR( pData->m_aCipher,
                                   nEncryptedEntry, 16,
@@ -1204,14 +1204,14 @@ static bool check_user_password( const OString& rPwd, PDFFileImplData* pData )
             sal_uInt8 aTempKey[ENCRYPTION_KEY_LEN];
             for( sal_uInt32 j = 0; j < sizeof(aTempKey); j++ )
                 aTempKey[j] = static_cast<sal_uInt8>( aKey[j] ^ i );
-            
-            rtl_cipher_initARCFOUR( pData->m_aCipher, rtl_Cipher_DirectionEncode, 
+
+            rtl_cipher_initARCFOUR( pData->m_aCipher, rtl_Cipher_DirectionEncode,
                                     aTempKey, sizeof(aTempKey), NULL, 0 );
             rtl_cipher_encodeARCFOUR( pData->m_aCipher,
                                       nEncryptedEntry, 16,
                                       nEncryptedEntry, 16 ); // encrypt in place
         }
-        bValid = (rtl_compareMemory( nEncryptedEntry, pData->m_aUEntry, 16 ) == 0); 
+        bValid = (rtl_compareMemory( nEncryptedEntry, pData->m_aUEntry, 16 ) == 0);
     }
     return bValid;
 }
@@ -1220,7 +1220,7 @@ bool PDFFile::setupDecryptionData( const OString& rPwd ) const
 {
     if( !impl_getData()->m_bIsEncrypted )
         return rPwd.getLength() == 0;
-    
+
     // check if we can handle this encryption at all
     if( ! m_pData->m_bStandardHandler ||
         m_pData->m_nAlgoVersion < 1 ||
@@ -1228,15 +1228,15 @@ bool PDFFile::setupDecryptionData( const OString& rPwd ) const
         m_pData->m_nStandardRevision < 2 ||
         m_pData->m_nStandardRevision > 3 )
         return false;
-    
+
     if( ! m_pData->m_aCipher )
         m_pData->m_aCipher = rtl_cipher_createARCFOUR(rtl_Cipher_ModeStream);
     if( ! m_pData->m_aDigest )
         m_pData->m_aDigest = rtl_digest_createMD5();
-    
+
     // first try user password
     bool bValid = check_user_password( rPwd, m_pData );
-    
+
     if( ! bValid )
     {
         // try owner password
@@ -1247,7 +1247,7 @@ bool PDFFile::setupDecryptionData( const OString& rPwd ) const
         sal_uInt32 nKeyLen = password_to_key( rPwd, aKey, m_pData, true );
         if( m_pData->m_nStandardRevision == 2 )
         {
-            rtl_cipher_initARCFOUR( m_pData->m_aCipher, rtl_Cipher_DirectionDecode, 
+            rtl_cipher_initARCFOUR( m_pData->m_aCipher, rtl_Cipher_DirectionDecode,
                                     aKey, nKeyLen, NULL, 0 );
             rtl_cipher_decodeARCFOUR( m_pData->m_aCipher,
                                       m_pData->m_aOEntry, 32,
@@ -1261,7 +1261,7 @@ bool PDFFile::setupDecryptionData( const OString& rPwd ) const
                 sal_uInt8 nTempKey[ENCRYPTION_KEY_LEN];
                 for( unsigned int j = 0; j < sizeof(nTempKey); j++ )
                     nTempKey[j] = sal_uInt8(aKey[j] ^ i);
-                rtl_cipher_initARCFOUR( m_pData->m_aCipher, rtl_Cipher_DirectionDecode, 
+                rtl_cipher_initARCFOUR( m_pData->m_aCipher, rtl_Cipher_DirectionDecode,
                                         nTempKey, nKeyLen, NULL, 0 );
                 rtl_cipher_decodeARCFOUR( m_pData->m_aCipher,
                                           nPwd, 32,
@@ -1286,7 +1286,7 @@ rtl::OUString PDFFile::getDecryptionKey() const
             aBuf.append( pHexTab[(m_pData->m_aDecryptionKey[i] >> 4) & 0x0f] );
             aBuf.append( pHexTab[(m_pData->m_aDecryptionKey[i] & 0x0f)] );
         }
-       
+
     }
     return aBuf.makeStringAndClear();
 }
@@ -1428,17 +1428,17 @@ PDFFileImplData* PDFFile::impl_getData() const
                         break;
                     }
                 }
-            }   
+            }
         }
     }
-    
+
     return m_pData;
 }
 
 bool PDFFile::emit( EmitContext& rWriteContext ) const
 {
     setEmitData(  rWriteContext, new EmitImplData( this ) );
-    
+
     OStringBuffer aBuf( 32 );
     aBuf.append( "%PDF-" );
     aBuf.append( sal_Int32( m_nMajor ) );

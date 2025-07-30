@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
@@ -115,7 +115,7 @@ const XMLPropertyMapEntry aXMLPageMasterStyleMap[] =
     PLMAP( "GridSnapToChars", XML_NAMESPACE_STYLE, XML_LAYOUT_GRID_SNAP_TO_CHARS, XML_TYPE_BOOL, CTP_PM_GRID_SNAP_TO_CHARS ),
       //export as a default attribute
     PLMAP( "StandardPageMode", XML_NAMESPACE_STYLE, XML_LAYOUT_GRID_STANDARD_MODE, XML_TYPE_BOOL|MID_FLAG_DEFAULT_ITEM_EXPORT, CTF_PM_STANDARD_MODE ),
-    
+
     PLMAP( "UserDefinedAttributes",    XML_NAMESPACE_TEXT,        XML_XMLNS,                        XML_TYPE_ATTRIBUTE_CONTAINER | MID_FLAG_SPECIAL_ITEM, 0 ),
 
     //UUUUIndex 65: fill attributes; use PLMAP macro here instead of GMAP, tis list is ordered and it's order is used

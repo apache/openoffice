@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -78,8 +78,8 @@ void UndoTextAPIChanged::Undo()
 {
     if( !mpNewText )
         mpNewText = mxTextObj->CreateText();
-        
-    mxTextObj->SetText( *mpOldText );        
+
+    mxTextObj->SetText( *mpOldText );
 }
 
 void UndoTextAPIChanged::Redo()
@@ -90,7 +90,7 @@ void UndoTextAPIChanged::Redo()
     }
 }
 
-struct TextAPIEditSource_Impl 
+struct TextAPIEditSource_Impl
 {
 	// needed for "internal" refcounting
 	SdDrawDocument*					mpDoc;
@@ -177,9 +177,9 @@ void TextApiObject::SetText( OutlinerParaObject& rText )
     SdrModel* pModel = mpSource->GetDoc();
     if( pModel && pModel->IsUndoEnabled() )
         pModel->AddUndo( new UndoTextAPIChanged( *pModel, this ) );
-            
+
     mpSource->SetText( rText );
-	maSelection.nStartPara = 0xffff;		
+	maSelection.nStartPara = 0xffff;
 }
 
 String TextApiObject::GetText()
@@ -268,7 +268,7 @@ void TextAPIEditSource::SetText( OutlinerParaObject& rText )
             pImpl->mpOutliner = new Outliner( pImpl->mpDoc, OUTLINERMODE_TEXTOBJECT );
 			pImpl->mpDoc->SetCalcFieldValueHdl( pImpl->mpOutliner );
 		}
-      
+
 		pImpl->mpOutliner->SetText( rText );
 	}
 }

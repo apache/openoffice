@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -220,7 +220,7 @@ void Bridge::release() const  SAL_THROW( () )
     {
         uno_revokeMapping(
             m_registered_cli2uno
-            ?  const_cast<Mapping*>(&m_cli2uno) 
+            ?  const_cast<Mapping*>(&m_cli2uno)
             :  const_cast<Mapping*>(&m_uno2cli)  );
    }
 }
@@ -236,7 +236,7 @@ Bridge::Bridge(
     OSL_ASSERT( 0 != m_uno_cli_env && 0 != m_uno_env );
     (*((uno_Environment *)m_uno_env)->acquire)( (uno_Environment *)m_uno_env );
     (*m_uno_cli_env->acquire)( m_uno_cli_env );
-    
+
     // cli2uno
     m_cli2uno.acquire = Mapping_acquire;
     m_cli2uno.release = Mapping_release;
@@ -247,7 +247,7 @@ Bridge::Bridge(
     m_uno2cli.release = Mapping_release;
     m_uno2cli.mapInterface = Mapping_uno2cli;
     m_uno2cli.m_bridge = this;
-    
+
 }
 
 //__________________________________________________________________________________________________
@@ -270,7 +270,7 @@ namespace cli_uno
 //--------------------------------------------------------------------------------------------------
 void SAL_CALL cli_env_disposing( uno_Environment * uno_cli_env )
     SAL_THROW_EXTERN_C()
-{    
+{
     uno_cli_env->pContext = 0;
 }
 
@@ -290,7 +290,7 @@ void SAL_CALL uno_initEnvironment( uno_Environment * uno_cli_env )
     System::Diagnostics::Trace::get_Listeners()->
             Add( new System::Diagnostics::TextWriterTraceListener(System::Console::get_Out()));
 #endif
-    OSL_ASSERT( 0 == uno_cli_env->pContext );  
+    OSL_ASSERT( 0 == uno_cli_env->pContext );
 
     // We let the Cli_environment leak, since there is no good point where we could destruct it.
     //dispose is not used because we would have then also synchronize the calls to proxies. If the
@@ -311,15 +311,15 @@ void SAL_CALL uno_ext_getMapping(
         (*(*ppMapping)->release)( *ppMapping );
         *ppMapping = 0;
     }
-    
+
 
     OUString const & from_env_typename = *reinterpret_cast< OUString const * >(
         &pFrom->pTypeName );
     OUString const & to_env_typename = *reinterpret_cast< OUString const * >(
         &pTo->pTypeName );
-        
+
     uno_Mapping * mapping = 0;
-        
+
     try
     {
         if (from_env_typename.equalsAsciiL( RTL_CONSTASCII_STRINGPARAM(UNO_LB_CLI) ) &&
@@ -350,7 +350,7 @@ void SAL_CALL uno_ext_getMapping(
         (void) err; // unused
 #endif
     }
-    *ppMapping = mapping;    
+    *ppMapping = mapping;
 }
 
 

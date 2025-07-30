@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -92,7 +92,7 @@ void GtkHookedYieldMutex::release()
 	SalYieldMutex::release();
 }
 
-extern "C" 
+extern "C"
 {
 	#define GET_YIELD_MUTEX() static_cast<GtkHookedYieldMutex*>(GetSalData()->m_pInstance->GetYieldMutex())
 	static void GdkThreadsEnter( void )
@@ -157,7 +157,7 @@ extern "C"
 			pYieldMutex = new GtkHookedYieldMutex();
 		else
 			pYieldMutex = new GtkYieldMutex();
-				
+
 		gdk_threads_init();
 
         GtkInstance* pInstance = new GtkInstance( pYieldMutex );
@@ -201,7 +201,7 @@ SalObject* GtkInstance::CreateObject( SalFrame* pParent, SystemWindowData* pWind
     // so we need the X11SalObject in that case
     if( pWindowData )
         return X11SalObject::CreateObject( pParent, pWindowData, bShow );
-    
+
     return new GtkSalObject( static_cast<GtkSalFrame*>(pParent), bShow );
 }
 
@@ -236,8 +236,8 @@ void GtkInstance::AddToRecentDocumentList(const rtl::OUString& rFileUrl, const r
 #else
     static getDefaultFnc sym_gtk_recent_manager_get_default =
         (getDefaultFnc)osl_getAsciiFunctionSymbol( GetSalData()->m_pPlugin, "gtk_recent_manager_get_default" );
-    
-    static addItemFnc sym_gtk_recent_manager_add_item = 
+
+    static addItemFnc sym_gtk_recent_manager_add_item =
         (addItemFnc)osl_getAsciiFunctionSymbol( GetSalData()->m_pPlugin, "gtk_recent_manager_add_item");
     if (sym_gtk_recent_manager_get_default && sym_gtk_recent_manager_add_item)
         sym_gtk_recent_manager_add_item(sym_gtk_recent_manager_get_default(), sGtkURL);
@@ -262,7 +262,7 @@ void GtkYieldMutex::acquire()
         return;
     }
     OMutex::release();
-    
+
     // obtain gdk mutex
     gdk_threads_enter();
 
@@ -316,13 +316,13 @@ sal_Bool GtkYieldMutex::tryToAcquire()
     // how to we do a try_lock without having a gdk_threads_try_enter ?
     if( ! g_mutex_trylock( gdk_threads_mutex ) )
         return sal_False;
-    
+
     // obtained gdk mutex, now lock count is one by definition
     OMutex::acquire();
     mnCount = 1;
     mnThreadId = aCurrentThread;
     OMutex::release();
-    
+
     return sal_True;
 }
 

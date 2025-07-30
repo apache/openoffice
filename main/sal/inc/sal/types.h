@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -64,13 +64,13 @@ extern "C" {
 
 /* Boolean */
 typedef unsigned char sal_Bool;
-#   define sal_False ((sal_Bool)0)                
-#   define sal_True  ((sal_Bool)1) 
-  
+#   define sal_False ((sal_Bool)0)
+#   define sal_True  ((sal_Bool)1)
+
 /* char is assumed to always be 1 byte long */
 typedef signed char         sal_Int8;
 typedef unsigned char       sal_uInt8;
-  
+
 #if SAL_TYPES_SIZEOFSHORT == 2
 	typedef signed short      sal_Int16;
 	typedef unsigned short    sal_uInt16;
@@ -158,7 +158,7 @@ typedef unsigned char            sal_uChar;
 	#define SAL_UNICODE_NOTEQUAL_WCHAR_T
 	typedef sal_uInt16          sal_Unicode;
 #endif
-  
+
 typedef void *                   sal_Handle;
 
 /* sal_Size should currently be the native width of the platform */
@@ -171,7 +171,7 @@ typedef void *                   sal_Handle;
 #else
 	#error "Please make sure SAL_TYPES_SIZEOFPOINTER is defined for your architecture/compiler"
 #endif
-  
+
 /* sal_PtrDiff holds the result of a pointer subtraction */
 #if SAL_TYPES_SIZEOFPOINTER == 4
 	typedef sal_Int32           sal_PtrDiff;
@@ -192,7 +192,7 @@ typedef void *                   sal_Handle;
 #endif
 
 /* sal_IntPtr, sal_uIntPtr are integer types designed to hold pointers so that any valid
- * pointer to void can be converted to this type and back to a pointer to void and the 
+ * pointer to void can be converted to this type and back to a pointer to void and the
  * result will compare to the original pointer */
 #if SAL_TYPES_SIZEOFPOINTER == 4
 	typedef sal_Int32           sal_IntPtr;
@@ -215,7 +215,7 @@ typedef void *                   sal_Handle;
 /********************************************************************************/
 /* Useful defines
  */
-  
+
 /* The following SAL_MIN_INTn defines codify the assumption that the signed
  * sal_Int types use two's complement representation.  Defining them as
  * "-0x7F... - 1" instead of as "-0x80..." prevents warnings about applying the
@@ -381,11 +381,11 @@ typedef struct _sal_Sequence
 
 /** Definition of function throw clause macros.  These have been introduced
 	to reduce code size by balancing out compiler bugs.
-	
+
 	These macros are ONLY for function declarations,
 	use common C++ throw statement for throwing exceptions, e.g.
 	throw RuntimeException();
-	
+
 	SAL_THROW()			 should be used for all C++ functions, e.g. SAL_THROW( () )
 	SAL_THROW_EXTERN_C() should be used for all C functions
 */

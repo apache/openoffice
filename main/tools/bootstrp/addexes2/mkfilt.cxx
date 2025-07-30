@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -35,7 +35,7 @@ protected:
 	FILE			*pIn, *pOut;
 	virtual void	Filter();
 public:
-					TextFilter( ByteString aInFile = "stdin", 
+					TextFilter( ByteString aInFile = "stdin",
 						ByteString aOutFile = "stdout" );
 	virtual			~TextFilter();
 
@@ -86,7 +86,7 @@ public:
 	ByteStringList*		pPrivateTnrLst;
 	sal_Bool			bOut;
 	sal_Bool			bHier;
-		
+
 					MkLine();
 };
 
@@ -137,7 +137,7 @@ void MkFilter::Filter()
 		//fprintf(stderr, "aLine :%s\n", aLine.GetBuffer());
 		if ( aLine.Search("mkfilter1" ) != STRING_NOTFOUND )
 		{
-			// Zeilen unterdruecken 
+			// Zeilen unterdruecken
 			fprintf( stderr, "mkfilter1\n" );
 			nState = 0;
 		}
@@ -148,7 +148,7 @@ void MkFilter::Filter()
 			nState = 1;
 		}
 		;
-		
+
 		if ( nState == 0  )
 		{
 			fprintf( stderr, "." );
@@ -156,7 +156,7 @@ void MkFilter::Filter()
 			ByteString *pStr = new ByteString( aLineBuf );
 			pMkLine->aLine = *pStr;
 			pMkLine->bOut = sal_False;
-		
+
 			pLst->Insert( pMkLine, LIST_APPEND );
 		}
 		else if ( nState == 1 )
@@ -181,7 +181,7 @@ void MkFilter::Filter()
 			ByteString *pStr = new ByteString( aLineBuf );
 			pMkLine->aLine = *pStr;
 			pMkLine->bOut = sal_False;
-		
+
 			if ( bInTnrList )
 				pTnrLst->Insert( pMkLine, LIST_APPEND );
 		}
@@ -190,7 +190,7 @@ void MkFilter::Filter()
         }
 	}	// End Of File
 	fprintf( stderr, "\n" );
-	
+
 	// das File wieder ausgegeben
 	sal_uIntPtr nLines = pLst->Count();
 	for ( sal_uIntPtr j=0; j<nLines; j++ )
@@ -216,7 +216,7 @@ void MkFilter::Filter()
 			pLine->pPrivateTnrLst = NULL;
 		}
 		if ( pLine->bOut )
-				fputs(pLine->aLine.GetBuffer(), pOut );			
+				fputs(pLine->aLine.GetBuffer(), pOut );
 	}
 	fprintf( stderr, "\n" );
 }

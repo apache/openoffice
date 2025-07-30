@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -45,36 +45,36 @@ class AquaSalInfoPrinter : public SalInfoPrinter
 	bool					mbGraphics;
     /// job active ?
     bool                    mbJob;
-    
+
     /// cocoa printer object
     NSPrinter*              mpPrinter;
     /// cocoa print info object
     NSPrintInfo*            mpPrintInfo;
-    
+
     /// FIXME: get real printer context for infoprinter if possible
     /// fake context for info printer
     /// graphics context for Quartz 2D
 	CGContextRef		                    mrContext;
     /// memory for graphics bitmap context for querying metrics
     boost::shared_array< sal_uInt8 >        maContextMemory;
-    
+
     // since changes to NSPrintInfo during a job are ignored
     // we have to care for some settings ourselves
     // currently we do this for orientation;
     // really needed however is a solution for paper formats
     Orientation               mePageOrientation;
-    
+
     int                       mnStartPageOffsetX;
     int                       mnStartPageOffsetY;
     sal_Int32                 mnCurPageRangeStart;
     sal_Int32                 mnCurPageRangeCount;
-    
+
     public:
     AquaSalInfoPrinter( const SalPrinterQueueInfo& pInfo );
     virtual ~AquaSalInfoPrinter();
-    
+
     void                        SetupPrinterGraphics( CGContextRef i_xContext ) const;
-    
+
 	virtual SalGraphics*		GetGraphics();
 	virtual void				ReleaseGraphics( SalGraphics* i_pGraphics );
 	virtual sal_Bool				Setup( SalFrame* i_pFrame, ImplJobSetup* i_pSetupData );
@@ -89,7 +89,7 @@ class AquaSalInfoPrinter : public SalInfoPrinter
 	virtual String				GetPaperBinName( const ImplJobSetup* i_pSetupData, sal_uLong i_nPaperBin );
     virtual void				InitPaperFormats( const ImplJobSetup* i_pSetupData );
     virtual int					GetLandscapeAngle( const ImplJobSetup* i_pSetupData );
-    
+
     // the artificial separation between InfoPrinter and Printer
     // is not really useful for us
     // so let's make AquaSalPrinter just a forwarder to AquaSalInfoPrinter
@@ -105,16 +105,16 @@ class AquaSalInfoPrinter : public SalInfoPrinter
 	SalGraphics*    			StartPage( ImplJobSetup* i_pSetupData, sal_Bool i_bNewJobData );
 	sal_Bool    					EndPage();
 	sal_uLong	    				GetErrorCode() const;
-    
+
     NSPrintInfo* getPrintInfo() const { return mpPrintInfo; }
     void setStartPageOffset( int nOffsetX, int nOffsetY ) { mnStartPageOffsetX = nOffsetX; mnStartPageOffsetY = nOffsetY; }
     sal_Int32 getCurPageRangeStart() const { return mnCurPageRangeStart; }
     sal_Int32 getCurPageRangeCount() const { return mnCurPageRangeCount; }
-    
+
     // match width/height against known paper formats, possibly switching orientation
     const PaperInfo* matchPaper( long i_nWidth, long i_nHeight, Orientation& o_rOrientation ) const;
     void setPaperSize( long i_nWidth, long i_nHeight, Orientation i_eSetOrientation );
-    
+
     private:
     AquaSalInfoPrinter( const AquaSalInfoPrinter& );
     AquaSalInfoPrinter& operator=(const AquaSalInfoPrinter&);
@@ -130,7 +130,7 @@ class AquaSalPrinter : public SalPrinter
     public:
     AquaSalPrinter( AquaSalInfoPrinter* i_pInfoPrinter );
     virtual ~AquaSalPrinter();
-    
+
 	virtual sal_Bool					StartJob( const XubString* i_pFileName,
                                               const XubString& i_rJobName,
                                               const XubString& i_rAppName,
@@ -144,13 +144,13 @@ class AquaSalPrinter : public SalPrinter
                                               const String& i_rAppName,
                                               ImplJobSetup* i_pSetupData,
                                               vcl::PrinterController& i_rListener );
-    
+
 	virtual sal_Bool					EndJob();
 	virtual sal_Bool					AbortJob();
 	virtual SalGraphics*			StartPage( ImplJobSetup* i_pSetupData, sal_Bool i_bNewJobData );
 	virtual sal_Bool					EndPage();
 	virtual sal_uLong					GetErrorCode();
-    
+
     private:
     AquaSalPrinter( const AquaSalPrinter& );
     AquaSalPrinter& operator=(const AquaSalPrinter&);

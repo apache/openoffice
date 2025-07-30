@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -481,7 +481,7 @@ void SwTxtFrm::AdjustFrm( const SwTwips nChgHght, sal_Bool bHasToFit )
         if ( IsVertical() )
         {
             ASSERT( ! IsSwapped(),"Swapped frame while calculating nRstHeight" );
-            
+
             //Badaa: 2008-04-18 * Support for Classical Mongolian Script (SCMS) joint with Jiayanmin
             if ( IsVertLR() )
             		nRstHeight = GetUpper()->Frm().Left()
@@ -572,15 +572,15 @@ com::sun::star::uno::Sequence< ::com::sun::star::style::TabStop > SwTxtFrm::GetT
 
 	SwTwips nRight = aLine.Right();
 	CurrentPos -= aCharPos.X();
-	
-	// get current tab stop information stored in the Frm 
+
+	// get current tab stop information stored in the Frm
 	const SvxTabStop *pTS = aLine.GetLineInfo().GetTabStop( CurrentPos, nRight );
 
 	if( !pTS )
 	{
 		return com::sun::star::uno::Sequence< ::com::sun::star::style::TabStop >();
 	}
-	
+
 	// copy tab stop information into a Sequence, which only contains one element.
 	ts.Position = pTS->GetTabPos();
 	ts.DecimalChar = pTS->GetDecimal();
@@ -594,7 +594,7 @@ com::sun::star::uno::Sequence< ::com::sun::star::style::TabStop > SwTxtFrm::GetT
     case SVX_TAB_ADJUST_DEFAULT: ts.Alignment = ::com::sun::star::style::TabAlign_DEFAULT; break;
     default: break; // prevent warning
     }
-	
+
 	tabs[0] = ts;
 	return tabs;
 }
@@ -1192,7 +1192,7 @@ void SwTxtFrm::FormatAdjust( SwTxtFormatter &rLine,
 	const SwTwips nDocPrtTop = Frm().Top() + Prt().Top();
 	const SwTwips nOldHeight = Prt().SSize().Height();
     SwTwips nChg = rLine.CalcBottomLine() - nDocPrtTop - nOldHeight;
-    // --> OD #i84870# - no shrink of text frame, if it only contains one 
+    // --> OD #i84870# - no shrink of text frame, if it only contains one
     // as-character anchored object.
     if ( nChg < 0 &&
          bOnlyContainsAsCharAnchoredObj )
@@ -1206,7 +1206,7 @@ void SwTxtFrm::FormatAdjust( SwTxtFormatter &rLine,
     // If the frame grows (or shirks) the repaint rectangle cannot simply
     // be rotated back after formatting, because we use the upper left point
     // of the frame for rotation. This point changes when growing/shrinking.
-    
+
     //Badaa: 2008-04-18 * Support for Classical Mongolian Script (SCMS) joint with Jiayanmin
     if ( IsVertical() && !IsVertLR() && nChg )
     {

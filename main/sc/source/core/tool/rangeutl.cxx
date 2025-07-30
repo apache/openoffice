@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -247,7 +247,7 @@ sal_Bool ScRangeUtil::IsAbsPos( const String&	rPosStr,
 	sal_Bool		bIsAbsPos = sal_False;
 	ScRefAddress	thePos;
 
-	bIsAbsPos = ConvertSingleRef( pDoc, rPosStr, nTab, thePos, rDetails ); 
+	bIsAbsPos = ConvertSingleRef( pDoc, rPosStr, nTab, thePos, rDetails );
 	thePos.SetRelCol( sal_False );
 	thePos.SetRelRow( sal_False );
 	thePos.SetRelTab( sal_False );
@@ -517,7 +517,7 @@ sal_Bool ScRangeStringConverter::GetRangeFromString(
             // #i77703# chart ranges in the file format contain both sheet names, even for an external reference sheet.
             // This isn't parsed by ScRange, so try to parse the two Addresses then.
             if (!bResult)
-            {    
+            {
                 bResult = ((rRange.aStart.Parse( aUIString.Copy(0, (xub_StrLen)nIndex), const_cast<ScDocument*>(pDocument),
                                 eConv) & SCA_VALID) == SCA_VALID) &&
                           ((rRange.aEnd.Parse( aUIString.Copy((xub_StrLen)nIndex+1), const_cast<ScDocument*>(pDocument),
@@ -773,7 +773,7 @@ void ScRangeStringConverter::GetStringFromRangeList(
 }
 
 static void lcl_appendCellAddress(
-    rtl::OUStringBuffer& rBuf, ScDocument* pDoc, const ScAddress& rCell, 
+    rtl::OUStringBuffer& rBuf, ScDocument* pDoc, const ScAddress& rCell,
     const ScAddress::ExternalInfo& rExtInfo)
 {
     if (rExtInfo.mbExternal)
@@ -889,7 +889,7 @@ void ScRangeStringConverter::GetStringFromXMLRangeString( OUString& rString, con
                 OUStringBuffer aBuf = aBeginCell.copy(0, nDotPos);
 
                 if (nEndCellDotPos == 0)
-                {    
+                {
                     // workaround for old syntax (probably pre-chart2 age?)
                     // e.g. Sheet1.A1:.B2
                     aBuf.append(aEndCell);
@@ -902,7 +902,7 @@ void ScRangeStringConverter::GetStringFromXMLRangeString( OUString& rString, con
                 }
                 aEndCell = aBuf.makeStringAndClear();
             }
-                
+
             ScAddress::ExternalInfo aExtInfo1, aExtInfo2;
             ScAddress aCell1, aCell2;
             rtl::OUString aBuf;

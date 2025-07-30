@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,23 +7,23 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
 
 #include <avmedia/mediaplayer.hxx>
 #include <avmedia/mediawindow.hxx>
-#include <avmedia/mediaitem.hxx> 
+#include <avmedia/mediaitem.hxx>
 #include "mediamisc.hxx"
 #include "mediacontrol.hrc"
 #include "helpids.hrc"
@@ -77,7 +77,7 @@ MediaFloater::MediaFloater( SfxBindings* _pBindings, SfxChildWindow* pCW, Window
 }
 
 // -----------------------------------------------------------------------------
-	
+
 MediaFloater::~MediaFloater()
 {
 	delete mpMediaWindow;
@@ -95,7 +95,7 @@ void MediaFloater::implInit()
 void MediaFloater::Resize()
 {
 	SfxDockingWindow::Resize();
-	
+
 	if( mpMediaWindow )
 	    mpMediaWindow->setPosSize( Rectangle( Point(), GetOutputSizePixel() ) );
 }
@@ -105,20 +105,20 @@ void MediaFloater::Resize()
 void MediaFloater::ToggleFloatingMode()
 {
 	::avmedia::MediaItem aRestoreItem;
-	
+
 	mpMediaWindow->updateMediaItem( aRestoreItem );
 	delete mpMediaWindow;
 	mpMediaWindow = NULL;
 
 	SfxDockingWindow::ToggleFloatingMode();
-	
+
 	mpMediaWindow = new MediaWindow( this, true );
-	
+
 	mpMediaWindow->setPosSize( Rectangle( Point(), GetOutputSizePixel() ) );
 	mpMediaWindow->executeMediaItem( aRestoreItem );
-	
+
 	Window* pWindow = mpMediaWindow->getWindow();
-	
+
 	if( pWindow )
 	    pWindow->SetHelpId( HID_AVMEDIA_PLAYERWINDOW );
 
@@ -132,7 +132,7 @@ void MediaFloater::setURL( const ::rtl::OUString& rURL, bool bPlayImmediately )
 	if( mpMediaWindow )
 	{
 	    mpMediaWindow->setURL( rURL );
-    	
+
 	    if( mpMediaWindow->isValid() && bPlayImmediately )
 		    mpMediaWindow->start();
     }
@@ -151,9 +151,9 @@ const ::rtl::OUString& MediaFloater::getURL() const
 void MediaFloater::dispatchCurrentURL()
 {
 	SfxDispatcher* pDispatcher = GetBindings().GetDispatcher();
-	
+
 	if( pDispatcher )
-	{	
+	{
 		const SfxStringItem aMediaURLItem( SID_INSERT_AVMEDIA, getURL() );
 		pDispatcher->Execute( SID_INSERT_AVMEDIA, SFX_CALLMODE_RECORD, &aMediaURLItem, 0L );
 	}

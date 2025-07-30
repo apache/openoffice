@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -65,8 +65,8 @@
 #include "drawdoc.hxx"
 #include "DrawDocShell.hxx"
 #include "drawview.hxx"
-#include "sdabstdlg.hxx" 
-#include "brkdlg.hrc" 
+#include "sdabstdlg.hxx"
+#include "brkdlg.hrc"
 namespace sd {
 
 #define	MIN_ACTIONS_FOR_DIALOG	5000	// bei mehr als 1600 Metaobjekten
@@ -122,7 +122,7 @@ void DrawViewShell::FuTemp03(SfxRequest& rReq)
 				OSL_ENSURE(pFact, "Dialogdiet fail!");
 				AbstractSvxObjectNameDialog* pDlg = pFact->CreateSvxObjectNameDialog(NULL, aName);
 				OSL_ENSURE(pDlg, "Dialogdiet fail!");
-				
+
 				pDlg->SetCheckNameHdl(LINK(this, DrawViewShell, NameObjectHdl));
 
 				if(RET_OK == pDlg->Execute())
@@ -201,7 +201,7 @@ void DrawViewShell::FuTemp03(SfxRequest& rReq)
 			rReq.Done ();
 		}
 		break;
-		
+
 		case SID_COMBINE:  // BASIC
 		{
 			// #88224# End text edit to avoid conflicts
@@ -375,7 +375,7 @@ void DrawViewShell::FuTemp03(SfxRequest& rReq)
                             nCount += pGraf->getMetafileFromEmbeddedSvg().GetActionCount();
                         }
                     }
-                    
+
                     if(pOle2 && pOle2->GetGraphic())
                     {
                         nCount += pOle2->GetGraphic()->GetGDIMetaFile().GetActionCount();

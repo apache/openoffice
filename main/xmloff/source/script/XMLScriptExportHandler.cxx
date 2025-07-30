@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -57,8 +57,8 @@ void XMLScriptExportHandler::Export(
 	Sequence<PropertyValue> & rValues,
 	sal_Bool bUseWhitespace)
 {
-	
-	rExport.AddAttribute(XML_NAMESPACE_SCRIPT, XML_LANGUAGE, 
+
+	rExport.AddAttribute(XML_NAMESPACE_SCRIPT, XML_LANGUAGE,
 						 rExport.GetNamespaceMap().GetQNameByKey(
 							 XML_NAMESPACE_OOO, GetXMLToken(XML_SCRIPT) ) );
 	rExport.AddAttribute(XML_NAMESPACE_SCRIPT, XML_EVENT_NAME, rEventQName);
@@ -78,7 +78,7 @@ void XMLScriptExportHandler::Export(
 		// else: disregard
 	}
 
-	SvXMLElementExport aEventElemt(rExport, XML_NAMESPACE_SCRIPT, 
-								   XML_EVENT_LISTENER, 
+	SvXMLElementExport aEventElemt(rExport, XML_NAMESPACE_SCRIPT,
+								   XML_EVENT_LISTENER,
 								   bUseWhitespace, sal_False);
 }

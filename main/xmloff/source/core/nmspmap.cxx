@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -40,7 +40,7 @@ using ::rtl::OUStringBuffer;
 using namespace ::xmloff::token;
 
 /* The basic idea of this class is that we have two two ways to search our
- * data...by prefix and by key. We use an STL hash_map for fast prefix 
+ * data...by prefix and by key. We use an STL hash_map for fast prefix
  * searching and an STL map for fast key searching.
  *
  * The references to an 'Index' refer to an earlier implementation of the
@@ -345,7 +345,7 @@ sal_uInt16 SvXMLNamespaceMap::_GetKeyByAttrName( const OUString& rAttrName,
 		{
             // found: retrieve namespace key
             nKey = xEntry->nKey = (*aIter).second->nKey;
-            if ( pNamespace ) 
+            if ( pNamespace )
                 *pNamespace = (*aIter).second->sName;
         }
         else if ( xEntry->sPrefix == sXMLNS )
@@ -381,7 +381,7 @@ sal_uInt16 SvXMLNamespaceMap::GetNextKey( sal_uInt16 nLastKey ) const
 
 sal_uInt16 SvXMLNamespaceMap::GetKeyByIndex( sal_uInt16 nIdx ) const
 {
-	return nIdx; 
+	return nIdx;
 }
 
 sal_uInt16 SvXMLNamespaceMap::GetIndexByKey( sal_uInt16 nKey ) const
@@ -422,7 +422,7 @@ sal_Bool SvXMLNamespaceMap::AddAtIndex( sal_uInt16 nIdx, const sal_Char *pPrefix
 {
 	OUString sPrefix( OUString::createFromAscii(pPrefix) );
 	OUString sName( OUString::createFromAscii(pName) );
-	
+
 	return AddAtIndex( nIdx, sPrefix, sName, nKey );
 }
 
@@ -487,7 +487,7 @@ sal_Bool SvXMLNamespaceMap::NormalizeW3URI( ::rtl::OUString& rName )
     //                   (year)/(WG name)
     // For the following WG/standards names:
     // - xforms
-    
+
     sal_Bool bSuccess = sal_False;
 	const OUString sURIPrefix = GetXMLToken( XML_URI_W3_PREFIX );
     if( rName.compareTo( sURIPrefix, sURIPrefix.getLength() ) == 0 )
@@ -526,8 +526,8 @@ sal_Bool SvXMLNamespaceMap::NormalizeOasisURN( ::rtl::OUString& rName )
 		return sal_True;
 	}
 
-	// 
-	// Check if URN matches 
+	//
+	// Check if URN matches
 	// :urn:oasis:names:tc:[^:]*:xmlns:[^:]*:1.[^:]*
 	//                     |---|       |---| |-----|
 	//                     TC-Id      Sub-Id Version
@@ -548,7 +548,7 @@ sal_Bool SvXMLNamespaceMap::NormalizeOasisURN( ::rtl::OUString& rName )
 	sal_Int32 nTCIdEnd = rName.indexOf( ':', nTCIdStart );
 	if( -1 == nTCIdEnd )
 		return sal_False;
-	
+
 	// :urn:oasis:names:tc:[^:]:xmlns.*
 	nPos = nTCIdEnd + 1;
 	OUString sTmp( rName.copy( nPos ) );
@@ -568,7 +568,7 @@ sal_Bool SvXMLNamespaceMap::NormalizeOasisURN( ::rtl::OUString& rName )
 
 	// :urn:oasis:names:tc:[^:]:xmlns:[^:]*:[^:][^:][^:][^:]*
 	sal_Int32 nVersionStart = nPos+1;
-	if( nVersionStart+2 >= nNameLen || 
+	if( nVersionStart+2 >= nNameLen ||
 		-1 != rName.indexOf( ':', nVersionStart ) )
 		return sal_False;
 

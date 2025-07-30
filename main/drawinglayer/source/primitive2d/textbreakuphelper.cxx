@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
@@ -51,8 +51,8 @@ namespace drawinglayer
             {
                 // init TextLayouter when no dxarray
                 maTextLayouter.setFontAttribute(
-                    mrSource.getFontAttribute(), 
-                    maDecTrans.getScale().getX(), 
+                    mrSource.getFontAttribute(),
+                    maDecTrans.getScale().getX(),
                     maDecTrans.getScale().getY(),
                     mrSource.getLocale());
             }
@@ -75,7 +75,7 @@ namespace drawinglayer
                 {
                     // prepare new DXArray for the single word
                     aNewDXArray = ::std::vector< double >(
-                        mrSource.getDXArray().begin() + (nIndex - mrSource.getTextPosition()), 
+                        mrSource.getDXArray().begin() + (nIndex - mrSource.getTextPosition()),
                         mrSource.getDXArray().begin() + ((nIndex + nLength) - mrSource.getTextPosition()));
                 }
 
@@ -102,7 +102,7 @@ namespace drawinglayer
                     double fOffsetNoScale(fOffset);
                     const double fFontScaleX(maDecTrans.getScale().getX());
 
-                    if(!basegfx::fTools::equal(fFontScaleX, 1.0) 
+                    if(!basegfx::fTools::equal(fFontScaleX, 1.0)
                         && !basegfx::fTools::equalZero(fFontScaleX))
                     {
                         fOffsetNoScale /= fFontScaleX;
@@ -133,7 +133,7 @@ namespace drawinglayer
                 if(bCreate)
                 {
                     // check if we have a decorated primitive as source
-                    const TextDecoratedPortionPrimitive2D* pTextDecoratedPortionPrimitive2D = 
+                    const TextDecoratedPortionPrimitive2D* pTextDecoratedPortionPrimitive2D =
                         dynamic_cast< const TextDecoratedPortionPrimitive2D* >(&mrSource);
 
                     if(pTextDecoratedPortionPrimitive2D)
@@ -149,7 +149,7 @@ namespace drawinglayer
                                 mrSource.getFontAttribute(),
                                 mrSource.getLocale(),
                                 mrSource.getFontColor(),
-                            
+
                                 pTextDecoratedPortionPrimitive2D->getOverlineColor(),
                                 pTextDecoratedPortionPrimitive2D->getTextlineColor(),
                                 pTextDecoratedPortionPrimitive2D->getFontOverline(),
@@ -209,7 +209,7 @@ namespace drawinglayer
                     const ::com::sun::star::lang::Locale& rLocale = mrSource.getLocale();
                     const sal_Int32 nTextPosition(mrSource.getTextPosition());
                     sal_Int32 nCurrent(nTextPosition);
-                    
+
                     switch(aBreakupUnit)
                     {
                         case BreakupUnit_character:
@@ -235,7 +235,7 @@ namespace drawinglayer
                         {
                             ::com::sun::star::i18n::Boundary nNextWordBoundary(xBreakIterator->getWordBoundary(rTxt, nTextPosition, rLocale, ::com::sun::star::i18n::WordType::ANY_WORD, sal_True));
                             sal_Int32 a(nTextPosition);
-                            
+
                             for(; a < nTextPosition + nTextLength; a++)
                             {
                                 if(a == nNextWordBoundary.endPos)
@@ -271,7 +271,7 @@ namespace drawinglayer
                         {
                             sal_Int32 nNextSentenceBreak(xBreakIterator->endOfSentence(rTxt, nTextPosition, rLocale));
                             sal_Int32 a(nTextPosition);
-                            
+
                             for(; a < nTextPosition + nTextLength; a++)
                             {
                                 if(a == nNextSentenceBreak)
@@ -287,7 +287,7 @@ namespace drawinglayer
                         }
                     }
                 }
-                
+
                 mxResult = Primitive2DVectorToPrimitive2DSequence(aTempResult);
             }
         }

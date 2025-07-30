@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -112,7 +112,7 @@ public:
         ::com::sun::star::drawing::framework::XConfiguration> mxRequestedConfiguration;
 
     ViewShellBase* mpBase;
-    
+
     ::boost::shared_ptr<ResourceFactoryManager> mpResourceFactoryContainer;
 
     ::boost::shared_ptr<ConfigurationControllerResourceManager> mpResourceManager;
@@ -138,14 +138,14 @@ ConfigurationController::Lock::Lock (const Reference<XConfigurationController>& 
     : mxController(rxController)
 {
     OSL_ASSERT(mxController.is());
-    
+
     if (mxController.is())
         mxController->lock();
 }
 
- 
- 
-  
+
+
+
 ConfigurationController::Lock::~Lock (void)
 {
     if (mxController.is())
@@ -282,7 +282,7 @@ void SAL_CALL ConfigurationController::notifyEvent (
 
 
 //----- XConfigurationController ----------------------------------------------
-    
+
 void SAL_CALL ConfigurationController::lock (void)
     throw (RuntimeException)
 {
@@ -292,7 +292,7 @@ void SAL_CALL ConfigurationController::lock (void)
     ::osl::MutexGuard aGuard (maMutex);
     ThrowIfDisposed();
 
-    
+
     ++mpImplementation->mnLockCount;
     if (mpImplementation->mpConfigurationUpdaterLock.get()==NULL)
         mpImplementation->mpConfigurationUpdaterLock
@@ -375,7 +375,7 @@ void SAL_CALL ConfigurationController::requestResourceActivation (
                 requestResourceDeactivation(aResourceList[nIndex]);
             }
         }
-    
+
         Reference<XConfigurationChangeRequest> xRequest(
             new GenericConfigurationChangeRequest(
                 rxResourceId,
@@ -472,7 +472,7 @@ sal_Bool SAL_CALL ConfigurationController::hasPendingRequests (void)
 {
     ::osl::MutexGuard aGuard (maMutex);
     ThrowIfDisposed();
-    
+
     return ! mpImplementation->mpQueueProcessor->IsEmpty();
 }
 
@@ -591,7 +591,7 @@ void SAL_CALL ConfigurationController::restoreConfiguration (
 
 
 //----- XResourceFactoryManager -----------------------------------------------
-    
+
 void SAL_CALL ConfigurationController::addResourceFactory(
     const OUString& sResourceURL,
     const Reference<XResourceFactory>& rxResourceFactory)
@@ -604,7 +604,7 @@ void SAL_CALL ConfigurationController::addResourceFactory(
 
 
 
-    
+
 void SAL_CALL ConfigurationController::removeResourceFactoryForURL(
     const OUString& sResourceURL)
     throw (RuntimeException)

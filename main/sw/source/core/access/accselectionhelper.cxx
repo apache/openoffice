@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,19 +7,19 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
- 
+
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_sw.hxx"
@@ -124,20 +124,20 @@ void SwAccessibleSelectionHelper::selectAccessibleChild(
 }
 
 //When the selected state of the SwFrmOrObj is setted, return true.
-static sal_Bool lcl_getSelectedState(const SwAccessibleChild& aChild, 
+static sal_Bool lcl_getSelectedState(const SwAccessibleChild& aChild,
 									 SwAccessibleContext* pContext,
 									 SwAccessibleMap* pMap)
 {
 	Reference< XAccessible > xAcc;
     if ( aChild.GetSwFrm() )
-    {        
+    {
 		xAcc = pMap->GetContext( aChild.GetSwFrm(), sal_False );
     }
     else if ( aChild.GetDrawObject() )
     {
         xAcc = pMap->GetContext( aChild.GetDrawObject(), pContext, sal_False );
     }
-	
+
 	if( xAcc.is() )
 	{
 		Reference< XAccessibleContext > pRContext = xAcc->getAccessibleContext();
@@ -277,7 +277,7 @@ sal_Int32 SwAccessibleSelectionHelper::getSelectedAccessibleChildCount(  )
 				}
 			}
 		}
-		//If the SwFrmOrObj is not selected directly in the UI, 
+		//If the SwFrmOrObj is not selected directly in the UI,
 		//we should check whether it is selected in the selection cursor.
 		if( nCount == 0 )
 		{

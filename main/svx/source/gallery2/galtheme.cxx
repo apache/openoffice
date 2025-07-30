@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -73,7 +73,7 @@ DBG_NAME(GalleryTheme)
 GalleryTheme::GalleryTheme( Gallery* pGallery, GalleryThemeEntry* pThemeEntry ) :
 		pParent               ( pGallery ),
 		pThm		          ( pThemeEntry ),
-        mnThemeLockCount      ( 0 ),      
+        mnThemeLockCount      ( 0 ),
 		mnBroadcasterLockCount( 0 ),
 		nDragPos	          ( 0 ),
 		bDragging	          ( sal_False )
@@ -110,7 +110,7 @@ void GalleryTheme::ImplCreateSvDrawStorage()
 	{
 		aSvDrawStorageRef = new SvStorage( sal_False, GetSdvURL().GetMainURL( INetURLObject::NO_DECODE ), pThm->IsReadOnly() ? STREAM_READ : STREAM_STD_READWRITE );
 		// #i50423# ReadOnly may not been set though the file can't be written (because of security reasons)
-		if ( ( aSvDrawStorageRef->GetError() != ERRCODE_NONE ) && !pThm->IsReadOnly() )	
+		if ( ( aSvDrawStorageRef->GetError() != ERRCODE_NONE ) && !pThm->IsReadOnly() )
 			aSvDrawStorageRef = new SvStorage( sal_False, GetSdvURL().GetMainURL( INetURLObject::NO_DECODE ), STREAM_READ );
 	}
 	else
@@ -394,15 +394,15 @@ void GalleryTheme::ImplBroadcast( sal_uIntPtr nUpdatePos )
 sal_Bool GalleryTheme::UnlockTheme()
 {
     DBG_ASSERT( mnThemeLockCount, "Theme is not locked" );
-    
+
     sal_Bool bRet = sal_False;
-    
+
     if( mnThemeLockCount )
     {
         --mnThemeLockCount;
         bRet = sal_True;
     }
-    
+
     return bRet;
 }
 
@@ -974,7 +974,7 @@ sal_Bool GalleryTheme::InsertGraphic( const Graphic& rGraphic, sal_uIntPtr nInse
             if( CVT_SVM == nExportFormat )
             {
                 GDIMetaFile aMtf( rGraphic.GetGDIMetaFile() );
-                
+
 			    aMtf.Write( *pOStm );
 			    bRet = ( pOStm->GetError() == ERRCODE_NONE );
             }
@@ -1050,7 +1050,7 @@ sal_Bool GalleryTheme::InsertModel( const FmFormModel& rModel, sal_uIntPtr nInse
 			FmFormModel*	pFormModel = (FmFormModel*) &rModel;
 
 		    pFormModel->BurnInStyleSheetAttributes();
-		    
+
             {
 			    uno::Reference< io::XOutputStream > xDocOut( new utl::OOutputStreamWrapper( aMemStm ) );
 
@@ -1616,7 +1616,7 @@ SvStream& operator>>( SvStream& rIn, GalleryTheme& rTheme )
 	return rTheme.ReadData( rIn );
 }
 
-void GalleryTheme::ImplSetModified( sal_Bool bModified ) 
+void GalleryTheme::ImplSetModified( sal_Bool bModified )
 { pThm->SetModified( bModified ); }
 
 const String& GalleryTheme::GetRealName() const { return pThm->GetThemeName(); }

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -54,7 +54,7 @@ namespace
 {
     static OString getHttpPostHeader(OString path, sal_Int32 length)
     {
-        OStringBuffer result = 
+        OStringBuffer result =
             "POST " + path + " HTTP/1.0\r\n"
             "Content-Type: text/xml; charset=\"utf-8\"\r\n"
             "Content-Length: ";
@@ -70,7 +70,7 @@ namespace oooimprovement
         : m_ServiceFactory(sf)
         , m_Url(url)
     { }
-    
+
     void SoapSender::send(const SoapRequest& request) const
     {
         Reference<XTempFile> temp_file(
@@ -82,19 +82,19 @@ namespace oooimprovement
         Reference<XURLTransformer> url_trans(
             m_ServiceFactory->createInstance(OUString::createFromAscii("com.sun.star.util.URLTransformer")),
             UNO_QUERY_THROW);
-    
-        // writing request to tempfile 
+
+        // writing request to tempfile
         {
             Reference<XOutputStream> temp_stream = temp_file->getOutputStream();
             request.writeTo(temp_stream);
             temp_stream->flush();
             temp_stream->closeOutput();
         }
-        
+
         // parse Url
         URL url;
         {
-            url.Complete = m_Url;          
+            url.Complete = m_Url;
             url_trans->parseStrict(url);
         }
 
@@ -108,7 +108,7 @@ namespace oooimprovement
                     OUString::createFromAscii("unable to connect to SOAP server"),
                     Reference<XInterface>());
         }
-        
+
         // send header
         {
             OStringBuffer path_on_server =
@@ -118,9 +118,9 @@ namespace oooimprovement
             if(socket->write(header.getStr(), header.getLength()) != static_cast<sal_Int32>(header.getLength()))
                 throw RuntimeException(
                     OUString::createFromAscii("error while sending HTTP header"),
-                    Reference<XInterface>()); 
+                    Reference<XInterface>());
         }
-        
+
         // send soap request
         {
             Reference<XInputStream> temp_stream = file_access->openFileRead(temp_file->getUri());
@@ -154,4 +154,4 @@ namespace oooimprovement
                     Reference<XInterface>());
         }
     }
-} 
+}

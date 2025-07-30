@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -174,7 +174,7 @@ namespace toolkit
         if ( xPeerListener.is() )
             xPeerListener->elementInserted( i_event );
     }
-    
+
     //------------------------------------------------------------------------------------------------------------------
     void SAL_CALL AnimatedImagesControl::elementRemoved( const ContainerEvent& i_event ) throw (RuntimeException)
     {
@@ -182,7 +182,7 @@ namespace toolkit
         if ( xPeerListener.is() )
             xPeerListener->elementRemoved( i_event );
     }
-    
+
     //------------------------------------------------------------------------------------------------------------------
     void SAL_CALL AnimatedImagesControl::elementReplaced( const ContainerEvent& i_event ) throw (RuntimeException)
     {
@@ -288,7 +288,7 @@ namespace toolkit
     {
         return ::rtl::OUString::createFromAscii( "org.openoffice.comp.toolkit.AnimatedImagesControlModel" );
     }
-    
+
     //------------------------------------------------------------------------------------------------------------------
     Sequence< ::rtl::OUString > SAL_CALL AnimatedImagesControlModel::getSupportedServiceNames() throw(RuntimeException)
     {
@@ -363,13 +363,13 @@ namespace toolkit
         OSL_VERIFY( getPropertyValue( GetPropertyName( BASEPROPERTY_STEP_TIME ) ) >>= nStepTime );
         return nStepTime;
     }
-    
+
     //------------------------------------------------------------------------------------------------------------------
     void SAL_CALL AnimatedImagesControlModel::setStepTime( ::sal_Int32 i_stepTime ) throw (RuntimeException)
     {
         setPropertyValue( GetPropertyName( BASEPROPERTY_STEP_TIME ), makeAny( i_stepTime ) );
     }
-    
+
     //------------------------------------------------------------------------------------------------------------------
     ::sal_Bool SAL_CALL AnimatedImagesControlModel::getAutoRepeat() throw (RuntimeException)
     {
@@ -377,13 +377,13 @@ namespace toolkit
         OSL_VERIFY( getPropertyValue( GetPropertyName( BASEPROPERTY_AUTO_REPEAT ) ) >>= bAutoRepeat );
         return bAutoRepeat;
     }
-    
+
     //------------------------------------------------------------------------------------------------------------------
     void SAL_CALL AnimatedImagesControlModel::setAutoRepeat( ::sal_Bool i_autoRepeat ) throw (RuntimeException)
     {
         setPropertyValue( GetPropertyName( BASEPROPERTY_AUTO_REPEAT ), makeAny( i_autoRepeat ) );
     }
-    
+
     //------------------------------------------------------------------------------------------------------------------
     ::sal_Int16 SAL_CALL AnimatedImagesControlModel::getScaleMode() throw (RuntimeException)
     {
@@ -407,7 +407,7 @@ namespace toolkit
 
         return m_pData->aImageSets.size();
     }
-    
+
     //------------------------------------------------------------------------------------------------------------------
     Sequence< ::rtl::OUString > SAL_CALL AnimatedImagesControlModel::getImageSet( ::sal_Int32 i_index ) throw (IndexOutOfBoundsException, RuntimeException)
     {
@@ -419,7 +419,7 @@ namespace toolkit
 
         return m_pData->aImageSets[ i_index ];
     }
-    
+
     //------------------------------------------------------------------------------------------------------------------
     void SAL_CALL AnimatedImagesControlModel::insertImageSet( ::sal_Int32 i_index, const Sequence< ::rtl::OUString >& i_imageURLs ) throw (IndexOutOfBoundsException, RuntimeException)
     {
@@ -436,7 +436,7 @@ namespace toolkit
         // listener notification
         lcl_notify( aGuard, BrdcstHelper, &XContainerListener::elementInserted, i_index, i_imageURLs, *this );
     }
-    
+
     //------------------------------------------------------------------------------------------------------------------
     void SAL_CALL AnimatedImagesControlModel::replaceImageSet( ::sal_Int32 i_index, const Sequence< ::rtl::OUString >& i_imageURLs ) throw (IndexOutOfBoundsException, RuntimeException)
     {
@@ -453,7 +453,7 @@ namespace toolkit
         // listener notification
         lcl_notify( aGuard, BrdcstHelper, &XContainerListener::elementReplaced, i_index, i_imageURLs, *this );
     }
-    
+
     //------------------------------------------------------------------------------------------------------------------
     void SAL_CALL AnimatedImagesControlModel::removeImageSet( ::sal_Int32 i_index ) throw (IndexOutOfBoundsException, RuntimeException)
     {
@@ -472,13 +472,13 @@ namespace toolkit
         // listener notification
         lcl_notify( aGuard, BrdcstHelper, &XContainerListener::elementRemoved, i_index, aRemovedElement, *this );
     }
-    
+
     //------------------------------------------------------------------------------------------------------------------
     void SAL_CALL AnimatedImagesControlModel::addContainerListener( const Reference< XContainerListener >& i_listener ) throw (RuntimeException)
     {
         BrdcstHelper.addListener( XContainerListener::static_type(), i_listener );
     }
-    
+
     //------------------------------------------------------------------------------------------------------------------
     void SAL_CALL AnimatedImagesControlModel::removeContainerListener( const Reference< XContainerListener >& i_listener ) throw (RuntimeException)
     {

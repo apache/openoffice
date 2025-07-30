@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -61,7 +61,7 @@ namespace drawinglayer
     namespace primitive2d
     {
         Primitive2DReference createPolyPolygonFillPrimitive(
-            const basegfx::B2DPolyPolygon& rPolyPolygon, 
+            const basegfx::B2DPolyPolygon& rPolyPolygon,
             const attribute::SdrFillAttribute& rFill,
             const attribute::FillGradientAttribute& rFillGradient)
         {
@@ -70,14 +70,14 @@ namespace drawinglayer
             const basegfx::B2DRange aRange(basegfx::tools::getRange(rPolyPolygon));
 
             return createPolyPolygonFillPrimitive(
-                rPolyPolygon, 
+                rPolyPolygon,
                 aRange,
                 rFill,
                 rFillGradient);
         }
 
         Primitive2DReference createPolyPolygonFillPrimitive(
-            const basegfx::B2DPolyPolygon& rPolyPolygon, 
+            const basegfx::B2DPolyPolygon& rPolyPolygon,
             const basegfx::B2DRange& rDefinitionRange,
             const attribute::SdrFillAttribute& rFill,
             const attribute::FillGradientAttribute& rFillGradient)
@@ -93,29 +93,29 @@ namespace drawinglayer
             if(!rFill.getGradient().isDefault())
             {
                 pNewFillPrimitive = new PolyPolygonGradientPrimitive2D(
-                    rPolyPolygon, 
-                    rDefinitionRange, 
+                    rPolyPolygon,
+                    rDefinitionRange,
                     rFill.getGradient());
             }
             else if(!rFill.getHatch().isDefault())
             {
                 pNewFillPrimitive = new PolyPolygonHatchPrimitive2D(
-                    rPolyPolygon, 
-                    rDefinitionRange, 
-                    rFill.getColor(), 
+                    rPolyPolygon,
+                    rDefinitionRange,
+                    rFill.getColor(),
                     rFill.getHatch());
             }
             else if(!rFill.getFillGraphic().isDefault())
             {
                 pNewFillPrimitive = new PolyPolygonGraphicPrimitive2D(
-                    rPolyPolygon, 
-                    rDefinitionRange, 
+                    rPolyPolygon,
+                    rDefinitionRange,
                     rFill.getFillGraphic().createFillGraphicAttribute(rDefinitionRange));
             }
             else
             {
                 pNewFillPrimitive = new PolyPolygonColorPrimitive2D(
-                    rPolyPolygon, 
+                    rPolyPolygon,
                     rFill.getColor());
             }
 
@@ -137,7 +137,7 @@ namespace drawinglayer
                 const basegfx::B2DRange aRange(basegfx::tools::getRange(rPolyPolygon));
                 const Primitive2DReference xRefB(
                     new FillGradientPrimitive2D(
-                        aRange, 
+                        aRange,
                         rDefinitionRange,
                         rFillGradient));
                 const Primitive2DSequence aAlpha(&xRefB, 1L);
@@ -153,7 +153,7 @@ namespace drawinglayer
         }
 
 		Primitive2DReference createPolygonLinePrimitive(
-			const basegfx::B2DPolygon& rPolygon, 
+			const basegfx::B2DPolygon& rPolygon,
 			const attribute::SdrLineAttribute& rLine,
 			const attribute::SdrLineStartEndAttribute& rStroke)
 		{
@@ -191,7 +191,7 @@ namespace drawinglayer
 		}
 
 		Primitive2DReference createTextPrimitive(
-			const basegfx::B2DPolyPolygon& rUnitPolyPolygon, 
+			const basegfx::B2DPolyPolygon& rUnitPolyPolygon,
 			const basegfx::B2DHomMatrix& rObjectTransform,
 			const attribute::SdrTextAttribute& rText,
 			const attribute::SdrLineAttribute& rStroke,
@@ -229,18 +229,18 @@ namespace drawinglayer
 
 					// create with unit polygon
 					pNew = new SdrContourTextPrimitive2D(
-                        &rText.getSdrText(), 
-                        rText.getOutlinerParaObject(), 
-                        aScaledUnitPolyPolygon, 
+                        &rText.getSdrText(),
+                        rText.getOutlinerParaObject(),
+                        aScaledUnitPolyPolygon,
                         rObjectTransform);
 				}
 				else
 				{
 					// create with unit polygon
 					pNew = new SdrContourTextPrimitive2D(
-                        &rText.getSdrText(), 
-                        rText.getOutlinerParaObject(), 
-                        rUnitPolyPolygon, 
+                        &rText.getSdrText(),
+                        rText.getOutlinerParaObject(),
+                        rUnitPolyPolygon,
                         rObjectTransform);
 				}
 			}
@@ -250,9 +250,9 @@ namespace drawinglayer
 				basegfx::B2DPolyPolygon aScaledPolyPolygon(rUnitPolyPolygon);
 				aScaledPolyPolygon.transform(rObjectTransform);
 				pNew = new SdrPathTextPrimitive2D(
-                    &rText.getSdrText(), 
-                    rText.getOutlinerParaObject(), 
-                    aScaledPolyPolygon, 
+                    &rText.getSdrText(),
+                    rText.getOutlinerParaObject(),
+                    aScaledPolyPolygon,
                     rText.getSdrFormTextAttribute());
 			}
 			else
@@ -289,7 +289,7 @@ namespace drawinglayer
                 // #121494# if we have no scale use at least 1.0 to have a carrier e.g. for
                 // mirror values, else these will get lost
                 aAnchorTransform = basegfx::tools::createScaleTranslateB2DHomMatrix(
-                    basegfx::fTools::equalZero(aTextAnchorRange.getWidth()) ? 1.0 : aTextAnchorRange.getWidth(), 
+                    basegfx::fTools::equalZero(aTextAnchorRange.getWidth()) ? 1.0 : aTextAnchorRange.getWidth(),
                     basegfx::fTools::equalZero(aTextAnchorRange.getHeight()) ? 1.0 : aTextAnchorRange.getHeight(),
                     aTextAnchorRange.getMinX(), aTextAnchorRange.getMinY());
 
@@ -304,8 +304,8 @@ namespace drawinglayer
 				{
 					// streched text in range
 					pNew = new SdrStretchTextPrimitive2D(
-                        &rText.getSdrText(), 
-                        rText.getOutlinerParaObject(), 
+                        &rText.getSdrText(),
+                        rText.getOutlinerParaObject(),
                         aAnchorTransform,
                         rText.isFixedCellHeight());
 				}
@@ -313,14 +313,14 @@ namespace drawinglayer
 				{
 					// build new primitive
 					pNew = new SdrBlockTextPrimitive2D(
-                        &rText.getSdrText(), 
-                        rText.getOutlinerParaObject(), 
-                        aAnchorTransform, 
+                        &rText.getSdrText(),
+                        rText.getOutlinerParaObject(),
+                        aAnchorTransform,
                         rText.getSdrTextHorzAdjust(),
                         rText.getSdrTextVertAdjust(),
                         rText.isFixedCellHeight(),
-                        rText.isScroll(), 
-                        bCellText, 
+                        rText.isScroll(),
+                        bCellText,
                         bWordWrap,
 						bClipOnBounds);
 				}
@@ -339,7 +339,7 @@ namespace drawinglayer
 					// create content sequence
 					const Primitive2DReference xRefA(pNew);
 					const Primitive2DSequence aContent(&xRefA, 1L);
-					
+
 					// create and add animated switch primitive
 					return Primitive2DReference(new AnimatedBlinkPrimitive2D(aAnimationList, aContent, true));
 				}
@@ -349,7 +349,7 @@ namespace drawinglayer
 					return Primitive2DReference(pNew);
 				}
 			}
-			
+
             if(rText.isScroll())
 			{
                 // suppress scroll when FontWork
@@ -457,7 +457,7 @@ namespace drawinglayer
                 // to suppress actively edited content if needed
 			    const Primitive2DReference xRefA(pNew);
 			    const Primitive2DSequence aContent(&xRefA, 1L);
-				
+
 			    // create and add TextHierarchyEditPrimitive2D primitive
 			    return Primitive2DReference(new TextHierarchyEditPrimitive2D(aContent));
             }
@@ -469,14 +469,14 @@ namespace drawinglayer
 		}
 
         Primitive2DSequence createEmbeddedShadowPrimitive(
-            const Primitive2DSequence& rContent, 
+            const Primitive2DSequence& rContent,
             const attribute::SdrShadowAttribute& rShadow)
         {
 			if(rContent.hasElements())
 			{
 				Primitive2DSequence aRetval(2);
 		        basegfx::B2DHomMatrix aShadowOffset;
-                
+
 		        // prepare shadow offset
                 aShadowOffset.set(0, 2, rShadow.getOffset().getX());
 		        aShadowOffset.set(1, 2, rShadow.getOffset().getY());
@@ -484,18 +484,18 @@ namespace drawinglayer
 		        // create shadow primitive and add content
 		        aRetval[0] = Primitive2DReference(
                     new ShadowPrimitive2D(
-                        aShadowOffset, 
-                        rShadow.getColor(), 
+                        aShadowOffset,
+                        rShadow.getColor(),
                         rContent));
 
 		        if(0.0 != rShadow.getTransparence())
 		        {
 			        // create SimpleTransparencePrimitive2D
 			        const Primitive2DSequence aTempContent(&aRetval[0], 1);
-			        
+
                     aRetval[0] = Primitive2DReference(
                         new UnifiedTransparencePrimitive2D(
-                            aTempContent, 
+                            aTempContent,
                             rShadow.getTransparence()));
 		        }
 

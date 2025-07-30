@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -1009,7 +1009,7 @@ void ScFormatShell::ExecuteNumFormat( SfxRequest& rReq )
 				LanguageType eLanguage = ScGlobal::eLnge;
 				sal_Int16 eType = -1;
 				sal_uInt32 nCurrentNumberFormat;
-				
+
                 pDoc->GetNumberFormat(pViewData->GetCurX(), pViewData->GetCurY(), pViewData->GetTabNo(), nCurrentNumberFormat);
 				const SvNumberformat* pEntry = pFormatter->GetEntry(nCurrentNumberFormat);
 
@@ -1030,18 +1030,18 @@ void ScFormatShell::ExecuteNumFormat( SfxRequest& rReq )
 				case NUMBERFORMAT_PERCENT| NUMBERFORMAT_DEFINED:
 				case NUMBERFORMAT_CURRENCY:
 				case NUMBERFORMAT_CURRENCY|NUMBERFORMAT_DEFINED:
-					eType = 0; 
+					eType = 0;
 					break;
 				default:
 					eType =-1;
 				}
-				
+
 				if(SFX_ITEM_SET == pReqArgs->GetItemState(nSlot, true, &pItem) && eType != -1)
 				{
 					String aCode = ((const SfxStringItem*)pItem)->GetValue();
 					sal_uInt16 aLen = aCode.Len();
 					String* sFormat = new String[4];
-					String sTmpStr = String::CreateFromAscii(""); 
+					String sTmpStr = String::CreateFromAscii("");
 					sal_uInt16 nCount(0);
 					sal_uInt16 nStrCount(0);
 
@@ -1072,7 +1072,7 @@ void ScFormatShell::ExecuteNumFormat( SfxRequest& rReq )
 					const sal_uInt16 nLeadZeroes = (sal_uInt16)sFormat[3].ToInt32();
 
 					pFormatter->GenerateFormat(
-                        aCode, 
+                        aCode,
                         nCurrentNumberFormat,//modify
 						eLanguage,
 						bThousand,
@@ -1240,7 +1240,7 @@ void ScFormatShell::ExecuteAlignment( SfxRequest& rReq )
                 }
             }
     }
-    rBindings.Invalidate( SID_ATTR_PARA_ADJUST_LEFT );			
+    rBindings.Invalidate( SID_ATTR_PARA_ADJUST_LEFT );
     rBindings.Invalidate( SID_ATTR_PARA_ADJUST_RIGHT );
     rBindings.Invalidate( SID_ATTR_PARA_ADJUST_BLOCK );
     rBindings.Invalidate( SID_ATTR_PARA_ADJUST_CENTER);
@@ -1894,7 +1894,7 @@ void ScFormatShell::GetAttrState( SfxItemSet& rSet )
 
                 pTabViewShell->GetSelectionFrame(aBoxItem, aInfoItem);
 
-				if( aBoxItem.GetTop() ) 
+				if( aBoxItem.GetTop() )
 				{
 					bCol = 1;
 					aCol = aBoxItem.GetTop()->GetColor() ;
@@ -1903,7 +1903,7 @@ void ScFormatShell::GetAttrState( SfxItemSet& rSet )
 					aLine.SetInWidth( aBoxItem.GetTop()->GetInWidth());
 					aLine.SetDistance( aBoxItem.GetTop()->GetDistance());
 				}
-				
+
                 if( aBoxItem.GetBottom() )
 				{
 					if(bCol == 0)
@@ -1923,7 +1923,7 @@ void ScFormatShell::GetAttrState( SfxItemSet& rSet )
 							bStyleDisable = 1;
 					}
 				}
-				
+
                 if( aBoxItem.GetLeft() )
 				{
 					if(bCol == 0)
@@ -1943,7 +1943,7 @@ void ScFormatShell::GetAttrState( SfxItemSet& rSet )
 							bStyleDisable = 1;
 					}
 				}
-				
+
                 if( aBoxItem.GetRight() )
 				{
 					if(bCol == 0)
@@ -1963,7 +1963,7 @@ void ScFormatShell::GetAttrState( SfxItemSet& rSet )
 							bStyleDisable = 1;
 					}
 				}
-				
+
                 if( aInfoItem.GetVert())
 				{
 					if(bCol == 0)
@@ -1983,7 +1983,7 @@ void ScFormatShell::GetAttrState( SfxItemSet& rSet )
 							bStyleDisable = 1;
 					}
 				}
-				
+
                 if( aInfoItem.GetHori())
 				{
 					if(bCol == 0)
@@ -2004,7 +2004,7 @@ void ScFormatShell::GetAttrState( SfxItemSet& rSet )
 					}
 				}
 
-				if( !aInfoItem.IsValid( VALID_VERT ) 
+				if( !aInfoItem.IsValid( VALID_VERT )
 					|| !aInfoItem.IsValid( VALID_HORI )
 					|| !aInfoItem.IsValid( VALID_LEFT )
 					|| !aInfoItem.IsValid( VALID_RIGHT )
@@ -2025,7 +2025,7 @@ void ScFormatShell::GetAttrState( SfxItemSet& rSet )
 					}
 					else if( bCol == 0 && bColDisable == 0) // if no line available
 					{
-						aCol = COL_AUTO;	
+						aCol = COL_AUTO;
 						rSet.Put( SvxColorItem(aCol, SID_FRAME_LINECOLOR ) );
 					}
 					else
@@ -2401,7 +2401,7 @@ void ScFormatShell::GetNumFormatState( SfxItemSet& rSet )
 			case SID_NUMBER_TYPE_FORMAT:
 				{
 					sal_Int16 aFormatCode = -1;
-					const SfxItemSet& rAttrSet  = pTabViewShell->GetSelectionPattern()->GetItemSet();					
+					const SfxItemSet& rAttrSet  = pTabViewShell->GetSelectionPattern()->GetItemSet();
 					if ( rAttrSet.GetItemState( ATTR_VALUE_FORMAT ) >= SFX_ITEM_AVAILABLE ) //Modify for more robust
 					{
 						SvNumberFormatter* pFormatter = pDoc->GetFormatTable();
@@ -2418,7 +2418,7 @@ void ScFormatShell::GetNumFormatState( SfxItemSet& rSet )
                         switch(aFormatCode)
 						{
 						case NUMBERFORMAT_NUMBER:
-						case NUMBERFORMAT_NUMBER| NUMBERFORMAT_DEFINED:    
+						case NUMBERFORMAT_NUMBER| NUMBERFORMAT_DEFINED:
 							//use format code and standard format code to judge whether it is General,
 							//if (nNumberFormat == nStandardNumberFormat)
 							if (bStandard)
@@ -2462,7 +2462,7 @@ void ScFormatShell::GetNumFormatState( SfxItemSet& rSet )
 							aFormatCode = 9;
 							break;
 						default:
-							aFormatCode = -1;	//for more roburst							
+							aFormatCode = -1;	//for more roburst
 						}
 						if( aFormatCode == -1 )
 							rSet.InvalidateItem( nWhich );
@@ -2473,7 +2473,7 @@ void ScFormatShell::GetNumFormatState( SfxItemSet& rSet )
 					{
 						rSet.InvalidateItem( nWhich );
 					}
-					
+
 				}
 				break;
 		}
@@ -2648,11 +2648,11 @@ void  ScFormatShell::ExecViewOptions( SfxRequest& rReq )
 			{
 				ScViewOptions rNewOpt(rOldOpt);
 				rNewOpt.SetOption( VOPT_GRID,  bState);
-				pViewData->SetOptions( rNewOpt );	
+				pViewData->SetOptions( rNewOpt );
 				pViewData->GetDocument()->SetViewOptions( rNewOpt );
 				pDocSh->SetDocumentModified();
-				//add , write the change to sc view config 
-				ScModule*			pScMod		= SC_MOD();	
+				//add , write the change to sc view config
+				ScModule*			pScMod		= SC_MOD();
 				pScMod->SetViewOptions( rNewOpt );
 				//add end
 				rBindings.Invalidate( nSlot );

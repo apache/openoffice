@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -525,8 +525,8 @@ void ReplaceStringHookProc( UniString& rStr )
 
 static const char      pLastSyncFileName[]     = "lastsynchronized";
 static const sal_Int32 nStrLenLastSync         = 16;
-        
-static bool needsSynchronization( 
+
+static bool needsSynchronization(
     ::rtl::OUString const & baseSynchronizedURL, ::rtl::OUString const & userSynchronizedURL )
 {
     bool bNeedsSync( false );
@@ -545,21 +545,21 @@ static bool needsSynchronization(
         OSL_ENSURE(0, "Cannot access lastsynchronized in user layer");
         return true; //sync just in case
     }
-    
+
     //If last synchronized does not exist in base layer, then do nothing
     ::osl::DirectoryItem itemBaseFile;
     ::osl::File::RC err2 = ::osl::DirectoryItem::get(baseSynchronizedURL, itemBaseFile);
     if (err2 == ::osl::File::E_NOENT)
     {
         return true;
-        
+
     }
     else if (err2 != ::osl::File::E_None)
     {
         OSL_ENSURE(0, "Cannot access file lastsynchronized in base layer");
         return true; //sync just in case
     }
-    
+
     //compare the modification time of the extension folder and the last
     //modified file
     ::osl::FileStatus statUser(FileStatusMask_ModifyTime);
@@ -577,7 +577,7 @@ static bool needsSynchronization(
         else
         {
             OSL_ASSERT(0);
-            bNeedsSync = true; 
+            bNeedsSync = true;
         }
     }
     else
@@ -585,7 +585,7 @@ static bool needsSynchronization(
         OSL_ASSERT(0);
         bNeedsSync = true;
     }
-    
+
     return bNeedsSync;
 }
 
@@ -610,13 +610,13 @@ static ::rtl::OUString getLastSyncFileURLFromBrandInstallation()
 {
     ::rtl::OUString aURL = getBrandSharePreregBundledPathURL();
     ::sal_Int32    nLastIndex         = aURL.lastIndexOf('/');
-        
+
     ::rtl::OUStringBuffer aTmp( aURL );
 
     if ( nLastIndex != aURL.getLength()-1 )
         aTmp.appendAscii( "/" );
     aTmp.appendAscii( pLastSyncFileName );
-        
+
     return aTmp.makeStringAndClear();
 }
 
@@ -624,7 +624,7 @@ static ::rtl::OUString getLastSyncFileURLFromUserInstallation()
 {
     ::rtl::OUString aUserBundledPathURL = getUserBundledExtPathURL();
     ::sal_Int32    nLastIndex          = aUserBundledPathURL.lastIndexOf('/');
-    
+
     ::rtl::OUStringBuffer aTmp( aUserBundledPathURL );
 
     if ( nLastIndex != aUserBundledPathURL.getLength()-1 )
@@ -634,7 +634,7 @@ static ::rtl::OUString getLastSyncFileURLFromUserInstallation()
     return aTmp.makeStringAndClear();
 }
 //Checks if the argument src is the folder of the help or configuration
-//backend in the prereg folder        
+//backend in the prereg folder
 static bool excludeTmpFilesAndFolders(const rtl::OUString & src)
 {
     const char helpBackend[] = "com.sun.star.comp.deployment.help.PackageRegistryBackend";
@@ -672,10 +672,10 @@ static bool isExcludedFileOrFolder( const rtl::OUString & name)
     return bExclude;
 }
 
-static osl::FileBase::RC copy_prereg_bundled_recursive( 
+static osl::FileBase::RC copy_prereg_bundled_recursive(
     const rtl::OUString& srcUnqPath,
     const rtl::OUString& dstUnqPath,
-    sal_Int32            TypeToCopy ) 
+    sal_Int32            TypeToCopy )
 throw()
 {
     osl::FileBase::RC err = osl::FileBase::E_None;
@@ -693,7 +693,7 @@ throw()
 
         err = osl::Directory::create( dstUnqPath );
         osl::FileBase::RC next = err;
-        if( err == osl::FileBase::E_None || 
+        if( err == osl::FileBase::E_None ||
             err == osl::FileBase::E_EXIST )
         {
             err = osl::FileBase::E_None;
@@ -701,7 +701,7 @@ throw()
 
             osl::DirectoryItem aDirItem;
             bool bExcludeFiles = excludeTmpFilesAndFolders(srcUnqPath);
-            
+
             while( err == osl::FileBase::E_None && ( next = aDir.getNextItem( aDirItem ) ) == osl::FileBase::E_None )
             {
                 sal_Bool IsDoc = false;
@@ -720,25 +720,25 @@ throw()
 
                 rtl::OUString newDstUnqPath = dstUnqPath;
                 rtl::OUString tit;
-                if( aFileStatus.isValid( FileStatusMask_FileName ) )              
+                if( aFileStatus.isValid( FileStatusMask_FileName ) )
                 {
                     ::rtl::OUString aFileName = aFileStatus.getFileName();
                     tit = rtl::Uri::encode( aFileName,
                                             rtl_UriCharClassPchar,
                                             rtl_UriEncodeIgnoreEscapes,
                                             RTL_TEXTENCODING_UTF8 );
-                    
+
                     // Special treatment for "lastsychronized" file. Must not be
                     // copied from the bundled folder!
                     //Also do not copy *.tmp files and *.tmp_ folders. This affects the files/folders
                     //from the help and configuration backend
-                    if ( IsDoc && (aFileName.equalsAscii( pLastSyncFileName ) 
+                    if ( IsDoc && (aFileName.equalsAscii( pLastSyncFileName )
                                    || bExcludeFiles && isExcludedFileOrFolder(aFileName)))
                         bFilter = true;
                     else if (!IsDoc && bExcludeFiles && isExcludedFileOrFolder(aFileName))
                         bFilter = true;
                 }
-                
+
                 if( newDstUnqPath.lastIndexOf( sal_Unicode('/') ) != newDstUnqPath.getLength()-1 )
                     newDstUnqPath += rtl::OUString::createFromAscii( "/" );
 
@@ -892,7 +892,7 @@ static bool needsInstallBundledExtensionBlobs (
     // OpenOffice.  Without it the extensions have the date on which
     // they where built, not the date on which they where installed.
     if (::osl::DirectoryItem::get(rsDirectoryURL, aDirectoryItem) == osl::File::E_None)
-    {    
+    {
         ::osl::FileStatus aDirectoryStat (FileStatusMask_ModifyTime);
         const ::osl::FileBase::RC eResult (aDirectoryItem.getFileStatus(aDirectoryStat));
         if (eResult == ::osl::File::E_None)
@@ -996,14 +996,14 @@ void Desktop::Init()
         {
             rtl::OUString aUserPath = getUserBundledExtPathURL();
             rtl::OUString aPreregBundledPath = getBrandSharePreregBundledPathURL();
-            
+
             // copy bundled folder to the user directory
             osl::FileBase::RC rc = osl::Directory::createPath(aUserPath);
             (void) rc;
             copy_prereg_bundled_recursive( aPreregBundledPath, aUserPath, +1 );
         }
     }
-    
+
     // create service factory...
     Reference < XMultiServiceFactory > rSMgr = CreateApplicationServiceManager();
     if( rSMgr.is() )
@@ -1043,7 +1043,7 @@ void Desktop::Init()
         if ( aStatus == OfficeIPCThread::IPC_STATUS_BOOTSTRAP_ERROR )
         {
             SetBootstrapError( BE_PATHINFO_MISSING );
-			
+
         }
         else if ( aStatus == OfficeIPCThread::IPC_STATUS_MULTI_TS_ERROR )
         {
@@ -1821,7 +1821,7 @@ struct ExecuteGlobals
     ExecuteGlobals()
     : bRestartRequested( sal_False )
     , bUseSystemFileDialog( sal_True )
-    {}	
+    {}
 };
 
 static ExecuteGlobals* pExecGlobals = NULL;
@@ -1829,7 +1829,7 @@ static ExecuteGlobals* pExecGlobals = NULL;
 void Desktop::Main()
 {
     pExecGlobals = new ExecuteGlobals();
-    
+
     RTL_LOGFILE_CONTEXT( aLog, "desktop (cd100003) ::Desktop::Main" );
 
     // Remember current context object
@@ -1906,7 +1906,7 @@ void Desktop::Main()
         // there is no other instance using our data files from a remote host
         RTL_LOGFILE_CONTEXT_TRACE( aLog, "desktop (lo119109) Desktop::Main -> Lockfile" );
         m_pLockfile = new Lockfile;
-        if ( !pCmdLineArgs->IsHeadless() && !pCmdLineArgs->IsInvisible() && 
+        if ( !pCmdLineArgs->IsHeadless() && !pCmdLineArgs->IsInvisible() &&
              !pCmdLineArgs->IsNoLockcheck() && !m_pLockfile->check( Lockfile_execWarning )) {
             // Lockfile exists, and user clicked 'no'
             return;
@@ -2267,7 +2267,7 @@ void Desktop::doShutdown()
 {
     if( ! pExecGlobals )
         return;
-    
+
     if ( pExecGlobals->bRestartRequested )
         SetRestartState();
 
@@ -2303,7 +2303,7 @@ void Desktop::doShutdown()
     RTL_LOGFILE_CONTEXT_TRACE( aLog, "-> deinit ucb" );
     ::ucbhelper::ContentBroker::deinitialize();
     RTL_LOGFILE_CONTEXT_TRACE( aLog, "<- deinit ucb" );
-    
+
     sal_Bool bRR = pExecGlobals->bRestartRequested;
     delete pExecGlobals, pExecGlobals = NULL;
 

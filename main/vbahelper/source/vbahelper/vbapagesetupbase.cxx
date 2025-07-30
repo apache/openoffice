@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -25,10 +25,10 @@
 using namespace ::com::sun::star;
 using namespace ::ooo::vba;
 
-VbaPageSetupBase::VbaPageSetupBase(const uno::Reference< XHelperInterface >& xParent, 
+VbaPageSetupBase::VbaPageSetupBase(const uno::Reference< XHelperInterface >& xParent,
 				const uno::Reference< uno::XComponentContext >& xContext ) throw (uno::RuntimeException): VbaPageSetupBase_BASE( xParent, xContext )
 {
-}		
+}
 
 double SAL_CALL VbaPageSetupBase::getTopMargin() throw (css::uno::RuntimeException)
 {
@@ -54,7 +54,7 @@ double SAL_CALL VbaPageSetupBase::getTopMargin() throw (css::uno::RuntimeExcepti
     catch( uno::Exception& )
     {
     }
-    
+
     return Millimeter::getInPoints( topMargin );
 }
 
@@ -68,7 +68,7 @@ void SAL_CALL VbaPageSetupBase::setTopMargin( double margin ) throw (css::uno::R
     {
         uno::Any aValue = mxPageProps->getPropertyValue( rtl::OUString( RTL_CONSTASCII_USTRINGPARAM("HeaderIsOn")));
         aValue >>= headerOn;
-        
+
         if( headerOn )
         {
             aValue = mxPageProps->getPropertyValue( rtl::OUString( RTL_CONSTASCII_USTRINGPARAM("HeaderHeight")));
@@ -108,7 +108,7 @@ double SAL_CALL VbaPageSetupBase::getBottomMargin() throw (css::uno::RuntimeExce
     catch( uno::Exception& )
     {
     }
-    
+
     return Millimeter::getInPoints( bottomMargin );
 }
 
@@ -122,7 +122,7 @@ void SAL_CALL VbaPageSetupBase::setBottomMargin( double margin ) throw (css::uno
     {
         uno::Any aValue = mxPageProps->getPropertyValue( rtl::OUString( RTL_CONSTASCII_USTRINGPARAM("FooterIsOn")));
         aValue >>= footerOn;
-        
+
         if( footerOn )
         {
             aValue = mxPageProps->getPropertyValue( rtl::OUString( RTL_CONSTASCII_USTRINGPARAM("FooterHeight")));
@@ -149,7 +149,7 @@ double SAL_CALL VbaPageSetupBase::getRightMargin() throw (css::uno::RuntimeExcep
     catch( uno::Exception& )
     {
     }
-    
+
     return Millimeter::getInPoints( rightMargin );
 }
 
@@ -179,7 +179,7 @@ double SAL_CALL VbaPageSetupBase::getLeftMargin() throw (css::uno::RuntimeExcept
     catch( uno::Exception& )
     {
     }
-    
+
     return Millimeter::getInPoints( leftMargin );
 }
 
@@ -208,7 +208,7 @@ double SAL_CALL VbaPageSetupBase::getHeaderMargin() throw (css::uno::RuntimeExce
     catch( uno::Exception& )
     {
     }
-    
+
     return Millimeter::getInPoints( headerMargin );
 }
 
@@ -237,7 +237,7 @@ double SAL_CALL VbaPageSetupBase::getFooterMargin() throw (css::uno::RuntimeExce
     catch( uno::Exception& )
     {
     }
-    
+
     return Millimeter::getInPoints( footerMargin );
 }
 
@@ -290,7 +290,7 @@ void SAL_CALL VbaPageSetupBase::setOrientation( sal_Int32 orientation ) throw (c
         aValue >>= isLandscape;
 
         sal_Bool switchOrientation = sal_False;
-        if(( isLandscape && orientation != mnOrientLandscape ) || 
+        if(( isLandscape && orientation != mnOrientLandscape ) ||
             ( !isLandscape && orientation != mnOrientPortrait ))
         {
             switchOrientation = sal_True;

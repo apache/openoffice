@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -638,7 +638,7 @@ SvxStdParagraphTabPage::SvxStdParagraphTabPage( Window* pParent,
 	aLeftIndent             ( this, CUI_RES( ED_LEFTINDENT ) ),
     aRightLabel             ( this, CUI_RES( FT_RIGHTINDENT ) ),
     aRightIndent            ( this, CUI_RES( ED_RIGHTINDENT ) ),
-    
+
     aFLineLabel             ( this, CUI_RES( FT_FLINEINDENT ) ),
 	aFLineIndent            ( this, CUI_RES( ED_FLINEINDENT ) ),
 	aAutoCB                 ( this, CUI_RES( CB_AUTO ) ),
@@ -673,9 +673,9 @@ SvxStdParagraphTabPage::SvxStdParagraphTabPage( Window* pParent,
     FreeResource();
 	Init_Impl();
     aFLineIndent.SetMin(-9999);    // wird default auf 0 gesetzt
-	
+
 	aExampleWin.SetAccessibleName(String(CUI_RES(STR_EXAMPLE)));
-	
+
 }
 
 
@@ -1095,7 +1095,7 @@ SvxParaAlignTabPage::SvxParaAlignTabPage( Window* pParent, const SfxItemSet& rSe
     }
 
 	aExampleWin.SetAccessibleName(String(CUI_RES(STR_EXAMPLE)));
-	
+
 }
 
 /*-----------------16.01.97 19.33-------------------

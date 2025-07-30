@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -48,7 +48,7 @@ using namespace com::sun::star::linguistic2;
 
 namespace linguistic
 {
-	
+
 ///////////////////////////////////////////////////////////////////////////
 
 
@@ -104,8 +104,8 @@ Reference< XSpellAlternatives > MergeProposals(
 }
 
 
-sal_Bool SeqHasEntry( 
-        const Sequence< OUString > &rSeq, 
+sal_Bool SeqHasEntry(
+        const Sequence< OUString > &rSeq,
         const OUString &rTxt)
 {
     sal_Bool bRes = sal_False;
@@ -120,7 +120,7 @@ sal_Bool SeqHasEntry(
 }
 
 
-void SearchSimilarText( const OUString &rText, sal_Int16 nLanguage, 
+void SearchSimilarText( const OUString &rText, sal_Int16 nLanguage,
         Reference< XDictionaryList > &xDicList,
         std::vector< OUString > & rDicListProps )
 {
@@ -167,8 +167,8 @@ void SearchSimilarText( const OUString &rText, sal_Int16 nLanguage,
 }
 
 
-void SeqRemoveNegEntries( Sequence< OUString > &rSeq, 
-        Reference< XDictionaryList > &rxDicList, 
+void SeqRemoveNegEntries( Sequence< OUString > &rSeq,
+        Reference< XDictionaryList > &rxDicList,
         sal_Int16 nLanguage )
 {
     static const OUString aEmpty;
@@ -177,7 +177,7 @@ void SeqRemoveNegEntries( Sequence< OUString > &rSeq,
     OUString *pEntries = rSeq.getArray();
     for (sal_Int32 i = 0;  i < nLen;  ++i)
     {
-        Reference< XDictionaryEntry > xNegEntry( SearchDicList( rxDicList, 
+        Reference< XDictionaryEntry > xNegEntry( SearchDicList( rxDicList,
                     pEntries[i], nLanguage, sal_False, sal_True ) );
         if (xNegEntry.is())
         {
@@ -225,7 +225,7 @@ Sequence< OUString > MergeProposalSeqs(
             const OUString  *pAlt   = j == 0 ? pAlt1 : pAlt2;
             for (i = 0;  i < nCount  &&  nIndex < MAX_PROPOSALS;  i++)
             {
-                if (pAlt[i].getLength() && 
+                if (pAlt[i].getLength() &&
                     (bAllowDuplicates || !SeqHasEntry(aMerged, pAlt[i] )))
                     pMerged[ nIndex++ ] = pAlt[ i ];
             }
@@ -247,7 +247,7 @@ SpellAlternatives::SpellAlternatives()
 }
 
 
-SpellAlternatives::SpellAlternatives( 
+SpellAlternatives::SpellAlternatives(
 			const OUString &rWord, sal_Int16 nLang,
 			sal_Int16 nFailureType, const OUString &rRplcWord ) :
     aAlt        ( Sequence< OUString >(1) ),
@@ -318,7 +318,7 @@ Sequence< OUString > SAL_CALL SpellAlternatives::getAlternatives()
 }
 
 
-void SAL_CALL SpellAlternatives::setAlternatives( const uno::Sequence< OUString >& rAlternatives ) 
+void SAL_CALL SpellAlternatives::setAlternatives( const uno::Sequence< OUString >& rAlternatives )
 throw (uno::RuntimeException)
 {
     MutexGuard  aGuard( GetLinguMutex() );
@@ -326,7 +326,7 @@ throw (uno::RuntimeException)
 }
 
 
-void SAL_CALL SpellAlternatives::setFailureType( sal_Int16 nFailureType ) 
+void SAL_CALL SpellAlternatives::setFailureType( sal_Int16 nFailureType )
 throw (uno::RuntimeException)
 {
     MutexGuard  aGuard( GetLinguMutex() );

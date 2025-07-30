@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -32,7 +32,7 @@
 
 using namespace ::com::sun::star;
 
- 
+
 // ---------------------- AtkHyperlink ----------------------
 
 typedef struct {
@@ -94,7 +94,7 @@ hyper_link_get_end_index( AtkHyperlink *pLink )
 {
     try {
         return getHyperlink( pLink )->getEndIndex();
-    } 
+    }
     catch(const uno::Exception& e) {
     }
     return -1;
@@ -104,7 +104,7 @@ hyper_link_get_start_index( AtkHyperlink *pLink )
 {
     try {
         return getHyperlink( pLink )->getStartIndex();
-    } 
+    }
     catch(const uno::Exception& e) {
     }
     return -1;
@@ -211,10 +211,10 @@ static accessibility::XAccessibleHypertext*
             pWrap->mpHypertext = reinterpret_cast< accessibility::XAccessibleHypertext * > (any.pReserved);
             pWrap->mpHypertext->acquire();
         }
-        
+
         return pWrap->mpHypertext;
     }
-    
+
     return NULL;
 }
 
@@ -239,7 +239,7 @@ hypertext_get_link( AtkHypertext *hypertext,
     catch(const uno::Exception& e) {
         g_warning( "Exception in getHyperLink()" );
     }
-    
+
     return NULL;
 }
 
@@ -254,7 +254,7 @@ hypertext_get_n_links( AtkHypertext *hypertext )
     catch(const uno::Exception& e) {
         g_warning( "Exception in getHyperLinkCount()" );
     }
-    
+
     return 0;
 }
 
@@ -270,7 +270,7 @@ hypertext_get_link_index( AtkHypertext *hypertext,
     catch(const uno::Exception& e) {
         g_warning( "Exception in getHyperLinkIndex()" );
     }
-    
+
     return 0;
 }
 

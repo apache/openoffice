@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -31,7 +31,7 @@
 #include <windows.h>
 #if defined _MSC_VER
 #pragma warning(pop)
-#endif 
+#endif
 #include <tools/postsys.h>
 
 #define VCL_NEED_BASETSD
@@ -332,7 +332,7 @@ void add_group_entries(
 		ByteString key_value_utf8 = aConfig.ReadKey(sal::static_int_cast<USHORT>(i));
         iso_lang_identifier myiso_lang( iso_lang );
         LanguageType ltype = MsLangId::convertIsoNamesToLanguage(myiso_lang.language(), myiso_lang.country());
-        if(  ( ltype & 0x0200 ) == 0 && map[ ltype ].empty()  )   
+        if(  ( ltype & 0x0200 ) == 0 && map[ ltype ].empty()  )
         {
             Substitutor.set_language(iso_lang_identifier(iso_lang));
 
@@ -484,7 +484,7 @@ void start_language_section(
     lang_section += std::string(" , ");
 
     _itoa(subLangID, buff, 16);
-    
+
     lang_section += std::string("0x") + std::string(buff);
     ostream_iter = lang_section;
 }
@@ -563,7 +563,7 @@ void inflate_rc_template_to_file(
 #define RC_FOOTER(c)   MAKE_ABSOLUTE((c).get_arg("-rcf"))
 
 SAL_IMPLEMENT_MAIN_WITH_ARGS(argc, argv)
-{        
+{
 	try
 	{
 		CommandLine cmdline(argc, argv);

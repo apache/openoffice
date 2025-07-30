@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -69,11 +69,11 @@ LRESULT CALLBACK MediaPlayerWndProc( HWND hWnd,UINT nMsg, WPARAM nPar1, LPARAM n
             case( WM_SETCURSOR ):
                 pWindow->updatePointer();
             break;
-        
+
             case( WM_GRAPHNOTIFY ):
                 pWindow->processGraphEvent();
             break;
-        
+
             case( WM_MOUSEMOVE ):
             case( WM_LBUTTONDOWN ):
             case( WM_MBUTTONDOWN ):
@@ -84,11 +84,11 @@ LRESULT CALLBACK MediaPlayerWndProc( HWND hWnd,UINT nMsg, WPARAM nPar1, LPARAM n
             {
                 awt::MouseEvent aUNOEvt;
                 POINT           aWinPoint;
-                
+
                 if( !::GetCursorPos( &aWinPoint ) || !::ScreenToClient( hWnd, &aWinPoint ) )
                 {
-                    aWinPoint.x = GET_X_LPARAM( nPar2 ); 
-                    aWinPoint.y = GET_Y_LPARAM( nPar2 ); 
+                    aWinPoint.x = GET_X_LPARAM( nPar2 );
+                    aWinPoint.y = GET_Y_LPARAM( nPar2 );
                 }
                 aUNOEvt.Modifiers = 0;
                 aUNOEvt.Buttons = 0;
@@ -269,7 +269,7 @@ void Window::implLayoutVideoWindow()
 bool Window::create( const uno::Sequence< uno::Any >& /*rArguments*/ )
 {
 	bool bRet = false;
-	
+
 	return bRet;
 }
 
@@ -312,7 +312,7 @@ media::ZoomLevel SAL_CALL Window::getZoomLevel(  )
 
 // ------------------------------------------------------------------------------
 
-void SAL_CALL Window::setPointerType( sal_Int32 nPointerType ) 
+void SAL_CALL Window::setPointerType( sal_Int32 nPointerType )
 	throw (uno::RuntimeException)
 {
     mnPointerType = nPointerType;
@@ -481,11 +481,11 @@ void SAL_CALL Window::removeEventListener( const uno::Reference< lang::XEventLis
 void Window::fireMousePressedEvent( const ::com::sun::star::awt::MouseEvent& rEvt )
 {
     ::cppu::OInterfaceContainerHelper* pContainer = maListeners.getContainer( getCppuType( (uno::Reference< awt::XMouseListener >*) 0 ) );
-    
+
     if( pContainer )
     {
         ::cppu::OInterfaceIteratorHelper aIter( *pContainer );
-        
+
         while( aIter.hasMoreElements() )
             uno::Reference< awt::XMouseListener >( aIter.next(), uno::UNO_QUERY )->mousePressed( rEvt );
     }
@@ -496,11 +496,11 @@ void Window::fireMousePressedEvent( const ::com::sun::star::awt::MouseEvent& rEv
 void Window::fireMouseReleasedEvent( const ::com::sun::star::awt::MouseEvent& rEvt )
 {
     ::cppu::OInterfaceContainerHelper* pContainer = maListeners.getContainer( getCppuType( (uno::Reference< awt::XMouseListener >*) 0 ) );
-    
+
     if( pContainer )
     {
         ::cppu::OInterfaceIteratorHelper aIter( *pContainer );
-        
+
         while( aIter.hasMoreElements() )
             uno::Reference< awt::XMouseListener >( aIter.next(), uno::UNO_QUERY )->mouseReleased( rEvt );
     }
@@ -511,11 +511,11 @@ void Window::fireMouseReleasedEvent( const ::com::sun::star::awt::MouseEvent& rE
 void Window::fireMouseMovedEvent( const ::com::sun::star::awt::MouseEvent& rEvt )
 {
     ::cppu::OInterfaceContainerHelper* pContainer = maListeners.getContainer( getCppuType( (uno::Reference< awt::XMouseMotionListener >*) 0 ) );
-    
+
     if( pContainer )
     {
         ::cppu::OInterfaceIteratorHelper aIter( *pContainer );
-        
+
         while( aIter.hasMoreElements() )
             uno::Reference< awt::XMouseMotionListener >( aIter.next(), uno::UNO_QUERY )->mouseMoved( rEvt );
     }
@@ -526,11 +526,11 @@ void Window::fireMouseMovedEvent( const ::com::sun::star::awt::MouseEvent& rEvt 
 void Window::fireSetFocusEvent( const ::com::sun::star::awt::FocusEvent& rEvt )
 {
     ::cppu::OInterfaceContainerHelper* pContainer = maListeners.getContainer( getCppuType( (uno::Reference< awt::XFocusListener >*) 0 ) );
-    
+
     if( pContainer )
     {
         ::cppu::OInterfaceIteratorHelper aIter( *pContainer );
-        
+
         while( aIter.hasMoreElements() )
             uno::Reference< awt::XFocusListener >( aIter.next(), uno::UNO_QUERY )->focusGained( rEvt );
     }

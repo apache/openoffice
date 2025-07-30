@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -335,7 +335,7 @@ SwHTMLParser::SwHTMLParser( SwDoc* pD, const SwPaM& rCrsr, SvStream& rIn,
 	pPam = new SwPaM( *rCrsr.GetPoint() );
 	memset( &aAttrTab, 0, sizeof( _HTMLAttrTable ));
 
-	// read Font-size 1-7 from INI-file 
+	// read Font-size 1-7 from INI-file
 	SvxHtmlOptions* pHtmlOptions = SvxHtmlOptions::Get();
 	aFontHeights[0] = pHtmlOptions->GetFontSize( 0 ) * 20;
 	aFontHeights[1] = pHtmlOptions->GetFontSize( 1 ) * 20;
@@ -598,8 +598,8 @@ void __EXPORT SwHTMLParser::Continue( int nToken )
 
 	if( SVPAR_ERROR != eState && GetMedium() && !bViewCreated )
 	{
-		// Return at first call, show Doc and wait for timer callback. 
-		// At this point, CallParser read only one character and called 
+		// Return at first call, show Doc and wait for timer callback.
+		// At this point, CallParser read only one character and called
 		// SaveState(0)
 		eState = SVPAR_PENDING;
 		bViewCreated = sal_True;
@@ -619,7 +619,7 @@ void __EXPORT SwHTMLParser::Continue( int nToken )
 		pDoc->GetDocShell()->EnableSetModified( sal_False );
 	}
 
-	// during read. do not call OLE-Modify 
+	// during read. do not call OLE-Modify
 	Link aOLELink( pDoc->GetOle2Link() );
 	pDoc->SetOle2Link( Link() );
 
@@ -824,11 +824,11 @@ if( pSttNdIdx->GetIndex()+1 == pPam->GetBound( sal_False ).nNode.GetIndex() )
 				*pSttNdIdx <= aPrvIdx )
 			{
 				// actually a JoinNext must be done here, but all cursors
-				// etc. are registered in the pTxtNode, 
+				// etc. are registered in the pTxtNode,
 				// which MUST remain
 
 
-				// Convert paragraph to character attributes, 
+				// Convert paragraph to character attributes,
 				// take over the paragraph attributes and the template from the Prev!
 				SwTxtNode* pPrev = aPrvIdx.GetNode().GetTxtNode();
 				pTxtNode->ChgFmtColl( pPrev->GetTxtColl() );
@@ -876,7 +876,7 @@ if( pSttNdIdx->GetIndex()+1 == pPam->GetBound( sal_False ).nNode.GetIndex() )
 	if( SVPAR_PENDING != GetStatus() )
 		delete pSttNdIdx, pSttNdIdx = 0;
 
-	// should the parser be the last one to hold the doc, 
+	// should the parser be the last one to hold the doc,
 	// no need to do anything here either, doc is about to be destroyed!
 	if( 1 < pDoc->getReferenceCount() )
 	{
@@ -889,7 +889,7 @@ if( pSttNdIdx->GetIndex()+1 == pPam->GetBound( sal_False ).nNode.GetIndex() )
 		{
 			// If there was no shell at the beginning of the Continue,
 			// nevertheless one may have been created in the meantime.
-			// In this case the bWasUndo flag is not correct and 
+			// In this case the bWasUndo flag is not correct and
 			// a switch on the undo is necessary.
 			ViewShell *pTmpVSh = CheckActionViewShell();
 			if( pTmpVSh )
@@ -948,7 +948,7 @@ void SwHTMLParser::DocumentDetected()
 		CallEndAction( sal_True, sal_True );
 
         pDoc->GetIDocumentUndoRedo().DoUndo(false);
-		// By DocumentDetected a ViewShell has been created. 
+		// By DocumentDetected a ViewShell has been created.
 		// But it can also be that it is created later,
 		// namely when the UI is is captured.
 		CallStartAction();
@@ -1999,7 +1999,7 @@ void __EXPORT SwHTMLParser::NextToken( int nToken )
 		break;
 
 	case HTML_UNKNOWNCONTROL_ON:
-	        // In the header we must ignore the content of unknown tokens, 
+	        // In the header we must ignore the content of unknown tokens,
 		// except for those starting with '!"
 		if( IsInHeader() && !IsReadPRE() && !aUnknownToken.Len() &&
 			sSaveToken.Len() && '!' != sSaveToken.GetChar(0) &&
@@ -2214,7 +2214,7 @@ sal_Bool SwHTMLParser::AppendTxtNode( SwHTMLAppendMode eMode, sal_Bool bUpdateNu
 						// If the attribute spans the entire paragraph, then
 						// all other attributes are ignored. Therefore
 						// it must not be added to the prev list of an outer
-						// attribute, because this attribute is 
+						// attribute, because this attribute is
 						// not set for the time being. This leads to shifts,
 						// when fields are added to the race (see #51020#).
 						if( !pNext || bWholePara )
@@ -2582,7 +2582,7 @@ void SwHTMLParser::_SetAttr( sal_Bool bChkEnd, sal_Bool bBeforeTable,
 		sal_Bool bSetAttr;
 		if( bChkEnd )
 		{
-			// fix #42192#: set character attributes in current paragraph with end 
+			// fix #42192#: set character attributes in current paragraph with end
 			// as early as possible, because of JavaScript and various chats.
 			// Except attributes, which are spanned over the whole paragraph, because
 			// they come from paragraph occurrences that cannot be set.
@@ -2600,7 +2600,7 @@ void SwHTMLParser::_SetAttr( sal_Bool bChkEnd, sal_Bool bBeforeTable,
 		}
 		else
 		{
-			// Attributes in the content area may not be set in 
+			// Attributes in the content area may not be set in
 			// special areai, but if the opposite is true.
 			sal_uLong nEndOfIcons = pDoc->GetNodes().GetEndOfExtras().GetIndex();
 			bSetAttr = nEndParaIdx < rEndIdx.GetIndex() ||
@@ -3048,7 +3048,7 @@ void SwHTMLParser::EndAttr( _HTMLAttr* pAttr, _HTMLAttr **ppDepAttr,
 	else
 	{
 		// Then do not insert, but delete. Through "fakeing" of
-		// templates by hard attributes, there may be other empty attributes 
+		// templates by hard attributes, there may be other empty attributes
 		// in the Prev list, which then must be set anyway.
 		_HTMLAttr *pPrev = pAttr->GetPrev();
 		delete pAttr;
@@ -4990,7 +4990,7 @@ void SwHTMLParser::InsertLineBreak()
 	//      left "anchor only" text flow.
 	// 5.) if in a non-empty paragraph the text flow of a frame
 	//     is changed, a new paragraph is opened
-	// 6.) If the text flow is not changed by any frame, a 
+	// 6.) If the text flow is not changed by any frame, a
 	//     hard line break is inserted
 
 	String aId, aStyle, aClass;			  	// the ID of the bookmark

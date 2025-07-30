@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -227,7 +227,7 @@ bool X11SalGraphics::setFont( const ImplFontSelectData *pEntry, int nFallbackLev
         // register to use the font
         mpServerFont[ nFallbackLevel ] = pServerFont;
 
-        // apply font specific-hint settings if needed 
+        // apply font specific-hint settings if needed
         // TODO: also disable it for reference devices
 	if( !bPrinter_ )
 	{
@@ -267,7 +267,7 @@ class CairoWrapper
 {
 private:
     oslModule mpCairoLib;
-    
+
     cairo_surface_t* (*mp_xlib_surface_create_with_xrender_format)(Display *, Drawable , Screen *, XRenderPictFormat *, int , int );
     void (*mp_surface_destroy)(cairo_surface_t *);
     cairo_t* (*mp_create)(cairo_surface_t *);
@@ -300,7 +300,7 @@ public:
     cairo_t* create(cairo_surface_t *surface) { return (*mp_create)(surface); }
     void destroy(cairo_t *cr) { (*mp_destroy)(cr); }
     void clip(cairo_t *cr) { (*mp_clip)(cr); }
-    void rectangle(cairo_t *cr, double x, double y, double width, double height) 
+    void rectangle(cairo_t *cr, double x, double y, double width, double height)
         { (*mp_rectangle)(cr, x, y, width, height); }
     cairo_font_face_t* ft_font_face_create_for_ft_face(FT_Face face, int load_flags)
         { return (*mp_ft_font_face_create_for_ft_face)(face, load_flags); }
@@ -341,7 +341,7 @@ CairoWrapper::CairoWrapper()
     static const char* pDisableCairoText = getenv( "SAL_DISABLE_CAIROTEXT" );
     if( pDisableCairoText && (pDisableCairoText[0] != '0') )
         return;
-    
+
     int nDummy;
     if( !XQueryExtension( GetX11SalData()->GetDisplay()->GetDisplay(), "RENDER", &nDummy, &nDummy, &nDummy ) )
         return;
@@ -358,11 +358,11 @@ CairoWrapper::CairoWrapper()
     fprintf( stderr, "CAIRO version=%d\n", nVersion );
 #endif
 
-    mp_xlib_surface_create_with_xrender_format = (cairo_surface_t* (*)(Display *, Drawable , Screen *, XRenderPictFormat *, int , int )) 
+    mp_xlib_surface_create_with_xrender_format = (cairo_surface_t* (*)(Display *, Drawable , Screen *, XRenderPictFormat *, int , int ))
         osl_getAsciiFunctionSymbol( mpCairoLib, "cairo_xlib_surface_create_with_xrender_format" );
-    mp_surface_destroy = (void(*)(cairo_surface_t*)) 
+    mp_surface_destroy = (void(*)(cairo_surface_t*))
         osl_getAsciiFunctionSymbol( mpCairoLib, "cairo_surface_destroy" );
-    mp_create = (cairo_t*(*)(cairo_surface_t*)) 
+    mp_create = (cairo_t*(*)(cairo_surface_t*))
         osl_getAsciiFunctionSymbol( mpCairoLib, "cairo_create" );
     mp_destroy = (void(*)(cairo_t*))
         osl_getAsciiFunctionSymbol( mpCairoLib, "cairo_destroy" );
@@ -393,7 +393,7 @@ CairoWrapper::CairoWrapper()
     mp_ft_font_options_substitute = (void (*)(const void *, void *))
         osl_getAsciiFunctionSymbol( mpCairoLib, "cairo_ft_font_options_substitute" );
 
-    if( !( 
+    if( !(
             mp_xlib_surface_create_with_xrender_format &&
             mp_surface_destroy &&
             mp_create &&
@@ -473,7 +473,7 @@ void X11SalGraphics::DrawCairoAAFontString( const ServerFontLayout& rLayout )
 {
     std::vector<cairo_glyph_t> cairo_glyphs;
     cairo_glyphs.reserve( 256 );
-    
+
     Point aPos;
     sal_GlyphId aGlyphId;
     for( int nStart = 0; rLayout.GetNextGlyphs( 1, &aGlyphId, aPos, nStart ); )
@@ -525,8 +525,8 @@ void X11SalGraphics::DrawCairoAAFontString( const ServerFontLayout& rLayout )
     {
         for (long i = 0; i < mpClipRegion->numRects; ++i)
         {
-            rCairo.rectangle(cr, 
-            mpClipRegion->rects[i].x1, 
+            rCairo.rectangle(cr,
+            mpClipRegion->rects[i].x1,
             mpClipRegion->rects[i].y1,
             mpClipRegion->rects[i].x2 - mpClipRegion->rects[i].x1,
             mpClipRegion->rects[i].y2 - mpClipRegion->rects[i].y1);
@@ -534,8 +534,8 @@ void X11SalGraphics::DrawCairoAAFontString( const ServerFontLayout& rLayout )
         rCairo.clip(cr);
     }
 
-    rCairo.set_source_rgb(cr, 
-        SALCOLOR_RED(nTextColor_)/255.0, 
+    rCairo.set_source_rgb(cr,
+        SALCOLOR_RED(nTextColor_)/255.0,
         SALCOLOR_GREEN(nTextColor_)/255.0,
         SALCOLOR_BLUE(nTextColor_)/255.0);
 
@@ -611,7 +611,7 @@ void X11SalGraphics::DrawServerAAFontString( const ServerFontLayout& rLayout )
     // set font foreground color and opacity
     XRenderColor aRenderColor = GetXRenderColor( nTextColor_ );
     rRenderPeer.FillRectangle( PictOpSrc, rEntry.m_aPicture, &aRenderColor, 0, 0, 1, 1 );
-	
+
     // set clipping
     // TODO: move into GetXRenderPicture()?
     if( mpClipRegion && !XEmptyRegion( mpClipRegion ) )
@@ -1067,7 +1067,7 @@ void X11SalGraphics::GetDevFontList( ImplDevFontList *pList )
     // register platform specific font substitutions if available
     if( rMgr.hasFontconfig() )
         RegisterFontSubstitutors( pList );
-    
+
     ImplGetSVData()->maGDIData.mbNativeFontConfig = rMgr.hasFontconfig();
 }
 
@@ -1304,7 +1304,7 @@ SystemFontData X11SalGraphics::GetSysFontData( int nFallbacklevel ) const
 
     if (nFallbacklevel >= MAX_FALLBACK) nFallbacklevel = MAX_FALLBACK - 1;
     if (nFallbacklevel < 0 ) nFallbacklevel = 0;
-    
+
     if (mpServerFont[nFallbacklevel] != NULL)
     {
         ServerFont* rFont = mpServerFont[nFallbacklevel];
@@ -1315,7 +1315,7 @@ SystemFontData X11SalGraphics::GetSysFontData( int nFallbacklevel ) const
         aSysFontData.bAntialias = rFont->GetAntialiasAdvice();
         aSysFontData.bVerticalCharacterType = rFont->GetFontSelData().mbVertical;
     }
-            
+
     return aSysFontData;
 }
 
@@ -1428,7 +1428,7 @@ void RegisterFontSubstitutors( ImplDevFontList* pList )
     if( pEnvStr )
     {
         if( (*pEnvStr >= '0') && (*pEnvStr <= '9') )
-            nDisableBits = (*pEnvStr - '0'); 
+            nDisableBits = (*pEnvStr - '0');
         else
             nDisableBits = ~0U; // no specific bits set: disable all
     }

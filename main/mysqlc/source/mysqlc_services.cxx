@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 #include "mysqlc_driver.hxx"
@@ -36,7 +36,7 @@ using ::com::sun::star::lang::XMultiServiceFactory;
 typedef Reference< XSingleServiceFactory > (SAL_CALL *createFactoryFunc)
 		(
 			const Reference< XMultiServiceFactory > & rServiceManager,
-			const OUString & rComponentName, 
+			const OUString & rComponentName,
 			::cppu::ComponentInstantiation pCreateFunction,
 			const Sequence< OUString > & rServiceNames,
 			rtl_ModuleCount* _pTemp
@@ -50,8 +50,8 @@ typedef Reference< XSingleServiceFactory > (SAL_CALL *createFactoryFunc)
 
 //---------------------------------------------------------------------------------------
 void REGISTER_PROVIDER(
-		const OUString& aServiceImplName, 
-		const Sequence< OUString>& Services, 
+		const OUString& aServiceImplName,
+		const Sequence< OUString>& Services,
 		const Reference< XRegistryKey > & xKey)
 {
     ::rtl::OUStringBuffer aMainKeyName;
@@ -85,7 +85,7 @@ struct ProviderRequest
 
 	/* {{{ CREATE_PROVIDER -I- */
 	inline sal_Bool CREATE_PROVIDER(
-				const OUString& Implname, 
+				const OUString& Implname,
 				const Sequence< OUString > & Services,
 				::cppu::ComponentInstantiation Factory,
 				createFactoryFunc creator
@@ -124,7 +124,7 @@ extern "C" SAL_DLLPUBLIC_EXPORT sal_Bool SAL_CALL component_writeInfo(void * /* 
 			Reference< XRegistryKey > xKey(reinterpret_cast< XRegistryKey*>(pRegistryKey));
 
 			REGISTER_PROVIDER(
-				MysqlCDriver::getImplementationName_Static(), 
+				MysqlCDriver::getImplementationName_Static(),
 				MysqlCDriver::getSupportedServiceNames_Static(), xKey);
 
 			return sal_True;

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -205,10 +205,10 @@ FrameView::FrameView(SdDrawDocument* pDrawDoc, FrameView* pFrameView /* = NULK *
 		SetViewShEditModeOnLoad(pFrameView->GetViewShEditModeOnLoad());
 		mbLayerMode = pFrameView->IsLayerMode();
 		mbQuickEdit = pFrameView->IsQuickEdit();
-		
+
 		// #i26631#
 		SetMasterPagePaintCaching( pFrameView->IsMasterPagePaintCaching() );
-		
+
 		SetDragWithCopy( pFrameView->IsDragWithCopy() );
 		mbBigHandles 		 = pFrameView->IsBigHandles();
 		mbDoubleClickTextEdit = pFrameView->IsDoubleClickTextEdit();
@@ -360,10 +360,10 @@ void FrameView::Update(SdOptions* pOptions)
 		Fraction aFractY(pOptions->GetFldDrawY(), pOptions->GetFldDrawY() / ( pOptions->GetFldDivisionY() ? pOptions->GetFldDivisionY() : 1 ));
 		SetSnapGridWidth(aFractX, aFractY);
 		SetQuickEdit(pOptions->IsQuickEdit());
-		
+
 		// #i26631#
 		SetMasterPagePaintCaching( pOptions->IsMasterPagePaintCaching() );
-		
+
 		SetDragWithCopy(pOptions->IsDragWithCopy());
 		SetBigHandles( pOptions->IsBigHandles() );
 		SetDoubleClickTextEdit( pOptions->IsDoubleClickTextEdit() );
@@ -1178,8 +1178,8 @@ ViewShell::ShellType FrameView::GetViewShellTypeOnLoad (void) const
 
 
 void FrameView::SetSelectedPage(sal_uInt16 nPage)
-{ 
-    mnSelectedPage = nPage; 
+{
+    mnSelectedPage = nPage;
 }
 
 
@@ -1187,7 +1187,7 @@ void FrameView::SetSelectedPage(sal_uInt16 nPage)
 
 sal_uInt16 FrameView::GetSelectedPage (void) const
 {
-    return mnSelectedPage; 
+    return mnSelectedPage;
 }
 
 

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
@@ -1140,7 +1140,7 @@ SwStyleProperties_Impl::SwStyleProperties_Impl(const SfxItemPropertyMap* pMap) :
 {
     nArrLen = aPropertyEntries.size();
     //const SfxItemPropertyMap* pTmp = _pMap;
-    
+
     pAnyArr = new uno::Any* [nArrLen];
     for ( sal_uInt32 i =0 ; i < nArrLen; i++ )
 		pAnyArr[i] = 0;
@@ -1221,7 +1221,7 @@ sal_Bool SwStyleProperties_Impl::GetProperty(const ::rtl::OUString& rName, uno::
         ++nPos;
         ++aIt;
     }
-    
+
     return bRet;
 }
 
@@ -1710,7 +1710,7 @@ private:
 
 public:
     SwStyleBase_Impl(
-        SwDoc& rSwDoc, 
+        SwDoc& rSwDoc,
         const String& rName,
         const SwAttrSet* pParentStyle)
     :   mrDoc(rSwDoc),
@@ -1724,8 +1724,8 @@ public:
     }
 
     ~SwStyleBase_Impl()
-    { 
-        delete mpItemSet; 
+    {
+        delete mpItemSet;
     }
 
     rtl::Reference< SwDocStyleSheet >& getNewBase()
@@ -1738,7 +1738,7 @@ public:
         mxNewBase = pNew;
     }
 
-    sal_Bool HasItemSet() 
+    sal_Bool HasItemSet()
     {
         return mxNewBase.is();
     }
@@ -1827,7 +1827,7 @@ void lcl_SetStyleProperty(
     SwStyleBase_Impl& rBase,
     SfxStyleSheetBasePool* pBasePool,
     SwDoc* pDoc,
-    SfxStyleFamily eFamily) 
+    SfxStyleFamily eFamily)
 throw(beans::PropertyVetoException, lang::IllegalArgumentException, lang::WrappedTargetException, uno::RuntimeException)
 {
     //UUUU adapted switch logic to a more readable state; removed goto's and made
@@ -1899,10 +1899,10 @@ throw(beans::PropertyVetoException, lang::IllegalArgumentException, lang::Wrappe
                     //UUUU Bitmap also has the MID_GRAFURL mode where a Bitmap URL is used
                     const Graphic aNullGraphic;
                     SfxItemSet& rStyleSet = rBase.GetItemSet();
-                    XFillBitmapItem aXFillBitmapItem(rStyleSet.GetPool(), aNullGraphic); 
+                    XFillBitmapItem aXFillBitmapItem(rStyleSet.GetPool(), aNullGraphic);
 
-                    aXFillBitmapItem.PutValue(aValue, nMemberId); 
-                    rStyleSet.Put(aXFillBitmapItem); 
+                    aXFillBitmapItem.PutValue(aValue, nMemberId);
+                    rStyleSet.Put(aXFillBitmapItem);
                     bDone = true;
                 }
             }
@@ -2475,7 +2475,7 @@ uno::Any lcl_GetStyleProperty(
     SwStyleBase_Impl& rBase,
     SfxStyleSheetBase* pBase,
     SfxStyleFamily eFamily,
-    SwDoc *pDoc) 
+    SwDoc *pDoc)
 throw(uno::RuntimeException)
 {
     uno::Any aRet;
@@ -2889,7 +2889,7 @@ throw( beans::UnknownPropertyException, lang::WrappedTargetException, uno::Runti
 
  ---------------------------------------------------------------------------*/
 uno::Sequence< uno::Any > SwXStyle::getPropertyValues(
-    const uno::Sequence< OUString >& rPropertyNames ) 
+    const uno::Sequence< OUString >& rPropertyNames )
 throw(uno::RuntimeException)
 {
     vos::OGuard aGuard(Application::GetSolarMutex());
@@ -2940,7 +2940,7 @@ throw(uno::RuntimeException)
 
   -----------------------------------------------------------------------*/
 void SwXStyle::setPropertyValue(
-    const OUString& rPropertyName, 
+    const OUString& rPropertyName,
     const uno::Any& rValue)
 throw( beans::UnknownPropertyException, beans::PropertyVetoException, lang::IllegalArgumentException, lang::WrappedTargetException, uno::RuntimeException)
 {
@@ -3087,8 +3087,8 @@ throw( beans::UnknownPropertyException, uno::RuntimeException )
                         const SvxSetItem* pSetItem;
 
                         if(SFX_ITEM_SET == rSet.GetItemState(
-                            bFooter ? SID_ATTR_PAGE_FOOTERSET : SID_ATTR_PAGE_HEADERSET, 
-                            sal_False, 
+                            bFooter ? SID_ATTR_PAGE_FOOTERSET : SID_ATTR_PAGE_HEADERSET,
+                            sal_False,
                             (const SfxPoolItem**)&pSetItem))
                         {
                             // retarget the SfxItemSet to the HeaderFooter SfxSetItem's SfxItenSet
@@ -3106,7 +3106,7 @@ throw( beans::UnknownPropertyException, uno::RuntimeException )
                 if(!bDone && OWN_ATTR_FILLBMP_MODE == pEntry->nWID)
                 {
                     //UUUU
-                    if(SFX_ITEM_SET == pSourceSet->GetItemState(XATTR_FILLBMP_STRETCH, false) 
+                    if(SFX_ITEM_SET == pSourceSet->GetItemState(XATTR_FILLBMP_STRETCH, false)
                         || SFX_ITEM_SET == pSourceSet->GetItemState(XATTR_FILLBMP_TILE, false))
                     {
                         pStates[i] = beans::PropertyState_DIRECT_VALUE;
@@ -3123,7 +3123,7 @@ throw( beans::UnknownPropertyException, uno::RuntimeException )
                 // as beans::PropertyState_DIRECT_VALUE to let users of this property call
                 // getPropertyValue where the member properties will be mapped from the
                 // fill attributes to the according SvxBrushItem entries
-                if(!bDone && RES_BACKGROUND == pEntry->nWID 
+                if(!bDone && RES_BACKGROUND == pEntry->nWID
                     && SWUnoHelper::needToMapFillItemsToSvxBrushItemTypes(*pSourceSet))
                 {
                     pStates[i] = beans::PropertyState_DIRECT_VALUE;
@@ -3174,7 +3174,7 @@ throw( beans::UnknownPropertyException, uno::RuntimeException )
     setPropertiesToDefault(aSequence);
 }
 
-void SAL_CALL SwXStyle::setPropertiesToDefault( 
+void SAL_CALL SwXStyle::setPropertiesToDefault(
     const uno::Sequence< OUString >& aPropertyNames )
 throw (beans::UnknownPropertyException, uno::RuntimeException)
 {
@@ -3192,16 +3192,16 @@ throw (beans::UnknownPropertyException, uno::RuntimeException)
             rtl::Reference< SwDocStyleSheet > xStyle(new SwDocStyleSheet(*(SwDocStyleSheet*)pBase));
             switch(eFamily)
             {
-                case SFX_STYLE_FAMILY_CHAR: 
-                    pTargetFmt = xStyle->GetCharFmt(); 
+                case SFX_STYLE_FAMILY_CHAR:
+                    pTargetFmt = xStyle->GetCharFmt();
                     break;
 
-                case SFX_STYLE_FAMILY_PARA: 
-                    pTargetFmt = xStyle->GetCollection(); 
+                case SFX_STYLE_FAMILY_PARA:
+                    pTargetFmt = xStyle->GetCollection();
                     break;
 
-                case SFX_STYLE_FAMILY_FRAME: 
-                    pTargetFmt = xStyle->GetFrmFmt(); 
+                case SFX_STYLE_FAMILY_FRAME:
+                    pTargetFmt = xStyle->GetFrmFmt();
                     break;
 
                 case SFX_STYLE_FAMILY_PAGE:
@@ -3427,7 +3427,7 @@ throw (uno::RuntimeException)
     }
 }
 
-uno::Sequence< uno::Any > SAL_CALL SwXStyle::getPropertyDefaults( 
+uno::Sequence< uno::Any > SAL_CALL SwXStyle::getPropertyDefaults(
     const uno::Sequence< OUString >& aPropertyNames )
 throw (beans::UnknownPropertyException, lang::WrappedTargetException, uno::RuntimeException)
 {
@@ -3561,7 +3561,7 @@ SwXPageStyle::SwXPageStyle(
 /* -----------------23.08.99 15:52-------------------
 
  --------------------------------------------------*/
-SwXPageStyle::SwXPageStyle(SwDocShell* pDocSh) 
+SwXPageStyle::SwXPageStyle(SwDocShell* pDocSh)
 :   SwXStyle(pDocSh->GetDoc(), SFX_STYLE_FAMILY_PAGE),
     pDocShell(pDocSh)
 {
@@ -3642,7 +3642,7 @@ throw( beans::UnknownPropertyException, beans::PropertyVetoException, lang::Ille
                 case SID_ATTR_PAGE_SIZE:
                 case RES_HEADER_FOOTER_EAT_SPACING:
                 {
-                    // these entries are used in Header, Footer and (partially) in the PageStyle itself. 
+                    // these entries are used in Header, Footer and (partially) in the PageStyle itself.
                     // Check for Header/Footer entry
                     const bool bHeader(rPropName.EqualsAscii("Header", 0, 6));
                     const bool bFooter(rPropName.EqualsAscii("Footer", 0, 6));
@@ -3661,7 +3661,7 @@ throw( beans::UnknownPropertyException, beans::PropertyVetoException, lang::Ille
                             // set parent to ItemSet to ensure XFILL_NONE as XFillStyleItem
                             rSetSet.SetParent(&GetDoc()->GetDfltFrmFmt()->GetAttrSet());
 
-                            // replace the used SfxItemSet at the SwStyleBase_Impl temporarily and use the 
+                            // replace the used SfxItemSet at the SwStyleBase_Impl temporarily and use the
                             // default method to set the property
                             SfxItemSet* pRememberItemSet = aBaseImpl.replaceItemSet(&rSetSet);
                             lcl_SetStyleProperty(*pEntry, *pPropSet, pValues[nProp], aBaseImpl, GetBasePool(), GetDoc(), GetFamily());
@@ -3753,7 +3753,7 @@ throw( beans::UnknownPropertyException, beans::PropertyVetoException, lang::Ille
                 case XATTR_FILLFLOATTRANSPARENCE:
                 case XATTR_SECONDARYFILLCOLOR:
                 {
-                    // This DrawingLayer FillStyle attributes can be part of Header, Footer and PageStyle 
+                    // This DrawingLayer FillStyle attributes can be part of Header, Footer and PageStyle
                     // itself, so decide what to do using the name
                     const bool bHeader(rPropName.EqualsAscii("Header", 0, 6));
                     const bool bFooter(rPropName.EqualsAscii("Footer", 0, 6));
@@ -3771,7 +3771,7 @@ throw( beans::UnknownPropertyException, beans::PropertyVetoException, lang::Ille
                             // set parent to ItemSet to ensure XFILL_NONE as XFillStyleItem
                             rSetSet.SetParent(&GetDoc()->GetDfltFrmFmt()->GetAttrSet());
 
-                            // replace the used SfxItemSet at the SwStyleBase_Impl temporarily and use the 
+                            // replace the used SfxItemSet at the SwStyleBase_Impl temporarily and use the
                             // default method to set the property
                             SfxItemSet* pRememberItemSet = aBaseImpl.replaceItemSet(&rSetSet);
                             lcl_SetStyleProperty(*pEntry, *pPropSet, pValues[nProp], aBaseImpl, GetBasePool(), GetDoc(), GetFamily());
@@ -3876,8 +3876,8 @@ throw(beans::PropertyVetoException, lang::IllegalArgumentException, lang::Wrappe
 
  ---------------------------------------------------------------------------*/
 static uno::Reference<text::XText> lcl_makeHeaderFooter(
-    const sal_uInt16 nRes, 
-    const bool bHeader, 
+    const sal_uInt16 nRes,
+    const bool bHeader,
     SwFrmFmt const*const pFrmFmt)
 {
     if (!pFrmFmt) { return 0; }
@@ -4025,7 +4025,7 @@ throw( beans::UnknownPropertyException, lang::WrappedTargetException, uno::Runti
                 case XATTR_FILLFLOATTRANSPARENCE:
                 case XATTR_SECONDARYFILLCOLOR:
                 {
-                    // This DrawingLayer FillStyle attributes can be part of Header, Footer and PageStyle 
+                    // This DrawingLayer FillStyle attributes can be part of Header, Footer and PageStyle
                     // itself, so decide what to do using the name
                     const bool bHeader(rPropName.EqualsAscii("Header", 0, 6));
                     const bool bFooter(rPropName.EqualsAscii("Footer", 0, 6));
@@ -4181,7 +4181,7 @@ throw(beans::UnknownPropertyException, lang::WrappedTargetException, uno::Runtim
 
   -----------------------------------------------------------------------*/
 void SwXPageStyle::setPropertyValue(
-    const OUString& rPropertyName, 
+    const OUString& rPropertyName,
     const uno::Any& rValue)
 throw( beans::UnknownPropertyException, beans::PropertyVetoException, lang::IllegalArgumentException, lang::WrappedTargetException, uno::RuntimeException)
 {
@@ -4451,7 +4451,7 @@ throw (uno::RuntimeException)
         aSet.SetParent(&pDocShell->GetDoc()->GetDfltTxtFmtColl()->GetAttrSet());
 
         //UUUU here the used DrawingLayer FillStyles are imported when family is
-        // equal to IStyleAccess::AUTO_STYLE_PARA, thus we will need to serve the 
+        // equal to IStyleAccess::AUTO_STYLE_PARA, thus we will need to serve the
         // used slots functionality here to do this correctly
         const SfxItemPropertyMap *pMap = pPropSet->getPropertyMap();
 
@@ -4528,10 +4528,10 @@ throw (uno::RuntimeException)
                         {
                             //UUUU Bitmap also has the MID_GRAFURL mode where a Bitmap URL is used
                             const Graphic aNullGraphic;
-                            XFillBitmapItem aXFillBitmapItem(aSet.GetPool(), aNullGraphic); 
+                            XFillBitmapItem aXFillBitmapItem(aSet.GetPool(), aNullGraphic);
 
-                            aXFillBitmapItem.PutValue(aValue, nMemberId); 
-                            aSet.Put(aXFillBitmapItem); 
+                            aXFillBitmapItem.PutValue(aValue, nMemberId);
+                            aSet.Put(aXFillBitmapItem);
                             bDone = true;
                         }
                     }
@@ -4592,7 +4592,7 @@ throw (uno::RuntimeException)
 
     //UUUU need to ensure uniqueness of evtl. added NameOrIndex items
     // currently in principle only needed when bTakeCareOfDrawingLayerFillStyle,
-    // but does not hurt and is easily forgotten later eventually, so keep it 
+    // but does not hurt and is easily forgotten later eventually, so keep it
     // as common case
     pDocShell->GetDoc()->CheckForUniqueItemForLineFillNameOrIndex(aSet);
 
@@ -4730,11 +4730,11 @@ uno::Any SwXAutoStylesEnumerator::nextElement(  )
 // (no setPropertyValue implementation here), so maybe specialized for saving
 // the Writer Doc to ODF
 
-SwXAutoStyle::SwXAutoStyle( 
-    SwDoc* pDoc, 
-    SfxItemSet_Pointer_t pInitSet, 
+SwXAutoStyle::SwXAutoStyle(
+    SwDoc* pDoc,
+    SfxItemSet_Pointer_t pInitSet,
     IStyleAccess::SwAutoStyleFamily eFam)
-:   mpSet(pInitSet), 
+:   mpSet(pInitSet),
     meFamily(eFam),
     mrDoc(*pDoc)
 {
@@ -4746,8 +4746,8 @@ SwXAutoStyle::~SwXAutoStyle()
 {
 }
 
-void SwXAutoStyle::Modify( 
-    const SfxPoolItem* pOld, 
+void SwXAutoStyle::Modify(
+    const SfxPoolItem* pOld,
     const SfxPoolItem *pNew)
 {
     ClientModify(this, pOld, pNew);
@@ -4804,14 +4804,14 @@ throw (uno::RuntimeException)
     return xRet;
 }
 
-void SwXAutoStyle::setPropertyValue( 
-    const OUString& /*rPropertyName*/, 
+void SwXAutoStyle::setPropertyValue(
+    const OUString& /*rPropertyName*/,
     const uno::Any& /*rValue*/ )
 throw( beans::UnknownPropertyException, beans::PropertyVetoException, lang::IllegalArgumentException, lang::WrappedTargetException, uno::RuntimeException)
 {
 }
 
-uno::Any SwXAutoStyle::getPropertyValue( 
+uno::Any SwXAutoStyle::getPropertyValue(
     const OUString& rPropertyName )
 throw( beans::UnknownPropertyException, lang::WrappedTargetException, uno::RuntimeException )
 {
@@ -4821,28 +4821,28 @@ throw( beans::UnknownPropertyException, lang::WrappedTargetException, uno::Runti
     return GetPropertyValues_Impl(aProperties).getConstArray()[0];
 }
 
-void SwXAutoStyle::addPropertyChangeListener( 
+void SwXAutoStyle::addPropertyChangeListener(
     const OUString& /*aPropertyName*/,
     const uno::Reference< beans::XPropertyChangeListener >& /*xListener*/ )
 throw( beans::UnknownPropertyException, lang::WrappedTargetException, uno::RuntimeException )
 {
 }
 
-void SwXAutoStyle::removePropertyChangeListener( 
+void SwXAutoStyle::removePropertyChangeListener(
     const OUString& /*aPropertyName*/,
     const uno::Reference< beans::XPropertyChangeListener >& /*aListener*/ )
 throw( beans::UnknownPropertyException, lang::WrappedTargetException, uno::RuntimeException )
 {
 }
 
-void SwXAutoStyle::addVetoableChangeListener( 
+void SwXAutoStyle::addVetoableChangeListener(
     const OUString& /*PropertyName*/,
     const uno::Reference< beans::XVetoableChangeListener >& /*aListener*/ )
 throw( beans::UnknownPropertyException, lang::WrappedTargetException, uno::RuntimeException )
 {
 }
 
-void SwXAutoStyle::removeVetoableChangeListener( 
+void SwXAutoStyle::removeVetoableChangeListener(
     const OUString& /*PropertyName*/,
     const uno::Reference< beans::XVetoableChangeListener >& /*aListener*/ )
 throw( beans::UnknownPropertyException, lang::WrappedTargetException, uno::RuntimeException )
@@ -5041,7 +5041,7 @@ throw (uno::RuntimeException)
 {
 }
 
-beans::PropertyState SwXAutoStyle::getPropertyState( 
+beans::PropertyState SwXAutoStyle::getPropertyState(
     const OUString& rPropertyName )
 throw( beans::UnknownPropertyException, uno::RuntimeException)
 {
@@ -5054,13 +5054,13 @@ throw( beans::UnknownPropertyException, uno::RuntimeException)
     return aStates.getConstArray()[0];
 }
 
-void SwXAutoStyle::setPropertyToDefault( 
+void SwXAutoStyle::setPropertyToDefault(
     const OUString& /*PropertyName*/ )
 throw( beans::UnknownPropertyException, uno::RuntimeException )
 {
 }
 
-uno::Any SwXAutoStyle::getPropertyDefault( 
+uno::Any SwXAutoStyle::getPropertyDefault(
     const OUString& rPropertyName )
 throw( beans::UnknownPropertyException, lang::WrappedTargetException, uno::RuntimeException)
 {
@@ -5115,7 +5115,7 @@ throw (beans::UnknownPropertyException, uno::RuntimeException)
             {
                 case OWN_ATTR_FILLBMP_MODE:
                 {
-                    if(SFX_ITEM_SET == mpSet->GetItemState(XATTR_FILLBMP_STRETCH, false) 
+                    if(SFX_ITEM_SET == mpSet->GetItemState(XATTR_FILLBMP_STRETCH, false)
                         || SFX_ITEM_SET == mpSet->GetItemState(XATTR_FILLBMP_TILE, false))
                     {
                         pStates[i] = beans::PropertyState_DIRECT_VALUE;
@@ -5217,7 +5217,7 @@ throw (beans::UnknownPropertyException, lang::WrappedTargetException, uno::Runti
     return aRet;
 }
 
-uno::Sequence< beans::PropertyValue > SwXAutoStyle::getProperties() 
+uno::Sequence< beans::PropertyValue > SwXAutoStyle::getProperties()
 throw (uno::RuntimeException)
 {
     if( !mpSet.get() )
@@ -5270,8 +5270,8 @@ throw (uno::RuntimeException)
 //            aPropertyValue.Name = aIt->sName;
 //            pItem->QueryValue( aPropertyValue.Value, aIt->nMemberId );
 //            aPropertyVector.push_back( aPropertyValue );
-//        }    
-        // TODO: Optimize - and fix! the old iteration filled each WhichId 
+//        }
+        // TODO: Optimize - and fix! the old iteration filled each WhichId
         // only once but there are more properties than WhichIds
         PropertyEntryVector_t::const_iterator aIt = aPropVector.begin();
         while( aIt != aPropVector.end() )

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
@@ -97,7 +97,7 @@ SdrViewEvent::~SdrViewEvent()
 // helper class for all D&D overlays
 
 void SdrDropMarkerOverlay::ImplCreateOverlays(
-    const SdrView& rView, 
+    const SdrView& rView,
     const basegfx::B2DPolyPolygon& rLinePolyPolygon)
 {
 	for(sal_uInt32 a(0L); a < rView.PaintWindowCount(); a++)
@@ -119,7 +119,7 @@ void SdrDropMarkerOverlay::ImplCreateOverlays(
 SdrDropMarkerOverlay::SdrDropMarkerOverlay(const SdrView& rView, const SdrObject& rObject)
 {
     ImplCreateOverlays(
-        rView, 
+        rView,
         rObject.TakeXorPoly());
 }
 
@@ -134,7 +134,7 @@ SdrDropMarkerOverlay::SdrDropMarkerOverlay(const SdrView& rView, const Rectangle
 	aB2DPolygon.setClosed(true);
 
 	ImplCreateOverlays(
-        rView, 
+        rView,
         basegfx::B2DPolyPolygon(aB2DPolygon));
 }
 
@@ -147,7 +147,7 @@ SdrDropMarkerOverlay::SdrDropMarkerOverlay(const SdrView& rView, const Point& rS
 	aB2DPolygon.setClosed(true);
 
 	ImplCreateOverlays(
-        rView, 
+        rView,
         basegfx::B2DPolyPolygon(aB2DPolygon));
 }
 
@@ -307,7 +307,7 @@ SdrHitKind SdrView::PickAnything(const MouseEvent& rMEvt, sal_uInt16 nEventKind,
 	rVEvt.nMouseMode=rMEvt.GetMode();
 	rVEvt.nMouseCode=rMEvt.GetButtons() | rMEvt.GetModifier();
 	const OutputDevice* pOut=pActualOutDev;
-	if (pOut==NULL) 
+	if (pOut==NULL)
 	{
 		pOut = GetFirstOutputDevice();
 		//pOut=GetWin(0);
@@ -344,7 +344,7 @@ SdrHitKind SdrView::PickAnything(const MouseEvent& rMEvt, sal_uInt16 nEventKind,
 SdrHitKind SdrView::PickAnything(const Point& rLogicPos, SdrViewEvent& rVEvt) const
 {
 	const OutputDevice* pOut=pActualOutDev;
-	if (pOut==NULL) 
+	if (pOut==NULL)
 	{
 		pOut = GetFirstOutputDevice();
 		//pOut=GetWin(0);
@@ -498,10 +498,10 @@ SdrHitKind SdrView::PickAnything(const Point& rLogicPos, SdrViewEvent& rVEvt) co
 					pOutliner = &pTextObj->GetModel()->GetHitTestOutliner();
 
 				pTextObj->TakeTextRect( *pOutliner, aTextRect, sal_False, &aAnchor, sal_False );
-				
+
 				// #i73628# Use a text-relative position for hit test in hit test outliner
 				Point aTemporaryTextRelativePosition(aLocalLogicPosition - aTextRect.TopLeft());
-				
+
 				// FitToSize berueksichtigen
 				SdrFitToSizeType eFit=pTextObj->GetFitToSize();
 				sal_Bool bFitToSize=(eFit==SDRTEXTFIT_PROPORTIONAL || eFit==SDRTEXTFIT_ALLLINES);
@@ -563,7 +563,7 @@ SdrHitKind SdrView::PickAnything(const Point& rLogicPos, SdrViewEvent& rVEvt) co
 			bBoundRectHit = sal_True;
 		}
 
-		if(!bBoundRectHit) 
+		if(!bBoundRectHit)
 		{
 			bool bTEHit(pPV &&
                 SdrObjectPrimitiveHit(*pHitObj, aLocalLogicPosition, 0, *pPV, &pPV->GetVisibleLayers(), true));
@@ -685,7 +685,7 @@ SdrHitKind SdrView::PickAnything(const Point& rLogicPos, SdrViewEvent& rVEvt) co
 				}
 				else if (bMarked)
 				{
-					eEvent=SDREVENT_BEGDRAGOBJ; // MarkState nicht aendern, nur Drag	
+					eEvent=SDREVENT_BEGDRAGOBJ; // MarkState nicht aendern, nur Drag
 				}
 			}
 		}
@@ -853,16 +853,16 @@ sal_Bool SdrView::DoMouseEvent(const SdrViewEvent& rVEvt)
 			if (!EndCreateObj(eCmd)) { // Event fuer Create nicht ausgewerten? -> Markieren
 				if (eHit==SDRHIT_UNMARKEDOBJECT || eHit==SDRHIT_TEXTEDIT) {
 					MarkObj(rVEvt.pRootObj,rVEvt.pPV);
-					if (eHit==SDRHIT_TEXTEDIT) 
+					if (eHit==SDRHIT_TEXTEDIT)
 					{
 						sal_Bool bRet2(pActualOutDev && OUTDEV_WINDOW == pActualOutDev->GetOutDevType() &&
 							SdrBeginTextEdit(rVEvt.pObj, rVEvt.pPV, (Window*)pActualOutDev, sal_False, (SdrOutliner*)0L));
-					
-						if(bRet2) 
+
+						if(bRet2)
 						{
 							MouseEvent aMEvt(pActualOutDev->LogicToPixel(aLogicPos),
 											 1,rVEvt.nMouseMode,rVEvt.nMouseCode,rVEvt.nMouseCode);
-							
+
 							OutlinerView* pOLV=GetTextEditOutlinerView();
 							if (pOLV!=NULL) {
 								pOLV->MouseButtonDown(aMEvt); // Event an den Outliner, aber ohne Doppelklick
@@ -949,7 +949,7 @@ sal_Bool SdrView::DoMouseEvent(const SdrViewEvent& rVEvt)
 			bRet = pActualOutDev && OUTDEV_WINDOW == pActualOutDev->GetOutDevType()&&
 				 SdrBeginTextEdit(rVEvt.pObj, rVEvt.pPV, (Window*)pActualOutDev, sal_False, (SdrOutliner*)0L);
 
-			if(bRet) 
+			if(bRet)
 			{
 				MouseEvent aMEvt(pActualOutDev->LogicToPixel(aLogicPos),
 								 1,rVEvt.nMouseMode,rVEvt.nMouseCode,rVEvt.nMouseCode);
@@ -980,7 +980,7 @@ sal_Bool SdrView::DoMouseEvent(const SdrViewEvent& rVEvt)
 Pointer SdrView::GetPreferedPointer(const Point& rMousePos, const OutputDevice* pOut, sal_uInt16 nModifier, sal_Bool bLeftDown) const
 {
 	// Actions
-	if (IsCreateObj()) 
+	if (IsCreateObj())
 	{
 		return pAktCreate->GetCreatePointer();
 	}
@@ -1006,9 +1006,9 @@ Pointer SdrView::GetPreferedPointer(const Point& rMousePos, const OutputDevice* 
 	}
 	//sal_uInt16 nTol=nHitTolLog;
 	// TextEdit, ObjEdit, Macro
-	if (IsTextEdit() && (IsTextEditInSelectionMode() || IsTextEditHit(rMousePos,0/*nTol*/))) 
+	if (IsTextEdit() && (IsTextEditInSelectionMode() || IsTextEditHit(rMousePos,0/*nTol*/)))
 	{
-		if(!pOut || IsTextEditInSelectionMode()) 
+		if(!pOut || IsTextEditInSelectionMode())
 		{
 			if(pTextEditOutliner->IsVertical())
 				return Pointer(POINTER_TEXT_VERTICAL);
@@ -1018,7 +1018,7 @@ Pointer SdrView::GetPreferedPointer(const Point& rMousePos, const OutputDevice* 
 		// hier muss besser der Outliner was liefern:
 		Point aPos(pOut->LogicToPixel(rMousePos));
 		Pointer aPointer(pTextEditOutlinerView->GetPointer(aPos));
-		if (aPointer==POINTER_ARROW) 
+		if (aPointer==POINTER_ARROW)
 		{
 			if(pTextEditOutliner->IsVertical())
 				aPointer = POINTER_TEXT_VERTICAL;
@@ -1040,7 +1040,7 @@ Pointer SdrView::GetPreferedPointer(const Point& rMousePos, const OutputDevice* 
 	{
 		case SDREVENT_BEGCREATEOBJ:
 			return aAktCreatePointer;
-		case SDREVENT_MARKOBJ: 
+		case SDREVENT_MARKOBJ:
 		case SDREVENT_BEGMARK:
 			return Pointer(POINTER_ARROW);
 		case SDREVENT_MARKPOINT:
@@ -1064,17 +1064,17 @@ Pointer SdrView::GetPreferedPointer(const Point& rMousePos, const OutputDevice* 
 		}
 		default: break;
 	} // switch
-	
-	switch(eHit) 
+
+	switch(eHit)
 	{
 		case SDRHIT_CELL:
 			return Pointer(POINTER_ARROW);
-		case SDRHIT_HELPLINE : 
+		case SDRHIT_HELPLINE :
 			return aVEvt.pPV->GetHelpLines()[aVEvt.nHlplIdx].GetPointer();
-		case SDRHIT_GLUEPOINT: 
+		case SDRHIT_GLUEPOINT:
 			return Pointer(POINTER_MOVEPOINT);
-		case SDRHIT_TEXTEDIT : 
-		case SDRHIT_TEXTEDITOBJ: 
+		case SDRHIT_TEXTEDIT :
+		case SDRHIT_TEXTEDITOBJ:
 		{
 			SdrTextObj* pText = dynamic_cast< SdrTextObj* >( aVEvt.pObj );
 			if(pText && pText->HasText())
@@ -1230,39 +1230,39 @@ XubString SdrView::GetStatusText()
 				mpCurrentSdrDragMethod->TakeSdrDragComment(aStr);
 			}
 		}
-	} 
-	else if(IsMarkObj()) 
+	}
+	else if(IsMarkObj())
 	{
-		if(AreObjectsMarked()) 
+		if(AreObjectsMarked())
 		{
 			aStr = ImpGetResStr(STR_ViewMarkMoreObjs);
-		} 
-		else 
+		}
+		else
 		{
 			aStr = ImpGetResStr(STR_ViewMarkObjs);
 		}
-	} 
-	else if(IsMarkPoints()) 
+	}
+	else if(IsMarkPoints())
 	{
-		if(HasMarkedPoints()) 
+		if(HasMarkedPoints())
 		{
 			aStr = ImpGetResStr(STR_ViewMarkMorePoints);
-		} 
-		else 
+		}
+		else
 		{
 			aStr = ImpGetResStr(STR_ViewMarkPoints);
 		}
-	} else if (IsMarkGluePoints()) 
+	} else if (IsMarkGluePoints())
 	{
-		if(HasMarkedGluePoints()) 
+		if(HasMarkedGluePoints())
 		{
 			aStr = ImpGetResStr(STR_ViewMarkMoreGluePoints);
-		} 
-		else 
+		}
+		else
 		{
 			aStr = ImpGetResStr(STR_ViewMarkGluePoints);
 		}
-	} 
+	}
 	else if (IsTextEdit() && pTextEditOutlinerView!=NULL) {
 		aStr=ImpGetResStr(STR_ViewTextEdit); // "TextEdit - Zeile y  Spalte x";
 		ESelection aSel(pTextEditOutlinerView->GetSelection());
@@ -1353,7 +1353,7 @@ SdrViewContext SdrView::GetContext() const
 	if( GetMarkedObjectCount() )
 	{
 		sal_Bool bGraf = sal_True, bMedia = sal_True, bTable = sal_True;
-		
+
 		for( sal_uIntPtr nMarkNum = 0; nMarkNum < nMarkAnz && ( bGraf || bMedia ); nMarkNum++ )
 		{
 			const SdrObject* pMarkObj = GetMarkedObjectByIndex( nMarkNum );
@@ -1364,7 +1364,7 @@ SdrViewContext SdrView::GetContext() const
 
 			if( !pMarkObj->ISA( SdrGrafObj ) )
 				bGraf = sal_False;
-			
+
 			if( !pMarkObj->ISA( SdrMediaObj ) )
 				bMedia = sal_False;
 
@@ -1570,17 +1570,17 @@ SvtAccessibilityOptions& SdrView::getAccessibilityOptions()
 {
 	return maAccessibilityOptions;
 }
-	
+
 /** method is called whenever the global SvtAccessibilityOptions is changed */
 void SdrView::onAccessibilityOptionsChanged()
 {
 }
 
-void SdrView::SetMasterPagePaintCaching(sal_Bool bOn) 
-{ 
+void SdrView::SetMasterPagePaintCaching(sal_Bool bOn)
+{
 	if(mbMasterPagePaintCaching != bOn)
 	{
-		mbMasterPagePaintCaching = bOn; 
+		mbMasterPagePaintCaching = bOn;
 
 		// reset at all SdrPageWindow's
 		SdrPageView* pPageView = GetSdrPageView();

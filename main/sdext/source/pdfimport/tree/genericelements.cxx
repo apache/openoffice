@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -29,7 +29,7 @@
 #include "pdfiprocessor.hxx"
 #include "pdfihelper.hxx"
 #include "style.hxx"
- 
+
 
 #include <basegfx/polygon/b2dpolypolygontools.hxx>
 #include <basegfx/range/b2drange.hxx>
@@ -50,7 +50,7 @@ Element::~Element()
         Children.pop_front();
     }
 }
- 
+
 void Element::applyToChildren( ElementTreeVisitor& rVisitor )
 {
     for( std::list< Element* >::iterator it = Children.begin(); it != Children.end(); ++it )
@@ -119,7 +119,7 @@ void HyperlinkElement::visitedBy( ElementTreeVisitor&                          r
 {
     rVisitor.visit(*this,rParentIt);
 }
- 
+
 void TextElement::visitedBy( ElementTreeVisitor&                          rVisitor,
                              const std::list< Element* >::const_iterator& rParentIt )
 {
@@ -137,8 +137,8 @@ void ImageElement::visitedBy( ElementTreeVisitor&                          rVisi
 {
     rVisitor.visit( *this, rParentIt);
 }
- 
-PolyPolyElement::PolyPolyElement( Element*                       pParent, 
+
+PolyPolyElement::PolyPolyElement( Element*                       pParent,
                                   sal_Int32                      nGCId,
                                   const basegfx::B2DPolyPolygon& rPolyPoly,
                                   sal_Int8                       nAction )
@@ -205,7 +205,7 @@ bool ParagraphElement::isSingleLined( PDFIProcessor& rProc ) const
         // a paragraph containing subparagraphs cannot be single lined
         if( dynamic_cast< ParagraphElement* >(*it) != NULL )
             return false;
-        
+
         pText = dynamic_cast< TextElement* >(*it);
         if( pText )
         {
@@ -223,7 +223,7 @@ bool ParagraphElement::isSingleLined( PDFIProcessor& rProc ) const
         }
         ++it;
     }
-    
+
     // a paragraph without a single text is not considered single lined
     return pLastText != NULL;
 }
@@ -272,7 +272,7 @@ PageElement::~PageElement()
     if( FooterElement )
         delete FooterElement;
 }
- 
+
 void PageElement::visitedBy( ElementTreeVisitor&                          rVisitor,
                              const std::list< Element* >::const_iterator& rParentIt )
 {
@@ -314,7 +314,7 @@ bool PageElement::resolveHyperlink( std::list<Element*>::iterator link_it, std::
     HyperlinkElement* pLink = dynamic_cast<HyperlinkElement*>(*link_it);
     if( ! pLink ) // sanity check
         return false;
-    
+
     for( std::list<Element*>::iterator it = rElements.begin(); it != rElements.end(); ++it )
     {
         if( (*it)->x >= pLink->x && (*it)->x + (*it)->w <= pLink->x + pLink->w &&
@@ -382,7 +382,7 @@ void PageElement::resolveUnderlines( PDFIProcessor& rProc )
 {
     // FIXME: currently the algorithm used is quadratic
     // this could be solved by some sorting beforehand
-    
+
     std::list< Element* >::iterator poly_it = Children.begin();
     while( poly_it != Children.end() )
     {
@@ -406,7 +406,7 @@ void PageElement::resolveUnderlines( PDFIProcessor& rProc )
             ++poly_it;
             continue;
         }
-        
+
         bool bRemovePoly = false;
         basegfx::B2DPolygon aPoly = pPoly->PolyPoly.getB2DPolygon(0);
         if( aPoly.count() != 2 ||
@@ -480,6 +480,6 @@ void DocumentElement::visitedBy( ElementTreeVisitor&                          rV
 {
     rVisitor.visit(*this, rParentIt);
 }
- 
+
 
 }

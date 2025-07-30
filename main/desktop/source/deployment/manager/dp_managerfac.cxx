@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -46,7 +46,7 @@ typedef ::cppu::WeakComponentImplHelper1<
 class PackageManagerFactoryImpl : private MutexHolder, public t_pmfac_helper
 {
     Reference<XComponentContext> m_xComponentContext;
-    
+
     Reference<deployment::XPackageManager> m_xUserMgr;
     Reference<deployment::XPackageManager> m_xSharedMgr;
     Reference<deployment::XPackageManager> m_xBundledMgr;
@@ -56,16 +56,16 @@ class PackageManagerFactoryImpl : private MutexHolder, public t_pmfac_helper
         OUString, WeakReference<deployment::XPackageManager>,
         ::rtl::OUStringHash > t_string2weakref;
     t_string2weakref m_managers;
-    
+
 protected:
     inline void check();
     virtual void SAL_CALL disposing();
-    
+
 public:
     virtual ~PackageManagerFactoryImpl();
     PackageManagerFactoryImpl(
         Reference<XComponentContext> const & xComponentContext );
-    
+
     // XPackageManagerFactory
     virtual Reference<deployment::XPackageManager> SAL_CALL getPackageManager(
         OUString const & context ) throw (RuntimeException);
@@ -160,7 +160,7 @@ PackageManagerFactoryImpl::getPackageManager( OUString const & context )
         if (xRet.is())
             return xRet;
     }
-    
+
     guard.clear();
     xRet.set( PackageManagerImpl::create( m_xComponentContext, context ) );
     guard.reset();

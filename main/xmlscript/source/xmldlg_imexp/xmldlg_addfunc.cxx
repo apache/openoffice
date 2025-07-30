@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -46,7 +46,7 @@ class InputStreamProvider
 	: public ::cppu::WeakImplHelper1< io::XInputStreamProvider >
 {
 	ByteSequence _bytes;
-	
+
 public:
 	inline InputStreamProvider( ByteSequence const & rBytes )
 		: _bytes( rBytes )
@@ -76,7 +76,7 @@ Reference< io::XInputStreamProvider > SAL_CALL exportDialogModel(
 			OUString( RTL_CONSTASCII_USTRINGPARAM("no service manager available!") ),
 			Reference< XInterface >() );
 	}
-	
+
 	Reference< xml::sax::XExtendedDocumentHandler > xHandler( xSMgr->createInstanceWithContext(
 		OUString( RTL_CONSTASCII_USTRINGPARAM("com.sun.star.xml.sax.Writer") ), xContext ), UNO_QUERY );
 	OSL_ASSERT( xHandler.is() );
@@ -86,13 +86,13 @@ Reference< io::XInputStreamProvider > SAL_CALL exportDialogModel(
 			OUString( RTL_CONSTASCII_USTRINGPARAM("could not create sax-writer component!") ),
 			Reference< XInterface >() );
 	}
-	
+
 	ByteSequence aBytes;
-	
+
 	Reference< io::XActiveDataSource > xSource( xHandler, UNO_QUERY );
 	xSource->setOutputStream( createOutputStream( &aBytes ) );
 	exportDialogModel( xHandler, xDialogModel );
-	
+
 	return new InputStreamProvider( aBytes );
 }
 
@@ -110,7 +110,7 @@ void SAL_CALL importDialogModel(
 			OUString( RTL_CONSTASCII_USTRINGPARAM("no service manager available!") ),
 			Reference< XInterface >() );
 	}
-	
+
 	Reference< xml::sax::XParser > xParser( xSMgr->createInstanceWithContext(
 		OUString( RTL_CONSTASCII_USTRINGPARAM("com.sun.star.xml.sax.Parser") ), xContext ), UNO_QUERY );
 	OSL_ASSERT( xParser.is() );
@@ -120,14 +120,14 @@ void SAL_CALL importDialogModel(
 			OUString( RTL_CONSTASCII_USTRINGPARAM("could not create sax-parser component!") ),
 			Reference< XInterface >() );
 	}
-	
+
 	// error handler, entity resolver omitted for this helper function
 	xParser->setDocumentHandler( importDialogModel( xDialogModel, xContext ) );
-	
+
 	xml::sax::InputSource source;
 	source.aInputStream = xInput;
 	source.sSystemId = OUString( RTL_CONSTASCII_USTRINGPARAM("virtual file") );
-	
+
 	xParser->parseStream( source );
 }
 

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -97,7 +97,7 @@ public:
 *  To become completely compatible the print area has to be considered. As far as I found out this printarea
 *  also considers the position and sizes of shapes and manually inserted page breaks
 *  Note: In MS  there is a limit of 1026 horizontal page breaks per sheet.
-*/    
+*/
 sal_Int32 SAL_CALL RangePageBreaks::getCount(  ) throw (uno::RuntimeException)
 {
     sal_Int32 nCount = 0;
@@ -205,10 +205,10 @@ public:
 	}
 };
 
-ScVbaHPageBreaks::ScVbaHPageBreaks( const uno::Reference< XHelperInterface >& xParent, 
+ScVbaHPageBreaks::ScVbaHPageBreaks( const uno::Reference< XHelperInterface >& xParent,
                                     const uno::Reference< uno::XComponentContext >& xContext,
             		                uno::Reference< sheet::XSheetPageBreak >& xSheetPageBreak) throw (uno::RuntimeException):
-                          ScVbaHPageBreaks_BASE( xParent,xContext, new RangePageBreaks( xParent, xContext, xSheetPageBreak, sal_False )), 
+                          ScVbaHPageBreaks_BASE( xParent,xContext, new RangePageBreaks( xParent, xContext, xSheetPageBreak, sal_False )),
 						  mxSheetPageBreak( xSheetPageBreak )
 {
 }
@@ -235,20 +235,20 @@ ScVbaHPageBreaks::createCollectionObject( const css::uno::Any& aSource )
 	return aSource; // its already a pagebreak object
 }
 
-uno::Type 
+uno::Type
 ScVbaHPageBreaks::getElementType() throw (uno::RuntimeException)
 {
 	return excel::XHPageBreak::static_type(0);
 }
 
-rtl::OUString& 
+rtl::OUString&
 ScVbaHPageBreaks::getServiceImplName()
 {
 	static rtl::OUString sImplName( RTL_CONSTASCII_USTRINGPARAM("ScVbaHPageBreaks") );
 	return sImplName;
 }
 
-uno::Sequence< rtl::OUString > 
+uno::Sequence< rtl::OUString >
 ScVbaHPageBreaks::getServiceNames()
 {
 	static uno::Sequence< rtl::OUString > aServiceNames;
@@ -261,10 +261,10 @@ ScVbaHPageBreaks::getServiceNames()
 }
 
 //VPageBreak
-ScVbaVPageBreaks::ScVbaVPageBreaks( const uno::Reference< XHelperInterface >& xParent, 
+ScVbaVPageBreaks::ScVbaVPageBreaks( const uno::Reference< XHelperInterface >& xParent,
                                     const uno::Reference< uno::XComponentContext >& xContext,
             		                uno::Reference< sheet::XSheetPageBreak >& xSheetPageBreak ) throw ( uno::RuntimeException )
-:   ScVbaVPageBreaks_BASE( xParent, xContext, new RangePageBreaks( xParent, xContext, xSheetPageBreak, sal_True ) ), 
+:   ScVbaVPageBreaks_BASE( xParent, xContext, new RangePageBreaks( xParent, xContext, xSheetPageBreak, sal_True ) ),
 	mxSheetPageBreak( xSheetPageBreak )
 {
 }
@@ -273,7 +273,7 @@ ScVbaVPageBreaks::~ScVbaVPageBreaks()
 {
 }
 
-uno::Any SAL_CALL 
+uno::Any SAL_CALL
 ScVbaVPageBreaks::Add( const uno::Any& Before ) throw ( script::BasicErrorException, uno::RuntimeException )
 {
 	RangePageBreaks* pPageBreaks = dynamic_cast< RangePageBreaks* >( m_xIndexAccess.get() );
@@ -296,20 +296,20 @@ ScVbaVPageBreaks::createCollectionObject( const css::uno::Any& aSource )
 	return aSource; // its already a pagebreak object
 }
 
-uno::Type 
+uno::Type
 ScVbaVPageBreaks::getElementType() throw ( uno::RuntimeException )
 {
 	return excel::XVPageBreak::static_type( 0 );
 }
 
-rtl::OUString& 
+rtl::OUString&
 ScVbaVPageBreaks::getServiceImplName()
 {
 	static rtl::OUString sImplName( RTL_CONSTASCII_USTRINGPARAM( "ScVbaVPageBreaks" ) );
 	return sImplName;
 }
 
-uno::Sequence< rtl::OUString > 
+uno::Sequence< rtl::OUString >
 ScVbaVPageBreaks::getServiceNames()
 {
 	static uno::Sequence< rtl::OUString > aServiceNames;

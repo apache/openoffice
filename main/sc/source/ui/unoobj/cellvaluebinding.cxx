@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -204,7 +204,7 @@ namespace calc
 
         return aTypes;
     }
-        
+
     //--------------------------------------------------------------------
     sal_Bool SAL_CALL OCellValueBinding::supportsType( const Type& aType ) throw (RuntimeException)
     {
@@ -222,7 +222,7 @@ namespace calc
 
         return sal_False;
     }
-        
+
     //--------------------------------------------------------------------
     Any SAL_CALL OCellValueBinding::getValue( const Type& aType ) throw (IncompatibleTypesException, RuntimeException)
     {
@@ -309,7 +309,7 @@ namespace calc
         }
         return aReturn;
     }
-        
+
     //--------------------------------------------------------------------
     void SAL_CALL OCellValueBinding::setValue( const Any& aValue ) throw (IncompatibleTypesException, NoSupportException, RuntimeException)
     {
@@ -480,7 +480,7 @@ namespace calc
 
         return ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "com.sun.star.comp.sheet.OCellValueBinding" ) );
     }
-        
+
     //--------------------------------------------------------------------
     sal_Bool SAL_CALL OCellValueBinding::supportsService( const ::rtl::OUString& _rServiceName ) throw (RuntimeException)
     {
@@ -495,7 +495,7 @@ namespace calc
 
         return sal_False;
     }
-        
+
     //--------------------------------------------------------------------
     Sequence< ::rtl::OUString > SAL_CALL OCellValueBinding::getSupportedServiceNames(  ) throw (RuntimeException)
     {
@@ -515,7 +515,7 @@ namespace calc
        if ( _rxListener.is() )
            m_aModifyListeners.addInterface( _rxListener );
     }
-    
+
     //--------------------------------------------------------------------
     void SAL_CALL OCellValueBinding::removeModifyListener( const Reference< XModifyListener >& _rxListener ) throw (RuntimeException)
     {

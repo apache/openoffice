@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -177,7 +177,7 @@ void lcl_AddPropertiesToVector(
    Property( C2U("3DRelativeHeight"),
                   PROP_DIAGRAM_3DRELATIVEHEIGHT,
                   ::getCppuType( reinterpret_cast< const sal_Int32 * >(0)),
-                  beans::PropertyAttribute::MAYBEVOID ));  
+                  beans::PropertyAttribute::MAYBEVOID ));
 }
 
 struct StaticDiagramDefaults_Initializer
@@ -200,7 +200,7 @@ private:
         ::chart::PropertyHelper::setPropertyValueDefault< sal_Int32 >( rOutMap, PROP_DIAGRAM_STARTING_ANGLE, 90 );
         ::chart::PropertyHelper::setPropertyValueDefault< sal_Int32 >( rOutMap, PROP_DIAGRAM_3DRELATIVEHEIGHT, 100 );
 		 ::chart::SceneProperties::AddDefaultsToMap( rOutMap );
-    }    
+    }
 };
 
 struct StaticDiagramDefaults : public rtl::StaticAggregate< ::chart::tPropertyValueMap, StaticDiagramDefaults_Initializer >

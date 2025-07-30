@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -151,7 +151,7 @@ namespace sdr
 			    else
 			    {
 				    aInitColor = pPageView->GetApplicationDocumentColor();
-    				
+
 				    if(Color(COL_AUTO) == aInitColor)
 				    {
 						const svtools::ColorConfig aColorConfig;
@@ -403,7 +403,7 @@ namespace sdr
 			}
 
 			const SdrPage& rPage = getPage();
-			
+
             if(!rPage.GetLftBorder() && !rPage.GetUppBorder() && !rPage.GetRgtBorder() && !rPage.GetLwrBorder())
 			{
 				return false;
@@ -445,7 +445,7 @@ namespace sdr
 			if(nSubHierarchyCount)
 			{
 				xRetval = getPrimitive2DSequenceSubHierarchy(rDisplayInfo);
-				
+
 				if(xRetval.hasElements())
 				{
 					// get ranges
@@ -588,7 +588,7 @@ namespace sdr
 			{
 				return false;
 			}
-			
+
 			// no helplines for preview renderers
 			if(GetObjectContact().IsPreviewRenderer())
 			{
@@ -683,7 +683,7 @@ namespace sdr
 			if(nSubHierarchyCount)
 			{
 				const sal_Bool bDoGhostedDisplaying(
-					GetObjectContact().DoVisualizeEnteredGroup() 
+					GetObjectContact().DoVisualizeEnteredGroup()
 					&& !GetObjectContact().isOutputToPrinter()
 					&& GetObjectContact().getActiveViewContact() == &GetViewContact());
 

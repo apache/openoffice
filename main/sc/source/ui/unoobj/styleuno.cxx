@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -281,7 +281,7 @@ const SfxItemPropertySet * lcl_GetPageStyleSet()
 		{MAP_CHAR_LEN(SC_UNONAME_WRITING),		ATTR_WRITINGDIR,	&getCppuType((sal_Int16*)0),			0, 0 },
         {0,0,0,0,0,0}
 	};
-	static SfxItemPropertySet aPageStyleSet_Impl( aPageStyleMap_Impl ); 
+	static SfxItemPropertySet aPageStyleSet_Impl( aPageStyleMap_Impl );
 	return &aPageStyleSet_Impl;
 }
 
@@ -2139,7 +2139,7 @@ sal_Bool SAL_CALL ScStyleObj::supportsService( const rtl::OUString& rServiceName
 {
 	sal_Bool bPage = ( eFamily == SFX_STYLE_FAMILY_PAGE );
     return rServiceName.equalsAsciiL( RTL_CONSTASCII_STRINGPARAM ( SCSTYLE_SERVICE ) )||
-           rServiceName.equalsAsciiL( 
+           rServiceName.equalsAsciiL(
             RTL_CONSTASCII_STRINGPARAM ( bPage ? SCPAGESTYLE_SERVICE : SCCELLSTYLE_SERVICE ));
 }
 

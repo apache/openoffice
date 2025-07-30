@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -140,7 +140,7 @@ namespace basprov
     {
         ::vos::OGuard aGuard( Application::GetSolarMutex() );
 
-        return Sequence< Reference< browse::XBrowseNode > >(); 
+        return Sequence< Reference< browse::XBrowseNode > >();
     }
 
     // -----------------------------------------------------------------------------
@@ -202,9 +202,9 @@ namespace basprov
 
     // -----------------------------------------------------------------------------
 
-    Any BasicMethodNodeImpl::invoke( const ::rtl::OUString& aFunctionName, const Sequence< Any >& aParams, 
-        Sequence< sal_Int16 >& aOutParamIndex, Sequence< Any >& aOutParam ) 
-        throw (IllegalArgumentException, script::CannotConvertException, 
+    Any BasicMethodNodeImpl::invoke( const ::rtl::OUString& aFunctionName, const Sequence< Any >& aParams,
+        Sequence< sal_Int16 >& aOutParamIndex, Sequence< Any >& aOutParam )
+        throw (IllegalArgumentException, script::CannotConvertException,
                reflection::InvocationTargetException, RuntimeException)
     {
 		(void)aParams;
@@ -237,7 +237,7 @@ namespace basprov
                                 break;
                             }
                         }
-                    }                  
+                    }
                 }
             }
 
@@ -260,7 +260,7 @@ namespace basprov
 
                 if ( xSMgr.is() )
                 {
-                    Reference< frame::XDesktop > xDesktop( xSMgr->createInstanceWithContext( 
+                    Reference< frame::XDesktop > xDesktop( xSMgr->createInstanceWithContext(
                         ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "com.sun.star.frame.Desktop" ) ), m_xContext ), UNO_QUERY );
 
                     if ( xDesktop.is() )
@@ -269,7 +269,7 @@ namespace basprov
 
                         if ( xProv.is() )
                         {
-                            Reference< frame::XDispatchHelper > xHelper( xSMgr->createInstanceWithContext( 
+                            Reference< frame::XDispatchHelper > xHelper( xSMgr->createInstanceWithContext(
                                 ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "com.sun.star.frame.DispatchHelper" ) ), m_xContext ), UNO_QUERY );
 
                             if ( xHelper.is() )
@@ -304,8 +304,8 @@ namespace basprov
 
     // -----------------------------------------------------------------------------
 
-    void BasicMethodNodeImpl::setValue( const ::rtl::OUString& aPropertyName, const Any& aValue ) 
-        throw (UnknownPropertyException, script::CannotConvertException, 
+    void BasicMethodNodeImpl::setValue( const ::rtl::OUString& aPropertyName, const Any& aValue )
+        throw (UnknownPropertyException, script::CannotConvertException,
                reflection::InvocationTargetException, RuntimeException)
     {
 		(void)aPropertyName;

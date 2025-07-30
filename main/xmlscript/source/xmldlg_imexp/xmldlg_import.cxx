@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -273,7 +273,7 @@ bool StyleElement::importBorderStyle(
             _border = BORDER_SIMPLE_COLOR;
             _borderColor = toInt32(aValue);
         }
-        
+
         _hasValue |= 0x4;
         importBorderStyle(xProps); // write values
     }
@@ -295,7 +295,7 @@ bool StyleElement::importVisualEffectStyle(
         return false;
     }
     _inited |= 0x40;
-    
+
     OUString aValue;
     if (getStringAttr( &aValue, OUString( RTL_CONSTASCII_USTRINGPARAM("look") ),
                        _xAttributes, _pImport->XMLNS_DIALOGS_UID ))
@@ -314,7 +314,7 @@ bool StyleElement::importVisualEffectStyle(
         }
         else
             OSL_ASSERT( 0 );
-        
+
         _hasValue |= 0x40;
         xProps->setPropertyValue( OUSTR("VisualEffect"),
                                   makeAny(_visualEffect) );
@@ -674,7 +674,7 @@ bool StyleElement::importFontStyle(
         &_descr.WordLineMode,
         OUString( RTL_CONSTASCII_USTRINGPARAM("font-wordlinemode") ),
         _xAttributes, _pImport->XMLNS_DIALOGS_UID );
-    
+
     // dialog:font-type "(raster|device|scalable)" #IMPLIED
     if (getStringAttr(
             &aValue, OUString( RTL_CONSTASCII_USTRINGPARAM("font-type") ),
@@ -1351,7 +1351,7 @@ bool ImportContext::importImageScaleModeProperty(
     if (!aImageScaleMode.isEmpty())
     {
         sal_Int16 nImageScaleMode;
-        
+
         if (aImageScaleMode.equalsAsciiL( RTL_CONSTASCII_STRINGPARAM("none") ))
         {
             nImageScaleMode = awt::ImageScaleMode::NONE;
@@ -1370,7 +1370,7 @@ bool ImportContext::importImageScaleModeProperty(
                 OUString( RTL_CONSTASCII_USTRINGPARAM("invalid scale image mode value!") ),
                 Reference< XInterface >(), Any() );
         }
-        
+
         _xControlModel->setPropertyValue( rPropName, makeAny( nImageScaleMode ) );
         return true;
     }
@@ -1485,10 +1485,10 @@ void ImportContext::importEvents(
                         }
                     }
 					else if ( descr.ScriptType.equals( OUString( RTL_CONSTASCII_USTRINGPARAM( "Script" ) ) ) )
-					{ 
+					{
 						// Check if there is a protocol, if not assume
 						// this is an early scripting framework url ( without
-						// the protocol ) and fix it up!! 
+						// the protocol ) and fix it up!!
 						if ( descr.ScriptCode.indexOf( ':' ) == -1 )
 						{
 							::rtl::OUStringBuffer buf;
@@ -1580,7 +1580,7 @@ void ImportContext::importEvents(
                         _pImport->XMLNS_DIALOGS_UID == nUid &&
                         aLocalName.equalsAsciiL(
                             RTL_CONSTASCII_STRINGPARAM("event") ) );
-                    
+
                     if (!getStringAttr( &descr.ListenerType,
                                         OUString( RTL_CONSTASCII_USTRINGPARAM(
                                                       "listener-type") ),
@@ -1651,7 +1651,7 @@ void ImportContext::importDefaults(
     {
 	try
 	{
-		
+
         	_xControlModel->setPropertyValue(
             		OUString( RTL_CONSTASCII_USTRINGPARAM("EnableVisible") ), makeAny( sal_False ) );
 	}
@@ -1889,7 +1889,7 @@ Reference< util::XNumberFormatsSupplier > const & DialogImport::getNumberFormats
                 OUString( RTL_CONSTASCII_USTRINGPARAM(
                               "com.sun.star.util.NumberFormatsSupplier") ),
                 xContext ), UNO_QUERY );
-        
+
         ::osl::MutexGuard aGuard( ::osl::Mutex::getGlobalMutex() );
         if (! _xSupplier.is())
         {

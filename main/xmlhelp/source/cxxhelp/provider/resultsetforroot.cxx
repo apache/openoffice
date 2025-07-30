@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -50,23 +50,23 @@ ResultSetForRoot::ResultSetForRoot( const uno::Reference< lang::XMultiServiceFac
 	m_aPath = m_pDatabases->getModuleList( m_aURLParameter.get_language() );
 	m_aItems.resize( m_aPath.size() );
 	m_aIdents.resize( m_aPath.size() );
-	
+
 	Command aCommand;
 	aCommand.Name = rtl::OUString::createFromAscii( "getPropertyValues" );
 	aCommand.Argument <<= m_sProperty;
-	
+
 	for( sal_uInt32 i = 0; i < m_aPath.size(); ++i )
 	{
-		m_aPath[i] = 
+		m_aPath[i] =
 			rtl::OUString::createFromAscii( "vnd.sun.star.help://" ) +
 			m_aPath[i]                                               +
 			rtl::OUString::createFromAscii( "?Language=" )           +
 			m_aURLParameter.get_language()                           +
 			rtl::OUString::createFromAscii( "&System=" )             +
 			m_aURLParameter.get_system();
-		
+
 		m_nRow = sal_Int32( i );
-		
+
 		uno::Reference< XContent > content = queryContent();
 		if( content.is() )
 		{
@@ -74,5 +74,5 @@ ResultSetForRoot::ResultSetForRoot( const uno::Reference< lang::XMultiServiceFac
 			cmd->execute( aCommand,0,uno::Reference< XCommandEnvironment >( 0 ) ) >>= m_aItems[i]; //TODO: check return value of operator >>=
 		}
 		m_nRow = 0xffffffff;
-	}		
+	}
 }

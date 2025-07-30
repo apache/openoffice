@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -45,13 +45,13 @@ bool PolyPolygonEditor::DeletePoints( const std::set< sal_uInt16 >& rAbsPoints )
 	for( aIter = rAbsPoints.rbegin(); aIter != rAbsPoints.rend(); aIter++ )
 	{
 		sal_uInt32 nPoly, nPnt;
-		if( GetRelativePolyPoint(maPolyPolygon,(*aIter), nPoly, nPnt) ) 
+		if( GetRelativePolyPoint(maPolyPolygon,(*aIter), nPoly, nPnt) )
 		{
 			// remove point
 			basegfx::B2DPolygon aCandidate(maPolyPolygon.getB2DPolygon(nPoly));
 
 			aCandidate.remove(nPnt);
-			
+
 			if( ( mbIsClosed && aCandidate.count() < 3L) || (aCandidate.count() < 2L) )
 			{
 				maPolyPolygon.remove(nPoly);
@@ -77,7 +77,7 @@ bool PolyPolygonEditor::SetSegmentsKind(SdrPathSegmentKind eKind, const std::set
 	{
 		sal_uInt32 nPolyNum, nPntNum;
 
-		if(PolyPolygonEditor::GetRelativePolyPoint(maPolyPolygon, (*aIter), nPolyNum, nPntNum)) 
+		if(PolyPolygonEditor::GetRelativePolyPoint(maPolyPolygon, (*aIter), nPolyNum, nPntNum))
 		{
 			// do change at aNewPolyPolygon. Take a look at edge.
 			basegfx::B2DPolygon aCandidate(maPolyPolygon.getB2DPolygon(nPolyNum));
@@ -88,7 +88,7 @@ bool PolyPolygonEditor::SetSegmentsKind(SdrPathSegmentKind eKind, const std::set
 			{
 				// it's a valid edge, check control point usage
 				const sal_uInt32 nNextIndex((nPntNum + 1) % nCount);
-				const bool bContolUsed(aCandidate.areControlPointsUsed()								
+				const bool bContolUsed(aCandidate.areControlPointsUsed()
 					&& (aCandidate.isNextControlPointUsed(nPntNum) || aCandidate.isPrevControlPointUsed(nNextIndex)));
 
 				if(bContolUsed)
@@ -136,7 +136,7 @@ bool PolyPolygonEditor::SetPointsSmooth( basegfx::B2VectorContinuity eFlags, con
 	{
 		sal_uInt32 nPolyNum, nPntNum;
 
-		if(PolyPolygonEditor::GetRelativePolyPoint(maPolyPolygon, (*aIter), nPolyNum, nPntNum)) 
+		if(PolyPolygonEditor::GetRelativePolyPoint(maPolyPolygon, (*aIter), nPolyNum, nPntNum))
 		{
 			// do change at aNewPolyPolygon...
 			basegfx::B2DPolygon aCandidate(maPolyPolygon.getB2DPolygon(nPolyNum));

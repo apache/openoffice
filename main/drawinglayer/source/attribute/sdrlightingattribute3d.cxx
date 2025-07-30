@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
@@ -61,7 +61,7 @@ namespace drawinglayer
 			    return (getAmbientLight() == rCandidate.getAmbientLight()
 				    && getLightVector() == rCandidate.getLightVector());
 		    }
-        
+
             static ImpSdrLightingAttribute* get_global_default()
             {
                 static ImpSdrLightingAttribute* pDefault = 0;
@@ -129,7 +129,7 @@ namespace drawinglayer
 				{
 					delete mpSdrLightingAttribute;
 				}
-				
+
 				mpSdrLightingAttribute = rCandidate.mpSdrLightingAttribute;
 				mpSdrLightingAttribute->mnRefCount++;
 			}
@@ -152,20 +152,20 @@ namespace drawinglayer
 			return (*rCandidate.mpSdrLightingAttribute == *mpSdrLightingAttribute);
 		}
 
-		const basegfx::BColor& SdrLightingAttribute::getAmbientLight() const 
-        { 
-            return mpSdrLightingAttribute->getAmbientLight(); 
+		const basegfx::BColor& SdrLightingAttribute::getAmbientLight() const
+        {
+            return mpSdrLightingAttribute->getAmbientLight();
         }
-		
-        const ::std::vector< Sdr3DLightAttribute >& SdrLightingAttribute::getLightVector() const 
-        { 
-            return mpSdrLightingAttribute->getLightVector(); 
+
+        const ::std::vector< Sdr3DLightAttribute >& SdrLightingAttribute::getLightVector() const
+        {
+            return mpSdrLightingAttribute->getLightVector();
         }
 
         // color model solver
 		basegfx::BColor SdrLightingAttribute::solveColorModel(
-			const basegfx::B3DVector& rNormalInEyeCoordinates, 
-			const basegfx::BColor& rColor, const basegfx::BColor& rSpecular, 
+			const basegfx::B3DVector& rNormalInEyeCoordinates,
+			const basegfx::BColor& rColor, const basegfx::BColor& rSpecular,
 			const basegfx::BColor& rEmission, sal_uInt16 nSpecularIntensity) const
 		{
 			// initialize with emissive color
@@ -176,13 +176,13 @@ namespace drawinglayer
 
 			// prepare light access. Is there a light?
 			const sal_uInt32 nLightCount(mpSdrLightingAttribute->getLightVector().size());
-			
+
 			if(nLightCount && !rNormalInEyeCoordinates.equalZero())
 			{
 				// prepare normal
 				basegfx::B3DVector aEyeNormal(rNormalInEyeCoordinates);
 				aEyeNormal.normalize();
-				
+
 				for(sal_uInt32 a(0L); a < nLightCount; a++)
 				{
 					const Sdr3DLightAttribute& rLight(mpSdrLightingAttribute->getLightVector()[a]);

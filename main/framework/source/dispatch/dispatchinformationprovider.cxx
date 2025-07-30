@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -49,8 +49,8 @@
 //_________________________________________________________________________________________________________________
 
 namespace framework{
-    
-namespace css = ::com::sun::star;    
+
+namespace css = ::com::sun::star;
 
 //_________________________________________________________________________________________________________________
 //	declarations
@@ -58,7 +58,7 @@ namespace css = ::com::sun::star;
 DEFINE_XINTERFACE_1(DispatchInformationProvider                               ,
                     OWeakObject                                               ,
                     DIRECT_INTERFACE(css::frame::XDispatchInformationProvider))
-                                    
+
 //_________________________________________________________________________________________________________________
 DispatchInformationProvider::DispatchInformationProvider(const css::uno::Reference< css::lang::XMultiServiceFactory >& xSMGR ,
                                                          const css::uno::Reference< css::frame::XFrame >&              xFrame)
@@ -80,9 +80,9 @@ css::uno::Sequence< sal_Int16 > SAL_CALL DispatchInformationProvider::getSupport
     css::uno::Sequence< css::uno::Reference< css::frame::XDispatchInformationProvider > > lProvider = implts_getAllSubProvider();
     sal_Int32                                                                             c1        = lProvider.getLength();
     sal_Int32                                                                             i1        = 0;
-        
+
     ::comphelper::SequenceAsVector< sal_Int16 > lGroups;
-    
+
     for (i1=0; i1<c1; ++i1)
     {
         // ignore controller, which doesn't implement the right interface
@@ -101,7 +101,7 @@ css::uno::Sequence< sal_Int16 > SAL_CALL DispatchInformationProvider::getSupport
                 lGroups.push_back(rGroup);
         }
     }
-    
+
     return lGroups.getAsConstList();
 }
 
@@ -143,7 +143,7 @@ css::uno::Sequence< css::frame::DispatchInformation > SAL_CALL DispatchInformati
 
     c1 = (sal_Int32)lInfos.size();
     i1 = 0;
-    
+
     css::uno::Sequence< css::frame::DispatchInformation >       lReturn(c1);
     BaseHash< css::frame::DispatchInformation >::const_iterator pStepp ;
     for (  pStepp  = lInfos.begin()          ;
@@ -164,23 +164,23 @@ css::uno::Sequence< css::uno::Reference< css::frame::XDispatchInformationProvide
     css::uno::Reference< css::frame::XFrame >              xFrame(m_xFrame.get(), css::uno::UNO_QUERY);
     aReadLock.unlock();
     // <- SAFE ----------------------------------
-    
+
     if (!xFrame.is())
         return css::uno::Sequence< css::uno::Reference< css::frame::XDispatchInformationProvider > >();
-    
+
     CloseDispatcher* pCloser = new CloseDispatcher(xSMGR, xFrame, ::rtl::OUString::createFromAscii("_self")); // explicit "_self" ... not "" ... see implementation of close dispatcher itself!
     css::uno::Reference< css::uno::XInterface > xCloser(static_cast< css::frame::XDispatch* >(pCloser), css::uno::UNO_QUERY);
 
     css::uno::Reference< css::frame::XDispatchInformationProvider > xCloseDispatch(xCloser                                                      , css::uno::UNO_QUERY);
     css::uno::Reference< css::frame::XDispatchInformationProvider > xController   (xFrame->getController()                                      , css::uno::UNO_QUERY);
     css::uno::Reference< css::frame::XDispatchInformationProvider > xAppDispatcher(xSMGR->createInstance(IMPLEMENTATIONNAME_APPDISPATCHPROVIDER), css::uno::UNO_QUERY);
-    
+
     css::uno::Sequence< css::uno::Reference< css::frame::XDispatchInformationProvider > > lProvider(3);
-    lProvider[0] = xController   ;    
+    lProvider[0] = xController   ;
     lProvider[1] = xCloseDispatch;
     lProvider[2] = xAppDispatcher;
 
-    return lProvider;    
+    return lProvider;
 }
 
 } // namespace framework

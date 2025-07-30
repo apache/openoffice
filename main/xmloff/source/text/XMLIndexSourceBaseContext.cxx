@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -56,17 +56,17 @@ const sal_Char sAPI_IsRelativeTabstops[] = "IsRelativeTabstops";
 
 static __FAR_DATA SvXMLTokenMapEntry aIndexSourceTokenMap[] =
 {
-	{ XML_NAMESPACE_TEXT, 
-		  XML_OUTLINE_LEVEL, 
+	{ XML_NAMESPACE_TEXT,
+		  XML_OUTLINE_LEVEL,
 		  XML_TOK_INDEXSOURCE_OUTLINE_LEVEL},
-	{ XML_NAMESPACE_TEXT, 
-		  XML_USE_INDEX_MARKS, 
+	{ XML_NAMESPACE_TEXT,
+		  XML_USE_INDEX_MARKS,
 		  XML_TOK_INDEXSOURCE_USE_INDEX_MARKS },
-	{ XML_NAMESPACE_TEXT, 
-		  XML_INDEX_SCOPE, 
+	{ XML_NAMESPACE_TEXT,
+		  XML_INDEX_SCOPE,
 		  XML_TOK_INDEXSOURCE_INDEX_SCOPE },
-	{ XML_NAMESPACE_TEXT, 
-		  XML_RELATIVE_TAB_STOP_POSITION, 
+	{ XML_NAMESPACE_TEXT,
+		  XML_RELATIVE_TAB_STOP_POSITION,
 		  XML_TOK_INDEXSOURCE_RELATIVE_TABS } ,
 	{ XML_NAMESPACE_TEXT,
 		  XML_USE_OTHER_OBJECTS,
@@ -90,10 +90,10 @@ static __FAR_DATA SvXMLTokenMapEntry aIndexSourceTokenMap[] =
 		  XML_MAIN_ENTRY_STYLE_NAME,
 		  XML_TOK_INDEXSOURCE_MAIN_ENTRY_STYLE },
 	{ XML_NAMESPACE_TEXT,
-		  XML_IGNORE_CASE, 
+		  XML_IGNORE_CASE,
 		  XML_TOK_INDEXSOURCE_IGNORE_CASE },
 	{ XML_NAMESPACE_TEXT,
-		  XML_ALPHABETICAL_SEPARATORS, 
+		  XML_ALPHABETICAL_SEPARATORS,
 		  XML_TOK_INDEXSOURCE_SEPARATORS },
 	{ XML_NAMESPACE_TEXT,
 		  XML_COMBINE_ENTRIES,
@@ -117,10 +117,10 @@ static __FAR_DATA SvXMLTokenMapEntry aIndexSourceTokenMap[] =
 		  XML_USE_GRAPHICS,
 		  XML_TOK_INDEXSOURCE_USE_GRAPHICS },
 	{ XML_NAMESPACE_TEXT,
-		  XML_USE_TABLES, 
+		  XML_USE_TABLES,
 		  XML_TOK_INDEXSOURCE_USE_TABLES },
 	{ XML_NAMESPACE_TEXT,
-		  XML_USE_FLOATING_FRAMES, 
+		  XML_USE_FLOATING_FRAMES,
 		  XML_TOK_INDEXSOURCE_USE_FRAMES },
 	{ XML_NAMESPACE_TEXT,
 		  XML_COPY_OUTLINE_LEVELS,
@@ -140,13 +140,13 @@ static __FAR_DATA SvXMLTokenMapEntry aIndexSourceTokenMap[] =
 	{ XML_NAMESPACE_TEXT,
 		  XML_USE_INDEX_SOURCE_STYLES,
 		  XML_TOK_INDEXSOURCE_USE_INDEX_SOURCE_STYLES },
-    { XML_NAMESPACE_TEXT, XML_SORT_ALGORITHM, 
+    { XML_NAMESPACE_TEXT, XML_SORT_ALGORITHM,
           XML_TOK_INDEXSOURCE_SORT_ALGORITHM },
     { XML_NAMESPACE_FO, XML_LANGUAGE, XML_TOK_INDEXSOURCE_LANGUAGE },
     { XML_NAMESPACE_FO, XML_COUNTRY, XML_TOK_INDEXSOURCE_COUNTRY },
     { XML_NAMESPACE_TEXT, XML_INDEX_NAME, XML_TOK_INDEXSOURCE_USER_INDEX_NAME },
-	{ XML_NAMESPACE_TEXT, 
-		  XML_USE_OUTLINE_LEVEL, 
+	{ XML_NAMESPACE_TEXT,
+		  XML_USE_OUTLINE_LEVEL,
 		  XML_TOK_INDEXSOURCE_USE_OUTLINE_LEVEL},
 
 	XML_TOKEN_MAP_END
@@ -156,7 +156,7 @@ static __FAR_DATA SvXMLTokenMapEntry aIndexSourceTokenMap[] =
 TYPEINIT1( XMLIndexSourceBaseContext, SvXMLImportContext );
 
 XMLIndexSourceBaseContext::XMLIndexSourceBaseContext(
-	SvXMLImport& rImport, 
+	SvXMLImport& rImport,
 	sal_uInt16 nPrfx,
 	const OUString& rLocalName,
 	Reference<XPropertySet> & rPropSet,
@@ -182,7 +182,7 @@ void XMLIndexSourceBaseContext::StartElement(
 
 	// process attributes
 	sal_Int16 nLength = xAttrList->getLength();
-	for(sal_Int16 i=0; i<nLength; i++) 
+	for(sal_Int16 i=0; i<nLength; i++)
 	{
 		// map to IndexSourceParamEnum
 		OUString sLocalName;
@@ -191,13 +191,13 @@ void XMLIndexSourceBaseContext::StartElement(
 		sal_uInt16 nToken = aTokenMap.Get(nPrefix, sLocalName);
 
 		// process attribute
-		ProcessAttribute((enum IndexSourceParamEnum)nToken, 
+		ProcessAttribute((enum IndexSourceParamEnum)nToken,
 						 xAttrList->getValueByIndex(i));
 	}
 }
 
 void XMLIndexSourceBaseContext::ProcessAttribute(
-	enum IndexSourceParamEnum eParam, 
+	enum IndexSourceParamEnum eParam,
 	const OUString& rValue)
 {
 	switch (eParam)
@@ -236,7 +236,7 @@ void XMLIndexSourceBaseContext::EndElement()
 	rIndexPropertySet->setPropertyValue(sCreateFromChapter, aAny);
 }
 
-SvXMLImportContext* XMLIndexSourceBaseContext::CreateChildContext( 
+SvXMLImportContext* XMLIndexSourceBaseContext::CreateChildContext(
 	sal_uInt16 nPrefix,
 	const OUString& rLocalName,
 	const Reference<XAttributeList> & xAttrList )
@@ -251,7 +251,7 @@ SvXMLImportContext* XMLIndexSourceBaseContext::CreateChildContext(
 														rIndexPropertySet,
 														nPrefix, rLocalName);
 		}
-		else if ( bUseLevelFormats && 
+		else if ( bUseLevelFormats &&
                   IsXMLToken( rLocalName, XML_INDEX_SOURCE_STYLES ) )
 		{
 			pContext = new XMLIndexTOCStylesContext(GetImport(),
@@ -265,7 +265,7 @@ SvXMLImportContext* XMLIndexSourceBaseContext::CreateChildContext(
 	// use default context
 	if (pContext == NULL)
 	{
-		pContext = SvXMLImportContext::CreateChildContext(nPrefix, rLocalName, 
+		pContext = SvXMLImportContext::CreateChildContext(nPrefix, rLocalName,
 														  xAttrList);
 	}
 

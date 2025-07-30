@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 #include "precompiled_sfx2.hxx"
@@ -147,14 +147,14 @@ void FocusManager::SetPanels (const SharedPanelContainer& rPanels)
     {
         RegisterWindow(**iPanel);
         if ((*iPanel)->GetTitleBar() != NULL)
-        {        
+        {
             RegisterWindow(*(*iPanel)->GetTitleBar());
             RegisterWindow((*iPanel)->GetTitleBar()->GetToolBox());
         }
 
         // Register also as child event listener at the panel.
         (*iPanel)->AddChildEventListener(LINK(this, FocusManager, ChildEventListener));
-        
+
         maPanels.push_back(iPanel->get());
     }
 }
@@ -203,7 +203,7 @@ FocusManager::FocusLocation FocusManager::GetFocusLocation (const Window& rWindo
         else if (&mpDeckTitleBar->GetToolBox() == &rWindow)
             return FocusLocation(PC_DeckToolBox, -1);
     }
-    
+
     // Search the panels.
     for (sal_Int32 nIndex=0,nCount(maPanels.size()); nIndex<nCount; ++nIndex)
     {
@@ -353,7 +353,7 @@ void FocusManager::FocusPanelContent (const sal_Int32 nPanelIndex)
         mbObservingContentControlFocus = true;
         pWindow->GrabFocus();
         mbObservingContentControlFocus = false;
-    }        
+    }
 }
 
 
@@ -421,7 +421,7 @@ bool FocusManager::MoveFocusInsidePanel (
             else
                 FocusPanelContent(aFocusLocation.mnIndex);
             return true;
-            
+
         case PC_PanelToolBox:
             if (nDirection < 0 && bHasToolBoxItem)
                 maPanels[aFocusLocation.mnIndex]->GetTitleBar()->GrabFocus();
@@ -455,7 +455,7 @@ bool FocusManager::MoveFocusInsideDeckTitle (
             else if (bHasToolBoxItem)
                 mpDeckTitleBar->GetToolBox().GrabFocus();
             return true;
-            
+
         case PC_DeckToolBox:
             if (nDirection>0 && ! IsPanelTitleVisible(0))
                 FocusPanelContent(0);
@@ -487,7 +487,7 @@ void FocusManager::HandleKeyEvent (
                     // Toggle panel between expanded and collapsed.
                     maPanels[aLocation.mnIndex]->SetExpanded( ! maPanels[aLocation.mnIndex]->IsExpanded());
                     break;
-            
+
                 case PC_TabBar:
                     // Activate the button.
                     ClickButton(aLocation.mnIndex);
@@ -497,7 +497,7 @@ void FocusManager::HandleKeyEvent (
                     break;
             }
             return;
-            
+
         case KEY_RETURN:
             switch (aLocation.meComponent)
             {
@@ -538,13 +538,13 @@ void FocusManager::HandleKeyEvent (
                 case PC_DeckToolBox:
                     MoveFocusInsideDeckTitle(aLocation, nDirection);
                     break;
-                    
+
                 default:
                     break;
             }
             break;
         }
-        
+
         case KEY_LEFT:
         case KEY_UP:
             switch (aLocation.meComponent)
@@ -579,7 +579,7 @@ void FocusManager::HandleKeyEvent (
                     break;
             }
             break;
-                
+
         case KEY_RIGHT:
         case KEY_DOWN:
             switch(aLocation.meComponent)
@@ -627,7 +627,7 @@ IMPL_LINK(FocusManager, WindowEventListener, VclSimpleEvent*, pEvent)
 {
     if (pEvent == NULL)
         return 0;
-    
+
     if ( ! pEvent->ISA(VclWindowEvent))
         return 0;
 
@@ -668,7 +668,7 @@ IMPL_LINK(FocusManager, ChildEventListener, VclSimpleEvent*, pEvent)
 {
     if (pEvent == NULL)
         return 0;
-    
+
     if ( ! pEvent->ISA(VclWindowEvent))
         return 0;
 
@@ -696,7 +696,7 @@ IMPL_LINK(FocusManager, ChildEventListener, VclSimpleEvent*, pEvent)
                     break;
                 pWindow = pWindow->GetParent();
             }
-                
+
             if (aLocation.meComponent != PC_None)
             {
                 switch (pKeyEvent->GetKeyCode().GetCode())

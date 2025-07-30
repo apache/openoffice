@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -34,7 +34,7 @@
 #endif
 #ifndef _DBA_DBACCESS_HELPID_HRC_
 #include "dbaccess_helpid.hrc"
-#endif				  
+#endif
 #ifndef DBAUI_FIELDDESCRIPTIONS_HXX
 #include "FieldDescriptions.hxx"
 #endif
@@ -234,7 +234,7 @@ OTableDesignView::OTableDesignView( Window* pParent,
 	}
 
 	m_pWin = new OTableBorderWindow(this);
-	m_pWin->Show();	
+	m_pWin->Show();
 }
 
 //------------------------------------------------------------------------------
@@ -255,10 +255,10 @@ void OTableDesignView::initialize()
 	GetEditorCtrl()->Init();
 	GetDescWin()->Init();
 	// first call after the editctrl has been set
-	
+
 	GetEditorCtrl()->Show();
 	GetDescWin()->Show();
-	
+
 	GetEditorCtrl()->DisplayData(0);
 }
 //------------------------------------------------------------------------------
@@ -311,7 +311,7 @@ long OTableDesignView::PreNotify( NotifyEvent& rNEvt )
 				m_eChildFocus = NONE;
 			break;
 	}
-	
+
 	return bHandled ? 1L : ODataView::PreNotify(rNEvt);
 }
 // -----------------------------------------------------------------------------
@@ -323,7 +323,7 @@ IClipboardTest* OTableDesignView::getActiveChild() const
 		case DESCRIPTION:
 			pTest = GetDescWin();
 			break;
-		case EDITOR:		
+		case EDITOR:
 			pTest = GetEditorCtrl();
 			break;
         case NONE:
@@ -353,21 +353,21 @@ sal_Bool OTableDesignView::isPasteAllowed()
 void OTableDesignView::copy()
 {
 	IClipboardTest* pTest = getActiveChild();
-	if ( pTest ) 
+	if ( pTest )
 		pTest->copy();
 }
 // -----------------------------------------------------------------------------
 void OTableDesignView::cut()
 {
 	IClipboardTest* pTest = getActiveChild();
-	if ( pTest ) 
+	if ( pTest )
 		pTest->cut();
 }
 // -----------------------------------------------------------------------------
 void OTableDesignView::paste()
 {
 	IClipboardTest* pTest = getActiveChild();
-	if ( pTest ) 
+	if ( pTest )
 		pTest->paste();
 }
 // -----------------------------------------------------------------------------

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -71,16 +71,16 @@ namespace sdr
                 // direct model data is the page size, get and use it
 				const SdrPage& rOwnerPage = GetMasterPageDescriptor().GetOwnerPage();
 				const basegfx::B2DRange aInnerRange(
-					rOwnerPage.GetLftBorder(), rOwnerPage.GetUppBorder(), 
-					rOwnerPage.GetWdt() - rOwnerPage.GetRgtBorder(), 
+					rOwnerPage.GetLftBorder(), rOwnerPage.GetUppBorder(),
+					rOwnerPage.GetWdt() - rOwnerPage.GetRgtBorder(),
                     rOwnerPage.GetHgt() - rOwnerPage.GetLwrBorder());
 				const basegfx::B2DPolygon aInnerPolgon(basegfx::tools::createPolygonFromRect(aInnerRange));
                 const drawinglayer::primitive2d::Primitive2DReference xReference(
 					drawinglayer::primitive2d::createPolyPolygonFillPrimitive(
-						basegfx::B2DPolyPolygon(aInnerPolgon), 
+						basegfx::B2DPolyPolygon(aInnerPolgon),
 						aFill,
 						drawinglayer::attribute::FillGradientAttribute()));
-                
+
                 xRetval = drawinglayer::primitive2d::Primitive2DSequence(&xReference, 1);
 			}
 
@@ -108,7 +108,7 @@ namespace sdr
 		{
 			return GetMasterPageDescriptor().GetUsedPage().GetObj(nIndex)->GetViewContact();
 		}
-		
+
 		ViewContact* ViewContactOfMasterPageDescriptor::GetParentContact() const
 		{
 			return &(GetMasterPageDescriptor().GetOwnerPage().GetViewContact());

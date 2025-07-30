@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -59,7 +59,7 @@ class TargetObject : public t_impl
 {
 public:
     static int s_obj;
-    
+
 	virtual ~TargetObject() {
         --s_obj;
         OSL_TRACE( "~TargetObject()" );
@@ -69,7 +69,7 @@ public:
 
     Any SAL_CALL queryInterface( Type const & type )
         throw (RuntimeException);
-    
+
 	// XServiceInfo
 	virtual OUString SAL_CALL getImplementationName() throw (RuntimeException)
 		{ return OUString::createFromAscii( "target" ); }
@@ -118,12 +118,12 @@ public:
     static Reference< XInterface > create(
         Reference< XInterface > const & xTarget,
         Reference< reflection::XProxyFactory > const & xProxyFac );
-    
+
 	virtual ~TestMaster() {
         --s_obj;
         OSL_TRACE( "~TestMaster()" );
     }
-	
+
     virtual Any SAL_CALL queryInterface( const Type & rType )
         throw (RuntimeException)
 	{
@@ -133,7 +133,7 @@ public:
             return aRet;
         return m_xProxyTarget->queryAggregation( rType );
 	}
-    
+
 	// XServiceInfo
 	virtual OUString SAL_CALL getImplementationName() throw (RuntimeException)
 		{ return OUString::createFromAscii( "master" ); }
@@ -181,25 +181,25 @@ static void test_proxyfac_(
     Reference< lang::XServiceInfo > xMaster_XServiceInfo(
         xMaster, UNO_QUERY_THROW );
 	OSL_ASSERT( xMaster_XServiceInfo->getImplementationName().equals( test ) );
-    
+
     Reference< reflection::XProxyFactory > xTarget( xMaster, UNO_QUERY_THROW );
     Reference< XCurrentContext > xTarget_XCurrentContext(
         xTarget, UNO_QUERY_THROW );
     Reference< XCurrentContext > xMaster_XCurrentContext(
         xMaster, UNO_QUERY_THROW );
-    
+
     OSL_ASSERT(
         xTarget_XCurrentContext->getValueByName( test ) == makeAny( test ) );
     OSL_ASSERT(
         xMaster_XCurrentContext->getValueByName( test ) == makeAny( test ) );
-    
+
     Reference< XAggregation > xFakeAgg( xTarget->createProxy( xTarget ) );
     if (xFakeAgg.is())
     {
         OSL_ASSERT( xTarget == xFakeAgg );
         OSL_ASSERT( xMaster == xFakeAgg );
     }
-    
+
     Reference< lang::XServiceInfo > xTarget_XServiceInfo(
         xTarget, UNO_QUERY_THROW );
 	OSL_ASSERT( xTarget_XServiceInfo->getImplementationName().equals( test ) );
@@ -244,7 +244,7 @@ static void test_proxyfac(
 SAL_IMPLEMENT_MAIN()
 {
     bool success = true;
-    
+
     Environment cpp_env;
     OUString cpp( RTL_CONSTASCII_USTRINGPARAM(
                       CPPU_CURRENT_LANGUAGE_BINDING_NAME) );
@@ -252,12 +252,12 @@ SAL_IMPLEMENT_MAIN()
         reinterpret_cast< uno_Environment ** >( &cpp_env ),
         cpp.pData, 0 );
     OSL_ENSURE( cpp_env.is(), "### cannot get C++ uno env!" );
-    
+
 	{
 		Reference< lang::XMultiServiceFactory > xMgr(
             createRegistryServiceFactory(
                 OUString( RTL_CONSTASCII_USTRINGPARAM("stoctest.rdb") ) ) );
-		
+
 		try
 		{
 			Reference< registry::XImplementationRegistration > xImplReg(
@@ -268,7 +268,7 @@ SAL_IMPLEMENT_MAIN()
                         ) ),
                 UNO_QUERY );
 			OSL_ENSURE( xImplReg.is(), "### no impl reg!" );
-			
+
 			OUString aLibName(
                 RTL_CONSTASCII_USTRINGPARAM("proxyfac.uno" SAL_DLLEXTENSION) );
 			xImplReg->registerImplementation(
@@ -276,7 +276,7 @@ SAL_IMPLEMENT_MAIN()
                     RTL_CONSTASCII_USTRINGPARAM(
                         "com.sun.star.loader.SharedLibrary") ),
                 aLibName, Reference< registry::XSimpleRegistry >() );
-            
+
 			Reference< reflection::XProxyFactory > xProxyFac(
                 xMgr->createInstance(
                     OUString::createFromAscii(
@@ -287,7 +287,7 @@ SAL_IMPLEMENT_MAIN()
                 xProxyFac->createProxy(
                     static_cast< OWeakObject * >( new TargetObject ) ) );
             // no call
-            
+
             {
             Reference< XInterface > xMaster( TestMaster::create( xProxyFac ) );
 			test_proxyfac(
@@ -299,7 +299,7 @@ SAL_IMPLEMENT_MAIN()
             Reference< XInterface > xMaster( TestMaster::create( xProxyFac ) );
             // no call
             }
-            
+
             {
             Reference< XInterface > xMaster( TestMaster::create( xProxyFac ) );
             Reference< reflection::XProxyFactory > xSlave_lives_alone(
@@ -317,7 +317,7 @@ SAL_IMPLEMENT_MAIN()
                 xMaster, UNO_QUERY_THROW );
             // no call
             }
-            
+
             test_proxyfac(
                 xProxyFac->createProxy(
                     static_cast< OWeakObject * >( new TargetObject ) ),
@@ -335,7 +335,7 @@ SAL_IMPLEMENT_MAIN()
             success = false;
 		}
 
-        
+
 		Reference< lang::XComponent > xComp;
         Reference< beans::XPropertySet >(
             xMgr, UNO_QUERY_THROW )->getPropertyValue(
@@ -343,7 +343,7 @@ SAL_IMPLEMENT_MAIN()
                     >>= xComp;
         xComp->dispose();
 	}
-    
+
     if (TestMaster::s_obj != 0)
         fprintf( stderr, "TestMaster objects: %d\n", TestMaster::s_obj );
     if (TargetObject::s_obj != 0)
@@ -357,7 +357,7 @@ SAL_IMPLEMENT_MAIN()
         env, &ppInterfaces, &len, rtl_allocateMemory );
     if (len != 0)
         fprintf( stderr, "%d registered C++ interfaces left!\n", len );
-    
+
     success &= (TestMaster::s_obj == 0 &&
                 TargetObject::s_obj == 0 &&
                 len == 0);
