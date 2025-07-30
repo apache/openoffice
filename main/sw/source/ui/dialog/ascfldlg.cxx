@@ -19,8 +19,6 @@
  *
  *************************************************************/
 
-
-
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_sw.hxx"
 #ifdef SW_DLLIMPLEMENTATION
@@ -56,7 +54,6 @@
 
 #include "vcl/metric.hxx"
 
-
 using namespace ::com::sun::star;
 
 const sal_Unicode cDialogExtraDataClose = '}';
@@ -67,7 +64,7 @@ const sal_uInt16 nDialogExtraDataLen = 11;	  	// 12345678901
 SwAsciiFilterDlg::SwAsciiFilterDlg( Window* pParent, SwDocShell& rDocSh,
 									SvStream* pStream )
 	: SfxModalDialog( pParent, SW_RES( DLG_ASCII_FILTER )),
-    aFL( this, SW_RES( FL_1 )),
+	aFL( this, SW_RES( FL_1 )),
 	aCharSetFT( this, SW_RES( FT_CHARSET )),
 	aCharSetLB( this, SW_RES( LB_CHARSET )),
 	aFontFT( this, SW_RES( FT_FONT )),
@@ -222,7 +219,7 @@ SwAsciiFilterDlg::SwAsciiFilterDlg( Window* pParent, SwDocShell& rDocSh,
 				delete pPrt;
 		}
 
-		// initialisiere Sprache
+		// initialize language
 		{
             if( !aOpt.GetLanguage() )
 			{
@@ -285,7 +282,7 @@ SwAsciiFilterDlg::SwAsciiFilterDlg( Window* pParent, SwDocShell& rDocSh,
         SetSizePixel( aSize );
 	}
 
-	// initialisiere Zeichensatz
+	// initialize character set
 	aCharSetLB.FillFromTextEncodingTable( pStream != NULL );
 	aCharSetLB.SelectTextEncoding( aOpt.GetCharSet()  );
 
@@ -433,7 +430,7 @@ IMPL_LINK( SwAsciiFilterDlg, CharSetSelHdl, SvxTextEncodingBox*, pBox )
 	}
 	else
 	{
-		// restore old user choise (not the automatic!)
+		// restore old user choice (not the automatic!)
 		aCRLF_RB.Check( aCRLF_RB.GetSavedValue() );
 		aCR_RB.Check( aCR_RB.GetSavedValue() );
 		aLF_RB.Check( aLF_RB.GetSavedValue() );
@@ -452,3 +449,5 @@ IMPL_LINK( SwAsciiFilterDlg, LineEndHdl, RadioButton*, pBtn )
 		pBtn->SaveValue();
 	return 0;
 }
+
+/* vim: set noet sw=4 ts=4: */

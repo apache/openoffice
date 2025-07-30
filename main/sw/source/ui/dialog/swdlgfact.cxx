@@ -19,8 +19,6 @@
  *
  *************************************************************/
 
-
-
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_sw.hxx"
 
@@ -120,8 +118,8 @@ IMPL_ABSTDLG_BASE(AbstractTabDialog_Impl); //add for SwCharDlg, SwFootNoteOption
 IMPL_ABSTDLG_BASE(AbstractSwConvertTableDlg_Impl); //add for SwConvertTableDlg
 IMPL_ABSTDLG_BASE(AbstractSwInsertDBColAutoPilot_Impl); //add for SwInsertDBColAutoPilot
 IMPL_ABSTDLG_BASE(AbstractDropDownFieldDialog_Impl); //add for DropDownFieldDialog
-IMPL_ABSTDLG_BASE(AbstarctSwLabDlg_Impl);//add for SwLabDlg
-IMPL_ABSTDLG_BASE(AbstarctSwSelGlossaryDlg_Impl);//add for SwSelGlossaryDlg
+IMPL_ABSTDLG_BASE(AbstractSwLabDlg_Impl);//add for SwLabDlg
+IMPL_ABSTDLG_BASE(AbstractSwSelGlossaryDlg_Impl);//add for SwSelGlossaryDlg
 IMPL_ABSTDLG_BASE(AbstractSwAutoFormatDlg_Impl); //add for SwAutoFormatDlg
 IMPL_ABSTDLG_BASE(AbstractSwFldDlg_Impl); //add for SwFldDlg
 IMPL_ABSTDLG_BASE(AbstractSwRenameXNamedDlg_Impl); //add for SwRenameXNamedDlg
@@ -175,7 +173,7 @@ String AbstractTabDialog_Impl::GetText() const
 
 void    AbstractSwWordCountDialog_Impl::SetValues(const SwDocStat& rCurrent, const SwDocStat& rDoc)
 {
-    pDlg->SetValues(rCurrent, rDoc);
+	pDlg->SetValues(rCurrent, rDoc);
 }
 
 //add for SwInsertAbstractDlg begin
@@ -216,7 +214,7 @@ void AbstractSwAsciiFilterDlg_Impl::FillOptions( SwAsciiOptions& rOptions )
 //add for SwSplitTblDlg
 sal_uInt16 AbstractSplitTableDialog_Impl::GetSplitMode()
 {
-    return pDlg->GetSplitMode();
+	return pDlg->GetSplitMode();
 }
 //add for SwBreakDlg begin
 String AbstractSwBreakDlg_Impl::GetTemplateName()
@@ -266,39 +264,39 @@ void       AbstractDropDownFieldDialog_Impl::SetWindowState( const ByteString& r
 
 //add for SwLabDlg begin
 
-void AbstarctSwLabDlg_Impl::SetCurPageId( sal_uInt16 nId )
+void AbstractSwLabDlg_Impl::SetCurPageId( sal_uInt16 nId )
 {
 	pDlg->SetCurPageId( nId );
 }
 
-const SfxItemSet* AbstarctSwLabDlg_Impl::GetOutputItemSet() const
+const SfxItemSet* AbstractSwLabDlg_Impl::GetOutputItemSet() const
 {
 	return pDlg->GetOutputItemSet();
 }
 
-const sal_uInt16* AbstarctSwLabDlg_Impl::GetInputRanges(const SfxItemPool& pItem )
+const sal_uInt16* AbstractSwLabDlg_Impl::GetInputRanges(const SfxItemPool& pItem )
 {
 	return pDlg->GetInputRanges( pItem );
 }
 
-void AbstarctSwLabDlg_Impl::SetInputSet( const SfxItemSet* pInSet )
+void AbstractSwLabDlg_Impl::SetInputSet( const SfxItemSet* pInSet )
 {
 	 pDlg->SetInputSet( pInSet );
 }
 
-void AbstarctSwLabDlg_Impl::SetText( const XubString& rStr )
+void AbstractSwLabDlg_Impl::SetText( const XubString& rStr )
 {
 	pDlg->SetText( rStr );
 }
-String AbstarctSwLabDlg_Impl::GetText() const
+String AbstractSwLabDlg_Impl::GetText() const
 {
 	return pDlg->GetText();
 }
-const String& AbstarctSwLabDlg_Impl::GetBusinessCardStr() const
+const String& AbstractSwLabDlg_Impl::GetBusinessCardStr() const
 {
 	return pDlg->GetBusinessCardStr();
 }
-Printer * AbstarctSwLabDlg_Impl::GetPrt()
+Printer * AbstractSwLabDlg_Impl::GetPrt()
 {
 	return pDlg->GetPrt();
 }
@@ -307,15 +305,15 @@ Printer * AbstarctSwLabDlg_Impl::GetPrt()
 
 //add for SwSelGlossaryDlg begin
 
-void AbstarctSwSelGlossaryDlg_Impl::InsertGlos(const String &rRegion, const String &rGlosName)
+void AbstractSwSelGlossaryDlg_Impl::InsertGlos(const String &rRegion, const String &rGlosName)
 {
 	pDlg->InsertGlos( rRegion, rGlosName );
 }
-sal_uInt16 AbstarctSwSelGlossaryDlg_Impl::GetSelectedIdx() const
+sal_uInt16 AbstractSwSelGlossaryDlg_Impl::GetSelectedIdx() const
 {
 	return pDlg->GetSelectedIdx();
 }
-void AbstarctSwSelGlossaryDlg_Impl::SelectEntryPos(sal_uInt16 nIdx)
+void AbstractSwSelGlossaryDlg_Impl::SelectEntryPos(sal_uInt16 nIdx)
 {
 	pDlg->SelectEntryPos( nIdx );
 }
@@ -511,7 +509,7 @@ sal_uInt16 AbstractMailMergeDlg_Impl::GetMergeType()
 }
 const ::rtl::OUString& AbstractMailMergeDlg_Impl::GetSaveFilter() const
 {
-    return pDlg->GetSaveFilter();
+	return pDlg->GetSaveFilter();
 }
 
 const ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Any > AbstractMailMergeDlg_Impl::GetSelection() const
@@ -524,19 +522,19 @@ uno::Reference< sdbc::XResultSet> AbstractMailMergeDlg_Impl::GetResultSet() cons
 }
 bool AbstractMailMergeDlg_Impl::IsSaveIndividualDocs() const
 {
-    return pDlg->IsSaveIndividualDocs();
+	return pDlg->IsSaveIndividualDocs();
 }
 bool AbstractMailMergeDlg_Impl::IsGenerateFromDataBase() const
 {
-    return pDlg->IsGenerateFromDataBase();
+	return pDlg->IsGenerateFromDataBase();
 }
 String AbstractMailMergeDlg_Impl::GetColumnName() const
 {
-    return pDlg->GetColumnName();
+	return pDlg->GetColumnName();
 }
 String AbstractMailMergeDlg_Impl::GetPath() const
 {
-    return pDlg->GetPath();
+	return pDlg->GetPath();
 }
 
 // AbstractMailMergeDlg_Impl end
@@ -582,7 +580,7 @@ void AbstractEditRegionDlg_Impl::SelectSection(const String& rSectionName)
 void
 AbstractInsertSectionTabDialog_Impl::SetSectionData(SwSectionData const& rSect)
 {
-    pDlg->SetSectionData(rSect);
+	pDlg->SetSectionData(rSect);
 }
 // AbstractInsertSectionTabDialog_Impl end
 
@@ -610,19 +608,19 @@ Window* AbstractAuthMarkFloatDlg_Impl::GetWindow()
 
 AbstractMailMergeWizard_Impl::~AbstractMailMergeWizard_Impl()
 {
-    delete pDlg;
+	delete pDlg;
 }
 
 void AbstractMailMergeWizard_Impl::StartExecuteModal( const Link& rEndDialogHdl )
 {
-    aEndDlgHdl = rEndDialogHdl;
-    pDlg->StartExecuteModal(
-        LINK( this, AbstractMailMergeWizard_Impl, EndDialogHdl ) );
+	aEndDlgHdl = rEndDialogHdl;
+	pDlg->StartExecuteModal(
+		LINK( this, AbstractMailMergeWizard_Impl, EndDialogHdl ) );
 }
 
 long AbstractMailMergeWizard_Impl::GetResult()
 {
-    return pDlg->GetResult();
+	return pDlg->GetResult();
 }
 
 #ifdef DBG_UTIL
@@ -631,37 +629,37 @@ IMPL_LINK( AbstractMailMergeWizard_Impl, EndDialogHdl, SwMailMergeWizard*, pDial
 IMPL_LINK( AbstractMailMergeWizard_Impl, EndDialogHdl, SwMailMergeWizard*, EMPTYARG )
 #endif
 {
-    DBG_ASSERT( pDialog == pDlg, "wrong dialog passed to EndDialogHdl!" );
+	DBG_ASSERT( pDialog == pDlg, "wrong dialog passed to EndDialogHdl!" );
 
-    aEndDlgHdl.Call( this );
-    aEndDlgHdl = Link();
+	aEndDlgHdl.Call( this );
+	aEndDlgHdl = Link();
 
-    return 0L;
+	return 0L;
 }
 
 void AbstractMailMergeWizard_Impl::SetReloadDocument(const String& rURL)
 {
-    pDlg->SetReloadDocument(rURL);
+	pDlg->SetReloadDocument(rURL);
 }
 const String&       AbstractMailMergeWizard_Impl::GetReloadDocument() const
 {
-    return pDlg->GetReloadDocument();
+	return pDlg->GetReloadDocument();
 }
 sal_Bool AbstractMailMergeWizard_Impl::ShowPage( sal_uInt16 nLevel )
 {
-    return pDlg->skipUntil(nLevel);
+	return pDlg->skipUntil(nLevel);
 }
 sal_uInt16 AbstractMailMergeWizard_Impl::GetRestartPage() const
 {
-    return pDlg->GetRestartPage();
+	return pDlg->GetRestartPage();
 }
 
 //-------------- SwAbstractDialogFactory implementation--------------
 
 AbstractSwWordCountDialog* SwAbstractDialogFactory_Impl::CreateSwWordCountDialog(Window* pParent)
 {
-    SwWordCountDialog* pDlg = new SwWordCountDialog( pParent );
-    return new AbstractSwWordCountDialog_Impl( pDlg );
+	SwWordCountDialog* pDlg = new SwWordCountDialog( pParent );
+	return new AbstractSwWordCountDialog_Impl( pDlg );
 }
 
 //add for SwInsertAbstractDlg begin
@@ -872,8 +870,8 @@ VclAbstractDialog * SwAbstractDialogFactory_Impl::CreateSwCaptionDialog ( Window
 //add for  SwInsertDBColAutoPilot begin
 
 AbstractSwInsertDBColAutoPilot* SwAbstractDialogFactory_Impl::CreateSwInsertDBColAutoPilot( SwView& rView, // add for SwInsertDBColAutoPilot
-        uno::Reference< sdbc::XDataSource> rxSource,
-        uno::Reference<sdbcx::XColumnsSupplier> xColSupp,
+		uno::Reference< sdbc::XDataSource> rxSource,
+		uno::Reference<sdbcx::XColumnsSupplier> xColSupp,
 		const SwDBData& rData,  int nResId)
 {
 	SwInsertDBColAutoPilot* pDlg=NULL;
@@ -959,7 +957,7 @@ SfxAbstractTabDialog* SwAbstractDialogFactory_Impl::CreateSwEnvDlg ( Window* pPa
 
 //add for SwLabDlg begin
 
-AbstarctSwLabDlg* SwAbstractDialogFactory_Impl::CreateSwLabDlg ( Window* pParent, const SfxItemSet& rSet, //add for SwLabDlg
+AbstractSwLabDlg* SwAbstractDialogFactory_Impl::CreateSwLabDlg ( Window* pParent, const SfxItemSet& rSet, //add for SwLabDlg
 	 												SwNewDBMgr* pNewDBMgr, sal_Bool bLabel,int nResId  )
 {
 	SwLabDlg* pDlg=NULL;
@@ -974,7 +972,7 @@ AbstarctSwLabDlg* SwAbstractDialogFactory_Impl::CreateSwLabDlg ( Window* pParent
 	}
 
 	if ( pDlg )
-		return new AbstarctSwLabDlg_Impl( pDlg );
+		return new AbstractSwLabDlg_Impl( pDlg );
 	return 0;
 }
 
@@ -1042,12 +1040,12 @@ VclAbstractDialog * SwAbstractDialogFactory_Impl::CreateVclAbstractDialog ( Wind
 //add for SwSplitTblDlg  begin
 AbstractSplitTableDialog * SwAbstractDialogFactory_Impl::CreateSplitTblDialog ( Window *pParent, SwWrtShell &rSh )
 {
-    return new AbstractSplitTableDialog_Impl( new SwSplitTblDlg( pParent, rSh) );
+	return new AbstractSplitTableDialog_Impl( new SwSplitTblDlg( pParent, rSh) );
 }
 //add SwSplitTblDlg end
 
 //add for SwSelGlossaryDlg begin
-AbstarctSwSelGlossaryDlg * SwAbstractDialogFactory_Impl::CreateSwSelGlossaryDlg ( Window * pParent, const String &rShortName, int nResId )
+AbstractSwSelGlossaryDlg * SwAbstractDialogFactory_Impl::CreateSwSelGlossaryDlg ( Window * pParent, const String &rShortName, int nResId )
 {
 	SwSelGlossaryDlg* pDlg=NULL;
 	switch ( nResId )
@@ -1061,7 +1059,7 @@ AbstarctSwSelGlossaryDlg * SwAbstractDialogFactory_Impl::CreateSwSelGlossaryDlg 
 	}
 
 	if ( pDlg )
-		return new AbstarctSwSelGlossaryDlg_Impl( pDlg );
+		return new AbstractSwSelGlossaryDlg_Impl( pDlg );
 	return 0;
 }
 
@@ -1649,7 +1647,7 @@ VclAbstractDialog * SwAbstractDialogFactory_Impl::CreateIndexMarkModalDlg( int n
 AbstractMailMergeWizard*    SwAbstractDialogFactory_Impl::CreateMailMergeWizard(
                                     SwView& rView, SwMailMergeConfigItem& rConfigItem)
 {
-    return new AbstractMailMergeWizard_Impl( new SwMailMergeWizard(rView, rConfigItem));
+	return new AbstractMailMergeWizard_Impl( new SwMailMergeWizard(rView, rConfigItem));
 }
 
 //add for static func in SwGlossaryDlg
@@ -1679,8 +1677,8 @@ GlossarySetActGroup	SwAbstractDialogFactory_Impl::SetGlossaryActGroupFunc( sal_u
 //------------------ Factories for TabPages
 CreateTabPage SwAbstractDialogFactory_Impl::GetTabPageCreatorFunc( sal_uInt16 nId )
 {
-    CreateTabPage pRet = 0;
-    switch ( nId )
+	CreateTabPage pRet = 0;
+	switch ( nId )
 	{
 		case TP_OPTCOMPATIBILITY_PAGE :
 		case RID_SW_TP_OPTCOMPATIBILITY_PAGE :
@@ -1737,7 +1735,7 @@ CreateTabPage SwAbstractDialogFactory_Impl::GetTabPageCreatorFunc( sal_uInt16 nI
         break;
 	}
 
-    return pRet;
+	return pRet;
 }
 
 GetTabPageRanges SwAbstractDialogFactory_Impl::GetTabPageRangesFunc( sal_uInt16 nId )
@@ -1753,3 +1751,5 @@ GetTabPageRanges SwAbstractDialogFactory_Impl::GetTabPageRangesFunc( sal_uInt16 
 
 	return 0;
 }
+
+/* vim: set noet sw=4 ts=4: */
