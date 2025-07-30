@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,19 +7,17 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
-
-
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_sw.hxx"
@@ -56,7 +54,6 @@
 
 #include "vcl/metric.hxx"
 
-
 using namespace ::com::sun::star;
 
 const sal_Unicode cDialogExtraDataClose = '}';
@@ -67,7 +64,7 @@ const sal_uInt16 nDialogExtraDataLen = 11;	  	// 12345678901
 SwAsciiFilterDlg::SwAsciiFilterDlg( Window* pParent, SwDocShell& rDocSh,
 									SvStream* pStream )
 	: SfxModalDialog( pParent, SW_RES( DLG_ASCII_FILTER )),
-    aFL( this, SW_RES( FL_1 )),
+	aFL( this, SW_RES( FL_1 )),
 	aCharSetFT( this, SW_RES( FT_CHARSET )),
 	aCharSetLB( this, SW_RES( LB_CHARSET )),
 	aFontFT( this, SW_RES( FT_FONT )),
@@ -175,8 +172,8 @@ SwAsciiFilterDlg::SwAsciiFilterDlg( Window* pParent, SwDocShell& rDocSh,
 				pPrt = new SfxPrinter( pSet );
 				bDelPrinter = sal_True;
 			}
-			
-			
+
+
 			// get the set of distinct available family names
 			std::set< String > aFontNames;
 			int nFontNames = pPrt->GetDevFontCount();
@@ -185,7 +182,7 @@ SwAsciiFilterDlg::SwAsciiFilterDlg( Window* pParent, SwDocShell& rDocSh,
 			    FontInfo aInf( pPrt->GetDevFont( i ) );
 			    aFontNames.insert( aInf.GetName() );
 			}
-			
+
 			// insert to listbox
 			for( std::set< String >::const_iterator it = aFontNames.begin();
 			     it != aFontNames.end(); ++it )
@@ -222,7 +219,7 @@ SwAsciiFilterDlg::SwAsciiFilterDlg( Window* pParent, SwDocShell& rDocSh,
 				delete pPrt;
 		}
 
-		// initialisiere Sprache
+		// initialize language
 		{
             if( !aOpt.GetLanguage() )
 			{
@@ -285,7 +282,7 @@ SwAsciiFilterDlg::SwAsciiFilterDlg( Window* pParent, SwDocShell& rDocSh,
         SetSizePixel( aSize );
 	}
 
-	// initialisiere Zeichensatz
+	// initialize character set
 	aCharSetLB.FillFromTextEncodingTable( pStream != NULL );
 	aCharSetLB.SelectTextEncoding( aOpt.GetCharSet()  );
 
@@ -433,7 +430,7 @@ IMPL_LINK( SwAsciiFilterDlg, CharSetSelHdl, SvxTextEncodingBox*, pBox )
 	}
 	else
 	{
-		// restore old user choise (not the automatic!)
+		// restore old user choice (not the automatic!)
 		aCRLF_RB.Check( aCRLF_RB.GetSavedValue() );
 		aCR_RB.Check( aCR_RB.GetSavedValue() );
 		aLF_RB.Check( aLF_RB.GetSavedValue() );
@@ -452,3 +449,5 @@ IMPL_LINK( SwAsciiFilterDlg, LineEndHdl, RadioButton*, pBtn )
 		pBtn->SaveValue();
 	return 0;
 }
+
+/* vim: set noet sw=4 ts=4: */
