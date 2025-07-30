@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -298,7 +298,7 @@ bool Os2SalGraphics::setClipRegion( const Region& i_rClip )
 	}
 
 	delete [] mpClipRectlAry;
-    
+
     return true;
 }
 
@@ -684,7 +684,7 @@ bool Os2SalGraphics::drawPolyPolygon( const ::basegfx::B2DPolyPolygon&, double /
 bool Os2SalGraphics::drawPolyLine(
     const basegfx::B2DPolygon& /*rPolygon*/,
     double /*fTransparency*/,
-    const basegfx::B2DVector& /*rLineWidths*/, 
+    const basegfx::B2DVector& /*rLineWidths*/,
     basegfx::B2DLineJoin /*eLineJoin*/,
     com::sun::star::drawing::LineCap /*eLineCap*/)
 {
@@ -839,7 +839,7 @@ static void ImplWriteDouble( PM_BYTE** pBuf, double nNumber )
 	}
 	*(*pBuf)++ = ' ';
 }
-#endif 
+#endif
 
 inline void ImplWriteString( PM_BYTE** pBuf, const char* sString )
 {
@@ -873,7 +873,7 @@ sal_Bool Os2SalGraphics::drawEPS( long nX, long nY, long nWidth, long nHeight, v
 		Ft2CharStringPosAt( mhPS, &aPt, NULL, 0, 2, (PCH)pStr,(PLONG)&pOS2DXAry[0] );
 
 		OStringBuffer aBuf( POSTSCRIPT_BUFSIZE );
-		
+
                 // reserve place for a USHORT
                 aBuf.append( "aa" );
 
@@ -957,7 +957,7 @@ sal_Bool Os2SalGraphics::drawEPS( long nX, long nY, long nWidth, long nHeight, v
 				//Escape ( mhDC, nEscape, aBuf.getLength(), (LPTSTR)aBuf.getStr(), 0 );
 				DevEscape( mhDC, DEVESC_RAWDATA, aBuf.getLength(),
 						(PM_BYTE*)aBuf.getStr(), 0, NULL );
-		
+
 		double dM11 = nWidth / ( nBoundingBox[2] - nBoundingBox[0] );
 		double dM22 = - ( nHeight / (nBoundingBox[1] - nBoundingBox[3] ) );
 
@@ -1012,7 +1012,7 @@ sal_Bool Os2SalGraphics::drawEPS( long nX, long nY, long nWidth, long nHeight, v
 				if ( DevEscape( mhDC, DEVESC_RAWDATA, 9, (PM_BYTE*)pBuf,
 					0, NULL ) == DEV_OK ) bRet = TRUE;
 			}
-			
+
                 // #107797# Write out EPS encapsulation footer
                 // ----------------------------------------------------------------------------------
                 // reserve a USHORT again
@@ -1025,7 +1025,7 @@ sal_Bool Os2SalGraphics::drawEPS( long nX, long nY, long nWidth, long nHeight, v
 				DevEscape( mhDC, DEVESC_RAWDATA, aBuf.getLength(),
 						(PM_BYTE*)aBuf.getStr(), 0, NULL );
 				bRet = TRUE;
-			
+
 		}
 	}
 	delete [] pBuf;

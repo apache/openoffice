@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -92,7 +92,7 @@ struct ImplTrayInfo
 	DJPT_TRAYTYPE	mnId;
 
 	ImplTrayInfo( const char* pTrayName,
-				  const char* pTrayDisplayName ) 
+				  const char* pTrayDisplayName )
 	{
 		strcpy( maName, pTrayName);
 		strcpy( maDisplayName, pTrayDisplayName);
@@ -652,7 +652,7 @@ static void ImplGetFormAndTrayList( Os2SalInfoPrinter* pOs2SalInfoPrinter, const
 							pInfo->mnPaperHeight	= pElm->hcInfo.cx;
 						}
 #if OSL_DEBUG_LEVEL>0
-						debug_printf("ImplGetFormAndTrayList #%d: %d x %d", 
+						debug_printf("ImplGetFormAndTrayList #%d: %d x %d",
 									 i, pInfo->mnPaperWidth, pInfo->mnPaperHeight);
 #endif
 						pInfo->mnId 			= pElm->djppsFormID;
@@ -1188,7 +1188,7 @@ Os2SalInfoPrinter::~Os2SalInfoPrinter()
 void Os2SalInfoPrinter::InitPaperFormats( const ImplJobSetup* pSetupData )
 {
 #if OSL_DEBUG_LEVEL>0
-	debug_printf( "Os2SalInfoPrinter::InitPaperFormats pSetupData %x", 
+	debug_printf( "Os2SalInfoPrinter::InitPaperFormats pSetupData %x",
 				  pSetupData);
 #endif
 
@@ -1204,7 +1204,7 @@ void Os2SalInfoPrinter::InitPaperFormats( const ImplJobSetup* pSetupData )
 		PaperInfo aInfo( mpFormArray[i]->mnPaperWidth * 100,
 						 mpFormArray[i]->mnPaperHeight * 100);
 #if OSL_DEBUG_LEVEL>0
-		debug_printf( "Os2SalInfoPrinter::InitPaperFormats #%d: %d x %d", 
+		debug_printf( "Os2SalInfoPrinter::InitPaperFormats #%d: %d x %d",
 					  i, mpFormArray[i]->mnPaperWidth * 100,
 					  mpFormArray[i]->mnPaperHeight * 100);
 #endif
@@ -1333,7 +1333,7 @@ sal_Bool Os2SalInfoPrinter::SetPrinterData( ImplJobSetup* pSetupData )
 sal_Bool Os2SalInfoPrinter::SetData( ULONG nFlags, ImplJobSetup* pSetupData )
 {
 #if OSL_DEBUG_LEVEL>0
-	debug_printf( "Os2SalInfoPrinter::SetData nFlags %x, pSetupData %x", 
+	debug_printf( "Os2SalInfoPrinter::SetData nFlags %x, pSetupData %x",
 				  nFlags, pSetupData);
 #endif
 
@@ -1735,7 +1735,7 @@ sal_Bool Os2SalPrinter::StartJob( const XubString* pFileName,
 	rc = DevEscape( mhDC,
 					mbPrintDJPSupported ? DEVESC_STARTDOC_WPROP : DEVESC_STARTDOC,
 					nJobNameLen, (PBYTE)pszJobName,
-					&((PDRIVDATA)(pSetupData->mpDriverData))->cb, 
+					&((PDRIVDATA)(pSetupData->mpDriverData))->cb,
 					(PBYTE)(pSetupData->mpDriverData));
 
 	if ( rc != DEV_OK )
@@ -1808,9 +1808,9 @@ SalGraphics* Os2SalPrinter::StartPage( ImplJobSetup* pSetupData, sal_Bool bNewJo
 	APIRET rc;
 
 #if OSL_DEBUG_LEVEL>0
-	debug_printf( "Os2SalPrinter::StartPage mhDC %x, mbFirstPage %d, bNewJobSetup %d", 
+	debug_printf( "Os2SalPrinter::StartPage mhDC %x, mbFirstPage %d, bNewJobSetup %d",
 				  mhDC, mbFirstPage, bNewJobSetup);
-	debug_printf( "Os2SalPrinter::StartPage pSetupData %x", 
+	debug_printf( "Os2SalPrinter::StartPage pSetupData %x",
 				  pSetupData);
 #endif
 

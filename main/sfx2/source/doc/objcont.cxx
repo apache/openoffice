@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -771,7 +771,7 @@ sal_Bool SfxObjectShell::Print
             boost::shared_ptr< vcl::PrinterController > pController( pAdaptor );
 
             pAdaptor->StartPage();
-            
+
             pPrinter->SetMapMode(MapMode(MAP_10TH_MM));
 			Font aFont( DEFINE_CONST_UNICODE( "Arial" ), Size(0, 64));   // 18pt
 			aFont.SetWeight(WEIGHT_BOLD);
@@ -865,7 +865,7 @@ sal_Bool SfxObjectShell::Print
 				pStyle = pIter->Next();
 			}
 			pAdaptor->EndPage();
-            
+
             Printer::PrintJob( pController, rPrt.GetJobSetup() );
 
 			break;
@@ -1104,10 +1104,10 @@ void SfxObjectShell::ResetFromTemplate( const String& rTemplateName, const Strin
         xDocProps->setTemplateName( ::rtl::OUString() );
         xDocProps->setTemplateDate( util::DateTime() );
         xDocProps->resetUserData( ::rtl::OUString() );
-    
+
     	// TODO/REFACTOR:
     	// Title?
-    
+
         if( ::utl::LocalFileHelper::IsLocalFile( rFileName ) )
     	{
             String aFoundName;
@@ -1116,13 +1116,13 @@ void SfxObjectShell::ResetFromTemplate( const String& rTemplateName, const Strin
                 INetURLObject aObj( rFileName );
                 xDocProps->setTemplateURL( aObj.GetMainURL(INetURLObject::DECODE_TO_IURI) );
                 xDocProps->setTemplateName( rTemplateName );
-    
+
                 ::DateTime now;
                 xDocProps->setTemplateDate( util::DateTime(
                     now.Get100Sec(), now.GetSec(), now.GetMin(),
                     now.GetHour(), now.GetDay(), now.GetMonth(),
                     now.GetYear() ) );
-    
+
     			SetQueryLoadTemplate( sal_True );
             }
         }

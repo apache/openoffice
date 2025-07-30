@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -139,7 +139,7 @@ uno::Sequence< beans::PropertyValue > SvFilterOptionsDialog::getPropertyValues()
 	sal_Int32 i, nCount;
 	for ( i = 0, nCount = maMediaDescriptor.getLength(); i < nCount; i++ )
 	{
-		if ( maMediaDescriptor[ i ].Name.equalsAscii( "FilterData" ) ) 
+		if ( maMediaDescriptor[ i ].Name.equalsAscii( "FilterData" ) )
 			break;
 	}
 	if ( i == nCount )
@@ -152,7 +152,7 @@ uno::Sequence< beans::PropertyValue > SvFilterOptionsDialog::getPropertyValues()
 }
 
 void SvFilterOptionsDialog::setPropertyValues( const uno::Sequence< beans::PropertyValue > & aProps )
-        throw ( beans::UnknownPropertyException, beans::PropertyVetoException, 
+        throw ( beans::UnknownPropertyException, beans::PropertyVetoException,
                 lang::IllegalArgumentException, lang::WrappedTargetException,
                 uno::RuntimeException )
 {
@@ -161,7 +161,7 @@ void SvFilterOptionsDialog::setPropertyValues( const uno::Sequence< beans::Prope
 	sal_Int32 i, nCount;
 	for ( i = 0, nCount = maMediaDescriptor.getLength(); i < nCount; i++ )
 	{
-		if ( maMediaDescriptor[ i ].Name.equalsAscii( "FilterData" ) ) 
+		if ( maMediaDescriptor[ i ].Name.equalsAscii( "FilterData" ) )
 		{
 			maMediaDescriptor[ i ].Value >>= maFilterDataSequence;
 		}
@@ -198,14 +198,14 @@ sal_Int16 SvFilterOptionsDialog::execute()
 			aInternalFilterName.SearchAndReplace( String( RTL_CONSTASCII_USTRINGPARAM( "impress_" ) ), String(), 0 );
             break;
        }
-    }   
+    }
     if ( aInternalFilterName.Len() )
     {
 	    GraphicFilter aGraphicFilter( sal_True );
 
         sal_uInt16 nFormat, nFilterCount = aGraphicFilter.pConfig->GetExportFormatCount();
         for ( nFormat = 0; nFormat < nFilterCount; nFormat++ )
-        {        
+        {
             if ( aGraphicFilter.pConfig->GetExportInternalFilterName( nFormat ) == aInternalFilterName )
                 break;
         }

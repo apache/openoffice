@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -58,7 +58,7 @@ bool SignatureEngine::checkReady() const
  *	1. the main operation has't begun yet;
  *	2. the key material is known;
  *	3. the amount of reference is known;
- *	4. all of referenced elements, the key element and the signature 
+ *	4. all of referenced elements, the key element and the signature
  *	   template are bufferred.
  *
  *   INPUTS
@@ -74,7 +74,7 @@ bool SignatureEngine::checkReady() const
  *	Michael Mi
  *	Email: michael.mi@sun.com
  ******************************************************************************/
-{                     
+{
 	bool rc = true;
 
 	sal_Int32 nKeyInc = 0;
@@ -82,7 +82,7 @@ bool SignatureEngine::checkReady() const
 	{
 		nKeyInc = 1;
 	}
-	
+
 	if (m_bMissionDone ||
 	    m_nIdOfKeyEC == -1 ||
 	    m_nTotalReferenceNumber == -1 ||
@@ -90,11 +90,11 @@ bool SignatureEngine::checkReady() const
 	{
 		rc = false;
 	}
-			
+
 	return rc;
 }
 
-void SignatureEngine::tryToPerform( ) 
+void SignatureEngine::tryToPerform( )
     	throw (cssu::Exception, cssu::RuntimeException)
 /****** SignatureEngine/tryToPerform *****************************************
  *
@@ -129,39 +129,39 @@ void SignatureEngine::tryToPerform( )
 	if (checkReady())
 	{
 		const rtl::OUString ouSignatureTemplate (
-			RTL_CONSTASCII_USTRINGPARAM( SIGNATURE_TEMPLATE ) );	
+			RTL_CONSTASCII_USTRINGPARAM( SIGNATURE_TEMPLATE ) );
 		cssu::Reference < cssxc::XXMLSignatureTemplate >
 			xSignatureTemplate( mxMSF->createInstance( ouSignatureTemplate ), cssu::UNO_QUERY );
-		
+
 		OSL_ASSERT( xSignatureTemplate.is() );
-		
+
 		cssu::Reference< cssxw::XXMLElementWrapper >
 			xXMLElement = m_xSAXEventKeeper->getElement( m_nIdOfTemplateEC );
-		
+
 		xSignatureTemplate->setTemplate(xXMLElement);
-		
+
 		std::vector< sal_Int32 >::const_iterator ii = m_vReferenceIds.begin();
-		
-		for( ; ii != m_vReferenceIds.end() ; ++ii ) 
+
+		for( ; ii != m_vReferenceIds.end() ; ++ii )
 		{
 			xXMLElement = m_xSAXEventKeeper->getElement( *ii );
 			xSignatureTemplate->setTarget(xXMLElement);
 		}
-		
+
 		/*
 		 * set the Uri binding
 		 */
 		xSignatureTemplate->setBinding( this );
-		
+
 		startEngine( xSignatureTemplate );
-		
+
 		/*
 		 * done
 		 */
 		clearUp( );
-		
+
 		notifyResultListener();
-				
+
 		m_bMissionDone = true;
 	}
 }
@@ -198,21 +198,21 @@ void SignatureEngine::clearUp( ) const
 	cssu::Reference < cssxc::sax::XReferenceResolvedBroadcaster >
 		xReferenceResolvedBroadcaster( m_xSAXEventKeeper, cssu::UNO_QUERY );
 	xReferenceResolvedBroadcaster->removeReferenceResolvedListener(
-		m_nIdOfTemplateEC, 
+		m_nIdOfTemplateEC,
 		(const cssu::Reference < cssxc::sax::XReferenceResolvedListener >)((SecurityEngine *)this));
-	
+
 	m_xSAXEventKeeper->removeElementCollector(m_nIdOfTemplateEC);
-	
+
 	std::vector< sal_Int32 >::const_iterator ii = m_vReferenceIds.begin();
-	
-	for( ; ii != m_vReferenceIds.end() ; ++ii ) 
+
+	for( ; ii != m_vReferenceIds.end() ; ++ii )
 	{
 		xReferenceResolvedBroadcaster->removeReferenceResolvedListener(
-			*ii, 
+			*ii,
 			(const cssu::Reference < cssxc::sax::XReferenceResolvedListener >)((SecurityEngine *)this));
 		m_xSAXEventKeeper->removeElementCollector(*ii);
 	}
-	
+
 	if (m_nIdOfKeyEC != 0 && m_nIdOfKeyEC != -1)
 	{
 		m_xSAXEventKeeper->removeElementCollector(m_nIdOfKeyEC);
@@ -226,7 +226,7 @@ void SAL_CALL SignatureEngine::setReferenceCount( sal_Int32 count )
 	m_nTotalReferenceNumber = count;
 	tryToPerform();
 }
-	
+
 void SAL_CALL SignatureEngine::setReferenceId( sal_Int32 id )
 	throw (cssu::Exception, cssu::RuntimeException)
 {
@@ -242,14 +242,14 @@ void SAL_CALL SignatureEngine::setUriBinding(
 	m_vUris.push_back(uri);
 	m_vXInputStreams.push_back(aInputStream);
 }
-	
+
 cssu::Reference< com::sun::star::io::XInputStream > SAL_CALL SignatureEngine::getUriBinding( const rtl::OUString& uri )
 	throw (cssu::Exception, cssu::RuntimeException)
 {
 	cssu::Reference< com::sun::star::io::XInputStream > xInputStream;
-	
+
 	int size = m_vUris.size();
-	
+
 	for( int i=0; i<size; ++i)
 	{
 		if (m_vUris[i] == uri)
@@ -258,7 +258,6 @@ cssu::Reference< com::sun::star::io::XInputStream > SAL_CALL SignatureEngine::ge
 			break;
 		}
 	}
-	
+
 	return xInputStream;
 }
-	

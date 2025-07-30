@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -154,9 +154,9 @@ sal_uLong GraphicManager::GetMaxObjCacheSize() const
 
 // -----------------------------------------------------------------------------
 
-sal_uLong GraphicManager::GetUsedCacheSize() const 
-{ 
-	return mpCache->GetUsedDisplayCacheSize(); 
+sal_uLong GraphicManager::GetUsedCacheSize() const
+{
+	return mpCache->GetUsedDisplayCacheSize();
 }
 
 // -----------------------------------------------------------------------------
@@ -197,7 +197,7 @@ void GraphicManager::ReleaseFromCache( const GraphicObject& /*rObj*/ )
 // -----------------------------------------------------------------------------
 
 sal_Bool GraphicManager::IsInCache( OutputDevice* pOut, const Point& rPt,
-									const Size& rSz, const GraphicObject& rObj, 
+									const Size& rSz, const GraphicObject& rObj,
 									const GraphicAttr& rAttr ) const
 {
 	return mpCache->IsInDisplayCache( pOut, rPt, rSz, rObj, rAttr );
@@ -232,7 +232,7 @@ sal_Bool GraphicManager::DrawObj( OutputDevice* pOut, const Point& rPt, const Si
 			if( aGraphic.IsSupportedGraphic() )
 			{
 				const sal_uInt16 nRot10 = rAttr.GetRotation() % 3600;
-	
+
 				if( nRot10 )
 				{
 					Polygon aPoly( Rectangle( aPt, aSz ) );
@@ -258,7 +258,7 @@ sal_Bool GraphicManager::DrawObj( OutputDevice* pOut, const Point& rPt, const Si
 				bRet = rCached = sal_True;
 		}
 	}
- 
+
 	return bRet;
 }
 
@@ -332,12 +332,12 @@ void GraphicManager::ImplCheckSizeOfSwappedInGraphics()
         // a useful maximum for 32Bit address space
 
         // default is 20MB, so allow 200MB initially
-        static sal_uLong aMultiplicator(10); 
+        static sal_uLong aMultiplicator(10);
 
         // max at 500MB; I experimented with 800 for debug and 750 for non-debug settings (pics start
         // missing when AOO reaches a mem footprint of 1.5GB) but some secure left over space for
         // app activity is needed
-        static sal_uLong aMaxSize32Bit(500 * 1024 * 1024); 
+        static sal_uLong aMaxSize32Bit(500 * 1024 * 1024);
 
         // calc max allowed cache size
         const sal_uLong nMaxCacheSize(::std::min(GetMaxCacheSize() * aMultiplicator, aMaxSize32Bit));
@@ -409,7 +409,7 @@ void GraphicManager::ImplGraphicObjectWasSwappedIn( const GraphicObject& rObj )
 
 sal_Bool GraphicManager::ImplDraw( OutputDevice* pOut, const Point& rPt,
 							   const Size& rSz, GraphicObject& rObj,
-							   const GraphicAttr& rAttr, 
+							   const GraphicAttr& rAttr,
                                const sal_uLong nFlags, sal_Bool& rCached )
 {
 	const Graphic&	rGraphic = rObj.GetGraphic();
@@ -488,7 +488,7 @@ sal_Bool GraphicManager::ImplDraw( OutputDevice* pOut, const Point& rPt,
 
 // -----------------------------------------------------------------------------
 
-sal_Bool GraphicManager::ImplCreateOutput( OutputDevice* pOut, 
+sal_Bool GraphicManager::ImplCreateOutput( OutputDevice* pOut,
                                        const Point& rPt, const Size& rSz,
 									   const BitmapEx& rBmpEx, const GraphicAttr& rAttr,
 									   const sal_uLong nFlags, BitmapEx* pBmpEx )
@@ -2015,9 +2015,9 @@ struct ImplTileInfo
 };
 
 
-bool GraphicObject::ImplRenderTempTile( VirtualDevice& rVDev, int nExponent, 
-                                        int nNumTilesX, int nNumTilesY, 
-                                        const Size& rTileSizePixel, 
+bool GraphicObject::ImplRenderTempTile( VirtualDevice& rVDev, int nExponent,
+                                        int nNumTilesX, int nNumTilesY,
+                                        const Size& rTileSizePixel,
                                         const GraphicAttr* pAttr, sal_uLong nFlags )
 {
     if( nExponent <= 1 )
@@ -2059,9 +2059,9 @@ bool GraphicObject::ImplRenderTempTile( VirtualDevice& rVDev, int nExponent,
 // size is given by the decimal place of the corresponding decimal
 // representation.
 bool GraphicObject::ImplRenderTileRecursive( VirtualDevice& rVDev, int nExponent, int nMSBFactor,
-                                             int nNumOrigTilesX, int nNumOrigTilesY, 
-                                             int nRemainderTilesX, int nRemainderTilesY, 
-                                             const Size& rTileSizePixel, const GraphicAttr* pAttr, 
+                                             int nNumOrigTilesX, int nNumOrigTilesY,
+                                             int nRemainderTilesX, int nRemainderTilesY,
+                                             const Size& rTileSizePixel, const GraphicAttr* pAttr,
                                              sal_uLong nFlags, ImplTileInfo& rTileInfo )
 {
     // gets loaded with our tile bitmap
@@ -2346,8 +2346,8 @@ bool GraphicObject::ImplDrawTiled( OutputDevice* pOut, const Rectangle& rArea, c
 
 // -----------------------------------------------------------------------------
 
-bool GraphicObject::ImplDrawTiled( OutputDevice& rOut, const Point& rPosPixel, 
-                                   int nNumTilesX, int nNumTilesY, 
+bool GraphicObject::ImplDrawTiled( OutputDevice& rOut, const Point& rPosPixel,
+                                   int nNumTilesX, int nNumTilesY,
                                    const Size& rTileSizePixel, const GraphicAttr* pAttr, sal_uLong nFlags )
 {
     Point 	aCurrPos( rPosPixel );

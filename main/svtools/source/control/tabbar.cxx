@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -1199,7 +1199,7 @@ void TabBar::Paint( const Rectangle& )
                 aPos2.X()--;
                 aPos3.X()--;
 
-                // If this is the current tab, draw the left inner shadow the default color, 
+                // If this is the current tab, draw the left inner shadow the default color,
                 // otherwise make it the same as the custom background color
                 if ( pItem->mbSelect || (pItem->mnId == mnCurPageId) ) {
                     SetLineColor( rStyleSettings.GetLightColor() );
@@ -1235,7 +1235,7 @@ void TabBar::Paint( const Rectangle& )
                 DrawLine( aPos1, aPos2 );
 
                 // draw a small 2px sliver of the original background color at the bottom of the selected tab
-                     
+
                 if ( !pItem->IsDefaultTabBgColor() )
                 {
                     if ( pItem->mbSelect || (pItem->mnId == mnCurPageId) || rStyleSettings.GetHighContrastMode() ) {

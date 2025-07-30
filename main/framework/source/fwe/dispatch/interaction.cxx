@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -184,7 +184,7 @@ RequestFilterSelect::RequestFilterSelect( const ::rtl::OUString& sURL )
 RequestFilterSelect::~RequestFilterSelect()
 {
     pImp->release();
-}            
+}
 
 
 //---------------------------------------------------------------------------------------------------------
@@ -207,7 +207,7 @@ sal_Bool RequestFilterSelect::isAbort() const
 
 uno::Reference < task::XInteractionRequest > RequestFilterSelect::GetRequest()
 {
-    return uno::Reference < task::XInteractionRequest > (pImp);        
+    return uno::Reference < task::XInteractionRequest > (pImp);
 }
 
 /*
@@ -227,19 +227,19 @@ public:
     ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Reference< ::com::sun::star::task::XInteractionContinuation > >    m_lContinuations;
     ContinuationAbort*                                                                                                         m_pAbort        ;
     ContinuationFilterSelect*                                                                                                  m_pFilter       ;
-};  
+};
 
 RequestAmbigousFilter::RequestAmbigousFilter( const ::rtl::OUString& sURL, const ::rtl::OUString& sSelectedFilter,
     const ::rtl::OUString& sDetectedFilter )
 {
     pImp = new RequestAmbigousFilter_Impl( sURL, sSelectedFilter, sDetectedFilter );
-    pImp->acquire();  
+    pImp->acquire();
 }
 
 RequestAmbigousFilter::~RequestAmbigousFilter()
 {
     pImp->release();
-}            
+}
 
 sal_Bool RequestAmbigousFilter::isAbort() const
 {
@@ -257,7 +257,7 @@ sal_Bool RequestAmbigousFilter::isAbort() const
 
 uno::Reference < task::XInteractionRequest > RequestAmbigousFilter::GetRequest()
 {
-    return uno::Reference < task::XInteractionRequest > (pImp);        
+    return uno::Reference < task::XInteractionRequest > (pImp);
 }
 
 //---------------------------------------------------------------------------------------------------------
@@ -324,13 +324,13 @@ css::uno::Sequence< css::uno::Reference< css::task::XInteractionContinuation > >
 }
 */
 
-class InteractionRequest_Impl : public ::cppu::WeakImplHelper1< ::com::sun::star::task::XInteractionRequest >   
+class InteractionRequest_Impl : public ::cppu::WeakImplHelper1< ::com::sun::star::task::XInteractionRequest >
 {
     uno::Any m_aRequest;
     uno::Sequence< ::com::sun::star::uno::Reference< ::com::sun::star::task::XInteractionContinuation > > m_lContinuations;
 
-public:    
-    InteractionRequest_Impl( const ::com::sun::star::uno::Any& aRequest, 
+public:
+    InteractionRequest_Impl( const ::com::sun::star::uno::Any& aRequest,
         const ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Reference< ::com::sun::star::task::XInteractionContinuation > > lContinuations )
     {
         m_aRequest = aRequest;
@@ -338,7 +338,7 @@ public:
     }
 
     virtual uno::Any SAL_CALL getRequest() throw( uno::RuntimeException );
-    virtual uno::Sequence< uno::Reference< task::XInteractionContinuation > > SAL_CALL getContinuations() 
+    virtual uno::Sequence< uno::Reference< task::XInteractionContinuation > > SAL_CALL getContinuations()
             throw( uno::RuntimeException );
 };
 
@@ -347,13 +347,13 @@ uno::Any SAL_CALL InteractionRequest_Impl::getRequest() throw( uno::RuntimeExcep
     return m_aRequest;
 }
 
-uno::Sequence< uno::Reference< task::XInteractionContinuation > > SAL_CALL InteractionRequest_Impl::getContinuations() 
+uno::Sequence< uno::Reference< task::XInteractionContinuation > > SAL_CALL InteractionRequest_Impl::getContinuations()
     throw( uno::RuntimeException )
 {
     return m_lContinuations;
 }
 
-uno::Reference < task::XInteractionRequest > InteractionRequest::CreateRequest( 
+uno::Reference < task::XInteractionRequest > InteractionRequest::CreateRequest(
     const uno::Any& aRequest, const uno::Sequence< uno::Reference< task::XInteractionContinuation > > lContinuations )
 {
     return new InteractionRequest_Impl( aRequest, lContinuations );

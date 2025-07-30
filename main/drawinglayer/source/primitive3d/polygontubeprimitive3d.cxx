@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -42,7 +42,7 @@ namespace drawinglayer
 		namespace // anonymous namespace
 		{
 			Primitive3DSequence getLineTubeSegments(
-				sal_uInt32 nSegments, 
+				sal_uInt32 nSegments,
 				const attribute::MaterialAttribute3D& rMaterial)
 			{
 				// static data for buffered tube primitives
@@ -75,7 +75,7 @@ namespace drawinglayer
 						const basegfx::B3DPoint aNextLeft(aRot * aLastLeft);
 						const basegfx::B3DPoint aNextRight(aRot * aLastRight);
 						basegfx::B3DPolygon aNewPolygon;
-						
+
 						aNewPolygon.append(aNextLeft);
 						aNewPolygon.setNormal(0L, basegfx::B3DVector(aNextLeft - aLeft));
 
@@ -87,7 +87,7 @@ namespace drawinglayer
 
 						aNewPolygon.append(aNextRight);
 						aNewPolygon.setNormal(3L, basegfx::B3DVector(aNextRight - aRight));
-						
+
 						aNewPolygon.setClosed(true);
 
 						const basegfx::B3DPolyPolygon aNewPolyPolygon(aNewPolygon);
@@ -103,7 +103,7 @@ namespace drawinglayer
 			}
 
 			Primitive3DSequence getLineCapSegments(
-				sal_uInt32 nSegments, 
+				sal_uInt32 nSegments,
 				const attribute::MaterialAttribute3D& rMaterial)
 			{
 				// static data for buffered tube primitives
@@ -133,7 +133,7 @@ namespace drawinglayer
 					{
 						const basegfx::B3DPoint aNext(aRot * aLast);
 						basegfx::B3DPolygon aNewPolygon;
-						
+
 						aNewPolygon.append(aLast);
 						aNewPolygon.setNormal(0L, basegfx::B3DVector(aLast - aNull));
 
@@ -157,7 +157,7 @@ namespace drawinglayer
 			}
 
             Primitive3DSequence getLineCapRoundSegments(
-                sal_uInt32 nSegments, 
+                sal_uInt32 nSegments,
                 const attribute::MaterialAttribute3D& rMaterial)
             {
                 // static data for buffered tube primitives
@@ -174,7 +174,7 @@ namespace drawinglayer
                     aLineMaterial = rMaterial;
                     aLineCapRoundList = Primitive3DSequence();
                 }
-                
+
                 if(!aLineCapRoundList.hasElements() && nLineCapRoundSegments)
                 {
                     // calculate new horizontal segments
@@ -188,10 +188,10 @@ namespace drawinglayer
                     // create half-sphere; upper half of unit sphere
                     basegfx::B3DPolyPolygon aSphere(
                         basegfx::tools::createUnitSphereFillPolyPolygon(
-                            nSegments, 
-                            nVerSeg, 
-                            true, 
-                            F_PI2, 0.0, 
+                            nSegments,
+                            nVerSeg,
+                            true,
+                            F_PI2, 0.0,
                             0.0, F_2PI));
                     const sal_uInt32 nCount(aSphere.count());
 
@@ -216,22 +216,22 @@ namespace drawinglayer
                             // need to create one primitive per Polygon since the primitive
                             // is for planar PolyPolygons which is definitely not the case here
                             aLineCapRoundList[a] = new PolyPolygonMaterialPrimitive3D(
-                                aPartPolyPolygon, 
-                                rMaterial, 
+                                aPartPolyPolygon,
+                                rMaterial,
                                 false);
                         }
                     }
                 }
-                
+
                 return aLineCapRoundList;
             }
 
 			Primitive3DSequence getLineJoinSegments(
-				sal_uInt32 nSegments, 
-				const attribute::MaterialAttribute3D& rMaterial, 
+				sal_uInt32 nSegments,
+				const attribute::MaterialAttribute3D& rMaterial,
 				double fAngle,
-				double /*fDegreeStepWidth*/, 
-				double fMiterMinimumAngle, 
+				double /*fDegreeStepWidth*/,
+				double fMiterMinimumAngle,
 				basegfx::B2DLineJoin aLineJoin)
 			{
 				// nSegments is for whole circle, adapt to half circle
@@ -303,26 +303,26 @@ namespace drawinglayer
 							if(bFirst || !bLast)
 							{
 								fPos += fInc;
-								
+
 								aNextPointOnXY = basegfx::B3DPoint(
-									cos(fPos), 
-									sin(fPos), 
+									cos(fPos),
+									sin(fPos),
 									0.0);
-								
+
 								aNextPointRotY = basegfx::B3DPoint(
-									aNextPointOnXY.getX() * fCos, 
-									aNextPointOnXY.getY(), 
+									aNextPointOnXY.getX() * fCos,
+									aNextPointOnXY.getY(),
 									aNextPointOnXY.getX() * fSin);
 
 								if(bMiter)
 								{
 									aNextMiter = basegfx::B3DPoint(
-										aNextPointOnXY.getX(), 
-										aNextPointOnXY.getY(), 
+										aNextPointOnXY.getX(),
+										aNextPointOnXY.getY(),
 										fMiterSin * (aNextPointOnXY.getX() / fMiterCos));
 								}
 							}
-							
+
 							if(bFirst)
 							{
 								aNewPolygon.clear();
@@ -348,7 +348,7 @@ namespace drawinglayer
 							else if(bLast)
 							{
 								aNewPolygon.clear();
-		
+
 								if(bMiter)
 								{
 									aNewPolygon.append(basegfx::B3DPoint(0.0, 1.0, 0.0));
@@ -392,7 +392,7 @@ namespace drawinglayer
 									aNewPolygon.append(aNextPointRotY);
 								}
 							}
-						
+
 							// set normals
 							for(sal_uInt32 b(0L); b < aNewPolygon.count(); b++)
 							{
@@ -406,7 +406,7 @@ namespace drawinglayer
 								BasePrimitive3D* pNew = new PolyPolygonMaterialPrimitive3D(aNewPolyPolygon, rMaterial, false);
 								aResultVector.push_back(pNew);
 							}
-							
+
 							if(bMiter && aMiterPolygon.count())
 							{
 								// set normals
@@ -420,13 +420,13 @@ namespace drawinglayer
 								BasePrimitive3D* pNew = new PolyPolygonMaterialPrimitive3D(aMiterPolyPolygon, rMaterial, false);
 								aResultVector.push_back(pNew);
 							}
-							
+
 							// prepare next step
 							if(bFirst || !bLast)
 							{
 								aPointOnXY = aNextPointOnXY;
 								aPointRotY = aNextPointRotY;
-								
+
 								if(bMiter)
 								{
 									aCurrMiter = aNextMiter;
@@ -479,7 +479,7 @@ namespace drawinglayer
         {
             const sal_uInt32 nPointCount(getB3DPolygon().count());
             std::vector< BasePrimitive3D* > aResultVector;
-            
+
             if(nPointCount)
             {
                 if(basegfx::fTools::more(getRadius(), 0.0))
@@ -491,14 +491,14 @@ namespace drawinglayer
                     const sal_uInt32 nLoopCount(bClosed ? nPointCount : nPointCount - 1);
                     basegfx::B3DPoint aLast(getB3DPolygon().getB3DPoint(nPointCount - 1));
                     basegfx::B3DPoint aCurr(getB3DPolygon().getB3DPoint(0));
-                    
+
                     for(sal_uInt32 a(0); a < nLoopCount; a++)
                     {
                         // get next data
                         const basegfx::B3DPoint aNext(getB3DPolygon().getB3DPoint((a + 1) % nPointCount));
                         const basegfx::B3DVector aForw(aNext - aCurr);
                         const double fForwLen(aForw.getLength());
-                        
+
                         if(basegfx::fTools::more(fForwLen, 0.0))
                         {
                             // find out if linecap is active
@@ -523,7 +523,7 @@ namespace drawinglayer
                                 // when square line cap just prolong line segment in X, maybe 2 x radius when
                                 // first and last (simple line segment)
                                 const double fExtraLength(bFirst && bLast ? getRadius() * 2.0 : getRadius());
-                                
+
                                 aTubeTrans.scale(fForwLen + fExtraLength, getRadius(), getRadius());
 
                                 if(bFirst)
@@ -575,11 +575,11 @@ namespace drawinglayer
                                     const double fAngle(acos(aBack.scalar(aForw) / (fForwLen * aBack.getLength()))); // 0.0 .. F_PI2
                                     Primitive3DSequence aNewList(
                                         getLineJoinSegments(
-                                            nSegments, 
-                                            aMaterial, 
-                                            fAngle, 
-                                            getDegreeStepWidth(), 
-                                            getMiterMinimumAngle(), 
+                                            nSegments,
+                                            aMaterial,
+                                            fAngle,
+                                            getDegreeStepWidth(),
+                                            getMiterMinimumAngle(),
                                             getLineJoin()));
 
                                     // calculate transformation. First, get angle in YZ between nForw projected on (1, 0, 0) and nBack
@@ -587,7 +587,7 @@ namespace drawinglayer
                                     aInvRotVector.invert();
                                     basegfx::B3DVector aTransBack(aInvRotVector * aBack);
                                     const double fRotInYZ(atan2(aTransBack.getY(), aTransBack.getZ()));
-                                    
+
                                     // create trans by rotating unit sphere with angle 90 degrees around Y, then 180-fRot in X.
                                     // Also apply usual scaling and translation
                                     basegfx::B3DHomMatrix aSphereTrans;
@@ -596,11 +596,11 @@ namespace drawinglayer
                                     aSphereTrans *= aRotVector;
                                     aSphereTrans.scale(getRadius(), getRadius(), getRadius());
                                     aSphereTrans.translate(aCurr.getX(), aCurr.getY(), aCurr.getZ());
-                                    
+
                                     // line start edge, build transformed primitiveVector3D
                                     aResultVector.push_back(
                                         new TransformPrimitive3D(
-                                            aSphereTrans, 
+                                            aSphereTrans,
                                             aNewList));
                                 }
                             }
@@ -608,7 +608,7 @@ namespace drawinglayer
                             // create line segments, build transformed primitiveVector3D
                             aResultVector.push_back(
                                 new TransformPrimitive3D(
-                                    aTubeTrans, 
+                                    aTubeTrans,
                                     getLineTubeSegments(nSegments, aMaterial)));
 
                             if(bNoLineJoin || (!bClosed && bLast))
@@ -651,7 +651,7 @@ namespace drawinglayer
 
                                 aResultVector.push_back(
                                     new TransformPrimitive3D(
-                                        aBackCapTrans, 
+                                        aBackCapTrans,
                                         aSequence));
                             }
                         }
@@ -681,7 +681,7 @@ namespace drawinglayer
 		}
 
 		PolygonTubePrimitive3D::PolygonTubePrimitive3D(
-			const basegfx::B3DPolygon& rPolygon, 
+			const basegfx::B3DPolygon& rPolygon,
 			const basegfx::BColor& rBColor,
 			double fRadius, basegfx::B2DLineJoin aLineJoin,
             com::sun::star::drawing::LineCap aLineCap,

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -323,7 +323,7 @@ void FmFormObj::SetPage(SdrPage* _pNewPage)
                 {
                 	DBG_UNHANDLED_EXCEPTION();
                 }
-				
+
 			}
 		}
 	}
@@ -370,7 +370,7 @@ void FmFormObj::clonedFrom(const FmFormObj* _pSource)
 	Reference< XInterface >  xSourceContainer = xSourceAsChild->getParent();
 
 	m_xEnvironmentHistory = Reference< XIndexContainer >(
-		::comphelper::getProcessServiceFactory()->createInstance(::rtl::OUString::createFromAscii("com.sun.star.form.Forms")), 
+		::comphelper::getProcessServiceFactory()->createInstance(::rtl::OUString::createFromAscii("com.sun.star.form.Forms")),
 		UNO_QUERY);
 	DBG_ASSERT(m_xEnvironmentHistory.is(), "FmFormObj::clonedFrom : could not create a forms collection !");
 
@@ -504,7 +504,7 @@ Reference< XInterface >  FmFormObj::ensureModelEnv(const Reference< XInterface >
 		{
 			DBG_ERROR("FmFormObj::ensureModelEnv : could not retrieve a source DSS !");
 		}
-		
+
 
 		// calc the number of (source) form siblings with the same DSS
 		Reference< XPropertySet >  xCurrentSourceForm, xCurrentDestForm;
@@ -533,7 +533,7 @@ Reference< XInterface >  FmFormObj::ensureModelEnv(const Reference< XInterface >
 					{
 						DBG_ERROR("FmFormObj::ensureModelEnv : exception while getting a sibling's DSS !");
 					}
-					
+
 				}
 				++nCurrentSourceIndex;
 			}
@@ -564,7 +564,7 @@ Reference< XInterface >  FmFormObj::ensureModelEnv(const Reference< XInterface >
 					{
 						DBG_ERROR("FmFormObj::ensureModelEnv : exception while getting a destination DSS !");
 					}
-					
+
 				}
 				++nCurrentDestIndex;
 			}
@@ -592,7 +592,7 @@ Reference< XInterface >  FmFormObj::ensureModelEnv(const Reference< XInterface >
 					// no more options anymore ...
 					return Reference< XInterface > ();
 				}
-				
+
 			}
 		}
 

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -177,7 +177,7 @@ ChartTypeParameter ChartTypeDialogController::getChartTypeParameterForService(
             //not all templates need to support CurveStyle, CurveResolution or SplineOrder
             ex.Context.is();//to have debug information without compilation warnings
         }
-        
+
         try
         {
             xTemplateProps->getPropertyValue( C2U( "Geometry3D" )) >>= aRet.nGeometry3D;
@@ -449,7 +449,7 @@ ColumnChartDialogController::~ColumnChartDialogController()
 }
 String ColumnChartDialogController::getName()
 {
-    return String( SchResId( STR_TYPE_COLUMN ));    
+    return String( SchResId( STR_TYPE_COLUMN ));
 }
 Image ColumnChartDialogController::getImage( bool bIsHighContrast )
 {
@@ -526,7 +526,7 @@ BarChartDialogController::~BarChartDialogController()
 }
 String BarChartDialogController::getName()
 {
-    return String( SchResId( STR_TYPE_BAR ));    
+    return String( SchResId( STR_TYPE_BAR ));
 }
 Image BarChartDialogController::getImage( bool bIsHighContrast )
 {
@@ -664,7 +664,7 @@ LineChartDialogController::~LineChartDialogController()
 }
 String LineChartDialogController::getName()
 {
-    return String( SchResId( STR_TYPE_LINE ));    
+    return String( SchResId( STR_TYPE_LINE ));
 }
 Image LineChartDialogController::getImage( bool bIsHighContrast )
 {
@@ -732,7 +732,7 @@ void LineChartDialogController::fillSubTypeList( ValueSet& rSubTypeList, bool bI
             rSubTypeList.InsertItem( 4, SELECT_BITMAP( BMP_LINE3D_STACKED_SMOOTH ) );
         }
     }
-    
+
     rSubTypeList.SetItemText( 1, String( SchResId( STR_POINTS_ONLY )) );
     rSubTypeList.SetItemText( 2, String( SchResId( STR_POINTS_AND_LINES )) );
     rSubTypeList.SetItemText( 3, String( SchResId( STR_LINES_ONLY )) );
@@ -776,7 +776,7 @@ void LineChartDialogController::adjustParameterToSubType( ChartTypeParameter& rP
             rParameter.bLines = false;
             break;
     }
-    
+
     if(!rParameter.b3DLook && rParameter.eStackMode == GlobalStackMode_STACK_Z )
         rParameter.eStackMode = GlobalStackMode_NONE;
 }
@@ -797,7 +797,7 @@ XYChartDialogController::~XYChartDialogController()
 }
 String XYChartDialogController::getName()
 {
-    return String( SchResId( STR_TYPE_XY ));    
+    return String( SchResId( STR_TYPE_XY ));
 }
 Image XYChartDialogController::getImage( bool bIsHighContrast )
 {
@@ -834,7 +834,7 @@ void XYChartDialogController::fillSubTypeList( ValueSet& rSubTypeList, bool bIsH
         rSubTypeList.InsertItem( 3, SELECT_BITMAP( BMP_LINE_O_XVALUES_SMOOTH ) );
         rSubTypeList.InsertItem( 4, SELECT_BITMAP( BMP_LINE3D_XVALUES_SMOOTH ) );
     }
-    
+
     rSubTypeList.SetItemText( 1, String( SchResId( STR_POINTS_ONLY )) );
     rSubTypeList.SetItemText( 2, String( SchResId( STR_POINTS_AND_LINES )) );
     rSubTypeList.SetItemText( 3, String( SchResId( STR_LINES_ONLY )) );
@@ -884,7 +884,7 @@ AreaChartDialogController::~AreaChartDialogController()
 }
 String AreaChartDialogController::getName()
 {
-    return String( SchResId( STR_TYPE_AREA ));    
+    return String( SchResId( STR_TYPE_AREA ));
 }
 Image AreaChartDialogController::getImage( bool bIsHighContrast )
 {
@@ -923,7 +923,7 @@ void AreaChartDialogController::fillSubTypeList( ValueSet& rSubTypeList, bool bI
         rSubTypeList.InsertItem( 2, SELECT_BITMAP( BMP_AREAS_2D ) );
         rSubTypeList.InsertItem( 3, SELECT_BITMAP( BMP_AREAS_2D_3 ) );
     }
-    
+
     rSubTypeList.SetItemText( 1, String( SchResId( rParameter.b3DLook ? STR_DEEP : STR_NORMAL )) );
     rSubTypeList.SetItemText( 2, String( SchResId( STR_STACKED )) );
     rSubTypeList.SetItemText( 3, String( SchResId( STR_PERCENT )) );
@@ -967,7 +967,7 @@ NetChartDialogController::~NetChartDialogController()
 }
 String NetChartDialogController::getName()
 {
-    return String( SchResId( STR_TYPE_NET ));    
+    return String( SchResId( STR_TYPE_NET ));
 }
 Image NetChartDialogController::getImage( bool bIsHighContrast )
 {
@@ -1003,7 +1003,7 @@ const tTemplateServiceChartTypeParameterMap& NetChartDialogController::getTempla
 void NetChartDialogController::fillSubTypeList( ValueSet& rSubTypeList, bool bIsHighContrast, const ChartTypeParameter& rParameter )
 {
     rSubTypeList.Clear();
-    
+
     if( GlobalStackMode_NONE == rParameter.eStackMode )
     {
         rSubTypeList.InsertItem( 1, SELECT_BITMAP( BMP_NET_SYMB ) );
@@ -1060,7 +1060,7 @@ StockChartDialogController::~StockChartDialogController()
 }
 String StockChartDialogController::getName()
 {
-    return String( SchResId( STR_TYPE_STOCK ));    
+    return String( SchResId( STR_TYPE_STOCK ));
 }
 Image StockChartDialogController::getImage( bool bIsHighContrast )
 {
@@ -1111,7 +1111,7 @@ CombiColumnLineChartDialogController::~CombiColumnLineChartDialogController()
 }
 String CombiColumnLineChartDialogController::getName()
 {
-    return String( SchResId( STR_TYPE_COMBI_COLUMN_LINE ));    
+    return String( SchResId( STR_TYPE_COMBI_COLUMN_LINE ));
 }
 Image CombiColumnLineChartDialogController::getImage( bool bIsHighContrast )
 {
@@ -1166,7 +1166,7 @@ void CombiColumnLineChartDialogController::showExtraControls( Window* pParent, c
 
     m_pFT_NumberOfLines->SetPosPixel( Point( rPosition.X(), rPosition.Y()+aDistanceSize.Height()) );
     m_pMF_NumberOfLines->SetPosPixel( Point( rPosition.X()+aFTSize.Width()+aDistanceSize.Width(), rPosition.Y()) );
-    
+
     m_pFT_NumberOfLines->Show();
     m_pMF_NumberOfLines->Show();
 	m_pMF_NumberOfLines->SetAccessibleName(m_pFT_NumberOfLines->GetText());
@@ -1253,7 +1253,7 @@ BubbleChartDialogController::~BubbleChartDialogController()
 }
 String BubbleChartDialogController::getName()
 {
-    return String( SchResId( STR_TYPE_BUBBLE ));    
+    return String( SchResId( STR_TYPE_BUBBLE ));
 }
 Image BubbleChartDialogController::getImage( bool bIsHighContrast )
 {

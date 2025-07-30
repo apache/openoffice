@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -39,7 +39,7 @@ using namespace com::sun::star::ucb;
 
 
 ContentEventNotifier::ContentEventNotifier( shell* pMyShell,
-											const uno::Reference< XContent >& xCreatorContent,							  
+											const uno::Reference< XContent >& xCreatorContent,
 											const uno::Reference< XContentIdentifier >& xCreatorId,
 											const uno::Sequence< uno::Reference< uno::XInterface > >& sListeners )
 	: m_pMyShell( pMyShell ),
@@ -51,7 +51,7 @@ ContentEventNotifier::ContentEventNotifier( shell* pMyShell,
 
 
 ContentEventNotifier::ContentEventNotifier( shell* pMyShell,
-											const uno::Reference< XContent >& xCreatorContent,							  
+											const uno::Reference< XContent >& xCreatorContent,
 											const uno::Reference< XContentIdentifier >& xCreatorId,
 											const uno::Reference< XContentIdentifier >& xOldId,
 											const uno::Sequence< uno::Reference< uno::XInterface > >& sListeners )
@@ -69,14 +69,14 @@ void ContentEventNotifier::notifyChildInserted( const rtl::OUString& aChildName 
 {
 	FileContentIdentifier* p = new FileContentIdentifier( m_pMyShell,aChildName );
 	uno::Reference< XContentIdentifier > xChildId( p );
-	
+
 	uno::Reference< XContent > xChildContent = m_pMyShell->m_pProvider->queryContent( xChildId );
-	
+
 	ContentEvent aEvt( m_xCreatorContent,
 					   ContentAction::INSERTED,
 					   xChildContent,
 					   m_xCreatorId );
-	
+
 	for( sal_Int32 i = 0; i < m_sListeners.getLength(); ++i )
 	{
 		uno::Reference< XContentEventListener > ref( m_sListeners[i],uno::UNO_QUERY );
@@ -87,13 +87,13 @@ void ContentEventNotifier::notifyChildInserted( const rtl::OUString& aChildName 
 
 void ContentEventNotifier::notifyDeleted( void )
 {
-	
+
 	ContentEvent aEvt( m_xCreatorContent,
 					   ContentAction::DELETED,
 					   m_xCreatorContent,
 					   m_xCreatorId );
 
-	
+
 	for( sal_Int32 i = 0; i < m_sListeners.getLength(); ++i )
 	{
 		uno::Reference< XContentEventListener > ref( m_sListeners[i],uno::UNO_QUERY );
@@ -108,16 +108,16 @@ void ContentEventNotifier::notifyRemoved( const rtl::OUString& aChildName )
 {
 	FileContentIdentifier* p = new FileContentIdentifier( m_pMyShell,aChildName );
 	uno::Reference< XContentIdentifier > xChildId( p );
-	
+
 	BaseContent* pp = new BaseContent( m_pMyShell,xChildId,aChildName );
 	{
 		osl::MutexGuard aGuard( pp->m_aMutex );
 		pp->m_nState |= BaseContent::Deleted;
 	}
-	
+
 	uno::Reference< XContent > xDeletedContent( pp );
-	
-	
+
+
 	ContentEvent aEvt( m_xCreatorContent,
 					   ContentAction::REMOVED,
 					   xDeletedContent,
@@ -127,7 +127,7 @@ void ContentEventNotifier::notifyRemoved( const rtl::OUString& aChildName )
 	{
 		uno::Reference< XContentEventListener > ref( m_sListeners[i],uno::UNO_QUERY );
 		if( ref.is() )
-			ref->contentEvent( aEvt );		
+			ref->contentEvent( aEvt );
 	}
 }
 
@@ -137,12 +137,12 @@ void ContentEventNotifier::notifyExchanged()
 					   ContentAction::EXCHANGED,
 					   m_xCreatorContent,
 					   m_xOldId );
-	
+
 	for( sal_Int32 i = 0; i < m_sListeners.getLength(); ++i )
 	{
 		uno::Reference< XContentEventListener > ref( m_sListeners[i],uno::UNO_QUERY );
 		if( ref.is() )
-			ref->contentEvent( aEvt );		
+			ref->contentEvent( aEvt );
 	}
 }
 
@@ -155,7 +155,7 @@ void ContentEventNotifier::notifyExchanged()
 
 PropertySetInfoChangeNotifier::PropertySetInfoChangeNotifier(
 	shell* pMyShell,
-	const uno::Reference< XContent >& xCreatorContent,							  
+	const uno::Reference< XContent >& xCreatorContent,
 	const uno::Reference< XContentIdentifier >& xCreatorId,
 	const uno::Sequence< uno::Reference< uno::XInterface > >& sListeners )
 	: m_pMyShell( pMyShell ),
@@ -163,7 +163,7 @@ PropertySetInfoChangeNotifier::PropertySetInfoChangeNotifier(
 	  m_xCreatorId( xCreatorId ),
 	  m_sListeners( sListeners )
 {
-	
+
 }
 
 
@@ -174,7 +174,7 @@ PropertySetInfoChangeNotifier::notifyPropertyAdded( const rtl::OUString & aPrope
 											aPropertyName,
 											-1,
 											beans::PropertySetInfoChange::PROPERTY_INSERTED );
-	
+
 	for( sal_Int32 i = 0; i < m_sListeners.getLength(); ++i )
 	{
 		uno::Reference< beans::XPropertySetInfoChangeListener > ref( m_sListeners[i],uno::UNO_QUERY );
@@ -191,7 +191,7 @@ PropertySetInfoChangeNotifier::notifyPropertyRemoved( const rtl::OUString & aPro
 											aPropertyName,
 											-1,
 											beans::PropertySetInfoChange::PROPERTY_REMOVED );
-	
+
 	for( sal_Int32 i = 0; i < m_sListeners.getLength(); ++i )
 	{
 		uno::Reference< beans::XPropertySetInfoChangeListener > ref( m_sListeners[i],uno::UNO_QUERY );
@@ -227,16 +227,16 @@ PropertyChangeNotifier::~PropertyChangeNotifier()
 }
 
 
-void PropertyChangeNotifier::notifyPropertyChanged( 
+void PropertyChangeNotifier::notifyPropertyChanged(
 	uno::Sequence< beans::PropertyChangeEvent > Changes )
 {
 	sal_Int32 j;
-	
+
 	for( j = 0; j < Changes.getLength(); ++j )
 		Changes[j].Source = m_xCreatorContent;
-	
+
 	// notify listeners for all Events
-	
+
 	uno::Sequence< uno::Reference< uno::XInterface > > seqList = (*m_pListeners)[ rtl::OUString() ];
 	for( j = 0; j < seqList.getLength(); ++j )
 	{
@@ -246,13 +246,13 @@ void PropertyChangeNotifier::notifyPropertyChanged(
 			aListener->propertiesChange( Changes );
 		}
 	}
-	
+
 	uno::Sequence< beans::PropertyChangeEvent > seq(1);
 	for( j = 0; j < Changes.getLength(); ++j )
 	{
 		seq[0] = Changes[j];
 		seqList = (*m_pListeners)[ seq[0].PropertyName ];
-		
+
 		for( sal_Int32 i = 0; i < seqList.getLength(); ++i )
 		{
 			uno::Reference< beans::XPropertiesChangeListener > aListener( seqList[j],uno::UNO_QUERY );

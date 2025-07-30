@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -236,7 +236,7 @@ SharedPageDescriptor SlideSorterModel::GetPageDescriptor (
 sal_Int32 SlideSorterModel::GetIndex (const Reference<drawing::XDrawPage>& rxSlide) const
 {
     ::osl::MutexGuard aGuard (maMutex);
-  
+
     // First try to guess the right index.
     Reference<beans::XPropertySet> xSet (rxSlide, UNO_QUERY);
     if (xSet.is())
@@ -266,7 +266,7 @@ sal_Int32 SlideSorterModel::GetIndex (const Reference<drawing::XDrawPage>& rxSli
     for (sal_Int32 nIndex=0; nIndex<nCount; ++nIndex)
     {
         SharedPageDescriptor pDescriptor (maPageDescriptors[nIndex]);
-        
+
         // Make sure that the descriptor exists.  Without it the given slide
         // can not be found.
         if (pDescriptor.get() == NULL)
@@ -274,7 +274,7 @@ sal_Int32 SlideSorterModel::GetIndex (const Reference<drawing::XDrawPage>& rxSli
             // Call GetPageDescriptor() to create the missing descriptor.
             pDescriptor = GetPageDescriptor(nIndex,true);
         }
-        
+
         if (pDescriptor->GetXDrawPage() == rxSlide)
             return nIndex;
     }
@@ -291,7 +291,7 @@ sal_Int32 SlideSorterModel::GetIndex (const SdrPage* pPage) const
         return -1;
 
     ::osl::MutexGuard aGuard (maMutex);
-  
+
     // First try to guess the right index.
     sal_Int16 nNumber ((pPage->GetPageNum()-1)/2);
     SharedPageDescriptor pDescriptor (GetPageDescriptor(nNumber, false));
@@ -307,7 +307,7 @@ sal_Int32 SlideSorterModel::GetIndex (const SdrPage* pPage) const
     for (sal_Int32 nIndex=0; nIndex<nCount; ++nIndex)
     {
         pDescriptor = maPageDescriptors[nIndex];
-        
+
         // Make sure that the descriptor exists.  Without it the given slide
         // can not be found.
         if (pDescriptor.get() == NULL)
@@ -315,7 +315,7 @@ sal_Int32 SlideSorterModel::GetIndex (const SdrPage* pPage) const
             // Call GetPageDescriptor() to create the missing descriptor.
             pDescriptor = GetPageDescriptor(nIndex, true);
         }
-        
+
         if (pDescriptor->GetPage() == pPage)
             return nIndex;
     }
@@ -363,7 +363,7 @@ void SlideSorterModel::Resync (void)
                 OSL_TRACE("page %d differs\n", nIndex);
                 bIsUpToDate = false;
                 break;
-            }                
+            }
         }
     }
     else
@@ -394,7 +394,7 @@ void SlideSorterModel::ClearDescriptorList (void)
         ::osl::MutexGuard aGuard (maMutex);
         aDescriptors.swap(maPageDescriptors);
     }
-    
+
     for (DescriptorContainer::iterator iDescriptor=aDescriptors.begin(), iEnd=aDescriptors.end();
          iDescriptor!=iEnd;
          ++iDescriptor)

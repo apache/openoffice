@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -156,14 +156,14 @@ void SwChapterField::ChangeExpansion(const SwTxtNode &rTxtNd, sal_Bool bSrchNum)
 			sPre = rNFmt.GetPrefix();
 		}
 		else
-		{			
+		{
 			sNumber = String("??", RTL_TEXTENCODING_ASCII_US);
 		}
 		sTitle = rTxtNd.GetExpandTxt();
 
 		for( xub_StrLen i = 0; i < sTitle.Len(); ++i )
 			if( ' ' > sTitle.GetChar( i ) )
-				sTitle.Erase( i--, 1 );	
+				sTitle.Erase( i--, 1 );
 	}else
 	{
 	//End
@@ -185,7 +185,7 @@ void SwChapterField::ChangeExpansion(const SwTxtNode &rTxtNd, sal_Bool bSrchNum)
                     //ASSERT( pONd->GetOutlineLevel() >= 0 && pONd->GetOutlineLevel() < MAXLEVEL,	//#outline level,zhaojianwei
                     //        "<SwChapterField::ChangeExpansion(..)> - outline node with inconsistent outline level. Serious defect -> please inform OD." );
                     //nLevel = static_cast<sal_uInt8>(pONd->GetOutlineLevel());
-                    ASSERT( pONd->GetAttrOutlineLevel() >= 0 && pONd->GetAttrOutlineLevel() <= MAXLEVEL,	
+                    ASSERT( pONd->GetAttrOutlineLevel() >= 0 && pONd->GetAttrOutlineLevel() <= MAXLEVEL,
                             "<SwChapterField::ChangeExpansion(..)> - outline node with inconsistent outline level. Serious defect -> please inform OD." );
                     nLevel = static_cast<sal_uInt8>(pONd->GetAttrOutlineLevel());							//<-end,zhaojianwei
                     // <--

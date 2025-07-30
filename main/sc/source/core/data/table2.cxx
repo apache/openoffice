@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -55,7 +55,7 @@
 #include "sheetevents.hxx"
 #include "globstr.hrc"
 #include "segmenttree.hxx"
-#include "dbcolect.hxx"	
+#include "dbcolect.hxx"
 
 #include <math.h>
 
@@ -474,13 +474,13 @@ void ScTable::CopyToClip(SCCOL nCol1, SCROW nRow1, SCCOL nCol2, SCROW nRow2,
 	}
 }
 
-void ScTable::CopyToClip(const ScRangeList& rRanges, ScTable* pTable, 
+void ScTable::CopyToClip(const ScRangeList& rRanges, ScTable* pTable,
                          bool bKeepScenarioFlags, bool bCloneNoteCaptions)
 {
     ScRangeList aRanges(rRanges);
     for (ScRangePtr p = aRanges.First(); p; p = aRanges.Next())
     {
-        CopyToClip(p->aStart.Col(), p->aStart.Row(), p->aEnd.Col(), p->aEnd.Row(), 
+        CopyToClip(p->aStart.Col(), p->aStart.Row(), p->aEnd.Col(), p->aEnd.Row(),
                    pTable, bKeepScenarioFlags, bCloneNoteCaptions);
     }
 }
@@ -763,7 +763,7 @@ void ScTable::CopyToTable(SCCOL nCol1, SCROW nRow1, SCCOL nCol2, SCROW nRow2,
 						pDestTab->pColFlags[i] = pColFlags[i];
                         pDestTab->SetColHidden(i, i, bThisHidden);
 						//!	Aenderungen zusammenfassen?
-                        if (bHiddenChange && pCharts) 
+                        if (bHiddenChange && pCharts)
                             pCharts->SetRangeDirty(ScRange( i, 0, nTab, i, MAXROW, nTab ));
 
                         if (bChange)
@@ -791,13 +791,13 @@ void ScTable::CopyToTable(SCCOL nCol1, SCROW nRow1, SCCOL nCol2, SCROW nRow2,
                         SCROW nThisLastRow, nDestLastRow;
                         bool bThisHidden = RowHidden(i, NULL, &nThisLastRow);
                         bool bDestHidden = pDestTab->RowHidden(i, NULL, &nDestLastRow);
-    
+
                         // If the segment sizes differ, we take the shorter segment of the two.
                         SCROW nLastRow = ::std::min(nThisLastRow, nDestLastRow);
                         if (nLastRow >= nRow2)
                             // the last row shouldn't exceed the upper bound the caller specified.
                             nLastRow = nRow2;
-    
+
                         //pDestTab->SetRowHidden(i, nLastRow, bThisHidden);
                         aEntries.push_back(ScShowRowsEntry(i, nLastRow, !bThisHidden));
 
@@ -807,10 +807,10 @@ void ScTable::CopyToTable(SCCOL nCol1, SCROW nRow1, SCCOL nCol2, SCROW nRow2,
                             // Hidden flags differ.
                             pCharts->SetRangeDirty(ScRange(0, i, nTab, MAXCOL, nLastRow, nTab));
                         }
-    
+
                         if (bThisHiddenChange)
                             bFlagChange = true;
-    
+
                         // Jump to the last row of the identical flag segment.
                         i = nLastRow;
 					}
@@ -1040,11 +1040,11 @@ void ScTable::PutCell( const ScAddress& rPos, ScBaseCell* pCell )
 //UNUSED2009-05 }
 
 
-sal_Bool ScTable::SetString( SCCOL nCol, SCROW nRow, SCTAB nTabP, const String& rString, 
+sal_Bool ScTable::SetString( SCCOL nCol, SCROW nRow, SCTAB nTabP, const String& rString,
                          SvNumberFormatter* pFormatter, bool bDetectNumberFormat )
 {
 	if (ValidColRow(nCol,nRow))
-        return aCol[nCol].SetString( 
+        return aCol[nCol].SetString(
             nRow, nTabP, rString, pDocument->GetAddressConvention(), pFormatter, bDetectNumberFormat );
 	else
 		return sal_False;
@@ -1404,12 +1404,12 @@ bool ScTable::HasAttrib( SCCOL nCol1, SCROW nRow1, SCCOL nCol2, SCROW nRow2, sal
 //UNUSED2009-05     SCROW nRow2 = rRange.aEnd.Row();
 //UNUSED2009-05     PutInOrder( nCol1, nCol2 );
 //UNUSED2009-05     PutInOrder( nRow1, nRow2 );
-//UNUSED2009-05 
+//UNUSED2009-05
 //UNUSED2009-05     sal_Bool bFound = sal_False;
 //UNUSED2009-05     for (SCCOL i=nCol1; i<=nCol2; i++)
 //UNUSED2009-05         if (aCol[i].HasLines( nRow1, nRow2, rSizes, (i==nCol1), (i==nCol2) ))
 //UNUSED2009-05             bFound = sal_True;
-//UNUSED2009-05 
+//UNUSED2009-05
 //UNUSED2009-05     return bFound;
 //UNUSED2009-05 }
 
@@ -1931,11 +1931,11 @@ void ScTable::ApplyPooledPatternArea( SCCOL nStartCol, SCROW nStartRow, SCCOL nE
 			SCROW nStar, nEnd;
 			const ScPatternAttr* pAttr = aCol[i].GetPatternRange(nStar, nEnd, nStartRow);
 			if (nStar >nStartRow || nEnd < nEndRow || pAttr!=pDocument->GetDefPattern())
-				bSet = sal_False; 
+				bSet = sal_False;
 
-			if (bSet) 
-				aCol[i].SetPatternArea(nStartRow, nEndRow, rPooledAttr);				
-			else		
+			if (bSet)
+				aCol[i].SetPatternArea(nStartRow, nEndRow, rPooledAttr);
+			else
 				aCol[i].ApplyPatternArea(nStartRow, nEndRow, rAttr);
 		}
 	}
@@ -2218,12 +2218,12 @@ void ScTable::SetRowHeight( SCROW nRow, sal_uInt16 nNewHeight )
 
 namespace {
 
-/** 
- * Check if the new pixel size is different from the old size between 
- * specified ranges. 
+/**
+ * Check if the new pixel size is different from the old size between
+ * specified ranges.
  */
 bool lcl_pixelSizeChanged(
-    ScFlatUInt16RowSegments& rRowHeights, SCROW nStartRow, SCROW nEndRow, 
+    ScFlatUInt16RowSegments& rRowHeights, SCROW nStartRow, SCROW nEndRow,
     sal_uInt16 nNewHeight, double nPPTY)
 {
     long nNewPix = static_cast<long>(nNewHeight * nPPTY);
@@ -2236,7 +2236,7 @@ bool lcl_pixelSizeChanged(
             break;
 
         if (nHeight != nNewHeight)
-        {    
+        {
             bool bChanged = (nNewPix != static_cast<long>(nHeight * nPPTY));
             if (bChanged)
                 return true;
@@ -2473,9 +2473,9 @@ sal_uInt16 ScTable::GetRowHeight( SCROW nRow, SCROW* pStartRow, SCROW* pEndRow, 
                 return 0;
             }
 
-            // If bHiddenAsZero, pStartRow and pEndRow were initialized to 
-            // boundaries of a non-hidden segment. Assume that the previous and 
-            // next segment are hidden then and limit the current height 
+            // If bHiddenAsZero, pStartRow and pEndRow were initialized to
+            // boundaries of a non-hidden segment. Assume that the previous and
+            // next segment are hidden then and limit the current height
             // segment.
             if (pStartRow)
                 *pStartRow = (bHiddenAsZero ? std::max( *pStartRow, aData.mnRow1) : aData.mnRow1);
@@ -2904,7 +2904,7 @@ SCROW ScTable::GetLastFlaggedRow() const
 {
     SCROW nLastFound = 0;
     if (pRowFlags)
-    {    
+    {
         SCROW nRow = pRowFlags->GetLastAnyBitAccess( 0, sal::static_int_cast<sal_uInt8>(CR_ALL) );
         if (ValidRow(nRow))
             nLastFound = nRow;

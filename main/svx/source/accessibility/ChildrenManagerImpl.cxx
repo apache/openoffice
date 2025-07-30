@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -755,7 +755,7 @@ void ChildrenManagerImpl::impl_dispose (void)
     }
     catch( uno::RuntimeException&)
     {}
- 
+
     try
     {
         if (xController.is())
@@ -764,7 +764,7 @@ void ChildrenManagerImpl::impl_dispose (void)
     }
     catch( uno::RuntimeException&)
     {}
-    
+
     maShapeTreeInfo.SetController (NULL);
 
     try
@@ -777,7 +777,7 @@ void ChildrenManagerImpl::impl_dispose (void)
     }
     catch( uno::RuntimeException& )
     {}
- 
+
     ClearAccessibleShapeList ();
     SetShapeList (NULL);
 }
@@ -964,11 +964,11 @@ void ChildrenManagerImpl::UpdateSelection (void)
         {
 			short nRole = pAccessibleShape->getAccessibleRole();
 			bool bDrawShape = (
-				nRole == AccessibleRole::GRAPHIC || 
-				nRole == AccessibleRole::EMBEDDED_OBJECT || 
-				nRole == AccessibleRole::SHAPE || 
-				nRole == AccessibleRole::IMAGE_MAP || 
-				nRole == AccessibleRole::TABLE_CELL || 
+				nRole == AccessibleRole::GRAPHIC ||
+				nRole == AccessibleRole::EMBEDDED_OBJECT ||
+				nRole == AccessibleRole::SHAPE ||
+				nRole == AccessibleRole::IMAGE_MAP ||
+				nRole == AccessibleRole::TABLE_CELL ||
 				nRole == AccessibleRole::TABLE );
             bool bShapeIsSelected = false;
 
@@ -1039,7 +1039,7 @@ void ChildrenManagerImpl::UpdateSelection (void)
     */
 	Window *pParentWidow = maShapeTreeInfo.GetWindow();
 	bool bShapeActive= false;
-	// For table cell, the table's parent must be checked to make sure it has focus. 
+	// For table cell, the table's parent must be checked to make sure it has focus.
 	Window *pPWindow = pParentWidow->GetParent();
 	if (pParentWidow && ( pParentWidow->HasFocus() || (pPWindow && pPWindow->HasFocus())))
 	{
@@ -1054,7 +1054,7 @@ void ChildrenManagerImpl::UpdateSelection (void)
             pNewFocusedShape->SetState (AccessibleStateType::FOCUSED);
 	}
 
-	if (nAddSelect >= 10 )//fire selection  within 
+	if (nAddSelect >= 10 )//fire selection  within
 	{
 		mrContext.CommitChange(AccessibleEventId::SELECTION_CHANGED_WITHIN,uno::Any(),uno::Any());
 		nAddSelect =0 ;//not fire selection event
@@ -1077,7 +1077,7 @@ void ChildrenManagerImpl::UpdateSelection (void)
 				if (  nAddSelect > 0 )
 				{
 					mrContext.CommitChange(AccessibleEventId::SELECTION_CHANGED_ADD,anyShape,uno::Any());
-				}				
+				}
 			}
 			else
 			{

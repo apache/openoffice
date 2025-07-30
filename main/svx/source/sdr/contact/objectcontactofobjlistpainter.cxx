@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -70,7 +70,7 @@ namespace sdr
 		}
 
 		ObjectContactOfObjListPainter::ObjectContactOfObjListPainter(
-			OutputDevice& rTargetDevice, 
+			OutputDevice& rTargetDevice,
 			const SdrObjectVector& rObjects,
             const SdrPage* pProcessedPage)
 		:	ObjectContactPainter(),
@@ -111,11 +111,11 @@ namespace sdr
 
 					// update local ViewInformation2D
 					const drawinglayer::geometry::ViewInformation2D aNewViewInformation2D(
-                        basegfx::B2DHomMatrix(), 
-						pTargetDevice->GetViewTransformation(), 
-						aViewRange, 
+                        basegfx::B2DHomMatrix(),
+						pTargetDevice->GetViewTransformation(),
+						aViewRange,
         				GetXDrawPageForSdrPage(const_cast< SdrPage* >(mpProcessedPage)),
-						0.0, 
+						0.0,
 						com::sun::star::uno::Sequence<com::sun::star::beans::PropertyValue>());
 					updateViewInformation2D(aNewViewInformation2D);
 
@@ -134,7 +134,7 @@ namespace sdr
 					if(xPrimitiveSequence.hasElements())
 					{
 						drawinglayer::processor2d::BaseProcessor2D* pProcessor2D = drawinglayer::processor2d::createProcessor2DFromOutputDevice(
-							*pTargetDevice, 
+							*pTargetDevice,
                             getViewInformation2D());
 
 						if(pProcessor2D)

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -87,7 +87,7 @@ void SAL_CALL SwVbaParagraphFormat::setKeepTogether( const uno::Any& _keeptogeth
     if( _keeptogether >>= bKeep )
     {
         mxParaProps->setPropertyValue( rtl::OUString( RTL_CONSTASCII_USTRINGPARAM("ParaKeepTogether") ), uno::makeAny( bKeep ) );
-    }    
+    }
     else
     {
         DebugHelper::exception( SbERR_BAD_PARAMETER, rtl::OUString() );
@@ -107,7 +107,7 @@ void SAL_CALL SwVbaParagraphFormat::setKeepWithNext( const uno::Any& _keepwithne
     if( _keepwithnext >>= bKeep )
     {
         mxParaProps->setPropertyValue( rtl::OUString( RTL_CONSTASCII_USTRINGPARAM("ParaSplit") ), uno::makeAny( bKeep ) );
-    }    
+    }
     else
     {
         DebugHelper::exception( SbERR_BAD_PARAMETER, rtl::OUString() );
@@ -127,7 +127,7 @@ void SAL_CALL SwVbaParagraphFormat::setHyphenation( const uno::Any& _hyphenation
     if( _hyphenation >>= bHypn )
     {
         mxParaProps->setPropertyValue( rtl::OUString( RTL_CONSTASCII_USTRINGPARAM("ParaIsHyphenation") ), uno::makeAny( bHypn ) );
-    }    
+    }
     else
     {
         DebugHelper::exception( SbERR_BAD_PARAMETER, rtl::OUString() );
@@ -175,7 +175,7 @@ void SAL_CALL SwVbaParagraphFormat::setNoLineNumber( const uno::Any& _nolinenumb
     if( _nolinenumber >>= noLineNum )
     {
         mxParaProps->setPropertyValue( rtl::OUString( RTL_CONSTASCII_USTRINGPARAM("ParaLineNumberCount") ), uno::makeAny( noLineNum ) );
-    }    
+    }
     else
     {
         DebugHelper::exception( SbERR_BAD_PARAMETER, rtl::OUString() );
@@ -231,7 +231,7 @@ void SAL_CALL SwVbaParagraphFormat::setPageBreakBefore( const uno::Any& _breakbe
                 aBreakType = style::BreakType_PAGE_AFTER;
         }
         mxParaProps->setPropertyValue( rtl::OUString( RTL_CONSTASCII_USTRINGPARAM("BreakType") ), uno::makeAny( aBreakType ) );
-    }    
+    }
     else
     {
         DebugHelper::exception( SbERR_BAD_PARAMETER, rtl::OUString() );
@@ -335,7 +335,7 @@ style::LineSpacing SwVbaParagraphFormat::getOOoLineSpacing( float _lineSpace, sa
     style::LineSpacing aLineSpacing;
     if( mode != style::LineSpacingMode::MINIMUM && mode != style::LineSpacingMode::FIX )
     {
-        // special behaviour of word: if the space is set to these values, the rule and 
+        // special behaviour of word: if the space is set to these values, the rule and
         // the height are changed accordingly
         if( _lineSpace == CHARACTER_INDENT_FACTOR )
         {
@@ -548,14 +548,14 @@ sal_Int32 SwVbaParagraphFormat::getMSWordAlignment( sal_Int32 _alignment )
     return wdAlignment;
 }
 
-rtl::OUString& 
+rtl::OUString&
 SwVbaParagraphFormat::getServiceImplName()
 {
 	static rtl::OUString sImplName( RTL_CONSTASCII_USTRINGPARAM("SwVbaParagraphFormat") );
 	return sImplName;
 }
 
-uno::Sequence< rtl::OUString > 
+uno::Sequence< rtl::OUString >
 SwVbaParagraphFormat::getServiceNames()
 {
 	static uno::Sequence< rtl::OUString > aServiceNames;

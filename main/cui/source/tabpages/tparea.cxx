@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -259,7 +259,7 @@ SvxTransparenceTabPage::SvxTransparenceTabPage(Window* pParent, const SfxItemSet
 
     nPageType(0),
     nDlgType(0),
-    
+
     aFlProp             ( this, CUI_RES( FL_PROP ) ),
 	aRbtTransOff		( this, CUI_RES( RBT_TRANS_OFF ) ),
     aRbtTransLinear     ( this, CUI_RES( RBT_TRANS_LINEAR ) ),
@@ -281,7 +281,7 @@ SvxTransparenceTabPage::SvxTransparenceTabPage(Window* pParent, const SfxItemSet
 	aMtrTrgrStartValue	( this, CUI_RES( MTR_TRGR_START_VALUE ) ),
 	aFtTrgrEndValue		( this, CUI_RES( FT_TRGR_END_VALUE ) ),
 	aMtrTrgrEndValue	( this, CUI_RES( MTR_TRGR_END_VALUE ) ),
-    
+
     aCtlBitmapPreview   ( this, CUI_RES( CTL_BITMAP_PREVIEW ) ),
     aCtlXRectPreview    ( this, CUI_RES( CTL_TRANS_PREVIEW ) ),
     bBitmap             ( sal_False ),
@@ -623,7 +623,7 @@ void SvxTransparenceTabPage::PageCreated (SfxAllItemSet aSet) //add CHINA001
 |*
 \************************************************************************/
 
-SvxAreaTabPage::SvxAreaTabPage( Window* pParent, const SfxItemSet& rInAttrs ) 
+SvxAreaTabPage::SvxAreaTabPage( Window* pParent, const SfxItemSet& rInAttrs )
 :   SvxTabPage			( pParent, CUI_RES( RID_SVXPAGE_AREA ), rInAttrs ),
 
     aFlProp             ( this, CUI_RES( FL_PROP ) ),
@@ -663,7 +663,7 @@ SvxAreaTabPage::SvxAreaTabPage( Window* pParent, const SfxItemSet& rInAttrs )
     aMtrFldOffset       ( this, CUI_RES( MTR_FLD_OFFSET ) ),
 
     aCtlXRectPreview    ( this, CUI_RES( CTL_COLOR_PREVIEW ) ),
-    
+
     rOutAttrs           ( rInAttrs ),
     eRP                 ( RP_MM ),
 
@@ -820,7 +820,7 @@ SvxAreaTabPage::SvxAreaTabPage( Window* pParent, const SfxItemSet& rInAttrs )
 
 	aLbColor.SetAccessibleRelationMemberOf( &aFlProp );
 	aMtrFldOffset.SetAccessibleRelationLabeledBy(&aFlOffset);
-	aMtrFldOffset.SetAccessibleName(aFlOffset.GetText());	
+	aMtrFldOffset.SetAccessibleName(aFlOffset.GetText());
 }
 
 // -----------------------------------------------------------------------

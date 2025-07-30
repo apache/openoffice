@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -58,7 +58,7 @@ static const char * desktop_strings[] = { "none", "unknown", "GNOME", "KDE", "KD
 static SalInstance* tryInstance( const OUString& rModuleBase )
 {
     SalInstance* pInst = NULL;
-    
+
     OUStringBuffer aModName( 128 );
     aModName.appendAscii( SAL_DLLPREFIX"vclplug_" );
     aModName.append( rModuleBase );
@@ -76,7 +76,7 @@ static SalInstance* tryInstance( const OUString& rModuleBase )
         {
             pInst = aProc( aMod );
 #if OSL_DEBUG_LEVEL > 1
-            std::fprintf( stderr, "sal plugin %s produced instance %p\n", 
+            std::fprintf( stderr, "sal plugin %s produced instance %p\n",
                      OUStringToOString( aModule, RTL_TEXTENCODING_ASCII_US ).getStr(),
                      pInst );
 #endif
@@ -85,9 +85,9 @@ static SalInstance* tryInstance( const OUString& rModuleBase )
                 pCloseModule = aMod;
 
                 /*
-                 * Recent GTK+ versions load their modules with RTLD_LOCAL, so we can 
-                 * not access the 'gnome_accessibility_module_shutdown' anymore. 
-                 * So make sure libgtk+ & co are still mapped into memory when 
+                 * Recent GTK+ versions load their modules with RTLD_LOCAL, so we can
+                 * not access the 'gnome_accessibility_module_shutdown' anymore.
+                 * So make sure libgtk+ & co are still mapped into memory when
                  * atk-bridge's atexit handler gets called.
                  */
                 if( rModuleBase.equalsAscii("gtk") )
@@ -102,7 +102,7 @@ static SalInstance* tryInstance( const OUString& rModuleBase )
                 {
                     pCloseModule = NULL;
                 }
-                
+
                 GetSalData()->m_pPlugin = aMod;
             }
             else
@@ -122,7 +122,7 @@ static SalInstance* tryInstance( const OUString& rModuleBase )
     else
         std::fprintf( stderr, "could not load shared object %s\n",
                  OUStringToOString( aModule, RTL_TEXTENCODING_ASCII_US ).getStr() );
-#endif  
+#endif
 
     return pInst;
 }
@@ -137,7 +137,7 @@ static const rtl::OUString& get_desktop_environment()
         aModName.appendAscii( SAL_DLLPOSTFIX );
         aModName.appendAscii( SAL_DLLEXTENSION );
         OUString aModule = aModName.makeStringAndClear();
-    
+
         oslModule aMod = osl_loadModuleRelative(
             reinterpret_cast< oslGenericFunction >( &tryInstance ), aModule.pData,
             SAL_LOADMODULE_DEFAULT );
@@ -159,12 +159,12 @@ static SalInstance* autodetect_plugin()
     {
         "kde4", "kde", "gtk", "gen", 0
     };
-    
+
     static const char* pStandardFallbackList[] =
     {
         "gtk", "gen", 0
     };
-    
+
     static const char* pHeadlessFallbackList[] =
     {
         "svp", 0
@@ -173,7 +173,7 @@ static SalInstance* autodetect_plugin()
     const rtl::OUString& desktop( get_desktop_environment() );
     const char ** pList = pStandardFallbackList;
     int nListEntry = 0;
-    
+
     // no server at all: dummy plugin
     if ( desktop.equalsAscii( desktop_strings[DESKTOP_NONE] ) )
         pList = pHeadlessFallbackList;
@@ -186,12 +186,12 @@ static SalInstance* autodetect_plugin()
     }
     else if( desktop.equalsAscii( desktop_strings[DESKTOP_KDE4] ) )
         pList = pKDEFallbackList;
-    
+
     SalInstance* pInst = NULL;
     while( pList[nListEntry] && pInst == NULL )
     {
-        rtl::OUString aTry( rtl::OUString::createFromAscii( pList[nListEntry] ) ); 
-        pInst = tryInstance( aTry );        
+        rtl::OUString aTry( rtl::OUString::createFromAscii( pList[nListEntry] ) );
+        pInst = tryInstance( aTry );
         #if OSL_DEBUG_LEVEL > 1
         if( pInst )
             std::fprintf( stderr, "plugin autodetection: %s\n", pList[nListEntry] );
@@ -225,10 +225,10 @@ SalInstance *CreateSalInstance()
         pInst = check_headless_plugin();
     else
         pInst = tryInstance( OUString::createFromAscii( pUsePlugin ) );
-    
+
     if( ! pInst )
         pInst = autodetect_plugin();
-    
+
     // fallback to gen
     if( ! pInst )
         pInst = tryInstance( OUString( RTL_CONSTASCII_USTRINGPARAM( "gen" ) ) );
@@ -241,7 +241,7 @@ SalInstance *CreateSalInstance()
 
     // acquire SolarMutex
     pInst->AcquireYieldMutex( 1 );
-    
+
 	return pInst;
 }
 

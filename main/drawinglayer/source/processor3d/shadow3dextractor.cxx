@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -63,7 +63,7 @@ namespace drawinglayer
 					primitive2d::Primitive2DVector aNewSubList;
 					primitive2d::Primitive2DVector* pLastTargetSequence = mpPrimitive2DSequence;
 					mpPrimitive2DSequence = &aNewSubList;
-					
+
 					// activate convert
 					const bool bLastConvert(mbConvert);
 					mbConvert = true;
@@ -83,8 +83,8 @@ namespace drawinglayer
 					// create 2d shadow primitive with result. This also fetches all entries
                     // from aNewSubList, so there is no need to delete them
 					primitive2d::BasePrimitive2D* pNew = new primitive2d::ShadowPrimitive2D(
-                        rPrimitive.getShadowTransform(), 
-                        rPrimitive.getShadowColor(), 
+                        rPrimitive.getShadowTransform(),
+                        rPrimitive.getShadowColor(),
                         primitive2d::Primitive2DVectorToPrimitive2DSequence(aNewSubList));
 
 					if(basegfx::fTools::more(rPrimitive.getShadowTransparence(), 0.0))
@@ -92,9 +92,9 @@ namespace drawinglayer
 						// create simpleTransparencePrimitive, add created primitives
     					const primitive2d::Primitive2DReference xRef(pNew);
 						const primitive2d::Primitive2DSequence aNewTransPrimitiveVector(&xRef, 1);
-						
+
                         pNew = new primitive2d::UnifiedTransparencePrimitive2D(
-                            aNewTransPrimitiveVector, 
+                            aNewTransPrimitiveVector,
                             rPrimitive.getShadowTransparence());
                     }
 
@@ -124,13 +124,13 @@ namespace drawinglayer
 						maWorldToEye = getViewInformation3D().getOrientation() * getViewInformation3D().getObjectTransformation();
 						maEyeToView = getViewInformation3D().getDeviceToView() * getViewInformation3D().getProjection();
 					}
-					
+
 					// let break down
 					process(rPrimitive.getChildren());
 
 					// restore transformations
 					updateViewInformation(aLastViewInformation3D);
-					
+
 					if(mbShadowProjectionIsValid)
 					{
 						// update buffered WorldToEye and EyeToView
@@ -164,7 +164,7 @@ namespace drawinglayer
 							a2DHairline.transform(getObjectTransformation());
                             mpPrimitive2DSequence->push_back(
                                 new primitive2d::PolygonHairlinePrimitive2D(
-                                    a2DHairline, 
+                                    a2DHairline,
                                     maPrimitiveColor));
 						}
 					}
@@ -195,7 +195,7 @@ namespace drawinglayer
 							a2DFill.transform(getObjectTransformation());
                             mpPrimitive2DSequence->push_back(
                                 new primitive2d::PolyPolygonColorPrimitive2D(
-                                    a2DFill, 
+                                    a2DFill,
                                     maPrimitiveColor));
 						}
 					}
@@ -258,7 +258,7 @@ namespace drawinglayer
 
     	Shadow3DExtractingProcessor::~Shadow3DExtractingProcessor()
         {
-            OSL_ENSURE(0 == maPrimitive2DSequence.size(), 
+            OSL_ENSURE(0 == maPrimitive2DSequence.size(),
                 "OOps, someone used Shadow3DExtractingProcessor, but did not fetch the results (!)");
             for(sal_uInt32 a(0); a < maPrimitive2DSequence.size(); a++)
             {
@@ -307,8 +307,8 @@ namespace drawinglayer
 			return aRetval;
 		}
 
-        const primitive2d::Primitive2DSequence Shadow3DExtractingProcessor::getPrimitive2DSequence() const 
-        { 
+        const primitive2d::Primitive2DSequence Shadow3DExtractingProcessor::getPrimitive2DSequence() const
+        {
             return Primitive2DVectorToPrimitive2DSequence(maPrimitive2DSequence);
         }
 

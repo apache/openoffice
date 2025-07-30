@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,19 +7,19 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
- 
+
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_sw.hxx"
@@ -191,21 +191,21 @@ void SAL_CALL
 //
 
 //--------------------------------------------------------------------------------
-void SAL_CALL SwAccessibleTextFrame::selectAccessibleChild( sal_Int32 ) 
+void SAL_CALL SwAccessibleTextFrame::selectAccessibleChild( sal_Int32 )
 	throw ( lang::IndexOutOfBoundsException, uno::RuntimeException )
 {
     DBG_ASSERT( false, "<SwAccessibleTextFrame::selectAccessibleChild( sal_Int32 )> - missing implementation" );
 }
 
 //----------------------------------------------------------------------------------
-sal_Bool SAL_CALL SwAccessibleTextFrame::isAccessibleChildSelected( sal_Int32 nChildIndex ) 
+sal_Bool SAL_CALL SwAccessibleTextFrame::isAccessibleChildSelected( sal_Int32 nChildIndex )
 	throw (lang::IndexOutOfBoundsException, uno::RuntimeException )
-{	
+{
 	uno::Reference<XAccessible> xAcc = getAccessibleChild( nChildIndex );
 	uno::Reference<XAccessibleContext> xContext;
 	if( xAcc.is() )
 		xContext = xAcc->getAccessibleContext();
-	
+
 	if( xContext.is() )
 	{
 		if( xContext->getAccessibleRole() == AccessibleRole::PARAGRAPH )
@@ -213,33 +213,33 @@ sal_Bool SAL_CALL SwAccessibleTextFrame::isAccessibleChildSelected( sal_Int32 nC
 			uno::Reference< ::com::sun::star::accessibility::XAccessibleText >
 				xText(xAcc, uno::UNO_QUERY);
 			if( xText.is() )
-			{				
+			{
 				if( xText->getSelectionStart() >= 0 ) return sal_True;
-			}		
+			}
 		}
-	}	
-	
-	return sal_False;	
+	}
+
+	return sal_False;
 }
 
 //---------------------------------------------------------------------
-void SAL_CALL SwAccessibleTextFrame::clearAccessibleSelection(  ) 
+void SAL_CALL SwAccessibleTextFrame::clearAccessibleSelection(  )
 	throw ( uno::RuntimeException )
 {
     DBG_ASSERT( false, "<SwAccessibleTextFrame::clearAccessibleSelection(  )> - missing implementation" );
 }
 
 //-------------------------------------------------------------------------
-void SAL_CALL SwAccessibleTextFrame::selectAllAccessibleChildren(  ) 
+void SAL_CALL SwAccessibleTextFrame::selectAllAccessibleChildren(  )
 	throw ( uno::RuntimeException )
 {
     DBG_ASSERT( false, "<SwAccessibleTextFrame::selectAllAccessibleChildren(  )> - missing implementation" );
 }
 
 //----------------------------------------------------------------------------
-sal_Int32 SAL_CALL SwAccessibleTextFrame::getSelectedAccessibleChildCount() 
+sal_Int32 SAL_CALL SwAccessibleTextFrame::getSelectedAccessibleChildCount()
 	throw ( uno::RuntimeException )
-{	
+{
 	sal_Int32 nCount = 0;
 	sal_Int32 TotalCount = getAccessibleChildCount();
 	for( sal_Int32 i = 0; i < TotalCount; i++ )
@@ -249,7 +249,7 @@ sal_Int32 SAL_CALL SwAccessibleTextFrame::getSelectedAccessibleChildCount()
 }
 
 //--------------------------------------------------------------------------------------
-uno::Reference<XAccessible> SAL_CALL SwAccessibleTextFrame::getSelectedAccessibleChild( sal_Int32 nSelectedChildIndex ) 
+uno::Reference<XAccessible> SAL_CALL SwAccessibleTextFrame::getSelectedAccessibleChild( sal_Int32 nSelectedChildIndex )
 	throw ( lang::IndexOutOfBoundsException, uno::RuntimeException)
 {
 	if ( nSelectedChildIndex > getSelectedAccessibleChildCount() )
@@ -266,9 +266,9 @@ uno::Reference<XAccessible> SAL_CALL SwAccessibleTextFrame::getSelectedAccessibl
 }
 
 //----------------------------------------------------------------------------------
-void SAL_CALL SwAccessibleTextFrame::deselectAccessibleChild( sal_Int32 ) 
+void SAL_CALL SwAccessibleTextFrame::deselectAccessibleChild( sal_Int32 )
 	throw ( lang::IndexOutOfBoundsException, uno::RuntimeException )
-{	
+{
     DBG_ASSERT( false, "<SwAccessibleTextFrame::selectAllAccessibleChildren( sal_Int32 )> - missing implementation" );
 }
 
@@ -296,11 +296,11 @@ OUString SAL_CALL SwAccessibleTextFrame::getAccessibleDescription (void)
 
     CHECK_FOR_DEFUNC( XAccessibleContext )
 	/* MT: I guess msDesc is correct noadays?
-	OUString longDesc;	
+	OUString longDesc;
 	const SwFlyFrmFmt* pFlyFmt = GetShell()->GetDoc()->FindFlyByName( GetName(), 0);
 	if( pFlyFmt )
 	{
-		longDesc = OUString( pFlyFmt->GetDescription() );		
+		longDesc = OUString( pFlyFmt->GetDescription() );
 	}
 	if( longDesc.getLength() > 0 )
 		return GetName() + OUString(' ') + longDesc;

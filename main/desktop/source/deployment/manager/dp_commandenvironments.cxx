@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -117,7 +117,7 @@ void BaseCommandEnv::handle_(bool approve, bool abort,
             else if (abort) {
                 Reference< task::XInteractionAbort > xInteractionAbort(
                     pConts[ pos ], uno::UNO_QUERY );
-                if (xInteractionAbort.is()) {           
+                if (xInteractionAbort.is()) {
                     xInteractionAbort->select();
                     // don't query again for ongoing continuations:
                     abort = false;
@@ -161,8 +161,8 @@ void TmpRepositoryCommandEnv::handle(
 {
     uno::Any request( xRequest->getRequest() );
     OSL_ASSERT( request.getValueTypeClass() == uno::TypeClass_EXCEPTION );
-    
-    deployment::VersionException verExc;	
+
+    deployment::VersionException verExc;
 	deployment::LicenseException licExc;
     deployment::InstallException instExc;
 
@@ -172,7 +172,7 @@ void TmpRepositoryCommandEnv::handle(
     if ((request >>= verExc)
         || (request >>= licExc)
         || (request >>= instExc))
-    { 
+    {
         approve = true;
     }
 
@@ -195,7 +195,7 @@ void LicenseCommandEnv::handle(
 {
     uno::Any request( xRequest->getRequest() );
     OSL_ASSERT( request.getValueTypeClass() == uno::TypeClass_EXCEPTION );
-    
+
 
 	deployment::LicenseException licExc;
 
@@ -234,7 +234,7 @@ void NoLicenseCommandEnv::handle(
 {
     uno::Any request( xRequest->getRequest() );
     OSL_ASSERT( request.getValueTypeClass() == uno::TypeClass_EXCEPTION );
-    
+
 
 	deployment::LicenseException licExc;
 
@@ -263,7 +263,7 @@ void SilentCheckPrerequisitesCommandEnv::handle(
 {
     uno::Any request( xRequest->getRequest() );
     OSL_ASSERT( request.getValueTypeClass() == uno::TypeClass_EXCEPTION );
-    
+
 	deployment::LicenseException licExc;
     deployment::PlatformException platformExc;
     deployment::DependencyException depExc;
@@ -299,7 +299,7 @@ void SilentCheckPrerequisitesCommandEnv::handle(
 // {
 //     uno::Any request( xRequest->getRequest() );
 //     OSL_ASSERT( request.getValueTypeClass() == uno::TypeClass_EXCEPTION );
-    
+
 
 // 	deployment::LicenseException licExc;
 

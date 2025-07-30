@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -44,7 +44,7 @@ using namespace ::com::sun::star::uno;
 using namespace ::com::sun::star::lang;
 
 //---------------------------------------------
-// An impl class to hide implementation details 
+// An impl class to hide implementation details
 // from clients
 //---------------------------------------------
 
@@ -54,22 +54,22 @@ public:
 	CPreviewAdapterImpl(HINSTANCE instance);
 
 	virtual ~CPreviewAdapterImpl();
-	
+
 	virtual sal_Int32 SAL_CALL getTargetColorDepth();
-    
+
 	virtual sal_Int32 SAL_CALL getAvailableWidth();
-    
+
 	virtual sal_Int32 SAL_CALL getAvailableHeight();
-    
-	virtual void SAL_CALL setImage( sal_Int16 aImageFormat, const Any& aImage ) 
+
+	virtual void SAL_CALL setImage( sal_Int16 aImageFormat, const Any& aImage )
 		throw (IllegalArgumentException,RuntimeException);
 
     virtual sal_Bool SAL_CALL setShowState(sal_Bool bShowState);
-    
+
 	virtual sal_Bool SAL_CALL getShowState();
-	
+
 	virtual void SAL_CALL setParent(HWND parent);
-	
+
 	virtual HWND SAL_CALL getParent();
 
 	//-------------------------------------
@@ -77,12 +77,12 @@ public:
 	//-------------------------------------
 
 	virtual void SAL_CALL notifyParentShow(sal_Bool bShow);
-	
+
 	virtual void SAL_CALL notifyParentSizeChanged();
 
 	virtual void SAL_CALL notifyParentWindowPosChanged();
 
-protected:	
+protected:
 	virtual void SAL_CALL calcRightMargin();
 
 	virtual void SAL_CALL rearrangeLayout();
@@ -108,7 +108,7 @@ private:
 //
 //-----------------------------------------
 
-CPreviewAdapterImpl::CPreviewAdapterImpl(HINSTANCE instance) : 
+CPreviewAdapterImpl::CPreviewAdapterImpl(HINSTANCE instance) :
 	m_Instance(instance),
 	m_Preview(new PreviewBase()), // create dummy preview (NULL-Object pattern)
 	m_FileDialog(0),
@@ -155,7 +155,7 @@ sal_Int32 SAL_CALL CPreviewAdapterImpl::getAvailableHeight()
 //
 //-----------------------------------------
 
-void SAL_CALL CPreviewAdapterImpl::setImage( sal_Int16 aImageFormat, const Any& aImage ) 
+void SAL_CALL CPreviewAdapterImpl::setImage( sal_Int16 aImageFormat, const Any& aImage )
 	throw (IllegalArgumentException,RuntimeException)
 {
 	m_Preview->setImage(aImageFormat,aImage);
@@ -190,7 +190,7 @@ void SAL_CALL CPreviewAdapterImpl::setParent(HWND parent)
 	OSL_PRECOND(IsWindow(parent),"Invalid FileDialog handle");
 
 	m_FileDialog = parent;
-	calcRightMargin();	
+	calcRightMargin();
 }
 
 //-----------------------------------------
@@ -222,7 +222,7 @@ void SAL_CALL CPreviewAdapterImpl::calcRightMargin()
 	//    even if the size of the dialog changes
 
 	HWND flb = GetDlgItem(m_FileDialog,lst1);
-	
+
 	OSL_ENSURE(IsWindow(flb),"Filelistbox not found");
 
 	RECT rcFlb;
@@ -245,7 +245,7 @@ void SAL_CALL CPreviewAdapterImpl::notifyParentShow(sal_Bool)
 //-----------------------------------------
 //
 //-----------------------------------------
-	
+
 void SAL_CALL CPreviewAdapterImpl::notifyParentSizeChanged()
 {
 	rearrangeLayout();
@@ -266,7 +266,7 @@ void SAL_CALL CPreviewAdapterImpl::notifyParentWindowPosChanged()
 void SAL_CALL CPreviewAdapterImpl::rearrangeLayout()
 {
 	// try to get a handle to the filelistbox
-	// if there is no new-style filelistbox like 
+	// if there is no new-style filelistbox like
 	// in Win2000/XP there should be at least the
 	// old listbox, so we take this one
 	// lst1 - identifies the old-style filelistbox
@@ -276,25 +276,25 @@ void SAL_CALL CPreviewAdapterImpl::rearrangeLayout()
 
 	// under Windows NT 4.0 the size of the old
 	// filelistbox will be used as reference for
-	// sizing the new filelistbox, so we have 
+	// sizing the new filelistbox, so we have
 	// to change the size of it too
 	HWND flb_old = GetDlgItem(m_FileDialog,lst1);
 
 	RECT rcFlbNew;
 	GetWindowRect(flb_new,&rcFlbNew);
 
-	RECT rcFileDlg;	
+	RECT rcFileDlg;
 	GetWindowRect(m_FileDialog,&rcFileDlg);
 	rcFileDlg.right -= m_RightMargin;
 
 	// the available area for the filelistbox should be
-	// the left edge of the filelistbox and the right 
+	// the left edge of the filelistbox and the right
 	// edge of the OK button, we take this as reference
 	int height = rcFlbNew.bottom - rcFlbNew.top;
 	int width  = rcFileDlg.right - rcFlbNew.left;
-	
+
 	HWND prvwnd = m_Preview->getWindowHandle();
-	
+
 	// we use GetWindowLong to ask for the visibility
 	// of the preview window because IsWindowVisible
 	// only returns true the specified window including
@@ -312,45 +312,45 @@ void SAL_CALL CPreviewAdapterImpl::rearrangeLayout()
 	{
 		cx = width/2;
 
-		// resize the filelistbox to the half of the 
+		// resize the filelistbox to the half of the
 		// available space
 		bool bRet = SetWindowPos(flb_new,
 			NULL, 0, 0, cx, height,
 			SWP_NOMOVE | SWP_NOZORDER | SWP_NOACTIVATE);
-		
+
 		bRet = SetWindowPos(flb_old,
-			NULL, 0, 0, cx, height, 
+			NULL, 0, 0, cx, height,
 			SWP_NOMOVE | SWP_NOZORDER | SWP_NOACTIVATE);
 
 		// get the new dimensions of the filelistbox after
 		// resizing and take the right,top corner as starting
 		// point for the preview window
-		GetWindowRect(flb_new,&rcFlbNew);		
+		GetWindowRect(flb_new,&rcFlbNew);
 		POINT pt = { rcFlbNew.right, rcFlbNew.top };
 		ScreenToClient(m_FileDialog,&pt);
-		
+
 		// resize the preview window to fit within
 		// the available space and set the window
-		// to the top of the z-order else it will 
+		// to the top of the z-order else it will
 		// be invisible
 		SetWindowPos(prvwnd,
-			HWND_TOP, pt.x, pt.y, cx, height, SWP_NOACTIVATE);		
+			HWND_TOP, pt.x, pt.y, cx, height, SWP_NOACTIVATE);
 	}
 	else
 	{
-		// resize the filelistbox to the maximum available 
+		// resize the filelistbox to the maximum available
 		// space
 		cx = rcFileDlg.right - rcFlbNew.left;
-		
+
 		// resize the old filelistbox
 		SetWindowPos(flb_old,
-			NULL, 0, 0, cx, height, 
+			NULL, 0, 0, cx, height,
 			SWP_NOMOVE | SWP_NOZORDER | SWP_NOACTIVATE);
 
 		// resize the new filelistbox
 		SetWindowPos(flb_new,
 			NULL, 0, 0, cx, height,
-			SWP_NOMOVE | SWP_NOZORDER | SWP_NOACTIVATE );			
+			SWP_NOMOVE | SWP_NOZORDER | SWP_NOACTIVATE );
 	}
 }
 
@@ -361,18 +361,18 @@ void SAL_CALL CPreviewAdapterImpl::rearrangeLayout()
 void SAL_CALL CPreviewAdapterImpl::initializeActivePreview() throw(std::runtime_error)
 {
 	sal_Bool bShowState = m_Preview->getImaginaryShowState();
-			
+
 	sal_Int16 aImgFrmt;
 	Any aImg;
 	m_Preview->getImage(aImgFrmt,aImg);
 
 	HWND flb = findFileListbox();
-			
+
 	PreviewBase* prv = new CDIBPreview(
 		m_Instance, GetParent(flb), bShowState);
-	
-	m_Preview.reset(prv);		
-			
+
+	m_Preview.reset(prv);
+
 	m_Preview->setImage(aImgFrmt,aImg);
 }
 
@@ -380,17 +380,17 @@ void SAL_CALL CPreviewAdapterImpl::initializeActivePreview() throw(std::runtime_
 //
 //-----------------------------------------
 
-HWND SAL_CALL CPreviewAdapterImpl::findFileListbox() const 
+HWND SAL_CALL CPreviewAdapterImpl::findFileListbox() const
 {
 	// try to get a handle to the filelistbox
-	// if there is no new-style filelistbox like 
+	// if there is no new-style filelistbox like
 	// in Win2000/XP there should be at least the
 	// old listbox, so we take this one
 	// lst1 - identifies the old-style filelistbox
 	// lst2 - identifies the new-style filelistbox
 	// see dlgs.h
-	HWND flb = GetDlgItem(m_FileDialog,lst2);	
-	if (!IsWindow(flb))		
+	HWND flb = GetDlgItem(m_FileDialog,lst2);
+	if (!IsWindow(flb))
 		flb = GetDlgItem(m_FileDialog,lst1);
 
 	return flb;
@@ -415,7 +415,7 @@ public:
 
 protected:
 	virtual void SAL_CALL rearrangeLayout();
-	
+
 	bool isValidToolbarDimension() const;
 
 private:
@@ -448,26 +448,26 @@ void SAL_CALL CWin98PreviewAdapterImpl::notifyParentWindowPosChanged()
 {
 	try
 	{
-		// the reason for this condition is 
+		// the reason for this condition is
 		// Windows 98
 		// Under Windows 98 the message WM_SHOWWINDOW
-		// will be sent only the first time the 
+		// will be sent only the first time the
 		// GetOpenFileName function is called within
 		// the same process
 		// so we must use another message to initialize
 		// the preview window
 		if (IsWindow(m_FileDialog) && !m_PreviewActive)
 		{
-			initializeActivePreview();			
+			initializeActivePreview();
 			m_PreviewActive = sal_True;
 			rearrangeLayout();
 		}
-		
+
 		if (IsWindow(m_FileDialog) && !isValidToolbarDimension())
 		{
 			RECT rcStc1;
 			GetWindowRect(GetDlgItem(m_FileDialog,stc1),&rcStc1);
-	
+
 			RECT rcCmb2;
 			GetWindowRect(GetDlgItem(m_FileDialog,cmb2),&rcCmb2);
 
@@ -478,23 +478,23 @@ void SAL_CALL CWin98PreviewAdapterImpl::notifyParentWindowPosChanged()
 			// the stc1 static text is invisible at runtime
 			// but will be used as reference for the position
 			// and dimension of the toolbar
-			if (rcStc1.left >= rcCmb2.right)			
+			if (rcStc1.left >= rcCmb2.right)
 			{
 				// important: save the upper left corner in
-				// client coordinates 
+				// client coordinates
 				POINT pt = {rcStc1.left,rcStc1.top};
 				ScreenToClient(m_FileDialog,&pt);
 
 				m_ToolbarPosX   = pt.x;
 				m_ToolbarPosY   = pt.y;
 				m_ToolbarWidth  = rcStc1.right - rcStc1.left;
-				m_ToolbarHeight = rcStc1.bottom - rcStc1.top;				
+				m_ToolbarHeight = rcStc1.bottom - rcStc1.top;
 			}
 		}
 	}
 	catch(std::runtime_error&)
-	{		
-	}	
+	{
+	}
 }
 
 //--------------------------------------------
@@ -504,11 +504,11 @@ void SAL_CALL CWin98PreviewAdapterImpl::notifyParentWindowPosChanged()
 void SAL_CALL CWin98PreviewAdapterImpl::rearrangeLayout()
 {
 	CPreviewAdapterImpl::rearrangeLayout();
-		
+
 	// fix the position of the upper toolbar
 	// because the FileDialog moves all windows
 	// that are to the right of the FileListbox
-	// so if we have changed the size of the 
+	// so if we have changed the size of the
 	// FileListbox we would run into trouble else
 	if (isValidToolbarDimension())
 	{
@@ -516,12 +516,12 @@ void SAL_CALL CWin98PreviewAdapterImpl::rearrangeLayout()
 			m_FileDialog,NULL,TEXT("ToolbarWindow32"),NULL);
 
 		SetWindowPos(hwndTlb,
-			HWND_TOP, 
+			HWND_TOP,
 			m_ToolbarPosX,
 			m_ToolbarPosY,
 			m_ToolbarWidth,
 			m_ToolbarHeight,
-			SWP_NOACTIVATE);			
+			SWP_NOACTIVATE);
 	}
 }
 
@@ -531,9 +531,9 @@ void SAL_CALL CWin98PreviewAdapterImpl::rearrangeLayout()
 
 bool CWin98PreviewAdapterImpl::isValidToolbarDimension() const
 {
-	return (m_ToolbarPosX   > 0 && 
-			m_ToolbarPosY   > 0 && 
-			m_ToolbarWidth  > 0 && 
+	return (m_ToolbarPosX   > 0 &&
+			m_ToolbarPosY   > 0 &&
+			m_ToolbarWidth  > 0 &&
 			m_ToolbarHeight > 0);
 }
 
@@ -543,7 +543,7 @@ bool CWin98PreviewAdapterImpl::isValidToolbarDimension() const
 //--------------------------------------------
 // Implementation for Windows 95/NT/ME/2000/XP
 // because:
-// 
+//
 //--------------------------------------------
 
 class CWin95NTPreviewAdapterImpl : public CPreviewAdapterImpl
@@ -572,14 +572,14 @@ void SAL_CALL CWin95NTPreviewAdapterImpl::notifyParentShow(sal_Bool bShow)
 	try
 	{
 		if (bShow)
-		{			
-			initializeActivePreview();			
+		{
+			initializeActivePreview();
 			rearrangeLayout();
 		}
 	}
 	catch(std::runtime_error&)
-	{		
-	}	
+	{
+	}
 }
 
 
@@ -590,7 +590,7 @@ void SAL_CALL CWin95NTPreviewAdapterImpl::notifyParentShow(sal_Bool bShow)
 // ctor
 //-------------------------------
 
-CPreviewAdapter::CPreviewAdapter(HINSTANCE instance)	
+CPreviewAdapter::CPreviewAdapter(HINSTANCE instance)
 {
 	if (!IsWindows98())
 		m_pImpl.reset(new CWin95NTPreviewAdapterImpl(instance));
@@ -648,7 +648,7 @@ sal_Int32 SAL_CALL CPreviewAdapter::getAvailableHeight()
 //
 //-------------------------------
 
-void SAL_CALL CPreviewAdapter::setImage( sal_Int16 aImageFormat, const Any& aImage ) 
+void SAL_CALL CPreviewAdapter::setImage( sal_Int16 aImageFormat, const Any& aImage )
 	throw (IllegalArgumentException, RuntimeException)
 {
 	m_pImpl->setImage(aImageFormat,aImage);
@@ -660,7 +660,7 @@ void SAL_CALL CPreviewAdapter::setImage( sal_Int16 aImageFormat, const Any& aIma
 
 sal_Bool SAL_CALL CPreviewAdapter::setShowState( sal_Bool bShowState )
 {
-	return m_pImpl->setShowState(bShowState);		
+	return m_pImpl->setShowState(bShowState);
 }
 
 //-------------------------------
@@ -693,7 +693,7 @@ void SAL_CALL CPreviewAdapter::notifyParentShow(bool bShow)
 //-------------------------------
 //
 //-------------------------------
-	
+
 void SAL_CALL CPreviewAdapter::notifyParentSizeChanged()
 {
 	m_pImpl->notifyParentSizeChanged();

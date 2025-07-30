@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -71,9 +71,9 @@ EditUndoManager::EditUndoManager(sal_uInt16 nMaxUndoActionCount )
 {
 }
 
-void EditUndoManager::SetImpEditEngine(ImpEditEngine* pNew) 
-{ 
-    mpImpEE = pNew; 
+void EditUndoManager::SetImpEditEngine(ImpEditEngine* pNew)
+{
+    mpImpEE = pNew;
 }
 
 sal_Bool __EXPORT EditUndoManager::Undo()
@@ -293,7 +293,7 @@ void __EXPORT EditUndoConnectParas::Undo()
 	if ( GetImpEditEngine()->IsCallParaInsertedOrDeleted() )
 		GetImpEditEngine()->GetEditEnginePtr()->ParagraphInserted( nNode+1 );
 
-	if ( GetImpEditEngine()->GetStyleSheetPool() ) 
+	if ( GetImpEditEngine()->GetStyleSheetPool() )
 	{
 		if ( aLeftStyleName.Len() )
 			GetImpEditEngine()->SetStyleSheet( nNode, (SfxStyleSheet*)GetImpEditEngine()->GetStyleSheetPool()->Find( aLeftStyleName, eLeftStyleFamily ) );
@@ -538,7 +538,7 @@ void __EXPORT EditUndoSetStyleSheet::Redo()
 // EditUndoSetParaAttribs
 // ------------------------------------------------------------------------
 EditUndoSetParaAttribs::EditUndoSetParaAttribs( ImpEditEngine* _pImpEE, sal_uInt32 nP, const SfxItemSet& rPrevItems, const SfxItemSet& rNewItems )
-	: EditUndo( EDITUNDO_PARAATTRIBS, _pImpEE ), 
+	: EditUndo( EDITUNDO_PARAATTRIBS, _pImpEE ),
 	  aPrevItems( rPrevItems ),
 	  aNewItems(rNewItems )
 {
@@ -567,7 +567,7 @@ void __EXPORT EditUndoSetParaAttribs::Redo()
 // EditUndoSetAttribs
 // ------------------------------------------------------------------------
 EditUndoSetAttribs::EditUndoSetAttribs( ImpEditEngine* _pImpEE, const ESelection& rESel, const SfxItemSet& rNewItems )
-	: EditUndo( EDITUNDO_ATTRIBS, _pImpEE ), 
+	: EditUndo( EDITUNDO_ATTRIBS, _pImpEE ),
 	  aESel( rESel ),
 	  aNewAttribs( rNewItems )
 {
@@ -736,7 +736,7 @@ EditUndoMarkSelection::~EditUndoMarkSelection()
 void __EXPORT EditUndoMarkSelection::Undo()
 {
 	DBG_ASSERT( GetImpEditEngine()->GetActiveView(), "Undo/Redo: Keine Active View!" );
-	if ( GetImpEditEngine()->GetActiveView() ) 
+	if ( GetImpEditEngine()->GetActiveView() )
     {
         if ( GetImpEditEngine()->IsFormatted() )
 		    GetImpEditEngine()->GetActiveView()->SetSelection( aSelection );

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -67,7 +67,7 @@ sal_Bool AstModule::dump(RegistryKey& rKey)
 		RTTypeClass typeClass = RT_TYPE_MODULE;
 		if ( getNodeType() == NT_constants )
 			typeClass = RT_TYPE_CONSTANTS;
-		
+
 		typereg::Writer aBlob(
             m_bPublished ? TYPEREG_VERSION_1 : TYPEREG_VERSION_0,
             getDocumentation(), emptyStr, typeClass,
@@ -95,14 +95,14 @@ sal_Bool AstModule::dump(RegistryKey& rKey)
         sal_uInt32 aBlobSize;
 		void const * pBlob = aBlob.getBlob(&aBlobSize);
 
-		if (localKey.setValue(emptyStr, RG_VALUETYPE_BINARY, 
+		if (localKey.setValue(emptyStr, RG_VALUETYPE_BINARY,
 						  	  (RegValue)pBlob, aBlobSize))
 		{
 			fprintf(stderr, "%s: warning, could	not set value of key \"%s\" in %s\n",
 				    idlc()->getOptions()->getProgramName().getStr(),
 					getFullName().getStr(), OUStringToOString(localKey.getRegistryName(), RTL_TEXTENCODING_UTF8).getStr());
 			return sal_False;
-		}				
+		}
 	} else
 	{
 		RTTypeClass typeClass = RT_TYPE_MODULE;
@@ -120,14 +120,14 @@ sal_Bool AstModule::dump(RegistryKey& rKey)
 
 		if ( getNodeType() != NT_root )
 		{
-			if (localKey.setValue(emptyStr, RG_VALUETYPE_BINARY, 
+			if (localKey.setValue(emptyStr, RG_VALUETYPE_BINARY,
 							  	  (RegValue)pBlob, aBlobSize))
 			{
 				fprintf(stderr, "%s: warning, could	not set value of key \"%s\" in %s\n",
 					    idlc()->getOptions()->getProgramName().getStr(),
 						getFullName().getStr(), OUStringToOString(localKey.getRegistryName(), RTL_TEXTENCODING_UTF8).getStr());
 				return sal_False;
-			}				
+			}
 		}
 	}
 	if ( getNodeType() == NT_root )
@@ -135,7 +135,7 @@ sal_Bool AstModule::dump(RegistryKey& rKey)
 		localKey.releaseKey();
 	}
 	return AstDeclaration::dump(rKey);
-}	
+}
 
 sal_Bool AstTypeDef::dump(RegistryKey& rKey)
 {
@@ -170,7 +170,7 @@ sal_Bool AstTypeDef::dump(RegistryKey& rKey)
 	}
 
 	return sal_True;
-}	
+}
 
 sal_Bool AstService::dump(RegistryKey& rKey)
 {
@@ -358,7 +358,7 @@ sal_Bool AstAttribute::dumpBlob(
 
 	if (isReadonly())
 	{
-		accessMode |= RT_ACCESS_READONLY;		
+		accessMode |= RT_ACCESS_READONLY;
 	} else
 	{
 		accessMode |= RT_ACCESS_READWRITE;
@@ -409,7 +409,7 @@ sal_Bool AstAttribute::dumpBlob(
         methodIndex);
 
 	return sal_True;
-}	
+}
 
 void AstAttribute::dumpExceptions(
     typereg::Writer & writer, rtl::OUString const & documentation,
@@ -445,6 +445,6 @@ const sal_Char*	AstSequence::getRelativName() const
 		AstDeclaration const * pType = resolveTypedefs( m_pMemberType );
 		*m_pRelativName += pType->getRelativName();
 	}
-	
+
 	return m_pRelativName->getStr();
-}	
+}

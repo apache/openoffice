@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -47,12 +47,12 @@ using namespace std;
 
 
 CSubmissionPost::CSubmissionPost(const rtl::OUString& aURL, const CSS::uno::Reference< CSS::xml::dom::XDocumentFragment >& aFragment)
-    : CSubmission(aURL, aFragment) 
+    : CSubmission(aURL, aFragment)
 {
 }
 
 CSubmission::SubmissionResult CSubmissionPost::submit(const CSS::uno::Reference< CSS::task::XInteractionHandler >& aInteractionHandler)
-{    
+{
     // PUT always uses application/xml
     CSS::uno::Reference< XCommandEnvironment > aEnvironment;
     auto_ptr< CSerialization > apSerialization(createSerialization(aInteractionHandler,aEnvironment));
@@ -61,7 +61,7 @@ CSubmission::SubmissionResult CSubmissionPost::submit(const CSS::uno::Reference<
         ucbhelper::Content aContent(m_aURLObj.GetMainURL(INetURLObject::NO_DECODE), aEnvironment);
 
         // use post command
-            
+
         OUString aCommandName = OUString::createFromAscii("post");
         PostCommandArgument2 aPostArgument;
         aPostArgument.Source = apSerialization->getInputStream();
@@ -83,7 +83,7 @@ CSubmission::SubmissionResult CSubmissionPost::submit(const CSS::uno::Reference<
         // xOut->closeOutput();
 
         try {
-            // m_aResultStream = CSS::uno::Reference< XInputStream >(aSink, UNO_QUERY_THROW); 
+            // m_aResultStream = CSS::uno::Reference< XInputStream >(aSink, UNO_QUERY_THROW);
             m_aResultStream = aSink->getInputStream();
         } catch (Exception&) {
             OSL_ENSURE(sal_False, "Cannot open reply stream from content");
@@ -94,7 +94,7 @@ CSubmission::SubmissionResult CSubmissionPost::submit(const CSS::uno::Reference<
         OSL_ENSURE(sal_False, "Exception during UCB operation.");
         return UNKNOWN_ERROR;
     }
-    
+
 
     return SUCCESS;
 }

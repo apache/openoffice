@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -64,11 +64,11 @@ TYPEINIT1(XMLIndexTableSourceContext, XMLIndexSourceBaseContext);
 
 
 XMLIndexTableSourceContext::XMLIndexTableSourceContext(
-	SvXMLImport& rImport, 
+	SvXMLImport& rImport,
 	sal_uInt16 nPrfx,
 	const OUString& rLocalName,
 	Reference<XPropertySet> & rPropSet) :
-		XMLIndexSourceBaseContext(rImport, nPrfx, rLocalName, 
+		XMLIndexSourceBaseContext(rImport, nPrfx, rLocalName,
 								  rPropSet, sal_False),
 		sCreateFromLabels(RTL_CONSTASCII_USTRINGPARAM(sAPI_CreateFromLabels)),
 		sLabelCategory(RTL_CONSTASCII_USTRINGPARAM(sAPI_LabelCategory)),
@@ -85,7 +85,7 @@ XMLIndexTableSourceContext::~XMLIndexTableSourceContext()
 
 static SvXMLEnumMapEntry __READONLY_DATA lcl_aReferenceTypeTokenMap[] =
 {
-	
+
 	{ XML_TEXT,			        ReferenceFieldPart::TEXT },
 	{ XML_CATEGORY_AND_VALUE,	ReferenceFieldPart::CATEGORY_AND_NUMBER },
 	{ XML_CAPTION, 		        ReferenceFieldPart::ONLY_CAPTION },
@@ -98,7 +98,7 @@ static SvXMLEnumMapEntry __READONLY_DATA lcl_aReferenceTypeTokenMap[] =
 };
 
 void XMLIndexTableSourceContext::ProcessAttribute(
-	enum IndexSourceParamEnum eParam, 
+	enum IndexSourceParamEnum eParam,
 	const OUString& rValue)
 {
 	sal_Bool bTmp;
@@ -120,7 +120,7 @@ void XMLIndexTableSourceContext::ProcessAttribute(
 		case XML_TOK_INDEXSOURCE_SEQUENCE_FORMAT:
 		{
  			sal_uInt16 nTmp;
- 		    if (SvXMLUnitConverter::convertEnum(nTmp, rValue, 
+ 		    if (SvXMLUnitConverter::convertEnum(nTmp, rValue,
  												lcl_aReferenceTypeTokenMap))
 			{
  				nDisplayFormat = nTmp;
@@ -159,7 +159,7 @@ void XMLIndexTableSourceContext::EndElement()
 }
 
 
-SvXMLImportContext* XMLIndexTableSourceContext::CreateChildContext( 
+SvXMLImportContext* XMLIndexTableSourceContext::CreateChildContext(
 	sal_uInt16 nPrefix,
 	const OUString& rLocalName,
 	const Reference<XAttributeList> & xAttrList )
@@ -167,16 +167,16 @@ SvXMLImportContext* XMLIndexTableSourceContext::CreateChildContext(
 	if ( ( XML_NAMESPACE_TEXT == nPrefix ) &&
 		 ( IsXMLToken( rLocalName, XML_TABLE_INDEX_ENTRY_TEMPLATE ) ) )
 	{
-		return new XMLIndexTemplateContext(GetImport(), rIndexPropertySet, 
+		return new XMLIndexTemplateContext(GetImport(), rIndexPropertySet,
 										   nPrefix, rLocalName,
 										   aLevelNameTableMap,
 										   XML_TOKEN_INVALID, // no outline-level attr
 										   aLevelStylePropNameTableMap,
 										   aAllowedTokenTypesTable);
 	}
-	else 
+	else
 	{
-		return XMLIndexSourceBaseContext::CreateChildContext(nPrefix, 
+		return XMLIndexSourceBaseContext::CreateChildContext(nPrefix,
 															 rLocalName,
 															 xAttrList);
 	}

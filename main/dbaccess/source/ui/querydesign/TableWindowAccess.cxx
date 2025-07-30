@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -46,7 +46,7 @@
 #endif
 #ifndef _COM_SUN_STAR_ACCESSIBILITY_ACCESSIBLEROLE_HPP_
 #include <com/sun/star/accessibility/AccessibleRole.hpp>
-#endif												 
+#endif
 #ifndef _COM_SUN_STAR_ACCESSIBILITY_ACCESSIBLERELATIONTYPE_HPP_
 #include <com/sun/star/accessibility/AccessibleRelationType.hpp>
 #endif
@@ -74,7 +74,7 @@ namespace dbaui
 	using namespace ::com::sun::star;
 
 	OTableWindowAccess::OTableWindowAccess(OTableWindow* _pTable)
-		:VCLXAccessibleComponent(_pTable->GetComponentInterface().is() ? _pTable->GetWindowPeer() : NULL) 
+		:VCLXAccessibleComponent(_pTable->GetComponentInterface().is() ? _pTable->GetWindowPeer() : NULL)
 		,m_pTable(_pTable)
 	{
 	}
@@ -229,7 +229,7 @@ namespace dbaui
 			}
 		}
 		return xReturn;
-	}	
+	}
 	// -----------------------------------------------------------------------------
 
 	sal_Int32 SAL_CALL OTableWindowAccess::getRelationCount(  ) throw (RuntimeException)
@@ -259,7 +259,7 @@ namespace dbaui
 	sal_Bool SAL_CALL OTableWindowAccess::containsRelation( sal_Int16 aRelationType ) throw (RuntimeException)
 	{
 		::osl::MutexGuard aGuard( m_aMutex  );
-		return		AccessibleRelationType::CONTROLLER_FOR == aRelationType 
+		return		AccessibleRelationType::CONTROLLER_FOR == aRelationType
 				&&	m_pTable && m_pTable->getTableView()->ExistsAConn(m_pTable);
 	}
 	// -----------------------------------------------------------------------------
@@ -270,14 +270,14 @@ namespace dbaui
 		{
 			OJoinTableView* pView = m_pTable->getTableView();
 			const ::std::vector<OTableConnection*>* pConnectionList = pView->getTableConnections();
-			
+
 			::std::vector<OTableConnection*>::const_iterator aIter = pView->getTableConnections(m_pTable);
             ::std::vector<OTableConnection*>::const_iterator aEnd = pConnectionList->end();
 			::std::vector< Reference<XInterface> > aRelations;
 			aRelations.reserve(5); // just guessing
 			for (; aIter != aEnd ; ++aIter )
 				aRelations.push_back(getParentChild(aIter - pConnectionList->begin()));
-			
+
 			Reference<XInterface> *pRelations = aRelations.empty() ? 0 : &aRelations[0];
 			Sequence< Reference<XInterface> > aSeq(pRelations, aRelations.size());
 			return AccessibleRelation(AccessibleRelationType::CONTROLLER_FOR,aSeq);

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 #include "precompiled_sd.hxx"
@@ -36,7 +36,7 @@ PreviewValueSet::PreviewValueSet (::Window* pParent)
       mnMaxColumnCount(-1)
 {
 	SetStyle (
-        GetStyle() 
+        GetStyle()
         & ~(WB_ITEMBORDER)// | WB_MENUSTYLEVALUESET)
         //        | WB_FLATVALUESET);
         );
@@ -158,7 +158,7 @@ sal_Int32 PreviewValueSet::GetPreferredWidth (sal_Int32 nHeight)
     {
         int nColumnCount = (GetItemCount()+nRowCount-1) / nRowCount;
         if (nColumnCount > 0)
-            nPreferredWidth = (maPreviewSize.Width() + 2*mnBorderWidth) 
+            nPreferredWidth = (maPreviewSize.Width() + 2*mnBorderWidth)
                 * nColumnCount;
     }
 
@@ -172,7 +172,7 @@ sal_Int32 PreviewValueSet::GetPreferredHeight (sal_Int32 nWidth)
 {
     int nRowCount (CalculateRowCount(CalculateColumnCount(nWidth)));
     int nItemHeight (maPreviewSize.Height());
-    
+
     return nRowCount * (nItemHeight + 2*mnBorderHeight);
 }
 

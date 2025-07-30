@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -40,7 +40,7 @@ SalVirtualDevice* AquaSalInstance::CreateVirtualDevice( SalGraphics* pGraphics,
 {
     // #i92075# can be called first in a thread
     SalData::ensureThreadAutoreleasePool();
-    
+
 	return new AquaSalVirtualDevice( static_cast< AquaSalGraphics* >( pGraphics ), nDX, nDY, nBitCount, pData );
 }
 
@@ -87,7 +87,7 @@ AquaSalVirtualDevice::AquaSalVirtualDevice( AquaSalGraphics* pGraphic, long nDX,
 
         if( nDX && nDY )
             SetSize( nDX, nDY );
-        
+
         // NOTE: if SetSize does not succeed, we just ignore the nDX and nDY
 	}
 }
@@ -208,7 +208,7 @@ sal_Bool AquaSalVirtualDevice::SetSize( long nDX, long nDY )
             {
                 NSGraphicsContext* pNSContext = [NSGraphicsContext graphicsContextWithWindow: pNSWindow];
                 if( pNSContext )
-                    xCGContext = reinterpret_cast<CGContextRef>([pNSContext graphicsPort]);                
+                    xCGContext = reinterpret_cast<CGContextRef>([pNSContext graphicsPort]);
             }
             else
             {
@@ -217,7 +217,7 @@ sal_Bool AquaSalVirtualDevice::SetSize( long nDX, long nDY )
                 const CGColorSpaceRef aCGColorSpace = GetSalData()->mxRGBSpace;
                 const CGBitmapInfo aCGBmpInfo = kCGImageAlphaNoneSkipFirst;
                 const int nBytesPerRow = (mnBitmapDepth * nDX) / 8;
-                
+
                 void* pRawData = rtl_allocateMemory( nBytesPerRow * nDY );
                 mxBitmapContext = ::CGBitmapContextCreate( pRawData, nDX, nDY,
                                                            8, nBytesPerRow, aCGColorSpace, aCGBmpInfo );
@@ -227,7 +227,7 @@ sal_Bool AquaSalVirtualDevice::SetSize( long nDX, long nDY )
 	}
 
 	DBG_ASSERT( xCGContext, "no context" );
-    
+
 	const CGSize aNewSize = CGSizeMake( nDX, nDY);
 	mxLayer = CGLayerCreateWithContext( xCGContext, aNewSize, NULL );
 

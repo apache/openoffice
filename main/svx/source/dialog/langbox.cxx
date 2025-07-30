@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -294,7 +294,7 @@ void SvxLanguageBox::SetLanguageList( sal_Int16 nLangList,
 				 nLangType != LANGUAGE_SYSTEM &&
 			     nLangType != LANGUAGE_NONE &&
                  (nLangType < LANGUAGE_USER1 || nLangType > LANGUAGE_USER9) &&
-                 (MsLangId::getSubLanguage( nLangType) != 0 || 
+                 (MsLangId::getSubLanguage( nLangType) != 0 ||
                   (nLangList & LANG_LIST_ALSO_PRIMARY_ONLY)) &&
                  ((nLangList & LANG_LIST_ALL) != 0 ||
                   ((nLangList & LANG_LIST_WESTERN) != 0 &&
@@ -340,8 +340,8 @@ sal_uInt16 SvxLanguageBox::InsertLanguage( const LanguageType nLangType, sal_uIn
 sal_uInt16 SvxLanguageBox::ImplInsertLanguage( const LanguageType nLangType, sal_uInt16 nPos, sal_Int16 nType )
 {
     LanguageType nLang = MsLangId::getReplacementForObsoleteLanguage( nLangType);
-    // For obsolete and to be replaced languages check whether an entry of the 
-    // replacement already exists and if so don't add an entry with identical 
+    // For obsolete and to be replaced languages check whether an entry of the
+    // replacement already exists and if so don't add an entry with identical
     // string as would be returned by SvtLanguageTable::GetString().
     if (nLang != nLangType)
     {
@@ -400,8 +400,8 @@ sal_uInt16 SvxLanguageBox::InsertLanguage( const LanguageType nLangType,
         sal_Bool bCheckEntry, sal_uInt16 nPos )
 {
     LanguageType nLang = MsLangId::getReplacementForObsoleteLanguage( nLangType);
-    // For obsolete and to be replaced languages check whether an entry of the 
-    // replacement already exists and if so don't add an entry with identical 
+    // For obsolete and to be replaced languages check whether an entry of the
+    // replacement already exists and if so don't add an entry with identical
     // string as would be returned by SvtLanguageTable::GetString().
     if (nLang != nLangType)
     {
@@ -446,7 +446,7 @@ LanguageType SvxLanguageBox::GetSelectLanguage() const
 
 void SvxLanguageBox::SelectLanguage( const LanguageType eLangType, sal_Bool bSelect )
 {
-    // If the core uses a LangID of an imported MS document and wants to select 
+    // If the core uses a LangID of an imported MS document and wants to select
     // a language that is replaced, we need to select the replacement instead.
     LanguageType nLang = MsLangId::getReplacementForObsoleteLanguage( eLangType);
 

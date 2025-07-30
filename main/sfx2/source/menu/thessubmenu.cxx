@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -82,8 +82,8 @@ SfxThesSubMenuControl::~SfxThesSubMenuControl()
 	Ist die Funktionalit"at disabled, wird der entsprechende
 	Menueeintrag im Parentmenu disabled, andernfalls wird er enabled.
  */
-void SfxThesSubMenuControl::StateChanged( 
-    sal_uInt16 /*nSID*/, 
+void SfxThesSubMenuControl::StateChanged(
+    sal_uInt16 /*nSID*/,
     SfxItemState eState,
 	const SfxPoolItem* /*pState*/ )
 {
@@ -113,17 +113,17 @@ PopupMenu* SfxThesSubMenuControl::GetPopup() const
 
 ////////////////////////////////////////////////////////////
 
-OUString SfxThesSubMenuHelper::GetText( 
-    const String &rLookUpString, 
+OUString SfxThesSubMenuHelper::GetText(
+    const String &rLookUpString,
     xub_StrLen nDelimPos )
 {
     return OUString( rLookUpString.Copy( 0, nDelimPos ) );
 }
 
-    
-void SfxThesSubMenuHelper::GetLocale( 
-    lang::Locale /*out */ &rLocale, 
-    const String &rLookUpString, 
+
+void SfxThesSubMenuHelper::GetLocale(
+    lang::Locale /*out */ &rLocale,
+    const String &rLookUpString,
     xub_StrLen nDelimPos  )
 {
     String aIsoLang( rLookUpString.Copy( nDelimPos + 1) );
@@ -136,7 +136,7 @@ void SfxThesSubMenuHelper::GetLocale(
     }
 }
 
-    
+
 SfxThesSubMenuHelper::SfxThesSubMenuHelper()
 {
     try
@@ -147,29 +147,29 @@ SfxThesSubMenuHelper::SfxThesSubMenuHelper()
                     "com.sun.star.linguistic2.LinguServiceManager" ))), uno::UNO_QUERY_THROW );
         m_xThesarus = m_xLngMgr->getThesaurus();
     }
-    catch (uno::Exception &e)    
+    catch (uno::Exception &e)
     {
         (void) e;
         DBG_ASSERT( 0, "failed to get thesaurus" );
-    }    
+    }
 }
 
-    
+
 SfxThesSubMenuHelper::~SfxThesSubMenuHelper()
 {
-}    
+}
 
 
 bool SfxThesSubMenuHelper::IsSupportedLocale( const lang::Locale & rLocale ) const
 {
     return m_xThesarus.is() && m_xThesarus->hasLocale( rLocale );
 }
-    
 
-bool SfxThesSubMenuHelper::GetMeanings( 
-    std::vector< OUString > & rSynonyms, 
+
+bool SfxThesSubMenuHelper::GetMeanings(
+    std::vector< OUString > & rSynonyms,
     const OUString & rWord,
-    const lang::Locale & rLocale, 
+    const lang::Locale & rLocale,
     sal_Int16 nMaxSynonms )
 {
     bool bHasMoreSynonyms = false;
@@ -179,11 +179,11 @@ bool SfxThesSubMenuHelper::GetMeanings(
         try
         {
             // get all meannings
-            const uno::Sequence< uno::Reference< linguistic2::XMeaning > > aMeaningSeq( 
+            const uno::Sequence< uno::Reference< linguistic2::XMeaning > > aMeaningSeq(
                     m_xThesarus->queryMeanings( rWord, rLocale, uno::Sequence< beans::PropertyValue >() ));
             const uno::Reference< linguistic2::XMeaning > *pxMeaning = aMeaningSeq.getConstArray();
             const sal_Int32 nMeanings = aMeaningSeq.getLength();
-        
+
             // iterate over all meanings until nMaxSynonms are found or all meanings are processed
             sal_Int32 nCount = 0;
             sal_Int32 i = 0;
@@ -200,18 +200,18 @@ bool SfxThesSubMenuHelper::GetMeanings(
                 }
                 bHasMoreSynonyms = k < nSynonyms;    // any synonym from this meaning skipped?
             }
-            
+
             bHasMoreSynonyms |= i < nMeanings;   // any meaning skipped?
         }
         catch (uno::Exception &e)
         {
             (void) e;
             DBG_ASSERT( 0, "failed to get synonyms" );
-        }    
+        }
     }
     return bHasMoreSynonyms;
 }
-    
+
 
 String SfxThesSubMenuHelper::GetThesImplName( const lang::Locale &rLocale ) const
 {
@@ -225,8 +225,8 @@ String SfxThesSubMenuHelper::GetThesImplName( const lang::Locale &rLocale ) cons
         DBG_ASSERT( aServiceNames.getLength() <= 1, "more than one thesaurus found. Should not be possible" );
         if (aServiceNames.getLength() == 1)
             aRes = aServiceNames[0];
-    }    
+    }
     return aRes;
-}    
+}
 
 ////////////////////////////////////////////////////////////

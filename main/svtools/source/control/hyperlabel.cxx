@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -69,7 +69,7 @@ namespace svt
         sal_Bool            bInteractive;
         Size                m_aMinSize;
         sal_Bool            m_bHyperMode;
-        
+
 		HyperLabelImpl();
 	};
 
@@ -84,7 +84,7 @@ namespace svt
 	{
 		implInit();
 	}
-    
+
     HyperLabel::HyperLabel( Window* _pParent, WinBits _nWinStyle )
 		:FixedText( _pParent, _nWinStyle )
 		,m_pImpl( new HyperLabelImpl )
@@ -96,7 +96,7 @@ namespace svt
 	sal_Int32 HyperLabel::GetLogicWidth()
 	{
 		Size rLogicLocSize = PixelToLogic( m_pImpl->m_aMinSize, MAP_APPFONT );
-		return rLogicLocSize.Width();	
+		return rLogicLocSize.Width();
 	}
 
 
@@ -105,7 +105,7 @@ namespace svt
         m_pImpl->m_aMinSize = FixedText::CalcMinimumSize( nMaxWidth );
         // the MinimumSize is used to size the FocusRectangle
         // and for the MouseMove method
-		m_pImpl->m_aMinSize.Height() += 2; 
+		m_pImpl->m_aMinSize.Height() += 2;
         m_pImpl->m_aMinSize.Width() += 1;
         return m_pImpl->m_aMinSize;
     }
@@ -121,14 +121,14 @@ namespace svt
         Show();
 	}
 
-	void HyperLabel::ToggleBackgroundColor( const Color& _rGBColor ) 
-	{ 
+	void HyperLabel::ToggleBackgroundColor( const Color& _rGBColor )
+	{
 		const StyleSettings& rStyleSettings = GetSettings().GetStyleSettings();
-		SetControlBackground( _rGBColor ); 
+		SetControlBackground( _rGBColor );
 		if (_rGBColor == COL_TRANSPARENT)
-	        SetTextColor( rStyleSettings.GetFieldTextColor( ) );			
+	        SetTextColor( rStyleSettings.GetFieldTextColor( ) );
 		else
-	        SetTextColor( rStyleSettings.GetHighlightTextColor( ) );			
+	        SetTextColor( rStyleSettings.GetHighlightTextColor( ) );
 	}
 
 
@@ -136,7 +136,7 @@ namespace svt
     {
    		Font aFont = GetControlFont( );
         const Color aColor = GetTextColor();
-        
+
         if (rMEvt.IsLeaveWindow())
         {
             DeactivateHyperMode(aFont, aColor);
@@ -154,7 +154,7 @@ namespace svt
             }
             DeactivateHyperMode(aFont, aColor);
         }
-    } 
+    }
 
     void HyperLabel::ActivateHyperMode(Font aFont, const Color aColor)
     {
@@ -162,7 +162,7 @@ namespace svt
         m_pImpl->m_bHyperMode = sal_True;
         SetPointer( POINTER_REFHAND );
         SetControlFont( aFont);
-        SetTextColor( aColor); 
+        SetTextColor( aColor);
 
     }
 
@@ -172,7 +172,7 @@ namespace svt
         aFont.SetUnderline(UNDERLINE_NONE);
         SetPointer( POINTER_ARROW );
         SetControlFont( aFont);
-        SetTextColor( aColor); 
+        SetTextColor( aColor);
     }
 
     void HyperLabel::MouseButtonDown( const MouseEvent& )
@@ -181,7 +181,7 @@ namespace svt
         {
 			maClickHdl.Call( this );
         }
-    } 
+    }
 
     void HyperLabel::GetFocus()
     {
@@ -250,11 +250,11 @@ namespace svt
 		{
 			const Color& rGBColor = GetControlBackground();
 			if (rGBColor == COL_TRANSPARENT)
-				SetTextColor( rStyleSettings.GetFieldTextColor( ) );			
+				SetTextColor( rStyleSettings.GetFieldTextColor( ) );
 			else
 			{
 				SetControlBackground(rStyleSettings.GetHighlightColor());
-				SetTextColor( rStyleSettings.GetHighlightTextColor( ) );			
+				SetTextColor( rStyleSettings.GetHighlightTextColor( ) );
 			}
 			Invalidate();
 		}

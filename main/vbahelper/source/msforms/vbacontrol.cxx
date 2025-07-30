@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -61,15 +61,15 @@
 using namespace com::sun::star;
 using namespace ooo::vba;
 
-uno::Reference< css::awt::XWindowPeer > 
+uno::Reference< css::awt::XWindowPeer >
 ScVbaControl::getWindowPeer() throw (uno::RuntimeException)
 {
     uno::Reference< drawing::XControlShape > xControlShape( m_xControl, uno::UNO_QUERY );
 
     uno::Reference< awt::XControlModel > xControlModel;
     uno::Reference< css::awt::XWindowPeer >  xWinPeer;
-    if ( !xControlShape.is() ) 
-    { 
+    if ( !xControlShape.is() )
+    {
         // would seem to be a Userform control
         uno::Reference< awt::XControl > xControl( m_xControl, uno::UNO_QUERY_THROW );
         xWinPeer =  xControl->getPeer();
@@ -130,7 +130,7 @@ ScVbaControl::ScVbaControl( const uno::Reference< XHelperInterface >& xParent, c
     setGeometryHelper( pGeomHelper );
     uno::Reference< lang::XComponent > xComponent( m_xControl, uno::UNO_QUERY_THROW );
     xComponent->addEventListener( m_xEventListener );
-   
+
     //init m_xProps
     uno::Reference< drawing::XControlShape > xControlShape( m_xControl, uno::UNO_QUERY ) ;
     uno::Reference< awt::XControl> xUserFormControl( m_xControl, uno::UNO_QUERY ) ;
@@ -149,7 +149,7 @@ ScVbaControl::~ScVbaControl()
 }
 }
 
-void 
+void
 ScVbaControl::setGeometryHelper( AbstractGeometryAttributes* pHelper )
 {
     mpGeometryHelper.reset( pHelper );
@@ -244,7 +244,7 @@ ScVbaControl::getObject() throw (uno::RuntimeException)
 	return xRet;
 }
 
-void SAL_CALL ScVbaControl::SetFocus() throw (uno::RuntimeException) 
+void SAL_CALL ScVbaControl::SetFocus() throw (uno::RuntimeException)
 {
     uno::Reference< awt::XWindow > xWin( m_xControl, uno::UNO_QUERY_THROW );
     xWin->setFocus();
@@ -266,7 +266,7 @@ void SAL_CALL ScVbaControl::Move( double Left, double Top, const uno::Any& Width
         setHeight( nHeight );
 }
 
-rtl::OUString SAL_CALL 
+rtl::OUString SAL_CALL
 ScVbaControl::getControlSource() throw (uno::RuntimeException)
 {
 // #FIXME I *hate* having these upstream differences
@@ -289,7 +289,7 @@ ScVbaControl::getControlSource() throw (uno::RuntimeException)
 		}
 		catch( uno::Exception& )
 		{
-		}	
+		}
 	}
 	return sControlSource;
 #else
@@ -297,7 +297,7 @@ ScVbaControl::getControlSource() throw (uno::RuntimeException)
 #endif
 }
 
-void SAL_CALL 
+void SAL_CALL
 ScVbaControl::setControlSource( const rtl::OUString& _controlsource ) throw (uno::RuntimeException)
 {
 #ifdef VBA_OOBUILD_HACK
@@ -329,7 +329,7 @@ ScVbaControl::getRowSource() throw (uno::RuntimeException)
 		}
 		catch( uno::Exception& )
 		{
-		}	
+		}
 	}
 	return sRowSource;
 #else
@@ -337,7 +337,7 @@ ScVbaControl::getRowSource() throw (uno::RuntimeException)
 #endif
 }
 
-void SAL_CALL 
+void SAL_CALL
 ScVbaControl::setRowSource( const rtl::OUString& _rowsource ) throw (uno::RuntimeException)
 {
 #ifdef VBA_OOBUILD_HACK
@@ -348,7 +348,7 @@ ScVbaControl::setRowSource( const rtl::OUString& _rowsource ) throw (uno::Runtim
 #endif
 }
 
-rtl::OUString SAL_CALL 
+rtl::OUString SAL_CALL
 ScVbaControl::getName() throw (uno::RuntimeException)
 {
 	rtl::OUString sName;
@@ -365,7 +365,7 @@ ScVbaControl::setName( const rtl::OUString& _name ) throw (uno::RuntimeException
             (rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "Name" ) ), uno::makeAny( _name ) );
     }
 
-rtl::OUString SAL_CALL 
+rtl::OUString SAL_CALL
 ScVbaControl::getControlTipText() throw (css::uno::RuntimeException)
 {
 	rtl::OUString sName;
@@ -374,7 +374,7 @@ ScVbaControl::getControlTipText() throw (css::uno::RuntimeException)
 	return sName;
 }
 
-void SAL_CALL 
+void SAL_CALL
 ScVbaControl::setControlTipText( const rtl::OUString& rsToolTip ) throw (css::uno::RuntimeException)
 {
 	m_xProps->setPropertyValue
@@ -493,14 +493,14 @@ void SAL_CALL ScVbaControl::setTabIndex( sal_Int32 /*nTabIndex*/ ) throw (uno::R
     throw uno::RuntimeException( rtl::OUString::createFromAscii("Unsupported control." ), uno::Reference< uno::XInterface >() );
 }
 
-rtl::OUString& 
+rtl::OUString&
 ScVbaControl::getServiceImplName()
 {
 	static rtl::OUString sImplName( RTL_CONSTASCII_USTRINGPARAM("ScVbaControl") );
 	return sImplName;
 }
 
-uno::Sequence< rtl::OUString > 
+uno::Sequence< rtl::OUString >
 ScVbaControl::getServiceNames()
 {
 	static uno::Sequence< rtl::OUString > aServiceNames;
@@ -523,14 +523,14 @@ public:
     virtual uno::Reference< msforms::XControl > SAL_CALL createControl( const uno::Reference< drawing::XControlShape >& xControl, const uno::Reference< frame::XModel >& xDocOwner ) throw (uno::RuntimeException);
 };
 
-uno::Reference< msforms::XControl > SAL_CALL 
+uno::Reference< msforms::XControl > SAL_CALL
 ControlProviderImpl::createControl( const uno::Reference< drawing::XControlShape >& xControlShape, const uno::Reference< frame::XModel >& xDocOwner ) throw (uno::RuntimeException)
 {
 	uno::Reference< msforms::XControl > xControlToReturn;
-	if ( xControlShape.is() ) 
+	if ( xControlShape.is() )
 		xControlToReturn = ScVbaControlFactory::createShapeControl( m_xCtx, xControlShape, xDocOwner );
 	return xControlToReturn;
-		
+
 }
 
 namespace controlprovider

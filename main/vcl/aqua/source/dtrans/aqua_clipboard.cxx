@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -48,12 +48,12 @@ using namespace comphelper;
 @implementation EventListener;
 
 -(EventListener*)initWithAquaClipboard: (AquaClipboard*) pcb
-{ 
+{
     self = [super init];
-    
+
     if (self)
         pAquaClipboard = pcb;
-    
+
     return self;
 }
 
@@ -98,9 +98,9 @@ AquaClipboard::AquaClipboard(NSPasteboard* pasteboard, bool bUseSystemPasteboard
 	 OUString(RTL_CONSTASCII_USTRINGPARAM("com.sun.star.datatransfer.MimeContentTypeFactory"))), UNO_QUERY);
 
   if (!mrXMimeCntFactory.is())
-	{	
+	{
 	  throw RuntimeException(OUString(
-			RTL_CONSTASCII_USTRINGPARAM("AquaClipboard: Cannot create com.sun.star.datatransfer.MimeContentTypeFactory")), 
+			RTL_CONSTASCII_USTRINGPARAM("AquaClipboard: Cannot create com.sun.star.datatransfer.MimeContentTypeFactory")),
 			static_cast<XClipboardEx*>(this));
 	}
 
@@ -113,13 +113,13 @@ AquaClipboard::AquaClipboard(NSPasteboard* pasteboard, bool bUseSystemPasteboard
 	}
   else
 	{
-	  mPasteboard = bUseSystemPasteboard ? [NSPasteboard generalPasteboard] : 
+	  mPasteboard = bUseSystemPasteboard ? [NSPasteboard generalPasteboard] :
 		[NSPasteboard pasteboardWithName: NSDragPboard];
 
 	  if (mPasteboard == nil)
-		{	
+		{
 		  throw RuntimeException(OUString(
-				RTL_CONSTASCII_USTRINGPARAM("AquaClipboard: Cannot create Cocoa pasteboard")), 
+				RTL_CONSTASCII_USTRINGPARAM("AquaClipboard: Cannot create Cocoa pasteboard")),
 				static_cast<XClipboardEx*>(this));
 		}
 	}
@@ -133,7 +133,7 @@ AquaClipboard::AquaClipboard(NSPasteboard* pasteboard, bool bUseSystemPasteboard
 	  [mPasteboard release];
 
 	  throw RuntimeException(
-			OUString(RTL_CONSTASCII_USTRINGPARAM("AquaClipboard: Cannot create pasteboard change listener")), 
+			OUString(RTL_CONSTASCII_USTRINGPARAM("AquaClipboard: Cannot create pasteboard change listener")),
 			static_cast<XClipboardEx*>(this));
 	}
 
@@ -141,10 +141,10 @@ AquaClipboard::AquaClipboard(NSPasteboard* pasteboard, bool bUseSystemPasteboard
 	{
 	  NSNotificationCenter* notificationCenter = [NSNotificationCenter defaultCenter];
 
-	  [notificationCenter addObserver: mEventListener 
-	   selector: @selector(applicationDidBecomeActive:) 
-	   name: @"NSApplicationDidBecomeActiveNotification" 
-	   object: [NSApplication sharedApplication]]; 
+	  [notificationCenter addObserver: mEventListener
+	   selector: @selector(applicationDidBecomeActive:)
+	   name: @"NSApplicationDidBecomeActiveNotification"
+	   object: [NSApplication sharedApplication]];
 	}
 
   mPasteboardChangeCount = [mPasteboard changeCount];
@@ -153,7 +153,7 @@ AquaClipboard::AquaClipboard(NSPasteboard* pasteboard, bool bUseSystemPasteboard
 
 AquaClipboard::~AquaClipboard()
 {
-  if (mIsSystemPasteboard) 
+  if (mIsSystemPasteboard)
 	{
 	  [[NSNotificationCenter defaultCenter] removeObserver: mEventListener];
 	}
@@ -167,22 +167,22 @@ AquaClipboard::~AquaClipboard()
 Reference<XTransferable> SAL_CALL AquaClipboard::getContents() throw(RuntimeException)
 {
   MutexGuard aGuard(m_aMutex);
-  
-  // Shortcut: If we are clipboard owner already we don't need 
+
+  // Shortcut: If we are clipboard owner already we don't need
   // to drag the data through the system clipboard
   if (mXClipboardContent.is())
 	{
 	  return mXClipboardContent;
 	}
 
-  return Reference<XTransferable>(new OSXTransferable(mrXMimeCntFactory, 
-													  mpDataFlavorMapper, 
+  return Reference<XTransferable>(new OSXTransferable(mrXMimeCntFactory,
+													  mpDataFlavorMapper,
 													  mPasteboard));
 }
 
 
-void SAL_CALL AquaClipboard::setContents(const Reference<XTransferable>& xTransferable, 
-    const Reference<XClipboardOwner>& xClipboardOwner) 
+void SAL_CALL AquaClipboard::setContents(const Reference<XTransferable>& xTransferable,
+    const Reference<XClipboardOwner>& xClipboardOwner)
         throw( RuntimeException )
 {
     NSArray* types = xTransferable.is() ?
@@ -190,24 +190,24 @@ void SAL_CALL AquaClipboard::setContents(const Reference<XTransferable>& xTransf
         [NSArray array];
 
     ClearableMutexGuard aGuard(m_aMutex);
-    
+
     Reference<XClipboardOwner> oldOwner(mXClipboardOwner);
     mXClipboardOwner = xClipboardOwner;
-    
+
     Reference<XTransferable> oldContent(mXClipboardContent);
     mXClipboardContent = xTransferable;
-    
+
     mPasteboardChangeCount = [mPasteboard declareTypes: types owner: mEventListener];
 
     aGuard.clear();
-    
+
     // if we are already the owner of the clipboard
     // then fire lost ownership event
     if (oldOwner.is())
 	{
         fireLostClipboardOwnershipEvent(oldOwner, oldContent);
 	}
-    
+
     fireClipboardChangedEvent();
 }
 
@@ -224,26 +224,26 @@ sal_Int8 SAL_CALL AquaClipboard::getRenderingCapabilities() throw( RuntimeExcept
 }
 
 
-void SAL_CALL AquaClipboard::addClipboardListener(const Reference< XClipboardListener >& listener) 
+void SAL_CALL AquaClipboard::addClipboardListener(const Reference< XClipboardListener >& listener)
   throw( RuntimeException )
 {
   MutexGuard aGuard(m_aMutex);
-  
+
   if (!listener.is())
- 	throw IllegalArgumentException(OUString(RTL_CONSTASCII_USTRINGPARAM("empty reference")), 
+ 	throw IllegalArgumentException(OUString(RTL_CONSTASCII_USTRINGPARAM("empty reference")),
 								   static_cast<XClipboardEx*>(this), 1);
-  
+
   mClipboardListeners.push_back(listener);
 }
 
 
-void SAL_CALL AquaClipboard::removeClipboardListener(const Reference< XClipboardListener >& listener) 
+void SAL_CALL AquaClipboard::removeClipboardListener(const Reference< XClipboardListener >& listener)
   throw( RuntimeException )
 {
   MutexGuard aGuard(m_aMutex);
 
   if (!listener.is())
- 	throw IllegalArgumentException(OUString(RTL_CONSTASCII_USTRINGPARAM("empty reference")), 
+ 	throw IllegalArgumentException(OUString(RTL_CONSTASCII_USTRINGPARAM("empty reference")),
 								   static_cast<XClipboardEx*>(this), 1);
 
   mClipboardListeners.remove(listener);
@@ -312,7 +312,7 @@ void AquaClipboard::fireLostClipboardOwnershipEvent(Reference<XClipboardOwner> o
   BOOST_ASSERT(oldOwner.is());
 
   try { oldOwner->lostOwnership(static_cast<XClipboardEx*>(this), oldContent); }
-  catch(RuntimeException&) { }	
+  catch(RuntimeException&) { }
 }
 
 
@@ -322,10 +322,10 @@ void AquaClipboard::provideDataForType(NSPasteboard* sender, const NSString* typ
     {
         DataProviderPtr_t dp = mpDataFlavorMapper->getDataProvider(type, mXClipboardContent);
         NSData* pBoardData = NULL;
-        
+
         if (dp.get() != NULL)
         {
-            pBoardData = (NSData*)dp->getSystemData();      
+            pBoardData = (NSData*)dp->getSystemData();
             [sender setData: pBoardData forType:const_cast<NSString*>(type)];
         }
     }
@@ -335,13 +335,13 @@ void AquaClipboard::provideDataForType(NSPasteboard* sender, const NSString* typ
 //------------------------------------------------
 // XFlushableClipboard
 //------------------------------------------------
-	
-void SAL_CALL AquaClipboard::flushClipboard() 
+
+void SAL_CALL AquaClipboard::flushClipboard()
   throw(RuntimeException)
 {
     if (mXClipboardContent.is())
 	{
-	  	Sequence<DataFlavor> flavorList = mXClipboardContent->getTransferDataFlavors();	
+	  	Sequence<DataFlavor> flavorList = mXClipboardContent->getTransferDataFlavors();
 		sal_uInt32 nFlavors = flavorList.getLength();
         bool bInternal(false);
 

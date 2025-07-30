@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 #include <cppuhelper/bootstrap.hxx>
@@ -80,7 +80,7 @@ void handleWindowOpened_impl(long pAcc)
 
 /**
  *	For the new opened window, generate all the UNO accessible's object, COM object and add
- *	accessible listener to monitor all these objects. 
+ *	accessible listener to monitor all these objects.
  *	@param pAccessible		the accessible of the new opened window
  */
 void AccTopWindowListener::handleWindowOpened( com::sun::star::accessibility::XAccessible* pAccessible )
@@ -125,7 +125,7 @@ void AccTopWindowListener::handleWindowOpened( com::sun::star::accessibility::XA
 
         if (role == com::sun::star::accessibility::AccessibleRole::FRAME ||
                 role == com::sun::star::accessibility::AccessibleRole::DIALOG ||
-                role == com::sun::star::accessibility::AccessibleRole::WINDOW || 
+                role == com::sun::star::accessibility::AccessibleRole::WINDOW ||
 				role == com::sun::star::accessibility::AccessibleRole::ALERT)
         {
             accManagerAgent.NotifyAccEvent(UM_EVENT_SHOW, pAccessible);
@@ -165,7 +165,7 @@ void AccTopWindowListener::windowOpened( const ::com::sun::star::lang::EventObje
 }
 
 /**
- *	Add the accessible event listener to object and all its children objects. 
+ *	Add the accessible event listener to object and all its children objects.
  *	@param	pAccessible		the accessible object
  *	@param	pParentXAcc		the parent of current accessible object
  *	@param	pWND			the handle of top window which current object resides
@@ -195,7 +195,7 @@ void AccTopWindowListener::AddAllListeners(com::sun::star::accessibility::XAcces
     if(com::sun::star::accessibility::AccessibleRole::DOCUMENT == role )
     {
         if(accManagerAgent.IsStateManageDescendant(pAccessible))
-        {        	
+        {
             return ;
         }
     }

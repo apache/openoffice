@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -221,15 +221,15 @@ BOOL CHatchWin::Init(HWND hWndParent, UINT uID, HWND hWndAssoc)
 		, SZCLASSHATCHWIN, WS_CHILD | WS_CLIPSIBLINGS
 		| WS_CLIPCHILDREN, 0, 0, 100, 100, hWndParent, (HMENU)uID
         , m_hInst, this);
-	
+
     m_uID=uID;
     m_hWndAssociate=hWndAssoc;
-    
+
     return (NULL!=m_hWnd);
 }
 
 
-void CHatchWin::SetTrans() 
+void CHatchWin::SetTrans()
 {
     HRGN hrgn = CreateRectRgn(0,0,0,0);
     SetWindowRgn(m_hWnd,hrgn,true);
@@ -312,14 +312,14 @@ void CHatchWin::RectsSet(LPRECT prcPos, LPRECT prcClip)
 //                  , prcPos->bottom-prcPos->top, SWP_NOZORDER | SWP_NOACTIVATE);
 
     RECT newRC;
-    GetClientRect(m_hWnd,&newRC);    
+    GetClientRect(m_hWnd,&newRC);
     m_aTracker = Tracker(
         &newRC,
-        Tracker::hatchInside | 
+        Tracker::hatchInside |
         Tracker::hatchedBorder |
         Tracker::resizeInside
     );
-    
+
     return;
 }
 
@@ -401,10 +401,10 @@ LRESULT APIENTRY winwrap::HatchWndProc(
     PCHatchWin  phw;
     HDC         hDC;
     PAINTSTRUCT ps;
-    
+
     phw=(PCHatchWin)GetWindowLong(hWnd, HWWL_STRUCTURE);
     POINT ptMouse;
-    
+
     switch (iMsg)
     {
         case WM_CREATE:
@@ -420,7 +420,7 @@ LRESULT APIENTRY winwrap::HatchWndProc(
         case WM_LBUTTONDOWN:
             GetCursorPos(&ptMouse);
             ScreenToClient(hWnd,&ptMouse);
-            
+
             // track in case we have to
             if(phw->m_aTracker.Track(hWnd,ptMouse,FALSE,GetParent(hWnd)))
             {
@@ -439,7 +439,7 @@ LRESULT APIENTRY winwrap::HatchWndProc(
             //We need this since the container will SetFocus to us.
             if (NULL!=phw->m_hWndKid)
                 SetFocus(phw->m_hWndKid);
-            
+
             break;
         case WM_LBUTTONDBLCLK:
             /*
@@ -461,11 +461,11 @@ LRESULT APIENTRY winwrap::HatchWndProc(
         default:
             return DefWindowProc(hWnd, iMsg, wParam, lParam);
     }
-    
+
     return 0L;
 }
 
-// Fix strange warnings about some 
+// Fix strange warnings about some
 // ATL::CAxHostWindow::QueryInterface|AddRef|Releae functions.
 // warning C4505: 'xxx' : unreferenced local function has been removed
 #if defined(_MSC_VER)

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -57,7 +57,7 @@
 // static std::_tstring createTempFolder()
 // {
 //     BOOL bExist = FALSE;
-//     TCHAR szTempName[MAX_PATH]; 
+//     TCHAR szTempName[MAX_PATH];
 //     do
 //     {
 //         bExist = FALSE;
@@ -68,19 +68,19 @@
 //         {
 //             //fprintf (stderr, "GetTempPath failed with error %d.\n", GetLastError());
 //             return TEXT("");
-//         }          
+//         }
 //         // Create a temporary file.
 //         UINT uRetVal = GetTempFileName(lpPathBuffer, // directory for tmp files
-//                                        "upg",        // temp file name prefix 
-//                                        0,            // create unique name 
-//                                        szTempName);  // buffer for name 
+//                                        "upg",        // temp file name prefix
+//                                        0,            // create unique name
+//                                        szTempName);  // buffer for name
 //         if (uRetVal == 0)
 //         {
 //             //fprintf (stderr, "GetTempFileName failed with error %d.\n", GetLastError());
 //             return TEXT("");
 //         }
 //         //Delete the file
-//         BOOL bDel = DeleteFile(szTempName);    
+//         BOOL bDel = DeleteFile(szTempName);
 //         if (FALSE == bDel)
 //         {
 //             //fprintf(stderr, "Could not delete temp file. Error %d.\n", GetLastError());
@@ -102,7 +102,7 @@
 //             }
 //         }
 //     } while(bExist);
-    
+
 //     std::_tstring cur(szTempName);
 //     //make a file URL from the path
 //     std::_tstring ret(TEXT("file:///"));
@@ -127,7 +127,7 @@
 //     //convert the file URL to a path
 //     const std::_tstring path(sTempFolder.substr(8));
 //     std::_tstring path2;
-// //    MessageBox(NULL, path.c_str(), "del1", MB_OK);        
+// //    MessageBox(NULL, path.c_str(), "del1", MB_OK);
 //     for (std::_tstring::const_iterator i = path.begin(); i != path.end(); i++)
 //     {
 //         if (*i == '/')
@@ -142,14 +142,14 @@
 //     size_t size = path2.size();
 //     TCHAR * szTemp2 = new TCHAR[size + 2];
 //     ZeroMemory(szTemp2, (size + 2) * sizeof(TCHAR));
-//     memcpy(szTemp2, szTemp, size * sizeof(TCHAR));   
-    
+//     memcpy(szTemp2, szTemp, size * sizeof(TCHAR));
+
 // //    MessageBox(NULL, szTemp2, "del3", MB_OK);
-//     SHFILEOPSTRUCT operation = 
+//     SHFILEOPSTRUCT operation =
 //         {
 //             NULL,
 //             FO_DELETE,
-//             szTemp2, 
+//             szTemp2,
 //             NULL,
 //             FOF_SILENT | FOF_NOCONFIRMATION | FOF_NOERRORUI | FOF_NOCONFIRMMKDIR,
 //             FALSE,
@@ -184,7 +184,7 @@ static std::_tstring GetMsiProperty( MSIHANDLE handle, const std::_tstring& sPro
 /* creates a child process which is specified in lpCommand.
 
   out_exitCode is the exit code of the child process
-  
+
 
 **/
 static BOOL ExecuteCommand( LPCTSTR lpCommand, DWORD * out_exitCode)
@@ -212,10 +212,10 @@ static BOOL ExecuteCommand( LPCTSTR lpCommand, DWORD * out_exitCode)
     if ( fSuccess )
     {
         WaitForSingleObject( pi.hProcess, INFINITE );
-        
+
         if (!GetExitCodeProcess( pi.hProcess, out_exitCode))
             fSuccess = FALSE;
-        
+
         CloseHandle( pi.hProcess );
         CloseHandle( pi.hThread );
     }
@@ -247,7 +247,7 @@ static BOOL RemoveCompleteDirectory( std::_tstring sPath )
 
             mystr = "Current short file: " + sFileName;
             // MessageBox(NULL, mystr.c_str(), "Current Content", MB_OK);
-        
+
             if (( strcmp(sFileName.c_str(),sCurrentDir.c_str()) != 0 ) &&
                 ( strcmp(sFileName.c_str(),sParentDir.c_str()) != 0 ))
             {
@@ -307,7 +307,7 @@ static BOOL RemoveCompleteDirectory( std::_tstring sPath )
             bDirectoryRemoved = false;
         }
     }
-    
+
     return bDirectoryRemoved;
 }
 
@@ -328,10 +328,10 @@ extern "C" UINT __stdcall RegisterExtensions(MSIHANDLE handle)
     {
         // unopkg.exe exists in program directory
         std::_tstring sCommand = "\"" + sUnoPkgFile + "\" sync";
-        
+
         DWORD exitCode = 0;
         bool fSuccess = ExecuteCommand( sCommand.c_str(), & exitCode);
-        
+
 //          if ( fSuccess )
 //          {
 //              mystr = "Executed successfully!";
@@ -346,10 +346,10 @@ extern "C" UINT __stdcall RegisterExtensions(MSIHANDLE handle)
         if ( ! fSuccess )
         {
             mystr = "ERROR: An error occurred during registration of extensions!";
-            MessageBox(NULL, mystr.c_str(), "ERROR", MB_OK); 
-            registrationError = true;       
+            MessageBox(NULL, mystr.c_str(), "ERROR", MB_OK);
+            registrationError = true;
         }
-        
+
         FindClose( hFindUnopkg );
     }
     // else
@@ -380,10 +380,10 @@ extern "C" UINT __stdcall RemoveExtensions(MSIHANDLE handle)
     DWORD nValueSize = sizeof(szValue);
     HKEY  hKey;
     std::_tstring sInstDir;
-    
+
     std::_tstring sProductKey = GetMsiProperty( handle, TEXT("FINDPRODUCT") );
     //MessageBox( NULL, sProductKey.c_str(), "Titel", MB_OK );
-    
+
     if ( ERROR_SUCCESS == RegOpenKey( HKEY_CURRENT_USER,  sProductKey.c_str(), &hKey ) )
     {
         if ( ERROR_SUCCESS == RegQueryValueEx( hKey, TEXT("INSTALLLOCATION"), NULL, NULL, (LPBYTE)szValue, &nValueSize ) )
@@ -408,7 +408,7 @@ extern "C" UINT __stdcall RemoveExtensions(MSIHANDLE handle)
     // Removing complete directory "Basis\presets\bundled"
 
     std::_tstring sCacheDir = sInstDir + TEXT("share\\prereg\\bundled");
-    
+
     bool fSuccess = RemoveCompleteDirectory( sCacheDir );
 
 //     if ( fSuccess )

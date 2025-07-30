@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -109,11 +109,11 @@ namespace XmlSec
 	}
 
     /*
-        Creates two strings based on the distinguished name which are displayed in the 
+        Creates two strings based on the distinguished name which are displayed in the
         certificate details view. The first string contains only the values of the attribute
         and values pairs, which are separated by commas. All escape characters ('"') are
         removed.
-        The second string is for the details view at the bottom. It shows the attribute/value 
+        The second string is for the details view at the bottom. It shows the attribute/value
         pairs on different lines. All escape characters ('"') are removed.
     */
     pair< OUString, OUString> GetDNForCertDetailsView( const OUString & rRawString)
@@ -136,11 +136,11 @@ namespace XmlSec
         }
         return make_pair(s1.makeStringAndClear(), s2.makeStringAndClear());
     }
- 
+
 /*
     Whenever the attribute value contains special characters, such as '"' or ',' (without '')
     then the value will be enclosed in double quotes by the respective Windows or NSS function
-    which we use to retrieve, for example, the subject name. If double quotes appear in the value then 
+    which we use to retrieve, for example, the subject name. If double quotes appear in the value then
     they are escaped with a double quote. This function removes the escape characters.
 */
 #ifdef WNT
@@ -158,7 +158,7 @@ vector< pair< OUString, OUString> > parseDN(const OUString& rRawString)
         for (sal_Int32 i = 0; i < length; i++)
         {
             sal_Unicode c = rRawString[i];
-        
+
             if (c == '=')
             {
                 if (! bInValue)
@@ -176,9 +176,9 @@ vector< pair< OUString, OUString> > parseDN(const OUString& rRawString)
             {
                 if (!bInEscape)
                 {
-                    //If this is the quote is the first of the couple which enclose the 
+                    //If this is the quote is the first of the couple which enclose the
                     //whole value, because the value contains special characters
-                    //then we just drop it. That is, this character must be followed by 
+                    //then we just drop it. That is, this character must be followed by
                     //a character which is not '"'.
                     if ( i + 1 < length && rRawString[i+1] == '"')
                         bInEscape = true;
@@ -187,7 +187,7 @@ vector< pair< OUString, OUString> > parseDN(const OUString& rRawString)
                 }
                 else
                 {
-                    //This quote is escaped by a preceding quote and therefore is 
+                    //This quote is escaped by a preceding quote and therefore is
                     //part of the value
                     sbufValue.append(c);
                     bInEscape = false;
@@ -195,8 +195,8 @@ vector< pair< OUString, OUString> > parseDN(const OUString& rRawString)
             }
             else if (c == ',' || c == '+')
             {
-                //The comma separate the attribute value pairs. 
-                //If the comma is not part of a value (the value would then be enclosed in '"'), 
+                //The comma separate the attribute value pairs.
+                //If the comma is not part of a value (the value would then be enclosed in '"'),
                 //then we have reached the end of the value
                 if (!bInValue)
                 {
@@ -210,7 +210,7 @@ vector< pair< OUString, OUString> > parseDN(const OUString& rRawString)
                 else
                 {
                     //The whole string is enclosed because it contains special characters.
-                    //The enclosing '"' are not part of certificate but will be added by 
+                    //The enclosing '"' are not part of certificate but will be added by
                     //the function (Windows or NSS) which retrieves DN
                     sbufValue.append(c);
                 }
@@ -244,7 +244,7 @@ vector< pair< OUString, OUString> > parseDN(const OUString& rRawString)
         for (sal_Int32 i = 0; i < length; i++)
         {
             sal_Unicode c = rRawString[i];
-        
+
             if (c == '=')
             {
                 if (! bInValue)
@@ -268,7 +268,7 @@ vector< pair< OUString, OUString> > parseDN(const OUString& rRawString)
                 { // bInEscape is true
                     sbufValue.append(c);
                     bInEscape = false;
-                }      
+                }
             }
             else if (c == '"')
             {
@@ -282,7 +282,7 @@ vector< pair< OUString, OUString> > parseDN(const OUString& rRawString)
                 }
                 else
                 {
-                    //This quote is escaped by a preceding quote and therefore is 
+                    //This quote is escaped by a preceding quote and therefore is
                     //part of the value
                     sbufValue.append(c);
                     bInEscape = false;
@@ -290,8 +290,8 @@ vector< pair< OUString, OUString> > parseDN(const OUString& rRawString)
             }
             else if (c == ',' || c == '+')
             {
-                //The comma separate the attribute value pairs. 
-                //If the comma is not part of a value (the value would then be enclosed in '"'), 
+                //The comma separate the attribute value pairs.
+                //If the comma is not part of a value (the value would then be enclosed in '"'),
                 //then we have reached the end of the value
                 if (!bInValue)
                 {
@@ -305,7 +305,7 @@ vector< pair< OUString, OUString> > parseDN(const OUString& rRawString)
                 else
                 {
                     //The whole string is enclosed because it contains special characters.
-                    //The enclosing '"' are not part of certificate but will be added by 
+                    //The enclosing '"' are not part of certificate but will be added by
                     //the function (Windows or NSS) which retrieves DN
                     sbufValue.append(c);
                 }

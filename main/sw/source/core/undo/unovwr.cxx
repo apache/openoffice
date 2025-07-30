@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -358,7 +358,7 @@ struct _UndoTransliterate_Data
 	void SetChangeAtNode( SwDoc& rDoc );
 };
 
-SwUndoTransliterate::SwUndoTransliterate( 
+SwUndoTransliterate::SwUndoTransliterate(
     const SwPaM& rPam,
 	const utl::TransliterationWrapper& rTrans )
 	: SwUndo( UNDO_TRANSLITERATE ), SwUndRng( rPam ), nType( rTrans.getType() )
@@ -376,7 +376,7 @@ void SwUndoTransliterate::UndoImpl(::sw::UndoRedoContext & rContext)
     SwDoc & rDoc = rContext.GetDoc();
 
     // since the changes were added to the vector from the end of the string/node towards
-    // the start, we need to revert them from the start towards the end now to keep the 
+    // the start, we need to revert them from the start towards the end now to keep the
     // offset information of the undo data in sync with the changing text.
     // Thus we need to iterate from the end of the vector to the start
 	for (sal_Int32 i = aChanges.size() - 1; i >= 0;  --i)

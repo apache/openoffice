@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -63,8 +63,8 @@ void SwVbaRange::initialize( const uno::Reference< text::XTextRange >& rStart, c
     if( !mxText.is() )
     {
         mxText = mxTextDocument->getText();
-    }    
-    
+    }
+
     mxTextCursor = SwVbaRangeHelper::initCursor( rStart, mxText );
     mxTextCursor->collapseToStart();
 
@@ -246,7 +246,7 @@ SwVbaRange::getStyle() throw ( uno::RuntimeException )
     uno::Reference< style::XStyleFamiliesSupplier > xStyleSupplier( mxTextDocument, uno::UNO_QUERY_THROW);
     uno::Reference< container::XNameAccess > xStylesAccess( xStyleSupplier->getStyleFamilies()->getByName( aStyleType ), uno::UNO_QUERY_THROW );
     uno::Reference< beans::XPropertySet > xStyleProps( xStylesAccess->getByName( aStyleName ), uno::UNO_QUERY_THROW );
-    return uno::Reference< word::XStyle >( new SwVbaStyle( this, mxContext, xStyleProps ) ); 
+    return uno::Reference< word::XStyle >( new SwVbaStyle( this, mxContext, xStyleProps ) );
 }
 
 void SAL_CALL
@@ -320,14 +320,14 @@ void SAL_CALL SwVbaRange::setEnd( ::sal_Int32 _end ) throw (uno::RuntimeExceptio
     mxTextCursor->gotoRange( xEnd, sal_True );
 }
 
-rtl::OUString& 
+rtl::OUString&
 SwVbaRange::getServiceImplName()
 {
 	static rtl::OUString sImplName( RTL_CONSTASCII_USTRINGPARAM("SwVbaRange") );
 	return sImplName;
 }
 
-uno::Sequence< rtl::OUString > 
+uno::Sequence< rtl::OUString >
 SwVbaRange::getServiceNames()
 {
 	static uno::Sequence< rtl::OUString > aServiceNames;

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -102,7 +102,7 @@ Reference< XAccessible > BrowseBox::CreateAccessible()
         Reference< XAccessible > xAccParent = pParent->GetAccessible();
         if( xAccParent.is() )
 		{
-            m_pImpl->m_pAccessible = getAccessibleFactory().createAccessibleBrowseBox( 
+            m_pImpl->m_pAccessible = getAccessibleFactory().createAccessibleBrowseBox(
                 xAccParent, *this
             );
 		}
@@ -235,11 +235,11 @@ OUString BrowseBox::GetAccessibleObjectName( ::svt::AccessibleBrowseBoxObjType e
         case ::svt::BBTYPE_TABLECELL:
 			if( ColCount() !=0 && GetRowCount()!=0)
 			{
-           
+
 				sal_Int32 columnId = _nPosition % ColCount() +1;
 				aRetText = OUString( GetColumnDescription( sal_Int16( columnId ) ) );
 				sal_Int32 rowId = _nPosition / GetRowCount() + 1;
-				aRetText += OUString::valueOf(rowId); 
+				aRetText += OUString::valueOf(rowId);
 			}
 			else
 				aRetText = OUString( RTL_CONSTASCII_USTRINGPARAM( "TableCell" ) );
@@ -249,7 +249,7 @@ OUString BrowseBox::GetAccessibleObjectName( ::svt::AccessibleBrowseBoxObjType e
 			aRetText += OUString( RTL_CONSTASCII_USTRINGPARAM( "," ) );
 			aRetText += OUString::valueOf(sal_Int32(GetCurColumnId()));
 			aRetText += OUString( RTL_CONSTASCII_USTRINGPARAM( "]" ) );
-#endif			
+#endif
 			break;
         case ::svt::BBTYPE_ROWHEADERCELL:
 			{

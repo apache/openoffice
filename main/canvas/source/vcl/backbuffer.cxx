@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -42,13 +42,13 @@ namespace vclcanvas
             maVDev->SetAntialiasing( ANTIALIASING_ENABLE_B2DDRAW | maVDev->GetAntialiasing() );
 #else
             // switch off AA for WIN32 and UNIX, the VCLCanvas does not look good with it and
-            // is not required to do AA. It would need to be adapted to use it correctly 
+            // is not required to do AA. It would need to be adapted to use it correctly
             // (especially gradient painting). This will need extra work.
 			maVDev->SetAntialiasing( maVDev->GetAntialiasing() & ~ANTIALIASING_ENABLE_B2DDRAW);
 #endif
         }
     }
-        
+
     OutputDevice& BackBuffer::getOutDev()
     {
         return maVDev.get();
@@ -58,7 +58,7 @@ namespace vclcanvas
     {
         return maVDev.get();
     }
-    
+
     void BackBuffer::setSize( const ::Size& rNewSize )
     {
         maVDev->SetOutputSizePixel( rNewSize );

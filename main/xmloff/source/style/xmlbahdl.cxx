@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -646,7 +646,7 @@ sal_Bool XMLDoublePropHdl::exportXML( OUString& rStrExpValue, const Any& rValue,
 
 XMLColorTransparentPropHdl::XMLColorTransparentPropHdl(
     enum XMLTokenEnum eTransparent ) :
-	sTransparent( GetXMLToken( 
+	sTransparent( GetXMLToken(
         eTransparent != XML_TOKEN_INVALID ? eTransparent : XML_TRANSPARENT ) )
 {
 	// Nothing to do
@@ -699,12 +699,12 @@ sal_Bool XMLColorTransparentPropHdl::exportXML( OUString& rStrExpValue, const An
 
 XMLIsTransparentPropHdl::XMLIsTransparentPropHdl(
 	enum XMLTokenEnum eTransparent, sal_Bool bTransPropVal ) :
-	sTransparent( GetXMLToken( 
+	sTransparent( GetXMLToken(
         eTransparent != XML_TOKEN_INVALID ? eTransparent : XML_TRANSPARENT ) ),
 	bTransPropValue( bTransPropVal )
 {
 }
-	
+
 XMLIsTransparentPropHdl::~XMLIsTransparentPropHdl()
 {
 	// Nothing to do
@@ -796,7 +796,7 @@ sal_Bool XMLColorAutoPropHdl::exportXML( OUString& rStrExpValue, const Any& rVal
 XMLIsAutoColorPropHdl::XMLIsAutoColorPropHdl()
 {
 }
-	
+
 XMLIsAutoColorPropHdl::~XMLIsAutoColorPropHdl()
 {
 	// Nothing to do
@@ -866,9 +866,9 @@ XMLNumberWithoutZeroPropHdl::~XMLNumberWithoutZeroPropHdl()
 {
 }
 
-sal_Bool XMLNumberWithoutZeroPropHdl::importXML( 
-    const OUString& rStrImpValue, 
-    Any& rValue, 
+sal_Bool XMLNumberWithoutZeroPropHdl::importXML(
+    const OUString& rStrImpValue,
+    Any& rValue,
     const SvXMLUnitConverter& ) const
 {
 	sal_Int32 nValue = 0;
@@ -903,9 +903,9 @@ XMLNumberWithAutoInsteadZeroPropHdl::~XMLNumberWithAutoInsteadZeroPropHdl()
 {
 }
 
-sal_Bool XMLNumberWithAutoInsteadZeroPropHdl::importXML( 
-    const OUString& rStrImpValue, 
-    Any& rValue, 
+sal_Bool XMLNumberWithAutoInsteadZeroPropHdl::importXML(
+    const OUString& rStrImpValue,
+    Any& rValue,
     const SvXMLUnitConverter& ) const
 {
 	sal_Int32 nValue = 0;

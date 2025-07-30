@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -45,7 +45,7 @@ namespace drawinglayer
 
 			// get the distance of one discrete units from target display. Use between 1.0 and sqrt(2) to
 			// have good results on rotated objects, too
-			const basegfx::B2DVector aDistance(rViewInformation.getInverseObjectToViewTransformation() * 
+			const basegfx::B2DVector aDistance(rViewInformation.getInverseObjectToViewTransformation() *
                 basegfx::B2DVector(fDiscreteSize, fDiscreteSize));
 			const basegfx::B2DVector aDiagonalDistance(aDistance * (1.0 / 1.44));
 
@@ -96,12 +96,12 @@ namespace drawinglayer
                                 basegfx::BColor(0.0)));
                         const Primitive2DReference xModifiedColor(
                             new ModifiedColorPrimitive2D(
-                                getTextContent(), 
+                                getTextContent(),
                                 aBColorModifierToGray));
 
                         aRetval[0] = Primitive2DReference(
                             new TransformPrimitive2D(
-                                aTransform, 
+                                aTransform,
                                 Primitive2DSequence(&xModifiedColor, 1)));
 
                         // add original, too
@@ -111,7 +111,7 @@ namespace drawinglayer
 
                         aRetval[1] = Primitive2DReference(
                             new ModifiedColorPrimitive2D(
-                                getTextContent(), 
+                                getTextContent(),
                                 aBColorModifierToWhite));
                     }
                     else
@@ -122,12 +122,12 @@ namespace drawinglayer
                                 basegfx::BColor(0.75))); // 192
                         const Primitive2DReference xModifiedColor(
                             new ModifiedColorPrimitive2D(
-                                getTextContent(), 
+                                getTextContent(),
                                 aBColorModifierToGray));
 
                         aRetval[0] = Primitive2DReference(
                             new TransformPrimitive2D(
-                                aTransform, 
+                                aTransform,
                                 Primitive2DSequence(&xModifiedColor, 1)));
 
                         // add original, too
@@ -141,7 +141,7 @@ namespace drawinglayer
 					// create transform primitives in all directions
 					basegfx::B2DHomMatrix aTransform;
 					aRetval.realloc(9);
-					
+
 					aTransform.set(0, 2, aDistance.getX());
 					aTransform.set(1, 2, 0.0);
 					aRetval[0] = Primitive2DReference(new TransformPrimitive2D(aTransform, getTextContent()));
@@ -180,7 +180,7 @@ namespace drawinglayer
                             basegfx::BColor(1.0, 1.0, 1.0)));
                     aRetval[8] = Primitive2DReference(
                         new ModifiedColorPrimitive2D(
-                            getTextContent(), 
+                            getTextContent(),
                             aBColorModifierToWhite));
 
 					break;
@@ -232,7 +232,7 @@ namespace drawinglayer
 		}
 
 		Primitive2DSequence TextEffectPrimitive2D::get2DDecomposition(const geometry::ViewInformation2D& rViewInformation) const
-		{ 
+		{
 			::osl::MutexGuard aGuard( m_aMutex );
 
 			if(getBuffered2DDecomposition().hasElements())

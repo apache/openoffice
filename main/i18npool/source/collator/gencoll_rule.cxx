@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -82,7 +82,7 @@ SAL_IMPLEMENT_MAIN_WITH_ARGS(argc, argv)
 	if (argc < 4) exit(-1);
 
 	fp = fopen(argv[1], "rb");	// open the source file for read;
-	if (fp == NULL) 
+	if (fp == NULL)
 	    printf("Open the rule source file failed.");
 
 
@@ -108,7 +108,7 @@ SAL_IMPLEMENT_MAIN_WITH_ARGS(argc, argv)
 
     UErrorCode status = U_ZERO_ERROR;
     //UParseError parseError;
-    //UCollator *coll = ucol_openRules(Obuf.getStr(), Obuf.getLength(), UCOL_OFF, 
+    //UCollator *coll = ucol_openRules(Obuf.getStr(), Obuf.getLength(), UCOL_OFF,
     //        UCOL_DEFAULT_STRENGTH, &parseError, &status);
 
     RuleBasedCollator *coll = new RuleBasedCollator(reinterpret_cast<const UChar *>(Obuf.getStr()), status);	// UChar != sal_Unicode in MinGW

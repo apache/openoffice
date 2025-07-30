@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -229,7 +229,7 @@ void CmdBaseStream::Read (comm_UniChar* &aString, comm_USHORT &nLenInChars )
 #ifdef DBG_UTIL
 	if (nId != BinString) DBG_ERROR1( "Falscher Typ im Stream: Erwartet String, gefunden :%hu", nId );
 #endif
-	
+
 	*pCommStream >> nLenInChars;
 
 	aString = new comm_UniChar [nLenInChars];
@@ -279,7 +279,7 @@ void CmdBaseStream::Write( const comm_UniChar* aString, comm_USHORT nLenInChars 
 
     comm_USHORT n;
 
-    // remove BiDi and zero-width-markers    0x200B - 0x200F 
+    // remove BiDi and zero-width-markers    0x200B - 0x200F
     // remove BiDi and paragraph-markers     0x2028 - 0x202E
 
     comm_UniChar* aNoBiDiString;
@@ -324,22 +324,22 @@ void CmdBaseStream::Write( comm_BOOL bBool )
 
 void CmdBaseStream::Read ( comm_String* &pString )
 {
-    (void) pString; /* avoid warning about unused parameter */ 
+    (void) pString; /* avoid warning about unused parameter */
     DBG_ERROR("Read ( comm_String* &pString ) Not Implemented");
 }
 void CmdBaseStream::Read ( rtl::OString* &pId )
-{ 
-    (void) pId; /* avoid warning about unused parameter */ 
+{
+    (void) pId; /* avoid warning about unused parameter */
     DBG_ERROR("Read ( rtl::OString* &pId ) Not Implemented");
 }
 
 void CmdBaseStream::Write( comm_String *pString )
 {
-    (void) pString; /* avoid warning about unused parameter */ 
+    (void) pString; /* avoid warning about unused parameter */
     DBG_ERROR("Write( comm_String *pString ) Not Implemented");
 }
 void CmdBaseStream::Write( rtl::OString* pId )
 {
-    (void) pId; /* avoid warning about unused parameter */ 
+    (void) pId; /* avoid warning about unused parameter */
     DBG_ERROR("Write( rtl::OString* pId ) Not Implemented");
 }

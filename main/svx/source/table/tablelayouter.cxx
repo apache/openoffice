@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -118,7 +118,7 @@ basegfx::B2ITuple TableLayouter::getCellSize( const CellPos& rPos  ) const
 	{
 		DBG_ERROR( "TableLayouter::getCellSize(), exception caught!" );
 	}
-	
+
 	return basegfx::B2ITuple( width, height );
 }
 
@@ -137,7 +137,7 @@ bool TableLayouter::getCellArea( const CellPos& rPos, basegfx::B2IRectangle& rAr
             {
     			const sal_Int32 x = maColumns[rPos.mnCol].mnPos;
 	    		const sal_Int32 y = maRows[rPos.mnRow].mnPos;
-    
+
 	    		rArea = basegfx::B2IRectangle( x, y, x + aCellSize.getX(), y + aCellSize.getY()  );
 		    	return true;
             }
@@ -222,7 +222,7 @@ SvxBorderLine* TableLayouter::getBorderLine( sal_Int32 nEdgeX, sal_Int32 nEdgeY,
 
 	const BorderLineMap& rMap = bHorizontal ? maHorizontalBorders : maVerticalBorders;
 
-	if( (nEdgeX >= 0) && (nEdgeX < sal::static_int_cast<sal_Int32>(rMap.size())) && 
+	if( (nEdgeX >= 0) && (nEdgeX < sal::static_int_cast<sal_Int32>(rMap.size())) &&
 		(nEdgeY >= 0) && (nEdgeY < sal::static_int_cast<sal_Int32>(rMap[nEdgeX].size())) )
 	{
 		pLine = rMap[nEdgeX][nEdgeY];
@@ -329,12 +329,12 @@ static bool checkMergeOrigin( const TableModelRef& xTable, sal_Int32 nMergedX, s
     Reference< XMergeableCell > xCell( xTable->getCellByPosition( nCellX, nCellY ), UNO_QUERY );
     if( xCell.is() && !xCell->isMerged() )
     {
-        const sal_Int32 nRight = xCell->getColumnSpan() + nCellX; 
+        const sal_Int32 nRight = xCell->getColumnSpan() + nCellX;
         const sal_Int32 nBottom = xCell->getRowSpan() + nCellY;
         if( (nMergedX < nRight) && (nMergedY < nBottom) )
             return true;
 
-        bRunning = false;            
+        bRunning = false;
     }
     return false;
 }
@@ -463,7 +463,7 @@ sal_Int32 TableLayouter::getMinimumColumnWidth( sal_Int32 nColumn )
 sal_Int32 TableLayouter::distribute( LayoutVector& rLayouts, sal_Int32 nDistribute )
 {
 	// break loops after 100 runs to avoid freezing office due to developer error
-	sal_Int32 nSafe = 100; 
+	sal_Int32 nSafe = 100;
 
 	const sal_Size nCount = rLayouts.size();
 	sal_Size nIndex;
@@ -603,7 +603,7 @@ void TableLayouter::LayoutTableWidth( Rectangle& rArea, bool bFit )
 			{
 				xColSet->getPropertyValue( msSize ) >>= nColWidth;
 			}
-		
+
 			maColumns[nCol].mnSize = nColWidth;
 
 			if( maColumns[nCol].mnSize < nMinWidth )
@@ -752,9 +752,9 @@ void TableLayouter::LayoutTableHeight( Rectangle& rArea, bool bFit )
 			}
 			else
 			{
-				xRowSet->getPropertyValue( msSize ) >>= nRowHeight;	
+				xRowSet->getPropertyValue( msSize ) >>= nRowHeight;
 			}
- 
+
 			maRows[nRow].mnSize = nRowHeight;
 
 			if( maRows[nRow].mnSize < nMinHeight )
@@ -958,7 +958,7 @@ void TableLayouter::SetBorder( sal_Int32 nCol, sal_Int32 nRow, bool bHorizontal,
 		pLine = &gEmptyBorder;
 
 	SvxBorderLine *pOld = bHorizontal ? maHorizontalBorders[nCol][nRow] : maVerticalBorders[nCol][nRow];
-	
+
 	if( HasPriority( pLine, pOld ) )
 	{
 		if( (pOld != 0) && (pOld != &gEmptyBorder) )

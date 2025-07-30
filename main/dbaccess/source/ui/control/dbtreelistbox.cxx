@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -43,7 +43,7 @@
 #ifndef _COM_SUN_STAR_DATATRANSFER_DND_XDRAGGESTURELISTENER_HDL_
 #include <com/sun/star/datatransfer/dnd/XDragGestureListener.hdl>
 #endif
-#ifndef _COM_SUN_STAR_DATATRANSFER_DND_XDRAGGESTURERECOGNIZER_HPP_ 
+#ifndef _COM_SUN_STAR_DATATRANSFER_DND_XDRAGGESTURERECOGNIZER_HPP_
 #include <com/sun/star/datatransfer/dnd/XDragGestureRecognizer.hpp>
 #endif
 #ifndef _COM_SUN_STAR_UI_XCONTEXTMENUINTERCEPTOR_HPP_
@@ -119,7 +119,7 @@ DBTreeListBox::DBTreeListBox( Window* pParent, const Reference< XMultiServiceFac
 	,m_xORB(_rxORB)
 {
 	DBG_CTOR(DBTreeListBox,NULL);
-	init();	
+	init();
 }
 // -----------------------------------------------------------------------------
 void DBTreeListBox::init()
@@ -436,7 +436,7 @@ void DBTreeListBox::KeyInput( const KeyEvent& rKEvt )
 		// 2002-12-02 - 105831 - fs@openoffice.org
 	}
 
-	if ( !bHandled ) 
+	if ( !bHandled )
 		SvTreeListBox::KeyInput(rKEvt);
 }
 // -----------------------------------------------------------------------------
@@ -456,7 +456,7 @@ sal_Bool DBTreeListBox::EditedEntry( SvLBoxEntry* pEntry, const XubString& rNewT
         m_aSelectedEntries.erase( pEntry );
 	}
 	SetEntryText(pEntry,aEntry.aNewText);
-	
+
 	return sal_False;  // we never want that the base change our text
 }
 
@@ -621,20 +621,20 @@ namespace
         throw IllegalArgumentException();
         // API bug: this should be a NoSupportException
     }
-    
+
     //--------------------------------------------------------------------
     Any SAL_CALL SelectionSupplier::getSelection(  ) throw (RuntimeException)
     {
         return m_aSelection;
     }
-    
+
     //--------------------------------------------------------------------
     void SAL_CALL SelectionSupplier::addSelectionChangeListener( const Reference< XSelectionChangeListener >& /*_Listener*/ ) throw (RuntimeException)
     {
         OSL_ENSURE( false, "SelectionSupplier::removeSelectionChangeListener: no support!" );
         // API bug: this should be a NoSupportException
     }
-    
+
     //--------------------------------------------------------------------
     void SAL_CALL SelectionSupplier::removeSelectionChangeListener( const Reference< XSelectionChangeListener >& /*_Listener*/ ) throw (RuntimeException)
     {
@@ -740,7 +740,7 @@ IMPL_LINK(DBTreeListBox, OnTimeOut, void*, /*EMPTY_ARG*/)
 {
     implStopSelectionTimer();
 
-    m_aSelChangeHdl.Call( NULL );	
+    m_aSelChangeHdl.Call( NULL );
 	return 0L;
 }
 // -----------------------------------------------------------------------------

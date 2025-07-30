@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -136,7 +136,7 @@ Reference<drawing::XLayer> SdUnoDrawView::getActiveLayer (void) throw ()
         SdDrawDocument* pSdModel = pModel->GetDoc();
         if (pSdModel == NULL)
             break;
-        
+
         // From the model get the current SdrLayer object via the layer admin.
         SdrLayerAdmin& rLayerAdmin = pSdModel->GetLayerAdmin ();
         SdrLayer* pLayer = rLayerAdmin.GetLayer (mrView.GetActiveLayer(), sal_True);
@@ -213,7 +213,7 @@ sal_Bool SAL_CALL SdUnoDrawView::select( const Any& aSelection )
         {
             bOk = false;
         }
-    }	
+    }
     else
     {
         Reference< drawing::XShapes > xShapes;
@@ -307,18 +307,18 @@ Any SAL_CALL SdUnoDrawView::getSelection()
                 SdrMark *pMark = rMarkList.GetMark(nNum);
                 if(pMark==NULL)
                     continue;
-		        
+
                 SdrObject *pObj = pMark->GetMarkedSdrObj();
                 if(pObj==NULL || pObj->GetPage() == NULL)
                     continue;
 
                 Reference< drawing::XDrawPage > xPage( pObj->GetPage()->getUnoPage(), UNO_QUERY);
-		        
+
                 if(!xPage.is())
                     continue;
 
                 SvxDrawPage* pDrawPage = SvxDrawPage::getImplementation( xPage );
-		        
+
                 if(pDrawPage==NULL)
                     continue;
 
@@ -343,7 +343,7 @@ void SAL_CALL SdUnoDrawView::addSelectionChangeListener (
 {
     (void)rxListener;
 }
-    
+
 
 
 
@@ -358,7 +358,7 @@ void SAL_CALL SdUnoDrawView::removeSelectionChangeListener (
 
 
 void SdUnoDrawView::setFastPropertyValue (
-	sal_Int32 nHandle, 
+	sal_Int32 nHandle,
         const Any& rValue)
     throw(css::beans::UnknownPropertyException,
         css::beans::PropertyVetoException,
@@ -507,7 +507,7 @@ Reference< drawing::XDrawPage > SAL_CALL SdUnoDrawView::getCurrentPage()
 
     SdrPageView *pPV = mrView.GetSdrPageView();
     SdrPage* pPage = pPV ? pPV->GetPage() : NULL;
-    
+
     if(pPage)
         xPage = Reference< drawing::XDrawPage >::query( pPage->getUnoPage() );
 
@@ -574,12 +574,12 @@ void SdUnoDrawView::SetZoomType ( sal_Int16 nType )
                 case com::sun::star::view::DocumentZoomType::OPTIMAL:
                     eZoomType = SVX_ZOOM_OPTIMAL;
                     break;
-                        
+
                 case com::sun::star::view::DocumentZoomType::PAGE_WIDTH:
                 case com::sun::star::view::DocumentZoomType::PAGE_WIDTH_EXACT:
                     eZoomType = SVX_ZOOM_PAGEWIDTH;
                     break;
-                        
+
                 case com::sun::star::view::DocumentZoomType::ENTIRE_PAGE:
                     eZoomType = SVX_ZOOM_WHOLEPAGE;
                     break;

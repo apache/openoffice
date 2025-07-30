@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -62,7 +62,7 @@ inline double getRandomOrdinal( const ::std::size_t n )
 
 inline bool compare(const B2DPoint& left, const B2DPoint& right)
 {
-    return left.getX()<right.getX() 
+    return left.getX()<right.getX()
         || (left.getX()==right.getX() && left.getY()<right.getY());
 }
 
@@ -144,7 +144,7 @@ public:
         aRingIntersection2.appendElement( aWest2, ORIENTATION_NEGATIVE );
 
         aRingIntersectExtraStrip = aRingIntersection2;
-        aRingIntersectExtraStrip.appendElement( B2DRange(0, -25, 200, 25), 
+        aRingIntersectExtraStrip.appendElement( B2DRange(0, -25, 200, 25),
                                                 ORIENTATION_NEGATIVE );
 
         aComplexIntersections.appendElement( aCenter, ORIENTATION_NEGATIVE );
@@ -253,12 +253,12 @@ public:
         ASSERT_TRUE(normalizePoly(aTmp2) == normalizePoly(aTmp1)) << sName;
     }
 
-    void dumpSvg(const char* pName, 
+    void dumpSvg(const char* pName,
                  const ::basegfx::B2DPolyPolygon& rPoly)
     {
         (void)pName; (void)rPoly;
 #if defined(VERBOSE)
-        fprintf(stderr, "%s - svg:d=\"%s\"\n", 
+        fprintf(stderr, "%s - svg:d=\"%s\"\n",
                 pName, rtl::OUStringToOString(
                     basegfx::tools::exportToSvgD(rPoly, true, true, false),
                     RTL_TEXTENCODING_UTF8).getStr() );
@@ -275,12 +275,12 @@ public:
                 rRange.getElement(i).head);
             if( rRange.getElement(i).tail.head == ORIENTATION_NEGATIVE )
                 aRect.flip();
-            
+
             genericClip.append(aRect);
         }
 
 #if defined(VERBOSE)
-        fprintf(stderr, "%s input      - svg:d=\"%s\"\n", 
+        fprintf(stderr, "%s input      - svg:d=\"%s\"\n",
                 pName, rtl::OUStringToOString(
                     basegfx::tools::exportToSvgD(
                         genericClip, true, true, false),
@@ -292,7 +292,7 @@ public:
             basegfx::tools::exportToSvgD(
                 normalizePoly(boxClipResult), true, true, false));
 #if defined(VERBOSE)
-        fprintf(stderr, "%s boxclipper - svg:d=\"%s\"\n", 
+        fprintf(stderr, "%s boxclipper - svg:d=\"%s\"\n",
                 pName, rtl::OUStringToOString(
                     boxClipSvg,
                     RTL_TEXTENCODING_UTF8).getStr() );
@@ -303,7 +303,7 @@ public:
             basegfx::tools::exportToSvgD(
                 normalizePoly(genericClip), true, true, false));
 #if defined(VERBOSE)
-        fprintf(stderr, "%s genclipper - svg:d=\"%s\"\n", 
+        fprintf(stderr, "%s genclipper - svg:d=\"%s\"\n",
                 pName, rtl::OUStringToOString(
                     genericClipSvg,
                     RTL_TEXTENCODING_UTF8).getStr() );
@@ -325,7 +325,7 @@ TEST_F(boxclipper, validatePoly)
     validatePoly("intersectionSE", aIntersectionSE);
     validatePoly("intersectionSW", aIntersectionSW);
     validatePoly("intersectionNW", aIntersectionNW);
-    // subtle differences on Solaris Intel, comparison not smart enough 
+    // subtle differences on Solaris Intel, comparison not smart enough
     // (due to floating point inaccuracies)
     //validatePoly("ringIntersection", aRingIntersection);
     //validatePoly("ringIntersection2", aRingIntersection2);

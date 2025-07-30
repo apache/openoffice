@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -178,7 +178,7 @@ void ScAccessiblePageHeader::Notify( SfxBroadcaster& rBC, const SfxHint& rHint )
             CommitChange(aEvent);
         }
     }
-    
+
 	ScAccessibleContextBase::Notify(rBC, rHint);
 }
 
@@ -248,7 +248,7 @@ sal_Int32 SAL_CALL ScAccessiblePageHeader::getAccessibleChildCount() throw (uno:
                     nPageWhichId = mpViewShell->GetLocationData().IsHeaderLeft() ? ATTR_PAGE_HEADERLEFT : ATTR_PAGE_HEADERRIGHT;
                 else
                     nPageWhichId = mpViewShell->GetLocationData().IsFooterLeft() ? ATTR_PAGE_FOOTERLEFT : ATTR_PAGE_FOOTERRIGHT;
-			    
+
 			    const ScPageHFItem& rPageItem = static_cast<const ScPageHFItem&>(pStyle->GetItemSet().Get(nPageWhichId));
 				AddChild(rPageItem.GetLeftArea(), 0, SVX_ADJUST_LEFT);
 				AddChild(rPageItem.GetCenterArea(), 1, SVX_ADJUST_CENTER);
@@ -396,7 +396,7 @@ Rectangle ScAccessiblePageHeader::GetBoundingBox() const throw (uno::RuntimeExce
     }
     if (aRect.IsEmpty())
         aRect.SetSize(Size(-1, -1));
-    
+
 	return aRect;
 }
 

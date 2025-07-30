@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
@@ -600,13 +600,13 @@ IMPL_LINK( SvxHFPage, BackgroundHdl, Button *, EMPTYARG )
 
             for(sal_uInt16 a(0); nCopyFlags[a]; a++)
             {
-                const SfxPoolItem* pItem = GetItemSet().GetItem(nCopyFlags[a]); 
+                const SfxPoolItem* pItem = GetItemSet().GetItem(nCopyFlags[a]);
 
-                if(pItem) 
+                if(pItem)
                 {
-                    pBBSet->Put(*pItem); 
+                    pBBSet->Put(*pItem);
                 }
-                else 
+                else
                 {
                     OSL_ENSURE(false, "XPropertyList missing (!)");
                 }
@@ -657,9 +657,9 @@ IMPL_LINK( SvxHFPage, BackgroundHdl, Button *, EMPTYARG )
     if(pFact)
     {
         //UUUU
-        SfxAbstractTabDialog* pDlg = pFact->CreateSvxBorderBackgroundDlg( 
-            this, 
-            *pBBSet, 
+        SfxAbstractTabDialog* pDlg = pFact->CreateSvxBorderBackgroundDlg(
+            this,
+            *pBBSet,
             mbEnableBackgroundSelector,
             mbEnableDrawingLayerFillStyles);
 

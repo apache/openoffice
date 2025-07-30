@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
@@ -70,10 +70,10 @@ SFX_IMPL_DOCKINGWINDOW( GalleryChildWindow, SID_GALLERY )
 DBG_NAME(GalleryBrowser)
 
 GalleryBrowser::GalleryBrowser(
-    SfxBindings* _pBindings, 
+    SfxBindings* _pBindings,
     SfxChildWindow* pCW,
-    Window* pParent, 
-    const ResId& rResId) 
+    Window* pParent,
+    const ResId& rResId)
 :   SfxDockingWindow(_pBindings, pCW, pParent, rResId),
     maLastSize(GetOutputSizePixel()),
     mpSplitter(0),
@@ -165,39 +165,39 @@ void GalleryBrowser::Resize()
 
     if(bNewLayoutHorizontal)
     {
-        mpBrowser1->SetPosSizePixel( 
+        mpBrowser1->SetPosSizePixel(
             Point( nFrameLen, nFrameLen ),
             Size(nSplitPos - nFrameLen, aNewSize.Height() - nFrameLen2) );
 
-        mpSplitter->SetPosSizePixel( 
+        mpSplitter->SetPosSizePixel(
             Point( nSplitPos, 0),
             Size( nSplitSize, aNewSize.Height() ) );
 
-        mpSplitter->SetDragRectPixel( 
-            Rectangle( 
-                Point( nFrameLen2, 0 ), 
+        mpSplitter->SetDragRectPixel(
+            Rectangle(
+                Point( nFrameLen2, 0 ),
                 Size( aNewSize.Width() - ( nFrameLen2 << 1 ) - nSplitSize, aNewSize.Height() ) ) );
 
-        mpBrowser2->SetPosSizePixel( 
+        mpBrowser2->SetPosSizePixel(
             Point( nSplitPos + nSplitSize, nFrameLen ),
             Size( aNewSize.Width() - nSplitSize - nSplitPos - nFrameLen, aNewSize.Height() - nFrameLen2 ) );
     }
     else
     {
-        mpBrowser1->SetPosSizePixel( 
+        mpBrowser1->SetPosSizePixel(
             Point( nFrameLen, nFrameLen ),
             Size(aNewSize.Width() - nFrameLen2, nSplitPos - nFrameLen));
 
-        mpSplitter->SetPosSizePixel( 
+        mpSplitter->SetPosSizePixel(
             Point( 0, nSplitPos),
             Size( aNewSize.Width(), nSplitSize ) );
 
-        mpSplitter->SetDragRectPixel( 
-            Rectangle( 
-                Point( 0, nFrameLen2 ), 
+        mpSplitter->SetDragRectPixel(
+            Rectangle(
+                Point( 0, nFrameLen2 ),
                 Size( aNewSize.Width(), aNewSize.Height() - ( nFrameLen2 << 1 ) - nSplitSize ) ));
 
-        mpBrowser2->SetPosSizePixel( 
+        mpBrowser2->SetPosSizePixel(
             Point( nFrameLen, nSplitPos + nSplitSize ),
             Size( aNewSize.Width() - nFrameLen2, aNewSize.Height() - nSplitSize - nSplitPos - nFrameLen ));
     }
@@ -276,7 +276,7 @@ IMPL_LINK( GalleryBrowser, SplitHdl, void*, EMPTYARG )
     {
         mpSplitter->SetPosPixel( Point( mpSplitter->GetPosPixel().X(), mpSplitter->GetSplitPosPixel() ) );
     }
-    
+
     Resize();
 
 	return 0L;

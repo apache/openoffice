@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -169,7 +169,7 @@ SvxBorderTabPage::SvxBorderTabPage( Window* pParent,
         aWndPresets     ( this, CUI_RES( WIN_PRESETS ) ),
         aUserDefFT      ( this, CUI_RES( FT_USERDEF ) ),
         aFrameSel       ( this, CUI_RES( WIN_FRAMESEL ) ),
-        
+
         aFlSep1         ( this, CUI_RES( FL_SEPARATOR1 ) ),
         aFlLine         ( this, CUI_RES( FL_LINE ) ),
         aStyleFT        ( this, CUI_RES( FT_STYLE ) ),
@@ -439,8 +439,8 @@ void SvxBorderTabPage::Reset( const SfxItemSet& rSet )
 	const Color				aColBlack		= RGBCOL(COL_BLACK);
 
 	pBoxItem  = (const SvxBoxItem*)GetItem( rSet, SID_ATTR_BORDER_OUTER );
-	
-	
+
+
 	pBoxInfoItem = (const SvxBoxInfoItem*)GetItem( rSet, SID_ATTR_BORDER_INNER, sal_False );
 
 	eCoreUnit = rSet.GetPool()->GetMetric( nWhichBox );
@@ -727,7 +727,7 @@ sal_Bool SvxBorderTabPage::FillItemSet( SfxItemSet& rCoreAttrs )
                         nMinValue == aRightMF .GetValue() ||
                         nMinValue == aTopMF   .GetValue() ||
                         nMinValue == aBottomMF.GetValue() ||
-                        (pOldBoxInfoItem && !pOldBoxInfoItem->IsValid(VALID_DISTANCE)) 
+                        (pOldBoxInfoItem && !pOldBoxInfoItem->IsValid(VALID_DISTANCE))
                        )
                     {
                         aBoxItem.SetDistance( (sal_uInt16)GetCoreValue( aLeftMF, eCoreUnit ), BOX_LINE_LEFT  );

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -198,7 +198,7 @@ SplashScreen::initialize( const ::com::sun::star::uno::Sequence< ::com::sun::sta
                 _barwidth = 263;
             if ( NOT_LOADED == _barheight )
                 _barheight = 8;
-            if (( _eBitmapMode == BM_FULLSCREEN ) && 
+            if (( _eBitmapMode == BM_FULLSCREEN ) &&
                 _bFullScreenSplash )
             {
                 if( ( _fXPos >= 0.0 ) && ( _fYPos >= 0.0 ))
@@ -210,7 +210,7 @@ SplashScreen::initialize( const ::com::sun::star::uno::Sequence< ::com::sun::sta
                     _barwidth  = sal_Int32( double( aSize.Width() ) * _fWidth );
                 if ( _fHeight >= 0.0 )
                     _barheight = sal_Int32( double( aSize.Width() ) * _fHeight );
-            }   
+            }
         }
         else
         {
@@ -306,10 +306,10 @@ void SplashScreen::loadConfig()
         OUString( RTL_CONSTASCII_USTRINGPARAM( "NativeProgress" ) ) );
     OUString sShowProgressFrame = implReadBootstrapKey(
         OUString( RTL_CONSTASCII_USTRINGPARAM( "ShowProgressFrame" ) ) );
-                                                    
+
 
     // Determine full screen splash mode
-    _bFullScreenSplash = (( sFullScreenSplash.getLength() > 0 ) && 
+    _bFullScreenSplash = (( sFullScreenSplash.getLength() > 0 ) &&
                           ( !sFullScreenSplash.equalsAsciiL( "0", 1 )));
 
     // Try to retrieve the relative values for the progress bar. The current
@@ -361,7 +361,7 @@ void SplashScreen::loadConfig()
             _cProgressBarColor = Color( nRed, nGreen, nBlue );
         }
     }
-    
+
     if( sNativeProgress.getLength() )
     {
         _bNativeProgress = sNativeProgress.toBoolean();
@@ -411,7 +411,7 @@ void SplashScreen::initBitmap()
         do
         {
             haveBitmap = loadBitmap( sExecutePath, aIntroBitmapFiles.getToken( 0, ',', nIndex ) );
-        } 
+        }
         while ( !haveBitmap && ( nIndex >= 0 ) );
 
         if (!haveBitmap) {
@@ -491,7 +491,7 @@ bool SplashScreen::findScreenBitmap(rtl::OUString const & path)
         nWidth  = aScreenArea.GetWidth();
         nHeight = aScreenArea.GetHeight();
     }
-    
+
     // create file name from screen resolution information
     OUStringBuffer aStrBuf( 128 );
     aStrBuf.appendAscii( "intro_" );
@@ -503,7 +503,7 @@ bool SplashScreen::findScreenBitmap(rtl::OUString const & path)
     aStrBuf.append( OUString::valueOf( nWidth ));
     aStrBuf.appendAscii( "x" );
     aStrBuf.append( OUString::valueOf( nHeight ));
-    
+
     OUString aRootIntroFileName = aStrBuf.makeStringAndClear();
     OUString aBmpFileName       = aRootIntroFileName + OUString::createFromAscii(".png");
 
@@ -513,7 +513,7 @@ bool SplashScreen::findScreenBitmap(rtl::OUString const & path)
         aBmpFileName = aRootIntroFileName + OUString::createFromAscii(".bmp");
         haveBitmap   = loadBitmap( path, aBmpFileName );
     }
-    
+
     if ( !haveBitmap )
     {
         aStrBuf.appendAscii( "intro_" );
@@ -521,7 +521,7 @@ bool SplashScreen::findScreenBitmap(rtl::OUString const & path)
         aStrBuf.append( OUString::valueOf( nWidth ));
         aStrBuf.appendAscii( "x" );
         aStrBuf.append( OUString::valueOf( nHeight ));
-        
+
         aRootIntroFileName = aStrBuf.makeStringAndClear();
         aBmpFileName = aRootIntroFileName + OUString::createFromAscii(".png");
 
@@ -545,9 +545,9 @@ bool SplashScreen::findAppBitmap(rtl::OUString const & path)
         aStrBuf.appendAscii( "intro_" );
         aStrBuf.appendAscii( "_" );
         aStrBuf.append( _sAppName );
-        
+
         OUString aRootIntroFileName = aStrBuf.makeStringAndClear();
-        
+
         OUString aBmpFileName = aRootIntroFileName + OUString::createFromAscii( ".png" );
         haveBitmap = loadBitmap( path, aBmpFileName );
         if ( !haveBitmap )
@@ -559,8 +559,8 @@ bool SplashScreen::findAppBitmap(rtl::OUString const & path)
     return haveBitmap;
 }
 
-void SplashScreen::determineProgressRatioValues( 
-    double& rXRelPos, double& rYRelPos, 
+void SplashScreen::determineProgressRatioValues(
+    double& rXRelPos, double& rYRelPos,
     double& rRelWidth, double& rRelHeight )
 {
     sal_Int32 nWidth( 0 );
@@ -601,7 +601,7 @@ void SplashScreen::determineProgressRatioValues(
                     OUString::createFromAscii( szFullScreenProgressPos ) );
                 OUString sFullScreenProgressSize = implReadBootstrapKey(
                     OUString::createFromAscii( szFullScreenProgressSize ) );
-                
+
                 if ( sFullScreenProgressPos.getLength() )
                 {
                     sal_Int32 idx = 0;
@@ -636,27 +636,27 @@ void SplashScreen::Paint( const Rectangle&)
 
     //native drawing
     sal_Bool bNativeOK = sal_False;
-    
+
     // in case of native controls we need to draw directly to the window
     if( _bNativeProgress && IsNativeControlSupported( CTRL_INTROPROGRESS, PART_ENTIRE_CONTROL ) )
     {
         DrawBitmapEx( Point(), _aIntroBmp );
-        
+
         ImplControlValue aValue( _iProgress * _barwidth / _iMax);
         Rectangle aDrawRect( Point(_tlx, _tly), Size( _barwidth, _barheight ) );
         Rectangle aNativeControlRegion, aNativeContentRegion;
 
         if( GetNativeControlRegion( CTRL_INTROPROGRESS, PART_ENTIRE_CONTROL, aDrawRect,
                                              CTRL_STATE_ENABLED, aValue, rtl::OUString(),
-                                             aNativeControlRegion, aNativeContentRegion ) ) 
+                                             aNativeControlRegion, aNativeContentRegion ) )
         {
               long nProgressHeight = aNativeControlRegion.GetHeight();
               aDrawRect.Top() -= (nProgressHeight - _barheight)/2;
               aDrawRect.Bottom() += (nProgressHeight - _barheight)/2;
         }
-        
+
         if( (bNativeOK = DrawNativeControl( CTRL_INTROPROGRESS, PART_ENTIRE_CONTROL, aDrawRect,
-                                            CTRL_STATE_ENABLED, aValue, _sProgressText )) != sal_False ) 
+                                            CTRL_STATE_ENABLED, aValue, _sProgressText )) != sal_False )
         {
             return;
         }
@@ -689,7 +689,7 @@ void SplashScreen::Paint( const Rectangle&)
         else
         {
             // Show flat progress bar without frame.
-            
+
             // border
             _vdev.SetFillColor( _cProgressFrameColor );
             _vdev.SetLineColor();

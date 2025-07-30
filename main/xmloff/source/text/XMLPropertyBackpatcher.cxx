@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -52,7 +52,7 @@ XMLPropertyBackpatcher<A>::XMLPropertyBackpatcher(
 
 template<class A>
 XMLPropertyBackpatcher<A>::XMLPropertyBackpatcher(
-	const OUString& sPropName, 
+	const OUString& sPropName,
 	const OUString& sPreserveName,
 	sal_Bool bDefault,
 	A aDef)
@@ -106,12 +106,12 @@ void XMLPropertyBackpatcher<A>::ResolveId(
 {
 	// insert ID into ID map
 	aIDMap[sName] = aValue;
-	
+
 	// backpatch old references, if backpatch list exists
 	if (aBackpatchListMap.count(sName))
 	{
 		// aah, we have a backpatch list!
-		BackpatchListType* pList = 
+		BackpatchListType* pList =
 			(BackpatchListType*)aBackpatchListMap[sName];
 
 		// a) remove list from list map
@@ -276,21 +276,21 @@ XMLPropertyBackpatcher<OUString>& XMLTextImportHelper::GetSequenceNameBP()
 }
 
 void XMLTextImportHelper::InsertFootnoteID(
-	const OUString& sXMLId, 
+	const OUString& sXMLId,
 	sal_Int16 nAPIId)
 {
 	GetFootnoteBP().ResolveId(sXMLId, nAPIId);
 }
 
 void XMLTextImportHelper::ProcessFootnoteReference(
-	const OUString& sXMLId, 
+	const OUString& sXMLId,
 	const Reference<XPropertySet> & xPropSet)
 {
 	GetFootnoteBP().SetProperty(xPropSet, sXMLId);
 }
 
 void XMLTextImportHelper::InsertSequenceID(
-	const OUString& sXMLId, 
+	const OUString& sXMLId,
 	const OUString& sName,
 	sal_Int16 nAPIId)
 {
@@ -299,7 +299,7 @@ void XMLTextImportHelper::InsertSequenceID(
 }
 
 void XMLTextImportHelper::ProcessSequenceReference(
-	const OUString& sXMLId, 
+	const OUString& sXMLId,
 	const Reference<XPropertySet> & xPropSet)
 {
 	GetSequenceIdBP().SetProperty(xPropSet, sXMLId);

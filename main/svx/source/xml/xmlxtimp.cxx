@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -88,7 +88,7 @@ enum SvxXMLTableImportContextEnum { stice_unknown, stice_color, stice_marker, st
 class SvxXMLTableImportContext : public SvXMLImportContext
 {
 public:
-	SvxXMLTableImportContext( SvXMLImport& rImport, sal_uInt16 nPrfx, const OUString& rLName, const uno::Reference< XAttributeList >& xAttrList, SvxXMLTableImportContextEnum eContext, const uno::Reference< XNameContainer >& xTable, 
+	SvxXMLTableImportContext( SvXMLImport& rImport, sal_uInt16 nPrfx, const OUString& rLName, const uno::Reference< XAttributeList >& xAttrList, SvxXMLTableImportContextEnum eContext, const uno::Reference< XNameContainer >& xTable,
 		sal_Bool bOOoFormat );
 	virtual ~SvxXMLTableImportContext();
 
@@ -138,8 +138,8 @@ SvXMLImportContext *SvxXMLTableImportContext::CreateChildContext( sal_uInt16 nPr
 			{
 				const OUString& rAttrName = xAttrList->getNameByIndex( i );
 				OUString aLocalName;
-				sal_uInt16 nPrefix_ = 
-					GetImport().GetNamespaceMap().GetKeyByAttrName( rAttrName, 
+				sal_uInt16 nPrefix_ =
+					GetImport().GetNamespaceMap().GetKeyByAttrName( rAttrName,
 																&aLocalName );
 				if( XML_NAMESPACE_XLINK == nPrefix_ &&
 					stice_bitmap == meContext &&
@@ -331,9 +331,9 @@ void SvxXMLTableImportContext::importBitmap( sal_uInt16 nPrfx, const OUString& r
 ///////////////////////////////////////////////////////////////////////
 
 // #110680#
-SvxXMLXTableImport::SvxXMLXTableImport( 
+SvxXMLXTableImport::SvxXMLXTableImport(
 	const ::com::sun::star::uno::Reference< ::com::sun::star::lang::XMultiServiceFactory > xServiceFactory,
-	const uno::Reference< XNameContainer > & rTable, 
+	const uno::Reference< XNameContainer > & rTable,
 	uno::Reference< XGraphicObjectResolver >& xGrfResolver )
 :	SvXMLImport(xServiceFactory, 0),
 	mrTable( rTable )

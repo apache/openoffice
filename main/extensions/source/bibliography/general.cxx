@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -306,7 +306,7 @@ BibGeneralPage::BibGeneralPage(Window* pParent, BibDataManager* pMan):
     // the control should be a bit smaller than the fixed text
     Size aControlSize(aIdentifierFT.GetSizePixel());
     aControlSize.Width() = aControlSize.Width() * 8 / 10;
-    
+
     AddControlWithError( lcl_GetColumnName( pMapping, IDENTIFIER_POS ), lcl_MovePoint( aIdentifierFT ),
         aControlSize, sTableErrorString, aIdentifierFT.GetText(),
 		HID_BIB_IDENTIFIER_POS, 0 );
@@ -317,7 +317,7 @@ BibGeneralPage::BibGeneralPage(Window* pParent, BibDataManager* pMan):
 		aAuthTypeFT.GetText(), HID_BIB_AUTHORITYTYPE_POS, 1 );
 
 	::Point aYearPos = lcl_MovePoint(aYearFT);
-    AddControlWithError( lcl_GetColumnName( pMapping, YEAR_POS ), aYearPos, 
+    AddControlWithError( lcl_GetColumnName( pMapping, YEAR_POS ), aYearPos,
         aControlSize, sTableErrorString, aYearFT.GetText(), HID_BIB_YEAR_POS, 4 );
 
 	AddControlWithError( lcl_GetColumnName(pMapping, AUTHOR_POS), lcl_MovePoint(aAuthorFT),
@@ -341,19 +341,19 @@ BibGeneralPage::BibGeneralPage(Window* pParent, BibDataManager* pMan):
 	AddControlWithError( lcl_GetColumnName( pMapping, CHAPTER_POS ), lcl_MovePoint(aChapterFT),
         aControlSize, sTableErrorString, aChapterFT.GetText(), HID_BIB_CHAPTER_POS, 10 );
 
-    AddControlWithError( lcl_GetColumnName( pMapping, PAGES_POS ), lcl_MovePoint( aPagesFT ), 
+    AddControlWithError( lcl_GetColumnName( pMapping, PAGES_POS ), lcl_MovePoint( aPagesFT ),
         aControlSize, sTableErrorString, aPagesFT.GetText(), HID_BIB_PAGES_POS, 19 );
 
-    AddControlWithError( lcl_GetColumnName( pMapping, EDITOR_POS ), lcl_MovePoint( aEditorFT ), 
+    AddControlWithError( lcl_GetColumnName( pMapping, EDITOR_POS ), lcl_MovePoint( aEditorFT ),
         aControlSize, sTableErrorString, aEditorFT.GetText(), HID_BIB_EDITOR_POS, 12 );
 
-    AddControlWithError( lcl_GetColumnName( pMapping, EDITION_POS ), lcl_MovePoint(aEditionFT), 
+    AddControlWithError( lcl_GetColumnName( pMapping, EDITION_POS ), lcl_MovePoint(aEditionFT),
         aControlSize, sTableErrorString, aEditionFT.GetText(), HID_BIB_EDITION_POS, 11 );
 
 	AddControlWithError( lcl_GetColumnName(pMapping, BOOKTITLE_POS), lcl_MovePoint(aBooktitleFT),
         aControlSize, sTableErrorString, aBooktitleFT.GetText(), HID_BIB_BOOKTITLE_POS, 9 );
 
-    AddControlWithError( lcl_GetColumnName( pMapping, VOLUME_POS ), lcl_MovePoint( aVolumeFT ), 
+    AddControlWithError( lcl_GetColumnName( pMapping, VOLUME_POS ), lcl_MovePoint( aVolumeFT ),
         aControlSize, sTableErrorString, aVolumeFT.GetText(), HID_BIB_VOLUME_POS, 24 );
 
 	AddControlWithError( lcl_GetColumnName( pMapping, HOWPUBLISHED_POS ), lcl_MovePoint( aHowpublishedFT ),
@@ -365,46 +365,46 @@ BibGeneralPage::BibGeneralPage(Window* pParent, BibDataManager* pMan):
 	AddControlWithError( lcl_GetColumnName( pMapping, INSTITUTION_POS ), lcl_MovePoint( aInstitutionFT ),
         aControlSize, sTableErrorString, aInstitutionFT.GetText(), HID_BIB_INSTITUTION_POS, 14 );
 
-    AddControlWithError( lcl_GetColumnName( pMapping, SCHOOL_POS ), lcl_MovePoint( aSchoolFT ), 
+    AddControlWithError( lcl_GetColumnName( pMapping, SCHOOL_POS ), lcl_MovePoint( aSchoolFT ),
         aControlSize, sTableErrorString, aSchoolFT.GetText(), HID_BIB_SCHOOL_POS, 20 );
 
 	AddControlWithError( lcl_GetColumnName( pMapping, REPORTTYPE_POS ), lcl_MovePoint( aReportTypeFT ),
         aControlSize, sTableErrorString, aReportTypeFT.GetText(), HID_BIB_REPORTTYPE_POS, 23 );
 
-    AddControlWithError( lcl_GetColumnName( pMapping, MONTH_POS ), lcl_MovePoint( aMonthFT ), 
+    AddControlWithError( lcl_GetColumnName( pMapping, MONTH_POS ), lcl_MovePoint( aMonthFT ),
         aControlSize, sTableErrorString, aMonthFT.GetText(), HID_BIB_MONTH_POS, 3 );
 
 	AddControlWithError( lcl_GetColumnName( pMapping, JOURNAL_POS ), lcl_MovePoint( aJournalFT ),
         aControlSize, sTableErrorString, aJournalFT.GetText(), HID_BIB_JOURNAL_POS, 15 );
 
-    AddControlWithError( lcl_GetColumnName( pMapping, NUMBER_POS ), lcl_MovePoint( aNumberFT ), 
+    AddControlWithError( lcl_GetColumnName( pMapping, NUMBER_POS ), lcl_MovePoint( aNumberFT ),
         aControlSize, sTableErrorString, aNumberFT.GetText(), HID_BIB_NUMBER_POS, 17 );
 
-    AddControlWithError( lcl_GetColumnName( pMapping, SERIES_POS ), lcl_MovePoint( aSeriesFT ), 
+    AddControlWithError( lcl_GetColumnName( pMapping, SERIES_POS ), lcl_MovePoint( aSeriesFT ),
         aControlSize, sTableErrorString, aSeriesFT.GetText(), HID_BIB_SERIES_POS, 21 );
 
-    AddControlWithError( lcl_GetColumnName( pMapping, ANNOTE_POS ), lcl_MovePoint( aAnnoteFT ), 
+    AddControlWithError( lcl_GetColumnName( pMapping, ANNOTE_POS ), lcl_MovePoint( aAnnoteFT ),
         aControlSize, sTableErrorString, aAnnoteFT.GetText(), HID_BIB_ANNOTE_POS, 8 );
 
-    AddControlWithError( lcl_GetColumnName( pMapping, NOTE_POS ), lcl_MovePoint( aNoteFT ), 
+    AddControlWithError( lcl_GetColumnName( pMapping, NOTE_POS ), lcl_MovePoint( aNoteFT ),
         aControlSize, sTableErrorString, aNoteFT.GetText(), HID_BIB_NOTE_POS, 16 );
 
-    AddControlWithError( lcl_GetColumnName( pMapping, URL_POS ), lcl_MovePoint( aURLFT ), 
+    AddControlWithError( lcl_GetColumnName( pMapping, URL_POS ), lcl_MovePoint( aURLFT ),
         aControlSize, sTableErrorString, aURLFT.GetText(), HID_BIB_URL_POS, 25 );
 
 	AddControlWithError( lcl_GetColumnName( pMapping, CUSTOM1_POS ), lcl_MovePoint( aCustom1FT ),
         aControlSize, sTableErrorString, aCustom1FT.GetText(), HID_BIB_CUSTOM1_POS, 26 );
 
-    AddControlWithError( lcl_GetColumnName( pMapping, CUSTOM2_POS ), lcl_MovePoint( aCustom2FT ), 
+    AddControlWithError( lcl_GetColumnName( pMapping, CUSTOM2_POS ), lcl_MovePoint( aCustom2FT ),
         aControlSize, sTableErrorString, aCustom2FT.GetText(), HID_BIB_CUSTOM2_POS, 27 );
 
-    AddControlWithError( lcl_GetColumnName( pMapping, CUSTOM3_POS ), lcl_MovePoint( aCustom3FT ), 
+    AddControlWithError( lcl_GetColumnName( pMapping, CUSTOM3_POS ), lcl_MovePoint( aCustom3FT ),
         aControlSize, sTableErrorString, aCustom3FT.GetText(), HID_BIB_CUSTOM3_POS, 28 );
 
-    AddControlWithError( lcl_GetColumnName( pMapping, CUSTOM4_POS ), lcl_MovePoint( aCustom4FT ), 
+    AddControlWithError( lcl_GetColumnName( pMapping, CUSTOM4_POS ), lcl_MovePoint( aCustom4FT ),
         aControlSize, sTableErrorString, aCustom4FT.GetText(), HID_BIB_CUSTOM4_POS, 29 );
 
-    AddControlWithError( lcl_GetColumnName( pMapping, CUSTOM5_POS ), lcl_MovePoint( aCustom5FT ), 
+    AddControlWithError( lcl_GetColumnName( pMapping, CUSTOM5_POS ), lcl_MovePoint( aCustom5FT ),
         aControlSize, sTableErrorString, aCustom5FT.GetText(), HID_BIB_CUSTOM5_POS, 30 );
 
 	xPosListener = new BibPosListener(this);

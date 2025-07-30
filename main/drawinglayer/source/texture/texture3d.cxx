@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -35,7 +35,7 @@ namespace drawinglayer
     namespace texture
     {
         GeoTexSvxMono::GeoTexSvxMono(
-            const basegfx::BColor& rSingleColor, 
+            const basegfx::BColor& rSingleColor,
             double fOpacity)
         :	maSingleColor(rSingleColor),
             mfOpacity(fOpacity)
@@ -45,8 +45,8 @@ namespace drawinglayer
         bool GeoTexSvxMono::operator==(const GeoTexSvx& rGeoTexSvx) const
         {
             const GeoTexSvxMono* pCompare = dynamic_cast< const GeoTexSvxMono* >(&rGeoTexSvx);
-            
-            return (pCompare 
+
+            return (pCompare
                 && maSingleColor == pCompare->maSingleColor
                 && mfOpacity == pCompare->mfOpacity);
         }
@@ -70,7 +70,7 @@ namespace drawinglayer
     namespace texture
     {
         GeoTexSvxBitmapEx::GeoTexSvxBitmapEx(
-            const BitmapEx& rBitmapEx, 
+            const BitmapEx& rBitmapEx,
             const basegfx::B2DRange& rRange)
         :	maBitmapEx(rBitmapEx),
             mpReadBitmap(0),
@@ -101,7 +101,7 @@ namespace drawinglayer
 
                 mpReadTransparence = maTransparence.AcquireReadAccess();
             }
-            
+
             mfMulX = (double)mpReadBitmap->Width() / maSize.getX();
             mfMulY = (double)mpReadBitmap->Height() / maSize.getY();
 
@@ -190,8 +190,8 @@ namespace drawinglayer
                 const double fConvertColor(1.0 / 255.0);
                 const BitmapColor aBMCol(mpReadBitmap->GetColor(nY, nX));
                 const basegfx::BColor aBSource(
-                    (double)aBMCol.GetRed() * fConvertColor, 
-                    (double)aBMCol.GetGreen() * fConvertColor, 
+                    (double)aBMCol.GetRed() * fConvertColor,
+                    (double)aBMCol.GetGreen() * fConvertColor,
                     (double)aBMCol.GetBlue() * fConvertColor);
 
                 rBColor = aBSource;
@@ -200,7 +200,7 @@ namespace drawinglayer
                 {
                     // when we have a transparence, make use of it
                     const sal_uInt8 aLuminance(impGetTransparence(nX, nY));
-                    
+
                     rfOpacity = ((double)(0xff - aLuminance) * (1.0 / 255.0));
                 }
                 else
@@ -282,7 +282,7 @@ namespace drawinglayer
             {
                 fX += maSize.getX();
             }
-                
+
             if(fY < 0.0)
             {
                 fY += maSize.getY();
@@ -292,7 +292,7 @@ namespace drawinglayer
         }
 
         GeoTexSvxBitmapExTiled::GeoTexSvxBitmapExTiled(
-            const BitmapEx& rBitmapEx, 
+            const BitmapEx& rBitmapEx,
             const basegfx::B2DRange& rRange,
             double fOffsetX,
             double fOffsetY)
@@ -329,7 +329,7 @@ namespace drawinglayer
     namespace texture
     {
         GeoTexSvxMultiHatch::GeoTexSvxMultiHatch(
-            const primitive3d::HatchTexturePrimitive3D& rPrimitive, 
+            const primitive3d::HatchTexturePrimitive3D& rPrimitive,
             double fLogicPixelSize)
         :	mfLogicPixelSize(fLogicPixelSize),
             mp0(0L),
@@ -342,26 +342,26 @@ namespace drawinglayer
             maColor = rHatch.getColor();
             mbFillBackground = rHatch.isFillBackground();
             mp0 = new GeoTexSvxHatch(
-                aOutlineRange, 
-                aOutlineRange, 
-                rHatch.getDistance(), 
+                aOutlineRange,
+                aOutlineRange,
+                rHatch.getDistance(),
                 fAngleA);
 
             if(attribute::HATCHSTYLE_DOUBLE == rHatch.getStyle() || attribute::HATCHSTYLE_TRIPLE == rHatch.getStyle())
             {
                 mp1 = new GeoTexSvxHatch(
-                    aOutlineRange, 
-                    aOutlineRange, 
-                    rHatch.getDistance(), 
+                    aOutlineRange,
+                    aOutlineRange,
+                    rHatch.getDistance(),
                     fAngleA + F_PI2);
             }
 
             if(attribute::HATCHSTYLE_TRIPLE == rHatch.getStyle())
             {
                 mp2 = new GeoTexSvxHatch(
-                    aOutlineRange, 
-                    aOutlineRange, 
-                    rHatch.getDistance(), 
+                    aOutlineRange,
+                    aOutlineRange,
+                    rHatch.getDistance(),
                     fAngleA + F_PI4);
             }
         }
@@ -404,7 +404,7 @@ namespace drawinglayer
                 rfOpacity = 0.0;
             }
         }
-        
+
         void GeoTexSvxMultiHatch::modifyOpacity(const basegfx::B2DPoint& rUV, double& rfOpacity) const
         {
             if(mbFillBackground || impIsOnHatch(rUV))

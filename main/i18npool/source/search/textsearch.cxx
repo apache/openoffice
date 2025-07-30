@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -120,7 +120,7 @@ void TextSearch::setOptions( const SearchOptions& rOptions ) throw( RuntimeExcep
                     aSrchPara.Locale);
     }
     else if( xTranslit.is() )
-        xTranslit = 0; 
+        xTranslit = 0;
 
     // Create Transliteration for 2<->1, 2<->2 transliteration
     if ( aSrchPara.transliterateFlags & COMPLEX_TRANS_MASK )
@@ -165,7 +165,7 @@ void TextSearch::setOptions( const SearchOptions& rOptions ) throw( RuntimeExcep
 	sSrchStr2 = xTranslit2->transliterateString2String(
 	        aSrchPara.searchString, 0, aSrchPara.searchString.getLength());
 
-    // When start or end of search string is a complex script type, we need to 
+    // When start or end of search string is a complex script type, we need to
     // make sure the result boundary is not located in the middle of cell.
     checkCTLStart = (xBreak.is() && (xBreak->getScriptType(sSrchStr, 0) ==
                 ScriptType::COMPLEX));
@@ -190,7 +190,7 @@ void TextSearch::setOptions( const SearchOptions& rOptions ) throw( RuntimeExcep
 
             nLimit = pWLD->GetLimit();
 			break;
-		
+
 		default:
             fnForward = &TextSearch::NSrchFrwrd;
             fnBackward = &TextSearch::NSrchBkwrd;
@@ -546,7 +546,7 @@ sal_Int32 TextSearch::GetDiff( const sal_Unicode cChr ) const
 {
     TextSearchJumpTable *pJump;
     OUString sSearchKey;
-    
+
     if ( bUsePrimarySrchStr ) {
       pJump = pJumpTable;
       sSearchKey = sSrchStr;
@@ -721,7 +721,7 @@ SearchResult TextSearch::NSrchBkwrd( const OUString& searchStr, sal_Int32 startP
 void TextSearch::RESrchPrepare( const ::com::sun::star::util::SearchOptions& rOptions)
 {
 	// select the transliterated pattern string
-	const OUString& rPatternStr = 
+	const OUString& rPatternStr =
 		(rOptions.transliterateFlags & REGEX_TRANS_MASK) ? sSrchStr
 		: ((rOptions.transliterateFlags & COMPLEX_TRANS_MASK) ? sSrchStr2 : rOptions.searchString);
 

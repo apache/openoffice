@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -786,14 +786,14 @@ namespace
     }
 }
 
-static ::rtl::OUString getConfigurationStringValue( 
-    const ::rtl::OUString& rPackage, 
-    const ::rtl::OUString& rRelPath, 
+static ::rtl::OUString getConfigurationStringValue(
+    const ::rtl::OUString& rPackage,
+    const ::rtl::OUString& rRelPath,
     const ::rtl::OUString& rKey,
     const ::rtl::OUString& rDefaultValue )
 {
     ::rtl::OUString aDefVal( rDefaultValue );
-                    
+
     try
     {
         ::comphelper::ConfigurationHelper::readDirectKey(
@@ -856,13 +856,13 @@ void SfxApplication::OfaExec_Impl( SfxRequest& rReq )
                         ::comphelper::getProcessComponentContext() ) );
 
                 // read repository URL from configuration
-                ::rtl::OUString sTemplRepoURL = 
+                ::rtl::OUString sTemplRepoURL =
                     getConfigurationStringValue(
                         ::rtl::OUString::createFromAscii("org.openoffice.Office.Common"),
                         ::rtl::OUString::createFromAscii("Dictionaries"),
                         ::rtl::OUString::createFromAscii("RepositoryURL"),
                         ::rtl::OUString());
-                    
+
                 if ( xSystemShell.is() && sTemplRepoURL.getLength() > 0 )
                 {
                     ::rtl::OUStringBuffer aURLBuf( sTemplRepoURL );
@@ -875,11 +875,11 @@ void SfxApplication::OfaExec_Impl( SfxRequest& rReq )
                         ::rtl::OUString::createFromAscii("L10N"),
                         ::rtl::OUString::createFromAscii("ooLocale"),
                         ::rtl::OUString::createFromAscii("en-US"));
-                    
+
                     aURLBuf.append( sLocale );
-                    xSystemShell->execute( 
-                        aURLBuf.makeStringAndClear(), 
-                        ::rtl::OUString(), 
+                    xSystemShell->execute(
+                        aURLBuf.makeStringAndClear(),
+                        ::rtl::OUString(),
                         css::system::SystemShellExecuteFlags::DEFAULTS );
                 }
             }

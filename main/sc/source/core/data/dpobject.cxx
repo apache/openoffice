@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -186,7 +186,7 @@ ScDPObject::ScDPObject(const ScDPObject& r) :
 	pSheetDesc( NULL ),
 	pImpDesc( NULL ),
 	pServDesc( NULL ),
-    mpTableData(static_cast<ScDPTableData*>(NULL)), 
+    mpTableData(static_cast<ScDPTableData*>(NULL)),
 	pOutput( NULL ),
 	bSettingsChanged( sal_False ),
 	bAlive( sal_False ),
@@ -365,7 +365,7 @@ bool ScDPObject::IsDataDescriptionCell(const ScAddress& rPos)
 
     long nDataDimCount = pSaveData->GetDataDimensionCount();
     if (nDataDimCount != 1)
-        // There has to be exactly one data dimension for the description to 
+        // There has to be exactly one data dimension for the description to
         // appear at top-left corner.
         return false;
 
@@ -1129,7 +1129,7 @@ bool lcl_Dequote( const String& rSource, xub_StrLen nStartPos, xub_StrLen& rEndP
             }
             else
                 aBuffer.append( cNext );
-            
+
             ++nPos;
         }
         // no closing quote before the end of the string -> error (bRet still false)
@@ -1306,7 +1306,7 @@ bool lcl_IsAtStart( const String& rList, const String& rSearch, sal_Int32& rMatc
             if ( cNext == ' ' || ( bAllowBracket && cNext == '[' ) )
                 bValid = true;
         }
-              
+
         if ( bValid )
         {
             rMatched = nMatchList;
@@ -1820,7 +1820,7 @@ void lcl_FillOldFields( ScPivotFieldVector& rFields,
 
 				rField.nFuncMask = nMask;
 				rField.nFuncCount = lcl_CountBits( nMask );
-				
+
                 aPos.push_back( ScUnoHelpFunctions::GetLongProperty( xDimProp,
 									rtl::OUString::createFromAscii(DP_PROP_POSITION) ) );
 
@@ -2524,10 +2524,10 @@ String ScDPCollection::CreateNewName( sal_uInt16 nMin ) const
 // Wang Xu Ming -- 2009-8-17
 // DataPilot Migration - Cache&&Performance
 long ScDPObject::GetCacheId() const
-{ 
+{
     if ( GetSaveData() )
         return GetSaveData()->GetCacheId();
-    else 
+    else
         return mnCacheId;
 }
 sal_uLong ScDPObject::RefreshCache()
@@ -2539,8 +2539,8 @@ sal_uLong ScDPObject::RefreshCache()
     }
 
     CreateObjects();
-    sal_uLong nErrId = 0; 
-    if ( pSheetDesc) 
+    sal_uLong nErrId = 0;
+    if ( pSheetDesc)
         nErrId =  pSheetDesc->CheckValidate( pDoc );
     if ( nErrId == 0 )
     {
@@ -2560,7 +2560,7 @@ sal_uLong ScDPObject::RefreshCache()
             //cache failed
             DBG_ASSERT( pCache , " pCache == NULL" );
             return STR_ERR_DATAPILOTSOURCE;
-        }  
+        }
 
         nNewId = pCache->GetId();
 
@@ -2575,7 +2575,7 @@ sal_uLong ScDPObject::RefreshCache()
                 (*pDPCollection)[i]->SetRefresh();
 
             }
-        }      
+        }
         DBG_ASSERT( GetCacheId() >= 0, " GetCacheId() >= 0 " );
     }
     return nErrId;

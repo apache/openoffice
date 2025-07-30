@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -41,14 +41,14 @@ SAL_IMPLEMENT_MAIN_WITH_ARGS(argc, argv)
     }
 
     Options options(argv[0]);
-    try 
+    try
     {
         if (!options.initOptions(args))
            return (0);
     }
     catch( IllegalArgument& e)
     {
-        fprintf(stderr, "Illegal argument: %s\n%s", 
+        fprintf(stderr, "Illegal argument: %s\n%s",
             e.m_message.getStr(),
             options.prepareVersion().getStr());
         return (99);
@@ -118,21 +118,21 @@ SAL_IMPLEMENT_MAIN_WITH_ARGS(argc, argv)
             OString strippedFileName(sysFileName.copy(sysFileName.lastIndexOf(SEPARATOR) + 1));
             outputFileUrl = convertToFileUrl(options.getOption("-O"));
             sal_Char c = outputFileUrl.getStr()[outputFileUrl.getLength()-1];
-            
+
             if ( c != '/' )
                 outputFileUrl += OString::valueOf('/');
-            
+
             outputFileUrl += strippedFileName.replaceAt(strippedFileName.getLength() -3 , 3, "urd");
         } else
         {
             outputFileUrl = convertToFileUrl(sysFileName.replaceAt(sysFileName.getLength() -3 , 3, "urd"));
         }
-        
+
         if ( nErrors )
             removeIfExists(outputFileUrl);
         else
             nErrors = produceFile(outputFileUrl);
-		
+
         idlc()->reset();
     }
 
@@ -140,7 +140,7 @@ SAL_IMPLEMENT_MAIN_WITH_ARGS(argc, argv)
     {
         fprintf(stderr, "%s: detected %ld errors%s",
             options.getProgramName().getStr(),
-            sal::static_int_cast< long >(nErrors), 
+            sal::static_int_cast< long >(nErrors),
             options.prepareVersion().getStr());
     } else
     {

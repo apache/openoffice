@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -281,42 +281,42 @@ namespace logging
         OSL_VERIFY( m_aHandlerHelper.getEncoding( sEncoding ) );
         return sEncoding;
     }
-    
+
     //--------------------------------------------------------------------
     void SAL_CALL FileHandler::setEncoding( const ::rtl::OUString& _rEncoding ) throw (RuntimeException)
     {
         MethodGuard aGuard( *this );
         OSL_VERIFY( m_aHandlerHelper.setEncoding( _rEncoding ) );
     }
-    
+
     //--------------------------------------------------------------------
     Reference< XLogFormatter > SAL_CALL FileHandler::getFormatter() throw (RuntimeException)
     {
         MethodGuard aGuard( *this );
         return m_aHandlerHelper.getFormatter();
     }
-    
+
     //--------------------------------------------------------------------
     void SAL_CALL FileHandler::setFormatter( const Reference< XLogFormatter >& _rxFormatter ) throw (RuntimeException)
     {
         MethodGuard aGuard( *this );
         m_aHandlerHelper.setFormatter( _rxFormatter );
     }
-    
+
     //--------------------------------------------------------------------
     ::sal_Int32 SAL_CALL FileHandler::getLevel() throw (RuntimeException)
     {
         MethodGuard aGuard( *this );
         return m_aHandlerHelper.getLevel();
     }
-    
+
     //--------------------------------------------------------------------
     void SAL_CALL FileHandler::setLevel( ::sal_Int32 _nLevel ) throw (RuntimeException)
     {
         MethodGuard aGuard( *this );
         m_aHandlerHelper.setLevel( _nLevel );
     }
-    
+
     //--------------------------------------------------------------------
     void SAL_CALL FileHandler::flush(  ) throw (RuntimeException)
     {
@@ -332,7 +332,7 @@ namespace logging
                 m_pFile->sync();
         OSL_ENSURE(res == ::osl::FileBase::E_None, "FileHandler::flush: Could not sync logfile to filesystem.");
     }
-    
+
     //--------------------------------------------------------------------
     ::sal_Bool SAL_CALL FileHandler::publish( const LogRecord& _rRecord ) throw (RuntimeException)
     {
@@ -386,7 +386,7 @@ namespace logging
     {
         return getImplementationName_static();
     }
-    
+
     //--------------------------------------------------------------------
     ::sal_Bool SAL_CALL FileHandler::supportsService( const ::rtl::OUString& _rServiceName ) throw(RuntimeException)
     {
@@ -399,19 +399,19 @@ namespace logging
                 return sal_True;
         return sal_False;
     }
-    
+
     //--------------------------------------------------------------------
     Sequence< ::rtl::OUString > SAL_CALL FileHandler::getSupportedServiceNames() throw(RuntimeException)
     {
         return getSupportedServiceNames_static();
     }
-    
+
     //--------------------------------------------------------------------
     ::rtl::OUString SAL_CALL FileHandler::getImplementationName_static()
     {
         return ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "com.sun.star.comp.extensions.FileHandler" ) );
     }
-    
+
     //--------------------------------------------------------------------
     Sequence< ::rtl::OUString > SAL_CALL FileHandler::getSupportedServiceNames_static()
     {

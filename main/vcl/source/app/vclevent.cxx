@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -102,7 +102,7 @@ VclEventListeners2::VclEventListeners2()
 VclEventListeners2::~VclEventListeners2()
 {
 }
-    
+
 void VclEventListeners2::addListener( const Link& i_rLink )
 {
     // ensure uniqueness
@@ -131,7 +131,7 @@ void VclEventListeners2::removeListener( const Link& i_rLink )
 void VclEventListeners2::callListeners( VclSimpleEvent* i_pEvent )
 {
     vcl::DeletionListener aDel( this );
-    
+
     m_aIterators.push_back(ListenerIt(m_aListeners.begin()));
     size_t nIndex = m_aIterators.size() - 1;
     while( ! aDel.isDeleted() && m_aIterators[ nIndex ].m_aIt != m_aListeners.end() )

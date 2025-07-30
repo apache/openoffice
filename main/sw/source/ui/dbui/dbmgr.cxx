@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -851,10 +851,10 @@ void lcl_RemoveSectionLinks( SwWrtShell& rWorkShell )
             aSectionData.SetType( CONTENT_SECTION );
             aSectionData.SetLinkFileName( String() );
             rWorkShell.UpdateSection( nSection, aSectionData );
-        }    
-    }    
+        }
+    }
     rWorkShell.SetLabelDoc( sal_False );
-}    
+}
 
 sal_Bool SwNewDBMgr::MergeMailFiles(SwWrtShell* pSourceShell,
         const SwMergeDescriptor& rMergeDescriptor)
@@ -1104,7 +1104,7 @@ sal_Bool SwNewDBMgr::MergeMailFiles(SwWrtShell* pSourceShell,
                                 if( bSynchronizedDoc )
                                 {
                                     lcl_RemoveSectionLinks( rWorkShell );
-                                }    
+                                }
 
                                 // insert the document into the target document
                                 rWorkShell.SttEndDoc(sal_False);
@@ -1275,9 +1275,9 @@ sal_Bool SwNewDBMgr::MergeMailFiles(SwWrtShell* pSourceShell,
                 nEndRow = pImpl->pMergeData ? pImpl->pMergeData->xResultSet->getRow() : 0;
             } while( !bCancel &&
                 (bSynchronizedDoc && (nStartRow != nEndRow)? ExistsNextRecord() : ToNextMergeRecord()));
-            
+
             aPrtMonDlg.Show( sal_False );
-            
+
             // save the single output document
             if(rMergeDescriptor.bCreateSingleFile || bAsSingleFile)
             {
@@ -1323,18 +1323,18 @@ sal_Bool SwNewDBMgr::MergeMailFiles(SwWrtShell* pSourceShell,
                         aVal >>= _sVal;
                     }
         #endif
-                    // printing should be done synchronously otherwise the document 
+                    // printing should be done synchronously otherwise the document
                     // might already become invalid during the process
                     uno::Sequence< beans::PropertyValue > aOptions( rMergeDescriptor.aPrintOptions );
                     const sal_Int32 nOpts = aOptions.getLength();
                     aOptions.realloc( nOpts + 1 );
                     aOptions[ nOpts ].Name = rtl::OUString::createFromAscii( "Wait" );
                     aOptions[ nOpts ].Value <<= sal_True ;
-//                    aPrintArgs.Put(SfxBoolItem(FN_QRY_MERGE, sal_True) ); 
+//                    aPrintArgs.Put(SfxBoolItem(FN_QRY_MERGE, sal_True) );
 //                    // #i52629# aynchronous printing should only be done in silent mode - otherwise
 //                    // the printer dialog does not come up
 //                    aPrintArgs.Put( SfxBoolItem( SID_ASYNCHRON, rMergeDescriptor.bPrintAsync ));
-                    // move print options 
+                    // move print options
                     const beans::PropertyValue* pPrintOptions = rMergeDescriptor.aPrintOptions.getConstArray();
                     for( sal_Int32 nOption = 0; nOption < rMergeDescriptor.aPrintOptions.getLength(); ++nOption)
                     {
@@ -1353,11 +1353,11 @@ sal_Bool SwNewDBMgr::MergeMailFiles(SwWrtShell* pSourceShell,
 //                    const SwModuleOptions * pModOpt = SW_MOD()->GetModuleConfig();
 //                    if (pModOpt->IsSinglePrintJob())
 //                    {
-//                    }    
+//                    }
 //                    else
 //                    {
                         pTargetView->ExecPrint( aOptions, IsMergeSilent(), rMergeDescriptor.bPrintAsync );
-//                    }    
+//                    }
                 }
                 xTargetDocShell->DoClose();
             }
@@ -2592,7 +2592,7 @@ void SwNewDBMgr::ExecuteFormLetter(	SwWrtShell& rSh,
                     pWorkDoc->SetNewDBMgr( this );
 
                     SwMergeDescriptor aMergeDesc( pImpl->pMergeDialog->GetMergeType(), pView->GetWrtShell(), aDescriptor );
-                    aMergeDesc.sSaveToFilter = pImpl->pMergeDialog->GetSaveFilter(); 
+                    aMergeDesc.sSaveToFilter = pImpl->pMergeDialog->GetSaveFilter();
                     aMergeDesc.bCreateSingleFile = !pImpl->pMergeDialog->IsSaveIndividualDocs();
                     if( !aMergeDesc.bCreateSingleFile && pImpl->pMergeDialog->IsGenerateFromDataBase() )
                     {
@@ -2974,7 +2974,7 @@ sal_Int32 SwNewDBMgr::MergeDocuments( SwMailMergeConfigItem& rMMConfig,
             if( bSynchronizedDoc )
             {
                 lcl_RemoveSectionLinks( rWorkShell );
-            }    
+            }
 
             // insert the document into the target document
             rWorkShell.SttEndDoc(sal_False);

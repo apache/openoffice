@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -302,7 +302,7 @@ void ScDPSource::SetOrientation(long nColumn, sal_uInt16 nNew)
         case sheet::DataPilotFieldOrientation_HIDDEN:
             break;
             // End Comments
-		default: 
+		default:
 			DBG_ERROR( "ScDPSource::SetOrientation: unexpected orientation" );
 			break;
 	}
@@ -687,7 +687,7 @@ void ScDPSource::FillCalcInfo(bool bIsRow, ScDPTableData::CalcInfo& rInfo, bool 
             pLevel->EvaluateSortOrder();
 
             // no layout flags for column fields, only for row fields
-            pLevel->SetEnableLayout( bIsRow );           
+            pLevel->SetEnableLayout( bIsRow );
 
             if ( pLevel->GetAutoShow().IsEnabled )
                 rHasAutoShow = sal_True;
@@ -767,7 +767,7 @@ void ScDPSource::FilterCacheTableByPageDimensions()
         ScDPCacheTable::Criterion aFilter;
         aFilter.mnFieldIndex = static_cast<sal_Int32>(nField);
         aFilter.mpFilter.reset(new ScDPCacheTable::GroupFilter(/*rSharedString*/));
-        ScDPCacheTable::GroupFilter* pGrpFilter = 
+        ScDPCacheTable::GroupFilter* pGrpFilter =
             static_cast<ScDPCacheTable::GroupFilter*>(aFilter.mpFilter.get());
         for (long j = 0; j < nMemCount; ++j)
         {
@@ -1025,9 +1025,9 @@ void ScDPSource::CreateRes_Impl()
 //UNUSED2009-05 void ScDPSource::DumpState( ScDocument* pDoc, const ScAddress& rPos )
 //UNUSED2009-05 {
 //UNUSED2009-05     CreateRes_Impl();
-//UNUSED2009-05 
+//UNUSED2009-05
 //UNUSED2009-05     ScAddress aDocPos( rPos );
-//UNUSED2009-05 
+//UNUSED2009-05
 //UNUSED2009-05     if (pColResRoot->GetChildDimension())
 //UNUSED2009-05         pColResRoot->GetChildDimension()->DumpState( NULL, pDoc, aDocPos );
 //UNUSED2009-05     pRowResRoot->DumpState( pColResRoot, pDoc, aDocPos );
@@ -1561,7 +1561,7 @@ const ScDPItemData& ScDPDimension::GetSelectedData()
 //UNUSED2009-05 {
 //UNUSED2009-05     if ( bHasSelectedPage )
 //UNUSED2009-05         return rData.IsCaseInsEqual( GetSelectedData() );
-//UNUSED2009-05 
+//UNUSED2009-05
 //UNUSED2009-05     return sal_True;        // no selection -> all data
 //UNUSED2009-05 }
 
@@ -2627,7 +2627,7 @@ ScDPMember* ScDPMembers::getByIndex(long nIndex) const
 				if ( nLev == SC_DAPI_LEVEL_YEAR )	// YEAR is in both hierarchies
 				{
 					//!	cache year range here!
-					
+
 					// Wang Xu Ming - DataPilot migration
 					double fFirstVal = pSource->GetData()->GetMemberByIndex( nSrcDim, 0 )->GetValue();
 					long nFirstYear = pSource->GetData()->GetDatePart(
@@ -2656,7 +2656,7 @@ ScDPMember* ScDPMembers::getByIndex(long nIndex) const
 
 				if ( !aName.Len() )
 					aName = String::CreateFromInt32(nVal);
-                   
+
                 		    ScDPItemData  rData( aName, nVal, sal_True, 0 ) ;
 				    pNew = new ScDPMember( pSource, nDim, nHier, nLev, pSource->GetCache()->GetAdditionalItemID(rData));
 			}
@@ -2719,7 +2719,7 @@ sal_Bool ScDPMember::IsNamedItem( SCROW    nIndex ) const
 {
 	long nSrcDim = pSource->GetSourceDim( nDim );
 	if ( nHier != SC_DAPI_HIERARCHY_FLAT && pSource->IsDateDimension( nSrcDim ) )
-	{ 
+	{
         const ScDPItemData* pData =  pSource->GetCache()->GetItemDataById( (SCCOL) nSrcDim, nIndex );
         if (  pData->IsValue()  )
         {
@@ -2905,7 +2905,7 @@ const ScDPItemData& ScDPMember::GetItemData() const
 
 const ScDPItemData* ScDPSource::GetItemDataById(long nDim, long nId)
 {
-    long nSrcDim = GetSourceDim( nDim ); 
+    long nSrcDim = GetSourceDim( nDim );
     const ScDPItemData* pItemData = GetData()->GetMemberById(  nSrcDim,  nId );
     if ( !pItemData )
    { //todo:
@@ -2919,7 +2919,7 @@ const ScDPItemData* ScDPSource::GetItemDataById(long nDim, long nId)
 SCROW  ScDPSource::GetMemberId(  long  nDim, const ScDPItemData& rData )
 {
 	long nSrcDim = GetSourceDim( nDim );
-       return  GetCache()->GetIdByItemData(  nSrcDim, rData ); 
+       return  GetCache()->GetIdByItemData(  nSrcDim, rData );
 }
 
 const ScDPItemData* ScDPMembers::GetSrcItemDataByIndex( SCROW nIndex)
@@ -2927,7 +2927,7 @@ const ScDPItemData* ScDPMembers::GetSrcItemDataByIndex( SCROW nIndex)
     const std::vector< SCROW >& memberIds = pSource->GetData()->GetColumnEntries( nDim );
     if ( nIndex >= (long )(memberIds.size()) || nIndex < 0 )
         return NULL;
-    SCROW nId =  memberIds[ nIndex ];                  
+    SCROW nId =  memberIds[ nIndex ];
     return pSource->GetItemDataById( nDim, nId );
 }
 

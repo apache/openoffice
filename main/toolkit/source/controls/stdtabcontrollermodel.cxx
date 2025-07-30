@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -214,21 +214,21 @@ IMPL_XTYPEPROVIDER_END
 sal_Bool StdTabControllerModel::getGroupControl(  ) throw(::com::sun::star::uno::RuntimeException)
 {
 	::osl::Guard< ::osl::Mutex > aGuard( GetMutex() );
-	
+
 	return mbGroupControl;
 }
 
 void StdTabControllerModel::setGroupControl( sal_Bool GroupControl ) throw(::com::sun::star::uno::RuntimeException)
 {
 	::osl::Guard< ::osl::Mutex > aGuard( GetMutex() );
-	
+
 	mbGroupControl = GroupControl;
 }
 
 void StdTabControllerModel::setControlModels( const ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Reference< ::com::sun::star::awt::XControlModel > >& Controls ) throw(::com::sun::star::uno::RuntimeException)
 {
 	::osl::Guard< ::osl::Mutex > aGuard( GetMutex() );
-	
+
 	maControls.Reset();
 	ImplSetControlModels( maControls, Controls );
 }
@@ -236,7 +236,7 @@ void StdTabControllerModel::setControlModels( const ::com::sun::star::uno::Seque
 ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Reference< ::com::sun::star::awt::XControlModel > > StdTabControllerModel::getControlModels(  ) throw(::com::sun::star::uno::RuntimeException)
 {
 	::osl::Guard< ::osl::Mutex > aGuard( GetMutex() );
-	
+
 	::com::sun::star::uno::Sequence< ::com::sun::star::uno::Reference< ::com::sun::star::awt::XControlModel > > aSeq( ImplGetControlCount( maControls ) );
 	::com::sun::star::uno::Reference< ::com::sun::star::awt::XControlModel > * pRefs = aSeq.getArray();
 	ImplGetControlModels( &pRefs, maControls );
@@ -246,7 +246,7 @@ void StdTabControllerModel::setControlModels( const ::com::sun::star::uno::Seque
 void StdTabControllerModel::setGroup( const ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Reference< ::com::sun::star::awt::XControlModel > >& Group, const ::rtl::OUString& GroupName ) throw(::com::sun::star::uno::RuntimeException)
 {
 	::osl::Guard< ::osl::Mutex > aGuard( GetMutex() );
-	
+
 	// Die Controls stehen eventuel flach in der Liste und werden jetzt gruppiert.
 	// Verschachtelte Gruppen sind erstmal nicht moeglich...
 	// Das erste Element der Gruppe welches auch schon in der flachen Liste
@@ -286,7 +286,7 @@ void StdTabControllerModel::setGroup( const ::com::sun::star::uno::Sequence< ::c
 sal_Int32 StdTabControllerModel::getGroupCount(  ) throw(::com::sun::star::uno::RuntimeException)
 {
 	::osl::Guard< ::osl::Mutex > aGuard( GetMutex() );
-	
+
 	// erstmal nur eine Ebene...
 	// Das Model und die Impl-Methoden arbeiten zwar rekursiv, aber das wird
 	// erstmal nich nach aussen gegeben.
@@ -305,7 +305,7 @@ sal_Int32 StdTabControllerModel::getGroupCount(  ) throw(::com::sun::star::uno::
 void StdTabControllerModel::getGroup( sal_Int32 nGroup, ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Reference< ::com::sun::star::awt::XControlModel > >& rGroup, ::rtl::OUString& rName ) throw(::com::sun::star::uno::RuntimeException)
 {
 	::osl::Guard< ::osl::Mutex > aGuard( GetMutex() );
-	
+
 	::com::sun::star::uno::Sequence< ::com::sun::star::uno::Reference< ::com::sun::star::awt::XControlModel > > aSeq;
 	sal_uInt32 nG = 0;
 	sal_uInt32 nEntries = maControls.Count();
@@ -332,7 +332,7 @@ void StdTabControllerModel::getGroup( sal_Int32 nGroup, ::com::sun::star::uno::S
 void StdTabControllerModel::getGroupByName( const ::rtl::OUString& rName, ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Reference< ::com::sun::star::awt::XControlModel > >& rGroup ) throw(::com::sun::star::uno::RuntimeException)
 {
 	::osl::Guard< ::osl::Mutex > aGuard( GetMutex() );
-	
+
 	sal_uInt32 nGroup = 0;
 	sal_uInt32 nEntries = maControls.Count();
 	for ( sal_uInt32 n = 0; n < nEntries; n++ )
@@ -361,7 +361,7 @@ void StdTabControllerModel::getGroupByName( const ::rtl::OUString& rName, ::com:
 void StdTabControllerModel::write( const ::com::sun::star::uno::Reference< ::com::sun::star::io::XObjectOutputStream >& OutStream ) throw(::com::sun::star::io::IOException, ::com::sun::star::uno::RuntimeException)
 {
 	::osl::Guard< ::osl::Mutex > aGuard( GetMutex() );
-	
+
 	::com::sun::star::uno::Reference< ::com::sun::star::io::XMarkableStream >  xMark( OutStream, ::com::sun::star::uno::UNO_QUERY );
 	DBG_ASSERT( xMark.is(), "write: no XMarkableStream!" );
 
@@ -385,7 +385,7 @@ void StdTabControllerModel::write( const ::com::sun::star::uno::Reference< ::com
 void StdTabControllerModel::read( const ::com::sun::star::uno::Reference< ::com::sun::star::io::XObjectInputStream >& InStream ) throw(::com::sun::star::io::IOException, ::com::sun::star::uno::RuntimeException)
 {
 	::osl::Guard< ::osl::Mutex > aGuard( GetMutex() );
-	
+
 	::com::sun::star::uno::Sequence< ::com::sun::star::uno::Reference< ::com::sun::star::awt::XControlModel > > aSeq = ImplReadControls( InStream );
 	setControlModels( aSeq );
 

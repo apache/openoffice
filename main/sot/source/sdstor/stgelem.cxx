@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -330,7 +330,7 @@ sal_Bool StgEntry::SetName( const String& rName )
     // I don't know the locale, so en_US is hopefully fine
     aName = ToUpperUnicode( rName );
     aName.Erase( 31 );
-    
+
     int i;
     for( i = 0; i < aName.Len() && i < 32; i++ )
         nName[ i ] = rName.GetChar( sal_uInt16( i ));
@@ -400,7 +400,7 @@ short StgEntry::Compare( const StgEntry& r ) const
 	else return nRes;
 	*/
     sal_Int32 nRes = r.nNameLen - nNameLen;
-    if( !nRes ) 
+    if( !nRes )
 		nRes = r.aName.CompareTo( aName );
 	return (short)nRes;
 	//return aName.CompareTo( r.aName );
@@ -436,8 +436,8 @@ sal_Bool StgEntry::Load( const void* pFrom, sal_uInt32 nBufSize )
     sal_uInt16 n = nNameLen;
     if( n )
 		n = ( n >> 1 ) - 1;
-	if ( n > 31 || 
-         (nSize < 0 && cType != STG_STORAGE) || 
+	if ( n > 31 ||
+         (nSize < 0 && cType != STG_STORAGE) ||
          ( nPage1 < 0 && nPage1 != STG_FREE && nPage1 != STG_EOF ) )
     {
         // the size makes no sence for the substorage

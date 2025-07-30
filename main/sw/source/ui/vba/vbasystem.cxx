@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -93,7 +93,7 @@ SwVbaSystem::getCursor() throw (uno::RuntimeException)
     }
 }
 
-void SAL_CALL 
+void SAL_CALL
 SwVbaSystem::setCursor( sal_Int32 _cursor ) throw (uno::RuntimeException)
 {
     try
@@ -127,11 +127,11 @@ SwVbaSystem::setCursor( sal_Int32 _cursor ) throw (uno::RuntimeException)
                 break;
             }
             default:
-                throw uno::RuntimeException( rtl::OUString( 
+                throw uno::RuntimeException( rtl::OUString(
                         RTL_CONSTASCII_USTRINGPARAM("Unknown value for Cursor pointer")), uno::Reference< uno::XInterface >() );
                 // TODO: isn't this a flaw in the API? It should be allowed to throw an
                 // IllegalArgumentException, or so
-        }        
+        }
     }
     catch( const uno::Exception& )
     {
@@ -139,7 +139,7 @@ SwVbaSystem::setCursor( sal_Int32 _cursor ) throw (uno::RuntimeException)
     }
 }
 
-uno::Any SAL_CALL 
+uno::Any SAL_CALL
 SwVbaSystem::PrivateProfileString( const rtl::OUString& rFilename, const rtl::OUString& rSection, const rtl::OUString& rKey ) throw ( uno::RuntimeException )
 {
     if( rFilename.getLength() == 0 )
@@ -163,14 +163,14 @@ SwVbaSystem::PrivateProfileString( const rtl::OUString& rFilename, const rtl::OU
     return uno::makeAny( uno::Reference< XPropValue > ( new ScVbaPropValue( &maPrivateProfileStringListener ) ) );
 }
 
-rtl::OUString& 
+rtl::OUString&
 SwVbaSystem::getServiceImplName()
 {
 	static rtl::OUString sImplName( RTL_CONSTASCII_USTRINGPARAM("SwVbaSystem") );
 	return sImplName;
 }
 
-uno::Sequence< rtl::OUString > 
+uno::Sequence< rtl::OUString >
 SwVbaSystem::getServiceNames()
 {
 	static uno::Sequence< rtl::OUString > aServiceNames;

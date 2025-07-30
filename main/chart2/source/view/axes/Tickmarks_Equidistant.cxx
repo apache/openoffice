@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -280,7 +280,7 @@ double* EquidistantTickFactory::getMinorTick( sal_Int32 nTick, sal_Int32 nDepth
     double fDistance = (fAdaptedNextParent - fAdaptedStartParent)/m_rIncrement.SubIncrements[nDepth-1].IntervalCount;
 
     m_pfCurrentValues[nDepth] = fAdaptedStartParent + nTick*fDistance;
-    
+
     //return always the value after scaling
     if(!bPostEquidistant && m_xInverseScaling.is() )
         m_pfCurrentValues[nDepth] = m_rScale.Scaling->doScaling( m_pfCurrentValues[nDepth] );
@@ -624,7 +624,7 @@ bool EquidistantTickIter::gotoIndex( sal_Int32 nTickIndex )
     if( nTickIndex < m_nCurrentPos )
         if( !gotoFirst() )
             return false;
-    
+
     while( nTickIndex > m_nCurrentPos )
         if( !gotoNext() )
             return false;

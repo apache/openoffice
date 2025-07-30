@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 #include "pnghelper.hxx"
@@ -34,10 +34,10 @@ using namespace pdfi;
 
 /* Table of CRCs of all 8-bit messages. */
 sal_uInt32 PngHelper::crc_table[256];
-   
+
 /* Flag: has the table been computed? Initially false. */
 bool PngHelper::bCRCTableInit = true;
-   
+
 /* Make the table for a fast CRC. */
 void PngHelper::initCRCTable()
 {
@@ -55,7 +55,7 @@ void PngHelper::initCRCTable()
     }
     bCRCTableInit = false;
 }
-   
+
 /* Update a running CRC with the bytes buf[0..len-1]--the CRC
   should be initialized to all 1's, and the transmitted value
   is the 1's complement of the final running CRC (see the
@@ -65,7 +65,7 @@ void PngHelper::updateCRC( sal_uInt32& io_rCRC, const sal_uInt8* i_pBuf, size_t 
 {
     if( bCRCTableInit )
         initCRCTable();
-    
+
     sal_uInt32 nCRC = io_rCRC;
     for( size_t n = 0; n < i_nLen; n++ )
         nCRC = crc_table[(nCRC ^ i_pBuf[n]) & 0xff] ^ (nCRC >> 8);
@@ -82,7 +82,7 @@ sal_uInt32 PngHelper::getCRC( const sal_uInt8* i_pBuf, size_t i_nLen )
 sal_uInt32 PngHelper::deflateBuffer( const Output_t* i_pBuf, size_t i_nLen, OutputBuffer& o_rOut )
 {
     size_t nOrigSize = o_rOut.size();
-    
+
     // prepare z stream
     z_stream aStream;
     aStream.zalloc  = Z_NULL;
@@ -91,7 +91,7 @@ sal_uInt32 PngHelper::deflateBuffer( const Output_t* i_pBuf, size_t i_nLen, Outp
     deflateInit( &aStream, Z_BEST_COMPRESSION );
     aStream.avail_in = uInt(i_nLen);
     aStream.next_in = (Bytef*)i_pBuf;
-    
+
     sal_uInt8 aOutBuf[ 32768 ];
     do
     {
@@ -105,17 +105,17 @@ sal_uInt32 PngHelper::deflateBuffer( const Output_t* i_pBuf, size_t i_nLen, Outp
             o_rOut.resize( nOrigSize );
             return 0;
         }
-        
+
         // append compressed bytes
         sal_uInt32 nCompressedBytes = sizeof( aOutBuf ) - aStream.avail_out;
         if( nCompressedBytes )
             o_rOut.insert( o_rOut.end(), aOutBuf, aOutBuf+nCompressedBytes );
 
     } while( aStream.avail_out == 0 );
-    
+
     // cleanup
     deflateEnd( &aStream );
-    
+
     return sal_uInt32( o_rOut.size() - nOrigSize );
 }
 
@@ -149,12 +149,12 @@ void PngHelper::endChunk( size_t nStart, OutputBuffer& o_rOutputBuf )
 {
     if( nStart+8 > o_rOutputBuf.size() )
         return; // something broken is going on
-    
+
     // update chunk length
     size_t nLen = o_rOutputBuf.size() - nStart;
     sal_uInt32 nDataLen = sal_uInt32(nLen)-8;
     set( nDataLen, o_rOutputBuf, nStart );
-    
+
     // append chunk crc
     sal_uInt32 nChunkCRC = getCRC( (sal_uInt8*)&o_rOutputBuf[nStart+4], nLen-4 );
     append( nChunkCRC, o_rOutputBuf );
@@ -176,7 +176,7 @@ void PngHelper::appendIHDR( OutputBuffer& o_rOutputBuf, int width, int height, i
 void PngHelper::appendIEND( OutputBuffer& o_rOutputBuf )
 {
     size_t nStart = startChunk( "IEND", o_rOutputBuf );
-    endChunk( nStart, o_rOutputBuf );    
+    endChunk( nStart, o_rOutputBuf );
 }
 
 void PngHelper::createPng( OutputBuffer&     o_rOutputBuf,
@@ -190,8 +190,8 @@ void PngHelper::createPng( OutputBuffer&     o_rOutputBuf,
 {
     appendFileHeader( o_rOutputBuf );
     appendIHDR( o_rOutputBuf, width, height, 1, 3 );
-    
-    // write palette 
+
+    // write palette
     size_t nIdx = startChunk( "PLTE", o_rOutputBuf );
     // write colors 0 and 1
     o_rOutputBuf.push_back(colToByte(zeroColor.r));
@@ -202,7 +202,7 @@ void PngHelper::createPng( OutputBuffer&     o_rOutputBuf,
     o_rOutputBuf.push_back(colToByte(oneColor.b));
     // end PLTE chunk
     endChunk( nIdx, o_rOutputBuf );
-    
+
     if( bIsMask )
     {
         // write tRNS chunk
@@ -226,14 +226,14 @@ void PngHelper::createPng( OutputBuffer&     o_rOutputBuf,
         for( int x = 0; x < nLineSize; x++ )
             aScanlines.push_back( str->getChar() );
     }
-    
+
     // begin IDAT chunk for scanline data
     nIdx = startChunk( "IDAT", o_rOutputBuf );
     // compress scanlines
-    deflateBuffer( &aScanlines[0], aScanlines.size(), o_rOutputBuf );    
+    deflateBuffer( &aScanlines[0], aScanlines.size(), o_rOutputBuf );
     // end IDAT chunk
     endChunk( nIdx, o_rOutputBuf );
-    
+
     // output IEND
     appendIEND( o_rOutputBuf );
 }
@@ -246,14 +246,14 @@ void PngHelper::createPng( OutputBuffer& o_rOutputBuf,
 {
     appendFileHeader( o_rOutputBuf );
     appendIHDR( o_rOutputBuf, width, height, 8, 6 ); // RGBA image
-    
+
     // initialize stream
     Guchar *p, *pm;
     GfxRGB rgb;
     GfxGray alpha;
     ImageStream* imgStr =
-        new ImageStream(str, 
-                        width, 
+        new ImageStream(str,
+                        width,
                         colorMap->getNumPixelComps(),
                         colorMap->getBits());
     imgStr->reset();
@@ -262,34 +262,34 @@ void PngHelper::createPng( OutputBuffer& o_rOutputBuf,
     OutputBuffer aScanlines;
     aScanlines.reserve( width*height*4 + height );
 
-    for( int y=0; y<height; ++y) 
+    for( int y=0; y<height; ++y)
     {
         aScanlines.push_back( 0 );
         p = imgStr->getLine();
-        for( int x=0; x<width; ++x) 
+        for( int x=0; x<width; ++x)
         {
             colorMap->getRGB(p, &rgb);
             aScanlines.push_back(colToByte(rgb.r));
             aScanlines.push_back(colToByte(rgb.g));
             aScanlines.push_back(colToByte(rgb.b));
             aScanlines.push_back( 0xff );
-       
+
             p +=colorMap->getNumPixelComps();
         }
     }
 
 
     // now fill in the mask data
-    
+
     // CAUTION: originally this was done in one single loop
     // it caused merry chaos; the reason is that maskStr and str are
     // not independent streams, it happens that reading one advances
     // the other, too. Hence the two passes are imperative !
-    
+
     // initialize mask stream
     ImageStream* imgStrMask =
-        new ImageStream(maskStr, 
-                        maskWidth, 
+        new ImageStream(maskStr,
+                        maskWidth,
                         maskColorMap->getNumPixelComps(),
                         maskColorMap->getBits());
 
@@ -310,7 +310,7 @@ void PngHelper::createPng( OutputBuffer& o_rOutputBuf,
 
     delete imgStr;
     delete imgStrMask;
-    
+
     // begind IDAT chunk for scanline data
     size_t nIdx = startChunk( "IDAT", o_rOutputBuf );
     // compress scanlines
@@ -332,13 +332,13 @@ void PngHelper::createPng( OutputBuffer& o_rOutputBuf,
 {
     appendFileHeader( o_rOutputBuf );
     appendIHDR( o_rOutputBuf, width, height, 8, 6 ); // RGBA image
-    
+
     // initialize stream
     Guchar *p;
     GfxRGB rgb;
     ImageStream* imgStr =
-        new ImageStream(str, 
-                        width, 
+        new ImageStream(str,
+                        width,
                         colorMap->getNumPixelComps(),
                         colorMap->getBits());
     imgStr->reset();
@@ -347,30 +347,30 @@ void PngHelper::createPng( OutputBuffer& o_rOutputBuf,
     OutputBuffer aScanlines;
     aScanlines.reserve( width*height*4 + height );
 
-    for( int y=0; y<height; ++y) 
+    for( int y=0; y<height; ++y)
     {
         aScanlines.push_back( 0 );
         p = imgStr->getLine();
-        for( int x=0; x<width; ++x) 
+        for( int x=0; x<width; ++x)
         {
             colorMap->getRGB(p, &rgb);
             aScanlines.push_back(colToByte(rgb.r));
             aScanlines.push_back(colToByte(rgb.g));
             aScanlines.push_back(colToByte(rgb.b));
             aScanlines.push_back( 0xff );
-       
+
             p +=colorMap->getNumPixelComps();
         }
     }
 
 
     // now fill in the mask data
-    
+
     // CAUTION: originally this was done in one single loop
     // it caused merry chaos; the reason is that maskStr and str are
     // not independent streams, it happens that reading one advances
     // the other, too. Hence the two passes are imperative !
-    
+
     // initialize mask stream
     ImageStream* imgStrMask =
         new ImageStream(maskStr, maskWidth, 1, 1);
@@ -394,7 +394,7 @@ void PngHelper::createPng( OutputBuffer& o_rOutputBuf,
 
     delete imgStr;
     delete imgStrMask;
-    
+
     // begind IDAT chunk for scanline data
     size_t nIdx = startChunk( "IDAT", o_rOutputBuf );
     // compress scanlines

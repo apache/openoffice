@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -1216,7 +1216,7 @@ void ODriver::XUTIL(const ::rtl::OUString& _rParam,
 
 	OProcess aApp(sCommandFile ,m_sDbWorkURL);
 #if OSL_DEBUG_LEVEL > 0
-	OProcess::TProcessError eError = 
+	OProcess::TProcessError eError =
 #endif
         aApp.execute( (OProcess::TProcessOption)(OProcess::TOption_Hidden | OProcess::TOption_Wait));
     OSL_ENSURE( eError == OProcess::E_None, "ODriver::XUTIL: calling the executable failed!" );
@@ -1256,7 +1256,7 @@ void ODriver::LoadBatch(const ::rtl::OUString& sDBName,
 						<< _rUSR
 						<< ","
 						<< _rPWD;
-						
+
 		if ( !isKernelVersion(CURRENT_DB_VERSION) )
 			(*pFileStream) << " -S adabas -b ";
 		else
@@ -1273,7 +1273,7 @@ void ODriver::LoadBatch(const ::rtl::OUString& sDBName,
 
 	OProcess aApp(sCommandFile ,m_sDbWorkURL);
 #if OSL_DEBUG_LEVEL > 0
-	OProcess::TProcessError eError = 
+	OProcess::TProcessError eError =
 #endif
         aApp.execute( (OProcess::TProcessOption)(OProcess::TOption_Hidden | OProcess::TOption_Wait));
     OSL_ENSURE( eError == OProcess::E_None, "ODriver::LoadBatch: calling the executable failed!" );
@@ -1670,7 +1670,7 @@ void ODriver::installSystemTables(	const TDatabaseStruct& _aInfo)
 	XUTIL(::rtl::OUString(RTL_CONSTASCII_USTRINGPARAM("DIAGNOSE TRIGGER OFF")),_aInfo.sDBName,_aInfo.sControlUser,_aInfo.sControlPassword);
 	//	xload -d %_DBNAME% -u %_SYSDBA_USER%,%_SYSDBA_PWD% -S NATIVE -b %m_sDbRoot%\env\DBS.ins %_DOMAINPWD%
 	{
-		sTemp2 = m_sDbRootURL	
+		sTemp2 = m_sDbRootURL
 								+ ::rtl::OUString(RTL_CONSTASCII_USTRINGPARAM("env"))
 								+ m_sDelimit
 								+ ::rtl::OUString(RTL_CONSTASCII_USTRINGPARAM("DBS.ins"));
@@ -1684,7 +1684,7 @@ void ODriver::installSystemTables(	const TDatabaseStruct& _aInfo)
 	}
 	//	xload -d %_DBNAME% -u DOMAIN,%_DOMAINPWD% -S NATIVE -b %m_sDbRoot%\env\XDD.ins
 	{
-		sTemp2 = m_sDbRootURL	
+		sTemp2 = m_sDbRootURL
 								+ ::rtl::OUString(RTL_CONSTASCII_USTRINGPARAM("env"))
 								+ m_sDelimit
 								+ ::rtl::OUString(RTL_CONSTASCII_USTRINGPARAM("XDD.ins"));
@@ -1696,7 +1696,7 @@ void ODriver::installSystemTables(	const TDatabaseStruct& _aInfo)
 	}
 	//	xload -d %_DBNAME% -u %_SYSDBA_USER%,%_SYSDBA_PWD% -S NATIVE -b %m_sDbRoot%\env\QP.ins
 	{
-		sTemp2 = m_sDbRootURL	
+		sTemp2 = m_sDbRootURL
 								+ ::rtl::OUString(RTL_CONSTASCII_USTRINGPARAM("env"))
 								+ m_sDelimit
 								+ ::rtl::OUString(RTL_CONSTASCII_USTRINGPARAM("QP.ins"));
@@ -1707,7 +1707,7 @@ void ODriver::installSystemTables(	const TDatabaseStruct& _aInfo)
 	}
 	//	xload  -d %_DBNAME% -u DOMAIN,%_DOMAINPWD% -S NATIVE -b %m_sDbRoot%\env\SPROC.ins
 	{
-		sTemp2 = m_sDbRootURL	
+		sTemp2 = m_sDbRootURL
 								+ ::rtl::OUString(RTL_CONSTASCII_USTRINGPARAM("env"))
 								+ m_sDelimit
 								+ ::rtl::OUString(RTL_CONSTASCII_USTRINGPARAM("SPROC.ins"));
@@ -1745,7 +1745,7 @@ void ODriver::installSystemTables(	const TDatabaseStruct& _aInfo)
 
 		if ( isKernelVersion(ADABAS_KERNEL_11) )
 			(*pFileStream) << "-i all";
-		(*pFileStream)	
+		(*pFileStream)
 #if (OSL_DEBUG_LEVEL > 1) || defined(DBG_UTIL)
 					<< " >> /tmp/kstart.log"
 #else
@@ -1771,7 +1771,7 @@ void ODriver::convertOldVersion(const ::rtl::OUString& sDBName,const TDatabaseSt
 	// first we have to check if this database is a old version and we have to update the system tables
 	if ( !isVersion(sDBName,CURRENT_DB_VERSION) && isKernelVersion(CURRENT_DB_VERSION) )
 	{
-		if (	!_rDbInfo.sControlUser.getLength() 
+		if (	!_rDbInfo.sControlUser.getLength()
 			||	!_rDbInfo.sControlPassword.getLength())
 		{
             ::connectivity::SharedResources aResources;
@@ -1802,7 +1802,7 @@ void ODriver::convertOldVersion(const ::rtl::OUString& sDBName,const TDatabaseSt
 					}
 				}
 			}
-			
+
 			UCBContentHelper::Kill(sCommandFile);
 		}
 	}

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 #include "LineWidthControl.hxx"
@@ -77,7 +77,7 @@ LineWidthControl::~LineWidthControl (void)
 void LineWidthControl::Paint(const Rectangle& rect)
 {
 	svx::sidebar::PopupControl::Paint(rect);
-    
+
 	Color aOldLineColor = GetLineColor();
 	Color aOldFillColor = GetFillColor();
 
@@ -132,7 +132,7 @@ void LineWidthControl::Initialize()
 	maMFWidth.SetFirst( maMFWidth.Normalize( nFirst ), FUNIT_TWIP );
 	maMFWidth.SetLast( maMFWidth.Normalize( nLast ), FUNIT_TWIP );
 	maMFWidth.SetMin( maMFWidth.Normalize( nMin ), FUNIT_TWIP );
-	maMFWidth.SetMax( maMFWidth.Normalize( nMax ), FUNIT_TWIP );	
+	maMFWidth.SetMax( maMFWidth.Normalize( nMax ), FUNIT_TWIP );
 
 	rStr = new XubString[9];
 	//modify,
@@ -143,7 +143,7 @@ void LineWidthControl::Initialize()
 	rStr[4] = String("23", 2, RTL_TEXTENCODING_ASCII_US);
 	rStr[5] = String("30", 2, RTL_TEXTENCODING_ASCII_US);
 	rStr[6] = String("45", 2, RTL_TEXTENCODING_ASCII_US);
-	rStr[7] = String("60", 2, RTL_TEXTENCODING_ASCII_US);	
+	rStr[7] = String("60", 2, RTL_TEXTENCODING_ASCII_US);
 	rStr[8] = String( SVX_RES(STR_WIDTH_LAST_CUSTOM) );
 
 	LocaleDataWrapper aLocaleWrapper( ::comphelper::getProcessServiceFactory(), Application::GetSettings().GetLocale() );
@@ -225,7 +225,7 @@ void LineWidthControl::SetWidthSelect( long lValue, bool bValuable, SfxMapUnit e
 		maVSWidth.SetCusEnable(true);
 
 		String aStrTip( String::CreateFromDouble( (double)mnCustomWidth / 10));
-		aStrTip.Append(mstrPT);		//		
+		aStrTip.Append(mstrPT);		//
 		maVSWidth.SetItemText(9, aStrTip);
 	}
 	else
@@ -233,25 +233,25 @@ void LineWidthControl::SetWidthSelect( long lValue, bool bValuable, SfxMapUnit e
 		mbCustom = false;
 		maVSWidth.SetImage(maIMGCusGray);
 		maVSWidth.SetCusEnable(false);
-		//modify 
-		//String aStrTip(String(SVX_RES(STR_WIDTH_LAST_CUSTOM)));	
+		//modify
+		//String aStrTip(String(SVX_RES(STR_WIDTH_LAST_CUSTOM)));
 		//maVSWidth.SetItemText(9, aStrTip);
 		maVSWidth.SetItemText(9, rStr[8]);
 	}
-	
+
 	if(bValuable)
     {
         sal_Int64 nVal = OutputDevice::LogicToLogic( lValue, (MapUnit)eMapUnit, MAP_100TH_MM );
         nVal = maMFWidth.Normalize( nVal );
         maMFWidth.SetValue( nVal, FUNIT_100TH_MM );
     }
-	else 
+	else
     {
 		maMFWidth.SetText( String() );
     }
 
 	MapUnit eOrgUnit = (MapUnit)eMapUnit;
-	MapUnit ePntUnit( MAP_TWIP );		
+	MapUnit ePntUnit( MAP_TWIP );
 	lValue = LogicToLogic( lValue , eOrgUnit, ePntUnit );
 
 	XubString strCurrValue = maMFWidth.GetText();
@@ -276,8 +276,8 @@ void LineWidthControl::SetWidthSelect( long lValue, bool bValuable, SfxMapUnit e
 
 IMPL_LINK(LineWidthControl, VSSelectHdl, void *, pControl)
 {
-	if(pControl == &maVSWidth)  
-	{		
+	if(pControl == &maVSWidth)
+	{
 		sal_uInt16 iPos = maVSWidth.GetSelectItemId();
 		if(iPos >= 1 && iPos <= 8)
 		{
@@ -292,7 +292,7 @@ IMPL_LINK(LineWidthControl, VSSelectHdl, void *, pControl)
 		}
 		else if(iPos == 9)
 		{//last custom
-			//modified 
+			//modified
 			if(mbCustom)
 			{
 				long nVal = LogicToLogic(mnCustomWidth , MAP_POINT, (MapUnit)meMapUnit);
@@ -305,14 +305,14 @@ IMPL_LINK(LineWidthControl, VSSelectHdl, void *, pControl)
 			}
 			else
 			{
-				maVSWidth.SetNoSelection();		//add , set no selection and keep the last select item 
+				maVSWidth.SetNoSelection();		//add , set no selection and keep the last select item
 				maVSWidth.Format();
 				Invalidate();
 				maVSWidth.StartSelection();
 			}
 			//modify end
 		}
-		if((iPos >= 1 && iPos <= 8) || (iPos == 9 && mbCustom)) //add 
+		if((iPos >= 1 && iPos <= 8) || (iPos == 9 && mbCustom)) //add
 			mrLinePropertyPanel.EndLineWidthPopupMode();
 	}
 	return( 0L );
@@ -323,7 +323,7 @@ IMPL_LINK(LineWidthControl, VSSelectHdl, void *, pControl)
 
 IMPL_LINK(LineWidthControl, MFModifyHdl, void *, pControl)
 {
-	if(pControl == &maMFWidth)  
+	if(pControl == &maMFWidth)
 	{
 		if(maVSWidth.GetSelItem())
 		{
@@ -337,7 +337,7 @@ IMPL_LINK(LineWidthControl, MFModifyHdl, void *, pControl)
 		sal_Int32 nNewWidth = (short)maMFWidth.Denormalize( nVal );
 		XLineWidthItem aWidthItem(nNewWidth);
 		mpBindings->GetDispatcher()->Execute(SID_ATTR_LINE_WIDTH, SFX_CALLMODE_RECORD, &aWidthItem, 0L);
-		
+
 		mbCloseByEdit = true;
 		mnTmpCustomWidth = nTmp;
 		/*for(sal_uInt16 i = 0; i < 8; i++)

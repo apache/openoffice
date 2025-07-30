@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -153,7 +153,7 @@ sal_Bool ScDPTableData::HasCommonElement( const ScDPItemData&, long,
     DBG_ERROR("HasCommonElement shouldn't be called for non-group data");
     return sal_False;
 }
-void ScDPTableData::FillRowDataFromCacheTable(sal_Int32 nRow, const ScDPCacheTable& rCacheTable, 
+void ScDPTableData::FillRowDataFromCacheTable(sal_Int32 nRow, const ScDPCacheTable& rCacheTable,
                                         const CalcInfo& rInfo, CalcRowData& rData)
 {
     // column dimensions
@@ -184,7 +184,7 @@ void ScDPTableData::FillRowDataFromCacheTable(sal_Int32 nRow, const ScDPCacheTab
 void ScDPTableData::ProcessRowData(CalcInfo& rInfo, CalcRowData& rData, bool bAutoShow)
 {
         // Wang Xu Ming -- 2009-6-16
-        // DataPilot Migration    
+        // DataPilot Migration
     if (!bAutoShow)
     {
 	        LateInitParams  aColParams( rInfo.aColDims, rInfo.aColLevels, sal_False );
@@ -213,7 +213,7 @@ void ScDPTableData::ProcessRowData(CalcInfo& rInfo, CalcRowData& rData, bool bAu
 // End Comments
         }
 
-        rInfo.pRowRoot->ProcessData(rData.aRowData, rInfo.pColRoot->GetChildDimension(), 
+        rInfo.pRowRoot->ProcessData(rData.aRowData, rInfo.pColRoot->GetChildDimension(),
                                     rData.aColData, rData.aValues);
     }
 }
@@ -234,7 +234,7 @@ void ScDPTableData::CalcResultsFromCacheTable(const ScDPCacheTable& rCacheTable,
 
 // Wang Xu Ming -- 2009-6-10
 // DataPilot Migration
-void ScDPTableData::GetItemData(const ScDPCacheTable& rCacheTable, sal_Int32 nRow, 
+void ScDPTableData::GetItemData(const ScDPCacheTable& rCacheTable, sal_Int32 nRow,
                                 const vector<long>& rDims, vector< SCROW/*ScDPItemData*/>& rItemData)
 // End Comments
 {
@@ -279,7 +279,7 @@ const ScDPItemData* ScDPTableData::GetMemberByIndex( long nDim, long nIndex )
 {
 	if ( nIndex >= GetMembersCount( nDim ) )
 		return NULL;
-	
+
 	const ::std::vector<SCROW>& nMembers = GetCacheTable().getFieldEntries( nDim );
 
 	return GetCacheTable().GetCache()->GetItemDataById( (SCCOL) nDim, (SCROW)nMembers[nIndex] );
@@ -287,7 +287,7 @@ const ScDPItemData* ScDPTableData::GetMemberByIndex( long nDim, long nIndex )
 
 const ScDPItemData* ScDPTableData::GetMemberById( long nDim, long nId)
 {
-	
+
 	return GetCacheTable().GetCache()->GetItemDataById( (SCCOL) nDim, (SCROW)nId);
 }
 
@@ -296,7 +296,7 @@ SCROW 	ScDPTableData::GetIdOfItemData( long  nDim, const ScDPItemData& rData )
         return GetCacheTable().GetCache()->GetIdByItemData((SCCOL) nDim, rData );
  }
 
-const std::vector< SCROW >& ScDPTableData::GetColumnEntries( long nColumn ) 
+const std::vector< SCROW >& ScDPTableData::GetColumnEntries( long nColumn )
 {
     return GetCacheTable().getFieldEntries( nColumn );
 }
@@ -309,16 +309,16 @@ long ScDPTableData::GetSourceDim( long nDim )
 
  long ScDPTableData::Compare( long nDim, long nDataId1, long nDataId2)
 {
-	if ( getIsDataLayoutDimension(nDim) )       
+	if ( getIsDataLayoutDimension(nDim) )
 		return 0;
 
-	long n1 = GetCacheTable().GetCache()->GetOrder( nDim, nDataId1);        
-	long n2 = GetCacheTable().GetCache()->GetOrder( nDim, nDataId2);       
-	if ( n1 > n2 )            
-		return 1;        
-	else if ( n1 == n2 )            
-		return 0;        
-	else            
+	long n1 = GetCacheTable().GetCache()->GetOrder( nDim, nDataId1);
+	long n2 = GetCacheTable().GetCache()->GetOrder( nDim, nDataId2);
+	if ( n1 > n2 )
+		return 1;
+	else if ( n1 == n2 )
+		return 0;
+	else
 		return -1;
 }
 // End Comments

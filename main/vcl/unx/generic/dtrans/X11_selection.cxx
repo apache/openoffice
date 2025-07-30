@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -101,7 +101,7 @@ extern "C"
     {
         SelectionManager::run( pMgr );
     }
-    
+
     static void call_SelectionManager_runDragExecute( void * pMgr )
     {
         SelectionManager::runDragExecute( pMgr );
@@ -434,7 +434,7 @@ void SelectionManager::initialize( const Sequence< Any >& arguments ) throw (::c
 
 			if( m_aWindow )
 			{
-#define	createCursorFromXPM(name) createCursor((const char*)name##curs##_bits, (const char*)name##mask##_bits, name##curs_width, name##curs_height, name##curs_x_hot, name##curs_y_hot ); 
+#define	createCursorFromXPM(name) createCursor((const char*)name##curs##_bits, (const char*)name##mask##_bits, name##curs_width, name##curs_height, name##curs_x_hot, name##curs_y_hot );
 				// initialize default cursors
 				m_aMoveCursor = createCursorFromXPM( movedata_);
 				m_aCopyCursor = createCursorFromXPM( copydata_);
@@ -477,7 +477,7 @@ SelectionManager::~SelectionManager()
 				break;
 			}
 	}
-    
+
 	if( m_aThread )
 	{
 		osl_terminateThread( m_aThread );
@@ -941,12 +941,12 @@ bool SelectionManager::getPasteData( Atom selection, Atom type, Sequence< sal_In
     // queue the request won't leave it because there are no more
     // X calls after this until the data arrived or timeout
     XFlush( m_pDisplay );
-    
+
 	// do a reschedule
     struct timeval tv_last, tv_current;
     gettimeofday( &tv_last, NULL );
     tv_current = tv_last;
-    
+
     XEvent aEvent;
 	do
 	{
@@ -1128,14 +1128,14 @@ bool SelectionManager::getPasteData( Atom selection, const ::rtl::OUString& rTyp
         {
             Pixmap aPixmap = None;
             Colormap aColormap = None;
-            
+
             // prepare property for MULTIPLE request
             Sequence< sal_Int8 > aData;
             Atom pTypes[4] = { XA_PIXMAP, XA_PIXMAP,
             XA_COLORMAP, XA_COLORMAP };
             {
                 MutexGuard aGuard(m_aMutex);
-                
+
                 XChangeProperty( m_pDisplay,
                     m_aWindow,
                     selection,
@@ -1145,7 +1145,7 @@ bool SelectionManager::getPasteData( Atom selection, const ::rtl::OUString& rTyp
                     (unsigned char*)pTypes,
                     4 );
             }
-            
+
             // try MULTIPLE request
             if( getPasteData( selection, m_nMULTIPLEAtom, aData ) )
             {
@@ -1153,7 +1153,7 @@ bool SelectionManager::getPasteData( Atom selection, const ::rtl::OUString& rTyp
                 if( pReturnedTypes[0] == XA_PIXMAP && pReturnedTypes[1] == XA_PIXMAP )
                 {
                     MutexGuard aGuard(m_aMutex);
-                    
+
                     Atom type = None;
                     int format = 0;
                     unsigned long nItems = 0;
@@ -1185,7 +1185,7 @@ bool SelectionManager::getPasteData( Atom selection, const ::rtl::OUString& rTyp
                     #endif
                 }
             }
-            
+
             if( aPixmap == None )
             {
                 // perhaps two normal requests will work
@@ -1196,12 +1196,12 @@ bool SelectionManager::getPasteData( Atom selection, const ::rtl::OUString& rTyp
                         aColormap = *(Colormap*)aData.getArray();
                 }
             }
-            
+
             // convert data if possible
             if( aPixmap != None )
             {
                 MutexGuard aGuard(m_aMutex);
-                
+
                 sal_Int32 nOutSize = 0;
                 sal_uInt8* pBytes = X11_getBmpFromPixmap( m_pDisplay, aPixmap, aColormap, nOutSize );
                 if( pBytes && nOutSize )
@@ -1462,7 +1462,7 @@ PixmapHolder* SelectionManager::getPixmapHolder( Atom selection )
 static sal_Size GetTrueFormatSize(int nFormat)
 {
 	// http://mail.gnome.org/archives/wm-spec-list/2003-March/msg00067.html
-	return nFormat == 32 ? sizeof(long) : nFormat/8;	
+	return nFormat == 32 ? sizeof(long) : nFormat/8;
 }
 
 bool SelectionManager::sendData( SelectionAdaptor* pAdaptor,
@@ -1915,7 +1915,7 @@ bool SelectionManager::handleReceivePropertyNotify( XPropertyEvent& rNotify )
 					 OUStringToOString( getString( nType ), RTL_TEXTENCODING_ISO_8859_1 ).getStr(),
 					 nFormat, nBytes );
 #endif
-	
+
 			sal_Size nUnitSize = GetTrueFormatSize(nFormat);
 
 			if( it->second->m_eState == Selection::WaitingForData ||
@@ -2021,7 +2021,7 @@ bool SelectionManager::handleSendPropertyNotify( XPropertyEvent& rNotify )
 #endif
 
 				sal_Size nUnitSize = GetTrueFormatSize(rInc.m_nFormat);
-                
+
                 XChangeProperty( m_pDisplay,
                                  rInc.m_aRequestor,
                                  rInc.m_aProperty,
@@ -3315,7 +3315,7 @@ void SelectionManager::startDrag(
         /* if we could not grab the pointer here, there is a chance
            that the pointer is grabbed by the other vcl display (the main loop)
            so let's break that grab an reset it later
-           
+
            remark: this whole code should really be molten into normal vcl so only
            one display is used ....
         */
@@ -3832,12 +3832,12 @@ void SelectionManager::shutdown() throw()
          * Allow thread to finish before app exits to avoid pulling the carpet
          * out from under it if pasting is occurring during shutdown
          *
-         * a) allow it to have the Mutex and 
+         * a) allow it to have the Mutex and
          * b) reschedule to allow it to complete callbacks to any
          * Application::GetSolarMutex protected regions, etc. e.g.
          * TransferableHelper::getTransferDataFlavors (via
          * SelectionManager::handleSelectionRequest) which it might
-         * currently be trying to enter. 
+         * currently be trying to enter.
          *
          * Otherwise the thread may be left still waiting on a GlobalMutex
          * when that gets destroyed, letting the thread blow up and die
@@ -3875,14 +3875,14 @@ sal_Bool SelectionManager::handleEvent( const Any& event ) throw()
             nTimestamp = pEvent->xmotion.time;
         else if( pEvent->type == PropertyNotify )
             nTimestamp = pEvent->xproperty.time;
-        
+
         if( nTimestamp != CurrentTime )
         {
             MutexGuard aGuard(m_aMutex);
-            
+
             m_nSelectionTimestamp = nTimestamp;
         }
-        
+
         return sal_Bool( handleXEvent( *pEvent ) );
     }
     else

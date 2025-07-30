@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -302,7 +302,7 @@ static void add_access_control_entries(
             context_values.push_back( entry );
         }
     }
-    
+
     // - ac prop: mode
     // { "off", "on", "dynamic-only", "single-user", "single-default-user" }
     entry.bLateInitService = false;
@@ -332,7 +332,7 @@ Reference< lang::XMultiComponentFactory > bootstrapInitialSF(
                 Reference< lang::XMultiServiceFactory >(),
                 Reference< registry::XRegistryKey >() ) ),
         UNO_QUERY );
-    
+
     // add initial bootstrap services
     static char const * ar[] = {
         "bootstrap.uno" SAL_DLLEXTENSION,
@@ -405,7 +405,7 @@ Reference< XComponentContext > bootstrapInitialContext(
             if (xKey.is())
             {
                 entry.bLateInitService = true;
-                
+
                 Sequence< Reference< registry::XRegistryKey > > keys(
                     xKey->openKeys() );
                 Reference< registry::XRegistryKey > const * pKeys =
@@ -609,7 +609,7 @@ static Reference< lang::XMultiComponentFactory > createImplServiceFactory(
     Reference< XComponentContext > xContext(
         bootstrapInitialContext(
             xSF, xRegistry, xRegistry, rBootstrapPath, bootstrap ) );
-    
+
     // initialize sf
     Reference< lang::XInitialization > xInit( xSF, UNO_QUERY );
     OSL_ASSERT( xInit.is() );
@@ -643,7 +643,7 @@ Reference< XComponentContext > SAL_CALL bootstrap_InitialComponentContext(
     Reference< XComponentContext > xContext(
         bootstrapInitialContext(
             xSF, xRegistry, xRegistry, rBootstrapPath, bootstrap ) );
-    
+
     // initialize sf
     Reference< lang::XInitialization > xInit( xSF, UNO_QUERY );
     OSL_ASSERT( xInit.is() );

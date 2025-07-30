@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -1423,14 +1423,14 @@ namespace
     {
         ::dbtools::OPropertyMap& rPropMap = OMetaConnection::getPropMap();
         Reference< XPropertySetInfo > xInfo = _xTable->getPropertySetInfo();
-        if (	xInfo.is() 
+        if (	xInfo.is()
             &&	xInfo->hasPropertyByName(rPropMap.getNameByIndex(PROPERTY_ID_NAME)) )
         {
-        	
+
 	        ::rtl::OUString aCatalog;
 	        ::rtl::OUString aSchema;
 	        ::rtl::OUString aTable;
-            if (    xInfo->hasPropertyByName(rPropMap.getNameByIndex(PROPERTY_ID_CATALOGNAME)) 
+            if (    xInfo->hasPropertyByName(rPropMap.getNameByIndex(PROPERTY_ID_CATALOGNAME))
 	            &&	xInfo->hasPropertyByName(rPropMap.getNameByIndex(PROPERTY_ID_SCHEMANAME)) )
             {
 	            _xTable->getPropertyValue(rPropMap.getNameByIndex(PROPERTY_ID_CATALOGNAME))	>>= _out_rCatalog;
@@ -1750,7 +1750,7 @@ sal_Bool implSetObject(	const Reference< XParameters >& _rxParameters,
 //..................................................................
 namespace
 {
-    class OParameterWrapper : public ::cppu::WeakImplHelper1< XIndexAccess > 
+    class OParameterWrapper : public ::cppu::WeakImplHelper1< XIndexAccess >
     {
         ::std::bit_vector       m_aSet;
         Reference<XIndexAccess> m_xSource;
@@ -1829,7 +1829,7 @@ void askForParameters(const Reference< XSingleSelectQueryComposer >& _xComposer,
             Reference<XPropertySet> xParam(xParamsAsIndicies->getByIndex(i),UNO_QUERY);
             ::rtl::OUString sName;
             xParam->getPropertyValue(PROPERTY_NAME) >>= sName;
-            
+
             TParameterPositions::iterator aFind = aParameterNames.find(sName);
             if ( aFind != aParameterNames.end() )
                 aNewParameterSet[i] = true;
@@ -1885,7 +1885,7 @@ void askForParameters(const Reference< XSingleSelectQueryComposer >& _xComposer,
                 ::std::vector<sal_Int32>::iterator aIterPos = aFind->second.begin();
                 ::std::vector<sal_Int32>::iterator aEndPos = aFind->second.end();
                 for(;aIterPos != aEndPos;++aIterPos)
-                {                    
+                {
                     if ( _aParametersSet.empty() || !_aParametersSet[(*aIterPos)-1] )
                     {
                         _xParameters->setObjectWithInfo(*aIterPos, pFinalValues->Value, nParamType, nScale);

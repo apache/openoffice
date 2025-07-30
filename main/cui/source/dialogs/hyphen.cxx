@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -101,7 +101,7 @@ struct SvxHyphenWordDialog_Impl
 {
     SvxHyphenWordDialog *       m_pDialog;
 //    Window *                    m_pParent;
-    
+
     FixedText           aWordFT;
     HyphenEdit_Impl     aWordEdit;
     ImageButton         aLeftBtn;
@@ -146,9 +146,9 @@ struct SvxHyphenWordDialog_Impl
     DECL_LINK( GetFocusHdl_Impl, Edit* );
 
 
-    SvxHyphenWordDialog_Impl( 
+    SvxHyphenWordDialog_Impl(
             SvxHyphenWordDialog * pDialog,
-            const String &rWord, 
+            const String &rWord,
             LanguageType nLang,
             uno::Reference< linguistic2::XHyphenator >  &xHyphen,
             SvxSpellWrapper* pWrapper );
@@ -156,9 +156,9 @@ struct SvxHyphenWordDialog_Impl
 };
 
 
-SvxHyphenWordDialog_Impl::SvxHyphenWordDialog_Impl( 
+SvxHyphenWordDialog_Impl::SvxHyphenWordDialog_Impl(
         SvxHyphenWordDialog * pDialog,
-        const String &rWord, 
+        const String &rWord,
         LanguageType nLang,
         uno::Reference< linguistic2::XHyphenator >  &xHyphen,
         SvxSpellWrapper* pWrapper ) :
@@ -192,7 +192,7 @@ SvxHyphenWordDialog_Impl::SvxHyphenWordDialog_Impl(
     xHyphenator    = xHyphen;
     pHyphWrapper   = pWrapper;
 
-    uno::Reference< linguistic2::XHyphenatedWord >  xHyphWord( pHyphWrapper ? 
+    uno::Reference< linguistic2::XHyphenatedWord >  xHyphWord( pHyphWrapper ?
             pHyphWrapper->GetLast() : NULL, uno::UNO_QUERY );
     DBG_ASSERT( xHyphWord.is(), "hyphenation result missing" );
     if (xHyphWord.is())
@@ -204,7 +204,7 @@ SvxHyphenWordDialog_Impl::SvxHyphenWordDialog_Impl(
 
     InitControls_Impl();
     aWordEdit.GrabFocus();
-    
+
     aLeftBtn.SetClickHdl( LINK( this, SvxHyphenWordDialog_Impl, Left_Impl ) );
     aRightBtn.SetClickHdl( LINK( this, SvxHyphenWordDialog_Impl, Right_Impl ) );
     aOkBtn.SetClickHdl( LINK( this, SvxHyphenWordDialog_Impl, CutHdl_Impl ) );
@@ -214,11 +214,11 @@ SvxHyphenWordDialog_Impl::SvxHyphenWordDialog_Impl(
     aCancelBtn.SetClickHdl( LINK( this, SvxHyphenWordDialog_Impl, CancelHdl_Impl ) );
     aWordEdit.SetGetFocusHdl( LINK( this, SvxHyphenWordDialog_Impl, GetFocusHdl_Impl ) );
 }
-    
+
 
 SvxHyphenWordDialog_Impl::~SvxHyphenWordDialog_Impl()
 {
-}    
+}
 
 
 void SvxHyphenWordDialog_Impl::EnableLRBtn_Impl()
@@ -259,7 +259,7 @@ String SvxHyphenWordDialog_Impl::EraseUnusableHyphens_Impl(
     // returns a String showing only those hyphen positions which will result
     // in a line break if hyphenation is done there
     // 1) we will need to discard all hyphenation positions at th end that
-    // will not result in a line break where the text to the left still fits 
+    // will not result in a line break where the text to the left still fits
     // on the line.
     // 2) since as from OOo 3.2 '-' are part of a word an thus text like
     // 'multi-line-editor' is regarded as single word we also need to discard those
@@ -267,11 +267,11 @@ String SvxHyphenWordDialog_Impl::EraseUnusableHyphens_Impl(
     // the rightmost valid hyphenation position according to 1)
     //
     // Example:
-    // If the possible hyphenation position in 'multi-line-editor' are to be marked 
+    // If the possible hyphenation position in 'multi-line-editor' are to be marked
     // by '=' then the text will look like this 'mul=ti-line-ed=it=or'.
     // If now the first line is only large enough for 'multi-line-edi' we need to discard
-    // the last possible hyphenation point because of 1). The right most valid 
-    // hyphenation position is "ed=itor". The first '-' left of this position is 
+    // the last possible hyphenation point because of 1). The right most valid
+    // hyphenation position is "ed=itor". The first '-' left of this position is
     // "line-ed", thus because of 2) we now need to discard all possible hyphenation
     // positions to the left of that as well. Thus in the end leaving us with just
     // 'multi-line-ed=itor' as return value for this function. (Just one valid hyphenation
@@ -511,7 +511,7 @@ IMPL_LINK( SvxHyphenWordDialog_Impl, HyphenateAllHdl_Impl, Button *, EMPTYARG /*
             uno::Reference< beans::XPropertySet >  xProp( SvxGetLinguPropertySet() );
             const rtl::OUString aName( rtl::OUString::createFromAscii( "IsHyphAuto" ) );
             uno::Any aAny;
-        
+
             aAny <<= sal_True;
             xProp->setPropertyValue( aName, aAny );
 
@@ -526,10 +526,10 @@ IMPL_LINK( SvxHyphenWordDialog_Impl, HyphenateAllHdl_Impl, Button *, EMPTYARG /*
         {
             (void) e;
             DBG_ASSERT( 0, "Hyphenate All failed" );
-        }    
+        }
     }
     return 0;
-}    
+}
 
 
 IMPL_LINK( SvxHyphenWordDialog_Impl, DeleteHdl_Impl, Button *, EMPTYARG )
@@ -599,15 +599,15 @@ IMPL_LINK( SvxHyphenWordDialog_Impl, GetFocusHdl_Impl, Edit *, EMPTYARG )
     return 0;
 }
 
-    
+
 // class SvxHyphenWordDialog ---------------------------------------------
 
-SvxHyphenWordDialog::SvxHyphenWordDialog( 
+SvxHyphenWordDialog::SvxHyphenWordDialog(
     const String &rWord, LanguageType nLang,
     Window* pParent,
     uno::Reference< linguistic2::XHyphenator >  &xHyphen,
     SvxSpellWrapper* pWrapper ) :
-    
+
     SfxModalDialog( pParent, CUI_RES( RID_SVXDLG_HYPHENATE ) )
 {
     m_pImpl = std::auto_ptr< SvxHyphenWordDialog_Impl >(
@@ -625,7 +625,7 @@ SvxHyphenWordDialog::SvxHyphenWordDialog(
 
 SvxHyphenWordDialog::~SvxHyphenWordDialog()
 {
-}    
+}
 
 
 void SvxHyphenWordDialog::SetWindowTitle( LanguageType nLang )

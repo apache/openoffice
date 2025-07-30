@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -143,7 +143,7 @@ namespace svt { namespace table
         {
             return 5 * 100;
         }
-		virtual void setRowHeight(TableMetrics _nRowHeight) 
+		virtual void setRowHeight(TableMetrics _nRowHeight)
         {
             (void)_nRowHeight;
         }
@@ -619,7 +619,7 @@ namespace svt { namespace table
         {
             m_nTopRow = 0;
         }
-        
+
 
         // relayout, since the scrollbar need might have changed
         impl_ni_relayout();
@@ -773,7 +773,7 @@ namespace svt { namespace table
         --aArea.Right();
 
         // determine the last row which is at least partially visible
-        aArea.Bottom() = 
+        aArea.Bottom() =
                 m_nColHeaderHeightPixel
             +   impl_getVisibleRows( true ) * m_nRowHeightPixel
             -   1;
@@ -795,7 +795,7 @@ namespace svt { namespace table
     //------------------------------------------------------------------------------------------------------------------
     void TableControl_Impl::impl_ni_updateCachedTableMetrics()
     {
-        m_nRowHeightPixel = m_rAntiImpl.LogicToPixel( Size( 0, m_pModel->getRowHeight() ), MAP_APPFONT ).Height();       
+        m_nRowHeightPixel = m_rAntiImpl.LogicToPixel( Size( 0, m_pModel->getRowHeight() ), MAP_APPFONT ).Height();
 
         m_nColHeaderHeightPixel = 0;
 	    if ( m_pModel->hasColumnHeaders() )
@@ -1034,7 +1034,7 @@ namespace svt { namespace table
             long distributePixel = gridWidthPixel - accumulatedCurrentWidth;
             if ( gridWidthPixel > accumulatedMaxWidth )
             {
-                // ... but the column's maximal widths are still less than we have 
+                // ... but the column's maximal widths are still less than we have
                 // => set them all to max
                 for ( size_t i = 0; i < size_t( colCount ); ++i )
                 {
@@ -1354,7 +1354,7 @@ namespace svt { namespace table
         lcl_updateScrollbar(
             m_rAntiImpl,
             m_pHScroll,
-            i_horizontalScrollbar, 
+            i_horizontalScrollbar,
             lcl_getColumnsVisibleWithin( i_dataCellPlayground, m_nLeftColumn, *this, false ),
                                                                     // visible units
             m_nLeftColumn,                                          // current position
@@ -1372,8 +1372,8 @@ namespace svt { namespace table
 			if( m_nLeftColumn + nVisibleUnits == nRange - 1 )
 			{
 				if ( m_aColumnWidths[ nRange - 1 ].getStart() - m_aColumnWidths[ m_nLeftColumn ].getEnd() + m_aColumnWidths[ nRange-1 ].getWidth() > i_dataCellPlayground.GetWidth() )
-				{				
-					m_pHScroll->SetVisibleSize( nVisibleUnits -1 ); 
+				{
+					m_pHScroll->SetVisibleSize( nVisibleUnits -1 );
 					m_pHScroll->SetPageSize( nVisibleUnits - 1 );
 				}
 			}
@@ -1540,7 +1540,7 @@ namespace svt { namespace table
                 )
             {
 				bool isSelectedColumn = false;
-                pRenderer->PaintCell( aCell.getColumn(), isSelectedRow || isSelectedColumn, isControlFocused, 
+                pRenderer->PaintCell( aCell.getColumn(), isSelectedRow || isSelectedColumn, isControlFocused,
 								*m_pDataWindow, aCell.getRect(), rStyle );
 			}
         }
@@ -1707,7 +1707,7 @@ namespace svt { namespace table
 	    }
             break;
 	    case cursorSelectRowUp:
-	    {	
+	    {
 		    if(m_pSelEngine->GetSelectionMode() == NO_SELECTION)
 			    return bSuccess = false;
 		    else if(m_pSelEngine->GetSelectionMode() == SINGLE_SELECTION)
@@ -1782,7 +1782,7 @@ namespace svt { namespace table
 					    m_aSelectedRows.push_back(m_nCurRow);
 					    invalidateRow( m_nCurRow );
 				    }
-			    }			
+			    }
 			    m_pSelEngine->SetAnchor(sal_True);
 			    m_nAnchor = m_nCurRow;
 			    ensureVisible(m_nCurColumn, m_nCurRow, false);
@@ -1907,12 +1907,12 @@ namespace svt { namespace table
 			    return bSuccess = false;
 		    else if(m_pSelEngine->GetSelectionMode() == SINGLE_SELECTION)
 			    return bSuccess = false;
-		    //select the region between the current and the last row 
+		    //select the region between the current and the last row
 		    RowPos iter = m_nCurRow;
 		    invalidateSelectedRegion( m_nCurRow, m_nRowCount-1 );
 		    //put the rows in the vector
 		    while(iter<=m_nRowCount)
-		    { 
+		    {
 			    if ( !isRowSelected( iter ) )
 				    m_aSelectedRows.push_back(iter);
 			    ++iter;
@@ -1949,7 +1949,7 @@ namespace svt { namespace table
 			if ( _bShow )
 				pRenderer->ShowCellCursor( *m_pDataWindow, aCellRect );
 			else
-				pRenderer->HideCellCursor( *m_pDataWindow, aCellRect );		
+				pRenderer->HideCellCursor( *m_pDataWindow, aCellRect );
         }
     }
 
@@ -2183,7 +2183,7 @@ namespace svt { namespace table
         if ( i_lastRow == ROW_INVALID )
             aInvalidateRect.Bottom() = m_pDataWindow->GetOutputSizePixel().Height();
 
-        m_pDataWindow->Invalidate( aInvalidateRect, 
+        m_pDataWindow->Invalidate( aInvalidateRect,
             m_pDataWindow->GetControlBackground().GetTransparency() ? INVALIDATE_TRANSPARENT : 0 );
     }
 
@@ -2665,7 +2665,7 @@ namespace svt { namespace table
         Rectangle const aHeaderRect = calcHeaderRect( bColHeader );
         TableCellGeometry const aGeometry(
             *this, aHeaderRect,
-            bColHeader ? nPos : COL_ROW_HEADERS, 
+            bColHeader ? nPos : COL_ROW_HEADERS,
             bColHeader ? ROW_COL_HEADERS : nPos
         );
         return aGeometry.getRect();
@@ -2718,7 +2718,7 @@ namespace svt { namespace table
 			Reference< XAccessible > const xAccParent = i_parentWindow.GetAccessible();
 			if ( xAccParent.is() )
 			{
-				m_pAccessibleTable = m_aFactoryAccess.getFactory().createAccessibleTableControl( 
+				m_pAccessibleTable = m_aFactoryAccess.getFactory().createAccessibleTableControl(
 					xAccParent, m_rAntiImpl
 				);
 			}
@@ -2768,7 +2768,7 @@ namespace svt { namespace table
     }
     //------------------------------------------------------------------------------------------------------------------
     void TableFunctionSet::BeginDrag()
-    {		
+    {
     }
     //------------------------------------------------------------------------------------------------------------------
     void TableFunctionSet::CreateAnchor()
@@ -2806,8 +2806,8 @@ namespace svt { namespace table
 	    }
 	    else if ( m_pTableControl->getAnchor() == m_pTableControl->getCurRow() )
 	    {
-		    //selecting region, 
-		    int diff = m_pTableControl->getCurRow() - newRow;	
+		    //selecting region,
+		    int diff = m_pTableControl->getCurRow() - newRow;
 		    //selected region lies above the last selection
 		    if( diff >= 0)
 		    {
@@ -2822,7 +2822,7 @@ namespace svt { namespace table
 		    }
 		    //selected region lies beneath the last selected row
 		    else
-		    { 
+		    {
 			    while ( m_pTableControl->getAnchor() <= newRow )
 			    {
 				    m_pTableControl->markRowAsSelected( m_pTableControl->getAnchor() );
@@ -2897,7 +2897,7 @@ namespace svt { namespace table
 		    m_pTableControl->markAllRowsAsDeselected();
 	    }
     }
-	
+
 //......................................................................................................................
 } } // namespace svt::table
 //......................................................................................................................

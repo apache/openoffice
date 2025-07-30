@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
@@ -53,43 +53,43 @@ ImpSVGDialog::ImpSVGDialog( Window* pParent/*, ResMgr& rResMgr*/, Sequence< Prop
 {
     SetText( String( RTL_CONSTASCII_USTRINGPARAM( "SVG Export Options" ) ) );
     SetOutputSizePixel( Size( implMap( *this, 177 ), implMap( *this, 77 ) ) );
-    
+
     maFI.SetText( String( RTL_CONSTASCII_USTRINGPARAM( "Export" ) ) );
     maFI.SetPosSizePixel( Point( implMap( *this, 6 ), implMap( *this, 3 ) ),
                                  Size( implMap( *this, 165 ), implMap( *this, 8 ) ) );
-    
+
     maCBTinyProfile.SetText( String( RTL_CONSTASCII_USTRINGPARAM( "Use SVG Tiny profile" ) ) );
     maCBTinyProfile.SetPosSizePixel( Point( implMap( *this, 12 ), implMap( *this, 14 ) ),
                                      Size( implMap( *this, 142 ), implMap( *this, 10 ) ) );
-    
+
     maCBEmbedFonts.SetText( String( RTL_CONSTASCII_USTRINGPARAM( "Embed fonts" ) ) );
     maCBEmbedFonts.SetPosSizePixel( Point( implMap( *this, 12 ), implMap( *this, 27 ) ),
                                     Size( implMap( *this, 142 ), implMap( *this, 10 ) ) );
-    
+
     maCBUseNativeDecoration.SetText( String( RTL_CONSTASCII_USTRINGPARAM( "Use SVG native text decoration" ) ) );
     maCBUseNativeDecoration.SetPosSizePixel( Point( implMap( *this, 12 ), implMap( *this, 41 ) ),
                                              Size( implMap( *this, 142 ), implMap( *this, 10 ) ) );
-    
+
     maCBTinyProfile.Check( maConfigItem.ReadBool( OUString( RTL_CONSTASCII_USTRINGPARAM( SVG_PROP_TINYPROFILE ) ), sal_False ) );
     maCBEmbedFonts.Check( maConfigItem.ReadBool( OUString( RTL_CONSTASCII_USTRINGPARAM( SVG_PROP_EMBEDFONTS ) ), sal_True ) );
     maCBUseNativeDecoration.Check( maConfigItem.ReadBool( OUString( RTL_CONSTASCII_USTRINGPARAM( SVG_PROP_NATIVEDECORATION ) ), sal_True ) );
-    
+
     maBTOK.SetPosSizePixel( Point( implMap( *this, 12 ), implMap( *this, 57 ) ),
                             Size( implMap( *this, 50 ), implMap( *this, 14 ) ) );
     maBTCancel.SetPosSizePixel( Point( implMap( *this, 65 ), implMap( *this, 57 ) ),
                                 Size( implMap( *this, 50 ), implMap( *this, 14 ) ) );
     maBTHelp.SetPosSizePixel( Point( implMap( *this, 121 ), implMap( *this, 57 ) ),
                               Size( implMap( *this, 50 ), implMap( *this, 14 ) ) );
-    
+
     maCBTinyProfile.SetToggleHdl( LINK( this, ImpSVGDialog, OnToggleCheckbox ) );
     OnToggleCheckbox( &maCBTinyProfile );
-    
+
     maFI.Show();
-    
+
     maCBTinyProfile.Show();
     maCBEmbedFonts.Show();
     maCBUseNativeDecoration.Show();
-    
+
     maBTOK.Show();
     maBTCancel.Show();
     maBTHelp.Show();
@@ -121,7 +121,7 @@ IMPL_LINK( ImpSVGDialog, OnToggleCheckbox, CheckBox*, pBox )
         if( pBox->IsChecked() )
         {
             mbOldNativeDecoration = maCBUseNativeDecoration.IsChecked();
-            
+
             maCBUseNativeDecoration.Check( sal_False );
             maCBUseNativeDecoration.Disable();
         }
@@ -131,6 +131,6 @@ IMPL_LINK( ImpSVGDialog, OnToggleCheckbox, CheckBox*, pBox )
             maCBUseNativeDecoration.Check( mbOldNativeDecoration );
         }
     }
-    
+
     return 0;
 }

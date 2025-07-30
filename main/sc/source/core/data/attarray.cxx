@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -1824,7 +1824,7 @@ sal_Bool ScAttrArray::IsEmpty() const
 //UNUSED2008-05  SCROW ScAttrArray::GetFirstEntryPos() const
 //UNUSED2008-05  {
 //UNUSED2008-05      DBG_ASSERT( nCount, "nCount = 0" );
-//UNUSED2008-05  
+//UNUSED2008-05
 //UNUSED2008-05      if ( pData[0].pPattern != pDocument->GetDefPattern() )
 //UNUSED2008-05          return 0;
 //UNUSED2008-05      else
@@ -1835,15 +1835,15 @@ sal_Bool ScAttrArray::IsEmpty() const
 //UNUSED2008-05              return pData[0].nRow + 1;
 //UNUSED2008-05      }
 //UNUSED2008-05  }
-//UNUSED2008-05  
-//UNUSED2008-05  
+//UNUSED2008-05
+//UNUSED2008-05
 //UNUSED2008-05  SCROW ScAttrArray::GetLastEntryPos( sal_Bool bIncludeBottom ) const
 //UNUSED2008-05  {
 //UNUSED2008-05      DBG_ASSERT( nCount, "nCount == 0" );
-//UNUSED2008-05  
+//UNUSED2008-05
 //UNUSED2008-05      if (bIncludeBottom)
 //UNUSED2008-05          bIncludeBottom = ( pData[nCount-1].pPattern != pDocument->GetDefPattern() );
-//UNUSED2008-05  
+//UNUSED2008-05
 //UNUSED2008-05      if (bIncludeBottom)
 //UNUSED2008-05          return MAXROW;
 //UNUSED2008-05      else
@@ -2634,7 +2634,7 @@ void ScAttrArray::Load( SvStream& /* rStream */ )
 //UNUSED2008-05      const sal_uLong nFlags = FONTTOSUBSFONT_IMPORT | FONTTOSUBSFONT_ONLYOLDSOSYMBOLFONTS;
 //UNUSED2008-05      SCSIZE   nIndex = 0;
 //UNUSED2008-05      SCROW  nThisRow = 0;
-//UNUSED2008-05  
+//UNUSED2008-05
 //UNUSED2008-05      while ( nThisRow <= MAXROW )
 //UNUSED2008-05      {
 //UNUSED2008-05          const ScPatternAttr* pOldPattern = pData[nIndex].pPattern;
@@ -2668,7 +2668,7 @@ void ScAttrArray::Load( SvStream& /* rStream */ )
 SCSIZE ScAttrArray::Count( SCROW nStartRow, SCROW nEndRow )
 {
     SCSIZE	nIndex1, nIndex2;
-    
+
     if( !Search( nStartRow, nIndex1 ) )
         return 0;
 

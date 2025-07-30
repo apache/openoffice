@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 #include "precompiled_sd.hxx"
@@ -149,7 +149,7 @@ public:
     /** This method is called when the ViewShellBase is being destroyed.
     */
     virtual void Notify (SfxBroadcaster& rBroadcaster, const SfxHint& rHint);
-    
+
 private:
     ::sd::ViewShellBase& mrBase;
     bool mbListeningToViewShellBase;
@@ -333,7 +333,7 @@ public:
     ~DisposeListener (void);
 
     virtual void SAL_CALL disposing (void);
-    
+
     virtual void SAL_CALL disposing (const lang::EventObject& rEventObject)
         throw(RuntimeException);
 
@@ -392,7 +392,7 @@ FrameworkHelper::InstanceMap FrameworkHelper::maInstanceMap;
 
 ::boost::shared_ptr<FrameworkHelper> FrameworkHelper::Instance (ViewShellBase& rBase)
 {
-    
+
     ::boost::shared_ptr<FrameworkHelper> pHelper;
 
     InstanceMap::const_iterator iHelper (maInstanceMap.find(&rBase));
@@ -415,7 +415,7 @@ FrameworkHelper::InstanceMap FrameworkHelper::maInstanceMap;
         OSL_DOUBLE_CHECKED_LOCKING_MEMORY_BARRIER();
         pHelper = iHelper->second;
     }
-    
+
     return pHelper;
 }
 
@@ -518,7 +518,7 @@ bool FrameworkHelper::IsValid (void)
 Reference<XView> FrameworkHelper::GetView (const Reference<XResourceId>& rxPaneOrViewId)
 {
     Reference<XView> xView;
-    
+
     if ( ! rxPaneOrViewId.is() || ! mxConfigurationController.is())
         return NULL;
 
@@ -550,7 +550,7 @@ Reference<XView> FrameworkHelper::GetView (const Reference<XResourceId>& rxPaneO
 Reference<awt::XWindow> FrameworkHelper::GetPaneWindow (const Reference<XResourceId>& rxPaneId)
 {
     Reference<awt::XWindow> xWindow;
-    
+
     if (rxPaneId.is() && mxConfigurationController.is())
     {
         try
@@ -570,7 +570,7 @@ Reference<awt::XWindow> FrameworkHelper::GetPaneWindow (const Reference<XResourc
         {
         }
     }
-    
+
     return xWindow;
 }
 
@@ -580,7 +580,7 @@ Reference<awt::XWindow> FrameworkHelper::GetPaneWindow (const Reference<XResourc
 Reference<XResource> FrameworkHelper::GetResource (const Reference<XResourceId>& rxResourceId)
 {
     Reference<XResource> xResource;
-    
+
     if (rxResourceId.is() && mxConfigurationController.is())
     {
         try
@@ -595,7 +595,7 @@ Reference<XResource> FrameworkHelper::GetResource (const Reference<XResourceId>&
         {
         }
     }
-    
+
     return NULL;
 }
 
@@ -699,7 +699,7 @@ ViewShell::ShellType FrameworkHelper::GetViewId (const rtl::OUString& rsViewURL)
 
 
 void FrameworkHelper::HandleModeChangeSlot (
-    sal_uLong nSlotId, 
+    sal_uLong nSlotId,
     SfxRequest& rRequest)
 {
     sal_Bool bIsActive = sal_True;
@@ -718,9 +718,9 @@ void FrameworkHelper::HandleModeChangeSlot (
 			const SfxItemSet* pRequestArguments = rRequest.GetArgs();
 			if (pRequestArguments)
             {
-                SFX_REQUEST_ARG (rRequest, 
-                    pIsActive, 
-                    SfxBoolItem, 
+                SFX_REQUEST_ARG (rRequest,
+                    pIsActive,
+                    SfxBoolItem,
                     (sal_uInt16)nSlotId,
                     sal_False);
 				bIsActive = pIsActive->GetValue ();
@@ -734,19 +734,19 @@ void FrameworkHelper::HandleModeChangeSlot (
         if ( ! mxConfigurationController.is())
             throw RuntimeException();
 
-        
+
         Reference<XResourceId> xPaneId (
             CreateResourceId(framework::FrameworkHelper::msCenterPaneURL));
         Reference<XView> xView (GetView(xPaneId));
         ::boost::shared_ptr<ViewShell> pCenterViewShell (GetViewShell(xView));
-        
+
         ::rtl::OUString sRequestedView;
         if (bIsActive)
         {
             switch (nSlotId)
             {
                 case SID_NORMAL_MULTI_PANE_GUI:
-                case SID_DRAWINGMODE:   
+                case SID_DRAWINGMODE:
                     sRequestedView = FrameworkHelper::msImpressViewURL;
                     break;
 
@@ -768,7 +768,7 @@ void FrameworkHelper::HandleModeChangeSlot (
                     break;
             }
         }
-        
+
         if (xView.is()
             && xView->getResourceId()->getResourceURL().equals(sRequestedView))
         {
@@ -1222,7 +1222,7 @@ LifetimeController::LifetimeController (::sd::ViewShellBase& rBase)
     StartListening(mrBase);
     acquire();
     mbListeningToViewShellBase = true;
-    
+
     Reference<XComponent> xComponent (rBase.GetController(), UNO_QUERY);
     if (xComponent.is())
     {

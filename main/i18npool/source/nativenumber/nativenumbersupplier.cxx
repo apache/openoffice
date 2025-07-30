@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -69,7 +69,7 @@ namespace com { namespace sun { namespace star { namespace i18n {
 
 OUString SAL_CALL getHebrewNativeNumberString(const OUString& aNumberString, sal_Bool useGeresh);
 
-OUString SAL_CALL AsciiToNativeChar( const OUString& inStr, sal_Int32 startPos, sal_Int32 nCount, 
+OUString SAL_CALL AsciiToNativeChar( const OUString& inStr, sal_Int32 startPos, sal_Int32 nCount,
         Sequence< sal_Int32 >& offset, sal_Bool useOffset, sal_Int16 number ) throw(RuntimeException)
 {
         const sal_Unicode *src = inStr.getStr() + startPos;
@@ -85,7 +85,7 @@ OUString SAL_CALL AsciiToNativeChar( const OUString& inStr, sal_Int32 startPos, 
                 if (i > 0 && isNumber(src[i-1]) && isSeparator(ch))
                     newStr->buffer[i] = SeparatorChar[number] ? SeparatorChar[number] : ch;
                 else
-                    newStr->buffer[i] = isDecimal(ch) ? (DecimalChar[number] ? DecimalChar[number] : ch) : 
+                    newStr->buffer[i] = isDecimal(ch) ? (DecimalChar[number] ? DecimalChar[number] : ch) :
                             isMinus(ch) ? (MinusChar[number] ? MinusChar[number] : ch) : ch;
             }
             else
@@ -147,7 +147,7 @@ sal_Bool SAL_CALL AsciiToNative_numberMaker(const sal_Unicode *str, sal_Int32 be
             for (sal_Int16 i = 1; i <= number->exponentCount; i++) {
                 sal_Int32 tmp = len - (i == number->exponentCount ? 0 : number->multiplierExponent[i]);
                 if (tmp > 0) {
-                    printPower |= AsciiToNative_numberMaker(str, begin, tmp, dst, count, 
+                    printPower |= AsciiToNative_numberMaker(str, begin, tmp, dst, count,
                         (i == number->exponentCount ? -1 : i), offset, useOffset, startPos, number, numberChar);
                     begin += tmp;
                     len -= tmp;
@@ -174,10 +174,10 @@ OUString SAL_CALL AsciiToNative( const OUString& inStr, sal_Int32 startPos, sal_
         sal_Int32 strLen = inStr.getLength() - startPos;
         sal_Unicode *numberChar = NumberChar[number->number];
 
-        if (nCount > strLen) 
+        if (nCount > strLen)
             nCount = strLen;
 
-        if (nCount > 0) { 
+        if (nCount > 0) {
             const sal_Unicode *str = inStr.getStr() + startPos;
             rtl_uString *newStr = x_rtl_uString_new_WithLength(nCount * 2);
             rtl_uString *srcStr = x_rtl_uString_new_WithLength(nCount); // for keeping number without comma
@@ -269,7 +269,7 @@ static void SAL_CALL NativeToAscii_numberMaker(sal_Int16 max, sal_Int16 prev, co
                 shift = end = 0;
                 if (curr >= max)
                     max = curr;
-                else if (curr > prev) 
+                else if (curr > prev)
                     shift = max - curr;
                 else
                     end = curr;
@@ -288,7 +288,7 @@ static void SAL_CALL NativeToAscii_numberMaker(sal_Int16 max, sal_Int16 prev, co
                     }
                     max = curr;
                 }
-                NativeToAscii_numberMaker(max, curr, str, i, nCount, dst, 
+                NativeToAscii_numberMaker(max, curr, str, i, nCount, dst,
                         count, offset, useOffset, numberChar, multiplierChar);
                 return;
             } else
@@ -302,15 +302,15 @@ static void SAL_CALL NativeToAscii_numberMaker(sal_Int16 max, sal_Int16 prev, co
         }
 }
 
-static OUString SAL_CALL NativeToAscii(const OUString& inStr, 
+static OUString SAL_CALL NativeToAscii(const OUString& inStr,
         sal_Int32 startPos, sal_Int32 nCount, Sequence< sal_Int32 >& offset, sal_Bool useOffset ) throw(RuntimeException)
 {
         sal_Int32 strLen = inStr.getLength() - startPos;
 
-        if (nCount > strLen) 
+        if (nCount > strLen)
             nCount = strLen;
 
-        if (nCount > 0) { 
+        if (nCount > 0) {
             const sal_Unicode *str = inStr.getStr() + startPos;
             rtl_uString *newStr = x_rtl_uString_new_WithLength( nCount * MultiplierExponent_7_CJK[0] + 1 );
             if (useOffset)
@@ -341,20 +341,20 @@ static OUString SAL_CALL NativeToAscii(const OUString& inStr,
                 } else {
                     if ((index = numberChar.indexOf(str[i])) >= 0)
                         newStr->buffer[count] = sal::static_int_cast<sal_Unicode>( (index % 10) + NUMBER_ZERO );
-                    else if ((index = separatorChar.indexOf(str[i])) >= 0 && 
+                    else if ((index = separatorChar.indexOf(str[i])) >= 0 &&
                             (i < nCount-1 && (numberChar.indexOf(str[i+1]) >= 0 ||
                                             multiplierChar.indexOf(str[i+1]) >= 0)))
                         newStr->buffer[count] = SeparatorChar[NumberChar_HalfWidth];
                     else if ((index = decimalChar.indexOf(str[i])) >= 0 &&
                             (i < nCount-1 && (numberChar.indexOf(str[i+1]) >= 0 ||
                                             multiplierChar.indexOf(str[i+1]) >= 0)))
-                        // Only when decimal point is followed by numbers, 
+                        // Only when decimal point is followed by numbers,
                         // it will be convert to ASCII decimal point
                         newStr->buffer[count] = DecimalChar[NumberChar_HalfWidth];
                     else if ((index = minusChar.indexOf(str[i])) >= 0 &&
                             (i < nCount-1 && (numberChar.indexOf(str[i+1]) >= 0 ||
                                             multiplierChar.indexOf(str[i+1]) >= 0)))
-                        // Only when minus is followed by numbers, 
+                        // Only when minus is followed by numbers,
                         // it will be convert to ASCII minus sign
                         newStr->buffer[count] = MinusChar[NumberChar_HalfWidth];
                     else
@@ -575,8 +575,8 @@ OUString SAL_CALL NativeNumberSupplier::getNativeNumberString(const OUString& aN
         }
 
         if (number || num >= 0) {
-            if (!aLocale.Language.equals(rLocale.Language) || 
-                    !aLocale.Country.equals(rLocale.Country) || 
+            if (!aLocale.Language.equals(rLocale.Language) ||
+                    !aLocale.Country.equals(rLocale.Country) ||
                     !aLocale.Variant.equals(rLocale.Variant)) {
                 LocaleDataItem item = LocaleData().getLocaleItem( rLocale );
                 aLocale = rLocale;
@@ -594,7 +594,7 @@ OUString SAL_CALL NativeNumberSupplier::getNativeNumberString(const OUString& aN
             if (number)
                 return AsciiToNative( aNumberString, 0, aNumberString.getLength(), offset, useOffset, number );
             else if (num == NumberChar_he)
-                return getHebrewNativeNumberString(aNumberString, 
+                return getHebrewNativeNumberString(aNumberString,
                                 nNativeNumberMode == NativeNumberMode::NATNUM2);
             else
                 return AsciiToNativeChar(aNumberString, 0, aNumberString.getLength(), offset, useOffset, num);
@@ -855,7 +855,7 @@ void makeHebrewNumber(sal_Int64 value, OUStringBuffer& output, sal_Bool isLast, 
         if (useGeresh) {
             if (nbOfChar > 1)   // a number is written as more than one character
                 output.insert(output.getLength() - 1, gershayim);
-            else if (nbOfChar == 1) // a number is written as a single character 
+            else if (nbOfChar == 1) // a number is written as a single character
                 output.append(geresh);
         }
     }

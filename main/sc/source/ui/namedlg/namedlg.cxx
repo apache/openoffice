@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -245,7 +245,7 @@ void ScNameDlg::SetReference( const ScRange& rRef, ScDocument* pDocP )
 		if ( rRef.aStart != rRef.aEnd )
 			RefInputStart(&aEdAssign);
 		String aRefStr;
-        rRef.Format( aRefStr, ABS_DREF3D, pDocP, 
+        rRef.Format( aRefStr, ABS_DREF3D, pDocP,
                      ScAddress::Details(pDocP->GetAddressConvention(), 0, 0) );
 		aEdAssign.SetRefString( aRefStr );
 	}
@@ -354,9 +354,9 @@ void __EXPORT ScNameDlg::UpdateNames()
 								aString.AppendAscii( " ");
 							aString.AppendAscii( "(");
 							aString += tabName;
-							aString.AppendAscii( ")"); 
+							aString.AppendAscii( ")");
 					}
-					
+
 					//aEdName.InsertEntry( aString );
                                    aLBNames.InsertEntry( aString );
 				}
@@ -375,7 +375,7 @@ void __EXPORT ScNameDlg::UpdateNames()
 	//aEdName.Invalidate();
 	aLBNames.SetUpdateMode( true );
 	aLBNames.SetTopEntry(nNamePos);
-	aLBNames.Invalidate();	
+	aLBNames.Invalidate();
 }
 
 
@@ -458,7 +458,7 @@ IMPL_LINK( ScNameDlg, AddBtnHdl, void *, EMPTYARG )
 											 theCursorPos,
 											 nType );
 				if (aBtnAdd.GetText() == aStrModify)
-					pNewEntry->SetRangeScope(aSelectedRangeScope); 
+					pNewEntry->SetRangeScope(aSelectedRangeScope);
 				else
 					aSelectedRangeScope = MAXTABCOUNT;
 				if (pNewEntry)
@@ -574,12 +574,12 @@ IMPL_LINK( ScNameDlg, NameSelectHdl, void *, EMPTYARG )
             pDoc->GetTable(sheetName,aSelectedRangeScope);
 	     rangeName.Erase(sheetNamePos);
 	     rangeName.EraseTrailingChars();
-            
+
 	}
-	else   
+	else
            aSelectedRangeScope = MAXTABCOUNT;
 
-	//if ( aLocalRangeName.SearchName( aEdName.GetText(), nAtPos ) )	
+	//if ( aLocalRangeName.SearchName( aEdName.GetText(), nAtPos ) )
 	if ( aLocalRangeName.SearchName( rangeName, nAtPos, aSelectedRangeScope ) )
 	{
 		String		 aSymbol;
@@ -628,7 +628,7 @@ IMPL_LINK( ScNameDlg, EdModifyHdl, Edit *, pEd )
 		}
 		else
 		{
-		 /*      
+		 /*
 			if ( bNameFound )
 			{
 				if ( aBtnAdd.GetText() != aStrModify )

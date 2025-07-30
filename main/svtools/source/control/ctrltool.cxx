@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -405,7 +405,7 @@ FontList* FontList::Clone() const
     FontList* pReturn = new FontList(
             mpDev, mpDev2, GetFontNameCount() == mpDev->GetDevFontCount());
     return pReturn;
-}            
+}
 
 // -----------------------------------------------------------------------
 
@@ -577,7 +577,7 @@ XubString FontList::GetFontMapText( const FontInfo& rInfo ) const
 		return maMapPrinterOnly;
 	}
 	// Only Screen-Font?
-    else if ( (nType & (FONTLIST_FONTNAMETYPE_PRINTER | FONTLIST_FONTNAMETYPE_SCREEN)) == FONTLIST_FONTNAMETYPE_SCREEN 
+    else if ( (nType & (FONTLIST_FONTNAMETYPE_PRINTER | FONTLIST_FONTNAMETYPE_SCREEN)) == FONTLIST_FONTNAMETYPE_SCREEN
             && rInfo.GetType() == TYPE_RASTER )
 	{
 		if ( !maMapScreenOnly.Len() )
@@ -936,7 +936,7 @@ FontSizeNames::FontSizeNames( LanguageType eLanguage )
 			mnElem = sizeof(aImplTraditionalChinese) / sizeof(aImplTraditionalChinese[0]);
 			break;
 #endif
-			
+
 		default:
 			mpArray = NULL;
 			mnElem = 0;

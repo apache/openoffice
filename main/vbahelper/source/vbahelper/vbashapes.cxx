@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -85,7 +85,7 @@ void ScVbaShapes::initBaseCollection()
 ScVbaShapes::ScVbaShapes( const css::uno::Reference< ov::XHelperInterface >& xParent, const css::uno::Reference< css::uno::XComponentContext >& xContext, const css::uno::Reference< css::container::XIndexAccess > xShapes, const uno::Reference< frame::XModel>& xModel ): ScVbaShapes_BASE( xParent, xContext, xShapes ), m_nNewShapeCount(0), m_xModel( xModel )
 {
     m_xShapes.set( xShapes, uno::UNO_QUERY_THROW );
-    m_xDrawPage.set( xShapes, uno::UNO_QUERY_THROW ); 
+    m_xDrawPage.set( xShapes, uno::UNO_QUERY_THROW );
     initBaseCollection();
 }
 
@@ -111,14 +111,14 @@ ScVbaShapes::getElementType() throw (uno::RuntimeException)
 {
     return ooo::vba::msforms::XShape::static_type(0);
 }
-rtl::OUString& 
+rtl::OUString&
 ScVbaShapes::getServiceImplName()
 {
 	static rtl::OUString sImplName( RTL_CONSTASCII_USTRINGPARAM("ScVbaShapes") );
 	return sImplName;
 }
 
-uno::Sequence< rtl::OUString > 
+uno::Sequence< rtl::OUString >
 ScVbaShapes::getServiceNames()
 {
 	static uno::Sequence< rtl::OUString > aServiceNames;
@@ -130,12 +130,12 @@ ScVbaShapes::getServiceNames()
 	return aServiceNames;
 }
 
-css::uno::Reference< css::container::XIndexAccess > 
+css::uno::Reference< css::container::XIndexAccess >
 ScVbaShapes::getShapesByArrayIndices( const uno::Any& Index  ) throw (uno::RuntimeException)
 {
 	if ( Index.getValueTypeClass() != uno::TypeClass_SEQUENCE )
 		throw uno::RuntimeException();
-	
+
 	uno::Reference< script::XTypeConverter > xConverter = getTypeConverter(mxContext);
 	uno::Any aConverted;
 	aConverted = xConverter->convertTo( Index, getCppuType((uno::Sequence< uno::Any >*)0) );
@@ -158,21 +158,21 @@ ScVbaShapes::getShapesByArrayIndices( const uno::Any& Index  ) throw (uno::Runti
 			sal_Int32 nIndex = 0;
 			sIndices[ index ] >>= nIndex;
 			// adjust for 1 based mso indexing
-			xShape.set( m_xIndexAccess->getByIndex( nIndex - 1 ), uno::UNO_QUERY );		
-			
+			xShape.set( m_xIndexAccess->getByIndex( nIndex - 1 ), uno::UNO_QUERY );
+
 		}
 		// populate map with drawing::XShapes
 		if ( xShape.is() )
 			mShapes.push_back( xShape );
-	}  
+	}
 	uno::Reference< container::XIndexAccess > xIndexAccess( new XNamedObjectCollectionHelper< drawing::XShape >( mShapes ) );
 	return xIndexAccess;
 }
 
-uno::Any SAL_CALL 
+uno::Any SAL_CALL
 ScVbaShapes::Item( const uno::Any& Index, const uno::Any& Index2 ) throw (uno::RuntimeException)
 {
-	// I don't think we need to support Array of indices for shapes	
+	// I don't think we need to support Array of indices for shapes
 /*
 	if ( Index.getValueTypeClass() == uno::TypeClass_SEQUENCE )
 	{
@@ -185,7 +185,7 @@ ScVbaShapes::Item( const uno::Any& Index, const uno::Any& Index2 ) throw (uno::R
 	return 	ScVbaShapes_BASE::Item( Index, Index2 );
 }
 
-uno::Reference< msforms::XShapeRange > SAL_CALL 
+uno::Reference< msforms::XShapeRange > SAL_CALL
 ScVbaShapes::Range( const uno::Any& shapes ) throw (css::uno::RuntimeException)
 {
 	// shapes, can be an index or an array of indices
@@ -204,7 +204,7 @@ ScVbaShapes::Range( const uno::Any& shapes ) throw (css::uno::RuntimeException)
 	return new ScVbaShapeRange(  getParent(), mxContext, xShapes, m_xDrawPage, m_xModel );
 }
 
-void SAL_CALL 
+void SAL_CALL
 ScVbaShapes::SelectAll() throw (uno::RuntimeException)
 {
     uno::Reference< view::XSelectionSupplier > xSelectSupp( m_xModel->getCurrentController(), uno::UNO_QUERY_THROW );
@@ -213,14 +213,14 @@ ScVbaShapes::SelectAll() throw (uno::RuntimeException)
         xSelectSupp->select( uno::makeAny( m_xShapes ) );
     }
     // viewuno.cxx ScTabViewObj::select will throw IllegalArgumentException
-    // if one of the shapes is no 'markable' e.g. a button 
+    // if one of the shapes is no 'markable' e.g. a button
     // the method still works
     catch( lang::IllegalArgumentException& )
     {
     }
 }
 
-uno::Reference< drawing::XShape > 
+uno::Reference< drawing::XShape >
 ScVbaShapes::createShape( rtl::OUString service ) throw (css::uno::RuntimeException)
 {
     uno::Reference< lang::XMultiServiceFactory > xMSF( m_xModel, uno::UNO_QUERY_THROW );
@@ -228,7 +228,7 @@ ScVbaShapes::createShape( rtl::OUString service ) throw (css::uno::RuntimeExcept
     return xShape;
 }
 
-uno::Any 
+uno::Any
 ScVbaShapes::AddRectangle( sal_Int32 startX, sal_Int32 startY, sal_Int32 nLineWidth, sal_Int32 nLineHeight, uno::Any aRange ) throw (css::uno::RuntimeException)
 {
     rtl::OUString sCreateShapeName( rtl::OUString::createFromAscii( "com.sun.star.drawing.RectangleShape" ) );
@@ -256,11 +256,11 @@ ScVbaShapes::AddRectangle( sal_Int32 startX, sal_Int32 startY, sal_Int32 nLineWi
     xShape->setSize( size );
 
     ScVbaShape *pScVbaShape = new ScVbaShape( getParent(), mxContext, xShape, m_xShapes, m_xModel, ScVbaShape::getType( xShape ) );
-    pScVbaShape->setRange( aRange ); 
+    pScVbaShape->setRange( aRange );
     return uno::makeAny( uno::Reference< msforms::XShape > ( pScVbaShape ) );
 }
 
-uno::Any 
+uno::Any
 ScVbaShapes::AddEllipse( sal_Int32 startX, sal_Int32 startY, sal_Int32 nLineWidth, sal_Int32 nLineHeight, uno::Any aRange ) throw (css::uno::RuntimeException)
 {
     rtl::OUString sCreateShapeName( rtl::OUString::createFromAscii( "com.sun.star.drawing.EllipseShape" ) );
@@ -300,7 +300,7 @@ ScVbaShapes::AddEllipse( sal_Int32 startX, sal_Int32 startY, sal_Int32 nLineWidt
     xShape->setSize(size);
 
     ScVbaShape *pScVbaShape = new ScVbaShape( getParent(), mxContext, xShape, m_xShapes, m_xModel, ScVbaShape::getType( xShape ) );
-    pScVbaShape->setRange( aRange ); 
+    pScVbaShape->setRange( aRange );
     return uno::makeAny( uno::Reference< msforms::XShape > ( pScVbaShape ) );
 }
 
@@ -315,12 +315,12 @@ ScVbaShapes::AddLine( sal_Int32 StartX, sal_Int32 StartY, sal_Int32 endX, sal_In
     sal_Int32 nWidth = Millimeter::getInHundredthsOfOneMillimeter( nLineWidth );
     sal_Int32 nXPos = Millimeter::getInHundredthsOfOneMillimeter( StartX );
     sal_Int32 nYPos = Millimeter::getInHundredthsOfOneMillimeter( StartY );
-    
+
     uno::Reference< drawing::XShape > xShape( createShape( rtl::OUString::createFromAscii("com.sun.star.drawing.LineShape") ), uno::UNO_QUERY_THROW );
     m_xShapes->add( xShape );
 
     awt::Point aMovePositionIfRange( 0, 0 );
-    
+
     rtl::OUString name = createName( rtl::OUString::createFromAscii( "Line" ) );
     setDefaultShapeProperties(xShape);
     setShape_NameProperty(xShape, name);
@@ -467,7 +467,7 @@ rtl::OUString
 ScVbaShapes::createName( rtl::OUString sName )
 {
     sal_Int32 nActNumber = 1 + m_nNewShapeCount;
-    m_nNewShapeCount++; 
+    m_nNewShapeCount++;
     sName += rtl::OUString::valueOf( nActNumber );
     return sName;
 }

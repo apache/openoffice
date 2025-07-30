@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -45,8 +45,8 @@ namespace drawinglayer
 {
 	namespace primitive2d
 	{
-		bool Embedded3DPrimitive2D::impGetShadow3D(const geometry::ViewInformation2D& /*rViewInformation*/) const 
-		{ 
+		bool Embedded3DPrimitive2D::impGetShadow3D(const geometry::ViewInformation2D& /*rViewInformation*/) const
+		{
 			osl::MutexGuard aGuard( m_aMutex );
 
 			// create on demand
@@ -54,9 +54,9 @@ namespace drawinglayer
 			{
 				// create shadow extraction processor
 				processor3d::Shadow3DExtractingProcessor aShadowProcessor(
-					getViewInformation3D(), 
+					getViewInformation3D(),
 					getObjectTransformation(),
-					getLightNormal(), 
+					getLightNormal(),
 					getShadowSlant(),
                     getScene3DRange());
 
@@ -109,7 +109,7 @@ namespace drawinglayer
 			if(BufferedDecompositionPrimitive2D::operator==(rPrimitive))
 			{
 				const Embedded3DPrimitive2D& rCompare = static_cast< const Embedded3DPrimitive2D& >(rPrimitive);
-				
+
 				return (primitive3d::arePrimitive3DSequencesEqual(getChildren3D(), rCompare.getChildren3D())
 					&& getObjectTransformation() == rCompare.getObjectTransformation()
 					&& getViewInformation3D() == rCompare.getViewInformation3D()

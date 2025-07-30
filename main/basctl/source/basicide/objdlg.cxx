@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -90,7 +90,7 @@ bool ObjectTreeListBox::OpenCurrent()
         SfxDispatcher* pDispatcher = pViewFrame ? pViewFrame->GetDispatcher() : NULL;
         if( pDispatcher )
         {
-            SbxItem aSbxItem( SID_BASICIDE_ARG_SBX, aDesc.GetDocument(), aDesc.GetLibName(), aDesc.GetName(), 
+            SbxItem aSbxItem( SID_BASICIDE_ARG_SBX, aDesc.GetDocument(), aDesc.GetLibName(), aDesc.GetName(),
                               aDesc.GetMethodName(), ConvertType( aDesc.GetType() ) );
             pDispatcher->Execute( SID_BASICIDE_SHOWSBX,
                                     SFX_CALLMODE_SYNCHRON, &aSbxItem, 0L );
@@ -114,7 +114,7 @@ ObjectCatalog::ObjectCatalog( Window * pParent )
 	aToolBox.SetSelectHdl( LINK( this, ObjectCatalog, ToolBoxHdl ) );
 
     aMacroTreeList.SetStyle( WB_BORDER | WB_TABSTOP |
-                             WB_HASLINES | WB_HASLINESATROOT | 
+                             WB_HASLINES | WB_HASLINESATROOT |
                              WB_HASBUTTONS | WB_HASBUTTONSATROOT |
                              WB_HSCROLL );
 
@@ -212,13 +212,13 @@ IMPL_LINK( ObjectCatalog, ToolBoxHdl, ToolBox*, pToolBox )
             BasicIDEShell* pIDEShell = IDE_DLL()->GetShell();
             SfxViewFrame* pViewFrame = pIDEShell ? pIDEShell->GetViewFrame() : NULL;
             SfxDispatcher* pDispatcher = pViewFrame ? pViewFrame->GetDispatcher() : NULL;
-			if ( aDesc.GetType() == OBJ_TYPE_MODULE || 
+			if ( aDesc.GetType() == OBJ_TYPE_MODULE ||
 				 aDesc.GetType() == OBJ_TYPE_DIALOG ||
 				 aDesc.GetType() == OBJ_TYPE_METHOD )
 			{
 				if( pDispatcher )
 				{
-                    SbxItem aSbxItem( SID_BASICIDE_ARG_SBX, aDesc.GetDocument(), aDesc.GetLibName(), aDesc.GetName(), 
+                    SbxItem aSbxItem( SID_BASICIDE_ARG_SBX, aDesc.GetDocument(), aDesc.GetLibName(), aDesc.GetName(),
                                       aDesc.GetMethodName(), aMacroTreeList.ConvertType( aDesc.GetType() ) );
 					pDispatcher->Execute( SID_BASICIDE_SHOWSBX,
 										  SFX_CALLMODE_SYNCHRON, &aSbxItem, 0L );
@@ -284,7 +284,7 @@ void ObjectCatalog::UpdateEntries()
 }
 
 void ObjectCatalog::SetCurrentEntry( BasicEntryDescriptor& rDesc )
-{ 
+{
     aMacroTreeList.SetCurrentEntry( rDesc );
 }
 

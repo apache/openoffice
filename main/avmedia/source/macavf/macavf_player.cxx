@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -68,7 +68,7 @@ typedef std::hash_map<NSObject*,avmedia::macavf::MacAVObserverHandler*> Handlers
 namespace avmedia { namespace macavf {
 
 MacAVObserverObject* MacAVObserverHandler::mpMacAVObserverObject = NULL;
- 
+
 MacAVObserverObject* MacAVObserverHandler::getObserver() const
 {
     if( !mpMacAVObserverObject)
@@ -325,7 +325,7 @@ void SAL_CALL Player::setMute( sal_Bool bSet )
         return;
 
     mbMuted = (bSet == TRUE);
-    [mpPlayer setMuted:mbMuted]; 
+    [mpPlayer setMuted:mbMuted];
 }
 
 // ------------------------------------------------------------------------------
@@ -339,7 +339,7 @@ sal_Bool SAL_CALL Player::isMute()
 
 // ------------------------------------------------------------------------------
 
-void SAL_CALL Player::setVolumeDB( sal_Int16 nVolumeDB ) 
+void SAL_CALL Player::setVolumeDB( sal_Int16 nVolumeDB )
 	throw (uno::RuntimeException)
 {
     // -40dB <-> AVPlayer volume 0.0
@@ -353,8 +353,8 @@ void SAL_CALL Player::setVolumeDB( sal_Int16 nVolumeDB )
 }
 
 // ------------------------------------------------------------------------------
-    
-sal_Int16 SAL_CALL Player::getVolumeDB() 
+
+sal_Int16 SAL_CALL Player::getVolumeDB()
 	throw (uno::RuntimeException)
 {
     if( !mpPlayer )
@@ -367,7 +367,7 @@ sal_Int16 SAL_CALL Player::getVolumeDB()
     // -40dB <-> AVPlayer volume 0.0
     //   0dB <-> AVPlayer volume 1.0
     const int nVolumeDB = (fVolume <= 0) ? -40 : lrint( 20.0*log10(fVolume));
-    
+
     return (sal_Int16)nVolumeDB;
 }
 
@@ -417,7 +417,7 @@ uno::Reference< ::media::XPlayerWindow > SAL_CALL Player::createPlayerWindow( co
 
 // ------------------------------------------------------------------------------
 
-uno::Reference< media::XFrameGrabber > SAL_CALL Player::createFrameGrabber() 
+uno::Reference< media::XFrameGrabber > SAL_CALL Player::createFrameGrabber()
     throw (uno::RuntimeException)
 {
     uno::Reference< media::XFrameGrabber > xRet;

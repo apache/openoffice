@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -284,7 +284,7 @@ ScDrawLayer::ScDrawLayer( ScDocument* pDocument, const String& rName ) :
  	    pHitOutlinerPool->SetPoolDefaultItem(SvxFontHeightItem( 423, 100, EE_CHAR_FONTHEIGHT ));    // 12Pt
  	    pHitOutlinerPool->SetPoolDefaultItem(SvxFontHeightItem( 423, 100, EE_CHAR_FONTHEIGHT_CJK ));    // 12Pt
     }
-    
+
     // initial undo mode as in Calc document
     if( pDoc )
         EnableUndo( pDoc->IsUndoEnabled() );
@@ -501,7 +501,7 @@ void ScDrawLayer::MoveCells( SCTAB nTab, SCCOL nCol1,SCROW nRow1, SCCOL nCol2,SC
 			{
 				if ( pObj->ISA( SdrRectObj ) && pData->maStart.IsValid() && pData->maEnd.IsValid() )
                     pData->maStart.PutInOrder( pData->maEnd );
-                AddCalcUndo< ScUndoObjData >( pObj, aOldStt, aOldEnd, pData->maStart, pData->maEnd );				
+                AddCalcUndo< ScUndoObjData >( pObj, aOldStt, aOldEnd, pData->maStart, pData->maEnd );
                 RecalcPos( pObj, *pData, bNegativePage, bUpdateNoteCaptionPos );
 			}
 		}
@@ -955,7 +955,7 @@ void ScDrawLayer::MoveAreaTwips( SCTAB nTab, const Rectangle& rArea,
 					}
 					if( bMoved )
 					{
-			                        AddCalcUndo< SdrUndoGeoObj >( *pObject );						
+			                        AddCalcUndo< SdrUndoGeoObj >( *pObject );
 						lcl_TwipsToMM( aPoint );
 						pObject->SetPoint( aPoint, i );
 					}
@@ -1664,7 +1664,7 @@ void ScDrawLayer::CopyFromClip( ScDrawLayer* pClipModel, SCTAB nSourceTab, const
                                 uno::Reference< chart::XChartDocument > xNewChartDoc( xNewChart, uno::UNO_QUERY );
                                 if( xOldChartDoc.is() && xNewChartDoc.is() )
                                     xNewChartDoc->attachData( xOldChartDoc->getData() );
-                                
+
                                 //  (see ScDocument::UpdateChartListenerCollection, PastingDrawFromOtherDoc)
                             }
 					    }

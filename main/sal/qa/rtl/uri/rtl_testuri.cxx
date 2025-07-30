@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -80,42 +80,42 @@ TEST_F(Test, test_Uri) {
                     aText1, eCharClass, rtl_UriEncodeKeepEscapes,
                     RTL_TEXTENCODING_ISO_8859_1),
                 rtl_UriDecodeWithCharset, RTL_TEXTENCODING_ASCII_US)
-             == aText2)) << 
+             == aText2)) <<
             "failure 1";
         ASSERT_TRUE((rtl::Uri::decode(
                 rtl::Uri::encode(
                     aText1, eCharClass, rtl_UriEncodeCheckEscapes,
                     RTL_TEXTENCODING_ISO_8859_1),
                 rtl_UriDecodeWithCharset, RTL_TEXTENCODING_ASCII_US)
-             == aText2)) << 
+             == aText2)) <<
             "failure 2";
         ASSERT_TRUE((rtl::Uri::decode(
                 rtl::Uri::encode(
                     aText1, eCharClass, rtl_UriEncodeKeepEscapes,
                     RTL_TEXTENCODING_ISO_8859_1),
                 rtl_UriDecodeWithCharset, RTL_TEXTENCODING_ISO_8859_1)
-             == aText2)) << 
+             == aText2)) <<
             "failure 3";
         ASSERT_TRUE((rtl::Uri::decode(
                 rtl::Uri::encode(
                     aText1, eCharClass, rtl_UriEncodeCheckEscapes,
                     RTL_TEXTENCODING_ISO_8859_1),
                 rtl_UriDecodeWithCharset, RTL_TEXTENCODING_ISO_8859_1)
-             == aText2)) << 
+             == aText2)) <<
             "failure 4";
         ASSERT_TRUE((rtl::Uri::decode(
                 rtl::Uri::encode(
                     aText1, eCharClass, rtl_UriEncodeKeepEscapes,
                     RTL_TEXTENCODING_ISO_8859_1),
                 rtl_UriDecodeWithCharset, RTL_TEXTENCODING_UTF8)
-             == aText2)) << 
+             == aText2)) <<
             "failure 5";
         ASSERT_TRUE((rtl::Uri::decode(
                 rtl::Uri::encode(
                     aText1, eCharClass, rtl_UriEncodeCheckEscapes,
                     RTL_TEXTENCODING_ISO_8859_1),
                 rtl_UriDecodeWithCharset, RTL_TEXTENCODING_UTF8)
-             == aText2)) << 
+             == aText2)) <<
             "failure 6";
     }}
 
@@ -163,28 +163,28 @@ TEST_F(Test, test_Uri) {
                     aText1, eCharClass, rtl_UriEncodeKeepEscapes,
                     RTL_TEXTENCODING_ISO_8859_1),
                 rtl_UriDecodeWithCharset, RTL_TEXTENCODING_ISO_8859_1)
-             == aText2)) << 
+             == aText2)) <<
             "failure 7";
         ASSERT_TRUE((rtl::Uri::decode(
                 rtl::Uri::encode(
                     aText1, eCharClass, rtl_UriEncodeCheckEscapes,
                     RTL_TEXTENCODING_ISO_8859_1),
                 rtl_UriDecodeWithCharset, RTL_TEXTENCODING_ISO_8859_1)
-             == aText2)) << 
+             == aText2)) <<
             "failure 8";
         ASSERT_TRUE((rtl::Uri::decode(
                 rtl::Uri::encode(
                     aText1, eCharClass, rtl_UriEncodeKeepEscapes,
                     RTL_TEXTENCODING_UTF8),
                 rtl_UriDecodeWithCharset, RTL_TEXTENCODING_UTF8)
-             == aText2)) << 
+             == aText2)) <<
             "failure 9";
         ASSERT_TRUE((rtl::Uri::decode(
                 rtl::Uri::encode(
                     aText1, eCharClass, rtl_UriEncodeCheckEscapes,
                     RTL_TEXTENCODING_UTF8),
                 rtl_UriDecodeWithCharset, RTL_TEXTENCODING_UTF8)
-             == aText2)) << 
+             == aText2)) <<
             "failure 10";
     }}
 
@@ -202,17 +202,17 @@ TEST_F(Test, test_Uri) {
     ASSERT_TRUE((rtl::Uri::encode(
             aText1, rtl_UriCharClassUric, rtl_UriEncodeIgnoreEscapes,
             RTL_TEXTENCODING_UTF8)
-         == aText2)) << 
+         == aText2)) <<
         "failure 11";
     ASSERT_TRUE((rtl::Uri::encode(
             aText1, rtl_UriCharClassUric, rtl_UriEncodeKeepEscapes,
             RTL_TEXTENCODING_UTF8)
-         == aText2)) << 
+         == aText2)) <<
         "failure 12";
     ASSERT_TRUE((rtl::Uri::encode(
             aText1, rtl_UriCharClassUric, rtl_UriEncodeCheckEscapes,
             RTL_TEXTENCODING_UTF8)
-         == aText2)) << 
+         == aText2)) <<
         "failure 13";
 
     aText1 = rtl::OUString(
@@ -225,11 +225,11 @@ TEST_F(Test, test_Uri) {
     aBuffer.append(static_cast< sal_Unicode >('A'));
     aText2 = aBuffer.makeStringAndClear();
     ASSERT_TRUE((rtl::Uri::decode(aText1, rtl_UriDecodeToIuri, RTL_TEXTENCODING_UTF8)
-         == aText2)) << 
+         == aText2)) <<
         "failure 14";
     ASSERT_TRUE((rtl::Uri::decode(
             aText1, rtl_UriDecodeWithCharset, RTL_TEXTENCODING_UTF8)
-         == aText2)) << 
+         == aText2)) <<
         "failure 15";
 
     // Check UTF-8 handling:
@@ -240,7 +240,7 @@ TEST_F(Test, test_Uri) {
     ASSERT_TRUE((rtl::Uri::encode(
             aText1, rtl_UriCharClassUric, rtl_UriEncodeCheckEscapes,
             RTL_TEXTENCODING_UTF8)
-         == aText2)) << 
+         == aText2)) <<
         "failure 16";
 
     aText1 = rtl::OUString(RTL_CONSTASCII_USTRINGPARAM("%EF%BF%BF"));
@@ -249,7 +249,7 @@ TEST_F(Test, test_Uri) {
     ASSERT_TRUE((rtl::Uri::encode(
             aText1, rtl_UriCharClassUric, rtl_UriEncodeCheckEscapes,
             RTL_TEXTENCODING_UTF8)
-         == aText2)) << 
+         == aText2)) <<
         "failure 17";
 
     // Check IURI handling:
@@ -259,7 +259,7 @@ TEST_F(Test, test_Uri) {
     aBuffer.append(static_cast< sal_Unicode >(0x00FF));
     aText2 = aBuffer.makeStringAndClear();
     ASSERT_TRUE((rtl::Uri::decode(aText1, rtl_UriDecodeToIuri, RTL_TEXTENCODING_UTF8)
-         == aText2)) << 
+         == aText2)) <<
         "failure 18";
 
     // Check modified rtl_UriCharClassUnoParamValue (removed '[' and ']'):
@@ -269,7 +269,7 @@ TEST_F(Test, test_Uri) {
     ASSERT_TRUE((rtl::Uri::encode(
             aText1, rtl_UriCharClassUnoParamValue, rtl_UriEncodeCheckEscapes,
             RTL_TEXTENCODING_ASCII_US)
-         == aText2)) << 
+         == aText2)) <<
         "failure 19";
 
     // Check Uri::convertRelToAbs:
@@ -369,11 +369,11 @@ TEST_F(Test, test_Uri) {
         ASSERT_TRUE((rtl::Uri::encode(
                 aText1, rtl_UriCharClassUric, rtl_UriEncodeIgnoreEscapes,
                 RTL_TEXTENCODING_ISO_8859_5)
-             == aText2)) << 
+             == aText2)) <<
             "failure 20";
         ASSERT_TRUE((rtl::Uri::decode(
                 aText2, rtl_UriDecodeWithCharset, RTL_TEXTENCODING_ISO_8859_5)
-             == aText1)) << 
+             == aText1)) <<
             "failure 20a";
     }
     {
@@ -385,11 +385,11 @@ TEST_F(Test, test_Uri) {
         ASSERT_TRUE((rtl::Uri::encode(
                 aText1, rtl_UriCharClassUric, rtl_UriEncodeIgnoreEscapes,
                 RTL_TEXTENCODING_ISO_8859_5)
-             == aText2)) << 
+             == aText2)) <<
             "failure 21";
         ASSERT_TRUE((rtl::Uri::decode(
                 aText2, rtl_UriDecodeWithCharset, RTL_TEXTENCODING_ISO_8859_5)
-             == aText1)) << 
+             == aText1)) <<
             "failure 21a";
     }
     {
@@ -400,11 +400,11 @@ TEST_F(Test, test_Uri) {
         ASSERT_TRUE((rtl::Uri::encode(
                 aText1, rtl_UriCharClassUric, rtl_UriEncodeIgnoreEscapes,
                 RTL_TEXTENCODING_GB_18030)
-             == aText2)) << 
+             == aText2)) <<
             "failure 22";
         ASSERT_TRUE((rtl::Uri::decode(
                 aText2, rtl_UriDecodeWithCharset, RTL_TEXTENCODING_GB_18030)
-             == aText1)) << 
+             == aText1)) <<
             "failure 22a";
     }
 
@@ -417,7 +417,7 @@ TEST_F(Test, test_Uri) {
         ASSERT_TRUE((rtl::Uri::encode(
                 aText1, rtl_UriCharClassUric, rtl_UriEncodeStrict,
                 RTL_TEXTENCODING_ISO_8859_5)
-             == aText2)) << 
+             == aText2)) <<
             "failure 23";
     }
     {
@@ -425,7 +425,7 @@ TEST_F(Test, test_Uri) {
         aText2 = rtl::OUString();
         ASSERT_TRUE((rtl::Uri::decode(
                 aText1, rtl_UriDecodeStrict, RTL_TEXTENCODING_UTF8)
-             == aText2)) << 
+             == aText2)) <<
             "failure 24";
     }
     {
@@ -433,7 +433,7 @@ TEST_F(Test, test_Uri) {
         aText2 = rtl::OUString();
         ASSERT_TRUE((rtl::Uri::decode(
                 aText1, rtl_UriDecodeStrict, RTL_TEXTENCODING_GB_18030)
-             == aText2)) << 
+             == aText2)) <<
             "failure 25";
     }
     {
@@ -441,7 +441,7 @@ TEST_F(Test, test_Uri) {
         aText2 = rtl::OUString();
         ASSERT_TRUE((rtl::Uri::decode(
                 aText1, rtl_UriDecodeStrict, RTL_TEXTENCODING_GB_18030)
-             == aText2)) << 
+             == aText2)) <<
             "failure 26";
     }
     {
@@ -450,7 +450,7 @@ TEST_F(Test, test_Uri) {
         aText2 = rtl::OUString(aText2U);
         ASSERT_TRUE((rtl::Uri::decode(
                 aText1, rtl_UriDecodeStrict, RTL_TEXTENCODING_GB_18030)
-             == aText2)) << 
+             == aText2)) <<
             "failure 27";
     }
     {
@@ -459,7 +459,7 @@ TEST_F(Test, test_Uri) {
         aText2 = rtl::OUString(aText2U);
         ASSERT_TRUE((rtl::Uri::decode(
                 aText1, rtl_UriDecodeStrict, RTL_TEXTENCODING_GB_18030)
-             == aText2)) << 
+             == aText2)) <<
             "failure 28";
     }
 
@@ -471,7 +471,7 @@ TEST_F(Test, test_Uri) {
         ASSERT_TRUE((rtl::Uri::encode(
                 aText1, rtl_UriCharClassUric, rtl_UriEncodeStrictKeepEscapes,
                 RTL_TEXTENCODING_UTF8)
-             == aText2)) << 
+             == aText2)) <<
             "failure 29";
     }
     {
@@ -481,7 +481,7 @@ TEST_F(Test, test_Uri) {
         ASSERT_TRUE((rtl::Uri::encode(
                 aText1, rtl_UriCharClassUric, rtl_UriEncodeStrictKeepEscapes,
                 RTL_TEXTENCODING_UTF8)
-             == aText2)) << 
+             == aText2)) <<
             "failure 30";
     }
     {
@@ -491,7 +491,7 @@ TEST_F(Test, test_Uri) {
         ASSERT_TRUE((rtl::Uri::encode(
                 aText1, rtl_UriCharClassUric, rtl_UriEncodeStrictKeepEscapes,
                 RTL_TEXTENCODING_ISO_8859_5)
-             == aText2)) << 
+             == aText2)) <<
             "failure 23";
     }
 }

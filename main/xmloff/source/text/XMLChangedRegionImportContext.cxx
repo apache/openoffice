@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -44,7 +44,7 @@ using ::com::sun::star::util::DateTime;
 using ::com::sun::star::xml::sax::XAttributeList;
 
 
-	
+
 TYPEINIT1(XMLChangedRegionImportContext, SvXMLImportContext);
 
 XMLChangedRegionImportContext::XMLChangedRegionImportContext(
@@ -70,7 +70,7 @@ void XMLChangedRegionImportContext::StartElement(
 	{
 		OUString sLocalName;
 		sal_uInt16 nPrefix = GetImport().GetNamespaceMap().
-			GetKeyByAttrName( xAttrList->getNameByIndex(nAttr), 
+			GetKeyByAttrName( xAttrList->getNameByIndex(nAttr),
 							  &sLocalName );
 
         const OUString sValue = xAttrList->getValueByIndex(nAttr);
@@ -109,13 +109,13 @@ SvXMLImportContext* XMLChangedRegionImportContext::CreateChildContext(
 
 	if (XML_NAMESPACE_TEXT == nPrefix)
 	{
-		if ( IsXMLToken( rLocalName, XML_INSERTION ) || 
-             IsXMLToken( rLocalName, XML_DELETION ) || 
+		if ( IsXMLToken( rLocalName, XML_INSERTION ) ||
+             IsXMLToken( rLocalName, XML_DELETION ) ||
              IsXMLToken( rLocalName, XML_FORMAT_CHANGE ) )
 		{
 			// create XMLChangeElementImportContext for all kinds of changes
 			pContext = new XMLChangeElementImportContext(
-			   GetImport(), nPrefix, rLocalName, 
+			   GetImport(), nPrefix, rLocalName,
 			   IsXMLToken( rLocalName, XML_DELETION ),
 			   *this);
 		}
@@ -124,7 +124,7 @@ SvXMLImportContext* XMLChangedRegionImportContext::CreateChildContext(
 
 	if (NULL == pContext)
 	{
-		pContext = SvXMLImportContext::CreateChildContext(nPrefix, rLocalName, 
+		pContext = SvXMLImportContext::CreateChildContext(nPrefix, rLocalName,
 														  xAttrList);
 
 		// was it a text element? If not, use default!
@@ -143,9 +143,9 @@ void XMLChangedRegionImportContext::EndElement()
 	// restore old XCursor (if necessary)
 	if (xOldCursor.is())
 	{
-		// delete last paragraph 
+		// delete last paragraph
 		// (one extra paragraph was inserted in the beginning)
-		UniReference<XMLTextImportHelper> rHelper = 
+		UniReference<XMLTextImportHelper> rHelper =
 			GetImport().GetTextImport();
 		rHelper->DeleteParagraph();
 
@@ -177,8 +177,8 @@ void XMLChangedRegionImportContext::UseRedlineText()
 		UniReference<XMLTextImportHelper> rHelper(GetImport().GetTextImport());
 		Reference<XTextCursor> xCursor( rHelper->GetCursor() );
 
-		// create Redline and new Cursor 
-		Reference<XTextCursor> xNewCursor = 
+		// create Redline and new Cursor
+		Reference<XTextCursor> xNewCursor =
 			rHelper->RedlineCreateText(xCursor, sID);
 
 		if (xNewCursor.is())

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -422,7 +422,7 @@ void __EXPORT EditRTFParser::SetAttrInDoc( SvxRTFItemStackType &rSet )
 	// OutlLevel...
 	if ( nOutlLevel != 0xff )
 	{
-		for ( sal_uInt32 n = nStartNode; n <= nEndNode; n++ ) 
+		for ( sal_uInt32 n = nStartNode; n <= nEndNode; n++ )
 		{
 			ContentNode* pNode = pImpEditEngine->GetEditDoc().SaveGetObject( n );
 			pNode->GetContentAttribs().GetItems().Put( SfxInt16Item( EE_PARA_OUTLLEVEL, nOutlLevel ) );
@@ -446,7 +446,7 @@ SfxStyleSheet* EditRTFParser::CreateStyleSheet( SvxRTFStyleType* pRTFStyle )
 	SfxStyleSheet* pStyle = (SfxStyleSheet*)pImpEditEngine->GetStyleSheetPool()->Find( pRTFStyle->sName, SFX_STYLE_FAMILY_ALL );
 	if ( pStyle )
 		return pStyle;
-	
+
 	String aName( pRTFStyle->sName );
 	String aParent;
 	if ( pRTFStyle->nBasedOn )
@@ -482,7 +482,7 @@ SfxStyleSheet* EditRTFParser::CreateStyleSheet( SvxRTFStyleType* pRTFStyle )
 void EditRTFParser::CreateStyleSheets()
 {
 	// der SvxRTFParser hat jetzt die Vorlagen erzeugt...
-	if ( pImpEditEngine->GetStyleSheetPool() && pImpEditEngine->GetStatus().DoImportRTFStyleSheets() ) 
+	if ( pImpEditEngine->GetStyleSheetPool() && pImpEditEngine->GetStatus().DoImportRTFStyleSheets() )
 	{
 		SvxRTFStyleType* pRTFStyle = GetStyleTbl().First();
 		while ( pRTFStyle )
@@ -586,7 +586,7 @@ void EditRTFParser::SkipGroup()
 			}
 			break;
 
-			case '{':			
+			case '{':
             {
                 _nOpenBrakets++;
             }

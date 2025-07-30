@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -222,8 +222,8 @@ sal_Bool __EXPORT ExtBasicTreeListBox::NotifyAcceptDrop( SvLBoxEntry* pEntry )
         // check if module library is not loaded, readonly or password protected
         Reference< script::XLibraryContainer2 > xModLibContainer( rDestDoc.getLibraryContainer( E_SCRIPTS ), UNO_QUERY );
 	    if ( xModLibContainer.is() && xModLibContainer->hasByName( aOUDestLibName ) )
-        {                                                
-            if ( !xModLibContainer->isLibraryLoaded( aOUDestLibName ) ) 
+        {
+            if ( !xModLibContainer->isLibraryLoaded( aOUDestLibName ) )
                 bValid = sal_False;
 
             if ( xModLibContainer->isLibraryReadOnly( aOUDestLibName ) )
@@ -238,7 +238,7 @@ sal_Bool __EXPORT ExtBasicTreeListBox::NotifyAcceptDrop( SvLBoxEntry* pEntry )
         Reference< script::XLibraryContainer2 > xDlgLibContainer( rDestDoc.getLibraryContainer( E_DIALOGS ), UNO_QUERY );
         if ( xDlgLibContainer.is() && xDlgLibContainer->hasByName( aOUDestLibName ) )
         {
-            if ( !xDlgLibContainer->isLibraryLoaded( aOUDestLibName ) ) 
+            if ( !xDlgLibContainer->isLibraryLoaded( aOUDestLibName ) )
                 bValid = sal_False;
 
             if ( xDlgLibContainer->isLibraryReadOnly( aOUDestLibName ) )
@@ -431,7 +431,7 @@ sal_Bool __EXPORT ExtBasicTreeListBox::NotifyCopyingMoving( SvLBoxEntry* pTarget
 		try
 		{
 			if ( eType == OBJ_TYPE_MODULE )	// module
-			{	
+			{
 				// get module
 				::rtl::OUString aModule;
                 if ( rSourceDoc.getModule( aSourceLibName, aSourceName, aModule ) )
@@ -593,7 +593,7 @@ ObjectPage::ObjectPage( Window * pParent, const ResId& rResId, sal_uInt16 nMode 
 	aBasicBox.EnableInplaceEditing( sal_True );
 	aBasicBox.SetMode( nMode );
     aBasicBox.SetStyle( WB_BORDER | WB_TABSTOP |
-                        WB_HASLINES | WB_HASLINESATROOT | 
+                        WB_HASLINES | WB_HASLINESATROOT |
                         WB_HASBUTTONS | WB_HASBUTTONSATROOT |
                         WB_HSCROLL );
     aBasicBox.ScanAllEntries();
@@ -603,7 +603,7 @@ ObjectPage::ObjectPage( Window * pParent, const ResId& rResId, sal_uInt16 nMode 
 }
 
 void ObjectPage::SetCurrentEntry( BasicEntryDescriptor& rDesc )
-{ 
+{
     aBasicBox.SetCurrentEntry( rDesc );
 }
 
@@ -634,7 +634,7 @@ void ObjectPage::CheckButtons()
             aEditButton.Disable();
         else
 		aEditButton.Enable();
-    }    
+    }
 	else
 		aEditButton.Disable();
 
@@ -708,7 +708,7 @@ IMPL_LINK( ObjectPage, ButtonHdl, Button *, pButton )
                     sal_uInt16 nIndex = 0;
                     aModName = aModName.GetToken( 0, ' ', nIndex );
                 }
-                SbxItem aSbxItem( SID_BASICIDE_ARG_SBX, aDesc.GetDocument(), aDesc.GetLibName(), 
+                SbxItem aSbxItem( SID_BASICIDE_ARG_SBX, aDesc.GetDocument(), aDesc.GetLibName(),
                                   aModName, aBasicBox.ConvertType( aDesc.GetType() ) );
 				pDispatcher->Execute( SID_BASICIDE_SHOWSBX, SFX_CALLMODE_SYNCHRON, &aSbxItem, 0L );
 			}
@@ -791,7 +791,7 @@ bool ObjectPage::GetSelection( ScriptDocument& rDocument, String& rLibName )
 
     if ( bOK )
         bRet = true;
-    
+
     return bRet;
 }
 
@@ -802,8 +802,8 @@ void ObjectPage::NewModule()
 
     if ( GetSelection( aDocument, aLibName ) )
     {
-        String aModName;       
-        createModImpl( static_cast<Window*>( this ), aDocument, 
+        String aModName;
+        createModImpl( static_cast<Window*>( this ), aDocument,
                     aBasicBox, aLibName, aModName, true );
     }
 }
@@ -838,7 +838,7 @@ void ObjectPage::NewDialog()
                 if ( !aDocument.createDialog( aLibName, aDlgName, xISP ) )
                     return;
 
-				SbxItem aSbxItem( SID_BASICIDE_ARG_SBX, aDocument, aLibName, aDlgName, BASICIDE_TYPE_DIALOG );					
+				SbxItem aSbxItem( SID_BASICIDE_ARG_SBX, aDocument, aLibName, aDlgName, BASICIDE_TYPE_DIALOG );
                 BasicIDEShell* pIDEShell = IDE_DLL()->GetShell();
                 SfxViewFrame* pViewFrame = pIDEShell ? pIDEShell->GetViewFrame() : NULL;
 	            SfxDispatcher* pDispatcher = pViewFrame ? pViewFrame->GetDispatcher() : NULL;
@@ -999,7 +999,7 @@ SbModule* createModImpl( Window* pWin, const ScriptDocument& rDocument,
             StarBASIC* pBasic = pBasMgr? pBasMgr->GetLib( aLibName ) : 0;
                 if ( pBasic )
                     pModule = pBasic->FindModule( aModName );
-			SbxItem aSbxItem( SID_BASICIDE_ARG_SBX, rDocument, aLibName, aModName, BASICIDE_TYPE_MODULE );					
+			SbxItem aSbxItem( SID_BASICIDE_ARG_SBX, rDocument, aLibName, aModName, BASICIDE_TYPE_MODULE );
 			BasicIDEShell* pIDEShell = IDE_DLL()->GetShell();
 			SfxViewFrame* pViewFrame = pIDEShell ? pIDEShell->GetViewFrame() : NULL;
 			SfxDispatcher* pDispatcher = pViewFrame ? pViewFrame->GetDispatcher() : NULL;
@@ -1029,10 +1029,10 @@ SbModule* createModImpl( Window* pWin, const ScriptDocument& rDocument,
                         {
                             if( !rBasicBox.IsExpanded( pLibSubEntry ) )
                                 rBasicBox.Expand( pLibSubEntry );
-                            pSubRootEntry = pLibSubEntry;    
+                            pSubRootEntry = pLibSubEntry;
                         }
                     }
-                    
+
                     SvLBoxEntry* pEntry = rBasicBox.FindEntry( pSubRootEntry, aModName, OBJ_TYPE_MODULE );
                     if ( !pEntry )
                     {

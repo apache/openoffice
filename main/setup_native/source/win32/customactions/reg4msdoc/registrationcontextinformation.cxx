@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 //Implementierung der Klasse RegistrationContextInformation.
@@ -51,7 +51,7 @@ RegistrationContextInformation::RegistrationContextInformation(MSIHANDLE hMsi, c
 }
 
 std::wstring RegistrationContextInformation::GetWordDocumentDisplayName() const
-{	
+{
 	std::wstring str;
     GetMsiProp(msihandle_, TEXT("STR_MS_WORD_DOCUMENT"), str);
 	if (m_IsWin9x && !IsConvertableToAnsi(str))
@@ -99,7 +99,7 @@ std::wstring RegistrationContextInformation::GetWordTemplateDefaultShellCommand(
 }
 
 std::wstring RegistrationContextInformation::GetRtfDocumentDisplayName() const
-{	
+{
 	std::wstring str;
     GetMsiProp(msihandle_, TEXT("STR_RTF_DOCUMENT"), str);
 	if (m_IsWin9x && !IsConvertableToAnsi(str))
@@ -241,7 +241,7 @@ std::wstring RegistrationContextInformation::GetPowerPointShowDefaultShellComman
 {
     return std::wstring(TEXT("open"));
 }
-	
+
 //----------------------------------------------
 /** The string for the "New" command that should appear
 	in the Explorer context menu when someone right
@@ -252,13 +252,13 @@ std::wstring RegistrationContextInformation::ShellNewCommandDisplayName() const
 	std::wstring str;
     GetMsiProp(msihandle_, TEXT("STR_NEW_DISPLAY_NAME"), str);
 	std::wstring::size_type idx = str.find(TEXT("~"));
-	
+
 	if(std::wstring::npos != idx)
 		str.replace(idx, 1, TEXT("&"));
-		
+
 	if (m_IsWin9x && !IsConvertableToAnsi(str))
 		str = TEXT("&New");
-		
+
 	return str;
 }
 
@@ -271,7 +271,7 @@ std::wstring RegistrationContextInformation::ShellEditCommandDisplayName() const
 	std::wstring str;
     GetMsiProp(msihandle_, TEXT("STR_EDIT"), str);
 	std::wstring::size_type idx = str.find(TEXT("~"));
-	
+
 	if(std::wstring::npos != idx)
 		str.replace(idx, 1, TEXT("&"));
 
@@ -284,7 +284,7 @@ std::wstring RegistrationContextInformation::ShellEditCommandDisplayName() const
 std::wstring RegistrationContextInformation::GetOpenOfficeFriendlyAppName() const
 {
     std::wstring str;
-    GetMsiProp(msihandle_, TEXT("ProductName"), str);	
+    GetMsiProp(msihandle_, TEXT("ProductName"), str);
 	return str;
 }
 
@@ -321,7 +321,7 @@ std::wstring RegistrationContextInformation::GetOpenOfficeCommandline(SHELL_COMM
 		break;
     case Office: // default to std command line
         break;
-	// default: no default to find new added enums at compile time 
+	// default: no default to find new added enums at compile time
     }
 	switch(ShellCommand)
 	{
@@ -337,7 +337,7 @@ std::wstring RegistrationContextInformation::GetOpenOfficeCommandline(SHELL_COMM
     case Printto:
         cmd_line += std::wstring(TEXT(" -pt \"%2\" \"%1\""));
         break;
-    // default: no default to find new added enums at compile time 
+    // default: no default to find new added enums at compile time
 	}
 	return cmd_line;
 }
@@ -357,7 +357,7 @@ bool RegistrationContextInformation::IsConvertableToAnsi(const std::wstring& Str
 			buff,
 			sizeof(buff),
 			NULL,
-			&bUsedDefChar);        
+			&bUsedDefChar);
 	}
     return !bUsedDefChar;
 }

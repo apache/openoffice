@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -53,13 +53,13 @@ namespace drawinglayer
 				|| ::com::sun::star::drawing::NormalsKind_SPHERE == getSdr3DObjectAttribute().getNormalsKind());
 
 			// create unit geometry
-			basegfx::B3DPolyPolygon aFill(basegfx::tools::createSphereFillPolyPolygonFromB3DRange(aUnitRange, 
+			basegfx::B3DPolyPolygon aFill(basegfx::tools::createSphereFillPolyPolygonFromB3DRange(aUnitRange,
 				getHorizontalSegments(), getVerticalSegments(), bCreateNormals));
 
 			// normal inversion
-			if(!getSdrLFSAttribute().getFill().isDefault() 
-				&& bCreateNormals 
-				&& getSdr3DObjectAttribute().getNormalsInvert() 
+			if(!getSdrLFSAttribute().getFill().isDefault()
+				&& bCreateNormals
+				&& getSdr3DObjectAttribute().getNormalsInvert()
 				&& aFill.areNormalsUsed())
 			{
 				// invert normals
@@ -89,7 +89,7 @@ namespace drawinglayer
 				if(bSphereX || bObjectSpecificX || bSphereY || bObjectSpecificY)
 				{
 					double fRelativeAngle(0.0);
-					
+
 					if(bObjectSpecificX)
 					{
 						// Since the texture coordinates are (for historical reasons)
@@ -107,7 +107,7 @@ namespace drawinglayer
 					const basegfx::B3DPoint aCenter(aRange.getCenter());
 					aFill = basegfx::tools::applyDefaultTextureCoordinatesSphere(aFill, aCenter,
 						bSphereX || bObjectSpecificX, bSphereY || bObjectSpecificY);
-					
+
 					if(bObjectSpecificX)
 					{
 						// rotate back again
@@ -135,20 +135,20 @@ namespace drawinglayer
 			{
 				// add fill
 				aRetval = create3DPolyPolygonFillPrimitives(
-					a3DPolyPolygonVector, 
-					getTransform(), 
+					a3DPolyPolygonVector,
+					getTransform(),
 					getTextureSize(),
-					getSdr3DObjectAttribute(), 
-					getSdrLFSAttribute().getFill(), 
+					getSdr3DObjectAttribute(),
+					getSdrLFSAttribute().getFill(),
 					getSdrLFSAttribute().getFillFloatTransGradient());
 			}
 			else
 			{
 				// create simplified 3d hit test geometry
                 aRetval = createHiddenGeometryPrimitives3D(
-			        a3DPolyPolygonVector, 
-			        getTransform(), 
-			        getTextureSize(), 
+			        a3DPolyPolygonVector,
+			        getTransform(),
+			        getTextureSize(),
 			        getSdr3DObjectAttribute());
 			}
 
@@ -174,11 +174,11 @@ namespace drawinglayer
 		}
 
 		SdrSpherePrimitive3D::SdrSpherePrimitive3D(
-			const basegfx::B3DHomMatrix& rTransform, 
+			const basegfx::B3DHomMatrix& rTransform,
 			const basegfx::B2DVector& rTextureSize,
 			const attribute::SdrLineFillShadowAttribute3D& rSdrLFSAttribute,
-			const attribute::Sdr3DObjectAttribute& rSdr3DObjectAttribute, 
-			sal_uInt32 nHorizontalSegments, 
+			const attribute::Sdr3DObjectAttribute& rSdr3DObjectAttribute,
+			sal_uInt32 nHorizontalSegments,
 			sal_uInt32 nVerticalSegments)
 		:	SdrPrimitive3D(rTransform, rTextureSize, rSdrLFSAttribute, rSdr3DObjectAttribute),
 			mnHorizontalSegments(nHorizontalSegments),
@@ -192,7 +192,7 @@ namespace drawinglayer
 			{
 				const SdrSpherePrimitive3D& rCompare = static_cast< const SdrSpherePrimitive3D& >(rPrimitive);
 
-				return (getHorizontalSegments() == rCompare.getHorizontalSegments() 
+				return (getHorizontalSegments() == rCompare.getHorizontalSegments()
 					&& getVerticalSegments() == rCompare.getVerticalSegments());
 			}
 

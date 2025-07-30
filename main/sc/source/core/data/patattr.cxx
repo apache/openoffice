@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -146,7 +146,7 @@ int __EXPORT ScPatternAttr::operator==( const SfxPoolItem& rCmp ) const
    //More quickly comparing method using hashkey.
    //the const_cast here will then only change the HashKey of that SfxItemSet, so it's safe.
 	return ((const_cast<ScPatternAttr&>(*this)).GetItemSet().QuickCompare( (const_cast<ScPatternAttr&>(static_cast<const ScPatternAttr&>(rCmp))).GetItemSet())&&
-		StrCmp( GetStyleName(), static_cast<const ScPatternAttr&>(rCmp).GetStyleName() ) );  
+		StrCmp( GetStyleName(), static_cast<const ScPatternAttr&>(rCmp).GetStyleName() ) );
 }
 
 SfxPoolItem* __EXPORT ScPatternAttr::Create( SvStream& rStream, sal_uInt16 /* nVersion */ ) const

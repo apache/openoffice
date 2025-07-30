@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -38,12 +38,12 @@
 using namespace ::ooo::vba;
 using namespace ::com::sun::star;
 
-ScVbaName::ScVbaName(const css::uno::Reference< ov::XHelperInterface >& xParent, 
+ScVbaName::ScVbaName(const css::uno::Reference< ov::XHelperInterface >& xParent,
 			const css::uno::Reference< css::uno::XComponentContext >& xContext,
 			const css::uno::Reference< css::sheet::XNamedRange >& xName,
 			const css::uno::Reference< css::sheet::XNamedRanges >& xNames,
 			const css::uno::Reference< css::frame::XModel >& xModel ):
-			NameImpl_BASE(  xParent , xContext ), 
+			NameImpl_BASE(  xParent , xContext ),
 			mxModel( xModel ),
 			mxNamedRange( xName ),
 			mxNames( xNames )
@@ -118,7 +118,7 @@ ScVbaName::getValue() throw (css::uno::RuntimeException)
         {
             ::rtl::OUString sTmp = sTmpValue.copy( 1 );
             sTmp = sTmp.replaceAt(0, (sSheetName + ::rtl::OUString::createFromAscii(".")).getLength(), sSheetName + ::rtl::OUString::createFromAscii("!"));
-            sResult += sTmp; 
+            sResult += sTmp;
             sResult += sNewSegmentation;
         }
         nFrom = nTo + 1;
@@ -138,7 +138,7 @@ ScVbaName::getValue() throw (css::uno::RuntimeException)
 	return sResult;
 }
 
-void 
+void
 ScVbaName::setValue( const ::rtl::OUString & rValue ) throw (css::uno::RuntimeException)
 {
 	::rtl::OUString sSheetName = getWorkSheet()->getName();
@@ -177,25 +177,25 @@ ScVbaName::setValue( const ::rtl::OUString & rValue ) throw (css::uno::RuntimeEx
 	mxNamedRange->setContent(sResult);
 }
 
-::rtl::OUString 
+::rtl::OUString
 ScVbaName::getRefersTo() throw (css::uno::RuntimeException)
 {
 	return getValue();
 }
 
-void 
+void
 ScVbaName::setRefersTo( const ::rtl::OUString & rRefersTo ) throw (css::uno::RuntimeException)
 {
 	setValue( rRefersTo );
 }
 
-::rtl::OUString 
+::rtl::OUString
 ScVbaName::getRefersToLocal() throw (css::uno::RuntimeException)
 {
 	return getRefersTo();
 }
 
-void 
+void
 ScVbaName::setRefersToLocal( const ::rtl::OUString & rRefersTo ) throw (css::uno::RuntimeException)
 {
 	setRefersTo( rRefersTo );
@@ -213,7 +213,7 @@ ScVbaName::setRefersToR1C1( const ::rtl::OUString & rRefersTo ) throw (css::uno:
 	setRefersTo( rRefersTo );
 }
 
-::rtl::OUString 
+::rtl::OUString
 ScVbaName::getRefersToR1C1Local() throw (css::uno::RuntimeException)
 {
 	return getRefersTo();
@@ -241,7 +241,7 @@ ScVbaName::setRefersToRange( const css::uno::Reference< ov::excel::XRange > /*rR
 void
 ScVbaName::Delete() throw (css::uno::RuntimeException)
 {
-	mxNames->removeByName( mxNamedRange->getName() );	
+	mxNames->removeByName( mxNamedRange->getName() );
 }
 
 rtl::OUString&

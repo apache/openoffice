@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -120,7 +120,7 @@ bool lcl_deleteDataSeries(
             ::chart::DataSeriesHelper::deleteSeries( xSeries, xChartType );
 
             ::chart::AxisHelper::hideAxisIfNoDataIsAttached( xAxis, xDiagram );
-                        
+
             bResult = true;
             aUndoGuard.commit();
         }
@@ -206,7 +206,7 @@ namespace chart
     awt::Size aPageSize( ChartModelHelper::getPageSize( getModel() ) );
 
     return ::std::auto_ptr< ReferenceSizeProvider >(
-        new ReferenceSizeProvider( aPageSize, 
+        new ReferenceSizeProvider( aPageSize,
             Reference< chart2::XChartDocument >( getModel(), uno::UNO_QUERY )));
 }
 
@@ -243,7 +243,7 @@ void ChartController::executeDispatch_NewArrangement()
 
             // 3d rotation
             ThreeDHelper::set3DSettingsToDefault( uno::Reference< beans::XPropertySet >( xDiagram, uno::UNO_QUERY ) );
-            
+
             // legend
             Reference< beans::XPropertyState > xLegendState( xDiagram->getLegend(), uno::UNO_QUERY );
             if( xLegendState.is())

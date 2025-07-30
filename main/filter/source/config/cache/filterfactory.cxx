@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -226,7 +226,7 @@ css::uno::Sequence< ::rtl::OUString > SAL_CALL FilterFactory::getAvailableServic
         { throw; }
     catch(const css::uno::Exception&)
         { lUNOFilters.clear(); }
-    
+
     return lUNOFilters.getAsConstList();
 }
 
@@ -270,7 +270,7 @@ css::uno::Reference< css::container::XEnumeration > SAL_CALL FilterFactory::crea
         impl_loadOnDemand();
         aLock.clear();
         // <- SAFE ----------------------
-        
+
         if (lTokens.find(QUERY_IDENTIFIER_GETPREFERREDFILTERFORTYPE) != lTokens.end())
             OSL_ENSURE(sal_False, "DEPRECATED!\nPlease use prop search at the TypeDetection container!");
 //            lEnumSet = impl_queryGetPreferredFilterForType(lTokens);
@@ -290,7 +290,7 @@ css::uno::Reference< css::container::XEnumeration > SAL_CALL FilterFactory::crea
     ::comphelper::OEnumerationByName* pEnum = new ::comphelper::OEnumerationByName(this, lSet);
     return css::uno::Reference< css::container::XEnumeration >(static_cast< css::container::XEnumeration* >(pEnum), css::uno::UNO_QUERY);
 }
-/*        
+/*
         if (lEnumSet.empty())
         {
             //-------------------------------------------
@@ -304,7 +304,7 @@ css::uno::Reference< css::container::XEnumeration > SAL_CALL FilterFactory::crea
 
                 // might not all types was loaded till now!
                 impl_loadOnDemand();
-                
+
                 ::rtl::OUString sType  = pIt->second;
                 FilterCache*    pCache = impl_getWorkingCache();
                 if (pCache->hasItem(FilterCache::E_TYPE, sType))
@@ -335,11 +335,11 @@ OUStringList FilterFactory::impl_queryMatchByDocumentService(const QueryTokenize
 {
     // analyze query
     QueryTokenizer::const_iterator pIt;
-    
+
     ::rtl::OUString sDocumentService;
     sal_Int32       nIFlags = 0;
     sal_Int32       nEFlags = 0;
-    
+
     pIt = lTokens.find(QUERY_IDENTIFIER_MATCHBYDOCUMENTSERVICE);
     if (pIt != lTokens.end())
         sDocumentService = pIt->second;
@@ -404,7 +404,7 @@ OUStringList FilterFactory::impl_queryMatchByDocumentService(const QueryTokenize
     FilterCache* pCache       = impl_getWorkingCache();
     OUStringList lFilterNames = pCache->getItemNames(FilterCache::E_FILTER);
     OUStringList lResult      ;
-    
+
     for (OUStringList::const_iterator pName  = lFilterNames.begin();
                                       pName != lFilterNames.end()  ;
                                     ++pName                        )
@@ -440,7 +440,7 @@ OUStringList FilterFactory::impl_queryMatchByDocumentService(const QueryTokenize
             {
                 continue; // ignore filter -> try next one!
             }
-            
+
             // "eflags="        => not allowed
             // "eflags=-1"      => not allowed
             // "eflags=0"       => not useful
@@ -452,10 +452,10 @@ OUStringList FilterFactory::impl_queryMatchByDocumentService(const QueryTokenize
             {
                 continue; // ignore filter -> try next one!
             }
-            
+
             // OK - this filter passed all checks.
             // It match the query ...
-            lResult.push_back(sName);        
+            lResult.push_back(sName);
         }
         catch(const css::uno::RuntimeException& exRun)
             { throw exRun; }
@@ -465,7 +465,7 @@ OUStringList FilterFactory::impl_queryMatchByDocumentService(const QueryTokenize
 
     aLock.clear();
     // <- SAFE ----------------------
-    
+
     return lResult;
 }
 
@@ -478,7 +478,7 @@ class stlcomp_removeIfMatchFlags
         FilterCache* m_pCache ;
         sal_Int32    m_nFlags ;
         sal_Bool     m_bIFlags;
-        
+
     public:
         stlcomp_removeIfMatchFlags(FilterCache* pCache ,
                                    sal_Int32    nFlags ,
@@ -493,8 +493,8 @@ class stlcomp_removeIfMatchFlags
             try
             {
                 const CacheItem aFilter = m_pCache->getItem(FilterCache::E_FILTER, sFilter);
-                        sal_Int32 nFlags  = aFilter.getUnpackedValueOrDefault(PROPNAME_FLAGS, ((sal_Int32)0)); 
-                
+                        sal_Int32 nFlags  = aFilter.getUnpackedValueOrDefault(PROPNAME_FLAGS, ((sal_Int32)0));
+
                 bool bMatch = false;
                 if (m_bIFlags)
                     // IFlags are interpeted as ALL_FLAGS_MUST_MATCH !
@@ -519,11 +519,11 @@ OUStringList FilterFactory::impl_getSortedFilterList(const QueryTokenizer& lToke
 {
     // analyze the given query parameter
     QueryTokenizer::const_iterator pIt1;
-    
+
     ::rtl::OUString sModule;
     sal_Int32       nIFlags = -1;
     sal_Int32       nEFlags = -1;
-    
+
     pIt1 = lTokens.find(QUERY_PARAM_MODULE);
     if (pIt1 != lTokens.end())
         sModule = pIt1->second;
@@ -533,7 +533,7 @@ OUStringList FilterFactory::impl_getSortedFilterList(const QueryTokenizer& lToke
     pIt1 = lTokens.find(QUERY_PARAM_EFLAGS);
     if (pIt1 != lTokens.end())
         nEFlags = ::rtl::OUString(pIt1->second).toInt32();
-    
+
     // simple search for filters of one specific module.
     OUStringList lFilterList;
     if (sModule.getLength())
@@ -560,7 +560,7 @@ OUStringList FilterFactory::impl_getSortedFilterList(const QueryTokenizer& lToke
             }
         }
     }
-    
+
     return lFilterList;
 }
 
@@ -572,9 +572,9 @@ OUStringList FilterFactory::impl_getListOfInstalledModules() const
     // SAFE -> ----------------------
     ::osl::ResettableMutexGuard aLock(m_aLock);
     css::uno::Reference< css::lang::XMultiServiceFactory > xSMGR = m_xSMGR;
-    aLock.clear();    
+    aLock.clear();
     // <- SAFE ----------------------
-    
+
     try
     {
         css::uno::Reference< css::container::XNameAccess > xModuleConfig(
@@ -589,8 +589,8 @@ OUStringList FilterFactory::impl_getListOfInstalledModules() const
         { throw exRun; }
     catch(const css::uno::Exception&)
         {}
-        
-    return OUStringList();        
+
+    return OUStringList();
 }
 
 /*-----------------------------------------------
@@ -610,13 +610,13 @@ OUStringList FilterFactory::impl_getSortedFilterListForModule(const ::rtl::OUStr
     ::osl::ResettableMutexGuard aLock(m_aLock);
     FilterCache* pCache        = impl_getWorkingCache();
     OUStringList lOtherFilters = pCache->getMatchingItemsByProps(FilterCache::E_FILTER, lIProps);
-    aLock.clear();    
+    aLock.clear();
     // <- SAFE ----------------------
 
     // bring "other" filters in an alphabetical order
     // It's needed below.
     ::std::sort(lOtherFilters.begin(), lOtherFilters.end());
-    
+
     // merge both lists together
 	OUStringList           lMergedFilters = lSortedFilters;
     OUStringList::iterator pIt2;
@@ -630,7 +630,7 @@ OUStringList FilterFactory::impl_getSortedFilterListForModule(const ::rtl::OUStr
         if (pIt3 == lSortedFilters.end())
             lMergedFilters.push_back(rFilter);
     }
-    
+
     // remove all filters from this merged list, which does not fit the flag specification
     if (nIFlags != -1)
     {
@@ -642,10 +642,10 @@ OUStringList FilterFactory::impl_getSortedFilterListForModule(const ::rtl::OUStr
         pIt2 = ::std::remove_if(lMergedFilters.begin(), lMergedFilters.end(), stlcomp_removeIfMatchFlags(pCache, nEFlags, sal_False));
         lMergedFilters.erase(pIt2, lMergedFilters.end());
     }
-    
+
     // sort the default filter to the front of this list
     // TODO
-    
+
     return lMergedFilters;
 }
 
@@ -657,9 +657,9 @@ OUStringList FilterFactory::impl_readSortedFilterListFromConfig(const ::rtl::OUS
     // SAFE -> ----------------------
     ::osl::ResettableMutexGuard aLock(m_aLock);
     css::uno::Reference< css::lang::XMultiServiceFactory > xSMGR = m_xSMGR;
-    aLock.clear();    
+    aLock.clear();
     // <- SAFE ----------------------
-    
+
     try
     {
         css::uno::Reference< css::container::XNameAccess > xUISortConfig(
@@ -685,8 +685,8 @@ OUStringList FilterFactory::impl_readSortedFilterListFromConfig(const ::rtl::OUS
         { throw exRun; }
     catch(const css::uno::Exception&)
         {}
-        
-    return OUStringList();        
+
+    return OUStringList();
 }
 
 /*-----------------------------------------------

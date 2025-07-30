@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -285,13 +285,13 @@ void Impl2::initialize(css::uno::Sequence< css::uno::Any > const & arguments)
     css::uno::Sequence<ttb::TestPolyStruct< ::sal_Int32> > arg35;
     css::uno::Sequence<ttb::TestPolyStruct<ttb::TestPolyStruct2< ::sal_Unicode, css::uno::Any> > > arg36;
     css::uno::Sequence<ttb::TestPolyStruct<ttb::TestPolyStruct2<
-        ttb::TestPolyStruct2< ::sal_Unicode,css::uno::Any >, ::rtl::OUString> > > arg37;        
+        ttb::TestPolyStruct2< ::sal_Unicode,css::uno::Any >, ::rtl::OUString> > > arg37;
     css::uno::Sequence<ttb::TestPolyStruct2< ::rtl::OUString, ttb::TestPolyStruct2<
         ::sal_Unicode, ttb::TestPolyStruct<css::uno::Any> > > > arg38;
     css::uno::Sequence<ttb::TestPolyStruct2<ttb::TestPolyStruct2<
         ::sal_Unicode, css::uno::Any>, ttb::TestPolyStruct< ::sal_Unicode> > > arg39;
     css::uno::Sequence<css::uno::Sequence<ttb::TestPolyStruct< ::sal_Unicode> > > arg40;
-    css::uno::Sequence<css::uno::Sequence<ttb::TestPolyStruct<ttb::TestPolyStruct2< ::sal_Unicode, css::uno::Any> > > >arg41;                
+    css::uno::Sequence<css::uno::Sequence<ttb::TestPolyStruct<ttb::TestPolyStruct2< ::sal_Unicode, css::uno::Any> > > >arg41;
     css::uno::Sequence<css::uno::Sequence<ttb::TestPolyStruct<
         ttb::TestPolyStruct2<ttb::TestPolyStruct2<sal_Unicode, css::uno::Any>, ::rtl::OUString> > > > arg42;
     css::uno::Sequence<css::uno::Sequence<ttb::TestPolyStruct2<
@@ -302,7 +302,7 @@ void Impl2::initialize(css::uno::Sequence< css::uno::Any > const & arguments)
 
     if (!(arguments.getLength() == 45
           && (arguments[0] >>= arg0) && arg0.member == cppu::UnoType<sal_Int32>::get()
-          && (arguments[1] >>= arg1) && arg1.member == arg1b 
+          && (arguments[1] >>= arg1) && arg1.member == arg1b
           && (arguments[2] >>= arg2) && arg2.member == sal_True
           && (arguments[3] >>= arg3) && arg3.member == SAL_MIN_INT8
           && (arguments[4] >>= arg4) && arg4.member == SAL_MIN_INT16
@@ -431,7 +431,7 @@ void Impl2::setatt1( double _att1 )throw (::com::sun::star::uno::RuntimeExceptio
 {
     m_attr1 = _att1;
 }
- 
+
 ::sal_Int32 Impl2::fn11( ::sal_Int32 arg )
         throw (::com::sun::star::uno::RuntimeException)
 {

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 #include "precompiled_sfx2.hxx"
@@ -90,15 +90,15 @@ Reference<frame::XToolbarController> ControllerFactory::CreateToolBoxController(
         aPropValue.Name = A2S("Frame");
         aPropValue.Value <<= rxFrame;
         aPropertyVector.push_back(makeAny(aPropValue));
-    
+
         aPropValue.Name = A2S("ServiceManager");
         aPropValue.Value <<= ::comphelper::getProcessServiceFactory();
         aPropertyVector.push_back(makeAny(aPropValue));
-    
+
         aPropValue.Name = A2S("CommandURL");
         aPropValue.Value <<= rsCommandName;
         aPropertyVector.push_back(makeAny(aPropValue));
-    
+
         Sequence<Any> aArgs (comphelper::containerToSequence(aPropertyVector));
         xInitialization->initialize(aArgs);
     }
@@ -153,7 +153,7 @@ Reference<frame::XToolbarController> ControllerFactory::CreateToolBarController(
             comphelper::getProcessServiceFactory()->createInstance(A2S("com.sun.star.frame.ToolbarControllerFactory")),
             UNO_QUERY);
         OUString sModuleName (Tools::GetModuleName(rxFrame));
-    
+
         if (xFactory.is() && xFactory->hasController(rsCommandName,  sModuleName))
         {
             beans::PropertyValue aPropValue;
@@ -162,15 +162,15 @@ Reference<frame::XToolbarController> ControllerFactory::CreateToolBarController(
             aPropValue.Name = A2S("ModuleIdentifier");
             aPropValue.Value <<= sModuleName;
             aPropertyVector.push_back( makeAny( aPropValue ));
-        
+
             aPropValue.Name = A2S("Frame");
             aPropValue.Value <<= rxFrame;
             aPropertyVector.push_back( makeAny( aPropValue ));
-        
+
             aPropValue.Name = A2S("ServiceManager");
             aPropValue.Value <<= comphelper::getProcessServiceFactory();
             aPropertyVector.push_back( makeAny( aPropValue ));
-        
+
             aPropValue.Name = A2S("ParentWindow");
             aPropValue.Value <<= VCLUnoHelper::GetInterface(pToolBox);
             aPropertyVector.push_back( makeAny( aPropValue ));

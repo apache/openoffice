@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -606,7 +606,7 @@ sal_Bool OFlatTable::fetchRow(OValueRefRow& _rRow,const OSQLColumns & _rCols,sal
 	if (!bRetrieveData)
 		return sal_True;
     if ( m_bNeedToReadLine )
-    {        
+    {
         sal_Int32 nCurrentPos = 0;
         m_pFileStream->Seek(m_nFilePos);
         readLine(nCurrentPos);
@@ -677,7 +677,7 @@ sal_Bool OFlatTable::fetchRow(OValueRefRow& _rRow,const OSQLColumns & _rCols,sal
 				case DataType::DECIMAL:				// #99178# OJ
 				case DataType::NUMERIC:
 				{
-					
+
 					String aStrConverted;
                     if ( DataType::INTEGER != nType )
                     {
@@ -754,7 +754,7 @@ sal_Bool OFlatTable::seekRow(IResultSetHelper::Movement eCursorPosition, sal_Int
             // run through
 		case IResultSetHelper::NEXT:
             {
-			    ++m_nRowPos;            
+			    ++m_nRowPos;
                 ::std::map<sal_Int32,TRowPositionsInFile::iterator>::const_iterator aFind = m_aRowPosToFilePos.find(m_nRowPos);
                 m_bNeedToReadLine = aFind != m_aRowPosToFilePos.end();
                 if ( m_bNeedToReadLine )
@@ -771,13 +771,13 @@ sal_Bool OFlatTable::seekRow(IResultSetHelper::Movement eCursorPosition, sal_Int
 			        {
 				        m_nMaxRowCount = m_nRowPos -1;
 				        return sal_False;
-			        } // if ( m_pFileStream->IsEof() || !readLine(nCurPos) /*|| !checkHeaderLine()*/) 
+			        } // if ( m_pFileStream->IsEof() || !readLine(nCurPos) /*|| !checkHeaderLine()*/)
 
                     TRowPositionsInFile::iterator aPos = m_aFilePosToEndLinePos.insert(TRowPositionsInFile::value_type(m_nFilePos,nCurPos)).first;
                     m_aRowPosToFilePos.insert(::std::map<sal_Int32,TRowPositionsInFile::iterator>::value_type(m_nRowPos,aPos));
                 }
             }
-			
+
 			break;
 		case IResultSetHelper::PRIOR:
 			--m_nRowPos;
@@ -799,7 +799,7 @@ sal_Bool OFlatTable::seekRow(IResultSetHelper::Movement eCursorPosition, sal_Int
                 m_nRowPos  = aLastPos->first;
 				m_nFilePos = aLastPos->second->first;
                 nCurPos    = aLastPos->second->second;
-				
+
 				//m_pFileStream->Seek(m_nFilePos);
                 m_bNeedToReadLine = true;
 				//if ( m_pFileStream->IsEof() /*|| !checkHeaderLine()*/ || !readLine(nCurPos) )
@@ -878,7 +878,7 @@ sal_Bool OFlatTable::seekRow(IResultSetHelper::Movement eCursorPosition, sal_Int
                     m_nFilePos  = aFind->first;
                     nCurPos = aFind->second;
                 }
-                else 
+                else
                 {
                     m_nFilePos = nOffset;
                     m_pFileStream->Seek(nOffset);

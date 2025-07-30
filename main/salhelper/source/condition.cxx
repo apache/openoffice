@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -65,7 +65,7 @@ ConditionModifier::~ConditionModifier()
 {
 	if(m_aCond.applies())
 		osl_setCondition(m_aCond.m_aCondition);
-	
+
 	m_aCond.m_aMutex.release();
 }
 
@@ -92,7 +92,7 @@ ConditionWaiter::ConditionWaiter(Condition& aCond)
 	while(true) {
 		osl_waitCondition(m_aCond.m_aCondition,0);
 		m_aCond.m_aMutex.acquire();
-		
+
 		if(m_aCond.applies())
 			break;
 		else {
@@ -112,14 +112,14 @@ ConditionWaiter::ConditionWaiter(Condition& aCond,sal_uInt32 milliSec)
 	TimeValue aTime;
 	aTime.Seconds = milliSec / 1000;
 	aTime.Nanosec = 1000000 * ( milliSec % 1000 );
-	
+
 	while(true) {
 		if( osl_waitCondition(m_aCond.m_aCondition,&aTime) ==
 			osl_cond_result_timeout )
 			throw timedout();
-		
+
 		m_aCond.m_aMutex.acquire();
-		
+
 		if(m_aCond.applies())
 			break;
 		else {

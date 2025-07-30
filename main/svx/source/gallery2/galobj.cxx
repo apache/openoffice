@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -52,7 +52,7 @@ using namespace ::com::sun::star;
 // - SgaObject -
 // -------------
 
-SgaObject::SgaObject() 
+SgaObject::SgaObject()
 :   bIsValid    ( sal_False ),
     bIsThumbBmp	( sal_True )
 {
@@ -88,7 +88,7 @@ BitmapEx SgaObject::createPreviewBitmapEx(const Size& rSizePixel) const
 
             // only scale when need to decrease, no need to make bigger as original. Also
             // prevent scaling close to 1.0 which is not needed for pixel graphics
-            if(fScale < 1.0 && fabs(1.0 - fScale) > 0.005) 
+            if(fScale < 1.0 && fabs(1.0 - fScale) > 0.005)
             {
                 static sal_uInt32 nScaleFlag = BMP_SCALE_FASTESTINTERPOLATE;
 
@@ -151,7 +151,7 @@ sal_Bool SgaObject::CreateThumb( const Graphic& rGraphic )
 
 				if(aThumbBmp.Scale(
                     (double) aNewSize.Width() / aBmpSize.Width(),
-                    (double) aNewSize.Height() / aBmpSize.Height(), 
+                    (double) aNewSize.Height() / aBmpSize.Height(),
                     BMP_SCALE_BESTQUALITY ) )
 				{
 					aThumbBmp.Convert( BMP_CONVERSION_8BIT_COLORS );
@@ -420,7 +420,7 @@ BitmapEx SgaObjectSound::GetThumbBmp() const
 	}
 
 	const BitmapEx  aBmpEx( GAL_RESID( nId ) );
-	
+
     return aBmpEx;
 }
 

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -65,22 +65,22 @@ public:
     , mpParent( pParent )
     , mbSuspended( false )
     {}
-    
+
     virtual ~WindowPropertySetListener()
     {
     }
-    
+
     using cppu::WeakComponentImplHelperBase::disposing;
     virtual void SAL_CALL disposing( const lang::EventObject& ) throw()
     {
     }
-    
+
     virtual void SAL_CALL propertyChange( const beans::PropertyChangeEvent& i_rEvent ) throw()
     {
         if( ! mbSuspended )
             mpParent->propertyChange( i_rEvent );
     }
-    
+
     void suspend( bool i_bSuspended )
     {
         mbSuspended = i_bSuspended;
@@ -90,19 +90,19 @@ public:
 class vcl::WindowPropertySetData
 {
 public:
-    
+
     struct PropertyMapEntry
     {
         Window*                                 mpWindow;
         boost::shared_ptr<WindowArranger>       mpLayout;
         uno::Sequence< beans::PropertyValue >   maSavedValues;
-        
+
         PropertyMapEntry( Window* i_pWindow = NULL,
                          const boost::shared_ptr<WindowArranger>& i_pLayout = boost::shared_ptr<WindowArranger>() )
         : mpWindow( i_pWindow )
         , mpLayout( i_pLayout )
         {}
-        
+
         uno::Sequence< beans::PropertyValue > getProperties() const
         {
             if( mpWindow )
@@ -120,7 +120,7 @@ public:
                 mpLayout->setProperties( i_rProps );
         }
     };
-    
+
     Window*                                                         mpTopWindow;
     bool                                                            mbOwner;
     std::map< rtl::OUString, PropertyMapEntry >                     maProperties;
@@ -128,13 +128,13 @@ public:
     uno::Reference< beans::XPropertyAccess >                        mxPropSetAccess;
     uno::Reference< beans::XPropertyChangeListener >                mxListener;
     vcl::WindowPropertySetListener*                                 mpListener;
-    
+
     WindowPropertySetData()
     : mpTopWindow( NULL )
     , mbOwner( false )
     , mpListener( NULL )
     {}
-    
+
     ~WindowPropertySetData()
     {
         // release layouters, possibly interface properties before destroying
@@ -171,9 +171,9 @@ WindowPropertySet::WindowPropertySet( Window* i_pTopWindow, bool i_bTakeOwnershi
 {
     mpImpl->mpTopWindow = i_pTopWindow;
     mpImpl->mbOwner = i_bTakeOwnership;
-    
+
     mpImpl->mpTopWindow->AddChildEventListener( LINK( this, WindowPropertySet, ChildEventListener ) );
-    
+
     mpImpl->mxPropSet = uno::Reference< beans::XPropertySet >(
         ImplGetSVData()->maAppData.mxMSF->createInstance( rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "com.sun.star.beans.PropertyBag" ) ) ),
         uno::UNO_QUERY );
@@ -182,11 +182,11 @@ WindowPropertySet::WindowPropertySet( Window* i_pTopWindow, bool i_bTakeOwnershi
     OSL_ENSURE( mpImpl->mxPropSet.is(), "could not query XPropertyAccess interface" );
     if( ! mpImpl->mxPropSetAccess.is() )
         mpImpl->mxPropSet.clear();
-    
+
     addWindowToSet( i_pTopWindow );
-    
+
     setupProperties();
-    
+
     if( mpImpl->mxPropSet.is() )
     {
         mpImpl->mxListener.set( mpImpl->mpListener = new WindowPropertySetListener( this ) );
@@ -236,7 +236,7 @@ void WindowPropertySet::addWindowToSet( Window* i_pWindow )
         rEntry.maSavedValues = i_pWindow->getProperties();
     }
     addLayoutToSet( i_pWindow->getLayout() );
-    
+
     Window* pWin = i_pWindow->GetWindow( WINDOW_FIRSTCHILD );
     while( pWin )
     {
@@ -251,7 +251,7 @@ void WindowPropertySet::setupProperties()
     OSL_ENSURE( xCont.is(), "could not get XPropertyContainer interface" );
     if( ! xCont.is() )
         return;
-    
+
     for( std::map< rtl::OUString, WindowPropertySetData::PropertyMapEntry >::iterator it
          = mpImpl->maProperties.begin(); it != mpImpl->maProperties.end(); ++it )
     {
@@ -313,12 +313,12 @@ IMPL_LINK( vcl::WindowPropertySet, ChildEventListener, VclWindowEvent*, pEvent )
             // collect changes
             uno::Sequence< beans::PropertyValue > aNewProps( rEntry.getProperties() );
             uno::Sequence< beans::PropertyValue > aNewPropsOut( aNewProps );
-            
+
             // translate to identified properties
             beans::PropertyValue* pValues = aNewPropsOut.getArray();
             for( sal_Int32 i = 0; i < aNewPropsOut.getLength(); i++ )
                 pValues[i].Name = getIdentifiedPropertyName( it->first, pValues[i].Name );
-            
+
             // broadcast changes
             bool bWasVeto = false;
             mpImpl->mpListener->suspend( true );
@@ -331,13 +331,13 @@ IMPL_LINK( vcl::WindowPropertySet, ChildEventListener, VclWindowEvent*, pEvent )
                 bWasVeto = true;
             }
             mpImpl->mpListener->suspend( false );
-            
+
             if( ! bWasVeto ) // changes accepted ?
                 rEntry.maSavedValues = rEntry.getProperties();
             else // no, reset
                 rEntry.setProperties( rEntry.maSavedValues );
         }
     }
-    
+
     return 0;
 }

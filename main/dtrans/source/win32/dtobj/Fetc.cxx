@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -32,7 +32,7 @@
 #include "..\misc\ImplHelper.hxx"
 
 //------------------------------------------------------------------------
-// 
+//
 //------------------------------------------------------------------------
 
 CFormatEtc::CFormatEtc(  )
@@ -54,7 +54,7 @@ CFormatEtc::CFormatEtc( const FORMATETC& aFormatEtc )
 }
 
 //------------------------------------------------------------------------
-// 
+//
 //------------------------------------------------------------------------
 
 CFormatEtc::~CFormatEtc( )
@@ -63,7 +63,7 @@ CFormatEtc::~CFormatEtc( )
 }
 
 //------------------------------------------------------------------------
-// 
+//
 //------------------------------------------------------------------------
 
 CFormatEtc::CFormatEtc( CLIPFORMAT cf, DWORD tymed, DVTARGETDEVICE* ptd, DWORD dwAspect, LONG lindex )
@@ -72,11 +72,11 @@ CFormatEtc::CFormatEtc( CLIPFORMAT cf, DWORD tymed, DVTARGETDEVICE* ptd, DWORD d
 	m_FormatEtc.ptd      = CopyTargetDevice( ptd );
 	m_FormatEtc.dwAspect = dwAspect;
 	m_FormatEtc.lindex   = lindex;
-	m_FormatEtc.tymed    = tymed; 
+	m_FormatEtc.tymed    = tymed;
 }
 
 //------------------------------------------------------------------------
-// 
+//
 //------------------------------------------------------------------------
 
 CFormatEtc::CFormatEtc( const CFormatEtc& theOther )
@@ -89,7 +89,7 @@ CFormatEtc::CFormatEtc( const CFormatEtc& theOther )
 }
 
 //------------------------------------------------------------------------
-// 
+//
 //------------------------------------------------------------------------
 
 CFormatEtc& CFormatEtc::operator=( const CFormatEtc& theOther )
@@ -109,7 +109,7 @@ CFormatEtc& CFormatEtc::operator=( const CFormatEtc& theOther )
 }
 
 //------------------------------------------------------------------------
-// 
+//
 //------------------------------------------------------------------------
 
 CFormatEtc::operator FORMATETC*( )
@@ -118,7 +118,7 @@ CFormatEtc::operator FORMATETC*( )
 }
 
 //------------------------------------------------------------------------
-// 
+//
 //------------------------------------------------------------------------
 
 CFormatEtc::operator FORMATETC( )
@@ -127,7 +127,7 @@ CFormatEtc::operator FORMATETC( )
 }
 
 //------------------------------------------------------------------------
-// 
+//
 //------------------------------------------------------------------------
 
 void CFormatEtc::getFORMATETC( LPFORMATETC lpFormatEtc )
@@ -139,7 +139,7 @@ void CFormatEtc::getFORMATETC( LPFORMATETC lpFormatEtc )
 }
 
 //------------------------------------------------------------------------
-// 
+//
 //------------------------------------------------------------------------
 
 CLIPFORMAT CFormatEtc::getClipformat( ) const
@@ -148,7 +148,7 @@ CLIPFORMAT CFormatEtc::getClipformat( ) const
 }
 
 //------------------------------------------------------------------------
-// 
+//
 //------------------------------------------------------------------------
 
 DWORD CFormatEtc::getTymed( ) const
@@ -157,7 +157,7 @@ DWORD CFormatEtc::getTymed( ) const
 }
 
 //------------------------------------------------------------------------
-// 
+//
 //------------------------------------------------------------------------
 
 void CFormatEtc::getTargetDevice( DVTARGETDEVICE** lpDvTargetDevice ) const
@@ -172,7 +172,7 @@ void CFormatEtc::getTargetDevice( DVTARGETDEVICE** lpDvTargetDevice ) const
 }
 
 //------------------------------------------------------------------------
-// 
+//
 //------------------------------------------------------------------------
 
 DWORD CFormatEtc::getDvAspect( ) const
@@ -181,7 +181,7 @@ DWORD CFormatEtc::getDvAspect( ) const
 }
 
 //------------------------------------------------------------------------
-// 
+//
 //------------------------------------------------------------------------
 
 LONG CFormatEtc::getLindex( ) const
@@ -190,7 +190,7 @@ LONG CFormatEtc::getLindex( ) const
 }
 
 //------------------------------------------------------------------------
-// 
+//
 //------------------------------------------------------------------------
 
 void CFormatEtc::setClipformat( CLIPFORMAT cf )
@@ -199,7 +199,7 @@ void CFormatEtc::setClipformat( CLIPFORMAT cf )
 }
 
 //------------------------------------------------------------------------
-// 
+//
 //------------------------------------------------------------------------
 
 void CFormatEtc::setTymed( DWORD tymed )
@@ -218,7 +218,7 @@ void CFormatEtc::setTargetDevice( DVTARGETDEVICE* ptd )
 }
 
 //------------------------------------------------------------------------
-// 
+//
 //------------------------------------------------------------------------
 
 void CFormatEtc::setDvAspect( DWORD dwAspect )
@@ -227,7 +227,7 @@ void CFormatEtc::setDvAspect( DWORD dwAspect )
 }
 
 //------------------------------------------------------------------------
-// 
+//
 //------------------------------------------------------------------------
 
 void CFormatEtc::setLindex( LONG lindex )
@@ -236,7 +236,7 @@ void CFormatEtc::setLindex( LONG lindex )
 }
 
 //------------------------------------------------------------------------
-// 
+//
 //------------------------------------------------------------------------
 
 sal_Int32 operator==( const CFormatEtc& lhs, const CFormatEtc& rhs )
@@ -245,7 +245,7 @@ sal_Int32 operator==( const CFormatEtc& lhs, const CFormatEtc& rhs )
 }
 
 //------------------------------------------------------------------------
-// 
+//
 //------------------------------------------------------------------------
 
 sal_Int32 operator!=( const CFormatEtc& lhs, const CFormatEtc& rhs )

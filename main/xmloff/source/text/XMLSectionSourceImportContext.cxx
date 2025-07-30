@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -49,7 +49,7 @@ using namespace ::xmloff::token;
 TYPEINIT1(XMLSectionSourceImportContext, SvXMLImportContext);
 
 XMLSectionSourceImportContext::XMLSectionSourceImportContext(
-	SvXMLImport& rImport, 
+	SvXMLImport& rImport,
 	sal_uInt16 nPrfx,
 	const OUString& rLocalName,
 	Reference<XPropertySet> & rSectPropSet) :
@@ -62,7 +62,7 @@ XMLSectionSourceImportContext::~XMLSectionSourceImportContext()
 {
 }
 
-enum XMLSectionSourceToken 
+enum XMLSectionSourceToken
 {
 	XML_TOK_SECTION_XLINK_HREF,
 	XML_TOK_SECTION_TEXT_FILTER_NAME,
@@ -73,7 +73,7 @@ static __FAR_DATA SvXMLTokenMapEntry aSectionSourceTokenMap[] =
 {
 	{ XML_NAMESPACE_XLINK, XML_HREF, XML_TOK_SECTION_XLINK_HREF },
 	{ XML_NAMESPACE_TEXT, XML_FILTER_NAME, XML_TOK_SECTION_TEXT_FILTER_NAME },
-	{ XML_NAMESPACE_TEXT, XML_SECTION_NAME, 
+	{ XML_NAMESPACE_TEXT, XML_SECTION_NAME,
 										XML_TOK_SECTION_TEXT_SECTION_NAME },
 	XML_TOKEN_MAP_END
 };
@@ -86,13 +86,13 @@ void XMLSectionSourceImportContext::StartElement(
 	OUString sURL;
 	OUString sFilterName;
 	OUString sSectionName;
-	
+
 	sal_Int16 nLength = xAttrList->getLength();
 	for(sal_Int16 nAttr = 0; nAttr < nLength; nAttr++)
 	{
 		OUString sLocalName;
 		sal_uInt16 nPrefix = GetImport().GetNamespaceMap().
-			GetKeyByAttrName( xAttrList->getNameByIndex(nAttr), 
+			GetKeyByAttrName( xAttrList->getNameByIndex(nAttr),
 							  &sLocalName );
 
 		switch (aTokenMap.Get(nPrefix, sLocalName))
@@ -142,7 +142,7 @@ void XMLSectionSourceImportContext::EndElement()
 	// this space intentionally left blank.
 }
 
-SvXMLImportContext* XMLSectionSourceImportContext::CreateChildContext( 
+SvXMLImportContext* XMLSectionSourceImportContext::CreateChildContext(
 	sal_uInt16 nPrefix,
 	const OUString& rLocalName,
 	const Reference<XAttributeList> & )

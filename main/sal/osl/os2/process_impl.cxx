@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -87,16 +87,16 @@ oslProcessError SAL_CALL osl_bootstrap_getExecutableFile_Impl (
 
 	rc = DosGetInfoBlocks(&ptib, &ppib);
 	rc = DosQueryModuleName(ppib->pib_hmte, sizeof(szName), szName);
-	
+
 	if (rc == 0)
 	{
 		rtl_uString * pAbsPath = 0;
-		
-        rtl_string2UString( 
-			&pAbsPath, 
+
+        rtl_string2UString(
+			&pAbsPath,
 			szName, strlen(szName), osl_getThreadTextEncoding(),
 			OSTRING_TO_OUSTRING_CVTFLAGS);
-		
+
 		if (pAbsPath)
 		{
 			/* Convert from path to url. */
@@ -239,7 +239,7 @@ void SAL_CALL osl_setCommandArgs (int argc, char ** argv)
 		}
 	}
 	osl_releaseMutex(g_command_args.m_mutex);
- 
+
 }
 
 /***************************************
@@ -348,15 +348,15 @@ oslProcessError SAL_CALL osl_getProcessWorkingDir(rtl_uString **ppustrWorkingDir
 {
     oslProcessError result = osl_Process_E_Unknown;
 	char buffer[PATH_MAX];
-	
+
 	OSL_PRECOND(ppustrWorkingDir, "osl_getProcessWorkingDir(): Invalid parameter");
 
     if (getcwd (buffer, sizeof(buffer)) != 0)
     {
         rtl_uString* ustrTmp = 0;
 
-        rtl_string2UString( 
-			&ustrTmp, 
+        rtl_string2UString(
+			&ustrTmp,
 			buffer, strlen(buffer), osl_getThreadTextEncoding(),
 			OSTRING_TO_OUSTRING_CVTFLAGS);
         if (ustrTmp != 0)

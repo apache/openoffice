@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -169,10 +169,10 @@ namespace
     {
         private:
             sal_uInt16 mnGeneratorVersion;
-        
+
         public:
             DocumentInfo( const SvXMLImport& rImport )
-                : mnGeneratorVersion( SvXMLImport::ProductVersionUnknown )            
+                : mnGeneratorVersion( SvXMLImport::ProductVersionUnknown )
             {
                 sal_Int32 nUPD, nBuild;
                 if ( rImport.getBuildIds( nUPD, nBuild ) )
@@ -180,9 +180,9 @@ namespace
                     if ( nUPD >= 640 && nUPD <= 645 )
                     {
                         mnGeneratorVersion = SvXMLImport::OOo_1x;
-                    }            
+                    }
                     else if ( nUPD == 680 )
-                    {        
+                    {
                         mnGeneratorVersion = SvXMLImport::OOo_2x;
                     }
                     else if ( nUPD == 300 && nBuild <= 9379 )
@@ -207,16 +207,16 @@ namespace
                     }
                 }
             }
-            
+
             ~DocumentInfo()
-            {}        
+            {}
 
             sal_uInt16 getGeneratorVersion() const
             {
-                return mnGeneratorVersion;        
+                return mnGeneratorVersion;
             }
-    };            
-}            
+    };
+}
 // <--
 
 class SvXMLImport_Impl
@@ -250,9 +250,9 @@ public:
 
     // --> ORW
     std::auto_ptr< DocumentInfo > mpDocumentInfo;
-    // <--            
+    // <--
 
-    SvXMLImport_Impl() 
+    SvXMLImport_Impl()
         : hBatsFontConv( 0 )
         , hMathFontConv( 0 )
         , mbOwnGraphicResolver( false )
@@ -287,7 +287,7 @@ public:
         }
 
         return mpDocumentInfo->getGeneratorVersion();
-    }            
+    }
     // <--
 
 	::comphelper::UnoInterfaceToUniqueIdentifierMapper	maInterfaceToIdentifierMapper;
@@ -742,7 +742,7 @@ void SAL_CALL SvXMLImport::startElement( const OUString& rName,
                         ::rtl::OUString(
                             RTL_CONSTASCII_USTRINGPARAM( "Inconsistent ODF versions in content.xml and manifest.xml!" ) ),
                         uno::Reference< uno::XInterface >(),
-                        uno::makeAny( 
+                        uno::makeAny(
                             packages::zip::ZipIOException(
                                 ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM(
                                     "Inconsistent ODF versions in content.xml and manifest.xml!" ) ),
@@ -1720,7 +1720,7 @@ sal_Bool SvXMLImport::IsODFVersionConsistent( const ::rtl::OUString& aODFVersion
                 sal_Bool bRepairPackage = sal_False;
                 try
                 {
-                    xStorProps->getPropertyValue( ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "RepairPackage" ) ) ) 
+                    xStorProps->getPropertyValue( ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "RepairPackage" ) ) )
                         >>= bRepairPackage;
                 } catch ( uno::Exception& )
                 {}
@@ -1741,13 +1741,13 @@ sal_Bool SvXMLImport::IsODFVersionConsistent( const ::rtl::OUString& aODFVersion
                     else
                         xStorProps->setPropertyValue( ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "Version" ) ),
                                                       uno::makeAny( aODFVersion ) );
-                    
+
                     if ( bResult )
                     {
                         sal_Bool bInconsistent = sal_False;
                         xStorProps->getPropertyValue( ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "IsInconsistent" ) ) )
                             >>= bInconsistent;
-                        bResult = !bInconsistent; 
+                        bResult = !bInconsistent;
                     }
                 }
             }

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -141,10 +141,10 @@ static void MakeAsMeta(Graphic &rGraphic)
 	Size			aSize = aBmp.GetPrefSize();
 
 	if( !aSize.Width() || !aSize.Height() )
-		aSize = Application::GetDefaultDevice()->PixelToLogic( 
+		aSize = Application::GetDefaultDevice()->PixelToLogic(
 			aBmp.GetSizePixel(), MAP_100TH_MM );
 	else
-		aSize = Application::GetDefaultDevice()->LogicToLogic( aSize, 
+		aSize = Application::GetDefaultDevice()->LogicToLogic( aSize,
 			aBmp.GetPrefMapMode(), MAP_100TH_MM );
 
 	aVDev.EnableOutput( sal_False );
@@ -169,7 +169,7 @@ static oslProcessError runProcessWithPathSearch(const rtl::OUString &rProgName,
      * The current directory.
      * The Windows system directory.
      * The Windows directory.
-     * The directories that are listed in the PATH environment variable. 
+     * The directories that are listed in the PATH environment variable.
      *
      * Because one of our programs is called "convert" and there is a convert
      * in the windows system directory, we want to explicitly search the PATH
@@ -183,12 +183,12 @@ static oslProcessError runProcessWithPathSearch(const rtl::OUString &rProgName,
     oslFileError err = osl_searchFileURL(rProgName.pData, path.pData, &url.pData);
     if (err != osl_File_E_None)
         return osl_Process_E_NotFound;
-    return osl_executeProcess_WithRedirectedIO(url.pData, 
+    return osl_executeProcess_WithRedirectedIO(url.pData,
 	pArgs, nArgs, osl_Process_HIDDEN,
 		osl_getCurrentSecurity(), 0, 0, 0, pProcess, pIn, pOut, pErr);
 #else
-    return osl_executeProcess_WithRedirectedIO(rProgName.pData, 
-        pArgs, nArgs, osl_Process_SEARCHPATH | osl_Process_HIDDEN, 
+    return osl_executeProcess_WithRedirectedIO(rProgName.pData,
+        pArgs, nArgs, osl_Process_SEARCHPATH | osl_Process_HIDDEN,
 		osl_getCurrentSecurity(), 0, 0, 0, pProcess, pIn, pOut, pErr);
 #endif
 }
@@ -203,17 +203,17 @@ static bool RenderAsEMF(const sal_uInt8* pBuf, sal_uInt32 nBytesRead, Graphic &r
 {
 	TempFile aTemp;
 	aTemp.EnableKillingFile();
-	rtl::OUString fileName = 
+	rtl::OUString fileName =
 			rtl::OUString(RTL_CONSTASCII_USTRINGPARAM( "pstoedit" EXESUFFIX));
-	rtl::OUString arg1 = 
+	rtl::OUString arg1 =
 			rtl::OUString(RTL_CONSTASCII_USTRINGPARAM("-f"));
-	rtl::OUString arg2 = 
+	rtl::OUString arg2 =
 			rtl::OUString(RTL_CONSTASCII_USTRINGPARAM("emf:-OO"));
-	rtl::OUString arg3 = 
+	rtl::OUString arg3 =
 			rtl::OUString(RTL_CONSTASCII_USTRINGPARAM("-"));
 	rtl::OUString output;
 	osl::FileBase::getSystemPathFromFileURL(aTemp.GetName(), output);
-	rtl_uString *args[] = 
+	rtl_uString *args[] =
 	{
 		arg1.pData, arg2.pData, arg3.pData, output.pData
 	};
@@ -243,7 +243,7 @@ static bool RenderAsEMF(const sal_uInt8* pBuf, sal_uInt32 nBytesRead, Graphic &r
 				bEMFSupported=false;
 		}
 		osl_closeFile(pOut);
-	}		
+	}
 	if (pErr) osl_closeFile(pErr);
 	if (nCount == nBytesRead && bEMFSupported)
 	{
@@ -256,7 +256,7 @@ static bool RenderAsEMF(const sal_uInt8* pBuf, sal_uInt32 nBytesRead, Graphic &r
 	return bRet;
 }
 
-static bool RenderAsPNGThroughHelper(const sal_uInt8* pBuf, sal_uInt32 nBytesRead, 
+static bool RenderAsPNGThroughHelper(const sal_uInt8* pBuf, sal_uInt32 nBytesRead,
 	Graphic &rGraphic, rtl::OUString &rProgName, rtl_uString *pArgs[], size_t nArgs)
 {
 	oslProcess aProcess;
@@ -286,7 +286,7 @@ static bool RenderAsPNGThroughHelper(const sal_uInt8* pBuf, sal_uInt32 nBytesRea
 
 		aMemStm.Seek(0);
 		if (
-			aMemStm.GetEndOfData() && 
+			aMemStm.GetEndOfData() &&
 			GraphicConverter::Import(aMemStm, rGraphic, CVT_PNG) == ERRCODE_NONE
 		   )
 		{
@@ -301,10 +301,10 @@ static bool RenderAsPNGThroughHelper(const sal_uInt8* pBuf, sal_uInt32 nBytesRea
 	return bRet;
 }
 
-static bool RenderAsPNGThroughConvert(const sal_uInt8* pBuf, sal_uInt32 nBytesRead, 
+static bool RenderAsPNGThroughConvert(const sal_uInt8* pBuf, sal_uInt32 nBytesRead,
 	Graphic &rGraphic)
 {
-	rtl::OUString fileName = 
+	rtl::OUString fileName =
 			rtl::OUString(RTL_CONSTASCII_USTRINGPARAM( "convert" EXESUFFIX));
 	// density in pixel/inch
 	rtl::OUString arg1 = rtl::OUString(RTL_CONSTASCII_USTRINGPARAM("-density"));
@@ -315,53 +315,53 @@ static bool RenderAsPNGThroughConvert(const sal_uInt8* pBuf, sal_uInt32 nBytesRe
 	rtl::OUString arg3 = rtl::OUString(RTL_CONSTASCII_USTRINGPARAM("eps:-"));
 	// write png to STDOUT
 	rtl::OUString arg4 = rtl::OUString(RTL_CONSTASCII_USTRINGPARAM("png:-"));
-	rtl_uString *args[] = 
+	rtl_uString *args[] =
 	{
 		arg1.pData, arg2.pData, arg3.pData, arg4.pData
 	};
-	return RenderAsPNGThroughHelper(pBuf, nBytesRead, rGraphic, fileName, args, 
+	return RenderAsPNGThroughHelper(pBuf, nBytesRead, rGraphic, fileName, args,
 		sizeof(args)/sizeof(rtl_uString *));
 }
 
-static bool RenderAsPNGThroughGS(const sal_uInt8* pBuf, sal_uInt32 nBytesRead, 
+static bool RenderAsPNGThroughGS(const sal_uInt8* pBuf, sal_uInt32 nBytesRead,
 	Graphic &rGraphic)
 {
 #ifdef WNT
-	rtl::OUString fileName = 
+	rtl::OUString fileName =
 			rtl::OUString(RTL_CONSTASCII_USTRINGPARAM( "gswin32c" EXESUFFIX));
 #else
-	rtl::OUString fileName = 
+	rtl::OUString fileName =
 			rtl::OUString(RTL_CONSTASCII_USTRINGPARAM( "gs" EXESUFFIX));
 #endif
-	rtl::OUString arg1 = 
+	rtl::OUString arg1 =
 			rtl::OUString(RTL_CONSTASCII_USTRINGPARAM("-q"));
-	rtl::OUString arg2 = 
+	rtl::OUString arg2 =
 			rtl::OUString(RTL_CONSTASCII_USTRINGPARAM("-dBATCH"));
-	rtl::OUString arg3 = 
+	rtl::OUString arg3 =
 			rtl::OUString(RTL_CONSTASCII_USTRINGPARAM("-dNOPAUSE"));
-	rtl::OUString arg4 = 
+	rtl::OUString arg4 =
 			rtl::OUString(RTL_CONSTASCII_USTRINGPARAM("-dPARANOIDSAFER"));
-	rtl::OUString arg5 = 
+	rtl::OUString arg5 =
 			rtl::OUString(RTL_CONSTASCII_USTRINGPARAM("-dEPSCrop"));
-	rtl::OUString arg6 = 
+	rtl::OUString arg6 =
 			rtl::OUString(RTL_CONSTASCII_USTRINGPARAM("-dTextAlphaBits=4"));
-	rtl::OUString arg7 = 
+	rtl::OUString arg7 =
 			rtl::OUString(RTL_CONSTASCII_USTRINGPARAM("-dGraphicsAlphaBits=4"));
-	rtl::OUString arg8 = 
+	rtl::OUString arg8 =
 			rtl::OUString(RTL_CONSTASCII_USTRINGPARAM("-r300x300"));
-	rtl::OUString arg9 = 
+	rtl::OUString arg9 =
 			rtl::OUString(RTL_CONSTASCII_USTRINGPARAM("-sDEVICE=png256"));
-	rtl::OUString arg10 = 
+	rtl::OUString arg10 =
 			rtl::OUString(RTL_CONSTASCII_USTRINGPARAM("-sOutputFile=-"));
-	rtl::OUString arg11 = 
+	rtl::OUString arg11 =
 			rtl::OUString(RTL_CONSTASCII_USTRINGPARAM("-"));
-	rtl_uString *args[] = 
+	rtl_uString *args[] =
 	{
 		arg1.pData, arg2.pData, arg3.pData, arg4.pData, arg5.pData,
-		arg6.pData, arg7.pData, arg8.pData, arg9.pData, arg10.pData, 
+		arg6.pData, arg7.pData, arg8.pData, arg9.pData, arg10.pData,
 		arg11.pData
 	};
-	return RenderAsPNGThroughHelper(pBuf, nBytesRead, rGraphic, fileName, args, 
+	return RenderAsPNGThroughHelper(pBuf, nBytesRead, rGraphic, fileName, args,
 		sizeof(args)/sizeof(rtl_uString *));
 }
 
@@ -404,7 +404,7 @@ void CreateMtfReplacementAction( GDIMetaFile& rMtf, SvStream& rStrm, sal_uInt32 
 			rStrm.Seek( nOrigPos + nPosTIFF );
 			rStrm.Read( pBuf, nSizeTIFF );
 			aReplacement.Write( pBuf, nSizeTIFF );
-			delete[] pBuf;		
+			delete[] pBuf;
 		}
 		rMtf.AddAction( (MetaAction*)( new MetaCommentAction( aComment, 0, (const sal_uInt8*)aReplacement.GetData(), aReplacement.Tell() ) ) );
 	}
@@ -413,7 +413,7 @@ void CreateMtfReplacementAction( GDIMetaFile& rMtf, SvStream& rStrm, sal_uInt32 
 }
 
 //there is no preview -> make a red box
-void MakePreview(sal_uInt8* pBuf, sal_uInt32 nBytesRead, 
+void MakePreview(sal_uInt8* pBuf, sal_uInt32 nBytesRead,
 	long nWidth, long nHeight, Graphic &rGraphic)
 {
 	GDIMetaFile aMtf;
@@ -701,7 +701,7 @@ extern "C" sal_Bool GraphicImport(SvStream & rStream, Graphic & rGraphic, Filter
 
 						long nWidth =  nNumb[2] - nNumb[0] + 1;
 						long nHeight = nNumb[3] - nNumb[1] + 1;
-						
+
 						// if there is no preview -> try with gs to make one
 						if( !bHasPreview )
 						{
@@ -713,7 +713,7 @@ extern "C" sal_Bool GraphicImport(SvStream & rStream, Graphic & rGraphic, Filter
 						// if there is no preview -> make a red box
 						if( !bHasPreview )
 						{
-							MakePreview(pBuf, nBytesRead, nWidth, nHeight, 
+							MakePreview(pBuf, nBytesRead, nWidth, nHeight,
 								aGraphic);
 						}
 

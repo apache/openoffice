@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -41,7 +41,7 @@ class XMLPersTextTContext_Impl : public XMLTransformerContext
 public:
 	TYPEINFO();
 
-	XMLPersTextTContext_Impl( XMLTransformerBase& rTransformer, 
+	XMLPersTextTContext_Impl( XMLTransformerBase& rTransformer,
 						   const ::rtl::OUString& rChars );
 	virtual ~XMLPersTextTContext_Impl();
 
@@ -60,8 +60,8 @@ public:
 
 TYPEINIT1( XMLPersTextTContext_Impl, XMLTransformerContext );
 
-XMLPersTextTContext_Impl::XMLPersTextTContext_Impl( 
-		XMLTransformerBase& rImp, 
+XMLPersTextTContext_Impl::XMLPersTextTContext_Impl(
+		XMLTransformerBase& rImp,
 		const OUString& rChars ) :
 	XMLTransformerContext( rImp, OUString() ),
 	m_aCharacters( rChars )
@@ -82,7 +82,7 @@ XMLTransformerContext *XMLPersTextTContext_Impl::CreateChildContext(
 	return 0;
 }
 
-void XMLPersTextTContext_Impl::StartElement( 
+void XMLPersTextTContext_Impl::StartElement(
 	const Reference< XAttributeList >& )
 {
 	OSL_ENSURE( sal_False, "illegal call to StartElement" );
@@ -112,23 +112,23 @@ void XMLPersTextTContext_Impl::Export()
 
 TYPEINIT1( XMLPersMixedContentTContext, XMLPersElemContentTContext );
 
-XMLPersMixedContentTContext::XMLPersMixedContentTContext( 
-		XMLTransformerBase& rImp, 
+XMLPersMixedContentTContext::XMLPersMixedContentTContext(
+		XMLTransformerBase& rImp,
 		const OUString& rQName ) :
 	XMLPersElemContentTContext( rImp, rQName )
 {
 }
 
-XMLPersMixedContentTContext::XMLPersMixedContentTContext( 
-		XMLTransformerBase& rImp, 
+XMLPersMixedContentTContext::XMLPersMixedContentTContext(
+		XMLTransformerBase& rImp,
 		const OUString& rQName,
 	   sal_uInt16 nActionMap ) :
 	XMLPersElemContentTContext( rImp, rQName, nActionMap )
 {
 }
 
-XMLPersMixedContentTContext::XMLPersMixedContentTContext( 
-		XMLTransformerBase& rImp, 
+XMLPersMixedContentTContext::XMLPersMixedContentTContext(
+		XMLTransformerBase& rImp,
 		const OUString& rQName,
 	    sal_uInt16 nPrefix,
 		::xmloff::token::XMLTokenEnum eToken ) :
@@ -136,8 +136,8 @@ XMLPersMixedContentTContext::XMLPersMixedContentTContext(
 {
 }
 
-XMLPersMixedContentTContext::XMLPersMixedContentTContext( 
-		XMLTransformerBase& rImp, 
+XMLPersMixedContentTContext::XMLPersMixedContentTContext(
+		XMLTransformerBase& rImp,
 		const OUString& rQName,
 	    sal_uInt16 nPrefix,
 		::xmloff::token::XMLTokenEnum eToken,

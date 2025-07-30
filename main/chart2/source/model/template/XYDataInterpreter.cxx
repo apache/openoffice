@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -73,7 +73,7 @@ chart2::InterpretedData SAL_CALL XYDataInterpreter::interpretDataSource(
     Reference< data::XLabeledDataSequence > xCategories;
     bool bHasCategories = HasCategories( aArguments, aData );
     bool bUseCategoriesAsX = UseCategoriesAsX( aArguments );
-    
+
     // parse data
     bool bCategoriesUsed = false;
     bool bSetXValues = aData.getLength()>(bCategoriesUsed?2:1);
@@ -132,7 +132,7 @@ chart2::InterpretedData SAL_CALL XYDataInterpreter::interpretDataSource(
             aNewData.push_back( xClonedXValues );
 
         aNewData.push_back( *aSequencesVecIt );
-        
+
         Reference< XDataSeries > xSeries;
         if( nSeriesIndex < aSeriesToReUse.getLength())
             xSeries.set( aSeriesToReUse[nSeriesIndex] );
@@ -156,7 +156,7 @@ chart2::InterpretedData SAL_CALL XYDataInterpreter::reinterpretDataSeries(
     throw (uno::RuntimeException)
 {
     InterpretedData aResult( aInterpretedData );
-    
+
     sal_Int32 i=0;
     Sequence< Reference< XDataSeries > > aSeries( FlattenSequence( aInterpretedData.Series ));
     const sal_Int32 nCount = aSeries.getLength();

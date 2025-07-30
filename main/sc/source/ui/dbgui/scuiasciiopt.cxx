@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -107,8 +107,8 @@ sal_Unicode lcl_CharFromCombo( ComboBox& rCombo, const String& rList )
 	return c;
 }
 
-static void load_Separators( OUString &sFieldSeparators, OUString &sTextSeparators, 
-                             bool &bMergeDelimiters, bool& bQuotedAsText, bool& bDetectSpecialNum, 
+static void load_Separators( OUString &sFieldSeparators, OUString &sTextSeparators,
+                             bool &bMergeDelimiters, bool& bQuotedAsText, bool& bDetectSpecialNum,
                              bool &bFixedWidth, sal_Int32 &nFromRow, sal_Int32 &nCharSet,
                              sal_Int32& nLanguage )
 {
@@ -146,7 +146,7 @@ static void load_Separators( OUString &sFieldSeparators, OUString &sTextSeparato
 
     if( pProperties[5].hasValue() )
         pProperties[5] >>= nCharSet;
- 
+
     if ( pProperties[6].hasValue() )
         pProperties[6] >>= bQuotedAsText;
 
@@ -157,7 +157,7 @@ static void load_Separators( OUString &sFieldSeparators, OUString &sTextSeparato
         pProperties[8] >>= nLanguage;
 }
 
-static void save_Separators( 
+static void save_Separators(
     String maSeparators, String maTxtSep, bool bMergeDelimiters, bool bQuotedAsText,
     bool bDetectSpecialNum, bool bFixedWidth, sal_Int32 nFromRow, sal_Int32 nCharSet, sal_Int32 nLanguage )
 {
@@ -208,7 +208,7 @@ ScImportAsciiDlg::ScImportAsciiDlg( Window* pParent,String aDatName,
 		aFtCharSet	( this, ScResId( FT_CHARSET ) ),
 		aLbCharSet	( this, ScResId( LB_CHARSET ) ),
         aFtCustomLang( this, ScResId( FT_CUSTOMLANG ) ),
-        aLbCustomLang( this, ScResId( LB_CUSTOMLANG ) ), 
+        aLbCustomLang( this, ScResId( LB_CUSTOMLANG ) ),
 
 		aFtRow		( this, ScResId( FT_AT_ROW	) ),
 		aNfRow		( this,	ScResId( NF_AT_ROW	) ),
@@ -224,7 +224,7 @@ ScImportAsciiDlg::ScImportAsciiDlg( Window* pParent,String aDatName,
 		aCkbOther	( this, ScResId( CKB_OTHER ) ),
 		aEdOther	( this, ScResId( ED_OTHER ) ),
 		aCkbAsOnce	( this, ScResId( CB_ASONCE) ),
-        aFlOtherOpt ( this, ScResId( FL_OTHER_OPTIONS ) ), 
+        aFlOtherOpt ( this, ScResId( FL_OTHER_OPTIONS ) ),
 
 		aFtTextSep	( this, ScResId( FT_TEXTSEP ) ),
 		aCbTextSep	( this, ScResId( CB_TEXTSEP ) ),
@@ -273,7 +273,7 @@ ScImportAsciiDlg::ScImportAsciiDlg( Window* pParent,String aDatName,
     sal_Int32 nLanguage = 0;
     if (mbFileImport)
         // load separators only when importing csv files.
-        load_Separators (sFieldSeparators, sTextSeparators, bMergeDelimiters, 
+        load_Separators (sFieldSeparators, sTextSeparators, bMergeDelimiters,
                          bQuotedFieldAsText, bDetectSpecialNum, bFixedWidth, nFromRow, nCharSet, nLanguage);
     else
     {
@@ -310,12 +310,12 @@ ScImportAsciiDlg::ScImportAsciiDlg( Window* pParent,String aDatName,
                 aEdOther.SetText( aEdOther.GetText() + OUString( aSep[i] ) );
         }
     }
-    
+
     // Get Separators from the dialog
     maFieldSeparators = GetSeparators();
 
     // Clipboard is always Unicode, else detect.
-    rtl_TextEncoding ePreselectUnicode = (mbFileImport ? 
+    rtl_TextEncoding ePreselectUnicode = (mbFileImport ?
             RTL_TEXTENCODING_DONTKNOW : RTL_TEXTENCODING_UNICODE);
 	// Sniff for Unicode / not
     if( ePreselectUnicode == RTL_TEXTENCODING_DONTKNOW && mpDatStream )
@@ -546,10 +546,10 @@ void ScImportAsciiDlg::SaveParameters()
         // We save parameters only for file import.
         return;
 
-    save_Separators( maFieldSeparators, aCbTextSep.GetText(), aCkbAsOnce.IsChecked(), 
-                     aCkbQuotedAsText.IsChecked(), aCkbDetectNumber.IsChecked(), 
-                     aRbFixed.IsChecked(), 
-                     static_cast<sal_Int32>(aNfRow.GetValue()), 
+    save_Separators( maFieldSeparators, aCbTextSep.GetText(), aCkbAsOnce.IsChecked(),
+                     aCkbQuotedAsText.IsChecked(), aCkbDetectNumber.IsChecked(),
+                     aRbFixed.IsChecked(),
+                     static_cast<sal_Int32>(aNfRow.GetValue()),
                      static_cast<sal_Int32>(aLbCharSet.GetSelectEntryPos()),
                      static_cast<sal_Int32>(aLbCustomLang.GetSelectLanguage()) );
 }

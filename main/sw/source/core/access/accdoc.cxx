@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,19 +7,19 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
- 
+
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_sw.hxx"
@@ -244,7 +244,7 @@ OUString SAL_CALL SwAccessibleDocumentBase::getAccessibleName (void)
 
 		if ( sFileName.getLength() )
 		{
-			sAccName = sFileName + sReadOnly + OUString(RTL_CONSTASCII_USTRINGPARAM(" - ")) + sAccName;			
+			sAccName = sFileName + sReadOnly + OUString(RTL_CONSTASCII_USTRINGPARAM(" - ")) + sAccName;
 		}
 	}
 
@@ -257,15 +257,15 @@ awt::Rectangle SAL_CALL SwAccessibleDocumentBase::getBounds()
 	try
 	{
 		vos::OGuard aGuard(Application::GetSolarMutex());
-		
+
 		Window *pWin = GetWindow();
-		
+
 		CHECK_FOR_WINDOW( XAccessibleComponent, pWin )
-			
+
 			Rectangle aPixBounds( pWin->GetWindowExtentsRelative( pWin->GetAccessibleParentWindow() ) );
 		awt::Rectangle aBox( aPixBounds.Left(), aPixBounds.Top(),
 			aPixBounds.GetWidth(), aPixBounds.GetHeight() );
-		
+
 		return aBox;
 	}
 	catch(::com::sun::star::lang::IndexOutOfBoundsException e)
@@ -514,7 +514,7 @@ uno::Any SwAccessibleDocument::queryInterface(
 }
 
 //====== XTypeProvider ====================================================
-uno::Sequence< uno::Type > SAL_CALL SwAccessibleDocument::getTypes() 
+uno::Sequence< uno::Type > SAL_CALL SwAccessibleDocument::getTypes()
     throw(uno::RuntimeException)
 {
 	uno::Sequence< uno::Type > aTypes( SwAccessibleDocumentBase::getTypes() );
@@ -598,7 +598,7 @@ void SwAccessibleDocument::deselectAccessibleChild(
     maSelectionHelper.deselectAccessibleChild( nChildIndex );
 }
 //Solution:Implement XEventListener interfaces
-void SAL_CALL SwAccessibleDocument::notifyEvent( const ::com::sun::star::document::EventObject& Event ) 
+void SAL_CALL SwAccessibleDocument::notifyEvent( const ::com::sun::star::document::EventObject& Event )
 			throw (::com::sun::star::uno::RuntimeException)
 {
 	if ( Event.EventName.equalsAscii( "FirstPageShows" ) )
@@ -608,10 +608,10 @@ void SAL_CALL SwAccessibleDocument::notifyEvent( const ::com::sun::star::documen
 	else if ( Event.EventName.equalsAscii( "LoadFinished" ) )
 	{
 		// IA2 CWS. MT: OFFSCREEN == !SHOWING, should stay consistent
-		// FireStateChangedEvent( AccessibleStateType::OFFSCREEN,sal_True );		
+		// FireStateChangedEvent( AccessibleStateType::OFFSCREEN,sal_True );
 		// MT: LoadFinished => Why not SHOWING == TRUE?
-		FireStateChangedEvent( AccessibleStateType::SHOWING,sal_False );		
-	}	
+		FireStateChangedEvent( AccessibleStateType::SHOWING,sal_False );
+	}
 	else if ( Event.EventName.equalsAscii( "FormatFinished" ) )
 	{
 		FireStateChangedEvent( AccessibleStateType::BUSY,sal_False );
@@ -624,17 +624,17 @@ void SAL_CALL SwAccessibleDocument::notifyEvent( const ::com::sun::star::documen
 	}
 }
 
-void SAL_CALL SwAccessibleDocument::disposing( const ::com::sun::star::lang::EventObject& ) 
+void SAL_CALL SwAccessibleDocument::disposing( const ::com::sun::star::lang::EventObject& )
 			throw (::com::sun::star::uno::RuntimeException)
 {
 }
 
-uno::Any SAL_CALL SwAccessibleDocument::getExtendedAttributes() 
-		throw (::com::sun::star::lang::IndexOutOfBoundsException, ::com::sun::star::uno::RuntimeException) 
+uno::Any SAL_CALL SwAccessibleDocument::getExtendedAttributes()
+		throw (::com::sun::star::lang::IndexOutOfBoundsException, ::com::sun::star::uno::RuntimeException)
 {
 	uno::Any anyAtrribute;
 	SwDoc *pDoc = GetShell()->GetDoc();
-	
+
 	if (!pDoc)
 		return anyAtrribute;
 	SwCrsrShell* pCrsrShell = GetCrsrShell();
@@ -664,11 +664,11 @@ uno::Any SAL_CALL SwAccessibleDocument::getExtendedAttributes()
 		sValue += String::CreateFromInt32( pCrsrShell->GetPageCnt() ) ;
 		sValue +=  rtl::OUString::createFromAscii(";");
 
-		
+
 		sAttrName=rtl::OUString::createFromAscii("line-number:");
 
 
-		
+
 		SwCntntFrm* pCurrFrm = pCrsrShell->GetCurrFrm();
 		SwPageFrm* pCurrPage=((SwFrm*)pCurrFrm)->FindPageFrm();
 		sal_uLong nLineNum = 0;
@@ -701,10 +701,10 @@ uno::Any SAL_CALL SwAccessibleDocument::getExtendedAttributes()
 			const SdrMarkList &rMrkList = pCrsrShell->Imp()->GetDrawView()->GetMarkedObjectList();
 			for ( sal_uInt16 i = 0; i < rMrkList.GetMarkCount(); ++i )
 			{
-				SdrObject *pObj = rMrkList.GetMark(i)->GetMarkedSdrObj();		
+				SdrObject *pObj = rMrkList.GetMark(i)->GetMarkedSdrObj();
 				SwFrmFmt* pFmt = ((SwDrawContact*)pObj->GetUserCall())->GetFmt();
 				const SwFmtAnchor& rAnchor = pFmt->GetAnchor();
-				if( FLY_AS_CHAR != rAnchor.GetAnchorId() ) 
+				if( FLY_AS_CHAR != rAnchor.GetAnchorId() )
 					pCurrTxtFrm = NULL;
 			}
 		}
@@ -761,17 +761,17 @@ uno::Any SAL_CALL SwAccessibleDocument::getExtendedAttributes()
 					++nLineNum;
 			}
 		}
-		
+
 		sValue += sAttrName;
 		sValue += String::CreateFromInt32( nLineNum ) ;
 
 		sValue +=  rtl::OUString::createFromAscii(";");
 
-		
+
 		SwFrm* pCurrCol=((SwFrm*)pCurrFrm)->FindColFrm();
 
 		sAttrName=rtl::OUString::createFromAscii("column-number:");
-		sValue += sAttrName;		
+		sValue += sAttrName;
 
 		sal_uInt16 nCurrCol = 1;
 		if(pCurrCol!=NULL)
@@ -782,7 +782,7 @@ uno::Any SAL_CALL SwAccessibleDocument::getExtendedAttributes()
 			{
 				pCurrPageCol = pCurrPageCol->GetUpper();
 			}
-			
+
 			SwLayoutFrm* pParent = (SwLayoutFrm*)(pCurrPageCol->GetUpper());
 
 			if(pParent!=NULL)
@@ -799,13 +799,13 @@ uno::Any SAL_CALL SwAccessibleDocument::getExtendedAttributes()
 		sValue +=  rtl::OUString::createFromAscii(";");
 
 		sAttrName=rtl::OUString::createFromAscii("total-columns:");
-		
+
 		const SwFmtCol &rFmtCol=pCurrPage->GetAttrSet()->GetCol();
 		sal_uInt16 nColCount=rFmtCol.GetNumCols();
 		nColCount = nColCount>0?nColCount:1;
 		sValue += sAttrName;
 		sValue += String::CreateFromInt32( nColCount ) ;
-		
+
 		sValue +=  rtl::OUString::createFromAscii(";");
 
 		if(pCurrFrm!=NULL)
@@ -814,7 +814,7 @@ uno::Any SAL_CALL SwAccessibleDocument::getExtendedAttributes()
 			if(pCurrSctFrm!=NULL && pCurrSctFrm->GetSection()!=NULL )
 			{
 				sAttrName = rtl::OUString::createFromAscii("section-name:");
-		
+
 				sValue += sAttrName;
 				String sectionName = pCurrSctFrm->GetSection()->GetSectionName();
 
@@ -823,10 +823,10 @@ uno::Any SAL_CALL SwAccessibleDocument::getExtendedAttributes()
 				sectionName.SearchAndReplace( String::CreateFromAscii( ";" ), String::CreateFromAscii("\\;" ) );
 				sectionName.SearchAndReplace( String::CreateFromAscii( "," ), String::CreateFromAscii("\\," ) );
 				sectionName.SearchAndReplace( String::CreateFromAscii( ":" ), String::CreateFromAscii("\\:" ) );
-				
+
 				sValue += sectionName;
 				//sValue += pCurrSctFrm->GetSection()->GetName();
-				
+
 				sValue += rtl::OUString::createFromAscii(";");
 
 				//section-columns-number
@@ -834,7 +834,7 @@ uno::Any SAL_CALL SwAccessibleDocument::getExtendedAttributes()
 				sAttrName=rtl::OUString::createFromAscii("section-columns-number:");
 
 				nCurrCol = 1;
-				
+
 				if(pCurrCol!=NULL)
 				{
 					SwLayoutFrm* pParent = pCurrCol->GetUpper();
@@ -861,7 +861,7 @@ uno::Any SAL_CALL SwAccessibleDocument::getExtendedAttributes()
 				nSctColCount = nSctColCount>0?nSctColCount:1;
 				sValue += sAttrName;
 				sValue += String::CreateFromInt32( nSctColCount ) ;
-				
+
 				sValue +=  rtl::OUString::createFromAscii(";");
 				}
 			}
@@ -871,7 +871,7 @@ uno::Any SAL_CALL SwAccessibleDocument::getExtendedAttributes()
 	return anyAtrribute;
 }
 
-sal_Int32 SAL_CALL SwAccessibleDocument::getBackground() 
+sal_Int32 SAL_CALL SwAccessibleDocument::getBackground()
 		throw (::com::sun::star::uno::RuntimeException)
 {
 	vos::OGuard aGuard(Application::GetSolarMutex());
@@ -905,7 +905,7 @@ sal_Int32 SAL_CALL SwAccessibleDocument::getBackground()
 				{
 					try
 					{
-						if ( xAccSelection->getSelectedAccessibleChildCount() ) 
+						if ( xAccSelection->getSelectedAccessibleChildCount() )
 						{
 							uno::Reference < XAccessible > xSel = xAccSelection->getSelectedAccessibleChild( 0 );
 							if ( xSel.is() )
@@ -918,7 +918,7 @@ sal_Int32 SAL_CALL SwAccessibleDocument::getBackground()
 									{
 										uno::Sequence<uno::Any> aRet( 1 );
 										aRet[0] = uno::makeAny( xSel );
-										return aRet;							
+										return aRet;
 									}
 								}
 							}
@@ -970,7 +970,7 @@ sal_Int32 SAL_CALL SwAccessibleDocument::getBackground()
 					{
 						vFrmList.push_back( pFrm );
 					}
-					
+
 					pPrevNode = pCntntNode;
 				}
 			}
@@ -991,7 +991,7 @@ sal_Int32 SAL_CALL SwAccessibleDocument::getBackground()
 						{
 							aRet[nIndex] = uno::makeAny( xAcc );
 						}
-					}					
+					}
 				}
 
 				return aRet;

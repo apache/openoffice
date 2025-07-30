@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -228,7 +228,7 @@ SvxFieldData* AbstractSdModifyFieldDlg_Impl::GetField()
 {
 	return pDlg->GetField();
 }
-SfxItemSet AbstractSdModifyFieldDlg_Impl::GetItemSet() 
+SfxItemSet AbstractSdModifyFieldDlg_Impl::GetItemSet()
 {
 	return pDlg->GetItemSet();
 }
@@ -239,7 +239,7 @@ void AbstractSdSnapLineDlg_Impl::GetAttr(SfxItemSet& rOutAttrs)
 {
 	pDlg->GetAttr(rOutAttrs);
 }
-void AbstractSdSnapLineDlg_Impl::HideRadioGroup() 
+void AbstractSdSnapLineDlg_Impl::HideRadioGroup()
 {
 	pDlg->HideRadioGroup();
 }
@@ -377,11 +377,11 @@ void AbstractHeaderFooterDialog_Impl::Cancel( TabPage* pPage )
 //-------------- SdAbstractDialogFactory implementation--------------
 
 //add for BreakDlg begin
-VclAbstractDialog * SdAbstractDialogFactory_Impl::CreateBreakDlg( 
-											::Window* pWindow, 
-											::sd::DrawView* pDrView, 
-											::sd::DrawDocShell* pShell, 
-											sal_uLong nSumActionCount, 
+VclAbstractDialog * SdAbstractDialogFactory_Impl::CreateBreakDlg(
+											::Window* pWindow,
+											::sd::DrawView* pDrView,
+											::sd::DrawDocShell* pShell,
+											sal_uLong nSumActionCount,
 											sal_uLong nObjCount ) //add for BreakDlg
 {
 	return new VclAbstractDialog_Impl( new ::sd::BreakDlg( pWindow, pDrView, pShell, nSumActionCount, nObjCount ) );
@@ -415,7 +415,7 @@ SfxAbstractTabDialog *  SdAbstractDialogFactory_Impl::CreateSdTabPageDialog( ::W
 {
 	return new AbstractTabDialog_Impl( new SdPageDlg( pDocShell, pParent, pAttr, bAreaPage ) );
 }
-// add for SdCharDlg end 
+// add for SdCharDlg end
 
 //add for AssistentDlg begin
 AbstractAssistentDlg * SdAbstractDialogFactory_Impl::CreateAssistentDlg( ::Window* pParent, sal_Bool bAutoPilot)
@@ -476,14 +476,14 @@ SfxAbstractTabDialog *  SdAbstractDialogFactory_Impl::CreateSdParagraphTabDlg( :
 {
 	return new AbstractTabDialog_Impl( new SdParagraphDlg( pParent, pAttr ) );
 }
-// add for OutlineBulletDlg end 
+// add for OutlineBulletDlg end
 
 // add for SdStartPresentationDlg begin
 AbstractSdStartPresDlg *  SdAbstractDialogFactory_Impl::CreateSdStartPresentationDlg( ::Window* pWindow, const SfxItemSet& rInAttrs, List& rPageNames, List* pCSList )
 {
 	return new AbstractSdStartPresDlg_Impl( new SdStartPresentationDlg( pWindow, rInAttrs, rPageNames, pCSList ) );
 }
-// add for SdStartPresentationDlg end 
+// add for SdStartPresentationDlg end
 
 // add for SdPresLayoutTemplateDlg begin
 SfxAbstractTabDialog *  SdAbstractDialogFactory_Impl::CreateSdPresLayoutTemplateDlg( SfxObjectShell* pDocSh, ::Window* pParent, SdResId DlgId, SfxStyleSheetBase& rStyleBase, PresentationObjects ePO, SfxStyleSheetBasePool* pSSPool )
@@ -493,17 +493,17 @@ SfxAbstractTabDialog *  SdAbstractDialogFactory_Impl::CreateSdPresLayoutTemplate
 
 // add for SdPresLayoutDlg begin
 AbstractSdPresLayoutDlg *  SdAbstractDialogFactory_Impl::CreateSdPresLayoutDlg(  ::sd::DrawDocShell* pDocShell, ::sd::ViewShell* pViewShell, ::Window* pWindow, const SfxItemSet& rInAttrs)
-{	
+{
 	return new AbstractSdPresLayoutDlg_Impl( new SdPresLayoutDlg( pDocShell, pViewShell, pWindow, rInAttrs ) );
 }
-// add for SdPresLayoutDlg end 
+// add for SdPresLayoutDlg end
 
 // add for SdTabTemplateDlg begin
 SfxAbstractTabDialog *  SdAbstractDialogFactory_Impl::CreateSdTabTemplateDlg( ::Window* pParent, const SfxObjectShell* pDocShell, SfxStyleSheetBase& rStyleBase, SdrModel* pModel, SdrView* pView )
 {
 	return new AbstractTabDialog_Impl( new SdTabTemplateDlg( pParent, pDocShell, rStyleBase, pModel, pView ) );
 }
-// add for SdTabTemplateDlg end 
+// add for SdTabTemplateDlg end
 
 SfxAbstractDialog* SdAbstractDialogFactory_Impl::CreatSdActionDialog( ::Window* pParent, const SfxItemSet* pAttr, ::sd::View* pView )
 {
@@ -515,14 +515,14 @@ AbstractSdVectorizeDlg *  SdAbstractDialogFactory_Impl::CreateSdVectorizeDlg( ::
 {
 	return new AbstractSdVectorizeDlg_Impl( new SdVectorizeDlg( pParent, rBmp, pDocShell ) );
 }
-// add for SdVectorizeDlg end 
+// add for SdVectorizeDlg end
 
 // add for SdPublishingDlg begin
 AbstractSdPublishingDlg *  SdAbstractDialogFactory_Impl::CreateSdPublishingDlg( ::Window* pWindow, DocumentType eDocType)
 {
 	return new AbstractSdPublishingDlg_Impl( new SdPublishingDlg( pWindow, eDocType ) );
 }
-// add for SdPublishingDlg end 
+// add for SdPublishingDlg end
 
 // Factories for TabPages
 CreateTabPage SdAbstractDialogFactory_Impl::GetSdOptionsContentsTabPageCreatorFunc()
@@ -545,13 +545,13 @@ CreateTabPage SdAbstractDialogFactory_Impl::GetSdOptionsSnapTabPageCreatorFunc()
 	return SdTpOptionsSnap::Create;
 }
 
-VclAbstractDialog* SdAbstractDialogFactory_Impl::CreateMasterLayoutDialog( ::Window* pParent, 
+VclAbstractDialog* SdAbstractDialogFactory_Impl::CreateMasterLayoutDialog( ::Window* pParent,
 	SdDrawDocument* pDoc, SdPage* pCurrentPage )
 {
   return new VclAbstractDialog_Impl( new ::sd::MasterLayoutDialog( pParent, pDoc, pCurrentPage ));
 }
 
-AbstractHeaderFooterDialog* SdAbstractDialogFactory_Impl::CreateHeaderFooterDialog( ViewShell* pViewShell, 
+AbstractHeaderFooterDialog* SdAbstractDialogFactory_Impl::CreateHeaderFooterDialog( ViewShell* pViewShell,
   ::Window* pParent, SdDrawDocument* pDoc, SdPage* pCurrentPage )
 {
 	return new AbstractHeaderFooterDialog_Impl( new ::sd::HeaderFooterDialog( (::sd::ViewShell*)pViewShell, pParent, pDoc, pCurrentPage ));

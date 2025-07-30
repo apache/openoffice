@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -132,7 +132,7 @@ FTPContentProvider::queryContent(
     Reference<XContent> xContent = queryExistingContent(xCanonicId).get();
     if(xContent.is())
         return xContent;
-    
+
 	// A new content has to be returned:
 	{
 		// Initialize
@@ -144,16 +144,16 @@ FTPContentProvider::queryContent(
 			} catch( ... ) {
 				throw RuntimeException();
 			}
-			
+
 			if(!m_ftpLoaderThread || !m_pProxyDecider)
 				throw RuntimeException();
 		}
     }
-	
+
 	try {
 		FTPURL aURL(xCanonicId->getContentIdentifier(),
 					this);
-		
+
 		if(!m_pProxyDecider->shouldUseProxy(
 			rtl::OUString::createFromAscii("ftp"),
 			aURL.host(),
@@ -173,7 +173,7 @@ FTPContentProvider::queryContent(
 	} catch(const malformed_exception&) {
 		throw IllegalIdentifierException();
 	}
-	
+
 	// may throw IllegalIdentifierException
     return xContent;
 }
@@ -203,15 +203,15 @@ bool FTPContentProvider::forHost(
 {
     osl::MutexGuard aGuard(m_aMutex);
     for(unsigned int i = 0; i < m_ServerInfo.size(); ++i)
-        if(host == m_ServerInfo[i].host && 
-           port == m_ServerInfo[i].port && 
+        if(host == m_ServerInfo[i].host &&
+           port == m_ServerInfo[i].port &&
 		   username == m_ServerInfo[i].username )
 		{
             password = m_ServerInfo[i].password;
             account = m_ServerInfo[i].account;
             return true;
         }
-    
+
     return false;
 }
 
@@ -233,7 +233,7 @@ bool  FTPContentProvider::setHost(
     bool present(false);
     osl::MutexGuard aGuard(m_aMutex);
     for(unsigned int i = 0; i < m_ServerInfo.size(); ++i)
-        if(host == m_ServerInfo[i].host && 
+        if(host == m_ServerInfo[i].host &&
            port == m_ServerInfo[i].port &&
 		   username == m_ServerInfo[i].username)
 		{
@@ -241,10 +241,10 @@ bool  FTPContentProvider::setHost(
 			m_ServerInfo[i].password = password;
 			m_ServerInfo[i].account = account;
 		}
-    
+
     if(!present)
         m_ServerInfo.push_back(inf);
-	
+
     return !present;
 }
 
@@ -260,7 +260,7 @@ FTPContentProvider::getHttpProvider()
 	if(pBroker) {
 		Reference<XContentProviderManager > xManager(
 			pBroker->getContentProviderManagerInterface());
-		
+
 		if(xManager.is())
 			return
 				xManager->queryContentProvider(

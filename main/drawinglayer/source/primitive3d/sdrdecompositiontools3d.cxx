@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -141,7 +141,7 @@ namespace drawinglayer
 		}
 
 		Primitive3DSequence create3DPolyPolygonLinePrimitives(
-			const basegfx::B3DPolyPolygon& rUnitPolyPolygon, 
+			const basegfx::B3DPolyPolygon& rUnitPolyPolygon,
 			const basegfx::B3DHomMatrix& rObjectTransform,
 			const attribute::SdrLineAttribute& rLine)
 		{
@@ -199,15 +199,15 @@ namespace drawinglayer
 					}
 
 					const Primitive3DReference xRef(new PolyPolygonMaterialPrimitive3D(
-						aScaledPolyPolygon, 
-						aSdr3DObjectAttribute.getMaterial(), 
+						aScaledPolyPolygon,
+						aSdr3DObjectAttribute.getMaterial(),
 						aSdr3DObjectAttribute.getDoubleSided()));
 					aRetval[a] = xRef;
 				}
 
 				// look for and evtl. build texture sub-group primitive
-				if(!rFill.getGradient().isDefault() 
-					|| !rFill.getHatch().isDefault() 
+				if(!rFill.getGradient().isDefault()
+					|| !rFill.getHatch().isDefault()
 					|| !rFill.getFillGraphic().isDefault())
 				{
 					bool bModulate(::com::sun::star::drawing::TextureMode_MODULATE == aSdr3DObjectAttribute.getTextureMode());
@@ -218,39 +218,39 @@ namespace drawinglayer
 					{
 						// create gradientTexture3D with sublist, add to local aRetval
 						pNewTexturePrimitive3D = new GradientTexturePrimitive3D(
-                            rFill.getGradient(), 
-                            aRetval, 
-                            rTextureSize, 
-                            bModulate, 
+                            rFill.getGradient(),
+                            aRetval,
+                            rTextureSize,
+                            bModulate,
                             bFilter);
 					}
 					else if(!rFill.getHatch().isDefault())
 					{
 						// create hatchTexture3D with sublist, add to local aRetval
 						pNewTexturePrimitive3D = new HatchTexturePrimitive3D(
-                            rFill.getHatch(), 
-                            aRetval, 
-                            rTextureSize, 
-                            bModulate, 
+                            rFill.getHatch(),
+                            aRetval,
+                            rTextureSize,
+                            bModulate,
                             bFilter);
 					}
 					else // if(!rFill.getFillGraphic().isDefault())
 					{
 						// create bitmapTexture3D with sublist, add to local aRetval
 						const basegfx::B2DRange aTexRange(0.0, 0.0, rTextureSize.getX(), rTextureSize.getY());
-						
+
                         pNewTexturePrimitive3D = new BitmapTexturePrimitive3D(
-                            rFill.getFillGraphic().createFillGraphicAttribute(aTexRange), 
-                            aRetval, 
-                            rTextureSize, 
-                            bModulate, 
+                            rFill.getFillGraphic().createFillGraphicAttribute(aTexRange),
+                            aRetval,
+                            rTextureSize,
+                            bModulate,
                             bFilter);
 					}
 
 					// exchange aRetval content with texture group
 					const Primitive3DReference xRef(pNewTexturePrimitive3D);
 					aRetval = Primitive3DSequence(&xRef, 1L);
-					
+
                     if(::com::sun::star::drawing::TextureKind2_LUMINANCE == aSdr3DObjectAttribute.getTextureKind())
                     {
                         // use modified color primitive to force textures to gray
@@ -258,7 +258,7 @@ namespace drawinglayer
                             new basegfx::BColorModifier_gray());
                         const Primitive3DReference xRef2(
                             new ModifiedColorPrimitive3D(
-                                aRetval, 
+                                aRetval,
                                 aBColorModifier));
 
                         aRetval = Primitive3DSequence(&xRef2, 1L);
@@ -317,17 +317,17 @@ namespace drawinglayer
                 0.0,
                 basegfx::BColor(),
                 attribute::FillGradientAttribute(),
-                attribute::FillHatchAttribute(), 
+                attribute::FillHatchAttribute(),
                 attribute::SdrFillGraphicAttribute());
-			
+
             const Primitive3DReference aHidden(
                 new HiddenGeometryPrimitive3D(
                     create3DPolyPolygonFillPrimitives(
-		                r3DPolyPolygonVector, 
-		                rObjectTransform, 
-		                rTextureSize, 
-		                aSdr3DObjectAttribute, 
-		                aSimplifiedFillAttribute, 
+		                r3DPolyPolygonVector,
+		                rObjectTransform,
+		                rTextureSize,
+		                aSdr3DObjectAttribute,
+		                aSimplifiedFillAttribute,
 		                attribute::FillGradientAttribute())));
 
             return Primitive3DSequence(&aHidden, 1);

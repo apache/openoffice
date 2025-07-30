@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -275,7 +275,7 @@ SvXMLNumFmtExport::SvXMLNumFmtExport(
 	pUsedList = new SvXMLNumUsedList_Impl;
 }
 
-SvXMLNumFmtExport::SvXMLNumFmtExport( 
+SvXMLNumFmtExport::SvXMLNumFmtExport(
                        SvXMLExport& rExp,
 					   const ::com::sun::star::uno::Reference<
 						::com::sun::star::util::XNumberFormatsSupplier >& rSupp,
@@ -395,7 +395,7 @@ void SvXMLNumFmtExport::FinishTextElement_Impl()
 {
 	if ( sTextContent.getLength() )
 	{
-        SvXMLElementExport aElem( rExport, XML_NAMESPACE_NUMBER, XML_TEXT, 
+        SvXMLElementExport aElem( rExport, XML_NAMESPACE_NUMBER, XML_TEXT,
                                   sal_True, sal_False );
 		rExport.Characters( sTextContent.makeStringAndClear() );
 	}
@@ -407,7 +407,7 @@ void SvXMLNumFmtExport::WriteColorElement_Impl( const Color& rColor )
 
 	OUStringBuffer aColStr( 7 );
 	SvXMLUnitConverter::convertColor( aColStr, rColor );
-	rExport.AddAttribute( XML_NAMESPACE_FO, XML_COLOR, 
+	rExport.AddAttribute( XML_NAMESPACE_FO, XML_COLOR,
                           aColStr.makeStringAndClear() );
 
     SvXMLElementExport aElem( rExport, XML_NAMESPACE_STYLE, XML_TEXT_PROPERTIES,
@@ -427,7 +427,7 @@ void SvXMLNumFmtExport::WriteCurrencyElement_Impl( const OUString& rString,
 		AddLanguageAttr_Impl( nLang );			// adds to pAttrList
 	}
 
-    SvXMLElementExport aElem( rExport, 
+    SvXMLElementExport aElem( rExport,
                               XML_NAMESPACE_NUMBER, XML_CURRENCY_SYMBOL,
                               sal_True, sal_False );
 	rExport.Characters( rString );
@@ -481,7 +481,7 @@ void SvXMLNumFmtExport::WriteYearElement_Impl( const OUString& rCalendar, sal_Bo
 	AddCalendarAttr_Impl( rCalendar ); // adds to pAttrList
 	AddStyleAttr_Impl( bLong );		// adds to pAttrList
 
-    SvXMLElementExport aElem( rExport, XML_NAMESPACE_NUMBER, XML_YEAR, 
+    SvXMLElementExport aElem( rExport, XML_NAMESPACE_NUMBER, XML_YEAR,
                               sal_True, sal_False );
 }
 
@@ -492,7 +492,7 @@ void SvXMLNumFmtExport::WriteEraElement_Impl( const OUString& rCalendar, sal_Boo
 	AddCalendarAttr_Impl( rCalendar ); // adds to pAttrList
 	AddStyleAttr_Impl( bLong );		// adds to pAttrList
 
-    SvXMLElementExport aElem( rExport, XML_NAMESPACE_NUMBER, XML_ERA, 
+    SvXMLElementExport aElem( rExport, XML_NAMESPACE_NUMBER, XML_ERA,
                               sal_True, sal_False );
 }
 
@@ -557,7 +557,7 @@ void SvXMLNumFmtExport::WriteSecondsElement_Impl( sal_Bool bLong, sal_uInt16 nDe
 	AddStyleAttr_Impl( bLong );		// adds to pAttrList
 	if ( nDecimals > 0 )
 	{
-		rExport.AddAttribute( XML_NAMESPACE_NUMBER, XML_DECIMAL_PLACES, 
+		rExport.AddAttribute( XML_NAMESPACE_NUMBER, XML_DECIMAL_PLACES,
                               OUString::valueOf( (sal_Int32) nDecimals ) );
 	}
 
@@ -586,14 +586,14 @@ void SvXMLNumFmtExport::WriteNumberElement_Impl(
 	//	decimals
 	if ( nDecimals >= 0 )	// negative = automatic
 	{
-        rExport.AddAttribute( XML_NAMESPACE_NUMBER, XML_DECIMAL_PLACES, 
+        rExport.AddAttribute( XML_NAMESPACE_NUMBER, XML_DECIMAL_PLACES,
                               OUString::valueOf( nDecimals ) );
 	}
 
 	//	integer digits
 	if ( nInteger >= 0 )	// negative = automatic
 	{
-        rExport.AddAttribute( XML_NAMESPACE_NUMBER, XML_MIN_INTEGER_DIGITS, 
+        rExport.AddAttribute( XML_NAMESPACE_NUMBER, XML_MIN_INTEGER_DIGITS,
                               OUString::valueOf( nInteger ) );
 	}
 
@@ -668,7 +668,7 @@ void SvXMLNumFmtExport::WriteScientificElement_Impl(
 	//	integer digits
 	if ( nInteger >= 0 )	// negative = automatic
 	{
-        rExport.AddAttribute( XML_NAMESPACE_NUMBER, XML_MIN_INTEGER_DIGITS, 
+        rExport.AddAttribute( XML_NAMESPACE_NUMBER, XML_MIN_INTEGER_DIGITS,
                               OUString::valueOf( nInteger ) );
 	}
 
@@ -685,7 +685,7 @@ void SvXMLNumFmtExport::WriteScientificElement_Impl(
                               OUString::valueOf( nExp ) );
 	}
 
-    SvXMLElementExport aElem( rExport, 
+    SvXMLElementExport aElem( rExport,
                               XML_NAMESPACE_NUMBER, XML_SCIENTIFIC_NUMBER,
                               sal_True, sal_False );
 }
@@ -755,11 +755,11 @@ void SvXMLNumFmtExport::WriteMapElement_Impl( sal_Int32 nOp, double fLimit,
                 rtl_math_StringFormat_Automatic, rtl_math_DecimalPlaces_Max,
                 '.', true );
 
-		rExport.AddAttribute( XML_NAMESPACE_STYLE, XML_CONDITION, 
+		rExport.AddAttribute( XML_NAMESPACE_STYLE, XML_CONDITION,
                               aCondStr.makeStringAndClear() );
 
-		rExport.AddAttribute( XML_NAMESPACE_STYLE, XML_APPLY_STYLE_NAME, 
-                              rExport.EncodeStyleName( lcl_CreateStyleName( nKey, nPart, sal_False, 
+		rExport.AddAttribute( XML_NAMESPACE_STYLE, XML_APPLY_STYLE_NAME,
+                              rExport.EncodeStyleName( lcl_CreateStyleName( nKey, nPart, sal_False,
                                                    sPrefix ) ) );
 
         SvXMLElementExport aElem( rExport, XML_NAMESPACE_STYLE, XML_MAP,
@@ -951,7 +951,7 @@ sal_Bool lcl_IsDefaultDateFormat( const SvNumberformat& rFormat, sal_Bool bSyste
 	{
 		NfIndexTableOffset eFound = (NfIndexTableOffset) SvXMLNumFmtDefaults::GetDefaultDateFormat(
 				eDateDOW, eDateDay, eDateMonth, eDateYear, eDateHours, eDateMins, eDateSecs, bSystemDate );
-				
+
 		return ( eFound == eBuiltIn );
 	}
 }
@@ -1034,7 +1034,7 @@ void SvXMLNumFmtExport::ExportPart_Impl( const SvNumberformat& rFormat, sal_uInt
 	//
 
 	//	format name (generated from key) - style namespace
-	rExport.AddAttribute( XML_NAMESPACE_STYLE, XML_NAME, 
+	rExport.AddAttribute( XML_NAMESPACE_STYLE, XML_NAME,
                         lcl_CreateStyleName( nKey, nPart, bDefPart, sPrefix ) );
 
 	//	"volatile" attribute for styles used only in maps
@@ -1086,7 +1086,7 @@ void SvXMLNumFmtExport::ExportPart_Impl( const SvNumberformat& rFormat, sal_uInt
 		//	#85109# format type must be checked to avoid dtd errors if
 		//	locale data contains other format types at the built-in positions
 
-		rExport.AddAttribute( XML_NAMESPACE_NUMBER, XML_AUTOMATIC_ORDER, 
+		rExport.AddAttribute( XML_NAMESPACE_NUMBER, XML_AUTOMATIC_ORDER,
                               XML_TRUE );
 	}
 
@@ -1096,7 +1096,7 @@ void SvXMLNumFmtExport::ExportPart_Impl( const SvNumberformat& rFormat, sal_uInt
 		//	#85109# format type must be checked to avoid dtd errors if
 		//	locale data contains other format types at the built-in positions
 
-		rExport.AddAttribute( XML_NAMESPACE_NUMBER, XML_FORMAT_SOURCE, 
+		rExport.AddAttribute( XML_NAMESPACE_NUMBER, XML_FORMAT_SOURCE,
                               XML_LANGUAGE );
 	}
 
@@ -1129,7 +1129,7 @@ void SvXMLNumFmtExport::ExportPart_Impl( const SvNumberformat& rFormat, sal_uInt
     //
     // The element
     //
-    SvXMLElementExport aElem( rExport, XML_NAMESPACE_NUMBER, eType, 
+    SvXMLElementExport aElem( rExport, XML_NAMESPACE_NUMBER, eType,
                               sal_True, sal_True );
 
 	//
@@ -1801,9 +1801,9 @@ sal_uInt32 SvXMLNumFmtExport::ForceSystemLanguage( sal_uInt32 nKey )
         else
         {
             String aFormatString( pFormat->GetFormatstring() );
-            pFormatter->PutandConvertEntry( 
+            pFormatter->PutandConvertEntry(
                             aFormatString,
-                            nErrorPos, nType, nNewKey, 
+                            nErrorPos, nType, nNewKey,
                             pFormat->GetLanguage(), LANGUAGE_SYSTEM );
 
             // success? Then use new key.

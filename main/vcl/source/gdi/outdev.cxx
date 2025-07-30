@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -204,7 +204,7 @@ bool OutputDevice::ImplSelectClipRegion( const Region& rRegion, SalGraphics* pGr
 				return false;
 		pGraphics = mpGraphics;
 	}
-	
+
 	bool bClipRegion = pGraphics->SetClipRegion( rRegion, this );
 	OSL_ENSURE( bClipRegion, "OutputDevice::ImplSelectClipRegion() - can't create region" );
 	return bClipRegion;
@@ -508,7 +508,7 @@ void OutputDevice::EnableRTL( sal_Bool bEnable )
     Window* pWin = dynamic_cast<Window*>(this);
     if( pWin )
         pWin->StateChanged( STATE_CHANGE_MIRRORING );
-    
+
     if( mpAlphaVDev )
         mpAlphaVDev->EnableRTL( bEnable );
 }
@@ -995,7 +995,7 @@ void OutputDevice::ImplInitClipRegion()
 			else
 			{
 				mbOutputClipped = sal_False;
-            
+
 				// #102532# Respect output offset also for clip region
                 Region aRegion( ImplPixelToDevicePixel( maRegion ) );
                 const bool bClipDeviceBounds( ! GetPDFWriter()
@@ -1010,7 +1010,7 @@ void OutputDevice::ImplInitClipRegion()
                                              mnOutOffY+GetOutputHeightPixel()-1 );
                     aRegion.Intersect( aDeviceBounds );
                 }
-		        
+
                 if ( aRegion.IsEmpty() )
                 {
 			        mbOutputClipped = sal_True;
@@ -1508,7 +1508,7 @@ void OutputDevice::DrawLine( const Point& rStartPt, const Point& rEndPt )
 		ImplInitLineColor();
 
 	// #i101598# support AA and snap for lines, too
-	if((mnAntialiasing & ANTIALIASING_ENABLE_B2DDRAW) 
+	if((mnAntialiasing & ANTIALIASING_ENABLE_B2DDRAW)
 		&& mpGraphics->supportsOperation(OutDevSupport_B2DDraw)
 		&& ROP_OVERPAINT == GetRasterOp()
 		&& IsLineColor())
@@ -1549,7 +1549,7 @@ void OutputDevice::impPaintLineGeometryWithEvtlExpand(
     const LineInfo& rInfo,
     basegfx::B2DPolyPolygon aLinePolyPolygon)
 {
-    const bool bTryAA((mnAntialiasing & ANTIALIASING_ENABLE_B2DDRAW) 
+    const bool bTryAA((mnAntialiasing & ANTIALIASING_ENABLE_B2DDRAW)
         && mpGraphics->supportsOperation(OutDevSupport_B2DDraw)
         && ROP_OVERPAINT == GetRasterOp()
         && IsLineColor());
@@ -1605,20 +1605,20 @@ void OutputDevice::impPaintLineGeometryWithEvtlExpand(
 			// #i110768# When area geometry has to be created, do not
 			// use the fallback bezier decomposition inside createAreaGeometry,
 			// but one that is at least as good as ImplSubdivideBezier was.
-			// There, Polygon::AdaptiveSubdivide was used with default parameter 
+			// There, Polygon::AdaptiveSubdivide was used with default parameter
 			// 1.0 as quality index.
 			aLinePolyPolygon = basegfx::tools::adaptiveSubdivideByDistance(aLinePolyPolygon, 1.0);
 		}
-        
+
         for(sal_uInt32 a(0); a < aLinePolyPolygon.count(); a++)
         {
 	        aFillPolyPolygon.append(basegfx::tools::createAreaGeometry(
-                aLinePolyPolygon.getB2DPolygon(a), 
-                fHalfLineWidth, 
+                aLinePolyPolygon.getB2DPolygon(a),
+                fHalfLineWidth,
                 rInfo.GetLineJoin(),
                 rInfo.GetLineCap()));
         }
-        
+
         aLinePolyPolygon.clear();
     }
 
@@ -1656,7 +1656,7 @@ void OutputDevice::impPaintLineGeometryWithEvtlExpand(
         ImplInitFillColor();
 
         bool bDone(false);
-        
+
         if(bTryAA)
         {
             bDone = mpGraphics->DrawPolyPolygon(aFillPolyPolygon, 0.0, this);
@@ -1673,7 +1673,7 @@ void OutputDevice::impPaintLineGeometryWithEvtlExpand(
 			    mpGraphics->DrawPolygon(aPolygon.GetSize(), (const SalPoint*)aPolygon.GetConstPointAry(), this);
             }
         }
-        
+
         SetFillColor( aOldFillColor );
         SetLineColor( aOldLineColor );
     }
@@ -1806,7 +1806,7 @@ void OutputDevice::DrawPolyLine( const Polygon& rPoly )
 	if ( mbInitLineColor )
 		ImplInitLineColor();
 
-    const bool bTryAA((mnAntialiasing & ANTIALIASING_ENABLE_B2DDRAW) 
+    const bool bTryAA((mnAntialiasing & ANTIALIASING_ENABLE_B2DDRAW)
         && mpGraphics->supportsOperation(OutDevSupport_B2DDraw)
         && ROP_OVERPAINT == GetRasterOp()
         && IsLineColor());
@@ -1871,7 +1871,7 @@ void OutputDevice::DrawPolyLine( const Polygon& rPoly, const LineInfo& rLineInfo
 
     // #i101491#
     // Try direct Fallback to B2D-Version of DrawPolyLine
-    if((mnAntialiasing & ANTIALIASING_ENABLE_B2DDRAW) 
+    if((mnAntialiasing & ANTIALIASING_ENABLE_B2DDRAW)
         && LINE_SOLID == rLineInfo.GetStyle())
     {
 		DrawPolyLine( rPoly.getB2DPolygon(), (double)rLineInfo.GetWidth(), rLineInfo.GetLineJoin(), rLineInfo.GetLineCap());
@@ -1894,7 +1894,7 @@ void OutputDevice::ImpDrawPolyLineWithLineInfo(const Polygon& rPoly, const LineI
     Polygon aPoly = ImplLogicToDevicePixel( rPoly );
 
     // #100127# LineInfo is not curve-safe, subdivide always
-    // 
+    //
     // What shall this mean? It's wrong to subdivide here when the
     // polygon is a fat line. In that case, the painted geometry
     // WILL be much different.
@@ -1939,7 +1939,7 @@ void OutputDevice::ImpDrawPolyLineWithLineInfo(const Polygon& rPoly, const LineI
             aPoly = ImplSubdivideBezier( aPoly );
             nPoints = aPoly.GetSize();
         }
-		
+
         mpGraphics->DrawPolyLine(nPoints, (const SalPoint*)aPoly.GetConstPointAry(), this);
     }
 
@@ -1979,7 +1979,7 @@ void OutputDevice::DrawPolygon( const Polygon& rPoly )
 		ImplInitFillColor();
 
 	// use b2dpolygon drawing if possible
-	if((mnAntialiasing & ANTIALIASING_ENABLE_B2DDRAW) 
+	if((mnAntialiasing & ANTIALIASING_ENABLE_B2DDRAW)
 		&& mpGraphics->supportsOperation(OutDevSupport_B2DDraw)
 		&& ROP_OVERPAINT == GetRasterOp()
 		&& (IsLineColor() || IsFillColor()))
@@ -2006,11 +2006,11 @@ void OutputDevice::DrawPolygon( const Polygon& rPoly )
 				aB2DPolygon = basegfx::tools::snapPointsOfHorizontalOrVerticalEdges(aB2DPolygon);
 			}
 
-			bSuccess = mpGraphics->DrawPolyLine( 
-                aB2DPolygon, 
-                0.0, 
-                aB2DLineWidth, 
-                basegfx::B2DLINEJOIN_NONE, 
+			bSuccess = mpGraphics->DrawPolyLine(
+                aB2DPolygon,
+                0.0,
+                aB2DLineWidth,
+                basegfx::B2DLINEJOIN_NONE,
                 com::sun::star::drawing::LineCap_BUTT,
                 this);
 		}
@@ -2075,7 +2075,7 @@ void OutputDevice::DrawPolyPolygon( const PolyPolygon& rPolyPoly )
 		ImplInitFillColor();
 
 	// use b2dpolygon drawing if possible
-	if((mnAntialiasing & ANTIALIASING_ENABLE_B2DDRAW) 
+	if((mnAntialiasing & ANTIALIASING_ENABLE_B2DDRAW)
 		&& mpGraphics->supportsOperation(OutDevSupport_B2DDraw)
 		&& ROP_OVERPAINT == GetRasterOp()
 		&& (IsLineColor() || IsFillColor()))
@@ -2104,11 +2104,11 @@ void OutputDevice::DrawPolyPolygon( const PolyPolygon& rPolyPoly )
 
 			for(sal_uInt32 a(0); bSuccess && a < aB2DPolyPolygon.count(); a++)
 			{
-				bSuccess = mpGraphics->DrawPolyLine( 
-                    aB2DPolyPolygon.getB2DPolygon(a), 
-                    0.0, 
-                    aB2DLineWidth, 
-                    basegfx::B2DLINEJOIN_NONE, 
+				bSuccess = mpGraphics->DrawPolyLine(
+                    aB2DPolyPolygon.getB2DPolygon(a),
+                    0.0,
+                    aB2DLineWidth,
+                    basegfx::B2DLINEJOIN_NONE,
                     com::sun::star::drawing::LineCap_BUTT,
                     this);
 			}
@@ -2204,7 +2204,7 @@ void OutputDevice::ImpDrawPolyPolygonWithB2DPolyPolygon(const basegfx::B2DPolyPo
     if( mbInitFillColor )
 	    ImplInitFillColor();
 
-	if((mnAntialiasing & ANTIALIASING_ENABLE_B2DDRAW) 
+	if((mnAntialiasing & ANTIALIASING_ENABLE_B2DDRAW)
 		&& mpGraphics->supportsOperation(OutDevSupport_B2DDraw)
 		&& ROP_OVERPAINT == GetRasterOp()
 		&& (IsLineColor() || IsFillColor()))
@@ -2233,11 +2233,11 @@ void OutputDevice::ImpDrawPolyPolygonWithB2DPolyPolygon(const basegfx::B2DPolyPo
 
 			for(sal_uInt32 a(0);bSuccess && a < aB2DPolyPolygon.count(); a++)
 			{
-				bSuccess = mpGraphics->DrawPolyLine( 
-                    aB2DPolyPolygon.getB2DPolygon(a), 
-                    0.0, 
-                    aB2DLineWidth, 
-                    basegfx::B2DLINEJOIN_NONE, 
+				bSuccess = mpGraphics->DrawPolyLine(
+                    aB2DPolyPolygon.getB2DPolygon(a),
+                    0.0,
+                    aB2DLineWidth,
+                    basegfx::B2DLINEJOIN_NONE,
                     com::sun::star::drawing::LineCap_BUTT,
                     this);
 			}
@@ -2266,7 +2266,7 @@ bool OutputDevice::ImpTryDrawPolyLineDirect(
 {
     const basegfx::B2DHomMatrix aTransform = ImplGetDeviceTransformation();
     basegfx::B2DVector aB2DLineWidth(1.0, 1.0);
-    
+
 	// transform the line width if used
     if( fLineWidth != 0.0 )
 	{
@@ -2276,8 +2276,8 @@ bool OutputDevice::ImpTryDrawPolyLineDirect(
     // transform the polygon
     basegfx::B2DPolygon aB2DPolygon(rB2DPolygon);
     aB2DPolygon.transform(aTransform);
-    
-    if((mnAntialiasing & ANTIALIASING_PIXELSNAPHAIRLINE) 
+
+    if((mnAntialiasing & ANTIALIASING_PIXELSNAPHAIRLINE)
 		&& aB2DPolygon.count() < 1000)
     {
 		// #i98289#, #i101491#
@@ -2288,18 +2288,18 @@ bool OutputDevice::ImpTryDrawPolyLineDirect(
     }
 
     // draw the polyline
-    return mpGraphics->DrawPolyLine( 
-        aB2DPolygon, 
-        fTransparency, 
-        aB2DLineWidth, 
-        eLineJoin, 
+    return mpGraphics->DrawPolyLine(
+        aB2DPolygon,
+        fTransparency,
+        aB2DLineWidth,
+        eLineJoin,
         eLineCap,
         this);
 }
 
 bool OutputDevice::TryDrawPolyLineDirect(
-    const basegfx::B2DPolygon& rB2DPolygon, 
-    double fLineWidth, 
+    const basegfx::B2DPolygon& rB2DPolygon,
+    double fLineWidth,
     double fTransparency,
     basegfx::B2DLineJoin eLineJoin,
     com::sun::star::drawing::LineCap eLineCap)
@@ -2322,7 +2322,7 @@ bool OutputDevice::TryDrawPolyLineDirect(
     if( mbInitLineColor )
         ImplInitLineColor();
 
-    const bool bTryAA((mnAntialiasing & ANTIALIASING_ENABLE_B2DDRAW) 
+    const bool bTryAA((mnAntialiasing & ANTIALIASING_ENABLE_B2DDRAW)
         && mpGraphics->supportsOperation(OutDevSupport_B2DDraw)
         && ROP_OVERPAINT == GetRasterOp()
         && IsLineColor());
@@ -2391,7 +2391,7 @@ void OutputDevice::DrawPolyLine(
 	if( mbInitLineColor )
 		ImplInitLineColor();
 
-    const bool bTryAA((mnAntialiasing & ANTIALIASING_ENABLE_B2DDRAW) 
+    const bool bTryAA((mnAntialiasing & ANTIALIASING_ENABLE_B2DDRAW)
         && mpGraphics->supportsOperation(OutDevSupport_B2DDraw)
         && ROP_OVERPAINT == GetRasterOp()
         && IsLineColor());
@@ -2406,15 +2406,15 @@ void OutputDevice::DrawPolyLine(
 	// no output yet; fallback to geometry decomposition and use filled polygon paint
 	// when line is fat and not too complex. ImpDrawPolyPolygonWithB2DPolyPolygon
 	// will do internal needed AA checks etc.
-	if(fLineWidth >= 2.5 
+	if(fLineWidth >= 2.5
 		&& rB2DPolygon.count()
 		&& rB2DPolygon.count() <= 1000)
 	{
 		const double fHalfLineWidth((fLineWidth * 0.5) + 0.5);
 		const basegfx::B2DPolyPolygon aAreaPolyPolygon(
             basegfx::tools::createAreaGeometry(
-			    rB2DPolygon, 
-                fHalfLineWidth, 
+			    rB2DPolygon,
+                fHalfLineWidth,
                 eLineJoin,
                 eLineCap));
 		const Color aOldLineColor(maLineColor);

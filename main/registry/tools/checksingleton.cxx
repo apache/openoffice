@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -62,17 +62,17 @@ public:
 	const OString & getBase() const
 		{ return m_base; }
 	bool forceOutput() const
-		{ return m_bForceOutput; }	
+		{ return m_bForceOutput; }
 
 protected:
 	virtual void printUsage_Impl() const;
     virtual bool initOptions_Impl (std::vector< std::string > & rArgs);
-	
+
     std::string m_indexRegName;
     std::string m_typeRegName;
 	OString		m_base;
     bool m_bForceOutput;
-};	
+};
 
 // virtual
 void Options_Impl::printUsage_Impl() const
@@ -173,13 +173,13 @@ static sal_Bool checkSingletons(Options_Impl const & options, RegistryKey& singl
 	sal_uInt32 size = 0;
 	OUString tmpName;
     sal_Bool bRet = sal_False;
-    
+
 	RegError e = typeKey.getValueInfo(tmpName, &valueType, &size);
     if ((e != REG_VALUE_NOT_EXISTS) && (e != REG_INVALID_VALUE) && (valueType == RG_VALUETYPE_BINARY))
 	{
         std::vector< sal_uInt8 > value(size);
         typeKey.getValue(tmpName, &value[0]); // @@@ broken api: write to buffer w/o buffer size.
-		
+
 		RegistryTypeReader reader(&value[0], value.size(), sal_False);
 		if ( reader.isValid() && reader.getTypeClass() == RT_TYPE_SINGLETON )
         {
@@ -194,7 +194,7 @@ static sal_Bool checkSingletons(Options_Impl const & options, RegistryKey& singl
             {
 				bRet = sal_True;
                 OUString value2 = reader.getSuperTypeName();
-				
+
 				if ( entryKey.setValue(tmpName, RG_VALUETYPE_UNICODE,
                 					   (RegValue)value2.getStr(), sizeof(sal_Unicode)* (value2.getLength()+1)) )
 				{
@@ -210,7 +210,7 @@ static sal_Bool checkSingletons(Options_Impl const & options, RegistryKey& singl
             }
         }
 	}
-    
+
    	RegistryKeyArray subKeys;
 	typeKey.openSubKeys(tmpName, subKeys);
 
@@ -224,7 +224,7 @@ static sal_Bool checkSingletons(Options_Impl const & options, RegistryKey& singl
 		}
 	}
 	return bRet;
-}	
+}
 
 #if (defined UNX) || (defined OS2) || (defined __MINGW32__)
 int main( int argc, char * argv[] )
@@ -301,7 +301,7 @@ int _cdecl main( int argc, char * argv[] )
     {
     	typeKey = typeRoot;
     }
-		
+
 	RegistryKey singletonKey;
 	if ( indexRoot.createKey(OUString::createFromAscii("SINGLETONS"), singletonKey) )
 	{
@@ -329,8 +329,8 @@ int _cdecl main( int argc, char * argv[] )
 			fprintf(stderr, "%s: destroy registry \"%s\" failed\n",
 					options.getProgramName().c_str(), options.getIndexReg().c_str());
 	        return (10);
-		}		
-	}	
+		}
+	}
 	if ( typeReg.close() )
 	{
 		fprintf(stderr, "%s: closing registry \"%s\" failed\n",

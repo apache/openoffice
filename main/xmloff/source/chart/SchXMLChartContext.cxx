@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -351,7 +351,7 @@ void SchXMLChartContext::StartElement( const uno::Reference< xml::sax::XAttribut
         xVisualObject->setVisualAreaSize( embed::Aspects::MSOLE_CONTENT, maChartSize );
 
 	InitChart( aOldChartTypeName, bSetSwitchData);
-        
+
     if( bHasAddin )
     {
         //correct charttype serveice name when having an addin
@@ -431,7 +431,7 @@ struct NewDonutSeries
         DataRowPointStyle aSeriesStyle( DataRowPointStyle::DATA_SERIES
             , m_xSeries, -1, 1, msStyleName, mnAttachedAxis );
         aRet.push_back( aSeriesStyle );
-        
+
         sal_Int32 nPointIndex=0;
         ::std::vector< ::rtl::OUString >::iterator aPointIt( m_aPointStyles.begin() );
         ::std::vector< ::rtl::OUString >::iterator aPointEnd( m_aPointStyles.end() );
@@ -479,7 +479,7 @@ void lcl_swapPointAndSeriesStylesForDonutCharts( ::std::list< DataRowPointStyle 
 
                 if( aSeriesMap.end() == aSeriesMap.find(aStyle.m_xSeries) )
                     aSeriesMap[aStyle.m_xSeries] = nOldSeriesIndex;
-                
+
                 nOldSeriesIndex++;
             }
         }
@@ -502,7 +502,7 @@ void lcl_swapPointAndSeriesStylesForDonutCharts( ::std::list< DataRowPointStyle 
         nOldSeriesCount = nMaxOldSeriesIndex+1;
     }
     */
-  
+
 
     //initialize new series styles
     ::std::map< Reference< chart2::XDataSeries >, sal_Int32 >::const_iterator aSeriesMapIt( aSeriesMap.begin() );
@@ -514,7 +514,7 @@ void lcl_swapPointAndSeriesStylesForDonutCharts( ::std::list< DataRowPointStyle 
         ::std::map< sal_Int32, Reference< chart2::XDataSeries > > aIndexSeriesMap;
         for( ; aSeriesMapIt != aSeriesMapEnd; ++aSeriesMapIt )
             aIndexSeriesMap[aSeriesMapIt->second] = aSeriesMapIt->first;
-    
+
         ::std::map< sal_Int32, Reference< chart2::XDataSeries > >::const_iterator aIndexIt( aIndexSeriesMap.begin() );
         ::std::map< sal_Int32, Reference< chart2::XDataSeries > >::const_iterator aIndexEnd( aIndexSeriesMap.end() );
 
@@ -547,8 +547,8 @@ void lcl_swapPointAndSeriesStylesForDonutCharts( ::std::list< DataRowPointStyle 
 
                 ::std::vector< NewDonutSeries >::iterator aNewSeriesIt( aNewSeriesVector.begin() );
                 ::std::vector< NewDonutSeries >::iterator aNewSeriesEnd( aNewSeriesVector.end() );
-                
-                for( ;aNewSeriesIt!=aNewSeriesEnd; ++aNewSeriesIt) 
+
+                for( ;aNewSeriesIt!=aNewSeriesEnd; ++aNewSeriesIt)
                     aNewSeriesIt->setSeriesStyleNameToPoint( aStyle.msStyleName, nNewPointIndex );
             }
         }
@@ -566,7 +566,7 @@ void lcl_swapPointAndSeriesStylesForDonutCharts( ::std::list< DataRowPointStyle 
                 sal_Int32 nNewPointIndex = aSeriesMapIt->second;
                 sal_Int32 nNewSeriesIndex = aStyle.m_nPointIndex;
                 sal_Int32 nRepeatCount = aStyle.m_nPointRepeat;
-                
+
                 while( nRepeatCount && (nNewSeriesIndex>=0) && (nNewSeriesIndex< static_cast<sal_Int32>(aNewSeriesVector.size()) ) )
                 {
                     NewDonutSeries& rNewSeries( aNewSeriesVector[nNewSeriesIndex] );
@@ -578,7 +578,7 @@ void lcl_swapPointAndSeriesStylesForDonutCharts( ::std::list< DataRowPointStyle 
             }
         }
     }
-   
+
     //put information from aNewSeriesVector to output parameter rStyleList
     rStyleList.clear();
 
@@ -685,10 +685,10 @@ void lcl_ApplyDataFromRectangularRangeToDiagram(
         }
     }
 
-    
+
     uno::Reference< chart2::data::XDataSource > xDataSource(
         xDataProvider->createDataSource( aArgs ));
-    
+
     aArgs.realloc( aArgs.getLength() + 2 );
     aArgs[ aArgs.getLength() - 2 ] = beans::PropertyValue(
         ::rtl::OUString::createFromAscii("HasCategories"),
@@ -1138,7 +1138,7 @@ void SchXMLChartContext::InitChart(
     uno::Reference< chart::XChartDocument > xDoc = mrImportHelper.GetChartDocument();
 	DBG_ASSERT( xDoc.is(), "No valid document!" );
 	uno::Reference< frame::XModel > xModel (xDoc, uno::UNO_QUERY );
-	
+
 	// Remove Title and Diagram ("De-InitNew")
 	uno::Reference< chart2::XChartDocument > xNewDoc( mrImportHelper.GetChartDocument(), uno::UNO_QUERY );
 	if( xNewDoc.is())

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -40,8 +40,8 @@ namespace drawinglayer
 {
 	namespace processor3d
 	{
-        CutFindProcessor::CutFindProcessor(const geometry::ViewInformation3D& rViewInformation, 
-            const basegfx::B3DPoint& rFront, 
+        CutFindProcessor::CutFindProcessor(const geometry::ViewInformation3D& rViewInformation,
+            const basegfx::B3DPoint& rFront,
             const basegfx::B3DPoint& rBack,
             bool bAnyHit)
         :   BaseProcessor3D(rViewInformation),
@@ -67,7 +67,7 @@ namespace drawinglayer
 			{
 				case PRIMITIVE3D_ID_TRANSFORMPRIMITIVE3D :
 				{
-					// transform group. 
+					// transform group.
 					const primitive3d::TransformPrimitive3D& rPrimitive = static_cast< const primitive3d::TransformPrimitive3D& >(rCandidate);
 
 					// remember old and transform front, back to object coordinates
@@ -88,7 +88,7 @@ namespace drawinglayer
 						aLastViewInformation3D.getViewTime(),
 						aLastViewInformation3D.getExtendedInformationSequence());
 					updateViewInformation(aNewViewInformation3D);
-					
+
                     // #i102956# remember needed back-transform for found cuts (combine from right side)
                     const basegfx::B3DHomMatrix aLastCombinedTransform(maCombinedTransform);
                     maCombinedTransform = maCombinedTransform * rPrimitive.getTransformation();
@@ -177,7 +177,7 @@ namespace drawinglayer
                         {
            			        const basegfx::B3DPolygon aPolygon(rPolyPolygon.getB3DPolygon(0));
                             const sal_uInt32 nPointCount(aPolygon.count());
-                            
+
                             if(nPointCount > 2)
                             {
                                 const basegfx::B3DVector aPlaneNormal(aPolygon.getNormal());
@@ -203,7 +203,7 @@ namespace drawinglayer
                             }
                         }
                     }
-                    
+
                     break;
 				}
 				default :

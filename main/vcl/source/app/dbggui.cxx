@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -624,7 +624,7 @@ sal_Bool DbgWindow::Close()
     ByteString aState( GetWindowState() );
     DbgData* pData = DbgGetData();
     size_t nCopy = (sizeof( pData->aDbgWinState ) < size_t(aState.Len() + 1U ))
-    ? sizeof( pData->aDbgWinState ) : size_t(aState.Len() + 1U ); 
+    ? sizeof( pData->aDbgWinState ) : size_t(aState.Len() + 1U );
     strncpy( pData->aDbgWinState, aState.GetBuffer(), nCopy );
     pData->aDbgWinState[ sizeof( pData->aDbgWinState ) - 1 ] = 0;
     // and save for next session
@@ -994,7 +994,7 @@ DbgDialog::DbgDialog() :
     maOverwrite.SetPosSizePixel( LogicToPixel( Point( 205, 130 ), aAppMap ),
                                  aButtonSize );
     }
-    
+
     {
     maHookOSLBox.Show();
     maHookOSLBox.SetText( XubString( RTL_CONSTASCII_USTRINGPARAM( "Reroute osl debug ~messages" ) ) );
@@ -1522,7 +1522,7 @@ void DbgDialogTest( Window* pWindow )
                                  "%s should have a mnemonic char (~): %s",
                                  pClass,
                                  ByteString( aErrorText, RTL_TEXTENCODING_UTF8 ).GetBuffer() );
-                
+
 					// check text width
 					int aWidth=0;
 					switch( pChild->GetType() )
@@ -1571,7 +1571,7 @@ void DbgDialogTest( Window* pWindow )
 					int aWidth=0;
 					if( nAccelPos != STRING_NOTFOUND )
 					{
-						aWidth = pChild->GetTextWidth( aText, 0, nAccelPos ) + 
+						aWidth = pChild->GetTextWidth( aText, 0, nAccelPos ) +
 								 pChild->GetTextWidth( aText, nAccelPos+1, aText.Len() - nAccelPos - 1);
 					}
 					else
@@ -1795,7 +1795,7 @@ class DbgMessageBox : public ErrorBox
         SetText( String( RTL_CONSTASCII_USTRINGPARAM("Debug Output") ) );
         AddButton( String( RTL_CONSTASCII_USTRINGPARAM( "Copy" ) ), COPY_BUTTON_ID, 0 );
     }
-    
+
     virtual void Click()
     {
         if( GetCurButtonId() == COPY_BUTTON_ID )

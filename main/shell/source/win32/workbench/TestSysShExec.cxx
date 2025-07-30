@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -52,7 +52,7 @@
 #include <windows.h>
 #if defined _MSC_VER
 #pragma warning(pop)
-#endif 
+#endif
 
 //--------------------------------------------------------------
 //	namespaces
@@ -112,17 +112,17 @@ int SAL_CALL main(int nArgc, char* Argv[], char*	)
 
 	Reference< XSystemShellExecute > xSysShExec(
         g_xFactory->createInstance( OUString::createFromAscii( "com.sun.star.system.SystemShellExecute" ) ), UNO_QUERY );
-	
+
 	if ( !xSysShExec.is() )
 	{
 		OSL_ENSURE( sal_False, "Error creating SystemShellExecute Service" );
 		return(-1);
-	}	
+	}
 
     //"c:\\winnt\\notepad.exe"
     OUString cmd = OUString::createFromAscii( Argv[1] );
     OUString param = OUString::createFromAscii( Argv[2] ); //c:\\winnt\\iis5.log
-    
+
     try
     {
         xSysShExec->execute( cmd, param, atoi( Argv[3] ) );

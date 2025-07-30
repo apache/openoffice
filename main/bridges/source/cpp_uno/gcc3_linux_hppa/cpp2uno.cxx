@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -52,7 +52,7 @@ namespace
     static typelib_TypeClass cpp2uno_call(
         bridges::cpp_uno::shared::CppInterfaceProxy* pThis,
         const typelib_TypeDescription * pMemberTypeDescr,
-        typelib_TypeDescriptionReference * pReturnTypeRef, 
+        typelib_TypeDescriptionReference * pReturnTypeRef,
         sal_Int32 nParams, typelib_MethodParameter * pParams,
         long r8, void ** gpreg, double *fpreg, void ** ovrflw,
         sal_Int64 * pRegisterReturn /* space for register return */ )
@@ -67,7 +67,7 @@ namespace
         typelib_TypeDescription * pReturnTypeDescr = 0;
         if (pReturnTypeRef)
             TYPELIB_DANGER_GET( &pReturnTypeDescr, pReturnTypeRef );
-        
+
         void * pUnoReturn = 0;
         // complex return ptr: if != 0 && != pUnoReturn, reconversion need
         void * pCppReturn = 0;
@@ -107,9 +107,9 @@ namespace
         // cpp<=>uno)
         sal_Int32 * pTempIndizes = (sal_Int32 *)(pUnoArgs + (2 * nParams));
         // type descriptions for reconversions
-        typelib_TypeDescription ** ppTempParamTypeDescr = 
+        typelib_TypeDescription ** ppTempParamTypeDescr =
             (typelib_TypeDescription **)(pUnoArgs + (3 * nParams));
-        
+
         sal_Int32 nTempIndizes   = 0;
         bool bOverFlowUsed = false;
         for ( sal_Int32 nPos = 0; nPos < nParams; ++nPos )
@@ -270,7 +270,7 @@ namespace
                 else if (bridges::cpp_uno::shared::relatesToInterfaceType(
                     pParamTypeDescr ))
                 {
-                   uno_copyAndConvertData( pUnoArgs[nPos] = alloca( pParamTypeDescr->nSize ), 
+                   uno_copyAndConvertData( pUnoArgs[nPos] = alloca( pParamTypeDescr->nSize ),
                         pCppStack, pParamTypeDescr,
                         pThis->getBridge()->getCpp2Uno() );
                     pTempIndizes[nTempIndizes] = nPos; // has to be reconverted
@@ -308,16 +308,16 @@ namespace
             for ( ; nTempIndizes--; )
             {
                 sal_Int32 nIndex = pTempIndizes[nTempIndizes];
-                
+
                 if (pParams[nIndex].bIn) // is in/inout => was constructed
-                    uno_destructData( pUnoArgs[nIndex], 
+                    uno_destructData( pUnoArgs[nIndex],
                         ppTempParamTypeDescr[nTempIndizes], 0 );
                 TYPELIB_DANGER_RELEASE( ppTempParamTypeDescr[nTempIndizes] );
             }
             if (pReturnTypeDescr)
                 TYPELIB_DANGER_RELEASE( pReturnTypeDescr );
-            
-            CPPU_CURRENT_NAMESPACE::raiseException( &aUnoExc, 
+
+            CPPU_CURRENT_NAMESPACE::raiseException( &aUnoExc,
                 pThis->getBridge()->getUno2Cpp() ); // has to destruct the any
             // is here for dummy
             return typelib_TypeClass_VOID;
@@ -330,18 +330,18 @@ namespace
                 sal_Int32 nIndex = pTempIndizes[nTempIndizes];
                 typelib_TypeDescription * pParamTypeDescr =
                     ppTempParamTypeDescr[nTempIndizes];
-                
+
                 if (pParams[nIndex].bOut) // inout/out
                 {
                     // convert and assign
                     uno_destructData( pCppArgs[nIndex], pParamTypeDescr,
                         cpp_release );
-                    uno_copyAndConvertData( pCppArgs[nIndex], pUnoArgs[nIndex], 
+                    uno_copyAndConvertData( pCppArgs[nIndex], pUnoArgs[nIndex],
                         pParamTypeDescr, pThis->getBridge()->getUno2Cpp() );
                 }
                 // destroy temp uno param
                 uno_destructData( pUnoArgs[nIndex], pParamTypeDescr, 0 );
-                
+
                 TYPELIB_DANGER_RELEASE( pParamTypeDescr );
             }
             // return
@@ -416,10 +416,10 @@ namespace
 
         pThis = static_cast< char * >(pThis) - nVtableOffset;
 
-        bridges::cpp_uno::shared::CppInterfaceProxy * pCppI = 
+        bridges::cpp_uno::shared::CppInterfaceProxy * pCppI =
             bridges::cpp_uno::shared::CppInterfaceProxy::castInterfaceToProxy(
                 pThis);
-            
+
         typelib_InterfaceTypeDescription * pTypeDescr = pCppI->getTypeDescr();
 
         OSL_ENSURE( nFunctionIndex < pTypeDescr->nMapFunctionIndexToMemberIndex,
@@ -464,7 +464,7 @@ namespace
                     ((typelib_InterfaceAttributeTypeDescription *)aMemberDescr.get())->pAttributeTypeRef;
                 aParam.bIn      = sal_True;
                 aParam.bOut     = sal_False;
-                
+
                 eRet = cpp2uno_call(
                     pCppI, aMemberDescr.get(),
                     0, // indicates void return
@@ -498,7 +498,7 @@ namespace
                         pCppI->getBridge()->getCppEnv(),
                         (void **)&pInterface, pCppI->getOid().pData,
                         (typelib_InterfaceTypeDescription *)pTD );
-                
+
                     if (pInterface)
                     {
                         ::uno_any_construct(
@@ -612,7 +612,7 @@ namespace
 #   define L21(v)  unldil(((unsigned long)(v) >> 11) & 0x1fffff) //Left 21 bits
 #   define R11(v)  (((unsigned long)(v) & 0x7FF) << 1) //Right 11 bits
 
-    unsigned char *codeSnippet(unsigned char* code, sal_Int32 functionIndex, 
+    unsigned char *codeSnippet(unsigned char* code, sal_Int32 functionIndex,
         sal_Int32 vtableOffset, bool bHasHiddenParam)
     {
         if (bHasHiddenParam)

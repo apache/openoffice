@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -252,7 +252,7 @@ void StatusBar::ImplInitSettings( sal_Bool bFont,
 			aColor = rStyleSettings.GetWindowColor();
         SetBackground( aColor );
         mpImplData->mpVirDev->SetBackground( GetBackground() );
-        
+
         // NWF background
         if( ! IsControlBackground() &&
               IsNativeControlSupported( CTRL_WINDOW_BACKGROUND, PART_BACKGROUND_WINDOW ) )
@@ -375,7 +375,7 @@ Rectangle StatusBar::ImplGetItemRectPos( sal_uInt16 nPos ) const
 sal_uInt16 StatusBar::ImplGetFirstVisiblePos() const
 {
     ImplStatusItem* pItem;
-    
+
     for( sal_uInt16 nPos = 0; nPos < mpItemList->Count(); nPos++ )
     {
         pItem = mpItemList->GetObject( nPos );
@@ -385,7 +385,7 @@ sal_uInt16 StatusBar::ImplGetFirstVisiblePos() const
                 return nPos;
         }
     }
-    
+
     return ~0;
 }
 
@@ -497,12 +497,12 @@ void StatusBar::ImplDrawItem( sal_Bool bOffScreen, sal_uInt16 nPos, sal_Bool bDr
             if( !(pItem->mnBits & SIB_FLAT) )
             {
                 sal_uInt16 nStyle;
-                
+
                 if ( pItem->mnBits & SIB_IN )
                     nStyle = FRAME_DRAW_IN;
                 else
                     nStyle = FRAME_DRAW_OUT;
-                
+
                 DecorationView aDecoView( this );
                 aDecoView.DrawFrame( aRect, nStyle );
             }
@@ -537,7 +537,7 @@ void DrawProgress( Window* pWindow, const Point& rPos,
     if( pWindow->IsNativeControlSupported( CTRL_PROGRESS, PART_ENTIRE_CONTROL ) )
     {
         bool bNeedErase = ImplGetSVData()->maNWFData.mbProgressNeedsErase;
-        
+
         long nFullWidth = (nPrgsWidth + nOffset) * (10000 / nPercentCount);
         long nPerc = (nPercent2 > 10000) ? 10000 : nPercent2;
         ImplControlValue aValue( nFullWidth * (long)nPerc / 10000 );
@@ -578,7 +578,7 @@ void DrawProgress( Window* pWindow, const Point& rPos,
             return;
         }
     }
-    
+
 	// Werte vorberechnen
 	sal_uInt16 nPerc1 = nPercent1 / nPercentCount;
 	sal_uInt16 nPerc2 = nPercent2 / nPercentCount;
@@ -586,7 +586,7 @@ void DrawProgress( Window* pWindow, const Point& rPos,
 	if ( nPerc1 > nPerc2 )
 	{
 		// Support progress that can also decrease
-		
+
 		// Rechteck berechnen
 		long		nDX = nPrgsWidth + nOffset;
 		long		nLeft = rPos.X()+((nPerc1-1)*nDX);
@@ -602,7 +602,7 @@ void DrawProgress( Window* pWindow, const Point& rPos,
 		while ( nPerc1 > nPerc2 );
 
 		pWindow->Flush();
-	}	
+	}
 	else if ( nPerc1 < nPerc2 )
 	{
 		// Percent-Rechtecke malen
@@ -680,7 +680,7 @@ void StatusBar::ImplCalcProgressRect()
 	// calculate text size
 	Size aPrgsTxtSize( GetTextWidth( maPrgsTxt ), GetTextHeight() );
 	maPrgsTxtPos.X()	= STATUSBAR_OFFSET_X+1;
-    
+
 	// calculate progress frame
 	maPrgsFrameRect.Left()		= maPrgsTxtPos.X()+aPrgsTxtSize.Width()+STATUSBAR_OFFSET;
 	maPrgsFrameRect.Top()		= mnItemY;
@@ -1358,7 +1358,7 @@ void StatusBar::SetItemText( sal_uInt16 nItemId, const XubString& rText )
             // adjust item width - see also DataChanged()
             long nFudge = GetTextHeight()/4;
             long nWidth = GetTextWidth( pItem->maText ) + nFudge;
-            if( (nWidth > pItem->mnWidth + STATUSBAR_OFFSET) || 
+            if( (nWidth > pItem->mnWidth + STATUSBAR_OFFSET) ||
                 ((nWidth < pItem->mnWidth) && (mnDX - STATUSBAR_OFFSET) < mnItemsWidth  ))
             {
                 pItem->mnWidth = nWidth + STATUSBAR_OFFSET;
@@ -1555,7 +1555,7 @@ rtl::OString StatusBar::GetHelpId( sal_uInt16 nItemId ) const
         if ( pItem->maHelpId.getLength() )
             aRet = pItem->maHelpId;
         else
-            aRet = ::rtl::OUStringToOString( pItem->maCommand, RTL_TEXTENCODING_UTF8 );        
+            aRet = ::rtl::OUStringToOString( pItem->maCommand, RTL_TEXTENCODING_UTF8 );
     }
 
 	return aRet;
@@ -1674,7 +1674,7 @@ void StatusBar::ResetProgressMode()
 {
 	if ( mbProgressMode )
 	{
-		mnPercent = 0;		
+		mnPercent = 0;
 		maPrgsTxt.Erase();
 		if ( IsReallyVisible() )
 		{
@@ -1737,7 +1737,7 @@ Size StatusBar::CalcWindowSizePixel() const
 		nOffset = pItem->mnOffset;
 		i++;
 	}
-    
+
     long nMinHeight = GetTextHeight();
     const long nBarTextOffset = STATUSBAR_OFFSET_TEXTY*2;
     long nProgressHeight = nMinHeight + nBarTextOffset;
@@ -1755,7 +1755,7 @@ Size StatusBar::CalcWindowSizePixel() const
             nProgressHeight = aNativeControlRegion.GetHeight();
         }
     }
-    
+
     if( mpImplData->mbDrawItemFrames &&
         pThis->IsNativeControlSupported( CTRL_FRAME, PART_BORDER ) )
     {
@@ -1773,7 +1773,7 @@ Size StatusBar::CalcWindowSizePixel() const
 	nCalcHeight = nMinHeight+nBarTextOffset + 2*mpImplData->mnItemBorderWidth;
     if( nCalcHeight < nProgressHeight+2 )
         nCalcHeight = nProgressHeight+2;
-    
+
     // add border
     if( IsTopBorder() )
         nCalcHeight += 2;

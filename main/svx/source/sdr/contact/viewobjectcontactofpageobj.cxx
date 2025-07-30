@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -46,8 +46,8 @@ using namespace com::sun::star;
 
 namespace sdr
 {
-    namespace contact 
-    {	
+    namespace contact
+    {
         class PagePrimitiveExtractor : public ObjectContactOfPagePainter, public Timer
 	    {
 	    private:
@@ -104,7 +104,7 @@ namespace sdr
 		    // execute missing LazyInvalidates and stop timer
 		    Timeout();
 	    }
-    	
+
 	    void PagePrimitiveExtractor::setLazyInvalidate(ViewObjectContact& /*rVOC*/)
 	    {
 		    // do NOT call parent, but remember that something is to do by
@@ -145,7 +145,7 @@ namespace sdr
                     // the content not to be physically clipped in any way. This
                     // would be possible, but would require the internal transformation
                     // which maps between the page visualisation object and the page
-                    // content, including the aspect ratios (for details see in 
+                    // content, including the aspect ratios (for details see in
                     // PagePreviewPrimitive2D::create2DDecomposition)
                     basegfx::B2DRange(),
 
@@ -179,7 +179,7 @@ namespace sdr
 
 			    if(rRange.overlaps(aPageRange))
 			    {
-				    // if object on the page is inside or overlapping with page, create ActionChanged() for 
+				    // if object on the page is inside or overlapping with page, create ActionChanged() for
 				    // involved VOC
 				    mrViewObjectContactOfPageObj.ActionChanged();
 			    }
@@ -218,15 +218,15 @@ namespace sdr
 			{
 				const Rectangle aPageObjectModelData(rPageObject.GetLastBoundRect());
 				const basegfx::B2DRange aPageObjectBound(
-					aPageObjectModelData.Left(), aPageObjectModelData.Top(), 
+					aPageObjectModelData.Left(), aPageObjectModelData.Top(),
 					aPageObjectModelData.Right(), aPageObjectModelData.Bottom());
-				
+
 				aPageObjectTransform.set(0, 0, aPageObjectBound.getWidth());
 				aPageObjectTransform.set(1, 1, aPageObjectBound.getHeight());
 				aPageObjectTransform.set(0, 2, aPageObjectBound.getMinX());
 				aPageObjectTransform.set(1, 2, aPageObjectBound.getMinY());
 			}
-		
+
 			// #i102637# add gray frame also when printing and page exists (handout pages)
 			const bool bCreateGrayFrame(!GetObjectContact().isOutputToPrinter() || pPage);
 
@@ -238,7 +238,7 @@ namespace sdr
 				const Size aPageSize(pPage->GetSize());
 				const double fPageWidth(aPageSize.getWidth());
 				const double fPageHeight(aPageSize.getHeight());
-				
+
 				// The case that a PageObject contains another PageObject which visualizes the
 				// same page again would lead to a recursion. Limit that recursion depth to one
 				// by using a local static bool
@@ -298,7 +298,7 @@ namespace sdr
                 // on the handout page more simple, add hidden fill geometry
                 const drawinglayer::primitive2d::Primitive2DReference xFrameHit(
                     drawinglayer::primitive2d::createHiddenGeometryPrimitives2D(
-                        false, 
+                        false,
                         aPageObjectTransform));
                 xRetval = drawinglayer::primitive2d::Primitive2DSequence(&xFrameHit, 1);
             }
@@ -309,7 +309,7 @@ namespace sdr
 				const Color aFrameColor(aColorConfig.GetColorValue(svtools::OBJECTBOUNDARIES).nColor);
 				basegfx::B2DPolygon aOwnOutline(basegfx::tools::createUnitPolygon());
 				aOwnOutline.transform(aPageObjectTransform);
-				
+
 				const drawinglayer::primitive2d::Primitive2DReference xGrayFrame(
 					new drawinglayer::primitive2d::PolygonHairlinePrimitive2D(aOwnOutline, aFrameColor.getBColor()));
 

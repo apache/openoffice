@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -38,7 +38,7 @@ namespace
 class RandRWrapper
 {
     oslModule m_pRandRLib;
-    
+
     // function pointers
     Bool(*m_pXRRQueryExtension)(Display*,int*,int*);
     Status(*m_pXRRQueryVersion)(Display*,int*,int*);
@@ -50,17 +50,17 @@ class RandRWrapper
     XRRScreenSize*(*m_pXRRConfigSizes)(XRRScreenConfiguration*,int*);
     SizeID(*m_pXRRConfigCurrentConfiguration)(XRRScreenConfiguration*,Rotation*);
     int(*m_pXRRRootToScreen)(Display*, XLIB_Window);
-    
+
     bool m_bValid;
-    
+
     void initFromModule();
-    
+
     RandRWrapper(Display*);
     ~RandRWrapper();
 public:
     static RandRWrapper& get(Display*);
     static void releaseWrapper();
-    
+
     Bool XRRQueryExtension(Display* i_pDisp, int* o_event_base, int* o_error_base )
     {
         Bool bRet = False;
@@ -120,7 +120,7 @@ void RandRWrapper::initFromModule()
     m_pXRRConfigSizes = (XRRScreenSize*(*)(XRRScreenConfiguration*,int*))osl_getAsciiFunctionSymbol( m_pRandRLib, "XRRConfigSizes" );
     m_pXRRConfigCurrentConfiguration = (SizeID(*)(XRRScreenConfiguration*,Rotation*))osl_getAsciiFunctionSymbol( m_pRandRLib, "XRRConfigCurrentConfiguration" );
     m_pXRRRootToScreen = (int(*)(Display*,XLIB_Window))osl_getAsciiFunctionSymbol( m_pRandRLib, "XRRRootToScreen" );
-    
+
     m_bValid = m_pXRRQueryExtension             &&
                m_pXRRQueryVersion               &&
                m_pXRRGetScreenInfo              &&
@@ -195,12 +195,12 @@ void RandRWrapper::releaseWrapper()
 class RandRWrapper
 {
     bool m_bValid;
-    
+
     RandRWrapper(Display*);
 public:
     static RandRWrapper& get(Display*);
     static void releaseWrapper();
-    
+
     Bool XRRQueryExtension(Display* i_pDisp, int* o_event_base, int* o_error_base )
     {
         Bool bRet = False;
@@ -276,7 +276,7 @@ void RandRWrapper::releaseWrapper()
 } // namespace
 
 #endif
- 
+
 #include "unx/saldisp.hxx"
 #include "unx/salframe.h"
 #if OSL_DEBUG_LEVEL > 1
@@ -300,7 +300,7 @@ void SalDisplay::DeInitRandR()
         RandRWrapper::releaseWrapper();
 #if OSL_DEBUG_LEVEL > 1
     fprintf( stderr, "SalDisplay::DeInitRandR()\n" );
-#endif    
+#endif
     #endif
 }
 
@@ -325,18 +325,18 @@ int SalDisplay::processRandREvent( XEvent* pEvent )
                     int nSizes = 0;
                     Rotation nRot = 0;
                     SizeID nId = 0;
-                
+
                     pConfig = pWrapper->XRRGetScreenInfo( GetDisplay(), m_aScreens[i].m_aRoot );
                     nId = pWrapper->XRRConfigCurrentConfiguration( pConfig, &nRot );
                     pSizes = pWrapper->XRRConfigSizes( pConfig, &nSizes );
                     XRRScreenSize *pTargetSize = pSizes + nId;
-                    
+
                     bNotify = bNotify ||
                               m_aScreens[i].m_aSize.Width() != pTargetSize->width ||
                               m_aScreens[i].m_aSize.Height() != pTargetSize->height;
-                
+
                     m_aScreens[i].m_aSize = Size( pTargetSize->width, pTargetSize->height );
-    
+
                     pWrapper->XRRFreeScreenConfigInfo( pConfig );
 
                     #if OSL_DEBUG_LEVEL > 1

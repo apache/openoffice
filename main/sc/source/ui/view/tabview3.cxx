@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -234,9 +234,9 @@ void ScTabView::InvalidateAttribs()
 	rBindings.Invalidate( SID_SET_SUPER_SCRIPT );
 	rBindings.Invalidate( SID_SET_SUB_SCRIPT );
 	rBindings.Invalidate( SID_ATTR_CHAR_STRIKEOUT );
-	rBindings.Invalidate( SID_ATTR_CHAR_SHADOWED ); 
+	rBindings.Invalidate( SID_ATTR_CHAR_SHADOWED );
 
-	rBindings.Invalidate( SID_ATTR_PARA_ADJUST_LEFT );			
+	rBindings.Invalidate( SID_ATTR_PARA_ADJUST_LEFT );
 	rBindings.Invalidate( SID_ATTR_PARA_ADJUST_RIGHT );
 	rBindings.Invalidate( SID_ATTR_PARA_ADJUST_BLOCK );
 	rBindings.Invalidate( SID_ATTR_PARA_ADJUST_CENTER);
@@ -253,14 +253,14 @@ void ScTabView::InvalidateAttribs()
 
     // stuff for sidebar panels
     {
-        rBindings.Invalidate( SID_H_ALIGNCELL );	
+        rBindings.Invalidate( SID_H_ALIGNCELL );
         rBindings.Invalidate( SID_V_ALIGNCELL );
         rBindings.Invalidate( SID_ATTR_ALIGN_INDENT );
         rBindings.Invalidate( SID_FRAME_LINECOLOR );
         rBindings.Invalidate( SID_FRAME_LINESTYLE );
         rBindings.Invalidate( SID_ATTR_BORDER_OUTER );
         rBindings.Invalidate( SID_ATTR_BORDER_INNER );
-        rBindings.Invalidate( SID_SCGRIDSHOW ); 
+        rBindings.Invalidate( SID_SCGRIDSHOW );
         rBindings.Invalidate( SID_ATTR_BORDER_DIAG_TLBR );
         rBindings.Invalidate( SID_ATTR_BORDER_DIAG_BLTR );
         rBindings.Invalidate( SID_NUMBER_TYPE_FORMAT );
@@ -1672,11 +1672,11 @@ void ScTabView::SetTabNo( SCTAB nTab, sal_Bool bNew, sal_Bool bExtendSelection, 
 
         bool bAllSelected = true;
         for (SCTAB nSelTab = 0; nSelTab < nTabCount; ++nSelTab)
-        {    
+        {
             if (!pDoc->IsVisible(nSelTab) || rMark.GetTableSelect(nSelTab))
-            {    
+            {
                 if (nTab == nSelTab)
-                    // This tab is already in selection.  Keep the current 
+                    // This tab is already in selection.  Keep the current
                     // selection.
                     bExtendSelection = true;
             }

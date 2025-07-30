@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -85,7 +85,7 @@ DEFINE_INIT_SERVICE(ShellJob,
                         */
                     }
                    )
-                    
+
 //-----------------------------------------------
 ShellJob::ShellJob(const css::uno::Reference< css::lang::XMultiServiceFactory >& xSMGR)
     : ThreadHelpBase(     )
@@ -114,7 +114,7 @@ css::uno::Any SAL_CALL ShellJob::execute(const css::uno::Sequence< css::beans::N
 
     // replace all might existing place holder.
     ::rtl::OUString sRealCommand = impl_substituteCommandVariables(sCommand);
-        
+
     // Command is required as minimum.
     // If it does not exists ... we can't do our job.
     // Deactivate such miss configured job silently .-)
@@ -125,12 +125,12 @@ css::uno::Any SAL_CALL ShellJob::execute(const css::uno::Sequence< css::beans::N
     ::sal_Bool bDone = impl_execute(sRealCommand, lCommandArguments, bCheckExitCode);
     if (! bDone)
         return css::uno::Any();
-        
+
     // Job was done ... user configured deactivation of this job
     // in such case.
     if (bDeactivateJobIfDone)
         return ShellJob::impl_generateAnswer4Deactivation();
-    
+
     // There was no decision about deactivation of this job.
     // So we have to return nothing here !
     return css::uno::Any();
@@ -160,7 +160,7 @@ css::uno::Any ShellJob::impl_generateAnswer4Deactivation()
               css::uno::Reference< css::util::XStringSubstitution > xSubst           (  xSMGR->createInstance(SERVICENAME_SUBSTITUTEPATHVARIABLES), css::uno::UNO_QUERY_THROW);
 		const ::sal_Bool											bSubstRequired   = sal_True;
 		const ::rtl::OUString										sCompleteCommand = xSubst->substituteVariables(sCommand, bSubstRequired);
-    
+
         return sCompleteCommand;
 	}
 	catch(const css::uno::Exception&)
@@ -181,7 +181,7 @@ css::uno::Any ShellJob::impl_generateAnswer4Deactivation()
 
     if (nArgs > 0)
         pArgs = reinterpret_cast< ::rtl_uString** >(const_cast< ::rtl::OUString* >(lArguments.getConstArray()));
-    
+
     oslProcessError eError = osl_executeProcess(sCommand.pData, pArgs, nArgs, nOptions, NULL, NULL, NULL, 0, &hProcess);
 
     // executable not found or couldn't be started

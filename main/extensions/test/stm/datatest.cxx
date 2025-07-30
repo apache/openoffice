@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -161,9 +161,9 @@ INT32 ODataStreamTest::test(	const UString& TestName,
     					INT32 hTestHandle) 						THROWS( (	IllegalArgumentException,
     																		UsrSystemException) )
 {
-	if( L"com.sun.star.io.DataInputStream" == TestName || 
+	if( L"com.sun.star.io.DataInputStream" == TestName ||
 		L"com.sun.star.io.DataOutputStream" == TestName )  {
-		
+
 		try {
 			if( 0 == hTestHandle ) {
 				testInvariant( TestName , TestObject );
@@ -175,13 +175,13 @@ INT32 ODataStreamTest::test(	const UString& TestName,
 				XDataInputStreamRef rInput( TestObject , USR_QUERY );
 				XDataOutputStreamRef rOutput( TestObject , USR_QUERY );
 
-				
+
 				XInterfaceRef x = m_rFactory->createInstance( L"com.sun.star.io.Pipe");
 
 				XInputStreamRef  rPipeInput( x , USR_QUERY );
 				XOutputStreamRef rPipeOutput( x , USR_QUERY );
-				
-				if( ! rSink.is() ) {					
+
+				if( ! rSink.is() ) {
 					x = m_rFactory->createInstance( L"com.sun.star.io.DataInputStream" );
 					x->queryInterface( XDataInputStream::getSmartUik() , rInput );
 					x->queryInterface( XActiveDataSink::getSmartUik() , rSink );
@@ -203,7 +203,7 @@ INT32 ODataStreamTest::test(	const UString& TestName,
 
 				if( 1 == hTestHandle ) {
 					testSimple( rInput , rOutput );
-				}	
+				}
 			}
 		}
 		catch( Exception& e )  {
@@ -212,9 +212,9 @@ INT32 ODataStreamTest::test(	const UString& TestName,
 		catch(...) {
 			BUILD_ERROR( 0 , "unknown exception (Exception is  not base class)" );
 		}
-		
+
 		hTestHandle ++;
-		
+
 		if( hTestHandle >= 2) {
 			// all tests finished.
 			hTestHandle = -1;
@@ -224,13 +224,13 @@ INT32 ODataStreamTest::test(	const UString& TestName,
 		BUILD_ERROR( 0 , "service not supported by test." );
 	}
 	return hTestHandle;
-}													
+}
 
 
 
 BOOL ODataStreamTest::testPassed(void) 										THROWS( (UsrSystemException) )
 {
-	return m_seqErrors.getLen() == 0;	
+	return m_seqErrors.getLen() == 0;
 }
 
 
@@ -251,7 +251,7 @@ Sequence< UString > ODataStreamTest::getWarnings(void) 						THROWS( (UsrSystemE
 	return m_seqWarnings;
 }
 
-void ODataStreamTest::testSimple( 	const XDataInputStreamRef &rInput, 
+void ODataStreamTest::testSimple( 	const XDataInputStreamRef &rInput,
 									const XDataOutputStreamRef &rOutput )
 {
 	rOutput->writeLong( 0x34ff3c );
@@ -259,89 +259,89 @@ void ODataStreamTest::testSimple( 	const XDataInputStreamRef &rInput,
 
 	ERROR_ASSERT( 0x34ff3c ==  rInput->readLong() , "long read/write mismatch" );
 	ERROR_ASSERT( 0x34ff3d ==  rInput->readLong() , "long read/write mismatch" );
-	
+
 	rOutput->writeByte( 0x87 );
 	ERROR_ASSERT( 0x87 == rInput->readByte() , "byte read/write mismatch" );
-	
+
 	rOutput->writeBoolean( 25 );
 	ERROR_ASSERT( rInput->readBoolean() , "boolean read/write mismatch" );
-	
+
 	rOutput->writeBoolean( FALSE );
 	ERROR_ASSERT( ! rInput->readBoolean() , "boolean read/write mismatch" );
-	
+
 	rOutput->writeFloat( (float) 42.42 );
 	ERROR_ASSERT( rInput->readFloat() == ((float)42.42) , "float read/write mismatch" );
-	
+
 	rOutput->writeDouble( (double) 42.42 );
 	ERROR_ASSERT( rInput->readDouble() == 42.42 , "double read/write mismatch" );
-	
+
 	rOutput->writeUTF( L"Live long and prosper !" );
 	ERROR_ASSERT( rInput->readUTF() == L"Live long and prosper !" ,
 					"UTF read/write mismatch" );
-	
+
 	Sequence<wchar_t> wc(0x10001);
 	for( int i = 0 ; i < 0x10000  ; i ++ ) {
-		wc.getArray()[i] = L'c';	
+		wc.getArray()[i] = L'c';
 	}
 	wc.getArray()[0x10000] = 0;
 	UString str( wc.getArray() , 0x10000 );
 	rOutput->writeUTF( str );
 	ERROR_ASSERT( rInput->readUTF() == str , "error reading 64k block" );
-	
+
 	rOutput->closeOutput();
 	try {
 		rInput->readLong();
-		ERROR_ASSERT( 0 , "eof-exception does not occur !" );	
+		ERROR_ASSERT( 0 , "eof-exception does not occur !" );
 	}
 	catch ( IOException& e ){
-		//ok	
+		//ok
 		e.getName();
 	}
 	catch(...)	{
 		ERROR_ASSERT( 0 , "wrong exception after reading beyond eof" );
 	}
-	
-	ERROR_ASSERT( ! rInput->readBytes( Sequence<BYTE> (1) , 1 ), 	
+
+	ERROR_ASSERT( ! rInput->readBytes( Sequence<BYTE> (1) , 1 ),
 					"stream must be on eof !" );
-					
+
 	rInput->closeInput();
-	
+
 	try {
 		rOutput->writeByte( 1 );
 		ERROR_ASSERT( 0 , "writing still possible though chain must be interrupted" );
 	}
-	catch( IOException& e ) 
+	catch( IOException& e )
 	{
 		e.getName();
-		// ok	
+		// ok
 	}
 	catch( ... ) {
 		ERROR_ASSERT( 0 , "IOException	expected, but another exception was thrown" );
 	}
-	
+
 }
 
 
 
-/** 
+/**
 * for external binding
 *
 *
 **/
 XInterfaceRef ODataStreamTest_CreateInstance( const XMultiServiceFactoryRef & rSMgr ) THROWS((Exception))
-{	
+{
 	ODataStreamTest *p = new ODataStreamTest( rSMgr );
-	XInterfaceRef xService = *p;	
+	XInterfaceRef xService = *p;
 	return xService;
 }
 
 Sequence<UString> ODataStreamTest_getSupportedServiceNames( int i) THROWS( () )
 {
 	Sequence<UString> aRet(1);
-	
+
 	aRet.getArray()[0] = ODataStreamTest_getImplementationName( i);
-	
-	
+
+
 	return aRet;
 }
 
@@ -349,9 +349,9 @@ UString     ODataStreamTest_getServiceName( int i) THROWS( () )
 {
 	if( 1 == i ) {
 		return L"test.com.sun.star.io.DataInputStream";
-	} 
+	}
 	else {
-		return L"test.com.sun.star.io.DataOutputStream";	
+		return L"test.com.sun.star.io.DataOutputStream";
 	}
 }
 
@@ -361,7 +361,7 @@ UString 	ODataStreamTest_getImplementationName( int i) THROWS( () )
 		return L"test.com.sun.star.comp.extensions.stm.DataInputStream";
 	}
 	else {
-		return L"test.com.sun.star.comp.extensions.stm.DataOutputStream";	
+		return L"test.com.sun.star.comp.extensions.stm.DataOutputStream";
 	}
 }
 
@@ -373,7 +373,7 @@ UString 	ODataStreamTest_getImplementationName( int i) THROWS( () )
 *
 *
 *------------------------------------------------------*/
-class MyPersistObject : 
+class MyPersistObject :
 			public XPersistObject,
 			public XPropertySet,
 			public OWeakObject
@@ -385,7 +385,7 @@ public:
 		{}
 	~MyPersistObject()
 		{}
-	
+
 public:
 	BOOL						queryInterface( Uik aUik, XInterfaceRef & rOut );
 	void 						acquire() 						 { OWeakObject::acquire(); }
@@ -400,35 +400,35 @@ public:
 public:
 
     virtual XPropertySetInfoRef getPropertySetInfo(void) const 	THROWS( (UsrSystemException) );
-    virtual void setPropertyValue(const UString& aPropertyName, const UsrAny& aValue) 
-    															THROWS( (	UnknownPropertyException, 
-    																		PropertyVetoException, 
-    																		IllegalArgumentException,
-    																		WrappedTargetException, 
-    																		UsrSystemException) );
-    virtual UsrAny getPropertyValue(const UString& PropertyName) const 
-    															THROWS( (	UnknownPropertyException, 
-    																		WrappedTargetException, 
-    																		UsrSystemException) );
-    virtual void addPropertyChangeListener(	const UString& aPropertyName, 
-    										const XPropertyChangeListenerRef& xListener) 
-    															THROWS( (	UnknownPropertyException, 
-    																		WrappedTargetException, 
-    																		UsrSystemException) );
-    virtual void removePropertyChangeListener(	const UString& aPropertyName, 
-    											const XPropertyChangeListenerRef& aListener) 
-    															THROWS( (	UnknownPropertyException, 
-    																		WrappedTargetException, 
-    																		UsrSystemException) );
-    virtual void addVetoableChangeListener(		const UString& PropertyName, 
-    											const XVetoableChangeListenerRef& aListener) 
+    virtual void setPropertyValue(const UString& aPropertyName, const UsrAny& aValue)
     															THROWS( (	UnknownPropertyException,
-    																		WrappedTargetException, 
+    																		PropertyVetoException,
+    																		IllegalArgumentException,
+    																		WrappedTargetException,
     																		UsrSystemException) );
-    virtual void removeVetoableChangeListener(	const UString& PropertyName, 
-    											const XVetoableChangeListenerRef& aListener) 
-    															THROWS( (	UnknownPropertyException, 
-    																		WrappedTargetException, 
+    virtual UsrAny getPropertyValue(const UString& PropertyName) const
+    															THROWS( (	UnknownPropertyException,
+    																		WrappedTargetException,
+    																		UsrSystemException) );
+    virtual void addPropertyChangeListener(	const UString& aPropertyName,
+    										const XPropertyChangeListenerRef& xListener)
+    															THROWS( (	UnknownPropertyException,
+    																		WrappedTargetException,
+    																		UsrSystemException) );
+    virtual void removePropertyChangeListener(	const UString& aPropertyName,
+    											const XPropertyChangeListenerRef& aListener)
+    															THROWS( (	UnknownPropertyException,
+    																		WrappedTargetException,
+    																		UsrSystemException) );
+    virtual void addVetoableChangeListener(		const UString& PropertyName,
+    											const XVetoableChangeListenerRef& aListener)
+    															THROWS( (	UnknownPropertyException,
+    																		WrappedTargetException,
+    																		UsrSystemException) );
+    virtual void removeVetoableChangeListener(	const UString& PropertyName,
+    											const XVetoableChangeListenerRef& aListener)
+    															THROWS( (	UnknownPropertyException,
+    																		WrappedTargetException,
     																		UsrSystemException) );
 
 public:
@@ -447,24 +447,24 @@ public:
 
 XPropertySetInfoRef MyPersistObject::getPropertySetInfo(void) const 	THROWS( (UsrSystemException) )
 {
-	return XPropertySetInfoRef();	
+	return XPropertySetInfoRef();
 }
 
-void MyPersistObject::setPropertyValue(const UString& aPropertyName, const UsrAny& aValue) 
-    															THROWS( (	UnknownPropertyException, 
-    																		PropertyVetoException, 
+void MyPersistObject::setPropertyValue(const UString& aPropertyName, const UsrAny& aValue)
+    															THROWS( (	UnknownPropertyException,
+    																		PropertyVetoException,
     																		IllegalArgumentException,
-    																		WrappedTargetException, 
+    																		WrappedTargetException,
     																		UsrSystemException) )
 {
 	if( L"long" == aPropertyName  ) {
-		m_l = aValue.getINT32();	
+		m_l = aValue.getINT32();
 	}
 	else if ( L"float" == aPropertyName ) {
-		m_f = aValue.getFloat();	
+		m_f = aValue.getFloat();
 	}
 	else if( L"double" == aPropertyName ) {
-		m_d = aValue.getDouble();	
+		m_d = aValue.getDouble();
 	}
 	else if( L"bool" == aPropertyName ) {
 		m_b = aValue.getBOOL();
@@ -473,14 +473,14 @@ void MyPersistObject::setPropertyValue(const UString& aPropertyName, const UsrAn
 		m_byte = aValue.getBYTE();
 	}
 	else if( L"char" == aPropertyName ) {
-		m_c = aValue.getChar();	
+		m_c = aValue.getChar();
 	}
 	else if( L"string" == aPropertyName ) {
-		m_s = aValue.getString();	
+		m_s = aValue.getString();
 	}
 	else if( L"object" == aPropertyName ) {
 		if( aValue.getReflection() == XPersistObject_getReflection() ) {
-			XPersistObjectRef *pRef = (XPersistObjectRef*) aValue.get();	
+			XPersistObjectRef *pRef = (XPersistObjectRef*) aValue.get();
 			if( pRef ) {
 				m_ref = *pRef;
 			}
@@ -496,20 +496,20 @@ void MyPersistObject::setPropertyValue(const UString& aPropertyName, const UsrAn
 }
 
 
-UsrAny MyPersistObject::getPropertyValue(const UString& aPropertyName) const 
-    															THROWS( (	UnknownPropertyException, 
-    																		WrappedTargetException, 
+UsrAny MyPersistObject::getPropertyValue(const UString& aPropertyName) const
+    															THROWS( (	UnknownPropertyException,
+    																		WrappedTargetException,
     																		UsrSystemException) )
 {
 	UsrAny aValue;
 	if( L"long" == aPropertyName  ) {
-		aValue.setINT32( m_l );	
+		aValue.setINT32( m_l );
 	}
 	else if ( L"float" == aPropertyName ) {
-		aValue.setFloat( m_f );	
+		aValue.setFloat( m_f );
 	}
 	else if( L"double" == aPropertyName ) {
-		aValue.setDouble( m_d );	
+		aValue.setDouble( m_d );
 	}
 	else if( L"bool" == aPropertyName ) {
 		aValue.setBOOL( m_b );
@@ -518,10 +518,10 @@ UsrAny MyPersistObject::getPropertyValue(const UString& aPropertyName) const
 		aValue.setBYTE( m_byte );
 	}
 	else if( L"char" == aPropertyName ) {
-		aValue.setChar( m_c );	
+		aValue.setChar( m_c );
 	}
 	else if( L"string" == aPropertyName ) {
-		aValue.setString( m_s );	
+		aValue.setString( m_s );
 	}
 	else if( L"object" == aPropertyName ) {
 		aValue.set( &m_ref , XPersistObject_getReflection() );
@@ -530,53 +530,53 @@ UsrAny MyPersistObject::getPropertyValue(const UString& aPropertyName) const
 }
 
 
-void MyPersistObject::addPropertyChangeListener(	const UString& aPropertyName, 
-    												const XPropertyChangeListenerRef& xListener) 
-    															THROWS( (	UnknownPropertyException, 
-    																		WrappedTargetException, 
-    																		UsrSystemException) )
-{
-	
-}
-
-void MyPersistObject::removePropertyChangeListener(	const UString& aPropertyName, 
-    												const XPropertyChangeListenerRef& aListener) 
-    															THROWS( (	UnknownPropertyException, 
-    																		WrappedTargetException, 
-    																		UsrSystemException) )
-{
-}
-void MyPersistObject::addVetoableChangeListener(const UString& PropertyName, 
-    											const XVetoableChangeListenerRef& aListener) 
+void MyPersistObject::addPropertyChangeListener(	const UString& aPropertyName,
+    												const XPropertyChangeListenerRef& xListener)
     															THROWS( (	UnknownPropertyException,
-    																		WrappedTargetException, 
+    																		WrappedTargetException,
     																		UsrSystemException) )
 {
-	
+
 }
 
-void MyPersistObject::removeVetoableChangeListener(	const UString& PropertyName, 
-    								const XVetoableChangeListenerRef& aListener) 
-    															THROWS( (	UnknownPropertyException, 
-    																		WrappedTargetException, 
+void MyPersistObject::removePropertyChangeListener(	const UString& aPropertyName,
+    												const XPropertyChangeListenerRef& aListener)
+    															THROWS( (	UnknownPropertyException,
+    																		WrappedTargetException,
     																		UsrSystemException) )
 {
-	
+}
+void MyPersistObject::addVetoableChangeListener(const UString& PropertyName,
+    											const XVetoableChangeListenerRef& aListener)
+    															THROWS( (	UnknownPropertyException,
+    																		WrappedTargetException,
+    																		UsrSystemException) )
+{
+
+}
+
+void MyPersistObject::removeVetoableChangeListener(	const UString& PropertyName,
+    								const XVetoableChangeListenerRef& aListener)
+    															THROWS( (	UnknownPropertyException,
+    																		WrappedTargetException,
+    																		UsrSystemException) )
+{
+
 }
 
 
-	
+
 BOOL MyPersistObject::queryInterface( Uik aUik , XInterfaceRef &rOut )
 {
 	if( XPersistObject::getSmartUik() == aUik ) {
-		rOut = ( XPersistObject * ) this;	
+		rOut = ( XPersistObject * ) this;
 	}
 	else if( XPropertySet::getSmartUik() == aUik ) {
-		rOut = ( XPropertySet * ) this;	
+		rOut = ( XPropertySet * ) this;
 	}
 	else
 		return OWeakObject::queryInterface( aUik , rOut );
-		
+
 	return TRUE;
 }
 
@@ -585,7 +585,7 @@ UString MyPersistObject::getServiceName() const THROWS( (UsrSystemException) )
 	return m_sServiceName;
 }
 
-void MyPersistObject::write( const XObjectOutputStreamRef & rOut ) 
+void MyPersistObject::write( const XObjectOutputStreamRef & rOut )
 													THROWS( (IOException,UsrSystemException))
 {
 	rOut->writeLong( m_l);
@@ -599,7 +599,7 @@ void MyPersistObject::write( const XObjectOutputStreamRef & rOut )
 }
 
 
-void MyPersistObject::read( const XObjectInputStreamRef & rIn ) 
+void MyPersistObject::read( const XObjectInputStreamRef & rIn )
 													THROWS( (IOException, UsrSystemException) )
 {
 	m_l = rIn->readLong();
@@ -612,11 +612,11 @@ void MyPersistObject::read( const XObjectInputStreamRef & rIn )
 	m_ref = rIn->readObject();
 }
 
-XInterfaceRef OMyPersistObject_CreateInstance( const XMultiServiceFactoryRef & rSMgr ) 
+XInterfaceRef OMyPersistObject_CreateInstance( const XMultiServiceFactoryRef & rSMgr )
 													THROWS((Exception))
-{	
+{
 	MyPersistObject *p = new MyPersistObject( );
-	XInterfaceRef xService = *p;	
+	XInterfaceRef xService = *p;
 	return xService;
 }
 
@@ -645,22 +645,22 @@ class OObjectStreamTest :
 {
 public:
 	OObjectStreamTest( const XMultiServiceFactoryRef &r) : ODataStreamTest(r) {}
-public: // refcounting	
+public: // refcounting
 	BOOL						queryInterface( Uik aUik, XInterfaceRef & rOut );
 
-public:	
-    virtual void testInvariant(const UString& TestName, const XInterfaceRef& TestObject) 
-    															THROWS( (	IllegalArgumentException, 
+public:
+    virtual void testInvariant(const UString& TestName, const XInterfaceRef& TestObject)
+    															THROWS( (	IllegalArgumentException,
     																		UsrSystemException) );
 
-    virtual INT32 test(	const UString& TestName, 
-    					const XInterfaceRef& TestObject, 
-    					INT32 hTestHandle) 						THROWS( (	IllegalArgumentException, 
+    virtual INT32 test(	const UString& TestName,
+    					const XInterfaceRef& TestObject,
+    					INT32 hTestHandle) 						THROWS( (	IllegalArgumentException,
     																		UsrSystemException) );
 
 
 private:
-	void OObjectStreamTest::testObject( 	const XObjectOutputStreamRef &rOut, 
+	void OObjectStreamTest::testObject( 	const XObjectOutputStreamRef &rOut,
 											const XObjectInputStreamRef &rIn );
 
 private:
@@ -673,23 +673,23 @@ BOOL OObjectStreamTest::queryInterface( Uik uik , XInterfaceRef &rOut )
 {
 	if( XSimpleTest::getSmartUik() == uik ) {
 		rOut = (XSimpleTest *) this;
-	}	
+	}
 	else {
 		return ODataStreamTest::queryInterface( uik , rOut );
-	}	
+	}
 	return TRUE;
 }
 
 
-void OObjectStreamTest::testInvariant( const UString& TestName, const XInterfaceRef& TestObject ) 
-    															THROWS( (	IllegalArgumentException, 
+void OObjectStreamTest::testInvariant( const UString& TestName, const XInterfaceRef& TestObject )
+    															THROWS( (	IllegalArgumentException,
     																		UsrSystemException) )
 {
-	
+
 
 	if( L"com.sun.star.io.ObjectInputStream" == TestName ) {
 		ODataStreamTest::testInvariant( TestName , TestObject );
-		XObjectInputStreamRef dataInput( TestObject , USR_QUERY );		
+		XObjectInputStreamRef dataInput( TestObject , USR_QUERY );
 		XMarkableStreamRef markable( TestObject , USR_QUERY );
 		ERROR_ASSERT( dataInput.is() , "XObjectInputStream cannot be queried" );
 		ERROR_ASSERT(   markable.is() , "XMarkableStream cannot be queried" );
@@ -712,48 +712,48 @@ void OObjectStreamTest::testInvariant( const UString& TestName, const XInterface
 
 }
 
-INT32 OObjectStreamTest::test(	const UString& TestName, 
-    					const XInterfaceRef& TestObject, 
-    					INT32 hTestHandle) 						THROWS( (	IllegalArgumentException, 
+INT32 OObjectStreamTest::test(	const UString& TestName,
+    					const XInterfaceRef& TestObject,
+    					INT32 hTestHandle) 						THROWS( (	IllegalArgumentException,
     																		UsrSystemException) )
 {
-	if( L"com.sun.star.io.ObjectInputStream" == TestName || 
+	if( L"com.sun.star.io.ObjectInputStream" == TestName ||
 		L"com.sun.star.io.ObjectOutputStream" == TestName )  {
-		
+
 		try {
 			if( 0 == hTestHandle ) {
 				testInvariant( TestName , TestObject );
 			}
 			else if( DATASTREAM_TEST_MAX_HANDLE >= hTestHandle ) {
 				INT32 hOldHandle = hTestHandle;
-				hTestHandle = ODataStreamTest::test( L"com.sun.star.io.DataInputStream" , 
+				hTestHandle = ODataStreamTest::test( L"com.sun.star.io.DataInputStream" ,
 														TestObject , hTestHandle );
 				if( hTestHandle == -1 ){
 					hTestHandle = hOldHandle;
 				}
 			}
 			else {
-				
+
 				XActiveDataSinkRef rSink( TestObject, USR_QUERY );
 				XActiveDataSourceRef rSource( TestObject , USR_QUERY );
 
 				XObjectInputStreamRef rInput( TestObject , USR_QUERY );
 				XObjectOutputStreamRef rOutput( TestObject , USR_QUERY );
 
-				
+
 				XInterfaceRef x = m_rFactory->createInstance( L"com.sun.star.io.Pipe");
 
 				XInputStreamRef  rPipeInput( x , USR_QUERY );
 				XOutputStreamRef rPipeOutput( x , USR_QUERY );
-				
+
 				x = m_rFactory->createInstance( L"com.sun.star.io.MarkableInputStream" );
 				XInputStreamRef 	markableInput( x , USR_QUERY );
 				XActiveDataSinkRef markableSink( x , USR_QUERY );
-				
+
 				x = m_rFactory->createInstance( L"com.sun.star.io.MarkableOutputStream" );
 				XOutputStreamRef 	markableOutput( x , USR_QUERY );
 				XActiveDataSourceRef	markableSource( x , USR_QUERY );
-				
+
 				OSL_ASSERT( markableInput.is() 	);
 				OSL_ASSERT( markableOutput.is() );
 				OSL_ASSERT( markableSink.is() 	);
@@ -762,7 +762,7 @@ INT32 OObjectStreamTest::test(	const UString& TestName,
 				markableSink->setInputStream( rPipeInput );
 				markableSource->setOutputStream( rPipeOutput );
 
-				if( ! rSink.is() ) {					
+				if( ! rSink.is() ) {
 					x = m_rFactory->createInstance( L"com.sun.star.io.ObjectInputStream" );
 					x->queryInterface( XObjectInputStream::getSmartUik() , rInput );
 					x->queryInterface( XActiveDataSink::getSmartUik() , rSink );
@@ -775,7 +775,7 @@ INT32 OObjectStreamTest::test(	const UString& TestName,
 
 				OSL_ASSERT( rPipeInput.is() );
 				OSL_ASSERT( rPipeOutput.is() );
-				
+
 				rSink->setInputStream( markableInput );
 				rSource->setOutputStream( markableOutput );
 
@@ -787,7 +787,7 @@ INT32 OObjectStreamTest::test(	const UString& TestName,
 				}
 				rInput->closeInput();
 				rOutput->closeOutput();
-				
+
 			}
 		}
 		catch( Exception& e )  {
@@ -796,9 +796,9 @@ INT32 OObjectStreamTest::test(	const UString& TestName,
 		catch(...) {
 			BUILD_ERROR( 0 , "unknown exception (Exception is  not base class)" );
 		}
-	
+
 		hTestHandle ++;
-		
+
 		if( hTestHandle > 1 +DATASTREAM_TEST_MAX_HANDLE ) {
 			// all tests finished.
 			hTestHandle = -1;
@@ -808,7 +808,7 @@ INT32 OObjectStreamTest::test(	const UString& TestName,
 		BUILD_ERROR( 0 , "service not supported by test." );
 	}
 	return hTestHandle;
-}													
+}
 
 
 BOOL compareMyPropertySet( XPropertySetRef &r1 , XPropertySetRef &r2 )
@@ -817,35 +817,35 @@ BOOL compareMyPropertySet( XPropertySetRef &r1 , XPropertySetRef &r2 )
 
 	if( r1->getPropertyValue( L"long" ).getReflection() == Void_getReflection() ||
 		r2->getPropertyValue( L"long" ).getReflection() == Void_getReflection() ) {
-		
+
 		// one of the objects is not the correct propertyset !
 		return FALSE;
 	}
-	
-	b = b && ( 	r1->getPropertyValue( L"long" ).getINT32() == 
+
+	b = b && ( 	r1->getPropertyValue( L"long" ).getINT32() ==
 				r2->getPropertyValue( L"long" ).getINT32() );
 
-	b = b && ( 	r1->getPropertyValue( L"float" ).getFloat() == 
+	b = b && ( 	r1->getPropertyValue( L"float" ).getFloat() ==
 				r2->getPropertyValue( L"float" ).getFloat() );
-	
-	b = b && ( 	r1->getPropertyValue( L"double" ).getDouble() == 
+
+	b = b && ( 	r1->getPropertyValue( L"double" ).getDouble() ==
 				r2->getPropertyValue( L"double" ).getDouble() );
 
-	b = b && ( 	r1->getPropertyValue( L"bool" ).getBOOL() == 
+	b = b && ( 	r1->getPropertyValue( L"bool" ).getBOOL() ==
 				r2->getPropertyValue( L"bool" ).getBOOL() );
-				
-	b = b && ( 	r1->getPropertyValue( L"byte" ).getBYTE() == 
+
+	b = b && ( 	r1->getPropertyValue( L"byte" ).getBYTE() ==
 				r2->getPropertyValue( L"byte" ).getBYTE() );
-				
-	b = b && ( 	r1->getPropertyValue( L"char" ).getChar() == 
+
+	b = b && ( 	r1->getPropertyValue( L"char" ).getChar() ==
 				r2->getPropertyValue( L"char" ).getChar() );
 
-	b = b && ( 	r1->getPropertyValue( L"string" ).getString() == 
+	b = b && ( 	r1->getPropertyValue( L"string" ).getString() ==
 				r2->getPropertyValue( L"string" ).getString() );
 
 	UsrAny o1 = r1->getPropertyValue( L"object" );
 	UsrAny o2 = r2->getPropertyValue( L"object" );
-	
+
 	if( o1.getReflection() == XPersistObject_getReflection() ) {
 
 		if( o2.getReflection() == XPersistObject_getReflection() ) {
@@ -853,34 +853,34 @@ BOOL compareMyPropertySet( XPropertySetRef &r1 , XPropertySetRef &r2 )
 			XPersistObjectRef rPersist2 = *((XPersistObjectRef*) o2.get());
 			XPropertySetRef rProp1( rPersist1 , USR_QUERY );
 			XPropertySetRef rProp2( rPersist2 , USR_QUERY );
-						
-			if( rProp1.is() && rProp2.is() && ! ( rProp1 == rProp2 ) 
+
+			if( rProp1.is() && rProp2.is() && ! ( rProp1 == rProp2 )
 				&&( rProp1 != r1 )) {
 					compareMyPropertySet( rProp1 , rProp2 );
-			}		
+			}
 		}
 		else {
-			b = FALSE;	
+			b = FALSE;
 		}
 	}
 	else {
 		if( o2.getReflection() == XPersistObject_getReflection() ) {
-			b = FALSE;	
+			b = FALSE;
 		}
 	}
 
 	return b;
 }
 
-void OObjectStreamTest::testObject( 	const XObjectOutputStreamRef &rOut, 
+void OObjectStreamTest::testObject( 	const XObjectOutputStreamRef &rOut,
 										const XObjectInputStreamRef &rIn )
 {
 	ERROR_ASSERT( rOut.is() , "no objectOutputStream" );
 	ERROR_ASSERT( rIn.is() , "no objectInputStream" );
-	
+
 	XMultiServiceFactoryRef xProv = getProcessServiceManager();
 	ERROR_ASSERT( xProv.is() , "no global service manager" );
-	
+
 
 	// tests, if saving an object with an unknown service name allows
 	// reading the data behind the object !
@@ -914,40 +914,40 @@ void OObjectStreamTest::testObject( 	const XObjectOutputStreamRef &rOut,
 		XPersistObjectRef persistRef( x , USR_QUERY );
 
 		ERROR_ASSERT( persistRef.is() , "couldn't instantiate PersistTest object" );
-		
+
 		XPropertySetRef rProp( persistRef , USR_QUERY );
 		ERROR_ASSERT( rProp.is() , "test object is no property set " );
-	
+
 		UsrAny any;
 		any.setINT32( 0x83482 );
 		rProp->setPropertyValue( L"long" , any );
-		
+
 		any.setFloat( 42.23 );
 		rProp->setPropertyValue( L"float" , any );
 
 		any.setDouble( 	233.321412 );
 		rProp->setPropertyValue( L"double" , any );
-		
+
 		any.setBOOL( TRUE );
 		rProp->setPropertyValue( L"bool" , any );
 
 		any.setBYTE( 130 );
 		rProp->setPropertyValue( L"byte" , any );
-		
+
 		any.setChar( 'h' );
 		rProp->setPropertyValue( L"char" , any );
-		
+
 		any.setString( L"hi du !" );
 		rProp->setPropertyValue( L"string" , any );
-		
+
 		any.set( &persistRef, XPersistObject_getReflection() ); // try a self reference
 		rProp->setPropertyValue( L"object" , any );
-	
-		// do read and write 
-		rOut->writeObject( persistRef );	
+
+		// do read and write
+		rOut->writeObject( persistRef );
 		ERROR_ASSERT( 0 != rIn->available() , "no data arrived at input" );
 		XPersistObjectRef xReadPersistRef	= 	rIn->readObject( );
-		
+
 		XPropertySetRef rPropRead( xReadPersistRef , USR_QUERY );
 		ERROR_ASSERT( compareMyPropertySet( rProp , rPropRead ) , "objects has not been read properly !" );
 
@@ -959,68 +959,68 @@ void OObjectStreamTest::testObject( 	const XObjectOutputStreamRef &rOut,
 	{
 		XMarkableStreamRef markableOut( rOut , USR_QUERY );
 		ERROR_ASSERT( markableOut.is() , "markable stream cannot be queried" );
-		
+
 		// do the same thing multiple times to check if
 		// buffering and marks work correctly
 		for( int i = 0 ; i < 2000 ; i ++ ) {
 
 			XInterfaceRef x = xProv->createInstance(L"test.com.sun.star.io.PersistTest");
 			XPersistObjectRef persistRef( x , USR_QUERY );
-		
+
 			XPropertySetRef rProp( persistRef , USR_QUERY );
 			ERROR_ASSERT( rProp.is() , "test object is no property set " );
-		
+
 			UsrAny any;
 			any.setINT32( 0x83482 );
 			rProp->setPropertyValue( L"long" , any );
-			
+
 			any.setFloat( 42.23 );
 			rProp->setPropertyValue( L"float" , any );
-	
+
 			any.setDouble( 	233.321412 );
 			rProp->setPropertyValue( L"double" , any );
-			
+
 			any.setBOOL( TRUE );
 			rProp->setPropertyValue( L"bool" , any );
-	
+
 			any.setBYTE( 130 );
 			rProp->setPropertyValue( L"byte" , any );
-			
+
 			any.setChar( 'h' );
 			rProp->setPropertyValue( L"char" , any );
-			
+
 			any.setString( L"hi du !" );
 			rProp->setPropertyValue( L"string" , any );
-			
-			
+
+
 			x = xProv->createInstance(L"test.com.sun.star.io.PersistTest");
 			XPersistObjectRef persist2ndRef( x , USR_QUERY );
-			
-	
+
+
 			// Note : persist2ndRef contains coincident values, but also coincident values must be
-			// saved properly !		
+			// saved properly !
 			any.set( &persist2ndRef, XPersistObject_getReflection() ); // try a self reference
 			rProp->setPropertyValue( L"object" , any );
-			
+
 			// simply test, if markable operations and object operations do not interfere
 			INT32 nMark = markableOut->createMark();
 
-			// do read and write 
-			rOut->writeObject( persistRef );	
-			
+			// do read and write
+			rOut->writeObject( persistRef );
+
 			// further markable tests !
 			INT32 nOffset = markableOut->offsetToMark( nMark );
 			markableOut->jumpToMark( nMark );
 			markableOut->deleteMark( nMark );
 			markableOut->jumpToFurthest();
-			
+
 
 
 
 
 			ERROR_ASSERT( 0 != rIn->available() , "no data arrived at input" );
 			XPersistObjectRef xReadPersistRef	= 	rIn->readObject( );
-			
+
 			XPropertySetRef rProp1( persistRef , USR_QUERY );
 			XPropertySetRef rProp2( xReadPersistRef , USR_QUERY );
 			ERROR_ASSERT( compareMyPropertySet( rProp1, rProp2) , "objects has not been read properly !" );
@@ -1030,9 +1030,9 @@ void OObjectStreamTest::testObject( 	const XObjectOutputStreamRef &rOut,
 
 
 XInterfaceRef OObjectStreamTest_CreateInstance( const XMultiServiceFactoryRef & rSMgr ) THROWS((Exception))
-{	
+{
 	OObjectStreamTest *p = new OObjectStreamTest( rSMgr );
-	XInterfaceRef xService = *p;	
+	XInterfaceRef xService = *p;
 	return xService;
 }
 
@@ -1047,9 +1047,9 @@ UString     OObjectStreamTest_getServiceName( int i) THROWS( () )
 {
 	if( 1 == i ) {
 		return L"test.com.sun.star.io.ObjectInputStream";
-	} 
+	}
 	else {
-		return L"test.com.sun.star.io.ObjectOutputStream";	
+		return L"test.com.sun.star.io.ObjectOutputStream";
 	}
 }
 
@@ -1059,6 +1059,6 @@ UString 	OObjectStreamTest_getImplementationName( int i) THROWS( () )
 		return L"test.com.sun.star.comp.extensions.stm.ObjectInputStream";
 	}
 	else {
-		return L"test.com.sun.star.comp.extensions.stm.ObjectOutputStream";	
+		return L"test.com.sun.star.comp.extensions.stm.ObjectOutputStream";
 	}
 }

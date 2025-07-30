@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -724,7 +724,7 @@ void GetEnhancedPath( std::vector< com::sun::star::beans::PropertyValue >& rDest
 			case '-' :
 			{
 				com::sun::star::drawing::EnhancedCustomShapeParameterPair aPair;
-				if ( GetNextParameter( aPair.First, nIndex, rValue ) && 
+				if ( GetNextParameter( aPair.First, nIndex, rValue ) &&
 						GetNextParameter( aPair.Second, nIndex, rValue ) )
 				{
 					vCoordinates.push_back( aPair );
@@ -855,22 +855,22 @@ void XMLEnhancedCustomShapeContext::StartElement( const uno::Reference< xml::sax
 				case EAS_viewBox :
 				{
 					SdXMLImExViewBox aViewBox( rValue, GetImport().GetMM100UnitConverter() );
-                    awt::Rectangle aRect( 
-                        basegfx::fround(aViewBox.GetX()), 
-                        basegfx::fround(aViewBox.GetY()), 
-                        basegfx::fround(aViewBox.GetWidth()), 
+                    awt::Rectangle aRect(
+                        basegfx::fround(aViewBox.GetX()),
+                        basegfx::fround(aViewBox.GetY()),
+                        basegfx::fround(aViewBox.GetWidth()),
                         basegfx::fround(aViewBox.GetHeight()));
 
                     if(0 == aRect.Width && 0 == aRect.Height)
                     {
-                        // #124452# If in svg:viewBox no width and height is given the objects should normally 
-                        // not be visible at all, but in this case it is a bug in LO to write empty svg:viewBox 
+                        // #124452# If in svg:viewBox no width and height is given the objects should normally
+                        // not be visible at all, but in this case it is a bug in LO to write empty svg:viewBox
                         // entries for CustomShapes. To allow for a better ODF user experience, just correct this
                         // here by getting the real object scale from the already set transformation from the xShape.
                         // Hopefully LO will fix that bug (but this will still leave the files with the error), but
                         // even when not this will do no harm as long no one uses this state explicitly for some
                         // purpose (e.g. to really have CustomShapes without content, but unlikely).
-                        // When they do fix this they will need this fix anyways to read their own misformed ODF files 
+                        // When they do fix this they will need this fix anyways to read their own misformed ODF files
                         // again, so I guess it will be taken, too...
                         uno::Reference< beans::XPropertySet > xProps(mrxShape, uno::UNO_QUERY_THROW);
                         uno::Any aObjectTransform = xProps->getPropertyValue(rtl::OUString(RTL_CONSTASCII_USTRINGPARAM("Transformation")));

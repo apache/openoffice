@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -53,13 +53,13 @@ namespace drawinglayer
             {
 				// get pixel size
 				Size aBitmapSize(getMarker().GetSizePixel());
-				
+
 				if(aBitmapSize.Width() && aBitmapSize.Height())
 				{
 					// get logic half pixel size
-					basegfx::B2DVector aLogicHalfSize(rViewInformation.getInverseObjectToViewTransformation() * 
+					basegfx::B2DVector aLogicHalfSize(rViewInformation.getInverseObjectToViewTransformation() *
 						basegfx::B2DVector(aBitmapSize.getWidth() - 1.0, aBitmapSize.getHeight() - 1.0));
-					
+
 					// use half size for expand
 					aLogicHalfSize *= 0.5;
 
@@ -127,9 +127,9 @@ namespace drawinglayer
 					if(aBitmapSize.Width() && aBitmapSize.Height())
 					{
 						// get logic half size
-    					basegfx::B2DVector aLogicHalfSize(rViewInformation.getInverseObjectToViewTransformation() * 
+    					basegfx::B2DVector aLogicHalfSize(rViewInformation.getInverseObjectToViewTransformation() *
 							basegfx::B2DVector(aBitmapSize.getWidth(), aBitmapSize.getHeight()));
-						
+
 						// use half size for expand
 						aLogicHalfSize *= 0.5;
 

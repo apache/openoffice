@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -152,7 +152,7 @@ sal_uInt32 WW8PropertyImpl::getByteLength() const
                 nParamSize = getU8(2) + 1;
                 break;
         }
-        
+
         break;
     }
 
@@ -266,16 +266,16 @@ WW8PropertySetIteratorImpl::~WW8PropertySetIteratorImpl()
 {
 }
 
-WW8Property::Pointer_t 
+WW8Property::Pointer_t
 WW8PropertySetImpl::getAttribute(sal_uInt32 nOffset) const
 {
     WW8PropertyImpl aTmpAttr(*this, nOffset, 3);
-    
+
     sal_uInt32 nLength = aTmpAttr.getByteLength();
-    
+
     if (nOffset + nLength > getCount())
         nLength = getCount() - nOffset;
-    
+
     return WW8Property::Pointer_t
         (new WW8PropertyImpl(*this, nOffset, nLength));
 }
@@ -284,9 +284,9 @@ void WW8PropertySetImpl::dump(OutputWithDepth<string> & o) const
 {
     WW8StructBase::dump(o);
 
-    WW8PropertySetIterator::Pointer_t pIt = 
+    WW8PropertySetIterator::Pointer_t pIt =
         const_cast<WW8PropertySetImpl *>(this)->begin();
-    WW8PropertySetIterator::Pointer_t pItEnd = 
+    WW8PropertySetIterator::Pointer_t pItEnd =
         const_cast<WW8PropertySetImpl *>(this)->end();
 
     while((*pIt) != (*pItEnd))
@@ -337,18 +337,18 @@ void WW8PropertySetImpl::resolveLocal(Sprm & sprm, Properties & rHandler)
     case 0x6646:
         {
             WW8Stream::Pointer_t pStream = getDocument()->getDataStream();
-            
+
             if (pStream.get() != NULL)
             {
                 Value::Pointer_t pValue = sprm.getValue();
                 sal_uInt32 nOffset = pValue->getInt();
                 WW8StructBase aStruct(*pStream, nOffset, 2);
                 sal_uInt16 nCount = aStruct.getU16(0);
-                
+
                 {
                     WW8PropertySetImpl * pPropSet =
                     new WW8PropertySetImpl(*pStream, nOffset + 2, nCount);
-                    
+
                     pPropSet->resolve(rHandler);
                 }
             }
@@ -362,24 +362,24 @@ void WW8PropertySetImpl::resolveLocal(Sprm & sprm, Properties & rHandler)
 void WW8PropertySetImpl::resolve(Properties & rHandler)
 {
     if (getCount() >= (isPap() ? 5U : 3U))
-    { 
+    {
         WW8PropertySetIterator::Pointer_t pIt = begin();
         WW8PropertySetIterator::Pointer_t pItEnd = end();
-        
+
         if (isPap())
         {
             WW8Value::Pointer_t pValue = createValue(getU16(0));
             rHandler.attribute(NS_rtf::LN_ISTD, *pValue);
         }
-        
+
         while((*pIt) != (*pItEnd))
         {
             WW8Sprm aSprm(pIt->get());
-            
+
             rHandler.sprm(aSprm);
 
             resolveLocal(aSprm, rHandler);
-            
+
             ++(*pIt);
         }
     }
@@ -395,7 +395,7 @@ WW8PropertySetIterator & WW8PropertySetIteratorImpl::operator++ ()
     if (mnOffset > mpAttrSet->getCount() ||
         mpAttrSet->getCount() - mnOffset < 3)
         mnOffset = mpAttrSet->getCount();
-        
+
     return *this;
 }
 
@@ -407,7 +407,7 @@ WW8Property::Pointer_t WW8PropertySetIteratorImpl::get() const
 bool WW8PropertySetIteratorImpl::equal
 (const WW8PropertySetIterator & rIt) const
 {
-    const WW8PropertySetIteratorImpl & rMyIt = 
+    const WW8PropertySetIteratorImpl & rMyIt =
         dynamic_cast<const WW8PropertySetIteratorImpl &>(rIt);
 
     return mpAttrSet == rMyIt.mpAttrSet && mnOffset == rMyIt.mnOffset;
@@ -421,7 +421,7 @@ string WW8PropertySetIteratorImpl::toString() const
 
     snprintf(sBuffer, sizeof(sBuffer), "(%" SAL_PRIuUINT32 ")", mnOffset);
     sResult += sBuffer;
-    
+
     return sResult;
 }
 

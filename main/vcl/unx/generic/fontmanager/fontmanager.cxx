@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -593,13 +593,13 @@ bool PrintFontManager::TrueTypeFontFile::queryMetricPage( int nPage, MultiAtomPr
                     if( nGlyph != 0 )
                         aGlyphMap[ nGlyph ] = (sal_Unicode)i;
                 }
-                
+
                 // Loop through each of the 'kern' subtables
                 KernPair aPair;
                 for( i = 0; (unsigned int)i < pImplTTFont->nkern; i++ )
                 {
                     const sal_uInt8* pTable = pImplTTFont->kerntables[i];
-                    
+
                     /*sal_uInt32 nLength      =*/ getUInt32BE( pTable );
                     sal_uInt16 nCoverage    = getUInt16BE( pTable );
                     /*sal_uInt16 nTupleIndex  =*/ getUInt16BE( pTable );
@@ -611,7 +611,7 @@ bool PrintFontManager::TrueTypeFontFile::queryMetricPage( int nPage, MultiAtomPr
 
                     // Kerning sub-table format, 0 through 3
                     sal_uInt8 nSubTableFormat  = nCoverage & 0x00FF;
- 
+
                     aPair.kern_x    = 0;
                     aPair.kern_y    = 0;
                     switch( nSubTableFormat )
@@ -652,7 +652,7 @@ bool PrintFontManager::TrueTypeFontFile::queryMetricPage( int nPage, MultiAtomPr
                                         case 0:
                                             aPair.kern_y = (int)nKern * 1000 / pImplTTFont->unitsPerEm;
                                             m_pMetrics->m_aYKernPairs.push_back( aPair );
-                                            break;                                          
+                                            break;
                                     }
 */
                                 }
@@ -688,7 +688,7 @@ bool PrintFontManager::TrueTypeFontFile::queryMetricPage( int nPage, MultiAtomPr
                                         case 0:
                                             aPair.kern_y = (int)nKern * 1000 / pImplTTFont->unitsPerEm;
                                             m_pMetrics->m_aYKernPairs.push_back( aPair );
-                                            break;                                          
+                                            break;
                                     }
                                 }
                             }
@@ -786,7 +786,7 @@ bool PrintFontManager::PrintFont::readAfmMetrics( const OString& rFileName, Mult
     }
     else
         aFamily = pProvider->getString( ATOM_FAMILYNAME, m_nFamilyName );
-    
+
     // style name: if fullname begins with family name
     // interpret the rest of fullname as style
     if( ! m_aStyleName.getLength() && pInfo->gfi->fullName && *pInfo->gfi->fullName )
@@ -830,7 +830,7 @@ bool PrintFontManager::PrintFont::readAfmMetrics( const OString& rFileName, Mult
 
         if( m_aEncoding == RTL_TEXTENCODING_DONTKNOW )
             m_aEncoding = nAdobeEncoding == 1 ?
-                RTL_TEXTENCODING_ADOBE_STANDARD : RTL_TEXTENCODING_SYMBOL;        
+                RTL_TEXTENCODING_ADOBE_STANDARD : RTL_TEXTENCODING_SYMBOL;
     }
     else if( m_aEncoding == RTL_TEXTENCODING_DONTKNOW )
         m_aEncoding = RTL_TEXTENCODING_ADOBE_STANDARD;
@@ -925,7 +925,7 @@ bool PrintFontManager::PrintFont::readAfmMetrics( const OString& rFileName, Mult
             bFillEncodingvector = false; // will be filled anyway, don't do the work twice
         }
     }
-    
+
     // ascend
     m_nAscend = pInfo->gfi->fontBBox.ury;
 
@@ -962,12 +962,12 @@ bool PrintFontManager::PrintFont::readAfmMetrics( const OString& rFileName, Mult
     if( bFillEncodingvector || !bOnlyGlobalAttributes )
     {
         // fill in character metrics
-    
+
         // first transform the character codes to unicode
         // note: this only works with single byte encodings
         sal_Unicode* pUnicodes = (sal_Unicode*)alloca( pInfo->numOfChars * sizeof(sal_Unicode));
         CharMetricInfo* pChar = pInfo->cmi;
-    
+
         for( i = 0; i < pInfo->numOfChars; i++, pChar++ )
         {
             if( nAdobeEncoding == 4 )
@@ -998,13 +998,13 @@ bool PrintFontManager::PrintFont::readAfmMetrics( const OString& rFileName, Mult
                         m_aEncodingVector[ pUnicodes[i] ] = pChar->code;
                     continue;
                 }
-    
+
                 if( m_aEncoding == RTL_TEXTENCODING_UNICODE )
                 {
                     pUnicodes[i] = (sal_Unicode)pChar->code;
                     continue;
                 }
-    
+
                 ByteString aTranslate;
                 if( pChar->code & 0xff000000 )
                     aTranslate += (char)(pChar->code >> 24 );
@@ -1019,7 +1019,7 @@ bool PrintFontManager::PrintFont::readAfmMetrics( const OString& rFileName, Mult
             else
                 pUnicodes[i] = 0;
         }
-    
+
         // now fill in the character metrics
         // parseAFM.cxx effectively only supports direction 0 (horizontal)
         pChar = pInfo->cmi;
@@ -1028,7 +1028,7 @@ bool PrintFontManager::PrintFont::readAfmMetrics( const OString& rFileName, Mult
         {
             if( pChar->code == -1 && ! pChar->name )
                 continue;
-    
+
             if( bFillEncodingvector && pChar->name )
             {
                 std::list< sal_Unicode > aCodes = rManager.getUnicodeFromAdobeName( pChar->name );
@@ -1042,13 +1042,13 @@ bool PrintFontManager::PrintFont::readAfmMetrics( const OString& rFileName, Mult
                     }
                 }
             }
-            
+
             aMetric.width   = pChar->wx ? pChar->wx : pChar->charBBox.urx;
             aMetric.height  = pChar->wy ? pChar->wy : pChar->charBBox.ury - pChar->charBBox.lly;
             if( aMetric.width == 0 && aMetric.height == 0 )
                 // guess something for e.g. space
                 aMetric.width = m_aGlobalMetricX.width/4;
-    
+
             if( ( nAdobeEncoding == 0 ) ||
                 ( ( nAdobeEncoding == 3 ) && ( m_aEncoding != RTL_TEXTENCODING_SYMBOL ) ) )
             {
@@ -1108,10 +1108,10 @@ bool PrintFontManager::PrintFont::readAfmMetrics( const OString& rFileName, Mult
                 }
             }
         }
-    
+
         m_pMetrics->m_aXKernPairs.clear();
         m_pMetrics->m_aYKernPairs.clear();
-    
+
         // now fill in the kern pairs
         // parseAFM.cxx effectively only supports direction 0 (horizontal)
         PairKernData* pKern = pInfo->pkd;
@@ -1121,7 +1121,7 @@ bool PrintFontManager::PrintFont::readAfmMetrics( const OString& rFileName, Mult
             // #i37703# broken kern table
             if( ! pKern->name1 || ! pKern->name2 )
                 continue;
-            
+
             aPair.first = 0;
             aPair.second = 0;
             // currently we have to find the adobe character names
@@ -1296,13 +1296,13 @@ bool PrintFontManager::analyzeFontFile( int nDirID, const OString& rFontFile, co
         // check for corresponding afm metric
         // first look for an adjacent file
         static const char* pSuffix[] = { ".afm", ".AFM" };
-        
+
         for( unsigned int i = 0; i < sizeof(pSuffix)/sizeof(pSuffix[0]); i++ )
         {
             ByteString aName( rFontFile );
             aName.Erase( aName.Len()-4 );
             aName.Append( pSuffix[i] );
-            
+
             ByteString aFilePath( aDir );
             aFilePath.Append( '/' );
             aFilePath.Append( aName );
@@ -1314,7 +1314,7 @@ bool PrintFontManager::analyzeFontFile( int nDirID, const OString& rFontFile, co
                 aFilePath = aDir;
                 aFilePath.Append( "/afm/" );
                 aFilePath.Append( aName );
-            
+
                 if( ! access( aFilePath.GetBuffer(), R_OK ) )
                 {
                     aAfmFile = "afm/";
@@ -1328,10 +1328,10 @@ bool PrintFontManager::analyzeFontFile( int nDirID, const OString& rFontFile, co
             {
                 Type1FontFile* pFont = new Type1FontFile();
                 pFont->m_nDirectory     = nDirID;
-                
+
                 pFont->m_aFontFile      = rFontFile;
                 pFont->m_aMetricFile    = aAfmFile;
-                
+
                 if( ! pFont->readAfmMetrics( getAfmFile( pFont ), m_pAtoms, false, true ) )
                 {
                     delete pFont;
@@ -1522,13 +1522,13 @@ bool PrintFontManager::parseXLFD( const OString& rXLFD, XLFDEntry& rEntry )
     rEntry.eItalic = parseItalic( aSlant );
     // evaluate width
     rEntry.eWidth = parseWidth( aWidth );
-    
+
     // evaluate pitch
     if( aPitch.toChar() == 'c' || aPitch.toChar() == 'm' )
         rEntry.ePitch = pitch::Fixed;
     else
         rEntry.ePitch = pitch::Variable;
-    
+
     OString aToken = aEnc.toAsciiLowerCase();
     // get encoding
     if( aAddStyle.indexOf( "symbol" ) != -1 )
@@ -1546,7 +1546,7 @@ bool PrintFontManager::parseXLFD( const OString& rXLFD, XLFDEntry& rEntry )
             rEntry.aEncoding = rtl_getTextEncodingFromUnixCharset( aCharset.getStr() );
         }
     }
-    
+
     // set correct mask flags
     rEntry.nMask = 0;
     if( rEntry.aFoundry != "*" )		rEntry.nMask |= XLFDEntry::MaskFoundry;
@@ -1589,12 +1589,12 @@ void PrintFontManager::getFontAttributesFromXLFD( PrintFont* pFont, const std::l
     std::list< XLFDEntry > aXLFDs;
 
     parseXLFD_appendAliases( rXLFDs, aXLFDs );
-    
+
     for( std::list< XLFDEntry >::const_iterator it = aXLFDs.begin();
          it != aXLFDs.end(); ++it )
     {
         // set family name or alias
-        int nFam = 
+        int nFam =
             m_pAtoms->getAtom( ATOM_FAMILYNAME,
                                OStringToOUString( it->aFamily, it->aAddStyle.indexOf( "utf8" ) != -1 ? RTL_TEXTENCODING_UTF8 : RTL_TEXTENCODING_ISO_8859_1 ),
                                sal_True );
@@ -1624,7 +1624,7 @@ void PrintFontManager::getFontAttributesFromXLFD( PrintFont* pFont, const std::l
                     ;
                 if( al_it == pFont->m_aAliases.end() )
                     pFont->m_aAliases.push_back( nFam );
-                
+
             }
             // for the rest of the attributes there can only be one value;
             // we'll trust the first one
@@ -2033,16 +2033,16 @@ void PrintFontManager::initFontsAlias()
             // get the alias and the pattern it gets translated to
             ByteString aAlias	= GetCommandLineToken( 0, aLine );
             ByteString aMap		= GetCommandLineToken( 1, aLine );
-            
+
             // remove eventual quotes
             aAlias.EraseLeadingChars( '"' );
             aAlias.EraseTrailingChars( '"' );
             aMap.EraseLeadingChars( '"' );
             aMap.EraseTrailingChars( '"' );
-            
+
             XLFDEntry aAliasEntry, aMapEntry;
             parseXLFD( aAlias, aAliasEntry );
-            parseXLFD( aMap, aMapEntry );           
+            parseXLFD( aMap, aMapEntry );
 
             if( aAliasEntry.nMask && aMapEntry.nMask )
                 m_aXLFD_Aliases[ aMapEntry ].push_back( aAliasEntry );
@@ -2066,7 +2066,7 @@ static bool AreFCSubstitutionsEnabled()
     {
         //
         if( (*pEnvStr >= '0') && (*pEnvStr <= '9') )
-            nDisableBits = (*pEnvStr - '0'); 
+            nDisableBits = (*pEnvStr - '0');
         else
             nDisableBits = ~0U; // no specific bits set: disable all
     }
@@ -2080,7 +2080,7 @@ void PrintFontManager::initialize()
     CALLGRIND_TOGGLE_COLLECT();
     CALLGRIND_ZERO_STATS();
     #endif
-    
+
     long aDirEntBuffer[ (sizeof(struct dirent)+_PC_NAME_MAX)+1 ];
 
     if( ! m_pFontCache )
@@ -2116,7 +2116,7 @@ void PrintFontManager::initialize()
     clock_t aStep3;
     int nBuiltinFonts = 0;
     int nCached = 0;
-    
+
     struct tms tms;
 
     aStart = times( &tms );
@@ -2142,7 +2142,7 @@ void PrintFontManager::initialize()
             normPath( aToken );
             // if registering an app-specific fontdir with fontconfig fails
             // and fontconfig-based substitutions are enabled
-            // then trying to use these app-specific fonts doesn't make sense 
+            // then trying to use these app-specific fonts doesn't make sense
             if( m_bFontconfigSuccess && !addFontconfigDir( aToken ) )
                 if( bAreFCSubstitutionsEnabled )
                     continue;
@@ -2226,7 +2226,7 @@ void PrintFontManager::initialize()
                  priv_dir != m_aPrivateFontDirectories.end() && *priv_dir != nDirID;
                  ++priv_dir )
                  ;
-                 
+
             if( priv_dir == m_aPrivateFontDirectories.end() )
             {
                 ByteString aGccDummy( aPath );
@@ -2246,7 +2246,7 @@ void PrintFontManager::initialize()
                     }
                 }
             }
-        
+
             int nDirFonts = 0;
             while( ! readdir_r( pDIR, (struct dirent*)aDirEntBuffer, &pEntry ) && pEntry )
             {
@@ -2315,7 +2315,7 @@ void PrintFontManager::initialize()
 
         // ask the font cache whether it handles this directory
         std::list< PrintFont* > aCacheFonts;
-        
+
         if( m_pFontCache->listDirectory( aDir, aCacheFonts ) )
         {
 #if OSL_DEBUG_LEVEL > 1
@@ -2420,7 +2420,7 @@ void PrintFontManager::initialize()
 #endif
 
     m_pFontCache->flush();
-    
+
     #ifdef CALLGRIND_COMPILE
     CALLGRIND_DUMP_STATS();
     CALLGRIND_TOGGLE_COLLECT();
@@ -2463,7 +2463,7 @@ namespace {
         weight::type        eWeight;
         pitch::type         ePitch;
         rtl_TextEncoding    aEncoding;
-        
+
         BuiltinFontIdentifier( const OUString& rFam,
                                italic::type eIt,
                                weight::type eWg,
@@ -2475,7 +2475,7 @@ namespace {
             ePitch( ePt ),
             aEncoding( enc )
         {}
-        
+
         bool operator==( const BuiltinFontIdentifier& rRight ) const
         {
             return equalItalic( eItalic, rRight.eItalic ) &&
@@ -2485,7 +2485,7 @@ namespace {
                    aFamily.equalsIgnoreAsciiCase( rRight.aFamily );
         }
     };
-    
+
     struct BuiltinFontIdentifierHash
     {
         size_t operator()( const BuiltinFontIdentifier& rFont ) const
@@ -2499,7 +2499,7 @@ void PrintFontManager::getFontList( ::std::list< fontID >& rFontIDs, const PPDPa
 {
     rFontIDs.clear();
     std::hash_map< fontID, PrintFont* >::const_iterator it;
-    
+
     /*
     * Note: there are two easy steps making this faster:
     * first: insert the printer builtins first, then the not builtins,
@@ -2515,7 +2515,7 @@ void PrintFontManager::getFontList( ::std::list< fontID >& rFontIDs, const PPDPa
     * Until getFontList for a printer becomes a performance issue (which is
     * currently not the case), best stay with the current algorithm.
     */
-    
+
     // fill sets of printer supported fonts
     if( pParser )
     {
@@ -2537,7 +2537,7 @@ void PrintFontManager::getFontList( ::std::list< fontID >& rFontIDs, const PPDPa
                     aOverridePSNames[ font_it->second->m_nPSName ] = *over;
             }
         }
-        
+
         int nFonts = pParser->getFonts();
         for( int i = 0; i < nFonts; i++ )
             aBuiltinPSNames.insert( m_pAtoms->getAtom( ATOM_PSNAME, pParser->getFont( i ) ) );
@@ -3174,7 +3174,7 @@ bool PrintFontManager::getMetrics( fontID nFontID, sal_Unicode minCharacter, sal
                 pArray[ code - minCharacter ] = it->second;
         }
     } while( code++ != maxCharacter );
-    
+
     return true;
 }
 
@@ -3281,9 +3281,9 @@ int PrintFontManager::importFonts( const ::std::list< OString >& rFiles, bool bL
                 OUString aFromPath, aToPath;
                 if( bLinkOnly )
                 {
-                    ByteString aLinkFromPath( String(aFromAfm.PathToFileName()), 
+                    ByteString aLinkFromPath( String(aFromAfm.PathToFileName()),
 						aEncoding );
-                    ByteString aLinkToPath( String(aToAfm.PathToFileName()), 
+                    ByteString aLinkToPath( String(aToAfm.PathToFileName()),
 						aEncoding );
                     nError = (FileBase::RC)symlink( aLinkFromPath.GetBuffer(), aLinkToPath.GetBuffer() );
                 }
@@ -3299,10 +3299,10 @@ int PrintFontManager::importFonts( const ::std::list< OString >& rFiles, bool bL
             }
             if( bLinkOnly )
             {
-                ByteString aFromPath( String(aFrom.PathToFileName()), 
+                ByteString aFromPath( String(aFrom.PathToFileName()),
 					aEncoding );
                 ByteString aToPath( String(aTo.PathToFileName()), aEncoding );
-                nError = (FileBase::RC)symlink( aFromPath.GetBuffer(), 
+                nError = (FileBase::RC)symlink( aFromPath.GetBuffer(),
 					aToPath.GetBuffer() );
             }
             else
@@ -3428,7 +3428,7 @@ bool PrintFontManager::changeFontProperties( fontID nFontID, const ::rtl::OUStri
     getFontAttributesFromXLFD( pFont, aDummyList );
     pFont->m_bUserOverride = true;
     m_pFontCache->updateFontCacheEntry( pFont, true );
-    
+
     return true;
 }
 
@@ -3838,7 +3838,7 @@ void PrintFontManager::getGlyphWidths( fontID nFont,
             rUnicodeEnc.clear();
             rWidths.clear();
             rWidths.reserve( pFont->m_pMetrics->m_aMetrics.size() );
-            for( std::hash_map< int, CharacterMetric >::const_iterator it = 
+            for( std::hash_map< int, CharacterMetric >::const_iterator it =
                  pFont->m_pMetrics->m_aMetrics.begin();
                  it != pFont->m_pMetrics->m_aMetrics.end(); ++it )
             {
@@ -3951,7 +3951,7 @@ bool PrintFontManager::readOverrideMetrics()
                 UNO_QUERY );
     if( !xMat.is() )
         return false;
-    
+
     Any aAny( xMat->getMaterial() );
     Sequence< Any > aOverrideFonts;
     if( ! (aAny >>= aOverrideFonts ) )
@@ -4087,7 +4087,7 @@ bool PrintFontManager::readOverrideMetrics()
             ! pFont->m_pMetrics->m_aMetrics.empty() )
         {
             m_aOverrideFonts.push_back( m_nNextFontID );
-            m_aFonts[ m_nNextFontID++ ] = pFont;            
+            m_aFonts[ m_nNextFontID++ ] = pFont;
         }
         else
         {
@@ -4095,6 +4095,6 @@ bool PrintFontManager::readOverrideMetrics()
             delete pFont;
         }
     }
-    
+
     return true;
 }

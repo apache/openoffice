@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -45,7 +45,7 @@
 
 using namespace ::com::sun::star;
 
-			
+
 sal_Bool ConvertBufferToFormat( void* pBuf,
 								sal_uInt32 nBufSize,
 								const ::rtl::OUString& aMimeType,
@@ -69,7 +69,7 @@ sal_Bool ConvertBufferToFormat( void* pBuf,
 				{
 					SvMemoryStream aNewStream( 65535, 65535 );
 //					uno::Reference < io::XOutputStream > xOut = new utl::OOutputStreamHelper( aNewStream.GetLockBytes() );
-					uno::Reference < io::XStream > xOut = new utl::OStreamWrapper( aNewStream );				
+					uno::Reference < io::XStream > xOut = new utl::OStreamWrapper( aNewStream );
 					uno::Sequence< beans::PropertyValue > aOutMediaProperties( 2 );
 					aOutMediaProperties[0].Name = ::rtl::OUString::createFromAscii( "OutputStream" );
 					aOutMediaProperties[0].Value <<= xOut;

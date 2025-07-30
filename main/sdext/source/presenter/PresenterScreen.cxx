@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -102,11 +102,11 @@ namespace {
         virtual void SAL_CALL disposing (void);
 
         // document::XEventListener
-        
+
         virtual void SAL_CALL notifyEvent( const css::document::EventObject& Event ) throw (css::uno::RuntimeException);
 
         // XEventListener
-    
+
         virtual void SAL_CALL disposing ( const css::lang::EventObject& rEvent) throw (css::uno::RuntimeException);
 
     private:
@@ -266,7 +266,7 @@ void SAL_CALL PresenterScreenListener::disposing (void)
         xDocBroadcaster->removeEventListener(
             Reference<document::XEventListener>(
                 static_cast<document::XEventListener*>(this), UNO_QUERY));
-    
+
     if (mpPresenterScreen.is())
     {
         mpPresenterScreen->RequestShutdownPresenterScreen();
@@ -278,7 +278,7 @@ void SAL_CALL PresenterScreenListener::disposing (void)
 
 
 // document::XEventListener
-        
+
 void SAL_CALL PresenterScreenListener::notifyEvent( const css::document::EventObject& Event ) throw (css::uno::RuntimeException)
 {
     ThrowIfDisposed();
@@ -302,12 +302,12 @@ void SAL_CALL PresenterScreenListener::notifyEvent( const css::document::EventOb
 
 
 // XEventListener
-    
+
 void SAL_CALL PresenterScreenListener::disposing (const css::lang::EventObject& rEvent)
     throw (css::uno::RuntimeException)
 {
     (void)rEvent;
-    
+
     if (mpPresenterScreen.is())
     {
         mpPresenterScreen->RequestShutdownPresenterScreen();
@@ -536,7 +536,7 @@ sal_Int32 PresenterScreen::GetScreenNumber (
             UNO_QUERY);
         if  ( ! xDisplayProperties.is())
             return -1;
-        
+
         if (nDisplayNumber > 0)
         {
             nScreenNumber = nDisplayNumber - 1;
@@ -549,7 +549,7 @@ sal_Int32 PresenterScreen::GetScreenNumber (
             if (nDisplayNumber <= 0 && xDisplayProperties.is())
                 xDisplayProperties->getPropertyValue(A2S("DefaultDisplay")) >>= nScreenNumber;
         }
-        
+
         // We still have to determine the number of screens to decide
         // whether the presenter screen may be shown at all.
         Reference<container::XIndexAccess> xIndexAccess (xDisplayProperties, UNO_QUERY);
@@ -598,7 +598,7 @@ Reference<drawing::framework::XResourceId> PresenterScreen::GetMainPaneId (
     const sal_Int32 nScreenNumber(GetScreenNumber(rxPresentation));
     if (nScreenNumber < 0)
         return NULL;
-    
+
     // Setup the resource id of the full screen background pane so that
     // it is displayed on another screen than the presentation.
     sal_Int32 nPresenterScreenNumber (1);
@@ -611,7 +611,7 @@ Reference<drawing::framework::XResourceId> PresenterScreen::GetMainPaneId (
         case 1:
             nPresenterScreenNumber = 0;
             break;
-            
+
         default:
             // When the full screen presentation is displayed on a screen
             // other than 0 or 1 then place the presenter on the first
@@ -619,7 +619,7 @@ Reference<drawing::framework::XResourceId> PresenterScreen::GetMainPaneId (
             nPresenterScreenNumber = 0;
             break;
     }
-    
+
     return ResourceId::create(
         Reference<XComponentContext>(mxContextWeak),
         PresenterHelper::msFullScreenPaneURL
@@ -665,7 +665,7 @@ void PresenterScreen::ShutdownPresenterScreen (void)
     if (xViewFactoryComponent.is())
         xViewFactoryComponent->dispose();
     mxViewFactory = NULL;
-    
+
     Reference<lang::XComponent> xPaneFactoryComponent (mxPaneFactory, UNO_QUERY);
     if (xPaneFactoryComponent.is())
         xPaneFactoryComponent->dispose();
@@ -739,7 +739,7 @@ void PresenterScreen::SetupConfiguration (
     }
     catch (RuntimeException&)
     {
-    }    
+    }
 }
 
 
@@ -796,7 +796,7 @@ void PresenterScreen::ProcessLayout (
     }
     catch (RuntimeException&)
     {
-    }    
+    }
 }
 
 
@@ -825,7 +825,7 @@ void PresenterScreen::ProcessViewDescriptions (
     catch (RuntimeException&)
     {
         OSL_ASSERT(false);
-    }    
+    }
 }
 
 

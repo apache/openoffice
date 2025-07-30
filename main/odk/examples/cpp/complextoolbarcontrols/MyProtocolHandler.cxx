@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -71,11 +71,11 @@ void BaseDispatch::ShowMessageBox( const Reference< XFrame >& rFrame, const ::rt
 
 void BaseDispatch::SendCommand( const com::sun::star::util::URL& aURL, const ::rtl::OUString& rCommand, const Sequence< NamedValue >& rArgs, sal_Bool bEnabled )
 {
-    Reference < XDispatch > xDispatch = 
+    Reference < XDispatch > xDispatch =
             aListenerHelper.GetDispatch( mxFrame, aURL.Path );
-    
+
     FeatureStateEvent aEvent;
-    
+
     aEvent.FeatureURL = aURL;
     aEvent.Source     = xDispatch;
     aEvent.IsEnabled  = bEnabled;
@@ -84,15 +84,15 @@ void BaseDispatch::SendCommand( const com::sun::star::util::URL& aURL, const ::r
     ControlCommand aCtrlCmd;
     aCtrlCmd.Command   = rCommand;
     aCtrlCmd.Arguments = rArgs;
-    
+
     aEvent.State <<= aCtrlCmd;
-    aListenerHelper.Notify( mxFrame, aEvent.FeatureURL.Path, aEvent ); 
+    aListenerHelper.Notify( mxFrame, aEvent.FeatureURL.Path, aEvent );
 }
 
 void BaseDispatch::SendCommandTo( const Reference< XStatusListener >& xControl, const URL& aURL, const ::rtl::OUString& rCommand, const Sequence< NamedValue >& rArgs, sal_Bool bEnabled )
 {
     FeatureStateEvent aEvent;
-    
+
     aEvent.FeatureURL = aURL;
     aEvent.Source     = (::com::sun::star::frame::XDispatch*) this;
     aEvent.IsEnabled  = bEnabled;
@@ -101,7 +101,7 @@ void BaseDispatch::SendCommandTo( const Reference< XStatusListener >& xControl, 
     ControlCommand aCtrlCmd;
     aCtrlCmd.Command   = rCommand;
     aCtrlCmd.Arguments = rArgs;
-    
+
     aEvent.State <<= aCtrlCmd;
     xControl->statusChanged( aEvent );
 }
@@ -126,7 +126,7 @@ Reference< XDispatch > SAL_CALL MyProtocolHandler::queryDispatch(	const URL& aUR
 		return 0;
 
 	Reference < XController > xCtrl = mxFrame->getController();
-	if ( xCtrl.is() && !aURL.Protocol.compareToAscii( 
+	if ( xCtrl.is() && !aURL.Protocol.compareToAscii(
         RTL_CONSTASCII_STRINGPARAM( "vnd.demo.complextoolbarcontrols.demoaddon:" ) ) )
 	{
 		Reference < XTextViewCursorSupplier > xCursor( xCtrl, UNO_QUERY );
@@ -299,9 +299,9 @@ void SAL_CALL BaseDispatch::dispatch( const URL& aURL, const Sequence < Property
                     break;
                 }
             }
-			
+
             // just enable this command
-		    
+
             // set enable flag according to selection
             if ( aText.equalsAsciiL( RTL_CONSTASCII_STRINGPARAM( "Button Disabled" ) ))
                 mbButtonEnabled = sal_False;
@@ -324,7 +324,7 @@ void SAL_CALL BaseDispatch::dispatch( const URL& aURL, const Sequence < Property
 
             // Notify listener about new state
             Reference < XDispatch > xDispatch = aListenerHelper.GetDispatch( mxFrame, aURL.Path );
-            aListenerHelper.Notify( mxFrame, aEvent.FeatureURL.Path, aEvent ); 
+            aListenerHelper.Notify( mxFrame, aEvent.FeatureURL.Path, aEvent );
         }
         else if ( !aURL.Path.compareToAscii( RTL_CONSTASCII_STRINGPARAM( "SpinfieldCmd" ) ) )
         {
@@ -341,7 +341,7 @@ void SAL_CALL BaseDispatch::dispatch( const URL& aURL, const Sequence < Property
                     break;
                 }
             }
-            OSL_TRACE( "Dropdownbox control - selected entry text : %s", 
+            OSL_TRACE( "Dropdownbox control - selected entry text : %s",
                        rtl::OUStringToOString( aText, RTL_TEXTENCODING_UTF8 ).getStr() );
         }
 	}
@@ -409,7 +409,7 @@ void SAL_CALL BaseDispatch::addStatusListener( const Reference< XStatusListener 
 
             aArgs[0].Name = rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "List" ) );
             aArgs[0].Value <<= aContextMenu;
-            SendCommandTo( xControl, aURL, rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "SetList" ) ), aArgs, sal_True );            
+            SendCommandTo( xControl, aURL, rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "SetList" ) ), aArgs, sal_True );
 
             // set position according to enable/disable state of button
             sal_Int32 nPos( mbButtonEnabled ? 0 : 1 );

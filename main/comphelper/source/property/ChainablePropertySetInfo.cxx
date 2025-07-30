@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -40,23 +40,23 @@ using ::com::sun::star::beans::Property;
 using ::com::sun::star::beans::XPropertySetInfo;
 using ::com::sun::star::beans::UnknownPropertyException;
 
-ChainablePropertySetInfo::ChainablePropertySetInfo() 
+ChainablePropertySetInfo::ChainablePropertySetInfo()
 	throw()
 {
 }
 
-ChainablePropertySetInfo::ChainablePropertySetInfo( PropertyInfo* pMap ) 
+ChainablePropertySetInfo::ChainablePropertySetInfo( PropertyInfo* pMap )
 	throw()
 {
 	add ( pMap );
 }
 
-ChainablePropertySetInfo::~ChainablePropertySetInfo() 
+ChainablePropertySetInfo::~ChainablePropertySetInfo()
 	throw()
 {
 }
 
-void ChainablePropertySetInfo::add( PropertyInfo* pMap, sal_Int32 nCount ) 
+void ChainablePropertySetInfo::add( PropertyInfo* pMap, sal_Int32 nCount )
 	throw()
 {
 	// nCount < 0	=> add all
@@ -78,7 +78,7 @@ void ChainablePropertySetInfo::add( PropertyInfo* pMap, sal_Int32 nCount )
 	}
 }
 
-void ChainablePropertySetInfo::remove( const rtl::OUString& aName ) 
+void ChainablePropertySetInfo::remove( const rtl::OUString& aName )
 	throw()
 {
 	maMap.erase ( aName );
@@ -86,7 +86,7 @@ void ChainablePropertySetInfo::remove( const rtl::OUString& aName )
 		 maProperties.realloc( 0 );
 }
 
-Sequence< ::Property > SAL_CALL ChainablePropertySetInfo::getProperties() 
+Sequence< ::Property > SAL_CALL ChainablePropertySetInfo::getProperties()
 	throw(::com::sun::star::uno::RuntimeException)
 {
 	sal_Int32 nSize = maMap.size();
@@ -112,7 +112,7 @@ Sequence< ::Property > SAL_CALL ChainablePropertySetInfo::getProperties()
 	return maProperties;
 }
 
-Property SAL_CALL ChainablePropertySetInfo::getPropertyByName( const ::rtl::OUString& rName ) 
+Property SAL_CALL ChainablePropertySetInfo::getPropertyByName( const ::rtl::OUString& rName )
 	throw(::UnknownPropertyException, ::com::sun::star::uno::RuntimeException)
 {
 	PropertyInfoHash::iterator aIter = maMap.find( rName );
@@ -131,7 +131,7 @@ Property SAL_CALL ChainablePropertySetInfo::getPropertyByName( const ::rtl::OUSt
 	return aProperty;
 }
 
-sal_Bool SAL_CALL ChainablePropertySetInfo::hasPropertyByName( const ::rtl::OUString& rName ) 
+sal_Bool SAL_CALL ChainablePropertySetInfo::hasPropertyByName( const ::rtl::OUString& rName )
 	throw(::com::sun::star::uno::RuntimeException)
 {
 	return static_cast < sal_Bool > ( maMap.find ( rName ) != maMap.end() );

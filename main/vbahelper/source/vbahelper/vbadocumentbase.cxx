@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,20 +7,20 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
- 
+
 #include "vbahelper/vbadocumentbase.hxx"
 #include "vbahelper/helperdecl.hxx"
 
@@ -48,12 +48,12 @@ VbaDocumentBase::VbaDocumentBase( const uno::Reference< ov::XHelperInterface >& 
 {
 }
 
-VbaDocumentBase::VbaDocumentBase( const uno::Reference< ov::XHelperInterface >& xParent, const uno::Reference< uno::XComponentContext >& xContext, uno::Reference< frame::XModel > xModel ) : VbaDocumentBase_BASE( xParent, xContext ),  mxModel( xModel ) 
-{ 
+VbaDocumentBase::VbaDocumentBase( const uno::Reference< ov::XHelperInterface >& xParent, const uno::Reference< uno::XComponentContext >& xContext, uno::Reference< frame::XModel > xModel ) : VbaDocumentBase_BASE( xParent, xContext ),  mxModel( xModel )
+{
 }
 
 VbaDocumentBase::VbaDocumentBase( uno::Sequence< uno::Any> const & args,
-    uno::Reference< uno::XComponentContext> const & xContext ) : VbaDocumentBase_BASE( getXSomethingFromArgs< XHelperInterface >( args, 0 ), xContext ),  mxModel( getXSomethingFromArgs< frame::XModel >( args, 1 ) ) 
+    uno::Reference< uno::XComponentContext> const & xContext ) : VbaDocumentBase_BASE( getXSomethingFromArgs< XHelperInterface >( args, 0 ), xContext ),  mxModel( getXSomethingFromArgs< frame::XModel >( args, 1 ) )
 {
 }
 
@@ -75,8 +75,8 @@ VbaDocumentBase::getName() throw (uno::RuntimeException)
 		uno::Reference< beans::XPropertySet > xProps( xFrame, uno::UNO_QUERY_THROW );
 		xProps->getPropertyValue(sTitle ) >>= sName;
 		sal_Int32 pos = 0;
-		sName = sName.getToken(0,'-',pos);	
-		sName = sName.trim();	
+		sName = sName.getToken(0,'-',pos);
+		sName = sName.trim();
 	}
 	return sName;
 }
@@ -119,18 +119,18 @@ VbaDocumentBase::Close( const uno::Any &rSaveArg, const uno::Any &rFileArg,
 	if( bSaveChanges )
 	{
 		if( xStorable->isReadonly() )
-		{	
-			throw uno::RuntimeException(::rtl::OUString( 
+		{
+			throw uno::RuntimeException(::rtl::OUString(
 				RTL_CONSTASCII_USTRINGPARAM( "Unable to save to a read only file ") ),
                         	uno::Reference< XInterface >() );
 		}
 		if( bFileName )
-			xStorable->storeAsURL( aFileName, uno::Sequence< beans::PropertyValue >(0) ); 
+			xStorable->storeAsURL( aFileName, uno::Sequence< beans::PropertyValue >(0) );
 		else
 			xStorable->store();
-	}	
+	}
 	else
-		xModifiable->setModified( false );		
+		xModifiable->setModified( false );
 
     // first try to close the document using UI dispatch functionality
     sal_Bool bUIClose = sal_False;
@@ -167,7 +167,7 @@ VbaDocumentBase::Close( const uno::Any &rSaveArg, const uno::Any &rFileArg,
         if( xCloseable.is() )
         {
             // use close(boolean DeliverOwnership)
-        
+
             // The boolean parameter DeliverOwnership tells objects vetoing the close process that they may
             // assume ownership if they object the closure by throwing a CloseVetoException
             // Here we give up ownership. To be on the safe side, catch possible veto exception anyway.
@@ -197,7 +197,7 @@ VbaDocumentBase::Protect( const uno::Any &aPassword ) throw (uno::RuntimeExcepti
 		xProt->protect( rtl::OUString() );
 }
 
-void 
+void
 VbaDocumentBase::Unprotect( const uno::Any &aPassword ) throw (uno::RuntimeException)
 {
 	rtl::OUString rPassword;
@@ -214,8 +214,8 @@ VbaDocumentBase::Unprotect( const uno::Any &aPassword ) throw (uno::RuntimeExcep
 			xProt->unprotect( rtl::OUString() );
 	}
 }
-		
-void 
+
+void
 VbaDocumentBase::setSaved( sal_Bool bSave ) throw (uno::RuntimeException)
 {
     uno::Reference< util::XModifiable > xModifiable( getModel(), uno::UNO_QUERY_THROW );
@@ -252,12 +252,12 @@ VbaDocumentBase::Save() throw (uno::RuntimeException)
 	dispatchRequests(xModel,url);
 }
 
-void 
+void
 VbaDocumentBase::Activate() throw (uno::RuntimeException)
 {
 	uno::Reference< frame::XFrame > xFrame( getModel()->getCurrentController()->getFrame(), uno::UNO_QUERY_THROW );
 	xFrame->activate();
-}	
+}
 
 uno::Any SAL_CALL
 VbaDocumentBase::getVBProject() throw (uno::RuntimeException)
@@ -286,7 +286,7 @@ VbaDocumentBase::getServiceImplName()
 	return sImplName;
 }
 
-uno::Sequence< rtl::OUString > 
+uno::Sequence< rtl::OUString >
 VbaDocumentBase::getServiceNames()
 {
 	static uno::Sequence< rtl::OUString > aServiceNames;

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -147,7 +147,7 @@ void MacabRecords::initialize()
 		records[i] = createMacabRecord(record, header, recordType);
 	}
 	currentRecord = recordsSize;
-	
+
 	CFRelease(allRecords);
 }
 
@@ -199,7 +199,7 @@ MacabRecord *MacabRecords::insertRecord(MacabRecord *_newRecord, const sal_Int32
 	 */
 	if(_location >= currentRecord)
 		currentRecord = _location+1;
-	
+
 	oldRecord = records[_location];
 	records[_location] = _newRecord;
 	return oldRecord;
@@ -347,7 +347,7 @@ MacabHeader *MacabRecords::createHeaderForRecordType(const CFArrayRef _records, 
 	CFArrayRef allProperties = ABCopyArrayOfPropertiesForRecordType(addressBook, _recordType);
 	CFStringRef *nonRequiredProperties;
 	sal_Int32 numRecords = (sal_Int32) CFArrayGetCount(_records);
-	sal_Int32 numProperties = (sal_Int32) CFArrayGetCount(allProperties); 
+	sal_Int32 numProperties = (sal_Int32) CFArrayGetCount(allProperties);
 	sal_Int32 numNonRequiredProperties = numProperties - numRequiredProperties;
 
 	/* While searching through the properties for required properties, these
@@ -541,7 +541,7 @@ MacabHeader *MacabRecords::createHeaderForProperty(const ABPropertyType _propert
 			if(_propertyValue != NULL)
 			{
 			sal_Int32 i;
-			
+
 			sal_Int32 multiLength = ABMultiValueCount((ABMutableMultiValueRef) _propertyValue);
 			CFStringRef multiLabel, localizedMultiLabel;
 			::rtl::OUString multiLabelString;
@@ -646,7 +646,7 @@ MacabHeader *MacabRecords::createHeaderForProperty(const ABPropertyType _propert
 						j++;
 						k = 0;
 					}
-					
+
 					headerNames[i] = multiHeaders[j]->copy(k);
 				}
 				for(i = 0; i < multiLengthFirstLevel; i++)
@@ -655,7 +655,7 @@ MacabHeader *MacabRecords::createHeaderForProperty(const ABPropertyType _propert
 				delete [] multiHeaders;
 			}
 			break;
-			
+
 		/* Dictionary */
 		case kABDictionaryProperty:
 			/* For non-scalars, we can only get more information if the property
@@ -724,7 +724,7 @@ MacabHeader *MacabRecords::createHeaderForProperty(const ABPropertyType _propert
 					j++;
 					k = 0;
 				}
-				
+
 				headerNames[i] = dictHeaders[j]->copy(k);
 			}
 
@@ -784,7 +784,7 @@ MacabHeader *MacabRecords::createHeaderForProperty(const ABPropertyType _propert
 						j++;
 						k = 0;
 					}
-					
+
 					headerNames[i] = arrHeaders[j]->copy(k);
 				}
 				for(i = 0; i < arrLength; i++)
@@ -864,7 +864,7 @@ MacabRecord *MacabRecords::createMacabRecord(const ABRecordRef _abrecord, const 
 	MacabRecord *macabRecord = new MacabRecord(_header->getSize());
 
 	CFArrayRef recordProperties = ABCopyArrayOfPropertiesForRecordType(addressBook, _recordType);
-	sal_Int32 numProperties = (sal_Int32) CFArrayGetCount(recordProperties); 
+	sal_Int32 numProperties = (sal_Int32) CFArrayGetCount(recordProperties);
 
 	sal_Int32 i;
 
@@ -950,7 +950,7 @@ void MacabRecords::insertPropertyIntoMacabRecord(const ABPropertyType _propertyT
 			sal_Bool bPlaced = sal_False;
 			::rtl::OUString columnName = ::rtl::OUString(_propertyName);
 			sal_Int32 i = 1;
-			
+
 			// A big safeguard to prevent two fields from having the same name.
 			while(bPlaced != sal_True)
 			{

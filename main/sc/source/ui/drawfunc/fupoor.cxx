@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -164,7 +164,7 @@ void FuPoor::ForceScroll(const Point& aPixPos)
 IMPL_LINK_INLINE_START( FuPoor, ScrollHdl, Timer *, EMPTYARG )
 {
 	Point aPosPixel = pWindow->GetPointerPosPixel();
-	
+
 	// #95491# use remembered MouseButton state to create correct
 	// MouseEvents for this artificial MouseMove.
 	MouseMove(MouseEvent(aPosPixel, 1, 0, GetMouseButtonCode()));
@@ -175,20 +175,20 @@ IMPL_LINK_INLINE_END( FuPoor, ScrollHdl, Timer *, pTimer )
 
 // #95491# moved from inline to *.cxx
 sal_Bool FuPoor::MouseButtonUp(const MouseEvent& rMEvt)
-{ 
+{
 	// #95491# remember button state for creation of own MouseEvents
 	SetMouseButtonCode(rMEvt.GetButtons());
 
-	return sal_False; 
+	return sal_False;
 }
 
 // #95491# moved from inline to *.cxx
 sal_Bool FuPoor::MouseButtonDown(const MouseEvent& rMEvt)
-{ 
+{
 	// #95491# remember button state for creation of own MouseEvents
 	SetMouseButtonCode(rMEvt.GetButtons());
 
-	return sal_False; 
+	return sal_False;
 }
 
 /*************************************************************************
@@ -361,13 +361,13 @@ void FuPoor::ImpForceQuadratic(Rectangle& rRect)
 	if(rRect.GetWidth() > rRect.GetHeight())
 	{
 		rRect = Rectangle(
-			Point(rRect.Left() + ((rRect.GetWidth() - rRect.GetHeight()) / 2), rRect.Top()), 
+			Point(rRect.Left() + ((rRect.GetWidth() - rRect.GetHeight()) / 2), rRect.Top()),
 			Size(rRect.GetHeight(), rRect.GetHeight()));
 	}
 	else
 	{
 		rRect = Rectangle(
-			Point(rRect.Left(), rRect.Top() + ((rRect.GetHeight() - rRect.GetWidth()) / 2)), 
+			Point(rRect.Left(), rRect.Top() + ((rRect.GetHeight() - rRect.GetWidth()) / 2)),
 			Size(rRect.GetWidth(), rRect.GetWidth()));
 	}
 }

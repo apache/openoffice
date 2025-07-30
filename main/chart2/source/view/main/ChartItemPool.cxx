@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -84,7 +84,7 @@ ChartItemPool::ChartItemPool():
     ppPoolDefaults[SCHATTR_STAT_INDICATE            - SCHATTR_START] = new SvxChartIndicateItem (CHINDICATE_NONE, SCHATTR_STAT_INDICATE);
     ppPoolDefaults[SCHATTR_STAT_RANGE_POS           - SCHATTR_START] = new SfxStringItem (SCHATTR_STAT_RANGE_POS, String());
     ppPoolDefaults[SCHATTR_STAT_RANGE_NEG           - SCHATTR_START] = new SfxStringItem (SCHATTR_STAT_RANGE_NEG, String());
-	
+
 	ppPoolDefaults[SCHATTR_STYLE_DEEP     - SCHATTR_START] = new SfxBoolItem (SCHATTR_STYLE_DEEP, 0);
 	ppPoolDefaults[SCHATTR_STYLE_3D       - SCHATTR_START] = new SfxBoolItem (SCHATTR_STYLE_3D, 0);
 	ppPoolDefaults[SCHATTR_STYLE_VERTICAL - SCHATTR_START] = new SfxBoolItem (SCHATTR_STYLE_VERTICAL, 0);
@@ -133,7 +133,7 @@ ChartItemPool::ChartItemPool():
     ppPoolDefaults[SCHATTR_AXIS_LABEL_ORDER     - SCHATTR_START] = new SvxChartTextOrderItem(CHTXTORDER_SIDEBYSIDE, SCHATTR_AXIS_LABEL_ORDER);
     ppPoolDefaults[SCHATTR_AXIS_LABEL_OVERLAP   - SCHATTR_START] = new SfxBoolItem(SCHATTR_AXIS_LABEL_OVERLAP,sal_False);
     ppPoolDefaults[SCHATTR_AXIS_LABEL_BREAK     - SCHATTR_START] = new SfxBoolItem(SCHATTR_AXIS_LABEL_BREAK, sal_False );
-    
+
     //--
 	ppPoolDefaults[SCHATTR_SYMBOL_BRUSH			- SCHATTR_START] = new SvxBrushItem(SCHATTR_SYMBOL_BRUSH);
 	ppPoolDefaults[SCHATTR_STOCK_VOLUME 		- SCHATTR_START] = new SfxBoolItem(SCHATTR_STOCK_VOLUME,0);

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -119,7 +119,7 @@ static sal_Bool REGISTRY_CALLTYPE isReadOnly(RegHandle hReg)
 //*********************************************************************
 //	createRegistry
 //
-static RegError REGISTRY_CALLTYPE createRegistry(rtl_uString* registryName, 
+static RegError REGISTRY_CALLTYPE createRegistry(rtl_uString* registryName,
 											     RegHandle* phRegistry)
 {
 	RegError ret;
@@ -129,21 +129,21 @@ static RegError REGISTRY_CALLTYPE createRegistry(rtl_uString* registryName,
 	{
 		*phRegistry = NULL;
 		return ret;
-	}	
-		
+	}
+
 	*phRegistry = pReg;
-		
+
 	return REG_NO_ERROR;
-}	
+}
 
 //*********************************************************************
 //	openRootKey
 //
-static RegError REGISTRY_CALLTYPE openRootKey(RegHandle hReg, 
+static RegError REGISTRY_CALLTYPE openRootKey(RegHandle hReg,
 											  RegKeyHandle* phRootKey)
 {
 	ORegistry* pReg;
-	
+
 	if (hReg)
 	{
 		pReg = (ORegistry*)hReg;
@@ -154,18 +154,18 @@ static RegError REGISTRY_CALLTYPE openRootKey(RegHandle hReg,
 		phRootKey = NULL;
 		return REG_INVALID_REGISTRY;
 	}
-	
+
 	*phRootKey = pReg->getRootKey();
-	
-	return REG_NO_ERROR;	
-}	
+
+	return REG_NO_ERROR;
+}
 
 
 //*********************************************************************
 //	openRegistry
 //
-static RegError REGISTRY_CALLTYPE openRegistry(rtl_uString* registryName, 
-											   RegHandle* phRegistry, 
+static RegError REGISTRY_CALLTYPE openRegistry(rtl_uString* registryName,
+											   RegHandle* phRegistry,
 											   RegAccessMode accessMode)
 {
 	RegError _ret;
@@ -176,13 +176,13 @@ static RegError REGISTRY_CALLTYPE openRegistry(rtl_uString* registryName,
 		*phRegistry = NULL;
 		delete pReg;
 		return _ret;
-	}	
+	}
 
-		
+
 	*phRegistry = pReg;
 
 	return REG_NO_ERROR;
-}	
+}
 
 //*********************************************************************
 //	closeRegistry
@@ -190,13 +190,13 @@ static RegError REGISTRY_CALLTYPE openRegistry(rtl_uString* registryName,
 static RegError REGISTRY_CALLTYPE closeRegistry(RegHandle hReg)
 {
 	ORegistry	*pReg;
-	
+
 	if (hReg)
 	{
 		pReg = (ORegistry*)hReg;
 		if (!pReg->isOpen())
 			return REG_REGISTRY_NOT_OPEN;
-		
+
 		RegError ret = REG_NO_ERROR;
 		if (pReg->release() == 0)
 		{
@@ -211,7 +211,7 @@ static RegError REGISTRY_CALLTYPE closeRegistry(RegHandle hReg)
 	{
 		return REG_INVALID_REGISTRY;
 	}
-}	
+}
 
 
 //*********************************************************************
@@ -221,13 +221,13 @@ static RegError REGISTRY_CALLTYPE destroyRegistry(RegHandle hReg,
 												  rtl_uString* registryName)
 {
 	ORegistry	*pReg;
-	
+
 	if (hReg)
 	{
 		pReg = (ORegistry*)hReg;
 		if (!pReg->isOpen())
 			return REG_INVALID_REGISTRY;
-		
+
 		RegError ret = pReg->destroyRegistry(registryName);
 		if (!ret)
 		{
@@ -242,18 +242,18 @@ static RegError REGISTRY_CALLTYPE destroyRegistry(RegHandle hReg,
 	{
 		return REG_INVALID_REGISTRY;
 	}
-}	
+}
 
 
 //*********************************************************************
 //	loadRegKey
 //
 static RegError REGISTRY_CALLTYPE loadKey(RegHandle hReg,
-								   		   RegKeyHandle hKey, 
-										   rtl_uString* keyName, 
+								   		   RegKeyHandle hKey,
+										   rtl_uString* keyName,
 										   rtl_uString* regFileName)
 {
-	
+
 	ORegistry* pReg = static_cast< ORegistry* >(hReg);
 	if (!pReg)
 		return REG_INVALID_REGISTRY;
@@ -300,11 +300,11 @@ static RegError REGISTRY_CALLTYPE loadKey(RegHandle hReg,
 //	saveKey
 //
 static RegError REGISTRY_CALLTYPE saveKey(RegHandle hReg,
-								   		   RegKeyHandle hKey, 
-										   rtl_uString* keyName, 
+								   		   RegKeyHandle hKey,
+										   rtl_uString* keyName,
 										   rtl_uString* regFileName)
 {
-	
+
 	ORegistry* pReg = static_cast< ORegistry* >(hReg);
 	if (!pReg)
 		return REG_INVALID_REGISTRY;
@@ -334,14 +334,14 @@ static RegError REGISTRY_CALLTYPE saveKey(RegHandle hReg,
 	}
 
 	return pKey->releaseKey(pNewKey);
-}	
+}
 
 //*********************************************************************
 //	mergeKey
 //
 static RegError REGISTRY_CALLTYPE mergeKey(RegHandle hReg,
-								   		   RegKeyHandle hKey, 
-										   rtl_uString* keyName, 
+								   		   RegKeyHandle hKey,
+										   rtl_uString* keyName,
 										   rtl_uString* regFileName,
 										   sal_Bool bWarnings,
 										   sal_Bool bReport)
@@ -383,7 +383,7 @@ static RegError REGISTRY_CALLTYPE mergeKey(RegHandle hReg,
 	}
 
 	return pReg->loadKey(pKey, regFileName, bWarnings, bReport);
-}	
+}
 
 //*********************************************************************
 //	dumpRegistry
@@ -406,7 +406,7 @@ static RegError REGISTRY_CALLTYPE dumpRegistry(RegHandle hReg,
 		return REG_INVALID_KEY;
 
 	return pReg->dumpRegistry(hKey);
-}	
+}
 
 //*********************************************************************
 //	initRegistry_Api
@@ -462,60 +462,60 @@ Registry_Api* REGISTRY_CALLTYPE initRegistry_Api(void)
 //*********************************************************************
 //	reg_loadRegKey
 //
-RegError REGISTRY_CALLTYPE reg_loadKey(RegKeyHandle hKey, 
-									   rtl_uString* keyName, 
+RegError REGISTRY_CALLTYPE reg_loadKey(RegKeyHandle hKey,
+									   rtl_uString* keyName,
 									   rtl_uString* regFileName)
 {
 	ORegKey *pKey;
-	
+
 	if (hKey)
 		pKey = (ORegKey*)hKey;
 	else
 		return REG_INVALID_KEY;
 
 	return loadKey(pKey->getRegistry(), hKey, keyName, regFileName);
-}	
+}
 
 //*********************************************************************
 //	reg_saveKey
 //
-RegError REGISTRY_CALLTYPE reg_saveKey(RegKeyHandle hKey, 
-									   rtl_uString* keyName, 
+RegError REGISTRY_CALLTYPE reg_saveKey(RegKeyHandle hKey,
+									   rtl_uString* keyName,
 									   rtl_uString* regFileName)
 {
 	ORegKey *pKey;
-	
+
 	if (hKey)
 		pKey = (ORegKey*)hKey;
 	else
 		return REG_INVALID_KEY;
 
 	return saveKey(pKey->getRegistry(), hKey, keyName, regFileName);
-}	
+}
 
 //*********************************************************************
 //	reg_mergeKey
 //
-RegError REGISTRY_CALLTYPE reg_mergeKey(RegKeyHandle hKey, 
-									    rtl_uString* keyName, 
+RegError REGISTRY_CALLTYPE reg_mergeKey(RegKeyHandle hKey,
+									    rtl_uString* keyName,
 									    rtl_uString* regFileName,
 										sal_Bool bWarnings,
 										sal_Bool bReport)
 {
 	ORegKey *pKey;
-	
+
 	if (hKey)
 		pKey = (ORegKey*)hKey;
 	else
 		return REG_INVALID_KEY;
 
 	return mergeKey(pKey->getRegistry(), hKey, keyName, regFileName, bWarnings, bReport);
-}	
+}
 
 //*********************************************************************
 //	reg_createRegistry
 //
-RegError REGISTRY_CALLTYPE reg_createRegistry(rtl_uString* registryName, 
+RegError REGISTRY_CALLTYPE reg_createRegistry(rtl_uString* registryName,
 											  RegHandle* phRegistry)
 {
 	RegError ret;
@@ -525,21 +525,21 @@ RegError REGISTRY_CALLTYPE reg_createRegistry(rtl_uString* registryName,
 	{
 		*phRegistry = NULL;
 		return ret;
-	}	
-		
+	}
+
 	*phRegistry = pReg;
-		
+
 	return REG_NO_ERROR;
-}	
+}
 
 //*********************************************************************
 //	reg_openRootKey
 //
-RegError REGISTRY_CALLTYPE reg_openRootKey(RegHandle hRegistry, 
+RegError REGISTRY_CALLTYPE reg_openRootKey(RegHandle hRegistry,
 										  RegKeyHandle* phRootKey)
 {
 	return openRootKey(hRegistry, phRootKey);
-}	
+}
 
 
 //*********************************************************************
@@ -550,7 +550,7 @@ RegError REGISTRY_CALLTYPE reg_getName(RegHandle hRegistry, rtl_uString** pName)
 	return getName(hRegistry, pName);
 }
 
-	
+
 //*********************************************************************
 //	reg_isReadOnly
 //
@@ -563,8 +563,8 @@ sal_Bool REGISTRY_CALLTYPE reg_isReadOnly(RegHandle hRegistry)
 //*********************************************************************
 //	reg_openRegistry
 //
-RegError REGISTRY_CALLTYPE reg_openRegistry(rtl_uString* registryName, 
-											RegHandle* phRegistry, 
+RegError REGISTRY_CALLTYPE reg_openRegistry(rtl_uString* registryName,
+											RegHandle* phRegistry,
 											RegAccessMode accessMode)
 {
 	RegError _ret;
@@ -574,12 +574,12 @@ RegError REGISTRY_CALLTYPE reg_openRegistry(rtl_uString* registryName,
 	{
 		*phRegistry = NULL;
 		return _ret;
-	}	
-		
+	}
+
 	*phRegistry = pReg;
 
 	return REG_NO_ERROR;
-}	
+}
 
 //*********************************************************************
 //	reg_closeRegistry
@@ -587,7 +587,7 @@ RegError REGISTRY_CALLTYPE reg_openRegistry(rtl_uString* registryName,
 RegError REGISTRY_CALLTYPE reg_closeRegistry(RegHandle hRegistry)
 {
 	ORegistry* pReg;
-	
+
 	if (hRegistry)
 	{
 		pReg = (ORegistry*)hRegistry;
@@ -597,7 +597,7 @@ RegError REGISTRY_CALLTYPE reg_closeRegistry(RegHandle hRegistry)
 	{
 		return REG_REGISTRY_NOT_OPEN;
 	}
-}	
+}
 
 
 //*********************************************************************
@@ -607,7 +607,7 @@ RegError REGISTRY_CALLTYPE reg_destroyRegistry(RegHandle hRegistry,
 											   rtl_uString* registryName)
 {
 	return destroyRegistry(hRegistry, registryName);
-}	
+}
 
 
 //*********************************************************************
@@ -616,11 +616,11 @@ RegError REGISTRY_CALLTYPE reg_destroyRegistry(RegHandle hRegistry,
 RegError REGISTRY_CALLTYPE reg_dumpRegistry(RegKeyHandle hKey)
 {
 	ORegKey *pKey;
-	
+
 	if (hKey)
 		pKey = (ORegKey*)hKey;
 	else
 		return REG_INVALID_KEY;
 
 	return dumpRegistry(pKey->getRegistry(), hKey);
-}	
+}

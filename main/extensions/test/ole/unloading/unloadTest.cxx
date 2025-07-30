@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -84,7 +84,7 @@ sal_Bool test1()
 	osl_unloadModule( hMod);
 
 	rtl_unloadUnusedModules( NULL);
-	
+
 	OUString sFactoryFunc( RTL_CONSTASCII_USTRINGPARAM("component_getFactory"));
 	void* pSymbol= osl_getSymbol( hMod,sFactoryFunc.pData);
 	// true, instance alive
@@ -140,7 +140,7 @@ sal_Bool test3()
 	Reference<XSimpleRegistry> xreg= createSimpleRegistry();
 	xreg->open( OUString( RTL_CONSTASCII_USTRINGPARAM("services.rdb")),
 				sal_False, sal_False );
-	
+
 	Reference< XComponentContext > context= bootstrap_InitialComponentContext(xreg);
 
 	Reference<XMultiComponentFactory> fac= context->getServiceManager();
@@ -168,11 +168,11 @@ sal_Bool test3()
 	xcomp->dispose();
 
 //	for (int i=0; i < 10; i++)
-//	{	
+//	{
 //		Reference<XSimpleRegistry> xreg= createSimpleRegistry();
 //		xreg->open( OUString( RTL_CONSTASCII_USTRINGPARAM("applicat.rdb")),
 //							   sal_False, sal_False );
-//		Reference< XComponentContext > context= bootstrap_InitialComponentContext(xreg);	
+//		Reference< XComponentContext > context= bootstrap_InitialComponentContext(xreg);
 //		Reference<XComponent> xcomp( context, UNO_QUERY);
 //		xcomp->dispose();
 //
@@ -212,7 +212,7 @@ sal_Bool test4()
 	// ApplicationRegistration is a one-instance-service, therefore kill service manager first
 	Reference<XComponent> xcomp( context, UNO_QUERY);
 	xcomp->dispose();
-	
+
 	}
 	rtl_unloadUnusedModules( NULL);
 	pSymbol= osl_getSymbol( hMod,sFactoryFunc.pData);

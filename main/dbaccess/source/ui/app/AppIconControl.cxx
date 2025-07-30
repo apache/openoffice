@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -31,7 +31,7 @@
 #endif
 #ifndef _DBA_DBACCESS_HELPID_HRC_
 #include "dbaccess_helpid.hrc"
-#endif				 
+#endif
 #ifndef _DBAUI_MODULE_DBU_HXX_
 #include "moduledbu.hxx"
 #endif
@@ -54,7 +54,7 @@ using namespace ::dbaui;
 // class OApplicationIconControl
 DBG_NAME(OApplicationIconControl)
 //==================================================================
-OApplicationIconControl::OApplicationIconControl(Window* _pParent) 
+OApplicationIconControl::OApplicationIconControl(Window* _pParent)
 	: SvtIconChoiceCtrl(_pParent,WB_ICON | WB_NOCOLUMNHEADER | WB_HIGHLIGHTFRAME | /*!WB_NOSELECTION |*/
 								WB_TABSTOP | WB_CLIPCHILDREN | WB_NOVSCROLL | WB_SMART_ARRANGE | WB_NOHSCROLL | WB_CENTER)
 	,DropTargetHelper(this)
@@ -80,7 +80,7 @@ OApplicationIconControl::OApplicationIconControl(Window* _pParent)
             String( ModuleRes( aCategories[i].nLabelResId ) ),
             Image( ModuleRes( aCategories[i].nImageResId ) ),
             Image( ModuleRes( aCategories[i].nImageResIdHC ) ) );
-        if ( pEntry ) 
+        if ( pEntry )
             pEntry->SetUserData( new ElementType( aCategories[i].eType ) );
     }
 
@@ -109,7 +109,7 @@ sal_Int8 OApplicationIconControl::AcceptDrop( const AcceptDropEvent& _rEvt )
 	sal_Int8 nDropOption = DND_ACTION_NONE;
 	if ( m_pActionListener )
 	{
-		
+
 		SvxIconChoiceCtrlEntry*	pEntry = GetEntry(_rEvt.maPosPixel);
 		if ( pEntry )
 		{

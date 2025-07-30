@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -43,11 +43,11 @@ using namespace ::xmloff::token;
 
 TYPEINIT1( XMLFrameOOoTransformerContext, XMLPersElemContentTContext );
 
-XMLFrameOOoTransformerContext::XMLFrameOOoTransformerContext( 
-		XMLTransformerBase& rImp, 
+XMLFrameOOoTransformerContext::XMLFrameOOoTransformerContext(
+		XMLTransformerBase& rImp,
 		const OUString& rQName ) :
 	XMLPersElemContentTContext( rImp, rQName ),
-	m_aElemQName( rImp.GetNamespaceMap().GetQNameByKey( XML_NAMESPACE_DRAW, 
+	m_aElemQName( rImp.GetNamespaceMap().GetQNameByKey( XML_NAMESPACE_DRAW,
 							::xmloff::token::GetXMLToken( XML_FRAME ) ) )
 {
 }
@@ -56,7 +56,7 @@ XMLFrameOOoTransformerContext::~XMLFrameOOoTransformerContext()
 {
 }
 
-void XMLFrameOOoTransformerContext::StartElement( 
+void XMLFrameOOoTransformerContext::StartElement(
 	const Reference< XAttributeList >& rAttrList )
 {
 
@@ -65,14 +65,14 @@ void XMLFrameOOoTransformerContext::StartElement(
 	OSL_ENSURE( pActions, "go no actions" );
 
 	Reference< XAttributeList > xAttrList( rAttrList );
-	XMLMutableAttributeList *pMutableAttrList = 
+	XMLMutableAttributeList *pMutableAttrList =
 		GetTransformer().ProcessAttrList( xAttrList, OOO_SHAPE_ACTIONS,
 										  sal_True );
 	if( !pMutableAttrList )
 		pMutableAttrList = new XMLMutableAttributeList( rAttrList );
 	xAttrList = pMutableAttrList;
 
-	XMLMutableAttributeList *pFrameMutableAttrList = 
+	XMLMutableAttributeList *pFrameMutableAttrList =
 		new XMLMutableAttributeList;
 	Reference< XAttributeList > xFrameAttrList( pFrameMutableAttrList );
 
@@ -82,7 +82,7 @@ void XMLFrameOOoTransformerContext::StartElement(
 		const OUString& rAttrName = xAttrList->getNameByIndex( i );
 		OUString aLocalName;
 		sal_uInt16 nPrefix =
-			GetTransformer().GetNamespaceMap().GetKeyByAttrName( rAttrName, 
+			GetTransformer().GetNamespaceMap().GetKeyByAttrName( rAttrName,
 																 &aLocalName );
 		XMLTransformerActions::key_type aKey( nPrefix, aLocalName );
 		XMLTransformerActions::const_iterator aIter =
@@ -105,7 +105,7 @@ void XMLFrameOOoTransformerContext::StartElement(
 		}
 	}
 
-	GetTransformer().GetDocHandler()->startElement( m_aElemQName, 
+	GetTransformer().GetDocHandler()->startElement( m_aElemQName,
 													xFrameAttrList );
 	XMLTransformerContext::StartElement( xAttrList );
 }
@@ -132,7 +132,7 @@ XMLTransformerContext *XMLFrameOOoTransformerContext::CreateChildContext(
 		case XML_ETACTION_COPY_TEXT:
 		case XML_ETACTION_RENAME_ELEM:
 			// the ones in the list have to be persistent
-			
+
 			pContext = XMLPersElemContentTContext::CreateChildContext(
 				   		nPrefix, rLocalName, rQName, rAttrList );
 			break;

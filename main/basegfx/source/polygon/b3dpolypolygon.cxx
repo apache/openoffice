@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -204,7 +204,7 @@ public:
 
 namespace basegfx
 {
-    namespace { struct DefaultPolyPolygon : public rtl::Static<B3DPolyPolygon::ImplType, 
+    namespace { struct DefaultPolyPolygon : public rtl::Static<B3DPolyPolygon::ImplType,
                                                                DefaultPolyPolygon> {}; }
 
 	B3DPolyPolygon::B3DPolyPolygon() :
@@ -259,7 +259,7 @@ namespace basegfx
 	B3DPolygon B3DPolyPolygon::getB3DPolygon(sal_uInt32 nIndex) const
 	{
 		OSL_ENSURE(nIndex < mpPolyPolygon->count(), "B3DPolyPolygon access outside range (!)");
-		
+
 		return mpPolyPolygon->getB3DPolygon(nIndex);
 	}
 
@@ -343,7 +343,7 @@ namespace basegfx
 	void B3DPolyPolygon::insert(sal_uInt32 nIndex, const B3DPolygon& rPolygon, sal_uInt32 nCount)
 	{
 		OSL_ENSURE(nIndex <= mpPolyPolygon->count(), "B3DPolyPolygon Insert outside range (!)");
-		
+
 		if(nCount)
 			mpPolyPolygon->insert(nIndex, rPolygon, nCount);
 	}
@@ -357,7 +357,7 @@ namespace basegfx
 	void B3DPolyPolygon::insert(sal_uInt32 nIndex, const B3DPolyPolygon& rPolyPolygon)
 	{
 		OSL_ENSURE(nIndex <= mpPolyPolygon->count(), "B3DPolyPolygon Insert outside range (!)");
-		
+
 		if(rPolyPolygon.count())
 			mpPolyPolygon->insert(nIndex, rPolyPolygon);
 	}
@@ -371,11 +371,11 @@ namespace basegfx
 	void B3DPolyPolygon::remove(sal_uInt32 nIndex, sal_uInt32 nCount)
 	{
 		OSL_ENSURE(nIndex + nCount <= mpPolyPolygon->count(), "B3DPolyPolygon Remove outside range (!)");
-		
+
 		if(nCount)
 			mpPolyPolygon->remove(nIndex, nCount);
 	}
-	
+
 	void B3DPolyPolygon::clear()
 	{
 		mpPolyPolygon = DefaultPolyPolygon::get();

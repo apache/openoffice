@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -96,7 +96,7 @@ throw( RuntimeException )
     {
         Reference< XInterface > xInterface;
 
-        Reference< storage::XScriptInfo > sinfo = 
+        Reference< storage::XScriptInfo > sinfo =
             Reference< storage::XScriptInfo >( scriptInfo, UNO_QUERY_THROW );
 
         OUStringBuffer* buf( 80 );
@@ -175,7 +175,7 @@ Any SAL_CALL ScriptRuntimeManager::invoke(
             throw RuntimeException( OUSTR(
                 "ScriptRuntimeManager::invoke : unable to get XPropSetScriptingContext from param" ),
                 Reference< XInterface > () );
-        }   
+        }
 
         Any any = xPropSetResolvedCtx->getPropertyValue(
             scriptingConstantsPool.RESOLVED_STORAGE_ID );
@@ -189,12 +189,12 @@ Any SAL_CALL ScriptRuntimeManager::invoke(
 
         OSL_TRACE("Storage sid is: %d\n", resolvedSid);
 
-        // modifying the XPropertySet on the resolved Context to contain the 
-        // full script info 
+        // modifying the XPropertySet on the resolved Context to contain the
+        // full script info
         Any aResolvedScript;
         aResolvedScript <<= resolvedScript;
 
-        xPropSetResolvedCtx->setPropertyValue( scriptingConstantsPool.SCRIPT_INFO, 
+        xPropSetResolvedCtx->setPropertyValue( scriptingConstantsPool.SCRIPT_INFO,
                 aResolvedScript );
 
         Reference< runtime::XScriptInvocation > xScriptInvocation =
@@ -209,12 +209,12 @@ Any SAL_CALL ScriptRuntimeManager::invoke(
                                              aOutParamIndex, aOutParam );
 
         // need to dispose of filesystem storage
-        OUString filesysString = OUString::createFromAscii( 
+        OUString filesysString = OUString::createFromAscii(
                                         "location=filesystem" );
         if ( scriptURI.indexOf( filesysString ) != -1 )
         {
-            Any a = m_xContext->getValueByName( 
-                    scriptingConstantsPool.SCRIPTSTORAGEMANAGER_SERVICE );   
+            Any a = m_xContext->getValueByName(
+                    scriptingConstantsPool.SCRIPTSTORAGEMANAGER_SERVICE );
             Reference < lang::XEventListener > xEL_ScriptStorageManager( a, UNO_QUERY_THROW );
             lang::EventObject event(resolvedScript);
             xEL_ScriptStorageManager->disposing( event );
@@ -278,7 +278,7 @@ Any SAL_CALL ScriptRuntimeManager::invoke(
 
 //*************************************************************************
 // XScriptNameResolver implementation
-Reference< storage::XScriptInfo > SAL_CALL 
+Reference< storage::XScriptInfo > SAL_CALL
 ScriptRuntimeManager::resolve( const ::rtl::OUString& scriptURI,
     Any& invocationCtx )
 throw( lang::IllegalArgumentException, script::CannotConvertException, RuntimeException )
@@ -296,7 +296,7 @@ throw( lang::IllegalArgumentException, script::CannotConvertException, RuntimeEx
     }
     catch ( lang::IllegalArgumentException & iae )
     {
-        OUString temp = 
+        OUString temp =
             OUSTR( "ScriptRuntimeManager::resolve IllegalArgumentException: " );
         throw lang::IllegalArgumentException( temp.concat( iae.Message ),
                                               Reference< XInterface > (),
@@ -469,7 +469,7 @@ extern "C"
      * @param pServiceManager a service manager, need for component creation
      * @param pRegistryKey    the registry key for this component, need for persistent
      *                        data
-     * @return a component factory 
+     * @return a component factory
      */
     void * SAL_CALL component_getFactory( const sal_Char * pImplName,
         lang::XMultiServiceFactory * pServiceManager,

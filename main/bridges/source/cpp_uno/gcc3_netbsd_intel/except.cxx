@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -243,7 +243,7 @@ void raiseException( uno_Any * pUnoExc, uno_Mapping * pUno2Cpp )
             *reinterpret_cast< OUString const * >( &pUnoExc->pType->pTypeName ),
             Reference< XInterface >() );
     }
-    
+
 	pCppExc = __cxa_allocate_exception( pTypeDescr->nSize );
 	::uno_copyAndConvertData( pCppExc, pUnoExc->pData, pTypeDescr, pUno2Cpp );
 
@@ -295,7 +295,7 @@ void fillUnoException( __cxa_exception * header, uno_Any * pUnoExc, uno_Mapping 
 #endif
         return;
     }
-    
+
 	typelib_TypeDescription * pExcTypeDescr = 0;
     OUString unoName( toUNOname( header->exceptionType->name() ) );
 #if defined DEBUG

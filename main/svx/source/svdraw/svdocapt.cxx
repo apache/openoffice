@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -275,7 +275,7 @@ basegfx::B2DPolyPolygon SdrCaptionObj::TakeXorPoly() const
 {
 	basegfx::B2DPolyPolygon aPolyPoly(SdrRectObj::TakeXorPoly());
 	aPolyPoly.append(aTailPoly.getB2DPolygon());
-	
+
 	return aPolyPoly;
 }
 
@@ -291,23 +291,23 @@ SdrHdl* SdrCaptionObj::GetHdl(sal_uInt32 nHdlNum) const
 {
 	const sal_uInt32 nRectHdlAnz(SdrRectObj::GetHdlCount());
 
-	if(nHdlNum < nRectHdlAnz) 
+	if(nHdlNum < nRectHdlAnz)
 	{
 		return SdrRectObj::GetHdl(nHdlNum);
-	} 
-	else 
+	}
+	else
 	{
 		sal_uInt32 nPntNum(nHdlNum);
 		nPntNum -= nRectHdlAnz;
 
-		if(nPntNum < aTailPoly.GetSize()) 
+		if(nPntNum < aTailPoly.GetSize())
 		{
 			SdrHdl* pHdl = new SdrHdl(aTailPoly.GetPoint((sal_uInt16)nPntNum), HDL_POLY);
 			pHdl->SetPolyNum(1L);
 			pHdl->SetPointNum(nPntNum);
 			return pHdl;
-		} 
-		else 
+		}
+		else
 		{
 			return 0L;
 		}
@@ -326,18 +326,18 @@ bool SdrCaptionObj::beginSpecialDrag(SdrDragStat& rDrag) const
 	const SdrHdl* pHdl = rDrag.GetHdl();
 	rDrag.SetEndDragChangesAttributes(true);
 	rDrag.SetEndDragChangesGeoAndAttributes(true);
-    
-	if(pHdl && 0 == pHdl->GetPolyNum()) 
+
+	if(pHdl && 0 == pHdl->GetPolyNum())
     {
 		return SdrRectObj::beginSpecialDrag(rDrag);
-	} 
-    else 
+	}
+    else
     {
 		rDrag.SetOrtho8Possible(true);
 
-        if(!pHdl) 
+        if(!pHdl)
         {
-			if (bMovProt) 
+			if (bMovProt)
                 return 0;
 
 			rDrag.SetNoSnap(true);
@@ -349,8 +349,8 @@ bool SdrCaptionObj::beginSpecialDrag(SdrDragStat& rDrag) const
             {
                 return true;
             }
-		} 
-        else 
+		}
+        else
         {
 			if((1 == pHdl->GetPolyNum()) && (0 == pHdl->GetPointNum()))
                 return true;
@@ -364,23 +364,23 @@ bool SdrCaptionObj::applySpecialDrag(SdrDragStat& rDrag)
 {
 	const SdrHdl* pHdl = rDrag.GetHdl();
 
-    if(pHdl && 0 == pHdl->GetPolyNum()) 
+    if(pHdl && 0 == pHdl->GetPolyNum())
     {
 		const bool bRet(SdrRectObj::applySpecialDrag(rDrag));
         ImpRecalcTail();
 	    ActionChanged();
 
         return bRet;
-	} 
-    else 
+	}
+    else
     {
 		Point aDelt(rDrag.GetNow()-rDrag.GetStart());
-		
-        if(!pHdl) 
+
+        if(!pHdl)
         {
 			aRect.Move(aDelt.X(),aDelt.Y());
-		} 
-        else 
+		}
+        else
         {
 			aTailPoly[0] += aDelt;
 		}
@@ -404,23 +404,23 @@ String SdrCaptionObj::getSpecialDragComment(const SdrDragStat& rDrag) const
     {
         const SdrHdl* pHdl = rDrag.GetHdl();
 
-        if(pHdl && 0 == pHdl->GetPolyNum()) 
+        if(pHdl && 0 == pHdl->GetPolyNum())
         {
 		    return SdrRectObj::getSpecialDragComment(rDrag);
-	    } 
-        else 
+	    }
+        else
         {
 		    XubString aStr;
-    	
-            if(!pHdl) 
+
+            if(!pHdl)
             {
 			    ImpTakeDescriptionStr(STR_DragCaptFram, aStr);
-		    } 
-            else 
+		    }
+            else
             {
 			    ImpTakeDescriptionStr(STR_DragCaptTail, aStr);
 		    }
-    		
+
             return aStr;
 	    }
     }
@@ -476,15 +476,15 @@ void SdrCaptionObj::ImpCalcTail1(const ImpCaptParams& rPara, Polygon& rPoly, Rec
 	rPara.CalcEscPos(aTl, rRect, aEscPos, eEscDir);
 	aPol[1] = aEscPos;
 
-	if(eEscDir==LKS || eEscDir==RTS) 
+	if(eEscDir==LKS || eEscDir==RTS)
 	{
 		aPol[0].X() = aEscPos.X();
-	} 
-	else 
+	}
+	else
 	{
 		aPol[0].Y() = aEscPos.Y();
 	}
-	
+
 	rPoly = aPol;
 }
 

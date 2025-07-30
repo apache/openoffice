@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -72,7 +72,7 @@ XMLFontFamilyNamePropHdl::~XMLFontFamilyNamePropHdl()
 }
 
 sal_Bool XMLFontFamilyNamePropHdl::importXML( const OUString& rStrImpValue, uno::Any& rValue, const SvXMLUnitConverter& ) const
-{ 
+{
 	sal_Bool bRet = sal_False;
 	String sValue;
 	sal_Int32 nPos = 0;
@@ -120,12 +120,12 @@ sal_Bool XMLFontFamilyNamePropHdl::importXML( const OUString& rStrImpValue, uno:
 		rValue <<= OUString(sValue.GetBuffer());
 		bRet = sal_True;
 	}
-	
-	return bRet; 
+
+	return bRet;
 }
 
 sal_Bool XMLFontFamilyNamePropHdl::exportXML( OUString& rStrExpValue, const uno::Any& rValue, const SvXMLUnitConverter& ) const
-{ 
+{
 	sal_Bool bRet = sal_False;
 	OUString aStrFamilyName;
 
@@ -209,20 +209,20 @@ XMLFontFamilyPropHdl::~XMLFontFamilyPropHdl()
 }
 
 sal_Bool XMLFontFamilyPropHdl::importXML( const OUString& rStrImpValue, uno::Any& rValue, const SvXMLUnitConverter& ) const
-{ 
+{
 	sal_uInt16 eNewFamily;
 	sal_Bool bRet = SvXMLUnitConverter::convertEnum( eNewFamily, rStrImpValue, lcl_getFontFamilyGenericMapping() );
 	if( bRet )
 		rValue <<= (sal_Int16)eNewFamily;
 
-	return bRet; 
+	return bRet;
 }
 
 sal_Bool XMLFontFamilyPropHdl::exportXML( OUString& rStrExpValue, const uno::Any& rValue, const SvXMLUnitConverter& ) const
-{ 
+{
 	sal_Bool bRet = sal_False;
 	OUStringBuffer aOut;
-	
+
 	sal_Int16 nFamily = sal_Int16();
 	if( rValue >>= nFamily )
 	{
@@ -232,7 +232,7 @@ sal_Bool XMLFontFamilyPropHdl::exportXML( OUString& rStrExpValue, const uno::Any
 	}
 
 	rStrExpValue = aOut.makeStringAndClear();
-	
+
 	return bRet;
 }
 
@@ -247,17 +247,17 @@ XMLFontEncodingPropHdl::~XMLFontEncodingPropHdl()
 }
 
 sal_Bool XMLFontEncodingPropHdl::importXML( const OUString& rStrImpValue, uno::Any& rValue, const SvXMLUnitConverter& ) const
-{ 
+{
 	sal_Bool bRet = sal_True;
 
 	if( IsXMLToken( rStrImpValue, XML_X_SYMBOL ) )
 		rValue <<= (sal_Int16) RTL_TEXTENCODING_SYMBOL;
 
-	return bRet; 
+	return bRet;
 }
 
 sal_Bool XMLFontEncodingPropHdl::exportXML( OUString& rStrExpValue, const uno::Any& rValue, const SvXMLUnitConverter& ) const
-{ 
+{
 	sal_Bool bRet = sal_False;
 	OUStringBuffer aOut;
 	sal_Int16 nSet = sal_Int16();
@@ -286,17 +286,17 @@ XMLFontPitchPropHdl::~XMLFontPitchPropHdl()
 }
 
 sal_Bool XMLFontPitchPropHdl::importXML( const OUString& rStrImpValue, uno::Any& rValue, const SvXMLUnitConverter& ) const
-{ 
+{
 	sal_uInt16 eNewPitch;
 	sal_Bool bRet = SvXMLUnitConverter::convertEnum( eNewPitch, rStrImpValue, aFontPitchMapping );
 	if( bRet )
 		rValue <<= (sal_Int16)eNewPitch;
 
-	return bRet; 
+	return bRet;
 }
 
 sal_Bool XMLFontPitchPropHdl::exportXML( OUString& rStrExpValue, const uno::Any& rValue, const SvXMLUnitConverter& ) const
-{ 
+{
 	sal_Bool bRet = sal_False;
 	sal_Int16 nPitch = sal_Int16();
 	OUStringBuffer aOut;

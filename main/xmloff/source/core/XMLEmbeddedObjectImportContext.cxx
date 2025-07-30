@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -187,7 +187,7 @@ sal_Bool XMLEmbeddedObjectImportContext::SetComponent(
 	xImporter->setTargetDocument( rComp );
 
 	xComp = rComp;	// keep ref to component only if there is a handler
-	
+
 	return sal_True;
 }
 
@@ -332,7 +332,7 @@ void XMLEmbeddedObjectImportContext::EndElement()
 		// storing part is commented out since it should be done through the object, not the model
 		// TODO/LATER: probably an object should be provided here an be stored here
 
-//		// Save the object. That's required because the object should not be 
+//		// Save the object. That's required because the object should not be
 //		// modified (it has been loaded just now). Setting it to unmodified
 //		// only does not work, because it is then assumed that it has been
 //		// stored.
@@ -346,7 +346,7 @@ void XMLEmbeddedObjectImportContext::EndElement()
 //			catch( ::com::sun::star::beans::PropertyVetoException& )
 //			{
 //				Sequence<OUString> aSeq( 0 );
-//				GetImport().SetError( XMLERROR_FLAG_WARNING | 
+//				GetImport().SetError( XMLERROR_FLAG_WARNING |
 //								  XMLERROR_API,
 //								  aSeq );
 //			}
@@ -375,7 +375,7 @@ void XMLEmbeddedObjectImportContext::EndElement()
 //			catch( ::com::sun::star::beans::PropertyVetoException& e )
 //			{
 //				Sequence<OUString> aSeq( 0 );
-//				GetImport().SetError( XMLERROR_FLAG_WARNING | 
+//				GetImport().SetError( XMLERROR_FLAG_WARNING |
 //								  XMLERROR_API,
 //								  aSeq );
 //			}
@@ -388,4 +388,3 @@ void XMLEmbeddedObjectImportContext::Characters( const ::rtl::OUString& rChars )
 	if( xHandler.is() )
 		xHandler->characters( rChars );
 }
-	

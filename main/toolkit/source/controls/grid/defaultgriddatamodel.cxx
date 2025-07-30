@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -207,13 +207,13 @@ namespace toolkit
     {
         insertRow( getRowCount(), i_heading, i_data );
     }
-    
+
     //------------------------------------------------------------------------------------------------------------------
     void SAL_CALL DefaultGridDataModel::addRows( const Sequence< Any >& i_headings, const Sequence< Sequence< Any > >& i_data ) throw (IllegalArgumentException, RuntimeException)
     {
         insertRows( getRowCount(), i_headings, i_data );
     }
-    
+
     //------------------------------------------------------------------------------------------------------------------
     void SAL_CALL DefaultGridDataModel::insertRow( ::sal_Int32 i_index, const Any& i_heading, const Sequence< Any >& i_data ) throw (RuntimeException, IndexOutOfBoundsException)
     {
@@ -293,7 +293,7 @@ namespace toolkit
             aGuard
         );
     }
-    
+
     //------------------------------------------------------------------------------------------------------------------
     void SAL_CALL DefaultGridDataModel::removeAllRows(  ) throw (RuntimeException)
     {
@@ -308,7 +308,7 @@ namespace toolkit
             aGuard
         );
     }
-    
+
     //------------------------------------------------------------------------------------------------------------------
     void SAL_CALL DefaultGridDataModel::updateCellData( ::sal_Int32 i_columnIndex, ::sal_Int32 i_rowIndex, const Any& i_value ) throw (IndexOutOfBoundsException, RuntimeException)
     {
@@ -322,7 +322,7 @@ namespace toolkit
             aGuard
         );
     }
-    
+
     //------------------------------------------------------------------------------------------------------------------
     void SAL_CALL DefaultGridDataModel::updateRowData( const Sequence< ::sal_Int32 >& i_columnIndexes, ::sal_Int32 i_rowIndex, const Sequence< Any >& i_values ) throw (IndexOutOfBoundsException, IllegalArgumentException, RuntimeException)
     {
@@ -362,7 +362,7 @@ namespace toolkit
             aGuard
         );
     }
-    
+
     //------------------------------------------------------------------------------------------------------------------
     void SAL_CALL DefaultGridDataModel::updateRowHeading( ::sal_Int32 i_rowIndex, const Any& i_heading ) throw (IndexOutOfBoundsException, RuntimeException)
     {
@@ -379,7 +379,7 @@ namespace toolkit
             aGuard
         );
     }
-    
+
     //------------------------------------------------------------------------------------------------------------------
     void SAL_CALL DefaultGridDataModel::updateCellToolTip( ::sal_Int32 i_columnIndex, ::sal_Int32 i_rowIndex, const Any& i_value ) throw (IndexOutOfBoundsException, RuntimeException)
     {
@@ -402,7 +402,7 @@ namespace toolkit
     {
 	    rBHelper.addListener( XGridDataListener::static_type(), i_listener );
     }
-    
+
     //------------------------------------------------------------------------------------------------------------------
     void SAL_CALL DefaultGridDataModel::removeGridDataListener( const Reference< grid::XGridDataListener >& i_listener ) throw (RuntimeException)
     {

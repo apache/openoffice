@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -49,7 +49,7 @@ static const ::rtl::OUString TEST_HELPBOOKMARKS         = ::rtl::OUString::creat
 // static const ::rtl::OUString TEST_ACCESSIBILITYOPTIONS  = ::rtl::OUString::createFromAscii("checkAccessibilityOptions");
 // static const ::rtl::OUString TEST_PRINTOPTIONS          = ::rtl::OUString::createFromAscii("checkPrintOptions");
 static const ::rtl::OUString TEST_USEROPTIONS           = ::rtl::OUString::createFromAscii("checkUserOptions");
-    
+
 //=============================================================================
 class ConfigItemTest : public ::cppu::WeakImplHelper2< css::task::XJob         ,
                                                         css::lang::XServiceInfo >
@@ -58,7 +58,7 @@ class ConfigItemTest : public ::cppu::WeakImplHelper2< css::task::XJob         ,
     // interface
     public:
         explicit ConfigItemTest(const css::uno::Reference< css::uno::XComponentContext >& xContext);
-    
+
         // css::task::XJob
         virtual css::uno::Any SAL_CALL execute(const css::uno::Sequence< css::beans::NamedValue >& lArguments)
             throw (css::uno::RuntimeException         ,
@@ -68,27 +68,27 @@ class ConfigItemTest : public ::cppu::WeakImplHelper2< css::task::XJob         ,
         // css::lang::XServiceInfo
         virtual ::rtl::OUString SAL_CALL getImplementationName()
             throw (css::uno::RuntimeException);
-    
+
         virtual ::sal_Bool SAL_CALL supportsService(const ::rtl::OUString& sServiceName)
             throw (css::uno::RuntimeException);
-    
+
         virtual css::uno::Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames()
             throw (css::uno::RuntimeException);
-    
+
     //-------------------------------------------------------------------------
     // internal
     private:
         ConfigItemTest(ConfigItemTest &); // not defined
         virtual ~ConfigItemTest() {}
         void operator=(ConfigItemTest &); // not defined
-    
+
     //-------------------------------------------------------------------------
     // helper for registration !
     public:
         static ::rtl::OUString SAL_CALL st_getImplementationName();
         static css::uno::Sequence< ::rtl::OUString > SAL_CALL st_getSupportedServiceNames();
         static css::uno::Reference< css::uno::XInterface > SAL_CALL st_create(const css::uno::Reference< css::uno::XComponentContext >& XContext);
-        
+
     //-------------------------------------------------------------------------
     // member
     private:

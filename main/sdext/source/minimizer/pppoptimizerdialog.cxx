@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,25 +7,25 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
- 
+
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_sdext.hxx"
 
-#include "pppoptimizerdialog.hxx" 
-#include "optimizerdialog.hxx" 
+#include "pppoptimizerdialog.hxx"
+#include "optimizerdialog.hxx"
 
 #include <com/sun/star/ui/dialogs/ExecutableDialogResults.hpp>
 #include <rtl/strbuf.hxx>
@@ -49,7 +49,7 @@ using ::com::sun::star::awt::XWindowPeer;
 // ----------------------
 
 PPPOptimizerDialog::PPPOptimizerDialog(
-    const Reference< XComponentContext > &rxContext ) 
+    const Reference< XComponentContext > &rxContext )
     : m_xContext( rxContext )
     , mbInitialized( false )
 {
@@ -75,7 +75,7 @@ void SAL_CALL PPPOptimizerDialog::initialize( const Sequence< Any >& aArguments 
     if ( mbInitialized )
         throw RuntimeException(
             OUString( RTL_CONSTASCII_USTRINGPARAM(
-                "PPPOptimizerDialog has already been initialized!") ), 
+                "PPPOptimizerDialog has already been initialized!") ),
                     Reference< XInterface >() );
     aGuard.clear();
 
@@ -116,7 +116,7 @@ void SAL_CALL PPPOptimizerDialog::initialize( const Sequence< Any >& aArguments 
         throw IllegalArgumentException(
             OUString( RTL_CONSTASCII_USTRINGPARAM(
                 "PPPOptimizerDialog must be initialized with an "
-                "XFrame, XController or XModel!") ), 
+                "XFrame, XController or XModel!") ),
                     Reference< XInterface >(), 0 );
 
     aGuard.reset();
@@ -136,13 +136,13 @@ OUString SAL_CALL PPPOptimizerDialog::getImplementationName()
 	return PPPOptimizerDialog_getImplementationName();
 }
 
-sal_Bool SAL_CALL PPPOptimizerDialog::supportsService( const OUString& ServiceName ) 
+sal_Bool SAL_CALL PPPOptimizerDialog::supportsService( const OUString& ServiceName )
 	throw ( RuntimeException )
 {
     return ServiceName.equalsAsciiL( RTL_CONSTASCII_STRINGPARAM( SERVICE_NAME ) );
 }
 
-Sequence< OUString > SAL_CALL PPPOptimizerDialog::getSupportedServiceNames() 
+Sequence< OUString > SAL_CALL PPPOptimizerDialog::getSupportedServiceNames()
     throw (RuntimeException)
 {
 	return PPPOptimizerDialog_getSupportedServiceNames();
@@ -192,7 +192,7 @@ OUString PPPOptimizerDialog_getImplementationName()
 	return OUString ( RTL_CONSTASCII_USTRINGPARAM ( IMPLEMENTATION_NAME ) );
 }
 
-Sequence< OUString > PPPOptimizerDialog_getSupportedServiceNames() 
+Sequence< OUString > PPPOptimizerDialog_getSupportedServiceNames()
 {
 	Sequence < OUString > aRet(1);
     OUString* pArray = aRet.getArray();
@@ -200,7 +200,7 @@ Sequence< OUString > PPPOptimizerDialog_getSupportedServiceNames()
     return aRet;
 }
 
-Reference< XInterface > PPPOptimizerDialog_createInstance( const Reference< XComponentContext > & rSMgr) 
+Reference< XInterface > PPPOptimizerDialog_createInstance( const Reference< XComponentContext > & rSMgr)
     throw( Exception )
 {
 	return (cppu::OWeakObject*) new PPPOptimizerDialog( rSMgr );

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -34,7 +34,7 @@
 #include <basegfx/matrix/b2dhommatrix.hxx>
 #include <basegfx/range/b2irange.hxx>
 
-#if defined(DX_DEBUG_IMAGES) 
+#if defined(DX_DEBUG_IMAGES)
 # if OSL_DEBUG_LEVEL > 0
 #  include <imdebug.h>
 #  undef min
@@ -51,7 +51,7 @@ namespace dxcanvas
 	//////////////////////////////////////////////////////////////////////////////////
 
     DXBitmap::DXBitmap( const BitmapSharedPtr& rBitmap,
-                        bool				   bWithAlpha ) : 
+                        bool				   bWithAlpha ) :
         mpGdiPlusUser( GDIPlusUser::createInstance() ),
         maSize(rBitmap->GetWidth(),rBitmap->GetHeight()),
 		mpBitmap(rBitmap),
@@ -61,7 +61,7 @@ namespace dxcanvas
     }
 
 	DXBitmap::DXBitmap( const ::basegfx::B2IVector& rSize,
-						bool						bWithAlpha ) : 
+						bool						bWithAlpha ) :
         mpGdiPlusUser( GDIPlusUser::createInstance() ),
         maSize(rSize),
 		mpBitmap(),
@@ -71,16 +71,16 @@ namespace dxcanvas
 		// create container for pixel data
 		if(mbAlpha)
 		{
-			mpBitmap.reset( 
-				new Gdiplus::Bitmap( 
+			mpBitmap.reset(
+				new Gdiplus::Bitmap(
 					maSize.getX(),
 					maSize.getY(),
 					PixelFormat32bppARGB));
 		}
 		else
 		{
-			mpBitmap.reset( 
-				new Gdiplus::Bitmap( 
+			mpBitmap.reset(
+				new Gdiplus::Bitmap(
 					maSize.getX(),
 					maSize.getY(),
 					PixelFormat24bppRGB));
@@ -109,7 +109,7 @@ namespace dxcanvas
         return mbAlpha;
     }
 
-    uno::Sequence< sal_Int8 > DXBitmap::getData( rendering::IntegerBitmapLayout&     /*bitmapLayout*/, 
+    uno::Sequence< sal_Int8 > DXBitmap::getData( rendering::IntegerBitmapLayout&     /*bitmapLayout*/,
                                                  const geometry::IntegerRectangle2D& rect )
     {
         uno::Sequence< sal_Int8 > aRes( (rect.X2-rect.X1)*(rect.Y2-rect.Y1)*4 ); // TODO(F1): Be format-agnostic here
@@ -121,7 +121,7 @@ namespace dxcanvas
         aBmpData.Height		 = rect.Y2-rect.Y1;
         aBmpData.Stride 	 = 4*aBmpData.Width;
         aBmpData.PixelFormat = PixelFormat32bppARGB;
-        aBmpData.Scan0		 = aRes.getArray(); 
+        aBmpData.Scan0		 = aRes.getArray();
 
         // TODO(F1): Support more pixel formats natively
 
@@ -143,8 +143,8 @@ namespace dxcanvas
         return aRes;
     }
 
-    void DXBitmap::setData( const uno::Sequence< sal_Int8 >& 		data, 
-                            const rendering::IntegerBitmapLayout&   /*bitmapLayout*/, 
+    void DXBitmap::setData( const uno::Sequence< sal_Int8 >& 		data,
+                            const rendering::IntegerBitmapLayout&   /*bitmapLayout*/,
                             const geometry::IntegerRectangle2D& 	rect )
     {
         const Gdiplus::Rect aRect( tools::gdiPlusRectFromIntegerRectangle2D( rect ) );
@@ -154,7 +154,7 @@ namespace dxcanvas
         aBmpData.Height		 = rect.Y2-rect.Y1;
         aBmpData.Stride 	 = 4*aBmpData.Width;
         aBmpData.PixelFormat = PixelFormat32bppARGB;
-        aBmpData.Scan0		 = (void*)data.getConstArray(); 
+        aBmpData.Scan0		 = (void*)data.getConstArray();
 
         // TODO(F1): Support more pixel formats natively
 
@@ -174,40 +174,40 @@ namespace dxcanvas
     }
 
     void DXBitmap::setPixel( const uno::Sequence< sal_Int8 >&       color,
-                             const rendering::IntegerBitmapLayout&  /*bitmapLayout*/, 
+                             const rendering::IntegerBitmapLayout&  /*bitmapLayout*/,
                              const geometry::IntegerPoint2D&        pos )
     {
         const geometry::IntegerSize2D aSize( maSize.getX(),maSize.getY() );
 
-        ENSURE_ARG_OR_THROW( pos.X >= 0 && pos.X < aSize.Width, 
+        ENSURE_ARG_OR_THROW( pos.X >= 0 && pos.X < aSize.Width,
                              "CanvasHelper::setPixel: X coordinate out of bounds" );
-        ENSURE_ARG_OR_THROW( pos.Y >= 0 && pos.Y < aSize.Height, 
+        ENSURE_ARG_OR_THROW( pos.Y >= 0 && pos.Y < aSize.Height,
                              "CanvasHelper::setPixel: Y coordinate out of bounds" );
-        ENSURE_ARG_OR_THROW( color.getLength() > 3, 
+        ENSURE_ARG_OR_THROW( color.getLength() > 3,
                              "CanvasHelper::setPixel: not enough color components" );
 
-        if( Gdiplus::Ok != mpBitmap->SetPixel( pos.X, pos.Y, 
+        if( Gdiplus::Ok != mpBitmap->SetPixel( pos.X, pos.Y,
                                                       Gdiplus::Color( tools::sequenceToArgb( color ))))
         {
             throw uno::RuntimeException();
         }
     }
 
-    uno::Sequence< sal_Int8 > DXBitmap::getPixel( rendering::IntegerBitmapLayout&   /*bitmapLayout*/, 
+    uno::Sequence< sal_Int8 > DXBitmap::getPixel( rendering::IntegerBitmapLayout&   /*bitmapLayout*/,
                                                   const geometry::IntegerPoint2D&   pos )
     {
         const geometry::IntegerSize2D aSize( maSize.getX(),maSize.getY() );
 
-        ENSURE_ARG_OR_THROW( pos.X >= 0 && pos.X < aSize.Width, 
+        ENSURE_ARG_OR_THROW( pos.X >= 0 && pos.X < aSize.Width,
                              "CanvasHelper::getPixel: X coordinate out of bounds" );
-        ENSURE_ARG_OR_THROW( pos.Y >= 0 && pos.Y < aSize.Height, 
+        ENSURE_ARG_OR_THROW( pos.Y >= 0 && pos.Y < aSize.Height,
                              "CanvasHelper::getPixel: Y coordinate out of bounds" );
 
         Gdiplus::Color aColor;
 
         if( Gdiplus::Ok != mpBitmap->GetPixel( pos.X, pos.Y, &aColor ) )
             return uno::Sequence< sal_Int8 >();
-	        
+
         return tools::argbToIntSequence(aColor.GetValue());
     }
 

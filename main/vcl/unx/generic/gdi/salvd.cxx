@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -96,7 +96,7 @@ void X11SalGraphics::Init( X11SalVirtualDevice *pDevice, SalColormap* pColormap,
 
 	SalDisplay *pDisplay  = pDevice->GetDisplay();
     m_nScreen = pDevice->GetScreenNumber();
-	
+
 	int nVisualDepth = pDisplay->GetColormap( m_nScreen ).GetVisual().GetDepth();
 	int nDeviceDepth = pDevice->GetDepth();
 
@@ -109,10 +109,10 @@ void X11SalGraphics::Init( X11SalVirtualDevice *pDevice, SalColormap* pColormap,
 	else
 	if( nDeviceDepth == nVisualDepth )
 		m_pColormap = &pDisplay->GetColormap( m_nScreen );
-	else 
+	else
 	if( nDeviceDepth == 1 )
 		m_pColormap = m_pDeleteColormap = new SalColormap();
-			 
+
     if (m_pDeleteColormap != pOrigDeleteColormap)
 		delete pOrigDeleteColormap;
 
@@ -218,7 +218,7 @@ sal_Bool X11SalVirtualDevice::SetSize( long nDX, long nDY )
 {
 	if( bExternPixmap_ )
 		return sal_False;
-    
+
     // #144688#
     // the X protocol request CreatePixmap puts an upper bound
     // of 16 bit to the size. Beyond that there may be implementation
@@ -258,7 +258,7 @@ sal_Bool X11SalVirtualDevice::SetSize( long nDX, long nDY )
 
 	if( pGraphics_ )
 		InitGraphics( this );
-	
+
 	return sal_True;
 }
 

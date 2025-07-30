@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -39,7 +39,7 @@ T3SQLConnect pODBC3SQLConnect;
 T3SQLDriverConnect pODBC3SQLDriverConnect;
 T3SQLBrowseConnect pODBC3SQLBrowseConnect;
 T3SQLDataSources pODBC3SQLDataSources;
-T3SQLDrivers pODBC3SQLDrivers; 
+T3SQLDrivers pODBC3SQLDrivers;
 T3SQLGetInfo pODBC3SQLGetInfo;
 T3SQLGetFunctions pODBC3SQLGetFunctions;
 T3SQLGetTypeInfo pODBC3SQLGetTypeInfo;
@@ -83,7 +83,7 @@ T3SQLForeignKeys pODBC3SQLForeignKeys;
 T3SQLPrimaryKeys pODBC3SQLPrimaryKeys;
 T3SQLProcedureColumns pODBC3SQLProcedureColumns;
 T3SQLProcedures pODBC3SQLProcedures;
-T3SQLSpecialColumns pODBC3SQLSpecialColumns;						
+T3SQLSpecialColumns pODBC3SQLSpecialColumns;
 T3SQLStatistics pODBC3SQLStatistics;
 T3SQLTablePrivileges pODBC3SQLTablePrivileges;
 T3SQLTables pODBC3SQLTables;
@@ -111,14 +111,14 @@ sal_Bool LoadLibrary_ADABAS(::rtl::OUString &_rPath)
 	::rtl::OUString sTemp(RTL_CONSTASCII_USTRINGPARAM("DBROOT"));
 	if ( osl_getEnvironment(sTemp.pData,&pPath) == osl_Process_E_None && pPath )
 	{
-		
+
 #if ( defined(SOLARIS) && defined(SPARC)) || defined(LINUX) || defined(MACOSX)
 		_rPath = ::rtl::OUString(pPath);
 		_rPath += ::rtl::OUString::createFromAscii("/lib/");
 #endif
 		rtl_uString_release(pPath);
 	}
-	else 
+	else
 	{
 		_rPath = ::rtl::OUString(RTL_CONSTASCII_USTRINGPARAM("The variable DBROOT is not set."));
 		return sal_False;
@@ -215,7 +215,7 @@ sal_Bool LoadFunctions(oslModule pODBCso)
 	if( ( pODBC3SQLFetch			=	(T3SQLFetch)osl_getFunctionSymbol(pODBCso, ::rtl::OUString::createFromAscii("SQLFetch").pData )) == NULL )
 		return sal_False;
 	if( ( pODBC3SQLFetchScroll	=	(T3SQLFetchScroll)osl_getFunctionSymbol(pODBCso, ::rtl::OUString::createFromAscii("SQLFetchScroll").pData )) == NULL )
-		return sal_False;					
+		return sal_False;
 	if( ( pODBC3SQLGetData		=	(T3SQLGetData)osl_getFunctionSymbol(pODBCso, ::rtl::OUString::createFromAscii("SQLGetData").pData )) == NULL )
 		return sal_False;
 	if( ( pODBC3SQLSetPos		=	(T3SQLSetPos)osl_getFunctionSymbol(pODBCso, ::rtl::OUString::createFromAscii("SQLSetPos").pData )) == NULL )
@@ -245,7 +245,7 @@ sal_Bool LoadFunctions(oslModule pODBCso)
 	if( ( pODBC3SQLTablePrivileges =	(T3SQLTablePrivileges)osl_getFunctionSymbol(pODBCso, ::rtl::OUString::createFromAscii("SQLTablePrivileges").pData )) == NULL )
 		return sal_False;
 	if( ( pODBC3SQLTables		=   (T3SQLTables)osl_getFunctionSymbol(pODBCso, ::rtl::OUString::createFromAscii("SQLTables").pData )) == NULL )
-		return sal_False;					
+		return sal_False;
 	if( ( pODBC3SQLFreeStmt		=	(T3SQLFreeStmt)osl_getFunctionSymbol(pODBCso, ::rtl::OUString::createFromAscii("SQLFreeStmt").pData )) == NULL )
 		return sal_False;
 	if( ( pODBC3SQLCloseCursor	=	(T3SQLCloseCursor)osl_getFunctionSymbol(pODBCso, ::rtl::OUString::createFromAscii("SQLCloseCursor").pData )) == NULL )

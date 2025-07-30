@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
@@ -182,7 +182,7 @@ SvXMLImportContext *SdXMLShapeContext::CreateChildContext( sal_uInt16 p_nPrefix,
 	SvXMLImportContext * pContext = NULL;
 
 	// #i68101#
-	if( p_nPrefix == XML_NAMESPACE_SVG &&	
+	if( p_nPrefix == XML_NAMESPACE_SVG &&
 		(IsXMLToken( rLocalName, XML_TITLE ) || IsXMLToken( rLocalName, XML_DESC ) ) )
 	{
 		pContext = new SdXMLDescriptionContext( GetImport(), p_nPrefix, rLocalName, xAttrList, mxShape );
@@ -964,12 +964,12 @@ void SdXMLShapeContext::onDemandRescueUsefulDataFromTemporary( const SvXMLImport
                 const sal_Int32 nSourceIdentifier = aSourceIdSequence[nSourceIndex];
 
                 // loop over GluePoints which are UserDefined (avoid the auto mapped ones)
-                if((xSourceGluePoints->getByIdentifier( nSourceIdentifier ) >>= aSourceGluePoint) 
+                if((xSourceGluePoints->getByIdentifier( nSourceIdentifier ) >>= aSourceGluePoint)
                     && aSourceGluePoint.IsUserDefined)
                 {
                     // get original mappingID back, this is the draw:id imported with a draw:glue-point
-                    const sal_Int32 nDestinnationId = xSourceShapeImportHelper->findGluePointMapping( 
-                        pCandidate->getShape(), 
+                    const sal_Int32 nDestinnationId = xSourceShapeImportHelper->findGluePointMapping(
+                        pCandidate->getShape(),
                         nSourceIdentifier );
 
                     if(-1 != nSourceIdentifier)
@@ -1414,10 +1414,10 @@ void SdXMLPolygonShapeContext::StartElement(const uno::Reference< xml::sax::XAtt
                     if(aPolygon.count())
                     {
                         const basegfx::B2DRange aSourceRange(
-                            aViewBox.GetX(), aViewBox.GetY(), 
+                            aViewBox.GetX(), aViewBox.GetY(),
                             aViewBox.GetX() + aViewBox.GetWidth(), aViewBox.GetY() + aViewBox.GetHeight());
                         const basegfx::B2DRange aTargetRange(
-                            aViewBox.GetX(), aViewBox.GetY(), 
+                            aViewBox.GetX(), aViewBox.GetY(),
                             aViewBox.GetX() + aSize.getX(), aViewBox.GetY() + aSize.getY());
 
                         if(!aSourceRange.equal(aTargetRange))
@@ -1515,10 +1515,10 @@ void SdXMLPathShapeContext::StartElement(const uno::Reference< xml::sax::XAttrib
             if(aPolyPolygon.count())
             {
                 const basegfx::B2DRange aSourceRange(
-                    aViewBox.GetX(), aViewBox.GetY(), 
+                    aViewBox.GetX(), aViewBox.GetY(),
                     aViewBox.GetX() + aViewBox.GetWidth(), aViewBox.GetY() + aViewBox.GetHeight());
                 const basegfx::B2DRange aTargetRange(
-                    aViewBox.GetX(), aViewBox.GetY(), 
+                    aViewBox.GetX(), aViewBox.GetY(),
                     aViewBox.GetX() + aSize.getX(), aViewBox.GetY() + aSize.getY());
 
                 if(!aSourceRange.equal(aTargetRange))
@@ -2086,7 +2086,7 @@ void SdXMLConnectorShapeContext::StartElement(const uno::Reference< xml::sax::XA
 			if ( maPath.hasValue() )
             {
                 // --> OD #i115492#
-                // Ignore svg:d attribute for text documents created by OpenOffice.org 
+                // Ignore svg:d attribute for text documents created by OpenOffice.org
                 // versions before OOo 3.3, because these OOo versions are storing
                 // svg:d values not using the correct unit.
                 bool bApplySVGD( true );
@@ -2104,13 +2104,13 @@ void SdXMLConnectorShapeContext::StartElement(const uno::Reference< xml::sax::XA
                              ( nUPD == 320 ) ) ) )                  // OOo 3.2 - OOo 3.2.1
                     {
                         bApplySVGD = false;
-                    }    
-                }            
+                    }
+                }
 
                 if ( bApplySVGD )
                 {
                     xProps->setPropertyValue( OUString(RTL_CONSTASCII_USTRINGPARAM("PolyPolygonBezier") ), maPath );
-                }                                                                                        
+                }
                 // <--
             }
 
@@ -2370,7 +2370,7 @@ void SdXMLCaptionShapeContext::StartElement(const uno::Reference< xml::sax::XAtt
 		uno::Reference< beans::XPropertySet > xProps( mxShape, uno::UNO_QUERY );
 
 		// SJ: If AutoGrowWidthItem is set, SetTransformation will lead to the wrong SnapRect
-		// because NbcAdjustTextFrameWidthAndHeight() is called (text is set later and center alignment 
+		// because NbcAdjustTextFrameWidthAndHeight() is called (text is set later and center alignment
 		// is the default setting, so the top left reference point that is used by the caption point is
 		// no longer correct) There are two ways to solve this problem, temporarily disabling the
 		// autogrowwith as we are doing here or to apply the CaptionPoint after setting text
@@ -2383,7 +2383,7 @@ void SdXMLCaptionShapeContext::StartElement(const uno::Reference< xml::sax::XAtt
 			if ( bIsAutoGrowWidth )
 				xProps->setPropertyValue( OUString(RTL_CONSTASCII_USTRINGPARAM("TextAutoGrowWidth")), uno::makeAny( sal_False ) );
 		}
-			
+
 		// set pos, size, shear and rotate
 		SetTransformation();
 		if( xProps.is() )
@@ -3028,7 +3028,7 @@ void SdXMLAppletShapeContext::EndElement()
 			aAny <<= aRect;
 			xProps->setPropertyValue( OUString( RTL_CONSTASCII_USTRINGPARAM( "VisibleArea" ) ), aAny );
 		}
-	
+
 		if( maParams.getLength() )
 		{
 			aAny <<= maParams;
@@ -3266,17 +3266,17 @@ void SdXMLPluginShapeContext::EndElement()
 		else
 		{
 			// in case we have a media object
-			
+
 			OUString sTempRef;
-			
+
 			// check for package URL
 			if( GetImport().IsPackageURL( maHref ) )
 			{
-			    sTempRef = OUString( RTL_CONSTASCII_USTRINGPARAM( "vnd.sun.star.Package:" ) );			    
+			    sTempRef = OUString( RTL_CONSTASCII_USTRINGPARAM( "vnd.sun.star.Package:" ) );
 			}
-			
+
 			sTempRef += maHref;
-			
+
 			xProps->setPropertyValue( OUString( RTL_CONSTASCII_USTRINGPARAM( "MediaURL" ) ), uno::makeAny( sTempRef ) );
 
 			for( sal_Int32 nParam = 0; nParam < maParams.getLength(); ++nParam )
@@ -3521,7 +3521,7 @@ void SdXMLFrameShapeContext::removeGraphicFromImportContext(const SvXMLImportCon
             if(xChild.is())
             {
                 uno::Reference< drawing::XShapes > xParent(xChild->getParent(), uno::UNO_QUERY_THROW);
-            
+
                 if(xParent.is())
                 {
                     // remove from parent
@@ -3638,7 +3638,7 @@ SvXMLImportContext *SdXMLFrameShapeContext::CreateChildContext( sal_uInt16 nPref
 			}
 		}
 	}
-	else if( 
+	else if(
 			( nPrefix == XML_NAMESPACE_SVG &&	// #i68101#
 				(IsXMLToken( rLocalName, XML_TITLE ) || IsXMLToken( rLocalName, XML_DESC ) ) ) ||
 			 (nPrefix == XML_NAMESPACE_OFFICE && IsXMLToken( rLocalName, XML_EVENT_LISTENERS ) ) ||
@@ -3838,7 +3838,7 @@ void SdXMLCustomShapeContext::EndElement()
 {
     // for backward compatibility, the above SetTransformation() may already have
     // applied a call to SetMirroredX/SetMirroredY. This is not yet added to the
-    // beans::PropertyValues in maCustomShapeGeometry. When applying these now, this 
+    // beans::PropertyValues in maCustomShapeGeometry. When applying these now, this
     // would be lost again.
     // TTTT: Remove again after aw080
     if(!maUsedTransformation.isIdentity())
@@ -4027,7 +4027,7 @@ void SdXMLTableShapeContext::StartElement( const ::com::sun::star::uno::Referenc
 			    catch( Exception& )
 			    {
 				    DBG_ERROR("SdXMLTableShapeContext::StartElement(), exception caught!");
-			    }			
+			    }
             }
 		}
 

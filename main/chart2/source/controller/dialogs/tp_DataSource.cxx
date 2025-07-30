@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -327,7 +327,7 @@ DataSourceTabPage::DataSourceTabPage(
     m_aEDT_CATEGORIES.SetModifyHdl( LINK( this, DataSourceTabPage, RangeModifiedHdl ));
     m_aEDT_RANGE.SetUpdateDataHdl( LINK( this, DataSourceTabPage, RangeUpdateDataHdl ));
     m_aEDT_CATEGORIES.SetUpdateDataHdl( LINK( this, DataSourceTabPage, RangeUpdateDataHdl ));
-    
+
     // #i75179# enable setting the background to a different color
     m_aEDT_RANGE.SetStyle( m_aEDT_RANGE.GetStyle() | WB_FORCECTRLBACKGROUND );
     m_aEDT_CATEGORIES.SetStyle( m_aEDT_CATEGORIES.GetStyle() | WB_FORCECTRLBACKGROUND );

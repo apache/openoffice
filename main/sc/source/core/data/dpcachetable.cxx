@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -84,7 +84,7 @@ bool  ScDPCacheTable::FilterItem::match( const  ScDPItemData& rCellData ) const
 }
 // ----------------------------------------------------------------------------
 
-ScDPCacheTable::SingleFilter::SingleFilter(String aString, double fValue, bool bHasValue) 
+ScDPCacheTable::SingleFilter::SingleFilter(String aString, double fValue, bool bHasValue)
 {
     maItem.maString = aString;
     maItem.mfValue      = fValue;
@@ -113,7 +113,7 @@ bool ScDPCacheTable::SingleFilter::hasValue() const
 
 // ----------------------------------------------------------------------------
 
-ScDPCacheTable::GroupFilter::GroupFilter() 
+ScDPCacheTable::GroupFilter::GroupFilter()
 {
 }
 
@@ -153,8 +153,8 @@ ScDPCacheTable::Criterion::Criterion() :
 
 // ----------------------------------------------------------------------------
 
-ScDPCacheTable::ScDPCacheTable( ScDocument* pDoc,long nId ) : 
-	mpCache( NULL ), 
+ScDPCacheTable::ScDPCacheTable( ScDocument* pDoc,long nId ) :
+	mpCache( NULL ),
 	mpNoneCache( NULL )
 {
  	if ( nId >= 0 )
@@ -197,7 +197,7 @@ void ScDPCacheTable::fillTable(  const ScQueryParam& rQuery, sal_Bool* pSpecial,
     // Initialize field entries container.
     maFieldEntries.clear();
     maFieldEntries.reserve(nColCount);
-    
+
     // Data rows
     for (SCCOL nCol = 0; nCol < nColCount; ++nCol)
     {
@@ -210,11 +210,11 @@ void ScDPCacheTable::fillTable(  const ScQueryParam& rQuery, sal_Bool* pSpecial,
 			{
 				SCROW nIndex = GetCache()->GetItemDataId( nCol, nRow, bRepeatIfEmpty );
 				SCROW nOrder = GetCache()->GetOrder( nCol, nIndex );
-                
+
                 if ( nCol == 0 )
                          maRowsVisible.push_back(false);
 
-				if ( lcl_HasQueryEntry(rQuery) &&  
+				if ( lcl_HasQueryEntry(rQuery) &&
 					!GetCache()->ValidQuery( nRow , rQuery, pSpecial ) )
 					continue;
 				if ( bIgnoreEmptyRows &&  GetCache()->IsRowEmpty( nRow ) )
@@ -252,7 +252,7 @@ void ScDPCacheTable::fillTable()
     // Initialize field entries container.
     maFieldEntries.clear();
     maFieldEntries.reserve(nColCount);
-    
+
     // Data rows
     for (SCCOL nCol = 0; nCol < nColCount; ++nCol)
     {
@@ -265,7 +265,7 @@ void ScDPCacheTable::fillTable()
 			{
 				SCROW nIndex = GetCache()->GetItemDataId( nCol, nRow, false );
 				SCROW nOrder = GetCache()->GetOrder( nCol, nIndex );
-                
+
 				if ( nCol == 0 )
 				     maRowsVisible.push_back(true);
 
@@ -310,7 +310,7 @@ void ScDPCacheTable::filterByPageDimension(const vector<Criterion>& rCriteria, c
 }
 
 const ScDPItemData* ScDPCacheTable::getCell(SCCOL nCol, SCROW nRow, bool bRepeatIfEmpty) const
-{ 
+{
    SCROW nId= GetCache()->GetItemDataId(nCol, nRow, bRepeatIfEmpty);
    return GetCache()->GetItemDataById( nCol, nId );
 }
@@ -318,7 +318,7 @@ const ScDPItemData* ScDPCacheTable::getCell(SCCOL nCol, SCROW nRow, bool bRepeat
 void  ScDPCacheTable::getValue( ScDPValueData& rVal, SCCOL nCol, SCROW nRow, bool bRepeatIfEmpty) const
 {
 	const ScDPItemData* pData = getCell( nCol, nRow, bRepeatIfEmpty );
-	   
+
 	if (pData)
 	{
 		rVal.fValue = pData->IsValue() ? pData->GetValue() : 0.0;
@@ -348,7 +348,7 @@ const ::std::vector<SCROW>&  ScDPCacheTable::getFieldEntries( sal_Int32 nColumn 
 	 return maFieldEntries[nColumn];
 }
 
-void ScDPCacheTable::filterTable(const vector<Criterion>& rCriteria, Sequence< Sequence<Any> >& rTabData, 
+void ScDPCacheTable::filterTable(const vector<Criterion>& rCriteria, Sequence< Sequence<Any> >& rTabData,
                                  const hash_set<sal_Int32>& rRepeatIfEmptyDims)
 {
     sal_Int32 nRowSize = getRowSize();

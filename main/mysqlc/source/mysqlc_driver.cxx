@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 #include "mysqlc_driver.hxx"
 #include "mysqlc_connection.hxx"
@@ -52,7 +52,7 @@ void MysqlCDriver::disposing()
 {
 	OSL_TRACE("MysqlCDriver::disposing");
 	::osl::MutexGuard aGuard(m_aMutex);
-	
+
 	// when driver will be destroied so all our connections have to be destroied as well
 	for (OWeakRefArray::iterator i = m_xConnections.begin(); m_xConnections.end() != i; ++i)
 	{
@@ -84,7 +84,7 @@ Sequence< OUString > MysqlCDriver::getSupportedServiceNames_Static()
 	throw(RuntimeException)
 {
 	OSL_TRACE("MysqlCDriver::getSupportedServiceNames_Static");
-	// which service is supported 
+	// which service is supported
 	// for more information @see com.sun.star.sdbc.Driver
 	Sequence< OUString > aSNS(1);
 	aSNS[0] = OUString::createFromAscii("com.sun.star.sdbc.Driver");
@@ -175,7 +175,7 @@ Reference< XConnection > SAL_CALL MysqlCDriver::connect(const OUString& url, con
 	}
     catch (sql::SQLException &e)
     {
-		mysqlc_sdbc_driver::translateAndThrow(e, *this, getDefaultEncoding());	
+		mysqlc_sdbc_driver::translateAndThrow(e, *this, getDefaultEncoding());
 	}
     return xConn;
 }
@@ -256,7 +256,7 @@ Reference< XInterface >  SAL_CALL MysqlCDriver_CreateInstance(const Reference< X
 /* {{{ connectivity::mysqlc::release() -I- */
 void release(oslInterlockedCount& _refCount,
 			 ::cppu::OBroadcastHelper& rBHelper,
-			 Reference< XInterface >& _xInterface, 
+			 Reference< XInterface >& _xInterface,
 			 ::com::sun::star::lang::XComponent* _pObject)
 {
 	if (osl_decrementInterlockedCount(&_refCount) == 0) {

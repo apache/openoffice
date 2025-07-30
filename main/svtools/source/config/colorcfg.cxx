@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -59,10 +59,10 @@ namespace svtools
 static const sal_Char cColor[] = "/Color";
 static const sal_Char cColorSchemes[] = "ColorSchemes/";
 sal_Int32            nColorRefCount_Impl = 0;
-namespace 
+namespace
 {
-    struct ColorMutex_Impl 
-        : public rtl::Static< ::osl::Mutex, ColorMutex_Impl > {}; 
+    struct ColorMutex_Impl
+        : public rtl::Static< ::osl::Mutex, ColorMutex_Impl > {};
 }
 
 ColorConfig_Impl*    ColorConfig::m_pImpl = NULL;
@@ -490,7 +490,7 @@ Color ColorConfig::GetDefaultColor(ColorConfigEntry eEntry)
 		0x000000, // SQLOPERATOR
 		0x0000E6, // SQLKEYWORD
 		0x259D9D, // SQLPARAMTER
-		0x969696,// SQLCOMMENT 
+		0x969696,// SQLCOMMENT
     };
     Color aRet;
     switch(eEntry)
@@ -505,7 +505,7 @@ Color ColorConfig::GetDefaultColor(ColorConfigEntry eEntry)
 
         case SPELL :
         case DRAWDRAWING :
-        case SMARTTAGS :            
+        case SMARTTAGS :
         {
             const StyleSettings& rStyleSettings = Application::GetSettings().GetStyleSettings();
                 aRet = rStyleSettings.GetHighContrastMode() ?

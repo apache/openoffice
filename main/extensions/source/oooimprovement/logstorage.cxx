@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -56,20 +56,20 @@ namespace
             result = path_sub->substituteVariables(result, sal_False);
         return result;
     }
-    
+
     static bool isZipfile(const OUString& fileurl)
     {
         static const OUString file_extension = OUString::createFromAscii(".zip");
-        return fileurl.match(file_extension, fileurl.getLength()-file_extension.getLength()); 
+        return fileurl.match(file_extension, fileurl.getLength()-file_extension.getLength());
     };
-    
+
     static bool isLogfile(const OUString& fileurl)
     {
         static const OUString file_extension = OUString::createFromAscii(".csv");
         static const OUString current = OUString::createFromAscii("Current.csv");
         return
             fileurl.match(file_extension, fileurl.getLength()-file_extension.getLength())
-            && !fileurl.match(current, fileurl.getLength()-current.getLength()); 
+            && !fileurl.match(current, fileurl.getLength()-current.getLength());
     };
 
     static bool isZipOrLogFile(const OUString& fileurl)
@@ -84,9 +84,9 @@ namespace
             UNO_QUERY_THROW);
         return file_access->getFolderContents(
             getLogPathFromCfg(sf),
-            false);   
+            false);
     };
-    
+
     static vector<OUString> getLogStoragefiles(
         const Reference<XMultiServiceFactory>& sf,
         bool (*condition)(const OUString& path))
@@ -98,7 +98,7 @@ namespace
             if(condition(candidates[idx]))
                 result.push_back(candidates[idx]);
         return result;
-    }; 
+    };
 
     static void assureLogStorageExists(const Reference<XMultiServiceFactory>& sf)
     {
@@ -117,7 +117,7 @@ namespace oooimprovement
     LogStorage::LogStorage(const Reference<XMultiServiceFactory>& sf)
         : m_ServiceFactory(sf)
     {}
-    
+
     void LogStorage::assureExists()
     {
         assureLogStorageExists(m_ServiceFactory);
@@ -137,7 +137,7 @@ namespace oooimprovement
 
     const vector<OUString> LogStorage::getUnzippedLogFiles() const
     { return getLogStoragefiles(m_ServiceFactory, &isLogfile); }
-    
+
     const vector<OUString> LogStorage::getZippedLogFiles() const
     { return getLogStoragefiles(m_ServiceFactory, &isZipfile); }
-} 
+}

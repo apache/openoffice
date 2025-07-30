@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -52,8 +52,8 @@ namespace slideshow
 
             // already added?
             uno::Reference<presentation::XSlideShowView> rUnoView = rView->getUnoView();
-            if( ::std::find_if( maViews.begin(), 
-                                aEnd, 
+            if( ::std::find_if( maViews.begin(),
+                                aEnd,
                                 ::boost::bind(
                                     ::std::equal_to< uno::Reference< presentation::XSlideShowView > >(),
                                     ::boost::cref( rUnoView ),
@@ -71,15 +71,15 @@ namespace slideshow
             return true;
         }
 
-        UnoViewSharedPtr UnoViewContainer::removeView( const uno::Reference< presentation::XSlideShowView >& xView )        
+        UnoViewSharedPtr UnoViewContainer::removeView( const uno::Reference< presentation::XSlideShowView >& xView )
         {
             // check whether same view is already added
             const UnoViewVector::iterator aEnd( maViews.end() );
             UnoViewVector::iterator aIter;
 
             // added in the first place?
-            if( (aIter=::std::find_if( maViews.begin(), 
-                                       aEnd, 
+            if( (aIter=::std::find_if( maViews.begin(),
+                                       aEnd,
                                        ::boost::bind(
                                            ::std::equal_to< uno::Reference< presentation::XSlideShowView > >(),
                                            ::boost::cref( xView ),
@@ -91,10 +91,10 @@ namespace slideshow
                 return UnoViewSharedPtr();
             }
 
-            OSL_ENSURE( 
-                ::std::count_if( 
-                    maViews.begin(), 
-                    aEnd, 
+            OSL_ENSURE(
+                ::std::count_if(
+                    maViews.begin(),
+                    aEnd,
                     ::boost::bind(
                         ::std::equal_to< uno::Reference< presentation::XSlideShowView > >(),
                         ::boost::cref( xView ),
@@ -116,16 +116,16 @@ namespace slideshow
             // remove locally
             const UnoViewVector::iterator aEnd( maViews.end() );
             UnoViewVector::iterator aIter;
-            if( (aIter=::std::find( maViews.begin(), 
-                                    aEnd, 
+            if( (aIter=::std::find( maViews.begin(),
+                                    aEnd,
                                     rView )) == aEnd )
             {
                 // view seemingly was not added, failed
                 return false;
             }
 
-            OSL_ENSURE( ::std::count( maViews.begin(), 
-                                      aEnd, 
+            OSL_ENSURE( ::std::count( maViews.begin(),
+                                      aEnd,
                                       rView ) == 1,
                         "UnoViewContainer::removeView(): View was added multiple times" );
 
@@ -140,7 +140,7 @@ namespace slideshow
             ::std::for_each( maViews.begin(),
                              maViews.end(),
                              ::boost::mem_fn(&UnoView::_dispose) );
-            maViews.clear();            
+            maViews.clear();
         }
     }
 }

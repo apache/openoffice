@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -47,7 +47,7 @@ namespace dbaccess
 	using namespace ::com::sun::star::sdbcx;
 	using namespace ::com::sun::star::lang;
 
-    DBG_NAME(OPropertyForward)	
+    DBG_NAME(OPropertyForward)
 
     //------------------------------------------------------------------------
     OPropertyForward::OPropertyForward( const Reference< XPropertySet>& _xSource, const Reference< XNameAccess>& _xDestContainer,
@@ -57,7 +57,7 @@ namespace dbaccess
         ,m_sName( _sName )
         ,m_bInInsert( sal_False )
     {
-	    DBG_CTOR(OPropertyForward,NULL);	
+	    DBG_CTOR(OPropertyForward,NULL);
 
         osl_incrementInterlockedCount(&m_refCount);
 	    try
@@ -82,7 +82,7 @@ namespace dbaccess
     // -----------------------------------------------------------------------------
     OPropertyForward::~OPropertyForward()
     {
-	    DBG_DTOR(OPropertyForward,NULL);	
+	    DBG_DTOR(OPropertyForward,NULL);
     }
 
     // -----------------------------------------------------------------------------

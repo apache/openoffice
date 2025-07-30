@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -784,7 +784,7 @@ OfaViewTabPage::OfaViewTabPage(Window* pParent, const SfxItemSet& rSet ) :
                 aIconStyleLB.RemoveEntry( nItem );
                 aIconStyleItemId[n] = 0;
             }
-        }        
+        }
     }
 
     // add real theme name to 'auto' theme, e.g. 'auto' => 'auto (classic)'
@@ -797,7 +797,7 @@ OfaViewTabPage::OfaViewTabPage(Window* pParent, const SfxItemSet& rSet ) :
         sal_uLong nAutoStyle = aStyleSettings.GetAutoSymbolsStyle();
         if ( aIconStyleItemId[nAutoStyle] )
             aAutoStr += aIconStyleLB.GetEntry( aIconStyleItemId[nAutoStyle] );
-  
+
         aIconStyleLB.RemoveEntry( 0 );
         aIconStyleLB.InsertEntry( aAutoStr += ::rtl::OUString::createFromAscii( ")" ), 0 );
         // separate auto and other icon themes
@@ -1499,7 +1499,7 @@ sal_Bool OfaLanguagesTabPage::FillItemSet( SfxItemSet& rSet )
     if(aDecimalSeparatorCB.GetSavedValue() != aDecimalSeparatorCB.IsChecked())
         pLangConfig->aSysLocaleOptions.SetDecimalSeparatorAsLocale(aDecimalSeparatorCB.IsChecked());
 
-    // Configured currency, for example, USD-en-US or EUR-de-DE, or empty for locale default. 
+    // Configured currency, for example, USD-en-US or EUR-de-DE, or empty for locale default.
     OUString sOldCurr = pLangConfig->aSysLocaleOptions.GetCurrencyConfigString();
     sal_uInt16 nCurrPos = aCurrencyLB.GetSelectEntryPos();
     const NfCurrencyEntry* pCurr = (const NfCurrencyEntry*)

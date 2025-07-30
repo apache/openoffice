@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
@@ -40,7 +40,7 @@ namespace svgio
         void myAssert(const rtl::OUString& rMessage)
         {
             rtl::OString aMessage2;
-    
+
             rMessage.convertToString(&aMessage2, osl_getThreadTextEncoding(), RTL_UNICODETOTEXT_FLAGS_UNDEFINED_ERROR|RTL_UNICODETOTEXT_FLAGS_INVALID_ERROR);
             OSL_ENSURE(false, aMessage2.getStr());
         }
@@ -63,7 +63,7 @@ namespace svgio
             // transform from source state to unit range
             aRetval.translate(-rSource.getMinX(), -rSource.getMinY());
             aRetval.scale(
-                (bNoSWidth ? 1.0 : 1.0 / fSWidth) * rTarget.getWidth(), 
+                (bNoSWidth ? 1.0 : 1.0 / fSWidth) * rTarget.getWidth(),
                 (bNoSHeight ? 1.0 : 1.0 / fSHeight) * rTarget.getHeight());
 
             // transform from unit rage to target range
@@ -150,7 +150,7 @@ namespace svgio
 
             // add target translation
             aRetval.translate(
-                rTarget.getMinX() + fTransX, 
+                rTarget.getMinX() + fTransX,
                 rTarget.getMinY() + fTransY);
 
             return aRetval;
@@ -238,7 +238,7 @@ namespace svgio
                     {
                         double fRetval(mfNumber * 0.01);
                         basegfx::B2DRange aViewPort = rInfoProvider.getCurrentViewPort();
-                        
+
                         if ( aViewPort.isEmpty() )
                         {
 #ifdef DBG_UTIL
@@ -276,7 +276,7 @@ namespace svgio
                                 fRetval *= fCurrentLength;
                             }
                         }
-                        
+
                         return fRetval;
                         break;
                     }
@@ -286,7 +286,7 @@ namespace svgio
                     }
                 }
             }
-            
+
             /// not set
             OSL_ENSURE(false, "SvgNumber not set (!)");
             return 0.0;
@@ -321,7 +321,7 @@ namespace svgio
 
                 if(sal_Unicode('+') == aChar || sal_Unicode('-') == aChar)
                 {
-                    rTarget.append(aChar); 
+                    rTarget.append(aChar);
                     nPos++;
                 }
             }
@@ -339,7 +339,7 @@ namespace svgio
 
                 if(bOnNumber)
                 {
-                    rTarget.append(aChar); 
+                    rTarget.append(aChar);
                     nPos++;
                 }
             }
@@ -353,13 +353,13 @@ namespace svgio
             {
                 const sal_Unicode aChar(rCandidate[nPos]);
 
-                bOnHex = (sal_Unicode('0') <= aChar && sal_Unicode('9') >= aChar) 
+                bOnHex = (sal_Unicode('0') <= aChar && sal_Unicode('9') >= aChar)
                     || (sal_Unicode('A') <= aChar && sal_Unicode('F') >= aChar)
                     || (sal_Unicode('a') <= aChar && sal_Unicode('f') >= aChar);
 
                 if(bOnHex)
                 {
-                    rTarget.append(aChar); 
+                    rTarget.append(aChar);
                     nPos++;
                 }
             }
@@ -373,13 +373,13 @@ namespace svgio
             {
                 const sal_Unicode aChar(rCandidate[nPos]);
 
-                bOnChar = (sal_Unicode('a') <= aChar && sal_Unicode('z') >= aChar) 
+                bOnChar = (sal_Unicode('a') <= aChar && sal_Unicode('z') >= aChar)
                     || (sal_Unicode('A') <= aChar && sal_Unicode('Z') >= aChar)
                     || sal_Unicode('-') == aChar;
 
                 if(bOnChar)
                 {
-                    rTarget.append(aChar); 
+                    rTarget.append(aChar);
                     nPos++;
                 }
             }
@@ -389,7 +389,7 @@ namespace svgio
         {
             while(nPos < nLen && rLimiter != rCandidate[nPos])
             {
-                rTarget.append(rCandidate[nPos]); 
+                rTarget.append(rCandidate[nPos]);
                 nPos++;
             }
         }
@@ -406,7 +406,7 @@ namespace svgio
                 if(nPos < nLen)
                 {
                     const sal_Unicode aChar(rCandidate[nPos]);
-                    
+
                     if(sal_Unicode('e') == aChar || sal_Unicode('E') == aChar)
                     {
                         // try to read exponential number, but be careful. I had
@@ -417,7 +417,7 @@ namespace svgio
                         const rtl::OUStringBuffer aNum2(aNum);
                         const sal_Int32 nPosAfterE(nPos);
 
-                        aNum.append(aChar); 
+                        aNum.append(aChar);
                         copySign(rCandidate, nPos, aNum, nLen);
                         copyNumber(rCandidate, nPos, aNum, nLen);
 
@@ -430,15 +430,15 @@ namespace svgio
                         }
                     }
                 }
-                
+
                 if(aNum.getLength())
                 {
                     rtl_math_ConversionStatus eStatus;
-                    
+
                     fNum = rtl::math::stringToDouble(
-                        aNum.makeStringAndClear(), (sal_Unicode)('.'), (sal_Unicode)(','), 
+                        aNum.makeStringAndClear(), (sal_Unicode)('.'), (sal_Unicode)(','),
                         &eStatus, 0);
-                    
+
                     return eStatus == rtl_math_ConversionStatus_Ok;
                 }
             }
@@ -458,7 +458,7 @@ namespace svgio
                 {
                     const sal_Unicode aCharB(rCandidate[nPos + 1]);
                     bool bTwoCharValid(false);
-                    
+
                     switch(aCharA)
                     {
                         case sal_Unicode('e') :
@@ -647,7 +647,7 @@ namespace svgio
         }
 
         bool match_colorKeyword(
-            basegfx::BColor& rColor, 
+            basegfx::BColor& rColor,
             const rtl::OUString& rName,
             bool bCaseIndependent)
         {
@@ -826,7 +826,7 @@ namespace svgio
         }
 
         bool read_color(
-            const rtl::OUString& rCandidate, 
+            const rtl::OUString& rCandidate,
             basegfx::BColor& rColor,
             bool bCaseIndependent)
         {
@@ -845,7 +845,7 @@ namespace svgio
 
                     copyHex(rCandidate, nPos, aNum, nLen);
                     const sal_Int32 nLength(aNum.getLength());
-                
+
                     if(3 == nLength)
                     {
                         const sal_Int32 nR(read_hex(aNum.charAt(0)));
@@ -961,17 +961,17 @@ namespace svgio
                 {
                     SvgNumber aMinY;
                     skip_char(rCandidate, sal_Unicode(' '), sal_Unicode(','), nPos, nLen);
-                    
+
                     if(readNumberAndUnit(rCandidate, nPos, aMinY, nLen))
                     {
                         SvgNumber aWidth;
                         skip_char(rCandidate, sal_Unicode(' '), sal_Unicode(','), nPos, nLen);
-                    
+
                         if(readNumberAndUnit(rCandidate, nPos, aWidth, nLen))
                         {
                             SvgNumber aHeight;
                             skip_char(rCandidate, sal_Unicode(' '), sal_Unicode(','), nPos, nLen);
-                    
+
                             if(readNumberAndUnit(rCandidate, nPos, aHeight, nLen))
                             {
                                 double fX(aMinX.solve(rInfoProvider, xcoordinate));
@@ -987,7 +987,7 @@ namespace svgio
 
             return basegfx::B2DRange();
         }
-    
+
         basegfx::B2DHomMatrix readTransform(const rtl::OUString& rCandidate, InfoProvider& rInfoProvider)
         {
             basegfx::B2DHomMatrix aMatrix;
@@ -1030,28 +1030,28 @@ namespace svgio
                                     {
                                         aNew.set(1, 0, aVal.solve(rInfoProvider)); // Element B
                                         skip_char(rCandidate, sal_Unicode(' '), sal_Unicode(','), nPos, nLen);
-                             
+
                                         if(readNumberAndUnit(rCandidate, nPos, aVal, nLen))
                                         {
                                             aNew.set(0, 1, aVal.solve(rInfoProvider)); // Element C
                                             skip_char(rCandidate, sal_Unicode(' '), sal_Unicode(','), nPos, nLen);
-                             
+
                                             if(readNumberAndUnit(rCandidate, nPos, aVal, nLen))
                                             {
                                                 aNew.set(1, 1, aVal.solve(rInfoProvider)); // Element D
                                                 skip_char(rCandidate, sal_Unicode(' '), sal_Unicode(','), nPos, nLen);
-                             
+
                                                 if(readNumberAndUnit(rCandidate, nPos, aVal, nLen))
                                                 {
                                                     aNew.set(0, 2, aVal.solve(rInfoProvider, xcoordinate)); // Element E
                                                     skip_char(rCandidate, sal_Unicode(' '), sal_Unicode(','), nPos, nLen);
-                             
+
                                                     if(readNumberAndUnit(rCandidate, nPos, aVal, nLen))
                                                     {
                                                         aNew.set(1, 2, aVal.solve(rInfoProvider, ycoordinate)); // Element F
                                                         skip_char(rCandidate, sal_Unicode(' '), sal_Unicode(')'), nPos, nLen);
                                                         skip_char(rCandidate, sal_Unicode(' '), sal_Unicode(','), nPos, nLen);
-                                                    
+
                                                         // caution: String is evaluated from left to right, but matrix multiplication
                                                         // in SVG is right to left, so put the new transformation before the current
                                                         // one by multiplicating from the right side
@@ -1073,7 +1073,7 @@ namespace svgio
                                 nPos += aStrTranslate.getLength();
                                 skip_char(rCandidate, sal_Unicode(' '), sal_Unicode('('), nPos, nLen);
                                 SvgNumber aTransX;
-                            
+
                                 if(readNumberAndUnit(rCandidate, nPos, aTransX, nLen))
                                 {
                                     skip_char(rCandidate, sal_Unicode(' '), sal_Unicode(','), nPos, nLen);
@@ -1083,7 +1083,7 @@ namespace svgio
                                     skip_char(rCandidate, sal_Unicode(' '), sal_Unicode(','), nPos, nLen);
 
                                     aMatrix = aMatrix * basegfx::tools::createTranslateB2DHomMatrix(
-                                        aTransX.solve(rInfoProvider, xcoordinate), 
+                                        aTransX.solve(rInfoProvider, xcoordinate),
                                         aTransY.solve(rInfoProvider, ycoordinate));
                                 }
                             }
@@ -1097,7 +1097,7 @@ namespace svgio
                                 nPos += aStrScale.getLength();
                                 skip_char(rCandidate, sal_Unicode(' '), sal_Unicode('('), nPos, nLen);
                                 SvgNumber aScaleX;
-                            
+
                                 if(readNumberAndUnit(rCandidate, nPos, aScaleX, nLen))
                                 {
                                     skip_char(rCandidate, sal_Unicode(' '), sal_Unicode(','), nPos, nLen);
@@ -1107,7 +1107,7 @@ namespace svgio
                                     skip_char(rCandidate, sal_Unicode(' '), sal_Unicode(','), nPos, nLen);
 
                                     aMatrix = aMatrix * basegfx::tools::createScaleB2DHomMatrix(
-                                        aScaleX.solve(rInfoProvider), 
+                                        aScaleX.solve(rInfoProvider),
                                         aScaleY.solve(rInfoProvider));
                                 }
                             }
@@ -1117,7 +1117,7 @@ namespace svgio
                                 nPos += aStrSkewX.getLength();
                                 skip_char(rCandidate, sal_Unicode(' '), sal_Unicode('('), nPos, nLen);
                                 double fSkewX(0.0);
-                            
+
                                 if(readAngle(rCandidate, nPos, fSkewX, nLen))
                                 {
                                     skip_char(rCandidate, sal_Unicode(' '), sal_Unicode(')'), nPos, nLen);
@@ -1132,7 +1132,7 @@ namespace svgio
                                 nPos += aStrSkewY.getLength();
                                 skip_char(rCandidate, sal_Unicode(' '), sal_Unicode('('), nPos, nLen);
                                 double fSkewY(0.0);
-                            
+
                                 if(readAngle(rCandidate, nPos, fSkewY, nLen))
                                 {
                                     skip_char(rCandidate, sal_Unicode(' '), sal_Unicode(')'), nPos, nLen);
@@ -1151,7 +1151,7 @@ namespace svgio
                                 nPos += aStrRotate.getLength();
                                 skip_char(rCandidate, sal_Unicode(' '), sal_Unicode('('), nPos, nLen);
                                 double fAngle(0.0);
-                            
+
                                 if(readAngle(rCandidate, nPos, fAngle, nLen))
                                 {
                                     skip_char(rCandidate, sal_Unicode(' '), sal_Unicode(','), nPos, nLen);
@@ -1181,7 +1181,7 @@ namespace svgio
                             break;
                         }
                     }
-                
+
                     if(nInitPos == nPos)
                     {
                         OSL_ENSURE(false, "Could not interpret on current position (!)");
@@ -1192,7 +1192,7 @@ namespace svgio
 
             return aMatrix;
         }
-        
+
         bool readSingleNumber(const rtl::OUString& rCandidate, SvgNumber& aNum)
         {
             const sal_Int32 nLen(rCandidate.getLength());
@@ -1209,12 +1209,12 @@ namespace svgio
             {
                 const sal_Int32 nLen(rCandidate.getLength());
                 sal_Int32 nPos(aStrUrl.getLength());
-                        
+
                 skip_char(rCandidate, sal_Unicode('('), sal_Unicode('#'), nPos, nLen);
                 rtl::OUStringBuffer aTokenValue;
                 copyToLimiter(rCandidate, sal_Unicode(')'), nPos, aTokenValue, nLen);
                 rURL = aTokenValue.makeStringAndClear();
-                
+
                 return true;
             }
 
@@ -1222,9 +1222,9 @@ namespace svgio
         }
 
         bool readSvgPaint(
-            const rtl::OUString& rCandidate, 
-            SvgPaint& rSvgPaint, 
-            rtl::OUString& rURL, 
+            const rtl::OUString& rCandidate,
+            SvgPaint& rSvgPaint,
+            rtl::OUString& rURL,
             bool bCaseIndependent)
         {
             const sal_Int32 nLen(rCandidate.getLength());
@@ -1305,7 +1305,7 @@ namespace svgio
                     skip_char(rCandidate, sal_Unicode(' '), nPos, nLen);
                     rtl::OUStringBuffer aTokenName;
                     copyString(rCandidate, nPos, aTokenName, nLen);
-                
+
                     if(aTokenName.getLength())
                     {
                         switch(StrToSVGToken(aTokenName.makeStringAndClear(), false))
@@ -1407,7 +1407,7 @@ namespace svgio
                     return SvgAspectRatio(aSvgAlign, bDefer, bMeetOrSlice);
                 }
             }
- 
+
             return SvgAspectRatio();
         }
 
@@ -1473,13 +1473,13 @@ namespace svgio
                             // image data
                             rtl::OUString aData(rCandidate.copy(nPos));
                             static rtl::OUString aStrBase64(rtl::OUString::createFromAscii("base64"));
-                                    
+
                             if(aData.match(aStrBase64, 0))
                             {
                                 // base64 encoded
                                 nPos = aStrBase64.getLength();
                                 nLen = aData.getLength();
-                                            
+
                                 skip_char(aData, sal_Unicode(' '), sal_Unicode(','), nPos, nLen);
 
                                 if(nPos < nLen)
@@ -1518,7 +1518,7 @@ namespace svgio
 
                         if(!bRemove)
                         {
-                            aBuffer.append(rNew); 
+                            aBuffer.append(rNew);
                         }
                     }
                     else
@@ -1573,7 +1573,7 @@ namespace svgio
                     {
                         if(!nInsideComment)
                         {
-                            aBuffer.append(aChar); 
+                            aBuffer.append(aChar);
                         }
 
                         nPos++;
@@ -1641,7 +1641,7 @@ namespace svgio
             const sal_Unicode aNewline('\n');
             const sal_Unicode aTab('\t');
             const sal_Unicode aSpace(' ');
-            
+
             // remove all newline characters
             rtl::OUString aRetval(convert(rCandidate, aNewline, aNewline, true));
 
@@ -1662,7 +1662,7 @@ namespace svgio
             const sal_Unicode aNewline('\n');
             const sal_Unicode aTab('\t');
             const sal_Unicode aSpace(' ');
-            
+
             // convert newline to space
             rtl::OUString aRetval(convert(rCandidate, aNewline, aSpace, false));
 

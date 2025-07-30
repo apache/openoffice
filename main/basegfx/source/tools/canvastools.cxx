@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -92,7 +92,7 @@ namespace basegfx
 
                 uno::Sequence< geometry::RealPoint2D > outputSequence( nNumPoints );
                 geometry::RealPoint2D* pOutput = outputSequence.getArray();
-                
+
                 // fill sequence from polygon
                 sal_uInt32 i;
                 for( i=0; i<nNumPoints; ++i )
@@ -191,13 +191,13 @@ namespace basegfx
 
             if( rPolyPoly.areControlPointsUsed() )
             {
-                xRes.set( xGraphicDevice->createCompatibleBezierPolyPolygon( 
+                xRes.set( xGraphicDevice->createCompatibleBezierPolyPolygon(
                               bezierSequenceSequenceFromB2DPolyPolygon( rPolyPoly ) ),
                           uno::UNO_QUERY );
             }
             else
             {
-                xRes.set( xGraphicDevice->createCompatibleLinePolyPolygon( 
+                xRes.set( xGraphicDevice->createCompatibleLinePolyPolygon(
                               pointSequenceSequenceFromB2DPolyPolygon( rPolyPoly ) ),
                           uno::UNO_QUERY );
             }
@@ -290,7 +290,7 @@ namespace basegfx
 
         ::basegfx::B2DPolyPolygon b2DPolyPolygonFromXPolyPolygon2D( const uno::Reference< rendering::XPolyPolygon2D >& xPoly )
         {
-            ::basegfx::unotools::UnoPolyPolygon* pPolyImpl = 
+            ::basegfx::unotools::UnoPolyPolygon* pPolyImpl =
                 dynamic_cast< ::basegfx::unotools::UnoPolyPolygon* >( xPoly.get() );
 
             if( pPolyImpl )
@@ -328,7 +328,7 @@ namespace basegfx
                         throw lang::IllegalArgumentException(
                             ::rtl::OUString::createFromAscii(
                                     "basegfx::unotools::b2DPolyPolygonFromXPolyPolygon2D(): Invalid input"
-                                    "poly-polygon, cannot retrieve vertex data"), 
+                                    "poly-polygon, cannot retrieve vertex data"),
                             uno::Reference< uno::XInterface >(),
                             0 );
                     }
@@ -417,7 +417,7 @@ namespace basegfx
             output.m01 = input.get(0,1);
             output.m02 = input.get(0,2);
             output.m03 = input.get(0,3);
-            
+
 			output.m10 = input.get(1,0);
             output.m11 = input.get(1,1);
             output.m12 = input.get(1,2);

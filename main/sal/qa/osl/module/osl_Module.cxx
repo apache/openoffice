@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,23 +7,23 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
- 
+
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_sal.hxx"
- 
+
 //------------------------------------------------------------------------
 // include files
 //------------------------------------------------------------------------
@@ -50,7 +50,7 @@ inline void printBool( sal_Bool bOk )
 */
 inline void printUString( const ::rtl::OUString & str )
 {
-	rtl::OString aString; 
+	rtl::OString aString;
 
 	printf("#printUString_u# " );
 	aString = ::rtl::OUStringToOString( str, RTL_TEXTENCODING_ASCII_US );
@@ -66,7 +66,7 @@ inline ::rtl::OUString getDllURL( void )
 #else
 	::rtl::OUString libPath( rtl::OUString::createFromAscii( "libModule_DLL.so" ) );
 #endif
-	
+
 	::rtl::OUString dirPath, dllPath;
 	osl::Module::getUrlFromAddress( ( void* ) &getDllURL, dirPath );
 	// file:///aoo/main/sal/unx/bin/osl_Module
@@ -106,11 +106,11 @@ inline void createTestDirectory( const ::rtl::OUString dirname )
 {
 	::rtl::OUString     aPathURL   = dirname.copy( 0 );
 	::osl::FileBase::RC	nError;
-	
+
 	if ( !isURL( dirname ) )
-		::osl::FileBase::getFileURLFromSystemPath( dirname, aPathURL ); //convert if not full qualified URL	
+		::osl::FileBase::getFileURLFromSystemPath( dirname, aPathURL ); //convert if not full qualified URL
 	nError = ::osl::Directory::create( aPathURL );
-	ASSERT_TRUE(( ::osl::FileBase::E_None == nError ) || ( nError == ::osl::FileBase::E_EXIST )) << "In createTestDirectory Function: creation: ";	
+	ASSERT_TRUE(( ::osl::FileBase::E_None == nError ) || ( nError == ::osl::FileBase::E_EXIST )) << "In createTestDirectory Function: creation: ";
 }
 
 /** delete a temp test directory using OUString name of full qualified URL or system path.
@@ -120,30 +120,30 @@ inline void deleteTestDirectory( const ::rtl::OUString dirname )
 	::rtl::OUString     aPathURL   = dirname.copy( 0 );
 	::osl::FileBase::RC	nError;
 	if ( !isURL( dirname ) )
-		::osl::FileBase::getFileURLFromSystemPath( dirname, aPathURL ); //convert if not full qualified URL	
+		::osl::FileBase::getFileURLFromSystemPath( dirname, aPathURL ); //convert if not full qualified URL
 
 	::osl::Directory testDir( aPathURL );
 	if ( testDir.isOpen( ) == sal_True )
 	{
         	testDir.close( );  //close if still open.
     	}
-    
+
 	nError = ::osl::Directory::remove( aPathURL );
- 	ASSERT_TRUE(( ::osl::FileBase::E_None == nError ) || ( nError == ::osl::FileBase::E_NOENT )) << "In deleteTestDirectory function: remove ";	
+ 	ASSERT_TRUE(( ::osl::FileBase::E_None == nError ) || ( nError == ::osl::FileBase::E_NOENT )) << "In deleteTestDirectory function: remove ";
 }
 
 //check if the file exist
 inline sal_Bool ifFileExist( const ::rtl::OUString & str )
 {
-	::rtl::OUString 	aUStr;	
+	::rtl::OUString 	aUStr;
 	if ( isURL( str ) )
-		::osl::FileBase::getSystemPathFromFileURL( str, aUStr ); 
-	else 
+		::osl::FileBase::getSystemPathFromFileURL( str, aUStr );
+	else
 		return sal_False;
-	
+
 	::osl::File strFile( aUStr );
 	::osl::FileBase::RC	nError = strFile.open( OpenFlag_Read );
-	if ( ::File::E_NOENT == nError ) 
+	if ( ::File::E_NOENT == nError )
 		return sal_False;
 	else{
 		strFile.close( );
@@ -157,15 +157,15 @@ inline void deleteTestFile( const ::rtl::OUString filename )
 {
 	::rtl::OUString	aPathURL   = filename.copy( 0 );
 	::osl::FileBase::RC	nError;
-	
+
 	if ( !isURL( filename ) )
 		::osl::FileBase::getFileURLFromSystemPath( filename, aPathURL ); //convert if not full qualified URL
-		
-	nError = ::osl::File::setAttributes( aPathURL, Attribute_GrpWrite| Attribute_OwnWrite| Attribute_OthWrite ); // if readonly, make writtenable. 
-	ASSERT_TRUE(( ::osl::FileBase::E_None == nError ) || ( ::osl::FileBase::E_NOENT == nError )) << "In deleteTestFile Function: set writtenable ";	
-	
+
+	nError = ::osl::File::setAttributes( aPathURL, Attribute_GrpWrite| Attribute_OwnWrite| Attribute_OthWrite ); // if readonly, make writtenable.
+	ASSERT_TRUE(( ::osl::FileBase::E_None == nError ) || ( ::osl::FileBase::E_NOENT == nError )) << "In deleteTestFile Function: set writtenable ";
+
 	nError = ::osl::File::remove( aPathURL );
-	ASSERT_TRUE(( ::osl::FileBase::E_None == nError ) || ( nError == ::osl::FileBase::E_NOENT )) << "In deleteTestFile Function: remove ";	
+	ASSERT_TRUE(( ::osl::FileBase::E_None == nError ) || ( nError == ::osl::FileBase::E_NOENT )) << "In deleteTestFile Function: remove ";
 }
 
 
@@ -188,7 +188,7 @@ namespace osl_Module
 		};
 	};
 
-	
+
 	/** testing the methods:
 		Module();
 		Module( const ::rtl::OUString& strModuleName, sal_Int32 nRtldMode = SAL_LOADMODULE_DEFAULT);
@@ -216,7 +216,7 @@ namespace osl_Module
 
         ASSERT_TRUE( sal_True == bRes ) << "#test comment#: test constructor with load action.";
     }
-	
+
 	/** testing the methods:
 		static sal_Bool getUrlFromAddress(void * addr, ::rtl::OUString & libraryUrl)
 	*/
@@ -258,7 +258,7 @@ namespace osl_Module
     }
 
 	/** testing the method:
-		sal_Bool SAL_CALL load( const ::rtl::OUString& strModuleName, 
+		sal_Bool SAL_CALL load( const ::rtl::OUString& strModuleName,
         	                                     sal_Int32 nRtldMode = SAL_LOADMODULE_DEFAULT)
 	*/
 	class load : public ::testing::Test
@@ -442,7 +442,7 @@ namespace osl_Module
 
         ASSERT_TRUE(sal_True == bRes && aLibraryURL.equalsIgnoreAsciiCase( getDllURL() )) << "#test comment#: load a dll and get its function addr and get its URL.";
     }
-	
+
 } // namespace osl_Module
 
 int main(int argc, char **argv)

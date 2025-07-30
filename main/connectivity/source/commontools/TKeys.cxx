@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -191,7 +191,7 @@ sdbcx::ObjectType OKeysHelper::appendObject( const ::rtl::OUString& _rForName, c
                 aSql.appendAscii(",");
 		    ::cppu::extractInterface(xColProp,xColumns->getByIndex(i));
 		    aSql.append( ::dbtools::quoteName( aQuote,getString(xColProp->getPropertyValue(rPropMap.getNameByIndex(PROPERTY_ID_NAME)))) );
-            
+
 	    }
         aSql.appendAscii(")");
 
@@ -207,7 +207,7 @@ sdbcx::ObjectType OKeysHelper::appendObject( const ::rtl::OUString& _rForName, c
                     aSql.appendAscii(",");
 			    xColumns->getByIndex(i) >>= xColProp;
 			    aSql.append(::dbtools::quoteName( aQuote,getString(xColProp->getPropertyValue(rPropMap.getNameByIndex(PROPERTY_ID_RELATEDCOLUMN)))));
-                
+
 		    }
 		    aSql.appendAscii(")");
 		    aSql.append(getKeyRuleString(sal_True	,nUpdateRule));
@@ -224,7 +224,7 @@ sdbcx::ObjectType OKeysHelper::appendObject( const ::rtl::OUString& _rForName, c
 		::rtl::OUString aSchema,aTable;
 		m_pTable->getPropertyValue(rPropMap.getNameByIndex(PROPERTY_ID_SCHEMANAME))	>>= aSchema;
 		m_pTable->getPropertyValue(rPropMap.getNameByIndex(PROPERTY_ID_NAME))		>>= aTable;
-		Reference< XResultSet > xResult; 
+		Reference< XResultSet > xResult;
 		sal_Int32 nColumn = 12;
 		if ( nKeyType == KeyType::FOREIGN )
 			xResult = m_pTable->getMetaData()->getImportedKeys( m_pTable->getPropertyValue(rPropMap.getNameByIndex(PROPERTY_ID_CATALOGNAME))

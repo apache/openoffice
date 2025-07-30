@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -119,7 +119,7 @@ void HeaderBar::ImplInit( WinBits nWinStyle )
 	}
 
 	ImplInitSettings( sal_True, sal_True, sal_True );
-	//SetAccessibleRole(com::sun::star::accessibility::AccessibleRole::COLUMN_HEADER);	
+	//SetAccessibleRole(com::sun::star::accessibility::AccessibleRole::COLUMN_HEADER);
 }
 
 // -----------------------------------------------------------------------
@@ -1043,7 +1043,7 @@ void HeaderBar::Draw( OutputDevice* pDev, const Point& rPos, const Size& rSize,
             if ( mnBorderOff1 && mnBorderOff2 )
             {
                 pDev->DrawLine( aRect.TopLeft(), Point( aRect.Left(), aRect.Bottom() ) );
-                pDev->DrawLine( Point( aRect.Right(), aRect.Top() ), Point( aRect.Right(), aRect.Bottom() ) );                
+                pDev->DrawLine( Point( aRect.Right(), aRect.Top() ), Point( aRect.Right(), aRect.Bottom() ) );
             }
 		}
 	}
@@ -1651,7 +1651,7 @@ void HeaderBar::SetAccessible( ::com::sun::star::uno::Reference< ::com::sun::sta
 
 ::com::sun::star::uno::Reference< ::com::sun::star::awt::XWindowPeer > HeaderBar::GetComponentInterface( sal_Bool bCreate )
 {
-    ::com::sun::star::uno::Reference< ::com::sun::star::awt::XWindowPeer > xPeer 
+    ::com::sun::star::uno::Reference< ::com::sun::star::awt::XWindowPeer > xPeer
 		(Window::GetComponentInterface(false));
 	if ( !xPeer.is() && bCreate )
     {

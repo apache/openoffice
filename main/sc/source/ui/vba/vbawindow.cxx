@@ -58,7 +58,7 @@ typedef std::vector< uno::Reference< sheet::XSpreadsheet > > Sheets;
 
 typedef ::cppu::WeakImplHelper1< container::XEnumeration > Enumeration_BASE;
 
-typedef ::cppu::WeakImplHelper3< container::XEnumerationAccess 
+typedef ::cppu::WeakImplHelper3< container::XEnumerationAccess
 	, com::sun::star::container::XIndexAccess
 	, com::sun::star::container::XNameAccess
 	> SelectedSheets_BASE;
@@ -77,12 +77,12 @@ public:
 		m_it = m_sheets.begin();
 	}
 	// XEnumeration
-	virtual ::sal_Bool SAL_CALL hasMoreElements(  ) throw (uno::RuntimeException) 
-	{ 
+	virtual ::sal_Bool SAL_CALL hasMoreElements(  ) throw (uno::RuntimeException)
+	{
 		return m_it != m_sheets.end();
 	}
-	virtual uno::Any SAL_CALL nextElement(  ) throw (container::NoSuchElementException, lang::WrappedTargetException, uno::RuntimeException) 
-	{ 
+	virtual uno::Any SAL_CALL nextElement(  ) throw (container::NoSuchElementException, lang::WrappedTargetException, uno::RuntimeException)
+	{
 		if ( !hasMoreElements() )
 		{
 			throw container::NoSuchElementException();
@@ -99,7 +99,7 @@ class SelectedSheetsEnumAccess : public SelectedSheets_BASE
 	uno::Reference< uno::XComponentContext > m_xContext;
 	NameIndexHash namesToIndices;
 	Sheets sheets;
-	uno::Reference< frame::XModel > m_xModel; 
+	uno::Reference< frame::XModel > m_xModel;
 public:
 	SelectedSheetsEnumAccess( const uno::Reference< uno::XComponentContext >& xContext, const uno::Reference< frame::XModel >& xModel ):m_xContext( xContext ), m_xModel( xModel )
 	{
@@ -112,7 +112,7 @@ public:
 		ScTabViewShell* pViewShell = excel::getBestViewShell( m_xModel );
 		if ( !pViewShell )
 			throw uno::RuntimeException( rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "Cannot obtain view shell" ) ), uno::Reference< uno::XInterface >() );
-			
+
 		SCTAB nTabCount = pDocShell->GetDocument()->GetTableCount();
 		uno::Sequence<sal_Int32> aSheets( nTabCount );
 		SCTAB nIndex = 0;
@@ -132,60 +132,60 @@ public:
 		}
 
 	}
-	
+
 	//XEnumerationAccess
 	virtual uno::Reference< container::XEnumeration > SAL_CALL createEnumeration(  ) throw (uno::RuntimeException)
 	{
-		return new SelectedSheetsEnum( m_xContext, sheets, m_xModel  ); 
+		return new SelectedSheetsEnum( m_xContext, sheets, m_xModel  );
 	}
 	// XIndexAccess
-	virtual ::sal_Int32 SAL_CALL getCount(  ) throw (uno::RuntimeException) 
-	{ 
+	virtual ::sal_Int32 SAL_CALL getCount(  ) throw (uno::RuntimeException)
+	{
 		return sheets.size();
 	}
-	virtual uno::Any SAL_CALL getByIndex( ::sal_Int32 Index ) throw ( lang::IndexOutOfBoundsException, lang::WrappedTargetException, uno::RuntimeException) 
-	{ 
+	virtual uno::Any SAL_CALL getByIndex( ::sal_Int32 Index ) throw ( lang::IndexOutOfBoundsException, lang::WrappedTargetException, uno::RuntimeException)
+	{
 		if ( Index < 0
-		|| static_cast< Sheets::size_type >( Index ) >= sheets.size() ) 
+		|| static_cast< Sheets::size_type >( Index ) >= sheets.size() )
 			throw lang::IndexOutOfBoundsException();
-		
+
 		return uno::makeAny( sheets[ Index ] );
 	}
 
 	//XElementAccess
 	virtual uno::Type SAL_CALL getElementType(  ) throw (uno::RuntimeException)
-	{ 
-		return excel::XWorksheet::static_type(0); 
+	{
+		return excel::XWorksheet::static_type(0);
 	}
 
-	virtual ::sal_Bool SAL_CALL hasElements(  ) throw (uno::RuntimeException) 
-	{ 
+	virtual ::sal_Bool SAL_CALL hasElements(  ) throw (uno::RuntimeException)
+	{
 		return (sheets.size() > 0);
 	}
 
 	//XNameAccess
-	virtual uno::Any SAL_CALL getByName( const ::rtl::OUString& aName ) throw (container::NoSuchElementException, lang::WrappedTargetException, uno::RuntimeException) 
-	{ 
+	virtual uno::Any SAL_CALL getByName( const ::rtl::OUString& aName ) throw (container::NoSuchElementException, lang::WrappedTargetException, uno::RuntimeException)
+	{
 		NameIndexHash::const_iterator it = namesToIndices.find( aName );
 		if ( it == namesToIndices.end() )
 			throw container::NoSuchElementException();
 		return uno::makeAny( sheets[ it->second ] );
-		
+
 	}
 
-	virtual uno::Sequence< ::rtl::OUString > SAL_CALL getElementNames(  ) throw (uno::RuntimeException) 
-	{ 
+	virtual uno::Sequence< ::rtl::OUString > SAL_CALL getElementNames(  ) throw (uno::RuntimeException)
+	{
 		uno::Sequence< ::rtl::OUString > names( namesToIndices.size() );
 		::rtl::OUString* pString = names.getArray();
 		NameIndexHash::const_iterator it = namesToIndices.begin();
 		NameIndexHash::const_iterator it_end = namesToIndices.end();
 		for ( ; it != it_end; ++it, ++pString )
-			*pString = it->first;	
-		return names;	
+			*pString = it->first;
+		return names;
 	}
 
-	virtual ::sal_Bool SAL_CALL hasByName( const ::rtl::OUString& aName ) throw (uno::RuntimeException) 
-	{ 
+	virtual ::sal_Bool SAL_CALL hasByName( const ::rtl::OUString& aName ) throw (uno::RuntimeException)
+	{
 		NameIndexHash::const_iterator it = namesToIndices.find( aName );
 		return (it != namesToIndices.end());
 	}
@@ -260,19 +260,19 @@ ScVbaWindow::Scroll( const uno::Any& Down, const uno::Any& Up, const uno::Any& T
 		m_xPane->SmallScroll( Down, Up, ToRight, ToLeft );
 }
 
-void SAL_CALL 
+void SAL_CALL
 ScVbaWindow::SmallScroll( const uno::Any& Down, const uno::Any& Up, const uno::Any& ToRight, const uno::Any& ToLeft ) throw (uno::RuntimeException)
 {
 	Scroll( Down, Up, ToRight, ToLeft );
 }
 
-void SAL_CALL 
+void SAL_CALL
 ScVbaWindow::LargeScroll( const uno::Any& Down, const uno::Any& Up, const uno::Any& ToRight, const uno::Any& ToLeft ) throw (uno::RuntimeException)
 {
 	Scroll( Down, Up, ToRight, ToLeft, true );
 }
 
-uno::Any SAL_CALL 
+uno::Any SAL_CALL
 ScVbaWindow::SelectedSheets( const uno::Any& aIndex ) throw (uno::RuntimeException)
 {
 	uno::Reference< container::XEnumerationAccess > xEnumAccess( new SelectedSheetsEnumAccess( mxContext, m_xModel ) );
@@ -281,12 +281,12 @@ ScVbaWindow::SelectedSheets( const uno::Any& aIndex ) throw (uno::RuntimeExcepti
 	if ( aIndex.hasValue() )
 	{
 		uno::Reference< XCollection > xColl( xSheets, uno::UNO_QUERY_THROW );
-		return xColl->Item( aIndex, uno::Any() );	
+		return xColl->Item( aIndex, uno::Any() );
 	}
-	return uno::makeAny( xSheets ); 	
+	return uno::makeAny( xSheets );
 }
 
-void SAL_CALL 
+void SAL_CALL
 ScVbaWindow::ScrollWorkbookTabs( const uno::Any& /*Sheets*/, const uno::Any& /*Position*/ ) throw (uno::RuntimeException)
 {
 // #TODO #FIXME need some implementation to scroll through the tabs
@@ -294,7 +294,7 @@ ScVbaWindow::ScrollWorkbookTabs( const uno::Any& /*Sheets*/, const uno::Any& /*P
 /*
 	sal_Int32 nSheets = 0;
 	sal_Int32 nPosition = 0;
-	throw uno::RuntimeException( rtl::OUString::createFromAscii("No Implemented" ), uno::Reference< uno::XInterface >() ); 
+	throw uno::RuntimeException( rtl::OUString::createFromAscii("No Implemented" ), uno::Reference< uno::XInterface >() );
 	sal_Bool bSheets = ( Sheets >>= nSheets );
 	sal_Bool bPosition = ( Position >>= nPosition );
 	if ( bSheets || bPosition ) // at least one param specified
@@ -306,7 +306,7 @@ ScVbaWindow::ScrollWorkbookTabs( const uno::Any& /*Sheets*/, const uno::Any& /*P
 
 }
 
-uno::Any SAL_CALL 
+uno::Any SAL_CALL
 ScVbaWindow::getCaption() throw (uno::RuntimeException)
 {
 	static rtl::OUString sCrud(RTL_CONSTASCII_USTRINGPARAM(" - OpenOffice Calc" ) );
@@ -314,7 +314,7 @@ ScVbaWindow::getCaption() throw (uno::RuntimeException)
 
 	rtl::OUString sTitle;
 	getFrameProps()->getPropertyValue( rtl::OUString( RTL_CONSTASCII_USTRINGPARAM ( SC_UNONAME_TITLE ) ) ) >>= sTitle;
-	sal_Int32 nCrudIndex = sTitle.indexOf( sCrud );	
+	sal_Int32 nCrudIndex = sTitle.indexOf( sCrud );
 	// adjust title ( by removing crud )
 	// sCrud string present
 	if ( nCrudIndex != -1 )
@@ -342,39 +342,39 @@ ScVbaWindow::getCaption() throw (uno::RuntimeException)
 						sTitle = sName;
 			}
 		}
-	}			
+	}
 	return uno::makeAny( sTitle );
 }
 
-void SAL_CALL 
+void SAL_CALL
 ScVbaWindow::setCaption( const uno::Any& _caption ) throw (uno::RuntimeException)
 {
 	getFrameProps()->setPropertyValue( rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( SC_UNONAME_TITLE ) ), _caption );
 }
 
-uno::Any SAL_CALL 
+uno::Any SAL_CALL
 ScVbaWindow::getScrollRow() throw (uno::RuntimeException)
-{	
+{
     sal_Int32 nValue = 0;
     // !! TODO !! get view shell from controller
-    ScTabViewShell* pViewShell = excel::getBestViewShell( m_xModel );	
+    ScTabViewShell* pViewShell = excel::getBestViewShell( m_xModel );
 	if ( pViewShell )
 	{
 	    ScSplitPos eWhich = pViewShell->GetViewData()->GetActivePart();
 	    nValue = pViewShell->GetViewData()->GetPosY(WhichV(eWhich));
 	}
-    
+
     return uno::makeAny( nValue + 1);
 }
 
-void SAL_CALL 
+void SAL_CALL
 ScVbaWindow::setScrollRow( const uno::Any& _scrollrow ) throw (uno::RuntimeException)
 {
     // !! TODO !! get view shell from controller
 	ScTabViewShell* pViewShell = excel::getBestViewShell( m_xModel );
 	if ( pViewShell )
 	{
-		sal_Int32 scrollRow = 0;	
+		sal_Int32 scrollRow = 0;
 	    _scrollrow >>= scrollRow;
 	    ScSplitPos eWhich = pViewShell->GetViewData()->GetActivePart();
 	    sal_Int32 nOldValue = pViewShell->GetViewData()->GetPosY(WhichV(eWhich)) + 1;
@@ -382,9 +382,9 @@ ScVbaWindow::setScrollRow( const uno::Any& _scrollrow ) throw (uno::RuntimeExcep
 	}
 }
 
-uno::Any SAL_CALL 
+uno::Any SAL_CALL
 ScVbaWindow::getScrollColumn() throw (uno::RuntimeException)
-{	
+{
     sal_Int32 nValue = 0;
     // !! TODO !! get view shell from controller
     ScTabViewShell* pViewShell = excel::getBestViewShell( m_xModel );
@@ -393,18 +393,18 @@ ScVbaWindow::getScrollColumn() throw (uno::RuntimeException)
 	    ScSplitPos eWhich = pViewShell->GetViewData()->GetActivePart();
 	    nValue = pViewShell->GetViewData()->GetPosX(WhichH(eWhich));
 	}
-    
+
     return uno::makeAny( nValue + 1);
 }
 
-void SAL_CALL 
+void SAL_CALL
 ScVbaWindow::setScrollColumn( const uno::Any& _scrollcolumn ) throw (uno::RuntimeException)
 {
     // !! TODO !! get view shell from controller
 	ScTabViewShell* pViewShell = excel::getBestViewShell( m_xModel );
 	if ( pViewShell )
 	{
-		sal_Int32 scrollColumn = 0;	
+		sal_Int32 scrollColumn = 0;
 	    _scrollcolumn >>= scrollColumn;
 	    ScSplitPos eWhich = pViewShell->GetViewData()->GetActivePart();
 	    sal_Int32 nOldValue = pViewShell->GetViewData()->GetPosX(WhichH(eWhich)) + 1;
@@ -412,9 +412,9 @@ ScVbaWindow::setScrollColumn( const uno::Any& _scrollcolumn ) throw (uno::Runtim
 	}
 }
 
-uno::Any SAL_CALL 
+uno::Any SAL_CALL
 ScVbaWindow::getWindowState() throw (uno::RuntimeException)
-{	
+{
     sal_Int32 nwindowState = xlNormal;
     // !! TODO !! get view shell from controller
     ScTabViewShell* pViewShell = excel::getBestViewShell( m_xModel );
@@ -430,7 +430,7 @@ ScVbaWindow::getWindowState() throw (uno::RuntimeException)
     return uno::makeAny( nwindowState );
 }
 
-void SAL_CALL 
+void SAL_CALL
 ScVbaWindow::setWindowState( const uno::Any& _windowstate ) throw (uno::RuntimeException)
 {
 	sal_Int32 nwindowState = xlMaximized;
@@ -468,20 +468,20 @@ ScVbaWindow::Close( const uno::Any& SaveChanges, const uno::Any& FileName, const
 }
 
 uno::Reference< excel::XPane > SAL_CALL
-ScVbaWindow::ActivePane() throw (script::BasicErrorException, uno::RuntimeException) 
-{ 
+ScVbaWindow::ActivePane() throw (script::BasicErrorException, uno::RuntimeException)
+{
     uno::Reference< sheet::XViewPane > xViewPane( getController(), uno::UNO_QUERY_THROW );
 	return new ScVbaPane( this, mxContext, m_xModel, xViewPane );
 }
 
-uno::Reference< excel::XRange > SAL_CALL 
+uno::Reference< excel::XRange > SAL_CALL
 ScVbaWindow::ActiveCell(  ) throw (script::BasicErrorException, uno::RuntimeException)
 {
 	uno::Reference< excel::XApplication > xApplication( Application(), uno::UNO_QUERY_THROW );
 	return xApplication->getActiveCell();
 }
 
-uno::Any SAL_CALL 
+uno::Any SAL_CALL
 ScVbaWindow::Selection(  ) throw (script::BasicErrorException, uno::RuntimeException)
 {
 	uno::Reference< excel::XApplication > xApplication( Application(), uno::UNO_QUERY_THROW );
@@ -502,105 +502,105 @@ ScVbaWindow::getDisplayGridlines() throw (uno::RuntimeException)
 	rtl::OUString sName( RTL_CONSTASCII_USTRINGPARAM( SC_UNO_SHOWGRID ) );
 	sal_Bool bGrid = sal_True;
 	getControllerProps()->getPropertyValue( sName ) >>= bGrid;
-	return bGrid;	
+	return bGrid;
 }
 
 
-void SAL_CALL 
+void SAL_CALL
 ScVbaWindow::setDisplayGridlines( ::sal_Bool _displaygridlines ) throw (uno::RuntimeException)
 {
 	rtl::OUString sName( RTL_CONSTASCII_USTRINGPARAM( SC_UNO_SHOWGRID ) );
 	getControllerProps()->setPropertyValue( sName, uno::makeAny( _displaygridlines ));
 }
 
-::sal_Bool SAL_CALL 
+::sal_Bool SAL_CALL
 ScVbaWindow::getDisplayHeadings() throw (uno::RuntimeException)
 {
 	rtl::OUString sName( RTL_CONSTASCII_USTRINGPARAM( SC_UNO_COLROWHDR ) );
 	sal_Bool bHeading = sal_True;
 	getControllerProps()->getPropertyValue( sName ) >>= bHeading;
-	return bHeading;	
+	return bHeading;
 }
 
-void SAL_CALL 
+void SAL_CALL
 ScVbaWindow::setDisplayHeadings( ::sal_Bool _bDisplayHeadings ) throw (uno::RuntimeException)
 {
 	rtl::OUString sName( RTL_CONSTASCII_USTRINGPARAM( SC_UNO_COLROWHDR ) );
 	getControllerProps()->setPropertyValue( sName, uno::makeAny( _bDisplayHeadings ));
 }
 
-::sal_Bool SAL_CALL 
+::sal_Bool SAL_CALL
 ScVbaWindow::getDisplayHorizontalScrollBar() throw (uno::RuntimeException)
 {
 	rtl::OUString sName( RTL_CONSTASCII_USTRINGPARAM( SC_UNO_HORSCROLL ) );
 	sal_Bool bHorizontalScrollBar = sal_True;
 	getControllerProps()->getPropertyValue( sName ) >>= bHorizontalScrollBar;
-	return bHorizontalScrollBar;	
+	return bHorizontalScrollBar;
 }
 
-void SAL_CALL 
+void SAL_CALL
 ScVbaWindow::setDisplayHorizontalScrollBar( ::sal_Bool _bDisplayHorizontalScrollBar ) throw (uno::RuntimeException)
 {
 	rtl::OUString sName( RTL_CONSTASCII_USTRINGPARAM( SC_UNO_HORSCROLL ) );
 	getControllerProps()->setPropertyValue( sName, uno::makeAny( _bDisplayHorizontalScrollBar ));
 }
 
-::sal_Bool SAL_CALL 
+::sal_Bool SAL_CALL
 ScVbaWindow::getDisplayOutline() throw (uno::RuntimeException)
 {
 	rtl::OUString sName( RTL_CONSTASCII_USTRINGPARAM( SC_UNO_OUTLSYMB ) );
 	sal_Bool bOutline = sal_True;
 	getControllerProps()->getPropertyValue( sName ) >>= bOutline;
-	return bOutline;	
+	return bOutline;
 }
 
-void SAL_CALL 
+void SAL_CALL
 ScVbaWindow::setDisplayOutline( ::sal_Bool _bDisplayOutline ) throw (uno::RuntimeException)
 {
 	rtl::OUString sName( RTL_CONSTASCII_USTRINGPARAM( SC_UNO_OUTLSYMB ) );
 	getControllerProps()->setPropertyValue( sName, uno::makeAny( _bDisplayOutline ));
 }
 
-::sal_Bool SAL_CALL 
+::sal_Bool SAL_CALL
 ScVbaWindow::getDisplayVerticalScrollBar() throw (uno::RuntimeException)
 {
 	rtl::OUString sName( RTL_CONSTASCII_USTRINGPARAM( SC_UNO_VERTSCROLL ) );
 	sal_Bool bVerticalScrollBar = sal_True;
 	getControllerProps()->getPropertyValue( sName ) >>= bVerticalScrollBar;
-	return bVerticalScrollBar;	
+	return bVerticalScrollBar;
 }
 
-void SAL_CALL 
+void SAL_CALL
 ScVbaWindow::setDisplayVerticalScrollBar( ::sal_Bool _bDisplayVerticalScrollBar ) throw (uno::RuntimeException)
 {
 	rtl::OUString sName( RTL_CONSTASCII_USTRINGPARAM( SC_UNO_VERTSCROLL ) );
 	getControllerProps()->setPropertyValue( sName, uno::makeAny( _bDisplayVerticalScrollBar ));
 }
 
-::sal_Bool SAL_CALL 
+::sal_Bool SAL_CALL
 ScVbaWindow::getDisplayWorkbookTabs() throw (uno::RuntimeException)
 {
 	rtl::OUString sName( RTL_CONSTASCII_USTRINGPARAM( SC_UNO_SHEETTABS ) );
 	sal_Bool bWorkbookTabs = sal_True;
 	getControllerProps()->getPropertyValue( sName ) >>= bWorkbookTabs;
-	return bWorkbookTabs;	
+	return bWorkbookTabs;
 }
 
-void SAL_CALL 
+void SAL_CALL
 ScVbaWindow::setDisplayWorkbookTabs( ::sal_Bool _bDisplayWorkbookTabs ) throw (uno::RuntimeException)
 {
 	rtl::OUString sName( RTL_CONSTASCII_USTRINGPARAM( SC_UNO_SHEETTABS ) );
 	getControllerProps()->setPropertyValue( sName, uno::makeAny( _bDisplayWorkbookTabs ));
 }
 
-::sal_Bool SAL_CALL 
+::sal_Bool SAL_CALL
 ScVbaWindow::getFreezePanes() throw (uno::RuntimeException)
 {
     uno::Reference< sheet::XViewFreezable > xViewFreezable( getController(), uno::UNO_QUERY_THROW );
 	return xViewFreezable->hasFrozenPanes();
 }
 
-void SAL_CALL 
+void SAL_CALL
 ScVbaWindow::setFreezePanes( ::sal_Bool _bFreezePanes ) throw (uno::RuntimeException)
 {
     uno::Reference< sheet::XViewPane > xViewPane( getController(), uno::UNO_QUERY_THROW );
@@ -617,7 +617,7 @@ ScVbaWindow::setFreezePanes( ::sal_Bool _bFreezePanes ) throw (uno::RuntimeExcep
 		}
 		else
 		{
-			// otherwise we freeze in the center of the visible sheet	
+			// otherwise we freeze in the center of the visible sheet
 			table::CellRangeAddress aCellRangeAddress = xViewPane->getVisibleRange();
 			sal_Int32 nColumn = aCellRangeAddress.StartColumn + (( aCellRangeAddress.EndColumn - aCellRangeAddress.StartColumn )/2 );
 			sal_Int32 nRow = aCellRangeAddress.StartRow + (( aCellRangeAddress.EndRow - aCellRangeAddress.StartRow )/2 );
@@ -631,14 +631,14 @@ ScVbaWindow::setFreezePanes( ::sal_Bool _bFreezePanes ) throw (uno::RuntimeExcep
 	}
 }
 
-::sal_Bool SAL_CALL 
+::sal_Bool SAL_CALL
 ScVbaWindow::getSplit() throw (uno::RuntimeException)
 {
     uno::Reference< sheet::XViewSplitable > xViewSplitable( getController(), uno::UNO_QUERY_THROW );
 	return xViewSplitable->getIsWindowSplit();
 }
 
-void SAL_CALL 
+void SAL_CALL
 ScVbaWindow::setSplit( ::sal_Bool _bSplit ) throw (uno::RuntimeException)
 {
 	if( !_bSplit )
@@ -656,14 +656,14 @@ ScVbaWindow::setSplit( ::sal_Bool _bSplit ) throw (uno::RuntimeException)
 	}
 }
 
-sal_Int32 SAL_CALL 
+sal_Int32 SAL_CALL
 ScVbaWindow::getSplitColumn() throw (uno::RuntimeException)
 {
     uno::Reference< sheet::XViewSplitable > xViewSplitable( getController(), uno::UNO_QUERY_THROW );
 	return xViewSplitable->getSplitColumn();
 }
 
-void SAL_CALL 
+void SAL_CALL
 ScVbaWindow::setSplitColumn( sal_Int32 _splitcolumn ) throw (uno::RuntimeException)
 {
 	if( getSplitColumn() != _splitcolumn )
@@ -674,14 +674,14 @@ ScVbaWindow::setSplitColumn( sal_Int32 _splitcolumn ) throw (uno::RuntimeExcepti
 	}
 }
 
-double SAL_CALL 
+double SAL_CALL
 ScVbaWindow::getSplitHorizontal() throw (uno::RuntimeException)
 {
     uno::Reference< sheet::XViewSplitable > xViewSplitable( getController(), uno::UNO_QUERY_THROW );
 	return PixelsToPoints( getDevice(), xViewSplitable->getSplitHorizontal(), sal_True );
 }
 
-void SAL_CALL 
+void SAL_CALL
 ScVbaWindow::setSplitHorizontal( double _splithorizontal ) throw (uno::RuntimeException)
 {
     uno::Reference< sheet::XViewSplitable > xViewSplitable( getController(), uno::UNO_QUERY_THROW );
@@ -689,14 +689,14 @@ ScVbaWindow::setSplitHorizontal( double _splithorizontal ) throw (uno::RuntimeEx
     xViewSplitable->splitAtPosition( static_cast< sal_Int32 >( fHoriPixels ), 0 );
 }
 
-sal_Int32 SAL_CALL 
+sal_Int32 SAL_CALL
 ScVbaWindow::getSplitRow() throw (uno::RuntimeException)
 {
     uno::Reference< sheet::XViewSplitable > xViewSplitable( getController(), uno::UNO_QUERY_THROW );
 	return xViewSplitable->getSplitRow();
 }
 
-void SAL_CALL 
+void SAL_CALL
 ScVbaWindow::setSplitRow( sal_Int32 _splitrow ) throw (uno::RuntimeException)
 {
 	if( getSplitRow() != _splitrow )
@@ -707,14 +707,14 @@ ScVbaWindow::setSplitRow( sal_Int32 _splitrow ) throw (uno::RuntimeException)
 	}
 }
 
-double SAL_CALL 
+double SAL_CALL
 ScVbaWindow::getSplitVertical() throw (uno::RuntimeException)
 {
     uno::Reference< sheet::XViewSplitable > xViewSplitable( getController(), uno::UNO_QUERY_THROW );
 	return PixelsToPoints( getDevice(), xViewSplitable->getSplitVertical(), sal_False );
 }
 
-void SAL_CALL 
+void SAL_CALL
 ScVbaWindow::setSplitVertical(double _splitvertical ) throw (uno::RuntimeException)
 {
     uno::Reference< sheet::XViewSplitable > xViewSplitable( getController(), uno::UNO_QUERY_THROW );
@@ -748,9 +748,9 @@ void ScVbaWindow::SplitAtDefinedPosition( sal_Int32 nColumns, sal_Int32 nRows )
 	}
 }
 
-uno::Any SAL_CALL 
+uno::Any SAL_CALL
 ScVbaWindow::getZoom() throw (uno::RuntimeException)
-{	
+{
 	uno::Reference< beans::XPropertySet > xProps = getControllerProps();
 	rtl::OUString sName( RTL_CONSTASCII_USTRINGPARAM( SC_UNO_ZOOMTYPE ) );
 	sal_Int16 nZoomType = view::DocumentZoomType::PAGE_WIDTH;
@@ -769,7 +769,7 @@ ScVbaWindow::getZoom() throw (uno::RuntimeException)
     return uno::Any();
 }
 
-void SAL_CALL 
+void SAL_CALL
 ScVbaWindow::setZoom( const uno::Any& _zoom ) throw (uno::RuntimeException)
 {
     sal_Int16 nZoom = 100;
@@ -784,7 +784,7 @@ ScVbaWindow::setZoom( const uno::Any& _zoom ) throw (uno::RuntimeException)
     excel::implSetZoom( m_xModel, nZoom, vTabs );
 }
 
-uno::Reference< excel::XWorksheet > SAL_CALL 
+uno::Reference< excel::XWorksheet > SAL_CALL
 ScVbaWindow::ActiveSheet(  ) throw (script::BasicErrorException, uno::RuntimeException)
 {
 	uno::Reference< excel::XApplication > xApplication( Application(), uno::UNO_QUERY_THROW );
@@ -796,17 +796,17 @@ ScVbaWindow::getView() throw (uno::RuntimeException)
 {
 	sal_Bool bPageBreak = sal_False;
 	sal_Int32 nWindowView = excel::XlWindowView::xlNormalView;
-	
+
 	ScTabViewShell* pViewShell = excel::getBestViewShell( m_xModel );
 	if (pViewShell)
 		bPageBreak = pViewShell->GetViewData()->IsPagebreakMode();
 
 	if( bPageBreak )
-		nWindowView = excel::XlWindowView::xlPageBreakPreview;	
+		nWindowView = excel::XlWindowView::xlPageBreakPreview;
 	else
 		nWindowView = excel::XlWindowView::xlNormalView;
 
-	return uno::makeAny( nWindowView );	
+	return uno::makeAny( nWindowView );
 }
 
 void SAL_CALL
@@ -849,7 +849,7 @@ ScVbaWindow::PointsToScreenPixelsX(sal_Int32 _points) throw (css::script::BasicE
 	return static_cast<sal_Int32>(fConvertFactor * nHundredthsofOneMillimeters );
 }
 
-sal_Int32 SAL_CALL 
+sal_Int32 SAL_CALL
 ScVbaWindow::PointsToScreenPixelsY(sal_Int32 _points) throw (css::script::BasicErrorException, css::uno::RuntimeException)
 {
 	sal_Int32 nHundredthsofOneMillimeters = Millimeter::getInHundredthsOfOneMillimeter( _points );
@@ -857,30 +857,30 @@ ScVbaWindow::PointsToScreenPixelsY(sal_Int32 _points) throw (css::script::BasicE
 	return static_cast<sal_Int32>(fConvertFactor * nHundredthsofOneMillimeters );
 }
 
-void SAL_CALL 
+void SAL_CALL
 ScVbaWindow::PrintOut( const css::uno::Any& From, const css::uno::Any&To, const css::uno::Any& Copies, const css::uno::Any& Preview, const css::uno::Any& ActivePrinter, const css::uno::Any& PrintToFile, const css::uno::Any& Collate, const css::uno::Any& PrToFileName ) throw (css::script::BasicErrorException, css::uno::RuntimeException)
 {
-	// need test, print current active sheet	
+	// need test, print current active sheet
     // !! TODO !! get view shell from controller
 	PrintOutHelper( excel::getBestViewShell( m_xModel ), From, To, Copies, Preview, ActivePrinter, PrintToFile, Collate, PrToFileName, sal_True );
 }
 
-void SAL_CALL 
+void SAL_CALL
 ScVbaWindow::PrintPreview( const css::uno::Any& EnableChanges ) throw (css::script::BasicErrorException, css::uno::RuntimeException)
 {
-	// need test, print preview current active sheet	
+	// need test, print preview current active sheet
     // !! TODO !! get view shell from controller
 	PrintPreviewHelper( EnableChanges, excel::getBestViewShell( m_xModel ) );
 }
 
-rtl::OUString& 
+rtl::OUString&
 ScVbaWindow::getServiceImplName()
 {
 	static rtl::OUString sImplName( RTL_CONSTASCII_USTRINGPARAM("ScVbaWindow") );
 	return sImplName;
 }
 
-uno::Sequence< rtl::OUString > 
+uno::Sequence< rtl::OUString >
 ScVbaWindow::getServiceNames()
 {
 	static uno::Sequence< rtl::OUString > aServiceNames;

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
@@ -37,8 +37,8 @@
 
 #include <window.h>
 
-namespace 
-{ 
+namespace
+{
     struct ImplBlackWall
         : public rtl::StaticWithInit<Wallpaper, ImplBlackWall> {
         Wallpaper operator () () {
@@ -50,7 +50,7 @@ namespace
         Wallpaper operator () () {
             return Wallpaper(COL_LIGHTGRAY);
         }
-    }; 
+    };
 }
 
 // =======================================================================
@@ -106,11 +106,11 @@ void Splitter::ImplInit( Window* pParent, WinBits nWinStyle )
 
     if( GetSettings().GetStyleSettings().GetFaceColor().IsDark() )
 	    SetBackground( ImplWhiteWall::get() );
-    else 
+    else
 	    SetBackground( ImplBlackWall::get() );
 
     TaskPaneList *pTList = GetSystemWindow()->GetTaskPaneList();
-    pTList->AddWindow( this ); 
+    pTList->AddWindow( this );
 }
 
 // -----------------------------------------------------------------------
@@ -182,7 +182,7 @@ Splitter::Splitter( Window* pParent, const ResId& rResId ) :
 Splitter::~Splitter()
 {
     TaskPaneList *pTList = GetSystemWindow()->GetTaskPaneList();
-    pTList->RemoveWindow( this ); 
+    pTList->RemoveWindow( this );
 }
 
 // -----------------------------------------------------------------------
@@ -208,7 +208,7 @@ long Splitter::GetKeyboardStepSize() const
 {
     return mnKeyboardStepSize;
 }
- 
+
 // -----------------------------------------------------------------------
 
 Splitter* Splitter::ImplFindSibling()
@@ -230,7 +230,7 @@ Splitter* Splitter::ImplFindSibling()
 }
 
 // -----------------------------------------------------------------------
-    
+
 sal_Bool Splitter::ImplSplitterActive()
 {
     // is splitter in document or at scrollbar handle ?
@@ -414,7 +414,7 @@ void Splitter::ImplKbdTracking( KeyCode aKeyCode )
         int maxiter = 500;  // avoid endless loop
         int delta=0;
         int delta_step = mbHorzSplit  ? aSize.Width()/10 : aSize.Height()/10;
-        
+
         // use the specified step size if it was set
         if( mnKeyboardStepSize != SPLITTER_DEFAULTSTEPSIZE )
             delta_step = mnKeyboardStepSize;
@@ -430,16 +430,16 @@ void Splitter::ImplKbdTracking( KeyCode aKeyCode )
 
             switch( nCode )
             {
-            case KEY_LEFT:  
+            case KEY_LEFT:
                 aNewPos.X()-=delta;
                 break;
-            case KEY_RIGHT:  
+            case KEY_RIGHT:
                 aNewPos.X()+=delta;
                 break;
-            case KEY_UP:  
+            case KEY_UP:
                 aNewPos.Y()-=delta;
                 break;
-            case KEY_DOWN:  
+            case KEY_DOWN:
                 aNewPos.Y()+=delta;
                 break;
             default:
@@ -460,7 +460,7 @@ void Splitter::ImplKbdTracking( KeyCode aKeyCode )
 			    if ( aNewPos.Y() == maDragPos.Y() )
 				    continue;
 		    }
-        
+
 			maDragPos = aNewPos;
 			long nNewPos;
 			if ( mbHorzSplit )
@@ -570,7 +570,7 @@ void Splitter::ImplStartKbdSplitting()
 
 	StartSplit();
 
-	// determine start position 
+	// determine start position
     // because we have no mouse position we take either the position
     // of the splitter window or the last split position
     // the other coordinate is just the center of the reference window
@@ -741,7 +741,7 @@ void Splitter::KeyInput( const KeyEvent& rKEvt )
             GrabFocusToDocument();
             break;
     }
-    mbInKeyEvent = 0;    
+    mbInKeyEvent = 0;
 }
 
 // -----------------------------------------------------------------------
@@ -764,7 +764,7 @@ void Splitter::DataChanged( const DataChangedEvent& rDCEvt )
         {
             if( newFaceColor.IsDark() )
 	            SetBackground( ImplWhiteWall::get() );
-            else 
+            else
 	            SetBackground( ImplBlackWall::get() );
         }
     }
@@ -775,7 +775,7 @@ void Splitter::DataChanged( const DataChangedEvent& rDCEvt )
 void Splitter::Paint( const Rectangle& rPaintRect )
 {
     if( HasFocus() || mbKbdSplitting )
-    {   
+    {
         Color oldFillCol = GetFillColor();
         Color oldLineCol = GetLineColor();
 

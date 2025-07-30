@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -58,7 +58,7 @@ using namespace ::com::sun::star::frame;
 
 namespace framework
 {
-class 
+class
 DEFINE_XSERVICEINFO_MULTISERVICE        (   MacrosMenuController				    ,
                                             OWeakObject                             ,
                                             SERVICENAME_POPUPMENUCONTROLLER		    ,
@@ -83,22 +83,22 @@ void MacrosMenuController::fillPopupMenu( Reference< css::awt::XPopupMenu >& rPo
 {
     VCLXPopupMenu* pVCLPopupMenu = (VCLXPopupMenu *)VCLXMenu::GetImplementation( rPopupMenu );
     PopupMenu*     pPopupMenu    = 0;
-    
+
     vos::OGuard aSolarMutexGuard( Application::GetSolarMutex() );
-    
+
     resetPopupMenu( rPopupMenu );
     if ( pVCLPopupMenu )
         pPopupMenu = (PopupMenu *)pVCLPopupMenu->GetMenu();
 
     if (!pPopupMenu)
         return;
-        
+
     // insert basic
     String aCommand = String::CreateFromAscii( ".uno:MacroDialog" );
     String aDisplayName = RetrieveLabelFromCommand( aCommand );
     pPopupMenu->InsertItem( 2, aDisplayName );
     pPopupMenu->SetItemCommand( 2, aCommand );
-    
+
     // insert providers but not basic or java
     addScriptItems( pPopupMenu, 4);
 }
@@ -113,7 +113,7 @@ void SAL_CALL MacrosMenuController::disposing( const EventObject& ) throw ( Runt
     m_xFrame.clear();
     m_xDispatch.clear();
     m_xServiceManager.clear();
-    
+
     if ( m_xPopupMenu.is() )
     {
         m_xPopupMenu->removeMenuListener( Reference< css::awt::XMenuListener >(( OWeakObject *)this, UNO_QUERY ));
@@ -144,11 +144,11 @@ void MacrosMenuController::impl_select(const Reference< XDispatch >& /*_xDispatc
         ExecuteInfo* pExecuteInfo = new ExecuteInfo;
         pExecuteInfo->xDispatch     = xDispatch;
         pExecuteInfo->aTargetURL    = aTargetURL;
-        //pExecuteInfo->aArgs         = aArgs; 
+        //pExecuteInfo->aArgs         = aArgs;
         if(::comphelper::UiEventsLogger::isEnabled()) //#i88653#
             UiEventLogHelper(::rtl::OUString::createFromAscii("MacrosMenuController")).log(m_xServiceManager, m_xFrame, aTargetURL, pExecuteInfo->aArgs);
 //                xDispatch->dispatch( aTargetURL, aArgs );
-        Application::PostUserEvent( STATIC_LINK(0, MacrosMenuController , ExecuteHdl_Impl), pExecuteInfo ); 
+        Application::PostUserEvent( STATIC_LINK(0, MacrosMenuController , ExecuteHdl_Impl), pExecuteInfo );
     }
     else
     {
@@ -170,7 +170,7 @@ IMPL_STATIC_LINK_NOINSTANCE( MacrosMenuController, ExecuteHdl_Impl, ExecuteInfo*
    }
    delete pExecuteInfo;
    return 0;
-} 
+}
 
 String MacrosMenuController::RetrieveLabelFromCommand( const String& aCmdURL )
 {
@@ -185,7 +185,7 @@ void MacrosMenuController::addScriptItems( PopupMenu* pPopupMenu, sal_uInt16 sta
     const ::rtl::OUString providerKey =
     ::rtl::OUString::createFromAscii("com.sun.star.script.provider.ScriptProviderFor" );
     const ::rtl::OUString languageProviderName =
-        ::rtl::OUString::createFromAscii("com.sun.star.script.provider.LanguageScriptProvider" );    
+        ::rtl::OUString::createFromAscii("com.sun.star.script.provider.LanguageScriptProvider" );
     sal_uInt16 itemId = startItemId;
     Reference< XContentEnumerationAccess > xEnumAccess = Reference< XContentEnumerationAccess >( m_xServiceManager, UNO_QUERY_THROW );
     Reference< XEnumeration > xEnum = xEnumAccess->createContentEnumeration ( languageProviderName );
@@ -198,7 +198,7 @@ void MacrosMenuController::addScriptItems( PopupMenu* pPopupMenu, sal_uInt16 sta
             break;
         }
         Sequence< ::rtl::OUString > serviceNames = xServiceInfo->getSupportedServiceNames();
-            	    
+
         if ( serviceNames.getLength() > 0 )
         {
             for ( sal_Int32 index = 0; index < serviceNames.getLength(); index++ )

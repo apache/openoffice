@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -161,17 +161,17 @@ ScXMLDataPilotTableContext::ScXMLDataPilotTableContext( ScXMLImport& rImport,
 			case XML_TOK_DATA_PILOT_TABLE_ATTR_GRAND_TOTAL :
 			{
                 if (IsXMLToken(sValue, XML_BOTH))
-                {    
+                {
                     maRowGrandTotal.mbVisible = true;
                     maColGrandTotal.mbVisible = true;
                 }
                 else if (IsXMLToken(sValue, XML_ROW))
-                {    
+                {
                     maRowGrandTotal.mbVisible = true;
                     maColGrandTotal.mbVisible = false;
                 }
                 else if (IsXMLToken(sValue, XML_COLUMN))
-                {    
+                {
                     maRowGrandTotal.mbVisible = false;
                     maColGrandTotal.mbVisible = true;
                 }
@@ -283,7 +283,7 @@ SvXMLImportContext *ScXMLDataPilotTableContext::CreateChildContext( sal_uInt16 n
 }
 
 void ScXMLDataPilotTableContext::SetButtons()
-{    
+{
     ScDPOutputGeometry aGeometry(aTargetRangeAddress, bShowFilter, ScDPOutputGeometry::ODF);
     aGeometry.setColumnFieldCount(mnColFieldCount);
     aGeometry.setRowFieldCount(mnRowFieldCount);
@@ -307,7 +307,7 @@ void ScXMLDataPilotTableContext::SetButtons()
                 if (eType == ScDPOutputGeometry::Column || eType == ScDPOutputGeometry::Row)
                     nMFlag |= SC_MF_BUTTON_POPUP;
 
-                // Use the cell's string value to see if this field contains a 
+                // Use the cell's string value to see if this field contains a
                 // hidden member.  Isn't there a better way?  GetString() is
                 // quite expensive...
                 String aCellStr;
@@ -357,7 +357,7 @@ void ScXMLDataPilotTableContext::AddDimension(ScDPSaveDimension* pDim, bool bHas
 
             if (bHasHiddenMember)
             {
-                // the layout name takes priority over the original name, 
+                // the layout name takes priority over the original name,
                 // since this data is used against cell values.
                 const OUString* pLayoutName = pDim->GetLayoutName();
                 if (pLayoutName)
@@ -444,7 +444,7 @@ void ScXMLDataPilotTableContext::EndElement()
         pDPSave->SetRowGrand(maRowGrandTotal.mbVisible);
         pDPSave->SetColumnGrand(maColGrandTotal.mbVisible);
         if (maRowGrandTotal.maDisplayName.getLength())
-            // TODO: Right now, we only support one grand total name for both 
+            // TODO: Right now, we only support one grand total name for both
             // column and row totals.  Take the value from the row total for
             // now.
             pDPSave->SetGrandTotalName(maRowGrandTotal.maDisplayName);
@@ -788,7 +788,7 @@ ScXMLDataPilotGrandTotalContext::~ScXMLDataPilotGrandTotalContext()
 {
 }
 
-SvXMLImportContext* ScXMLDataPilotGrandTotalContext::CreateChildContext( 
+SvXMLImportContext* ScXMLDataPilotGrandTotalContext::CreateChildContext(
     sal_uInt16 nPrefix, const ::rtl::OUString& rLocalName, const Reference<XAttributeList>& /*xAttrList*/ )
 {
     return new SvXMLImportContext( GetImport(), nPrefix, rLocalName );
@@ -953,7 +953,7 @@ ScXMLDataPilotFieldContext::ScXMLDataPilotFieldContext( ScXMLImport& rImport,
 		}
 	}
 	if (bHasName)
-    {    
+    {
 		pDim = new ScDPSaveDimension(String(sName), bDataLayout);
         if (aDisplayName.getLength())
             pDim->SetLayoutName(aDisplayName);
@@ -1029,7 +1029,7 @@ void ScXMLDataPilotFieldContext::EndElement()
         }
 		pDataPilotTable->AddDimension(pDim, mbHasHiddenMember);
         if (bIsGroupField)
-        {            
+        {
             ScDPNumGroupInfo aInfo;
             aInfo.Enable = sal_True;
             aInfo.DateValues = bDateValue;
@@ -1743,7 +1743,7 @@ ScXMLDataPilotGroupContext::ScXMLDataPilotGroupContext( ScXMLImport& rImport,
 		sal_uInt16 nPrefix = GetScImport().GetNamespaceMap().GetKeyByAttrName(
 											sAttrName, &aLocalName );
 		rtl::OUString sValue = xAttrList->getValueByIndex( i );
-        
+
         if (nPrefix == XML_NAMESPACE_TABLE)
         {
             if (IsXMLToken(aLocalName, XML_NAME))

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -755,7 +755,7 @@ void Font::Merge( const Font& rFont )
 
 void Font::GetFontAttributes( ImplFontAttributes& rAttrs ) const
 {
-    // #i56788# Use members directly, don't risc config access.    
+    // #i56788# Use members directly, don't risc config access.
     rAttrs.maName = mpImplFont->maFamilyName;
     rAttrs.maStyleName = mpImplFont->maStyleName;
     rAttrs.meFamily = mpImplFont->meFamily;
@@ -931,16 +931,16 @@ namespace
             }
             // set italic
             o_rResult.SetItalic( (aInfo.italicAngle != 0) ? ITALIC_NORMAL : ITALIC_NONE );
-            
+
             // set pitch
             o_rResult.SetPitch( (aInfo.pitch == 0) ? PITCH_VARIABLE : PITCH_FIXED );
-            
+
             // set style name
             if( aInfo.usubfamily )
                 o_rResult.SetStyleName( rtl::OUString( aInfo.usubfamily ) );
             else if( aInfo.subfamily )
                 o_rResult.SetStyleName( rtl::OUString::createFromAscii( aInfo.subfamily ) );
-            
+
             // cleanup
             CloseTTFont( pTTF );
             // success
@@ -948,13 +948,13 @@ namespace
         }
         return bResult;
     }
-    
+
     struct WeightSearchEntry
     {
         const char* string;
         int         string_len;
         FontWeight  weight;
-        
+
         bool operator<( const WeightSearchEntry& rRight ) const
         {
             return rtl_str_compareIgnoreAsciiCase_WithLength( string, string_len, rRight.string, rRight.string_len ) < 0;
@@ -973,7 +973,7 @@ namespace
         { "super", 5, WEIGHT_ULTRABOLD },
         { "thin", 4, WEIGHT_THIN }
     };
-    
+
     bool identifyType1Font( const char* i_pBuffer, sal_uInt32 i_nSize, Font& o_rResult )
     {
         bool bResult = false;
@@ -1000,7 +1000,7 @@ namespace
                     o_rResult.SetName( rtl::OStringToOUString( rtl::OString( pOpen+1, pClose-pOpen-1 ), RTL_TEXTENCODING_ASCII_US ) );
                 }
             }
-            
+
             // parse /ItalicAngle
             static const char* pItalic = "/ItalicAngle";
             const char* pItalicPos = std::search( pStream, pExecPos, pItalic, pItalic+12 );
@@ -1009,7 +1009,7 @@ namespace
                 sal_Int32 nItalic = rtl_str_toInt32( pItalicPos+12, 10 );
                 o_rResult.SetItalic( (nItalic != 0) ? ITALIC_NORMAL : ITALIC_NONE );
             }
-            
+
             // parse /Weight
             static const char* pWeight = "/Weight";
             const char* pWeightPos = std::search( pStream, pExecPos, pWeight, pWeight+7 );
@@ -1072,7 +1072,7 @@ Font Font::identifyFont( const void* i_pBuffer, sal_uInt32 i_nSize )
             identifyType1Font( pStream, i_nSize, aResult );
         }
     }
-    
+
     return aResult;
 }
 

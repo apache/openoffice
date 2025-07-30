@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -123,7 +123,7 @@ DlgQryJoin::DlgQryJoin( OQueryTableView * pParent,
     m_pJoinControl->Show();
     m_pJoinControl->m_aCBNatural.Check(static_cast<OQueryTableConnectionData*>(m_pConnData.get())->isNatural());
     m_pTableControl->Show();
-	
+
 	if( _bAllowTableSelect )
 	{
 		m_pTableControl->Init( m_pConnData );
@@ -185,7 +185,7 @@ DlgQryJoin::DlgQryJoin( OQueryTableView * pParent,
 
 		m_pTableControl->NotifyCellChange();
         m_pTableControl->enableRelation(!static_cast<OQueryTableConnectionData*>(m_pConnData.get())->isNatural() && eJoinType != CROSS_JOIN );
-	}	
+	}
 
 	FreeResource();
 }
@@ -195,7 +195,7 @@ DlgQryJoin::~DlgQryJoin()
 {
 	DBG_DTOR(DlgQryJoin,NULL);
     delete m_pJoinControl;
-	delete m_pTableControl;    
+	delete m_pTableControl;
 }
 // -----------------------------------------------------------------------------
 IMPL_LINK( DlgQryJoin, LBChangeHdl, ListBox*, /*pListBox*/ )
@@ -203,7 +203,7 @@ IMPL_LINK( DlgQryJoin, LBChangeHdl, ListBox*, /*pListBox*/ )
 	DBG_CHKTHIS(DlgQryJoin,NULL);
     if (m_pJoinControl->aLB_JoinType.GetSelectEntryPos() == m_pJoinControl->aLB_JoinType.GetSavedValue() )
         return 1;
-    
+
     m_pJoinControl->aLB_JoinType.SaveValue();
 	aML_HelpText.SetText(String());
 
@@ -222,7 +222,7 @@ IMPL_LINK( DlgQryJoin, LBChangeHdl, ListBox*, /*pListBox*/ )
 		case ID_INNER_JOIN:
 			nResId = STR_QUERY_INNER_JOIN;
             bAddHint = sal_False;
-            eJoinType = INNER_JOIN;            
+            eJoinType = INNER_JOIN;
 			break;
 		case ID_LEFT_JOIN:
             nResId = STR_QUERY_LEFTRIGHT_JOIN;
@@ -245,7 +245,7 @@ IMPL_LINK( DlgQryJoin, LBChangeHdl, ListBox*, /*pListBox*/ )
             {
                 nResId = STR_QUERY_CROSS_JOIN;
                 eJoinType = CROSS_JOIN;
-                
+
                 m_pConnData->ResetConnLines();
                 m_pTableControl->lateInit();
                 m_pJoinControl->m_aCBNatural.Check(sal_False);
@@ -291,7 +291,7 @@ IMPL_LINK( DlgQryJoin, LBChangeHdl, ListBox*, /*pListBox*/ )
 IMPL_LINK( DlgQryJoin, OKClickHdl, Button*, /*pButton*/ )
 {
 	DBG_CHKTHIS(DlgQryJoin,NULL);
-    
+
 	m_pConnData->Update();
 	m_pOrigConnData->CopyFrom( *m_pConnData );
 
@@ -319,7 +319,7 @@ IMPL_LINK( DlgQryJoin, NaturalToggleHdl, CheckBox*, /*pButton*/ )
             {
                 if ( xReferencedTableColumns->hasByName(*pIter) )
                     m_pConnData->AppendConnLine(*pIter,*pIter);
-            }            
+            }
         }
         catch( const Exception& )
         {
@@ -328,7 +328,7 @@ IMPL_LINK( DlgQryJoin, NaturalToggleHdl, CheckBox*, /*pButton*/ )
         m_pTableControl->NotifyCellChange();
         m_pTableControl->Invalidate();
     }
-    
+
 	return 1;
 }
 // -----------------------------------------------------------------------------
@@ -386,7 +386,7 @@ void DlgQryJoin::setJoinType(EJoinType _eNewJoinType)
             break;
         }
     }
-	
+
 	LBChangeHdl(&m_pJoinControl->aLB_JoinType);
 }
 // -----------------------------------------------------------------------------

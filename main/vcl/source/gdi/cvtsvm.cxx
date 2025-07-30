@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -333,7 +333,7 @@ void ImplReadUnicodeComment( sal_uInt32 nStrmPos, SvStream& rIStm, String& rStri
 		sal_uInt16	nType;
 		sal_uInt32	nActionSize;
         xub_StrLen  nStringLen;
-		
+
 		rIStm.Seek( nStrmPos );
 		rIStm	>> nType
 				>> nActionSize;
@@ -397,7 +397,7 @@ bool ImplWriteExtendedPolyPolygonAction(SvStream& rOStm, const PolyPolygon& rPol
 		if((bOnlyWhenCurve && nAllFlagCount) || (!bOnlyWhenCurve && nAllPointCount))
 		{
 			rOStm << (sal_Int16) GDI_EXTENDEDPOLYGON_ACTION;
-			
+
 			const sal_Int32 nActionSize(
 				4 +							// Action size
 				2 +							// PolygonCount
@@ -524,7 +524,7 @@ void SVMConverter::ImplConvertFromSVM1( SvStream& rIStm, GDIMetaFile& rMtf )
 
 	// check header-magic and version
 	if( rIStm.GetError()
-        || ( memcmp( aCode, "SVGDI", sizeof( aCode ) ) != 0 ) 
+        || ( memcmp( aCode, "SVGDI", sizeof( aCode ) ) != 0 )
         || ( nVersion != 200 ) )
 	{
 		rIStm.SetError( SVSTREAM_FILEFORMAT_ERROR );
@@ -563,7 +563,7 @@ void SVMConverter::ImplConvertFromSVM1( SvStream& rIStm, GDIMetaFile& rMtf )
 		for( sal_Int32 i = 0L; i < nActions; i++ )
 		{
 			rIStm >> nType;
-			sal_Int32 nActBegin = rIStm.Tell();	
+			sal_Int32 nActBegin = rIStm.Tell();
 			rIStm >> nActionSize;
 
 			DBG_ASSERT( ( nType <= 33 ) || ( nType >= 1024 ), "Unknown GDIMetaAction while converting!" );
@@ -648,7 +648,7 @@ void SVMConverter::ImplConvertFromSVM1( SvStream& rIStm, GDIMetaFile& rMtf )
 							{
 								rMtf.ReplaceAction(
 									new MetaPolyLineAction(
-										aInputPolyPolygon.GetObject(0), 
+										aInputPolyPolygon.GetObject(0),
 										pPolyLineAction->GetLineInfo()),
 									nLastPolygonAction);
 								pPolyLineAction->Delete();
@@ -872,7 +872,7 @@ void SVMConverter::ImplConvertFromSVM1( SvStream& rIStm, GDIMetaFile& rMtf )
 					eActualCharSet = aFont.GetCharSet();
 					if ( eActualCharSet == RTL_TEXTENCODING_DONTKNOW )
 						eActualCharSet = gsl_getSystemTextEncoding();
-					
+
                     rMtf.AddAction( new MetaFontAction( aFont ) );
                     rMtf.AddAction( new MetaTextAlignAction( aFont.GetAlign() ) );
                     rMtf.AddAction( new MetaTextColorAction( aFont.GetColor() ) );
@@ -887,7 +887,7 @@ void SVMConverter::ImplConvertFromSVM1( SvStream& rIStm, GDIMetaFile& rMtf )
 				{
 					ByteString	aByteStr;
 					sal_Int32		nIndex, nLen;
-			
+
 					rIStm >> aPt >> nIndex >> nLen >> nTmp;
 					if ( nTmp && ( static_cast< sal_uInt32 >( nTmp ) < ( SAL_MAX_UINT16 - 1 ) ) )
                                         {
@@ -930,7 +930,7 @@ void SVMConverter::ImplConvertFromSVM1( SvStream& rIStm, GDIMetaFile& rMtf )
 									sal_Int32* pTmpAry = new sal_Int32[nStrLen];
 
 									aFontVDev.GetTextArray( aStr, pTmpAry, (sal_uInt16) nIndex, (sal_uInt16) nLen );
-	                                
+
 									// now, the difference between the
 									// last and the second last DX array
 									// is the advancement for the last
@@ -1513,7 +1513,7 @@ sal_uLong SVMConverter::ImplWriteActions( SvStream& rOStm, GDIMetaFile& rMtf,
 				{
 					ImplWritePopAction( rOStm );
 					nCount += 3;
-					
+
 					if(bLineJoin)
 					{
 						nCount += 1;
@@ -1680,7 +1680,7 @@ sal_uLong SVMConverter::ImplWriteActions( SvStream& rOStm, GDIMetaFile& rMtf,
 				{
 					ImplWritePopAction( rOStm );
 					nCount += 3;
-					
+
 					if(bLineJoin)
 					{
 						nCount += 1;
@@ -1691,7 +1691,7 @@ sal_uLong SVMConverter::ImplWriteActions( SvStream& rOStm, GDIMetaFile& rMtf,
                         nCount += 1;
                     }
 				}
-					
+
 				if(bLineDashDot)
 				{
 					nCount += 1;
@@ -1717,7 +1717,7 @@ sal_uLong SVMConverter::ImplWriteActions( SvStream& rOStm, GDIMetaFile& rMtf,
 					rOStm << aSimplePoly[ n ];
 
 				nCount++;
-				
+
 				const PolyPolygon aPolyPolygon(pAct->GetPolygon());
 				if(ImplWriteExtendedPolyPolygonAction(rOStm, aPolyPolygon, true))
 				{
@@ -1731,7 +1731,7 @@ sal_uLong SVMConverter::ImplWriteActions( SvStream& rOStm, GDIMetaFile& rMtf,
 				MetaPolyPolygonAction* pAct = (MetaPolyPolygonAction*) pAction;
 				ImplWritePolyPolyAction( rOStm, pAct->GetPolyPolygon() );
 				nCount++;
-				
+
 				if(ImplWriteExtendedPolyPolygonAction(rOStm, pAct->GetPolyPolygon(), true))
 				{
 					nCount++;
@@ -2419,8 +2419,8 @@ sal_uLong SVMConverter::ImplWriteActions( SvStream& rOStm, GDIMetaFile& rMtf,
 				rOStm.SeekRel( 4 );
 
 				// write data
-				rOStm << rStartPt << nWidth << 
-					static_cast<sal_uInt32>(eStrikeout) << 
+				rOStm << rStartPt << nWidth <<
+					static_cast<sal_uInt32>(eStrikeout) <<
 					static_cast<sal_uInt32>(eUnderline);
 				rOStm << (sal_Int32) 0; // number of actions that follow this comment
 

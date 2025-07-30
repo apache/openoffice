@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -72,7 +72,7 @@ namespace drawinglayer
 								aLeft.append(aTmpEnd);
 
 								xRetval[nInsert++] = Primitive2DReference(new PolygonHairlinePrimitive2D(
-									aLeft, 
+									aLeft,
 									getRGBColor()));
 							}
 							else
@@ -82,7 +82,7 @@ namespace drawinglayer
 								// is available and fat line special case reductions between 0.5 < x < 2.5 line widths
 								// are executed due to the FilledPolygon-do-not-paint-their-bottom-and-right-lines.
 								const basegfx::B2DVector aLineWidthOffset((getCorrectedLeftWidth() * 0.5) * aPerpendicular);
-								
+
 								aLeft.append(aTmpStart + aLineWidthOffset);
 								aLeft.append(aTmpEnd + aLineWidthOffset);
 								aLeft.append(aTmpEnd - aLineWidthOffset);
@@ -107,9 +107,9 @@ namespace drawinglayer
 								// create hairline primitive
 								aRight.append(aTmpStart);
 								aRight.append(aTmpEnd);
-								
+
 								xRetval[nInsert++] = Primitive2DReference(new PolygonHairlinePrimitive2D(
-									aRight, 
+									aRight,
 									getRGBColor()));
 							}
 							else
@@ -145,14 +145,14 @@ namespace drawinglayer
 							aPolygon.append(aTmpEnd);
 
 							xRetval[0] = Primitive2DReference(new PolygonHairlinePrimitive2D(
-								aPolygon, 
+								aPolygon,
 								getRGBColor()));
 						}
 						else
 						{
 							// create filled polygon primitive
 							const basegfx::B2DVector aLineWidthOffset((getCorrectedLeftWidth() * 0.5) * aPerpendicular);
-							
+
 							aPolygon.append(aTmpStart + aLineWidthOffset);
 							aPolygon.append(aTmpEnd + aLineWidthOffset);
 							aPolygon.append(aTmpEnd - aLineWidthOffset);

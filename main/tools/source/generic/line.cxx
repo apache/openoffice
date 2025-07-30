@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -223,7 +223,7 @@ double Line::GetDistance( const double& rPtX, const double& rPtY ) const
 			fDist = hypot( maStart.X() - rPtX, maStart.Y() - rPtY );
 
 			if( fS < 0.0 )
-				fDist *= -1.0; 
+				fDist *= -1.0;
 		}
         else if( fR <= 1.0 )
 			fDist = fS * sqrt( fL2 );
@@ -232,7 +232,7 @@ double Line::GetDistance( const double& rPtX, const double& rPtY ) const
 			fDist = hypot( maEnd.X() - rPtX, maEnd.Y() - rPtY );
 
 			if( fS < 0.0 )
-				fDist *= -1.0; 
+				fDist *= -1.0;
 		}
     }
     else
@@ -310,7 +310,7 @@ void Line::Enum( const Link& rEnumLink )
 		const long	nStartX = maStart.X();
 		const long	nStartY = maStart.Y();
 		const long	nEndX = maEnd.X();
-		const long	nEndY = maEnd.Y();	
+		const long	nEndY = maEnd.Y();
 		const long	nXInc = ( nStartX < nEndX ) ? 1L : -1L;
 		const long	nYInc = ( nStartY < nEndY ) ? 1L : -1L;
 

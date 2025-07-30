@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -375,7 +375,7 @@ void SVTXGridControl::setProperty( const ::rtl::OUString& PropertyName, const An
 			break;
 		}
 
-		case BASEPROPERTY_GRID_SHOWCOLUMNHEADER:	
+		case BASEPROPERTY_GRID_SHOWCOLUMNHEADER:
 		{
 			sal_Bool colHeader = true;
 			if( aValue >>= colHeader )
@@ -392,7 +392,7 @@ void SVTXGridControl::setProperty( const ::rtl::OUString& PropertyName, const An
 
             m_pTableModel->setDataModel( xDataModel );
             impl_checkTableModelInit();
-		}		
+		}
 		break;
 
         case BASEPROPERTY_GRID_COLUMNMODEL:
@@ -685,7 +685,7 @@ void SAL_CALL SVTXGridControl::disposing( const EventObject& Source ) throw(Runt
 
 //----------------------------------------------------------------------------------------------------------------------
 void SAL_CALL SVTXGridControl::selectRow( ::sal_Int32 i_rowIndex ) throw (RuntimeException, IndexOutOfBoundsException )
-{	
+{
     ::vos::OGuard aGuard( GetMutex() );
 
 	TableControl* pTable = dynamic_cast< TableControl* >( GetWindow() );
@@ -709,7 +709,7 @@ void SAL_CALL SVTXGridControl::selectAllRows() throw (RuntimeException)
 
 //----------------------------------------------------------------------------------------------------------------------
 void SAL_CALL SVTXGridControl::deselectRow( ::sal_Int32 i_rowIndex ) throw (RuntimeException, IndexOutOfBoundsException )
-{	
+{
     ::vos::OGuard aGuard( GetMutex() );
 
 	TableControl* pTable = dynamic_cast< TableControl* >( GetWindow() );

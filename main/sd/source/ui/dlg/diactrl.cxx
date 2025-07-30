@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -49,8 +49,8 @@ SFX_IMPL_TOOLBOX_CONTROL( SdTbxCtlDiaPages,  SfxUInt16Item )
 // SdPagesField
 //========================================================================
 
-SdPagesField::SdPagesField( Window* pParent, 
-                            const uno::Reference< frame::XFrame >& rFrame, 
+SdPagesField::SdPagesField( Window* pParent,
+                            const uno::Reference< frame::XFrame >& rFrame,
                             WinBits nBits ) :
 	SvxMetricField	( pParent, rFrame, nBits ),
 	m_xFrame		( rFrame )
@@ -114,7 +114,7 @@ void SdPagesField::Modify()
                                  rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( ".uno:PagesPerRow" )),
                                  aArgs );
 /*
-	rBindings.GetDispatcher()->Execute( 
+	rBindings.GetDispatcher()->Execute(
 		SID_PAGES_PER_ROW, SFX_CALLMODE_SLOT | SFX_CALLMODE_RECORD, &aItem, 0L, 0L );
 */
 }
@@ -159,7 +159,7 @@ void SdTbxCtlDiaPages::StateChanged( sal_uInt16,
 			pItem = dynamic_cast< const SfxUInt16Item* >( pState );
 			DBG_ASSERT( pItem, "sd::SdTbxCtlDiaPages::StateChanged(), wrong item type!" );
 		}
-		
+
 		pFld->UpdatePagesField( pItem );
 	}
 }

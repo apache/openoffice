@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -1566,9 +1566,9 @@ void SwTxtNode::CopyAttr( SwTxtNode *pDest, const xub_StrLen nTxtStartIdx,
     if( this != pDest )
     {
         // Frames benachrichtigen, sonst verschwinden die Ftn-Nummern
-        SwUpdateAttr aHint( 
-            nOldPos, 
-            nOldPos, 
+        SwUpdateAttr aHint(
+            nOldPos,
+            nOldPos,
             0);
 
         pDest->ModifyNotification( 0, &aHint );
@@ -2491,9 +2491,9 @@ void SwTxtNode::GCAttr()
     if(bChanged)
     {
         //TxtFrm's reagieren auf aHint, andere auf aNew
-        SwUpdateAttr aHint( 
-            nMin, 
-            nMax, 
+        SwUpdateAttr aHint(
+            nMin,
+            nMax,
             0);
 
         NotifyClients( 0, &aHint );
@@ -2570,9 +2570,9 @@ void SwTxtNode::NumRuleChgd()
 	SetInSwFntCache( sal_False );
 
     // Sending "noop" modify in order to cause invalidations of registered
-    // <SwTxtFrm> instances to get the list style change respectively the change 
+    // <SwTxtFrm> instances to get the list style change respectively the change
     // in the list tree reflected in the layout.
-    // Important note: 
+    // Important note:
     {
         SvxLRSpaceItem& rLR = (SvxLRSpaceItem&)GetSwAttrSet().GetLRSpace();
         NotifyClients( &rLR, &rLR );
@@ -4446,7 +4446,7 @@ namespace {
                 {
                     mbAddTxtNodeToList = true;
                     // --> OD 2010-05-12 #i105562#
-                    // 
+                    //
                     mrTxtNode.ResetEmptyListStyleDueToResetOutlineLevelAttr();
                     // <--
                 }
@@ -5077,7 +5077,7 @@ bool SwTxtNode::IsInContent() const
 }
 
 void SwTxtNode::SwClientNotify( const SwModify& rModify, const SfxHint& rHint )
-{   
+{
     const SwAttrHint* pHint = dynamic_cast<const SwAttrHint*>(&rHint);
     if ( pHint && pHint->GetId() == RES_CONDTXTFMTCOLL && &rModify == GetRegisteredIn() )
         ChkCondColl();

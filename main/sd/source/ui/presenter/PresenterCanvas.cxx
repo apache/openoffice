@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -104,15 +104,15 @@ public:
 
     virtual void SAL_CALL setAlpha (double nAlpha)
         throw (lang::IllegalArgumentException,RuntimeException);
-    
+
     virtual void SAL_CALL move (const geometry::RealPoint2D& rNewPos,
         const rendering::ViewState& rViewState,
         const rendering::RenderState& rRenderState)
         throw (lang::IllegalArgumentException,RuntimeException);
-    
+
     virtual void SAL_CALL transform (const geometry::AffineMatrix2D& rTransformation)
         throw (lang::IllegalArgumentException,RuntimeException);
-    
+
     virtual void SAL_CALL clip (const Reference<rendering::XPolyPolygon2D>& rClip)
         throw (RuntimeException);
 
@@ -121,13 +121,13 @@ public:
 
     virtual void SAL_CALL show (void)
         throw (RuntimeException);
-    
+
     virtual void SAL_CALL hide (void)
         throw (RuntimeException);
 
-    
+
     // XCustomSprite
-    
+
     virtual Reference<rendering::XCanvas> SAL_CALL getContentCanvas (void)
         throw (RuntimeException);
 
@@ -137,7 +137,7 @@ private:
     Reference<awt::XWindow> mxBaseWindow;
     geometry::RealPoint2D maPosition;
     geometry::RealSize2D maSpriteSize;
-        
+
     void ThrowIfDisposed (void)
         throw (css::lang::DisposedException);
 };
@@ -183,7 +183,7 @@ PresenterCanvas::PresenterCanvas (
 {
     if (mxWindow.is())
         mxWindow->addWindowListener(this);
-    
+
     if (mxUpdateCanvas.is())
         mpUpdateRequester = CanvasUpdateRequester::Instance(mxUpdateCanvas);
 }
@@ -209,7 +209,7 @@ void SAL_CALL PresenterCanvas::disposing (void)
 
 
 //----- XInitialization -------------------------------------------------------
-    
+
 void SAL_CALL PresenterCanvas::initialize (
     const Sequence<Any>& rArguments)
     throw(Exception, RuntimeException)
@@ -621,7 +621,7 @@ Reference<rendering::XAnimatedSprite> SAL_CALL
     else
         return NULL;
 }
-    
+
 
 
 
@@ -642,7 +642,7 @@ Reference<rendering::XAnimatedSprite> SAL_CALL
     else
         return NULL;
 }
-    
+
 
 
 
@@ -863,11 +863,11 @@ css::rendering::ViewState PresenterCanvas::MergeViewState (
 
     // Prepare the local clip rectangle.
     ::basegfx::B2DRectangle aWindowRange (GetClipRectangle(aViewState.AffineTransform, rOffset));
-    
+
     // Adapt the offset of the view state.
     aViewState.AffineTransform.m02 += rOffset.X;
     aViewState.AffineTransform.m12 += rOffset.Y;
-    
+
     // Adapt the clip polygon.
     if ( ! aViewState.Clip.is())
     {
@@ -959,7 +959,7 @@ awt::Point PresenterCanvas::GetOffset (const Reference<awt::XWindow>& rxBaseWind
             maClipRectangle.X + maClipRectangle.Width + rOffset.X,
             maClipRectangle.Y + maClipRectangle.Height + rOffset.Y);
     }
-    
+
     // The local clip rectangle is used to clip the view state clipping
     // polygon.
     ::basegfx::B2DRectangle aWindowRectangle (
@@ -1114,7 +1114,7 @@ void SAL_CALL PresenterCustomSprite::setAlpha (const double nAlpha)
     ThrowIfDisposed();
     mxSprite->setAlpha(nAlpha);
 }
-    
+
 
 
 
@@ -1193,7 +1193,7 @@ void SAL_CALL PresenterCustomSprite::hide (void)
 
 
 //----- XCustomSprite ---------------------------------------------------------
-    
+
 Reference<rendering::XCanvas> PresenterCustomSprite::getContentCanvas (void)
     throw (RuntimeException)
 {

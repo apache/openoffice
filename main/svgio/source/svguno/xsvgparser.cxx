@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
@@ -54,7 +54,7 @@ namespace svgio
             virtual ~XSvgParser();
 
             // XSvgParser
-            virtual uno::Sequence< uno::Reference< ::graphic::XPrimitive2D > > SAL_CALL getDecomposition( 
+            virtual uno::Sequence< uno::Reference< ::graphic::XPrimitive2D > > SAL_CALL getDecomposition(
                 const uno::Reference< ::io::XInputStream >& xSVGStream,
                 const ::rtl::OUString& aAbsolutePath) throw (uno::RuntimeException);
 
@@ -99,7 +99,7 @@ namespace svgio
 {
     namespace svgreader
     {
-        XSvgParser::XSvgParser() 
+        XSvgParser::XSvgParser()
         {
         }
 
@@ -108,7 +108,7 @@ namespace svgio
         }
 
         uno::Sequence< uno::Reference< ::graphic::XPrimitive2D > > XSvgParser::getDecomposition(
-            const uno::Reference< ::io::XInputStream >& xSVGStream, 
+            const uno::Reference< ::io::XInputStream >& xSVGStream,
             const ::rtl::OUString& aAbsolutePath ) throw (uno::RuntimeException)
         {
             drawinglayer::primitive2d::Primitive2DSequence aRetval;
@@ -124,16 +124,16 @@ namespace svgio
                     // prepare ParserInputSrouce
                     xml::sax::InputSource myInputSource;
                     myInputSource.aInputStream = xSVGStream;
-                
+
                     // get parser
                     uno::Reference< xml::sax::XParser > xParser(
                         comphelper::getProcessServiceFactory()->createInstance(
                             rtl::OUString::createFromAscii("com.sun.star.xml.sax.Parser") ),
                         uno::UNO_QUERY_THROW );
-                
+
                     // connect parser and filter
                     xParser->setDocumentHandler(xSvgDocHdl);
-                
+
                     // finally, parse the stream to a hierarchy of
                     // SVGGraphicPrimitive2D which will be embedded to the
                     // primitive sequence. Their decompositions will in the
@@ -145,7 +145,7 @@ namespace svgio
                 {
                     OSL_ENSURE(false, "Parse error (!)");
                 }
-                
+
                 // decompose to primitives
                 const SvgNodeVector& rResults = pSvgDocHdl->getSvgDocument().getSvgNodeVector();
                 const sal_uInt32 nCount(rResults.size());

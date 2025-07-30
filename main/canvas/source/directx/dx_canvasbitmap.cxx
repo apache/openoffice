@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -65,8 +65,8 @@ namespace dxcanvas
     }
 
     struct AlphaDIB
-    { 
-        BITMAPINFOHEADER bmiHeader; 
+    {
+        BITMAPINFOHEADER bmiHeader;
         RGBQUAD          bmiColors[256];
     };
 
@@ -76,15 +76,15 @@ namespace dxcanvas
         // 0 ... get BitmapEx
         // 1 ... get Pixbuf with bitmap RGB content
         // 2 ... get Pixbuf with bitmap alpha mask
-        switch( nHandle ) 
+        switch( nHandle )
         {
             // sorry, no BitmapEx here...
             case 0:
                 aRes = ::com::sun::star::uno::Any( reinterpret_cast<sal_Int64>( (BitmapEx*) NULL ) );
                 break;
 
-            case 1: 
-            {     
+            case 1:
+            {
                 if(!mpBitmap->hasAlpha())
                 {
                     HBITMAP aHBmp;
@@ -92,7 +92,7 @@ namespace dxcanvas
 
                     uno::Sequence< uno::Any > args(1);
                     args[0] = uno::Any( sal_Int64(aHBmp) );
-                    
+
                     aRes <<= args;
                 }
                 else
@@ -101,12 +101,12 @@ namespace dxcanvas
                     // canvas uses inline alpha channel
                     HDC hScreenDC=GetDC(NULL);
                     const basegfx::B2IVector aSize(mpBitmap->getSize());
-                    HBITMAP hBmpBitmap = CreateCompatibleBitmap( hScreenDC, 
-                                                                 aSize.getX(), 
+                    HBITMAP hBmpBitmap = CreateCompatibleBitmap( hScreenDC,
+                                                                 aSize.getX(),
                                                                  aSize.getY() );
                     if( !hBmpBitmap )
                         return aRes;
-                    
+
                     BITMAPINFOHEADER aBIH;
 
                     aBIH.biSize = sizeof( BITMAPINFOHEADER );
@@ -136,7 +136,7 @@ namespace dxcanvas
                                                                  PixelFormat32bppARGB, // outputs ARGB (big endian)
                                                                  &aBmpData ) )
                     {
-                        // failed to lock, bail out 
+                        // failed to lock, bail out
                         return aRes;
                     }
 
@@ -148,13 +148,13 @@ namespace dxcanvas
 
                     uno::Sequence< uno::Any > args(1);
                     args[0] = uno::Any( sal_Int64(hBmpBitmap) );
-                    
+
                     aRes <<= args;
                 }
             }
             break;
 
-            case 2: 
+            case 2:
             {
                 if(!mpBitmap->hasAlpha())
                 {
@@ -184,7 +184,7 @@ namespace dxcanvas
                     HBITMAP hBmpBitmap = CreateCompatibleBitmap( hScreenDC, aSize.getX(), aSize.getY() );
                     if( !hBmpBitmap )
                         return aRes;
-                    
+
                     aDIB.bmiHeader.biSize = sizeof( BITMAPINFOHEADER );
                     aDIB.bmiHeader.biWidth = aSize.getX();
                     aDIB.bmiHeader.biHeight = -aSize.getY();
@@ -210,7 +210,7 @@ namespace dxcanvas
                                                                  PixelFormat32bppARGB, // outputs ARGB (big endian)
                                                                  &aBmpData ) )
                     {
-                        // failed to lock, bail out 
+                        // failed to lock, bail out
                         return aRes;
                     }
 
@@ -233,13 +233,13 @@ namespace dxcanvas
                     pGDIPlusBitmap->UnlockBits( &aBmpData );
 
                     // set bits to newly create HBITMAP
-                    SetDIBits( hScreenDC, hBmpBitmap, 0, 
-                               aSize.getY(), pAlphaBits.get(), 
+                    SetDIBits( hScreenDC, hBmpBitmap, 0,
+                               aSize.getY(), pAlphaBits.get(),
                                (PBITMAPINFO)&aDIB, DIB_RGB_COLORS );
 
                     uno::Sequence< uno::Any > args(1);
                     args[0] = uno::Any( sal_Int64(hBmpBitmap) );
-                    
+
                     aRes <<= args;
                 }
             }
@@ -266,7 +266,7 @@ namespace dxcanvas
     {
         uno::Sequence< ::rtl::OUString > aRet(1);
         aRet[0] = ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM ( SERVICE_NAME ) );
-        
+
         return aRet;
     }
 

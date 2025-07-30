@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -340,7 +340,7 @@ sal_Bool MnemonicGenerator::CreateMnemonic( XubString& rKey )
 //        do
 //        {
 //            c = aKey.GetChar( nIndex );
-//            
+//
 //            nMnemonicIndex = ImplGetMnemonicIndex( c );
 //            if ( nMnemonicIndex != MNEMONIC_INDEX_NOTFOUND )
 //            {
@@ -349,7 +349,7 @@ sal_Bool MnemonicGenerator::CreateMnemonic( XubString& rKey )
 //                bChanged = sal_True;
 //                break;
 //            }
-//            
+//
 //            // Search for next word
 //            do
 //            {
@@ -383,7 +383,7 @@ String MnemonicGenerator::EraseAllMnemonicChars( const String& rStr )
     String      aStr = rStr;
     xub_StrLen  nLen = aStr.Len();
     xub_StrLen  i    = 0;
-    
+
     while ( i < nLen )
     {
         if ( aStr.GetChar( i ) == '~' )
@@ -392,8 +392,8 @@ String MnemonicGenerator::EraseAllMnemonicChars( const String& rStr )
             if( i > 0 && (i+2) < nLen )
             {
                 sal_Unicode c = aStr.GetChar(i+1);
-                if( aStr.GetChar( i-1 ) == '(' && 
-                    aStr.GetChar( i+2 ) == ')' && 
+                if( aStr.GetChar( i-1 ) == '(' &&
+                    aStr.GetChar( i+2 ) == ')' &&
                     c >= MNEMONIC_RANGE_2_START && c <= MNEMONIC_RANGE_2_END )
                 {
                     aStr.Erase( i-1, 4 );

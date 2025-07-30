@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -74,7 +74,7 @@ void generateImports(std::ostream & o, ProgramOptions const & options,
         }
     }
 
-    
+
 //     std::hash_set< OString, OStringHash >::const_iterator iter =
 //                    interfaces.begin();
 //     while (iter != interfaces.end())
@@ -99,7 +99,7 @@ void generateCompFunctions(std::ostream & o, const OString & classname)
         "        return Factory.writeRegistryServiceInfo(m_implementationName,\n"
         "                                                m_serviceNames,\n"
         "                                                xRegistryKey);\n"
-        "    }\n\n";   
+        "    }\n\n";
 }
 
 void generateXServiceInfoBodies(std::ostream& o)
@@ -209,7 +209,7 @@ bool checkAttribute(OStringBuffer& attributeValue, sal_uInt16 attribute)
         /* com::sun::star::beans::PropertyValue::MAYBEAMBIGIOUS */ 32,
         /* com::sun::star::beans::PropertyValue::MAYBEDEFAULT */ 64,
         /* com::sun::star::beans::PropertyValue::REMOVEABLE */ 128,
-        /* com::sun::star::beans::PropertyValue::OPTIONAL */ 256 }; 
+        /* com::sun::star::beans::PropertyValue::OPTIONAL */ 256 };
 
     for (sal_uInt16 i = 0; i < 9; i++)
     {
@@ -254,7 +254,7 @@ bool checkAttribute(OStringBuffer& attributeValue, sal_uInt16 attribute)
         attributeValue.insert(0, '(');
         attributeValue.append(')');
     }
-    
+
     return cast;
 }
 
@@ -275,7 +275,7 @@ void registerProperties(std::ostream& o,
                 cast = true;
                 attributeValue.append('0');
             }
-            
+
             o << indentation << "registerProperty(\"" << i->first
               << "\", \"m_" << i->first << "\",\n"
               << indentation << "      ";
@@ -284,7 +284,7 @@ void registerProperties(std::ostream& o,
 
             o << attributeValue.makeStringAndClear() << ");\n";
         }
-    }    
+    }
 }
 
 void generateXLocalizableBodies(std::ostream& o) {
@@ -352,7 +352,7 @@ void generateXAddInBodies(std::ostream& o, ProgramOptions const & options)
             "get(\n                                        new Integer(nArgument))"
             ", sDISPLAYNAME);\n    }\n\n";
     }
-    
+
     // getArgumentDescription
     o << "    public String getArgumentDescription(String "
         "aProgrammaticFunctionName, int nArgument)\n    {\n";
@@ -448,12 +448,12 @@ void generateXDispatchBodies(std::ostream& o, ProgramOptions const & options)
     o << "    // com.sun.star.frame.XDispatch:\n"
         "     public void dispatch( com.sun.star.util.URL aURL,\n"
         "                           com.sun.star.beans.PropertyValue[] aArguments )\n    {\n";
-    
+
     ProtocolCmdMap::const_iterator iter = options.protocolCmdMap.begin();
     while (iter != options.protocolCmdMap.end()) {
         o << "         if ( aURL.Protocol.compareTo(\"" << (*iter).first
           << "\") == 0 )\n        {\n";
-        
+
         for (std::vector< OString >::const_iterator i = (*iter).second.begin();
              i != (*iter).second.end(); ++i) {
             o << "            if ( aURL.Path.compareTo(\"" << (*i) << "\") == 0 )\n"
@@ -465,12 +465,12 @@ void generateXDispatchBodies(std::ostream& o, ProgramOptions const & options)
         iter++;
     }
     o << "    }\n\n";
-    
+
     // addStatusListener
     o << "    public void addStatusListener( com.sun.star.frame.XStatusListener xControl,\n"
         "                                    com.sun.star.util.URL aURL )\n    {\n"
         "        // add your own code here\n    }\n\n";
-        
+
     // com.sun.star.frame.XDispatch
     o << "    public void removeStatusListener( com.sun.star.frame.XStatusListener xControl,\n"
         "                                       com.sun.star.util.URL aURL )\n    {\n"
@@ -490,7 +490,7 @@ void generateXDispatchProviderBodies(std::ostream& o, ProgramOptions const & opt
     while (iter != options.protocolCmdMap.end()) {
         o << "        if ( aURL.Protocol.compareTo(\"" << (*iter).first
           << "\") == 0 )\n        {\n";
-        
+
         for (std::vector< OString >::const_iterator i = (*iter).second.begin();
              i != (*iter).second.end(); ++i) {
             o << "            if ( aURL.Path.compareTo(\"" << (*i) << "\") == 0 )\n"
@@ -573,7 +573,7 @@ void generateMethodBodies(std::ostream& o,
                     generated.add(type);
                     continue;
                 }
-            }            
+            }
             typereg::Reader reader(manager.getTypeReader(type.replace('.','/')));
             printMethods(o, options, manager, reader, generated, "_",
                          indentation, true, usepropertymixin);
@@ -603,16 +603,16 @@ void generateAddinConstructorAndHelper(std::ostream& o,
             "    {\n        m_xContext = context;\n    }\n\n";
         return;
     }
-        
+
 
     // get the one and only add-in service for later use
     std::hash_set< OString, OStringHash >::const_iterator iter = services.begin();
     OString sAddinService = (*iter).replace('/', '.');
     if (sAddinService.equals("com.sun.star.sheet.AddIn")) {
         sAddinService = (*(++iter)).replace('/', '.');
-    } 
+    }
 
-        
+
     // add-in specific fields
     o << "\n    private static final String sADDIN_SERVICENAME = \""
       << sAddinService << "\";\n\n";
@@ -646,7 +646,7 @@ void generateAddinConstructorAndHelper(std::ostream& o,
     } else {
         o << "        m_functionMap = new java.util.Hashtable();\n\n";
     }
-    
+
     generateFunctionParameterMap(o, options,  manager, interfaces);
 
     o << "        com.sun.star.lang.XMultiServiceFactory xProvider = \n"
@@ -671,7 +671,7 @@ void generateAddinConstructorAndHelper(std::ostream& o,
         "         aArgument.Name = \"nodepath\";\n"
         "         aArgument.Value = new com.sun.star.uno.Any(\n"
         "             com.sun.star.uno.Type.STRING, sPath.toString());\n\n";
-    
+
     o << "        Object aArguments[] = new Object[1];\n"
         "        aArguments[0] = new com.sun.star.uno.Any("
         " new com.sun.star.uno.Type(\n"
@@ -729,7 +729,7 @@ void generateAddinConstructorAndHelper(std::ostream& o,
         "        catch ( com.sun.star.uno.RuntimeException e ) {\n"
         "            throw e;\n        }\n"
         "        catch ( com.sun.star.uno.Exception e ) {\n        }\n"
-        "        return \"\";\n    }\n\n";    
+        "        return \"\";\n    }\n\n";
 }
 
 
@@ -762,7 +762,7 @@ void generateClassDefinition(std::ostream& o,
             iter++;
             if (iter != interfaces.end())
                 o << ",\n              ";
-        }        
+        }
     }
     o << "\n{\n";
 
@@ -772,11 +772,11 @@ void generateClassDefinition(std::ostream& o,
     if (options.componenttype == 3) {
         o << "    private com.sun.star.frame.XFrame m_xFrame;\n";
     }
-    
+
     // check property helper
     if (propertyhelper.getLength() > 1)
         o << "    private final PropertySetMixin m_prophlp;\n";
-    
+
     o << "    private static final String m_implementationName = "
       << classname << ".class.getName();\n";
 
@@ -791,7 +791,7 @@ void generateClassDefinition(std::ostream& o,
                 o << ",\n";
             else
                 o << " };\n\n";
-        }    
+        }
     }
 
     // attribute/property members
@@ -803,13 +803,13 @@ void generateClassDefinition(std::ostream& o,
             o << "    protected ";
             printType(o, options, manager, iter->second.first.replace('.','/'),
                       false, false);
-            o << " m_" << iter->first << ";\n";  
+            o << " m_" << iter->first << ";\n";
             iter++;
         }
     } else if (!attributes.empty()) {
         AttributeInfo::const_iterator iter =
             attributes.begin();
-        o << "    // attributes\n";        
+        o << "    // attributes\n";
         while (iter != attributes.end()) {
             o << "    private ";
             printType(o, options, manager, iter->second.first.replace('.','/'),
@@ -817,11 +817,11 @@ void generateClassDefinition(std::ostream& o,
             o << " m_" << iter->first << " = ";
             printType(o, options, manager, iter->second.first.replace('.','/'),
                       false, true);
-            o <<";\n";  
+            o <<";\n";
             iter++;
         }
     }
-    
+
     // special handling of calc add-ins
     if (options.componenttype == 2)
     {
@@ -841,15 +841,15 @@ void generateClassDefinition(std::ostream& o,
             }
         }
         o << "    };\n\n";
-        
+
     }
 
     if (!services.empty())
         generateCompFunctions(o, classname);
-    
+
     generateMethodBodies(o, options, manager, interfaces,
-                         "    ", propertyhelper.getLength() > 1); 
-   
+                         "    ", propertyhelper.getLength() > 1);
+
     // end of class definition
     o << "}\n";
 }
@@ -882,12 +882,12 @@ void generateSkeleton(ProgramOptions const & options,
                   interfaces, services, properties);
         checkType(manager, "com.sun.star.frame.XDispatch",
                   interfaces, services, properties);
-        
-        
+
+
 //         ProtocolCmdMap::const_iterator iter2 = options.protocolCmdMap.begin();
 //         while (iter2 != options.protocolCmdMap.end()) {
 //             fprintf(stdout, "prt=%s\n", (*iter2).first.getStr());
-            
+
 //             for (std::vector< OString >::const_iterator i = (*iter2).second.begin();
 //                  i != (*iter2).second.end(); ++i) {
 //                 fprintf(stdout, "cmd=%s\n", (*i).getStr());
@@ -896,7 +896,7 @@ void generateSkeleton(ProgramOptions const & options,
 //         }
 //         return;
     }
-    
+
     if (options.componenttype == 2) {
         if (services.size() != 1) {
             throw CannotDumpException(
@@ -922,11 +922,11 @@ void generateSkeleton(ProgramOptions const & options,
         }
     }
 
-    
+
     // check if service object or simple UNO object
     if (!services.empty())
-        serviceobject = true;   
-    
+        serviceobject = true;
+
     OString propertyhelper = checkPropertyHelper(
         options, manager, services, interfaces, attributes, propinterfaces);
     checkDefaultInterfaces(interfaces, services, propertyhelper);
@@ -936,7 +936,7 @@ void generateSkeleton(ProgramOptions const & options,
             std::cerr << "WARNING: interfaces specifying calc add-in functions "
                 "shouldn't support attributes!\n";
     }
-    
+
     supportxcomponent = checkXComponentSupport(manager, interfaces);
 
     OString compFileName;
@@ -949,7 +949,7 @@ void generateSkeleton(ProgramOptions const & options,
         if (!standardout && options.license) {
             printLicenseHeader(*pofs, compFileName);
         }
-        
+
         generatePackage(*pofs, options.implname);
 
         generateImports(*pofs, options, interfaces, propertyhelper,
@@ -962,8 +962,8 @@ void generateSkeleton(ProgramOptions const & options,
 
         generateClassDefinition(*pofs, options, manager, classname, services,
                                 interfaces, properties, attributes, propertyhelper,
-                                supportxcomponent);       
-        
+                                supportxcomponent);
+
         if ( !standardout && pofs && ((std::ofstream*)pofs)->is_open()) {
             ((std::ofstream*)pofs)->close();
             delete pofs;
@@ -971,21 +971,21 @@ void generateSkeleton(ProgramOptions const & options,
         }
     } catch(CannotDumpException& e) {
 
-        std::cerr << "ERROR: " << e.m_message.getStr() << "\n"; 
+        std::cerr << "ERROR: " << e.m_message.getStr() << "\n";
         if ( !standardout ) {
             if (pofs && ((std::ofstream*)pofs)->is_open()) {
-                ((std::ofstream*)pofs)->close();       
+                ((std::ofstream*)pofs)->close();
                 delete pofs;
             }
             // remove existing type file if something goes wrong to ensure
             // consistency
             if (fileExists(compFileName))
                 removeTypeFile(compFileName);
-            
+
             // remove tmp file if something goes wrong
             removeTypeFile(tmpFileName);
         }
-    }    
+    }
 }
 
 } }

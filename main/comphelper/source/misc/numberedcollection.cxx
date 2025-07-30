@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -88,36 +88,36 @@ void NumberedCollection::setUntitledPrefix(const ::rtl::OUString& sPrefix)
 {
     // SYNCHRONIZED ->
     ::osl::ResettableMutexGuard aLock(m_aMutex);
-    
+
         if ( ! xComponent.is ())
             throw css::lang::IllegalArgumentException (ERRMSG_INVALID_COMPONENT_PARAM, m_xOwner.get(), 1);
 
         long                              pComponent = (long) xComponent.get ();
         TNumberedItemHash::const_iterator pIt        = m_lComponents.find (pComponent);
-        
+
         // a) component already exists - return it's number directly
         if (pIt != m_lComponents.end())
             return pIt->second.nNumber;
-        
+
         // b) component must be added new to this container
-        
+
         // b1) collection is full - no further components possible
         //     -> return INVALID_NUMBER
         ::sal_Int32 nFreeNumber = impl_searchFreeNumber();
         if (nFreeNumber == css::frame::UntitledNumbersConst::INVALID_NUMBER)
             return css::frame::UntitledNumbersConst::INVALID_NUMBER;
-        
+
         // b2) add component to collection and return its number
         TNumberedItem aItem;
         aItem.xItem   = css::uno::WeakReference< css::uno::XInterface >(xComponent);
         aItem.nNumber = nFreeNumber;
         m_lComponents[pComponent] = aItem;
-        
+
         return nFreeNumber;
-    
+
     // <- SYNCHRONIZED
 }
-           
+
 //-----------------------------------------------
 void SAL_CALL NumberedCollection::releaseNumber(::sal_Int32 nNumber)
     throw (css::lang::IllegalArgumentException,
@@ -125,38 +125,38 @@ void SAL_CALL NumberedCollection::releaseNumber(::sal_Int32 nNumber)
 {
     // SYNCHRONIZED ->
     ::osl::ResettableMutexGuard aLock(m_aMutex);
-    
+
         if (nNumber == css::frame::UntitledNumbersConst::INVALID_NUMBER)
             throw css::lang::IllegalArgumentException (ERRMSG_INVALID_NUMBER_PARAM, m_xOwner.get(), 1);
-        
+
         TDeadItemList               lDeadItems;
         TNumberedItemHash::iterator pComponent;
-        
+
         for (  pComponent  = m_lComponents.begin ();
                pComponent != m_lComponents.end   ();
              ++pComponent                          )
         {
             const TNumberedItem&                              rItem = pComponent->second;
             const css::uno::Reference< css::uno::XInterface > xItem = rItem.xItem.get();
-        
+
             if ( ! xItem.is ())
             {
                 lDeadItems.push_back(pComponent->first);
                 continue;
             }
-        
+
             if (rItem.nNumber == nNumber)
             {
                 m_lComponents.erase (pComponent);
                 break;
             }
         }
-        
+
         impl_cleanUpDeadItems(m_lComponents, lDeadItems);
-    
+
     // <- SYNCHRONIZED
 }
-           
+
 //-----------------------------------------------
 void SAL_CALL NumberedCollection::releaseNumberForComponent(const css::uno::Reference< css::uno::XInterface >& xComponent)
     throw (css::lang::IllegalArgumentException,
@@ -164,20 +164,20 @@ void SAL_CALL NumberedCollection::releaseNumberForComponent(const css::uno::Refe
 {
     // SYNCHRONIZED ->
     ::osl::ResettableMutexGuard aLock(m_aMutex);
-    
+
         if ( ! xComponent.is ())
             throw css::lang::IllegalArgumentException (ERRMSG_INVALID_COMPONENT_PARAM, m_xOwner.get(), 1);
-    
+
         long                        pComponent = (long) xComponent.get ();
         TNumberedItemHash::iterator pIt        = m_lComponents.find (pComponent);
-    
+
         // a) component exists and will be removed
         if (pIt != m_lComponents.end())
             m_lComponents.erase(pIt);
-        
+
         // else
         // b) component does not exists - nothing todo here (ignore request!)
-    
+
     // <- SYNCHRONIZED
 }
 
@@ -222,37 +222,37 @@ void SAL_CALL NumberedCollection::releaseNumberForComponent(const css::uno::Refe
 
     // SYNCHRONIZED ->
     ::osl::ResettableMutexGuard aLock(m_aMutex);
-    
+
         TDeadItemList                     lDeadItems;
         TNumberedItemHash::const_iterator pComponent;
-    
+
         for (  pComponent  = m_lComponents.begin ();
                pComponent != m_lComponents.end   ();
              ++pComponent                          )
         {
             const TNumberedItem&                              rItem = pComponent->second;
             const css::uno::Reference< css::uno::XInterface > xItem = rItem.xItem.get();
-        
+
             if ( ! xItem.is ())
             {
                 lDeadItems.push_back(pComponent->first);
                 continue;
             }
-        
+
             ::std::vector< ::sal_Int32 >::iterator pPossible = ::std::find(lPossibleNumbers.begin (), lPossibleNumbers.end (), rItem.nNumber);
             if (pPossible != lPossibleNumbers.end ())
                 lPossibleNumbers.erase (pPossible);
         }
-    
+
         impl_cleanUpDeadItems(m_lComponents, lDeadItems);
-    
+
         // a) non free numbers ... return INVALID_NUMBER
         if (lPossibleNumbers.size () < 1)
             return css::frame::UntitledNumbersConst::INVALID_NUMBER;
-        
+
         // b) return first free number
         return *(lPossibleNumbers.begin ());
-        
+
     // <- SYNCHRONIZED
 }
 

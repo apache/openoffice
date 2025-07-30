@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -1578,7 +1578,7 @@ public:
 	// all default implementations just call the same methods at the original. To do something
 	// different, overload the method and at least do what the method does.
 	virtual drawinglayer::primitive2d::Primitive2DSequence createRedirectedPrimitive2DSequence(
-		const sdr::contact::ViewObjectContact& rOriginal, 
+		const sdr::contact::ViewObjectContact& rOriginal,
 		const sdr::contact::DisplayInfo& rDisplayInfo);
 };
 
@@ -1787,7 +1787,7 @@ void ImplPDFExportShapeInteraction( uno::Reference< drawing::XShape > xShape, Sd
 vcl::PDFWriter::StructElement ImplRenderPaintProc::ImplBegStructureTag( SdrObject& rObject )
 {
 	vcl::PDFWriter::StructElement eElement(vcl::PDFWriter::NonStructElement);
-	
+
 	if ( pPDFExtOutDevData && pPDFExtOutDevData->GetIsExportTaggedPDF() )
 	{
 		sal_uInt32 nInventor   = rObject.GetObjInventor();
@@ -1811,7 +1811,7 @@ vcl::PDFWriter::StructElement ImplRenderPaintProc::ImplBegStructureTag( SdrObjec
 }
 
 drawinglayer::primitive2d::Primitive2DSequence ImplRenderPaintProc::createRedirectedPrimitive2DSequence(
-	const sdr::contact::ViewObjectContact& rOriginal, 
+	const sdr::contact::ViewObjectContact& rOriginal,
 	const sdr::contact::DisplayInfo& rDisplayInfo)
 {
 	SdrObject* pObject = rOriginal.GetViewContact().TryToGetSdrObject();
@@ -1983,7 +1983,7 @@ void SAL_CALL SdXImpressDocument::render( sal_Int32 nRenderer, const uno::Any& r
                             bScreenDisplay = false;
                         }
 
-                        // #i75566# Name change GetBackgroundColor -> GetPageBackgroundColor and 
+                        // #i75566# Name change GetBackgroundColor -> GetPageBackgroundColor and
                         // hint value if screen display. Only then the AutoColor mechanisms shall be applied
 						rOutl.SetBackgroundColor( pPage->GetPageBackgroundColor( pPV, bScreenDisplay ) );
 					}
@@ -2165,10 +2165,10 @@ void SAL_CALL SdXImpressDocument::render( sal_Int32 nRenderer, const uno::Any& r
 									// Destination Export
 									const sal_Int32 nDestId =
 										pPDFExtOutDevData->CreateDest( aPageRect , nPageNumber - 1 );
-    
+
 									// Create a new outline item:
 									pPDFExtOutDevData->CreateOutlineItem( -1 , aPageName, nDestId );
-								}                            
+								}
 							}
 							//<--- i56629, i40318
 						}
@@ -2766,7 +2766,7 @@ uno::Reference< drawing::XDrawPage > SAL_CALL SdMasterPagesAccess::insertNewByIn
 		pMPage->SetLayoutName( aLayoutName );
 		mpDoc->InsertMasterPage(pMPage,  (sal_uInt16)nInsertPos);
 
-		{ 
+		{
 			// ensure default MasterPage fill
             pMPage->EnsureMasterPageDefaultBackground();
 		}

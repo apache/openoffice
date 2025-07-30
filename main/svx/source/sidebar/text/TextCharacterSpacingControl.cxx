@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 #include "precompiled_svx.hxx"
@@ -52,14 +52,14 @@ TextCharacterSpacingControl::TextCharacterSpacingControl (
 ,	mpImgSel		(NULL)
 ,	mpStr			(NULL)
 ,	mpStrTip		(NULL)
-		
+
 ,	maImgCus		(SVX_RES(IMG_CUSTOM))
 ,	maImgCusGrey	(SVX_RES(IMG_CUSTOM_GRAY))
 ,	maStrCus		(SVX_RES(STR_CUSTOM))
-,	maStrCusE		(SVX_RES(STR_CUSTOM_E_TIP))	//add 
-,	maStrCusC		(SVX_RES(STR_CUSTOM_C_TIP))	//add 
-,	maStrCusN		(SVX_RES(STR_NORMAL_TIP))	//add 
-,	maStrUnit		(SVX_RES(STR_PT))			//add 
+,	maStrCusE		(SVX_RES(STR_CUSTOM_E_TIP))	//add
+,	maStrCusC		(SVX_RES(STR_CUSTOM_C_TIP))	//add
+,	maStrCusN		(SVX_RES(STR_NORMAL_TIP))	//add
+,	maStrUnit		(SVX_RES(STR_PT))			//add
 
 ,	mnCustomKern(0)
 ,	mnLastCus ( SPACING_NOCUSTOM )
@@ -122,7 +122,7 @@ void TextCharacterSpacingControl::initial()
 	mpStr[2] = XubString(SVX_RES(STR_NORMAL));
 	mpStr[3] = XubString(SVX_RES(STR_LOOSE));
 	mpStr[4] = XubString(SVX_RES(STR_VERY_LOOSE));
-	
+
 
 	mpStrTip = new XubString[5];
 	mpStrTip[0] = XubString(SVX_RES(STR_VERY_TIGHT_TIP));
@@ -173,7 +173,7 @@ void TextCharacterSpacingControl::Rearrange(bool bLBAvailable,bool bAvailable, l
 		mbCusEnable = false;
 	}
 
-	if( !mnLastCus ) 
+	if( !mnLastCus )
 	{
 		maVSSpacing.ReplaceItemImages(6, maImgCusGrey,0);
 	}
@@ -182,37 +182,37 @@ void TextCharacterSpacingControl::Rearrange(bool bLBAvailable,bool bAvailable, l
 		//set custom tips
 		maVSSpacing.ReplaceItemImages(6, maImgCus,0);
 		if(mnCustomKern > 0)
-		{	
-			String aStrTip( maStrCusE);   //LAST CUSTOM no tip defect //add 
+		{
+			String aStrTip( maStrCusE);   //LAST CUSTOM no tip defect //add
 			aStrTip.Append( String::CreateFromDouble( (double)mnCustomKern / 10));
 			aStrTip.Append( xub_Unicode(' ') );
-			aStrTip.Append(maStrUnit);		// modify 
+			aStrTip.Append(maStrUnit);		// modify
 			maVSSpacing.SetItemText(6,aStrTip);
 		}
 		else if(mnCustomKern < 0)
-		{	
-			String aStrTip(maStrCusC) ;		//LAST CUSTOM no tip defect //add 
+		{
+			String aStrTip(maStrCusC) ;		//LAST CUSTOM no tip defect //add
 			aStrTip.Append( String::CreateFromDouble( (double)-mnCustomKern / 10));
 			aStrTip.Append( xub_Unicode( ' ' ) );
-			aStrTip.Append(maStrUnit);		// modify 
-			maVSSpacing.SetItemText( 6, aStrTip );
-		}	
-		else
-		{	
-			String aStrTip(maStrCusN) ;		//LAST CUSTOM no tip defect //add 
+			aStrTip.Append(maStrUnit);		// modify
 			maVSSpacing.SetItemText( 6, aStrTip );
 		}
-		
+		else
+		{
+			String aStrTip(maStrCusN) ;		//LAST CUSTOM no tip defect //add
+			maVSSpacing.SetItemText( 6, aStrTip );
+		}
+
 	}
 
 	if(bLBAvailable && bAvailable)
 	{
 		maLBKerning.Enable();
 		maFTSpacing.Enable();
-		
+
 		SfxMapUnit eUnit = mrTextPropertyPanel.GetSpaceController().GetCoreMetric();
         MapUnit eOrgUnit = (MapUnit)eUnit;
-        MapUnit ePntUnit( MAP_POINT );			
+        MapUnit ePntUnit( MAP_POINT );
         long nBig = maEditKerning.Normalize(nKerning);
         nKerning = LogicToLogic( nBig, eOrgUnit, ePntUnit );
 
@@ -275,8 +275,8 @@ void TextCharacterSpacingControl::Rearrange(bool bLBAvailable,bool bAvailable, l
         }
 	}
 	else if(bLBAvailable && !bAvailable)
-	{	
-		//modified 
+	{
+		//modified
         maVSSpacing.SetNoSelection();
         maVSSpacing.SelectItem(0);
 		mbVS = false;
@@ -307,8 +307,8 @@ IMPL_LINK(TextCharacterSpacingControl, VSSelHdl, void *, pControl)
 {
 	mnLastCus = SPACING_CLOSE_BY_CLICK_ICON;
 
-	if(pControl == &maVSSpacing)  
-	{		
+	if(pControl == &maVSSpacing)
+	{
 		sal_uInt16 iPos = maVSSpacing.GetSelectItemId();
 		short nKern = 0;
 		SfxMapUnit eUnit = mrTextPropertyPanel.GetSpaceController().GetCoreMetric();
@@ -358,7 +358,7 @@ IMPL_LINK(TextCharacterSpacingControl, VSSelHdl, void *, pControl)
 		}
 		else if(iPos == 6)
 		{
-			//modified 
+			//modified
 			if(mbCusEnable)
 			{
 				nVal = LogicToLogic(mnCustomKern, MAP_POINT, (MapUnit)eUnit);
@@ -370,20 +370,20 @@ IMPL_LINK(TextCharacterSpacingControl, VSSelHdl, void *, pControl)
 			}
 			else
 			{
-				maVSSpacing.SetNoSelection();		//add , set no selection and keep the last select item 
+				maVSSpacing.SetNoSelection();		//add , set no selection and keep the last select item
 				maVSSpacing.Format();
 				Invalidate();
 				maVSSpacing.StartSelection();
 			}
 			//modify end
 		}
-		
-		if(iPos < 6 || (iPos == 6 && mbCusEnable)) //add 
+
+		if(iPos < 6 || (iPos == 6 && mbCusEnable)) //add
 			mrTextPropertyPanel.EndSpacingPopupMode();
 	}
 
 
-		
+
 	return 0;
 }
 
@@ -425,7 +425,7 @@ IMPL_LINK(TextCharacterSpacingControl, KerningModifyHdl, MetricField*, EMPTYARG)
 	sal_uInt16 nPos = maLBKerning.GetSelectEntryPos();
     short nKern = 0;
     SfxMapUnit eUnit = mrTextPropertyPanel.GetSpaceController().GetCoreMetric();
-	mnLastCus = SPACING_CLOSE_BY_CUS_EDIT; 
+	mnLastCus = SPACING_CLOSE_BY_CUS_EDIT;
 	if ( nPos == SIDEBAR_SPACE_EXPAND || nPos == SIDEBAR_SPACE_CONDENSED )
     {
         long nTmp = static_cast<long>(maEditKerning.GetValue());
@@ -439,7 +439,7 @@ IMPL_LINK(TextCharacterSpacingControl, KerningModifyHdl, MetricField*, EMPTYARG)
 			mnCustomKern = -nTmp;
 			long nVal = LogicToLogic( nTmp, MAP_POINT, (MapUnit)eUnit );
 			nKern = (short)maEditKerning.Denormalize( nVal );
-            nKern *= - 1;		
+            nKern *= - 1;
 		}
 		else
 		{
@@ -449,7 +449,7 @@ IMPL_LINK(TextCharacterSpacingControl, KerningModifyHdl, MetricField*, EMPTYARG)
 				nTmp = maEditKerning.GetMax(FUNIT_TWIP);
 			mnCustomKern = nTmp;
 			long nVal = LogicToLogic( nTmp, MAP_POINT, (MapUnit)eUnit );
-			nKern = (short)maEditKerning.Denormalize( nVal );	
+			nKern = (short)maEditKerning.Denormalize( nVal );
 		}
     }
 	else

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -478,7 +478,7 @@ DXFLWPolyLineEntity::~DXFLWPolyLineEntity()
 DXFEdgeTypeLine::DXFEdgeTypeLine() :
 	DXFEdgeType( 1 )
 {
-	
+
 }
 DXFEdgeTypeLine::~DXFEdgeTypeLine()
 {
@@ -504,7 +504,7 @@ DXFEdgeTypeCircularArc::DXFEdgeTypeCircularArc() :
 	fStartAngle( 0.0 ),
 	fEndAngle( 0.0 ),
 	nIsCounterClockwiseFlag( 0 )
-{	
+{
 }
 DXFEdgeTypeCircularArc::~DXFEdgeTypeCircularArc()
 {
@@ -527,7 +527,7 @@ sal_Bool DXFEdgeTypeCircularArc::EvaluateGroup( DXFGroupReader & rDGR )
 
 DXFEdgeTypeEllipticalArc::DXFEdgeTypeEllipticalArc() :
 	DXFEdgeType( 3 ),
-	fLength( 0.0 ), 
+	fLength( 0.0 ),
 	fStartAngle( 0.0 ),
 	fEndAngle( 0.0 ),
 	nIsCounterClockwiseFlag( 0 )
@@ -588,7 +588,7 @@ DXFBoundaryPathData::DXFBoundaryPathData() :
 	nHasBulgeFlag( 0 ),
 	nIsClosedFlag( 0 ),
 	nPointCount( 0 ),
-	fBulge( 0.0 ),	
+	fBulge( 0.0 ),
 	nSourceBoundaryObjects( 0 ),
 	nEdgeCount( 0 ),
 	bIsPolyLine( sal_True ),
@@ -640,7 +640,7 @@ sal_Bool DXFBoundaryPathData::EvaluateGroup( DXFGroupReader & rDGR )
 			case 72 : nHasBulgeFlag = rDGR.GetI(); break;
 			case 73 : nIsClosedFlag = rDGR.GetI(); break;
 			case 97 : nSourceBoundaryObjects = rDGR.GetI(); break;
-			case 42 : fBulge = rDGR.GetF(); break;			
+			case 42 : fBulge = rDGR.GetF(); break;
 			case 10:
 			{
 				if ( pP && ( nPointIndex < nPointCount ) )
@@ -680,7 +680,7 @@ sal_Bool DXFBoundaryPathData::EvaluateGroup( DXFGroupReader & rDGR )
 	return bExecutingGroupCode;
 }
 
-DXFHatchEntity::DXFHatchEntity() :	
+DXFHatchEntity::DXFHatchEntity() :
 	DXFBasicEntity( DXF_HATCH ),
 	bIsInBoundaryPathContext( sal_False ),
 	nCurrentBoundaryPathIndex( -1 ),
@@ -752,7 +752,7 @@ void DXFHatchEntity::EvaluateGroup( DXFGroupReader & rDGR )
 					( nCurrentBoundaryPathIndex < nBoundaryPathCount ) )
 					bExecutingGroupCode = pBoundaryPathData[ nCurrentBoundaryPathIndex ].EvaluateGroup( rDGR );
 			}
-			if ( bExecutingGroupCode == sal_False )	
+			if ( bExecutingGroupCode == sal_False )
 				DXFBasicEntity::EvaluateGroup(rDGR);
 		}
 		break;

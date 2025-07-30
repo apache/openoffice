@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -50,7 +50,7 @@ namespace cppcanvas
             uno::Reference< rendering::XBitmapCanvas > xBitmapCanvas( rBitmap,
                                                                       uno::UNO_QUERY );
             if( xBitmapCanvas.is() )
-                mpBitmapCanvas.reset( new ImplBitmapCanvas( 
+                mpBitmapCanvas.reset( new ImplBitmapCanvas(
                                           uno::Reference< rendering::XBitmapCanvas >(rBitmap,
                                                                                      uno::UNO_QUERY) ) );
         }
@@ -74,8 +74,8 @@ namespace cppcanvas
             }
 
             // TODO(P1): implement caching
-            pCanvas->getUNOCanvas()->drawBitmap( mxBitmap, 
-                                                 pCanvas->getViewState(), 
+            pCanvas->getUNOCanvas()->drawBitmap( mxBitmap,
+                                                 pCanvas->getViewState(),
                                                  getRenderState() );
 
             return true;
@@ -98,12 +98,12 @@ namespace cppcanvas
             rendering::RenderState aLocalState( getRenderState() );
             uno::Sequence<rendering::ARGBColor> aCol(1);
             aCol[0] = rendering::ARGBColor( nAlphaModulation, 1.0, 1.0, 1.0 );
-            aLocalState.DeviceColor = 
+            aLocalState.DeviceColor =
                 pCanvas->getUNOCanvas()->getDevice()->getDeviceColorSpace()->convertFromARGB(aCol);
 
             // TODO(P1): implement caching
-            pCanvas->getUNOCanvas()->drawBitmapModulated( mxBitmap, 
-                                                          pCanvas->getViewState(), 
+            pCanvas->getUNOCanvas()->drawBitmapModulated( mxBitmap,
+                                                          pCanvas->getViewState(),
                                                           aLocalState );
 
             return true;

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -44,7 +44,7 @@
 #include <windows.h>
 #if defined _MSC_VER
 #pragma warning(pop)
-#endif 
+#endif
 
 #include <osl/file.hxx>
 
@@ -83,7 +83,7 @@ int SAL_CALL main(int , char*, char* )
 	//-------------------------------------------------
 	// get the global service-manager
 	//-------------------------------------------------
-    
+
 	// Get global factory for uno services.
 	OUString rdbName = OUString( RTL_CONSTASCII_USTRINGPARAM( RDB_SYSPATH ) );
 	Reference< XMultiServiceFactory > g_xFactory( createRegistryServiceFactory( rdbName ) );
@@ -105,12 +105,12 @@ int SAL_CALL main(int , char*, char* )
     {
 	    Reference< XSystemMailProvider > xSmplMailClientSuppl(
             g_xFactory->createInstance( OUString::createFromAscii( "com.sun.star.system.SimpleSystemMail" ) ), UNO_QUERY );
-	
+
 	    if ( !xSmplMailClientSuppl.is() )
 	    {
 		    OSL_ENSURE( sal_False, "Error creating SimpleSystemMail Service" );
 		    return(-1);
-	    }	
+	    }
 
         Reference< XMailClient > xSmplMailClient(
             xSmplMailClientSuppl->queryMailClient( ) );
@@ -124,19 +124,19 @@ int SAL_CALL main(int , char*, char* )
             {
                 xSmplMailMsg->setRecipient( OUString::createFromAscii("tino.rachui@germany.sun.com") );
                 xSmplMailMsg->setOriginator( OUString::createFromAscii( "tino.rachui@germany.sun.com" ) );
-                
+
                 Sequence< OUString > ccRecips( 1 );
                 ccRecips[0] = OUString::createFromAscii( "tino.rachui@germany.sun.com" );
-            
+
                 xSmplMailMsg->setCcRecipient( ccRecips );
 
                 Sequence< OUString > bccRecips( 1 );
                 bccRecips[0] = OUString::createFromAscii( "tino.rachui@germany.sun.com" );
-            
+
                 xSmplMailMsg->setBccRecipient( bccRecips );
 
                 xSmplMailMsg->setSubject( OUString::createFromAscii( "Mapi Test" ) );
-                
+
                 Sequence< OUString > attachements( 2 );
 
                 OUString aFile = OUString::createFromAscii( "D:\\Projects\\gsl\\shell\\wntmsci7\\bin\\testprx.exe" );
@@ -144,8 +144,8 @@ int SAL_CALL main(int , char*, char* )
 
                 osl::FileBase::getFileURLFromSystemPath( aFile, aFileURL );
                 attachements[0] = aFileURL;
-                
-                aFile = OUString::createFromAscii( "D:\\Projects\\gsl\\shell\\wntmsci7\\bin\\testsyssh.exe" );                
+
+                aFile = OUString::createFromAscii( "D:\\Projects\\gsl\\shell\\wntmsci7\\bin\\testsyssh.exe" );
                 osl::FileBase::getFileURLFromSystemPath( aFile, aFileURL );
 
                 attachements[1] = aFile;

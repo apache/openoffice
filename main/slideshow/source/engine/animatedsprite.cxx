@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -60,7 +60,7 @@ namespace slideshow
             mbSpriteVisible( false )
         {
             ENSURE_OR_THROW( mpViewLayer, "AnimatedSprite::AnimatedSprite(): Invalid view layer" );
-            
+
             // Add half a pixel tolerance to sprite size, since we later on compare
             // against it in resize(). And view transformations will almost never yield
             // the same data bits when transforming to device coordinates
@@ -78,19 +78,19 @@ namespace slideshow
 
             const ::cppcanvas::CanvasSharedPtr pContentCanvas( mpSprite->getContentCanvas() );
             pContentCanvas->clear();
-            
+
             // extract linear part of canvas view transformation
             // (linear means: without translational components). The
             // only translation that is imposed at the view transform
             // is the local content pixel offset.
-            // 
+            //
             // We can apply that directly here, no need to call
             // aLinearTransform.translate(), since, as said above, the
             // last column of aLinearTransform is assumed [0 0 1]
             ::basegfx::B2DHomMatrix aLinearTransform( mpViewLayer->getTransformation() );
             aLinearTransform.set( 0, 2, maContentPixelOffset.getX() );
             aLinearTransform.set( 1, 2, maContentPixelOffset.getY() );
-            
+
             // apply linear part of canvas view transformation to sprite canvas
             pContentCanvas->setTransformation( aLinearTransform );
 
@@ -110,7 +110,7 @@ namespace slideshow
             // round up, too, wasting precious mem).
             ::basegfx::B2DSize	aNewSize( maEffectiveSpriteSizePixel );
             bool				bNeedResize( false );
-            
+
             if( rSpriteSizePixel.getX() > maEffectiveSpriteSizePixel.getX() ||
                 rSpriteSizePixel.getX() < 0.5*maEffectiveSpriteSizePixel.getX() )
             {
@@ -140,7 +140,7 @@ namespace slideshow
                 mpSprite = mpViewLayer->createSprite( maEffectiveSpriteSizePixel,
                                                       mnSpritePrio );
 
-                ENSURE_OR_THROW( mpSprite, 
+                ENSURE_OR_THROW( mpSprite,
                                   "AnimatedSprite::resize(): Could not create new sprite" );
 
                 // set attributes similar to previous sprite
@@ -210,7 +210,7 @@ namespace slideshow
             mpSprite->hide();
             mbSpriteVisible = false;
         }
-        
+
         void AnimatedSprite::show()
         {
             mbSpriteVisible = true;

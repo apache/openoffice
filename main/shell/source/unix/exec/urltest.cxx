@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -35,13 +35,13 @@
 int main(int argc, const char *argv[])
 {
     int ret = 0;
-    
+
     if( argc != 2 )
     {
         fprintf(stderr, "Usage: urltest <urllist>\n");
         return -1;
     }
-       	
+
     FILE * fp = fopen( argv[1], "r" );
     if( NULL == fp )
     {
@@ -55,28 +55,28 @@ int main(int argc, const char *argv[])
     strcpy( line, argv[0] );
     strcpy( line + len, ".sh " );
     len += 4;
-    
+
     unsigned int errors = 0;
-    
+
     // read url(s) to test from file
     char url[512];
     while( NULL != fgets(url, sizeof(url), fp))
     {
         // remove trailing line break
         strtok( url, "\r\n" );
-        
+
         printf( "Passing URL: %s\n", url );
-        
+
         // test the encoding functionality from shellexec.cxx
         rtl::OString aURL( url );
         rtl::OStringBuffer aBuffer;
         escapeForShell(aBuffer, aURL);
-        
+
         // append encoded URL as (only) parameter to the script
         strcpy( line + len, aBuffer.getStr() );
-        
+
         printf( "Command line: %s\n", line );
-        
+
         FILE * pipe = popen( line, "r" );
         if( NULL != pipe )
         {
@@ -93,10 +93,10 @@ int main(int argc, const char *argv[])
                 ++errors;
                 continue;
             }
-            
+
             // remove trailing line break again
             strtok( buffer, "\r\n" );
-            
+
             int n = pclose(pipe);
             if( 0 != n )
             {
@@ -104,7 +104,7 @@ int main(int argc, const char *argv[])
                 ++errors;
                 continue;
             }
-            
+
             if( 0 == strcmp( url, buffer ) )
             {
                 // strings are identical: good !
@@ -116,7 +116,7 @@ int main(int argc, const char *argv[])
                 printf( "FAILED: returned string is %s\n\n", buffer);
                 ++errors;
             }
-            
+
         }
         else
         {
@@ -125,15 +125,15 @@ int main(int argc, const char *argv[])
             break;
         }
     }
-    
+
     if( ferror( fp ) )
     {
         perror( argv[1] );
         ret = -1;
     }
-    
+
     fclose( fp );
-    
+
     if( errors )
     {
         printf( "Number of tests failing: %d\n", errors);
@@ -141,7 +141,7 @@ int main(int argc, const char *argv[])
     }
     else
         printf( "All tests passed OK.\n" );
-        
-    
+
+
     return ret;
 }

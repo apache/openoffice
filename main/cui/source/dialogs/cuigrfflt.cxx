@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -265,7 +265,7 @@ sal_uLong SvxGraphicFilter::ExecuteGrfFilterSlot( SfxRequest& rReq, GraphicObjec
 	}
 	else
 		nRet = SVX_GRAPHICFILTER_UNSUPPORTED_GRAPHICTYPE;
-	
+
 	return nRet;
 }
 
@@ -333,7 +333,7 @@ void GraphicFilterDialog::PreviewWindow::Paint( const Rectangle& rRect )
 
 	const Size	aGrfSize( LogicToPixel( maGraphic.GetPrefSize(), maGraphic.GetPrefMapMode() ) );
 	const Size	aOutSize( GetOutputSizePixel() );
-	const Point aGrfPos( ( aOutSize.Width() - aGrfSize.Width() ) >> 1, 
+	const Point aGrfPos( ( aOutSize.Width() - aGrfSize.Width() ) >> 1,
 						 ( aOutSize.Height() - aGrfSize.Height() ) >> 1 );
 
 	if( maGraphic.IsAnimated() )
@@ -374,7 +374,7 @@ GraphicFilterDialog::GraphicFilterDialog( Window* pParent, const ResId& rResId, 
 	Size		aGrfSize( maSizePixel );
 
 	if( rGraphic.GetType() == GRAPHIC_BITMAP &&
-		aPreviewSize.Width() && aPreviewSize.Height() && 
+		aPreviewSize.Width() && aPreviewSize.Height() &&
 		aGrfSize.Width() && aGrfSize.Height() )
 	{
 		const double fGrfWH = (double) aGrfSize.Width() / aGrfSize.Height();
@@ -480,11 +480,11 @@ GraphicFilterMosaic::~GraphicFilterMosaic()
 
 // -----------------------------------------------------------------------------
 
-Graphic	GraphicFilterMosaic::GetFilteredGraphic( const Graphic& rGraphic, 
+Graphic	GraphicFilterMosaic::GetFilteredGraphic( const Graphic& rGraphic,
 												 double fScaleX, double fScaleY )
 {
 	Graphic			aRet;
-	const Size		aSize( Max( FRound( GetTileWidth() * fScaleX ), 1L ), 
+	const Size		aSize( Max( FRound( GetTileWidth() * fScaleX ), 1L ),
 						   Max( FRound( GetTileHeight() * fScaleY ), 1L ) );
 	BmpFilterParam	aParam( aSize );
 
@@ -544,7 +544,7 @@ GraphicFilterSolarize::~GraphicFilterSolarize()
 
 // -----------------------------------------------------------------------------
 
-Graphic	GraphicFilterSolarize::GetFilteredGraphic( const Graphic& rGraphic, 
+Graphic	GraphicFilterSolarize::GetFilteredGraphic( const Graphic& rGraphic,
                                                    double /*fScaleX*/, double /*fScaleY*/ )
 {
 	Graphic			aRet;
@@ -602,7 +602,7 @@ GraphicFilterSepia::~GraphicFilterSepia()
 
 // -----------------------------------------------------------------------------
 
-Graphic	GraphicFilterSepia::GetFilteredGraphic( const Graphic& rGraphic, 
+Graphic	GraphicFilterSepia::GetFilteredGraphic( const Graphic& rGraphic,
                                                 double /*fScaleX*/, double /*fScaleY*/ )
 {
 	Graphic			aRet;
@@ -652,7 +652,7 @@ GraphicFilterPoster::~GraphicFilterPoster()
 
 // -----------------------------------------------------------------------------
 
-Graphic	GraphicFilterPoster::GetFilteredGraphic( const Graphic& rGraphic, 
+Graphic	GraphicFilterPoster::GetFilteredGraphic( const Graphic& rGraphic,
                                                  double /*fScaleX*/, double /*fScaleY*/ )
 {
 	Graphic			aRet;
@@ -712,7 +712,7 @@ GraphicFilterEmboss::~GraphicFilterEmboss()
 
 // -----------------------------------------------------------------------------
 
-Graphic	GraphicFilterEmboss::GetFilteredGraphic( const Graphic& rGraphic, 
+Graphic	GraphicFilterEmboss::GetFilteredGraphic( const Graphic& rGraphic,
                                                  double /*fScaleX*/, double /*fScaleY*/ )
 {
 	Graphic	aRet;

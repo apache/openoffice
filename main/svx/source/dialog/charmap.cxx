@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -178,7 +178,7 @@ void SvxShowCharSet::MouseMove( const MouseEvent& rMEvt )
             aPos.Y() = aSize.Height()-5;
 
         int nIndex = PixelToMapIndex( aPos );
-	// Fire the focus event. 
+	// Fire the focus event.
         SelectIndex( nIndex , sal_True );
     }
 }
@@ -587,7 +587,7 @@ void SvxShowCharSet::SelectIndex( int nNewIndex, sal_Bool bFocus )
 		if( m_pAccessible )
 		{
 			::svx::SvxShowCharSetItem* pItem = ImplGetItem(nSelectedIndex);
-			// Don't fire the focus event. 
+			// Don't fire the focus event.
 			if ( bFocus )
 				m_pAccessible->fireEvent( AccessibleEventId::ACTIVE_DESCENDANT_CHANGED, Any(), makeAny(pItem->GetAccessible()) ); // this call asures that m_pItem is set
 			else
@@ -596,7 +596,7 @@ void SvxShowCharSet::SelectIndex( int nNewIndex, sal_Bool bFocus )
 			OSL_ENSURE(pItem->m_pItem,"No accessible created!");
 			Any aOldAny, aNewAny;
 			aNewAny <<= AccessibleStateType::FOCUSED;
-			// Don't fire the focus event. 
+			// Don't fire the focus event.
 			if ( bFocus )
 				pItem->m_pItem->fireEvent( AccessibleEventId::STATE_CHANGED, aOldAny, aNewAny );
 

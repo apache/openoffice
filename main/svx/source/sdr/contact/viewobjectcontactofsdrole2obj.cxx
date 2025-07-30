@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -71,7 +71,7 @@ namespace sdr
             const bool bIsOutplaceActive(nState == embed::EmbedStates::ACTIVE);
             const bool bIsInplaceActive((nState == embed::EmbedStates::INPLACE_ACTIVE) || (nState == embed::EmbedStates::UI_ACTIVE));
             bool bDone(false);
- 
+
             if(!bDone && bIsInplaceActive)
             {
                 if( !GetObjectContact().isOutputToPrinter() && !GetObjectContact().isOutputToRecordingMetaFile() )
@@ -123,7 +123,7 @@ namespace sdr
 			        {
                         // get object transformation
                         const basegfx::B2DHomMatrix aObjectMatrix(static_cast< ViewContactOfSdrOle2Obj& >(GetViewContact()).createObjectTransform());
-				        
+
                         // shade the representation if the object is activated outplace
 				        basegfx::B2DPolygon aObjectOutline(basegfx::tools::createUnitPolygon());
 				        aObjectOutline.transform(aObjectMatrix);
@@ -138,8 +138,8 @@ namespace sdr
 					        false); // no filling
 
 				        const drawinglayer::primitive2d::Primitive2DReference xReference(new drawinglayer::primitive2d::PolyPolygonHatchPrimitive2D(
-					        basegfx::B2DPolyPolygon(aObjectOutline), 
-					        Color(COL_BLACK).getBColor(), 
+					        basegfx::B2DPolyPolygon(aObjectOutline),
+					        Color(COL_BLACK).getBColor(),
 					        aFillHatch));
 
 				        drawinglayer::primitive2d::appendPrimitive2DReferenceToPrimitive2DSequence(xRetval, xReference);
@@ -147,7 +147,7 @@ namespace sdr
 		        }
 
             }
-			
+
 		    return xRetval;
 		}
 

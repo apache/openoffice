@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -125,11 +125,11 @@ sal_Bool lcl_FindSection( const SwSectionFmtPtr& rpSectFmt, void* pArgs, bool bC
 sal_Bool lcl_FindSectionCaseSensitive( const SwSectionFmtPtr& rpSectFmt, void* pArgs )
 {
     return lcl_FindSection( rpSectFmt, pArgs, true );
-}    
+}
 sal_Bool lcl_FindSectionCaseInsensitive( const SwSectionFmtPtr& rpSectFmt, void* pArgs )
 {
     return lcl_FindSection( rpSectFmt, pArgs, false );
-}    
+}
 
 
 
@@ -167,7 +167,7 @@ bool SwDoc::GetData( const String& rItem, const String& rMimeType,
     while( true )
     {
         ::sw::mark::DdeBookmark* const pBkmk = lcl_FindDdeBookmark(*pMarkManager, rItem, bCaseSensitive);
-        if(pBkmk) 
+        if(pBkmk)
             return SwServerObject(*pBkmk).GetData(rValue, rMimeType);
 
         // haben wir ueberhaupt das Item vorraetig?
@@ -180,7 +180,7 @@ bool SwDoc::GetData( const String& rItem, const String& rMimeType,
             // gefunden, als erfrage die Daten
             return SwServerObject( *aPara.pSectNd ).GetData( rValue, rMimeType );
         }
-        if( !bCaseSensitive ) 
+        if( !bCaseSensitive )
             break;
         bCaseSensitive = false;
     }
@@ -206,7 +206,7 @@ bool SwDoc::SetData( const String& rItem, const String& rMimeType,
     while( true )
     {
         ::sw::mark::DdeBookmark* const pBkmk = lcl_FindDdeBookmark(*pMarkManager, rItem, bCaseSensitive);
-        if(pBkmk) 
+        if(pBkmk)
             return SwServerObject(*pBkmk).SetData(rMimeType, rValue);
 
         // haben wir ueberhaupt das Item vorraetig?
@@ -218,7 +218,7 @@ bool SwDoc::SetData( const String& rItem, const String& rMimeType,
             // gefunden, als erfrage die Daten
             return SwServerObject( *aPara.pSectNd ).SetData( rMimeType, rValue );
         }
-        if( !bCaseSensitive ) 
+        if( !bCaseSensitive )
             break;
         bCaseSensitive = false;
     }
@@ -249,12 +249,12 @@ bool SwDoc::SetData( const String& rItem, const String& rMimeType,
         if(pBkmk && pBkmk->IsExpanded()
             && (0 == (pObj = pBkmk->GetRefObject())))
         {
-            // mark found, but no link yet -> create hotlink 
+            // mark found, but no link yet -> create hotlink
             pObj = new SwServerObject(*pBkmk);
             pBkmk->SetRefObject(pObj);
             GetLinkManager().InsertServer(pObj);
-        }     
-        if(pObj) 
+        }
+        if(pObj)
             return pObj;
 
         _FindItem aPara(bCaseSensitive ? rItem : GetAppCharClass().lower(rItem));
@@ -263,25 +263,25 @@ bool SwDoc::SetData( const String& rItem, const String& rMimeType,
         if(aPara.pSectNd
             && (0 == (pObj = aPara.pSectNd->GetSection().GetObject())))
         {
-            // section found, but no link yet -> create hotlink 
+            // section found, but no link yet -> create hotlink
             pObj = new SwServerObject( *aPara.pSectNd );
             aPara.pSectNd->GetSection().SetRefObject( pObj );
             GetLinkManager().InsertServer(pObj);
         }
-        if(pObj) 
+        if(pObj)
             return pObj;
-        if( !bCaseSensitive ) 
+        if( !bCaseSensitive )
             break;
         bCaseSensitive = false;
     }
 
     _FindItem aPara( GetAppCharClass().lower(rItem) );
-    // tables 
+    // tables
     ((SwFrmFmts*)pTblFrmFmtTbl)->ForEach(0, pTblFrmFmtTbl->Count(), lcl_FindTable, &aPara);
     if(aPara.pTblNd
         && (0 == (pObj = aPara.pTblNd->GetTable().GetObject())))
     {
-        // table found, but no link yet -> create hotlink 
+        // table found, but no link yet -> create hotlink
         pObj = new SwServerObject(*aPara.pTblNd);
         aPara.pTblNd->GetTable().SetRefObject(pObj);
         GetLinkManager().InsertServer(pObj);
@@ -394,7 +394,7 @@ sal_Bool SwDoc::SelectServerObj( const String& rStr, SwPaM*& rpPam,
             return static_cast<bool>(rpPam);
         }
 
-        // 
+        //
         _FindItem aPara( bCaseSensitive ? sItem : rCC.lower( sItem ) );
 
         if( pSectionFmtTbl->Count() )
@@ -409,7 +409,7 @@ sal_Bool SwDoc::SelectServerObj( const String& rStr, SwPaM*& rpPam,
 
             }
         }
-        if( !bCaseSensitive ) 
+        if( !bCaseSensitive )
             break;
         bCaseSensitive = false;
     }

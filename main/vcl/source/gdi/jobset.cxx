@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -319,11 +319,11 @@ SvStream& operator>>( SvStream& rIStream, JobSetup& rJobSetup )
 				else
 					rJobSetup.mpData->mnRefCount--;
 			}
-            
+
             rtl_TextEncoding aStreamEncoding = RTL_TEXTENCODING_UTF8;
             if( nSystem == JOBSET_FILE364_SYSTEM )
                 aStreamEncoding = rIStream.GetStreamCharSet();
-            
+
 			rJobSetup.mpData = new ImplJobSetup;
 			ImplJobSetup* pJobData = rJobSetup.mpData;
 			pJobData->maPrinterName = UniString( pData->cPrinterName, aStreamEncoding );
@@ -438,10 +438,10 @@ SvStream& operator<<( SvStream& rOStream, const JobSetup& rJobSetup )
             rOStream.WriteByteString( "COMPAT_DUPLEX_MODE" ) ;
             switch( pJobData->meDuplexMode )
             {
-            case DUPLEX_UNKNOWN: rOStream.WriteByteString( "DUPLEX_UNKNOWN" );break; 
-            case DUPLEX_OFF: rOStream.WriteByteString( "DUPLEX_OFF" );break; 
-            case DUPLEX_SHORTEDGE: rOStream.WriteByteString( "DUPLEX_SHORTEDGE" );break; 
-            case DUPLEX_LONGEDGE: rOStream.WriteByteString( "DUPLEX_LONGEDGE" );break; 
+            case DUPLEX_UNKNOWN: rOStream.WriteByteString( "DUPLEX_UNKNOWN" );break;
+            case DUPLEX_OFF: rOStream.WriteByteString( "DUPLEX_OFF" );break;
+            case DUPLEX_SHORTEDGE: rOStream.WriteByteString( "DUPLEX_SHORTEDGE" );break;
+            case DUPLEX_LONGEDGE: rOStream.WriteByteString( "DUPLEX_LONGEDGE" );break;
             }
 			nLen = sal::static_int_cast<sal_uInt16>(rOStream.Tell() - nPos);
 			rOStream.Seek( nPos );

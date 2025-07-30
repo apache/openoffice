@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -63,7 +63,7 @@ const SfxItemPropertyMapEntry* ScDocOptionsHelper::GetPropertyMap()
 
 // static
 sal_Bool ScDocOptionsHelper::setPropertyValue( ScDocOptions& rOptions,
-                const SfxItemPropertyMap& rPropMap, 
+                const SfxItemPropertyMap& rPropMap,
                 const rtl::OUString& aPropertyName, const uno::Any& aValue )
 {
 	//!	use map (with new identifiers)
@@ -86,7 +86,7 @@ sal_Bool ScDocOptionsHelper::setPropertyValue( ScDocOptions& rOptions,
         case PROP_UNO_IGNORECASE  :
             rOptions.SetIgnoreCase( ScUnoHelpFunctions::GetBoolFromAny( aValue ) );
         break;
-        case PROP_UNO_ITERENABLED: 
+        case PROP_UNO_ITERENABLED:
             rOptions.SetIter( ScUnoHelpFunctions::GetBoolFromAny( aValue ) );
         break;
         case PROP_UNO_ITERCOUNT   :
@@ -109,17 +109,17 @@ sal_Bool ScDocOptionsHelper::setPropertyValue( ScDocOptions& rOptions,
         case PROP_UNO_MATCHWHOLE  :
             rOptions.SetMatchWholeCell( ScUnoHelpFunctions::GetBoolFromAny( aValue ) );
         break;
-        case PROP_UNO_NULLDATE:    
+        case PROP_UNO_NULLDATE:
         {
             util::Date aDate;
             if ( aValue >>= aDate )
                 rOptions.SetDate( aDate.Day, aDate.Month, aDate.Year );
         }
         break;
-        case PROP_UNO_SPELLONLINE: 
+        case PROP_UNO_SPELLONLINE:
             rOptions.SetAutoSpell( ScUnoHelpFunctions::GetBoolFromAny( aValue ) );
         break;
-        case PROP_UNO_STANDARDDEC: 
+        case PROP_UNO_STANDARDDEC:
         {
             sal_Int16 nIntVal = 0;
             if ( aValue >>= nIntVal )
@@ -136,8 +136,8 @@ sal_Bool ScDocOptionsHelper::setPropertyValue( ScDocOptions& rOptions,
 
 // static
 uno::Any ScDocOptionsHelper::getPropertyValue(
-                const ScDocOptions& rOptions, 
-                const SfxItemPropertyMap& rPropMap, 
+                const ScDocOptions& rOptions,
+                const SfxItemPropertyMap& rPropMap,
                 const rtl::OUString& aPropertyName )
 {
 	uno::Any aRet;
@@ -149,28 +149,28 @@ uno::Any ScDocOptionsHelper::getPropertyValue(
         case PROP_UNO_CALCASSHOWN :
             ScUnoHelpFunctions::SetBoolInAny( aRet, rOptions.IsCalcAsShown() );
         break;
-        case PROP_UNO_DEFTABSTOP : 
+        case PROP_UNO_DEFTABSTOP :
             aRet <<= (sal_Int16)( rOptions.GetTabDistance() );
         break;
-        case PROP_UNO_IGNORECASE : 
+        case PROP_UNO_IGNORECASE :
             ScUnoHelpFunctions::SetBoolInAny( aRet, rOptions.IsIgnoreCase() );
         break;
-        case PROP_UNO_ITERENABLED: 
+        case PROP_UNO_ITERENABLED:
         ScUnoHelpFunctions::SetBoolInAny( aRet, rOptions.IsIter() );
         break;
-        case PROP_UNO_ITERCOUNT:   
+        case PROP_UNO_ITERCOUNT:
             aRet <<= (sal_Int32)( rOptions.GetIterCount() );
         break;
-        case PROP_UNO_ITEREPSILON: 
+        case PROP_UNO_ITEREPSILON:
             aRet <<= (double)( rOptions.GetIterEps() );
         break;
         case PROP_UNO_LOOKUPLABELS:
             ScUnoHelpFunctions::SetBoolInAny( aRet, rOptions.IsLookUpColRowNames() );
         break;
-        case PROP_UNO_MATCHWHOLE:  
+        case PROP_UNO_MATCHWHOLE:
             ScUnoHelpFunctions::SetBoolInAny( aRet, rOptions.IsMatchWholeCell() );
         break;
-        case PROP_UNO_NULLDATE:    
+        case PROP_UNO_NULLDATE:
         {
             sal_uInt16 nD, nM, nY;
             rOptions.GetDate( nD, nM, nY );

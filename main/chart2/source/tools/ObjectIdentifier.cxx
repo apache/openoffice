@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -91,7 +91,7 @@ OUString lcl_createClassificationStringForType( ObjectType eObjectType
         if( aRet.getLength() )
             aRet.appendAscii(":");
         aRet.append( m_aDragMethodEquals );
-        aRet.append( rDragMethodServiceName );  
+        aRet.append( rDragMethodServiceName );
 
         if( !rDragParameterString.isEmpty() )
         {
@@ -348,7 +348,7 @@ OUString ObjectIdentifier::createClassifiedIdentifierForObject(
     OUString aDragMethodServiceName;
     OUString aDragParameterString;
 
-    
+
     try
     {
         //title
@@ -364,7 +364,7 @@ OUString ObjectIdentifier::createClassifiedIdentifierForObject(
                     eObjectType, aObjectID, aParentParticle, aDragMethodServiceName, aDragParameterString );
             }
             return aRet;
-            
+
         }
 
         //axis
@@ -447,7 +447,7 @@ OUString ObjectIdentifier::createClassifiedIdentifierForParticles(
             aRet.appendAscii(":");
     }
     aRet.append(rChildParticle);
-    
+
     return aRet.makeStringAndClear();
 }
 
@@ -465,7 +465,7 @@ OUString ObjectIdentifier::createParticleForCoordinateSystem(
         , const Reference< frame::XModel >& xChartModel )
 {
     OUStringBuffer aRet;
-    
+
     Reference< XDiagram > xDiagram( ChartModelHelper::findDiagram( xChartModel ) );
     Reference< XCoordinateSystemContainer > xCooSysContainer( xDiagram, uno::UNO_QUERY );
     if( xCooSysContainer.is() )
@@ -493,7 +493,7 @@ OUString ObjectIdentifier::createParticleForAxis(
           , sal_Int32 nAxisIndex )
 {
     OUStringBuffer aRet(C2U("Axis="));
-    
+
     aRet.append( OUString::valueOf( nDimensionIndex ) );
     aRet.appendAscii(",");
     aRet.append( OUString::valueOf( nAxisIndex ) );
@@ -557,7 +557,7 @@ OUString ObjectIdentifier::createParticleForLegend(
         , const Reference< frame::XModel >& xChartModel )
 {
     OUStringBuffer aRet;
-    
+
     Reference< XDiagram > xDiagram( ChartModelHelper::findDiagram( xChartModel ) );
     //todo: if more than one diagram is implemeted, find the correct diagram which is owner of the given legend
 
@@ -583,7 +583,7 @@ OUString ObjectIdentifier::createClassifiedIdentifierWithParent(
         , const OUString& rParentPartical //e.g. "Series=SeriesID" or "Grid=GridId"
         , const OUString& rDragMethodServiceName
         , const OUString& rDragParameterString
-        ) 
+        )
         //, bool bIsMultiClickObject ) //e.g. true
 {
     //e.g. "MultiClick/Series=2:Point=34"
@@ -658,7 +658,7 @@ bool ObjectIdentifier::parsePieSegmentDragParameterString(
     rMaximumPosition.Y = aValueString.toInt32();
     if( nCharacterIndex < 0 )
         return false;
-    
+
     return true;
 }
 
@@ -1001,7 +1001,7 @@ OUString ObjectIdentifier::createDataCurveCID(
 {
     OUString aParticleID( OUString::valueOf( nCurveIndex ) );
     ObjectType eType = bAverageLine ? OBJECTTYPE_DATA_AVERAGE_LINE : OBJECTTYPE_DATA_CURVE;
-    return createClassifiedIdentifierWithParent( eType, aParticleID, rSeriesParticle ); 
+    return createClassifiedIdentifierWithParent( eType, aParticleID, rSeriesParticle );
 }
 
 OUString ObjectIdentifier::createDataCurveEquationCID(
@@ -1015,7 +1015,7 @@ OUString ObjectIdentifier::createDataCurveEquationCID(
 OUString ObjectIdentifier::addChildParticle( const rtl::OUString& rParticle, const rtl::OUString& rChildParticle )
 {
     OUStringBuffer aRet(rParticle);
-    
+
     if( aRet.getLength() && !rChildParticle.isEmpty() )
         aRet.appendAscii(":");
     if( !rChildParticle.isEmpty() )
@@ -1103,7 +1103,7 @@ OUString ObjectIdentifier::getObjectID( const rtl::OUString& rCID )
         sal_Int32 nEndPos = rCID.getLength();
         aRet = rCID.copy(nStartPos,nEndPos-nStartPos);
     }
-    
+
     return aRet;
 }
 
@@ -1339,7 +1339,7 @@ Reference< XDataSeries > ObjectIdentifier::getDataSeriesForCID(
         if( nSeriesIndex >= 0 && nSeriesIndex < aDataSeriesSeq.getLength() )
             xSeries.set( aDataSeriesSeq[nSeriesIndex] );
     }
-    
+
     return xSeries;
 }
 

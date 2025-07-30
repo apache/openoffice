@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -62,7 +62,7 @@ OPreparedStatement::OPreparedStatement( OConnection* _pConnection,const ::rtl::O
 	:OStatement_BASE2(_pConnection)
     ,numParams(0)
 	,boundParams(NULL)
-	,m_bPrepared(sal_False)    
+	,m_bPrepared(sal_False)
 {
 	m_sSqlStatement = sql;
 	try
@@ -251,7 +251,7 @@ sal_Int32 SAL_CALL OPreparedStatement::executeUpdate(  ) throw(SQLException, Run
 
 	if (!execute())
 		numRows = getUpdateCount ();
-	else 
+	else
     {
 		// No update count was produced (a ResultSet was).  Raise
 		// an exception
@@ -288,7 +288,7 @@ Reference< XResultSet > SAL_CALL OPreparedStatement::executeQuery(  ) throw(SQLE
 
 	if (execute())
 		rs = getResultSet(sal_False);
-	else 
+	else
     {
 		// No ResultSet was produced.  Raise an exception
         m_pConnection->throwGenericSQLException(STR_NO_RESULTSET,*this);
@@ -522,14 +522,14 @@ void SAL_CALL OPreparedStatement::setObjectWithInfo( sal_Int32 parameterIndex, c
 				setNull(parameterIndex,sqlType);
 			break;
         case DataType::DECIMAL:
-            { 
+            {
                 ORowSetValue aValue;
                 aValue.fill(x);
                 setDecimal(parameterIndex,aValue);
             }
             break;
         case DataType::NUMERIC:
-            { 
+            {
                 ORowSetValue aValue;
                 aValue.fill(x);
                 setString(parameterIndex,aValue);

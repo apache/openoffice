@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
@@ -182,7 +182,7 @@ namespace svgio
             // which represent this for the current object. There are various methods to
             // specify CssStyles which need to be taken into account in a given order:
             // - local CssStyle (independent from global CssStyles at SvgDocument)
-            // - 'id' CssStyle 
+            // - 'id' CssStyle
             // - 'class' CssStyle(s)
             // - type-dependent elements (e..g. 'rect' for all rect elements)
             // - local attributes (rOriginal)
@@ -227,8 +227,8 @@ namespace svgio
             }
             else
             {
-                // #125293# rOriginal will be the last element in the linked list; use no CssStyleParent 
-                // there (reset it) to ensure that the parent hierarchy will be used when it's base 
+                // #125293# rOriginal will be the last element in the linked list; use no CssStyleParent
+                // there (reset it) to ensure that the parent hierarchy will be used when it's base
                 // is referenced. This new chaning inserts the CssStyles before the original style,
                 // this makes the whole process much safer since the original style when used will
                 // be not different to the situation without CssStyles; thus loops which may be caused
@@ -236,10 +236,10 @@ namespace svgio
                 // already in this mechanism. It's still good to keep the supportsParentStyle
                 // from #125258# in place, though.
                 // This chain building using pointers will be done every time when checkForCssStyle
-                // is used (not the search, only the chaining). This is needed since the CssStyles 
-                // themselves will be potentially used multiple times. It is not expensive since it's 
+                // is used (not the search, only the chaining). This is needed since the CssStyles
+                // themselves will be potentially used multiple times. It is not expensive since it's
                 // only changing some pointers.
-                // The alternative would be to create the style hierarchy for every element (or even 
+                // The alternative would be to create the style hierarchy for every element (or even
                 // for the element containing the hierarchy) in a vector of pointers and to use that.
                 // Resetting the CssStyleParent on rOriginal is probably not needed
                 // but simply safer to do.
@@ -284,7 +284,7 @@ namespace svgio
             mbCssStyleVectorBuilt(false)
         {
             OSL_ENSURE(SVGTokenUnknown != maType, "SvgNode with unknown type created (!)");
-            
+
             if(pParent)
             {
                 pParent->maChildren.push_back(this);
@@ -308,17 +308,17 @@ namespace svgio
                 maChildren.pop_back();
             }
 
-            if(mpId) 
+            if(mpId)
             {
                 delete mpId;
             }
 
-            if(mpClass) 
+            if(mpClass)
             {
                 delete mpClass;
             }
 
-            if(mpLocalCssStyle) 
+            if(mpLocalCssStyle)
             {
                 delete mpLocalCssStyle;
             }
@@ -527,7 +527,7 @@ namespace svgio
 
             if(!bReferenced)
             {
-                if(SVGTokenDefs == getType() || 
+                if(SVGTokenDefs == getType() ||
                     SVGTokenSymbol == getType() ||
                     SVGTokenClipPathNode == getType() ||
                     SVGTokenMask == getType() ||
@@ -669,34 +669,34 @@ namespace svgio
             }
         }
 
-        void SvgNode::setId(const rtl::OUString* pfId) 
-        { 
-            if(mpId) 
+        void SvgNode::setId(const rtl::OUString* pfId)
+        {
+            if(mpId)
             {
                 mrDocument.removeSvgNodeFromMapper(*mpId);
-                delete mpId; 
-                mpId = 0; 
+                delete mpId;
+                mpId = 0;
             }
-                
-            if(pfId) 
+
+            if(pfId)
             {
-                mpId = new rtl::OUString(*pfId); 
+                mpId = new rtl::OUString(*pfId);
                 mrDocument.addSvgNodeToMapper(*mpId, *this);
             }
         }
 
-        void SvgNode::setClass(const rtl::OUString* pfClass) 
-        { 
-            if(mpClass) 
+        void SvgNode::setClass(const rtl::OUString* pfClass)
+        {
+            if(mpClass)
             {
                 mrDocument.removeSvgNodeFromMapper(*mpClass);
-                delete mpClass; 
-                mpClass = 0; 
+                delete mpClass;
+                mpClass = 0;
             }
-                
-            if(pfClass) 
+
+            if(pfClass)
             {
-                mpClass = new rtl::OUString(*pfClass); 
+                mpClass = new rtl::OUString(*pfClass);
                 mrDocument.addSvgNodeToMapper(*mpClass, *this);
             }
         }
@@ -707,14 +707,14 @@ namespace svgio
             {
                 return maXmlSpace;
             }
-            
+
             if(getParent())
             {
-                return getParent()->getXmlSpace(); 
+                return getParent()->getXmlSpace();
             }
 
             // default is XmlSpace_default
-            return XmlSpace_default; 
+            return XmlSpace_default;
         }
 
     } // end of namespace svgreader

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -373,7 +373,7 @@ void WW8Export::OutGrf(const sw::Frame &rFrame)
     if( rURL.GetURL().Len() && rFrame.GetWriterType() == sw::Frame::eGraphic)
     {
         bURLStarted = true;
-        m_pAttrOutput->StartURL( rURL.GetURL(), rURL.GetTargetFrameName() );         
+        m_pAttrOutput->StartURL( rURL.GetURL(), rURL.GetTargetFrameName() );
     }
     //End
 
@@ -675,7 +675,7 @@ void SwWW8WrGrf::WritePICFHeader(SvStream& rStrm, const sw::Frame &rFly,
         Set_UInt16( pArr, nCropL );                     // set dxaCropLeft
         Set_UInt16( pArr, nCropT );                     // set dyaCropTop
         Set_UInt16( pArr, nCropR );                     // set dxaCropRight
-        Set_UInt16( pArr, nCropB );                     // set dyaCropBottom 
+        Set_UInt16( pArr, nCropB );                     // set dyaCropBottom
     }
     else
     {
@@ -783,7 +783,7 @@ void SwWW8WrGrf::WritePICBulletFHeader(SvStream& rStrm, const Graphic &rGrf,
 	for( sal_uInt8 i = 0; i < 4; ++i )
 	{
 		WW8_BRC aBrc;
-		
+
 		short nSpacing;
 		short nThick = aBrc.DetermineBorderProperties(!bWrtWW8,
 		&nSpacing);
@@ -867,7 +867,7 @@ void SwWW8WrGrf::WriteGrfForBullet(SvStream& rStrm,  const Graphic &rGrf, sal_uI
 	else
 	{
 		/* bool bSwapped = rGrf.IsSwapOut() ? true : false; */
-		
+
 		GDIMetaFile aMeta;
 		switch (rGrf.GetType())
 		{

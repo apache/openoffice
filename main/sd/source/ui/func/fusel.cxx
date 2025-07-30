@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -113,7 +113,7 @@ FuSelection::FuSelection (
       bMirrorSide0(sal_False),
       nEditMode(SID_BEZIER_MOVE),
       pWaterCanCandidate(NULL)
-  //Solution: Add Shift+UP/DOWN/LEFT/RIGHT key to move the position of insert point, 
+  //Solution: Add Shift+UP/DOWN/LEFT/RIGHT key to move the position of insert point,
   //and SHIFT+ENTER key to decide the position and draw the new insert point
     ,bBeginInsertPoint(sal_False),
   	oldPoint(0,0)
@@ -1046,8 +1046,8 @@ void FuSelection::ForcePointer(const MouseEvent* pMEvt)
 {
 	if(bMovedToCenterPoint && !bBeginInsertPoint && pMEvt)
 	{
-		MouseEvent aMEvt(pMEvt->GetPosPixel(), pMEvt->GetClicks(), 
-			pMEvt->GetMode(), pMEvt->GetButtons(), pMEvt->GetModifier() & ~KEY_SHIFT);  
+		MouseEvent aMEvt(pMEvt->GetPosPixel(), pMEvt->GetClicks(),
+			pMEvt->GetMode(), pMEvt->GetButtons(), pMEvt->GetModifier() & ~KEY_SHIFT);
 		FuDraw::ForcePointer(&aMEvt);
 	}
 	else

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -50,7 +50,7 @@ sal_Bool UnoPropertyArrayHelper::ImplHasProperty( sal_uInt16 nPropId ) const
 {
 	if ( ( nPropId >= BASEPROPERTY_FONTDESCRIPTORPART_START ) && ( nPropId <= BASEPROPERTY_FONTDESCRIPTORPART_END ) )
 		nPropId = BASEPROPERTY_FONTDESCRIPTOR;
-	
+
 	return maIDs.Get( nPropId ) ? sal_True : sal_False;
 }
 
@@ -59,11 +59,11 @@ sal_Bool UnoPropertyArrayHelper::fillPropertyMembersByHandle( ::rtl::OUString * 
 {
     sal_uInt16 id = sal::static_int_cast< sal_uInt16 >(nPropId);
 	sal_Bool bValid = ImplHasProperty( id );
-	if ( bValid ) 
+	if ( bValid )
 	{
-		if ( pPropName ) 
+		if ( pPropName )
 			*pPropName = GetPropertyName( id );
-		if ( pAttributes ) 
+		if ( pAttributes )
 			*pAttributes = GetPropertyAttribs( id );
 	}
 	return bValid;
@@ -72,7 +72,7 @@ sal_Bool UnoPropertyArrayHelper::fillPropertyMembersByHandle( ::rtl::OUString * 
 ::com::sun::star::uno::Sequence< ::com::sun::star::beans::Property > UnoPropertyArrayHelper::getProperties()
 {
 	// Sortiert nach Namen...
-	
+
 	Table aSortedPropsIds;
 	sal_uInt32 nProps = maIDs.Count();
 	for ( sal_uInt32 s = 0; s < nProps; s++ )
@@ -92,8 +92,8 @@ sal_Bool UnoPropertyArrayHelper::fillPropertyMembersByHandle( ::rtl::OUString * 
 	nProps = aSortedPropsIds.Count();	// koennen jetzt mehr sein
 	::com::sun::star::uno::Sequence< ::com::sun::star::beans::Property> aProps( nProps );
 	::com::sun::star::beans::Property* pProps = aProps.getArray();
-	
-	for ( sal_uInt32 n = 0; n < nProps; n++ ) 
+
+	for ( sal_uInt32 n = 0; n < nProps; n++ )
 	{
 		sal_uInt16 nId = (sal_uInt16)(sal_uLong)aSortedPropsIds.GetObject( n );
 		pProps[n].Name = GetPropertyName( nId );
@@ -101,7 +101,7 @@ sal_Bool UnoPropertyArrayHelper::fillPropertyMembersByHandle( ::rtl::OUString * 
 		pProps[n].Type = *GetPropertyType( nId );
 		pProps[n].Attributes = GetPropertyAttribs( nId );
 	}
-	
+
 	return aProps;
 }
 
@@ -137,10 +137,10 @@ sal_Int32 UnoPropertyArrayHelper::fillHandles( sal_Int32* pHandles, const ::com:
 	sal_Int32 nValues = rPropNames.getLength();
 	sal_Int32 nValidHandles = 0;
 
-	for ( sal_Int32 n = 0; n < nValues; n++ ) 
+	for ( sal_Int32 n = 0; n < nValues; n++ )
 	{
 		sal_uInt16 nPropId = GetPropertyId( pNames[n] );
-		if ( nPropId && ImplHasProperty( nPropId ) ) 
+		if ( nPropId && ImplHasProperty( nPropId ) )
 		{
 			pHandles[n] = nPropId;
 			nValidHandles++;

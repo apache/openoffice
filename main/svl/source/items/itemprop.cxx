@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -48,7 +48,7 @@ struct equalOUString
     return r1.equals( r2 );
   }
 };
-  
+
 typedef ::std::hash_map< ::rtl::OUString,
                                  SfxItemPropertySimpleEntry,
                                  ::rtl::OUStringHash,
@@ -56,7 +56,7 @@ typedef ::std::hash_map< ::rtl::OUString,
 
 class SfxItemPropertyMap_Impl : public SfxItemPropertyHashMap_t
 {
-public:    
+public:
     mutable uno::Sequence< beans::Property > m_aPropSeq;
 
     SfxItemPropertyMap_Impl(){}
@@ -66,7 +66,7 @@ SfxItemPropertyMap_Impl::SfxItemPropertyMap_Impl( const SfxItemPropertyMap_Impl*
 {
     this->SfxItemPropertyHashMap_t::operator=( *pSource );
     m_aPropSeq = pSource->m_aPropSeq;
-}        
+}
 
 /*-- 16.02.2009 10:03:51---------------------------------------------------
 
@@ -79,7 +79,7 @@ SfxItemPropertyMap::SfxItemPropertyMap( const SfxItemPropertyMapEntry* pEntries 
         ::rtl::OUString sEntry(pEntries->pName, pEntries->nNameLen, RTL_TEXTENCODING_ASCII_US );
         (*m_pImpl) [ sEntry ] = pEntries;
         ++pEntries;
-    }    
+    }
 }
 /*-- 16.02.2009 12:46:41---------------------------------------------------
 
@@ -135,14 +135,14 @@ uno::Sequence<beans::Property> SfxItemPropertyMap::getProperties() const
     return m_pImpl->m_aPropSeq;
 }
 /*-- 16.02.2009 11:04:31---------------------------------------------------
-    
+
   -----------------------------------------------------------------------*/
-beans::Property SfxItemPropertyMap::getPropertyByName( const ::rtl::OUString rName ) const 
+beans::Property SfxItemPropertyMap::getPropertyByName( const ::rtl::OUString rName ) const
     throw( beans::UnknownPropertyException )
 {
     SfxItemPropertyHashMap_t::const_iterator aIter = m_pImpl->find(rName);
     if( aIter == m_pImpl->end() )
-        throw UnknownPropertyException();    
+        throw UnknownPropertyException();
     const SfxItemPropertySimpleEntry* pEntry = &aIter->second;
     beans::Property aProp;
     aProp.Name = rName;
@@ -155,7 +155,7 @@ beans::Property SfxItemPropertyMap::getPropertyByName( const ::rtl::OUString rNa
 /*-- 16.02.2009 11:09:16---------------------------------------------------
 
   -----------------------------------------------------------------------*/
-sal_Bool SfxItemPropertyMap::hasPropertyByName( const ::rtl::OUString& rName ) const 
+sal_Bool SfxItemPropertyMap::hasPropertyByName( const ::rtl::OUString& rName ) const
 {
     SfxItemPropertyHashMap_t::const_iterator aIter = m_pImpl->find(rName);
     return aIter != m_pImpl->end();
@@ -184,7 +184,7 @@ PropertyEntryVector_t SfxItemPropertyMap::getPropertyEntries() const
 {
     PropertyEntryVector_t aRet;
     aRet.reserve(m_pImpl->size());
-    
+
     SfxItemPropertyHashMap_t::const_iterator aIt = m_pImpl->begin();
     while( aIt != m_pImpl->end() )
     {
@@ -193,14 +193,14 @@ PropertyEntryVector_t SfxItemPropertyMap::getPropertyEntries() const
         ++aIt;
     }
     return aRet;
-}    
+}
 /*-- 18.02.2009 15:11:06---------------------------------------------------
 
   -----------------------------------------------------------------------*/
 sal_uInt32 SfxItemPropertyMap::getSize() const
 {
     return m_pImpl->size();
-}    
+}
 /*-- 16.02.2009 13:44:54---------------------------------------------------
 
   -----------------------------------------------------------------------*/
@@ -259,7 +259,7 @@ void SfxItemPropertySet::getPropertyValue( const rtl::OUString &rName,
 			const SfxItemSet& rSet, Any& rAny ) const
 						throw(RuntimeException, UnknownPropertyException)
 {
-    // detect which-id 
+    // detect which-id
     const SfxItemPropertySimpleEntry* pEntry = m_aMap.getByName( rName );
     if ( !pEntry )
 		throw UnknownPropertyException();
@@ -312,7 +312,7 @@ void SfxItemPropertySet::setPropertyValue( const SfxItemPropertySimpleEntry& rEn
             DELETEZ(pNewItem);
             throw IllegalArgumentException();
         }
-        // apply new item 
+        // apply new item
         rSet.Put( *pNewItem, rEntry.nWID );
         delete pNewItem;
     }
@@ -354,7 +354,7 @@ PropertyState SfxItemPropertySet::getPropertyState(const SfxItemPropertySimpleEn
 }
 PropertyState   SfxItemPropertySet::getPropertyState(
 	const rtl::OUString& rName, const SfxItemSet& rSet) const
-                                    throw(UnknownPropertyException)  
+                                    throw(UnknownPropertyException)
 {
 	PropertyState eRet = PropertyState_DIRECT_VALUE;
 
@@ -423,7 +423,7 @@ Sequence< Property > SAL_CALL
 /*-- 16.02.2009 13:49:27---------------------------------------------------
 
   -----------------------------------------------------------------------*/
-const SfxItemPropertyMap* SfxItemPropertySetInfo::getMap() const 
+const SfxItemPropertyMap* SfxItemPropertySetInfo::getMap() const
 {
     return m_pImpl->m_pOwnMap;
 }
@@ -463,7 +463,7 @@ SfxExtItemPropertySetInfo::SfxExtItemPropertySetInfo(
                 aExtMap( pMap )
 {
     aExtMap.mergeProperties( rPropSeq );
-}    
+}
 /*-- 16.02.2009 12:06:49---------------------------------------------------
 
   -----------------------------------------------------------------------*/

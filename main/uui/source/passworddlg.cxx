@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -50,7 +50,7 @@ PasswordDialog::PasswordDialog(
     rtl::OUString& aDocURL,
     bool bOpenToModify,
     bool bIsSimplePasswordRequest )
-    
+
     :ModalDialog( _pParent, ResId( DLG_UUI_PASSWORD, *pResMgr ) )
     ,aFTPassword( this, ResId( FT_PASSWORD, *pResMgr ))
     ,aEDPassword( this, ResId( ED_PASSWORD, *pResMgr ))
@@ -108,7 +108,7 @@ PasswordDialog::PasswordDialog(
         aNewDlgSize.Height() -= nDelta;
         SetSizePixel( aNewDlgSize );
     }
-    
+
     SetText( aTitle );
 
     sal_uInt16 nStrId = bOpenToModify ? STR_ENTER_PASSWORD_TO_MODIFY : STR_ENTER_PASSWORD_TO_OPEN;
@@ -126,9 +126,9 @@ PasswordDialog::PasswordDialog(
 
 
     //
-    // move controls down by extra height needed for aFTPassword 
+    // move controls down by extra height needed for aFTPassword
     // (usually only needed if a URL was provided)
-    // 
+    //
 
     long nLabelWidth    = aFTPassword.GetSizePixel().Width();
     long nLabelHeight   = aFTPassword.GetSizePixel().Height();
@@ -139,7 +139,7 @@ PasswordDialog::PasswordDialog(
     Rectangle aRect = aFTPassword.GetTextRect( aLabelRect, aFTPassword.GetText() );
 
     long nNewLabelHeight = 0;
-    for( nNewLabelHeight = ( nTextWidth / nLabelWidth + 1 ) * nTextHeight; 
+    for( nNewLabelHeight = ( nTextWidth / nLabelWidth + 1 ) * nTextHeight;
         nNewLabelHeight < aRect.GetHeight();
 		nNewLabelHeight += nTextHeight ) {} ;
 

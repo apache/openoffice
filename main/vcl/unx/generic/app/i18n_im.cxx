@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -213,10 +213,10 @@ IsXWindowCompatibleLocale( const char* p_locale )
 	return True;
 }
 
-// Set the operating system locale prior to trying to open an 
+// Set the operating system locale prior to trying to open an
 // XIM InputMethod.
 // Handle the cases where the current locale is either not supported by the
-// operating system (LANG=gaga) or by the XWindow system (LANG=aa_ER@saaho) 
+// operating system (LANG=gaga) or by the XWindow system (LANG=aa_ER@saaho)
 // by providing a fallback.
 // Upgrade "C" or "POSIX" to "en_US" locale to allow umlauts and accents
 // see i8988, i9188, i8930, i16318
@@ -247,7 +247,7 @@ SalI18N_InputMethod::SetLocale( const char* pLocale )
 				    mbUseable = False;
             }
 		}
-		
+
         // must not fail if mbUseable since XSupportsLocale() asserts success
 		if ( mbUseable && XSetLocaleModifiers("") == NULL )
 		{

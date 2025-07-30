@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -87,40 +87,40 @@ class OTextInputStream : public TextInputStreamHelper
 	sal_Bool mbReachedEOF;
 
 	void implResizeBuffer( void );
-	OUString implReadString( const Sequence< sal_Unicode >& Delimiters, 
-		sal_Bool bRemoveDelimiter, sal_Bool bFindLineEnd ) 
+	OUString implReadString( const Sequence< sal_Unicode >& Delimiters,
+		sal_Bool bRemoveDelimiter, sal_Bool bFindLineEnd )
 			throw(IOException, RuntimeException);
 	sal_Int32 implReadNext() throw(IOException, RuntimeException);
-	
+
 public:
 	OTextInputStream();
 	virtual ~OTextInputStream();
 
     // Methods XTextInputStream
-    virtual OUString SAL_CALL readLine(  ) 
+    virtual OUString SAL_CALL readLine(  )
 		throw(IOException, RuntimeException);
-    virtual OUString SAL_CALL readString( const Sequence< sal_Unicode >& Delimiters, sal_Bool bRemoveDelimiter ) 
+    virtual OUString SAL_CALL readString( const Sequence< sal_Unicode >& Delimiters, sal_Bool bRemoveDelimiter )
 		throw(IOException, RuntimeException);
-    virtual sal_Bool SAL_CALL isEOF(  ) 
+    virtual sal_Bool SAL_CALL isEOF(  )
 		throw(IOException, RuntimeException);
     virtual void SAL_CALL setEncoding( const OUString& Encoding ) throw(RuntimeException);
 
     // Methods XInputStream
-    virtual sal_Int32 SAL_CALL readBytes( Sequence< sal_Int8 >& aData, sal_Int32 nBytesToRead ) 
+    virtual sal_Int32 SAL_CALL readBytes( Sequence< sal_Int8 >& aData, sal_Int32 nBytesToRead )
 		throw(NotConnectedException, BufferSizeExceededException, IOException, RuntimeException);
-    virtual sal_Int32 SAL_CALL readSomeBytes( Sequence< sal_Int8 >& aData, sal_Int32 nMaxBytesToRead ) 
+    virtual sal_Int32 SAL_CALL readSomeBytes( Sequence< sal_Int8 >& aData, sal_Int32 nMaxBytesToRead )
 		throw(NotConnectedException, BufferSizeExceededException, IOException, RuntimeException);
-    virtual void SAL_CALL skipBytes( sal_Int32 nBytesToSkip ) 
+    virtual void SAL_CALL skipBytes( sal_Int32 nBytesToSkip )
 		throw(NotConnectedException, BufferSizeExceededException, IOException, RuntimeException);
-    virtual sal_Int32 SAL_CALL available(  ) 
+    virtual sal_Int32 SAL_CALL available(  )
 		throw(NotConnectedException, IOException, RuntimeException);
-    virtual void SAL_CALL closeInput(  ) 
+    virtual void SAL_CALL closeInput(  )
 		throw(NotConnectedException, IOException, RuntimeException);
 
     // Methods XActiveDataSink
-    virtual void SAL_CALL setInputStream( const Reference< XInputStream >& aStream ) 
+    virtual void SAL_CALL setInputStream( const Reference< XInputStream >& aStream )
 		throw(RuntimeException);
-    virtual Reference< XInputStream > SAL_CALL getInputStream() 
+    virtual Reference< XInputStream > SAL_CALL getInputStream()
 		throw(RuntimeException);
 
 	// Methods XServiceInfo
@@ -160,7 +160,7 @@ void OTextInputStream::implResizeBuffer( void )
 //===========================================================================
 // XTextInputStream
 
-OUString OTextInputStream::readLine(  ) 
+OUString OTextInputStream::readLine(  )
 	throw(IOException, RuntimeException)
 {
 	static Sequence< sal_Unicode > aDummySeq;
@@ -173,7 +173,7 @@ OUString OTextInputStream::readString( const Sequence< sal_Unicode >& Delimiters
 	return implReadString( Delimiters, bRemoveDelimiter, sal_False );
 }
 
-sal_Bool OTextInputStream::isEOF() 
+sal_Bool OTextInputStream::isEOF()
 	throw(IOException, RuntimeException)
 {
 	sal_Bool bRet = sal_False;
@@ -183,8 +183,8 @@ sal_Bool OTextInputStream::isEOF()
 }
 
 
-OUString OTextInputStream::implReadString( const Sequence< sal_Unicode >& Delimiters, 
-										   sal_Bool bRemoveDelimiter, sal_Bool bFindLineEnd ) 
+OUString OTextInputStream::implReadString( const Sequence< sal_Unicode >& Delimiters,
+										   sal_Bool bRemoveDelimiter, sal_Bool bFindLineEnd )
 		throw(IOException, RuntimeException)
 {
 	OUString aRetStr;
@@ -227,7 +227,7 @@ OUString OTextInputStream::implReadString( const Sequence< sal_Unicode >& Delimi
 				break;
 		}
 
-		// Now there should be characters available 
+		// Now there should be characters available
 		// (otherwise the loop should have been breaked before)
 		sal_Unicode	c = mpBuffer[ nBufferReadPos++ ];
 
@@ -281,7 +281,7 @@ OUString OTextInputStream::implReadString( const Sequence< sal_Unicode >& Delimi
 		aRetStr = OUString( mpBuffer, nCopyLen );
 
 	// Copy rest of buffer
-	memmove( mpBuffer, mpBuffer + nBufferReadPos, 
+	memmove( mpBuffer, mpBuffer + nBufferReadPos,
 		(mnCharsInBuffer - nBufferReadPos) * sizeof( sal_Unicode ) );
 	mnCharsInBuffer -= nBufferReadPos;
 
@@ -289,7 +289,7 @@ OUString OTextInputStream::implReadString( const Sequence< sal_Unicode >& Delimi
 }
 
 
-sal_Int32 OTextInputStream::implReadNext() 
+sal_Int32 OTextInputStream::implReadNext()
 		throw(IOException, RuntimeException)
 {
 	sal_Int32 nFreeBufferSize = mnBufferSize - mnCharsInBuffer;
@@ -315,7 +315,7 @@ sal_Int32 OTextInputStream::implReadNext()
 			const sal_Int8 *pbSource = mSeqSource.getConstArray();
 
 			// All invalid characters are transformed to the unicode undefined char
-			nTargetCount += rtl_convertTextToUnicode(   
+			nTargetCount += rtl_convertTextToUnicode(
 								mConvText2Unicode,
 								mContextText2Unicode,
 								(const sal_Char*) &( pbSource[nSourceCount] ),
@@ -328,15 +328,15 @@ sal_Int32 OTextInputStream::implReadNext()
 								&uiInfo,
 								&nSrcCvtBytes );
 			nSourceCount += nSrcCvtBytes;
-							
+
 			sal_Bool bCont = sal_False;
-			if( uiInfo & RTL_TEXTTOUNICODE_INFO_DESTBUFFERTOSMALL ) 
+			if( uiInfo & RTL_TEXTTOUNICODE_INFO_DESTBUFFERTOSMALL )
 			{
 				implResizeBuffer();
 				bCont = sal_True;
 			}
 
-			if( uiInfo & RTL_TEXTTOUNICODE_INFO_SRCBUFFERTOSMALL ) 
+			if( uiInfo & RTL_TEXTTOUNICODE_INFO_SRCBUFFERTOSMALL )
 			{
 				// read next byte
 				static Sequence< sal_Int8 > aOneByteSeq( 1 );
@@ -377,12 +377,12 @@ sal_Int32 OTextInputStream::implReadNext()
 	}
 }
 
-void OTextInputStream::setEncoding( const OUString& Encoding ) 
+void OTextInputStream::setEncoding( const OUString& Encoding )
 	throw(RuntimeException)
 {
 	OString aOEncodingStr = OUStringToOString( Encoding, RTL_TEXTENCODING_ASCII_US );
 	rtl_TextEncoding encoding = rtl_getTextEncodingFromMimeCharset( aOEncodingStr.getStr() );
-	if( RTL_TEXTENCODING_DONTKNOW == encoding ) 
+	if( RTL_TEXTENCODING_DONTKNOW == encoding )
 		return;
 
 	mbEncodingInitialized = true;
@@ -394,7 +394,7 @@ void OTextInputStream::setEncoding( const OUString& Encoding )
 //===========================================================================
 // XInputStream
 
-sal_Int32 OTextInputStream::readBytes( Sequence< sal_Int8 >& aData, sal_Int32 nBytesToRead ) 
+sal_Int32 OTextInputStream::readBytes( Sequence< sal_Int8 >& aData, sal_Int32 nBytesToRead )
 	throw(NotConnectedException, BufferSizeExceededException, IOException, RuntimeException)
 {
 	return mxStream->readBytes( aData, nBytesToRead );
@@ -412,13 +412,13 @@ void OTextInputStream::skipBytes( sal_Int32 nBytesToSkip )
 	mxStream->skipBytes( nBytesToSkip );
 }
 
-sal_Int32 OTextInputStream::available(  ) 
+sal_Int32 OTextInputStream::available(  )
 	throw(NotConnectedException, IOException, RuntimeException)
 {
 	return mxStream->available();
 }
 
-void OTextInputStream::closeInput(  ) 
+void OTextInputStream::closeInput(  )
 	throw(NotConnectedException, IOException, RuntimeException)
 {
 	mxStream->closeInput();
@@ -428,7 +428,7 @@ void OTextInputStream::closeInput(  )
 //===========================================================================
 // XActiveDataSink
 
-void OTextInputStream::setInputStream( const Reference< XInputStream >& aStream ) 
+void OTextInputStream::setInputStream( const Reference< XInputStream >& aStream )
 	throw(RuntimeException)
 {
 	mxStream = aStream;
@@ -476,11 +476,11 @@ sal_Bool OTextInputStream::supportsService(const OUString& ServiceName) throw()
 {
 	Sequence< OUString > aSNL = getSupportedServiceNames();
 	const OUString * pArray = aSNL.getConstArray();
-	
+
 	for( sal_Int32 i = 0; i < aSNL.getLength(); i++ )
 		if( pArray[i] == ServiceName )
 			return sal_True;
-		
+
 	return sal_False;
 }
 

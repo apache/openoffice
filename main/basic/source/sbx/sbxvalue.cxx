@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -302,7 +302,7 @@ SbxValue& SbxValue::operator=( const SbxValue& r )
 		{
 			// string -> byte array
 			if( IsFixed() && (aData.eType == SbxOBJECT)
-				&& aData.pObj && ( aData.pObj->GetType() == (SbxARRAY | SbxBYTE) )		   	
+				&& aData.pObj && ( aData.pObj->GetType() == (SbxARRAY | SbxBYTE) )
 				&& (r.aData.eType == SbxSTRING) )
 			{
 				::rtl::OUString aStr = r.GetString();
@@ -1129,7 +1129,7 @@ sal_Bool SbxValue::Convert( SbxDataType eTo )
 
 sal_Bool SbxValue::Compute( SbxOperator eOp, const SbxValue& rOp )
 {
-	bool bVBAInterop =  SbiRuntime::isVBAEnabled(); 
+	bool bVBAInterop =  SbiRuntime::isVBAEnabled();
 
 	SbxDataType eThisType = GetType();
 	SbxDataType eOpType = rOp.GetType();
@@ -1144,8 +1144,8 @@ sal_Bool SbxValue::Compute( SbxOperator eOp, const SbxValue& rOp )
 	else if( eThisType == SbxNULL || eOpType == SbxNULL )
 		SetType( SbxNULL );
 	// Sonderregel 2: Ist ein Operand Empty, ist das Ergebnis der 2. Operand
-	else if( eThisType == SbxEMPTY 
-	&& !bVBAInterop 
+	else if( eThisType == SbxEMPTY
+	&& !bVBAInterop
 	)
 		*this = rOp;
 	// 13.2.96: Nicht schon vor Get auf SbxEMPTY pruefen
@@ -1153,7 +1153,7 @@ sal_Bool SbxValue::Compute( SbxOperator eOp, const SbxValue& rOp )
 	{
 		SbxValues aL, aR;
 		bool bDecimal = false;
-		if( bVBAInterop && ( ( eThisType == SbxSTRING && eOpType != SbxSTRING ) || 
+		if( bVBAInterop && ( ( eThisType == SbxSTRING && eOpType != SbxSTRING ) ||
 			 ( eThisType != SbxSTRING && eOpType == SbxSTRING ) ) &&
 			 ( eOp == SbxMUL || eOp == SbxDIV || eOp == SbxPLUS || eOp == SbxMINUS ) )
 		{
@@ -1295,7 +1295,7 @@ sal_Bool SbxValue::Compute( SbxOperator eOp, const SbxValue& rOp )
 				}
 			}
 		}
-		else if( ( GetType() == SbxDECIMAL || rOp.GetType() == SbxDECIMAL ) && 
+		else if( ( GetType() == SbxDECIMAL || rOp.GetType() == SbxDECIMAL ) &&
 			     ( eOp == SbxMUL || eOp == SbxDIV || eOp == SbxPLUS || eOp == SbxMINUS || eOp == SbxNEG ) )
 		{
 			aL.eType = aR.eType = SbxDECIMAL;
@@ -1307,7 +1307,7 @@ sal_Bool SbxValue::Compute( SbxOperator eOp, const SbxValue& rOp )
 					releaseDecimalPtr( aL.pDecimal );
 					goto Lbl_OpIsEmpty;
 				}
-				if( Get( aL ) ) 
+				if( Get( aL ) )
 				{
 					if( aL.pDecimal && aR.pDecimal )
 					{
@@ -1378,7 +1378,7 @@ sal_Bool SbxValue::Compute( SbxOperator eOp, const SbxValue& rOp )
 						{
 							SetError( SbxERR_ZERODIV );
 						}
-						else 
+						else
 						{
 							// #i20704 Implement directly
 							BigInt b1( aL.nLong64 );
@@ -1404,7 +1404,7 @@ sal_Bool SbxValue::Compute( SbxOperator eOp, const SbxValue& rOp )
 			}
 		}
 		else
-Lbl_OpIsDouble:			
+Lbl_OpIsDouble:
 		{	// Andere Operatoren
 			aL.eType = aR.eType = SbxDOUBLE;
 			if( rOp.Get( aR ) )
@@ -1463,7 +1463,7 @@ Lbl_OpIsEmpty:
 
 sal_Bool SbxValue::Compare( SbxOperator eOp, const SbxValue& rOp ) const
 {
-	bool bVBAInterop =  SbiRuntime::isVBAEnabled(); 
+	bool bVBAInterop =  SbiRuntime::isVBAEnabled();
 
 	sal_Bool bRes = sal_False;
 	SbxError eOld = GetError();
@@ -1483,12 +1483,12 @@ sal_Bool SbxValue::Compare( SbxOperator eOp, const SbxValue& rOp ) const
 	// Sonderregel 2: Wenn beide Variant sind und einer ist numerisch,
 	// und der andere ein String, ist num < str
 	else if( !IsFixed() && !rOp.IsFixed()
-	 && ( rOp.GetType() == SbxSTRING && GetType() != SbxSTRING && IsNumeric() ) && !bVBAInterop 
+	 && ( rOp.GetType() == SbxSTRING && GetType() != SbxSTRING && IsNumeric() ) && !bVBAInterop
 	)
 		bRes = sal_Bool( eOp == SbxLT || eOp == SbxLE || eOp == SbxNE );
 	else if( !IsFixed() && !rOp.IsFixed()
-	 && ( GetType() == SbxSTRING && rOp.GetType() != SbxSTRING && rOp.IsNumeric() ) 
-&& !bVBAInterop 
+	 && ( GetType() == SbxSTRING && rOp.GetType() != SbxSTRING && rOp.IsNumeric() )
+&& !bVBAInterop
 	)
 		bRes = sal_Bool( eOp == SbxGT || eOp == SbxGE || eOp == SbxNE );
 	else
@@ -1820,7 +1820,7 @@ sal_Bool SbxValue::StoreData( SvStream& r ) const
 			break;
 		case SbxCHAR:
 		{
-			char c = sal::static_int_cast< char >(aData.nChar); 
+			char c = sal::static_int_cast< char >(aData.nChar);
 			r << c;
 			break;
 		}

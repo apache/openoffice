@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -99,7 +99,7 @@ public:
     }
     void clear() { m_pComponent = NULL; }
 };
-DBG_NAME(OComponentDefinition_Impl)    
+DBG_NAME(OComponentDefinition_Impl)
 OComponentDefinition_Impl::OComponentDefinition_Impl()
 {
     DBG_CTOR(OComponentDefinition_Impl,NULL);
@@ -107,7 +107,7 @@ OComponentDefinition_Impl::OComponentDefinition_Impl()
 // -----------------------------------------------------------------------------
 OComponentDefinition_Impl::~OComponentDefinition_Impl()
 {
-    DBG_DTOR(OComponentDefinition_Impl,NULL);    
+    DBG_DTOR(OComponentDefinition_Impl,NULL);
 }
 //==========================================================================
 //= OComponentDefinition
@@ -191,7 +191,7 @@ Sequence< ::rtl::OUString > OComponentDefinition::getSupportedServiceNames_stati
 	Sequence< ::rtl::OUString > aServices(2);
 	aServices.getArray()[0] = SERVICE_SDB_TABLEDEFINITION;
 	aServices.getArray()[1] = ::rtl::OUString(RTL_CONSTASCII_USTRINGPARAM("com.sun.star.ucb.Content"));
-	
+
 	return aServices;
 }
 
@@ -273,7 +273,7 @@ OColumn* OComponentDefinition::createColumn(const ::rtl::OUString& _rName) const
 	if ( aFind != rDefinition.end() )
     {
         aFind->second->addPropertyChangeListener(::rtl::OUString(),m_xColumnPropertyListener.getRef());
-		return new OTableColumnWrapper( aFind->second, aFind->second, true );        
+		return new OTableColumnWrapper( aFind->second, aFind->second, true );
     }
     OSL_ENSURE( false, "OComponentDefinition::createColumn: is this a valid case?" );
         // This here is the last place creating a OTableColumn, and somehow /me thinks it is not needed ...
@@ -291,7 +291,7 @@ void OComponentDefinition::setFastPropertyValue_NoBroadcast(sal_Int32 nHandle,co
 	notifyDataSourceModified();
 }
 // -----------------------------------------------------------------------------
-void OComponentDefinition::columnDropped(const ::rtl::OUString& _sName) 
+void OComponentDefinition::columnDropped(const ::rtl::OUString& _sName)
 {
     getDefinition().erase( _sName );
 	notifyDataSourceModified();

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -257,7 +257,7 @@ void XclExpSstImpl::SaveXml( XclExpXmlStream& rStrm )
     if( maStringList.empty() )
         return;
 
-    sax_fastparser::FSHelperPtr pSst = rStrm.CreateOutputStream( 
+    sax_fastparser::FSHelperPtr pSst = rStrm.CreateOutputStream(
             OUString::createFromAscii( "xl/sharedStrings.xml" ),
             OUString::createFromAscii( "sharedStrings.xml" ),
             rStrm.GetCurrentStream()->getOutputStream(),
@@ -266,7 +266,7 @@ void XclExpSstImpl::SaveXml( XclExpXmlStream& rStrm )
     rStrm.PushStream( pSst );
 
     pSst->startElement( XML_sst,
-            XML_xmlns, "http://schemas.openxmlformats.org/spreadsheetml/2006/main", 
+            XML_xmlns, "http://schemas.openxmlformats.org/spreadsheetml/2006/main",
             XML_count, OString::valueOf( (sal_Int32) mnTotal ).getStr(),
             XML_uniqueCount, OString::valueOf( (sal_Int32) mnSize ).getStr(),
             FSEND );
@@ -530,8 +530,8 @@ void XclExpHyperlink::SaveXml( XclExpXmlStream& rStrm )
     rStrm.GetCurrentStream()->singleElement( XML_hyperlink,
             XML_ref,                XclXmlUtils::ToOString( maScPos ).getStr(),
             FSNS( XML_r, XML_id ),  XclXmlUtils::ToOString( sId ).getStr(),
-            XML_location,           mxTextMark.get() != NULL 
-                                        ? XclXmlUtils::ToOString( *mxTextMark ).getStr() 
+            XML_location,           mxTextMark.get() != NULL
+                                        ? XclXmlUtils::ToOString( *mxTextMark ).getStr()
                                         : NULL,
             // OOXTODO: XML_tooltip,    from record HLinkTooltip 800h wzTooltip
             XML_display,            XclXmlUtils::ToOString( *mxRepr ).getStr(),
@@ -857,7 +857,7 @@ void XclExpCondfmt::SaveXml( XclExpXmlStream& rStrm )
 {
     if( !IsValid() )
         return;
-    
+
     sax_fastparser::FSHelperPtr& rWorksheet = rStrm.GetCurrentStream();
     rWorksheet->startElement( XML_conditionalFormatting,
             XML_sqref, XclXmlUtils::ToOString( msSeqRef ).getStr(),
@@ -1146,7 +1146,7 @@ void XclExpDV::SaveXml( XclExpXmlStream& rStrm )
     rWorksheet->startElement( XML_dataValidation,
             XML_allowBlank,         XclXmlUtils::ToPsz( ::get_flag( mnFlags, EXC_DV_IGNOREBLANK ) ),
             XML_error,              XESTRING_TO_PSZ( maErrorText ),
-            // OOXTODO: XML_errorStyle, 
+            // OOXTODO: XML_errorStyle,
             XML_errorTitle,         XESTRING_TO_PSZ( maErrorTitle ),
             // OOXTODO: XML_imeMode,
             XML_operator,           lcl_GetOperatorType( mnFlags ),
@@ -1220,7 +1220,7 @@ void XclExpDval::SaveXml( XclExpXmlStream& rStrm )
         return;
 
     sax_fastparser::FSHelperPtr& rWorksheet = rStrm.GetCurrentStream();
-    rWorksheet->startElement( XML_dataValidations, 
+    rWorksheet->startElement( XML_dataValidations,
             XML_count, OString::valueOf( (sal_Int32) maDVList.GetSize() ).getStr(),
             // OOXTODO: XML_disablePrompts,
             // OOXTODO: XML_xWindow,

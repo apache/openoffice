@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -99,8 +99,8 @@ public:
     virtual void SAL_CALL dragEnter( const DragSourceDragEvent& dsdee ) throw(RuntimeException);
     virtual void SAL_CALL dragExit( const DragSourceEvent& dse ) throw(RuntimeException);
     virtual void SAL_CALL dragOver( const DragSourceDragEvent& dsde ) throw(RuntimeException);
-    virtual void SAL_CALL dropActionChanged( const DragSourceDragEvent& dsde ) throw(RuntimeException);	
-	virtual void SAL_CALL disposing( const EventObject& eo ) throw(RuntimeException); 
+    virtual void SAL_CALL dropActionChanged( const DragSourceDragEvent& dsde ) throw(RuntimeException);
+	virtual void SAL_CALL disposing( const EventObject& eo ) throw(RuntimeException);
 };
 
 // -----------------------------------------------------------------------
@@ -130,17 +130,17 @@ class StringTransferable : public ::cppu::WeakImplHelper1< XTransferable >
 	const OUString         m_aData;
 	Sequence< DataFlavor > m_aFlavorList;
 
-public:	
+public:
 	StringTransferable( const OUString& rString ) : m_aData( rString ), m_aFlavorList( 1 )
 	{
 		DataFlavor df;
 
 		df.MimeType = OUString::createFromAscii( "text/plain;charset=utf-16" );
 		df.DataType = getCppuType( static_cast < OUString * > ( 0 ) );
-		
+
 	 	m_aFlavorList[0] = df;
 	};
-		
+
 	virtual Any SAL_CALL getTransferData( const DataFlavor& aFlavor ) throw(UnsupportedFlavorException, IOException, RuntimeException);
     virtual Sequence< DataFlavor > SAL_CALL getTransferDataFlavors(  ) throw(RuntimeException);
 	virtual sal_Bool SAL_CALL isDataFlavorSupported( const DataFlavor& aFlavor ) throw(RuntimeException);
@@ -159,7 +159,7 @@ void MyApp::Main()
 		OUString aArg;
 
 		aInfo.getCommandArg( n, aArg );
-		
+
 		if( aArg.compareTo( OUString::createFromAscii( "-r" ), 2 ) == 0 )
 		{
 			if ( n + 1 < nmax )
@@ -186,7 +186,7 @@ void MyApp::Main()
 	}
 	else
 		fprintf( stderr, "Usage: %s -r full-path-to-applicat.rdb\n", "dnddemo" );
-		
+
 
 	MyWin aMainWin( NULL, WB_APP | WB_STDWORK );
 	aMainWin.SetText( XubString( RTL_CONSTASCII_USTRINGPARAM( "Drag And Drop - Workbench" ) ) );
@@ -215,7 +215,7 @@ void MyApp::Main()
 	Reference< XComponent > xComponent( xServiceManager, UNO_QUERY );
 	if( xComponent.is() )
 		xComponent->dispose();
-	
+
 }
 
 // -----------------------------------------------------------------------
@@ -224,9 +224,9 @@ MyWin::MyWin( Window* pParent, WinBits nWinStyle ) :
 	WorkWindow( pParent, nWinStyle )
 {
 	Reference< XDropTargetListener > xListener = new MyDragAndDropListener( this );
-	
+
 	Reference< XDropTarget > xDropTarget = GetDropTarget();
-	if( xDropTarget.is() ) 
+	if( xDropTarget.is() )
 	{
 		xDropTarget->addDropTargetListener( xListener );
 		xDropTarget->setActive( sal_True );
@@ -381,13 +381,13 @@ void SAL_CALL MyDragAndDropListener::disposing( const EventObject& ) throw(Runti
 
 // -----------------------------------------------------------------------
 
-MyInfoBox::MyInfoBox( Window* pParent ) : InfoBox( pParent, 
+MyInfoBox::MyInfoBox( Window* pParent ) : InfoBox( pParent,
 	OUString::createFromAscii( "dragging over this box should result in another window id in the drag log." ) )
 {
 	Reference< XDropTargetListener > xListener = new MyDragAndDropListener( this );
-	
+
 	Reference< XDropTarget > xDropTarget = GetDropTarget();
-	if( xDropTarget.is() ) 
+	if( xDropTarget.is() )
 	{
 		xDropTarget->addDropTargetListener( xListener );
 		xDropTarget->setActive( sal_True );
@@ -403,9 +403,9 @@ MyInfoBox::MyInfoBox( Window* pParent ) : InfoBox( pParent,
 MyListBox::MyListBox( Window* pParent ) : ListBox( pParent )
 {
 	Reference< XDropTargetListener > xListener = new MyDragAndDropListener( this );
-	
+
 	Reference< XDropTarget > xDropTarget = GetDropTarget();
-	if( xDropTarget.is() ) 
+	if( xDropTarget.is() )
 	{
 		xDropTarget->addDropTargetListener( xListener );
 		xDropTarget->setActive( sal_True );
@@ -418,15 +418,15 @@ MyListBox::MyListBox( Window* pParent ) : ListBox( pParent )
 
 // -----------------------------------------------------------------------
 
-Any SAL_CALL StringTransferable::getTransferData( const DataFlavor& ) 
+Any SAL_CALL StringTransferable::getTransferData( const DataFlavor& )
 	throw(UnsupportedFlavorException, IOException, RuntimeException)
-{	
+{
 	return makeAny( m_aData );
 }
 
 // -----------------------------------------------------------------------
 
-Sequence< DataFlavor > SAL_CALL StringTransferable::getTransferDataFlavors(  ) 
+Sequence< DataFlavor > SAL_CALL StringTransferable::getTransferDataFlavors(  )
 	throw(RuntimeException)
 {
 	return m_aFlavorList;
@@ -434,7 +434,7 @@ Sequence< DataFlavor > SAL_CALL StringTransferable::getTransferDataFlavors(  )
 
 // -----------------------------------------------------------------------
 
-sal_Bool SAL_CALL StringTransferable::isDataFlavorSupported( const DataFlavor& ) 
+sal_Bool SAL_CALL StringTransferable::isDataFlavorSupported( const DataFlavor& )
 	throw(RuntimeException)
 {
 	return sal_True;

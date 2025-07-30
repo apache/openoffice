@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -1896,7 +1896,7 @@ void XclExpXFId::ConvertXFIndex( const XclExpRoot& rRoot )
 
 XclExpXF::XclExpXF(
         const XclExpRoot& rRoot, const ScPatternAttr& rPattern, sal_Int16 nScript,
-        sal_uLong nForceScNumFmt, sal_uInt16 nForceXclFont, bool bForceLineBreak ) 
+        sal_uLong nForceScNumFmt, sal_uInt16 nForceXclFont, bool bForceLineBreak )
 :   XclXFBase(true),
     XclExpRecord(),
     XclExpRoot(rRoot),
@@ -1917,7 +1917,7 @@ XclExpXF::XclExpXF(
     Init( rPattern.GetItemSet(), nScript, nForceScNumFmt, nForceXclFont, bForceLineBreak, false );
 }
 
-XclExpXF::XclExpXF( const XclExpRoot& rRoot, const SfxStyleSheetBase& rStyleSheet ) 
+XclExpXF::XclExpXF( const XclExpRoot& rRoot, const SfxStyleSheetBase& rStyleSheet )
 :   XclXFBase(false),
     XclExpRecord(),
     XclExpRoot(rRoot),
@@ -1940,7 +1940,7 @@ XclExpXF::XclExpXF( const XclExpRoot& rRoot, const SfxStyleSheetBase& rStyleShee
         NUMBERFORMAT_ENTRY_NOT_FOUND, EXC_FONT_NOTFOUND, false, bDefStyle );
 }
 
-XclExpXF::XclExpXF( const XclExpRoot& rRoot, bool bCellXF ) 
+XclExpXF::XclExpXF( const XclExpRoot& rRoot, bool bCellXF )
 :   XclXFBase(bCellXF),
     XclExpRecord(),
     XclExpRoot(rRoot),
@@ -2362,7 +2362,7 @@ bool XclExpFillPred::operator()( const XclExpCellArea& rFill ) const
 
 static bool XclExpXFBuffer_mbUseMultimapBuffer = true;
 
-XclExpXFBuffer::XclExpXFBuffer( const XclExpRoot& rRoot ) 
+XclExpXFBuffer::XclExpXFBuffer( const XclExpRoot& rRoot )
 :   XclExpRecordBase(),
     XclExpRoot(rRoot),
     maXFList(),
@@ -2690,7 +2690,7 @@ sal_uInt32 XclExpXFBuffer::FindXF(const ScPatternAttr& rPattern, sal_uLong nForc
         const Range range(maXclExpXFMap.equal_range(pPatternSet));
 
         // iterate over evtl. multiple candidates using the pattern set
-        for(CIT ite(range.first); ite != range.second; ++ite) 
+        for(CIT ite(range.first); ite != range.second; ++ite)
         {
             XclExpXF* pIte = ite->second;
 

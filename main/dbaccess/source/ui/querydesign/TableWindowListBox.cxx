@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -50,7 +50,7 @@
 #ifndef _SVX_DBEXCH_HRC
 #include <svx/dbexch.hrc>
 #endif
-#ifndef _SV_SVAPP_HXX 
+#ifndef _SV_SVAPP_HXX
 #include <vcl/svapp.hxx>
 #endif
 
@@ -59,9 +59,9 @@ using namespace ::com::sun::star::sdbc;
 using namespace ::com::sun::star::uno;
 using namespace ::com::sun::star::datatransfer;
 
-OJoinExchangeData::OJoinExchangeData(OTableWindowListBox* pBox) 
+OJoinExchangeData::OJoinExchangeData(OTableWindowListBox* pBox)
 	: pListBox(pBox)
-	, pEntry(pBox->FirstSelected()) 
+	, pEntry(pBox->FirstSelected())
 { }
 
 const sal_uLong SCROLLING_TIMESPAN = 500;
@@ -175,7 +175,7 @@ long OTableWindowListBox::PreNotify(NotifyEvent& rNEvt)
 		{
 			const KeyEvent* pKeyEvent =	rNEvt.GetKeyEvent();
 			const KeyCode& rCode = pKeyEvent->GetKeyCode();
-			
+
 			if (rCode.GetCode() != KEY_RETURN)
 			{
 				if(m_pTabWin)
@@ -262,7 +262,7 @@ sal_Int8 OTableWindowListBox::AcceptDrop( const AcceptDropEvent& _rEvt )
 		&& OJoinExchObj::isFormatAvailable(GetDataFlavorExVector(),SOT_FORMATSTR_ID_SBA_JOIN) )
 	{	// don't drop into the window if it's the drag source itself
 
-		
+
 		// remove the selection if the dragging operation is leaving the window
 		if (_rEvt.mbLeaving)
 			SelectAll(sal_False);
@@ -388,7 +388,7 @@ void OTableWindowListBox::GetFocus()
 		else
 			ShowFocusRect(FirstSelected());
 	}
-	SvTreeListBox::GetFocus();	
+	SvTreeListBox::GetFocus();
 }
 
 //------------------------------------------------------------------------------
