@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -711,14 +711,14 @@ sal_uInt16 EditEngine::GetLineLen( sal_uInt32 nParagraph, sal_uInt16 nLine ) con
         pImpEditEngine->FormatDoc();
 	return pImpEditEngine->GetLineLen( nParagraph, nLine );
 }
-    
+
 void EditEngine::GetLineBoundaries( /*out*/sal_uInt16 &rStart, /*out*/sal_uInt16 &rEnd, sal_uInt32 nParagraph, sal_uInt16 nLine ) const
 {
     DBG_CHKTHIS( EditEngine, 0 );
     if ( !pImpEditEngine->IsFormatted() )
         pImpEditEngine->FormatDoc();
     return pImpEditEngine->GetLineBoundaries( rStart, rEnd, nParagraph, nLine );
-}    
+}
 
 sal_uInt16 EditEngine::GetLineNumberAtIndex( sal_uInt32 nPara, sal_uInt16 nIndex ) const
 {
@@ -726,7 +726,7 @@ sal_uInt16 EditEngine::GetLineNumberAtIndex( sal_uInt32 nPara, sal_uInt16 nIndex
     if ( !pImpEditEngine->IsFormatted() )
         pImpEditEngine->FormatDoc();
     return pImpEditEngine->GetLineNumberAtIndex( nPara, nIndex );
-}    
+}
 
 sal_uInt32 EditEngine::GetLineHeight( sal_uInt32 nParagraph, sal_uInt16 nLine )
 {

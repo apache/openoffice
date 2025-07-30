@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -93,10 +93,10 @@ static void ImplCursorInvert( ImplCursorData* pData )
                     // left-to-right
                     pAry[0] = aPoly.GetPoint( 0 );
                     pAry[1] = aPoly.GetPoint( 1 );
-                    pAry[2] = pAry[1]; 
+                    pAry[2] = pAry[1];
                     pAry[2].X() += delta;
                     pAry[3] =  pAry[1];
-                    pAry[3].Y() += delta; 
+                    pAry[3].Y() += delta;
                     pAry[4] = aPoly.GetPoint( 2 );
                     pAry[5] = aPoly.GetPoint( 3 );
                     pAry[6] = aPoly.GetPoint( 4 );
@@ -108,8 +108,8 @@ static void ImplCursorInvert( ImplCursorData* pData )
                     pAry[1] = aPoly.GetPoint( 1 );
                     pAry[2] = aPoly.GetPoint( 2 );
                     pAry[3] = aPoly.GetPoint( 3 );
-                    pAry[4] = pAry[0]; 
-                    pAry[4].Y() += delta; 
+                    pAry[4] = pAry[0];
+                    pAry[4].Y() += delta;
                     pAry[5] =  pAry[0];
                     pAry[5].X() -= delta;
                     pAry[6] = aPoly.GetPoint( 4 );
@@ -230,7 +230,7 @@ bool Cursor::ImplHide( bool i_bStopTimer )
         mpData->maTimer.Stop();
         mpData->mpWindow = NULL;
     }
-    
+
 	return bWasCurVisible;
 }
 

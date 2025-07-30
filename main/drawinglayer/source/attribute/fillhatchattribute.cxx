@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
@@ -48,11 +48,11 @@ namespace drawinglayer
 			unsigned								mbFillBackground : 1;
 
 			ImpFillHatchAttribute(
-                HatchStyle eStyle, 
-                double fDistance, 
-                double fAngle, 
-                const basegfx::BColor& rColor, 
-                sal_uInt32 nMinimalDiscreteDistance, 
+                HatchStyle eStyle,
+                double fDistance,
+                double fAngle,
+                const basegfx::BColor& rColor,
+                sal_uInt32 nMinimalDiscreteDistance,
                 bool bFillBackground)
 			:	mnRefCount(0),
 			    meStyle(eStyle),
@@ -104,18 +104,18 @@ namespace drawinglayer
 		};
 
         FillHatchAttribute::FillHatchAttribute(
-            HatchStyle eStyle, 
-            double fDistance, 
-            double fAngle, 
-            const basegfx::BColor& rColor, 
-            sal_uInt32 nMinimalDiscreteDistance, 
+            HatchStyle eStyle,
+            double fDistance,
+            double fAngle,
+            const basegfx::BColor& rColor,
+            sal_uInt32 nMinimalDiscreteDistance,
             bool bFillBackground)
 		:	mpFillHatchAttribute(
                 new ImpFillHatchAttribute(
-                    eStyle, 
-                    fDistance, 
-                    fAngle, 
-                    rColor, 
+                    eStyle,
+                    fDistance,
+                    fAngle,
+                    rColor,
                     nMinimalDiscreteDistance,
                     bFillBackground))
 		{
@@ -162,7 +162,7 @@ namespace drawinglayer
 				{
 					delete mpFillHatchAttribute;
 				}
-				
+
 				mpFillHatchAttribute = rCandidate.mpFillHatchAttribute;
 				mpFillHatchAttribute->mnRefCount++;
 			}
@@ -186,24 +186,24 @@ namespace drawinglayer
 		}
 
 		// data read access
-		HatchStyle FillHatchAttribute::getStyle() const 
-        { 
-            return mpFillHatchAttribute->getStyle(); 
+		HatchStyle FillHatchAttribute::getStyle() const
+        {
+            return mpFillHatchAttribute->getStyle();
         }
 
-		double FillHatchAttribute::getDistance() const 
-        { 
-            return mpFillHatchAttribute->getDistance(); 
+		double FillHatchAttribute::getDistance() const
+        {
+            return mpFillHatchAttribute->getDistance();
         }
 
-		double FillHatchAttribute::getAngle() const 
-        { 
-            return mpFillHatchAttribute->getAngle(); 
+		double FillHatchAttribute::getAngle() const
+        {
+            return mpFillHatchAttribute->getAngle();
         }
 
-		const basegfx::BColor& FillHatchAttribute::getColor() const 
-        { 
-            return mpFillHatchAttribute->getColor(); 
+		const basegfx::BColor& FillHatchAttribute::getColor() const
+        {
+            return mpFillHatchAttribute->getColor();
         }
 
         sal_uInt32 FillHatchAttribute::getMinimalDiscreteDistance() const
@@ -211,11 +211,11 @@ namespace drawinglayer
             return mpFillHatchAttribute->getMinimalDiscreteDistance();
         }
 
-		bool FillHatchAttribute::isFillBackground() const 
-        { 
-            return mpFillHatchAttribute->isFillBackground(); 
+		bool FillHatchAttribute::isFillBackground() const
+        {
+            return mpFillHatchAttribute->isFillBackground();
         }
-    
+
     } // end of namespace attribute
 } // end of namespace drawinglayer
 

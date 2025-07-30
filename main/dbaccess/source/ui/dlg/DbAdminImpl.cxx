@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -52,7 +52,7 @@
 #include <com/sun/star/sdbc/XDriver.hpp>
 #include <com/sun/star/sdbc/XDriverAccess.hpp>
 #include <com/sun/star/task/XInteractionHandler.hpp>
-#include <com/sun/star/task/XInteractionRequest.hpp> 
+#include <com/sun/star/task/XInteractionRequest.hpp>
 #include <com/sun/star/ucb/XInteractionSupplyAuthentication2.hpp>
 #include <com/sun/star/ucb/AuthenticationRequest.hpp>
 /** === end UNO includes === **/
@@ -136,7 +136,7 @@ namespace
 	String lcl_createHostWithPort(const SfxStringItem* _pHostName,const SfxInt32Item* _pPortNumber)
 	{
 		String sNewUrl;
-				
+
 		if ( _pHostName && _pHostName->GetValue().Len() )
 			sNewUrl = _pHostName->GetValue();
 
@@ -277,7 +277,7 @@ sal_Bool ODbDataSourceAdministrationHelper::getCurrentSettings(Sequence< Propert
                 if ( !xHandler.is() )
 				    ShowServiceNotAvailableError(m_pParent->GetParent(), String(SERVICE_TASK_INTERACTION_HANDLER), sal_True);
             }
-            
+
             String sName = pName ? pName->GetValue() : String();
             String sLoginRequest(ModuleRes(STR_ENTER_CONNECTION_PASSWORD));
             ::rtl::OUString sTemp = sName;
@@ -330,7 +330,7 @@ sal_Bool ODbDataSourceAdministrationHelper::getCurrentSettings(Sequence< Propert
             }
             if (!pAuthenticate->wasSelected())
                 return sal_False;
-            
+
             sPassword = pAuthenticate->getPassword();
             if (pAuthenticate->getRememberPassword())
                 m_pItemSetHelper->getWriteOutputSet()->Put(SfxStringItem(DSID_PASSWORD, sPassword));
@@ -473,7 +473,7 @@ Reference< XPropertySet > ODbDataSourceAdministrationHelper::getCurrentDataSourc
 		}
 	}
 
-	
+
 	DBG_ASSERT(m_xDatasource.is(), "ODbDataSourceAdministrationHelper::getCurrentDataSource: no data source!");
 	return m_xDatasource;
 }
@@ -712,7 +712,7 @@ void ODbDataSourceAdministrationHelper::translateProperties(const SfxItemSet& _r
 	Reference< XPropertySetInfo > xInfo;
 	try { xInfo = _rxDest->getPropertySetInfo(); }
 	catch(Exception&) { }
-	
+
 	const ::rtl::OUString sUrlProp(RTL_CONSTASCII_USTRINGPARAM("URL"));
 	// -----------------------------
 	// transfer the direct properties
@@ -1172,8 +1172,8 @@ sal_Bool ODbDataSourceAdministrationHelper::saveChanges(const SfxItemSet& _rSour
 	return sal_True;
 }
 // -----------------------------------------------------------------------------
-void ODbDataSourceAdministrationHelper::setDataSourceOrName( const Any& _rDataSourceOrName ) 
-{ 
+void ODbDataSourceAdministrationHelper::setDataSourceOrName( const Any& _rDataSourceOrName )
+{
     DBG_ASSERT( !m_aDataSourceOrName.hasValue(), "ODbDataSourceAdministrationHelper::setDataSourceOrName: already have one!" );
         // hmm. We could reset m_xDatasource/m_xModel, probably, and continue working
 	m_aDataSourceOrName = _rDataSourceOrName;

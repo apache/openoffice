@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -468,19 +468,19 @@ public:
 	int m_iWhitespaceCount;
 	int m_iCharCount;
 	sal_Bool m_bPrint;
-	
+
 	Reference < XMultiServiceFactory > m_xSMgr;
 	Reference < XLocator > m_rLocator;
 };
-	
-	
+
+
 void OSaxParserTest::testSimple( 	const Reference < XParser > &rParser )
 {
 
 	char TestString[] = "<!DOCTYPE personnel [\n"
 						"<!ENTITY testInternal \"internal Test!\">\n"
 						"<!ENTITY test SYSTEM \"external_entity.xml\">\n"
-						"]>\n"						
+						"]>\n"
 						"<personnel>\n"
 						"<person> fjklsfdklsdfkl\n"
 						"fjklsfdklsdfkl\n"
@@ -496,27 +496,27 @@ void OSaxParserTest::testSimple( 	const Reference < XParser > &rParser )
 						"</HUHU>\n"
 						"</person>\n"
 						"</personnel>\n\n\n";
-	
+
 	Sequence< sal_Int8> seqBytes( strlen( TestString ) );
 	memcpy( seqBytes.getArray() , TestString , strlen( TestString ) );
 
-	
+
 	Reference< XInputStream > rInStream;
 	OUString sInput;
 	rInStream = createStreamFromSequence( seqBytes , m_rFactory );
 	sInput = OUString( OUString( RTL_CONSTASCII_USTRINGPARAM("internal")) );
-	
+
 	if( rParser.is() ) {
 		InputSource source;
 
 		source.aInputStream = rInStream;
 		source.sSystemId 	= sInput;
-		
+
 		TestDocumentHandler *pDocHandler = new TestDocumentHandler( m_rFactory , sal_False );
 		Reference < XDocumentHandler > rDocHandler( (XDocumentHandler *) pDocHandler , UNO_QUERY );
 		Reference< XEntityResolver >
 			rEntityResolver( (XEntityResolver *) pDocHandler , UNO_QUERY );
-	
+
 		rParser->setDocumentHandler( rDocHandler );
 		rParser->setEntityResolver( rEntityResolver );
 
@@ -535,8 +535,8 @@ void OSaxParserTest::testSimple( 	const Reference < XParser > &rParser )
 		}
 		catch( SAXException & e )
 		{
-			OString o1 = OUStringToOString(e.Message, RTL_TEXTENCODING_UTF8 );			
-			BUILD_ERROR( 1 , o1.getStr() );				
+			OString o1 = OUStringToOString(e.Message, RTL_TEXTENCODING_UTF8 );
+			BUILD_ERROR( 1 , o1.getStr() );
 		}
 		catch( Exception & e )
 		{
@@ -553,7 +553,7 @@ void OSaxParserTest::testSimple( 	const Reference < XParser > &rParser )
 void OSaxParserTest::testNamespaces( const Reference < XParser > &rParser )
 {
 
-	char TestString[] = 
+	char TestString[] =
 	"<?xml version='1.0'?>\n"
   	"<!-- all elements here are explicitly in the HTML namespace -->\n"
   	"<html:html xmlns:html='http://www.w3.org/TR/REC-html40'>\n"
@@ -565,24 +565,24 @@ void OSaxParserTest::testNamespaces( const Reference < XParser > &rParser )
 	Sequence<sal_Int8> seqBytes( strlen( TestString ) );
 	memcpy( seqBytes.getArray() , TestString , strlen( TestString ) );
 
-	
+
 	Reference< XInputStream >  rInStream;
 	OUString sInput;
 
 	rInStream = createStreamFromSequence( seqBytes , m_rFactory );
 	sInput = OUString( RTL_CONSTASCII_USTRINGPARAM( "internal" ));
-	
+
 	if( rParser.is() ) {
 		InputSource source;
 
 		source.aInputStream = rInStream;
 		source.sSystemId 	= sInput;
-		
+
 		TestDocumentHandler *pDocHandler = new TestDocumentHandler( m_rFactory , sal_False );
 		Reference < XDocumentHandler > rDocHandler( (XDocumentHandler *) pDocHandler , UNO_QUERY );
 		Reference< XEntityResolver >	rEntityResolver(
 			(XEntityResolver *) pDocHandler , UNO_QUERY );
-	
+
 		rParser->setDocumentHandler( rDocHandler );
 		rParser->setEntityResolver( rEntityResolver );
 
@@ -595,19 +595,19 @@ void OSaxParserTest::testNamespaces( const Reference < XParser > &rParser )
 			ERROR_ASSERT( pDocHandler->m_iWhitespaceCount 	== 0 , "wrong whitespace count" );
 		}
 		catch( Exception & e ) {
-			OString o1 = OUStringToOString(e.Message, RTL_TEXTENCODING_UTF8 );			
-			BUILD_ERROR( 1 , o1.getStr() );				
+			OString o1 = OUStringToOString(e.Message, RTL_TEXTENCODING_UTF8 );
+			BUILD_ERROR( 1 , o1.getStr() );
 		}
 		catch( ... )
 		{
 			BUILD_ERROR( 1 , "unknown exception" );
 		}
-	}  	
+	}
 }
 
 void OSaxParserTest::testEncoding( const Reference < XParser > &rParser )
 {
-	char TestString[] = 
+	char TestString[] =
 	"<?xml version='1.0' encoding=\"iso-8859-1\"?>\n"
   	"<!-- all elements here are explicitly in the HTML namespace -->\n"
   	"<html:html xmlns:html='http://www.w3.org/TR/REC-html40'>\n"
@@ -619,23 +619,23 @@ void OSaxParserTest::testEncoding( const Reference < XParser > &rParser )
 	Sequence<sal_Int8> seqBytes( strlen( TestString ) );
 	memcpy( seqBytes.getArray() , TestString , strlen( TestString ) );
 
-	
+
 	Reference< XInputStream > rInStream;
 	OUString sInput;
 
 	rInStream = createStreamFromSequence( seqBytes , m_rFactory );
 	sInput = OUString( RTL_CONSTASCII_USTRINGPARAM("internal") );
-	
+
 	if( rParser.is() ) {
 		InputSource source;
 
 		source.aInputStream = rInStream;
 		source.sSystemId 	= sInput;
-		
+
 		TestDocumentHandler *pDocHandler = new TestDocumentHandler( m_rFactory , sal_False );
 		Reference < XDocumentHandler > rDocHandler( (XDocumentHandler *) pDocHandler , UNO_QUERY );
 		Reference< XEntityResolver >  rEntityResolver( (XEntityResolver *) pDocHandler , UNO_QUERY );
-	
+
 		rParser->setDocumentHandler( rDocHandler );
 		rParser->setEntityResolver( rEntityResolver );
 		try
@@ -644,8 +644,8 @@ void OSaxParserTest::testEncoding( const Reference < XParser > &rParser )
 		}
 		catch( Exception & e )
 		{
-			OString o1 = OUStringToOString(e.Message, RTL_TEXTENCODING_UTF8 );			
-			BUILD_ERROR( 1 , o1.getStr() );				
+			OString o1 = OUStringToOString(e.Message, RTL_TEXTENCODING_UTF8 );
+			BUILD_ERROR( 1 , o1.getStr() );
 		}
 		catch ( ... )
 		{
@@ -654,24 +654,24 @@ void OSaxParserTest::testEncoding( const Reference < XParser > &rParser )
 	}
 }
 
-void OSaxParserTest::testFile( const Reference < XParser > & rParser ) 
+void OSaxParserTest::testFile( const Reference < XParser > & rParser )
 {
-		
+
 	Reference< XInputStream > rInStream = createStreamFromFile( "testsax.xml" , m_rFactory );
 	OUString sInput = OUString( RTL_CONSTASCII_USTRINGPARAM( "testsax.xml" ) );
 
-	
+
 	if( rParser.is() && rInStream.is() ) {
 		InputSource source;
 
 		source.aInputStream = rInStream;
 		source.sSystemId 	= sInput;
-		
+
 		TestDocumentHandler *pDocHandler = new TestDocumentHandler( m_rFactory , sal_True );
 		Reference < XDocumentHandler > rDocHandler( (XDocumentHandler *) pDocHandler , UNO_QUERY );
 		Reference < XEntityResolver >	rEntityResolver( (XEntityResolver *) pDocHandler , UNO_QUERY );
 		Reference < XErrorHandler >	rErrorHandler( ( XErrorHandler * )pDocHandler , UNO_QUERY );
-		
+
 		rParser->setDocumentHandler( rDocHandler );
 		rParser->setEntityResolver( rEntityResolver );
 		rParser->setErrorHandler( rErrorHandler );
@@ -688,34 +688,34 @@ void OSaxParserTest::testFile( const Reference < XParser > & rParser )
 				SAXParseException *pEx;
 				if( any.getValueType() == getCppuType( &e ) ) {
 					pEx = ( SAXParseException * ) any.getValue();
-					OString o1 = OUStringToOString(pEx->Message, RTL_TEXTENCODING_UTF8 );			
-					printf( "%s\n" , o1.getStr()  );	
+					OString o1 = OUStringToOString(pEx->Message, RTL_TEXTENCODING_UTF8 );
+					printf( "%s\n" , o1.getStr()  );
 					any = pEx->WrappedException;
 				}
 				else {
-					break;	
+					break;
 				}
 			}
 		}
 		catch( SAXException & e )
 		{
-			OString o1 = OUStringToOString(e.Message, RTL_TEXTENCODING_UTF8 );			
+			OString o1 = OUStringToOString(e.Message, RTL_TEXTENCODING_UTF8 );
 			BUILD_ERROR( 1 , o1.getStr() );
-				
+
 		}
 		catch( Exception & e ) {
 			printf( "normal exception ! %s\n", e.Message );
 		}
 		catch ( ... )
 		{
-			printf( "any exception !!!!\n" );	
+			printf( "any exception !!!!\n" );
 		}
-	}	
+	}
 }
 
-void OSaxParserTest::testPerformance( const Reference < XParser > & rParser ) 
+void OSaxParserTest::testPerformance( const Reference < XParser > & rParser )
 {
-		
+
 	Reference < XInputStream > rInStream =
 		createStreamFromFile( "testPerformance.xml" , m_rFactory );
 	OUString sInput = OUString( RTL_CONSTASCII_USTRINGPARAM( "testperformance.xml") );
@@ -725,12 +725,12 @@ void OSaxParserTest::testPerformance( const Reference < XParser > & rParser )
 
 		source.aInputStream = rInStream;
 		source.sSystemId 	= sInput;
-		
+
 		TestDocumentHandler *pDocHandler = new TestDocumentHandler( m_rFactory , sal_False );
 		Reference < XDocumentHandler > rDocHandler( (XDocumentHandler *) pDocHandler , UNO_QUERY );
 		Reference < XEntityResolver > rEntityResolver( (XEntityResolver *) pDocHandler , UNO_QUERY );
 		Reference < XErrorHandler >	rErrorHandler( ( XErrorHandler * )pDocHandler , UNO_QUERY );
-		
+
 		rParser->setDocumentHandler( rDocHandler );
 		rParser->setEntityResolver( rEntityResolver );
 		rParser->setErrorHandler( rErrorHandler );
@@ -741,12 +741,12 @@ void OSaxParserTest::testPerformance( const Reference < XParser > & rParser )
 			osl_getSystemTime( &aStartTime );
 			rParser->parseStream( source );
 			osl_getSystemTime( &aEndTime );
-			
+
 			double fStart = (double)aStartTime.Seconds + ((double)aStartTime.Nanosec / 1000000000.0);
 			double fEnd = (double)aEndTime.Seconds + ((double)aEndTime.Nanosec / 1000000000.0);
-			
+
 			printf( "Performance reading : %g s\n" , fEnd - fStart );
-			
+
 		}
 		catch( SAXParseException &e ) {
 			Any any;
@@ -756,24 +756,24 @@ void OSaxParserTest::testPerformance( const Reference < XParser > & rParser )
 					SAXParseException ex;
 					any >>= ex;
 					OString o = OUStringToOString( ex.Message , RTL_TEXTENCODING_ASCII_US );
-					printf( "%s\n" , o.getStr()  );	
+					printf( "%s\n" , o.getStr()  );
 					any <<= ex.WrappedException;
 				}
 				else {
-					break;	
+					break;
 				}
 			}
 		}
 		catch( SAXException &e  ) {
 			OString o = OUStringToOString( e.Message , RTL_TEXTENCODING_ASCII_US );
-			printf( "%s\n" , o.getStr()  );	
-				
+			printf( "%s\n" , o.getStr()  );
+
 		}
 		catch( ... )
 		{
-			printf( "any exception !!!!\n" );	
+			printf( "any exception !!!!\n" );
 		}
-	}	
+	}
 }
 }
 using namespace sax_test;
@@ -821,7 +821,7 @@ sal_Bool SAL_CALL component_writeInfo(
 			OSL_ENSURE( sal_False, "### InvalidRegistryException!" );
 		}
 	}
-	
+
 	return sal_False;
 }
 
@@ -829,13 +829,13 @@ void * SAL_CALL component_getFactory(
 	const sal_Char * pImplName, void * pServiceManager, void * pRegistryKey )
 {
 	void * pRet = 0;
-	
+
 	if (pServiceManager )
 	{
 		Reference< XSingleServiceFactory > xRet;
 		Reference< XMultiServiceFactory > xSMgr =
 			reinterpret_cast< XMultiServiceFactory * > ( pServiceManager );
-		
+
 		OUString aImplementationName = OUString::createFromAscii( pImplName );
 
 
@@ -857,7 +857,7 @@ void * SAL_CALL component_getFactory(
 			pRet = xRet.get();
 		}
 	}
-	
+
 	return pRet;
 }
 

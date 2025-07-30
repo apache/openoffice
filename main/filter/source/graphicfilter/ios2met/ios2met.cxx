@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
@@ -1527,7 +1527,7 @@ void OS2METReader::ReadOrder(sal_uInt16 nOrderID, sal_uInt16 nOrderLen)
 
 			*pOS2MET >> nDummy
 					 >> nID;
-		
+
 			if ( ! ( nDummy & 0x20 ) )	// #30933# i do not know the exact meaning of this bit,
 			{							// but if set it seems to be better not to fill this path
 				while( p && p->nID != nID )
@@ -2268,7 +2268,7 @@ void OS2METReader::ReadFont(sal_uInt16 nFieldSize)
 						pOS2MET->SeekRel(1);
 						pOS2MET->Read( &str, 32 );
 						str[ 32 ] = 0;
-						String aStr( (const sal_Char*)str, gsl_getSystemTextEncoding() ); 
+						String aStr( (const sal_Char*)str, gsl_getSystemTextEncoding() );
 						if ( aStr.CompareIgnoreCaseToAscii( "Helv" ) == COMPARE_EQUAL )
 							aStr = String::CreateFromAscii( "Helvetica" );
 						pF->aFont.SetName( aStr );

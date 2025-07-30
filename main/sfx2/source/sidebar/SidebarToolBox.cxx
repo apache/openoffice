@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 #include "precompiled_sfx2.hxx"
@@ -154,7 +154,7 @@ void SidebarToolBox::SetBorderWindow (const Window* pBorderWindow)
 void SidebarToolBox::Paint (const Rectangle& rRect)
 {
     ToolBox::Paint(rRect);
-    
+
     if (Theme::GetBoolean(Theme::Bool_UseToolBoxItemSeparator))
     {
         const sal_Int32 nSeparatorY ((GetSizePixel().Height() - maItemSeparator.GetSizePixel().Height())/2);
@@ -168,7 +168,7 @@ void SidebarToolBox::Paint (const Rectangle& rRect)
                 const int nSeparatorX ((nLastRight + aItemBoundingBox.Left() - 1) / 2);
                 DrawImage(Point(nSeparatorX,nSeparatorY), maItemSeparator);
             }
-        
+
             nLastRight = aItemBoundingBox.Right();
         }
     }
@@ -317,7 +317,7 @@ void SidebarToolBox::UpdateIcons (const Reference<frame::XFrame>& rxFrame)
 {
     const sal_Bool bBigImages (SvtMiscOptions().AreCurrentSymbolsLarge());
     const bool bIsHighContrastActive (sfx2::sidebar::Theme::IsHighContrastMode());
-    
+
     for (ControllerContainer::iterator iController(maControllers.begin()), iEnd(maControllers.end());
          iController!=iEnd;
          ++iController)
@@ -391,7 +391,7 @@ IMPL_LINK(SidebarToolBox, ClickHandler, ToolBox*, pToolBox)
 {
     if (pToolBox == NULL)
         return 0;
-    
+
     Reference<frame::XToolbarController> xController (GetControllerForItemId(pToolBox->GetCurItemId()));
     if (xController.is())
         xController->click();
@@ -406,7 +406,7 @@ IMPL_LINK(SidebarToolBox, DoubleClickHandler, ToolBox*, pToolBox)
 {
     if (pToolBox == NULL)
         return 0;
-    
+
     Reference<frame::XToolbarController> xController (GetControllerForItemId(pToolBox->GetCurItemId()));
     if (xController.is())
         xController->doubleClick();

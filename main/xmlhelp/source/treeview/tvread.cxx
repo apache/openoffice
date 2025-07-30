@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -46,14 +46,14 @@
 
 namespace treeview {
 
-	
+
 	class TVDom
 	{
 		friend class TVChildTarget;
 		friend class TVRead;
-	
+
 	public:
-		
+
 		TVDom( TVDom* arent = 0 )
 			: kind( other ),
               parent( arent ),
@@ -66,15 +66,15 @@ namespace treeview {
 			for( unsigned i = 0; i < childs.size(); ++i )
 				delete childs[i];
 		}
-	
-	
+
+
 		TVDom* newChild()
 		{
 			childs.push_back( new TVDom( this ) );
 			return childs.back();
 		}
-	
-	
+
+
 		TVDom* getParent() const
 		{
 			if( parent )
@@ -89,39 +89,39 @@ namespace treeview {
 			tree_leaf,
 			other
 		};
-	
+
 		bool isLeaf() const { return kind == TVDom::tree_leaf; }
 		void setKind( Kind ind ) { kind = ind; }
 		Kind getKind( ) const { return kind; }
-	
-	
+
+
 		void setApplication( const char* appl )
 		{
 			application = rtl::OUString( (sal_Char*)(appl),
 										 strlen( appl ),
 										 RTL_TEXTENCODING_UTF8 );
 		}
-	
+
 		void setTitle( const char* itle )
 		{
 			title += rtl::OUString( (sal_Char*)(itle),
                                     strlen( itle ),
                                     RTL_TEXTENCODING_UTF8 );
 		}
-        
+
 		void setTitle( const XML_Char* itle,int len )
 		{
 			title += rtl::OUString( (sal_Char*)(itle),
                                     len,
                                     RTL_TEXTENCODING_UTF8 );
 		}
-	
+
 		void setId( const char* d )
 		{
 			id = rtl::OUString( (sal_Char*)(d),
 								strlen( d ),
 								RTL_TEXTENCODING_UTF8 );
-		}	
+		}
 
 		void setAnchor( const char* nchor )
 		{
@@ -141,27 +141,27 @@ namespace treeview {
                     if ( len != 0 )
                         break;
                 }
-				
+
 				rtl::OUStringBuffer strBuff( 22 + len + id.getLength() );
 				strBuff.appendAscii(
 									"vnd.sun.star.help://"
 									).append(id);
-				
+
 				targetURL = strBuff.makeStringAndClear();
 			}
-			
+
 			return targetURL;
 		}
-	
+
 	private:
-	
+
 		Kind   kind;
 		rtl::OUString  application;
 		rtl::OUString  title;
 		rtl::OUString  id;
 		rtl::OUString  anchor;
 		rtl::OUString  targetURL;
-		
+
 		TVDom *parent;
 		std::vector< TVDom* > childs;
 	};
@@ -195,7 +195,7 @@ void SAL_CALL ConfigData::replaceName( rtl::OUString& oustring ) const
 	sal_Int32 idx = -1,k = 0,off;
 	bool cap = false;
 	rtl::OUStringBuffer aStrBuf( 0 );
-	
+
 	while( ( idx = oustring.indexOf( sal_Unicode('%'),++idx ) ) != -1 )
 	{
 		if( oustring.indexOf( prodName,idx ) == idx )
@@ -210,7 +210,7 @@ void SAL_CALL ConfigData::replaceName( rtl::OUString& oustring ) const
 			off = VENDORSHORT;
 		else
 			off = -1;
-		
+
 		if( off != -1 )
 		{
 			if( ! cap )
@@ -218,13 +218,13 @@ void SAL_CALL ConfigData::replaceName( rtl::OUString& oustring ) const
 				cap = true;
 				aStrBuf.ensureCapacity( 256 );
 			}
-			
+
 			aStrBuf.append( &oustring.getStr()[k],idx - k );
 			aStrBuf.append( m_vReplacement[off] );
 			k = idx + m_vAdd[off];
 		}
 	}
-	
+
 	if( cap )
 	{
 		if( k < oustring.getLength() )
@@ -270,7 +270,7 @@ TVBase::queryInterface(
 									 SAL_STATIC_CAST( XHierarchicalNameAccess*, this ),
 									 SAL_STATIC_CAST( XChangesNotifier*, this ),
 									 SAL_STATIC_CAST( XComponent*, this ) );
-	
+
 	return aRet.hasValue() ? aRet : OWeakObject::queryInterface( rType );
 }
 
@@ -298,7 +298,7 @@ TVRead::TVRead( const ConfigData& configData,TVDom* tvDom )
 {
 	if( ! tvDom )
 		return;
-	
+
 	Title = tvDom->title;
 	configData.replaceName( Title );
 	if( tvDom->isLeaf() )
@@ -338,13 +338,13 @@ TVRead::getByName( const rtl::OUString& aName )
 	else if( aName.compareToAscii( "TargetURL" ) == 0 )
 		aAny <<= TargetURL;
 	else if( aName.compareToAscii( "Children" ) == 0 )
-	{			   
+	{
 		cppu::OWeakObject* p = Children.get();
 		aAny <<= Reference< XInterface >( p );
 	}
 	else
 		found = false;
-	
+
 	if( found )
 		return aAny;
 
@@ -359,7 +359,7 @@ TVRead::getElementNames( )
 	throw( RuntimeException )
 {
 	Sequence< rtl::OUString > seq( 3 );
-	
+
 	seq[0] = rtl::OUString::createFromAscii( "Title" );
 	seq[1] = rtl::OUString::createFromAscii( "TargetURL" );
 	seq[2] = rtl::OUString::createFromAscii( "Children" );
@@ -377,7 +377,7 @@ TVRead::hasByName( const rtl::OUString& aName )
 		aName.compareToAscii( "TargetURL" ) == 0    ||
 		aName.compareToAscii( "Children" ) == 0 )
 		return true;
-	
+
 	return false;
 }
 
@@ -391,11 +391,11 @@ TVRead::getByHierarchicalName( const rtl::OUString& aName )
 {
 	sal_Int32 idx;
 	rtl::OUString name( aName );
-	
+
 	if( ( idx = name.indexOf( sal_Unicode( '/' ) ) ) != -1  &&
 		name.copy( 0,idx ).compareToAscii( "Children" ) == 0 )
 		return Children->getByHierarchicalName( name.copy( 1 + idx ) );
-	
+
 	return getByName( name );
 }
 
@@ -408,11 +408,11 @@ TVRead::hasByHierarchicalName( const rtl::OUString& aName )
 {
 	sal_Int32 idx;
 	rtl::OUString name( aName );
-	
+
    	if( ( idx = name.indexOf( sal_Unicode( '/' ) ) ) != -1  &&
 		name.copy( 0,idx ).compareToAscii( "Children" ) == 0 )
 		return Children->hasByHierarchicalName( name.copy( 1 + idx ) );
-	
+
 	return hasByName( name );
 }
 
@@ -430,9 +430,9 @@ TVRead::hasByHierarchicalName( const rtl::OUString& aName )
 extern "C" void start_handler(void *userData,
 				   const XML_Char *name,
 				   const XML_Char **atts)
-{	
+{
 	TVDom::Kind kind;
-	
+
 	if( strcmp( name,"help_section" ) == 0  ||
 		strcmp( name,"node" ) == 0 )
 		kind = TVDom::tree_node;
@@ -440,14 +440,14 @@ extern "C" void start_handler(void *userData,
 		kind = TVDom::tree_leaf;
 	else
 		return;
-	
+
 	TVDom **tvDom = static_cast< TVDom** >( userData );
 	TVDom  *p;
 	p = *tvDom;
 
 	*tvDom = p->newChild();
 	p = *tvDom;
-	
+
 	p->setKind( kind );
 	while( *atts )
 	{
@@ -459,7 +459,7 @@ extern "C" void start_handler(void *userData,
 			p->setId( *(atts+1) );
 		else if( strcmp( *atts,"anchor" ) == 0 )
 			p->setAnchor( *(atts+1) );
-		
+
 		atts+=2;
 	}
 }
@@ -492,22 +492,22 @@ TVChildTarget::TVChildTarget( const ConfigData& configData,TVDom* tvDom )
 	for( unsigned i = 0; i < Elements.size(); ++i )
 		Elements[i] = new TVRead( configData,tvDom->childs[i] );
 }
-	
-							  
+
+
 
 
 
 TVChildTarget::TVChildTarget( const Reference< XMultiServiceFactory >& xMSF )
-{	
+{
 	ConfigData configData = init( xMSF );
 
 	if( ! configData.locale.getLength()  ||
 		! configData.system.getLength() )
 		return;
-	
+
 	sal_uInt64 	ret,len = 0;
 	int j = configData.vFileURL.size();
-	
+
 	TVDom tvDom;
 	TVDom* pTVDom = &tvDom;
 
@@ -519,7 +519,7 @@ TVChildTarget::TVChildTarget( const Reference< XMultiServiceFactory >& xMSF )
 		aFile.open( OpenFlag_Read );
 		aFile.read( s,len,ret );
 		aFile.close();
-		
+
 		XML_Parser parser = XML_ParserCreate( 0 );
 		XML_SetElementHandler( parser,
 							   start_handler,
@@ -527,15 +527,15 @@ TVChildTarget::TVChildTarget( const Reference< XMultiServiceFactory >& xMSF )
 		XML_SetCharacterDataHandler( parser,
 									 data_handler);
 		XML_SetUserData( parser,&pTVDom ); // does not return this
-		
+
 		int parsed = XML_Parse( parser,s,int( len ),j==0 );
         (void)parsed;
 		OSL_ENSURE( parsed, "TVChildTarget::TVChildTarget(): Tree file parsing failed" );
-		
-		XML_ParserFree( parser );		
+
+		XML_ParserFree( parser );
 		delete[] s;
-	}	
-	
+	}
+
 	// now TVDom holds the relevant information
 
 	Elements.resize( tvDom.childs.size() );
@@ -556,11 +556,11 @@ TVChildTarget::getByName( const rtl::OUString& aName )
 		   WrappedTargetException,
 		   RuntimeException )
 {
-	rtl::OUString num( aName.getStr()+2,aName.getLength()-4 ); 
+	rtl::OUString num( aName.getStr()+2,aName.getLength()-4 );
 	sal_Int32 idx = num.toInt32() - 1;
 	if( idx < 0 || Elements.size() <= sal_uInt32( idx ) )
 		throw NoSuchElementException();
-	
+
 	Any aAny;
 	cppu::OWeakObject* p = Elements[idx].get();
 	aAny <<= Reference< XInterface >( p );
@@ -577,7 +577,7 @@ TVChildTarget::getElementNames( )
 	Sequence< rtl::OUString > seq( Elements.size() );
 	for( unsigned i = 0; i < Elements.size(); ++i )
 		seq[i] = rtl::OUString::valueOf( sal_Int32( 1+i ) );
-	
+
 	return seq;
 }
 
@@ -587,11 +587,11 @@ sal_Bool SAL_CALL
 TVChildTarget::hasByName( const rtl::OUString& aName )
 	throw( RuntimeException )
 {
-	rtl::OUString num( aName.getStr()+2,aName.getLength()-4 ); 
+	rtl::OUString num( aName.getStr()+2,aName.getLength()-4 );
 	sal_Int32 idx = num.toInt32() - 1;
 	if( idx < 0 || Elements.size() <= sal_uInt32( idx ) )
 		return false;
-	
+
 	return true;
 }
 
@@ -606,15 +606,15 @@ TVChildTarget::getByHierarchicalName( const rtl::OUString& aName )
 {
 	sal_Int32 idx;
 	rtl::OUString name( aName );
-	
+
 	if( ( idx = name.indexOf( sal_Unicode( '/' ) ) ) != -1 )
 	{
-		rtl::OUString num( name.getStr()+2,idx-4 ); 
+		rtl::OUString num( name.getStr()+2,idx-4 );
 		sal_Int32 pref = num.toInt32() - 1;
-		
+
 		if( pref < 0 || Elements.size() <= sal_uInt32( pref ) )
 			throw NoSuchElementException();
-		
+
 		return Elements[pref]->getByHierarchicalName( name.copy( 1 + idx ) );
 	}
 	else
@@ -629,14 +629,14 @@ TVChildTarget::hasByHierarchicalName( const rtl::OUString& aName )
 {
 	sal_Int32 idx;
 	rtl::OUString name( aName );
-	
+
    	if( ( idx = name.indexOf( sal_Unicode( '/' ) ) ) != -1 )
 	{
 		rtl::OUString num( name.getStr()+2,idx-4 );
-		sal_Int32 pref = num.toInt32() - 1;		
+		sal_Int32 pref = num.toInt32() - 1;
 		if( pref < 0 || Elements.size() <= sal_uInt32( pref ) )
 			return false;
-		
+
 		return Elements[pref]->hasByHierarchicalName( name.copy( 1 + idx ) );
 	}
 	else
@@ -652,20 +652,20 @@ ConfigData TVChildTarget::init( const Reference< XMultiServiceFactory >& xSMgr )
 {
 	ConfigData configData;
 	Reference< XMultiServiceFactory >  sProvider( getConfiguration(xSMgr) );
-	
+
 	/**********************************************************************/
 	/*                       reading Office.Common                        */
 	/**********************************************************************/
-	
+
 	Reference< XHierarchicalNameAccess > xHierAccess( getHierAccess( sProvider,
 																	 "org.openoffice.Office.Common" ) );
-	rtl::OUString system( getKey( xHierAccess,"Help/System" ) );	
+	rtl::OUString system( getKey( xHierAccess,"Help/System" ) );
 	sal_Bool showBasic( getBooleanKey(xHierAccess,"Help/ShowBasic") );
 	rtl::OUString instPath( getKey( xHierAccess,"Path/Current/Help" ) );
 	if( ! instPath.getLength() )
 	  // try to determine path from default
 	  instPath = rtl::OUString::createFromAscii( "$(instpath)/help" );
-	
+
 	// replace anything like $(instpath);
 	subst( xSMgr,instPath );
 
@@ -675,7 +675,7 @@ ConfigData TVChildTarget::init( const Reference< XMultiServiceFactory >& xSMgr )
 
 	xHierAccess = getHierAccess( sProvider,
 								 "org.openoffice.Setup" );
-	
+
 	rtl::OUString productName( getKey(  xHierAccess,"Product/ooName" ) );
     rtl::OUString setupversion( getKey( xHierAccess,"Product/ooSetupVersion" ) );
     rtl::OUString setupextension;
@@ -705,12 +705,12 @@ ConfigData TVChildTarget::init( const Reference< XMultiServiceFactory >& xSMgr )
     {
     }
 
-	rtl::OUString productVersion( setupversion + 
+	rtl::OUString productVersion( setupversion +
 								  rtl::OUString::createFromAscii( " " ) +
 								  setupextension );
 	rtl::OUString locale( getKey( xHierAccess,"L10N/ooLocale" ) );
 
-	
+
 	// Determine fileurl from url and locale
 	rtl::OUString url;
 	osl::FileBase::RC errFile = osl::FileBase::getFileURLFromSystemPath( instPath,url );
@@ -733,7 +733,7 @@ ConfigData TVChildTarget::init( const Reference< XMultiServiceFactory >& xSMgr )
         ret = rtl::OUString::createFromAscii("en");
         }
 	url = url + ret;
-	
+
 	// first of all, try do determine whether there are any *.tree files present
 
 	// Start with extensions to set them at the end of the list
@@ -754,7 +754,7 @@ ConfigData TVChildTarget::init( const Reference< XMultiServiceFactory >& xSMgr )
 		rtl::OUString aFileUrl, aFileName;
 		while( aDirectory.getNextItem( aDirItem ) == osl::FileBase::E_None &&
 			   aDirItem.getFileStatus( aFileStatus ) == osl::FileBase::E_None &&
-			   aFileStatus.isValid( FileStatusMask_FileURL ) && 
+			   aFileStatus.isValid( FileStatusMask_FileURL ) &&
 			   aFileStatus.isValid( FileStatusMask_FileName ) )
 		  {
 			aFileUrl = aFileStatus.getFileURL();
@@ -762,22 +762,22 @@ ConfigData TVChildTarget::init( const Reference< XMultiServiceFactory >& xSMgr )
 			idx_ = aFileName.lastIndexOf( sal_Unicode( '.' ) );
 			if( idx_ == -1 )
 			  continue;
-			
+
 			const sal_Unicode* str = aFileName.getStr();
-			
-			if( aFileName.getLength() == idx_ + 5                   && 
-				( str[idx_ + 1] == 't' || str[idx_ + 1] == 'T' )    && 
+
+			if( aFileName.getLength() == idx_ + 5                   &&
+				( str[idx_ + 1] == 't' || str[idx_ + 1] == 'T' )    &&
 				( str[idx_ + 2] == 'r' || str[idx_ + 2] == 'R' )    &&
 				( str[idx_ + 3] == 'e' || str[idx_ + 3] == 'E' )    &&
 				( str[idx_ + 4] == 'e' || str[idx_ + 4] == 'E' ) )
 			  {
 				OSL_ENSURE( aFileStatus.isValid( FileStatusMask_FileSize ),
-                            "invalid file size" );			
-				
+                            "invalid file size" );
+
 				rtl::OUString baseName = aFileName.copy(0,idx_).toAsciiLowerCase();
 				if(! showBasic && baseName.compareToAscii("sbasic") == 0 )
 				  continue;
-				
+
 				configData.vFileLen.push_back( aFileStatus.getFileSize() );
 				configData.vFileURL.push_back( aFileUrl );
 			  }
@@ -795,14 +795,14 @@ ConfigData TVChildTarget::init( const Reference< XMultiServiceFactory >& xSMgr )
 	// m_vReplacement[2...4] (vendorName/-Version/-Short) are empty strings
 
    	configData.system = system;
-	configData.locale = locale;		
+	configData.locale = locale;
 	configData.appendix =
 		rtl::OUString::createFromAscii( "?Language=" ) +
 		configData.locale +
 		rtl::OUString::createFromAscii( "&System=" ) +
 		configData.system +
         rtl::OUString::createFromAscii( "&UseDB=no" ) ;
-	
+
 	return configData;
 }
 
@@ -834,7 +834,7 @@ TVChildTarget::getConfiguration(const Reference< XMultiServiceFactory >& m_xSMgr
 			OSL_ENSURE( sProvider.is(),"can't instantiate configuration" );
 		}
 	}
-	
+
 	return sProvider;
 }
 
@@ -845,18 +845,18 @@ TVChildTarget::getHierAccess( const Reference< XMultiServiceFactory >& sProvider
 							  const char* file ) const
 {
 	Reference< XHierarchicalNameAccess > xHierAccess;
-	
+
 	if( sProvider.is() )
 	{
 		Sequence< Any > seq(1);
 		rtl::OUString sReaderService =
 			rtl::OUString::createFromAscii( "com.sun.star.configuration.ConfigurationAccess" );
-		
-		seq[0] <<= rtl::OUString::createFromAscii( file );		
-		
+
+		seq[0] <<= rtl::OUString::createFromAscii( file );
+
 		try
 		{
-			xHierAccess = 
+			xHierAccess =
 				Reference< XHierarchicalNameAccess >
 				( sProvider->createInstanceWithArguments( sReaderService,seq ),
 				  UNO_QUERY );
@@ -865,7 +865,7 @@ TVChildTarget::getHierAccess( const Reference< XMultiServiceFactory >& sProvider
 		{
 		}
 	}
-	
+
 	return xHierAccess;
 }
 
@@ -935,9 +935,9 @@ void TVChildTarget::subst( const Reference< XMultiServiceFactory >& m_xSMgr,
 			OSL_ENSURE( xCfgMgr.is()," can't instantiate the special config manager " );
 		}
     }
-	
+
 	OSL_ENSURE( xCfgMgr.is(), "specialconfigmanager not found\n" );
-	
+
 	if( xCfgMgr.is() )
         instpath = xCfgMgr->substituteVariables( instpath );
 }
@@ -976,7 +976,7 @@ void ExtensionIteratorBase::init()
 	}
 
 	Reference< XMultiComponentFactory > xSMgr( m_xContext->getServiceManager(), UNO_QUERY );
-	m_xSFA = Reference< ucb::XSimpleFileAccess >( 
+	m_xSFA = Reference< ucb::XSimpleFileAccess >(
 		xSMgr->createInstanceWithContext( rtl::OUString::createFromAscii( "com.sun.star.ucb.SimpleFileAccess" ),
 		m_xContext ), UNO_QUERY_THROW );
 

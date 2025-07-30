@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -86,10 +86,10 @@ class user_CurrentContext
     : public ImplHelper1< XCurrentContext >
 {
     oslInterlockedCount m_refcount;
-    
+
     Reference< XCurrentContext > m_xDelegate;
     Any m_userId;
-    
+
 public:
     inline user_CurrentContext(
         Reference< XCurrentContext > const & xDelegate,
@@ -99,13 +99,13 @@ public:
         , m_xDelegate( xDelegate )
         , m_userId( makeAny( userId ) )
         {}
-    
+
     // XInterface impl
     virtual void SAL_CALL acquire()
         throw ();
     virtual void SAL_CALL release()
         throw ();
-    
+
     // XCurrentContext impl
     virtual Any SAL_CALL getValueByName( OUString const & name )
         throw (RuntimeException);
@@ -243,7 +243,7 @@ grant user "dbo"
 permission com.sun.star.io.FilePermission "file:///home/dbo/-", "read,write";
 permission com.sun.star.io.FilePermission "-", "read,write";
 permission com.sun.star.io.FilePermission "file:///usr/local/dbo/ *", "read";
-                                                                  
+
 permission com.sun.star.security.RuntimePermission "DBO";
 
 permission com.sun.star.connection.SocketPermission "dbo-1:1024-", "listen";
@@ -366,12 +366,12 @@ class acc_Restr
     : public WeakImplHelper1< security::XAccessControlContext >
 {
     Any m_perm;
-    
+
 public:
     inline acc_Restr( Any const & perm = Any() ) SAL_THROW( () )
         : m_perm( perm )
         {}
-    
+
     // XAccessControlContext impl
     virtual void SAL_CALL checkPermission( Any const & perm )
         throw (RuntimeException);
@@ -403,7 +403,7 @@ public:
         , m_ac( ac )
         , m_arg( arg )
         {}
-    
+
     // XAction impl
     virtual Any SAL_CALL run()
         throw (Exception);
@@ -466,13 +466,13 @@ SAL_IMPLEMENT_MAIN()
         check_dbo_dynamic( ac );
         ::fprintf( stderr, "dbo checked.\n" );
         }
-        
+
         // multi-user test
         dispose( xContext );
         xContext = defaultBootstrap_InitialComponentContext(
             OUSTR("../../test/security/test_security.ini") ); // UNO_AC=on
         AccessControl ac( xContext );
-        
+
         {
         // set up dbo current context
         ContextLayer layer( new user_CurrentContext( getCurrentContext(), OUSTR("dbo") ) );
@@ -505,7 +505,7 @@ SAL_IMPLEMENT_MAIN()
         check_defaults_neg( ac );
         ::fprintf( stderr, "guest checked.\n" );
         }
-        
+
         dispose( xContext );
         ::fprintf( stderr, "security test succeeded.\n" );
         return 0;

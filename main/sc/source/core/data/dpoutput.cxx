@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -106,8 +106,8 @@ struct ScDPOutLevelData
     bool                                mbHasHiddenMember;
 
 	ScDPOutLevelData()
-    { 
-        nDim = nHier = nLevel = nDimPos = -1; 
+    {
+        nDim = nHier = nLevel = nDimPos = -1;
         mbHasHiddenMember = false;
     }
 
@@ -468,7 +468,7 @@ ScDPOutput::ScDPOutput( ScDocument* pD, const uno::Reference<sheet::XDimensionsS
 										pRowFields[nRowFieldCount].aCaption= aCaption;
 										pRowFields[nRowFieldCount].mbHasHiddenMember = bHasHiddenMember;
 										if (!lcl_MemberEmpty(pRowFields[nRowFieldCount].aResult))
-                                        {    
+                                        {
 											++nRowFieldCount;
                                             bRowFieldHasMember = true;
                                         }
@@ -638,9 +638,9 @@ void ScDPOutput::HeaderCell( SCCOL nCol, SCROW nRow, SCTAB nTab,
 //		SvxWeightItem aItem( WEIGHT_BOLD );		// weight is in the style
         // Wang Xu Ming -- 2009-8-17
         // DataPilot Migration - Cache&&Performance
-        OutputImpl outputimp( pDoc, nTab, 
+        OutputImpl outputimp( pDoc, nTab,
             nTabStartCol, nTabStartRow, nMemberStartCol, nMemberStartRow,
-            nDataStartCol, nDataStartRow, nTabEndCol, nTabEndRow ); 
+            nDataStartCol, nDataStartRow, nTabEndCol, nTabEndRow );
         // End Comments
 		//!	limit frames to horizontal or vertical?
 		if (bColHeader)
@@ -671,7 +671,7 @@ void ScDPOutput::HeaderCell( SCCOL nCol, SCROW nRow, SCTAB nTab,
 	}
 }
 
-void ScDPOutput::FieldCell( SCCOL nCol, SCROW nRow, SCTAB nTab, const String& rCaption, 
+void ScDPOutput::FieldCell( SCCOL nCol, SCROW nRow, SCTAB nTab, const String& rCaption,
                             bool bInTable, bool bPopup, bool bHasHiddenMember )
 {
 	pDoc->SetString( nCol, nRow, nTab, rCaption );
@@ -778,7 +778,7 @@ sal_Int32 ScDPOutput::GetPositionType(const ScAddress& rPos)
     if (bInColHeader)
     {
         if (nRow == nTabStartRow)
-            // first row in the column header area is always used for column 
+            // first row in the column header area is always used for column
             // field buttons.
             return DataPilotTablePositionType::OTHER;
 
@@ -812,7 +812,7 @@ void ScDPOutput::Output()
 		lcl_DoFilterButton( pDoc, aStartPos.Col(), aStartPos.Row(), nTab );
 
 	//	output data results:
-	
+
 	for (long nRow=0; nRow<nRowCount; nRow++)
 	{
 		SCROW nRowPos = nDataStartRow + (SCROW)nRow;					//! check for overflow
@@ -869,9 +869,9 @@ void ScDPOutput::Output()
 	//	output column headers:
     // Wang Xu Ming -- 2009-8-17
     // DataPilot Migration - Cache&&Performance
-    OutputImpl outputimp( pDoc, nTab, 
+    OutputImpl outputimp( pDoc, nTab,
         nTabStartCol, nTabStartRow, nMemberStartCol, nMemberStartRow,
-        nDataStartCol, nDataStartRow, nTabEndCol, nTabEndRow ); 
+        nDataStartCol, nDataStartRow, nTabEndCol, nTabEndRow );
     // End Comments
 	for (nField=0; nField<nColFieldCount; nField++)
 	{
@@ -902,7 +902,7 @@ void ScDPOutput::Output()
                     //                  lcl_SetFrame( pDoc,nTab, nColPos,nRowPos, nEndColPos,nTabEndRow, SC_DP_FRAME_INNER_BOLD );
                     if ( nField == nColFieldCount - 2 )
                     {
-                        outputimp.AddCol( nColPos );            
+                        outputimp.AddCol( nColPos );
 						if ( nColPos + 1 == nEndColPos  )
 							outputimp.OutputBlockFrame( nColPos,nRowPos, nEndColPos,nRowPos+1, sal_True );
                     }
@@ -918,7 +918,7 @@ void ScDPOutput::Output()
                 outputimp.AddCol( nColPos );
         }
 		if ( nField== 0 && nColFieldCount == 1 )
-			outputimp.OutputBlockFrame( nDataStartCol,nTabStartRow, nTabEndCol,nRowPos-1 );										
+			outputimp.OutputBlockFrame( nDataStartCol,nTabStartRow, nTabEndCol,nRowPos-1 );
             // End Comments
 	}
 
@@ -931,7 +931,7 @@ void ScDPOutput::Output()
 
 		SCCOL nHdrCol = nTabStartCol + (SCCOL)nField;					//! check for overflow
 		SCROW nHdrRow = nDataStartRow - 1;
-        FieldCell( nHdrCol, nHdrRow, nTab, pRowFields[nField].aCaption, true, !bDataLayout, 
+        FieldCell( nHdrCol, nHdrRow, nTab, pRowFields[nField].aCaption, true, !bDataLayout,
                    pRowFields[nField].mbHasHiddenMember );
 
 		SCCOL nColPos = nMemberStartCol + (SCCOL)nField;				//! check for overflow
@@ -1135,7 +1135,7 @@ void lcl_GetTableVars( sal_Int32& rGrandTotalCols, sal_Int32& rGrandTotalRows, s
                     String aGivenName;
                     ScDPOutput::GetDataDimensionNames( aSourceName, aGivenName, xDim );
 					try
-					{	
+					{
 						uno::Any aValue = xDimProp->getPropertyValue( rtl::OUString::createFromAscii(SC_UNO_LAYOUTNAME) );
 
                         if( aValue.hasValue() )
@@ -1187,12 +1187,12 @@ void ScDPOutput::GetPositionData(const ScAddress& rPos, DataPilotTablePositionDa
             vector<DataPilotFieldFilter> aFilters;
             GetDataResultPositionData(aFilters, rPos);
             sal_Int32 nSize = aFilters.size();
-    
+
             DataPilotTableResultData aResData;
             aResData.FieldFilters.realloc(nSize);
             for (sal_Int32 i = 0; i < nSize; ++i)
                 aResData.FieldFilters[i] = aFilters[i];
-    
+
             aResData.DataFieldIndex = 0;
             Reference<beans::XPropertySet> xPropSet(xSource, UNO_QUERY);
             if (xPropSet.is())
@@ -1204,10 +1204,10 @@ void ScDPOutput::GetPositionData(const ScAddress& rPos, DataPilotTablePositionDa
             }
 
             // Copy appropriate DataResult object from the cached sheet::DataResult table.
-            if (aData.getLength() > nRow - nDataStartRow && 
+            if (aData.getLength() > nRow - nDataStartRow &&
                 aData[nRow-nDataStartRow].getLength() > nCol-nDataStartCol)
                 aResData.Result = aData[nRow-nDataStartRow][nCol-nDataStartCol];
-    
+
             rPosData.PositionData = makeAny(aResData);
             return;
         }

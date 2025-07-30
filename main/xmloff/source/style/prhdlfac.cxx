@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -90,7 +90,7 @@ SvXMLEnumMapEntry __READONLY_DATA aXML_WritingDirection_Enum[] =
     // &(aXML_WritingDirection_Enum[1])
     { XML_LR_TB,    text::WritingMode2::LR_TB },
     { XML_RL_TB,    text::WritingMode2::RL_TB },
-    { XML_TB_RL,    text::WritingMode2::TB_RL },    
+    { XML_TB_RL,    text::WritingMode2::TB_RL },
     { XML_TB_LR,    text::WritingMode2::TB_LR },
 
     // alternative names of the above, as accepted by XSL
@@ -267,8 +267,8 @@ const XMLPropertyHandler* XMLPropertyHandlerFactory::CreatePropertyHandler( sal_
 			pPropHdl = new XMLCrossedOutTextPropHdl ;
 			break;
 		case XML_TYPE_TEXT_BOOLCROSSEDOUT:
-            pPropHdl = new XMLNamedBoolPropertyHdl( 
-                GetXMLToken(XML_SOLID), 
+            pPropHdl = new XMLNamedBoolPropertyHdl(
+                GetXMLToken(XML_SOLID),
                 GetXMLToken(XML_NONE) );
 			break;
 		case XML_TYPE_TEXT_ESCAPEMENT:
@@ -340,8 +340,8 @@ const XMLPropertyHandler* XMLPropertyHandlerFactory::CreatePropertyHandler( sal_
 			pPropHdl = new XMLFontWeightPropHdl;
 			break;
 		case XML_TYPE_TEXT_SPLIT:
-            pPropHdl = new XMLNamedBoolPropertyHdl( 
-                GetXMLToken(XML_AUTO), 
+            pPropHdl = new XMLNamedBoolPropertyHdl(
+                GetXMLToken(XML_AUTO),
                 GetXMLToken(XML_ALWAYS) );
 			break;
 		case XML_TYPE_TEXT_BREAKBEFORE:
@@ -396,14 +396,14 @@ const XMLPropertyHandler* XMLPropertyHandlerFactory::CreatePropertyHandler( sal_
 			pPropHdl = new XMLAttributeContainerHandler;
 			break;
 		case XML_TYPE_COLOR_MODE:
-			pPropHdl = new XMLEnumPropertyHdl( aXML_ColorMode_EnumMap, 
+			pPropHdl = new XMLEnumPropertyHdl( aXML_ColorMode_EnumMap,
 							::getCppuType((const drawing::ColorMode*)0) );
 			break;
 		case XML_TYPE_DURATION16_MS:
 			pPropHdl = new XMLDurationMS16PropHdl_Impl;
 			break;
 		case XML_TYPE_TEXT_HORIZONTAL_ADJUST:
-			pPropHdl = new XMLEnumPropertyHdl( 
+			pPropHdl = new XMLEnumPropertyHdl(
 				aXML_HorizontalAdjust_Enum,
 				::getCppuType((const text::HorizontalAdjust*)0) );
 			break;
@@ -411,18 +411,18 @@ const XMLPropertyHandler* XMLPropertyHandlerFactory::CreatePropertyHandler( sal_
 			pPropHdl = new DrawAspectHdl;
 			break;
         case XML_TYPE_TEXT_WRITING_MODE:
-            pPropHdl = new XMLConstantsPropertyHandler( 
+            pPropHdl = new XMLConstantsPropertyHandler(
                 &(aXML_WritingDirection_Enum[1]),
                 XML_LR_TB);
             break;
         case XML_TYPE_TEXT_WRITING_MODE_WITH_DEFAULT:
-            pPropHdl = new XMLConstantsPropertyHandler( 
+            pPropHdl = new XMLConstantsPropertyHandler(
                 aXML_WritingDirection_Enum,
                 XML_PAGE);
             break;
         case XML_TYPE_TEXT_HIDDEN_AS_DISPLAY:
-            pPropHdl = new XMLNamedBoolPropertyHdl( 
-                GetXMLToken(XML_NONE), 
+            pPropHdl = new XMLNamedBoolPropertyHdl(
+                GetXMLToken(XML_NONE),
                 GetXMLToken(XML_TRUE) );
 			break;
 		case XML_TYPE_STYLENAME :

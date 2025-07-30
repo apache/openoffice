@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -217,7 +217,7 @@ public:
 	// all default implementations just call the same methods at the original. To do something
 	// different, overload the method and at least do what the method does.
 	virtual drawinglayer::primitive2d::Primitive2DSequence createRedirectedPrimitive2DSequence(
-		const sdr::contact::ViewObjectContact& rOriginal, 
+		const sdr::contact::ViewObjectContact& rOriginal,
 		const sdr::contact::DisplayInfo& rDisplayInfo);
 };
 
@@ -230,7 +230,7 @@ ViewRedirector::~ViewRedirector()
 }
 
 drawinglayer::primitive2d::Primitive2DSequence ViewRedirector::createRedirectedPrimitive2DSequence(
-	const sdr::contact::ViewObjectContact& rOriginal, 
+	const sdr::contact::ViewObjectContact& rOriginal,
 	const sdr::contact::DisplayInfo& rDisplayInfo)
 {
 	SdrObject* pObject = rOriginal.GetViewContact().TryToGetSdrObject();
@@ -314,7 +314,7 @@ drawinglayer::primitive2d::Primitive2DSequence ViewRedirector::createRedirectedP
 
 						// create line and stroke attribute
 						::std::vector< double > aDotDashArray;
-		                
+
 						aDotDashArray.push_back(160.0);
 						aDotDashArray.push_back(80.0);
 
@@ -324,8 +324,8 @@ drawinglayer::primitive2d::Primitive2DSequence ViewRedirector::createRedirectedP
 
 						// create primitive and add
 						const drawinglayer::primitive2d::Primitive2DReference xRef(new drawinglayer::primitive2d::PolygonStrokePrimitive2D(
-							aPolygon, 
-							aLine, 
+							aPolygon,
+							aLine,
 							aStroke));
 						drawinglayer::primitive2d::appendPrimitive2DReferenceToPrimitive2DSequence(xRetval, xRef);
 					}
@@ -345,7 +345,7 @@ drawinglayer::primitive2d::Primitive2DSequence ViewRedirector::createRedirectedP
 									static String aTitleAreaStr( SdResId( STR_PLACEHOLDER_DESCRIPTION_TITLE ) );
 									aObjectString = aTitleAreaStr;
 								}
-								
+
 								break;
 							}
 							case PRESOBJ_OUTLINE:
@@ -405,16 +405,16 @@ drawinglayer::primitive2d::Primitive2DSequence ViewRedirector::createRedirectedP
 							basegfx::B2DTuple aTranslate;
 							double fRotate, fShearX;
 							aObjectMatrix.decompose(aScale, aTranslate, fRotate, fShearX);
-							
+
 							// create font
 							SdrTextObj* pTextObj = dynamic_cast< SdrTextObj* >( pObject );
 							const SdrTextVertAdjust eTVA(pTextObj ? pTextObj->GetTextVerticalAdjust() : SDRTEXTVERTADJUST_CENTER);
 							Font aScaledVclFont;
-		                    
-							// use a text size factor to get more reliable text sizes from the text layouter 
+
+							// use a text size factor to get more reliable text sizes from the text layouter
 							// (and from vcl), tipp from HDU
 							static sal_uInt32 nTextSizeFactor(100);
-							
+
 							// use a factor to get more linear text size calculations
 							aScaledVclFont.SetHeight( 500 * nTextSizeFactor );
 
@@ -422,7 +422,7 @@ drawinglayer::primitive2d::Primitive2DSequence ViewRedirector::createRedirectedP
 							drawinglayer::primitive2d::TextLayouterDevice aTextLayouter;
 							aTextLayouter.setFont(aScaledVclFont);
 							const xub_StrLen nTextLength(aObjectString.Len());
-		                    
+
 							// do not forget to use the factor again to get the width for the 500
 							const double fTextWidth(aTextLayouter.getTextWidth(aObjectString, 0, nTextLength) * (1.0 / nTextSizeFactor));
 							const double fTextHeight(aTextLayouter.getTextHeight() * (1.0 / nTextSizeFactor));
@@ -445,7 +445,7 @@ drawinglayer::primitive2d::Primitive2DSequence ViewRedirector::createRedirectedP
 
 							const drawinglayer::attribute::FontAttribute aFontAttribute(
                                 drawinglayer::primitive2d::getFontAttributeFromVclFont(
-								    aTextSizeAttribute, 
+								    aTextSizeAttribute,
 								    aVclFont,
 								    false,
 								    false));
@@ -453,8 +453,8 @@ drawinglayer::primitive2d::Primitive2DSequence ViewRedirector::createRedirectedP
 							// fill text matrix
 							const basegfx::B2DHomMatrix aTextMatrix(basegfx::tools::createScaleShearXRotateTranslateB2DHomMatrix(
 								aTextSizeAttribute.getX(), aTextSizeAttribute.getY(),
-								fShearX, 
-                                fRotate, 
+								fShearX,
+                                fRotate,
                                 fPosX, fPosY));
 
 							// create DXTextArray (can be empty one)
@@ -466,13 +466,13 @@ drawinglayer::primitive2d::Primitive2DSequence ViewRedirector::createRedirectedP
 							// create primitive and add
 							const drawinglayer::primitive2d::Primitive2DReference xRef(
                                 new drawinglayer::primitive2d::TextSimplePortionPrimitive2D(
-								    aTextMatrix, 
-								    aObjectString, 
-								    0, 
-								    nTextLength, 
-								    aDXArray, 
-								    aFontAttribute, 
-								    aLocale, 
+								    aTextMatrix,
+								    aObjectString,
+								    0,
+								    nTextLength,
+								    aDXArray,
+								    aFontAttribute,
+								    aLocale,
 								    aFontColor));
 							drawinglayer::primitive2d::appendPrimitive2DReferenceToPrimitive2DSequence(xRetval, xRef);
 						}
@@ -484,9 +484,9 @@ drawinglayer::primitive2d::Primitive2DSequence ViewRedirector::createRedirectedP
 		if(bDoCreateGeometry)
 		{
 			drawinglayer::primitive2d::appendPrimitive2DSequenceToPrimitive2DSequence(
-				xRetval, 
+				xRetval,
 				sdr::contact::ViewObjectContactRedirector::createRedirectedPrimitive2DSequence(
-					rOriginal, 
+					rOriginal,
 					rDisplayInfo));
 		}
 	}
@@ -534,7 +534,7 @@ void View::CompleteRedraw(OutputDevice* pOutDev, const Region& rReg, sdr::contac
                     bScreenDisplay = false;
                 }
 
-                // #i75566# Name change GetBackgroundColor -> GetPageBackgroundColor and 
+                // #i75566# Name change GetBackgroundColor -> GetPageBackgroundColor and
                 // hint value if screen display. Only then the AutoColor mechanisms shall be applied
 				rOutl.SetBackgroundColor( pPage->GetPageBackgroundColor(pPgView, bScreenDisplay) );
 			}
@@ -1318,7 +1318,7 @@ void View::OnEndPasteOrDrop( PasteOrDropInfos* pInfos )
 					pStyle = static_cast<SfxStyleSheet*>( pStylePool->Find( aStyleSheetName, pStyleSheet->GetFamily() ) );
 					DBG_ASSERT( pStyle, "sd::View::OnEndPasteOrDrop(), Style not found!" );
 				}
-				
+
 				if( !pStyle )
 					pStyle = pStyleSheet;
 

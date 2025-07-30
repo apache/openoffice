@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
@@ -109,10 +109,10 @@ SdrGrafObj* View::InsertGraphic( const Graphic& rGraphic, sal_Int8& rAction,
 
     const bool bIsGraphic(0 != dynamic_cast< SdrGrafObj* >(pPickObj));
 
-    if(pPickObj 
-        && !bIsGraphic 
+    if(pPickObj
+        && !bIsGraphic
         && !(pPickObj->IsEmptyPresObj() )
-        && pPickObj->IsClosedObj() 
+        && pPickObj->IsClosedObj()
         && !dynamic_cast< SdrOle2Obj* >(pPickObj))
     {
         // fill style change (fill object with graphic), independent of mnAction
@@ -130,14 +130,14 @@ SdrGrafObj* View::InsertGraphic( const Graphic& rGraphic, sal_Int8& rAction,
         aSet.Put(XFillBitmapItem(&mpDocSh->GetPool(), rGraphic));
         pPickObj->SetMergedItemSetAndBroadcast(aSet);
     }
-    else if(DND_ACTION_LINK == mnAction 
-        && pPickObj 
-        && pPV  
+    else if(DND_ACTION_LINK == mnAction
+        && pPickObj
+        && pPV
         && (bIsGraphic || (pPickObj->IsEmptyPresObj() && !bOnMaster))) // #121603# Do not use pObj, it may be NULL
 	{
         // hit on SdrGrafObj with wanted new linked graphic (or PresObj placeholder hit)
 		if( IsUndoEnabled() )
-			BegUndo(String(SdResId(STR_INSERTGRAPHIC)));	
+			BegUndo(String(SdResId(STR_INSERTGRAPHIC)));
 
 		SdPage* pPage = (SdPage*) pPickObj->GetPage();
 
@@ -492,7 +492,7 @@ IMPL_LINK( View, DropInsertFileHdl, Timer*, EMPTYARG )
 						{
 							// TODO/LEAN: VisualArea access can switch the object to running state
 							sal_Int64 nAspect = embed::Aspects::MSOLE_CONTENT;
-	                        
+
 							xPersist->storeOwn();
 
 							awt::Size aSz;
@@ -504,7 +504,7 @@ IMPL_LINK( View, DropInsertFileHdl, Timer*, EMPTYARG )
 							{
 								// the default size will be set later
 							}
-							
+
 							Size        aSize( aSz.Width, aSz.Height );
 							Rectangle   aRect;
 

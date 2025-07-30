@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -924,7 +924,7 @@ sal_Bool DrawDocShell::GotoBookmark(const String& rBookmark)
 	return (bFound);
 }
 
-//Solution: If  object  is marked , return true , else return false . 
+//Solution: If  object  is marked , return true , else return false .
 sal_Bool DrawDocShell::IsMarked(  SdrObject* pObject  )
 {
        sal_Bool bisMarked =sal_False;
@@ -939,7 +939,7 @@ sal_Bool DrawDocShell::IsMarked(  SdrObject* pObject  )
 	 }
 	return  bisMarked;
 }
-//Solution: If  object  is marked , return true , else return false . 
+//Solution: If  object  is marked , return true , else return false .
 sal_Bool DrawDocShell::GetObjectIsmarked(const String& rBookmark)
 {
     OSL_TRACE("GotoBookmark %s",
@@ -976,7 +976,7 @@ sal_Bool DrawDocShell::GetObjectIsmarked(const String& rBookmark)
 			/**********************************************************
 			* Zur Seite springen
 			**********************************************************/
-		
+
 			SdPage* pPage = (SdPage*) mpDoc->GetPage(nPgNum);
 
 			PageKind eNewPageKind = pPage->GetPageKind();
@@ -1036,10 +1036,10 @@ sal_Bool DrawDocShell::GetObjectIsmarked(const String& rBookmark)
 				// Objekt einblenden und selektieren
 				pDrViewSh->MakeVisible(pObj->GetLogicRect(),
 									   *pDrViewSh->GetActiveWindow());
-				
+
 		         bUnMark = pDrViewSh->GetView()->IsObjMarked(pObj);
-				
-		            
+
+
 			}
 		}
 	}
@@ -1200,11 +1200,11 @@ sal_Bool DrawDocShell::SaveAsOwnFormat( SfxMedium& rMedium )
 				String aOldPageLayoutName = mpDoc->GetMasterSdPage(i, PK_STANDARD)->GetLayoutName();
 				String aNewLayoutName = aLayoutName;
 				// Don't add suffix for the first master page
-				if( i > 0 )				
-					aNewLayoutName += String::CreateFromInt32(i);				
-				
+				if( i > 0 )
+					aNewLayoutName += String::CreateFromInt32(i);
+
 				mpDoc->RenameLayoutTemplate(aOldPageLayoutName, aNewLayoutName);
-			}			
+			}
 		}
 	}
 
@@ -1281,8 +1281,8 @@ void DrawDocShell::OpenBookmark( const String& rBookmarkURL )
 }
 
 void DrawDocShell::setDocAccTitle( const String& rTitle )
-{ 
-	if (mpDoc ) 
+{
+	if (mpDoc )
 	{
 		mpDoc->setDocAccTitle( rTitle );
 	}
@@ -1292,14 +1292,14 @@ const String DrawDocShell::getDocAccTitle() const
 	String sRet;
 	if  (mpDoc)
 	{
-		sRet =  mpDoc->getDocAccTitle(); 
+		sRet =  mpDoc->getDocAccTitle();
 	}
 
 	return sRet;
 }
 void DrawDocShell::setDocReadOnly( sal_Bool bReadOnly)
-{ 
-	if (mpDoc ) 
+{
+	if (mpDoc )
 	{
 		mpDoc->setDocReadOnly( bReadOnly );
 	}
@@ -1308,7 +1308,7 @@ sal_Bool DrawDocShell::getDocReadOnly() const
 {
 	if  (mpDoc)
 	{
-		return mpDoc->getDocReadOnly(); 
+		return mpDoc->getDocReadOnly();
 	}
 
 	return sal_False;

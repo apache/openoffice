@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -30,9 +30,9 @@
 #include "dbu_qry.hrc"
 #endif
 #ifndef DBACCESS_UI_BROWSER_ID_HXX
-#include "browserids.hxx"		   
+#include "browserids.hxx"
 #endif
-#ifndef _COMPHELPER_TYPES_HXX_ 
+#ifndef _COMPHELPER_TYPES_HXX_
 #include <comphelper/types.hxx>
 #endif
 #ifndef DBACCESS_SHARED_DBUSTRINGS_HRC
@@ -47,13 +47,13 @@
 #ifndef _COMPHELPER_EXTRACT_HXX_
 #include <comphelper/extract.hxx>
 #endif
-#ifndef _COM_SUN_STAR_CONTAINER_XCHILD_HPP_ 
+#ifndef _COM_SUN_STAR_CONTAINER_XCHILD_HPP_
 #include <com/sun/star/container/XChild.hpp>
 #endif
-#ifndef _COM_SUN_STAR_CONTAINER_XNAMECONTAINER_HPP_ 
+#ifndef _COM_SUN_STAR_CONTAINER_XNAMECONTAINER_HPP_
 #include <com/sun/star/container/XNameContainer.hpp>
 #endif
-#ifndef _COM_SUN_STAR_SDBCX_XDATADESCRIPTORFACTORY_HPP_ 
+#ifndef _COM_SUN_STAR_SDBCX_XDATADESCRIPTORFACTORY_HPP_
 #include <com/sun/star/sdbcx/XDataDescriptorFactory.hpp>
 #endif
 #ifndef _COM_SUN_STAR_SDBCX_XTABLESSUPPLIER_HPP_
@@ -62,7 +62,7 @@
 #ifndef _COM_SUN_STAR_SDBCX_KEYTYPE_HPP_
 #include <com/sun/star/sdbcx/KeyType.hpp>
 #endif
-#ifndef _COM_SUN_STAR_SDBCX_XDROP_HPP_ 
+#ifndef _COM_SUN_STAR_SDBCX_XDROP_HPP_
 #include <com/sun/star/sdbcx/XDrop.hpp>
 #endif
 #ifndef _COM_SUN_STAR_SDBCX_XALTERTABLE_HPP_
@@ -86,7 +86,7 @@
 #ifndef _DBHELPER_DBEXCEPTION_HXX_
 #include <connectivity/dbexception.hxx>
 #endif
-#ifndef _COM_SUN_STAR_UI_DIALOGS_XEXECUTABLEDIALOG_HPP_ 
+#ifndef _COM_SUN_STAR_UI_DIALOGS_XEXECUTABLEDIALOG_HPP_
 #include <com/sun/star/ui/dialogs/XExecutableDialog.hpp>
 #endif
 #ifndef _COMPHELPER_STREAMSECTION_HXX_
@@ -110,7 +110,7 @@
 #ifndef DBAUI_JOINCONTROLLER_HXX
 #include "JoinController.hxx"
 #endif
-#ifndef _SV_MSGBOX_HXX 
+#ifndef _SV_MSGBOX_HXX
 #include <vcl/msgbox.hxx>
 #endif
 #ifndef DBAUI_TABLEWINDOWDATA_HXX
@@ -246,12 +246,12 @@ OJoinController::OJoinController(const Reference< XMultiServiceFactory >& _rM)
     :OJoinController_BASE(_rM)
     ,m_pAddTableDialog(NULL)
 {
-	DBG_CTOR(OJoinController,NULL); 
+	DBG_CTOR(OJoinController,NULL);
 }
 // -----------------------------------------------------------------------------
 OJoinController::~OJoinController()
 {
-	DBG_DTOR(OJoinController,NULL); 
+	DBG_DTOR(OJoinController,NULL);
 }
 
 // -----------------------------------------------------------------------------

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -72,7 +72,7 @@ namespace util
 	NodeContainer_t::iterator iter_end = mNodeContainer.end();
 	for (; iter != iter_end; ++iter)
 	{
-		file << iter->first << string(" ") << iter->second->mParentNodeId << string(" ") << iter->second->mRefersToNodeId << string(" ") << iter->second->mNodeValue << endl; 
+		file << iter->first << string(" ") << iter->second->mParentNodeId << string(" ") << iter->second->mRefersToNodeId << string(" ") << iter->second->mNodeValue << endl;
 	}
   }
 
@@ -87,7 +87,7 @@ namespace util
 	  mParentNodeStack.pop();
 
 	mParentNodeStack.push("Root");
-	
+
 	NodeContainer_t::iterator iter = mNodeContainer.begin();
 	NodeContainer_t::iterator iter_end = mNodeContainer.end();
 	for (; iter != iter_end; ++iter)
@@ -107,9 +107,9 @@ namespace util
   }
 
   void ExternalViewLoggerImpl::beginNode(const std::string& nodeId, const std::string& value, const std::string& refersToNodeId, bool inUse)
-  {	
+  {
 	mNodeContainer.insert(
-		NodeContainer_t::value_type(nodeId, 
+		NodeContainer_t::value_type(nodeId,
 		NodeDescription::Pointer_t(new NodeDescription(mParentNodeStack.top(), refersToNodeId, value, inUse))));
 	mParentNodeStack.push(nodeId);
   }
@@ -135,16 +135,16 @@ namespace util
 	}
 	return isLeaf;
   }
- 
+
   bool ExternalViewLoggerImpl::isUnreferencedLeaf(const string& nodeId)
   {
 	return isLeaf(nodeId) && !isReferenced(nodeId);
   }
 
-  bool ExternalViewLoggerImpl::isReferenced(const string& nodeId) 
+  bool ExternalViewLoggerImpl::isReferenced(const string& nodeId)
   {
 	bool isReferenced = false;
-	
+
 	NodeContainer_t::const_iterator iter = mNodeContainer.begin();
 	NodeContainer_t::const_iterator iter_end = mNodeContainer.end();
 	for (; iter != iter_end; ++iter)
@@ -157,7 +157,7 @@ namespace util
 	}
 	return isReferenced;
   }
-  
+
   bool ExternalViewLoggerImpl::isReferingToOtherNode(const string& nodeId)
   {
 	NodeContainer_t::const_iterator iter = mNodeContainer.find(nodeId);
@@ -190,7 +190,7 @@ namespace util
 		mParentNodeStack.pop();
 	  }
 	}
-	
+
 	if (hasParent(nodeId))
 	  dumpTree(mNodeContainer.find(nodeId)->second->mParentNodeId);
   }

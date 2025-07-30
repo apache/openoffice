@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -81,7 +81,7 @@ const sal_Int32 MYSCHEME_LEN = 20;
 
 rtl_StandardModuleCount g_moduleCount = MODULE_COUNT_INIT;
 
-void SAL_CALL ScriptProtocolHandler::initialize( 
+void SAL_CALL ScriptProtocolHandler::initialize(
     const css::uno::Sequence < css::uno::Any >& aArguments )
     throw ( css::uno::Exception )
 {
@@ -196,8 +196,8 @@ void SAL_CALL ScriptProtocolHandler::dispatchWithNotification(
                     if ( xListener.is() )
                     {
                         ::com::sun::star::frame::DispatchResultEvent aEvent(
-                                static_cast< ::cppu::OWeakObject* >( this ), 
-                                ::com::sun::star::frame::DispatchResultState::FAILURE, 
+                                static_cast< ::cppu::OWeakObject* >( this ),
+                                ::com::sun::star::frame::DispatchResultState::FAILURE,
                                 invokeResult );
                         try
                         {
@@ -205,7 +205,7 @@ void SAL_CALL ScriptProtocolHandler::dispatchWithNotification(
                         }
                         catch(RuntimeException & e)
                         {
-                            OSL_TRACE( 
+                            OSL_TRACE(
                                 "ScriptProtocolHandler::dispatchWithNotification: caught RuntimeException"
                                 "while dispatchFinished with failture of the execution %s",
                                 ::rtl::OUStringToOString( e.Message,
@@ -216,7 +216,7 @@ void SAL_CALL ScriptProtocolHandler::dispatchWithNotification(
                 }
             }
 
-            // Creates a ScriptProvider ( if one is not created already ) 
+            // Creates a ScriptProvider ( if one is not created already )
             createScriptProvider();
 
             Reference< provider::XScript > xFunc =
@@ -224,7 +224,7 @@ void SAL_CALL ScriptProtocolHandler::dispatchWithNotification(
             ENSURE_OR_THROW( xFunc.is(),
                 "ScriptProtocolHandler::dispatchWithNotification: validate xFunc - unable to obtain XScript interface" );
 
-           
+
             Sequence< Any > outArgs( 0 );
             Sequence< sal_Int16 > outIndex;
 
@@ -323,7 +323,7 @@ void SAL_CALL ScriptProtocolHandler::dispatchWithNotification(
         }
         catch(RuntimeException & e)
         {
-            OSL_TRACE( 
+            OSL_TRACE(
             "ScriptProtocolHandler::dispatchWithNotification: caught RuntimeException"
             "while dispatchFinished %s",
             ::rtl::OUStringToOString( e.Message,
@@ -393,10 +393,10 @@ ScriptProtocolHandler::getScriptInvocation()
     return m_xScriptInvocation.is();
 }
 
-void ScriptProtocolHandler::createScriptProvider() 
+void ScriptProtocolHandler::createScriptProvider()
 {
     if ( m_xScriptProvider.is() )
-        return;	
+        return;
 
     try
     {
@@ -438,7 +438,7 @@ void ScriptProtocolHandler::createScriptProvider()
 
             Reference< provider::XScriptProviderFactory > xFac(
                 m_xCtx->getValueByName( tmspf ), UNO_QUERY_THROW );
-                                                                                
+
             Any aContext;
             if ( getScriptInvocation() )
                 aContext = makeAny( m_xScriptInvocation );
@@ -545,8 +545,8 @@ extern "C"
 
 #undef css
 #define css ::com::sun::star
-    
-    void SAL_CALL component_getImplementationEnvironment( 
+
+    void SAL_CALL component_getImplementationEnvironment(
         const sal_Char** ppEnvironmentTypeName, uno_Environment** ppEnvironment )
     {
 		(void)ppEnvironment;

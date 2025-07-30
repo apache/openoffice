@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -973,7 +973,7 @@ static sal_Bool raiseException( const Reference< XBridgeTest > & xLBT )
 				{
 #ifdef COMPCHECK
                     //When we check if a new compiler still works then we must not call
-                    //getRuntimeException because it uses cppu::getCaughtException which 
+                    //getRuntimeException because it uses cppu::getCaughtException which
                     //does only work if all libs are build with the same runtime.
                     return true;
 #else
@@ -1042,8 +1042,8 @@ uno_Sequence* cloneSequence(const uno_Sequence* val, const Type& type)
     typelib_TypeDescription* pTdElem = pIndirectTd->pType->pType;
     sal_Int8* buf = new sal_Int8[pTdElem->nSize * val->nElements];
     sal_Int8* pBufCur = buf;
-    
-    uno_Sequence* retSeq = NULL;    
+
+    uno_Sequence* retSeq = NULL;
     switch (pTdElem->eTypeClass)
     {
     case TypeClass_SEQUENCE:
@@ -1066,7 +1066,7 @@ uno_Sequence* cloneSequence(const uno_Sequence* val, const Type& type)
         break;
     }
     delete[] buf;
-    return retSeq;    
+    return retSeq;
 }
 
 template< class T>
@@ -1083,11 +1083,11 @@ inline bool makeSurrogate(
     rOut.clear();
     if (! rOriginal.is())
         return false;
-    
+
     Environment aCppEnv_official;
     Environment aUnoEnv_ano;
     Environment aCppEnv_ano;
-    
+
     OUString aCppEnvTypeName(
         RTL_CONSTASCII_USTRINGPARAM(CPPU_CURRENT_LANGUAGE_BINDING_NAME) );
     OUString aUnoEnvTypeName(
@@ -1103,7 +1103,7 @@ inline bool makeSurrogate(
     uno_createEnvironment(
         reinterpret_cast< uno_Environment ** >( &aUnoEnv_ano ),
         aUnoEnvTypeName.pData, 0 );
-    
+
     UnoInterfaceReference unoI;
     Mapping cpp2uno( aCppEnv_official.get(), aUnoEnv_ano.get() );
     Mapping uno2cpp( aUnoEnv_ano.get(), aCppEnv_ano.get() );
@@ -1131,7 +1131,7 @@ inline bool makeSurrogate(
             OUSTR("mapping binary UNO to C++ failed!"),
             Reference< XInterface >() );
     }
-    
+
 	return rOut.is();
 }
 
@@ -1192,7 +1192,7 @@ sal_Int32 TestBridgeImpl::run( const Sequence< OUString > & rArgs )
                 break;
             }
         }
-        
+
         if (! xOriginal.is())
         {
             throw RuntimeException(
@@ -1238,7 +1238,7 @@ sal_Int32 TestBridgeImpl::run( const Sequence< OUString > & rArgs )
     {
         printf( "\n> ### test failed!\n" );
     }
-    
+
 	return 0;
 }
 
@@ -1302,7 +1302,7 @@ void * SAL_CALL component_getFactory(
                 bridge_test::TestBridgeImpl_create,
                 OUString( RTL_CONSTASCII_USTRINGPARAM(IMPLNAME) ),
                 bridge_test::getSupportedServiceNames() ) );
-        
+
 		if (xFactory.is())
 		{
 			xFactory->acquire();

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -110,12 +110,12 @@ public:
 		{}
 	~Options()
 		{}
-	
+
 	bool initOptions(int ac, char* av[]);
 
 	OString prepareHelp();
 	OString prepareVersion();
-	
+
 	const OString& getProgramName()
 		{ return m_program; }
 	const OString& getTypeReg()
@@ -125,14 +125,14 @@ public:
 	Command getCommand()
 		{ return m_command; }
 	bool verbose()
-		{ return m_bVerbose; }	
+		{ return m_bVerbose; }
 protected:
 	OString		m_program;
-	OString 	m_typeRegName;	
+	OString 	m_typeRegName;
 	OString 	m_keyName;
     Command		m_command;
     bool	    m_bVerbose;
-};	
+};
 
 bool Options::initOptions(int ac, char* av[])
 {
@@ -227,7 +227,7 @@ bool Options::initOptions(int ac, char* av[])
 		{
 		    fprintf(stderr, "%s: unknown option '%s'\n", m_program.getStr(), av[i]);
 			bRet = false;
-		}	   
+		}
 	}
 
 	return bRet;
@@ -244,16 +244,16 @@ OString Options::prepareHelp()
 	help += "    -v            = verbose output.\n";
 	help += "    -h|-?         = print this help message and exit.\n";
 	help += prepareVersion();
-	
+
 	return help;
-}	
+}
 
 OString Options::prepareVersion()
 {
 	OString version(m_program);
 	version += " Version 1.0\n\n";
 	return version;
-}	
+}
 
 static Options options;
 
@@ -270,7 +270,7 @@ int _cdecl main( int argc, char * argv[] )
 	}
 
 	OUString typeRegName( convertToFileUrl(options.getTypeReg()) );
-	
+
 	Registry typeReg;
 
 	if ( typeReg.open(typeRegName, REG_READWRITE) )
@@ -297,11 +297,11 @@ int _cdecl main( int argc, char * argv[] )
 			exit(4);
 		} else {
 		  if (options.verbose())
-			fprintf(stderr, "%s: delete key \"%s\" of registry \"%s\"\n", 
+			fprintf(stderr, "%s: delete key \"%s\" of registry \"%s\"\n",
 					options.getProgramName().getStr(), options.getKeyName().getStr(), options.getTypeReg().getStr());
 		}
 	}
-	
+
 	typeRoot.releaseKey();
 	if ( typeReg.close() )
 	{

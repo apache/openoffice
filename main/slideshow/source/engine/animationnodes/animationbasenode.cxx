@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -50,7 +50,7 @@ namespace slideshow {
 namespace internal {
 
 AnimationBaseNode::AnimationBaseNode(
-    const uno::Reference< animations::XAnimationNode >&   xNode, 
+    const uno::Reference< animations::XAnimationNode >&   xNode,
     const BaseContainerNodeSharedPtr&                     rParent,
     const NodeContext&                                    rContext )
     : BaseNode( xNode, rParent, rContext ),
@@ -65,13 +65,13 @@ AnimationBaseNode::AnimationBaseNode(
 {
     // extract native node targets
     // ===========================
-    
+
     // plain shape target
     uno::Reference< drawing::XShape > xShape( mxAnimateNode->getTarget(),
                                               uno::UNO_QUERY );
-    
+
     // distinguish 5 cases:
-    // 
+    //
     //  - plain shape target
     //  (NodeContext.mpMasterShapeSubset full set)
     //
@@ -95,7 +95,7 @@ AnimationBaseNode::AnimationBaseNode(
         }
         else
         {
-            // cases 2 & 3: subset shape 
+            // cases 2 & 3: subset shape
             mpShapeSubset = rContext.mpMasterShapeSubset;
         }
     }
@@ -103,9 +103,9 @@ AnimationBaseNode::AnimationBaseNode(
     {
         // no parent-provided shape, try to extract
         // from XAnimationNode - cases 4 and 5
-        
+
         if( xShape.is() )
-        { 
+        {
             mpShape = lookupAttributableShape( getContext().mpSubsettableShapeManager,
                                                xShape );
         }
@@ -113,18 +113,18 @@ AnimationBaseNode::AnimationBaseNode(
         {
             // no shape provided. Maybe a ParagraphTarget?
             presentation::ParagraphTarget aTarget;
-            
+
             if( !(mxAnimateNode->getTarget() >>= aTarget) )
                 ENSURE_OR_THROW(
                     false, "could not extract any target information" );
-            
+
             xShape = aTarget.Shape;
-            
+
             ENSURE_OR_THROW( xShape.is(), "invalid shape in ParagraphTarget" );
-            
+
             mpShape = lookupAttributableShape( getContext().mpSubsettableShapeManager,
                                                xShape );
-            
+
             // NOTE: For shapes with ParagraphTarget, we ignore
             // the SubItem property. We implicitly assume that it
             // is set to ONLY_TEXT.
@@ -135,14 +135,14 @@ AnimationBaseNode::AnimationBaseNode(
                 presentation::ShapeAnimationSubType::AS_WHOLE,
                 "ParagraphTarget given, but subitem not AS_TEXT or AS_WHOLE? "
                 "Make up your mind, I'll ignore the subitem." );
-            
+
             // okay, found a ParagraphTarget with a valid XShape. Does the shape
             // provide the given paragraph?
-            const DocTreeNode& rTreeNode( 
+            const DocTreeNode& rTreeNode(
                 mpShape->getTreeNodeSupplier().getTreeNode(
-                    aTarget.Paragraph, 
+                    aTarget.Paragraph,
                     DocTreeNode::NODETYPE_LOGICAL_PARAGRAPH ) );
-            
+
             // CAUTION: the creation of the subset shape
             // _must_ stay in the node constructor, since
             // Slide::prefetchShow() initializes shape
@@ -152,7 +152,7 @@ AnimationBaseNode::AnimationBaseNode(
                 new ShapeSubset( mpShape,
                                  rTreeNode,
                                  mpSubsetManager ));
-            
+
             // Override NodeContext, and flag this node as
             // a special independent subset one. This is
             // important when applying initial attributes:
@@ -167,7 +167,7 @@ AnimationBaseNode::AnimationBaseNode(
             // the slide is initially shown, and become
             // visible only when the effect starts.
             mbIsIndependentSubset = true;
-            
+
             // already enable subset right here, the
             // setup of initial shape attributes of
             // course needs the subset shape
@@ -184,12 +184,12 @@ void AnimationBaseNode::dispose()
         mpActivity->dispose();
         mpActivity.reset();
     }
-    
+
     maAttributeLayerHolder.reset();
     mxAnimateNode.clear();
     mpShape.reset();
     mpShapeSubset.reset();
-    
+
     BaseNode::dispose();
 }
 
@@ -200,12 +200,12 @@ bool AnimationBaseNode::init_st()
         mpActivity->dispose();
         mpActivity.reset();
     }
-    
+
     // note: actually disposing the activity too early might cause problems,
     // because on dequeued() it calls endAnimation(pAnim->end()), thus ending
     // animation _after_ last screen update.
     // review that end() is properly called (which calls endAnimation(), too).
-    
+
     try {
         // TODO(F2): For restart functionality, we must regenerate activities,
         // since they are not able to reset their state (or implement _that_)
@@ -215,7 +215,7 @@ bool AnimationBaseNode::init_st()
         OSL_ENSURE( false, rtl::OUStringToOString(
                         comphelper::anyToString(cppu::getCaughtException()),
                         RTL_TEXTENCODING_UTF8 ) );
-        // catch and ignore. We later handle empty activities, but for 
+        // catch and ignore. We later handle empty activities, but for
         // other nodes to function properly, the core functionality of
         // this node must remain up and running.
     }
@@ -223,7 +223,7 @@ bool AnimationBaseNode::init_st()
 }
 
 bool AnimationBaseNode::resolve_st()
-{    
+{
     // enable shape subset for automatically generated
     // subsets. Independent subsets are already setup
     // during construction time. Doing it only here
@@ -242,17 +242,17 @@ void AnimationBaseNode::activate_st()
 {
     // create new attribute layer
     maAttributeLayerHolder.createAttributeLayer( getShape() );
-    
+
     ENSURE_OR_THROW( maAttributeLayerHolder.get(),
                       "Could not generate shape attribute layer" );
-    
+
     // TODO(Q2): This affects the way mpActivity
     // works, but is performed here because of
     // locality (we're fiddling with the additive mode
     // here, anyway, and it's the only place where we
     // do). OTOH, maybe the complete additive mode
     // setup should be moved to the activities.
-    
+
     // for simple by-animations, the SMIL spec
     // requires us to emulate "0,by-value" value list
     // behaviour, with additive mode forced to "sum",
@@ -271,7 +271,7 @@ void AnimationBaseNode::activate_st()
         // determine whether an
         // Activity::getUnderlyingValue() yields the
         // DOM value, or already a summed-up conglomerate)
-        // 
+        //
         // Note that this poses problems with our
         // hybrid activity duration (time or min number of frames),
         // since if activities
@@ -286,7 +286,7 @@ void AnimationBaseNode::activate_st()
         maAttributeLayerHolder.get()->setAdditiveMode(
             mxAnimateNode->getAdditive() );
     }
-    
+
     // fake normal animation behaviour, even if we
     // show nothing.  This is the appropriate way to
     // handle errors on Activity generation, because
@@ -297,7 +297,7 @@ void AnimationBaseNode::activate_st()
         // supply Activity (and the underlying Animation) with
         // it's AttributeLayer, to perform the animation on
         mpActivity->setTargets( getShape(), maAttributeLayerHolder.get() );
-        
+
         // add to activities queue
         getContext().mrActivitiesQueue.addActivity( mpActivity );
     }
@@ -314,7 +314,7 @@ void AnimationBaseNode::deactivate_st( NodeState eDestState )
         if (mpActivity)
             mpActivity->end();
     }
-    
+
     if (isDependentSubsettedShape()) {
         // for dependent subsets, remove subset shape
         // from layer, re-integrate subsetted part
@@ -325,7 +325,7 @@ void AnimationBaseNode::deactivate_st( NodeState eDestState )
         // will effectively re-integrate the subsetted
         // part into the original shape (whose
         // animation will hopefully have ended, too)
-        
+
         // this statement will save a whole lot of
         // sprites for iterated text effects, since
         // those sprites will only exist during the
@@ -334,26 +334,26 @@ void AnimationBaseNode::deactivate_st( NodeState eDestState )
             mpShapeSubset->disableSubsetShape();
         }
     }
-    
+
     if (eDestState == ENDED) {
-        
+
         // no shape anymore, no layer needed:
         maAttributeLayerHolder.reset();
-        
+
         if (! isDependentSubsettedShape()) {
-            
+
             // for all other shapes, removing the
             // attribute layer quite possibly changes
             // shape display. Thus, force update
             AttributableShapeSharedPtr const pShape( getShape() );
-            
+
             // don't anybody dare to check against
             // pShape->isVisible() here, removing the
             // attribute layer might actually make the
             // shape invisible!
             getContext().mpSubsettableShapeManager->notifyShapeUpdate( pShape );
         }
-        
+
         if (mpActivity) {
             // kill activity, if still running
             mpActivity->dispose();
@@ -364,7 +364,7 @@ void AnimationBaseNode::deactivate_st( NodeState eDestState )
 
 bool AnimationBaseNode::hasPendingAnimation() const
 {
-    // TODO(F1): This might not always be true. Are there 'inactive' 
+    // TODO(F1): This might not always be true. Are there 'inactive'
     // animation nodes?
     return true;
 }
@@ -373,7 +373,7 @@ bool AnimationBaseNode::hasPendingAnimation() const
 void AnimationBaseNode::showState() const
 {
     BaseNode::showState();
-    
+
     VERBOSE_TRACE( "AnimationBaseNode info: independent subset=%s",
                    mbIsIndependentSubset ? "y" : "n" );
 }
@@ -383,17 +383,17 @@ ActivitiesFactory::CommonParameters
 AnimationBaseNode::fillCommonParameters() const
 {
     double nDuration = 0.0;
-    
+
     // TODO(F3): Duration/End handling is barely there
     if( !(mxAnimateNode->getDuration() >>= nDuration) ) {
         mxAnimateNode->getEnd() >>= nDuration; // Wah.
     }
-    
+
     // minimal duration we fallback to (avoid 0 here!)
     nDuration = ::std::max( 0.001, nDuration );
-    
+
     const bool bAutoReverse( mxAnimateNode->getAutoReverse() );
-    
+
     boost::optional<double> aRepeats;
     double nRepeats = 0;
 	bool bRepeatIndefinite = false;
@@ -434,7 +434,7 @@ AnimationBaseNode::fillCommonParameters() const
             // active duration. Thus, calc repeat
             // count with already adapted simple
             // duration (twice the specified duration)
-            
+
             // convert duration back to repeat counts
             if( bAutoReverse )
                 aRepeats.reset( nRepeats / (2.0 * nDuration) );
@@ -444,7 +444,7 @@ AnimationBaseNode::fillCommonParameters() const
         else {
             // no double value for both values - Timing::INDEFINITE?
             animations::Timing eTiming;
-            
+
             if( !(mxAnimateNode->getRepeatDuration() >>= eTiming) ||
                 eTiming != animations::Timing_INDEFINITE )
             {
@@ -472,7 +472,7 @@ AnimationBaseNode::fillCommonParameters() const
         nDeceleration = std::max( nDeceleration,
                                   xAnimationNode->getDecelerate() );
     }
-    
+
     EventSharedPtr pEndEvent;
     if (pSelf) {
         pEndEvent = makeEvent(

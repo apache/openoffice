@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -60,13 +60,13 @@ using namespace jfw_plugin;
 
 namespace {
 
-struct PluginMutex: public ::rtl::Static<osl::Mutex, PluginMutex> {}; 
+struct PluginMutex: public ::rtl::Static<osl::Mutex, PluginMutex> {};
 
 #if defined UNX
 OString getPluginJarPath(
     const OUString & sVendor,
     const OUString& sLocation,
-    const OUString& sVersion) 
+    const OUString& sVersion)
 {
     OString ret;
     OUString sName1(RTL_CONSTASCII_USTRINGPARAM("javaplugin.jar"));
@@ -78,7 +78,7 @@ OString getPluginJarPath(
         SunVersion ver150("1.5.0-ea");
         SunVersion ver(sVersion);
         OSL_ASSERT(ver142 && ver150 && ver);
-        
+
         OUString sName;
         if (ver < ver142)
         {
@@ -111,12 +111,12 @@ OString getPluginJarPath(
                 == osl_File_E_None)
             {
                 sPath = sPath1 + OUString::createFromAscii(sep) + sPath2;
-            }   
+            }
         }
         OSL_ASSERT(sPath.getLength());
     }
     ret = rtl::OUStringToOString(sPath, osl_getThreadTextEncoding());
-    
+
     return ret;
 }
 #endif // UNX
@@ -146,7 +146,7 @@ JavaInfo* createJavaInfo(const rtl::Reference<VendorBase> & info)
         buf.append(info->getLibraryPaths());
         buf.appendAscii("\n");
     }
-    
+
     rtl::OUString sVendorData = buf.makeStringAndClear();
     rtl::ByteSequence byteSeq( (sal_Int8*) sVendorData.pData->buffer,
                                sVendorData.getLength() * sizeof(sal_Unicode));
@@ -154,7 +154,7 @@ JavaInfo* createJavaInfo(const rtl::Reference<VendorBase> & info)
     rtl_byte_sequence_acquire(pInfo->arVendorData);
 
     return pInfo;
-}   
+}
 
 rtl::OUString getRuntimeLib(const rtl::ByteSequence & data)
 {
@@ -164,7 +164,7 @@ rtl::OUString getRuntimeLib(const rtl::ByteSequence & data)
     //the runtime lib is on the first line
     sal_Int32 index = 0;
     rtl::OUString aToken = sData.getToken( 0, '\n', index);
-    
+
     return aToken;
 }
 
@@ -223,14 +223,14 @@ javaPluginError jfw_plugin_getAllJavaInfos(
         getAllJREInfos();
     vector<rtl::Reference<VendorBase> > vecVerifiedInfos;
 
-    typedef vector<rtl::Reference<VendorBase> >::iterator it;    
+    typedef vector<rtl::Reference<VendorBase> >::iterator it;
     for (it i= vecInfos.begin(); i != vecInfos.end(); i++)
     {
         const rtl::Reference<VendorBase>& cur = *i;
-        
+
         if (ouVendor.equals(cur->getVendor()) == sal_False)
             continue;
-        
+
         if (ouMinVer.getLength() > 0)
         {
             try
@@ -244,11 +244,11 @@ javaPluginError jfw_plugin_getAllJavaInfos(
                 JFW_ENSURE(
                     0,OUSTR("[Java framework]sunjavaplugin does not know version: ")
                     + ouMinVer + OUSTR(" for vendor: ") + cur->getVendor()
-                    + OUSTR(" .Check minimum Version.") );                    
+                    + OUSTR(" .Check minimum Version.") );
                 return JFW_PLUGIN_E_WRONG_VERSION_FORMAT;
             }
         }
-        
+
         if (ouMaxVer.getLength() > 0)
         {
             try
@@ -266,7 +266,7 @@ javaPluginError jfw_plugin_getAllJavaInfos(
                 return JFW_PLUGIN_E_WRONG_VERSION_FORMAT;
             }
         }
-        
+
         if( arExcludeList != NULL)
         {
             bool bExclude = false;
@@ -323,7 +323,7 @@ javaPluginError jfw_plugin_getJavaInfoByPath(
     JavaInfo ** ppInfo)
 {
     javaPluginError errcode = JFW_PLUGIN_E_NONE;
-    
+
     OSL_ASSERT(path);
     OSL_ASSERT(sVendor);
     OSL_ASSERT(sMinVersion);
@@ -340,7 +340,7 @@ javaPluginError jfw_plugin_getJavaInfoByPath(
     OSL_ASSERT( ! (arExcludeList == NULL && nLenList > 0));
     if (arExcludeList == NULL && nLenList > 0)
         return JFW_PLUGIN_E_INVALID_ARG;
-    
+
     OUString ouVendor(sVendor);
     OUString ouMinVer(sMinVersion);
     OUString ouMaxVer(sMaxVersion);
@@ -348,15 +348,15 @@ javaPluginError jfw_plugin_getJavaInfoByPath(
     OSL_ASSERT(ouVendor.getLength() > 0);
     if (ouVendor.getLength() == 0)
         return JFW_PLUGIN_E_INVALID_ARG;
-        
+
     rtl::Reference<VendorBase> aVendorInfo = getJREInfoByPath(ouPath);
     if (aVendorInfo.is() == sal_False)
         return JFW_PLUGIN_E_NO_JRE;
-    
+
     //Check if the detected JRE matches the version requirements
     if (ouVendor.equals(aVendorInfo->getVendor()) == sal_False)
         return JFW_PLUGIN_E_NO_JRE;
-    
+
     if (ouMinVer.getLength() > 0)
     {
         int nRes = 0;
@@ -376,7 +376,7 @@ javaPluginError jfw_plugin_getJavaInfoByPath(
         if (nRes < 0)
             return JFW_PLUGIN_E_FAILED_VERSION;
     }
-    
+
     if (ouMaxVer.getLength() > 0)
     {
         int nRes = 0;
@@ -396,7 +396,7 @@ javaPluginError jfw_plugin_getJavaInfoByPath(
         if (nRes > 0)
             return JFW_PLUGIN_E_FAILED_VERSION;
     }
-    
+
     if( arExcludeList != NULL)
     {
         for (int i = 0; i < nLenList; i++)
@@ -433,7 +433,7 @@ javaPluginError jfw_plugin_getJavaInfoByPath(
  */
 extern "C"
 javaPluginError jfw_plugin_startJavaVirtualMachine(
-    const JavaInfo *pInfo, 
+    const JavaInfo *pInfo,
     const JavaVMOption* arOptions,
     sal_Int32 cOptions,
     JavaVM ** ppVm,
@@ -488,7 +488,7 @@ javaPluginError jfw_plugin_startJavaVirtualMachine(
     typedef jint JNICALL JNI_CreateVM_Type(JavaVM **, JNIEnv **, void *);
     rtl::OUString sSymbolCreateJava(
             RTL_CONSTASCII_USTRINGPARAM("JNI_CreateJavaVM"));
-        
+
     JNI_CreateVM_Type * pCreateJavaVM = (JNI_CreateVM_Type *) osl_getFunctionSymbol(
         moduleRt, sSymbolCreateJava.pData);
     if (!pCreateJavaVM)
@@ -510,7 +510,7 @@ javaPluginError jfw_plugin_startJavaVirtualMachine(
 
     std::vector<JavaVMOption> vecOptions;
     vecOptions.reserve(cOptions + 1);
-    
+
     // We set an abort handler which is called when the VM calls _exit during
     // JNI_CreateJavaVM. This happens when the LD_LIBRARY_PATH does not contain
     // all some directories of the Java installation. This is necessary for
@@ -630,7 +630,7 @@ javaPluginError jfw_plugin_startJavaVirtualMachine(
         // set err to a positive number, so as or recognize that an abort (longjmp)
         //occurred
         err= 1;
-    
+
     if(err != 0)
     {
         rtl::OUString message;
@@ -652,8 +652,8 @@ javaPluginError jfw_plugin_startJavaVirtualMachine(
         *ppVm = pJavaVM;
         JFW_TRACE2( "[Java framework] sunjavaplugin" SAL_DLLEXTENSION " has created a VM.\n");
     }
-        
-        
+
+
    return errcode;
 }
 
@@ -689,7 +689,7 @@ javaPluginError jfw_plugin_existJRE(const JavaInfo *pInfo, sal_Bool *exist)
     {
         rtl::OUString sRuntimeLib = getRuntimeLib(pInfo->arVendorData);
         JFW_TRACE2(OUSTR("[Java framework] Checking existence of Java runtime library.\n"));
-	 
+
         ::osl::DirectoryItem itemRt;
         ::osl::File::RC rc_itemRt = ::osl::DirectoryItem::get(sRuntimeLib, itemRt);
         if (::osl::File::E_None == rc_itemRt)

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -189,7 +189,7 @@ static OUString getDescription( const Any& rTarget, bool bWithText = true )
 		{
 			Reference< XTextRange > xParagraph;
 			xEnumeration->nextElement() >>= xParagraph;
-								
+
 			if( xParagraph.is() )
 				aDescription = xParagraph->getString();
 		}
@@ -288,7 +288,7 @@ void CustomAnimationListEntryItem::Paint( const Point& rPos, SvLBox& rDev, sal_u
 		{
 		case EffectCommands::TOGGLEPAUSE:	nImage = IMG_CUSTOMANIMATION_MEDIA_PAUSE; break;
 		case EffectCommands::STOP:			nImage = IMG_CUSTOMANIMATION_MEDIA_STOP; break;
-		case EffectCommands::PLAY:			
+		case EffectCommands::PLAY:
 		default:							nImage = IMG_CUSTOMANIMATION_MEDIA_PLAY; break;
 		}
 		break;
@@ -485,7 +485,7 @@ CustomAnimationList::CustomAnimationList( ::Window* pParent, const ResId& rResId
 
 const Image&  CustomAnimationList::getImage( sal_uInt16 nId, bool bHighContrast )
 {
-	DBG_ASSERT( (nId >= IMG_CUSTOMANIMATION_ON_CLICK) && (nId <= IMG_CUSTOMANIMATION_MEDIA_STOP), "sd::CustomAnimationList::getImage(), illegal index!" ); 
+	DBG_ASSERT( (nId >= IMG_CUSTOMANIMATION_ON_CLICK) && (nId <= IMG_CUSTOMANIMATION_MEDIA_STOP), "sd::CustomAnimationList::getImage(), illegal index!" );
 
 	if( bHighContrast )
 		nId += 1;
@@ -518,14 +518,14 @@ void CustomAnimationList::KeyInput( const KeyEvent& rKEvt )
 	{
 		case KEY_DELETE:	mpController->onContextMenu( CM_REMOVE ); return;
 		case KEY_INSERT:	mpController->onContextMenu( CM_CREATE ); return;
-		case KEY_SPACE:		
+		case KEY_SPACE:
 			{
 				const Point aPos;
-				const CommandEvent aCEvt( aPos, COMMAND_CONTEXTMENU ); 
+				const CommandEvent aCEvt( aPos, COMMAND_CONTEXTMENU );
 				Command( aCEvt );
 				return;
 			}
-			
+
 	}
 
 	::SvTreeListBox::KeyInput( rKEvt );
@@ -541,7 +541,7 @@ void CustomAnimationList::select( CustomAnimationEffectPtr pEffect, bool bSelect
 	while( pEntry )
 	{
 		if( pEntry->getEffect() == pEffect )
-		{	
+		{
 			Select( pEntry, bSelect );
 			break;
 		}

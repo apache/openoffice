@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -24,7 +24,7 @@
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_slideshow.hxx"
 
-#include <boost/current_function.hpp> 
+#include <boost/current_function.hpp>
 #include <basegfx/numeric/ftools.hxx>
 #include <com/sun/star/animations/TransitionType.hpp>
 #include <com/sun/star/animations/TransitionSubType.hpp>
@@ -42,7 +42,7 @@ namespace internal {
 namespace {
 
 static const TransitionInfo lcl_transitionInfo[] =
-{    
+{
     {
         0,
         0,
@@ -103,7 +103,7 @@ static const TransitionInfo lcl_transitionInfo[] =
         true, // 'out' by parameter sweep inversion
         false // scale isotrophically to target size
     },
-    
+
     {
         // mapped to BoxWipe:
         animations::TransitionType::BOXWIPE,
@@ -200,7 +200,7 @@ static const TransitionInfo lcl_transitionInfo[] =
         true, // 'out' by parameter sweep inversion
         false // scale isotrophically to target size
     },
-    
+
     {
         // mapped to FourBoxWipe:
         animations::TransitionType::FOURBOXWIPE,
@@ -225,7 +225,7 @@ static const TransitionInfo lcl_transitionInfo[] =
         true, // 'out' by parameter sweep inversion
         false // scale isotrophically to target size
     },
-    
+
     {
         // mapped to BarnDoorWipe:
         animations::TransitionType::BARNDOORWIPE,
@@ -274,7 +274,7 @@ static const TransitionInfo lcl_transitionInfo[] =
         true, // 'out' by parameter sweep inversion
         false // scale isotrophically to target size
     },
-    
+
     {
         // mapped to BarWipePolyPolygon:
         animations::TransitionType::DIAGONALWIPE,
@@ -300,7 +300,7 @@ static const TransitionInfo lcl_transitionInfo[] =
         false // scale isotrophically to target size
     },
 
-                        
+
     {
         animations::TransitionType::BOWTIEWIPE,
         animations::TransitionSubType::VERTICAL,
@@ -325,7 +325,7 @@ static const TransitionInfo lcl_transitionInfo[] =
         true,                   // 'out' by parameter sweep inversion
         false                   // scale isotrophically to target size
     },
-    
+
     {
         // mapped to BarnDoorWipe (doubled=true):
         animations::TransitionType::MISCDIAGONALWIPE,
@@ -350,7 +350,7 @@ static const TransitionInfo lcl_transitionInfo[] =
         true, // 'out' by parameter sweep inversion
         false // scale isotrophically to target size
     },
-    
+
     {
         // mapped to VeeWipe:
         animations::TransitionType::VEEWIPE,
@@ -398,7 +398,7 @@ static const TransitionInfo lcl_transitionInfo[] =
         false // scale isotrophically to target size
     },
 
-                        
+
     {
         animations::TransitionType::BARNVEEWIPE,
         animations::TransitionSubType::TOP,
@@ -447,7 +447,7 @@ static const TransitionInfo lcl_transitionInfo[] =
         true,                   // 'out' by parameter sweep inversion
         false                   // scale isotrophically to target size
     },
-    
+
     {
         // mapped to ZigZagWipe:
         animations::TransitionType::ZIGZAGWIPE,
@@ -496,7 +496,7 @@ static const TransitionInfo lcl_transitionInfo[] =
         true, // 'out' by parameter sweep inversion
         false // scale isotrophically to target size
     },
-    
+
     {
         // mapped to IrisWipe:
         animations::TransitionType::IRISWIPE,
@@ -522,7 +522,7 @@ static const TransitionInfo lcl_transitionInfo[] =
         false // scale isotrophically to target size
     },
 
-                        
+
     {
         // mapped to FigureWipe(triangle):
         animations::TransitionType::TRIANGLEWIPE,
@@ -571,7 +571,7 @@ static const TransitionInfo lcl_transitionInfo[] =
         true, // 'out' by parameter sweep inversion
         false // scale isotrophically to target size
     },
-    
+
     {
         // mapped to FigureWipe(arrowHead):
         animations::TransitionType::ARROWHEADWIPE,
@@ -620,7 +620,7 @@ static const TransitionInfo lcl_transitionInfo[] =
         true, // 'out' by parameter sweep inversion
         false // scale isotrophically to target size
     },
-    
+
     {
         // mapped to FigureWipe(pentagon):
         animations::TransitionType::PENTAGONWIPE,
@@ -645,7 +645,7 @@ static const TransitionInfo lcl_transitionInfo[] =
         true, // 'out' by parameter sweep inversion
         false // scale isotrophically to target size
     },
-    
+
     {
         // mapped to FigureWipe(hexagon):
         animations::TransitionType::HEXAGONWIPE,
@@ -670,7 +670,7 @@ static const TransitionInfo lcl_transitionInfo[] =
         true, // 'out' by parameter sweep inversion
         false // scale isotrophically to target size
     },
-    
+
     {
         // mapped to EllipseWipe:
         animations::TransitionType::ELLIPSEWIPE,
@@ -708,7 +708,7 @@ static const TransitionInfo lcl_transitionInfo[] =
         false // scale isotrophically to target size
     },
 
-                        
+
     {
         animations::TransitionType::EYEWIPE,
         animations::TransitionSubType::HORIZONTAL,
@@ -757,7 +757,7 @@ static const TransitionInfo lcl_transitionInfo[] =
         true,                   // 'out' by parameter sweep inversion
         false                   // scale isotrophically to target size
     },
-    
+
     {
         // mapped to FigureWipe(star, points=4):
         animations::TransitionType::STARWIPE,
@@ -794,7 +794,7 @@ static const TransitionInfo lcl_transitionInfo[] =
         true, // 'out' by parameter sweep inversion
         false // scale isotrophically to target size
     },
-    
+
     {
         animations::TransitionType::MISCSHAPEWIPE,
         animations::TransitionSubType::HEART,
@@ -819,7 +819,7 @@ static const TransitionInfo lcl_transitionInfo[] =
         true,                   // 'out' by parameter sweep inversion
         false                   // scale isotrophically to target size
     },
-    
+
     {
         // mapped to ClockWipe:
         animations::TransitionType::CLOCKWIPE,
@@ -868,7 +868,7 @@ static const TransitionInfo lcl_transitionInfo[] =
         true, // 'out' by parameter sweep inversion
         false // scale isotrophically to target size
     },
-    
+
     {
         // mapped to PinWheelWipe:
         animations::TransitionType::PINWHEELWIPE,
@@ -941,7 +941,7 @@ static const TransitionInfo lcl_transitionInfo[] =
         true, // 'out' by parameter sweep inversion
         true // scale isotrophically to target size, like ppt
     },
-    
+
     {
         // mapped to SweepWipe (center=true, single=true):
         animations::TransitionType::SINGLESWEEPWIPE,
@@ -1038,7 +1038,7 @@ static const TransitionInfo lcl_transitionInfo[] =
         true, // 'out' by parameter sweep inversion
         false // scale isotrophically to target size
     },
-    
+
     {
         // mapped to FanWipe(center=true):
         animations::TransitionType::FANWIPE,
@@ -1111,7 +1111,7 @@ static const TransitionInfo lcl_transitionInfo[] =
         true, // 'out' by parameter sweep inversion
         false // scale isotrophically to target size
     },
-    
+
     {
         // mapped to FanWipe(center=true, single=false, fanIn=false):
         animations::TransitionType::DOUBLEFANWIPE,
@@ -1160,7 +1160,7 @@ static const TransitionInfo lcl_transitionInfo[] =
         true, // 'out' by parameter sweep inversion
         false // scale isotrophically to target size
     },
-    
+
     {
         // mapped to SweepWipe (center=true, single=false):
         animations::TransitionType::DOUBLESWEEPWIPE,
@@ -1235,7 +1235,7 @@ static const TransitionInfo lcl_transitionInfo[] =
         true, // 'out' by parameter sweep inversion
         false // scale isotrophically to target size
     },
-    
+
     {
         animations::TransitionType::SALOONDOORWIPE,
         animations::TransitionSubType::TOP, // (251)
@@ -1332,7 +1332,7 @@ static const TransitionInfo lcl_transitionInfo[] =
         true,                   // 'out' by parameter sweep inversion
         false                   // scale isotrophically to target size
     },
-    
+
     {
         // mapped to SnakeWipe:
         animations::TransitionType::SNAKEWIPE,
@@ -1405,7 +1405,7 @@ static const TransitionInfo lcl_transitionInfo[] =
         true, // 'out' by parameter sweep inversion
         false // scale isotrophically to target size
     },
-    
+
     {
         // mapped to SpiralWipe:
         animations::TransitionType::SPIRALWIPE,
@@ -1502,7 +1502,7 @@ static const TransitionInfo lcl_transitionInfo[] =
         true, // 'out' by parameter sweep inversion
         false // scale isotrophically to target size
     },
-    
+
     {
         // mapped to ParallelSnakesWipe:
         animations::TransitionType::PARALLELSNAKESWIPE,
@@ -1624,7 +1624,7 @@ static const TransitionInfo lcl_transitionInfo[] =
         true, // 'out' by parameter sweep inversion
         false // scale isotrophically to target size
     },
-    
+
     {
         // mapped to BoxSnakesWipe:
         animations::TransitionType::BOXSNAKESWIPE,
@@ -1697,7 +1697,7 @@ static const TransitionInfo lcl_transitionInfo[] =
         true, // 'out' by parameter sweep inversion
         false // scale isotrophically to target size
     },
-    
+
     {
         // mapped to WaterfallWipe:
         animations::TransitionType::WATERFALLWIPE,
@@ -1746,7 +1746,7 @@ static const TransitionInfo lcl_transitionInfo[] =
         true, // 'out' by parameter sweep inversion
         false // scale isotrophically to target size
     },
-    
+
     {
         animations::TransitionType::PUSHWIPE,
         animations::TransitionSubType::FROMLEFT,
@@ -2011,7 +2011,7 @@ static const TransitionInfo lcl_transitionInfo[] =
         true,                   // 'out' by parameter sweep inversion
         false                   // scale isotrophically to target size
     },
-    
+
     {
         // mapped to RandomWipe:
         animations::TransitionType::RANDOMBARWIPE,
@@ -2036,7 +2036,7 @@ static const TransitionInfo lcl_transitionInfo[] =
         true, // 'out' by parameter sweep inversion
         false // scale isotrophically to target size
     },
-    
+
     {
         // mapped to CheckerBoard:
         animations::TransitionType::CHECKERBOARDWIPE,
@@ -2074,7 +2074,7 @@ static const TransitionInfo lcl_transitionInfo[] =
         true, // 'out' by parameter sweep inversion
         true // scale isotrophically to target size
     },
-                        
+
     /////////////////////////////////////////////////////////
     // NOTE: This entry MUST be the last, to keep
     // createSlideTransition() from infinite recursion. Because
@@ -2106,7 +2106,7 @@ const TransitionInfo* TransitionFactory::getTransitionInfo(
     static const ::std::size_t lcl_tableSize(
         sizeof(lcl_transitionInfo)/sizeof(TransitionInfo) );
     static const TransitionInfo* pTableEnd = lcl_transitionInfo+lcl_tableSize;
-    
+
     const TransitionInfo* pRes = ::std::find_if(
         lcl_transitionInfo, pTableEnd,
         TransitionInfo::Comparator( nTransitionType,

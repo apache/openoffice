@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -68,7 +68,7 @@ namespace rptui
     // {
     //     const StyleSettings& aStyleSettings = Application::GetSettings().GetStyleSettings();
     //     sal_Bool bHighContrast = aStyleSettings.GetHighContrastMode();
-    //     
+    //
     //     Color aGetFaceColor = aStyleSettings.GetFaceColor();
     //     Color aGetCheckedColor = aStyleSettings.GetCheckedColor();
     //     Color aGetLightColor = aStyleSettings.GetLightColor();
@@ -113,11 +113,11 @@ namespace rptui
     //     Color aGetHighlightLinkColor = aStyleSettings.GetHighlightLinkColor();
     //     Color aGetMonoColor = aStyleSettings.GetMonoColor();
     //     Color aGetActiveTabColor = aStyleSettings.GetActiveTabColor();
-    //     Color aGetInactiveTabColor = aStyleSettings.GetInactiveTabColor();            
-    // 
+    //     Color aGetInactiveTabColor = aStyleSettings.GetInactiveTabColor();
+    //
     //     Color aWindowColor = aStyleSettings.GetWindowColor();
     //     Color aLabelColor  = aStyleSettings.GetLabelTextColor();
-    //     
+    //
     //     // if (m_nTextColor == -1)
     //     // {
     //     //    svtools::ExtendedColorConfig aConfig;
@@ -125,14 +125,14 @@ namespace rptui
     //     // }
     //     return aLabelColor.GetColor();
     // }
-    
+
 	//--------------------------------------------------------------------
     FixedTextColor::~FixedTextColor()
     {
         DBG_DTOR(rpt_FixedTextColor,NULL);
     }
     // -----------------------------------------------------------------------------
-    
+
     void FixedTextColor::notifyPropertyChange( const beans::PropertyChangeEvent& _rEvent )
     {
         // (void)_rEvent;
@@ -155,7 +155,7 @@ namespace rptui
     	    DBG_UNHANDLED_EXCEPTION();
         }
     }
-    
+
     // -----------------------------------------------------------------------------
     void FixedTextColor::setPropertyTextColor(const uno::Reference< awt::XVclWindowPeer >& _xVclWindowPeer, sal_Int32 _nTextColor)
     {
@@ -167,7 +167,7 @@ namespace rptui
     {
         handle(_rxElement);
     }
-    
+
 // -----------------------------------------------------------------------------
     void FixedTextColor::handle( const uno::Reference< uno::XInterface >& _rxElement )
     {
@@ -183,9 +183,9 @@ namespace rptui
             sal_Bool bIsDark = sal_False;
             const sal_Int32 nBackColor( xFixedText->getControlBackground() );
             if ((sal_uInt32)nBackColor == COL_TRANSPARENT)
-            {                
+            {
                 uno::Reference <report::XSection> xSection(xFixedText->getParent(), uno::UNO_QUERY_THROW);
-                
+
                 sal_Bool bSectionBackColorIsTransparent = xSection->getBackTransparent();
                 if (bSectionBackColorIsTransparent)
                 {
@@ -205,8 +205,8 @@ namespace rptui
             {
                 Color aLabelBackColor(nBackColor);
                 bIsDark = aLabelBackColor.IsDark();
-            }            
-            
+            }
+
             uno::Reference<awt::XVclWindowPeer> xVclWindowPeer = getVclWindowPeer(xFixedText);
             if (bIsDark)
             {
@@ -219,25 +219,25 @@ namespace rptui
                 util::Color aLabelColor = xFixedText->getCharColor();
                 setPropertyTextColor(xVclWindowPeer, aLabelColor);
             }
-            
+
         }
         catch( const uno::Exception& )
         {
         	DBG_UNHANDLED_EXCEPTION();
         }
     }
-    
+
 
 // -----------------------------------------------------------------------------
     // XPropertyChangeListener
     uno::Reference<awt::XControl> FixedTextColor::getXControl(const uno::Reference< report::XFixedText >& _xFixedText) throw(uno::RuntimeException)
     {
-            
+
         uno::Reference<awt::XControl> xControl;
         OReportController *pController = (OReportController *)&m_rReportController;
-            
+
         ::boost::shared_ptr<OReportModel> pModel = pController->getSdrModel();
-            
+
             uno::Reference<report::XSection> xSection(_xFixedText->getSection());
             if ( xSection.is() )
             {
@@ -261,7 +261,7 @@ namespace rptui
             }
         return xControl;
     }
-    
+
 // -----------------------------------------------------------------------------
     uno::Reference<awt::XVclWindowPeer> FixedTextColor::getVclWindowPeer(const uno::Reference< report::XFixedText >& _xComponent) throw(uno::RuntimeException)
     {
@@ -275,5 +275,5 @@ namespace rptui
 
 
 
-    
+
 }

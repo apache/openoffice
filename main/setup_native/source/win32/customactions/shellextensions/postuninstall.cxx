@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -57,7 +57,7 @@ static std::_tstring GetMsiProperty( MSIHANDLE handle, const std::_tstring& sPro
         LPTSTR buffer = reinterpret_cast<LPTSTR>(_alloca(nBytes));
         ZeroMemory( buffer, nBytes );
         MsiGetProperty(handle, sProperty.c_str(), buffer, &nChars);
-        result = buffer;            
+        result = buffer;
 	}
 
 	return	result;
@@ -104,11 +104,11 @@ extern "C" UINT __stdcall ExecutePostUninstallScript( MSIHANDLE handle )
 	DWORD	nValueSize = sizeof(szValue);
 	HKEY	hKey;
 	std::_tstring	sInstDir;
-	
+
 	std::_tstring	sProductKey = GetMsiProperty( handle, TEXT("FINDPRODUCT") );
 
 	// MessageBox( NULL, sProductKey.c_str(), "Titel", MB_OK );
-	
+
 	if ( ERROR_SUCCESS == RegOpenKey( HKEY_CURRENT_USER,  sProductKey.c_str(), &hKey ) )
 	{
 		if ( ERROR_SUCCESS == RegQueryValueEx( hKey, TEXT("INSTALLLOCATION"), NULL, NULL, (LPBYTE)szValue, &nValueSize ) )
@@ -132,7 +132,7 @@ extern "C" UINT __stdcall ExecutePostUninstallScript( MSIHANDLE handle )
 	std::_tstring	sCommand = _T("RUNDLL32.EXE ");
 
 	// MessageBox( NULL, sInfFile.c_str(), "Titel", MB_OK );
-	
+
 	if ( (LONG)GetVersion() < 0 )
 		sCommand += _T("setupx.dll");
 	else

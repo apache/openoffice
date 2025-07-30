@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -392,7 +392,7 @@ static Unicode2LangType aLangFromCodeChart[]= {
 	{0xA720, 0xA7FF, LANGUAGE_ENGLISH},				// Latin Extended-D
 	{0xAC00, 0xD7AF, LANGUAGE_KOREAN},				// Hangul Syllables, Korean-specific
 	{0xF900, 0xFAFF, LANGUAGE_DEFAULT_CJK},			// CJK Compatibility Ideographs
-	{0xFB00, 0xFB4F, LANGUAGE_HEBREW},				// Hebrew Presentation Forms 
+	{0xFB00, 0xFB4F, LANGUAGE_HEBREW},				// Hebrew Presentation Forms
 	{0xFB50, 0xFDFF, LANGUAGE_ARABIC_PRIMARY_ONLY},	// Arabic Presentation Forms-A
 	{0xFE70, 0xFEFE, LANGUAGE_ARABIC_PRIMARY_ONLY},	// Arabic Presentation Forms-B
 	{0xFF65, 0xFF9F, LANGUAGE_JAPANESE},			// Japanese Halfwidth Katakana variant
@@ -465,7 +465,7 @@ LanguageType MapCharToLanguage( sal_UCS4 uChar )
 	while( nLow <= nHigh )
 	{
 		int nMiddle = (nHigh + nLow) / 2;
-		if( uChar < aLangFromCodeChart[ nMiddle].mnMinCode ) 
+		if( uChar < aLangFromCodeChart[ nMiddle].mnMinCode )
 			nHigh = nMiddle - 1;
 		else if( uChar > aLangFromCodeChart[ nMiddle].mnMaxCode )
 			nLow = nMiddle + 1;
@@ -512,7 +512,7 @@ bool WinGlyphFallbackSubstititution::HasMissingChars( const ImplFontData* pFace,
 
 		// create HFONT from log font
 		HFONT hNewFont = ::CreateFontIndirectW( &aLogFont );
-		// select the new font into device 
+		// select the new font into device
 		HFONT hOldFont = ::SelectFont( mhDC, hNewFont );
 
 		// read CMAP table to update their pCharMap
@@ -570,7 +570,7 @@ bool WinGlyphFallbackSubstititution::FindFontSubstitute( ImplFontSelectData& rFo
 		aLocale = Application::GetSettings().GetUILocale();
 
 	// first level fallback:
-	// try use the locale specific default fonts defined in VCL.xcu 
+	// try use the locale specific default fonts defined in VCL.xcu
 	const ImplDevFontList* pDevFontList = ImplGetSVData()->maGDIData.mpScreenFontList;
 	/*const*/ ImplDevFontListData* pDevFont = pDevFontList->ImplFindByLocale( aLocale );
 	if( pDevFont )
@@ -583,7 +583,7 @@ bool WinGlyphFallbackSubstititution::FindFontSubstitute( ImplFontSelectData& rFo
 		}
 	}
 
-	// are the missing characters symbols? 
+	// are the missing characters symbols?
 	pDevFont = pDevFontList->ImplFindByAttributes( IMPL_FONT_ATTR_SYMBOL,
 					rFontSelData.meWeight, rFontSelData.meWidthType,
 					rFontSelData.meFamily, rFontSelData.meItalic, rFontSelData.maSearchName );
@@ -604,7 +604,7 @@ bool WinGlyphFallbackSubstititution::FindFontSubstitute( ImplFontSelectData& rFo
 	int nTestFontCount = pTestFontList->Count();
 	if( nTestFontCount > MAX_GFBFONT_COUNT )
 		nTestFontCount = MAX_GFBFONT_COUNT;
-	
+
 	bool bFound = false;
 	for( int i = 0; i < nTestFontCount; ++i )
 	{
@@ -2101,7 +2101,7 @@ bool ImplAddTempFont( SalData& rSalData, const String& rFontFileURL )
 #ifdef FR_PRIVATE
     nRet = __AddFontResourceExW( reinterpret_cast<LPCWSTR>(aUSytemPath.getStr()), FR_PRIVATE, NULL );
 #endif
-    
+
 	if ( !nRet )
     {
         static int nCounter = 0;
@@ -2177,7 +2177,7 @@ static bool ImplGetFontAttrFromFile( const String& rFontFileURL,
     OSL_VERIFY( !osl::FileBase::getSystemPathFromFileURL( rFontFileURL, aUSytemPath ) );
 
     // get FontAttributes from a *fot file
-    // TODO: use GetTTGlobalFontInfo() to access the font directly 
+    // TODO: use GetTTGlobalFontInfo() to access the font directly
     rDFA.mnQuality    = 1000;
     rDFA.mbDevice     = true;
     rDFA.meFamily     = FAMILY_DONTKNOW;
@@ -2493,23 +2493,23 @@ bool WinSalGraphics::GetGlyphOutline( sal_GlyphId aGlyphId,
     int     nPtSize = 512;
     Point*  pPoints = new Point[ nPtSize ];
     BYTE*   pFlags = new BYTE[ nPtSize ];
-    
+
     TTPOLYGONHEADER* pHeader = (TTPOLYGONHEADER*)pData;
     while( (BYTE*)pHeader < pData+nSize2 )
     {
         // only outline data is interesting
         if( pHeader->dwType != TT_POLYGON_TYPE )
             break;
-        
+
         // get start point; next start points are end points
         // of previous segment
         USHORT nPnt = 0;
-        
+
         long nX = IntTimes256FromFixed( pHeader->pfxStart.x );
         long nY = IntTimes256FromFixed( pHeader->pfxStart.y );
         pPoints[ nPnt ] = Point( nX, nY );
         pFlags[ nPnt++ ] = POLY_NORMAL;
-        
+
         bool bHasOfflinePoints = false;
         TTPOLYCURVE* pCurve = (TTPOLYCURVE*)( pHeader + 1 );
         pHeader = (TTPOLYGONHEADER*)( (BYTE*)pHeader + pHeader->cb );
@@ -2531,7 +2531,7 @@ bool WinSalGraphics::GetGlyphOutline( sal_GlyphId aGlyphId,
                 delete[] pOldPoints;
                 delete[] pOldFlags;
             }
-            
+
             int i = 0;
             if( TT_PRIM_LINE == pCurve->wType )
             {
@@ -2555,18 +2555,18 @@ bool WinSalGraphics::GetGlyphOutline( sal_GlyphId aGlyphId,
                     nY = IntTimes256FromFixed( pCurve->apfx[ i ].y );
                     ++i;
                     Point aControlP( nX, nY );
-                    
+
                     // calculate first cubic control point
                     // P0 = 1/3 * (PBeg + 2 * PQControl)
                     nX = pPoints[ nPnt-1 ].X() + 2 * aControlP.X();
                     nY = pPoints[ nPnt-1 ].Y() + 2 * aControlP.Y();
                     pPoints[ nPnt+0 ] = Point( (2*nX+3)/6, (2*nY+3)/6 );
                     pFlags[ nPnt+0 ] = POLY_CONTROL;
-                    
+
                     // calculate endpoint of segment
                     nX = IntTimes256FromFixed( pCurve->apfx[ i ].x );
                     nY = IntTimes256FromFixed( pCurve->apfx[ i ].y );
-                    
+
                     if ( i+1 >= pCurve->cpfx )
                     {
                         // endpoint is either last point in segment => advance
@@ -2582,25 +2582,25 @@ bool WinSalGraphics::GetGlyphOutline( sal_GlyphId aGlyphId,
                         // no need to advance, because the current point
                         // is the control point in next bezier spline
                     }
-                    
+
                     pPoints[ nPnt+2 ] = Point( nX, nY );
                     pFlags[ nPnt+2 ] = POLY_NORMAL;
-                    
+
                     // calculate second cubic control point
                     // P1 = 1/3 * (PEnd + 2 * PQControl)
                     nX = pPoints[ nPnt+2 ].X() + 2 * aControlP.X();
                     nY = pPoints[ nPnt+2 ].Y() + 2 * aControlP.Y();
                     pPoints[ nPnt+1 ] = Point( (2*nX+3)/6, (2*nY+3)/6 );
                     pFlags[ nPnt+1 ] = POLY_CONTROL;
-                    
+
                     nPnt += 3;
                 }
             }
-            
+
             // next curve segment
             pCurve = (TTPOLYCURVE*)&pCurve->apfx[ i ];
         }
-        
+
         // end point is start point for closed contour
         // disabled, because Polygon class closes the contour itself
         // pPoints[nPnt++] = pPoints[0];
@@ -2610,24 +2610,24 @@ bool WinSalGraphics::GetGlyphOutline( sal_GlyphId aGlyphId,
         {
             if( bHasOfflinePoints )
                 pFlags[nPnt] = pFlags[0];
-            
+
             pPoints[nPnt++] = pPoints[0];
         }
-        
+
         // convert y-coordinates W32 -> VCL
         for( int i = 0; i < nPnt; ++i )
             pPoints[i].Y() = -pPoints[i].Y();
-        
+
         // insert into polypolygon
         Polygon aPoly( nPnt, pPoints, (bHasOfflinePoints ? pFlags : NULL) );
         // convert to B2DPolyPolygon
         // TODO: get rid of the intermediate PolyPolygon
         rB2DPolyPoly.append( aPoly.getB2DPolygon() );
     }
-    
+
     delete[] pPoints;
     delete[] pFlags;
-    
+
     delete[] pData;
 
     // rescaling needed for the PolyPolygon conversion
@@ -2743,7 +2743,7 @@ sal_Bool WinSalGraphics::CreateFontSubset( const rtl::OUString& rToFile,
 		pWinFontData->UpdateFromHDC( getHDC() );
 		const ImplFontCharMap* pCharMap = pWinFontData->GetImplFontCharMap();
 		pCharMap->AddReference();
-		
+
 		sal_GlyphId aRealGlyphIds[ 256 ];
 		for( int i = 0; i < nGlyphCount; ++i )
 		{
@@ -2904,7 +2904,7 @@ const void* WinSalGraphics::GetEmbedFontData( const ImplFontData* pFont,
             *pDataLen = 0;
         pCharWidths[i] = nCharWidth;
     }
-    
+
     if( !*pDataLen )
         return NULL;
 
@@ -2966,11 +2966,11 @@ void WinSalGraphics::GetGlyphWidths( const ImplFontData* pFont,
 
     // TODO: much better solution: move SetFont and restoration of old font to caller
     ScopedFont aOldFont(*this);
-    
+
     float fScale = 0.0;
     HFONT hOldFont = 0;
     ImplDoSetFont( &aIFSD, fScale, hOldFont );
-    
+
     if( pFont->IsSubsettable() )
     {
         // get raw font file data
@@ -2982,12 +2982,12 @@ void WinSalGraphics::GetGlyphWidths( const ImplFontData* pFont,
         sal_uInt32 nFaceNum = 0;
         if( !*xRawFontData.get() )  // TTC candidate
             nFaceNum = ~0U;  // indicate "TTC font extracts only"
-    
+
         ScopedTrueTypeFont aSftTTF;
         int nRC = aSftTTF.open( (void*)xRawFontData.get(), xRawFontData.size(), nFaceNum );
         if( nRC != SF_OK )
             return;
-    
+
         int nGlyphs = GetTTGlyphCount( aSftTTF.get() );
         if( nGlyphs > 0 )
         {
@@ -3044,7 +3044,7 @@ void WinSalGraphics::GetGlyphWidths( const ImplFontData* pFont,
                 rWidths.push_back( nCharWidth );
             }
         }
-    }    
+    }
 }
 
 //--------------------------------------------------------------------------
@@ -3060,14 +3060,14 @@ SystemFontData WinSalGraphics::GetSysFontData( int nFallbacklevel ) const
 
     if (nFallbacklevel >= MAX_FALLBACK) nFallbacklevel = MAX_FALLBACK - 1;
     if (nFallbacklevel < 0 ) nFallbacklevel = 0;
-    
+
     aSysFontData.nSize = sizeof( SystemFontData );
-    aSysFontData.hFont = mhFonts[nFallbacklevel]; 
+    aSysFontData.hFont = mhFonts[nFallbacklevel];
     aSysFontData.bFakeBold = false;
     aSysFontData.bFakeItalic = false;
     aSysFontData.bAntialias = true;
     aSysFontData.bVerticalCharacterType = false;
-    
+
     OSL_TRACE("\r\n:WinSalGraphics::GetSysFontData(): FontID: %p, Fallback level: %d",
               aSysFontData.hFont,
               nFallbacklevel);

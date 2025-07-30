@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -275,7 +275,7 @@ bool readProperties( ::std::list< ::std::pair< ::rtl::OUString, ::rtl::OUString>
     OUString file( reinterpret_cast<sal_Char const *>(bytes.getConstArray()),
                    bytes.getLength(), RTL_TEXTENCODING_UTF8);
     sal_Int32 pos = 0;
-    
+
     for (;;)
     {
 
@@ -298,7 +298,7 @@ bool readProperties( ::std::list< ::std::pair< ::rtl::OUString, ::rtl::OUString>
             pos++;
         }
         OUString aLine = buf.makeStringAndClear();
-        
+
         sal_Int32 posEqual = aLine.indexOf('=');
         if (posEqual > 0 && (posEqual + 1) <  aLine.getLength())
         {

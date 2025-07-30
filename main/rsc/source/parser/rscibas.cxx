@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -88,13 +88,13 @@ void RscLangEnum::Init( RscNameTable& rNames )
 {
     SetConstant( rNames.Put( "SYSTEM", CONSTNAME, (long)LANGUAGE_SYSTEM ), LANGUAGE_SYSTEM );
     SetConstant( rNames.Put( "DONTKNOW", CONSTNAME, LANGUAGE_DONTKNOW ), LANGUAGE_DONTKNOW );
-    
+
     sal_Int32 nIndex = 0;
     mnLangId = 0x400; // stay away from selfdefined...
     char csep = '-';
     const MsLangId::IsoLangEntry* pLangEntry;
     ByteString aCountry, aLang;
-    
+
     while ( NULL != ( pLangEntry = MsLangId::getIsoLangEntry( nIndex )) && ( pLangEntry->mnLang != LANGUAGE_DONTKNOW ))
     {
 #if OSL_DEBUG_LEVEL > 2
@@ -169,7 +169,7 @@ void RscLangEnum::Init( RscNameTable& rNames )
             nTokenCounter++;
         }
     }
-    
+
     SetConstant( rNames.Put( "LANGUAGE_USER1", CONSTNAME, LANGUAGE_USER1 ), LANGUAGE_USER1 );
     SetConstant( rNames.Put( "LANGUAGE_USER2", CONSTNAME, LANGUAGE_USER2 ), LANGUAGE_USER2 );
     SetConstant( rNames.Put( "LANGUAGE_USER3", CONSTNAME, LANGUAGE_USER3 ), LANGUAGE_USER3 );

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -121,15 +121,15 @@ string OOXMLPropertyImpl::getName() const
 
     if (sResult.length() == 0)
         sResult = (*SprmIdToString::Instance())(mId);
-        
+
     if (sResult.length() == 0)
         sResult = fastTokenToId(mId);
-        
+
     if (sResult.length() == 0)
     {
         static char sBuffer[256];
-        
-        snprintf(sBuffer, sizeof(sBuffer), "%" SAL_PRIxUINT32, mId); 
+
+        snprintf(sBuffer, sizeof(sBuffer), "%" SAL_PRIxUINT32, mId);
         sResult = sBuffer;
     }
 
@@ -139,7 +139,7 @@ string OOXMLPropertyImpl::getName() const
 string OOXMLPropertyImpl::toString() const
 {
     string sResult = "(";
-    
+
     sResult += getName();
     sResult += ", ";
     if (mpValue.get() != NULL)
@@ -147,7 +147,7 @@ string OOXMLPropertyImpl::toString() const
     else
         sResult +="(null)";
     sResult +=")";
-    
+
     return sResult;
 }
 
@@ -184,7 +184,7 @@ void OOXMLPropertyImpl::resolve(writerfilter::Properties & rProperties)
     }
 }
 
-/* 
+/*
    class OOXMLValue
 */
 
@@ -245,7 +245,7 @@ OOXMLValue * OOXMLValue::clone() const
   class OOXMLBinaryValue
  */
 
-OOXMLBinaryValue::OOXMLBinaryValue(OOXMLBinaryObjectReference::Pointer_t 
+OOXMLBinaryValue::OOXMLBinaryValue(OOXMLBinaryObjectReference::Pointer_t
                                    pBinaryObj)
 : mpBinaryObj(pBinaryObj)
 {
@@ -276,7 +276,7 @@ OOXMLValue * OOXMLBinaryValue::clone() const
 
 OOXMLBooleanValue::OOXMLBooleanValue(bool bValue)
 : mbValue(bValue)
-{    
+{
 }
 
 OOXMLBooleanValue::OOXMLBooleanValue(const rtl::OUString & rValue)
@@ -309,7 +309,7 @@ sal_Int32 OOXMLBooleanValue::getInt() const
 uno::Any OOXMLBooleanValue::getAny() const
 {
     uno::Any aResult(mbValue);
-    
+
     return aResult;
 }
 
@@ -339,7 +339,7 @@ OOXMLStringValue::~OOXMLStringValue()
 uno::Any OOXMLStringValue::getAny() const
 {
     uno::Any aAny(mStr);
-    
+
     return aAny;
 }
 
@@ -408,7 +408,7 @@ bool OOXMLPropertySetImplCompare::operator()(const OOXMLProperty::Pointer_t x,
    class OOXMLPropertySetImpl
 */
 
-OOXMLPropertySetImpl::OOXMLPropertySetImpl()    
+OOXMLPropertySetImpl::OOXMLPropertySetImpl()
 : msType("OOXMLPropertySetImpl")
 {
 }
@@ -449,13 +449,13 @@ OOXMLPropertySetImpl::OOXMLProperties_t::iterator OOXMLPropertySetImpl::end()
     return mProperties.end();
 }
 
-OOXMLPropertySetImpl::OOXMLProperties_t::const_iterator 
+OOXMLPropertySetImpl::OOXMLProperties_t::const_iterator
 OOXMLPropertySetImpl::begin() const
 {
     return mProperties.begin();
 }
 
-OOXMLPropertySetImpl::OOXMLProperties_t::const_iterator 
+OOXMLPropertySetImpl::OOXMLProperties_t::const_iterator
 OOXMLPropertySetImpl::end() const
 {
     return mProperties.end();
@@ -478,7 +478,7 @@ void OOXMLPropertySetImpl::add(OOXMLProperty::Pointer_t pProperty)
         mProperties.push_back(pProperty);
     }
 #ifdef DEBUG_PROPERTY_SET
-    else 
+    else
     {
         debug_logger->element("warning.property_not_added");
     }
@@ -491,13 +491,13 @@ void OOXMLPropertySetImpl::add(OOXMLPropertySet::Pointer_t pPropertySet)
 {
     if (pPropertySet.get() != NULL)
     {
-        OOXMLPropertySetImpl * pSet = 
+        OOXMLPropertySetImpl * pSet =
             dynamic_cast<OOXMLPropertySetImpl *>(pPropertySet.get());
-        
+
         if (pSet != NULL)
-        {        
+        {
             mProperties.resize(mProperties.size() + pSet->mProperties.size());
-            for (OOXMLProperties_t::iterator aIt = pSet->mProperties.begin(); 
+            for (OOXMLProperties_t::iterator aIt = pSet->mProperties.begin();
                  aIt != pSet->mProperties.end(); aIt++)
                 add(*aIt);
         }
@@ -521,7 +521,7 @@ string OOXMLPropertySetImpl::toString()
     snprintf(sBuffer, sizeof(sBuffer), "%p", this);
     sResult += sBuffer;
     sResult += ":";
-    
+
     OOXMLProperties_t::iterator aItBegin = begin();
     OOXMLProperties_t::iterator aItEnd = end();
 
@@ -535,7 +535,7 @@ string OOXMLPropertySetImpl::toString()
         else
             sResult += "0x0";
     }
-    
+
     sResult += "]";
 
     return sResult;
@@ -548,7 +548,7 @@ string OOXMLPropertySetImpl::toString()
 OOXMLPropertySetValue::OOXMLPropertySetValue
 (OOXMLPropertySet::Pointer_t pPropertySet)
 : mpPropertySet(pPropertySet)
-{    
+{
 }
 
 OOXMLPropertySetValue::~OOXMLPropertySetValue()
@@ -602,7 +602,7 @@ sal_Int32 OOXMLIntegerValue::getInt() const
 uno::Any OOXMLIntegerValue::getAny() const
 {
     uno::Any aResult(mnValue);
-    
+
     return aResult;
 }
 
@@ -708,10 +708,10 @@ void OOXMLTableImpl::resolve(Table & rTable)
 
     PropertySets_t::iterator it = mPropertySets.begin();
     PropertySets_t::iterator itEnd = mPropertySets.end();
-        
+
     while (it != itEnd)
     {
-        writerfilter::Reference<Properties>::Pointer_t pProperties 
+        writerfilter::Reference<Properties>::Pointer_t pProperties
             ((*it)->getProperties());
 
         if (pProperties.get() != NULL)
@@ -776,7 +776,7 @@ OOXMLPropertySetEntryToInteger::~OOXMLPropertySetEntryToInteger()
 }
 
 void OOXMLPropertySetEntryToInteger::sprm(Sprm & /*rSprm*/)
-{    
+{
 }
 
 void OOXMLPropertySetEntryToInteger::attribute(Id nId, Value & rValue)

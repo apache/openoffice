@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -53,7 +53,7 @@ XMLEscapementPropHdl::~XMLEscapementPropHdl()
 }
 
 sal_Bool XMLEscapementPropHdl::importXML( const OUString& rStrImpValue, uno::Any& rValue, const SvXMLUnitConverter& ) const
-{ 
+{
 	sal_Int16 nVal;
 
 	SvXMLTokenEnumerator aTokens( rStrImpValue );
@@ -80,11 +80,11 @@ sal_Bool XMLEscapementPropHdl::importXML( const OUString& rStrImpValue, uno::Any
 	}
 
 	rValue <<= nVal;
-	return sal_True; 
+	return sal_True;
 }
 
 sal_Bool XMLEscapementPropHdl::exportXML( OUString& rStrExpValue, const uno::Any& rValue, const SvXMLUnitConverter& ) const
-{ 
+{
 	sal_Int32 nValue = 0;
 	OUStringBuffer aOut;
 
@@ -103,7 +103,7 @@ sal_Bool XMLEscapementPropHdl::exportXML( OUString& rStrExpValue, const uno::Any
 			SvXMLUnitConverter::convertPercent( aOut, nValue );
 		}
 	}
-	
+
 	rStrExpValue = aOut.makeStringAndClear();
 	return sal_True;
 }
@@ -119,7 +119,7 @@ XMLEscapementHeightPropHdl::~XMLEscapementHeightPropHdl()
 }
 
 sal_Bool XMLEscapementHeightPropHdl::importXML( const OUString& rStrImpValue, uno::Any& rValue, const SvXMLUnitConverter& ) const
-{ 
+{
 	if( IsXMLToken( rStrImpValue, XML_CASEMAP_SMALL_CAPS ) )
 		return sal_False;
 
@@ -135,7 +135,7 @@ sal_Bool XMLEscapementHeightPropHdl::importXML( const OUString& rStrImpValue, un
 		sal_Int32 nNewProp;
 		if( !SvXMLUnitConverter::convertPercent( nNewProp, aToken ) )
 			return sal_False;
-		nProp = (sal_Int8)nNewProp;	
+		nProp = (sal_Int8)nNewProp;
 	}
 	else
 	{
@@ -147,11 +147,11 @@ sal_Bool XMLEscapementHeightPropHdl::importXML( const OUString& rStrImpValue, un
 	}
 
 	rValue <<= nProp;
-	return sal_True; 
+	return sal_True;
 }
 
 sal_Bool XMLEscapementHeightPropHdl::exportXML( OUString& rStrExpValue, const uno::Any& rValue, const SvXMLUnitConverter& ) const
-{ 
+{
 	OUStringBuffer aOut( rStrExpValue );
 
 	sal_Int32 nValue = 0;

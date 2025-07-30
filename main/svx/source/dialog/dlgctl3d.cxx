@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -45,7 +45,7 @@
 
 //////////////////////////////////////////////////////////////////////////////
 
-Svx3DPreviewControl::Svx3DPreviewControl(Window* pParent, const ResId& rResId) 
+Svx3DPreviewControl::Svx3DPreviewControl(Window* pParent, const ResId& rResId)
 :   Control(pParent, rResId),
     mpModel(0),
     mpFmPage(0),
@@ -61,7 +61,7 @@ Svx3DPreviewControl::Svx3DPreviewControl(Window* pParent, const ResId& rResId)
     SetBackground();
 }
 
-Svx3DPreviewControl::Svx3DPreviewControl(Window* pParent, WinBits nStyle) 
+Svx3DPreviewControl::Svx3DPreviewControl(Window* pParent, WinBits nStyle)
 :   Control(pParent, nStyle),
     mpModel(0),
     mpFmPage(0),
@@ -139,7 +139,7 @@ void Svx3DPreviewControl::Construct()
 
 	SfxItemSet aSet( mpModel->GetItemPool(),
 		XATTR_LINESTYLE, XATTR_LINESTYLE,
-		XATTR_FILL_FIRST, XATTR_FILLBITMAP, 
+		XATTR_FILL_FIRST, XATTR_FILLBITMAP,
 		0, 0 );
 	aSet.Put( XLineStyleItem( XLINE_NONE ) );
 	aSet.Put( XFillStyleItem( XFILL_SOLID ) );
@@ -371,7 +371,7 @@ void Svx3DLightControl::Construct2()
 		SfxItemSet aSet(mpModel->GetItemPool());
 		aSet.Put( XLineStyleItem( XLINE_NONE ) );
 		aSet.Put( XFillStyleItem( XFILL_NONE ) );
-		
+
 		mpLampBottomObject->SetMergedItemSet(aSet);
 		mpLampShaftObject->SetMergedItemSet(aSet);
 	}
@@ -439,7 +439,7 @@ void Svx3DLightControl::ConstructLightObjects()
 			aSet.Put( XFillStyleItem( XFILL_SOLID ) );
 			aSet.Put( XFillColorItem(String(), GetLightColor(a)));
 			pNewLight->SetMergedItemSet(aSet);
-			
+
 			maLightObjects[a] = pNewLight;
 		}
 	}
@@ -489,8 +489,8 @@ void Svx3DLightControl::AdaptToSelectedLight()
 		{
 			aTransform.identity();
 			aTransform.translate(
-				aDirection.getX() * RADIUS_LAMP_PREVIEW_SIZE, 
-				aDirection.getY() * RADIUS_LAMP_PREVIEW_SIZE, 
+				aDirection.getX() * RADIUS_LAMP_PREVIEW_SIZE,
+				aDirection.getY() * RADIUS_LAMP_PREVIEW_SIZE,
 				aDirection.getZ() * RADIUS_LAMP_PREVIEW_SIZE);
 			pSelectedLight->SetTransform(aTransform);
 		}
@@ -511,7 +511,7 @@ void Svx3DLightControl::TrySelection(Point aPosPixel)
 			// exclude expansion object which will be part of
             // the hits. It's invisible, but for HitTest, it's included
 			const E3dCompoundObject* pResult = 0;
-            
+
             for(sal_uInt32 b(0); !pResult && b < aResult.size(); b++)
             {
                 if(aResult[b] && aResult[b] != mpExpansionObject)
@@ -529,7 +529,7 @@ void Svx3DLightControl::TrySelection(Point aPosPixel)
 					ConstructLightObjects();
 					AdaptToSelectedLight();
 					Invalidate();
-					
+
 					if(maSelectionChangeCallback.IsSet())
 					{
 						maSelectionChangeCallback.Call(this);
@@ -551,7 +551,7 @@ void Svx3DLightControl::TrySelection(Point aPosPixel)
 				if(aNewSelectedLight != maSelectedLight)
 				{
 					SelectLight(aNewSelectedLight);
-		
+
 					if(maSelectionChangeCallback.IsSet())
 					{
 						maSelectionChangeCallback.Call(this);
@@ -616,7 +616,7 @@ void Svx3DLightControl::Tracking( const TrackingEvent& rTEvt )
 				{
 					SetPosition(mfSaveActionStartHor, mfSaveActionStartVer);
 				}
-				
+
 				if(maChangeCallback.IsSet())
 				{
 					maChangeCallback.Call(this);
@@ -626,7 +626,7 @@ void Svx3DLightControl::Tracking( const TrackingEvent& rTEvt )
 		else
 		{
 			const MouseEvent& rMEvt = rTEvt.GetMouseEvent();
-			
+
 			if(mbMouseMoved)
 			{
 				// was change dinteractively
@@ -673,7 +673,7 @@ void Svx3DLightControl::Tracking( const TrackingEvent& rTEvt )
 				{
 					fNewRotY += F_2PI;
 				}
-				
+
 				while(fNewRotY >= F_2PI)
 				{
 					fNewRotY -= F_2PI;
@@ -684,7 +684,7 @@ void Svx3DLightControl::Tracking( const TrackingEvent& rTEvt )
 				{
 					fNewRotX = -F_PI2;
 				}
-				
+
 				if(fNewRotX > F_PI2)
 				{
 					fNewRotX = F_PI2;
@@ -1170,7 +1170,7 @@ void SvxLightCtl3D::KeyInput( const KeyEvent& rKEvt )
             if(nLight < 0)
             {
                 nLight = 7;
-			    
+
                 while((nLight >= 0) && !maLightControl.GetLightOnOff(nLight))
                 {
 				    nLight--;

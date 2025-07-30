@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -80,7 +80,7 @@ const sal_Char sAPI_AutoText[] = "com.sun.star.text.AutoTextContainer";
 XMLAutoTextEventExport::XMLAutoTextEventExport(
 	const ::com::sun::star::uno::Reference< ::com::sun::star::lang::XMultiServiceFactory >& xServiceFactory,
 		sal_uInt16 nFlags
-	) 
+	)
 :		SvXMLExport( xServiceFactory, MAP_INCH, XML_AUTO_TEXT, nFlags ),
 		sEventType(RTL_CONSTASCII_USTRINGPARAM("EventType")),
 		sNone(RTL_CONSTASCII_USTRINGPARAM("None"))
@@ -94,7 +94,7 @@ XMLAutoTextEventExport::XMLAutoTextEventExport(
 	const Reference<XDocumentHandler> & rHandler,
 	const Reference<XModel> & rModel,
 	const Reference<XNameAccess> & rEvents,
-	sal_uInt16 /*nFlags*/ ) 
+	sal_uInt16 /*nFlags*/ )
 :	SvXMLExport( xServiceFactory, rFileName, rHandler, rModel, MAP_INCH ),
 	xEvents(rEvents),
 	sEventType(RTL_CONSTASCII_USTRINGPARAM("EventType")),
@@ -107,7 +107,7 @@ XMLAutoTextEventExport::~XMLAutoTextEventExport()
 }
 
 
-void XMLAutoTextEventExport::initialize( 
+void XMLAutoTextEventExport::initialize(
 	const Sequence<Any> & rArguments )
 		throw(uno::Exception, uno::RuntimeException)
 {
@@ -180,7 +180,7 @@ sal_uInt32 XMLAutoTextEventExport::exportDoc( enum XMLTokenEnum )
 		{
 			// container element
 			SvXMLElementExport aContainerElement(
-				*this, XML_NAMESPACE_OOO, XML_AUTO_TEXT_EVENTS, 
+				*this, XML_NAMESPACE_OOO, XML_AUTO_TEXT_EVENTS,
 				sal_True, sal_True);
 
 			exportEvents();
@@ -202,23 +202,23 @@ sal_Bool XMLAutoTextEventExport::hasEvents()
 void XMLAutoTextEventExport::addNamespaces()
 {
 	// namespaces for office:, text: and script:
-	GetAttrList().AddAttribute( 
-		GetNamespaceMap().GetAttrNameByIndex( XML_NAMESPACE_OFFICE ), 
+	GetAttrList().AddAttribute(
+		GetNamespaceMap().GetAttrNameByIndex( XML_NAMESPACE_OFFICE ),
 		GetNamespaceMap().GetNameByIndex( XML_NAMESPACE_OFFICE ) );
-	GetAttrList().AddAttribute( 
-		GetNamespaceMap().GetAttrNameByIndex( XML_NAMESPACE_TEXT ), 
+	GetAttrList().AddAttribute(
+		GetNamespaceMap().GetAttrNameByIndex( XML_NAMESPACE_TEXT ),
 		GetNamespaceMap().GetNameByIndex( XML_NAMESPACE_TEXT ) );
-	GetAttrList().AddAttribute( 
-		GetNamespaceMap().GetAttrNameByIndex( XML_NAMESPACE_SCRIPT ), 
+	GetAttrList().AddAttribute(
+		GetNamespaceMap().GetAttrNameByIndex( XML_NAMESPACE_SCRIPT ),
 		GetNamespaceMap().GetNameByIndex( XML_NAMESPACE_SCRIPT ) );
-	GetAttrList().AddAttribute( 
-		GetNamespaceMap().GetAttrNameByIndex( XML_NAMESPACE_DOM ), 
+	GetAttrList().AddAttribute(
+		GetNamespaceMap().GetAttrNameByIndex( XML_NAMESPACE_DOM ),
 		GetNamespaceMap().GetNameByIndex( XML_NAMESPACE_DOM ) );
-	GetAttrList().AddAttribute( 
-		GetNamespaceMap().GetAttrNameByIndex( XML_NAMESPACE_OOO ), 
+	GetAttrList().AddAttribute(
+		GetNamespaceMap().GetAttrNameByIndex( XML_NAMESPACE_OOO ),
 		GetNamespaceMap().GetNameByIndex( XML_NAMESPACE_OOO ) );
-	GetAttrList().AddAttribute( 
-		GetNamespaceMap().GetAttrNameByIndex( XML_NAMESPACE_XLINK ), 
+	GetAttrList().AddAttribute(
+		GetNamespaceMap().GetAttrNameByIndex( XML_NAMESPACE_XLINK ),
 		GetNamespaceMap().GetNameByIndex( XML_NAMESPACE_XLINK ) );
 }
 
@@ -256,7 +256,7 @@ Sequence< OUString > SAL_CALL XMLAutoTextEventExport_getSupportedServiceNames()
 
 OUString SAL_CALL XMLAutoTextEventExport_getImplementationName() throw()
 {
-	return OUString( RTL_CONSTASCII_USTRINGPARAM( 
+	return OUString( RTL_CONSTASCII_USTRINGPARAM(
 		"com.sun.star.comp.Writer.XMLOasisAutotextEventsExporter" ) );
 }
 
@@ -281,7 +281,7 @@ Sequence< OUString > SAL_CALL XMLAutoTextEventExportOOO_getSupportedServiceNames
 
 OUString SAL_CALL XMLAutoTextEventExportOOO_getImplementationName() throw()
 {
-	return OUString( RTL_CONSTASCII_USTRINGPARAM( 
+	return OUString( RTL_CONSTASCII_USTRINGPARAM(
 		"com.sun.star.comp.Writer.XMLAutotextEventsExporter" ) );
 }
 

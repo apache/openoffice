@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
@@ -46,8 +46,8 @@ namespace drawinglayer
 			unsigned								mbSpecular : 1;
 
 			ImpSdr3DLightAttribute(
-			    const basegfx::BColor& rColor, 
-			    const basegfx::B3DVector& rDirection, 
+			    const basegfx::BColor& rColor,
+			    const basegfx::B3DVector& rDirection,
 			    bool bSpecular)
 			:	mnRefCount(0),
 		    	maColor(rColor),
@@ -67,7 +67,7 @@ namespace drawinglayer
 				    && getDirection() == rCandidate.getDirection()
 				    && getSpecular() == rCandidate.getSpecular());
             }
-            
+
             static ImpSdr3DLightAttribute* get_global_default()
             {
                 static ImpSdr3DLightAttribute* pDefault = 0;
@@ -88,8 +88,8 @@ namespace drawinglayer
 		};
 
         Sdr3DLightAttribute::Sdr3DLightAttribute(
-			const basegfx::BColor& rColor, 
-			const basegfx::B3DVector& rDirection, 
+			const basegfx::BColor& rColor,
+			const basegfx::B3DVector& rDirection,
 			bool bSpecular)
 		:	mpSdr3DLightAttribute(new ImpSdr3DLightAttribute(
                 rColor, rDirection, bSpecular))
@@ -137,7 +137,7 @@ namespace drawinglayer
 				{
 					delete mpSdr3DLightAttribute;
 				}
-				
+
 				mpSdr3DLightAttribute = rCandidate.mpSdr3DLightAttribute;
 				mpSdr3DLightAttribute->mnRefCount++;
 			}
@@ -160,19 +160,19 @@ namespace drawinglayer
 			return (*rCandidate.mpSdr3DLightAttribute == *mpSdr3DLightAttribute);
 		}
 
-		const basegfx::BColor& Sdr3DLightAttribute::getColor() const 
-        { 
-            return mpSdr3DLightAttribute->getColor(); 
+		const basegfx::BColor& Sdr3DLightAttribute::getColor() const
+        {
+            return mpSdr3DLightAttribute->getColor();
         }
 
-		const basegfx::B3DVector& Sdr3DLightAttribute::getDirection() const 
-        { 
-            return mpSdr3DLightAttribute->getDirection(); 
+		const basegfx::B3DVector& Sdr3DLightAttribute::getDirection() const
+        {
+            return mpSdr3DLightAttribute->getDirection();
         }
 
-		bool Sdr3DLightAttribute::getSpecular() const 
-        { 
-            return mpSdr3DLightAttribute->getSpecular(); 
+		bool Sdr3DLightAttribute::getSpecular() const
+        {
+            return mpSdr3DLightAttribute->getSpecular();
         }
 
 	} // end of namespace attribute

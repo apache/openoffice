@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,19 +7,19 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
- 
+
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_connectivity.hxx"
@@ -65,13 +65,13 @@ OEvoabDriver::~OEvoabDriver()
 void OEvoabDriver::disposing()
 {
 	::osl::MutexGuard aGuard(m_aMutex);
-	
+
 	// when driver will be destroied so all our connections have to be destroied as well
 	for (OWeakRefArray::iterator i = m_xConnections.begin(); m_xConnections.end() != i; ++i)
 	{
 		Reference< XComponent > xComp(i->get(), UNO_QUERY);
 		if (xComp.is()) {
-		    try {	
+		    try {
 			xComp->dispose();
 			}
 		    catch (com::sun::star::lang::DisposedException e) {
@@ -97,7 +97,7 @@ rtl::OUString OEvoabDriver::getImplementationName_Static(  ) throw(RuntimeExcept
 //------------------------------------------------------------------
 Sequence< ::rtl::OUString > OEvoabDriver::getSupportedServiceNames_Static(  ) throw (RuntimeException)
 {
-	// which service is supported 
+	// which service is supported
 	// for more information @see com.sun.star.sdbc.Driver
 	Sequence< ::rtl::OUString > aSNS( 1 );
 	aSNS[0] = ::rtl::OUString::createFromAscii("com.sun.star.sdbc.Driver");
@@ -136,15 +136,15 @@ Reference< XConnection > SAL_CALL OEvoabDriver::connect( const ::rtl::OUString& 
 	::osl::MutexGuard aGuard( m_aMutex );
 	if (ODriver_BASE::rBHelper.bDisposed)
 		throw DisposedException();
-	
+
 	if ( ! acceptsURL(url) )
 		return NULL;
-	
+
 	OEvoabConnection* pCon = new OEvoabConnection( *this );
 	pCon->construct(url,info);
         Reference< XConnection > xCon = pCon;
         m_xConnections.push_back(WeakReferenceHelper(*pCon));
-	
+
 	return xCon;
 }
 // --------------------------------------------------------------------------------

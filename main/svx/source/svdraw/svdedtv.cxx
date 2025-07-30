@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -308,7 +308,7 @@ void SdrEditView::MoveLayer(const XubString& rName, sal_uInt16 nNewPos)
 	SdrLayerAdmin& rLA=pMod->GetLayerAdmin();
 	SdrLayer* pLayer=rLA.GetLayer(rName,sal_True);
 	sal_uInt16 nLayerNum=rLA.GetLayerPos(pLayer);
-	if (nLayerNum!=SDRLAYER_NOTFOUND) 
+	if (nLayerNum!=SDRLAYER_NOTFOUND)
 	{
 		if( IsUndoEnabled() )
 			AddUndo(GetModel()->GetSdrUndoFactory().CreateUndoMoveLayer(nLayerNum,rLA,*pMod,nNewPos));
@@ -352,9 +352,9 @@ void SdrEditView::ImpBroadcastEdgesOfMarkedNodes()
 			SdrObject* pObj1 = pEdge->GetConnectedNode(sal_False);
 			SdrObject* pObj2 = pEdge->GetConnectedNode(sal_True);
 
-			if(pObj1 
-				&& LIST_ENTRY_NOTFOUND == rAllMarkedObjects.GetPos(pObj1) 
-				&& !pEdge->CheckNodeConnection(sal_False)) 
+			if(pObj1
+				&& LIST_ENTRY_NOTFOUND == rAllMarkedObjects.GetPos(pObj1)
+				&& !pEdge->CheckNodeConnection(sal_False))
 			{
 				if( IsUndoEnabled() )
 					AddUndo( GetModel()->GetSdrUndoFactory().CreateUndoGeoObject(*pEdge));
@@ -362,8 +362,8 @@ void SdrEditView::ImpBroadcastEdgesOfMarkedNodes()
 			}
 
 			if(pObj2
-				&& LIST_ENTRY_NOTFOUND == rAllMarkedObjects.GetPos(pObj2) 
-				&& !pEdge->CheckNodeConnection(sal_True)) 
+				&& LIST_ENTRY_NOTFOUND == rAllMarkedObjects.GetPos(pObj2)
+				&& !pEdge->CheckNodeConnection(sal_True))
 			{
 				if( IsUndoEnabled() )
 					AddUndo( GetModel()->GetSdrUndoFactory().CreateUndoGeoObject(*pEdge));
@@ -524,7 +524,7 @@ void SdrEditView::CheckPossibilities()
 				sal_Bool bHasText=pObj->GetOutlinerParaObject()!=NULL;
 				if (bGroup || bHasText) {
 					bCombinePossible=sal_True;
-				} 
+				}
 			}
 			bCombineNoPolyPolyPossible=bCombinePossible;
 			bDeletePossible=sal_True;
@@ -623,9 +623,9 @@ void SdrEditView::CheckPossibilities()
 				if (aInfo.bCanConvToPoly          ) bCanConvToPoly          =sal_True;
 				if (aInfo.bCanConvToPathLineToArea) bCanConvToPathLineToArea=sal_True;
 				if (aInfo.bCanConvToPolyLineToArea) bCanConvToPolyLineToArea=sal_True;
-				
+
 				// Combine/Dismantle
-				if(bCombinePossible) 
+				if(bCombinePossible)
 				{
 					bCombinePossible = ImpCanConvertForCombine(pObj);
 					bCombineNoPolyPolyPossible = bCombinePossible;
@@ -637,7 +637,7 @@ void SdrEditView::CheckPossibilities()
 				if (!bOrthoDesiredOnMarked && !aInfo.bNoOrthoDesired) bOrthoDesiredOnMarked=sal_True;
 				// ImportMtf checken
 
-                if (!bImportMtfPossible) 
+                if (!bImportMtfPossible)
                 {
                     const SdrGrafObj* pSdrGrafObj = dynamic_cast< const SdrGrafObj* >(pObj);
                     const SdrOle2Obj* pSdrOle2Obj = dynamic_cast< const SdrOle2Obj* >(pObj);
@@ -703,7 +703,7 @@ void SdrEditView::ForceMarkedObjToAnotherPage()
 				bFnd = aObjRect.IsOver(pPV->GetPageRect());
 			}
 
-			if(bFnd) 
+			if(bFnd)
 			{
 				pM->GetPageView()->GetObjList()->RemoveObject(pObj->GetOrdNum());
 				SdrInsertReason aReason(SDRREASON_VIEWCALL);
@@ -734,36 +734,36 @@ void SdrEditView::DeleteMarkedList(const SdrMarkList& rMark)
         {
 		    sal_uInt32 nm(0);
             std::vector< E3DModifySceneSnapRectUpdater* > aUpdaters;
-		    
+
 			if( bUndo )
 			{
-				for(nm = nMarkAnz; nm > 0;) 
+				for(nm = nMarkAnz; nm > 0;)
 				{
 					nm--;
 					SdrMark* pM = rMark.GetMark(nm);
     				SdrObject* pObj = pM->GetMarkedSdrObj();
-				    
+
 					// extra undo actions for changed connector which now may hold it's layouted path (SJ)
 					std::vector< SdrUndoAction* > vConnectorUndoActions( CreateConnectorUndo( *pObj ) );
 					AddUndoActions( vConnectorUndoActions );
-				    
+
 					AddUndo(GetModel()->GetSdrUndoFactory().CreateUndoDeleteObject(*pObj));
 				}
 			}
-		    
+
             // Sicherstellen, dass die OrderNums stimmen:
 		    rMark.GetMark(0)->GetMarkedSdrObj()->GetOrdNum();
-		    
+
 			std::vector< SdrObject* > aRemoved3DObjects;
 
-            for(nm = nMarkAnz; nm > 0;) 
+            for(nm = nMarkAnz; nm > 0;)
             {
 			    nm--;
 			    SdrMark* pM = rMark.GetMark(nm);
 			    SdrObject* pObj = pM->GetMarkedSdrObj();
 			    SdrObjList*  pOL = pObj->GetObjList(); //#52680#
 			    const sal_uInt32 nOrdNum(pObj->GetOrdNumDirect());
-                
+
 				bool bIs3D = dynamic_cast< E3dObject* >(pObj);
                 // set up a scene updater if object is a 3d object
                 if(bIs3D)
@@ -781,7 +781,7 @@ void SdrEditView::DeleteMarkedList(const SdrMarkList& rMark)
 						SdrObject::Free(pObj);
 				}
 		    }
-            
+
             // fire scene updaters
             while(!aUpdaters.empty())
             {
@@ -819,7 +819,7 @@ void SdrEditView::DeleteMarkedObj()
 
 	// remove as long as something is selected. This allows to schedule objects for
 	// removal for a next run as needed
-	while(GetMarkedObjectCount()) 
+	while(GetMarkedObjectCount())
 	{
 		// vector to remember the parents which may be empty after object removal
 		std::vector< SdrObject* > aParents;
@@ -840,9 +840,9 @@ void SdrEditView::DeleteMarkedObj()
 				{
 					if(!aParents.empty())
 					{
-						std::vector< SdrObject* >::iterator aFindResult = 
+						std::vector< SdrObject* >::iterator aFindResult =
 							std::find(aParents.begin(), aParents.end(), pParent);
-						
+
 						if(aFindResult == aParents.end())
 						{
 							aParents.push_back(pParent);
@@ -865,9 +865,9 @@ void SdrEditView::DeleteMarkedObj()
 					SdrMark* pMark = rMarkList.GetMark(a);
 					SdrObject* pObject = pMark->GetMarkedSdrObj();
 
-					std::vector< SdrObject* >::iterator aFindResult = 
+					std::vector< SdrObject* >::iterator aFindResult =
 						std::find(aParents.begin(), aParents.end(), pObject);
-					
+
 					if(aFindResult != aParents.end())
 					{
 						aParents.erase(aFindResult);
@@ -949,8 +949,8 @@ void SdrEditView::CopyMarkedObj()
 			aME.SetMarkedSdrObj(pO);
 			aCloneList.AddPair(pM->GetMarkedSdrObj(), pO);
 
-			if (pM->GetUser()==0) 
-			{ 
+			if (pM->GetUser()==0)
+			{
 				// Sonst war's nur eine mitzukierende Edge
 				GetMarkedObjectListWriteAccess().InsertEntry(aME);
 			}
@@ -1052,10 +1052,10 @@ void SdrEditView::ReplaceObjectAtView(SdrObject* pOldObj, SdrPageView& rPV, SdrO
 	    MarkObj( pOldObj, &rPV, sal_True /*unmark!*/ );
 
 	pOL->ReplaceObject(pNewObj,pOldObj->GetOrdNum());
-		    
+
 	if( !bUndo )
 		SdrObject::Free( pOldObj );
-	
+
 	if (bMark) MarkObj(pNewObj,&rPV);
 }
 

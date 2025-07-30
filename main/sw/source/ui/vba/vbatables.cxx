@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 #include "vbatables.hxx"
@@ -60,8 +60,8 @@ public:
     TableEnumerationImpl(  const uno::Reference< XHelperInterface >& xParent, const uno::Reference< uno::XComponentContext > & xContext, const uno::Reference< frame::XModel >& xDocument, const uno::Reference< container::XIndexAccess >& xIndexAccess ) : mxParent( xParent ), mxContext( xContext ), mxDocument( xDocument ), mxIndexAccess( xIndexAccess ), mnCurIndex(0)
     {
     }
-    virtual ::sal_Bool SAL_CALL hasMoreElements(  ) throw (uno::RuntimeException) 
-    { 
+    virtual ::sal_Bool SAL_CALL hasMoreElements(  ) throw (uno::RuntimeException)
+    {
         return ( mnCurIndex < mxIndexAccess->getCount() );
     }
     virtual uno::Any SAL_CALL nextElement(  ) throw (container::NoSuchElementException, lang::WrappedTargetException, uno::RuntimeException)
@@ -70,15 +70,15 @@ public:
             throw container::NoSuchElementException();
         return lcl_createTable( mxParent, mxContext, mxDocument, mxIndexAccess->getByIndex( mnCurIndex++ ) );
     }
-    
+
 };
- 
+
 SwVbaTables::SwVbaTables( const uno::Reference< XHelperInterface >& xParent, const uno::Reference< uno::XComponentContext > & xContext, const uno::Reference< frame::XModel >& xDocument ) : SwVbaTables_BASE( xParent, xContext , lcl_getTables( xDocument ) ), mxDocument( xDocument )
 {
 }
 
 
-uno::Reference< word::XTable > SAL_CALL 
+uno::Reference< word::XTable > SAL_CALL
 SwVbaTables::Add( const uno::Reference< word::XRange >& Range, const uno::Any& NumRows, const uno::Any& NumColumns, const uno::Any& /*DefaultTableBehavior*/, const uno::Any& /*AutoFitBehavior*/ ) throw (script::BasicErrorException, uno::RuntimeException)
 {
     sal_Int32 nCols = 0;
@@ -87,7 +87,7 @@ SwVbaTables::Add( const uno::Reference< word::XRange >& Range, const uno::Any& N
     // Preconditions
     if ( !( pVbaRange && ( NumRows >>= nRows ) && ( NumColumns >>= nCols ) ) )
         throw uno::RuntimeException(); // #FIXME better exception??
-    if ( nCols <= 0 || nRows <= 0 ) 
+    if ( nCols <= 0 || nRows <= 0 )
         throw uno::RuntimeException(); // #FIXME better exception??
 
     uno::Reference< frame::XModel > xModel( pVbaRange->getDocument(), uno::UNO_QUERY_THROW );
@@ -103,42 +103,42 @@ SwVbaTables::Add( const uno::Reference< word::XRange >& Range, const uno::Any& N
 */
     xTable->initialize( nRows, nCols );
     uno::Reference< text::XText > xText = xTextRange->getText();
-    uno::Reference< text::XTextContent > xContext( xTable, uno::UNO_QUERY_THROW );     
-    
+    uno::Reference< text::XTextContent > xContext( xTable, uno::UNO_QUERY_THROW );
+
     xText->insertTextContent( xTextRange, xContext, true );
     uno::Reference< word::XTable > xVBATable( new SwVbaTable( mxParent, mxContext,  pVbaRange->getDocument(), xTable ) );
     return xVBATable;
 }
 
-uno::Reference< container::XEnumeration > SAL_CALL 
+uno::Reference< container::XEnumeration > SAL_CALL
 SwVbaTables::createEnumeration() throw (uno::RuntimeException)
 {
     return new TableEnumerationImpl( mxParent, mxContext, mxDocument, m_xIndexAccess );
 }
 
-// ScVbaCollectionBaseImpl      
-uno::Any 
+// ScVbaCollectionBaseImpl
+uno::Any
 SwVbaTables::createCollectionObject( const uno::Any& aSource )
 {
     return lcl_createTable( mxParent, mxContext, mxDocument, aSource );
-} 
+}
 
 // XHelperInterface
-rtl::OUString& 
+rtl::OUString&
 SwVbaTables::getServiceImplName()
 {
     static rtl::OUString sImplName( RTL_CONSTASCII_USTRINGPARAM("SwVbaTables") );
-    return sImplName;    
+    return sImplName;
 }
 
 // XEnumerationAccess
-uno::Type SAL_CALL 
+uno::Type SAL_CALL
 SwVbaTables::getElementType() throw (uno::RuntimeException)
 {
-    return  word::XTable::static_type(0); 
+    return  word::XTable::static_type(0);
 }
 
-uno::Sequence<rtl::OUString> 
+uno::Sequence<rtl::OUString>
 SwVbaTables::getServiceNames()
 {
     static uno::Sequence< rtl::OUString > aServiceNames;

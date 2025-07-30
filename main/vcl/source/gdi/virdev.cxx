@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -72,7 +72,7 @@ void VirtualDevice::ImplInitVirDev( const OutputDevice* pOutDev,
 	if ( !mpVirDev )
     {
         // do not abort but throw an exception, may be the current thread terminates anyway (plugin-scenario)
-        throw ::com::sun::star::uno::RuntimeException( 
+        throw ::com::sun::star::uno::RuntimeException(
             OUString( RTL_CONSTASCII_USTRINGPARAM( "Could not create system bitmap!" ) ),
             ::com::sun::star::uno::Reference< ::com::sun::star::uno::XInterface >() );
 		//GetpApp()->Exception( EXC_SYSOBJNOTCREATED );
@@ -298,11 +298,11 @@ sal_Bool VirtualDevice::ImplSetOutputSizePixel( const Size& rNewSize, sal_Bool b
 
 // -----------------------------------------------------------------------
 
-// #i32109#: Fill opaque areas correctly (without relying on 
+// #i32109#: Fill opaque areas correctly (without relying on
 // fill/linecolor state)
 void VirtualDevice::ImplFillOpaqueRectangle( const Rectangle& rRect )
 {
-    // Set line and fill color to black (->opaque), 
+    // Set line and fill color to black (->opaque),
     // fill rect with that (linecolor, too, because of
     // those pesky missing pixel problems)
     Push( PUSH_LINECOLOR | PUSH_FILLCOLOR );
@@ -437,7 +437,7 @@ void VirtualDevice::ImplSetReferenceDevice( RefDevMode i_eRefDevMode, sal_Int32 
 
 void VirtualDevice::Compat_ZeroExtleadBug()
 {
-	meRefDevMode = (sal_uInt8)meRefDevMode | REFDEV_FORCE_ZERO_EXTLEAD; 
+	meRefDevMode = (sal_uInt8)meRefDevMode | REFDEV_FORCE_ZERO_EXTLEAD;
 }
 
 // -----------------------------------------------------------------------

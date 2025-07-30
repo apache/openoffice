@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -535,7 +535,7 @@ SCSIZE ScDBQueryDataIterator::SearchColEntryIndex(ScDocument& rDoc, SCTAB nTab, 
 // ----------------------------------------------------------------------------
 
 ScDBQueryDataIterator::DataAccessInternal::DataAccessInternal(const ScDBQueryDataIterator* pParent, ScDBQueryParamInternal* pParam, ScDocument* pDoc) :
-    DataAccess(pParent), 
+    DataAccess(pParent),
     mpParam(pParam),
     mpDoc(pDoc),
     bCalcAsShown( pDoc->GetDocOptions().IsCalcAsShown() )
@@ -601,7 +601,7 @@ bool ScDBQueryDataIterator::DataAccessInternal::getCurrent(Value& rValue)
                             rValue.mbIsNumber = true;
 							if ( bCalcAsShown )
 							{
-                                const ScAttrArray* pNewAttrArray = 
+                                const ScAttrArray* pNewAttrArray =
                                     ScDBQueryDataIterator::GetAttrArrayByCol(*mpDoc, nTab, nCol);
                                 lcl_IterGetNumberFormat( nNumFormat, pAttrArray,
                                     nAttrEndRow, pNewAttrArray, nRow, mpDoc );
@@ -781,7 +781,7 @@ bool ScDBQueryDataIterator::DataAccessMatrix::isValidQuery(SCROW nRow, const ScM
     vector<bool> aResults;
     aResults.reserve(nEntryCount);
 
-    const CollatorWrapper& rCollator = 
+    const CollatorWrapper& rCollator =
         mpParam->bCaseSens ? *ScGlobal::GetCaseCollator() : *ScGlobal::GetCollator();
 
     for (SCSIZE i = 0; i < nEntryCount; ++i)
@@ -902,7 +902,7 @@ bool ScDBQueryDataIterator::DataAccessMatrix::isValidQuery(SCROW nRow, const ScM
         else if (rEntry.eConnect == SC_AND)
         {
             // For AND op, tuck the result into the last result value.
-            size_t n = aResults.size();    
+            size_t n = aResults.size();
             aResults[n-1] = aResults[n-1] && bValid;
         }
         else
@@ -1834,7 +1834,7 @@ ScHorizontalValueIterator::ScHorizontalValueIterator( ScDocument* pDocument,
     pAttrArray = 0;
     nAttrEndRow = 0;
 
-    pCellIter = new ScHorizontalCellIterator( pDoc, nStartTab, nStartCol, 
+    pCellIter = new ScHorizontalCellIterator( pDoc, nStartTab, nStartCol,
             nStartRow, nEndCol, nEndRow );
 }
 
@@ -2306,7 +2306,7 @@ const ScPatternAttr* ScAttrRectIterator::GetNext( SCCOL& rCol1, SCCOL& rCol2,
 
 SCROW ScRowBreakIterator::NOT_FOUND = -1;
 
-ScRowBreakIterator::ScRowBreakIterator(set<SCROW>& rBreaks) : 
+ScRowBreakIterator::ScRowBreakIterator(set<SCROW>& rBreaks) :
     mrBreaks(rBreaks),
     maItr(rBreaks.begin()), maEnd(rBreaks.end())
 {

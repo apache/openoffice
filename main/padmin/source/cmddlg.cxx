@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -50,8 +50,8 @@ void CommandStore::getSystemPrintCommands( ::std::list< String >& rCommands )
 		bOnce = true;
 		PrinterInfoManager::get().getSystemPrintCommands( aSysCommands );
 	}
-	
-	::std::list< OUString >::const_iterator it;	
+
+	::std::list< OUString >::const_iterator it;
 	for( it = aSysCommands.begin(); it != aSysCommands.end(); ++it )
 		rCommands.push_back( *it );
 }
@@ -68,7 +68,7 @@ void CommandStore::getSystemPdfCommands( ::std::list< String >& rCommands )
 		FILE* pPipe;
 		String aCommand;
 		rtl_TextEncoding aEncoding = osl_getThreadTextEncoding();
-		
+
 		pPipe = popen( "which gs 2>/dev/null", "r" );
 		if( pPipe )
 		{
@@ -151,7 +151,7 @@ void CommandStore::setCommands(
 	rConfig.SetGroup( pGroup );
 	::std::list< String >::const_iterator it, loop;
 	::std::list< String > aWriteList;
-	
+
 	int nWritten = 0;
 	for( it = rCommands.begin(); it != rCommands.end(); ++it )
 	{
@@ -215,7 +215,7 @@ void CommandStore::setFaxCommands( const ::std::list< String >& rCommands )
 	::std::list< String > aSysCmds;
 	setCommands( FAX_PERSISTENCE_GROUP, rCommands, aSysCmds );
 }
-	
+
 
 RTSCommandPage::RTSCommandPage( RTSDialog* pParent ) :
 		TabPage( &pParent->m_aTabControl, PaResId( RID_RTS_COMMANDPAGE ) ),
@@ -256,7 +256,7 @@ RTSCommandPage::RTSCommandPage( RTSDialog* pParent ) :
 	CommandStore::getPdfCommands( m_aPdfCommands );
 
 	m_aPrinterName.SetText( m_pParent->m_aPrinter );
-	
+
 	m_aCommandsCB.SetDoubleClickHdl( LINK( this, RTSCommandPage, DoubleClickHdl ) );
 	m_aCommandsCB.SetSelectHdl( LINK( this, RTSCommandPage, SelectHdl ) );
 	m_aCommandsCB.SetModifyHdl( LINK( this, RTSCommandPage, ModifyHdl ) );
@@ -304,7 +304,7 @@ RTSCommandPage::RTSCommandPage( RTSDialog* pParent ) :
             m_bWasExternalDialog = true;
         }
 	}
-    
+
     m_aQuickCB.Enable( m_aExternalCB.IsChecked() );
 
 	String aString( m_aConnectedTo.GetText() );
@@ -324,14 +324,14 @@ void RTSCommandPage::save()
 	bool bHaveFax = m_aConfigureBox.GetSelectEntryPos() == m_nFaxEntry ? true : false;
 	bool bHavePdf = m_aConfigureBox.GetSelectEntryPos() == m_nPdfEntry ? true : false;
 	::std::list< String >::iterator it;
-	
+
 	String aFeatures;
     sal_Int32 nIndex = 0;
 	String aOldPdfPath;
 	bool bOldFaxSwallow = false;
 	bool bFaxSwallow = m_aFaxSwallowBox.IsChecked() ? true : false;
     bool bOldExternalDialog = false, bExternalDialog = m_aExternalCB.IsChecked() ? true : false;
-    
+
     while( nIndex != -1 )
 	{
 		OUString aToken( m_pParent->m_aJobData.m_aFeatures.getToken( 0, ',', nIndex ) );
@@ -392,7 +392,7 @@ void RTSCommandPage::save()
 		;
 	if( it == pList->end() )
 		pList->push_back( aCommand );
-	
+
 	if( aCommand != String( m_pParent->m_aJobData.m_aCommand )		        ||
         aQuickCommand != String( m_pParent->m_aJobData.m_aQuickCommand )    ||
 		( m_bWasFax && ! bHaveFax )									        ||
@@ -408,8 +408,8 @@ void RTSCommandPage::save()
 		m_pParent->m_aJobData.m_aCommand	    = aCommand;
         m_pParent->m_aJobData.m_aQuickCommand   = aQuickCommand;
 		m_pParent->m_aJobData.m_aFeatures	    = aFeatures;
-		
-		PrinterInfoManager::get().changePrinterInfo( m_pParent->m_aPrinter, m_pParent->m_aJobData );		
+
+		PrinterInfoManager::get().changePrinterInfo( m_pParent->m_aPrinter, m_pParent->m_aJobData );
 	}
 	CommandStore::setPrintCommands( m_aPrinterCommands );
 	CommandStore::setFaxCommands( m_aFaxCommands );
@@ -433,7 +433,7 @@ IMPL_LINK( RTSCommandPage, SelectHdl, Control*, pBox )
 	{
 		m_aRemovePB.Enable( sal_True );
 	}
-	
+
 	return 0;
 }
 
@@ -491,7 +491,7 @@ IMPL_LINK( RTSCommandPage, ModifyHdl, Edit*, pEdit )
 {
 	if( pEdit == &m_aCommandsCB )
 		m_aRemovePB.Enable( m_aCommandsCB.GetEntryPos( m_aCommandsCB.GetText() ) != LISTBOX_ENTRY_NOTFOUND );
-	
+
 	return 0;
 }
 

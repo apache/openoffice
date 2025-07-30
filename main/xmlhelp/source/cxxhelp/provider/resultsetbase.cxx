@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -112,11 +112,11 @@ ResultSetBase::addEventListener(
 	throw( uno::RuntimeException )
 {
 	osl::MutexGuard aGuard( m_aMutex );
-	
+
 	if ( ! m_pDisposeEventListeners )
 		m_pDisposeEventListeners =
 			new cppu::OInterfaceContainerHelper( m_aMutex );
-	
+
 	m_pDisposeEventListeners->addInterface( Listener );
 }
 
@@ -288,7 +288,7 @@ sal_Bool SAL_CALL ResultSetBase::absolute( sal_Int32 row )
 		if( m_nRow < -1 )
 			m_nRow = -1;
 	}
-	
+
 	return 0<= m_nRow && sal::static_int_cast<sal_uInt32>( m_nRow ) < m_aItems.size();
 }
 
@@ -303,14 +303,14 @@ ResultSetBase::relative(
 {
 	if( isAfterLast() || isBeforeFirst() )
 		throw sdbc::SQLException();
-	
+
 	if( row > 0 )
 		while( row-- )
 			next();
 	else if( row < 0 )
 		while( row++ && m_nRow > -1 )
 			previous();
-	
+
 	return 0 <= m_nRow && sal::static_int_cast<sal_uInt32>( m_nRow ) < m_aItems.size();
 }
 
@@ -410,11 +410,11 @@ ResultSetBase::queryContentIdentifier(
 	{
 		rtl::OUString url = queryContentIdentifierString();
 		if( ! m_aIdents[m_nRow].is() && url.getLength() )
-			m_aIdents[m_nRow] = uno::Reference< ucb::XContentIdentifier >( 
+			m_aIdents[m_nRow] = uno::Reference< ucb::XContentIdentifier >(
                 new ::ucbhelper::ContentIdentifier( m_xMSF,url ) );
 		return m_aIdents[m_nRow];
 	}
-	
+
 	return uno::Reference< ucb::XContentIdentifier >();
 }
 
@@ -437,39 +437,39 @@ class XPropertySetInfoImpl
       public beans::XPropertySetInfo
 {
 public:
-    
+
     XPropertySetInfoImpl( const uno::Sequence< beans::Property >& aSeq )
         : m_aSeq( aSeq )
     {
     }
-    
+
     void SAL_CALL acquire( void )
         throw()
     {
         OWeakObject::acquire();
     }
 
-    
+
     void SAL_CALL release( void )
         throw()
     {
         OWeakObject::release();
     }
-    
+
     uno::Any SAL_CALL queryInterface( const uno::Type& rType )
         throw( uno::RuntimeException )
     {
         uno::Any aRet = cppu::queryInterface( rType,
                                               SAL_STATIC_CAST( beans::XPropertySetInfo*, this ) );
         return aRet.hasValue() ? aRet : OWeakObject::queryInterface( rType );
-    }    
-    
+    }
+
     uno::Sequence< beans::Property > SAL_CALL getProperties()
         throw( uno::RuntimeException )
     {
         return m_aSeq;
     }
-    
+
     beans::Property SAL_CALL getPropertyByName( const ::rtl::OUString& aName )
         throw( beans::UnknownPropertyException,
                uno::RuntimeException)
@@ -479,7 +479,7 @@ public:
                 return m_aSeq[i];
         throw beans::UnknownPropertyException();
     }
-    
+
     sal_Bool SAL_CALL hasPropertyByName( const ::rtl::OUString& Name )
         throw( uno::RuntimeException )
     {
@@ -490,7 +490,7 @@ public:
     }
 
 private:
-    
+
     uno::Sequence< beans::Property > m_aSeq;
 };
 
@@ -506,7 +506,7 @@ ResultSetBase::getPropertySetInfo()
 	seq[0].Handle = -1;
 	seq[0].Type = getCppuType( static_cast< sal_Int32* >(0) );
 	seq[0].Attributes = beans::PropertyAttribute::READONLY;
-    
+
 	seq[1].Name = rtl::OUString::createFromAscii( "IsRowCountFinal" );
 	seq[1].Handle = -1;
 	seq[1].Type = getCppuType( static_cast< sal_Bool* >(0) );
@@ -531,7 +531,7 @@ void SAL_CALL ResultSetBase::setPropertyValue(
 	if( aPropertyName == rtl::OUString::createFromAscii( "IsRowCountFinal" ) ||
 		aPropertyName == rtl::OUString::createFromAscii( "RowCount" ) )
 		return;
-    
+
 	throw beans::UnknownPropertyException();
 }
 

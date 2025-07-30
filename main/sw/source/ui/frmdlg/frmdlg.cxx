@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -89,7 +89,7 @@ SwFrmDlg::SwFrmDlg( SfxViewFrame*       pViewFrame,
 		aTmp += *pStr;
 		aTmp += ')';
 	}
-    
+
     AddTabPage(TP_FRM_STD,  SwFrmPage::Create, 0);
 	AddTabPage(TP_FRM_ADD,	SwFrmAddPage::Create, 0);
 	AddTabPage(TP_FRM_WRAP,	SwWrapTabPage::Create, 0);
@@ -196,7 +196,7 @@ void SwFrmDlg::PageCreated( sal_uInt16 nId, SfxTabPage &rPage )
 	case TP_MACRO_ASSIGN:
 		{
 		SfxAllItemSet aNewSet(*GetInputSetImpl()->GetPool());
-		aNewSet.Put( SwMacroAssignDlg::AddEvents( 
+		aNewSet.Put( SwMacroAssignDlg::AddEvents(
 			DLG_FRM_GRF == m_nDlgType ? MACASSGN_GRAPHIC : DLG_FRM_OLE == m_nDlgType ? MACASSGN_OLE : MACASSGN_FRMURL ) );
         if ( m_pWrtShell )
             rPage.SetFrame( m_pWrtShell->GetView().GetViewFrame()->GetFrame().GetFrameInterface() );
@@ -229,7 +229,7 @@ void SwFrmDlg::PageCreated( sal_uInt16 nId, SfxTabPage &rPage )
         // The selection attribute lists (XPropertyList derivates, e.g. XColorList for
         // the color table) need to be added as items (e.g. SvxColorTableItem) to make
         // these pages find the needed attributes for fill style suggestions.
-        // These are set in preparation to trigger this dialog (FN_FORMAT_FRAME_DLG and 
+        // These are set in preparation to trigger this dialog (FN_FORMAT_FRAME_DLG and
         // FN_DRAW_WRAP_DLG), but could also be directly added from the DrawModel.
         case RID_SVXPAGE_AREA:
         {

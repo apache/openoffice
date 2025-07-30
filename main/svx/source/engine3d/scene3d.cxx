@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -282,10 +282,10 @@ basegfx::B2DPolyPolygon E3dScene::TakeXorPoly() const
 	const drawinglayer::geometry::ViewInformation3D aViewInfo3D(rVCScene.getViewInformation3D());
 	const basegfx::B3DPolyPolygon aCubePolyPolygon(CreateWireframe());
 
-	basegfx::B2DPolyPolygon aRetval(basegfx::tools::createB2DPolyPolygonFromB3DPolyPolygon(aCubePolyPolygon, 
+	basegfx::B2DPolyPolygon aRetval(basegfx::tools::createB2DPolyPolygonFromB3DPolyPolygon(aCubePolyPolygon,
 		aViewInfo3D.getObjectToView()));
 	aRetval.transform(rVCScene.getObjectTransformation());
-	
+
 	return aRetval;
 }
 
@@ -337,7 +337,7 @@ void E3dScene::SetBoundRectDirty()
 
 	if(pScene == this)
 	{
-	    // avoid resetting aOutRect which in case of a 3D scene used as 2d object 
+	    // avoid resetting aOutRect which in case of a 3D scene used as 2d object
 		// is model data,not re-creatable view data
 	}
 	else

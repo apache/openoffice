@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -62,11 +62,11 @@ TYPEINIT1( FuMorph, FuPoor );
 // constructor
 //
 FuMorph::FuMorph (
-    ViewShell* pViewSh, 
-    ::sd::Window* pWin, 
+    ViewShell* pViewSh,
+    ::sd::Window* pWin,
     ::sd::View* pView,
-	SdDrawDocument* pDoc, 
-    SfxRequest& rReq ) 
+	SdDrawDocument* pDoc,
+    SfxRequest& rReq )
     :	FuPoor(pViewSh, pWin, pView, pDoc, rReq)
 {
 }
@@ -257,7 +257,7 @@ void FuMorph::ImpEqualizePolyPointCount(::basegfx::B2DPolygon& rSmall, const ::b
 	const ::basegfx::B2DPoint aSrcPos(aSrcSize.getCenter());
 	const ::basegfx::B2DRange aDstSize(::basegfx::tools::getRange(rSmall));
 	const ::basegfx::B2DPoint aDstPos(aDstSize.getCenter());
-	
+
     basegfx::B2DHomMatrix aTrans(basegfx::tools::createTranslateB2DHomMatrix(-aSrcPos.getX(), -aSrcPos.getY()));
 	aTrans.scale(aDstSize.getWidth() / aSrcSize.getWidth(), aDstSize.getHeight() / aSrcSize.getHeight());
 	aTrans.translate(aDstPos.getX(), aDstPos.getY());
@@ -319,7 +319,7 @@ void FuMorph::ImpAddPolys(::basegfx::B2DPolyPolygon& rSmaller, const ::basegfx::
 		{
 			aNewPoly.append(aNewPoint);
 		}
-		
+
 		rSmaller.append(aNewPoly);
 	}
 }
@@ -441,8 +441,8 @@ void FuMorph::ImpInsertPolygons(List& rPolyPolyList3D, sal_Bool bAttributeFade,
 //////////////////////////////////////////////////////////////////////////////
 // create single morphed PolyPolygon
 //
-::basegfx::B2DPolyPolygon* FuMorph::ImpCreateMorphedPolygon( 
-	const ::basegfx::B2DPolyPolygon& rPolyPolyStart, 
+::basegfx::B2DPolyPolygon* FuMorph::ImpCreateMorphedPolygon(
+	const ::basegfx::B2DPolyPolygon& rPolyPolyStart,
 	const ::basegfx::B2DPolyPolygon& rPolyPolyEnd,
 	double fMorphingFactor)
 {
@@ -474,7 +474,7 @@ void FuMorph::ImpInsertPolygons(List& rPolyPolyList3D, sal_Bool bAttributeFade,
 // create morphed PolyPolygons
 //
 sal_Bool FuMorph::ImpMorphPolygons(
-	const ::basegfx::B2DPolyPolygon& rPolyPoly1, 
+	const ::basegfx::B2DPolyPolygon& rPolyPoly1,
 	const ::basegfx::B2DPolyPolygon& rPolyPoly2,
 	const sal_uInt16 nSteps, List& rPolyPolyList3D)
 {

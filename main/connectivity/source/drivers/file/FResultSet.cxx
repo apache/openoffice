@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -124,10 +124,10 @@ OResultSet::OResultSet(OStatement_Base* pStmt,OSQLParseTreeIterator&	_aSQLIterat
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "file", "Ocke.Janssen@sun.com", "OResultSet::OResultSet" );
 	DBG_CTOR( file_OResultSet, NULL );
 	osl_incrementInterlockedCount( &m_refCount );
-    m_bIsCount = (m_pParseTree && 
-			m_pParseTree->count() > 2														&& 
-			SQL_ISRULE(m_pParseTree->getChild(2),scalar_exp_commalist)						&& 
-			SQL_ISRULE(m_pParseTree->getChild(2)->getChild(0),derived_column)				&& 
+    m_bIsCount = (m_pParseTree &&
+			m_pParseTree->count() > 2														&&
+			SQL_ISRULE(m_pParseTree->getChild(2),scalar_exp_commalist)						&&
+			SQL_ISRULE(m_pParseTree->getChild(2)->getChild(0),derived_column)				&&
 			SQL_ISRULE(m_pParseTree->getChild(2)->getChild(0)->getChild(0),general_set_fct)	&&
 			m_pParseTree->getChild(2)->getChild(0)->getChild(0)->count() == 4
 			);
@@ -661,7 +661,7 @@ void SAL_CALL OResultSet::updateRow(  ) throw(SQLException, RuntimeException)
 
 	if(!m_pTable || m_pTable->isReadOnly())
         lcl_throwError(STR_TABLE_READONLY,*this);
-        
+
 	m_bRowUpdated = m_pTable->UpdateRow(m_aInsertRow.getBody(), m_aRow,m_xColsIdx);
 	*(m_aInsertRow->get())[0] = (sal_Int32)(m_aRow->get())[0]->getValue();
 
@@ -1291,7 +1291,7 @@ void OResultSet::sortRows()
 			}
 		}
 	}
-	
+
 	OSortIndex::TKeyTypeVector eKeyType(m_aOrderbyColumnNumber.size());
 	::std::vector<sal_Int32>::iterator aOrderByIter = m_aOrderbyColumnNumber.begin();
 	for (::std::vector<sal_Int16>::size_type i=0;aOrderByIter != m_aOrderbyColumnNumber.end(); ++aOrderByIter,++i)
@@ -1328,13 +1328,13 @@ void OResultSet::sortRows()
 		}
 		(m_aSelectRow->get())[*aOrderByIter]->setBound(sal_True);
 	}
-	
+
 	m_pSortIndex = new OSortIndex(eKeyType,m_aOrderbyAscending);
 
 	if (m_pEvaluationKeySet)
 	{
 		m_aEvaluateIter = m_pEvaluationKeySet->begin();
-			
+
 		while (m_aEvaluateIter != m_pEvaluationKeySet->end())
 		{
 			ExecuteRow(IResultSetHelper::BOOKMARK,(*m_aEvaluateIter),sal_True);
@@ -1352,7 +1352,7 @@ void OResultSet::sortRows()
             ExecuteRow( IResultSetHelper::BOOKMARK, nBookmark, sal_True, sal_False );
 	    }
 	}
-	
+
 	// Sortiertes Keyset erzeugen
 	//	DELETEZ(m_pEvaluationKeySet);
 	m_pEvaluationKeySet = NULL;
@@ -1375,7 +1375,7 @@ sal_Bool OResultSet::OpenImpl()
 		const OSQLTables& xTabs = m_aSQLIterator.getTables();
 		if ((xTabs.begin() == xTabs.end()) || !xTabs.begin()->second.is())
             lcl_throwError(STR_QUERY_TOO_COMPLEX,*this);
-									
+
 		if ( xTabs.size() > 1 || m_aSQLIterator.hasErrors() )
             lcl_throwError(STR_QUERY_MORE_TABLES,*this);
 
@@ -1422,7 +1422,7 @@ sal_Bool OResultSet::OpenImpl()
 			{
 				if(m_xColumns->get().size() > 1)
                     lcl_throwError(STR_QUERY_COMPLEX_COUNT,*this);
-					
+
 				m_nRowCountResult = 0;
 				// Vorlaeufig einfach ueber alle Datensaetze iterieren und
 				// dabei die Aktionen bearbeiten (bzw. einfach nur zaehlen):
@@ -1466,7 +1466,7 @@ sal_Bool OResultSet::OpenImpl()
 				OSQLParseNode *pDistinct = m_pParseTree->getChild(1);
 				::std::vector<sal_Int32>				aOrderbyColumnNumberSave;
 				::std::vector<TAscendingOrder>          aOrderbyAscendingSave;
-				
+
 				if (pDistinct && pDistinct->getTokenID() == SQL_TOKEN_DISTINCT )
 				{
 					// Sort on all columns, saving original order for later
@@ -1477,7 +1477,7 @@ sal_Bool OResultSet::OpenImpl()
 						aOrderbyAscendingSave.assign(m_aOrderbyAscending.begin(), m_aOrderbyAscending.end());
 						bWasSorted = sal_True;
 					}
-					
+
 					// the first column is the bookmark column
 					::std::vector<sal_Int32>::iterator aColStart = (m_aColMapping.begin()+1);
 					::std::copy(aColStart, m_aColMapping.end(),::std::back_inserter(m_aOrderbyColumnNumber));
@@ -1505,7 +1505,7 @@ sal_Bool OResultSet::OpenImpl()
 					}
 				}
 				OSL_ENSURE(m_pFileSet.isValid(),"Kein KeySet vorhanden! :-(");
-	
+
 				if(bDistinct && m_pFileSet.isValid())   // sicher ist sicher
 				{
 					OValueRow aSearchRow = new OValueVector(m_aRow->get().size());
@@ -1517,7 +1517,7 @@ sal_Bool OResultSet::OpenImpl()
                         aSearchIter->setBound((*aRowIter)->isBound());
 
 					size_t nMaxRow = m_pFileSet->get().size();
-					
+
 					if (nMaxRow)
 					{
     #if OSL_DEBUG_LEVEL > 1
@@ -1525,10 +1525,10 @@ sal_Bool OResultSet::OpenImpl()
 	#endif
 						sal_Int32 nPos;
 						sal_Int32 nKey;
-						
+
 						for( size_t j = nMaxRow-1; j > 0; --j)
 						{
-                            nPos = (m_pFileSet->get())[j]; 
+                            nPos = (m_pFileSet->get())[j];
 							ExecuteRow(IResultSetHelper::BOOKMARK,nPos,sal_False);
 							m_pSQLAnalyzer->setSelectionEvaluationResult(m_aSelectRow,m_aColMapping);
 							{ // copy row values
@@ -1554,7 +1554,7 @@ sal_Bool OResultSet::OpenImpl()
 								if ( (*loopInRow)->isBound() && !( *(*loopInRow) == *existentInSearchRow) )
 									break;
 							}
-										
+
 							if(loopInRow == m_aSelectRow->get().end())
 								(m_pFileSet->get())[j] = 0; // Rows match -- Mark for deletion by setting key to 0
     #if OSL_DEBUG_LEVEL > 1
@@ -1572,7 +1572,7 @@ sal_Bool OResultSet::OpenImpl()
 							// Re-sort on original requested order
 							m_aOrderbyColumnNumber = aOrderbyColumnNumberSave;
 							m_aOrderbyAscending.assign(aOrderbyAscendingSave.begin(), aOrderbyAscendingSave.end());
-							
+
 							TIntVector aEvaluationKeySet(m_pFileSet->get());
 							m_pEvaluationKeySet = &aEvaluationKeySet;
 							sortRows();

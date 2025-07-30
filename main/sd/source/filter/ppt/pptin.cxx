@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -428,7 +428,7 @@ sal_Bool ImplSdPPTImport::Import()
                                         if ( !aPropItem.Read( pHyperlink->aSubAdress, VT_EMPTY ) )
                                             break;
                                         pHyperlink->nStartPos = pHyperlink->nEndPos = -1;
-                                        
+
                                         if ( pHyperlink->aSubAdress.Len() ) // get the converted subadress
                                         {
                                             sal_uInt32 nPageNumber = 0;
@@ -885,7 +885,7 @@ sal_Bool ImplSdPPTImport::Import()
                         }
                         else
                         {
-                            // without StyleSheet, set attributes directly. This 
+                            // without StyleSheet, set attributes directly. This
                             // should not be done at all and is an error (will be asserted by SdrPage)
                             pMPage->getSdrPageProperties().ClearItem();
                             pMPage->getSdrPageProperties().PutItemSet(pObj->GetMergedItemSet());
@@ -2061,7 +2061,7 @@ String ImplSdPPTImport::ReadMedia( sal_uInt32 nMediaRef ) const
                                                 if( ::utl::LocalFileHelper::ConvertPhysicalNameToURL( aStr, aRetVal ) )
                                                 {
                                                     aRetVal = INetURLObject( aRetVal ).GetMainURL( INetURLObject::DECODE_UNAMBIGUOUS );
-                                                }else{ 
+                                                }else{
                                                     aRetVal = aStr;
                                                 }
                                             }
@@ -2361,11 +2361,11 @@ SdrObject* ImplSdPPTImport::ApplyTextObj( PPTTextObj* pTextObj, SdrTextObj* pObj
                         rItemSet.Put( (SdrTextLowerDistItem&)pText->GetMergedItem( SDRATTR_TEXT_LOWERDIST ) );
                         rItemSet.Put( (SdrTextVertAdjustItem&)pText->GetMergedItem( SDRATTR_TEXT_VERTADJUST ) );
                         rItemSet.Put( (SdrTextHorzAdjustItem&)pText->GetMergedItem( SDRATTR_TEXT_HORZADJUST ) );
-                        if (  pTextObj->GetInstance() ==  TSS_TYPE_TITLE 
+                        if (  pTextObj->GetInstance() ==  TSS_TYPE_TITLE
                             || pTextObj->GetInstance() == TSS_TYPE_SUBTITLE)
                         {
                             rItemSet.Put( pText->GetMergedItemSet() );
-                        }                    
+                        }
                     }
                     pText->NbcSetStyleSheet( pSheet2, sal_False );
                 }
@@ -2410,7 +2410,7 @@ SdrObject* ImplSdPPTImport::ApplyTextObj( PPTTextObj* pTextObj, SdrTextObj* pObj
                     {
                         //if a placeholder with some custom attribute,the pTextObj will keep those attr,whose text size is zero,
                         //so sdPage should renew a PresObj to process placeholder.
-                        if ( pTextObj->Count() > 1 || 
+                        if ( pTextObj->Count() > 1 ||
                             ( pTextObj->Count() == 1 &&(pTextObj->First()) && pTextObj->First()->GetTextSize()>0 ))
                             bEmptyPresObj = sal_False;
                         switch ( nPlaceholderId )
@@ -2473,7 +2473,7 @@ SdrObject* ImplSdPPTImport::ApplyTextObj( PPTTextObj* pTextObj, SdrTextObj* pObj
                             ApplyAttributes( rStCtrl, aSet );
                             pPresObj->SetLogicRect(pText->GetLogicRect());
                             ApplyTextAnchorAttributes( *pTextObj, aSet );
-                            //set custom font attribute of the placeholder 
+                            //set custom font attribute of the placeholder
                             if ( pTextObj->Count() == 1 )
                             {
                                 PPTParagraphObj* pPara = pTextObj->First();

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -189,7 +189,7 @@ sal_Bool copyFile(const OString* source, const OString& target)
         fclose(pSource);
         return sal_False;
     }
-    
+
     size_t totalSize = 512;
     size_t readSize  = 0;
     size_t writeSize = 0;
@@ -251,7 +251,7 @@ sal_Int32 compileFile(const OString * pathname)
     lCppArgs.push_back(OUString(RTL_CONSTASCII_USTRINGPARAM("-C")));
     lCppArgs.push_back(OUString(RTL_CONSTASCII_USTRINGPARAM("-zI")));
     lCppArgs.push_back(OUString(RTL_CONSTASCII_USTRINGPARAM("-I.")));
-    
+
     OStringBuffer cppArgs(256);
     Options* pOptions = idlc()->getOptions();
 
@@ -282,9 +282,9 @@ sal_Int32 compileFile(const OString * pathname)
             {
                 lCppArgs.push_back(OStringToOUString(token, RTL_TEXTENCODING_UTF8));
             }
-        } while( nIndex != -1 );        
+        } while( nIndex != -1 );
 	}
-    
+
 	if ( pOptions->isValid("-I") )
 	{
         OString incOpt = pOptions->getOption("-I");
@@ -301,13 +301,13 @@ sal_Int32 compileFile(const OString * pathname)
 	}
 
     lCppArgs.push_back(OUString(RTL_CONSTASCII_USTRINGPARAM("-o")));
-    
+
 	cppArgs.append(preprocFile);
     lCppArgs.push_back(OStringToOUString(cppArgs.makeStringAndClear(), RTL_TEXTENCODING_UTF8));
 
     cppArgs.append(tmpFile);
     lCppArgs.push_back(OStringToOUString(cppArgs.makeStringAndClear(), RTL_TEXTENCODING_UTF8));
- 
+
 	OUString cpp;
 	OUString startDir;
 	if (osl_getExecutableFile(&cpp.pData) != osl_Process_E_None) {
@@ -316,7 +316,7 @@ sal_Int32 compileFile(const OString * pathname)
 
     sal_Int32 idx= cpp.lastIndexOf(OUString( RTL_CONSTASCII_USTRINGPARAM("idlc")) );
  	cpp = cpp.copy(0, idx);
-    
+
 #if defined(SAL_W32) || defined(SAL_OS2)
  	cpp += OUString( RTL_CONSTASCII_USTRINGPARAM("ucpp.exe"));
 #else
@@ -337,7 +337,7 @@ sal_Int32 compileFile(const OString * pathname)
         pCmdArgs[i++] = (*iter).pData;
         ++iter;
     }
-    
+
 	procError = osl_executeProcess(cpp.pData, pCmdArgs, nCmdArgs, osl_Process_WAIT,
 								   0, startDir.pData, 0, 0, &hProcess);
 

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -51,7 +51,7 @@ using namespace com::sun::star::util;
 
 IMPLEMENT_SERVICE_INFO(MacabResultSet, "com.sun.star.sdbc.drivers.MacabResultSet", "com.sun.star.sdbc.ResultSet");
 // -------------------------------------------------------------------------
-MacabResultSet::MacabResultSet(MacabCommonStatement* pStmt) 
+MacabResultSet::MacabResultSet(MacabCommonStatement* pStmt)
 	: MacabResultSet_BASE(m_aMutex),
 	  OPropertySetHelper(MacabResultSet_BASE::rBHelper),
 	  m_xStatement(pStmt),
@@ -70,7 +70,7 @@ MacabResultSet::~MacabResultSet()
 void MacabResultSet::allMacabRecords()
 {
 	MacabConnection* pConnection = static_cast< MacabConnection *>(m_xStatement->getConnection().get());
-	
+
 	m_aMacabRecords = pConnection->getAddressBook()->getMacabRecords(m_sTableName);
 }
 // -------------------------------------------------------------------------
@@ -78,7 +78,7 @@ void MacabResultSet::someMacabRecords(const MacabCondition *pCondition)
 {
 	MacabConnection* pConnection = static_cast< MacabConnection *>(m_xStatement->getConnection().get());
 	MacabRecords* allRecords;
-	
+
 	allRecords = pConnection->getAddressBook()->getMacabRecords(m_sTableName);
 
 	// Bad table!! Throw exception?
@@ -186,13 +186,13 @@ sal_Int32 SAL_CALL MacabResultSet::findColumn(const ::rtl::OUString& columnName)
 	::osl::MutexGuard aGuard( m_aMutex );
 	checkDisposed(MacabResultSet_BASE::rBHelper.bDisposed);
 
-	// find the first column with the name columnName 
+	// find the first column with the name columnName
 	Reference< XResultSetMetaData > xMeta = getMetaData();
 	sal_Int32 nLen = xMeta->getColumnCount();
 
 	for (sal_Int32 i = 1; i <= nLen; ++i)
 		if (xMeta->isCaseSensitive(i) ?
-			columnName == xMeta->getColumnName(i) : 
+			columnName == xMeta->getColumnName(i) :
 			columnName.equalsIgnoreAsciiCase(xMeta->getColumnName(i)))
 				return i;
 
@@ -573,7 +573,7 @@ void SAL_CALL MacabResultSet::beforeFirst() throw(SQLException, RuntimeException
 {
 	::osl::MutexGuard aGuard( m_aMutex );
 	checkDisposed(MacabResultSet_BASE::rBHelper.bDisposed);
-		
+
 	// move before the first row
 	m_nRowPos = -1;
 }
@@ -687,7 +687,7 @@ sal_Bool SAL_CALL MacabResultSet::rowDeleted() throw(SQLException, RuntimeExcept
 }
 // -------------------------------------------------------------------------
 sal_Bool SAL_CALL MacabResultSet::rowInserted() throw(SQLException, RuntimeException)
-{	
+{
 	::osl::MutexGuard aGuard( m_aMutex );
 	checkDisposed(MacabResultSet_BASE::rBHelper.bDisposed);
 
@@ -737,7 +737,7 @@ void SAL_CALL MacabResultSet::updateRow() throw(SQLException, RuntimeException)
 {
 	::osl::MutexGuard aGuard( m_aMutex );
 	checkDisposed(MacabResultSet_BASE::rBHelper.bDisposed);
-		
+
 	// only when you allow updates
 }
 // -------------------------------------------------------------------------
@@ -757,7 +757,7 @@ void SAL_CALL MacabResultSet::moveToInsertRow() throw(SQLException, RuntimeExcep
 {
 	::osl::MutexGuard aGuard( m_aMutex );
 	checkDisposed(MacabResultSet_BASE::rBHelper.bDisposed);
-		
+
 	// only when you allow inserts
 }
 // -------------------------------------------------------------------------
@@ -980,7 +980,7 @@ Sequence< sal_Int32 > SAL_CALL MacabResultSet::deleteRows(const  Sequence<  Any 
 {
 	::osl::MutexGuard aGuard( m_aMutex );
 	checkDisposed(MacabResultSet_BASE::rBHelper.bDisposed);
-		
+
 	return Sequence< sal_Int32 >();
 }
 // -------------------------------------------------------------------------

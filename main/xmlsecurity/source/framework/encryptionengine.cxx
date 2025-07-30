@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -90,11 +90,11 @@ bool EncryptionEngine::checkReady() const
 	{
 		rc = false;
 	}
-	
+
 	return rc;
 }
 
-void EncryptionEngine::tryToPerform( ) 
+void EncryptionEngine::tryToPerform( )
     	throw (cssu::Exception, cssu::RuntimeException)
 /****** EncryptionEngine/tryToPerform ****************************************
  *
@@ -128,27 +128,27 @@ void EncryptionEngine::tryToPerform( )
 {
 	if (checkReady())
 	{
-		const rtl::OUString sEncryptionTemplate ( 
-			RTL_CONSTASCII_USTRINGPARAM( ENCRYPTION_TEMPLATE ) );	
+		const rtl::OUString sEncryptionTemplate (
+			RTL_CONSTASCII_USTRINGPARAM( ENCRYPTION_TEMPLATE ) );
 		cssu::Reference < cssxc::XXMLEncryptionTemplate > xEncryptionTemplate(
 			mxMSF->createInstance( sEncryptionTemplate ), cssu::UNO_QUERY );
-		
+
 		OSL_ASSERT( xEncryptionTemplate.is() );
-	
-		cssu::Reference< cssxw::XXMLElementWrapper > xXMLElement 
+
+		cssu::Reference< cssxw::XXMLElementWrapper > xXMLElement
 			= m_xSAXEventKeeper->getElement( m_nIdOfTemplateEC );
-		
+
 		xEncryptionTemplate->setTemplate(xXMLElement);
-		
+
 		startEngine( xEncryptionTemplate );
-	
+
 		/*
 		 * done
 		 */
 		clearUp( );
-		
+
 		notifyResultListener();
-				
+
 		m_bMissionDone = true;
 	}
 }
@@ -182,20 +182,20 @@ void EncryptionEngine::clearUp( ) const
  *	Email: michael.mi@sun.com
  ******************************************************************************/
 {
-	cssu::Reference < cssxc::sax::XReferenceResolvedBroadcaster > 
+	cssu::Reference < cssxc::sax::XReferenceResolvedBroadcaster >
 		xReferenceResolvedBroadcaster( m_xSAXEventKeeper, cssu::UNO_QUERY );
-		
+
 	xReferenceResolvedBroadcaster->removeReferenceResolvedListener(
-		m_nIdOfTemplateEC, 
+		m_nIdOfTemplateEC,
 		(const cssu::Reference < cssxc::sax::XReferenceResolvedListener >)((SecurityEngine *)this));
-	
+
 	m_xSAXEventKeeper->removeElementCollector(m_nIdOfTemplateEC);
-		
+
 	if (m_nIdOfBlocker != -1)
 	{
 		m_xSAXEventKeeper->removeBlocker(m_nIdOfBlocker);
 	}
-		
+
 	if (m_nIdOfKeyEC != 0 && m_nIdOfKeyEC != -1)
 	{
 		m_xSAXEventKeeper->removeElementCollector(m_nIdOfKeyEC);

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -51,7 +51,7 @@ namespace drawinglayer
 			aBackgroundPolygon.transform(getTransform());
 			const Primitive2DReference xRefBackground(
 				new PolyPolygonColorPrimitive2D(
-					basegfx::B2DPolyPolygon(aBackgroundPolygon), 
+					basegfx::B2DPolyPolygon(aBackgroundPolygon),
 					getBackgroundColor()));
 			xRetval[0] = xRefBackground;
 
@@ -69,7 +69,7 @@ namespace drawinglayer
 
 			if(getDiscreteBorder())
 			{
-				const basegfx::B2DVector aDiscreteInLogic(rViewInformation.getInverseObjectToViewTransformation() * 
+				const basegfx::B2DVector aDiscreteInLogic(rViewInformation.getInverseObjectToViewTransformation() *
                     basegfx::B2DVector((double)getDiscreteBorder(), (double)getDiscreteBorder()));
 				const double fDiscreteSize(aDiscreteInLogic.getX() + aDiscreteInLogic.getY());
 
@@ -84,7 +84,7 @@ namespace drawinglayer
 					// shrunk primitive has no content (zero size in X or Y), nothing to display. Still create
 					// invisible content for HitTest and BoundRect
 					const Primitive2DReference xHiddenLines(new HiddenGeometryPrimitive2D(xRetval));
-					
+
 					xRetval = Primitive2DSequence(&xHiddenLines, 1);
 				}
 				else
@@ -139,10 +139,10 @@ namespace drawinglayer
 
 			if(getDiscreteBorder())
 			{
-				const basegfx::B2DVector aDiscreteInLogic(rViewInformation.getInverseObjectToViewTransformation() * 
+				const basegfx::B2DVector aDiscreteInLogic(rViewInformation.getInverseObjectToViewTransformation() *
                     basegfx::B2DVector((double)getDiscreteBorder(), (double)getDiscreteBorder()));
 				const double fDiscreteSize(aDiscreteInLogic.getX() + aDiscreteInLogic.getY());
-				
+
 				aRetval.grow(-0.5 * fDiscreteSize);
 			}
 

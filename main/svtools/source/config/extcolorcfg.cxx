@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -57,10 +57,10 @@ namespace svtools
 
 #define C2U(cChar) OUString::createFromAscii(cChar)
 sal_Int32            nExtendedColorRefCount_Impl = 0;
-namespace 
+namespace
 {
-    struct ColorMutex_Impl 
-        : public rtl::Static< ::osl::Mutex, ColorMutex_Impl > {}; 
+    struct ColorMutex_Impl
+        : public rtl::Static< ::osl::Mutex, ColorMutex_Impl > {};
 }
 
 ExtendedColorConfig_Impl*    ExtendedColorConfig::m_pImpl = NULL;
@@ -76,7 +76,7 @@ class ExtendedColorConfig_Impl : public utl::ConfigItem, public SfxBroadcaster
 	DECLARE_STL_USTRINGACCESS_MAP(TComponentMapping,TComponents);
 	TComponents			m_aConfigValues;
 	TDisplayNames		m_aComponentDisplayNames;
-	::std::vector<TComponents::iterator> m_aConfigValuesPos;	
+	::std::vector<TComponents::iterator> m_aConfigValuesPos;
 
     sal_Bool            m_bEditMode;
     rtl::OUString       m_sLoadedScheme;
@@ -252,8 +252,8 @@ void ExtendedColorConfig_Impl::EnableBroadcast()
 	    ExtendedColorConfig::m_pImpl->m_bIsBroadcastEnabled = sal_True;
 }
 // -----------------------------------------------------------------------------
-sal_Bool ExtendedColorConfig_Impl::IsEnableBroadcast() 
-{ 
+sal_Bool ExtendedColorConfig_Impl::IsEnableBroadcast()
+{
     return ExtendedColorConfig::m_pImpl ? ExtendedColorConfig::m_pImpl->m_bIsBroadcastEnabled : sal_False;
 }
 /* -----------------------------22.03.2002 14:38------------------------------
@@ -298,7 +298,7 @@ void ExtendedColorConfig_Impl::Load(const rtl::OUString& rScheme)
 		lcl_addString(aDisplayNames,sDisplayName);
 
 		uno::Sequence< uno::Any > aDisplayNamesValue = GetProperties( aDisplayNames );
-		
+
 		const ::rtl::OUString* pDispIter = aDisplayNames.getConstArray();
 		const ::rtl::OUString* pDispEnd  = pDispIter + aDisplayNames.getLength();
 		for(sal_Int32 j = 0;pDispIter != pDispEnd;++pDispIter,++j)
@@ -310,12 +310,12 @@ void ExtendedColorConfig_Impl::Load(const rtl::OUString& rScheme)
 			::rtl::OUString sCurrentDisplayName;
 			aDisplayNamesValue[j] >>= sCurrentDisplayName;
 			aDisplayNameMap.insert(TDisplayNames::value_type(sName,sCurrentDisplayName));
-		} 
+		}
 	}
 
 	// load color settings
     rtl::OUString sScheme(rScheme);
-	
+
     if(!sScheme.getLength())
     {
         //detect current scheme name
@@ -324,7 +324,7 @@ void ExtendedColorConfig_Impl::Load(const rtl::OUString& rScheme)
         uno::Sequence< uno::Any > aCurrentVal = GetProperties( aCurrent );
         aCurrentVal.getConstArray()[0] >>= sScheme;
     } // if(!sScheme.getLength())
-	
+
     m_sLoadedScheme = sScheme;
 	::rtl::OUString sBase(RTL_CONSTASCII_USTRINGPARAM("ExtendedColorScheme/ColorSchemes/"));
 	sBase += sScheme;
@@ -338,7 +338,7 @@ void ExtendedColorConfig_Impl::Load(const rtl::OUString& rScheme)
 
 	if ( !m_sLoadedScheme.getLength() )
 		m_sLoadedScheme = ::rtl::OUString(RTL_CONSTASCII_USTRINGPARAM("default"));
-	
+
 	if ( !sScheme.equalsAscii("default") )
 	{
 		::rtl::OUString sDefault(RTL_CONSTASCII_USTRINGPARAM("default"));
@@ -385,7 +385,7 @@ void ExtendedColorConfig_Impl::FillComponentColors(uno::Sequence < ::rtl::OUStri
 
 			::rtl::OUString* pColorIter = aColorNames.getArray();
 			::rtl::OUString* pColorEnd  = pColorIter + aColorNames.getLength();
-			
+
 			m_aConfigValuesPos.push_back(m_aConfigValues.insert(TComponents::value_type(sComponentName,TComponentMapping(TConfigValues(),TMapPos()))).first);
 			TConfigValues& aConfigValues = (*m_aConfigValuesPos.rbegin())->second.first;
 			TMapPos& aConfigValuesPos = (*m_aConfigValuesPos.rbegin())->second.second;
@@ -397,14 +397,14 @@ void ExtendedColorConfig_Impl::FillComponentColors(uno::Sequence < ::rtl::OUStri
 					pColorIter->getToken(2,'/',nIndex);
                     ::rtl::OUString sName(pColorIter->copy(nIndex)),sDisplayName;
 					::rtl::OUString sTemp = sName.copy(0,sName.lastIndexOf(sColor));
-					
+
 					TDisplayNames::const_iterator aFind = _rDisplayNames.find(sTemp);
 					nIndex = 0;
 					sName = sName.getToken(2,'/',nIndex);
 					OSL_ENSURE(aFind != _rDisplayNames.end(),"DisplayName is not in EntryNames config list!");
 					if ( aFind != _rDisplayNames.end() )
 						sDisplayName = aFind->second;
-					
+
 					OSL_ENSURE(pColors[i].hasValue(),"Color config entry has NIL as color value set!");
                     OSL_ENSURE(pDefaultColors[i].hasValue(),"Color config entry has NIL as color value set!");
                     sal_Int32 nColor = 0,nDefaultColor = 0;
@@ -482,7 +482,7 @@ void ExtendedColorConfig_Impl::Commit()
 			::rtl::OUString s(RTL_CONSTASCII_USTRINGPARAM("ExtendedColorScheme/ColorSchemes"));
 			SetSetProperties(s, aPropValues);
 		}
-	}    
+	}
 
     CommitCurrentSchemeName();
 }
@@ -502,7 +502,7 @@ void ExtendedColorConfig_Impl::CommitCurrentSchemeName()
 sal_Bool ExtendedColorConfig_Impl::ExistsScheme(const ::rtl::OUString& _sSchemeName)
 {
 	::rtl::OUString sBase(RTL_CONSTASCII_USTRINGPARAM("ExtendedColorScheme/ColorSchemes"));
-	
+
 	uno::Sequence < ::rtl::OUString > aComponentNames = GetPropertyNames(sBase);
 	sBase += ::rtl::OUString(RTL_CONSTASCII_USTRINGPARAM("/")) + _sSchemeName;
 	const ::rtl::OUString* pCompIter = aComponentNames.getConstArray();

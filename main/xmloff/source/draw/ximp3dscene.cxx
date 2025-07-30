@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -42,10 +42,10 @@ using namespace ::xmloff::token;
 //////////////////////////////////////////////////////////////////////////////
 // dr3d:3dlight context
 
-SdXML3DLightContext::SdXML3DLightContext( 
-	SvXMLImport& rImport, 
+SdXML3DLightContext::SdXML3DLightContext(
+	SvXMLImport& rImport,
 	sal_uInt16 nPrfx,
-	const rtl::OUString& rLName, 
+	const rtl::OUString& rLName,
 	const com::sun::star::uno::Reference< com::sun::star::xml::sax::XAttributeList >& xAttrList)
 :	SvXMLImportContext( rImport, nPrfx, rLName),
 	maDiffuseColor(0x00000000),
@@ -97,13 +97,13 @@ SdXML3DLightContext::~SdXML3DLightContext()
 
 TYPEINIT1( SdXML3DSceneShapeContext, SdXMLShapeContext );
 
-SdXML3DSceneShapeContext::SdXML3DSceneShapeContext( 
+SdXML3DSceneShapeContext::SdXML3DSceneShapeContext(
 	SvXMLImport& rImport,
-	sal_uInt16 nPrfx, 
+	sal_uInt16 nPrfx,
 	const OUString& rLocalName,
 	const com::sun::star::uno::Reference< com::sun::star::xml::sax::XAttributeList>& xAttrList,
 	uno::Reference< drawing::XShapes >& rShapes,
-    sal_Bool bTemporaryShapes) 
+    sal_Bool bTemporaryShapes)
 :	SdXMLShapeContext( rImport, nPrfx, rLocalName, xAttrList, rShapes, bTemporaryShapes ), SdXML3DSceneAttributesHelper( rImport )
 {
 }
@@ -120,7 +120,7 @@ void SdXML3DSceneShapeContext::StartElement(const uno::Reference< xml::sax::XAtt
 {
 	// create new 3DScene shape and add it to rShapes, use it
 	// as base for the new 3DScene import
-	AddShape( "com.sun.star.drawing.Shape3DSceneObject" );		
+	AddShape( "com.sun.star.drawing.Shape3DSceneObject" );
 	if( mxShape.is() )
 	{
 		SetStyle();
@@ -183,7 +183,7 @@ SvXMLImportContext* SdXML3DSceneShapeContext::CreateChildContext( sal_uInt16 nPr
 	SvXMLImportContext* pContext = 0L;
 
 	// #i68101#
-	if( nPrefix == XML_NAMESPACE_SVG &&	
+	if( nPrefix == XML_NAMESPACE_SVG &&
 		(IsXMLToken( rLocalName, XML_TITLE ) || IsXMLToken( rLocalName, XML_DESC ) ) )
 	{
 		pContext = new SdXMLDescriptionContext( GetImport(), nPrefix, rLocalName, xAttrList, mxShape );
@@ -287,7 +287,7 @@ void SdXML3DSceneAttributesHelper::processSceneAttribute( sal_uInt16 nPrefix, co
 		{
 			::basegfx::B3DVector aNewVec;
 			mrImport.GetMM100UnitConverter().convertB3DVector(aNewVec, rValue);
-			
+
 			if(aNewVec != maVPN)
 			{
 				maVPN = aNewVec;
@@ -299,7 +299,7 @@ void SdXML3DSceneAttributesHelper::processSceneAttribute( sal_uInt16 nPrefix, co
 		{
 			::basegfx::B3DVector aNewVec;
 			mrImport.GetMM100UnitConverter().convertB3DVector(aNewVec, rValue);
-			
+
 			if(aNewVec != maVUP)
 			{
 				maVUP = aNewVec;

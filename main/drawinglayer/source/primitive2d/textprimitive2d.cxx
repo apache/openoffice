@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -41,10 +41,10 @@ using namespace com::sun::star;
 namespace
 {
 	// adapts fontScale for usage with TextLayouter. Input is rScale which is the extracted
-	// scale from a text transformation. A copy is modified so that it contains only positive 
+	// scale from a text transformation. A copy is modified so that it contains only positive
     // scalings and XY-equal scalings to allow to get a non-X-scaled Vcl-Font for TextLayouter.
-    // rScale is adapted accordingly to contain the corrected scale which would need to be 
-    // applied to e.g. outlines received from TextLayouter under usage of fontScale. This 
+    // rScale is adapted accordingly to contain the corrected scale which would need to be
+    // applied to e.g. outlines received from TextLayouter under usage of fontScale. This
     // includes Y-Scale, X-Scale-correction and mirrorings.
     basegfx::B2DVector getCorrectedScaleAndFontScale(basegfx::B2DVector& rScale)
 	{
@@ -102,7 +102,7 @@ namespace drawinglayer
 				// decompose object transformation to single values
 				basegfx::B2DVector aScale, aTranslate;
 				double fRotate, fShearX;
-				
+
 				// if decomposition returns false, create no geometry since e.g. scaling may
 				// be zero
 				if(getTextTransform().decompose(aScale, aTranslate, fRotate, fShearX))
@@ -124,8 +124,8 @@ namespace drawinglayer
 					// prepare textlayoutdevice
 					TextLayouterDevice aTextLayouter;
 					aTextLayouter.setFontAttribute(
-                        getFontAttribute(), 
-                        aFontScale.getX(), 
+                        getFontAttribute(),
+                        aFontScale.getX(),
                         aFontScale.getY(),
                         getLocale());
 
@@ -144,23 +144,23 @@ namespace drawinglayer
 
                         // get the text outlines
 					    aTextLayouter.getTextOutlines(
-                            rTarget, 
-                            getText(), 
-                            getTextPosition(), 
-                            getTextLength(), 
+                            rTarget,
+                            getText(),
+                            getTextPosition(),
+                            getTextLength(),
                             aScaledDXArray);
                     }
                     else
                     {
                         // get the text outlines
 					    aTextLayouter.getTextOutlines(
-                            rTarget, 
-                            getText(), 
-                            getTextPosition(), 
-                            getTextLength(), 
+                            rTarget,
+                            getText(),
+                            getTextPosition(),
+                            getTextLength(),
                             getDXArray());
                     }
-	                
+
 					// create primitives for the outlines
 					const sal_uInt32 nCount(rTarget.size());
 
@@ -209,14 +209,14 @@ namespace drawinglayer
 				        basegfx::B2DVector aScale, aTranslate;
 				        double fRotate, fShearX;
 				        aPolygonTransform.decompose(aScale, aTranslate, fRotate, fShearX);
-						
+
                         // create outline text effect with current content and replace
 						Primitive2DReference aNewTextEffect(new TextEffectPrimitive2D(
-							aRetval, 
-							aTranslate, 
-							fRotate, 
+							aRetval,
+							aTranslate,
+							fRotate,
 							TEXTEFFECTSTYLE2D_OUTLINE));
-						
+
 						aRetval = Primitive2DSequence(&aNewTextEffect, 1);
 					}
 				}
@@ -227,7 +227,7 @@ namespace drawinglayer
 
 		TextSimplePortionPrimitive2D::TextSimplePortionPrimitive2D(
 			const basegfx::B2DHomMatrix& rNewTransform,
-			const String& rText, 
+			const String& rText,
 			xub_StrLen aTextPosition,
 			xub_StrLen aTextLength,
 			const ::std::vector< double >& rDXArray,
@@ -247,7 +247,7 @@ namespace drawinglayer
 		{
 #ifdef DBG_UTIL
 			const xub_StrLen aStringLength(getText().Len());
-			OSL_ENSURE(aStringLength >= getTextPosition() && aStringLength >= getTextPosition() + getTextLength(), 
+			OSL_ENSURE(aStringLength >= getTextPosition() && aStringLength >= getTextPosition() + getTextLength(),
 				"TextSimplePortionPrimitive2D with text out of range (!)");
 #endif
 		}
@@ -286,7 +286,7 @@ namespace drawinglayer
 				// decompose object transformation to single values
 				basegfx::B2DVector aScale, aTranslate;
 				double fRotate, fShearX;
-				
+
 				if(getTextTransform().decompose(aScale, aTranslate, fRotate, fShearX))
 				{
 					// for the TextLayouterDevice, it is necessary to have a scaling representing
@@ -298,8 +298,8 @@ namespace drawinglayer
 					// prepare textlayoutdevice
 					TextLayouterDevice aTextLayouter;
 					aTextLayouter.setFontAttribute(
-                        getFontAttribute(), 
-                        aFontScale.getX(), 
+                        getFontAttribute(),
+                        aFontScale.getX(),
                         aFontScale.getY(),
                         getLocale());
 
@@ -312,7 +312,7 @@ namespace drawinglayer
 					    // prepare object transformation for range
 						const basegfx::B2DHomMatrix aRangeTransformation(basegfx::tools::createScaleShearXRotateTranslateB2DHomMatrix(
 							aScale, fShearX, fRotate, aTranslate));
-    					
+
 					    // apply range transformation to it
 					    aNewRange.transform(aRangeTransformation);
 

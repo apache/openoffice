@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -126,7 +126,7 @@ VendorSettings::VendorSettings():
                 JFW_E_ERROR,
                 OString("[Java framework] Error while parsing file: ")
                 + sSettingsPath + OString("."));
-        
+
         m_xmlPathContextVendorSettings = xmlXPathNewContext(m_xmlDocVendorSettings);
         int res = xmlXPathRegisterNs(
             m_xmlPathContextVendorSettings, (xmlChar*) "jf",
@@ -140,7 +140,7 @@ std::vector<PluginLibrary> VendorSettings::getPluginData()
 {
     OString sExcMsg("[Java framework] Error in function VendorSettings::getVendorPluginURLs "
                          "(fwkbase.cxx).");
-    std::vector<PluginLibrary> vecPlugins;    
+    std::vector<PluginLibrary> vecPlugins;
 	CXPathObjectPtr result(xmlXPathEvalExpression(
         (xmlChar*)"/jf:javaSelection/jf:plugins/jf:library",
         m_xmlPathContextVendorSettings));
@@ -175,7 +175,7 @@ std::vector<PluginLibrary> VendorSettings::getPluginData()
                     "[Java framework] The file: " + sPlugin + " does not exist.");
             }
             plugin.sPath  = sUrl;
-            
+
             vecPlugins.push_back(plugin);
         }
         cur = cur->next;
@@ -190,11 +190,11 @@ VersionInfo VendorSettings::getVersionInformation(const rtl::OUString & sVendor)
     OString osVendor = OUStringToOString(sVendor, RTL_TEXTENCODING_UTF8);
     //Get minVersion
     OString sExpresion = OString(
-        "/jf:javaSelection/jf:vendorInfos/jf:vendor[@name=\"") + 
+        "/jf:javaSelection/jf:vendorInfos/jf:vendor[@name=\"") +
         osVendor + OString("\"]/jf:minVersion");
-                            
+
     CXPathObjectPtr xPathObjectMin;
-    xPathObjectMin = 
+    xPathObjectMin =
         xmlXPathEvalExpression((xmlChar*) sExpresion.getStr(),
                                m_xmlPathContextVendorSettings);
     if (xmlXPathNodeSetIsEmpty(xPathObjectMin->nodesetval))
@@ -213,7 +213,7 @@ VersionInfo VendorSettings::getVersionInformation(const rtl::OUString & sVendor)
     }
 
     //Get maxVersion
-    sExpresion = OString("/jf:javaSelection/jf:vendorInfos/jf:vendor[@name=\"") + 
+    sExpresion = OString("/jf:javaSelection/jf:vendorInfos/jf:vendor[@name=\"") +
         osVendor + OString("\"]/jf:maxVersion");
     CXPathObjectPtr xPathObjectMax;
     xPathObjectMax = xmlXPathEvalExpression(
@@ -235,7 +235,7 @@ VersionInfo VendorSettings::getVersionInformation(const rtl::OUString & sVendor)
     }
 
     //Get excludeVersions
-    sExpresion = OString("/jf:javaSelection/jf:vendorInfos/jf:vendor[@name=\"") + 
+    sExpresion = OString("/jf:javaSelection/jf:vendorInfos/jf:vendor[@name=\"") +
         osVendor + OString("\"]/jf:excludeVersions/jf:version");
     CXPathObjectPtr xPathObjectVersions;
     xPathObjectVersions =
@@ -277,7 +277,7 @@ std::vector<OUString> VendorSettings::getSupportedVendors()
         throw FrameworkException(
             JFW_E_ERROR,
             rtl::OString("[Java framework] Error in function getSupportedVendors (fwkutil.cxx)."));
-    
+
     //get the values of the library elements + vendor attribute
     xmlNode* cur = result->nodesetval->nodeTab[0];
     while (cur != NULL)
@@ -389,7 +389,7 @@ rtl::OString BootParams::getClasspath()
             UNO_JAVA_JFW_CLASSPATH " = \"%s\".\n", sClassPath.getStr());
 #endif
     }
-    
+
     rtl::OUString sEnvCP;
     if (Bootstrap::get()->getFrom(
         rtl::OUString(RTL_CONSTASCII_USTRINGPARAM(UNO_JAVA_JFW_ENV_CLASSPATH)),
@@ -511,7 +511,7 @@ rtl::OUString BootParams::getJREHome()
         fprintf(stderr,"[Java framework] Using bootstrap parameter "
             UNO_JAVA_JFW_JREHOME" = %s.\n", sValue.getStr());
     }
-#endif    
+#endif
     return sJRE;
 }
 
@@ -602,7 +602,7 @@ JFW_MODE getMode()
             g_mode = JFW_MODE_APPLICATION;
         g_bMode = true;
     }
-        
+
     return g_mode;
 }
 
@@ -645,11 +645,11 @@ rtl::OString makeClassPathOption(OUString const & sUserClassPath)
     rtl::OString sPaths;
     rtl::OUStringBuffer sBufCP(4096);
     char szSep[] = {SAL_PATHSEPARATOR,0};
-    
+
     // append all user selected jars to the class path
     if (sUserClassPath.getLength() > 0)
         sBufCP.append(sUserClassPath);
-    
+
     //append all jar libraries and components to the class path
     OUString sAppCP = getApplicationClassPath();
     if (sAppCP.getLength())
@@ -658,10 +658,10 @@ rtl::OString makeClassPathOption(OUString const & sUserClassPath)
             sBufCP.appendAscii(szSep);
         sBufCP.append(sAppCP);
     }
-    
+
     sPaths = rtl::OUStringToOString(
         sBufCP.makeStringAndClear(), osl_getThreadTextEncoding());
-    
+
     rtl::OString sOptionClassPath("-Djava.class.path=");
     sOptionClassPath += sPaths;
     return sOptionClassPath;

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -40,7 +40,7 @@
 #include "osl/module.hxx"
 #include "osl/thread.hxx"
 #include "rtl/ustring.hxx"
-#include "rtl/ustrbuf.hxx" 
+#include "rtl/ustrbuf.hxx"
 #include "rtl/bootstrap.hxx"
 #include "osl/file.hxx"
 #include "osl/process.h"
@@ -78,7 +78,7 @@ bool isAccessibilitySupportDesired()
         DWORD   dwType = 0;
         DWORD   dwLen = 16;
         unsigned char arData[16];
-        if( RegQueryValueEx(hKey, "SupportAssistiveTechnology", NULL, &dwType, arData, 
+        if( RegQueryValueEx(hKey, "SupportAssistiveTechnology", NULL, &dwType, arData,
                             & dwLen)== ERROR_SUCCESS)
         {
             if (dwType == REG_SZ)
@@ -92,7 +92,7 @@ bool isAccessibilitySupportDesired()
 #if OSL_DEBUG_LEVEL > 1
                 else
                     OSL_ASSERT(0);
-#endif                 
+#endif
             }
             else if (dwType == REG_DWORD)
             {
@@ -103,7 +103,7 @@ bool isAccessibilitySupportDesired()
 #if OSL_DEBUG_LEVEL > 1
                 else
                     OSL_ASSERT(0);
-#endif                
+#endif
             }
         }
     }
@@ -151,7 +151,7 @@ rtl::ByteSequence encodeBase16(const rtl::ByteSequence& rawData)
         *pCurBuf = EncodingTable[curChar];
         pCurBuf++;
     }
-    
+
     rtl::ByteSequence ret((sal_Int8*) pBuf, lenRaw * 2);
     delete [] pBuf;
     return ret;
@@ -194,7 +194,7 @@ rtl::ByteSequence decodeBase16(const rtl::ByteSequence& data)
     }
     rtl::ByteSequence ret((sal_Int8*) pBuf, lenBuf );
     delete [] pBuf;
-    return ret;   
+    return ret;
 }
 
 rtl::OUString getDirFromFile(const rtl::OUString& usFilePath)
@@ -210,10 +210,10 @@ rtl::OUString getExecutableDirectory()
         throw FrameworkException(
             JFW_E_ERROR,
             "[Java framework] Error in function getExecutableDirectory (fwkutil.cxx)");
-    
+
     rtl::OUString ouExe(sExe, SAL_NO_ACQUIRE);
     return getDirFromFile(ouExe);
-} 
+}
 
 rtl::OUString findPlugin(
     const rtl::OUString & baseUrl, const rtl::OUString & plugin)
@@ -304,7 +304,7 @@ rtl::OUString getLibraryLocation()
     rtl::OString sExcMsg("[Java framework] Error in function getLibraryLocation "
                          "(fwkutil.cxx).");
     rtl::OUString libraryFileUrl;
-    
+
     if (!osl::Module::getUrlFromAddress(
             reinterpret_cast< oslGenericFunction >(getLibraryLocation),
             libraryFileUrl))
@@ -321,7 +321,7 @@ jfw::FileStatus checkFileURL(const rtl::OUString & sURL)
     if (File::E_None == rc_item)
     {
         osl::FileStatus status(FileStatusMask_Validate);
-        
+
         File::RC rc_stat = item.getFileStatus(status);
         if (File::E_None == rc_stat)
         {

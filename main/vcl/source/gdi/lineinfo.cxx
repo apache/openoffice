@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -125,7 +125,7 @@ LineInfo& LineInfo::operator=( const LineInfo& rLineInfo )
 
     if( !( --mpImplLineInfo->mnRefCount ) )
         delete mpImplLineInfo;
-    
+
 	mpImplLineInfo = rLineInfo.mpImplLineInfo;
     return *this;
 }
@@ -245,11 +245,11 @@ void LineInfo::SetLineCap(com::sun::star::drawing::LineCap eLineCap)
 
 // -----------------------------------------------------------------------
 
-sal_Bool LineInfo::IsDefault() const 
-{ 
-    return( !mpImplLineInfo->mnWidth 
-        && ( LINE_SOLID == mpImplLineInfo->meStyle ) 
-        && ( com::sun::star::drawing::LineCap_BUTT == mpImplLineInfo->meLineCap)); 
+sal_Bool LineInfo::IsDefault() const
+{
+    return( !mpImplLineInfo->mnWidth
+        && ( LINE_SOLID == mpImplLineInfo->meStyle )
+        && ( com::sun::star::drawing::LineCap_BUTT == mpImplLineInfo->meLineCap));
 }
 
 // -----------------------------------------------------------------------
@@ -382,16 +382,16 @@ void LineInfo::applyToB2DPolyPolygon(
 		if(GetWidth() > 1 && io_rLinePolyPolygon.count())
 		{
 			const double fHalfLineWidth((GetWidth() * 0.5) + 0.5);
-	        
+
 			for(sal_uInt32 a(0); a < io_rLinePolyPolygon.count(); a++)
 			{
 				o_rFillPolyPolygon.append(basegfx::tools::createAreaGeometry(
-					io_rLinePolyPolygon.getB2DPolygon(a), 
-					fHalfLineWidth, 
+					io_rLinePolyPolygon.getB2DPolygon(a),
+					fHalfLineWidth,
 					GetLineJoin(),
                     GetLineCap()));
 			}
-	        
+
 			io_rLinePolyPolygon.clear();
 		}
 	}

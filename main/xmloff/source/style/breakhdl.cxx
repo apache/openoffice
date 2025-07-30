@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -57,7 +57,7 @@ XMLFmtBreakBeforePropHdl::~XMLFmtBreakBeforePropHdl()
 }
 
 sal_Bool XMLFmtBreakBeforePropHdl::importXML( const OUString& rStrImpValue, uno::Any& rValue, const SvXMLUnitConverter& ) const
-{ 
+{
 	sal_uInt16 nEnum;
 	sal_Bool bRet = SvXMLUnitConverter::convertEnum( nEnum, rStrImpValue, pXML_BreakTypes );
 	if( bRet )
@@ -78,11 +78,11 @@ sal_Bool XMLFmtBreakBeforePropHdl::importXML( const OUString& rStrImpValue, uno:
 		rValue <<= eBreak;
 	}
 
-	return bRet; 
+	return bRet;
 }
 
 sal_Bool XMLFmtBreakBeforePropHdl::exportXML( OUString& rStrExpValue, const uno::Any& rValue, const SvXMLUnitConverter& ) const
-{ 
+{
 	style::BreakType eBreak;
 
 	if( !( rValue >>= eBreak ) )
@@ -93,7 +93,7 @@ sal_Bool XMLFmtBreakBeforePropHdl::exportXML( OUString& rStrExpValue, const uno:
 
 		eBreak = (style::BreakType) nValue;
 	}
-	
+
 	sal_uInt16 nEnum = 0;
 	switch( eBreak )
 	{
@@ -109,7 +109,7 @@ sal_Bool XMLFmtBreakBeforePropHdl::exportXML( OUString& rStrExpValue, const uno:
 		default:
 			return sal_False;
 	}
-	
+
 	OUStringBuffer aOut;
 	/* sal_Bool bOk = */ SvXMLUnitConverter::convertEnum( aOut, nEnum, pXML_BreakTypes );
 	rStrExpValue = aOut.makeStringAndClear();
@@ -128,7 +128,7 @@ XMLFmtBreakAfterPropHdl::~XMLFmtBreakAfterPropHdl()
 }
 
 sal_Bool XMLFmtBreakAfterPropHdl::importXML( const OUString& rStrImpValue, uno::Any& rValue, const SvXMLUnitConverter& ) const
-{ 
+{
 	sal_uInt16 nEnum;
 	sal_Bool bRet = SvXMLUnitConverter::convertEnum( nEnum, rStrImpValue, pXML_BreakTypes );
 	if( bRet )
@@ -149,11 +149,11 @@ sal_Bool XMLFmtBreakAfterPropHdl::importXML( const OUString& rStrImpValue, uno::
 		rValue <<= eBreak;
 	}
 
-	return bRet; 
+	return bRet;
 }
 
 sal_Bool XMLFmtBreakAfterPropHdl::exportXML( OUString& rStrExpValue, const uno::Any& rValue, const SvXMLUnitConverter& ) const
-{ 
+{
 	style::BreakType eBreak;
 
 	if( !( rValue >>= eBreak ) )
@@ -164,7 +164,7 @@ sal_Bool XMLFmtBreakAfterPropHdl::exportXML( OUString& rStrExpValue, const uno::
 
 		eBreak = (style::BreakType) nValue;
 	}
-	
+
 	sal_uInt16 nEnum = 0;
 	switch( eBreak )
 	{
@@ -180,7 +180,7 @@ sal_Bool XMLFmtBreakAfterPropHdl::exportXML( OUString& rStrExpValue, const uno::
 		default:
 			return sal_False;
 	}
-	
+
 	OUStringBuffer aOut;
 	/* sal_Bool bOk = */ SvXMLUnitConverter::convertEnum( aOut, nEnum, pXML_BreakTypes );
 	rStrExpValue = aOut.makeStringAndClear();

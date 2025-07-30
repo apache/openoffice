@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -53,10 +53,10 @@ typedef int LdapErrCode;
 struct LdapMessageHolder
 {
     LdapMessageHolder() : msg(0) {}
-    ~LdapMessageHolder() 
-    { 
-        if (msg) 
-            (*LdapConnection::s_p_msgfree)(msg); 
+    ~LdapMessageHolder()
+    {
+        if (msg)
+            (*LdapConnection::s_p_msgfree)(msg);
     }
 
     LDAPMessage * msg;
@@ -66,16 +66,16 @@ private:
     void operator=(LdapMessageHolder const&);
 };
 //------------------------------------------------------------------------------
-LdapConnection::~LdapConnection() 
+LdapConnection::~LdapConnection()
 {
     if (isValid()) disconnect();
 }
 //------------------------------------------------------------------------------
 
-void LdapConnection::disconnect() 
+void LdapConnection::disconnect()
 {
-    if (mConnection != NULL) 
-    { 
+    if (mConnection != NULL)
+    {
         (*s_p_unbind_s)(mConnection) ;
         mConnection = NULL;
     }
@@ -84,16 +84,16 @@ void LdapConnection::disconnect()
 
 static void checkLdapReturnCode(const sal_Char *aOperation,
                                 LdapErrCode aRetCode,
-                                LDAP * /*aConnection*/) 
+                                LDAP * /*aConnection*/)
 {
     if (aRetCode == LDAP_SUCCESS) { return ; }
 
     static const sal_Char *kNoSpecificMessage = "No additional information" ;
     rtl::OUStringBuffer message ;
 
-    if (aOperation != NULL) 
+    if (aOperation != NULL)
     {
-        message.appendAscii(aOperation).appendAscii(": ") ; 
+        message.appendAscii(aOperation).appendAscii(": ") ;
     }
     message.appendAscii((*LdapConnection::s_p_err2string)(aRetCode)).appendAscii(" (") ;
     sal_Char *stub = NULL ;
@@ -101,23 +101,23 @@ static void checkLdapReturnCode(const sal_Char *aOperation,
 #ifndef LDAP_OPT_SIZELIMIT // for use with OpenLDAP
     (*s_p_get_lderrno)(aConnection, NULL, &stub) ;
 #endif
-    if (stub != NULL) 
+    if (stub != NULL)
     {
         message.appendAscii(stub) ;
         // It would seem the message returned is actually
         // not a copy of a string but rather some static
-        // string itself. At any rate freeing it seems to 
+        // string itself. At any rate freeing it seems to
         // cause some undue problems at least on Windows.
         // This call is thus disabled for the moment.
         //(*s_p_memfree)(stub) ;
     }
     else { message.appendAscii(kNoSpecificMessage) ; }
     message.appendAscii(")") ;
-    throw ldap::LdapGenericException(message.makeStringAndClear(), 
+    throw ldap::LdapGenericException(message.makeStringAndClear(),
                                      NULL, aRetCode) ;
 }
 //------------------------------------------------------------------------------
-void  LdapConnection::connectSimple(const LdapDefinition& aDefinition) 
+void  LdapConnection::connectSimple(const LdapDefinition& aDefinition)
    throw (ldap::LdapConnectionException, ldap::LdapGenericException)
 {
     OSL_ENSURE(!isValid(), "Recoonecting an LDAP connection that is already established");
@@ -127,9 +127,9 @@ void  LdapConnection::connectSimple(const LdapDefinition& aDefinition)
     connectSimple();
 }
 //------------------------------------------------------------------------------
-void  LdapConnection::connectSimple() 
+void  LdapConnection::connectSimple()
    throw (ldap::LdapConnectionException, ldap::LdapGenericException)
-{    
+{
     if (!isValid())
 	{
 		// Connect to the server
@@ -143,11 +143,11 @@ void  LdapConnection::connectSimple()
 #ifdef LDAP_X_OPT_CONNECT_TIMEOUT // OpenLDAP doesn't support this and the func
         /* timeout is specified in milliseconds -> 4 seconds*/
         int timeout = 4000;
-        (*s_p_set_option)( mConnection, 
-                        LDAP_X_OPT_CONNECT_TIMEOUT, 
+        (*s_p_set_option)( mConnection,
+                        LDAP_X_OPT_CONNECT_TIMEOUT,
                         &timeout );
 #endif
-        
+
         // Do the bind
 		LdapErrCode retCode = (*s_p_simple_bind_s)(mConnection,
                                                mLdapDefinition.mAnonUser.getStr(),
@@ -157,10 +157,10 @@ void  LdapConnection::connectSimple()
 	}
 }
 //------------------------------------------------------------------------------
-void LdapConnection::initConnection() 
+void LdapConnection::initConnection()
     throw (ldap::LdapConnectionException)
 {
-    if (mLdapDefinition.mServer.getLength() == 0) 
+    if (mLdapDefinition.mServer.getLength() == 0)
     {
         rtl::OUStringBuffer message ;
 
@@ -170,9 +170,9 @@ void LdapConnection::initConnection()
 
     if (mLdapDefinition.mPort == 0) mLdapDefinition.mPort = LDAP_PORT;
 
-    mConnection = (*s_p_init)( mLdapDefinition.mServer.getStr(), 
+    mConnection = (*s_p_init)( mLdapDefinition.mServer.getStr(),
                             mLdapDefinition.mPort) ;
-    if (mConnection == NULL) 
+    if (mConnection == NULL)
     {
         rtl::OUStringBuffer message ;
 
@@ -180,7 +180,7 @@ void LdapConnection::initConnection()
         message.appendAscii( mLdapDefinition.mServer.getStr());
         message.appendAscii(":") ;
         message.append(mLdapDefinition.mPort) ;
-        throw ldap::LdapConnectionException(message.makeStringAndClear(), 
+        throw ldap::LdapConnectionException(message.makeStringAndClear(),
 			                                NULL) ;
     }
 }
@@ -203,7 +203,7 @@ void LdapConnection::initConnection()
 									  0,
 									  0, // Attributes + values
 									  &result.msg) ;
-	
+
     checkLdapReturnCode("getUserProfile", retCode,mConnection) ;
 
     void * ptr;
@@ -222,23 +222,23 @@ void LdapConnection::initConnection()
 }
 //------------------------------------------------------------------------------
  rtl::OString LdapConnection::findUserDn(const rtl::OString& aUser)
-    throw (lang::IllegalArgumentException, 
+    throw (lang::IllegalArgumentException,
             ldap::LdapConnectionException, ldap::LdapGenericException)
 {
     if (!isValid()) { connectSimple(); }
 
-    if (aUser.getLength() == 0) 
+    if (aUser.getLength() == 0)
     {
         throw lang::IllegalArgumentException(
 			rtl::OUString(RTL_CONSTASCII_USTRINGPARAM
 			("LdapConnection::findUserDn -User id is empty")).getStr(),
 				NULL, 0) ;
     }
-    
-	
-    
+
+
+
     rtl::OStringBuffer filter( "(&(objectclass=" );
-			 
+
     filter.append( mLdapDefinition.mUserObjectClass ).append(")(") ;
     filter.append( mLdapDefinition.mUserUniqueAttr ).append("=").append(aUser).append("))") ;
 
@@ -246,7 +246,7 @@ void LdapConnection::initConnection()
     sal_Char * attributes [2];
     attributes[0]= const_cast<sal_Char *>(LDAP_NO_ATTRS);
     attributes[1]= NULL;
-    LdapErrCode retCode = (*s_p_search_s)(mConnection, 
+    LdapErrCode retCode = (*s_p_search_s)(mConnection,
                                       mLdapDefinition.mBaseDN.getStr(),
                                       LDAP_SCOPE_SUBTREE,
                                       filter.getStr(), attributes, 0, &result.msg) ;
@@ -255,10 +255,10 @@ void LdapConnection::initConnection()
     rtl::OString userDn ;
     LDAPMessage *entry = (*s_p_first_entry)(mConnection, result.msg) ;
 
-    if (entry != NULL) 
+    if (entry != NULL)
     {
         sal_Char *charsDn = (*s_p_get_dn)(mConnection, entry) ;
-        
+
         userDn = charsDn ;
         (*s_p_memfree)(charsDn) ;
     }

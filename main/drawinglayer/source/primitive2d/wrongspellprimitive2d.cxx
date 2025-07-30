@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -39,7 +39,7 @@ namespace drawinglayer
 		Primitive2DSequence WrongSpellPrimitive2D::create2DDecomposition(const geometry::ViewInformation2D& /*rViewInformation*/) const
 		{
             // ATM this decompose is view-independent, what the original VCL-Display is not. To mimic
-            // the old behaviour here if wanted it is necessary to add get2DDecomposition and implement 
+            // the old behaviour here if wanted it is necessary to add get2DDecomposition and implement
             // it similar to the usage in e.g. HelplinePrimitive2D. Remembering the ViewTransformation
             // should be enough then.
             // The view-independent wavelines work well (if You ask me). Maybe the old VCL-Behaviour is only
@@ -76,7 +76,7 @@ namespace drawinglayer
             // create the waveline primitive
             Primitive2DReference xPrimitive(new PolygonWavePrimitive2D(aPolygon, aLineAttribute, fWaveWidth, 0.5 * fWaveWidth));
             Primitive2DSequence xRetval(&xPrimitive, 1);
-            
+
             return xRetval;
 		}
 

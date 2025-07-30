@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -33,13 +33,13 @@
 #ifndef _TOOLS_DEBUG_HXX
 #include <tools/debug.hxx>
 #endif
-#ifndef _SV_SVAPP_HXX 
+#ifndef _SV_SVAPP_HXX
 #include <vcl/svapp.hxx>
 #endif
 #ifndef DBAUI_JOINCONTROLLER_HXX
 #include "JoinController.hxx"
 #endif
-#ifndef _TOOLKIT_HELPER_VCLUNOHELPER_HXX_ 
+#ifndef _TOOLKIT_HELPER_VCLUNOHELPER_HXX_
 #include <toolkit/helper/vclunohelper.hxx>
 #endif
 #ifndef DBACCESS_SHARED_DBUSTRINGS_HRC
@@ -75,14 +75,14 @@ namespace dbaui
 	//= OQueryContainerWindow
 	//=====================================================================
 	DBG_NAME(OQueryContainerWindow)
-	OQueryContainerWindow::OQueryContainerWindow(Window* pParent, OQueryController& _rController,const Reference< XMultiServiceFactory >& _rFactory) 
+	OQueryContainerWindow::OQueryContainerWindow(Window* pParent, OQueryController& _rController,const Reference< XMultiServiceFactory >& _rFactory)
 		:ODataView( pParent, _rController, _rFactory )
 		,m_pViewSwitch(NULL)
 		,m_pBeamer(NULL)
 	{
 		DBG_CTOR(OQueryContainerWindow,NULL);
 		m_pViewSwitch = new OQueryViewSwitch( this, _rController, _rFactory );
-		
+
 		m_pSplitter = new Splitter(this,WB_VSCROLL);
 		m_pSplitter->Hide();
 		m_pSplitter->SetSplitHdl( LINK( this, OQueryContainerWindow, SplitHdl ) );
@@ -91,7 +91,7 @@ namespace dbaui
 	// -----------------------------------------------------------------------------
 	OQueryContainerWindow::~OQueryContainerWindow()
 	{
-		DBG_DTOR(OQueryContainerWindow,NULL);	
+		DBG_DTOR(OQueryContainerWindow,NULL);
 		{
 			::std::auto_ptr<OQueryViewSwitch> aTemp(m_pViewSwitch);
 			m_pViewSwitch = NULL;
@@ -237,7 +237,7 @@ namespace dbaui
             {
                 const ::rtl::OUString aLayoutManager( RTL_CONSTASCII_USTRINGPARAM( "LayoutManager" ));
                 Reference < XPropertySet > xLMPropSet(xPropSet->getPropertyValue( aLayoutManager ),UNO_QUERY);
-        
+
                 if ( xLMPropSet.is() )
                 {
                     const ::rtl::OUString aAutomaticToolbars( RTL_CONSTASCII_USTRINGPARAM( "AutomaticToolbars" ));
@@ -272,7 +272,7 @@ namespace dbaui
 			m_pSplitter->Show();
 
 			Resize();
-		}	
+		}
 	}
 	// -----------------------------------------------------------------------------
 

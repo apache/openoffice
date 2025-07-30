@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -323,7 +323,7 @@ void SwDrawTextShell::Execute( SfxRequest &rReq )
 		}
 		break;
 
-		case SID_CHAR_DLG_EFFECT: 
+		case SID_CHAR_DLG_EFFECT:
 		case SID_CHAR_DLG:
 		case SID_CHAR_DLG_FOR_PARAGRAPH:
 		{
@@ -641,26 +641,26 @@ void SwDrawTextShell::GetState(SfxItemSet& rSet)
 				nSlotId = SwLangHelper::GetLanguageStatus(pOLV,rSet);
 				break;
 			}
-            
+
             case SID_THES:
             {
                 String          aStatusVal;
                 LanguageType    nLang = LANGUAGE_NONE;
                 bool bIsLookUpWord = GetStatusValueForThesaurusFromContext( aStatusVal, nLang, pOLV->GetEditView() );
                 rSet.Put( SfxStringItem( SID_THES, aStatusVal ) );
-                
+
                 // disable "Thesaurus" context menu entry if there is nothing to look up
                 uno::Reference< linguistic2::XThesaurus >  xThes( ::GetThesaurus() );
                 lang::Locale aLocale( SvxCreateLocale( nLang ) );
                 if (!bIsLookUpWord ||
                     !xThes.is() || nLang == LANGUAGE_NONE || !xThes->hasLocale( aLocale ))
                     rSet.DisableItem( SID_THES );
-                
+
                 //! avoid putting the same item as SfxBoolItem at the end of this function
                 nSlotId = 0;
                 break;
-            }        
-        
+            }
+
         case SID_ATTR_PARA_ADJUST_LEFT:     eAdjust = SVX_ADJUST_LEFT; goto ASK_ADJUST;
 		case SID_ATTR_PARA_ADJUST_RIGHT:	eAdjust = SVX_ADJUST_RIGHT; goto ASK_ADJUST;
 		case SID_ATTR_PARA_ADJUST_CENTER:	eAdjust = SVX_ADJUST_CENTER; goto ASK_ADJUST;

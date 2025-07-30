@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -58,7 +58,7 @@ void InterceptedInteraction::setInterceptedHandler(const css::uno::Reference< cs
 -----------------------------------------------*/
 void InterceptedInteraction::setInterceptions(const ::std::vector< InterceptedRequest >& lInterceptions)
 {
-    m_lInterceptions = lInterceptions; 
+    m_lInterceptions = lInterceptions;
 }
 
 /*-----------------------------------------------
@@ -79,18 +79,18 @@ css::uno::Reference< css::task::XInteractionContinuation > InterceptedInteractio
                                                                                                        const css::uno::Type&                                                                   aType         )
 {
     const css::uno::Reference< css::task::XInteractionContinuation >* pContinuations = lContinuations.getConstArray();
-    
+
     sal_Int32 c = lContinuations.getLength();
     sal_Int32 i = 0;
-    
+
     for (i=0; i<c; ++i)
     {
         css::uno::Reference< css::uno::XInterface > xCheck(pContinuations[i], css::uno::UNO_QUERY);
         if (xCheck->queryInterface(aType).hasValue())
             return pContinuations[i];
     }
-    
-    return css::uno::Reference< css::task::XInteractionContinuation >(); 
+
+    return css::uno::Reference< css::task::XInteractionContinuation >();
 }
 
 /*-----------------------------------------------
@@ -108,7 +108,7 @@ void SAL_CALL InterceptedInteraction::handle(const css::uno::Reference< css::tas
 void InterceptedInteraction::impl_handleDefault(const ::com::sun::star::uno::Reference< ::com::sun::star::task::XInteractionRequest >& xRequest)
 {
     EInterceptionState eState = impl_interceptRequest(xRequest);
-    
+
     switch(eState)
     {
         case E_NOT_INTERCEPTED:
@@ -119,7 +119,7 @@ void InterceptedInteraction::impl_handleDefault(const ::com::sun::star::uno::Ref
                 m_xInterceptedHandler->handle(xRequest);
         }
         break;
-        
+
         case E_NO_CONTINUATION_FOUND:
         {
             // Runtime error! The defined continuation could not be located
@@ -128,7 +128,7 @@ void InterceptedInteraction::impl_handleDefault(const ::com::sun::star::uno::Ref
             OSL_ENSURE(sal_False, "InterceptedInteraction::handle()\nCould intercept this interaction request - but can't locate the right continuation!");
         }
         break;
-        
+
         case E_INTERCEPTED:
         break;
     }
@@ -142,7 +142,7 @@ InterceptedInteraction::EInterceptionState InterceptedInteraction::impl_intercep
     css::uno::Any                                                                    aRequest       = xRequest->getRequest();
     css::uno::Type                                                                   aRequestType   = aRequest.getValueType();
     css::uno::Sequence< css::uno::Reference< css::task::XInteractionContinuation > > lContinuations = xRequest->getContinuations();
-    
+
     // check against the list of static requests
     sal_Int32 nHandle = 0;
     ::std::vector< InterceptedRequest >::const_iterator pIt;
@@ -151,15 +151,15 @@ InterceptedInteraction::EInterceptionState InterceptedInteraction::impl_intercep
          ++pIt                            )
     {
         const InterceptedRequest& rInterception = *pIt;
-        css::uno::Type aInterceptedType = rInterception.Request.getValueType(); 
-        
+        css::uno::Type aInterceptedType = rInterception.Request.getValueType();
+
         // check the request
         sal_Bool bMatch = sal_False;
         if (rInterception.MatchExact)
             bMatch = aInterceptedType.equals(aRequestType);
         else
             bMatch = aInterceptedType.isAssignableFrom(aRequestType); // dont change intercepted and request type here -> it will check the wrong direction!
-        
+
         // intercepted ...
         // Call they might existing derived class, so they can handle that by its own.
         // If its not interested on that (may be its not overwritten and the default implementation
@@ -171,10 +171,10 @@ InterceptedInteraction::EInterceptionState InterceptedInteraction::impl_intercep
                 break;
             return eState;
         }
-        
-        ++nHandle;        
+
+        ++nHandle;
     }
-    
+
     if (pIt != m_lInterceptions.end()) // => can be true only if bMatch=TRUE!
     {
         // match -> search required continuation
@@ -185,12 +185,12 @@ InterceptedInteraction::EInterceptionState InterceptedInteraction::impl_intercep
             xContinuation->select();
             return E_INTERCEPTED;
         }
-        
+
         // Can be reached only, if the request does not support the given continuation!
         // => RuntimeError!?
         return E_NO_CONTINUATION_FOUND;
     }
-    
+
     return E_NOT_INTERCEPTED;
 }
 

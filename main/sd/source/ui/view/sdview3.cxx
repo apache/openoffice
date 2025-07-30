@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
@@ -681,7 +681,7 @@ sal_Bool View::InsertData( const TransferableDataHelper& rDataHelper,
 		    pPage->SetPresentationLayout( aLayout, sal_False, sal_False );
 	   }
 	}
-	
+
     if(!bReturn && CHECK_FORMAT_TRANS( SOT_FORMATSTR_ID_DRAWING ))
 	{
 		SotStorageStreamRef xStm;
@@ -835,7 +835,7 @@ sal_Bool View::InsertData( const TransferableDataHelper& rDataHelper,
 			}
 		}
 	}
-	
+
     if(!bReturn && CHECK_FORMAT_TRANS(SOT_FORMATSTR_ID_SBA_FIELDDATAEXCHANGE))
 	{
 		::rtl::OUString aOUString;
@@ -859,8 +859,8 @@ sal_Bool View::InsertData( const TransferableDataHelper& rDataHelper,
 			}
 		}
 	}
-	
-    if(!bReturn && 
+
+    if(!bReturn &&
         !bLink &&
         (CHECK_FORMAT_TRANS(SOT_FORMATSTR_ID_EMBED_SOURCE) || CHECK_FORMAT_TRANS(SOT_FORMATSTR_ID_EMBEDDED_OBJ))  &&
         aDataHelper.HasFormat(SOT_FORMATSTR_ID_OBJECTDESCRIPTOR))
@@ -1048,8 +1048,8 @@ sal_Bool View::InsertData( const TransferableDataHelper& rDataHelper,
 			}
 		}
 	}
-	
-    if(!bReturn && 
+
+    if(!bReturn &&
         !bLink &&
         (CHECK_FORMAT_TRANS(SOT_FORMATSTR_ID_EMBEDDED_OBJ_OLE) || CHECK_FORMAT_TRANS(SOT_FORMATSTR_ID_EMBED_SOURCE_OLE)) &&
         aDataHelper.HasFormat(SOT_FORMATSTR_ID_OBJECTDESCRIPTOR_OLE))
@@ -1207,7 +1207,7 @@ sal_Bool View::InsertData( const TransferableDataHelper& rDataHelper,
             bReturn = true;
 		}
 	}
-	
+
     if(!bReturn && (!bLink || pPickObj) && CHECK_FORMAT_TRANS(SOT_FORMATSTR_ID_SVXB))
 	{
 		SotStorageStreamRef xStm;
@@ -1245,7 +1245,7 @@ sal_Bool View::InsertData( const TransferableDataHelper& rDataHelper,
 			bReturn = true;
 		}
 	}
-	
+
     if(!bReturn && (!bLink || pPickObj) && CHECK_FORMAT_TRANS(FORMAT_GDIMETAFILE))
 	{
 		Point aInsertPos( rPos );
@@ -1269,7 +1269,7 @@ sal_Bool View::InsertData( const TransferableDataHelper& rDataHelper,
 
 		bReturn = InsertMetaFile( aDataHelper, aInsertPos, pImageMap, nFormat == 0 ? true : false ) ? sal_True : sal_False;
 	}
-	
+
     if(!bReturn && (!bLink || pPickObj) && CHECK_FORMAT_TRANS(FORMAT_BITMAP))
 	{
         BitmapEx aBmpEx;
@@ -1400,7 +1400,7 @@ sal_Bool View::InsertData( const TransferableDataHelper& rDataHelper,
             bReturn = SdrView::Paste( *xStm, String(), EE_FORMAT_HTML, maDropPos, pPage, nPasteOptions );
 		}
 	}
-	
+
     if(!bReturn && !bLink && CHECK_FORMAT_TRANS(SOT_FORMATSTR_ID_EDITENGINE))
 	{
 		SotStorageStreamRef xStm;
@@ -1465,7 +1465,7 @@ sal_Bool View::InsertData( const TransferableDataHelper& rDataHelper,
 			}
 		}
 	}
-	
+
     if(!bReturn && CHECK_FORMAT_TRANS(FORMAT_FILE_LIST))
 	{
         FileList aDropFileList;

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -86,7 +86,7 @@ Point ScOutputData::PrePrintDrawingLayer(long nLogStX, long nLogStY )
 	aRect.Top()    = (long) (aRect.Top()    * HMM_PER_TWIPS);
 	aRect.Right()  = (long) (aRect.Right()  * HMM_PER_TWIPS);
 	aRect.Bottom() = (long) (aRect.Bottom() * HMM_PER_TWIPS);
-	
+
 	if(pViewShell || pDrawView)
 	{
 		SdrView* pLocalDrawView = (pDrawView) ? pDrawView : pViewShell->GetSdrView();
@@ -114,7 +114,7 @@ Point ScOutputData::PrePrintDrawingLayer(long nLogStX, long nLogStY )
 }
 
 // #i72502#
-void ScOutputData::PostPrintDrawingLayer(const Point& rMMOffset) // #i74768# 
+void ScOutputData::PostPrintDrawingLayer(const Point& rMMOffset) // #i74768#
 {
 	// #i74768# just use offset as in PrintDrawingLayer() to also get the form controls
 	// painted with offset
@@ -148,14 +148,14 @@ void ScOutputData::PostPrintDrawingLayer(const Point& rMMOffset) // #i74768#
 void ScOutputData::PrintDrawingLayer(const sal_uInt16 nLayer, const Point& rMMOffset)
 {
     bool bHideAllDrawingLayer(false);
-    
+
 	if(pViewShell || pDrawView)
 	{
 		SdrView* pLocalDrawView = (pDrawView) ? pDrawView : pViewShell->GetSdrView();
 
 		if(pLocalDrawView)
 		{
-            bHideAllDrawingLayer = pLocalDrawView->getHideOle() && pLocalDrawView->getHideChart() 
+            bHideAllDrawingLayer = pLocalDrawView->getHideOle() && pLocalDrawView->getHideChart()
                     && pLocalDrawView->getHideDraw() && pLocalDrawView->getHideFormControl();
         }
     }

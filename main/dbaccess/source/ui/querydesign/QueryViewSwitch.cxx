@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -61,9 +61,9 @@ using namespace ::com::sun::star::lang;
 DBG_NAME(OQueryViewSwitch)
 OQueryViewSwitch::OQueryViewSwitch(OQueryContainerWindow* _pParent, OQueryController& _rController,const Reference< XMultiServiceFactory >& _rFactory)
 : m_bAddTableDialogWasVisible(sal_False)
-{								 
+{
 	DBG_CTOR(OQueryViewSwitch,NULL);
-	
+
 	m_pTextView		= new OQueryTextView(_pParent);
 	m_pDesignView	= new OQueryDesignView( _pParent, _rController, _rFactory );
 }
@@ -78,7 +78,7 @@ OQueryViewSwitch::~OQueryViewSwitch()
 	{
 		::std::auto_ptr<Window> aTemp(m_pDesignView);
 		m_pDesignView = NULL;
-	}	
+	}
 }
 // -------------------------------------------------------------------------
 void OQueryViewSwitch::Construct()
@@ -97,7 +97,7 @@ void OQueryViewSwitch::resizeDocumentView(Rectangle& _rPlayground)
 {
 	m_pTextView->SetPosSizePixel( _rPlayground.TopLeft(), _rPlayground.GetSize() );
 	m_pDesignView->SetPosSizePixel( _rPlayground.TopLeft(), _rPlayground.GetSize() );
-	
+
 	// just for completeness: there is no space left, we occupied it all ...
 	_rPlayground.SetPos( _rPlayground.BottomRight() );
 	_rPlayground.SetSize( Size( 0, 0 ) );
@@ -311,12 +311,12 @@ OAddTableDlg* OQueryViewSwitch::getAddTableDialog()
 // -----------------------------------------------------------------------------
 sal_Bool OQueryViewSwitch::isSlotEnabled(sal_Int32 _nSlotId)
 {
-	return m_pDesignView->isSlotEnabled(_nSlotId); 
+	return m_pDesignView->isSlotEnabled(_nSlotId);
 }
 // -----------------------------------------------------------------------------
 void OQueryViewSwitch::setSlotEnabled(sal_Int32 _nSlotId,sal_Bool _bEnable)
 {
-	m_pDesignView->setSlotEnabled(_nSlotId,_bEnable); 
+	m_pDesignView->setSlotEnabled(_nSlotId,_bEnable);
 }
 // -----------------------------------------------------------------------------
 void OQueryViewSwitch::SaveUIConfig()
@@ -332,9 +332,9 @@ void OQueryViewSwitch::SetPosSizePixel( Point _rPt,Size _rSize)
 	m_pTextView->SetPosSizePixel( _rPt,_rSize);
 }
 // -----------------------------------------------------------------------------
-Reference< XMultiServiceFactory > OQueryViewSwitch::getORB() const 
-{ 
-	return m_pDesignView->getORB(); 
+Reference< XMultiServiceFactory > OQueryViewSwitch::getORB() const
+{
+	return m_pDesignView->getORB();
 }
 // -----------------------------------------------------------------------------
 bool OQueryViewSwitch::reset( ::dbtools::SQLExceptionInfo* _pErrorInfo )
@@ -352,6 +352,6 @@ bool OQueryViewSwitch::reset( ::dbtools::SQLExceptionInfo* _pErrorInfo )
 void OQueryViewSwitch::setNoneVisbleRow(sal_Int32 _nRows)
 {
 	if(m_pDesignView)
-		m_pDesignView->setNoneVisbleRow(_nRows);	
+		m_pDesignView->setNoneVisbleRow(_nRows);
 }
 // -----------------------------------------------------------------------------

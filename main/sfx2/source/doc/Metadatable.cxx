@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -75,7 +75,7 @@
     the XML ID is not lost.
     The goal is that it should be hard to lose an XML ID by accident, which
     is especially important as long as we do not have an UI that displays them.
-    
+
     There are two subclasses of <type>Metadatable</type>:
     <ul><li><type>MetadatableClipboard</type>: for copies in the clipboard</li>
         <li><type>MetadatableUndo</type>: for undo, because a Metadatable
@@ -92,7 +92,7 @@
             Metadatable, because if we delete a text node, undo, and then
             do something to clear the redo array, the original text node is
             destroyed, and is replaced by the copy created by undo</li></ul>
-    
+
     If content from a non-clipboard document is copied into a clipboard
     document, a dummy <type>MetadatableClipboard</type> is inserted into the
     non-clipboard document registry in order to track the position of the
@@ -1253,7 +1253,7 @@ XmlIdRegistryClipboard::RegisterCopyClipboard(Metadatable & i_rCopy,
 
     // N.B.: when copying to the clipboard, the selection is always inserted
     //       into the body, even if the source is a header/footer!
-    //       so we do not check whether the stream is right in this function 
+    //       so we do not check whether the stream is right in this function
 
     if (!isValidXmlId(i_rReference.First, i_rReference.Second))
     {

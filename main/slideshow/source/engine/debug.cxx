@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -61,7 +61,7 @@ public:
 
 
 
-    
+
 OUString DebugGetDescription (const AnimationNodeSharedPtr& rpNode)
 {
     if (::boost::dynamic_pointer_cast<BaseContainerNode>(rpNode))
@@ -132,7 +132,7 @@ void DebugShowState (const AnimationNodeSharedPtr& rpNode)
             sStateColor = OUString::createFromAscii("slategray3");
             break;
     }
-    
+
     const uno::Any aBegin (rpNode->getXAnimationNode()->getBegin());
     OUString sTrigger;
     if (aBegin.hasValue())
@@ -212,7 +212,7 @@ AnimationNodeSharedPtr DebugGetTreeRoot (const BaseNodeSharedPtr& rpNode)
 void Debug_ShowNodeTree (const AnimationNodeSharedPtr& rpNode)
 {
     DebugTraceScope aTraceScope ("NodeTree");
-    
+
     DebugShowState(DebugGetTreeRoot(::boost::dynamic_pointer_cast<BaseNode>(rpNode)));
 }
 
@@ -234,7 +234,7 @@ extern "C" {
               maTime()
         {
         }
-        
+
         int mnIndentation;
         FILE* mpFile;
         ::canvas::tools::ElapsedTime maTime;
@@ -267,7 +267,7 @@ extern "C" {
 
 } // end of anonymous namespace
 
-    
+
 } // end of extern "C"
 
 void SAL_CALL DebugTraceBegin (const sal_Char* sFormat, ...)
@@ -277,7 +277,7 @@ void SAL_CALL DebugTraceBegin (const sal_Char* sFormat, ...)
     DebugTrace(+1,sFormat, args);
     va_end(args);
 }
-    
+
 void SAL_CALL DebugTraceEnd (const sal_Char* sFormat, ...)
 {
     va_list args;
@@ -301,7 +301,7 @@ DebugTraceScope::DebugTraceScope (const sal_Char* sFormat, ...)
 {
     va_list args;
     va_start(args, sFormat);
-        
+
     msMessage[mnBufferSize-1] = 0;
     vsnprintf(msMessage, mnBufferSize-1, sFormat, args);
     TRACE_BEGIN("[ %s", msMessage);

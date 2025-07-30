@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -133,7 +133,7 @@ namespace frm
     {
         m_pFeatureInterception->registerDispatchProviderInterceptor( _rxInterceptor  );
     }
-    
+
     //--------------------------------------------------------------------
     void SAL_CALL OClickableImageBaseControl::releaseDispatchProviderInterceptor( const Reference< XDispatchProviderInterceptor >& _rxInterceptor ) throw (RuntimeException)
     {
@@ -687,12 +687,12 @@ namespace frm
         ImageProducer *pImgProd = GetImageProducer();
         // grab the ImageURL
         rtl::OUString sURL;
-        getPropertyValue( rtl::OUString( RTL_CONSTASCII_USTRINGPARAM("ImageURL") ) ) >>= sURL;       
+        getPropertyValue( rtl::OUString( RTL_CONSTASCII_USTRINGPARAM("ImageURL") ) ) >>= sURL;
         if (!m_pMedium)
         {
             if ( ::svt::GraphicAccess::isSupportedURL( sURL )  )
                 pImgProd->SetImage( sURL );
-            else 
+            else
                 // caution: the medium may be NULL if somebody gave us a invalid URL to work with
                 // 11/24/2000 - 79667 - FS
                 pImgProd->SetImage(String());
@@ -734,7 +734,7 @@ namespace frm
             // we treat an invalid URL like we would treat no URL
             return;
 
-        if (rURL.getLength() && !::svt::GraphicAccess::isSupportedURL( rURL ) ) 
+        if (rURL.getLength() && !::svt::GraphicAccess::isSupportedURL( rURL ) )
        {
             if (m_pMedium)
                 delete m_pMedium;

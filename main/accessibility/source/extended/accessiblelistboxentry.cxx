@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -114,7 +114,7 @@ namespace accessibility
         	dispose();
 		}
 	}
-	
+
 	void AccessibleListBoxEntry::NotifyAccessibleEvent( sal_Int16 _nEventId,
 											   	const ::com::sun::star::uno::Any& _aOldValue,
 											   	const ::com::sun::star::uno::Any& _aNewValue )
@@ -125,7 +125,7 @@ namespace accessibility
 	    if (m_nClientId)
 		    comphelper::AccessibleEventNotifier::addEvent( m_nClientId, aEventObj );
 	}
-	
+
 
 	// -----------------------------------------------------------------------------
 	Rectangle AccessibleListBoxEntry::GetBoundingBox_Impl() const
@@ -418,7 +418,7 @@ namespace accessibility
     	return m_aEntryPath.empty() ? -1 : m_aEntryPath.back();
 	}
 	// -----------------------------------------------------------------------------
-	sal_Int32 SAL_CALL AccessibleListBoxEntry::getRoleType() 
+	sal_Int32 SAL_CALL AccessibleListBoxEntry::getRoleType()
 	{
 		sal_Int32 nCase = 0;
 		SvLBoxEntry* pEntry = getListBox()->GetEntry(0);
@@ -431,7 +431,7 @@ namespace accessibility
 			}
 		}
 
-		sal_Bool bHasButtons = (getListBox()->GetStyle() & WB_HASBUTTONS)!=0; 
+		sal_Bool bHasButtons = (getListBox()->GetStyle() & WB_HASBUTTONS)!=0;
 		if( !(getListBox()->GetTreeFlags() & TREEFLAG_CHKBTN) )
 		{
 			if( bHasButtons )
@@ -451,7 +451,7 @@ namespace accessibility
 		SvTreeListBox* pBox = getListBox();
 		if(pBox)
 		{
-			short nType = pBox->GetAllEntriesAccessibleRoleType();			
+			short nType = pBox->GetAllEntriesAccessibleRoleType();
 			if( nType == TREEBOX_ALLITEM_ACCROLE_TYPE_TREE)
 					return AccessibleRole::TREE_ITEM;
 			else if( nType == TREEBOX_ALLITEM_ACCROLE_TYPE_LIST)
@@ -481,7 +481,7 @@ namespace accessibility
 		else
 			//o is: return AccessibleRole::LABEL;
 			return AccessibleRole::TREE_ITEM;
-		}	
+		}
 	}
 	// -----------------------------------------------------------------------------
 	::rtl::OUString SAL_CALL AccessibleListBoxEntry::getAccessibleDescription(  ) throw (RuntimeException)
@@ -515,7 +515,7 @@ namespace accessibility
 		{
 			return getListBox()->SearchEntryTextWithHeadTitle( pEntry );
 		}
-		
+
 	}
 	// -----------------------------------------------------------------------------
 	::rtl::OUString SAL_CALL AccessibleListBoxEntry::getAccessibleName(  ) throw (RuntimeException)
@@ -539,7 +539,7 @@ namespace accessibility
 		// IA2 CWS. Removed for now - only used in Sw/Sd/ScContentLBoxString, they should decide if they need this
 		// if ( pEntry && pEntry->IsMarked())
 		//	sRet = sRet + ::rtl::OUString(TK_RES_STRING(STR_SVT_ACC_LISTENTRY_SELCTED_STATE));
-		
+
 		return sRet;
 	}
 	// -----------------------------------------------------------------------------
@@ -588,7 +588,7 @@ namespace accessibility
 					if ( IsShowing_Impl() )
 				        	pStateSetHelper->AddState( AccessibleStateType::SHOWING );
 					break;
-			}			
+			}
 			getListBox()->FillAccessibleEntryStateSet(
 				getListBox()->GetEntryFromPath( m_aEntryPath ), *pStateSetHelper );
 		}
@@ -833,7 +833,7 @@ namespace accessibility
 					getListBox()->SetCheckButtonState(pEntry, (SvButtonState)SV_BMP_UNCHECKED);
 				else if (state == SV_BMP_UNCHECKED)
 					getListBox()->SetCheckButtonState(pEntry, (SvButtonState)SV_BUTTON_CHECKED);
-			}			
+			}
 		}else if( (nIndex == 1 && (treeFlag & TREEFLAG_CHKBTN) ) || (nIndex == 0) )
 		{
 			SvLBoxEntry* pEntry = getListBox()->GetEntryFromPath( m_aEntryPath );
@@ -1161,7 +1161,7 @@ namespace accessibility
 		Any aValue;
 		sal_Int32 level = ((sal_Int32) m_aEntryPath.size() - 1);
 		level = level < 0 ?  0: level;
-		aValue <<= level; 
+		aValue <<= level;
 		return aValue;
 	}
 
@@ -1178,7 +1178,7 @@ namespace accessibility
 		{
 			SvLBoxEntry* pEntry = pBox->GetEntryFromPath( m_aEntryPath );
 			if ( pEntry )
-			{	
+			{
 				sal_Int32 nValue(0), nValueMin(0), nValueMax(0);
 				aNumber >>= nValue;
 				getMinimumValue() >>= nValueMin;
@@ -1193,7 +1193,7 @@ namespace accessibility
 				bReturn = sal_True;
 			}
 		}
-			
+
 		return bReturn;
 	}
 
@@ -1207,14 +1207,14 @@ namespace accessibility
 		// SvTreeListBox* pBox = getListBox();
 		switch(getAccessibleRole())
 		{
-			case AccessibleRole::CHECK_BOX:	
+			case AccessibleRole::CHECK_BOX:
 				aValue <<= (sal_Int32)1;
-				break;	
+				break;
 			case AccessibleRole::LABEL:
 			default:
 				break;
 		}
-				
+
 		return aValue;
 	}
 
@@ -1228,14 +1228,14 @@ namespace accessibility
 		// SvTreeListBox* pBox = getListBox();
 		switch(getAccessibleRole())
 		{
-			case AccessibleRole::CHECK_BOX:	
+			case AccessibleRole::CHECK_BOX:
 				aValue <<= (sal_Int32)0;
 				break;
 			case AccessibleRole::LABEL:
 			default:
 				break;
 		}
-						
+
 		return aValue;
 	}
 
@@ -1252,9 +1252,9 @@ namespace accessibility
 			{
 				getListBox()->RequestingChilds(pParent);
 				pEntry = getListBox()->GetEntry( pParent, nIndex );
-			}			
-		}	
-		return pEntry;		
+			}
+		}
+		return pEntry;
 	}
 //........................................................................
 }// namespace accessibility

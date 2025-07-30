@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -78,7 +78,7 @@ GfxLink::GfxLink( sal_uInt8* pBuf, sal_uInt32 nSize, GfxLinkType nType, sal_Bool
 		mpBuf = new ImpBuffer( nSize );
 		memcpy( mpBuf->mpBuffer, pBuf, nSize );
 	}
-	else														
+	else
 		mpBuf = NULL;
 }
 
@@ -127,7 +127,7 @@ sal_Bool GfxLink::IsEqual( const GfxLink& rGfxLink ) const
 		sal_uInt32 nDestSize = rGfxLink.GetDataSize();
 		if ( pSource && pDest && ( nSourceSize == nDestSize ) )
 		{
-			bIsEqual = memcmp( pSource, pDest, nSourceSize ) == 0;		
+			bIsEqual = memcmp( pSource, pDest, nSourceSize ) == 0;
 		}
 		else if ( ( pSource == 0 ) && ( pDest == 0 ) )
 			bIsEqual = sal_True;
@@ -259,7 +259,7 @@ sal_Bool GfxLink::LoadNative( Graphic& rGraphic )
 				case( GFX_LINK_TYPE_NATIVE_MET ): nCvtType = CVT_MET; break;
 				case( GFX_LINK_TYPE_NATIVE_PCT ): nCvtType = CVT_PCT; break;
 				case( GFX_LINK_TYPE_NATIVE_SVG ): nCvtType = CVT_SVG; break;
-				
+
 				default: nCvtType = CVT_UNKNOWN; break;
 			}
 
@@ -301,7 +301,7 @@ void GfxLink::SwapIn()
 	if( IsSwappedOut() )
 	{
 		mpBuf = new ImpBuffer( mpSwap->GetData() );
-	
+
 		if( !( --mpSwap->mnRefCount ) )
 			delete mpSwap;
 
@@ -329,15 +329,15 @@ sal_Bool GfxLink::ExportNative( SvStream& rOStream ) const
 SvStream& operator<<( SvStream& rOStream, const GfxLink& rGfxLink )
 {
 	VersionCompat* pCompat = new VersionCompat( rOStream, STREAM_WRITE, 2 );
-	
+
 	// Version 1
     rOStream << (sal_uInt16) rGfxLink.GetType() << rGfxLink.GetDataSize() << rGfxLink.GetUserId();
-    
+
     // Version 2
-    rOStream << rGfxLink.GetPrefSize() << rGfxLink.GetPrefMapMode(); 
-	
+    rOStream << rGfxLink.GetPrefSize() << rGfxLink.GetPrefMapMode();
+
 	delete pCompat;
-	
+
 	if( rGfxLink.GetDataSize() )
 	{
 		if( rGfxLink.IsSwappedOut() )
@@ -358,7 +358,7 @@ SvStream& operator>>( SvStream& rIStream, GfxLink& rGfxLink)
 	sal_uInt32		nSize;
 	sal_uInt32		nUserId;
 	sal_uInt16			nType;
-	sal_uInt8*			pBuf;	
+	sal_uInt8*			pBuf;
     bool			bMapAndSizeValid( false );
 	VersionCompat*	pCompat = new VersionCompat( rIStream, STREAM_READ );
 
@@ -370,12 +370,12 @@ SvStream& operator>>( SvStream& rIStream, GfxLink& rGfxLink)
         rIStream >> aSize >> aMapMode;
         bMapAndSizeValid = true;
     }
-	
+
 	delete pCompat;
 
 	pBuf = new sal_uInt8[ nSize ];
 	rIStream.Read( pBuf, nSize );
-	
+
 	rGfxLink = GfxLink( pBuf, nSize, (GfxLinkType) nType, sal_True );
 	rGfxLink.SetUserId( nUserId );
 
@@ -446,7 +446,7 @@ sal_uInt8* ImpSwap::GetData() const
 			if (nActReadSize != mnDataSize)
 			{
 				bError = sal_True;
-			}			
+			}
 			delete pIStm;
 
 			if( bError )

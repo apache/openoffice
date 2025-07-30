@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -34,9 +34,9 @@
 #include "..\misc\WinImplHelper.hxx"
 
 //------------------------------------------------------------
-// we are using a table based algorithm to dispatch control 
-// actions there is one table containing one action table for 
-// each control class and one action table per control class 
+// we are using a table based algorithm to dispatch control
+// actions there is one table containing one action table for
+// each control class and one action table per control class
 // which contains function pointer to control action functions
 //------------------------------------------------------------
 
@@ -100,16 +100,16 @@ namespace // private
         size_t TableSize;
     };
 
-    // an array of function tables, one for each control class 
+    // an array of function tables, one for each control class
     _ENTRY CtrlClassSetValueFunctionTable[] =
     {
         { NULL, 0 },
-        { CheckboxSetValueFunctionTable, SIZE_CHECKBOX_SETVALUE_FUNCTION_TABLE }, 
+        { CheckboxSetValueFunctionTable, SIZE_CHECKBOX_SETVALUE_FUNCTION_TABLE },
         { ListboxSetValueFunctionTable, SIZE_LISTBOX_SETVALUE_FUNCTION_TABLE },
         { NULL, 0 }
     };
-    
-    // an array of function tables, one for each control class 
+
+    // an array of function tables, one for each control class
     _ENTRY CtrlClassGetValueFunctionTable[] =
     {
         { NULL, 0 },
@@ -117,41 +117,41 @@ namespace // private
         { ListboxGetValueFunctionTable, SIZE_LISTBOX_GETVALUE_ACTION_TABLE },
         { NULL, 0 }
     };
-    
+
     //------------------------------------------------------------
     //
     //------------------------------------------------------------
 
-    CTRL_SETVALUE_FUNCTION_T SAL_CALL GetCtrlSetValueFunction( 
+    CTRL_SETVALUE_FUNCTION_T SAL_CALL GetCtrlSetValueFunction(
         CTRL_SETVALUE_FUNCTION_T* aCtrlSetValueFunctionTable, size_t aTableSize, sal_Int16 aCtrlAction )
-    {        
+    {
         if ( !aCtrlSetValueFunctionTable ||
              aCtrlAction < 0
              || sal::static_int_cast< sal_uInt16 >(aCtrlAction) >= aTableSize )
             return NULL;
 
-        return aCtrlSetValueFunctionTable[aCtrlAction];        
+        return aCtrlSetValueFunctionTable[aCtrlAction];
     }
 
     //------------------------------------------------------------
     //
     //------------------------------------------------------------
 
-    CTRL_GETVALUE_FUNCTION_T SAL_CALL GetCtrlGetValueFunction( 
+    CTRL_GETVALUE_FUNCTION_T SAL_CALL GetCtrlGetValueFunction(
         CTRL_GETVALUE_FUNCTION_T* aCtrlGetValueFunctionTable, size_t aTableSize, sal_Int16 aCtrlAction )
-    {        
+    {
         if ( !aCtrlGetValueFunctionTable ||
              aCtrlAction < 0 ||
              sal::static_int_cast< sal_uInt16 >(aCtrlAction) >= aTableSize )
             return NULL;
 
-        return aCtrlGetValueFunctionTable[aCtrlAction];     
+        return aCtrlGetValueFunctionTable[aCtrlAction];
     }
 
     //------------------------------------------------------------
     //
     //------------------------------------------------------------
-    
+
     inline
     _ENTRY SAL_CALL GetCtrlClassSetValueFunctionTable( CTRL_CLASS aCtrlClass )
     {
@@ -161,7 +161,7 @@ namespace // private
     //------------------------------------------------------------
     //
     //------------------------------------------------------------
-    
+
     inline
     _ENTRY SAL_CALL GetCtrlClassGetValueFunctionTable( CTRL_CLASS aCtrlClass )
     {
@@ -182,7 +182,7 @@ namespace // private
     const int SIZE_WINDOWS_FILEOPEN_CTRL_IDS =
         sizeof(WindowsFileOpenCtrlIds)/sizeof(WindowsFileOpenCtrlIds[0]);
 
-}; // end namespace 
+}; // end namespace
 
 //------------------------------------------------------------
 //
@@ -193,9 +193,9 @@ CTRL_SETVALUE_FUNCTION_T SAL_CALL GetCtrlSetValueFunction( CTRL_CLASS aCtrlClass
     _ENTRY aEntry =
         GetCtrlClassSetValueFunctionTable( aCtrlClass );
 
-    return GetCtrlSetValueFunction( 
-        reinterpret_cast< CTRL_SETVALUE_FUNCTION_T* >( aEntry.lpFunctionTable ), 
-        aEntry.TableSize, 
+    return GetCtrlSetValueFunction(
+        reinterpret_cast< CTRL_SETVALUE_FUNCTION_T* >( aEntry.lpFunctionTable ),
+        aEntry.TableSize,
         aCtrlAction );
 }
 
@@ -208,9 +208,9 @@ CTRL_GETVALUE_FUNCTION_T SAL_CALL GetCtrlGetValueFunction( CTRL_CLASS aCtrlClass
     _ENTRY aEntry =
         GetCtrlClassGetValueFunctionTable( aCtrlClass );
 
-    return GetCtrlGetValueFunction( 
-        reinterpret_cast< CTRL_GETVALUE_FUNCTION_T* >( aEntry.lpFunctionTable ), 
-        aEntry.TableSize, 
+    return GetCtrlGetValueFunction(
+        reinterpret_cast< CTRL_GETVALUE_FUNCTION_T* >( aEntry.lpFunctionTable ),
+        aEntry.TableSize,
         aCtrlAction );
 }
 

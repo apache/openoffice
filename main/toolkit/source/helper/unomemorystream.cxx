@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -44,7 +44,7 @@ UnoMemoryStream::UnoMemoryStream( sal_uInt32 nInitSize, sal_uInt32 nInitResize )
 	return (aRet.hasValue() ? aRet : OWeakObject::queryInterface( rType ));
 }
 
-	
+
 // ::com::sun::star::io::XInputStream
 sal_Int32 UnoMemoryStream::readBytes( ::com::sun::star::uno::Sequence< sal_Int8 >& rData, sal_Int32 nBytesToRead ) throw(::com::sun::star::io::NotConnectedException, ::com::sun::star::io::BufferSizeExceededException, ::com::sun::star::io::IOException, ::com::sun::star::uno::RuntimeException)
 {
@@ -53,10 +53,10 @@ sal_Int32 UnoMemoryStream::readBytes( ::com::sun::star::uno::Sequence< sal_Int8 
 	sal_Int32 nRead = available();
 	if ( nRead > nBytesToRead )
 		nRead = nBytesToRead;
-	
+
 	rData = ::com::sun::star::uno::Sequence< sal_Int8 >( nRead );
 	Read( rData.getArray(), nRead );
-	
+
 	return nRead;
 }
 
@@ -65,14 +65,14 @@ sal_Int32 UnoMemoryStream::readSomeBytes( ::com::sun::star::uno::Sequence< sal_I
 	::osl::Guard< ::osl::Mutex > aGuard( GetMutex() );
 
 	sal_Int32 nAvailable = available();
-	if( nAvailable ) 
+	if( nAvailable )
 	{
 		return readBytes( rData, std::min( nMaxBytesToRead , nAvailable ) );
 	}
-	else 
+	else
 	{
 		// Not the most effective method, but it sticks to the specification
-		return readBytes( rData, 1 );	
+		return readBytes( rData, 1 );
 	}
 }
 
@@ -95,5 +95,5 @@ sal_Int32 UnoMemoryStream::available() throw(::com::sun::star::io::NotConnectedE
 
 void UnoMemoryStream::closeInput() throw(::com::sun::star::io::NotConnectedException, ::com::sun::star::io::IOException, ::com::sun::star::uno::RuntimeException)
 {
-	// nothing to do	
+	// nothing to do
 }

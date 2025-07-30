@@ -38,7 +38,7 @@ repos:
       - id: mixed-line-ending
         files: ^main/.*\.(c|h)xx$|^main/.*\.java$|\.(asp|c|cl|common|dxp|el|h|hrc|idl|in|ini|m|md|mk|mm|mod|pas|php|pl|pm|py|rc|rdf|sh|xba|xcs|xcu|xdl|xhp|xlb|xmi|xsd|xslt?|ya?ml)$|^main/accessibility/.*$|^main/afms/.*$|^main/animations/.*$|^main/apache-commons/.*$|^test/testgui/.*$
       - id: trailing-whitespace
-        files: (m|M)akefile$|\.(asp|bat|c|cl|common|dxp|el|h|hrc|hxx|idl|in|ini|java|m|mk|mm|mod|pas|php|pl|pm|py|rc|rdf|sh|vbs|xba|xcs|xcu|xdl|xhp|xlb|xmi|xml|xsd|ya?ml)$
+        files: (m|M)akefile$|\.(asp|bat|c|cl|common|cxx|dxp|el|h|hrc|hxx|idl|in|ini|java|m|mk|mm|mod|pas|php|pl|pm|py|rc|rdf|sh|vbs|xba|xcs|xcu|xdl|xhp|xlb|xmi|xml|xsd|ya?ml)$
   - repo: https://github.com/codespell-project/codespell
     rev: v2.4.1
     hooks:

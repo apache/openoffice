@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -77,7 +77,7 @@ namespace accessibility
 		sal_Bool bEnabled = sal_False;
 		if ( m_pTabBar )
 			bEnabled = m_pTabBar->IsPageEnabled( m_nPageId );
-		
+
 		return bEnabled;
 	}
 
@@ -197,12 +197,12 @@ namespace accessibility
 	}
 
 	// -----------------------------------------------------------------------------
-	// OCommonAccessibleComponent 
+	// OCommonAccessibleComponent
 	// -----------------------------------------------------------------------------
 
 	awt::Rectangle AccessibleTabBarPage::implGetBounds() throw (RuntimeException)
 	{
-		awt::Rectangle aBounds;	
+		awt::Rectangle aBounds;
 		if ( m_pTabBar )
 		{
 			// get bounding rectangle relative to the AccessibleTabBar
@@ -212,7 +212,7 @@ namespace accessibility
 			Reference< XAccessible > xParent = getAccessibleParent();
 			if ( xParent.is() )
 			{
-				Reference< XAccessibleComponent > xParentComponent( xParent->getAccessibleContext(), UNO_QUERY );				
+				Reference< XAccessibleComponent > xParentComponent( xParent->getAccessibleContext(), UNO_QUERY );
 				if ( xParentComponent.is() )
 				{
 					awt::Point aParentLoc = xParentComponent->getLocation();
@@ -364,7 +364,7 @@ namespace accessibility
 	{
 		OExternalLockGuard aGuard( this );
 
-		return m_sPageText;		
+		return m_sPageText;
 	}
 
 	// -----------------------------------------------------------------------------
@@ -438,7 +438,7 @@ namespace accessibility
 		{
 			Reference< XAccessibleComponent > xParentComp( xParent->getAccessibleContext(), UNO_QUERY );
 			if ( xParentComp.is() )
-				nColor = xParentComp->getForeground();	
+				nColor = xParentComp->getForeground();
 		}
 
 		return nColor;
@@ -456,7 +456,7 @@ namespace accessibility
 		{
 			Reference< XAccessibleComponent > xParentComp( xParent->getAccessibleContext(), UNO_QUERY );
 			if ( xParentComp.is() )
-				nColor = xParentComp->getBackground();	
+				nColor = xParentComp->getBackground();
 		}
 
 		return nColor;
@@ -476,7 +476,7 @@ namespace accessibility
 		{
 			Reference< XAccessibleExtendedComponent > xParentComp( xParent->getAccessibleContext(), UNO_QUERY );
 			if ( xParentComp.is() )
-				xFont = xParentComp->getFont();	
+				xFont = xParentComp->getFont();
 		}
 
 		return xFont;
@@ -488,7 +488,7 @@ namespace accessibility
 	{
 		OExternalLockGuard aGuard( this );
 
-		return m_sPageText;		
+		return m_sPageText;
 	}
 
 	// -----------------------------------------------------------------------------

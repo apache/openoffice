@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -25,7 +25,7 @@
 
 #undef NDEBUG
 
-/* 
+/*
 #include <stdio.h>
 #include <string.h>
 */
@@ -183,11 +183,11 @@ public:
             OSL_ASSERT( xContainer.is() );
             xParent = uno::Reference< awt::XLayoutContainer >( xContainer->getParent(), uno::UNO_QUERY );
         }
-        
+
         mxWidget = WidgetFactory::createWidget( xToolkit, xParent, unoName, nAttrbs );
         OSL_ASSERT( mxWidget.is() );
         mxContainer = uno::Reference< awt::XLayoutContainer >( mxWidget, uno::UNO_QUERY );
-        
+
         mrLabel = mrUnoName = unoName;
         // try to get a nicer label for the widget
         for ( int i = 0; i < WIDGETS_SPECS_LEN; i++ )
@@ -197,21 +197,21 @@ public:
                 mrLabel = rtl::OUString( label, strlen( label ), RTL_TEXTENCODING_UTF8  );
                 break;
             }
-        
+
         // set default Text property
         // TODO: disable editing of text fields, check boxes selected, etc...
 #if 0
         uno::Reference< awt::XVclWindowPeer> xVclPeer( mxWidget, uno::UNO_QUERY )
-            if ( xVclPeer.is() ) // XVclWindowPeer ignores missing / incorrect properties 
+            if ( xVclPeer.is() ) // XVclWindowPeer ignores missing / incorrect properties
 
 //FIXME: it looks odd on widgets like NumericField seeing text which is deleted
 // when you interact with it... We can avoid it for those widgets, by doing a getProp
 // of "Text" and check if it is empty or not.
-            
+
                 xVclPeer->setProperty( rtl::OUString::createFromAscii( "Text" ),
                                        uno::makeAny( rtl::OUString::createFromAscii( "new widget" ) ) );
 #endif
-        
+
         // store original properties
         {
             PropertyIterator it( this, WINDOW_PROPERTY );
@@ -263,7 +263,7 @@ public:
 
     virtual void setChildProperties( LayoutWidget *pChild, const PropList &rProps )
     {
-        maOriChildProps = rProps;        
+        maOriChildProps = rProps;
         LayoutWidget::setChildProperties( pChild, rProps );
     }
 
@@ -511,7 +511,7 @@ public:
     }
 
     using LayoutWidget::setProperty;
-    
+
     void setProperty( rtl::OUString rPropName, PropertyKind rKind, uno::Any rValue )
     {
         switch ( rKind ) {
@@ -779,7 +779,7 @@ class PropertiesList : public layout::Table
             void checkProperty()
             {
                 bool flag = mpWidget->isPropertyTouched( maPropName, maPropKind );
-                
+
                 if ( mpFlag && mpFlag->IsChecked() != (BOOL)flag )
                 {
                     CheckFlag( flag, true );
@@ -927,7 +927,7 @@ class PropertiesList : public layout::Table
                 // replace end of lines by "\\n" strings
                 Translate trans[] = {
                     { "\\", "\\\\" }, { "\n", "\\n" }, { 0, 0 }
-                }; 
+                };
                 rtl::OUString str = anyToString( getValue() );
                 str = stringReplace( str, trans );
                 SetText( str );
@@ -943,7 +943,7 @@ class PropertiesList : public layout::Table
                 Translate trans[] = {
                     { "\\\\", "\\"  }, { "\\n", "\n" },
                     { "\\", "" }, { 0, 0 }
-                }; 
+                };
                 rtl::OUString str = GetText();
                 str = stringReplace( str, trans );
                 save( uno::makeAny( str ) );
@@ -1035,7 +1035,7 @@ class PropertiesList : public layout::Table
             void setLabel()
             {
                 SetText( String::CreateFromAscii( IsChecked() ? "true" : "false" ) );
-            }            
+            }
         };
 
         struct AnyListBox : public AnyWidget, layout::ListBox

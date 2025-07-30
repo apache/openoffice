@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -66,14 +66,14 @@ XMLIndexMarkExport::XMLIndexMarkExport(
 {
 }
 
-const enum XMLTokenEnum lcl_pTocMarkNames[] = 
+const enum XMLTokenEnum lcl_pTocMarkNames[] =
 	{ XML_TOC_MARK, XML_TOC_MARK_START, XML_TOC_MARK_END };
 const enum XMLTokenEnum lcl_pUserIndexMarkName[] =
-	{ XML_USER_INDEX_MARK, 
+	{ XML_USER_INDEX_MARK,
 		  XML_USER_INDEX_MARK_START, XML_USER_INDEX_MARK_END };
-const enum XMLTokenEnum lcl_pAlphaIndexMarkName[] = 
-	{ XML_ALPHABETICAL_INDEX_MARK, 
-		  XML_ALPHABETICAL_INDEX_MARK_START, 
+const enum XMLTokenEnum lcl_pAlphaIndexMarkName[] =
+	{ XML_ALPHABETICAL_INDEX_MARK,
+		  XML_ALPHABETICAL_INDEX_MARK_START,
 		  XML_ALPHABETICAL_INDEX_MARK_END };
 
 
@@ -110,7 +110,7 @@ void XMLIndexMarkExport::ExportIndexMark(
 			aAny = xIndexMarkPropSet->getPropertyValue(sAlternativeText);
 			OUString sTmp;
 			aAny >>= sTmp;
-			DBG_ASSERT(sTmp.getLength() > 0, 
+			DBG_ASSERT(sTmp.getLength() > 0,
 					   "collapsed index mark without alternative text");
 			rExport.AddAttribute(XML_NAMESPACE_TEXT, XML_STRING_VALUE, sTmp);
 		}
@@ -123,13 +123,13 @@ void XMLIndexMarkExport::ExportIndexMark(
 			// generate ID
 			OUStringBuffer sBuf;
 			GetID(sBuf, xIndexMarkPropSet);
-			rExport.AddAttribute(XML_NAMESPACE_TEXT, XML_ID, 
+			rExport.AddAttribute(XML_NAMESPACE_TEXT, XML_ID,
                                  sBuf.makeStringAndClear());
 		}
 
 		// distinguish between TOC, user, alphab. index marks by
 		// asking for specific properties
-		// Export attributes for -mark-start and -mark elements, 
+		// Export attributes for -mark-start and -mark elements,
 		// but not for -mark-end
 		Reference<XPropertySetInfo> xPropertySetInfo =
 			xIndexMarkPropSet->getPropertySetInfo();
@@ -165,11 +165,11 @@ void XMLIndexMarkExport::ExportIndexMark(
 		DBG_ASSERT(pElements != NULL, "illegal element array");
 		DBG_ASSERT(nElementNo >= 0, "illegal name array index");
 		DBG_ASSERT(nElementNo <= 2, "illegal name array index");
-		
+
 		if ((pElements != NULL) && (nElementNo != -1))
 		{
 			SvXMLElementExport aElem(rExport,
-									 XML_NAMESPACE_TEXT, 
+									 XML_NAMESPACE_TEXT,
 									 pElements[nElementNo],
 									 sal_False, sal_False);
 		}
@@ -185,7 +185,7 @@ void XMLIndexMarkExport::ExportTOCMarkAttributes(
 	aAny >>= nLevel;
 	OUStringBuffer sBuf;
 	SvXMLUnitConverter::convertNumber(sBuf, (sal_Int32)nLevel + 1);
-	rExport.AddAttribute(XML_NAMESPACE_TEXT, XML_OUTLINE_LEVEL, 
+	rExport.AddAttribute(XML_NAMESPACE_TEXT, XML_OUTLINE_LEVEL,
 							 sBuf.makeStringAndClear());
 }
 
@@ -228,11 +228,11 @@ void lcl_ExportPropertyBool( SvXMLExport& rExport,
 void XMLIndexMarkExport::ExportUserIndexMarkAttributes(
 	const Reference<XPropertySet> & rPropSet)
 {
-	// name of user index 
+	// name of user index
 	// (unless it's the default index; then it has no name)
     Any aAny;
     lcl_ExportPropertyString( rExport, rPropSet, sUserIndexName, XML_INDEX_NAME, aAny );
-    
+
     // additionally export outline level; just reuse ExportTOCMarkAttributes
     ExportTOCMarkAttributes( rPropSet );
 }
@@ -251,7 +251,7 @@ void XMLIndexMarkExport::ExportAlphabeticalIndexMarkAttributes(
 }
 
 void XMLIndexMarkExport::GetID(
-	OUStringBuffer& sBuf, 
+	OUStringBuffer& sBuf,
 	const Reference<XPropertySet> & rPropSet)
 {
 	static const sal_Char sPrefix[] = "IMark";

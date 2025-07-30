@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -532,7 +532,7 @@ sal_Bool SvXMLImportItemMapper::PutXMLValue(
                                                         DEF_LINE_WIDTH_0,
                                                         DEF_LINE_WIDTH_4 ) )
                         return sal_False;
-                        
+
                     // #i61946: accept line style even it's not part of our "normal" set of line styles
                     sal_uInt16 nWidth = 0;
 
@@ -798,7 +798,7 @@ sal_Bool SvXMLImportItemMapper::PutXMLValue(
         {
             SfxBoolItem* pSplit = PTR_CAST(SfxBoolItem, &rItem);
             DBG_ASSERT( pSplit != NULL, "Wrong Which-ID" );
-            
+
             if( IsXMLToken( rValue, XML_AUTO ) ||
 			 	IsXMLToken( rValue, XML_TRUE ) )
             {

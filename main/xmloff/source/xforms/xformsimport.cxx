@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -62,22 +62,22 @@ using com::sun::star::form::submission::XSubmission;
 using com::sun::star::form::submission::XSubmissionSupplier;
 using rtl::OUString;
 
-SvXMLImportContext* createXFormsModelContext( 
-    SvXMLImport& rImport, 
+SvXMLImportContext* createXFormsModelContext(
+    SvXMLImport& rImport,
     sal_uInt16 nPrefix,
     const rtl::OUString& rLocalName )
 {
     return new XFormsModelContext( rImport, nPrefix, rLocalName );
 }
 
-void bindXFormsValueBinding( 
+void bindXFormsValueBinding(
 	Reference<XModel> xModel,
     pair<Reference<XPropertySet>,OUString> aPair )
 {
-    Reference<XBindableValue> xBindable( 
-        aPair.first, 
+    Reference<XBindableValue> xBindable(
+        aPair.first,
         UNO_QUERY );
-    Reference<XValueBinding> xBinding( 
+    Reference<XValueBinding> xBinding(
         lcl_findXFormsBinding( xModel, aPair.second ),
         UNO_QUERY );
 
@@ -95,14 +95,14 @@ void bindXFormsValueBinding(
     }
 }
 
-void bindXFormsListBinding( 
+void bindXFormsListBinding(
 	Reference<XModel> xModel,
     ::pair<Reference<XPropertySet>,OUString> aPair )
 {
-    Reference<XListEntrySink> xListEntrySink( 
-        aPair.first, 
+    Reference<XListEntrySink> xListEntrySink(
+        aPair.first,
         UNO_QUERY );
-    Reference<XListEntrySource> xListEntrySource( 
+    Reference<XListEntrySource> xListEntrySource(
         lcl_findXFormsBinding( xModel, aPair.second ),
         UNO_QUERY );
 
@@ -120,12 +120,12 @@ void bindXFormsListBinding(
     }
 }
 
-void bindXFormsSubmission( 
+void bindXFormsSubmission(
     Reference<XModel> xModel,
     pair<Reference<XPropertySet>,OUString> aPair )
 {
     Reference<XSubmissionSupplier> xSubmissionSupp( aPair.first, UNO_QUERY );
-    Reference<XSubmission> xSubmission( 
+    Reference<XSubmission> xSubmission(
         lcl_findXFormsSubmission( xModel, aPair.second ),
         UNO_QUERY );
 

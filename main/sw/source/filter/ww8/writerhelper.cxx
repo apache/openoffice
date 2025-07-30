@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -153,12 +153,12 @@ namespace
             else
             {
                 SwPosition aPos((*aIter)->GetNdIndex());
-                
+
                 if (SwTxtNode* pTxtNd = aPos.nNode.GetNode().GetTxtNode())
                 {
                     aPos.nContent.Assign(pTxtNd, 0);
                 }
-                
+
                 aRet.push_back(sw::Frame(rEntry, aPos));
             }
         }
@@ -194,19 +194,19 @@ namespace sw
 		maGrf(rGrf)
 	{
 		const MapMode aMap100mm( MAP_100TH_MM );
-		Size    aSize( rGrf.GetPrefSize() );    
-		if ( MAP_PIXEL == rGrf.GetPrefMapMode().GetMapUnit() )    
-		{        
-			aSize = Application::GetDefaultDevice()->PixelToLogic(aSize, aMap100mm );   
-		}    
-		else    
-		{        
-			aSize = OutputDevice::LogicToLogic( aSize,rGrf.GetPrefMapMode(), aMap100mm );   
-		} 
+		Size    aSize( rGrf.GetPrefSize() );
+		if ( MAP_PIXEL == rGrf.GetPrefMapMode().GetMapUnit() )
+		{
+			aSize = Application::GetDefaultDevice()->PixelToLogic(aSize, aMap100mm );
+		}
+		else
+		{
+			aSize = OutputDevice::LogicToLogic( aSize,rGrf.GetPrefMapMode(), aMap100mm );
+		}
 		maSize = aSize;
 		maLayoutSize = maSize;
 	}
-	
+
     Frame::Frame(const SwFrmFmt &rFmt, const SwPosition &rPos)
         : mpFlyFrm(&rFmt),
           maPos(rPos),
@@ -609,7 +609,7 @@ namespace sw
             return aRet;
         }
 
-#if 0        
+#if 0
         Frames GetFramesBetweenNodes(const Frames &rFrames,
             const SwNode &rStart, const SwNode &rEnd)
         {

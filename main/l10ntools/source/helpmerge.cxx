@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -155,7 +155,7 @@ bool HelpParser::CreateSDF(
 
     String strFullPath( fullFilePath.GetBuffer() , RTL_TEXTENCODING_ASCII_US );
 
-    //printf( "%s\n", fullFilePath.GetBuffer() ); 
+    //printf( "%s\n", fullFilePath.GetBuffer() );
     std::auto_ptr <XMLFile> file ( aParser.Execute( strFullPath , sXmlFile, pXmlFile ) );
 
 	if(file.get() == NULL){
@@ -212,7 +212,7 @@ bool HelpParser::CreateSDF(
 				FillInFallbacks( *pElem , sCur );
             }
             pXMLElement = (*pElem)[ sCur ];
-  			
+
 			if( pXMLElement != NULL )
 			{
 				OUString data = pXMLElement->ToOUString();
@@ -247,11 +247,11 @@ bool HelpParser::CreateSDF(
                 pXMLElement=NULL;
 			}else fprintf(stdout,"\nDBG: NullPointer in HelpParser::CreateSDF , Language %s\n",sCur.GetBuffer() );
 		}
-	
+
 	}
     //Dump(aXMLStrHM);
 	aSDFStream.Close();
-    
+
     if( !sUsedTempFile.EqualsIgnoreCaseAscii( "" ) ){
         DirEntry aTempFile( sUsedTempFile );
         aTempFile.Kill();
@@ -273,13 +273,13 @@ ByteString HelpParser::makeAbsolutePath( const ByteString& sHelpFile , const Byt
 	sActFileName.SearchAndReplaceAll( "/", "\\" );
     return sActFileName;
 }
-bool HelpParser::Merge( const ByteString &rSDFFile, const ByteString &rDestinationFile  , 
+bool HelpParser::Merge( const ByteString &rSDFFile, const ByteString &rDestinationFile  ,
 		ByteString& sLanguage , MergeDataFile& aMergeDataFile )
 {
 
     (void) rSDFFile;
     bool hasNoError = true;
-    
+
     SimpleXMLParser aParser;
 
     String sUsedTempFile;
@@ -301,7 +301,7 @@ bool HelpParser::Merge( const ByteString &rSDFFile, const ByteString &rDestinati
     OUString sOUHelpFile( sXmlFile );
 	String fullFilePath;
     DirEntry aFile( sXmlFile );
- 
+
 	XMLFile* xmlfile = ( aParser.Execute( aFile.GetFull() , sOUHelpFile, new XMLFile( '0' ) ) );
     if (xmlfile == NULL) {
         printf("%s\n",ByteString(aParser.GetError().sMessage,
@@ -327,13 +327,13 @@ bool ByteStringLess( const ByteString& rKey1, const ByteString& rKey2 )  {
 
 void HelpParser::parse_languages( std::vector<ByteString>& aLanguages , MergeDataFile& aMergeDataFile ){
     std::vector<ByteString> aTmp;
-	
+
     const ByteString DE		("de");
 	const ByteString ENUS	("en-US");
 	static const ByteString ALL( "ALL" );
 
 	Export::InitLanguages( false );
-    
+
 	if( Export::sLanguages.EqualsIgnoreCaseAscii( ALL ) )
 	{
 		aLanguages = aMergeDataFile.GetLanguages();
@@ -364,8 +364,8 @@ bool HelpParser::Merge(
 	const std::vector<ByteString>& aLanguages , MergeDataFile& aMergeDataFile , bool bCreateDir )
 {
 
-    
-    (void) rSDFFile ; 
+
+    (void) rSDFFile ;
     bool hasNoError = true;
     SimpleXMLParser aParser;
     String sUsedTempFile;
@@ -387,7 +387,7 @@ bool HelpParser::Merge(
         sXmlFile = String( sHelpFile , RTL_TEXTENCODING_ASCII_US );
     }
 
-	
+
 	OUString sOUHelpFile( sXmlFile );
   	String fullFilePath;
     DirEntry aFile( sXmlFile );
@@ -406,20 +406,20 @@ bool HelpParser::Merge(
     ByteString sCur;
     for( unsigned int n = 0; n < aLanguages.size(); n++ ){
 		sCur = aLanguages[ n ];
-		
+
         ByteString sFilepath;
         if( bISO )	sFilepath = GetOutpath( rPathX , sCur , rPathY );
         else        sFilepath = rPathX;
         if( bCreateDir ) MakeDir( sFilepath );
-			
+
         XMLFile* file = new XMLFile( *xmlfile );
         sFilepath.Append( sHelpFile );
-		hasNoError = MergeSingleFile( file , aMergeDataFile , sCur , sFilepath );			
+		hasNoError = MergeSingleFile( file , aMergeDataFile , sCur , sFilepath );
 		delete file;
-		
+
 		if( !hasNoError ) return false;			// Stop on error
      }
-       
+
     if( !sUsedTempFile.EqualsIgnoreCaseAscii( "" ) )
 	{
         DirEntry aTempFile( sUsedTempFile );
@@ -433,47 +433,47 @@ bool HelpParser::MergeSingleFile( XMLFile* file , MergeDataFile& aMergeDataFile 
 								  ByteString sPath )
 {
 	file->Extract();
-	
+
    	XMLHashMap*   aXMLStrHM     = file->GetStrings();
 	LangHashMap*  aLangHM;
 	static	ResData	pResData( "","","");
 	pResData.sResTyp   = "help";
 
     ByteString sTmp             = Export::sLanguages;
-    
+
     sTmp.EraseLeadingAndTrailingChars();
-    
+
     for(XMLHashMap::iterator pos=aXMLStrHM->begin();pos!=aXMLStrHM->end();++pos)    // Merge every l10n related string
     {
-        
+
         aLangHM             = pos->second;
         //printf("*********************DUMPING HASHMAP***************************************");
 		//Dump( aXMLStrHM );
 		//printf("DBG: sHelpFile = %s\n",sHelpFile.GetBuffer() );
-	    
+
         pResData.sGId      =  pos->first;
 		pResData.sFilename  =  sHelpFile;
 
         ProcessHelp( aLangHM , sLanguage, &pResData , aMergeDataFile );
      }
 
-	
+
     // Init temp and target file
 	ByteString sTempFile;
 	ByteString sTargetFile( sPath );
     ByteString sTempFileCopy;
-    
+
 	static const ByteString INPATH = Export::GetEnv( "INPATH" );
 	Export::getRandomName( sPath , sTempFile , INPATH );
   	Export::getRandomName( sPath , sTempFileCopy , INPATH );
 	// Write in the temp file
-	bool hasNoError = file->Write ( sTempFile ); 
+	bool hasNoError = file->Write ( sTempFile );
 	if( !hasNoError )
     {
         cerr << "ERROR: file->Write failed\n";
         return false;
     }
-    
+
     DirEntry aTmp( sTempFile );
     DirEntry aTmp2( sTempFileCopy );
     DirEntry aTar( sTargetFile );
@@ -491,8 +491,8 @@ bool HelpParser::MergeSingleFile( XMLFile* file , MergeDataFile& aMergeDataFile 
             return false;
         }
     }
-    //remove( sTargetFile.GetBuffer() ); 
-    
+    //remove( sTargetFile.GetBuffer() );
+
     FileStat aFSTest( aTar );
     if( aFSTest.GetSize() < 1 )
     {
@@ -534,7 +534,7 @@ bool HelpParser::MergeSingleFile( XMLFile* file , MergeDataFile& aMergeDataFile 
 
         //cout << "mv2 " << sTempFileCopy.GetBuffer() << " " << sTargetFile.GetBuffer() << "\n";
         //cout << "rc -> " << rc << " filesize -> " << aFS.GetSize() << "\n";
- 
+
 // Windows rename returns -1 if the file already exits
 //#ifdef WNT
 //        if( aFS.GetSize() < 1 )
@@ -548,13 +548,13 @@ bool HelpParser::MergeSingleFile( XMLFile* file , MergeDataFile& aMergeDataFile 
             if( aFS.GetSize() < 1 )
                 aTar.Kill();
             return false;
-        }           
+        }
     }
     aTmp.Kill();
     aTmp2.Kill();
- 
+
 	return true;
-}		
+}
 
 ByteString HelpParser::GetOutpath( const ByteString& rPathX , const ByteString& sCur , const ByteString& rPathY ){
     ByteString testpath = rPathX;
@@ -607,7 +607,7 @@ void HelpParser::ProcessHelp( LangHashMap* aLangHM , const ByteString& sCur , Re
 #ifdef MERGE_SOURCE_LANGUAGES
     if( true ){                  // Merge en-US!
 #else
-    if( !sCur.EqualsIgnoreCaseAscii("en-US") ){   
+    if( !sCur.EqualsIgnoreCaseAscii("en-US") ){
 #endif
         pXMLElement = (*aLangHM)[ "en-US" ];
         if( pXMLElement == NULL )
@@ -621,12 +621,12 @@ void HelpParser::ProcessHelp( LangHashMap* aLangHM , const ByteString& sCur , Re
             pResData->sId     =  sLId;
 
             pEntrys = aMergeDataFile.GetPFormEntrys( pResData );
-            if( pEntrys != NULL) 
+            if( pEntrys != NULL)
 			{
                 ByteString sNewText;
 		        pEntrys->GetText( sNewText, STRING_TYP_TEXT, sCur , true );
 		        sNewdata = String(  sNewText , RTL_TEXTENCODING_UTF8 );
-                if ( sNewdata.Len()) 
+                if ( sNewdata.Len())
 				{
                     if( pXMLElement != NULL )
 					{
@@ -635,7 +635,7 @@ void HelpParser::ProcessHelp( LangHashMap* aLangHM , const ByteString& sCur , Re
 						pXMLElement->AddChild( data );
                         aLangHM->erase( sCur );
 				    }
-			    } 
+			    }
             }else if( pResData == NULL ){fprintf(stdout,"Can't find GID=%s LID=%s TYP=%s\n",pResData->sGId.GetBuffer(),pResData->sId.GetBuffer(),pResData->sResTyp.GetBuffer());}
             pXMLElement->ChangeLanguageTag( String( sCur , RTL_TEXTENCODING_ASCII_US) );
         }
@@ -662,7 +662,7 @@ void HelpParser::Process( LangHashMap* aLangHM , const ByteString& sCur , ResDat
 #ifdef MERGE_SOURCE_LANGUAGES
     if( true ){                  // Merge en-US!
 #else
-    if( !sCur.EqualsIgnoreCaseAscii("en-US") ){   
+    if( !sCur.EqualsIgnoreCaseAscii("en-US") ){
 #endif
         pXMLElement = (*aLangHM)[ sCur ];
         if( pXMLElement == NULL )
@@ -678,12 +678,12 @@ void HelpParser::Process( LangHashMap* aLangHM , const ByteString& sCur , ResDat
             pResData->sId     =  sLId;
 
             pEntrys = aMergeDataFile.GetPFormEntrys( pResData );
-            if( pEntrys != NULL) 
+            if( pEntrys != NULL)
 			{
                 ByteString sNewText;
 		        pEntrys->GetText( sNewText, STRING_TYP_TEXT, sCur , true );
 		        sNewdata = String(  sNewText , RTL_TEXTENCODING_UTF8 );
-                if ( sNewdata.Len()) 
+                if ( sNewdata.Len())
 				{
 			        printf("Entries found\n");
                     if( pXMLElement != NULL )

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,19 +7,19 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
- 
+
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_cppuhelper.hxx"
@@ -380,7 +380,7 @@ public:
         throw (RuntimeException);
     virtual Reference<lang::XMultiComponentFactory> SAL_CALL getServiceManager()
         throw (RuntimeException);
-    
+
     // XNameContainer
     virtual void SAL_CALL insertByName(
         OUString const & name, Any const & element )
@@ -540,20 +540,20 @@ Any ComponentContext::lookupMap( OUString const & rName )
         return Any();
     }
 #endif
-    
+
     ResettableMutexGuard guard( m_mutex );
     t_map::const_iterator iFind( m_map.find( rName ) );
     if (iFind == m_map.end())
         return Any();
-    
+
     t_map::mapped_type pEntry = iFind->second;
     if (! pEntry->lateInit)
         return pEntry->value;
-    
+
     // late init singleton entry
     Reference< XInterface > xInstance;
     guard.clear();
-    
+
     try
     {
         Any usesService( getValueByName( rName + OUSTR("/service") ) );
@@ -564,7 +564,7 @@ Any ComponentContext::lookupMap( OUString const & rName )
             args.realloc( 1 );
             args[ 0 ] = args_;
         }
-        
+
         Reference< lang::XSingleComponentFactory > xFac;
         if (usesService >>= xFac) // try via factory
         {
@@ -618,14 +618,14 @@ Any ComponentContext::lookupMap( OUString const & rName )
         throw lang::WrappedTargetRuntimeException(
             buf.makeStringAndClear(), static_cast<OWeakObject *>(this),caught );
     }
-    
+
     if (! xInstance.is())
     {
         throw RuntimeException(
             OUSTR("no service object raising singleton ") + rName,
             static_cast<OWeakObject *>(this) );
     }
-    
+
     Any ret;
     guard.reset();
     iFind = m_map.find( rName );
@@ -640,7 +640,7 @@ Any ComponentContext::lookupMap( OUString const & rName )
         }
         else
             ret = pEntry->value;
-    }    
+    }
     guard.clear();
     try_dispose( xInstance );
     return ret;
@@ -658,7 +658,7 @@ Any ComponentContext::getValueByName( OUString const & rName )
         else
             return makeAny( Reference<XComponentContext>(this) );
     }
-    
+
     Any ret( lookupMap( rName ) );
     if (!ret.hasValue() && m_xDelegate.is())
     {
@@ -878,7 +878,7 @@ Reference< XComponentContext > SAL_CALL createComponentContext(
 	{
 		mapped_entries[nPos].bLateInitService = pEntries[nPos].bLateInitService;
 		mapped_entries[nPos].name             = pEntries[nPos].name;
-		
+
 		uno_type_any_constructAndConvert(&mapped_entries[nPos].value,
 										 const_cast<void *>(pEntries[nPos].value.getValue()),
 										 pEntries[nPos].value.getValueTypeRef(),

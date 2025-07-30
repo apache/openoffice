@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -40,33 +40,33 @@ WrapPolygon::WrapPolygon()
 {
 }
 
-WrapPolygon::~WrapPolygon() 
+WrapPolygon::~WrapPolygon()
 {
 }
 
-void WrapPolygon::addPoint(const awt::Point & rPoint) 
-{ 
-    mPoints.push_back(rPoint); 
+void WrapPolygon::addPoint(const awt::Point & rPoint)
+{
+    mPoints.push_back(rPoint);
 }
 
 WrapPolygon::Points_t::const_iterator WrapPolygon::begin() const
-{ 
-    return mPoints.begin(); 
+{
+    return mPoints.begin();
 }
 
 WrapPolygon::Points_t::const_iterator WrapPolygon::end() const
-{ 
-    return mPoints.end(); 
+{
+    return mPoints.end();
 }
 
 WrapPolygon::Points_t::iterator WrapPolygon::begin()
-{ 
-    return mPoints.begin(); 
+{
+    return mPoints.begin();
 }
 
 WrapPolygon::Points_t::iterator WrapPolygon::end()
-{ 
-    return mPoints.end(); 
+{
+    return mPoints.end();
 }
 
 size_t WrapPolygon::size() const
@@ -118,7 +118,7 @@ WrapPolygon::Pointer_t WrapPolygon::correctWordWrapPolygon(const awt::Size & rSr
     aMove = aMove * Fraction(15, 1);
     awt::Point aMovePoint(aMove, 0);
     pResult = move(aMovePoint);
-    
+
     Fraction aScaleX(nWrap100Percent, Fraction(nWrap100Percent) + aMove);
     Fraction aScaleY(nWrap100Percent, Fraction(nWrap100Percent) - aMove);
     pResult = pResult->scale(aScaleX, aScaleY);
@@ -141,7 +141,7 @@ drawing::PointSequenceSequence WrapPolygon::getPointSequenceSequence() const
     Points_t::const_iterator aItEnd = end();
 
     while (aIt != aItEnd)
-    {        
+    {
         (*pPolygon)[n] = *aIt;
         ++n;
         aIt++;
@@ -191,7 +191,7 @@ void WrapPolygonHandler::lcl_sprm(Sprm & _sprm)
         /* WRITERFILTERSTATUS: done: 100, planned: 0.5, spent: 0 */
         {
             resolveSprmProps(*this, _sprm);
-            
+
             awt::Point aPoint(mnX, mnY);
             mpPolygon->addPoint(aPoint);
         }

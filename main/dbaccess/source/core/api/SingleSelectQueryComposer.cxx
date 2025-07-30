@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -370,7 +370,7 @@ void SAL_CALL OSingleSelectQueryComposer::setQuery( const ::rtl::OUString& comma
 }
 // -------------------------------------------------------------------------
 void SAL_CALL OSingleSelectQueryComposer::setCommand( const ::rtl::OUString& Command,sal_Int32 _nCommandType ) throw(SQLException, RuntimeException)
-{   
+{
     ::rtl::OUStringBuffer sSQL;
     switch(_nCommandType)
     {
@@ -396,7 +396,7 @@ void SAL_CALL OSingleSelectQueryComposer::setCommand( const ::rtl::OUString& Com
 			    {
                     DBG_UNHANDLED_EXCEPTION();
 			    }
-                
+
                 sSQL.append(dbtools::composeTableNameForSelect(m_xConnection,xTable));
             }
             else
@@ -409,7 +409,7 @@ void SAL_CALL OSingleSelectQueryComposer::setCommand( const ::rtl::OUString& Com
         case CommandType::QUERY:
             if ( m_xConnectionQueries->hasByName(Command) )
             {
-                
+
                 Reference<XPropertySet> xQuery(m_xConnectionQueries->getByName(Command),UNO_QUERY);
                 ::rtl::OUString sCommand;
                 xQuery->getPropertyValue(PROPERTY_COMMAND) >>= sCommand;
@@ -421,7 +421,7 @@ void SAL_CALL OSingleSelectQueryComposer::setCommand( const ::rtl::OUString& Com
                 sMessage.SearchAndReplaceAscii( "$table$", Command );
                 throwGenericSQLException(sMessage,*this);
             }
-            
+
             break;
         default:
             break;
@@ -857,10 +857,10 @@ Reference< XNameAccess > SAL_CALL OSingleSelectQueryComposer::getColumns(  ) thr
                 xResultSetMeta.set( xResMetaDataSup->getMetaData(), UNO_QUERY_THROW );
             }
         }
-        catch( const Exception& ) 
-        { 
-            //@see issue http://qa.openoffice.org/issues/show_bug.cgi?id=110111 
-            // access returns a different order of column names when executing select * from 
+        catch( const Exception& )
+        {
+            //@see issue http://qa.openoffice.org/issues/show_bug.cgi?id=110111
+            // access returns a different order of column names when executing select * from
             // and asking the columns from the metadata.
             Reference< XParameters > xParameters( xPreparedStatement, UNO_QUERY_THROW );
             Reference< XIndexAccess > xPara = getParameters();
@@ -955,11 +955,11 @@ Reference< XNameAccess > SAL_CALL OSingleSelectQueryComposer::getColumns(  ) thr
 				if ( !sColumnName.getLength() )
 					xProp->getPropertyValue(PROPERTY_NAME) >>= sColumnName;
 
-                
+
                 aFindName = ::std::find_if(aNames.begin(),aNames.end(),::std::bind2nd(aCaseCompareFunctor,sColumnName));
                 sal_Int32 j = 0;
                 while ( aFindName != aNames.end() )
-                {                                        
+                {
                     sColumnName += ::rtl::OUString::valueOf(++j);
                     aFindName = ::std::find_if(aNames.begin(),aNames.end(),::std::bind2nd(aCaseCompareFunctor,sColumnName));
                 }
@@ -967,7 +967,7 @@ Reference< XNameAccess > SAL_CALL OSingleSelectQueryComposer::getColumns(  ) thr
                 pColumn->setName(sColumnName);
 				pColumn->setRealName(sRealName);
 				pColumn->setTableName(::comphelper::getString(xProp->getPropertyValue(PROPERTY_TABLENAME)));
-				
+
 				(aSelectColumns->get())[i-1] = pColumn;
 			}
             else
@@ -1398,7 +1398,7 @@ Reference< XIndexAccess > SAL_CALL OSingleSelectQueryComposer::getParameters(  )
 	{
 		::vos::ORef< OSQLColumns> aCols = m_aSqlIterator.getParameters();
 		::std::vector< ::rtl::OUString> aNames;
-        OSQLColumns::Vector::const_iterator aEnd = aCols->get().end(); 
+        OSQLColumns::Vector::const_iterator aEnd = aCols->get().end();
 		for(OSQLColumns::Vector::const_iterator aIter = aCols->get().begin(); aIter != aEnd;++aIter)
 			aNames.push_back(getString((*aIter)->getPropertyValue(PROPERTY_NAME)));
 		m_aCurrentColumns[ParameterColumns] = new OPrivateColumns(aCols,m_xMetaData->supportsMixedCaseQuotedIdentifiers(),*this,m_aMutex,aNames,sal_True);
@@ -1453,7 +1453,7 @@ Reference< XIndexAccess > OSingleSelectQueryComposer::setCurrentColumns( EColumn
 	if ( !m_aCurrentColumns[_eType] )
 	{
 		::std::vector< ::rtl::OUString> aNames;
-        OSQLColumns::Vector::const_iterator aEnd = _rCols->get().end(); 
+        OSQLColumns::Vector::const_iterator aEnd = _rCols->get().end();
 		for(OSQLColumns::Vector::const_iterator aIter = _rCols->get().begin(); aIter != aEnd;++aIter)
 			aNames.push_back(getString((*aIter)->getPropertyValue(PROPERTY_NAME)));
 		m_aCurrentColumns[_eType] = new OPrivateColumns(_rCols,m_xMetaData->supportsMixedCaseQuotedIdentifiers(),*this,m_aMutex,aNames,sal_True);
@@ -1513,7 +1513,7 @@ namespace
         ::rtl::OUString sName = rComposedName.trim();
         ::rtl::OUString sColumnName;
         sal_Int32 nPos, nRPos = 0;
-        
+
         for (;;)
         {
             nPos = sName.indexOf( rQuoteString, nRPos );
@@ -1540,10 +1540,10 @@ namespace
         }
         return sColumnName.isEmpty() ? rComposedName : sColumnName;
     }
-    
+
 	::rtl::OUString lcl_getCondition(const Sequence< Sequence< PropertyValue > >& filter,
             const OPredicateInputController& i_aPredicateInputController,
-            const Reference< XNameAccess >& i_xSelectColumns, 
+            const Reference< XNameAccess >& i_xSelectColumns,
             const ::rtl::OUString& rQuoteString )
 	{
 		::rtl::OUStringBuffer sRet;
@@ -1665,7 +1665,7 @@ void OSingleSelectQueryComposer::setConditionByColumn( const Reference< XPropert
         aSQL.append( ::dbtools::quoteName( aQuote, aName ) );
     }
 
-    
+
 	if ( aValue.hasValue() )
 	{
 		if(  !m_xTypeConverter.is() )
@@ -1677,7 +1677,7 @@ void OSingleSelectQueryComposer::setConditionByColumn( const Reference< XPropert
             ::rtl::OUString sEmpty;
             lcl_addFilterCriteria_throw(filterOperator,sEmpty,aSQL);
         }
-        
+
 		switch(nType)
 		{
 			case DataType::VARCHAR:

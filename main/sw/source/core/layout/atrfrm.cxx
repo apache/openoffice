@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -690,7 +690,7 @@ void SwFmtPageDesc::SwClientNotify( const SwModify&, const SfxHint& rHint )
                 RegisterToPageDesc( *pDesc );
             }
         }
-        else	
+        else
             // there could be an Undo-copy
             RegisterToPageDesc( *pDesc );
     }
@@ -881,7 +881,7 @@ int SwFmtCol::operator==( const SfxPoolItem& rAttr ) const
 		  eAdj		 		 == rCmp.GetLineAdj() &&
 		  nWidth  	 		 == rCmp.GetWishWidth() &&
 		  bOrtho  			 == rCmp.IsOrtho() &&
-		  aColumns.Count() == rCmp.GetNumCols() && 
+		  aColumns.Count() == rCmp.GetNumCols() &&
 		  aWidthAdjustValue == rCmp.GetAdjustValue()
          ) )
 		return 0;
@@ -2490,10 +2490,10 @@ SfxPoolItem* SwHeaderAndFooterEatSpacingItem::Clone( SfxItemPool* ) const
 TYPEINIT1( SwFrmFmt, SwFmt );
 IMPL_FIXEDMEMPOOL_NEWDEL_DLL( SwFrmFmt, 20, 20 )
 
-SwFrmFmt::SwFrmFmt( 
-    SwAttrPool& rPool, 
+SwFrmFmt::SwFrmFmt(
+    SwAttrPool& rPool,
     const sal_Char* pFmtNm,
-    SwFrmFmt *pDrvdFrm, 
+    SwFrmFmt *pDrvdFrm,
     sal_uInt16 nFmtWhich,
     const sal_uInt16* pWhichRange)
 :   SwFmt(rPool, pFmtNm, (pWhichRange ? pWhichRange : aFrmFmtSetRange), pDrvdFrm, nFmtWhich),
@@ -2503,10 +2503,10 @@ SwFrmFmt::SwFrmFmt(
 {
 }
 
-SwFrmFmt::SwFrmFmt( 
-    SwAttrPool& rPool, 
+SwFrmFmt::SwFrmFmt(
+    SwAttrPool& rPool,
     const String &rFmtNm,
-    SwFrmFmt *pDrvdFrm, 
+    SwFrmFmt *pDrvdFrm,
     sal_uInt16 nFmtWhich,
     const sal_uInt16* pWhichRange)
 :   SwFmt(rPool, rFmtNm, (pWhichRange ? pWhichRange : aFrmFmtSetRange), pDrvdFrm, nFmtWhich),
@@ -2592,7 +2592,7 @@ void SwFrmFmt::RegisterToFormat( SwFmt& rFmt )
 {
     rFmt.Add( this );
 }
-    
+
 //Vernichtet alle Frms, die in aDepend angemeldet sind.
 
 void SwFrmFmt::DelFrms()
@@ -3193,7 +3193,7 @@ SwHandleAnchorNodeChg::SwHandleAnchorNodeChg( SwFlyFrmFmt& _rFlyFrmFmt,
             if ( nOldNumOfAnchFrm != nNewNumOfAnchFrm )
             {
                 // delete existing fly frames except <_pKeepThisFlyFrm>
-                SwIterator<SwFrm,SwFmt> aIter( mrFlyFrmFmt );  
+                SwIterator<SwFrm,SwFmt> aIter( mrFlyFrmFmt );
                 SwFrm* pFrm = aIter.First();
                 if ( pFrm )
                 {

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -101,7 +101,7 @@ Sequence< ScriptEventDescriptor >
 lcl_stripVbaEvents( const Sequence< ScriptEventDescriptor >& sEvents )
 {
 	Sequence< ScriptEventDescriptor > sStripped( sEvents.getLength() );
-	
+
 	const ScriptEventDescriptor* pDesc = sEvents.getConstArray();
 	const ScriptEventDescriptor* pEnd = ( pDesc + sEvents.getLength() );
 	sal_Int32 nCopied = 0;
@@ -134,7 +134,7 @@ void OInterfaceContainer::impl_addVbEvents_nolck_nothrow(  const sal_Int32 i_nIn
                 break;
 
             ::osl::MutexGuard aGuard( m_rMutex );
-            bool hasVBABindings = lcl_hasVbaEvents( m_xEventAttacher->getScriptEvents( i_nIndex ) );  
+            bool hasVBABindings = lcl_hasVbaEvents( m_xEventAttacher->getScriptEvents( i_nIndex ) );
 			if ( hasVBABindings )
 				break;
 
@@ -294,7 +294,7 @@ namespace
 		_rSave.reserve( _nItemCount );
 
 		// copy the events
-        for (sal_Int32 i=0; i<_nItemCount; ++i) 
+        for (sal_Int32 i=0; i<_nItemCount; ++i)
             _rSave.push_back(_rxManager->getScriptEvents( i ));
 	}
 
@@ -883,19 +883,19 @@ void OInterfaceContainer::implInsert(sal_Int32 _nIndex, const Reference< XProper
 	{
 	    Reference< XEventAttacherManager > xMgr ( pElementMetaData->xInterface, UNO_QUERY );
 	    if ( xMgr.is() )
-	    { 
+	    {
 		    OInterfaceContainer* pIfcMgr = dynamic_cast< OInterfaceContainer* >( xMgr.get() );
 		    sal_Int32 nLen = pIfcMgr->getCount();
 		    for ( sal_Int32 i = 0; (i < nLen) && pIfcMgr ; ++i )
-		    {	
+		    {
 			    // add fake events to the control at index i
 			    pIfcMgr->impl_addVbEvents_nolck_nothrow( i );
-		    }	
+		    }
 	    }
 	    else
 	    {
 		    // add fake events to the control at index i
-		    impl_addVbEvents_nolck_nothrow( _nIndex );	
+		    impl_addVbEvents_nolck_nothrow( _nIndex );
 	    }
     }
 

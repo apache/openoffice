@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -37,7 +37,7 @@
 using namespace rtl;
 
 sal_Bool produceAllTypes(const OString& typeName,
-						 TypeManager& typeMgr, 
+						 TypeManager& typeMgr,
 						 TypeDependency& typeDependencies,
 						 CunoOptions* pOptions,
 						 sal_Bool bFullScope)
@@ -45,18 +45,18 @@ sal_Bool produceAllTypes(const OString& typeName,
 {
 	if (!produceType(typeName, typeMgr,	typeDependencies, pOptions))
 	{
-		fprintf(stderr, "%s ERROR: %s\n", 
-				pOptions->getProgramName().getStr(), 
+		fprintf(stderr, "%s ERROR: %s\n",
+				pOptions->getProgramName().getStr(),
 				OString("cannot dump Type '" + typeName + "'").getStr());
 		exit(99);
 	}
 
 	RegistryKey	typeKey = typeMgr.getTypeKey(typeName);
 	RegistryKeyNames subKeys;
-	
+
 	if (typeKey.getKeyNames(OUString(), subKeys))
 		return sal_False;
-	
+
 	OString tmpName;
 	for (sal_uInt32 i=0; i < subKeys.getLength(); i++)
 	{
@@ -77,15 +77,15 @@ sal_Bool produceAllTypes(const OString& typeName,
 				return sal_False;
 		}
 	}
-	
-	return sal_True;			
+
+	return sal_True;
 }
 
 SAL_IMPLEMENT_MAIN_WITH_ARGS(argc, argv)
 {
 	CunoOptions options;
 
-	try 
+	try
 	{
 		if (!options.initOptions(argc, argv))
 		{
@@ -100,7 +100,7 @@ SAL_IMPLEMENT_MAIN_WITH_ARGS(argc, argv)
 
 	RegistryTypeManager typeMgr;
 	TypeDependency		typeDependencies;
-	
+
 	if (!typeMgr.init(!options.isValid("-T"), options.getInputFiles()))
 	{
 		fprintf(stderr, "%s : init registries failed, check your registry files.\n", options.getProgramName().getStr());
@@ -112,7 +112,7 @@ SAL_IMPLEMENT_MAIN_WITH_ARGS(argc, argv)
 		typeMgr.setBase(options.getOption("-B"));
 	}
 
-	try 
+	try
 	{
 		if (options.isValid("-T"))
 		{
@@ -150,8 +150,8 @@ SAL_IMPLEMENT_MAIN_WITH_ARGS(argc, argv)
 
 				if (!ret)
 				{
-					fprintf(stderr, "%s ERROR: %s\n", 
-							options.getProgramName().getStr(), 
+					fprintf(stderr, "%s ERROR: %s\n",
+							options.getProgramName().getStr(),
 							OString("cannot dump Type '" + typeName + "'").getStr());
 					exit(99);
 				}
@@ -161,8 +161,8 @@ SAL_IMPLEMENT_MAIN_WITH_ARGS(argc, argv)
 			// produce all types
 			if (!produceAllTypes("/", typeMgr, typeDependencies, &options, sal_True))
 			{
-				fprintf(stderr, "%s ERROR: %s\n", 
-						options.getProgramName().getStr(), 
+				fprintf(stderr, "%s ERROR: %s\n",
+						options.getProgramName().getStr(),
 						"an error occurs while dumping all types.");
 				exit(99);
 			}
@@ -170,8 +170,8 @@ SAL_IMPLEMENT_MAIN_WITH_ARGS(argc, argv)
 	}
 	catch( CannotDumpException& e)
 	{
-		fprintf(stderr, "%s ERROR: %s\n", 
-				options.getProgramName().getStr(), 
+		fprintf(stderr, "%s ERROR: %s\n",
+				options.getProgramName().getStr(),
 				e.m_message.getStr());
 		exit(99);
 	}

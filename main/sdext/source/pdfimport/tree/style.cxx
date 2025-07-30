@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -45,7 +45,7 @@ StyleContainer::StyleContainer() :
 sal_Int32 StyleContainer::impl_getStyleId( const Style& rStyle, bool bSubStyle )
 {
     sal_Int32 nRet = -1;
-    
+
     // construct HashedStyle to find or insert
     HashedStyle aSearchStyle;
     aSearchStyle.Name                   = rStyle.Name;
@@ -54,10 +54,10 @@ sal_Int32 StyleContainer::impl_getStyleId( const Style& rStyle, bool bSubStyle )
     aSearchStyle.ContainedElement       = rStyle.ContainedElement;
     for( unsigned int n = 0; n < rStyle.SubStyles.size(); ++n )
         aSearchStyle.SubStyles.push_back( impl_getStyleId( *rStyle.SubStyles[n], true ) );
-         
+
     std::hash_map< HashedStyle, sal_Int32, StyleHash >::iterator it =
         m_aStyleToId.find( aSearchStyle );
-    
+
     if( it != m_aStyleToId.end() )
     {
         nRet = it->second;
@@ -127,7 +127,7 @@ sal_Int32 StyleContainer::setProperties( sal_Int32 nStyleId, const PropertyMap& 
             aSearchStyle.ContainedElement       = it->second.ContainedElement;
             aSearchStyle.SubStyles              = it->second.SubStyles;
             aSearchStyle.IsSubStyle             = it->second.IsSubStyle;
-            
+
             // find out whether this new style already exists
             std::hash_map< HashedStyle, sal_Int32, StyleHash >::iterator new_it =
                 m_aStyleToId.find( aSearchStyle );
@@ -154,13 +154,13 @@ sal_Int32 StyleContainer::setProperties( sal_Int32 nStyleId, const PropertyMap& 
 OUString StyleContainer::getStyleName( sal_Int32 nStyle ) const
 {
     OUStringBuffer aRet( 64 );
-    
+
     std::hash_map< sal_Int32, HashedStyle >::const_iterator style_it =
         m_aIdToStyle.find( nStyle );
     if( style_it != m_aIdToStyle.end() )
     {
         const HashedStyle& rStyle = style_it->second;
-        
+
         PropertyMap::const_iterator name_it = rStyle.Properties.find( USTR("style:name") );
         if( name_it != rStyle.Properties.end() )
             aRet.append( name_it->second );
@@ -188,8 +188,8 @@ OUString StyleContainer::getStyleName( sal_Int32 nStyle ) const
     return aRet.makeStringAndClear();
 }
 
-void StyleContainer::impl_emitStyle( sal_Int32           nStyleId, 
-                                     EmitContext&        rContext, 
+void StyleContainer::impl_emitStyle( sal_Int32           nStyleId,
+                                     EmitContext&        rContext,
                                      ElementTreeVisitor& rContainedElemVisitor )
 {
     std::hash_map< sal_Int32, HashedStyle >::const_iterator it = m_aIdToStyle.find( nStyleId );
@@ -206,7 +206,7 @@ void StyleContainer::impl_emitStyle( sal_Int32           nStyleId,
         if( !rStyle.Contents.isEmpty() )
             rContext.rEmitter.write( rStyle.Contents );
         if( rStyle.ContainedElement )
-            rStyle.ContainedElement->visitedBy( rContainedElemVisitor, 
+            rStyle.ContainedElement->visitedBy( rContainedElemVisitor,
                                                 std::list<Element*>::iterator() );
         rContext.rEmitter.endTag( rStyle.Name.getStr() );
     }
@@ -229,14 +229,14 @@ void StyleContainer::emit( EmitContext&        rContext,
                 aAutomaticStyleSection.push_back( it->first );
         }
     }
-    
+
     if( ! aMasterPageSection.empty() )
         std::stable_sort( aMasterPageSection.begin(), aMasterPageSection.end(), StyleIdNameSort(&m_aIdToStyle) );
     if( ! aAutomaticStyleSection.empty() )
         std::stable_sort( aAutomaticStyleSection.begin(), aAutomaticStyleSection.end(), StyleIdNameSort(&m_aIdToStyle) );
     if( ! aOfficeStyleSection.empty() )
         std::stable_sort( aOfficeStyleSection.begin(), aOfficeStyleSection.end(), StyleIdNameSort(&m_aIdToStyle) );
-    
+
     int n = 0, nElements = 0;
     rContext.rEmitter.beginTag( "office:styles", PropertyMap() );
     for( n = 0, nElements = aOfficeStyleSection.size(); n < nElements; n++ )

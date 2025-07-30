@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -424,7 +424,7 @@ void ScViewData::InitData( ScDocument* pDocument )
 //UNUSED2008-05          DBG_ERROR("ScViewData::InitFrom mit NULL");
 //UNUSED2008-05          return;
 //UNUSED2008-05      }
-//UNUSED2008-05  
+//UNUSED2008-05
 //UNUSED2008-05      aScrSize    = pRef->aScrSize;
 //UNUSED2008-05      nTabNo      = pRef->nTabNo;
 //UNUSED2008-05      eDefZoomType = pRef->eDefZoomType;
@@ -434,7 +434,7 @@ void ScViewData::InitData( ScDocument* pDocument )
 //UNUSED2008-05      aDefPageZoomY = pRef->aDefPageZoomY;
 //UNUSED2008-05      bPagebreak  = pRef->bPagebreak;
 //UNUSED2008-05      aLogicMode  = pRef->aLogicMode;
-//UNUSED2008-05  
+//UNUSED2008-05
 //UNUSED2008-05      SetGridMode     ( pRef->IsGridMode() );
 //UNUSED2008-05      SetSyntaxMode   ( pRef->IsSyntaxMode() );
 //UNUSED2008-05      SetHeaderMode   ( pRef->IsHeaderMode() );
@@ -442,7 +442,7 @@ void ScViewData::InitData( ScDocument* pDocument )
 //UNUSED2008-05      SetVScrollMode  ( pRef->IsVScrollMode() );
 //UNUSED2008-05      SetHScrollMode  ( pRef->IsHScrollMode() );
 //UNUSED2008-05      SetOutlineMode  ( pRef->IsOutlineMode() );
-//UNUSED2008-05  
+//UNUSED2008-05
 //UNUSED2008-05      for (SCTAB i=0; i<=MAXTAB; i++)
 //UNUSED2008-05      {
 //UNUSED2008-05          delete pTabData[i];
@@ -454,7 +454,7 @@ void ScViewData::InitData( ScDocument* pDocument )
 //UNUSED2008-05      pThisTab = pTabData[nTabNo];
 //UNUSED2008-05      CalcPPT();
 //UNUSED2008-05  }
-//UNUSED2008-05  
+//UNUSED2008-05
 //UNUSED2008-05  void ScViewData::SetDocShell( ScDocShell* pShell )
 //UNUSED2008-05  {
 //UNUSED2008-05      pDocShell = pShell;
@@ -619,7 +619,7 @@ void ScViewData::SetZoomType( SvxZoomType eNew, std::vector< SCTAB >& tabs )
         {
             if ( pTabData[i] )
                 pTabData[i]->eZoomType = eNew;
-        } 
+        }
         eDefZoomType = eNew;
     }
     else
@@ -646,7 +646,7 @@ void ScViewData::SetZoomType( SvxZoomType eNew, sal_Bool bAll )
             if ( aMarkData.GetTableSelect(i)  )
                 vTabs.push_back( i );
         }
-    } 
+    }
     SetZoomType( eNew, vTabs );
 }
 
@@ -735,7 +735,7 @@ void ScViewData::SetZoom( const Fraction& rNewX, const Fraction& rNewY, sal_Bool
             if ( aMarkData.GetTableSelect(i)  )
                 vTabs.push_back( i );
         }
-    } 
+    }
     SetZoom( rNewX, rNewY, vTabs );
 }
 
@@ -1702,7 +1702,7 @@ SCROW ScViewData::CellsAtY( SCsROW nPosY, SCsROW nDir, ScVSplitPos eWhichY, sal_
         nY = nPosY;
         long nScrPosY = 0;
         AddPixelsWhile( nScrPosY, nScrSizeY, nY, MAXROW, nPPTY, pDoc, nTabNo);
-        // Original loop ended on last evaluated +1 or if that was MAXROW even 
+        // Original loop ended on last evaluated +1 or if that was MAXROW even
         // on MAXROW+2.
         nY += (nY == MAXROW ? 2 : 1);
         nY -= nPosY;
@@ -1713,7 +1713,7 @@ SCROW ScViewData::CellsAtY( SCsROW nPosY, SCsROW nDir, ScVSplitPos eWhichY, sal_
         nY = nPosY-1;
         long nScrPosY = 0;
         AddPixelsWhileBackward( nScrPosY, nScrSizeY, nY, 0, nPPTY, pDoc, nTabNo);
-        // Original loop ended on last evaluated -1 or if that was 0 even on 
+        // Original loop ended on last evaluated -1 or if that was 0 even on
         // -2.
         nY -= (nY == 0 ? 2 : 1);
         nY = (nPosY-1)-nY;
@@ -1747,7 +1747,7 @@ SCROW ScViewData::PrevCellsY( ScVSplitPos eWhichY ) const
 //UNUSED2008-05  {
 //UNUSED2008-05      return CellsAtX( MAXCOL+1, -1, eWhichX, SC_SIZE_NONE );
 //UNUSED2008-05  }
-//UNUSED2008-05  
+//UNUSED2008-05
 //UNUSED2008-05  SCROW ScViewData::LastCellsY( ScVSplitPos eWhichY ) const
 //UNUSED2008-05  {
 //UNUSED2008-05      return CellsAtY( MAXROW+1, -1, eWhichY, SC_SIZE_NONE );
@@ -1769,7 +1769,7 @@ sal_Bool ScViewData::GetMergeSizePixel( SCCOL nX, SCROW nY, long& rSizeXPix, lon
         {
             SCROW nLastRow = nRow;
             if (pDoc->RowHidden(nRow, nTabNo, NULL, &nLastRow))
-            {    
+            {
                 nRow = nLastRow;
                 continue;
             }
@@ -2585,7 +2585,7 @@ void ScViewData::ReadExtOptions( const ScExtDocOptions& rDocOpt )
                     double nFactor = pDocShell->GetOutputFactor();
                     aPixel.X() = (long)( aPixel.X() * nFactor + 0.5 );
                 }
-                
+
                 bHSplit = bHSplit && aPixel.X() > 0;
                 bVSplit = bVSplit && aPixel.Y() > 0;
                 if( bHSplit )
@@ -3103,7 +3103,7 @@ ScAddress ScViewData::GetCurPos() const
 
 
 // static
-void ScViewData::AddPixelsWhile( long & rScrY, long nEndPixels, SCROW & rPosY, 
+void ScViewData::AddPixelsWhile( long & rScrY, long nEndPixels, SCROW & rPosY,
         SCROW nEndRow, double nPPTY, const ScDocument * pDoc, SCTAB nTabNo )
 {
     SCROW nRow = rPosY;
@@ -3144,7 +3144,7 @@ void ScViewData::AddPixelsWhile( long & rScrY, long nEndPixels, SCROW & rPosY,
 
 // static
 void ScViewData::AddPixelsWhileBackward( long & rScrY, long nEndPixels,
-        SCROW & rPosY, SCROW nStartRow, double nPPTY, const ScDocument * pDoc, 
+        SCROW & rPosY, SCROW nStartRow, double nPPTY, const ScDocument * pDoc,
         SCTAB nTabNo )
 {
     SCROW nRow = rPosY;

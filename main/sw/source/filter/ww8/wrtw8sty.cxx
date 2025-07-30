@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -275,7 +275,7 @@ void MSWordStyles::BuildStylesTable()
         pFmt = (SwFmt*)rArr[n];
         pFmtA[ BuildGetSlot( *pFmt ) ] = pFmt;
     }
-    
+
     const SvPtrarr& rArr2 = *m_rExport.pDoc->GetTxtFmtColls();   // dann TxtFmtColls
     // das Default-TextStyle ( 0 ) wird nicht mit ausgegeben !
     for( n = 1; n < rArr2.Count(); n++ )
@@ -519,12 +519,12 @@ void MSWordStyles::OutputStyle( SwFmt* pFmt, sal_uInt16 nPos )
     {
         bool bFmtColl;
         sal_uInt16 nBase, nWwNext;
-        
+
         GetStyleData( pFmt, bFmtColl, nBase, nWwNext );
 
         m_rExport.AttrOutput().StartStyle( pFmt->GetName(), bFmtColl,
                 nBase, nWwNext, GetWWId( *pFmt ), nPos );
-        
+
         if ( bFmtColl )
             WriteProperties( pFmt, true, nPos, nBase==0xfff );           // UPX.papx
 
@@ -1166,7 +1166,7 @@ void MSWordSections::SetFooterFlag( sal_uInt8& rHeadFootFlags, const SwFmt& rFmt
 }
 
 void WW8_WrPlcSepx::OutHeaderFooter( WW8Export& rWrt, bool bHeader,
-				     const SwFmt& rFmt, sal_uLong& rCpPos, sal_uInt8 nHFFlags, 
+				     const SwFmt& rFmt, sal_uLong& rCpPos, sal_uInt8 nHFFlags,
 				     sal_uInt8 nFlag,  sal_uInt8 nBreakCode)
 {
     if ( nFlag & nHFFlags )
@@ -1496,10 +1496,10 @@ void MSWordExportBase::SectionProperties( const WW8_SepInfo& rSepInfo, WW8_PdAtt
         pPd = &const_cast<const SwDoc *>( pDoc )->GetPageDesc( 0 );
 
     pAktPageDesc = pPd;
-    
+
     if ( !pPd )
         return;
-    
+
     bool bOldPg = bOutPageDescs;
     bOutPageDescs = true;
 
@@ -1868,7 +1868,7 @@ void MSWordExportBase::WriteHeaderFooterText( const SwFmt& rFmt, bool bHeader )
         ASSERT( rFt.GetFooterFmt(), "Footer text is not here" );
         pCntnt = &rFt.GetFooterFmt()->GetCntnt();
     }
-    
+
     const SwNodeIndex* pSttIdx = pCntnt->GetCntntIdx();
 
     if ( pSttIdx )
@@ -2064,7 +2064,7 @@ bool WW8_WrPlcSubDoc::WriteGenericTxt( WW8Export& rWrt, sal_uInt8 nTTyp,
 								   pNdIdx->GetNode().EndOfSectionIndex(), nTTyp );
 					}
 				}
-                
+
                 // CR at end of one textbox text ( otherwise WW gpft :-( )
                 rWrt.WriteStringAsPara( aEmptyStr );
             }
@@ -2228,7 +2228,7 @@ void WW8_WrPlcSubDoc::WriteGenericPlc( WW8Export& rWrt, sal_uInt8 nTTyp,
 								pChn = &pChn->GetNext()->GetChain();
 							}
 						}
-					}                    
+					}
                     // long cTxbx / iNextReuse
                     SwWW8Writer::WriteLong( *rWrt.pTableStrm, nCnt );
                     // long cReusable

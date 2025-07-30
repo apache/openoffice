@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -32,21 +32,21 @@
 #include "OutlineView.hxx"
 #include <svx/sdrpaintwindow.hxx>
 
-namespace accessibility 
+namespace accessibility
 {
 
     AccessibleOutlineEditSource::AccessibleOutlineEditSource(
-        SdrOutliner& 	rOutliner, 
-        SdrView& 		rView, 
-        OutlinerView& rOutlView, 
-        const ::Window& rViewWindow ) 
+        SdrOutliner& 	rOutliner,
+        SdrView& 		rView,
+        OutlinerView& rOutlView,
+        const ::Window& rViewWindow )
         : mrView( rView ),
           mrWindow( rViewWindow ),
           mpOutliner( &rOutliner ),
           mpOutlinerView( &rOutlView ),
           mTextForwarder( rOutliner, 0 ),
           mViewForwarder( rOutlView )
-    {       
+    {
         // register as listener - need to broadcast state change messages
         StartListening(rOutliner);
     }
@@ -68,7 +68,7 @@ namespace accessibility
         // TODO: maybe suboptimal
         if( IsValid() )
 		{
-			// Moved here to make sure that 
+			// Moved here to make sure that
 			// the NotifyHandler was set on the current object.
 			mpOutliner->SetNotifyHdl( LINK(this, AccessibleOutlineEditSource, NotifyHdl) );
             return &mTextForwarder;
@@ -100,7 +100,7 @@ namespace accessibility
 
     void AccessibleOutlineEditSource::UpdateData()
     {
-        // NOOP, since we're always working on the 'real' outliner, 
+        // NOOP, since we're always working on the 'real' outliner,
         // i.e. changes are immediately reflected on the screen
     }
 
@@ -143,20 +143,20 @@ namespace accessibility
             return mrWindow.LogicToPixel( aVisArea, aMapMode );
         }
 
-        return Rectangle();        
+        return Rectangle();
     }
 
     Point AccessibleOutlineEditSource::LogicToPixel( const Point& rPoint, const MapMode& rMapMode ) const
     {
         if( IsValid() && mrView.GetModel() )
         {
-            Point aPoint( OutputDevice::LogicToLogic( rPoint, rMapMode, 
+            Point aPoint( OutputDevice::LogicToLogic( rPoint, rMapMode,
                                                       MapMode(mrView.GetModel()->GetScaleUnit()) ) );
             MapMode aMapMode(mrWindow.GetMapMode());
             aMapMode.SetOrigin(Point());
             return mrWindow.LogicToPixel( aPoint, aMapMode );
         }
-    
+
         return Point();
     }
 
@@ -167,11 +167,11 @@ namespace accessibility
             MapMode aMapMode(mrWindow.GetMapMode());
             aMapMode.SetOrigin(Point());
             Point aPoint( mrWindow.PixelToLogic( rPoint, aMapMode ) );
-            return OutputDevice::LogicToLogic( aPoint, 
-                                               MapMode(mrView.GetModel()->GetScaleUnit()), 
+            return OutputDevice::LogicToLogic( aPoint,
+                                               MapMode(mrView.GetModel()->GetScaleUnit()),
                                                rMapMode );
         }
-    
+
         return Point();
     }
 
@@ -214,11 +214,11 @@ namespace accessibility
         if( aNotify )
         {
             ::std::auto_ptr< SfxHint > aHint( SvxEditSourceHelper::EENotification2Hint( aNotify) );
-            
+
             if( aHint.get() )
                 Broadcast( *aHint.get() );
         }
-        
+
         return 0;
     }
 

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -65,7 +65,7 @@ bool lcl_isRightAngledAxesSetAndSupported( const Reference< beans::XPropertySet 
         if(bRightAngledAxes)
         {
             uno::Reference< chart2::XDiagram > xDiagram( xSceneProperties, uno::UNO_QUERY );
-            if( ChartTypeHelper::isSupportingRightAngledAxes( 
+            if( ChartTypeHelper::isSupportingRightAngledAxes(
                     DiagramHelper::getChartTypeByIndex( xDiagram, 0 ) ) )
             {
                 return true;
@@ -163,7 +163,7 @@ bool lcl_isLightScheme( const uno::Reference< beans::XPropertySet >& xDiagramPro
         return false;
 
     uno::Reference< chart2::XDiagram > xDiagram( xDiagramProps, uno::UNO_QUERY );
-    uno::Reference< chart2::XChartType > xChartType( DiagramHelper::getChartTypeByIndex( xDiagram, 0 ) );    
+    uno::Reference< chart2::XChartType > xChartType( DiagramHelper::getChartTypeByIndex( xDiagram, 0 ) );
 
     sal_Int32 nColor = 0;
     xDiagramProps->getPropertyValue( C2U( UNO_NAME_3D_SCENE_LIGHTCOLOR_2 ) ) >>= nColor;
@@ -188,7 +188,7 @@ bool lcl_isLightScheme( const uno::Reference< beans::XPropertySet >& xDiagramPro
         xDiagramProps->getPropertyValue( C2U("RightAngledAxes")) >>= bRightAngledAxes;
         if(!bRightAngledAxes)
         {
-            if( ChartTypeHelper::isSupportingRightAngledAxes( 
+            if( ChartTypeHelper::isSupportingRightAngledAxes(
                     DiagramHelper::getChartTypeByIndex( xDiagram, 0 ) ) )
             {
                 ::basegfx::B3DHomMatrix aRotation( lcl_getCompleteRotationMatrix( xDiagramProps ) );
@@ -273,7 +273,7 @@ bool lcl_isSimpleScheme( drawing::ShadeMode aShadeMode
         return false;
     if(nObjectLines==0)
     {
-        uno::Reference< chart2::XChartType > xChartType( DiagramHelper::getChartTypeByIndex( xDiagram, 0 ) );    
+        uno::Reference< chart2::XChartType > xChartType( DiagramHelper::getChartTypeByIndex( xDiagram, 0 ) );
         return ChartTypeHelper::noBordersForSimpleScheme( xChartType );
     }
     if(nObjectLines!=1)
@@ -298,7 +298,7 @@ void lcl_setSimpleScheme( drawing::ShadeMode& rShadeMode
     rShadeMode = drawing::ShadeMode_FLAT;
     rnRoundedEdges = 0;
 
-    uno::Reference< chart2::XChartType > xChartType( DiagramHelper::getChartTypeByIndex( xDiagram, 0 ) );    
+    uno::Reference< chart2::XChartType > xChartType( DiagramHelper::getChartTypeByIndex( xDiagram, 0 ) );
     rnObjectLines = ChartTypeHelper::noBordersForSimpleScheme( xChartType ) ? 0 : 1;
 }
 
@@ -435,7 +435,7 @@ void ThreeDHelper::convertElevationRotationDegToXYZAngleRad(
 
     double E = F_PI*nElevationDeg/180; //elevation in Rad
     double R = F_PI*nRotationDeg/180; //rotation in Rad
-    
+
     if( (nRotationDeg == 0 || nRotationDeg == 180 )
         && ( nElevationDeg == 90 || nElevationDeg == 270 ) )
     {
@@ -522,7 +522,7 @@ void ThreeDHelper::convertElevationRotationDegToXYZAngleRad(
         x = E;
         y = R;
         double f23 = cos(R)*sin(E);
-        if( (f23 * sin(x)) < 0.0 ) 
+        if( (f23 * sin(x)) < 0.0 )
             x *= -1.0; //todo ??
     }
     else if (nRotationDeg == 90 || nRotationDeg == 270)
@@ -556,7 +556,7 @@ void ThreeDHelper::convertElevationRotationDegToXYZAngleRad(
         double cy = cos(R)/cos(z);
         lcl_ensureIntervalMinus1To1(cy);
         y = acos(cy);
-        
+
         //element 12 in 23
         double fDenominator = cos(z)*(1.0-pow(sin(y),2));
         if(fDenominator==0.0)
@@ -614,7 +614,7 @@ void ThreeDHelper::convertXYZAngleRadToElevationRotationDeg(
     double& x = fXRad;
     double& y = fYRad;
     double& z = fZRad;
-    
+
     double f11 = cos(y)*cos(z);
 
     if( lcl_isSinZero(y) )
@@ -697,7 +697,7 @@ void ThreeDHelper::convertXYZAngleRadToElevationRotationDeg(
         }
         else if( lcl_isSinZero(z) )
         {
-            //sinY==0 sinZ==0 sinx!=0 cosx!=0 
+            //sinY==0 sinZ==0 sinx!=0 cosx!=0
             //element 13+11
             if( f11 > 0 )
                 R = 0.0;
@@ -797,7 +797,7 @@ void ThreeDHelper::convertXYZAngleRadToElevationRotationDeg(
             //cosY!=0 sinY!=0 sinX=0 sinZ!=0 cosZ!=0
             double f13 = cos(x)*cos(z)*sin(y);
             R = atan( f13/f11 );
-            
+
             if( f11<0 )
                 R+=F_PI;
 
@@ -897,7 +897,7 @@ void ThreeDHelper::convertXYZAngleRadToElevationRotationDeg(
         if(f22<0.0)
             E+=F_PI;
     }
-    
+
     rnElevationDeg = ::basegfx::fround( BaseGFXHelper::Rad2Deg( E ) );
     rnRotationDeg = ::basegfx::fround( BaseGFXHelper::Rad2Deg( R ) );
 }
@@ -1020,7 +1020,7 @@ void ThreeDHelper::setRotationAngleToDiagram(
     {
         //remind old rotation for adaption of light directions
         ::basegfx::B3DHomMatrix aInverseOldRotation( lcl_getInverseRotationMatrix( xSceneProperties ) );
-        
+
         ::basegfx::B3DHomMatrix aInverseCameraRotation;
         {
             ::basegfx::B3DTuple aR( BaseGFXHelper::GetRotationFromMatrix(
@@ -1045,7 +1045,7 @@ void ThreeDHelper::setRotationAngleToDiagram(
         sal_Bool bRightAngledAxes = sal_False;
         xSceneProperties->getPropertyValue( C2U("RightAngledAxes")) >>= bRightAngledAxes;
         uno::Reference< chart2::XDiagram > xDiagram( xSceneProperties, uno::UNO_QUERY );
-        if(!bRightAngledAxes || !ChartTypeHelper::isSupportingRightAngledAxes( 
+        if(!bRightAngledAxes || !ChartTypeHelper::isSupportingRightAngledAxes(
                     DiagramHelper::getChartTypeByIndex( xDiagram, 0 ) ) )
         {
             ::basegfx::B3DHomMatrix aNewRotation;
@@ -1402,7 +1402,7 @@ void ThreeDHelper::getRoundedEdgesAndObjectLines(
                         nCurrentRoundedEdges = -1;
                     }
                 }
-                
+
                 if( !bDifferentObjectLines )
                 {
                     drawing::LineStyle aCurrentLineStyle;

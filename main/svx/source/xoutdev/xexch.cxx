@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -106,7 +106,7 @@ SvStream& operator<<( SvStream& rOStm, const XFillExchangeData& rData )
 		sal_Size 			nFirstPos = rOStm.Tell();
 
 		rOStm << nItemCount;
-		
+
 		while( nWhich )
 		{
 			if( SFX_ITEM_SET == rData.pXFillAttrSetItem->GetItemSet().GetItemState( nWhich, sal_False, &pItem ) )
@@ -116,10 +116,10 @@ SvStream& operator<<( SvStream& rOStm, const XFillExchangeData& rData )
 
 				rOStm << nWhich << nItemVersion2;
 				pItem->Store( rOStm, nItemVersion2 );
-				
+
 				nItemCount++;
 			}
-			
+
 			nWhich = aIter.NextWhich();
 		}
 
@@ -158,7 +158,7 @@ SvStream& operator>>( SvStream& rIStm, XFillExchangeData& rData )
 		VersionCompat aCompat( rIStm, STREAM_READ );
 
 		rIStm >> nWhich >> nItemVersion;
-		
+
 		if( nWhich )
 		{
 			pNewItem = rData.pPool->GetDefaultItem( nWhich ).Create( rIStm, nItemVersion );
@@ -170,8 +170,8 @@ SvStream& operator>>( SvStream& rIStm, XFillExchangeData& rData )
 			}
 		}
 	}
-	
-	delete rData.pXFillAttrSetItem; 
+
+	delete rData.pXFillAttrSetItem;
 	rData.pXFillAttrSetItem = new XFillAttrSetItem( pSet );
 	rData.pPool = rData.pXFillAttrSetItem->GetItemSet().GetPool();
 

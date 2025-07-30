@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -61,7 +61,7 @@ namespace {
         ViewRedirector (void);
         virtual ~ViewRedirector (void);
         virtual drawinglayer::primitive2d::Primitive2DSequence createRedirectedPrimitive2DSequence(
-            const sdr::contact::ViewObjectContact& rOriginal, 
+            const sdr::contact::ViewObjectContact& rOriginal,
                 const sdr::contact::DisplayInfo& rDisplayInfo);
     };
 }
@@ -106,7 +106,7 @@ PreviewRenderer::~PreviewRenderer (void)
 
 
 Image PreviewRenderer::RenderPage (
-    const SdPage* pPage, 
+    const SdPage* pPage,
     const sal_Int32 nWidth,
     const String& rSubstitutionText,
     const bool bObeyHighContrastMode,
@@ -135,7 +135,7 @@ Image PreviewRenderer::RenderPage (
 
 
 Image PreviewRenderer::RenderPage (
-    const SdPage* pPage, 
+    const SdPage* pPage,
     Size aPixelSize,
     const String& rSubstitutionText,
     const bool bObeyHighContrastMode,
@@ -152,7 +152,7 @@ Image PreviewRenderer::RenderPage (
                 PaintPage(pPage, bDisplayPresentationObjects);
                 PaintSubstitutionText(rSubstitutionText);
                 PaintFrame();
-        
+
                 Size aSize (mpPreviewDevice->GetOutputSizePixel());
                 aPreview = mpPreviewDevice->GetBitmap (
                     mpPreviewDevice->PixelToLogic(Point(0,0)),
@@ -187,8 +187,8 @@ Image PreviewRenderer::RenderSubstitution (
         // Adjust contrast mode.
         const bool bUseContrast (
             Application::GetSettings().GetStyleSettings().GetHighContrastMode());
-        mpPreviewDevice->SetDrawMode (bUseContrast 
-            ? ViewShell::OUTPUT_DRAWMODE_CONTRAST 
+        mpPreviewDevice->SetDrawMode (bUseContrast
+            ? ViewShell::OUTPUT_DRAWMODE_CONTRAST
             : ViewShell::OUTPUT_DRAWMODE_COLOR);
 
         // Set a map mode that makes a typical substitution text completely
@@ -202,7 +202,7 @@ Image PreviewRenderer::RenderSubstitution (
         aMapMode.SetOrigin(mpPreviewDevice->PixelToLogic(
             Point(nFrameWidth,nFrameWidth),aMapMode));
         mpPreviewDevice->SetMapMode (aMapMode);
-    
+
         // Clear the background.
         const Rectangle aPaintRectangle (
             Point(0,0),
@@ -217,7 +217,7 @@ Image PreviewRenderer::RenderSubstitution (
         // Paint substitution text and a frame around it.
         PaintSubstitutionText (rSubstitutionText);
         PaintFrame();
-        
+
         const Size aSize (mpPreviewDevice->GetOutputSizePixel());
         aPreview = mpPreviewDevice->GetBitmap (
             mpPreviewDevice->PixelToLogic(Point(0,0)),
@@ -251,7 +251,7 @@ bool PreviewRenderer::Initialize (
 
         SetupOutputSize(*pPage, rPixelSize);
 
-        SdDrawDocument* pDocument 
+        SdDrawDocument* pDocument
             = static_cast<SdDrawDocument*>(pPage->GetModel());
         DrawDocShell* pDocShell = pDocument->GetDocSh();
 
@@ -263,8 +263,8 @@ bool PreviewRenderer::Initialize (
         // Adjust contrast mode.
         bool bUseContrast (bObeyHighContrastMode
             && Application::GetSettings().GetStyleSettings().GetHighContrastMode());
-        mpPreviewDevice->SetDrawMode (bUseContrast 
-            ? ViewShell::OUTPUT_DRAWMODE_CONTRAST 
+        mpPreviewDevice->SetDrawMode (bUseContrast
+            ? ViewShell::OUTPUT_DRAWMODE_CONTRAST
             : ViewShell::OUTPUT_DRAWMODE_COLOR);
         mpPreviewDevice->SetSettings(Application::GetSettings());
 
@@ -380,13 +380,13 @@ void PreviewRenderer::PaintSubstitutionText (const String& rSubstitutionText)
 
         // Paint the substitution text.
         Rectangle aTextBox (
-            Point(0,0), 
+            Point(0,0),
             mpPreviewDevice->PixelToLogic(
                 mpPreviewDevice->GetOutputSizePixel()));
-        sal_uInt16 nTextStyle = 
+        sal_uInt16 nTextStyle =
             TEXT_DRAW_CENTER
             | TEXT_DRAW_VCENTER
-            | TEXT_DRAW_MULTILINE 
+            | TEXT_DRAW_MULTILINE
             | TEXT_DRAW_WORDBREAK;
         mpPreviewDevice->DrawText (aTextBox, rSubstitutionText, nTextStyle);
 
@@ -418,7 +418,7 @@ void PreviewRenderer::PaintFrame (void)
 
 
 void PreviewRenderer::SetupOutputSize (
-    const SdPage& rPage, 
+    const SdPage& rPage,
     const Size& rFramePixelSize)
 {
     // First set the map mode to some arbitrary scale that is numerically
@@ -497,8 +497,8 @@ Image PreviewRenderer::ScaleBitmap (
         // Adjust contrast mode.
         bool bUseContrast = Application::GetSettings().GetStyleSettings().
             GetHighContrastMode();
-        mpPreviewDevice->SetDrawMode (bUseContrast 
-            ? ViewShell::OUTPUT_DRAWMODE_CONTRAST 
+        mpPreviewDevice->SetDrawMode (bUseContrast
+            ? ViewShell::OUTPUT_DRAWMODE_CONTRAST
             : ViewShell::OUTPUT_DRAWMODE_COLOR);
 
         // Set output size.
@@ -506,7 +506,7 @@ Image PreviewRenderer::ScaleBitmap (
         if (aSize.Width() <= 0)
             break;
         Size aFrameSize (
-            nWidth, 
+            nWidth,
             (long)((nWidth*1.0 * aSize.Height()) / aSize.Width() + 0.5));
         Size aPreviewSize (aFrameSize.Width()-2,aFrameSize.Height()-2);
         MapMode aMapMode (mpPreviewDevice->GetMapMode());
@@ -526,7 +526,7 @@ Image PreviewRenderer::ScaleBitmap (
         BitmapEx aScaledBitmap (rBitmapEx.GetBitmap());
         aScaledBitmap.Scale (aPreviewSize, BMP_SCALE_INTERPOLATE);
         mpPreviewDevice->DrawBitmap (
-            Point(1,1), 
+            Point(1,1),
             aPreviewSize,
             aScaledBitmap.GetBitmap());
 
@@ -582,7 +582,7 @@ ViewRedirector::~ViewRedirector (void)
 
 
 drawinglayer::primitive2d::Primitive2DSequence ViewRedirector::createRedirectedPrimitive2DSequence(
-	const sdr::contact::ViewObjectContact& rOriginal, 
+	const sdr::contact::ViewObjectContact& rOriginal,
 	const sdr::contact::DisplayInfo& rDisplayInfo)
 {
 	SdrObject* pObject = rOriginal.GetViewContact().TryToGetSdrObject();
@@ -607,7 +607,7 @@ drawinglayer::primitive2d::Primitive2DSequence ViewRedirector::createRedirectedP
         return drawinglayer::primitive2d::Primitive2DSequence();
 
     return sdr::contact::ViewObjectContactRedirector::createRedirectedPrimitive2DSequence(
-        rOriginal, 
+        rOriginal,
         rDisplayInfo);
 }
 

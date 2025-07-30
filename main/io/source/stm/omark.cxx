@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -673,20 +673,20 @@ sal_Int32 OMarkableInputStream::readSomeBytes(Sequence< sal_Int8 >& aData, sal_I
 			sal_Int32 nInBuffer = m_pBuffer->getSize() - m_nCurrentPos;
 			sal_Int32 nAdditionalBytesToRead = Min(nMaxBytesToRead-nInBuffer,m_input->available());
 			nAdditionalBytesToRead = Max(0 , nAdditionalBytesToRead );
-			
-			// read enough bytes into buffer 
+
+			// read enough bytes into buffer
 			if( 0 == nInBuffer ) {
-				nRead = m_input->readSomeBytes( aData , nMaxBytesToRead );	
+				nRead = m_input->readSomeBytes( aData , nMaxBytesToRead );
 			}
 			else if( nAdditionalBytesToRead ) {
-				nRead = m_input->readBytes( aData , nAdditionalBytesToRead );				
+				nRead = m_input->readBytes( aData , nAdditionalBytesToRead );
 			}
-			
+
 			if( nRead ) {
 				aData.realloc( nRead );
 				try
 				{
-					m_pBuffer->writeAt( m_pBuffer->getSize() , aData );	
+					m_pBuffer->writeAt( m_pBuffer->getSize() , aData );
 				}
 				catch( IRingBuffer_OutOfMemoryException & )
 				{
@@ -697,9 +697,9 @@ sal_Int32 OMarkableInputStream::readSomeBytes(Sequence< sal_Int8 >& aData, sal_I
 					throw BufferSizeExceededException();
 				}
 			}
-			
+
 			nBytesRead = Min( nMaxBytesToRead , nInBuffer + nRead );
-			
+
 			// now take everything from buffer !
 			m_pBuffer->readAt( m_nCurrentPos , aData , nBytesRead );
 
@@ -710,7 +710,7 @@ sal_Int32 OMarkableInputStream::readSomeBytes(Sequence< sal_Int8 >& aData, sal_I
 	{
 		throw NotConnectedException(
             OUString( RTL_CONSTASCII_USTRINGPARAM("MarkableInputStream::readSomeBytes NotConnectedException")) ,
-            *this );	
+            *this );
 	}
 	return nBytesRead;
 
@@ -719,8 +719,8 @@ sal_Int32 OMarkableInputStream::readSomeBytes(Sequence< sal_Int8 >& aData, sal_I
 
 
 void OMarkableInputStream::skipBytes(sal_Int32 nBytesToSkip)
-	throw (	NotConnectedException, 
-			BufferSizeExceededException, 
+	throw (	NotConnectedException,
+			BufferSizeExceededException,
 			RuntimeException)
 {
 	if ( nBytesToSkip < 0 )
@@ -729,10 +729,10 @@ void OMarkableInputStream::skipBytes(sal_Int32 nBytesToSkip)
 			*this
 		);
 
-	// this method is blocking 
+	// this method is blocking
 	sal_Int32 nRead;
 	Sequence<sal_Int8> seqDummy( nBytesToSkip );
-	
+
 	nRead = readBytes( seqDummy , nBytesToSkip );
 }
 
@@ -754,17 +754,17 @@ sal_Int32 OMarkableInputStream::available(void) throw (NotConnectedException, Ru
 }
 
 
-void OMarkableInputStream::closeInput(void) throw (NotConnectedException, RuntimeException) 
+void OMarkableInputStream::closeInput(void) throw (NotConnectedException, RuntimeException)
 {
 	if( m_bValidStream ) {
 		MutexGuard guard( m_mutex );
 
 		m_input->closeInput();
- 
+
 		setInputStream( Reference< XInputStream > () );
 		setPredecessor( Reference< XConnectable > () );
 		setSuccessor( Reference< XConnectable >() );
-		
+
 		delete m_pBuffer;
 		m_pBuffer = 0;
 		m_nCurrentPos = 0;
@@ -783,9 +783,9 @@ sal_Int32 OMarkableInputStream::createMark(void) 			throw (IOException, RuntimeE
 {
 	MutexGuard guard( m_mutex );
 	sal_Int32 nMark = m_nCurrentMark;
-		
+
 	m_mapMarks[nMark] = m_nCurrentPos;
-	
+
 	m_nCurrentMark ++;
 	return nMark;
 }
@@ -794,7 +794,7 @@ void OMarkableInputStream::deleteMark(sal_Int32 Mark) 		throw (IOException, Ille
 {
 	MutexGuard guard( m_mutex );
 	map<sal_Int32,sal_Int32,less<sal_Int32> >::iterator ii = m_mapMarks.find( Mark );
-	
+
 	if( ii == m_mapMarks.end() ) {
         OUStringBuffer buf( 128 );
         buf.appendAscii( "MarkableInputStream::deleteMark unknown mark (" );
@@ -804,18 +804,18 @@ void OMarkableInputStream::deleteMark(sal_Int32 Mark) 		throw (IOException, Ille
 	}
 	else {
 		m_mapMarks.erase( ii );
-		checkMarksAndFlush();		
-	}		
+		checkMarksAndFlush();
+	}
 }
 
 void OMarkableInputStream::jumpToMark(sal_Int32 nMark)
 	throw (IOException,
-		   IllegalArgumentException, 
+		   IllegalArgumentException,
 		   RuntimeException)
 {
 	MutexGuard guard( m_mutex );
 	map<sal_Int32,sal_Int32,less<sal_Int32> >::iterator ii = m_mapMarks.find( nMark );
-	
+
 	if( ii == m_mapMarks.end() )
 	{
         OUStringBuffer buf( 128 );
@@ -827,24 +827,24 @@ void OMarkableInputStream::jumpToMark(sal_Int32 nMark)
 	else
 	{
 		m_nCurrentPos = (*ii).second;
-	}	
+	}
 }
 
 void OMarkableInputStream::jumpToFurthest(void) 		throw (IOException, RuntimeException)
 {
 	MutexGuard guard( m_mutex );
-	m_nCurrentPos = m_pBuffer->getSize();	
-	checkMarksAndFlush();	
+	m_nCurrentPos = m_pBuffer->getSize();
+	checkMarksAndFlush();
 }
 
 sal_Int32 OMarkableInputStream::offsetToMark(sal_Int32 nMark)
- 	throw (IOException, 
+ 	throw (IOException,
 		   IllegalArgumentException,
 		   RuntimeException)
 {
 	MutexGuard guard( m_mutex );
 	map<sal_Int32,sal_Int32,less<sal_Int32> >::const_iterator ii = m_mapMarks.find( nMark );
-	
+
 	if( ii == m_mapMarks.end() )
 	{
         OUStringBuffer buf( 128 );
@@ -866,19 +866,19 @@ sal_Int32 OMarkableInputStream::offsetToMark(sal_Int32 nMark)
 void OMarkableInputStream::setInputStream(const Reference< XInputStream > & aStream)
 	throw (RuntimeException)
 {
-	
+
 	if( m_input != aStream ) {
 		m_input = aStream;
-		
+
 		Reference < XConnectable >  pred( m_input , UNO_QUERY );
 		setPredecessor( pred );
 	}
-	
-	m_bValidStream = m_input.is();	
-	
+
+	m_bValidStream = m_input.is();
+
 }
 
-Reference< XInputStream > OMarkableInputStream::getInputStream(void) throw (RuntimeException) 
+Reference< XInputStream > OMarkableInputStream::getInputStream(void) throw (RuntimeException)
 {
 	return m_input;
 }
@@ -894,7 +894,7 @@ void OMarkableInputStream::setSuccessor( const Reference< XConnectable > &r )
          /// store the reference for later use
          m_succ = r;
 
-         if( m_succ.is() ) { 
+         if( m_succ.is() ) {
               /// set this instance as the sink !
               m_succ->setPredecessor( Reference< XConnectable > (
 				  SAL_STATIC_CAST( XConnectable * , this ) ) );
@@ -904,7 +904,7 @@ void OMarkableInputStream::setSuccessor( const Reference< XConnectable > &r )
 
 Reference < XConnectable >  OMarkableInputStream::getSuccessor() throw (RuntimeException)
 {
-	return m_succ;	
+	return m_succ;
 }
 
 
@@ -918,7 +918,7 @@ void OMarkableInputStream::setPredecessor( const Reference < XConnectable >  &r 
 			m_pred->setSuccessor( Reference< XConnectable > (
 				SAL_STATIC_CAST( XConnectable * , this ) ) );
 		}
-	}	
+	}
 }
 Reference< XConnectable >  OMarkableInputStream::getPredecessor() throw (RuntimeException)
 {
@@ -931,12 +931,12 @@ Reference< XConnectable >  OMarkableInputStream::getPredecessor() throw (Runtime
 void OMarkableInputStream::checkMarksAndFlush()
 {
 	map<sal_Int32,sal_Int32,less<sal_Int32> >::iterator ii;
-	
+
 	// find the smallest mark
 	sal_Int32 nNextFound = m_nCurrentPos;
 	for( ii = m_mapMarks.begin() ; ii != m_mapMarks.end() ; ii ++ ) {
 		if( (*ii).second <= nNextFound )  {
-			nNextFound = (*ii).second;	
+			nNextFound = (*ii).second;
 		}
 	}
 
@@ -946,26 +946,26 @@ void OMarkableInputStream::checkMarksAndFlush()
 		for( ii = m_mapMarks.begin() ; ii != m_mapMarks.end() ; ii ++ ) {
 			(*ii).second -= nNextFound;
 		}
-				
+
 		m_pBuffer->forgetFromStart( nNextFound );
 
 	}
 	else {
 		// nothing to do. There is a mark or the current cursor position, that prevents
 		// releasing data !
-	}		
+	}
 }
 
 
 
 // XServiceInfo
-OUString OMarkableInputStream::getImplementationName() throw () 
+OUString OMarkableInputStream::getImplementationName() throw ()
 {
     return OMarkableInputStream_getImplementationName();
 }
 
 // XServiceInfo
-sal_Bool OMarkableInputStream::supportsService(const OUString& ServiceName) throw () 
+sal_Bool OMarkableInputStream::supportsService(const OUString& ServiceName) throw ()
 {
     Sequence< OUString > aSNL = getSupportedServiceNames();
     const OUString * pArray = aSNL.getConstArray();
@@ -978,7 +978,7 @@ sal_Bool OMarkableInputStream::supportsService(const OUString& ServiceName) thro
 }
 
 // XServiceInfo
-Sequence< OUString > OMarkableInputStream::getSupportedServiceNames(void) throw () 
+Sequence< OUString > OMarkableInputStream::getSupportedServiceNames(void) throw ()
 {
     return OMarkableInputStream_getSupportedServiceNames();
 }
@@ -991,8 +991,8 @@ Sequence< OUString > OMarkableInputStream::getSupportedServiceNames(void) throw 
 *------------------------*/
 Reference < XInterface > SAL_CALL OMarkableInputStream_CreateInstance(
 	const Reference < XComponentContext > & ) throw(Exception)
-{	
-	OMarkableInputStream *p = new OMarkableInputStream( ); 
+{
+	OMarkableInputStream *p = new OMarkableInputStream( );
 	return Reference< XInterface > ( (OWeakObject * ) p );
 }
 

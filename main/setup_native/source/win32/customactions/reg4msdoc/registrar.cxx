@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 // Registrar.cpp: Implementierung der Klasse Registrar.
@@ -57,9 +57,9 @@ static inline void OutputDebugStringFormat( LPCTSTR, ... )
 
 const int MSWORD                     = 0x1;
 const int MSEXCEL                    = 0x2;
-const int MSPOWERPOINT               = 0x4;	
-const int DEFAULT_HTML_EDITOR_FOR_IE = 0x8;	
-const int HTML_EDITOR				 = 0x10;	
+const int MSPOWERPOINT               = 0x4;
+const int DEFAULT_HTML_EDITOR_FOR_IE = 0x8;
+const int HTML_EDITOR				 = 0x10;
 const int DEFAULT_SHELL_HTML_EDITOR  = 0x20;
 
 namespace /* private */
@@ -75,7 +75,7 @@ namespace /* private */
     const std::wstring MS_IE_DEF_HTML_EDITOR_SHL_EDIT_CMD = L"Software\\Microsoft\\Internet Explorer\\Default HTML Editor\\shell\\edit\\command";
 }
 
-Registrar::Registrar(const RegistrationContextInformation& RegContext) : 	
+Registrar::Registrar(const RegistrationContextInformation& RegContext) :
 	m_ContextInformation(RegContext),
     FORWARD_KEY_PREFIX(L"OpenOffice"),
     DEFAULT_VALUE_NAME(L""),
@@ -91,9 +91,9 @@ Registrar::~Registrar()
 }
 
 void Registrar::RegisterForMsWord() const
-{    
+{
     assert(m_RootKey.get());
-    
+
     RegisterForMsOfficeApplication(
         m_ContextInformation.GetWordDocumentFileExtension(),
         m_ContextInformation.GetWordDocumentDisplayName(),
@@ -101,15 +101,15 @@ void Registrar::RegisterForMsWord() const
         m_ContextInformation.GetWordDocumentDefaultShellCommand(),
         m_ContextInformation.ShellNewCommandDisplayName(),
         RegistrationContextInformation::Writer);
-	
+
     RegisterForMsOfficeApplication(
         m_ContextInformation.GetWordTemplateFileExtension(),
         m_ContextInformation.GetWordTemplateDisplayName(),
         m_ContextInformation.GetWordTemplateDefaultIconEntry(),
         m_ContextInformation.GetWordTemplateDefaultShellCommand(),
         m_ContextInformation.ShellNewCommandDisplayName(),
-        RegistrationContextInformation::Writer);	
-        
+        RegistrationContextInformation::Writer);
+
     RegisterForMsOfficeApplication(
         m_ContextInformation.GetRtfDocumentFileExtension(),
         m_ContextInformation.GetRtfDocumentDisplayName(),
@@ -117,7 +117,7 @@ void Registrar::RegisterForMsWord() const
         m_ContextInformation.GetRtfDocumentDefaultShellCommand(),
         m_ContextInformation.ShellNewCommandDisplayName(),
         RegistrationContextInformation::Writer);
-	
+
     SaveRegisteredFor(MSWORD);
 }
 
@@ -136,7 +136,7 @@ void Registrar::UnregisterForMsWord() const
 	try
 	{
 		UnregisterForMsOfficeApplication(
-			m_ContextInformation.GetWordTemplateFileExtension());		
+			m_ContextInformation.GetWordTemplateFileExtension());
 	}
 	catch(RegistryKeyNotFoundException&)
 	{}
@@ -160,7 +160,7 @@ bool Registrar::QueryPreselectForMsApplication(const std::wstring& file_extensio
     // MS Office applications already exist if we are about to
     // register in HKCU\Software\Classes
     RegistryKey root_key = WindowsRegistry().GetClassesRootKey();
-                
+
 	if (!root_key->HasSubKey(file_extension))
 	{
         preselect = true;
@@ -169,7 +169,7 @@ bool Registrar::QueryPreselectForMsApplication(const std::wstring& file_extensio
     else
     {
         RegistryKey RegKey = root_key->OpenSubKey(file_extension, false);
-        
+
         if (RegKey->HasValue(DEFAULT_VALUE_NAME))
 	    {
 		    RegistryValue RegVal = RegKey->GetValue(DEFAULT_VALUE_NAME);
@@ -191,12 +191,12 @@ bool Registrar::QueryPreselectForMsApplication(const std::wstring& file_extensio
             preselect = true;
             OutputDebugStringFormat( TEXT("QueryPreselect: No default found for SubKey (%s), preselected!\n"), file_extension.c_str() );
         }
-    }            	
+    }
     return preselect;
 }
 
 bool Registrar::QueryPreselectMsWordRegistration() const
-{    
+{
     return QueryPreselectForMsApplication(
         m_ContextInformation.GetWordDocumentFileExtension());
 }
@@ -204,7 +204,7 @@ bool Registrar::QueryPreselectMsWordRegistration() const
 void Registrar::RegisterForMsExcel() const
 {
     assert(m_RootKey.get());
-    	
+
 	RegisterForMsOfficeApplication(
 		m_ContextInformation.GetExcelSheetFileExtension(),
 		m_ContextInformation.GetExcelSheetDisplayName(),
@@ -220,14 +220,14 @@ void Registrar::RegisterForMsExcel() const
 		m_ContextInformation.GetExcelTemplateDefaultShellCommand(),
 		m_ContextInformation.ShellNewCommandDisplayName(),
         RegistrationContextInformation::Calc);
-	
+
     SaveRegisteredFor(MSEXCEL);
 }
 
 void Registrar::UnregisterForMsExcel() const
 {
     assert(m_RootKey.get());
-    
+
 	try
 	{
 		UnregisterForMsOfficeApplication(
@@ -256,7 +256,7 @@ bool Registrar::QueryPreselectMsExcelRegistration() const
 void Registrar::RegisterForMsPowerPoint() const
 {
     assert(m_RootKey.get());
-    
+
     RegisterForMsOfficeApplication(
         m_ContextInformation.GetPowerPointDocumentFileExtension(),
         m_ContextInformation.GetPowerPointDocumentDisplayName(),
@@ -264,7 +264,7 @@ void Registrar::RegisterForMsPowerPoint() const
         m_ContextInformation.GetPowerPointDocumentDefaultShellCommand(),
         m_ContextInformation.ShellNewCommandDisplayName(),
         RegistrationContextInformation::Impress);
-            
+
     RegisterForMsOfficeApplication(
         m_ContextInformation.GetPowerPointShowFileExtension(),
         m_ContextInformation.GetPowerPointShowDisplayName(),
@@ -272,22 +272,22 @@ void Registrar::RegisterForMsPowerPoint() const
         m_ContextInformation.GetPowerPointShowDefaultShellCommand(),
         m_ContextInformation.ShellNewCommandDisplayName(),
         RegistrationContextInformation::Impress);
-            
+
     RegisterForMsOfficeApplication(
         m_ContextInformation.GetPowerPointTemplateFileExtension(),
         m_ContextInformation.GetPowerPointTemplateDisplayName(),
         m_ContextInformation.GetPowerPointTemplateDefaultIconEntry(),
         m_ContextInformation.GetPowerPointTemplateDefaultShellCommand(),
         m_ContextInformation.ShellNewCommandDisplayName(),
-        RegistrationContextInformation::Impress);	
-        
+        RegistrationContextInformation::Impress);
+
     SaveRegisteredFor(MSPOWERPOINT);
 }
 
 void Registrar::UnregisterForMsPowerPoint() const
 {
     assert(m_RootKey.get());
-    
+
 	try
 	{
 		UnregisterForMsOfficeApplication(
@@ -329,46 +329,46 @@ bool Registrar::QueryPreselectMsPowerPointRegistration() const
       make the following entries to register
       a html editor for the Internet Explorer
       HKCR\.htm\OpenWithList\App Friendly Name\shell\edit\command
-      But the reality shows that this works only 
-      with Internet Explorer 5.x 
-      Internet Explorer 6.0 wants the following 
+      But the reality shows that this works only
+      with Internet Explorer 5.x
+      Internet Explorer 6.0 wants the following
       entries:
       HKCR\.htm\OpenWithList\App.exe
-      HKCR\Applications\App.ex\shell\edit\command      
+      HKCR\Applications\App.ex\shell\edit\command
 */
 void Registrar::RegisterAsHtmlEditorForInternetExplorer() const
 {
     assert(m_RootKey.get());
-    
+
     std::wstring OOFriendlyAppName = m_ContextInformation.GetOpenOfficeFriendlyAppName();
-    
+
     std::wstring RegKeyName = HTM_OPENWITHLIST + std::wstring(L"\\") + OOFriendlyAppName;
     RegistryKey RegKey = m_RootKey->CreateSubKey(RegKeyName);
-    
+
     RegKey = RegKey->CreateSubKey(SHELL_EDIT_COMMAND);
-    
+
     RegistryValue RegVal(
         new RegistryValueImpl(
-            DEFAULT_VALUE_NAME, 
+            DEFAULT_VALUE_NAME,
             m_ContextInformation.GetOpenOfficeCommandline(RegistrationContextInformation::Open,
                                                           RegistrationContextInformation::Writer)));
-            
+
     RegKey->SetValue(RegVal);
-    
+
     RegKeyName = APPLICATIONS + std::wstring(L"\\") + OOFriendlyAppName;
     RegKey = m_RootKey->CreateSubKey(RegKeyName);
-    
+
     RegVal->SetName(L"FriendlyAppName");
     RegVal->SetValue(OOFriendlyAppName);
     RegKey->SetValue(RegVal);
-    
+
     RegKey = RegKey->CreateSubKey(SHELL_EDIT_COMMAND);
     RegVal->SetName(DEFAULT_VALUE_NAME);
     RegVal->SetValue(
         m_ContextInformation.GetOpenOfficeCommandline(RegistrationContextInformation::Open,
-                                                      RegistrationContextInformation::Writer));        
+                                                      RegistrationContextInformation::Writer));
     RegKey->SetValue(RegVal);
-    
+
     SaveRegisteredFor(HTML_EDITOR);
 }
 
@@ -397,75 +397,75 @@ void Registrar::UnregisterAsHtmlEditorForInternetExplorer() const
 void Registrar::RegisterAsDefaultHtmlEditorForInternetExplorer() const
 {
     assert(m_RootKey.get());
-    
+
     RegistryKey RegistrationRootKey = GetRootKeyForDefHtmlEditorForIERegistration();
-    
+
     RegistryKey RegKey = RegistrationRootKey->CreateSubKey(MS_IE_DEF_HTML_EDITOR_SHL_EDIT_CMD);
-    
+
     RegistryValue RegVal = RegistryValue(new RegistryValueImpl(DEFAULT_VALUE_NAME, L""));
-    
+
     if (RegKey->HasValue(DEFAULT_VALUE_NAME))
 	{
         RegVal = RegKey->GetValue(DEFAULT_VALUE_NAME);
-        
+
         std::wstring CmdLine = RegVal->GetDataAsUniString();
-        
+
         if (std::wstring::npos == CmdLine.find(m_ContextInformation.GetOpenOfficeExecutableName()))
-        {            
+        {
             RegistryKey BackupRegKey = m_RootKey->CreateSubKey(PRIVATE_BACKUP_KEY_NAME + L"\\" + DEFAULT_HTML_EDITOR);
-            
+
             if (RegKey->HasValue(DEFAULT_VALUE_NAME))
-                BackupRegKey->CopyValue(RegKey, DEFAULT_VALUE_NAME);            
-            
+                BackupRegKey->CopyValue(RegKey, DEFAULT_VALUE_NAME);
+
             RegKey = RegistrationRootKey->OpenSubKey(MS_IE_DEF_HTML_EDITOR);
             if (RegKey->HasValue(L"Description"))
                 BackupRegKey->CopyValue(RegKey, L"Description");
         }
     }
-        
+
     RegVal->SetValue(
         m_ContextInformation.GetOpenOfficeCommandline(RegistrationContextInformation::Open,
                                                       RegistrationContextInformation::Writer));
     RegKey = RegistrationRootKey->OpenSubKey(MS_IE_DEF_HTML_EDITOR_SHL_EDIT_CMD);
     RegKey->SetValue(RegVal);
-    
+
     RegVal->SetName(L"Description");
     RegVal->SetValue(m_ContextInformation.GetOpenOfficeFriendlyAppName());
     RegKey = RegistrationRootKey->OpenSubKey(MS_IE_DEF_HTML_EDITOR);
     RegKey->SetValue(RegVal);
-    
+
     SaveRegisteredFor(DEFAULT_HTML_EDITOR_FOR_IE);
 }
 
 void Registrar::UnregisterAsDefaultHtmlEditorForInternetExplorer() const
 {
     assert(m_RootKey.get());
-    
+
     RegistryKey RegistrationRootKey = GetRootKeyForDefHtmlEditorForIERegistration();
-    
+
     RegistryKey RegKey = RegistrationRootKey->OpenSubKey(MS_IE_DEF_HTML_EDITOR_SHL_EDIT_CMD);
-        
+
     if (RegKey->HasValue(DEFAULT_VALUE_NAME))
     {
         RegistryValue RegVal = RegKey->GetValue(DEFAULT_VALUE_NAME);
-        
+
         std::wstring CmdLine = RegVal->GetDataAsUniString();
-            
+
         if (std::wstring::npos != CmdLine.find(m_ContextInformation.GetOpenOfficeExecutableName()))
-        {                
+        {
             RegistryKey BackupRegKey = m_RootKey->OpenSubKey(PRIVATE_BACKUP_KEY_NAME);
-                    
+
             if (BackupRegKey->HasSubKey(DEFAULT_HTML_EDITOR))
             {
                 BackupRegKey = BackupRegKey->OpenSubKey(DEFAULT_HTML_EDITOR);
-                
+
                 if (BackupRegKey->HasValue(DEFAULT_VALUE_NAME))
                     RegKey->CopyValue(BackupRegKey, DEFAULT_VALUE_NAME);
                 else
                     RegKey->DeleteValue(DEFAULT_VALUE_NAME);
 
-                RegKey = RegistrationRootKey->OpenSubKey(MS_IE_DEF_HTML_EDITOR);                        
-                    
+                RegKey = RegistrationRootKey->OpenSubKey(MS_IE_DEF_HTML_EDITOR);
+
                 if (BackupRegKey->HasValue(L"Description"))
                     RegKey->CopyValue(BackupRegKey, L"Description");
                 else
@@ -473,91 +473,91 @@ void Registrar::UnregisterAsDefaultHtmlEditorForInternetExplorer() const
             }
             else
             {
-                RegKey->DeleteValue(DEFAULT_VALUE_NAME);                       
+                RegKey->DeleteValue(DEFAULT_VALUE_NAME);
                 RegKey = RegistrationRootKey->OpenSubKey(MS_IE_DEF_HTML_EDITOR);
                 RegKey->DeleteValue(L"Description");
-            }        
+            }
         }
     }
-    
+
     SaveNotRegisteredFor(DEFAULT_HTML_EDITOR_FOR_IE);
 }
 
 void Registrar::RegisterAsDefaultShellHtmlEditor() const
 {
     assert(m_RootKey.get());
-    
+
     RegistryKey RegKey = m_RootKey->CreateSubKey(L".htm");
-    
+
     RegistryValue RegVal = RegistryValue(
         new RegistryValueImpl(DEFAULT_VALUE_NAME, L""));
-    
+
     if (RegKey->HasValue(DEFAULT_VALUE_NAME))
         RegVal = RegKey->GetValue(DEFAULT_VALUE_NAME);
-        
-    std::wstring HtmFwdKey = RegVal->GetDataAsUniString();        
+
+    std::wstring HtmFwdKey = RegVal->GetDataAsUniString();
     if (0 == HtmFwdKey.length() || !m_RootKey->HasSubKey(HtmFwdKey))
         HtmFwdKey = L".htm";
-    
+
     RegKey = m_RootKey->CreateSubKey(HtmFwdKey + L"\\" + SHELL_EDIT_COMMAND);
-    
+
 	if (RegKey->HasValue(DEFAULT_VALUE_NAME))
 	{
 		RegVal = RegKey->GetValue(DEFAULT_VALUE_NAME);
-    
+
 		std::wstring CmdLine = RegVal->GetDataAsUniString();
-        
+
 		// backup old values if we are not in place
 		if (std::wstring::npos == CmdLine.find(m_ContextInformation.GetOpenOfficeExecutableName()))
-		{            
+		{
 			RegistryKey BackupRegKey = m_RootKey->CreateSubKey(PRIVATE_BACKUP_KEY_NAME + L"\\" + HTML_EDIT);
 			BackupRegKey->CopyValue(RegKey, DEFAULT_VALUE_NAME, SHELL_EDIT_COMMAND_BACKUP);
-		}		
+		}
 	}
-    
+
     RegVal->SetValue(
         m_ContextInformation.GetOpenOfficeCommandline(RegistrationContextInformation::Open,
                                                       RegistrationContextInformation::Writer));
-        
+
     RegKey->SetValue(RegVal);
-    
+
     SaveRegisteredFor(DEFAULT_SHELL_HTML_EDITOR);
 }
 
 void Registrar::UnregisterAsDefaultShellHtmlEditor() const
 {
     assert(m_RootKey.get());
-    
+
 	try
 	{
 		RegistryKey RegKey = m_RootKey->OpenSubKey(L".htm");
-    
+
 		RegistryValue RegVal = RegistryValue(
 			new RegistryValueImpl(DEFAULT_VALUE_NAME, L""));
-    
+
 		if (RegKey->HasValue(DEFAULT_VALUE_NAME))
 			RegVal = RegKey->GetValue(DEFAULT_VALUE_NAME);
-        
+
 		std::wstring HtmFwdKey = RegVal->GetDataAsUniString();
-        
+
 		if (0 == HtmFwdKey.length() || !m_RootKey->HasSubKey(HtmFwdKey))
 			HtmFwdKey = L".htm";
-    
+
 		RegKey = m_RootKey->OpenSubKey(HtmFwdKey + L"\\" + SHELL_EDIT_COMMAND);
-    
+
 		RegVal = RegKey->GetValue(DEFAULT_VALUE_NAME);
-        
+
 		std::wstring CmdLine = RegVal->GetDataAsUniString();
-        
+
 		if (std::wstring::npos != CmdLine.find(m_ContextInformation.GetOpenOfficeExecutableName()))
-		{        
+		{
 			RegistryKey BackupRegKey = m_RootKey->CreateSubKey(PRIVATE_BACKUP_KEY_NAME + L"\\" + HTML_EDIT);
-            
+
 			if (BackupRegKey->HasValue(SHELL_EDIT_COMMAND_BACKUP))
 				RegKey->CopyValue(BackupRegKey, SHELL_EDIT_COMMAND_BACKUP, DEFAULT_VALUE_NAME);
 			else
 				RegKey->DeleteValue(DEFAULT_VALUE_NAME);
-		}    
+		}
 	}
     catch(RegistryKeyNotFoundException&)
 	{
@@ -569,7 +569,7 @@ void Registrar::UnregisterAsDefaultShellHtmlEditor() const
 void Registrar::SaveRegisteredFor(int State) const
 {
     assert(m_RootKey.get());
-    
+
     int NewState = GetRegisterState();
     NewState |= State;
     SetRegisterState(NewState);
@@ -578,7 +578,7 @@ void Registrar::SaveRegisteredFor(int State) const
 void Registrar::SaveNotRegisteredFor(int State) const
 {
     assert(m_RootKey.get());
-        
+
     int NewState = GetRegisterState();
     NewState &= ~State;
     SetRegisterState(NewState);
@@ -587,16 +587,16 @@ void Registrar::SaveNotRegisteredFor(int State) const
 int Registrar::GetRegisterState() const
 {
     int State = 0;
-    
+
     RegistryKey RegKey = m_RootKey->CreateSubKey(PRIVATE_BACKUP_KEY_NAME);
-    
+
     if (RegKey->HasValue(REGISTRATION_STATE))
     {
         RegistryValue RegVal = RegKey->GetValue(REGISTRATION_STATE);
         if (REG_DWORD == RegVal->GetType())
             State = RegVal->GetDataAsInt();
     }
-    
+
     return State;
 }
 
@@ -606,22 +606,22 @@ void Registrar::SetRegisterState(int NewState) const
     RegistryValue RegVal = RegistryValue(new RegistryValueImpl(REGISTRATION_STATE, NewState));
     RegKey->SetValue(RegVal);
 }
-    
+
 bool Registrar::IsRegisteredFor(int State) const
 {
     assert(m_RootKey.get());
-    
+
     RegistryKey RegKey = m_RootKey->CreateSubKey(PRIVATE_BACKUP_KEY_NAME);
-    
+
     int SavedState = 0;
-    
+
     if (RegKey->HasValue(REGISTRATION_STATE))
     {
         RegistryValue RegVal = RegKey->GetValue(REGISTRATION_STATE);
         if (REG_DWORD == RegVal->GetType())
-            SavedState = RegVal->GetDataAsInt();        
+            SavedState = RegVal->GetDataAsInt();
     }
-    
+
 	return ((SavedState & State) == State);
 }
 
@@ -653,7 +653,7 @@ void Registrar::RepairRegistrationState() const
 
 /** Unregisters all and delete all Registry keys we have written */
 void Registrar::UnregisterAllAndCleanUpRegistry() const
-{	
+{
 	assert(m_RootKey.get());
 
 	if (IsRegisteredFor(MSWORD))
@@ -673,7 +673,7 @@ void Registrar::UnregisterAllAndCleanUpRegistry() const
 
 	if (IsRegisteredFor(DEFAULT_SHELL_HTML_EDITOR))
 		UnregisterAsDefaultShellHtmlEditor();
-	
+
 	if (m_RootKey->HasSubKey(PRIVATE_BACKUP_KEY_NAME))
 	    m_RootKey->DeleteSubKeyTree(PRIVATE_BACKUP_KEY_NAME);
 }
@@ -687,7 +687,7 @@ void Registrar::RegisterForMsOfficeApplication(
     const RegistrationContextInformation::OFFICE_APPLICATION eOfficeApp) const
 {
     assert(m_RootKey.get());
-    
+
 	std::wstring ForwardKeyName = FORWARD_KEY_PREFIX + FileExtension;
 
 	RegistryKey ForwardKey = m_RootKey->CreateSubKey(ForwardKeyName);
@@ -724,39 +724,39 @@ void Registrar::RegisterForMsOfficeApplication(
 
     // set the new forward key under the appropriate extension
 	RegKey = m_RootKey->CreateSubKey(FileExtension);
-    
+
 	if (RegKey->HasValue(DEFAULT_VALUE_NAME))
 	{
 		RegVal = RegKey->GetValue(DEFAULT_VALUE_NAME);
-    
+
 		if (REG_SZ == RegVal->GetType())
 		{
 			std::wstring str = RegVal->GetDataAsUniString();
-			if (!IsOpenOfficeRegisteredForMsApplication(str)) 
+			if (!IsOpenOfficeRegisteredForMsApplication(str))
 				ForwardKey->CopyValue(RegKey, DEFAULT_VALUE_NAME, BACKUP_VALUE_NAME);
 		}
 	}
-    
+
 	RegVal->SetValue(ForwardKeyName);
-	RegKey->SetValue(RegVal);	
+	RegKey->SetValue(RegVal);
 }
 
 void Registrar::UnregisterForMsOfficeApplication(const std::wstring& FileExtension) const
 {
     std::wstring FwdRegKeyName = FORWARD_KEY_PREFIX + FileExtension;
-    
+
     if (m_RootKey->HasSubKey(FileExtension))
     {
         RegistryKey RegKey = m_RootKey->OpenSubKey(FileExtension);
-        
+
         if (RegKey->HasValue(DEFAULT_VALUE_NAME))
         {
             RegistryValue RegVal = RegKey->GetValue(DEFAULT_VALUE_NAME);
-            if (REG_SZ == RegVal->GetType() && 
+            if (REG_SZ == RegVal->GetType() &&
                 IsOpenOfficeRegisteredForMsApplication(RegVal->GetDataAsUniString()))
-            {                
+            {
                 RegistryKey FwdRegKey = m_RootKey->CreateSubKey(FwdRegKeyName);
-                    
+
                 if (FwdRegKey->HasValue(BACKUP_VALUE_NAME))
                     RegKey->CopyValue(FwdRegKey, BACKUP_VALUE_NAME, DEFAULT_VALUE_NAME);
                 else
@@ -764,11 +764,11 @@ void Registrar::UnregisterForMsOfficeApplication(const std::wstring& FileExtensi
             }
         }
     }
-    
+
     if (m_RootKey->HasSubKey(FwdRegKeyName))
         m_RootKey->DeleteSubKeyTree(FwdRegKeyName);
 }
-   
+
 RegistryKey Registrar::GetRootKeyForDefHtmlEditorForIERegistration() const
 {
     return WindowsRegistry().GetLocalMachineKey();

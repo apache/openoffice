@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -61,8 +61,8 @@ OGroup::OGroup(const uno::Reference< report::XGroups >& _xParent
 	osl_decrementInterlockedCount( &m_refCount );
 }
 //--------------------------------------------------------------------------
-// TODO: VirtualFunctionFinder: This is virtual function! 
-// 
+// TODO: VirtualFunctionFinder: This is virtual function!
+//
 OGroup::~OGroup()
 {
     DBG_DTOR( rpt_OGroup,NULL);
@@ -109,14 +109,14 @@ sal_Bool SAL_CALL OGroup::supportsService( const ::rtl::OUString& _rServiceName 
 	return ::comphelper::existsValue(_rServiceName,getSupportedServiceNames_Static());
 }
 // -----------------------------------------------------------------------------
-void SAL_CALL OGroup::dispose() throw(uno::RuntimeException) 
+void SAL_CALL OGroup::dispose() throw(uno::RuntimeException)
 {
 	GroupPropertySet::dispose();
-	cppu::WeakComponentImplHelperBase::dispose(); 
+	cppu::WeakComponentImplHelperBase::dispose();
 }
 // -----------------------------------------------------------------------------
-// TODO: VirtualFunctionFinder: This is virtual function! 
-// 
+// TODO: VirtualFunctionFinder: This is virtual function!
+//
 void SAL_CALL OGroup::disposing()
 {
     m_xHeader.clear();
@@ -180,7 +180,7 @@ uno::Reference< report::XSection > SAL_CALL OGroup::getHeader() throw (container
 		::osl::MutexGuard aGuard(m_aMutex);
 		xRet = m_xHeader;
 	}
-	
+
 	if ( !xRet.is() )
 		throw container::NoSuchElementException();
 	return xRet;
@@ -193,7 +193,7 @@ uno::Reference< report::XSection > SAL_CALL OGroup::getFooter() throw (container
 		::osl::MutexGuard aGuard(m_aMutex);
 		xRet = m_xFooter;
 	}
-	
+
 	if ( !xRet.is() )
 		throw container::NoSuchElementException();
 	return xRet;

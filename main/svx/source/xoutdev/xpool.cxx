@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -38,9 +38,9 @@
 \************************************************************************/
 
 XOutdevItemPool::XOutdevItemPool(
-	SfxItemPool* _pMaster, 
-	sal_uInt16 nAttrStart, 
-	sal_uInt16 nAttrEnd, 
+	SfxItemPool* _pMaster,
+	sal_uInt16 nAttrStart,
+	sal_uInt16 nAttrEnd,
 	sal_Bool bLoadRefCounts)
 :	SfxItemPool(String("XOutdevItemPool", gsl_getSystemTextEncoding()), nAttrStart, nAttrEnd, 0L, 0L, bLoadRefCounts)
 {
@@ -56,15 +56,15 @@ XOutdevItemPool::XOutdevItemPool(
 	const XHatch aNullHatch(aNullLineCol);
 
 	// get master pointer, evtl. add myself to the end of the pools
-	if(!_pMaster) 
+	if(!_pMaster)
 	{
 		_pMaster = this;
-	} 
-	else 
+	}
+	else
 	{
 		SfxItemPool* pParent = _pMaster;
 
-		while(pParent->GetSecondaryPool()) 
+		while(pParent->GetSecondaryPool())
 		{
 			pParent = pParent->GetSecondaryPool();
 		}
@@ -129,7 +129,7 @@ XOutdevItemPool::XOutdevItemPool(
 
 	// create ItemInfos
 	mpLocalItemInfos = new SfxItemInfo[GetLastWhich() - GetFirstWhich() + 1];
-	for(sal_uInt16 i(GetFirstWhich()); i <= GetLastWhich(); i++) 
+	for(sal_uInt16 i(GetFirstWhich()); i <= GetLastWhich(); i++)
 	{
 		mpLocalItemInfos[i - XATTR_START]._nSID = 0;
 		mpLocalItemInfos[i - XATTR_START]._nFlags = SFX_ITEM_POOLABLE;
@@ -184,7 +184,7 @@ XOutdevItemPool::XOutdevItemPool(
 |*
 \************************************************************************/
 
-XOutdevItemPool::XOutdevItemPool(const XOutdevItemPool& rPool) 
+XOutdevItemPool::XOutdevItemPool(const XOutdevItemPool& rPool)
 :	SfxItemPool(rPool, sal_True),
 	mppLocalPoolDefaults(0L),
 	mpLocalItemInfos(0L)
@@ -228,7 +228,7 @@ XOutdevItemPool::~XOutdevItemPool()
 		delete[] mppLocalPoolDefaults;
 	}
 
-	if(mpLocalItemInfos) 
+	if(mpLocalItemInfos)
 	{
 		delete[] mpLocalItemInfos;
 	}

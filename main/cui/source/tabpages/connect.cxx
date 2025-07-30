@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -28,8 +28,8 @@
 #include <sfx2/app.hxx>
 #include <sfx2/module.hxx>
 #include <tools/shl.hxx>
-#include "svx/ofaitem.hxx"	// add CHINA001 
-#include <sfx2/request.hxx> // add CHINA001 
+#include "svx/ofaitem.hxx"	// add CHINA001
+#include <sfx2/request.hxx> // add CHINA001
 #include <svx/dialogs.hrc>
 
 #define _SVX_CONNECT_CXX
@@ -120,7 +120,7 @@ SvxConnectionPage::SvxConnectionPage( Window* pWindow, const SfxItemSet& rInAttr
         aAttrSet                ( *rInAttrs.GetPool() )
 {
 	FreeResource();
-	
+
 	aCtlPreview.SetAccessibleName(String(CUI_RES(STR_EXAMPLE)));
 
 	SfxItemPool* pPool = rOutAttrs.GetPool();
@@ -552,11 +552,11 @@ void SvxConnectionPage::FillTypeLB()
 		}
 	}
 }
-void SvxConnectionPage::PageCreated (SfxAllItemSet aSet) //add CHINA001 
+void SvxConnectionPage::PageCreated (SfxAllItemSet aSet) //add CHINA001
 {
 	SFX_ITEMSET_ARG(&aSet,pOfaPtrItem,OfaPtrItem,SID_OBJECT_LIST,sal_False);
 	if (pOfaPtrItem)
 		SetView( static_cast<SdrView *>(pOfaPtrItem->GetValue()) );
-	
+
 	Construct();
 }

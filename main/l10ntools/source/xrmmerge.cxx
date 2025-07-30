@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -180,7 +180,7 @@ int InitXrmExport( char *pOutput , char* pFilename)
 	ByteString sOutput( pOutput );
 	ByteString sFilename( pFilename );
     Export::InitLanguages( false );
- 
+
 	if ( bMergeMode )
         pParser = new XRMResMerge( sMergeSrc, sOutputFile, sFilename );
   	else if ( sOutputFile.Len()) {
@@ -318,7 +318,7 @@ int XRMResParser::Execute( int nToken, char * pToken )
 			sGID += ".";
 			sGID += GetAttribute( rToken, "id" );
 			//sLocalized = "1";
-            
+
             //sLocalized = "X:";
             sLocalized = true;
 		break;
@@ -336,7 +336,7 @@ int XRMResParser::Execute( int nToken, char * pToken )
 //                sLocalized = false;
 //			else
 //				sLocalized += "1";
-                sLocalized = true;				
+                sLocalized = true;
 		break;
 
 		case XRM_PARAGRAPH_END: {
@@ -549,7 +549,7 @@ void XRMResExport::EndOfText(
 )
 /*****************************************************************************/
 {
-	
+
     (void) rOpenTag;        // FIXME
     (void) rCloseTag;       // FIXME
 
@@ -558,7 +558,7 @@ void XRMResExport::EndOfText(
 		char cSearch = 0x00;
 		ByteString sSearch( cSearch );
 
- 	//	if ( !pResData->sText[ ByteString("en-US") ].Len() ) 
+ 	//	if ( !pResData->sText[ ByteString("en-US") ].Len() )
     //        pResData->sText[ ByteString("en-US") ] = pResData->sText[ ByteString("de") ];
 
 		Export::FillInFallbacks( pResData );
@@ -567,7 +567,7 @@ void XRMResExport::EndOfText(
         ByteString sCur;
         for( unsigned int n = 0; n < aLanguages.size(); n++ ){
             sCur = aLanguages[ n ];
-        
+
             ByteString sAct = pResData->sText[ sCur ];
 				//Export::UnquotHTML( sAct );
 				sAct.EraseAllChars( 0x0A );
@@ -576,15 +576,15 @@ void XRMResExport::EndOfText(
 				sOutput += sPath;
 				sOutput += "\t0\t";
 				sOutput += "readmeitem\t";
-				sOutput += pResData->sId; 
+				sOutput += pResData->sId;
                 // USE LID AS GID OR MERGE DON'T WORK
-                //sOutput += pResData->sGId; 
+                //sOutput += pResData->sGId;
                 sOutput += "\t";
-                sOutput += pResData->sId; 
+                sOutput += pResData->sId;
                 sOutput += "\t\t\t0\t";
                 sOutput += sCur;
                 sOutput += "\t";
-	            
+
                 sOutput += sAct; sOutput += "\t\t\t\t";
 				sOutput += sTimeStamp;
 
@@ -652,7 +652,7 @@ void XRMResMerge::WorkOnText(
         PFormEntrys *pEntrys = pMergeDataFile->GetPFormEntrys( pResData );
 			if ( pEntrys ) {
                 ByteString sContent;
-				if ( Export::isAllowed( sLang ) && 
+				if ( Export::isAllowed( sLang ) &&
                     ( pEntrys->GetText(
                         sContent, STRING_TYP_TEXT, sLang )) &&
 					( sContent != "-" ) && ( sContent.Len()))

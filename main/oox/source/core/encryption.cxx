@@ -175,7 +175,7 @@ Sequence< NamedValue > StandardEncryptionInfo::verifyPassword( const OUString& r
     size_t nBufferSize = mnSaltSize + 2 * rPassword.getLength();
     sal_uInt8* pnBuffer = new sal_uInt8[ nBufferSize ];
     memcpy( pnBuffer, mpnSalt, mnSaltSize );
- 
+
     sal_uInt8* pnPasswordLoc = pnBuffer + mnSaltSize;
     const sal_Unicode* pStr = rPassword.getStr();
     for( sal_Int32 i = 0, nLen = rPassword.getLength(); i < nLen; ++i, ++pStr, pnPasswordLoc += 2 )
@@ -193,7 +193,7 @@ Sequence< NamedValue > StandardEncryptionInfo::verifyPassword( const OUString& r
     for( sal_uInt32 i = 0; i < 50000; ++i )
     {
         ByteOrderConverter::writeLittleEndian( pnHash, i );
-        aDigest = rtl_digest_create( rtl_Digest_AlgorithmSHA1 );                                             
+        aDigest = rtl_digest_create( rtl_Digest_AlgorithmSHA1 );
         aError = rtl_digest_update( aDigest, pnHash, nHashSize );
         aError = rtl_digest_get( aDigest, pnHash + 4, RTL_DIGEST_LENGTH_SHA1 );
         rtl_digest_destroy( aDigest );
@@ -249,7 +249,7 @@ bool StandardEncryptionInfo::verifyEncryptionData( const Sequence< NamedValue >&
 bool StandardEncryptionInfo::checkEncryptionData( const sal_uInt8* pnKey, sal_uInt32 nKeySize, const sal_uInt8* pnVerifier, sal_uInt32 nVerifierSize, const sal_uInt8* pnVerifierHash, sal_uInt32 nVerifierHashSize ) throw ( Exception )
 {
     bool bResult = false;
- 
+
     // the only currently supported algorithm needs key size 128
     if ( nKeySize == 16 && nVerifierSize == 16 && nVerifierHashSize == 32 )
     {
@@ -274,19 +274,19 @@ bool StandardEncryptionInfo::checkEncryptionData( const sal_uInt8* pnKey, sal_uI
         EVP_CIPHER_CTX_set_padding( aes_ctx, 0 );
         sal_uInt8 pnTmpVerifierHash[ 32 ];
         (void) memset( pnTmpVerifierHash, 0, sizeof(pnTmpVerifierHash) );
-    
+
         /*int*/ EVP_DecryptUpdate( aes_ctx, pnTmpVerifierHash, &nOutLen, pnVerifierHash, nVerifierHashSize );
         EVP_CIPHER_CTX_free( aes_ctx );
- 
+
         rtlDigest aDigest = rtl_digest_create( rtl_Digest_AlgorithmSHA1 );
         rtlDigestError aError = rtl_digest_update( aDigest, pnTmpVerifier, sizeof( pnTmpVerifier ) );
         sal_uInt8 pnSha1Hash[ RTL_DIGEST_LENGTH_SHA1 ];
         aError = rtl_digest_get( aDigest, pnSha1Hash, RTL_DIGEST_LENGTH_SHA1 );
         rtl_digest_destroy( aDigest );
- 
+
         bResult = ( memcmp( pnSha1Hash, pnTmpVerifierHash, RTL_DIGEST_LENGTH_SHA1 ) == 0 );
     }
-        
+
     return bResult;
 }
 

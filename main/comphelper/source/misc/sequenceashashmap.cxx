@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -119,7 +119,7 @@ void SequenceAsHashMap::operator<<(const css::uno::Sequence< css::uno::Any >& lS
 {
     sal_Int32 c = lSource.getLength();
     sal_Int32 i = 0;
-    
+
     for (i=0; i<c; ++i)
     {
         css::beans::PropertyValue lP;
@@ -132,10 +132,10 @@ void SequenceAsHashMap::operator<<(const css::uno::Sequence< css::uno::Any >& lS
                 throw css::beans::IllegalTypeException(
                         ::rtl::OUString::createFromAscii("PropertyValue struct contains no useful informations."),
                         css::uno::Reference< css::uno::XInterface >());
-            (*this)[lP.Name] = lP.Value;                    
+            (*this)[lP.Name] = lP.Value;
             continue;
         }
-        
+
         css::beans::NamedValue lN;
         if (lSource[i] >>= lN)
         {
@@ -146,12 +146,12 @@ void SequenceAsHashMap::operator<<(const css::uno::Sequence< css::uno::Any >& lS
                 throw css::beans::IllegalTypeException(
                         ::rtl::OUString::createFromAscii("NamedValue struct contains no useful informations."),
                         css::uno::Reference< css::uno::XInterface >());
-            (*this)[lN.Name] = lN.Value;                    
+            (*this)[lN.Name] = lN.Value;
             continue;
         }
 
         // ignore VOID Any ... but reject wrong filled ones!
-        if (lSource[i].hasValue())        
+        if (lSource[i].hasValue())
             throw css::beans::IllegalTypeException(
                     ::rtl::OUString::createFromAscii("Any contains wrong type."),
                     css::uno::Reference< css::uno::XInterface >());
@@ -267,7 +267,7 @@ const css::uno::Sequence< css::uno::Any > SequenceAsHashMap::getAsConstAnyList(:
             aProp.Value     = pThis->second;
             pDestination[i] = css::uno::makeAny(aProp);
         }
-    
+
         ++i;
     }
 
@@ -307,10 +307,10 @@ sal_Bool SequenceAsHashMap::match(const SequenceAsHashMap& rCheck) const
         const ::rtl::OUString& sCheckName  = pCheck->first;
         const css::uno::Any&   aCheckValue = pCheck->second;
               const_iterator   pFound      = find(sCheckName);
-    
+
         if (pFound == end())
             return sal_False;
-        
+
         const css::uno::Any& aFoundValue = pFound->second;
         if (aFoundValue != aCheckValue)
             return sal_False;
@@ -331,7 +331,7 @@ void SequenceAsHashMap::update(const SequenceAsHashMap& rUpdate)
     {
         const ::rtl::OUString& sName  = pUpdate->first;
         const css::uno::Any&   aValue = pUpdate->second;
-    
+
         (*this)[sName] = aValue;
     }
 }

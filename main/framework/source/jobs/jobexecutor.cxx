@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -96,7 +96,7 @@ DEFINE_INIT_SERVICE( JobExecutor,
                      {
                          m_xModuleManager = css::uno::Reference< css::frame::XModuleManager >(
                              m_xSMGR->createInstance(
-                                 SERVICENAME_MODULEMANAGER ), 
+                                 SERVICENAME_MODULEMANAGER ),
                              css::uno::UNO_QUERY_THROW );
 
                          /*Attention
@@ -281,7 +281,7 @@ void SAL_CALL JobExecutor::notifyEvent( const css::document::EventObject& aEvent
         aReadLock.lock();
 
         const JobData::TJob2DocEventBinding& rBinding = *pIt;
-        
+
         JobData aCfg(m_xSMGR);
         aCfg.setEvent(rBinding.m_sDocEvent, rBinding.m_sJobName);
         aCfg.setEnvironment(JobData::E_DOCUMENTEVENT);

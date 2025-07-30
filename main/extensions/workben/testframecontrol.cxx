@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -85,7 +85,7 @@ public:
 
 	// XPaintListener
 	virtual void		windowPaint( const PaintEvent& evt );
-	
+
 	// XEventListener
 	virtual void		disposing( const EventObject& evt );
 
@@ -98,7 +98,7 @@ public:
 void Listener_Impl::addAllListeners( const XControlRef& xControl )
 {
 	XWindowRef xWindow( xControl, USR_QUERY );
-	
+
 	xWindow->addMouseListener( (XMouseListener*)this );
 	xWindow->addMouseMotionListener( (XMouseMotionListener*)this );
 	xWindow->addKeyListener( (XKeyListener*)this );
@@ -113,7 +113,7 @@ void Listener_Impl::addAllListeners( const XControlRef& xControl )
 void Listener_Impl::removeAllListeners( const XControlRef& xControl )
 {
 	XWindowRef xWindow( xControl, USR_QUERY );
-	
+
 	xWindow->removeMouseListener( (XMouseListener*)this );
 	xWindow->removeMouseMotionListener( (XMouseMotionListener*)this );
 	xWindow->removeKeyListener( (XKeyListener*)this );
@@ -205,7 +205,7 @@ public:
 
 public:
 						FrameControlApplication()		{}
-	
+
 private:
 	void				init();
 	void				deinit();
@@ -213,7 +213,7 @@ private:
 private:
 	Listener_Impl*		_pListener;
 	XControlRef			_xControl;
-	
+
 	WorkWindow*			_pWorkWin;
 };
 
@@ -232,9 +232,9 @@ void FrameControlApplication::init()
 	setProcessServiceManager( xMgr );
 	InitExtVclToolkit();
 	Application::RegisterUnoServices();
-	
+
 	XServiceRegistryRef xRegMgr(xMgr, USR_QUERY);
-	
+
 	XImplementationRegistrationRef xIR( xMgr->createInstance(L"stardiv.uno.repos.ImplementationRegistration"), USR_QUERY );
 	try
 	{
@@ -251,21 +251,21 @@ void FrameControlApplication::init()
 
 
 	// ...
-	
+
 	XInterfaceRef xInst = xMgr->createInstance( L"stardiv.one.frame.FrameControl" );
 	if (xInst->queryInterface( XControl::getSmartUik(), _xControl ))
 	{
 		_pWorkWin = new WorkWindow( NULL, WB_APP | WB_STDWORK );
 		_pWorkWin->Show();
 		XWindowPeerRef xParent( _pWorkWin->GetComponentInterface() );
-		
+
 		XToolkitRef xToolkit( xMgr->createInstance( L"stardiv.vcl.VclToolkit" ), USR_QUERY );
 		//xToolkit = XToolkitRef( xMgr->createInstance( L"stardiv.uno.awt.Toolkit" ), USR_QUERY );
 		_xControl->createPeer( xToolkit, xParent );
 		XWindowRef xWin( _xControl, USR_QUERY );
 		xWin->setPosSize( 50, 50, 400, 400, PosSize_POSSIZE );
 		xWin->setVisible( TRUE );
-		
+
 		_pListener = new Listener_Impl();
 		_pListener->acquire();
 		_pListener->addAllListeners( _xControl );
@@ -278,12 +278,12 @@ void FrameControlApplication::deinit()
 {
 	if (_pListener)
 	{
-		
+
 		_pListener->removeAllListeners( _xControl );
 		_xControl->dispose();	// disposing event should occur
 		_pListener->release();
 		_pListener = NULL;
-		
+
 		_xControl = XControlRef();
 	}
 
@@ -297,13 +297,13 @@ void FrameControlApplication::Main()
 {
 //  	void TestErrcodes();
 //  	TestErrcodes();
-	
+
 	EnterMultiThread();
 	SetAppName( "RadioActiveControl-Demo" );
 	EnableSVLook();
 
 	init();
-	
+
 	Execute();
 
 	deinit();

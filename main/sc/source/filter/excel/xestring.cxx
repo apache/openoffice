@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -127,7 +127,7 @@ XclExpString::XclExpString( const OUString& rString, XclStrFlags nFlags, sal_uIn
 //UNUSED2008-05  {
 //UNUSED2008-05      Assign( rString, rFormats, nFlags, nMaxLen );
 //UNUSED2008-05  }
-//UNUSED2008-05  
+//UNUSED2008-05
 //UNUSED2008-05  XclExpString::XclExpString(
 //UNUSED2008-05          const OUString& rString, const XclFormatRunVec& rFormats,
 //UNUSED2008-05          XclStrFlags nFlags, sal_uInt16 nMaxLen )
@@ -200,7 +200,7 @@ void XclExpString::Append( const String& rString )
 //UNUSED2008-05  {
 //UNUSED2008-05      BuildAppend( rString.getStr(), rString.getLength() );
 //UNUSED2008-05  }
-//UNUSED2008-05  
+//UNUSED2008-05
 //UNUSED2008-05  void XclExpString::Append( sal_Unicode cChar )
 //UNUSED2008-05  {
 //UNUSED2008-05      BuildAppend( &cChar, 1 );
@@ -489,7 +489,7 @@ static sal_uInt16 lcl_WriteRun( XclExpXmlStream& rStrm, const ScfUInt16Vec& rBuf
         rStrm.WriteFontData( rFontData, XML_rFont );
         rWorksheet->endElement( XML_rPr );
     }
-    rWorksheet->startElement( XML_t, 
+    rWorksheet->startElement( XML_t,
             FSNS( XML_xml, XML_space ), "preserve",
             FSEND );
     rWorksheet->writeEscaped( XclXmlUtils::ToOUString( rBuffer, nStart, nLength ) );
@@ -517,11 +517,11 @@ void XclExpString::WriteXml( XclExpXmlStream& rStrm ) const
         const XclExpFont* pFont = NULL;
         for ( ; aIt != aEnd; ++aIt )
         {
-            nStart = lcl_WriteRun( rStrm, GetUnicodeBuffer(), 
+            nStart = lcl_WriteRun( rStrm, GetUnicodeBuffer(),
                     nStart, aIt->mnChar-nStart, pFont );
             pFont = rFonts.GetFont( aIt->mnFontIdx );
         }
-        lcl_WriteRun( rStrm, GetUnicodeBuffer(), 
+        lcl_WriteRun( rStrm, GetUnicodeBuffer(),
                 nStart, GetUnicodeBuffer().size() - nStart, pFont );
     }
 }

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -84,7 +84,7 @@ namespace drawinglayer
             {
                 const PolyPolygonHairlinePrimitive2D& rCompare = (PolyPolygonHairlinePrimitive2D&)rPrimitive;
 
-                return (getB2DPolyPolygon() == rCompare.getB2DPolyPolygon() 
+                return (getB2DPolyPolygon() == rCompare.getB2DPolyPolygon()
                     && getBColor() == rCompare.getBColor());
             }
 
@@ -122,9 +122,9 @@ namespace drawinglayer
                 {
                     aRetval[a] = Primitive2DReference(
                         new PolygonMarkerPrimitive2D(
-                            aPolyPolygon.getB2DPolygon(a), 
-                            getRGBColorA(), 
-                            getRGBColorB(), 
+                            aPolyPolygon.getB2DPolygon(a),
+                            getRGBColorA(),
+                            getRGBColorB(),
                             getDiscreteDashLength()));
                 }
 
@@ -137,7 +137,7 @@ namespace drawinglayer
         }
 
         PolyPolygonMarkerPrimitive2D::PolyPolygonMarkerPrimitive2D(
-            const basegfx::B2DPolyPolygon& rPolyPolygon, 
+            const basegfx::B2DPolyPolygon& rPolyPolygon,
             const basegfx::BColor& rRGBColorA,
             const basegfx::BColor& rRGBColorB,
             double fDiscreteDashLength)
@@ -155,7 +155,7 @@ namespace drawinglayer
             {
                 const PolyPolygonMarkerPrimitive2D& rCompare = (PolyPolygonMarkerPrimitive2D&)rPrimitive;
 
-                return (getB2DPolyPolygon() == rCompare.getB2DPolyPolygon() 
+                return (getB2DPolyPolygon() == rCompare.getB2DPolyPolygon()
                     && getRGBColorA() == rCompare.getRGBColorA()
                     && getRGBColorB() == rCompare.getRGBColorB()
                     && getDiscreteDashLength() == rCompare.getDiscreteDashLength());
@@ -207,7 +207,7 @@ namespace drawinglayer
         }
 
         PolyPolygonStrokePrimitive2D::PolyPolygonStrokePrimitive2D(
-            const basegfx::B2DPolyPolygon& rPolyPolygon, 
+            const basegfx::B2DPolyPolygon& rPolyPolygon,
             const attribute::LineAttribute& rLineAttribute,
             const attribute::StrokeAttribute& rStrokeAttribute)
         :   BufferedDecompositionPrimitive2D(),
@@ -218,7 +218,7 @@ namespace drawinglayer
         }
 
         PolyPolygonStrokePrimitive2D::PolyPolygonStrokePrimitive2D(
-            const basegfx::B2DPolyPolygon& rPolyPolygon, 
+            const basegfx::B2DPolyPolygon& rPolyPolygon,
             const attribute::LineAttribute& rLineAttribute)
         :   BufferedDecompositionPrimitive2D(),
             maPolyPolygon(rPolyPolygon),
@@ -233,7 +233,7 @@ namespace drawinglayer
             {
                 const PolyPolygonStrokePrimitive2D& rCompare = (PolyPolygonStrokePrimitive2D&)rPrimitive;
 
-                return (getB2DPolyPolygon() == rCompare.getB2DPolyPolygon() 
+                return (getB2DPolyPolygon() == rCompare.getB2DPolyPolygon()
                     && getLineAttribute() == rCompare.getLineAttribute()
                     && getStrokeAttribute() == rCompare.getStrokeAttribute());
             }
@@ -289,7 +289,7 @@ namespace drawinglayer
                     else
                     {
                         aRetval[a] = Primitive2DReference(
-                            new PolygonStrokeArrowPrimitive2D(aPolygon, getLineAttribute(), 
+                            new PolygonStrokeArrowPrimitive2D(aPolygon, getLineAttribute(),
                                 getStrokeAttribute(), getStart(), getEnd()));
                     }
                 }
@@ -303,10 +303,10 @@ namespace drawinglayer
         }
 
         PolyPolygonStrokeArrowPrimitive2D::PolyPolygonStrokeArrowPrimitive2D(
-            const basegfx::B2DPolyPolygon& rPolyPolygon, 
+            const basegfx::B2DPolyPolygon& rPolyPolygon,
             const attribute::LineAttribute& rLineAttribute,
-            const attribute::StrokeAttribute& rStrokeAttribute, 
-            const attribute::LineStartEndAttribute& rStart, 
+            const attribute::StrokeAttribute& rStrokeAttribute,
+            const attribute::LineStartEndAttribute& rStart,
             const attribute::LineStartEndAttribute& rEnd)
         :   PolyPolygonStrokePrimitive2D(rPolyPolygon, rLineAttribute, rStrokeAttribute),
             maStart(rStart),
@@ -315,9 +315,9 @@ namespace drawinglayer
         }
 
         PolyPolygonStrokeArrowPrimitive2D::PolyPolygonStrokeArrowPrimitive2D(
-            const basegfx::B2DPolyPolygon& rPolyPolygon, 
+            const basegfx::B2DPolyPolygon& rPolyPolygon,
             const attribute::LineAttribute& rLineAttribute,
-            const attribute::LineStartEndAttribute& rStart, 
+            const attribute::LineStartEndAttribute& rStart,
             const attribute::LineStartEndAttribute& rEnd)
         :   PolyPolygonStrokePrimitive2D(rPolyPolygon, rLineAttribute),
             maStart(rStart),
@@ -331,7 +331,7 @@ namespace drawinglayer
             {
                 const PolyPolygonStrokeArrowPrimitive2D& rCompare = (PolyPolygonStrokeArrowPrimitive2D&)rPrimitive;
 
-                return (getStart() == rCompare.getStart() 
+                return (getStart() == rCompare.getStart()
                     && getEnd() == rCompare.getEnd());
             }
 
@@ -367,7 +367,7 @@ namespace drawinglayer
     namespace primitive2d
     {
         PolyPolygonColorPrimitive2D::PolyPolygonColorPrimitive2D(
-            const basegfx::B2DPolyPolygon& rPolyPolygon, 
+            const basegfx::B2DPolyPolygon& rPolyPolygon,
             const basegfx::BColor& rBColor)
         :   BasePrimitive2D(),
             maPolyPolygon(rPolyPolygon),
@@ -381,7 +381,7 @@ namespace drawinglayer
             {
                 const PolyPolygonColorPrimitive2D& rCompare = (PolyPolygonColorPrimitive2D&)rPrimitive;
 
-                return (getB2DPolyPolygon() == rCompare.getB2DPolyPolygon() 
+                return (getB2DPolyPolygon() == rCompare.getB2DPolyPolygon()
                     && getBColor() == rCompare.getBColor());
             }
 
@@ -413,7 +413,7 @@ namespace drawinglayer
                 // create SubSequence with FillGradientPrimitive2D
                 const basegfx::B2DRange aPolyPolygonRange(getB2DPolyPolygon().getB2DRange());
                 FillGradientPrimitive2D* pNewGradient = new FillGradientPrimitive2D(
-                    aPolyPolygonRange, 
+                    aPolyPolygonRange,
                     getDefinitionRange(),
                     getFillGradient());
                 const Primitive2DReference xSubRef(pNewGradient);
@@ -422,7 +422,7 @@ namespace drawinglayer
                 // create mask primitive
                 MaskPrimitive2D* pNewMask = new MaskPrimitive2D(getB2DPolyPolygon(), aSubSequence);
                 const Primitive2DReference xRef(pNewMask);
-             
+
                 return Primitive2DSequence(&xRef, 1);
             }
             else
@@ -432,7 +432,7 @@ namespace drawinglayer
         }
 
         PolyPolygonGradientPrimitive2D::PolyPolygonGradientPrimitive2D(
-            const basegfx::B2DPolyPolygon& rPolyPolygon, 
+            const basegfx::B2DPolyPolygon& rPolyPolygon,
             const attribute::FillGradientAttribute& rFillGradient)
         :   BufferedDecompositionPrimitive2D(),
             maPolyPolygon(rPolyPolygon),
@@ -442,7 +442,7 @@ namespace drawinglayer
         }
 
         PolyPolygonGradientPrimitive2D::PolyPolygonGradientPrimitive2D(
-            const basegfx::B2DPolyPolygon& rPolyPolygon, 
+            const basegfx::B2DPolyPolygon& rPolyPolygon,
             const basegfx::B2DRange& rDefinitionRange,
             const attribute::FillGradientAttribute& rFillGradient)
         :   BufferedDecompositionPrimitive2D(),
@@ -459,7 +459,7 @@ namespace drawinglayer
                 const PolyPolygonGradientPrimitive2D& rCompare = (PolyPolygonGradientPrimitive2D&)rPrimitive;
 
                 return (getB2DPolyPolygon() == rCompare.getB2DPolyPolygon()
-                    && getDefinitionRange() == rCompare.getDefinitionRange() 
+                    && getDefinitionRange() == rCompare.getDefinitionRange()
                     && getFillGradient() == rCompare.getFillGradient());
             }
 
@@ -485,9 +485,9 @@ namespace drawinglayer
                 // create SubSequence with FillHatchPrimitive2D
                 const basegfx::B2DRange aPolyPolygonRange(getB2DPolyPolygon().getB2DRange());
                 FillHatchPrimitive2D* pNewHatch = new FillHatchPrimitive2D(
-                    aPolyPolygonRange, 
+                    aPolyPolygonRange,
                     getDefinitionRange(),
-                    getBackgroundColor(), 
+                    getBackgroundColor(),
                     getFillHatch());
                 const Primitive2DReference xSubRef(pNewHatch);
                 const Primitive2DSequence aSubSequence(&xSubRef, 1L);
@@ -505,7 +505,7 @@ namespace drawinglayer
         }
 
         PolyPolygonHatchPrimitive2D::PolyPolygonHatchPrimitive2D(
-            const basegfx::B2DPolyPolygon& rPolyPolygon, 
+            const basegfx::B2DPolyPolygon& rPolyPolygon,
             const basegfx::BColor& rBackgroundColor,
             const attribute::FillHatchAttribute& rFillHatch)
         :   BufferedDecompositionPrimitive2D(),
@@ -517,7 +517,7 @@ namespace drawinglayer
         }
 
         PolyPolygonHatchPrimitive2D::PolyPolygonHatchPrimitive2D(
-            const basegfx::B2DPolyPolygon& rPolyPolygon, 
+            const basegfx::B2DPolyPolygon& rPolyPolygon,
             const basegfx::B2DRange& rDefinitionRange,
             const basegfx::BColor& rBackgroundColor,
             const attribute::FillHatchAttribute& rFillHatch)
@@ -585,8 +585,8 @@ namespace drawinglayer
                             // with the same tiling and offset(s) in the target range of the geometry (the
                             // polygon). The range given in the local FillGraphicAttribute defines the position
                             // of the graphic in unit coordinates relative to the DefinitionRange. Transform
-                            // this using DefinitionRange to get to the global definition and then with the 
-                            // inverse transformation from the target range to go to unit coordinates relative 
+                            // this using DefinitionRange to get to the global definition and then with the
+                            // inverse transformation from the target range to go to unit coordinates relative
                             // to that target coordinate system.
                             basegfx::B2DRange aAdaptedRange(getFillGraphic().getGraphicRange());
 
@@ -613,20 +613,20 @@ namespace drawinglayer
                                 getFillGraphic().getOffsetY());
 
                             xSubRef = new FillGraphicPrimitive2D(
-                                aNewObjectTransform, 
+                                aNewObjectTransform,
                                 aAdaptedFillGraphicAttribute);
                         }
                         else
                         {
                             xSubRef = new FillGraphicPrimitive2D(
-                                aNewObjectTransform, 
+                                aNewObjectTransform,
                                 getFillGraphic());
                         }
 
                         // embed to mask primitive
                         const Primitive2DReference xRef(
                             new MaskPrimitive2D(
-                                getB2DPolyPolygon(), 
+                                getB2DPolyPolygon(),
                                 Primitive2DSequence(&xSubRef, 1)));
 
                         return Primitive2DSequence(&xRef, 1);
@@ -638,7 +638,7 @@ namespace drawinglayer
         }
 
         PolyPolygonGraphicPrimitive2D::PolyPolygonGraphicPrimitive2D(
-            const basegfx::B2DPolyPolygon& rPolyPolygon, 
+            const basegfx::B2DPolyPolygon& rPolyPolygon,
             const attribute::FillGraphicAttribute& rFillGraphic)
         :   BufferedDecompositionPrimitive2D(),
             maPolyPolygon(rPolyPolygon),
@@ -648,7 +648,7 @@ namespace drawinglayer
         }
 
         PolyPolygonGraphicPrimitive2D::PolyPolygonGraphicPrimitive2D(
-            const basegfx::B2DPolyPolygon& rPolyPolygon, 
+            const basegfx::B2DPolyPolygon& rPolyPolygon,
             const basegfx::B2DRange& rDefinitionRange,
             const attribute::FillGraphicAttribute& rFillGraphic)
         :   BufferedDecompositionPrimitive2D(),
@@ -663,7 +663,7 @@ namespace drawinglayer
             if(BufferedDecompositionPrimitive2D::operator==(rPrimitive))
             {
                 const PolyPolygonGraphicPrimitive2D& rCompare = (PolyPolygonGraphicPrimitive2D&)rPrimitive;
-                
+
                 return (getB2DPolyPolygon() == rCompare.getB2DPolyPolygon()
                     && getDefinitionRange() == rCompare.getDefinitionRange()
                     && getFillGraphic() == rCompare.getFillGraphic());
@@ -719,7 +719,7 @@ namespace drawinglayer
                 {
                     const Primitive2DReference aTrans(
                         new UnifiedTransparencePrimitive2D(
-                            aRetval, 
+                            aRetval,
                             getTransparence()));
 
                     aRetval = Primitive2DSequence(&aTrans, 1);
@@ -730,7 +730,7 @@ namespace drawinglayer
         }
 
         PolyPolygonSelectionPrimitive2D::PolyPolygonSelectionPrimitive2D(
-            const basegfx::B2DPolyPolygon& rPolyPolygon, 
+            const basegfx::B2DPolyPolygon& rPolyPolygon,
             const basegfx::BColor& rColor,
             double fTransparence,
             double fDiscreteGrow,

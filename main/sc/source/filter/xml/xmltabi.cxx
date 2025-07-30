@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -63,17 +63,17 @@
 using namespace com::sun::star;
 using namespace xmloff::token;
 
-/** 
- * Determine whether this table is an external reference cache from its 
+/**
+ * Determine whether this table is an external reference cache from its
  * name.  There is currently no way of determining whether a table is a
- * regular table or an external reference cache other than examining the 
- * name itself.  We should probably introduce a new boolean value for 
- * table:table element and use it instead of doing this, to make it more 
- * reliable and future-proof. 
+ * regular table or an external reference cache other than examining the
+ * name itself.  We should probably introduce a new boolean value for
+ * table:table element and use it instead of doing this, to make it more
+ * reliable and future-proof.
  *
- * @param rName 
- * 
- * @return 
+ * @param rName
+ *
+ * @return
  */
 static bool lcl_isExternalRefCache(const rtl::OUString& rName, rtl::OUString& rUrl, rtl::OUString& rExtTabName)
 {
@@ -242,7 +242,7 @@ SvXMLImportContext *ScXMLTableContext::CreateChildContext( sal_uInt16 nPrefix,
     sal_uInt16 nToken = rTokenMap.Get(nPrefix, rLName);
     if (pExternalRefInfo.get())
     {
-        // We only care about the table-row and table-source elements for 
+        // We only care about the table-row and table-source elements for
         // external cache data.
         switch (nToken)
         {

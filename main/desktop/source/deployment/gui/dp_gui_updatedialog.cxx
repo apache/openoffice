@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -189,7 +189,7 @@ UpdateDialog::IgnoredUpdate::IgnoredUpdate( const rtl::OUString &rExtensionID, c
 struct UpdateDialog::Index
 {
     Kind          m_eKind;
-    bool          m_bIgnored; 
+    bool          m_bIgnored;
     sal_uInt16        m_nID;
     sal_uInt16        m_nIndex;
     rtl::OUString m_aName;
@@ -201,7 +201,7 @@ struct UpdateDialog::Index
 UpdateDialog::Index::Index( Kind theKind, sal_uInt16 nID, sal_uInt16 nIndex, const rtl::OUString &rName ):
     m_eKind( theKind ),
     m_bIgnored( false ),
-    m_nID( nID ), 
+    m_nID( nID ),
     m_nIndex( nIndex ),
     m_aName( rName )
 {}
@@ -326,7 +326,7 @@ void UpdateDialog::Thread::stop() {
 UpdateDialog::Thread::Entry::Entry(
     uno::Reference< deployment::XPackage > const & thePackage,
     rtl::OUString const & theVersion):
-    
+
     package(thePackage),
     version(theVersion),
     bProvidesOwnUpdate(false),
@@ -350,7 +350,7 @@ void UpdateDialog::Thread::execute()
     }
     uno::Reference<deployment::XExtensionManager> extMgr =
         deployment::ExtensionManager::get(m_context);
-    
+
     std::vector<std::pair<uno::Reference<deployment::XPackage>, uno::Any > > errors;
 
     dp_misc::UpdateInfoMap updateInfoMap = dp_misc::getOnlineUpdateInfos(
@@ -368,11 +368,11 @@ void UpdateDialog::Thread::execute()
         DisabledUpdate disableUpdate;
         //determine if online updates meet the requirements
         prepareUpdateData(info.info, disableUpdate, updateData);
-        
+
         //determine if the update is installed in the user or shared repository
         rtl::OUString sOnlineVersion;
         if (info.info.is())
-            sOnlineVersion = info.version;        
+            sOnlineVersion = info.version;
         rtl::OUString sVersionUser;
         rtl::OUString sVersionShared;
         rtl::OUString sVersionBundled;
@@ -395,9 +395,9 @@ void UpdateDialog::Thread::execute()
             sVersionShared = extensions[1]->getVersion();
         if (extensions[2].is() )
             sVersionBundled = extensions[2]->getVersion();
-            
+
         bool bSharedReadOnly = extMgr->isReadOnlyRepository(OUSTR("shared"));
-            
+
         dp_misc::UPDATE_SOURCE sourceUser = dp_misc::isUpdateUserExtension(
             bSharedReadOnly, sVersionUser, sVersionShared, sVersionBundled, sOnlineVersion);
         dp_misc::UPDATE_SOURCE sourceShared = dp_misc::isUpdateSharedExtension(
@@ -419,8 +419,8 @@ void UpdateDialog::Thread::execute()
             if (!update(disableUpdate, updateData))
                 return;
         }
-        
-        if (sourceShared != dp_misc::UPDATE_SOURCE_NONE) 
+
+        if (sourceShared != dp_misc::UPDATE_SOURCE_NONE)
         {
 			if (sourceShared == dp_misc::UPDATE_SOURCE_BUNDLED)
 			{
@@ -430,10 +430,10 @@ void UpdateDialog::Thread::execute()
             updateData.bIsShared = true;
             if (!update(disableUpdate, updateData))
                 return;
-        }                
+        }
     }
 
-    
+
     vos::OGuard g(Application::GetSolarMutex());
     if (!m_stop) {
         m_dialog.checkingDone();
@@ -488,16 +488,16 @@ void UpdateDialog::Thread::handleSpecificError(
         b.append(version);
     else
         b.append(data.updateVersion);
-    
-    if (data.sWebsiteURL.getLength()) 
+
+    if (data.sWebsiteURL.getLength())
     {
         b.append(static_cast< sal_Unicode >(' '));
         {
             vos::OGuard g( Application::GetSolarMutex() );
-			if(!m_stop)	
+			if(!m_stop)
 				b.append(m_dialog.m_browserbased);
         }
-    }        
+    }
     return  b.makeStringAndClear();
 }
 
@@ -938,7 +938,7 @@ void UpdateDialog::createNotifyJob( bool bPrepareOnly,
     }
     catch( const uno::Exception& e )
     {
-        dp_misc::TRACE( OUSTR("Caught exception: ") 
+        dp_misc::TRACE( OUSTR("Caught exception: ")
             + e.Message + OUSTR("\n thread terminated.\n\n"));
     }
 }
@@ -957,14 +957,14 @@ void UpdateDialog::notifyMenubar( bool bPrepareOnly, bool bRecheckOnly )
         for ( sal_Int16 i = 0; i < m_updates.getItemCount(); ++i )
         {
             uno::Sequence< rtl::OUString > aItem(2);
-           
+
             UpdateDialog::Index const * p = static_cast< UpdateDialog::Index const * >(m_updates.GetEntryData(i));
-    
+
             if ( p->m_eKind == ENABLED_UPDATE )
             {
                 dp_gui::UpdateData aUpdData = m_enabledUpdates[ p->m_nIndex ];
                 aItem[0] = dp_misc::getIdentifier( aUpdData.aInstalledPackage );
-    
+
                 dp_misc::DescriptionInfoset aInfoset( m_context, aUpdData.aUpdateInfo );
                 aItem[1] = aInfoset.getVersion();
             }
@@ -972,7 +972,7 @@ void UpdateDialog::notifyMenubar( bool bPrepareOnly, bool bRecheckOnly )
                 continue;
             else
                 continue;
-    
+
             aItemList.realloc( nCount + 1 );
             aItemList[ nCount ] = aItem;
             nCount += 1;
@@ -1190,7 +1190,7 @@ void UpdateDialog::storeIgnoredUpdates()
                 xNameContainer->insertByName( (*i)->sExtensionID, uno::Any( elem ) );
             }
         }
-    
+
         uno::Reference< util::XChangesBatch > xChangesBatch( xNameContainer, uno::UNO_QUERY );
         if ( xChangesBatch.is() && xChangesBatch->hasPendingChanges() )
             xChangesBatch->commitChanges();
@@ -1337,7 +1337,7 @@ IMPL_LINK(UpdateDialog, selectionHandler, void *, EMPTYARG)
                         ::rtl::Bootstrap::expandMacros(sCurVersion);
                         m_noDependencyCurVer = m_noDependencyCurVer.replaceAt( nPos, sVersion.getLength(), sCurVersion );
                     }
-        
+
                     b.append(m_noInstall);
                     b.append(LF);
                     b.append(m_noDependency);
@@ -1422,7 +1422,7 @@ IMPL_LINK(UpdateDialog, allHandler, void *, EMPTYARG)
     return 0;
 }
 
-IMPL_LINK(UpdateDialog, okHandler, void *, EMPTYARG) 
+IMPL_LINK(UpdateDialog, okHandler, void *, EMPTYARG)
 {
     //If users are going to update a shared extension then we need
     //to warn them
@@ -1444,7 +1444,7 @@ IMPL_LINK(UpdateDialog, okHandler, void *, EMPTYARG)
 #endif
     }
 
-    
+
     for (sal_uInt16 i = 0; i < m_updates.getItemCount(); ++i) {
         UpdateDialog::Index const * p =
             static_cast< UpdateDialog::Index const * >(

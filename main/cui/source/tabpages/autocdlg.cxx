@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -134,8 +134,8 @@ OfaAutoCorrDlg::OfaAutoCorrDlg(Window* pParent, const SfxItemSet* _pSet ) :
 	//! LANGUAGE_NONE is displayed as '[All]' and the LanguageType
 	//! will be set to LANGUAGE_DONTKNOW
     sal_Int16 nLangList = LANG_LIST_WESTERN;
-    
-    if( SvtLanguageOptions().IsCTLFontEnabled() ) 
+
+    if( SvtLanguageOptions().IsCTLFontEnabled() )
         nLangList |= LANG_LIST_CTL;
     aLanguageLB.SetLanguageList( nLangList, sal_True, sal_True );
 	aLanguageLB.SelectLanguage( LANGUAGE_NONE );
@@ -514,7 +514,7 @@ OfaSwAutoFmtOptionsPage::OfaSwAutoFmtOptionsPage( Window* pParent,
 /*                                                                   */
 /*********************************************************************/
 
-SvLBoxEntry* OfaSwAutoFmtOptionsPage::CreateEntry(String& rTxt, sal_uInt16 nCol) 
+SvLBoxEntry* OfaSwAutoFmtOptionsPage::CreateEntry(String& rTxt, sal_uInt16 nCol)
 {
 	SvLBoxEntry* pEntry = new SvLBoxEntry;
 
@@ -1989,10 +1989,10 @@ enum OfaQuoteOptions
 	REPLACE_1ST
 };
 
-SvLBoxEntry* OfaQuoteTabPage::CreateEntry(String& rTxt, sal_uInt16 nCol) 
+SvLBoxEntry* OfaQuoteTabPage::CreateEntry(String& rTxt, sal_uInt16 nCol)
 {
 	SvLBoxEntry* pEntry = new SvLBoxEntry;
-	
+
     if ( !pCheckButtonData )
 	{
 		pCheckButtonData = new SvLBoxButtonData( &aSwCheckLB );
@@ -2060,7 +2060,7 @@ OfaQuoteTabPage::OfaQuoteTabPage( Window* pParent, const SfxItemSet& rSet ) :
 	//aSglEndQuotePB.SetAccessibleName(String(CUI_RES(STR_PB_SGL_END) ) );
 
 	FreeResource();
-	
+
     sal_Bool bShowSWOptions = sal_False;
 
     aCheckLB.SetHelpId( HID_OFAPAGE_QUOTE_CLB );
@@ -2076,7 +2076,7 @@ OfaQuoteTabPage::OfaQuoteTabPage( Window* pParent, const SfxItemSet& rSet ) :
 	    {
 		    3, 0, 20, 40
     	};
-	
+
     	aSwCheckLB.SetStyle(aSwCheckLB.GetStyle() | WB_HSCROLL| WB_VSCROLL);
 
     	aSwCheckLB.SvxSimpleTable::SetTabs(aStaticTabs);
@@ -2100,7 +2100,7 @@ OfaQuoteTabPage::OfaQuoteTabPage( Window* pParent, const SfxItemSet& rSet ) :
 	aDblStandardPB.SetClickHdl(LINK(this, 	OfaQuoteTabPage, StdQuoteHdl));
 	aSglStandardPB.SetClickHdl(LINK(this, 	OfaQuoteTabPage, StdQuoteHdl));
 
-	// Move down from the position before FreeResource() 
+	// Move down from the position before FreeResource()
 	// For lost help ID issue
 	aSglStandardPB.SetAccessibleName(String(CUI_RES(STR_PB_SGL_STD) ) );
 	aDblStandardPB.SetAccessibleName(String(CUI_RES(STR_PB_DBL_STD) ) );
@@ -2246,7 +2246,7 @@ void OfaQuoteTabPage::Reset( const SfxItemSet& )
 
         aCheckLB.InsertEntry( sNonBrkSpace );
         aCheckLB.InsertEntry( sOrdinal );
-    
+
         sal_uInt16 nPos = 0;
         aCheckLB.CheckEntryPos( nPos++, 0 != (nFlags & AddNonBrkSpace) );
         aCheckLB.CheckEntryPos( nPos++, 0 != (nFlags & ChgOrdinalNumber) );
@@ -2477,7 +2477,7 @@ sal_Bool OfaAutoCompleteTabPage::FillItemSet( SfxItemSet& )
 	bModified |= pOpt->bAutoCmpltCollectWords != bCheck;
 	pOpt->bAutoCmpltCollectWords = bCheck;
     bCheck = !aCBRemoveList.IsChecked(); // inverted value!
-    bModified |= pOpt->bAutoCmpltKeepList != bCheck; 
+    bModified |= pOpt->bAutoCmpltKeepList != bCheck;
     pOpt->bAutoCmpltKeepList = bCheck;
     bCheck = aCBAppendSpace.IsChecked();
 	bModified |= pOpt->bAutoCmpltAppendBlanc != bCheck;

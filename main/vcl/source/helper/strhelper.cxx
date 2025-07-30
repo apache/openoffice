@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -122,12 +122,12 @@ String GetCommandLineToken( int nToken, const String& rLine )
     int nLen = rLine.Len();
     if( ! nLen )
         return String();
-    
+
     int nActualToken = 0;
     sal_Unicode* pBuffer = (sal_Unicode*)alloca( sizeof(sal_Unicode)*( nLen + 1 ) );
     const sal_Unicode* pRun = rLine.GetBuffer();
     sal_Unicode* pLeap = NULL;
-    
+
     while( *pRun && nActualToken <= nToken )
     {
         while( *pRun && isSpace( *pRun ) )
@@ -163,7 +163,7 @@ String GetCommandLineToken( int nToken, const String& rLine )
     }
 
     *pLeap = 0;
-    
+
     String aRet( pBuffer );
     return aRet;
 }
@@ -173,12 +173,12 @@ ByteString GetCommandLineToken( int nToken, const ByteString& rLine )
     int nLen = rLine.Len();
     if( ! nLen )
         return ByteString();
-    
+
     int nActualToken = 0;
     char* pBuffer = (char*)alloca( nLen + 1 );
     const char* pRun = rLine.GetBuffer();
     char* pLeap = NULL;
-    
+
     while( *pRun && nActualToken <= nToken )
     {
         while( *pRun && isSpace( *pRun ) )
@@ -214,7 +214,7 @@ ByteString GetCommandLineToken( int nToken, const ByteString& rLine )
     }
 
     *pLeap = 0;
-    
+
     ByteString aRet( pBuffer );
     return aRet;
 }
@@ -223,10 +223,10 @@ int GetCommandLineTokenCount( const String& rLine )
 {
     if( ! rLine.Len() )
         return 0;
-    
+
     int nTokenCount = 0;
     const sal_Unicode *pRun = rLine.GetBuffer();
-    
+
 
     while( *pRun )
     {
@@ -266,7 +266,7 @@ int GetCommandLineTokenCount( const String& rLine )
         }
         nTokenCount++;
     }
-    
+
     return nTokenCount;
 }
 
@@ -274,10 +274,10 @@ int GetCommandLineTokenCount( const ByteString& rLine )
 {
     if( ! rLine.Len() )
         return 0;
-    
+
     int nTokenCount = 0;
     const char *pRun = rLine.GetBuffer();
-    
+
 
     while( *pRun )
     {
@@ -317,7 +317,7 @@ int GetCommandLineTokenCount( const ByteString& rLine )
         }
         nTokenCount++;
     }
-    
+
     return nTokenCount;
 }
 
@@ -326,7 +326,7 @@ String WhitespaceToSpace( const String& rLine, sal_Bool bProtect )
     int nLen = rLine.Len();
     if( ! nLen )
         return String();
-    
+
     sal_Unicode *pBuffer = (sal_Unicode*)alloca( sizeof(sal_Unicode)*(nLen + 1) );
     const sal_Unicode *pRun = rLine.GetBuffer();
     sal_Unicode *pLeap = pBuffer;
@@ -375,7 +375,7 @@ String WhitespaceToSpace( const String& rLine, sal_Bool bProtect )
         *pLeap = 0;
 
     String aRet( *pBuffer == ' ' ? pBuffer+1 : pBuffer );
-    return aRet;    
+    return aRet;
 }
 
 ByteString WhitespaceToSpace( const ByteString& rLine, sal_Bool bProtect )
@@ -383,7 +383,7 @@ ByteString WhitespaceToSpace( const ByteString& rLine, sal_Bool bProtect )
     int nLen = rLine.Len();
     if( ! nLen )
         return ByteString();
-    
+
     char *pBuffer = (char*)alloca( nLen + 1 );
     const char *pRun = rLine.GetBuffer();
     char *pLeap = pBuffer;
@@ -432,7 +432,7 @@ ByteString WhitespaceToSpace( const ByteString& rLine, sal_Bool bProtect )
         *pLeap = 0;
 
     ByteString aRet( *pBuffer == ' ' ? pBuffer+1 : pBuffer );
-    return aRet;    
+    return aRet;
 }
 
 } // namespace

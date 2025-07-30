@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
@@ -212,14 +212,14 @@ namespace drawinglayer
     VDevBuffer& getVDevBuffer()
     {
         // secure global instance with Vcl's safe desroyer of external (seen by
-        // library base) stuff, the remembered VDevs need to be deleted before 
+        // library base) stuff, the remembered VDevs need to be deleted before
         // Vcl's deinit
         static vcl::DeleteOnDeinit< VDevBuffer > aVDevBuffer(new VDevBuffer());
         return *aVDevBuffer.get();
     }
 
     impBufferDevice::impBufferDevice(
-        OutputDevice& rOutDev, 
+        OutputDevice& rOutDev,
         const basegfx::B2DRange& rRange,
         bool bAddOffsetToMapping)
     :   mrOutDev(rOutDev),
@@ -230,7 +230,7 @@ namespace drawinglayer
         basegfx::B2DRange aRangePixel(rRange);
         aRangePixel.transform(mrOutDev.GetViewTransformation());
         const Rectangle aRectPixel(
-            (sal_Int32)floor(aRangePixel.getMinX()), (sal_Int32)floor(aRangePixel.getMinY()), 
+            (sal_Int32)floor(aRangePixel.getMinX()), (sal_Int32)floor(aRangePixel.getMinY()),
             (sal_Int32)ceil(aRangePixel.getMaxX()), (sal_Int32)ceil(aRangePixel.getMaxY()));
         const Point aEmptyPoint;
         maDestPixel = Rectangle(aEmptyPoint, mrOutDev.GetOutputSizePixel());
@@ -241,7 +241,7 @@ namespace drawinglayer
             mpContent = getVDevBuffer().alloc(mrOutDev, maDestPixel.GetSize(), false, false);
 
             // #i93485# assert when copying from window to VDev is used
-            OSL_ENSURE(mrOutDev.GetOutDevType() != OUTDEV_WINDOW, 
+            OSL_ENSURE(mrOutDev.GetOutDevType() != OUTDEV_WINDOW,
                 "impBufferDevice render helper: Copying from Window to VDev, this should be avoided (!)");
 
             const bool bWasEnabledSrc(mrOutDev.IsMapModeEnabled());
@@ -290,17 +290,17 @@ namespace drawinglayer
             const Size aSizePixel(maDestPixel.GetSize());
             const bool bWasEnabledDst(mrOutDev.IsMapModeEnabled());
             static bool bDoSaveForVisualControl(false);
-        
+
             mrOutDev.EnableMapMode(false);
             mpContent->EnableMapMode(false);
-            Bitmap aContent(mpContent->GetBitmap(aEmptyPoint, aSizePixel)); 
-        
+            Bitmap aContent(mpContent->GetBitmap(aEmptyPoint, aSizePixel));
+
             if(bDoSaveForVisualControl)
             {
                 SvFileStream aNew((const String&)String(ByteString( "c:\\content.bmp" ), RTL_TEXTENCODING_UTF8), STREAM_WRITE|STREAM_TRUNC);
                 WriteDIB(aContent, aNew, false, true);
             }
-        
+
             if(mpAlpha)
             {
                 mpAlpha->EnableMapMode(false);
@@ -317,7 +317,7 @@ namespace drawinglayer
             else if(mpMask)
             {
                 mpMask->EnableMapMode(false);
-                const Bitmap aMask(mpMask->GetBitmap(aEmptyPoint, aSizePixel)); 
+                const Bitmap aMask(mpMask->GetBitmap(aEmptyPoint, aSizePixel));
 
                 if(bDoSaveForVisualControl)
                 {
@@ -337,19 +337,19 @@ namespace drawinglayer
             {
                 mrOutDev.DrawBitmap(maDestPixel.TopLeft(), aContent);
             }
-        
+
             mrOutDev.EnableMapMode(bWasEnabledDst);
         }
     }
 
-    VirtualDevice& impBufferDevice::getContent() 
-    { 
+    VirtualDevice& impBufferDevice::getContent()
+    {
         OSL_ENSURE(mpContent, "impBufferDevice: No content, check isVisible() before accessing (!)");
-        return *mpContent; 
+        return *mpContent;
     }
 
     VirtualDevice& impBufferDevice::getMask()
-    { 
+    {
         OSL_ENSURE(mpContent, "impBufferDevice: No content, check isVisible() before accessing (!)");
         if(!mpMask)
         {
@@ -358,12 +358,12 @@ namespace drawinglayer
 
             // do NOT copy AA flag for mask!
         }
-        
+
         return *mpMask;
     }
-    
-    VirtualDevice& impBufferDevice::getTransparence() 
-    { 
+
+    VirtualDevice& impBufferDevice::getTransparence()
+    {
         OSL_ENSURE(mpContent, "impBufferDevice: No content, check isVisible() before accessing (!)");
         if(!mpAlpha)
         {
@@ -373,7 +373,7 @@ namespace drawinglayer
             // copy AA flag for new target; masking needs to be smooth
             mpAlpha->SetAntialiasing(mpContent->GetAntialiasing());
         }
-        
+
         return *mpAlpha;
     }
 } // end of namespace drawinglayer

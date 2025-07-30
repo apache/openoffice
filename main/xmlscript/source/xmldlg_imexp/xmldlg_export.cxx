@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -68,10 +68,10 @@ Reference< xml::sax::XAttributeList > Style::createElement()
 {
     ElementDescriptor * pStyle = new ElementDescriptor(
         OUString( RTL_CONSTASCII_USTRINGPARAM(XMLNS_DIALOGS_PREFIX ":style") ) );
-    
+
     // style-id
     pStyle->addAttribute( OUString( RTL_CONSTASCII_USTRINGPARAM(XMLNS_DIALOGS_PREFIX ":style-id") ), _id );
-    
+
     // background-color
     if (_set & 0x1)
     {
@@ -82,7 +82,7 @@ Reference< xml::sax::XAttributeList > Style::createElement()
         pStyle->addAttribute( OUString( RTL_CONSTASCII_USTRINGPARAM(XMLNS_DIALOGS_PREFIX ":background-color") ),
                               buf.makeStringAndClear() );
     }
-    
+
     // text-color
     if (_set & 0x2)
     {
@@ -93,7 +93,7 @@ Reference< xml::sax::XAttributeList > Style::createElement()
         pStyle->addAttribute( OUString( RTL_CONSTASCII_USTRINGPARAM(XMLNS_DIALOGS_PREFIX ":text-color") ),
                               buf.makeStringAndClear() );
     }
-    
+
     // textline-color
     if (_set & 0x20)
     {
@@ -104,7 +104,7 @@ Reference< xml::sax::XAttributeList > Style::createElement()
         pStyle->addAttribute( OUString( RTL_CONSTASCII_USTRINGPARAM(XMLNS_DIALOGS_PREFIX ":textline-color") ),
                               buf.makeStringAndClear() );
     }
-    
+
     // fill-color
     if (_set & 0x10)
     {
@@ -115,7 +115,7 @@ Reference< xml::sax::XAttributeList > Style::createElement()
         pStyle->addAttribute( OUString( RTL_CONSTASCII_USTRINGPARAM(XMLNS_DIALOGS_PREFIX ":fill-color") ),
                               buf.makeStringAndClear() );
     }
-    
+
     // border
     if (_set & 0x4)
     {
@@ -147,7 +147,7 @@ Reference< xml::sax::XAttributeList > Style::createElement()
             break;
         }
     }
-    
+
     // visual effect (look)
     if (_set & 0x40)
     {
@@ -175,7 +175,7 @@ Reference< xml::sax::XAttributeList > Style::createElement()
     if (_set & 0x8)
     {
         awt::FontDescriptor def_descr;
-        
+
         // dialog:font-name CDATA #IMPLIED
         if (def_descr.Name != _descr.Name)
         {
@@ -488,7 +488,7 @@ Reference< xml::sax::XAttributeList > Style::createElement()
                 break;
             }
         }
-        
+
         // additional attributes not in FontDescriptor struct
         // dialog:font-relief (none|embossed|engraved) #IMPLIED
         switch (_fontRelief)
@@ -549,7 +549,7 @@ Reference< xml::sax::XAttributeList > Style::createElement()
             break;
         }
     }
-    
+
     return pStyle;
 }
 
@@ -565,11 +565,11 @@ void ElementDescriptor::addNumberFormatAttr(
     lang::Locale locale;
     OSL_VERIFY( xFormatProperties->getPropertyValue( OUString( RTL_CONSTASCII_USTRINGPARAM("FormatString") ) ) >>= sFormat );
     OSL_VERIFY( xFormatProperties->getPropertyValue( OUString( RTL_CONSTASCII_USTRINGPARAM("Locale") ) ) >>= locale );
-    
+
     addAttribute(
         OUString( RTL_CONSTASCII_USTRINGPARAM(XMLNS_DIALOGS_PREFIX ":format-code") ),
         sFormat );
-    
+
     // format-locale
     OUStringBuffer buf( 48 );
     buf.append( locale.Language );
@@ -941,7 +941,7 @@ void ElementDescriptor::readSelectionTypeAttr( OUString const & rPropName, OUStr
     if (beans::PropertyState_DEFAULT_VALUE != _xPropState->getPropertyState( rPropName ))
     {
 		Any aSelectionType ( _xProps->getPropertyValue( rPropName ) );
-		
+
 		if (aSelectionType.getValueTypeClass() == TypeClass_ENUM && aSelectionType.getValueType() == ::getCppuType( (::view::SelectionType*)0 ))
         {
 			::view::SelectionType eSelectionType;
@@ -974,12 +974,12 @@ void ElementDescriptor::readImageScaleModeAttr( OUString const & rPropName, OUSt
     if (beans::PropertyState_DEFAULT_VALUE != _xPropState->getPropertyState( rPropName ))
     {
         Any aImageScaleMode( _xProps->getPropertyValue( rPropName ) );
-        
+
         if (aImageScaleMode.getValueTypeClass() == TypeClass_SHORT)
         {
             sal_Int16 nImageScaleMode;
             aImageScaleMode >>= nImageScaleMode;
-            
+
             switch(nImageScaleMode)
             {
                 case ::awt::ImageScaleMode::NONE:
@@ -1006,7 +1006,7 @@ void ElementDescriptor::readDefaults( bool supportPrintable, bool supportVisible
              * reinterpret_cast< const OUString * >( a.getValue() ) );
     readShortAttr( OUString( RTL_CONSTASCII_USTRINGPARAM("TabIndex") ),
                    OUString( RTL_CONSTASCII_USTRINGPARAM(XMLNS_DIALOGS_PREFIX ":tab-index") ) );
-    
+
     sal_Bool bEnabled = sal_False;
     if (_xProps->getPropertyValue( OUString( RTL_CONSTASCII_USTRINGPARAM("Enabled") ) ) >>= bEnabled)
     {
@@ -1020,13 +1020,13 @@ void ElementDescriptor::readDefaults( bool supportPrintable, bool supportVisible
     {
         OSL_ENSURE( 0, "unexpected property type for \"Enabled\": not bool!" );
     }
-    
+
     sal_Bool bVisible = sal_True;
     if (supportVisible) try
     {
         if (_xProps->getPropertyValue( OUString( RTL_CONSTASCII_USTRINGPARAM("EnableVisible") ) ) >>= bVisible)
         {
-   
+
             // only write out the non default case
             if (! bVisible)
             {
@@ -1111,9 +1111,9 @@ void ElementDescriptor::readEvents()
                                 descr.ScriptCode.getLength() > 0 &&
                                 descr.ScriptType.getLength() > 0,
                                 "### invalid event descr!" );
-                    
+
                     OUString aEventName;
-                    
+
                     if (! descr.AddListenerParam.getLength())
                     {
                         // detection of event-name
@@ -1137,16 +1137,16 @@ void ElementDescriptor::readEvents()
                             ++p;
                         }
                     }
-                    
+
                     ElementDescriptor * pElem;
                     Reference< xml::sax::XAttributeList > xElem;
-                    
+
                     if (aEventName.getLength()) // script:event
-                    {    
+                    {
                         pElem = new ElementDescriptor(
                             OUString( RTL_CONSTASCII_USTRINGPARAM(XMLNS_SCRIPT_PREFIX ":event") ) );
                         xElem = pElem;
-                        
+
                         pElem->addAttribute(
                             OUString( RTL_CONSTASCII_USTRINGPARAM(XMLNS_SCRIPT_PREFIX ":event-name") ),
                             aEventName );
@@ -1156,14 +1156,14 @@ void ElementDescriptor::readEvents()
                         pElem = new ElementDescriptor(
                             OUString( RTL_CONSTASCII_USTRINGPARAM(XMLNS_SCRIPT_PREFIX ":listener-event") ) );
                         xElem = pElem;
-                        
+
                         pElem->addAttribute(
                             OUString( RTL_CONSTASCII_USTRINGPARAM(XMLNS_SCRIPT_PREFIX ":listener-type") ),
                             descr.ListenerType );
                         pElem->addAttribute(
                             OUString( RTL_CONSTASCII_USTRINGPARAM(XMLNS_SCRIPT_PREFIX ":listener-method") ),
                             descr.EventMethod );
-                        
+
                         if (descr.AddListenerParam.getLength())
                         {
                             pElem->addAttribute(
@@ -1197,12 +1197,12 @@ void ElementDescriptor::readEvents()
                             OUString( RTL_CONSTASCII_USTRINGPARAM(XMLNS_SCRIPT_PREFIX ":macro-name") ),
                             descr.ScriptCode );
                     }
-                    
+
                     // language
                     pElem->addAttribute(
                         OUString( RTL_CONSTASCII_USTRINGPARAM(XMLNS_SCRIPT_PREFIX ":language") ),
                         descr.ScriptType );
-                    
+
                     addSubElement( xElem );
                 }
                 else
@@ -1249,7 +1249,7 @@ OUString StyleBag::getStyleId( Style const & rStyle )
     {
         return OUString(); // everything default: no need to export a specific style
     }
-    
+
     // lookup existing style
     for ( size_t nStylesPos = 0; nStylesPos < _styles.size(); ++nStylesPos )
     {
@@ -1284,7 +1284,7 @@ OUString StyleBag::getStyleId( Style const & rStyle )
             if ((bset & 0x40) &&
                 rStyle._visualEffect != pStyle->_visualEffect)
                 continue;
-            
+
             // merge in
             short bnset = rStyle._set & ~pStyle->_set;
             if (bnset & 0x1)
@@ -1306,14 +1306,14 @@ OUString StyleBag::getStyleId( Style const & rStyle )
             }
             if (bnset & 0x40)
                 pStyle->_visualEffect = rStyle._visualEffect;
-            
+
             pStyle->_all |= rStyle._all;
             pStyle->_set |= rStyle._set;
-            
+
             return pStyle->_id;
         }
     }
-    
+
     // no appr style found, append new
     Style * pStyle = new Style( rStyle );
     pStyle->_id = OUString::valueOf( (sal_Int32)_styles.size() );
@@ -1357,14 +1357,14 @@ void SAL_CALL exportDialogModel(
 {
     StyleBag all_styles;
     ::std::vector< Reference< xml::sax::XAttributeList > > all_elements;
-    
+
     // read out all props
 
     Sequence< OUString > aElements( xDialogModel->getElementNames() );
     OUString const * pElements = aElements.getConstArray();
-    
+
     ElementDescriptor * pRadioGroup = 0;
-    
+
     sal_Int32 nPos;
     for ( nPos = 0; nPos < aElements.getLength(); ++nPos )
     {
@@ -1384,7 +1384,7 @@ void SAL_CALL exportDialogModel(
 
         ElementDescriptor * pElem = 0;
         Reference< xml::sax::XAttributeList > xElem;
-        
+
         // group up radio buttons
         if ( xServiceInfo->supportsService( ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM("com.sun.star.awt.UnoControlRadioButtonModel") ) ) )
         {
@@ -1395,7 +1395,7 @@ void SAL_CALL exportDialogModel(
                     OUString( RTL_CONSTASCII_USTRINGPARAM(XMLNS_DIALOGS_PREFIX ":radiogroup") ) );
                 all_elements.push_back( pRadioGroup );
             }
-            
+
             pElem = new ElementDescriptor(
                 xProps, xPropState,
                 OUString( RTL_CONSTASCII_USTRINGPARAM(XMLNS_DIALOGS_PREFIX ":radio") ) );
@@ -1406,7 +1406,7 @@ void SAL_CALL exportDialogModel(
         else // no radio
         {
             pRadioGroup = 0; // close radiogroup
-            
+
             if (xServiceInfo->supportsService( ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM("com.sun.star.awt.UnoControlButtonModel") ) ) )
             {
                 pElem = new ElementDescriptor(
@@ -1519,7 +1519,7 @@ void SAL_CALL exportDialogModel(
                     OUString( RTL_CONSTASCII_USTRINGPARAM(XMLNS_DIALOGS_PREFIX ":numericfield") ) );
                 xElem = static_cast< xml::sax::XAttributeList * >( pElem );
                 pElem->readNumericFieldModel( &all_styles );
-            }           
+            }
             else if (xServiceInfo->supportsService( ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM("com.sun.star.awt.UnoControlTimeFieldModel") ) ) )
             {
                 pElem = new ElementDescriptor(
@@ -1569,7 +1569,7 @@ void SAL_CALL exportDialogModel(
                 pElem->readProgressBarModel( &all_styles );
             }
             //
-            
+
             OSL_ASSERT( xElem.is() );
             if (xElem.is())
             {
@@ -1582,21 +1582,21 @@ void SAL_CALL exportDialogModel(
             }
         }
     }
-    
+
     xOut->startDocument();
-    
+
     OUString aDocTypeStr( RTL_CONSTASCII_USTRINGPARAM(
         "<!DOCTYPE dlg:window PUBLIC \"-//OpenOffice.org//DTD OfficeDocument 1.0//EN\""
         " \"dialog.dtd\">" ) );
     xOut->unknown( aDocTypeStr );
     xOut->ignorableWhitespace( OUString() );
-    
+
     // window
     Reference< beans::XPropertySet > xProps( xDialogModel, UNO_QUERY );
     OSL_ASSERT( xProps.is() );
     Reference< beans::XPropertyState > xPropState( xProps, UNO_QUERY );
     OSL_ASSERT( xPropState.is() );
-    
+
     OUString aWindowName( RTL_CONSTASCII_USTRINGPARAM(XMLNS_DIALOGS_PREFIX ":window") );
     ElementDescriptor * pWindow = new ElementDescriptor( xProps, xPropState, aWindowName );
     Reference< xml::sax::XAttributeList > xWindow( pWindow );
@@ -1607,30 +1607,30 @@ void SAL_CALL exportDialogModel(
     pWindow->dumpSubElements( xOut.get() );
     // dump out stylebag
     all_styles.dump( xOut );
-    
+
     if (! all_elements.empty())
-    {   
+    {
         // open up bulletinboard
         OUString aBBoardName( RTL_CONSTASCII_USTRINGPARAM(XMLNS_DIALOGS_PREFIX ":bulletinboard") );
         xOut->ignorableWhitespace( OUString() );
         xOut->startElement( aBBoardName, Reference< xml::sax::XAttributeList >() );
-        
+
         // export control elements
         for ( std::size_t n = 0; n < all_elements.size(); ++n )
         {
             ElementDescriptor * pElem = static_cast< ElementDescriptor * >( all_elements[ n ].get() );
             pElem->dump( xOut.get() );
         }
-        
+
         // end bulletinboard
         xOut->ignorableWhitespace( OUString() );
         xOut->endElement( aBBoardName );
     }
-    
+
     // end window
     xOut->ignorableWhitespace( OUString() );
     xOut->endElement( aWindowName );
-    
+
     xOut->endDocument();
 }
 

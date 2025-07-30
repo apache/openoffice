@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -103,7 +103,7 @@ namespace dbaccess
 //........................................................................
 
 //==========================================================================
-//= LocalNameApproval 
+//= LocalNameApproval
 //==========================================================================
 class LocalNameApproval : public IContainerApprove
 {
@@ -346,10 +346,10 @@ Reference< XInterface > SAL_CALL ODocumentContainer::createInstanceWithArguments
 			Reference< XCommandProcessor > xCommandProcessor(xContent,UNO_QUERY);
 			if ( xContent.is() )
 			{
-				xCommandProcessor->execute(aCommand,-1,Reference< XCommandEnvironment >());	
+				xCommandProcessor->execute(aCommand,-1,Reference< XCommandEnvironment >());
 			}
 		}
-		
+
 		//	xRet = xContent;
 	}
 	else if ( ServiceSpecifier == SERVICE_NAME_FORM_COLLECTION || SERVICE_NAME_REPORT_COLLECTION == ServiceSpecifier )
@@ -385,7 +385,7 @@ Reference< XInterface > SAL_CALL ODocumentContainer::createInstanceWithArguments
 			pElementImpl = aFind->second;
 		OSL_ENSURE( pElementImpl ," Invalid entry in map!");
 		xContent = new ODocumentContainer( m_aContext.getLegacyServiceFactory(), *this, pElementImpl, ServiceSpecifier == SERVICE_NAME_FORM_COLLECTION );
-		
+
 		// copy children
 		if ( xCopyFrom.is() )
 		{
@@ -421,7 +421,7 @@ Reference< XInterface > SAL_CALL ODocumentContainer::createInstanceWithArguments
                     {
                         if ( m_bFormsContainer )
                             sServiceName = SERVICE_NAME_FORM_COLLECTION;
-                        else 
+                        else
                             sServiceName = SERVICE_NAME_REPORT_COLLECTION;
                     }
                     else
@@ -451,7 +451,7 @@ Sequence< ::rtl::OUString > SAL_CALL ODocumentContainer::getAvailableServiceName
 Any SAL_CALL ODocumentContainer::execute( const Command& aCommand, sal_Int32 CommandId, const Reference< XCommandEnvironment >& Environment ) throw (Exception, CommandAbortedException, RuntimeException)
 {
 	Any aRet;
-	if ( aCommand.Name.compareToAscii( "open" ) == 0 ) 
+	if ( aCommand.Name.compareToAscii( "open" ) == 0 )
 	{
 		//////////////////////////////////////////////////////////////////
 		// open command for a folder content
@@ -528,7 +528,7 @@ Any SAL_CALL ODocumentContainer::execute( const Command& aCommand, sal_Int32 Com
 
         dispose();
 	}
-	else 
+	else
 		aRet = OContentHelper::execute(aCommand,CommandId,Environment);
 	return aRet;
 }
@@ -559,8 +559,8 @@ namespace
 			}
 		}
 		if ( nIndex == -1 )
-			_sSimpleName = sName; // a content 
-        else 
+			_sSimpleName = sName; // a content
+        else
             _xNameContainer.clear(); // a sub folder doesn't exist
 		return bRet;
 	}
@@ -649,7 +649,7 @@ void SAL_CALL ODocumentContainer::insertByHierarchicalName( const ::rtl::OUStrin
 	::rtl::OUString sName;
 	if ( lcl_queryContent(_sName,xNameContainer,aContent,sName) )
 		throw ElementExistException(_sName,*this);
-	
+
     if ( !xNameContainer.is() )
     {
         ::rtl::OUString sMessage( DBA_RES( RID_STR_NO_SUB_FOLDER ) );
@@ -764,7 +764,7 @@ void SAL_CALL ODocumentContainer::revert(  ) throw (::com::sun::star::io::IOExce
 }
 // -----------------------------------------------------------------------------
 Reference< XStorage> ODocumentContainer::getContainerStorage() const
-{ 
+{
 	return  m_pImpl->m_pDataSource
         ?   m_pImpl->m_pDataSource->getStorage( m_bFormsContainer ? ODatabaseModelImpl::E_FORM : ODatabaseModelImpl::E_REPORT )
         :   Reference< XStorage>();

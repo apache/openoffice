@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -61,9 +61,9 @@ FuEditGluePoints::FuEditGluePoints (
     ::sd::Window* pWin,
     ::sd::View* pView,
     SdDrawDocument*	pDoc,
-    SfxRequest& rReq) 
+    SfxRequest& rReq)
     : FuDraw(pViewSh, pWin, pView, pDoc, rReq)
-	 //Solution: Add Shift+UP/DOWN/LEFT/RIGHT key to move the position of insert point, 
+	 //Solution: Add Shift+UP/DOWN/LEFT/RIGHT key to move the position of insert point,
 	 //and SHIFT+ENTER key to decide the position and draw the new insert point
 	 ,bBeginInsertPoint(sal_False),
 	oldPoint(0,0)
@@ -325,11 +325,11 @@ sal_Bool FuEditGluePoints::KeyInput(const KeyEvent& rKEvt)
 {
 	mpView->SetActualWin( mpWindow );
 
-	//Solution: Add Shift+UP/DOWN/LEFT/RIGHT key to move the position of insert point, 
+	//Solution: Add Shift+UP/DOWN/LEFT/RIGHT key to move the position of insert point,
 	//and SHIFT+ENTER key to decide the position and draw the new insert point
 
 	sal_Bool bReturn = sal_False;
-	
+
 	switch (rKEvt.GetKeyCode().GetCode())
 	{
 		case KEY_UP:
@@ -407,14 +407,14 @@ sal_Bool FuEditGluePoints::KeyInput(const KeyEvent& rKEvt)
 	return bReturn;
 }
 
- //Solution: Add Shift+UP/DOWN/LEFT/RIGHT key to move the position of insert point, 
+ //Solution: Add Shift+UP/DOWN/LEFT/RIGHT key to move the position of insert point,
  //and SHIFT+ENTER key to decide the position and draw the new insert point
 void FuEditGluePoints::ForcePointer(const MouseEvent* pMEvt)
 {
 	if(bBeginInsertPoint && pMEvt)
 	{
-		MouseEvent aMEvt(pMEvt->GetPosPixel(), pMEvt->GetClicks(), 
-			pMEvt->GetMode(), pMEvt->GetButtons(), pMEvt->GetModifier() & ~KEY_SHIFT);  
+		MouseEvent aMEvt(pMEvt->GetPosPixel(), pMEvt->GetClicks(),
+			pMEvt->GetMode(), pMEvt->GetButtons(), pMEvt->GetModifier() & ~KEY_SHIFT);
 		FuDraw::ForcePointer(&aMEvt);
 	}
 	else

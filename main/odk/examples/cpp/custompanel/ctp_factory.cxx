@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -111,19 +111,19 @@ namespace sd { namespace colortoolpanel
         Reference< XUIElement > xUIElement( new PanelUIElement( m_xContext, xParentWindow, i_rResourceURL, nPanelColor ) );
         return xUIElement;
     }
-    
+
     //------------------------------------------------------------------------------------------------------------------
     ::rtl::OUString SAL_CALL ToolPanelFactory::getImplementationName(  ) throw (RuntimeException)
     {
         return getImplementationName_static();
     }
-    
+
     //------------------------------------------------------------------------------------------------------------------
     ::rtl::OUString SAL_CALL ToolPanelFactory::getImplementationName_static(  ) throw (RuntimeException)
     {
         return ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "org.openoffice.comp.example.custompanel.ToolPanelFactory" ) );
     }
-    
+
     //------------------------------------------------------------------------------------------------------------------
     ::sal_Bool SAL_CALL ToolPanelFactory::supportsService( const ::rtl::OUString& i_rServiceName ) throw (RuntimeException)
     {
@@ -138,7 +138,7 @@ namespace sd { namespace colortoolpanel
         }
         return sal_False;
     }
-    
+
     //------------------------------------------------------------------------------------------------------------------
     Sequence< ::rtl::OUString > SAL_CALL ToolPanelFactory::getSupportedServiceNames() throw (RuntimeException)
     {

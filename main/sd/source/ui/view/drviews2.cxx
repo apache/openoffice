@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -635,12 +635,12 @@ void DrawViewShell::FuTemporary(SfxRequest& rReq)
 					case SID_CONVERT_TO_BITMAP:
 					{
                         bool bDone(false);
-                        
+
                         // I have to get the image here directly since GetMarkedObjBitmapEx works
                         // based on Bitmaps, but not on BitmapEx, thus throwing away the alpha
                         // channel. Argh! GetMarkedObjBitmapEx itself is too widely used to safely
-                        // change that, e.g. in the exchange formats. For now I can only add this 
-                        // exception to get good results for Svgs. This is how the code gets more 
+                        // change that, e.g. in the exchange formats. For now I can only add this
+                        // exception to get good results for Svgs. This is how the code gets more
                         // and more crowded, at last I made a remark for myself to change this
                         // as one of the next tasks.
                         if(1 == mpDrawView->GetMarkedObjectCount())
@@ -897,7 +897,7 @@ void DrawViewShell::ExecChar( SfxRequest &rReq )
 {
 	SdDrawDocument* pDoc = GetDoc();
 	if (!pDoc || !mpDrawView)
-	return; 
+	return;
 
 	SfxItemSet aEditAttr( pDoc->GetPool() );
 	mpDrawView->GetAttributes( aEditAttr );
@@ -937,7 +937,7 @@ void DrawViewShell::ExecChar( SfxRequest &rReq )
 			}
 		}
 		break;
-	case SID_ATTR_CHAR_WEIGHT:     
+	case SID_ATTR_CHAR_WEIGHT:
 		if( rReq.GetArgs() )
 		{
 			//const SvxWeightItem *pItem = (const SvxWeightItem*) rReq.GetArg( SID_ATTR_CHAR_WEIGHT, sal_False, TYPE(SvxWeightItem) );
@@ -947,7 +947,7 @@ void DrawViewShell::ExecChar( SfxRequest &rReq )
 				aNewAttr.Put(*pItem);
 			}
 		}
-		break;	
+		break;
 	case SID_ATTR_CHAR_POSTURE:
 		if( rReq.GetArgs() )
 		{
@@ -1091,7 +1091,7 @@ SdPage* DrawViewShell::CreateOrDuplicatePage (
 void DrawViewShell::ExecutePropPanelAttr (SfxRequest& rReq)
 {
 	if(SlideShow::IsRunning( GetViewShellBase() ))
-		return;	
+		return;
 
 	SdDrawDocument* pDoc = GetDoc();
 	if (!pDoc || !mpDrawView)
@@ -1102,7 +1102,7 @@ void DrawViewShell::ExecutePropPanelAttr (SfxRequest& rReq)
 
 	switch ( nSId )
 	{
-	case SID_TABLE_VERT_NONE:		
+	case SID_TABLE_VERT_NONE:
 	case SID_TABLE_VERT_CENTER:
 	case SID_TABLE_VERT_BOTTOM:
 		SdrTextVertAdjust eTVA = SDRTEXTVERTADJUST_TOP;
@@ -1127,14 +1127,14 @@ void DrawViewShell::GetStatePropPanelAttr(SfxItemSet& rSet)
 	if (!pDoc || !mpDrawView)
 		return;
 
-	SfxItemSet aAttrs( pDoc->GetPool() );		
+	SfxItemSet aAttrs( pDoc->GetPool() );
 	mpDrawView->GetAttributes( aAttrs );
-	
+
 	while ( nWhich )
 	{
 		sal_uInt16 nSlotId = SfxItemPool::IsWhich(nWhich)
 			? GetPool().GetSlotId(nWhich)
-			: nWhich; 
+			: nWhich;
 		switch ( nSlotId )
 		{
 			case SID_TABLE_VERT_NONE:
@@ -1153,21 +1153,21 @@ void DrawViewShell::GetStatePropPanelAttr(SfxItemSet& rSet)
 
 				//if(SFX_ITEM_DONTCARE != eVState && SFX_ITEM_DONTCARE != eHState)
 				if(SFX_ITEM_DONTCARE != eVState)
-				{					
+				{
 					SdrTextVertAdjust eTVA = (SdrTextVertAdjust)((const SdrTextVertAdjustItem&)aAttrs.Get(SDRATTR_TEXT_VERTADJUST)).GetValue();
 					sal_Bool bSet = nSlotId == SID_TABLE_VERT_NONE && eTVA == SDRTEXTVERTADJUST_TOP||
                             nSlotId == SID_TABLE_VERT_CENTER && eTVA == SDRTEXTVERTADJUST_CENTER ||
                             nSlotId == SID_TABLE_VERT_BOTTOM && eTVA == SDRTEXTVERTADJUST_BOTTOM;
 					rSet.Put(SfxBoolItem(nSlotId, bSet));
 				}
-				else 
+				else
 				{
 					rSet.Put(SfxBoolItem(nSlotId, sal_False));
 				}
-				break;	
+				break;
 		}
 		nWhich = aIter.NextWhich();
-	}	
+	}
 }
 
 } // end of namespace sd

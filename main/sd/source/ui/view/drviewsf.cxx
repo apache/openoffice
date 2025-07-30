@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -316,7 +316,7 @@ void DrawViewShell::GetAttrState( SfxItemSet& rSet )
 			{
 				SfxItemSet aAttrs( GetDoc()->GetPool() );
 				mpDrawView->GetAttributes( aAttrs );
-				
+
 				SvxAdjustItem aItem= ( (const SvxAdjustItem&) aAttrs.Get( EE_PARA_JUST ) );
 				SvxAdjust eAdj = aItem.GetAdjust();
 				if ( eAdj == SVX_ADJUST_LEFT)
@@ -333,7 +333,7 @@ void DrawViewShell::GetAttrState( SfxItemSet& rSet )
 			{
 				SfxItemSet aAttrs( GetDoc()->GetPool() );
 				mpDrawView->GetAttributes( aAttrs );
-				
+
 				SvxAdjustItem aItem= ( (const SvxAdjustItem&) aAttrs.Get( EE_PARA_JUST ) );
 				SvxAdjust eAdj = aItem.GetAdjust();
 				if ( eAdj == SVX_ADJUST_CENTER)
@@ -350,7 +350,7 @@ void DrawViewShell::GetAttrState( SfxItemSet& rSet )
 			{
 				SfxItemSet aAttrs( GetDoc()->GetPool() );
 				mpDrawView->GetAttributes( aAttrs );
-				
+
 				SvxAdjustItem aItem= ( (const SvxAdjustItem&) aAttrs.Get( EE_PARA_JUST ) );
 				SvxAdjust eAdj = aItem.GetAdjust();
 				if ( eAdj == SVX_ADJUST_RIGHT)
@@ -367,7 +367,7 @@ void DrawViewShell::GetAttrState( SfxItemSet& rSet )
 			{
 				SfxItemSet aAttrs( GetDoc()->GetPool() );
 				mpDrawView->GetAttributes( aAttrs );
-				
+
 				SvxAdjustItem aItem= ( (const SvxAdjustItem&) aAttrs.Get( EE_PARA_JUST ) );
 				SvxAdjust eAdj = aItem.GetAdjust();
 				if ( eAdj == SVX_ADJUST_BLOCK)
@@ -584,14 +584,14 @@ void DrawViewShell::GetAttrState( SfxItemSet& rSet )
 			case FN_NUM_NUM_RULE_INDEX:
 			{
 				SfxItemSet aEditAttr( GetDoc()->GetPool() );
-				mpDrawView->GetAttributes( aEditAttr );		
+				mpDrawView->GetAttributes( aEditAttr );
 
 				SfxItemSet aNewAttr( GetPool(), EE_ITEMS_START, EE_ITEMS_END );
 				aNewAttr.Put( aEditAttr, sal_False );
 
 
-				sal_uInt16 nActNumLvl = (sal_uInt16)0xFFFF;	
-				SvxNumRule* pNumRule = NULL;	
+				sal_uInt16 nActNumLvl = (sal_uInt16)0xFFFF;
+				SvxNumRule* pNumRule = NULL;
 				const SfxPoolItem* pTmpItem=NULL;
 				sal_uInt16 nNumItemId = SID_ATTR_NUMBERING_RULE;
 
@@ -604,7 +604,7 @@ void DrawViewShell::GetAttrState( SfxItemSet& rSet )
 
 				if (pTmpItem)
 					pNumRule = new SvxNumRule(*((SvxNumBulletItem*)pTmpItem)->GetNumRule());
-					
+
 				if ( pNumRule )
 				{
 					sal_uInt16 nMask = 1;
@@ -634,7 +634,7 @@ void DrawViewShell::GetAttrState( SfxItemSet& rSet )
 
 								default:
 									bBullets = sal_False;
-							}							
+							}
 
 							rSet.Put(SfxUInt16Item(FN_BUL_NUM_RULE_INDEX,(sal_uInt16)0xFFFF));
 							rSet.Put(SfxUInt16Item(FN_NUM_NUM_RULE_INDEX,(sal_uInt16)0xFFFF));

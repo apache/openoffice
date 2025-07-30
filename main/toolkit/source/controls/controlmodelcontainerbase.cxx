@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -1449,7 +1449,7 @@ void ControlContainerBase::dispose() throw(RuntimeException)
     mxListener.clear();
     aGuard.clear();
     // --- SAFE ---
-	
+
     if ( xListener.is() )
         xListener->disposing( aEvt );
     UnoControlContainer::dispose();
@@ -1667,7 +1667,7 @@ void ControlContainerBase::ImplModelPropertiesChanged( const Sequence< PropertyC
             }
         }
     }
-    
+
     UnoControlContainer::ImplModelPropertiesChanged( rEvents );
 }
 
@@ -1763,7 +1763,7 @@ void lcl_ApplyResolverToNestedContainees(  const Reference< resource::XStringRes
             lcl_ApplyResolverToNestedContainees(  xStringResourceResolver, xNestedContainer );
 
     }
-    
+
 }
 void ControlContainerBase::ImplStartListingForResourceEvents()
 {
@@ -1791,7 +1791,7 @@ void ControlContainerBase::ImplUpdateResourceResolver()
         return;
 
     lcl_ApplyResolverToNestedContainees(  xStringResourceResolver, this );
-    
+
     // propagate resource resolver changes to language dependent props of the dialog
     Reference< XPropertySet > xPropertySet( getModel(), UNO_QUERY );
     if ( xPropertySet.is() )
@@ -1833,7 +1833,7 @@ uno::Reference< graphic::XGraphic > ControlContainerBase::Impl_getGraphicFromURL
 
 ::rtl::OUString getPhysicalLocation( const ::com::sun::star::uno::Any& rbase, const ::com::sun::star::uno::Any& rUrl )
 {
-	
+
 	::rtl::OUString baseLocation;
 	::rtl::OUString url;
 

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -123,7 +123,7 @@ void SvxEditEngineForwarder::SetParaAttribs( sal_uInt32 nPara, const SfxItemSet&
 void SvxEditEngineForwarder::RemoveAttribs( const ESelection& rSelection, sal_Bool bRemoveParaAttribs, sal_uInt16 nWhich )
 {
     rEditEngine.RemoveAttribs( rSelection, bRemoveParaAttribs, nWhich );
-}    
+}
 
 SfxItemPool* SvxEditEngineForwarder::GetPool() const
 {
@@ -156,8 +156,8 @@ void SvxEditEngineForwarder::QuickSetAttribs( const SfxItemSet& rSet, const ESel
 }
 
 sal_Bool SvxEditEngineForwarder::IsValid() const
-{ 
-    // cannot reliably query EditEngine state 
+{
+    // cannot reliably query EditEngine state
     // while in the middle of an update
     return rEditEngine.GetUpdateMode();
 }
@@ -257,7 +257,7 @@ sal_uInt16 GetSvxEditEngineItemState( EditEngine& rEditEngine, const ESelection&
 				{
 					if( *pParaItem != *pTempItem )
 						return SFX_ITEM_DONTCARE;
-				} 
+				}
 				else
 				{
 					pParaItem = pTempItem;
@@ -322,7 +322,7 @@ LanguageType SvxEditEngineForwarder::GetLanguage( sal_uInt32 nPara, sal_uInt16 n
 
 sal_uInt16 SvxEditEngineForwarder::GetFieldCount( sal_uInt32 nPara ) const
 {
-    return rEditEngine.GetFieldCount(nPara); 
+    return rEditEngine.GetFieldCount(nPara);
 }
 
 EFieldInfo SvxEditEngineForwarder::GetFieldInfo( sal_uInt32 nPara, sal_uInt16 nField ) const
@@ -386,7 +386,7 @@ Rectangle SvxEditEngineForwarder::GetCharBounds( sal_uInt32 nPara, sal_uInt16 nI
 Rectangle SvxEditEngineForwarder::GetParaBounds( sal_uInt32 nPara ) const
 {
     const Point aPnt = rEditEngine.GetDocPosTopLeft( nPara );
-    sal_uLong nWidth; 
+    sal_uLong nWidth;
     sal_uLong nHeight;
     sal_uLong nTextWidth;
 
@@ -404,7 +404,7 @@ Rectangle SvxEditEngineForwarder::GetParaBounds( sal_uInt32 nPara ) const
     }
     else
     {
-        nWidth = rEditEngine.CalcTextWidth();        
+        nWidth = rEditEngine.CalcTextWidth();
         nHeight = rEditEngine.GetTextHeight( nPara );
 
         return Rectangle( 0, aPnt.Y(), nWidth, aPnt.Y() + nHeight );
@@ -426,7 +426,7 @@ sal_Bool SvxEditEngineForwarder::GetIndexAtPoint( const Point& rPos, sal_uInt32&
     // #101701#
     Size aSize( rEditEngine.CalcTextWidth(), rEditEngine.GetTextHeight() );
     ::std::swap( aSize.Width(), aSize.Height() );
-    Point aEEPos( SvxEditSourceHelper::UserSpaceToEE( rPos, 
+    Point aEEPos( SvxEditSourceHelper::UserSpaceToEE( rPos,
                                                       aSize,
                                                       rEditEngine.IsVertical() == sal_True ));
 
@@ -467,17 +467,17 @@ sal_uInt16 SvxEditEngineForwarder::GetLineLen( sal_uInt32 nPara, sal_uInt16 nLin
 {
     return rEditEngine.GetLineLen(nPara, nLine);
 }
-    
+
 void SvxEditEngineForwarder::GetLineBoundaries( /*out*/sal_uInt16 &rStart, /*out*/sal_uInt16 &rEnd, sal_uInt32 nPara, sal_uInt16 nLine ) const
 {
     rEditEngine.GetLineBoundaries(rStart, rEnd, nPara, nLine);
 }
-    
+
 sal_uInt16 SvxEditEngineForwarder::GetLineNumberAtIndex( sal_uInt32 nPara, sal_uInt16 nIndex ) const
 {
     return rEditEngine.GetLineNumberAtIndex(nPara, nIndex);
 }
-    
+
 
 sal_Bool SvxEditEngineForwarder::QuickFormatDoc( sal_Bool )
 {
@@ -547,6 +547,6 @@ void SvxEditEngineForwarder::CopyText(const SvxTextForwarder& rSource)
     EditTextObject* pNewTextObject = pSourceForwarder->rEditEngine.CreateTextObject();
     rEditEngine.SetText( *pNewTextObject );
     delete pNewTextObject;
-}    
+}
 
 //------------------------------------------------------------------------

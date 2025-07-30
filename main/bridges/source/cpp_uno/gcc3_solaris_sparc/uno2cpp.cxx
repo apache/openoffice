@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -282,14 +282,14 @@ static void cpp_call(
   	char * pCppStack	=
   		(char *)alloca( (nParams+2) * sizeof(sal_Int64) );
   	char * pCppStackStart	= pCppStack;
-	
+
 	// return
 	typelib_TypeDescription * pReturnTypeDescr = 0;
 	TYPELIB_DANGER_GET( &pReturnTypeDescr, pReturnTypeRef );
 	OSL_ENSURE( pReturnTypeDescr, "### expected return type description!" );
-	
+
 	void * pCppReturn = 0; // if != 0 && != pUnoReturn, needs reconversion
-	
+
 	if (pReturnTypeDescr)
 	{
 		if (bridges::cpp_uno::shared::isSimpleType( pReturnTypeDescr ))
@@ -320,9 +320,9 @@ static void cpp_call(
 	sal_Int32 * pTempIndizes = (sal_Int32 *)(pCppArgs + nParams);
 	// type descriptions for reconversions
 	typelib_TypeDescription ** ppTempParamTypeDescr = (typelib_TypeDescription **)(pCppArgs + (2 * nParams));
-	
+
 	sal_Int32 nTempIndizes   = 0;
-	
+
 	for ( sal_Int32 nPos = 0; nPos < nParams; ++nPos )
 	{
 		const typelib_MethodParameter & rParam = pParams[nPos];
@@ -331,7 +331,7 @@ static void cpp_call(
 		if (!rParam.bOut && bridges::cpp_uno::shared::isSimpleType( pParamTypeDescr ))
 		{
 			pCppArgs[ nPos ] = CPPU_CURRENT_NAMESPACE::adjustPointer(pCppStack, pParamTypeDescr );
-			
+
 			switch (pParamTypeDescr->eTypeClass)
 			{
 			case typelib_TypeClass_HYPER:
@@ -373,7 +373,7 @@ static void cpp_call(
 					*(void **)pCppStack = pCppArgs[nPos] = alloca( pParamTypeDescr->nSize ),
                                 	pUnoArgs[nPos], pParamTypeDescr,
 					pThis->getBridge()->getUno2Cpp() );
-				
+
 				pTempIndizes[nTempIndizes] = nPos; // has to be reconverted
 				// will be released at reconversion
 				ppTempParamTypeDescr[nTempIndizes++] = pParamTypeDescr;
@@ -392,7 +392,7 @@ static void cpp_call(
 	{
 		int nStackLongs = (pCppStack - pCppStackStart)/sizeof(sal_Int32);
 		OSL_ENSURE( !( (pCppStack - pCppStackStart ) & 3), "UNALIGNED STACK !!! (Please DO panic" );
-		
+
 		if( nStackLongs & 1 )
 			// stack has to be 8 byte aligned
 			nStackLongs++;
@@ -411,7 +411,7 @@ static void cpp_call(
 		{
 			sal_Int32 nIndex = pTempIndizes[nTempIndizes];
 			typelib_TypeDescription * pParamTypeDescr = ppTempParamTypeDescr[nTempIndizes];
-			
+
 			if (pParams[nIndex].bIn)
 			{
 				if (pParams[nIndex].bOut) // inout
@@ -428,7 +428,7 @@ static void cpp_call(
 			}
 			// destroy temp cpp param => cpp: every param was constructed
 			uno_destructData( pCppArgs[nIndex], pParamTypeDescr, cpp_release );
-			
+
 			TYPELIB_DANGER_RELEASE( pParamTypeDescr );
 		}
 		// return value
@@ -442,7 +442,7 @@ static void cpp_call(
  	catch( ... )
  	{
  		// get exception
-		   fillUnoException( CPPU_CURRENT_NAMESPACE::__cxa_get_globals()->caughtExceptions, 
+		   fillUnoException( CPPU_CURRENT_NAMESPACE::__cxa_get_globals()->caughtExceptions,
 								*ppUnoExc, pThis->getBridge()->getCpp2Uno() );
 
 		// temporary params
@@ -471,12 +471,12 @@ void unoInterfaceProxyDispatch(
     OString cstr( OUStringToOString( pMemberDescr->pTypeName, RTL_TEXTENCODING_ASCII_US ) );
     fprintf( stderr, "received dispatch( %s )\n", cstr.getStr() );
 #endif
-    
+
 	// is my surrogate
 	bridges::cpp_uno::shared::UnoInterfaceProxy * pThis
        = static_cast< bridges::cpp_uno::shared::UnoInterfaceProxy * >(pUnoI);
 	typelib_InterfaceTypeDescription * pTypeDescr = pThis->pTypeDescr;
-	
+
 	switch (pMemberDescr->eTypeClass)
 	{
 	case typelib_TypeClass_INTERFACE_ATTRIBUTE:
@@ -508,7 +508,7 @@ void unoInterfaceProxyDispatch(
 			OUString aVoidName( RTL_CONSTASCII_USTRINGPARAM("void") );
 			typelib_typedescriptionreference_new(
 				&pReturnTypeRef, typelib_TypeClass_VOID, aVoidName.pData );
-			
+
 			// dependent dispatch
 			aVtableSlot.index += 1; // get, then set method
 			cpp_call(
@@ -519,7 +519,7 @@ void unoInterfaceProxyDispatch(
 
 			typelib_typedescriptionreference_release( pReturnTypeRef );
 		}
-		
+
 		break;
 	}
 	case typelib_TypeClass_INTERFACE_METHOD:
@@ -550,7 +550,7 @@ void unoInterfaceProxyDispatch(
  		(*pThis->pBridge->getUnoEnv()->getRegisteredInterface)(
  		  pThis->pBridge->getUnoEnv(),
 				   (void **)&pInterface, pThis->oid.pData, (typelib_InterfaceTypeDescription *)pTD );
-			
+
                 if (pInterface)
                 {
                     ::uno_any_construct(
@@ -580,7 +580,7 @@ void unoInterfaceProxyDispatch(
 		::com::sun::star::uno::RuntimeException aExc(
 			OUString( RTL_CONSTASCII_USTRINGPARAM("illegal member type description!") ),
 			::com::sun::star::uno::Reference< ::com::sun::star::uno::XInterface >() );
-		
+
 		Type const & rExcType = ::getCppuType( &aExc );
 		// binary identical null reference
 		::uno_type_any_construct( *ppException, &aExc, rExcType.getTypeLibType(), 0 );

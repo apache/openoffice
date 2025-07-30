@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -234,7 +234,7 @@ void OleEmbeddedObject::GetRidOfComponent()
 	{
 		if ( m_nObjectState != -1 && m_nObjectState != embed::EmbedStates::LOADED )
 			SaveObject_Impl();
-			
+
 		m_pOleComponent->removeCloseListener( m_xClosePreventer );
 		try
 		{
@@ -321,7 +321,7 @@ uno::Sequence< sal_Int8 > SAL_CALL OleEmbeddedObject::getClassID()
 
 	return m_aClassID;
 }
-		
+
 //------------------------------------------------------
 ::rtl::OUString SAL_CALL OleEmbeddedObject::getClassName()
 		throw ( uno::RuntimeException )
@@ -421,7 +421,7 @@ void SAL_CALL OleEmbeddedObject::addStateChangeListener( const uno::Reference< e
 
 	if ( !m_pInterfaceContainer )
 		m_pInterfaceContainer = new ::cppu::OMultiTypeInterfaceContainerHelper( m_aMutex );
-	
+
 	m_pInterfaceContainer->addInterface( ::getCppuType( (const uno::Reference< embed::XStateChangeListener >*)0 ),
 														xListener );
 }
@@ -532,7 +532,7 @@ void SAL_CALL OleEmbeddedObject::addCloseListener( const uno::Reference< util::X
 
 	if ( !m_pInterfaceContainer )
 		m_pInterfaceContainer = new ::cppu::OMultiTypeInterfaceContainerHelper( m_aMutex );
-	
+
 	m_pInterfaceContainer->addInterface( ::getCppuType( (const uno::Reference< util::XCloseListener >*)0 ), xListener );
 }
 
@@ -579,7 +579,7 @@ void SAL_CALL OleEmbeddedObject::addEventListener( const uno::Reference< documen
 
 	if ( !m_pInterfaceContainer )
 		m_pInterfaceContainer = new ::cppu::OMultiTypeInterfaceContainerHelper( m_aMutex );
-	
+
 	m_pInterfaceContainer->addInterface( ::getCppuType( (const uno::Reference< document::XEventListener >*)0 ), xListener );
 }
 

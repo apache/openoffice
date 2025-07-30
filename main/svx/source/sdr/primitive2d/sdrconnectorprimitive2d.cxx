@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -48,31 +48,31 @@ namespace drawinglayer
 			if(getSdrLSTAttribute().getLine().isDefault())
 			{
 				// create invisible line for HitTest/BoundRect
-				appendPrimitive2DReferenceToPrimitive2DSequence(aRetval, 
+				appendPrimitive2DReferenceToPrimitive2DSequence(aRetval,
 					createHiddenGeometryPrimitives2D(
                         false,
                         basegfx::B2DPolyPolygon(getUnitPolygon())));
             }
             else
             {
-                appendPrimitive2DReferenceToPrimitive2DSequence(aRetval, 
+                appendPrimitive2DReferenceToPrimitive2DSequence(aRetval,
                     createPolygonLinePrimitive(
-                        getUnitPolygon(), 
-                        getSdrLSTAttribute().getLine(), 
+                        getUnitPolygon(),
+                        getSdrLSTAttribute().getLine(),
                         getSdrLSTAttribute().getLineStartEnd()));
 			}
 
 			// add text
 			if(!getSdrLSTAttribute().getText().isDefault())
 			{
-				appendPrimitive2DReferenceToPrimitive2DSequence(aRetval, 
+				appendPrimitive2DReferenceToPrimitive2DSequence(aRetval,
                     createTextPrimitive(
-                        basegfx::B2DPolyPolygon(getUnitPolygon()), 
-                        basegfx::B2DHomMatrix(), 
-                        getSdrLSTAttribute().getText(), 
-                        getSdrLSTAttribute().getLine(), 
-                        false, 
-                        false, 
+                        basegfx::B2DPolyPolygon(getUnitPolygon()),
+                        basegfx::B2DHomMatrix(),
+                        getSdrLSTAttribute().getText(),
+                        getSdrLSTAttribute().getLine(),
+                        false,
+                        false,
                         false));
 			}
 
@@ -101,7 +101,7 @@ namespace drawinglayer
 			if(BufferedDecompositionPrimitive2D::operator==(rPrimitive))
 			{
 				const SdrConnectorPrimitive2D& rCompare = (SdrConnectorPrimitive2D&)rPrimitive;
-				
+
 				return (getUnitPolygon() == rCompare.getUnitPolygon()
 					&& getSdrLSTAttribute() == rCompare.getSdrLSTAttribute());
 			}

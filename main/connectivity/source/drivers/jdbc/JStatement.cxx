@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -168,7 +168,7 @@ Reference< XResultSet > SAL_CALL java_sql_Statement_Base::getGeneratedValues(  )
     {
         // ignore
     }
-            
+
 	Reference< XResultSet > xRes;
 	if ( !out )
 	{
@@ -266,7 +266,7 @@ Reference< XResultSet > SAL_CALL java_sql_Statement_Base::executeQuery( const ::
 
     jobject out(0);
     SDBThreadAttach t; OSL_ENSURE(t.pEnv,"Java Environment been deleted!");
-	
+
 	{
 		createStatement(t.pEnv);
 		m_sSqlStatement = sql;
@@ -362,7 +362,7 @@ Reference< ::com::sun::star::sdbc::XResultSet > SAL_CALL java_sql_Statement_Base
 	createStatement(t.pEnv);
     static jmethodID mID(NULL);
     jobject out = callResultSetMethod(t.env(),"getResultSet",mID);
-	
+
 	// ACHTUNG: der Aufrufer wird Eigentuemer des zurueckgelieferten Zeigers !!!
 	return out==0 ? 0 : new java_sql_ResultSet( t.pEnv, out, m_aLogger, *m_pConnection,this );
 }
@@ -410,7 +410,7 @@ void SAL_CALL java_sql_Statement_Base::clearWarnings(  ) throw(::com::sun::star:
     ::osl::MutexGuard aGuard( m_aMutex );
 	checkDisposed(java_sql_Statement_BASE::rBHelper.bDisposed);
 	SDBThreadAttach t;
-	
+
 	{
 		createStatement(t.pEnv);
         static jmethodID mID(NULL);

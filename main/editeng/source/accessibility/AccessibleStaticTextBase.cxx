@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -168,14 +168,14 @@ sal_Unicode cNewLine(0x0a);
         sal_Int32 					GetParagraphCount() const;
         sal_Int32                   GetParagraphIndex() const;
         sal_Int32                   GetLineCount( sal_Int32 nParagraph ) const;
-        
+
         EPosition                   Index2Internal( sal_Int32 nFlatIndex ) const
         {
             DBG_CHKTHIS( AccessibleStaticTextBase_Impl, NULL );
 
             return ImpCalcInternal( nFlatIndex, false );
         }
-        
+
         EPosition                   Range2Internal( sal_Int32 nFlatIndex ) const
         {
             DBG_CHKTHIS( AccessibleStaticTextBase_Impl, NULL );
@@ -334,7 +334,7 @@ sal_Unicode cNewLine(0x0a);
             nIndex = mpTextParagraph->GetParagraphIndex();
         return nIndex;
     }
-        
+
     sal_Int32 AccessibleStaticTextBase_Impl::GetLineCount( sal_Int32 nParagraph ) const
     {
         DBG_CHKTHIS( AccessibleStaticTextBase_Impl, NULL );
@@ -343,7 +343,7 @@ sal_Unicode cNewLine(0x0a);
         if( mpTextParagraph )
             nIndex = mpTextParagraph->GetTextForwarder().GetLineCount( nParagraph );
         return nIndex;
-    }    
+    }
 
     sal_Int32 AccessibleStaticTextBase_Impl::Internal2Index( EPosition nEEIndex ) const
     {
@@ -485,10 +485,10 @@ sal_Unicode cNewLine(0x0a);
 		// get the total char number inside the cell.
 		sal_Int32 i, nCount, nParas;
         for( i=0, nCount=0, nParas=GetParagraphCount(); i<nParas; ++i )
-            nCount += GetParagraph(i).getCharacterCount();		
+            nCount += GetParagraph(i).getCharacterCount();
 		nCount = nCount + (nParas-1);
 		if( nCount == 0 &&  rIndex == 0) return sal_False;
-		
+
 
 		sal_Int32 nCurrPara, nCurrCount;
 		sal_Int32 nLineBreakPos = 0, nLineBreakCount = 0;
@@ -919,7 +919,7 @@ sal_Unicode cNewLine(0x0a);
 			}
             //return aRes;
         }
-		//According to the flag we marked before, we have to add "\n" at the beginning 
+		//According to the flag we marked before, we have to add "\n" at the beginning
 		//or at the end of the result string.
 		if ( bStart )
 		{
@@ -1154,7 +1154,7 @@ sal_Unicode cNewLine(0x0a);
     {
         return mpImpl->GetParagraphBoundingBox();
     }
-    
+
     sal_Int32 AccessibleStaticTextBase::GetParagraphIndex() const
     {
         return mpImpl->GetParagraphIndex();
@@ -1164,11 +1164,11 @@ sal_Unicode cNewLine(0x0a);
     {
         return mpImpl->GetParagraphCount();
     }
-        
+
     sal_Int32 AccessibleStaticTextBase::GetLineCount( sal_Int32 nParagraph ) const
     {
         return mpImpl->GetLineCount( nParagraph );
-    }    
+    }
 
 }  // end of namespace accessibility
 

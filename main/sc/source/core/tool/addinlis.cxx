@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -60,7 +60,7 @@ ScAddInListener* ScAddInListener::CreateListener(
 	pNew->acquire();								// for aAllListeners
 	aAllListeners.Insert( pNew, LIST_APPEND );
 
-	if ( xVR.is() )	
+	if ( xVR.is() )
 		xVR->addResultListener( pNew );				// after at least 1 ref exists!
 
 	return pNew;
@@ -115,7 +115,7 @@ void ScAddInListener::RemoveDocument( ScDocument* pDocumentP )
 
 				aAllListeners.Remove( nPos );
 
-				if ( pLst->xVolRes.is() )	
+				if ( pLst->xVolRes.is() )
 					pLst->xVolRes->removeResultListener( pLst );
 
 				pLst->release();	// Ref for aAllListeners - pLst may be deleted here
@@ -142,7 +142,7 @@ void SAL_CALL ScAddInListener::modified( const ::com::sun::star::sheet::ResultEv
 #if 0
 		//!	this will crash if called before first StartListening !!!
 		aAllListeners.Remove( this );
-		if ( xVolRes.is() )	
+		if ( xVolRes.is() )
 			xVolRes->removeResultListener( this );
 		release();	// Ref for aAllListeners - this may be deleted here
 		return;

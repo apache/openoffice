@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -31,7 +31,7 @@
 
 #include <vcl/canvastools.hxx>
 
-#include <comphelper/scopeguard.hxx> 
+#include <comphelper/scopeguard.hxx>
 
 #include <basegfx/range/b2drectangle.hxx>
 #include <basegfx/tools/canvastools.hxx>
@@ -55,7 +55,7 @@ namespace cairocanvas
          */
         void spriteRedraw( const CairoSharedPtr& pCairo,
                            const ::canvas::Sprite::Reference& rSprite )
-        {            
+        {
             // downcast to derived cairocanvas::Sprite interface, which
             // provides the actual redraw methods.
             ::boost::polymorphic_downcast< Sprite* >(rSprite.get())->redraw( pCairo, true);
@@ -66,7 +66,7 @@ namespace cairocanvas
                                 const ::basegfx::B2DRange& rArea )
         {
             cairo_save( pCairo.get() );
-            cairo_rectangle( pCairo.get(), ceil( rArea.getMinX() ), ceil( rArea.getMinY() ), 
+            cairo_rectangle( pCairo.get(), ceil( rArea.getMinX() ), ceil( rArea.getMinY() ),
                              floor( rArea.getWidth() ), floor( rArea.getHeight() ) );
             cairo_clip( pCairo.get() );
             cairo_set_source_surface( pCairo.get(), pBackgroundSurface->getCairoSurface().get(), 0, 0 );
@@ -83,8 +83,8 @@ namespace cairocanvas
             // wouldn't save much render time, and b) will clutter
             // scrolled sprite content outside this area)
             cairo_save( pCairo.get() );
-            cairo_rectangle( pCairo.get(), rArea.getMinX(), rArea.getMinY(), 
-                             sal::static_int_cast<sal_Int32>(rArea.getWidth()), 
+            cairo_rectangle( pCairo.get(), rArea.getMinX(), rArea.getMinY(),
+                             sal::static_int_cast<sal_Int32>(rArea.getWidth()),
                              sal::static_int_cast<sal_Int32>(rArea.getHeight()) );
             cairo_clip( pCairo.get() );
 
@@ -135,7 +135,7 @@ namespace cairocanvas
 
             if( rSprite.is() )
                 ::boost::polymorphic_downcast< Sprite* >( rSprite.get() )->redraw( pCairo, false );
-        } 
+        }
     }
 
     SpriteCanvasHelper::SpriteCanvasHelper() :
@@ -155,7 +155,7 @@ namespace cairocanvas
 
         CanvasHelper::init( rSize, rDevice, &rDevice );
     }
-    
+
     void SpriteCanvasHelper::disposing()
     {
         mpCompositingSurface.reset();
@@ -163,17 +163,17 @@ namespace cairocanvas
         mpRedrawManager = NULL;
 
         // forward to base
-        CanvasHelper::disposing();        
+        CanvasHelper::disposing();
     }
 
-    uno::Reference< rendering::XAnimatedSprite > SpriteCanvasHelper::createSpriteFromAnimation( 
+    uno::Reference< rendering::XAnimatedSprite > SpriteCanvasHelper::createSpriteFromAnimation(
         const uno::Reference< rendering::XAnimation >& )
     {
         return uno::Reference< rendering::XAnimatedSprite >();
     }
 
-    uno::Reference< rendering::XAnimatedSprite > SpriteCanvasHelper::createSpriteFromBitmaps( 
-        const uno::Sequence< uno::Reference< rendering::XBitmap > >& /*animationBitmaps*/, 
+    uno::Reference< rendering::XAnimatedSprite > SpriteCanvasHelper::createSpriteFromBitmaps(
+        const uno::Sequence< uno::Reference< rendering::XBitmap > >& /*animationBitmaps*/,
         sal_Int8                                                     /*interpolationMode*/ )
     {
         return uno::Reference< rendering::XAnimatedSprite >();
@@ -184,12 +184,12 @@ namespace cairocanvas
         if( !mpRedrawManager )
             return uno::Reference< rendering::XCustomSprite >(); // we're disposed
 
-        return uno::Reference< rendering::XCustomSprite >( 
-            new CanvasCustomSprite( spriteSize, 
+        return uno::Reference< rendering::XCustomSprite >(
+            new CanvasCustomSprite( spriteSize,
                                     mpOwningSpriteCanvas ) );
     }
 
-    uno::Reference< rendering::XSprite > SpriteCanvasHelper::createClonedSprite( 
+    uno::Reference< rendering::XSprite > SpriteCanvasHelper::createClonedSprite(
         const uno::Reference< rendering::XSprite >& )
     {
         return uno::Reference< rendering::XSprite >();
@@ -199,7 +199,7 @@ namespace cairocanvas
                                                sal_Bool                   bUpdateAll,
                                                bool&                      io_bSurfaceDirty )
     {
-        if( !mpRedrawManager || 
+        if( !mpRedrawManager ||
             !mpOwningSpriteCanvas ||
             !mpOwningSpriteCanvas->getWindowSurface() ||
             !mpOwningSpriteCanvas->getBufferSurface() )
@@ -239,8 +239,8 @@ namespace cairocanvas
             cairo_rectangle( pCompositingCairo.get(), 0, 0, rSize.getX(), rSize.getY() );
             cairo_clip( pCompositingCairo.get() );
             cairo_save( pCompositingCairo.get() );
-            cairo_set_source_surface( pCompositingCairo.get(), 
-                                      mpOwningSpriteCanvas->getBufferSurface()->getCairoSurface().get(), 
+            cairo_set_source_surface( pCompositingCairo.get(),
+                                      mpOwningSpriteCanvas->getBufferSurface()->getCairoSurface().get(),
                                       0, 0 );
             cairo_set_operator( pCompositingCairo.get(), CAIRO_OPERATOR_SOURCE );
             cairo_paint( pCompositingCairo.get() );
@@ -248,7 +248,7 @@ namespace cairocanvas
 
             // repaint all active sprites on top of background into
             // VDev.
-            mpRedrawManager->forEachSprite( 
+            mpRedrawManager->forEachSprite(
                 ::boost::bind(
                     &spriteRedraw,
                     boost::cref(pCompositingCairo),
@@ -257,8 +257,8 @@ namespace cairocanvas
             // flush to screen
             cairo_rectangle( pWindowCairo.get(), 0, 0, rSize.getX(), rSize.getY() );
             cairo_clip( pWindowCairo.get() );
-            cairo_set_source_surface( pWindowCairo.get(), 
-                                      pCompositingSurface->getCairoSurface().get(), 
+            cairo_set_source_surface( pWindowCairo.get(),
+                                      pCompositingSurface->getCairoSurface().get(),
                                       0, 0 );
             cairo_set_operator( pWindowCairo.get(), CAIRO_OPERATOR_SOURCE );
             cairo_paint( pWindowCairo.get() );
@@ -278,13 +278,13 @@ namespace cairocanvas
 
     void SpriteCanvasHelper::backgroundPaint( const ::basegfx::B2DRange& rUpdateRect )
     {
-        if( mpOwningSpriteCanvas && mpCompositingSurface ) 
+        if( mpOwningSpriteCanvas && mpCompositingSurface )
             repaintBackground( mpCompositingSurface->getCairo(),
-                               mpOwningSpriteCanvas->getBufferSurface(), 
+                               mpOwningSpriteCanvas->getBufferSurface(),
                                rUpdateRect );
     }
 
-    void SpriteCanvasHelper::scrollUpdate( const ::basegfx::B2DRange& 						rMoveStart, 
+    void SpriteCanvasHelper::scrollUpdate( const ::basegfx::B2DRange& 						rMoveStart,
                                            const ::basegfx::B2DRange& 						rMoveEnd,
                                            const ::canvas::SpriteRedrawManager::UpdateArea& rUpdateArea )
     {
@@ -309,7 +309,7 @@ namespace cairocanvas
         // the destination area: otherwise, the next scroll update
         // would copy pixel that are not supposed to be part of
         // the sprite.
-        ::basegfx::B2IRange aSourceRect( 
+        ::basegfx::B2IRange aSourceRect(
             ::canvas::tools::spritePixelAreaFromB2DRange( rMoveStart ) );
         const ::basegfx::B2IRange& rDestRect(
             ::canvas::tools::spritePixelAreaFromB2DRange( rMoveEnd ) );
@@ -319,7 +319,7 @@ namespace cairocanvas
 
         // TODO(E3): This is plain buggy (but copies the behaviour of
         // the old Impress slideshow) - the scrolled area might
-        // actually lie _below_ another window!        
+        // actually lie _below_ another window!
 
         // clip to output bounds (cannot properly scroll stuff
         // _outside_ our screen area)
@@ -336,7 +336,7 @@ namespace cairocanvas
             // repaint all affected sprites directly to output device
             ::std::for_each( rUpdateArea.maComponentList.begin(),
                              rUpdateArea.maComponentList.end(),
-                             ::boost::bind( 
+                             ::boost::bind(
                                  &spriteRedrawStub3,
                                  boost::cref(pCompositingCairo),
                                  _1 ) );
@@ -351,24 +351,24 @@ namespace cairocanvas
 
             cairo_save( pCompositingCairo.get() );
             // scroll content in device back buffer
-            cairo_set_source_surface( pCompositingCairo.get(), 
+            cairo_set_source_surface( pCompositingCairo.get(),
                                       mpOwningSpriteCanvas->getBufferSurface()->getCairoSurface().get(),
                                       aDestPos.getX() - aSourceUpperLeftPos.getX(),
                                       aDestPos.getY() - aSourceUpperLeftPos.getY() );
             cairo_rectangle( pCompositingCairo.get(),
                              aDestPos.getX(), aDestPos.getY(),
-                             sal::static_int_cast<sal_Int32>(aDestRect.getWidth()), 
+                             sal::static_int_cast<sal_Int32>(aDestRect.getWidth()),
                              sal::static_int_cast<sal_Int32>(aDestRect.getHeight()) );
             cairo_clip( pCompositingCairo.get() );
             cairo_set_operator( pCompositingCairo.get(), CAIRO_OPERATOR_SOURCE );
             cairo_paint( pCompositingCairo.get() );
             cairo_restore( pCompositingCairo.get() );
 
-            const ::canvas::SpriteRedrawManager::SpriteConnectedRanges::ComponentListType::const_iterator 
+            const ::canvas::SpriteRedrawManager::SpriteConnectedRanges::ComponentListType::const_iterator
                 aFirst( rUpdateArea.maComponentList.begin() );
-            ::canvas::SpriteRedrawManager::SpriteConnectedRanges::ComponentListType::const_iterator 
+            ::canvas::SpriteRedrawManager::SpriteConnectedRanges::ComponentListType::const_iterator
                   aSecond( aFirst ); ++aSecond;
-        
+
             ENSURE_OR_THROW( aFirst->second.getSprite().is(),
                              "VCLCanvas::scrollUpdate(): no sprite" );
 
@@ -400,13 +400,13 @@ namespace cairocanvas
 
         cairo_rectangle( pWindowCairo.get(), 0, 0, rSize.getX(), rSize.getY() );
         cairo_clip( pWindowCairo.get() );
-        cairo_set_source_surface( pWindowCairo.get(), 
-                                  pCompositingSurface->getCairoSurface().get(), 
+        cairo_set_source_surface( pWindowCairo.get(),
+                                  pCompositingSurface->getCairoSurface().get(),
                                   0, 0 );
         cairo_set_operator( pWindowCairo.get(), CAIRO_OPERATOR_SOURCE );
         cairo_paint( pWindowCairo.get() );
     }
-    
+
     void SpriteCanvasHelper::opaqueUpdate( const ::basegfx::B2DRange&                          rTotalArea,
                                            const ::std::vector< ::canvas::Sprite::Reference >& rSortedUpdateSprites )
     {
@@ -435,7 +435,7 @@ namespace cairocanvas
         // repaint all affected sprites directly to output device
         ::std::for_each( rSortedUpdateSprites.begin(),
                          rSortedUpdateSprites.end(),
-                         ::boost::bind( 
+                         ::boost::bind(
                              &spriteRedrawStub,
                              boost::cref(pCompositingCairo),
                              _1 ) );
@@ -445,13 +445,13 @@ namespace cairocanvas
         cairo_clip( pWindowCairo.get() );
         cairo_rectangle( pWindowCairo.get(), aPos.getX(), aPos.getY(), aSize.getX(), aSize.getY() );
         cairo_clip( pWindowCairo.get() );
-        cairo_set_source_surface( pWindowCairo.get(), 
-                                  pCompositingSurface->getCairoSurface().get(), 
+        cairo_set_source_surface( pWindowCairo.get(),
+                                  pCompositingSurface->getCairoSurface().get(),
                                   0, 0 );
         cairo_set_operator( pWindowCairo.get(), CAIRO_OPERATOR_SOURCE );
         cairo_paint( pWindowCairo.get() );
     }
-    
+
     void SpriteCanvasHelper::genericUpdate( const ::basegfx::B2DRange&                          rRequestedArea,
                                             const ::std::vector< ::canvas::Sprite::Reference >& rSortedUpdateSprites )
     {
@@ -474,7 +474,7 @@ namespace cairocanvas
         // a fraction of a sprite pixel...  Clip position at origin,
         // otherwise, truncation of size below might leave visible
         // areas uncovered by VDev.
-        const Point aOutputPosition( 
+        const Point aOutputPosition(
             ::std::max( sal_Int32( 0 ),
                         static_cast< sal_Int32 >(rRequestedArea.getMinX()) ),
             ::std::max( sal_Int32( 0 ),
@@ -482,7 +482,7 @@ namespace cairocanvas
         // round output size towards +infty. Don't want to truncate a
         // fraction of a sprite pixel... Limit size of VDev to output
         // device's area.
-        const Size  aOutputSize( 
+        const Size  aOutputSize(
             ::std::min( rSize.getX(),
                         ::canvas::tools::roundUp( rRequestedArea.getMaxX() - aOutputPosition.X()) ),
             ::std::min( rSize.getY(),
@@ -493,13 +493,13 @@ namespace cairocanvas
 
         // paint background
         cairo_save( pCompositingCairo.get() );
-        cairo_set_source_surface( pCompositingCairo.get(), 
-                                  mpOwningSpriteCanvas->getBufferSurface()->getCairoSurface().get(), 
+        cairo_set_source_surface( pCompositingCairo.get(),
+                                  mpOwningSpriteCanvas->getBufferSurface()->getCairoSurface().get(),
                                   0, 0 );
         cairo_set_operator( pCompositingCairo.get(), CAIRO_OPERATOR_SOURCE );
         cairo_paint( pCompositingCairo.get() );
         cairo_restore( pCompositingCairo.get() );
-        
+
         // repaint all affected sprites on top of background into
         // VDev.
         ::std::for_each( rSortedUpdateSprites.begin(),
@@ -511,8 +511,8 @@ namespace cairocanvas
         // flush to screen
         cairo_rectangle( pWindowCairo.get(), aOutputPosition.X(), aOutputPosition.Y(), aOutputSize.Width(), aOutputSize.Height() );
         cairo_clip( pWindowCairo.get() );
-        cairo_set_source_surface( pWindowCairo.get(), 
-                                  pCompositingSurface->getCairoSurface().get(), 
+        cairo_set_source_surface( pWindowCairo.get(),
+                                  pCompositingSurface->getCairoSurface().get(),
                                   0, 0 );
         cairo_set_operator( pWindowCairo.get(), CAIRO_OPERATOR_SOURCE );
         cairo_paint( pWindowCairo.get() );
@@ -529,13 +529,13 @@ namespace cairocanvas
 
         if( !mpCompositingSurface )
         {
-            mpCompositingSurface = 
-                mpOwningSpriteCanvas->getWindowSurface()->getSimilar( 
-                    CAIRO_CONTENT_COLOR, 
+            mpCompositingSurface =
+                mpOwningSpriteCanvas->getWindowSurface()->getSimilar(
+                    CAIRO_CONTENT_COLOR,
                     rNeededSize.getX(), rNeededSize.getY() );
             maCompositingSurfaceSize = rNeededSize;
         }
-        
+
         return mpCompositingSurface;
     }
 }

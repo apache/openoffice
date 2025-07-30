@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -198,8 +198,8 @@ oslFileError osl_getVolumeInformation( rtl_uString* ustrDirectoryURL, oslVolumeI
 #   define __OSL_STATFS_STRUCT       		     struct statfs
 #   define __OSL_STATFS(dir, sfs)    			 statfs((dir), (sfs))
 #   define __OSL_STATFS_BLKSIZ(a)    			 ((sal_uInt64)((a).f_bsize))
-#   define __OSL_STATFS_IS_NFS(a)     			 (__OSL_NFS_SUPER_MAGIC == (a).f_type) 
-#   define __OSL_STATFS_IS_SMB(a)     			 (__OSL_SMB_SUPER_MAGIC == (a).f_type) 
+#   define __OSL_STATFS_IS_NFS(a)     			 (__OSL_NFS_SUPER_MAGIC == (a).f_type)
+#   define __OSL_STATFS_IS_SMB(a)     			 (__OSL_SMB_SUPER_MAGIC == (a).f_type)
 #   define __OSL_STATFS_ISREMOTE(a)  			 (__OSL_STATFS_IS_NFS((a)) || __OSL_STATFS_IS_SMB((a)))
 #	define __OSL_STATFS_IS_CASE_SENSITIVE_FS(a)  ((__OSL_MSDOS_SUPER_MAGIC != (a).f_type) && (__OSL_NTFS_SUPER_MAGIC != (a).f_type))
 #	define __OSL_STATFS_IS_CASE_PRESERVING_FS(a) ((__OSL_MSDOS_SUPER_MAGIC != (a).f_type))
@@ -237,46 +237,46 @@ static oslFileError osl_psz_getVolumeInformation (
 {
     __OSL_STATFS_STRUCT sfs;
 
-    if (!pInfo)   
+    if (!pInfo)
         return osl_File_E_INVAL;
-    
+
     __OSL_STATFS_INIT(sfs);
-    
+
     pInfo->uValidFields = 0;
     pInfo->uAttributes  = 0;
-    
+
 	if ((__OSL_STATFS(pszDirectory, &sfs)) < 0)
-	{	
-		oslFileError result = oslTranslateFileError(OSL_FET_ERROR, errno);		
+	{
+		oslFileError result = oslTranslateFileError(OSL_FET_ERROR, errno);
 		return (result);
 	}
 
     /* FIXME: how to detect the kind of storage (fixed, cdrom, ...) */
 	if (uFieldMask & osl_VolumeInfo_Mask_Attributes)
-	{	
+	{
 	    if (__OSL_STATFS_ISREMOTE(sfs))
 			pInfo->uAttributes  |= osl_Volume_Attribute_Remote;
-						
-		pInfo->uValidFields |= osl_VolumeInfo_Mask_Attributes;	
+
+		pInfo->uValidFields |= osl_VolumeInfo_Mask_Attributes;
 	}
 
 	if (uFieldMask & osl_VolumeInfo_Mask_FileSystemCaseHandling)
 	{
 		if (__OSL_STATFS_IS_CASE_SENSITIVE_FS(sfs))
 			pInfo->uAttributes |= osl_Volume_Attribute_Case_Sensitive;
-		
+
 		if (__OSL_STATFS_IS_CASE_PRESERVING_FS(sfs))
 			pInfo->uAttributes |= osl_Volume_Attribute_Case_Is_Preserved;
-			
-		pInfo->uValidFields |= osl_VolumeInfo_Mask_Attributes;	
+
+		pInfo->uValidFields |= osl_VolumeInfo_Mask_Attributes;
 	}
-	
+
 	pInfo->uTotalSpace = 0;
     pInfo->uFreeSpace  = 0;
     pInfo->uUsedSpace  = 0;
-    
+
 #if defined(__OSL_STATFS_BLKSIZ)
-    
+
 	if ((uFieldMask & osl_VolumeInfo_Mask_TotalSpace) ||
 		(uFieldMask & osl_VolumeInfo_Mask_UsedSpace))
 	{
@@ -284,29 +284,29 @@ static oslFileError osl_psz_getVolumeInformation (
 		pInfo->uTotalSpace  *= (sal_uInt64)(sfs.f_blocks);
 		pInfo->uValidFields |= osl_VolumeInfo_Mask_TotalSpace;
 	}
-	
+
 	if ((uFieldMask & osl_VolumeInfo_Mask_FreeSpace) ||
 		(uFieldMask & osl_VolumeInfo_Mask_UsedSpace))
 	{
 		pInfo->uFreeSpace = __OSL_STATFS_BLKSIZ(sfs);
-		
-		if (getuid() == 0)		
+
+		if (getuid() == 0)
 			pInfo->uFreeSpace *= (sal_uInt64)(sfs.f_bfree);
-		else			
+		else
 			pInfo->uFreeSpace *= (sal_uInt64)(sfs.f_bavail);
-	
+
 		pInfo->uValidFields |= osl_VolumeInfo_Mask_FreeSpace;
 	}
 
 #endif  /* __OSL_STATFS_BLKSIZ */
-	
+
 	if ((pInfo->uValidFields & osl_VolumeInfo_Mask_TotalSpace) &&
 		(pInfo->uValidFields & osl_VolumeInfo_Mask_FreeSpace ))
 	{
 		pInfo->uUsedSpace    = pInfo->uTotalSpace - pInfo->uFreeSpace;
 		pInfo->uValidFields |= osl_VolumeInfo_Mask_UsedSpace;
 	}
-	
+
 	pInfo->uMaxNameLength = 0;
 	if (uFieldMask & osl_VolumeInfo_Mask_MaxNameLength)
 	{
@@ -340,17 +340,17 @@ static oslFileError osl_psz_getVolumeInformation (
         	osl_getThreadTextEncoding(),
         	OUSTRING_TO_OSTRING_CVTFLAGS);
         OSL_ASSERT(pInfo->ustrFileSystemName != 0);
-        	
+
 		pInfo->uValidFields |= osl_VolumeInfo_Mask_FileSystemName;
 	}
-	
+
 #endif /* __OSL_STATFS_TYPENAME */
-	
+
     if (uFieldMask & osl_VolumeInfo_Mask_DeviceHandle)
     {
         /* FIXME: check also entries in mntent for the device
 		   and fill it with correct values */
-		
+
         *pInfo->pDeviceHandle = osl_isFloppyDrive(pszDirectory);
 
         if (*pInfo->pDeviceHandle)
@@ -503,12 +503,12 @@ oslFileError osl_releaseVolumeDeviceHandle( oslVolumeDeviceHandle Handle )
     }
 
     --pItem->RefCount;
-    
+
     if ( pItem->RefCount == 0 )
     {
         rtl_freeMemory(pItem);
     }
-    
+
     return osl_File_E_None;
 }
 
@@ -517,12 +517,12 @@ oslFileError osl_releaseVolumeDeviceHandle( oslVolumeDeviceHandle Handle )
 /*****************************************
  * osl_newVolumeDeviceHandleImpl
  ****************************************/
- 
+
 static oslVolumeDeviceHandleImpl* osl_newVolumeDeviceHandleImpl()
 {
     oslVolumeDeviceHandleImpl* pHandle;
     const size_t               nSizeOfHandle = sizeof(oslVolumeDeviceHandleImpl);
- 
+
     pHandle = (oslVolumeDeviceHandleImpl*) rtl_allocateMemory (nSizeOfHandle);
     if (pHandle != NULL)
     {
@@ -535,13 +535,13 @@ static oslVolumeDeviceHandleImpl* osl_newVolumeDeviceHandleImpl()
         pHandle->pszDevice[0]     = '\0';
         pHandle->RefCount         = 1;
     }
-    return pHandle;   
+    return pHandle;
 }
 
 /*****************************************
  * osl_freeVolumeDeviceHandleImpl
  ****************************************/
- 
+
 static void osl_freeVolumeDeviceHandleImpl (oslVolumeDeviceHandleImpl* pHandle)
 {
     if (pHandle != NULL)
@@ -560,10 +560,10 @@ static void osl_freeVolumeDeviceHandleImpl (oslVolumeDeviceHandleImpl* pHandle)
 static sal_Bool
 osl_isAFloppyDevice (const char* pDeviceName)
 {
-    const char* pFloppyDevice [] = { 
-        "/dev/fd",           "/dev/rfd", 
-        "/dev/diskette",     "/dev/rdiskette", 
-        "/vol/dev/diskette", "/vol/dev/rdiskette" 
+    const char* pFloppyDevice [] = {
+        "/dev/fd",           "/dev/rfd",
+        "/dev/diskette",     "/dev/rdiskette",
+        "/vol/dev/diskette", "/vol/dev/rdiskette"
     };
 
     int i;
@@ -580,13 +580,13 @@ osl_isAFloppyDevice (const char* pDeviceName)
 static sal_Bool
 osl_isAParentDirectory (const char* pParentDir, const char* pSubDir)
 {
-    return strncmp(pParentDir, pSubDir, strlen(pParentDir)) == 0; 
+    return strncmp(pParentDir, pSubDir, strlen(pParentDir)) == 0;
 }
 
-/* the name of the routine is obviously silly. But anyway create a 
+/* the name of the routine is obviously silly. But anyway create a
  * oslVolumeDeviceHandle with correct mount point, device name and a resolved filepath
  * only if pszPath points to file or directory on a floppy */
-static oslVolumeDeviceHandle 
+static oslVolumeDeviceHandle
 osl_isFloppyDrive(const sal_Char* pszPath)
 {
     FILE*                       pMountTab;
@@ -611,31 +611,31 @@ osl_isFloppyDrive(const sal_Char* pszPath)
     while (getmntent(pMountTab, &aMountEnt) == 0)
     {
         const char *pMountPoint = aMountEnt.mnt_mountp;
-        const char *pDevice     = aMountEnt.mnt_special; 
+        const char *pDevice     = aMountEnt.mnt_special;
         if (   osl_isAParentDirectory (aMountEnt.mnt_mountp, pHandle->pszFilePath)
             && osl_isAFloppyDevice    (aMountEnt.mnt_special))
         {
             /* skip the last item for it is the name of the disk */
             char * pc = strrchr( aMountEnt.mnt_special, '/' );
-            
+
             if ( NULL != pc )
             {
                 int len = pc - aMountEnt.mnt_special;
-                                
+
                 strncpy( pHandle->pszDevice, aMountEnt.mnt_special, len );
                 pHandle->pszDevice[len] = '\0';
             }
             else
 			{
 				/* #106048 use save str functions to avoid buffer overflows */
-				memset(pHandle->pszDevice, 0, sizeof(pHandle->pszDevice));				
-				strncpy(pHandle->pszDevice, aMountEnt.mnt_special, sizeof(pHandle->pszDevice) - 1);				                
+				memset(pHandle->pszDevice, 0, sizeof(pHandle->pszDevice));
+				strncpy(pHandle->pszDevice, aMountEnt.mnt_special, sizeof(pHandle->pszDevice) - 1);
             }
-			
+
             /* remember the mount point */
 			memset(pHandle->pszMountPoint, 0, sizeof(pHandle->pszMountPoint));
 			strncpy(pHandle->pszMountPoint, aMountEnt.mnt_mountp, sizeof(pHandle->pszMountPoint) - 1);
-			            
+
             fclose (pMountTab);
             return pHandle;
         }
@@ -654,21 +654,21 @@ static oslFileError osl_mountFloppy(oslVolumeDeviceHandle hFloppy)
 
     int nRet=0;
     sal_Char pszCmd[512] = "";
-   
+
     if ( pHandle == 0 )
         return osl_File_E_INVAL;
 
-    /* FIXME: don't know what this is good for */    
+    /* FIXME: don't know what this is good for */
     if ( pHandle->ident[0] != 'O' || pHandle->ident[1] != 'V' || pHandle->ident[2] != 'D' || pHandle->ident[3] != 'H' )
         return osl_File_E_INVAL;
 
     snprintf(pszCmd, sizeof(pszCmd), "eject -q %s > /dev/null 2>&1", pHandle->pszDevice);
-	
+
     nRet = system( pszCmd );
 
     switch ( WEXITSTATUS(nRet) )
     {
-    case 0:        
+    case 0:
         {
             /* lookup the device in mount tab again */
             if ((pMountTab = fopen (MOUNTTAB, "r")) == NULL)
@@ -677,12 +677,12 @@ static oslFileError osl_mountFloppy(oslVolumeDeviceHandle hFloppy)
             while (getmntent(pMountTab, &aMountEnt) == 0)
             {
                 const char *pMountPoint = aMountEnt.mnt_mountp;
-                const char *pDevice     = aMountEnt.mnt_special; 
+                const char *pDevice     = aMountEnt.mnt_special;
                 if ( 0 == strncmp( pHandle->pszDevice, aMountEnt.mnt_special, strlen(pHandle->pszDevice) ) )
                 {
 					memset(pHandle->pszMountPoint, 0, sizeof(pHandle->pszMountPoint));
                     strncpy (pHandle->pszMountPoint, aMountEnt.mnt_mountp, sizeof(pHandle->pszMountPoint) - 1);
-										
+
                     fclose (pMountTab);
                     return osl_File_E_None;
                 }
@@ -692,7 +692,7 @@ static oslFileError osl_mountFloppy(oslVolumeDeviceHandle hFloppy)
             return osl_File_E_BUSY;
         }
         //break; // break not necessary here, see return statements before
-         
+
     case 1:
         return osl_File_E_BUSY;
 
@@ -707,29 +707,29 @@ static oslFileError osl_unmountFloppy(oslVolumeDeviceHandle hFloppy)
 {
 //    FILE*                       pMountTab;
 //    struct mnttab               aMountEnt;
-    oslVolumeDeviceHandleImpl*  pHandle = (oslVolumeDeviceHandleImpl*) hFloppy;    
-    
+    oslVolumeDeviceHandleImpl*  pHandle = (oslVolumeDeviceHandleImpl*) hFloppy;
+
     int nRet=0;
     sal_Char pszCmd[512] = "";
-    
+
     if ( pHandle == 0 )
         return osl_File_E_INVAL;
 
-    /* FIXME: don't know what this is good for */    
+    /* FIXME: don't know what this is good for */
     if ( pHandle->ident[0] != 'O' || pHandle->ident[1] != 'V' || pHandle->ident[2] != 'D' || pHandle->ident[3] != 'H' )
         return osl_File_E_INVAL;
-    
+
     snprintf(pszCmd, sizeof(pszCmd), "eject %s > /dev/null 2>&1", pHandle->pszDevice);
-	
+
     nRet = system( pszCmd );
 
     switch ( WEXITSTATUS(nRet) )
     {
-    case 0:        
+    case 0:
         {
             FILE*         pMountTab;
             struct mnttab aMountEnt;
-            
+
             /* lookup if device is still in mount tab */
             if ((pMountTab = fopen (MOUNTTAB, "r")) == NULL)
                 return osl_File_E_BUSY;
@@ -737,7 +737,7 @@ static oslFileError osl_unmountFloppy(oslVolumeDeviceHandle hFloppy)
             while (getmntent(pMountTab, &aMountEnt) == 0)
             {
                 const char *pMountPoint = aMountEnt.mnt_mountp;
-                const char *pDevice     = aMountEnt.mnt_special; 
+                const char *pDevice     = aMountEnt.mnt_special;
                 if ( 0 == strncmp( pHandle->pszDevice, aMountEnt.mnt_special, strlen(pHandle->pszDevice) ) )
                 {
                     fclose (pMountTab);
@@ -749,9 +749,9 @@ static oslFileError osl_unmountFloppy(oslVolumeDeviceHandle hFloppy)
             pHandle->pszMountPoint[0] = 0;
             return osl_File_E_None;
         }
-        
+
         //break; //break not necessary, see return statements before
-        
+
     case 1:
         return osl_File_E_NODEV;
 
@@ -775,13 +775,13 @@ static oslFileError osl_unmountFloppy(oslVolumeDeviceHandle hFloppy)
  *****************************************************************************/
 
 #if defined(LINUX)
-static oslVolumeDeviceHandle 
+static oslVolumeDeviceHandle
 osl_isFloppyDrive (const sal_Char* pszPath)
 {
-    oslVolumeDeviceHandleImpl* pItem = osl_newVolumeDeviceHandleImpl(); 
+    oslVolumeDeviceHandleImpl* pItem = osl_newVolumeDeviceHandleImpl();
     if (osl_getFloppyMountEntry(pszPath, pItem))
         return (oslVolumeDeviceHandle) pItem;
-    
+
     osl_freeVolumeDeviceHandleImpl (pItem);
     return 0;
 }
@@ -789,7 +789,7 @@ osl_isFloppyDrive (const sal_Char* pszPath)
 
 #if defined(LINUX)
 static oslFileError osl_mountFloppy(oslVolumeDeviceHandle hFloppy)
-{       
+{
     sal_Bool bRet = sal_False;
     oslVolumeDeviceHandleImpl* pItem=0;
     int nRet;
@@ -799,19 +799,19 @@ static oslFileError osl_mountFloppy(oslVolumeDeviceHandle hFloppy)
     sal_Char* pszTmp = 0;
 
     pszCmd[0] = '\0';
-    
+
 #ifdef TRACE_OSL_FILE
     fprintf(stderr,"In  osl_mountFloppy\n");
 #endif
 
     pItem = (oslVolumeDeviceHandleImpl*) hFloppy;
-    
+
     if ( pItem == 0 )
     {
 #ifdef TRACE_OSL_FILE
         fprintf(stderr,"Out osl_mountFloppy [pItem == 0]\n");
 #endif
-        
+
         return osl_File_E_INVAL;
     }
 
@@ -822,7 +822,7 @@ static oslFileError osl_mountFloppy(oslVolumeDeviceHandle hFloppy)
 #endif
         return osl_File_E_INVAL;
     }
-    
+
     bRet = osl_isFloppyMounted(pItem);
     if ( bRet == sal_True )
     {
@@ -858,35 +858,35 @@ static oslFileError osl_mountFloppy(oslVolumeDeviceHandle hFloppy)
     {
         pszSuDo=pszTmp;
     }
-    
+
     if ( pszSuDo != 0 )
     {
         snprintf(pszCmd, sizeof(pszCmd), "%s %s %s %s",pszSuDo,pszMountProg,pItem->pszDevice,pItem->pszMountPoint);
     }
     else
     {
-        snprintf(pszCmd, sizeof(pszCmd), "%s %s",pszMountProg,pItem->pszMountPoint);        
+        snprintf(pszCmd, sizeof(pszCmd), "%s %s",pszMountProg,pItem->pszMountPoint);
     }
-    
-    
+
+
 #ifdef DEBUG_OSL_FILE
     fprintf(stderr,"executing '%s'\n",pszCmd);
 #endif
-    
-    nRet = system(pszCmd);    
+
+    nRet = system(pszCmd);
 
 #ifdef DEBUG_OSL_FILE
     fprintf(stderr,"call returned '%i'\n",nRet);
     fprintf(stderr,"exit status is '%i'\n", WEXITSTATUS(nRet));
 #endif
-    
-    
+
+
     switch ( WEXITSTATUS(nRet) )
     {
     case 0:
         nRet=0;
         break;
-        
+
     case 2:
         nRet=EPERM;
         break;
@@ -915,7 +915,7 @@ static oslFileError osl_mountFloppy(oslVolumeDeviceHandle hFloppy)
         nRet=EBUSY;
         break;
     }
-    
+
     return ((0 == nRet) ? oslTranslateFileError(OSL_FET_SUCCESS, nRet) : oslTranslateFileError(OSL_FET_ERROR, nRet));
 }
 #endif /* LINUX */
@@ -932,13 +932,13 @@ static oslFileError osl_unmountFloppy(oslVolumeDeviceHandle hFloppy)
     const sal_Char* pszUmountProg = "umount";
 
     pszCmd[0] = '\0';
-    
+
 #ifdef TRACE_OSL_FILE
     fprintf(stderr,"In  osl_unmountFloppy\n");
-#endif    
+#endif
 
     pItem = (oslVolumeDeviceHandleImpl*) hFloppy;
-    
+
     if ( pItem == 0 )
     {
 #ifdef TRACE_OSL_FILE
@@ -965,13 +965,13 @@ static oslFileError osl_unmountFloppy(oslVolumeDeviceHandle hFloppy)
 /*      if ( nRet != 0 ) */
 /*      { */
 /*          nRet = errno; */
-        
+
 /*  #ifdef DEBUG_OSL_FILE */
 /*          perror("mount"); */
 /*  #endif */
 /*      } */
-    
-    
+
+
     pszTmp = getenv("SAL_MOUNT_UMOUNTPROG");
     if ( pszTmp != 0 )
     {
@@ -985,26 +985,26 @@ static oslFileError osl_unmountFloppy(oslVolumeDeviceHandle hFloppy)
     }
 
     if ( pszSuDo != 0 )
-    {    
-        snprintf(pszCmd, sizeof(pszCmd), "%s %s %s",pszSuDo,pszUmountProg,pItem->pszMountPoint);        
+    {
+        snprintf(pszCmd, sizeof(pszCmd), "%s %s %s",pszSuDo,pszUmountProg,pItem->pszMountPoint);
     }
     else
     {
         snprintf(pszCmd, sizeof(pszCmd), "%s %s",pszUmountProg,pItem->pszMountPoint);
     }
-    
+
 
 #ifdef DEBUG_OSL_FILE
     fprintf(stderr,"executing '%s'\n",pszCmd);
 #endif
-    
-    nRet = system(pszCmd);    
+
+    nRet = system(pszCmd);
 
 #ifdef DEBUG_OSL_FILE
     fprintf(stderr,"call returned '%i'\n",nRet);
     fprintf(stderr,"exit status is '%i'\n", WEXITSTATUS(nRet));
 #endif
-    
+
     switch ( WEXITSTATUS(nRet) )
     {
     case 0:
@@ -1015,20 +1015,20 @@ static oslFileError osl_unmountFloppy(oslVolumeDeviceHandle hFloppy)
         nRet=EBUSY;
         break;
     }
-    
+
 #ifdef TRACE_OSL_FILE
     fprintf(stderr,"Out osl_unmountFloppy [ok]\n");
-#endif    
+#endif
 
     return ((0 == nRet) ? oslTranslateFileError(OSL_FET_SUCCESS, nRet) : oslTranslateFileError(OSL_FET_ERROR, nRet));
-    
+
 /*    return osl_File_E_None;*/
 }
 
 #endif /* LINUX */
 
 #if defined(LINUX)
-static sal_Bool 
+static sal_Bool
 osl_getFloppyMountEntry(const sal_Char* pszPath, oslVolumeDeviceHandleImpl* pItem)
 {
     struct mntent* pMountEnt;
@@ -1040,22 +1040,22 @@ osl_getFloppyMountEntry(const sal_Char* pszPath, oslVolumeDeviceHandleImpl* pIte
 
     while ((pMountEnt = getmntent(pMountTab)) != 0)
     {
-        if (   strncmp(pMountEnt->mnt_dir,    pszPath,   strlen(pMountEnt->mnt_dir)) == 0 
+        if (   strncmp(pMountEnt->mnt_dir,    pszPath,   strlen(pMountEnt->mnt_dir)) == 0
             && strncmp(pMountEnt->mnt_fsname, "/dev/fd", strlen("/dev/fd")) == 0)
         {
-			memset(pItem->pszMountPoint, 0, sizeof(pItem->pszMountPoint));			
+			memset(pItem->pszMountPoint, 0, sizeof(pItem->pszMountPoint));
             strncpy(pItem->pszMountPoint, pMountEnt->mnt_dir, sizeof(pItem->pszMountPoint) - 1);
-			
+
 			memset(pItem->pszFilePath, 0, sizeof(pItem->pszFilePath));
             strncpy(pItem->pszFilePath, pMountEnt->mnt_dir, sizeof(pItem->pszFilePath) - 1);
-			
+
 			memset(pItem->pszDevice, 0, sizeof(pItem->pszDevice));
             strncpy(pItem->pszDevice, pMountEnt->mnt_fsname, sizeof(pItem->pszDevice) - 1);
-           			
+
             endmntent (pMountTab);
-            return sal_True; 
+            return sal_True;
         }
-    }    
+    }
 
     endmntent (pMountTab);
     return sal_False;
@@ -1063,22 +1063,22 @@ osl_getFloppyMountEntry(const sal_Char* pszPath, oslVolumeDeviceHandleImpl* pIte
 #endif /* LINUX */
 
 #if defined(LINUX)
-static sal_Bool 
+static sal_Bool
 osl_isFloppyMounted (oslVolumeDeviceHandleImpl* pDevice)
 {
-    oslVolumeDeviceHandleImpl aItem;    
+    oslVolumeDeviceHandleImpl aItem;
 
     if (   osl_getFloppyMountEntry (pDevice->pszMountPoint, &aItem)
-        && strcmp (aItem.pszMountPoint, pDevice->pszMountPoint) == 0 
+        && strcmp (aItem.pszMountPoint, pDevice->pszMountPoint) == 0
         && strcmp (aItem.pszDevice,     pDevice->pszDevice) == 0)
     {
         return sal_True;
     }
-    return sal_False;    
+    return sal_False;
 }
 #endif /* LINUX */
 
-/* NetBSD floppy functions have to be added here. Until we have done that, 
+/* NetBSD floppy functions have to be added here. Until we have done that,
  * we use the MACOSX definitions for nonexistent floppy.
  * */
 
@@ -1139,12 +1139,12 @@ static void osl_printFloppyHandle(oslVolumeDeviceHandleImpl* pItem)
 #endif
         return;
     }
-    
+
 
     fprintf(stderr,"MountPoint : '%s'\n",pItem->pszMountPoint);
     fprintf(stderr,"FilePath   : '%s'\n",pItem->pszFilePath);
     fprintf(stderr,"Device     : '%s'\n",pItem->pszDevice);
 
-    return;    
+    return;
 }
 #endif

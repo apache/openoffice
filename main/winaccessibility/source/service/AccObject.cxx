@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 #include <com/sun/star/uno/Sequence.h>
@@ -319,7 +319,7 @@ void  AccObject::SetValue( Any pAny )
     case SCROLL_BAR:
         m_pIMAcc->Put_XAccValue( GetMAccessibleValueFromAny(pAny).getStr() );
         break ;
-	// Added by Li Xing, only the checkbox in tree should have the value. 
+	// Added by Li Xing, only the checkbox in tree should have the value.
 	case CHECK_BOX:
 		if( ( m_pParentObj !=NULL ) && (TREE == m_pParentObj->m_accRole || TREE_ITEM == m_pParentObj->m_accRole ))
 	        m_pIMAcc->Put_XAccValue( GetMAccessibleValueFromAny(pAny).getStr() );
@@ -538,7 +538,7 @@ DWORD AccObject::GetMSAAStateFromUNO(short xState)
             }
         }
         break;
-	//Remove the SENSITIVE state mapping. There is no corresponding MSAA state. 
+	//Remove the SENSITIVE state mapping. There is no corresponding MSAA state.
     //case  SENSITIVE:
     //    IState = STATE_SYSTEM_PROTECTED;
     case EDITABLE:
@@ -653,7 +653,7 @@ AccObject* AccObject::NextChild()
 /**
    * update action desciption desc
    * @param
-   * @return 
+   * @return
    */
 void AccObject::UpdateActionDesc()
 {
@@ -686,7 +686,7 @@ void AccObject::UpdateActionDesc()
 					//Solution:If string length is more than zero,action will will be set.
 					if( pXString.getLength() > 0)
 						m_pIMAcc->Put_ActionDescription( pXString.getStr() );
-				}                
+				}
             }
         }
     }
@@ -695,7 +695,7 @@ void AccObject::UpdateActionDesc()
 /**
    * update role information from uno to com
    * @param
-   * @return 
+   * @return
    */
 void AccObject::UpdateRole()
 {
@@ -717,7 +717,7 @@ void AccObject::UpdateRole()
 /**
    * update state information from uno to com
    * @param
-   * @return 
+   * @return
    */
 void AccObject::UpdateState()
 {
@@ -900,7 +900,7 @@ void AccObject::UpdateState()
 /**
    * update location information from uno to com
    * @param
-   * @return 
+   * @return
    */
 void AccObject::UpdateLocation()
 {

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -92,7 +92,7 @@ struct DataSupplier_Impl
 //	Entry::iterator 		  		  m_aIterator;
   	sal_Int32					      m_nOpenMode;
   	sal_Bool					      m_bCountFinal;
-														   
+
 	DataSupplier_Impl( const Reference< XMultiServiceFactory >& rxSMgr,
 	                   const rtl::Reference< Content >& rContent,
 					   sal_Int32 nOpenMode )
@@ -189,7 +189,7 @@ Reference< XContentIdentifier > DataSupplier::queryContentIdentifier(
 	::rtl::OUString aId = queryContentIdentifierString( nIndex );
 	if ( aId.getLength() )
 	{
-		Reference< XContentIdentifier > xId 
+		Reference< XContentIdentifier > xId
             = new ucbhelper::ContentIdentifier( aId );
 		m_pImpl->m_aResults[ nIndex ]->xId = xId;
 		return xId;
@@ -281,7 +281,7 @@ sal_Bool DataSupplier::getResult( sal_uInt32 nIndex )
 	lpszDMSList[strlen(lpszDMSList)+1] = '\0';
 
 	::rtl::OString sQuery("SELECT ODM_DOCID, ODM_NAME");
-	
+
 	DWORD dwFlags = ODM_SPECIFIC;
 	odm = NODMQueryExecute(ContentProvider::getHandle(), sQuery,dwFlags, lpszDMSList, pQueryId );
 	if(odm != ODM_SUCCESS)
@@ -292,7 +292,7 @@ sal_Bool DataSupplier::getResult( sal_uInt32 nIndex )
 	sal_Char* lpszDocId		= new sal_Char[ODM_DOCID_MAX * nMaxCount];
 	sal_Char* lpszDocName	= new sal_Char[ODM_NAME_MAX * nMaxCount];
 
-	
+
 	::rtl::OUString sContentType(RTL_CONSTASCII_USTRINGPARAM(ODMA_CONTENT_TYPE));
 	sal_uInt32 nCurrentCount = 0;
 	do
@@ -317,7 +317,7 @@ sal_Bool DataSupplier::getResult( sal_uInt32 nIndex )
 		}
 	}
 	while(nCount > nMaxCount);
-	
+
 
 	// now close the query
 	odm = NODMQueryClose(ContentProvider::getHandle(), pQueryId);

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -1077,7 +1077,7 @@ sal_Bool SwTransferable::IsPaste( const SwWrtShell& rSh,
     bool bIsPaste = ( GetSwTransferable( rData ) != NULL );
 
     // if it's not our own data, we need to have a closer look:
-    if( ! bIsPaste ) 
+    if( ! bIsPaste )
     {
         // determine the proper paste action, and return true if we find one
         uno::Reference<XTransferable> xTransferable( rData.GetXTransferable() );
@@ -1169,7 +1169,7 @@ int SwTransferable::PasteData( TransferableDataHelper& rData,
 
 	int nRet = 0;
     bool bCallAutoCaption = false;
-    
+
 	if( pPt )
 	{
 		// external Drop
@@ -1265,7 +1265,7 @@ int SwTransferable::PasteData( TransferableDataHelper& rData,
 		nRet = pTrans->PrivateDrop( rSh, *pPt, DND_ACTION_MOVE == nDropAction,
 									bPasteSelection );
 	}
-    else if( !pPt && pTunneledTrans && 
+    else if( !pPt && pTunneledTrans &&
 			EXCHG_OUT_ACTION_INSERT_PRIVATE == nAction )
 	{
 		// then internal paste
@@ -3020,7 +3020,7 @@ void SwTransferable::FillClipFmtItem( const SwWrtShell& rSh,
 								SvxClipboardFmtItem & rToFill )
 {
 	sal_uInt16 nDest = SwTransferable::GetSotDestination( rSh );
-	    
+
 	SwTransferable *pClipboard = GetSwTransferable( rData );
 	if( pClipboard )
 	{
@@ -3682,7 +3682,7 @@ sal_Int64 SwTransferable::getSomething( const Sequence< sal_Int8 >& rId ) throw(
 SwTransferable* SwTransferable::GetSwTransferable( const TransferableDataHelper& rData )
 {
     SwTransferable* pSwTransferable = NULL;
-    
+
     uno::Reference<XUnoTunnel> xTunnel( rData.GetTransferable(), UNO_QUERY );
     if ( xTunnel.is() )
     {
@@ -3690,9 +3690,9 @@ SwTransferable* SwTransferable::GetSwTransferable( const TransferableDataHelper&
         if ( nHandle )
             pSwTransferable = (SwTransferable*) (sal_IntPtr) nHandle;
     }
-    
+
     return pSwTransferable;
-    
+
 }
 
 /* */

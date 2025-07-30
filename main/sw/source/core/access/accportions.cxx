@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -164,7 +164,7 @@ void SwAccessiblePortionData::Special(
     {
         case POR_POSTITS:
             sDisplay = String(sal_Unicode(0xfffc));
-            
+
 			break;
 		case POR_FLYCNT:
 			sDisplay = String(sal_Unicode(0xfffc));
@@ -183,7 +183,7 @@ void SwAccessiblePortionData::Special(
 					sDisplay = String(sal_Unicode(0xfffc));
 				else
 					sDisplay = rText;
-				aFieldPosition.push_back(aBuffer.getLength());		
+				aFieldPosition.push_back(aBuffer.getLength());
 				aFieldPosition.push_back(aBuffer.getLength() + rText.Len());
 				break;
 			}
@@ -193,7 +193,7 @@ void SwAccessiblePortionData::Special(
 			}
 		case POR_FTN:
 			{
-				sDisplay = rText;			
+				sDisplay = rText;
 				sal_Int32 nStart=aBuffer.getLength();
 				sal_Int32 nEnd=nStart + rText.Len();
 				m_vecPairPos.push_back(std::make_pair(nStart,nEnd));
@@ -722,13 +722,13 @@ sal_uInt16 SwAccessiblePortionData::GetAttrFldType( sal_Int32 nPos )
 	sal_Int32 nFieldIndex = 0;
     for( size_t i = 0; i < aFieldPosition.size() - 1; i += 2 )
  	{
-		if( nPos < aFieldPosition[ i + 1 ]  &&  nPos >= aFieldPosition[ i ] ) 
-		{		
+		if( nPos < aFieldPosition[ i + 1 ]  &&  nPos >= aFieldPosition[ i ] )
+		{
 			return aAttrFieldType[nFieldIndex];
 		}
 		nFieldIndex++ ;
  	}
-	return 0;  	
+	return 0;
 }
 
 sal_Bool SwAccessiblePortionData::FillBoundaryIFDateField( com::sun::star::i18n::Boundary& rBound, const sal_Int32 nPos )
@@ -736,14 +736,14 @@ sal_Bool SwAccessiblePortionData::FillBoundaryIFDateField( com::sun::star::i18n:
 	if( aFieldPosition.size() < 2 ) return sal_False;
     for( size_t i = 0; i < aFieldPosition.size() - 1; i += 2 )
 	{
-		if( nPos < aFieldPosition[ i + 1 ]  &&  nPos >= aFieldPosition[ i ] ) 
+		if( nPos < aFieldPosition[ i + 1 ]  &&  nPos >= aFieldPosition[ i ] )
 		{
 			rBound.startPos = aFieldPosition[i];
 			rBound.endPos =  aFieldPosition[i + 1];
 			return sal_True;
 		}
 	}
-	return sal_False;  	
+	return sal_False;
 }
 void SwAccessiblePortionData::AdjustAndCheck(
     sal_Int32 nPos,
@@ -831,18 +831,18 @@ sal_Bool SwAccessiblePortionData::IsIndexInFootnode(sal_Int32 nIndex)
 sal_Bool SwAccessiblePortionData::IsInGrayPortion( sal_Int32 nPos )
 {
 //    return IsGrayPortion( FindBreak( aAccessiblePositions, nPos ) );
-    return IsPortionAttrSet( FindBreak( aAccessiblePositions, nPos ), 
+    return IsPortionAttrSet( FindBreak( aAccessiblePositions, nPos ),
                              PORATTR_GRAY );
 }
 
 sal_Int32 SwAccessiblePortionData::GetFieldIndex(sal_Int32 nPos)
 {
 	sal_Int32 nIndex = -1;
-	if( aFieldPosition.size() >= 2 ) 
+	if( aFieldPosition.size() >= 2 )
 	{
 		for( sal_uInt32 i = 0; i < aFieldPosition.size() - 1; i += 2 )
 		{
-			if( nPos <= aFieldPosition[ i + 1 ]  &&  nPos >= aFieldPosition[ i ] ) 
+			if( nPos <= aFieldPosition[ i + 1 ]  &&  nPos >= aFieldPosition[ i ] )
 			{
 				nIndex = i/2;
 				break;

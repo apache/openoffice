@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -56,7 +56,7 @@ bool IsValidHandle( HANDLE handle )
 	return ((NULL != handle) && (INVALID_HANDLE_VALUE != handle));
 }
 
-void fail() 
+void fail()
 {
     LPWSTR buf = NULL;
     FormatMessageW(
@@ -75,10 +75,10 @@ bool rebaseImage( wchar_t* pszFilePath, ULONG nNewImageBase)
 	ULONG_PTR lpNewImageBase  = nNewImageBase;
 	ULONG	  ulDateTimeStamp = 0;
 	bool      bResult(false);
-	
+
 	char cszFilePath[_MAX_PATH+1] = {0};
 	int nResult = WideCharToMultiByte(CP_ACP, 0, pszFilePath, -1, cszFilePath, _MAX_PATH, NULL, NULL);
-	
+
 	if (nResult != 0)
 	{
 		BOOL bResult = ReBaseImage(
@@ -150,31 +150,31 @@ void rebaseImagesInFolder( wchar_t* pszFolder, DWORD nNewImageBase )
 extern "C" int APIENTRY WinMain( HINSTANCE, HINSTANCE, LPSTR, int )
 {
 	wchar_t path[MAX_PATH];
-	
+
 	wchar_t * pathEnd = getBrandPath(path);
-	
+
 	if (tools::buildPath(path, path, pathEnd, MY_STRING(L"")) == NULL)
 		fail();
 	rebaseImagesInFolder(path, BASEVIRTUALADDRESS);
-    
+
 	if (tools::buildPath(path, path, pathEnd, MY_STRING(L"..\\basis-link")) == NULL)
 		fail();
 	pathEnd = tools::resolveLink(path);
-	
+
 	if ( pathEnd == NULL )
 		return 0;
 
 	if (tools::buildPath(path, path, pathEnd, MY_STRING(L"\\program\\")) == NULL)
 		fail();
 	rebaseImagesInFolder(path, BASEVIRTUALADDRESS);
-	
+
 	if (tools::buildPath(path, path, pathEnd, MY_STRING(L"\\ure-link")) == NULL)
 		fail();
 	pathEnd = tools::resolveLink(path);
-	
+
 	if ( pathEnd == NULL )
 		return 0;
-	
+
 	if (tools::buildPath(path, path, pathEnd, MY_STRING(L"\\bin\\")) == NULL)
 		fail();
 	rebaseImagesInFolder(path, BASEVIRTUALADDRESS);

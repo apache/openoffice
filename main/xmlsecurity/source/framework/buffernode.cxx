@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -45,7 +45,7 @@ bool BufferNode::isECOfBeforeModifyIncluded(sal_Int32 nIgnoredSecurityId) const
 /****** BufferNode/isECOfBeforeModifyIncluded ********************************
  *
  *   NAME
- *	isECOfBeforeModifyIncluded -- checks whether there is some 
+ *	isECOfBeforeModifyIncluded -- checks whether there is some
  *	ElementCollector on this BufferNode, that has BEFORE-MODIFY priority.
  *
  *   SYNOPSIS
@@ -77,10 +77,10 @@ bool BufferNode::isECOfBeforeModifyIncluded(sal_Int32 nIgnoredSecurityId) const
 	bool rc = false;
 	std::vector< const ElementCollector* >::const_iterator ii = m_vElementCollectors.begin();
 
-	for( ; ii != m_vElementCollectors.end() ; ++ii ) 
+	for( ; ii != m_vElementCollectors.end() ; ++ii )
 	{
 		ElementCollector* pElementCollector = (ElementCollector*)*ii;
-		
+
 		if ((nIgnoredSecurityId == cssxc::sax::ConstOfSecurityId::UNDEFINEDSECURITYID ||
 		 	pElementCollector->getSecurityId() != nIgnoredSecurityId) &&
 		    (pElementCollector->getPriority() == cssxc::sax::ElementMarkPriority_BEFOREMODIFY))
@@ -89,7 +89,7 @@ bool BufferNode::isECOfBeforeModifyIncluded(sal_Int32 nIgnoredSecurityId) const
 			break;
 		}
 	}
-	
+
 	return rc;
 }
 
@@ -189,9 +189,9 @@ void BufferNode::removeElementCollector(const ElementCollector* pElementCollecto
 {
 	std::vector< const ElementCollector* >::iterator ii = m_vElementCollectors.begin();
 
-	for( ; ii != m_vElementCollectors.end() ; ++ii ) 
+	for( ; ii != m_vElementCollectors.end() ; ++ii )
 	{
-		if( *ii == pElementCollector ) 
+		if( *ii == pElementCollector )
 		{
 			m_vElementCollectors.erase( ii );
 			((ElementCollector*)pElementCollector)->setBufferNode(NULL);
@@ -236,7 +236,7 @@ void BufferNode::setBlocker(const ElementMark* pBlocker)
  ******************************************************************************/
 {
 	OSL_ASSERT(!(m_pBlocker != NULL && pBlocker != NULL));
-	
+
 	m_pBlocker = (ElementMark*)pBlocker;
 	if (m_pBlocker != NULL)
 	{
@@ -269,11 +269,11 @@ rtl::OUString BufferNode::printChildren() const
  *	Michael Mi
  *	Email: michael.mi@sun.com
  ******************************************************************************/
-{ 
+{
 	rtl::OUString rc;
 	std::vector< const ElementCollector* >::const_iterator ii = m_vElementCollectors.begin();
-			
-	for( ; ii != m_vElementCollectors.end() ; ++ii ) 
+
+	for( ; ii != m_vElementCollectors.end() ; ++ii )
 	{
 		rc += rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "BufID=" ));
 		rc += rtl::OUString::valueOf((*ii)->getBufferId());
@@ -282,9 +282,9 @@ rtl::OUString BufferNode::printChildren() const
 		{
 			rc += rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "[M]" ));
 		}
-		
+
 		rc += rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( ",Pri=" ));
-		
+
 		switch (((ElementCollector*)(*ii))->getPriority())
 		{
 			case cssxc::sax::ElementMarkPriority_BEFOREMODIFY:
@@ -297,7 +297,7 @@ rtl::OUString BufferNode::printChildren() const
 				rc += rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "UNKNOWN" ));
 				break;
 		}
-		
+
 		rc += rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "(" ));
 		/*
 		if (((ElementCollector*)(*ii))->isInternalNotificationSuppressed())
@@ -310,7 +310,7 @@ rtl::OUString BufferNode::printChildren() const
 		rc += rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( ")" ));
 		rc += rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( " " ));
 	}
-	
+
 	return rc;
 }
 
@@ -407,12 +407,12 @@ const BufferNode* BufferNode::getFirstChild() const
  ******************************************************************************/
 {
 	BufferNode* rc = NULL;
-	
+
 	if (m_vChildren.size() > 0)
 	{
 		rc = (BufferNode*)m_vChildren.front();
 	}
-	
+
 	return (const BufferNode*)rc;
 }
 
@@ -519,9 +519,9 @@ void BufferNode::removeChild(const BufferNode* pChild)
 {
 	std::vector< const BufferNode* >::iterator ii = m_vChildren.begin();
 
-	for( ; ii != m_vChildren.end() ; ++ii ) 
+	for( ; ii != m_vChildren.end() ; ++ii )
 	{
-		if( *ii == pChild ) 
+		if( *ii == pChild )
 		{
 			m_vChildren.erase( ii );
 			break;
@@ -558,24 +558,24 @@ sal_Int32 BufferNode::indexOfChild(const BufferNode* pChild) const
 {
 	sal_Int32 nIndex = 0;
 	bool bFound = false;
-	
+
 	std::vector< const BufferNode * >::const_iterator ii = m_vChildren.begin();
 
-	for( ; ii != m_vChildren.end() ; ++ii ) 
+	for( ; ii != m_vChildren.end() ; ++ii )
 	{
-		if( *ii == pChild ) 
+		if( *ii == pChild )
 		{
 			bFound = true;
 			break;
 		}
 		nIndex++;
 	}
-	
+
 	if (!bFound )
 	{
 		nIndex = -1;
 	}
-	
+
 	return nIndex;
 }
 
@@ -607,12 +607,12 @@ const BufferNode* BufferNode::childAt(sal_Int32 nIndex) const
  ******************************************************************************/
 {
 	BufferNode* rc = NULL;
-	
+
 	if (nIndex < ((sal_Int32)m_vChildren.size()) && nIndex >= 0)
 	{
 		rc = (BufferNode*)m_vChildren[nIndex];
 	}
-	
+
 	return (const BufferNode*)rc;
 }
 
@@ -653,12 +653,12 @@ const BufferNode* BufferNode::getNextSibling() const
  ******************************************************************************/
 {
 	BufferNode* rc = NULL;
-	
+
 	if (m_pParent != NULL)
 	{
 		rc = (BufferNode*)m_pParent->getNextChild(this);
 	}
-	
+
 	return (const BufferNode*)rc;
 }
 
@@ -679,7 +679,7 @@ const BufferNode* BufferNode::isAncestor(const BufferNode* pDescendant) const
  *	pDescendant -	the BufferNode to be checked as a descendant
  *
  *   RESULT
- *	bIs -	true if this BufferNode is an ancestor of the pDescendant, 
+ *	bIs -	true if this BufferNode is an ancestor of the pDescendant,
  *	     	false otherwise.
  *
  *   HISTORY
@@ -691,21 +691,21 @@ const BufferNode* BufferNode::isAncestor(const BufferNode* pDescendant) const
  ******************************************************************************/
 {
 	BufferNode* rc = NULL;
-	
+
 	if (pDescendant != NULL)
 	{
 		std::vector< const BufferNode* >::const_iterator ii = m_vChildren.begin();
-	
-		for( ; ii != m_vChildren.end() ; ++ii ) 
+
+		for( ; ii != m_vChildren.end() ; ++ii )
 		{
 			BufferNode* pChild = (BufferNode*)*ii;
-			
+
 			if (pChild == pDescendant)
 			{
 				rc = pChild;
 				break;
 			}
-			
+
 			if (pChild->isAncestor(pDescendant) != NULL)
 			{
 				rc = pChild;
@@ -715,7 +715,7 @@ const BufferNode* BufferNode::isAncestor(const BufferNode* pDescendant) const
 	}
 
 	return (const BufferNode*)rc;
-}	
+}
 
 bool BufferNode::isPrevious(const BufferNode* pFollowing) const
 /****** BufferNode/isPrevious ************************************************
@@ -746,7 +746,7 @@ bool BufferNode::isPrevious(const BufferNode* pFollowing) const
  ******************************************************************************/
 {
 	bool rc = false;
-	
+
 	BufferNode* pNextBufferNode = (BufferNode*)getNextNodeByTreeOrder();
 	while (pNextBufferNode != NULL)
 	{
@@ -755,12 +755,12 @@ bool BufferNode::isPrevious(const BufferNode* pFollowing) const
 			rc = true;
 			break;
 		}
-		
+
 		pNextBufferNode = (BufferNode*)(pNextBufferNode->getNextNodeByTreeOrder());
 	}
-	
+
 	return rc;
-}	
+}
 
 const BufferNode* BufferNode::getNextNodeByTreeOrder() const
 /****** BufferNode/getNextNodeByTreeOrder ************************************
@@ -779,7 +779,7 @@ const BufferNode* BufferNode::getNextNodeByTreeOrder() const
  *	empty
  *
  *   RESULT
- *	next -	the BufferNode following this BufferNode in the tree order, 
+ *	next -	the BufferNode following this BufferNode in the tree order,
  *	      	or NULL if there is none.
  *
  *   NOTES
@@ -808,7 +808,7 @@ const BufferNode* BufferNode::getNextNodeByTreeOrder() const
 	}
 
         /*
-         * Otherwise, it this buffer node has a following sibling, 
+         * Otherwise, it this buffer node has a following sibling,
          * then return that sibling.
          */
 	BufferNode* pNextSibling = (BufferNode*)getNextSibling();
@@ -816,7 +816,7 @@ const BufferNode* BufferNode::getNextNodeByTreeOrder() const
 	{
 		return pNextSibling;
 	}
-	
+
         /*
          * Otherwise, it this buffer node has parent, then return
          * its parent's following sibling.
@@ -824,23 +824,23 @@ const BufferNode* BufferNode::getNextNodeByTreeOrder() const
         BufferNode* pNode = (BufferNode*)this;
 	BufferNode* pParent;
 	BufferNode* pNextSiblingParent = NULL;
-	
+
 	do
 	{
 		if (pNode == NULL)
 		{
 			break;
 		}
-		
+
 		pParent = (BufferNode*)pNode->getParent();
 		if (pParent != NULL)
 		{
 			pNextSiblingParent = (BufferNode*)pParent->getNextSibling();
 		}
 		pNode = pParent;
-		
+
 	}while (pNextSiblingParent == NULL);
-	
+
 	return pNextSiblingParent;
 }
 
@@ -852,7 +852,7 @@ cssu::Reference< cssxw::XXMLElementWrapper > BufferNode::getXMLElement() const
 void BufferNode::setXMLElement( const cssu::Reference< cssxw::XXMLElementWrapper >& xXMLElement )
 {
 	m_xXMLElement = xXMLElement;
-}	
+}
 
 void BufferNode::notifyBranch()
 /****** BufferNode/notifyBranch **********************************************
@@ -883,7 +883,7 @@ void BufferNode::notifyBranch()
 {
 	std::vector< const BufferNode* >::const_iterator ii = m_vChildren.begin();
 
-	for( ; ii != m_vChildren.end() ; ++ii ) 
+	for( ; ii != m_vChildren.end() ; ++ii )
 	{
 		BufferNode* pBufferNode = (BufferNode*)*ii;
 		pBufferNode->elementCollectorNotify();
@@ -957,12 +957,12 @@ void BufferNode::elementCollectorNotify()
 	{
 		cssxc::sax::ElementMarkPriority nMaxPriority = cssxc::sax::ElementMarkPriority_MINIMUM;
 		cssxc::sax::ElementMarkPriority nPriority;
-		
+
 		/*
 		 * get the max priority among ElementCollectors on this BufferNode
 		 */
 		std::vector< const ElementCollector* >::const_iterator ii = m_vElementCollectors.begin();
-		for( ; ii != m_vElementCollectors.end() ; ++ii ) 
+		for( ; ii != m_vElementCollectors.end() ; ++ii )
 		{
 			ElementCollector* pElementCollector = (ElementCollector*)*ii;
 			nPriority = pElementCollector->getPriority();
@@ -971,16 +971,16 @@ void BufferNode::elementCollectorNotify()
 				nMaxPriority = nPriority;
 			}
 		}
-		
+
 		std::vector< const ElementCollector* > vElementCollectors( m_vElementCollectors );
 		ii = vElementCollectors.begin();
-		
-		for( ; ii != vElementCollectors.end() ; ++ii ) 
+
+		for( ; ii != vElementCollectors.end() ; ++ii )
 		{
 			ElementCollector* pElementCollector = (ElementCollector*)*ii;
 			nPriority = pElementCollector->getPriority();
 			bool bToModify = pElementCollector->getModify();
-			
+
 			/*
 			 * Only ElementCollector with the max priority can
 			 * perform notify operation.
@@ -1002,7 +1002,7 @@ void BufferNode::elementCollectorNotify()
 				 * will destroy the bufferred element, in turn, ElementCollectors
 				 * mentioned above can't perform their mission.
 				 */
-				//if (!(nMaxPriority == cssxc::sax::ElementMarkPriority_PRI_MODIFY && 
+				//if (!(nMaxPriority == cssxc::sax::ElementMarkPriority_PRI_MODIFY &&
 				if (!(bToModify &&
 				     (isECInSubTreeIncluded(pElementCollector->getSecurityId()) ||
 				      isECOfBeforeModifyInAncestorIncluded(pElementCollector->getSecurityId()))
@@ -1047,10 +1047,10 @@ bool BufferNode::isECInSubTreeIncluded(sal_Int32 nIgnoredSecurityId) const
  ******************************************************************************/
 {
 	bool rc = false;
-	
+
 	std::vector< const ElementCollector* >::const_iterator jj = m_vElementCollectors.begin();
-	
-	for( ; jj != m_vElementCollectors.end() ; ++jj ) 
+
+	for( ; jj != m_vElementCollectors.end() ; ++jj )
 	{
 		ElementCollector* pElementCollector = (ElementCollector*)*jj;
 		if (nIgnoredSecurityId == cssxc::sax::ConstOfSecurityId::UNDEFINEDSECURITYID ||
@@ -1060,15 +1060,15 @@ bool BufferNode::isECInSubTreeIncluded(sal_Int32 nIgnoredSecurityId) const
 			break;
 		}
 	}
-	
+
 	if ( !rc )
 	{
 		std::vector< const BufferNode* >::const_iterator ii = m_vChildren.begin();
-	
-		for( ; ii != m_vChildren.end() ; ++ii ) 
+
+		for( ; ii != m_vChildren.end() ; ++ii )
 		{
 			BufferNode* pBufferNode = (BufferNode*)*ii;
-			
+
 			if ( pBufferNode->isECInSubTreeIncluded(nIgnoredSecurityId))
 			{
 				rc = true;
@@ -1076,7 +1076,7 @@ bool BufferNode::isECInSubTreeIncluded(sal_Int32 nIgnoredSecurityId) const
 			}
 		}
 	}
-	
+
 	return rc;
 }
 
@@ -1093,7 +1093,7 @@ bool BufferNode::isECOfBeforeModifyInAncestorIncluded(sal_Int32 nIgnoredSecurity
  *
  *   FUNCTION
  *	checks each ancestor BufferNode through the parent link, if there is
- *	an ElementCollector with PRI_BEFPREMODIFY priority and its 
+ *	an ElementCollector with PRI_BEFPREMODIFY priority and its
  *	signatureId is not ignored, then return true, otherwise, false
  *	returned.
  *
@@ -1114,7 +1114,7 @@ bool BufferNode::isECOfBeforeModifyInAncestorIncluded(sal_Int32 nIgnoredSecurity
  ******************************************************************************/
 {
 	bool rc = false;
-	
+
 	BufferNode* pParentNode = m_pParent;
 	while (pParentNode != NULL)
 	{
@@ -1123,10 +1123,10 @@ bool BufferNode::isECOfBeforeModifyInAncestorIncluded(sal_Int32 nIgnoredSecurity
 			rc = true;
 			break;
 		}
-		
+
 		pParentNode = (BufferNode*)pParentNode->getParent();
 	}
-	
+
 	return rc;
 }
 
@@ -1162,29 +1162,29 @@ bool BufferNode::isBlockerInSubTreeIncluded(sal_Int32 nIgnoredSecurityId) const
  ******************************************************************************/
 {
 	bool rc = false;
-	
+
 	std::vector< const BufferNode* >::const_iterator ii = m_vChildren.begin();
 
-	for( ; ii != m_vChildren.end() ; ++ii ) 
+	for( ; ii != m_vChildren.end() ; ++ii )
 	{
 		BufferNode* pBufferNode = (BufferNode*)*ii;
 		ElementMark* pBlocker = pBufferNode->getBlocker();
-		
+
 		if (pBlocker != NULL &&
 			(nIgnoredSecurityId == cssxc::sax::ConstOfSecurityId::UNDEFINEDSECURITYID ||
-			pBlocker->getSecurityId() != nIgnoredSecurityId )) 
+			pBlocker->getSecurityId() != nIgnoredSecurityId ))
 		{
 			rc = true;
 			break;
 		}
-		
+
 		if (rc || pBufferNode->isBlockerInSubTreeIncluded(nIgnoredSecurityId))
 		{
 			rc = true;
 			break;
 		}
 	}
-	
+
 	return rc;
 }
 
@@ -1204,7 +1204,7 @@ const BufferNode* BufferNode::getNextChild(const BufferNode* pChild) const
  *	pChild - the child BufferNode whose next node is retrieved.
  *
  *   RESULT
- *	nextChild -	the next child BufferNode after the pChild, or NULL if 
+ *	nextChild -	the next child BufferNode after the pChild, or NULL if
  *	there is none.
  *
  *   HISTORY
@@ -1217,22 +1217,22 @@ const BufferNode* BufferNode::getNextChild(const BufferNode* pChild) const
 {
 	BufferNode* rc = NULL;
 	bool bChildFound = false;
-	
+
 	std::vector< const BufferNode* >::const_iterator ii = m_vChildren.begin();
-	for( ; ii != m_vChildren.end() ; ++ii ) 
+	for( ; ii != m_vChildren.end() ; ++ii )
 	{
 		if (bChildFound)
 		{
 			rc = (BufferNode*)*ii;
 			break;
 		}
-			
-		if( *ii == pChild ) 
+
+		if( *ii == pChild )
 		{
 			bChildFound = true;
 		}
 	}
-	
+
 	return (const BufferNode*)rc;
 }
 
@@ -1264,12 +1264,12 @@ void BufferNode::freeAllChildren()
  ******************************************************************************/
 {
 	std::vector< const BufferNode* >::const_iterator ii = m_vChildren.begin();
-	for( ; ii != m_vChildren.end() ; ++ii ) 
+	for( ; ii != m_vChildren.end() ; ++ii )
 	{
 		BufferNode *pChild = (BufferNode *)(*ii);
 		pChild->freeAllChildren();
 		delete pChild;
 	}
-	
+
 	m_vChildren.clear();
 }

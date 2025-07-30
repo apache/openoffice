@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
@@ -106,7 +106,7 @@ namespace drawinglayer
 			        && getTextureFilter() == rCandidate.getTextureFilter()
 			        && getReducedLineGeometry() == rCandidate.getReducedLineGeometry());
 	        }
-            
+
             static ImpSdr3DObjectAttribute* get_global_default()
             {
                 static ImpSdr3DObjectAttribute* pDefault = 0;
@@ -193,7 +193,7 @@ namespace drawinglayer
 				{
 					delete mpSdr3DObjectAttribute;
 				}
-				
+
 				mpSdr3DObjectAttribute = rCandidate.mpSdr3DObjectAttribute;
 				mpSdr3DObjectAttribute->mnRefCount++;
 			}
@@ -216,59 +216,59 @@ namespace drawinglayer
 			return (*rCandidate.mpSdr3DObjectAttribute == *mpSdr3DObjectAttribute);
 		}
 
-		::com::sun::star::drawing::NormalsKind Sdr3DObjectAttribute::getNormalsKind() const 
-        { 
-            return mpSdr3DObjectAttribute->getNormalsKind(); 
+		::com::sun::star::drawing::NormalsKind Sdr3DObjectAttribute::getNormalsKind() const
+        {
+            return mpSdr3DObjectAttribute->getNormalsKind();
         }
 
-		::com::sun::star::drawing::TextureProjectionMode Sdr3DObjectAttribute::getTextureProjectionX() const 
-        { 
-            return mpSdr3DObjectAttribute->getTextureProjectionX(); 
+		::com::sun::star::drawing::TextureProjectionMode Sdr3DObjectAttribute::getTextureProjectionX() const
+        {
+            return mpSdr3DObjectAttribute->getTextureProjectionX();
         }
 
-		::com::sun::star::drawing::TextureProjectionMode Sdr3DObjectAttribute::getTextureProjectionY() const 
-        { 
-            return mpSdr3DObjectAttribute->getTextureProjectionY(); 
+		::com::sun::star::drawing::TextureProjectionMode Sdr3DObjectAttribute::getTextureProjectionY() const
+        {
+            return mpSdr3DObjectAttribute->getTextureProjectionY();
         }
 
-		::com::sun::star::drawing::TextureKind2 Sdr3DObjectAttribute::getTextureKind() const 
-        { 
-            return mpSdr3DObjectAttribute->getTextureKind(); 
+		::com::sun::star::drawing::TextureKind2 Sdr3DObjectAttribute::getTextureKind() const
+        {
+            return mpSdr3DObjectAttribute->getTextureKind();
         }
 
-		::com::sun::star::drawing::TextureMode Sdr3DObjectAttribute::getTextureMode() const 
-        { 
-            return mpSdr3DObjectAttribute->getTextureMode(); 
+		::com::sun::star::drawing::TextureMode Sdr3DObjectAttribute::getTextureMode() const
+        {
+            return mpSdr3DObjectAttribute->getTextureMode();
         }
 
-		const MaterialAttribute3D& Sdr3DObjectAttribute::getMaterial() const 
-        { 
-            return mpSdr3DObjectAttribute->getMaterial(); 
+		const MaterialAttribute3D& Sdr3DObjectAttribute::getMaterial() const
+        {
+            return mpSdr3DObjectAttribute->getMaterial();
         }
 
-		bool Sdr3DObjectAttribute::getNormalsInvert() const 
-        { 
-            return mpSdr3DObjectAttribute->getNormalsInvert(); 
+		bool Sdr3DObjectAttribute::getNormalsInvert() const
+        {
+            return mpSdr3DObjectAttribute->getNormalsInvert();
         }
 
-		bool Sdr3DObjectAttribute::getDoubleSided() const 
-        { 
-            return mpSdr3DObjectAttribute->getDoubleSided(); 
+		bool Sdr3DObjectAttribute::getDoubleSided() const
+        {
+            return mpSdr3DObjectAttribute->getDoubleSided();
         }
 
-		bool Sdr3DObjectAttribute::getShadow3D() const 
-        { 
-            return mpSdr3DObjectAttribute->getShadow3D(); 
+		bool Sdr3DObjectAttribute::getShadow3D() const
+        {
+            return mpSdr3DObjectAttribute->getShadow3D();
         }
 
-		bool Sdr3DObjectAttribute::getTextureFilter() const 
-        { 
-            return mpSdr3DObjectAttribute->getTextureFilter(); 
+		bool Sdr3DObjectAttribute::getTextureFilter() const
+        {
+            return mpSdr3DObjectAttribute->getTextureFilter();
         }
 
-		bool Sdr3DObjectAttribute::getReducedLineGeometry() const 
-        { 
-            return mpSdr3DObjectAttribute->getReducedLineGeometry(); 
+		bool Sdr3DObjectAttribute::getReducedLineGeometry() const
+        {
+            return mpSdr3DObjectAttribute->getReducedLineGeometry();
         }
 
     } // end of namespace attribute

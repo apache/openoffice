@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -212,18 +212,18 @@ Iterator OutlinerContainer::CreateSelectionIterator (
     const ::std::vector<SdrObjectWeakRef>& rObjectList,
     SdDrawDocument* pDocument,
     const ::boost::shared_ptr<ViewShell>& rpViewShell,
-    bool bDirectionIsForward, 
+    bool bDirectionIsForward,
     IteratorLocation aLocation)
 {
     OSL_ASSERT(rpViewShell.get());
-    
+
     sal_Int32 nObjectIndex;
 
     if (bDirectionIsForward)
         switch (aLocation)
         {
             case CURRENT:
-            case BEGIN: 
+            case BEGIN:
             default:
                 nObjectIndex = 0;
                 break;
@@ -235,7 +235,7 @@ Iterator OutlinerContainer::CreateSelectionIterator (
         switch (aLocation)
         {
             case CURRENT:
-            case BEGIN: 
+            case BEGIN:
             default:
                 nObjectIndex = rObjectList.size()-1;
                 break;
@@ -249,13 +249,13 @@ Iterator OutlinerContainer::CreateSelectionIterator (
 }
 
 Iterator OutlinerContainer::CreateDocumentIterator (
-    SdDrawDocument* pDocument, 
+    SdDrawDocument* pDocument,
     const ::boost::shared_ptr<ViewShell>& rpViewShell,
-    bool bDirectionIsForward, 
+    bool bDirectionIsForward,
     IteratorLocation aLocation)
 {
     OSL_ASSERT(rpViewShell.get());
-    
+
     PageKind ePageKind;
     EditMode eEditMode;
 
@@ -274,7 +274,7 @@ Iterator OutlinerContainer::CreateDocumentIterator (
                 eEditMode = EM_MASTERPAGE;
             }
             break;
-            
+
         case END:
             if (bDirectionIsForward)
             {
@@ -304,7 +304,7 @@ Iterator OutlinerContainer::CreateDocumentIterator (
             break;
     }
 
-    sal_Int32 nPageIndex = GetPageIndex (pDocument, rpViewShell, 
+    sal_Int32 nPageIndex = GetPageIndex (pDocument, rpViewShell,
         ePageKind, eEditMode, bDirectionIsForward, aLocation);
 
     return Iterator (
@@ -315,13 +315,13 @@ Iterator OutlinerContainer::CreateDocumentIterator (
 sal_Int32 OutlinerContainer::GetPageIndex (
     SdDrawDocument* pDocument,
     const ::boost::shared_ptr<ViewShell>& rpViewShell,
-    PageKind ePageKind, 
+    PageKind ePageKind,
     EditMode eEditMode,
     bool bDirectionIsForward,
     IteratorLocation aLocation)
 {
     OSL_ASSERT(rpViewShell);
-    
+
     sal_Int32 nPageIndex;
     sal_Int32 nPageCount;
 
@@ -355,7 +355,7 @@ sal_Int32 OutlinerContainer::GetPageIndex (
             }
             break;
 
-        case BEGIN: 
+        case BEGIN:
         default:
             if (bDirectionIsForward)
                 nPageIndex = 0;
@@ -489,7 +489,7 @@ IteratorImplBase* SelectionIteratorImpl::Clone (IteratorImplBase* pObject) const
 
 void SelectionIteratorImpl::GotoNextText (void)
 {
-	SdrTextObj* pTextObj = dynamic_cast< SdrTextObj* >( mrObjectList.at(mnObjectIndex).get() ); 
+	SdrTextObj* pTextObj = dynamic_cast< SdrTextObj* >( mrObjectList.at(mnObjectIndex).get() );
     if (mbDirectionIsForward)
 	{
 		if( pTextObj )
@@ -499,7 +499,7 @@ void SelectionIteratorImpl::GotoNextText (void)
 			{
 				maPosition.mnText = 0;
 		        ++mnObjectIndex;
-			}			
+			}
 		}
 		else
 		{
@@ -515,7 +515,7 @@ void SelectionIteratorImpl::GotoNextText (void)
 			{
 				maPosition.mnText = -1;
 		        --mnObjectIndex;
-			}			
+			}
 		}
 		else
 		{
@@ -525,7 +525,7 @@ void SelectionIteratorImpl::GotoNextText (void)
 
 		if( (maPosition.mnText == -1) && (mnObjectIndex >= 0) )
 		{
-			pTextObj = dynamic_cast< SdrTextObj* >( mrObjectList.at(mnObjectIndex).get() ); 
+			pTextObj = dynamic_cast< SdrTextObj* >( mrObjectList.at(mnObjectIndex).get() );
 			if( pTextObj )
 				maPosition.mnText = pTextObj->getTextCount() - 1;
 		}
@@ -556,9 +556,9 @@ bool SelectionIteratorImpl::IsEqual (
 {
     if (aType == SELECTION)
     {
-        const SelectionIteratorImpl* pSelectionIterator = 
+        const SelectionIteratorImpl* pSelectionIterator =
             static_cast<const SelectionIteratorImpl*>(&rIterator);
-        return mpDocument == pSelectionIterator->mpDocument 
+        return mpDocument == pSelectionIterator->mpDocument
             && mnObjectIndex == pSelectionIterator->mnObjectIndex;
     }
     else
@@ -588,7 +588,7 @@ ViewIteratorImpl::ViewIteratorImpl (
 
 ViewIteratorImpl::ViewIteratorImpl (
     sal_Int32 nPageIndex,
-    SdDrawDocument* pDocument, 
+    SdDrawDocument* pDocument,
     const ::boost::weak_ptr<ViewShell>& rpViewShellWeak,
     bool bDirectionIsForward,
     PageKind ePageKind,
@@ -613,7 +613,7 @@ ViewIteratorImpl::~ViewIteratorImpl (void)
 
 IteratorImplBase* ViewIteratorImpl::Clone (IteratorImplBase* pObject) const
 {
-    
+
     ViewIteratorImpl* pIterator = static_cast<ViewIteratorImpl*>(pObject);
     if (pIterator == NULL)
         pIterator = new ViewIteratorImpl (
@@ -640,7 +640,7 @@ IteratorImplBase* ViewIteratorImpl::Clone (IteratorImplBase* pObject) const
 
 void ViewIteratorImpl::GotoNextText(void)
 {
-	SdrTextObj* pTextObj = dynamic_cast< SdrTextObj* >( maPosition.mxObject.get() ); 
+	SdrTextObj* pTextObj = dynamic_cast< SdrTextObj* >( maPosition.mxObject.get() );
 	if( pTextObj )
 	{
 	    if (mbDirectionIsForward)
@@ -680,7 +680,7 @@ void ViewIteratorImpl::GotoNextText(void)
 	maPosition.mnText = 0;
 	if( !mbDirectionIsForward && maPosition.mxObject.is() )
 	{
-		pTextObj = dynamic_cast< SdrTextObj* >( maPosition.mxObject.get() ); 
+		pTextObj = dynamic_cast< SdrTextObj* >( maPosition.mxObject.get() );
 		if( pTextObj )
 			maPosition.mnText = pTextObj->getTextCount() - 1;
 	}
@@ -712,11 +712,11 @@ void ViewIteratorImpl::SetPage (sal_Int32 nPageIndex)
         {
             if (maPosition.meEditMode == EM_PAGE)
                 mpPage = mpDocument->GetSdPage (
-                    (sal_uInt16)nPageIndex, 
+                    (sal_uInt16)nPageIndex,
                     maPosition.mePageKind);
             else
                 mpPage = mpDocument->GetMasterSdPage (
-                    (sal_uInt16)nPageIndex, 
+                    (sal_uInt16)nPageIndex,
                     maPosition.mePageKind);
         }
         else
@@ -738,7 +738,7 @@ void ViewIteratorImpl::SetPage (sal_Int32 nPageIndex)
 	maPosition.mnText = 0;
 	if( !mbDirectionIsForward && maPosition.mxObject.is() )
 	{
-		SdrTextObj* pTextObj = dynamic_cast< SdrTextObj* >( maPosition.mxObject.get() ); 
+		SdrTextObj* pTextObj = dynamic_cast< SdrTextObj* >( maPosition.mxObject.get() );
 		if( pTextObj )
 			maPosition.mnText = pTextObj->getTextCount() - 1;
 	}
@@ -820,14 +820,14 @@ void DocumentIteratorImpl::GotoNextText (void)
     if (mbDirectionIsForward)
     {
         if (maPosition.mnPageIndex >= mnPageCount)
-        {   
+        {
             // Switch to master page.
             if (maPosition.meEditMode == EM_PAGE)
             {
                 maPosition.meEditMode = EM_MASTERPAGE;
                 SetPage (0);
             }
-            
+
             // Switch to next view mode.
             else
             {
@@ -856,7 +856,7 @@ void DocumentIteratorImpl::GotoNextText (void)
                 maPosition.meEditMode = EM_PAGE;
                 bSetToOnePastLastPage = true;
             }
-            
+
             // Switch to previous view mode.
             else
             {
@@ -883,7 +883,7 @@ void DocumentIteratorImpl::GotoNextText (void)
             nPageCount = mpDocument->GetSdPageCount (maPosition.mePageKind);
         else
             nPageCount = mpDocument->GetMasterSdPageCount(maPosition.mePageKind);
-                        
+
         // Now that we know the number of pages we can set the current page index.
         if (bSetToOnePastLastPage)
             SetPage (nPageCount);

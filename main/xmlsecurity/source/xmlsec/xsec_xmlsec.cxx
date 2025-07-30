@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -49,7 +49,7 @@ namespace
 class SerialNumberAdapterImpl : public WeakImplHelper1<
         ::com::sun::star::security::XSerialNumberAdapter >
 {
-    virtual OUString SAL_CALL toString( const Sequence< sal_Int8 >& rSerialNumber ) 
+    virtual OUString SAL_CALL toString( const Sequence< sal_Int8 >& rSerialNumber )
         throw (RuntimeException)
     {
         return bigIntegerToNumericString(rSerialNumber);
@@ -107,21 +107,21 @@ void* SAL_CALL component_getFactory( const sal_Char* pImplName , void* pServiceM
 	Reference< XInterface > xFactory ;
 
 	if( pImplName != NULL && pServiceManager != NULL ) {
-		if( XMLElementWrapper_XmlSecImpl_getImplementationName().equals( OUString::createFromAscii( pImplName ) ) ) 
+		if( XMLElementWrapper_XmlSecImpl_getImplementationName().equals( OUString::createFromAscii( pImplName ) ) )
 		{
 			xFactory = Reference< XSingleServiceFactory >( createSingleFactory(
 				reinterpret_cast< XMultiServiceFactory * >( pServiceManager ),
 				OUString::createFromAscii( pImplName ),
 				XMLElementWrapper_XmlSecImpl_createInstance, XMLElementWrapper_XmlSecImpl_getSupportedServiceNames() ) );
 		}
-		else if( XMLDocumentWrapper_XmlSecImpl_getImplementationName().equals( OUString::createFromAscii( pImplName ) ) ) 
+		else if( XMLDocumentWrapper_XmlSecImpl_getImplementationName().equals( OUString::createFromAscii( pImplName ) ) )
 		{
 			xFactory = Reference< XSingleServiceFactory >( createSingleFactory(
 				reinterpret_cast< XMultiServiceFactory * >( pServiceManager ),
 				OUString::createFromAscii( pImplName ),
 				XMLDocumentWrapper_XmlSecImpl_createInstance, XMLDocumentWrapper_XmlSecImpl_getSupportedServiceNames() ) );
 		}
-		else if( SerialNumberAdapterImpl_getImplementationName().equals( OUString::createFromAscii( pImplName ) ) ) 
+		else if( SerialNumberAdapterImpl_getImplementationName().equals( OUString::createFromAscii( pImplName ) ) )
 		{
 			xFactory = ::cppu::createSingleComponentFactory(
               SerialNumberAdapterImpl_createInstance,
@@ -137,7 +137,7 @@ void* SAL_CALL component_getFactory( const sal_Char* pImplName , void* pServiceM
 		pRet = nss_component_getFactory( pImplName, pServiceManager, pRegistryKey ) ;
 		if( pRet != NULL )
 			return pRet ;
-		
+
 #if defined( XMLSEC_CRYPTO_MSCRYPTO )
 		pRet = mscrypt_component_getFactory( pImplName, pServiceManager, pRegistryKey ) ;
 		if( pRet != NULL )

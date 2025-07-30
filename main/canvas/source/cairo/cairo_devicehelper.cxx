@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
@@ -66,7 +66,7 @@ namespace cairocanvas
 
         OutputDevice* pOutDev=getOutputDevice();
         mpSurface = cairo::createSurface( *pOutDev,
-                                          pOutDev->GetOutOffXPixel(), 
+                                          pOutDev->GetOutOffXPixel(),
                                           pOutDev->GetOutOffYPixel(),
                                           pOutDev->GetOutputWidthPixel(),
                                           pOutDev->GetOutputHeightPixel() );
@@ -92,15 +92,15 @@ namespace cairocanvas
 #if defined (UNX) && !defined (QUARTZ)
         // X11 only
 		if( mpSurface )
-			mpSurface->Resize( rSize.getX() + pOutDev->GetOutOffXPixel(), 
+			mpSurface->Resize( rSize.getX() + pOutDev->GetOutOffXPixel(),
                                rSize.getY() + pOutDev->GetOutOffYPixel() );
         else
 #endif
-			mpSurface = cairo::createSurface( 
+			mpSurface = cairo::createSurface(
                 *pOutDev,
-                pOutDev->GetOutOffXPixel(), 
+                pOutDev->GetOutOffXPixel(),
                 pOutDev->GetOutOffYPixel(),
-                rSize.getX(), rSize.getY() );        
+                rSize.getX(), rSize.getY() );
     }
 
     geometry::RealSize2D DeviceHelper::getPhysicalResolution()
@@ -128,7 +128,7 @@ namespace cairocanvas
         return ::vcl::unotools::size2DFromSize( aLogSize );
     }
 
-    uno::Reference< rendering::XLinePolyPolygon2D > DeviceHelper::createCompatibleLinePolyPolygon( 
+    uno::Reference< rendering::XLinePolyPolygon2D > DeviceHelper::createCompatibleLinePolyPolygon(
         const uno::Reference< rendering::XGraphicDevice >& 				,
         const uno::Sequence< uno::Sequence< geometry::RealPoint2D > >&	points )
     {
@@ -136,12 +136,12 @@ namespace cairocanvas
         if( !mpSurfaceProvider )
             return uno::Reference< rendering::XLinePolyPolygon2D >(); // we're disposed
 
-        return uno::Reference< rendering::XLinePolyPolygon2D >( 
-            new ::basegfx::unotools::UnoPolyPolygon( 
+        return uno::Reference< rendering::XLinePolyPolygon2D >(
+            new ::basegfx::unotools::UnoPolyPolygon(
                 ::basegfx::unotools::polyPolygonFromPoint2DSequenceSequence( points ) ) );
     }
 
-    uno::Reference< rendering::XBezierPolyPolygon2D > DeviceHelper::createCompatibleBezierPolyPolygon( 
+    uno::Reference< rendering::XBezierPolyPolygon2D > DeviceHelper::createCompatibleBezierPolyPolygon(
         const uno::Reference< rendering::XGraphicDevice >& 						,
         const uno::Sequence< uno::Sequence< geometry::RealBezierSegment2D > >&	points )
     {
@@ -149,12 +149,12 @@ namespace cairocanvas
         if( !mpSurfaceProvider )
             return uno::Reference< rendering::XBezierPolyPolygon2D >(); // we're disposed
 
-        return uno::Reference< rendering::XBezierPolyPolygon2D >( 
+        return uno::Reference< rendering::XBezierPolyPolygon2D >(
             new ::basegfx::unotools::UnoPolyPolygon(
                 ::basegfx::unotools::polyPolygonFromBezier2DSequenceSequence( points ) ) );
     }
 
-    uno::Reference< rendering::XBitmap > DeviceHelper::createCompatibleBitmap( 
+    uno::Reference< rendering::XBitmap > DeviceHelper::createCompatibleBitmap(
         const uno::Reference< rendering::XGraphicDevice >& 	rDevice,
         const geometry::IntegerSize2D& 						size )
     {
@@ -167,17 +167,17 @@ namespace cairocanvas
                 ::basegfx::unotools::b2ISizeFromIntegerSize2D( size ),
                 SurfaceProviderRef(mpSurfaceProvider),
                 rDevice.get(),
-                false )); 
+                false ));
     }
 
-    uno::Reference< rendering::XVolatileBitmap > DeviceHelper::createVolatileBitmap( 
+    uno::Reference< rendering::XVolatileBitmap > DeviceHelper::createVolatileBitmap(
         const uno::Reference< rendering::XGraphicDevice >& 	,
         const geometry::IntegerSize2D& 						/*size*/ )
     {
         return uno::Reference< rendering::XVolatileBitmap >();
     }
 
-    uno::Reference< rendering::XBitmap > DeviceHelper::createCompatibleAlphaBitmap( 
+    uno::Reference< rendering::XBitmap > DeviceHelper::createCompatibleAlphaBitmap(
         const uno::Reference< rendering::XGraphicDevice >& 	rDevice,
         const geometry::IntegerSize2D& 						size )
     {
@@ -190,10 +190,10 @@ namespace cairocanvas
                 ::basegfx::unotools::b2ISizeFromIntegerSize2D( size ),
                 SurfaceProviderRef(mpSurfaceProvider),
                 rDevice.get(),
-                true )); 
+                true ));
     }
 
-    uno::Reference< rendering::XVolatileBitmap > DeviceHelper::createVolatileAlphaBitmap( 
+    uno::Reference< rendering::XVolatileBitmap > DeviceHelper::createVolatileAlphaBitmap(
         const uno::Reference< rendering::XGraphicDevice >& 	,
         const geometry::IntegerSize2D& 						/*size*/ )
     {
@@ -211,11 +211,11 @@ namespace cairocanvas
         // TODO(F3): offer fullscreen mode the XCanvas way
         return false;
     }
-    
+
     uno::Any DeviceHelper::isAccelerated() const
     {
         return ::com::sun::star::uno::makeAny(false);
-    }  
+    }
 
     uno::Any DeviceHelper::getDeviceHandle() const
     {
@@ -227,18 +227,18 @@ namespace cairocanvas
         return uno::Any();
     }
 
-    namespace 
-    { 
+    namespace
+    {
         struct DeviceColorSpace: public rtl::StaticWithInit<uno::Reference<rendering::XColorSpace>,
-                                                            DeviceColorSpace> 
+                                                            DeviceColorSpace>
         {
             uno::Reference<rendering::XColorSpace> operator()()
             {
                 return vcl::unotools::createStandardColorSpace();
             }
-        }; 
+        };
     }
-    
+
     uno::Reference<rendering::XColorSpace> DeviceHelper::getColorSpace() const
     {
         // always the same

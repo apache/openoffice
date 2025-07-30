@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -68,10 +68,10 @@ namespace cppcanvas
         ::basegfx::B2DHomMatrix ImplCanvas::getTransformation() const
         {
             ::basegfx::B2DHomMatrix aMatrix;
-            return ::canvas::tools::getViewStateTransform( aMatrix, 
+            return ::canvas::tools::getViewStateTransform( aMatrix,
                                                            maViewState );
         }
-            
+
         void ImplCanvas::setClip( const ::basegfx::B2DPolyPolygon& rClipPoly )
         {
             // TODO(T3): not thread-safe. B2DPolyPolygon employs copy-on-write
@@ -94,7 +94,7 @@ namespace cppcanvas
         {
             return FontSharedPtr( new ImplFont( getUNOCanvas(), rFontName, rCellSize ) );
         }
-    
+
         ColorSharedPtr ImplCanvas::createColor() const
         {
             return ColorSharedPtr( new ImplColor( getUNOCanvas()->getDevice() ) );
@@ -104,7 +104,7 @@ namespace cppcanvas
         {
             return CanvasSharedPtr( new ImplCanvas( *this ) );
         }
-    
+
         void ImplCanvas::clear() const
         {
             OSL_ENSURE( mxCanvas.is(), "ImplCanvas::clear(): Invalid XCanvas" );

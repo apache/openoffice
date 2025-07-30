@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -74,7 +74,7 @@ class SfxTitleDockingWindow : public SfxDockingWindow
 	sal_uInt16              m_nID;
 
 public:
-						SfxTitleDockingWindow( 
+						SfxTitleDockingWindow(
 							SfxBindings* pBindings ,
 							SfxChildWindow* pChildWin ,
 							Window* pParent ,
@@ -84,7 +84,7 @@ public:
 
 	Window*				GetWrappedWindow() const { return m_pWrappedWindow; }
 	void				SetWrappedWindow(Window* const pWindow);
-						
+
     virtual void        StateChanged( StateChangedType nType );
     virtual long        Notify( NotifyEvent& rNEvt );
 	virtual void 		Resize();
@@ -106,7 +106,7 @@ static uno::WeakReference< frame::XModuleManager >  m_xModuleManager;
 static bool lcl_getWindowState( const uno::Reference< container::XNameAccess >& xWindowStateMgr, const ::rtl::OUString& rResourceURL, WindowState& rWindowState )
 {
     bool bResult = false;
-    
+
     try
     {
         uno::Any a;
@@ -122,7 +122,7 @@ static bool lcl_getWindowState( const uno::Reference< container::XNameAccess >& 
                 }
             }
         }
-        
+
         bResult = true;
     }
     catch ( container::NoSuchElementException& )
@@ -141,7 +141,7 @@ SfxDockingWrapper::SfxDockingWrapper( Window* pParentWnd ,
 {
     uno::Reference< lang::XMultiServiceFactory > xServiceManager = ::comphelper::getProcessServiceFactory();
     const rtl::OUString aDockWindowResourceURL( RTL_CONSTASCII_USTRINGPARAM( "private:resource/dockingwindow/" ));
-    
+
     SfxTitleDockingWindow* pTitleDockWindow = new SfxTitleDockingWindow( pBindings, this, pParentWnd,
         WB_STDDOCKWIN | WB_CLIPCHILDREN | WB_SIZEABLE | WB_3DLOOK | WB_ROLLABLE, nId);
     pWindow = pTitleDockWindow;
@@ -149,12 +149,12 @@ SfxDockingWrapper::SfxDockingWrapper( Window* pParentWnd ,
 
     // Use factory manager to retrieve XWindow factory. That can be used to instantiate
     // the real window factory.
-    uno::Reference< lang::XSingleComponentFactory > xFactoryMgr( 
-            xServiceManager->createInstance( 
-                rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( 
-                    "com.sun.star.ui.WindowContentFactoryManager"))), 
+    uno::Reference< lang::XSingleComponentFactory > xFactoryMgr(
+            xServiceManager->createInstance(
+                rtl::OUString( RTL_CONSTASCII_USTRINGPARAM(
+                    "com.sun.star.ui.WindowContentFactoryManager"))),
                 uno::UNO_QUERY );
-    
+
     if (xFactoryMgr.is())
     {
         SfxDispatcher* pDispatcher = pBindings->GetDispatcher();
@@ -165,7 +165,7 @@ SfxDockingWrapper::SfxDockingWrapper( Window* pParentWnd ,
         aPropValue.Value = uno::makeAny( xFrame );
         aArgs[0] <<= aPropValue;
         aPropValue.Name  = rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "ResourceURL" ));
-        
+
         // create a resource URL from the nId provided by the sfx2
         ::rtl::OUString aResourceURL( aDockWindowResourceURL );
         aResourceURL += ::rtl::OUString::valueOf(sal_Int32(nId));
@@ -177,40 +177,40 @@ SfxDockingWrapper::SfxDockingWrapper( Window* pParentWnd ,
         {
             uno::Reference< beans::XPropertySet >    xProps( xServiceManager, uno::UNO_QUERY );
             uno::Reference< uno::XComponentContext > xContext;
-            
+
             if ( xProps.is() )
                 xProps->getPropertyValue( ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "DefaultContext" ))) >>= xContext;
             if ( xContext.is() )
             {
-                xWindow = uno::Reference< awt::XWindow>( 
+                xWindow = uno::Reference< awt::XWindow>(
                             xFactoryMgr->createInstanceWithArgumentsAndContext( aArgs, xContext ),
                           uno::UNO_QUERY );
             }
-            
+
             uno::Reference< frame::XModuleManager > xModuleManager( m_xModuleManager );
             if ( !xModuleManager.is() )
             {
                 xModuleManager = uno::Reference< frame::XModuleManager >(
-                                    xServiceManager->createInstance( 
+                                    xServiceManager->createInstance(
                                         rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "com.sun.star.frame.ModuleManager" ))),
                                     uno::UNO_QUERY );
                 m_xModuleManager = xModuleManager;
             }
-            
+
             uno::Reference< container::XNameAccess > xWindowStateConfiguration( m_xWindowStateConfiguration );
             if ( !xWindowStateConfiguration.is() )
             {
                 xWindowStateConfiguration = uno::Reference< container::XNameAccess >(
-                                                xServiceManager->createInstance( 
-                                                    rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "com.sun.star.ui.WindowStateConfiguration" ))), 
+                                                xServiceManager->createInstance(
+                                                    rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "com.sun.star.ui.WindowStateConfiguration" ))),
                                                 uno::UNO_QUERY );
                 m_xWindowStateConfiguration = xWindowStateConfiguration;
             }
 
             ::rtl::OUString sModuleIdentifier = xModuleManager->identify( xFrame );
-            
+
             uno::Reference< container::XNameAccess > xModuleWindowState(
-                                                        xWindowStateConfiguration->getByName( sModuleIdentifier ), 
+                                                        xWindowStateConfiguration->getByName( sModuleIdentifier ),
                                                         uno::UNO_QUERY );
             if ( xModuleWindowState.is() )
             {
@@ -228,49 +228,49 @@ SfxDockingWrapper::SfxDockingWrapper( Window* pParentWnd ,
         catch ( uno::Exception& )
         {
         }
-		
+
         Window* pContentWindow = VCLUnoHelper::GetWindow(xWindow);
         if ( pContentWindow )
             pContentWindow->SetStyle( pContentWindow->GetStyle() | WB_DIALOGCONTROL | WB_CHILDDLGCTRL );
 		pTitleDockWindow->SetWrappedWindow(pContentWindow);
     }
-    
+
     pWindow->SetOutputSizePixel( Size( 270, 240 ) );
 
 	( ( SfxDockingWindow* ) pWindow )->Initialize( pInfo );
 	SetHideNotDelete( sal_True );
 }
 
-SfxChildWindow*  SfxDockingWrapper::CreateImpl( 
+SfxChildWindow*  SfxDockingWrapper::CreateImpl(
 Window *pParent, sal_uInt16 nId, SfxBindings *pBindings, SfxChildWinInfo* pInfo )
-{ 
-    SfxChildWindow *pWin = new SfxDockingWrapper(pParent, nId, pBindings, pInfo); return pWin; 
-} 
+{
+    SfxChildWindow *pWin = new SfxDockingWrapper(pParent, nId, pBindings, pInfo); return pWin;
+}
 
-sal_uInt16 SfxDockingWrapper::GetChildWindowId () 
-{ 
+sal_uInt16 SfxDockingWrapper::GetChildWindowId ()
+{
 	DBG_ASSERT( false, "This method shouldn't be called!" );
 	return 0;
-} 
+}
 
 void SfxDockingWrapper::RegisterChildWindow (sal_Bool bVis, SfxModule *pMod, sal_uInt16 nFlags)
-{ 
+{
 	// pre-register a couple of docking windows
 	for (int i=0; i < NUM_OF_DOCKINGWINDOWS; i++ )
 	{
 		sal_uInt16 nID = sal_uInt16(SID_DOCKWIN_START+i);
-		SfxChildWinFactory *pFact = new SfxChildWinFactory( SfxDockingWrapper::CreateImpl, nID, 0xffff );   
-		pFact->aInfo.nFlags |= nFlags; 
-		pFact->aInfo.bVisible = bVis; 
-		SfxChildWindow::RegisterChildWindow(pMod, pFact); 
+		SfxChildWinFactory *pFact = new SfxChildWinFactory( SfxDockingWrapper::CreateImpl, nID, 0xffff );
+		pFact->aInfo.nFlags |= nFlags;
+		pFact->aInfo.bVisible = bVis;
+		SfxChildWindow::RegisterChildWindow(pMod, pFact);
 	}
-} 
+}
 
-SfxChildWinInfo  SfxDockingWrapper::GetInfo() const 
-{ 
-    SfxChildWinInfo aInfo = SfxChildWindow::GetInfo(); 
-	((SfxDockingWindow*)GetWindow())->FillInfo( aInfo ); 
-	return aInfo; 
+SfxChildWinInfo  SfxDockingWrapper::GetInfo() const
+{
+    SfxChildWinInfo aInfo = SfxChildWindow::GetInfo();
+	((SfxDockingWindow*)GetWindow())->FillInfo( aInfo );
+	return aInfo;
 };
 
 SfxTitleDockingWindow::SfxTitleDockingWindow( SfxBindings* pBind ,
@@ -293,7 +293,7 @@ SfxTitleDockingWindow::~SfxTitleDockingWindow()
 }
 
 void SfxTitleDockingWindow::SetWrappedWindow( Window* const pWindow )
-{ 
+{
 	m_pWrappedWindow = pWindow;
 	if (m_pWrappedWindow)
 	{
@@ -381,14 +381,14 @@ static SfxWorkWindow* lcl_getWorkWindowFromXFrame( const uno::Reference< frame::
 
 /*
     Factory function used by the framework layout manager to "create" a docking window with a special name.
-    The string rDockingWindowName MUST BE a valid ID! The ID is pre-defined by a certain slot range located 
+    The string rDockingWindowName MUST BE a valid ID! The ID is pre-defined by a certain slot range located
     in sfxsids.hrc (currently SID_DOCKWIN_START = 9800).
 */
 void SAL_CALL SfxDockingWindowFactory( const uno::Reference< frame::XFrame >& rFrame, const rtl::OUString& rDockingWindowName )
 {
 	::vos::OGuard aGuard( Application::GetSolarMutex() );
 	sal_uInt16 nID = sal_uInt16(rDockingWindowName.toInt32());
-	
+
 	// Check the range of the provided ID otherwise nothing will happen
     if ( lcl_checkDockingWindowID( nID ))
     {
@@ -406,16 +406,16 @@ void SAL_CALL SfxDockingWindowFactory( const uno::Reference< frame::XFrame >& rF
 }
 
 /*
-    Function used by the framework layout manager to determine the visibility state of a docking window with 
-    a special name. The string rDockingWindowName MUST BE a valid ID! The ID is pre-defined by a certain slot 
+    Function used by the framework layout manager to determine the visibility state of a docking window with
+    a special name. The string rDockingWindowName MUST BE a valid ID! The ID is pre-defined by a certain slot
     range located in sfxsids.hrc (currently SID_DOCKWIN_START = 9800).
 */
 bool SAL_CALL IsDockingWindowVisible( const uno::Reference< frame::XFrame >& rFrame, const rtl::OUString& rDockingWindowName )
 {
 	::vos::OGuard aGuard( Application::GetSolarMutex() );
-    
+
     sal_uInt16 nID = sal_uInt16(rDockingWindowName.toInt32());
-    
+
 	// Check the range of the provided ID otherwise nothing will happen
     if ( lcl_checkDockingWindowID( nID ))
     {
@@ -427,7 +427,7 @@ bool SAL_CALL IsDockingWindowVisible( const uno::Reference< frame::XFrame >& rFr
                 return true;
         }
     }
-    
+
     return false;
 }
 
@@ -1125,8 +1125,8 @@ void SfxDockingWindow::Initialize(SfxChildWinInfo *pInfo)
 	{
         // check if SfxWorkWindow is able to allow docking at its border
 		if (
-            !pWorkWin->IsDockingAllowed() || 
-            !pWorkWin->IsInternalDockingAllowed() || 
+            !pWorkWin->IsDockingAllowed() ||
+            !pWorkWin->IsInternalDockingAllowed() ||
             ( (GetFloatStyle() & WB_STANDALONE) && Application::IsInModalMode()) )
         {
 			SetAlignment( SFX_ALIGN_NOALIGNMENT );

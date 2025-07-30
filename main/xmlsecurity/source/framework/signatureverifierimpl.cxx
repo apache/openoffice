@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -109,11 +109,11 @@ void SignatureVerifierImpl::notifyResultListener() const
 {
 	cssu::Reference< cssxc::sax::XSignatureVerifyResultListener >
 		xSignatureVerifyResultListener ( m_xResultListener , cssu::UNO_QUERY ) ;
-		
+
 	xSignatureVerifyResultListener->signatureVerified( m_nSecurityId, m_nStatus );
 }
 
-void SignatureVerifierImpl::startEngine( const cssu::Reference< 
+void SignatureVerifierImpl::startEngine( const cssu::Reference<
 	cssxc::XXMLSignatureTemplate >&
 	xSignatureTemplate)
 	throw (cssu::Exception, cssu::RuntimeException)
@@ -144,7 +144,7 @@ void SignatureVerifierImpl::startEngine( const cssu::Reference<
  ******************************************************************************/
 {
 	cssu::Reference< cssxc::XXMLSignatureTemplate > xResultTemplate;
-	try 
+	try
 	{
 		xResultTemplate = m_xXMLSignature->validate(xSignatureTemplate, m_xXMLSecurityContext);
 		m_nStatus = xResultTemplate->getStatus();
@@ -156,7 +156,7 @@ void SignatureVerifierImpl::startEngine( const cssu::Reference<
 }
 
 /* XSignatureVerifyResultBroadcaster */
-void SAL_CALL SignatureVerifierImpl::addSignatureVerifyResultListener( 
+void SAL_CALL SignatureVerifierImpl::addSignatureVerifyResultListener(
 	const cssu::Reference< cssxc::sax::XSignatureVerifyResultListener >& listener )
 	throw (cssu::Exception, cssu::RuntimeException)
 {
@@ -164,21 +164,21 @@ void SAL_CALL SignatureVerifierImpl::addSignatureVerifyResultListener(
 	tryToPerform();
 }
 
-void SAL_CALL SignatureVerifierImpl::removeSignatureVerifyResultListener( 
+void SAL_CALL SignatureVerifierImpl::removeSignatureVerifyResultListener(
 	const cssu::Reference< cssxc::sax::XSignatureVerifyResultListener >&)
 	throw (cssu::RuntimeException)
 {
 }
 
 /* XInitialization */
-void SAL_CALL SignatureVerifierImpl::initialize( 
-	const cssu::Sequence< cssu::Any >& aArguments ) 
+void SAL_CALL SignatureVerifierImpl::initialize(
+	const cssu::Sequence< cssu::Any >& aArguments )
 	throw (cssu::Exception, cssu::RuntimeException)
 {
 	OSL_ASSERT(aArguments.getLength() == 5);
-	
+
 	rtl::OUString ouTempString;
-	
+
 	aArguments[0] >>= ouTempString;
 	m_nSecurityId = ouTempString.toInt32();
 	aArguments[1] >>= m_xSAXEventKeeper;
@@ -187,22 +187,22 @@ void SAL_CALL SignatureVerifierImpl::initialize(
 	aArguments[3] >>= m_xXMLSecurityContext;
 	aArguments[4] >>= m_xXMLSignature;
 }
-	
+
 
 rtl::OUString SignatureVerifierImpl_getImplementationName ()
 	throw (cssu::RuntimeException)
 {
-	return rtl::OUString( 
+	return rtl::OUString(
 		RTL_CONSTASCII_USTRINGPARAM ( IMPLEMENTATION_NAME ) );
 }
 
-sal_Bool SAL_CALL SignatureVerifierImpl_supportsService( const rtl::OUString& ServiceName ) 
+sal_Bool SAL_CALL SignatureVerifierImpl_supportsService( const rtl::OUString& ServiceName )
 	throw (cssu::RuntimeException)
 {
 	return ServiceName.equalsAsciiL( RTL_CONSTASCII_STRINGPARAM ( SERVICE_NAME ));
 }
 
-cssu::Sequence< rtl::OUString > SAL_CALL SignatureVerifierImpl_getSupportedServiceNames(  ) 
+cssu::Sequence< rtl::OUString > SAL_CALL SignatureVerifierImpl_getSupportedServiceNames(  )
 	throw (cssu::RuntimeException)
 {
 	cssu::Sequence < rtl::OUString > aRet(1);
@@ -212,7 +212,7 @@ cssu::Sequence< rtl::OUString > SAL_CALL SignatureVerifierImpl_getSupportedServi
 }
 #undef SERVICE_NAME
 
-cssu::Reference< cssu::XInterface > SAL_CALL SignatureVerifierImpl_createInstance( 
+cssu::Reference< cssu::XInterface > SAL_CALL SignatureVerifierImpl_createInstance(
 	const cssu::Reference< cssl::XMultiServiceFactory >& rSMgr)
 	throw( cssu::Exception )
 {
@@ -220,17 +220,17 @@ cssu::Reference< cssu::XInterface > SAL_CALL SignatureVerifierImpl_createInstanc
 }
 
 /* XServiceInfo */
-rtl::OUString SAL_CALL SignatureVerifierImpl::getImplementationName(  ) 
+rtl::OUString SAL_CALL SignatureVerifierImpl::getImplementationName(  )
 	throw (cssu::RuntimeException)
 {
 	return SignatureVerifierImpl_getImplementationName();
 }
-sal_Bool SAL_CALL SignatureVerifierImpl::supportsService( const rtl::OUString& rServiceName ) 
+sal_Bool SAL_CALL SignatureVerifierImpl::supportsService( const rtl::OUString& rServiceName )
 	throw (cssu::RuntimeException)
 {
 	return SignatureVerifierImpl_supportsService( rServiceName );
 }
-cssu::Sequence< rtl::OUString > SAL_CALL SignatureVerifierImpl::getSupportedServiceNames(  ) 
+cssu::Sequence< rtl::OUString > SAL_CALL SignatureVerifierImpl::getSupportedServiceNames(  )
 	throw (cssu::RuntimeException)
 {
 	return SignatureVerifierImpl_getSupportedServiceNames();

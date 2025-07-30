@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -159,7 +159,7 @@ void CommandLineArgs::ParseCommandLine_Impl( Supplier& supplier )
             break;
         }
         // convert file URLs to internal form #112849#
-        if (aArg.indexOf(OUString::createFromAscii("file:"))==0 && 
+        if (aArg.indexOf(OUString::createFromAscii("file:"))==0 &&
             xTranslator.is())
         {
             OUString tmp(xTranslator->translateToInternal(aArg));
@@ -233,7 +233,7 @@ void CommandLineArgs::ParseCommandLine_Impl( Supplier& supplier )
                         bPrintToEvent   = false;
                         bForceNewEvent  = false;
                         bForceOpenEvent = false;
-                        bViewEvent      = true; 
+                        bViewEvent      = true;
                         bStartEvent     = false;
                         bDisplaySpec    = false;
  		    }
@@ -933,7 +933,7 @@ sal_Bool CommandLineArgs::IsEmptyOrAcceptOnly() const
 {
     osl::MutexGuard  aMutexGuard( m_aMutex );
 
-    return m_eArgumentCount == NONE || 
+    return m_eArgumentCount == NONE ||
            ( ( m_eArgumentCount == ONE ) && ( m_aStrParams[ CMD_STRINGPARAM_ACCEPT ].getLength() )) ||
            ( ( m_eArgumentCount == ONE ) && m_aBoolParams[ CMD_BOOLPARAM_PSN ] );
 }

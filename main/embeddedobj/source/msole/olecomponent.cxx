@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -561,7 +561,7 @@ void OleComponent::CreateNewIStorage_Impl()
 
 	// write the stream to the temporary file
 	::rtl::OUString aTempURL;
-	
+
 	OSL_ENSURE( m_pUnoOleObject, "Unexpected object absence!" );
 	if ( m_pUnoOleObject )
 		aTempURL = m_pUnoOleObject->CreateTempURLEmpty_Impl();
@@ -1192,7 +1192,7 @@ awt::Size OleComponent::GetExtent( sal_Int64 nAspect )
 							// do nothing
 							break;
 					}
-					
+
 					sal_Int64 nX = ( (sal_Int64)abs( pMF->xExt ) ) * nMult / nDiv;
 					sal_Int64 nY = ( (sal_Int64)abs( pMF->yExt ) ) * nMult / nDiv;
 					if (  nX < SAL_MAX_INT32 && nY < SAL_MAX_INT32 )
@@ -1416,7 +1416,7 @@ void OleComponent::OnViewChange_Impl( sal_uInt32 dwAspect )
 
 	if ( xLockObject.is() )
 	{
-		uno::Reference < awt::XRequestCallback > xRequestCallback( 
+		uno::Reference < awt::XRequestCallback > xRequestCallback(
 			m_xFactory->createInstance(
 			 ::rtl::OUString::createFromAscii("com.sun.star.awt.AsyncCallback") ),
 			 uno::UNO_QUERY );
@@ -1437,7 +1437,7 @@ void OleComponent::OnClose_Impl()
 
 	if ( xLockObject.is() )
 	{
-		uno::Reference < awt::XRequestCallback > xRequestCallback( 
+		uno::Reference < awt::XRequestCallback > xRequestCallback(
 			m_xFactory->createInstance(
 			 ::rtl::OUString::createFromAscii("com.sun.star.awt.AsyncCallback") ),
 			 uno::UNO_QUERY );
@@ -1591,7 +1591,7 @@ uno::Any SAL_CALL OleComponent::getTransferData( const datatransfer::DataFlavor&
 				}
 			}
 		}
-		
+
 		// If the replacement could not be retrieved, the cached representaion should be used
 		// currently it is not necessary to retrieve it here, so it is implemented in the object itself
 	}

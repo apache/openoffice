@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -68,7 +68,7 @@ static sal_Bool checkOutputPath(const OString& completeName)
 	}
     else
         nIndex = 0;
-		
+
     do
 	{
 		buffer.append(sysPathName.getToken(0, SEPARATOR, nIndex));
@@ -82,8 +82,8 @@ static sal_Bool checkOutputPath(const OString& completeName)
 #endif
 			{
 				if (errno == ENOENT)
-				{	
-					fprintf(stderr, "%s: cannot create directory '%s'\n", 
+				{
+					fprintf(stderr, "%s: cannot create directory '%s'\n",
 							idlc()->getOptions()->getProgramName().getStr(), buffer.getStr());
 					return sal_False;
 				}
@@ -91,13 +91,13 @@ static sal_Bool checkOutputPath(const OString& completeName)
 			{
 				if ( !pCreatedDirectories )
 					pCreatedDirectories = new StringList();
-				pCreatedDirectories->push_front(buffer.getStr());				
+				pCreatedDirectories->push_front(buffer.getStr());
 			}
 		}
         buffer.append(SEPARATOR);
 	} while( nIndex != -1 );
 	return sal_True;
-}	
+}
 
 static sal_Bool cleanPath()
 {
@@ -113,7 +113,7 @@ static sal_Bool cleanPath()
 			if (rmdir((char*)(*iter).getStr()) == -1)
 //#endif
 			{
-				fprintf(stderr, "%s: cannot remove directory '%s'\n", 
+				fprintf(stderr, "%s: cannot remove directory '%s'\n",
 						idlc()->getOptions()->getProgramName().getStr(), (*iter).getStr());
 				return sal_False;
 			}
@@ -128,19 +128,19 @@ void removeIfExists(const OString& pathname)
 {
     unlink(pathname.getStr());
 }
-	
+
 sal_Int32 SAL_CALL produceFile(const OString& regFileName)
 {
 	Options* pOptions = idlc()->getOptions();
 
     OString regTmpName = regFileName.replaceAt(regFileName.getLength() -3, 3, "_idlc_");
 
-	if ( !checkOutputPath(regFileName) )	
+	if ( !checkOutputPath(regFileName) )
 	{
-		fprintf(stderr, "%s: could not create path of registry file '%s'.\n", 
+		fprintf(stderr, "%s: could not create path of registry file '%s'.\n",
 				pOptions->getProgramName().getStr(), regFileName.getStr());
 		return 1;
-	}	
+	}
 
 	removeIfExists(regTmpName);
     OString urlRegTmpName = convertToFileUrl(regTmpName);
@@ -148,26 +148,26 @@ sal_Int32 SAL_CALL produceFile(const OString& regFileName)
 	Registry regFile;
 	if ( regFile.create(OStringToOUString(urlRegTmpName, RTL_TEXTENCODING_UTF8)) != REG_NO_ERROR )
 	{
-		fprintf(stderr, "%s: could not create registry file '%s'\n", 
+		fprintf(stderr, "%s: could not create registry file '%s'\n",
 				pOptions->getProgramName().getStr(), regTmpName.getStr());
 		removeIfExists(regTmpName);
 		removeIfExists(regFileName);
 		cleanPath();
-		return 1;	
+		return 1;
 	}
 
 	RegistryKey rootKey;
 	if ( regFile.openRootKey(rootKey) != REG_NO_ERROR )
 	{
-		fprintf(stderr, "%s: could not open root of registry file '%s'\n", 
+		fprintf(stderr, "%s: could not open root of registry file '%s'\n",
 				pOptions->getProgramName().getStr(), regFileName.getStr());
 		removeIfExists(regTmpName);
 		removeIfExists(regFileName);
 		cleanPath();
-		return 1;			
+		return 1;
 	}
 
-	// produce registry file 
+	// produce registry file
 	if ( !idlc()->getRoot()->dump(rootKey) )
 	{
 		rootKey.releaseKey();
@@ -176,12 +176,12 @@ sal_Int32 SAL_CALL produceFile(const OString& regFileName)
 		removeIfExists(regFileName);
 		cleanPath();
 		return 1;
-	} 
+	}
 
 	rootKey.releaseKey();
 	if ( regFile.close() != REG_NO_ERROR )
 	{
-		fprintf(stderr, "%s: could not close registry file '%s'\n", 
+		fprintf(stderr, "%s: could not close registry file '%s'\n",
 				pOptions->getProgramName().getStr(), regFileName.getStr());
 		removeIfExists(regTmpName);
 		removeIfExists(regFileName);
@@ -193,14 +193,14 @@ sal_Int32 SAL_CALL produceFile(const OString& regFileName)
 
     if ( File::move(OStringToOUString(regTmpName, osl_getThreadTextEncoding()),
                     OStringToOUString(regFileName, osl_getThreadTextEncoding())) != FileBase::E_None ) {
-		fprintf(stderr, "%s: cannot rename temporary registry '%s' to '%s'\n", 
-				idlc()->getOptions()->getProgramName().getStr(), 
+		fprintf(stderr, "%s: cannot rename temporary registry '%s' to '%s'\n",
+				idlc()->getOptions()->getProgramName().getStr(),
 				regTmpName.getStr(), regFileName.getStr());
 		removeIfExists(regTmpName);
 		cleanPath();
 		return 1;
     }
 	removeIfExists(regTmpName);
-    
+
 	return 0;
 }

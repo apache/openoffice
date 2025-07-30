@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 #include "mysqlc_general.hxx"
@@ -137,7 +137,7 @@ Reference< XResultSetMetaData > SAL_CALL OPreparedStatement::getMetaData()
 	OSL_TRACE("OPreparedStatement::getMetaData");
 	MutexGuard aGuard(m_aMutex);
 	checkDisposed(OPreparedStatement::rBHelper.bDisposed);
-	
+
 	try {
 		if (!m_xMetaData.is()) {
 			m_xMetaData = new OResultSetMetaData(
@@ -163,7 +163,7 @@ void SAL_CALL OPreparedStatement::close()
 
 	MutexGuard aGuard(m_aMutex);
 	checkDisposed(OPreparedStatement::rBHelper.bDisposed);
-		
+
 	try {
 		clearWarnings();
 		clearParameters();
@@ -204,7 +204,7 @@ sal_Int32 SAL_CALL OPreparedStatement::executeUpdate()
 	OSL_TRACE("OPreparedStatement::executeUpdate");
 	MutexGuard aGuard(m_aMutex);
 	checkDisposed(OPreparedStatement::rBHelper.bDisposed);
-	
+
     sal_Int32 affectedRows = sal_False;
 	try {
 		affectedRows = ((sql::PreparedStatement *)cppStatement)->executeUpdate();
@@ -232,7 +232,7 @@ void SAL_CALL OPreparedStatement::setString(sal_Int32 parameter, const OUString&
 		mysqlc_sdbc_driver::throwFeatureNotImplementedException("OPreparedStatement::clearParameters", *this);
 	} catch (sql::SQLException &e) {
         mysqlc_sdbc_driver::translateAndThrow(e, *this, m_pConnection->getConnectionEncoding());
-	}	
+	}
 }
 /* }}} */
 
@@ -302,7 +302,7 @@ void SAL_CALL OPreparedStatement::setBoolean(sal_Int32 parameter, sal_Bool x)
 		mysqlc_sdbc_driver::throwFeatureNotImplementedException("OPreparedStatement::setBoolean", *this);
 	} catch (sql::SQLException &e) {
         mysqlc_sdbc_driver::translateAndThrow(e, *this, m_pConnection->getConnectionEncoding());
-	}	
+	}
 }
 /* }}} */
 
@@ -322,7 +322,7 @@ void SAL_CALL OPreparedStatement::setByte(sal_Int32 parameter, sal_Int8 x)
 		mysqlc_sdbc_driver::throwFeatureNotImplementedException("OPreparedStatement::setByte", *this);
 	} catch (sql::SQLException &e) {
         mysqlc_sdbc_driver::translateAndThrow(e, *this, m_pConnection->getConnectionEncoding());
-	}	
+	}
 }
 /* }}} */
 
@@ -350,7 +350,7 @@ void SAL_CALL OPreparedStatement::setDate(sal_Int32 parameter, const Date& aData
 		mysqlc_sdbc_driver::throwFeatureNotImplementedException("OPreparedStatement::setDate", *this);
 	} catch (sql::SQLException &e) {
         mysqlc_sdbc_driver::translateAndThrow(e, *this, m_pConnection->getConnectionEncoding());
-	}	
+	}
 }
 /* }}} */
 
@@ -378,7 +378,7 @@ void SAL_CALL OPreparedStatement::setTime(sal_Int32 parameter, const Time& aVal)
 		mysqlc_sdbc_driver::throwFeatureNotImplementedException("OPreparedStatement::setTime", *this);
 	} catch (sql::SQLException &e) {
         mysqlc_sdbc_driver::translateAndThrow(e, *this, m_pConnection->getConnectionEncoding());
-	}	
+	}
 }
 /* }}} */
 
@@ -414,7 +414,7 @@ void SAL_CALL OPreparedStatement::setTimestamp(sal_Int32 parameter, const DateTi
 		mysqlc_sdbc_driver::throwFeatureNotImplementedException("OPreparedStatement::setTimestamp", *this);
 	} catch (sql::SQLException &e) {
         mysqlc_sdbc_driver::translateAndThrow(e, *this, m_pConnection->getConnectionEncoding());
-	}	
+	}
 }
 /* }}} */
 
@@ -434,7 +434,7 @@ void SAL_CALL OPreparedStatement::setDouble(sal_Int32 parameter, double x)
 		mysqlc_sdbc_driver::throwFeatureNotImplementedException("OPreparedStatement::setDouble", *this);
 	} catch (sql::SQLException &e) {
         mysqlc_sdbc_driver::translateAndThrow(e, *this, m_pConnection->getConnectionEncoding());
-	}	
+	}
 }
 /* }}} */
 
@@ -454,7 +454,7 @@ void SAL_CALL OPreparedStatement::setFloat(sal_Int32 parameter, float x)
 		mysqlc_sdbc_driver::throwFeatureNotImplementedException("OPreparedStatement::setFloat", *this);
 	} catch (sql::SQLException &e) {
         mysqlc_sdbc_driver::translateAndThrow(e, *this, m_pConnection->getConnectionEncoding());
-	}	
+	}
 }
 /* }}} */
 
@@ -474,7 +474,7 @@ void SAL_CALL OPreparedStatement::setInt(sal_Int32 parameter, sal_Int32 x)
 		mysqlc_sdbc_driver::throwFeatureNotImplementedException("OPreparedStatement::setInt", *this);
 	} catch (sql::SQLException &e) {
         mysqlc_sdbc_driver::translateAndThrow(e, *this, m_pConnection->getConnectionEncoding());
-	}	
+	}
 }
 /* }}} */
 
@@ -494,7 +494,7 @@ void SAL_CALL OPreparedStatement::setLong(sal_Int32 parameter, sal_Int64 aVal)
 		mysqlc_sdbc_driver::throwFeatureNotImplementedException("OPreparedStatement::setLong", *this);
 	} catch (sql::SQLException &e) {
         mysqlc_sdbc_driver::translateAndThrow(e, *this, m_pConnection->getConnectionEncoding());
-	}	
+	}
 }
 /* }}} */
 
@@ -514,7 +514,7 @@ void SAL_CALL OPreparedStatement::setNull(sal_Int32 parameter, sal_Int32 sqlType
 		mysqlc_sdbc_driver::throwFeatureNotImplementedException("OPreparedStatement::setNull", *this);
 	} catch (sql::SQLException &e) {
         mysqlc_sdbc_driver::translateAndThrow(e, *this, m_pConnection->getConnectionEncoding());
-	}	
+	}
 }
 /* }}} */
 
@@ -783,7 +783,7 @@ void SAL_CALL OPreparedStatement::setShort(sal_Int32 parameter, sal_Int16 x)
 		mysqlc_sdbc_driver::throwFeatureNotImplementedException("OPreparedStatement::setShort", *this);
 	} catch (sql::SQLException &e) {
         mysqlc_sdbc_driver::translateAndThrow(e, *this, m_pConnection->getConnectionEncoding());
-	}	
+	}
 }
 /* }}} */
 
@@ -797,14 +797,14 @@ void SAL_CALL OPreparedStatement::setBytes(sal_Int32 parameter, const Sequence< 
 	checkDisposed(OPreparedStatement::rBHelper.bDisposed);
 	checkParameterIndex(parameter);
 
-	ext_std::string blobby((char *)x.getConstArray(), x.getLength()); 
+	ext_std::string blobby((char *)x.getConstArray(), x.getLength());
 	try {
 		((sql::PreparedStatement *)cppStatement)->setString(parameter, blobby);
 	} catch (sql::MethodNotImplementedException) {
 		mysqlc_sdbc_driver::throwFeatureNotImplementedException("OPreparedStatement::setBytes", *this);
 	} catch (sql::SQLException &e) {
         mysqlc_sdbc_driver::translateAndThrow(e, *this, m_pConnection->getConnectionEncoding());
-	}	
+	}
 }
 /* }}} */
 
@@ -855,7 +855,7 @@ void SAL_CALL OPreparedStatement::clearParameters()
 		mysqlc_sdbc_driver::throwFeatureNotImplementedException("OPreparedStatement::clearParameters", *this);
 	} catch (sql::SQLException &e) {
         mysqlc_sdbc_driver::translateAndThrow(e, *this, m_pConnection->getConnectionEncoding());
-	}	
+	}
 }
 /* }}} */
 

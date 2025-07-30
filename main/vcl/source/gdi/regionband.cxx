@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
@@ -53,7 +53,7 @@ RegionBand& RegionBand::operator=(const RegionBand& rRef)
 {
 	ImplRegionBand* pPrevBand = 0;
 	ImplRegionBand* pBand = rRef.mpFirstBand;
-	
+
     while(pBand)
 	{
 		ImplRegionBand* pNewBand = new ImplRegionBand(*pBand);
@@ -134,7 +134,7 @@ bool RegionBand::operator==( const RegionBand& rRegionBand ) const
 		// get boundaries of current rectangle
 		long nOwnXLeft = pOwnRectBandSep->mnXLeft;
 		long nSecondXLeft = pSecondRectBandSep->mnXLeft;
-	
+
         if ( nOwnXLeft != nSecondXLeft )
         {
 			return false;
@@ -142,7 +142,7 @@ bool RegionBand::operator==( const RegionBand& rRegionBand ) const
 
 		long nOwnYTop = pOwnRectBand->mnYTop;
 		long nSecondYTop = pSecondRectBand->mnYTop;
-		
+
         if ( nOwnYTop != nSecondYTop )
         {
 			return false;
@@ -150,7 +150,7 @@ bool RegionBand::operator==( const RegionBand& rRegionBand ) const
 
 		long nOwnXRight = pOwnRectBandSep->mnXRight;
 		long nSecondXRight = pSecondRectBandSep->mnXRight;
-		
+
         if ( nOwnXRight != nSecondXRight )
         {
 			return false;
@@ -158,7 +158,7 @@ bool RegionBand::operator==( const RegionBand& rRegionBand ) const
 
 		long nOwnYBottom = pOwnRectBand->mnYBottom;
 		long nSecondYBottom = pSecondRectBand->mnYBottom;
-		
+
         if ( nOwnYBottom != nSecondYBottom )
         {
 			return false;
@@ -265,7 +265,7 @@ void RegionBand::load(SvStream& rIStrm)
                 pCurrBand->Union( nXLeft, nXRight );
             }
         }
-                
+
         if( rIStrm.IsEof() )
         {
             DBG_ERROR( "premature end of region stream" );
@@ -291,7 +291,7 @@ void RegionBand::save(SvStream& rOStrm) const
         rOStrm << (sal_uInt16)STREAMENTRY_BANDHEADER;
         rOStrm << pBand->mnYTop;
         rOStrm << pBand->mnYBottom;
-        
+
         // put separations of current band
         ImplRegionBandSep* pSep = pBand->mpFirstSep;
 
@@ -305,7 +305,7 @@ void RegionBand::save(SvStream& rOStrm) const
             // next separation from current band
             pSep = pSep->mpNextSep;
         }
-        
+
         pBand = pBand->mpNextBand;
     }
 
@@ -313,8 +313,8 @@ void RegionBand::save(SvStream& rOStrm) const
     rOStrm << (sal_uInt16)STREAMENTRY_END;
 }
 
-bool RegionBand::isSingleRectangle() const 
-{ 
+bool RegionBand::isSingleRectangle() const
+{
     // just one band?
     if(mpFirstBand && !mpFirstBand->mpNextBand)
     {
@@ -431,7 +431,7 @@ void RegionBand::CreateBandRange(long nYTop, long nYBottom)
 		// create new band
 		ImplRegionBand* pNewBand = new ImplRegionBand( i, i );
 		pBand->mpNextBand = pNewBand;
-	
+
         if ( pBand != mpFirstBand )
         {
 			pNewBand->mpPrevBand = pBand;
@@ -982,7 +982,7 @@ void RegionBand::Union(const RegionBand& rSource)
 
 		// process all elements of the list
 		ImplRegionBandSep* pSep = pBand->mpFirstSep;
-	
+
         while(pSep)
 		{
 			Union(pSep->mnXLeft, pBand->mnYTop, pSep->mnXRight, pBand->mnYBottom);
@@ -1058,7 +1058,7 @@ void RegionBand::XOr(long nLeft, long nTop, long nRight, long nBottom)
 #ifdef DBG_UTIL
 				long nCurY = pBand->mnYBottom;
 				pBand = pBand->mpNextBand;
-				
+
                 while(pBand)
 				{
 					if((pBand->mnYTop < nCurY) || (pBand->mnYBottom < nCurY))
@@ -1091,7 +1091,7 @@ void RegionBand::Intersect(const RegionBand& rSource)
     }
 
     pBand = rSource.mpFirstBand;
-		
+
     while ( pBand )
     {
 	    // insert bands if the boundaries are not already in the list
@@ -1099,7 +1099,7 @@ void RegionBand::Intersect(const RegionBand& rSource)
 
 	    // process all elements of the list
 	    ImplRegionBandSep* pSep = pBand->mpFirstSep;
-		
+
         while ( pSep )
 	    {
 		    // left boundary?
@@ -1173,7 +1173,7 @@ bool RegionBand::Exclude(const RegionBand& rSource)
 
 	    // process all elements of the list
 	    ImplRegionBandSep* pSep = pBand->mpFirstSep;
-	
+
         while ( pSep )
 	    {
 		    Exclude( pSep->mnXLeft, pBand->mnYTop, pSep->mnXRight, pBand->mnYBottom );
@@ -1264,7 +1264,7 @@ bool RegionBand::IsInside(const Point& rPoint) const
                 return false;
             }
         }
-        
+
         pBand = pBand->mpNextBand;
     }
 

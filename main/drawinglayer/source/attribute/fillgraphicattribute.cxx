@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -52,8 +52,8 @@ namespace drawinglayer
 			unsigned								mbTiling : 1;
 
 			ImpFillGraphicAttribute(
-                const Graphic& rGraphic, 
-                const basegfx::B2DRange& rGraphicRange, 
+                const Graphic& rGraphic,
+                const basegfx::B2DRange& rGraphicRange,
                 bool bTiling,
                 double fOffsetX,
                 double fOffsetY)
@@ -92,7 +92,7 @@ namespace drawinglayer
                         Graphic(),
                         basegfx::B2DRange(),
                         false,
-                        0.0, 
+                        0.0,
                         0.0);
 
                     // never delete; start with RefCount 1, not 0
@@ -104,17 +104,17 @@ namespace drawinglayer
 		};
 
         FillGraphicAttribute::FillGraphicAttribute(
-            const Graphic& rGraphic, 
-            const basegfx::B2DRange& rGraphicRange, 
+            const Graphic& rGraphic,
+            const basegfx::B2DRange& rGraphicRange,
             bool bTiling,
             double fOffsetX,
             double fOffsetY)
 		:	mpFillGraphicAttribute(
                 new ImpFillGraphicAttribute(
-                    rGraphic, 
-                    rGraphicRange, 
-                    bTiling, 
-                    basegfx::clamp(fOffsetX, 0.0, 1.0), 
+                    rGraphic,
+                    rGraphicRange,
+                    bTiling,
+                    basegfx::clamp(fOffsetX, 0.0, 1.0),
                     basegfx::clamp(fOffsetY, 0.0, 1.0)))
 		{
 		}
@@ -160,7 +160,7 @@ namespace drawinglayer
 				{
 					delete mpFillGraphicAttribute;
 				}
-				
+
 				mpFillGraphicAttribute = rCandidate.mpFillGraphicAttribute;
 				mpFillGraphicAttribute->mnRefCount++;
 			}
@@ -183,19 +183,19 @@ namespace drawinglayer
 			return (*rCandidate.mpFillGraphicAttribute == *mpFillGraphicAttribute);
 		}
 
-        const Graphic& FillGraphicAttribute::getGraphic() const 
-        { 
-            return mpFillGraphicAttribute->getGraphic(); 
+        const Graphic& FillGraphicAttribute::getGraphic() const
+        {
+            return mpFillGraphicAttribute->getGraphic();
         }
 
-        const basegfx::B2DRange& FillGraphicAttribute::getGraphicRange() const 
-        { 
-            return mpFillGraphicAttribute->getGraphicRange(); 
+        const basegfx::B2DRange& FillGraphicAttribute::getGraphicRange() const
+        {
+            return mpFillGraphicAttribute->getGraphicRange();
         }
 
-        bool FillGraphicAttribute::getTiling() const 
-        { 
-            return mpFillGraphicAttribute->getTiling(); 
+        bool FillGraphicAttribute::getTiling() const
+        {
+            return mpFillGraphicAttribute->getTiling();
         }
 
         double FillGraphicAttribute::getOffsetX() const

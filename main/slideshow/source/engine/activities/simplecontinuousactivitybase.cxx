@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -47,7 +47,7 @@ namespace slideshow
 
         void SimpleContinuousActivityBase::startAnimation()
         {
-            // init timer. We measure animation time only when we're 
+            // init timer. We measure animation time only when we're
             // actually started.
             maTimer.reset();
         }
@@ -57,7 +57,7 @@ namespace slideshow
             ActivityBase::calcTimeLag();
             if (! isActive())
                 return 0.0;
-            
+
             // retrieve locally elapsed time
             const double nCurrElapsedTime( maTimer.getElapsedTime() );
 
@@ -70,7 +70,7 @@ namespace slideshow
             // here, try to spread the animator calls uniquely over
             // the [0,1] parameter range. Be aware of the fact that
             // perform will be called at least mnMinNumberOfTurns
-            // times. 
+            // times.
 
             // fraction of time elapsed
             const double nFractionElapsedTime(
@@ -105,26 +105,26 @@ namespace slideshow
                 VERBOSE_TRACE( "SimpleContinuousActivityBase::perform(): "
                                "t=%f is based on number of calls",
                                nFractionRequiredCalls );
-                
+
                 // lag global time, so all other animations lag, too:
                 return ((nFractionElapsedTime - nFractionRequiredCalls)
                         * mnMinSimpleDuration);
             }
         }
-    
+
         bool SimpleContinuousActivityBase::perform()
         {
             // call base class, for start() calls and end handling
             if( !ActivityBase::perform() )
                 return false; // done, we're ended
-            
+
 
             // get relative animation position
             // ===============================
-            
+
             const double nCurrElapsedTime( maTimer.getElapsedTime() );
             double nT( nCurrElapsedTime / mnMinSimpleDuration );
-            
+
 
             // one of the stop criteria reached?
             // =================================
@@ -152,7 +152,7 @@ namespace slideshow
                     // to give animation the chance to render the last
                     // frame below
                     bActivityEnding = true;
-                            
+
                     // clamp animation to max permissible value
                     nT = nEffectiveRepeat;
                 }
@@ -197,7 +197,7 @@ namespace slideshow
 
                 // calc simple time and number of repeats from nT
                 // Now, that's easy, since the fractional part of
-                // nT gives the relative simple time, and the 
+                // nT gives the relative simple time, and the
                 // integer part the number of full repeats:
                 nRelativeSimpleTime = modf(nT, &nRepeats);
 

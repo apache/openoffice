@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -322,7 +322,7 @@ const SfxPoolItem* FuOutlineBullet::GetNumBulletItem(SfxItemSet& aNewAttr, sal_u
 {
 	//SvxNumBulletItem* pRetItem = NULL;
 	const SfxPoolItem* pTmpItem = NULL;
-	
+
 	if(aNewAttr.GetItemState(nNumItemId, sal_False, &pTmpItem) == SFX_ITEM_SET)
 	{
 		return pTmpItem;
@@ -342,7 +342,7 @@ const SfxPoolItem* FuOutlineBullet::GetNumBulletItem(SfxItemSet& aNewAttr, sal_u
      		{
 				const SdrMarkList& rMarkList = mpView->GetMarkedObjectList();
 				const sal_uInt32 nCount = rMarkList.GetMarkCount();
-            
+
 				for(sal_uInt32 nNum = 0; nNum < nCount; nNum++)
 				{
 					SdrObject* pObj = rMarkList.GetMark(nNum)->GetMarkedSdrObj();
@@ -363,7 +363,7 @@ const SfxPoolItem* FuOutlineBullet::GetNumBulletItem(SfxItemSet& aNewAttr, sal_u
 
 			const SvxNumBulletItem *pItem = NULL;
 			if(bOutliner)
-			{				
+			{
 				SfxStyleSheetBasePool* pSSPool = mpView->GetDocSh()->GetStyleSheetPool();
 				String aStyleName((SdResId((sal_uInt16)STR_LAYOUT_OUTLINE)));
 				aStyleName.AppendAscii( RTL_CONSTASCII_STRINGPARAM( " 1" ) );
@@ -378,7 +378,7 @@ const SfxPoolItem* FuOutlineBullet::GetNumBulletItem(SfxItemSet& aNewAttr, sal_u
 			//DBG_ASSERT( pItem, "Kein EE_PARA_NUMBULLET im Pool! [CL]" );
 
 			aNewAttr.Put(*pItem, EE_PARA_NUMBULLET);
-		
+
 			if(bTitle && aNewAttr.GetItemState(EE_PARA_NUMBULLET,sal_True) == SFX_ITEM_ON )
 			{
 				SvxNumBulletItem* pItem = (SvxNumBulletItem*)aNewAttr.GetItem(EE_PARA_NUMBULLET,sal_True);

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -27,7 +27,7 @@
 
 using namespace rtl;
 
-sal_Bool RdbOptions::initOptions(int ac, char* av[], sal_Bool bCmdFile) 
+sal_Bool RdbOptions::initOptions(int ac, char* av[], sal_Bool bCmdFile)
 	throw( IllegalArgument )
 {
 	sal_Bool 	ret = sal_True;
@@ -36,7 +36,7 @@ sal_Bool RdbOptions::initOptions(int ac, char* av[], sal_Bool bCmdFile)
 	if (!bCmdFile)
 	{
 		bCmdFile = sal_True;
-		
+
 		m_program = av[0];
 
 		if (ac < 2)
@@ -72,14 +72,14 @@ sal_Bool RdbOptions::initOptions(int ac, char* av[], sal_Bool bCmdFile)
 							{
 								tmp += " your input '" + OString(av[i+1]) + "'";
 							}
-							
+
 							throw IllegalArgument(tmp);
 						}
 					} else
 					{
 						s = av[i] + 2;
 					}
-					
+
 					m_options["-O"] = OString(s);
 					break;
 				case 'X':
@@ -96,14 +96,14 @@ sal_Bool RdbOptions::initOptions(int ac, char* av[], sal_Bool bCmdFile)
 							{
 								tmp += " your input '" + OString(av[i+1]) + "'";
 							}
-							
+
 							throw IllegalArgument(tmp);
 						}
 					} else
 					{
 						s = av[i] + 2;
 					}
-					
+
 					m_options["-X"] = OString(s);
 					break;
 				case 'R':
@@ -120,14 +120,14 @@ sal_Bool RdbOptions::initOptions(int ac, char* av[], sal_Bool bCmdFile)
 							{
 								tmp += " your input '" + OString(av[i+1]) + "'";
 							}
-							
+
 							throw IllegalArgument(tmp);
 						}
 					} else
 					{
 						s = av[i] + 2;
 					}
-					
+
 					m_options["-R"] = OString(s);
 					break;
 				case 'B':
@@ -144,14 +144,14 @@ sal_Bool RdbOptions::initOptions(int ac, char* av[], sal_Bool bCmdFile)
 							{
 								tmp += " your input '" + OString(av[i+1]) + "'";
 							}
-							
+
 							throw IllegalArgument(tmp);
 						}
 					} else
 					{
 						s = av[i] + 2;
 					}
-					
+
 					m_options["-B"] = OString(s);
 					break;
 				case 'b':
@@ -168,14 +168,14 @@ sal_Bool RdbOptions::initOptions(int ac, char* av[], sal_Bool bCmdFile)
 							{
 								tmp += " your input '" + OString(av[i+1]) + "'";
 							}
-							
+
 							throw IllegalArgument(tmp);
 						}
 					} else
 					{
 						s = av[i] + 2;
 					}
-					
+
 					m_options["-b"] = OString(s);
 					break;
 				case 'T':
@@ -192,14 +192,14 @@ sal_Bool RdbOptions::initOptions(int ac, char* av[], sal_Bool bCmdFile)
 							{
 								tmp += " your input '" + OString(av[i+1]) + "'";
 							}
-							
+
 							throw IllegalArgument(tmp);
 						}
 					} else
 					{
 						s = av[i] + 2;
 					}
-					
+
 					if (m_options.count("-T") > 0)
 					{
 						OString tmp(m_options["-T"]);
@@ -226,14 +226,14 @@ sal_Bool RdbOptions::initOptions(int ac, char* av[], sal_Bool bCmdFile)
 								{
 									tmp += " your input '" + OString(av[i+1]) + "'";
 								}
-								
+
 								throw IllegalArgument(tmp);
 							}
 						} else
 						{
 							s = av[i] + 3;
 						}
-						
+
 						if (m_options.count("-FT") > 0)
 						{
 							OString tmp(m_options["-FT"]);
@@ -258,14 +258,14 @@ sal_Bool RdbOptions::initOptions(int ac, char* av[], sal_Bool bCmdFile)
 								{
 									tmp += " your input '" + OString(av[i+1]) + "'";
 								}
-								
+
 								throw IllegalArgument(tmp);
 							}
 						} else
 						{
 							s = av[i] + 2;
 						}
-						
+
 						m_options["-F"] = OString(s);
 					}
 					break;
@@ -277,10 +277,10 @@ sal_Bool RdbOptions::initOptions(int ac, char* av[], sal_Bool bCmdFile)
 						{
 							tmp += " your input '" + OString(av[i+1]) + "'";
 						}
-						
+
 						throw IllegalArgument(tmp);
 					}
-					
+
 					m_options["-L"] = OString();
 					m_generateTypeList = sal_True;
 					break;
@@ -308,23 +308,23 @@ sal_Bool RdbOptions::initOptions(int ac, char* av[], sal_Bool bCmdFile)
 						rargc++;
 					}
 					fclose(cmdFile);
-					
+
 					ret = initOptions(rargc, rargv, bCmdFile);
-					
-					for (long j=0; j < rargc; j++) 
+
+					for (long j=0; j < rargc; j++)
 					{
 						free(rargv[j]);
 					}
-				}		
+				}
 			} else
 			{
 				m_inputFiles.push_back(av[i]);
-			}		
+			}
 		}
 	}
-	
-	return ret;	
-}	
+
+	return ret;
+}
 
 OString	RdbOptions::prepareHelp()
 {
@@ -350,7 +350,7 @@ OString	RdbOptions::prepareHelp()
 //	help += "                   all types are specified which will be generated.\n";
 	help += "    -T<name>     = name specifies a type or a list of types. The output for\n";
 	help += "      [t1;...]     this type is generated.\n";
-	help += "                   Example: 'com.sun.star.uno.XInterface' is a valid type.\n";		
+	help += "                   Example: 'com.sun.star.uno.XInterface' is a valid type.\n";
 	help += "    -FT<name>    = name specifies a type or a list of types. For this types\n";
 	help += "      [t1;...]     nothing will be generated.\n";
 	help += "     |F<file>    = file specifies an text file. For the specified types in\n" ;
@@ -362,9 +362,9 @@ OString	RdbOptions::prepareHelp()
 	help += "                   types will be generated under this node. Default is the\n";
 	help += "                   root '/' of the registry file.\n";
 	help += prepareVersion();
-	
+
 	return help;
-}	
+}
 
 OString	RdbOptions::prepareVersion()
 {
@@ -372,6 +372,4 @@ OString	RdbOptions::prepareVersion()
 	version += m_program + " Version 2.0\n\n";
 
 	return version;
-}	
-
-	
+}

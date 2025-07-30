@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,20 +7,20 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
-#include "vbacommandbarhelper.hxx" 
+#include "vbacommandbarhelper.hxx"
 #include <com/sun/star/ui/XUIConfigurationManagerSupplier.hpp>
 #include <com/sun/star/ui/XUIConfigurationStorage.hpp>
 #include <com/sun/star/ui/XModuleUIConfigurationManager.hpp>
@@ -115,7 +115,7 @@ void VbaCommandBarHelper::Init( ) throw (css::uno::RuntimeException)
     }
 
 	uno::Reference< lang::XMultiServiceFactory > xServiceManager( mxContext->getServiceManager(), uno::UNO_QUERY_THROW );
-        
+
 	css::uno::Reference< css::ui::XModuleUIConfigurationManagerSupplier > xUICfgMgrSupp( xServiceManager->createInstance( rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "com.sun.star.ui.ModuleUIConfigurationManagerSupplier" ))), uno::UNO_QUERY_THROW );
 
     m_xAppCfgMgr.set( xUICfgMgrSupp->getUIConfigurationManager( maModuleId ), uno::UNO_QUERY_THROW );
@@ -144,7 +144,7 @@ void VbaCommandBarHelper::removeSettings( const rtl::OUString& sResourceUrl ) th
         m_xDocCfgMgr->removeSettings( sResourceUrl );
     else if( m_xAppCfgMgr->hasSettings( sResourceUrl ) )
         m_xAppCfgMgr->removeSettings( sResourceUrl );
-    
+
     // persistChanges();
 }
 
@@ -178,7 +178,7 @@ sal_Bool VbaCommandBarHelper::persistChanges() throw (css::uno::RuntimeException
 
 uno::Reference< frame::XLayoutManager > VbaCommandBarHelper::getLayoutManager() throw (uno::RuntimeException)
 {
-    uno::Reference< frame::XFrame > xFrame( getModel()->getCurrentController()->getFrame(), uno::UNO_QUERY_THROW ); 
+    uno::Reference< frame::XFrame > xFrame( getModel()->getCurrentController()->getFrame(), uno::UNO_QUERY_THROW );
     uno::Reference< beans::XPropertySet > xPropertySet( xFrame, uno::UNO_QUERY_THROW );
     uno::Reference< frame::XLayoutManager > xLayoutManager( xPropertySet->getPropertyValue( rtl::OUString::createFromAscii("LayoutManager") ), uno::UNO_QUERY_THROW );
     return xLayoutManager;
@@ -217,7 +217,7 @@ rtl::OUString VbaCommandBarHelper::findToolbarByName( const css::uno::Reference<
                 return sResourceUrl;
         }
     }
-    
+
     // the customize toolbars creating during importing, shoud found there.
     static rtl::OUString sToolbarPrefix( RTL_CONSTASCII_USTRINGPARAM( "private:resource/toolbar/custom_" ) );
     sResourceUrl = sToolbarPrefix.concat( sName );

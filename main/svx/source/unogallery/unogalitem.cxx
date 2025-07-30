@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -24,10 +24,10 @@
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_svx.hxx"
 
-#include "unogalitem.hxx"	
-#include "unogaltheme.hxx"	
-#include "svx/galtheme.hxx"	
-#include "svx/galmisc.hxx"	
+#include "unogalitem.hxx"
+#include "unogaltheme.hxx"
+#include "svx/galtheme.hxx"
+#include "svx/galmisc.hxx"
 #include <svx/fmmodel.hxx>
 #include <rtl/uuid.h>
 #include <vos/mutex.hxx>
@@ -37,10 +37,10 @@
 #include <svl/itempool.hxx>
 #include "galobj.hxx"
 
-#ifndef _COM_SUN_STAR_BEANS_PROPERTYSTATE_HDL_ 
+#ifndef _COM_SUN_STAR_BEANS_PROPERTYSTATE_HDL_
 #include <com/sun/star/beans/PropertyState.hpp>
 #endif
-#ifndef _COM_SUN_STAR_BEANS_PROPERTYATTRIBUTE_HDL_ 
+#ifndef _COM_SUN_STAR_BEANS_PROPERTYATTRIBUTE_HDL_
 #include <com/sun/star/beans/PropertyAttribute.hpp>
 #endif
 #include <com/sun/star/gallery/GalleryItemType.hpp>
@@ -86,7 +86,7 @@ bool GalleryItem::isValid() const
 
 // ------------------------------------------------------------------------------
 
-uno::Any SAL_CALL GalleryItem::queryAggregation( const uno::Type & rType ) 
+uno::Any SAL_CALL GalleryItem::queryAggregation( const uno::Type & rType )
 	throw( uno::RuntimeException )
 {
 	uno::Any aAny;
@@ -111,7 +111,7 @@ uno::Any SAL_CALL GalleryItem::queryAggregation( const uno::Type & rType )
 
 // ------------------------------------------------------------------------------
 
-uno::Any SAL_CALL GalleryItem::queryInterface( const uno::Type & rType ) 
+uno::Any SAL_CALL GalleryItem::queryInterface( const uno::Type & rType )
 	throw( uno::RuntimeException )
 {
 	return OWeakAggObject::queryInterface( rType );
@@ -119,7 +119,7 @@ uno::Any SAL_CALL GalleryItem::queryInterface( const uno::Type & rType )
 
 // ------------------------------------------------------------------------------
 
-void SAL_CALL GalleryItem::acquire() 
+void SAL_CALL GalleryItem::acquire()
 	throw()
 {
 	OWeakAggObject::acquire();
@@ -134,7 +134,7 @@ void SAL_CALL GalleryItem::release()
 }
 
 // ------------------------------------------------------------------------------
-	
+
 ::rtl::OUString GalleryItem::getImplementationName_Static()
 	throw()
 {
@@ -147,15 +147,15 @@ uno::Sequence< ::rtl::OUString > GalleryItem::getSupportedServiceNames_Static()
 	throw()
 {
 	uno::Sequence< ::rtl::OUString > aSeq( 1 );
-	
+
 	aSeq.getArray()[ 0 ] = ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "com.sun.star.gallery.GalleryItem" ) );
-	
+
 	return aSeq;
 }
 
 // ------------------------------------------------------------------------------
-	
-::rtl::OUString SAL_CALL GalleryItem::getImplementationName() 
+
+::rtl::OUString SAL_CALL GalleryItem::getImplementationName()
 	throw( uno::RuntimeException )
 {
 	return getImplementationName_Static();
@@ -163,7 +163,7 @@ uno::Sequence< ::rtl::OUString > GalleryItem::getSupportedServiceNames_Static()
 
 // ------------------------------------------------------------------------------
 
-sal_Bool SAL_CALL GalleryItem::supportsService( const ::rtl::OUString& ServiceName ) 
+sal_Bool SAL_CALL GalleryItem::supportsService( const ::rtl::OUString& ServiceName )
 	throw( uno::RuntimeException )
 {
     uno::Sequence< ::rtl::OUString >	aSNL( getSupportedServiceNames() );
@@ -178,7 +178,7 @@ sal_Bool SAL_CALL GalleryItem::supportsService( const ::rtl::OUString& ServiceNa
 
 // ------------------------------------------------------------------------------
 
-uno::Sequence< ::rtl::OUString > SAL_CALL GalleryItem::getSupportedServiceNames() 
+uno::Sequence< ::rtl::OUString > SAL_CALL GalleryItem::getSupportedServiceNames()
 	throw( uno::RuntimeException )
 {
 	return getSupportedServiceNames_Static();
@@ -186,7 +186,7 @@ uno::Sequence< ::rtl::OUString > SAL_CALL GalleryItem::getSupportedServiceNames(
 
 // ------------------------------------------------------------------------------
 
-uno::Sequence< uno::Type > SAL_CALL GalleryItem::getTypes() 
+uno::Sequence< uno::Type > SAL_CALL GalleryItem::getTypes()
 	throw(uno::RuntimeException)
 {
 	uno::Sequence< uno::Type >	aTypes( 6 );
@@ -204,18 +204,18 @@ uno::Sequence< uno::Type > SAL_CALL GalleryItem::getTypes()
 
 // ------------------------------------------------------------------------------
 
-uno::Sequence< sal_Int8 > SAL_CALL GalleryItem::getImplementationId() 
+uno::Sequence< sal_Int8 > SAL_CALL GalleryItem::getImplementationId()
 	throw(uno::RuntimeException)
 {
 	const vos::OGuard 					aGuard( Application::GetSolarMutex() );
 	static uno::Sequence< sal_Int8 >	aId;
-	
+
 	if( aId.getLength() == 0 )
 	{
 		aId.realloc( 16 );
 		rtl_createUuid( reinterpret_cast< sal_uInt8* >( aId.getArray() ), 0, sal_True );
 	}
-	
+
 	return aId;
 }
 
@@ -226,7 +226,7 @@ sal_Int8 SAL_CALL GalleryItem::getType()
 {
 	const ::vos::OGuard aGuard( Application::GetSolarMutex() );
 	sal_Int8 			nRet = gallery::GalleryItemType::EMPTY;
-	
+
 	if( isValid() )
 	{
 		switch( implGetObject()->eObjKind )
@@ -235,17 +235,17 @@ sal_Int8 SAL_CALL GalleryItem::getType()
 			case( SGA_OBJ_VIDEO ):
 				nRet = gallery::GalleryItemType::MEDIA;
 			break;
-			
+
 			case( SGA_OBJ_SVDRAW ):
 				nRet = gallery::GalleryItemType::DRAWING;
 			break;
-			
+
 			default:
 				nRet = gallery::GalleryItemType::GRAPHIC;
 			break;
 		}
 	}
-	
+
 	return nRet;
 }
 
@@ -260,22 +260,22 @@ sal_Int8 SAL_CALL GalleryItem::getType()
 	{
 		{ MAP_CHAR_LEN( "GalleryItemType" ), UNOGALLERY_GALLERYITEMTYPE, &::getCppuType( (const sal_Int8*)(0)),
 		  beans::PropertyAttribute::READONLY, 0 },
-		
-		{ MAP_CHAR_LEN( "URL" ), UNOGALLERY_URL, &::getCppuType( (const ::rtl::OUString*)(0)), 
+
+		{ MAP_CHAR_LEN( "URL" ), UNOGALLERY_URL, &::getCppuType( (const ::rtl::OUString*)(0)),
 		  beans::PropertyAttribute::READONLY, 0 },
-		  
+
 		{ MAP_CHAR_LEN( "Title" ), UNOGALLERY_TITLE, &::getCppuType( (const ::rtl::OUString*)(0)),
 		  0, 0 },
-		
+
 		{ MAP_CHAR_LEN( "Thumbnail" ), UNOGALLERY_THUMBNAIL, &::getCppuType( (const uno::Reference< graphic::XGraphic >*)(0)),
 		  beans::PropertyAttribute::READONLY, 0 },
 
 		{ MAP_CHAR_LEN( "Graphic" ), UNOGALLERY_GRAPHIC, &::getCppuType( (const uno::Reference< graphic::XGraphic >*)(0)),
 		  beans::PropertyAttribute::READONLY, 0 },
-		  		  
+
 		{ MAP_CHAR_LEN( "Drawing" ), UNOGALLERY_DRAWING, &::getCppuType( (const uno::Reference< lang::XComponent >*)(0) ),
 		  beans::PropertyAttribute::READONLY, 0 },
-		
+
 		{ 0,0,0,0,0,0}
 	};
 
@@ -287,28 +287,28 @@ sal_Int8 SAL_CALL GalleryItem::getType()
 
 // ------------------------------------------------------------------------------
 
-void GalleryItem::_setPropertyValues( const comphelper::PropertyMapEntry** ppEntries, const uno::Any* pValues ) 						
-	throw( beans::UnknownPropertyException, 
-		   beans::PropertyVetoException, 
-		   lang::IllegalArgumentException, 
+void GalleryItem::_setPropertyValues( const comphelper::PropertyMapEntry** ppEntries, const uno::Any* pValues )
+	throw( beans::UnknownPropertyException,
+		   beans::PropertyVetoException,
+		   lang::IllegalArgumentException,
 		   lang::WrappedTargetException )
 {
 	const ::vos::OGuard aGuard( Application::GetSolarMutex() );
-	
+
 	while( *ppEntries )
 	{
 		if( UNOGALLERY_TITLE == (*ppEntries)->mnHandle )
 		{
-			::rtl::OUString aNewTitle; 
-		
+			::rtl::OUString aNewTitle;
+
 			if( *pValues >>= aNewTitle )
 			{
 				::GalleryTheme*	pGalTheme = ( isValid() ? mpTheme->implGetTheme() : NULL );
-			
+
 				if( pGalTheme )
 				{
 					SgaObject* pObj = pGalTheme->ImplReadSgaObject( const_cast< GalleryObject* >( implGetObject() ) );
-					
+
 					if( pObj )
 					{
 						if( ::rtl::OUString( pObj->GetTitle() ) != aNewTitle )
@@ -316,7 +316,7 @@ void GalleryItem::_setPropertyValues( const comphelper::PropertyMapEntry** ppEnt
 							pObj->SetTitle( aNewTitle );
 							pGalTheme->InsertObject( *pObj );
 						}
-						
+
 						delete pObj;
 					}
 				}
@@ -326,16 +326,16 @@ void GalleryItem::_setPropertyValues( const comphelper::PropertyMapEntry** ppEnt
 				throw lang::IllegalArgumentException();
 			}
 		}
-		
+
 		++ppEntries;
 		++pValues;
 	}
 }
 
 // ------------------------------------------------------------------------------
-    
+
 void GalleryItem::_getPropertyValues( const comphelper::PropertyMapEntry** ppEntries, uno::Any* pValue )
-	throw( beans::UnknownPropertyException, 
+	throw( beans::UnknownPropertyException,
 		   lang::WrappedTargetException )
 {
 	const ::vos::OGuard aGuard( Application::GetSolarMutex() );
@@ -353,12 +353,12 @@ void GalleryItem::_getPropertyValues( const comphelper::PropertyMapEntry** ppEnt
 			case( UNOGALLERY_URL ):
 			{
 				::GalleryTheme*	pGalTheme = ( isValid() ? mpTheme->implGetTheme() : NULL );
-			
+
 				if( pGalTheme )
 					*pValue <<= ::rtl::OUString( implGetObject()->aURL.GetMainURL( INetURLObject::NO_DECODE ) );
 			}
 			break;
-			
+
 			case( UNOGALLERY_TITLE ):
 			{
 				::GalleryTheme*	pGalTheme = ( isValid() ? mpTheme->implGetTheme() : NULL );
@@ -366,7 +366,7 @@ void GalleryItem::_getPropertyValues( const comphelper::PropertyMapEntry** ppEnt
 				if( pGalTheme )
 				{
 					SgaObject* pObj = pGalTheme->AcquireObject( pGalTheme->ImplGetGalleryObjectPos( implGetObject() ) );
-					
+
 					if( pObj )
 					{
 						*pValue <<= ::rtl::OUString( pObj->GetTitle() );
@@ -375,7 +375,7 @@ void GalleryItem::_getPropertyValues( const comphelper::PropertyMapEntry** ppEnt
 				}
 			}
 			break;
-		
+
 			case( UNOGALLERY_THUMBNAIL ):
 			{
 				::GalleryTheme*	pGalTheme = ( isValid() ? mpTheme->implGetTheme() : NULL );
@@ -383,16 +383,16 @@ void GalleryItem::_getPropertyValues( const comphelper::PropertyMapEntry** ppEnt
 				if( pGalTheme )
 				{
 					SgaObject* pObj = pGalTheme->AcquireObject( pGalTheme->ImplGetGalleryObjectPos( implGetObject() ) );
-					
+
 					if( pObj )
 					{
 						Graphic aThumbnail;
-						
+
 						if( pObj->IsThumbBitmap() )
 							aThumbnail = pObj->GetThumbBmp();
 						else
 							aThumbnail = pObj->GetThumbMtf();
-					
+
 						*pValue <<= aThumbnail.GetXGraphic();
 						pGalTheme->ReleaseObject( pObj );
 					}
@@ -409,7 +409,7 @@ void GalleryItem::_getPropertyValues( const comphelper::PropertyMapEntry** ppEnt
 					*pValue <<= aGraphic.GetXGraphic();
 			}
 			break;
-			
+
 			case( UNOGALLERY_DRAWING ):
 			{
 				if( gallery::GalleryItemType::DRAWING == getType() )
@@ -418,11 +418,11 @@ void GalleryItem::_getPropertyValues( const comphelper::PropertyMapEntry** ppEnt
 					FmFormModel*	pModel = new FmFormModel;
 
 					pModel->GetItemPool().FreezeIdRanges();
-	
+
 					if( pGalTheme && pGalTheme->GetModel( pGalTheme->ImplGetGalleryObjectPos( implGetObject() ), *pModel ) )
 					{
 						uno::Reference< lang::XComponent > xDrawing( new GalleryDrawingModel( pModel ) );
-						
+
 						pModel->setUnoModel( uno::Reference< uno::XInterface >::query( xDrawing ) );
 						*pValue <<= xDrawing;
 					}
@@ -432,7 +432,7 @@ void GalleryItem::_getPropertyValues( const comphelper::PropertyMapEntry** ppEnt
 			}
 			break;
 		}
-		
+
 		++ppEntries;
 		++pValue;
 	}
@@ -460,7 +460,7 @@ void GalleryItem::implSetInvalid()
 // - GalleryDrawingModel -
 // -----------------------
 
-GalleryDrawingModel::GalleryDrawingModel( SdrModel* pDoc ) 
+GalleryDrawingModel::GalleryDrawingModel( SdrModel* pDoc )
 	throw() :
 	SvxUnoDrawingModel( pDoc )
 {
@@ -468,7 +468,7 @@ GalleryDrawingModel::GalleryDrawingModel( SdrModel* pDoc )
 
 // -----------------------------------------------------------------------------
 
-GalleryDrawingModel::~GalleryDrawingModel() 
+GalleryDrawingModel::~GalleryDrawingModel()
 	throw()
 {
 	delete GetDoc();

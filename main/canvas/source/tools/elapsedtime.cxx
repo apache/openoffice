@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -61,7 +61,7 @@ double ElapsedTime::getSystemTime()
     // TEMP!!!
     // Awaiting corresponding functionality in OSL
     //
-    
+
     // is there a performance counter available?
     static bool bTimeSetupDone( false );
     static bool bPerfTimerAvailable( false );
@@ -73,7 +73,7 @@ double ElapsedTime::getSystemTime()
     // current sys time and nInitialCount exceeds IEEE double's
     // mantissa, time will start to run jerky.
     static LONGLONG nInitialCount;
-    
+
     if( !bTimeSetupDone )
     {
         if( QueryPerformanceFrequency(
@@ -86,7 +86,7 @@ double ElapsedTime::getSystemTime()
         }
         bTimeSetupDone = true;
     }
-    
+
     if( bPerfTimerAvailable )
     {
         LONGLONG nCurrCount;
@@ -107,7 +107,7 @@ double ElapsedTime::getSystemTime()
 // TODO(Q2): is 0 okay for the failure case here?
 double ElapsedTime::getSystemTime()
 {
-    TimeValue aTimeVal;   
+    TimeValue aTimeVal;
     if( osl_getSystemTime( &aTimeVal ) )
         return ((aTimeVal.Nanosec * 10e-10) + aTimeVal.Seconds);
     else
@@ -179,7 +179,7 @@ double ElapsedTime::getElapsedTimeImpl() const
 {
     if (m_bInHoldMode || m_bInPauseMode)
         return m_fFrozenTime;
-    
+
     return getCurrentTime() - m_fStartTime;
 }
 

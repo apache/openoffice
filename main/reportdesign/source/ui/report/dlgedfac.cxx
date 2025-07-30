@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -61,24 +61,24 @@ IMPL_LINK( DlgEdFactory, MakeObject, SdrObjFactory *, pObjFactory )
 	    {
 		    case OBJ_DLG_FIXEDTEXT:
 				    pObjFactory->pNewObj = new OUnoObject( SERVICE_FIXEDTEXT
-													    ,::rtl::OUString(RTL_CONSTASCII_USTRINGPARAM("com.sun.star.form.component.FixedText")) 
+													    ,::rtl::OUString(RTL_CONSTASCII_USTRINGPARAM("com.sun.star.form.component.FixedText"))
 													    ,OBJ_DLG_FIXEDTEXT);
 				    break;
 		    case OBJ_DLG_IMAGECONTROL:
 				    pObjFactory->pNewObj = new OUnoObject( SERVICE_IMAGECONTROL
-													    ,::rtl::OUString(RTL_CONSTASCII_USTRINGPARAM("com.sun.star.form.component.DatabaseImageControl")) 
+													    ,::rtl::OUString(RTL_CONSTASCII_USTRINGPARAM("com.sun.star.form.component.DatabaseImageControl"))
 														,OBJ_DLG_IMAGECONTROL);
 				    break;
 		    case OBJ_DLG_FORMATTEDFIELD:
 				    pObjFactory->pNewObj = new OUnoObject( SERVICE_FORMATTEDFIELD
-													    ,::rtl::OUString(RTL_CONSTASCII_USTRINGPARAM("com.sun.star.form.component.FormattedField")) 
+													    ,::rtl::OUString(RTL_CONSTASCII_USTRINGPARAM("com.sun.star.form.component.FormattedField"))
 														,OBJ_DLG_FORMATTEDFIELD);
 				    break;
             case OBJ_DLG_VFIXEDLINE:
             case OBJ_DLG_HFIXEDLINE:
                 {
                     OUnoObject* pObj = new OUnoObject( SERVICE_FIXEDLINE
-													    ,::rtl::OUString(RTL_CONSTASCII_USTRINGPARAM("com.sun.star.awt.UnoControlFixedLineModel")) 
+													    ,::rtl::OUString(RTL_CONSTASCII_USTRINGPARAM("com.sun.star.awt.UnoControlFixedLineModel"))
 														,pObjFactory->nIdentifier);
                     pObjFactory->pNewObj = pObj;
                     if ( pObjFactory->nIdentifier == OBJ_DLG_HFIXEDLINE )

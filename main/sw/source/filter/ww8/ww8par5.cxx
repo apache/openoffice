@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -329,7 +329,7 @@ long SwWW8ImplReader::Read_Book(WW8PLCFManResult*)
     const String* pName = pB->GetName();
     // Now, as we read the TOC field completely, we also need the hyperlinks inside keep available.
     // So the hidden bookmarks inside for hyperlink jumping also should be kept.
-    if ( !pName || 
+    if ( !pName ||
          pName->EqualsIgnoreCaseAscii( "_Hlt", 0, 4 ) )
     {
         return 0;
@@ -415,7 +415,7 @@ long SwWW8ImplReader::Read_Book(WW8PLCFManResult*)
     }
 
     const String sOrigName = BookmarkToWriter(*pName);
-    pReffedStck->NewAttr( aStart, 
+    pReffedStck->NewAttr( aStart,
                           SwFltBookmark( sOrigName, aVal, pB->GetHandle(), IsTOCBookmarkName( sOrigName ) ));
     return 0;
 }
@@ -814,7 +814,7 @@ FieldEntry &FieldEntry::operator=(const FieldEntry &rOther) throw()
     return msMarkType;
 }
 
-void FieldEntry::SetBookmarkName(::rtl::OUString bookmarkName) 
+void FieldEntry::SetBookmarkName(::rtl::OUString bookmarkName)
 {
     msBookmarkName=bookmarkName;
 }
@@ -1024,7 +1024,7 @@ long SwWW8ImplReader::Read_Field(WW8PLCFManResult* pRes)
         if ( nSpacePos == STRING_NOTFOUND )
             nSpacePos = aStr.Len();
 
-        if ( !( aStr.EqualsAscii( "=", 1, 1 ) ) && 
+        if ( !( aStr.EqualsAscii( "=", 1, 1 ) ) &&
             ((( nDotPos != STRING_NOTFOUND ) && ( nDotPos < nSpacePos )) ||
             (( nSlashPos != STRING_NOTFOUND ) && ( nSlashPos < nSpacePos ))))
             return aF.nLen;
@@ -2180,7 +2180,7 @@ eF_ResT SwWW8ImplReader::Read_F_PgRef( WW8FieldDesc*, String& rStr )
     if (mbLoadingTOXCache )
     {
         // insert page ref representation as plain text --> return FLD_TEXT
-        // if there is no hyperlink settings for current toc and referenced bookmark is available, 
+        // if there is no hyperlink settings for current toc and referenced bookmark is available,
         // assign link to current ref area
         if ( !mbLoadingTOXHyperlink && sName.Len() > 0 )
         {
@@ -2224,7 +2224,7 @@ eF_ResT SwWW8ImplReader::Read_F_PgRef( WW8FieldDesc*, String& rStr )
     {
         sPageRefBookmarkName = sName;
     }
-    SwGetRefField aFld( (SwGetRefFieldType*)rDoc.GetSysFldType( RES_GETREFFLD ), 
+    SwGetRefField aFld( (SwGetRefFieldType*)rDoc.GetSysFldType( RES_GETREFFLD ),
                         sPageRefBookmarkName, REF_BOOKMARK, 0, REF_PAGE );
     rDoc.InsertPoolItem( *pPaM, SwFmtFld( aFld ), 0 );
 
@@ -2329,7 +2329,7 @@ eF_ResT SwWW8ImplReader::Read_F_Macro( WW8FieldDesc*, String& rStr)
 			String aFontName;
 			FontPitch ePitch;
 			CharSet eSrcCharSet;
-			if( GetFontParams( i, eFamily, aFontName, ePitch, eSrcCharSet ) 
+			if( GetFontParams( i, eFamily, aFontName, ePitch, eSrcCharSet )
 				&& aFontName.EqualsAscii("Wingdings") )
 			{
 				break;
@@ -3455,8 +3455,8 @@ eF_ResT SwWW8ImplReader::Read_F_Tox( WW8FieldDesc* pF, String& rStr )
     pBase->AdjustTabStops( rDoc );
 
     //#i10028# inserting a toc implicltly acts like a parabreak in word and writer
-    if ( pPaM->End() && 
-         pPaM->End()->nNode.GetNode().GetTxtNode() && 
+    if ( pPaM->End() &&
+         pPaM->End()->nNode.GetNode().GetTxtNode() &&
          pPaM->End()->nNode.GetNode().GetTxtNode()->Len() != 0 )
     {
         mbCareFirstParaEndInToc = true;

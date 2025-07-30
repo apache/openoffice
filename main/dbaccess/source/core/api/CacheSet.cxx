@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -102,7 +102,7 @@ using namespace ::osl;
 
 DBG_NAME(OCacheSet)
 // -------------------------------------------------------------------------
-OCacheSet::OCacheSet(sal_Int32 i_nMaxRows) 
+OCacheSet::OCacheSet(sal_Int32 i_nMaxRows)
 			:m_nMaxRows(i_nMaxRows)
             ,m_bInserted(sal_False)
 			,m_bUpdated(sal_False)
@@ -123,7 +123,7 @@ OCacheSet::OCacheSet(sal_Int32 i_nMaxRows)
 	return sQuote;
 }
 // -------------------------------------------------------------------------
-void OCacheSet::construct(	const Reference< XResultSet>& _xDriverSet,const ::rtl::OUString& /*i_sRowSetFilter*/) 
+void OCacheSet::construct(	const Reference< XResultSet>& _xDriverSet,const ::rtl::OUString& /*i_sRowSetFilter*/)
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "dbaccess", "Ocke.Janssen@sun.com", "OCacheSet::construct" );
 	OSL_ENSURE(_xDriverSet.is(),"Invalid resultSet");
@@ -164,10 +164,10 @@ OCacheSet::~OCacheSet()
 {
 	try
 	{
-		m_xDriverSet = NULL;  
-		m_xDriverRow = NULL;  
+		m_xDriverSet = NULL;
+		m_xDriverRow = NULL;
 		m_xSetMetaData = NULL;
-		m_xConnection = NULL; 
+		m_xConnection = NULL;
 	}
 	catch(Exception&)
 	{
@@ -240,7 +240,7 @@ void SAL_CALL OCacheSet::insertRow( const ORowSetRow& _rInsertRow,const connecti
 
 		m_bInserted = xPrep->executeUpdate() > 0;
 	}
-	
+
 //	::rtl::OUString aCountSql = ::rtl::OUString::createFromAscii("SELECT COUNT(*) FROM ");
 //	aCountSql += m_aComposedTableName;
 //	try
@@ -255,12 +255,12 @@ void SAL_CALL OCacheSet::insertRow( const ORowSetRow& _rInsertRow,const connecti
 //	catch(SQLException&)
 //	{
 //	}
-	
+
 	// TODO set the bookmark in the insert row
 }
 // -------------------------------------------------------------------------
 void OCacheSet::fillParameters( const ORowSetRow& _rRow
-										,const connectivity::OSQLTable& _xTable 
+										,const connectivity::OSQLTable& _xTable
 										,::rtl::OUStringBuffer& _sCondition
 										,::rtl::OUStringBuffer& _sParameter
 										,::std::list< sal_Int32>& _rOrgValues)
@@ -294,7 +294,7 @@ void OCacheSet::fillParameters( const ORowSetRow& _rRow
 	}
 
 	::rtl::OUString aColumnName;
-	
+
 	static ::rtl::OUString aPara = ::rtl::OUString::createFromAscii("?,");
 	static ::rtl::OUString aAnd		= ::rtl::OUString::createFromAscii(" AND ");
 
@@ -302,7 +302,7 @@ void OCacheSet::fillParameters( const ORowSetRow& _rRow
 
 	sal_Int32 nCheckCount = 1; // index for the original values
 	sal_Int32 i = 1;
-    
+
     ::rtl::OUString sIsNull(RTL_CONSTASCII_USTRINGPARAM(" IS NULL"));
     ::rtl::OUString sParam(RTL_CONSTASCII_USTRINGPARAM(" = ?"));
 	ORowVector< ORowSetValue >::Vector::const_iterator aIter = _rRow->get().begin()+1;
@@ -355,7 +355,7 @@ void SAL_CALL OCacheSet::updateRow(const ORowSetRow& _rInsertRow ,const ORowSetR
     aSql.append(m_aComposedTableName);
 	aSql.append(::rtl::OUString::createFromAscii(" SET "));
 	// list all cloumns that should be set
-	
+
 	::rtl::OUStringBuffer aCondition;
 	::std::list< sal_Int32> aOrgValues;
 	fillParameters(_rInsertRow,_xTable,aCondition,aSql,aOrgValues);
@@ -436,7 +436,7 @@ void SAL_CALL OCacheSet::deleteRow(const ORowSetRow& _rDeleteRow ,const connecti
 	::rtl::OUStringBuffer aColumnName;
 	::std::list< sal_Int32> aOrgValues;
 	fillParameters(_rDeleteRow,_xTable,aSql,aColumnName,aOrgValues);
-	
+
     aSql.setLength(aSql.getLength()-5);
 
 	// now create end execute the prepared statement

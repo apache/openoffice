@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -50,7 +50,7 @@ using ::rtl::OUString;
 using ::std::sort;
 
 
-MultiPropertySetHelper::MultiPropertySetHelper( 
+MultiPropertySetHelper::MultiPropertySetHelper(
 	const sal_Char** pNames ) :
 		pPropertyNames( NULL ),
 		nLength( 0 ),
@@ -99,7 +99,7 @@ MultiPropertySetHelper::~MultiPropertySetHelper()
 
 
 
-void MultiPropertySetHelper::hasProperties( 
+void MultiPropertySetHelper::hasProperties(
 	const Reference<XPropertySetInfo> & rInfo )
 {
 	DBG_ASSERT( rInfo.is(), "I'd really like an XPropertySetInfo here." );
@@ -115,9 +115,9 @@ void MultiPropertySetHelper::hasProperties(
 	for( i = 0; i < nLength; i++ )
 	{
 		// ask for property
-		sal_Bool bHasProperty = 
+		sal_Bool bHasProperty =
 			rInfo->hasPropertyByName( pPropertyNames[i] );
-		
+
 		// set index and increment (if appropriate)
 		pSequenceIndex[i]= bHasProperty ? nNumberOfProperties : -1;
 		if ( bHasProperty )
@@ -143,7 +143,7 @@ sal_Bool MultiPropertySetHelper::checkedProperties()
 
 
 
-void MultiPropertySetHelper::getValues( 
+void MultiPropertySetHelper::getValues(
 	const Reference<XMultiPropertySet> & rMultiPropertySet )
 {
 	DBG_ASSERT( rMultiPropertySet.is(), "We need an XMultiPropertySet." );
@@ -152,20 +152,20 @@ void MultiPropertySetHelper::getValues(
 	pValues = aValues.getConstArray();
 }
 
-void MultiPropertySetHelper::getValues( 
+void MultiPropertySetHelper::getValues(
 	const Reference<XPropertySet> & rPropertySet )
 {
 	DBG_ASSERT( rPropertySet.is(), "We need an XPropertySet." );
 
 	// re-alloc aValues (if necessary) and fill with values from XPropertySet
-	sal_Int16 nSupportedPropertiesCount = 
+	sal_Int16 nSupportedPropertiesCount =
 		(sal_Int16)aPropertySequence.getLength();
 	if ( aValues.getLength() != nSupportedPropertiesCount )
 		aValues.realloc( nSupportedPropertiesCount );
 	Any* pMutableArray = aValues.getArray();
 	for( sal_Int16 i = 0; i < nSupportedPropertiesCount; i++ )
 	{
-		pMutableArray[i] = rPropertySet->getPropertyValue( 
+		pMutableArray[i] = rPropertySet->getPropertyValue(
 			pPropertyNames[ pSequenceIndex[ i ] ] );
 	}
 

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -76,7 +76,7 @@ static const struct
 {
 	const char *pPropName;
 	sal_Int32		nPropHdl;
-} aFlushProperties[ NUM_FLUSH_PROPS ] = 
+} aFlushProperties[ NUM_FLUSH_PROPS ] =
 {
     { UPN_IS_USE_DICTIONARY_LIST,         UPH_IS_USE_DICTIONARY_LIST },
     { UPN_IS_IGNORE_CONTROL_CHARACTERS,   UPH_IS_IGNORE_CONTROL_CHARACTERS },
@@ -86,7 +86,7 @@ static const struct
 };
 
 
-static void lcl_AddAsPropertyChangeListener( 
+static void lcl_AddAsPropertyChangeListener(
 		Reference< XPropertyChangeListener > xListener,
 		Reference< XPropertySet > &rPropSet )
 {
@@ -94,14 +94,14 @@ static void lcl_AddAsPropertyChangeListener(
 	{
 		for (int i = 0;  i < NUM_FLUSH_PROPS;  ++i)
 		{
-			rPropSet->addPropertyChangeListener( 
+			rPropSet->addPropertyChangeListener(
 					A2OU(aFlushProperties[i].pPropName), xListener );
 		}
 	}
 }
 
 
-static void lcl_RemoveAsPropertyChangeListener( 
+static void lcl_RemoveAsPropertyChangeListener(
 		Reference< XPropertyChangeListener > xListener,
 		Reference< XPropertySet > &rPropSet )
 {
@@ -109,7 +109,7 @@ static void lcl_RemoveAsPropertyChangeListener(
 	{
 		for (int i = 0;  i < NUM_FLUSH_PROPS;  ++i)
 		{
-			rPropSet->removePropertyChangeListener( 
+			rPropSet->removePropertyChangeListener(
 					A2OU(aFlushProperties[i].pPropName), xListener );
 		}
 	}
@@ -153,7 +153,7 @@ void FlushListener::SetDicList(	Reference<XDictionaryList> &rDL )
 			xDicList->addDictionaryListEventListener( this, sal_False );
 	}
 }
-	
+
 
 void FlushListener::SetPropSet( Reference< XPropertySet > &rPS )
 {
@@ -198,7 +198,7 @@ void SAL_CALL FlushListener::processDictionaryListEvent(
 	if (rDicListEvent.Source == xDicList)
 	{
 		sal_Int16 nEvt = rDicListEvent.nCondensedEvent;
-		sal_Int16 nFlushFlags = 
+		sal_Int16 nFlushFlags =
 				DictionaryListEventFlags::ADD_NEG_ENTRY		|
 				DictionaryListEventFlags::DEL_POS_ENTRY		|
 				DictionaryListEventFlags::ACTIVATE_NEG_DIC	|
@@ -210,10 +210,10 @@ void SAL_CALL FlushListener::processDictionaryListEvent(
 			pFlushObj->Flush();
 	}
 }
-    
 
-void SAL_CALL FlushListener::propertyChange( 
-			const PropertyChangeEvent& rEvt ) 
+
+void SAL_CALL FlushListener::propertyChange(
+			const PropertyChangeEvent& rEvt )
 		throw(RuntimeException)
 {
 	MutexGuard	aGuard( GetLinguMutex() );

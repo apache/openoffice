@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -171,7 +171,7 @@ static basegfx::B2DRange GetShapeRangeForXShape( const uno::Reference< drawing::
 
 	const uno::Sequence< beans::PropertyValue > aParams;
 	const uno::Sequence< uno::Reference< graphic::XPrimitive2D > > aPrimitiveSequence( rxPrimitiveFactory2D->createPrimitivesFromXShape( rxShape, aParams ) );
-	
+
 	const sal_Int32 nCount = aPrimitiveSequence.getLength();
 	for( sal_Int32 nIndex = 0; nIndex < nCount; nIndex++ )
 	{
@@ -184,8 +184,8 @@ static basegfx::B2DRange GetShapeRangeForXShape( const uno::Reference< drawing::
 
 uno::Sequence< beans::PropertyValue > ExportDialog::GetFilterData( sal_Bool bUpdateConfig )
 {
-	if ( bUpdateConfig )	
-	{	
+	if ( bUpdateConfig )
+	{
 		sal_Int32 nUnit = maLbSizeX.GetSelectEntryPos();
 		if ( nUnit < 0 )
 			nUnit = UNIT_CM;
@@ -335,14 +335,14 @@ uno::Sequence< beans::PropertyValue > ExportDialog::GetFilterData( sal_Bool bUpd
 		}
 		break;
 	}
-	
+
 	uno::Sequence< beans::PropertyValue > aRet( pFilterOptions->GetFilterData() );
 	if ( bUpdateConfig == sal_False )
 		delete pFilterOptions;
 	return aRet;
 }
 
-// 
+//
 awt::Size ExportDialog::GetOriginalSize()
 {
 	basegfx::B2DRange aShapesRange;
@@ -448,7 +448,7 @@ sal_Bool ExportDialog::GetGraphicStream()
 	}
 
 	sal_Bool bRecreateOutputStream = mpTempStream->Tell() == 0;
-	
+
 	static uno::Sequence< beans::PropertyValue > aOldFilterData;
 	uno::Sequence< beans::PropertyValue > aNewFilterData( GetFilterData( sal_False ) );
 	if ( aOldFilterData != aNewFilterData )
@@ -549,7 +549,7 @@ sal_uInt32 ExportDialog::GetRawFileSize() const
 			nBitsPerPixel = 8;
 		else if ( ms24BitColor == aEntry )
 			nBitsPerPixel = 24;
-		
+
 		if ( mbIsPixelFormat )
 		{
 			nRawFileSize = ( maSize.Width * nBitsPerPixel + 7 ) &~ 7;	// rounding up to 8 bits
@@ -694,7 +694,7 @@ ExportDialog::ExportDialog( FltCallDialogParameter& rPara,
 
 	maMfSizeX.SetModifyHdl( LINK( this, ExportDialog, UpdateHdlMtfSizeX ) );
 	maMfSizeY.SetModifyHdl( LINK( this, ExportDialog, UpdateHdlMtfSizeY ) );
-	
+
 	maNfResolution.SetModifyHdl( LINK( this, ExportDialog, UpdateHdlNfResolution ) );
 	maLbResolution.SetSelectHdl( LINK( this, ExportDialog, UpdateHdl ) );
 
@@ -742,18 +742,18 @@ void ExportDialog::createSizeControls( vcl::RowOrColumn& rLayout )
 	size_t nIndex;
 	Size aBorder( LogicToPixel( Size( 5, 5 ), MapMode( MAP_APPFONT ) ) );
     long nIndent = aBorder.Width();
- 
+
 	// Size controls
 	rLayout.addWindow( &maFlExportSize );
 
 	Size aLbMax( maLbSizeX.GetSizePixel() );
 	aLbMax.Width() = Max( aLbMax.Width(), maLbResolution.GetSizePixel().Width() );
 
-	boost::shared_ptr< vcl::LabelColumn > xSizeColumns( new vcl::LabelColumn( &rLayout ) );		
+	boost::shared_ptr< vcl::LabelColumn > xSizeColumns( new vcl::LabelColumn( &rLayout ) );
 	rLayout.addChild( xSizeColumns );
 
 	// row 1
-	boost::shared_ptr< vcl::RowOrColumn > xColumn( new vcl::RowOrColumn( xSizeColumns.get(), false ) );		
+	boost::shared_ptr< vcl::RowOrColumn > xColumn( new vcl::RowOrColumn( xSizeColumns.get(), false ) );
 	xSizeColumns->addRow( &maFtSizeX, xColumn, nIndent );
 	Size aMinSize( maMfSizeX.GetSizePixel() );
 	nIndex = xColumn->addWindow( &maMfSizeX );
@@ -762,7 +762,7 @@ void ExportDialog::createSizeControls( vcl::RowOrColumn& rLayout )
 	xColumn->setMinimumSize( nIndex, aLbMax );
 
 	// row 2
-	xColumn = boost::shared_ptr< vcl::RowOrColumn >( new vcl::RowOrColumn( xSizeColumns.get(), false ) );		
+	xColumn = boost::shared_ptr< vcl::RowOrColumn >( new vcl::RowOrColumn( xSizeColumns.get(), false ) );
 	xSizeColumns->addRow( &maFtSizeY, xColumn, nIndent );
 	nIndex = xColumn->addWindow( &maMfSizeY );
 	xColumn->setMinimumSize( nIndex, aMinSize );
@@ -772,7 +772,7 @@ void ExportDialog::createSizeControls( vcl::RowOrColumn& rLayout )
 	// row 3
 	if ( mbIsPixelFormat )		// TODO: (metafileresolutionsupport)
 	{
-		xColumn = boost::shared_ptr< vcl::RowOrColumn >( new vcl::RowOrColumn( xSizeColumns.get(), false ) );		
+		xColumn = boost::shared_ptr< vcl::RowOrColumn >( new vcl::RowOrColumn( xSizeColumns.get(), false ) );
 		xSizeColumns->addRow( &maFtResolution, xColumn, nIndent );
 		nIndex = xColumn->addWindow( &maNfResolution );
 		xColumn->setMinimumSize( nIndex, aMinSize );
@@ -796,11 +796,11 @@ void ExportDialog::createSizeControls( vcl::RowOrColumn& rLayout )
 		nUnit = UNIT_CM;
 	maLbSizeX.SelectEntryPos( static_cast< sal_uInt16 >( nUnit ) );
 
-	if ( mbIsPixelFormat )		// TODO: (metafileresolutionsupport) should be supported for vector formats also... this makes 
+	if ( mbIsPixelFormat )		// TODO: (metafileresolutionsupport) should be supported for vector formats also... this makes
 	{							// sense eg for bitmap fillings in metafiles, to preserve high dpi output
 								// (atm without special vector support the bitmaps are rendered with 96dpi)
 		sal_Int32 nResolution = mpOptionsItem->ReadInt32( String( RTL_CONSTASCII_USTRINGPARAM( "PixelExportResolution" ) ), 96 );
-		if ( nResolution < 1 ) 
+		if ( nResolution < 1 )
 			nResolution = 96;
 		maNfResolution.SetValue( nResolution );
 
@@ -861,7 +861,7 @@ void ExportDialog::createFilterOptions( vcl::RowOrColumn& rLayout )
 			sal_Int32 nColor = mpFilterOptionsItem->ReadInt32( String( RTL_CONSTASCII_USTRINGPARAM( "ColorMode" ) ), 0 );
 			if ( nColor == 1 )
 				nColor = 0;
-			else 
+			else
 				nColor = 1;
 			maLbColorDepth.InsertEntry( ms8BitGrayscale );
 			maLbColorDepth.InsertEntry( ms24BitColor );
@@ -952,7 +952,7 @@ void ExportDialog::createFilterOptions( vcl::RowOrColumn& rLayout )
 			sal_Int32 nColor = mpFilterOptionsItem->ReadInt32( String( RTL_CONSTASCII_USTRINGPARAM( "Color" ) ), 0 );
 			if ( nColor == 0 )
 				nColor = 6;
-			else 
+			else
 				nColor--;
 			maLbColorDepth.InsertEntry( ms1BitTreshold );
 			maLbColorDepth.InsertEntry( ms1BitDithered );
@@ -1035,7 +1035,7 @@ void ExportDialog::createFilterOptions( vcl::RowOrColumn& rLayout )
 			boost::shared_ptr< vcl::RowOrColumn > xRows( new vcl::RowOrColumn( xLeft.get(), true ) );
 			xIndenter->setChild( xRows );
 			xRows->addWindow( &maCbEPSPreviewTIFF );
-			xRows->addWindow( &maCbEPSPreviewEPSI );			
+			xRows->addWindow( &maCbEPSPreviewEPSI );
 			boost::shared_ptr< vcl::Spacer > xSpacer( new vcl::Spacer( xLeft.get(), 2 ) );
 			xLeft->addChild( xSpacer );
 
@@ -1079,7 +1079,7 @@ void ExportDialog::createFilterOptions( vcl::RowOrColumn& rLayout )
 			sal_Int32 nCompr = mpFilterOptionsItem->ReadInt32( String( RTL_CONSTASCII_USTRINGPARAM( "CompressionMode" ) ), 2 );
 
 			mpFilterOptionsItem->ReadInt32( String( RTL_CONSTASCII_USTRINGPARAM( "TextMode" ) ), 0 );
-		
+
 			maCbEPSPreviewTIFF.Check( ( nPreview & 1 ) != 0 );
 			maCbEPSPreviewEPSI.Check( ( nPreview & 2 ) != 0 );
 
@@ -1107,13 +1107,13 @@ void ExportDialog::createButtons( vcl::RowOrColumn& rLayout )
 	boost::shared_ptr< vcl::RowOrColumn > xButtons( new vcl::RowOrColumn( &rLayout, false ) );
 	size_t nIndex = rLayout.addChild( xButtons );
     rLayout.setBorders( nIndex, aBorder.Width(), 0, aBorder.Width(), aBorder.Width() );
-    
+
 	Size aMinSize( maBtnCancel.GetSizePixel() );
     // insert help button
     xButtons->setMinimumSize( xButtons->addWindow( &maBtnHelp ), aMinSize );
 
 	// insert a spacer, cancel and OK buttons are right aligned
-	
+
 	xSpacer.reset( new vcl::Spacer( xButtons.get(), 2 ) );
 	xButtons->addChild( xSpacer );
     xButtons->setMinimumSize( xButtons->addWindow( &maBtnOK ), aMinSize );
@@ -1286,7 +1286,7 @@ void ExportDialog::updatePreview()
 		maFbJPGPreview.SetPosPixel( aPoint );
 		maFbJPGPreview.SetSizePixel( aSize );
 		maFbJPGPreview.SetBitmap( aCroppedBitmap );
-		
+
 		SetOutputSizePixel( Size( maDialogSize.Width() * 2, maDialogSize.Height() ) );
 
 		maFlButtons.SetSizePixel( Size( maRectFlButtons.GetWidth() * 2, maRectFlButtons.GetHeight() ) );
@@ -1346,7 +1346,7 @@ void ExportDialog::updateControls()
 				case MAP_CM :	fRatio = static_cast< double >( maResolution.Width ) * 0.01; break;
 			}
 			maMfSizeX.SetValue( static_cast< sal_Int32 >( ( static_cast< double >( maSize.Width * 100 ) / fRatio ) + 0.5 ) );
-			maMfSizeY.SetValue( static_cast< sal_Int32 >( ( static_cast< double >( maSize.Height * 100 ) / fRatio ) + 0.5 ) );	
+			maMfSizeY.SetValue( static_cast< sal_Int32 >( ( static_cast< double >( maSize.Height * 100 ) / fRatio ) + 0.5 ) );
 		}
 	}
 	sal_Int32 nResolution = 0;
@@ -1432,21 +1432,21 @@ IMPL_LINK( ExportDialog, UpdateHdlMtfSizeX, void *, EMPTYARG )
 			case MAP_INCH :		maSize.Width = static_cast< sal_Int32 >( static_cast< double >( maResolution.Width ) * 0.0254 * maMfSizeX.GetValue() / 100.0 + 0.5 ); break;
 			case MAP_CM :		maSize.Width = static_cast< sal_Int32 >( static_cast< double >( maResolution.Width ) * 0.01 * maMfSizeX.GetValue() / 100.0 + 0.5 ); break;
 			case MAP_MM :		maSize.Width = static_cast< sal_Int32 >( static_cast< double >( maResolution.Width ) * 0.001 * maMfSizeX.GetValue() / 100.0 + 0.5 ); break;
-			case MAP_POINT :	maSize.Width = static_cast< sal_Int32 >( static_cast< double >( maResolution.Width ) * 0.0254 * maMfSizeX.GetValue() / 100.0 * 72 + 0.5 ); break; 
+			case MAP_POINT :	maSize.Width = static_cast< sal_Int32 >( static_cast< double >( maResolution.Width ) * 0.0254 * maMfSizeX.GetValue() / 100.0 * 72 + 0.5 ); break;
 			default:
 			case MAP_PIXEL :	maSize.Width = maMfSizeX.GetValue(); break;
 		}
 		maSize.Height = static_cast< sal_Int32 >( fRatio * maSize.Width + 0.5 );
 	}
 	else
-	{		
+	{
 		Fraction aFract( 1, 100 );
 		sal_Int32 nWidth = maMfSizeX.GetValue();
 		sal_Int32 nHeight= static_cast< sal_Int32 >( nWidth * fRatio );
 		const Size aSource( static_cast< sal_Int32 >( nWidth ), static_cast< sal_Int32 >( nHeight ) );
 		MapMode aSourceMapMode( GetMapUnit( maLbSizeX.GetSelectEntryPos() ),Point(), aFract, aFract );
 		Size aDest( LogicToLogic( aSource, aSourceMapMode, MAP_100TH_MM ) );
-		
+
 		maSize.Width = aDest.Width();
 		if ( mbPreserveAspectRatio )
 			maSize.Height = aDest.Height();
@@ -1466,14 +1466,14 @@ IMPL_LINK( ExportDialog, UpdateHdlMtfSizeY, void *, EMPTYARG )
 			case MAP_INCH :		maSize.Height = static_cast< sal_Int32 >( static_cast< double >( maResolution.Height ) * 0.0254 * maMfSizeY.GetValue() / 100.0 + 0.5 ); break;
 			case MAP_CM :		maSize.Height = static_cast< sal_Int32 >( static_cast< double >( maResolution.Height ) * 0.01 * maMfSizeY.GetValue() / 100.0 + 0.5 ); break;
 			case MAP_MM :		maSize.Height = static_cast< sal_Int32 >( static_cast< double >( maResolution.Height ) * 0.001 * maMfSizeY.GetValue() / 100.0 + 0.5 ); break;
-			case MAP_POINT :	maSize.Height = static_cast< sal_Int32 >( static_cast< double >( maResolution.Height ) * 0.0254 * maMfSizeY.GetValue() / 100.0 * 72 + 0.5 ); break; 
+			case MAP_POINT :	maSize.Height = static_cast< sal_Int32 >( static_cast< double >( maResolution.Height ) * 0.0254 * maMfSizeY.GetValue() / 100.0 * 72 + 0.5 ); break;
 			default:
 			case MAP_PIXEL :	maSize.Height = maMfSizeY.GetValue(); break;
 		}
 		maSize.Width = static_cast< sal_Int32 >( fRatio * maSize.Height + 0.5 );
 	}
 	else
-	{	
+	{
 		Fraction aFract( 1, 100 );
 		sal_Int32 nHeight= maMfSizeY.GetValue();
 		sal_Int32 nWidth = static_cast< sal_Int32 >( nHeight * fRatio );

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -87,19 +87,19 @@ static const PropertyInfo aPropertyTable[] =
 //=========================================================================
 
 class PropertySetInfo :
-		public cppu::OWeakObject,	
-        public lang::XTypeProvider, 
+		public cppu::OWeakObject,
+        public lang::XTypeProvider,
         public beans::XPropertySetInfo
 {
 	uno::Reference< lang::XMultiServiceFactory > m_xSMgr;
 	uno::Sequence< beans::Property >* 			 m_pProps;
 
 private:
-	sal_Bool queryProperty(	
+	sal_Bool queryProperty(
         const rtl::OUString& aName, beans::Property& rProp );
 
 public:
-	PropertySetInfo( 
+	PropertySetInfo(
         const uno::Reference< lang::XMultiServiceFactory >& rxSMgr,
         const PropertyInfo* pProps,
         sal_Int32 nProps );
@@ -114,7 +114,7 @@ public:
 	// XPropertySetInfo
     virtual uno::Sequence< beans::Property > SAL_CALL getProperties()
 		throw( uno::RuntimeException );
-    virtual beans::Property SAL_CALL getPropertyByName( 
+    virtual beans::Property SAL_CALL getPropertyByName(
             const rtl::OUString& aName )
 		throw( beans::UnknownPropertyException, uno::RuntimeException );
     virtual sal_Bool SAL_CALL hasPropertyByName( const rtl::OUString& Name )
@@ -191,11 +191,11 @@ struct ResultSet_Impl
 	sal_Bool 						 	m_bWasNull;
 	sal_Bool 						 	m_bAfterLast;
 
-	inline ResultSet_Impl( 
+	inline ResultSet_Impl(
         const uno::Reference< lang::XMultiServiceFactory >& rxSMgr,
         const uno::Sequence< beans::Property >& rProperties,
         const rtl::Reference< ResultSetDataSupplier >& rDataSupplier,
-        const uno::Reference< com::sun::star::ucb::XCommandEnvironment >& 
+        const uno::Reference< com::sun::star::ucb::XCommandEnvironment >&
             rxEnv );
 	inline ~ResultSet_Impl();
 };
@@ -232,11 +232,11 @@ inline ResultSet_Impl::~ResultSet_Impl()
 //=========================================================================
 //=========================================================================
 
-ResultSet::ResultSet( 
+ResultSet::ResultSet(
     const uno::Reference< lang::XMultiServiceFactory >& rxSMgr,
     const uno::Sequence< beans::Property >& rProperties,
     const rtl::Reference< ResultSetDataSupplier >& rDataSupplier )
-: m_pImpl( new ResultSet_Impl( 
+: m_pImpl( new ResultSet_Impl(
                rxSMgr,
                rProperties,
                rDataSupplier,
@@ -246,7 +246,7 @@ ResultSet::ResultSet(
 }
 
 //=========================================================================
-ResultSet::ResultSet( 
+ResultSet::ResultSet(
     const uno::Reference< lang::XMultiServiceFactory >& rxSMgr,
     const uno::Sequence< beans::Property >& rProperties,
     const rtl::Reference< ResultSetDataSupplier >& rDataSupplier,
@@ -1143,7 +1143,7 @@ ResultSet::getCharacterStream( sal_Int32 columnIndex )
 
 //=========================================================================
 // virtual
-uno::Any SAL_CALL ResultSet::getObject( 
+uno::Any SAL_CALL ResultSet::getObject(
         sal_Int32 columnIndex,
         const uno::Reference< container::XNameAccess >& typeMap )
 	throw( sdbc::SQLException, uno::RuntimeException )
@@ -1168,7 +1168,7 @@ uno::Any SAL_CALL ResultSet::getObject(
 
 //=========================================================================
 // virtual
-uno::Reference< sdbc::XRef > SAL_CALL 
+uno::Reference< sdbc::XRef > SAL_CALL
 ResultSet::getRef( sal_Int32 columnIndex )
 	throw( sdbc::SQLException, uno::RuntimeException )
 {
@@ -1192,7 +1192,7 @@ ResultSet::getRef( sal_Int32 columnIndex )
 
 //=========================================================================
 // virtual
-uno::Reference< sdbc::XBlob > SAL_CALL 
+uno::Reference< sdbc::XBlob > SAL_CALL
 ResultSet::getBlob( sal_Int32 columnIndex )
 	throw( sdbc::SQLException, uno::RuntimeException )
 {
@@ -1216,7 +1216,7 @@ ResultSet::getBlob( sal_Int32 columnIndex )
 
 //=========================================================================
 // virtual
-uno::Reference< sdbc::XClob > SAL_CALL 
+uno::Reference< sdbc::XClob > SAL_CALL
 ResultSet::getClob( sal_Int32 columnIndex )
 	throw( sdbc::SQLException, uno::RuntimeException )
 {
@@ -1240,7 +1240,7 @@ ResultSet::getClob( sal_Int32 columnIndex )
 
 //=========================================================================
 // virtual
-uno::Reference< sdbc::XArray > SAL_CALL 
+uno::Reference< sdbc::XArray > SAL_CALL
 ResultSet::getArray( sal_Int32 columnIndex )
 	throw( sdbc::SQLException, uno::RuntimeException )
 {
@@ -1295,7 +1295,7 @@ rtl::OUString SAL_CALL ResultSet::queryContentIdentifierString()
 
 //=========================================================================
 // virtual
-uno::Reference< com::sun::star::ucb::XContentIdentifier > SAL_CALL 
+uno::Reference< com::sun::star::ucb::XContentIdentifier > SAL_CALL
 ResultSet::queryContentIdentifier()
 	throw( uno::RuntimeException )
 {
@@ -1308,7 +1308,7 @@ ResultSet::queryContentIdentifier()
 
 //=========================================================================
 // virtual
-uno::Reference< com::sun::star::ucb::XContent > SAL_CALL 
+uno::Reference< com::sun::star::ucb::XContent > SAL_CALL
 ResultSet::queryContent()
 	throw( uno::RuntimeException )
 {
@@ -1325,7 +1325,7 @@ ResultSet::queryContent()
 //=========================================================================
 
 // virtual
-uno::Reference< beans::XPropertySetInfo > SAL_CALL 
+uno::Reference< beans::XPropertySetInfo > SAL_CALL
 ResultSet::getPropertySetInfo()
 	throw( uno::RuntimeException )
 {
@@ -1372,7 +1372,7 @@ void SAL_CALL ResultSet::setPropertyValue( const rtl::OUString& aPropertyName,
 
 //=========================================================================
 // virtual
-uno::Any SAL_CALL ResultSet::getPropertyValue( 
+uno::Any SAL_CALL ResultSet::getPropertyValue(
         const rtl::OUString& PropertyName )
 	throw( beans::UnknownPropertyException,
 		   lang::WrappedTargetException,
@@ -1529,7 +1529,7 @@ void ResultSet::rowCountChanged( sal_uInt32 nOld, sal_uInt32 nNew )
 		return;
 
 	propertyChanged(
-		beans::PropertyChangeEvent( 
+		beans::PropertyChangeEvent(
             static_cast< cppu::OWeakObject * >( this ),
             rtl::OUString::createFromAscii( "RowCount" ),
             sal_False,
@@ -1545,7 +1545,7 @@ void ResultSet::rowCountFinal()
 		return;
 
 	propertyChanged(
-		beans::PropertyChangeEvent( 
+		beans::PropertyChangeEvent(
             static_cast< cppu::OWeakObject * >( this ),
             rtl::OUString::createFromAscii( "IsRowCountFinal" ),
             sal_False,
@@ -1561,7 +1561,7 @@ const uno::Sequence< beans::Property >&	ResultSet::getProperties()
 }
 
 //=========================================================================
-const uno::Reference< com::sun::star::ucb::XCommandEnvironment >& 
+const uno::Reference< com::sun::star::ucb::XCommandEnvironment >&
 ResultSet::getEnvironment()
 {
 	return m_pImpl->m_xEnv;
@@ -1648,7 +1648,7 @@ uno::Sequence< beans::Property > SAL_CALL PropertySetInfo::getProperties()
 
 //=========================================================================
 // virtual
-beans::Property SAL_CALL PropertySetInfo::getPropertyByName( 
+beans::Property SAL_CALL PropertySetInfo::getPropertyByName(
         const rtl::OUString& aName )
 	throw( beans::UnknownPropertyException, uno::RuntimeException )
 {
@@ -1661,7 +1661,7 @@ beans::Property SAL_CALL PropertySetInfo::getPropertyByName(
 
 //=========================================================================
 // virtual
-sal_Bool SAL_CALL PropertySetInfo::hasPropertyByName( 
+sal_Bool SAL_CALL PropertySetInfo::hasPropertyByName(
         const rtl::OUString& Name )
 	throw( uno::RuntimeException )
 {

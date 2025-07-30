@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -61,15 +61,15 @@ namespace dxcanvas
         mbShowSpriteBounds( false )
     {
     }
-    
+
     void SpriteHelper::init( const geometry::RealSize2D&	 rSpriteSize,
                              const SpriteCanvasRef&			 rSpriteCanvas,
                              const IDXRenderModuleSharedPtr& rRenderModule,
                              const DXSurfaceBitmapSharedPtr	 rBitmap,
                              bool							 bShowSpriteBounds )
     {
-        ENSURE_OR_THROW( rSpriteCanvas.get() && 
-                          rRenderModule && 
+        ENSURE_OR_THROW( rSpriteCanvas.get() &&
+                          rRenderModule &&
                           rBitmap,
                           "SpriteHelper::init(): Invalid device, sprite canvas or surface" );
 
@@ -134,7 +134,7 @@ namespace dxcanvas
 			// background buffer.
 
 			// log output pos in device pixel
-			VERBOSE_TRACE( "SpriteHelper::redraw(): output pos is (%f, %f)", 
+			VERBOSE_TRACE( "SpriteHelper::redraw(): output pos is (%f, %f)",
                            rPos.getX(),
                            rPos.getY() );
 
@@ -147,7 +147,7 @@ namespace dxcanvas
 			io_bSurfaceDirty = false; // state taken, and processed.
 
 			::basegfx::B2DPolyPolygon	aClipPath; // empty for no clip
-			bool						bIsClipRectangular( false ); // false, if no 
+			bool						bIsClipRectangular( false ); // false, if no
 																	// clip, or clip
 																	// is complex
 
@@ -186,10 +186,10 @@ namespace dxcanvas
 				// apply a simple rect clip
 				// ========================
 
-				::basegfx::B2DRectangle aClipBounds( 
+				::basegfx::B2DRectangle aClipBounds(
 					::basegfx::tools::getRange( aClipPath ) );
 				aClipBounds.intersect( aSourceRect );
-	             
+
 				mpBitmap->draw(fAlpha,rPos,aClipBounds,rTransform);
 			}
 			else

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -662,13 +662,13 @@ void OSaxWriterTest::testExceptions( const XExtendedDocumentHandlerRef & r )
 	}
 
 	r->startDocument();
-	
+
 	r->startElement( L"huhu" , rList );
 	r->startCDATA();
 
 	{
 		BOOL bException = TRUE;
-		try { 
+		try {
 			r->startElement( L"huhu" , rList );
 			bException = FALSE;
 		}
@@ -677,7 +677,7 @@ void OSaxWriterTest::testExceptions( const XExtendedDocumentHandlerRef & r )
 		}
 		ERROR_ASSERT( bException , "expected exception not thrown !" );
 	}
-	
+
 	r->endCDATA();
 	r->endElement( L"hi" );
 
@@ -689,22 +689,22 @@ void OSaxWriterTest::testDTD(const  XExtendedDocumentHandlerRef &r )
 {
 	OFileWriter *pw = new OFileWriter("outputDTD.xml");
 	AttributeListImpl *pList = new AttributeListImpl;
-	
+
 	XAttributeListRef rList( (XAttributeList *) pList , USR_QUERY );
 	XOutputStreamRef ref( ( XOutputStream * ) pw , USR_QUERY );
-	
+
 	XActiveDataSourceRef source( r , USR_QUERY );
-	
+
 	ERROR_ASSERT( ref.is() , "no output stream" );
 	ERROR_ASSERT( source.is() , "no active data source" );
-	
+
 	source->setOutputStream( ref );
 
-	
+
 	r->startDocument();
 	r->unknown( L"<!DOCTYPE iCalendar >\n" );
 	r->startElement( L"huhu" , rList );
-	
+
 	r->endElement( L"huhu" );
 	r->endDocument();
 }
@@ -718,15 +718,15 @@ void OSaxWriterTest::testPerformance(const  XExtendedDocumentHandlerRef &r )
 	                        L"wohl > Zeilenumbrueche halbwegs richtig macht oder ob er die Zeile "
 	                        L"bis zum bitteren Ende schreibt.";
 
-	
+
 	XAttributeListRef rList( (XAttributeList *) pList , USR_QUERY );
 	XOutputStreamRef ref( ( XOutputStream * ) pw , USR_QUERY );
-	
+
 	XActiveDataSourceRef source( r , USR_QUERY );
-	
+
 	ERROR_ASSERT( ref.is() , "no output stream" );
 	ERROR_ASSERT( source.is() , "no active data source" );
-	
+
 	source->setOutputStream( ref );
 
 	TimeValue aStartTime, aEndTime;
@@ -746,7 +746,7 @@ void OSaxWriterTest::testPerformance(const  XExtendedDocumentHandlerRef &r )
 			r->startElement( L"huhu" , rList );
 			r->characters( testParagraph );
 //			writeParagraph( r , testParagraph );
-			
+
 			r->ignorableWhitespace( L"");
 			r->endElement( L"huhu" );
 		}
@@ -756,7 +756,7 @@ void OSaxWriterTest::testPerformance(const  XExtendedDocumentHandlerRef &r )
 		r->ignorableWhitespace( L"");
 		r->endElement( UString( L"tag" ) + UString::valueOf( i2 ) );
 	}
-	
+
 	r->endDocument();
 
 	osl_getSystemTime( &aEndTime );

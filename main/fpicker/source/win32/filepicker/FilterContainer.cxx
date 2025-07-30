@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -49,7 +49,7 @@ using ::rtl::OUString;
 // ctor
 //-------------------------------------------------------------------------------------
 
-CFilterContainer::CFilterContainer( sal_Int32 initSize ) : 
+CFilterContainer::CFilterContainer( sal_Int32 initSize ) :
 	m_vFilters( initSize ),
 	m_bIterInitialized( sal_False )
 {
@@ -59,12 +59,12 @@ CFilterContainer::CFilterContainer( sal_Int32 initSize ) :
 // add a name/filter pair
 //-----------------------------------------------------------------------------------------
 
-sal_Bool SAL_CALL CFilterContainer::addFilter( 
+sal_Bool SAL_CALL CFilterContainer::addFilter(
 	const OUString& aName, const OUString& aFilter, sal_Bool bAllowDuplicates )
 {
 	// check if the filter is already in the container
 	sal_Int32 pos = -1;
-	
+
 	if ( !bAllowDuplicates )
 	{
 		pos = getFilterTagPos( aName );
@@ -131,7 +131,7 @@ sal_Bool SAL_CALL CFilterContainer::getFilter( const OUString& aName, OUString& 
 {
 	OSL_PRECOND( m_vFilters.size() > 0, "Empty filter container" );
 
-	sal_Int32 pos = getFilterTagPos( aName );	
+	sal_Int32 pos = getFilterTagPos( aName );
 
 	try
 	{
@@ -148,7 +148,7 @@ sal_Bool SAL_CALL CFilterContainer::getFilter( const OUString& aName, OUString& 
 }
 
 //-----------------------------------------------------------------------------------------
-// 
+//
 //-----------------------------------------------------------------------------------------
 
 sal_Bool SAL_CALL CFilterContainer::getFilter( sal_Int32 aIndex, OUString& theFilter ) const
@@ -169,7 +169,7 @@ sal_Bool SAL_CALL CFilterContainer::getFilter( sal_Int32 aIndex, OUString& theFi
 }
 
 //-----------------------------------------------------------------------------------------
-// 
+//
 //-----------------------------------------------------------------------------------------
 
 sal_Int32 SAL_CALL CFilterContainer::getFilterPos( const OUString& aName ) const
@@ -184,14 +184,14 @@ sal_Int32 SAL_CALL CFilterContainer::getFilterPos( const OUString& aName ) const
 sal_Int32 SAL_CALL CFilterContainer::getFilterTagPos( const OUString& aName ) const
 {
 	if ( m_vFilters.size( ) > 0 )
-	{		
+	{
 		sal_Int32 i = 0;
 		FILTER_VECTOR_T::const_iterator iter;
 		FILTER_VECTOR_T::const_iterator iter_end = m_vFilters.end( );
 
 		for ( iter = m_vFilters.begin( ); iter != iter_end; ++iter, ++i )
 			if ( ( *iter ).first.equalsIgnoreAsciiCase( aName ) )
-				return i;				
+				return i;
 	}
 
 	return -1;
@@ -242,13 +242,13 @@ void SAL_CALL CFilterContainer::setCurrentFilter( const ::rtl::OUString& aName )
 
 //-------------------------------------------------------------------
 // calculates the length of a '\0' separated filter, that means
-// length of the name + '\0' + length of the filter string + 
+// length of the name + '\0' + length of the filter string +
 // a trailing '\0'
 //-------------------------------------------------------------------
 
 static sal_uInt32 _getLengthFilter( CFilterContainer::FILTER_ENTRY_T aFilterEntry )
 {
-	return ( 
+	return (
 		aFilterEntry.first.getLength( )  + 1 +
 		aFilterEntry.second.getLength( ) + 1 );
 }
@@ -281,8 +281,8 @@ void _wcsmemcpy( sal_Unicode* pDest, const sal_Unicode* pSrc, sal_uInt32 nLength
 }
 
 //-------------------------------------------------------------------
-// a helper trivial helper function to create a filter buffer in the 
-// format the Win32 API requires, 
+// a helper trivial helper function to create a filter buffer in the
+// format the Win32 API requires,
 // e.g. "Text\0*.txt\0Doc\0*.doc;*xls\0\0"
 //-------------------------------------------------------------------
 
@@ -308,11 +308,11 @@ rtl::OUString SAL_CALL makeWinFilterBuffer( CFilterContainer& aFilterContainer )
 
 	while( aFilterContainer.getNextFilter( nextFilter ) )
 	{
-		_wcsmemcpy( 
-			pBuff + memPos, 
+		_wcsmemcpy(
+			pBuff + memPos,
 			nextFilter.first.getStr( ),
 			nextFilter.first.getLength( ) );
-				
+
 		memPos += nextFilter.first.getLength( ) + 1;
 
 		_wcsmemcpy(

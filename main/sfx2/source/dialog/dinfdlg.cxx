@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -1609,7 +1609,7 @@ public:
     util::Duration  GetDuration() const;
 };
 /*-- 20.11.2009 15:40:46---------------------------------------------------
-    
+
   -----------------------------------------------------------------------*/
 DurationDialog_Impl::DurationDialog_Impl(
     Window* pParent, const util::Duration& rDuration)
@@ -1672,7 +1672,7 @@ util::Duration  DurationDialog_Impl::GetDuration() const
   -----------------------------------------------------------------------*/
 CustomPropertiesDurationField::CustomPropertiesDurationField( Window* pParent, const ResId& rResId, CustomPropertyLine* pLine ) :
         Edit( pParent, rResId ), m_pLine( pLine )
-        
+
 {
     SetDuration( util::Duration(false, 0, 0, 0, 0, 0, 0, 0) );
 }
@@ -1701,8 +1701,8 @@ void CustomPropertiesDurationField::RequestHelp( const HelpEvent& rHEvt )
 /*-- 20.11.2009 15:30:58---------------------------------------------------
 
   -----------------------------------------------------------------------*/
-void CustomPropertiesDurationField::SetDuration( const util::Duration& rDuration ) 
-{ 
+void CustomPropertiesDurationField::SetDuration( const util::Duration& rDuration )
+{
     m_aDuration = rDuration;
     String sText(rDuration.Negative ? '-' : '+');
     sText += m_pLine->m_sDurationFormat;
@@ -1718,7 +1718,7 @@ void CustomPropertiesDurationField::SetDuration( const util::Duration& rDuration
 
   -----------------------------------------------------------------------*/
 CustomPropertiesEditButton::CustomPropertiesEditButton( Window* pParent, const ResId& rResId, CustomPropertyLine* pLine ) :
-        PushButton( pParent, rResId ), m_pLine( pLine ) 
+        PushButton( pParent, rResId ), m_pLine( pLine )
 {
     SetClickHdl( LINK( this, CustomPropertiesEditButton, ClickHdl ));
 }
@@ -2036,8 +2036,8 @@ void CustomPropertiesWindow::InitControls( HeaderBar* pHeaderBar, const ScrollBa
             aSize.Width() = nWidth;
             aPos.X() = aRect.getX() + ( nOffset / 2 );
             m_aYesNoButton.SetPosSizePixel( aPos, aSize );
-            aSize.Width() /= 2; 
-            aSize.Width() -= 2; 
+            aSize.Width() /= 2;
+            aSize.Width() -= 2;
             m_aDateField.SetPosSizePixel( aPos, aSize );
             aPos.X() += aSize.Width() + 4;
             m_aTimeField.SetPosSizePixel( aPos, aSize );
@@ -2084,12 +2084,12 @@ void CustomPropertiesWindow::AddLine( const ::rtl::OUString& sName, Any& rAny )
     long nPos = GetVisibleLineCount() * GetLineHeight();
     m_aCustomPropertiesLines.push_back( pNewLine );
     Window* pWindows[] = {  &m_aNameBox, &m_aTypeBox, &m_aValueEdit,
-                            &m_aDateField, &m_aTimeField, 
+                            &m_aDateField, &m_aTimeField,
                             &m_aDurationField, &m_aEditButton,
                             &m_aYesNoButton, &m_aRemoveButton, NULL };
     Window* pNewWindows[] =
         {   &pNewLine->m_aNameBox, &pNewLine->m_aTypeBox, &pNewLine->m_aValueEdit,
-            &pNewLine->m_aDateField, &pNewLine->m_aTimeField, 
+            &pNewLine->m_aDateField, &pNewLine->m_aTimeField,
             &pNewLine->m_aDurationField, &pNewLine->m_aEditButton,
             &pNewLine->m_aYesNoButton, &pNewLine->m_aRemoveButton, NULL };
     Window** pCurrent = pWindows;
@@ -2138,7 +2138,7 @@ void CustomPropertiesWindow::AddLine( const ::rtl::OUString& sName, Any& rAny )
     else if ( rAny >>= aTmpDate )
     {
         nType = CUSTOM_TYPE_DATE;
-        pNewLine->m_aDateField.SetDate( Date( aTmpDate.Day, aTmpDate.Month, aTmpDate.Year ) ); 
+        pNewLine->m_aDateField.SetDate( Date( aTmpDate.Day, aTmpDate.Month, aTmpDate.Year ) );
 
     }
     else if ( rAny >>= aTmpDuration )
@@ -2288,14 +2288,14 @@ Sequence< beans::PropertyValue > CustomPropertiesWindow::GetCustomProperties() c
             {
                 Date aTmpDate = pLine->m_aDateField.GetDate();
                 Time aTmpTime = pLine->m_aTimeField.GetTime();
-                util::DateTime aDateTime(aTmpTime.Get100Sec(), aTmpTime.GetSec(), aTmpTime.GetMin(), aTmpTime.GetHour(), 
+                util::DateTime aDateTime(aTmpTime.Get100Sec(), aTmpTime.GetSec(), aTmpTime.GetMin(), aTmpTime.GetHour(),
                         aTmpDate.GetDay(), aTmpDate.GetMonth(), aTmpDate.GetYear() );
                 aPropertiesSeq[i].Value <<= aDateTime;
-            }    
+            }
             else if ( CUSTOM_TYPE_DURATION == nType )
             {
                 aPropertiesSeq[i].Value <<= pLine->m_aDurationField.GetDuration();
-            }    
+            }
             else if ( CUSTOM_TYPE_DATE == nType )
             {
                 Date aTmpDate = pLine->m_aDateField.GetDate();
@@ -2407,7 +2407,7 @@ SfxCustomPropertiesPage::SfxCustomPropertiesPage( Window* pParent, const SfxItem
     m_aPropertiesCtrl   ( this, SfxResId( CTRL_PROPERTIES ) ),
     m_aAddBtn           ( this, SfxResId( BTN_ADD ) ),
     m_aPropertiesFT     ( this, SfxResId( FT_PROPERTIES ) )
-    
+
 {
     FreeResource();
 

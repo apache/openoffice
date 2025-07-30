@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -56,17 +56,17 @@ SFX_IMPL_DOCKINGWINDOW(LeftPaneDrawChildWindow, SID_LEFT_PANE_DRAW)
 
 PaneChildWindow::PaneChildWindow (
     ::Window* pParentWindow,
-    sal_uInt16 nId, 
-    SfxBindings* pBindings, 
+    sal_uInt16 nId,
+    SfxBindings* pBindings,
     SfxChildWinInfo* pInfo,
     const sal_uInt16 nDockWinTitleResId,
     const sal_uInt16 nTitleBarResId,
-    SfxChildAlignment eAlignment) 
+    SfxChildAlignment eAlignment)
     : SfxChildWindow (pParentWindow, nId)
 {
     pWindow = new PaneDockingWindow (
-        pBindings, 
-        this, 
+        pBindings,
+        this,
         pParentWindow,
         SdResId( nDockWinTitleResId ),
         String( SdResId( nTitleBarResId ) ) );
@@ -104,9 +104,9 @@ PaneChildWindow::~PaneChildWindow (void)
 
 LeftPaneImpressChildWindow::LeftPaneImpressChildWindow (
     ::Window* pParentWindow,
-    sal_uInt16 nId, 
-    SfxBindings* pBindings, 
-    SfxChildWinInfo* pInfo) 
+    sal_uInt16 nId,
+    SfxBindings* pBindings,
+    SfxChildWinInfo* pInfo)
     : PaneChildWindow(
         pParentWindow,
         nId,
@@ -125,9 +125,9 @@ LeftPaneImpressChildWindow::LeftPaneImpressChildWindow (
 
 LeftPaneDrawChildWindow::LeftPaneDrawChildWindow (
     ::Window* pParentWindow,
-    sal_uInt16 nId, 
-    SfxBindings* pBindings, 
-    SfxChildWinInfo* pInfo) 
+    sal_uInt16 nId,
+    SfxBindings* pBindings,
+    SfxChildWinInfo* pInfo)
     : PaneChildWindow(
         pParentWindow,
         nId,

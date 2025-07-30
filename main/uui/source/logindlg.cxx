@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -162,7 +162,7 @@ void LoginDialog::HideControls_Impl( sal_uInt16 nFlags )
 
 	if ( bAccountHide )
 	{
-		long nOffset = aAccountED.GetPosPixel().Y() - 
+		long nOffset = aAccountED.GetPosPixel().Y() -
                        aPasswordED.GetPosPixel().Y();
         lcl_Move( aSavePasswdBtn, nOffset );
         lcl_Move( aUseSysCredsCB, nOffset );
@@ -178,7 +178,7 @@ void LoginDialog::HideControls_Impl( sal_uInt16 nFlags )
 
     if ( bUseSysCredsHide )
 	{
-		long nOffset = aUseSysCredsCB.GetPosPixel().Y() - 
+		long nOffset = aUseSysCredsCB.GetPosPixel().Y() -
                        aSavePasswdBtn.GetPosPixel().Y();
         lcl_Move( aButtonsFL, nOffset );
         lcl_Move( aOKBtn, nOffset );
@@ -309,15 +309,15 @@ LoginDialog::LoginDialog
 
 LoginDialog::~LoginDialog()
 {
-}    
+}
 
 // -----------------------------------------------------------------------
 
 void LoginDialog::SetUseSystemCredentials( sal_Bool bUse )
-{ 
+{
     if ( aUseSysCredsCB.IsVisible() )
     {
-        aUseSysCredsCB.Check( bUse ); 
+        aUseSysCredsCB.Check( bUse );
         EnableUseSysCredsControls_Impl( bUse );
     }
 }

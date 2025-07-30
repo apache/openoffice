@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -412,7 +412,7 @@ ScGridWindow::ScGridWindow( Window* pParent, ScViewData* pData, ScSplitPos eWhic
 			pFilterBox( NULL ),
 			pFilterFloat( NULL ),
             mpDPFieldPopup(NULL),
-            mpFilterButton(NULL), 
+            mpFilterButton(NULL),
 			nCursorHideCount( 0 ),
 			bMarking( sal_False ),
 			nButtonDown( 0 ),
@@ -498,7 +498,7 @@ void ScGridWindow::ClickExtern()
         {
             break;
         }
-    
+
         DELETEZ(pFilterBox);
         DELETEZ(pFilterFloat);
     }
@@ -1132,7 +1132,7 @@ void ScGridWindow::DoAutoFilterMenue( SCCOL nCol, SCROW nRow, sal_Bool bDataSele
 					sal_uInt16 nCount = aStrings.GetCount();
 					for (i = 0; ((i < nCount) && ( LISTBOX_ENTRY_NOTFOUND == nSelPos)); i++)
 					{
-						if ( aStrings.Compare(aStrings[i], pNew)==0 ) 
+						if ( aStrings.Compare(aStrings[i], pNew)==0 )
 							nSelPos = i;
 					}
 				}
@@ -1737,7 +1737,7 @@ void ScGridWindow::HandleMouseButtonDown( const MouseEvent& rMEvt )
 									pDoc->GetAttr( nPosX, nPosY, nTab, ATTR_MERGE_FLAG );
 		if( pRealPosAttr->HasAutoFilter() )
 		{
-			SC_MOD()->InputEnterHandler();	
+			SC_MOD()->InputEnterHandler();
 			if (DoAutoFilterButton( nRealPosX, nRealPosY, rMEvt))
                 return;
 		}
@@ -2204,7 +2204,7 @@ void __EXPORT ScGridWindow::MouseButtonUp( const MouseEvent& rMEvt )
 		{
 			nMouseStatus = SC_GM_NONE;				// keinen Doppelklick anfangen
 			ScGlobal::OpenURL( aUrl, aTarget );
-			
+
 			// fire worksheet_followhyperlink event
             uno::Reference< script::vba::XVBAEventProcessor > xVbaEvents = pDoc->GetVbaEventProcessor();
 			if( xVbaEvents.is() ) try
@@ -3617,7 +3617,7 @@ sal_Int8 ScGridWindow::AcceptDrop( const AcceptDropEvent& rEvt )
 		else
 		{
 			sal_Int8 nMyAction = rEvt.mnAction;
-			
+
 			// clear DND_ACTION_LINK when other actions are set. The usage below cannot handle
 			// multiple set values
 			if((nMyAction & DND_ACTION_LINK) && (nMyAction & (DND_ACTION_COPYMOVE)))
@@ -5376,7 +5376,7 @@ void ScGridWindow::UpdateCursorOverlay()
             const Color aCursorColor( SC_MOD()->GetColorConfig().GetColorValue(svtools::FONTCOLOR).nColor );
 			std::vector< basegfx::B2DRange > aRanges;
 			const basegfx::B2DHomMatrix aTransform(GetInverseViewTransformation());
-			
+
 			for(sal_uInt32 a(0); a < aPixelRects.size(); a++)
 			{
 				const Rectangle aRA(aPixelRects[a]);
@@ -5384,10 +5384,10 @@ void ScGridWindow::UpdateCursorOverlay()
 				aRB.transform(aTransform);
 				aRanges.push_back(aRB);
 			}
-			
+
 			sdr::overlay::OverlayObject* pOverlay = new sdr::overlay::OverlaySelection(
-				sdr::overlay::OVERLAY_SOLID, 
-				aCursorColor, 
+				sdr::overlay::OVERLAY_SOLID,
+				aCursorColor,
 				aRanges,
                 false);
 
@@ -5426,7 +5426,7 @@ void ScGridWindow::UpdateSelectionOverlay()
 		{
 			std::vector< basegfx::B2DRange > aRanges;
 			const basegfx::B2DHomMatrix aTransform(GetInverseViewTransformation());
-			
+
 			for(sal_uInt32 a(0); a < aPixelRects.size(); a++)
 			{
 				const Rectangle aRA(aPixelRects[a]);
@@ -5440,8 +5440,8 @@ void ScGridWindow::UpdateSelectionOverlay()
             const Color aHighlight(aSvtOptionsDrawinglayer.getHilightColor());
 
 			sdr::overlay::OverlayObject* pOverlay = new sdr::overlay::OverlaySelection(
-				sdr::overlay::OVERLAY_TRANSPARENT, 
-				aHighlight, 
+				sdr::overlay::OVERLAY_TRANSPARENT,
+				aHighlight,
 				aRanges,
                 true);
 
@@ -5500,7 +5500,7 @@ void ScGridWindow::UpdateAutoFillOverlay()
         aFillPos.Y() += nSizeYPix;
         aFillPos.Y() -= 2;
         mpAutoFillRect.reset(new Rectangle(aFillPos, Size(6, 6)));
-	
+
 		// #i70788# get the OverlayManager safely
 		::sdr::overlay::OverlayManager* pOverlayManager = getOverlayManager();
 
@@ -5510,13 +5510,13 @@ void ScGridWindow::UpdateAutoFillOverlay()
 			std::vector< basegfx::B2DRange > aRanges;
 			const basegfx::B2DHomMatrix aTransform(GetInverseViewTransformation());
             basegfx::B2DRange aRB(mpAutoFillRect->Left(), mpAutoFillRect->Top(), mpAutoFillRect->Right() + 1, mpAutoFillRect->Bottom() + 1);
-			
+
 			aRB.transform(aTransform);
 			aRanges.push_back(aRB);
 
-			sdr::overlay::OverlayObject* pOverlay = new sdr::overlay::OverlaySelection( 
-				sdr::overlay::OVERLAY_SOLID, 
-				aHandleColor, 
+			sdr::overlay::OverlayObject* pOverlay = new sdr::overlay::OverlaySelection(
+				sdr::overlay::OVERLAY_SOLID,
+				aHandleColor,
 				aRanges,
                 false);
 
@@ -5637,7 +5637,7 @@ void ScGridWindow::UpdateDragRectOverlay()
 			// Color aHighlight = GetSettings().GetStyleSettings().GetHighlightColor();
 			std::vector< basegfx::B2DRange > aRanges;
 			const basegfx::B2DHomMatrix aTransform(GetInverseViewTransformation());
-			
+
 			for(sal_uInt32 a(0); a < aPixelRects.size(); a++)
 			{
 				const Rectangle aRA(aPixelRects[a]);
@@ -5646,8 +5646,8 @@ void ScGridWindow::UpdateDragRectOverlay()
 				aRanges.push_back(aRB);
 			}
 
-			sdr::overlay::OverlayObject* pOverlay = new sdr::overlay::OverlaySelection( 
-				sdr::overlay::OVERLAY_INVERT, 
+			sdr::overlay::OverlayObject* pOverlay = new sdr::overlay::OverlaySelection(
+				sdr::overlay::OVERLAY_INVERT,
 				Color(COL_BLACK),
 				aRanges,
                 false);
@@ -5688,13 +5688,13 @@ void ScGridWindow::UpdateHeaderOverlay()
 			std::vector< basegfx::B2DRange > aRanges;
 			const basegfx::B2DHomMatrix aTransform(GetInverseViewTransformation());
 			basegfx::B2DRange aRB(aInvertRect.Left(), aInvertRect.Top(), aInvertRect.Right() + 1, aInvertRect.Bottom() + 1);
-			
+
 			aRB.transform(aTransform);
 			aRanges.push_back(aRB);
 
 			sdr::overlay::OverlayObject* pOverlay = new sdr::overlay::OverlaySelection(
-				sdr::overlay::OVERLAY_INVERT, 
-				Color(COL_BLACK), 
+				sdr::overlay::OVERLAY_INVERT,
+				Color(COL_BLACK),
 				aRanges,
                 false);
 
@@ -5758,13 +5758,13 @@ void ScGridWindow::UpdateShrinkOverlay()
 			std::vector< basegfx::B2DRange > aRanges;
 			const basegfx::B2DHomMatrix aTransform(GetInverseViewTransformation());
 			basegfx::B2DRange aRB(aPixRect.Left(), aPixRect.Top(), aPixRect.Right() + 1, aPixRect.Bottom() + 1);
-			
+
 			aRB.transform(aTransform);
 			aRanges.push_back(aRB);
 
 			sdr::overlay::OverlayObject* pOverlay = new sdr::overlay::OverlaySelection(
-				sdr::overlay::OVERLAY_INVERT, 
-				Color(COL_BLACK), 
+				sdr::overlay::OVERLAY_INVERT,
+				Color(COL_BLACK),
 				aRanges,
                 false);
 

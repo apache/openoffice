@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -73,7 +73,7 @@ static SvXMLTokenMapEntry aChildren[] =
 };
 
 
-XFormsModelContext::XFormsModelContext( SvXMLImport& rImport, 
+XFormsModelContext::XFormsModelContext( SvXMLImport& rImport,
                                         sal_uInt16 nPrefix,
                                         const OUString& rLocalName ) :
     TokenContext( rImport, nPrefix, rLocalName, aAttributes, aChildren ),
@@ -92,8 +92,8 @@ Reference<XPropertySet> XFormsModelContext::getModel()
 }
 
 
-void XFormsModelContext::HandleAttribute( 
-    sal_uInt16 nToken, 
+void XFormsModelContext::HandleAttribute(
+    sal_uInt16 nToken,
     const OUString& rValue )
 {
     switch( nToken )
@@ -108,9 +108,9 @@ void XFormsModelContext::HandleAttribute(
         DBG_ERROR( "this should not happen" );
         break;
     }
-}        
+}
 
-SvXMLImportContext* XFormsModelContext::HandleChild( 
+SvXMLImportContext* XFormsModelContext::HandleChild(
     sal_uInt16 nToken,
     sal_uInt16 nPrefix,
     const OUString& rLocalName,
@@ -125,17 +125,17 @@ SvXMLImportContext* XFormsModelContext::HandleChild(
                                               mxModel );
         break;
     case XML_BIND:
-        pContext = new XFormsBindContext( GetImport(), nPrefix, rLocalName, 
+        pContext = new XFormsBindContext( GetImport(), nPrefix, rLocalName,
                                           mxModel );
         break;
     case XML_SUBMISSION:
-        pContext = new XFormsSubmissionContext( GetImport(), nPrefix, 
+        pContext = new XFormsSubmissionContext( GetImport(), nPrefix,
                                                 rLocalName, mxModel );
         break;
     case XML_SCHEMA:
-        pContext = new SchemaContext( 
+        pContext = new SchemaContext(
             GetImport(), nPrefix, rLocalName,
-            Reference<com::sun::star::xforms::XModel>( mxModel, 
+            Reference<com::sun::star::xforms::XModel>( mxModel,
                                                        UNO_QUERY_THROW )
                 ->getDataTypeRepository() );
         break;

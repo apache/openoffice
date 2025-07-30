@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -45,8 +45,8 @@
 #include <dialmgr.hxx>
 #include "svx/dlgutil.hxx"
 #include <svx/strarray.hxx>
-#include <sfx2/request.hxx> //add CHINA001 
-#include "svx/ofaitem.hxx" //add CHINA001 
+#include <sfx2/request.hxx> //add CHINA001
+#include "svx/ofaitem.hxx" //add CHINA001
 
 static sal_uInt16 pRanges[] =
 {
@@ -118,12 +118,12 @@ SvxMeasurePage::SvxMeasurePage( Window* pWindow, const SfxItemSet& rInAttrs ) :
         aLbUnit                 ( this, CUI_RES( LB_UNIT ) ),
         aTsbParallel            ( this, CUI_RES( TSB_PARALLEL ) ),
         aCtlPreview             ( this, CUI_RES( CTL_PREVIEW ), rInAttrs ),
-        
+
         aFlVert                 ( this, CUI_RES( FL_VERT ) ),
         rOutAttrs               ( rInAttrs ),
         aAttrSet                ( *rInAttrs.GetPool() ),
         pView( 0 ),
-        
+
         bPositionModified       ( sal_False )
 {
 	aCtlPreview.SetAccessibleName(aCtlPreview.GetHelpText());
@@ -862,12 +862,12 @@ void SvxMeasurePage::FillUnitLB()
 		aLbUnit.SetEntryData( nPos, (void*)nUnit );
 	}
 }
-void SvxMeasurePage::PageCreated (SfxAllItemSet aSet) //add CHINA001 
+void SvxMeasurePage::PageCreated (SfxAllItemSet aSet) //add CHINA001
 {
 	SFX_ITEMSET_ARG (&aSet,pOfaPtrItem,OfaPtrItem,SID_OBJECT_LIST,sal_False);
-	
+
 	if (pOfaPtrItem)
 		SetView( static_cast<SdrView *>(pOfaPtrItem->GetValue()));
-	
+
 	Construct();
 }

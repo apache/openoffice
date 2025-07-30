@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -42,7 +42,7 @@ jclass java_sql_Array::getMyClass() const
 	// die Klasse muss nur einmal geholt werden, daher statisch
 	if( !theClass )
         theClass = findMyClass("java/sql/Array");
-	
+
 	return theClass;
 }
 
@@ -62,7 +62,7 @@ sal_Int32 SAL_CALL java_sql_Array::getBaseType(  ) throw(::com::sun::star::sdbc:
 {
 	jobjectArray out(0);
     SDBThreadAttach t; OSL_ENSURE(t.pEnv,"Java Environment been deleted!");
-	
+
 	{
 		jobject obj = convertTypeMapToJavaMap(t.pEnv,typeMap);
 		static const char * cSignature = "(Ljava/util/Map;)[Ljava/lang/Object;";
@@ -82,7 +82,7 @@ sal_Int32 SAL_CALL java_sql_Array::getBaseType(  ) throw(::com::sun::star::sdbc:
 {
 	jobjectArray out(0);
     SDBThreadAttach t; OSL_ENSURE(t.pEnv,"Java Environment been deleted!");
-	
+
 	{
 		jobject obj = convertTypeMapToJavaMap(t.pEnv,typeMap);
 		static const char * cSignature = "(IILjava/util/Map;)[Ljava/lang/Object;";

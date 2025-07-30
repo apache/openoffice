@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -39,7 +39,7 @@ AstUnion::AstUnion(const ::rtl::OString& name, AstType* pDiscType, AstScope* pSc
 {
 	AstBaseType* pBaseType;
 
-	if ( !pDiscType ) 
+	if ( !pDiscType )
 	{
 		m_pDiscriminantType = NULL;
 		m_discExprType = ET_none;
@@ -50,17 +50,17 @@ AstUnion::AstUnion(const ::rtl::OString& name, AstType* pDiscType, AstScope* pSc
 	 * then install the equivalent coercion target type in
 	 * the pd_udisc_type field.
 	 */
-	if ( pDiscType->getNodeType() == NT_predefined ) 
+	if ( pDiscType->getNodeType() == NT_predefined )
 	{
 		pBaseType = (AstBaseType*)pDiscType;
-		if ( !pBaseType ) 
+		if ( !pBaseType )
 		{
 			m_pDiscriminantType = NULL;
 			m_discExprType = ET_none;
 			return;
 		}
 		m_pDiscriminantType = pDiscType;
-		switch (pBaseType->getExprType()) 
+		switch (pBaseType->getExprType())
 		{
 			case ET_long:
 			case ET_ulong:
@@ -75,12 +75,12 @@ AstUnion::AstUnion(const ::rtl::OString& name, AstType* pDiscType, AstScope* pSc
 				m_pDiscriminantType = NULL;
 				break;
 		}
-	} else 
-		if (pDiscType->getNodeType() == NT_enum) 
+	} else
+		if (pDiscType->getNodeType() == NT_enum)
 		{
 			m_discExprType = ET_any;
 			m_pDiscriminantType = pDiscType;
-		} else 
+		} else
 		{
 			m_discExprType = ET_none;
 			m_pDiscriminantType = NULL;
@@ -92,22 +92,22 @@ AstUnion::AstUnion(const ::rtl::OString& name, AstType* pDiscType, AstScope* pSc
 
 AstUnion::~AstUnion()
 {
-}	
+}
 
 AstDeclaration* AstUnion::addDeclaration(AstDeclaration* pDecl)
 {
 	if ( pDecl->getNodeType() == NT_union_branch )
 	{
 		AstUnionBranch* pBranch = (AstUnionBranch*)pDecl;
-		if ( lookupBranch(pBranch) ) 
+		if ( lookupBranch(pBranch) )
 		{
 			idlc()->error()->error2(EIDL_MULTIPLE_BRANCH, this, pDecl);
 			return NULL;
 		}
 	}
-	
+
 	return AstScope::addDeclaration(pDecl);
-}	
+}
 
 AstUnionBranch* AstUnion::lookupBranch(AstUnionBranch* pBranch)
 {
@@ -116,17 +116,17 @@ AstUnionBranch* AstUnion::lookupBranch(AstUnionBranch* pBranch)
 	if ( pBranch )
 		pLabel = pBranch->getLabel();
 
-	if ( pLabel ) 
+	if ( pLabel )
 	{
 		if (pLabel->getLabelKind() == UL_default)
 			return lookupDefault();
-		if (m_discExprType == ET_any)	
+		if (m_discExprType == ET_any)
 			/* CONVENTION: indicates enum discr */
 			return lookupEnum(pBranch);
 		return lookupLabel(pBranch);
 	}
 	return NULL;
-}	
+}
 
 AstUnionBranch* AstUnion::lookupDefault(sal_Bool bReportError)
 {
@@ -135,19 +135,19 @@ AstUnionBranch* AstUnion::lookupDefault(sal_Bool bReportError)
 	AstUnionBranch	    *pBranch = NULL;
 	AstDeclaration	    *pDecl = NULL;
 
-	while ( iter != end ) 
+	while ( iter != end )
 	{
 		pDecl = *iter;
-		if ( pDecl->getNodeType() == NT_union_branch ) 
+		if ( pDecl->getNodeType() == NT_union_branch )
 		{
 			pBranch = (AstUnionBranch*)pDecl;
-			if (pBranch == NULL) 
+			if (pBranch == NULL)
 			{
 				++iter;
 				continue;
 			}
 			if ( pBranch->getLabel() != NULL &&
-				 pBranch->getLabel()->getLabelKind() == UL_default) 
+				 pBranch->getLabel()->getLabelKind() == UL_default)
 			{
 				if ( bReportError )
 					idlc()->error()->error2(EIDL_MULTIPLE_BRANCH, this, pBranch);
@@ -157,7 +157,7 @@ AstUnionBranch* AstUnion::lookupDefault(sal_Bool bReportError)
 	    ++iter;
 	}
 	return NULL;
-}	
+}
 
 AstUnionBranch* AstUnion::lookupLabel(AstUnionBranch* pBranch)
 {
@@ -168,7 +168,7 @@ AstUnionBranch* AstUnion::lookupLabel(AstUnionBranch* pBranch)
 //	pLabel->getLabelValue()->setExprValue(pLabel->getLabelValue()->coerce(m_discExprType, sal_False));
 	AstExprValue* pLabelValue = pLabel->getLabelValue()->coerce(
         m_discExprType, sal_False);
-	if ( !pLabelValue ) 
+	if ( !pLabelValue )
 	{
 		idlc()->error()->evalError(pLabel->getLabelValue());
 		return pBranch;
@@ -182,20 +182,20 @@ AstUnionBranch* AstUnion::lookupLabel(AstUnionBranch* pBranch)
 	AstUnionBranch*	pB = NULL;
 	AstDeclaration*	pDecl = NULL;
 
-	while ( iter != end ) 
+	while ( iter != end )
 	{
 		pDecl = *iter;
-		if ( pDecl->getNodeType() == NT_union_branch ) 
+		if ( pDecl->getNodeType() == NT_union_branch )
 		{
 			pB = (AstUnionBranch*)pDecl;
-			if ( !pB ) 
+			if ( !pB )
 			{
 				++iter;
 				continue;
 			}
 			if ( pB->getLabel() != NULL &&
 				 pB->getLabel()->getLabelKind() == UL_label &&
-				 pB->getLabel()->getLabelValue()->compare(pLabel->getLabelValue()) ) 
+				 pB->getLabel()->getLabelValue()->compare(pLabel->getLabelValue()) )
 			{
 				idlc()->error()->error2(EIDL_MULTIPLE_BRANCH, this, pBranch);
 				return pBranch;
@@ -204,14 +204,14 @@ AstUnionBranch* AstUnion::lookupLabel(AstUnionBranch* pBranch)
 	    ++iter;
 	}
 	return NULL;
-}	
+}
 
 AstUnionBranch* AstUnion::lookupEnum(AstUnionBranch* pBranch)
 {
-	AstDeclaration const * pType = resolveTypedefs(m_pDiscriminantType);	
+	AstDeclaration const * pType = resolveTypedefs(m_pDiscriminantType);
 	if ( pType->getNodeType() != NT_enum )
 		return NULL;
-			
+
 	AstUnionLabel* pLabel = pBranch->getLabel();
 	AstExpression* pExpr = pLabel->getLabelValue();
 	if ( !pExpr )
@@ -220,7 +220,7 @@ AstUnionBranch* AstUnion::lookupEnum(AstUnionBranch* pBranch)
 	/*
 	 * Expecting a symbol label
 	 */
-	if ( pExpr->getCombOperator() != EC_symbol) 
+	if ( pExpr->getCombOperator() != EC_symbol)
 	{
 		idlc()->error()->enumValExpected(this);
 		return pBranch;
@@ -231,7 +231,7 @@ AstUnionBranch* AstUnion::lookupEnum(AstUnionBranch* pBranch)
 	 */
 	AstEnum* pEnum = (AstEnum*)pType;
 	AstDeclaration* pDecl = pEnum->lookupByName(*pExpr->getSymbolicName());
-	if ( pDecl == NULL || pDecl->getScope() != pEnum) 
+	if ( pDecl == NULL || pDecl->getScope() != pEnum)
 	{
 		idlc()->error()->enumValLookupFailure(this, pEnum, *pExpr->getSymbolicName());
 		return pBranch;
@@ -243,20 +243,20 @@ AstUnionBranch* AstUnion::lookupEnum(AstUnionBranch* pBranch)
 	AstUnionBranch*	pB = NULL;
 	pDecl = NULL;
 
-	while ( iter != end ) 
+	while ( iter != end )
 	{
 		pDecl = *iter;
-		if ( pDecl->getNodeType() == NT_union_branch ) 
+		if ( pDecl->getNodeType() == NT_union_branch )
 		{
 			pB = (AstUnionBranch*)pDecl;
-			if ( !pB ) 
+			if ( !pB )
 			{
 				++iter;
 				continue;
 			}
 			if ( pB->getLabel() != NULL &&
 				 pB->getLabel()->getLabelKind() == UL_label &&
-				 pB->getLabel()->getLabelValue()->compare(pLabel->getLabelValue()) ) 
+				 pB->getLabel()->getLabelValue()->compare(pLabel->getLabelValue()) )
 			{
 				idlc()->error()->error2(EIDL_MULTIPLE_BRANCH, this, pBranch);
 				return pBranch;
@@ -265,7 +265,7 @@ AstUnionBranch* AstUnion::lookupEnum(AstUnionBranch* pBranch)
 	    ++iter;
 	}
 	return NULL;
-}	
+}
 
 sal_Bool AstUnion::dump(RegistryKey& rKey)
 {
@@ -317,7 +317,7 @@ sal_Bool AstUnion::dump(RegistryKey& rKey)
 				{
 					++iter;
 					continue;
-				} 
+				}
 
 				pLabel = pBranch->getLabel();
 				pExprValue = pLabel->getLabelValue()->coerce(ET_hyper, sal_False);
@@ -356,30 +356,30 @@ sal_Bool AstUnion::dump(RegistryKey& rKey)
 
     sal_uInt32 aBlobSize;
     void const * pBlob = aBlob.getBlob(&aBlobSize);
-	
-	if (localKey.setValue(OUString(), RG_VALUETYPE_BINARY, 
+
+	if (localKey.setValue(OUString(), RG_VALUETYPE_BINARY,
 					  	  (RegValue)pBlob, aBlobSize))
 	{
 		fprintf(stderr, "%s: warning, could	not set value of key \"%s\" in %s\n",
 			    idlc()->getOptions()->getProgramName().getStr(),
 				getFullName().getStr(), OUStringToOString(localKey.getRegistryName(), RTL_TEXTENCODING_UTF8).getStr());
 		return sal_False;
-	}				
-	
+	}
+
 	return sal_True;
-}	
+}
 
 AstUnionBranch::AstUnionBranch(AstUnionLabel* pLabel, AstType const * pType, const ::rtl::OString& name, AstScope* pScope)
 	: AstMember(NT_union_branch, pType, name, pScope)
-	, m_pLabel(pLabel) 
+	, m_pLabel(pLabel)
 {
-}	
+}
 
 AstUnionBranch::~AstUnionBranch()
 {
 	if ( m_pLabel )
 		delete m_pLabel;
-}	
+}
 
 AstUnionLabel::AstUnionLabel(UnionLabel labelKind, AstExpression* pExpr)
 	: m_label(labelKind)
@@ -394,4 +394,3 @@ AstUnionLabel::~AstUnionLabel()
 	if ( m_pLabelValue )
 		delete m_pLabelValue;
 }
-	

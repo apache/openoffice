@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -134,7 +134,7 @@ DBG_NAME(IndexFieldsControl)
 	{
 		delete m_pSortingCell;
 		delete m_pFieldNameCell;
-	
+
         DBG_DTOR(IndexFieldsControl,NULL);
     }
 
@@ -285,7 +285,7 @@ DBG_NAME(IndexFieldsControl)
 		// for the field name cell
 		m_pFieldNameCell = new ListBoxControl(&GetDataWindow());
 		m_pFieldNameCell->InsertEntry(String());
-        m_pFieldNameCell->SetHelpId( HID_DLGINDEX_INDEXDETAILS_FIELD );		
+        m_pFieldNameCell->SetHelpId( HID_DLGINDEX_INDEXDETAILS_FIELD );
 		const ::rtl::OUString* pFields = _rAvailableFields.getConstArray();
 		const ::rtl::OUString* pFieldsEnd = pFields + _rAvailableFields.getLength();
 		for (;pFields < pFieldsEnd; ++pFields)

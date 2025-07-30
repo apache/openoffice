@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -66,7 +66,7 @@ public:     // Methods
     virtual sal_Int32 SAL_CALL run( const Sequence< OUString >& aArguments )
 		throw(RuntimeException);
 
-	
+
 private: // helper methods
 	void testPipe( const Reference < XInterface > & rComponent );
 	Reference< XMultiServiceFactory > m_xSMgr;
@@ -95,8 +95,8 @@ void PipeClientMain::testPipe( const Reference< XInterface > & rxInterface )
 			printf( "error : Couldn't read the expected number of bytes\n" );
 			return;
 		}
-		
-		if( seqRead.getConstArray()[0] != 5 || 
+
+		if( seqRead.getConstArray()[0] != 5 ||
 			seqRead.getConstArray()[1] != 4 ||
 			seqRead.getConstArray()[2] != 3 )
 		{
@@ -179,7 +179,7 @@ sal_Int32 PipeClientMain::run( const Sequence< OUString > & aArguments ) throw (
 	}
 	else
 	{
-		printf( "usage: (uno remoteclient-component --) uno-url\n" 
+		printf( "usage: (uno remoteclient-component --) uno-url\n"
 		        "e.g.:  uno:socket,host=localhost,port=2083;urp;MyPipe\n" );
 		return 1;
 	}
@@ -233,12 +233,12 @@ SAL_DLLPUBLIC_EXPORT void SAL_CALL component_getImplementationEnvironment(
 // 			Reference< XRegistryKey > xNewKey(
 // 				reinterpret_cast< XRegistryKey * >( pRegistryKey )->createKey(
 // 					OUString::createFromAscii( "/" IMPLEMENTATION_NAME "/UNO/SERVICES" ) ) );
-			
+
 // 			const Sequence< OUString > & rSNL = getSupportedServiceNames();
 // 			const OUString * pArray = rSNL.getConstArray();
 // 			for ( sal_Int32 nPos = rSNL.getLength(); nPos--; )
 // 				xNewKey->createKey( pArray[nPos] );
-			
+
 // 			return sal_True;
 // 		}
 // 		catch (InvalidRegistryException &)
@@ -254,21 +254,21 @@ SAL_DLLPUBLIC_EXPORT void * SAL_CALL component_getFactory(
 	const sal_Char * pImplName, void * pServiceManager, void * pRegistryKey )
 {
 	void * pRet = 0;
-	
+
 	if (pServiceManager && rtl_str_compare( pImplName, IMPLEMENTATION_NAME ) == 0)
 	{
 		Reference< XSingleServiceFactory > xFactory( createSingleFactory(
 			reinterpret_cast< XMultiServiceFactory * >( pServiceManager ),
 			OUString::createFromAscii( pImplName ),
 			CreateInstance, getSupportedServiceNames() ) );
-		
+
 		if (xFactory.is())
 		{
 			xFactory->acquire();
 			pRet = xFactory.get();
 		}
 	}
-	
+
 	return pRet;
 }
 }

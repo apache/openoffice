@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -130,7 +130,7 @@ uno::Sequence< ::rtl::OUString > lcl_getLineOptionals()
             , PROPERTY_CHARWORDMODECOMPLEX
             , PROPERTY_CHARROTATIONCOMPLEX
             , PROPERTY_CHARSCALEWIDTHCOMPLEX
-            , PROPERTY_CHARLOCALECOMPLEX   
+            , PROPERTY_CHARLOCALECOMPLEX
 
 
 	};
@@ -139,7 +139,7 @@ uno::Sequence< ::rtl::OUString > lcl_getLineOptionals()
 DBG_NAME(rpt_OFixedLine)
 // -----------------------------------------------------------------------------
 OFixedLine::OFixedLine(uno::Reference< uno::XComponentContext > const & _xContext)
-:FixedLineBase(m_aMutex) 
+:FixedLineBase(m_aMutex)
 ,FixedLinePropertySet(_xContext,static_cast< Implements >(IMPLEMENTS_PROPERTY_SET),lcl_getLineOptionals())
 ,m_aProps(m_aMutex,static_cast< container::XContainer*>( this ),_xContext)
 ,m_nOrientation(1)
@@ -156,7 +156,7 @@ OFixedLine::OFixedLine(uno::Reference< uno::XComponentContext > const & _xContex
                        ,const uno::Reference< lang::XMultiServiceFactory>& _xFactory
                        ,uno::Reference< drawing::XShape >& _xShape
                        ,sal_Int32 _nOrientation)
-:FixedLineBase(m_aMutex) 
+:FixedLineBase(m_aMutex)
 ,FixedLinePropertySet(_xContext,static_cast< Implements >(IMPLEMENTS_PROPERTY_SET),lcl_getLineOptionals())
 ,m_aProps(m_aMutex,static_cast< container::XContainer*>( this ),_xContext)
 ,m_nOrientation(_nOrientation)
@@ -212,10 +212,10 @@ uno::Any SAL_CALL OFixedLine::queryInterface( const uno::Type& _rType ) throw (u
 	return aReturn.hasValue() ? aReturn : (m_aProps.aComponent.m_xProxy.is() ? m_aProps.aComponent.m_xProxy->queryAggregation(_rType) : aReturn);
 }
 // -----------------------------------------------------------------------------
-void SAL_CALL OFixedLine::dispose() throw(uno::RuntimeException) 
+void SAL_CALL OFixedLine::dispose() throw(uno::RuntimeException)
 {
 	FixedLinePropertySet::dispose();
-	cppu::WeakComponentImplHelperBase::dispose(); 
+	cppu::WeakComponentImplHelperBase::dispose();
 }
 // -----------------------------------------------------------------------------
 ::rtl::OUString OFixedLine::getImplementationName_Static(  ) throw(uno::RuntimeException)
@@ -233,7 +233,7 @@ uno::Sequence< ::rtl::OUString > OFixedLine::getSupportedServiceNames_Static(  )
 {
 	uno::Sequence< ::rtl::OUString > aServices(1);
 	aServices.getArray()[0] = SERVICE_FIXEDLINE;
-	
+
 	return aServices;
 }
 //------------------------------------------------------------------------------
@@ -536,28 +536,28 @@ void SAL_CALL OFixedLine::setSize( const awt::Size& aSize ) throw (beans::Proper
 	return ::rtl::OUString(RTL_CONSTASCII_USTRINGPARAM("com.sun.star.drawing.ControlShape"));
 }
 // -----------------------------------------------------------------------------
-::rtl::OUString SAL_CALL OFixedLine::getHyperLinkURL() throw (uno::RuntimeException, beans::UnknownPropertyException) 
-{ 
-	throw beans::UnknownPropertyException();
-} 
-void SAL_CALL OFixedLine::setHyperLinkURL(const ::rtl::OUString & /*the_value*/) throw (uno::RuntimeException, beans::UnknownPropertyException) 
-{ 
+::rtl::OUString SAL_CALL OFixedLine::getHyperLinkURL() throw (uno::RuntimeException, beans::UnknownPropertyException)
+{
 	throw beans::UnknownPropertyException();
 }
-::rtl::OUString SAL_CALL OFixedLine::getHyperLinkTarget() throw (uno::RuntimeException, beans::UnknownPropertyException) 
-{ 
-	throw beans::UnknownPropertyException();
-} 
-void SAL_CALL OFixedLine::setHyperLinkTarget(const ::rtl::OUString & /*the_value*/) throw (uno::RuntimeException, beans::UnknownPropertyException) 
-{ 
+void SAL_CALL OFixedLine::setHyperLinkURL(const ::rtl::OUString & /*the_value*/) throw (uno::RuntimeException, beans::UnknownPropertyException)
+{
 	throw beans::UnknownPropertyException();
 }
-::rtl::OUString SAL_CALL OFixedLine::getHyperLinkName() throw (uno::RuntimeException, beans::UnknownPropertyException) 
-{ 
+::rtl::OUString SAL_CALL OFixedLine::getHyperLinkTarget() throw (uno::RuntimeException, beans::UnknownPropertyException)
+{
 	throw beans::UnknownPropertyException();
-} 
-void SAL_CALL OFixedLine::setHyperLinkName(const ::rtl::OUString & /*the_value*/) throw (uno::RuntimeException, beans::UnknownPropertyException) 
-{ 
+}
+void SAL_CALL OFixedLine::setHyperLinkTarget(const ::rtl::OUString & /*the_value*/) throw (uno::RuntimeException, beans::UnknownPropertyException)
+{
+	throw beans::UnknownPropertyException();
+}
+::rtl::OUString SAL_CALL OFixedLine::getHyperLinkName() throw (uno::RuntimeException, beans::UnknownPropertyException)
+{
+	throw beans::UnknownPropertyException();
+}
+void SAL_CALL OFixedLine::setHyperLinkName(const ::rtl::OUString & /*the_value*/) throw (uno::RuntimeException, beans::UnknownPropertyException)
+{
 	throw beans::UnknownPropertyException();
 }
 

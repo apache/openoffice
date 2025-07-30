@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -70,7 +70,7 @@ Sequence< OUString > OEMPreloadJob::GetSupportedServiceNames()
 {
 	sal_Int32 nSize = (sizeof( interfaces ) / sizeof( const char *)) - 1;
 	Sequence< OUString > aResult( nSize );
-	
+
 	for( sal_Int32 i = 0; i < nSize; i++ )
 		aResult[i] = OUString::createFromAscii( interfaces[i] );
 	return aResult;
@@ -84,7 +84,7 @@ Reference< XInterface >  SAL_CALL OEMPreloadJob::CreateInstance(
 		return (XComponent*) ( new OEMPreloadJob( rSMgr ) );
 }
 
-OEMPreloadJob::OEMPreloadJob( const Reference< XMultiServiceFactory >& xFactory ) : 
+OEMPreloadJob::OEMPreloadJob( const Reference< XMultiServiceFactory >& xFactory ) :
 	m_aListeners( m_aMutex ),
 	m_xServiceManager( xFactory )
 {
@@ -113,24 +113,24 @@ void SAL_CALL OEMPreloadJob::removeEventListener( const Reference< XEventListene
 }
 
 // XServiceInfo
-::rtl::OUString SAL_CALL OEMPreloadJob::getImplementationName() 
+::rtl::OUString SAL_CALL OEMPreloadJob::getImplementationName()
 throw ( RuntimeException )
 {
 	return OEMPreloadJob::GetImplementationName();
 }
 
-sal_Bool SAL_CALL OEMPreloadJob::supportsService( const ::rtl::OUString& rServiceName ) 
+sal_Bool SAL_CALL OEMPreloadJob::supportsService( const ::rtl::OUString& rServiceName )
 throw ( RuntimeException )
 {
 	sal_Int32 nSize = sizeof( interfaces ) / sizeof( const char *);
-	
+
 	for( sal_Int32 i = 0; i < nSize; i++ )
 		if ( rServiceName.equalsAscii( interfaces[i] ))
 			return sal_True;
 	return sal_False;
 }
 
-Sequence< ::rtl::OUString > SAL_CALL OEMPreloadJob::getSupportedServiceNames() 
+Sequence< ::rtl::OUString > SAL_CALL OEMPreloadJob::getSupportedServiceNames()
 throw ( RuntimeException )
 {
 	return OEMPreloadJob::GetSupportedServiceNames();
@@ -146,7 +146,7 @@ throw ( RuntimeException )
     {
         // create OEM preload service dialog
         Reference <XExecutableDialog> xDialog( m_xServiceManager->createInstance(
-            OUString::createFromAscii("org.openoffice.comp.preload.OEMPreloadWizard")), 
+            OUString::createFromAscii("org.openoffice.comp.preload.OEMPreloadWizard")),
             UNO_QUERY );
         if ( xDialog.is() ){
 	        // execute OEM preload dialog and check return value
@@ -156,11 +156,11 @@ throw ( RuntimeException )
                 bCont = sal_True;
                 disableOEMPreloadFlag();
             } else {
-                // user declined...                
+                // user declined...
                 // terminate.
                 /*
 		        Reference< XDesktop > xDesktop( m_xServiceManager->createInstance(
-                    OUString::createFromAscii("com.sun.star.frame.Desktop")), 
+                    OUString::createFromAscii("com.sun.star.frame.Desktop")),
                     UNO_QUERY );
 		        xDesktop->terminate();
                 */
@@ -171,7 +171,7 @@ throw ( RuntimeException )
                 Reference<XModel> rModel;
                 Reference<XCloseable> rClose;
                 for (int i=0; i<args.getLength(); i++)
-                {                    
+                {
                     if (args[i].Name.equalsAscii("EnvType"))
                         args[i].Value >>= aEnvType;
                     else if (args[i].Name.equalsAscii("Frame")) {
@@ -181,8 +181,8 @@ throw ( RuntimeException )
                     else if (args[i].Name.equalsAscii("Model")) {
                         args[i].Value >>= rModel;
                         rClose = Reference<XCloseable>(rModel, UNO_QUERY);
-                    }                     
-                }                
+                    }
+                }
                 if (rClose.is()) rClose->close(sal_True);
                 */
                 bCont = sal_False;
@@ -191,9 +191,9 @@ throw ( RuntimeException )
     } else {
         // don't try again
         bCont = sal_True;
-    } 
+    }
     /*
-    NamedValue nv; 
+    NamedValue nv;
     nv.Name  = OUString::createFromAscii("Deactivate");
     nv.Value <<=  bDeactivate;
     Sequence<NamedValue> s(1);
@@ -209,10 +209,10 @@ static sal_Bool existsURL( OUString const& _sURL )
 {
     using namespace osl;
 	DirectoryItem aDirItem;
-    
+
     if (_sURL.getLength() != 0)
         return ( DirectoryItem::get( _sURL, aDirItem ) == DirectoryItem::E_None );
-        
+
     return sal_False;
 }
 
@@ -222,14 +222,14 @@ static OUString locateIniFile()
 {
 	OUString aUserDataPath;
 	OUString aSofficeIniFileURL;
-	
+
 	// Retrieve the default file URL for the soffice.ini/rc
 	Bootstrap().getIniName( aSofficeIniFileURL );
 
 	if ( utl::Bootstrap::locateUserData( aUserDataPath ) == utl::Bootstrap::PATH_EXISTS )
 	{
 		const char CONFIG_DIR[] = "/config";
-		
+
 		sal_Int32 nIndex = aSofficeIniFileURL.lastIndexOf( '/');
 		if ( nIndex > 0 )
 		{
@@ -238,11 +238,11 @@ static OUString locateIniFile()
 			aBuffer.appendAscii( CONFIG_DIR );
 			aBuffer.append( aSofficeIniFileURL.copy( nIndex ));
 			aUserSofficeIniFileURL = aBuffer.makeStringAndClear();
-			
+
 			if ( existsURL( aUserSofficeIniFileURL ))
 				return aUserSofficeIniFileURL;
 		}
-	}	
+	}
 	// Fallback try to use the soffice.ini/rc from program folder
 	return aSofficeIniFileURL;
 }
@@ -265,7 +265,7 @@ void OEMPreloadJob::disableOEMPreloadFlag()
 {
 	OUString aSofficeIniFileURL = locateIniFile();
 	if ( aSofficeIniFileURL.getLength() > 0 )
-	{	
+	{
 		Config aConfig(aSofficeIniFileURL);
 		aConfig.SetGroup( OEM_PRELOAD_SECTION );
 		aConfig.WriteKey( OEM_PRELOAD, STR_FALSE );

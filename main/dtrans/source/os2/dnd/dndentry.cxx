@@ -69,7 +69,7 @@ SAL_DLLPUBLIC_EXPORT void SAL_CALL component_getImplementationEnvironment(
 }
 
 //----------------------------------------------------------------------
-// component_getFactory 
+// component_getFactory
 // returns a factory to create XFilePicker-Services
 //----------------------------------------------------------------------
 SAL_DLLPUBLIC_EXPORT void* SAL_CALL component_getFactory( const sal_Char* pImplName, uno_Interface* pSrvManager, uno_Interface* /*pRegistryKey*/ )

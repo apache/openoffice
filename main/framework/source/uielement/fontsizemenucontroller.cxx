@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -65,7 +65,7 @@
 //_________________________________________________________________________________________________________________
 //	Defines
 //_________________________________________________________________________________________________________________
-// 
+//
 
 using namespace com::sun::star::uno;
 using namespace com::sun::star::lang;
@@ -102,7 +102,7 @@ FontSizeMenuController::~FontSizeMenuController()
 rtl::OUString FontSizeMenuController::retrievePrinterName( com::sun::star::uno::Reference< com::sun::star::frame::XFrame >& rFrame )
 {
     rtl::OUString aPrinterName;
-                
+
     if ( rFrame.is() )
     {
         Reference< XController > xController = m_xFrame->getController();
@@ -123,7 +123,7 @@ rtl::OUString FontSizeMenuController::retrievePrinterName( com::sun::star::uno::
             }
         }
     }
-    
+
     return aPrinterName;
 }
 
@@ -158,19 +158,19 @@ void FontSizeMenuController::fillPopupMenu( Reference< css::awt::XPopupMenu >& r
     const rtl::OUString     aFontNameCommand( RTL_CONSTASCII_USTRINGPARAM( ".uno:FontHeight?FontHeight=" ));
     VCLXPopupMenu*          pPopupMenu = (VCLXPopupMenu *)VCLXMenu::GetImplementation( rPopupMenu );
     PopupMenu*              pVCLPopupMenu = 0;
-    
+
     resetPopupMenu( rPopupMenu );
     if ( pPopupMenu )
         pVCLPopupMenu = (PopupMenu *)pPopupMenu->GetMenu();
-        
+
     if ( pVCLPopupMenu )
     {
         FontList*       pFontList = 0;
         Printer*        pInfoPrinter = 0;
         rtl::OUString   aPrinterName;
-        
+
         vos::OGuard aSolarMutexGuard( Application::GetSolarMutex() );
-        
+
         // try to retrieve printer name of document
         aPrinterName = retrievePrinterName( m_xFrame );
         if ( aPrinterName.getLength() > 0 )
@@ -179,12 +179,12 @@ void FontSizeMenuController::fillPopupMenu( Reference< css::awt::XPopupMenu >& r
             if ( pInfoPrinter && pInfoPrinter->GetDevFontCount() > 0 )
                 pFontList = new FontList( pInfoPrinter );
         }
-        
+
         if ( pFontList == 0 )
             pFontList   = new FontList( Application::GetDefaultDevice() );
 
         FontInfo aFntInfo = pFontList->Get( m_aFontDescriptor.Name, m_aFontDescriptor.StyleName );
-        
+
 	    // setup font size array
 	    if ( m_pHeightArray )
 		    delete m_pHeightArray;
@@ -197,14 +197,14 @@ void FontSizeMenuController::fillPopupMenu( Reference< css::awt::XPopupMenu >& r
 
 	    sal_uInt16 nPos = 0;
         const rtl::OUString aFontHeightCommand( RTL_CONSTASCII_USTRINGPARAM( ".uno:FontHeight?FontHeight.Height:float=" ));
-	    
+
         // first insert font size names (for simplified/traditional chinese)
 	    float           fPoint;
         rtl::OUString   aHeightString;
         FontSizeNames   aFontSizeNames( Application::GetSettings().GetUILanguage() );
 	    m_pHeightArray = new long[nSizeCount+aFontSizeNames.Count()];
         rtl::OUString   aCommand;
-        
+
         if ( !aFontSizeNames.IsEmpty() )
 	    {
 		    if ( pAry == pFontList->GetStdSizeAry() )
@@ -219,7 +219,7 @@ void FontSizeMenuController::fillPopupMenu( Reference< css::awt::XPopupMenu >& r
 				    nPos++; // Id is nPos+1
 				    pVCLPopupMenu->InsertItem( nPos, aSizeName, MIB_RADIOCHECK | MIB_AUTOCHECK );
 				    fPoint = float( m_pHeightArray[nPos-1] ) / 10;
-                    
+
                     // Create dispatchable .uno command and set it
                     aCommand = aFontHeightCommand + rtl::OUString::valueOf( fPoint );
                     pVCLPopupMenu->SetItemCommand( nPos, aCommand );
@@ -242,7 +242,7 @@ void FontSizeMenuController::fillPopupMenu( Reference< css::awt::XPopupMenu >& r
                         // Create dispatchable .uno command and set it
                         aCommand = aFontHeightCommand + rtl::OUString::valueOf( fPoint );
                         pVCLPopupMenu->SetItemCommand( nPos, aCommand );
-                    }                        
+                    }
 				    pTempAry++;
 			    }
 		    }
@@ -261,12 +261,12 @@ void FontSizeMenuController::fillPopupMenu( Reference< css::awt::XPopupMenu >& r
             // Create dispatchable .uno command and set it
             aCommand = aFontHeightCommand + rtl::OUString::valueOf( fPoint );
             pVCLPopupMenu->SetItemCommand( nPos, aCommand );
-		    
+
             pTempAry++;
 	    }
 
 	    setCurHeight( long( m_aFontHeight.Height * 10), rPopupMenu );
-	    
+
 	    delete pFontList;
 	    delete pInfoPrinter;
     }
@@ -296,7 +296,7 @@ void SAL_CALL FontSizeMenuController::statusChanged( const FeatureStateEvent& Ev
     {
         osl::MutexGuard aLock( m_aMutex );
         m_aFontDescriptor = aFontDescriptor;
-        
+
         if ( m_xPopupMenu.is() )
             fillPopupMenu( m_xPopupMenu );
 
@@ -335,13 +335,13 @@ void FontSizeMenuController::impl_setPopupMenu()
     m_xURLTransformer->parseStrict( aTargetURL );
     m_xCurrentFontDispatch = xDispatchProvider->queryDispatch( aTargetURL, ::rtl::OUString(), 0 );
 }
-		
+
 void SAL_CALL FontSizeMenuController::updatePopupMenu() throw ( ::com::sun::star::uno::RuntimeException )
 {
     osl::ClearableMutexGuard aLock( m_aMutex );
 
 	throwIfDisposed();
-    
+
     Reference< XDispatch > xDispatch( m_xCurrentFontDispatch );
     com::sun::star::util::URL aTargetURL;
     aTargetURL.Complete = rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( ".uno:CharFontName" ));

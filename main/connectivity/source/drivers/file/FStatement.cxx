@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -211,7 +211,7 @@ void OStatement_Base::reset() throw (SQLException)
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "file", "Ocke.Janssen@sun.com", "OStatement_Base::reset" );
 	::osl::MutexGuard aGuard( m_aMutex );
 	checkDisposed(OStatement_BASE::rBHelper.bDisposed);
-                
+
 
 	clearWarnings ();
 
@@ -228,7 +228,7 @@ void OStatement_Base::clearMyResultSet () throw (SQLException)
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "file", "Ocke.Janssen@sun.com", "OStatement_Base::clearMyResultSet " );
 	::osl::MutexGuard aGuard( m_aMutex );
 	checkDisposed(OStatement_BASE::rBHelper.bDisposed);
-		
+
     try
     {
         Reference<XCloseable> xCloseable;
@@ -249,7 +249,7 @@ void OStatement_Base::setWarning (const SQLWarning &ex) throw( SQLException)
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "file", "Ocke.Janssen@sun.com", "OStatement_Base::setWarning " );
 	::osl::MutexGuard aGuard( m_aMutex );
 	checkDisposed(OStatement_BASE::rBHelper.bDisposed);
-        
+
 
 	m_aLastWarning = ex;
 }
@@ -260,7 +260,7 @@ Any SAL_CALL OStatement_Base::getWarnings(  ) throw(SQLException, RuntimeExcepti
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "file", "Ocke.Janssen@sun.com", "OStatement_Base::getWarnings" );
 	::osl::MutexGuard aGuard( m_aMutex );
 	checkDisposed(OStatement_BASE::rBHelper.bDisposed);
-        
+
 	return makeAny(m_aLastWarning);
 }
 // -------------------------------------------------------------------------
@@ -321,7 +321,7 @@ Reference< XResultSet > SAL_CALL OStatement::executeQuery( const ::rtl::OUString
 {
 	::osl::MutexGuard aGuard( m_aMutex );
 	checkDisposed(OStatement_BASE::rBHelper.bDisposed);
-       
+
     construct(sql);
     Reference< XResultSet > xRS;
 	OResultSet* pResult = createResultSet();
@@ -330,7 +330,7 @@ Reference< XResultSet > SAL_CALL OStatement::executeQuery( const ::rtl::OUString
     m_xResultSet = Reference<XResultSet>(pResult);
 
 	pResult->OpenImpl();
-    
+
 	return xRS;
 }
 // -------------------------------------------------------------------------
@@ -343,14 +343,14 @@ sal_Int32 SAL_CALL OStatement::executeUpdate( const ::rtl::OUString& sql ) throw
 {
 	::osl::MutexGuard aGuard( m_aMutex );
 	checkDisposed(OStatement_BASE::rBHelper.bDisposed);
-    
+
 
 	construct(sql);
 	OResultSet* pResult = createResultSet();
 	Reference< XResultSet > xRS = pResult;
 	initializeResultSet(pResult);
 	pResult->OpenImpl();
-	
+
 	return pResult->getRowCountResult();
 }
 
@@ -493,7 +493,7 @@ void OStatement_Base::construct(const ::rtl::OUString& sql)  throw(SQLException,
 			default:
 				break;
 		}
-    	
+
 		// at this moment we support only one table per select statement
 		Reference< ::com::sun::star::lang::XUnoTunnel> xTunnel(xTabs.begin()->second,UNO_QUERY);
 		if(xTunnel.is())

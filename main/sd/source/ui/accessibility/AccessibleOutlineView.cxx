@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -91,12 +91,12 @@ AccessibleOutlineView::AccessibleOutlineView (
         {
             OutlinerView* pOutlineView = static_cast< ::sd::OutlineView*>(
                 pView)->GetViewByWindow( pSdWindow );
-            SdrOutliner* pOutliner = 
+            SdrOutliner* pOutliner =
                 static_cast< ::sd::OutlineView*>(pView)->GetOutliner();
 
             if( pOutlineView && pOutliner )
             {
-                maTextHelper.SetEditSource( ::std::auto_ptr< SvxEditSource >( new AccessibleOutlineEditSource( 
+                maTextHelper.SetEditSource( ::std::auto_ptr< SvxEditSource >( new AccessibleOutlineEditSource(
                                                                                   *pOutliner, *pView, *pOutlineView, *pSdWindow ) ) );
             }
         }
@@ -119,11 +119,11 @@ void AccessibleOutlineView::Init (void)
 }
 
 
-void AccessibleOutlineView::ViewForwarderChanged (ChangeType aChangeType, 
+void AccessibleOutlineView::ViewForwarderChanged (ChangeType aChangeType,
     const IAccessibleViewForwarder* pViewForwarder)
 {
     AccessibleDocumentViewBase::ViewForwarderChanged (aChangeType, pViewForwarder);
-    
+
     UpdateChildren();
 }
 
@@ -169,7 +169,7 @@ uno::Reference<XAccessible> SAL_CALL
 				if ( pDocSh )
 				{
 					sFileName = pDocSh->GetTitle( SFX_TITLE_APINAME );
-				}			
+				}
 			}
 			if ( sFileName.getLength() )
 			{
@@ -198,8 +198,8 @@ void SAL_CALL AccessibleOutlineView::removeEventListener( const uno::Reference< 
 }
 
 //=====  XServiceInfo  ========================================================
-    
-::rtl::OUString SAL_CALL 
+
+::rtl::OUString SAL_CALL
     AccessibleOutlineView::getImplementationName (void)
     throw (::com::sun::star::uno::RuntimeException)
 {

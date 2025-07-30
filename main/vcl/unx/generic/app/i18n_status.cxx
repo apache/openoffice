@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -203,7 +203,7 @@ Point XIMStatusWindow::updatePosition()
     if( checkLastParent() )
     {
         const SystemEnvData* pParentEnvData = m_pLastParent->GetSystemData();
-        
+
         SalExtTextInputPosEvent aPosEvent;
         m_pLastParent->CallCallback( SALEVENT_EXTTEXTINPUTPOS, (void*)&aPosEvent );
         int x, y;
@@ -609,7 +609,7 @@ void I18NStatus::setStatusText( const String& rText )
         String aText( pBuffer );
         m_pStatusWindow->setText( aText );
         m_pStatusWindow->setPosition( m_pParent );
-        
+
         bool bVisible = true;
         if( m_pParent )
         {
@@ -620,7 +620,7 @@ void I18NStatus::setStatusText( const String& rText )
                 bVisible = false;
             }
         }
-        
+
         m_pStatusWindow->show( bVisible, contextmap );
     }
 }

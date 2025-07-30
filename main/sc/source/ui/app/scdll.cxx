@@ -123,19 +123,19 @@
 
 //UNUSED2008-05  //	filter detection can't use ScFilterOptions (in sc-dll),
 //UNUSED2008-05  //	so access to wk3 flag must be implemented here again
-//UNUSED2008-05  
+//UNUSED2008-05
 //UNUSED2008-05  class ScLibOptions : public utl::ConfigItem
 //UNUSED2008-05  {
 //UNUSED2008-05      sal_Bool        bWK3Flag;
-//UNUSED2008-05  
+//UNUSED2008-05
 //UNUSED2008-05  public:
 //UNUSED2008-05                  ScLibOptions();
 //UNUSED2008-05      sal_Bool        GetWK3Flag() const          { return bWK3Flag; }
 //UNUSED2008-05  };
-//UNUSED2008-05  
+//UNUSED2008-05
 //UNUSED2008-05  #define CFGPATH_LIBFILTER		"Office.Calc/Filter/Import/Lotus123"
 //UNUSED2008-05  #define ENTRYSTR_WK3			"WK3"
-//UNUSED2008-05  
+//UNUSED2008-05
 //UNUSED2008-05  ScLibOptions::ScLibOptions() :
 //UNUSED2008-05      ConfigItem( rtl::OUString::createFromAscii( CFGPATH_LIBFILTER ) ),
 //UNUSED2008-05      bWK3Flag( sal_False )
@@ -257,7 +257,7 @@ void ScDLL::Init()
 
     // common SFX controller
     ::sfx2::sidebar::SidebarChildWindow::RegisterChildWindow(sal_False, pMod);
-    
+
 	// Svx-StatusBar-Controller
 	SvxInsertStatusBarControl		::RegisterControl(SID_ATTR_INSERT,		pMod);
 	SvxSelectionModeControl			::RegisterControl(SID_STATUS_SELMODE,	pMod);
@@ -316,7 +316,7 @@ void ScDLL::Init()
 	//<!--Added by PengYunQuan for Validity Cell Range Picker
 	ScValidityRefChildWin::RegisterChildWindow(sal_False, pMod);
 	//-->Added by PengYunQuan for Validity Cell Range Picker
-		
+
 	//	Edit-Engine-Felder, soweit nicht schon in OfficeApplication::Init
 
 	SvClassManager& rClassManager = SvxFieldItem::GetClassManager();

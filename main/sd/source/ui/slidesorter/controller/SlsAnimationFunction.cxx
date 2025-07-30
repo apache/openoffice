@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -45,7 +45,7 @@ double AnimationFunction::Linear (const double nTime)
 double AnimationFunction::FastInSlowOut_Sine (const double nTime)
 {
     OSL_ASSERT(nTime>=0.0 && nTime<=1.0);
-    
+
     const double nResult (sin(nTime * M_PI/2));
 
     OSL_ASSERT(nResult>=0.0 && nResult<=1.0);
@@ -60,7 +60,7 @@ double AnimationFunction::FastInSlowOut_Root (const double nTime)
     OSL_ASSERT(nTime>=0.0 && nTime<=1.0);
 
     const double nResult (sqrt(nTime));
-    
+
     OSL_ASSERT(nResult>=0.0 && nResult<=1.0);
     return nResult;
 }
@@ -73,7 +73,7 @@ double AnimationFunction::SlowInSlowOut_0to0_Sine (const double nTime)
     OSL_ASSERT(nTime>=0.0 && nTime<=1.0);
 
     const double nResult (sin(nTime * M_PI));
-    
+
     OSL_ASSERT(nResult>=0.0 && nResult<=1.0);
     return nResult;
 }
@@ -283,7 +283,7 @@ double AnimationParametricFunction::operator() (const double nX)
         return maY[maY.size()-1];
 
     const double nU ((nX-nX1) / (nX0 - nX1));
-    return maY[nIndex0]*nU + maY[nIndex1]*(1-nU);    
+    return maY[nIndex0]*nU + maY[nIndex1]*(1-nU);
 }
 
 

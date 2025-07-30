@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -274,7 +274,7 @@ void SAL_CALL OptimisticSet::insertRow( const ORowSetRow& _rInsertRow,const conn
     static ::rtl::OUString aAnd		= ::rtl::OUString::createFromAscii(" AND ");
     ::rtl::OUString sIsNull(RTL_CONSTASCII_USTRINGPARAM(" IS NULL"));
     ::rtl::OUString sParam(RTL_CONSTASCII_USTRINGPARAM(" = ?"));
-    
+
 	// here we build the condition part for the update statement
 	SelectColumnsMetaData::const_iterator aIter = m_pColumnNames->begin();
     SelectColumnsMetaData::const_iterator aEnd = m_pColumnNames->end();
@@ -282,7 +282,7 @@ void SAL_CALL OptimisticSet::insertRow( const ORowSetRow& _rInsertRow,const conn
 	{
         if ( aResultSetChanged.find( aIter->second.sTableName ) == aResultSetChanged.end() )
             aResultSetChanged[aIter->second.sTableName] = false;
-        
+
         const ::rtl::OUString sQuotedColumnName = ::dbtools::quoteName( aQuote,aIter->second.sRealName);
         if ( (_rInsertRow->get())[aIter->second.nPosition].isModified() )
 		{
@@ -361,14 +361,14 @@ void SAL_CALL OptimisticSet::insertRow( const ORowSetRow& _rInsertRow,const conn
 				    if ( xRow.is() && xRes->next() )
 				    {
                         m_bResultSetChanged = true;
-                        continue;   
+                        continue;
                     }
                 }
                 catch(const SQLException&)
                 {
                 }
             }
-            
+
 			executeInsert(_rInsertRow,sSql.makeStringAndClear(),aSqlIter->first);
         }
     }
@@ -502,7 +502,7 @@ void OptimisticSet::fillJoinedColumns_throw(const ::std::vector< TNodePair >& i_
 }
 // -----------------------------------------------------------------------------
 void OptimisticSet::fillJoinedColumns_throw(const ::rtl::OUString& i_sLeftColumn,const ::rtl::OUString& i_sRightColumn)
-{    
+{
     sal_Int32 nLeft = 0,nRight = 0;
     SelectColumnsMetaData::const_iterator aLeftIter  = m_pKeyColumnNames->find(i_sLeftColumn);
     SelectColumnsMetaData::const_iterator aRightIter = m_pKeyColumnNames->find(i_sRightColumn);

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -32,7 +32,7 @@ css::uno::Any
 lcl_createAPIStyleToVBAObject( const css::uno::Any& aObject, const uno::Reference< XHelperInterface >& xParent, const uno::Reference< uno::XComponentContext >& xContext, const uno::Reference< frame::XModel >& xModel )
 {
 	uno::Reference< beans::XPropertySet > xStyleProps( aObject, uno::UNO_QUERY_THROW );
-	uno::Reference< excel::XStyle > xStyle( new ScVbaStyle( xParent, xContext, xStyleProps, xModel ) ); 
+	uno::Reference< excel::XStyle > xStyle( new ScVbaStyle( xParent, xContext, xStyleProps, xModel ) );
 	return uno::makeAny( xStyle );
 }
 
@@ -40,30 +40,30 @@ lcl_createAPIStyleToVBAObject( const css::uno::Any& aObject, const uno::Referenc
 ScVbaStyles::ScVbaStyles( const uno::Reference< XHelperInterface >& xParent, const uno::Reference< css::uno::XComponentContext > & xContext, const uno::Reference< frame::XModel >& xModel ) throw ( script::BasicErrorException ) : ScVbaStyles_BASE( xParent, xContext, uno::Reference< container::XIndexAccess >( ScVbaStyle::getStylesNameContainer( xModel ), uno::UNO_QUERY_THROW ) ), mxModel( xModel ), mxParent( xParent )
 {
 	try
-	{    
+	{
 		mxMSF.set( mxModel, uno::UNO_QUERY_THROW );
 		mxNameContainerCellStyles.set( m_xNameAccess, uno::UNO_QUERY_THROW );
 	}
-	catch (uno::Exception& )	
+	catch (uno::Exception& )
 	{
 		DebugHelper::exception(SbERR_METHOD_FAILED, rtl::OUString());
 	}
 }
 
-uno::Sequence< rtl::OUString > 
+uno::Sequence< rtl::OUString >
 ScVbaStyles::getStyleNames() throw ( uno::RuntimeException )
 {
 	return mxNameContainerCellStyles->getElementNames();
 }
 
 
-uno::Any 
+uno::Any
 ScVbaStyles::createCollectionObject(const uno::Any& aObject)
 {
 	return lcl_createAPIStyleToVBAObject( aObject, mxParent, mxContext, mxModel );
 }
 
-uno::Type SAL_CALL 
+uno::Type SAL_CALL
 ScVbaStyles::getElementType() throw (uno::RuntimeException)
 {
 	return excel::XStyle::static_type(0);
@@ -91,13 +91,13 @@ public:
         }
 };
 
-uno::Reference< container::XEnumeration > SAL_CALL 
+uno::Reference< container::XEnumeration > SAL_CALL
 ScVbaStyles::createEnumeration() throw (uno::RuntimeException)
 {
 	return new EnumWrapper( m_xIndexAccess, mxParent, mxContext, mxModel );
 }
 
-uno::Reference< excel::XStyle > SAL_CALL 
+uno::Reference< excel::XStyle > SAL_CALL
 ScVbaStyles::Add( const ::rtl::OUString& _sName, const uno::Any& _aBasedOn ) throw (script::BasicErrorException, uno::RuntimeException)
 {
 	uno::Reference< excel::XStyle > aRet;
@@ -144,7 +144,7 @@ ScVbaStyles::Add( const ::rtl::OUString& _sName, const uno::Any& _aBasedOn ) thr
 	return aRet;
 }
 
-void 
+void
 ScVbaStyles::Delete(const rtl::OUString _sStyleName) throw ( script::BasicErrorException )
 {
 	try

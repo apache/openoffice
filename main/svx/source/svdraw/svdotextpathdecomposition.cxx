@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -106,7 +106,7 @@ namespace
 			if(mnTextLength && rInfo.mpDXArray)
 			{
 				maDblDXArray.reserve(mnTextLength);
-				
+
 				for(xub_StrLen a(0); a < mnTextLength; a++)
 				{
 					maDblDXArray.push_back((double)rInfo.mpDXArray[a]);
@@ -195,7 +195,7 @@ namespace
 			// strip portions to maPathTextPortions
 			mrOutliner.SetDrawPortionHdl(LINK(this, impTextBreakupHandler, decompositionPathTextPrimitive));
 			mrOutliner.StripPortions();
-			
+
 			if(!maPathTextPortions.empty())
 			{
 				// sort portions by paragraph, x and y
@@ -251,7 +251,7 @@ namespace
 			if(mxBreak.is())
 			{
 				sal_Int32 nDone(0L);
-				nNextGlyphLen = (xub_StrLen)mxBreak->nextCharacters(pCandidate->getText(), nPosition, 
+				nNextGlyphLen = (xub_StrLen)mxBreak->nextCharacters(pCandidate->getText(), nPosition,
 					rFontLocale, CharacterIteratorMode::SKIPCELL, 1, nDone) - nPosition;
 			}
 
@@ -260,8 +260,8 @@ namespace
 
 	public:
 		impPolygonParagraphHandler(
-			const drawinglayer::attribute::SdrFormTextAttribute& rSdrFormTextAttribute, 
-			std::vector< drawinglayer::primitive2d::BasePrimitive2D* >& rDecomposition, 
+			const drawinglayer::attribute::SdrFormTextAttribute& rSdrFormTextAttribute,
+			std::vector< drawinglayer::primitive2d::BasePrimitive2D* >& rDecomposition,
 			std::vector< drawinglayer::primitive2d::BasePrimitive2D* >& rShadowDecomposition)
 		:	maSdrFormTextAttribute(rSdrFormTextAttribute),
 			mrDecomposition(rDecomposition),
@@ -270,7 +270,7 @@ namespace
 			// prepare BreakIterator
 			Reference < XMultiServiceFactory > xMSF = ::comphelper::getProcessServiceFactory();
 			Reference < XInterface > xInterface = xMSF->createInstance(::rtl::OUString::createFromAscii("com.sun.star.i18n.BreakIterator"));
-			
+
 			if(xInterface.is())
 			{
 				Any x = xInterface->queryInterface(::getCppuType((const Reference< XBreakIterator >*)0));
@@ -293,8 +293,8 @@ namespace
 				aPolygonCandidate.flip();
 			}
 
-			if(maSdrFormTextAttribute.getFormTextStart() 
-                && (XFT_LEFT == maSdrFormTextAttribute.getFormTextAdjust() 
+			if(maSdrFormTextAttribute.getFormTextStart()
+                && (XFT_LEFT == maSdrFormTextAttribute.getFormTextAdjust()
                     || XFT_RIGHT == maSdrFormTextAttribute.getFormTextAdjust()))
 			{
 				if(XFT_LEFT == maSdrFormTextAttribute.getFormTextAdjust())
@@ -360,7 +360,7 @@ namespace
 				basegfx::B2DVector aFontScaling;
 				const drawinglayer::attribute::FontAttribute aCandidateFontAttribute(
                     drawinglayer::primitive2d::getFontAttributeFromVclFont(
-                        aFontScaling, 
+                        aFontScaling,
                         pCandidate->getFont(),
                         pCandidate->isRTL(),
                         false));
@@ -407,14 +407,14 @@ namespace
 							if(XFTSHADOW_NORMAL == maSdrFormTextAttribute.getFormTextShadow())
 							{
 								aNewShadowTransform.translate(
-                                    maSdrFormTextAttribute.getFormTextShdwXVal(), 
+                                    maSdrFormTextAttribute.getFormTextShdwXVal(),
                                     -maSdrFormTextAttribute.getFormTextShdwYVal());
 							}
 							else // XFTSHADOW_SLANT
 							{
 								double fScaleValue(maSdrFormTextAttribute.getFormTextShdwYVal() / 100.0);
 								double fShearValue(-maSdrFormTextAttribute.getFormTextShdwXVal() * F_PI1800);
-								
+
 								aNewShadowTransform.scale(1.0, fScaleValue);
 								aNewShadowTransform.shearX(sin(fShearValue));
 								aNewShadowTransform.scale(1.0, cos(fShearValue));
@@ -429,13 +429,13 @@ namespace
 								const basegfx::B2DVector aDirection(aEndPos - aStartPos);
 								aNewTransformB.rotate(atan2(aDirection.getY(), aDirection.getX()));
 								aNewTransformB.translate(aStartPos.getX(), aStartPos.getY());
-								
+
 								break;
 							}
 							case XFT_UPRIGHT :
 							{
 								aNewTransformB.translate(aStartPos.getX() - (fPortionLength / 2.0), aStartPos.getY());
-								
+
 								break;
 							}
 							case XFT_SLANTX :
@@ -453,7 +453,7 @@ namespace
 								// need to be avoided
                                 aNewTransformB.scale(1.0, fCos);
                                 aNewTransformB.translate(aStartPos.getX() - (fPortionLength / 2.0), aStartPos.getY());
-								
+
 								break;
 							}
 							case XFT_SLANTY :
@@ -463,7 +463,7 @@ namespace
 								const double fShearValue(atan2(aDirection.getY(), aDirection.getX()));
                                 const double fCos(cos(fShearValue));
                                 const double fTan(tan(fShearValue));
-								
+
 								// shear to 'stand' on the curve
 								aNewTransformB.shearY(fTan);
 
@@ -472,7 +472,7 @@ namespace
    								aNewTransformA.scale(fCos, 1.0);
 
 								aNewTransformB.translate(aStartPos.getX(), aStartPos.getY());
-								
+
 								break;
 							}
 							default : break; // XFT_NONE
@@ -488,7 +488,7 @@ namespace
 
 							// use back vector (aStartPos - aEndPos) here to get mirrored perpendicular as in old stuff
 							const basegfx::B2DVector aPerpendicular(
-                                basegfx::getNormalizedPerpendicular(aStartPos - aEndPos) * 
+                                basegfx::getNormalizedPerpendicular(aStartPos - aEndPos) *
                                 maSdrFormTextAttribute.getFormTextDistance());
 							aNewTransformB.translate(aPerpendicular.getX(), aPerpendicular.getY());
 						}
@@ -497,7 +497,7 @@ namespace
 						{
 							const xub_StrLen nPortionIndex(pCandidate->getPortionIndex(nUsedTextLength, nNextGlyphLen));
 							::std::vector< double > aNewDXArray;
-							
+
 							if(nNextGlyphLen > 1 && pCandidate->getDoubleDXArray().size())
 							{
 								// copy DXArray for portion
@@ -530,17 +530,17 @@ namespace
 							    const Color aShadowColor(maSdrFormTextAttribute.getFormTextShdwColor());
 							    const basegfx::BColor aRGBShadowColor(aShadowColor.getBColor());
 
-							    drawinglayer::primitive2d::TextSimplePortionPrimitive2D* pNew = 
+							    drawinglayer::primitive2d::TextSimplePortionPrimitive2D* pNew =
                                     new drawinglayer::primitive2d::TextSimplePortionPrimitive2D(
-								        aNewTransformB * aNewShadowTransform * aNewTransformA, 
-								        pCandidate->getText(), 
-								        nPortionIndex, 
+								        aNewTransformB * aNewShadowTransform * aNewTransformA,
+								        pCandidate->getText(),
+								        nPortionIndex,
 								        nNextGlyphLen,
-								        aNewDXArray, 
-								        aCandidateFontAttribute, 
+								        aNewDXArray,
+								        aCandidateFontAttribute,
                                         pCandidate->getLocale(),
 								        aRGBShadowColor);
-								
+
 							    mrShadowDecomposition.push_back(pNew);
 						    }
 
@@ -549,17 +549,17 @@ namespace
 							    const Color aColor(pCandidate->getFont().GetColor());
 							    const basegfx::BColor aRGBColor(aColor.getBColor());
 
-							    drawinglayer::primitive2d::TextSimplePortionPrimitive2D* pNew = 
+							    drawinglayer::primitive2d::TextSimplePortionPrimitive2D* pNew =
                                     new drawinglayer::primitive2d::TextSimplePortionPrimitive2D(
-								        aNewTransformB * aNewTransformA, 
-								        pCandidate->getText(), 
-								        nPortionIndex, 
-								        nNextGlyphLen, 
-								        aNewDXArray, 
-								        aCandidateFontAttribute, 
+								        aNewTransformB * aNewTransformA,
+								        pCandidate->getText(),
+								        nPortionIndex,
+								        nNextGlyphLen,
+								        aNewDXArray,
+								        aCandidateFontAttribute,
                                         pCandidate->getLocale(),
 								        aRGBColor);
-    							
+
 							    mrDecomposition.push_back(pNew);
 						    }
                         }
@@ -582,10 +582,10 @@ namespace
 namespace
 {
 	void impAddPolygonStrokePrimitives(
-		const basegfx::B2DPolyPolygonVector& rB2DPolyPolyVector, 
-		const basegfx::B2DHomMatrix& rTransform, 
-		const drawinglayer::attribute::LineAttribute& rLineAttribute, 
-		const drawinglayer::attribute::StrokeAttribute& rStrokeAttribute, 
+		const basegfx::B2DPolyPolygonVector& rB2DPolyPolyVector,
+		const basegfx::B2DHomMatrix& rTransform,
+		const drawinglayer::attribute::LineAttribute& rLineAttribute,
+		const drawinglayer::attribute::StrokeAttribute& rStrokeAttribute,
 		std::vector< drawinglayer::primitive2d::BasePrimitive2D* >& rTarget)
 	{
 		for(basegfx::B2DPolyPolygonVector::const_iterator aPolygon(rB2DPolyPolyVector.begin()); aPolygon != rB2DPolyPolyVector.end(); aPolygon++)
@@ -593,11 +593,11 @@ namespace
 			// prepare PolyPolygons
 			basegfx::B2DPolyPolygon aB2DPolyPolygon = *aPolygon;
 			aB2DPolyPolygon.transform(rTransform);
-			
+
 			for(sal_uInt32 a(0L); a < aB2DPolyPolygon.count(); a++)
 			{
 				// create one primitive per polygon
-				drawinglayer::primitive2d::PolygonStrokePrimitive2D* pNew = 
+				drawinglayer::primitive2d::PolygonStrokePrimitive2D* pNew =
                     new drawinglayer::primitive2d::PolygonStrokePrimitive2D(
                         aB2DPolyPolygon.getB2DPolygon(a), rLineAttribute, rStrokeAttribute);
 				rTarget.push_back(pNew);
@@ -606,11 +606,11 @@ namespace
 	}
 
 	drawinglayer::primitive2d::Primitive2DSequence impAddPathTextOutlines(
-		const std::vector< drawinglayer::primitive2d::BasePrimitive2D* >& rSource, 
+		const std::vector< drawinglayer::primitive2d::BasePrimitive2D* >& rSource,
         const drawinglayer::attribute::SdrFormTextOutlineAttribute& rOutlineAttribute)
 	{
 		std::vector< drawinglayer::primitive2d::BasePrimitive2D* > aNewPrimitives;
-		
+
 		for(sal_uInt32 a(0L); a < rSource.size(); a++)
 		{
 			const drawinglayer::primitive2d::TextSimplePortionPrimitive2D* pTextCandidate = dynamic_cast< const drawinglayer::primitive2d::TextSimplePortionPrimitive2D* >(rSource[a]);
@@ -628,10 +628,10 @@ namespace
 				    // create stroke primitives
 				    std::vector< drawinglayer::primitive2d::BasePrimitive2D* > aStrokePrimitives;
 				    impAddPolygonStrokePrimitives(
-                        aB2DPolyPolyVector, 
-                        aPolygonTransform, 
-                        rOutlineAttribute.getLineAttribute(), 
-                        rOutlineAttribute.getStrokeAttribute(), 
+                        aB2DPolyPolyVector,
+                        aPolygonTransform,
+                        rOutlineAttribute.getLineAttribute(),
+                        rOutlineAttribute.getStrokeAttribute(),
                         aStrokePrimitives);
 				    const sal_uInt32 nStrokeCount(aStrokePrimitives.size());
 
@@ -647,9 +647,9 @@ namespace
 							    aStrokePrimitiveSequence[b] = drawinglayer::primitive2d::Primitive2DReference(aStrokePrimitives[b]);
 						    }
 
-						    drawinglayer::primitive2d::UnifiedTransparencePrimitive2D* pNew2 = 
+						    drawinglayer::primitive2d::UnifiedTransparencePrimitive2D* pNew2 =
                                 new drawinglayer::primitive2d::UnifiedTransparencePrimitive2D(
-                                    aStrokePrimitiveSequence, 
+                                    aStrokePrimitiveSequence,
                                     (double)rOutlineAttribute.getTransparence() / 100.0);
 						    aNewPrimitives.push_back(pNew2);
 					    }
@@ -687,7 +687,7 @@ namespace
 // primitive decomposition
 
 void SdrTextObj::impDecomposePathTextPrimitive(
-	drawinglayer::primitive2d::Primitive2DSequence& rTarget, 
+	drawinglayer::primitive2d::Primitive2DSequence& rTarget,
 	const drawinglayer::primitive2d::SdrPathTextPrimitive2D& rSdrPathTextPrimitive,
 	const drawinglayer::geometry::ViewInformation2D& aViewInformation) const
 {
@@ -728,8 +728,8 @@ void SdrTextObj::impDecomposePathTextPrimitive(
 			std::vector< drawinglayer::primitive2d::BasePrimitive2D* > aRegularDecomposition;
 			std::vector< drawinglayer::primitive2d::BasePrimitive2D* > aShadowDecomposition;
 			impPolygonParagraphHandler aPolygonParagraphHandler(
-                rFormTextAttribute, 
-				aRegularDecomposition, 
+                rFormTextAttribute,
+				aRegularDecomposition,
 				aShadowDecomposition);
 			sal_uInt32 a;
 
@@ -757,7 +757,7 @@ void SdrTextObj::impDecomposePathTextPrimitive(
 
 			const sal_uInt32 nShadowCount(aShadowDecomposition.size());
 			const sal_uInt32 nRegularCount(aRegularDecomposition.size());
-			
+
 			if(nShadowCount)
 			{
 				// add shadow primitives to decomposition
@@ -769,14 +769,14 @@ void SdrTextObj::impDecomposePathTextPrimitive(
 				}
 
 				// evtl. add shadow outlines
-				if(rFormTextAttribute.getFormTextOutline() 
+				if(rFormTextAttribute.getFormTextOutline()
 					&& !rFormTextAttribute.getShadowOutline().isDefault())
 				{
 					const drawinglayer::primitive2d::Primitive2DSequence aOutlines(
                         impAddPathTextOutlines(
-							aShadowDecomposition, 
+							aShadowDecomposition,
 							rFormTextAttribute.getShadowOutline()));
-					
+
 					drawinglayer::primitive2d::appendPrimitive2DSequenceToPrimitive2DSequence(aRetvalA, aOutlines);
 				}
 			}
@@ -792,12 +792,12 @@ void SdrTextObj::impDecomposePathTextPrimitive(
 				}
 
 				// evtl. add outlines
-				if(rFormTextAttribute.getFormTextOutline() 
+				if(rFormTextAttribute.getFormTextOutline()
 					&& !rFormTextAttribute.getOutline().isDefault())
 				{
 					const drawinglayer::primitive2d::Primitive2DSequence aOutlines(
                         impAddPathTextOutlines(
-							aRegularDecomposition, 
+							aRegularDecomposition,
 							rFormTextAttribute.getOutline()));
 
 					drawinglayer::primitive2d::appendPrimitive2DSequenceToPrimitive2DSequence(aRetvalB, aOutlines);

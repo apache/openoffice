@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 #include "precompiled_sfx2.hxx"
@@ -72,7 +72,7 @@ namespace
             (void)rEvent;
             mrInfoProvider.SetFrame(NULL);
             mxFrame = NULL;
-        }    
+        }
 
     private:
         sfx2::sidebar::CommandInfoProvider& mrInfoProvider;
@@ -100,7 +100,7 @@ CommandInfoProvider::CommandInfoProvider (void)
       mxCachedModuleAcceleratorConfiguration(),
       mxCachedGlobalAcceleratorConfiguration(),
       msCachedModuleIdentifier(),
-      mxFrameListener()    
+      mxFrameListener()
 {
 }
 
@@ -124,7 +124,7 @@ OUString CommandInfoProvider::GetLabelForCommand (
     const Reference<frame::XFrame>& rxFrame)
 {
     SetFrame(rxFrame);
-    
+
     const OUString sLabel (GetCommandLabel(rsCommandName));
     const OUString sShortCut (GetCommandShortcut(rsCommandName));
     if (sShortCut.getLength() > 0)
@@ -269,7 +269,7 @@ OUString CommandInfoProvider::GetCommandShortcut (const OUString& rsCommandName)
     sShortcut = RetrieveShortcutsFromConfiguration(GetModuleAcceleratorConfiguration(), rsCommandName);
     if (sShortcut.getLength() > 0)
         return sShortcut;
-    
+
     sShortcut = RetrieveShortcutsFromConfiguration(GetGlobalAcceleratorConfiguration(), rsCommandName);
     if (sShortcut.getLength() > 0)
         return sShortcut;
@@ -314,7 +314,7 @@ OUString CommandInfoProvider::RetrieveShortcutsFromConfiguration(
 Sequence<beans::PropertyValue> CommandInfoProvider::GetCommandProperties (const OUString& rsCommandName)
 {
     Sequence<beans::PropertyValue> aProperties;
-    
+
     try
     {
         const OUString sModuleIdentifier (GetModuleIdentifier());

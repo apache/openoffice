@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -701,7 +701,7 @@ SET_FONTALIGNMENT:
 						nTokenValue = 240;
 					else
 						nTokenValue *= 10;
-// #i66167# 
+// #i66167#
 // for the SwRTFParser 'IsCalcValue' will be false and for the EditRTFParser
 // the converiosn takes now place in EditRTFParser since for other reasons
 // the wrong MapUnit might still be use there
@@ -1248,8 +1248,8 @@ ATTR_SETEMPHASIS:
 
                                 /*
                                 cmc: #i76140, he who consumed the { must consume the }
-                                We rewound to a state of { being the current 
-                                token so it is our responsibility to consume the } 
+                                We rewound to a state of { being the current
+                                token so it is our responsibility to consume the }
                                 token if we consumed the {. We will not have consumed
                                 the { if it belonged to our caller, i.e. if the { we
                                 are handling is the "firsttoken" passed to us then
@@ -1259,7 +1259,7 @@ ATTR_SETEMPHASIS:
                                 if (nToken == BRACELEFT && !bFirstToken)
                                 {
                                     nToken = GetNextToken();
-                                    DBG_ASSERT( nToken == BRACERIGHT, 
+                                    DBG_ASSERT( nToken == BRACERIGHT,
                                         "} did not follow { as expected\n");
                                 }
 							}

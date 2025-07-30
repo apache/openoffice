@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 #include "precompiled_sd.hxx"
@@ -160,7 +160,7 @@ Size MasterPagesSelector::GetPreferredSize (void)
 void MasterPagesSelector::UpdateLocks (const ItemList& rItemList)
 {
     ItemList aNewLockList;
-    
+
     // In here we first lock the master pages in the given list and then
     // release the locks acquired in a previous call to this method.  When
     // this were done the other way round the lock count of some master
@@ -190,7 +190,7 @@ void MasterPagesSelector::UpdateLocks (const ItemList& rItemList)
 void MasterPagesSelector::Fill (void)
 {
     ::std::auto_ptr<ItemList> pItemList (new ItemList());
-    
+
     Fill(*pItemList);
 
     UpdateLocks(*pItemList);
@@ -334,7 +334,7 @@ void MasterPagesSelector::ExecuteCommand (const sal_Int32 nCommandId)
             break;
 
         case SID_TP_USE_FOR_NEW_PRESENTATIONS:
-            DBG_ASSERT (false, 
+            DBG_ASSERT (false,
                 "Using slides as default for new presentations"
                 " is not yet implemented");
             break;
@@ -647,7 +647,7 @@ void MasterPagesSelector::SetItem (
             PreviewValueSet::RemoveItem(nIndex);
         }
     }
-  
+
 }
 
 
@@ -711,7 +711,7 @@ void MasterPagesSelector::InvalidatePreview (const SdPage* pPage)
 void MasterPagesSelector::UpdateAllPreviews (void)
 {
     const ::osl::MutexGuard aGuard (maMutex);
-    
+
     for (sal_uInt16 nIndex=1; nIndex<=PreviewValueSet::GetItemCount(); nIndex++)
     {
         UserData* pData = GetUserData(nIndex);
@@ -817,13 +817,13 @@ void MasterPagesSelector::UpdateItemList (::std::auto_ptr<ItemList> pNewItemList
             SetItem(nIndex,*iNewItem);
         }
     }
-    
+
     // Append new items.
     for ( ; iNewItem!=iNewEnd; ++iNewItem,++nIndex)
     {
         SetItem(nIndex,*iNewItem);
     }
-    
+
     // Remove trailing items.
     for ( ; iCurrentItem!=iCurrentEnd; ++iCurrentItem,++nIndex)
     {
@@ -831,7 +831,7 @@ void MasterPagesSelector::UpdateItemList (::std::auto_ptr<ItemList> pNewItemList
     }
 
     maCurrentItemList.swap(*pNewItemList);
-    
+
     PreviewValueSet::Rearrange();
     if (mxSidebar.is())
         mxSidebar->requestLayout();

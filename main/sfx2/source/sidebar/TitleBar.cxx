@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 #include "precompiled_sfx2.hxx"
@@ -53,7 +53,7 @@ TitleBar::TitleBar (
       maIcon()
 {
     SetBackground(rInitialBackgroundPaint.GetWallpaper());
-    
+
     maToolBox.SetSelectHdl(LINK(this, TitleBar, SelectionHandler));
 }
 
@@ -93,8 +93,8 @@ void TitleBar::Paint (const Rectangle& rUpdateArea)
     Size aWindowSize (GetOutputSizePixel());
     Rectangle aTitleBarBox(
         0,
-        0, 
-        aWindowSize.Width(), 
+        0,
+        aWindowSize.Width(),
         aWindowSize.Height()
         );
 
@@ -110,7 +110,7 @@ void TitleBar::Paint (const Rectangle& rUpdateArea)
 void TitleBar::DataChanged (const DataChangedEvent& rEvent)
 {
     (void)rEvent;
-    
+
     SetBackground(GetBackgroundPaint().GetWallpaper());
 }
 
@@ -174,7 +174,7 @@ void TitleBar::PaintTitle (const Rectangle& rTitleBox)
     Push(PUSH_FONT | PUSH_TEXTCOLOR);
 
     Rectangle aTitleBox (rTitleBox);
-    
+
     // When there is an icon then paint it at the left of the given
     // box.
     if ( !! maIcon)
@@ -241,7 +241,7 @@ IMPL_LINK(TitleBar, SelectionHandler, ToolBox*, pToolBox)
     const sal_uInt16 nItemId (maToolBox.GetHighlightItemId());
 
     HandleToolBoxItemClick(nItemId);
-    
+
     return sal_True;
 }
 

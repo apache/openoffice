@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -410,7 +410,7 @@ bool SubstitutePathVariables_Impl::FilterRuleSet( const SubstituteRuleVector& aR
     if ( !aRuleSet.empty() )
     {
         const sal_uInt32 nCount = aRuleSet.size();
-        
+
         sal_Int16 nPrioCurrentRule = aEnvPrioTable[ ET_UNKNOWN ];
         for ( sal_uInt32 nIndex = 0; nIndex < nCount; nIndex++ )
         {
@@ -733,7 +733,7 @@ rtl::OUString SubstitutePathVariables::GetWorkVariableValue() const
                             ::rtl::OUString::createFromAscii("Variables"),
                             ::rtl::OUString::createFromAscii("Work"),
                             ::comphelper::ConfigurationHelper::E_READONLY) >>= aWorkPath;
-        
+
     // fallback to $HOME in case platform dependend config layer does not return
     // an usuable work dir value.
     if (aWorkPath.getLength() < 1)
@@ -1217,7 +1217,7 @@ void SubstitutePathVariables::SetPredefinedPathVariables( PredefinedPathVariable
     // Set $(lang)
     aPreDefPathVariables.m_FixedVar[ PREDEFVAR_LANG ] = ConvertOSLtoUCBURL(
     rtl::OUString::createFromAscii( ResMgr::GetLang( aPreDefPathVariables.m_eLanguageType, 0 ) ));
-    
+
     // Set $(vlang)
     aPreDefPathVariables.m_FixedVar[ PREDEFVAR_VLANG ] = aLocaleStr;
 

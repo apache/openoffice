@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -608,11 +608,11 @@ void lcl_CorrectIndents(PropertySequence & aPropSeq)
         uno::Any aAny;
 
         sal_Int32 nLeftMargin = 0;
-	
-#ifdef DEBUG        
+
+#ifdef DEBUG
         ::std::string aStr(aPropSeq.toString());
 #endif
-	
+
         aAny = aPropSeq.get(PROP_PARA_LEFT_MARGIN);
         if (aAny.hasValue())
             aAny >>= nLeftMargin;
@@ -628,7 +628,7 @@ void lcl_CorrectIndents(PropertySequence & aPropSeq)
         }
 
         aAny = aPropSeq.get(PROP_LEFT_BORDER);
-        
+
         if (aAny.hasValue())
         {
             table::BorderLine aBorderLine;
@@ -643,7 +643,7 @@ void lcl_CorrectIndents(PropertySequence & aPropSeq)
             aAny >>= nRightMargin;
 
         aAny = aPropSeq.get(PROP_RIGHT_BORDER_DISTANCE);
-        
+
         if (aAny.hasValue())
         {
             sal_Int32 nRightBorderDistance = 0;
@@ -653,7 +653,7 @@ void lcl_CorrectIndents(PropertySequence & aPropSeq)
         }
 
         aAny = aPropSeq.get(PROP_RIGHT_BORDER);
-        
+
         if (aAny.hasValue())
         {
             table::BorderLine aBorderLine;
@@ -709,16 +709,16 @@ void DomainMapper_Impl::finishParagraph( PropertyMapPtr pPropertyMap )
 #ifdef DEBUG_DOMAINMAPPER
     dmapper_logger->startElement("finishParagraph");
 #endif
-    
+
     ParagraphPropertyMap* pParaContext = dynamic_cast< ParagraphPropertyMap* >( pPropertyMap.get() );
     TextAppendContext& rAppendContext = m_aTextAppendStack.top();
     uno::Reference< text::XTextAppend >  xTextAppend = rAppendContext.xTextAppend;
     PropertyNameSupplier& rPropNameSupplier = PropertyNameSupplier::GetPropertyNameSupplier();
-    
+
 #ifdef DEBUG_DOMAINMAPPER
     dmapper_logger->attribute("isTextAppend", xTextAppend.is());
-#endif 
-    
+#endif
+
     if(xTextAppend.is() && ! getTableManager( ).isIgnore() && pParaContext != NULL)
     {
         try
@@ -738,8 +738,8 @@ void DomainMapper_Impl::finishParagraph( PropertyMapPtr pPropertyMap )
               old _and_ new DropCap must not occur
              */
 
-            bool bIsDropCap = 
-                pParaContext->IsFrameMode() && 
+            bool bIsDropCap =
+                pParaContext->IsFrameMode() &&
                 sal::static_int_cast<Id>(pParaContext->GetDropCap()) != NS_ooxml::LN_Value_wordprocessingml_ST_DropCap_none;
 
             style::DropCapFormat aDrop;
@@ -787,7 +787,7 @@ void DomainMapper_Impl::finishParagraph( PropertyMapPtr pPropertyMap )
                         //
                         StyleSheetEntryPtr pParaStyle =
                             m_pStyleSheetTable->FindStyleSheetByConvertedStyleName(rAppendContext.pLastParagraphProperties->GetParaStyleName());
-                        
+
                         PropertySequence aPropSequence;
                         if ( pParaStyle.get( ) )
                         {
@@ -800,7 +800,7 @@ void DomainMapper_Impl::finishParagraph( PropertyMapPtr pPropertyMap )
                             if( bAutoWidth )
                                 nWidth = DEFAULT_FRAME_MIN_WIDTH;
                             aPropSequence.set(PROP_WIDTH, nWidth);
-                            
+
                             if (rAppendContext.pLastParagraphProperties->Geth())
                             {
                                 aPropSequence.set(PROP_HEIGHT, rAppendContext.pLastParagraphProperties->Geth());
@@ -809,7 +809,7 @@ void DomainMapper_Impl::finishParagraph( PropertyMapPtr pPropertyMap )
                             {
                                 aPropSequence.set(PROP_HEIGHT, pStyleProperties->Geth());
                             }
-                            
+
                             if (rAppendContext.pLastParagraphProperties->GethRule() >= 0)
                             {
                                 aPropSequence.set(PROP_SIZE_TYPE, rAppendContext.pLastParagraphProperties->GethRule());
@@ -822,16 +822,16 @@ void DomainMapper_Impl::finishParagraph( PropertyMapPtr pPropertyMap )
                             {
                                 aPropSequence.set(PROP_SIZE_TYPE, text::SizeType::VARIABLE);
                             }
-                            
+
                             if (bAutoWidth)
                             {
                                 aPropSequence.set(PROP_WIDTH_TYPE,  text::SizeType::MIN);
-                            }                                     
+                            }
                             else
                             {
                                 aPropSequence.set(PROP_WIDTH_TYPE,  text::SizeType::FIX);
                             }
-                            
+
                             sal_Int16 nHoriOrient = text::HoriOrientation::NONE;
                             if ( rAppendContext.pLastParagraphProperties->GetxAlign() >= 0)
                             {
@@ -846,25 +846,25 @@ void DomainMapper_Impl::finishParagraph( PropertyMapPtr pPropertyMap )
 
                             if (rAppendContext.pLastParagraphProperties->IsxValid())
                             {
-                                aPropSequence.set(PROP_HORI_ORIENT_POSITION, 
+                                aPropSequence.set(PROP_HORI_ORIENT_POSITION,
                                                   rAppendContext.pLastParagraphProperties->Getx());
                             }
                             else
                             {
-                                aPropSequence.set(PROP_HORI_ORIENT_POSITION, 
+                                aPropSequence.set(PROP_HORI_ORIENT_POSITION,
                                                   pStyleProperties->Getx());
                             }
-                            
+
                             if (rAppendContext.pLastParagraphProperties->GethAnchor() >= 0)
                             {
-                                aPropSequence.set(PROP_HORI_ORIENT_RELATION, 
+                                aPropSequence.set(PROP_HORI_ORIENT_RELATION,
                                                   rAppendContext.pLastParagraphProperties->GethAnchor());
                             }
                             else
                             {
                                 aPropSequence.set(PROP_HORI_ORIENT_RELATION, pStyleProperties->GethAnchor());
                             }
-                            
+
                             sal_Int16 nVertOrient =  text::VertOrientation::NONE;
                             if ( rAppendContext.pLastParagraphProperties->GetyAlign() >= 0)
                             {
@@ -876,7 +876,7 @@ void DomainMapper_Impl::finishParagraph( PropertyMapPtr pPropertyMap )
                             }
 
                             aPropSequence.set(PROP_VERT_ORIENT, nVertOrient);
-                            
+
                             if ( rAppendContext.pLastParagraphProperties->IsyValid())
                             {
                                 aPropSequence.set(PROP_VERT_ORIENT_POSITION, rAppendContext.pLastParagraphProperties->Gety());                                   }
@@ -884,29 +884,29 @@ void DomainMapper_Impl::finishParagraph( PropertyMapPtr pPropertyMap )
                             {
                                 aPropSequence.set(PROP_VERT_ORIENT_POSITION,  pStyleProperties->Gety());
                             }
-                            
+
                             if (rAppendContext.pLastParagraphProperties->GetvAnchor() >= 0)
                             {
-                                aPropSequence.set(PROP_VERT_ORIENT_RELATION, 
+                                aPropSequence.set(PROP_VERT_ORIENT_RELATION,
                                                   rAppendContext.pLastParagraphProperties->GetvAnchor());
                             }
                             else
                             {
-                                aPropSequence.set(PROP_VERT_ORIENT_RELATION, 
+                                aPropSequence.set(PROP_VERT_ORIENT_RELATION,
                                                   pStyleProperties->GetvAnchor());
                             }
-                            
+
                             if (rAppendContext.pLastParagraphProperties->GetWrap() >= 0)
                             {
-                                aPropSequence.set(PROP_SURROUND, 
+                                aPropSequence.set(PROP_SURROUND,
                                                   rAppendContext.pLastParagraphProperties->GetWrap());
                             }
                             else
                             {
-                                aPropSequence.set(PROP_SURROUND, 
+                                aPropSequence.set(PROP_SURROUND,
                                                   pStyleProperties->GetWrap());
                             }
-                            
+
                             sal_Int32 nTopDist;
 
                             if (nVertOrient == text::VertOrientation::TOP)
@@ -926,13 +926,13 @@ void DomainMapper_Impl::finishParagraph( PropertyMapPtr pPropertyMap )
                             }
 
                             aPropSequence.set(PROP_TOP_MARGIN, nTopDist);
-                            
+
                             sal_Int32 nBottomDist = nTopDist;
                             if (nVertOrient == text::VertOrientation::BOTTOM)
                             {
                                 nBottomDist = 0;
                             }
-                            
+
                             aPropSequence.set(PROP_BOTTOM_MARGIN, nBottomDist);
 
                             sal_Int32 nLeftDist = 0;
@@ -954,20 +954,20 @@ void DomainMapper_Impl::finishParagraph( PropertyMapPtr pPropertyMap )
                             }
 
                             aPropSequence.set(PROP_LEFT_MARGIN, nLeftDist);
-                            
+
                             sal_Int32 nRightDist = nLeftDist;
-                                                        
+
                             if ( nHoriOrient == text::HoriOrientation::RIGHT)
                             {
                                 nRightDist = 0;
                             }
 
                             aPropSequence.set(PROP_RIGHT_MARGIN, nRightDist);
-                            
+
                             lcl_MoveBorderPropertiesToFrame(aPropSequence,
                                                             rAppendContext.pLastParagraphProperties->GetStartingRange(),
                                                             rAppendContext.pLastParagraphProperties->GetEndingRange());
-                            lcl_CorrectIndents(aPropSequence);                            
+                            lcl_CorrectIndents(aPropSequence);
                         }
                         //frame conversion has to be executed after table conversion
                         RegisterFrameConversion(rAppendContext.pLastParagraphProperties->GetStartingRange(),
@@ -997,7 +997,7 @@ void DomainMapper_Impl::finishParagraph( PropertyMapPtr pPropertyMap )
                     lcl_AddRangeAndStyle(pToBeSavedProperties, xTextAppend, pPropertyMap);
                 }
             }
-            
+
             PropertySequence::Pointer_t pPropSeq(new PropertySequence());
 
             if( pPropertyMap.get() )
@@ -1019,26 +1019,26 @@ void DomainMapper_Impl::finishParagraph( PropertyMapPtr pPropertyMap )
                 uno::Reference< text::XTextRange > xTextRange =
                     xTextAppend->finishParagraph( pPropSeq->getSequence() );
                 getTableManager( ).handle(xTextRange);
-            
+
                 // Set the anchor of the objects to the created paragraph
                 while ( m_aAnchoredStack.size( ) > 0 && !m_bIsInShape )
                 {
                     uno::Reference< text::XTextContent > xObj = m_aAnchoredStack.top( );
-                    try 
+                    try
                     {
 #if DEBUG
                         rtl::OUString sText( xTextRange->getString( ) );
 #endif
                         xObj->attach( xTextRange );
-                    } 
+                    }
                     catch ( uno::RuntimeException& e)
                     {
                         // this is normal: the shape is already attached
                         (void) e;
-                    }   
+                    }
                     m_aAnchoredStack.pop( );
                 }
-    
+
                 // Get the end of paragraph character inserted
                 uno::Reference< text::XTextCursor > xCur = xTextRange->getText( )->createTextCursor( );
                 xCur->gotoEnd( false );
@@ -1383,7 +1383,7 @@ void DomainMapper_Impl::CreateRedline( uno::Reference< text::XTextRange > xRange
             pRedlineProperties[0].Value <<= pRedline->m_sAuthor;
             pRedlineProperties[1].Name = rPropNameSupplier.GetName( PROP_REDLINE_DATE_TIME );
             pRedlineProperties[1].Value <<= lcl_DateStringToDateTime( pRedline->m_sDate );
-            
+
             xRedline->makeRedline( sType, aRedlineProperties );
         }
         catch( const uno::Exception & rEx )
@@ -1400,7 +1400,7 @@ void DomainMapper_Impl::CheckParaRedline( uno::Reference< text::XTextRange > xRa
     if ( m_pParaRedline.get( ) )
     {
         CreateRedline( xRange, m_pParaRedline );
-        ResetParaRedline( ); 
+        ResetParaRedline( );
     }
 }
 
@@ -1411,9 +1411,9 @@ void DomainMapper_Impl::CheckRedline( uno::Reference< text::XTextRange > xRange 
     for (; pIt != m_aRedlines.end( ); pIt++ )
     {
         CreateRedline( xRange, *pIt );
-        
+
         // Adding the non-mod redlines to the temporary vector
-        if ( pIt->get( ) && ( ( *pIt )->m_nToken & 0xffff ) != ooxml::OOXML_mod ) 
+        if ( pIt->get( ) && ( ( *pIt )->m_nToken & 0xffff ) != ooxml::OOXML_mod )
         {
             aCleaned.push_back( *pIt );
         }
@@ -1503,7 +1503,7 @@ void DomainMapper_Impl::PopAnnotation()
 void DomainMapper_Impl::PushShapeContext( const uno::Reference< drawing::XShape > xShape )
 {
     m_bIsInShape = true;
-    try 
+    try
     {
         // Add the shape to the text append stack
         m_aTextAppendStack.push( uno::Reference< text::XTextAppend >( xShape, uno::UNO_QUERY_THROW ) );
@@ -1516,13 +1516,13 @@ void DomainMapper_Impl::PushShapeContext( const uno::Reference< drawing::XShape 
         PropertyNameSupplier& rPropNameSupplier = PropertyNameSupplier::GetPropertyNameSupplier();
 
         uno::Reference< beans::XPropertySet > xProps( xShape, uno::UNO_QUERY_THROW );
-        xProps->setPropertyValue( 
+        xProps->setPropertyValue(
                 rPropNameSupplier.GetName( PROP_ANCHOR_TYPE ),
                 uno::makeAny( text::TextContentAnchorType_AT_PARAGRAPH ) );
         xProps->setPropertyValue(
                 rPropNameSupplier.GetName( PROP_OPAQUE ),
                 uno::makeAny( true ) );
-    } 
+    }
     catch ( const uno::Exception& e )
     {
         (void) e;
@@ -2504,7 +2504,7 @@ void DomainMapper_Impl::PushFieldContext()
 #ifdef DEBUG_DOMAINMAPPER
     dmapper_logger->element("pushFieldContext");
 #endif
-    
+
     uno::Reference< text::XTextAppend >  xTextAppend = m_aTextAppendStack.top().xTextAppend;
     //insert a dummy char to make sure the start range doesn't move together with the to-be-appended text
     xTextAppend->appendTextPortion(::rtl::OUString( '-' ), uno::Sequence< beans::PropertyValue >() );
@@ -2547,7 +2547,7 @@ void FieldContext::AppendCommand(const ::rtl::OUString& rPart)
 {
     m_sCommand += rPart;
 }
-    
+
 ::std::vector<rtl::OUString> FieldContext::GetCommandParts() const
 {
     ::std::vector<rtl::OUString> aResult;
@@ -2558,10 +2558,10 @@ void FieldContext::AppendCommand(const ::rtl::OUString& rPart)
     {
         OUString sToken = GetCommand().getToken(0, ' ', nIndex);
         bool bInStringNext = bInString;
-        
+
         if (sToken.getLength() == 0)
             continue;
-        
+
         if (sToken.getStr()[0] == '"')
         {
             bInStringNext = true;
@@ -2580,30 +2580,30 @@ void FieldContext::AppendCommand(const ::rtl::OUString& rPart)
                 sPart += OUString(' ');
                 sPart += sToken;
             }
-            else 
+            else
             {
                 sPart += sToken;
                 aResult.push_back(sPart);
             }
         }
-        else 
+        else
         {
             if (bInStringNext)
             {
                 sPart = sToken;
             }
-            else 
+            else
             {
                 aResult.push_back(sToken);
             }
         }
-        
+
         bInString = bInStringNext;
     }
-    
+
     return aResult;
 }
-    
+
 /*-- 29.01.2007 11:33:15---------------------------------------------------
 //collect the pieces of the command
   -----------------------------------------------------------------------*/
@@ -2614,7 +2614,7 @@ void DomainMapper_Impl::AppendFieldCommand(::rtl::OUString& rPartOfCommand)
     dmapper_logger->chars(rPartOfCommand);
     dmapper_logger->endElement("appendFieldCommand");
 #endif
-    
+
     FieldContextPtr pContext = m_aFieldStack.top();
     OSL_ENSURE( pContext.get(), "no field context available");
     if( pContext.get() )
@@ -2625,7 +2625,7 @@ void DomainMapper_Impl::AppendFieldCommand(::rtl::OUString& rPartOfCommand)
 /*-- 13.12.2007 11:45:43---------------------------------------------------
 
   -----------------------------------------------------------------------*/
-typedef std::multimap < sal_Int32, ::rtl::OUString > TOCStyleMap;    
+typedef std::multimap < sal_Int32, ::rtl::OUString > TOCStyleMap;
 
 const FieldConversionMap_t & lcl_GetFieldConversion()
 {
@@ -2705,9 +2705,9 @@ if(!bFilled)
 
         bFilled = true;
     }
-    
+
     return aFieldConversionMap;
-}        
+}
 
 void DomainMapper_Impl::handleFieldAsk
     (FieldContextPtr pContext,
@@ -2718,12 +2718,12 @@ void DomainMapper_Impl::handleFieldAsk
     //doesn the command contain a variable name?
     ::rtl::OUString sVariable, sHint;
 
-    sVariable = lcl_ExctractAskVariableAndHint( pContext->GetCommand(), 
+    sVariable = lcl_ExctractAskVariableAndHint( pContext->GetCommand(),
         sHint );
     if(sVariable.getLength())
     {
         // determine field master name
-        uno::Reference< beans::XPropertySet > xMaster = 
+        uno::Reference< beans::XPropertySet > xMaster =
             FindOrCreateFieldMaster
             ("com.sun.star.text.FieldMaster.SetExpression", sVariable );
 
@@ -2755,7 +2755,7 @@ void DomainMapper_Impl::handleAutoNum
     uno::Reference< beans::XPropertySet > xFieldProperties)
 {
     //create a sequence field master "AutoNr"
-    uno::Reference< beans::XPropertySet > xMaster = 
+    uno::Reference< beans::XPropertySet > xMaster =
     FindOrCreateFieldMaster
         ("com.sun.star.text.FieldMaster.SetExpression",
         rtl::OUString(RTL_CONSTASCII_USTRINGPARAM("AutoNr") ));
@@ -2781,16 +2781,16 @@ void DomainMapper_Impl::handleAuthor
 {
     xFieldProperties->setPropertyValue
         ( rPropNameSupplier.GetName(PROP_FULL_NAME), uno::makeAny( true ));
-    ::rtl::OUString sParam = 
+    ::rtl::OUString sParam =
         lcl_ExtractParameter(pContext->GetCommand(), sizeof(" AUTHOR") );
     if(sParam.getLength())
     {
         xFieldProperties->setPropertyValue(
-                rPropNameSupplier.GetName( PROP_IS_FIXED ), 
+                rPropNameSupplier.GetName( PROP_IS_FIXED ),
                 uno::makeAny( true ));
         //PROP_CURRENT_PRESENTATION is set later anyway
     }
-}       
+}
 
     void DomainMapper_Impl::handleDocProperty
         (FieldContextPtr pContext,
@@ -2800,9 +2800,9 @@ void DomainMapper_Impl::handleAuthor
 {
     //some docproperties should be imported as document statistic fields, some as DocInfo fields
     //others should be user fields
-    ::rtl::OUString sParam = 
+    ::rtl::OUString sParam =
         lcl_ExtractParameter(pContext->GetCommand(), sizeof(" DOCPROPERTY") );
-        
+
     if(sParam.getLength())
     {
         #define SET_ARABIC      0x01
@@ -2840,12 +2840,12 @@ void DomainMapper_Impl::handleAuthor
         //search for a field mapping
         ::rtl::OUString sFieldServiceName;
         sal_uInt16 nMap = 0;
-        for( ; nMap < sizeof(aDocProperties) / sizeof(DocPropertyMap); 
+        for( ; nMap < sizeof(aDocProperties) / sizeof(DocPropertyMap);
             ++nMap )
         {
             if(sParam.equalsAscii(aDocProperties[nMap].pDocPropertyName))
             {
-                sFieldServiceName = 
+                sFieldServiceName =
                 ::rtl::OUString::createFromAscii
                 (aDocProperties[nMap].pServiceName);
                 break;
@@ -2857,7 +2857,7 @@ void DomainMapper_Impl::handleAuthor
         if(!sFieldServiceName.getLength())
         {
             //create a custom property field
-            sServiceName += 
+            sServiceName +=
                 ::rtl::OUString::createFromAscii("DocInfo.Custom");
             bIsCustomField = true;
         }
@@ -2866,8 +2866,8 @@ void DomainMapper_Impl::handleAuthor
             sServiceName += sFieldServiceName;
         }
         xFieldInterface = m_xTextFactory->createInstance(sServiceName);
-        xFieldProperties = 
-            uno::Reference< beans::XPropertySet >( xFieldInterface, 
+        xFieldProperties =
+            uno::Reference< beans::XPropertySet >( xFieldInterface,
                 uno::UNO_QUERY_THROW);
         if( bIsCustomField )
             xFieldProperties->setPropertyValue(
@@ -2880,7 +2880,7 @@ void DomainMapper_Impl::handleAuthor
                     uno::makeAny( style::NumberingType::ARABIC ));
             else if(0 != (aDocProperties[nMap].nFlags & SET_FULL_NAME))
                 xFieldProperties->setPropertyValue(
-                    rPropNameSupplier.GetName(PROP_FULL_NAME), 
+                    rPropNameSupplier.GetName(PROP_FULL_NAME),
                         uno::makeAny( true ));
         }
     }
@@ -3003,7 +3003,7 @@ void DomainMapper_Impl::handleToc
         ( bTableOfFigures ?
               ::rtl::OUString(RTL_CONSTASCII_USTRINGPARAM
                 ("com.sun.star.text.IllustrationsIndex"))
-            : sTOCServiceName), 
+            : sTOCServiceName),
          uno::UNO_QUERY_THROW);
     xTOC->setPropertyValue(rPropNameSupplier.GetName( PROP_TITLE ), uno::makeAny(::rtl::OUString()));
     if( !bTableOfFigures )
@@ -3144,14 +3144,14 @@ void DomainMapper_Impl::CloseFieldCommand()
 #ifdef DEBUG_DOMAINMAPPER
     dmapper_logger->element("closeFieldCommand");
 #endif
-    
+
     FieldContextPtr pContext = m_aFieldStack.top();
     OSL_ENSURE( pContext.get(), "no field context available");
     if( pContext.get() )
     {
         m_bSetUserFieldContent = false;
         FieldConversionMap_t aFieldConversionMap = lcl_GetFieldConversion();
-        
+
         try
         {
             uno::Reference< uno::XInterface > xFieldInterface;
@@ -3189,7 +3189,7 @@ void DomainMapper_Impl::CloseFieldCommand()
                     dmapper_logger->chars(sServiceName);
                     dmapper_logger->endElement("fieldService");
 #endif
-                    
+
                     xFieldInterface = m_xTextFactory->createInstance(sServiceName);
                     xFieldProperties = uno::Reference< beans::XPropertySet >( xFieldInterface, uno::UNO_QUERY_THROW);
                 }
@@ -3271,11 +3271,11 @@ void DomainMapper_Impl::CloseFieldCommand()
                     break;
                     case FIELD_FILESIZE     : break;
                     case FIELD_FORMULA : break;
-                    case FIELD_FORMCHECKBOX : 
+                    case FIELD_FORMCHECKBOX :
                         {
-                            FFDataHandler::Pointer_t 
+                            FFDataHandler::Pointer_t
                                 pFFDataHandler(pContext->getFFDataHandler());
-                            FormControlHelper::Pointer_t 
+                            FormControlHelper::Pointer_t
                                 pFormControlHelper(new FormControlHelper
                                                    (FIELD_FORMCHECKBOX,
                                                     m_xTextDocument, pFFDataHandler));
@@ -3307,16 +3307,16 @@ void DomainMapper_Impl::CloseFieldCommand()
                         ::std::vector<rtl::OUString>::const_iterator aPartIt = aParts.begin();
 
                         OUString sURL;
-                        
-                        while (aPartIt != aItEnd) 
+
+                        while (aPartIt != aItEnd)
                         {
                             if (aPartIt->equalsAscii("\\l"))
                             {
                                 aPartIt++;
-                                
+
                                 if (aPartIt == aItEnd)
                                     break;
-                                
+
                                 sURL = OUString('#');
                                 sURL += *aPartIt;
                             }
@@ -3328,18 +3328,18 @@ void DomainMapper_Impl::CloseFieldCommand()
                                      aPartIt->equalsAscii("\\t"))
                             {
                                 aPartIt++;
-                                
+
                                 if (aPartIt == aItEnd)
                                     break;
                             }
-                            else 
+                            else
                             {
                                 sURL = *aPartIt;
                             }
 
                             aPartIt++;
                         }
-                        
+
                         if (sURL.getLength() > 0)
                         {
                             pContext->SetHyperlinkURL(sURL);
@@ -3433,7 +3433,7 @@ void DomainMapper_Impl::CloseFieldCommand()
                     break;
                     case FIELD_SECTION      : break;
                     case FIELD_SECTIONPAGES : break;
-                    case FIELD_SEQ          : 
+                    case FIELD_SEQ          :
 					{
                         // command looks like: " SEQ Table \* ARABIC "
                         ::rtl::OUString sCmd(pContext->GetCommand());
@@ -3446,7 +3446,7 @@ void DomainMapper_Impl::CloseFieldCommand()
                                     "com.sun.star.text.FieldMaster.SetExpression",
                                     sSeqName);
 
-                        xMaster->setPropertyValue( 
+                        xMaster->setPropertyValue(
                             rPropNameSupplier.GetName(PROP_SUB_TYPE),
                             uno::makeAny(text::SetVariableType::SEQUENCE));
 
@@ -3454,7 +3454,7 @@ void DomainMapper_Impl::CloseFieldCommand()
                         xFieldProperties->setPropertyValue(
                             rPropNameSupplier.GetName(PROP_NUMBERING_TYPE),
                             uno::makeAny( lcl_ParseNumberingType(pContext->GetCommand()) ));
-                        
+
                         // attach the master to the field
                         uno::Reference< text::XDependentTextField > xDependentField( xFieldInterface, uno::UNO_QUERY_THROW );
                         xDependentField->attachTextFieldMaster( xMaster );
@@ -3509,7 +3509,7 @@ void DomainMapper_Impl::CloseFieldCommand()
                     case FIELD_USERNAME     : //todo: user name is firstname + lastname
                     break;
                     case FIELD_TOC:
-                        handleToc(pContext, rPropNameSupplier, xFieldInterface, xFieldProperties, 
+                        handleToc(pContext, rPropNameSupplier, xFieldInterface, xFieldProperties,
                                   ::rtl::OUString::createFromAscii(aIt->second.cFieldServiceName));
                     break;
                     case FIELD_TC :
@@ -3588,7 +3588,7 @@ void DomainMapper_Impl::SetFieldResult( ::rtl::OUString& rResult )
     dmapper_logger->startElement("setFieldResult");
     dmapper_logger->chars(rResult);
 #endif
-    
+
     FieldContextPtr pContext = m_aFieldStack.top();
     OSL_ENSURE( pContext.get(), "no field context available");
     if( pContext.get() )
@@ -3640,13 +3640,13 @@ void DomainMapper_Impl::SetFieldFFData(FFDataHandler::Pointer_t pFFDataHandler)
 #ifdef DEBUG_DOMAINMAPPER
     dmapper_logger->startElement("setFieldFFData");
 #endif
-    
+
     FieldContextPtr pContext = m_aFieldStack.top();
     if (pContext.get())
     {
         pContext->setFFDataHandler(pFFDataHandler);
     }
-    
+
 #ifdef DEBUG_DOMAINMAPPER
     dmapper_logger->endElement("setFieldFFData");
 #endif
@@ -3660,7 +3660,7 @@ void DomainMapper_Impl::PopFieldContext()
 #ifdef DEBUG_DOMAINMAPPER
     dmapper_logger->element("popFieldContext");
 #endif
-    
+
     FieldContextPtr pContext = m_aFieldStack.top();
     OSL_ENSURE( pContext.get(), "no field context available");
     if( pContext.get() )
@@ -3694,19 +3694,19 @@ void DomainMapper_Impl::PopFieldContext()
                         uno::Reference< text::XTextAppendAndConvert > xTextAppendAndConvert( xTextAppend, uno::UNO_QUERY_THROW );
                         xTextAppendAndConvert->appendTextContent( xToInsert, uno::Sequence< beans::PropertyValue >() );
                     }
-                    else 
+                    else
                     {
                         FormControlHelper::Pointer_t pFormControlHelper(pContext->getFormControlHelper());
                         if (pFormControlHelper.get() != NULL)
                         {
                             uno::Reference<text::XTextRange> xTxtRange(xCrsr, uno::UNO_QUERY);
                             pFormControlHelper->insertControl(xTxtRange);
-                        }                    
+                        }
                         else if(pContext->GetHyperlinkURL().getLength())
                         {
                             PropertyNameSupplier& rPropNameSupplier = PropertyNameSupplier::GetPropertyNameSupplier();
                             xCrsr->gotoEnd( true );
-                            
+
                             uno::Reference< beans::XPropertySet > xCrsrProperties( xCrsr, uno::UNO_QUERY_THROW );
                             xCrsrProperties->setPropertyValue(rPropNameSupplier.GetName(PROP_HYPER_LINK_U_R_L), uno::
                                                               makeAny(pContext->GetHyperlinkURL()));
@@ -3940,7 +3940,7 @@ void DomainMapper_Impl::AddNewRedline(  )
 {
     RedlineParamsPtr pNew( new RedlineParams );
     pNew->m_nToken = ooxml::OOXML_mod;
-    if ( !m_bIsParaChange ) 
+    if ( !m_bIsParaChange )
     {
         m_aRedlines.push_back( pNew );
     }
@@ -4053,7 +4053,7 @@ void DomainMapper_Impl::ResetParaRedline( )
 }
 
 /*-- 22.09.2009 10:26:19---------------------------------------------------
-     
+
 -----------------------------------------------------------------------*/
 void DomainMapper_Impl::ApplySettingsTable()
 {
@@ -4069,8 +4069,8 @@ void DomainMapper_Impl::ApplySettingsTable()
         catch(const uno::Exception& e)
         {
             (void) e;
-        }    
-    }    
+        }
+    }
 }
 
 SectionPropertyMap * DomainMapper_Impl::GetSectionContext()
@@ -4083,7 +4083,7 @@ SectionPropertyMap * DomainMapper_Impl::GetSectionContext()
         OSL_ENSURE(pContext.get(), "Section context is not in the stack!");
         pSectionContext = dynamic_cast< SectionPropertyMap* >( pContext.get() );
     }
-    
+
     return pSectionContext;
 }
 

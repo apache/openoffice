@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 #include "precompiled_svx.hxx"
@@ -50,10 +50,10 @@ namespace drawinglayer
                 basegfx::B2DPolyPolygon aTransformed(aUnitOutline);
 
                 aTransformed.transform(getTransform());
-                appendPrimitive2DReferenceToPrimitive2DSequence(aRetval, 
+                appendPrimitive2DReferenceToPrimitive2DSequence(aRetval,
                     createPolyPolygonFillPrimitive(
-                        aTransformed, 
-                        getSdrLFSTAttribute().getFill(), 
+                        aTransformed,
+                        getSdrLFSTAttribute().getFill(),
                         getSdrLFSTAttribute().getFillFloatTransGradient()));
 			}
 
@@ -63,8 +63,8 @@ namespace drawinglayer
                 // standard graphic fill
                 const Primitive2DReference xGraphicContentPrimitive(
                     new GraphicPrimitive2D(
-                        getTransform(), 
-                        getGraphicObject(), 
+                        getTransform(),
+                        getGraphicObject(),
                         getGraphicAttr()));
 
                 appendPrimitive2DReferenceToPrimitive2DSequence(aRetval, xGraphicContentPrimitive);
@@ -90,9 +90,9 @@ namespace drawinglayer
 					basegfx::B2DPolygon aExpandedUnitOutline(basegfx::tools::createPolygonFromRect(aExpandedRange));
 
                     aExpandedUnitOutline.transform(getTransform());
-                    appendPrimitive2DReferenceToPrimitive2DSequence(aRetval, 
+                    appendPrimitive2DReferenceToPrimitive2DSequence(aRetval,
                         createPolygonLinePrimitive(
-                            aExpandedUnitOutline, 
+                            aExpandedUnitOutline,
                             getSdrLFSTAttribute().getLine(),
                             attribute::SdrLineStartEndAttribute()));
                 }
@@ -101,9 +101,9 @@ namespace drawinglayer
                     basegfx::B2DPolygon aTransformed(aUnitOutline);
 
                     aTransformed.transform(getTransform());
-                    appendPrimitive2DReferenceToPrimitive2DSequence(aRetval, 
+                    appendPrimitive2DReferenceToPrimitive2DSequence(aRetval,
                         createPolygonLinePrimitive(
-                            aTransformed, 
+                            aTransformed,
                             getSdrLFSTAttribute().getLine(),
                             attribute::SdrLineStartEndAttribute()));
                 }
@@ -112,14 +112,14 @@ namespace drawinglayer
 			// add text
 			if(!getSdrLFSTAttribute().getText().isDefault())
 			{
-				appendPrimitive2DReferenceToPrimitive2DSequence(aRetval, 
+				appendPrimitive2DReferenceToPrimitive2DSequence(aRetval,
                     createTextPrimitive(
-                        basegfx::B2DPolyPolygon(aUnitOutline), 
-                        getTransform(), 
-						getSdrLFSTAttribute().getText(), 
-                        getSdrLFSTAttribute().getLine(), 
-                        false, 
-                        false, 
+                        basegfx::B2DPolyPolygon(aUnitOutline),
+                        getTransform(),
+						getSdrLFSTAttribute().getText(),
+                        getSdrLFSTAttribute().getLine(),
+                        false,
+                        false,
                         false));
 			}
 
@@ -127,7 +127,7 @@ namespace drawinglayer
 			if(!getSdrLFSTAttribute().getShadow().isDefault())
 			{
                 aRetval = createEmbeddedShadowPrimitive(
-                    aRetval, 
+                    aRetval,
                     getSdrLFSTAttribute().getShadow());
 			}
 
@@ -135,7 +135,7 @@ namespace drawinglayer
 		}
 
 		SdrGrafPrimitive2D::SdrGrafPrimitive2D(
-			const basegfx::B2DHomMatrix& rTransform, 
+			const basegfx::B2DHomMatrix& rTransform,
 			const attribute::SdrLineFillShadowTextAttribute& rSdrLFSTAttribute,
 			const GraphicObject& rGraphicObject,
 			const GraphicAttr& rGraphicAttr)
@@ -154,7 +154,7 @@ namespace drawinglayer
 			if(BufferedDecompositionPrimitive2D::operator==(rPrimitive))
 			{
 				const SdrGrafPrimitive2D& rCompare = (SdrGrafPrimitive2D&)rPrimitive;
-				
+
 				return (getTransform() == rCompare.getTransform()
 					&& getSdrLFSTAttribute() == rCompare.getSdrLFSTAttribute()
 					&& getGraphicObject() == rCompare.getGraphicObject()
@@ -166,7 +166,7 @@ namespace drawinglayer
 
 		bool SdrGrafPrimitive2D::isTransparent() const
 		{
-			return ((0L != getGraphicAttr().GetTransparency()) 
+			return ((0L != getGraphicAttr().GetTransparency())
                 || (getGraphicObject().IsTransparent()));
 		}
 

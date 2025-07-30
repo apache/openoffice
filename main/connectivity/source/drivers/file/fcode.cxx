@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -254,7 +254,7 @@ void OOp_NOT::Exec(OCodeStack& rCodeStack)
 		delete pOperand;
 }
 //------------------------------------------------------------------
-sal_uInt16 OOp_NOT::getRequestedOperands() const 
+sal_uInt16 OOp_NOT::getRequestedOperands() const
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "file", "Ocke.Janssen@sun.com", "OOp_NOT::getRequestedOperands" );
     return 1;
@@ -275,7 +275,7 @@ sal_Bool OOp_OR::operate(const OOperand* pLeft, const OOperand* pRight) const
 }
 
 //------------------------------------------------------------------
-sal_uInt16 OOp_ISNULL::getRequestedOperands() const 
+sal_uInt16 OOp_ISNULL::getRequestedOperands() const
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "file", "Ocke.Janssen@sun.com", "OOp_ISNULL::getRequestedOperands" );
     return 1;

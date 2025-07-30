@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -207,7 +207,7 @@ namespace dbaccess
             ::rtl::OUStringBuffer aReset( aNewNodeName );
             sNewNodeName = aNewNodeName.makeStringAndClear();
             sal_Int32 i=2;
-            while ( m_aConfigurationRoot.hasByName( sNewNodeName ) ) 
+            while ( m_aConfigurationRoot.hasByName( sNewNodeName ) )
             {
                 aNewNodeName = aReset;
                 aNewNodeName.appendAscii( " " );
@@ -251,7 +251,7 @@ namespace dbaccess
         ::utl::OConfigurationNode aNodeForName = impl_getNodeForName_nothrow( _Name );
         return aNodeForName.isValid();
     }
-    
+
     //------------------------------------------------------------------------------
     Sequence< ::rtl::OUString > SAL_CALL DatabaseRegistrations::getRegistrationNames() throw (RuntimeException)
     {
@@ -270,7 +270,7 @@ namespace dbaccess
         {
             ::utl::OConfigurationNode aRegistrationNode = m_aConfigurationRoot.openNode( *pName );
             OSL_VERIFY( aRegistrationNode.getNodeValue( getNameNodeName() ) >>= *pDisplayName );
-            
+
         }
 
         return aDisplayNames;
@@ -289,7 +289,7 @@ namespace dbaccess
 
         return sLocation;
     }
-    
+
     //--------------------------------------------------------------------
     void SAL_CALL DatabaseRegistrations::registerDatabaseLocation( const ::rtl::OUString& _Name, const ::rtl::OUString& _Location ) throw (IllegalArgumentException, ElementExistException, RuntimeException)
     {
@@ -308,7 +308,7 @@ namespace dbaccess
         aGuard.clear();
         m_aRegistrationListeners.notifyEach( &XDatabaseRegistrationsListener::registeredDatabaseLocation, aEvent );
     }
-    
+
     //--------------------------------------------------------------------
     void SAL_CALL DatabaseRegistrations::revokeDatabaseLocation( const ::rtl::OUString& _Name ) throw (IllegalArgumentException, NoSuchElementException, IllegalAccessException, RuntimeException)
     {
@@ -334,7 +334,7 @@ namespace dbaccess
         aGuard.clear();
         m_aRegistrationListeners.notifyEach( &XDatabaseRegistrationsListener::revokedDatabaseLocation, aEvent );
     }
-    
+
     //--------------------------------------------------------------------
     void SAL_CALL DatabaseRegistrations::changeDatabaseLocation( const ::rtl::OUString& _Name, const ::rtl::OUString& _NewLocation ) throw (IllegalArgumentException, NoSuchElementException, IllegalAccessException, RuntimeException)
     {

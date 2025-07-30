@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -95,12 +95,12 @@ namespace sax_fastparser {
 		}
 		return sBuf.makeStringAndClear();
 	}
-	
+
 	void FastSaxSerializer::write( const OUString& s )
 	{
 		OString sOutput( OUStringToOString( s, RTL_TEXTENCODING_UTF8 ) );
-		writeBytes( Sequence< sal_Int8 >( 
-					reinterpret_cast< const sal_Int8*>( sOutput.getStr() ), 
+		writeBytes( Sequence< sal_Int8 >(
+					reinterpret_cast< const sal_Int8*>( sOutput.getStr() ),
 					sOutput.getLength() ) );
 	}
 
@@ -109,7 +109,7 @@ namespace sax_fastparser {
 		if (!mxOutputStream.is())
 			return;
 	}
-	
+
     void SAL_CALL FastSaxSerializer::writeId( ::sal_Int32 nElement )
     {
         if( HAS_NAMESPACE( nElement ) ) {
@@ -147,11 +147,11 @@ namespace sax_fastparser {
 			write(Namespace);
 			writeBytes(toUnoSequence(aColon));
 		}
-		
+
 		write(Name);
-		
+
 		writeFastAttributeList(Attribs);
-			
+
 		writeBytes(toUnoSequence(aClosingBracket));
 	}
 
@@ -181,9 +181,9 @@ namespace sax_fastparser {
 			write(Namespace);
 			writeBytes(toUnoSequence(aColon));
 		}
-		
+
 		write(Name);
-		
+
 		writeBytes(toUnoSequence(aClosingBracket));
 	}
 
@@ -214,11 +214,11 @@ namespace sax_fastparser {
 			write(Namespace);
 			writeBytes(toUnoSequence(aColon));
 		}
-		
+
 		write(Name);
 
 		writeFastAttributeList(Attribs);
-			
+
 		writeBytes(toUnoSequence(aSlashAndClosingBracket));
 	}
 
@@ -230,7 +230,7 @@ namespace sax_fastparser {
 
 		write( aChars );
 	}
-	
+
     void SAL_CALL FastSaxSerializer::setOutputStream( const ::com::sun::star::uno::Reference< ::com::sun::star::io::XOutputStream >& xOutputStream )
 		throw (::com::sun::star::uno::RuntimeException)
 	{
@@ -256,7 +256,7 @@ namespace sax_fastparser {
 			write(escapeXml(pAttr[i].Value));
 			writeBytes(toUnoSequence(aQuote));
 		}
-		
+
 		Sequence< FastAttribute > aFastAttrSeq = Attribs->getFastAttributes();
 		const FastAttribute *pFastAttr = aFastAttrSeq.getConstArray();
 		sal_Int32 nFastAttrLength = aFastAttrSeq.getLength();
@@ -266,11 +266,11 @@ namespace sax_fastparser {
 
             sal_Int32 nToken = pFastAttr[j].Token;
             writeId(nToken);
-			
+
 			writeBytes(toUnoSequence(aEqualSignAndQuote));
-	
+
 			write(escapeXml(Attribs->getValue(pFastAttr[j].Token)));
-			
+
 			writeBytes(toUnoSequence(aQuote));
 		}
 	}
@@ -354,7 +354,7 @@ namespace sax_fastparser {
     {
         merge( maData, maPostponed, true );
         maPostponed.realloc( 0 );
-        
+
         return maData;
     }
 

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -188,8 +188,8 @@ void ObjectCopySource::copyFilterAndSortingTo( const Reference< XConnection >& _
         ::rtl::OUString sStatement(RTL_CONSTASCII_USTRINGPARAM("SELECT * FROM "));
         sStatement += sTargetName;
         sStatement += ::rtl::OUString(RTL_CONSTASCII_USTRINGPARAM(" WHERE 0=1"));
-        
-        
+
+
         for ( i=0; i < sizeof( aProperties ) / sizeof( aProperties[0] ); ++i )
         {
 		    if ( m_xObjectPSI->hasPropertyByName( aProperties[i].first ) )
@@ -207,7 +207,7 @@ void ObjectCopySource::copyFilterAndSortingTo( const Reference< XConnection >& _
                 }
             }
         }
-        
+
         _xConnection->createStatement()->executeQuery(sStatement);
 
 		if ( m_xObjectPSI->hasPropertyByName( PROPERTY_APPLYFILTER ) )
@@ -838,7 +838,7 @@ sal_Bool OCopyTableWizard::CheckColumns(sal_Int32& _rnBreakPos)
 		}
 
 		if ( bContainsColumns )
-		{	// we have dest columns so look for the matching column 
+		{	// we have dest columns so look for the matching column
 			ODatabaseExport::TColumnVector::const_iterator aSrcIter = m_vSourceVec.begin();
             ODatabaseExport::TColumnVector::const_iterator aSrcEnd = m_vSourceVec.end();
 			for(;aSrcIter != aSrcEnd;++aSrcIter)
@@ -875,7 +875,7 @@ sal_Bool OCopyTableWizard::CheckColumns(sal_Int32& _rnBreakPos)
 				pField->SetType(pType);
 				if ( !bPKeyAllowed )
 					pField->SetPrimaryKey(sal_False);
-				
+
 				// now create a column
 				insertColumn(m_vDestColumns.size(),pField);
 				m_vColumnPos.push_back(ODatabaseExport::TPositions::value_type(m_vDestColumns.size(),m_vDestColumns.size()));
@@ -900,10 +900,10 @@ IMPL_LINK( OCopyTableWizard, ImplOKHdl, OKButton*, EMPTYARG )
 			case CopyTableOperation::CopyDefinitionOnly:
 			{
 				sal_Bool bOnFirstPage = GetCurLevel() == 0;
-				if ( bOnFirstPage ) 
+				if ( bOnFirstPage )
 				{
 					// we came from the first page so we have to clear
-					// all column information already collected 
+					// all column information already collected
 					clearDestColumns();
 					m_mNameMapping.clear();
 				}
@@ -915,7 +915,7 @@ IMPL_LINK( OCopyTableWizard, ImplOKHdl, OKButton*, EMPTYARG )
 					OWizTypeSelect* pPage = static_cast<OWizTypeSelect*>(GetPage(3));
 					if ( pPage )
 					{
-                        m_mNameMapping.clear();                        
+                        m_mNameMapping.clear();
 						pPage->setDisplayRow(nBreakPos);
 						ShowPage(3);
 						return 0;
@@ -1098,7 +1098,7 @@ void OCopyTableWizard::replaceColumn(sal_Int32 _nPos,OFieldDescription* _pField,
 		m_vDestColumns.erase(_sOldName);
 		OSL_ENSURE( m_vDestColumns.find(_pField->GetName()) == m_vDestColumns.end(),"Column with that name already exist!");
 
-		m_aDestVec[_nPos] = 
+		m_aDestVec[_nPos] =
 			m_vDestColumns.insert(ODatabaseExport::TColumns::value_type(_pField->GetName(),_pField)).first;
 	}
 }

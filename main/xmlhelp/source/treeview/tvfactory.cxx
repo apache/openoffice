@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -82,7 +82,7 @@ TVFactory::queryInterface(
 									 SAL_STATIC_CAST( XServiceInfo*,  this ),
 									 SAL_STATIC_CAST( XTypeProvider*, this ),
 									 SAL_STATIC_CAST( XMultiServiceFactory*, this ) );
-	
+
 	return aRet.hasValue() ? aRet : OWeakObject::queryInterface( rType );
 }
 
@@ -130,7 +130,7 @@ TVFactory::getSupportedServiceNames( void )
 
 
 
-// XMultiServiceFactory 
+// XMultiServiceFactory
 
 Reference< XInterface > SAL_CALL
 TVFactory::createInstance(
@@ -146,7 +146,7 @@ TVFactory::createInstance(
 		-1,
 		aAny,
 		PropertyState_DIRECT_VALUE );
-	
+
 	return createInstanceWithArguments( aServiceSpecifier,
 										seq );
 }
@@ -166,25 +166,25 @@ TVFactory::createInstanceWithArguments(
 		cppu::OWeakObject* p = new TVChildTarget( m_xMSF );
 		m_xHDS = Reference< XInterface >( p );
 	}
-	
+
 	Reference< XInterface > ret = m_xHDS;
-	
+
 	rtl::OUString hierview;
 	for( int i = 0; i < Arguments.getLength(); ++i )
 	{
 		PropertyValue pV;
 		if( ! ( Arguments[i] >>= pV ) )
 			continue;
-		
+
 		if( pV.Name.compareToAscii( "nodepath" ) )
 			continue;
-		
+
 		if( ! ( pV.Value >>= hierview ) )
 			continue;
-		
+
 		break;
 	}
-	
+
 	if( hierview.getLength() )
 	{
 		Reference< XHierarchicalNameAccess > xhieraccess( m_xHDS,UNO_QUERY );
@@ -267,28 +267,28 @@ extern "C" SAL_DLLPUBLIC_EXPORT void * SAL_CALL component_getFactory(
 	(void)pRegistryKey;
 
 	void * pRet = 0;
-	
+
 	Reference< XMultiServiceFactory > xSMgr(
 		reinterpret_cast< XMultiServiceFactory * >( pServiceManager ) );
-	
+
 	Reference< XSingleServiceFactory > xFactory;
-	
+
 	//////////////////////////////////////////////////////////////////////
 	// File Content Provider.
 	//////////////////////////////////////////////////////////////////////
-	
+
 	if ( TVFactory::getImplementationName_static().compareToAscii( pImplName ) == 0 )
 	{
 		xFactory = TVFactory::createServiceFactory( xSMgr );
 	}
 
 	//////////////////////////////////////////////////////////////////////
-	
+
 	if ( xFactory.is() )
 	{
 		xFactory->acquire();
 		pRet = xFactory.get();
 	}
-	
+
 	return pRet;
 }

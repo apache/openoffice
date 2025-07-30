@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -440,7 +440,7 @@ STDMETHODIMP EmbedDocument_Impl::InitNew( IStorage *pStg )
 
 					if ( hr == S_OK )
 					{
-						hr = pStg->CreateStream( reinterpret_cast<LPCWSTR>(aOfficeEmbedStreamName.getStr()), 
+						hr = pStg->CreateStream( reinterpret_cast<LPCWSTR>(aOfficeEmbedStreamName.getStr()),
 											 	STGM_CREATE | ( nStreamMode & 0x73 ),
 											 	0,
 											 	0,
@@ -448,7 +448,7 @@ STDMETHODIMP EmbedDocument_Impl::InitNew( IStorage *pStg )
 
 						if ( hr == S_OK && m_pOwnStream )
 						{
-							hr = pStg->CreateStream( reinterpret_cast<LPCWSTR>(aExtentStreamName.getStr()), 
+							hr = pStg->CreateStream( reinterpret_cast<LPCWSTR>(aExtentStreamName.getStr()),
 											 		STGM_CREATE | ( nStreamMode & 0x73 ),
 											 		0,
 											 		0,
@@ -606,14 +606,14 @@ STDMETHODIMP EmbedDocument_Impl::Save( IStorage *pStgSave, BOOL fSameAsLoad )
 		if ( FAILED( hr ) ) return E_FAIL;
 
 		DWORD nStreamMode = aStat.grfMode;
-		hr = pStgSave->CreateStream( reinterpret_cast<LPCWSTR>(aOfficeEmbedStreamName.getStr()), 
+		hr = pStgSave->CreateStream( reinterpret_cast<LPCWSTR>(aOfficeEmbedStreamName.getStr()),
 						 		STGM_CREATE | ( nStreamMode & 0x73 ),
 								0,
 						 		0,
 						 		&pTargetStream );
 		if ( FAILED( hr ) || !pTargetStream ) return E_FAIL;
 
-		hr = pStgSave->CreateStream( reinterpret_cast<LPCWSTR>(aExtentStreamName.getStr()), 
+		hr = pStgSave->CreateStream( reinterpret_cast<LPCWSTR>(aExtentStreamName.getStr()),
 						 		STGM_CREATE | ( nStreamMode & 0x73 ),
 								0,
 						 		0,
@@ -1005,7 +1005,7 @@ void LockedEmbedDocument_Impl::ExecuteMethod( sal_Int16 nId )
     }
 }
 
-// Fix strange warnings about some 
+// Fix strange warnings about some
 // ATL::CAxHostWindow::QueryInterface|AddRef|Releae functions.
 // warning C4505: 'xxx' : unreferenced local function has been removed
 #if defined(_MSC_VER)

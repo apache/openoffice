@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -61,16 +61,16 @@ namespace vclcanvas
                                             const OutDevProviderSharedPtr&            rOutDevProvider,
                                             bool                                      bShowSpriteBounds )
     {
-        ENSURE_OR_THROW( rOwningSpriteCanvas.get() && 
+        ENSURE_OR_THROW( rOwningSpriteCanvas.get() &&
                          rOutDevProvider,
                          "CanvasCustomSprite::CanvasCustomSprite(): Invalid sprite canvas" );
 
         // setup back buffer
         // -----------------
 
-        const ::Size aSize( 
+        const ::Size aSize(
             static_cast<sal_Int32>( ::std::max( 1.0,
-                                                ceil( rSpriteSize.Width ))),  // round up to nearest int, 
+                                                ceil( rSpriteSize.Width ))),  // round up to nearest int,
                 															  // enforce sprite to have at
                 											 				  // least (1,1) pixel size
             static_cast<sal_Int32>( ::std::max( 1.0,
@@ -81,7 +81,7 @@ namespace vclcanvas
         pBackBuffer->setSize( aSize );
 
         // create mask backbuffer, with one bit color depth #122485# use full depth to avoid problem with 1bit depth, get AAed masks
-        BackBufferSharedPtr pBackBufferMask( 
+        BackBufferSharedPtr pBackBufferMask(
 #if defined LINUX || defined FREEBSD || defined NETBSD
             // #122485# no 1bit buffers on Linuxes, 1bit Vdev seems to work no longer
             new BackBuffer( rOutDevProvider->getOutDev() ) );
@@ -97,7 +97,7 @@ namespace vclcanvas
         // disable font antialiasing (causes ugly shadows otherwise)
         pBackBuffer->getOutDev().SetAntialiasing( ANTIALIASING_DISABLE_TEXT );
         pBackBufferMask->getOutDev().SetAntialiasing( ANTIALIASING_DISABLE_TEXT );
-            
+
         // set mask vdev drawmode, such that everything is painted
         // black. That leaves us with a binary image, white for
         // background, black for painted content
@@ -111,8 +111,8 @@ namespace vclcanvas
         // always render into back buffer, don't preserve state (it's
         // our private VDev, after all), have notion of alpha
         maCanvasHelper.init( rDevice,
-                             pBackBuffer, 
-                             false, 
+                             pBackBuffer,
+                             false,
                              true );
         maCanvasHelper.setBackgroundOutDev( pBackBufferMask );
 
@@ -120,7 +120,7 @@ namespace vclcanvas
         // setup sprite helper
         // -------------------
 
-        maSpriteHelper.init( rSpriteSize, 
+        maSpriteHelper.init( rSpriteSize,
                              rOwningSpriteCanvas,
                              pBackBuffer,
                              pBackBufferMask,
@@ -155,7 +155,7 @@ namespace vclcanvas
     {
         uno::Sequence< ::rtl::OUString > aRet(1);
         aRet[0] = ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM ( SERVICE_NAME ) );
-        
+
         return aRet;
     }
 
@@ -174,18 +174,18 @@ namespace vclcanvas
     {
         tools::LocalGuard aGuard;
 
-        maSpriteHelper.redraw( rOutDev, 
-                               rOrigOutputPos, 
-                               mbSurfaceDirty, 
+        maSpriteHelper.redraw( rOutDev,
+                               rOrigOutputPos,
+                               mbSurfaceDirty,
                                bBufferedUpdate );
-        
+
         mbSurfaceDirty = false;
     }
 
     bool CanvasCustomSprite::repaint( const GraphicObjectSharedPtr&	rGrf,
                                       const rendering::ViewState&   viewState,
                                       const rendering::RenderState& renderState,
-                                      const ::Point& 				rPt, 
+                                      const ::Point& 				rPt,
                                       const ::Size& 				rSz,
                                       const GraphicAttr&			rAttr ) const
     {

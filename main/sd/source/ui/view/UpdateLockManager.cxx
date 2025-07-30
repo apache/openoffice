@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -60,7 +60,7 @@ class UpdateLockManager::Implementation
 public:
     Implementation (ViewShellBase& rBase);
     virtual ~Implementation (void);
-    
+
     void Lock (void);
     void Unlock (void);
     bool IsLocked (void) const;
@@ -95,13 +95,13 @@ private:
         release when unlocking).
     */
     virtual void SAL_CALL layoutEvent (
-        const lang::EventObject& xSource, 
+        const lang::EventObject& xSource,
         sal_Int16 eLayoutEvent,
         const Any& rInfo)
         throw (uno::RuntimeException);
 
     //=====  lang::XEventListener  ============================================
-    virtual void SAL_CALL 
+    virtual void SAL_CALL
         disposing (const lang::EventObject& rEventObject)
         throw (::com::sun::star::uno::RuntimeException);
 
@@ -285,7 +285,7 @@ void UpdateLockManager::Implementation::Unlock (void)
         }
         catch (RuntimeException)
         { }
-        
+
         // Force a rearrangement of the UI elements of the views.
         mrBase.Rearrange();
     }
@@ -312,7 +312,7 @@ void UpdateLockManager::Implementation::ForceUnlock (void)
 
 
 void SAL_CALL UpdateLockManager::Implementation::layoutEvent (
-    const lang::EventObject&, 
+    const lang::EventObject&,
     sal_Int16 eLayoutEvent,
     const Any& rInfo)
     throw (uno::RuntimeException)

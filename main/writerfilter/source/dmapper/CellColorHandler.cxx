@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -75,7 +75,7 @@ void CellColorHandler::lcl_attribute(Id rName, Value & rVal)
             // nIntValue contains the color, directly
         break;
         case NS_ooxml::LN_CT_Shd_val:
-            /* WRITERFILTERSTATUS: done: 50, planned: 0, spent: 0 */        
+            /* WRITERFILTERSTATUS: done: 50, planned: 0, spent: 0 */
         {
             //might be clear, pct5...90, some hatch types
             //TODO: The values need symbolic names!
@@ -127,7 +127,7 @@ void CellColorHandler::lcl_sprm(Sprm & rSprm)
 TablePropertyMapPtr  CellColorHandler::getProperties()
 {
     TablePropertyMapPtr pPropertyMap(new TablePropertyMap);
-//code from binary word filter 
+//code from binary word filter
     static const sal_Int32 eMSGrayScale[] =
     {
         // Nul-Brush
@@ -224,7 +224,7 @@ TablePropertyMapPtr  CellColorHandler::getProperties()
 
         nApplyColor = ( (nRed/1000) << 0x10 ) + ((nGreen/1000) << 8) + nBlue/1000;
     }
-    
+
 	sal_Int32 objType = PROP_CHAR_BACK_COLOR;
 
 	switch(m_eType)
@@ -236,11 +236,11 @@ TablePropertyMapPtr  CellColorHandler::getProperties()
 		pPropertyMap->Insert( PROP_CHAR_BACK_COLOR, false, uno::makeAny( nApplyColor ));
 		break;
 	case Others:
-	default:		
+	default:
 		pPropertyMap->Insert( PROP_BACK_COLOR, false, uno::makeAny( nApplyColor ));
-		break;	
+		break;
 	}
-    
+
     return pPropertyMap;
 }
 } //namespace dmapper

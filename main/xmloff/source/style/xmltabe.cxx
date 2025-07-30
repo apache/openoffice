@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -85,20 +85,20 @@ void SvxXMLTabStopExport::exportTabStop( const ::com::sun::star::style::TabStop*
 	if( ' ' != pTabStop->FillChar && 0 != pTabStop->FillChar )
 	{
 		rExport.AddAttribute( XML_NAMESPACE_STYLE, XML_LEADER_STYLE,
-					  GetXMLToken('.' == pTabStop->FillChar ? XML_DOTTED 
+					  GetXMLToken('.' == pTabStop->FillChar ? XML_DOTTED
 							   							    : XML_SOLID) );
-		
+
 		sBuffer.append( pTabStop->FillChar );
 		rExport.AddAttribute( XML_NAMESPACE_STYLE, XML_LEADER_TEXT,
                                sBuffer.makeStringAndClear() );
 	}
 
-    SvXMLElementExport rElem( rExport, XML_NAMESPACE_STYLE, XML_TAB_STOP, 
+    SvXMLElementExport rElem( rExport, XML_NAMESPACE_STYLE, XML_TAB_STOP,
                               sal_True, sal_True );
 }
 
 
-SvxXMLTabStopExport::SvxXMLTabStopExport( 
+SvxXMLTabStopExport::SvxXMLTabStopExport(
     SvXMLExport& rExp)
     : rExport( rExp )
 {
@@ -119,7 +119,7 @@ void SvxXMLTabStopExport::Export( const uno::Any& rAny )
 	{
 		const ::com::sun::star::style::TabStop* pTabs = aSeq.getConstArray();
 		const sal_Int32 nTabs   = aSeq.getLength();
-		
+
 		// ignore default tab stop here
 		//if( 1 == nTabs && style::TabAlign_DEFAULT == pTabs[0].Alignment )
 		//	return;
@@ -130,7 +130,7 @@ void SvxXMLTabStopExport::Export( const uno::Any& rAny )
 		for( sal_Int32 nIndex = 0; nIndex < nTabs; nIndex++ )
 		{
 			if( style::TabAlign_DEFAULT != pTabs[nIndex].Alignment )
-				exportTabStop( &(pTabs[nIndex]) );			
+				exportTabStop( &(pTabs[nIndex]) );
 		}
 	}
 }

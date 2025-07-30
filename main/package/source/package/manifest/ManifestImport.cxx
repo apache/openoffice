@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -92,19 +92,19 @@ ManifestImport::~ManifestImport ( void )
 }
 
 // ---------------------------------------------------
-void SAL_CALL ManifestImport::startDocument(  ) 	
+void SAL_CALL ManifestImport::startDocument(  )
 		throw( xml::sax::SAXException, uno::RuntimeException )
 {
 }
 
 // ---------------------------------------------------
-void SAL_CALL ManifestImport::endDocument(  ) 	
+void SAL_CALL ManifestImport::endDocument(  )
 		throw( xml::sax::SAXException, uno::RuntimeException )
 {
 }
 
 // ---------------------------------------------------
-void SAL_CALL ManifestImport::startElement( const OUString& aName, const uno::Reference< xml::sax::XAttributeList >& xAttribs ) 	
+void SAL_CALL ManifestImport::startElement( const OUString& aName, const uno::Reference< xml::sax::XAttributeList >& xAttribs )
 		throw( xml::sax::SAXException, uno::RuntimeException )
 {
     StringHashMap aConvertedAttribs;
@@ -248,7 +248,7 @@ void SAL_CALL ManifestImport::startElement( const OUString& aName, const uno::Re
 }
 
 // ---------------------------------------------------
-void SAL_CALL ManifestImport::endElement( const OUString& aName ) 	
+void SAL_CALL ManifestImport::endElement( const OUString& aName )
 	throw( xml::sax::SAXException, uno::RuntimeException )
 {
 	if( aStack.empty() )
@@ -262,10 +262,10 @@ void SAL_CALL ManifestImport::endElement( const OUString& aName )
 
 	if( !aConvertedName.equalsAscii( ELEMENT_FILE_ENTRY ) )
 		return;
-	
+
 	// create the property sequence
 	// Put full-path property first for MBA
-	// TODO: get rid of fullpath-first requirement 
+	// TODO: get rid of fullpath-first requirement
 	const bool bHasFullPath = maValues[PKG_MNFST_FULLPATH].hasValue();
 	OSL_ENSURE( bHasFullPath, "Full path missing in manifest" );
 
@@ -289,31 +289,31 @@ void SAL_CALL ManifestImport::endElement( const OUString& aName )
 }
 
 // ---------------------------------------------------
-void SAL_CALL ManifestImport::characters( const OUString& /*aChars*/ ) 	
+void SAL_CALL ManifestImport::characters( const OUString& /*aChars*/ )
 		throw( xml::sax::SAXException, uno::RuntimeException )
 {
 }
 
 // ---------------------------------------------------
-void SAL_CALL ManifestImport::ignorableWhitespace( const OUString& /*aWhitespaces*/ ) 	
+void SAL_CALL ManifestImport::ignorableWhitespace( const OUString& /*aWhitespaces*/ )
 		throw( xml::sax::SAXException, uno::RuntimeException )
 {
 }
 
 // ---------------------------------------------------
-void SAL_CALL ManifestImport::processingInstruction( const OUString& /*aTarget*/, const OUString& /*aData*/ ) 	
+void SAL_CALL ManifestImport::processingInstruction( const OUString& /*aTarget*/, const OUString& /*aData*/ )
 		throw( xml::sax::SAXException, uno::RuntimeException )
 {
 }
 
 // ---------------------------------------------------
-void SAL_CALL ManifestImport::setDocumentLocator( const uno::Reference< xml::sax::XLocator >& /*xLocator*/ ) 	
+void SAL_CALL ManifestImport::setDocumentLocator( const uno::Reference< xml::sax::XLocator >& /*xLocator*/ )
 		throw( xml::sax::SAXException, uno::RuntimeException )
 {
 }
 
 // ---------------------------------------------------
-::rtl::OUString ManifestImport::PushNameAndNamespaces( const ::rtl::OUString& aName, const uno::Reference< xml::sax::XAttributeList >& xAttribs, StringHashMap& o_aConvertedAttribs ) 	
+::rtl::OUString ManifestImport::PushNameAndNamespaces( const ::rtl::OUString& aName, const uno::Reference< xml::sax::XAttributeList >& xAttribs, StringHashMap& o_aConvertedAttribs )
 {
     StringHashMap aNamespaces;
     ::std::vector< ::std::pair< ::rtl::OUString, ::rtl::OUString > > aAttribsStrs;
@@ -348,12 +348,12 @@ void SAL_CALL ManifestImport::setDocumentLocator( const uno::Reference< xml::sax
         aConvertedName = ConvertName( aName );
 
     aStack.push_back( ManifestScopeEntry( aConvertedName, aNamespaces ) );
- 
+
     for ( sal_uInt16 nInd = 0; nInd < aAttribsStrs.size(); nInd++ )
     {
         // convert the attribute names on filling
         o_aConvertedAttribs[ConvertName( aAttribsStrs[nInd].first )] = aAttribsStrs[nInd].second;
-    }    
+    }
 
     return aConvertedName;
 }
@@ -381,7 +381,7 @@ void SAL_CALL ManifestImport::setDocumentLocator( const uno::Reference< xml::sax
     {
         // no check for manifest.xml consistency currently since the old versions have supported inconsistent documents as well
         aResult = ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( MANIFEST_NSPREFIX ) );
-        aResult += aPureName; 
+        aResult += aPureName;
     }
 
     return aResult;

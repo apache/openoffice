@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -44,10 +44,10 @@ namespace slideshow {
 namespace internal {
 
 namespace EffectCommands = com::sun::star::presentation::EffectCommands;
-    
-AnimationCommandNode::AnimationCommandNode( uno::Reference<animations::XAnimationNode> const& xNode, 
+
+AnimationCommandNode::AnimationCommandNode( uno::Reference<animations::XAnimationNode> const& xNode,
                                              ::boost::shared_ptr<BaseContainerNode> const& pParent,
-                                             NodeContext const& rContext ) : 
+                                             NodeContext const& rContext ) :
     BaseNode( xNode, pParent, rContext ),
     mpShape(),
     mxCommandNode( xNode, ::com::sun::star::uno::UNO_QUERY_THROW )
@@ -73,12 +73,12 @@ void AnimationCommandNode::activate_st()
         // the command is an ole verb.
     case EffectCommands::VERB: break;
         // the command starts playing on a media object
-    case EffectCommands::PLAY: 
+    case EffectCommands::PLAY:
     {
         double fMediaTime=0.0;
         beans::PropertyValue aMediaTime;
         if( (mxCommandNode->getParameter() >>= aMediaTime) &&
-            aMediaTime.Name.equalsAsciiL( 
+            aMediaTime.Name.equalsAsciiL(
                 RTL_CONSTASCII_STRINGPARAM("MediaTime") ))
         {
             aMediaTime.Value >>= fMediaTime;
@@ -114,7 +114,7 @@ void AnimationCommandNode::activate_st()
         getContext().mrEventMultiplexer.notifyCommandStopAudio( getSelf() );
         break;
     }
-    
+
     // deactivate ASAP:
     scheduleDeactivationEvent(
         makeEvent( boost::bind( &AnimationNode::deactivate, getSelf() ),

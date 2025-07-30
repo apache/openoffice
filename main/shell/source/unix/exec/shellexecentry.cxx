@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -51,22 +51,22 @@ using com::sun::star::system::XSystemShellExecute;
 #define SHELLEXEC_REGKEY_NAME   "/com.sun.star.comp.system.SystemShellExecute/UNO/SERVICES/com.sun.star.system.SystemShellExecute"
 
 //-----------------------------------------------------------------------
-// 
+//
 //-----------------------------------------------------------------------
 
 namespace
 {
     Reference< XInterface > SAL_CALL createInstance(const Reference< XComponentContext >& xContext)
-    {		
+    {
         return Reference< XInterface >( static_cast< XSystemShellExecute* >( new ShellExec(xContext) ) );
     }
 }
 
 //-----------------------------------------------------------------------
-// the 3 important functions which will be exported 
+// the 3 important functions which will be exported
 //-----------------------------------------------------------------------
 
-extern "C" 
+extern "C"
 {
 
 //----------------------------------------------------------------------
@@ -80,7 +80,7 @@ void SAL_CALL component_getImplementationEnvironment(
 }
 
 //----------------------------------------------------------------------
-// component_getFactory 
+// component_getFactory
 //----------------------------------------------------------------------
 
 void* SAL_CALL component_getFactory( const sal_Char* pImplName, uno_Interface* /*pSrvManager*/, uno_Interface* /*pRegistryKey*/ )
@@ -97,7 +97,7 @@ void* SAL_CALL component_getFactory( const sal_Char* pImplName, uno_Interface* /
             Sequence< OUString >( &serviceName, 1 ) );
 
     }
-    
+
     if (xFactory.is())
 	xFactory->acquire();
 

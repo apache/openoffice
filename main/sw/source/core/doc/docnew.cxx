@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -176,7 +176,7 @@ void StartGrammarChecking( SwDoc &rDoc )
             bVisible = true;
         pFrame = SfxViewFrame::GetNext( *pFrame, pDocShell, sal_False );
     }
-    
+
     //!! only documents with visible views need to be checked
     //!! (E.g. don't check temporary documents created for printing, see printing of notes and selections.
     //!! Those get created on the fly and get hard deleted a bit later as well, and no one should have
@@ -310,7 +310,7 @@ SwDoc::SwDoc()
     // has a default for the XFillStyleItem of XFILL_SOLID and the color for it is the default
     // fill color (blue7 or similar). This is a problem, in Writer we want the default fill
     // style to be XFILL_NONE. This cannot simply be done by changing it in the 2nd pool at the
-    // pool defaults when the DrawingLayer ItemPool is used for Writer, that would lead to 
+    // pool defaults when the DrawingLayer ItemPool is used for Writer, that would lead to
     // countless problems like DrawObjects initial fill and others.
     // It is also hard to find all places where the initial ItemSets for Writer (including
     // style hierarchies) are created and to always set (but only at the root) the FillStyle
@@ -574,7 +574,7 @@ SwDoc::~SwDoc()
 
 	pFtnIdxs->Remove( sal_uInt16(0), pFtnIdxs->Count() );
 
-    // indices could be registered in attributes 
+    // indices could be registered in attributes
     m_pUndoManager->DelAllUndoObj();
 
 	// in den BookMarks sind Indizies auf den Content. Diese muessen vorm
@@ -1222,7 +1222,7 @@ SfxObjectShell* SwDoc::CreateCopy(bool bCallInitNew ) const
         pRetShell->DoInitNew();
     }
 
-    //copy content 
+    //copy content
     pRet->Paste( *this );
 
     // remove the temporary shell if it is there as it was done before

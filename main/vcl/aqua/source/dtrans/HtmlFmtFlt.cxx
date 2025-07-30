@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 #include "HtmlFmtFlt.hxx"
@@ -42,7 +42,7 @@ using namespace com::sun::star::uno;
 //					of the context, or -1 if no context
 // EndHTML:			Byte count from the beginning of the clipboard to the end
 //					of the context, or -1 if no context
-// StartFragment:	Byte count from the beginning of the clipboard to the 
+// StartFragment:	Byte count from the beginning of the clipboard to the
 //					start of the fragment
 // EndFragment:		Byte count from the beginning of the clipboard to the
 //					end of the fragment
@@ -53,7 +53,7 @@ using namespace com::sun::star::uno;
 //
 // StartSelection and EndSelection are optional
 // The fragment should be preceded and followed by the HTML comments
-// <!--StartFragment--> and <!--EndFragment--> (no space between !-- and the 
+// <!--StartFragment--> and <!--EndFragment--> (no space between !-- and the
 // text
 //------------------------------------------------------------------------------
 
@@ -86,37 +86,37 @@ const std::string TAG_END_BODY = std::string("</BODY");
 Sequence<sal_Int8> SAL_CALL TextHtmlToHTMLFormat(Sequence<sal_Int8>& aTextHtml)
 {
 	OSL_ASSERT(aTextHtml.getLength() > 0);
-	
+
 	if (!(aTextHtml.getLength() > 0))
 		return Sequence<sal_Int8>();
-	        		
+
 	// fill the buffer with dummy values to calc the exact length
-    std::string dummyHtmlHeader = GetHtmlFormatHeader(0, 0, 0, 0);		
+    std::string dummyHtmlHeader = GetHtmlFormatHeader(0, 0, 0, 0);
 	size_t lHtmlFormatHeader = dummyHtmlHeader.length();
-	    	   
+
 	std::string textHtml(
-	    reinterpret_cast<const sal_Char*>(aTextHtml.getConstArray()), 
+	    reinterpret_cast<const sal_Char*>(aTextHtml.getConstArray()),
 		reinterpret_cast<const sal_Char*>(aTextHtml.getConstArray()) + aTextHtml.getLength());
-								    			    	    
+
 	std::string::size_type nStartHtml = textHtml.find(TAG_HTML) + lHtmlFormatHeader - 1; // we start one before '<HTML>' Word 2000 does also so
 	std::string::size_type nEndHtml = textHtml.find(TAG_END_HTML) + lHtmlFormatHeader + TAG_END_HTML.length() + 1; // our SOffice 5.2 wants 2 behind </HTML>?
-	
+
 	// The body tag may have parameters so we need to search for the
 	// closing '>' manually e.g. <BODY param> #92840#
-	std::string::size_type nStartFragment = textHtml.find(">", textHtml.find(TAG_BODY)) + lHtmlFormatHeader + 1; 
+	std::string::size_type nStartFragment = textHtml.find(">", textHtml.find(TAG_BODY)) + lHtmlFormatHeader + 1;
 	std::string::size_type nEndFragment = textHtml.find(TAG_END_BODY) + lHtmlFormatHeader;
 
-	std::string htmlFormat = GetHtmlFormatHeader(nStartHtml, nEndHtml, nStartFragment, nEndFragment);	
+	std::string htmlFormat = GetHtmlFormatHeader(nStartHtml, nEndHtml, nStartFragment, nEndFragment);
 	htmlFormat += textHtml;
-		
+
 	Sequence<sal_Int8> byteSequence(htmlFormat.length() + 1); // space the trailing '\0'
-	rtl_zeroMemory(byteSequence.getArray(), byteSequence.getLength());						
-		
+	rtl_zeroMemory(byteSequence.getArray(), byteSequence.getLength());
+
 	rtl_copyMemory(
 		static_cast<void*>(byteSequence.getArray()),
 		static_cast<const void*>(htmlFormat.c_str()),
 		htmlFormat.length());
-	
+
 	return byteSequence;
 }
 
@@ -133,7 +133,7 @@ Sequence<sal_Int8> HTMLFormatToTextHtml(const Sequence<sal_Int8>& aHTMLFormat)
 
   BOOST_ASSERT(htmlStartTag && "Seems to be no HTML at all");
 
-  // It doesn't seem to be HTML? Well then simply return what has been 
+  // It doesn't seem to be HTML? Well then simply return what has been
   // provided in non-debug builds
   if (htmlStartTag == NULL)
 	{
@@ -151,7 +151,7 @@ Sequence<sal_Int8> HTMLFormatToTextHtml(const Sequence<sal_Int8>& aHTMLFormat)
 /* A simple format detection. We are just comparing the first few bytes
    of the provided byte sequence to see whether or not it is the MS
    Office Html format. If it shows that this is not reliable enough we
-   can improve this 
+   can improve this
 */
 const char HtmlFormatStart[] = "Version:";
 int HtmlFormatStartLen = (sizeof(HtmlFormatStart) - 1);
@@ -161,8 +161,8 @@ bool isHTMLFormat(const Sequence<sal_Int8>& aHtmlSequence)
   if (aHtmlSequence.getLength() < HtmlFormatStartLen)
 	return false;
 
-  return rtl_str_compareIgnoreAsciiCase_WithLength(HtmlFormatStart, 
-												   HtmlFormatStartLen, 
-												   reinterpret_cast<const sal_Char*>(aHtmlSequence.getConstArray()), 
+  return rtl_str_compareIgnoreAsciiCase_WithLength(HtmlFormatStart,
+												   HtmlFormatStartLen,
+												   reinterpret_cast<const sal_Char*>(aHtmlSequence.getConstArray()),
 												   HtmlFormatStartLen) == 0;
 }

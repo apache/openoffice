@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -94,7 +94,7 @@ SbxVariable* SbiRuntime::FindElement
 		if( bLocal )
 		{
 			if ( bStatic )
-			{	
+			{
 				if ( pMeth )
 					pElem = pMeth->GetStatics()->Find( aName, SbxCLASS_DONTCARE );
 			}
@@ -261,10 +261,10 @@ SbxVariable* SbiRuntime::FindElement
 			if( bSet )
 				pElem->SetType( t2 );
 			pElem = pNew;
-		} 
+		}
 		// Index-Access bei UnoObjekten beruecksichtigen
-		// definitely we want this for VBA where properties are often 
-		// collections ( which need index access ), but lets only do 
+		// definitely we want this for VBA where properties are often
+		// collections ( which need index access ), but lets only do
 		// this if we actually have params following
 		else if( bVBAEnabled && pElem->ISA(SbUnoProperty) && pElem->GetParameters() )
 		{
@@ -715,7 +715,7 @@ void SbiRuntime::StepPARAM( sal_uInt32 nOp1, sal_uInt32 nOp2 )
 			p = new SbxVariable();
 
 			if( SbiRuntime::isVBAEnabled() &&
-				(t == SbxOBJECT || t == SbxSTRING) ) 
+				(t == SbxOBJECT || t == SbxSTRING) )
 			{
 				if( t == SbxOBJECT )
 					p->PutObject( NULL );
@@ -1212,11 +1212,11 @@ void SbiRuntime::StepGLOBAL( sal_uInt32 nOp1, sal_uInt32 nOp2 )
 	String aName( pImg->GetString( static_cast<short>( nOp1 ) ) );
 	SbxDataType t = (SbxDataType)(nOp2 & 0xffff);
 
-	// Store module scope variables at module scope 
+	// Store module scope variables at module scope
 	// in non vba mode these are stored at the library level :/
 	// not sure if this really should not be enabled for ALL basic
 	SbxObject* pStorage = &rBasic;
-	if ( SbiRuntime::isVBAEnabled() ) 
+	if ( SbiRuntime::isVBAEnabled() )
 	{
 		pStorage = pMod;
 		pMod->AddVarName( aName );

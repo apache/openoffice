@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -377,51 +377,51 @@ void SwSearchProperties_Impl::FillItemSet(SfxItemSet& rSet, sal_Bool bIsValueSea
 					pTempItem = pWLineItem;
 				break;
                 case RES_CHRATR_CJK_FONT:
-                    if(!pFontCJKItem )     
+                    if(!pFontCJKItem )
                         pFontCJKItem = rSet.GetPool()->GetDefaultItem(aIt->nWID).Clone();
                     pTempItem = pFontCJKItem;
                 break;
-                case RES_CHRATR_CJK_FONTSIZE:  
+                case RES_CHRATR_CJK_FONTSIZE:
                     if(!pFontSizeCJKItem )
                         pFontSizeCJKItem = rSet.GetPool()->GetDefaultItem(aIt->nWID).Clone();
                     pTempItem = pFontSizeCJKItem;
                 break;
-                case RES_CHRATR_CJK_LANGUAGE:  
+                case RES_CHRATR_CJK_LANGUAGE:
                     if(!pCJKLangItem )
                         pCJKLangItem = rSet.GetPool()->GetDefaultItem(aIt->nWID).Clone();
                     pTempItem = pCJKLangItem;
                 break;
-                case RES_CHRATR_CJK_POSTURE:   
+                case RES_CHRATR_CJK_POSTURE:
                     if(!pCJKPostureItem )
                         pCJKPostureItem = rSet.GetPool()->GetDefaultItem(aIt->nWID).Clone();
                     pTempItem = pCJKPostureItem;
                 break;
-                case RES_CHRATR_CJK_WEIGHT:    
+                case RES_CHRATR_CJK_WEIGHT:
                     if(!pCJKWeightItem )
                         pCJKWeightItem = rSet.GetPool()->GetDefaultItem(aIt->nWID).Clone();
                     pTempItem = pCJKWeightItem;
                 break;
-                case RES_CHRATR_CTL_FONT:      
+                case RES_CHRATR_CTL_FONT:
                     if(!pFontCTLItem )
                         pFontCTLItem = rSet.GetPool()->GetDefaultItem(aIt->nWID).Clone();
                     pTempItem = pFontCTLItem;
                 break;
-                case RES_CHRATR_CTL_FONTSIZE:  
+                case RES_CHRATR_CTL_FONTSIZE:
                     if(!pFontSizeCTLItem )
                         pFontSizeCTLItem = rSet.GetPool()->GetDefaultItem(aIt->nWID).Clone();
                     pTempItem = pFontSizeCTLItem;
                 break;
-                case RES_CHRATR_CTL_LANGUAGE:  
-                    if(!pCTLLangItem )    
+                case RES_CHRATR_CTL_LANGUAGE:
+                    if(!pCTLLangItem )
                         pCTLLangItem = rSet.GetPool()->GetDefaultItem(aIt->nWID).Clone();
                     pTempItem = pCTLLangItem;
                 break;
-                case RES_CHRATR_CTL_POSTURE:   
-                    if(!pCTLPostureItem ) 
+                case RES_CHRATR_CTL_POSTURE:
+                    if(!pCTLPostureItem )
                         pCTLPostureItem = rSet.GetPool()->GetDefaultItem(aIt->nWID).Clone();
                     pTempItem = pCTLPostureItem;
                 break;
-                case RES_CHRATR_CTL_WEIGHT:    
+                case RES_CHRATR_CTL_WEIGHT:
                     if(!pCTLWeightItem )
                         pCTLWeightItem = rSet.GetPool()->GetDefaultItem(aIt->nWID).Clone();
                     pTempItem = pCTLWeightItem;

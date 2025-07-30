@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -107,7 +107,7 @@ void InternalData::createDefaultData()
     m_aData.resize( nSize );
     for( sal_Int32 i=0; i<nSize; ++i )
         m_aData[i] = fDefaultData[i];
-   
+
     m_aRowLabels.clear();
     m_aRowLabels.reserve( m_nRowCount );
     generate_n( back_inserter( m_aRowLabels ), m_nRowCount,
@@ -154,7 +154,7 @@ Sequence< Sequence< double > > InternalData::getData() const
     for( sal_Int32 i=0; i<m_nRowCount; ++i )
         aResult[i] = lcl_ValarrayToSequence< tDataType::value_type >(
             m_aData[ ::std::slice( i*m_nColumnCount, m_nColumnCount, 1 ) ] );
-    
+
     return aResult;
 }
 
@@ -178,7 +178,7 @@ void InternalData::setColumnValues( sal_Int32 nColumnIndex, const vector< double
     if( nColumnIndex < 0 )
         return;
     enlargeData( nColumnIndex + 1, rNewData.size() );
-    
+
     tDataType aSlice = m_aData[ ::std::slice( nColumnIndex, m_nRowCount, m_nColumnCount ) ];
     for( vector< double >::size_type i = 0; i < rNewData.size(); ++i )
         aSlice[i] = rNewData[i];
@@ -269,7 +269,7 @@ void InternalData::swapColumnWithNext( sal_Int32 nColumnIndex )
             m_aData[nIndex1] = m_aData[nIndex2];
             m_aData[nIndex2] = fTemp;
         }
-        
+
         vector< uno::Any > aTemp( m_aColumnLabels[nColumnIndex] );
         m_aColumnLabels[nColumnIndex] = m_aColumnLabels[nColumnIndex + 1];
         m_aColumnLabels[nColumnIndex + 1] = aTemp;
@@ -386,7 +386,7 @@ void InternalData::insertRow( sal_Int32 nAfterIndex )
     // labels
     if( nAfterIndex < static_cast< sal_Int32 >( m_aRowLabels.size()))
         m_aRowLabels.insert( m_aRowLabels.begin() + nIndex, vector< uno::Any > (1));
-    
+
 #if OSL_DEBUG_LEVEL > 2
     traceData();
 #endif

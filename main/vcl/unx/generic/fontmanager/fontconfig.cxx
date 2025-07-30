@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -116,8 +116,8 @@ class FontCfgWrapper
     FcResult		(*m_pFcPatternGetDouble)(const FcPattern*,const char*,int,double*);
     FcResult		(*m_pFcPatternGetBool)(const FcPattern*,const char*,int,FcBool*);
     void			(*m_pFcDefaultSubstitute)(FcPattern *);
-    FcPattern*		(*m_pFcFontSetMatch)(FcConfig*,FcFontSet**, int, FcPattern*,FcResult*);    
-    FcPattern*		(*m_pFcFontMatch)(FcConfig*,FcPattern*,FcResult*);    
+    FcPattern*		(*m_pFcFontSetMatch)(FcConfig*,FcFontSet**, int, FcPattern*,FcResult*);
+    FcPattern*		(*m_pFcFontMatch)(FcConfig*,FcPattern*,FcResult*);
     FcBool			(*m_pFcConfigAppFontAddFile)(FcConfig*, const FcChar8*);
     FcBool			(*m_pFcConfigAppFontAddDir)(FcConfig*, const FcChar8*);
     FcBool			(*m_pFcConfigParseAndLoad)(FcConfig*,const FcChar8*,FcBool);
@@ -143,14 +143,14 @@ public:
     static FontCfgWrapper& get();
     static void release();
 
-    bool isValid() const 
+    bool isValid() const
     { return m_pLib != NULL;}
 
     FcFontSet* getFontSet();
-    
+
     FcBool FcInit()
     { return m_pFcInit(); }
-    
+
     int FcGetVersion()
     { return m_pFcGetVersion(); }
 
@@ -168,13 +168,13 @@ public:
 
     void FcObjectSetDestroy( FcObjectSet* pSet )
     { m_pFcObjectSetDestroy( pSet ); }
-    
+
     FcPattern* FcPatternCreate()
     { return m_pFcPatternCreate(); }
 
     void FcPatternDestroy( FcPattern* pPattern )
     { m_pFcPatternDestroy( pPattern ); }
-    
+
     FcFontSet* FcFontList( FcConfig* pConfig, FcPattern* pPattern, FcObjectSet* pSet )
     { return m_pFcFontList( pConfig, pPattern, pSet ); }
 
@@ -435,7 +435,7 @@ void FontCfgWrapper::addFontSet( FcSetName eSetName )
 {
     #ifdef ENABLE_FONTCONFIG
     /*
-      add only acceptable outlined fonts to our config, 
+      add only acceptable outlined fonts to our config,
       for future fontconfig use
     */
     FcFontSet* pOrig = FcConfigGetFonts( FcConfigGetCurrent(), eSetName );
@@ -485,7 +485,7 @@ void FontCfgWrapper::addFontSet( FcSetName eSetName )
     (void)eSetName; // prevent compiler warning about unused parameter
     #endif
 }
-    
+
 FcFontSet* FontCfgWrapper::getFontSet()
 {
     #ifdef ENABLE_FONTCONFIG
@@ -582,7 +582,7 @@ FcResult FontCfgWrapper::FamilyFromPattern(FcPattern* pPattern, FcChar8 **family
     FcChar8 *origfamily;
     FcResult eFamilyRes	= FcPatternGetString( pPattern, FC_FAMILY, 0, &origfamily );
     *family = origfamily;
-    
+
     if( eFamilyRes == FcResultMatch)
     {
         FcChar8* familylang = NULL;
@@ -600,13 +600,13 @@ FcResult FontCfgWrapper::FamilyFromPattern(FcPattern* pPattern, FcChar8 **family
                 lang_and_families.push_back(lang_and_family(familylang, *family));
                 ++k;
             }
-            
+
             //possible to-do, sort by UILocale instead of process locale
             rtl_Locale* pLoc;
             osl_getProcessLocale(&pLoc);
             localizedsorter aSorter(pLoc);
             *family = aSorter.bestname(lang_and_families);
-            
+
             std::vector<lang_and_family>::const_iterator aEnd = lang_and_families.end();
             for (std::vector<lang_and_family>::const_iterator aIter = lang_and_families.begin(); aIter != aEnd; ++aIter)
             {
@@ -618,7 +618,7 @@ FcResult FontCfgWrapper::FamilyFromPattern(FcPattern* pPattern, FcChar8 **family
                 m_aLocalizedToCanonical[OString((const char*)(*family))] = OString((const char*)origfamily);
         }
     }
-    
+
     return eFamilyRes;
 }
 
@@ -723,7 +723,7 @@ int PrintFontManager::countFontconfigFonts( std::hash_map<rtl::OString, int, rtl
             int spacing = 0;
             int nCollectionEntry = -1;
             FcBool outline = false;
-            
+
             FcResult eFileRes	      = rWrapper.FcPatternGetString( pFSet->fonts[i], FC_FILE, 0, &file );
             FcResult eFamilyRes       = rWrapper.FamilyFromPattern( pFSet->fonts[i], &family );
             FcResult eStyleRes	      = rWrapper.FcPatternGetString( pFSet->fonts[i], FC_STYLE, 0, &style );
@@ -732,7 +732,7 @@ int PrintFontManager::countFontconfigFonts( std::hash_map<rtl::OString, int, rtl
             FcResult eSpacRes	      = rWrapper.FcPatternGetInteger( pFSet->fonts[i], FC_SPACING, 0, &spacing );
             FcResult eOutRes	      = rWrapper.FcPatternGetBool( pFSet->fonts[i], FC_OUTLINE, 0, &outline );
             FcResult eIndexRes        = rWrapper.FcPatternGetInteger( pFSet->fonts[i], FC_INDEX, 0, &nCollectionEntry );
-            
+
             if( eFileRes != FcResultMatch || eFamilyRes != FcResultMatch || eOutRes != FcResultMatch )
                 continue;
 
@@ -760,9 +760,9 @@ int PrintFontManager::countFontconfigFonts( std::hash_map<rtl::OString, int, rtl
             std::list< PrintFont* > aFonts;
             OString aDir, aBase, aOrgPath( (sal_Char*)file );
             splitPath( aOrgPath, aDir, aBase );
-            
+
             o_rVisitedPaths[aDir] = 1;
-            
+
             int nDirID = getDirectoryAtom( aDir, true );
             if( ! m_pFontCache->getFontCacheFile( nDirID, aBase, aFonts ) )
             {
@@ -820,7 +820,7 @@ int PrintFontManager::countFontconfigFonts( std::hash_map<rtl::OString, int, rtl
                     pUpdate = NULL;
                 }
             }
-            
+
             if( pUpdate )
             {
                 // set family name
@@ -845,7 +845,7 @@ int PrintFontManager::countFontconfigFonts( std::hash_map<rtl::OString, int, rtl
                 {
                     pUpdate->m_aStyleName = OStringToOUString( OString( (sal_Char*)style ), RTL_TEXTENCODING_UTF8 );
                 }
-                
+
                 // update font cache
                 m_pFontCache->updateFontCacheEntry( pUpdate, false );
                 // sort into known fonts
@@ -868,7 +868,7 @@ int PrintFontManager::countFontconfigFonts( std::hash_map<rtl::OString, int, rtl
             }
         }
     }
-    
+
     // how does one get rid of the config ?
 #if OSL_DEBUG_LEVEL > 1
     fprintf( stderr, "inserted %d fonts from fontconfig\n", nFonts );
@@ -923,7 +923,7 @@ bool PrintFontManager::addFontconfigDir( const rtl::OString& rDirName )
     return true;
 }
 
-static void addtopattern(FontCfgWrapper& rWrapper, FcPattern *pPattern, 
+static void addtopattern(FontCfgWrapper& rWrapper, FcPattern *pPattern,
 	italic::type eItalic, weight::type eWeight, width::type eWidth, pitch::type ePitch)
 {
     if( eItalic != italic::Unknown )
@@ -1107,7 +1107,7 @@ rtl::OUString PrintFontManager::Substitute(const rtl::OUString& rFontName,
     return aName;
 }
 
-bool PrintFontManager::getFontOptions( 
+bool PrintFontManager::getFontOptions(
     const FastPrintFontInfo& rInfo, int nSize, void (*subcallback)(void*),
     ImplFontOptions& rOptions) const
 {
@@ -1153,13 +1153,13 @@ bool PrintFontManager::getFontOptions(
                 FC_EMBEDDED_BITMAP, 0, &embitmap);
             FcResult eAntialias = rWrapper.FcPatternGetBool(pSet->fonts[0],
                 FC_ANTIALIAS, 0, &antialias);
-            FcResult eAutoHint = rWrapper.FcPatternGetBool(pSet->fonts[0], 
+            FcResult eAutoHint = rWrapper.FcPatternGetBool(pSet->fonts[0],
                 FC_AUTOHINT, 0, &autohint);
-            FcResult eHinting = rWrapper.FcPatternGetBool(pSet->fonts[0], 
+            FcResult eHinting = rWrapper.FcPatternGetBool(pSet->fonts[0],
                 FC_HINTING, 0, &hinting);
             /*FcResult eHintStyle =*/ rWrapper.FcPatternGetInteger( pSet->fonts[0],
                 FC_HINT_STYLE, 0, &hintstyle);
-         
+
             if( eEmbeddedBitmap == FcResultMatch )
                 rOptions.meEmbeddedBitmap = embitmap ? EMBEDDEDBITMAP_TRUE : EMBEDDEDBITMAP_FALSE;
             if( eAntialias == FcResultMatch )

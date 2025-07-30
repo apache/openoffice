@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -86,7 +86,7 @@ ResMgr* GetGalleryResMgr()
 BitmapEx GalleryResGetBitmapEx( sal_uInt32 nId )
 {
     BitmapEx aBmpEx( GAL_RESID( nId ) );
-    
+
     if( !aBmpEx.IsTransparent() )
             aBmpEx = BitmapEx( aBmpEx.GetBitmap(), COL_LIGHTMAGENTA );
 
@@ -492,16 +492,16 @@ void GalleryTransferable::InitData( bool bLazy )
                 if( !mpGraphicObject )
                 {
                     Graphic aGraphic;
-        
+
                     if( mpTheme->GetGraphic( mnObjectPos, aGraphic ) )
                         mpGraphicObject = new GraphicObject( aGraphic );
                 }
-            
+
                 if( !mxModelStream.Is() )
                 {
                     mxModelStream = new SotStorageStream( String() );
                     mxModelStream->SetBufferSize( 16348 );
-        
+
                     if( !mpTheme->GetModelStream( mnObjectPos, mxModelStream ) )
                         mxModelStream.Clear();
                     else
@@ -510,7 +510,7 @@ void GalleryTransferable::InitData( bool bLazy )
             }
         }
         break;
-        
+
         case( SGA_OBJ_ANIM ):
         case( SGA_OBJ_BMP ):
         case( SGA_OBJ_INET ):
@@ -519,15 +519,15 @@ void GalleryTransferable::InitData( bool bLazy )
             if( !mpURL )
             {
                 mpURL = new INetURLObject;
-    
+
                 if( !mpTheme->GetURL( mnObjectPos, *mpURL ) )
                     delete mpURL, mpURL = NULL;
             }
-            
+
             if( ( SGA_OBJ_SOUND != meObjectKind ) && !mpGraphicObject )
             {
                 Graphic aGraphic;
-    
+
                 if( mpTheme->GetGraphic( mnObjectPos, aGraphic ) )
                     mpGraphicObject = new GraphicObject( aGraphic );
             }
@@ -555,11 +555,11 @@ void GalleryTransferable::AddSupportedFormats()
     {
         if( mpURL )
             AddFormat( FORMAT_FILE );
-    
+
         if( mpGraphicObject )
         {
             AddFormat( SOT_FORMATSTR_ID_SVXB );
-    
+
             if( mpGraphicObject->GetType() == GRAPHIC_GDIMETAFILE )
             {
                 AddFormat( FORMAT_GDIMETAFILE );

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -228,7 +228,7 @@ OUString DefaultFontConfiguration::tryLocale( const Locale& rLocale, const OUStr
             }
         }
     }
-    
+
     return aRet;
 }
 
@@ -238,7 +238,7 @@ OUString DefaultFontConfiguration::getDefaultFont( const Locale& rLocale, int nT
     aLocale.Language = rLocale.Language.toAsciiLowerCase();
     aLocale.Country = rLocale.Country.toAsciiUpperCase();
     aLocale.Variant = rLocale.Variant.toAsciiUpperCase();
-    
+
     OUString aType = OUString::createFromAscii( getKeyType( nType ) );
     OUString aRet = tryLocale( aLocale, aType );
     if( ! aRet.getLength() && aLocale.Variant.getLength() )
@@ -565,7 +565,7 @@ struct ImplFontAttrWeightSearchData
 static ImplFontAttrWeightSearchData const aImplWeightAttrSearchList[] =
 {
 // the attribute names are ordered by "first match wins"
-// e.g. "semilight" should wins over "semi" 
+// e.g. "semilight" should wins over "semi"
 {   "extrablack",           WEIGHT_BLACK },
 {   "ultrablack",           WEIGHT_BLACK },
 {   "ultrabold",            WEIGHT_ULTRABOLD },
@@ -1081,7 +1081,7 @@ unsigned long FontSubstConfiguration::getSubstType( const com::sun::star::uno::R
     catch( WrappedTargetException )
     {
     }
-    
+
     return type;
 }
 
@@ -1113,7 +1113,7 @@ void FontSubstConfiguration::readLocaleSubst( const com::sun::star::lang::Locale
                 const OUString* pFontNames = aFonts.getConstArray();
                 // improve performance, heap fragmentation
                 it->second.aSubstAttributes.reserve( nFonts );
-                
+
                 // strings for subst retrieval, construct only once
                 OUString aSubstFontsStr     ( RTL_CONSTASCII_USTRINGPARAM( "SubstFonts" ) );
                 OUString aSubstFontsMSStr   ( RTL_CONSTASCII_USTRINGPARAM( "SubstFontsMS" ) );
@@ -1155,7 +1155,7 @@ void FontSubstConfiguration::readLocaleSubst( const com::sun::star::lang::Locale
                     aAttr.Weight = getSubstWeight( xFont, aSubstWeightStr );
                     aAttr.Width = getSubstWidth( xFont, aSubstWidthStr );
                     aAttr.Type = getSubstType( xFont, aSubstTypeStr );
-                    
+
                     // finally insert this entry
                     it->second.aSubstAttributes.push_back( aAttr );
                 }

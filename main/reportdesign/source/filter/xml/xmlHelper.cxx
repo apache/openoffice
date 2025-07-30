@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -68,12 +68,12 @@ namespace rptxml
 DBG_NAME(rpt_OPropertyHandlerFactory)
 OPropertyHandlerFactory::OPropertyHandlerFactory()
 {
-    DBG_CTOR(rpt_OPropertyHandlerFactory,NULL);    
+    DBG_CTOR(rpt_OPropertyHandlerFactory,NULL);
 }
 // -----------------------------------------------------------------------------
 OPropertyHandlerFactory::~OPropertyHandlerFactory()
 {
-    DBG_DTOR(rpt_OPropertyHandlerFactory,NULL);    
+    DBG_DTOR(rpt_OPropertyHandlerFactory,NULL);
 }
 // -----------------------------------------------------------------------------
 const XMLPropertyHandler* OPropertyHandlerFactory::GetPropertyHandler(sal_Int32 _nType) const
@@ -129,12 +129,12 @@ UniReference < XMLPropertySetMapper > OXMLHelper::GetCellStylePropertyMap(bool _
         {
             MAP_CONST_C(      PROPERTY_FORMATKEY,      STYLE,     DATA_STYLE_NAME,        XML_TYPE_NUMBER | MID_FLAG_SPECIAL_ITEM, CTF_RPT_NUMBERFORMAT ),
 
-            MAP_CONST_C(      PROPERTY_CONTROLBACKGROUND, 
+            MAP_CONST_C(      PROPERTY_CONTROLBACKGROUND,
                                                 FO,	  BACKGROUND_COLOR,		XML_TYPE_COLORTRANSPARENT|MID_FLAG_MULTI_PROPERTY, 0 ),
             MAP_CONST_C(      PROPERTY_VERTICALALIGN,   STYLE,	  VERTICAL_ALIGN,	    XML_RPT_ALGINMENT, 0 ),
             MAP_CONST_C(      PROPERTY_CONTROLBACKGROUNDTRANSPARENT,
                                                 FO,	  BACKGROUND_COLOR,		XML_TYPE_ISTRANSPARENT|MID_FLAG_MERGE_ATTRIBUTE, 0 ),
-            MAP_CONST_P(      PROPERTY_CONTROLBACKGROUND, 
+            MAP_CONST_P(      PROPERTY_CONTROLBACKGROUND,
                                                 FO,	  BACKGROUND_COLOR,		XML_TYPE_COLORTRANSPARENT|MID_FLAG_MULTI_PROPERTY, 0 ),
             MAP_CONST_P(      PROPERTY_CONTROLBACKGROUNDTRANSPARENT,
                                                 FO,	  BACKGROUND_COLOR,		XML_TYPE_ISTRANSPARENT|MID_FLAG_MERGE_ATTRIBUTE, 0 ),
@@ -152,7 +152,7 @@ UniReference < XMLPropertySetMapper > OXMLHelper::GetCellStylePropertyMap(bool _
         {
             MAP_CONST_C(      PROPERTY_FORMATKEY,      STYLE,     DATA_STYLE_NAME,        XML_TYPE_NUMBER | MID_FLAG_SPECIAL_ITEM, CTF_RPT_NUMBERFORMAT ),
 
-            MAP_CONST_C(      PROPERTY_CONTROLBACKGROUND, 
+            MAP_CONST_C(      PROPERTY_CONTROLBACKGROUND,
                                                 FO,	  BACKGROUND_COLOR,		XML_TYPE_COLORTRANSPARENT|MID_FLAG_MULTI_PROPERTY, 0 ),
             MAP_CONST_C(      PROPERTY_CONTROLBACKGROUNDTRANSPARENT,
                                                 FO,	  BACKGROUND_COLOR,		XML_TYPE_ISTRANSPARENT|MID_FLAG_MERGE_ATTRIBUTE, 0 ),
@@ -278,7 +278,7 @@ void OXMLHelper::copyStyleElements(const bool _bOld,const ::rtl::OUString& _sSty
 	{
 		::com::sun::star::awt::FontDescriptor aFont;
         static comphelper::PropertyMapEntry pMap[] =
-		{ 
+		{
 			{PROPERTY_FONTNAME,			static_cast<sal_uInt16>(PROPERTY_FONTNAME.length),			PROPERTY_ID_FONTNAME,			&::getCppuType(&aFont.Name)			,PropertyAttribute::BOUND,0},
 			{PROPERTY_CHARFONTHEIGHT,	static_cast<sal_uInt16>(PROPERTY_CHARFONTHEIGHT.length),	PROPERTY_ID_FONTHEIGHT,			&::getCppuType(&aFont.Height)		,PropertyAttribute::BOUND,0},
 			{PROPERTY_FONTWIDTH,		static_cast<sal_uInt16>(PROPERTY_FONTWIDTH.length),			PROPERTY_ID_FONTWIDTH,		 	&::getCppuType(&aFont.Width)		,PropertyAttribute::BOUND,0},
@@ -296,12 +296,12 @@ void OXMLHelper::copyStyleElements(const bool _bOld,const ::rtl::OUString& _sSty
 			{PROPERTY_CHARWORDMODE,     static_cast<sal_uInt16>(PROPERTY_CHARWORDMODE.length),	    PROPERTY_ID_FONTWORDLINEMODE,	&::getCppuType(&aFont.WordLineMode)	,PropertyAttribute::BOUND,0},
 			{PROPERTY_FONTTYPE,			static_cast<sal_uInt16>(PROPERTY_FONTTYPE.length),			PROPERTY_ID_FONTTYPE,			&::getCppuType(&aFont.Type)			,PropertyAttribute::BOUND,0},
 			//{PROPERTY_BACKGROUNDCOLOR,	static_cast<sal_uInt16>(PROPERTY_BACKGROUNDCOLOR.length),	PROPERTY_ID_BACKGROUNDCOLOR,	&::getCppuType(&nBackgroundColor)	,PropertyAttribute::BOUND,0},,
-			//{PROPERTY_PARAADJUST,			static_cast<sal_uInt16>(PROPERTY_PARAADJUST.length),				PROPERTY_ID_ALIGN,				&::getCppuType(&nAlign)				,PropertyAttribute::BOUND,0},,          
-			//{PROPERTY_CONTROLBORDER,			static_cast<sal_uInt16>(PROPERTY_CONTROLBORDER.length),			PROPERTY_ID_BORDER,				&::getCppuType(&aFont.Type)			,PropertyAttribute::BOUND,0},,         
-			//{PROPERTY_CONTROLBORDERCOLOR,		static_cast<sal_uInt16>(PROPERTY_CONTROLBORDERCOLOR.length),		PROPERTY_ID_BORDERCOLOR,		&::getCppuType(&aFont.Type)			,PropertyAttribute::BOUND,0},,    
-			//{PROPERTY_CHARCOLOR,		static_cast<sal_uInt16>(PROPERTY_TEXTCOLOR.length),			PROPERTY_ID_TEXTCOLOR,			&::getCppuType(&aFont.Type)			,PropertyAttribute::BOUND,0},,      
-			//{PROPERTY_FORMATKEY,		static_cast<sal_uInt16>(PROPERTY_FORMATKEY.length),			PROPERTY_ID_FORMATKEY,			&::getCppuType(&aFont.Type)			,PropertyAttribute::BOUND,0},,      
-			//{PROPERTY_CHARUNDERLINECOLOR,	static_cast<sal_uInt16>(PROPERTY_CHARUNDERLINECOLOR.length),		PROPERTY_ID_TEXTLINECOLOR,		&::getCppuType(&aFont.Type)			,PropertyAttribute::BOUND,0},,  
+			//{PROPERTY_PARAADJUST,			static_cast<sal_uInt16>(PROPERTY_PARAADJUST.length),				PROPERTY_ID_ALIGN,				&::getCppuType(&nAlign)				,PropertyAttribute::BOUND,0},,
+			//{PROPERTY_CONTROLBORDER,			static_cast<sal_uInt16>(PROPERTY_CONTROLBORDER.length),			PROPERTY_ID_BORDER,				&::getCppuType(&aFont.Type)			,PropertyAttribute::BOUND,0},,
+			//{PROPERTY_CONTROLBORDERCOLOR,		static_cast<sal_uInt16>(PROPERTY_CONTROLBORDERCOLOR.length),		PROPERTY_ID_BORDERCOLOR,		&::getCppuType(&aFont.Type)			,PropertyAttribute::BOUND,0},,
+			//{PROPERTY_CHARCOLOR,		static_cast<sal_uInt16>(PROPERTY_TEXTCOLOR.length),			PROPERTY_ID_TEXTCOLOR,			&::getCppuType(&aFont.Type)			,PropertyAttribute::BOUND,0},,
+			//{PROPERTY_FORMATKEY,		static_cast<sal_uInt16>(PROPERTY_FORMATKEY.length),			PROPERTY_ID_FORMATKEY,			&::getCppuType(&aFont.Type)			,PropertyAttribute::BOUND,0},,
+			//{PROPERTY_CHARUNDERLINECOLOR,	static_cast<sal_uInt16>(PROPERTY_CHARUNDERLINECOLOR.length),		PROPERTY_ID_TEXTLINECOLOR,		&::getCppuType(&aFont.Type)			,PropertyAttribute::BOUND,0},,
 			{ NULL, 0, 0, NULL, 0, 0 }
 		};
         try
@@ -348,7 +348,7 @@ void OXMLHelper::copyStyleElements(const bool _bOld,const ::rtl::OUString& _sSty
 uno::Reference<beans::XPropertySet> OXMLHelper::createBorderPropertySet()
 {
     static comphelper::PropertyMapEntry pMap[] =
-	{ 
+	{
 		{PROPERTY_BORDERLEFT,  	static_cast<sal_uInt16>(PROPERTY_BORDERLEFT.length),		0,			&::getCppuType((const table::BorderLine*)0)			,PropertyAttribute::BOUND,0},
 		{PROPERTY_BORDERRIGHT, 	static_cast<sal_uInt16>(PROPERTY_BORDERRIGHT.length),		1,			&::getCppuType((const table::BorderLine*)0)			,PropertyAttribute::BOUND,0},
         {PROPERTY_BORDERTOP,   	static_cast<sal_uInt16>(PROPERTY_BORDERTOP.length),		    2,			&::getCppuType((const table::BorderLine*)0)			,PropertyAttribute::BOUND,0},

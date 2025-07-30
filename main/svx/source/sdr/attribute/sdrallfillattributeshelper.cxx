@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
@@ -53,7 +53,7 @@ namespace drawinglayer
                 maPrimitives[0] = drawinglayer::primitive2d::createPolyPolygonFillPrimitive(
                     basegfx::B2DPolyPolygon(
                         basegfx::tools::createPolygonFromRect(
-                            maLastPaintRange)), 
+                            maLastPaintRange)),
                         maLastDefineRange,
                     maFillAttribute.get() ? *maFillAttribute.get() : drawinglayer::attribute::SdrFillAttribute(),
                     maFillGradientAttribute.get() ? *maFillGradientAttribute.get() : drawinglayer::attribute::FillGradientAttribute());
@@ -130,24 +130,24 @@ namespace drawinglayer
             return false;
         }
 
-        const drawinglayer::attribute::SdrFillAttribute& SdrAllFillAttributesHelper::getFillAttribute() const 
-        { 
+        const drawinglayer::attribute::SdrFillAttribute& SdrAllFillAttributesHelper::getFillAttribute() const
+        {
             if(!maFillAttribute.get())
             {
                 const_cast< SdrAllFillAttributesHelper* >(this)->maFillAttribute.reset(new drawinglayer::attribute::SdrFillAttribute());
             }
 
-            return *maFillAttribute.get(); 
+            return *maFillAttribute.get();
         }
 
-        const drawinglayer::attribute::FillGradientAttribute& SdrAllFillAttributesHelper::getFillGradientAttribute() const 
-        { 
+        const drawinglayer::attribute::FillGradientAttribute& SdrAllFillAttributesHelper::getFillGradientAttribute() const
+        {
             if(!maFillGradientAttribute.get())
             {
                 const_cast< SdrAllFillAttributesHelper* >(this)->maFillGradientAttribute.reset(new drawinglayer::attribute::FillGradientAttribute());
             }
 
-            return *maFillGradientAttribute.get(); 
+            return *maFillGradientAttribute.get();
         }
 
         const drawinglayer::primitive2d::Primitive2DSequence& SdrAllFillAttributesHelper::getPrimitive2DSequence(

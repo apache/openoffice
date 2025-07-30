@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -46,7 +46,7 @@ DBG_NAME( rpt_OXMLReport )
 
 OXMLReport::OXMLReport( ORptFilter& rImport,
 				sal_uInt16 nPrfx, const ::rtl::OUString& rLName,
-				const Reference< XAttributeList > & _xAttrList 
+				const Reference< XAttributeList > & _xAttrList
                 ,const uno::Reference< report::XReportDefinition >& _xComponent
 				,OXMLTable* _pContainer) :
 	OXMLReportElementBase( rImport, nPrfx, rLName,_xComponent.get(),_pContainer)
@@ -73,7 +73,7 @@ OXMLReport::OXMLReport( ORptFilter& rImport,
 
 			switch( rTokenMap.Get( nPrefix, sLocalName ) )
 			{
-				case XML_TOK_COMMAND_TYPE: 
+				case XML_TOK_COMMAND_TYPE:
                     {
                         sal_uInt16 nRet = static_cast<sal_uInt16>(sdb::CommandType::COMMAND);
 		                const SvXMLEnumMapEntry* aXML_EnumMap = OXMLHelper::GetCommandTypeOptions();
@@ -81,16 +81,16 @@ OXMLReport::OXMLReport( ORptFilter& rImport,
 					    m_xComponent->setCommandType(nRet);
                     }
 					break;
-				case XML_TOK_COMMAND: 
+				case XML_TOK_COMMAND:
 					m_xComponent->setCommand(sValue);
 					break;
-                case XML_TOK_FILTER: 
+                case XML_TOK_FILTER:
 					m_xComponent->setFilter(sValue);
 					break;
-                case XML_TOK_CAPTION: 
+                case XML_TOK_CAPTION:
 					m_xComponent->setCaption(sValue);
 					break;
-                case XML_TOK_ESCAPE_PROCESSING: 
+                case XML_TOK_ESCAPE_PROCESSING:
 					m_xComponent->setEscapeProcessing(sValue == s_sTRUE);
 					break;
                 case XML_TOK_REPORT_MIMETYPE:

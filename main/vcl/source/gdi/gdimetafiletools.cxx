@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
@@ -138,8 +138,8 @@ namespace
             rPoint.X() + rSize.Width(), rPoint.Y() + rSize.Height());
         const basegfx::B2DPolyPolygon aClipOfBitmap(
             basegfx::tools::clipPolyPolygonOnRange(
-                rClip, 
-                aLogicBitmapRange, 
+                rClip,
+                aLogicBitmapRange,
                 true,
                 false)); // stroke
 
@@ -153,7 +153,7 @@ namespace
         // covering (inside) or overlapping
         const double fClipArea(basegfx::tools::getArea(aClipOfBitmap));
         const double fBitmapArea(
-            aLogicBitmapRange.getWidth() * aLogicBitmapRange.getWidth() + 
+            aLogicBitmapRange.getWidth() * aLogicBitmapRange.getWidth() +
             aLogicBitmapRange.getHeight() * aLogicBitmapRange.getHeight());
         const double fFactor(fClipArea / fBitmapArea);
 
@@ -192,7 +192,7 @@ namespace
 
         aTransform.translate(-aLogicBitmapRange.getMinX(), -aLogicBitmapRange.getMinY());
         aTransform.scale(
-            static_cast< double >(aSizePixel.Width()) / aLogicBitmapRange.getWidth(), 
+            static_cast< double >(aSizePixel.Width()) / aLogicBitmapRange.getWidth(),
             static_cast< double >(aSizePixel.Height()) / aLogicBitmapRange.getHeight());
         aPixelPoly.transform(aTransform);
 
@@ -224,10 +224,10 @@ namespace
         rTarget.AddAction(
             new MetaBmpExScaleAction(
                 Point(
-                    basegfx::fround(aLogicBitmapRange.getMinX()), 
+                    basegfx::fround(aLogicBitmapRange.getMinX()),
                     basegfx::fround(aLogicBitmapRange.getMinY())),
                 Size(
-                    basegfx::fround(aLogicBitmapRange.getWidth()), 
+                    basegfx::fround(aLogicBitmapRange.getWidth()),
                     basegfx::fround(aLogicBitmapRange.getHeight())),
                 BitmapEx(rBitmapEx.GetBitmap(), aAlpha)));
 
@@ -241,9 +241,9 @@ namespace
         aMemStm << rStroke;
         rTarget.AddAction(
             new MetaCommentAction(
-                "XPATHSTROKE_SEQ_BEGIN", 
-                0, 
-                static_cast< const sal_uInt8* >(aMemStm.GetData()), 
+                "XPATHSTROKE_SEQ_BEGIN",
+                0,
+                static_cast< const sal_uInt8* >(aMemStm.GetData()),
                 aMemStm.Seek(STREAM_SEEK_TO_END)));
     }
 
@@ -254,9 +254,9 @@ namespace
         aMemStm << rFilling;
         rTarget.AddAction(
             new MetaCommentAction(
-                "XPATHFILL_SEQ_BEGIN", 
-                0, 
-                static_cast< const sal_uInt8* >(aMemStm.GetData()), 
+                "XPATHFILL_SEQ_BEGIN",
+                0,
+                static_cast< const sal_uInt8* >(aMemStm.GetData()),
                 aMemStm.Seek(STREAM_SEEK_TO_END)));
     }
 } // end of anonymous namespace
@@ -347,8 +347,8 @@ void clipMetafileContentAgainstOwnRegions(GDIMetaFile& rSource)
                     const basegfx::B2DPolyPolygon aNewClip(rRegion.GetAsB2DPolyPolygon());
 
                     aClips.back() = basegfx::tools::clipPolyPolygonOnPolyPolygon(
-                        aClips.back(), 
-                        aNewClip, 
+                        aClips.back(),
+                        aNewClip,
                         true,  // inside
                         false); // stroke
                 }
@@ -461,7 +461,7 @@ void clipMetafileContentAgainstOwnRegions(GDIMetaFile& rSource)
                     const Point& rPoint = pA->GetPoint();
 
                     if(!basegfx::tools::isInside(
-                        aClips.back(), 
+                        aClips.back(),
                         basegfx::B2DPoint(rPoint.X(), rPoint.Y())))
                     {
                         // when not inside, do not add original
@@ -476,7 +476,7 @@ void clipMetafileContentAgainstOwnRegions(GDIMetaFile& rSource)
                     const Point& rPoint = pA->GetPoint();
 
                     if(!basegfx::tools::isInside(
-                        aClips.back(), 
+                        aClips.back(),
                         basegfx::B2DPoint(rPoint.X(), rPoint.Y())))
                     {
                         // when not inside, do not add original
@@ -587,8 +587,8 @@ void clipMetafileContentAgainstOwnRegions(GDIMetaFile& rSource)
                             aClips.back(),
                             basegfx::B2DPolyPolygon(
                                 basegfx::tools::createPolygonFromEllipse(
-                                    aRange.getCenter(), 
-                                    aRange.getWidth() * 0.5, 
+                                    aRange.getCenter(),
+                                    aRange.getWidth() * 0.5,
                                     aRange.getHeight() * 0.5)),
                             aTarget,
                             false); // stroke
@@ -608,11 +608,11 @@ void clipMetafileContentAgainstOwnRegions(GDIMetaFile& rSource)
                     else
                     {
                         const Polygon aToolsPoly(
-                            rRect, 
-                            pA->GetStartPoint(), 
-                            pA->GetEndPoint(), 
+                            rRect,
+                            pA->GetStartPoint(),
+                            pA->GetEndPoint(),
                             POLY_ARC);
-                        
+
                         bDone = handleGeometricContent(
                             aClips.back(),
                             basegfx::B2DPolyPolygon(aToolsPoly.getB2DPolygon()),
@@ -634,9 +634,9 @@ void clipMetafileContentAgainstOwnRegions(GDIMetaFile& rSource)
                     else
                     {
                         const Polygon aToolsPoly(
-                            rRect, 
-                            pA->GetStartPoint(), 
-                            pA->GetEndPoint(), 
+                            rRect,
+                            pA->GetStartPoint(),
+                            pA->GetEndPoint(),
                             POLY_PIE);
 
                         bDone = handleGeometricContent(
@@ -660,11 +660,11 @@ void clipMetafileContentAgainstOwnRegions(GDIMetaFile& rSource)
                     else
                     {
                         const Polygon aToolsPoly(
-                            rRect, 
-                            pA->GetStartPoint(), 
-                            pA->GetEndPoint(), 
+                            rRect,
+                            pA->GetStartPoint(),
+                            pA->GetEndPoint(),
                             POLY_CHORD);
-                        
+
                         bDone = handleGeometricContent(
                             aClips.back(),
                             basegfx::B2DPolyPolygon(aToolsPoly.getB2DPolygon()),
@@ -726,7 +726,7 @@ void clipMetafileContentAgainstOwnRegions(GDIMetaFile& rSource)
 
                     if(MAP_PIXEL == rBitmapEx.GetPrefMapMode().GetMapUnit())
                     {
-                        aLogicalSize = Application::GetDefaultDevice()->PixelToLogic(aLogicalSize, aMapModes.back().GetMapUnit()); 
+                        aLogicalSize = Application::GetDefaultDevice()->PixelToLogic(aLogicalSize, aMapModes.back().GetMapUnit());
                     }
                     else
                     {
@@ -734,7 +734,7 @@ void clipMetafileContentAgainstOwnRegions(GDIMetaFile& rSource)
                     }
 
                     bDone = handleBitmapContent(
-                        aClips.back(), 
+                        aClips.back(),
                         pA->GetPoint(),
                         aLogicalSize,
                         rBitmapEx,
@@ -753,7 +753,7 @@ void clipMetafileContentAgainstOwnRegions(GDIMetaFile& rSource)
 
                     if(MAP_PIXEL == rBitmap.GetPrefMapMode().GetMapUnit())
                     {
-                        aLogicalSize = Application::GetDefaultDevice()->PixelToLogic(aLogicalSize, aMapModes.back().GetMapUnit()); 
+                        aLogicalSize = Application::GetDefaultDevice()->PixelToLogic(aLogicalSize, aMapModes.back().GetMapUnit());
                     }
                     else
                     {
@@ -761,7 +761,7 @@ void clipMetafileContentAgainstOwnRegions(GDIMetaFile& rSource)
                     }
 
                     bDone = handleBitmapContent(
-                        aClips.back(), 
+                        aClips.back(),
                         pA->GetPoint(),
                         aLogicalSize,
                         BitmapEx(rBitmap),
@@ -774,7 +774,7 @@ void clipMetafileContentAgainstOwnRegions(GDIMetaFile& rSource)
                     const MetaBmpExScaleAction* pA = static_cast< const MetaBmpExScaleAction* >(pAction);
 
                     bDone = handleBitmapContent(
-                        aClips.back(), 
+                        aClips.back(),
                         pA->GetPoint(),
                         pA->GetSize(),
                         pA->GetBitmapEx(),
@@ -787,7 +787,7 @@ void clipMetafileContentAgainstOwnRegions(GDIMetaFile& rSource)
                     const MetaBmpScaleAction* pA = static_cast< const MetaBmpScaleAction* >(pAction);
 
                     bDone = handleBitmapContent(
-                        aClips.back(), 
+                        aClips.back(),
                         pA->GetPoint(),
                         pA->GetSize(),
                         BitmapEx(pA->GetBitmap()),
@@ -819,7 +819,7 @@ void clipMetafileContentAgainstOwnRegions(GDIMetaFile& rSource)
                         {
                             aCroppedBitmapEx.Crop(aCropRectangle);
                             bDone = handleBitmapContent(
-                                aClips.back(), 
+                                aClips.back(),
                                 pA->GetDestPoint(),
                                 pA->GetDestSize(),
                                 aCroppedBitmapEx,
@@ -853,7 +853,7 @@ void clipMetafileContentAgainstOwnRegions(GDIMetaFile& rSource)
                         {
                             aCroppedBitmap.Crop(aCropRectangle);
                             bDone = handleBitmapContent(
-                                aClips.back(), 
+                                aClips.back(),
                                 pA->GetDestPoint(),
                                 pA->GetDestSize(),
                                 BitmapEx(aCroppedBitmap),
@@ -876,7 +876,7 @@ void clipMetafileContentAgainstOwnRegions(GDIMetaFile& rSource)
                         // nothing to do; this just means that between here and XGRAD_SEQ_END
                         // exists a META_GRADIENTEX_ACTION mixed with Xor-tricked painiting
                         // commands. This comment is used to scan over these and filter for
-                        // the gradient action. It is needed to support META_GRADIENTEX_ACTION 
+                        // the gradient action. It is needed to support META_GRADIENTEX_ACTION
                         // in this processor to solve usages.
                     }
                     else if(COMPARE_EQUAL == rComment.CompareIgnoreCaseToAscii("XPATHFILL_SEQ_BEGIN"))
@@ -1062,7 +1062,7 @@ void clipMetafileContentAgainstOwnRegions(GDIMetaFile& rSource)
 
     if(bChanged)
     {
-        // when changed, copy back and do not forget to set MapMode 
+        // when changed, copy back and do not forget to set MapMode
         // and PrefSize
         aTarget.SetPrefMapMode(rSource.GetPrefMapMode());
         aTarget.SetPrefSize(rSource.GetPrefSize());

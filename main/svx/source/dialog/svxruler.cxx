@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -1094,7 +1094,7 @@ void SvxRuler::UpdatePage()
     Point aEdtWinPos = pEditWin->GetPosPixel();
     if( Application::GetSettings().GetLayoutRTL() && bHorz )
     {
-        //#i73321# in RTL the window and the ruler is not mirrored but the 
+        //#i73321# in RTL the window and the ruler is not mirrored but the
         // influence of the vertical ruler is inverted
         Size aOwnSize = GetSizePixel();
         Size aEdtWinSize = pEditWin->GetSizePixel();
@@ -1309,7 +1309,7 @@ void SvxRuler::UpdateTabs()
                     {
                         pTabs[nTabCount + TAB_GAP].nPos =
                             (pTabs[nTabCount].nPos + nDefTabDist);
-                        pTabs[nTabCount + TAB_GAP].nPos -= 
+                        pTabs[nTabCount + TAB_GAP].nPos -=
                             ((pTabs[nTabCount + TAB_GAP].nPos - lParaIndentPix)
 						        % nDefTabDist );
                     }
@@ -1332,7 +1332,7 @@ void SvxRuler::UpdateTabs()
                     pTabs[nTabCount + TAB_GAP].nPos =
 					pTabs[nTabCount].nPos + nDefTabDist;
                 }
-                
+
 				if(pTabs[nTabCount+TAB_GAP].nPos >= lRightIndent)
 					break;
 				pTabs[nTabCount + TAB_GAP].nStyle = RULER_TAB_DEFAULT;
@@ -2800,7 +2800,7 @@ void SvxRuler::EvalModifier()
 		 nDragType = DRAG_OBJECT_SIZE_PROPORTIONAL;
          if( RULER_TYPE_TAB == eType ||
              ( ( RULER_TYPE_BORDER == eType || RULER_TYPE_MARGIN1 == eType || RULER_TYPE_MARGIN2 == eType) &&
-               pColumnItem ) )  
+               pColumnItem ) )
 			 PrepareProportional_Impl(eType);
 		 break;
 	 }

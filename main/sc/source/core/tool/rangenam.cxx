@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -425,7 +425,7 @@ void ScRangeData::UpdateTabRef(SCTAB nOldTable, sal_uInt16 nFlag, SCTAB nNewTabl
 		switch (nFlag)
 		{
 			case 1:										// einfache InsertTab (doc.cxx)
-			case 4:	
+			case 4:
 			       pRangeData = aComp.UpdateInsertTab(nOldTable, true );	// und CopyTab (doc2.cxx)
 				if ( (aRangeNameScope != MAXTABCOUNT) && ( aRangeNameScope >= nOldTable) && ( aRangeNameScope != MAXTAB ) )
 					aRangeNameScope ++;
@@ -449,10 +449,10 @@ void ScRangeData::UpdateTabRef(SCTAB nOldTable, sal_uInt16 nFlag, SCTAB nNewTabl
 				}
 			}
 			break;
-			case 5:										
+			case 5:
 			{
-                                //when copying a sheet, this will be invoked to update the new name range's address in the new sheet 
-                                //only need to update the address if the address's tab same as the range scope. because if they are different, the address's tab have been updated in ScRangeName::UpdateTabRef()  
+                                //when copying a sheet, this will be invoked to update the new name range's address in the new sheet
+                                //only need to update the address if the address's tab same as the range scope. because if they are different, the address's tab have been updated in ScRangeName::UpdateTabRef()
                                 //for example, in sheet5(scope is sheet5), there are two name range, one address is sheet5, the other is sheet4, if copy sheet5 to sheet1
                                 //only need to change the first one's address to sheet1
 				pRangeData = aComp.UpdateMoveTab(nOldTable, nNewTable, true , true);
@@ -488,7 +488,7 @@ void ScRangeData::MakeValidName( String& rName )		// static
 	if ( nPos>0 )
 		rName.Erase(0,nPos);
 
-    // if the first character is an invalid start character, precede with '_'	
+    // if the first character is an invalid start character, precede with '_'
 	if ( rName.Len() && !ScCompiler::IsCharFlagAllConventions( rName, 0, SC_COMPILER_C_CHAR_NAME ) )
 		rName.Insert('_',0);
 
@@ -500,14 +500,14 @@ void ScRangeData::MakeValidName( String& rName )		// static
 			rName.SetChar( nPos, '_' );
 	}
 
-    // Ensure that the proposed name is not a reference under any convention, 
+    // Ensure that the proposed name is not a reference under any convention,
     // same as in IsNameValid()
 	ScAddress aAddr;
 	ScRange aRange;
     for (int nConv = FormulaGrammar::CONV_UNSPECIFIED; ++nConv < FormulaGrammar::CONV_LAST; )
     {
         ScAddress::Details details( static_cast<FormulaGrammar::AddressConvention>( nConv ) );
-        // Don't check Parse on VALID, any partial only VALID may result in 
+        // Don't check Parse on VALID, any partial only VALID may result in
         // #REF! during compile later!
         while (aRange.Parse( rName, NULL, details) || aAddr.Parse( rName, NULL, details))
         {
@@ -521,7 +521,7 @@ void ScRangeData::MakeValidName( String& rName )		// static
 
 sal_Bool ScRangeData::IsNameValid( const String& rName, ScDocument* pDoc )
 {
-    /* XXX If changed, sc/source/filter/ftools/ftools.cxx 
+    /* XXX If changed, sc/source/filter/ftools/ftools.cxx
      * ScfTools::ConvertToScDefinedName needs to be changed too. */
 	xub_StrLen nPos = 0;
 	xub_StrLen nLen = rName.Len();
@@ -537,7 +537,7 @@ sal_Bool ScRangeData::IsNameValid( const String& rName, ScDocument* pDoc )
     for (int nConv = FormulaGrammar::CONV_UNSPECIFIED; ++nConv < FormulaGrammar::CONV_LAST; )
     {
         ScAddress::Details details( static_cast<FormulaGrammar::AddressConvention>( nConv ) );
-        // Don't check Parse on VALID, any partial only VALID may result in 
+        // Don't check Parse on VALID, any partial only VALID may result in
         // #REF! during compile later!
         if (aRange.Parse( rName, pDoc, details) || aAddr.Parse( rName, pDoc, details))
 		    return sal_False;
@@ -577,7 +577,7 @@ bool ScRangeData::SetRangeScope( SCTAB Scope )
 	        return true;
 	 }
          return false;
-	
+
 }
 
  String ScRangeData::GetScopeSheetName() const
@@ -760,7 +760,7 @@ short ScRangeName::Compare(ScDataObject* pKey1, ScDataObject* pKey2) const
 bool ScRangeName::HasRangeinSheetScope(SCTAB Scope)
 {
     for (sal_uInt16 i = 0; i < nCount; i++)
-        if  (((*this)[i])->GetRangeScope() == Scope) 
+        if  (((*this)[i])->GetRangeScope() == Scope)
             return true;
 
     return false;
@@ -770,17 +770,17 @@ bool ScRangeName::HasRangeinSheetScope(SCTAB Scope)
 bool ScRangeName::RemoveRangeinScope(SCTAB Scope)
 {
      bool bRemoved = false;
-	
+
      if ( Scope == MAXTABCOUNT )
          return bRemoved;
 
      sal_uInt16 i = 0;
      while (i < nCount)
      {
-          if  (((*this)[i])->GetRangeScope() == Scope) 
+          if  (((*this)[i])->GetRangeScope() == Scope)
           {
                Free( (*this)[i] );
-               bRemoved = true;		
+               bRemoved = true;
           }
           else
                i++;
@@ -800,13 +800,13 @@ bool ScRangeName::CopyRangeinScope(SCTAB oldScope, SCTAB newScope)
 
        sal_uInt16 originalCount = nCount;
        for ( sal_uInt16 i = 0; i < originalCount; i++)
-           if ( ((*this)[i])->GetRangeScope() == oldScope) 
+           if ( ((*this)[i])->GetRangeScope() == oldScope)
            {
                  ScRangeData * aCopiedRange = (ScRangeData *)(*this)[i]->Clone();
                  aCopiedRange->UpdateTabRef(oldScope, 5 , newScope);
                  aCopiedRange->SetIndex(GetEntryIndex());
                  Insert( aCopiedRange );
-                 bCopied = true;		
+                 bCopied = true;
            }
 
        return bCopied;
@@ -819,7 +819,7 @@ bool ScRangeName::SearchNameUpper( const String& rUpperName, sal_uInt16& rIndex,
     sal_uInt16 i = 0;
     while (i < nCount)
     {
-        if ( (((*this)[i])->GetUpperName() == rUpperName) 
+        if ( (((*this)[i])->GetUpperName() == rUpperName)
 			&& (((*this)[i])->GetRangeScope() == Scope ))
         {
             rIndex = i;

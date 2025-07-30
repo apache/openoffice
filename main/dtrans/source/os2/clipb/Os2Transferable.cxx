@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -49,7 +49,7 @@ Os2Transferable::Os2Transferable(
 {
 	debug_printf("Os2Transferable::Os2Transferable %08x\n", this);
 	hAB = WinQueryAnchorBlock( HWND_DESKTOP );
-	
+
 	// query clipboard data to get mimetype
 	if( UWinOpenClipbrd( hAB ) )
 	{
@@ -66,7 +66,7 @@ Os2Transferable::Os2Transferable(
 			//debug_printf("Os2Transferable::Os2Transferable pszText %s\n", pszText);
 		}
 		UWinCloseClipbrd( hAB);
-	} 
+	}
 	else
 	{
 		debug_printf("Os2Transferable::Os2Transferable failed to open clipboard\n");
@@ -90,7 +90,7 @@ Any SAL_CALL Os2Transferable::getTransferData( const DataFlavor& rFlavor )
 	debug_printf("Os2Transferable::getTransferData mimetype: %s\n", CHAR_POINTER(rFlavor.MimeType));
 	Any aRet;
 	Sequence< sal_Int8 > aData;
-	
+
 	// retrieve unicode text
 	if( rFlavor.MimeType.equalsIgnoreAsciiCase( OUString::createFromAscii( "text/plain;charset=utf-16" ) ) )
 	{
@@ -108,7 +108,7 @@ Any SAL_CALL Os2Transferable::getTransferData( const DataFlavor& rFlavor )
 				return aRet;
 		}
 	}
-	
+
 	// retrieve bitmap
 	if( rFlavor.MimeType.equalsIgnoreAsciiCase( OUString::createFromAscii( "application/x-openoffice-bitmap;windows_formatname=\"Bitmap\"" ) ) )
 	{
@@ -153,7 +153,7 @@ sal_Bool SAL_CALL Os2Transferable::isDataFlavorSupported( const DataFlavor& aFla
 {
 	debug_printf("Os2Transferable::isDataFlavorSupported %08x\n", this);
 	debug_printf("Os2Transferable::isDataFlavorSupported %s\n", CHAR_POINTER(aFlavor.MimeType));
-	
+
 	if( aFlavor.DataType != getCppuType( (Sequence< sal_Int8 >*)0 ) )
 	{
 		if( ! aFlavor.MimeType.equalsIgnoreAsciiCase( OUString::createFromAscii( "text/plain;charset=utf-16" ) ) &&

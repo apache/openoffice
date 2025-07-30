@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
@@ -49,7 +49,7 @@ public:
 	virtual					~AtsFontData( void );
 	virtual ImplFontData*   Clone( void ) const;
 
-	virtual ImplMacTextStyle*	CreateMacTextStyle( const ImplFontSelectData& ) const;    
+	virtual ImplMacTextStyle*	CreateMacTextStyle( const ImplFontSelectData& ) const;
 	virtual ImplFontEntry*		CreateFontInstance( /*const*/ ImplFontSelectData& ) const;
 	virtual int					GetFontTable( const char pTagName[5], unsigned char* ) const;
 };
@@ -62,7 +62,7 @@ class AtsFontList
 public:
 	explicit	AtsFontList( void );
 	virtual		~AtsFontList( void );
-	
+
 	virtual void			AnnounceFonts( ImplDevFontList& ) const;
 	virtual ImplMacFontData* GetFontDataFromId( sal_IntPtr nFontId ) const;
 
@@ -70,7 +70,7 @@ private:
 	typedef std::hash_map<sal_IntPtr,AtsFontData*> AtsFontContainer;
 	AtsFontContainer maFontContainer;
 
-	void InitGlyphFallbacks( void );	
+	void InitGlyphFallbacks( void );
 	ATSUFontFallbacks	maFontFallbacks;
 };
 
@@ -186,7 +186,7 @@ void AtsTextStyle::GetFontMetric( float fDPIY, ImplFontMetricData& rMetric ) con
 	// of the font that has eventually been size-limited
 
 	// get the matching ATSU font handle
-	ATSUFontID fontId; 	 
+	ATSUFontID fontId;
 	OSStatus err = ::ATSUGetAttribute( maATSUStyle, kATSUFontTag, sizeof(ATSUFontID), &fontId, 0 );
 	DBG_ASSERT( (err==noErr), "AquaSalGraphics::GetFontMetric() : could not get font id\n");
 
@@ -360,7 +360,7 @@ static bool GetDevFontAttributes( ATSUFontID nFontID, ImplDevFontAttributes& rDF
 	rDFA.meAntiAlias	= ANTIALIAS_DONTKNOW;
 	rDFA.meEmbeddedBitmap = EMBEDDEDBITMAP_DONTKNOW;
 
-	// prepare iterating over all name strings of the font	
+	// prepare iterating over all name strings of the font
 	ItemCount nFontNameCount = 0;
 	rc = ATSUCountFontNames( nFontID, &nFontNameCount );
 	if( rc != noErr )
@@ -377,9 +377,9 @@ static bool GetDevFontAttributes( ATSUFontID nFontID, ImplDevFontAttributes& rDF
 	{
 		ByteCount nNameLength = 0;
 
-		FontNameCode     eFontNameCode; 
-		FontPlatformCode eFontNamePlatform; 
-		FontScriptCode   eFontNameScript; 
+		FontNameCode     eFontNameCode;
+		FontPlatformCode eFontNamePlatform;
+		FontScriptCode   eFontNameScript;
 		FontLanguageCode eFontNameLanguage;
 		rc = ATSUGetIndFontName( nFontID, nNameIndex, 0, NULL,
 			&nNameLength, &eFontNameCode, &eFontNamePlatform, &eFontNameScript, &eFontNameLanguage );

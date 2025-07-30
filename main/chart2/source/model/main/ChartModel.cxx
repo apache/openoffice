@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -168,7 +168,7 @@ ChartModel::ChartModel( const ChartModel & rOther )
         Reference< beans::XPropertySet > xNewPageBackground = CreateRefClone< Reference< beans::XPropertySet > >()( rOther.m_xPageBackground );
         Reference< chart2::XChartTypeManager > xChartTypeManager = CreateRefClone< Reference< chart2::XChartTypeManager > >()( rOther.m_xChartTypeManager );
         Reference< container::XNameAccess > xXMLNamespaceMap = CreateRefClone< Reference< container::XNameAccess > >()( rOther.m_xXMLNamespaceMap );
-        
+
         {
             MutexGuard aGuard( m_aModelMutex );
             xListener = this;
@@ -178,7 +178,7 @@ ChartModel::ChartModel( const ChartModel & rOther )
             m_xChartTypeManager = xChartTypeManager;
             m_xXMLNamespaceMap = xXMLNamespaceMap;
         }
-        
+
         ModifyListenerHelper::addListener( xNewTitle, xListener );
         ModifyListenerHelper::addListener( xNewDiagram, xListener );
         ModifyListenerHelper::addListener( xNewPageBackground, xListener );
@@ -406,7 +406,7 @@ void SAL_CALL ChartModel::disconnectController( const uno::Reference< frame::XCo
 	//case: current controller is disconnected:
 	if( m_xCurrentController == xController )
 		m_xCurrentController.clear();
-    
+
     DisposeHelper::DisposeAndClear( m_xRangeHighlighter );
 }
 
@@ -1367,7 +1367,7 @@ void SAL_CALL ChartModel::setParent( const Reference< uno::XInterface >& Parent 
 uno::Sequence< Reference< chart2::data::XLabeledDataSequence > > SAL_CALL ChartModel::getDataSequences()
     throw (uno::RuntimeException)
 {
-    Reference< chart2::data::XDataSource > xSource( 
+    Reference< chart2::data::XDataSource > xSource(
         DataSourceHelper::getUsedData( uno::Reference< frame::XModel >(this) ) );
     if( xSource.is())
         return xSource->getDataSequences();

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -148,7 +148,7 @@ static sal_uInt16 ImplGetNum( const sal_Unicode*& rpBuf, sal_Bool& rbError )
 
 static void ImplSkipDelimiters( const sal_Unicode*& rpBuf )
 {
-    while( ( *rpBuf == ',' ) || ( *rpBuf == '.' ) || ( *rpBuf == ';' ) || 
+    while( ( *rpBuf == ',' ) || ( *rpBuf == '.' ) || ( *rpBuf == ';' ) ||
            ( *rpBuf == ':' ) || ( *rpBuf == '-' ) || ( *rpBuf == '/' ) )
     {
         rpBuf++;
@@ -832,16 +832,16 @@ void PatternFormatter::ImplLoadRes( const ResId& rResId )
     if( pMgr )
     {
         sal_uLong       nMask = pMgr->ReadLong();
-    
+
         if ( PATTERNFORMATTER_STRICTFORMAT & nMask )
             SetStrictFormat( (sal_Bool)pMgr->ReadShort() );
-    
+
         if ( PATTERNFORMATTER_EDITMASK & nMask )
             aEditMask = ByteString( pMgr->ReadString(), RTL_TEXTENCODING_ASCII_US );
-    
+
         if ( PATTERNFORMATTER_LITTERALMASK & nMask )
             aLiteralMask = pMgr->ReadString();
-    
+
         if ( (PATTERNFORMATTER_EDITMASK | PATTERNFORMATTER_LITTERALMASK) & nMask )
             ImplSetMask( aEditMask, aLiteralMask );
     }
@@ -1560,7 +1560,7 @@ void DateField::ImplDateSpinArea( sal_Bool bUp )
                         nPos++;
                 }
             }
-                
+
 
             switch( eFormat )
             {
@@ -1643,7 +1643,7 @@ void DateFormatter::ImplLoadRes( const ResId& rResId )
     if( pMgr )
     {
         sal_uLong       nMask = pMgr->ReadLong();
-    
+
         if ( DATEFORMATTER_MIN & nMask )
         {
             maMin = Date( ResId( (RSHEADER_TYPE *)pMgr->GetClass(), *pMgr ) );
@@ -1656,10 +1656,10 @@ void DateFormatter::ImplLoadRes( const ResId& rResId )
         }
         if ( DATEFORMATTER_LONGFORMAT & nMask )
             mbLongFormat = (sal_Bool)pMgr->ReadShort();
-    
+
         if ( DATEFORMATTER_STRICTFORMAT & nMask )
             SetStrictFormat( (sal_Bool)pMgr->ReadShort() );
-    
+
         if ( DATEFORMATTER_VALUE & nMask )
         {
             maFieldDate = Date( ResId( (RSHEADER_TYPE *)pMgr->GetClass(), *pMgr ) );
@@ -2079,12 +2079,12 @@ DateField::DateField( Window* pParent, const ResId& rResId ) :
 void DateField::ImplLoadRes( const ResId& rResId )
 {
     SpinField::ImplLoadRes( rResId );
-    
+
     ResMgr* pMgr = rResId.GetResMgr();
     if( pMgr )
     {
         DateFormatter::ImplLoadRes( ResId( (RSHEADER_TYPE *)GetClassRes(), *pMgr ) );
-    
+
         sal_uLong  nMask = ReadLongRes();
         if ( DATEFIELD_FIRST & nMask )
         {
@@ -2812,28 +2812,28 @@ void TimeFormatter::ImplLoadRes( const ResId& rResId )
     if( pMgr )
     {
         sal_uLong   nMask = pMgr->ReadLong();
-    
+
         if ( TIMEFORMATTER_MIN & nMask )
         {
             SetMin( Time( ResId( (RSHEADER_TYPE *)pMgr->GetClass(), *pMgr ) ) );
             pMgr->Increment( pMgr->GetObjSize( (RSHEADER_TYPE *)pMgr->GetClass() ) );
         }
-    
+
         if ( TIMEFORMATTER_MAX & nMask )
         {
             SetMax( Time( ResId( (RSHEADER_TYPE *)pMgr->GetClass(), *pMgr ) ) );
             pMgr->Increment( pMgr->GetObjSize( (RSHEADER_TYPE *)pMgr->GetClass() ) );
         }
-    
+
         if ( TIMEFORMATTER_TIMEFIELDFORMAT & nMask )
             meFormat = (TimeFieldFormat)pMgr->ReadLong();
-    
+
         if ( TIMEFORMATTER_DURATION & nMask )
             mbDuration = (sal_Bool)pMgr->ReadShort();
-    
+
         if ( TIMEFORMATTER_STRICTFORMAT & nMask )
             SetStrictFormat( (sal_Bool)pMgr->ReadShort() );
-    
+
         if ( TIMEFORMATTER_VALUE & nMask )
         {
             maFieldTime = Time( ResId( (RSHEADER_TYPE *)pMgr->GetClass(), *pMgr ) );
@@ -2842,7 +2842,7 @@ void TimeFormatter::ImplLoadRes( const ResId& rResId )
             if ( maFieldTime < GetMin() )
                 maFieldTime = GetMin();
             maLastTime = maFieldTime;
-    
+
             pMgr->Increment( pMgr->GetObjSize( (RSHEADER_TYPE *)pMgr->GetClass() ) );
         }
     }
@@ -3133,9 +3133,9 @@ void TimeField::ImplLoadRes( const ResId& rResId )
     if( pMgr )
     {
         TimeFormatter::ImplLoadRes( ResId( (RSHEADER_TYPE *)GetClassRes(), *pMgr ) );
-    
+
         sal_uLong      nMask = ReadLongRes();
-    
+
         if ( TIMEFIELD_FIRST & nMask )
         {
             maFirst = Time( ResId( (RSHEADER_TYPE *)GetClassRes(), *pMgr ) );
@@ -3147,7 +3147,7 @@ void TimeField::ImplLoadRes( const ResId& rResId )
             IncrementRes( GetObjSizeRes( (RSHEADER_TYPE *)GetClassRes() ) );
         }
     }
-    
+
     Reformat();
 }
 

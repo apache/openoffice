@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -188,7 +188,7 @@ const char* aCommands[] =
 //_________________________________________________________________________________________________________________
 //	Defines
 //_________________________________________________________________________________________________________________
-// 
+//
 
 using namespace com::sun::star::uno;
 using namespace com::sun::star::lang;
@@ -227,11 +227,11 @@ ControlMenuController::~ControlMenuController()
 void ControlMenuController::updateImagesPopupMenu( PopupMenu* pPopupMenu )
 {
     rtl::OUString aResName( RTL_CONSTASCII_USTRINGPARAM( "svx" ));
-    
+
     ResMgr* pResMgr = ResMgr::CreateResMgr( rtl::OUStringToOString( aResName, RTL_TEXTENCODING_ASCII_US ).getStr() );
     ResId aResId( m_bWasHiContrast ? RID_SVXIMGLIST_FMEXPL_HC : RID_SVXIMGLIST_FMEXPL, *pResMgr );
     aResId.SetRT( RSC_IMAGELIST );
-	
+
     if ( pResMgr->IsAvailable( aResId ))
     {
         ImageList aImageList( aResId );
@@ -253,13 +253,13 @@ void ControlMenuController::fillPopupMenu( Reference< css::awt::XPopupMenu >& rP
 {
     VCLXPopupMenu*                                     pPopupMenu        = (VCLXPopupMenu *)VCLXMenu::GetImplementation( rPopupMenu );
     PopupMenu*                                         pVCLPopupMenu     = 0;
-    
+
     vos::OGuard aSolarMutexGuard( Application::GetSolarMutex() );
-    
+
     resetPopupMenu( rPopupMenu );
     if ( pPopupMenu )
         pVCLPopupMenu = (PopupMenu *)pPopupMenu->GetMenu();
-        
+
     if ( pVCLPopupMenu && m_pResPopupMenu )
         *pVCLPopupMenu = *m_pResPopupMenu;
 }
@@ -273,7 +273,7 @@ void SAL_CALL ControlMenuController::disposing( const EventObject& ) throw ( Run
     m_xFrame.clear();
     m_xDispatch.clear();
     m_xServiceManager.clear();
-    
+
     if ( m_xPopupMenu.is() )
         m_xPopupMenu->removeMenuListener( Reference< css::awt::XMenuListener >(( OWeakObject *)this, UNO_QUERY ));
     m_xPopupMenu.clear();
@@ -284,8 +284,8 @@ void SAL_CALL ControlMenuController::disposing( const EventObject& ) throw ( Run
 void SAL_CALL ControlMenuController::statusChanged( const FeatureStateEvent& Event ) throw ( RuntimeException )
 {
     osl::ResettableMutexGuard aLock( m_aMutex );
-        
-    sal_uInt16 nMenuId = 0;    
+
+    sal_uInt16 nMenuId = 0;
     for (sal_uInt32 i=0; i < sizeof(aCommands)/sizeof(aCommands[0]); ++i)
     {
         if ( Event.FeatureURL.Complete.equalsAscii( aCommands[i] ))
@@ -298,9 +298,9 @@ void SAL_CALL ControlMenuController::statusChanged( const FeatureStateEvent& Eve
     if ( nMenuId )
     {
         VCLXPopupMenu*  pPopupMenu = (VCLXPopupMenu *)VCLXMenu::GetImplementation( m_xPopupMenu );
-    
+
         vos::OGuard aSolarMutexGuard( Application::GetSolarMutex() );
-    
+
         PopupMenu* pVCLPopupMenu = (PopupMenu *)pPopupMenu->GetMenu();
 
         if ( !Event.IsEnabled && pVCLPopupMenu->GetItemPos( nMenuId ) != MENU_ITEM_NOTFOUND )
@@ -319,11 +319,11 @@ void SAL_CALL ControlMenuController::statusChanged( const FeatureStateEvent& Eve
 				if ( nPrevInConversion != MENU_ITEM_NOTFOUND )
 					break;
 			}
-			
+
           if ( MENU_ITEM_NOTFOUND == nPrevInConversion )
 				// none of the items which precede the nSID-slot in the source menu are present in our conversion menu
 				nPrevInConversion = sal::static_int_cast< sal_uInt16 >(-1);	// put the item at the first position
-			
+
             pVCLPopupMenu->InsertItem( nMenuId, m_pResPopupMenu->GetItemText( nMenuId ), m_pResPopupMenu->GetItemBits( nMenuId ), ++nPrevInConversion );
 			pVCLPopupMenu->SetItemImage( nMenuId, m_pResPopupMenu->GetItemImage( nMenuId ));
 			pVCLPopupMenu->SetHelpId( nMenuId, m_pResPopupMenu->GetHelpId( nMenuId ));
@@ -349,11 +349,11 @@ void ControlMenuController::impl_select(const Reference< XDispatch >& /*_xDispat
 void SAL_CALL ControlMenuController::itemActivated( const css::awt::MenuEvent& ) throw (RuntimeException)
 {
     osl::ResettableMutexGuard aLock( m_aMutex );
-    
+
     if ( m_xPopupMenu.is() )
     {
         vos::OGuard aSolarMutexGuard( Application::GetSolarMutex() );
-	    
+
 		// Check if some modes have changed so we have to update our menu images
 		const StyleSettings& rSettings = Application::GetSettings().GetStyleSettings();
 		sal_Bool bIsHiContrast      = rSettings.GetHighContrastMode();
@@ -398,25 +398,25 @@ void ControlMenuController::impl_setPopupMenu()
         }
     } // if ( m_pResPopupMenu == 0 )
 }
-		
+
 void SAL_CALL ControlMenuController::updatePopupMenu() throw (::com::sun::star::uno::RuntimeException)
 {
     osl::ResettableMutexGuard aLock( m_aMutex );
 
 	throwIfDisposed();
-    
+
     if ( m_xFrame.is() && m_xPopupMenu.is() )
     {
         URL aTargetURL;
         Reference< XDispatchProvider > xDispatchProvider( m_xFrame, UNO_QUERY );
         fillPopupMenu( m_xPopupMenu );
         m_aURLToDispatchMap.free();
-        
+
         for (sal_uInt32 i=0; i<sizeof(aCommands)/sizeof(aCommands[0]); ++i)
         {
             aTargetURL.Complete = rtl::OUString::createFromAscii( aCommands[i] );
             m_xURLTransformer->parseStrict( aTargetURL );
-            
+
             Reference< XDispatch > xDispatch = xDispatchProvider->queryDispatch( aTargetURL, ::rtl::OUString(), 0 );
             if ( xDispatch.is() )
             {
@@ -433,7 +433,7 @@ void SAL_CALL ControlMenuController::initialize( const Sequence< Any >& aArgumen
 {
     osl::ResettableMutexGuard aLock( m_aMutex );
 	svt::PopupMenuControllerBase::initialize(aArguments);
-    m_aBaseURL = ::rtl::OUString();    
+    m_aBaseURL = ::rtl::OUString();
 }
 
 }

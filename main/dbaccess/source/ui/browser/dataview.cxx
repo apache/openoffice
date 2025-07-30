@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -27,7 +27,7 @@
 #ifndef DBAUI_DATAVIEW_HXX
 #include "dataview.hxx"
 #endif
-#ifndef _TOOLKIT_HELPER_VCLUNOHELPER_HXX_ 
+#ifndef _TOOLKIT_HELPER_VCLUNOHELPER_HXX_
 #include <toolkit/helper/vclunohelper.hxx>
 #endif
 #ifndef _COMPHELPER_TYPES_HXX_
@@ -37,7 +37,7 @@
 #ifndef _SFXAPP_HXX //autogen wg. SFX_APP
 #include <sfx2/app.hxx>
 #endif
-#ifndef _SFXIMGMGR_HXX 
+#ifndef _SFXIMGMGR_HXX
 #include <sfx2/imgmgr.hxx>
 #endif
 #ifndef DBAUI_ICONTROLLER_HXX
@@ -89,9 +89,9 @@ namespace dbaui
 
 	DBG_NAME(ODataView)
 	// -------------------------------------------------------------------------
-	ODataView::ODataView(	Window* pParent, 
+	ODataView::ODataView(	Window* pParent,
 							IController& _rController,
-							const Reference< XMultiServiceFactory >& _rFactory, 
+							const Reference< XMultiServiceFactory >& _rFactory,
 							WinBits nStyle)
 		:Window(pParent,nStyle)
 		,m_xServiceFactory(_rFactory)
@@ -114,7 +114,7 @@ namespace dbaui
 	{
 		DBG_DTOR(ODataView,NULL);
 
-		m_rController.release();		
+		m_rController.release();
 	}
 
 	// -------------------------------------------------------------------------

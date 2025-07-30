@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -353,12 +353,12 @@ void SAL_CALL DatabaseDataProvider::setColumnDescriptions( const uno::Sequence< 
 }
 
 uno::Sequence< rtl::OUString > SAL_CALL DatabaseDataProvider::getRowDescriptions()    throw (uno::RuntimeException)
-{    
+{
     return m_xComplexDescriptionAccess->getRowDescriptions();
 }
 
 uno::Sequence< rtl::OUString > SAL_CALL DatabaseDataProvider::getColumnDescriptions()    throw (uno::RuntimeException)
-{    
+{
     return m_xComplexDescriptionAccess->getColumnDescriptions();
 }
 
@@ -785,7 +785,7 @@ void DatabaseDataProvider::impl_fillInternalDataProvider_throw(sal_Bool _bHasCat
     while( xRes->next() && (!m_RowLimit || nRowCount < m_RowLimit) )
     {
         ++nRowCount;
-        
+
         aValue.fill( aColumns[0].nResultSetPosition, aColumns[0].nDataType, xRow );
 		aRowLabels.push_back( aValue.getString() );
 
@@ -827,7 +827,7 @@ void DatabaseDataProvider::impl_fillInternalDataProvider_throw(sal_Bool _bHasCat
             ::std::vector< double > aRow;
             const sal_Int32 nSize = sizeof(fDefaultData)/sizeof(fDefaultData[0]);
             for (size_t j = 0; j < (aColumns.size()-1); ++j,++k)
-            {            
+            {
                 if ( k >= nSize )
                     k = 0;
                 aRow.push_back(fDefaultData[k]);
@@ -835,7 +835,7 @@ void DatabaseDataProvider::impl_fillInternalDataProvider_throw(sal_Bool _bHasCat
             aDataValues.push_back(aRow);
         }
     } // if ( !nRowCount )
-        
+
 	uno::Reference< chart::XChartDataArray> xData(m_xInternal,uno::UNO_QUERY);
 	xData->setRowDescriptions(uno::Sequence< ::rtl::OUString >(&(*aRowLabels.begin()),aRowLabels.size()));
 

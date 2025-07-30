@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -87,7 +87,7 @@ OStartMarker::OStartMarker(OSectionWindow* _pParent,const ::rtl::OUString& _sCol
 // -----------------------------------------------------------------------------
 OStartMarker::~OStartMarker()
 {
-	DBG_DTOR( rpt_OStartMarker,NULL);	
+	DBG_DTOR( rpt_OStartMarker,NULL);
 	if ( osl_decrementInterlockedCount(&s_nImageRefCount) == 0 )
 	{
 		DELETEZ(s_pDefCollapsed);
@@ -122,7 +122,7 @@ void OStartMarker::Paint( const Rectangle& rRect )
         nSize = aSize.Width() - nVRulerWidth/* - m_nCornerSize*/;
         aSize.Width() += nCornerWidth;
         SetClipRegion(Region(PixelToLogic(Rectangle(Point(),Size(nSize,aSize.Height())))));
-    }        
+    }
 
     const Point aGcc3WorkaroundTemporary;
 	Rectangle aWholeRect(aGcc3WorkaroundTemporary,aSize);
@@ -168,7 +168,7 @@ void OStartMarker::MouseButtonUp( const MouseEvent& rMEvt )
 {
 	if ( !rMEvt.IsLeft() )
 		return;
-	
+
 	Point aPos( rMEvt.GetPosPixel());
 
 	const Size aOutputSize = GetOutputSizePixel();
@@ -178,7 +178,7 @@ void OStartMarker::MouseButtonUp( const MouseEvent& rMEvt )
 	if ( rMEvt.GetClicks() == 2 || aRect.IsInside( aPos ) )
 	{
 		m_bCollapsed = !m_bCollapsed;
-        
+
         changeImage();
 
 		m_aVRuler.Show(!m_bCollapsed && m_bShowRuler);
@@ -209,7 +209,7 @@ void OStartMarker::initDefaultNodeImages()
 	    s_pDefExpandedHC    = new Image( ModuleRes( RID_IMG_TREENODE_EXPANDED_HC    ) );
     }
 
-    Image* pImage = NULL;	
+    Image* pImage = NULL;
 	if ( GetSettings().GetStyleSettings().GetHighContrastMode() )
 	{
 		pImage = m_bCollapsed ? s_pDefCollapsedHC : s_pDefExpandedHC;
@@ -254,7 +254,7 @@ void OStartMarker::Resize()
     Point aPos(aImageSize.Width() + (long)(aExtraWidth + aExtraWidth), aExtraWidth);
     const long nHeight = ::std::max<sal_Int32>(nOutputHeight - 2*aPos.Y(),LogicToPixel(Size(0,m_aText.GetTextHeight())).Height());
     m_aText.SetPosSizePixel(aPos,Size(aRulerPos.X() - aPos.X(),nHeight));
-    
+
     aPos.X() = aExtraWidth;
     aPos.Y() += static_cast<sal_Int32>((LogicToPixel(Size(0,m_aText.GetTextHeight())).Height() - aImageSize.Height()) * 0.5) ;
     m_aImage.SetPosSizePixel(aPos,aImageSize);
@@ -304,7 +304,7 @@ void OStartMarker::RequestHelp( const HelpEvent& rHEvt )
 }
 // -----------------------------------------------------------------------------
 void OStartMarker::setCollapsed(sal_Bool _bCollapsed)
-{ 
+{
     OColorListener::setCollapsed(_bCollapsed);
     showRuler(_bCollapsed);
     changeImage();
