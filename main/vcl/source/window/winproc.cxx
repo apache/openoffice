@@ -19,8 +19,6 @@
  *
  *************************************************************/
 
-
-
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_vcl.hxx"
 
@@ -67,7 +65,6 @@ char dbgbuffer[1024];
 extern void MyOutputDebugString( char *s);
 #endif
 #endif
-
 
 // =======================================================================
 
@@ -939,7 +936,7 @@ static Window* ImplGetKeyInputWindow( Window* pWindow )
         return 0;
 
     // We call also KeyInput if we haven't the focus, because on Unix
-    // system this is often the case when a Lookup Choise Window has
+    // system this is often the case when a Lookup Choice Window has
     // the focus - because this windows send the KeyInput directly to
     // the window without resetting the focus
     DBG_ASSERTWARNING( pChild == pSVData->maWinData.mpFocusWin,
@@ -1003,7 +1000,7 @@ static long ImplHandleKey( Window* pWindow, sal_uInt16 nSVEvent,
     if ( nSVEvent == EVENT_KEYINPUT )
     {
 #ifdef DBG_UTIL
-        // #105224# use Ctrl-Alt-Shift-D, Ctrl-Shift-D must be useable by app
+        // #105224# use Ctrl-Alt-Shift-D, Ctrl-Shift-D must be usable by app
         if ( aKeyCode.IsShift() && aKeyCode.IsMod1() && (aKeyCode.IsMod2() || aKeyCode.IsMod3()) && (aKeyCode.GetCode() == KEY_D) )
         {
             DBGGUI_START();
@@ -1483,7 +1480,7 @@ static long ImplHandleWheelEvent( Window* pWindow, const SalWheelMouseEvent& rEv
     Point               aMousePos( rEvt.mnX, rEvt.mnY );
     sal_Bool                bRet = sal_True;
 
-    // first check any floating window ( e.g. drop down listboxes)
+    // first check any floating window (e.g. drop down listboxes)
     bool bIsFloat = false;
     Window *pMouseWindow = NULL;
     if ( pSVData->maWinData.mpFirstFloat && !pSVData->maWinData.mpCaptureWin &&
@@ -1517,7 +1514,7 @@ static long ImplHandleWheelEvent( Window* pWindow, const SalWheelMouseEvent& rEv
         bRet = ImplCallWheelCommand( pMouseWindow, aRelMousePos, &aWheelData );
     }
 
-    // if the commad was not handled try the focus window
+    // if the command was not handled try the focus window
     if ( bRet )
     {
         Window* pFocusWindow = pWindow->ImplGetWindowImpl()->mpFrameData->mpFocusWin;
@@ -1737,7 +1734,7 @@ IMPL_LINK( Window, ImplAsyncFocusHdl, void*, EMPTYARG )
     // nichts machen
     sal_Bool bHasFocus = ImplGetWindowImpl()->mpFrameData->mbHasFocus || ImplGetWindowImpl()->mpFrameData->mbSysObjFocus;
 
-    // Dann die zeitverzoegerten Funktionen ausfuehren
+    // Dann die zeitverzögerten Funktionen ausführen
     if ( bHasFocus )
     {
         // Alle FloatingFenster deaktiv zeichnen
@@ -1843,7 +1840,7 @@ static void ImplHandleGetFocus( Window* pWindow )
 {
     pWindow->ImplGetWindowImpl()->mpFrameData->mbHasFocus = sal_True;
 
-    // Focus-Events zeitverzoegert ausfuehren, damit bei SystemChildFenstern
+    // Focus-Events zeitverzögert ausführen, damit bei SystemChildFenstern
     // nicht alles flackert, wenn diese den Focus bekommen
     if ( !pWindow->ImplGetWindowImpl()->mpFrameData->mnFocusId )
     {
@@ -1887,7 +1884,7 @@ static void ImplHandleLoseFocus( Window* pWindow )
 
     pWindow->ImplGetWindowImpl()->mpFrameData->mbHasFocus = sal_False;
 
-    // Focus-Events zeitverzoegert ausfuehren, damit bei SystemChildFenstern
+    // Focus-Events zeitverzögert ausführen, damit bei SystemChildFenstern
     // nicht alles flackert, wenn diese den Focus bekommen
     bool bCallDirect = ImplGetSVData()->mbIsTestTool;
     if ( !pWindow->ImplGetWindowImpl()->mpFrameData->mnFocusId )
@@ -2191,7 +2188,7 @@ static void ImplHandleInputLanguageChange( Window* pWindow )
 
 static void ImplHandleSalSettings( Window* pWindow, sal_uInt16 nEvent )
 {
-    // Application Notification werden nur fuer das erste Window ausgeloest
+    // Application Notification werden nur für das erste Window ausgelöst
     ImplSVData* pSVData = ImplGetSVData();
     if ( pWindow != pSVData->maWinData.mpFirstFrame )
         return;
@@ -2614,3 +2611,5 @@ long ImplWindowFrameProc( Window* pWindow, SalFrame* /*pFrame*/,
 
     return nRet;
 }
+
+/* vim: set noet sw=4 ts=4: */
