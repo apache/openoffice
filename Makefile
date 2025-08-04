@@ -28,7 +28,7 @@ checkinstall: install
 	@echo "Installing pre-commit hooks..."
 	pre-commit install
 
-checkupdate: checkinstall
+checkupdate:
 	@echo "Updating pre-commit hooks..."
 	pre-commit autoupdate
 
