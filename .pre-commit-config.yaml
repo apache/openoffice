@@ -48,7 +48,7 @@ repos:
         args: [--ignore-words=.github/linters/codespell.txt]
         exclude: ^extras/
   - repo: https://github.com/igorshubovych/markdownlint-cli
-    rev: v0.44.0
+    rev: v0.45.0
     hooks:
       - id: markdownlint
         name: run markdownlint
